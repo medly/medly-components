@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component should render correctly 1`] = `
+.c0 {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #373A3C;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+}
+
+.c0:focus {
+  border-color: #373A3C;
+  outline: 0;
+}
+
+.c0::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.c0::-moz-placeholder {
+  color: #999999;
+}
+
+.c0:-ms-input-placeholder {
+  color: #999999;
+}
+
+.c0::placeholder {
+  color: #999999;
+}
+
+<div>
+  <input
+    class="c0"
+    type="email"
+  />
+</div>
+`;

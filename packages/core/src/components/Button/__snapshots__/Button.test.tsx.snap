@@ -1,11 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component should render properly with flat prop 1`] = `
+exports[`Button component should render properly with flat variant and primary color 1`] = `
 .c1 {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   color: inherit;
-  text-transform: uppercase;
 }
 
 .c0 {
@@ -18,7 +17,7 @@ exports[`Button component should render properly with flat prop 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #5392f9;
+  color: #012040;
 }
 
 .c0:hover {
@@ -32,22 +31,22 @@ exports[`Button component should render properly with flat prop 1`] = `
 <div>
   <button
     class="c0"
+    color="primary"
   >
-    <strong
+    <span
       class="c1"
     >
       Flat Button
-    </strong>
+    </span>
   </button>
 </div>
 `;
 
-exports[`Button component should render properly with outlined prop 1`] = `
+exports[`Button component should render properly with outlined variant and secondary color 1`] = `
 .c1 {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   color: inherit;
-  text-transform: uppercase;
 }
 
 .c0 {
@@ -60,8 +59,8 @@ exports[`Button component should render properly with outlined prop 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 1px solid #5392f9;
-  color: #5392f9;
+  border: 1px solid #FA6F80;
+  color: #FA6F80;
 }
 
 .c0:hover {
@@ -75,22 +74,22 @@ exports[`Button component should render properly with outlined prop 1`] = `
 <div>
   <button
     class="c0"
+    color="secondary"
   >
-    <strong
+    <span
       class="c1"
     >
       Outlined Button
-    </strong>
+    </span>
   </button>
 </div>
 `;
 
-exports[`Button component should render properly with solid prop 1`] = `
+exports[`Button component should render properly with solid variant 1`] = `
 .c1 {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   color: inherit;
-  text-transform: uppercase;
 }
 
 .c0 {
@@ -103,7 +102,7 @@ exports[`Button component should render properly with solid prop 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #5392f9;
+  background-color: #012040;
   color: #ffffff;
 }
 
@@ -118,12 +117,13 @@ exports[`Button component should render properly with solid prop 1`] = `
 <div>
   <button
     class="c0"
+    color="primary"
   >
-    <strong
+    <span
       class="c1"
     >
       Solid Button
-    </strong>
+    </span>
   </button>
 </div>
 `;
@@ -131,9 +131,8 @@ exports[`Button component should render properly with solid prop 1`] = `
 exports[`Button component should wrap children into Text component when rendering string or number 1`] = `
 .c1 {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   color: inherit;
-  text-transform: uppercase;
 }
 
 .c0 {
@@ -146,7 +145,7 @@ exports[`Button component should wrap children into Text component when renderin
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #5392f9;
+  background-color: #012040;
   color: #ffffff;
 }
 
@@ -161,12 +160,13 @@ exports[`Button component should wrap children into Text component when renderin
 <div>
   <button
     class="c0"
+    color="primary"
   >
-    <strong
+    <span
       class="c1"
     >
       Some text
-    </strong>
+    </span>
     <i>
       some icon
     </i>
