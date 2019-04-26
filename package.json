@@ -12,7 +12,6 @@
         }
     },
     "scripts": {
-        "prebuild": "yarn type-check",
         "build": "lerna run build",
         "build-storybook": "build-storybook",
         "commit": "git-cz",

@@ -12,7 +12,6 @@
         "strictNullChecks": false,
         "target": "esnext",
         "paths": {
-            "@storybook-utils": [".storybook/utils"],
             "@medly-components/*": ["packages/*/src"],
             "@core-styled": ["packages/core/src/utils/styled"],
             "@core-test-utils": ["packages/core/src/utils/test-utils"],

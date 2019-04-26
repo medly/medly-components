@@ -1,4 +1,4 @@
-import { wInfo } from '@storybook-utils';
+import { wInfo } from '@core-utils/wInfo';
 import { select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
