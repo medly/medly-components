@@ -1,19 +1,19 @@
 import { css, styled } from '@core-styled';
-import { ButtonTheme, defaultTheme } from '@medly-components/theme';
+import { defaultTheme, Theme } from '@medly-components/theme';
 import { Props } from './types';
 
-const outlined = (theme: ButtonTheme) => css`
-    border: 1px solid ${theme.outlined.borderColor};
-    color: ${theme.outlined.textColor};
+const outlined = (theme: Theme, color: Props['color']) => css`
+    border: 1px solid ${theme.button[color]};
+    color: ${theme.button[color]};
 `;
 
-const solid = (theme: ButtonTheme) => css`
-    background-color: ${theme.solid.bgColor};
-    color: ${theme.solid.textColor};
+const solid = (theme: Theme, color: Props['color']) => css`
+    background-color: ${theme.button[color]};
+    color: ${theme.colors.white};
 `;
 
-const flat = (theme: ButtonTheme) => css`
-    color: ${theme.flat.textColor};
+const flat = (theme: Theme, color: Props['color']) => css`
+    color: ${theme.button[color]};
 `;
 
 export const ButtonStyled = styled('button')<Props>`
@@ -32,11 +32,13 @@ export const ButtonStyled = styled('button')<Props>`
         outline: none;
     }
 
-    ${props => props.flat && flat(props.theme.button)};
-    ${props => props.outlined && outlined(props.theme.button)};
-    ${props => props.solid && solid(props.theme.button)};
+    ${props => props.variant === 'flat' && flat(props.theme, props.color)};
+    ${props => props.variant === 'outlined' && outlined(props.theme, props.color)};
+    ${props => props.variant === 'solid' && solid(props.theme, props.color)};
 `;
 
 ButtonStyled.defaultProps = {
-    theme: defaultTheme
+    theme: defaultTheme,
+    variant: 'solid',
+    color: 'primary'
 };

@@ -1,12 +1,12 @@
-import { Color } from './types';
+import { GreyScale } from './types';
 
-const grey: Color = {
-    50: '#f9f9fa',
-    100: '#e9ebee',
-    200: '#dddfe2',
-    300: '#d7d7db',
-    400: '#90949c',
-    500: '#2a2a2e'
+const grey: GreyScale = {
+    100: '#999999',
+    200: '#CCCCCC',
+    300: '#F7F7F7',
+    400: '#AAAAAA',
+    500: '#7C7B7B',
+    600: '#373A3C'
 };
 
 export default grey;

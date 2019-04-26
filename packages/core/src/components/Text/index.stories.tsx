@@ -15,8 +15,8 @@ storiesOf('Components', module).add(
             uppercase={boolean('Upper Case', false)}
             lineThrough={boolean('Line through', false)}
             textColor={color('Color', 'black')}
-            textSize={select<keyof FontSizeTheme>('Text Size', sizeOptions, 'L1')}
-            textWeight={select<keyof FontWeightTheme>('Text Weight', weightOptions, 'Normal')}
+            textSize={select('Text Size', sizeOptions, 'L1')}
+            textWeight={select('Text Weight', weightOptions, 'Normal')}
         >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat excepturi quos vitae quisquam hic molestias et cumque nostrum
             corrupti ad dolorem ab laborum iste veniam, animi optio ipsa quod error!

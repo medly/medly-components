@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/core",
-    "version": "1.0.5",
+    "version": "1.0.0",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
@@ -20,6 +20,6 @@
         "styled-components": "^4.2.0"
     },
     "dependencies": {
-        "@medly-components/theme": "^1.0.5"
+        "@medly-components/theme": "^1.0.0"
     }
 }

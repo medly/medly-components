@@ -12,11 +12,11 @@ const Text: React.FunctionComponent<Props> & WithStyle = React.forwardRef((props
     );
 });
 
-Text.displayName = 'Text';
 Text.defaultProps = {
     lineThrough: false,
     uppercase: false
 };
+Text.displayName = 'Text';
 Text.Style = TextStyled;
 
 export default Text;

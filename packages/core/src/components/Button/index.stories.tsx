@@ -3,20 +3,19 @@ import { select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import Button from './Button';
+import { Props } from './types';
 
-const buttonOptions = ['solid', 'flat', 'outlined'];
+const variant: Array<Props['variant']> = ['solid', 'flat', 'outlined'];
+const color: Array<Props['color']> = ['primary', 'secondary'];
+
 storiesOf('Components', module).add(
     'Button',
     () => (
-        <Button
-            {...{
-                solid: 'solid' === select('Button Option', buttonOptions, 'solid'),
-                flat: 'flat' === select('Button Option', buttonOptions, 'solid'),
-                outlined: 'outlined' === select('Button Option', buttonOptions, 'solid')
-            }}
-        >
+        <Button variant={select('Variant', variant, 'solid')} color={select('Color', color, 'primary')}>
             Demo Button
         </Button>
     ),
-    wInfo('Button Component with below props')
+    wInfo(`
+    Button component comes with different variant and colors which can be managed by 'variant' & 'color' props respectively
+    `)
 );
