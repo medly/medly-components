@@ -1,0 +1,17 @@
+{
+    "name": "@medly-components/theme",
+    "version": "1.0.5",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist/"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "license": "MIT",
+    "scripts": {
+        "build": "cross-env BABEL_ENV=production babel --root-mode upward src --out-dir dist --extensions .ts,.tsx --delete-dir-on-start --no-comments",
+        "postbuild": "tsc -p tsconfig.build.json"
+    }
+}

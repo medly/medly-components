@@ -1,0 +1,40 @@
+{
+    "extends": [
+        "tslint:recommended",
+        "tslint-react",
+        "tslint-config-airbnb",
+        "tslint-react-hooks",
+        "tslint-config-prettier",
+        "tslint-plugin-prettier"
+    ],
+    "rulesDirectory": ["tslint-plugin-prettier"],
+    "rules": {
+        "import-name": [true, { "react": "React" }],
+        "interface-name": [true, "never-prefix"],
+        "jsx-boolean-value": false,
+        "jsx-no-multiline-js": false,
+        "max-line-length": [true, 140],
+        "no-increment-decrement": false,
+        "no-namespace": true,
+        "no-reference": true,
+        "object-literal-sort-keys": false,
+        "one-variable-per-declaration": false,
+        "prefer-array-literal": [true, { "allow-type-parameters": true }],
+        "prettier": [
+            true,
+            {
+                "bracketSpacing": true,
+                "printWidth": 140,
+                "semi": true,
+                "singleQuote": true,
+                "tabWidth": 4
+            }
+        ],
+        "quotemark": [true, "single", "jsx-double"],
+        "react-hooks-nesting": "error",
+        "strict-boolean-expressions": false,
+        "indent": [true, "spaces", 4],
+        "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"]
+    },
+    "exclude": ["/node_modules/"]
+}

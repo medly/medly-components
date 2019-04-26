@@ -1,0 +1,15 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "dist",
+        "rootDir": "src",
+        "baseUrl": "./",
+        "paths": {
+            "@core-styled": ["src/utils/styled"],
+            "@storybook-utils": ["../../.storybook/utils"],
+            "@core-test-utils": ["src/utils/test-utils"],
+            "@core-utils/*": ["src/utils/*"]
+        }
+    },
+    "include": ["src"]
+}

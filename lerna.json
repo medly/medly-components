@@ -1,0 +1,9 @@
+{
+    "access": "public",
+    "allowBranch": ["master", "feature/*"],
+    "conventionalCommits": true,
+    "npmClient": "yarn",
+    "packages": ["packages/*"],
+    "useWorkspaces": true,
+    "version": "independent"
+}

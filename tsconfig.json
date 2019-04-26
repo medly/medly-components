@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "esModuleInterop": true,
+        "jsx": "react",
+        "lib": ["es2015", "dom"],
+        "moduleResolution": "node",
+        "noEmit": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "strictFunctionTypes": false,
+        "strictNullChecks": false,
+        "target": "esnext",
+        "paths": {
+            "@storybook-utils": [".storybook/utils"],
+            "@medly-components/*": ["packages/*/src"],
+            "@core-styled": ["packages/core/src/utils/styled"],
+            "@core-test-utils": ["packages/core/src/utils/test-utils"],
+            "@core-utils/*": ["packages/core/src/utils/*"]
+        }
+    },
+    "include": ["packages"],
+    "exclude": ["node_modules", "packages/**/dist", ".storybook"]
+}
