@@ -16,12 +16,7 @@ module.exports = {
     projects: [
         {
             displayName: 'core',
-            testMatch: ['<rootDir>/packages/core/src/**/*.(spec|test).(ts|tsx)'],
-            moduleNameMapper: {
-                '^@core-styled': '<rootDir>/packages/core/src/utils/styled',
-                '^@core-utils(.*)$': '<rootDir>/packages/core/src/utils$1',
-                '^@core-test-utils': '<rootDir>/packages/core/src/utils/test-utils'
-            }
+            testMatch: ['<rootDir>/packages/core/src/**/*.(spec|test).(ts|tsx)']
         },
         {
             displayName: 'theme',

@@ -1,4 +1,4 @@
-import { render } from '@core-test-utils';
+import { render } from '../../utils/test-utils';
 import 'jest-styled-components';
 import React from 'react';
 import Input from './Input';

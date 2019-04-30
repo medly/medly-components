@@ -1,7 +1,7 @@
-import { ThemeProvider } from '@core-styled';
 import { defaultTheme } from '@medly-components/theme';
 import React from 'react';
 import { render, RenderResult } from 'react-testing-library';
+import { ThemeProvider } from './styled';
 
 const AllTheProviders: React.FunctionComponent = props => (
     <ThemeProvider theme={defaultTheme}>

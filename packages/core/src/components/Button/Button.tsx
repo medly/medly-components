@@ -1,10 +1,10 @@
-import { WithStyle } from '@core-utils/types';
 import React from 'react';
+import { WithStyle } from '../../utils/types';
 import Text from '../Text';
 import { ButtonStyled } from './Button.styled';
 import { Props } from './types';
 
-import { isValidStringOrNumber } from '@core-utils/helpers/ReactHelper';
+import { isValidStringOrNumber } from '../../utils/helpers/ReactHelper';
 
 export const Button: React.SFC<Props> & WithStyle = props => {
     return (

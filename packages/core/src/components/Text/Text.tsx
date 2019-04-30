@@ -1,4 +1,4 @@
-import { WithStyle } from '@core-utils/types';
+import { WithStyle } from '../../utils/types';
 import React from 'react';
 import { TextStyled } from './Text.styled';
 import { Props } from './types';

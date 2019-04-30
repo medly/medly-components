@@ -1,4 +1,4 @@
-import { styled } from '@core-styled';
+import { styled } from '../../utils/styled';
 import { defaultTheme } from '@medly-components/theme';
 import { Props } from './types';
 
