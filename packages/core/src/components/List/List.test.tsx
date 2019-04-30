@@ -1,12 +1,12 @@
+import { TestUtils } from '@medly-components/utils';
 import 'jest-styled-components';
 import React from 'react';
-import { render } from '../../utils/test-utils';
 
 import List from './List';
 
 describe('List component', () => {
     it('should render horizontal list', () => {
-        const { container } = render(
+        const { container } = TestUtils.render(
             <List variant="horizontal">
                 <p>item 1</p>
                 <p>item 2</p>
@@ -16,7 +16,7 @@ describe('List component', () => {
     });
 
     it('should render vertical list', () => {
-        const { container } = render(
+        const { container } = TestUtils.render(
             <List variant="vertical">
                 <p>item 1</p>
                 <p>item 2</p>

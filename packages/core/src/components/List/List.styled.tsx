@@ -1,6 +1,6 @@
 /* stylelint-disable  no-descending-specificity*/
 import { defaultTheme, SpacingTheme } from '@medly-components/theme';
-import { css, styled } from '../../utils/styled';
+import { css, styled } from '@medly-components/utils';
 import { Props } from './types';
 
 const horizontal = (spacings: SpacingTheme) => css`

@@ -1,5 +1,5 @@
 import { FontFaceItem, FontFaceTheme } from '@medly-components/theme';
-import { css } from '../../utils/styled';
+import { css } from '@medly-components/utils';
 
 const formatFontFace = (fontFace: FontFaceItem, fontFamily: string) => `
     @font-face {

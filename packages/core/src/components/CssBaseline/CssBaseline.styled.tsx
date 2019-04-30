@@ -1,5 +1,5 @@
 import { defaultTheme } from '@medly-components/theme';
-import { createGlobalStyle } from '../../utils/styled';
+import { createGlobalStyle } from '@medly-components/utils';
 
 import fonts from './fonts';
 

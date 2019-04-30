@@ -1,5 +1,5 @@
 {
-    "name": "@medly-components/core",
+    "name": "@medly-components/utils",
     "version": "1.0.0",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -17,11 +17,9 @@
     },
     "peerDependencies": {
         "react": "^16.8.6",
-        "react-dom": "^16.8.6",
         "styled-components": "^4.2.0"
     },
     "dependencies": {
-        "@medly-components/theme": "^1.0.0",
-        "@medly-components/utils": "^1.0.0"
+        "@medly-components/theme": "^1.0.0"
     }
 }

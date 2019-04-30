@@ -1,5 +1,5 @@
 import { defaultTheme, Theme } from '@medly-components/theme';
-import { css, styled } from '../../utils/styled';
+import { css, styled } from '@medly-components/utils';
 import { Props } from './types';
 
 const outlined = (theme: Theme, color: Props['color']) => css`

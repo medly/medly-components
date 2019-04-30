@@ -1,7 +1,7 @@
+import { wInfo } from '@medly-components/utils';
 import { select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { wInfo } from '../../utils/wInfo';
 import Button from './Button';
 import { Props } from './types';
 

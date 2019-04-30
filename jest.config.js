@@ -3,8 +3,8 @@ module.exports = {
     collectCoverageFrom: [
         '<rootDir>/packages/**/src/**/*.(ts|tsx)',
         '!<rootDir>/packages/**/src/**/*.stories.(ts|tsx)',
-        '!<rootDir>/packages/**/src/utils/**/*.(ts|tsx)',
         '!<rootDir>/packages/theme/**/*',
+        '!<rootDir>/packages/utils/**/*',
         '!<rootDir>/packages/**/index.(ts|tsx)',
         '!<rootDir>/packages/**/types.(ts|tsx)'
     ],

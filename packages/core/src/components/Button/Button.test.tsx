@@ -1,11 +1,11 @@
+import { TestUtils } from '@medly-components/utils';
 import 'jest-styled-components';
 import React from 'react';
-import { render } from '../../utils/test-utils';
 import Button from './Button';
 
 describe('Button component', () => {
     it('should render properly with flat variant and primary color', () => {
-        const { container } = render(
+        const { container } = TestUtils.render(
             <Button variant="flat" color="primary">
                 Flat Button
             </Button>
@@ -13,7 +13,7 @@ describe('Button component', () => {
         expect(container).toMatchSnapshot();
     });
     it('should render properly with outlined variant and secondary color', () => {
-        const { container } = render(
+        const { container } = TestUtils.render(
             <Button variant="outlined" color="secondary">
                 Outlined Button
             </Button>
@@ -21,12 +21,12 @@ describe('Button component', () => {
         expect(container).toMatchSnapshot();
     });
     it('should render properly with solid variant', () => {
-        const { container } = render(<Button variant="solid">Solid Button</Button>);
+        const { container } = TestUtils.render(<Button variant="solid">Solid Button</Button>);
         expect(container).toMatchSnapshot();
     });
 
     it('should wrap children into Text component when rendering string or number', () => {
-        const { container } = render(
+        const { container } = TestUtils.render(
             <Button variant="solid">
                 Some text
                 <i>some icon</i>

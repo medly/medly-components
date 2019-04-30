@@ -1,5 +1,5 @@
-import { styled } from '../../utils/styled';
 import { defaultTheme } from '@medly-components/theme';
+import { styled } from '@medly-components/utils';
 import { Props } from './types';
 
 export const InputStyled = styled('input').attrs(({ theme: { input, text, font } }) => ({ input, text, font }))<Props>`

@@ -1,6 +1,6 @@
+import { wInfo } from '@medly-components/utils';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { wInfo } from '../../utils/wInfo';
 import Input from './Input';
 
 storiesOf('Components', module).add(

@@ -1,5 +1,5 @@
 import { FontSizeTheme, FontWeightTheme } from '@medly-components/theme';
-import { HTMLProps, WithThemeProp } from '../../utils/types';
+import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
 interface Common extends HTMLProps<HTMLElement>, WithThemeProp {
     textColor?: string;

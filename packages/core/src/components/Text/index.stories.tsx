@@ -1,8 +1,8 @@
 import { FontSizeTheme, FontWeightTheme } from '@medly-components/theme';
+import { wInfo } from '@medly-components/utils';
 import { boolean, color, select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { wInfo } from '../../utils/wInfo';
 import Text from './Text';
 
 const sizeOptions: Array<keyof FontSizeTheme> = ['S1', 'M1', 'M2', 'M3', 'L1', 'L2', 'L3', 'L4'];

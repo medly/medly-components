@@ -1,5 +1,5 @@
-import { css, styled } from '../../utils/styled';
 import { defaultTheme } from '@medly-components/theme';
+import { css, styled } from '@medly-components/utils';
 import { Props, StyledProps } from './types';
 
 const uppercase = () => css`

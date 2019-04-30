@@ -1,5 +1,5 @@
+import { WithStyle } from '@medly-components/utils';
 import React from 'react';
-import { WithStyle } from '../../utils/types';
 import { ListStyled } from './List.styled';
 import { Props } from './types';
 

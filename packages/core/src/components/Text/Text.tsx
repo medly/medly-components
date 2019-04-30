@@ -1,4 +1,4 @@
-import { WithStyle } from '../../utils/types';
+import { WithStyle } from '@medly-components/utils';
 import React from 'react';
 import { TextStyled } from './Text.styled';
 import { Props } from './types';

@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { wInfo } from '../../utils/wInfo';
+import { wInfo } from '@medly-components/utils';
 import Text from '../Text';
 import { CssBaseline } from './CssBaseline.styled';
 
