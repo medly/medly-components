@@ -8,7 +8,7 @@ const font: FontTheme = {
     sizes,
     weights,
     faces,
-    defaultFontFamily: 'apple SD gothic neo, Helvetica Neue, Helvetica, Arial, sans-serif',
+    defaultFontFamily: 'ProximaNova, Helvetica Neue, Helvetica, Arial, sans-serif',
     defaultColor: colors.black
 };
 
