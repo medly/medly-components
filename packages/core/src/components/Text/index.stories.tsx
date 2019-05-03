@@ -8,7 +8,7 @@ import Text from './Text';
 const sizeOptions: Array<keyof FontSizeTheme> = ['S1', 'M1', 'M2', 'M3', 'L1', 'L2', 'L3', 'L4'];
 const weightOptions: Array<keyof FontWeightTheme> = ['Light', 'Normal', 'Strong'];
 
-storiesOf('Components', module).add(
+storiesOf('Core', module).add(
     'Text',
     () => (
         <Text

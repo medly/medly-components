@@ -8,7 +8,7 @@ import { Props } from './types';
 
 const variant: Array<Props['variant']> = ['horizontal', 'vertical'];
 
-storiesOf('Components', module).add(
+storiesOf('Core', module).add(
     'List',
     () => (
         <List variant={select('Variant', variant, 'vertical')}>

@@ -1,10 +1,10 @@
+import { wInfo } from '@medly-components/utils';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { wInfo } from '@medly-components/utils';
 import Text from '../Text';
 import { CssBaseline } from './CssBaseline.styled';
 
-storiesOf('Components', module).add(
+storiesOf('Core', module).add(
     'CssBaseline',
     () => (
         <div>

@@ -8,7 +8,7 @@ import { Props } from './types';
 const variant: Array<Props['variant']> = ['solid', 'flat', 'outlined'];
 const color: Array<Props['color']> = ['primary', 'secondary'];
 
-storiesOf('Components', module).add(
+storiesOf('Core', module).add(
     'Button',
     () => (
         <Button variant={select('Variant', variant, 'solid')} color={select('Color', color, 'primary')}>
