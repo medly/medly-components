@@ -3,6 +3,7 @@ module.exports = {
     collectCoverageFrom: [
         '<rootDir>/packages/**/src/**/*.(ts|tsx)',
         '!<rootDir>/packages/**/src/**/*.stories.(ts|tsx)',
+        '!<rootDir>/packages/**/src/**/*.test.(ts|tsx)',
         '!<rootDir>/packages/theme/**/*',
         '!<rootDir>/packages/utils/**/*',
         '!<rootDir>/packages/**/index.(ts|tsx)',
@@ -19,8 +20,8 @@ module.exports = {
             testMatch: ['<rootDir>/packages/core/src/**/*.(spec|test).(ts|tsx)']
         },
         {
-            displayName: 'theme',
-            testMatch: ['<rootDir>/packages/theme/src/**/*.(spec|test).(ts|tsx)']
+            displayName: 'layout',
+            testMatch: ['<rootDir>/packages/layout/src/**/*.(spec|test).(ts|tsx)']
         }
     ]
 };

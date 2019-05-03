@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideNav component should render properly 1`] = `
+.c3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  padding: 20px 32px;
+  background-color: #FFFFFF;
+}
+
+.c4 {
+  padding: 20px 32px;
+  background-color: #FFFFFF;
+  margin-left: 8px;
+  padding: 20px 24px;
+}
+
+.c4 .c2 {
+  font-weight: 700;
+}
+
+.c0 {
+  height: 100%;
+  list-style-type: none;
+  color: #012040;
+}
+
+.c0 li {
+  border: 1px solid #D8D8D8;
+  background-color: #012040;
+}
+
+.c0 li + li {
+  border-top: none;
+}
+
+<div>
+  <ul
+    class="c0"
+  >
+    <li>
+      <div
+        class="c1"
+      >
+        <span
+          class="c2 c3"
+        >
+          Dashboard
+        </span>
+      </div>
+    </li>
+    <li>
+      <div
+        class="c4"
+      >
+        <span
+          class="c2 c3"
+        >
+          Pharmacies
+        </span>
+      </div>
+    </li>
+    <li>
+      <div
+        class="c1"
+      >
+        <span
+          class="c2 c3"
+        >
+          Covered Entities
+        </span>
+      </div>
+    </li>
+    <li>
+      <div
+        class="c1"
+      >
+        <span
+          class="c2 c3"
+        >
+          Reports
+        </span>
+      </div>
+    </li>
+    <li>
+      <div
+        class="c1"
+      >
+        <span
+          class="c2 c3"
+        >
+          Manage Users
+        </span>
+      </div>
+    </li>
+    <li>
+      <div
+        class="c1"
+      >
+        <span
+          class="c2 c3"
+        >
+          Logout
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
