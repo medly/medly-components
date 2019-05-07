@@ -20,7 +20,7 @@ export interface ColorPallet {
     orange: string;
     pink: string;
     red: string;
-    violet: string;
+    violet: Color;
     white: string;
     yellow: string;
 }

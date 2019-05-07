@@ -1,9 +1,17 @@
 import { defaultTheme } from '@medly-components/theme';
-import { styled } from '@medly-components/utils';
+import { fullWidth, styled } from '@medly-components/utils';
+import Text from '../Text';
 import { Props } from './types';
+
+export const InputFieldStyled = styled('div')`
+    ${Text.Style} {
+        display: block;
+    }
+`;
 
 export const InputStyled = styled('input').attrs(({ theme: { input, text, font } }) => ({ input, text, font }))<Props>`
     padding: 10px;
+    margin: 0px ${({ theme }) => theme.spacing.S} ${({ theme }) => theme.spacing.S} 0px;
     font-size: ${({ font, text }) => font.sizes[text.defaults.textSize]};
     font-weight: ${({ font, text }) => font.weights[text.defaults.textWeight]};
     color: ${props => props.input.color};
@@ -21,6 +29,8 @@ export const InputStyled = styled('input').attrs(({ theme: { input, text, font }
     &::placeholder {
         color: ${props => props.input.placeHolderColor};
     }
+
+    ${props => props.fullWidth && fullWidth()};
 `;
 
 InputStyled.defaultProps = {

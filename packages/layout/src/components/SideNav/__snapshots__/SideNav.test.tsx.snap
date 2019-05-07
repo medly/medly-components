@@ -25,17 +25,15 @@ exports[`SideNav component should render properly 1`] = `
 
 .c0 {
   height: 100%;
+  padding: 0px;
+  margin: 0px;
   list-style-type: none;
   color: #012040;
 }
 
 .c0 li {
-  border: 1px solid #D8D8D8;
+  border-bottom: 1px solid #D8D8D8;
   background-color: #012040;
-}
-
-.c0 li + li {
-  border-top: none;
 }
 
 <div>
