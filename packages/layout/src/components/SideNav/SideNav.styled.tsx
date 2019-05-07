@@ -4,16 +4,14 @@ import { Props } from './types';
 
 export const SideNavStyled = styled('ul')<Props>`
     height: 100%;
+    padding: 0px;
+    margin: 0px;
     list-style-type: none;
     color: ${({ theme }) => theme.sidenav.textColor};
 
     li {
-        border: 1px solid ${({ theme }) => theme.sidenav.itemBorderColor};
+        border-bottom: 1px solid ${({ theme }) => theme.sidenav.itemBorderColor};
         background-color: #012040;
-    }
-
-    li + li {
-        border-top: none;
     }
 `;
 

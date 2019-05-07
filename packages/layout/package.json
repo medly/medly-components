@@ -22,6 +22,7 @@
     },
     "dependencies": {
         "@medly-components/core": "^1.0.0",
+        "@medly-components/utils": "^1.0.0",
         "@medly-components/theme": "^1.0.0"
     }
 }
