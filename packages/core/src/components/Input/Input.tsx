@@ -3,7 +3,7 @@ import { WithStyle, withTheme } from '@medly-components/utils';
 import React from 'react';
 import Label from '../Label';
 import Text from '../Text';
-import { InputStyled, InputFieldStyled } from './Input.styled';
+import { InputFieldStyled, InputStyled } from './Input.styled';
 import { Props } from './types';
 
 const Input: React.FunctionComponent<Props> & WithStyle = React.forwardRef((props, ref) => {
