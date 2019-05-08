@@ -20,7 +20,6 @@ export const ButtonStyled = styled('button')<Props>`
     background-color: transparent;
     border: none;
     padding: 10px;
-    margin: ${({ theme }) => theme.spacing.S};
     border-radius: 3px;
     user-select: none;
 

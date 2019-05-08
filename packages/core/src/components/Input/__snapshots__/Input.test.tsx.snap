@@ -13,12 +13,16 @@ exports[`Input component should render correctly when fullWidth & required props
   color: #818A91;
 }
 
+.c0 {
+  margin: 16px 0px;
+}
+
 .c0 .c3 {
   display: block;
 }
 
 .c2 {
-  padding: 10px;
+  padding: 8px;
   margin: 0px 8px 8px 0px;
   font-size: 14px;
   font-weight: 400;
@@ -76,12 +80,16 @@ exports[`Input component should render correctly when fullWidth & required props
 `;
 
 exports[`Input component should render correctly when label and description are not given 1`] = `
+.c0 {
+  margin: 16px 0px;
+}
+
 .c0 .c2 {
   display: block;
 }
 
 .c1 {
-  padding: 10px;
+  padding: 8px;
   margin: 0px 8px 8px 0px;
   font-size: 14px;
   font-weight: 400;
@@ -145,12 +153,16 @@ exports[`Input component should render correctly with all the props given 1`] = 
   color: #818A91;
 }
 
+.c0 {
+  margin: 16px 0px;
+}
+
 .c0 .c3 {
   display: block;
 }
 
 .c2 {
-  padding: 10px;
+  padding: 8px;
   margin: 0px 8px 8px 0px;
   font-size: 14px;
   font-weight: 400;

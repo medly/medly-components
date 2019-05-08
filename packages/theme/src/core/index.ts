@@ -3,6 +3,7 @@ import colors from './colors';
 import font from './font';
 import input from './input';
 import label from './label';
+import modal from './modal';
 import spacing from './spacing';
 import text from './text';
 
@@ -12,6 +13,7 @@ export const coreDefaultTheme = {
     button,
     label,
     colors,
+    modal,
     font,
     input,
     spacing,
@@ -20,6 +22,7 @@ export const coreDefaultTheme = {
 
 export interface CoreTheme {
     label?: Themes.LabelTheme;
+    modal?: Themes.ModalTheme;
     button?: Themes.ButtonTheme;
     colors?: Themes.ColorPallet;
     font?: Themes.FontTheme;
