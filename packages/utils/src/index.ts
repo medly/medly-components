@@ -1,5 +1,6 @@
 export * from './helpers';
 export * from './types';
+export * from './components';
 export * from './hooks';
 export * from './style';
 export * from './styled';

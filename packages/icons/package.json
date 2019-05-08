@@ -1,0 +1,26 @@
+{
+    "name": "@medly-components/icons",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist/"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "license": "MIT",
+    "scripts": {
+        "prebuild": "tsc -p tsconfig.json",
+        "build": "cross-env BABEL_ENV=production babel --root-mode upward src --out-dir dist --extensions .ts,.tsx --delete-dir-on-start --no-comments",
+        "postbuild": "tsc -p tsconfig.build.json"
+    },
+    "peerDependencies": {
+        "react": "^16.8.6",
+        "styled-components": "^4.2.0"
+    },
+    "dependencies": {
+        "@medly-components/theme": "^1.0.0",
+        "@medly-components/utils": "^1.0.0"
+    }
+}
