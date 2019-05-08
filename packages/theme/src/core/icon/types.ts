@@ -8,5 +8,5 @@ export interface IconTheme {
         L: string;
         XL: string;
     };
-    colorPrimary: string;
+    defaultColor: string;
 }

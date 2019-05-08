@@ -3,4 +3,4 @@ const wInfoStyle = {
         lineHeight: '2'
     }
 };
-export const wInfo = (text: string) => ({ info: { text, inline: true, header: false, source: true, styles: wInfoStyle } });
+export const wInfo = (text: string) => ({ info: { text, inline: false, header: false, source: true, styles: wInfoStyle } });
