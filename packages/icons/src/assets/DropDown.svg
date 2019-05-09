@@ -1,0 +1,8 @@
+<svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="drop-down" >
+            <polygon id="Path" points="0 7 5 12 10 7"></polygon>
+            <polygon id="Path" transform="translate(5.000000, 2.500000) rotate(180.000000) translate(-5.000000, -2.500000) " points="0 0 5 5 10 0"></polygon>
+        </g>
+    </g>
+</svg>
