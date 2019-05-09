@@ -1,9 +1,16 @@
 import { configure, addParameters, addDecorator } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs/react';
-import { withInfo } from '@storybook/addon-info';
+import { jsxDecorator } from 'storybook-addon-jsx';
+import { withPropsTable } from 'storybook-addon-react-docgen';
 
+addDecorator(jsxDecorator);
 addDecorator(withKnobs);
-addDecorator(withInfo);
+addDecorator(
+    withPropsTable({
+        excludedPropTypes: ['theme']
+    })
+);
+
 addParameters({
     options: {
         name: 'Medly-Components',

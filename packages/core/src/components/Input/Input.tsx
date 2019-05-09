@@ -6,7 +6,7 @@ import Text from '../Text';
 import { InputFieldStyled, InputStyled } from './Input.styled';
 import { Props } from './types';
 
-const Input: React.FunctionComponent<Props> & WithStyle = React.forwardRef((props, ref) => {
+const InputWithTheme: React.FunctionComponent<Props> = React.forwardRef((props, ref) => {
     const { description, label, labelPosition, required, theme } = props;
     return (
         <InputFieldStyled>
@@ -21,10 +21,13 @@ const Input: React.FunctionComponent<Props> & WithStyle = React.forwardRef((prop
     );
 });
 
+const Input: React.FunctionComponent<Props> & WithStyle = withTheme(InputWithTheme);
+
 Input.displayName = 'Input';
+Input.Style = InputStyled;
 Input.defaultProps = {
     theme: defaultTheme,
     required: false
 };
 
-export default withTheme(Input);
+export default Input;

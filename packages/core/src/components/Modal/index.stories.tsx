@@ -1,4 +1,3 @@
-import { wInfo } from '@medly-components/utils';
 import { action } from '@storybook/addon-actions';
 import { boolean } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
@@ -46,5 +45,9 @@ storiesOf('Core', module).add(
             </Modal.Actions>
         </Modal>
     ),
-    wInfo(`Input Component with all the default props`)
+    {
+        props: {
+            propTablesExclude: [Button, Input, Modal.Header, Modal.Content, Modal.Actions]
+        }
+    }
 );

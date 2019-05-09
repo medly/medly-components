@@ -1,4 +1,3 @@
-import { wInfo } from '@medly-components/utils';
 import { select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
@@ -17,5 +16,9 @@ storiesOf('Core', module).add(
             <Text> Item 3</Text>
         </List>
     ),
-    wInfo('List component to show show the list either horizontaly or vertically')
+    {
+        props: {
+            propTablesExclude: [Text]
+        }
+    }
 );

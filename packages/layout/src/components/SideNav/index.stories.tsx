@@ -1,5 +1,4 @@
 import { Text } from '@medly-components/core';
-import { wInfo } from '@medly-components/utils';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import SideNav from './SideNav';
@@ -28,5 +27,9 @@ storiesOf('Layout', module).add(
             </SideNav.NavItem>
         </SideNav>
     ),
-    wInfo(``)
+    {
+        props: {
+            propTablesExclude: [Text, SideNav.NavItem]
+        }
+    }
 );
