@@ -13,8 +13,8 @@
     },
     "scripts": {
         "build": "lerna run build",
-        "build-storybook": "build-storybook",
-        "deploy-storybook": "storybook-to-ghpages",
+        "build-storybook": "cross-env BABEL_ENV=storybook build-storybook -c .storybook -o .out",
+        "deploy-storybook": "cross-env BABEL_ENV=storybook storybook-to-ghpages",
         "commit": "git-cz",
         "lint": "run-p -c lint:*",
         "lint:css": "stylelint 'packages/**/src/**/*.tsx'",

@@ -14,7 +14,7 @@ module.exports = function(api) {
 
     if (api.env('production')) ignore.push('**/*.test.tsx', '**/*.test.ts', '**/*.stories.tsx', '__snapshots__');
 
-    if (api.env('development')) ignore.push('**/*.test.tsx', '**/*.test.ts', '__snapshots__');
+    if (api.env('development') || api.env('storybook')) ignore.push('**/*.test.tsx', '**/*.test.ts', '__snapshots__');
 
     return { presets, plugins, ignore };
 };

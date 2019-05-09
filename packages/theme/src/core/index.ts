@@ -8,8 +8,6 @@ import modal from './modal';
 import spacing from './spacing';
 import text from './text';
 
-import * as Themes from './types';
-
 export const coreDefaultTheme = {
     button,
     label,
@@ -21,15 +19,3 @@ export const coreDefaultTheme = {
     spacing,
     text
 };
-
-export interface CoreTheme {
-    label?: Themes.LabelTheme;
-    icon?: Themes.IconTheme;
-    modal?: Themes.ModalTheme;
-    button?: Themes.ButtonTheme;
-    colors?: Themes.ColorPallet;
-    font?: Themes.FontTheme;
-    input?: Themes.InputTheme;
-    spacing?: Themes.SpacingTheme;
-    text?: Themes.TextTheme;
-}
