@@ -4,8 +4,8 @@ import React from 'react';
 import ExpandMoreSvg from '../assets/ExpandMore.svg';
 import SvgIcon, { Props } from '../SvgIcon';
 
-const ExpandMoreIcon: React.FunctionComponent<Props> & WithStyle = ({ size, color, ...props }) => (
-    <SvgIcon size={size} color={color} {...props}>
+const ExpandMoreIcon: React.FunctionComponent<Props> & WithStyle = props => (
+    <SvgIcon {...props}>
         <ExpandMoreSvg width="1em" height="1em" />
     </SvgIcon>
 );

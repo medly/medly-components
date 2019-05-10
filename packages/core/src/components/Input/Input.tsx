@@ -1,12 +1,12 @@
 import { defaultTheme } from '@medly-components/theme';
-import { WithStyle, withTheme } from '@medly-components/utils';
+import { WithStyle } from '@medly-components/utils';
 import React from 'react';
 import Label from '../Label';
 import Text from '../Text';
 import { InputFieldStyled, InputStyled } from './Input.styled';
 import { Props } from './types';
 
-const InputWithTheme: React.FunctionComponent<Props> = React.forwardRef((props, ref) => {
+const Input: React.FunctionComponent<Props> & WithStyle = React.forwardRef((props, ref) => {
     const { description, label, labelPosition, required, theme } = props;
     return (
         <InputFieldStyled>
@@ -16,12 +16,10 @@ const InputWithTheme: React.FunctionComponent<Props> = React.forwardRef((props, 
                 </Label>
             )}
             <InputStyled ref={ref} {...props} />
-            {description && <Text textColor={theme.input.desciptionColor}>{description}</Text>}
+            {description && <Text>{description}</Text>}
         </InputFieldStyled>
     );
 });
-
-const Input: React.FunctionComponent<Props> & WithStyle = withTheme(InputWithTheme);
 
 Input.displayName = 'Input';
 Input.Style = InputStyled;

@@ -4,8 +4,8 @@ import React from 'react';
 import DeleteSvg from '../assets/Delete.svg';
 import SvgIcon, { Props } from '../SvgIcon';
 
-const DeleteIcon: React.FunctionComponent<Props> & WithStyle = ({ size, color, ...props }) => (
-    <SvgIcon size={size} color={color} {...props}>
+const DeleteIcon: React.FunctionComponent<Props> & WithStyle = props => (
+    <SvgIcon {...props}>
         <DeleteSvg width="1em" height="1em" />
     </SvgIcon>
 );

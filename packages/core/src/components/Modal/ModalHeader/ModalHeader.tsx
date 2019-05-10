@@ -1,3 +1,4 @@
+import { ClearIcon } from '@medly-components/icons';
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
 import React, { useContext } from 'react';
 import Text from '../../Text';
@@ -17,8 +18,8 @@ export const ModalHeader: React.SFC & WithStyle = props => {
                     c
                 );
             })}
-            <CloseButton data-testid="modal-close-button" onClick={handleClose}>
-                ×
+            <CloseButton variant="flat" data-testid="modal-close-button" onClick={handleClose}>
+                <ClearIcon />
             </CloseButton>
         </ModalHeaderStyled>
     );

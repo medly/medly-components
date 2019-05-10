@@ -6,7 +6,7 @@ export const SvgIconStyled = styled(InjectClassName)<Props>`
     font-size: ${({ theme, size }) => theme.icon.sizes[size]};
     &&& {
         * {
-            fill: ${({ theme, color }) => color || theme.icon.defaultColor} !important;
+            fill: ${({ theme, color }) => color || theme.icon.defaultColor};
         }
     }
 `;

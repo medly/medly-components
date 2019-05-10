@@ -9,6 +9,7 @@ export interface CoreTheme {
     colors?: CoreThemes.ColorPallet;
     font?: CoreThemes.FontTheme;
     input?: CoreThemes.InputTheme;
+    select?: CoreThemes.SelectTheme;
     spacing?: CoreThemes.SpacingTheme;
     text?: CoreThemes.TextTheme;
 }
