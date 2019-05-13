@@ -1,29 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input component should render correctly when fullWidth & required props are falsy 1`] = `
+.c0 {
+  margin: 0px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
 .c1 {
-  margin: 0px 8px 8px 0px;
+  margin: 0px 8px 0px 0px;
   color: #012040;
-  display: block;
 }
 
 .c4 {
   font-size: 14px;
   font-weight: 400;
+  color: inherit;
+}
+
+.c5 ~ .c3 {
   color: #818A91;
-}
-
-.c0 {
-  margin: 16px 0px;
-}
-
-.c0 .c3 {
-  display: block;
 }
 
 .c2 {
   padding: 8px;
-  margin: 0px 8px 8px 0px;
+  margin: 0px 8px 0px 0px;
   font-size: 14px;
   font-weight: 400;
   color: #012040;
@@ -31,7 +41,7 @@ exports[`Input component should render correctly when fullWidth & required props
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #CCCCCC;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .c2:focus {
@@ -53,6 +63,10 @@ exports[`Input component should render correctly when fullWidth & required props
 
 .c2::placeholder {
   color: #999999;
+}
+
+.c2 ~ .c3 {
+  color: #818A91;
 }
 
 <div>
@@ -81,16 +95,23 @@ exports[`Input component should render correctly when fullWidth & required props
 
 exports[`Input component should render correctly when label and description are not given 1`] = `
 .c0 {
-  margin: 16px 0px;
-}
-
-.c0 .c2 {
-  display: block;
+  margin: 0px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c1 {
   padding: 8px;
-  margin: 0px 8px 8px 0px;
+  margin: 0px 0px 8px 0px;
   font-size: 14px;
   font-weight: 400;
   color: #012040;
@@ -98,7 +119,7 @@ exports[`Input component should render correctly when label and description are 
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #CCCCCC;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .c1:focus {
@@ -126,20 +147,37 @@ exports[`Input component should render correctly when label and description are 
   <div
     class="c0"
   >
+    
     <input
       class="c1"
+      label=""
       placeholder="Enter Email Address"
       type="email"
     />
+    
   </div>
 </div>
 `;
 
 exports[`Input component should render correctly with all the props given 1`] = `
+.c0 {
+  margin: 8px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c1 {
-  margin: 0px 8px 8px 0px;
+  margin: 0px 0px 8px 0px;
   color: #012040;
-  display: block;
 }
 
 .c1::after {
@@ -150,20 +188,12 @@ exports[`Input component should render correctly with all the props given 1`] = 
 .c4 {
   font-size: 14px;
   font-weight: 400;
-  color: #818A91;
-}
-
-.c0 {
-  margin: 16px 0px;
-}
-
-.c0 .c3 {
-  display: block;
+  color: inherit;
 }
 
 .c2 {
   padding: 8px;
-  margin: 0px 8px 8px 0px;
+  margin: 0px 0px 8px 0px;
   font-size: 14px;
   font-weight: 400;
   color: #012040;
@@ -171,7 +201,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #CCCCCC;
-  border-radius: 3px;
+  border-radius: 5px;
   width: 100%;
 }
 
@@ -194,6 +224,10 @@ exports[`Input component should render correctly with all the props given 1`] = 
 
 .c2::placeholder {
   color: #999999;
+}
+
+.c2 ~ .c3 {
+  color: #818A91;
 }
 
 <div>

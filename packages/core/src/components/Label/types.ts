@@ -1,6 +1,6 @@
 import { WithThemeProp } from '@medly-components/utils';
 
 export interface Props extends WithThemeProp {
-    labelPosition?: 'horizontal' | 'vertical';
+    labelPosition?: 'top' | 'start' | 'end' | 'bottom';
     required?: boolean;
 }

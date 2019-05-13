@@ -20,7 +20,9 @@ describe('Modal component', () => {
     it('should not render when open prop is falsy', () => {
         const { container } = TestUtils.render(
             <Modal onCloseModal={onCloseHandler}>
-                <Modal.Header>Add User</Modal.Header>
+                <Modal.Header>
+                    <h1>Demo Header</h1>
+                </Modal.Header>
                 <Modal.Content>Demo Content</Modal.Content>
                 <Modal.Actions>Demo Actions</Modal.Actions>
             </Modal>

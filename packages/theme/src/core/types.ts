@@ -3,6 +3,7 @@ export * from './label/types';
 export * from './colors/types';
 export * from './icon/types';
 export * from './modal/types';
+export * from './radio/types';
 export * from './font/types';
 export * from './select/types';
 export * from './spacing/types';

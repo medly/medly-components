@@ -1,26 +1,14 @@
 import { DropDownIcon } from '@medly-components/icons';
 import { defaultTheme, Theme } from '@medly-components/theme';
-import { fullWidth, styled, WithThemeProp } from '@medly-components/utils';
+import { css, fullWidth, positionalSpacing, styled, WithThemeProp } from '@medly-components/utils';
 import Text from '../Text';
 import { Props, SelectWrapperProps } from './types';
 
 export const getFontSize = (theme: Theme) => theme.font.sizes[theme.text.defaults.textSize];
 export const getFontWeight = (theme: Theme) => theme.font.weights[theme.text.defaults.textWeight];
 
-export const SelectFieldStyled = styled('div')<WithThemeProp>`
-    margin: ${({ theme }) => theme.spacing.M} 0px;
-    ${Text.Style} {
-        display: block;
-        color: ${({ theme }) => theme.select.desciptionColor};
-    }
-`;
-
-SelectFieldStyled.defaultProps = {
-    theme: defaultTheme
-};
-
 export const SelectWrapperStyled = styled('div')<SelectWrapperProps>`
-    margin: 0px ${({ theme }) => theme.spacing.S} ${({ theme }) => theme.spacing.S} 0px;
+    margin: ${({ theme, labelPosition }) => positionalSpacing(labelPosition, theme.spacing.S)};
     border: 1px solid ${({ theme }) => theme.select.borderColor};
     border-radius: 5px;
     box-sizing: border-box;
@@ -31,6 +19,14 @@ export const SelectWrapperStyled = styled('div')<SelectWrapperProps>`
     display: inline-block;
 
     ${props => props.fullWidth && fullWidth()};
+
+    ${({ description, theme }) =>
+        description &&
+        css`
+            & ~ ${Text.Style} {
+                color: ${theme.select.desciptionColor};
+            }
+        `}
 `;
 
 SelectWrapperStyled.defaultProps = {

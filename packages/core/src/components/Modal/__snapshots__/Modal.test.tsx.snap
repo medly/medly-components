@@ -29,7 +29,7 @@ exports[`Modal component should not render when open prop is falsy 1`] = `
   overflow-y: auto;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -40,16 +40,35 @@ exports[`Modal component should not render when open prop is falsy 1`] = `
   justify-content: flex-end;
 }
 
-.c3 {
-  font-size: 24px;
-  font-weight: 700;
-  color: inherit;
+.c5 {
+  font-size: 16px;
+}
+
+.c5.c5.c5 * {
+  fill: #012040;
 }
 
 .c4 {
-  font-size: 30px;
+  background-color: transparent;
   border: none;
-  background: inherit;
+  padding: 10px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #012040;
+}
+
+.c4:hover {
+  cursor: pointer;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c3 {
   padding: 0px;
   margin-right: -24px;
 }
@@ -81,16 +100,27 @@ exports[`Modal component should not render when open prop is falsy 1`] = `
       <div
         class="c2"
       >
-        <strong
-          class="c3"
-        >
-          Add User
-        </strong>
+        <h1>
+          Demo Header
+        </h1>
         <button
-          class="c4"
+          class="c3 c4"
+          color="primary"
           data-testid="modal-close-button"
         >
-          ×
+          <svg
+            class="c5"
+            height="1em"
+            viewBox="0 0 14 14"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7z"
+              fill="none"
+              fill-rule="evenodd"
+            />
+          </svg>
         </button>
       </div>
       <div
@@ -99,7 +129,7 @@ exports[`Modal component should not render when open prop is falsy 1`] = `
         Demo Content
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         Demo Actions
       </div>
@@ -137,7 +167,7 @@ exports[`Modal component should render properly when it is open 1`] = `
   overflow-y: auto;
 }
 
-.c5 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -148,16 +178,41 @@ exports[`Modal component should render properly when it is open 1`] = `
   justify-content: flex-end;
 }
 
+.c6 {
+  font-size: 16px;
+}
+
+.c6.c6.c6 * {
+  fill: #012040;
+}
+
 .c3 {
   font-size: 24px;
   font-weight: 700;
   color: inherit;
 }
 
-.c4 {
-  font-size: 30px;
+.c5 {
+  background-color: transparent;
   border: none;
-  background: inherit;
+  padding: 10px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #012040;
+}
+
+.c5:hover {
+  cursor: pointer;
+}
+
+.c5:focus {
+  outline: none;
+}
+
+.c4 {
   padding: 0px;
   margin-right: -24px;
 }
@@ -196,10 +251,23 @@ exports[`Modal component should render properly when it is open 1`] = `
           Add User
         </strong>
         <button
-          class="c4"
+          class="c4 c5"
+          color="primary"
           data-testid="modal-close-button"
         >
-          ×
+          <svg
+            class="c6"
+            height="1em"
+            viewBox="0 0 14 14"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7z"
+              fill="none"
+              fill-rule="evenodd"
+            />
+          </svg>
         </button>
       </div>
       <div
@@ -208,7 +276,7 @@ exports[`Modal component should render properly when it is open 1`] = `
         Demo Content
       </div>
       <div
-        class="c5"
+        class="c7"
       >
         Demo Actions
       </div>

@@ -65,6 +65,7 @@
         "@types/storybook__react": "^4.0.1",
         "@types/styled-components": "^4.1.14",
         "babel-loader": "^8.0.5",
+        "babel-plugin-inline-react-svg": "^1.1.0",
         "babel-plugin-styled-components": "^1.10.0",
         "commitizen": "^3.1.1",
         "cross-env": "^5.2.0",

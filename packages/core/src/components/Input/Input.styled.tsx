@@ -1,23 +1,11 @@
 import { defaultTheme } from '@medly-components/theme';
-import { fullWidth, styled, WithThemeProp } from '@medly-components/utils';
+import { css, fullWidth, positionalSpacing, styled } from '@medly-components/utils';
 import Text from '../Text';
 import { Props } from './types';
 
-export const InputFieldStyled = styled('div')<WithThemeProp>`
-    margin: ${({ theme }) => theme.spacing.M} 0px;
-    ${Text.Style} {
-        display: block;
-        color: ${({ theme }) => theme.input.desciptionColor};
-    }
-`;
-
-InputFieldStyled.defaultProps = {
-    theme: defaultTheme
-};
-
 export const InputStyled = styled('input').attrs(({ theme: { input, text, font } }) => ({ input, text, font }))<Props>`
     padding: ${({ theme }) => theme.spacing.S};
-    margin: 0px ${({ theme }) => theme.spacing.S} ${({ theme }) => theme.spacing.S} 0px;
+    margin: ${({ theme, labelPosition }) => positionalSpacing(labelPosition, theme.spacing.S)};
     font-size: ${({ font, text }) => font.sizes[text.defaults.textSize]};
     font-weight: ${({ font, text }) => font.weights[text.defaults.textWeight]};
     color: ${props => props.input.color};
@@ -37,6 +25,14 @@ export const InputStyled = styled('input').attrs(({ theme: { input, text, font }
     }
 
     ${props => props.fullWidth && fullWidth()};
+
+    ${({ description, theme }) =>
+        description &&
+        css`
+            & ~ ${Text.Style} {
+                color: ${theme.input.desciptionColor};
+            }
+        `}
 `;
 
 InputStyled.defaultProps = {

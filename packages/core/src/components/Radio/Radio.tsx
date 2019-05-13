@@ -1,0 +1,27 @@
+import { WithStyle } from '@medly-components/utils';
+import React from 'react';
+import FieldWithLabel from '../FieldWithLabel';
+import Label from '../Label';
+import { RadioFillStyled, RadioStyled, RadioWrapperStyled } from './Radio.styled';
+import { Props } from './types';
+
+const Radio: React.SFC<Props> & WithStyle = React.forwardRef((props, ref) => {
+    const { required, labelPosition, label, radioSize } = props;
+    return (
+        <FieldWithLabel {...{ labelPosition }}>
+            {label && <Label {...{ required, labelPosition }}>{label}</Label>}
+            <RadioWrapperStyled {...{ radioSize }}>
+                <RadioStyled ref={ref} {...props} />
+                <RadioFillStyled />
+            </RadioWrapperStyled>
+        </FieldWithLabel>
+    );
+});
+
+Radio.Style = RadioWrapperStyled;
+Radio.defaultProps = {
+    label: '',
+    labelPosition: 'end'
+};
+
+export default Radio;

@@ -5,6 +5,7 @@ import icon from './icon';
 import input from './input';
 import label from './label';
 import modal from './modal';
+import radio from './radio';
 import select from './select';
 import spacing from './spacing';
 import text from './text';
@@ -15,6 +16,7 @@ export const coreDefaultTheme = {
     colors,
     icon,
     modal,
+    radio,
     font,
     input,
     select,

@@ -1,0 +1,202 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio component should render correctly with all the default props 1`] = `
+.c0 {
+  margin: 0px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c1 {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.c1::before {
+  content: '';
+  border-radius: 100%;
+  border: 1px solid #CCCCCC;
+  background: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.c4 {
+  background-color: #012040;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transition: width 0.2s ease-in,height 0.2s ease-in;
+  transition: width 0.2s ease-in,height 0.2s ease-in;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.c2 {
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.c2:focus {
+  outline: none;
+}
+
+.c2:checked ~ .c3 {
+  width: calc(75%);
+  height: calc(75%);
+  -webkit-transition: width 0.2s ease-out,height 0.2s ease-out;
+  transition: width 0.2s ease-out,height 0.2s ease-out;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    
+    <div
+      class="c1"
+    >
+      <input
+        class="c2"
+        label=""
+        name="gender"
+        type="radio"
+      />
+      <div
+        class="c3 c4"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Radio component should render correctly with all the props given 1`] = `
+.c0 {
+  margin: 0px 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c1 {
+  margin: 0px 0px 0px 8px;
+  color: #012040;
+}
+
+.c2 {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.c2::before {
+  content: '';
+  border-radius: 100%;
+  border: 1px solid #CCCCCC;
+  background: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.c5 {
+  background-color: #012040;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transition: width 0.2s ease-in,height 0.2s ease-in;
+  transition: width 0.2s ease-in,height 0.2s ease-in;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.c3 {
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3:checked ~ .c4 {
+  width: calc(75%);
+  height: calc(75%);
+  -webkit-transition: width 0.2s ease-out,height 0.2s ease-out;
+  transition: width 0.2s ease-out,height 0.2s ease-out;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <label
+      class="c1"
+    >
+      Female
+    </label>
+    <div
+      class="c2"
+    >
+      <input
+        class="c3"
+        label="Female"
+        name="gender"
+        type="radio"
+      />
+      <div
+        class="c4 c5"
+      />
+    </div>
+  </div>
+</div>
+`;

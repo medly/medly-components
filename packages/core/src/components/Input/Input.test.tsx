@@ -10,7 +10,7 @@ describe('Input component', () => {
                 type="email"
                 fullWidth
                 label="Email Address"
-                labelPosition="vertical"
+                labelPosition="top"
                 required
                 placeholder="Enter Email Address"
                 description="We will never share your email with anyone"
@@ -24,7 +24,7 @@ describe('Input component', () => {
             <Input
                 type="email"
                 label="Email Address"
-                labelPosition="vertical"
+                labelPosition="start"
                 placeholder="Enter Email Address"
                 description="We will never share your email with anyone"
             />

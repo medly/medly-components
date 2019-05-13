@@ -18,33 +18,18 @@ storiesOf('Core', module).add(
                     <option value="1">Pharmacist</option>
                     <option value="2">Covered Entity</option>
                 </Select>
-                <Input type="text" fullWidth label="Name" labelPosition="vertical" placeholder="Enter your Name" />
+                <Input type="text" fullWidth label="Name" placeholder="Enter your Name" />
                 <Input
                     type="email"
                     fullWidth
                     required
                     label="Email Address"
-                    labelPosition="vertical"
                     placeholder="Enter Email Address"
                     description="We will never share your email with anyone"
                 />
-                <Input type="password" fullWidth required label="New Password" labelPosition="vertical" placeholder="Enter New Password" />
-                <Input
-                    type="password"
-                    fullWidth
-                    required
-                    label="Confirm Password"
-                    labelPosition="vertical"
-                    placeholder="Enter Confirm Password"
-                />
-                <Input
-                    type="tel"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    fullWidth
-                    label="Contact no."
-                    labelPosition="vertical"
-                    placeholder="Enter your Contactno."
-                />
+                <Input type="password" fullWidth required label="New Password" placeholder="Enter New Password" />
+                <Input type="password" fullWidth required label="Confirm Password" placeholder="Enter Confirm Password" />
+                <Input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" fullWidth label="Contact no." placeholder="Enter your Contactno." />
             </Modal.Content>
             <Modal.Actions>
                 <Button variant="outlined">Add User</Button>
