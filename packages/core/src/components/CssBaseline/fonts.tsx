@@ -24,7 +24,6 @@ const fonts = css`
             ''
         );
     }}
-    color: ${props => props.theme.font.defaultColor};
 `;
 
 export default fonts;

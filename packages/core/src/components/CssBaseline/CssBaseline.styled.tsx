@@ -11,6 +11,7 @@ export const CssBaseline = createGlobalStyle`
     }
     body {
         font-family: ${props => props.theme.font.defaultFontFamily || 'sans-serif'};
+        color:  ${props => props.theme.font.defaultColor};
         margin: 0px;
         height: 100%;
         width: 100%;

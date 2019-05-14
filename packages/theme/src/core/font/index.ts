@@ -9,7 +9,7 @@ const font: FontTheme = {
     weights,
     faces,
     defaultFontFamily: 'ProximaNova, Helvetica Neue, Helvetica, Arial, sans-serif',
-    defaultColor: colors.black
+    defaultColor: colors.violet[500]
 };
 
 export default font;

@@ -5,6 +5,7 @@ export interface CoreTheme {
     label?: CoreThemes.LabelTheme;
     icon?: CoreThemes.IconTheme;
     modal?: CoreThemes.ModalTheme;
+    card?: CoreThemes.CardTheme;
     button?: CoreThemes.ButtonTheme;
     colors?: CoreThemes.ColorPallet;
     checkbox?: CoreThemes.CheckboxTheme;

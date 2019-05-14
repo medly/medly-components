@@ -11,7 +11,7 @@ storiesOf('Core', module).add('Text', () => (
     <Text
         uppercase={boolean('Upper Case', false)}
         lineThrough={boolean('Line through', false)}
-        textColor={color('Color', 'black')}
+        textColor={color('Color', '#012040')}
         textSize={select('Text Size', sizeOptions, 'L1')}
         textWeight={select('Text Weight', weightOptions, 'Normal')}
     >
