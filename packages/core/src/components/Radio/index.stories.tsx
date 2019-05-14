@@ -12,7 +12,7 @@ storiesOf('Core', module).add('Radio', () => (
         <Radio
             name="gender"
             label="Female"
-            size={select('Size', size, 'M')}
+            size={select('Size', size, 'S')}
             labelPosition={select('Label Position', labelPosition, 'end')}
         />
         <Radio name="gender" label="Male" size={select('Size', size, 'M')} labelPosition={select('Label Position', labelPosition, 'end')} />

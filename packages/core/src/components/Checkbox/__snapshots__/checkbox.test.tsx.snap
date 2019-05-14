@@ -10,7 +10,7 @@ exports[`Checkbox component should render correctly with all the default props 1
 }
 
 .c0 {
-  margin: 0px 8px;
+  margin: 8px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -25,8 +25,8 @@ exports[`Checkbox component should render correctly with all the default props 1
 }
 
 .c1 {
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
   position: relative;
   border: 1px solid #CCCCCC;
   background-color: #ffffff;
@@ -116,7 +116,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
 }
 
 .c0 {
-  margin: 0px 8px;
+  margin: 8px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;

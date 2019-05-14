@@ -17,7 +17,7 @@ describe('Radio component', () => {
 
     it('should render correctly with all the props given', () => {
         const { container } = TestUtils.render(
-            <RadioGroup label="Gender" name="gender" size="M" labelPosition="top">
+            <RadioGroup label="Gender" name="gender" required size="M" labelPosition="top">
                 <Radio label="Female" />
                 <Radio label="Male" />
             </RadioGroup>

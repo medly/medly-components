@@ -8,5 +8,5 @@ const labelPosition: Array<Props['labelPosition']> = ['start', 'end', 'top', 'bo
 const size: Array<Props['size']> = ['XS', 'S', 'M', 'L', 'XL'];
 
 storiesOf('Core', module).add('Checkbox', () => (
-    <Checkbox name="fruit" size={select('Size', size, 'M')} label="Orange" labelPosition={select('Label Position', labelPosition, 'end')} />
+    <Checkbox name="fruit" size={select('Size', size, 'S')} label="Orange" labelPosition={select('Label Position', labelPosition, 'end')} />
 ));

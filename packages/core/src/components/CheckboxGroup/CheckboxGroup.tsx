@@ -4,7 +4,7 @@ import FieldWithLabel from '../FieldWithLabel';
 import Label from '../Label';
 import { Props } from './types';
 
-const RadioGroup: React.SFC<Props> & WithStyle = React.memo(props => {
+const CheckboxGroup: React.SFC<Props> & WithStyle = React.memo(props => {
     const { size, name, label, required, children, labelPosition } = props;
     return (
         <FieldWithLabel {...{ labelPosition }}>
@@ -20,13 +20,13 @@ const RadioGroup: React.SFC<Props> & WithStyle = React.memo(props => {
     );
 });
 
-RadioGroup.displayName = 'RadioGroup';
-RadioGroup.Style = FieldWithLabel;
-RadioGroup.defaultProps = {
+CheckboxGroup.displayName = 'CheckboxGroup';
+CheckboxGroup.Style = FieldWithLabel;
+CheckboxGroup.defaultProps = {
     size: 'S',
     label: '',
     name: '',
     labelPosition: 'start'
 };
 
-export default RadioGroup;
+export default CheckboxGroup;
