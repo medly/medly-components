@@ -13,7 +13,7 @@ exports[`Modal component should not render when open prop is falsy 1`] = `
 }
 
 .c1 {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%,-50%);
@@ -151,7 +151,7 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 .c1 {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%,-50%);

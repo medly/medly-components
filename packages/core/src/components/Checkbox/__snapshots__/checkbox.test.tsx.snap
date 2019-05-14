@@ -1,6 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Radio component should render correctly with all the default props 1`] = `
+exports[`Checkbox component should render correctly with all the default props 1`] = `
+.c6 {
+  font-size: 16px;
+}
+
+.c6.c6.c6 * {
+  fill: #012040;
+}
+
 .c0 {
   margin: 0px 8px;
   display: -webkit-inline-box;
@@ -20,23 +28,26 @@ exports[`Radio component should render correctly with all the default props 1`] 
   width: 24px;
   height: 24px;
   position: relative;
-  border-radius: 100%;
   border: 1px solid #CCCCCC;
   background-color: #ffffff;
+  border-radius: 15%;
 }
 
 .c4 {
-  background-color: #012040;
   width: 0;
   height: 0;
   z-index: 1;
-  border-radius: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
+}
+
+.c4 .c5 {
+  width: 100%;
+  height: 100%;
 }
 
 .c2 {
@@ -54,10 +65,10 @@ exports[`Radio component should render correctly with all the default props 1`] 
 }
 
 .c2:checked ~ .c3 {
-  width: calc(75%);
-  height: calc(75%);
-  -webkit-transition: width 0.2s ease-out,height 0.2s ease-out;
-  transition: width 0.2s ease-out,height 0.2s ease-out;
+  width: calc(70%);
+  height: calc(70%);
+  -webkit-transition: width 0.2s ease,height 0.2s ease;
+  transition: width 0.2s ease,height 0.2s ease;
 }
 
 <div>
@@ -71,17 +82,39 @@ exports[`Radio component should render correctly with all the default props 1`] 
       <input
         class="c2"
         name="gender"
-        type="radio"
+        type="checkbox"
       />
       <div
         class="c3 c4"
-      />
+      >
+        <svg
+          class="c5 c6"
+          height="1em"
+          viewBox="0 0 18 14"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
+            fill="none"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Radio component should render correctly with all the props given 1`] = `
+exports[`Checkbox component should render correctly with all the props given 1`] = `
+.c7 {
+  font-size: 16px;
+}
+
+.c7.c7.c7 * {
+  fill: #012040;
+}
+
 .c0 {
   margin: 0px 8px;
   display: -webkit-inline-box;
@@ -106,23 +139,26 @@ exports[`Radio component should render correctly with all the props given 1`] = 
   width: 24px;
   height: 24px;
   position: relative;
-  border-radius: 100%;
   border: 1px solid #CCCCCC;
   background-color: #ffffff;
+  border-radius: 15%;
 }
 
 .c5 {
-  background-color: #012040;
   width: 0;
   height: 0;
   z-index: 1;
-  border-radius: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
+}
+
+.c5 .c6 {
+  width: 100%;
+  height: 100%;
 }
 
 .c3 {
@@ -140,10 +176,10 @@ exports[`Radio component should render correctly with all the props given 1`] = 
 }
 
 .c3:checked ~ .c4 {
-  width: calc(75%);
-  height: calc(75%);
-  -webkit-transition: width 0.2s ease-out,height 0.2s ease-out;
-  transition: width 0.2s ease-out,height 0.2s ease-out;
+  width: calc(70%);
+  height: calc(70%);
+  -webkit-transition: width 0.2s ease,height 0.2s ease;
+  transition: width 0.2s ease,height 0.2s ease;
 }
 
 <div>
@@ -161,11 +197,25 @@ exports[`Radio component should render correctly with all the props given 1`] = 
       <input
         class="c3"
         name="gender"
-        type="radio"
+        type="checkbox"
       />
       <div
         class="c4 c5"
-      />
+      >
+        <svg
+          class="c6 c7"
+          height="1em"
+          viewBox="0 0 18 14"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
+            fill="none"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
     </div>
   </div>
 </div>

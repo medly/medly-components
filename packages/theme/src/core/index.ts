@@ -1,4 +1,5 @@
 import button from './button';
+import checkbox from './checkbox';
 import colors from './colors';
 import font from './font';
 import icon from './icon';
@@ -12,6 +13,7 @@ import text from './text';
 
 export const coreDefaultTheme = {
     button,
+    checkbox,
     label,
     colors,
     icon,

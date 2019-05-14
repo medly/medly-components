@@ -1,7 +1,7 @@
 import colors from '../colors';
-import { RadioTheme } from './types';
+import { CheckboxTheme } from './types';
 
-const radio: RadioTheme = {
+const checkbox: CheckboxTheme = {
     sizes: {
         XS: '12px',
         S: '16px',
@@ -15,4 +15,4 @@ const radio: RadioTheme = {
     borderColor: colors.grey[200]
 };
 
-export default radio;
+export default checkbox;

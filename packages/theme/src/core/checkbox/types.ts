@@ -1,4 +1,4 @@
-export interface RadioSizes {
+export interface CheckboxSizes {
     XS: string;
     S: string;
     M: string;
@@ -6,8 +6,8 @@ export interface RadioSizes {
     XL: string;
 }
 
-export interface RadioTheme {
-    sizes: RadioSizes;
+export interface CheckboxTheme {
+    sizes: CheckboxSizes;
     defaultSize: string;
     fillColor: string;
     bgColor: string;

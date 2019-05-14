@@ -7,6 +7,7 @@ export interface CoreTheme {
     modal?: CoreThemes.ModalTheme;
     button?: CoreThemes.ButtonTheme;
     colors?: CoreThemes.ColorPallet;
+    checkbox?: CoreThemes.CheckboxTheme;
     radio?: CoreThemes.RadioTheme;
     font?: CoreThemes.FontTheme;
     input?: CoreThemes.InputTheme;

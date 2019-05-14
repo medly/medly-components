@@ -6,18 +6,19 @@ import { RadioFillStyled, RadioStyled, RadioWrapperStyled } from './Radio.styled
 import { Props } from './types';
 
 const Radio: React.SFC<Props> & WithStyle = React.forwardRef((props, ref) => {
-    const { required, labelPosition, label, radioSize } = props;
+    const { size, label, required, labelPosition, ...restProps } = props;
     return (
         <FieldWithLabel {...{ labelPosition }}>
             {label && <Label {...{ required, labelPosition }}>{label}</Label>}
-            <RadioWrapperStyled {...{ radioSize }}>
-                <RadioStyled ref={ref} {...props} />
+            <RadioWrapperStyled {...{ size }}>
+                <RadioStyled ref={ref} required={required} {...restProps} />
                 <RadioFillStyled />
             </RadioWrapperStyled>
         </FieldWithLabel>
     );
 });
 
+Radio.displayName = 'Radio';
 Radio.Style = RadioWrapperStyled;
 Radio.defaultProps = {
     label: '',

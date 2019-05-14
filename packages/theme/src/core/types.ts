@@ -1,6 +1,7 @@
 export * from './button/types';
 export * from './label/types';
 export * from './colors/types';
+export * from './checkbox/types';
 export * from './icon/types';
 export * from './modal/types';
 export * from './radio/types';
