@@ -7,23 +7,26 @@ import FieldWithLabel from '../FieldWithLabel';
 import { SelectIconStyled, SelectStyled, SelectWrapperStyled } from './Select.styled';
 import { Props } from './types';
 
-const Select: React.SFC<Props> & WithStyle = React.forwardRef((props, ref) => {
-    const { description, label, labelPosition, required, fullWidth } = props;
+const Select: React.SFC<Props> & WithStyle = React.memo(
+    React.forwardRef((props, ref) => {
+        const { description, label, labelPosition, required, fullWidth } = props;
 
-    return (
-        <FieldWithLabel {...{ fullWidth, labelPosition }}>
-            {label && <Label {...{ required, labelPosition }}>{label}</Label>}
-            <SelectWrapperStyled {...{ description, fullWidth, labelPosition }}>
-                <SelectStyled ref={ref} {...props}>
-                    {props.children}
-                </SelectStyled>
-                <SelectIconStyled />
-            </SelectWrapperStyled>
-            {description && <Text>{description}</Text>}
-        </FieldWithLabel>
-    );
-});
+        return (
+            <FieldWithLabel {...{ fullWidth, labelPosition }}>
+                {label && <Label {...{ required, labelPosition }}>{label}</Label>}
+                <SelectWrapperStyled {...{ description, fullWidth, labelPosition }}>
+                    <SelectStyled ref={ref} {...props}>
+                        {props.children}
+                    </SelectStyled>
+                    <SelectIconStyled />
+                </SelectWrapperStyled>
+                {description && <Text>{description}</Text>}
+            </FieldWithLabel>
+        );
+    })
+);
 
+Select.displayName = 'Select';
 Select.Style = SelectWrapperStyled;
 Select.defaultProps = {
     label: '',

@@ -7,16 +7,18 @@ import Text from '../Text';
 import { InputStyled } from './Input.styled';
 import { Props } from './types';
 
-const Input: React.FunctionComponent<Props> & WithStyle = React.forwardRef((props, ref) => {
-    const { description, label, labelPosition, fullWidth, required } = props;
-    return (
-        <FieldWithLabel {...{ fullWidth, labelPosition }}>
-            {label && <Label {...{ required, labelPosition }}>{label}</Label>}
-            <InputStyled ref={ref} {...props} />
-            {description && <Text>{description}</Text>}
-        </FieldWithLabel>
-    );
-});
+const Input: React.FunctionComponent<Props> & WithStyle = React.memo(
+    React.forwardRef((props, ref) => {
+        const { description, label, labelPosition, fullWidth, required } = props;
+        return (
+            <FieldWithLabel {...{ fullWidth, labelPosition }}>
+                {label && <Label {...{ required, labelPosition }}>{label}</Label>}
+                <InputStyled ref={ref} {...props} />
+                {description && <Text>{description}</Text>}
+            </FieldWithLabel>
+        );
+    })
+);
 
 Input.displayName = 'Input';
 Input.Style = InputStyled;

@@ -5,7 +5,7 @@ import Text from '../../Text';
 import { CloseModalContext } from '../Modal';
 import { CloseButton, ModalHeaderStyled } from './ModalHeader.styled';
 
-export const ModalHeader: React.SFC & WithStyle = props => {
+export const ModalHeader: React.SFC & WithStyle = React.memo(props => {
     const handleClose = useContext(CloseModalContext);
     return (
         <ModalHeaderStyled {...props}>
@@ -23,7 +23,7 @@ export const ModalHeader: React.SFC & WithStyle = props => {
             </CloseButton>
         </ModalHeaderStyled>
     );
-};
+});
 
 ModalHeader.defaultProps = {
     open: false
