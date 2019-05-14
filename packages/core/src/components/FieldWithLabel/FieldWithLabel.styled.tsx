@@ -3,7 +3,7 @@ import { styled } from '@medly-components/utils';
 import { Props } from './types';
 
 export const FieldWithLabel = styled('div')<Props>`
-    margin: ${({ theme, fullWidth }) => (fullWidth ? `${theme.spacing.S} 0px` : `0px ${theme.spacing.S}`)};
+    margin: ${({ theme, fullWidth }) => (fullWidth ? `${theme.spacing.S} 0px` : `${theme.spacing.S}`)};
     display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
     align-items: ${({ labelPosition }) => (labelPosition === 'top' || labelPosition === 'bottom' ? 'flex-start' : 'center')};
     flex-direction: ${({ labelPosition }) => {
