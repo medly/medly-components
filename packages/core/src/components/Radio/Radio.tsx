@@ -23,7 +23,6 @@ const Radio: React.SFC<Props> & WithStyle = React.memo(
 Radio.displayName = 'Radio';
 Radio.Style = RadioWrapperStyled;
 Radio.defaultProps = {
-    size: 'S',
     label: '',
     labelPosition: 'end'
 };

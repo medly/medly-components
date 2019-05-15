@@ -23,7 +23,6 @@ const CheckboxGroup: React.SFC<Props> & WithStyle = React.memo(props => {
 CheckboxGroup.displayName = 'CheckboxGroup';
 CheckboxGroup.Style = FieldWithLabel;
 CheckboxGroup.defaultProps = {
-    size: 'S',
     label: '',
     name: '',
     labelPosition: 'start'

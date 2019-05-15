@@ -26,7 +26,6 @@ const Checkbox: React.SFC<Props> & WithStyle = React.memo(
 Checkbox.displayName = 'Checkbox';
 Checkbox.Style = CheckboxWrapperStyled;
 Checkbox.defaultProps = {
-    size: 'S',
     label: '',
     labelPosition: 'end'
 };

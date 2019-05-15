@@ -9,7 +9,7 @@ const radio: RadioTheme = {
         L: '36px',
         XL: '48px'
     },
-    defaultSize: '24px',
+    defaultSize: '16px',
     fillColor: colors.violet[500],
     bgColor: colors.white,
     borderColor: colors.grey[200]

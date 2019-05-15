@@ -23,7 +23,6 @@ const RadioGroup: React.SFC<Props> & WithStyle = React.memo(props => {
 RadioGroup.displayName = 'RadioGroup';
 RadioGroup.Style = FieldWithLabel;
 RadioGroup.defaultProps = {
-    size: 'S',
     label: '',
     name: '',
     labelPosition: 'start'
