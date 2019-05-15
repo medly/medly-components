@@ -1,4 +1,5 @@
 import Button from './Button';
+import Card from './Card';
 import Checkbox from './Checkbox';
 import CheckboxGroup from './CheckboxGroup';
 import CssBaseline from './CssBaseline';
@@ -10,4 +11,4 @@ import RadioGroup from './RadioGroup';
 import Select from './Select';
 import Text from './Text';
 
-export { CssBaseline, Checkbox, CheckboxGroup, Radio, RadioGroup, Modal, Select, Button, Text, Input, List };
+export { Button, Card, CssBaseline, Checkbox, CheckboxGroup, Input, Radio, RadioGroup, Modal, Select, Text, List };

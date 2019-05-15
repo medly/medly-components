@@ -1,3 +1,4 @@
+import avatar from './avatar';
 import button from './button';
 import card from './card';
 import checkbox from './checkbox';
@@ -13,6 +14,7 @@ import spacing from './spacing';
 import text from './text';
 
 export const coreDefaultTheme = {
+    avatar,
     button,
     checkbox,
     label,

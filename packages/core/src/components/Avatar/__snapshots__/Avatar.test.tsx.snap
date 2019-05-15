@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar component should render with default props 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.c0 {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  color: #fafafa;
+  background: #bdbdbd;
+}
+
+.c0 img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <strong
+      class="c1"
+    >
+      M
+    </strong>
+  </div>
+</div>
+`;
+
+exports[`Avatar component should render with size 1`] = `
+.c1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.c0 {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  color: #fafafa;
+  background: #bdbdbd;
+}
+
+.c0 img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <strong
+      class="c1"
+    >
+      M
+    </strong>
+  </div>
+</div>
+`;
+
+exports[`Avatar component should render with size and image 1`] = `
+.c0 {
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  color: #fafafa;
+  background: #bdbdbd;
+}
+
+.c0 img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <img
+      src="http://dummurl"
+    />
+  </div>
+</div>
+`;

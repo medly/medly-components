@@ -2,6 +2,7 @@ import * as CoreThemes from './core/types';
 import * as LayoutThemes from './layout/types';
 
 export interface CoreTheme {
+    avatar?: CoreThemes.AvatarTheme;
     label?: CoreThemes.LabelTheme;
     icon?: CoreThemes.IconTheme;
     modal?: CoreThemes.ModalTheme;

@@ -1,3 +1,4 @@
+export * from './avatar/types';
 export * from './button/types';
 export * from './label/types';
 export * from './colors/types';
