@@ -5,41 +5,24 @@ import { Props } from './types';
 
 const horizontal = (spacings: SpacingTheme) => css`
     li {
-        display: inline;
-
-        * {
-            display: inline;
-            margin: 0px ${spacings.XS};
-        }
-
+        margin: 0px ${spacings.XS};
         &:last-child {
-            * {
-                margin-right: ${spacings.S};
-            }
+            margin-right: ${spacings.S};
         }
         &:first-child {
-            * {
-                margin-left: ${spacings.S};
-            }
+            margin-left: ${spacings.S};
         }
     }
 `;
 
 const vertical = (spacings: SpacingTheme) => css`
     li {
-        * {
-            display: block;
-            margin: ${spacings.XS} 0px;
-        }
+        margin: ${spacings.XS} 0px;
         &:last-child {
-            * {
-                margin-bottom: ${spacings.S};
-            }
+            margin-bottom: ${spacings.S};
         }
         &:first-child {
-            * {
-                margin-top: ${spacings.S};
-            }
+            margin-top: ${spacings.S};
         }
     }
 `;
@@ -47,6 +30,9 @@ const vertical = (spacings: SpacingTheme) => css`
 export const ListStyled = styled('ul').attrs(({ theme: { spacing: spacings } }) => ({ spacings }))<Props>`
     padding: 0;
     margin: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: ${({ variant }) => (variant === 'horizontal' ? 'row' : 'column')};
 
     ${({ spacings, variant }) => variant === 'horizontal' && horizontal(spacings)};
     ${({ spacings, variant }) => variant === 'vertical' && vertical(spacings)};
