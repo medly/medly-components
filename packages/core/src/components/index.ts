@@ -9,6 +9,7 @@ import Modal from './Modal';
 import Radio from './Radio';
 import RadioGroup from './RadioGroup';
 import Select from './Select';
+import Stepper from './Stepper';
 import Text from './Text';
 
-export { Button, Card, CssBaseline, Checkbox, CheckboxGroup, Input, Radio, RadioGroup, Modal, Select, Text, List };
+export { Button, Card, CssBaseline, Checkbox, CheckboxGroup, Input, Radio, RadioGroup, Modal, Select, Stepper, Text, List };
