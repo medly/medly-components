@@ -3,7 +3,7 @@ import { AvatarTheme } from './types';
 const avatar: AvatarTheme = {
     S: {
         size: '30px',
-        fontSize: 'M2'
+        fontSize: 'M3'
     },
     M: {
         size: '60px',

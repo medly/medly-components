@@ -14,6 +14,7 @@ export interface CoreTheme {
     font?: CoreThemes.FontTheme;
     input?: CoreThemes.InputTheme;
     select?: CoreThemes.SelectTheme;
+    stepper?: CoreThemes.StepperTheme;
     spacing?: CoreThemes.SpacingTheme;
     text?: CoreThemes.TextTheme;
 }

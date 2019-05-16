@@ -5,7 +5,7 @@ import Text from '../Text';
 import { AvatarStyled } from './Avatar.styled';
 import { Props } from './types';
 
-const Avatar: React.FunctionComponent<Props> & WithStyle = props => {
+const AvatarWithTheme: React.SFC<Props> = props => {
     const { theme, size } = props;
     const { avatar } = theme;
     const { defaults } = avatar;
@@ -25,11 +25,13 @@ const Avatar: React.FunctionComponent<Props> & WithStyle = props => {
         </AvatarStyled>
     );
 };
-
-Avatar.defaultProps = {
+AvatarWithTheme.defaultProps = {
     theme: defaultTheme
 };
+
+const Avatar: React.SFC<Props> & WithStyle = withTheme(AvatarWithTheme);
+
 Avatar.displayName = 'Avatar';
 Avatar.Style = AvatarStyled;
 
-export default withTheme(Avatar);
+export default Avatar;

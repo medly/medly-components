@@ -11,6 +11,7 @@ import modal from './modal';
 import radio from './radio';
 import select from './select';
 import spacing from './spacing';
+import stepper from './stepper';
 import text from './text';
 
 export const coreDefaultTheme = {
@@ -26,6 +27,7 @@ export const coreDefaultTheme = {
     font,
     input,
     select,
+    stepper,
     spacing,
     text
 };

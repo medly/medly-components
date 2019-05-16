@@ -9,6 +9,7 @@ export * from './modal/types';
 export * from './radio/types';
 export * from './font/types';
 export * from './select/types';
+export * from './stepper/types';
 export * from './spacing/types';
 export * from './text/types';
 export * from './input/types';
