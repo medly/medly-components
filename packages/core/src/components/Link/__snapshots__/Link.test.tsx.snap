@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link Component should render with component as child 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c0 {
+  color: #012040;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:active {
+  color: #012040;
+}
+
+.c0:hover {
+  color: #012040;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  outline-width: 0;
+  cursor: pointer;
+}
+
+<div>
+  <a
+    class="c0"
+    href="#"
+  >
+    <span
+      class="c1"
+    >
+      help me Mr Kite man
+    </span>
+  </a>
+</div>
+`;
+
+exports[`Link Component should render with default props 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c0 {
+  color: #012040;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:active {
+  color: #012040;
+}
+
+.c0:hover {
+  color: #012040;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  outline-width: 0;
+  cursor: pointer;
+}
+
+<div>
+  <a
+    class="c0"
+    href="#"
+  >
+    <span
+      class="c1"
+    >
+      Test
+    </span>
+  </a>
+</div>
+`;

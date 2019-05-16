@@ -7,6 +7,7 @@ import font from './font';
 import icon from './icon';
 import input from './input';
 import label from './label';
+import link from './link';
 import modal from './modal';
 import radio from './radio';
 import select from './select';
@@ -19,6 +20,7 @@ export const coreDefaultTheme = {
     button,
     checkbox,
     label,
+    link,
     card,
     colors,
     icon,

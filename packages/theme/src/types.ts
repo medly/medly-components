@@ -4,6 +4,7 @@ import * as LayoutThemes from './layout/types';
 export interface CoreTheme {
     avatar?: CoreThemes.AvatarTheme;
     label?: CoreThemes.LabelTheme;
+    link?: CoreThemes.LinkTheme;
     icon?: CoreThemes.IconTheme;
     modal?: CoreThemes.ModalTheme;
     card?: CoreThemes.CardTheme;
