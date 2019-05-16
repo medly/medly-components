@@ -5,7 +5,7 @@ import Text from '../Text';
 import { AvatarStyled } from './Avatar.styled';
 import { Props } from './types';
 
-const Avatar: React.SFC<Props> & WithStyle = props => {
+const Avatar: React.SFC<Props> & WithStyle = React.memo(props => {
     return (
         <AvatarStyled {...props}>
             {React.Children.map(props.children, c => {
@@ -19,7 +19,8 @@ const Avatar: React.SFC<Props> & WithStyle = props => {
             })}
         </AvatarStyled>
     );
-};
+});
+
 Avatar.displayName = 'Avatar';
 Avatar.Style = AvatarStyled;
 
