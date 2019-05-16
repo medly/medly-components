@@ -1,21 +1,23 @@
 import { AvatarTheme } from './types';
 
 const avatar: AvatarTheme = {
-    S: {
-        size: '30px',
-        fontSize: 'M3'
-    },
-    M: {
-        size: '60px',
-        fontSize: 'L2'
-    },
-    L: {
-        size: '90px',
-        fontSize: 'L3'
-    },
-    XL: {
-        size: '120px',
-        fontSize: 'L4'
+    sizes: {
+        S: {
+            avatarSize: '30px',
+            fontSize: 'M3'
+        },
+        M: {
+            avatarSize: '60px',
+            fontSize: 'L2'
+        },
+        L: {
+            avatarSize: '90px',
+            fontSize: 'L3'
+        },
+        XL: {
+            avatarSize: '120px',
+            fontSize: 'L4'
+        }
     },
     defaults: {
         size: 'S',

@@ -10,7 +10,9 @@ const Step: React.SFC<StepProps> & WithStyle = props => {
     return (
         <StepStyled>
             <StepCounterStyled {...props}>
-                <Text textWeight="Strong">{step}</Text>
+                <Text uppercase textWeight="Strong">
+                    {step}
+                </Text>
             </StepCounterStyled>
             <Text textWeight="Strong">{children}</Text>
         </StepStyled>

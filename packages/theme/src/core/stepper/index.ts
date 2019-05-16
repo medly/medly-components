@@ -4,19 +4,19 @@ import { StepperTheme } from './types';
 const stepper: StepperTheme = {
     sizes: {
         S: {
-            size: '30px',
+            counterSize: '30px',
             fontSize: 'M3'
         },
         M: {
-            size: '60px',
+            counterSize: '60px',
             fontSize: 'L2'
         },
         L: {
-            size: '90px',
+            counterSize: '90px',
             fontSize: 'L3'
         },
         XL: {
-            size: '120px',
+            counterSize: '120px',
             fontSize: 'L4'
         }
     },

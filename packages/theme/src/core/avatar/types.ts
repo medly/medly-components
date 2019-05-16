@@ -1,26 +1,28 @@
 import { FontSizeTheme } from '../font/types';
 
-export type AvatarSizesType = 'S' | 'M' | 'L' | 'XL';
-
-export interface AvatarTheme {
+export interface AvatarSizes {
     S: {
-        size: string;
+        avatarSize: string;
         fontSize: keyof FontSizeTheme;
     };
     M: {
-        size: string;
+        avatarSize: string;
         fontSize: keyof FontSizeTheme;
     };
     L: {
-        size: string;
+        avatarSize: string;
         fontSize: keyof FontSizeTheme;
     };
     XL: {
-        size: string;
+        avatarSize: string;
         fontSize: keyof FontSizeTheme;
     };
+}
+
+export interface AvatarTheme {
+    sizes: AvatarSizes;
     defaults: {
-        size: AvatarSizesType;
+        size: keyof AvatarSizes;
         textColor: string;
         bgColor: string;
     };

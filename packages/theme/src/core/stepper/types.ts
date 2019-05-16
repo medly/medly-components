@@ -2,19 +2,19 @@ import { FontSizeTheme } from '../font/types';
 
 export interface StepperSizes {
     S: {
-        size: string;
+        counterSize: string;
         fontSize: keyof FontSizeTheme;
     };
     M: {
-        size: string;
+        counterSize: string;
         fontSize: keyof FontSizeTheme;
     };
     L: {
-        size: string;
+        counterSize: string;
         fontSize: keyof FontSizeTheme;
     };
     XL: {
-        size: string;
+        counterSize: string;
         fontSize: keyof FontSizeTheme;
     };
 }

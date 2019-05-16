@@ -1,31 +1,43 @@
 import { defaultTheme } from '@medly-components/theme';
 import { styled } from '@medly-components/utils';
 import Text from '../../Text';
-import { StepCounterProps } from '../types';
+import { CounterProps, CounterStyledProps } from '../types';
 
-const getSizes = ({ theme: { stepper }, size }: StepCounterProps) => stepper.sizes[size || stepper.defaultSize];
-const getStepperSize = (props: StepCounterProps) => getSizes(props).size;
-const getFontSize = (props: StepCounterProps) => props.theme.font.sizes[getSizes(props).fontSize];
-const getColor = ({ theme, active }: StepCounterProps) => (active ? theme.stepper.activeColor : theme.stepper.inactiveColor);
+const getSize = ({ counterSize }: CounterStyledProps) => counterSize;
+const getFontSize = ({ fontSize }: CounterStyledProps) => fontSize;
 
-export const StepCounterStyled = styled('div')<StepCounterProps>`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: ${getStepperSize};
-    height: ${getStepperSize};
-    line-height: ${getStepperSize};
+const getMappedProps = ({ theme, size, active }: CounterProps) => {
+    const { font, stepper } = theme;
+    const { sizes, activeColor, inactiveColor, defaultSize } = stepper;
+    const { counterSize, fontSize } = sizes[size || defaultSize];
+
+    return {
+        counterSize,
+        fontSize: font.sizes[fontSize],
+        bgColor: active ? activeColor : inactiveColor,
+        descriptionColor: active ? activeColor : inactiveColor
+    };
+};
+
+export const StepCounterStyled = styled('div').attrs(getMappedProps)<CounterStyledProps>`
+    display: inline-block;
+    text-align: center;
+    width: ${getSize};
+    height: ${getSize};
+    line-height: ${getSize};
     border-radius: 50%;
     overflow: hidden;
     color: ${({ theme }) => theme.stepper.counterColor};
-    background: ${getColor};
+    background: ${({ bgColor }) => bgColor};
 
+    /* This is the counter */
     ${Text.Style} {
         font-size: ${getFontSize};
     }
 
+    /* This is the description */
     & + ${Text.Style} {
-        color: ${getColor};
+        color: ${({ descriptionColor }) => descriptionColor};
         font-size: ${getFontSize};
     }
 `;

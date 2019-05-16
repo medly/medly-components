@@ -1,0 +1,295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stepper component should render correctly with all the default props 1`] = `
+.c5 {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.c3 {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  color: #ffffff;
+  background: #012040;
+}
+
+.c3 .c4 {
+  font-size: 16px;
+}
+
+.c3 + .c4 {
+  color: #012040;
+  font-size: 16px;
+}
+
+.c7 {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  color: #ffffff;
+  background: #7C7B7B;
+}
+
+.c7 .c4 {
+  font-size: 16px;
+}
+
+.c7 + .c4 {
+  color: #7C7B7B;
+  font-size: 16px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.c1 .c2 {
+  margin-right: 10px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2 c3"
+        font-size="16px"
+        step="1"
+      >
+        <strong
+          class="c4 c5"
+        >
+          1
+        </strong>
+      </div>
+      <strong
+        class="c4 c6"
+      >
+        Customer Information
+      </strong>
+    </div>
+    <div
+      class="c1"
+    >
+      <div
+        class="c2 c7"
+        font-size="16px"
+        step="2"
+      >
+        <strong
+          class="c4 c5"
+        >
+          2
+        </strong>
+      </div>
+      <strong
+        class="c4 c6"
+      >
+        Payment information
+      </strong>
+    </div>
+    <div
+      class="c1"
+    >
+      <div
+        class="c2 c7"
+        font-size="16px"
+        step="3"
+      >
+        <strong
+          class="c4 c5"
+        >
+          3
+        </strong>
+      </div>
+      <strong
+        class="c4 c6"
+      >
+        Booking is confirmed!
+      </strong>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Stepper component should render correctly with all the props given 1`] = `
+.c5 {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.c3 {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  color: #ffffff;
+  background: #012040;
+}
+
+.c3 .c4 {
+  font-size: 16px;
+}
+
+.c3 + .c4 {
+  color: #012040;
+  font-size: 16px;
+}
+
+.c7 {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  color: #ffffff;
+  background: #7C7B7B;
+}
+
+.c7 .c4 {
+  font-size: 16px;
+}
+
+.c7 + .c4 {
+  color: #7C7B7B;
+  font-size: 16px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.c1 .c2 {
+  margin-right: 10px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2 c3"
+        font-size="16px"
+        step="1"
+      >
+        <strong
+          class="c4 c5"
+        >
+          1
+        </strong>
+      </div>
+      <strong
+        class="c4 c6"
+      >
+        Customer Information
+      </strong>
+    </div>
+    <div
+      class="c1"
+    >
+      <div
+        class="c2 c7"
+        font-size="16px"
+        step="2"
+      >
+        <strong
+          class="c4 c5"
+        >
+          2
+        </strong>
+      </div>
+      <strong
+        class="c4 c6"
+      >
+        Payment information
+      </strong>
+    </div>
+    <div
+      class="c1"
+    >
+      <div
+        class="c2 c7"
+        font-size="16px"
+        step="3"
+      >
+        <strong
+          class="c4 c5"
+        >
+          3
+        </strong>
+      </div>
+      <strong
+        class="c4 c6"
+      >
+        Booking is confirmed!
+      </strong>
+    </div>
+  </div>
+</div>
+`;

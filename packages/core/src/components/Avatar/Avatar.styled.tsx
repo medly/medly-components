@@ -1,31 +1,41 @@
 import { styled } from '@medly-components/utils';
-import { Props } from './types';
+import Text from '../Text';
+import { Props, StyledProps } from './types';
 
-const getSize = ({ size }: Partial<Props>) => size;
-const getMappedProps = ({ theme: { avatar }, ...props }: Props) => {
+const getAvatarSize = ({ avatarSize }: StyledProps) => avatarSize;
+
+const getMappedProps = ({ theme, ...props }: Props) => {
+    const { font, avatar } = theme;
     const { defaults } = avatar;
     const { size, textColor, bgColor } = props;
+    const { avatarSize, fontSize } = avatar.sizes[size || defaults.size];
+
     return {
+        avatarSize,
+        fontSize: font.sizes[fontSize],
         bgColor: bgColor || defaults.bgColor,
-        size: avatar[size || defaults.size].size,
         textColor: textColor || defaults.textColor
     };
 };
 
-export const AvatarStyled = styled('div').attrs(getMappedProps)<Props>`
-    width: ${getSize};
-    height: ${getSize};
-    line-height: ${getSize};
-    text-align: center;
-    border-radius: 50%;
+export const AvatarStyled = styled('div').attrs(getMappedProps)<StyledProps>`
     display: inline-block;
+    text-align: center;
+    width: ${getAvatarSize};
+    height: ${getAvatarSize};
+    line-height: ${getAvatarSize};
+    border-radius: 50%;
     overflow: hidden;
     color: ${({ textColor }) => textColor};
     background: ${({ bgColor }) => bgColor};
 
+    ${Text.Style} {
+        font-size: ${({ fontSize }) => fontSize};
+    }
+
     img {
-        width: ${getSize};
-        height: ${getSize};
+        width: ${getAvatarSize};
+        height: ${getAvatarSize};
         object-fit: cover;
     }
 `;
