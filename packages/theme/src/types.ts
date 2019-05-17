@@ -3,6 +3,7 @@ import * as LayoutThemes from './layout/types';
 
 export interface CoreTheme {
     avatar?: CoreThemes.AvatarTheme;
+    breadCrumbs?: CoreThemes.BreadCrumbsTheme;
     label?: CoreThemes.LabelTheme;
     link?: CoreThemes.LinkTheme;
     icon?: CoreThemes.IconTheme;

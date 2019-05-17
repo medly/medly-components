@@ -1,4 +1,5 @@
 import avatar from './avatar';
+import breadCrumbs from './breadCrumbs';
 import button from './button';
 import card from './card';
 import checkbox from './checkbox';
@@ -17,6 +18,7 @@ import text from './text';
 
 export const coreDefaultTheme = {
     avatar,
+    breadCrumbs,
     button,
     checkbox,
     label,

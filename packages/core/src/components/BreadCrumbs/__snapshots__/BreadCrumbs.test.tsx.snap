@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BreadCrumbs component should render correctly 1`] = `
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c4 {
+  color: #012040;
+  background-color: transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4:active {
+  color: #012040;
+}
+
+.c4:hover {
+  color: #012040;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  outline-width: 0;
+  cursor: pointer;
+}
+
+.c2 {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 li {
+  margin: 0px 4px;
+}
+
+.c2 li:last-child {
+  margin-right: 8px;
+}
+
+.c2 li:first-child {
+  margin-left: 8px;
+}
+
+.c0 {
+  height: 40px;
+  background-color: #012040;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .c3 {
+  color: #ffffff;
+}
+
+.c0 .c3 .c5 {
+  font-size: 16px;
+}
+
+.c0 .c1 li + li:before {
+  margin-right: 8px;
+  content: '/';
+  color: #ffffff;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <ul
+      class="c1 c2"
+    >
+      <li>
+        <a
+          class="c3 c4"
+          href="#"
+        >
+          <span
+            class="c5 c6"
+          >
+            Covered Entities
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="c3 c4"
+          href="#"
+        >
+          <span
+            class="c5 c6"
+          >
+            Add New Entities
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

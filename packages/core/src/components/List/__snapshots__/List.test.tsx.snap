@@ -4,22 +4,25 @@ exports[`List component should render horizontal list 1`] = `
 .c0 {
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .c0 li {
-  display: inline;
-}
-
-.c0 li * {
-  display: inline;
   margin: 0px 4px;
 }
 
-.c0 li:last-child * {
+.c0 li:last-child {
   margin-right: 8px;
 }
 
-.c0 li:first-child * {
+.c0 li:first-child {
   margin-left: 8px;
 }
 
@@ -45,18 +48,25 @@ exports[`List component should render vertical list 1`] = `
 .c0 {
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.c0 li * {
-  display: block;
+.c0 li {
   margin: 4px 0px;
 }
 
-.c0 li:last-child * {
+.c0 li:last-child {
   margin-bottom: 8px;
 }
 
-.c0 li:first-child * {
+.c0 li:first-child {
   margin-top: 8px;
 }
 
