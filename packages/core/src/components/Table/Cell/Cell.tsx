@@ -1,8 +1,38 @@
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
-import { CellStyled } from './Cell.styled';
+import React, { useRef } from 'react';
+import { CellStyled, ResizeHandlerStyled } from './Cell.styled';
 
-const Cell: React.SFC & WithStyle = React.memo(props => <CellStyled>{props.children}</CellStyled>);
+const Cell: React.SFC & WithStyle = props => {
+    const cellEl = useRef(null);
+    let pageX: number;
+
+    const onMouseMove = (e: MouseEvent) => {
+        requestAnimationFrame(() => {
+            if (cellEl.current) {
+                const width = pageX - cellEl.current.offsetLeft + (e.pageX - pageX);
+                props.handleWidthChange && props.handleWidthChange(width, props.title);
+            }
+        });
+    };
+
+    const onMouseUp = (e: MouseEvent) => {
+        window.removeEventListener('mousemove', onMouseMove);
+        window.removeEventListener('mouseup', onMouseUp);
+    };
+
+    const initResize = (e: React.MouseEvent) => {
+        pageX = e.pageX;
+        window.addEventListener('mousemove', onMouseMove);
+        window.addEventListener('mouseup', onMouseUp);
+    };
+
+    return (
+        <CellStyled ref={cellEl}>
+            {props.children}
+            <ResizeHandlerStyled onMouseDown={initResize} />
+        </CellStyled>
+    );
+};
 
 Cell.displayName = 'Cell';
 Cell.Style = CellStyled;

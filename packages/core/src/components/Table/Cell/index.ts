@@ -1,3 +1,3 @@
-import { CellStyled as Cell } from './Cell.styled';
+import Cell from './Cell';
 
 export default Cell;

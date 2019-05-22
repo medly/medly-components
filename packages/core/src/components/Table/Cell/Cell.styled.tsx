@@ -1,10 +1,28 @@
 import { styled } from '@medly-components/utils';
 
-export const CellStyled = styled('td')`
+export const ResizeHandlerStyled = styled('span')`
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0;
+    width: 3px;
+    cursor: ew-resize;
+`;
+
+export const CellStyled = styled('div')`
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
     padding: 2px;
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
-    border-bottom: 1px solid grey;
-    border-right: 1px solid grey;
+    text-overflow: ellipsis;
+    position: relative;
+
+    &:hover {
+        ${ResizeHandlerStyled} {
+            opacity: 0.3;
+        }
+    }
 `;

@@ -1,10 +1,10 @@
 import { styled } from '@medly-components/utils';
-import Cell from '../Cell';
+import { TableStyledProps } from '../types';
 
-export const RowStyled = styled('tr')`
-    display: contents;
+export const RowStyled = styled('li').attrs({ style: ({ gridTemplateColumns }) => ({ gridTemplateColumns }) })<TableStyledProps>`
+    display: grid;
 
-    &:hover ${Cell} {
+    &:hover {
         background-color: rgb(200, 227, 252);
     }
 `;
