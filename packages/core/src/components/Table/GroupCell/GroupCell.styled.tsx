@@ -1,9 +1,9 @@
-import { styled } from '@medly-components/utils';
+import { styled, WithThemeProp } from '@medly-components/utils';
 import { GridTemplateProps } from '../types';
 
 export const GroupCellStyled = styled('div').attrs({
-    style: ({ gridTemplateColumns }) => ({ gridTemplateColumns })
-})`
+    style: ({ gridTemplateColumns }: WithThemeProp & GridTemplateProps) => ({ gridTemplateColumns })
+})<GridTemplateProps>`
     display: grid;
 `;
 
@@ -12,6 +12,5 @@ export const GroupCellTitleStyled = styled('span')`
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid gray;
     border-right: 1px solid;
 `;

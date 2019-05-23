@@ -1,8 +1,8 @@
-import { boolean, select, text } from '@storybook/addon-knobs';
+import { color } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import Table from './Table';
-import { ColumnProps } from './types';
+import { NestedColumnConfig } from './types';
 
 const data = [
     {
@@ -77,17 +77,17 @@ const data = [
     }
 ];
 
-const columns: ColumnProps[] = [
+const columns: NestedColumnConfig[] = [
     { title: 'Name', field: 'name', formatter: 'text-short' },
-    { title: 'Age', field: 'age', formatter: 'text-short' },
-    { title: 'Favourite Color', field: 'color', formatter: 'text-short' },
-    { title: 'Rating', field: 'rating', formatter: 'numeric' },
     {
         title: 'Marks',
         field: 'marks',
         formatter: 'group',
         children: [{ title: 'History', field: 'history', formatter: 'numeric' }, { title: 'Math', field: 'maths', formatter: 'numeric' }]
-    }
+    },
+    { title: 'Age', field: 'age', formatter: 'text-short' },
+    { title: 'Favourite Color', field: 'color', formatter: 'text-short' },
+    { title: 'Rating', field: 'rating', formatter: 'numeric' }
 ];
 
 storiesOf('Core', module).add('Table', () => <Table data={data} columns={columns} />);

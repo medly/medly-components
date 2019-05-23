@@ -19,10 +19,4 @@ export const CellStyled = styled('div')`
     white-space: nowrap;
     text-overflow: ellipsis;
     position: relative;
-
-    &:hover {
-        ${ResizeHandlerStyled} {
-            opacity: 0.3;
-        }
-    }
 `;

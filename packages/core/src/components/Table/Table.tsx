@@ -2,85 +2,66 @@ import { WithStyle } from '@medly-components/utils';
 import React, { useState } from 'react';
 import Cell from './Cell';
 import { GroupCell, GroupCellTitle } from './GroupCell';
+import { addSizeToColumnConfig, changeSize, getGridTemplateColumns } from './helpers';
 import Row from './Row';
 import { TableStyled } from './Table.styled';
-import { Props } from './types';
+import { ColumnConfig, Props } from './types';
 
 const Table: React.SFC<Props> & WithStyle = props => {
-    const [columnConfig, setColumnConfig] = useState(
-        props.columns.map(col => {
-            const config = {
-                key: col.title,
-                field: col.field,
-                size: 'minmax(150px, 1fr)',
-                children: null
-            };
+    const [columnConfig, setColumnConfig] = useState(addSizeToColumnConfig(props.columns));
 
-            if (col.children) {
-                config.children = col.children.map(child => ({ key: `${col.title}.${child.title}`, size: 'minmax(150px, 1fr)' }));
-            }
-
-            return config;
-        })
-    );
-
-    const getTemplate = config => config.reduce((acc, curr) => `${acc} ${curr.size}`, ``);
-
-    const handleWidthChange = (width, key) => {
-        const temp = [...columnConfig];
-
-        const keys = key.split('.');
-        let column = temp.find(col => col.key === keys[0]);
-        if (keys.length > 1) {
-            column = column.children.find(col => col.key === key);
-        }
-        column.size = `minmax(${width}px, 1fr)`;
-        setColumnConfig(temp);
+    const handleWidthChange = (width: number, title: string) => {
+        const newColumnConfig = changeSize(width, title, columnConfig);
+        setColumnConfig(newColumnConfig);
     };
 
-    const headCells = props.columns.map(col => {
-        if (col.children) {
-            return (
-                <GroupCell gridTemplateColumns={getTemplate(columnConfig.find(config => config.key === col.title).children)}>
-                    <GroupCellTitle>{col.title}</GroupCellTitle>
-                    {col.children.map(child => (
-                        <Cell key={child.title} title={`${col.title}.${child.title}`} handleWidthChange={handleWidthChange}>
-                            {child.title}
-                        </Cell>
-                    ))}
-                </GroupCell>
-            );
-        }
+    const getHeadCells = (config: ColumnConfig[] = columnConfig, key = '') => {
+        const cells: React.ReactElement[] = [];
 
-        return (
-            <Cell key={col.title} title={col.title} handleWidthChange={handleWidthChange}>
-                {col.title}
-            </Cell>
-        );
-    });
+        config.forEach(col => {
+            return col.children
+                ? cells.push(
+                      <GroupCell gridTemplateColumns={getGridTemplateColumns(col.children)}>
+                          <GroupCellTitle>{col.title}</GroupCellTitle>
+                          {getHeadCells(col.children, col.title)}
+                      </GroupCell>
+                  )
+                : cells.push(
+                      <Cell isHeadCell title={key ? `${key}.${col.title}` : col.title} handleWidthChange={handleWidthChange}>
+                          {col.title}
+                      </Cell>
+                  );
+        });
 
-    const rows = props.data.map((row, i) => {
-        return (
-            <Row key={i} gridTemplateColumns={columnConfig.reduce((acc, curr) => `${acc} ${curr.size}`, ``)}>
-                {props.columns.map(col =>
-                    col.children ? (
-                        <GroupCell gridTemplateColumns={getTemplate(columnConfig.find(config => config.key === col.title).children)}>
-                            {col.children.map(child => (
-                                <Cell key={child.field}>{row[col.field][child.field]}</Cell>
-                            ))}
-                        </GroupCell>
-                    ) : (
-                        <Cell key={col.field}>{row[col.field]}</Cell>
-                    )
-                )}
-            </Row>
-        );
-    });
+        return cells;
+    };
+
+    const getRowsCells = (data: any, config: ColumnConfig[] = columnConfig, field = '') => {
+        const cells: React.ReactElement[] = [];
+
+        config.forEach(col => {
+            return col.children
+                ? cells.push(
+                      <GroupCell gridTemplateColumns={getGridTemplateColumns(col.children)}>
+                          {getRowsCells(data[col.field], col.children, col.field)}
+                      </GroupCell>
+                  )
+                : cells.push(<Cell>{data[col.field]}</Cell>);
+        });
+
+        return cells;
+    };
 
     return (
         <TableStyled>
-            <Row gridTemplateColumns={columnConfig.reduce((acc, curr) => `${acc} ${curr.size}`, ``)}>{headCells}</Row>
-            {rows}
+            <Row gridTemplateColumns={getGridTemplateColumns(columnConfig)}>{getHeadCells()}</Row>
+            {props.data.map((row, i) => {
+                return (
+                    <Row key={i} gridTemplateColumns={getGridTemplateColumns(columnConfig)}>
+                        {getRowsCells(row)}
+                    </Row>
+                );
+            })}
         </TableStyled>
     );
 };

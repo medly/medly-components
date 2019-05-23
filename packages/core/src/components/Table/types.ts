@@ -1,5 +1,3 @@
-import { string } from 'prop-types';
-
 export interface ColumnTypeToRatioMap {
     numeric: number;
     group: number;
@@ -8,17 +6,24 @@ export interface ColumnTypeToRatioMap {
 }
 
 export interface GridTemplateProps {
-    gridTemplateColumns: string;
+    gridTemplateColumns?: string;
 }
 
-export interface ColumnProps {
+export interface ColumnConfig {
+    size?: string;
     title: string;
     field: string;
-    children?: Array<{ title: string; field: string; formatter: keyof ColumnTypeToRatioMap }>;
+    children?: ColumnConfig[];
     formatter: keyof ColumnTypeToRatioMap;
+}
+
+export interface CellProps {
+    isHeadCell?: boolean;
+    handleWidthChange?: (width: number, key: string) => void;
+    title?: string;
 }
 
 export interface Props {
     data: Array<{}>;
-    columns: ColumnProps[];
+    columns: ColumnConfig[];
 }
