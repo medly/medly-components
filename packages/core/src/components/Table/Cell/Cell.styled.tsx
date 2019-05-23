@@ -1,4 +1,11 @@
-import { styled } from '@medly-components/utils';
+import { css, styled } from '@medly-components/utils';
+import { CellStyledProps } from '../types';
+
+const frozen = (isHeadCell: boolean) => css`
+    position: sticky;
+    left: 0;
+    z-index: ${isHeadCell ? 4 : 2};
+`;
 
 export const ResizeHandlerStyled = styled('span')`
     position: absolute;
@@ -11,7 +18,8 @@ export const ResizeHandlerStyled = styled('span')`
     cursor: ew-resize;
 `;
 
-export const CellStyled = styled('div')`
+export const CellStyled = styled('div')<CellStyledProps>`
+    background: white;
     border-right: 1px solid gray;
     border-bottom: 1px solid gray;
     padding: 2px;
@@ -19,4 +27,6 @@ export const CellStyled = styled('div')`
     white-space: nowrap;
     text-overflow: ellipsis;
     position: relative;
+
+    ${props => props.frozen && frozen(props.isHeadCell)}
 `;

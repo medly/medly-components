@@ -13,7 +13,11 @@ export const TableStyled = styled('ol')`
     }
 
     ${Row} {
-        &:first-child {
+        &:first-of-type {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+
             * {
                 background-color: blanchedalmond;
             }

@@ -10,15 +10,19 @@ export interface GridTemplateProps {
 }
 
 export interface ColumnConfig {
+    frozen?: boolean;
     size?: string;
     title: string;
     field: string;
     children?: ColumnConfig[];
     formatter: keyof ColumnTypeToRatioMap;
 }
-
-export interface CellProps {
+export interface CellStyledProps {
+    frozen?: boolean;
     isHeadCell?: boolean;
+}
+
+export interface CellProps extends CellStyledProps {
     handleWidthChange?: (width: number, key: string) => void;
     title?: string;
 }

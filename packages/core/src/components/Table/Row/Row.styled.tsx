@@ -1,9 +1,11 @@
 import { styled, WithThemeProp } from '@medly-components/utils';
 import { GridTemplateProps } from '../types';
 
-export const RowStyled = styled('li').attrs({
-    style: ({ gridTemplateColumns }: WithThemeProp & GridTemplateProps) => ({ gridTemplateColumns })
-})<GridTemplateProps>`
+export const RowStyled = styled('li').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({
+    style: {
+        gridTemplateColumns
+    }
+}))<GridTemplateProps>`
     display: grid;
 
     &:hover {

@@ -5,14 +5,15 @@ import { CellStyled, ResizeHandlerStyled } from './Cell.styled';
 
 const Cell: React.SFC<CellProps> & WithStyle = props => {
     const cellEl = useRef(null);
+    const { handleWidthChange, frozen, isHeadCell, children, title } = props;
     let pageX: number;
 
     const onMouseMove = (e: MouseEvent) => {
         requestAnimationFrame(() => {
             if (cellEl.current) {
                 const width = pageX - cellEl.current.offsetLeft + (e.pageX - pageX);
-                if (props.handleWidthChange) {
-                    props.handleWidthChange(width, props.title);
+                if (handleWidthChange) {
+                    handleWidthChange(width, title);
                 }
             }
         });
@@ -30,9 +31,9 @@ const Cell: React.SFC<CellProps> & WithStyle = props => {
     };
 
     return (
-        <CellStyled ref={cellEl}>
-            {props.children}
-            {props.isHeadCell && <ResizeHandlerStyled onMouseDown={initResize} />}
+        <CellStyled ref={cellEl} {...{ frozen, isHeadCell }}>
+            {children}
+            {isHeadCell && <ResizeHandlerStyled onMouseDown={initResize} />}
         </CellStyled>
     );
 };

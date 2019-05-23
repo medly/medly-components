@@ -27,7 +27,12 @@ const Table: React.SFC<Props> & WithStyle = props => {
                       </GroupCell>
                   )
                 : cells.push(
-                      <Cell isHeadCell title={key ? `${key}.${col.title}` : col.title} handleWidthChange={handleWidthChange}>
+                      <Cell
+                          isHeadCell
+                          frozen={col.frozen}
+                          title={key ? `${key}.${col.title}` : col.title}
+                          handleWidthChange={handleWidthChange}
+                      >
                           {col.title}
                       </Cell>
                   );
@@ -46,7 +51,7 @@ const Table: React.SFC<Props> & WithStyle = props => {
                           {getRowsCells(data[col.field], col.children, col.field)}
                       </GroupCell>
                   )
-                : cells.push(<Cell>{data[col.field]}</Cell>);
+                : cells.push(<Cell frozen={col.frozen}>{data[col.field]}</Cell>);
         });
 
         return cells;

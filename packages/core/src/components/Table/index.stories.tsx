@@ -1,10 +1,1059 @@
-import { color } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import Table from './Table';
-import { NestedColumnConfig } from './types';
+import { ColumnConfig } from './types';
 
 const data = [
+    {
+        name: 'Oli Bob',
+        age: '12',
+        color: 'red',
+        rating: 5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Mary May',
+        age: '1',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Christine Lobowski',
+        age: '42',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Brendon Philips',
+        age: '125',
+        color: 'red',
+        rating: 4.5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Margret Marmajuke',
+        age: '16',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Van Ng',
+        age: '37',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Duc Ng',
+        age: '37',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Oli Bob',
+        age: '12',
+        color: 'red',
+        rating: 5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Mary May',
+        age: '1',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Christine Lobowski',
+        age: '42',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Brendon Philips',
+        age: '125',
+        color: 'red',
+        rating: 4.5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Margret Marmajuke',
+        age: '16',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Van Ng',
+        age: '37',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Duc Ng',
+        age: '37',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Oli Bob',
+        age: '12',
+        color: 'red',
+        rating: 5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Mary May',
+        age: '1',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Christine Lobowski',
+        age: '42',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Brendon Philips',
+        age: '125',
+        color: 'red',
+        rating: 4.5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Margret Marmajuke',
+        age: '16',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Van Ng',
+        age: '37',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Duc Ng',
+        age: '37',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Oli Bob',
+        age: '12',
+        color: 'red',
+        rating: 5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Mary May',
+        age: '1',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Christine Lobowski',
+        age: '42',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Brendon Philips',
+        age: '125',
+        color: 'red',
+        rating: 4.5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Margret Marmajuke',
+        age: '16',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Van Ng',
+        age: '37',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Duc Ng',
+        age: '37',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Oli Bob',
+        age: '12',
+        color: 'red',
+        rating: 5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Mary May',
+        age: '1',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Christine Lobowski',
+        age: '42',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Brendon Philips',
+        age: '125',
+        color: 'red',
+        rating: 4.5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Margret Marmajuke',
+        age: '16',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Van Ng',
+        age: '37',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Duc Ng',
+        age: '37',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Oli Bob',
+        age: '12',
+        color: 'red',
+        rating: 5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Mary May',
+        age: '1',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Christine Lobowski',
+        age: '42',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Brendon Philips',
+        age: '125',
+        color: 'red',
+        rating: 4.5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Margret Marmajuke',
+        age: '16',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Van Ng',
+        age: '37',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Duc Ng',
+        age: '37',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Oli Bob',
+        age: '12',
+        color: 'red',
+        rating: 5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Mary May',
+        age: '1',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Christine Lobowski',
+        age: '42',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Brendon Philips',
+        age: '125',
+        color: 'red',
+        rating: 4.5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Margret Marmajuke',
+        age: '16',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Van Ng',
+        age: '37',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Duc Ng',
+        age: '37',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Oli Bob',
+        age: '12',
+        color: 'red',
+        rating: 5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Mary May',
+        age: '1',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Christine Lobowski',
+        age: '42',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Brendon Philips',
+        age: '125',
+        color: 'red',
+        rating: 4.5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Margret Marmajuke',
+        age: '16',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Van Ng',
+        age: '37',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Duc Ng',
+        age: '37',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Oli Bob',
+        age: '12',
+        color: 'red',
+        rating: 5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Mary May',
+        age: '1',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Christine Lobowski',
+        age: '42',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Brendon Philips',
+        age: '125',
+        color: 'red',
+        rating: 4.5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Margret Marmajuke',
+        age: '16',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Van Ng',
+        age: '37',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Duc Ng',
+        age: '37',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Oli Bob',
+        age: '12',
+        color: 'red',
+        rating: 5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Mary May',
+        age: '1',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Christine Lobowski',
+        age: '42',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Brendon Philips',
+        age: '125',
+        color: 'red',
+        rating: 4.5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Margret Marmajuke',
+        age: '16',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Van Ng',
+        age: '37',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Duc Ng',
+        age: '37',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Oli Bob',
+        age: '12',
+        color: 'red',
+        rating: 5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Mary May',
+        age: '1',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Christine Lobowski',
+        age: '42',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Brendon Philips',
+        age: '125',
+        color: 'red',
+        rating: 4.5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Margret Marmajuke',
+        age: '16',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Van Ng',
+        age: '37',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Duc Ng',
+        age: '37',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Oli Bob',
+        age: '12',
+        color: 'red',
+        rating: 5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Mary May',
+        age: '1',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Christine Lobowski',
+        age: '42',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Brendon Philips',
+        age: '125',
+        color: 'red',
+        rating: 4.5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Margret Marmajuke',
+        age: '16',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Van Ng',
+        age: '37',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Duc Ng',
+        age: '37',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Oli Bob',
+        age: '12',
+        color: 'red',
+        rating: 5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Mary May',
+        age: '1',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Christine Lobowski',
+        age: '42',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Brendon Philips',
+        age: '125',
+        color: 'red',
+        rating: 4.5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Margret Marmajuke',
+        age: '16',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Van Ng',
+        age: '37',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Duc Ng',
+        age: '37',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Oli Bob',
+        age: '12',
+        color: 'red',
+        rating: 5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Mary May',
+        age: '1',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Christine Lobowski',
+        age: '42',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Brendon Philips',
+        age: '125',
+        color: 'red',
+        rating: 4.5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Margret Marmajuke',
+        age: '16',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Van Ng',
+        age: '37',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Duc Ng',
+        age: '37',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Oli Bob',
+        age: '12',
+        color: 'red',
+        rating: 5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Mary May',
+        age: '1',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Christine Lobowski',
+        age: '42',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Brendon Philips',
+        age: '125',
+        color: 'red',
+        rating: 4.5,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Margret Marmajuke',
+        age: '16',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Van Ng',
+        age: '37',
+        color: 'green',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
+    {
+        name: 'Duc Ng',
+        age: '37',
+        color: 'yellow',
+        rating: 4,
+        marks: {
+            history: 20,
+            maths: 20
+        }
+    },
     {
         name: 'Oli Bob',
         age: '12',
@@ -77,8 +1126,8 @@ const data = [
     }
 ];
 
-const columns: NestedColumnConfig[] = [
-    { title: 'Name', field: 'name', formatter: 'text-short' },
+const columns: ColumnConfig[] = [
+    { title: 'Name', field: 'name', formatter: 'text-short', frozen: true },
     {
         title: 'Marks',
         field: 'marks',
