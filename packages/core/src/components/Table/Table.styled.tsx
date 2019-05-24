@@ -1,5 +1,4 @@
 import { styled } from '@medly-components/utils';
-import Cell from './Cell';
 import { GroupCell } from './GroupCell';
 import Row from './Row';
 
@@ -14,6 +13,7 @@ export const TableStyled = styled('ol')`
 
     ${Row} {
         &:first-of-type {
+            user-select: none;
             position: sticky;
             top: 0;
             z-index: 2;
@@ -24,16 +24,6 @@ export const TableStyled = styled('ol')`
 
             ${GroupCell} {
                 border-top: 1px solid gray;
-            }
-
-            ${Cell.Style} {
-                border-top: 1px solid gray;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-overflow: initial;
-                overflow: auto;
-                white-space: normal;
             }
         }
     }

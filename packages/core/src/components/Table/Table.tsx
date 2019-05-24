@@ -2,6 +2,7 @@ import { WithStyle } from '@medly-components/utils';
 import React, { useState } from 'react';
 import Cell from './Cell';
 import { GroupCell, GroupCellTitle } from './GroupCell';
+import HeadCell from './HeadCell';
 import { addSizeToColumnConfig, changeSize, getGridTemplateColumns } from './helpers';
 import Row from './Row';
 import { TableStyled } from './Table.styled';
@@ -27,14 +28,9 @@ const Table: React.SFC<Props> & WithStyle = props => {
                       </GroupCell>
                   )
                 : cells.push(
-                      <Cell
-                          isHeadCell
-                          frozen={col.frozen}
-                          title={key ? `${key}.${col.title}` : col.title}
-                          handleWidthChange={handleWidthChange}
-                      >
+                      <HeadCell frozen={col.frozen} title={key ? `${key}.${col.title}` : col.title} handleWidthChange={handleWidthChange}>
                           {col.title}
-                      </Cell>
+                      </HeadCell>
                   );
         });
 

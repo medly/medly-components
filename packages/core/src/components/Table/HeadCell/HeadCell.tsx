@@ -1,11 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
 import React, { useRef } from 'react';
 import { CellProps } from '../types';
-import { CellStyled, ResizeHandlerStyled } from './Cell.styled';
+import { HeadCellStyled, ResizeHandlerStyled } from './HeadCell.styled';
 
-const Cell: React.SFC<CellProps> & WithStyle = props => {
+const HeadCell: React.SFC<CellProps> & WithStyle = props => {
     const cellEl = useRef(null);
-    const { handleWidthChange, frozen, isHeadCell, children, title } = props;
+    const { handleWidthChange, frozen, children, title } = props;
     let pageX: number;
 
     const onMouseMove = (e: MouseEvent) => {
@@ -31,14 +31,14 @@ const Cell: React.SFC<CellProps> & WithStyle = props => {
     };
 
     return (
-        <CellStyled ref={cellEl} {...{ frozen, isHeadCell }}>
+        <HeadCellStyled ref={cellEl} frozen={frozen}>
             {children}
-            {isHeadCell && <ResizeHandlerStyled onMouseDown={initResize} />}
-        </CellStyled>
+            <ResizeHandlerStyled onMouseDown={initResize} />
+        </HeadCellStyled>
     );
 };
 
-Cell.displayName = 'Cell';
-Cell.Style = CellStyled;
+HeadCell.displayName = 'HeadCell';
+HeadCell.Style = HeadCellStyled;
 
-export default Cell;
+export default HeadCell;
