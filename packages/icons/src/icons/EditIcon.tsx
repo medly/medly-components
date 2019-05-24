@@ -6,7 +6,7 @@ import SvgIcon, { Props } from '../SvgIcon';
 
 const EditIcon: React.FunctionComponent<Props> & WithStyle = props => (
     <SvgIcon {...props}>
-        <EditSvg width="1em" height="1em" />
+        <EditSvg {...props} width="1em" height="1em" />
     </SvgIcon>
 );
 

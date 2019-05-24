@@ -1,7 +1,9 @@
 import { IconSizesType } from '@medly-components/theme';
-import { WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 
-export interface Props extends WithThemeProp {
+type SVGProp = Omit<HTMLProps<HTMLOrSVGElement>, 'size'>;
+
+export interface Props extends SVGProp, WithThemeProp {
     size?: IconSizesType;
     color?: string;
 }

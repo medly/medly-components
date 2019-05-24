@@ -9,3 +9,4 @@ export { default as ExpandLessIcon } from './icons/ExpandLessIcon';
 export { default as ExpandMoreIcon } from './icons/ExpandMoreIcon';
 export { default as UpArrowIcon } from './icons/UpArrowIcon';
 export { default as SearchIcon } from './icons/SearchIcon';
+export { default as SvgIcon } from './SvgIcon';

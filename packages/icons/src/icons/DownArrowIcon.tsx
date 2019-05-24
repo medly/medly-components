@@ -6,7 +6,7 @@ import SvgIcon, { Props } from '../SvgIcon';
 
 const DownArrowIcon: React.FunctionComponent<Props> & WithStyle = props => (
     <SvgIcon {...props}>
-        <DownArrowSvg width="1em" height="1em" />
+        <DownArrowSvg {...props} width="1em" height="1em" />
     </SvgIcon>
 );
 

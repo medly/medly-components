@@ -6,7 +6,7 @@ import SvgIcon, { Props } from '../SvgIcon';
 
 const DropDownIcon: React.FunctionComponent<Props> & WithStyle = props => (
     <SvgIcon {...props}>
-        <DropDownSvg width="1em" height="1em" />
+        <DropDownSvg {...props} width="1em" height="1em" />
     </SvgIcon>
 );
 

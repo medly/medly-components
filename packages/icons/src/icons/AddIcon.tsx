@@ -6,7 +6,7 @@ import SvgIcon, { Props } from '../SvgIcon';
 
 const AddIcon: React.FunctionComponent<Props> & WithStyle = props => (
     <SvgIcon {...props}>
-        <AddSvg width="1em" height="1em" />
+        <AddSvg {...props} width="1em" height="1em" />
     </SvgIcon>
 );
 

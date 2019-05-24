@@ -6,7 +6,7 @@ import SvgIcon, { Props } from '../SvgIcon';
 
 const SearchIcon: React.FunctionComponent<Props> & WithStyle = props => (
     <SvgIcon {...props}>
-        <SearchSvg width="1em" height="1em" />
+        <SearchSvg {...props} width="1em" height="1em" />
     </SvgIcon>
 );
 
