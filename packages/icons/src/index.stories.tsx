@@ -12,6 +12,7 @@ import EditIcon from './icons/EditIcon';
 import ExpandLessIcon from './icons/ExpandLessIcon';
 import ExpandMoreIcon from './icons/ExpandMoreIcon';
 import SearchIcon from './icons/SearchIcon';
+import UpArrowIcon from './icons/UpArrowIcon';
 
 const size: IconSizesType[] = ['XS', 'S', 'M', 'L', 'XL'];
 const defaultColor = defaultTheme.icon.defaultColor;
@@ -26,4 +27,5 @@ storiesOf('Icons', module)
     .add('Edit', () => <EditIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('ExpandLess', () => <ExpandLessIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('ExpandMore', () => <ExpandMoreIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
+    .add('UpArrowIcon', () => <UpArrowIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('Search', () => <SearchIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />);
