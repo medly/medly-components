@@ -76,15 +76,18 @@ const data = [
     }
 ];
 
+// @ts-ignore
+const getNestedValue = (arr: {}, field: string) => field.split('.').reduce((acc, curr) => acc[curr], arr);
+
 const DemoComponent: React.SFC = () => {
     const [tableData, setTableData] = useState(data);
 
     const filterData = (field: string, order: SortOrder) => {
         const newArray = [...tableData];
         newArray.sort((first, second) => {
-            const firstField = field.split('.').reduce((acc, curr) => acc[curr], first);
-            const secondField = field.split('.').reduce((acc, curr) => acc[curr], second);
-            const comparison = firstField > secondField ? 1 : firstField < secondField ? -1 : 0; // @ts-ignore
+            const firstField = getNestedValue(first, field);
+            const secondField = getNestedValue(second, field);
+            const comparison = firstField > secondField ? 1 : firstField < secondField ? -1 : 0;
             return order === 'asc' ? comparison : comparison * -1;
         });
         setTableData(newArray);
@@ -106,4 +109,9 @@ const columns: ColumnConfig[] = [
     { title: 'Rating', field: 'rating', formatter: 'numeric' }
 ];
 
-storiesOf('Core', module).add('Table', () => <DemoComponent />);
+storiesOf('Core', module).add('Table', () => <DemoComponent />, {
+    props: {
+        propTablesExclude: [DemoComponent],
+        propTables: [Table]
+    }
+});
