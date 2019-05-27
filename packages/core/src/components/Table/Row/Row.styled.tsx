@@ -7,6 +7,8 @@ export const RowStyled = styled('li').attrs(({ gridTemplateColumns }: GridTempla
     }
 }))<GridTemplateProps>`
     display: grid;
+    position: relative;
+    z-index: 0;
 
     &:hover {
         background-color: rgb(200, 227, 252);

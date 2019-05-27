@@ -1,3 +1,5 @@
+export type SortOrder = 'asc' | 'desc';
+
 export interface ColumnTypeToRatioMap {
     numeric: number;
     group: number;
@@ -19,15 +21,17 @@ export interface ColumnConfig {
 }
 export interface CellStyledProps {
     frozen?: boolean;
-    isHeadCell?: boolean;
 }
 
-export interface CellProps extends CellStyledProps {
+export interface HeadCellProps extends CellStyledProps {
+    field?: string;
+    sortedColumnField?: string;
     handleWidthChange?: (width: number, key: string) => void;
-    title?: string;
+    handleSortIconClick?: (field: string, order: SortOrder) => void;
 }
 
 export interface Props {
     data: Array<{}>;
     columns: ColumnConfig[];
+    onSortIconClick?: (field: string, order: SortOrder) => void;
 }

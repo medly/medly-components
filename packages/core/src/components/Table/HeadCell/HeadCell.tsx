@@ -1,25 +1,38 @@
-import { WithStyle } from '@medly-components/utils';
-import React, { useRef } from 'react';
-import { CellProps } from '../types';
+import { DownArrowIcon, DropDownIcon, UpArrowIcon } from '@medly-components/icons';
+import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
+import React, { useEffect, useRef, useState } from 'react';
+import Text from '../../Text';
+import { HeadCellProps } from '../types';
 import { HeadCellStyled, ResizeHandlerStyled } from './HeadCell.styled';
 
-const HeadCell: React.SFC<CellProps> & WithStyle = props => {
+const HeadCell: React.SFC<HeadCellProps> & WithStyle = props => {
+    const [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>('none');
     const cellEl = useRef(null);
-    const { handleWidthChange, frozen, children, title } = props;
+    const { handleWidthChange, frozen, children, field, sortedColumnField } = props;
     let pageX: number;
+
+    useEffect(() => {
+        if (sortedColumnField !== field) setSortState('none');
+    }, [sortedColumnField]);
 
     const onMouseMove = (e: MouseEvent) => {
         requestAnimationFrame(() => {
             if (cellEl.current) {
                 const width = pageX - cellEl.current.offsetLeft + (e.pageX - pageX);
                 if (handleWidthChange) {
-                    handleWidthChange(width, title);
+                    handleWidthChange(width, field);
                 }
             }
         });
     };
 
-    const onMouseUp = (e: MouseEvent) => {
+    const handleSortIconClick = () => {
+        const order = sortState === 'asc' ? 'desc' : 'asc';
+        setSortState(order);
+        props.handleSortIconClick(field, order);
+    };
+
+    const onMouseUp = () => {
         window.removeEventListener('mousemove', onMouseMove);
         window.removeEventListener('mouseup', onMouseUp);
     };
@@ -32,7 +45,22 @@ const HeadCell: React.SFC<CellProps> & WithStyle = props => {
 
     return (
         <HeadCellStyled ref={cellEl} frozen={frozen}>
-            {children}
+            {React.Children.map(children, c => {
+                return isValidStringOrNumber(c) ? (
+                    <Text textWeight="Strong" textSize="M3">
+                        {c}
+                    </Text>
+                ) : (
+                    c
+                );
+            })}
+            {sortedColumnField !== field ? (
+                <DropDownIcon size="XS" onClick={handleSortIconClick} />
+            ) : sortState === 'desc' ? (
+                <DownArrowIcon size="XS" onClick={handleSortIconClick} />
+            ) : (
+                <UpArrowIcon size="XS" onClick={handleSortIconClick} />
+            )}
             <ResizeHandlerStyled onMouseDown={initResize} />
         </HeadCellStyled>
     );

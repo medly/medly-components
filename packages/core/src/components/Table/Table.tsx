@@ -6,17 +6,23 @@ import HeadCell from './HeadCell';
 import { addSizeToColumnConfig, changeSize, getGridTemplateColumns } from './helpers';
 import Row from './Row';
 import { TableStyled } from './Table.styled';
-import { ColumnConfig, Props } from './types';
+import { ColumnConfig, Props, SortOrder } from './types';
 
 const Table: React.SFC<Props> & WithStyle = props => {
+    const [sortedColumnField, setSortedColumnField] = useState('');
     const [columnConfig, setColumnConfig] = useState(addSizeToColumnConfig(props.columns));
 
-    const handleWidthChange = (width: number, title: string) => {
-        const newColumnConfig = changeSize(width, title, columnConfig);
+    const handleWidthChange = (width: number, field: string) => {
+        const newColumnConfig = changeSize(width, field, columnConfig);
         setColumnConfig(newColumnConfig);
     };
 
-    const getHeadCells = (config: ColumnConfig[] = columnConfig, key = '') => {
+    const handleSortIconClick = (field: string, order: SortOrder) => {
+        setSortedColumnField(field);
+        props.onSortIconClick(field, order);
+    };
+
+    const getHeadCells = (config: ColumnConfig[] = columnConfig, field = '') => {
         const cells: React.ReactElement[] = [];
 
         config.forEach(col => {
@@ -24,11 +30,17 @@ const Table: React.SFC<Props> & WithStyle = props => {
                 ? cells.push(
                       <GroupCell gridTemplateColumns={getGridTemplateColumns(col.children)}>
                           <GroupCellTitle>{col.title}</GroupCellTitle>
-                          {getHeadCells(col.children, col.title)}
+                          {getHeadCells(col.children, col.field)}
                       </GroupCell>
                   )
                 : cells.push(
-                      <HeadCell frozen={col.frozen} title={key ? `${key}.${col.title}` : col.title} handleWidthChange={handleWidthChange}>
+                      <HeadCell
+                          sortedColumnField={sortedColumnField}
+                          frozen={col.frozen}
+                          field={field ? `${field}.${col.field}` : col.field}
+                          handleSortIconClick={handleSortIconClick}
+                          handleWidthChange={handleWidthChange}
+                      >
                           {col.title}
                       </HeadCell>
                   );

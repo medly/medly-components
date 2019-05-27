@@ -26,15 +26,15 @@ const getCumulativeTemplate = (config: ColumnConfig[]) => {
 export const getGridTemplateColumns = (config: ColumnConfig[]) =>
     config.reduce((acc, curr) => (curr.children ? `${acc} ${getCumulativeTemplate(curr.children)}` : `${acc} ${curr.size}`), ``);
 
-export const changeSize = (width: number, title: string, columnConfig: ColumnConfig[]) => {
+export const changeSize = (width: number, field: string, columnConfig: ColumnConfig[]) => {
     const newColumnConfig = [...columnConfig];
-    const splitTitle = title.split('.');
-    const index = columnConfig.findIndex(col => col.title === splitTitle[0]);
+    const splitField = field.split('.');
+    const index = columnConfig.findIndex(col => col.field === splitField[0]);
 
     if (index >= 0) {
         const column = { ...newColumnConfig[index] };
-        if (column.children && splitTitle[1]) {
-            column.children = changeSize(width, splitTitle[1], column.children);
+        if (column.children && splitField[1]) {
+            column.children = changeSize(width, splitField[1], column.children);
         } else {
             column.size = `minmax(${width}px, 1fr)`;
         }
