@@ -13,6 +13,7 @@ export interface GridTemplateProps {
 
 export interface ColumnConfig {
     frozen?: boolean;
+    hide?: boolean;
     size?: string;
     title: string;
     field: string;
@@ -20,6 +21,7 @@ export interface ColumnConfig {
     formatter: keyof ColumnTypeToRatioMap;
 }
 export interface CellStyledProps {
+    hide?: boolean;
     frozen?: boolean;
 }
 

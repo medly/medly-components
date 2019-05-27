@@ -1,18 +1,13 @@
 import { ColumnConfig } from './types';
 
-export const addSizeToColumnConfig = (config: ColumnConfig[]) => {
-    const newConfig = [...config];
-
-    newConfig.forEach(col => {
-        if (col.children) {
-            col.size = `minmax(${col.children.length * 150}px, 1fr)`;
-            col.children = addSizeToColumnConfig(col.children);
-        } else {
-            col.size = `minmax(150px, 1fr)`;
+export const addSizeToColumnConfig = (columnConfigs: ColumnConfig[]): ColumnConfig[] => {
+    return columnConfigs.map(config => {
+        if (config.children) {
+            const childCount = config.children.filter(child => child.hide).length;
+            return { ...config, size: `minmax(${childCount * 150}px, 1fr)`, children: addSizeToColumnConfig(config.children) };
         }
+        return { ...config, size: config.hide ? `minmax(0px, 0px)` : `minmax(150px, 1fr)` };
     });
-
-    return newConfig;
 };
 
 const getCumulativeTemplate = (config: ColumnConfig[]) => {

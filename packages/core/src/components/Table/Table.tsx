@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Cell from './Cell';
 import { GroupCell, GroupCellTitle } from './GroupCell';
 import HeadCell from './HeadCell';
@@ -11,6 +11,10 @@ import { ColumnConfig, Props, SortOrder } from './types';
 const Table: React.SFC<Props> & WithStyle = props => {
     const [sortedColumnField, setSortedColumnField] = useState('');
     const [columnConfig, setColumnConfig] = useState(addSizeToColumnConfig(props.columns));
+
+    useEffect(() => {
+        setColumnConfig(addSizeToColumnConfig(props.columns));
+    }, [props.columns]);
 
     const handleWidthChange = (width: number, field: string) => {
         const newColumnConfig = changeSize(width, field, columnConfig);
@@ -37,6 +41,7 @@ const Table: React.SFC<Props> & WithStyle = props => {
                       <HeadCell
                           sortedColumnField={sortedColumnField}
                           frozen={col.frozen}
+                          hide={col.hide}
                           field={field ? `${field}.${col.field}` : col.field}
                           handleSortIconClick={handleSortIconClick}
                           handleWidthChange={handleWidthChange}
@@ -59,7 +64,11 @@ const Table: React.SFC<Props> & WithStyle = props => {
                           {getRowsCells(data[col.field], col.children, col.field)}
                       </GroupCell>
                   )
-                : cells.push(<Cell frozen={col.frozen}>{data[col.field]}</Cell>);
+                : cells.push(
+                      <Cell hide={col.hide} frozen={col.frozen}>
+                          {data[col.field]}
+                      </Cell>
+                  );
         });
 
         return cells;

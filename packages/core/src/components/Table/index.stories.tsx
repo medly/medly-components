@@ -1,5 +1,6 @@
+import { select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Table from './Table';
 import { ColumnConfig, SortOrder } from './types';
 
@@ -76,26 +77,6 @@ const data = [
     }
 ];
 
-// @ts-ignore
-const getNestedValue = (arr: {}, field: string) => field.split('.').reduce((acc, curr) => acc[curr], arr);
-
-const DemoComponent: React.SFC = () => {
-    const [tableData, setTableData] = useState(data);
-
-    const filterData = (field: string, order: SortOrder) => {
-        const newArray = [...tableData];
-        newArray.sort((first, second) => {
-            const firstField = getNestedValue(first, field);
-            const secondField = getNestedValue(second, field);
-            const comparison = firstField > secondField ? 1 : firstField < secondField ? -1 : 0;
-            return order === 'asc' ? comparison : comparison * -1;
-        });
-        setTableData(newArray);
-    };
-
-    return <Table data={tableData} onSortIconClick={filterData} columns={columns} />;
-};
-
 const columns: ColumnConfig[] = [
     { title: 'Name', field: 'name', formatter: 'text-short', frozen: true },
     {
@@ -108,8 +89,55 @@ const columns: ColumnConfig[] = [
     { title: 'Favourite Color', field: 'color', formatter: 'text-short' },
     { title: 'Rating', field: 'rating', formatter: 'numeric' }
 ];
+// @ts-ignore
+const getNestedValue = (arr: {}, field: string) => field.split('.').reduce((acc, curr) => acc[curr], arr);
 
-storiesOf('Core', module).add('Table', () => <DemoComponent />, {
+interface DemoComponentProps {
+    hideColumnField: string;
+}
+
+const DemoComponent: React.SFC<DemoComponentProps> = props => {
+    const [tableData, setTableData] = useState(data);
+    const [columnConfig, setColumnConfig] = useState(columns);
+
+    useEffect(() => {
+        const newConfig = hideColumn(props.hideColumnField, columnConfig);
+        setColumnConfig(newConfig);
+    }, [props.hideColumnField]);
+
+    const hideColumn = (field: string, config: ColumnConfig[]): ColumnConfig[] => {
+        const splitedField = field.split('.');
+        return config.map(con => {
+            const nextField = splitedField[1] || '';
+            if (con.children) return { ...con, children: hideColumn(nextField, con.children) };
+            return { ...con, hide: con.field === splitedField[0] ? true : false };
+        });
+    };
+
+    const filterData = (field: string, order: SortOrder) => {
+        const newArray = [...tableData];
+        newArray.sort((first, second) => {
+            const firstField = getNestedValue(first, field);
+            const secondField = getNestedValue(second, field);
+            const comparison = firstField > secondField ? 1 : firstField < secondField ? -1 : 0;
+            return order === 'asc' ? comparison : comparison * -1;
+        });
+        setTableData(newArray);
+    };
+
+    return <Table data={tableData} onSortIconClick={filterData} columns={columnConfig} />;
+};
+
+const columnNames = {
+    Name: 'name',
+    History: 'marks.history',
+    Maths: 'marks.maths',
+    Age: 'age',
+    Color: 'color',
+    Rating: 'rating'
+};
+
+storiesOf('Core', module).add('Table', () => <DemoComponent hideColumnField={select('Hide Column', columnNames, 'age')} />, {
     props: {
         propTablesExclude: [DemoComponent],
         propTables: [Table]

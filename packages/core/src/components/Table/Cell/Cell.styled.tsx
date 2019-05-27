@@ -8,6 +8,7 @@ const frozen = () => css`
 `;
 
 export const CellStyled = styled('div')<CellStyledProps>`
+    opacity: ${({ hide }) => (hide ? 0 : 1)};
     background: white;
     border-right: 1px solid gray;
     border-bottom: 1px solid gray;
