@@ -51,7 +51,7 @@ exports[`Modal component should not render when open prop is falsy 1`] = `
 .c4 {
   background-color: transparent;
   border: none;
-  padding: 10px;
+  padding: 8px 10px;
   border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -66,6 +66,10 @@ exports[`Modal component should not render when open prop is falsy 1`] = `
 
 .c4:focus {
   outline: none;
+}
+
+.c4:disabled {
+  cursor: not-allowed;
 }
 
 .c3 {
@@ -195,7 +199,7 @@ exports[`Modal component should render properly when it is open 1`] = `
 .c5 {
   background-color: transparent;
   border: none;
-  padding: 10px;
+  padding: 8px 10px;
   border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -210,6 +214,10 @@ exports[`Modal component should render properly when it is open 1`] = `
 
 .c5:focus {
   outline: none;
+}
+
+.c5:disabled {
+  cursor: not-allowed;
 }
 
 .c4 {

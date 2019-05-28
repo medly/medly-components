@@ -25,6 +25,15 @@ describe('Button component', () => {
         expect(container).toMatchSnapshot();
     });
 
+    it('should render properly when it is disabled', () => {
+        const { container } = TestUtils.render(
+            <Button disabled variant="solid">
+                Solid Button
+            </Button>
+        );
+        expect(container).toMatchSnapshot();
+    });
+
     it('should wrap children into Text component when rendering string or number', () => {
         const { container } = TestUtils.render(
             <Button variant="solid">

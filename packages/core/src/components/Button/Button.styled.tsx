@@ -1,25 +1,28 @@
-import { defaultTheme, Theme } from '@medly-components/theme';
+import { defaultTheme } from '@medly-components/theme';
 import { css, styled } from '@medly-components/utils';
 import { Props } from './types';
 
-const outlined = (theme: Theme, color: Props['color']) => css`
-    border: 1px solid ${theme.button[color]};
-    color: ${theme.button[color]};
+const getColor = ({ theme, color, disabled }: Props) => (disabled ? theme.button.disabled : theme.button[color]);
+
+const outlined = () => css`
+    border: 1px solid ${getColor};
+    color: ${getColor};
 `;
 
-const solid = (theme: Theme, color: Props['color']) => css`
-    background-color: ${theme.button[color]};
-    color: ${theme.colors.white};
+const solid = () => css`
+    border: 1px solid ${getColor};
+    background-color: ${getColor};
+    color: ${({ theme }) => theme.colors.white};
 `;
 
-const flat = (theme: Theme, color: Props['color']) => css`
-    color: ${theme.button[color]};
+const flat = () => css`
+    color: ${getColor};
 `;
 
 export const ButtonStyled = styled('button')<Props>`
     background-color: transparent;
     border: none;
-    padding: 10px;
+    padding: 8px 10px;
     border-radius: 3px;
     user-select: none;
 
@@ -31,9 +34,13 @@ export const ButtonStyled = styled('button')<Props>`
         outline: none;
     }
 
-    ${props => props.variant === 'flat' && flat(props.theme, props.color)};
-    ${props => props.variant === 'outlined' && outlined(props.theme, props.color)};
-    ${props => props.variant === 'solid' && solid(props.theme, props.color)};
+    ${props => props.variant === 'flat' && flat()};
+    ${props => props.variant === 'outlined' && outlined()};
+    ${props => props.variant === 'solid' && solid()};
+
+    &:disabled {
+        cursor: not-allowed;
+    }
 `;
 
 ButtonStyled.defaultProps = {

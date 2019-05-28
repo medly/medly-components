@@ -1,5 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Button component should render properly when it is disabled 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c0 {
+  background-color: transparent;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid;
+  color: #ffffff;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+<div>
+  <button
+    class="c0"
+    color="primary"
+    disabled=""
+  >
+    <span
+      class="c1"
+    >
+      Solid Button
+    </span>
+  </button>
+</div>
+`;
+
 exports[`Button component should render properly with flat variant and primary color 1`] = `
 .c1 {
   font-size: 14px;
@@ -10,7 +57,7 @@ exports[`Button component should render properly with flat variant and primary c
 .c0 {
   background-color: transparent;
   border: none;
-  padding: 10px;
+  padding: 8px 10px;
   border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -25,6 +72,10 @@ exports[`Button component should render properly with flat variant and primary c
 
 .c0:focus {
   outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
 }
 
 <div>
@@ -51,7 +102,7 @@ exports[`Button component should render properly with outlined variant and secon
 .c0 {
   background-color: transparent;
   border: none;
-  padding: 10px;
+  padding: 8px 10px;
   border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -67,6 +118,10 @@ exports[`Button component should render properly with outlined variant and secon
 
 .c0:focus {
   outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
 }
 
 <div>
@@ -93,12 +148,13 @@ exports[`Button component should render properly with solid variant 1`] = `
 .c0 {
   background-color: transparent;
   border: none;
-  padding: 10px;
+  padding: 8px 10px;
   border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  border: 1px solid #012040;
   background-color: #012040;
   color: #ffffff;
 }
@@ -109,6 +165,10 @@ exports[`Button component should render properly with solid variant 1`] = `
 
 .c0:focus {
   outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
 }
 
 <div>
@@ -135,12 +195,13 @@ exports[`Button component should wrap children into Text component when renderin
 .c0 {
   background-color: transparent;
   border: none;
-  padding: 10px;
+  padding: 8px 10px;
   border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  border: 1px solid #012040;
   background-color: #012040;
   color: #ffffff;
 }
@@ -151,6 +212,10 @@ exports[`Button component should wrap children into Text component when renderin
 
 .c0:focus {
   outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
 }
 
 <div>
