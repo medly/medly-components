@@ -1,0 +1,365 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination component should render correctly with all the default props 1`] = `
+.c2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  background-color: transparent;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid;
+}
+
+.c1:hover {
+  cursor: pointer;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+}
+
+.c3 {
+  background-color: transparent;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #012040;
+  background-color: #012040;
+  color: #ffffff;
+}
+
+.c3:hover {
+  cursor: pointer;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3:disabled {
+  cursor: not-allowed;
+}
+
+.c4 {
+  background-color: transparent;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #012040;
+  color: #012040;
+}
+
+.c4:hover {
+  cursor: pointer;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c4:disabled {
+  cursor: not-allowed;
+}
+
+.c0 {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0 li {
+  margin: 0px 4px;
+}
+
+.c0 li:last-child {
+  margin-right: 8px;
+}
+
+.c0 li:first-child {
+  margin-left: 8px;
+}
+
+<div>
+  <ul
+    class="c0"
+  >
+    <li>
+      <button
+        class="c1"
+        color="primary"
+        disabled=""
+      >
+        <span
+          class="c2"
+        >
+          First
+        </span>
+      </button>
+    </li>
+    <li>
+      <button
+        class="c1"
+        color="primary"
+        disabled=""
+      >
+        <span
+          class="c2"
+        >
+          Prev
+        </span>
+      </button>
+    </li>
+    <li>
+      <button
+        class="c3"
+        color="primary"
+      >
+        <span
+          class="c2"
+        >
+          1
+        </span>
+      </button>
+    </li>
+    <li>
+      <button
+        class="c4"
+        color="primary"
+      >
+        <span
+          class="c2"
+        >
+          2
+        </span>
+      </button>
+    </li>
+    <li>
+      <button
+        class="c4"
+        color="primary"
+      >
+        <span
+          class="c2"
+        >
+          3
+        </span>
+      </button>
+    </li>
+    <li>
+      <button
+        class="c4"
+        color="primary"
+      >
+        <span
+          class="c2"
+        >
+          4
+        </span>
+      </button>
+    </li>
+    <li>
+      <button
+        class="c4"
+        color="primary"
+      >
+        <span
+          class="c2"
+        >
+          5
+        </span>
+      </button>
+    </li>
+    <li>
+      <button
+        class="c4"
+        color="primary"
+      >
+        <span
+          class="c2"
+        >
+          Next
+        </span>
+      </button>
+    </li>
+    <li>
+      <button
+        class="c4"
+        color="primary"
+      >
+        <span
+          class="c2"
+        >
+          Last
+        </span>
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Pagination component should render correctly with all the props given 1`] = `
+.c2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  background-color: transparent;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #012040;
+  background-color: #012040;
+  color: #ffffff;
+}
+
+.c1:hover {
+  cursor: pointer;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+}
+
+.c3 {
+  background-color: transparent;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #012040;
+  color: #012040;
+}
+
+.c3:hover {
+  cursor: pointer;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3:disabled {
+  cursor: not-allowed;
+}
+
+.c0 {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0 li {
+  margin: 0px 4px;
+}
+
+.c0 li:last-child {
+  margin-right: 8px;
+}
+
+.c0 li:first-child {
+  margin-left: 8px;
+}
+
+<div>
+  <ul
+    class="c0"
+  >
+    <li>
+      <button
+        class="c1"
+        color="primary"
+      >
+        <span
+          class="c2"
+        >
+          1
+        </span>
+      </button>
+    </li>
+    <li>
+      <button
+        class="c3"
+        color="primary"
+      >
+        <span
+          class="c2"
+        >
+          2
+        </span>
+      </button>
+    </li>
+    <li>
+      <button
+        class="c3"
+        color="primary"
+      >
+        <span
+          class="c2"
+        >
+          3
+        </span>
+      </button>
+    </li>
+    <li>
+      <button
+        class="c3"
+        color="primary"
+      >
+        <span
+          class="c2"
+        >
+          4
+        </span>
+      </button>
+    </li>
+  </ul>
+</div>
+`;

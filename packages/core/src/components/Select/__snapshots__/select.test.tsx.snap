@@ -114,6 +114,7 @@ exports[`Select component should render correctly when fullWidth & required prop
       <svg
         class="c4 c5"
         height="1em"
+        theme="[object Object]"
         viewBox="0 0 10 12"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -228,6 +229,7 @@ exports[`Select component should render correctly when label and description are
       <svg
         class="c3 c4"
         height="1em"
+        theme="[object Object]"
         viewBox="0 0 10 12"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -365,6 +367,7 @@ exports[`Select component should render correctly with all the props given 1`] =
       <svg
         class="c4 c5"
         height="1em"
+        theme="[object Object]"
         viewBox="0 0 10 12"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
