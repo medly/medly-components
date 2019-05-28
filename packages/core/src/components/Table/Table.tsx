@@ -10,43 +10,38 @@ import { ColumnConfig, Props, SortOrder } from './types';
 
 const Table: React.SFC<Props> & WithStyle = props => {
     const [sortedColumnField, setSortedColumnField] = useState('');
-    const [columnConfig, setColumnConfig] = useState(addSizeToColumnConfig(props.columns));
+    const [columnConfigs, setColumnConfigs] = useState(addSizeToColumnConfig(props.columns));
 
-    useEffect(() => {
-        setColumnConfig(addSizeToColumnConfig(props.columns));
-    }, [props.columns]);
+    useEffect(() => setColumnConfigs(addSizeToColumnConfig(props.columns)), [props.columns]);
 
-    const handleWidthChange = (width: number, field: string) => {
-        const newColumnConfig = changeSize(width, field, columnConfig);
-        setColumnConfig(newColumnConfig);
-    };
+    const handleWidthChange = (width: number, field: string) => setColumnConfigs(changeSize(width, field, columnConfigs));
 
     const handleSortIconClick = (field: string, order: SortOrder) => {
         setSortedColumnField(field);
         props.onSortIconClick(field, order);
     };
 
-    const getHeadCells = (config: ColumnConfig[] = columnConfig, field = '') => {
+    const getHeadCells = (configs: ColumnConfig[] = columnConfigs, field = '') => {
         const cells: React.ReactElement[] = [];
 
-        config.forEach(col => {
-            return col.children
+        configs.forEach(config => {
+            return config.children
                 ? cells.push(
-                      <GroupCell gridTemplateColumns={getGridTemplateColumns(col.children)}>
-                          <GroupCellTitle>{col.title}</GroupCellTitle>
-                          {getHeadCells(col.children, col.field)}
+                      <GroupCell gridTemplateColumns={getGridTemplateColumns(config.children)}>
+                          <GroupCellTitle>{config.title}</GroupCellTitle>
+                          {getHeadCells(config.children, config.field)}
                       </GroupCell>
                   )
                 : cells.push(
                       <HeadCell
                           sortedColumnField={sortedColumnField}
-                          frozen={col.frozen}
-                          hide={col.hide}
-                          field={field ? `${field}.${col.field}` : col.field}
+                          frozen={config.frozen}
+                          hide={config.hide}
+                          field={field ? `${field}.${config.field}` : config.field}
                           handleSortIconClick={handleSortIconClick}
                           handleWidthChange={handleWidthChange}
                       >
-                          {col.title}
+                          {config.title}
                       </HeadCell>
                   );
         });
@@ -54,19 +49,19 @@ const Table: React.SFC<Props> & WithStyle = props => {
         return cells;
     };
 
-    const getRowsCells = (data: any, config: ColumnConfig[] = columnConfig, field = '') => {
+    const getRowsCells = (data: any, configs: ColumnConfig[] = columnConfigs, field = '') => {
         const cells: React.ReactElement[] = [];
 
-        config.forEach(col => {
-            return col.children
+        configs.forEach(config => {
+            return config.children
                 ? cells.push(
-                      <GroupCell gridTemplateColumns={getGridTemplateColumns(col.children)}>
-                          {getRowsCells(data[col.field], col.children, col.field)}
+                      <GroupCell gridTemplateColumns={getGridTemplateColumns(config.children)}>
+                          {getRowsCells(data[config.field], config.children, config.field)}
                       </GroupCell>
                   )
                 : cells.push(
-                      <Cell hide={col.hide} frozen={col.frozen}>
-                          {data[col.field]}
+                      <Cell hide={config.hide} frozen={config.frozen}>
+                          {data[config.field]}
                       </Cell>
                   );
         });
@@ -76,10 +71,10 @@ const Table: React.SFC<Props> & WithStyle = props => {
 
     return (
         <TableStyled>
-            <Row gridTemplateColumns={getGridTemplateColumns(columnConfig)}>{getHeadCells()}</Row>
+            <Row gridTemplateColumns={getGridTemplateColumns(columnConfigs)}>{getHeadCells()}</Row>
             {props.data.map((row, i) => {
                 return (
-                    <Row key={i} gridTemplateColumns={getGridTemplateColumns(columnConfig)}>
+                    <Row key={i} gridTemplateColumns={getGridTemplateColumns(columnConfigs)}>
                         {getRowsCells(row)}
                     </Row>
                 );

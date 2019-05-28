@@ -35,5 +35,5 @@ export interface HeadCellProps extends CellStyledProps {
 export interface Props {
     data: Array<{}>;
     columns: ColumnConfig[];
-    onSortIconClick?: (field: string, order: SortOrder) => void;
+    onSortIconClick: (field: string, order: SortOrder) => void;
 }

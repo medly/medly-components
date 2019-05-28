@@ -10,32 +10,32 @@ export const addSizeToColumnConfig = (columnConfigs: ColumnConfig[]): ColumnConf
     });
 };
 
-const getCumulativeTemplate = (config: ColumnConfig[]) => {
-    const cumulativeSize = config.reduce((acc, curr) => acc.map((val, index) => val + parseInt(curr.size.match(/(\d+)/g)[index], 10)), [
+const getCumulativeTemplate = (configs: ColumnConfig[]) => {
+    const cumulativeSize = configs.reduce((acc, curr) => acc.map((val, index) => val + parseInt(curr.size.match(/(\d+)/g)[index], 10)), [
         0,
         0
     ]);
     return `minmax(${cumulativeSize[0]}px, ${cumulativeSize[1]}fr)`;
 };
 
-export const getGridTemplateColumns = (config: ColumnConfig[]) =>
-    config.reduce((acc, curr) => (curr.children ? `${acc} ${getCumulativeTemplate(curr.children)}` : `${acc} ${curr.size}`), ``);
+export const getGridTemplateColumns = (configs: ColumnConfig[]) =>
+    configs.reduce((acc, curr) => (curr.children ? `${acc} ${getCumulativeTemplate(curr.children)}` : `${acc} ${curr.size}`), ``);
 
-export const changeSize = (width: number, field: string, columnConfig: ColumnConfig[]) => {
-    const newColumnConfig = [...columnConfig];
-    const splitField = field.split('.');
-    const index = columnConfig.findIndex(col => col.field === splitField[0]);
+export const changeSize = (width: number, dottedField: string, columnConfigs: ColumnConfig[]) => {
+    const newColumnConfigs = [...columnConfigs];
+    const fields = dottedField.split('.');
+    const index = columnConfigs.findIndex(config => config.field === fields[0]);
 
     if (index >= 0) {
-        const column = { ...newColumnConfig[index] };
-        if (column.children && splitField[1]) {
-            column.children = changeSize(width, splitField[1], column.children);
+        const config = { ...newColumnConfigs[index] };
+        if (config.children && fields[1]) {
+            config.children = changeSize(width, fields[1], config.children);
         } else {
-            column.size = `minmax(${width}px, 1fr)`;
+            config.size = `minmax(${width}px, 1fr)`;
         }
 
-        newColumnConfig[index] = column;
+        newColumnConfigs[index] = config;
     }
 
-    return newColumnConfig;
+    return newColumnConfigs;
 };

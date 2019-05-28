@@ -90,7 +90,7 @@ const columns: ColumnConfig[] = [
     { title: 'Rating', field: 'rating', formatter: 'numeric' }
 ];
 // @ts-ignore
-const getNestedValue = (arr: {}, field: string) => field.split('.').reduce((acc, curr) => acc[curr], arr);
+const getNestedValue = (obj: {}, dottedKey: string) => dottedKey.split('.').reduce((acc, curr) => acc[curr], obj);
 
 interface DemoComponentProps {
     hideColumnField: string;
@@ -105,20 +105,20 @@ const DemoComponent: React.SFC<DemoComponentProps> = props => {
         setColumnConfig(newConfig);
     }, [props.hideColumnField]);
 
-    const hideColumn = (field: string, config: ColumnConfig[]): ColumnConfig[] => {
-        const splitedField = field.split('.');
-        return config.map(con => {
-            const nextField = splitedField[1] || '';
-            if (con.children) return { ...con, children: hideColumn(nextField, con.children) };
-            return { ...con, hide: con.field === splitedField[0] ? true : false };
+    const hideColumn = (dottedField: string, configs: ColumnConfig[]): ColumnConfig[] => {
+        const fields = dottedField.split('.');
+        return configs.map(config => {
+            const nextField = fields[1] || '';
+            if (config.children) return { ...config, children: hideColumn(nextField, config.children) };
+            return { ...config, hide: config.field === fields[0] ? true : false };
         });
     };
 
-    const filterData = (field: string, order: SortOrder) => {
+    const filterData = (dottedField: string, order: SortOrder) => {
         const newArray = [...tableData];
         newArray.sort((first, second) => {
-            const firstField = getNestedValue(first, field);
-            const secondField = getNestedValue(second, field);
+            const firstField = getNestedValue(first, dottedField);
+            const secondField = getNestedValue(second, dottedField);
             const comparison = firstField > secondField ? 1 : firstField < secondField ? -1 : 0;
             return order === 'asc' ? comparison : comparison * -1;
         });
@@ -129,6 +129,7 @@ const DemoComponent: React.SFC<DemoComponentProps> = props => {
 };
 
 const columnNames = {
+    'Select Column': 'null',
     Name: 'name',
     History: 'marks.history',
     Maths: 'marks.maths',
@@ -137,7 +138,7 @@ const columnNames = {
     Rating: 'rating'
 };
 
-storiesOf('Core', module).add('Table', () => <DemoComponent hideColumnField={select('Hide Column', columnNames, 'age')} />, {
+storiesOf('Core', module).add('Table', () => <DemoComponent hideColumnField={select('Hide Column', columnNames, 'null')} />, {
     props: {
         propTablesExclude: [DemoComponent],
         propTables: [Table]
