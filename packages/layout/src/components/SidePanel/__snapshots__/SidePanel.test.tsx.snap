@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SidePanel component should render with left positioned by degfault 1`] = `
+.c0 {
+  height: 100%;
+  background-color: pink;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+  left: 0;
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;
+
+exports[`SidePanel component should render with right positioned when position prop given as right 1`] = `
+.c0 {
+  height: 100%;
+  background-color: pink;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+  right: 0;
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;
