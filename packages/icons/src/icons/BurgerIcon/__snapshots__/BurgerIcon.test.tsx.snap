@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BurgerIcon component should render with all props given 1`] = `
+.c1 {
+  display: block;
+  position: absolute;
+  height: calc(24px * 0.2);
+  width: 100%;
+  background: pink;
+  border-radius: calc(24px * 0.2);
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.c1:nth-child(1) {
+  top: 0px;
+}
+
+.c1:nth-child(2) {
+  top: calc(24px * 0.4);
+}
+
+.c1:nth-child(3) {
+  top: calc(24px * 0.8);
+}
+
+.c0 {
+  display: inline-block;
+  width: calc(24px * 1.33);
+  height: 24px;
+  position: relative;
+  margin: 10px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+<div>
+  <div
+    class="c0"
+    color="pink"
+  >
+    <span
+      class="c1"
+      color="pink"
+    />
+    <span
+      class="c1"
+      color="pink"
+    />
+    <span
+      class="c1"
+      color="pink"
+    />
+  </div>
+</div>
+`;
+
+exports[`BurgerIcon component should render with default props 1`] = `
+.c1 {
+  display: block;
+  position: absolute;
+  height: calc(36px * 0.2);
+  width: 100%;
+  background: #012040;
+  border-radius: calc(36px * 0.2);
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.c1:nth-child(1) {
+  top: 0px;
+}
+
+.c1:nth-child(2) {
+  top: calc(36px * 0.4);
+}
+
+.c1:nth-child(3) {
+  top: calc(36px * 0.8);
+}
+
+.c0 {
+  display: inline-block;
+  width: calc(36px * 1.33);
+  height: 36px;
+  position: relative;
+  margin: 10px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <span
+      class="c1"
+    />
+    <span
+      class="c1"
+    />
+    <span
+      class="c1"
+    />
+  </div>
+</div>
+`;

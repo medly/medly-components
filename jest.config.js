@@ -23,6 +23,10 @@ module.exports = {
         {
             displayName: 'layout',
             testMatch: ['<rootDir>/packages/layout/src/**/*.(spec|test).(ts|tsx)']
+        },
+        {
+            displayName: 'icons',
+            testMatch: ['<rootDir>/packages/icons/src/icons/**/*.(spec|test).(ts|tsx)']
         }
     ]
 };
