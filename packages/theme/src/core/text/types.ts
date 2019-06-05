@@ -1,8 +1,8 @@
-import { FontSizeTheme, FontWeightTheme } from '../font/types';
+import { FontSizes, FontWeights } from '../font/types';
 
 export interface TextTheme {
     defaults: {
-        textWeight?: keyof FontWeightTheme;
-        textSize?: keyof FontSizeTheme;
+        textWeight: FontWeights;
+        textSize: FontSizes;
     };
 }

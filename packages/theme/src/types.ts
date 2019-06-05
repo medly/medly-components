@@ -22,7 +22,8 @@ export interface CoreTheme {
 }
 
 export interface LayoutTheme {
-    sidenav?: LayoutThemes.SideNavTheme;
+    sideNav?: LayoutThemes.SideNavTheme;
+    sidePanel?: LayoutThemes.SidePanelTheme;
 }
 
 export interface Theme extends CoreTheme, LayoutTheme {}

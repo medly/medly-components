@@ -7,8 +7,8 @@ const getSize = ({ theme, size }: BurgerIconStyledProps) => theme.icon.sizes[siz
 export const SpanStyled = styled('span')<SpanProps>`
     display: block;
     position: absolute;
+    width: calc(${getSize} * 1.33);
     height: calc(${getSize} * 0.2);
-    width: 100%;
     background: ${({ theme, color }) => color || theme.icon.defaultColor};
     border-radius: calc(${getSize} * 0.2);
     opacity: 1;
@@ -51,8 +51,10 @@ const isOpen = () => css<BurgerIconStyledProps>`
     }
 `;
 
-export const BurgerIconStyled = styled('div')<BurgerIconStyledProps>`
-    display: inline-block;
+export const BurgerIconStyled = styled('button')<BurgerIconStyledProps>`
+    border: none;
+    background-color: transparent;
+    outline: none;
     width: calc(${getSize} * 1.33);
     height: ${getSize};
     position: relative;

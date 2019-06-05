@@ -1,19 +1,8 @@
-export interface FontSizeTheme {
-    L1: string;
-    L2: string;
-    L3: string;
-    L4: string;
-    M1: string;
-    M2: string;
-    M3: string;
-    S1: string;
-}
+export type FontSizes = 'L1' | 'L2' | 'L3' | 'L4' | 'M1' | 'M2' | 'M3' | 'S1';
+export type FontSizeTheme = { [k in FontSizes]: string };
 
-export interface FontWeightTheme {
-    Light: string;
-    Normal: string;
-    Strong: string;
-}
+export type FontWeights = 'Light' | 'Normal' | 'Strong';
+export type FontWeightTheme = { [k in FontWeights]: string };
 
 export interface FontFaceTheme {
     fontFamily: string;

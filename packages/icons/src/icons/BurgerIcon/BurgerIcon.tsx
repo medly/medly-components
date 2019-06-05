@@ -13,7 +13,7 @@ export const BurgerIcon: React.SFC<BurgerIconProps> & WithStyle = React.memo(pro
     };
 
     return (
-        <BurgerIconStyled {...{ size, color, open, onClick: onclickHandler }}>
+        <BurgerIconStyled id="burgerIcon" {...{ size, color, open, onClick: onclickHandler }}>
             <SpanStyled {...{ size, color }} />
             <SpanStyled {...{ size, color }} />
             <SpanStyled {...{ size, color }} />

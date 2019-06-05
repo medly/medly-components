@@ -1,5 +1,7 @@
-import sidenav from './sidenav';
+import sideNav from './sideNav';
+import sidePanel from './sidePanel';
 
 export const layoutDefaultTheme = {
-    sidenav
+    sideNav,
+    sidePanel
 };

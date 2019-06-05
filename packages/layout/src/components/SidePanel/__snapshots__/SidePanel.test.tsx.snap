@@ -3,15 +3,14 @@
 exports[`SidePanel component should render with left positioned by degfault 1`] = `
 .c0 {
   height: 100%;
-  background-color: pink;
+  background-color: #999999;
   width: 0px;
   position: fixed;
   z-index: 1;
   top: 0;
-  overflow-x: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding-top: 60px;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   left: 0;
 }
 
@@ -25,15 +24,14 @@ exports[`SidePanel component should render with left positioned by degfault 1`] 
 exports[`SidePanel component should render with right positioned when position prop given as right 1`] = `
 .c0 {
   height: 100%;
-  background-color: pink;
+  background-color: #999999;
   width: 0px;
   position: fixed;
   z-index: 1;
   top: 0;
-  overflow-x: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding-top: 60px;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   right: 0;
 }
 

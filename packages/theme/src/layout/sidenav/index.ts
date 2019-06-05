@@ -1,10 +1,14 @@
+import colors from '../../core/colors';
 import { SideNavTheme } from './types';
 
-const sidenav: SideNavTheme = {
-    bgColor: '#FFFFFF',
-    textColor: '#012040',
-    itemBorderColor: '#D8D8D8',
-    activeColor: '#012040'
+const sideNav: SideNavTheme = {
+    closeSize: '60px',
+    openSize: '250px',
+    iconSize: 'M',
+    textSize: 'M3',
+    bgColor: colors.grey[200],
+    textColor: colors.violet[500],
+    activeColor: colors.grey[500]
 };
 
-export default sidenav;
+export default sideNav;

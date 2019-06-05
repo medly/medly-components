@@ -1,8 +1,8 @@
-import { IconSizesType } from '@medly-components/theme';
+import { IconSizes } from '@medly-components/theme';
 import { WithThemeProp } from '@medly-components/utils';
 
 export interface SpanProps extends WithThemeProp {
-    size?: IconSizesType;
+    size?: IconSizes;
     color?: string;
 }
 
@@ -11,7 +11,7 @@ export interface BurgerIconStyledProps extends SpanProps {
 }
 
 export interface BurgerIconProps {
-    size?: IconSizesType;
+    size?: IconSizes;
     color?: string;
     onClick?: (open: boolean) => void;
 }

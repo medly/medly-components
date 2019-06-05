@@ -1,1 +1,2 @@
-export * from './sidenav/types';
+export * from './sideNav/types';
+export * from './sidePanel/types';

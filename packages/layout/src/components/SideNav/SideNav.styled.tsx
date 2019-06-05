@@ -1,20 +1,29 @@
+import { Text } from '@medly-components/core';
 import { defaultTheme } from '@medly-components/theme';
-import { css, styled } from '@medly-components/utils';
-import { Props } from './types';
+import { styled } from '@medly-components/utils';
+import SidePanel from '../SidePanel';
+import { SideNavStyledProps } from './types';
 
-export const SideNavStyled = styled('ul')<Props>`
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    list-style-type: none;
-    color: ${({ theme }) => theme.sidenav.textColor};
+export const SideNavStyled = styled(SidePanel)<SideNavStyledProps>`
+    width: ${({ open, theme }) => (open ? theme.sideNav.openSize : theme.sideNav.closeSize)};
+    background-color: ${({ theme }) => theme.sideNav.bgColor};
 
-    li {
-        border-bottom: 1px solid ${({ theme }) => theme.sidenav.itemBorderColor};
-        background-color: #012040;
+    ${Text.Style} {
+        opacity: ${({ open }) => (open ? 1 : 0)};
+        transition: 0.2s;
     }
 `;
-
 SideNavStyled.defaultProps = {
+    theme: defaultTheme
+};
+
+export const SideNavIconStyled = styled('div')`
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: ${({ theme }) => theme.sideNav.closeSize};
+    min-height: ${({ theme }) => theme.sideNav.closeSize};
+`;
+SideNavIconStyled.defaultProps = {
     theme: defaultTheme
 };

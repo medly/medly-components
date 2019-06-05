@@ -1,4 +1,4 @@
-import { defaultTheme, IconSizesType } from '@medly-components/theme';
+import { defaultTheme, IconSizes } from '@medly-components/theme';
 import { color, select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
@@ -11,10 +11,11 @@ import DropDownIcon from './icons/DropDownIcon';
 import EditIcon from './icons/EditIcon';
 import ExpandLessIcon from './icons/ExpandLessIcon';
 import ExpandMoreIcon from './icons/ExpandMoreIcon';
+import HomeIcon from './icons/HomeIcon';
 import SearchIcon from './icons/SearchIcon';
 import UpArrowIcon from './icons/UpArrowIcon';
 
-const size: IconSizesType[] = ['XS', 'S', 'M', 'L', 'XL'];
+const size: IconSizes[] = ['XS', 'S', 'M', 'L', 'XL'];
 const defaultColor = defaultTheme.icon.defaultColor;
 
 storiesOf('Icons', module)
@@ -25,6 +26,7 @@ storiesOf('Icons', module)
     .add('DownArrow', () => <DownArrowIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('DropDown', () => <DropDownIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('Edit', () => <EditIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
+    .add('Home', () => <HomeIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('ExpandLess', () => <ExpandLessIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('ExpandMore', () => <ExpandMoreIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('UpArrowIcon', () => <UpArrowIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)

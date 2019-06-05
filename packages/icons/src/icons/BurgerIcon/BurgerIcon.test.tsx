@@ -20,9 +20,9 @@ describe('BurgerIcon component', () => {
     it('should call onClick prop with expected open state', () => {
         const mockOnClick = jest.fn();
         const { container } = render(<BurgerIcon size="M" color="pink" onClick={mockOnClick} />);
-        fireEvent.click(container.querySelector('div'));
+        fireEvent.click(container.querySelector('button'));
         expect(mockOnClick).toHaveBeenCalledWith(true);
-        fireEvent.click(container.querySelector('div'));
+        fireEvent.click(container.querySelector('button'));
         expect(mockOnClick).toHaveBeenCalledWith(false);
     });
 });

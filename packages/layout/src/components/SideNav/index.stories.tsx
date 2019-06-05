@@ -1,4 +1,5 @@
 import { Text } from '@medly-components/core';
+import { EditIcon, HomeIcon, SearchIcon } from '@medly-components/icons';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import SideNav from './SideNav';
@@ -7,23 +8,23 @@ storiesOf('Layout', module).add(
     'SideNav',
     () => (
         <SideNav>
-            <SideNav.NavItem>
-                <Text>Dashboard</Text>
+            <SideNav.NavItem as={'a'} href="#">
+                <SideNav.NavIcon>
+                    <HomeIcon />
+                </SideNav.NavIcon>
+                <SideNav.NavText>Home</SideNav.NavText>
             </SideNav.NavItem>
             <SideNav.NavItem active>
-                <Text>Pharmacies</Text>
+                <SideNav.NavIcon>
+                    <SearchIcon />
+                </SideNav.NavIcon>
+                <SideNav.NavText>Search</SideNav.NavText>
             </SideNav.NavItem>
             <SideNav.NavItem>
-                <Text>Covered Entities</Text>
-            </SideNav.NavItem>
-            <SideNav.NavItem>
-                <Text>Reports</Text>
-            </SideNav.NavItem>
-            <SideNav.NavItem>
-                <Text>Manage Users</Text>
-            </SideNav.NavItem>
-            <SideNav.NavItem>
-                <Text>Logout</Text>
+                <SideNav.NavIcon>
+                    <EditIcon />
+                </SideNav.NavIcon>
+                <SideNav.NavText>Edit</SideNav.NavText>
             </SideNav.NavItem>
         </SideNav>
     ),

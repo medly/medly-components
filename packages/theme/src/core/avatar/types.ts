@@ -1,21 +1,21 @@
-import { FontSizeTheme } from '../font/types';
+import { FontSizes } from '../font/types';
 
 export interface AvatarSizes {
     S: {
         avatarSize: string;
-        fontSize: keyof FontSizeTheme;
+        fontSize: FontSizes;
     };
     M: {
         avatarSize: string;
-        fontSize: keyof FontSizeTheme;
+        fontSize: FontSizes;
     };
     L: {
         avatarSize: string;
-        fontSize: keyof FontSizeTheme;
+        fontSize: FontSizes;
     };
     XL: {
         avatarSize: string;
-        fontSize: keyof FontSizeTheme;
+        fontSize: FontSizes;
     };
 }
 

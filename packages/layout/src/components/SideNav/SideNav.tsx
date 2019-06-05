@@ -1,20 +1,33 @@
+import { Text } from '@medly-components/core';
+import { BurgerIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
-import { NavItemStyled } from './NavItem/NavItem.styled';
-import { SideNavStyled } from './SideNav.styled';
-import { Props, SideNaveStaticProps } from './types';
+import React, { useState } from 'react';
+import NavItem from './NavItem';
+import NavList from './NavList';
+import { SideNavIconStyled, SideNavStyled } from './SideNav.styled';
+import { SideNavStaticProps } from './types';
 
-export const SideNav: React.SFC<Props> & WithStyle & SideNaveStaticProps = props => {
+export const SideNav: React.SFC & WithStyle & SideNavStaticProps = props => {
+    const [open, setOpenState] = useState(false);
+
+    const burgerIconClickHandler = (state: boolean) => {
+        setOpenState(state);
+    };
+
     return (
-        <SideNavStyled {...props}>
-            {React.Children.map(props.children, (c, i) => {
-                return <li key={i}>{c}</li>;
-            })}
+        <SideNavStyled open={open} position="left">
+            <SideNavIconStyled>
+                <BurgerIcon size="S" onClick={burgerIconClickHandler} />
+            </SideNavIconStyled>
+            <NavList>{props.children}</NavList>
         </SideNavStyled>
     );
 };
 
-SideNav.NavItem = NavItemStyled;
+SideNav.NavItem = NavItem;
+SideNav.NavIcon = SideNavIconStyled;
+SideNav.NavText = Text;
+
 SideNav.displayName = 'SideNav';
 SideNav.Style = SideNavStyled;
 
