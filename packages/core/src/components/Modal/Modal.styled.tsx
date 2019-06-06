@@ -11,10 +11,11 @@ export const ModalBackgroundStyled = styled('div')<Props>`
     background: rgba(0, 0, 0, 0.6);
     z-index: 1000;
     display: ${({ open }) => (open ? 'block' : 'none')};
+
+    ${centerAligned()}
 `;
 
 export const ModalStyled = styled('div')`
-    ${centerAligned()}
     background: ${({ theme }) => theme.modal.bgColor};
     padding: ${({ theme }) => theme.spacing.L} ${({ theme }) => theme.spacing.XL};
     border-radius: 5px;

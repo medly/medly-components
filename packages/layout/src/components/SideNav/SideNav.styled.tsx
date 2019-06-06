@@ -1,6 +1,6 @@
 import { Text } from '@medly-components/core';
 import { defaultTheme } from '@medly-components/theme';
-import { styled } from '@medly-components/utils';
+import { centerAligned, styled } from '@medly-components/utils';
 import SidePanel from '../SidePanel';
 import { SideNavStyledProps } from './types';
 
@@ -18,9 +18,8 @@ SideNavStyled.defaultProps = {
 };
 
 export const SideNavIconStyled = styled('div')`
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    ${centerAligned()}
+    
     min-width: ${({ theme }) => theme.sideNav.closeSize};
     min-height: ${({ theme }) => theme.sideNav.closeSize};
 `;

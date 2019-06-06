@@ -10,6 +10,8 @@ export const CheckboxWrapperStyled = styled('div')<CheckboxWrapperProps>`
     border: 1px solid ${({ theme }) => theme.checkbox.borderColor};
     background-color: ${({ theme }) => theme.checkbox.bgColor};
     border-radius: 15%;
+
+    ${centerAligned()}
 `;
 CheckboxWrapperStyled.defaultProps = {
     theme: defaultTheme
@@ -19,6 +21,7 @@ export const CheckboxFillStyled = styled('div')<WithThemeProp>`
     width: 0;
     height: 0;
     z-index: 1;
+
     ${centerAligned()}
 
     ${CheckIcon.Style} {

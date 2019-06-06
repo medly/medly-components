@@ -1,5 +1,5 @@
 import { defaultTheme } from '@medly-components/theme';
-import { css, styled } from '@medly-components/utils';
+import { centerAligned, css, styled } from '@medly-components/utils';
 import { Props } from './types';
 
 export const CardStyled = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<Props>`
@@ -15,9 +15,8 @@ export const CardStyled = styled('div').attrs(({ theme: { card } }) => ({ ...car
     ${({ center }) =>
         center &&
         css`
+            ${centerAligned()}
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
         `}
 `;
 

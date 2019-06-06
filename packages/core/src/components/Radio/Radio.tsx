@@ -10,9 +10,13 @@ const Radio: React.SFC<Props> & WithStyle = React.memo(
         const { size, label, required, labelPosition, ...restProps } = props;
         return (
             <FieldWithLabel {...{ labelPosition }}>
-                {label && <Label {...{ labelPosition }}>{label}</Label>}
+                {label && (
+                    <Label showPointer {...{ labelPosition }} htmlFor={label}>
+                        {label}
+                    </Label>
+                )}
                 <RadioWrapperStyled {...{ size }}>
-                    <RadioStyled ref={ref} required={required} {...restProps} />
+                    <RadioStyled ref={ref} id={label} required={required} {...restProps} />
                     <RadioFillStyled />
                 </RadioWrapperStyled>
             </FieldWithLabel>

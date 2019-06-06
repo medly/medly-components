@@ -1,6 +1,7 @@
 import { WithThemeProp } from '@medly-components/utils';
-import { Props as LabelProps } from '../Label/types';
+import { LabelPositions } from '../Label/types';
 
-export interface Props extends WithThemeProp, LabelProps {
+export interface Props extends WithThemeProp {
+    labelPosition?: LabelPositions;
     fullWidth?: boolean;
 }

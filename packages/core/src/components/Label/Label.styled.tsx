@@ -9,10 +9,15 @@ const asterisk = () => css`
     }
 `;
 
+const pointerCursor = () => css`
+    cursor: pointer;
+`;
+
 export const LabelStyled = styled('label')<Props>`
     margin: ${({ theme, labelPosition }) => positionalSpacing(labelPosition, theme.spacing.S)};
     color: ${({ theme }) => theme.label.color};
     ${({ required }) => required && asterisk()}
+    ${({ showPointer }) => showPointer && pointerCursor()}
 `;
 
 LabelStyled.defaultProps = {

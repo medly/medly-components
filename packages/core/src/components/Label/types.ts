@@ -1,6 +1,9 @@
-import { WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
-export interface Props extends WithThemeProp {
-    labelPosition?: 'top' | 'start' | 'end' | 'bottom';
+export type LabelPositions = 'top' | 'start' | 'end' | 'bottom';
+
+export interface Props extends HTMLProps<HTMLLabelElement>, WithThemeProp {
+    showPointer?: boolean;
+    labelPosition?: LabelPositions;
     required?: boolean;
 }

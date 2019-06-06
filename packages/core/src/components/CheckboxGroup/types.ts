@@ -1,8 +1,10 @@
 import { CheckboxSizes } from '@medly-components/theme';
 import { WithThemeProp } from '@medly-components/utils';
-import { Props as LabelProps } from '../Label/types';
+import { LabelPositions } from '../Label/types';
 
-export interface Props extends LabelProps, WithThemeProp {
+export interface Props extends WithThemeProp {
+    required?: boolean;
+    labelPosition?: LabelPositions;
     label?: string;
     name?: string;
     size?: CheckboxSizes;

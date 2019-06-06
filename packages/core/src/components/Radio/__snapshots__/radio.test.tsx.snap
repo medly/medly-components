@@ -23,6 +23,12 @@ exports[`Radio component should render correctly with all the default props 1`] 
   border-radius: 100%;
   border: 1px solid #CCCCCC;
   background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c4 {
@@ -56,8 +62,8 @@ exports[`Radio component should render correctly with all the default props 1`] 
 .c2:checked ~ .c3 {
   width: calc(75%);
   height: calc(75%);
-  -webkit-transition: width 0.2s ease-out,height 0.2s ease-out;
-  transition: width 0.2s ease-out,height 0.2s ease-out;
+  -webkit-transition: width 0.2s ease,height 0.2s ease;
+  transition: width 0.2s ease,height 0.2s ease;
 }
 
 <div>
@@ -70,6 +76,7 @@ exports[`Radio component should render correctly with all the default props 1`] 
     >
       <input
         class="c2"
+        id=""
         name="gender"
         type="radio"
       />
@@ -100,6 +107,7 @@ exports[`Radio component should render correctly with all the props given 1`] = 
 .c1 {
   margin: 0px 0px 0px 8px;
   color: #012040;
+  cursor: pointer;
 }
 
 .c2 {
@@ -109,6 +117,12 @@ exports[`Radio component should render correctly with all the props given 1`] = 
   border-radius: 100%;
   border: 1px solid #CCCCCC;
   background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c5 {
@@ -142,8 +156,8 @@ exports[`Radio component should render correctly with all the props given 1`] = 
 .c3:checked ~ .c4 {
   width: calc(75%);
   height: calc(75%);
-  -webkit-transition: width 0.2s ease-out,height 0.2s ease-out;
-  transition: width 0.2s ease-out,height 0.2s ease-out;
+  -webkit-transition: width 0.2s ease,height 0.2s ease;
+  transition: width 0.2s ease,height 0.2s ease;
 }
 
 <div>
@@ -152,6 +166,7 @@ exports[`Radio component should render correctly with all the props given 1`] = 
   >
     <label
       class="c1"
+      for="Female"
     >
       Female
     </label>
@@ -160,6 +175,7 @@ exports[`Radio component should render correctly with all the props given 1`] = 
     >
       <input
         class="c3"
+        id="Female"
         name="gender"
         type="radio"
       />

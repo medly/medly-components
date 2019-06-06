@@ -11,9 +11,13 @@ const Checkbox: React.SFC<Props> & WithStyle = React.memo(
         const { size, label, required, labelPosition, ...restProps } = props;
         return (
             <FieldWithLabel {...{ labelPosition }}>
-                {label && <Label {...{ labelPosition }}>{label}</Label>}
+                {label && (
+                    <Label showPointer {...{ labelPosition }} htmlFor={label}>
+                        {label}
+                    </Label>
+                )}
                 <CheckboxWrapperStyled {...{ size }}>
-                    <CheckboxStyled ref={ref} required={required} {...restProps} />
+                    <CheckboxStyled ref={ref} id={label} required={required} {...restProps} />
                     <CheckboxFillStyled>
                         <CheckIcon />
                     </CheckboxFillStyled>

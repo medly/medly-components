@@ -9,6 +9,8 @@ export const RadioWrapperStyled = styled('div')<RadioWrapperProps>`
     border-radius: 100%;
     border: 1px solid ${({ theme }) => theme.radio.borderColor};
     background-color: ${({ theme }) => theme.radio.bgColor};
+
+    ${centerAligned()}
 `;
 RadioWrapperStyled.defaultProps = {
     theme: defaultTheme
@@ -42,6 +44,6 @@ export const RadioStyled = styled('input').attrs({ type: 'radio' })<Props>`
     &:checked ~ ${RadioFillStyled} {
         width: calc(75%);
         height: calc(75%);
-        transition: width 0.2s ease-out, height 0.2s ease-out;
+        transition: width 0.2s ease, height 0.2s ease;
     }
 `;

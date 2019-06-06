@@ -42,6 +42,7 @@ exports[`CheckboxGroup component should render correctly with all the default pr
 .c2 {
   margin: 0px 0px 0px 8px;
   color: #012040;
+  cursor: pointer;
 }
 
 .c3 {
@@ -51,6 +52,12 @@ exports[`CheckboxGroup component should render correctly with all the default pr
   border: 1px solid #CCCCCC;
   background-color: #ffffff;
   border-radius: 15%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c6 {
@@ -101,6 +108,7 @@ exports[`CheckboxGroup component should render correctly with all the default pr
     >
       <label
         class="c2"
+        for="Apple"
       >
         Apple
       </label>
@@ -109,6 +117,7 @@ exports[`CheckboxGroup component should render correctly with all the default pr
       >
         <input
           class="c4"
+          id="Apple"
           name=""
           type="checkbox"
         />
@@ -136,6 +145,7 @@ exports[`CheckboxGroup component should render correctly with all the default pr
     >
       <label
         class="c2"
+        for="Orange"
       >
         Orange
       </label>
@@ -144,6 +154,7 @@ exports[`CheckboxGroup component should render correctly with all the default pr
       >
         <input
           class="c4"
+          id="Orange"
           name=""
           type="checkbox"
         />
@@ -212,6 +223,7 @@ exports[`CheckboxGroup component should render correctly with all the props give
 .c3 {
   margin: 0px 0px 0px 8px;
   color: #012040;
+  cursor: pointer;
 }
 
 .c1 {
@@ -231,6 +243,12 @@ exports[`CheckboxGroup component should render correctly with all the props give
   border: 1px solid #CCCCCC;
   background-color: #ffffff;
   border-radius: 15%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c7 {
@@ -286,6 +304,7 @@ exports[`CheckboxGroup component should render correctly with all the props give
     >
       <label
         class="c3"
+        for="Apple"
       >
         Apple
       </label>
@@ -294,6 +313,7 @@ exports[`CheckboxGroup component should render correctly with all the props give
       >
         <input
           class="c5"
+          id="Apple"
           name="fruits"
           required=""
           type="checkbox"
@@ -322,6 +342,7 @@ exports[`CheckboxGroup component should render correctly with all the props give
     >
       <label
         class="c3"
+        for="Orange"
       >
         Orange
       </label>
@@ -330,6 +351,7 @@ exports[`CheckboxGroup component should render correctly with all the props give
       >
         <input
           class="c5"
+          id="Orange"
           name="fruits"
           required=""
           type="checkbox"
