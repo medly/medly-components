@@ -1,27 +1,15 @@
-import { FontSizeTheme } from '../font/types';
+import { FontSizes } from '../font/types';
 
-export interface StepperSizes {
-    S: {
-        counterSize: string;
-        fontSize: keyof FontSizeTheme;
-    };
-    M: {
-        counterSize: string;
-        fontSize: keyof FontSizeTheme;
-    };
-    L: {
-        counterSize: string;
-        fontSize: keyof FontSizeTheme;
-    };
-    XL: {
-        counterSize: string;
-        fontSize: keyof FontSizeTheme;
-    };
-}
+export type StepperSizes = 'S' | 'M' | 'L' | 'XL';
 
 export interface StepperTheme {
-    sizes: StepperSizes;
-    defaultSize: keyof StepperSizes;
+    sizes: {
+        [k in StepperSizes]: {
+            counterSize: string;
+            fontSize: FontSizes;
+        }
+    };
+    defaultSize: StepperSizes;
     counterColor: string;
     activeColor: string;
     inactiveColor: string;

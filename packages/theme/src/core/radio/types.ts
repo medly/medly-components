@@ -1,13 +1,7 @@
-export interface RadioSizes {
-    XS: string;
-    S: string;
-    M: string;
-    L: string;
-    XL: string;
-}
+export type RadioSizes = 'XS' | 'S' | 'M' | 'L' | 'XL';
 
 export interface RadioTheme {
-    sizes: RadioSizes;
+    sizes: { [k in RadioSizes]: string };
     defaultSize: string;
     fillColor: string;
     bgColor: string;

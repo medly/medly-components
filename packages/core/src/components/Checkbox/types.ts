@@ -6,10 +6,10 @@ type DivProps = Omit<HTMLProps<HTMLInputElement>, 'size'>;
 type InputProps = Omit<HTMLProps<HTMLInputElement>, 'size' | 'type'>;
 
 export interface CheckboxWrapperProps extends DivProps, WithThemeProp {
-    size?: keyof CheckboxSizes;
+    size?: CheckboxSizes;
 }
 
 export interface Props extends InputProps, LabelProps, WithThemeProp {
-    size?: keyof CheckboxSizes;
+    size?: CheckboxSizes;
     label?: string;
 }

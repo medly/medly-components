@@ -6,10 +6,10 @@ type DivProps = Omit<HTMLProps<HTMLInputElement>, 'size'>;
 type InputProps = Omit<HTMLProps<HTMLInputElement>, 'size' | 'type'>;
 
 export interface RadioWrapperProps extends DivProps, WithThemeProp {
-    size?: keyof RadioSizes;
+    size?: RadioSizes;
 }
 
 export interface Props extends InputProps, LabelProps, WithThemeProp {
     label?: string;
-    size?: keyof RadioSizes;
+    size?: RadioSizes;
 }

@@ -5,5 +5,5 @@ import { Props as LabelProps } from '../Label/types';
 export interface Props extends LabelProps, WithThemeProp {
     label?: string;
     name?: string;
-    size?: keyof CheckboxSizes;
+    size?: CheckboxSizes;
 }

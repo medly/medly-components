@@ -2,7 +2,7 @@ import { StepperSizes } from '@medly-components/theme';
 import { WithThemeProp } from '@medly-components/utils';
 
 export interface CounterProps extends WithThemeProp {
-    size?: keyof StepperSizes;
+    size?: StepperSizes;
     active?: boolean;
 }
 
@@ -18,7 +18,7 @@ export interface StepProps extends CounterProps {
 }
 
 export interface Props {
-    size?: keyof StepperSizes;
+    size?: StepperSizes;
     activeStep?: number;
 }
 

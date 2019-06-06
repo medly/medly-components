@@ -1,13 +1,7 @@
-export interface CheckboxSizes {
-    XS: string;
-    S: string;
-    M: string;
-    L: string;
-    XL: string;
-}
+export type CheckboxSizes = 'XS' | 'S' | 'M' | 'L' | 'XL';
 
 export interface CheckboxTheme {
-    sizes: CheckboxSizes;
+    sizes: { [k in CheckboxSizes]: string };
     defaultSize: string;
     fillColor: string;
     bgColor: string;
