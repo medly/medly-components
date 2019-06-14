@@ -1,6 +1,6 @@
-import { TestUtils } from '@medly-components/utils';
 import 'jest-styled-components';
 import React from 'react';
+import * as TestUtils from '../../test-utils';
 import InjectClassName from './InjectClassName';
 
 describe('InjectClassName component', () => {

@@ -6,7 +6,7 @@ exports[`SideNav component should change width after clicking on burger icon 1`]
 }
 
 .c8.c8.c8 * {
-  fill: #012040;
+  fill: #555;
 }
 
 .c4 {
@@ -14,7 +14,7 @@ exports[`SideNav component should change width after clicking on burger icon 1`]
   position: absolute;
   width: calc(16px * 1.33);
   height: calc(16px * 0.2);
-  background: #012040;
+  background: #555;
   border-radius: calc(16px * 0.2);
   opacity: 1;
   left: 0;
@@ -270,7 +270,7 @@ exports[`SideNav component should render properly 1`] = `
 }
 
 .c7.c7.c7 * {
-  fill: #012040;
+  fill: #555;
 }
 
 .c3 {
@@ -278,7 +278,7 @@ exports[`SideNav component should render properly 1`] = `
   position: absolute;
   width: calc(16px * 1.33);
   height: calc(16px * 0.2);
-  background: #012040;
+  background: #555;
   border-radius: calc(16px * 0.2);
   opacity: 1;
   left: 0;

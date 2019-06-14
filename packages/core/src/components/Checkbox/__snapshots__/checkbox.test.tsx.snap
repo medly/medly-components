@@ -6,7 +6,7 @@ exports[`Checkbox component should render correctly with all the default props 1
 }
 
 .c6.c6.c6 * {
-  fill: #012040;
+  fill: #555;
 }
 
 .c0 {
@@ -131,7 +131,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
 }
 
 .c7.c7.c7 * {
-  fill: #012040;
+  fill: #555;
 }
 
 .c0 {

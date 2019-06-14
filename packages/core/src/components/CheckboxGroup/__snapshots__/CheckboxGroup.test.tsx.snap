@@ -6,15 +6,15 @@ exports[`CheckboxGroup component should render correctly with all the default pr
 }
 
 .c8.c8.c8 * {
-  fill: #012040;
+  fill: #555;
 }
 
 .c0 {
-  margin: 8px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 8px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -199,7 +199,7 @@ exports[`CheckboxGroup component should render correctly with all the props give
 }
 
 .c9.c9.c9 * {
-  fill: #012040;
+  fill: #555;
 }
 
 .c2 {
@@ -218,11 +218,11 @@ exports[`CheckboxGroup component should render correctly with all the props give
 }
 
 .c0 {
-  margin: 8px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  margin: 8px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;

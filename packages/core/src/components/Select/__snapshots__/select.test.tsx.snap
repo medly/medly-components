@@ -32,7 +32,7 @@ exports[`Select component should render correctly when fullWidth & required prop
 }
 
 .c5.c5.c5 * {
-  fill: #012040;
+  fill: #555;
 }
 
 .c8 ~ .c6 {
@@ -159,7 +159,7 @@ exports[`Select component should render correctly when label and description are
 }
 
 .c4.c4.c4 * {
-  fill: #012040;
+  fill: #555;
 }
 
 .c1 {
@@ -286,7 +286,7 @@ exports[`Select component should render correctly with all the props given 1`] =
 }
 
 .c5.c5.c5 * {
-  fill: #012040;
+  fill: #555;
 }
 
 .c2 {

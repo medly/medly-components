@@ -11,10 +11,14 @@ export const Modal: React.SFC<Props> & WithStyle & ModalStaticProps = props => {
     const innerRef = useRef(null);
     useOuterClickNotifier(props.onCloseModal, innerRef);
 
+    const { onCloseModal, children, ...restProps } = props;
+
+    if (!props.open) return null;
+
     return (
-        <ModalBackgroundStyled {...props}>
+        <ModalBackgroundStyled {...restProps}>
             <ModalStyled ref={innerRef}>
-                <CloseModalContext.Provider value={props.onCloseModal}>{props.children}</CloseModalContext.Provider>
+                <CloseModalContext.Provider value={onCloseModal}>{children}</CloseModalContext.Provider>
             </ModalStyled>
         </ModalBackgroundStyled>
     );

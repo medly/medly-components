@@ -1,6 +1,10 @@
 import { select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React, { useEffect, useState } from 'react';
+import Button from '../Button';
+import Checkbox from '../Checkbox';
+import CheckboxGroup from '../CheckboxGroup';
+import Modal from '../Modal';
 import Table from './Table';
 import { ColumnConfig, SortOrder } from './types';
 
@@ -97,6 +101,7 @@ interface DemoComponentProps {
 }
 
 const DemoComponent: React.SFC<DemoComponentProps> = props => {
+    const [modalState, setModalState] = useState(false);
     const [tableData, setTableData] = useState(data);
     const [columnConfig, setColumnConfig] = useState(columns);
 
@@ -110,7 +115,7 @@ const DemoComponent: React.SFC<DemoComponentProps> = props => {
         return configs.map(config => {
             const nextField = fields[1] || '';
             if (config.children) return { ...config, children: hideColumn(nextField, config.children) };
-            return { ...config, hide: config.field === fields[0] ? true : false };
+            return { ...config, hide: config.field === fields[0] ? !config.hide : config.hide };
         });
     };
 
@@ -125,7 +130,40 @@ const DemoComponent: React.SFC<DemoComponentProps> = props => {
         setTableData(newArray);
     };
 
-    return <Table data={tableData} onSortIconClick={filterData} columns={columnConfig} />;
+    const handleModalState = () => {
+        setModalState(!modalState);
+    };
+
+    const handleCheckboxClick = (field: string) => () => {
+        const newConfig = hideColumn(field, columnConfig);
+        setColumnConfig(newConfig);
+    };
+
+    const checkBoxes = (configs: ColumnConfig[], field: string = '') =>
+        configs.map(config => {
+            const dottedField = field ? `${field}.${config.field}` : config.field;
+            if (!config.children) {
+                return (
+                    <Checkbox key={dottedField} label={config.title} checked={config.hide} onChange={handleCheckboxClick(dottedField)} />
+                );
+            }
+            return (
+                <CheckboxGroup key={dottedField} label={config.title} name={config.title} labelPosition="top">
+                    {checkBoxes(config.children, dottedField)}
+                </CheckboxGroup>
+            );
+        });
+
+    return (
+        <div>
+            <Modal open={modalState} onCloseModal={handleModalState}>
+                <Modal.Header>Hide Columns</Modal.Header>
+                <Modal.Content>{checkBoxes(columnConfig)}</Modal.Content>
+            </Modal>
+            <Button onClick={handleModalState}>Hide Columns</Button>
+            <Table data={tableData} onSortIconClick={filterData} columns={columnConfig} />
+        </div>
+    );
 };
 
 const columnNames = {

@@ -2,7 +2,7 @@ import { defaultTheme } from '@medly-components/theme';
 import { centerAligned, styled } from '@medly-components/utils';
 import { Props } from './types';
 
-export const ModalBackgroundStyled = styled('div')<Props>`
+export const ModalBackgroundStyled = styled('div')`
     position: fixed;
     top: 0;
     left: 0;
@@ -10,8 +10,6 @@ export const ModalBackgroundStyled = styled('div')<Props>`
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
     z-index: 1000;
-    display: ${({ open }) => (open ? 'block' : 'none')};
-
     ${centerAligned()}
 `;
 

@@ -7,7 +7,7 @@ import { Props } from './types';
 const CheckboxGroup: React.SFC<Props> & WithStyle = React.memo(props => {
     const { size, name, label, required, children, labelPosition } = props;
     return (
-        <FieldWithLabel {...{ labelPosition }}>
+        <FieldWithLabel fullWidth {...{ labelPosition }}>
             {label && <Label {...{ required, labelPosition }}>{label}</Label>}
             {React.Children.map(children, child => {
                 return React.cloneElement(child as any, {

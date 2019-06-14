@@ -11,6 +11,7 @@ const Stepper: React.SFC<Props> & WithStyle & StepperStaticProps = props => {
             {React.Children.map(children, (child, index) => {
                 return React.cloneElement(child as any, {
                     size,
+                    key: index + 1,
                     step: index + 1,
                     active: activeStep === index
                 });

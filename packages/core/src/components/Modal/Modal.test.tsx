@@ -9,7 +9,9 @@ describe('Modal component', () => {
     it('should render properly when it is open', () => {
         const { container } = TestUtils.render(
             <Modal open onCloseModal={onCloseHandler}>
-                <Modal.Header>Add User</Modal.Header>
+                <Modal.Header>
+                    <p>Demo Header</p>
+                </Modal.Header>
                 <Modal.Content>Demo Content</Modal.Content>
                 <Modal.Actions>Demo Actions</Modal.Actions>
             </Modal>
