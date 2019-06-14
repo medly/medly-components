@@ -7,7 +7,8 @@ const grey: GreyScale = {
     300: '#F9F9F9',
     400: '#AAAAAA',
     500: '#7C7B7B',
-    600: '#373A3C'
+    600: '#ededed',
+    700: '#555'
 };
 
 export default grey;

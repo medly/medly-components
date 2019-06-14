@@ -9,7 +9,7 @@ const icon: IconTheme = {
         L: '36px',
         XL: '48px'
     },
-    defaultColor: colors.violet[500]
+    defaultColor: colors.grey[700]
 };
 
 export default icon;

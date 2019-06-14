@@ -1,11 +1,11 @@
 import { styled } from '@medly-components/utils';
+import Cell from './Cell';
 import { GroupCell } from './GroupCell';
 import Row from './Row';
 
 export const TableStyled = styled('ol')`
     margin: 0px;
     padding: 0px;
-    border-left: 1px solid gray;
 
     * {
         box-sizing: border-box;
@@ -17,14 +17,19 @@ export const TableStyled = styled('ol')`
             position: sticky;
             top: 0;
             z-index: 2;
+            align-items: end;
 
-            * {
-                background-color: blanchedalmond;
-            }
+            background-color: white;
 
-            ${GroupCell} {
-                border-top: 1px solid gray;
-            }
+            border: none;
+        }
+
+        &:nth-child(even) {
+            background-color: #f7f7f7;
+        }
+
+        &:nth-child(odd) {
+            background-color: white;
         }
     }
 `;
