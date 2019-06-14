@@ -1,2 +1,2 @@
-export * from './sideNav/types';
+export * from './sideNav1/types';
 export * from './sidePanel/types';
