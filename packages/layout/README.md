@@ -4,7 +4,7 @@ This library contains layout components like SideNav, page layout ... with the h
 
 ## Getting Started
 
-You can install the components using `npm i -S @medly-components/layout`.
+You can install the components using `npm i -S https://medly-artifacts.s3.amazonaws.com/medly-components/medly-components-layout-<version>.tgz`.
 
 ## Built With
 

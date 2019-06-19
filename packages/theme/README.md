@@ -4,7 +4,7 @@ This library contains react components default theme and typings for the same fo
 
 ## Getting Started
 
-You can install the components using `npm i -S @medly-components/theme`.
+You can install the components using `npm i -S https://medly-artifacts.s3.amazonaws.com/medly-components/medly-components-theme-<version>.tgz`.
 
 ## Built With
 

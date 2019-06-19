@@ -5,7 +5,7 @@
         "packages/*"
     ],
     "version": "1.0.0",
-    "description": "🚀 Simple themable component library boilerplate using react, styled-compoent & typescript",
+    "description": "🚀 Simple themable component library using react, styled-compoent & typescript",
     "config": {
         "commitizen": {
             "path": "./node_modules/cz-lerna-changelog"
@@ -17,11 +17,15 @@
         "build-storybook": "cross-env BABEL_ENV=storybook build-storybook -c .storybook -o .out",
         "deploy-storybook": "cross-env BABEL_ENV=storybook storybook-to-ghpages",
         "commit": "git-cz",
+        "create-pack": "lerna exec -- npm pack",
         "lint": "run-p -c lint:*",
         "lint:css": "stylelint 'packages/**/src/**/*.tsx'",
         "lint:ts": "tslint -p tsconfig.json",
         "prerelease": "yarn build",
-        "release": "lerna publish",
+        "release": "lerna version",
+        "pres3upload": "run-s build create-pack",
+        "s3upload": "lerna run s3upload",
+        "posts3upload": "rimraf packages/*/medly-components-*",
         "storybook": "start-storybook -p 6006",
         "test": "run-s type-check test:jest",
         "test:jest": "jest --passWithNoTests",
@@ -81,6 +85,7 @@
         "react-docgen-typescript-loader": "^3.1.0",
         "react-dom": "^16.8.6",
         "react-testing-library": "^6.1.2",
+        "rimraf": "^2.6.3",
         "storybook-addon-jsx": "^7.1.2",
         "storybook-addon-react-docgen": "^1.2.2",
         "styled-components": "^4.2.0",

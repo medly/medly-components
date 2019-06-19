@@ -4,7 +4,7 @@ This library contains Icon components like clear, delete ... which are created u
 
 ## Getting Started
 
-You can install the components using `npm i -S @medly-components/icons`.
+You can install the components using `npm i -S https://medly-artifacts.s3.amazonaws.com/medly-components/medly-components-icons-<version>.tgz`.
 
 ## Built With
 

@@ -4,7 +4,7 @@ This library contains core react components like button, input ... with the help
 
 ## Getting Started
 
-You can install the components using `npm i -S @medly-components/core`.
+You can install the components using `npm i -S https://medly-artifacts.s3.amazonaws.com/medly-components/medly-components-core-<version>.tgz`.
 
 ## Built With
 

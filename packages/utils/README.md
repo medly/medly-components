@@ -4,7 +4,7 @@ This library contains all the common code for all the other library.
 
 ## Getting Started
 
-You can install the components using `npm i -S @medly-components/utils`.
+You can install the components using `npm i -S https://medly-artifacts.s3.amazonaws.com/medly-components/medly-components-utils-<version>.tgz`.
 
 ## Built With
 
