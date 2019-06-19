@@ -24,6 +24,10 @@ export const InputStyled = styled('input').attrs(({ theme: { input, text, font }
         color: ${props => props.input.placeHolderColor};
     }
 
+    ::-webkit-file-upload-button {
+        visibility: hidden;
+    }
+
     ${props => props.fullWidth && fullWidth()};
 
     ${({ description, theme }) =>

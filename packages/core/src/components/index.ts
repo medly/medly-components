@@ -11,6 +11,23 @@ import Radio from './Radio';
 import RadioGroup from './RadioGroup';
 import Select from './Select';
 import Stepper from './Stepper';
+import Table from './Table';
 import Text from './Text';
 
-export { Button, Card, CssBaseline, Checkbox, CheckboxGroup, Input, Pagination, Radio, RadioGroup, Modal, Select, Stepper, Text, List };
+export {
+    Button,
+    Card,
+    CssBaseline,
+    Checkbox,
+    CheckboxGroup,
+    Input,
+    Pagination,
+    Radio,
+    RadioGroup,
+    Modal,
+    Select,
+    Stepper,
+    Text,
+    Table,
+    List
+};

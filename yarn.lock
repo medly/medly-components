@@ -2021,6 +2021,22 @@
     npmlog "^4.1.2"
     write-file-atomic "^2.3.0"
 
+"@medly-components/core@https://tango340b-web.s3.amazonaws.com/core.tar":
+  version "0.0.0"
+  resolved "https://tango340b-web.s3.amazonaws.com/core.tar#a162c9a557e49facc1b04de5fb9e4537f6d95249"
+
+"@medly-components/icons@https://tango340b-web.s3.amazonaws.com/icons.tar":
+  version "0.0.0"
+  resolved "https://tango340b-web.s3.amazonaws.com/icons.tar#41016e4ffe44c73fb0370e778249667ad4279f5e"
+
+"@medly-components/theme@https://tango340b-web.s3.amazonaws.com/theme.tar":
+  version "0.0.0"
+  resolved "https://tango340b-web.s3.amazonaws.com/theme.tar#57cabae4a74b4477741ad42a6a75d677f0430d86"
+
+"@medly-components/utils@https://tango340b-web.s3.amazonaws.com/utils.tar":
+  version "0.0.0"
+  resolved "https://tango340b-web.s3.amazonaws.com/utils.tar#df76f8008abe01566a9a18d4618492a494b6b77d"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
