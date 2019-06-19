@@ -12,6 +12,7 @@
         }
     },
     "scripts": {
+        "postinstall": "lerna bootstrap",
         "build": "lerna run build",
         "build-storybook": "cross-env BABEL_ENV=storybook build-storybook -c .storybook -o .out",
         "deploy-storybook": "cross-env BABEL_ENV=storybook storybook-to-ghpages",

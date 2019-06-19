@@ -3,6 +3,7 @@ import Card from './Card';
 import Checkbox from './Checkbox';
 import CheckboxGroup from './CheckboxGroup';
 import CssBaseline from './CssBaseline';
+import FieldWithLabel from './FieldWithLabel';
 import Input from './Input';
 import List from './List';
 import Modal from './Modal';
@@ -18,6 +19,7 @@ export {
     Button,
     Card,
     CssBaseline,
+    FieldWithLabel,
     Checkbox,
     CheckboxGroup,
     Input,
