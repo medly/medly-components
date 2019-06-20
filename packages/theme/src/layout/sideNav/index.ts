@@ -6,8 +6,9 @@ const sideNav: SideNavTheme = {
     openSize: '250px',
     iconSize: 'M',
     textSize: 'M3',
-    bgColor: colors.grey[200],
-    textColor: colors.violet[500],
+    bgColor: colors.orange[400],
+    textColor: colors.white,
+    iconColor: colors.white,
     activeColor: colors.grey[500]
 };
 

@@ -19,7 +19,7 @@ export interface ColorPallet {
     blue: string;
     green: Color;
     grey: GreyScale;
-    orange: string;
+    orange: Color;
     pink: string;
     red: string;
     violet: Color;

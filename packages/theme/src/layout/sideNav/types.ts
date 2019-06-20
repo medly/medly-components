@@ -7,5 +7,6 @@ export interface SideNavTheme {
     textSize: FontSizes;
     bgColor: string;
     textColor: string;
+    iconColor: string;
     activeColor: string;
 }

@@ -5,7 +5,7 @@ exports[`Checkbox component should render correctly with all the default props 1
   font-size: 16px;
 }
 
-.c6.c6.c6 * {
+.c6 * {
   fill: #555;
 }
 
@@ -130,7 +130,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   font-size: 16px;
 }
 
-.c7.c7.c7 * {
+.c7 * {
   fill: #555;
 }
 

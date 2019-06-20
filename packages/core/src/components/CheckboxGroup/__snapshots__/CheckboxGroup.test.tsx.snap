@@ -5,7 +5,7 @@ exports[`CheckboxGroup component should render correctly with all the default pr
   font-size: 16px;
 }
 
-.c8.c8.c8 * {
+.c8 * {
   fill: #555;
 }
 
@@ -198,7 +198,7 @@ exports[`CheckboxGroup component should render correctly with all the props give
   font-size: 16px;
 }
 
-.c9.c9.c9 * {
+.c9 * {
   fill: #555;
 }
 
