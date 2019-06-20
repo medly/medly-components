@@ -10,7 +10,7 @@ export const NavItemStyled = styled('li')<NavItem>`
     height: ${({ theme }) => theme.sideNav.closeSize};
     display: inline-flex;
     align-items: center;
-    background-color: ${({ isActive, theme }) => (isActive ? theme.sideNav.activeColor : 'transparent')};
+    background-color: ${({ active, theme }) => (active ? theme.sideNav.activeColor : 'transparent')};
     cursor: pointer;
 
     ${SvgIcon} {

@@ -17,7 +17,7 @@ describe('SideNav component', () => {
                     </SideNav.NavIcon>
                     <SideNav.NavText>Home</SideNav.NavText>
                 </SideNav.NavItem>
-                <SideNav.NavItem isActive>
+                <SideNav.NavItem active>
                     <SideNav.NavIcon>
                         <SearchIcon />
                     </SideNav.NavIcon>
@@ -37,7 +37,7 @@ describe('SideNav component', () => {
                     </SideNav.NavIcon>
                     <SideNav.NavText>Home</SideNav.NavText>
                 </SideNav.NavItem>
-                <SideNav.NavItem isActive>
+                <SideNav.NavItem active>
                     <SideNav.NavIcon>
                         <SearchIcon />
                     </SideNav.NavIcon>
