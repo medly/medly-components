@@ -65,6 +65,10 @@ exports[`Input component should render correctly when fullWidth & required props
   color: #999999;
 }
 
+.c2::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
 .c2 ~ .c3 {
   color: #818A91;
 }
@@ -141,6 +145,10 @@ exports[`Input component should render correctly when label and description are 
 
 .c1::placeholder {
   color: #999999;
+}
+
+.c1::-webkit-file-upload-button {
+  visibility: hidden;
 }
 
 <div>
@@ -224,6 +232,10 @@ exports[`Input component should render correctly with all the props given 1`] = 
 
 .c2::placeholder {
   color: #999999;
+}
+
+.c2::-webkit-file-upload-button {
+  visibility: hidden;
 }
 
 .c2 ~ .c3 {

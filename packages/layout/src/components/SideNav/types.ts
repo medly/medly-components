@@ -16,5 +16,5 @@ export interface NavListProps extends HTMLProps<HTMLDivElement>, WithThemeProp {
 export interface NavItem extends HTMLProps<HTMLDivElement>, WithThemeProp {
     as?: any;
     to?: string;
-    active?: boolean;
+    isActive?: boolean;
 }

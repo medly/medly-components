@@ -14,7 +14,7 @@ storiesOf('Layout', module).add(
                 </SideNav.NavIcon>
                 <SideNav.NavText>Home</SideNav.NavText>
             </SideNav.NavItem>
-            <SideNav.NavItem active>
+            <SideNav.NavItem isActive>
                 <SideNav.NavIcon>
                     <SearchIcon />
                 </SideNav.NavIcon>
