@@ -1,3 +1,5 @@
+import { Props as SvgIconProps } from './SvgIcon/types';
+
 export { default as AddIcon } from './icons/AddIcon';
 export { default as BurgerIcon } from './icons/BurgerIcon';
 export { default as CheckIcon } from './icons/CheckIcon';
@@ -12,3 +14,4 @@ export { default as ExpandMoreIcon } from './icons/ExpandMoreIcon';
 export { default as UpArrowIcon } from './icons/UpArrowIcon';
 export { default as SearchIcon } from './icons/SearchIcon';
 export { default as SvgIcon } from './SvgIcon';
+export { SvgIconProps };
