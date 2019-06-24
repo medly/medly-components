@@ -1,5 +1,5 @@
 import { css, fullHeight, fullWidth, styled } from '@medly-components/utils';
-import { Placement, PopOverProps, PopOverWrapperProps } from './types';
+import { Placement, PopoverProps, PopoverWrapperProps } from './types';
 
 const getPosition = (position: Placement) => {
     switch (position) {
@@ -66,7 +66,7 @@ const getPosition = (position: Placement) => {
     }
 };
 
-export const PopoverStyled = styled('div')<PopOverProps>`
+export const PopoverStyled = styled('div')<PopoverProps>`
     position: absolute;
     display: none;
     transition: all 2ms ease-in-out;
@@ -75,11 +75,6 @@ export const PopoverStyled = styled('div')<PopOverProps>`
     ${props => props.fullWidth && fullWidth()};
     ${props => props.fullHeight && fullHeight()};
 `;
-
-PopoverStyled.defaultProps = {
-    fullWidth: false,
-    fullHeight: false
-};
 
 const getFlexDirection = (position: Placement) => {
     switch (position) {
@@ -110,7 +105,7 @@ const getFlexDirection = (position: Placement) => {
     }
 };
 
-export const PopoverWrapperStyled = styled('div')<PopOverWrapperProps>`
+export const PopoverWrapperStyled = styled('div')<PopoverWrapperProps>`
     display: inline-flex;
     position: relative;
 

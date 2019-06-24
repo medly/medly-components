@@ -1,28 +1,40 @@
-import { WithStyle } from '@medly-components/utils';
-import React, { useState } from 'react';
-import { PopoverStyled as Popover, PopoverWrapperStyled } from './Popover.styled';
-import { PopOverWrapperProps } from './types';
+import { useOuterClickNotifier, WithStyle } from '@medly-components/utils';
+import React, { useRef, useState } from 'react';
+import { PopoverStyled, PopoverWrapperStyled } from './Popover.styled';
+import { PopoverProps, PopoverWrapperProps } from './types';
 
-export const PopoverWrapper: React.SFC<PopOverWrapperProps> & WithStyle = props => {
-    const [isOpen, setPopoverOpenState] = useState(false);
+export const PopoverWrapper: React.SFC<PopoverWrapperProps> & WithStyle = props => {
+    const wrapperRef = useRef(null);
+    const [popoverState, setPopoverState] = useState(false);
 
-    const handleOnClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const changePopoverState = (state: boolean) => {
         if (props.interactionType === 'click') {
-            const length = e.currentTarget.children.length - 1;
-            const popover = e.currentTarget.children[length] as HTMLElement;
-            popover.style.display = isOpen ? 'none' : 'block';
-            setPopoverOpenState(!isOpen);
+            const length = wrapperRef.current.children.length - 1;
+            const popover = wrapperRef.current.children[length] as HTMLElement;
+            popover.style.display = state ? 'block' : 'none';
+            setPopoverState(state);
         }
     };
 
-    return <PopoverWrapperStyled {...props} onClick={handleOnClick} data-testid="popover-wrapper" />;
+    const handleOnClick = () => {
+        changePopoverState(!popoverState);
+    };
+
+    useOuterClickNotifier(() => changePopoverState(false), wrapperRef);
+
+    return <PopoverWrapperStyled {...props} ref={wrapperRef} onClick={handleOnClick} data-testid="popover-wrapper" />;
 };
 
 PopoverWrapper.defaultProps = {
     interactionType: 'hover',
     placement: 'bottom'
 };
-
 PopoverWrapper.Style = PopoverWrapperStyled;
 
-export { Popover };
+export const Popover: React.SFC<PopoverProps> & WithStyle = props => <PopoverStyled {...props} />;
+
+Popover.Style = PopoverStyled;
+Popover.defaultProps = {
+    fullWidth: false,
+    fullHeight: false
+};

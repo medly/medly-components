@@ -16,12 +16,12 @@ export type Placement =
 
 export type InteractionType = 'click' | 'hover';
 
-export interface PopOverWrapperProps extends HTMLProps<HTMLDivElement> {
+export interface PopoverWrapperProps extends HTMLProps<HTMLDivElement> {
     interactionType?: InteractionType;
     placement?: Placement;
 }
 
-export interface PopOverProps extends WithThemeProp {
+export interface PopoverProps extends WithThemeProp {
     fullWidth?: boolean;
     fullHeight?: boolean;
 }

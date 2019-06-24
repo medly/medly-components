@@ -111,17 +111,24 @@ exports[`Popover component should render properly when interction type is click 
 }
 
 <div>
-  <div
-    class="c0"
-    data-testid="popover-wrapper"
-  >
-    <div>
-      Dummy Div
+  <div>
+    <div
+      data-testid="sibling"
+    >
+      Sibling div
     </div>
     <div
-      class="c1 c2"
+      class="c0"
+      data-testid="popover-wrapper"
     >
-      Dummy popover
+      <div>
+        Dummy Div
+      </div>
+      <div
+        class="c1 c2"
+      >
+        Dummy popover
+      </div>
     </div>
   </div>
 </div>
@@ -129,18 +136,25 @@ exports[`Popover component should render properly when interction type is click 
 
 exports[`Popover component should render properly when interction type is click 2`] = `
 <div>
-  <div
-    class="Popoverstyled__PopoverWrapperStyled-sc-1ep6kh8-1 nwLMf"
-    data-testid="popover-wrapper"
-  >
-    <div>
-      Dummy Div
+  <div>
+    <div
+      data-testid="sibling"
+    >
+      Sibling div
     </div>
     <div
-      class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 ccrfgF"
-      style="display: block;"
+      class="Popoverstyled__PopoverWrapperStyled-sc-1ep6kh8-1 nwLMf"
+      data-testid="popover-wrapper"
     >
-      Dummy popover
+      <div>
+        Dummy Div
+      </div>
+      <div
+        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 ccrfgF"
+        style="display: block;"
+      >
+        Dummy popover
+      </div>
     </div>
   </div>
 </div>
@@ -148,18 +162,51 @@ exports[`Popover component should render properly when interction type is click 
 
 exports[`Popover component should render properly when interction type is click 3`] = `
 <div>
-  <div
-    class="Popoverstyled__PopoverWrapperStyled-sc-1ep6kh8-1 nwLMf"
-    data-testid="popover-wrapper"
-  >
-    <div>
-      Dummy Div
+  <div>
+    <div
+      data-testid="sibling"
+    >
+      Sibling div
     </div>
     <div
-      class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 ccrfgF"
-      style="display: none;"
+      class="Popoverstyled__PopoverWrapperStyled-sc-1ep6kh8-1 nwLMf"
+      data-testid="popover-wrapper"
     >
-      Dummy popover
+      <div>
+        Dummy Div
+      </div>
+      <div
+        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 ccrfgF"
+        style="display: none;"
+      >
+        Dummy popover
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Popover component should render properly when interction type is click 4`] = `
+<div>
+  <div>
+    <div
+      data-testid="sibling"
+    >
+      Sibling div
+    </div>
+    <div
+      class="Popoverstyled__PopoverWrapperStyled-sc-1ep6kh8-1 nwLMf"
+      data-testid="popover-wrapper"
+    >
+      <div>
+        Dummy Div
+      </div>
+      <div
+        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 ccrfgF"
+        style="display: none;"
+      >
+        Dummy popover
+      </div>
     </div>
   </div>
 </div>

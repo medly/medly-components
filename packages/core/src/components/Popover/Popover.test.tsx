@@ -34,18 +34,29 @@ describe('Popover component', () => {
 
     it('should render properly when interction type is click', () => {
         const { container, getByTestId } = render(
-            <PopoverWrapper interactionType="click" placement="left">
-                <div>Dummy Div</div>
-                <Popover fullWidth fullHeight>
-                    Dummy popover
-                </Popover>
-            </PopoverWrapper>
+            <div>
+                <div data-testid="sibling">Sibling div</div>
+                <PopoverWrapper interactionType="click" placement="left">
+                    <div>Dummy Div</div>
+                    <Popover fullWidth fullHeight>
+                        Dummy popover
+                    </Popover>
+                </PopoverWrapper>
+            </div>
         );
         expect(container).toMatchSnapshot();
-        const wrapper = getByTestId('popover-wrapper');
+        const wrapper = getByTestId('popover-wrapper'),
+            sibling = getByTestId('sibling');
+        // Open Popover
         fireEvent.click(wrapper);
         expect(container).toMatchSnapshot();
+        // Close Popover
         fireEvent.click(wrapper);
+        expect(container).toMatchSnapshot();
+
+        // Open Popover and then close it by clicking sibling
+        fireEvent.click(wrapper);
+        fireEvent.click(sibling);
         expect(container).toMatchSnapshot();
     });
 });

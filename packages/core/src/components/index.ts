@@ -8,6 +8,7 @@ import Input from './Input';
 import List from './List';
 import Modal from './Modal';
 import Pagination from './Pagination';
+import { Popover, PopoverWrapper } from './Popover';
 import Radio from './Radio';
 import RadioGroup from './RadioGroup';
 import Select from './Select';
@@ -24,6 +25,8 @@ export {
     CheckboxGroup,
     Input,
     Pagination,
+    Popover,
+    PopoverWrapper,
     Radio,
     RadioGroup,
     Modal,
