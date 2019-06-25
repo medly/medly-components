@@ -119,8 +119,8 @@ exports[`Card component should render properly when flow direction is horizontal
 }
 
 .c7:hover.c0:hover * {
-  color: white;
-  background-color: rgb(254,141,107);
+  color: #ffffff;
+  background-color: #FE8D6B;
 }
 
 .c1 {
@@ -155,7 +155,7 @@ exports[`Card component should render properly when flow direction is horizontal
 }
 
 .c1 > div + div {
-  border-left: 1px solid grey;
+  border-left: 1px solid #7C7B7B;
 }
 
 .c2 {
@@ -190,7 +190,7 @@ exports[`Card component should render properly when flow direction is horizontal
 }
 
 .c2 > div + div {
-  border-left: 1px solid grey;
+  border-left: 1px solid #7C7B7B;
 }
 
 .c4 {
@@ -225,7 +225,7 @@ exports[`Card component should render properly when flow direction is horizontal
 }
 
 .c4 > div + div {
-  border-left: 1px solid grey;
+  border-left: 1px solid #7C7B7B;
 }
 
 .c5 {
@@ -260,7 +260,7 @@ exports[`Card component should render properly when flow direction is horizontal
 }
 
 .c5 > div + div {
-  border-left: 1px solid grey;
+  border-left: 1px solid #7C7B7B;
 }
 
 .c6 {
@@ -295,7 +295,7 @@ exports[`Card component should render properly when flow direction is horizontal
 }
 
 .c6 > div + div {
-  border-left: 1px solid grey;
+  border-left: 1px solid #7C7B7B;
 }
 
 <div>
@@ -359,8 +359,8 @@ exports[`Card component should render properly when fullWidth and fullHeight is 
 }
 
 .c3:hover.c0:hover * {
-  color: white;
-  background-color: rgb(254,141,107);
+  color: #ffffff;
+  background-color: #FE8D6B;
 }
 
 .c1 {
@@ -449,13 +449,13 @@ exports[`Card component should render properly when it is clickable  1`] = `
 }
 
 .c1:hover {
-  border-color: rgb(254,141,107);
-  background-color: rgb(254,141,107);
+  border-color: #FE8D6B;
+  background-color: #FE8D6B;
 }
 
 .c1:hover.c0:hover * {
-  color: white;
-  background-color: rgb(254,141,107);
+  color: #ffffff;
+  background-color: #FE8D6B;
 }
 
 .c1:active {
@@ -523,8 +523,8 @@ exports[`Card component should render properly when separator is set true flow d
 }
 
 .c7:hover.c0:hover * {
-  color: white;
-  background-color: rgb(254,141,107);
+  color: #ffffff;
+  background-color: #FE8D6B;
 }
 
 .c1 {
@@ -559,7 +559,7 @@ exports[`Card component should render properly when separator is set true flow d
 }
 
 .c1 > div + div {
-  border-top: 1px solid grey;
+  border-top: 1px solid #7C7B7B;
 }
 
 .c4 {
@@ -762,13 +762,13 @@ exports[`Card component should render solid variant properly  1`] = `
   border-radius: 4px;
   border: 1px solid #F9F9F9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
-  border-color: rgb(254,141,107);
-  background-color: rgb(254,141,107);
+  border-color: #FE8D6B;
+  background-color: #FE8D6B;
 }
 
 .c0.c0 * {
-  color: white;
-  background-color: rgb(254,141,107);
+  color: #ffffff;
+  background-color: #FE8D6B;
 }
 
 <div>

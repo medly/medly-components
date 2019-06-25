@@ -14,29 +14,29 @@ const horizontalFlow = (alignItems: ItemsPosition) => css`
     justify-content: ${alignItems === 'left' ? 'flex-start' : alignItems === 'right' ? 'flex-end' : 'center'};
 `;
 
-const borderTop = () => css`
-    border-top: 1px solid grey;
+const borderTop = (separatorColor: string) => css`
+    border-top: 1px solid ${separatorColor};
 `;
 
-const borderLeft = () => css`
-    border-left: 1px solid grey;
+const borderLeft = (separatorColor: string) => css`
+    border-left: 1px solid ${separatorColor};
 `;
 
-const applyBorder = ({ separator, flowDirection }: Props) =>
+const applyBorder = ({ separator, flowDirection, separatorColor }: Partial<Props & CardTheme>) =>
     separator &&
     css`
         > div + div {
-            ${flowDirection === 'vertical' ? borderTop() : borderLeft()}
+            ${flowDirection === 'vertical' ? borderTop(separatorColor) : borderLeft(separatorColor)}
         }
     `;
 
-const solid = () => css`
-    border-color: rgb(254, 141, 107);
-    background-color: rgb(254, 141, 107);
+const solid = ({ solidBgColor, solidTextColor }: Partial<CardTheme>) => css`
+    border-color: ${solidBgColor};
+    background-color: ${solidBgColor};
     && {
         * {
-            color: white;
-            background-color: rgb(254, 141, 107);
+            color: ${solidTextColor};
+            background-color: ${solidBgColor};
         }
     }
 `;
@@ -60,11 +60,11 @@ const flat = () => css`
     }
 `;
 
-const clickable = () => css`
+const clickable = (props: Partial<CardTheme>) => css`
     cursor: pointer;
 
     :hover {
-        ${solid()}
+        ${solid(props)}
     }
 
     :active {
@@ -85,14 +85,14 @@ export const CardStyled = styled('div').attrs(({ theme: { card } }) => ({ ...car
 
     ${outlined};
     ${({ variant }) => variant === 'flat' && flat()};
-    ${({ variant }) => variant === 'solid' && solid()};
+    ${props => props.variant === 'solid' && solid(props)};
 
     ${props => props.fullWidth && fullWidth()};
     ${props => props.fullHeight && fullHeight()};
 
     ${props => applyBorder(props)}
 
-    ${props => props.clickable && clickable()}
+    ${props => props.clickable && clickable(props)}
 `;
 
 CardStyled.defaultProps = {
