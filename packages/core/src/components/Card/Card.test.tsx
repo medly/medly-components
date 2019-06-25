@@ -14,10 +14,79 @@ describe('Card component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('should render correctly with all the props given', () => {
+    it('should render solid variant properly ', () => {
         const { container } = TestUtils.render(
-            <Card width="100px" height="100px" center>
+            <Card variant="solid">
                 <Text>Dummy Text</Text>
+            </Card>
+        );
+        expect(container).toMatchSnapshot();
+    });
+    it('should render flat variant properly ', () => {
+        const { container } = TestUtils.render(
+            <Card variant="flat">
+                <Text>Dummy Text</Text>
+            </Card>
+        );
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly when it is clickable ', () => {
+        const { container } = TestUtils.render(
+            <Card clickable>
+                <Text>Dummy Text</Text>
+            </Card>
+        );
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly when fullWidth and fullHeight is set true', () => {
+        const { container } = TestUtils.render(
+            <Card fullWidth fullHeight>
+                <Text>Dummy Text</Text>
+            </Card>
+        );
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly when flow direction is horizontal and separator is set true', () => {
+        const { container } = TestUtils.render(
+            <Card separator flowDirection="horizontal">
+                <Card separator flowDirection="horizontal" alignItems="left">
+                    <Text>Dummy Text</Text>
+                </Card>
+                <Card separator flowDirection="horizontal" alignItems="right">
+                    <Text>Dummy Text</Text>
+                </Card>
+                <Card separator flowDirection="horizontal" alignItems="top">
+                    <Text>Dummy Text</Text>
+                </Card>
+                <Card separator flowDirection="horizontal" alignItems="bottom">
+                    <Text>Dummy Text</Text>
+                </Card>
+                <Card separator flowDirection="horizontal">
+                    <Text>Dummy Text</Text>
+                </Card>
+            </Card>
+        );
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly when separator is set true flow direction is vertical', () => {
+        const { container } = TestUtils.render(
+            <Card separator flowDirection="vertical" alignItems="left">
+                <Card variant="flat">
+                    <Text>Marks</Text>
+                </Card>
+                <Card variant="flat" flex={6} alignItems="right">
+                    <Text>Dummy Text</Text>
+                </Card>
+                <Card variant="flat" flex={6} alignItems="top">
+                    <Text>Dummy Text</Text>
+                </Card>
+                <Card variant="flat" flex={6} alignItems="bottom">
+                    <Text>Dummy Text</Text>
+                </Card>
             </Card>
         );
         expect(container).toMatchSnapshot();

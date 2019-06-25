@@ -1,25 +1,108 @@
-import { defaultTheme } from '@medly-components/theme';
-import { centerAligned, css, styled } from '@medly-components/utils';
-import { Props } from './types';
+import { CardTheme } from '@medly-components/theme';
+import { css, fullHeight, fullWidth, styled } from '@medly-components/utils';
+import { ItemsPosition, Props } from './types';
+
+const verticalFlow = (alignItems: ItemsPosition) => css`
+    flex-direction: column;
+    justify-content: ${alignItems === 'top' ? 'flex-start' : alignItems === 'bottom' ? 'flex-end' : 'center'};
+    align-items: ${alignItems === 'left' ? 'flex-start' : alignItems === 'right' ? 'flex-end' : 'center'};
+`;
+
+const horizontalFlow = (alignItems: ItemsPosition) => css`
+    flex-direction: row;
+    align-items: ${alignItems === 'top' ? 'flex-start' : alignItems === 'bottom' ? 'flex-end' : 'center'};
+    justify-content: ${alignItems === 'left' ? 'flex-start' : alignItems === 'right' ? 'flex-end' : 'center'};
+`;
+
+const borderTop = () => css`
+    border-top: 1px solid grey;
+`;
+
+const borderLeft = () => css`
+    border-left: 1px solid grey;
+`;
+
+const applyBorder = ({ separator, flowDirection }: Props) =>
+    separator &&
+    css`
+        > div + div {
+            ${flowDirection === 'vertical' ? borderTop() : borderLeft()}
+        }
+    `;
+
+const solid = () => css`
+    border-color: rgb(254, 141, 107);
+    background-color: rgb(254, 141, 107);
+    && {
+        * {
+            color: white;
+            background-color: rgb(254, 141, 107);
+        }
+    }
+`;
+
+const outlined = ({ borderColor, shadowColor }: Partial<CardTheme>) => css`
+    border-radius: 4px;
+    border: 1px solid ${borderColor};
+    box-shadow: 0 2px 4px 0 ${shadowColor};
+`;
+
+const flat = () => css`
+    border-radius: 0px;
+    margin: 0px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    && {
+        * {
+            background-color: transparent;
+        }
+    }
+`;
+
+const clickable = () => css`
+    cursor: pointer;
+
+    :hover {
+        ${solid()}
+    }
+
+    :active {
+        box-shadow: none;
+    }
+`;
 
 export const CardStyled = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<Props>`
     display: inline-flex;
-    width: ${({ width }) => (width ? `${width}` : '250px')};
-    height: ${({ height }) => (height ? `${height}` : '250px')};
+    align-self: stretch;
+    margin: 5px;
+    overflow: auto;
+    flex: ${({ flex }) => flex};
     background-color: ${({ bgColor }) => bgColor};
-    border-radius: 4px;
-    box-shadow: 0 2px 4px 0 ${({ shadowColor }) => shadowColor};
-    padding: 10px;
-    border: 1px solid ${({ borderColor }) => borderColor};
+    padding: ${({ withPadding }) => withPadding && '10px'};
 
-    ${({ center }) =>
-        center &&
-        css`
-            ${centerAligned()}
-            flex-direction: column;
-        `}
+    ${({ alignItems, flowDirection }) => (flowDirection === 'vertical' ? verticalFlow(alignItems) : horizontalFlow(alignItems))}
+
+    ${outlined};
+    ${({ variant }) => variant === 'flat' && flat()};
+    ${({ variant }) => variant === 'solid' && solid()};
+
+    ${props => props.fullWidth && fullWidth()};
+    ${props => props.fullHeight && fullHeight()};
+
+    ${props => applyBorder(props)}
+
+    ${props => props.clickable && clickable()}
 `;
 
 CardStyled.defaultProps = {
-    theme: defaultTheme
+    variant: 'outlined',
+    flowDirection: 'vertical',
+    separator: false,
+    flex: 1,
+    withPadding: true,
+    alignItems: 'center',
+    clickable: false,
+    fullWidth: false,
+    fullHeight: false
 };

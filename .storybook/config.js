@@ -16,7 +16,7 @@ addDecorator(
 );
 addDecorator(story => (
     <ThemeProvider theme={defaultTheme}>
-        <div style={{ padding: '10px', width: '100%', height: '100%' }}>
+        <div style={{ padding: '10px', width: '95%', height: '100%', margin: 'auto' }}>
             <CssBaseline />
             {story()}
         </div>
