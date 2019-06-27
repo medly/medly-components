@@ -6,7 +6,7 @@ exports[`Popover component should not render popover when interction type is hov
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
-  border: 1px solid #7C7B7B;
+  border-radius: 4px;
 }
 
 .c3 .c1 {
@@ -65,7 +65,7 @@ exports[`Popover component should render properly when interction type is click 
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
-  border: 1px solid #7C7B7B;
+  border-radius: 4px;
   width: 100%;
   height: 100%;
 }
@@ -150,7 +150,7 @@ exports[`Popover component should render properly when interction type is click 
         Dummy Div
       </div>
       <div
-        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 ccrfgF"
+        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 kgDuhT"
         style="display: block;"
       >
         Dummy popover
@@ -176,7 +176,7 @@ exports[`Popover component should render properly when interction type is click 
         Dummy Div
       </div>
       <div
-        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 ccrfgF"
+        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 kgDuhT"
         style="display: none;"
       >
         Dummy popover
@@ -202,7 +202,7 @@ exports[`Popover component should render properly when interction type is click 
         Dummy Div
       </div>
       <div
-        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 ccrfgF"
+        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 kgDuhT"
         style="display: none;"
       >
         Dummy popover
@@ -218,7 +218,7 @@ exports[`Popover component should render properly when interction type is hover 
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
-  border: 1px solid #7C7B7B;
+  border-radius: 4px;
 }
 
 .c0 {
@@ -270,7 +270,7 @@ exports[`Popover component should render properly when interction type is hover 
       Dummy Div
     </div>
     <div
-      class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 jGCOwp"
+      class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 hAZlVo"
     >
       Dummy popover
     </div>

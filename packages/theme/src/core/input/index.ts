@@ -2,7 +2,7 @@ import colors from '../colors';
 import { InputTheme } from './types';
 
 const input: InputTheme = {
-    color: colors.violet[500],
+    color: colors.grey[700],
     bgColor: colors.white,
     borderColor: colors.grey[200],
     desciptionColor: colors.violet[400],

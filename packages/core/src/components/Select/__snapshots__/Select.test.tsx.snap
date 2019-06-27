@@ -1,0 +1,1827 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select component should close options when clicked outside 1`] = `
+.c1 {
+  margin: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 {
+  margin: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c14 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c6 {
+  padding: 8px;
+  margin: 0px 0px 8px 0px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+
+.c6:focus {
+  border-color: #012040;
+  outline: 0;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.c6::-moz-placeholder {
+  color: #999999;
+}
+
+.c6:-ms-input-placeholder {
+  color: #999999;
+}
+
+.c6::placeholder {
+  color: #999999;
+}
+
+.c6::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.c10 {
+  position: absolute;
+  display: none;
+  -webkit-transition: all 2ms ease-in-out;
+  transition: all 2ms ease-in-out;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c2 .c9 {
+  top: calc(100% + 5px);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c12 {
+  cursor: pointer;
+  padding: 5px;
+  color: inherit;
+  background-color: #ffffff;
+}
+
+.c12:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.c12:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.c11 {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid #FE8D6B;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.c8 {
+  font-size: 12px;
+}
+
+.c8 * {
+  fill: #555;
+}
+
+.c3 {
+  border: 1px solid #FE8D6B;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 35px;
+  min-width: 150px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 .c0 {
+  margin: 0px;
+  cursor: pointer;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 .c0 .c5 {
+  margin: 0px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.c15 ~ .c13 {
+  color: #818A91;
+}
+
+.c15 .c0 {
+  margin: 0px;
+  cursor: pointer;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c15 .c0 .c5 {
+  margin: 0px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+<div>
+  <p>
+    Outer
+  </p>
+  <div
+    class="c0 c1"
+  >
+    
+    <div
+      class="c2"
+      data-testid="popover-wrapper"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c0 c4"
+        >
+          
+          <input
+            class="c5 c6"
+            data-testid="select-input"
+            label=""
+            placeholder="Please Select . . ."
+            value=""
+          />
+          
+        </div>
+        <svg
+          class="c7 c8"
+          height="1em"
+          theme="[object Object]"
+          viewBox="0 0 12 8"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
+            fill="#012040"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="c9 c10"
+        style="display: none;"
+      >
+        <ul
+          class="c11"
+        >
+          <li
+            class="c12"
+          >
+            <span
+              class="c13 c14"
+            >
+              All
+            </span>
+          </li>
+          <li
+            class="c12"
+          >
+            <span
+              class="c13 c14"
+            >
+              Dummy1
+            </span>
+          </li>
+          <li
+            class="c12"
+          >
+            <span
+              class="c13 c14"
+            >
+              Dummy2
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`Select component should render all the options when input value is not matched to any option 1`] = `
+.c1 {
+  margin: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 {
+  margin: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c14 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c6 {
+  padding: 8px;
+  margin: 0px 0px 8px 0px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+
+.c6:focus {
+  border-color: #012040;
+  outline: 0;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.c6::-moz-placeholder {
+  color: #999999;
+}
+
+.c6:-ms-input-placeholder {
+  color: #999999;
+}
+
+.c6::placeholder {
+  color: #999999;
+}
+
+.c6::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.c10 {
+  position: absolute;
+  display: none;
+  -webkit-transition: all 2ms ease-in-out;
+  transition: all 2ms ease-in-out;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c2 .c9 {
+  top: calc(100% + 5px);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c12 {
+  cursor: pointer;
+  padding: 5px;
+  color: inherit;
+  background-color: #ffffff;
+}
+
+.c12:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.c12:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.c11 {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid #FE8D6B;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.c8 {
+  font-size: 12px;
+}
+
+.c8 * {
+  fill: #555;
+}
+
+.c3 {
+  border: 1px solid #FE8D6B;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 35px;
+  min-width: 150px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 .c0 {
+  margin: 0px;
+  cursor: pointer;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 .c0 .c5 {
+  margin: 0px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.c15 ~ .c13 {
+  color: #818A91;
+}
+
+.c15 .c0 {
+  margin: 0px;
+  cursor: pointer;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c15 .c0 .c5 {
+  margin: 0px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+<div>
+  <div
+    class="c0 c1"
+  >
+    
+    <div
+      class="c2"
+      data-testid="popover-wrapper"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c0 c4"
+        >
+          
+          <input
+            class="c5 c6"
+            data-testid="select-input"
+            label=""
+            placeholder="Please Select . . ."
+            value="Hello"
+          />
+          
+        </div>
+        <svg
+          class="c7 c8"
+          height="1em"
+          theme="[object Object]"
+          viewBox="0 0 12 8"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
+            fill="#012040"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="c9 c10"
+        style="display: block;"
+      >
+        <ul
+          class="c11"
+        >
+          <li
+            class="c12"
+          >
+            <span
+              class="c13 c14"
+            >
+              All
+            </span>
+          </li>
+          <li
+            class="c12"
+          >
+            <span
+              class="c13 c14"
+            >
+              Dummy1
+            </span>
+          </li>
+          <li
+            class="c12"
+          >
+            <span
+              class="c13 c14"
+            >
+              Dummy2
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`Select component should render correctly with all the props given 1`] = `
+.c5 {
+  margin: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  margin: 8px 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c2 {
+  margin: 0px 8px 0px 0px;
+  color: #555;
+}
+
+.c2::after {
+  color: red;
+  content: ' *';
+}
+
+.c15 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c7 {
+  padding: 8px;
+  margin: 0px 0px 8px 0px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+
+.c7:focus {
+  border-color: #012040;
+  outline: 0;
+}
+
+.c7::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.c7::-moz-placeholder {
+  color: #999999;
+}
+
+.c7:-ms-input-placeholder {
+  color: #999999;
+}
+
+.c7::placeholder {
+  color: #999999;
+}
+
+.c7::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.c11 {
+  position: absolute;
+  display: none;
+  -webkit-transition: all 2ms ease-in-out;
+  transition: all 2ms ease-in-out;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c3 .c10 {
+  top: calc(100% + 5px);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c16 {
+  cursor: pointer;
+  padding: 5px;
+  color: inherit;
+  background-color: #ffffff;
+}
+
+.c16:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.c16:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.c13 {
+  cursor: pointer;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #FE8D6B;
+}
+
+.c13:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.c13:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.c12 {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid #FE8D6B;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.c9 {
+  font-size: 12px;
+}
+
+.c9 * {
+  fill: #555;
+}
+
+.c17 .c0 {
+  margin: 0px;
+  cursor: pointer;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c17 .c0 .c6 {
+  margin: 0px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.c4 {
+  border: 1px solid #FE8D6B;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 35px;
+  min-width: 150px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c4 ~ .c14 {
+  color: #818A91;
+}
+
+.c4 .c0 {
+  margin: 0px;
+  cursor: pointer;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c4 .c0 .c6 {
+  margin: 0px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.c8 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+<div>
+  <div
+    class="c0 c1"
+  >
+    <label
+      class="c2"
+      required=""
+    >
+      Pharmacy
+    </label>
+    <div
+      class="c3"
+      data-testid="popover-wrapper"
+    >
+      <div
+        class="c4"
+      >
+        <div
+          class="c0 c5"
+        >
+          
+          <input
+            class="c6 c7"
+            data-testid="select-input"
+            label=""
+            placeholder="Please Select"
+            value="All"
+          />
+          
+        </div>
+        <svg
+          class="c8 c9"
+          height="1em"
+          theme="[object Object]"
+          viewBox="0 0 12 8"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
+            fill="#012040"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="c10 c11"
+      >
+        <ul
+          class="c12"
+        >
+          <li
+            class="c13"
+          >
+            <span
+              class="c14 c15"
+            >
+              All
+            </span>
+          </li>
+          <li
+            class="c16"
+          >
+            <span
+              class="c14 c15"
+            >
+              Dummy1
+            </span>
+          </li>
+          <li
+            class="c16"
+          >
+            <span
+              class="c14 c15"
+            >
+              Dummy2
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <span
+      class="c14 c15"
+    >
+      We will show reports based on Pharmacy
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Select component should render correctly with default props 1`] = `
+.c1 {
+  margin: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 {
+  margin: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c13 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c6 {
+  padding: 8px;
+  margin: 0px 0px 8px 0px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+
+.c6:focus {
+  border-color: #012040;
+  outline: 0;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.c6::-moz-placeholder {
+  color: #999999;
+}
+
+.c6:-ms-input-placeholder {
+  color: #999999;
+}
+
+.c6::placeholder {
+  color: #999999;
+}
+
+.c6::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.c10 {
+  position: absolute;
+  display: none;
+  -webkit-transition: all 2ms ease-in-out;
+  transition: all 2ms ease-in-out;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c2 .c9 {
+  top: calc(100% + 5px);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c12 {
+  cursor: pointer;
+  padding: 5px;
+  color: inherit;
+  background-color: #ffffff;
+}
+
+.c12:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.c12:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.c11 {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid #FE8D6B;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.c8 {
+  font-size: 12px;
+}
+
+.c8 * {
+  fill: #555;
+}
+
+.c3 {
+  border: 1px solid #FE8D6B;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 35px;
+  min-width: 150px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 .c0 {
+  margin: 0px;
+  cursor: pointer;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 .c0 .c5 {
+  margin: 0px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+<div>
+  <div
+    class="c0 c1"
+  >
+    
+    <div
+      class="c2"
+      data-testid="popover-wrapper"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c0 c4"
+        >
+          
+          <input
+            class="c5 c6"
+            data-testid="select-input"
+            label=""
+            placeholder="Please Select . . ."
+            value=""
+          />
+          
+        </div>
+        <svg
+          class="c7 c8"
+          height="1em"
+          theme="[object Object]"
+          viewBox="0 0 12 8"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
+            fill="#012040"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="c9 c10"
+      >
+        <ul
+          class="c11"
+        >
+          <li
+            class="c12"
+          >
+            <span
+              class="c13"
+            >
+              All
+            </span>
+          </li>
+          <li
+            class="c12"
+          >
+            <span
+              class="c13"
+            >
+              Dummy1
+            </span>
+          </li>
+          <li
+            class="c12"
+          >
+            <span
+              class="c13"
+            >
+              Dummy2
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`Select component should render matched options when input values changes 1`] = `
+.c1 {
+  margin: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 {
+  margin: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c14 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c6 {
+  padding: 8px;
+  margin: 0px 0px 8px 0px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+
+.c6:focus {
+  border-color: #012040;
+  outline: 0;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.c6::-moz-placeholder {
+  color: #999999;
+}
+
+.c6:-ms-input-placeholder {
+  color: #999999;
+}
+
+.c6::placeholder {
+  color: #999999;
+}
+
+.c6::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.c10 {
+  position: absolute;
+  display: none;
+  -webkit-transition: all 2ms ease-in-out;
+  transition: all 2ms ease-in-out;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c2 .c9 {
+  top: calc(100% + 5px);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c12 {
+  cursor: pointer;
+  padding: 5px;
+  color: inherit;
+  background-color: #ffffff;
+}
+
+.c12:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.c12:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.c11 {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid #FE8D6B;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.c8 {
+  font-size: 12px;
+}
+
+.c8 * {
+  fill: #555;
+}
+
+.c3 {
+  border: 1px solid #FE8D6B;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 35px;
+  min-width: 150px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 .c0 {
+  margin: 0px;
+  cursor: pointer;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 .c0 .c5 {
+  margin: 0px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.c15 ~ .c13 {
+  color: #818A91;
+}
+
+.c15 .c0 {
+  margin: 0px;
+  cursor: pointer;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c15 .c0 .c5 {
+  margin: 0px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+<div>
+  <div
+    class="c0 c1"
+  >
+    
+    <div
+      class="c2"
+      data-testid="popover-wrapper"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c0 c4"
+        >
+          
+          <input
+            class="c5 c6"
+            data-testid="select-input"
+            label=""
+            placeholder="Please Select . . ."
+            value="Dummy"
+          />
+          
+        </div>
+        <svg
+          class="c7 c8"
+          height="1em"
+          theme="[object Object]"
+          viewBox="0 0 12 8"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
+            fill="#012040"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="c9 c10"
+        style="display: block;"
+      >
+        <ul
+          class="c11"
+        >
+          <li
+            class="c12"
+          >
+            <span
+              class="c13 c14"
+            >
+              Dummy1
+            </span>
+          </li>
+          <li
+            class="c12"
+          >
+            <span
+              class="c13 c14"
+            >
+              Dummy2
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`Select component should render options correctly 1`] = `
+.c1 {
+  margin: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 {
+  margin: 8px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c14 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c6 {
+  padding: 8px;
+  margin: 0px 0px 8px 0px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+
+.c6:focus {
+  border-color: #012040;
+  outline: 0;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.c6::-moz-placeholder {
+  color: #999999;
+}
+
+.c6:-ms-input-placeholder {
+  color: #999999;
+}
+
+.c6::placeholder {
+  color: #999999;
+}
+
+.c6::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.c10 {
+  position: absolute;
+  display: none;
+  -webkit-transition: all 2ms ease-in-out;
+  transition: all 2ms ease-in-out;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c2 .c9 {
+  top: calc(100% + 5px);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c12 {
+  cursor: pointer;
+  padding: 5px;
+  color: inherit;
+  background-color: #ffffff;
+}
+
+.c12:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.c12:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.c11 {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid #FE8D6B;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.c8 {
+  font-size: 12px;
+}
+
+.c8 * {
+  fill: #555;
+}
+
+.c3 {
+  border: 1px solid #FE8D6B;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 35px;
+  min-width: 150px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 .c0 {
+  margin: 0px;
+  cursor: pointer;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 .c0 .c5 {
+  margin: 0px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.c15 ~ .c13 {
+  color: #818A91;
+}
+
+.c15 .c0 {
+  margin: 0px;
+  cursor: pointer;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c15 .c0 .c5 {
+  margin: 0px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+<div>
+  <div
+    class="c0 c1"
+  >
+    
+    <div
+      class="c2"
+      data-testid="popover-wrapper"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c0 c4"
+        >
+          
+          <input
+            class="c5 c6"
+            data-testid="select-input"
+            label=""
+            placeholder="Please Select . . ."
+            value=""
+          />
+          
+        </div>
+        <svg
+          class="c7 c8"
+          height="1em"
+          theme="[object Object]"
+          viewBox="0 0 12 8"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
+            fill="#012040"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="c9 c10"
+      >
+        <ul
+          class="c11"
+        >
+          <li
+            class="c12"
+          >
+            <span
+              class="c13 c14"
+            >
+              All
+            </span>
+          </li>
+          <li
+            class="c12"
+          >
+            <span
+              class="c13 c14"
+            >
+              Dummy1
+            </span>
+          </li>
+          <li
+            class="c12"
+          >
+            <span
+              class="c13 c14"
+            >
+              Dummy2
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`Select component should render options correctly 2`] = `
+<div>
+  <div
+    class="FieldWithLabelstyled__FieldWithLabel-sc-12atfcu-0 kkxgBZ"
+  >
+    
+    <div
+      class="Popoverstyled__PopoverWrapperStyled-sc-1ep6kh8-1 dQvXqU"
+      data-testid="popover-wrapper"
+    >
+      <div
+        class="Selectstyled__SelectWrapperStyled-sc-1uzemkw-0 kOkglZ"
+      >
+        <div
+          class="FieldWithLabelstyled__FieldWithLabel-sc-12atfcu-0 fjtHwA"
+        >
+          
+          <input
+            class="Inputstyled__InputStyled-sc-1s6rfxm-0 buAesQ"
+            data-testid="select-input"
+            label=""
+            placeholder="Please Select . . ."
+            value=""
+          />
+          
+        </div>
+        <svg
+          class="Selectstyled__SelectIconStyled-sc-1uzemkw-1 houdRU SvgIconstyled__SvgIconStyled-sc-1pf3x8a-0 iwcmjV"
+          height="1em"
+          theme="[object Object]"
+          viewBox="0 0 12 8"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
+            fill="#012040"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 ccGEAS"
+        style="display: block;"
+      >
+        <ul
+          class="Optionsstyled__OptionsStyled-kdjj7f-0 eSqiSK"
+        >
+          <li
+            class="Optionstyled__OptionStyled-spa1sf-0 fbHLAT"
+          >
+            <span
+              class="Textstyled__TextStyled-sc-1ntgl3l-0 hSvGtU"
+            >
+              All
+            </span>
+          </li>
+          <li
+            class="Optionstyled__OptionStyled-spa1sf-0 fbHLAT"
+          >
+            <span
+              class="Textstyled__TextStyled-sc-1ntgl3l-0 hSvGtU"
+            >
+              Dummy1
+            </span>
+          </li>
+          <li
+            class="Optionstyled__OptionStyled-spa1sf-0 fbHLAT"
+          >
+            <span
+              class="Textstyled__TextStyled-sc-1ntgl3l-0 hSvGtU"
+            >
+              Dummy2
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;

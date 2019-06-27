@@ -10,7 +10,6 @@ import input from './input';
 import label from './label';
 import link from './link';
 import modal from './modal';
-import popover from './popover';
 import radio from './radio';
 import select from './select';
 import spacing from './spacing';
@@ -28,7 +27,6 @@ export const coreDefaultTheme = {
     colors,
     icon,
     modal,
-    popover,
     radio,
     font,
     input,

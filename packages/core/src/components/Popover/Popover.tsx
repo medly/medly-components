@@ -20,7 +20,10 @@ export const PopoverWrapper: React.SFC<PopoverWrapperProps> & WithStyle = props 
         changePopoverState(!popoverState);
     };
 
-    useOuterClickNotifier(() => changePopoverState(false), wrapperRef);
+    useOuterClickNotifier(() => {
+        changePopoverState(false);
+        props.onOuterClick && props.onOuterClick();
+    }, wrapperRef);
 
     return <PopoverWrapperStyled {...props} ref={wrapperRef} onClick={handleOnClick} data-testid="popover-wrapper" />;
 };

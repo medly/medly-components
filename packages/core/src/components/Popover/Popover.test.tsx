@@ -33,10 +33,11 @@ describe('Popover component', () => {
     });
 
     it('should render properly when interction type is click', () => {
+        const mockOnOuterCick = jest.fn();
         const { container, getByTestId } = render(
             <div>
                 <div data-testid="sibling">Sibling div</div>
-                <PopoverWrapper interactionType="click" placement="left">
+                <PopoverWrapper interactionType="click" placement="left" onOuterClick={mockOnOuterCick}>
                     <div>Dummy Div</div>
                     <Popover fullWidth fullHeight>
                         Dummy popover
@@ -58,5 +59,6 @@ describe('Popover component', () => {
         fireEvent.click(wrapper);
         fireEvent.click(sibling);
         expect(container).toMatchSnapshot();
+        expect(mockOnOuterCick).toHaveBeenCalled();
     });
 });

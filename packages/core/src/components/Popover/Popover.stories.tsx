@@ -22,17 +22,21 @@ const placement: Placement[] = [
 
 const interactionType: InteractionType[] = ['click', 'hover'];
 
-export const DummyDiv = styled('div')`
+const DummyDiv = styled('div')`
     width: 200px;
     height: 100px;
     border: 1px solid grey;
     display: inline-block;
 `;
 
-export const DummyWrapper = styled('div')`
+const DummyWrapper = styled('div')`
     width: 100%;
     height: 100%;
     ${centerAligned()};
+`;
+
+const DummyPopover = styled('div')`
+    border: 1px solid grey;
 `;
 
 storiesOf('Core', module).add(
@@ -45,14 +49,14 @@ storiesOf('Core', module).add(
             >
                 <DummyDiv>Hello</DummyDiv>
                 <Popover fullWidth={boolean('Popover Full Width', false)} fullHeight={boolean('Popover Full Height', false)}>
-                    This is Popover{' '}
+                    <DummyPopover>This is Popover</DummyPopover>
                 </Popover>
             </PopoverWrapper>
         </DummyWrapper>
     ),
     {
         props: {
-            propTablesExclude: [DummyDiv, DummyWrapper]
+            propTablesExclude: [DummyDiv, DummyWrapper, DummyPopover]
         }
     }
 );

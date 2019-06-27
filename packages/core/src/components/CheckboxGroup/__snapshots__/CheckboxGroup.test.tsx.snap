@@ -41,7 +41,7 @@ exports[`CheckboxGroup component should render correctly with all the default pr
 
 .c2 {
   margin: 0px 0px 0px 8px;
-  color: #012040;
+  color: #555;
   cursor: pointer;
 }
 
@@ -234,13 +234,13 @@ exports[`CheckboxGroup component should render correctly with all the props give
 
 .c3 {
   margin: 0px 0px 0px 8px;
-  color: #012040;
+  color: #555;
   cursor: pointer;
 }
 
 .c1 {
   margin: 0px 0px 8px 0px;
-  color: #012040;
+  color: #555;
 }
 
 .c1::after {

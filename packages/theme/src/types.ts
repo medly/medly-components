@@ -10,7 +10,6 @@ export interface CoreTheme {
     modal?: CoreThemes.ModalTheme;
     card?: CoreThemes.CardTheme;
     button?: CoreThemes.ButtonTheme;
-    popover?: CoreThemes.PopoverTheme;
     colors?: CoreThemes.ColorPallet;
     checkbox?: CoreThemes.CheckboxTheme;
     radio?: CoreThemes.RadioTheme;

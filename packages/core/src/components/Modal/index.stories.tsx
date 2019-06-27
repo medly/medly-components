@@ -7,17 +7,15 @@ import Input from '../Input';
 import Select from '../Select';
 import Modal from './Modal';
 
+const options = [{ value: '0', label: 'Admin' }, { value: '1', label: 'Pharmacist' }, { value: '2', label: 'Covered Entity' }];
+
 storiesOf('Core', module).add(
     'Modal',
     () => (
         <Modal open={boolean('Open', true)} onCloseModal={action('Close Clicked')}>
             <Modal.Header>Add User</Modal.Header>
             <Modal.Content>
-                <Select fullWidth label="Role">
-                    <option value="0">Admin</option>
-                    <option value="1">Pharmacist</option>
-                    <option value="2">Covered Entity</option>
-                </Select>
+                <Select fullWidth options={options} defaultSelected="0" />
                 <Input type="text" fullWidth label="Name" placeholder="Enter your Name" />
                 <Input
                     type="email"

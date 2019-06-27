@@ -70,7 +70,7 @@ export const PopoverStyled = styled('div')<PopoverProps>`
     position: absolute;
     display: none;
     transition: all 2ms ease-in-out;
-    border: 1px solid ${({ theme }) => theme.popover.borderColor};
+    border-radius: 4px;
 
     ${props => props.fullWidth && fullWidth()};
     ${props => props.fullHeight && fullHeight()};

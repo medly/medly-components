@@ -3,7 +3,7 @@
 exports[`Label component should render correctly when required props is falsy 1`] = `
 .c0 {
   margin: 0px 8px 0px 0px;
-  color: #012040;
+  color: #555;
 }
 
 <div>
@@ -18,7 +18,7 @@ exports[`Label component should render correctly when required props is falsy 1`
 exports[`Label component should render correctly with all the props given 1`] = `
 .c0 {
   margin: 0px 0px 8px 0px;
-  color: #012040;
+  color: #555;
 }
 
 .c0::after {

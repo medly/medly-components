@@ -17,5 +17,7 @@ module.exports = function(api) {
 
     if (api.env('development') || api.env('storybook')) ignore.push('**/*.test.tsx', '**/*.test.ts', '__snapshots__');
 
+    if (api.env('test')) plugins.push('@babel/plugin-transform-runtime');
+
     return { presets, plugins, ignore };
 };
