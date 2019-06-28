@@ -25,7 +25,7 @@ RadioGroup.Style = FieldWithLabel;
 RadioGroup.defaultProps = {
     label: '',
     name: '',
-    labelPosition: 'start'
+    labelPosition: 'left'
 };
 
 export default RadioGroup;

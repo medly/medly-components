@@ -4,7 +4,7 @@ import React from 'react';
 import { LabelPositions } from '../Label/types';
 import Select from './Select';
 
-const labelPosition: LabelPositions[] = ['top', 'bottom', 'start', 'end'];
+const labelPosition: LabelPositions[] = ['top', 'bottom', 'left', 'right'];
 
 const options = [
     { value: 'all', label: 'All' },
@@ -26,6 +26,6 @@ storiesOf('Core', module).add('Select', () => (
         label={text('Label', 'Pharmacy')}
         placeholder="Select Pharmacy"
         description={text('Description', 'We will show reports based on Pharmacy')}
-        labelPosition={select('Label Position', labelPosition, 'start')}
+        labelPosition={select('Label Position', labelPosition, 'left')}
     />
 ));

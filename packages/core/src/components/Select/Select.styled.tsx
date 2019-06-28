@@ -1,12 +1,13 @@
 import { ExpandMoreIcon } from '@medly-components/icons';
-import { defaultTheme, Theme } from '@medly-components/theme';
-import { centerAligned, css, fullWidth, styled, WithThemeProp } from '@medly-components/utils';
+import { defaultTheme } from '@medly-components/theme';
+import { centerAligned, css, fullWidth, oppositePositionalspacing, styled, WithThemeProp } from '@medly-components/utils';
 import FieldWithLabel from '../FieldWithLabel';
 import Input from '../Input';
 import Text from '../Text';
 import { SelectWrapperProps } from './types';
 
 export const SelectWrapperStyled = styled('div')<SelectWrapperProps>`
+    margin: ${({ theme, labelPosition }) => oppositePositionalspacing(labelPosition, theme.spacing.S)};
     border: 1px solid ${({ theme }) => theme.select.borderColor};
     background-color: ${({ theme }) => theme.select.bgColor};
     border-radius: 4px;

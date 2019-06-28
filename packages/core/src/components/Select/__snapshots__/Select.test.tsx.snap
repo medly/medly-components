@@ -139,6 +139,7 @@ exports[`Select component should close options when clicked outside 1`] = `
 }
 
 .c3 {
+  margin: 0px 8px 0px 0px;
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
   border-radius: 4px;
@@ -431,6 +432,7 @@ exports[`Select component should render all the options when input value is not 
 }
 
 .c3 {
+  margin: 0px 8px 0px 0px;
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
   border-radius: 4px;
@@ -762,6 +764,7 @@ exports[`Select component should render correctly with all the props given 1`] =
 }
 
 .c4 {
+  margin: 0px 8px 0px 0px;
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
   border-radius: 4px;
@@ -1045,6 +1048,7 @@ exports[`Select component should render correctly with default props 1`] = `
 }
 
 .c3 {
+  margin: 0px 8px 0px 0px;
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
   border-radius: 4px;
@@ -1314,6 +1318,7 @@ exports[`Select component should render matched options when input values change
 }
 
 .c3 {
+  margin: 0px 8px 0px 0px;
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
   border-radius: 4px;
@@ -1594,6 +1599,7 @@ exports[`Select component should render options correctly 1`] = `
 }
 
 .c3 {
+  margin: 0px 8px 0px 0px;
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
   border-radius: 4px;
@@ -1754,7 +1760,7 @@ exports[`Select component should render options correctly 2`] = `
       data-testid="popover-wrapper"
     >
       <div
-        class="Selectstyled__SelectWrapperStyled-sc-1uzemkw-0 kOkglZ"
+        class="Selectstyled__SelectWrapperStyled-sc-1uzemkw-0 ljlvhF"
       >
         <div
           class="FieldWithLabelstyled__FieldWithLabel-sc-12atfcu-0 fjtHwA"

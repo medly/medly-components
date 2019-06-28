@@ -28,7 +28,7 @@ Radio.displayName = 'Radio';
 Radio.Style = RadioWrapperStyled;
 Radio.defaultProps = {
     label: '',
-    labelPosition: 'end'
+    labelPosition: 'right'
 };
 
 export default Radio;

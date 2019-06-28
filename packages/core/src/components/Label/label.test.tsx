@@ -14,7 +14,7 @@ describe('Label component', () => {
     });
 
     it('should render correctly when required props is falsy', () => {
-        const { container } = TestUtils.render(<Label labelPosition="start">Demo Label</Label>);
+        const { container } = TestUtils.render(<Label labelPosition="left">Demo Label</Label>);
         expect(container).toMatchSnapshot();
     });
 });

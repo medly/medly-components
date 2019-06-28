@@ -10,7 +10,7 @@ describe('Radio component', () => {
     });
 
     it('should render correctly with all the props given', () => {
-        const { container } = TestUtils.render(<Radio name="gender" label="Female" size="M" labelPosition="end" />);
+        const { container } = TestUtils.render(<Radio name="gender" label="Female" size="M" labelPosition="right" />);
         expect(container).toMatchSnapshot();
     });
 });

@@ -5,7 +5,7 @@ import Checkbox from '../Checkbox';
 import CheckboxGroup from './CheckboxGroup';
 import { Props } from './types';
 
-const labelPosition: Array<Props['labelPosition']> = ['start', 'end', 'top', 'bottom'];
+const labelPosition: Array<Props['labelPosition']> = ['left', 'right', 'top', 'bottom'];
 const size: Array<Props['size']> = ['XS', 'S', 'M', 'L', 'XL'];
 
 storiesOf('Core', module).add('CheckboxGroup', () => (

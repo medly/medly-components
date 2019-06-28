@@ -31,7 +31,7 @@ Checkbox.displayName = 'Checkbox';
 Checkbox.Style = CheckboxWrapperStyled;
 Checkbox.defaultProps = {
     label: '',
-    labelPosition: 'end'
+    labelPosition: 'right'
 };
 
 export default Checkbox;

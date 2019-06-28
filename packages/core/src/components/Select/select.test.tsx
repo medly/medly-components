@@ -20,7 +20,7 @@ describe('Select component', () => {
             <Select
                 options={options}
                 defaultSelected="all"
-                labelPosition="start"
+                labelPosition="left"
                 fullWidth
                 required
                 label="Pharmacy"

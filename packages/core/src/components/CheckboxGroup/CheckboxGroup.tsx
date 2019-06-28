@@ -25,7 +25,7 @@ CheckboxGroup.Style = FieldWithLabel;
 CheckboxGroup.defaultProps = {
     label: '',
     name: '',
-    labelPosition: 'start'
+    labelPosition: 'left'
 };
 
 export default CheckboxGroup;

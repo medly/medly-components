@@ -1,11 +1,11 @@
 import { defaultTheme } from '@medly-components/theme';
-import { css, fullWidth, positionalSpacing, styled } from '@medly-components/utils';
+import { css, fullWidth, oppositePositionalspacing, styled } from '@medly-components/utils';
 import Text from '../Text';
 import { Props } from './types';
 
 export const InputStyled = styled('input').attrs(({ theme: { input, text, font } }) => ({ input, text, font }))<Props>`
     padding: ${({ theme }) => theme.spacing.S};
-    margin: ${({ theme, labelPosition }) => positionalSpacing(labelPosition, theme.spacing.S)};
+    margin: ${({ theme, labelPosition }) => oppositePositionalspacing(labelPosition, theme.spacing.S)};
     font-size: ${({ font, text }) => font.sizes[text.defaults.textSize]};
     font-weight: ${({ font, text }) => font.weights[text.defaults.textWeight]};
     color: ${props => props.input.color};

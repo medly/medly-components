@@ -4,7 +4,7 @@ import React from 'react';
 import Radio from './Radio';
 import { Props } from './types';
 
-const labelPosition: Array<Props['labelPosition']> = ['start', 'end', 'top', 'bottom'];
+const labelPosition: Array<Props['labelPosition']> = ['left', 'right', 'top', 'bottom'];
 const size: Array<Props['size']> = ['XS', 'S', 'M', 'L', 'XL'];
 
 storiesOf('Core', module).add('Radio', () => (
@@ -13,8 +13,13 @@ storiesOf('Core', module).add('Radio', () => (
             name="gender"
             label="Female"
             size={select('Size', size, 'S')}
-            labelPosition={select('Label Position', labelPosition, 'end')}
+            labelPosition={select('Label Position', labelPosition, 'right')}
         />
-        <Radio name="gender" label="Male" size={select('Size', size, 'M')} labelPosition={select('Label Position', labelPosition, 'end')} />
+        <Radio
+            name="gender"
+            label="Male"
+            size={select('Size', size, 'M')}
+            labelPosition={select('Label Position', labelPosition, 'right')}
+        />
     </>
 ));

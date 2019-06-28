@@ -5,7 +5,7 @@ import Radio from '../Radio';
 import RadioGroup from './RadioGroup';
 import { Props } from './types';
 
-const labelPosition: Array<Props['labelPosition']> = ['start', 'end', 'top', 'bottom'];
+const labelPosition: Array<Props['labelPosition']> = ['left', 'right', 'top', 'bottom'];
 const size: Array<Props['size']> = ['XS', 'S', 'M', 'L', 'XL'];
 
 storiesOf('Core', module).add('RadioGroup', () => (

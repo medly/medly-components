@@ -24,7 +24,7 @@ describe('Input component', () => {
             <Input
                 type="email"
                 label="Email Address"
-                labelPosition="start"
+                labelPosition="left"
                 placeholder="Enter Email Address"
                 description="We will never share your email with anyone"
             />

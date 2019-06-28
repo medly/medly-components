@@ -4,7 +4,7 @@ import React from 'react';
 import Input from './Input';
 import { Props } from './types';
 
-const labelPosition: Array<Props['labelPosition']> = ['top', 'bottom', 'start', 'end'];
+const labelPosition: Array<Props['labelPosition']> = ['top', 'bottom', 'left', 'right'];
 
 storiesOf('Core', module).add('Input', () => (
     <Input

@@ -83,7 +83,7 @@ const Select: React.SFC<SelectProps> & WithStyle = React.memo(
 Select.displayName = 'Select';
 Select.Style = SelectWrapperStyled;
 Select.defaultProps = {
-    labelPosition: 'start',
+    labelPosition: 'left',
     defaultSelected: '',
     fullWidth: false,
     required: false,

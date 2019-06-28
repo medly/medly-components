@@ -12,9 +12,9 @@ export const FieldWithLabel = styled('div')<Props>`
                 return `column`;
             case 'bottom':
                 return `column-reverse`;
-            case 'start':
+            case 'left':
                 return `row`;
-            case 'end':
+            case 'right':
                 return `row-reverse`;
             default:
                 return 'column';
