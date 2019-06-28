@@ -66,8 +66,8 @@ exports[`Popover component should render properly when interction type is click 
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
   border-radius: 4px;
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 0px);
+  height: calc(100% - 0px);
 }
 
 .c3 .c1 {
@@ -150,7 +150,7 @@ exports[`Popover component should render properly when interction type is click 
         Dummy Div
       </div>
       <div
-        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 kgDuhT"
+        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 cbWkKe"
         style="display: block;"
       >
         Dummy popover
@@ -176,7 +176,7 @@ exports[`Popover component should render properly when interction type is click 
         Dummy Div
       </div>
       <div
-        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 kgDuhT"
+        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 cbWkKe"
         style="display: none;"
       >
         Dummy popover
@@ -202,7 +202,7 @@ exports[`Popover component should render properly when interction type is click 
         Dummy Div
       </div>
       <div
-        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 kgDuhT"
+        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 cbWkKe"
         style="display: none;"
       >
         Dummy popover

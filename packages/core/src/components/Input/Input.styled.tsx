@@ -5,7 +5,6 @@ import { Props } from './types';
 
 export const InputStyled = styled('input').attrs(({ theme: { input, text, font } }) => ({ input, text, font }))<Props>`
     padding: ${({ theme }) => theme.spacing.S};
-    margin: ${({ theme, labelPosition }) => oppositePositionalspacing(labelPosition, theme.spacing.S)};
     font-size: ${({ font, text }) => font.sizes[text.defaults.textSize]};
     font-weight: ${({ font, text }) => font.weights[text.defaults.textWeight]};
     color: ${props => props.input.color};
@@ -30,9 +29,10 @@ export const InputStyled = styled('input').attrs(({ theme: { input, text, font }
 
     ${props => props.fullWidth && fullWidth()};
 
-    ${({ description, theme }) =>
+    ${({ description, theme, labelPosition }) =>
         description &&
         css`
+            margin: ${oppositePositionalspacing(labelPosition, theme.spacing.S)};
             & ~ ${Text.Style} {
                 color: ${theme.input.desciptionColor};
             }

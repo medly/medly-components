@@ -78,6 +78,7 @@ export const CardStyled = styled('div').attrs(({ theme: { card } }) => ({ ...car
     margin: 5px;
     overflow: auto;
     flex: ${({ flex }) => flex};
+    box-sizing: border-box;
     background-color: ${({ bgColor }) => bgColor};
     padding: ${({ withPadding }) => withPadding && '10px'};
 
@@ -87,8 +88,8 @@ export const CardStyled = styled('div').attrs(({ theme: { card } }) => ({ ...car
     ${({ variant }) => variant === 'flat' && flat()};
     ${props => props.variant === 'solid' && solid(props)};
 
-    ${props => props.fullWidth && fullWidth()};
-    ${props => props.fullHeight && fullHeight()};
+    ${props => props.fullWidth && fullWidth('10px')};
+    ${props => props.fullHeight && fullHeight('10px')};
 
     ${props => applyBorder(props)}
 

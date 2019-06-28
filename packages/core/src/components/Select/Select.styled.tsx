@@ -7,7 +7,6 @@ import Text from '../Text';
 import { SelectWrapperProps } from './types';
 
 export const SelectWrapperStyled = styled('div')<SelectWrapperProps>`
-    margin: ${({ theme, labelPosition }) => oppositePositionalspacing(labelPosition, theme.spacing.S)};
     border: 1px solid ${({ theme }) => theme.select.borderColor};
     background-color: ${({ theme }) => theme.select.bgColor};
     border-radius: 4px;
@@ -20,9 +19,10 @@ export const SelectWrapperStyled = styled('div')<SelectWrapperProps>`
 
     ${props => props.fullWidth && fullWidth()};
 
-    ${({ description, theme }) =>
+    ${({ description, theme, labelPosition }) =>
         description &&
         css`
+            margin: ${oppositePositionalspacing(labelPosition, theme.spacing.S)};
             & ~ ${Text.Style} {
                 color: ${theme.select.desciptionColor};
             }

@@ -39,7 +39,6 @@ exports[`Select component should close options when clicked outside 1`] = `
 
 .c6 {
   padding: 8px;
-  margin: 0px 0px 8px 0px;
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -81,7 +80,7 @@ exports[`Select component should close options when clicked outside 1`] = `
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
   border-radius: 4px;
-  width: 100%;
+  width: calc(100% - 0px);
 }
 
 .c2 {
@@ -139,7 +138,6 @@ exports[`Select component should close options when clicked outside 1`] = `
 }
 
 .c3 {
-  margin: 0px 8px 0px 0px;
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
   border-radius: 4px;
@@ -332,7 +330,6 @@ exports[`Select component should render all the options when input value is not 
 
 .c6 {
   padding: 8px;
-  margin: 0px 0px 8px 0px;
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -374,7 +371,7 @@ exports[`Select component should render all the options when input value is not 
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
   border-radius: 4px;
-  width: 100%;
+  width: calc(100% - 0px);
 }
 
 .c2 {
@@ -432,7 +429,6 @@ exports[`Select component should render all the options when input value is not 
 }
 
 .c3 {
-  margin: 0px 8px 0px 0px;
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
   border-radius: 4px;
@@ -632,7 +628,6 @@ exports[`Select component should render correctly with all the props given 1`] =
 
 .c7 {
   padding: 8px;
-  margin: 0px 0px 8px 0px;
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -674,7 +669,7 @@ exports[`Select component should render correctly with all the props given 1`] =
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
   border-radius: 4px;
-  width: 100%;
+  width: calc(100% - 0px);
 }
 
 .c3 {
@@ -764,7 +759,6 @@ exports[`Select component should render correctly with all the props given 1`] =
 }
 
 .c4 {
-  margin: 0px 8px 0px 0px;
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
   border-radius: 4px;
@@ -788,7 +782,8 @@ exports[`Select component should render correctly with all the props given 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
+  width: calc(100% - 0px);
+  margin: 0px 8px 0px 0px;
 }
 
 .c4 ~ .c14 {
@@ -948,7 +943,6 @@ exports[`Select component should render correctly with default props 1`] = `
 
 .c6 {
   padding: 8px;
-  margin: 0px 0px 8px 0px;
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -990,7 +984,7 @@ exports[`Select component should render correctly with default props 1`] = `
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
   border-radius: 4px;
-  width: 100%;
+  width: calc(100% - 0px);
 }
 
 .c2 {
@@ -1048,7 +1042,6 @@ exports[`Select component should render correctly with default props 1`] = `
 }
 
 .c3 {
-  margin: 0px 8px 0px 0px;
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
   border-radius: 4px;
@@ -1218,7 +1211,6 @@ exports[`Select component should render matched options when input values change
 
 .c6 {
   padding: 8px;
-  margin: 0px 0px 8px 0px;
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -1260,7 +1252,7 @@ exports[`Select component should render matched options when input values change
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
   border-radius: 4px;
-  width: 100%;
+  width: calc(100% - 0px);
 }
 
 .c2 {
@@ -1318,7 +1310,6 @@ exports[`Select component should render matched options when input values change
 }
 
 .c3 {
-  margin: 0px 8px 0px 0px;
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
   border-radius: 4px;
@@ -1499,7 +1490,6 @@ exports[`Select component should render options correctly 1`] = `
 
 .c6 {
   padding: 8px;
-  margin: 0px 0px 8px 0px;
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -1541,7 +1531,7 @@ exports[`Select component should render options correctly 1`] = `
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
   border-radius: 4px;
-  width: 100%;
+  width: calc(100% - 0px);
 }
 
 .c2 {
@@ -1599,7 +1589,6 @@ exports[`Select component should render options correctly 1`] = `
 }
 
 .c3 {
-  margin: 0px 8px 0px 0px;
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
   border-radius: 4px;
@@ -1760,14 +1749,14 @@ exports[`Select component should render options correctly 2`] = `
       data-testid="popover-wrapper"
     >
       <div
-        class="Selectstyled__SelectWrapperStyled-sc-1uzemkw-0 ljlvhF"
+        class="Selectstyled__SelectWrapperStyled-sc-1uzemkw-0 kOkglZ"
       >
         <div
           class="FieldWithLabelstyled__FieldWithLabel-sc-12atfcu-0 fjtHwA"
         >
           
           <input
-            class="Inputstyled__InputStyled-sc-1s6rfxm-0 buAesQ"
+            class="Inputstyled__InputStyled-sc-1s6rfxm-0 duLETI"
             data-testid="select-input"
             label=""
             placeholder="Please Select . . ."
@@ -1791,7 +1780,7 @@ exports[`Select component should render options correctly 2`] = `
         </svg>
       </div>
       <div
-        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 ccGEAS"
+        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 ijRlFB"
         style="display: block;"
       >
         <ul

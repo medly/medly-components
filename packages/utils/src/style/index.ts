@@ -5,12 +5,12 @@ export const clearMarginPadding = () => css`
     padding: 0px;
 `;
 
-export const fullWidth = () => css`
-    width: 100%;
+export const fullWidth = (margin: string = '0px') => css`
+    width: calc(100% - ${margin});
 `;
 
-export const fullHeight = () => css`
-    height: 100%;
+export const fullHeight = (margin: string = '0px') => css`
+    height: calc(100% - ${margin});
 `;
 
 export const centerAligned = () => css`

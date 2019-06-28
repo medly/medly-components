@@ -33,7 +33,6 @@ exports[`Input component should render correctly when fullWidth & required props
 
 .c2 {
   padding: 8px;
-  margin: 0px 8px 0px 0px;
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -42,6 +41,7 @@ exports[`Input component should render correctly when fullWidth & required props
   box-sizing: border-box;
   border: 1px solid #CCCCCC;
   border-radius: 5px;
+  margin: 0px 8px 0px 0px;
 }
 
 .c2:focus {
@@ -115,7 +115,6 @@ exports[`Input component should render correctly when label and description are 
 
 .c1 {
   padding: 8px;
-  margin: 0px 0px 8px 0px;
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -201,7 +200,6 @@ exports[`Input component should render correctly with all the props given 1`] = 
 
 .c2 {
   padding: 8px;
-  margin: 0px 0px 8px 0px;
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -210,7 +208,8 @@ exports[`Input component should render correctly with all the props given 1`] = 
   box-sizing: border-box;
   border: 1px solid #CCCCCC;
   border-radius: 5px;
-  width: 100%;
+  width: calc(100% - 0px);
+  margin: 0px 0px 8px 0px;
 }
 
 .c2:focus {
