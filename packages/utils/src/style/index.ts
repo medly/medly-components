@@ -13,8 +13,8 @@ export const fullHeight = (margin: string = '0px') => css`
     height: calc(100% - ${margin});
 `;
 
-export const centerAligned = () => css`
-    display: inline-flex;
+export const centerAligned = (display: 'flex' | 'inline-flex' = 'inline-flex') => css`
+    display: ${display};
     justify-content: center;
     align-items: center;
 `;
