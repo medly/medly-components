@@ -18,6 +18,6 @@
         "build": "yarn build:js --delete-dir-on-start ",
         "postbuild": "yarn build:types",
         "watch": "run-p \"build:types -w\" \"build:js --watch\"",
-        "s3upload": "s3cmd put medly-components-theme-1.1.0.tgz s3://medly-artifacts/medly-components/"
+        "s3upload": "s3cmd put medly-components-theme-* s3://medly-artifacts/medly-components/"
     }
 }

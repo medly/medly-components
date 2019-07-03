@@ -1,4 +1,4 @@
-import colors from '../colors';
+import colors from '../core/colors';
 import { IconTheme } from './types';
 
 const icon: IconTheme = {

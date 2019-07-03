@@ -1,5 +1,5 @@
 {
-    "name": "@medly-components/icons",
+    "name": "@medly-components/loaders",
     "version": "1.1.0",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -18,7 +18,7 @@
         "build": "yarn build:js --delete-dir-on-start ",
         "postbuild": "yarn build:types",
         "watch": "run-p \"build:types -w\" \"build:js --watch\"",
-        "s3upload": "s3cmd put medly-components-icons-* s3://medly-artifacts/medly-components/"
+        "s3upload": "s3cmd put medly-components-loaders-* s3://medly-artifacts/medly-components/"
     },
     "peerDependencies": {
         "react": "^16.8.6",

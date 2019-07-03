@@ -1,12 +1,13 @@
 import * as CoreThemes from './core/types';
+import { IconTheme } from './icon/types';
 import * as LayoutThemes from './layout/types';
+import { LoaderTheme } from './loader/types';
 
 export interface CoreTheme {
     avatar?: CoreThemes.AvatarTheme;
     breadCrumbs?: CoreThemes.BreadCrumbsTheme;
     label?: CoreThemes.LabelTheme;
     link?: CoreThemes.LinkTheme;
-    icon?: CoreThemes.IconTheme;
     modal?: CoreThemes.ModalTheme;
     card?: CoreThemes.CardTheme;
     button?: CoreThemes.ButtonTheme;
@@ -26,7 +27,12 @@ export interface LayoutTheme {
     sidePanel?: LayoutThemes.SidePanelTheme;
 }
 
-export interface Theme extends CoreTheme, LayoutTheme {}
+export interface Theme extends CoreTheme, LayoutTheme {
+    loader: LoaderTheme;
+    icon: IconTheme;
+}
 
 export * from './core/types';
+export * from './loader/types';
+export * from './icon/types';
 export * from './layout/types';

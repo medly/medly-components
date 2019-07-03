@@ -1,4 +1,5 @@
-import { FontSizes, IconSizes } from '../../core/types';
+import { FontSizes } from '../../core/types';
+import { IconSizes } from '../../icon/types';
 
 export interface SideNavTheme {
     closeSize: string;
