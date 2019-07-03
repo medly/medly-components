@@ -28,8 +28,8 @@ export interface LayoutTheme {
 }
 
 export interface Theme extends CoreTheme, LayoutTheme {
-    loader: LoaderTheme;
-    icon: IconTheme;
+    loader?: LoaderTheme;
+    icon?: IconTheme;
 }
 
 export * from './core/types';
