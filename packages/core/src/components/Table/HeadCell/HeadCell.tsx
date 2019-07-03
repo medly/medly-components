@@ -8,7 +8,7 @@ import { HeadCellStyled, ResizeHandlerStyled } from './HeadCell.styled';
 const HeadCell: React.SFC<HeadCellProps> & WithStyle = props => {
     const [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>('none');
     const cellEl = useRef(null);
-    const { handleWidthChange, frozen, children, field, sortedColumnField } = props;
+    const { handleWidthChange, frozen, sort, children, field, sortedColumnField } = props;
     let pageX: number;
 
     useEffect(() => {
@@ -43,6 +43,15 @@ const HeadCell: React.SFC<HeadCellProps> & WithStyle = props => {
         window.addEventListener('mouseup', onMouseUp);
     };
 
+    const sortIcon =
+        sortedColumnField !== field ? (
+            <DropDownIcon size="XS" onClick={handleSortIconClick} />
+        ) : sortState === 'desc' ? (
+            <DownArrowIcon size="XS" onClick={handleSortIconClick} />
+        ) : (
+            <UpArrowIcon size="XS" onClick={handleSortIconClick} />
+        );
+
     return (
         <HeadCellStyled ref={cellEl} frozen={frozen}>
             {React.Children.map(children, c => {
@@ -54,13 +63,7 @@ const HeadCell: React.SFC<HeadCellProps> & WithStyle = props => {
                     c
                 );
             })}
-            {sortedColumnField !== field ? (
-                <DropDownIcon size="XS" onClick={handleSortIconClick} />
-            ) : sortState === 'desc' ? (
-                <DownArrowIcon size="XS" onClick={handleSortIconClick} />
-            ) : (
-                <UpArrowIcon size="XS" onClick={handleSortIconClick} />
-            )}
+            {sort && sortIcon}
             <ResizeHandlerStyled onMouseDown={initResize} />
         </HeadCellStyled>
     );

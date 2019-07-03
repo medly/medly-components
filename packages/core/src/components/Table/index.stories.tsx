@@ -87,11 +87,14 @@ const columns: ColumnConfig[] = [
         title: 'Marks',
         field: 'marks',
         formatter: 'group',
-        children: [{ title: 'History', field: 'history', formatter: 'numeric' }, { title: 'Math', field: 'maths', formatter: 'numeric' }]
+        children: [
+            { title: 'History', field: 'history', formatter: 'numeric', sort: true },
+            { title: 'Math', field: 'maths', formatter: 'numeric', sort: true }
+        ]
     },
-    { title: 'Age', field: 'age', formatter: 'text-short' },
-    { title: 'Favourite Color', field: 'color', formatter: 'text-short' },
-    { title: 'Rating', field: 'rating', formatter: 'numeric' }
+    { title: 'Age', field: 'age', formatter: 'text-short', sort: true },
+    { title: 'Favourite Color', field: 'color', formatter: 'text-short', sort: true },
+    { title: 'Rating', field: 'rating', formatter: 'numeric', sort: true }
 ];
 // @ts-ignore
 const getNestedValue = (obj: {}, dottedKey: string) => dottedKey.split('.').reduce((acc, curr) => acc[curr], obj);

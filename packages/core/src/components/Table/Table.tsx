@@ -37,6 +37,7 @@ const Table: React.SFC<Props> & WithStyle = props => {
                           sortedColumnField={sortedColumnField}
                           frozen={config.frozen}
                           hide={config.hide}
+                          sort={config.sort}
                           field={field ? `${field}.${config.field}` : config.field}
                           handleSortIconClick={handleSortIconClick}
                           handleWidthChange={handleWidthChange}

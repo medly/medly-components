@@ -13,6 +13,7 @@ export interface GridTemplateProps {
 
 export interface ColumnConfig {
     frozen?: boolean;
+    sort?: boolean;
     hide?: boolean;
     size?: string;
     title: string;
@@ -27,6 +28,7 @@ export interface CellStyledProps {
 
 export interface HeadCellProps extends CellStyledProps {
     field?: string;
+    sort?: boolean;
     sortedColumnField?: string;
     handleWidthChange?: (width: number, key: string) => void;
     handleSortIconClick?: (field: string, order: SortOrder) => void;
@@ -35,5 +37,5 @@ export interface HeadCellProps extends CellStyledProps {
 export interface Props {
     data: Array<{}>;
     columns: ColumnConfig[];
-    onSortIconClick: (field: string, order: SortOrder) => void;
+    onSortIconClick?: (field: string, order: SortOrder) => void;
 }
