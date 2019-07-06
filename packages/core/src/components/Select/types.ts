@@ -7,6 +7,11 @@ export interface Option {
     selected: boolean;
 }
 
+export interface DefaultSelected {
+    value: string;
+    label: string;
+}
+
 export interface SelectWrapperProps extends HTMLProps<HTMLDivElement>, WithThemeProp {
     labelPosition?: LabelPositions;
     fullWidth?: boolean;

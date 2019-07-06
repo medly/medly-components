@@ -1,10 +1,11 @@
-import { equalsIgnoreCase, includesIgnoreCase, WithStyle } from '@medly-components/utils';
+import { WithStyle } from '@medly-components/utils';
 import React, { useState } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import Input from '../Input';
 import Label from '../Label';
 import { Popover, PopoverWrapper } from '../Popover';
 import Text from '../Text';
+import { filterOptions, getDefaultSelected, getOptionsWithSelected } from './helpers';
 import Options from './Options';
 import { SelectIconStyled, SelectWrapperStyled } from './Select.styled';
 import { Option, SelectProps } from './types';
@@ -12,19 +13,12 @@ import { Option, SelectProps } from './types';
 const Select: React.SFC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { description, label, placeholder, labelPosition, required, fullWidth } = props;
-        const defaultSelected = props.options.find(
-            option => equalsIgnoreCase(props.defaultSelected, option.value) || equalsIgnoreCase(props.defaultSelected, option.label)
-        ) || { value: '', label: '' };
+        const defaultSelected = getDefaultSelected(props.options, props.defaultSelected);
         const [inputValue, setInputValue] = useState(defaultSelected.label);
         const [selectedOption, setSelectedOption] = useState(defaultSelected);
-        const [options, setOptions] = useState(
-            props.options.map(option => ({ ...option, selected: defaultSelected.value === option.value }))
-        );
+        const [options, setOptions] = useState(getOptionsWithSelected(props.options, defaultSelected));
 
-        const updateToDefaultOptions = () => {
-            const defaultOptions = props.options.map(option => ({ ...option, selected: selectedOption.value === option.value }));
-            setOptions(defaultOptions);
-        };
+        const updateToDefaultOptions = () => setOptions(getOptionsWithSelected(props.options, selectedOption));
 
         const handleWrapperClick = () => {
             setInputValue(selectedOption.label);
@@ -36,17 +30,16 @@ const Select: React.SFC<SelectProps> & WithStyle = React.memo(
             e.target.setSelectionRange(inputValue.length, inputValue.length);
         };
 
-        const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-            const value = e.target.value;
+        const handleInputChange = ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
             setInputValue(value);
-            const newOptions = options.filter(op => includesIgnoreCase(op.label, value));
+            const newOptions = filterOptions(options, value);
             newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
         };
 
         const handleOptionClick = (option: Option) => () => {
             setInputValue(option.label);
             setSelectedOption(option);
-            setOptions(props.options.map(op => ({ ...op, selected: option.value === op.value })));
+            setOptions(getOptionsWithSelected(props.options, option));
             props.onChange && props.onChange(option.value);
         };
 
