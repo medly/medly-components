@@ -5,6 +5,7 @@ interface Common extends HTMLProps<HTMLElement>, WithThemeProp {
     textColor?: string;
     uppercase?: boolean;
     lineThrough?: boolean;
+    fullWidth?: boolean;
 }
 
 export interface Props extends Common {

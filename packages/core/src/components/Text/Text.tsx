@@ -16,7 +16,8 @@ const Text: React.FunctionComponent<Props> & WithStyle = React.memo(
 
 Text.defaultProps = {
     lineThrough: false,
-    uppercase: false
+    uppercase: false,
+    fullWidth: false
 };
 Text.displayName = 'Text';
 Text.Style = TextStyled;

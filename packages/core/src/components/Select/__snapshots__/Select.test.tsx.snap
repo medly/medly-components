@@ -1790,7 +1790,7 @@ exports[`Select component should render options correctly 2`] = `
             class="Optionstyled__OptionStyled-spa1sf-0 fbHLAT"
           >
             <span
-              class="Textstyled__TextStyled-sc-1ntgl3l-0 hSvGtU"
+              class="Textstyled__TextStyled-sc-1ntgl3l-0 VMJgD"
             >
               All
             </span>
@@ -1799,7 +1799,7 @@ exports[`Select component should render options correctly 2`] = `
             class="Optionstyled__OptionStyled-spa1sf-0 fbHLAT"
           >
             <span
-              class="Textstyled__TextStyled-sc-1ntgl3l-0 hSvGtU"
+              class="Textstyled__TextStyled-sc-1ntgl3l-0 VMJgD"
             >
               Dummy1
             </span>
@@ -1808,7 +1808,7 @@ exports[`Select component should render options correctly 2`] = `
             class="Optionstyled__OptionStyled-spa1sf-0 fbHLAT"
           >
             <span
-              class="Textstyled__TextStyled-sc-1ntgl3l-0 hSvGtU"
+              class="Textstyled__TextStyled-sc-1ntgl3l-0 VMJgD"
             >
               Dummy2
             </span>

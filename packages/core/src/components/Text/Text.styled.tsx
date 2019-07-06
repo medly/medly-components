@@ -25,6 +25,13 @@ export const TextStyled = styled('span').attrs(getMappedProps)<StyledProps>`
     font-weight: ${({ textWeight }) => textWeight};
     color: ${({ textColor }) => textColor};
 
+    ${({ fullWidth, theme }) =>
+        fullWidth &&
+        css`
+            display: block;
+            margin: ${theme.spacing.S} 0px;
+        `}
+
     ${props => props.uppercase && uppercase()};
     ${props => props.lineThrough && lineThrough()};
 `;
