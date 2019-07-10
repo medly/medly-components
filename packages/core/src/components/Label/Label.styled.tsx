@@ -1,6 +1,6 @@
 import { defaultTheme } from '@medly-components/theme';
 import { css, oppositePositionalspacing, styled } from '@medly-components/utils';
-import { Props } from './types';
+import { Props, StyledProps } from './types';
 
 const asterisk = () => css`
     ::after {
@@ -13,9 +13,21 @@ const pointerCursor = () => css`
     cursor: pointer;
 `;
 
-export const LabelStyled = styled('label')<Props>`
+const getMappedProps = ({ theme: { label, font }, ...props }: Props) => {
+    const { defaults } = label;
+    const { textSize, textWeight, textColor } = props;
+    return {
+        textSize: font.sizes[textSize || defaults.textSize],
+        textWeight: font.weights[textWeight || defaults.textWeight],
+        textColor: textColor || defaults.textColor
+    };
+};
+
+export const LabelStyled = styled('label').attrs(getMappedProps)<StyledProps>`
+    font-size: ${({ textSize }) => textSize};
+    font-weight: ${({ textWeight }) => textWeight};
+    color: ${({ textColor }) => textColor};
     margin: ${({ theme, labelPosition }) => oppositePositionalspacing(labelPosition, theme.spacing.S)};
-    color: ${({ theme }) => theme.label.color};
     ${({ required }) => required && asterisk()}
     ${({ showPointer }) => showPointer && pointerCursor()}
 `;

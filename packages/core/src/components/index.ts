@@ -5,6 +5,7 @@ import CheckboxGroup from './CheckboxGroup';
 import CssBaseline from './CssBaseline';
 import FieldWithLabel from './FieldWithLabel';
 import Input from './Input';
+import Label from './Label';
 import List from './List';
 import Modal from './Modal';
 import Pagination from './Pagination';
@@ -19,20 +20,21 @@ import Text from './Text';
 export {
     Button,
     Card,
-    CssBaseline,
-    FieldWithLabel,
     Checkbox,
     CheckboxGroup,
+    CssBaseline,
+    FieldWithLabel,
     Input,
+    Label,
+    List,
+    Modal,
     Pagination,
     Popover,
     PopoverWrapper,
     Radio,
     RadioGroup,
-    Modal,
     Select,
     Stepper,
-    Text,
     Table,
-    List
+    Text
 };

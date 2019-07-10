@@ -1,24 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Label component should render correctly when required props is falsy 1`] = `
-.c0 {
-  margin: 0px 8px 0px 0px;
-  color: #555;
-}
-
-<div>
-  <label
-    class="c0"
-  >
-    Demo Label
-  </label>
-</div>
-`;
-
 exports[`Label component should render correctly with all the props given 1`] = `
 .c0 {
+  font-size: 14px;
+  font-weight: 200;
+  color: pink;
   margin: 0px 0px 8px 0px;
-  color: #555;
+  cursor: pointer;
 }
 
 .c0::after {
@@ -32,6 +20,23 @@ exports[`Label component should render correctly with all the props given 1`] = 
     required=""
   >
     Demo Label
+  </label>
+</div>
+`;
+
+exports[`Label component should render correctly with default props 1`] = `
+.c0 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin: 0px 8px 0px 0px;
+}
+
+<div>
+  <label
+    class="c0"
+  >
+    Label
   </label>
 </div>
 `;

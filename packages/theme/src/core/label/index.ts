@@ -1,8 +1,12 @@
-import colors from '../colors';
+import font from '../font';
 import { LabelTheme } from './types';
 
 const label: LabelTheme = {
-    color: colors.grey[700]
+    defaults: {
+        textSize: 'M2',
+        textWeight: 'Normal',
+        textColor: font.defaultColor
+    }
 };
 
 export default label;
