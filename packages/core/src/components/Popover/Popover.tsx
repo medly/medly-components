@@ -6,6 +6,7 @@ import { PopoverProps, PopoverWrapperProps } from './types';
 export const PopoverWrapper: React.SFC<PopoverWrapperProps> & WithStyle = props => {
     const wrapperRef = useRef(null);
     const [popoverState, setPopoverState] = useState(false);
+    const { onOuterClick, ...restProps } = props;
 
     const changePopoverState = (state: boolean) => {
         if (props.interactionType === 'click') {
@@ -22,15 +23,16 @@ export const PopoverWrapper: React.SFC<PopoverWrapperProps> & WithStyle = props 
 
     useOuterClickNotifier(() => {
         changePopoverState(false);
-        props.onOuterClick && props.onOuterClick();
+        onOuterClick && onOuterClick();
     }, wrapperRef);
 
-    return <PopoverWrapperStyled {...props} ref={wrapperRef} onClick={handleOnClick} data-testid="popover-wrapper" />;
+    return <PopoverWrapperStyled {...restProps} ref={wrapperRef} onClick={handleOnClick} data-testid="popover-wrapper" />;
 };
 
 PopoverWrapper.defaultProps = {
     interactionType: 'hover',
-    placement: 'bottom'
+    placement: 'bottom',
+    onOuterClick: undefined
 };
 PopoverWrapper.Style = PopoverWrapperStyled;
 
