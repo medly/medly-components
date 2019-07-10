@@ -3,6 +3,7 @@ import { Props as SvgIconProps } from './SvgIcon/types';
 export { default as AddIcon } from './icons/AddIcon';
 export { default as BurgerIcon } from './icons/BurgerIcon';
 export { default as CheckIcon } from './icons/CheckIcon';
+export { default as ClipboardIcon } from './icons/ClipboardIcon';
 export { default as ClearIcon } from './icons/ClearIcon';
 export { default as DeleteIcon } from './icons/DeleteIcon';
 export { default as DownArrowIcon } from './icons/DownArrowIcon';
