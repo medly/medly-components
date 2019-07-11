@@ -92,6 +92,10 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 35px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -121,6 +125,10 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 35px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -154,8 +162,8 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 
 .c13 .c10 {
   opacity: 0;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  -webkit-transition: opacity 02s;
+  transition: opacity 02s;
 }
 
 .c0 {
@@ -189,9 +197,8 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 
 .c0 .c14 {
   max-height: 500px;
-  padding-bottom: 10px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .c1 {
@@ -384,6 +391,10 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 35px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -413,6 +424,10 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 35px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -446,7 +461,6 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 
 .c15 .c7 {
   display: block;
-  padding: 5px;
 }
 
 .c17 .c9 * {
@@ -459,13 +473,12 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 
 .c17 .c11 {
   opacity: 0;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  -webkit-transition: opacity 02s;
+  transition: opacity 02s;
 }
 
 .c17 .c14 {
   max-height: 0px;
-  padding-bottom: 0px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -501,9 +514,8 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 
 .c0 .c14 {
   max-height: 500px;
-  padding-bottom: 10px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .c1 {
@@ -707,6 +719,10 @@ exports[`SideNav should render properly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 35px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -736,6 +752,10 @@ exports[`SideNav should render properly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  min-height: 35px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -784,13 +804,12 @@ exports[`SideNav should render properly 1`] = `
 
 .c0 .c9 {
   opacity: 0;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  -webkit-transition: opacity 02s;
+  transition: opacity 02s;
 }
 
 .c0 .c12 {
   max-height: 0px;
-  padding-bottom: 0px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }

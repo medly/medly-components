@@ -17,6 +17,10 @@ export const NavItemStyled = styled('li')<NavItemStyledProps>`
     grid-template-rows: ${({ theme }) => theme.sideNav.closeSize} auto;
     grid-template-columns: ${({ theme }) => theme.sideNav.closeSize} auto;
     align-items: center;
+    min-height: 35px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 
     cursor: pointer;
 

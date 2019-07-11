@@ -11,6 +11,5 @@ export const SubNavListStyled = styled('ul')<NavListProps>`
 
     ${NavItem.Style} {
         display: block;
-        padding: 5px;
     }
 `;

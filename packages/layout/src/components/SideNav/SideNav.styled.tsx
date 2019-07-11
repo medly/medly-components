@@ -13,19 +13,17 @@ const openState = () => css`
     }
     ${SubNavList} {
         max-height: 500px;
-        padding-bottom: 10px;
-        transition: all 0.2s;
+        transition: all 0.3s;
     }
 `;
 
 const closeState = () => css`
     ${Text.Style} {
         opacity: 0;
-        transition: opacity 0.2s;
+        transition: opacity 02s;
     }
     ${SubNavList} {
         max-height: 0px;
-        padding-bottom: 0px;
         transition: all 0.2s;
     }
 `;
