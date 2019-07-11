@@ -13,19 +13,21 @@ module.exports = {
     coverageDirectory: '<rootDir>/coverage/',
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
     testEnvironment: 'jsdom',
-    verbose: true,
     rootDir: './',
     projects: [
         {
             displayName: 'core',
+            setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect', 'jest-styled-components'],
             testMatch: ['<rootDir>/packages/core/src/**/*.(spec|test).(ts|tsx)']
         },
         {
             displayName: 'layout',
+            setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect', 'jest-styled-components'],
             testMatch: ['<rootDir>/packages/layout/src/**/*.(spec|test).(ts|tsx)']
         },
         {
             displayName: 'icons',
+            setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect', 'jest-styled-components'],
             testMatch: ['<rootDir>/packages/icons/src/icons/**/*.(spec|test).(ts|tsx)']
         }
     ]

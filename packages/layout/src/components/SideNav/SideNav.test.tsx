@@ -1,13 +1,12 @@
 import { HomeIcon, SearchIcon } from '@medly-components/icons';
 import { TestUtils } from '@medly-components/utils';
-import 'jest-styled-components';
 import React from 'react';
 import SideNav from './SideNav';
 
-const { render, fireEvent, cleanup } = TestUtils;
+const { act, render, fireEvent, cleanup } = TestUtils;
 afterEach(cleanup);
 
-describe('SideNav component', () => {
+describe('SideNav', () => {
     it('should render properly', () => {
         const { container } = render(
             <SideNav>
@@ -29,7 +28,7 @@ describe('SideNav component', () => {
     });
 
     it('should change width after clicking on burger icon', () => {
-        const { container } = render(
+        const { container, getByTestId } = render(
             <SideNav>
                 <SideNav.NavItem>
                     <SideNav.NavIcon>
@@ -45,7 +44,43 @@ describe('SideNav component', () => {
                 </SideNav.NavItem>
             </SideNav>
         );
-        fireEvent.click(container.querySelector('button'));
-        expect(container).toMatchSnapshot();
+        act(() => {
+            fireEvent.click(container.querySelector('button'));
+        });
+        expect(getByTestId('sidenav')).toMatchSnapshot();
+    });
+
+    it('should change width when clicked on item with sidenavOpenCloseOnClick prop given', () => {
+        const { getByText, getByTestId } = render(
+            <SideNav>
+                <SideNav.NavItem>
+                    <SideNav.NavIcon>
+                        <HomeIcon />
+                    </SideNav.NavIcon>
+                    <SideNav.NavText>Home</SideNav.NavText>
+                </SideNav.NavItem>
+                <SideNav.NavItem active sidenavOpenCloseOnClick>
+                    <SideNav.NavIcon>
+                        <SearchIcon />
+                    </SideNav.NavIcon>
+                    <SideNav.NavText>Search</SideNav.NavText>
+                    <SideNav.SubNavList>
+                        <SideNav.NavItem active>
+                            <SideNav.NavText>Cars</SideNav.NavText>
+                        </SideNav.NavItem>
+                        <SideNav.NavItem>
+                            <SideNav.NavText>Bikes</SideNav.NavText>
+                        </SideNav.NavItem>
+                        <SideNav.NavItem>
+                            <SideNav.NavText>Phones</SideNav.NavText>
+                        </SideNav.NavItem>
+                    </SideNav.SubNavList>
+                </SideNav.NavItem>
+            </SideNav>
+        );
+        act(() => {
+            fireEvent.click(getByText('Search'));
+        });
+        expect(getByTestId('sidenav')).toMatchSnapshot();
     });
 });

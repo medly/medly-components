@@ -1,3 +1,3 @@
-import { NavItemStyled as NavItem } from './NavItem.styled';
+import NavItem from './NavItem';
 
 export default NavItem;

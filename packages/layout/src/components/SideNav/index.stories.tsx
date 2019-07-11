@@ -14,11 +14,22 @@ storiesOf('Layout', module).add(
                 </SideNav.NavIcon>
                 <SideNav.NavText>Home</SideNav.NavText>
             </SideNav.NavItem>
-            <SideNav.NavItem active>
+            <SideNav.NavItem sidenavOpenCloseOnClick active>
                 <SideNav.NavIcon>
                     <SearchIcon />
                 </SideNav.NavIcon>
                 <SideNav.NavText>Search</SideNav.NavText>
+                <SideNav.SubNavList>
+                    <SideNav.NavItem active>
+                        <SideNav.NavText>Cars</SideNav.NavText>
+                    </SideNav.NavItem>
+                    <SideNav.NavItem>
+                        <SideNav.NavText>Bikes</SideNav.NavText>
+                    </SideNav.NavItem>
+                    <SideNav.NavItem>
+                        <SideNav.NavText>Phones</SideNav.NavText>
+                    </SideNav.NavItem>
+                </SideNav.SubNavList>
             </SideNav.NavItem>
             <SideNav.NavItem>
                 <SideNav.NavIcon>

@@ -1,9 +1,34 @@
 import { Text } from '@medly-components/core';
 import { BurgerIcon, SvgIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
-import { centerAligned, styled } from '@medly-components/utils';
+import { centerAligned, css, styled } from '@medly-components/utils';
 import SidePanel from '../SidePanel';
+import SubNavList from './SubNavList';
 import { SideNavStyledProps } from './types';
+
+const openState = () => css`
+    ${Text.Style} {
+        opacity: 1;
+        transition: opacity 0.3s;
+    }
+    ${SubNavList} {
+        max-height: 500px;
+        padding-bottom: 10px;
+        transition: all 0.2s;
+    }
+`;
+
+const closeState = () => css`
+    ${Text.Style} {
+        opacity: 0;
+        transition: opacity 0.2s;
+    }
+    ${SubNavList} {
+        max-height: 0px;
+        padding-bottom: 0px;
+        transition: all 0.2s;
+    }
+`;
 
 export const SideNavStyled = styled(SidePanel)<SideNavStyledProps>`
     width: ${({ open, theme }) => (open ? theme.sideNav.openSize : theme.sideNav.closeSize)};
@@ -21,11 +46,9 @@ export const SideNavStyled = styled(SidePanel)<SideNavStyledProps>`
         }
     }
 
-    ${Text.Style} {
-        opacity: ${({ open }) => (open ? 1 : 0)};
-        transition: 0.2s;
-    }
+    ${({ open }) => (open ? openState() : closeState())}
 `;
+
 SideNavStyled.defaultProps = {
     theme: defaultTheme
 };

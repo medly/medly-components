@@ -5,25 +5,32 @@ import React, { useState } from 'react';
 import NavItem from './NavItem';
 import NavList from './NavList';
 import { SideNavIconStyled, SideNavStyled } from './SideNav.styled';
+import SubNavList from './SubNavList';
 import { SideNavStaticProps } from './types';
 
 export const SideNav: React.SFC & WithStyle & SideNavStaticProps = props => {
     const [open, setOpenState] = useState(false);
 
-    const burgerIconClickHandler = (state: boolean) => {
-        setOpenState(state);
+    const burgerIconClickHandler = () => {
+        setOpenState(!open);
     };
 
     return (
-        <SideNavStyled open={open} position="left">
+        <SideNavStyled open={open} position="left" data-testid="sidenav">
             <SideNavIconStyled>
                 <BurgerIcon size="S" onClick={burgerIconClickHandler} />
             </SideNavIconStyled>
-            <NavList>{props.children}</NavList>
+            <NavList>
+                {React.Children.map(props.children, child => {
+                    return React.cloneElement(child as any, { sidenavCloseHandler: burgerIconClickHandler });
+                })}
+            </NavList>
         </SideNavStyled>
     );
 };
 
+SideNav.NavList = NavList;
+SideNav.SubNavList = SubNavList;
 SideNav.NavItem = NavItem;
 SideNav.NavIcon = SideNavIconStyled;
 SideNav.NavText = Text;
