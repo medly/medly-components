@@ -150,7 +150,7 @@ exports[`Popover component should render properly when interction type is click 
         Dummy Div
       </div>
       <div
-        class="sc-bdVaJa fgTvrY"
+        class="sc-bdVaJa imlMkk"
         style="display: block;"
       >
         Dummy popover
@@ -176,7 +176,7 @@ exports[`Popover component should render properly when interction type is click 
         Dummy Div
       </div>
       <div
-        class="sc-bdVaJa fgTvrY"
+        class="sc-bdVaJa imlMkk"
         style="display: none;"
       >
         Dummy popover
@@ -202,7 +202,7 @@ exports[`Popover component should render properly when interction type is click 
         Dummy Div
       </div>
       <div
-        class="sc-bdVaJa fgTvrY"
+        class="sc-bdVaJa imlMkk"
         style="display: none;"
       >
         Dummy popover

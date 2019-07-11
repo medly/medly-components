@@ -1751,7 +1751,7 @@ exports[`Select component should render options correctly 2`] = `
       data-testid="popover-wrapper"
     >
       <div
-        class="sc-htoDjs eAqhBh"
+        class="sc-gZMcBi gbJrtR"
       >
         <div
           class="sc-bdVaJa chJteP"
@@ -1767,7 +1767,7 @@ exports[`Select component should render options correctly 2`] = `
           
         </div>
         <svg
-          class="sc-dnqmqq cHxrGv SvgIconstyled__SvgIconStyled-sc-1pf3x8a-0 iwcmjV"
+          class="sc-gqjmRU gBbjXc sc-htoDjs hWnCjm"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"
@@ -1782,7 +1782,7 @@ exports[`Select component should render options correctly 2`] = `
         </svg>
       </div>
       <div
-        class="sc-ifAKCX fNmMpd"
+        class="sc-ifAKCX jgRiJO"
         style="display: block;"
       >
         <ul

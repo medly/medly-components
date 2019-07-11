@@ -2,7 +2,7 @@ import { TestUtils } from '@medly-components/utils';
 import React from 'react';
 import Select from './Select';
 
-const { render, fireEvent, cleanup } = TestUtils;
+const { act, render, fireEvent, cleanup } = TestUtils;
 afterEach(cleanup);
 
 describe('Select component', () => {
@@ -35,7 +35,9 @@ describe('Select component', () => {
         const { container, getByTestId } = render(<Select options={options} />);
         expect(container).toMatchSnapshot();
         const inputEl = getByTestId('select-input');
-        fireEvent.click(inputEl);
+        act(() => {
+            fireEvent.click(inputEl);
+        });
         expect(container).toMatchSnapshot();
     });
 
@@ -43,9 +45,13 @@ describe('Select component', () => {
         const mockOnChange = jest.fn();
         const { getByTestId, getByText } = render(<Select options={options} onChange={mockOnChange} />);
         const inputEl = getByTestId('select-input');
-        fireEvent.click(inputEl);
+        act(() => {
+            fireEvent.click(inputEl);
+        });
         const option = getByText('Dummy1');
-        fireEvent.click(option);
+        act(() => {
+            fireEvent.click(option);
+        });
         // @ts-ignore
         expect(inputEl.value).toEqual('Dummy1');
         expect(mockOnChange).toHaveBeenCalledWith('Dummy1');
@@ -54,16 +60,20 @@ describe('Select component', () => {
     it('should render matched options when input values changes', async () => {
         const { container, getByTestId } = render(<Select options={options} />);
         const inputEl = getByTestId('select-input');
-        fireEvent.click(inputEl);
-        fireEvent.change(inputEl, { target: { value: 'Dummy' } });
+        act(() => {
+            fireEvent.click(inputEl);
+            fireEvent.change(inputEl, { target: { value: 'Dummy' } });
+        });
         expect(container).toMatchSnapshot();
     });
 
     it('should render all the options when input value is not matched to any option', async () => {
         const { container, getByTestId } = render(<Select options={options} />);
         const inputEl = getByTestId('select-input');
-        fireEvent.click(inputEl);
-        fireEvent.change(inputEl, { target: { value: 'Hello' } });
+        act(() => {
+            fireEvent.click(inputEl);
+            fireEvent.change(inputEl, { target: { value: 'Hello' } });
+        });
         expect(container).toMatchSnapshot();
     });
 
@@ -76,8 +86,10 @@ describe('Select component', () => {
         );
         const inputEl = getByTestId('select-input');
         const outer = getByText('Outer');
-        fireEvent.click(inputEl);
-        fireEvent.click(outer);
+        act(() => {
+            fireEvent.click(inputEl);
+            fireEvent.click(outer);
+        });
         expect(container).toMatchSnapshot();
     });
 });
