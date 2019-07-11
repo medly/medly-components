@@ -9,14 +9,14 @@ export interface NavListProps extends HTMLProps<HTMLUListElement>, WithThemeProp
 export interface NavItemProps extends HTMLProps<HTMLLIElement>, WithThemeProp {
     as?: any;
     to?: string;
-    sidenavOpenCloseOnClick?: boolean;
-    sidenavCloseHandler?: () => void;
+    openSideNavOnClick?: boolean;
+    sidenavOpenHandler?: () => void;
     active?: boolean;
 }
 
 export interface NavItemStyledProps extends HTMLProps<HTMLLIElement>, WithThemeProp {
     as?: any;
-    isActive?: boolean;
+    isHeighlited?: boolean;
 }
 
 export interface SideNavStaticProps {

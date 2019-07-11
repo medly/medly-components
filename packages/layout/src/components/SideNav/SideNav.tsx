@@ -15,14 +15,18 @@ export const SideNav: React.SFC & WithStyle & SideNavStaticProps = props => {
         setOpenState(!open);
     };
 
+    const sidenavOpenHandler = () => {
+        !open && setOpenState(true);
+    };
+
     return (
         <SideNavStyled open={open} position="left" data-testid="sidenav">
             <SideNavIconStyled>
-                <BurgerIcon size="S" onClick={burgerIconClickHandler} />
+                <BurgerIcon size="S" open={open} onClick={burgerIconClickHandler} />
             </SideNavIconStyled>
             <NavList>
                 {React.Children.map(props.children, child => {
-                    return React.cloneElement(child as any, { sidenavCloseHandler: burgerIconClickHandler });
+                    return React.cloneElement(child as any, { sidenavOpenHandler });
                 })}
             </NavList>
         </SideNavStyled>

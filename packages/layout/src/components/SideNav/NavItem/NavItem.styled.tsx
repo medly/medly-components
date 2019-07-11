@@ -8,7 +8,7 @@ export const NavItemStyled = styled('li')<NavItemStyledProps>`
     width: 100%;
     text-decoration: none;
     box-sizing: border-box;
-    background-color: ${({ isActive, theme }) => (isActive ? theme.sideNav.activeColor : 'transparent')};
+    background-color: ${({ isHeighlited, theme }) => (isHeighlited ? theme.sideNav.activeColor : 'transparent')};
 
     display: grid;
     grid-template-areas:
@@ -33,7 +33,7 @@ export const NavItemStyled = styled('li')<NavItemStyledProps>`
         grid-area: header;
         font-size: ${({ theme: { font, sideNav } }) => font.sizes[sideNav.textSize]};
         color: ${({ theme: { sideNav } }) => sideNav.textColor};
-        font-weight: ${({ isActive, theme }) => (isActive ? theme.font.weights.Strong : theme.font.weights.Normal)};
+        font-weight: ${({ isHeighlited, theme }) => (isHeighlited ? theme.font.weights.Strong : theme.font.weights.Normal)};
     }
 `;
 

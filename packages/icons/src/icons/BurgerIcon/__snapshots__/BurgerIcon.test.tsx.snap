@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BurgerIcon component should render with all props given 1`] = `
-.c1 {
+.c2 {
   display: block;
   position: absolute;
   width: calc(24px * 1.33);
@@ -17,15 +17,15 @@ exports[`BurgerIcon component should render with all props given 1`] = `
   transition: 0.25s ease-in-out;
 }
 
-.c1:nth-child(1) {
+.c2:nth-child(1) {
   top: 0px;
 }
 
-.c1:nth-child(2) {
+.c2:nth-child(2) {
   top: calc(24px * 0.4);
 }
 
-.c1:nth-child(3) {
+.c2:nth-child(3) {
   top: calc(24px * 0.8);
 }
 
@@ -45,22 +45,42 @@ exports[`BurgerIcon component should render with all props given 1`] = `
   cursor: pointer;
 }
 
+.c0 .c1:nth-child(1) {
+  top: calc(24px * 0.4);
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.c0 .c1:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.c0 .c1:nth-child(3) {
+  top: calc(24px * 0.4);
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
 <div>
   <button
     class="c0"
     color="pink"
     id="burgerIcon"
+    open=""
   >
     <span
-      class="c1"
+      class="c1 c2"
       color="pink"
     />
     <span
-      class="c1"
+      class="c1 c2"
       color="pink"
     />
     <span
-      class="c1"
+      class="c1 c2"
       color="pink"
     />
   </button>

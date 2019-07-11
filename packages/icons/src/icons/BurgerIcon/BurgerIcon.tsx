@@ -1,19 +1,12 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useState } from 'react';
+import React from 'react';
 import { BurgerIconStyled, SpanStyled } from './BurgerIcon.styled';
 import { BurgerIconProps } from './types';
 
 export const BurgerIcon: React.SFC<BurgerIconProps> & WithStyle = React.memo(props => {
-    const [open, setOpenState] = useState(false);
     const { size, color } = props;
-
-    const onclickHandler = () => {
-        props.onClick && props.onClick(!open);
-        setOpenState(!open);
-    };
-
     return (
-        <BurgerIconStyled id="burgerIcon" {...{ size, color, open, onClick: onclickHandler }}>
+        <BurgerIconStyled id="burgerIcon" {...props}>
             <SpanStyled {...{ size, color }} />
             <SpanStyled {...{ size, color }} />
             <SpanStyled {...{ size, color }} />
@@ -22,7 +15,8 @@ export const BurgerIcon: React.SFC<BurgerIconProps> & WithStyle = React.memo(pro
 });
 BurgerIcon.displayName = 'BurgerIcon';
 BurgerIcon.defaultProps = {
-    size: 'L'
+    size: 'L',
+    open: false
 };
 BurgerIcon.Style = BurgerIconStyled;
 

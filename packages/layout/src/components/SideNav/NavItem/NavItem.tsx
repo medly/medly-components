@@ -4,13 +4,13 @@ import { NavItemProps } from '../types';
 import { NavItemStyled } from './NavItem.styled';
 
 const NavItem: React.SFC<NavItemProps> & WithStyle = props => {
-    const { active, sidenavOpenCloseOnClick, sidenavCloseHandler, onClick, ...restProps } = props;
+    const { active, openSideNavOnClick, sidenavOpenHandler, onClick, ...restProps } = props;
 
     const onClickHandler = (event: React.MouseEvent<HTMLLIElement>) => {
         onClick && onClick(event);
-        sidenavOpenCloseOnClick && sidenavCloseHandler();
+        openSideNavOnClick && sidenavOpenHandler();
     };
-    return <NavItemStyled {...{ ...restProps, isActive: active }} onClick={onClickHandler} />;
+    return <NavItemStyled {...{ ...restProps, isHeighlited: active }} onClick={onClickHandler} />;
 };
 
 NavItem.Style = NavItemStyled;

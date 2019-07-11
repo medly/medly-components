@@ -352,19 +352,19 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   cursor: pointer;
 }
 
-.c16 .c4:nth-child(1) {
+.c3 .c4:nth-child(1) {
   top: calc(16px * 0.4);
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
 
-.c16 .c4:nth-child(2) {
+.c3 .c4:nth-child(2) {
   opacity: 0;
   left: -60px;
 }
 
-.c16 .c4:nth-child(3) {
+.c3 .c4:nth-child(3) {
   top: calc(16px * 0.4);
   -webkit-transform: rotate(-135deg);
   -ms-transform: rotate(-135deg);
@@ -463,21 +463,21 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   display: block;
 }
 
-.c17 .c9 * {
+.c16 .c9 * {
   fill: #ffffff;
 }
 
-.c17 .c2 * {
+.c16 .c2 * {
   background: #ffffff;
 }
 
-.c17 .c11 {
+.c16 .c11 {
   opacity: 0;
   -webkit-transition: opacity 02s;
   transition: opacity 02s;
 }
 
-.c17 .c14 {
+.c16 .c14 {
   max-height: 0px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -546,6 +546,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
     <button
       class="c2 c3"
       id="burgerIcon"
+      open=""
     >
       <span
         class="c4 c5"

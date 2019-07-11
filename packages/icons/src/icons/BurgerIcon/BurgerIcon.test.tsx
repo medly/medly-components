@@ -2,7 +2,7 @@ import { TestUtils } from '@medly-components/utils';
 import React from 'react';
 import BurgerIcon from './BurgerIcon';
 
-const { render, fireEvent, cleanup } = TestUtils;
+const { render, cleanup } = TestUtils;
 afterEach(cleanup);
 
 describe('BurgerIcon component', () => {
@@ -12,16 +12,7 @@ describe('BurgerIcon component', () => {
     });
 
     it('should render with all props given', () => {
-        const { container } = render(<BurgerIcon size="M" color="pink" />);
+        const { container } = render(<BurgerIcon size="M" color="pink" open />);
         expect(container).toMatchSnapshot();
-    });
-
-    it('should call onClick prop with expected open state', () => {
-        const mockOnClick = jest.fn();
-        const { container } = render(<BurgerIcon size="M" color="pink" onClick={mockOnClick} />);
-        fireEvent.click(container.querySelector('button'));
-        expect(mockOnClick).toHaveBeenCalledWith(true);
-        fireEvent.click(container.querySelector('button'));
-        expect(mockOnClick).toHaveBeenCalledWith(false);
     });
 });

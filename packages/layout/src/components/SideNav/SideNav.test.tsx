@@ -51,6 +51,8 @@ describe('SideNav', () => {
     });
 
     it('should change width when clicked on item with sidenavOpenCloseOnClick prop given', () => {
+        const mockOnClick = jest.fn();
+
         const { getByText, getByTestId } = render(
             <SideNav>
                 <SideNav.NavItem>
@@ -59,7 +61,7 @@ describe('SideNav', () => {
                     </SideNav.NavIcon>
                     <SideNav.NavText>Home</SideNav.NavText>
                 </SideNav.NavItem>
-                <SideNav.NavItem active sidenavOpenCloseOnClick>
+                <SideNav.NavItem active openSideNavOnClick onClick={mockOnClick}>
                     <SideNav.NavIcon>
                         <SearchIcon />
                     </SideNav.NavIcon>
@@ -81,6 +83,7 @@ describe('SideNav', () => {
         act(() => {
             fireEvent.click(getByText('Search'));
         });
+        expect(mockOnClick).toBeCalled();
         expect(getByTestId('sidenav')).toMatchSnapshot();
     });
 });

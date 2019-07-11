@@ -13,5 +13,6 @@ export interface BurgerIconStyledProps extends SpanProps {
 export interface BurgerIconProps {
     size?: IconSizes;
     color?: string;
-    onClick?: (open: boolean) => void;
+    open?: boolean;
+    onClick?: () => void;
 }
