@@ -1,5 +1,4 @@
 import { TestUtils } from '@medly-components/utils';
-import 'jest-styled-components';
 import React from 'react';
 import Text from '../Text';
 import { CardStyled as Card } from './Card.styled';

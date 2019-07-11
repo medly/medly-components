@@ -1,4 +1,3 @@
-import 'jest-styled-components';
 import React from 'react';
 import * as TestUtils from '../../test-utils';
 import InjectClassName from './InjectClassName';

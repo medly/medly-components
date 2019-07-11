@@ -1,10 +1,9 @@
 import { TestUtils } from '@medly-components/utils';
-import 'jest-styled-components';
 import React from 'react';
 import Radio from '../Radio';
 import RadioGroup from './RadioGroup';
 
-describe('Radio component', () => {
+describe('Radio Group', () => {
     it('should render correctly with all the default props', () => {
         const { container } = TestUtils.render(
             <RadioGroup>

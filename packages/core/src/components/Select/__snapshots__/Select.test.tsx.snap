@@ -611,8 +611,10 @@ exports[`Select component should render correctly with all the props given 1`] =
 }
 
 .c2 {
-  margin: 0px 8px 0px 0px;
+  font-size: 14px;
+  font-weight: 400;
   color: #555;
+  margin: 0px 8px 0px 0px;
 }
 
 .c2::after {
@@ -1741,22 +1743,22 @@ exports[`Select component should render options correctly 1`] = `
 exports[`Select component should render options correctly 2`] = `
 <div>
   <div
-    class="FieldWithLabelstyled__FieldWithLabel-sc-12atfcu-0 kkxgBZ"
+    class="sc-bdVaJa dMOddM"
   >
     
     <div
-      class="Popoverstyled__PopoverWrapperStyled-sc-1ep6kh8-1 dQvXqU"
+      class="sc-EHOje hoSZQU"
       data-testid="popover-wrapper"
     >
       <div
-        class="Selectstyled__SelectWrapperStyled-sc-1uzemkw-0 kOkglZ"
+        class="sc-htoDjs eAqhBh"
       >
         <div
-          class="FieldWithLabelstyled__FieldWithLabel-sc-12atfcu-0 fjtHwA"
+          class="sc-bdVaJa chJteP"
         >
           
           <input
-            class="Inputstyled__InputStyled-sc-1s6rfxm-0 duLETI"
+            class="sc-bxivhb etpGOZ"
             data-testid="select-input"
             label=""
             placeholder="Please Select . . ."
@@ -1765,7 +1767,7 @@ exports[`Select component should render options correctly 2`] = `
           
         </div>
         <svg
-          class="Selectstyled__SelectIconStyled-sc-1uzemkw-1 houdRU SvgIconstyled__SvgIconStyled-sc-1pf3x8a-0 iwcmjV"
+          class="sc-dnqmqq cHxrGv SvgIconstyled__SvgIconStyled-sc-1pf3x8a-0 iwcmjV"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"
@@ -1780,35 +1782,35 @@ exports[`Select component should render options correctly 2`] = `
         </svg>
       </div>
       <div
-        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 ijRlFB"
+        class="sc-ifAKCX fNmMpd"
         style="display: block;"
       >
         <ul
-          class="Optionsstyled__OptionsStyled-kdjj7f-0 eSqiSK"
+          class="sc-gzVnrw ixfFMZ"
         >
           <li
-            class="Optionstyled__OptionStyled-spa1sf-0 fbHLAT"
+            class="sc-bZQynM bWpKfv"
           >
             <span
-              class="Textstyled__TextStyled-sc-1ntgl3l-0 VMJgD"
+              class="sc-htpNat fHZlne"
             >
               All
             </span>
           </li>
           <li
-            class="Optionstyled__OptionStyled-spa1sf-0 fbHLAT"
+            class="sc-bZQynM bWpKfv"
           >
             <span
-              class="Textstyled__TextStyled-sc-1ntgl3l-0 VMJgD"
+              class="sc-htpNat fHZlne"
             >
               Dummy1
             </span>
           </li>
           <li
-            class="Optionstyled__OptionStyled-spa1sf-0 fbHLAT"
+            class="sc-bZQynM bWpKfv"
           >
             <span
-              class="Textstyled__TextStyled-sc-1ntgl3l-0 VMJgD"
+              class="sc-htpNat fHZlne"
             >
               Dummy2
             </span>

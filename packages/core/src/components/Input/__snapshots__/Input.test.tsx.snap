@@ -17,8 +17,10 @@ exports[`Input component should render correctly when fullWidth & required props
 }
 
 .c1 {
-  margin: 0px 8px 0px 0px;
+  font-size: 14px;
+  font-weight: 400;
   color: #555;
+  margin: 0px 8px 0px 0px;
 }
 
 .c4 {
@@ -183,8 +185,10 @@ exports[`Input component should render correctly with all the props given 1`] = 
 }
 
 .c1 {
-  margin: 0px 0px 8px 0px;
+  font-size: 14px;
+  font-weight: 400;
   color: #555;
+  margin: 0px 0px 8px 0px;
 }
 
 .c1::after {

@@ -1,5 +1,5 @@
 import { TestUtils } from '@medly-components/utils';
-import 'jest-styled-components';
+import '';
 import React from 'react';
 import Link from '../Link';
 import BreadCrumbs from './BreadCrumbs';

@@ -143,14 +143,14 @@ exports[`Popover component should render properly when interction type is click 
       Sibling div
     </div>
     <div
-      class="Popoverstyled__PopoverWrapperStyled-sc-1ep6kh8-1 nwLMf"
+      class="sc-bwzfXH llsvyT"
       data-testid="popover-wrapper"
     >
       <div>
         Dummy Div
       </div>
       <div
-        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 cbWkKe"
+        class="sc-bdVaJa fgTvrY"
         style="display: block;"
       >
         Dummy popover
@@ -169,14 +169,14 @@ exports[`Popover component should render properly when interction type is click 
       Sibling div
     </div>
     <div
-      class="Popoverstyled__PopoverWrapperStyled-sc-1ep6kh8-1 nwLMf"
+      class="sc-bwzfXH llsvyT"
       data-testid="popover-wrapper"
     >
       <div>
         Dummy Div
       </div>
       <div
-        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 cbWkKe"
+        class="sc-bdVaJa fgTvrY"
         style="display: none;"
       >
         Dummy popover
@@ -195,14 +195,14 @@ exports[`Popover component should render properly when interction type is click 
       Sibling div
     </div>
     <div
-      class="Popoverstyled__PopoverWrapperStyled-sc-1ep6kh8-1 nwLMf"
+      class="sc-bwzfXH llsvyT"
       data-testid="popover-wrapper"
     >
       <div>
         Dummy Div
       </div>
       <div
-        class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 cbWkKe"
+        class="sc-bdVaJa fgTvrY"
         style="display: none;"
       >
         Dummy popover
@@ -263,14 +263,14 @@ exports[`Popover component should render properly when interction type is hover 
 exports[`Popover component should render properly when interction type is hover 2`] = `
 <div>
   <div
-    class="Popoverstyled__PopoverWrapperStyled-sc-1ep6kh8-1 ksQXxV"
+    class="sc-bwzfXH fyXEKl"
     data-testid="popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
-      class="Popoverstyled__PopoverStyled-sc-1ep6kh8-0 hAZlVo"
+      class="sc-bdVaJa hBuwrQ"
     >
       Dummy popover
     </div>
