@@ -6,6 +6,7 @@ import Row from './Row';
 export const TableStyled = styled('ol')`
     margin: 0px;
     padding: 0px;
+    overflow: auto;
 
     * {
         box-sizing: border-box;
@@ -25,11 +26,15 @@ export const TableStyled = styled('ol')`
         }
 
         &:nth-child(even) {
-            background-color: #f7f7f7;
+            * {
+                background-color: #f7f7f7;
+            }
         }
 
         &:nth-child(odd) {
-            background-color: white;
+            * {
+                background-color: white;
+            }
         }
     }
 `;
