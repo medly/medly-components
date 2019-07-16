@@ -15,6 +15,7 @@ import ExpandMoreIcon from './icons/ExpandMoreIcon';
 import FileUploadIcon from './icons/FileUploadIcon';
 import HomeIcon from './icons/HomeIcon';
 import SearchIcon from './icons/SearchIcon';
+import SyncIcon from './icons/SyncIcon';
 import UpArrowIcon from './icons/UpArrowIcon';
 
 const size: IconSizes[] = ['XS', 'S', 'M', 'L', 'XL'];
@@ -34,4 +35,5 @@ storiesOf('Icons', module)
     .add('ExpandMore', () => <ExpandMoreIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('UpArrowIcon', () => <UpArrowIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('FileUploadIcon', () => <FileUploadIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
-    .add('Search', () => <SearchIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />);
+    .add('Search', () => <SearchIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
+    .add('Sync', () => <SyncIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />);
