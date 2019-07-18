@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.1.0...@medly-components/core@1.2.0) (2019-07-18)
+
+
+### Bug Fixes
+
+* changed props name of SideNav Component ([c3a7bcc](https://github.com/medlypharmacy/medly-components/commit/c3a7bcc))
+* fixed all broken tests ([5190780](https://github.com/medlypharmacy/medly-components/commit/5190780))
+* fixed issue of props not changing in the table component ([9a30da5](https://github.com/medlypharmacy/medly-components/commit/9a30da5))
+* fixed onOuter prop warning issue ([b780cd1](https://github.com/medlypharmacy/medly-components/commit/b780cd1))
+* fixed sidenav click issue ([c1576e0](https://github.com/medlypharmacy/medly-components/commit/c1576e0))
+* fixed table overflow issue ([b2ac9f9](https://github.com/medlypharmacy/medly-components/commit/b2ac9f9))
+* fixed warning issues ([fba9df8](https://github.com/medlypharmacy/medly-components/commit/fba9df8))
+
+
+### Features
+
+* added babel watch command in all the packages ([12ec095](https://github.com/medlypharmacy/medly-components/commit/12ec095))
+* added configurable icon color in sidenav ([10f4d0e](https://github.com/medlypharmacy/medly-components/commit/10f4d0e))
+* added fullWidth functionality to Text component ([0d55ee4](https://github.com/medlypharmacy/medly-components/commit/0d55ee4))
+* added multiple features to card component ([612ca48](https://github.com/medlypharmacy/medly-components/commit/612ca48))
+* added npm script to upload packages to s3 bucket ([dc85580](https://github.com/medlypharmacy/medly-components/commit/dc85580))
+* added Popover component ([c225eeb](https://github.com/medlypharmacy/medly-components/commit/c225eeb))
+* added sort parameter in column config to control sort on table ([3f773c3](https://github.com/medlypharmacy/medly-components/commit/3f773c3))
+* added theme for card component ([6e748cf](https://github.com/medlypharmacy/medly-components/commit/6e748cf))
+
+
+
+
+
 # 1.1.0 (2019-06-19)
 
 
