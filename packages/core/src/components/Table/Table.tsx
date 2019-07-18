@@ -10,9 +10,16 @@ import { ColumnConfig, Props, SortOrder } from './types';
 
 const Table: React.SFC<Props> & WithStyle = props => {
     const [sortedColumnField, setSortedColumnField] = useState('');
+    const [data, setData] = useState(props.data);
     const [columnConfigs, setColumnConfigs] = useState(addSizeToColumnConfig(props.columns));
 
-    useEffect(() => setColumnConfigs(addSizeToColumnConfig(props.columns)), [props.columns]);
+    useEffect(() => {
+        setColumnConfigs(addSizeToColumnConfig(props.columns));
+    }, [props.columns]);
+
+    useEffect(() => {
+        setData(props.data);
+    }, [props.data]);
 
     const handleWidthChange = (width: number, field: string) => setColumnConfigs(changeSize(width, field, columnConfigs));
 
@@ -73,7 +80,7 @@ const Table: React.SFC<Props> & WithStyle = props => {
     return (
         <TableStyled>
             <Row gridTemplateColumns={getGridTemplateColumns(columnConfigs)}>{getHeadCells()}</Row>
-            {props.data.map((row, i) => {
+            {data.map((row, i) => {
                 return (
                     <Row key={i} gridTemplateColumns={getGridTemplateColumns(columnConfigs)}>
                         {getRowsCells(row)}
