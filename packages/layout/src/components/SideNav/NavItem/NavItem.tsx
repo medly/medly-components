@@ -10,7 +10,7 @@ const NavItem: React.SFC<NavItemProps> & WithStyle = props => {
         onClick && onClick(event);
         openSideNavOnClick && sidenavOpenHandler();
     };
-    return <NavItemStyled {...{ ...restProps, isHeighlited: active }} onClick={onClickHandler} />;
+    return <NavItemStyled {...{ ...restProps, active: `${active}` }} onClick={onClickHandler} />;
 };
 
 NavItem.Style = NavItemStyled;

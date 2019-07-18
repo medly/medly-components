@@ -34,7 +34,7 @@ const Table: React.SFC<Props> & WithStyle = props => {
         configs.forEach(config => {
             return config.children
                 ? cells.push(
-                      <GroupCell gridTemplateColumns={getGridTemplateColumns(config.children)}>
+                      <GroupCell key={config.field} gridTemplateColumns={getGridTemplateColumns(config.children)}>
                           <GroupCellTitle>{config.title}</GroupCellTitle>
                           {getHeadCells(config.children, config.field)}
                       </GroupCell>
@@ -45,6 +45,7 @@ const Table: React.SFC<Props> & WithStyle = props => {
                           frozen={config.frozen}
                           hide={config.hide}
                           sort={config.sort}
+                          key={field ? `${field}.${config.field}` : config.field}
                           field={field ? `${field}.${config.field}` : config.field}
                           handleSortIconClick={handleSortIconClick}
                           handleWidthChange={handleWidthChange}
@@ -57,19 +58,19 @@ const Table: React.SFC<Props> & WithStyle = props => {
         return cells;
     };
 
-    const getRowsCells = (data: any, configs: ColumnConfig[] = columnConfigs, field = '') => {
+    const getRowsCells = (rowData: any, configs: ColumnConfig[] = columnConfigs, field = '') => {
         const cells: React.ReactElement[] = [];
 
         configs.forEach(config => {
             return config.children
                 ? cells.push(
-                      <GroupCell gridTemplateColumns={getGridTemplateColumns(config.children)}>
-                          {getRowsCells(data[config.field], config.children, config.field)}
+                      <GroupCell key={`${field}.${config.field}`} gridTemplateColumns={getGridTemplateColumns(config.children)}>
+                          {getRowsCells(rowData[config.field], config.children, config.field)}
                       </GroupCell>
                   )
                 : cells.push(
-                      <Cell hide={config.hide} frozen={config.frozen}>
-                          {data[config.field]}
+                      <Cell key={`${config.field}`} hide={config.hide} frozen={config.frozen}>
+                          {rowData[config.field]}
                       </Cell>
                   );
         });

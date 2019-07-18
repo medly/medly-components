@@ -16,7 +16,7 @@ export interface NavItemProps extends HTMLProps<HTMLLIElement>, WithThemeProp {
 
 export interface NavItemStyledProps extends HTMLProps<HTMLLIElement>, WithThemeProp {
     as?: any;
-    isHeighlited?: boolean;
+    active?: string;
 }
 
 export interface SideNavStaticProps {
