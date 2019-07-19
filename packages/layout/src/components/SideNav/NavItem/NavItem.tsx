@@ -7,6 +7,7 @@ const NavItem: React.SFC<NavItemProps> & WithStyle = props => {
     const { active, openSideNavOnClick, sidenavOpenHandler, onClick, ...restProps } = props;
 
     const onClickHandler = (event: React.MouseEvent<HTMLLIElement>) => {
+        event.stopPropagation();
         onClick && onClick(event);
         openSideNavOnClick && sidenavOpenHandler();
     };
