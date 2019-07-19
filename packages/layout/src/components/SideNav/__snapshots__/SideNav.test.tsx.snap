@@ -96,6 +96,10 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 
@@ -129,6 +133,10 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 
@@ -162,8 +170,8 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 
 .c13 .c10 {
   opacity: 0;
-  -webkit-transition: opacity 02s;
-  transition: opacity 02s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .c0 {
@@ -191,14 +199,14 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 
 .c0 .c10 {
   opacity: 1;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 .c0 .c14 {
   max-height: 500px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .c1 {
@@ -395,6 +403,10 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 
@@ -428,6 +440,10 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 
@@ -473,8 +489,8 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 
 .c16 .c11 {
   opacity: 0;
-  -webkit-transition: opacity 02s;
-  transition: opacity 02s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .c16 .c14 {
@@ -508,14 +524,14 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 
 .c0 .c11 {
   opacity: 1;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 .c0 .c14 {
   max-height: 500px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .c1 {
@@ -724,6 +740,10 @@ exports[`SideNav should render properly 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 
@@ -757,6 +777,10 @@ exports[`SideNav should render properly 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 
@@ -805,8 +829,8 @@ exports[`SideNav should render properly 1`] = `
 
 .c0 .c9 {
   opacity: 0;
-  -webkit-transition: opacity 02s;
-  transition: opacity 02s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .c0 .c12 {

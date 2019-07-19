@@ -2,7 +2,6 @@ import { Text } from '@medly-components/core';
 import { SvgIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
 import { styled } from '@medly-components/utils';
-import React from 'react';
 import { NavItemStyledProps } from '../types';
 
 export const NavItemStyled = styled('li')<NavItemStyledProps>`
@@ -23,6 +22,7 @@ export const NavItemStyled = styled('li')<NavItemStyledProps>`
     white-space: nowrap;
     overflow: hidden;
 
+    user-select: none;
     cursor: pointer;
 
     ${SvgIcon} {

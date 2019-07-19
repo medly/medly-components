@@ -9,18 +9,18 @@ import { SideNavStyledProps } from './types';
 const openState = () => css`
     ${Text.Style} {
         opacity: 1;
-        transition: opacity 0.3s;
+        transition: opacity 0.4s;
     }
     ${SubNavList} {
         max-height: 500px;
-        transition: all 0.3s;
+        transition: all 0.4s;
     }
 `;
 
 const closeState = () => css`
     ${Text.Style} {
         opacity: 0;
-        transition: opacity 02s;
+        transition: opacity 0.2s;
     }
     ${SubNavList} {
         max-height: 0px;

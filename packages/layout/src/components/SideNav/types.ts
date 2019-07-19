@@ -1,5 +1,6 @@
 import { Text } from '@medly-components/core';
-import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, WithStyle, WithThemeProp } from '@medly-components/utils';
+import { AnyStyledComponent } from 'styled-components';
 
 export interface SideNavStyledProps extends WithThemeProp {
     open: boolean;
@@ -20,8 +21,8 @@ export interface NavItemStyledProps extends HTMLProps<HTMLLIElement>, WithThemeP
 }
 
 export interface SideNavStaticProps {
-    NavItem: React.SFC<NavItemProps>;
-    NavIcon: React.SFC;
+    NavItem: React.SFC<NavItemProps> & WithStyle;
+    NavIcon: AnyStyledComponent;
     NavList: React.SFC<NavListProps>;
     SubNavList: React.SFC<NavListProps>;
     NavText: typeof Text;
