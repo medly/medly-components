@@ -12,6 +12,7 @@ import DropDownIcon from './icons/DropDownIcon';
 import EditIcon from './icons/EditIcon';
 import ExpandLessIcon from './icons/ExpandLessIcon';
 import ExpandMoreIcon from './icons/ExpandMoreIcon';
+import FileIcon from './icons/FileIcon';
 import FileUploadIcon from './icons/FileUploadIcon';
 import HomeIcon from './icons/HomeIcon';
 import SearchIcon from './icons/SearchIcon';
@@ -33,6 +34,7 @@ storiesOf('Icons', module)
     .add('Home', () => <HomeIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('ExpandLess', () => <ExpandLessIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('ExpandMore', () => <ExpandMoreIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
+    .add('File', () => <FileIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('UpArrowIcon', () => <UpArrowIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('FileUploadIcon', () => <FileUploadIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('Search', () => <SearchIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
