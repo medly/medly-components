@@ -16,6 +16,7 @@ import FileIcon from './icons/FileIcon';
 import FileUploadIcon from './icons/FileUploadIcon';
 import HomeIcon from './icons/HomeIcon';
 import SearchIcon from './icons/SearchIcon';
+import SliderIcon from './icons/SliderIcon';
 import SyncIcon from './icons/SyncIcon';
 import UpArrowIcon from './icons/UpArrowIcon';
 
@@ -38,4 +39,5 @@ storiesOf('Icons', module)
     .add('UpArrowIcon', () => <UpArrowIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('FileUploadIcon', () => <FileUploadIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('Search', () => <SearchIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
+    .add('Slider', () => <SliderIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('Sync', () => <SyncIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />);
