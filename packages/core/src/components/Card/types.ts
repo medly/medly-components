@@ -5,6 +5,7 @@ export type Variants = 'outlined' | 'solid' | 'flat';
 export type FlowDirection = 'vertical' | 'horizontal';
 
 export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
+    to?: string;
     variant?: Variants;
     flowDirection?: FlowDirection;
     separator?: boolean;
