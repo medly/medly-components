@@ -16,6 +16,8 @@ exports[`Button component should render properly when it is disabled 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   border: 1px solid #AAAAAA;
   background-color: #AAAAAA;
   color: #ffffff;
@@ -64,6 +66,8 @@ exports[`Button component should render properly with flat variant and primary c
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   color: #012040;
 }
 
@@ -109,6 +113,8 @@ exports[`Button component should render properly with outlined variant and secon
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   border: 1px solid #FA6F80;
   color: #FA6F80;
 }
@@ -155,6 +161,8 @@ exports[`Button component should render properly with solid variant 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   border: 1px solid #012040;
   background-color: #012040;
   color: #ffffff;
@@ -202,6 +210,8 @@ exports[`Button component should wrap children into Text component when renderin
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   border: 1px solid #012040;
   background-color: #012040;
   color: #ffffff;

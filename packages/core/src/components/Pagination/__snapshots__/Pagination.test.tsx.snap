@@ -16,6 +16,8 @@ exports[`Pagination component should render correctly with all the default props
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   border: 1px solid #AAAAAA;
   color: #AAAAAA;
 }
@@ -41,6 +43,8 @@ exports[`Pagination component should render correctly with all the default props
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   border: 1px solid #012040;
   background-color: #012040;
   color: #ffffff;
@@ -67,6 +71,8 @@ exports[`Pagination component should render correctly with all the default props
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   border: 1px solid #012040;
   color: #012040;
 }
@@ -242,6 +248,8 @@ exports[`Pagination component should render correctly with all the props given 1
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   border: 1px solid #012040;
   background-color: #012040;
   color: #ffffff;
@@ -268,6 +276,8 @@ exports[`Pagination component should render correctly with all the props given 1
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   border: 1px solid #012040;
   color: #012040;
 }

@@ -25,6 +25,7 @@ export const ButtonStyled = styled('button')<Props>`
     padding: 8px 10px;
     border-radius: 3px;
     user-select: none;
+    text-decoration: none;
 
     &:hover {
         cursor: pointer;
