@@ -62,7 +62,9 @@ export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('di
                 `;
             case 'left':
                 return css`
-                    grid-template-columns: ${fieldWithMaxContent ? 'auto  max-content' : '20% 80%'};
+                    grid-template-columns: ${fieldWithMaxContent
+                        ? 'auto  max-content'
+                        : 'minmax(max-content, 20%) minmax(max-content, 80%)'};
                     grid-template-areas:
                         'label field'
                         'random description';
@@ -70,7 +72,9 @@ export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('di
             case 'right':
             default:
                 return css`
-                    grid-template-columns: ${fieldWithMaxContent ? 'max-content auto' : '80% 20%'};
+                    grid-template-columns: ${fieldWithMaxContent
+                        ? 'max-content auto'
+                        : 'minmax(max-content, 80%) minmax(max-content, 20%)'};
                     grid-template-areas:
                         'field label'
                         'description random';

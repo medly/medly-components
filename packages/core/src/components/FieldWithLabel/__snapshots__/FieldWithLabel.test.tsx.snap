@@ -79,7 +79,7 @@ exports[`FieldWithLabel component should render properly when lable is not prese
 .c0 {
   margin: 8px;
   display: inline-grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: minmax(max-content,20%) minmax(max-content,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -365,7 +365,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c0 {
   margin: 8px 0px;
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: minmax(max-content,80%) minmax(max-content,20%);
   grid-template-areas: 'field label' 'description random';
 }
 

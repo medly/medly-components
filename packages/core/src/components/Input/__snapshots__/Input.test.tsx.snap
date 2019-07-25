@@ -30,7 +30,7 @@ exports[`Input component should render correctly when fullWidth & required props
 .c0 {
   margin: 8px;
   display: inline-grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: minmax(max-content,20%) minmax(max-content,80%);
   grid-template-areas: 'label field' 'random description';
 }
 
