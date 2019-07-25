@@ -36,7 +36,7 @@ export interface HeadCellProps extends CellStyledProps {
 }
 
 export interface Props {
-    onRowClick: (rowData: object) => void;
+    onRowClick?: (rowData: object) => void;
     data: Array<{}>;
     columns: ColumnConfig[];
     onSortIconClick?: (field: string, order: SortOrder) => void;
