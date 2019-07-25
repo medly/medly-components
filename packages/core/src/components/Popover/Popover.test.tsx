@@ -1,25 +1,41 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
 import { Popover, PopoverWrapper } from './Popover';
+import { Placement } from './types';
 
 const { render, fireEvent, cleanup } = TestUtils;
-afterEach(cleanup);
 
 describe('Popover component', () => {
-    it('should render properly when interction type is hover', () => {
-        const { container, getByTestId } = render(
-            <PopoverWrapper interactionType="hover" placement="right">
-                <div>Dummy Div</div>
-                <Popover>Dummy popover</Popover>
-            </PopoverWrapper>
-        );
-        expect(container).toMatchSnapshot();
-        const wrapper = getByTestId('popover-wrapper');
-        fireEvent.click(wrapper);
-        expect(container).toMatchSnapshot();
+    afterEach(cleanup);
+
+    describe('with placement', () => {
+        afterEach(cleanup);
+
+        test.each([
+            'top-start',
+            'top',
+            'top-end',
+            'right-start',
+            'right',
+            'right-end',
+            'bottom-end',
+            'bottom',
+            'bottom-start',
+            'left-end',
+            'left',
+            'left-start'
+        ])('%s, should render properly', (placement: Placement) => {
+            const { container } = render(
+                <PopoverWrapper interactionType="hover" placement={placement}>
+                    <div>Dummy Div</div>
+                    <Popover>Dummy popover</Popover>
+                </PopoverWrapper>
+            );
+            expect(container).toMatchSnapshot();
+        });
     });
 
-    it('should not render popover when interction type is hover and user click on it', () => {
+    it('should not render popover when interction type is hover and user clicks on it', () => {
         const { container, getByTestId } = render(
             <PopoverWrapper interactionType="hover" placement="top">
                 <div>Dummy Div</div>

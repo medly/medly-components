@@ -1,16 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxGroup component should render correctly with all the default props 1`] = `
-.c8 {
+.c11 {
   font-size: 16px;
 }
 
-.c8 * {
+.c11 * {
   fill: #555;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin: 0px 0px 0px 8px;
+  cursor: pointer;
+}
+
+.c2 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c4 {
+  grid-area: label;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .c0 {
   margin: 8px 0px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 'label field' 'random description';
+}
+
+.c0 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -24,8 +52,14 @@ exports[`CheckboxGroup component should render correctly with all the default pr
   flex-direction: row;
 }
 
-.c1 {
+.c3 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-columns: max-content auto;
+  grid-template-areas: 'field label' 'description random';
+}
+
+.c3 .c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -39,15 +73,7 @@ exports[`CheckboxGroup component should render correctly with all the default pr
   flex-direction: row-reverse;
 }
 
-.c2 {
-  font-size: 14px;
-  font-weight: 400;
-  color: #555;
-  margin: 0px 0px 0px 8px;
-  cursor: pointer;
-}
-
-.c3 {
+.c6 {
   width: 16px;
   height: 16px;
   position: relative;
@@ -68,7 +94,7 @@ exports[`CheckboxGroup component should render correctly with all the default pr
   align-items: center;
 }
 
-.c6 {
+.c9 {
   width: 0;
   height: 0;
   z-index: 1;
@@ -86,12 +112,12 @@ exports[`CheckboxGroup component should render correctly with all the default pr
   align-items: center;
 }
 
-.c6 .c7 {
+.c9 .c10 {
   width: 100%;
   height: 100%;
 }
 
-.c4 {
+.c7 {
   opacity: 0;
   z-index: 2;
   position: absolute;
@@ -101,11 +127,11 @@ exports[`CheckboxGroup component should render correctly with all the default pr
   cursor: pointer;
 }
 
-.c4:focus {
+.c7:focus {
   outline: none;
 }
 
-.c4:checked ~ .c5 {
+.c7:checked ~ .c8 {
   width: calc(70%);
   height: calc(70%);
   -webkit-transition: width 0.2s ease,height 0.2s ease;
@@ -118,76 +144,80 @@ exports[`CheckboxGroup component should render correctly with all the default pr
   >
     
     <div
-      class="c1"
+      class="c1 c2"
     >
-      <label
-        class="c2"
-        for="Apple"
-      >
-        Apple
-      </label>
       <div
         class="c3"
       >
-        <input
-          class="c4"
-          id="Apple"
-          name=""
-          type="checkbox"
-        />
-        <div
-          class="c5 c6"
+        <label
+          class="c4 c5"
+          for="Apple"
         >
-          <svg
-            class="c7 c8"
-            height="1em"
-            viewBox="0 0 18 14"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
+          Apple
+        </label>
+        <div
+          class="c6"
+        >
+          <input
+            class="c7"
+            id="Apple"
+            name=""
+            type="checkbox"
+          />
+          <div
+            class="c8 c9"
           >
-            <path
-              d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-              fill="none"
-              fill-rule="evenodd"
-            />
-          </svg>
+            <svg
+              class="c10 c11"
+              height="1em"
+              viewBox="0 0 18 14"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      class="c1"
-    >
-      <label
-        class="c2"
-        for="Orange"
-      >
-        Orange
-      </label>
       <div
         class="c3"
       >
-        <input
-          class="c4"
-          id="Orange"
-          name=""
-          type="checkbox"
-        />
-        <div
-          class="c5 c6"
+        <label
+          class="c4 c5"
+          for="Orange"
         >
-          <svg
-            class="c7 c8"
-            height="1em"
-            viewBox="0 0 18 14"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
+          Orange
+        </label>
+        <div
+          class="c6"
+        >
+          <input
+            class="c7"
+            id="Orange"
+            name=""
+            type="checkbox"
+          />
+          <div
+            class="c8 c9"
           >
-            <path
-              d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-              fill="none"
-              fill-rule="evenodd"
-            />
-          </svg>
+            <svg
+              class="c10 c11"
+              height="1em"
+              viewBox="0 0 18 14"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -196,16 +226,70 @@ exports[`CheckboxGroup component should render correctly with all the default pr
 `;
 
 exports[`CheckboxGroup component should render correctly with all the props given 1`] = `
-.c9 {
+.c12 {
   font-size: 16px;
 }
 
-.c9 * {
+.c12 * {
   fill: #555;
 }
 
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin: 0px 0px 0px 8px;
+  cursor: pointer;
+}
+
 .c2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin: 0px 0px 8px 0px;
+}
+
+.c2::after {
+  color: red;
+  content: ' *';
+}
+
+.c4 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 {
+  grid-area: label;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c13 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c5 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-columns: max-content auto;
+  grid-template-areas: 'field label' 'description random';
+}
+
+.c5 .c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -221,6 +305,11 @@ exports[`CheckboxGroup component should render correctly with all the props give
 
 .c0 {
   margin: 8px 0px;
+  display: grid;
+  grid-template-areas: 'label' 'field' 'description';
+}
+
+.c0 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -234,27 +323,7 @@ exports[`CheckboxGroup component should render correctly with all the props give
   flex-direction: column;
 }
 
-.c3 {
-  font-size: 14px;
-  font-weight: 400;
-  color: #555;
-  margin: 0px 0px 0px 8px;
-  cursor: pointer;
-}
-
-.c1 {
-  font-size: 14px;
-  font-weight: 400;
-  color: #555;
-  margin: 0px 0px 8px 0px;
-}
-
-.c1::after {
-  color: red;
-  content: ' *';
-}
-
-.c4 {
+.c7 {
   width: 16px;
   height: 16px;
   position: relative;
@@ -275,7 +344,7 @@ exports[`CheckboxGroup component should render correctly with all the props give
   align-items: center;
 }
 
-.c7 {
+.c10 {
   width: 0;
   height: 0;
   z-index: 1;
@@ -293,12 +362,12 @@ exports[`CheckboxGroup component should render correctly with all the props give
   align-items: center;
 }
 
-.c7 .c8 {
+.c10 .c11 {
   width: 100%;
   height: 100%;
 }
 
-.c5 {
+.c8 {
   opacity: 0;
   z-index: 2;
   position: absolute;
@@ -308,11 +377,11 @@ exports[`CheckboxGroup component should render correctly with all the props give
   cursor: pointer;
 }
 
-.c5:focus {
+.c8:focus {
   outline: none;
 }
 
-.c5:checked ~ .c6 {
+.c8:checked ~ .c9 {
   width: calc(70%);
   height: calc(70%);
   -webkit-transition: width 0.2s ease,height 0.2s ease;
@@ -324,84 +393,88 @@ exports[`CheckboxGroup component should render correctly with all the props give
     class="c0"
   >
     <label
-      class="c1"
+      class="c1 c2"
       required=""
     >
       Fruits
     </label>
     <div
-      class="c2"
+      class="c3 c4"
     >
-      <label
-        class="c3"
-        for="Apple"
-      >
-        Apple
-      </label>
       <div
-        class="c4"
+        class="c5"
       >
-        <input
-          class="c5"
-          id="Apple"
-          name="fruits"
-          required=""
-          type="checkbox"
-        />
-        <div
-          class="c6 c7"
+        <label
+          class="c1 c6"
+          for="Apple"
         >
-          <svg
-            class="c8 c9"
-            height="1em"
-            viewBox="0 0 18 14"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
+          Apple
+        </label>
+        <div
+          class="c7"
+        >
+          <input
+            class="c8"
+            id="Apple"
+            name="fruits"
+            required=""
+            type="checkbox"
+          />
+          <div
+            class="c9 c10"
           >
-            <path
-              d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-              fill="none"
-              fill-rule="evenodd"
-            />
-          </svg>
+            <svg
+              class="c11 c12"
+              height="1em"
+              viewBox="0 0 18 14"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      class="c2"
-    >
-      <label
-        class="c3"
-        for="Orange"
-      >
-        Orange
-      </label>
       <div
-        class="c4"
+        class="c5"
       >
-        <input
-          class="c5"
-          id="Orange"
-          name="fruits"
-          required=""
-          type="checkbox"
-        />
-        <div
-          class="c6 c7"
+        <label
+          class="c1 c6"
+          for="Orange"
         >
-          <svg
-            class="c8 c9"
-            height="1em"
-            viewBox="0 0 18 14"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
+          Orange
+        </label>
+        <div
+          class="c7"
+        >
+          <input
+            class="c8"
+            id="Orange"
+            name="fruits"
+            required=""
+            type="checkbox"
+          />
+          <div
+            class="c9 c10"
           >
-            <path
-              d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-              fill="none"
-              fill-rule="evenodd"
-            />
-          </svg>
+            <svg
+              class="c11 c12"
+              height="1em"
+              viewBox="0 0 18 14"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
+                fill="none"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>

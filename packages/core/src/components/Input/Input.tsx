@@ -12,9 +12,9 @@ const Input: React.FunctionComponent<Props> & WithStyle = React.memo(
         const { description, label, labelPosition, fullWidth, required } = props;
         return (
             <FieldWithLabel {...{ fullWidth, labelPosition }}>
-                {label && <Label {...{ required, labelPosition }}>{label}</Label>}
+                {label && <FieldWithLabel.Label {...{ required, labelPosition }}>{label}</FieldWithLabel.Label>}
                 <InputStyled ref={ref} {...props} />
-                {description && <Text>{description}</Text>}
+                {description && <FieldWithLabel.Description>{description}</FieldWithLabel.Description>}
             </FieldWithLabel>
         );
     })

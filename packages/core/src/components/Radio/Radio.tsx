@@ -9,11 +9,11 @@ const Radio: React.SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { size, label, required, labelPosition, ...restProps } = props;
         return (
-            <FieldWithLabel {...{ labelPosition }}>
+            <FieldWithLabel fieldWithMaxContent {...{ labelPosition }}>
                 {label && (
-                    <Label showPointer {...{ labelPosition }} htmlFor={label}>
+                    <FieldWithLabel.Label showPointer {...{ labelPosition }} htmlFor={label}>
                         {label}
-                    </Label>
+                    </FieldWithLabel.Label>
                 )}
                 <RadioWrapperStyled {...{ size }}>
                     <RadioStyled ref={ref} id={label} required={required} {...restProps} />

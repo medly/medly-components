@@ -1,8 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Select component should close options when clicked outside 1`] = `
+.c13 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
 .c1 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 'label field' 'random description';
+}
+
+.c1 .c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -18,6 +30,11 @@ exports[`Select component should close options when clicked outside 1`] = `
 
 .c4 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-areas: 'label' 'field' 'description';
+}
+
+.c4 .c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -29,12 +46,6 @@ exports[`Select component should close options when clicked outside 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.c14 {
-  font-size: 14px;
-  font-weight: 400;
-  color: inherit;
 }
 
 .c6 {
@@ -178,11 +189,7 @@ exports[`Select component should close options when clicked outside 1`] = `
   background-color: transparent;
 }
 
-.c15 ~ .c13 {
-  color: #818A91;
-}
-
-.c15 .c0 {
+.c14 .c0 {
   margin: 0px;
   cursor: pointer;
   -webkit-flex: 1;
@@ -190,7 +197,7 @@ exports[`Select component should close options when clicked outside 1`] = `
   flex: 1;
 }
 
-.c15 .c0 .c5 {
+.c14 .c0 .c5 {
   margin: 0px;
   cursor: pointer;
   border: none;
@@ -260,7 +267,7 @@ exports[`Select component should close options when clicked outside 1`] = `
             class="c12"
           >
             <span
-              class="c13 c14"
+              class="c13"
             >
               All
             </span>
@@ -269,7 +276,7 @@ exports[`Select component should close options when clicked outside 1`] = `
             class="c12"
           >
             <span
-              class="c13 c14"
+              class="c13"
             >
               Dummy1
             </span>
@@ -278,7 +285,7 @@ exports[`Select component should close options when clicked outside 1`] = `
             class="c12"
           >
             <span
-              class="c13 c14"
+              class="c13"
             >
               Dummy2
             </span>
@@ -292,8 +299,20 @@ exports[`Select component should close options when clicked outside 1`] = `
 `;
 
 exports[`Select component should render all the options when input value is not matched to any option 1`] = `
+.c13 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
 .c1 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 'label field' 'random description';
+}
+
+.c1 .c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -309,6 +328,11 @@ exports[`Select component should render all the options when input value is not 
 
 .c4 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-areas: 'label' 'field' 'description';
+}
+
+.c4 .c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -320,12 +344,6 @@ exports[`Select component should render all the options when input value is not 
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.c14 {
-  font-size: 14px;
-  font-weight: 400;
-  color: inherit;
 }
 
 .c6 {
@@ -469,11 +487,7 @@ exports[`Select component should render all the options when input value is not 
   background-color: transparent;
 }
 
-.c15 ~ .c13 {
-  color: #818A91;
-}
-
-.c15 .c0 {
+.c14 .c0 {
   margin: 0px;
   cursor: pointer;
   -webkit-flex: 1;
@@ -481,7 +495,7 @@ exports[`Select component should render all the options when input value is not 
   flex: 1;
 }
 
-.c15 .c0 .c5 {
+.c14 .c0 .c5 {
   margin: 0px;
   cursor: pointer;
   border: none;
@@ -548,7 +562,7 @@ exports[`Select component should render all the options when input value is not 
             class="c12"
           >
             <span
-              class="c13 c14"
+              class="c13"
             >
               All
             </span>
@@ -557,7 +571,7 @@ exports[`Select component should render all the options when input value is not 
             class="c12"
           >
             <span
-              class="c13 c14"
+              class="c13"
             >
               Dummy1
             </span>
@@ -566,7 +580,7 @@ exports[`Select component should render all the options when input value is not 
             class="c12"
           >
             <span
-              class="c13 c14"
+              class="c13"
             >
               Dummy2
             </span>
@@ -580,8 +594,44 @@ exports[`Select component should render all the options when input value is not 
 `;
 
 exports[`Select component should render correctly with all the props given 1`] = `
-.c5 {
+.c3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin: 0px 8px 0px 0px;
+}
+
+.c3::after {
+  color: red;
+  content: ' *';
+}
+
+.c15 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c2 {
+  grid-area: label;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c17 {
+  grid-area: description;
+  margin: 5px 0px 0px 2px;
+  color: #818A91;
+}
+
+.c6 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-areas: 'label' 'field' 'description';
+}
+
+.c6 .c19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -597,6 +647,12 @@ exports[`Select component should render correctly with all the props given 1`] =
 
 .c1 {
   margin: 8px 0px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 'label field' 'random description';
+}
+
+.c1 .c19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -610,25 +666,7 @@ exports[`Select component should render correctly with all the props given 1`] =
   flex-direction: row;
 }
 
-.c2 {
-  font-size: 14px;
-  font-weight: 400;
-  color: #555;
-  margin: 0px 8px 0px 0px;
-}
-
-.c2::after {
-  color: red;
-  content: ' *';
-}
-
-.c15 {
-  font-size: 14px;
-  font-weight: 400;
-  color: inherit;
-}
-
-.c7 {
+.c8 {
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
@@ -640,32 +678,32 @@ exports[`Select component should render correctly with all the props given 1`] =
   border-radius: 5px;
 }
 
-.c7:focus {
+.c8:focus {
   border-color: #012040;
   outline: 0;
 }
 
-.c7::-webkit-input-placeholder {
+.c8::-webkit-input-placeholder {
   color: #999999;
 }
 
-.c7::-moz-placeholder {
+.c8::-moz-placeholder {
   color: #999999;
 }
 
-.c7:-ms-input-placeholder {
+.c8:-ms-input-placeholder {
   color: #999999;
 }
 
-.c7::placeholder {
+.c8::placeholder {
   color: #999999;
 }
 
-.c7::-webkit-file-upload-button {
+.c8::-webkit-file-upload-button {
   visibility: hidden;
 }
 
-.c11 {
+.c12 {
   position: absolute;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
@@ -674,7 +712,7 @@ exports[`Select component should render correctly with all the props given 1`] =
   width: calc(100% - 0px);
 }
 
-.c3 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -685,7 +723,7 @@ exports[`Select component should render correctly with all the props given 1`] =
   flex-direction: column-reverse;
 }
 
-.c3 .c10 {
+.c4 .c11 {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -709,24 +747,24 @@ exports[`Select component should render correctly with all the props given 1`] =
   border-top-right-radius: 3px;
 }
 
-.c13 {
+.c14 {
   cursor: pointer;
   padding: 5px;
   color: #ffffff;
   background-color: #FE8D6B;
 }
 
-.c13:last-child {
+.c14:last-child {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
 
-.c13:first-child {
+.c14:first-child {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 
-.c12 {
+.c13 {
   list-style: none;
   padding: 0px;
   margin: 0px;
@@ -737,15 +775,15 @@ exports[`Select component should render correctly with all the props given 1`] =
   border-radius: 4px;
 }
 
-.c9 {
+.c10 {
   font-size: 12px;
 }
 
-.c9 * {
+.c10 * {
   fill: #555;
 }
 
-.c17 .c0 {
+.c18 .c0 {
   margin: 0px;
   cursor: pointer;
   -webkit-flex: 1;
@@ -753,14 +791,14 @@ exports[`Select component should render correctly with all the props given 1`] =
   flex: 1;
 }
 
-.c17 .c0 .c6 {
+.c18 .c0 .c7 {
   margin: 0px;
   cursor: pointer;
   border: none;
   background-color: transparent;
 }
 
-.c4 {
+.c5 {
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
   border-radius: 4px;
@@ -785,14 +823,9 @@ exports[`Select component should render correctly with all the props given 1`] =
   -ms-flex-align: center;
   align-items: center;
   width: calc(100% - 0px);
-  margin: 0px 8px 0px 0px;
 }
 
-.c4 ~ .c14 {
-  color: #818A91;
-}
-
-.c4 .c0 {
+.c5 .c0 {
   margin: 0px;
   cursor: pointer;
   -webkit-flex: 1;
@@ -800,14 +833,14 @@ exports[`Select component should render correctly with all the props given 1`] =
   flex: 1;
 }
 
-.c4 .c0 .c6 {
+.c5 .c0 .c7 {
   margin: 0px;
   cursor: pointer;
   border: none;
   background-color: transparent;
 }
 
-.c8 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -821,24 +854,24 @@ exports[`Select component should render correctly with all the props given 1`] =
     class="c0 c1"
   >
     <label
-      class="c2"
+      class="c2 c3"
       required=""
     >
       Pharmacy
     </label>
     <div
-      class="c3"
+      class="c4"
       data-testid="popover-wrapper"
     >
       <div
-        class="c4"
+        class="c5"
       >
         <div
-          class="c0 c5"
+          class="c0 c6"
         >
           
           <input
-            class="c6 c7"
+            class="c7 c8"
             data-testid="select-input"
             label=""
             placeholder="Please Select"
@@ -847,7 +880,7 @@ exports[`Select component should render correctly with all the props given 1`] =
           
         </div>
         <svg
-          class="c8 c9"
+          class="c9 c10"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"
@@ -862,16 +895,16 @@ exports[`Select component should render correctly with all the props given 1`] =
         </svg>
       </div>
       <div
-        class="c10 c11"
+        class="c11 c12"
       >
         <ul
-          class="c12"
+          class="c13"
         >
           <li
-            class="c13"
+            class="c14"
           >
             <span
-              class="c14 c15"
+              class="c15"
             >
               All
             </span>
@@ -880,7 +913,7 @@ exports[`Select component should render correctly with all the props given 1`] =
             class="c16"
           >
             <span
-              class="c14 c15"
+              class="c15"
             >
               Dummy1
             </span>
@@ -889,7 +922,7 @@ exports[`Select component should render correctly with all the props given 1`] =
             class="c16"
           >
             <span
-              class="c14 c15"
+              class="c15"
             >
               Dummy2
             </span>
@@ -898,7 +931,7 @@ exports[`Select component should render correctly with all the props given 1`] =
       </div>
     </div>
     <span
-      class="c14 c15"
+      class="c17 c15"
     >
       We will show reports based on Pharmacy
     </span>
@@ -907,8 +940,20 @@ exports[`Select component should render correctly with all the props given 1`] =
 `;
 
 exports[`Select component should render correctly with default props 1`] = `
+.c13 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
 .c1 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 'label field' 'random description';
+}
+
+.c1 .c14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -924,6 +969,11 @@ exports[`Select component should render correctly with default props 1`] = `
 
 .c4 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-areas: 'label' 'field' 'description';
+}
+
+.c4 .c14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -935,12 +985,6 @@ exports[`Select component should render correctly with default props 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.c13 {
-  font-size: 14px;
-  font-weight: 400;
-  color: inherit;
 }
 
 .c6 {
@@ -1175,8 +1219,20 @@ exports[`Select component should render correctly with default props 1`] = `
 `;
 
 exports[`Select component should render matched options when input values changes 1`] = `
+.c13 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
 .c1 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 'label field' 'random description';
+}
+
+.c1 .c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1192,6 +1248,11 @@ exports[`Select component should render matched options when input values change
 
 .c4 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-areas: 'label' 'field' 'description';
+}
+
+.c4 .c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1203,12 +1264,6 @@ exports[`Select component should render matched options when input values change
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.c14 {
-  font-size: 14px;
-  font-weight: 400;
-  color: inherit;
 }
 
 .c6 {
@@ -1352,11 +1407,7 @@ exports[`Select component should render matched options when input values change
   background-color: transparent;
 }
 
-.c15 ~ .c13 {
-  color: #818A91;
-}
-
-.c15 .c0 {
+.c14 .c0 {
   margin: 0px;
   cursor: pointer;
   -webkit-flex: 1;
@@ -1364,7 +1415,7 @@ exports[`Select component should render matched options when input values change
   flex: 1;
 }
 
-.c15 .c0 .c5 {
+.c14 .c0 .c5 {
   margin: 0px;
   cursor: pointer;
   border: none;
@@ -1431,7 +1482,7 @@ exports[`Select component should render matched options when input values change
             class="c12"
           >
             <span
-              class="c13 c14"
+              class="c13"
             >
               Dummy1
             </span>
@@ -1440,7 +1491,7 @@ exports[`Select component should render matched options when input values change
             class="c12"
           >
             <span
-              class="c13 c14"
+              class="c13"
             >
               Dummy2
             </span>
@@ -1454,8 +1505,20 @@ exports[`Select component should render matched options when input values change
 `;
 
 exports[`Select component should render options correctly 1`] = `
+.c13 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
 .c1 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 'label field' 'random description';
+}
+
+.c1 .c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1471,6 +1534,11 @@ exports[`Select component should render options correctly 1`] = `
 
 .c4 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-areas: 'label' 'field' 'description';
+}
+
+.c4 .c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1482,12 +1550,6 @@ exports[`Select component should render options correctly 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.c14 {
-  font-size: 14px;
-  font-weight: 400;
-  color: inherit;
 }
 
 .c6 {
@@ -1631,11 +1693,7 @@ exports[`Select component should render options correctly 1`] = `
   background-color: transparent;
 }
 
-.c15 ~ .c13 {
-  color: #818A91;
-}
-
-.c15 .c0 {
+.c14 .c0 {
   margin: 0px;
   cursor: pointer;
   -webkit-flex: 1;
@@ -1643,7 +1701,7 @@ exports[`Select component should render options correctly 1`] = `
   flex: 1;
 }
 
-.c15 .c0 .c5 {
+.c14 .c0 .c5 {
   margin: 0px;
   cursor: pointer;
   border: none;
@@ -1709,7 +1767,7 @@ exports[`Select component should render options correctly 1`] = `
             class="c12"
           >
             <span
-              class="c13 c14"
+              class="c13"
             >
               All
             </span>
@@ -1718,7 +1776,7 @@ exports[`Select component should render options correctly 1`] = `
             class="c12"
           >
             <span
-              class="c13 c14"
+              class="c13"
             >
               Dummy1
             </span>
@@ -1727,7 +1785,7 @@ exports[`Select component should render options correctly 1`] = `
             class="c12"
           >
             <span
-              class="c13 c14"
+              class="c13"
             >
               Dummy2
             </span>
@@ -1743,22 +1801,22 @@ exports[`Select component should render options correctly 1`] = `
 exports[`Select component should render options correctly 2`] = `
 <div>
   <div
-    class="sc-bdVaJa dMOddM"
+    class="sc-EHOje idAlwH"
   >
     
     <div
-      class="sc-EHOje hoSZQU"
+      class="sc-htoDjs kyXQsz"
       data-testid="popover-wrapper"
     >
       <div
-        class="sc-gZMcBi gbJrtR"
+        class="sc-jTzLTM hDVovc"
       >
         <div
-          class="sc-bdVaJa chJteP"
+          class="sc-EHOje eZQUkW"
         >
           
           <input
-            class="sc-bxivhb etpGOZ"
+            class="sc-bZQynM XHRoh"
             data-testid="select-input"
             label=""
             placeholder="Please Select . . ."
@@ -1767,7 +1825,7 @@ exports[`Select component should render options correctly 2`] = `
           
         </div>
         <svg
-          class="sc-gqjmRU gBbjXc sc-htoDjs hWnCjm"
+          class="sc-fjdhpX epxlks sc-gZMcBi jgWhEG"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"
@@ -1782,35 +1840,35 @@ exports[`Select component should render options correctly 2`] = `
         </svg>
       </div>
       <div
-        class="sc-ifAKCX jgRiJO"
+        class="sc-gzVnrw gNQdln"
         style="display: block;"
       >
         <ul
-          class="sc-gzVnrw ixfFMZ"
+          class="sc-iwsKbI loAqCW"
         >
           <li
-            class="sc-bZQynM bWpKfv"
+            class="sc-dnqmqq lhTpTY"
           >
             <span
-              class="sc-htpNat fHZlne"
+              class="sc-bwzfXH jvAtFl"
             >
               All
             </span>
           </li>
           <li
-            class="sc-bZQynM bWpKfv"
+            class="sc-dnqmqq lhTpTY"
           >
             <span
-              class="sc-htpNat fHZlne"
+              class="sc-bwzfXH jvAtFl"
             >
               Dummy1
             </span>
           </li>
           <li
-            class="sc-bZQynM bWpKfv"
+            class="sc-dnqmqq lhTpTY"
           >
             <span
-              class="sc-htpNat fHZlne"
+              class="sc-bwzfXH jvAtFl"
             >
               Dummy2
             </span>

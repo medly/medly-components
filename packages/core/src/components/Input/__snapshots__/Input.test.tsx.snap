@@ -1,8 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input component should render correctly when fullWidth & required props are falsy 1`] = `
+.c2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin: 0px 8px 0px 0px;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  grid-area: label;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c4 {
+  grid-area: description;
+  margin: 5px 0px 0px 2px;
+  color: #818A91;
+}
+
 .c0 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 'label field' 'random description';
+}
+
+.c0 .c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -16,24 +48,7 @@ exports[`Input component should render correctly when fullWidth & required props
   flex-direction: row;
 }
 
-.c1 {
-  font-size: 14px;
-  font-weight: 400;
-  color: #555;
-  margin: 0px 8px 0px 0px;
-}
-
-.c4 {
-  font-size: 14px;
-  font-weight: 400;
-  color: inherit;
-}
-
-.c5 ~ .c3 {
-  color: #818A91;
-}
-
-.c2 {
+.c3 {
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
@@ -43,36 +58,31 @@ exports[`Input component should render correctly when fullWidth & required props
   box-sizing: border-box;
   border: 1px solid #CCCCCC;
   border-radius: 5px;
-  margin: 0px 8px 0px 0px;
 }
 
-.c2:focus {
+.c3:focus {
   border-color: #012040;
   outline: 0;
 }
 
-.c2::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #999999;
 }
 
-.c2::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #999999;
 }
 
-.c2:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #999999;
 }
 
-.c2::placeholder {
+.c3::placeholder {
   color: #999999;
 }
 
-.c2::-webkit-file-upload-button {
+.c3::-webkit-file-upload-button {
   visibility: hidden;
-}
-
-.c2 ~ .c3 {
-  color: #818A91;
 }
 
 <div>
@@ -80,18 +90,18 @@ exports[`Input component should render correctly when fullWidth & required props
     class="c0"
   >
     <label
-      class="c1"
+      class="c1 c2"
     >
       Email Address
     </label>
     <input
-      class="c2"
+      class="c3"
       label="Email Address"
       placeholder="Enter Email Address"
       type="email"
     />
     <span
-      class="c3 c4"
+      class="c4 c5"
     >
       We will never share your email with anyone
     </span>
@@ -102,6 +112,11 @@ exports[`Input component should render correctly when fullWidth & required props
 exports[`Input component should render correctly when label and description are not given 1`] = `
 .c0 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-areas: 'label' 'field' 'description';
+}
+
+.c0 .c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -169,8 +184,44 @@ exports[`Input component should render correctly when label and description are 
 `;
 
 exports[`Input component should render correctly with all the props given 1`] = `
+.c2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin: 0px 0px 8px 0px;
+}
+
+.c2::after {
+  color: red;
+  content: ' *';
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  grid-area: label;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c4 {
+  grid-area: description;
+  margin: 5px 0px 0px 2px;
+  color: #818A91;
+}
+
 .c0 {
   margin: 8px 0px;
+  display: grid;
+  grid-template-areas: 'label' 'field' 'description';
+}
+
+.c0 .c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -184,25 +235,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   flex-direction: column;
 }
 
-.c1 {
-  font-size: 14px;
-  font-weight: 400;
-  color: #555;
-  margin: 0px 0px 8px 0px;
-}
-
-.c1::after {
-  color: red;
-  content: ' *';
-}
-
-.c4 {
-  font-size: 14px;
-  font-weight: 400;
-  color: inherit;
-}
-
-.c2 {
+.c3 {
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
@@ -213,36 +246,31 @@ exports[`Input component should render correctly with all the props given 1`] = 
   border: 1px solid #CCCCCC;
   border-radius: 5px;
   width: calc(100% - 0px);
-  margin: 0px 0px 8px 0px;
 }
 
-.c2:focus {
+.c3:focus {
   border-color: #012040;
   outline: 0;
 }
 
-.c2::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #999999;
 }
 
-.c2::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #999999;
 }
 
-.c2:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #999999;
 }
 
-.c2::placeholder {
+.c3::placeholder {
   color: #999999;
 }
 
-.c2::-webkit-file-upload-button {
+.c3::-webkit-file-upload-button {
   visibility: hidden;
-}
-
-.c2 ~ .c3 {
-  color: #818A91;
 }
 
 <div>
@@ -250,20 +278,20 @@ exports[`Input component should render correctly with all the props given 1`] = 
     class="c0"
   >
     <label
-      class="c1"
+      class="c1 c2"
       required=""
     >
       Email Address
     </label>
     <input
-      class="c2"
+      class="c3"
       label="Email Address"
       placeholder="Enter Email Address"
       required=""
       type="email"
     />
     <span
-      class="c3 c4"
+      class="c4 c5"
     >
       We will never share your email with anyone
     </span>

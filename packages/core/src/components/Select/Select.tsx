@@ -50,7 +50,7 @@ const Select: React.SFC<SelectProps> & WithStyle = React.memo(
 
         return (
             <FieldWithLabel {...{ fullWidth, labelPosition }}>
-                {label && <Label {...{ required, labelPosition }}>{label}</Label>}
+                {label && <FieldWithLabel.Label {...{ required, labelPosition }}>{label}</FieldWithLabel.Label>}
                 <PopoverWrapper interactionType="click" onOuterClick={handleOuterClick}>
                     <SelectWrapperStyled {...{ description, fullWidth, labelPosition }} onClick={handleWrapperClick}>
                         <Input
@@ -67,7 +67,7 @@ const Select: React.SFC<SelectProps> & WithStyle = React.memo(
                         <Options options={options} onOptionClick={handleOptionClick} />
                     </Popover>
                 </PopoverWrapper>
-                {description && <Text>{description}</Text>}
+                {description && <FieldWithLabel.Description>{description}</FieldWithLabel.Description>}
             </FieldWithLabel>
         );
     })

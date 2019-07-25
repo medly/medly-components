@@ -11,6 +11,12 @@ exports[`Checkbox component should render correctly with all the default props 1
 
 .c0 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-columns: max-content auto;
+  grid-template-areas: 'field label' 'description random';
+}
+
+.c0 .c7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -126,16 +132,37 @@ exports[`Checkbox component should render correctly with all the default props 1
 `;
 
 exports[`Checkbox component should render correctly with all the props given 1`] = `
-.c7 {
+.c8 {
   font-size: 16px;
 }
 
-.c7 * {
+.c8 * {
   fill: #555;
+}
+
+.c2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin: 0px 0px 0px 8px;
+  cursor: pointer;
+}
+
+.c1 {
+  grid-area: label;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .c0 {
   margin: 8px;
+  display: inline-grid;
+  grid-template-columns: max-content auto;
+  grid-template-areas: 'field label' 'description random';
+}
+
+.c0 .c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -149,15 +176,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   flex-direction: row-reverse;
 }
 
-.c1 {
-  font-size: 14px;
-  font-weight: 400;
-  color: #555;
-  margin: 0px 0px 0px 8px;
-  cursor: pointer;
-}
-
-.c2 {
+.c3 {
   width: 24px;
   height: 24px;
   position: relative;
@@ -178,7 +197,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   align-items: center;
 }
 
-.c5 {
+.c6 {
   width: 0;
   height: 0;
   z-index: 1;
@@ -196,12 +215,12 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   align-items: center;
 }
 
-.c5 .c6 {
+.c6 .c7 {
   width: 100%;
   height: 100%;
 }
 
-.c3 {
+.c4 {
   opacity: 0;
   z-index: 2;
   position: absolute;
@@ -211,11 +230,11 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   cursor: pointer;
 }
 
-.c3:focus {
+.c4:focus {
   outline: none;
 }
 
-.c3:checked ~ .c4 {
+.c4:checked ~ .c5 {
   width: calc(70%);
   height: calc(70%);
   -webkit-transition: width 0.2s ease,height 0.2s ease;
@@ -227,25 +246,25 @@ exports[`Checkbox component should render correctly with all the props given 1`]
     class="c0"
   >
     <label
-      class="c1"
+      class="c1 c2"
       for="Female"
     >
       Female
     </label>
     <div
-      class="c2"
+      class="c3"
     >
       <input
-        class="c3"
+        class="c4"
         id="Female"
         name="gender"
         type="checkbox"
       />
       <div
-        class="c4 c5"
+        class="c5 c6"
       >
         <svg
-          class="c6 c7"
+          class="c7 c8"
           height="1em"
           viewBox="0 0 18 14"
           width="1em"

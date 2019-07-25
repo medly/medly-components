@@ -1,0 +1,395 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FieldWithLabel component should render properly with props labelPosition: bottom, fullWidth: false, fieldWithMaxContent: false 1`] = `
+.c2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin: 0px 8px 0px 0px;
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c4 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 {
+  grid-area: label;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c5 {
+  grid-area: description;
+  margin: 5px 0px 0px 2px;
+  color: #818A91;
+}
+
+.c7 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c8 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c9 .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 {
+  margin: 8px;
+  display: inline-grid;
+  grid-template-areas: 'field' 'description' 'label';
+}
+
+.c0 .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <label
+      class="c1 c2"
+    >
+      Dummy Label
+    </label>
+    <div
+      class="c3 c4"
+    >
+      Dummy Field
+    </div>
+    <span
+      class="c5 c6"
+    >
+      Dummy Description
+    </span>
+  </div>
+</div>
+`;
+
+exports[`FieldWithLabel component should render properly with props labelPosition: left, fullWidth: true, fieldWithMaxContent: true 1`] = `
+.c2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin: 0px 8px 0px 0px;
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c4 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 {
+  grid-area: label;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c5 {
+  grid-area: description;
+  margin: 5px 0px 0px 2px;
+  color: #818A91;
+}
+
+.c0 {
+  margin: 8px 0px;
+  display: grid;
+  grid-template-columns: auto max-content;
+  grid-template-areas: 'label field' 'random description';
+}
+
+.c0 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <label
+      class="c1 c2"
+    >
+      Dummy Label
+    </label>
+    <div
+      class="c3 c4"
+    >
+      Dummy Field
+    </div>
+    <span
+      class="c5 c6"
+    >
+      Dummy Description
+    </span>
+  </div>
+</div>
+`;
+
+exports[`FieldWithLabel component should render properly with props labelPosition: right, fullWidth: true, fieldWithMaxContent: false 1`] = `
+.c2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin: 0px 8px 0px 0px;
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c4 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 {
+  grid-area: label;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c5 {
+  grid-area: description;
+  margin: 5px 0px 0px 2px;
+  color: #818A91;
+}
+
+.c7 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c0 {
+  margin: 8px 0px;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-areas: 'field label' 'description random';
+}
+
+.c0 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <label
+      class="c1 c2"
+    >
+      Dummy Label
+    </label>
+    <div
+      class="c3 c4"
+    >
+      Dummy Field
+    </div>
+    <span
+      class="c5 c6"
+    >
+      Dummy Description
+    </span>
+  </div>
+</div>
+`;
+
+exports[`FieldWithLabel component should render properly with props labelPosition: top, fullWidth: false, fieldWithMaxContent: true 1`] = `
+.c2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin: 0px 8px 0px 0px;
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c4 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c1 {
+  grid-area: label;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c5 {
+  grid-area: description;
+  margin: 5px 0px 0px 2px;
+  color: #818A91;
+}
+
+.c7 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c8 .c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c0 {
+  margin: 8px;
+  display: inline-grid;
+  grid-template-areas: 'label' 'field' 'description';
+}
+
+.c0 .c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <label
+      class="c1 c2"
+    >
+      Dummy Label
+    </label>
+    <div
+      class="c3 c4"
+    >
+      Dummy Field
+    </div>
+    <span
+      class="c5 c6"
+    >
+      Dummy Description
+    </span>
+  </div>
+</div>
+`;

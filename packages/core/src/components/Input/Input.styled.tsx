@@ -28,15 +28,6 @@ export const InputStyled = styled('input').attrs(({ theme: { input, text, font }
     }
 
     ${props => props.fullWidth && fullWidth()};
-
-    ${({ description, theme, labelPosition }) =>
-        description &&
-        css`
-            margin: ${oppositePositionalspacing(labelPosition, theme.spacing.S)};
-            & ~ ${Text.Style} {
-                color: ${theme.input.desciptionColor};
-            }
-        `}
 `;
 
 InputStyled.defaultProps = {

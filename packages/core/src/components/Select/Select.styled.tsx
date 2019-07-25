@@ -1,9 +1,8 @@
 import { ExpandMoreIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
-import { centerAligned, css, fullWidth, oppositePositionalspacing, styled, WithThemeProp } from '@medly-components/utils';
+import { centerAligned, fullWidth, styled, WithThemeProp } from '@medly-components/utils';
 import FieldWithLabel from '../FieldWithLabel';
 import Input from '../Input';
-import Text from '../Text';
 import { SelectWrapperProps } from './types';
 
 export const SelectWrapperStyled = styled('div')<SelectWrapperProps>`
@@ -18,15 +17,6 @@ export const SelectWrapperStyled = styled('div')<SelectWrapperProps>`
     ${centerAligned()}
 
     ${props => props.fullWidth && fullWidth()};
-
-    ${({ description, theme, labelPosition }) =>
-        description &&
-        css`
-            margin: ${oppositePositionalspacing(labelPosition, theme.spacing.S)};
-            & ~ ${Text.Style} {
-                color: ${theme.select.desciptionColor};
-            }
-        `}
 
     ${FieldWithLabel} {
         margin: 0px;

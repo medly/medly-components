@@ -2,7 +2,6 @@ import { CheckIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
 import React from 'react';
 import FieldWithLabel from '../FieldWithLabel';
-import Label from '../Label';
 import { CheckboxFillStyled, CheckboxStyled, CheckboxWrapperStyled } from './Checkbox.styled';
 import { Props } from './types';
 
@@ -10,11 +9,11 @@ const Checkbox: React.SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { size, label, required, labelPosition, ...restProps } = props;
         return (
-            <FieldWithLabel {...{ labelPosition }}>
+            <FieldWithLabel fieldWithMaxContent {...{ labelPosition }}>
                 {label && (
-                    <Label showPointer {...{ labelPosition }} htmlFor={label}>
+                    <FieldWithLabel.Label showPointer {...{ labelPosition }} htmlFor={label}>
                         {label}
-                    </Label>
+                    </FieldWithLabel.Label>
                 )}
                 <CheckboxWrapperStyled {...{ size }}>
                     <CheckboxStyled ref={ref} id={label} required={required} {...restProps} />
