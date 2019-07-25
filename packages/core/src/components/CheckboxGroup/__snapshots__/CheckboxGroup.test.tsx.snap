@@ -36,6 +36,8 @@ exports[`CheckboxGroup component should render correctly with all the default pr
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-areas: 'label field' 'random description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
 }
 
 .c0 .c1 {

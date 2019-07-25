@@ -22,7 +22,7 @@ const RadioGroup: React.SFC<Props> & WithStyle = React.memo(props => {
 });
 
 RadioGroup.displayName = 'RadioGroup';
-RadioGroup.Style = FieldWithLabel;
+RadioGroup.Style = FieldWithLabel.Style;
 RadioGroup.defaultProps = {
     label: '',
     name: '',

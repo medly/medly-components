@@ -114,6 +114,8 @@ exports[`Input component should render correctly when label and description are 
   margin: 8px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
 }
 
 .c0 .c2 {

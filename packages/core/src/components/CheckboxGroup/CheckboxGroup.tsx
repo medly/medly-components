@@ -22,7 +22,7 @@ const CheckboxGroup: React.SFC<Props> & WithStyle = React.memo(props => {
 });
 
 CheckboxGroup.displayName = 'CheckboxGroup';
-CheckboxGroup.Style = FieldWithLabel;
+CheckboxGroup.Style = FieldWithLabel.Style;
 CheckboxGroup.defaultProps = {
     label: '',
     name: '',

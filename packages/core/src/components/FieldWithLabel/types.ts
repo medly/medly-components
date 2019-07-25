@@ -11,6 +11,10 @@ export interface Props extends WithThemeProp {
     fieldWithMaxContent?: boolean;
 }
 
+export interface FieldWithLabelStyledProps extends Props {
+    isLabelPresent?: boolean;
+}
+
 export interface StaticProps {
     Field: AnyStyledComponent;
     Label: StyledComponent<typeof Label, Theme>;

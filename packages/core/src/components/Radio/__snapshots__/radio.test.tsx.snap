@@ -6,6 +6,8 @@ exports[`Radio component should render correctly with all the default props 1`] 
   display: inline-grid;
   grid-template-columns: max-content auto;
   grid-template-areas: 'field label' 'description random';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
 }
 
 .c0 .c5 {

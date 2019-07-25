@@ -13,7 +13,7 @@ storiesOf('Core', module).add('Input', () => (
         label={text('Label', 'Email Address')}
         labelPosition={select('Label Position', labelPosition, 'top')}
         required={boolean('Required', false)}
-        placeholder="Enter Email Address"
+        placeholder={text('Placeholder', 'Enter Email Address')}
         description={text('Description', 'We will never share your email with anyone')}
     />
 ));

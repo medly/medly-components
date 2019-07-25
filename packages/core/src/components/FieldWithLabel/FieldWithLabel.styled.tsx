@@ -1,11 +1,10 @@
 import { css, styled } from '@medly-components/utils';
-import { ARTSurfaceProps } from 'react-native';
 import { AnyStyledComponent } from 'styled-components';
 import Label from '../Label';
 import Text from '../Text';
-import { Props, StaticProps } from './types';
+import { FieldWithLabelStyledProps, StaticProps } from './types';
 
-export const FieldStyle = styled('div')`
+export const FieldStyled = styled('div')`
     grid-area: field;
     flex-wrap: wrap;
 `;
@@ -14,6 +13,7 @@ export const LabelStyled = styled(Label)`
     grid-area: label;
     align-self: center;
 `;
+LabelStyled.displayName = 'Label';
 
 export const DescriptionStyled = styled(Text)`
     grid-area: description;
@@ -22,11 +22,11 @@ export const DescriptionStyled = styled(Text)`
 `;
 
 // @ts-ignore
-export const FieldWithLabel: AnyStyledComponent & StaticProps = styled('div')<Props>`
+export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('div')<FieldWithLabelStyledProps>`
     margin: ${({ theme, fullWidth }) => (fullWidth ? `${theme.spacing.S} 0px` : `${theme.spacing.S}`)};
     display: ${({ fullWidth }) => (fullWidth ? 'grid' : 'inline-grid')};
 
-    ${FieldStyle} {
+    ${FieldStyled} {
         display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
         align-items: ${({ labelPosition }) => (labelPosition === 'top' || labelPosition === 'bottom' ? 'flex-start' : 'center')};
         flex-direction: ${({ labelPosition }) => {
@@ -77,7 +77,13 @@ export const FieldWithLabel: AnyStyledComponent & StaticProps = styled('div')<Pr
                 `;
         }
     }};
+
+    ${({ isLabelPresent }) =>
+        !isLabelPresent &&
+        css`
+            grid-template-columns: auto;
+            grid-template-areas:
+                'field'
+                'description';
+        `}
 `;
-FieldWithLabel.Field = FieldStyle;
-FieldWithLabel.Label = LabelStyled;
-FieldWithLabel.Description = DescriptionStyled;

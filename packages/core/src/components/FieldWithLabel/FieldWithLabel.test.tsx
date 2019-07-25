@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import { FieldWithLabel } from './FieldWithLabel.styled';
+import FieldWithLabel from './FieldWithLabel';
 
 describe('FieldWithLabel component', () => {
     test.each`
@@ -22,4 +22,14 @@ describe('FieldWithLabel component', () => {
             expect(container).toMatchSnapshot();
         }
     );
+
+    it('should render properly when lable is not present', () => {
+        const { container } = TestUtils.render(
+            <FieldWithLabel>
+                <FieldWithLabel.Field>Dummy Field</FieldWithLabel.Field>
+                <FieldWithLabel.Description>Dummy Description</FieldWithLabel.Description>
+            </FieldWithLabel>
+        );
+        expect(container).toMatchSnapshot();
+    });
 });

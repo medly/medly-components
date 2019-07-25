@@ -18,7 +18,7 @@ export const SelectWrapperStyled = styled('div')<SelectWrapperProps>`
 
     ${props => props.fullWidth && fullWidth()};
 
-    ${FieldWithLabel} {
+    ${FieldWithLabel.Style} {
         margin: 0px;
         cursor: pointer;
         flex: 1;

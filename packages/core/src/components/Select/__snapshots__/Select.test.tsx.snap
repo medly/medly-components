@@ -12,6 +12,8 @@ exports[`Select component should close options when clicked outside 1`] = `
   display: inline-grid;
   grid-template-columns: 20% 80%;
   grid-template-areas: 'label field' 'random description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
 }
 
 .c1 .c15 {
@@ -32,6 +34,8 @@ exports[`Select component should close options when clicked outside 1`] = `
   margin: 8px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
 }
 
 .c4 .c15 {
@@ -310,6 +314,8 @@ exports[`Select component should render all the options when input value is not 
   display: inline-grid;
   grid-template-columns: 20% 80%;
   grid-template-areas: 'label field' 'random description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
 }
 
 .c1 .c15 {
@@ -330,6 +336,8 @@ exports[`Select component should render all the options when input value is not 
   margin: 8px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
 }
 
 .c4 .c15 {
@@ -629,6 +637,8 @@ exports[`Select component should render correctly with all the props given 1`] =
   margin: 8px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
 }
 
 .c6 .c19 {
@@ -951,6 +961,8 @@ exports[`Select component should render correctly with default props 1`] = `
   display: inline-grid;
   grid-template-columns: 20% 80%;
   grid-template-areas: 'label field' 'random description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
 }
 
 .c1 .c14 {
@@ -971,6 +983,8 @@ exports[`Select component should render correctly with default props 1`] = `
   margin: 8px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
 }
 
 .c4 .c14 {
@@ -1230,6 +1244,8 @@ exports[`Select component should render matched options when input values change
   display: inline-grid;
   grid-template-columns: 20% 80%;
   grid-template-areas: 'label field' 'random description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
 }
 
 .c1 .c15 {
@@ -1250,6 +1266,8 @@ exports[`Select component should render matched options when input values change
   margin: 8px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
 }
 
 .c4 .c15 {
@@ -1516,6 +1534,8 @@ exports[`Select component should render options correctly 1`] = `
   display: inline-grid;
   grid-template-columns: 20% 80%;
   grid-template-areas: 'label field' 'random description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
 }
 
 .c1 .c15 {
@@ -1536,6 +1556,8 @@ exports[`Select component should render options correctly 1`] = `
   margin: 8px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
 }
 
 .c4 .c15 {
@@ -1801,7 +1823,7 @@ exports[`Select component should render options correctly 1`] = `
 exports[`Select component should render options correctly 2`] = `
 <div>
   <div
-    class="sc-EHOje idAlwH"
+    class="sc-EHOje icjHtQ"
   >
     
     <div
@@ -1812,7 +1834,7 @@ exports[`Select component should render options correctly 2`] = `
         class="sc-jTzLTM hDVovc"
       >
         <div
-          class="sc-EHOje eZQUkW"
+          class="sc-EHOje faPmGG"
         >
           
           <input
