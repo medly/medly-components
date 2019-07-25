@@ -78,12 +78,16 @@ const Table: React.SFC<Props> & WithStyle = props => {
         return cells;
     };
 
+    const handleRowClick = (rowData: object) => () => {
+        props.onRowClick && props.onRowClick(rowData);
+    };
+
     return (
-        <TableStyled>
+        <TableStyled {...props}>
             <Row gridTemplateColumns={getGridTemplateColumns(columnConfigs)}>{getHeadCells()}</Row>
             {data.map((row, i) => {
                 return (
-                    <Row key={i} gridTemplateColumns={getGridTemplateColumns(columnConfigs)}>
+                    <Row key={i} onClick={handleRowClick(row)} gridTemplateColumns={getGridTemplateColumns(columnConfigs)}>
                         {getRowsCells(row)}
                     </Row>
                 );

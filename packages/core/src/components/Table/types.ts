@@ -7,10 +7,6 @@ export interface ColumnTypeToRatioMap {
     'text-long': number;
 }
 
-export interface GridTemplateProps {
-    gridTemplateColumns?: string;
-}
-
 export interface ColumnConfig {
     frozen?: boolean;
     sort?: boolean;
@@ -21,6 +17,11 @@ export interface ColumnConfig {
     children?: ColumnConfig[];
     formatter: keyof ColumnTypeToRatioMap;
 }
+
+export interface GridTemplateProps {
+    gridTemplateColumns?: string;
+}
+
 export interface CellStyledProps {
     hide?: boolean;
     frozen?: boolean;
@@ -35,6 +36,7 @@ export interface HeadCellProps extends CellStyledProps {
 }
 
 export interface Props {
+    onRowClick: (rowData: object) => void;
     data: Array<{}>;
     columns: ColumnConfig[];
     onSortIconClick?: (field: string, order: SortOrder) => void;

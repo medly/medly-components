@@ -1,3 +1,4 @@
+import { action } from '@storybook/addon-actions';
 import { select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React, { useEffect, useState } from 'react';
@@ -164,7 +165,7 @@ const DemoComponent: React.SFC<DemoComponentProps> = props => {
                 <Modal.Content>{checkBoxes(columnConfig)}</Modal.Content>
             </Modal>
             <Button onClick={handleModalState}>Hide Columns</Button>
-            <Table data={tableData} onSortIconClick={filterData} columns={columnConfig} />
+            <Table onRowClick={action('Row Clicked')} data={tableData} onSortIconClick={filterData} columns={columnConfig} />
         </div>
     );
 };
