@@ -6,6 +6,7 @@ const input: InputTheme = {
     bgColor: colors.white,
     borderColor: colors.grey[200],
     desciptionColor: colors.violet[400],
+    disabledBgcolor: colors.grey[600],
 
     focus: {
         borderColor: colors.violet[500]

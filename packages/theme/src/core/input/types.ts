@@ -3,6 +3,7 @@ export interface InputTheme {
     bgColor: string;
     borderColor: string;
     desciptionColor: string;
+    disabledBgcolor: string;
 
     focus: {
         borderColor: string;

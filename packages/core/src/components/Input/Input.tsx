@@ -23,6 +23,7 @@ const Input: React.FunctionComponent<Props> & WithStyle = React.memo(
 Input.displayName = 'Input';
 Input.Style = InputStyled;
 Input.defaultProps = {
+    disabled: false,
     fullWidth: false,
     required: false,
     label: '',

@@ -10,6 +10,7 @@ storiesOf('Core', module).add('Input', () => (
     <Input
         type="email"
         fullWidth={boolean('Full Width', false)}
+        disabled={boolean('Disabled', false)}
         label={text('Label', 'Email Address')}
         labelPosition={select('Label Position', labelPosition, 'top')}
         required={boolean('Required', false)}

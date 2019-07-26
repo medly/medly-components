@@ -35,4 +35,9 @@ describe('Input component', () => {
         const { container } = TestUtils.render(<Input type="email" placeholder="Enter Email Address" />);
         expect(container).toMatchSnapshot();
     });
+
+    it('should render correctly when it is disabled', () => {
+        const { container } = TestUtils.render(<Input disabled placeholder="Enter Email Address" />);
+        expect(container).toMatchSnapshot();
+    });
 });
