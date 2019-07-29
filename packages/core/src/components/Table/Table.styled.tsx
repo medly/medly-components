@@ -1,8 +1,8 @@
 import { styled } from '@medly-components/utils';
 import Row from './Row';
-import { Props } from './types';
+import { TableStyledProps } from './types';
 
-export const TableStyled = styled('ol')<Props>`
+export const TableStyled = styled('ol')<TableStyledProps>`
     margin: 0px;
     padding: 0px;
     overflow: auto;
@@ -12,7 +12,7 @@ export const TableStyled = styled('ol')<Props>`
     }
 
     ${Row} {
-        cursor: ${({ onRowClick }) => (onRowClick ? 'pointer' : 'default')};
+        cursor: ${({ isRowClickable }) => (isRowClickable ? 'pointer' : 'default')};
         &:first-of-type {
             user-select: none;
             position: sticky;

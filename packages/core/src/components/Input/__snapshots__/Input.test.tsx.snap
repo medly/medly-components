@@ -137,6 +137,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   font-size: 14px;
   font-weight: 400;
   color: #555;
+  background-color: #ededed;
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #CCCCCC;

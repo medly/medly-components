@@ -35,6 +35,10 @@ export interface HeadCellProps extends CellStyledProps {
     handleSortIconClick?: (field: string, order: SortOrder) => void;
 }
 
+export interface TableStyledProps {
+    isRowClickable?: boolean;
+}
+
 export interface Props {
     onRowClick?: (rowData: object) => void;
     data: Array<{}>;

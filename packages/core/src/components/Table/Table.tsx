@@ -83,7 +83,7 @@ const Table: React.SFC<Props> & WithStyle = props => {
     };
 
     return (
-        <TableStyled {...props}>
+        <TableStyled isRowClickable={props.onRowClick ? true : false}>
             <Row gridTemplateColumns={getGridTemplateColumns(columnConfigs)}>{getHeadCells()}</Row>
             {data.map((row, i) => {
                 return (
