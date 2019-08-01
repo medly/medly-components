@@ -54,6 +54,7 @@ const Select: React.SFC<SelectProps> & WithStyle = React.memo(
                 <PopoverWrapper interactionType="click" onOuterClick={handleOuterClick}>
                     <SelectWrapperStyled {...{ description, fullWidth, labelPosition }} onClick={handleWrapperClick}>
                         <Input
+                            required={required}
                             data-testid="select-input"
                             placeholder={placeholder}
                             value={inputValue}

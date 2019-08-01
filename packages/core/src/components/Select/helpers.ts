@@ -1,8 +1,8 @@
-import { equalsIgnoreCase, includesIgnoreCase } from '@medly-components/utils';
+import { includesIgnoreCase } from '@medly-components/utils';
 import { DefaultSelected, Option, SelectProps } from './types';
 
-export const getDefaultSelected = (options: SelectProps['options'], defaultSelected: string) =>
-    options.find(option => equalsIgnoreCase(defaultSelected, option.value) || equalsIgnoreCase(defaultSelected, option.label)) || {
+export const getDefaultSelected = (options: SelectProps['options'], defaultSelected: any) =>
+    options.find(option => defaultSelected === option.value) || {
         value: '',
         label: ''
     };

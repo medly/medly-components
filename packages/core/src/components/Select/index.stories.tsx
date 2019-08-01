@@ -19,7 +19,7 @@ const handleOnChange = (value: string) => {
 storiesOf('Core', module).add('Select', () => (
     <Select
         options={options}
-        defaultSelected="all2"
+        defaultSelected="medly pharmacy"
         onChange={handleOnChange}
         fullWidth={boolean('Full Width', false)}
         required={boolean('Required', false)}

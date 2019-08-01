@@ -885,6 +885,7 @@ exports[`Select component should render correctly with all the props given 1`] =
             data-testid="select-input"
             label=""
             placeholder="Please Select"
+            required=""
             value="All"
           />
           
