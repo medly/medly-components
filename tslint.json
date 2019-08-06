@@ -9,7 +9,7 @@
     ],
     "rulesDirectory": ["tslint-plugin-prettier"],
     "rules": {
-        "import-name": [true, { "react": "React" }],
+        "import-name": false,
         "interface-name": [true, "never-prefix"],
         "jsx-boolean-value": false,
         "jsx-no-multiline-js": false,

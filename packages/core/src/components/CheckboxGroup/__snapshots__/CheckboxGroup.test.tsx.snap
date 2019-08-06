@@ -236,14 +236,6 @@ exports[`CheckboxGroup component should render correctly with all the props give
   fill: #555;
 }
 
-.c6 {
-  font-size: 14px;
-  font-weight: 400;
-  color: #555;
-  margin: 0px 0px 0px 8px;
-  cursor: pointer;
-}
-
 .c2 {
   font-size: 14px;
   font-weight: 400;
@@ -252,6 +244,19 @@ exports[`CheckboxGroup component should render correctly with all the props give
 }
 
 .c2::after {
+  color: red;
+  content: ' *';
+}
+
+.c6 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  margin: 0px 0px 0px 8px;
+  cursor: pointer;
+}
+
+.c6::after {
   color: red;
   content: ' *';
 }
@@ -409,6 +414,7 @@ exports[`CheckboxGroup component should render correctly with all the props give
         <label
           class="c1 c6"
           for="Apple"
+          required=""
         >
           Apple
         </label>
@@ -447,6 +453,7 @@ exports[`CheckboxGroup component should render correctly with all the props give
         <label
           class="c1 c6"
           for="Orange"
+          required=""
         >
           Orange
         </label>

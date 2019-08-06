@@ -11,7 +11,7 @@ const Checkbox: React.SFC<Props> & WithStyle = React.memo(
         return (
             <FieldWithLabel fieldWithMaxContent {...{ labelPosition }}>
                 {label && (
-                    <FieldWithLabel.Label showPointer {...{ labelPosition }} htmlFor={label}>
+                    <FieldWithLabel.Label showPointer {...{ required, labelPosition }} htmlFor={label}>
                         {label}
                     </FieldWithLabel.Label>
                 )}
