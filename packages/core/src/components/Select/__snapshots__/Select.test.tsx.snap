@@ -241,6 +241,7 @@ exports[`Select component should close options when clicked outside 1`] = `
             data-testid="select-input"
             label=""
             placeholder="Please Select . . ."
+            type="text"
             value=""
           />
           
@@ -540,6 +541,7 @@ exports[`Select component should render all the options when input value is not 
             data-testid="select-input"
             label=""
             placeholder="Please Select . . ."
+            type="text"
             value="Hello"
           />
           
@@ -886,6 +888,7 @@ exports[`Select component should render correctly with all the props given 1`] =
             label=""
             placeholder="Please Select"
             required=""
+            type="text"
             value="All"
           />
           
@@ -1173,6 +1176,7 @@ exports[`Select component should render correctly with default props 1`] = `
             data-testid="select-input"
             label=""
             placeholder="Please Select . . ."
+            type="text"
             value=""
           />
           
@@ -1471,6 +1475,7 @@ exports[`Select component should render matched options when input values change
             data-testid="select-input"
             label=""
             placeholder="Please Select . . ."
+            type="text"
             value="Dummy"
           />
           
@@ -1761,6 +1766,7 @@ exports[`Select component should render options correctly 1`] = `
             data-testid="select-input"
             label=""
             placeholder="Please Select . . ."
+            type="text"
             value=""
           />
           
@@ -1843,6 +1849,7 @@ exports[`Select component should render options correctly 2`] = `
             data-testid="select-input"
             label=""
             placeholder="Please Select . . ."
+            type="text"
             value=""
           />
           
