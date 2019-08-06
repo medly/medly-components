@@ -68,6 +68,7 @@ const getPosition = (position: Placement) => {
 
 export const PopoverStyled = styled('div')<PopoverProps>`
     position: absolute;
+    z-index: 1000;
     display: none;
     transition: all 2ms ease-in-out;
     border-radius: 4px;

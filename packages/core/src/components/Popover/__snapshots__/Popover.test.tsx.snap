@@ -3,6 +3,7 @@
 exports[`Popover component should not render popover when interction type is hover and user clicks on it 1`] = `
 .c2 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -156,6 +157,7 @@ exports[`Popover component should not render popover when interction type is hov
 exports[`Popover component should render properly when interction type is click 1`] = `
 .c2 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -338,7 +340,7 @@ exports[`Popover component should render properly when interction type is click 
         Dummy Div
       </div>
       <div
-        class="sc-bdVaJa imlMkk"
+        class="sc-bdVaJa bXBdOs"
         style="display: block;"
       >
         Dummy popover
@@ -364,7 +366,7 @@ exports[`Popover component should render properly when interction type is click 
         Dummy Div
       </div>
       <div
-        class="sc-bdVaJa imlMkk"
+        class="sc-bdVaJa bXBdOs"
         style="display: none;"
       >
         Dummy popover
@@ -390,7 +392,7 @@ exports[`Popover component should render properly when interction type is click 
         Dummy Div
       </div>
       <div
-        class="sc-bdVaJa imlMkk"
+        class="sc-bdVaJa bXBdOs"
         style="display: none;"
       >
         Dummy popover
@@ -403,6 +405,7 @@ exports[`Popover component should render properly when interction type is click 
 exports[`Popover component with placement bottom, should render properly 1`] = `
 .c2 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -518,6 +521,7 @@ exports[`Popover component with placement bottom, should render properly 1`] = `
 exports[`Popover component with placement bottom-end, should render properly 1`] = `
 .c2 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -622,6 +626,7 @@ exports[`Popover component with placement bottom-end, should render properly 1`]
 exports[`Popover component with placement bottom-start, should render properly 1`] = `
 .c2 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -746,6 +751,7 @@ exports[`Popover component with placement bottom-start, should render properly 1
 exports[`Popover component with placement left, should render properly 1`] = `
 .c2 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -890,6 +896,7 @@ exports[`Popover component with placement left, should render properly 1`] = `
 exports[`Popover component with placement left-end, should render properly 1`] = `
 .c2 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -1023,6 +1030,7 @@ exports[`Popover component with placement left-end, should render properly 1`] =
 exports[`Popover component with placement left-start, should render properly 1`] = `
 .c2 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -1176,6 +1184,7 @@ exports[`Popover component with placement left-start, should render properly 1`]
 exports[`Popover component with placement right, should render properly 1`] = `
 .c2 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -1262,6 +1271,7 @@ exports[`Popover component with placement right, should render properly 1`] = `
 exports[`Popover component with placement right-end, should render properly 1`] = `
 .c2 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -1357,6 +1367,7 @@ exports[`Popover component with placement right-end, should render properly 1`] 
 exports[`Popover component with placement right-start, should render properly 1`] = `
 .c2 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -1432,6 +1443,7 @@ exports[`Popover component with placement right-start, should render properly 1`
 exports[`Popover component with placement top, should render properly 1`] = `
 .c2 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -1489,6 +1501,7 @@ exports[`Popover component with placement top, should render properly 1`] = `
 exports[`Popover component with placement top-end, should render properly 1`] = `
 .c2 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -1555,6 +1568,7 @@ exports[`Popover component with placement top-end, should render properly 1`] = 
 exports[`Popover component with placement top-start, should render properly 1`] = `
 .c2 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;

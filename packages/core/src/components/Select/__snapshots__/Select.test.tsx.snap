@@ -91,6 +91,7 @@ exports[`Select component should close options when clicked outside 1`] = `
 
 .c10 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -394,6 +395,7 @@ exports[`Select component should render all the options when input value is not 
 
 .c10 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -717,6 +719,7 @@ exports[`Select component should render correctly with all the props given 1`] =
 
 .c12 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -1044,6 +1047,7 @@ exports[`Select component should render correctly with default props 1`] = `
 
 .c10 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -1328,6 +1332,7 @@ exports[`Select component should render matched options when input values change
 
 .c10 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -1619,6 +1624,7 @@ exports[`Select component should render options correctly 1`] = `
 
 .c10 {
   position: absolute;
+  z-index: 1000;
   display: none;
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
@@ -1870,7 +1876,7 @@ exports[`Select component should render options correctly 2`] = `
         </svg>
       </div>
       <div
-        class="sc-gzVnrw gNQdln"
+        class="sc-gzVnrw jrhrGM"
         style="display: block;"
       >
         <ul
