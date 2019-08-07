@@ -12,6 +12,10 @@ export const DatePickerStyled = styled(ReactDatepicker).attrs(({ theme: { input,
     border: 1px solid ${props => props.input.borderColor};
     border-radius: 5px;
 
+    &:disabled {
+        cursor: not-allowed;
+    }
+
     &:focus {
         border-color: ${props => props.input.focus.borderColor};
         outline: 0;

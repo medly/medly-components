@@ -4,6 +4,7 @@ import Card from './Card';
 import Checkbox from './Checkbox';
 import CheckboxGroup from './CheckboxGroup';
 import CssBaseline from './CssBaseline';
+import DatePicker from './DatePicker';
 import FieldWithLabel from './FieldWithLabel';
 import Input from './Input';
 import Label from './Label';
@@ -25,6 +26,7 @@ export {
     Checkbox,
     CheckboxGroup,
     CssBaseline,
+    DatePicker,
     FieldWithLabel,
     Input,
     Label,

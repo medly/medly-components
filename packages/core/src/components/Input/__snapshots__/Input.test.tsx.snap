@@ -28,9 +28,9 @@ exports[`Input component should render correctly when fullWidth & required props
 }
 
 .c0 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: minmax(max-content,20%) minmax(max-content,80%);
+  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
   grid-template-areas: 'label field' 'random description';
 }
 
@@ -111,7 +111,7 @@ exports[`Input component should render correctly when fullWidth & required props
 
 exports[`Input component should render correctly when it is disabled 1`] = `
 .c0 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
@@ -187,7 +187,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
 
 exports[`Input component should render correctly when label and description are not given 1`] = `
 .c0 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;

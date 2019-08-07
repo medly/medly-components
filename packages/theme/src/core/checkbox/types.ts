@@ -5,5 +5,7 @@ export interface CheckboxTheme {
     defaultSize: string;
     fillColor: string;
     bgColor: string;
+    disabledBgcolor: string;
     borderColor: string;
+    outlineColor: string;
 }

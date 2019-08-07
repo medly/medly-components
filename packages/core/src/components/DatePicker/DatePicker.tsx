@@ -1,3 +1,4 @@
+import { format } from 'date-fns';
 import React from 'react';
 import 'react-datepicker/dist/react-datepicker.css';
 import FieldWithLabel from '../FieldWithLabel';
@@ -5,7 +6,12 @@ import { DatePickerStyled } from './DatePicker.styled';
 import { Props } from './types';
 
 const DatePicker: React.SFC<Props> = React.memo(props => {
-    const { label, labelPosition, value, onChange, required, disabled } = props;
+    const { label, labelPosition, value, onChange, required, disabled, placeholder } = props;
+
+    const handleDateChange = (date: Date) => {
+        onChange(format(date, 'yyyy-MM-dd').split('T')[0]);
+    };
+
     return (
         <FieldWithLabel {...{ labelPosition }}>
             {label && (
@@ -15,9 +21,9 @@ const DatePicker: React.SFC<Props> = React.memo(props => {
             )}
             <DatePickerStyled
                 {...{ disabled, required }}
-                placeholderText="yyyy-mm-dd"
-                selected={value}
-                onChange={onChange}
+                placeholderText={placeholder || 'yyyy-mm-dd'}
+                selected={value ? new Date(value) : null}
+                onChange={handleDateChange}
                 dateFormat="yyyy-MM-dd"
             />
         </FieldWithLabel>

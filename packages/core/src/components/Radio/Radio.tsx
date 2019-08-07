@@ -15,7 +15,7 @@ const Radio: React.SFC<Props> & WithStyle = React.memo(
                         {label}
                     </FieldWithLabel.Label>
                 )}
-                <RadioWrapperStyled {...{ size }}>
+                <RadioWrapperStyled size={size} disabled={restProps.disabled}>
                     <RadioStyled ref={ref} id={label} required={required} {...restProps} />
                     <RadioFillStyled />
                 </RadioWrapperStyled>

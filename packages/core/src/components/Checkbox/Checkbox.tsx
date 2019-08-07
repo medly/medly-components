@@ -15,7 +15,7 @@ const Checkbox: React.SFC<Props> & WithStyle = React.memo(
                         {label}
                     </FieldWithLabel.Label>
                 )}
-                <CheckboxWrapperStyled {...{ size }}>
+                <CheckboxWrapperStyled size={size} disabled={restProps.disabled}>
                     <CheckboxStyled ref={ref} id={label} required={required} {...restProps} />
                     <CheckboxFillStyled>
                         <CheckIcon />

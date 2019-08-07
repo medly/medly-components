@@ -10,13 +10,14 @@ const size: Array<Props['size']> = ['XS', 'S', 'M', 'L', 'XL'];
 
 storiesOf('Core', module).add('RadioGroup', () => (
     <RadioGroup
+        disabled={boolean('Disabled', false)}
+        required={boolean('Required', false)}
         label={text('Label', 'Gender')}
         name={text('Name', 'gender')}
-        required={boolean('Required', false)}
         size={select('Size', size, 'S')}
         labelPosition={select('Label Position', labelPosition, 'top')}
     >
-        <Radio label="Female" />
-        <Radio label="Male" />
+        <Radio value="female" label="Female" />
+        <Radio value="male" label="Male" />
     </RadioGroup>
 ));

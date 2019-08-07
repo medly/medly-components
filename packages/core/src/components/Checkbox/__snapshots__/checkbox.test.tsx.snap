@@ -10,9 +10,9 @@ exports[`Checkbox component should render correctly with all the default props 1
 }
 
 .c0 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: max-content auto;
+  grid-template-columns: max-content minmax(max-content,25%);
   grid-template-areas: 'field label' 'description random';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -37,7 +37,7 @@ exports[`Checkbox component should render correctly with all the default props 1
   height: 16px;
   position: relative;
   border: 1px solid #CCCCCC;
-  background-color: #ffffff;
+  background-color: black;
   border-radius: 15%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -51,6 +51,10 @@ exports[`Checkbox component should render correctly with all the default props 1
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c1:focus-within {
+  box-shadow: 0 0 0 1pt #012040;
 }
 
 .c4 {
@@ -88,6 +92,10 @@ exports[`Checkbox component should render correctly with all the default props 1
 
 .c2:focus {
   outline: none;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
 }
 
 .c2:checked ~ .c3 {
@@ -158,13 +166,13 @@ exports[`Checkbox component should render correctly with all the props given 1`]
 }
 
 .c0 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: max-content auto;
+  grid-template-columns: max-content minmax(max-content,25%);
   grid-template-areas: 'field label' 'description random';
 }
 
-.c0 .c9 {
+.c0 .c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -183,7 +191,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   height: 24px;
   position: relative;
   border: 1px solid #CCCCCC;
-  background-color: #ffffff;
+  background-color: #ededed;
   border-radius: 15%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -197,6 +205,10 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c3:focus-within {
+  box-shadow: 0 0 0 1pt #012040;
 }
 
 .c6 {
@@ -222,6 +234,13 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   height: 100%;
 }
 
+.c9:checked ~ .c5 {
+  width: calc(70%);
+  height: calc(70%);
+  -webkit-transition: width 0.2s ease,height 0.2s ease;
+  transition: width 0.2s ease,height 0.2s ease;
+}
+
 .c4 {
   opacity: 0;
   z-index: 2;
@@ -229,11 +248,15 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   width: 100%;
   height: 100%;
   margin: 0;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .c4:focus {
   outline: none;
+}
+
+.c4:disabled {
+  cursor: not-allowed;
 }
 
 .c4:checked ~ .c5 {
@@ -255,9 +278,11 @@ exports[`Checkbox component should render correctly with all the props given 1`]
     </label>
     <div
       class="c3"
+      disabled=""
     >
       <input
         class="c4"
+        disabled=""
         id="Female"
         name="gender"
         type="checkbox"

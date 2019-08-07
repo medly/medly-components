@@ -17,6 +17,7 @@ describe('Select component', () => {
         const mockOnChange = jest.fn();
         const { container } = render(
             <Select
+                disabled
                 options={options}
                 defaultSelected="all"
                 labelPosition="left"

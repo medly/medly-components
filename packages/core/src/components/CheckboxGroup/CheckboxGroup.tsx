@@ -4,7 +4,7 @@ import FieldWithLabel from '../FieldWithLabel';
 import { Props } from './types';
 
 const CheckboxGroup: React.SFC<Props> & WithStyle = React.memo(props => {
-    const { size, name, label, required, children, labelPosition } = props;
+    const { size, name, label, required, children, labelPosition, disabled } = props;
     return (
         <FieldWithLabel fullWidth {...{ labelPosition }}>
             {label && <FieldWithLabel.Label {...{ required, labelPosition }}>{label}</FieldWithLabel.Label>}
@@ -13,7 +13,8 @@ const CheckboxGroup: React.SFC<Props> & WithStyle = React.memo(props => {
                     return React.cloneElement(child as any, {
                         size,
                         name,
-                        required
+                        required,
+                        disabled
                     });
                 })}
             </FieldWithLabel.Field>

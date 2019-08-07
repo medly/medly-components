@@ -34,7 +34,7 @@ exports[`CheckboxGroup component should render correctly with all the default pr
 .c0 {
   margin: 8px 0px;
   display: grid;
-  grid-template-columns: minmax(max-content,20%) minmax(max-content,80%);
+  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -55,9 +55,9 @@ exports[`CheckboxGroup component should render correctly with all the default pr
 }
 
 .c3 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: max-content auto;
+  grid-template-columns: max-content minmax(max-content,25%);
   grid-template-areas: 'field label' 'description random';
 }
 
@@ -80,7 +80,7 @@ exports[`CheckboxGroup component should render correctly with all the default pr
   height: 16px;
   position: relative;
   border: 1px solid #CCCCCC;
-  background-color: #ffffff;
+  background-color: black;
   border-radius: 15%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -94,6 +94,10 @@ exports[`CheckboxGroup component should render correctly with all the default pr
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c6:focus-within {
+  box-shadow: 0 0 0 1pt #012040;
 }
 
 .c9 {
@@ -131,6 +135,10 @@ exports[`CheckboxGroup component should render correctly with all the default pr
 
 .c7:focus {
   outline: none;
+}
+
+.c7:disabled {
+  cursor: not-allowed;
 }
 
 .c7:checked ~ .c8 {
@@ -290,9 +298,9 @@ exports[`CheckboxGroup component should render correctly with all the props give
 }
 
 .c5 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: max-content auto;
+  grid-template-columns: max-content minmax(max-content,25%);
   grid-template-areas: 'field label' 'description random';
 }
 
@@ -335,7 +343,7 @@ exports[`CheckboxGroup component should render correctly with all the props give
   height: 16px;
   position: relative;
   border: 1px solid #CCCCCC;
-  background-color: #ffffff;
+  background-color: black;
   border-radius: 15%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -349,6 +357,10 @@ exports[`CheckboxGroup component should render correctly with all the props give
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c7:focus-within {
+  box-shadow: 0 0 0 1pt #012040;
 }
 
 .c10 {
@@ -386,6 +398,10 @@ exports[`CheckboxGroup component should render correctly with all the props give
 
 .c8:focus {
   outline: none;
+}
+
+.c8:disabled {
+  cursor: not-allowed;
 }
 
 .c8:checked ~ .c9 {

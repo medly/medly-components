@@ -8,9 +8,9 @@ exports[`Select component should close options when clicked outside 1`] = `
 }
 
 .c1 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: minmax(max-content,20%) minmax(max-content,80%);
+  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -31,7 +31,7 @@ exports[`Select component should close options when clicked outside 1`] = `
 }
 
 .c4 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
@@ -146,7 +146,7 @@ exports[`Select component should close options when clicked outside 1`] = `
 }
 
 .c8 {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .c8 * {
@@ -156,6 +156,7 @@ exports[`Select component should close options when clicked outside 1`] = `
 .c3 {
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
+  cursor: pointer;
   border-radius: 4px;
   box-sizing: border-box;
   overflow: hidden;
@@ -181,7 +182,6 @@ exports[`Select component should close options when clicked outside 1`] = `
 
 .c3 .c0 {
   margin: 0px;
-  cursor: pointer;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -189,14 +189,16 @@ exports[`Select component should close options when clicked outside 1`] = `
 
 .c3 .c0 .c5 {
   margin: 0px;
-  cursor: pointer;
   border: none;
   background-color: transparent;
 }
 
+.c3 * {
+  cursor: pointer;
+}
+
 .c14 .c0 {
   margin: 0px;
-  cursor: pointer;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -204,7 +206,6 @@ exports[`Select component should close options when clicked outside 1`] = `
 
 .c14 .c0 .c5 {
   margin: 0px;
-  cursor: pointer;
   border: none;
   background-color: transparent;
 }
@@ -215,7 +216,7 @@ exports[`Select component should close options when clicked outside 1`] = `
   flex: 1;
   max-width: 20px;
   margin-right: 8px;
-  cursor: pointer;
+  font-size: 10px;
 }
 
 <div>
@@ -312,9 +313,9 @@ exports[`Select component should render all the options when input value is not 
 }
 
 .c1 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: minmax(max-content,20%) minmax(max-content,80%);
+  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -335,7 +336,7 @@ exports[`Select component should render all the options when input value is not 
 }
 
 .c4 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
@@ -450,7 +451,7 @@ exports[`Select component should render all the options when input value is not 
 }
 
 .c8 {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .c8 * {
@@ -460,6 +461,7 @@ exports[`Select component should render all the options when input value is not 
 .c3 {
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
+  cursor: pointer;
   border-radius: 4px;
   box-sizing: border-box;
   overflow: hidden;
@@ -485,7 +487,6 @@ exports[`Select component should render all the options when input value is not 
 
 .c3 .c0 {
   margin: 0px;
-  cursor: pointer;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -493,14 +494,16 @@ exports[`Select component should render all the options when input value is not 
 
 .c3 .c0 .c5 {
   margin: 0px;
-  cursor: pointer;
   border: none;
   background-color: transparent;
 }
 
+.c3 * {
+  cursor: pointer;
+}
+
 .c14 .c0 {
   margin: 0px;
-  cursor: pointer;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -508,7 +511,6 @@ exports[`Select component should render all the options when input value is not 
 
 .c14 .c0 .c5 {
   margin: 0px;
-  cursor: pointer;
   border: none;
   background-color: transparent;
 }
@@ -519,7 +521,7 @@ exports[`Select component should render all the options when input value is not 
   flex: 1;
   max-width: 20px;
   margin-right: 8px;
-  cursor: pointer;
+  font-size: 10px;
 }
 
 <div>
@@ -618,7 +620,7 @@ exports[`Select component should render correctly with all the props given 1`] =
   content: ' *';
 }
 
-.c15 {
+.c14 {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
@@ -631,21 +633,21 @@ exports[`Select component should render correctly with all the props given 1`] =
   align-self: center;
 }
 
-.c17 {
+.c13 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: #818A91;
 }
 
 .c6 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
 }
 
-.c6 .c19 {
+.c6 .c16 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -662,11 +664,11 @@ exports[`Select component should render correctly with all the props given 1`] =
 .c1 {
   margin: 8px 0px;
   display: grid;
-  grid-template-columns: minmax(max-content,20%) minmax(max-content,80%);
+  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
   grid-template-areas: 'label field' 'random description';
 }
 
-.c1 .c19 {
+.c1 .c16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -685,7 +687,7 @@ exports[`Select component should render correctly with all the props given 1`] =
   font-size: 14px;
   font-weight: 400;
   color: #555;
-  background-color: #ffffff;
+  background-color: #ededed;
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #CCCCCC;
@@ -745,77 +747,31 @@ exports[`Select component should render correctly with all the props given 1`] =
   align-self: center;
 }
 
-.c16 {
-  cursor: pointer;
-  padding: 5px;
-  color: inherit;
-  background-color: #ffffff;
-}
-
-.c16:last-child {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-.c16:first-child {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-
-.c14 {
-  cursor: pointer;
-  padding: 5px;
-  color: #ffffff;
-  background-color: #FE8D6B;
-}
-
-.c14:last-child {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-.c14:first-child {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-
-.c13 {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-  max-height: 200px;
-  overflow: auto;
-  border: 1px solid #FE8D6B;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
 .c10 {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .c10 * {
   fill: #555;
 }
 
-.c18 .c0 {
+.c15 .c0 {
   margin: 0px;
-  cursor: pointer;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c18 .c0 .c7 {
+.c15 .c0 .c7 {
   margin: 0px;
-  cursor: pointer;
   border: none;
   background-color: transparent;
 }
 
 .c5 {
   border: 1px solid #FE8D6B;
-  background-color: #ffffff;
+  background-color: #ededed;
+  cursor: not-allowed;
   border-radius: 4px;
   box-sizing: border-box;
   overflow: hidden;
@@ -842,7 +798,6 @@ exports[`Select component should render correctly with all the props given 1`] =
 
 .c5 .c0 {
   margin: 0px;
-  cursor: pointer;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -850,9 +805,12 @@ exports[`Select component should render correctly with all the props given 1`] =
 
 .c5 .c0 .c7 {
   margin: 0px;
-  cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+.c5 * {
+  cursor: not-allowed;
 }
 
 .c9 {
@@ -861,7 +819,7 @@ exports[`Select component should render correctly with all the props given 1`] =
   flex: 1;
   max-width: 20px;
   margin-right: 8px;
-  cursor: pointer;
+  font-size: 10px;
 }
 
 <div>
@@ -880,6 +838,7 @@ exports[`Select component should render correctly with all the props given 1`] =
     >
       <div
         class="c5"
+        disabled=""
       >
         <div
           class="c0 c6"
@@ -888,6 +847,7 @@ exports[`Select component should render correctly with all the props given 1`] =
           <input
             class="c7 c8"
             data-testid="select-input"
+            disabled=""
             label=""
             placeholder="Please Select"
             required=""
@@ -913,42 +873,10 @@ exports[`Select component should render correctly with all the props given 1`] =
       </div>
       <div
         class="c11 c12"
-      >
-        <ul
-          class="c13"
-        >
-          <li
-            class="c14"
-          >
-            <span
-              class="c15"
-            >
-              All
-            </span>
-          </li>
-          <li
-            class="c16"
-          >
-            <span
-              class="c15"
-            >
-              Dummy1
-            </span>
-          </li>
-          <li
-            class="c16"
-          >
-            <span
-              class="c15"
-            >
-              Dummy2
-            </span>
-          </li>
-        </ul>
-      </div>
+      />
     </div>
     <span
-      class="c17 c15"
+      class="c13 c14"
     >
       We will show reports based on Pharmacy
     </span>
@@ -964,9 +892,9 @@ exports[`Select component should render correctly with default props 1`] = `
 }
 
 .c1 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: minmax(max-content,20%) minmax(max-content,80%);
+  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -987,7 +915,7 @@ exports[`Select component should render correctly with default props 1`] = `
 }
 
 .c4 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
@@ -1102,7 +1030,7 @@ exports[`Select component should render correctly with default props 1`] = `
 }
 
 .c8 {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .c8 * {
@@ -1112,6 +1040,7 @@ exports[`Select component should render correctly with default props 1`] = `
 .c3 {
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
+  cursor: pointer;
   border-radius: 4px;
   box-sizing: border-box;
   overflow: hidden;
@@ -1137,7 +1066,6 @@ exports[`Select component should render correctly with default props 1`] = `
 
 .c3 .c0 {
   margin: 0px;
-  cursor: pointer;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1145,9 +1073,12 @@ exports[`Select component should render correctly with default props 1`] = `
 
 .c3 .c0 .c5 {
   margin: 0px;
-  cursor: pointer;
   border: none;
   background-color: transparent;
+}
+
+.c3 * {
+  cursor: pointer;
 }
 
 .c7 {
@@ -1156,7 +1087,7 @@ exports[`Select component should render correctly with default props 1`] = `
   flex: 1;
   max-width: 20px;
   margin-right: 8px;
-  cursor: pointer;
+  font-size: 10px;
 }
 
 <div>
@@ -1249,9 +1180,9 @@ exports[`Select component should render matched options when input values change
 }
 
 .c1 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: minmax(max-content,20%) minmax(max-content,80%);
+  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -1272,7 +1203,7 @@ exports[`Select component should render matched options when input values change
 }
 
 .c4 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
@@ -1387,7 +1318,7 @@ exports[`Select component should render matched options when input values change
 }
 
 .c8 {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .c8 * {
@@ -1397,6 +1328,7 @@ exports[`Select component should render matched options when input values change
 .c3 {
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
+  cursor: pointer;
   border-radius: 4px;
   box-sizing: border-box;
   overflow: hidden;
@@ -1422,7 +1354,6 @@ exports[`Select component should render matched options when input values change
 
 .c3 .c0 {
   margin: 0px;
-  cursor: pointer;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1430,14 +1361,16 @@ exports[`Select component should render matched options when input values change
 
 .c3 .c0 .c5 {
   margin: 0px;
-  cursor: pointer;
   border: none;
   background-color: transparent;
 }
 
+.c3 * {
+  cursor: pointer;
+}
+
 .c14 .c0 {
   margin: 0px;
-  cursor: pointer;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1445,7 +1378,6 @@ exports[`Select component should render matched options when input values change
 
 .c14 .c0 .c5 {
   margin: 0px;
-  cursor: pointer;
   border: none;
   background-color: transparent;
 }
@@ -1456,7 +1388,7 @@ exports[`Select component should render matched options when input values change
   flex: 1;
   max-width: 20px;
   margin-right: 8px;
-  cursor: pointer;
+  font-size: 10px;
 }
 
 <div>
@@ -1541,9 +1473,9 @@ exports[`Select component should render options correctly 1`] = `
 }
 
 .c1 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: minmax(max-content,20%) minmax(max-content,80%);
+  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -1564,7 +1496,7 @@ exports[`Select component should render options correctly 1`] = `
 }
 
 .c4 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
@@ -1679,7 +1611,7 @@ exports[`Select component should render options correctly 1`] = `
 }
 
 .c8 {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .c8 * {
@@ -1689,6 +1621,7 @@ exports[`Select component should render options correctly 1`] = `
 .c3 {
   border: 1px solid #FE8D6B;
   background-color: #ffffff;
+  cursor: pointer;
   border-radius: 4px;
   box-sizing: border-box;
   overflow: hidden;
@@ -1714,7 +1647,6 @@ exports[`Select component should render options correctly 1`] = `
 
 .c3 .c0 {
   margin: 0px;
-  cursor: pointer;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1722,14 +1654,16 @@ exports[`Select component should render options correctly 1`] = `
 
 .c3 .c0 .c5 {
   margin: 0px;
-  cursor: pointer;
   border: none;
   background-color: transparent;
 }
 
+.c3 * {
+  cursor: pointer;
+}
+
 .c14 .c0 {
   margin: 0px;
-  cursor: pointer;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1737,7 +1671,6 @@ exports[`Select component should render options correctly 1`] = `
 
 .c14 .c0 .c5 {
   margin: 0px;
-  cursor: pointer;
   border: none;
   background-color: transparent;
 }
@@ -1748,7 +1681,7 @@ exports[`Select component should render options correctly 1`] = `
   flex: 1;
   max-width: 20px;
   margin-right: 8px;
-  cursor: pointer;
+  font-size: 10px;
 }
 
 <div>
@@ -1836,7 +1769,7 @@ exports[`Select component should render options correctly 1`] = `
 exports[`Select component should render options correctly 2`] = `
 <div>
   <div
-    class="sc-EHOje fMHuVl"
+    class="sc-EHOje jMvnyj"
   >
     
     <div
@@ -1844,10 +1777,10 @@ exports[`Select component should render options correctly 2`] = `
       data-testid="popover-wrapper"
     >
       <div
-        class="sc-jTzLTM hDVovc"
+        class="sc-jTzLTM kudclW"
       >
         <div
-          class="sc-EHOje faPmGG"
+          class="sc-EHOje gNvYMz"
         >
           
           <input
@@ -1861,7 +1794,7 @@ exports[`Select component should render options correctly 2`] = `
           
         </div>
         <svg
-          class="sc-fjdhpX epxlks sc-gZMcBi jgWhEG"
+          class="sc-fjdhpX iEtKxJ sc-gZMcBi cHSakR"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"

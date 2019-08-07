@@ -2,20 +2,6 @@ import { defaultTheme } from '@medly-components/theme';
 import { centerAligned, styled, WithThemeProp } from '@medly-components/utils';
 import { Props, RadioWrapperProps } from './types';
 
-export const RadioWrapperStyled = styled('div')<RadioWrapperProps>`
-    width: ${({ theme, size }) => (size ? theme.radio.sizes[size] : theme.radio.defaultSize)};
-    height: ${({ theme, size }) => (size ? theme.radio.sizes[size] : theme.radio.defaultSize)};
-    position: relative;
-    border-radius: 100%;
-    border: 1px solid ${({ theme }) => theme.radio.borderColor};
-    background-color: ${({ theme }) => theme.radio.bgColor};
-
-    ${centerAligned()}
-`;
-RadioWrapperStyled.defaultProps = {
-    theme: defaultTheme
-};
-
 export const RadioFillStyled = styled('div')<WithThemeProp>`
     background-color: ${({ theme }) => theme.radio.fillColor};
     width: 0;
@@ -35,11 +21,7 @@ export const RadioStyled = styled('input').attrs({ type: 'radio' })<Props>`
     width: 100%;
     height: 100%;
     margin: 0;
-    cursor: pointer;
-
-    &:focus {
-        outline: none;
-    }
+    cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
 
     &:checked ~ ${RadioFillStyled} {
         width: calc(75%);
@@ -47,3 +29,21 @@ export const RadioStyled = styled('input').attrs({ type: 'radio' })<Props>`
         transition: width 0.2s ease, height 0.2s ease;
     }
 `;
+
+export const RadioWrapperStyled = styled('div')<RadioWrapperProps>`
+    width: ${({ theme, size }) => (size ? theme.radio.sizes[size] : theme.radio.defaultSize)};
+    height: ${({ theme, size }) => (size ? theme.radio.sizes[size] : theme.radio.defaultSize)};
+    position: relative;
+    border-radius: 100%;
+    border: 1px solid ${({ theme }) => theme.radio.borderColor};
+    background-color: ${({ theme, disabled }) => (disabled ? theme.radio.disabledBgcolor : theme.radio.bgColor)};
+
+    &:focus-within {
+        box-shadow: 0 0 0 1pt ${({ theme }) => theme.checkbox.outlineColor};
+    }
+
+    ${centerAligned()}
+`;
+RadioWrapperStyled.defaultProps = {
+    theme: defaultTheme
+};

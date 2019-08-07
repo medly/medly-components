@@ -10,7 +10,7 @@ import { Option, SelectProps } from './types';
 
 const Select: React.SFC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { description, label, placeholder, labelPosition, required, fullWidth } = props,
+        const { description, label, placeholder, labelPosition, required, fullWidth, disabled } = props,
             defaultSelectedOption = getDefaultSelected(props.options, props.defaultSelected);
 
         const [inputValue, setInputValue] = useState(defaultSelectedOption.label),
@@ -54,9 +54,10 @@ const Select: React.SFC<SelectProps> & WithStyle = React.memo(
             <FieldWithLabel {...{ fullWidth, labelPosition }}>
                 {label && <FieldWithLabel.Label {...{ required, labelPosition }}>{label}</FieldWithLabel.Label>}
                 <PopoverWrapper interactionType="click" onOuterClick={handleOuterClick}>
-                    <SelectWrapperStyled {...{ description, fullWidth, labelPosition }} onClick={handleWrapperClick}>
+                    <SelectWrapperStyled {...{ description, fullWidth, labelPosition, disabled }} onClick={handleWrapperClick}>
                         <Input
                             type="text"
+                            disabled={disabled}
                             required={required}
                             data-testid="select-input"
                             placeholder={placeholder}
@@ -65,11 +66,9 @@ const Select: React.SFC<SelectProps> & WithStyle = React.memo(
                             ref={ref}
                             onChange={handleInputChange}
                         />
-                        <SelectIconStyled size="XS" />
+                        <SelectIconStyled />
                     </SelectWrapperStyled>
-                    <Popover fullWidth>
-                        <Options options={options} onOptionClick={handleOptionClick} />
-                    </Popover>
+                    <Popover fullWidth>{!disabled && <Options options={options} onOptionClick={handleOptionClick} />}</Popover>
                 </PopoverWrapper>
                 {description && <FieldWithLabel.Description>{description}</FieldWithLabel.Description>}
             </FieldWithLabel>

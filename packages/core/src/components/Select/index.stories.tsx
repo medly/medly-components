@@ -21,6 +21,7 @@ storiesOf('Core', module).add('Select', () => (
         options={options}
         defaultSelected="medly pharmacy"
         onChange={handleOnChange}
+        disabled={boolean('Disabled', false)}
         fullWidth={boolean('Full Width', false)}
         required={boolean('Required', false)}
         label={text('Label', 'Pharmacy')}

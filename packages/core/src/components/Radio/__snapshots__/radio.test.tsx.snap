@@ -2,9 +2,9 @@
 
 exports[`Radio component should render correctly with all the default props 1`] = `
 .c0 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: max-content auto;
+  grid-template-columns: max-content minmax(max-content,25%);
   grid-template-areas: 'field label' 'description random';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -22,27 +22,6 @@ exports[`Radio component should render correctly with all the default props 1`] 
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
-}
-
-.c1 {
-  width: 16px;
-  height: 16px;
-  position: relative;
-  border-radius: 100%;
-  border: 1px solid #CCCCCC;
-  background-color: #ffffff;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c4 {
@@ -75,15 +54,36 @@ exports[`Radio component should render correctly with all the default props 1`] 
   cursor: pointer;
 }
 
-.c2:focus {
-  outline: none;
-}
-
 .c2:checked ~ .c3 {
   width: calc(75%);
   height: calc(75%);
   -webkit-transition: width 0.2s ease,height 0.2s ease;
   transition: width 0.2s ease,height 0.2s ease;
+}
+
+.c1 {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  border-radius: 100%;
+  border: 1px solid #CCCCCC;
+  background-color: #ffffff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1:focus-within {
+  box-shadow: 0 0 0 1pt #012040;
 }
 
 <div>
@@ -97,8 +97,9 @@ exports[`Radio component should render correctly with all the default props 1`] 
       <input
         class="c2"
         id=""
-        name="gender"
+        name="Female"
         type="radio"
+        value="female"
       />
       <div
         class="c3 c4"
@@ -125,13 +126,13 @@ exports[`Radio component should render correctly with all the props given 1`] = 
 }
 
 .c0 {
-  margin: 8px;
+  margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: max-content auto;
+  grid-template-columns: max-content minmax(max-content,25%);
   grid-template-areas: 'field label' 'description random';
 }
 
-.c0 .c7 {
+.c0 .c8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -143,27 +144,6 @@ exports[`Radio component should render correctly with all the props given 1`] = 
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
-}
-
-.c3 {
-  width: 24px;
-  height: 24px;
-  position: relative;
-  border-radius: 100%;
-  border: 1px solid #CCCCCC;
-  background-color: #ffffff;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c6 {
@@ -186,6 +166,13 @@ exports[`Radio component should render correctly with all the props given 1`] = 
   align-items: center;
 }
 
+.c7:checked ~ .c5 {
+  width: calc(75%);
+  height: calc(75%);
+  -webkit-transition: width 0.2s ease,height 0.2s ease;
+  transition: width 0.2s ease,height 0.2s ease;
+}
+
 .c4 {
   opacity: 0;
   z-index: 2;
@@ -193,11 +180,7 @@ exports[`Radio component should render correctly with all the props given 1`] = 
   width: 100%;
   height: 100%;
   margin: 0;
-  cursor: pointer;
-}
-
-.c4:focus {
-  outline: none;
+  cursor: not-allowed;
 }
 
 .c4:checked ~ .c5 {
@@ -205,6 +188,31 @@ exports[`Radio component should render correctly with all the props given 1`] = 
   height: calc(75%);
   -webkit-transition: width 0.2s ease,height 0.2s ease;
   transition: width 0.2s ease,height 0.2s ease;
+}
+
+.c3 {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  border-radius: 100%;
+  border: 1px solid #CCCCCC;
+  background-color: #ededed;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3:focus-within {
+  box-shadow: 0 0 0 1pt #012040;
 }
 
 <div>
@@ -219,12 +227,15 @@ exports[`Radio component should render correctly with all the props given 1`] = 
     </label>
     <div
       class="c3"
+      disabled=""
     >
       <input
         class="c4"
+        disabled=""
         id="Female"
         name="gender"
         type="radio"
+        value="female"
       />
       <div
         class="c5 c6"

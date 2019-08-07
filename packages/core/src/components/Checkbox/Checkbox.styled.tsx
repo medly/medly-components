@@ -8,8 +8,12 @@ export const CheckboxWrapperStyled = styled('div')<CheckboxWrapperProps>`
     height: ${({ theme, size }) => (size ? theme.checkbox.sizes[size] : theme.checkbox.defaultSize)};
     position: relative;
     border: 1px solid ${({ theme }) => theme.checkbox.borderColor};
-    background-color: ${({ theme }) => theme.checkbox.bgColor};
+    background-color: ${({ theme, disabled }) => (disabled ? theme.checkbox.disabledBgcolor : theme.checkbox.bgColor)};
     border-radius: 15%;
+
+    &:focus-within {
+        box-shadow: 0 0 0 1pt ${({ theme }) => theme.checkbox.outlineColor};
+    }
 
     ${centerAligned()}
 `;
@@ -40,10 +44,14 @@ export const CheckboxStyled = styled('input').attrs({ type: 'checkbox' })<Props>
     width: 100%;
     height: 100%;
     margin: 0;
-    cursor: pointer;
+    cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
 
     &:focus {
         outline: none;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
     }
 
     &:checked ~ ${CheckboxFillStyled} {

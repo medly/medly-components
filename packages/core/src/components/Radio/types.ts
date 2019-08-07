@@ -10,6 +10,7 @@ export interface RadioWrapperProps extends DivProps, WithThemeProp {
 }
 
 export interface Props extends InputProps, WithThemeProp {
+    value: string;
     labelPosition?: LabelPositions;
     required?: boolean;
     label?: string;

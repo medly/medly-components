@@ -5,5 +5,7 @@ export interface RadioTheme {
     defaultSize: string;
     fillColor: string;
     bgColor: string;
+    disabledBgcolor: string;
     borderColor: string;
+    outlineColor: string;
 }
