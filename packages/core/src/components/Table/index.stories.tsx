@@ -165,7 +165,7 @@ const DemoComponent: React.SFC<DemoComponentProps> = props => {
                 <Modal.Content>{checkBoxes(columnConfig)}</Modal.Content>
             </Modal>
             <Button onClick={handleModalState}>Hide Columns</Button>
-            <Table onRowClick={action('Row Clicked')} data={tableData} onSortIconClick={filterData} columns={columnConfig} />
+            <Table onRowClick={action('Row Clicked')} data={tableData} onSort={filterData} columns={columnConfig} />
         </div>
     );
 };

@@ -1,6 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
 import { clearMarginPadding, css, styled } from '@medly-components/utils';
-import { CellStyled } from '../Cell/Cell.styled';
+import Cell from '../../Cell';
 
 const frozen = () => css`
     z-index: 4;
@@ -14,7 +14,7 @@ export const ResizeHandlerStyled = styled('span')`
     cursor: ew-resize;
 `;
 
-export const HeadCellStyled = styled(CellStyled)`
+export const HeadCellStyled = styled(Cell)`
     padding: 0px;
     display: flex;
     align-items: center;

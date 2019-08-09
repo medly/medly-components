@@ -1,0 +1,52 @@
+import React, { useState } from 'react';
+import { GroupCell, GroupCellTitle } from '../GroupCell';
+import { changeSize, getGridTemplateColumns } from '../helpers';
+import Row from '../Row';
+import { ColumnConfig, SortOrder } from '../types';
+import HeadCell from './HeadCell';
+import { Props } from './types';
+
+const Head: React.SFC<Props> = props => {
+    const { columns, onSort, setColumns } = props;
+
+    const [sortField, setSortField] = useState('');
+
+    const handleWidthChange = (width: number, field: string) => setColumns(changeSize(width, field, columns)),
+        handleSortChange = (field: string, order: SortOrder) => {
+            setSortField(field);
+            onSort(field, order);
+        };
+
+    const headCell = (configs: ColumnConfig[] = columns, field = '') => {
+        const cells: React.ReactElement[] = [];
+
+        configs.forEach(config => {
+            return config.children
+                ? cells.push(
+                      <GroupCell key={config.field} gridTemplateColumns={getGridTemplateColumns(config.children)}>
+                          <GroupCellTitle>{config.title}</GroupCellTitle>
+                          {headCell(config.children, config.field)}
+                      </GroupCell>
+                  )
+                : cells.push(
+                      <HeadCell
+                          sortField={sortField}
+                          frozen={config.frozen}
+                          hide={config.hide}
+                          enableSorting={config.sort}
+                          key={field ? `${field}.${config.field}` : config.field}
+                          field={field ? `${field}.${config.field}` : config.field}
+                          onSortChange={handleSortChange}
+                          onWidthChange={handleWidthChange}
+                      >
+                          {config.title}
+                      </HeadCell>
+                  );
+        });
+
+        return cells;
+    };
+    return <Row gridTemplateColumns={getGridTemplateColumns(columns)}>{headCell()}</Row>;
+};
+
+export default Head;

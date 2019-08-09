@@ -1,4 +1,4 @@
-import { styled, WithThemeProp } from '@medly-components/utils';
+import { styled } from '@medly-components/utils';
 import { GridTemplateProps } from '../types';
 
 export const RowStyled = styled('li').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({

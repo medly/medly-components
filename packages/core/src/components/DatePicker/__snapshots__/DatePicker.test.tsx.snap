@@ -197,7 +197,7 @@ exports[`DatePicker component should display date popover on click on it 1`] = `
               </div>
               <div
                 aria-label="day-7"
-                class="react-datepicker__day react-datepicker__day--007 react-datepicker__day--keyboard-selected react-datepicker__day--today"
+                class="react-datepicker__day react-datepicker__day--007"
                 role="option"
               >
                 7
@@ -211,7 +211,7 @@ exports[`DatePicker component should display date popover on click on it 1`] = `
               </div>
               <div
                 aria-label="day-9"
-                class="react-datepicker__day react-datepicker__day--009"
+                class="react-datepicker__day react-datepicker__day--009 react-datepicker__day--keyboard-selected react-datepicker__day--today"
                 role="option"
               >
                 9

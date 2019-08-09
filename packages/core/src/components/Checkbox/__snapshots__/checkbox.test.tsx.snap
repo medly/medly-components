@@ -37,7 +37,7 @@ exports[`Checkbox component should render correctly with all the default props 1
   height: 16px;
   position: relative;
   border: 1px solid #CCCCCC;
-  background-color: black;
+  background-color: #ffffff;
   border-radius: 15%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

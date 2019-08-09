@@ -1,5 +1,5 @@
 import { css, styled } from '@medly-components/utils';
-import { CellStyledProps } from '../types';
+import { Props } from './types';
 
 const frozen = () => css`
     position: sticky;
@@ -8,7 +8,7 @@ const frozen = () => css`
     background-color: inherit;
 `;
 
-export const CellStyled = styled('div')<CellStyledProps>`
+export const CellStyled = styled('div')<Props>`
     opacity: ${({ hide }) => (hide ? 0 : 1)};
     padding: 5px 0px 5px 10px;
     overflow: hidden;
