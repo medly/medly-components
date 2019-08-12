@@ -11,6 +11,7 @@ import { ColumnConfig, SortOrder } from './types';
 
 const data = [
     {
+        id: 1,
         name: 'Oli Bob',
         age: '12',
         color: 'red',
@@ -21,6 +22,7 @@ const data = [
         }
     },
     {
+        id: 2,
         name: 'Mary May',
         age: '1',
         color: 'green',
@@ -31,6 +33,7 @@ const data = [
         }
     },
     {
+        id: 3,
         name: 'Christine Lobowski',
         age: '42',
         color: 'green',
@@ -41,6 +44,7 @@ const data = [
         }
     },
     {
+        id: 4,
         name: 'Brendon Philips',
         age: '125',
         color: 'red',
@@ -51,6 +55,7 @@ const data = [
         }
     },
     {
+        id: 5,
         name: 'Margret Marmajuke',
         age: '16',
         color: 'yellow',
@@ -61,6 +66,7 @@ const data = [
         }
     },
     {
+        id: 6,
         name: 'Van Ng',
         age: '37',
         color: 'green',
@@ -71,6 +77,7 @@ const data = [
         }
     },
     {
+        id: 7,
         name: 'Duc Ng',
         age: '37',
         color: 'yellow',
@@ -108,6 +115,7 @@ const DemoComponent: React.SFC<DemoComponentProps> = props => {
     const [modalState, setModalState] = useState(false);
     const [tableData, setTableData] = useState(data);
     const [columnConfig, setColumnConfig] = useState(columns);
+    const [selectedRows, setSelectedRows] = useState([2, 3]);
 
     useEffect(() => {
         const newConfig = hideColumn(props.hideColumnField, columnConfig);
@@ -165,7 +173,15 @@ const DemoComponent: React.SFC<DemoComponentProps> = props => {
                 <Modal.Content>{checkBoxes(columnConfig)}</Modal.Content>
             </Modal>
             <Button onClick={handleModalState}>Hide Columns</Button>
-            <Table onRowClick={action('Row Clicked')} data={tableData} onSort={filterData} columns={columnConfig} />
+            <Table
+                isSelectable
+                selectedRows={selectedRows}
+                onRowSelection={setSelectedRows}
+                onRowClick={action('Row Clicked')}
+                data={tableData}
+                onSort={filterData}
+                columns={columnConfig}
+            />
         </div>
     );
 };

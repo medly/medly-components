@@ -15,7 +15,6 @@ export const ResizeHandlerStyled = styled('span')`
 `;
 
 export const HeadCellStyled = styled(Cell)`
-    padding: 0px;
     display: flex;
     align-items: center;
     text-overflow: initial;
@@ -23,7 +22,6 @@ export const HeadCellStyled = styled(Cell)`
     white-space: normal;
 
     *:first-child {
-        padding: 5px 0px 5px 10px;
         margin-right: auto;
     }
 

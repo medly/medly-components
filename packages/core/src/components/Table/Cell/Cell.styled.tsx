@@ -1,4 +1,6 @@
+import { SvgIcon } from '@medly-components/icons';
 import { css, styled } from '@medly-components/utils';
+import Checkbox from '../../Checkbox';
 import { Props } from './types';
 
 const frozen = () => css`
@@ -15,6 +17,15 @@ export const CellStyled = styled('div')<Props>`
     white-space: nowrap;
     text-overflow: ellipsis;
     position: relative;
+
+    ${Checkbox.Style} {
+        display: flex;
+        margin: 0px;
+
+        ${SvgIcon} {
+            margin-right: 0px;
+        }
+    }
 
     ${props => props.frozen && frozen()}
 `;

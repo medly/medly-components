@@ -27,15 +27,11 @@ export const TableStyled = styled('ol')<TableStyledProps>`
         }
 
         &:nth-child(even) {
-            * {
-                background-color: #f7f7f7;
-            }
+            background-color: #f7f7f7;
         }
 
         &:nth-child(odd) {
-            * {
-                background-color: white;
-            }
+            background-color: white;
         }
     }
 `;

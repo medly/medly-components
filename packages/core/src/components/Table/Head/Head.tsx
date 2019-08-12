@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Checkbox from '../../Checkbox';
 import { GroupCell, GroupCellTitle } from '../GroupCell';
 import { changeSize, getGridTemplateColumns } from '../helpers';
 import Row from '../Row';
@@ -7,7 +8,7 @@ import HeadCell from './HeadCell';
 import { Props } from './types';
 
 const Head: React.SFC<Props> = props => {
-    const { columns, onSort, setColumns } = props;
+    const { columns, onSort, setColumns, isAllRowSelected, onSelectAllClick } = props;
 
     const [sortField, setSortField] = useState('');
 
@@ -15,7 +16,8 @@ const Head: React.SFC<Props> = props => {
         handleSortChange = (field: string, order: SortOrder) => {
             setSortField(field);
             onSort(field, order);
-        };
+        },
+        handleSelectAllClick = () => onSelectAllClick(-1);
 
     const headCell = (configs: ColumnConfig[] = columns, field = '') => {
         const cells: React.ReactElement[] = [];
@@ -39,7 +41,11 @@ const Head: React.SFC<Props> = props => {
                           onSortChange={handleSortChange}
                           onWidthChange={handleWidthChange}
                       >
-                          {config.title}
+                          {config.field === 'medly-table-checkbox' ? (
+                              <Checkbox checked={isAllRowSelected} onChange={handleSelectAllClick} name="active" />
+                          ) : (
+                              config.title
+                          )}
                       </HeadCell>
                   );
         });

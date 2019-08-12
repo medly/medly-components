@@ -27,7 +27,7 @@ const Checkbox: React.SFC<Props> & WithStyle = React.memo(
 );
 
 Checkbox.displayName = 'Checkbox';
-Checkbox.Style = CheckboxWrapperStyled;
+Checkbox.Style = FieldWithLabel.Style;
 Checkbox.defaultProps = {
     label: '',
     labelPosition: 'right'

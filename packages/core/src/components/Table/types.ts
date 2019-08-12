@@ -1,10 +1,16 @@
 export type SortOrder = 'asc' | 'desc';
 
-export interface ColumnTypeToRatioMap {
-    numeric: number;
-    group: number;
-    'text-short': number;
-    'text-long': number;
+export interface ColumnsWidth {
+    numeric: string;
+    group: string;
+    checkbox: string;
+    'text-short': string;
+    'text-long': string;
+}
+
+export interface Data {
+    id: number;
+    [key: string]: any;
 }
 
 export interface ColumnConfig {
@@ -15,7 +21,7 @@ export interface ColumnConfig {
     title: string;
     field: string;
     children?: ColumnConfig[];
-    formatter: keyof ColumnTypeToRatioMap;
+    formatter: keyof ColumnsWidth;
 }
 
 export interface GridTemplateProps {
@@ -27,8 +33,11 @@ export interface TableStyledProps {
 }
 
 export interface Props {
-    onRowClick?: (rowData: object) => void;
-    data: Array<{}>;
+    data: Data[];
     columns: ColumnConfig[];
+    isSelectable?: boolean;
+    selectedRows?: number[];
+    onRowSelection?: (v: number[]) => void;
+    onRowClick?: (rowData: object) => void;
     onSort?: (field: string, order: SortOrder) => void;
 }
