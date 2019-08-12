@@ -27,7 +27,7 @@ const Table: React.SFC<Props> & WithStyle = props => {
     }, [selectedRows]);
 
     useEffect(() => {
-        onRowSelection(selectedIds.value);
+        onRowSelection && onRowSelection(selectedIds.value);
     }, [selectedIds.value]);
 
     return (
@@ -47,9 +47,11 @@ const Table: React.SFC<Props> & WithStyle = props => {
 };
 
 Table.defaultProps = {
-    isSelectable: false,
-    selectedRows: []
+    data: [],
+    selectedRows: [],
+    isSelectable: false
 };
+
 Table.displayName = 'Table';
 Table.Style = TableStyled;
 
