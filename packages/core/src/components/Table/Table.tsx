@@ -46,6 +46,10 @@ const Table: React.SFC<Props> & WithStyle = props => {
     );
 };
 
+Table.defaultProps = {
+    isSelectable: false,
+    selectedRows: []
+};
 Table.displayName = 'Table';
 Table.Style = TableStyled;
 
