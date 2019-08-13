@@ -26,11 +26,15 @@ export const TableStyled = styled('ol')<TableStyledProps>`
             cursor: default;
         }
 
-        &:nth-child(even) {
+        &:not(:first-of-type) > * {
+            height: 100%;
+        }
+
+        &:nth-child(even) > * {
             background-color: #f7f7f7;
         }
 
-        &:nth-child(odd) {
+        &:nth-child(odd) > * {
             background-color: white;
         }
     }

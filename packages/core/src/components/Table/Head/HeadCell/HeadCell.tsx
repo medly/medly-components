@@ -7,7 +7,7 @@ import { HeadCellProps } from './types';
 
 const HeadCell: React.SFC<HeadCellProps> & WithStyle = props => {
     let pageX: number;
-    const { frozen, enableSorting, children, field, sortField, onSortChange, onWidthChange } = props;
+    const { frozen, enableSorting, children, hide, field, sortField, onSortChange, onWidthChange } = props;
 
     const cellEl = useRef(null),
         [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>('none');
@@ -52,7 +52,7 @@ const HeadCell: React.SFC<HeadCellProps> & WithStyle = props => {
         );
 
     return (
-        <HeadCellStyled ref={cellEl} frozen={frozen}>
+        <HeadCellStyled ref={cellEl} frozen={frozen} hide={hide}>
             {React.Children.map(children, c => {
                 return isValidStringOrNumber(c) ? (
                     <Text textWeight="Strong" textSize="M3">

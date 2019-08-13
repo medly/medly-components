@@ -8,6 +8,8 @@ export const GroupCellStyled = styled('div').attrs(({ gridTemplateColumns }: Gri
     }
 }))<GridTemplateProps>`
     display: grid;
+    width: 100%;
+    height: 100%;
 `;
 
 export const GroupCellTitleStyled = styled(Text.Style)<WithThemeProp>`

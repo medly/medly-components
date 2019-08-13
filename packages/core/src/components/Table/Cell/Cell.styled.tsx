@@ -12,16 +12,17 @@ const frozen = () => css`
 
 export const CellStyled = styled('div')<Props>`
     opacity: ${({ hide }) => (hide ? 0 : 1)};
-    padding: 5px 0px 5px 10px;
+    padding: ${({ hide }) => (hide ? '0' : '5px 0px 5px 10px')};
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     position: relative;
+    display: flex;
+    align-items: center;
 
     ${Checkbox.Style} {
         display: flex;
         margin: 0px;
-
         ${SvgIcon} {
             margin-right: 0px;
         }

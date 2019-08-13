@@ -1,5 +1,6 @@
 import React from 'react';
 import Checkbox from '../../Checkbox';
+import Text from '../../Text';
 import Cell from '../Cell';
 import { GroupCell } from '../GroupCell';
 import { getGridTemplateColumns } from '../helpers';
@@ -34,7 +35,7 @@ const Body: React.SFC<Props> = props => {
                                   name="active"
                               />
                           ) : (
-                              rowData[config.field]
+                              <Text textSize="M3">{rowData[config.field]}</Text>
                           )}
                       </Cell>
                   );

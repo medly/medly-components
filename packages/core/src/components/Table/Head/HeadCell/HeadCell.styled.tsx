@@ -15,8 +15,6 @@ export const ResizeHandlerStyled = styled('span')`
 `;
 
 export const HeadCellStyled = styled(Cell)`
-    display: flex;
-    align-items: center;
     text-overflow: initial;
     overflow: auto;
     white-space: normal;
