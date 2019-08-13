@@ -20,7 +20,7 @@ const useRowSelector = (initialIds: number[], initialSelectedIds: number[]): Res
     }
 
     return [
-        { value: ids, setValue: setIds, isAllSelected: ids.length === selectedIds.length },
+        { value: ids, setValue: setIds, isAllSelected: ids.length > 0 && ids.length === selectedIds.length },
         { value: selectedIds, setValue: setSelectedIds },
         toggleId
     ];
