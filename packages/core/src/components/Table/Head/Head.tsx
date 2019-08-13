@@ -17,6 +17,7 @@ const Head: React.SFC<Props> = props => {
             setSortField(field);
             onSort(field, order);
         },
+        stopPropogation = (e: React.MouseEvent) => e.stopPropagation(),
         handleSelectAllClick = () => onSelectAllClick(-1);
 
     const headCell = (configs: ColumnConfig[] = columns, field = '') => {
@@ -42,7 +43,12 @@ const Head: React.SFC<Props> = props => {
                           onWidthChange={handleWidthChange}
                       >
                           {config.field === 'medly-table-checkbox' ? (
-                              <Checkbox checked={isAllRowSelected} onChange={handleSelectAllClick} name="active" />
+                              <Checkbox
+                                  checked={isAllRowSelected}
+                                  onChange={handleSelectAllClick}
+                                  onClick={stopPropogation}
+                                  name="active"
+                              />
                           ) : (
                               config.title
                           )}

@@ -10,11 +10,9 @@ import { Props } from './types';
 const Body: React.SFC<Props> = props => {
     const { data, columns, onRowClick, selectedRows, onRowSelection } = props;
 
-    const handleRowClick = (rowData: object) => () => {
-        onRowClick && onRowClick(rowData);
-    };
-
-    const handleRowSelection = (id: number) => () => onRowSelection(id);
+    const handleRowClick = (rowData: object) => () => onRowClick && onRowClick(rowData),
+        stopPropogation = (e: React.MouseEvent) => e.stopPropagation(),
+        handleRowSelection = (id: number) => (e: React.FormEvent<HTMLInputElement>) => onRowSelection(id);
 
     const rowsCells = (rowData: any, configs: ColumnConfig[] = columns, field = '') => {
         const cells: React.ReactElement[] = [];
@@ -32,6 +30,7 @@ const Body: React.SFC<Props> = props => {
                               <Checkbox
                                   checked={selectedRows.includes(rowData.id)}
                                   onChange={handleRowSelection(rowData.id)}
+                                  onClick={stopPropogation}
                                   name="active"
                               />
                           ) : (
