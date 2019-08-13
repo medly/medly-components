@@ -1,6 +1,7 @@
 import { SvgIcon } from '@medly-components/icons';
 import { css, styled } from '@medly-components/utils';
 import Checkbox from '../../Checkbox';
+import Text from '../../Text';
 import { Props } from './types';
 
 const frozen = () => css`
@@ -13,9 +14,6 @@ const frozen = () => css`
 export const CellStyled = styled('div')<Props>`
     opacity: ${({ hide }) => (hide ? 0 : 1)};
     padding: ${({ hide }) => (hide ? '0' : '5px 0px 5px 10px')};
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     position: relative;
     display: flex;
     align-items: center;
@@ -26,6 +24,12 @@ export const CellStyled = styled('div')<Props>`
         ${SvgIcon} {
             margin-right: 0px;
         }
+    }
+
+    ${Text.Style} {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     ${props => props.frozen && frozen()}

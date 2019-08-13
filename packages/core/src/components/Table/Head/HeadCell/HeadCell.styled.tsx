@@ -1,5 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
 import { clearMarginPadding, css, styled } from '@medly-components/utils';
+import Text from '../../../Text';
 import Cell from '../../Cell';
 
 const frozen = () => css`
@@ -16,11 +17,16 @@ export const ResizeHandlerStyled = styled('span')`
 
 export const HeadCellStyled = styled(Cell)`
     text-overflow: initial;
-    overflow: auto;
     white-space: normal;
 
     *:first-child {
         margin-right: auto;
+    }
+
+    ${Text.Style} {
+        overflow: auto;
+        white-space: unset;
+        text-overflow: unset;
     }
 
     ${SvgIcon} {

@@ -19,9 +19,7 @@ export const TableStyled = styled('ol')<TableStyledProps>`
             top: 0;
             z-index: 2;
             align-items: end;
-
             background-color: white;
-
             border: none;
             cursor: default;
         }
