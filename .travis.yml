@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+  - "10"
+
+install:
+  - yarn install
+  - pip install --user awscli
+
+script:
+  - yarn pres3upload
+  - yarn ci_upload
+
+after_script:
+  - ./trigger_tango-web.sh

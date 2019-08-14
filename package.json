@@ -28,6 +28,7 @@
         "release": "lerna version",
         "pres3upload": "run-s build create-pack",
         "s3upload": "lerna run s3upload",
+        "ci_upload": "lerna run ci_upload",
         "posts3upload": "rimraf packages/*/medly-components-*",
         "test": "run-s type-check test:jest",
         "test:jest": "jest --passWithNoTests --config jest.config.js",

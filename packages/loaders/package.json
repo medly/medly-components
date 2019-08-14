@@ -18,7 +18,8 @@
         "build": "yarn build:js --delete-dir-on-start ",
         "postbuild": "yarn build:types",
         "watch": "run-p \"build:types -w\" \"build:js --watch\"",
-        "s3upload": "s3cmd put medly-components-loaders-* s3://medly-artifacts/medly-components/"
+        "s3upload": "s3cmd put medly-components-loaders-* s3://medly-artifacts/medly-components/",
+        "ci_upload": "aws s3 cp . s3://medly-artifacts/medly-components/ --recursive --exclude '*' --include 'medly-components-*' --acl public-read"
     },
     "peerDependencies": {
         "react": "^16.8.6",
