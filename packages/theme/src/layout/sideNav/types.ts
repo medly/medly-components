@@ -2,6 +2,7 @@ import { FontSizes } from '../../core/types';
 import { IconSizes } from '../../icon/types';
 
 export interface SideNavTheme {
+    scrollbarColor: string;
     closeSize: string;
     openSize: string;
     iconSize: IconSizes;

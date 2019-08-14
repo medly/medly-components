@@ -1,3 +1,3 @@
-import { NavListStyled as NavList } from './NavList.styled';
+import NavList from './NavList';
 
 export default NavList;

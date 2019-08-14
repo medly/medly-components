@@ -2,6 +2,7 @@ import colors from '../../core/colors';
 import { SideNavTheme } from './types';
 
 const sideNav: SideNavTheme = {
+    scrollbarColor: colors.grey[500],
     closeSize: '60px',
     openSize: '250px',
     iconSize: 'M',

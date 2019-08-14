@@ -243,14 +243,14 @@ exports[`DatePicker component should display date popover on click on it 1`] = `
               </div>
               <div
                 aria-label="day-13"
-                class="react-datepicker__day react-datepicker__day--013 react-datepicker__day--keyboard-selected react-datepicker__day--today"
+                class="react-datepicker__day react-datepicker__day--013"
                 role="option"
               >
                 13
               </div>
               <div
                 aria-label="day-14"
-                class="react-datepicker__day react-datepicker__day--014"
+                class="react-datepicker__day react-datepicker__day--014 react-datepicker__day--keyboard-selected react-datepicker__day--today"
                 role="option"
               >
                 14

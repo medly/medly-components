@@ -1,4 +1,4 @@
-import { HomeIcon, SearchIcon } from '@medly-components/icons';
+import { AddIcon, HomeIcon, SearchIcon } from '@medly-components/icons';
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
 import SideNav from './SideNav';
@@ -11,19 +11,23 @@ afterEach(cleanup);
 describe('SideNav', () => {
     it('should render properly', () => {
         const { container } = render(
-            <SideNav>
-                <SideNav.NavItem>
-                    <SideNav.NavIcon>
-                        <HomeIcon />
-                    </SideNav.NavIcon>
-                    <SideNav.NavText>Home</SideNav.NavText>
-                </SideNav.NavItem>
-                <SideNav.NavItem active>
-                    <SideNav.NavIcon>
-                        <SearchIcon />
-                    </SideNav.NavIcon>
-                    <SideNav.NavText>Search</SideNav.NavText>
-                </SideNav.NavItem>
+            <SideNav logo={AddIcon}>
+                <SideNav.NavList>
+                    <SideNav.NavItem active>
+                        <SideNav.NavIcon>
+                            <SearchIcon />
+                        </SideNav.NavIcon>
+                        <SideNav.NavText>Search</SideNav.NavText>
+                    </SideNav.NavItem>
+                </SideNav.NavList>
+                <SideNav.BottomList>
+                    <SideNav.NavItem>
+                        <SideNav.NavIcon>
+                            <HomeIcon />
+                        </SideNav.NavIcon>
+                        <SideNav.NavText>Home</SideNav.NavText>
+                    </SideNav.NavItem>
+                </SideNav.BottomList>
             </SideNav>
         );
         expect(container).toMatchSnapshot();
@@ -32,18 +36,20 @@ describe('SideNav', () => {
     it('should change width after clicking on burger icon', () => {
         const { container, getByTestId } = render(
             <SideNav>
-                <SideNav.NavItem>
-                    <SideNav.NavIcon>
-                        <HomeIcon />
-                    </SideNav.NavIcon>
-                    <SideNav.NavText>Home</SideNav.NavText>
-                </SideNav.NavItem>
-                <SideNav.NavItem active>
-                    <SideNav.NavIcon>
-                        <SearchIcon />
-                    </SideNav.NavIcon>
-                    <SideNav.NavText>Search</SideNav.NavText>
-                </SideNav.NavItem>
+                <SideNav.NavList>
+                    <SideNav.NavItem>
+                        <SideNav.NavIcon>
+                            <HomeIcon />
+                        </SideNav.NavIcon>
+                        <SideNav.NavText>Home</SideNav.NavText>
+                    </SideNav.NavItem>
+                    <SideNav.NavItem active>
+                        <SideNav.NavIcon>
+                            <SearchIcon />
+                        </SideNav.NavIcon>
+                        <SideNav.NavText>Search</SideNav.NavText>
+                    </SideNav.NavItem>
+                </SideNav.NavList>
             </SideNav>
         );
         act(() => {
@@ -57,29 +63,31 @@ describe('SideNav', () => {
 
         const { getByText, getByTestId } = render(
             <SideNav>
-                <SideNav.NavItem>
-                    <SideNav.NavIcon>
-                        <HomeIcon />
-                    </SideNav.NavIcon>
-                    <SideNav.NavText>Home</SideNav.NavText>
-                </SideNav.NavItem>
-                <SideNav.NavItem active openSideNavOnClick onClick={mockOnClick}>
-                    <SideNav.NavIcon>
-                        <SearchIcon />
-                    </SideNav.NavIcon>
-                    <SideNav.NavText>Search</SideNav.NavText>
-                    <SideNav.SubNavList>
-                        <SideNav.NavItem active>
-                            <SideNav.NavText>Cars</SideNav.NavText>
-                        </SideNav.NavItem>
-                        <SideNav.NavItem>
-                            <SideNav.NavText>Bikes</SideNav.NavText>
-                        </SideNav.NavItem>
-                        <SideNav.NavItem>
-                            <SideNav.NavText>Phones</SideNav.NavText>
-                        </SideNav.NavItem>
-                    </SideNav.SubNavList>
-                </SideNav.NavItem>
+                <SideNav.NavList>
+                    <SideNav.NavItem>
+                        <SideNav.NavIcon>
+                            <HomeIcon />
+                        </SideNav.NavIcon>
+                        <SideNav.NavText>Home</SideNav.NavText>
+                    </SideNav.NavItem>
+                    <SideNav.NavItem active openSideNavOnClick onClick={mockOnClick}>
+                        <SideNav.NavIcon>
+                            <SearchIcon />
+                        </SideNav.NavIcon>
+                        <SideNav.NavText>Search</SideNav.NavText>
+                        <SideNav.SubNavList>
+                            <SideNav.NavItem active>
+                                <SideNav.NavText>Cars</SideNav.NavText>
+                            </SideNav.NavItem>
+                            <SideNav.NavItem>
+                                <SideNav.NavText>Bikes</SideNav.NavText>
+                            </SideNav.NavItem>
+                            <SideNav.NavItem>
+                                <SideNav.NavText>Phones</SideNav.NavText>
+                            </SideNav.NavItem>
+                        </SideNav.SubNavList>
+                    </SideNav.NavItem>
+                </SideNav.NavList>
             </SideNav>
         );
         act(() => {
