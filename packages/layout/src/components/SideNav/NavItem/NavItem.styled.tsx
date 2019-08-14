@@ -27,7 +27,6 @@ export const NavItemStyled = styled('li')<NavItemStyledProps>`
 
     ${SvgIcon} {
         grid-area: icon;
-        font-size: ${({ theme: { icon, sideNav } }) => icon.sizes[sideNav.iconSize]};
     }
 
     & > ${Text.Style} {
