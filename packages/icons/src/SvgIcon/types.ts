@@ -6,4 +6,5 @@ type SVGProp = Omit<HTMLProps<HTMLOrSVGElement>, 'size'>;
 export interface Props extends SVGProp, WithThemeProp {
     size?: IconSizes;
     color?: string;
+    margin?: string;
 }

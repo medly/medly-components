@@ -7,9 +7,7 @@ import NavList from './NavList';
 import SubNavList from './SubNavList';
 import { SideNavStyledProps } from './types';
 
-export const Logo = styled('div')`
-    padding-top: 11px;
-`;
+export const Logo = styled('div')``;
 
 export const Icon = styled('div')`
     ${centerAligned()}

@@ -25,7 +25,7 @@ export const SideNav: React.SFC<SideNavProps> & WithStyle & SideNavStaticProps =
                 <Styled.Icon>
                     <BurgerIcon size="S" open={open} onClick={burgerIconClickHandler} />
                 </Styled.Icon>
-                <Styled.Logo>{Logo && <Logo size="L" />}</Styled.Logo>
+                <Styled.Logo>{Logo && <Logo />}</Styled.Logo>
             </NavItem>
             {React.Children.map(props.children, child => {
                 return React.cloneElement(child as any, { sidenavOpenHandler });
