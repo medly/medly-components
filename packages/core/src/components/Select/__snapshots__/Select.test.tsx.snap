@@ -265,7 +265,7 @@ exports[`Select component should close options when clicked outside 1`] = `
       </div>
       <div
         class="c9 c10"
-        style="display: none;"
+        style="display: block;"
       >
         <ul
           class="c11"
@@ -546,7 +546,7 @@ exports[`Select component should render all the options when input value is not 
             label=""
             placeholder="Please Select . . ."
             type="text"
-            value="Hello"
+            value=""
           />
           
         </div>
@@ -1413,7 +1413,7 @@ exports[`Select component should render matched options when input values change
             label=""
             placeholder="Please Select . . ."
             type="text"
-            value="Dummy"
+            value=""
           />
           
         </div>
@@ -1439,6 +1439,15 @@ exports[`Select component should render matched options when input values change
         <ul
           class="c11"
         >
+          <li
+            class="c12"
+          >
+            <span
+              class="c13"
+            >
+              All
+            </span>
+          </li>
           <li
             class="c12"
           >

@@ -46,9 +46,9 @@ const Body: React.SFC<Props> = props => {
 
     return (
         <>
-            {data.map(row => {
+            {data.map((row, index) => {
                 return (
-                    <Row key={row.id} onClick={handleRowClick(row)} gridTemplateColumns={getGridTemplateColumns(columns)}>
+                    <Row key={row.id || index} onClick={handleRowClick(row)} gridTemplateColumns={getGridTemplateColumns(columns)}>
                         {rowsCells(row)}
                     </Row>
                 );
