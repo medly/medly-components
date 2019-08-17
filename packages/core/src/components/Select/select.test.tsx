@@ -58,6 +58,20 @@ describe('Select component', () => {
         expect(mockOnChange).toHaveBeenCalledWith('Dummy1');
     });
 
+    it('should not call onChange if user click on the already selected option', () => {
+        const mockOnChange = jest.fn();
+        const { getByTestId, getByText } = render(<Select defaultSelected="Dummy1" options={options} onChange={mockOnChange} />);
+        const inputEl = getByTestId('select-input');
+        act(() => {
+            fireEvent.click(inputEl);
+        });
+        const option = getByText('Dummy1');
+        act(() => {
+            fireEvent.click(option);
+        });
+        expect(mockOnChange).not.toHaveBeenCalledWith('Dummy1');
+    });
+
     it('should render matched options when input values changes', async () => {
         const { container, getByTestId } = render(<Select options={options} />);
         const inputEl = getByTestId('select-input');

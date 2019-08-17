@@ -40,10 +40,12 @@ const Select: React.SFC<SelectProps> & WithStyle = React.memo(
                 newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
             },
             handleOptionClick = (option: Option) => () => {
-                setInputValue(option.label);
-                setSelectedOption(option);
-                setOptions(getOptionsWithSelected(props.options, option));
-                props.onChange && props.onChange(option.value);
+                if (option.value !== selectedOption.value) {
+                    setInputValue(option.label);
+                    setSelectedOption(option);
+                    setOptions(getOptionsWithSelected(props.options, option));
+                    props.onChange && props.onChange(option.value);
+                }
             },
             handleOuterClick = () => {
                 updateToDefaultOptions();
