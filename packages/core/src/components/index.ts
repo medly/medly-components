@@ -1,44 +1,20 @@
-import Avatar from './Avatar';
-import Button from './Button';
-import Card from './Card';
-import Checkbox from './Checkbox';
-import CheckboxGroup from './CheckboxGroup';
-import CssBaseline from './CssBaseline';
-import DatePicker from './DatePicker';
-import FieldWithLabel from './FieldWithLabel';
-import Input from './Input';
-import Label from './Label';
-import List from './List';
-import Modal from './Modal';
-import Pagination from './Pagination';
-import { Popover, PopoverWrapper } from './Popover';
-import Radio from './Radio';
-import RadioGroup from './RadioGroup';
-import Select from './Select';
-import Stepper from './Stepper';
-import Table from './Table';
-import Text from './Text';
-
-export {
-    Avatar,
-    Button,
-    Card,
-    Checkbox,
-    CheckboxGroup,
-    CssBaseline,
-    DatePicker,
-    FieldWithLabel,
-    Input,
-    Label,
-    List,
-    Modal,
-    Pagination,
-    Popover,
-    PopoverWrapper,
-    Radio,
-    RadioGroup,
-    Select,
-    Stepper,
-    Table,
-    Text
-};
+export { default as Avatar } from './Avatar';
+export { default as Button } from './Button';
+export { default as Card } from './Card';
+export { default as Checkbox } from './Checkbox';
+export { default as CheckboxGroup } from './CheckboxGroup';
+export { default as CssBaseline } from './CssBaseline';
+export { default as DatePicker } from './DatePicker';
+export { default as FieldWithLabel } from './FieldWithLabel';
+export { default as Input } from './Input';
+export { default as Label } from './Label';
+export { default as List } from './List';
+export { default as Modal } from './Modal';
+export { default as Pagination } from './Pagination';
+export { Popover, PopoverWrapper } from './Popover';
+export { default as Radio } from './Radio';
+export { default as RadioGroup } from './RadioGroup';
+export { default as Select } from './Select';
+export { default as Stepper } from './Stepper';
+export { default as Table } from './Table';
+export { default as Text } from './Text';
