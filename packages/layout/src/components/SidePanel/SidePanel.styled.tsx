@@ -11,13 +11,12 @@ const rigthPositioned = () => css`
 `;
 
 export const SidePanelStyled = styled('div')<SidePanelStyledProps>`
-    height: 100%;
+    height: 100vh;
     background-color: ${({ theme }) => theme.sidePanel.bgColor};
     width: 0px;
     position: fixed;
     z-index: 1;
     top: 0;
-    overflow: hidden;
     transition: 0.2s;
     ${({ position }) => (position === 'left' ? leftPositioned() : rigthPositioned())}
 `;
