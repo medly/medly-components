@@ -1,7 +1,7 @@
 import { Text } from '@medly-components/core';
 import { BurgerIcon } from '@medly-components/icons';
-import { WithStyle } from '@medly-components/utils';
-import React, { useState } from 'react';
+import { useOuterClickNotifier, WithStyle } from '@medly-components/utils';
+import React, { useRef, useState } from 'react';
 import NavItem from './NavItem';
 import NavList from './NavList';
 import * as Styled from './SideNav.styled';
@@ -9,6 +9,7 @@ import SubNavList from './SubNavList';
 import { SideNavProps, SideNavStaticProps } from './types';
 
 export const SideNav: React.SFC<SideNavProps> & WithStyle & SideNavStaticProps = props => {
+    const ref = useRef(null);
     const [open, setOpenState] = useState(false),
         Logo = props.logo;
 
@@ -19,8 +20,12 @@ export const SideNav: React.SFC<SideNavProps> & WithStyle & SideNavStaticProps =
             !open && setOpenState(true);
         };
 
+    useOuterClickNotifier(() => {
+        setOpenState(false);
+    }, ref);
+
     return (
-        <Styled.SideNav open={open} position="left" data-testid="sidenav">
+        <Styled.SideNav open={open} ref={ref} position="left" data-testid="sidenav">
             <NavItem as="div">
                 <Styled.Icon>
                     <BurgerIcon size="S" open={open} onClick={burgerIconClickHandler} />

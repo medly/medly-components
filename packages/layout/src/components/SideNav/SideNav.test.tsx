@@ -96,4 +96,29 @@ describe('SideNav', () => {
         expect(mockOnClick).toBeCalled();
         expect(getByTestId('sidenav')).toMatchSnapshot();
     });
+
+    it('should close sidenav if we click outside', () => {
+        const { container, getByText, getByTestId } = render(
+            <div>
+                <p>Outer Element</p>
+                <SideNav>
+                    <SideNav.NavList>
+                        <SideNav.NavItem>
+                            <SideNav.NavIcon>
+                                <HomeIcon />
+                            </SideNav.NavIcon>
+                            <SideNav.NavText>Home</SideNav.NavText>
+                        </SideNav.NavItem>
+                    </SideNav.NavList>
+                </SideNav>
+            </div>
+        );
+        act(() => {
+            fireEvent.click(container.querySelector('button'));
+        });
+        act(() => {
+            fireEvent.click(getByText('Outer Element'));
+        });
+        expect(getByTestId('sidenav')).toMatchSnapshot();
+    });
 });

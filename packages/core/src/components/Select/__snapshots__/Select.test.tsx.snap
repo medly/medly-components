@@ -305,6 +305,401 @@ exports[`Select component should close options when clicked outside 1`] = `
 </div>
 `;
 
+exports[`Select component should not render options when clicked outside 1`] = `
+.c13 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  margin: 8px 8px 8px 0px;
+  display: inline-grid;
+  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
+  grid-template-areas: 'label field' 'random description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
+}
+
+.c1 .c15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 {
+  margin: 8px 8px 8px 0px;
+  display: inline-grid;
+  grid-template-areas: 'label' 'field' 'description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
+}
+
+.c4 .c15 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c6 {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+
+.c6:focus {
+  border-color: #012040;
+  outline: 0;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.c6::-moz-placeholder {
+  color: #999999;
+}
+
+.c6:-ms-input-placeholder {
+  color: #999999;
+}
+
+.c6::placeholder {
+  color: #999999;
+}
+
+.c6::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.c10 {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  -webkit-transition: all 2ms ease-in-out;
+  transition: all 2ms ease-in-out;
+  border-radius: 4px;
+  width: calc(100% - 0px);
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c2 .c9 {
+  top: calc(100% + 5px);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c12 {
+  cursor: pointer;
+  padding: 5px;
+  color: inherit;
+  background-color: #ffffff;
+}
+
+.c12:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.c12:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.c11 {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid #FE8D6B;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.c8 {
+  font-size: 16px;
+}
+
+.c8 * {
+  fill: #555;
+}
+
+.c3 {
+  border: 1px solid #FE8D6B;
+  background-color: #ffffff;
+  cursor: pointer;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 35px;
+  min-width: 150px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 .c0 {
+  margin: 0px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 .c0 .c5 {
+  margin: 0px;
+  border: none;
+  background-color: transparent;
+}
+
+.c3 * {
+  cursor: pointer;
+}
+
+.c14 .c0 {
+  margin: 0px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c14 .c0 .c5 {
+  margin: 0px;
+  border: none;
+  background-color: transparent;
+}
+
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 20px;
+  margin-right: 8px;
+  font-size: 10px;
+}
+
+<div>
+  <div>
+    <p>
+      Outer Element
+    </p>
+    <div
+      class="c0 c1"
+    >
+      
+      <div
+        class="c2"
+        data-testid="popover-wrapper"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class="c0 c4"
+          >
+            
+            <input
+              class="c5 c6"
+              data-testid="select-input"
+              label=""
+              placeholder="Please Select . . ."
+              type="text"
+              value=""
+            />
+            
+          </div>
+          <svg
+            class="c7 c8"
+            height="1em"
+            theme="[object Object]"
+            viewBox="0 0 12 8"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
+              fill="#012040"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div
+          class="c9 c10"
+        >
+          <ul
+            class="c11"
+          >
+            <li
+              class="c12"
+            >
+              <span
+                class="c13"
+              >
+                All
+              </span>
+            </li>
+            <li
+              class="c12"
+            >
+              <span
+                class="c13"
+              >
+                Dummy1
+              </span>
+            </li>
+            <li
+              class="c12"
+            >
+              <span
+                class="c13"
+              >
+                Dummy2
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Select component should not render options when clicked outside 2`] = `
+<div>
+  <div>
+    <p>
+      Outer Element
+    </p>
+    <div
+      class="sc-EHOje jMvnyj"
+    >
+      
+      <div
+        class="sc-htoDjs kyXQsz"
+        data-testid="popover-wrapper"
+      >
+        <div
+          class="sc-jTzLTM kudclW"
+        >
+          <div
+            class="sc-EHOje gNvYMz"
+          >
+            
+            <input
+              class="sc-bZQynM XHRoh"
+              data-testid="select-input"
+              label=""
+              placeholder="Please Select . . ."
+              type="text"
+              value=""
+            />
+            
+          </div>
+          <svg
+            class="sc-fjdhpX iEtKxJ sc-gZMcBi iMheib"
+            height="1em"
+            theme="[object Object]"
+            viewBox="0 0 12 8"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
+              fill="#012040"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </div>
+        <div
+          class="sc-gzVnrw jrhrGM"
+          style="display: none;"
+        >
+          <ul
+            class="sc-iwsKbI loAqCW"
+          >
+            <li
+              class="sc-dnqmqq lhTpTY"
+            >
+              <span
+                class="sc-bwzfXH jvAtFl"
+              >
+                All
+              </span>
+            </li>
+            <li
+              class="sc-dnqmqq lhTpTY"
+            >
+              <span
+                class="sc-bwzfXH jvAtFl"
+              >
+                Dummy1
+              </span>
+            </li>
+            <li
+              class="sc-dnqmqq lhTpTY"
+            >
+              <span
+                class="sc-bwzfXH jvAtFl"
+              >
+                Dummy2
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Select component should render all the options when input value is not matched to any option 1`] = `
 .c13 {
   font-size: 14px;

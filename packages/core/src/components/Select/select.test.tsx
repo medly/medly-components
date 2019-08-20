@@ -42,6 +42,24 @@ describe('Select component', () => {
         expect(container).toMatchSnapshot();
     });
 
+    it('should not render options when clicked outside', () => {
+        const { container, getByTestId, getByText } = render(
+            <div>
+                <p>Outer Element</p>
+                <Select options={options} />
+            </div>
+        );
+        expect(container).toMatchSnapshot();
+        const inputEl = getByTestId('select-input');
+        act(() => {
+            fireEvent.click(inputEl);
+        });
+        act(() => {
+            fireEvent.click(getByText('Outer Element'));
+        });
+        expect(container).toMatchSnapshot();
+    });
+
     it('should render correctly when one of the option selected', () => {
         const mockOnChange = jest.fn();
         const { getByTestId, getByText } = render(<Select options={options} onChange={mockOnChange} />);
