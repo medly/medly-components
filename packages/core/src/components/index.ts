@@ -5,6 +5,7 @@ export { default as Checkbox } from './Checkbox';
 export { default as CheckboxGroup } from './CheckboxGroup';
 export { default as CssBaseline } from './CssBaseline';
 export { default as DatePicker } from './DatePicker';
+export { default as DateRangePicker } from './DateRangePicker';
 export { default as FieldWithLabel } from './FieldWithLabel';
 export { default as Input } from './Input';
 export { default as Label } from './Label';

@@ -3,8 +3,6 @@ import { TestUtils } from '@medly-components/utils';
 import React from 'react';
 import SideNav from './SideNav';
 
-jest.mock('react-datepicker/dist/react-datepicker.css', () => ({}));
-
 const { act, render, fireEvent, cleanup } = TestUtils;
 afterEach(cleanup);
 

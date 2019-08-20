@@ -1,17 +1,19 @@
-import { format } from 'date-fns';
-import React from 'react';
-import 'react-datepicker/dist/react-datepicker.css';
+import { DateSingleInput } from '@datepicker-react/styled';
+import React, { useState } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import { DatePickerStyled } from './DatePicker.styled';
 import { Props } from './types';
 
 const DatePicker: React.SFC<Props> = React.memo(props => {
-    const { label, labelPosition, value, onChange, required, disabled, placeholder } = props;
+    const { label, labelPosition, value, onChange, required, disabled, placeholder, ...restProps } = props;
+    const [date, setDate] = useState(value || null);
+    const [showDatepicker, setShowDatepicker] = useState(false);
 
-    const handleDateChange = (date: Date) => {
-        onChange(format(date, 'yyyy-MM-dd').split('T')[0]);
+    const handleDateChange = (state: { date: Date; showDatepicker: boolean }) => {
+        setDate(state.date);
+        setShowDatepicker(false);
+        onChange && onChange(state.date);
     };
-
     return (
         <FieldWithLabel {...{ labelPosition }}>
             {label && (
@@ -19,13 +21,28 @@ const DatePicker: React.SFC<Props> = React.memo(props => {
                     {label}
                 </FieldWithLabel.Label>
             )}
-            <DatePickerStyled
-                {...{ disabled, required }}
-                placeholderText={placeholder || 'yyyy-mm-dd'}
-                selected={value ? new Date(value) : null}
-                onChange={handleDateChange}
-                dateFormat="yyyy-MM-dd"
-            />
+            <DatePickerStyled disabled={disabled}>
+                <DateSingleInput
+                    {...restProps}
+                    showCalendarIcon={false}
+                    onDateChange={handleDateChange}
+                    onFocusChange={setShowDatepicker}
+                    date={date}
+                    phrases={{
+                        dateAriaLabel: placeholder,
+                        datepickerStartDatePlaceholder: placeholder,
+                        datepickerStartDateLabel: placeholder,
+                        datepickerEndDateLabel: placeholder,
+                        datePlaceholder: placeholder,
+                        datepickerEndDatePlaceholder: placeholder,
+                        resetDates: placeholder,
+                        close: placeholder
+                    }}
+                    showClose={false}
+                    showResetDate={false}
+                    showDatepicker={showDatepicker}
+                />
+            </DatePickerStyled>
         </FieldWithLabel>
     );
 });

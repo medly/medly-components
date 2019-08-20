@@ -1,11 +1,19 @@
+import { DateSingleInput } from '@datepicker-react/styled';
+import { GetComponentProps, Omit } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 
-export interface Props {
+type PickerProps = Omit<GetComponentProps<typeof DateSingleInput>, 'date' | 'showDatepicker' | 'onDateChange' | 'onFocusChange'>;
+
+export interface Props extends PickerProps {
     labelPosition?: LabelPositions;
     disabled?: boolean;
     required?: boolean;
     label?: string;
-    value: any;
+    value: Date | null;
     placeholder?: string;
-    onChange: (value: any) => void;
+    onChange: (value: Date | null) => void;
+}
+
+export interface StyledProps {
+    disabled?: boolean;
 }

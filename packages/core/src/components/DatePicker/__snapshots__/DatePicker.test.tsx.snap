@@ -1,397 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DatePicker component should be able to display selected date 1`] = `
-<input
-  class="sc-bZQynM Nnfxl"
-  placeholder="yyyy-mm-dd"
-  required=""
-  type="text"
-  value="2019-08-15"
-/>
-`;
-
-exports[`DatePicker component should display date popover on click on it 1`] = `
-<div>
-  <div
-    class="sc-EHOje bkYjiw"
-  >
-    <label
-      class="sc-bxivhb kccfU sc-bdVaJa lbTamo"
-      for="Start Date"
-      required=""
-    >
-      Start Date
-    </label>
-    <div
-      class="react-datepicker-wrapper"
-    >
-      <div
-        class="react-datepicker__input-container"
-      >
-        <input
-          class="sc-bZQynM Nnfxl react-datepicker-ignore-onclickoutside"
-          placeholder="yyyy-mm-dd"
-          required=""
-          type="text"
-          value=""
-        />
-      </div>
-    </div>
-    <div
-      class="react-datepicker-popper"
-      style="position: absolute; top: 0px; left: 0px; opacity: 0; pointer-events: none;"
-    >
-      <div
-        class="react-datepicker"
-      >
-        <div
-          class="react-datepicker__triangle"
-        />
-        <button
-          class="react-datepicker__navigation react-datepicker__navigation--previous"
-          type="button"
-        >
-          Previous Month
-        </button>
-        <button
-          class="react-datepicker__navigation react-datepicker__navigation--next"
-          type="button"
-        >
-          Next month
-        </button>
-        <div
-          class="react-datepicker__month-container"
-        >
-          <div
-            class="react-datepicker__header"
-          >
-            <div
-              class="react-datepicker__current-month"
-            >
-              August 2019
-            </div>
-            <div
-              class="react-datepicker__header__dropdown react-datepicker__header__dropdown--scroll"
-            />
-            <div
-              class="react-datepicker__day-names"
-            >
-              <div
-                class="react-datepicker__day-name"
-              >
-                Su
-              </div>
-              <div
-                class="react-datepicker__day-name"
-              >
-                Mo
-              </div>
-              <div
-                class="react-datepicker__day-name"
-              >
-                Tu
-              </div>
-              <div
-                class="react-datepicker__day-name"
-              >
-                We
-              </div>
-              <div
-                class="react-datepicker__day-name"
-              >
-                Th
-              </div>
-              <div
-                class="react-datepicker__day-name"
-              >
-                Fr
-              </div>
-              <div
-                class="react-datepicker__day-name"
-              >
-                Sa
-              </div>
-            </div>
-          </div>
-          <div
-            aria-label="month-2019-08"
-            class="react-datepicker__month"
-            role="listbox"
-          >
-            <div
-              class="react-datepicker__week"
-            >
-              <div
-                aria-label="day-28"
-                class="react-datepicker__day react-datepicker__day--028 react-datepicker__day--weekend react-datepicker__day--outside-month"
-                role="option"
-              >
-                28
-              </div>
-              <div
-                aria-label="day-29"
-                class="react-datepicker__day react-datepicker__day--029 react-datepicker__day--outside-month"
-                role="option"
-              >
-                29
-              </div>
-              <div
-                aria-label="day-30"
-                class="react-datepicker__day react-datepicker__day--030 react-datepicker__day--outside-month"
-                role="option"
-              >
-                30
-              </div>
-              <div
-                aria-label="day-31"
-                class="react-datepicker__day react-datepicker__day--031 react-datepicker__day--outside-month"
-                role="option"
-              >
-                31
-              </div>
-              <div
-                aria-label="day-1"
-                class="react-datepicker__day react-datepicker__day--001"
-                role="option"
-              >
-                1
-              </div>
-              <div
-                aria-label="day-2"
-                class="react-datepicker__day react-datepicker__day--002"
-                role="option"
-              >
-                2
-              </div>
-              <div
-                aria-label="day-3"
-                class="react-datepicker__day react-datepicker__day--003 react-datepicker__day--weekend"
-                role="option"
-              >
-                3
-              </div>
-            </div>
-            <div
-              class="react-datepicker__week"
-            >
-              <div
-                aria-label="day-4"
-                class="react-datepicker__day react-datepicker__day--004 react-datepicker__day--weekend"
-                role="option"
-              >
-                4
-              </div>
-              <div
-                aria-label="day-5"
-                class="react-datepicker__day react-datepicker__day--005"
-                role="option"
-              >
-                5
-              </div>
-              <div
-                aria-label="day-6"
-                class="react-datepicker__day react-datepicker__day--006"
-                role="option"
-              >
-                6
-              </div>
-              <div
-                aria-label="day-7"
-                class="react-datepicker__day react-datepicker__day--007"
-                role="option"
-              >
-                7
-              </div>
-              <div
-                aria-label="day-8"
-                class="react-datepicker__day react-datepicker__day--008"
-                role="option"
-              >
-                8
-              </div>
-              <div
-                aria-label="day-9"
-                class="react-datepicker__day react-datepicker__day--009"
-                role="option"
-              >
-                9
-              </div>
-              <div
-                aria-label="day-10"
-                class="react-datepicker__day react-datepicker__day--010 react-datepicker__day--weekend"
-                role="option"
-              >
-                10
-              </div>
-            </div>
-            <div
-              class="react-datepicker__week"
-            >
-              <div
-                aria-label="day-11"
-                class="react-datepicker__day react-datepicker__day--011 react-datepicker__day--weekend"
-                role="option"
-              >
-                11
-              </div>
-              <div
-                aria-label="day-12"
-                class="react-datepicker__day react-datepicker__day--012"
-                role="option"
-              >
-                12
-              </div>
-              <div
-                aria-label="day-13"
-                class="react-datepicker__day react-datepicker__day--013"
-                role="option"
-              >
-                13
-              </div>
-              <div
-                aria-label="day-14"
-                class="react-datepicker__day react-datepicker__day--014"
-                role="option"
-              >
-                14
-              </div>
-              <div
-                aria-label="day-15"
-                class="react-datepicker__day react-datepicker__day--015"
-                role="option"
-              >
-                15
-              </div>
-              <div
-                aria-label="day-16"
-                class="react-datepicker__day react-datepicker__day--016"
-                role="option"
-              >
-                16
-              </div>
-              <div
-                aria-label="day-17"
-                class="react-datepicker__day react-datepicker__day--017 react-datepicker__day--weekend"
-                role="option"
-              >
-                17
-              </div>
-            </div>
-            <div
-              class="react-datepicker__week"
-            >
-              <div
-                aria-label="day-18"
-                class="react-datepicker__day react-datepicker__day--018 react-datepicker__day--weekend"
-                role="option"
-              >
-                18
-              </div>
-              <div
-                aria-label="day-19"
-                class="react-datepicker__day react-datepicker__day--019"
-                role="option"
-              >
-                19
-              </div>
-              <div
-                aria-label="day-20"
-                class="react-datepicker__day react-datepicker__day--020 react-datepicker__day--keyboard-selected react-datepicker__day--today"
-                role="option"
-              >
-                20
-              </div>
-              <div
-                aria-label="day-21"
-                class="react-datepicker__day react-datepicker__day--021"
-                role="option"
-              >
-                21
-              </div>
-              <div
-                aria-label="day-22"
-                class="react-datepicker__day react-datepicker__day--022"
-                role="option"
-              >
-                22
-              </div>
-              <div
-                aria-label="day-23"
-                class="react-datepicker__day react-datepicker__day--023"
-                role="option"
-              >
-                23
-              </div>
-              <div
-                aria-label="day-24"
-                class="react-datepicker__day react-datepicker__day--024 react-datepicker__day--weekend"
-                role="option"
-              >
-                24
-              </div>
-            </div>
-            <div
-              class="react-datepicker__week"
-            >
-              <div
-                aria-label="day-25"
-                class="react-datepicker__day react-datepicker__day--025 react-datepicker__day--weekend"
-                role="option"
-              >
-                25
-              </div>
-              <div
-                aria-label="day-26"
-                class="react-datepicker__day react-datepicker__day--026"
-                role="option"
-              >
-                26
-              </div>
-              <div
-                aria-label="day-27"
-                class="react-datepicker__day react-datepicker__day--027"
-                role="option"
-              >
-                27
-              </div>
-              <div
-                aria-label="day-28"
-                class="react-datepicker__day react-datepicker__day--028"
-                role="option"
-              >
-                28
-              </div>
-              <div
-                aria-label="day-29"
-                class="react-datepicker__day react-datepicker__day--029"
-                role="option"
-              >
-                29
-              </div>
-              <div
-                aria-label="day-30"
-                class="react-datepicker__day react-datepicker__day--030"
-                role="option"
-              >
-                30
-              </div>
-              <div
-                aria-label="day-31"
-                class="react-datepicker__day react-datepicker__day--031 react-datepicker__day--weekend"
-                role="option"
-              >
-                31
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`DatePicker component should render correctly 1`] = `
+.c7 {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: unset;
+  left: 0;
+  top: unset;
+  right: unset;
+}
+
+.c5 {
+  display: block;
+  position: relative;
+  border: 1px solid #BCBEC0;
+  background: #ffffff;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.c6 {
+  border: 0;
+  padding: 0 44px;
+  width: 100%;
+  min-height: 46px;
+  background: #ffffff;
+  font-family: Montserrat,sans-serif;
+  color: #001217;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.c6::-webkit-input-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c6::-moz-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c6:-moz-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c4 {
+  box-sizing: border-box;
+  position: relative;
+}
+
 .c2 {
   font-size: 14px;
   font-weight: 400;
@@ -419,7 +82,7 @@ exports[`DatePicker component should render correctly 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c0 .c4 {
+.c0 .c8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -433,7 +96,13 @@ exports[`DatePicker component should render correctly 1`] = `
   flex-direction: row;
 }
 
-.c3 {
+.c3 label {
+  border: 0;
+}
+
+.c3 label input {
+  max-width: 90px;
+  min-height: unset;
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
@@ -445,32 +114,32 @@ exports[`DatePicker component should render correctly 1`] = `
   border-radius: 5px;
 }
 
-.c3:disabled {
+.c3 label input:disabled {
   cursor: not-allowed;
 }
 
-.c3:focus {
+.c3 label input:focus {
   border-color: #012040;
   outline: 0;
 }
 
-.c3::-webkit-input-placeholder {
+.c3 label input::-webkit-input-placeholder {
   color: #999999;
 }
 
-.c3::-moz-placeholder {
+.c3 label input::-moz-placeholder {
   color: #999999;
 }
 
-.c3:-ms-input-placeholder {
+.c3 label input:-ms-input-placeholder {
   color: #999999;
 }
 
-.c3::placeholder {
+.c3 label input::placeholder {
   color: #999999;
 }
 
-.c3::-webkit-file-upload-button {
+.c3 label input::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -486,31 +155,35 @@ exports[`DatePicker component should render correctly 1`] = `
       Start Date
     </label>
     <div
-      class="react-datepicker-wrapper"
+      class="c3"
     >
       <div
-        class="react-datepicker__input-container"
+        class="c4"
       >
-        <input
-          class="c3"
-          placeholder="yyyy-mm-dd"
-          required=""
-          type="text"
-          value=""
+        <label
+          class="c5"
+          display="block"
+          for="startDate"
+        >
+          <input
+            autocomplete="off"
+            class="c6"
+            color="#001217"
+            data-testid="DatepickerInput"
+            font-family="Montserrat, sans-serif"
+            font-size="14px"
+            font-weight="600"
+            id="startDate"
+            tabindex="0"
+            value=""
+            width="100%"
+          />
+        </label>
+        <div
+          class="c7"
         />
       </div>
     </div>
   </div>
 </div>
-`;
-
-exports[`DatePicker component should render correctly in disabled mode 1`] = `
-<input
-  class="sc-bZQynM hllFWE"
-  disabled=""
-  placeholder="Start Date"
-  required=""
-  type="text"
-  value="2019-08-15"
-/>
 `;
