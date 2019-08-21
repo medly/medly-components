@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 export const useOuterClickNotifier = (onOuterClick: (e: any) => void, innerRef: React.MutableRefObject<any>) => {
     const handleClick = (e: any) => {
-        const isReactDatePicker = e.target.className && e.target.className.toString().includes('react-datepicker');
+        const isReactDatePicker = e.target.closest('[data-testid = "Day"]');
 
         if (!innerRef.current.contains(e.target) && !isReactDatePicker) {
             onOuterClick(e);

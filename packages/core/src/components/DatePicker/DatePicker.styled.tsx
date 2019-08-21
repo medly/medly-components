@@ -35,4 +35,8 @@ export const DatePickerStyled = styled('div').attrs(({ theme: { input, text, fon
             }
         }
     }
+
+    label + div {
+        z-index: 5;
+    }
 `;

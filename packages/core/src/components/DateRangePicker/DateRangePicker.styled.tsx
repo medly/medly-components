@@ -3,14 +3,22 @@ import { StyledProps } from './types';
 
 export const DateRangePickerStyled = styled('div').attrs(({ theme: { input, text, font } }) => ({ input, text, font }))<StyledProps>`
     & > div:first-child {
+        div {
+            z-index: 5;
+        }
         & > div:first-child {
+            display: ${({ fullWidth }) => (fullWidth ? 'grid' : 'inline-grid')};
             grid-template-columns: auto 30px auto;
             border: 1px solid ${props => props.input.borderColor};
             border-radius: 5px;
             padding: ${({ theme }) => theme.spacing.S};
             box-sizing: border-box;
+            text-align: center;
+            background-color: ${({ disabled, input }) => (disabled ? input.disabledBgcolor : input.bgColor)};
+            cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
 
             label {
+                text-align: center;
                 border: 0;
                 input {
                     text-align: center;

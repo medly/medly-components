@@ -5,7 +5,7 @@ import { DatePickerStyled } from './DatePicker.styled';
 import { Props } from './types';
 
 const DatePicker: React.SFC<Props> = React.memo(props => {
-    const { label, labelPosition, value, onChange, required, disabled, placeholder, ...restProps } = props;
+    const { label, labelPosition, fullWidth, value, onChange, required, disabled, placeholder, ...restProps } = props;
     const [date, setDate] = useState(value || null);
     const [showDatepicker, setShowDatepicker] = useState(false);
 
@@ -15,7 +15,7 @@ const DatePicker: React.SFC<Props> = React.memo(props => {
         onChange && onChange(state.date);
     };
     return (
-        <FieldWithLabel {...{ labelPosition }}>
+        <FieldWithLabel {...{ fullWidth, labelPosition }}>
             {label && (
                 <FieldWithLabel.Label showPointer {...{ required, labelPosition }} htmlFor={label}>
                     {label}

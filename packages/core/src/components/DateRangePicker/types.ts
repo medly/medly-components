@@ -9,6 +9,7 @@ type PickerProps = Omit<
 
 export interface Props extends PickerProps {
     labelPosition?: LabelPositions;
+    fullWidth?: boolean;
     disabled?: boolean;
     required?: boolean;
     label?: string;
@@ -17,5 +18,6 @@ export interface Props extends PickerProps {
 }
 
 export interface StyledProps {
+    fullWidth?: boolean;
     disabled?: boolean;
 }

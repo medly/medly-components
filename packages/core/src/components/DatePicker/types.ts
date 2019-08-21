@@ -6,6 +6,7 @@ type PickerProps = Omit<GetComponentProps<typeof DateSingleInput>, 'date' | 'sho
 
 export interface Props extends PickerProps {
     labelPosition?: LabelPositions;
+    fullWidth?: boolean;
     disabled?: boolean;
     required?: boolean;
     label?: string;
