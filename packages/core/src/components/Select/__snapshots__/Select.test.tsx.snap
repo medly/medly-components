@@ -140,7 +140,7 @@ exports[`Select component should close options when clicked outside 1`] = `
   margin: 0px;
   max-height: 200px;
   overflow: auto;
-  border: 1px solid #FE8D6B;
+  border: 1px solid #CCCCCC;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -154,7 +154,7 @@ exports[`Select component should close options when clicked outside 1`] = `
 }
 
 .c3 {
-  border: 1px solid #FE8D6B;
+  border: 1px solid #CCCCCC;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -445,7 +445,7 @@ exports[`Select component should not render options when clicked outside 1`] = `
   margin: 0px;
   max-height: 200px;
   overflow: auto;
-  border: 1px solid #FE8D6B;
+  border: 1px solid #CCCCCC;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -459,7 +459,7 @@ exports[`Select component should not render options when clicked outside 1`] = `
 }
 
 .c3 {
-  border: 1px solid #FE8D6B;
+  border: 1px solid #CCCCCC;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -626,7 +626,7 @@ exports[`Select component should not render options when clicked outside 2`] = `
         data-testid="popover-wrapper"
       >
         <div
-          class="sc-jTzLTM kudclW"
+          class="sc-jTzLTM cEibhI"
         >
           <div
             class="sc-EHOje gNvYMz"
@@ -662,7 +662,7 @@ exports[`Select component should not render options when clicked outside 2`] = `
           style="display: none;"
         >
           <ul
-            class="sc-iwsKbI loAqCW"
+            class="sc-iwsKbI ecUcNc"
           >
             <li
               class="sc-dnqmqq lhTpTY"
@@ -840,7 +840,7 @@ exports[`Select component should render all the options when input value is not 
   margin: 0px;
   max-height: 200px;
   overflow: auto;
-  border: 1px solid #FE8D6B;
+  border: 1px solid #CCCCCC;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -854,7 +854,7 @@ exports[`Select component should render all the options when input value is not 
 }
 
 .c3 {
-  border: 1px solid #FE8D6B;
+  border: 1px solid #CCCCCC;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -1164,7 +1164,7 @@ exports[`Select component should render correctly with all the props given 1`] =
 }
 
 .c5 {
-  border: 1px solid #FE8D6B;
+  border: 1px solid #CCCCCC;
   background-color: #ededed;
   cursor: not-allowed;
   border-radius: 4px;
@@ -1419,7 +1419,7 @@ exports[`Select component should render correctly with default props 1`] = `
   margin: 0px;
   max-height: 200px;
   overflow: auto;
-  border: 1px solid #FE8D6B;
+  border: 1px solid #CCCCCC;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -1433,7 +1433,7 @@ exports[`Select component should render correctly with default props 1`] = `
 }
 
 .c3 {
-  border: 1px solid #FE8D6B;
+  border: 1px solid #CCCCCC;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -1707,7 +1707,7 @@ exports[`Select component should render matched options when input values change
   margin: 0px;
   max-height: 200px;
   overflow: auto;
-  border: 1px solid #FE8D6B;
+  border: 1px solid #CCCCCC;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -1721,7 +1721,7 @@ exports[`Select component should render matched options when input values change
 }
 
 .c3 {
-  border: 1px solid #FE8D6B;
+  border: 1px solid #CCCCCC;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -2009,7 +2009,7 @@ exports[`Select component should render options correctly 1`] = `
   margin: 0px;
   max-height: 200px;
   overflow: auto;
-  border: 1px solid #FE8D6B;
+  border: 1px solid #CCCCCC;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -2023,7 +2023,7 @@ exports[`Select component should render options correctly 1`] = `
 }
 
 .c3 {
-  border: 1px solid #FE8D6B;
+  border: 1px solid #CCCCCC;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -2181,7 +2181,7 @@ exports[`Select component should render options correctly 2`] = `
       data-testid="popover-wrapper"
     >
       <div
-        class="sc-jTzLTM kudclW"
+        class="sc-jTzLTM cEibhI"
       >
         <div
           class="sc-EHOje gNvYMz"
@@ -2217,7 +2217,7 @@ exports[`Select component should render options correctly 2`] = `
         style="display: block;"
       >
         <ul
-          class="sc-iwsKbI loAqCW"
+          class="sc-iwsKbI ecUcNc"
         >
           <li
             class="sc-dnqmqq lhTpTY"

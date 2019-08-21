@@ -10,6 +10,7 @@ import label from './label';
 import link from './link';
 import modal from './modal';
 import radio from './radio';
+import reactDatepicker from './reactDatepicker';
 import select from './select';
 import spacing from './spacing';
 import stepper from './stepper';
@@ -31,5 +32,6 @@ export const coreDefaultTheme = {
     select,
     stepper,
     spacing,
-    text
+    text,
+    reactDatepicker
 };
