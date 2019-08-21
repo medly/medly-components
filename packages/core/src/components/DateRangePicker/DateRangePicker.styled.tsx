@@ -16,6 +16,10 @@ export const DateRangePickerStyled = styled('div').attrs(({ theme: { input, text
             text-align: center;
             background-color: ${({ disabled, input }) => (disabled ? input.disabledBgcolor : input.bgColor)};
             cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+            * {
+                background-color: ${({ disabled, input }) => (disabled ? input.disabledBgcolor : input.bgColor)};
+                cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+            }
 
             label {
                 text-align: center;
@@ -28,7 +32,6 @@ export const DateRangePickerStyled = styled('div').attrs(({ theme: { input, text
                     font-size: ${({ font, text }) => font.sizes[text.defaults.textSize]};
                     font-weight: ${({ font, text }) => font.weights[text.defaults.textWeight]};
                     color: ${props => props.input.color};
-                    background-color: ${({ disabled, input }) => (disabled ? input.disabledBgcolor : input.bgColor)};
                     background-clip: padding-box;
                     box-sizing: border-box;
 

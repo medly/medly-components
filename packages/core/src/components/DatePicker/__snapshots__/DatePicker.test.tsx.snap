@@ -96,6 +96,10 @@ exports[`DatePicker component should render correctly 1`] = `
   flex-direction: row;
 }
 
+.c3 * {
+  cursor: pointer;
+}
+
 .c3 label {
   border: 0;
 }
@@ -141,6 +145,10 @@ exports[`DatePicker component should render correctly 1`] = `
 
 .c3 label input::-webkit-file-upload-button {
   visibility: hidden;
+}
+
+.c3 label + div {
+  z-index: 5;
 }
 
 <div>

@@ -2,8 +2,12 @@ import { styled } from '@medly-components/utils';
 import { StyledProps } from './types';
 
 export const DatePickerStyled = styled('div').attrs(({ theme: { input, text, font } }) => ({ input, text, font }))<StyledProps>`
+    * {
+        cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+    }
     label {
         border: 0;
+
         input {
             max-width: 90px;
             min-height: unset;
