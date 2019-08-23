@@ -91,11 +91,13 @@ exports[`Input component should render correctly when fullWidth & required props
   >
     <label
       class="c1 c2"
+      for="WZLt-9bOom"
     >
       Email Address
     </label>
     <input
       class="c3"
+      id="WZLt-9bOom"
       label="Email Address"
       placeholder="Enter Email Address"
       type="email"
@@ -177,6 +179,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
     <input
       class="c1"
       disabled=""
+      id="c1Cfv7PZ6H"
       label=""
       placeholder="Enter Email Address"
     />
@@ -252,6 +255,7 @@ exports[`Input component should render correctly when label and description are 
     
     <input
       class="c1"
+      id="cynzjeNozt"
       label=""
       placeholder="Enter Email Address"
       type="email"
@@ -357,12 +361,14 @@ exports[`Input component should render correctly with all the props given 1`] = 
   >
     <label
       class="c1 c2"
+      for="ZPSgnMFlv"
       required=""
     >
       Email Address
     </label>
     <input
       class="c3"
+      id="ZPSgnMFlv"
       label="Email Address"
       placeholder="Enter Email Address"
       required=""

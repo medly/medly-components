@@ -241,6 +241,7 @@ exports[`Select component should close options when clicked outside 1`] = `
           <input
             class="c5 c6"
             data-testid="select-input"
+            id="HQkOj06syHq"
             label=""
             placeholder="Please Select . . ."
             type="text"
@@ -547,6 +548,7 @@ exports[`Select component should not render options when clicked outside 1`] = `
             <input
               class="c5 c6"
               data-testid="select-input"
+              id="K1CrCqBv9C"
               label=""
               placeholder="Please Select . . ."
               type="text"
@@ -635,6 +637,7 @@ exports[`Select component should not render options when clicked outside 2`] = `
             <input
               class="sc-bZQynM XHRoh"
               data-testid="select-input"
+              id="TDnVo8A_Rv"
               label=""
               placeholder="Please Select . . ."
               type="text"
@@ -938,6 +941,7 @@ exports[`Select component should render all the options when input value is not 
           <input
             class="c5 c6"
             data-testid="select-input"
+            id="DjEEKzL1Nb"
             label=""
             placeholder="Please Select . . ."
             type="text"
@@ -1243,6 +1247,7 @@ exports[`Select component should render correctly with all the props given 1`] =
             class="c7 c8"
             data-testid="select-input"
             disabled=""
+            id="H17wNXZbdO"
             label=""
             placeholder="Please Select"
             required=""
@@ -1504,6 +1509,7 @@ exports[`Select component should render correctly with default props 1`] = `
           <input
             class="c5 c6"
             data-testid="select-input"
+            id="xsvf07YiQ"
             label=""
             placeholder="Please Select . . ."
             type="text"
@@ -1805,6 +1811,7 @@ exports[`Select component should render matched options when input values change
           <input
             class="c5 c6"
             data-testid="select-input"
+            id="kG8nkB_4RK"
             label=""
             placeholder="Please Select . . ."
             type="text"
@@ -2107,6 +2114,7 @@ exports[`Select component should render options correctly 1`] = `
           <input
             class="c5 c6"
             data-testid="select-input"
+            id="qBuZ1QvNKN"
             label=""
             placeholder="Please Select . . ."
             type="text"
@@ -2190,6 +2198,7 @@ exports[`Select component should render options correctly 2`] = `
           <input
             class="sc-bZQynM XHRoh"
             data-testid="select-input"
+            id="8A9dRS2ldO"
             label=""
             placeholder="Please Select . . ."
             type="text"
