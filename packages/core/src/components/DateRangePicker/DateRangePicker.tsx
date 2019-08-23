@@ -10,10 +10,15 @@ const DateRangePicker: React.SFC<Props> = React.memo(props => {
     const [showDatepicker, setShowDatepicker] = useState(null);
 
     const handleDateChange = ({ startDate, endDate, focusedInput }: OnDatesChangeProps) => {
-        setDate({ startDate, endDate });
-        setShowDatepicker(focusedInput);
-        onChange && onChange({ startDate, endDate });
-    };
+            setDate({ startDate, endDate });
+            setShowDatepicker(focusedInput);
+            onChange && onChange({ startDate, endDate });
+        },
+        handleClick = (event: React.MouseEvent) => {
+            event.preventDefault();
+            event.stopPropagation();
+        };
+
     return (
         <FieldWithLabel {...{ labelPosition, fullWidth }}>
             {label && (
@@ -21,7 +26,7 @@ const DateRangePicker: React.SFC<Props> = React.memo(props => {
                     {label}
                 </FieldWithLabel.Label>
             )}
-            <DateRangePickerStyled data-testid="react-datepicker" disabled={disabled}>
+            <DateRangePickerStyled data-testid="react-datepicker" disabled={disabled} onClick={handleClick}>
                 <DateRangeInput
                     {...restProps}
                     onDatesChange={handleDateChange}

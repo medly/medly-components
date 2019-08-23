@@ -10,10 +10,15 @@ const DatePicker: React.SFC<Props> = React.memo(props => {
     const [showDatepicker, setShowDatepicker] = useState(false);
 
     const handleDateChange = (state: { date: Date; showDatepicker: boolean }) => {
-        setDate(state.date);
-        setShowDatepicker(false);
-        onChange && onChange(state.date);
-    };
+            setDate(state.date);
+            setShowDatepicker(false);
+            onChange && onChange(state.date);
+        },
+        handleClick = (event: React.MouseEvent) => {
+            event.preventDefault();
+            event.stopPropagation();
+        };
+
     return (
         <FieldWithLabel {...{ fullWidth, labelPosition }}>
             {label && (
@@ -21,7 +26,7 @@ const DatePicker: React.SFC<Props> = React.memo(props => {
                     {label}
                 </FieldWithLabel.Label>
             )}
-            <DatePickerStyled disabled={disabled}>
+            <DatePickerStyled disabled={disabled} onClick={handleClick}>
                 <DateSingleInput
                     {...restProps}
                     showCalendarIcon={false}
