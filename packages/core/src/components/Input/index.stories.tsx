@@ -8,6 +8,7 @@ const labelPosition: Array<Props['labelPosition']> = ['top', 'bottom', 'left', '
 
 storiesOf('Core', module).add('Input', () => (
     <Input
+        id="storybook-input"
         type="email"
         fullWidth={boolean('Full Width', false)}
         disabled={boolean('Disabled', false)}

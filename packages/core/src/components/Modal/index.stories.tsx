@@ -16,8 +16,9 @@ storiesOf('Core', module).add(
             <Modal.Header>Add User</Modal.Header>
             <Modal.Content>
                 <Select fullWidth options={options} defaultSelected="0" />
-                <Input type="text" fullWidth label="Name" placeholder="Enter your Name" />
+                <Input id="name-input" type="text" fullWidth label="Name" placeholder="Enter your Name" />
                 <Input
+                    id="email-input"
                     type="email"
                     fullWidth
                     required
@@ -25,9 +26,23 @@ storiesOf('Core', module).add(
                     placeholder="Enter Email Address"
                     description="We will never share your email with anyone"
                 />
-                <Input type="password" fullWidth required label="New Password" placeholder="Enter New Password" />
-                <Input type="password" fullWidth required label="Confirm Password" placeholder="Enter Confirm Password" />
-                <Input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" fullWidth label="Contact no." placeholder="Enter your Contactno." />
+                <Input id="password-input" type="password" fullWidth required label="New Password" placeholder="Enter New Password" />
+                <Input
+                    id="cpassword-input"
+                    type="password"
+                    fullWidth
+                    required
+                    label="Confirm Password"
+                    placeholder="Enter Confirm Password"
+                />
+                <Input
+                    id="tel-input"
+                    type="tel"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    fullWidth
+                    label="Contact no."
+                    placeholder="Enter your Contactno."
+                />
             </Modal.Content>
             <Modal.Actions>
                 <Button variant="outlined">Add User</Button>
