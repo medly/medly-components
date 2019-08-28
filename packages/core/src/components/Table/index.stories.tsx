@@ -1,12 +1,10 @@
 import { action } from '@storybook/addon-actions';
-import { select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Button from '../Button';
-import Checkbox from '../Checkbox';
-import CheckboxGroup from '../CheckboxGroup';
 import Modal from '../Modal';
 import Table from './Table';
+import TableSelectableColumns from './TableSelectableColumns';
 import { ColumnConfig, SortOrder } from './types';
 
 const data = [
@@ -107,29 +105,11 @@ const columns: ColumnConfig[] = [
 // @ts-ignore
 const getNestedValue = (obj: {}, dottedKey: string) => dottedKey.split('.').reduce((acc, curr) => acc[curr], obj);
 
-interface DemoComponentProps {
-    hideColumnField: string;
-}
-
-const DemoComponent: React.SFC<DemoComponentProps> = props => {
+const DemoComponent: React.SFC = () => {
     const [modalState, setModalState] = useState(false);
     const [tableData, setTableData] = useState(data);
     const [columnConfig, setColumnConfig] = useState(columns);
     const [selectedRows, setSelectedRows] = useState([2, 3]);
-
-    useEffect(() => {
-        const newConfig = hideColumn(props.hideColumnField, columnConfig);
-        setColumnConfig(newConfig);
-    }, [props.hideColumnField]);
-
-    const hideColumn = (dottedField: string, configs: ColumnConfig[], state = false): ColumnConfig[] => {
-        const fields = dottedField.split('.');
-        return configs.map(config => {
-            const nextField = fields[1] || '';
-            if (config.children) return { ...config, children: hideColumn(nextField, config.children, state) };
-            return { ...config, hide: config.field === fields[0] ? state : config.hide };
-        });
-    };
 
     const filterData = (dottedField: string, order: SortOrder) => {
         const newArray = [...tableData];
@@ -146,61 +126,13 @@ const DemoComponent: React.SFC<DemoComponentProps> = props => {
         setModalState(!modalState);
     };
 
-    const handleCheckboxClick = (field: string, state: boolean) => () => {
-        const newConfig = hideColumn(field, columnConfig, state);
-        setColumnConfig(newConfig);
-    };
-
-    const handleCheckboxGroupClick = (field: string) => (fields: string[]) => {
-        const columnConfigOfSelectedGroup = columnConfig.find(cc => cc.field === field);
-        const newConfig = columnConfigOfSelectedGroup.children.reduce(
-            (acc: ColumnConfig[], curr: ColumnConfig) => {
-                return hideColumn(`${field}.${curr.field}`, acc, fields.includes(curr.field));
-            },
-            [...columnConfig]
-        );
-
-        setColumnConfig(newConfig);
-    };
-
-    const checkBoxes = (configs: ColumnConfig[], field: string = '') =>
-        configs.map(config => {
-            const dottedField = field ? `${field}.${config.field}` : config.field;
-            if (!config.children) {
-                return (
-                    <Checkbox
-                        key={dottedField}
-                        label={config.title}
-                        checked={config.hide}
-                        onChange={handleCheckboxClick(dottedField, !config.hide)}
-                    />
-                );
-            }
-
-            return (
-                <CheckboxGroup
-                    showSelectAll
-                    key={dottedField}
-                    label={config.title}
-                    labelPosition="top"
-                    value={config.children.reduce((acc, curr) => {
-                        curr.hide && acc.push(`${curr.field}`);
-                        return acc;
-                    }, [])}
-                    onChange={handleCheckboxGroupClick(dottedField)}
-                    options={config.children.map((child: ColumnConfig) => ({
-                        label: child.title,
-                        value: `${child.field}`
-                    }))}
-                />
-            );
-        });
-
     return (
         <div>
             <Modal open={modalState} onCloseModal={handleModalState}>
                 <Modal.Header>Hide Columns</Modal.Header>
-                <Modal.Content>{checkBoxes(columnConfig)}</Modal.Content>
+                <Modal.Content>
+                    <TableSelectableColumns columns={columnConfig} fieldToChange="hide" onChange={setColumnConfig} />
+                </Modal.Content>
             </Modal>
             <Button onClick={handleModalState}>Hide Columns</Button>
             <Table
@@ -216,17 +148,7 @@ const DemoComponent: React.SFC<DemoComponentProps> = props => {
     );
 };
 
-const columnNames = {
-    'Select Column': 'null',
-    Name: 'name',
-    History: 'marks.history',
-    Maths: 'marks.maths',
-    Age: 'age',
-    Color: 'color',
-    Rating: 'rating'
-};
-
-storiesOf('Core', module).add('Table', () => <DemoComponent hideColumnField={select('Hide Column', columnNames, 'null')} />, {
+storiesOf('Core', module).add('Table', () => <DemoComponent />, {
     props: {
         propTablesExclude: [DemoComponent],
         propTables: [Table]
