@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import Button from '../Button';
 import Modal from '../Modal';
 import Table from './Table';
-import TableSelectableColumns from './TableSelectableColumns';
 import { ColumnConfig, SortOrder } from './types';
 
 const data = [
@@ -131,7 +130,7 @@ const DemoComponent: React.SFC = () => {
             <Modal open={modalState} onCloseModal={handleModalState}>
                 <Modal.Header>Hide Columns</Modal.Header>
                 <Modal.Content>
-                    <TableSelectableColumns columns={columnConfig} fieldToChange="hide" onChange={setColumnConfig} />
+                    <Table.SelectableColumns columns={columnConfig} fieldToChange="hide" onChange={setColumnConfig} />
                 </Modal.Content>
             </Modal>
             <Button onClick={handleModalState}>Hide Columns</Button>

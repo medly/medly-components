@@ -3,11 +3,12 @@ import React, { useEffect, useState } from 'react';
 import Body from './Body';
 import Head from './Head';
 import { addSizeToColumnConfig } from './helpers';
+import SelectableColumns from './SelectableColumns';
 import { TableStyled } from './Table.styled';
-import { ColumnConfig, Props } from './types';
+import { ColumnConfig, Props, StaticProps } from './types';
 import useRowSelector from './useRowSelector';
 
-const Table: React.SFC<Props> & WithStyle = props => {
+const Table: React.SFC<Props> & WithStyle & StaticProps = props => {
     const { data, onRowClick, onSort, isSelectable, selectedRows, onRowSelection } = props,
         checkboxColumnConfig: ColumnConfig = { title: 'ch', field: 'medly-table-checkbox', formatter: 'checkbox', hide: !isSelectable };
 
@@ -53,6 +54,7 @@ Table.defaultProps = {
 };
 
 Table.displayName = 'Table';
+Table.SelectableColumns = SelectableColumns;
 Table.Style = TableStyled;
 
 export default Table;

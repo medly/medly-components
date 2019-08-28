@@ -1,3 +1,5 @@
+import SelectableColumns from './SelectableColumns';
+
 export type SortOrder = 'asc' | 'desc';
 
 export interface ColumnsWidth {
@@ -40,4 +42,8 @@ export interface Props {
     onRowSelection?: (v: number[]) => void;
     onRowClick?: (rowData: object) => void;
     onSort?: (field: string, order: SortOrder) => void;
+}
+
+export interface StaticProps {
+    SelectableColumns: typeof SelectableColumns;
 }
