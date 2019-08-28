@@ -122,12 +122,12 @@ const DemoComponent: React.SFC<DemoComponentProps> = props => {
         setColumnConfig(newConfig);
     }, [props.hideColumnField]);
 
-    const hideColumn = (dottedField: string, configs: ColumnConfig[]): ColumnConfig[] => {
+    const hideColumn = (dottedField: string, configs: ColumnConfig[], state = false): ColumnConfig[] => {
         const fields = dottedField.split('.');
         return configs.map(config => {
             const nextField = fields[1] || '';
-            if (config.children) return { ...config, children: hideColumn(nextField, config.children) };
-            return { ...config, hide: config.field === fields[0] ? !config.hide : config.hide };
+            if (config.children) return { ...config, children: hideColumn(nextField, config.children, state) };
+            return { ...config, hide: config.field === fields[0] ? state : config.hide };
         });
     };
 
@@ -146,8 +146,20 @@ const DemoComponent: React.SFC<DemoComponentProps> = props => {
         setModalState(!modalState);
     };
 
-    const handleCheckboxClick = (field: string) => () => {
-        const newConfig = hideColumn(field, columnConfig);
+    const handleCheckboxClick = (field: string, state: boolean) => () => {
+        const newConfig = hideColumn(field, columnConfig, state);
+        setColumnConfig(newConfig);
+    };
+
+    const handleCheckboxGroupClick = (field: string) => (fields: string[]) => {
+        const columnConfigOfSelectedGroup = columnConfig.find(cc => cc.field === field);
+        const newConfig = columnConfigOfSelectedGroup.children.reduce(
+            (acc: ColumnConfig[], curr: ColumnConfig) => {
+                return hideColumn(`${field}.${curr.field}`, acc, fields.includes(curr.field));
+            },
+            [...columnConfig]
+        );
+
         setColumnConfig(newConfig);
     };
 
@@ -156,13 +168,31 @@ const DemoComponent: React.SFC<DemoComponentProps> = props => {
             const dottedField = field ? `${field}.${config.field}` : config.field;
             if (!config.children) {
                 return (
-                    <Checkbox key={dottedField} label={config.title} checked={config.hide} onChange={handleCheckboxClick(dottedField)} />
+                    <Checkbox
+                        key={dottedField}
+                        label={config.title}
+                        checked={config.hide}
+                        onChange={handleCheckboxClick(dottedField, !config.hide)}
+                    />
                 );
             }
+
             return (
-                <CheckboxGroup key={dottedField} label={config.title} name={config.title} labelPosition="top">
-                    {checkBoxes(config.children, dottedField)}
-                </CheckboxGroup>
+                <CheckboxGroup
+                    showSelectAll
+                    key={dottedField}
+                    label={config.title}
+                    labelPosition="top"
+                    value={config.children.reduce((acc, curr) => {
+                        curr.hide && acc.push(`${curr.field}`);
+                        return acc;
+                    }, [])}
+                    onChange={handleCheckboxGroupClick(dottedField)}
+                    options={config.children.map((child: ColumnConfig) => ({
+                        label: child.title,
+                        value: `${child.field}`
+                    }))}
+                />
             );
         });
 

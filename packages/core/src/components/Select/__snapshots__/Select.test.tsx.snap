@@ -141,6 +141,7 @@ exports[`Select component should close options when clicked outside 1`] = `
   max-height: 200px;
   overflow: auto;
   border: 1px solid #CCCCCC;
+  background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -447,6 +448,7 @@ exports[`Select component should not render options when clicked outside 1`] = `
   max-height: 200px;
   overflow: auto;
   border: 1px solid #CCCCCC;
+  background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -665,7 +667,7 @@ exports[`Select component should not render options when clicked outside 2`] = `
           style="display: none;"
         >
           <ul
-            class="sc-iwsKbI ecUcNc"
+            class="sc-iwsKbI jHcpLx"
           >
             <li
               class="sc-dnqmqq lhTpTY"
@@ -844,6 +846,7 @@ exports[`Select component should render all the options when input value is not 
   max-height: 200px;
   overflow: auto;
   border: 1px solid #CCCCCC;
+  background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -1425,6 +1428,7 @@ exports[`Select component should render correctly with default props 1`] = `
   max-height: 200px;
   overflow: auto;
   border: 1px solid #CCCCCC;
+  background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -1714,6 +1718,7 @@ exports[`Select component should render matched options when input values change
   max-height: 200px;
   overflow: auto;
   border: 1px solid #CCCCCC;
+  background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -2017,6 +2022,7 @@ exports[`Select component should render options correctly 1`] = `
   max-height: 200px;
   overflow: auto;
   border: 1px solid #CCCCCC;
+  background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -2226,7 +2232,7 @@ exports[`Select component should render options correctly 2`] = `
         style="display: block;"
       >
         <ul
-          class="sc-iwsKbI ecUcNc"
+          class="sc-iwsKbI jHcpLx"
         >
           <li
             class="sc-dnqmqq lhTpTY"
