@@ -4,7 +4,7 @@ import Text from '../../Text';
 import Cell from '../Cell';
 import { GroupCell } from '../GroupCell';
 import { getGridTemplateColumns } from '../helpers';
-import Row from '../Row';
+import Row, { NoResultStyled } from '../Row';
 import { ColumnConfig } from '../types';
 import { Props } from './types';
 
@@ -47,6 +47,14 @@ const Body: React.SFC<Props> = props => {
 
         return cells;
     };
+
+    if (data.length === 0) {
+        return (
+            <NoResultStyled>
+                <Text textSize="M3">No result</Text>
+            </NoResultStyled>
+        );
+    }
 
     return (
         <>

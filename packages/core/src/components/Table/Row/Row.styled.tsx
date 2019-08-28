@@ -14,3 +14,8 @@ export const RowStyled = styled('li').attrs(({ gridTemplateColumns }: GridTempla
 
     border-bottom: 1px solid #ededed;
 `;
+
+export const NoResultStyled = styled(RowStyled)`
+    text-align: center;
+    line-height: 30px;
+`;
