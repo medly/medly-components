@@ -18,6 +18,11 @@ export const ResizeHandlerStyled = styled('span')`
 export const HeadCellStyled = styled(Cell)`
     text-overflow: initial;
     white-space: normal;
+    border-right: 1px solid ${({ theme }) => theme.table.borderColor};
+    border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
+
+    height: 100%;
+    align-items: flex-end;
 
     *:first-child {
         margin-right: auto;

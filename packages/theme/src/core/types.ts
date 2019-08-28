@@ -7,6 +7,7 @@ export * from './colors/types';
 export * from './card/types';
 export * from './checkbox/types';
 export * from './modal/types';
+export * from './table/types';
 export * from './radio/types';
 export * from './font/types';
 export * from './select/types';

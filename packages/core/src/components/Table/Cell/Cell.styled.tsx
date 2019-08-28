@@ -17,6 +17,7 @@ export const CellStyled = styled('div')<Props>`
     position: relative;
     display: flex;
     align-items: center;
+    border-right: 1px solid ${({ theme }) => theme.table.borderColor};
 
     ${Checkbox.Style} {
         display: flex;

@@ -1,23 +1,27 @@
-import { centerAligned, styled, WithThemeProp } from '@medly-components/utils';
+import { styled, WithThemeProp } from '@medly-components/utils';
 import Text from '../../Text';
-import { GridTemplateProps } from '../types';
+import { Props } from './types';
 
-export const GroupCellStyled = styled('div').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({
+export const GroupCellStyled = styled('div').attrs(({ gridTemplateColumns }: Props) => ({
     style: {
         gridTemplateColumns
     }
-}))<GridTemplateProps>`
+}))<Props>`
     display: grid;
-    width: 100%;
-    height: 100%;
+    opacity: ${({ hide }) => (hide ? '0' : '1')};
+    width: ${({ hide }) => (hide ? '0px' : '100%')};
+    height: ${({ hide }) => (hide ? '0px' : '100%')};
 `;
 
 export const GroupCellTitleStyled = styled(Text.Style)<WithThemeProp>`
     font-size: ${({ theme }) => theme.font.sizes.M3};
     font-weight: ${({ theme }) => theme.font.weights.Strong};
+    text-align: center;
     padding: 5px 0px 5px 10px;
     grid-column: -1/1;
     text-overflow: initial;
     overflow: auto;
     white-space: normal;
+    border-right: 1px solid ${({ theme }) => theme.table.borderColor};
+    border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
 `;

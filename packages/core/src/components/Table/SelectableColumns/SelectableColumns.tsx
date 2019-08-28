@@ -6,11 +6,15 @@ import { Props } from './types';
 
 const TableSelectableColumns: React.SFC<Props> = ({ columns, fieldToChange, onChange }) => {
     const changeFieldValue = (dottedField: string, configs: ColumnConfig[], state = false): ColumnConfig[] => {
-        const fields = dottedField.split('.');
         return configs.map(config => {
-            const nextField = fields[1] || '';
-            if (config.children) return { ...config, children: changeFieldValue(nextField, config.children, state) };
-            return { ...config, [fieldToChange]: config.field === fields[0] ? state : config[fieldToChange] };
+            if (!dottedField.includes('.') && config.field === dottedField) return { ...config, [fieldToChange]: state };
+            if (config.field === dottedField.split('.')[0] && config.children) {
+                return {
+                    ...config,
+                    children: changeFieldValue(dottedField.substring(dottedField.indexOf('.') + 1), config.children, state)
+                };
+            }
+            return config;
         });
     };
 
@@ -21,12 +25,20 @@ const TableSelectableColumns: React.SFC<Props> = ({ columns, fieldToChange, onCh
 
     const handleCheckboxGroupClick = (field: string) => (fields: string[]) => {
         const columnConfigOfSelectedGroup = columns.find(cc => cc.field === field);
-        const newConfig = columnConfigOfSelectedGroup.children.reduce(
+
+        let newConfig = columnConfigOfSelectedGroup.children.reduce(
             (acc: ColumnConfig[], curr: ColumnConfig) => {
                 return changeFieldValue(`${field}.${curr.field}`, acc, fields.includes(curr.field));
             },
             [...columns]
         );
+
+        if (fields.length === columnConfigOfSelectedGroup.children.length) {
+            newConfig = changeFieldValue(field, newConfig, true);
+        }
+        if (fields.length === 0) {
+            newConfig = changeFieldValue(field, newConfig, false);
+        }
 
         onChange(newConfig);
     };

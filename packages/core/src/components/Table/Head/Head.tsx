@@ -26,7 +26,7 @@ const Head: React.SFC<Props> = props => {
         configs.forEach(config => {
             return config.children
                 ? cells.push(
-                      <GroupCell key={config.field} gridTemplateColumns={getGridTemplateColumns(config.children)}>
+                      <GroupCell key={config.field} hide={config.hide} gridTemplateColumns={getGridTemplateColumns(config.children)}>
                           <GroupCellTitle>{config.title}</GroupCellTitle>
                           {headCell(config.children, config.field)}
                       </GroupCell>

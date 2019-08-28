@@ -6,34 +6,37 @@ export const TableStyled = styled('ol')<TableStyledProps>`
     margin: 0px;
     padding: 0px;
     overflow: auto;
+    border: 1px solid ${({ theme }) => theme.table.borderColor};
 
     * {
         box-sizing: border-box;
     }
 
     ${Row} {
-        cursor: ${({ isRowClickable }) => (isRowClickable ? 'pointer' : 'default')};
         &:first-of-type {
             user-select: none;
             position: sticky;
             top: 0;
             z-index: 2;
             align-items: end;
-            background-color: white;
+            background-color: ${({ theme }) => theme.table.oddLiBgColor};
             border: none;
-            cursor: default;
         }
 
-        &:not(:first-of-type) > * {
-            height: 100%;
+        &:not(:first-of-type) {
+            cursor: ${({ isRowClickable }) => (isRowClickable ? 'pointer' : 'default')};
+
+            & > * {
+                height: 100%;
+            }
         }
 
         &:nth-child(even) > * {
-            background-color: #f7f7f7;
+            background-color: ${({ theme }) => theme.table.evenLiBgColor};
         }
 
         &:nth-child(odd) > * {
-            background-color: white;
+            background-color: ${({ theme }) => theme.table.oddLiBgColor};
         }
     }
 `;

@@ -9,6 +9,7 @@ export interface CoreTheme {
     label?: CoreThemes.LabelTheme;
     link?: CoreThemes.LinkTheme;
     modal?: CoreThemes.ModalTheme;
+    table?: CoreThemes.TableTheme;
     card?: CoreThemes.CardTheme;
     button?: CoreThemes.ButtonTheme;
     colors?: CoreThemes.ColorPallet;

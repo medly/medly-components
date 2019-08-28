@@ -14,6 +14,7 @@ import reactDatepicker from './reactDatepicker';
 import select from './select';
 import spacing from './spacing';
 import stepper from './stepper';
+import table from './table';
 import text from './text';
 
 export const coreDefaultTheme = {
@@ -33,5 +34,6 @@ export const coreDefaultTheme = {
     stepper,
     spacing,
     text,
+    table,
     reactDatepicker
 };

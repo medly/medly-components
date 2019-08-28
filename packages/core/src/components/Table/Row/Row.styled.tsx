@@ -13,8 +13,4 @@ export const RowStyled = styled('li').attrs(({ gridTemplateColumns }: GridTempla
     align-items: center;
 
     border-bottom: 1px solid #ededed;
-
-    &:hover {
-        background-color: rgb(200, 227, 252);
-    }
 `;

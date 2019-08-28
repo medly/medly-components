@@ -9,10 +9,10 @@ export const addSizeToColumnConfig = (columnConfigs: ColumnConfig[]): ColumnConf
     });
 };
 const getCumulativeTemplate = (configs: ColumnConfig[]) => {
-    const cumulativeSize = configs.reduce(
-        (acc, curr) => acc.map((val, index) => val + Number(curr.size.match(/\d+(\.\d{1,2})?/g)[index])),
-        [0, 0]
-    );
+    const cumulativeSize = configs.reduce((acc, curr) => acc.map((val, index) => val + Number(curr.size.match(/\d+(\.\d*)?/g)[index])), [
+        0,
+        0
+    ]);
     return `minmax(${cumulativeSize[0]}px, ${cumulativeSize[1]}fr)`;
 };
 

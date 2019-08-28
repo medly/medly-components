@@ -19,7 +19,7 @@ const HeadCell: React.SFC<HeadCellProps> & WithStyle = props => {
     const onMouseMove = (e: MouseEvent) => {
         requestAnimationFrame(() => {
             if (cellEl.current) {
-                const width = pageX - cellEl.current.offsetLeft + (e.pageX - pageX);
+                const width = pageX - cellEl.current.getBoundingClientRect().left + (e.pageX - pageX + 2);
                 onWidthChange && onWidthChange(width, field);
             }
         });
@@ -34,12 +34,14 @@ const HeadCell: React.SFC<HeadCellProps> & WithStyle = props => {
     const onMouseUp = () => {
         window.removeEventListener('mousemove', onMouseMove);
         window.removeEventListener('mouseup', onMouseUp);
+        document.querySelector('body').style.cursor = 'auto';
     };
 
     const initResize = (e: React.MouseEvent) => {
         pageX = e.pageX;
         window.addEventListener('mousemove', onMouseMove);
         window.addEventListener('mouseup', onMouseUp);
+        document.querySelector('body').style.cursor = 'ew-resize';
     };
 
     const sortIcon =
