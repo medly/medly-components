@@ -5,7 +5,20 @@ import { Props as RadioProps } from '../Radio/types';
 import { Props } from './types';
 
 const RadioGroup: React.SFC<Props> & WithStyle = React.memo(props => {
-    const { size, name, label, required, children, labelPosition, onChange, defaultChecked, disabled } = props;
+    const {
+        size,
+        name,
+        label,
+        required,
+        children,
+        labelPosition,
+        onChange,
+        defaultChecked,
+        disabled,
+        labelSize,
+        labelWeight,
+        labelColor
+    } = props;
 
     const handleOnChange = (event: React.FormEvent<HTMLInputElement>) => {
         const target = event.target as HTMLInputElement;
@@ -13,7 +26,9 @@ const RadioGroup: React.SFC<Props> & WithStyle = React.memo(props => {
     };
     return (
         <FieldWithLabel fullWidth {...{ labelPosition }}>
-            {label && <FieldWithLabel.Label {...{ required, labelPosition }}>{label}</FieldWithLabel.Label>}
+            {label && (
+                <FieldWithLabel.Label {...{ required, labelPosition, labelSize, labelWeight, labelColor }}>{label}</FieldWithLabel.Label>
+            )}
             <FieldWithLabel.Field onChange={handleOnChange}>
                 {React.Children.map(children, child => {
                     return React.cloneElement(child as React.ReactElement<RadioProps> & WithStyle, {

@@ -26,6 +26,7 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-left: 0px;
 }
 
 .c1 {
@@ -242,6 +243,7 @@ exports[`Radio Group should render correctly 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-left: 0px;
 }
 
 .c1 {

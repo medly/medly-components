@@ -42,7 +42,7 @@ describe('CheckboxGroup component', () => {
                     options={[{ value: 'apple', label: 'Apple' }, { value: 'orange', label: 'Orange' }]}
                 />
             );
-        TestUtils.fireEvent.click(getByText('Select All'));
+        TestUtils.fireEvent.click(getByText('Fruits'));
         expect(mockOnChange).toHaveBeenCalledWith(['apple', 'orange']);
     });
 
@@ -57,7 +57,7 @@ describe('CheckboxGroup component', () => {
                     options={[{ value: 'apple', label: 'Apple' }, { value: 'orange', label: 'Orange' }]}
                 />
             );
-        TestUtils.fireEvent.click(getByText('Select All'));
+        TestUtils.fireEvent.click(getByText('Fruits'));
         expect(mockOnChange).toHaveBeenCalledWith([]);
     });
 });

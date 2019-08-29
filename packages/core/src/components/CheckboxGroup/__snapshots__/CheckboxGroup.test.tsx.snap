@@ -29,6 +29,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-left: 0px;
 }
 
 .c1 {

@@ -7,15 +7,15 @@ export interface Common extends HTMLProps<HTMLLabelElement>, WithThemeProp {
     showPointer?: boolean;
     labelPosition?: LabelPositions;
     required?: boolean;
-    textColor?: string;
+    labelColor?: string;
 }
 
 export interface Props extends Common {
-    textSize?: FontSizes;
-    textWeight?: FontWeights;
+    labelSize?: FontSizes;
+    labelWeight?: FontWeights;
 }
 
 export interface StyledProps extends Common {
-    textSize?: string;
-    textWeight?: string;
+    labelSize?: string;
+    labelWeight?: string;
 }

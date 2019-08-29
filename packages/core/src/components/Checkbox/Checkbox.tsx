@@ -7,11 +7,11 @@ import { Props } from './types';
 
 const Checkbox: React.SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { size, label, required, labelPosition, ...restProps } = props;
+        const { size, label, required, labelPosition, labelSize, labelWeight, labelColor, ...restProps } = props;
         return (
             <FieldWithLabel fieldWithMaxContent {...{ labelPosition }}>
                 {label && (
-                    <FieldWithLabel.Label showPointer {...{ required, labelPosition }} htmlFor={label}>
+                    <FieldWithLabel.Label showPointer {...{ required, labelPosition, labelSize, labelWeight, labelColor }} htmlFor={label}>
                         {label}
                     </FieldWithLabel.Label>
                 )}

@@ -2,11 +2,13 @@ import { css, styled } from '@medly-components/utils';
 import { AnyStyledComponent } from 'styled-components';
 import Label from '../Label';
 import Text from '../Text';
-import { FieldWithLabelStyledProps, StaticProps } from './types';
+import { FieldStyledProps, FieldWithLabelStyledProps, StaticProps } from './types';
 
-export const FieldStyled = styled('div')`
+export const FieldStyled = styled('div')<FieldStyledProps>`
     grid-area: field;
     flex-wrap: wrap;
+
+    margin-left: ${({ isIndented }) => (isIndented ? '10px' : '0px')};
 `;
 
 export const LabelStyled = styled(Label)`

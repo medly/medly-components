@@ -15,11 +15,11 @@ const pointerCursor = () => css`
 
 const getMappedProps = ({ theme: { label, font }, ...props }: Props) => {
     const { defaults } = label;
-    const { textSize, textWeight, textColor } = props;
+    const { labelSize, labelWeight, labelColor } = props;
     return {
-        textSize: font.sizes[textSize || defaults.textSize],
-        textWeight: font.weights[textWeight || defaults.textWeight],
-        textColor: textColor || defaults.textColor
+        textSize: font.sizes[labelSize || defaults.textSize],
+        textWeight: font.weights[labelWeight || defaults.textWeight],
+        textColor: labelColor || defaults.textColor
     };
 };
 

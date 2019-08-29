@@ -1,4 +1,4 @@
-import { RadioSizes } from '@medly-components/theme';
+import { FontSizes, FontWeights, RadioSizes } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 
@@ -12,6 +12,9 @@ export interface RadioWrapperProps extends DivProps, WithThemeProp {
 export interface Props extends InputProps, WithThemeProp {
     value: string;
     labelPosition?: LabelPositions;
+    labelSize?: FontSizes;
+    labelWeight?: FontWeights;
+    labelColor?: string;
     required?: boolean;
     label?: string;
     size?: RadioSizes;

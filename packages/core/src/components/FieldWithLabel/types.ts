@@ -1,6 +1,6 @@
 import { Theme } from '@medly-components/theme';
 import { WithThemeProp } from '@medly-components/utils';
-import { AnyStyledComponent, StyledComponent } from 'styled-components';
+import { StyledComponent } from 'styled-components';
 import Label from '../Label';
 import { LabelPositions } from '../Label/types';
 import Text from '../Text';
@@ -15,8 +15,12 @@ export interface FieldWithLabelStyledProps extends Props {
     isLabelPresent?: boolean;
 }
 
+export interface FieldStyledProps {
+    isIndented?: boolean;
+}
+
 export interface StaticProps {
-    Field: AnyStyledComponent;
+    Field: StyledComponent<'div', Theme, FieldStyledProps>;
     Label: StyledComponent<typeof Label, Theme>;
     Description: StyledComponent<typeof Text, Theme>;
 }

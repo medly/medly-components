@@ -12,9 +12,9 @@ storiesOf('Core', module).add('Label', () => (
     <Label
         showPointer={boolean('Show Pointer', false)}
         required={boolean('Show Required asterisk', false)}
-        textColor={color('Color', defaultColor)}
-        textSize={select('Text Size', sizeOptions, 'L1')}
-        textWeight={select('Text Weight', weightOptions, 'Normal')}
+        labelColor={color('Color', defaultColor)}
+        labelSize={select('Label Size', sizeOptions, 'L1')}
+        labelWeight={select('Label Weight', weightOptions, 'Normal')}
     >
         Top 5
     </Label>
