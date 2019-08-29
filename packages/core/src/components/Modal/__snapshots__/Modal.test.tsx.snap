@@ -101,8 +101,12 @@ exports[`Modal component should render properly when it is open 1`] = `
   cursor: not-allowed;
 }
 
-.c4 .c5 {
-  margin-right: 5px;
+.c4 .c5 + .c9 {
+  margin-left: 5px;
+}
+
+.c4 .c9 + .c5 {
+  margin-left: 5px;
 }
 
 .c3 {

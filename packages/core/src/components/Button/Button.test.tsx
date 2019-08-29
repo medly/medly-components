@@ -1,3 +1,4 @@
+import { GearIcon } from '@medly-components/icons';
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
 import Button from './Button';
@@ -21,6 +22,26 @@ describe('Button component', () => {
     });
     it('should render properly with solid variant', () => {
         const { container } = TestUtils.render(<Button variant="solid">Solid Button</Button>);
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly with any icon at the beginning of the text', () => {
+        const { container } = TestUtils.render(
+            <Button variant="solid">
+                <GearIcon />
+                Solid Button
+            </Button>
+        );
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly with any icon at the end of the text', () => {
+        const { container } = TestUtils.render(
+            <Button variant="solid">
+                <GearIcon />
+                Solid Button
+            </Button>
+        );
         expect(container).toMatchSnapshot();
     });
 

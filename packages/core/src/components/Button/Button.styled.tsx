@@ -1,6 +1,7 @@
 import { SvgIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
 import { centerAligned, css, styled } from '@medly-components/utils';
+import Text from '../Text';
 import { Props } from './types';
 
 const getColor = ({ theme, color, disabled }: Props) => (disabled ? theme.button.disabled : theme.button[color]);
@@ -44,8 +45,12 @@ export const ButtonStyled = styled('button')<Props>`
         cursor: not-allowed;
     }
 
-    ${SvgIcon} {
-        margin-right: 5px;
+    ${SvgIcon} + ${Text.Style}{
+        margin-left: 5px;
+    }
+
+    ${Text.Style} + ${SvgIcon}{
+        margin-left: 5px;
     }
 
     ${centerAligned()}
