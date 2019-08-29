@@ -8,7 +8,7 @@ export const FieldStyled = styled('div')<FieldStyledProps>`
     grid-area: field;
     flex-wrap: wrap;
 
-    margin-left: ${({ isIndented }) => (isIndented ? '10px' : '0px')};
+    margin-left: ${({ isIndented }) => (isIndented ? '17px' : '0px')};
 `;
 
 export const LabelStyled = styled(Label)`
