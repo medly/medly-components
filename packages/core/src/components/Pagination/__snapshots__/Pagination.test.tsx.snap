@@ -20,6 +20,18 @@ exports[`Pagination component should render correctly with all the default props
   text-decoration: none;
   border: 1px solid #AAAAAA;
   color: #AAAAAA;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c1:hover {
@@ -32,6 +44,10 @@ exports[`Pagination component should render correctly with all the default props
 
 .c1:disabled {
   cursor: not-allowed;
+}
+
+.c1 .c5 {
+  margin-right: 5px;
 }
 
 .c3 {
@@ -48,6 +64,18 @@ exports[`Pagination component should render correctly with all the default props
   border: 1px solid #012040;
   background-color: #012040;
   color: #ffffff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c3:hover {
@@ -60,6 +88,10 @@ exports[`Pagination component should render correctly with all the default props
 
 .c3:disabled {
   cursor: not-allowed;
+}
+
+.c3 .c5 {
+  margin-right: 5px;
 }
 
 .c4 {
@@ -75,6 +107,18 @@ exports[`Pagination component should render correctly with all the default props
   text-decoration: none;
   border: 1px solid #012040;
   color: #012040;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c4:hover {
@@ -87,6 +131,10 @@ exports[`Pagination component should render correctly with all the default props
 
 .c4:disabled {
   cursor: not-allowed;
+}
+
+.c4 .c5 {
+  margin-right: 5px;
 }
 
 .c0 {
@@ -253,6 +301,18 @@ exports[`Pagination component should render correctly with all the props given 1
   border: 1px solid #012040;
   background-color: #012040;
   color: #ffffff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c1:hover {
@@ -265,6 +325,10 @@ exports[`Pagination component should render correctly with all the props given 1
 
 .c1:disabled {
   cursor: not-allowed;
+}
+
+.c1 .c4 {
+  margin-right: 5px;
 }
 
 .c3 {
@@ -280,6 +344,18 @@ exports[`Pagination component should render correctly with all the props given 1
   text-decoration: none;
   border: 1px solid #012040;
   color: #012040;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c3:hover {
@@ -292,6 +368,10 @@ exports[`Pagination component should render correctly with all the props given 1
 
 .c3:disabled {
   cursor: not-allowed;
+}
+
+.c3 .c4 {
+  margin-right: 5px;
 }
 
 .c0 {

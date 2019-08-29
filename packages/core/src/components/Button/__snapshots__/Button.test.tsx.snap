@@ -21,6 +21,18 @@ exports[`Button component should render properly when it is disabled 1`] = `
   border: 1px solid #AAAAAA;
   background-color: #AAAAAA;
   color: #ffffff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0:hover {
@@ -33,6 +45,10 @@ exports[`Button component should render properly when it is disabled 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
+}
+
+.c0 .c2 {
+  margin-right: 5px;
 }
 
 <div>
@@ -69,6 +85,18 @@ exports[`Button component should render properly with flat variant and primary c
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #012040;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0:hover {
@@ -81,6 +109,10 @@ exports[`Button component should render properly with flat variant and primary c
 
 .c0:disabled {
   cursor: not-allowed;
+}
+
+.c0 .c2 {
+  margin-right: 5px;
 }
 
 <div>
@@ -117,6 +149,18 @@ exports[`Button component should render properly with outlined variant and secon
   text-decoration: none;
   border: 1px solid #FA6F80;
   color: #FA6F80;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0:hover {
@@ -129,6 +173,10 @@ exports[`Button component should render properly with outlined variant and secon
 
 .c0:disabled {
   cursor: not-allowed;
+}
+
+.c0 .c2 {
+  margin-right: 5px;
 }
 
 <div>
@@ -166,6 +214,18 @@ exports[`Button component should render properly with solid variant 1`] = `
   border: 1px solid #012040;
   background-color: #012040;
   color: #ffffff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0:hover {
@@ -178,6 +238,10 @@ exports[`Button component should render properly with solid variant 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
+}
+
+.c0 .c2 {
+  margin-right: 5px;
 }
 
 <div>
@@ -215,6 +279,18 @@ exports[`Button component should wrap children into Text component when renderin
   border: 1px solid #012040;
   background-color: #012040;
   color: #ffffff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0:hover {
@@ -227,6 +303,10 @@ exports[`Button component should wrap children into Text component when renderin
 
 .c0:disabled {
   cursor: not-allowed;
+}
+
+.c0 .c2 {
+  margin-right: 5px;
 }
 
 <div>

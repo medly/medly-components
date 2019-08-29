@@ -36,7 +36,7 @@ exports[`Modal component should render properly when it is open 1`] = `
   overflow-y: auto;
 }
 
-.c7 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -51,15 +51,15 @@ exports[`Modal component should render properly when it is open 1`] = `
   justify-content: flex-end;
 }
 
-.c6 {
+.c7 {
   margin-bottom: 16px;
 }
 
-.c5 {
+.c6 {
   font-size: 16px;
 }
 
-.c5 * {
+.c6 * {
   fill: #555;
 }
 
@@ -75,6 +75,18 @@ exports[`Modal component should render properly when it is open 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #012040;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c4:hover {
@@ -87,6 +99,10 @@ exports[`Modal component should render properly when it is open 1`] = `
 
 .c4:disabled {
   cursor: not-allowed;
+}
+
+.c4 .c5 {
+  margin-right: 5px;
 }
 
 .c3 {
@@ -131,7 +147,7 @@ exports[`Modal component should render properly when it is open 1`] = `
           data-testid="modal-close-button"
         >
           <svg
-            class="c5"
+            class="c5 c6"
             height="1em"
             viewBox="0 0 14 14"
             width="1em"
@@ -146,12 +162,12 @@ exports[`Modal component should render properly when it is open 1`] = `
         </button>
       </div>
       <div
-        class="c6"
+        class="c7"
       >
         Demo Content
       </div>
       <div
-        class="c7"
+        class="c8"
       >
         Demo Actions
       </div>
