@@ -33,12 +33,7 @@ const TableSelectableColumns: React.SFC<Props> = ({ columns, fieldToChange, onCh
             [...columns]
         );
 
-        if (fields.length === columnConfigOfSelectedGroup.children.length) {
-            newConfig = changeFieldValue(field, newConfig, true);
-        }
-        if (fields.length === 0) {
-            newConfig = changeFieldValue(field, newConfig, false);
-        }
+        newConfig = changeFieldValue(field, newConfig, fields.length === columnConfigOfSelectedGroup.children.length);
 
         onChange(newConfig);
     };
