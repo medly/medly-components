@@ -14,6 +14,7 @@ import ExpandLessIcon from './icons/ExpandLessIcon';
 import ExpandMoreIcon from './icons/ExpandMoreIcon';
 import FileIcon from './icons/FileIcon';
 import FileUploadIcon from './icons/FileUploadIcon';
+import GearIcon from './icons/GearIcon';
 import HomeIcon from './icons/HomeIcon';
 import SearchIcon from './icons/SearchIcon';
 import SliderIcon from './icons/SliderIcon';
@@ -29,6 +30,7 @@ storiesOf('Icons', module)
     .add('Clipboard', () => <ClipboardIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('Check', () => <CheckIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('Delete', () => <DeleteIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
+    .add('Gear', () => <GearIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('DownArrow', () => <DownArrowIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('DropDown', () => <DropDownIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
     .add('Edit', () => <EditIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />)
