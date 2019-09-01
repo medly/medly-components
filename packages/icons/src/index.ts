@@ -5,6 +5,7 @@ export { default as CheckIcon } from './icons/CheckIcon';
 export { default as ClipboardIcon } from './icons/ClipboardIcon';
 export { default as ClearIcon } from './icons/ClearIcon';
 export { default as DeleteIcon } from './icons/DeleteIcon';
+export { default as DownloadIcon } from './icons/DownloadIcon';
 export { default as DownArrowIcon } from './icons/DownArrowIcon';
 export { default as DropDownIcon } from './icons/DropDownIcon';
 export { default as GearIcon } from './icons/GearIcon';
