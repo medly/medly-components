@@ -25,6 +25,7 @@ export interface NavItemStyledProps extends HTMLProps<HTMLLIElement>, WithThemeP
 
 export interface SideNavProps {
     logo?: React.FunctionComponent<SvgIconProps> & WithStyle;
+    closeOnOuterClick?: boolean;
 }
 
 export interface SideNavStaticProps {

@@ -99,7 +99,7 @@ describe('SideNav', () => {
         const { container, getByText, getByTestId } = render(
             <div>
                 <p>Outer Element</p>
-                <SideNav>
+                <SideNav closeOnOuterClick>
                     <SideNav.NavList>
                         <SideNav.NavItem>
                             <SideNav.NavIcon>

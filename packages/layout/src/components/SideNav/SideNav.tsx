@@ -21,7 +21,7 @@ export const SideNav: React.SFC<SideNavProps> & WithStyle & SideNavStaticProps =
         };
 
     useOuterClickNotifier(() => {
-        setOpenState(false);
+        props.closeOnOuterClick && setOpenState(false);
     }, ref);
 
     return (
@@ -49,5 +49,8 @@ SideNav.Logo = Styled.Logo;
 
 SideNav.displayName = 'SideNav';
 SideNav.Style = Styled.SideNav;
+SideNav.defaultProps = {
+    closeOnOuterClick: false
+};
 
 export default SideNav;
