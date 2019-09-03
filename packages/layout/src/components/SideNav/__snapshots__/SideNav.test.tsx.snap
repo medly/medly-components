@@ -86,8 +86,8 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   background-color: transparent;
   display: grid;
   grid-template-areas: 'icon header' 'icon submenu';
-  grid-template-rows: 60px auto;
-  grid-template-columns: 60px auto;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: min-content 1fr;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -122,8 +122,8 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   background-color: #7C7B7B;
   display: grid;
   grid-template-areas: 'icon header' 'icon submenu';
-  grid-template-rows: 60px auto;
-  grid-template-columns: 60px auto;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: min-content 1fr;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -431,8 +431,8 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   background-color: transparent;
   display: grid;
   grid-template-areas: 'icon header' 'icon submenu';
-  grid-template-rows: 60px auto;
-  grid-template-columns: 60px auto;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: min-content 1fr;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -467,8 +467,8 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   background-color: #7C7B7B;
   display: grid;
   grid-template-areas: 'icon header' 'icon submenu';
-  grid-template-rows: 60px auto;
-  grid-template-columns: 60px auto;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: min-content 1fr;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -520,8 +520,15 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 }
 
 .c16 .c1 {
-  display: block;
   min-height: 30px;
+}
+
+.c16 .c1 .c10 + .c12 {
+  margin-left: 5px;
+}
+
+.c16 .c1 .c12 + .c10 {
+  margin-left: 5px;
 }
 
 .c16 ul {
@@ -832,8 +839,8 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   background-color: transparent;
   display: grid;
   grid-template-areas: 'icon header' 'icon submenu';
-  grid-template-rows: 60px auto;
-  grid-template-columns: 60px auto;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: min-content 1fr;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -887,8 +894,15 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 }
 
 .c16 .c1 {
-  display: block;
   min-height: 30px;
+}
+
+.c16 .c1 .c10 + .c12 {
+  margin-left: 5px;
+}
+
+.c16 .c1 .c12 + .c10 {
+  margin-left: 5px;
 }
 
 .c3 {
@@ -1110,8 +1124,8 @@ exports[`SideNav should render properly 1`] = `
   background-color: transparent;
   display: grid;
   grid-template-areas: 'icon header' 'icon submenu';
-  grid-template-rows: 60px auto;
-  grid-template-columns: 60px auto;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: min-content 1fr;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1146,8 +1160,8 @@ exports[`SideNav should render properly 1`] = `
   background-color: #7C7B7B;
   display: grid;
   grid-template-areas: 'icon header' 'icon submenu';
-  grid-template-rows: 60px auto;
-  grid-template-columns: 60px auto;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: min-content 1fr;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;

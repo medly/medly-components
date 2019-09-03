@@ -14,8 +14,8 @@ export const NavItemStyled = styled('li')<NavItemStyledProps>`
     grid-template-areas:
         'icon header'
         'icon submenu';
-    grid-template-rows: ${({ theme }) => theme.sideNav.closeSize} auto;
-    grid-template-columns: ${({ theme }) => theme.sideNav.closeSize} auto;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: min-content 1fr;
     align-items: center;
     min-height: 35px;
     text-overflow: ellipsis;
