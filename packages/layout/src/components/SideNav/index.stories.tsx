@@ -22,6 +22,14 @@ storiesOf('Layout', module).add(
                 <SideNav.SubNavList>
                     <SideNav.NavItem active>
                         <SideNav.NavText>Cars</SideNav.NavText>
+                        <SideNav.SubNavList>
+                            <SideNav.NavItem active>
+                                <SideNav.NavText>Engine</SideNav.NavText>
+                            </SideNav.NavItem>
+                            <SideNav.NavItem>
+                                <SideNav.NavText>Speaker</SideNav.NavText>
+                            </SideNav.NavItem>
+                        </SideNav.SubNavList>
                     </SideNav.NavItem>
                     <SideNav.NavItem>
                         <SideNav.NavText>Bikes</SideNav.NavText>

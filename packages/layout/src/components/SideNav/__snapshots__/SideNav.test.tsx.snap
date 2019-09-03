@@ -513,6 +513,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 .c16 {
   grid-area: submenu;
   padding: 0px;
+  margin: 0px;
   max-height: 0;
   overflow: hidden;
   box-sizing: border-box;
@@ -520,6 +521,12 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 
 .c16 .c1 {
   display: block;
+  min-height: 30px;
+}
+
+.c16 ul {
+  margin-top: 10px;
+  padding-left: 15px;
 }
 
 .c3 {
@@ -881,6 +888,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 
 .c16 .c1 {
   display: block;
+  min-height: 30px;
 }
 
 .c3 {
