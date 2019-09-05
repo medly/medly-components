@@ -8,7 +8,7 @@ import Row, { NoResultStyled } from '../Row';
 import { ColumnConfig } from '../types';
 import { Props } from './types';
 
-const Body: React.SFC<Props> = props => {
+const Body: React.SFC<Props> = React.memo(props => {
     const { data, columns, onRowClick, selectedRows, onRowSelection, changeMaxColumnSizes, hiddenDivRef } = props;
 
     const handleRowClick = (rowData: object) => () => onRowClick && onRowClick(rowData),
@@ -80,6 +80,6 @@ const Body: React.SFC<Props> = props => {
     }
 
     return <>{getRowCells()}</>;
-};
+});
 
 export default Body;

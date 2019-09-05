@@ -7,7 +7,7 @@ import { ColumnConfig, SortOrder } from '../types';
 import HeadCell from './HeadCell';
 import { Props } from './types';
 
-const Head: React.SFC<Props> = props => {
+const Head: React.SFC<Props> = React.memo(props => {
     const { columns, onSort, setColumns, isAllRowSelected, onSelectAllClick, maxColumnSizes } = props;
 
     const [sortField, setSortField] = useState('');
@@ -60,6 +60,6 @@ const Head: React.SFC<Props> = props => {
         return cells;
     };
     return <Row gridTemplateColumns={getGridTemplateColumns(columns)}>{headCell()}</Row>;
-};
+});
 
 export default Head;
