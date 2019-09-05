@@ -30,7 +30,7 @@ export const changeSize = (width: number, dottedField: string, columnConfigs: Co
             config.children = changeSize(width, fields[1], config.children);
         } else if (width < 75) {
             config.size = columnsWidth[config.formatter];
-        } else if (width > 700) {
+        } else if (width > 900) {
             config.size = config.size.replace(/(.*\()(.*)(\,.*)/, `$1700px$3`);
         } else {
             config.size = config.size.replace(/(.*\()(.*)(\,.*)/, `$1${width}px$3`);

@@ -7,7 +7,7 @@ import { HeadCellProps } from './types';
 
 const HeadCell: React.SFC<HeadCellProps> & WithStyle = props => {
     let pageX: number;
-    const { frozen, enableSorting, children, hide, field, sortField, onSortChange, onWidthChange } = props;
+    const { frozen, enableSorting, children, hide, field, sortField, onSortChange, onWidthChange, maxColumnSizes } = props;
 
     const cellEl = useRef(null),
         [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>('none');
@@ -44,6 +44,12 @@ const HeadCell: React.SFC<HeadCellProps> & WithStyle = props => {
         document.querySelector('body').style.cursor = 'ew-resize';
     };
 
+    const handleDoubleClick = (e: React.MouseEvent) => {
+        e.preventDefault();
+        // @ts-ignore
+        onWidthChange(maxColumnSizes[field], field);
+    };
+
     const sortIcon =
         sortField !== field ? (
             <DropDownIcon size="XS" onClick={handleSortIconClick} />
@@ -65,7 +71,7 @@ const HeadCell: React.SFC<HeadCellProps> & WithStyle = props => {
                 );
             })}
             {enableSorting && sortIcon}
-            <ResizeHandlerStyled onMouseDown={initResize} />
+            <ResizeHandlerStyled onMouseDown={initResize} onDoubleClick={handleDoubleClick} />
         </HeadCellStyled>
     );
 };

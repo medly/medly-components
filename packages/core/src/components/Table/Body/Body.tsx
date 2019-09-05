@@ -9,28 +9,36 @@ import { ColumnConfig } from '../types';
 import { Props } from './types';
 
 const Body: React.SFC<Props> = props => {
-    const { data, columns, onRowClick, selectedRows, onRowSelection } = props;
+    const { data, columns, onRowClick, selectedRows, onRowSelection, changeMaxColumnSizes, hiddenDivRef } = props;
 
     const handleRowClick = (rowData: object) => () => onRowClick && onRowClick(rowData),
         stopPropogation = (e: React.MouseEvent) => e.stopPropagation(),
-        handleRowSelection = (id: number) => (e: React.FormEvent<HTMLInputElement>) => onRowSelection(id);
+        handleRowSelection = (id: number) => (e: React.FormEvent<HTMLInputElement>) => onRowSelection(id),
+        maxSizeObj = {};
 
-    const rowsCells = (rowData: any, configs: ColumnConfig[] = columns, field = '') => {
+    const getRow = (rowData: any, configs: ColumnConfig[] = columns, field = '') => {
         const cells: React.ReactElement[] = [];
 
         configs.forEach(config => {
+            const fieldName = `${field && `${field}.`}${config.field}`;
+
+            if (!config.children && hiddenDivRef.current) {
+                hiddenDivRef.current.innerHTML = rowData[config.field];
+                const currentSize = hiddenDivRef.current.clientWidth;
+                // @ts-ignore
+                const maxSize = maxSizeObj[fieldName] || 0;
+                // @ts-ignore
+                if (currentSize > maxSize) maxSizeObj[fieldName] = currentSize;
+            }
+
             return config.children
                 ? cells.push(
-                      <GroupCell
-                          key={`${field}.${config.field}`}
-                          hide={config.hide}
-                          gridTemplateColumns={getGridTemplateColumns(config.children)}
-                      >
-                          {rowsCells(rowData[config.field], config.children, config.field)}
+                      <GroupCell key={fieldName} hide={config.hide} gridTemplateColumns={getGridTemplateColumns(config.children)}>
+                          {getRow(rowData[config.field], config.children, config.field)}
                       </GroupCell>
                   )
                 : cells.push(
-                      <Cell key={`${config.field}`} hide={config.hide} frozen={config.frozen}>
+                      <Cell key={fieldName} hide={config.hide} frozen={config.frozen}>
                           {config.field === 'medly-table-checkbox' ? (
                               <Checkbox
                                   checked={selectedRows.includes(rowData.id)}
@@ -48,6 +56,18 @@ const Body: React.SFC<Props> = props => {
         return cells;
     };
 
+    const getRowCells = () => {
+        const rows = data.map((row, index) => {
+            return (
+                <Row key={row.id || index} onClick={handleRowClick(row)} gridTemplateColumns={getGridTemplateColumns(columns)}>
+                    {getRow(row)}
+                </Row>
+            );
+        });
+        changeMaxColumnSizes(maxSizeObj);
+        return rows;
+    };
+
     if (data.length === 0) {
         return (
             <NoResultStyled>
@@ -56,17 +76,7 @@ const Body: React.SFC<Props> = props => {
         );
     }
 
-    return (
-        <>
-            {data.map((row, index) => {
-                return (
-                    <Row key={row.id || index} onClick={handleRowClick(row)} gridTemplateColumns={getGridTemplateColumns(columns)}>
-                        {rowsCells(row)}
-                    </Row>
-                );
-            })}
-        </>
-    );
+    return <>{getRowCells()}</>;
 };
 
 export default Body;

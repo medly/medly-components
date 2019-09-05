@@ -1,15 +1,17 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Body from './Body';
 import Head from './Head';
 import { addSizeToColumnConfig } from './helpers';
 import SelectableColumns from './SelectableColumns';
-import { TableStyled } from './Table.styled';
+import { HiddenDiv, TableStyled } from './Table.styled';
 import { ColumnConfig, Props, StaticProps } from './types';
 import useRowSelector from './useRowSelector';
 
 const Table: React.SFC<Props> & WithStyle & StaticProps = props => {
     const { data, onRowClick, onSort, isSelectable, selectedRows, onRowSelection } = props,
+        [maxColumnSizes, setMaxColumnSizes] = useState({}),
+        hiddenDivRef = useRef(null),
         checkboxColumnConfig: ColumnConfig = { title: 'ch', field: 'medly-table-checkbox', formatter: 'checkbox', hide: !isSelectable };
 
     const [ids, selectedIds, toggleId] = useRowSelector(data.map(({ id }) => id), selectedRows),
@@ -31,18 +33,34 @@ const Table: React.SFC<Props> & WithStyle & StaticProps = props => {
         onRowSelection && onRowSelection(selectedIds.value);
     }, [selectedIds.value]);
 
+    const changeMaxColumnSizes = (val: object) => {
+        Object.keys(maxColumnSizes).length === 0 && setMaxColumnSizes(val);
+    };
+
     return (
         <TableStyled isRowClickable={onRowClick ? true : false}>
+            <HiddenDiv ref={hiddenDivRef} />
             <Head
                 {...{
+                    onSort,
                     columns,
                     setColumns,
-                    onSort,
+                    maxColumnSizes,
                     onSelectAllClick: toggleId,
                     isAllRowSelected: ids.isAllSelected
                 }}
             />
-            <Body {...{ columns, data, onRowClick, selectedRows: selectedIds.value, onRowSelection: toggleId }} />
+            <Body
+                {...{
+                    columns,
+                    data,
+                    hiddenDivRef,
+                    onRowClick,
+                    changeMaxColumnSizes,
+                    selectedRows: selectedIds.value,
+                    onRowSelection: toggleId
+                }}
+            />
         </TableStyled>
     );
 };

@@ -8,7 +8,7 @@ import HeadCell from './HeadCell';
 import { Props } from './types';
 
 const Head: React.SFC<Props> = props => {
-    const { columns, onSort, setColumns, isAllRowSelected, onSelectAllClick } = props;
+    const { columns, onSort, setColumns, isAllRowSelected, onSelectAllClick, maxColumnSizes } = props;
 
     const [sortField, setSortField] = useState('');
 
@@ -33,6 +33,7 @@ const Head: React.SFC<Props> = props => {
                   )
                 : cells.push(
                       <HeadCell
+                          maxColumnSizes={maxColumnSizes}
                           sortField={sortField}
                           frozen={config.frozen}
                           hide={config.hide}

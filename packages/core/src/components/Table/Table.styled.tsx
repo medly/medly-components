@@ -2,6 +2,13 @@ import { styled } from '@medly-components/utils';
 import Row from './Row';
 import { TableStyledProps } from './types';
 
+export const HiddenDiv = styled('div')`
+    position: absolute;
+    left: -1000;
+    right: -1000;
+    font-size: 20px;
+`;
+
 export const TableStyled = styled('ol')<TableStyledProps>`
     margin: 0px;
     padding: 0px;
