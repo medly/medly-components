@@ -23,12 +23,15 @@ const Body: React.SFC<Props> = props => {
             const fieldName = `${field && `${field}.`}${config.field}`;
 
             if (!config.children && hiddenDivRef.current) {
-                hiddenDivRef.current.innerHTML = rowData[config.field];
-                const currentSize = hiddenDivRef.current.clientWidth;
-                // @ts-ignore
-                const maxSize = maxSizeObj[fieldName] || 0;
-                // @ts-ignore
-                if (currentSize > maxSize) maxSizeObj[fieldName] = currentSize;
+                if (rowData[config.field]) {
+                    hiddenDivRef.current.innerHTML = rowData[config.field];
+                    const currentSize = hiddenDivRef.current.clientWidth;
+                    // @ts-ignore
+                    const maxSize = maxSizeObj[fieldName] || 0;
+                    // @ts-ignore
+                    if (currentSize > maxSize) maxSizeObj[fieldName] = currentSize;
+                    // @ts-ignore
+                } else maxSizeObj[fieldName] = 0;
             }
 
             return config.children
