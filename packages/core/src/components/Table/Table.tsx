@@ -2,7 +2,7 @@ import { WithStyle } from '@medly-components/utils';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import Body from './Body';
 import Head from './Head';
-import { addSizeToColumnConfig } from './helpers';
+import { addSizeToColumnConfig, getMaxColumnSizes } from './helpers';
 import SelectableColumns from './SelectableColumns';
 import { HiddenDiv, TableStyled } from './Table.styled';
 import { ColumnConfig, Props, StaticProps } from './types';
@@ -26,16 +26,16 @@ const Table: React.SFC<Props> & WithStyle & StaticProps = props => {
     }, [data]);
 
     useEffect(() => {
+        setMaxColumnSizes(getMaxColumnSizes(data, columns, hiddenDivRef));
+    }, [data, hiddenDivRef]);
+
+    useEffect(() => {
         selectedIds.setValue(selectedRows);
     }, [selectedRows]);
 
     useEffect(() => {
         onRowSelection && onRowSelection(selectedIds.value);
     }, [selectedIds.value]);
-
-    const changeMaxColumnSizes = (val: object) => {
-        Object.keys(maxColumnSizes).length === 0 && setMaxColumnSizes(val);
-    };
 
     const head = useMemo(
             () => (
@@ -50,7 +50,7 @@ const Table: React.SFC<Props> & WithStyle & StaticProps = props => {
                     }}
                 />
             ),
-            [maxColumnSizes, columns]
+            [maxColumnSizes, columns, ids]
         ),
         body = useMemo(
             () => (
@@ -58,15 +58,13 @@ const Table: React.SFC<Props> & WithStyle & StaticProps = props => {
                     {...{
                         columns,
                         data,
-                        hiddenDivRef,
                         onRowClick,
-                        changeMaxColumnSizes,
                         selectedRows: selectedIds.value,
                         onRowSelection: toggleId
                     }}
                 />
             ),
-            [hiddenDivRef, columns]
+            [columns, data]
         );
 
     return (

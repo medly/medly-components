@@ -3,6 +3,8 @@ import Row from './Row';
 import { TableStyledProps } from './types';
 
 export const HiddenDiv = styled('div')`
+    opacity: 0;
+    z-index: -1;
     position: absolute;
     left: -1000;
     right: -1000;
