@@ -1,0 +1,307 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chip component should render properly when it is disabled 1`] = `
+.c2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c3 .c1 + .c6 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.c4 .c1 + .c6 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.c5 .c1 + .c6 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.c0 {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 1px solid #AAAAAA;
+  background-color: #AAAAAA;
+  color: #ffffff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: default;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c6 * {
+  fill: #ffffff;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .c1 + .c6 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+<div>
+  <button
+    class="c0"
+    disabled=""
+  >
+    <span
+      class="c1 c2"
+    >
+      Solid Chip
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Chip component should render properly with flat variant 1`] = `
+.c2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c0 {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: yellow;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: default;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c3 * {
+  fill: yellow;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .c1 + .c3 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+<div>
+  <button
+    class="c0"
+    color="yellow"
+  >
+    <span
+      class="c1 c2"
+    >
+      Flat Chip
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Chip component should render properly with outlined variant 1`] = `
+.c2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c3 .c1 + .c4 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.c0 {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 1px solid secondary;
+  color: secondary;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: default;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c4 * {
+  fill: secondary;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .c1 + .c4 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+<div>
+  <button
+    class="c0"
+    color="secondary"
+  >
+    <span
+      class="c1 c2"
+    >
+      Outlined Chip
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Chip component should render properly with solid variant 1`] = `
+.c2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c3 .c1 + .c5 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.c4 .c1 + .c5 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.c0 {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: 1px solid #012040;
+  background-color: #012040;
+  color: #ffffff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: default;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c5 * {
+  fill: #ffffff;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .c1 + .c5 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    <span
+      class="c1 c2"
+    >
+      Solid Chip
+    </span>
+  </button>
+</div>
+`;

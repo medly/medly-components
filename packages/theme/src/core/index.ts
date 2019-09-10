@@ -3,6 +3,7 @@ import breadCrumbs from './breadCrumbs';
 import button from './button';
 import card from './card';
 import checkbox from './checkbox';
+import chip from './chip';
 import colors from './colors';
 import font from './font';
 import input from './input';
@@ -22,6 +23,7 @@ export const coreDefaultTheme = {
     breadCrumbs,
     button,
     checkbox,
+    chip,
     label,
     link,
     card,

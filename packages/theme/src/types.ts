@@ -12,6 +12,7 @@ export interface CoreTheme {
     table?: CoreThemes.TableTheme;
     card?: CoreThemes.CardTheme;
     button?: CoreThemes.ButtonTheme;
+    chip?: CoreThemes.ChipTheme;
     colors?: CoreThemes.ColorPallet;
     checkbox?: CoreThemes.CheckboxTheme;
     radio?: CoreThemes.RadioTheme;
