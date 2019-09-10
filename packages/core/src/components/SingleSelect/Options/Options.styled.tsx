@@ -1,5 +1,4 @@
-import { styled } from '@medly-components/utils';
-import { WithThemeProp } from '@medly-components/utils';
+import { styled, WithThemeProp } from '@medly-components/utils';
 
 export const OptionsStyled = styled('ul')<WithThemeProp>`
     list-style: none;

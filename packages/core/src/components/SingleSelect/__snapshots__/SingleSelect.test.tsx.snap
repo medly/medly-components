@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Select component should close options when clicked outside 1`] = `
+exports[`SingleSelect component should close options when clicked outside 1`] = `
 .c13 {
   font-size: 14px;
   font-weight: 400;
@@ -307,7 +307,7 @@ exports[`Select component should close options when clicked outside 1`] = `
 </div>
 `;
 
-exports[`Select component should not render options when clicked outside 1`] = `
+exports[`SingleSelect component should not render options when clicked outside 1`] = `
 .c13 {
   font-size: 14px;
   font-weight: 400;
@@ -615,7 +615,7 @@ exports[`Select component should not render options when clicked outside 1`] = `
 </div>
 `;
 
-exports[`Select component should not render options when clicked outside 2`] = `
+exports[`SingleSelect component should not render options when clicked outside 2`] = `
 <div>
   <div>
     <p>
@@ -705,7 +705,7 @@ exports[`Select component should not render options when clicked outside 2`] = `
 </div>
 `;
 
-exports[`Select component should render all the options when input value is not matched to any option 1`] = `
+exports[`SingleSelect component should render all the options when input value is not matched to any option 1`] = `
 .c13 {
   font-size: 14px;
   font-weight: 400;
@@ -1009,7 +1009,7 @@ exports[`Select component should render all the options when input value is not 
 </div>
 `;
 
-exports[`Select component should render correctly with all the props given 1`] = `
+exports[`SingleSelect component should render correctly with all the props given 1`] = `
 .c3 {
   font-size: 14px;
   font-weight: 400;
@@ -1287,7 +1287,7 @@ exports[`Select component should render correctly with all the props given 1`] =
 </div>
 `;
 
-exports[`Select component should render correctly with default props 1`] = `
+exports[`SingleSelect component should render correctly with default props 1`] = `
 .c13 {
   font-size: 14px;
   font-weight: 400;
@@ -1577,7 +1577,7 @@ exports[`Select component should render correctly with default props 1`] = `
 </div>
 `;
 
-exports[`Select component should render matched options when input values changes 1`] = `
+exports[`SingleSelect component should render matched options when input values changes 1`] = `
 .c13 {
   font-size: 14px;
   font-weight: 400;
@@ -1881,7 +1881,7 @@ exports[`Select component should render matched options when input values change
 </div>
 `;
 
-exports[`Select component should render options correctly 1`] = `
+exports[`SingleSelect component should render options correctly 1`] = `
 .c13 {
   font-size: 14px;
   font-weight: 400;
@@ -2184,7 +2184,7 @@ exports[`Select component should render options correctly 1`] = `
 </div>
 `;
 
-exports[`Select component should render options correctly 2`] = `
+exports[`SingleSelect component should render options correctly 2`] = `
 <div>
   <div
     class="sc-EHOje jMvnyj"

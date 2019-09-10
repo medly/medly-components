@@ -5,7 +5,19 @@ import FieldWithLabel from '../FieldWithLabel';
 import { Props } from './types';
 
 const CheckboxGroup: React.SFC<Props> & WithStyle = React.memo(props => {
-    const { value, onChange, options, size, label, labelPosition, labelSize, labelWeight, labelColor, showSelectAll, disabled } = props;
+    const {
+        value = [],
+        onChange,
+        options,
+        size,
+        label,
+        labelPosition,
+        labelSize,
+        labelWeight,
+        labelColor,
+        showSelectAll,
+        disabled
+    } = props;
 
     const handleOptionClick = (event: React.ChangeEvent<HTMLInputElement>) => {
             const item = event.target.name,
@@ -20,19 +32,21 @@ const CheckboxGroup: React.SFC<Props> & WithStyle = React.memo(props => {
 
     return (
         <FieldWithLabel fullWidth {...{ labelPosition }}>
-            <FieldWithLabel.Label {...{ labelPosition, labelSize, labelWeight, labelColor }}>
-                {showSelectAll ? (
-                    <Checkbox
-                        key="select-all"
-                        {...{ size, disabled, labelSize, labelWeight, labelColor }}
-                        label={label}
-                        checked={options.length === value.length}
-                        onChange={handleSelectAllClick}
-                    />
-                ) : (
-                    `${label}`
-                )}
-            </FieldWithLabel.Label>
+            {label && (
+                <FieldWithLabel.Label {...{ labelPosition, labelSize, labelWeight, labelColor }}>
+                    {showSelectAll ? (
+                        <Checkbox
+                            key="select-all"
+                            {...{ size, disabled, labelSize, labelWeight, labelColor }}
+                            label={label}
+                            checked={options.length === value.length}
+                            onChange={handleSelectAllClick}
+                        />
+                    ) : (
+                        `${label}`
+                    )}
+                </FieldWithLabel.Label>
+            )}
             <FieldWithLabel.Field isIndented={labelPosition === 'top'}>
                 {options.map(option => {
                     return (

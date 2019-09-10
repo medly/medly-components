@@ -8,7 +8,6 @@ describe('CheckboxGroup component', () => {
     it('should render correctly with all the props', () => {
         const { container } = TestUtils.render(
             <CheckboxGroup
-                value={['apple']}
                 onChange={jest.fn()}
                 label="Fruits"
                 options={[{ value: 'apple', label: 'Apple' }, { value: 'orange', label: 'Orange' }]}
@@ -17,7 +16,7 @@ describe('CheckboxGroup component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('should render correctly when one of the option is selected', () => {
+    it('should deselect option when it is already selected', () => {
         const mockOnChange = jest.fn(),
             { getByText } = TestUtils.render(
                 <CheckboxGroup
@@ -29,6 +28,19 @@ describe('CheckboxGroup component', () => {
             );
         TestUtils.fireEvent.click(getByText('Apple'));
         expect(mockOnChange).toHaveBeenCalledWith([]);
+    });
+
+    it('should select option when click on it', () => {
+        const mockOnChange = jest.fn(),
+            { getByText } = TestUtils.render(
+                <CheckboxGroup
+                    onChange={mockOnChange}
+                    label="Fruits"
+                    options={[{ value: 'apple', label: 'Apple' }, { value: 'orange', label: 'Orange' }]}
+                />
+            );
+        TestUtils.fireEvent.click(getByText('Apple'));
+        expect(mockOnChange).toHaveBeenCalledWith(['apple']);
     });
 
     it('should select all when clicked on the select all option', () => {

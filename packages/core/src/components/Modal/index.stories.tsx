@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import React from 'react';
 import Button from '../Button';
 import Input from '../Input';
-import Select from '../Select';
+import SingleSelect from '../SingleSelect';
 import Modal from './Modal';
 
 const options = [{ value: '0', label: 'Admin' }, { value: '1', label: 'Pharmacist' }, { value: '2', label: 'Covered Entity' }];
@@ -15,7 +15,7 @@ storiesOf('Core', module).add(
         <Modal open={boolean('Open', true)} onCloseModal={action('Close Clicked')}>
             <Modal.Header>Add User</Modal.Header>
             <Modal.Content>
-                <Select fullWidth options={options} defaultSelected="0" />
+                <SingleSelect fullWidth options={options} defaultValue="0" />
                 <Input id="name-input" type="text" fullWidth label="Name" placeholder="Enter your Name" />
                 <Input
                     id="email-input"
@@ -51,7 +51,7 @@ storiesOf('Core', module).add(
     ),
     {
         props: {
-            propTablesExclude: [Button, Input, Select, Modal.Header, Modal.Content, Modal.Actions]
+            propTablesExclude: [Button, Input, SingleSelect, Modal.Header, Modal.Content, Modal.Actions]
         }
     }
 );

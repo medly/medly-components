@@ -4,7 +4,7 @@ import { LabelPositions } from '../Label/types';
 
 export interface Props extends WithThemeProp {
     label: string;
-    value: any[];
+    value?: any[];
     options: Array<{ value: any; label: string }>;
     onChange: (value: any[]) => void;
 

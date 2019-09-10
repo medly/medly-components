@@ -15,7 +15,7 @@ export { default as Pagination } from './Pagination';
 export { Popover, PopoverWrapper } from './Popover';
 export { default as Radio } from './Radio';
 export { default as RadioGroup } from './RadioGroup';
-export { default as Select } from './Select';
+export { default as SingleSelect } from './SingleSelect';
 export { default as Stepper } from './Stepper';
 export { default as Table } from './Table';
 export { default as Text } from './Text';

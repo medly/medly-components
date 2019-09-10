@@ -22,7 +22,6 @@ describe('Input component', () => {
     it('should render correctly when fullWidth & required props are falsy', () => {
         const { container } = TestUtils.render(
             <Input
-                id="email-input"
                 type="email"
                 label="Email Address"
                 labelPosition="left"

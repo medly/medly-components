@@ -1,25 +1,25 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import Select from './Select';
+import SingleSelect from './SingleSelect';
 
 const { act, render, fireEvent, cleanup } = TestUtils;
 afterEach(cleanup);
 
-describe('Select component', () => {
+describe('SingleSelect component', () => {
     const options = [{ value: 'all', label: 'All' }, { value: 'Dummy1', label: 'Dummy1' }, { value: 'Dummy2', label: 'Dummy2' }];
 
     it('should render correctly with default props', () => {
-        const { container } = render(<Select options={options} />);
+        const { container } = render(<SingleSelect options={options} />);
         expect(container).toMatchSnapshot();
     });
 
     it('should render correctly with all the props given', () => {
         const mockOnChange = jest.fn();
         const { container } = render(
-            <Select
+            <SingleSelect
                 disabled
                 options={options}
-                defaultSelected="all"
+                defaultValue="all"
                 labelPosition="left"
                 fullWidth
                 required
@@ -33,7 +33,7 @@ describe('Select component', () => {
     });
 
     it('should render options correctly', () => {
-        const { container, getByTestId } = render(<Select options={options} />);
+        const { container, getByTestId } = render(<SingleSelect options={options} />);
         expect(container).toMatchSnapshot();
         const inputEl = getByTestId('select-input');
         act(() => {
@@ -46,7 +46,7 @@ describe('Select component', () => {
         const { container, getByTestId, getByText } = render(
             <div>
                 <p>Outer Element</p>
-                <Select options={options} />
+                <SingleSelect options={options} />
             </div>
         );
         expect(container).toMatchSnapshot();
@@ -62,7 +62,7 @@ describe('Select component', () => {
 
     it('should render correctly when one of the option selected', () => {
         const mockOnChange = jest.fn();
-        const { getByTestId, getByText } = render(<Select options={options} onChange={mockOnChange} />);
+        const { getByTestId, getByText } = render(<SingleSelect options={options} onChange={mockOnChange} />);
         const inputEl = getByTestId('select-input');
         act(() => {
             fireEvent.click(inputEl);
@@ -78,7 +78,7 @@ describe('Select component', () => {
 
     it('should not call onChange if user click on the already selected option', () => {
         const mockOnChange = jest.fn();
-        const { getByTestId, getByText } = render(<Select defaultSelected="Dummy1" options={options} onChange={mockOnChange} />);
+        const { getByTestId, getByText } = render(<SingleSelect defaultValue="Dummy1" options={options} onChange={mockOnChange} />);
         const inputEl = getByTestId('select-input');
         act(() => {
             fireEvent.click(inputEl);
@@ -91,7 +91,7 @@ describe('Select component', () => {
     });
 
     it('should render matched options when input values changes', async () => {
-        const { container, getByTestId } = render(<Select options={options} />);
+        const { container, getByTestId } = render(<SingleSelect options={options} />);
         const inputEl = getByTestId('select-input');
         act(() => {
             fireEvent.click(inputEl);
@@ -101,7 +101,7 @@ describe('Select component', () => {
     });
 
     it('should render all the options when input value is not matched to any option', async () => {
-        const { container, getByTestId } = render(<Select options={options} />);
+        const { container, getByTestId } = render(<SingleSelect options={options} />);
         const inputEl = getByTestId('select-input');
         act(() => {
             fireEvent.click(inputEl);
@@ -114,7 +114,7 @@ describe('Select component', () => {
         const { container, getByTestId, getByText } = render(
             <>
                 <p>Outer</p>
-                <Select options={options} />
+                <SingleSelect options={options} />
             </>
         );
         const inputEl = getByTestId('select-input');

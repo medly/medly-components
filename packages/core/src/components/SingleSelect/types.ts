@@ -21,9 +21,9 @@ export interface SelectWrapperProps extends HTMLProps<HTMLDivElement>, WithTheme
 type InputProps = Omit<HTMLProps<HTMLInputElement>, 'onChange'>;
 
 export interface SelectProps extends InputProps, WithThemeProp {
-    disabled?: boolean;
     options: Array<{ value: any; label: string }>;
-    defaultSelected?: any;
+    defaultValue?: any;
+    disabled?: boolean;
     labelPosition?: LabelPositions;
     fullWidth?: boolean;
     required?: boolean;

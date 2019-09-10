@@ -3,26 +3,26 @@ import React, { useEffect, useState } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import Input from '../Input';
 import { Popover, PopoverWrapper } from '../Popover';
-import { filterOptions, getDefaultSelected, getOptionsWithSelected } from './helpers';
+import { filterOptions, getDefaultSelectedOption, getOptionsWithSelected } from './helpers';
 import Options from './Options';
-import { SelectIconStyled, SelectWrapperStyled } from './Select.styled';
+import { SelectIconStyled, SelectWrapperStyled } from './SingleSelect.styled';
 import { Option, SelectProps } from './types';
 
-const Select: React.SFC<SelectProps> & WithStyle = React.memo(
+const SingleSelect: React.SFC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { id, description, label, placeholder, labelPosition, required, fullWidth, disabled } = props,
-            defaultSelectedOption = getDefaultSelected(props.options, props.defaultSelected);
+            defaultSelectedOption = getDefaultSelectedOption(props.options, props.defaultValue);
 
         const [inputValue, setInputValue] = useState(defaultSelectedOption.label),
             [selectedOption, setSelectedOption] = useState(defaultSelectedOption),
             [options, setOptions] = useState(getOptionsWithSelected(props.options, defaultSelectedOption));
 
         useEffect(() => {
-            const selected = getDefaultSelected(props.options, props.defaultSelected);
+            const selected = getDefaultSelectedOption(props.options, props.defaultValue);
             setInputValue(selected.label);
             setSelectedOption(selected);
             setOptions(getOptionsWithSelected(props.options, selected));
-        }, [props.options, props.defaultSelected]);
+        }, [props.options, props.defaultValue]);
 
         const updateToDefaultOptions = () => setOptions(getOptionsWithSelected(props.options, selectedOption));
 
@@ -79,11 +79,11 @@ const Select: React.SFC<SelectProps> & WithStyle = React.memo(
     })
 );
 
-Select.displayName = 'Select';
-Select.Style = SelectWrapperStyled;
-Select.defaultProps = {
+SingleSelect.displayName = 'SingleSelect';
+SingleSelect.Style = SelectWrapperStyled;
+SingleSelect.defaultProps = {
     labelPosition: 'left',
-    defaultSelected: '',
+    defaultValue: '',
     fullWidth: false,
     required: false,
     label: '',
@@ -91,4 +91,4 @@ Select.defaultProps = {
     placeholder: 'Please Select . . .'
 };
 
-export default Select;
+export default SingleSelect;

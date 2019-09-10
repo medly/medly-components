@@ -91,13 +91,13 @@ exports[`Input component should render correctly when fullWidth & required props
   >
     <label
       class="c1 c2"
-      for="email-input"
+      for="input"
     >
       Email Address
     </label>
     <input
       class="c3"
-      id="email-input"
+      id="input"
       label="Email Address"
       placeholder="Enter Email Address"
       type="email"

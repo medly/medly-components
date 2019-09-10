@@ -26,7 +26,7 @@ describe('FieldWithLabel component', () => {
     it('should render properly when lable is not present', () => {
         const { container } = TestUtils.render(
             <FieldWithLabel>
-                <FieldWithLabel.Field>Dummy Field</FieldWithLabel.Field>
+                <FieldWithLabel.Field isIndented>Dummy Field</FieldWithLabel.Field>
                 <FieldWithLabel.Description>Dummy Description</FieldWithLabel.Description>
             </FieldWithLabel>
         );

@@ -2,7 +2,7 @@ import { boolean, select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { LabelPositions } from '../Label/types';
-import Select from './Select';
+import SingleSelect from './SingleSelect';
 
 const labelPosition: LabelPositions[] = ['top', 'bottom', 'left', 'right'];
 
@@ -16,10 +16,10 @@ const handleOnChange = (value: string) => {
     console.log('value ====>', value);
 };
 
-storiesOf('Core', module).add('Select', () => (
-    <Select
+storiesOf('Core', module).add('SingleSelect', () => (
+    <SingleSelect
         options={options}
-        defaultSelected="medly pharmacy"
+        defaultValue="medly pharmacy"
         onChange={handleOnChange}
         disabled={boolean('Disabled', false)}
         fullWidth={boolean('Full Width', false)}

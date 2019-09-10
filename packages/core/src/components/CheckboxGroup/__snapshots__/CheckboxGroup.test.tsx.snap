@@ -179,7 +179,6 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
           class="c7"
         >
           <input
-            checked=""
             class="c8"
             id="Apple"
             name="apple"
