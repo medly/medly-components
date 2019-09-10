@@ -1,7 +1,7 @@
 import { styled } from '@medly-components/utils';
 import { GridTemplateProps } from '../types';
 
-export const RowStyled = styled('li').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({
+export const Row = styled('li').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({
     style: {
         gridTemplateColumns
     }
@@ -15,7 +15,7 @@ export const RowStyled = styled('li').attrs(({ gridTemplateColumns }: GridTempla
     border-bottom: 1px solid #ededed;
 `;
 
-export const NoResultStyled = styled(RowStyled)`
+export const NoResult = styled(Row)`
     text-align: center;
     line-height: 30px;
 `;

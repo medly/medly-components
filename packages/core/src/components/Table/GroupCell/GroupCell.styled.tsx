@@ -2,7 +2,7 @@ import { styled, WithThemeProp } from '@medly-components/utils';
 import Text from '../../Text';
 import { Props } from './types';
 
-export const GroupCellStyled = styled('div').attrs(({ gridTemplateColumns }: Props) => ({
+export const GroupCell = styled('div').attrs(({ gridTemplateColumns }: Props) => ({
     style: {
         gridTemplateColumns
     }
@@ -13,7 +13,7 @@ export const GroupCellStyled = styled('div').attrs(({ gridTemplateColumns }: Pro
     height: ${({ hide }) => (hide ? '0px' : '100%')};
 `;
 
-export const GroupCellTitleStyled = styled(Text.Style)<WithThemeProp>`
+export const GroupCellTitle = styled(Text.Style)<WithThemeProp>`
     font-size: ${({ theme }) => theme.font.sizes.M3};
     font-weight: ${({ theme }) => theme.font.weights.Strong};
     text-align: center;

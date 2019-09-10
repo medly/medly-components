@@ -11,7 +11,7 @@ const frozen = () => css`
     background-color: inherit;
 `;
 
-export const CellStyled = styled('div')<Props>`
+export const Cell = styled('div')<Props>`
     opacity: ${({ hide }) => (hide ? 0 : 1)};
     padding: ${({ hide }) => (hide ? '0' : '5px 0px 5px 10px')};
     position: relative;

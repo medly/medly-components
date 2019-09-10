@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Row should render NoResult properly 1`] = `
+.c0 {
+  display: grid;
+  position: relative;
+  z-index: 0;
+  grid-template-rows: minmax(30px,auto);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #ededed;
+  text-align: center;
+  line-height: 30px;
+}
+
+<div>
+  <li
+    class="c0"
+  >
+    Dummy
+  </li>
+</div>
+`;
+
+exports[`Row should render row properly 1`] = `
+.c0 {
+  display: grid;
+  position: relative;
+  z-index: 0;
+  grid-template-rows: minmax(30px,auto);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #ededed;
+}
+
+<div>
+  <li
+    class="c0"
+  >
+    Dummy
+  </li>
+</div>
+`;
