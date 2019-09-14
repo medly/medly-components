@@ -10,7 +10,7 @@ exports[`SingleSelect component should close options when clicked outside 1`] = 
 .c1 {
   margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
+  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -317,7 +317,7 @@ exports[`SingleSelect component should not render options when clicked outside 1
 .c1 {
   margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
+  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -622,7 +622,7 @@ exports[`SingleSelect component should not render options when clicked outside 2
       Outer Element
     </p>
     <div
-      class="sc-EHOje jMvnyj"
+      class="sc-EHOje eztYpO"
     >
       
       <div
@@ -715,7 +715,7 @@ exports[`SingleSelect component should render all the options when input value i
 .c1 {
   margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
+  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -1066,7 +1066,7 @@ exports[`SingleSelect component should render correctly with all the props given
 .c1 {
   margin: 8px 0px;
   display: grid;
-  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
+  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
 }
 
@@ -1297,7 +1297,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 .c1 {
   margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
+  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -1587,7 +1587,7 @@ exports[`SingleSelect component should render matched options when input values 
 .c1 {
   margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
+  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -1891,7 +1891,7 @@ exports[`SingleSelect component should render options correctly 1`] = `
 .c1 {
   margin: 8px 8px 8px 0px;
   display: inline-grid;
-  grid-template-columns: minmax(max-content,25%) minmax(max-content,80%);
+  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -2187,7 +2187,7 @@ exports[`SingleSelect component should render options correctly 1`] = `
 exports[`SingleSelect component should render options correctly 2`] = `
 <div>
   <div
-    class="sc-EHOje jMvnyj"
+    class="sc-EHOje eztYpO"
   >
     
     <div

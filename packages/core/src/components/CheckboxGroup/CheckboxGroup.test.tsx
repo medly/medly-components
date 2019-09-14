@@ -20,7 +20,7 @@ describe('CheckboxGroup component', () => {
         const mockOnChange = jest.fn(),
             { getByText } = TestUtils.render(
                 <CheckboxGroup
-                    value={['apple']}
+                    defaultValues={['apple']}
                     onChange={mockOnChange}
                     label="Fruits"
                     options={[{ value: 'apple', label: 'Apple' }, { value: 'orange', label: 'Orange' }]}
@@ -48,7 +48,7 @@ describe('CheckboxGroup component', () => {
             { getByText } = TestUtils.render(
                 <CheckboxGroup
                     showSelectAll
-                    value={['apple']}
+                    defaultValues={['apple']}
                     onChange={mockOnChange}
                     label="Fruits"
                     options={[{ value: 'apple', label: 'Apple' }, { value: 'orange', label: 'Orange' }]}
@@ -63,7 +63,7 @@ describe('CheckboxGroup component', () => {
             { getByText } = TestUtils.render(
                 <CheckboxGroup
                     showSelectAll
-                    value={['apple', 'orange']}
+                    defaultValues={['apple', 'orange']}
                     onChange={mockOnChange}
                     label="Fruits"
                     options={[{ value: 'apple', label: 'Apple' }, { value: 'orange', label: 'Orange' }]}

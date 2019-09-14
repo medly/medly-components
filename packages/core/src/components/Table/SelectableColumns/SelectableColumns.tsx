@@ -58,7 +58,7 @@ const TableSelectableColumns: React.SFC<Props> = ({ columns, fieldToChange, onCh
                     label={config.title}
                     labelPosition="top"
                     labelWeight="Strong"
-                    value={config.children.reduce((acc, curr) => {
+                    defaultValues={config.children.reduce((acc, curr) => {
                         curr.hide && acc.push(`${curr.field}`);
                         return acc;
                     }, [])}

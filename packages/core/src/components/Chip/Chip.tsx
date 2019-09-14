@@ -10,7 +10,7 @@ export const Chip: React.SFC<Props> & WithStyle = React.memo(props => {
 
     const handleDelete = (e: React.MouseEvent<HTMLOrSVGElement>) => {
         e.stopPropagation();
-        onDelete && onDelete();
+        !restProps.disabled && onDelete && onDelete();
     };
 
     return (

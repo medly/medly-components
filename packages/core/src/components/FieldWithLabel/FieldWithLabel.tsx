@@ -7,7 +7,7 @@ const FieldWithLabel: React.SFC<Props> & WithStyle & StaticProps = props => {
     let isLabelPresent = false;
 
     React.Children.forEach(props.children, (child: any) => {
-        if (child.type && child.type.displayName === 'Label') {
+        if (child && child.type && child.type.displayName === 'Label') {
             isLabelPresent = true;
         }
     });

@@ -12,7 +12,7 @@ const DemoComponent = () => {
 
     return (
         <CheckboxGroup
-            value={value}
+            defaultValues={value}
             onChange={setValue}
             options={[{ value: 'apple', label: 'Apple' }, { value: 'orange', label: 'Orange' }, { value: 'grapes', label: 'Grapes' }]}
             disabled={boolean('Disabled', false)}

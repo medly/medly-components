@@ -39,13 +39,11 @@ export const Chip = styled('button')<StyledProps>`
     background-color: transparent;
     border: none;
     border-radius: 20px;
-    padding: 5px 10px;
+    padding: 3px 10px;
+    margin: 2px;
     user-select: none;
     text-decoration: none;
-
-    &:hover {
-        cursor: ${({ onClick }) => (onClick ? 'pointer' : 'default')};
-    }
+    cursor: ${({ onClick, disabled }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'default')};
 
     &:focus {
         outline: none;
@@ -55,12 +53,8 @@ export const Chip = styled('button')<StyledProps>`
     ${props => props.variant === 'outlined' && outlined()};
     ${props => props.variant === 'solid' && solid()};
 
-    &:disabled {
-        cursor: not-allowed;
-    }
-
     ${Text.Style} + ${SvgIcon}{
-        cursor: pointer;
+        cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
         margin-left: 10px;
     }
 

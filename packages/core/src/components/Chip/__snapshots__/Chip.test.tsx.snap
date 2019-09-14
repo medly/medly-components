@@ -26,13 +26,15 @@ exports[`Chip component should render properly when it is disabled 1`] = `
   background-color: transparent;
   border: none;
   border-radius: 20px;
-  padding: 5px 10px;
+  padding: 3px 10px;
+  margin: 2px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
+  cursor: not-allowed;
   border: 1px solid #AAAAAA;
   background-color: #AAAAAA;
   color: #ffffff;
@@ -50,10 +52,6 @@ exports[`Chip component should render properly when it is disabled 1`] = `
   align-items: center;
 }
 
-.c0:hover {
-  cursor: default;
-}
-
 .c0:focus {
   outline: none;
 }
@@ -62,12 +60,8 @@ exports[`Chip component should render properly when it is disabled 1`] = `
   fill: #ffffff;
 }
 
-.c0:disabled {
-  cursor: not-allowed;
-}
-
 .c0 .c1 + .c6 {
-  cursor: pointer;
+  cursor: not-allowed;
   margin-left: 10px;
 }
 
@@ -96,13 +90,15 @@ exports[`Chip component should render properly with flat variant 1`] = `
   background-color: transparent;
   border: none;
   border-radius: 20px;
-  padding: 5px 10px;
+  padding: 3px 10px;
+  margin: 2px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
+  cursor: default;
   color: yellow;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -118,20 +114,12 @@ exports[`Chip component should render properly with flat variant 1`] = `
   align-items: center;
 }
 
-.c0:hover {
-  cursor: default;
-}
-
 .c0:focus {
   outline: none;
 }
 
 .c0 .c3 * {
   fill: yellow;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .c1 + .c3 {
@@ -169,13 +157,15 @@ exports[`Chip component should render properly with outlined variant 1`] = `
   background-color: transparent;
   border: none;
   border-radius: 20px;
-  padding: 5px 10px;
+  padding: 3px 10px;
+  margin: 2px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
+  cursor: default;
   border: 1px solid secondary;
   color: secondary;
   display: -webkit-inline-box;
@@ -192,20 +182,12 @@ exports[`Chip component should render properly with outlined variant 1`] = `
   align-items: center;
 }
 
-.c0:hover {
-  cursor: default;
-}
-
 .c0:focus {
   outline: none;
 }
 
 .c0 .c4 * {
   fill: secondary;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .c1 + .c4 {
@@ -248,13 +230,15 @@ exports[`Chip component should render properly with solid variant 1`] = `
   background-color: transparent;
   border: none;
   border-radius: 20px;
-  padding: 5px 10px;
+  padding: 3px 10px;
+  margin: 2px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
+  cursor: default;
   border: 1px solid #012040;
   background-color: #012040;
   color: #ffffff;
@@ -272,20 +256,12 @@ exports[`Chip component should render properly with solid variant 1`] = `
   align-items: center;
 }
 
-.c0:hover {
-  cursor: default;
-}
-
 .c0:focus {
   outline: none;
 }
 
 .c0 .c5 * {
   fill: #ffffff;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .c1 + .c5 {

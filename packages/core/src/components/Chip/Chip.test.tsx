@@ -3,6 +3,8 @@ import React from 'react';
 import Chip from './Chip';
 
 describe('Chip component', () => {
+    afterEach(TestUtils.cleanup);
+
     it('should render properly with flat variant', () => {
         const { container } = TestUtils.render(<Chip variant="flat" color="yellow" label="Flat Chip" />);
         expect(container).toMatchSnapshot();
@@ -23,23 +25,25 @@ describe('Chip component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('should call onClick when click on it', () => {
+    test.each([true, false])('should handle on click when chip is disabled: %p', (disabled: boolean) => {
         const mockOnClick = jest.fn();
 
-        const { getByText } = TestUtils.render(<Chip variant="flat" color="yellow" onClick={mockOnClick} label="Flat Chip" />);
+        const { getByText } = TestUtils.render(
+            <Chip disabled={disabled} variant="flat" color="yellow" onClick={mockOnClick} label="Flat Chip" />
+        );
         TestUtils.fireEvent.click(getByText('Flat Chip'));
-        expect(mockOnClick).not.toBeCalled();
+        expect(mockOnClick).toHaveBeenCalledTimes(disabled ? 0 : 1);
     });
 
-    it('should call onDelete when click on clear icon', () => {
+    test.each([true, false])('should handle on delete when chip is disabled: %p', (disabled: boolean) => {
         const mockOnClick = jest.fn(),
             mockOnDelete = jest.fn();
 
         const { container } = TestUtils.render(
-            <Chip variant="flat" onClick={mockOnClick} onDelete={mockOnDelete} color="yellow" label="Flat Chip" />
+            <Chip disabled={disabled} variant="flat" onClick={mockOnClick} onDelete={mockOnDelete} color="yellow" label="Flat Chip" />
         );
         TestUtils.fireEvent.click(container.querySelector('svg'));
-        expect(mockOnDelete).toBeCalled();
+        expect(mockOnDelete).toHaveBeenCalledTimes(disabled ? 0 : 1);
         expect(mockOnClick).not.toBeCalled();
     });
 });
