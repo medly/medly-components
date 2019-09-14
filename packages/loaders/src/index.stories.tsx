@@ -7,7 +7,7 @@ import ConcentricCircleLoader from './loaders/ConcentricCircleLoader';
 import DotsBouncingLoader from './loaders/DotsBouncingLoader';
 import DotsLoader from './loaders/DotsLoader';
 
-const size: LoaderSizes[] = ['XS', 'S', 'M', 'L', 'XL'];
+const size: LoaderSizes[] = ['XXS', 'XS', 'S', 'M', 'L', 'XL'];
 const defaultColor = defaultTheme.loader.defaultColor;
 
 storiesOf('Loaders', module)

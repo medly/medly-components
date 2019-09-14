@@ -3,6 +3,7 @@ import { LoaderTheme } from './types';
 
 const loader: LoaderTheme = {
     sizes: {
+        XXS: '32px',
         XS: '48px',
         S: '60px',
         M: '72px',
