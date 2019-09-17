@@ -8,4 +8,4 @@ import BurgerIcon from './BurgerIcon';
 const size: IconSizes[] = ['XS', 'S', 'M', 'L', 'XL'];
 const defaultColor = defaultTheme.icon.defaultColor;
 
-storiesOf('Icons', module).add('BurgerIcon', () => <BurgerIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />);
+storiesOf('Icons', module).add('Burger', () => <BurgerIcon size={select('Size', size, 'S')} color={color('Color', defaultColor)} />);
