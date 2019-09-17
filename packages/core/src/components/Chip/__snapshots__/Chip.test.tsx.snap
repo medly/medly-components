@@ -239,8 +239,8 @@ exports[`Chip component should render properly with solid variant 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: default;
-  border: 1px solid #012040;
-  background-color: #012040;
+  border: 1px solid #FE8D6B;
+  background-color: #FE8D6B;
   color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

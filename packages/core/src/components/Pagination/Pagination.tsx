@@ -26,7 +26,7 @@ const Pagination: React.SFC<PaginationProps> & WithStyle = React.memo(props => {
         links.unshift(
             <Button
                 key="prev"
-                disabled={pagesConfig.currentPage === 1}
+                disabled={pagesConfig.currentPage < 2}
                 onClick={onClickHandler(pagesConfig.currentPage - 1)}
                 variant="outlined"
             >
@@ -47,7 +47,7 @@ const Pagination: React.SFC<PaginationProps> & WithStyle = React.memo(props => {
 
     if (!hideFirstLastLinks) {
         links.unshift(
-            <Button key="first" disabled={pagesConfig.currentPage === 1} onClick={onClickHandler(1)} variant="outlined">
+            <Button key="first" disabled={pagesConfig.currentPage < 2} onClick={onClickHandler(1)} variant="outlined">
                 First
             </Button>
         );
