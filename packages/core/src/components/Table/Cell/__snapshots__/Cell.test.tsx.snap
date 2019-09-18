@@ -68,6 +68,7 @@ exports[`Cell should not render text if hide property is given 1`] = `
 exports[`Cell should render checkbox properly 1`] = `
 .c10 {
   font-size: 16px;
+  cursor: inherit;
 }
 
 .c10 * {

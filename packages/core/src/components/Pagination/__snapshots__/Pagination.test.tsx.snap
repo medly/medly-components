@@ -42,6 +42,10 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   outline: none;
 }
 
+.c1 .c6 * {
+  fill: #AAAAAA;
+}
+
 .c1:disabled {
   cursor: not-allowed;
 }
@@ -197,6 +201,10 @@ exports[`Pagination component should render correctly with all the default props
   outline: none;
 }
 
+.c1 .c6 * {
+  fill: #AAAAAA;
+}
+
 .c1:disabled {
   cursor: not-allowed;
 }
@@ -245,6 +253,10 @@ exports[`Pagination component should render correctly with all the default props
   outline: none;
 }
 
+.c4 .c6 * {
+  fill: #ffffff;
+}
+
 .c4:disabled {
   cursor: not-allowed;
 }
@@ -290,6 +302,10 @@ exports[`Pagination component should render correctly with all the default props
 
 .c5:focus {
   outline: none;
+}
+
+.c5 .c6 * {
+  fill: #012040;
 }
 
 .c5:disabled {
@@ -498,6 +514,10 @@ exports[`Pagination component should render correctly with all the props given 1
   outline: none;
 }
 
+.c1 .c6 * {
+  fill: #ffffff;
+}
+
 .c1:disabled {
   cursor: not-allowed;
 }
@@ -543,6 +563,10 @@ exports[`Pagination component should render correctly with all the props given 1
 
 .c4:focus {
   outline: none;
+}
+
+.c4 .c6 * {
+  fill: #012040;
 }
 
 .c4:disabled {

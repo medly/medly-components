@@ -3,6 +3,7 @@
 exports[`CheckboxGroup component should render correctly with all the props 1`] = `
 .c12 {
   font-size: 16px;
+  cursor: inherit;
 }
 
 .c12 * {

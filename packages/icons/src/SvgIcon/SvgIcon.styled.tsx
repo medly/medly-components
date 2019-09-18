@@ -5,7 +5,7 @@ import { Props } from './types';
 export const SvgIconStyled = styled(InjectClassName)<Props>`
     font-size: ${({ theme, size }) => theme.icon.sizes[size]};
     margin: ${({ margin }) => margin};
-
+    cursor: ${({ onClick }) => (onClick ? 'pointer' : 'inherit')};
     * {
         fill: ${({ theme, color }) => color || theme.icon.defaultColor};
     }

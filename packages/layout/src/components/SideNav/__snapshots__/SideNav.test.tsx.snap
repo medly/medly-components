@@ -3,6 +3,7 @@
 exports[`SideNav should change width after clicking on burger icon 1`] = `
 .c11 {
   font-size: 16px;
+  cursor: inherit;
 }
 
 .c11 * {
@@ -348,6 +349,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 exports[`SideNav should change width when clicked on item with sidenavOpenCloseOnClick prop given 1`] = `
 .c11 {
   font-size: 16px;
+  cursor: inherit;
 }
 
 .c11 * {
@@ -756,6 +758,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 exports[`SideNav should close sidenav if we click outside 1`] = `
 .c11 {
   font-size: 16px;
+  cursor: inherit;
 }
 
 .c11 * {
@@ -1060,6 +1063,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 exports[`SideNav should render properly 1`] = `
 .c9 {
   font-size: 16px;
+  cursor: inherit;
 }
 
 .c9 * {

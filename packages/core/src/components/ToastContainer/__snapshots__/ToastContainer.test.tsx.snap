@@ -1,0 +1,1241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToastContainer should render properly with position bottom 1`] = `
+.c3 {
+  font-size: 16px;
+  cursor: inherit;
+}
+
+.c3 * {
+  fill: #555;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 50px;
+  max-height: 50px;
+  min-width: 250px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-color: #008000;
+}
+
+.c1 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c1 .c2 * {
+  fill: #ffffff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 512 512"
+        width="1em"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        class="c4 c5"
+      >
+        Hello
+      </span>
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 352 512"
+        width="1em"
+      >
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToastContainer should render properly with position bottom-end 1`] = `
+.c3 {
+  font-size: 16px;
+  cursor: inherit;
+}
+
+.c3 * {
+  fill: #555;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 50px;
+  max-height: 50px;
+  min-width: 250px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-color: #008000;
+}
+
+.c1 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c1 .c2 * {
+  fill: #ffffff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 512 512"
+        width="1em"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        class="c4 c5"
+      >
+        Hello
+      </span>
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 352 512"
+        width="1em"
+      >
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToastContainer should render properly with position bottom-start 1`] = `
+.c3 {
+  font-size: 16px;
+  cursor: inherit;
+}
+
+.c3 * {
+  fill: #555;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 50px;
+  max-height: 50px;
+  min-width: 250px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-color: #008000;
+}
+
+.c1 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c1 .c2 * {
+  fill: #ffffff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 512 512"
+        width="1em"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        class="c4 c5"
+      >
+        Hello
+      </span>
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 352 512"
+        width="1em"
+      >
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToastContainer should render properly with position left 1`] = `
+.c3 {
+  font-size: 16px;
+  cursor: inherit;
+}
+
+.c3 * {
+  fill: #555;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 50px;
+  max-height: 50px;
+  min-width: 250px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-color: #008000;
+}
+
+.c1 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c1 .c2 * {
+  fill: #ffffff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 512 512"
+        width="1em"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        class="c4 c5"
+      >
+        Hello
+      </span>
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 352 512"
+        width="1em"
+      >
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToastContainer should render properly with position left-end 1`] = `
+.c3 {
+  font-size: 16px;
+  cursor: inherit;
+}
+
+.c3 * {
+  fill: #555;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 50px;
+  max-height: 50px;
+  min-width: 250px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-color: #008000;
+}
+
+.c1 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c1 .c2 * {
+  fill: #ffffff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 512 512"
+        width="1em"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        class="c4 c5"
+      >
+        Hello
+      </span>
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 352 512"
+        width="1em"
+      >
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToastContainer should render properly with position left-start 1`] = `
+.c3 {
+  font-size: 16px;
+  cursor: inherit;
+}
+
+.c3 * {
+  fill: #555;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 50px;
+  max-height: 50px;
+  min-width: 250px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-color: #008000;
+}
+
+.c1 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c1 .c2 * {
+  fill: #ffffff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 512 512"
+        width="1em"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        class="c4 c5"
+      >
+        Hello
+      </span>
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 352 512"
+        width="1em"
+      >
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToastContainer should render properly with position right 1`] = `
+.c3 {
+  font-size: 16px;
+  cursor: inherit;
+}
+
+.c3 * {
+  fill: #555;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 50px;
+  max-height: 50px;
+  min-width: 250px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-color: #008000;
+}
+
+.c1 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c1 .c2 * {
+  fill: #ffffff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 512 512"
+        width="1em"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        class="c4 c5"
+      >
+        Hello
+      </span>
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 352 512"
+        width="1em"
+      >
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToastContainer should render properly with position right-end 1`] = `
+.c3 {
+  font-size: 16px;
+  cursor: inherit;
+}
+
+.c3 * {
+  fill: #555;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 50px;
+  max-height: 50px;
+  min-width: 250px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-color: #008000;
+}
+
+.c1 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c1 .c2 * {
+  fill: #ffffff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 512 512"
+        width="1em"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        class="c4 c5"
+      >
+        Hello
+      </span>
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 352 512"
+        width="1em"
+      >
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToastContainer should render properly with position right-start 1`] = `
+.c3 {
+  font-size: 16px;
+  cursor: inherit;
+}
+
+.c3 * {
+  fill: #555;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 50px;
+  max-height: 50px;
+  min-width: 250px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-color: #008000;
+}
+
+.c1 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c1 .c2 * {
+  fill: #ffffff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 512 512"
+        width="1em"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        class="c4 c5"
+      >
+        Hello
+      </span>
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 352 512"
+        width="1em"
+      >
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToastContainer should render properly with position top 1`] = `
+.c3 {
+  font-size: 16px;
+  cursor: inherit;
+}
+
+.c3 * {
+  fill: #555;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 50px;
+  max-height: 50px;
+  min-width: 250px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-color: #008000;
+}
+
+.c1 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c1 .c2 * {
+  fill: #ffffff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 512 512"
+        width="1em"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        class="c4 c5"
+      >
+        Hello
+      </span>
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 352 512"
+        width="1em"
+      >
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToastContainer should render properly with position top-end 1`] = `
+.c3 {
+  font-size: 16px;
+  cursor: inherit;
+}
+
+.c3 * {
+  fill: #555;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 50px;
+  max-height: 50px;
+  min-width: 250px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-color: #008000;
+}
+
+.c1 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c1 .c2 * {
+  fill: #ffffff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 512 512"
+        width="1em"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        class="c4 c5"
+      >
+        Hello
+      </span>
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 352 512"
+        width="1em"
+      >
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToastContainer should render properly with position top-start 1`] = `
+.c3 {
+  font-size: 16px;
+  cursor: inherit;
+}
+
+.c3 * {
+  fill: #555;
+}
+
+.c5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 50px;
+  max-height: 50px;
+  min-width: 250px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-color: #008000;
+}
+
+.c1 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c1 .c2 * {
+  fill: #ffffff;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 512 512"
+        width="1em"
+      >
+        <path
+          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
+          fill="currentColor"
+        />
+      </svg>
+      <span
+        class="c4 c5"
+      >
+        Hello
+      </span>
+      <svg
+        class="c2 c3"
+        height="1em"
+        viewBox="0 0 352 512"
+        width="1em"
+      >
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;

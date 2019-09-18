@@ -22,6 +22,7 @@ export interface CoreTheme {
     stepper?: CoreThemes.StepperTheme;
     spacing?: CoreThemes.SpacingTheme;
     text?: CoreThemes.TextTheme;
+    toast?: CoreThemes.ToastTheme;
 }
 
 export interface LayoutTheme {

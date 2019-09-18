@@ -148,6 +148,7 @@ exports[`SingleSelect component should close options when clicked outside 1`] = 
 
 .c8 {
   font-size: 16px;
+  cursor: inherit;
 }
 
 .c8 * {
@@ -455,6 +456,7 @@ exports[`SingleSelect component should not render options when clicked outside 1
 
 .c8 {
   font-size: 16px;
+  cursor: inherit;
 }
 
 .c8 * {
@@ -648,7 +650,7 @@ exports[`SingleSelect component should not render options when clicked outside 2
             
           </div>
           <svg
-            class="sc-fjdhpX iEtKxJ sc-gZMcBi iMheib"
+            class="sc-fjdhpX iEtKxJ sc-gZMcBi kLaBzw"
             height="1em"
             theme="[object Object]"
             viewBox="0 0 12 8"
@@ -853,6 +855,7 @@ exports[`SingleSelect component should render all the options when input value i
 
 .c8 {
   font-size: 16px;
+  cursor: inherit;
 }
 
 .c8 * {
@@ -1151,6 +1154,7 @@ exports[`SingleSelect component should render correctly with all the props given
 
 .c10 {
   font-size: 16px;
+  cursor: inherit;
 }
 
 .c10 * {
@@ -1435,6 +1439,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 
 .c8 {
   font-size: 16px;
+  cursor: inherit;
 }
 
 .c8 * {
@@ -1725,6 +1730,7 @@ exports[`SingleSelect component should render matched options when input values 
 
 .c8 {
   font-size: 16px;
+  cursor: inherit;
 }
 
 .c8 * {
@@ -2029,6 +2035,7 @@ exports[`SingleSelect component should render options correctly 1`] = `
 
 .c8 {
   font-size: 16px;
+  cursor: inherit;
 }
 
 .c8 * {
@@ -2213,7 +2220,7 @@ exports[`SingleSelect component should render options correctly 2`] = `
           
         </div>
         <svg
-          class="sc-fjdhpX iEtKxJ sc-gZMcBi iMheib"
+          class="sc-fjdhpX iEtKxJ sc-gZMcBi kLaBzw"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"

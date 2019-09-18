@@ -1,3 +1,3 @@
-const red = '#FA6F80';
+const red = 'red';
 
 export default red;

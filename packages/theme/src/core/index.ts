@@ -17,6 +17,7 @@ import spacing from './spacing';
 import stepper from './stepper';
 import table from './table';
 import text from './text';
+import toast from './toast';
 
 export const coreDefaultTheme = {
     avatar,
@@ -36,6 +37,7 @@ export const coreDefaultTheme = {
     stepper,
     spacing,
     text,
+    toast,
     table,
     reactDatepicker
 };

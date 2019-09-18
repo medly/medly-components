@@ -9,16 +9,31 @@ const getColor = ({ theme, color, disabled }: Props) => (disabled ? theme.button
 const outlined = () => css`
     border: 1px solid ${getColor};
     color: ${getColor};
+    ${SvgIcon} {
+        * {
+            fill: ${getColor};
+        }
+    }
 `;
 
 const solid = () => css`
     border: 1px solid ${getColor};
     background-color: ${getColor};
     color: ${({ theme }) => theme.colors.white};
+    ${SvgIcon} {
+        * {
+            fill: ${({ theme }) => theme.colors.white};
+        }
+    }
 `;
 
 const flat = () => css`
     color: ${getColor};
+    ${SvgIcon} {
+        * {
+            fill: ${getColor};
+        }
+    }
 `;
 
 export const ButtonStyled = styled('button')<Props>`

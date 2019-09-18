@@ -20,3 +20,5 @@ export { default as SingleSelect } from './SingleSelect';
 export { default as Stepper } from './Stepper';
 export { default as Table } from './Table';
 export { default as Text } from './Text';
+export { default as Toast } from './Toast';
+export { default as ToastContainer } from './ToastContainer';

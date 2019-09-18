@@ -3,6 +3,7 @@ export { default as AddIcon } from './icons/AddIcon';
 export { default as BugIcon } from './icons/BugIcon';
 export { default as BurgerIcon } from './icons/BurgerIcon';
 export { default as CheckIcon } from './icons/CheckIcon';
+export { default as CheckCircleIcon } from './icons/CheckCircleIcon';
 export { default as ClipboardIcon } from './icons/ClipboardIcon';
 export { default as ClearIcon } from './icons/ClearIcon';
 export { default as DeleteIcon } from './icons/DeleteIcon';

@@ -67,6 +67,10 @@ exports[`Button component should render properly when it is disabled 1`] = `
   outline: none;
 }
 
+.c0 .c6 * {
+  fill: #ffffff;
+}
+
 .c0:disabled {
   cursor: not-allowed;
 }
@@ -97,6 +101,7 @@ exports[`Button component should render properly when it is disabled 1`] = `
 exports[`Button component should render properly with any icon at the beginning of the text 1`] = `
 .c2 {
   font-size: 16px;
+  cursor: inherit;
 }
 
 .c2 * {
@@ -109,12 +114,20 @@ exports[`Button component should render properly with any icon at the beginning 
   color: inherit;
 }
 
+.c5 .c1 * {
+  fill: #012040;
+}
+
 .c5 .c1 + .c3 {
   margin-left: 5px;
 }
 
 .c5 .c3 + .c1 {
   margin-left: 5px;
+}
+
+.c6 .c1 * {
+  fill: #FA6F80;
 }
 
 .c6 .c1 + .c3 {
@@ -159,6 +172,10 @@ exports[`Button component should render properly with any icon at the beginning 
 
 .c0:focus {
   outline: none;
+}
+
+.c0 .c1 * {
+  fill: #ffffff;
 }
 
 .c0:disabled {
@@ -202,6 +219,7 @@ exports[`Button component should render properly with any icon at the beginning 
 exports[`Button component should render properly with any icon at the end of the text 1`] = `
 .c2 {
   font-size: 16px;
+  cursor: inherit;
 }
 
 .c2 * {
@@ -214,12 +232,20 @@ exports[`Button component should render properly with any icon at the end of the
   color: inherit;
 }
 
+.c5 .c1 * {
+  fill: #012040;
+}
+
 .c5 .c1 + .c3 {
   margin-left: 5px;
 }
 
 .c5 .c3 + .c1 {
   margin-left: 5px;
+}
+
+.c6 .c1 * {
+  fill: #FA6F80;
 }
 
 .c6 .c1 + .c3 {
@@ -264,6 +290,10 @@ exports[`Button component should render properly with any icon at the end of the
 
 .c0:focus {
   outline: none;
+}
+
+.c0 .c1 * {
+  fill: #ffffff;
 }
 
 .c0:disabled {
@@ -345,6 +375,10 @@ exports[`Button component should render properly with flat variant and primary c
   outline: none;
 }
 
+.c0 .c3 * {
+  fill: #012040;
+}
+
 .c0:disabled {
   cursor: not-allowed;
 }
@@ -419,6 +453,10 @@ exports[`Button component should render properly with outlined variant and secon
 
 .c0:focus {
   outline: none;
+}
+
+.c0 .c4 * {
+  fill: #FA6F80;
 }
 
 .c0:disabled {
@@ -506,6 +544,10 @@ exports[`Button component should render properly with solid variant 1`] = `
   outline: none;
 }
 
+.c0 .c5 * {
+  fill: #ffffff;
+}
+
 .c0:disabled {
   cursor: not-allowed;
 }
@@ -589,6 +631,10 @@ exports[`Button component should wrap children into Text component when renderin
 
 .c0:focus {
   outline: none;
+}
+
+.c0 .c6 * {
+  fill: #ffffff;
 }
 
 .c0:disabled {
