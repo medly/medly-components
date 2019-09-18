@@ -16,6 +16,15 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
   color: inherit;
 }
 
+.c6 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c6 .c2 * {
+  fill: #ffffff;
+}
+
 .c1 {
   border-radius: 5px;
   display: -webkit-box;
@@ -35,7 +44,7 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #008000;
@@ -60,6 +69,7 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
   flex-direction: column;
   padding: 20px;
   position: fixed;
+  z-index: 1000;
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -122,6 +132,15 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
   color: inherit;
 }
 
+.c6 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c6 .c2 * {
+  fill: #ffffff;
+}
+
 .c1 {
   border-radius: 5px;
   display: -webkit-box;
@@ -141,7 +160,7 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #008000;
@@ -166,6 +185,7 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
   flex-direction: column;
   padding: 20px;
   position: fixed;
+  z-index: 1000;
   bottom: 0;
   right: 0;
 }
@@ -225,6 +245,15 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
   color: inherit;
 }
 
+.c6 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c6 .c2 * {
+  fill: #ffffff;
+}
+
 .c1 {
   border-radius: 5px;
   display: -webkit-box;
@@ -244,7 +273,7 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #008000;
@@ -269,6 +298,7 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
   flex-direction: column;
   padding: 20px;
   position: fixed;
+  z-index: 1000;
   bottom: 0;
   left: 0;
 }
@@ -328,6 +358,15 @@ exports[`ToastContainer should render properly with position left 1`] = `
   color: inherit;
 }
 
+.c6 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c6 .c2 * {
+  fill: #ffffff;
+}
+
 .c1 {
   border-radius: 5px;
   display: -webkit-box;
@@ -347,7 +386,7 @@ exports[`ToastContainer should render properly with position left 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #008000;
@@ -372,6 +411,7 @@ exports[`ToastContainer should render properly with position left 1`] = `
   flex-direction: column;
   padding: 20px;
   position: fixed;
+  z-index: 1000;
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -434,6 +474,15 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
   color: inherit;
 }
 
+.c6 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c6 .c2 * {
+  fill: #ffffff;
+}
+
 .c1 {
   border-radius: 5px;
   display: -webkit-box;
@@ -453,7 +502,7 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #008000;
@@ -478,6 +527,7 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
   flex-direction: column;
   padding: 20px;
   position: fixed;
+  z-index: 1000;
 }
 
 <div>
@@ -535,6 +585,15 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
   color: inherit;
 }
 
+.c6 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c6 .c2 * {
+  fill: #ffffff;
+}
+
 .c1 {
   border-radius: 5px;
   display: -webkit-box;
@@ -554,7 +613,7 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #008000;
@@ -579,6 +638,7 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
   flex-direction: column;
   padding: 20px;
   position: fixed;
+  z-index: 1000;
 }
 
 <div>
@@ -636,6 +696,15 @@ exports[`ToastContainer should render properly with position right 1`] = `
   color: inherit;
 }
 
+.c6 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c6 .c2 * {
+  fill: #ffffff;
+}
+
 .c1 {
   border-radius: 5px;
   display: -webkit-box;
@@ -655,7 +724,7 @@ exports[`ToastContainer should render properly with position right 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #008000;
@@ -680,6 +749,7 @@ exports[`ToastContainer should render properly with position right 1`] = `
   flex-direction: column;
   padding: 20px;
   position: fixed;
+  z-index: 1000;
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -742,6 +812,15 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
   color: inherit;
 }
 
+.c6 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c6 .c2 * {
+  fill: #ffffff;
+}
+
 .c1 {
   border-radius: 5px;
   display: -webkit-box;
@@ -761,7 +840,7 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #008000;
@@ -786,6 +865,7 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
   flex-direction: column;
   padding: 20px;
   position: fixed;
+  z-index: 1000;
 }
 
 <div>
@@ -843,6 +923,15 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
   color: inherit;
 }
 
+.c6 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c6 .c2 * {
+  fill: #ffffff;
+}
+
 .c1 {
   border-radius: 5px;
   display: -webkit-box;
@@ -862,7 +951,7 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #008000;
@@ -887,6 +976,7 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
   flex-direction: column;
   padding: 20px;
   position: fixed;
+  z-index: 1000;
 }
 
 <div>
@@ -944,6 +1034,15 @@ exports[`ToastContainer should render properly with position top 1`] = `
   color: inherit;
 }
 
+.c6 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c6 .c2 * {
+  fill: #ffffff;
+}
+
 .c1 {
   border-radius: 5px;
   display: -webkit-box;
@@ -963,7 +1062,7 @@ exports[`ToastContainer should render properly with position top 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #008000;
@@ -988,6 +1087,7 @@ exports[`ToastContainer should render properly with position top 1`] = `
   flex-direction: column;
   padding: 20px;
   position: fixed;
+  z-index: 1000;
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1050,6 +1150,15 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
   color: inherit;
 }
 
+.c6 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c6 .c2 * {
+  fill: #ffffff;
+}
+
 .c1 {
   border-radius: 5px;
   display: -webkit-box;
@@ -1069,7 +1178,7 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #008000;
@@ -1094,6 +1203,7 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
   flex-direction: column;
   padding: 20px;
   position: fixed;
+  z-index: 1000;
   top: 0;
   right: 0;
 }
@@ -1153,6 +1263,15 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
   color: inherit;
 }
 
+.c6 .c4 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c6 .c2 * {
+  fill: #ffffff;
+}
+
 .c1 {
   border-radius: 5px;
   display: -webkit-box;
@@ -1172,7 +1291,7 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #008000;
@@ -1197,6 +1316,7 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
   flex-direction: column;
   padding: 20px;
   position: fixed;
+  z-index: 1000;
   top: 0;
   left: 0;
 }

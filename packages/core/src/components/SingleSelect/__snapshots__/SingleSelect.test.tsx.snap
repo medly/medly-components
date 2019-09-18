@@ -268,7 +268,7 @@ exports[`SingleSelect component should close options when clicked outside 1`] = 
       </div>
       <div
         class="c9 c10"
-        style="display: block;"
+        style="display: none;"
       >
         <ul
           class="c11"
@@ -951,7 +951,7 @@ exports[`SingleSelect component should render all the options when input value i
             label=""
             placeholder="Please Select . . ."
             type="text"
-            value=""
+            value="Hello"
           />
           
         </div>
@@ -1826,7 +1826,7 @@ exports[`SingleSelect component should render matched options when input values 
             label=""
             placeholder="Please Select . . ."
             type="text"
-            value=""
+            value="Dummy"
           />
           
         </div>
@@ -1852,15 +1852,6 @@ exports[`SingleSelect component should render matched options when input values 
         <ul
           class="c11"
         >
-          <li
-            class="c12"
-          >
-            <span
-              class="c13"
-            >
-              All
-            </span>
-          </li>
           <li
             class="c12"
           >

@@ -1,6 +1,6 @@
 import { defaultTheme } from '@medly-components/theme';
+import { render, RenderResult } from '@testing-library/react';
 import React from 'react';
-import { render, RenderResult } from 'react-testing-library';
 import { ThemeProvider } from './styled';
 
 const AllTheProviders: React.FunctionComponent = props => (
@@ -12,7 +12,7 @@ const AllTheProviders: React.FunctionComponent = props => (
 const customRender = (ui: React.ReactElement<any>, options?: object): RenderResult => render(ui, { wrapper: AllTheProviders, ...options });
 
 // re-export everything
-export * from 'react-testing-library';
+export * from '@testing-library/react';
 
 // override render method
 export { customRender as render };

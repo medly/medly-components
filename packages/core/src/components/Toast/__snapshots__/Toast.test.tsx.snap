@@ -18,6 +18,18 @@ exports[`Toast should render properly if child jsx 1`] = `
   fill: #ffffff;
 }
 
+.c5 .c1 * {
+  fill: #ffffff;
+}
+
+.c6 .c1 * {
+  fill: #ffffff;
+}
+
+.c7 .c1 * {
+  fill: #ffffff;
+}
+
 .c0 {
   border-radius: 5px;
   display: -webkit-box;
@@ -37,13 +49,13 @@ exports[`Toast should render properly if child jsx 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #008000;
 }
 
-.c0 .c6 {
+.c0 .c10 {
   color: #ffffff;
   margin: 0px 10px;
 }
@@ -52,7 +64,11 @@ exports[`Toast should render properly if child jsx 1`] = `
   fill: #ffffff;
 }
 
-.c5 .c1 * {
+.c8 .c1 * {
+  fill: #ffffff;
+}
+
+.c9 .c1 * {
   fill: #ffffff;
 }
 
@@ -105,6 +121,15 @@ exports[`Toast should render properly with error variant 1`] = `
   color: inherit;
 }
 
+.c5 .c3 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c5 .c1 * {
+  fill: #ffffff;
+}
+
 .c0 {
   border-radius: 5px;
   display: -webkit-box;
@@ -124,10 +149,10 @@ exports[`Toast should render properly with error variant 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #FA6F80;
+  background-color: red;
 }
 
 .c0 .c3 {
@@ -217,6 +242,42 @@ exports[`Toast should render properly with info variant 1`] = `
   fill: #ffffff;
 }
 
+.c8 .c3 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c8 .c1 * {
+  fill: #ffffff;
+}
+
+.c9 .c3 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c9 .c1 * {
+  fill: #ffffff;
+}
+
+.c10 .c3 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c10 .c1 * {
+  fill: #ffffff;
+}
+
+.c11 .c3 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c11 .c1 * {
+  fill: #ffffff;
+}
+
 .c0 {
   border-radius: 5px;
   display: -webkit-box;
@@ -236,7 +297,7 @@ exports[`Toast should render properly with info variant 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #6BA3E5;
@@ -320,6 +381,33 @@ exports[`Toast should render properly with success variant 1`] = `
   fill: #ffffff;
 }
 
+.c7 .c3 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c7 .c1 * {
+  fill: #ffffff;
+}
+
+.c8 .c3 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c8 .c1 * {
+  fill: #ffffff;
+}
+
+.c9 .c3 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c9 .c1 * {
+  fill: #ffffff;
+}
+
 .c0 {
   border-radius: 5px;
   display: -webkit-box;
@@ -339,7 +427,7 @@ exports[`Toast should render properly with success variant 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #008000;
@@ -414,6 +502,24 @@ exports[`Toast should render properly with warning variant 1`] = `
   fill: #ffffff;
 }
 
+.c6 .c3 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c6 .c1 * {
+  fill: #ffffff;
+}
+
+.c7 .c3 {
+  color: #ffffff;
+  margin: 0px 10px;
+}
+
+.c7 .c1 * {
+  fill: #ffffff;
+}
+
 .c0 {
   border-radius: 5px;
   display: -webkit-box;
@@ -433,7 +539,7 @@ exports[`Toast should render properly with warning variant 1`] = `
   justify-content: space-between;
   padding: 0 20px;
   margin: 5px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
   background-color: #FBD94F;

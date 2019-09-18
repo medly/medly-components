@@ -19,13 +19,13 @@ describe('Radio Group', () => {
     it('should call onChange prop with selected option', () => {
         const mockOnChange = jest.fn();
 
-        const { container, getByValue } = TestUtils.render(
+        const { container, getByText } = TestUtils.render(
             <RadioGroup label="Gender" name="gender" onChange={mockOnChange} defaultChecked="female" required size="M" labelPosition="top">
                 <Radio value="female" label="Female" />
                 <Radio value="male" label="Male" />
             </RadioGroup>
         );
-        TestUtils.fireEvent.click(getByValue('male'));
+        TestUtils.fireEvent.click(getByText('Male'));
         expect(mockOnChange).toBeCalledWith('male');
         expect(container).toMatchSnapshot();
     });

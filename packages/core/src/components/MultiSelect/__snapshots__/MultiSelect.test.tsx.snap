@@ -4301,7 +4301,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
               data-testid="select-input"
               id="select-input"
               label=""
-              placeholder="2 options selected"
+              placeholder="3 options selected"
               type="text"
               value=""
             />
@@ -4564,7 +4564,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
               data-testid="select-input"
               id="select-input"
               label=""
-              placeholder="3 options selected"
+              placeholder="1 options selected"
               type="text"
               value=""
             />

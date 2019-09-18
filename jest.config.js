@@ -20,17 +20,17 @@ module.exports = {
     projects: [
         {
             displayName: 'core',
-            setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect', 'jest-styled-components'],
+            setupFilesAfterEnv: ['<rootDir>/jest.setupAfterEnv.js'],
             testMatch: ['<rootDir>/packages/core/src/**/*.(spec|test).(ts|tsx)']
         },
         {
             displayName: 'layout',
-            setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect', 'jest-styled-components'],
+            setupFilesAfterEnv: ['<rootDir>/jest.setupAfterEnv.js'],
             testMatch: ['<rootDir>/packages/layout/src/**/*.(spec|test).(ts|tsx)']
         },
         {
             displayName: 'icons',
-            setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect', 'jest-styled-components'],
+            setupFilesAfterEnv: ['<rootDir>/jest.setupAfterEnv.js'],
             testMatch: ['<rootDir>/packages/icons/src/icons/**/*.(spec|test).(ts|tsx)']
         }
     ]

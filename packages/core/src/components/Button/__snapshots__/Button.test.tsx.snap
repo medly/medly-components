@@ -127,7 +127,7 @@ exports[`Button component should render properly with any icon at the beginning 
 }
 
 .c6 .c1 * {
-  fill: #FA6F80;
+  fill: red;
 }
 
 .c6 .c1 + .c3 {
@@ -245,7 +245,7 @@ exports[`Button component should render properly with any icon at the end of the
 }
 
 .c6 .c1 * {
-  fill: #FA6F80;
+  fill: red;
 }
 
 .c6 .c1 + .c3 {
@@ -431,8 +431,8 @@ exports[`Button component should render properly with outlined variant and secon
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border: 1px solid #FA6F80;
-  color: #FA6F80;
+  border: 1px solid red;
+  color: red;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -456,7 +456,7 @@ exports[`Button component should render properly with outlined variant and secon
 }
 
 .c0 .c4 * {
-  fill: #FA6F80;
+  fill: red;
 }
 
 .c0:disabled {
