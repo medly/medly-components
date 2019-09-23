@@ -34,6 +34,9 @@ exports[`Chip component should render properly when it is disabled 1`] = `
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   cursor: not-allowed;
   border: 1px solid #AAAAAA;
   background-color: #AAAAAA;
@@ -98,6 +101,9 @@ exports[`Chip component should render properly with flat variant 1`] = `
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   cursor: default;
   color: yellow;
   display: -webkit-inline-box;
@@ -165,6 +171,9 @@ exports[`Chip component should render properly with outlined variant 1`] = `
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   cursor: default;
   border: 1px solid secondary;
   color: secondary;
@@ -238,6 +247,9 @@ exports[`Chip component should render properly with solid variant 1`] = `
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   cursor: default;
   border: 1px solid #FE8D6B;
   background-color: #FE8D6B;

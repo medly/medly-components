@@ -41,31 +41,3 @@ export const changeSize = (width: number, dottedField: string, columnConfigs: Co
 
     return newColumnConfigs;
 };
-
-export const getMaxColumnSizes = (data: object[], columns: ColumnConfig[], hiddenDivRef: React.MutableRefObject<any>) => {
-    const maxSizeObj = {};
-
-    const rows = (rowData: any, configs: ColumnConfig[], field = '') => {
-        configs.forEach(config => {
-            const fieldName = `${field && `${field}.`}${config.field}`;
-
-            if (hiddenDivRef.current) {
-                if (!config.children && hiddenDivRef.current) {
-                    if (rowData[config.field]) {
-                        hiddenDivRef.current.innerHTML = rowData[config.field];
-                        const currentSize = hiddenDivRef.current.clientWidth;
-                        // @ts-ignore
-                        const maxSize = maxSizeObj[fieldName] || 0;
-                        // @ts-ignore
-                        if (currentSize > maxSize) maxSizeObj[fieldName] = currentSize;
-                        // @ts-ignore
-                    } else maxSizeObj[fieldName] = 0;
-                } else rows(rowData[config.field], config.children, config.field);
-            }
-        });
-    };
-
-    data.forEach(rowData => rows(rowData, columns));
-
-    return maxSizeObj;
-};

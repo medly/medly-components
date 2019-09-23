@@ -43,6 +43,7 @@ export const Chip = styled('button')<StyledProps>`
     margin: 2px;
     user-select: none;
     text-decoration: none;
+    max-width: max-content;
     cursor: ${({ onClick, disabled }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'default')};
 
     &:focus {

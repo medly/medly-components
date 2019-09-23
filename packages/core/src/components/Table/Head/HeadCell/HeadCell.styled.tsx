@@ -15,7 +15,7 @@ export const ResizeHandlerStyled = styled('span')`
     cursor: ew-resize;
 `;
 
-export const HeadCellStyled = styled(Cell)`
+export const HeadCellStyled = styled(Cell.Style)`
     text-overflow: initial;
     white-space: normal;
     border-right: 1px solid ${({ theme }) => theme.table.borderColor};

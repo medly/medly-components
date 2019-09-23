@@ -6,8 +6,10 @@ export interface ColumnsWidth {
     numeric: string;
     group: string;
     checkbox: string;
+    boolean: string;
     'text-short': string;
     'text-long': string;
+    'react-component': string;
 }
 
 export interface Data {
@@ -24,6 +26,7 @@ export interface ColumnConfig {
     field: string;
     children?: ColumnConfig[];
     formatter: keyof ColumnsWidth;
+    component?: React.SFC<{ data: any; rowId: any }>;
 }
 
 export interface GridTemplateProps {

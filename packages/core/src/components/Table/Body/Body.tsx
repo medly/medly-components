@@ -1,5 +1,4 @@
 import React from 'react';
-import Checkbox from '../../Checkbox';
 import Text from '../../Text';
 import Cell from '../Cell';
 import { GroupCell } from '../GroupCell';
@@ -9,11 +8,9 @@ import { ColumnConfig } from '../types';
 import { Props } from './types';
 
 const Body: React.SFC<Props> = React.memo(props => {
-    const { data, columns, onRowClick, selectedRows, onRowSelection } = props;
+    const { data, columns, onRowClick, selectedRows, onRowSelection, addColumnMaxSize } = props;
 
-    const handleRowClick = (rowData: object) => () => onRowClick && onRowClick(rowData),
-        stopPropogation = (e: React.MouseEvent) => e.stopPropagation(),
-        handleRowSelection = (id: number) => (e: React.FormEvent<HTMLInputElement>) => onRowSelection(id);
+    const handleRowClick = (rowData: object) => () => onRowClick && onRowClick(rowData);
 
     const getRow = (rowData: any, configs: ColumnConfig[] = columns, field = '') => {
         const cells: React.ReactElement[] = [];
@@ -28,18 +25,13 @@ const Body: React.SFC<Props> = React.memo(props => {
                       </GroupCell>
                   )
                 : cells.push(
-                      <Cell key={fieldName} hide={config.hide} frozen={config.frozen}>
-                          {config.field === 'medly-table-checkbox' ? (
-                              <Checkbox
-                                  checked={selectedRows.includes(rowData.id)}
-                                  onChange={handleRowSelection(rowData.id)}
-                                  onClick={stopPropogation}
-                                  name="active"
-                              />
-                          ) : (
-                              <Text textSize="M3">{rowData[config.field]}</Text>
-                          )}
-                      </Cell>
+                      <Cell
+                          key={fieldName}
+                          data={rowData[config.field]}
+                          rowId={rowData.id}
+                          dottedFieldName={fieldName}
+                          {...{ config, selectedRows, onRowClick, onRowSelection, addColumnMaxSize }}
+                      />
                   );
         });
 

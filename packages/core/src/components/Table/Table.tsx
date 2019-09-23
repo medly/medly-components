@@ -1,10 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useReducer, useState } from 'react';
 import Body from './Body';
 import Head from './Head';
-import { addSizeToColumnConfig, getMaxColumnSizes } from './helpers';
+import { addSizeToColumnConfig } from './helpers';
+import { maxColumnSizeReducer } from './maxColumnSizeReducer';
 import SelectableColumns from './SelectableColumns';
-import { HiddenDiv, TableStyled } from './Table.styled';
+import { TableStyled } from './Table.styled';
 import { ColumnConfig, Props, StaticProps } from './types';
 import useRowSelector from './useRowSelector';
 
@@ -12,10 +13,11 @@ const Table: React.SFC<Props> & WithStyle & StaticProps = props => {
     const { data, onRowClick, onSort, isSelectable, selectedRows, onRowSelection } = props,
         checkboxColumnConfig: ColumnConfig = { title: 'ch', field: 'medly-table-checkbox', formatter: 'checkbox', hide: !isSelectable };
 
-    const hiddenDivRef = useRef(null),
-        [ids, selectedIds, toggleId] = useRowSelector(data.map(({ id }) => id), selectedRows),
-        [maxColumnSizes, setMaxColumnSizes] = useState({}),
+    const [ids, selectedIds, toggleId] = useRowSelector(data.map(({ id }) => id), selectedRows),
+        [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
         [columns, setColumns] = useState(addSizeToColumnConfig([checkboxColumnConfig, ...props.columns]));
+
+    const addColumnMaxSize = (field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' });
 
     useEffect(() => {
         setColumns(addSizeToColumnConfig([checkboxColumnConfig, ...props.columns]));
@@ -24,10 +26,6 @@ const Table: React.SFC<Props> & WithStyle & StaticProps = props => {
     useEffect(() => {
         ids.setValue(data.map(({ id }) => id));
     }, [data]);
-
-    useEffect(() => {
-        setMaxColumnSizes(getMaxColumnSizes(data, columns, hiddenDivRef));
-    }, [data, hiddenDivRef]);
 
     useEffect(() => {
         selectedIds.setValue(selectedRows);
@@ -50,7 +48,7 @@ const Table: React.SFC<Props> & WithStyle & StaticProps = props => {
                     }}
                 />
             ),
-            [maxColumnSizes, columns, ids]
+            [columns, ids]
         ),
         body = useMemo(
             () => (
@@ -59,17 +57,17 @@ const Table: React.SFC<Props> & WithStyle & StaticProps = props => {
                         columns,
                         data,
                         onRowClick,
+                        addColumnMaxSize,
                         selectedRows: selectedIds.value,
                         onRowSelection: toggleId
                     }}
                 />
             ),
-            [columns, data]
+            [columns, data, selectedIds]
         );
 
     return (
         <TableStyled isRowClickable={onRowClick ? true : false}>
-            <HiddenDiv ref={hiddenDivRef} />
             {head}
             {body}
         </TableStyled>

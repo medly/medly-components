@@ -1786,6 +1786,9 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   cursor: not-allowed;
   border: 1px solid #AAAAAA;
   background-color: #AAAAAA;
@@ -6126,6 +6129,9 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   cursor: not-allowed;
   border: 1px solid #AAAAAA;
   background-color: #AAAAAA;

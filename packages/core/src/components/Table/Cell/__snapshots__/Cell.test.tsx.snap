@@ -8,15 +8,11 @@ exports[`Cell should not render text if hide property is given 1`] = `
 }
 
 .c3 .c1 {
-  overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .c4 .c1 {
-  overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .c0 {
@@ -31,6 +27,7 @@ exports[`Cell should not render text if hide property is given 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow: hidden;
   border-right: 1px solid #CCCCCC;
 }
 
@@ -47,9 +44,7 @@ exports[`Cell should not render text if hide property is given 1`] = `
 }
 
 .c0 .c1 {
-  overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 <div>
@@ -220,6 +215,7 @@ exports[`Cell should render checkbox properly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow: hidden;
   border-right: 1px solid #CCCCCC;
 }
 
@@ -236,9 +232,7 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c0 .c13 {
-  overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 <div>
@@ -293,9 +287,7 @@ exports[`Cell should render frozen text properly 1`] = `
 }
 
 .c3 .c1 {
-  overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 .c0 {
@@ -310,6 +302,7 @@ exports[`Cell should render frozen text properly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow: hidden;
   border-right: 1px solid #CCCCCC;
   position: -webkit-sticky;
   position: sticky;
@@ -331,9 +324,11 @@ exports[`Cell should render frozen text properly 1`] = `
 }
 
 .c0 .c1 {
-  overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
+}
+
+.c0 * {
+  z-index: 2;
 }
 
 <div>
@@ -368,6 +363,7 @@ exports[`Cell should render text properly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  overflow: hidden;
   border-right: 1px solid #CCCCCC;
 }
 
@@ -384,9 +380,7 @@ exports[`Cell should render text properly 1`] = `
 }
 
 .c0 .c1 {
-  overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 <div>
