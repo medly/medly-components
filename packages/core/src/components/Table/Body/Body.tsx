@@ -16,6 +16,8 @@ const Body: React.SFC<Props> = React.memo(props => {
         const cells: React.ReactElement[] = [];
 
         configs.forEach(config => {
+            if (!config) return null;
+
             const fieldName = `${field && `${field}.`}${config.field}`;
 
             return config.children

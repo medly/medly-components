@@ -23,6 +23,7 @@ const Cell: React.SFC<Props> & WithStyle = props => {
         <Styled.Cell hide={config.hide} frozen={config.frozen}>
             {config.field === 'medly-table-checkbox' ? (
                 <Checkbox
+                    ref={childRef}
                     checked={selectedRows.includes(rowId)}
                     onChange={handleRowSelection(rowId)}
                     onClick={stopPropogation}
