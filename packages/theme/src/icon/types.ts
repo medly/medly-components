@@ -1,4 +1,4 @@
-export type IconSizes = 'XS' | 'S' | 'M' | 'L' | 'XL';
+export type IconSizes = 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL' | 'XXXL';
 
 export interface IconTheme {
     sizes: { [k in IconSizes]: string };

@@ -7,7 +7,9 @@ const icon: IconTheme = {
         S: '16px',
         M: '24px',
         L: '36px',
-        XL: '48px'
+        XL: '52px',
+        XXL: '72px',
+        XXXL: '66px'
     },
     defaultColor: colors.grey[700]
 };
