@@ -32,7 +32,7 @@ const Body: React.SFC<Props> = React.memo(props => {
                           data={rowData[config.field]}
                           rowId={rowData.id}
                           dottedFieldName={fieldName}
-                          {...{ config, selectedRows, onRowClick, onRowSelection, addColumnMaxSize }}
+                          {...{ config, selectedRows, onRowSelection, addColumnMaxSize }}
                       />
                   );
         });

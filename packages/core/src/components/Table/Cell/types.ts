@@ -12,6 +12,5 @@ export interface Props extends StyledProps {
     dottedFieldName: string;
     selectedRows?: number[];
     onRowSelection?: (id: number) => void;
-    onRowClick?: (rowData: object) => void;
     addColumnMaxSize: (field: string, value: number) => void;
 }
