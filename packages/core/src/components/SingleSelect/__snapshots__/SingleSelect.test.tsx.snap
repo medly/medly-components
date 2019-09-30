@@ -1069,7 +1069,7 @@ exports[`SingleSelect component should render correctly with all the props given
 .c1 {
   margin: 8px 0px;
   display: grid;
-  min-width: 300;
+  min-width: 300px;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
 }

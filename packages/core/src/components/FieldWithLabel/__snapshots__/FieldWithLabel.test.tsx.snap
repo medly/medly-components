@@ -198,7 +198,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c0 {
   margin: 8px 8px 8px 0px;
   display: inline-grid;
-  min-width: 300;
+  min-width: 300px;
   grid-template-areas: 'field' 'description' 'label';
 }
 
@@ -277,7 +277,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c0 {
   margin: 8px 0px;
   display: grid;
-  min-width: 300;
+  min-width: 300px;
   grid-template-columns: minmax(max-content,25%) max-content;
   grid-template-areas: 'label field' 'random description';
 }
@@ -371,7 +371,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c0 {
   margin: 8px 0px;
   display: grid;
-  min-width: 300;
+  min-width: 300px;
   grid-template-columns: minmax(max-content,80%) minmax(max-content,25%);
   grid-template-areas: 'field label' 'description random';
 }
@@ -479,7 +479,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c0 {
   margin: 8px 8px 8px 0px;
   display: inline-grid;
-  min-width: 300;
+  min-width: 300px;
   grid-template-areas: 'label' 'field' 'description';
 }
 

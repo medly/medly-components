@@ -31,7 +31,7 @@ export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('di
     ${({ minWidth }) =>
         minWidth &&
         css`
-            min-width: ${minWidth};
+            min-width: ${minWidth}px;
         `}
 
     ${FieldStyled} {
