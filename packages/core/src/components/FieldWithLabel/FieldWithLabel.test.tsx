@@ -13,7 +13,7 @@ describe('FieldWithLabel component', () => {
         'should render properly with props labelPosition: $labelPosition, fullWidth: $fullWidth, fieldWithMaxContent: $fieldWithMaxContent',
         props => {
             const { container } = TestUtils.render(
-                <FieldWithLabel {...props}>
+                <FieldWithLabel {...props} minWidth={300}>
                     <FieldWithLabel.Label>Dummy Label</FieldWithLabel.Label>
                     <FieldWithLabel.Field>Dummy Field</FieldWithLabel.Field>
                     <FieldWithLabel.Description>Dummy Description</FieldWithLabel.Description>

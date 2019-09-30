@@ -1,9 +1,6 @@
-import { defaultTheme } from '@medly-components/theme';
-import { WithStyle, withTheme } from '@medly-components/utils';
+import { WithStyle } from '@medly-components/utils';
 import React from 'react';
 import FieldWithLabel from '../FieldWithLabel';
-import Label from '../Label';
-import Text from '../Text';
 import { InputStyled } from './Input.styled';
 import { Props } from './types';
 

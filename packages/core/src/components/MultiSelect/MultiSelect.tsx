@@ -11,7 +11,7 @@ import { SelectProps } from './types';
 
 const MultiSelect: React.SFC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { id, description, label, labelPosition, required, fullWidth, disabled } = props;
+        const { id, description, label, labelPosition, required, fullWidth, disabled, minWidth } = props;
 
         const [inputValue, setInputValue] = useState(''),
             [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(props.options, props.defaultValues)),
@@ -62,7 +62,7 @@ const MultiSelect: React.SFC<SelectProps> & WithStyle = React.memo(
             };
 
         return (
-            <FieldWithLabel {...{ fullWidth, labelPosition }}>
+            <FieldWithLabel {...{ fullWidth, labelPosition, minWidth }}>
                 {label && <FieldWithLabel.Label {...{ required, labelPosition }}>{label}</FieldWithLabel.Label>}
                 <PopoverWrapper interactionType="click" onOuterClick={handleOuterClick}>
                     <SelectWrapperStyled {...{ description, fullWidth, labelPosition, disabled }} onClick={handleWrapperClick}>

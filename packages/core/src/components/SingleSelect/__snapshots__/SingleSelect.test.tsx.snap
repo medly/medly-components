@@ -624,7 +624,7 @@ exports[`SingleSelect component should not render options when clicked outside 2
       Outer Element
     </p>
     <div
-      class="sc-EHOje eztYpO"
+      class="sc-EHOje fJgYca"
     >
       
       <div
@@ -635,7 +635,7 @@ exports[`SingleSelect component should not render options when clicked outside 2
           class="sc-jTzLTM cEibhI"
         >
           <div
-            class="sc-EHOje gNvYMz"
+            class="sc-EHOje ezXioy"
           >
             
             <input
@@ -1069,6 +1069,7 @@ exports[`SingleSelect component should render correctly with all the props given
 .c1 {
   margin: 8px 0px;
   display: grid;
+  min-width: 300;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
 }
@@ -2185,7 +2186,7 @@ exports[`SingleSelect component should render options correctly 1`] = `
 exports[`SingleSelect component should render options correctly 2`] = `
 <div>
   <div
-    class="sc-EHOje eztYpO"
+    class="sc-EHOje fJgYca"
   >
     
     <div
@@ -2196,7 +2197,7 @@ exports[`SingleSelect component should render options correctly 2`] = `
         class="sc-jTzLTM cEibhI"
       >
         <div
-          class="sc-EHOje gNvYMz"
+          class="sc-EHOje ezXioy"
         >
           
           <input

@@ -841,7 +841,7 @@ exports[`MultiSelect component with checkbox false should handle group name clic
       Outer Element
     </p>
     <div
-      class="sc-dnqmqq efoLQg"
+      class="sc-dnqmqq vpdkx"
     >
       
       <div
@@ -852,7 +852,7 @@ exports[`MultiSelect component with checkbox false should handle group name clic
           class="sc-VigVT bsJUXs"
         >
           <div
-            class="sc-dnqmqq fHOnbG"
+            class="sc-dnqmqq dISZFt"
           >
             
             <input
@@ -1874,6 +1874,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 .c1 {
   margin: 8px 0px;
   display: grid;
+  min-width: 300;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
 }
@@ -4548,7 +4549,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
       Outer Element
     </p>
     <div
-      class="sc-dnqmqq efoLQg"
+      class="sc-dnqmqq vpdkx"
     >
       
       <div
@@ -4559,7 +4560,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
           class="sc-VigVT bsJUXs"
         >
           <div
-            class="sc-dnqmqq fHOnbG"
+            class="sc-dnqmqq dISZFt"
           >
             
             <input
@@ -4596,7 +4597,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
             class="sc-kAzzGY ktCjQf"
           >
             <div
-              class="sc-dnqmqq kzDGbg"
+              class="sc-dnqmqq fugAlG"
             >
               <label
                 class="sc-gzVnrw eujXuS sc-EHOje ednWaQ"
@@ -4634,7 +4635,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
               </div>
             </div>
             <div
-              class="sc-dnqmqq kzDGbg"
+              class="sc-dnqmqq fugAlG"
             >
               <label
                 class="sc-gzVnrw eujXuS sc-EHOje ednWaQ"
@@ -4673,13 +4674,13 @@ exports[`MultiSelect component with checkbox true should handle group name click
               </div>
             </div>
             <div
-              class="sc-dnqmqq kjyhvO"
+              class="sc-dnqmqq iCWiMV"
             >
               <label
                 class="sc-gzVnrw eujXuS sc-EHOje egTui"
               >
                 <div
-                  class="sc-dnqmqq kzDGbg"
+                  class="sc-dnqmqq fugAlG"
                 >
                   <label
                     class="sc-gzVnrw eujXuS sc-EHOje ednWaQ"
@@ -4719,7 +4720,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
                 class="sc-bZQynM eCjLjC"
               >
                 <div
-                  class="sc-dnqmqq kzDGbg"
+                  class="sc-dnqmqq fugAlG"
                 >
                   <label
                     class="sc-gzVnrw eujXuS sc-EHOje ednWaQ"
@@ -4757,7 +4758,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
                   </div>
                 </div>
                 <div
-                  class="sc-dnqmqq kzDGbg"
+                  class="sc-dnqmqq fugAlG"
                 >
                   <label
                     class="sc-gzVnrw eujXuS sc-EHOje ednWaQ"
@@ -6208,6 +6209,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 .c1 {
   margin: 8px 0px;
   display: grid;
+  min-width: 300;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
 }

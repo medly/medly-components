@@ -18,6 +18,7 @@ describe('SingleSelect component', () => {
         const { container } = render(
             <SingleSelect
                 disabled
+                minWidth={300}
                 options={options}
                 defaultValue="all"
                 labelPosition="left"

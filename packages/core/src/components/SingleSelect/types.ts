@@ -23,6 +23,7 @@ type InputProps = Omit<HTMLProps<HTMLInputElement>, 'onChange'>;
 export interface SelectProps extends InputProps, WithThemeProp {
     options: Array<{ value: any; label: string }>;
     defaultValue?: any;
+    minWidth?: number;
     disabled?: boolean;
     labelPosition?: LabelPositions;
     fullWidth?: boolean;

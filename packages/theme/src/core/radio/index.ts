@@ -10,11 +10,10 @@ const radio: RadioTheme = {
         XL: '48px'
     },
     defaultSize: '16px',
-    fillColor: colors.violet[500],
     bgColor: colors.white,
-    disabledBgcolor: colors.grey[600],
+    fillColor: colors.violet[500],
     borderColor: colors.grey[200],
-    outlineColor: colors.violet[500]
+    disabledBgcolor: colors.grey[600]
 };
 
 export default radio;

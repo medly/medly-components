@@ -7,5 +7,4 @@ export interface RadioTheme {
     bgColor: string;
     disabledBgcolor: string;
     borderColor: string;
-    outlineColor: string;
 }

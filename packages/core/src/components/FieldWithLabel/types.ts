@@ -9,6 +9,7 @@ export interface Props extends WithThemeProp {
     labelPosition?: LabelPositions;
     fullWidth?: boolean;
     fieldWithMaxContent?: boolean;
+    minWidth?: number;
 }
 
 export interface FieldWithLabelStyledProps extends Props {

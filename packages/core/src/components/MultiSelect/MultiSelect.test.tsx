@@ -24,6 +24,7 @@ describe('MultiSelect component', () => {
                 { container } = render(
                     <MultiSelect
                         disabled
+                        minWidth={300}
                         options={options}
                         onChange={mockOnChange}
                         showChips

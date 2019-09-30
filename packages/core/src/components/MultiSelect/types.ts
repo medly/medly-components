@@ -30,6 +30,7 @@ export interface SelectProps extends InputProps, WithThemeProp {
     defaultValues?: any[];
 
     labelPosition?: LabelPositions;
+    minWidth?: number;
     fullWidth?: boolean;
     label?: string;
     description?: string;

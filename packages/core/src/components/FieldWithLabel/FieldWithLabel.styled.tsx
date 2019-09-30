@@ -28,6 +28,11 @@ export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('di
     margin: ${({ theme, fullWidth }) =>
         fullWidth ? `${theme.spacing.S} 0px` : `${theme.spacing.S} ${theme.spacing.S} ${theme.spacing.S} 0px`};
     display: ${({ fullWidth }) => (fullWidth ? 'grid' : 'inline-grid')};
+    ${({ minWidth }) =>
+        minWidth &&
+        css`
+            min-width: ${minWidth};
+        `}
 
     ${FieldStyled} {
         display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
