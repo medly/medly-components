@@ -115,7 +115,6 @@ exports[`Radio component should render correctly with all the props given 1`] = 
   font-weight: 400;
   color: #555;
   margin: 0px 0px 0px 8px;
-  cursor: pointer;
 }
 
 .c1 {

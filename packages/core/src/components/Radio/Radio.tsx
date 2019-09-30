@@ -11,7 +11,11 @@ const Radio: React.SFC<Props> & WithStyle = React.memo(
         return (
             <FieldWithLabel fieldWithMaxContent {...{ labelPosition }}>
                 {label && (
-                    <FieldWithLabel.Label showPointer {...{ labelPosition, labelSize, labelWeight, labelColor }} htmlFor={label}>
+                    <FieldWithLabel.Label
+                        showPointer={!restProps.disabled}
+                        {...{ labelPosition, labelSize, labelWeight, labelColor }}
+                        htmlFor={label}
+                    >
                         {label}
                     </FieldWithLabel.Label>
                 )}

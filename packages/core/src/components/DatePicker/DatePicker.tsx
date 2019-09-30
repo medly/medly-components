@@ -22,7 +22,7 @@ const DatePicker: React.SFC<Props> = React.memo(props => {
     return (
         <FieldWithLabel {...{ fullWidth, labelPosition }}>
             {label && (
-                <FieldWithLabel.Label showPointer {...{ required, labelPosition }} htmlFor={label}>
+                <FieldWithLabel.Label {...{ required, labelPosition }} htmlFor={label}>
                     {label}
                 </FieldWithLabel.Label>
             )}
