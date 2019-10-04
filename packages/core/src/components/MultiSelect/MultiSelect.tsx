@@ -71,6 +71,7 @@ const MultiSelect: React.SFC<SelectProps> & WithStyle = React.memo(
                                 <Chip key={op.value} disabled={disabled} label={op.label} onDelete={handleChipDelete(op.value)} />
                             ))}
                         <Input
+                            autoComplete="off"
                             id={id || 'select-input'}
                             type="text"
                             disabled={disabled}

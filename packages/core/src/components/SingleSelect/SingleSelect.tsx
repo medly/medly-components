@@ -58,6 +58,7 @@ const SingleSelect: React.SFC<SelectProps> & WithStyle = React.memo(
                 <PopoverWrapper interactionType="click" onOuterClick={handleOuterClick}>
                     <SelectWrapperStyled {...{ description, fullWidth, labelPosition, disabled }} onClick={handleWrapperClick}>
                         <Input
+                            autoComplete="off"
                             id={id || 'select-input'}
                             type="text"
                             disabled={disabled}

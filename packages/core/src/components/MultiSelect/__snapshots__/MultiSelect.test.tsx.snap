@@ -304,6 +304,7 @@ exports[`MultiSelect component with checkbox false should close options when cli
         >
           
           <input
+            autocomplete="off"
             class="c5 c6"
             data-testid="select-input"
             id="select-input"
@@ -738,6 +739,7 @@ exports[`MultiSelect component with checkbox false should handle group name clic
           >
             
             <input
+              autocomplete="off"
               class="c5 c6"
               data-testid="select-input"
               id="select-input"
@@ -856,6 +858,7 @@ exports[`MultiSelect component with checkbox false should handle group name clic
           >
             
             <input
+              autocomplete="off"
               class="sc-iwsKbI jCnZfx"
               data-testid="select-input"
               id="select-input"
@@ -1257,6 +1260,7 @@ exports[`MultiSelect component with checkbox false should not render options whe
           >
             
             <input
+              autocomplete="off"
               class="c5 c6"
               data-testid="select-input"
               id="select-input"
@@ -1654,6 +1658,7 @@ exports[`MultiSelect component with checkbox false should render all the options
         >
           
           <input
+            autocomplete="off"
             class="c5 c6"
             data-testid="select-input"
             id="select-input"
@@ -2090,6 +2095,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
         >
           
           <input
+            autocomplete="off"
             class="c13 c14"
             data-testid="select-input"
             disabled=""
@@ -2430,6 +2436,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
         >
           
           <input
+            autocomplete="off"
             class="c5 c6"
             data-testid="select-input"
             id="select-input"
@@ -2802,6 +2809,7 @@ exports[`MultiSelect component with checkbox false should render only matched op
         >
           
           <input
+            autocomplete="off"
             class="c5 c6"
             data-testid="select-input"
             id="select-input"
@@ -3154,6 +3162,7 @@ exports[`MultiSelect component with checkbox false should render options correct
         >
           
           <input
+            autocomplete="off"
             class="c5 c6"
             data-testid="select-input"
             id="select-input"
@@ -3660,6 +3669,7 @@ exports[`MultiSelect component with checkbox true should close options when clic
         >
           
           <input
+            autocomplete="off"
             class="c5 c6"
             data-testid="select-input"
             id="select-input"
@@ -4301,6 +4311,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
           >
             
             <input
+              autocomplete="off"
               class="c5 c6"
               data-testid="select-input"
               id="select-input"
@@ -4564,6 +4575,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
           >
             
             <input
+              autocomplete="off"
               class="sc-iwsKbI jCnZfx"
               data-testid="select-input"
               id="select-input"
@@ -5208,6 +5220,7 @@ exports[`MultiSelect component with checkbox true should not render options when
           >
             
             <input
+              autocomplete="off"
               class="c5 c6"
               data-testid="select-input"
               id="select-input"
@@ -5855,6 +5868,7 @@ exports[`MultiSelect component with checkbox true should render all the options 
         >
           
           <input
+            autocomplete="off"
             class="c5 c6"
             data-testid="select-input"
             id="select-input"
@@ -6425,6 +6439,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
         >
           
           <input
+            autocomplete="off"
             class="c13 c14"
             data-testid="select-input"
             disabled=""
@@ -6827,6 +6842,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
         >
           
           <input
+            autocomplete="off"
             class="c5 c6"
             data-testid="select-input"
             id="select-input"
@@ -7423,6 +7439,7 @@ exports[`MultiSelect component with checkbox true should render only matched opt
         >
           
           <input
+            autocomplete="off"
             class="c5 c6"
             data-testid="select-input"
             id="select-input"
@@ -7900,6 +7917,7 @@ exports[`MultiSelect component with checkbox true should render options correctl
         >
           
           <input
+            autocomplete="off"
             class="c5 c6"
             data-testid="select-input"
             id="select-input"
