@@ -5,7 +5,7 @@ import { DateRangePickerStyled } from './DateRangePicker.styled';
 import { Props } from './types';
 
 const DateRangePicker: React.SFC<Props> = React.memo(props => {
-    const { label, labelPosition, fullWidth, value, onChange, required, disabled, ...restProps } = props;
+    const { label, labelPosition, fullWidth, value, onChange, required, disabled, minWidth, placement, ...restProps } = props;
     const [date, setDate] = useState(value || { startDate: null, endDate: null });
     const [showDatepicker, setShowDatepicker] = useState(null);
 
@@ -20,13 +20,13 @@ const DateRangePicker: React.SFC<Props> = React.memo(props => {
         };
 
     return (
-        <FieldWithLabel {...{ labelPosition, fullWidth }}>
+        <FieldWithLabel {...{ labelPosition, fullWidth, minWidth }}>
             {label && (
                 <FieldWithLabel.Label {...{ required, labelPosition }} htmlFor={label}>
                     {label}
                 </FieldWithLabel.Label>
             )}
-            <DateRangePickerStyled data-testid="react-datepicker" disabled={disabled} onClick={handleClick}>
+            <DateRangePickerStyled placement={placement} data-testid="react-datepicker" disabled={disabled} onClick={handleClick}>
                 <DateRangeInput
                     {...restProps}
                     onDatesChange={handleDateChange}
@@ -46,6 +46,7 @@ const DateRangePicker: React.SFC<Props> = React.memo(props => {
 
 DateRangePicker.displayName = 'DateRangePicker';
 DateRangePicker.defaultProps = {
+    placement: 'left-start',
     labelPosition: 'left',
     fullWidth: false,
     required: false,

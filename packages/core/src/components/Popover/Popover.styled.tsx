@@ -1,7 +1,7 @@
 import { css, fullHeight, fullWidth, styled } from '@medly-components/utils';
 import { Placement, PopoverProps, PopoverWrapperProps } from './types';
 
-const getPosition = (position: Placement) => {
+export const getPosition = (position: Placement) => {
     switch (position) {
         case 'top-start':
             return css`
