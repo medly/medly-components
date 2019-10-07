@@ -7,7 +7,7 @@ export interface StepperTheme {
         [k in StepperSizes]: {
             counterSize: string;
             fontSize: FontSizes;
-        }
+        };
     };
     defaultSize: StepperSizes;
     counterColor: string;

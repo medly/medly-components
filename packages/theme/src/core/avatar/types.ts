@@ -7,7 +7,7 @@ export interface AvatarTheme {
         [k in AvatarSizes]: {
             avatarSize: string;
             fontSize: FontSizes;
-        }
+        };
     };
     defaults: {
         size: AvatarSizes;

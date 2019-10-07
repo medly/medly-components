@@ -6,4 +6,3 @@ const violet: Color = {
 };
 
 export default violet;
-5;

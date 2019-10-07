@@ -22,6 +22,7 @@ const options = [
 ];
 
 const handleOnChange = (value: string[]) => {
+    // tslint:disable-next-line: no-console
     console.log('value ====>', value);
 };
 
