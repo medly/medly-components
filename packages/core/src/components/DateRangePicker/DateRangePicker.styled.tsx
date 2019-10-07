@@ -6,9 +6,11 @@ export const DateRangePickerStyled = styled('div').attrs(({ theme: { input, text
     & > div:first-child {
         div {
             z-index: 5;
+        }
+        & > div:last-child {
+            top: unset;
             bottom: unset;
             left: unset;
-            top: unset;
             right: unset;
             ${({ placement }) => getPosition(placement)}
         }
