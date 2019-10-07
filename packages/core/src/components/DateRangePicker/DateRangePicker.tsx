@@ -46,7 +46,7 @@ const DateRangePicker: React.SFC<Props> = React.memo(props => {
 
 DateRangePicker.displayName = 'DateRangePicker';
 DateRangePicker.defaultProps = {
-    placement: 'left-start',
+    placement: 'bottom-start',
     labelPosition: 'left',
     fullWidth: false,
     required: false,
