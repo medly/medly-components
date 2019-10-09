@@ -39,6 +39,7 @@ export interface TableStyledProps {
 
 export interface Props {
     data: Data[];
+    uniqueKeyName?: string;
     columns: ColumnConfig[];
     isSelectable?: boolean;
     selectedRows?: number[];

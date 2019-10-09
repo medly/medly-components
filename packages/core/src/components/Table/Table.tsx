@@ -10,10 +10,10 @@ import { ColumnConfig, Props, StaticProps } from './types';
 import useRowSelector from './useRowSelector';
 
 const Table: React.SFC<Props> & WithStyle & StaticProps = props => {
-    const { data, onRowClick, onSort, isSelectable, selectedRows, onRowSelection } = props,
+    const { data, onRowClick, onSort, uniqueKeyName, isSelectable, selectedRows, onRowSelection } = props,
         checkboxColumnConfig: ColumnConfig = { title: 'ch', field: 'medly-table-checkbox', formatter: 'checkbox', hide: !isSelectable };
 
-    const [ids, selectedIds, toggleId] = useRowSelector(data.map(({ id }) => id), selectedRows),
+    const [ids, selectedIds, toggleId] = useRowSelector(data.map(dt => dt[uniqueKeyName]), selectedRows),
         [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
         [columns, setColumns] = useState(addSizeToColumnConfig([checkboxColumnConfig, ...props.columns]));
 
@@ -24,7 +24,7 @@ const Table: React.SFC<Props> & WithStyle & StaticProps = props => {
     }, [props.columns]);
 
     useEffect(() => {
-        ids.setValue(data.map(({ id }) => id));
+        ids.setValue(data.map(dt => dt[uniqueKeyName]));
     }, [data]);
 
     useEffect(() => {
@@ -57,6 +57,7 @@ const Table: React.SFC<Props> & WithStyle & StaticProps = props => {
                         columns,
                         data,
                         onRowClick,
+                        uniqueKeyName,
                         addColumnMaxSize,
                         selectedRows: selectedIds.value,
                         onRowSelection: toggleId
@@ -75,6 +76,7 @@ const Table: React.SFC<Props> & WithStyle & StaticProps = props => {
 };
 
 Table.defaultProps = {
+    uniqueKeyName: 'id',
     data: [],
     selectedRows: [],
     isSelectable: false

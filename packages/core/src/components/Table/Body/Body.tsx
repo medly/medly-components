@@ -8,7 +8,7 @@ import { ColumnConfig } from '../types';
 import { Props } from './types';
 
 const Body: React.SFC<Props> = React.memo(props => {
-    const { data, columns, onRowClick, selectedRows, onRowSelection, addColumnMaxSize } = props;
+    const { data, columns, onRowClick, selectedRows, uniqueKeyName, onRowSelection, addColumnMaxSize } = props;
 
     const handleRowClick = (rowData: object) => () => onRowClick && onRowClick(rowData);
 
@@ -30,7 +30,7 @@ const Body: React.SFC<Props> = React.memo(props => {
                       <Cell
                           key={fieldName}
                           data={rowData[config.field]}
-                          rowId={rowData.id}
+                          rowId={rowData[uniqueKeyName]}
                           dottedFieldName={fieldName}
                           {...{ config, selectedRows, onRowSelection, addColumnMaxSize }}
                       />
