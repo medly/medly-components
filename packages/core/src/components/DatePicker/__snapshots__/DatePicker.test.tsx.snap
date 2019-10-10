@@ -95,15 +95,13 @@ exports[`DatePicker component should render correctly 1`] = `
   flex-direction: row;
 }
 
-.c3 * {
-  cursor: pointer;
-}
-
 .c3 label {
   border: 0;
+  background-color: unset;
 }
 
 .c3 label input {
+  cursor: pointer;
   max-width: 90px;
   min-height: unset;
   padding: 8px;
