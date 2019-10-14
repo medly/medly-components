@@ -126,4 +126,70 @@ describe('SingleSelect component', () => {
         });
         expect(container).toMatchSnapshot();
     });
+
+    describe('on pressing', () => {
+        it('down arrow should change input', async () => {
+            const mockOnChange = jest.fn();
+            const { getByTestId, container } = render(<SingleSelect defaultValue="Dummy1" options={options} onChange={mockOnChange} />);
+            const inputEl = getByTestId('select-input');
+            fireEvent.click(inputEl);
+            fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
+            // @ts-ignore
+            expect(inputEl.value).toEqual('Dummy2');
+            expect(mockOnChange).toHaveBeenCalledWith('Dummy2');
+        });
+
+        it('down arrow on the last option should change input value to the first option', async () => {
+            const mockOnChange = jest.fn();
+            const { getByTestId, container } = render(<SingleSelect defaultValue="Dummy2" options={options} onChange={mockOnChange} />);
+            const inputEl = getByTestId('select-input');
+            fireEvent.click(inputEl);
+            fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
+            // @ts-ignore
+            expect(inputEl.value).toEqual('All');
+            expect(mockOnChange).toHaveBeenCalledWith('all');
+        });
+
+        it('up arrow should change input value', async () => {
+            const mockOnChange = jest.fn();
+            const { getByTestId, container } = render(<SingleSelect defaultValue="Dummy2" options={options} onChange={mockOnChange} />);
+            const inputEl = getByTestId('select-input');
+            fireEvent.click(inputEl);
+            fireEvent.keyDown(container, { key: 'ArrowUp', code: 38 });
+            // @ts-ignore
+            expect(inputEl.value).toEqual('Dummy1');
+            expect(mockOnChange).toHaveBeenCalledWith('Dummy1');
+        });
+
+        it('up arrow on the first option should change input value to the last option', async () => {
+            const mockOnChange = jest.fn();
+            const { getByTestId, container } = render(<SingleSelect defaultValue="all" options={options} onChange={mockOnChange} />);
+            const inputEl = getByTestId('select-input');
+            fireEvent.click(inputEl);
+            fireEvent.keyDown(container, { key: 'ArrowUp', code: 38 });
+            // @ts-ignore
+            expect(inputEl.value).toEqual('Dummy2');
+            expect(mockOnChange).toHaveBeenCalledWith('Dummy2');
+        });
+
+        it('enter button should close options', async () => {
+            const mockOnChange = jest.fn();
+            const { getByTestId, container } = render(<SingleSelect defaultValue="Dummy1" options={options} onChange={mockOnChange} />);
+            const inputEl = getByTestId('select-input');
+            fireEvent.click(inputEl);
+            fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
+            fireEvent.keyDown(container, { key: 'Enter', code: 13 });
+            // @ts-ignore
+            expect(inputEl.value).toEqual('Dummy2');
+            expect(mockOnChange).toHaveBeenCalledWith('Dummy2');
+            expect(container).toMatchSnapshot();
+        });
+
+        it('enter button when option are not visible should not change input value', async () => {
+            const mockOnChange = jest.fn();
+            const { container } = render(<SingleSelect defaultValue="Dummy1" options={options} onChange={mockOnChange} />);
+            fireEvent.keyDown(container, { key: 'Enter', code: 13 });
+            expect(container).toMatchSnapshot();
+        });
+    });
 });

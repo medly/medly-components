@@ -36,7 +36,7 @@ PopoverWrapper.defaultProps = {
 };
 PopoverWrapper.Style = PopoverWrapperStyled;
 
-export const Popover: React.SFC<PopoverProps> & WithStyle = props => <PopoverStyled {...props} />;
+export const Popover: React.SFC<PopoverProps> & WithStyle = React.forwardRef((props, ref) => <PopoverStyled ref={ref} {...props} />);
 
 Popover.Style = PopoverStyled;
 Popover.defaultProps = {

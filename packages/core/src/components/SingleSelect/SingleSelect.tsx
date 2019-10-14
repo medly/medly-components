@@ -1,5 +1,5 @@
-import { WithStyle } from '@medly-components/utils';
-import React, { useEffect, useState } from 'react';
+import { useKeyPress, WithStyle } from '@medly-components/utils';
+import React, { useEffect, useRef, useState } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import Input from '../Input';
 import { Popover, PopoverWrapper } from '../Popover';
@@ -15,14 +15,11 @@ const SingleSelect: React.SFC<SelectProps> & WithStyle = React.memo(
 
         const [inputValue, setInputValue] = useState(defaultSelectedOption.label),
             [selectedOption, setSelectedOption] = useState(defaultSelectedOption),
-            [options, setOptions] = useState(getOptionsWithSelected(props.options, defaultSelectedOption));
-
-        useEffect(() => {
-            const selected = getDefaultSelectedOption(props.options, props.defaultValue);
-            setInputValue(selected.label);
-            setSelectedOption(selected);
-            setOptions(getOptionsWithSelected(props.options, selected));
-        }, [props.options, props.defaultValue]);
+            [options, setOptions] = useState(getOptionsWithSelected(props.options, defaultSelectedOption)),
+            popoverRef = useRef(null),
+            downPress = useKeyPress('ArrowDown'),
+            upPress = useKeyPress('ArrowUp'),
+            enterPress = useKeyPress('Enter');
 
         const updateToDefaultOptions = () => setOptions(getOptionsWithSelected(props.options, selectedOption));
 
@@ -52,6 +49,33 @@ const SingleSelect: React.SFC<SelectProps> & WithStyle = React.memo(
                 setInputValue(selectedOption.label);
             };
 
+        useEffect(() => {
+            const selected = getDefaultSelectedOption(props.options, props.defaultValue);
+            setInputValue(selected.label);
+            setSelectedOption(selected);
+            setOptions(getOptionsWithSelected(props.options, selected));
+        }, [props.options, props.defaultValue]);
+
+        useEffect(() => {
+            if (downPress && popoverRef.current.style.display === 'block') {
+                const index = options.findIndex(op => op.value === selectedOption.value);
+                handleOptionClick(index === options.length - 1 ? options[0] : options[index + 1])();
+            }
+        }, [downPress]);
+
+        useEffect(() => {
+            if (upPress && popoverRef.current.style.display === 'block') {
+                const index = options.findIndex(op => op.value === selectedOption.value);
+                handleOptionClick(index === 0 ? options[options.length - 1] : options[index - 1])();
+            }
+        }, [upPress]);
+
+        useEffect(() => {
+            if (enterPress && popoverRef.current.style.display === 'block') {
+                popoverRef.current.click();
+            }
+        }, [enterPress]);
+
         return (
             <FieldWithLabel {...{ fullWidth, labelPosition, minWidth }}>
                 {label && <FieldWithLabel.Label {...{ required, labelPosition }}>{label}</FieldWithLabel.Label>}
@@ -72,7 +96,9 @@ const SingleSelect: React.SFC<SelectProps> & WithStyle = React.memo(
                         />
                         <SelectIconStyled />
                     </SelectWrapperStyled>
-                    <Popover fullWidth>{!disabled && <Options options={options} onOptionClick={handleOptionClick} />}</Popover>
+                    <Popover fullWidth ref={popoverRef}>
+                        {!disabled && <Options options={options} onOptionClick={handleOptionClick} />}
+                    </Popover>
                 </PopoverWrapper>
                 {description && <FieldWithLabel.Description>{description}</FieldWithLabel.Description>}
             </FieldWithLabel>

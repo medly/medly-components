@@ -22,7 +22,7 @@ export interface PopoverWrapperProps extends HTMLProps<HTMLDivElement> {
     onOuterClick?: () => void;
 }
 
-export interface PopoverProps {
+export interface PopoverProps extends HTMLProps<HTMLDivElement> {
     fullWidth?: boolean;
     fullHeight?: boolean;
 }
