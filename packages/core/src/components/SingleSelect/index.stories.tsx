@@ -8,8 +8,12 @@ const labelPosition: LabelPositions[] = ['top', 'bottom', 'left', 'right'];
 
 const options = [
     { value: 'all', label: 'All' },
-    { value: 'medly pharmacy', label: 'Medly Pharmacy' },
-    { value: 'kala pharmacy', label: 'Kala Pharmacy' }
+    { value: 'Dummy1 option', label: 'Dummy1 option' },
+    { value: 'Dummy2 option', label: 'Dummy2 option' },
+    { value: 'Dummy3 option', label: 'Dummy3 option' },
+    { value: 'Dummy4 option', label: 'Dummy4 option' },
+    { value: 'Dummy5 option', label: 'Dummy5 option' },
+    { value: 'Dummy6 option', label: 'Dummy6 option' }
 ];
 
 const handleOnChange = (value: string) => {
