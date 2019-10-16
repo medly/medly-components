@@ -5,7 +5,7 @@ import { StepperStyled } from './Stepper.styled';
 import { Props, StepperStaticProps } from './types';
 
 const Stepper: React.SFC<Props> & WithStyle & StepperStaticProps = props => {
-    const { size, activeStep, children } = props;
+    const { size, activeStep, children, onStepClick } = props;
     return (
         <StepperStyled>
             {React.Children.map(children, (child, index) => {
@@ -13,7 +13,8 @@ const Stepper: React.SFC<Props> & WithStyle & StepperStaticProps = props => {
                     size,
                     key: index + 1,
                     step: index + 1,
-                    active: activeStep === index
+                    active: activeStep === index,
+                    onClick: onStepClick ? () => onStepClick(index) : undefined
                 });
             })}
         </StepperStyled>

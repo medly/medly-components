@@ -1,7 +1,7 @@
 import { StepperSizes } from '@medly-components/theme';
-import { WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 
-export interface CounterProps extends WithThemeProp {
+export interface CounterProps extends WithThemeProp, Omit<HTMLProps<HTMLDivElement>, 'size'> {
     size?: StepperSizes;
     active?: boolean;
 }
@@ -20,6 +20,7 @@ export interface StepProps extends CounterProps {
 export interface Props {
     size?: StepperSizes;
     activeStep?: number;
+    onStepClick?: (step: number) => void;
 }
 
 export interface StepperStaticProps {

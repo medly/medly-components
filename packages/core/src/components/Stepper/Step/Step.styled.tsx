@@ -1,5 +1,5 @@
 import { defaultTheme } from '@medly-components/theme';
-import { styled } from '@medly-components/utils';
+import { css, styled } from '@medly-components/utils';
 import Text from '../../Text';
 import { CounterProps, CounterStyledProps } from '../types';
 
@@ -32,6 +32,7 @@ export const StepCounterStyled = styled('div').attrs(getMappedProps)<CounterStyl
 
     /* This is the counter */
     ${Text.Style} {
+        user-select: none;
         font-size: ${getFontSize};
     }
 
@@ -39,6 +40,7 @@ export const StepCounterStyled = styled('div').attrs(getMappedProps)<CounterStyl
     & + ${Text.Style} {
         color: ${({ descriptionColor }) => descriptionColor};
         font-size: ${getFontSize};
+        user-select: none;
     }
 `;
 
@@ -54,4 +56,11 @@ export const StepStyled = styled('div')`
     ${StepCounterStyled} {
         margin-right: 10px;
     }
+    ${({ onClick }) =>
+        onClick &&
+        css`
+            * {
+                cursor: pointer;
+            }
+        `}
 `;

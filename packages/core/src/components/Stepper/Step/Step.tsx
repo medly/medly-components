@@ -5,11 +5,11 @@ import { StepProps } from '../types';
 import { StepCounterStyled, StepStyled } from './Step.styled';
 
 const Step: React.SFC<StepProps> & WithStyle = props => {
-    const { step, children } = props;
+    const { step, children, onClick, ...restProps } = props;
 
     return (
-        <StepStyled>
-            <StepCounterStyled {...props}>
+        <StepStyled {...{ onClick }}>
+            <StepCounterStyled {...restProps}>
                 <Text uppercase textWeight="Strong">
                     {step}
                 </Text>
