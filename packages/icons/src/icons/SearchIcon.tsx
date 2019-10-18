@@ -1,10 +1,10 @@
 // tslint:disable:max-line-length
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import SearchSvg from '../assets/Search.svg';
 import SvgIcon, { Props } from '../SvgIcon';
 
-const SearchIcon: React.FunctionComponent<Props> & WithStyle = props => (
+export const SearchIcon: SFC<Props> & WithStyle = props => (
     <SvgIcon {...props}>
         <SearchSvg {...props} width="1em" height="1em" />
     </SvgIcon>
@@ -12,4 +12,3 @@ const SearchIcon: React.FunctionComponent<Props> & WithStyle = props => (
 
 SearchIcon.Style = SvgIcon;
 SearchIcon.displayName = 'SearchIcon';
-export default SearchIcon;

@@ -1,3 +1,3 @@
-import BurgerIcon from './BurgerIcon';
+import { BurgerIcon } from './BurgerIcon';
 
 export default BurgerIcon;

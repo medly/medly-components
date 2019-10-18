@@ -1,9 +1,9 @@
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import { BurgerIconStyled, SpanStyled } from './BurgerIcon.styled';
 import { BurgerIconProps } from './types';
 
-export const BurgerIcon: React.SFC<BurgerIconProps> & WithStyle = React.memo(props => {
+export const BurgerIcon: SFC<BurgerIconProps> & WithStyle = React.memo(props => {
     const { size, color } = props;
     return (
         <BurgerIconStyled id="burgerIcon" {...props}>
@@ -19,5 +19,3 @@ BurgerIcon.defaultProps = {
     open: false
 };
 BurgerIcon.Style = BurgerIconStyled;
-
-export default BurgerIcon;

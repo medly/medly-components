@@ -1,10 +1,10 @@
 // tslint:disable:max-line-length
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import CheckCircleSvg from '../assets/CheckCircle.svg';
 import SvgIcon, { Props } from '../SvgIcon';
 
-const CheckCircleIcon: React.FunctionComponent<Props> & WithStyle = props => (
+export const CheckCircleIcon: SFC<Props> & WithStyle = props => (
     <SvgIcon {...props}>
         <CheckCircleSvg {...props} width="1em" height="1em" />
     </SvgIcon>
@@ -12,4 +12,3 @@ const CheckCircleIcon: React.FunctionComponent<Props> & WithStyle = props => (
 
 CheckCircleIcon.Style = SvgIcon;
 CheckCircleIcon.displayName = 'CheckCircleIcon';
-export default CheckCircleIcon;

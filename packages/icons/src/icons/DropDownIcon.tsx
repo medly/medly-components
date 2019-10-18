@@ -1,10 +1,10 @@
 // tslint:disable:max-line-length
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import DropDownSvg from '../assets/DropDown.svg';
 import SvgIcon, { Props } from '../SvgIcon';
 
-const DropDownIcon: React.FunctionComponent<Props> & WithStyle = props => (
+export const DropDownIcon: SFC<Props> & WithStyle = props => (
     <SvgIcon {...props}>
         <DropDownSvg {...props} width="1em" height="1em" />
     </SvgIcon>
@@ -12,4 +12,3 @@ const DropDownIcon: React.FunctionComponent<Props> & WithStyle = props => (
 
 DropDownIcon.Style = SvgIcon;
 DropDownIcon.displayName = 'DropDownIcon';
-export default DropDownIcon;

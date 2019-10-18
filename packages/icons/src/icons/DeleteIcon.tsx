@@ -1,10 +1,10 @@
 // tslint:disable:max-line-length
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import DeleteSvg from '../assets/Delete.svg';
 import SvgIcon, { Props } from '../SvgIcon';
 
-const DeleteIcon: React.FunctionComponent<Props> & WithStyle = props => (
+export const DeleteIcon: SFC<Props> & WithStyle = props => (
     <SvgIcon {...props}>
         <DeleteSvg {...props} width="1em" height="1em" />
     </SvgIcon>
@@ -12,4 +12,3 @@ const DeleteIcon: React.FunctionComponent<Props> & WithStyle = props => (
 
 DeleteIcon.Style = SvgIcon;
 DeleteIcon.displayName = 'DeleteIcon';
-export default DeleteIcon;

@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import BurgerIcon from './BurgerIcon';
+import { BurgerIcon } from './BurgerIcon';
 
 const { render, cleanup } = TestUtils;
 afterEach(cleanup);

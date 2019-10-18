@@ -1,10 +1,10 @@
 // tslint:disable:max-line-length
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import AddSvg from '../assets/Add.svg';
 import SvgIcon, { Props } from '../SvgIcon';
 
-const AddIcon: React.FunctionComponent<Props> & WithStyle = props => (
+export const AddIcon: SFC<Props> & WithStyle = props => (
     <SvgIcon {...props}>
         <AddSvg {...props} width="1em" height="1em" />
     </SvgIcon>
@@ -12,4 +12,3 @@ const AddIcon: React.FunctionComponent<Props> & WithStyle = props => (
 
 AddIcon.Style = SvgIcon;
 AddIcon.displayName = 'AddIcon';
-export default AddIcon;
