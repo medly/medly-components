@@ -9,14 +9,14 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
   cursor: pointer;
 }
 
-.c2 {
+.c1 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
   margin: 0px 0px 8px 0px;
 }
 
-.c2::after {
+.c1::after {
   color: red;
   content: ' *';
 }
@@ -29,7 +29,7 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
   margin-left: 0px;
 }
 
-.c1 {
+.c2 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -170,7 +170,7 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
         class="c5"
       >
         <label
-          class="c1 c6"
+          class="c6 c2"
           for="Female"
         >
           Female
@@ -196,7 +196,7 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
         class="c5"
       >
         <label
-          class="c1 c6"
+          class="c6 c2"
           for="Male"
         >
           Male
@@ -223,7 +223,7 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
 `;
 
 exports[`Radio Group should render correctly 1`] = `
-.c2 {
+.c1 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -246,7 +246,7 @@ exports[`Radio Group should render correctly 1`] = `
   margin-left: 0px;
 }
 
-.c1 {
+.c2 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -373,7 +373,7 @@ exports[`Radio Group should render correctly 1`] = `
         class="c5"
       >
         <label
-          class="c1 c6"
+          class="c6 c2"
           for="Female"
         >
           Female
@@ -398,7 +398,7 @@ exports[`Radio Group should render correctly 1`] = `
         class="c5"
       >
         <label
-          class="c1 c6"
+          class="c6 c2"
           for="Male"
         >
           Male

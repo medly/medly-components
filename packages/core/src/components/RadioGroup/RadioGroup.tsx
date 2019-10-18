@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import { Props as RadioProps } from '../Radio/types';
 import { Props } from './types';
 
-const RadioGroup: React.SFC<Props> & WithStyle = React.memo(props => {
+export const RadioGroup: SFC<Props> & WithStyle = React.memo(props => {
     const {
         size,
         name,
@@ -52,5 +52,3 @@ RadioGroup.defaultProps = {
     name: '',
     labelPosition: 'left'
 };
-
-export default RadioGroup;

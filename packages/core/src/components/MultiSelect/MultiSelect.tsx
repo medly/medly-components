@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useEffect, useState } from 'react';
+import React, { SFC, useEffect, useState } from 'react';
 import Chip from '../Chip';
 import FieldWithLabel from '../FieldWithLabel';
 import Input from '../Input';
@@ -9,7 +9,7 @@ import { SelectIconStyled, SelectWrapperStyled } from './MultiSelect.styled';
 import Options from './Options';
 import { SelectProps } from './types';
 
-const MultiSelect: React.SFC<SelectProps> & WithStyle = React.memo(
+export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { id, description, label, labelPosition, required, fullWidth, disabled, minWidth } = props;
 
@@ -113,5 +113,3 @@ MultiSelect.defaultProps = {
     description: '',
     placeholder: 'Please Select . . .'
 };
-
-export default MultiSelect;

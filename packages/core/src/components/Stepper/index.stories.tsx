@@ -1,7 +1,7 @@
 import { select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React, { useState } from 'react';
-import Stepper from './Stepper';
+import { Stepper } from './Stepper';
 import { Props } from './types';
 
 const size: Array<Props['size']> = ['S', 'M', 'L', 'XL'];
@@ -16,4 +16,8 @@ const DemoComponent = () => {
         </Stepper>
     );
 };
-storiesOf('Core', module).add('Stepper', () => <DemoComponent />);
+storiesOf('Core', module).add('Stepper', DemoComponent, {
+    props: {
+        propTablesExclude: [Stepper.Step]
+    }
+});

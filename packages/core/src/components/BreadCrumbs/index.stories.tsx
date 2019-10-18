@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import Link from '../Link';
-import BreadCrumbs from './BreadCrumbs';
+import { BreadCrumbs } from './BreadCrumbs';
 
 storiesOf('Core', module).add(
     'BreadCrumbs',

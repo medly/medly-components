@@ -2,7 +2,7 @@ import { boolean, select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import Text from '../Text';
-import { CardStyled as Card } from './Card.styled';
+import { Card } from './Card.styled';
 import { FlowDirection, ItemsPosition, Variants } from './types';
 
 const variants: Variants[] = ['outlined', 'solid', 'flat'];

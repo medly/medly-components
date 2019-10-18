@@ -10,7 +10,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
   fill: #555;
 }
 
-.c2 {
+.c1 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -33,7 +33,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
   margin-left: 0px;
 }
 
-.c1 {
+.c2 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -171,7 +171,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
         class="c5"
       >
         <label
-          class="c1 c6"
+          class="c6 c2"
           for="Apple"
         >
           Apple
@@ -208,7 +208,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
         class="c5"
       >
         <label
-          class="c1 c6"
+          class="c6 c2"
           for="Orange"
         >
           Orange

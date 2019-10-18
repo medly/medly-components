@@ -1,7 +1,7 @@
 import { boolean, select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import Input from './Input';
+import { Input } from './Input';
 import { Props } from './types';
 
 const labelPosition: Array<Props['labelPosition']> = ['top', 'bottom', 'left', 'right'];

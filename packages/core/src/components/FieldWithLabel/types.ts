@@ -6,9 +6,13 @@ import { LabelPositions } from '../Label/types';
 import Text from '../Text';
 
 export interface Props extends WithThemeProp {
+    /** Label Position */
     labelPosition?: LabelPositions;
+    /** Takes full width of the parent component */
     fullWidth?: boolean;
+    /** To be used when field should take max width */
     fieldWithMaxContent?: boolean;
+    /** Min width of the component */
     minWidth?: number;
 }
 

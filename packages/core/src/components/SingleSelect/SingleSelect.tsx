@@ -1,5 +1,5 @@
 import { useKeyPress, WithStyle } from '@medly-components/utils';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { SFC, useEffect, useRef, useState } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import Input from '../Input';
 import { Popover, PopoverWrapper } from '../Popover';
@@ -8,7 +8,7 @@ import Options from './Options';
 import { SelectIconStyled, SelectWrapperStyled } from './SingleSelect.styled';
 import { Option, SelectProps } from './types';
 
-const SingleSelect: React.SFC<SelectProps> & WithStyle = React.memo(
+export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { id, description, label, placeholder, labelPosition, minWidth, required, fullWidth, disabled } = props,
             defaultSelectedOption = getDefaultSelectedOption(props.options, props.defaultValue);
@@ -117,5 +117,3 @@ SingleSelect.defaultProps = {
     description: '',
     placeholder: 'Please Select . . .'
 };
-
-export default SingleSelect;

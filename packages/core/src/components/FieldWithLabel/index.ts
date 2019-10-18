@@ -1,3 +1,3 @@
-import FieldWithLabel from './FieldWithLabel';
+import { FieldWithLabel } from './FieldWithLabel';
 
 export default FieldWithLabel;

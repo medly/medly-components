@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import MultiSelect from './MultiSelect';
+import { MultiSelect } from './MultiSelect';
 
 const { render, fireEvent, cleanup } = TestUtils;
 

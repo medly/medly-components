@@ -1,9 +1,11 @@
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
 export interface Props extends HTMLProps<HTMLButtonElement>, WithThemeProp {
+    /** To be used to render any component as Button */
     as?: any;
-    /** Use this if rendering it like Link */
+    /** To be used if rendering like Link */
     to?: string;
+    /** Button type */
     type?: 'button' | 'reset' | 'submit';
     /** Button design */
     variant?: 'solid' | 'flat' | 'outlined';

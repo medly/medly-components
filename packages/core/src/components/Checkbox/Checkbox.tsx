@@ -1,11 +1,11 @@
 import { CheckIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import { CheckboxFillStyled, CheckboxStyled, CheckboxWrapperStyled } from './Checkbox.styled';
 import { Props } from './types';
 
-const Checkbox: React.SFC<Props> & WithStyle = React.memo(
+export const Checkbox: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { size, label, required, labelPosition, labelSize, labelWeight, labelColor, ...restProps } = props;
         return (
@@ -36,5 +36,3 @@ Checkbox.defaultProps = {
     label: '',
     labelPosition: 'right'
 };
-
-export default Checkbox;

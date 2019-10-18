@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import Button from '../Button';
 import Chip from '../Chip';
 import Modal from '../Modal';
-import Table from './Table';
+import { Table } from './Table';
 import { ColumnConfig, SortOrder } from './types';
 
 const data = [
@@ -128,7 +128,7 @@ const columns: ColumnConfig[] = [
 // @ts-ignore
 const getNestedValue = (obj: {}, dottedKey: string) => dottedKey.split('.').reduce((acc, curr) => acc[curr], obj);
 
-const DemoComponent: React.SFC = () => {
+const DemoComponent = () => {
     const [modalState, setModalState] = useState(false);
     const [tableData, setTableData] = useState(data);
     const [columnConfig, setColumnConfig] = useState(columns);
@@ -171,9 +171,9 @@ const DemoComponent: React.SFC = () => {
     );
 };
 
-storiesOf('Core', module).add('Table', () => <DemoComponent />, {
+storiesOf('Core', module).add('Table', DemoComponent, {
     props: {
-        propTablesExclude: [DemoComponent],
+        propTablesExclude: [DemoComponent, Modal, Modal.Header, Modal.Content, Table.SelectableColumns, Button],
         propTables: [Table]
     }
 });

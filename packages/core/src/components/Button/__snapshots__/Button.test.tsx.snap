@@ -88,6 +88,7 @@ exports[`Button component should render properly when it is disabled 1`] = `
     class="c0"
     color="primary"
     disabled=""
+    type="button"
   >
     <span
       class="c1 c2"
@@ -194,6 +195,7 @@ exports[`Button component should render properly with any icon at the beginning 
   <button
     class="c0"
     color="primary"
+    type="button"
   >
     <svg
       class="c1 c2"
@@ -312,6 +314,7 @@ exports[`Button component should render properly with any icon at the end of the
   <button
     class="c0"
     color="primary"
+    type="button"
   >
     <svg
       class="c1 c2"
@@ -395,6 +398,7 @@ exports[`Button component should render properly with flat variant and primary c
   <button
     class="c0"
     color="primary"
+    type="button"
   >
     <span
       class="c1 c2"
@@ -475,6 +479,7 @@ exports[`Button component should render properly with outlined variant and secon
   <button
     class="c0"
     color="secondary"
+    type="button"
   >
     <span
       class="c1 c2"
@@ -564,6 +569,7 @@ exports[`Button component should render properly with solid variant 1`] = `
   <button
     class="c0"
     color="primary"
+    type="button"
   >
     <span
       class="c1 c2"
@@ -661,6 +667,7 @@ exports[`Button component should wrap children into Text component when renderin
   <button
     class="c0"
     color="primary"
+    type="button"
   >
     <span
       class="c1 c2"

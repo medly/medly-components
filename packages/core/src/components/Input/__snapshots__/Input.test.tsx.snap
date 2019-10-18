@@ -1,27 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Input component should render correctly when fullWidth & required props are falsy 1`] = `
-.c2 {
+.c1 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
 }
 
-.c5 {
+.c4 {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
 }
 
-.c1 {
+.c2 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c4 {
+.c5 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: #818A91;
@@ -266,32 +266,32 @@ exports[`Input component should render correctly when label and description are 
 `;
 
 exports[`Input component should render correctly with all the props given 1`] = `
-.c2 {
+.c1 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
   margin: 0px 0px 8px 0px;
 }
 
-.c2::after {
+.c1::after {
   color: red;
   content: ' *';
 }
 
-.c5 {
+.c4 {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
 }
 
-.c1 {
+.c2 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c4 {
+.c5 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: #818A91;

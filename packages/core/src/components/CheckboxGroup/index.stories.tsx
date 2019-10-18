@@ -1,13 +1,13 @@
 import { boolean, select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React, { useState } from 'react';
-import CheckboxGroup from './CheckboxGroup';
+import { CheckboxGroup } from './CheckboxGroup';
 import { Props } from './types';
 
 const labelPosition: Array<Props['labelPosition']> = ['left', 'right', 'top', 'bottom'];
 const size: Array<Props['size']> = ['XS', 'S', 'M', 'L', 'XL'];
 
-const DemoComponent = () => {
+const WrapperComponent = () => {
     const [value, setValue] = useState(['grapes']);
 
     return (
@@ -24,4 +24,4 @@ const DemoComponent = () => {
     );
 };
 
-storiesOf('Core', module).add('CheckboxGroup', () => <DemoComponent />);
+storiesOf('Core', module).add('CheckboxGroup', WrapperComponent);

@@ -1,7 +1,7 @@
 import { GearIcon } from '@medly-components/icons';
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import Button from './Button';
+import { Button } from './Button';
 
 describe('Button component', () => {
     it('should render properly with flat variant and primary color', () => {

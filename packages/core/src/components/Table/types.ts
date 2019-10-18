@@ -38,13 +38,21 @@ export interface TableStyledProps {
 }
 
 export interface Props {
+    /** Tabel data */
     data: Data[];
+    /** Key name in data to be used as unique id */
     uniqueKeyName?: string;
+    /** Column configuration */
     columns: ColumnConfig[];
+    /** Shows checkboxes to select rows */
     isSelectable?: boolean;
+    /** Ids of default selected rows */
     selectedRows?: number[];
+    /** Function to be called on row selection */
     onRowSelection?: (v: number[]) => void;
+    /** Function to be called on row click */
     onRowClick?: (rowData: object) => void;
+    /** Function to be called on click of sort icon */
     onSort?: (field: string, order: SortOrder) => void;
 }
 

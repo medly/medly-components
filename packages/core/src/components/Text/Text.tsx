@@ -1,9 +1,9 @@
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import { TextStyled } from './Text.styled';
 import { Props } from './types';
 
-const Text: React.FunctionComponent<Props> & WithStyle = React.memo(
+export const Text: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const componentType = props.textWeight === 'Strong' ? 'strong' : 'span';
         return (
@@ -21,5 +21,3 @@ Text.defaultProps = {
 };
 Text.displayName = 'Text';
 Text.Style = TextStyled;
-
-export default Text;

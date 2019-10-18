@@ -1,3 +1,3 @@
-import Select from './SingleSelect';
+import { SingleSelect } from './SingleSelect';
 
-export default Select;
+export default SingleSelect;

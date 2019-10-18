@@ -4,7 +4,7 @@ import { LabelPositions } from '../Label/types';
 export interface Option {
     value: string;
     label: string;
-    selected: boolean;
+    selected?: boolean;
 }
 
 export interface DefaultSelected {
@@ -21,15 +21,22 @@ export interface SelectWrapperProps extends HTMLProps<HTMLDivElement>, WithTheme
 type InputProps = Omit<HTMLProps<HTMLInputElement>, 'onChange'>;
 
 export interface SelectProps extends InputProps, WithThemeProp {
-    options: Array<{ value: any; label: string }>;
+    /** Options */
+    options: Option[];
+    /** Default selected options */
     defaultValue?: any;
+    /** Min width */
     minWidth?: number;
-    disabled?: boolean;
+    /** Label Position */
     labelPosition?: LabelPositions;
+    /** Takes full width of the parent component */
     fullWidth?: boolean;
-    required?: boolean;
+    /** Label */
     label?: string;
+    /** Description of the Select */
     description?: string;
+    /** Placeholder for the input */
     placeholder?: string;
+    /** Function to be called on selecting any option */
     onChange?: (value: any) => void;
 }

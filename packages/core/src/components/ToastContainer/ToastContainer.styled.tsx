@@ -1,4 +1,5 @@
 import { css, styled } from '@medly-components/utils';
+import { SFC } from 'react';
 import { Props } from './types';
 
 const getPosition = (position: Props['position']) => {
@@ -50,7 +51,7 @@ const getPosition = (position: Props['position']) => {
     }
 };
 
-export const ToastContainer = styled('div')<Props>`
+export const ToastContainer: SFC<Props> = styled('div')<Props>`
     display: flex;
     flex-direction: column;
     padding: 20px;

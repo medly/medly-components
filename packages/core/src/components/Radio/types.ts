@@ -10,12 +10,20 @@ export interface RadioWrapperProps extends DivProps, WithThemeProp {
 }
 
 export interface Props extends InputProps, WithThemeProp {
+    /** Value of the radio */
     value: string;
+    /** Label position */
     labelPosition?: LabelPositions;
+    /** Label size */
     labelSize?: FontSizes;
+    /** Label weight */
     labelWeight?: FontWeights;
+    /** Label color */
     labelColor?: string;
+    /** To be used when it is required in the form */
     required?: boolean;
+    /** Radio label */
     label?: string;
+    /** Radio size */
     size?: RadioSizes;
 }

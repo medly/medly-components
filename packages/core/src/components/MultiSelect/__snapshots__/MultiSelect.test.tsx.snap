@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MultiSelect component with checkbox false should close options when clicked outside 1`] = `
-.c9 {
+.c8 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill: #555;
 }
 
@@ -22,20 +22,20 @@ exports[`MultiSelect component with checkbox false should close options when cli
   color: inherit;
 }
 
-.c18 .c8 * {
+.c18 .c7 * {
   fill: #ffffff;
 }
 
-.c18 .c14 + .c8 {
+.c18 .c14 + .c7 {
   cursor: not-allowed;
   margin-left: 10px;
 }
 
-.c19 .c8 * {
+.c19 .c7 * {
   fill: #ffffff;
 }
 
-.c19 .c14 + .c8 {
+.c19 .c14 + .c7 {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -206,7 +206,7 @@ exports[`MultiSelect component with checkbox false should close options when cli
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -215,7 +215,7 @@ exports[`MultiSelect component with checkbox false should close options when cli
   font-size: 10px;
 }
 
-.c21 .c8 {
+.c21 .c7 {
   width: 100%;
   height: 100%;
 }
@@ -401,12 +401,12 @@ exports[`MultiSelect component with checkbox false should close options when cli
 `;
 
 exports[`MultiSelect component with checkbox false should handle group name click as expected 1`] = `
-.c9 {
+.c8 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill: #555;
 }
 
@@ -422,20 +422,20 @@ exports[`MultiSelect component with checkbox false should handle group name clic
   color: inherit;
 }
 
-.c20 .c8 * {
+.c20 .c7 * {
   fill: #ffffff;
 }
 
-.c20 .c14 + .c8 {
+.c20 .c14 + .c7 {
   cursor: not-allowed;
   margin-left: 10px;
 }
 
-.c21 .c8 * {
+.c21 .c7 * {
   fill: #ffffff;
 }
 
-.c21 .c14 + .c8 {
+.c21 .c14 + .c7 {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -606,7 +606,7 @@ exports[`MultiSelect component with checkbox false should handle group name clic
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -615,7 +615,7 @@ exports[`MultiSelect component with checkbox false should handle group name clic
   font-size: 10px;
 }
 
-.c23 .c8 {
+.c23 .c7 {
   width: 100%;
   height: 100%;
 }
@@ -870,7 +870,7 @@ exports[`MultiSelect component with checkbox false should handle group name clic
             
           </div>
           <svg
-            class="sc-jTzLTM hLDAUw sc-bdVaJa fWLfA"
+            class="sc-bdVaJa fWLfA sc-jTzLTM hLDAUw"
             height="1em"
             theme="[object Object]"
             viewBox="0 0 12 8"
@@ -956,12 +956,12 @@ exports[`MultiSelect component with checkbox false should handle group name clic
 `;
 
 exports[`MultiSelect component with checkbox false should not render options when clicked outside 1`] = `
-.c9 {
+.c8 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill: #555;
 }
 
@@ -977,20 +977,20 @@ exports[`MultiSelect component with checkbox false should not render options whe
   color: inherit;
 }
 
-.c18 .c8 * {
+.c18 .c7 * {
   fill: #ffffff;
 }
 
-.c18 .c14 + .c8 {
+.c18 .c14 + .c7 {
   cursor: not-allowed;
   margin-left: 10px;
 }
 
-.c19 .c8 * {
+.c19 .c7 * {
   fill: #ffffff;
 }
 
-.c19 .c14 + .c8 {
+.c19 .c14 + .c7 {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -1161,7 +1161,7 @@ exports[`MultiSelect component with checkbox false should not render options whe
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1170,7 +1170,7 @@ exports[`MultiSelect component with checkbox false should not render options whe
   font-size: 10px;
 }
 
-.c21 .c8 {
+.c21 .c7 {
   width: 100%;
   height: 100%;
 }
@@ -1358,12 +1358,12 @@ exports[`MultiSelect component with checkbox false should not render options whe
 `;
 
 exports[`MultiSelect component with checkbox false should render all the options when input value is not matched to any option 1`] = `
-.c9 {
+.c8 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill: #555;
 }
 
@@ -1379,20 +1379,20 @@ exports[`MultiSelect component with checkbox false should render all the options
   color: inherit;
 }
 
-.c18 .c8 * {
+.c18 .c7 * {
   fill: #ffffff;
 }
 
-.c18 .c14 + .c8 {
+.c18 .c14 + .c7 {
   cursor: not-allowed;
   margin-left: 10px;
 }
 
-.c19 .c8 * {
+.c19 .c7 * {
   fill: #ffffff;
 }
 
-.c19 .c14 + .c8 {
+.c19 .c14 + .c7 {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -1563,7 +1563,7 @@ exports[`MultiSelect component with checkbox false should render all the options
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1572,7 +1572,7 @@ exports[`MultiSelect component with checkbox false should render all the options
   font-size: 10px;
 }
 
-.c21 .c8 {
+.c21 .c7 {
   width: 100%;
   height: 100%;
 }
@@ -1755,12 +1755,12 @@ exports[`MultiSelect component with checkbox false should render all the options
 `;
 
 exports[`MultiSelect component with checkbox false should render correctly with all the props given 1`] = `
-.c16 {
+.c15 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c16 * {
+.c15 * {
   fill: #555;
 }
 
@@ -1834,14 +1834,14 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   margin-left: 10px;
 }
 
-.c4 {
+.c2 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
 }
 
-.c3 {
+.c4 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -2020,7 +2020,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   cursor: not-allowed;
 }
 
-.c15 {
+.c16 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2040,11 +2040,11 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   padding: 5px;
 }
 
-.c23 .c2 {
+.c23 .c3 {
   margin-bottom: 0px;
 }
 
-.c23 .c2 .c0 {
+.c23 .c3 .c0 {
   padding: 0px 5px 5px 0px;
 }
 
@@ -2108,7 +2108,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
           
         </div>
         <svg
-          class="c15 c10 c16"
+          class="c10 c15 c16"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"
@@ -2127,7 +2127,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
       />
     </div>
     <span
-      class="c19 c8 c9"
+      class="c8 c9 c19"
     >
       We will show reports based on Pharmacy
     </span>
@@ -2136,12 +2136,12 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 `;
 
 exports[`MultiSelect component with checkbox false should render correctly with default props 1`] = `
-.c9 {
+.c8 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill: #555;
 }
 
@@ -2157,20 +2157,20 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   color: inherit;
 }
 
-.c18 .c8 * {
+.c18 .c7 * {
   fill: #ffffff;
 }
 
-.c18 .c14 + .c8 {
+.c18 .c14 + .c7 {
   cursor: not-allowed;
   margin-left: 10px;
 }
 
-.c19 .c8 * {
+.c19 .c7 * {
   fill: #ffffff;
 }
 
-.c19 .c14 + .c8 {
+.c19 .c14 + .c7 {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -2341,7 +2341,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2350,7 +2350,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   font-size: 10px;
 }
 
-.c21 .c8 {
+.c21 .c7 {
   width: 100%;
   height: 100%;
 }
@@ -2532,12 +2532,12 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 `;
 
 exports[`MultiSelect component with checkbox false should render only matched options when input value changed 1`] = `
-.c9 {
+.c8 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill: #555;
 }
 
@@ -2547,20 +2547,20 @@ exports[`MultiSelect component with checkbox false should render only matched op
   color: inherit;
 }
 
-.c16 .c8 * {
+.c16 .c7 * {
   fill: #ffffff;
 }
 
-.c16 .c14 + .c8 {
+.c16 .c14 + .c7 {
   cursor: not-allowed;
   margin-left: 10px;
 }
 
-.c17 .c8 * {
+.c17 .c7 * {
   fill: #ffffff;
 }
 
-.c17 .c14 + .c8 {
+.c17 .c14 + .c7 {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -2731,7 +2731,7 @@ exports[`MultiSelect component with checkbox false should render only matched op
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2740,7 +2740,7 @@ exports[`MultiSelect component with checkbox false should render only matched op
   font-size: 10px;
 }
 
-.c19 .c8 {
+.c19 .c7 {
   width: 100%;
   height: 100%;
 }
@@ -2862,12 +2862,12 @@ exports[`MultiSelect component with checkbox false should render only matched op
 `;
 
 exports[`MultiSelect component with checkbox false should render options correctly 1`] = `
-.c9 {
+.c8 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill: #555;
 }
 
@@ -2883,20 +2883,20 @@ exports[`MultiSelect component with checkbox false should render options correct
   color: inherit;
 }
 
-.c18 .c8 * {
+.c18 .c7 * {
   fill: #ffffff;
 }
 
-.c18 .c14 + .c8 {
+.c18 .c14 + .c7 {
   cursor: not-allowed;
   margin-left: 10px;
 }
 
-.c19 .c8 * {
+.c19 .c7 * {
   fill: #ffffff;
 }
 
-.c19 .c14 + .c8 {
+.c19 .c14 + .c7 {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -3067,7 +3067,7 @@ exports[`MultiSelect component with checkbox false should render options correct
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -3076,7 +3076,7 @@ exports[`MultiSelect component with checkbox false should render options correct
   font-size: 10px;
 }
 
-.c21 .c8 {
+.c21 .c7 {
   width: 100%;
   height: 100%;
 }
@@ -3259,34 +3259,34 @@ exports[`MultiSelect component with checkbox false should render options correct
 `;
 
 exports[`MultiSelect component with checkbox true should close options when clicked outside 1`] = `
-.c9 {
+.c8 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill: #555;
 }
 
-.c25 .c8 * {
+.c25 .c7 * {
   fill: #ffffff;
 }
 
-.c25 .c29 + .c8 {
+.c25 .c29 + .c7 {
   cursor: not-allowed;
   margin-left: 10px;
 }
 
-.c26 .c8 * {
+.c26 .c7 * {
   fill: #ffffff;
 }
 
-.c26 .c29 + .c8 {
+.c26 .c29 + .c7 {
   cursor: pointer;
   margin-left: 10px;
 }
 
-.c16 {
+.c14 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -3309,7 +3309,7 @@ exports[`MultiSelect component with checkbox true should close options when clic
   margin-left: 17px;
 }
 
-.c15 {
+.c16 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -3537,7 +3537,7 @@ exports[`MultiSelect component with checkbox true should close options when clic
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -3589,7 +3589,7 @@ exports[`MultiSelect component with checkbox true should close options when clic
   align-items: center;
 }
 
-.c20 .c8 {
+.c20 .c7 {
   width: 100%;
   height: 100%;
 }
@@ -3637,11 +3637,11 @@ exports[`MultiSelect component with checkbox true should close options when clic
   padding: 5px;
 }
 
-.c12 .c14 {
+.c12 .c15 {
   margin-bottom: 0px;
 }
 
-.c12 .c14 .c0 {
+.c12 .c15 .c0 {
   padding: 0px 5px 5px 0px;
 }
 
@@ -3725,7 +3725,7 @@ exports[`MultiSelect component with checkbox true should close options when clic
                 class="c19 c20"
               >
                 <svg
-                  class="c8 c9"
+                  class="c7 c8"
                   height="1em"
                   viewBox="0 0 18 14"
                   width="1em"
@@ -3763,7 +3763,7 @@ exports[`MultiSelect component with checkbox true should close options when clic
                 class="c19 c20"
               >
                 <svg
-                  class="c8 c9"
+                  class="c7 c8"
                   height="1em"
                   viewBox="0 0 18 14"
                   width="1em"
@@ -3782,7 +3782,7 @@ exports[`MultiSelect component with checkbox true should close options when clic
             class="c0 c21"
           >
             <label
-              class="c14 c15 c22"
+              class="c22 c15 c16"
             >
               <div
                 class="c0 c13"
@@ -3805,7 +3805,7 @@ exports[`MultiSelect component with checkbox true should close options when clic
                     class="c19 c20"
                   >
                     <svg
-                      class="c8 c9"
+                      class="c7 c8"
                       height="1em"
                       viewBox="0 0 18 14"
                       width="1em"
@@ -3846,7 +3846,7 @@ exports[`MultiSelect component with checkbox true should close options when clic
                     class="c19 c20"
                   >
                     <svg
-                      class="c8 c9"
+                      class="c7 c8"
                       height="1em"
                       viewBox="0 0 18 14"
                       width="1em"
@@ -3883,7 +3883,7 @@ exports[`MultiSelect component with checkbox true should close options when clic
                     class="c19 c20"
                   >
                     <svg
-                      class="c8 c9"
+                      class="c7 c8"
                       height="1em"
                       viewBox="0 0 18 14"
                       width="1em"
@@ -3909,25 +3909,25 @@ exports[`MultiSelect component with checkbox true should close options when clic
 `;
 
 exports[`MultiSelect component with checkbox true should handle group name click as expected 1`] = `
-.c9 {
+.c8 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill: #555;
 }
 
-.c25 .c8 * {
+.c25 .c7 * {
   fill: #ffffff;
 }
 
-.c25 .c28 + .c8 {
+.c25 .c28 + .c7 {
   cursor: not-allowed;
   margin-left: 10px;
 }
 
-.c16 {
+.c14 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -3950,7 +3950,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
   margin-left: 17px;
 }
 
-.c15 {
+.c16 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -4178,7 +4178,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -4230,7 +4230,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
   align-items: center;
 }
 
-.c20 .c8 {
+.c20 .c7 {
   width: 100%;
   height: 100%;
 }
@@ -4278,11 +4278,11 @@ exports[`MultiSelect component with checkbox true should handle group name click
   padding: 5px;
 }
 
-.c12 .c14 {
+.c12 .c15 {
   margin-bottom: 0px;
 }
 
-.c12 .c14 .c0 {
+.c12 .c15 .c0 {
   padding: 0px 5px 5px 0px;
 }
 
@@ -4367,7 +4367,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
                   class="c19 c20"
                 >
                   <svg
-                    class="c8 c9"
+                    class="c7 c8"
                     height="1em"
                     viewBox="0 0 18 14"
                     width="1em"
@@ -4406,7 +4406,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
                   class="c19 c20"
                 >
                   <svg
-                    class="c8 c9"
+                    class="c7 c8"
                     height="1em"
                     viewBox="0 0 18 14"
                     width="1em"
@@ -4425,7 +4425,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
               class="c0 c21"
             >
               <label
-                class="c14 c15 c22"
+                class="c22 c15 c16"
               >
                 <div
                   class="c0 c13"
@@ -4448,7 +4448,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
                       class="c19 c20"
                     >
                       <svg
-                        class="c8 c9"
+                        class="c7 c8"
                         height="1em"
                         viewBox="0 0 18 14"
                         width="1em"
@@ -4490,7 +4490,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
                       class="c19 c20"
                     >
                       <svg
-                        class="c8 c9"
+                        class="c7 c8"
                         height="1em"
                         viewBox="0 0 18 14"
                         width="1em"
@@ -4527,7 +4527,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
                       class="c19 c20"
                     >
                       <svg
-                        class="c8 c9"
+                        class="c7 c8"
                         height="1em"
                         viewBox="0 0 18 14"
                         width="1em"
@@ -4587,7 +4587,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
             
           </div>
           <svg
-            class="sc-jTzLTM hLDAUw sc-bdVaJa fWLfA"
+            class="sc-bdVaJa fWLfA sc-jTzLTM hLDAUw"
             height="1em"
             theme="[object Object]"
             viewBox="0 0 12 8"
@@ -4612,7 +4612,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
               class="sc-dnqmqq fugAlG"
             >
               <label
-                class="sc-gzVnrw eujXuS sc-EHOje ednWaQ"
+                class="sc-EHOje ednWaQ sc-gzVnrw eujXuS"
                 for="All"
               >
                 All
@@ -4650,7 +4650,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
               class="sc-dnqmqq fugAlG"
             >
               <label
-                class="sc-gzVnrw eujXuS sc-EHOje ednWaQ"
+                class="sc-EHOje ednWaQ sc-gzVnrw eujXuS"
                 for="Dummy1"
               >
                 Dummy1
@@ -4689,13 +4689,13 @@ exports[`MultiSelect component with checkbox true should handle group name click
               class="sc-dnqmqq iCWiMV"
             >
               <label
-                class="sc-gzVnrw eujXuS sc-EHOje egTui"
+                class="sc-EHOje egTui sc-gzVnrw eujXuS"
               >
                 <div
                   class="sc-dnqmqq fugAlG"
                 >
                   <label
-                    class="sc-gzVnrw eujXuS sc-EHOje ednWaQ"
+                    class="sc-EHOje ednWaQ sc-gzVnrw eujXuS"
                     for="Nested Options"
                   >
                     Nested Options
@@ -4735,7 +4735,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
                   class="sc-dnqmqq fugAlG"
                 >
                   <label
-                    class="sc-gzVnrw eujXuS sc-EHOje ednWaQ"
+                    class="sc-EHOje ednWaQ sc-gzVnrw eujXuS"
                     for="Dummy2"
                   >
                     Dummy2
@@ -4773,7 +4773,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
                   class="sc-dnqmqq fugAlG"
                 >
                   <label
-                    class="sc-gzVnrw eujXuS sc-EHOje ednWaQ"
+                    class="sc-EHOje ednWaQ sc-gzVnrw eujXuS"
                     for="Dummy3"
                   >
                     Dummy3
@@ -4818,25 +4818,25 @@ exports[`MultiSelect component with checkbox true should handle group name click
 `;
 
 exports[`MultiSelect component with checkbox true should not render options when clicked outside 1`] = `
-.c9 {
+.c8 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill: #555;
 }
 
-.c25 .c8 * {
+.c25 .c7 * {
   fill: #ffffff;
 }
 
-.c25 .c28 + .c8 {
+.c25 .c28 + .c7 {
   cursor: not-allowed;
   margin-left: 10px;
 }
 
-.c16 {
+.c14 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -4859,7 +4859,7 @@ exports[`MultiSelect component with checkbox true should not render options when
   margin-left: 17px;
 }
 
-.c15 {
+.c16 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -5087,7 +5087,7 @@ exports[`MultiSelect component with checkbox true should not render options when
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -5139,7 +5139,7 @@ exports[`MultiSelect component with checkbox true should not render options when
   align-items: center;
 }
 
-.c20 .c8 {
+.c20 .c7 {
   width: 100%;
   height: 100%;
 }
@@ -5187,11 +5187,11 @@ exports[`MultiSelect component with checkbox true should not render options when
   padding: 5px;
 }
 
-.c12 .c14 {
+.c12 .c15 {
   margin-bottom: 0px;
 }
 
-.c12 .c14 .c0 {
+.c12 .c15 .c0 {
   padding: 0px 5px 5px 0px;
 }
 
@@ -5276,7 +5276,7 @@ exports[`MultiSelect component with checkbox true should not render options when
                   class="c19 c20"
                 >
                   <svg
-                    class="c8 c9"
+                    class="c7 c8"
                     height="1em"
                     viewBox="0 0 18 14"
                     width="1em"
@@ -5314,7 +5314,7 @@ exports[`MultiSelect component with checkbox true should not render options when
                   class="c19 c20"
                 >
                   <svg
-                    class="c8 c9"
+                    class="c7 c8"
                     height="1em"
                     viewBox="0 0 18 14"
                     width="1em"
@@ -5333,7 +5333,7 @@ exports[`MultiSelect component with checkbox true should not render options when
               class="c0 c21"
             >
               <label
-                class="c14 c15 c22"
+                class="c22 c15 c16"
               >
                 <div
                   class="c0 c13"
@@ -5356,7 +5356,7 @@ exports[`MultiSelect component with checkbox true should not render options when
                       class="c19 c20"
                     >
                       <svg
-                        class="c8 c9"
+                        class="c7 c8"
                         height="1em"
                         viewBox="0 0 18 14"
                         width="1em"
@@ -5397,7 +5397,7 @@ exports[`MultiSelect component with checkbox true should not render options when
                       class="c19 c20"
                     >
                       <svg
-                        class="c8 c9"
+                        class="c7 c8"
                         height="1em"
                         viewBox="0 0 18 14"
                         width="1em"
@@ -5434,7 +5434,7 @@ exports[`MultiSelect component with checkbox true should not render options when
                       class="c19 c20"
                     >
                       <svg
-                        class="c8 c9"
+                        class="c7 c8"
                         height="1em"
                         viewBox="0 0 18 14"
                         width="1em"
@@ -5461,34 +5461,34 @@ exports[`MultiSelect component with checkbox true should not render options when
 `;
 
 exports[`MultiSelect component with checkbox true should render all the options when input value is not matched to any option 1`] = `
-.c9 {
+.c8 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill: #555;
 }
 
-.c25 .c8 * {
+.c25 .c7 * {
   fill: #ffffff;
 }
 
-.c25 .c29 + .c8 {
+.c25 .c29 + .c7 {
   cursor: not-allowed;
   margin-left: 10px;
 }
 
-.c26 .c8 * {
+.c26 .c7 * {
   fill: #ffffff;
 }
 
-.c26 .c29 + .c8 {
+.c26 .c29 + .c7 {
   cursor: pointer;
   margin-left: 10px;
 }
 
-.c16 {
+.c14 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -5511,7 +5511,7 @@ exports[`MultiSelect component with checkbox true should render all the options 
   margin-left: 17px;
 }
 
-.c15 {
+.c16 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -5739,7 +5739,7 @@ exports[`MultiSelect component with checkbox true should render all the options 
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -5791,7 +5791,7 @@ exports[`MultiSelect component with checkbox true should render all the options 
   align-items: center;
 }
 
-.c20 .c8 {
+.c20 .c7 {
   width: 100%;
   height: 100%;
 }
@@ -5839,11 +5839,11 @@ exports[`MultiSelect component with checkbox true should render all the options 
   padding: 5px;
 }
 
-.c12 .c14 {
+.c12 .c15 {
   margin-bottom: 0px;
 }
 
-.c12 .c14 .c0 {
+.c12 .c15 .c0 {
   padding: 0px 5px 5px 0px;
 }
 
@@ -5924,7 +5924,7 @@ exports[`MultiSelect component with checkbox true should render all the options 
                 class="c19 c20"
               >
                 <svg
-                  class="c8 c9"
+                  class="c7 c8"
                   height="1em"
                   viewBox="0 0 18 14"
                   width="1em"
@@ -5962,7 +5962,7 @@ exports[`MultiSelect component with checkbox true should render all the options 
                 class="c19 c20"
               >
                 <svg
-                  class="c8 c9"
+                  class="c7 c8"
                   height="1em"
                   viewBox="0 0 18 14"
                   width="1em"
@@ -5981,7 +5981,7 @@ exports[`MultiSelect component with checkbox true should render all the options 
             class="c0 c21"
           >
             <label
-              class="c14 c15 c22"
+              class="c22 c15 c16"
             >
               <div
                 class="c0 c13"
@@ -6004,7 +6004,7 @@ exports[`MultiSelect component with checkbox true should render all the options 
                     class="c19 c20"
                   >
                     <svg
-                      class="c8 c9"
+                      class="c7 c8"
                       height="1em"
                       viewBox="0 0 18 14"
                       width="1em"
@@ -6045,7 +6045,7 @@ exports[`MultiSelect component with checkbox true should render all the options 
                     class="c19 c20"
                   >
                     <svg
-                      class="c8 c9"
+                      class="c7 c8"
                       height="1em"
                       viewBox="0 0 18 14"
                       width="1em"
@@ -6082,7 +6082,7 @@ exports[`MultiSelect component with checkbox true should render all the options 
                     class="c19 c20"
                   >
                     <svg
-                      class="c8 c9"
+                      class="c7 c8"
                       height="1em"
                       viewBox="0 0 18 14"
                       width="1em"
@@ -6108,12 +6108,12 @@ exports[`MultiSelect component with checkbox true should render all the options 
 `;
 
 exports[`MultiSelect component with checkbox true should render correctly with all the props given 1`] = `
-.c16 {
+.c15 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c16 * {
+.c15 * {
   fill: #555;
 }
 
@@ -6178,14 +6178,14 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   margin-left: 10px;
 }
 
-.c4 {
+.c2 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
 }
 
-.c3 {
+.c4 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -6364,7 +6364,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   cursor: not-allowed;
 }
 
-.c15 {
+.c16 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -6384,11 +6384,11 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   padding: 5px;
 }
 
-.c22 .c2 {
+.c22 .c3 {
   margin-bottom: 0px;
 }
 
-.c22 .c2 .c0 {
+.c22 .c3 .c0 {
   padding: 0px 5px 5px 0px;
 }
 
@@ -6452,7 +6452,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
           
         </div>
         <svg
-          class="c15 c10 c16"
+          class="c10 c15 c16"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"
@@ -6471,7 +6471,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
       />
     </div>
     <span
-      class="c19 c8 c9"
+      class="c8 c9 c19"
     >
       We will show reports based on Pharmacy
     </span>
@@ -6480,16 +6480,16 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 `;
 
 exports[`MultiSelect component with checkbox true should render correctly with default props 1`] = `
-.c9 {
+.c8 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill: #555;
 }
 
-.c16 {
+.c14 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -6512,7 +6512,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   margin-left: 17px;
 }
 
-.c15 {
+.c16 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -6713,7 +6713,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   cursor: pointer;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -6765,7 +6765,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   align-items: center;
 }
 
-.c20 .c8 {
+.c20 .c7 {
   width: 100%;
   height: 100%;
 }
@@ -6813,11 +6813,11 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   padding: 5px;
 }
 
-.c12 .c14 {
+.c12 .c15 {
   margin-bottom: 0px;
 }
 
-.c12 .c14 .c0 {
+.c12 .c15 .c0 {
   padding: 0px 5px 5px 0px;
 }
 
@@ -6897,7 +6897,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
                 class="c19 c20"
               >
                 <svg
-                  class="c8 c9"
+                  class="c7 c8"
                   height="1em"
                   viewBox="0 0 18 14"
                   width="1em"
@@ -6935,7 +6935,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
                 class="c19 c20"
               >
                 <svg
-                  class="c8 c9"
+                  class="c7 c8"
                   height="1em"
                   viewBox="0 0 18 14"
                   width="1em"
@@ -6954,7 +6954,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
             class="c0 c21"
           >
             <label
-              class="c14 c15 c22"
+              class="c22 c15 c16"
             >
               <div
                 class="c0 c13"
@@ -6977,7 +6977,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
                     class="c19 c20"
                   >
                     <svg
-                      class="c8 c9"
+                      class="c7 c8"
                       height="1em"
                       viewBox="0 0 18 14"
                       width="1em"
@@ -7018,7 +7018,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
                     class="c19 c20"
                   >
                     <svg
-                      class="c8 c9"
+                      class="c7 c8"
                       height="1em"
                       viewBox="0 0 18 14"
                       width="1em"
@@ -7055,7 +7055,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
                     class="c19 c20"
                   >
                     <svg
-                      class="c8 c9"
+                      class="c7 c8"
                       height="1em"
                       viewBox="0 0 18 14"
                       width="1em"
@@ -7081,34 +7081,34 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 `;
 
 exports[`MultiSelect component with checkbox true should render only matched options when input value changed 1`] = `
-.c9 {
+.c8 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill: #555;
 }
 
-.c21 .c8 * {
+.c21 .c7 * {
   fill: #ffffff;
 }
 
-.c21 .c24 + .c8 {
+.c21 .c24 + .c7 {
   cursor: not-allowed;
   margin-left: 10px;
 }
 
-.c22 .c8 * {
+.c22 .c7 * {
   fill: #ffffff;
 }
 
-.c22 .c24 + .c8 {
+.c22 .c24 + .c7 {
   cursor: pointer;
   margin-left: 10px;
 }
 
-.c16 {
+.c14 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -7116,7 +7116,7 @@ exports[`MultiSelect component with checkbox true should render only matched opt
   cursor: pointer;
 }
 
-.c15 {
+.c16 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -7310,7 +7310,7 @@ exports[`MultiSelect component with checkbox true should render only matched opt
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -7362,7 +7362,7 @@ exports[`MultiSelect component with checkbox true should render only matched opt
   align-items: center;
 }
 
-.c20 .c8 {
+.c20 .c7 {
   width: 100%;
   height: 100%;
 }
@@ -7410,11 +7410,11 @@ exports[`MultiSelect component with checkbox true should render only matched opt
   padding: 5px;
 }
 
-.c12 .c14 {
+.c12 .c15 {
   margin-bottom: 0px;
 }
 
-.c12 .c14 .c0 {
+.c12 .c15 .c0 {
   padding: 0px 5px 5px 0px;
 }
 
@@ -7495,7 +7495,7 @@ exports[`MultiSelect component with checkbox true should render only matched opt
                 class="c19 c20"
               >
                 <svg
-                  class="c8 c9"
+                  class="c7 c8"
                   height="1em"
                   viewBox="0 0 18 14"
                   width="1em"
@@ -7519,25 +7519,25 @@ exports[`MultiSelect component with checkbox true should render only matched opt
 `;
 
 exports[`MultiSelect component with checkbox true should render options correctly 1`] = `
-.c9 {
+.c8 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill: #555;
 }
 
-.c25 .c8 * {
+.c25 .c7 * {
   fill: #ffffff;
 }
 
-.c25 .c28 + .c8 {
+.c25 .c28 + .c7 {
   cursor: not-allowed;
   margin-left: 10px;
 }
 
-.c16 {
+.c14 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
@@ -7560,7 +7560,7 @@ exports[`MultiSelect component with checkbox true should render options correctl
   margin-left: 17px;
 }
 
-.c15 {
+.c16 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -7788,7 +7788,7 @@ exports[`MultiSelect component with checkbox true should render options correctl
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -7840,7 +7840,7 @@ exports[`MultiSelect component with checkbox true should render options correctl
   align-items: center;
 }
 
-.c20 .c8 {
+.c20 .c7 {
   width: 100%;
   height: 100%;
 }
@@ -7888,11 +7888,11 @@ exports[`MultiSelect component with checkbox true should render options correctl
   padding: 5px;
 }
 
-.c12 .c14 {
+.c12 .c15 {
   margin-bottom: 0px;
 }
 
-.c12 .c14 .c0 {
+.c12 .c15 .c0 {
   padding: 0px 5px 5px 0px;
 }
 
@@ -7973,7 +7973,7 @@ exports[`MultiSelect component with checkbox true should render options correctl
                 class="c19 c20"
               >
                 <svg
-                  class="c8 c9"
+                  class="c7 c8"
                   height="1em"
                   viewBox="0 0 18 14"
                   width="1em"
@@ -8011,7 +8011,7 @@ exports[`MultiSelect component with checkbox true should render options correctl
                 class="c19 c20"
               >
                 <svg
-                  class="c8 c9"
+                  class="c7 c8"
                   height="1em"
                   viewBox="0 0 18 14"
                   width="1em"
@@ -8030,7 +8030,7 @@ exports[`MultiSelect component with checkbox true should render options correctl
             class="c0 c21"
           >
             <label
-              class="c14 c15 c22"
+              class="c22 c15 c16"
             >
               <div
                 class="c0 c13"
@@ -8053,7 +8053,7 @@ exports[`MultiSelect component with checkbox true should render options correctl
                     class="c19 c20"
                   >
                     <svg
-                      class="c8 c9"
+                      class="c7 c8"
                       height="1em"
                       viewBox="0 0 18 14"
                       width="1em"
@@ -8094,7 +8094,7 @@ exports[`MultiSelect component with checkbox true should render options correctl
                     class="c19 c20"
                   >
                     <svg
-                      class="c8 c9"
+                      class="c7 c8"
                       height="1em"
                       viewBox="0 0 18 14"
                       width="1em"
@@ -8131,7 +8131,7 @@ exports[`MultiSelect component with checkbox true should render options correctl
                     class="c19 c20"
                   >
                     <svg
-                      class="c8 c9"
+                      class="c7 c8"
                       height="1em"
                       viewBox="0 0 18 14"
                       width="1em"

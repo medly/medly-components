@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import SingleSelect from './SingleSelect';
+import { SingleSelect } from './SingleSelect';
 
 const { act, render, fireEvent, cleanup } = TestUtils;
 afterEach(cleanup);

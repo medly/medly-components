@@ -163,12 +163,12 @@ exports[`SingleSelect component on pressing enter button should close options 1`
   border-radius: 4px;
 }
 
-.c8 {
+.c7 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c8 * {
+.c7 * {
   fill: #555;
 }
 
@@ -229,7 +229,7 @@ exports[`SingleSelect component on pressing enter button should close options 1`
   background-color: transparent;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -486,12 +486,12 @@ exports[`SingleSelect component on pressing enter button when option are not vis
   border-radius: 4px;
 }
 
-.c8 {
+.c7 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c8 * {
+.c7 * {
   fill: #555;
 }
 
@@ -552,7 +552,7 @@ exports[`SingleSelect component on pressing enter button when option are not vis
   background-color: transparent;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -791,12 +791,12 @@ exports[`SingleSelect component should close options when clicked outside 1`] = 
   border-radius: 4px;
 }
 
-.c8 {
+.c7 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c8 * {
+.c7 * {
   fill: #555;
 }
 
@@ -857,7 +857,7 @@ exports[`SingleSelect component should close options when clicked outside 1`] = 
   background-color: transparent;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1100,12 +1100,12 @@ exports[`SingleSelect component should not render options when clicked outside 1
   border-radius: 4px;
 }
 
-.c8 {
+.c7 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c8 * {
+.c7 * {
   fill: #555;
 }
 
@@ -1166,7 +1166,7 @@ exports[`SingleSelect component should not render options when clicked outside 1
   background-color: transparent;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1298,7 +1298,7 @@ exports[`SingleSelect component should not render options when clicked outside 2
             
           </div>
           <svg
-            class="sc-fjdhpX iEtKxJ sc-gZMcBi kLaBzw"
+            class="sc-gZMcBi kLaBzw sc-fjdhpX iEtKxJ"
             height="1em"
             theme="[object Object]"
             viewBox="0 0 12 8"
@@ -1501,12 +1501,12 @@ exports[`SingleSelect component should render all the options when input value i
   border-radius: 4px;
 }
 
-.c8 {
+.c7 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c8 * {
+.c7 * {
   fill: #555;
 }
 
@@ -1567,7 +1567,7 @@ exports[`SingleSelect component should render all the options when input value i
   background-color: transparent;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1662,32 +1662,32 @@ exports[`SingleSelect component should render all the options when input value i
 `;
 
 exports[`SingleSelect component should render correctly with all the props given 1`] = `
-.c3 {
+.c2 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
 }
 
-.c3::after {
+.c2::after {
   color: red;
   content: ' *';
 }
 
-.c14 {
+.c13 {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
 }
 
-.c2 {
+.c3 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c13 {
+.c14 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: #818A91;
@@ -1802,12 +1802,12 @@ exports[`SingleSelect component should render correctly with all the props given
   align-self: center;
 }
 
-.c10 {
+.c9 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c10 * {
+.c9 * {
   fill: #555;
 }
 
@@ -1869,7 +1869,7 @@ exports[`SingleSelect component should render correctly with all the props given
   cursor: not-allowed;
 }
 
-.c9 {
+.c10 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2088,12 +2088,12 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   border-radius: 4px;
 }
 
-.c8 {
+.c7 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c8 * {
+.c7 * {
   fill: #555;
 }
 
@@ -2141,7 +2141,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   cursor: pointer;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2380,12 +2380,12 @@ exports[`SingleSelect component should render matched options when input values 
   border-radius: 4px;
 }
 
-.c8 {
+.c7 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c8 * {
+.c7 * {
   fill: #555;
 }
 
@@ -2446,7 +2446,7 @@ exports[`SingleSelect component should render matched options when input values 
   background-color: transparent;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2677,12 +2677,12 @@ exports[`SingleSelect component should render options correctly 1`] = `
   border-radius: 4px;
 }
 
-.c8 {
+.c7 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c8 * {
+.c7 * {
   fill: #555;
 }
 
@@ -2743,7 +2743,7 @@ exports[`SingleSelect component should render options correctly 1`] = `
   background-color: transparent;
 }
 
-.c7 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2866,7 +2866,7 @@ exports[`SingleSelect component should render options correctly 2`] = `
           
         </div>
         <svg
-          class="sc-fjdhpX iEtKxJ sc-gZMcBi kLaBzw"
+          class="sc-gZMcBi kLaBzw sc-fjdhpX iEtKxJ"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"

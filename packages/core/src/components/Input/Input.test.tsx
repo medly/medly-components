@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import Input from './Input';
+import { Input } from './Input';
 
 describe('Input component', () => {
     it('should render correctly with all the props given', () => {

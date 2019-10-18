@@ -55,19 +55,19 @@ exports[`DatePicker component should render correctly 1`] = `
   position: relative;
 }
 
-.c2 {
+.c1 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
 }
 
-.c2::after {
+.c1::after {
   color: red;
   content: ' *';
 }
 
-.c1 {
+.c2 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;

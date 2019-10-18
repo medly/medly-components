@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import Modal from './Modal';
+import { Modal } from './Modal';
 
 describe('Modal component', () => {
     const onCloseHandler = jest.fn();

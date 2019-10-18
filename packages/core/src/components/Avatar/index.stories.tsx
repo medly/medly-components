@@ -1,7 +1,7 @@
 import { color, select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import Avatar from './Avatar';
+import { Avatar } from './Avatar';
 import { Props } from './types';
 
 const size: Array<Props['size']> = ['S', 'M', 'L', 'XL'];

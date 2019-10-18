@@ -2,7 +2,7 @@ import { boolean, select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { LabelPositions } from '../Label/types';
-import MultiSelect from './MultiSelect';
+import { MultiSelect } from './MultiSelect';
 
 const labelPosition: LabelPositions[] = ['top', 'bottom', 'left', 'right'];
 

@@ -2,7 +2,7 @@ import { boolean, number, select, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React, { useState } from 'react';
 import { Placement } from '../Popover/types';
-import DateRangePicker from './DateRangePicker';
+import { DateRangePicker } from './DateRangePicker';
 import { Props } from './types';
 
 const labelPosition: Array<Props['labelPosition']> = ['top', 'bottom', 'left', 'right'];
@@ -37,4 +37,4 @@ const DemoComponent = () => {
         />
     );
 };
-storiesOf('Core', module).add('DateRangePicker', () => <DemoComponent />);
+storiesOf('Core', module).add('DateRangePicker', DemoComponent);

@@ -1,7 +1,7 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
 import Text from '../Text';
-import { CardStyled as Card } from './Card.styled';
+import { Card } from './Card.styled';
 
 describe('Card component', () => {
     it('should render correctly with all the default props', () => {

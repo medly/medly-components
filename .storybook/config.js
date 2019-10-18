@@ -11,7 +11,7 @@ addDecorator(jsxDecorator);
 addDecorator(withKnobs);
 addDecorator(
     withPropsTable({
-        excludedPropTypes: ['theme']
+        excludedPropTypes: ['theme', 'ref']
     })
 );
 addDecorator(story => (

@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import Step from './Step/Step';
 import { StepperStyled } from './Stepper.styled';
 import { Props, StepperStaticProps } from './types';
 
-const Stepper: React.SFC<Props> & WithStyle & StepperStaticProps = props => {
+export const Stepper: SFC<Props> & WithStyle & StepperStaticProps = props => {
     const { size, activeStep, children, onStepClick } = props;
     return (
         <StepperStyled>
@@ -27,5 +27,3 @@ Stepper.defaultProps = {
 Stepper.Step = Step;
 Stepper.Style = StepperStyled;
 Stepper.displayName = 'Stepper';
-
-export default Stepper;

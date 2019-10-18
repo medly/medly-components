@@ -3,7 +3,7 @@ import React from 'react';
 import { DescriptionStyled, FieldStyled, FieldWithLabelStyled, LabelStyled } from './FieldWithLabel.styled';
 import { Props, StaticProps } from './types';
 
-const FieldWithLabel: React.SFC<Props> & WithStyle & StaticProps = props => {
+export const FieldWithLabel: React.SFC<Props> & WithStyle & StaticProps = props => {
     let isLabelPresent = false;
 
     React.Children.forEach(props.children, (child: any) => {
@@ -25,5 +25,3 @@ FieldWithLabel.defaultProps = {
     fullWidth: false,
     fieldWithMaxContent: false
 };
-
-export default FieldWithLabel;

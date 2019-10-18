@@ -1,7 +1,7 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
 import Radio from '../Radio';
-import RadioGroup from './RadioGroup';
+import { RadioGroup } from './RadioGroup';
 
 describe('Radio Group', () => {
     afterEach(TestUtils.cleanup);

@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React, { useState } from 'react';
-import DatePicker from './DatePicker';
+import { DatePicker } from './DatePicker';
 
 const DummmyComponent = ({ disabled, placeholder }: { disabled: boolean; placeholder?: string }) => {
     const [date, setDate] = useState(null);

@@ -1,11 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import Button from '../Button';
 import List from '../List';
 import { paginator } from './helper';
 import { PaginationProps } from './types';
 
-const Pagination: React.SFC<PaginationProps> & WithStyle = React.memo(props => {
+export const Pagination: SFC<PaginationProps> & WithStyle = React.memo(props => {
     const links = [];
     const { hideFirstLastLinks, hidePrevNextLinks, activePage, itemsPerPage, totalItems, pageRangeDisplayed, onPageClick } = props;
     const pagesConfig = paginator(totalItems, activePage, itemsPerPage, pageRangeDisplayed);
@@ -75,5 +75,3 @@ Pagination.defaultProps = {
     hideFirstLastLinks: false,
     hidePrevNextLinks: false
 };
-
-export default Pagination;

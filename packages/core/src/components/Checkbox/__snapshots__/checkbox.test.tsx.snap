@@ -152,14 +152,14 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   fill: #555;
 }
 
-.c2 {
+.c1 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
   margin: 0px 0px 0px 8px;
 }
 
-.c1 {
+.c2 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;

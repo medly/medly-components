@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import CheckboxGroup from './CheckboxGroup';
+import { CheckboxGroup } from './CheckboxGroup';
 
 describe('CheckboxGroup component', () => {
     afterEach(TestUtils.cleanup);

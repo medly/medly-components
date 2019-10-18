@@ -1,10 +1,10 @@
 import { DateSingleInput } from '@datepicker-react/styled';
-import React, { useState } from 'react';
+import React, { SFC, useState } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import { DatePickerStyled } from './DatePicker.styled';
 import { Props } from './types';
 
-const DatePicker: React.SFC<Props> = React.memo(props => {
+export const DatePicker: SFC<Props> = React.memo(props => {
     const { label, labelPosition, fullWidth, value, onChange, required, disabled, placeholder, ...restProps } = props;
     const [date, setDate] = useState(value || null);
     const [showDatepicker, setShowDatepicker] = useState(false);
@@ -59,5 +59,3 @@ DatePicker.defaultProps = {
     disabled: false,
     label: ''
 };
-
-export default DatePicker;

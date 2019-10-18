@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FieldWithLabel component should render properly when lable is not present 1`] = `
-.c4 {
+.c3 {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
@@ -15,7 +15,7 @@ exports[`FieldWithLabel component should render properly when lable is not prese
   margin-left: 17px;
 }
 
-.c3 {
+.c4 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: #818A91;
@@ -119,14 +119,14 @@ exports[`FieldWithLabel component should render properly when lable is not prese
 `;
 
 exports[`FieldWithLabel component should render properly with props labelPosition: bottom, fullWidth: false, fieldWithMaxContent: false 1`] = `
-.c2 {
+.c1 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
 }
 
-.c6 {
+.c5 {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
@@ -140,14 +140,14 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   margin-left: 0px;
 }
 
-.c1 {
+.c2 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c5 {
+.c6 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: #818A91;
@@ -240,14 +240,14 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 `;
 
 exports[`FieldWithLabel component should render properly with props labelPosition: left, fullWidth: true, fieldWithMaxContent: true 1`] = `
-.c2 {
+.c1 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
 }
 
-.c6 {
+.c5 {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
@@ -261,14 +261,14 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   margin-left: 0px;
 }
 
-.c1 {
+.c2 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c5 {
+.c6 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: #818A91;
@@ -320,14 +320,14 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 `;
 
 exports[`FieldWithLabel component should render properly with props labelPosition: right, fullWidth: true, fieldWithMaxContent: false 1`] = `
-.c2 {
+.c1 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
 }
 
-.c6 {
+.c5 {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
@@ -341,14 +341,14 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   margin-left: 0px;
 }
 
-.c1 {
+.c2 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c5 {
+.c6 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: #818A91;
@@ -414,14 +414,14 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 `;
 
 exports[`FieldWithLabel component should render properly with props labelPosition: top, fullWidth: false, fieldWithMaxContent: true 1`] = `
-.c2 {
+.c1 {
   font-size: 14px;
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
 }
 
-.c6 {
+.c5 {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
@@ -435,14 +435,14 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   margin-left: 0px;
 }
 
-.c1 {
+.c2 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c5 {
+.c6 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: #818A91;

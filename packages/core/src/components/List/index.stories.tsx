@@ -2,7 +2,7 @@ import { select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import Text from '../Text';
-import List from './List';
+import { List } from './List';
 import { Props } from './types';
 
 const variant: Array<Props['variant']> = ['horizontal', 'vertical'];

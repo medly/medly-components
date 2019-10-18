@@ -1,11 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
-import Label from '../Label';
 import { RadioFillStyled, RadioStyled, RadioWrapperStyled } from './Radio.styled';
 import { Props } from './types';
 
-const Radio: React.SFC<Props> & WithStyle = React.memo(
+export const Radio: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { size, label, required, labelPosition, labelSize, labelWeight, labelColor, ...restProps } = props;
         return (
@@ -34,5 +33,3 @@ Radio.defaultProps = {
     label: '',
     labelPosition: 'right'
 };
-
-export default Radio;

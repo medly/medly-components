@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import { InputStyled } from './Input.styled';
 import { Props } from './types';
 
-const Input: React.FunctionComponent<Props> & WithStyle = React.memo(
+export const Input: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { id, description, label, labelPosition, fullWidth, required } = props;
         return (
@@ -31,5 +31,3 @@ Input.defaultProps = {
     labelPosition: 'top',
     description: ''
 };
-
-export default Input;

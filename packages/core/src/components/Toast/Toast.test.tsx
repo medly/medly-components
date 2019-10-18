@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import Toast from '../Toast';
+import { Toast } from './Toast';
 import { Props } from './types';
 
 const { render, cleanup, fireEvent } = TestUtils;

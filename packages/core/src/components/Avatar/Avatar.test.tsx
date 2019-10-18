@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import Avatar from './Avatar';
+import { Avatar } from './Avatar';
 
 describe('Avatar component', () => {
     it('should render with default props', () => {

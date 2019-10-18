@@ -1,7 +1,7 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
 
-import Text from './Text';
+import { Text } from './Text';
 
 describe('Text Component', () => {
     it('should render span element by default', () => {

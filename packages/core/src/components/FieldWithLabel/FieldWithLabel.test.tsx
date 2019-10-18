@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import FieldWithLabel from './FieldWithLabel';
+import { FieldWithLabel } from './FieldWithLabel';
 
 describe('FieldWithLabel component', () => {
     test.each`

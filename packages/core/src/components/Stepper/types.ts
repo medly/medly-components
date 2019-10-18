@@ -18,8 +18,11 @@ export interface StepProps extends CounterProps {
 }
 
 export interface Props {
+    /** Stepper Size */
     size?: StepperSizes;
+    /** Active step */
     activeStep?: number;
+    /** Function to be called on clicking on any step */
     onStepClick?: (step: number) => void;
 }
 

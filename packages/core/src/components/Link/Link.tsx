@@ -1,10 +1,10 @@
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import Text from '../Text';
 import { LinkStyled } from './Link.styled';
 import { Props } from './types';
 
-const Link: React.FunctionComponent<Props> & WithStyle = React.forwardRef(({ href, ...props }, ref) => {
+export const Link: SFC<Props> & WithStyle = React.forwardRef(({ href, ...props }, ref) => {
     return (
         <LinkStyled href={href} {...props} ref={ref}>
             {React.Children.map(props.children, c => {
@@ -16,5 +16,3 @@ const Link: React.FunctionComponent<Props> & WithStyle = React.forwardRef(({ hre
 
 Link.displayName = 'Link';
 Link.Style = LinkStyled;
-
-export default Link;

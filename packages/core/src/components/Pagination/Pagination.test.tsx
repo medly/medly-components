@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import Pagination from './Pagination';
+import { Pagination } from './Pagination';
 
 const { render, fireEvent, cleanup } = TestUtils;
 afterEach(cleanup);

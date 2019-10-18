@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import Stepper from './Stepper';
+import { Stepper } from './Stepper';
 import { Props } from './types';
 
 const renderer = (props: Props = {}) =>

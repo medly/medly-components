@@ -1,6 +1,6 @@
 import { ExpandMoreIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
-import { centerAligned, css, fullWidth, styled, WithThemeProp } from '@medly-components/utils';
+import { fullWidth, styled, WithThemeProp } from '@medly-components/utils';
 import FieldWithLabel from '../FieldWithLabel';
 import Input from '../Input';
 import { SelectWrapperProps } from './types';

@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import Checkbox from './Checkbox';
+import { Checkbox } from './Checkbox';
 
 describe('Checkbox component', () => {
     it('should render correctly with all the default props', () => {

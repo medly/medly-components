@@ -5,7 +5,7 @@ import React from 'react';
 import Button from '../Button';
 import Input from '../Input';
 import SingleSelect from '../SingleSelect';
-import Modal from './Modal';
+import { Modal } from './Modal';
 
 const options = [{ value: '0', label: 'Admin' }, { value: '1', label: 'Pharmacist' }, { value: '2', label: 'Covered Entity' }];
 

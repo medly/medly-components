@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useEffect, useMemo, useReducer, useState } from 'react';
+import React, { SFC, useEffect, useMemo, useReducer, useState } from 'react';
 import Body from './Body';
 import Head from './Head';
 import { addSizeToColumnConfig } from './helpers';
@@ -9,7 +9,7 @@ import { TableStyled } from './Table.styled';
 import { ColumnConfig, Props, StaticProps } from './types';
 import useRowSelector from './useRowSelector';
 
-const Table: React.SFC<Props> & WithStyle & StaticProps = props => {
+export const Table: SFC<Props> & WithStyle & StaticProps = props => {
     const { data, onRowClick, onSort, uniqueKeyName, isSelectable, selectedRows, onRowSelection } = props,
         checkboxColumnConfig: ColumnConfig = { title: 'ch', field: 'medly-table-checkbox', formatter: 'checkbox', hide: !isSelectable };
 
@@ -85,5 +85,3 @@ Table.defaultProps = {
 Table.displayName = 'Table';
 Table.SelectableColumns = SelectableColumns;
 Table.Style = TableStyled;
-
-export default Table;

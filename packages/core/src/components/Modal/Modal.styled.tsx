@@ -1,6 +1,5 @@
 import { defaultTheme } from '@medly-components/theme';
 import { centerAligned, styled } from '@medly-components/utils';
-import { Props } from './types';
 
 export const ModalBackgroundStyled = styled('div')`
     position: fixed;

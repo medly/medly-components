@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import Radio from './Radio';
+import { Radio } from './Radio';
 
 describe('Radio component', () => {
     it('should render correctly with all the default props', () => {

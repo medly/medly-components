@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import Chip from './Chip';
+import { Chip } from './Chip';
 
 describe('Chip component', () => {
     afterEach(TestUtils.cleanup);

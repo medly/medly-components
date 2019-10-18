@@ -2,7 +2,7 @@ import { action } from '@storybook/addon-actions';
 import { select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import Toast from './Toast';
+import { Toast } from './Toast';
 import { Props } from './types';
 
 const variant: Array<Props['variant']> = ['error', 'warning', 'success', 'info'];

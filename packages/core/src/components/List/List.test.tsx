@@ -1,7 +1,7 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
 
-import List from './List';
+import { List } from './List';
 
 describe('List component', () => {
     it('should render horizontal list', () => {

@@ -10,11 +10,18 @@ export interface CheckboxWrapperProps extends DivProps, WithThemeProp {
 }
 
 export interface Props extends InputProps, WithThemeProp {
-    labelPosition?: LabelPositions;
-    labelSize?: FontSizes;
-    labelColor?: string;
-    labelWeight?: FontWeights;
-    required?: boolean;
-    size?: CheckboxSizes;
+    /** Checkbox label */
     label?: string;
+    /** Checkbox size */
+    size?: CheckboxSizes;
+    /** Label position */
+    labelPosition?: LabelPositions;
+    /** Label size */
+    labelSize?: FontSizes;
+    /** Label color */
+    labelColor?: string;
+    /** Label weight */
+    labelWeight?: FontWeights;
+    /** To be used if required in any form for example user needs to check 'I Agree' */
+    required?: boolean;
 }

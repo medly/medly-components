@@ -1,11 +1,11 @@
 import { BugIcon, CheckCircleIcon, ClearIcon, ExclamationCircleIcon, ExclamationTriangleIcon } from '@medly-components/icons';
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import React, { useEffect, useState } from 'react';
+import React, { SFC, useEffect, useState } from 'react';
 import Text from '../Text';
 import * as Styled from './Toast.styled';
 import { Props } from './types';
 
-export const Toast: React.SFC<Props> & WithStyle = React.memo(props => {
+export const Toast: SFC<Props> & WithStyle = React.memo(props => {
     const { variant, onClose, ...restProps } = props,
         [show, setShowState] = useState(false);
 
@@ -32,5 +32,3 @@ export const Toast: React.SFC<Props> & WithStyle = React.memo(props => {
 });
 Toast.displayName = 'Toast';
 Toast.Style = Styled.Toast;
-
-export default Toast;

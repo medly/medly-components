@@ -7,9 +7,17 @@ import { Props } from './types';
 
 const position: Array<Props['position']> = ['top-start', 'top', 'top-end', 'right', 'left', 'bottom-start', 'bottom', 'bottom-end'];
 
-storiesOf('Core', module).add('ToastContainer', () => (
-    <ToastContainer position={select('Position', position, 'top')}>
-        <Toast variant="success">Hello</Toast>
-        <Toast variant="success">Guest</Toast>
-    </ToastContainer>
-));
+storiesOf('Core', module).add(
+    'ToastContainer',
+    () => (
+        <ToastContainer position={select('Position', position, 'top')}>
+            <Toast variant="success">Hello</Toast>
+            <Toast variant="success">Guest</Toast>
+        </ToastContainer>
+    ),
+    {
+        props: {
+            propTablesExclude: [Toast]
+        }
+    }
+);

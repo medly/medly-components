@@ -1,6 +1,6 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
-import Label from './Label';
+import { Label } from './Label';
 
 describe('Label component', () => {
     it('should render correctly with default props', () => {

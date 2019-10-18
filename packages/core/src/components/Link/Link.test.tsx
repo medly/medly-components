@@ -1,7 +1,7 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
 import Text from '../Text';
-import Link from './Link';
+import { Link } from './Link';
 
 describe('Link Component', () => {
     it('should render with default props', () => {

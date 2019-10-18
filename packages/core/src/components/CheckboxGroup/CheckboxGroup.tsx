@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import Checkbox from '../Checkbox';
 import FieldWithLabel from '../FieldWithLabel';
 import { Props } from './types';
 
-const CheckboxGroup: React.SFC<Props> & WithStyle = React.memo(props => {
+export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(props => {
     const {
         defaultValues,
         onChange,
@@ -68,9 +68,8 @@ const CheckboxGroup: React.SFC<Props> & WithStyle = React.memo(props => {
 CheckboxGroup.displayName = 'CheckboxGroup';
 CheckboxGroup.Style = FieldWithLabel.Style;
 CheckboxGroup.defaultProps = {
+    disabled: false,
     defaultValues: [],
     showSelectAll: false,
     labelPosition: 'left'
 };
-
-export default CheckboxGroup;
