@@ -2,7 +2,7 @@ import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 
 export interface Option {
-    value: string;
+    value: any;
     label: string;
     selected?: boolean;
 }
