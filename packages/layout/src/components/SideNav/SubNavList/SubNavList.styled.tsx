@@ -4,7 +4,7 @@ import { styled } from '@medly-components/utils';
 import NavItem from '../NavItem';
 import { NavListProps } from '../types';
 
-export const SubNavListStyled = styled('ul')<NavListProps>`
+export const SubNavList = styled('ul')<NavListProps>`
     grid-area: submenu;
     padding: 0px;
     margin: 0px;

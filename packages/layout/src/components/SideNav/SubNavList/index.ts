@@ -1,3 +1,3 @@
-import { SubNavListStyled as SubNavList } from './SubNavList.styled';
+import { SubNavList } from './SubNavList.styled';
 
 export default SubNavList;

@@ -1,13 +1,14 @@
 import { Text } from '@medly-components/core';
 import { EditIcon, HomeIcon, SearchIcon } from '@medly-components/icons';
+import { boolean } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import SideNav from './SideNav';
+import { SideNav } from './SideNav';
 
 storiesOf('Layout', module).add(
     'SideNav',
     () => (
-        <SideNav>
+        <SideNav closeOnOuterClick={boolean('Close on outer click', false)}>
             <SideNav.NavItem as={'a'} href="#">
                 <SideNav.NavIcon>
                     <HomeIcon />
@@ -49,7 +50,7 @@ storiesOf('Layout', module).add(
     ),
     {
         props: {
-            propTablesExclude: [Text, SideNav.NavItem]
+            propTablesExclude: [Text, HomeIcon, SideNav.NavIcon, SearchIcon, EditIcon]
         }
     }
 );

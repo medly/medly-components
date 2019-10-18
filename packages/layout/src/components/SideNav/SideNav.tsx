@@ -1,14 +1,14 @@
 import { Text } from '@medly-components/core';
 import { BurgerIcon } from '@medly-components/icons';
 import { useOuterClickNotifier, WithStyle } from '@medly-components/utils';
-import React, { useRef, useState } from 'react';
+import React, { SFC, useRef, useState } from 'react';
 import NavItem from './NavItem';
 import NavList from './NavList';
 import * as Styled from './SideNav.styled';
 import SubNavList from './SubNavList';
 import { SideNavProps, SideNavStaticProps } from './types';
 
-export const SideNav: React.SFC<SideNavProps> & WithStyle & SideNavStaticProps = props => {
+export const SideNav: SFC<SideNavProps> & WithStyle & SideNavStaticProps = props => {
     const ref = useRef(null);
     const [open, setOpenState] = useState(false),
         Logo = props.logo;
@@ -52,5 +52,3 @@ SideNav.Style = Styled.SideNav;
 SideNav.defaultProps = {
     closeOnOuterClick: false
 };
-
-export default SideNav;
