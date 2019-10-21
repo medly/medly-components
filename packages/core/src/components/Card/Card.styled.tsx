@@ -73,7 +73,7 @@ const clickable = (props: Partial<CardTheme>) => css`
     }
 `;
 
-export const Card: SFC<Props> = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<Props>`
+export const Card = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<Props>`
     display: inline-flex;
     align-self: stretch;
     margin: 5px;
