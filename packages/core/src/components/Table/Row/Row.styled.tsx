@@ -8,7 +8,6 @@ export const Row = styled('li').attrs(({ gridTemplateColumns }: GridTemplateProp
 }))<GridTemplateProps>`
     display: grid;
     position: relative;
-    z-index: 0;
     grid-template-rows: minmax(30px, auto);
     align-items: center;
 

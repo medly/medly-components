@@ -7,5 +7,5 @@ export const columnsWidth: ColumnsWidth = {
     checkbox: 'minmax(50px, 0.25fr)',
     'text-short': 'minmax(120px, 1fr)',
     'text-long': 'minmax(150px, 2fr)',
-    'react-component': 'minmax(150px, 2fr)'
+    'react-component': 'minmax(150px, 1fr)'
 };

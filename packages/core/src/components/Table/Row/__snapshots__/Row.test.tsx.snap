@@ -4,7 +4,6 @@ exports[`Row should render NoResult properly 1`] = `
 .c0 {
   display: grid;
   position: relative;
-  z-index: 0;
   grid-template-rows: minmax(30px,auto);
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -28,7 +27,6 @@ exports[`Row should render row properly 1`] = `
 .c0 {
   display: grid;
   position: relative;
-  z-index: 0;
   grid-template-rows: minmax(30px,auto);
   -webkit-align-items: center;
   -webkit-box-align: center;

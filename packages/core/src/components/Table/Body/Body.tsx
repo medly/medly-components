@@ -15,20 +15,20 @@ const Body: React.SFC<Props> = React.memo(props => {
     const getRow = (rowData: any, configs: ColumnConfig[] = columns, field = '') => {
         const cells: React.ReactElement[] = [];
 
-        configs.forEach(config => {
+        configs.forEach((config, index) => {
             if (!config) return null;
 
             const fieldName = `${field && `${field}.`}${config.field}`;
 
             return config.children
                 ? cells.push(
-                      <GroupCell key={fieldName} hide={config.hide} gridTemplateColumns={getGridTemplateColumns(config.children)}>
+                      <GroupCell key={index} hide={config.hide} gridTemplateColumns={getGridTemplateColumns(config.children)}>
                           {getRow(rowData[config.field], config.children, config.field)}
                       </GroupCell>
                   )
                 : cells.push(
                       <Cell
-                          key={fieldName}
+                          key={index}
                           data={rowData[config.field]}
                           rowId={rowData[uniqueKeyName]}
                           dottedFieldName={fieldName}

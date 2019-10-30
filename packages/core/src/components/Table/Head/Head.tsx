@@ -23,10 +23,10 @@ const Head: React.SFC<Props> = React.memo(props => {
     const headCell = (configs: ColumnConfig[] = columns, field = '') => {
         const cells: React.ReactElement[] = [];
 
-        configs.forEach(config => {
+        configs.forEach((config, index) => {
             return config.children
                 ? cells.push(
-                      <GroupCell key={config.field} hide={config.hide} gridTemplateColumns={getGridTemplateColumns(config.children)}>
+                      <GroupCell key={index} hide={config.hide} gridTemplateColumns={getGridTemplateColumns(config.children)}>
                           <GroupCellTitle>{config.title}</GroupCellTitle>
                           {headCell(config.children, config.field)}
                       </GroupCell>
@@ -38,7 +38,7 @@ const Head: React.SFC<Props> = React.memo(props => {
                           frozen={config.frozen}
                           hide={config.hide}
                           enableSorting={config.sort}
-                          key={field ? `${field}.${config.field}` : config.field}
+                          key={index}
                           field={field ? `${field}.${config.field}` : config.field}
                           onSortChange={handleSortChange}
                           onWidthChange={handleWidthChange}

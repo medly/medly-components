@@ -11,7 +11,13 @@ import useRowSelector from './useRowSelector';
 
 export const Table: SFC<Props> & WithStyle & StaticProps = props => {
     const { data, onRowClick, onSort, uniqueKeyName, isSelectable, selectedRows, onRowSelection } = props,
-        checkboxColumnConfig: ColumnConfig = { title: 'ch', field: 'medly-table-checkbox', formatter: 'checkbox', hide: !isSelectable };
+        checkboxColumnConfig: ColumnConfig = {
+            title: 'ch',
+            field: 'medly-table-checkbox',
+            formatter: 'checkbox',
+            hide: !isSelectable,
+            frozen: true
+        };
 
     const [ids, selectedIds, toggleId] = useRowSelector(data.map(dt => dt[uniqueKeyName]), selectedRows),
         [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
