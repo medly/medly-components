@@ -6,6 +6,7 @@ import { CssBaseline } from '../packages/core/src';
 import { ThemeProvider } from '../packages/utils/src';
 import { defaultTheme } from '../packages/theme/src';
 import { withPropsTable } from 'storybook-addon-react-docgen';
+import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
 
 addDecorator(jsxDecorator);
 addDecorator(withKnobs);
@@ -24,15 +25,16 @@ addDecorator(story => (
 ));
 
 addParameters({
+    docs: {
+        container: DocsContainer,
+        page: DocsPage
+    }
+});
+addParameters({
     options: {
         name: 'Medly-Components',
         addonPanelInRight: true
     }
 });
 
-const req = require.context('../packages', true, /\.stories\.tsx$/);
-function loadStories() {
-    req.keys().forEach(req);
-}
-
-configure(loadStories, module);
+configure(require.context('../packages', true, /\.stories\.(tsx|mdx)$/), module);

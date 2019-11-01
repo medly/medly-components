@@ -2,7 +2,7 @@ module.exports = {
     collectCoverage: true,
     collectCoverageFrom: [
         '<rootDir>/packages/**/src/**/*.(ts|tsx)',
-        '!<rootDir>/packages/**/src/**/*.stories.(ts|tsx)',
+        '!<rootDir>/packages/**/src/**/*.stories.(ts|tsx|mdx)',
         '!<rootDir>/packages/**/src/**/*.test.(ts|tsx)',
         '!<rootDir>/packages/theme/**/*',
         '!<rootDir>/packages/utils/**/*',

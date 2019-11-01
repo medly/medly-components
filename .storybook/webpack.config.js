@@ -1,17 +1,51 @@
 const path = require('path');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
 
 const packages = path.resolve(__dirname, '../', 'packages');
 const utils = path.resolve(__dirname, '../', '.storybook/utils');
 const pathToInlineSvg = path.resolve(__dirname, '../packages/icons/src/assets/');
+const tsconfigPath = path.resolve(__dirname, '../tsconfig.json');
 
 module.exports = ({ config, mode }) => {
+    config.module.rules.push({
+        test: /\.(stories|story)\.mdx$/,
+        include: [packages],
+        exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /__dist__/],
+        use: [
+            {
+                loader: 'babel-loader'
+            },
+            {
+                loader: '@mdx-js/loader',
+                options: {
+                    compilers: [createCompiler({})]
+                }
+            }
+        ]
+    });
+
     config.module.rules.push({
         test: /\.(ts|tsx)$/,
         include: [packages, utils],
         exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /__dist__/],
-        use: ['babel-loader', 'stylelint-custom-processor-loader', 'react-docgen-typescript-loader']
+        use: [
+            {
+                loader: 'babel-loader'
+            },
+            {
+                loader: 'react-docgen-typescript-loader',
+                options: {
+                    tsconfigPath,
+                    skipPropsWithName: ['theme'],
+                    shouldExtractLiteralValuesFromEnum: true
+                }
+            },
+            {
+                loader: 'stylelint-custom-processor-loader'
+            }
+        ]
     });
 
     const fileLoaderRule = config.module.rules.find(rule => rule.test.test('.svg'));

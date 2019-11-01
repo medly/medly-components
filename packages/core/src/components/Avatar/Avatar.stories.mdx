@@ -1,0 +1,33 @@
+import { withKnobs, select, color } from '@storybook/addon-knobs';
+import { Avatar } from './Avatar.tsx';
+import { AvatarTheme, defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import { Props as AvatarProps, Theme } from './types';
+const size = ['S', 'M', 'L', 'XL'];
+
+<Meta title="Core" component={Avatar} />
+
+# Avatar
+
+### Displays an image or text that represents a user or organization
+
+<Preview withToolbar>
+    <Story name="Avatar">
+        <>
+            <Avatar size={select('Size', size, 'M')}>
+                <img src="http://i.pravatar.cc/150?img=66" />
+            </Avatar>
+            <Avatar size={select('Size', size, 'M')} bgColor={color('Background', 'aqua')} textColor={color('Text', 'white')}>
+                M
+            </Avatar>
+        </>
+    </Story>
+</Preview>
+
+### Props
+
+<Props of={Avatar} />
+
+### AvatarTheme Defaults
+
+<code>{JSON.stringify(defaultTheme.avatar, null, 2)}</code>
