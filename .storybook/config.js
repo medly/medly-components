@@ -37,4 +37,11 @@ addParameters({
     }
 });
 
-configure(require.context('../packages', true, /\.stories\.(tsx|mdx)$/), module);
+configure(
+    [
+        require.context('../docs', false, /\.stories\.mdx$/),
+        require.context('../packages', false, /Introduction\.stories\.mdx/),
+        require.context('../packages', true, /\.stories\.(tsx|mdx)$/)
+    ],
+    module
+);
