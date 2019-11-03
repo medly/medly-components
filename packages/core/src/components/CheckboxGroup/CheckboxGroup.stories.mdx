@@ -1,0 +1,27 @@
+import { select, color } from '@storybook/addon-knobs';
+import { CheckboxGroup } from './CheckboxGroup';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './CheckboxGroup.stories';
+
+<Meta title="Core/CheckboxGroup" component={CheckboxGroup} />
+
+# CheckboxGroup
+
+### Displays group of checkboxes
+
+<Preview withToolbar>
+    <Story name="basic">{stories.Basic}</Story>
+</Preview>
+
+### Props
+
+<Props of={CheckboxGroup} />
+
+### CheckboxTheme
+
+<Props of={stories.ThemeInterface} />
+
+### CheckboxTheme Defaults
+
+<code>{JSON.stringify(defaultTheme.checkbox, null, 2)}</code>

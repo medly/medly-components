@@ -1,5 +1,5 @@
+import { CheckboxTheme } from '@medly-components/theme';
 import { boolean, select, text } from '@storybook/addon-knobs';
-import { storiesOf } from '@storybook/react';
 import React, { useState } from 'react';
 import { CheckboxGroup } from './CheckboxGroup';
 import { Props } from './types';
@@ -7,7 +7,9 @@ import { Props } from './types';
 const labelPosition: Array<Props['labelPosition']> = ['left', 'right', 'top', 'bottom'];
 const size: Array<Props['size']> = ['XS', 'S', 'M', 'L', 'XL'];
 
-const WrapperComponent = () => {
+export const ThemeInterface = (props: CheckboxTheme): any => null;
+
+export const Basic = () => {
     const [value, setValue] = useState(['grapes']);
 
     return (
@@ -23,5 +25,3 @@ const WrapperComponent = () => {
         />
     );
 };
-
-storiesOf('Core', module).add('CheckboxGroup', WrapperComponent);

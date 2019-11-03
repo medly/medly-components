@@ -4,14 +4,14 @@ import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 const size = ['S', 'M', 'L', 'XL'];
 
-<Meta title="Core" component={Avatar} />
+<Meta title="Core/Avatar" component={Avatar} />
 
 # Avatar
 
 ### Displays an image or text that represents a user or organization
 
 <Preview withToolbar>
-    <Story name="Avatar">
+    <Story name="default">
         <>
             <Avatar size={select('Size', size, 'M')}>
                 <img src="http://i.pravatar.cc/150?img=66" />
