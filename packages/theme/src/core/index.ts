@@ -16,6 +16,7 @@ import select from './select';
 import spacing from './spacing';
 import stepper from './stepper';
 import table from './table';
+import tabs from './tabs';
 import text from './text';
 import toast from './toast';
 
@@ -37,6 +38,7 @@ export const coreDefaultTheme = {
     stepper,
     spacing,
     text,
+    tabs,
     toast,
     table,
     reactDatepicker

@@ -14,6 +14,7 @@ export * from './font/types';
 export * from './select/types';
 export * from './stepper/types';
 export * from './spacing/types';
+export * from './tabs/types';
 export * from './text/types';
 export * from './toast/types';
 export * from './input/types';

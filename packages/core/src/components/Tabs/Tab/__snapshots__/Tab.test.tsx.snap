@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tab should render properly 1`] = `
+.c1 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c0 {
+  background-color: transparent;
+  border: none;
+  padding: 8px 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .c2 {
+  margin-bottom: 5px;
+}
+
+<div>
+  <button
+    aria-controls="panel-tab1"
+    aria-selected="false"
+    class="c0"
+    id="tab1"
+    role="tab"
+    tabindex="-1"
+    type="button"
+  >
+    <span
+      class="c1"
+    >
+      Add
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Tab should render properly with icon 1`] = `
+.c2 {
+  font-size: 16px;
+  cursor: inherit;
+}
+
+.c2 * {
+  fill: #555;
+}
+
+.c3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c0 {
+  background-color: transparent;
+  border: none;
+  padding: 8px 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .c1 {
+  margin-bottom: 5px;
+}
+
+<div>
+  <button
+    aria-controls="panel-tab1"
+    aria-selected="false"
+    class="c0"
+    id="tab1"
+    role="tab"
+    tabindex="-1"
+    type="button"
+  >
+    <svg
+      class="c1 c2"
+      focusable="false"
+      height="1em"
+      viewBox="0 0 14 14"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14 8H8v6H6V8H0V6h6V0h2v6h6z"
+        fill="none"
+        fill-rule="evenodd"
+      />
+    </svg>
+    <span
+      class="c3"
+    >
+      Add
+    </span>
+  </button>
+</div>
+`;

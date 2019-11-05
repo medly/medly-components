@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabPanel should render only avtive tab content 1`] = `
+.c0 {
+  padding: 10px;
+}
+
+<div>
+  <div
+    aria-labelledby="tab1"
+    class="c0"
+    id="panel-tab1"
+    role="tabpanel"
+    tabindex="0"
+  >
+    Content for the add panel
+  </div>
+</div>
+`;

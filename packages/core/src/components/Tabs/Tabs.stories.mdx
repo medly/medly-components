@@ -1,0 +1,51 @@
+import { HTMLProps } from '@medly-components/utils';
+import { Tabs } from './Tabs.tsx';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Tabs.stories';
+
+<Meta title="Core/Tabs" component={Tabs} />
+
+# Tabs
+
+### Displays specific content based on selected tab
+
+<Preview withToolbar>
+    <Story name="Basic">{stories.Basic}</Story>
+</Preview>
+
+### WithIcon
+
+We can provide icon also using `icon` prop.
+
+<Preview withToolbar>
+    <Story name="WithIcon">{stories.WithIcon}</Story>
+</Preview>
+
+### Uncontrolled
+
+When using uncontrolled `Tabs` component you do not need to provide any prop. By default first tab is active if you haven't provide `defaultActive` prop.
+
+<Preview withToolbar>
+    <Story name="Uncontrolled">{stories.Uncontrolled}</Story>
+</Preview>
+
+### Controlled
+
+When using controlled `Tabs` component you have to provide `active` and `onChange` prop.
+
+<Preview withToolbar>
+    <Story name="Controlled">{stories.Controlled}</Story>
+</Preview>
+
+### Props
+
+<Props of={stories.Basic} />
+
+### TabsTheme
+
+<Props of={stories.ThemeInterface} />
+
+### TabsTheme defaults
+
+<code>{JSON.stringify(defaultTheme.tabs, null, 2)}</code>
