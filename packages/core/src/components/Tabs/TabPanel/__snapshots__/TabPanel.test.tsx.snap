@@ -5,6 +5,10 @@ exports[`TabPanel should render only avtive tab content 1`] = `
   padding: 10px;
 }
 
+.c0:focus {
+  outline: none;
+}
+
 <div>
   <div
     aria-labelledby="tab1"
