@@ -58,7 +58,6 @@ export const BurgerIconStyled = styled('button')<BurgerIconStyledProps>`
     width: calc(${getSize} * 1.33);
     height: ${getSize};
     position: relative;
-    margin: 10px;
     transform: rotate(0deg);
     transition: 0.2s ease-in-out;
     cursor: pointer;

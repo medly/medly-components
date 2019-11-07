@@ -36,7 +36,6 @@ exports[`BurgerIcon component should render with all props given 1`] = `
   width: calc(24px * 1.33);
   height: 24px;
   position: relative;
-  margin: 10px;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -123,7 +122,6 @@ exports[`BurgerIcon component should render with default props 1`] = `
   width: calc(36px * 1.33);
   height: 36px;
   position: relative;
-  margin: 10px;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
