@@ -1,0 +1,30 @@
+import { HTMLProps } from '@medly-components/utils';
+import SvgIcon from './SvgIcon';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Icons.stories';
+import { withKnobs } from '@storybook/addon-knobs';
+
+<Meta title="Icons" component={SvgIcon} />
+
+# Icon
+
+### A collection of icons in SVG format.
+
+You can directly import from `@medly-components/icons`
+
+<Preview withToolbar>
+    <Story name="Icons">{stories.Basic}</Story>
+</Preview>
+
+### Props
+
+<Props of={stories.Basic} />
+
+### IconsTheme
+
+<Props of={stories.ThemeInterface} />
+
+### TabsTheme defaults
+
+<code>{JSON.stringify(defaultTheme.icon, null, 2)}</code>
