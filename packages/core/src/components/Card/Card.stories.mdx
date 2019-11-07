@@ -1,0 +1,56 @@
+import { HTMLProps } from '@medly-components/utils';
+import { Card } from './Card.tsx';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Card.stories';
+
+<Meta title="Core/Card" component={Card} />
+
+# Card
+
+### Simple card component with lot of customization.
+
+You can play with the props in canvas tab.
+
+<Preview withToolbar>
+    <Story name="Basic">{stories.Basic}</Story>
+</Preview>
+
+### Variants
+
+<Preview>
+    <Card variant="solid">
+        <Text>Solid Card</Text>
+    </Card>
+    <Card variant="outlined">
+        <Text>Outlined Card</Text>
+    </Card>
+    <Card variant="flat">
+        <Text>Flat Card</Text>
+    </Card>
+</Preview>
+
+### Children direction
+
+<Preview>
+    <Card variant="outlined" flowDirection="horizontal">
+        <Text>1</Text>
+        <Text>Horizontal</Text>
+    </Card>
+    <Card variant="outlined" flowDirection="vertical">
+        <Text>1</Text>
+        <Text>Vertical</Text>
+    </Card>
+</Preview>
+
+### Props
+
+<Props of={stories.Basic} />
+
+### ButtonTheme
+
+<Props of={stories.ThemeInterface} />
+
+### ButtonTheme Defaults
+
+<code>{JSON.stringify(defaultTheme.card, null, 2)}</code>

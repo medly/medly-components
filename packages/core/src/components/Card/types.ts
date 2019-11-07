@@ -9,7 +9,7 @@ export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
     to?: string;
     /** Card design */
     variant?: 'outlined' | 'solid' | 'flat';
-    /** Direction of the text */
+    /** Direction of the children */
     flowDirection?: 'vertical' | 'horizontal';
     /** Separotor between each children */
     separator?: boolean;

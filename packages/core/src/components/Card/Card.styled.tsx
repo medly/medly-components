@@ -1,4 +1,4 @@
-import { CardTheme } from '@medly-components/theme';
+import { CardTheme, defaultTheme } from '@medly-components/theme';
 import { css, fullHeight, fullWidth, styled } from '@medly-components/utils';
 import { SFC } from 'react';
 import { ItemsPosition, Props } from './types';
@@ -98,6 +98,7 @@ export const Card = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<
 `;
 
 Card.defaultProps = {
+    theme: defaultTheme,
     variant: 'outlined',
     flowDirection: 'vertical',
     separator: false,
