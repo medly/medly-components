@@ -1,0 +1,58 @@
+import { HTMLProps } from '@medly-components/utils';
+import { Button } from './Button.tsx';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Button.stories';
+
+<Meta title="Core/Button" component={Button} />
+
+# Button
+
+### Simple button component with different design & colors.
+
+You can play with the props in canvas tab.
+
+<Preview withToolbar>
+    <Story name="Basic">{stories.Basic}</Story>
+</Preview>
+
+### Variants
+
+<Preview>
+    <Button variant="solid">Solid Button</Button>
+    <Button variant="outlined">Outlined Button</Button>
+    <Button variant="flat">Flat Button</Button>
+</Preview>
+
+### Colors
+
+<Preview>
+    <Button color="primary">Primary Button</Button>
+    <Button color="secondary">Secondary Button</Button>
+</Preview>
+
+### Disabled
+
+<Preview>
+    <Button disabled variant="solid">
+        Solid Button
+    </Button>
+    <Button disabled variant="outlined">
+        Outlined Button
+    </Button>
+    <Button disabled variant="flat">
+        Flat Button
+    </Button>
+</Preview>
+
+### Props
+
+<Props of={stories.Basic} />
+
+### ButtonTheme
+
+<Props of={stories.ThemeInterface} />
+
+### ButtonTheme Defaults
+
+<code>{JSON.stringify(defaultTheme.button, null, 2)}</code>
