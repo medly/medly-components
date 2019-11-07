@@ -2,6 +2,7 @@ import { defaultTheme, IconSizes } from '@medly-components/theme';
 import { color, select } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
+import { AccountIcon } from './icons/AccountIcon';
 import { AddIcon } from './icons/AddIcon';
 import { BugIcon } from './icons/BugIcon';
 import { CheckCircleIcon } from './icons/CheckCircleIcon';
@@ -33,6 +34,7 @@ const defaultColor = defaultTheme.icon.defaultColor;
 
 storiesOf('Icons', module)
     .add('Add', () => <AddIcon size={select('Size', size, 'L')} color={color('Color', defaultColor)} />)
+    .add('Account', () => <AccountIcon size={select('Size', size, 'L')} color={color('Color', defaultColor)} />)
     .add('Bug', () => <BugIcon size={select('Size', size, 'L')} color={color('Color', defaultColor)} />)
     .add('Clear', () => <ClearIcon size={select('Size', size, 'L')} color={color('Color', defaultColor)} />)
     .add('Clipboard', () => <ClipboardIcon size={select('Size', size, 'L')} color={color('Color', defaultColor)} />)
