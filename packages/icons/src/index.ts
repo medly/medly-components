@@ -2,6 +2,7 @@ export { Props as SvgIconProps } from './SvgIcon/types';
 export { default as SvgIcon } from './SvgIcon';
 export { default as BurgerIcon } from './icons/BurgerIcon';
 export * from './icons/AddIcon';
+export * from './icons/AccountIcon';
 export * from './icons/BugIcon';
 export * from './icons/CheckIcon';
 export * from './icons/ContractIcon';
