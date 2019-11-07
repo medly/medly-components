@@ -45,7 +45,6 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   width: calc(16px * 1.33);
   height: 16px;
   position: relative;
-  margin: 10px;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -391,7 +390,6 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   width: calc(16px * 1.33);
   height: 16px;
   position: relative;
-  margin: 10px;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -800,7 +798,6 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   width: calc(16px * 1.33);
   height: 16px;
   position: relative;
-  margin: 10px;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -1105,7 +1102,6 @@ exports[`SideNav should render properly 1`] = `
   width: calc(16px * 1.33);
   height: 16px;
   position: relative;
-  margin: 10px;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
