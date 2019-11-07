@@ -1,0 +1,29 @@
+import { HTMLProps } from '@medly-components/utils';
+import SvgLoader from './SvgLoader';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Loaders.stories';
+
+<Meta title="Loaders" component={SvgLoader} />
+
+# Loaders
+
+### A collection of loaders.
+
+You can directly import from `@medly-components/loaders`
+
+<Preview withToolbar>
+    <Story name="Loaders">{stories.Basic}</Story>
+</Preview>
+
+### Props
+
+<Props of={stories.Basic} />
+
+### LoaderTheme
+
+<Props of={stories.ThemeInterface} />
+
+### LoaderTheme defaults
+
+<code>{JSON.stringify(defaultTheme.loader, null, 2)}</code>
