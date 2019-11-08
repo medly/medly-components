@@ -39,8 +39,18 @@ module.exports = ({ config, mode }) => {
                 loader: 'react-docgen-typescript-loader',
                 options: {
                     tsconfigPath,
-                    skipPropsWithName: ['theme'],
-                    shouldExtractLiteralValuesFromEnum: true
+                    shouldExtractLiteralValuesFromEnum: true,
+                    propFilter(prop) {
+                        if (prop.parent) {
+                            return (
+                                !prop.parent.fileName.includes('node_modules') &&
+                                !prop.parent.fileName.includes('HTMLProps') &&
+                                !prop.parent.fileName.includes('WithThemeProp')
+                            );
+                        }
+
+                        return true;
+                    }
                 }
             },
             {

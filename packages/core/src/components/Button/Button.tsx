@@ -16,7 +16,8 @@ export const Button: SFC<Props> & WithStyle = React.memo(props => {
 Button.defaultProps = {
     type: 'button',
     variant: 'solid',
-    color: 'primary'
+    color: 'primary',
+    disabled: false
 };
 Button.displayName = 'Button';
 Button.Style = ButtonStyled;

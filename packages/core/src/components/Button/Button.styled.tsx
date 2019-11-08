@@ -72,7 +72,5 @@ export const ButtonStyled = styled('button')<Props>`
 `;
 
 ButtonStyled.defaultProps = {
-    theme: defaultTheme,
-    variant: 'solid',
-    color: 'primary'
+    theme: defaultTheme
 };

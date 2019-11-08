@@ -11,4 +11,6 @@ export interface Props extends HTMLProps<HTMLButtonElement>, WithThemeProp {
     variant?: 'solid' | 'flat' | 'outlined';
     /** Button colors */
     color?: 'primary' | 'secondary';
+    /** To be used to disable button */
+    disabled?: boolean;
 }
