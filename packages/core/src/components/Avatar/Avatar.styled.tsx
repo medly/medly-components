@@ -1,3 +1,4 @@
+import { defaultTheme } from '@medly-components/theme';
 import { styled } from '@medly-components/utils';
 import Text from '../Text';
 import { Props, StyledProps } from './types';
@@ -39,3 +40,7 @@ export const AvatarStyled = styled('div').attrs(getMappedProps)<StyledProps>`
         object-fit: cover;
     }
 `;
+
+AvatarStyled.defaultProps = {
+    theme: defaultTheme
+};

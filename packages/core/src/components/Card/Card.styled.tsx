@@ -1,6 +1,5 @@
 import { CardTheme, defaultTheme } from '@medly-components/theme';
 import { css, fullHeight, fullWidth, styled } from '@medly-components/utils';
-import { SFC } from 'react';
 import { ItemsPosition, Props } from './types';
 
 const verticalFlow = (alignItems: ItemsPosition) => css`
@@ -98,14 +97,5 @@ export const Card = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<
 `;
 
 Card.defaultProps = {
-    theme: defaultTheme,
-    variant: 'outlined',
-    flowDirection: 'vertical',
-    separator: false,
-    flex: 1,
-    withPadding: true,
-    alignItems: 'center',
-    clickable: false,
-    fullWidth: false,
-    fullHeight: false
+    theme: defaultTheme
 };

@@ -1,5 +1,4 @@
 import { CardTheme } from '@medly-components/theme';
-import { HTMLProps } from '@medly-components/utils';
 import { boolean, select } from '@storybook/addon-knobs';
 import React from 'react';
 import Text from '../Text';
@@ -12,7 +11,7 @@ const flowDirection: FlowDirection[] = ['vertical', 'horizontal'];
 
 export const ThemeInterface = (props: CardTheme): any => null;
 
-export const Basic = (props: Omit<Props, keyof HTMLProps<HTMLDivElement>>) => (
+export const Basic = () => (
     <Card
         variant={select('Variant', variants, 'outlined')}
         flowDirection={select('Flow Direction', flowDirection, 'horizontal')}

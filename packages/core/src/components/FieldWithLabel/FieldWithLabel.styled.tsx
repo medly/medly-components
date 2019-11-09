@@ -1,3 +1,4 @@
+import { defaultTheme } from '@medly-components/theme';
 import { css, styled } from '@medly-components/utils';
 import { AnyStyledComponent } from 'styled-components';
 import Label from '../Label';
@@ -99,3 +100,6 @@ export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('di
                 'description';
         `}
 `;
+FieldWithLabelStyled.defaultProps = {
+    theme: defaultTheme
+};

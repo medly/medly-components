@@ -1,4 +1,5 @@
-import { styled, WithThemeProp } from '@medly-components/utils';
+import { defaultTheme } from '@medly-components/theme';
+import { styled } from '@medly-components/utils';
 import Link from '../Link';
 import List from '../List';
 import Text from '../Text';
@@ -25,3 +26,7 @@ export const BreadCrumbsStyled = styled('div').attrs(({ theme: { breadCrumbs } }
         }
     }
 `;
+
+BreadCrumbsStyled.defaultProps = {
+    theme: defaultTheme
+};

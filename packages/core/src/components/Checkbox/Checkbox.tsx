@@ -34,5 +34,6 @@ Checkbox.displayName = 'Checkbox';
 Checkbox.Style = FieldWithLabel.Style;
 Checkbox.defaultProps = {
     label: '',
+    required: false,
     labelPosition: 'right'
 };

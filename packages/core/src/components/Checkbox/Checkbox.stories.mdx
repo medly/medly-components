@@ -1,0 +1,26 @@
+import { Checkbox } from './Checkbox';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Checkbox.stories';
+
+<Meta title="Core/Checkbox" component={Checkbox} />
+
+# Checkbox
+
+### Basic checkbox
+
+<Preview withToolbar>
+    <Story name="Basic">{stories.Basic}</Story>
+</Preview>
+
+### Props
+
+<Props of={Checkbox} />
+
+### CheckboxTheme
+
+<Props of={stories.ThemeInterface} />
+
+### CheckboxTheme Defaults
+
+<code>{JSON.stringify(defaultTheme.checkbox, null, 2)}</code>

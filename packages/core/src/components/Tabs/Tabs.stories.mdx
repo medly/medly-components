@@ -10,6 +10,22 @@ import * as stories from './Tabs.stories';
 
 ### Displays specific content based on selected tab
 
+Use `Tabs.Tab` to add tab in `Tabs` component. Like bellow . . .
+
+```typescript
+<Tabs aria-label="Basic Tabs">
+    <Tabs.Tab id="tab1" label="Add">
+        Content for the add panel
+    </Tabs.Tab>
+    <Tabs.Tab id="tab2" label="Edit">
+        Content for the edit panel
+    </Tabs.Tab>
+    <Tabs.Tab id="tab3" label="Delete">
+        Content for the delete panel
+    </Tabs.Tab>
+</Tabs>
+```
+
 <Preview withToolbar>
     <Story name="Basic">{stories.Basic}</Story>
 </Preview>
@@ -51,7 +67,7 @@ When using controlled `Tabs` component you have to provide `active` and `onChang
 
 ### Props
 
-<Props of={stories.Basic} />
+<Props of={Tabs} />
 
 ### TabsTheme
 

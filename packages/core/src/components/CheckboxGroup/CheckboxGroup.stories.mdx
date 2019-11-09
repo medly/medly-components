@@ -1,5 +1,4 @@
 import { CheckboxGroup } from './CheckboxGroup';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './CheckboxGroup.stories';
 
@@ -17,10 +16,6 @@ import * as stories from './CheckboxGroup.stories';
 
 <Props of={CheckboxGroup} />
 
-### CheckboxTheme
+### Theme
 
-<Props of={stories.ThemeInterface} />
-
-### CheckboxTheme Defaults
-
-<code>{JSON.stringify(defaultTheme.checkbox, null, 2)}</code>
+Checkbox theme will be used for checkbox group.
