@@ -1,0 +1,26 @@
+import { Chip } from './Chip';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Chip.stories';
+
+<Meta title="Core/Chip" component={Chip} />
+
+# Chip
+
+### Basic Chip
+
+<Preview withToolbar>
+    <Story name="Basic">{stories.Basic}</Story>
+</Preview>
+
+### Props
+
+<Props of={Chip} />
+
+### ChipTheme
+
+<Props of={stories.ThemeInterface} />
+
+### ChipTheme Defaults
+
+<code>{JSON.stringify(defaultTheme.chip, null, 2)}</code>
