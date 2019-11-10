@@ -1,5 +1,5 @@
+import { RadioTheme } from '@medly-components/theme';
 import { boolean, select } from '@storybook/addon-knobs';
-import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { Radio } from './Radio';
 import { Props } from './types';
@@ -7,7 +7,9 @@ import { Props } from './types';
 const labelPosition: Array<Props['labelPosition']> = ['left', 'right', 'top', 'bottom'];
 const size: Array<Props['size']> = ['XS', 'S', 'M', 'L', 'XL'];
 
-storiesOf('Core', module).add('Radio', () => (
+export const ThemeInterface = (props: RadioTheme): any => null;
+
+export const Basic = () => (
     <Radio
         value="female"
         name="gender"
@@ -16,4 +18,4 @@ storiesOf('Core', module).add('Radio', () => (
         size={select('Size', size, 'S')}
         labelPosition={select('Label Position', labelPosition, 'right')}
     />
-));
+);

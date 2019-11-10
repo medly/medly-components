@@ -1,4 +1,3 @@
-import { CheckboxTheme } from '@medly-components/theme';
 import { boolean, select, text } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
 import { CheckboxGroup } from './CheckboxGroup';
@@ -6,8 +5,6 @@ import { Props } from './types';
 
 const labelPosition: Array<Props['labelPosition']> = ['left', 'right', 'top', 'bottom'];
 const size: Array<Props['size']> = ['XS', 'S', 'M', 'L', 'XL'];
-
-export const ThemeInterface = (props: CheckboxTheme): any => null;
 
 export const Basic = () => {
     const [value, setValue] = useState(['grapes']);
