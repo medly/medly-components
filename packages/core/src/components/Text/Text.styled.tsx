@@ -14,9 +14,9 @@ const getMappedProps = ({ theme: { text, font }, ...props }: Props) => {
     const { defaults } = text;
     const { textSize, textWeight, textColor } = props;
     return {
+        textColor,
         textSize: font.sizes[textSize || defaults.textSize],
-        textWeight: font.weights[textWeight || defaults.textWeight],
-        textColor: textColor || 'inherit'
+        textWeight: font.weights[textWeight || defaults.textWeight]
     };
 };
 

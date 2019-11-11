@@ -17,7 +17,8 @@ export const Text: SFC<Props> & WithStyle = React.memo(
 Text.defaultProps = {
     lineThrough: false,
     uppercase: false,
-    fullWidth: false
+    fullWidth: false,
+    textColor: 'inherit'
 };
 Text.displayName = 'Text';
 Text.Style = TextStyled;
