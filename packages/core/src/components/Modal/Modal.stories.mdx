@@ -1,0 +1,40 @@
+import { Modal } from './Modal';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Modal.stories';
+
+<Meta title="Core/Modal" component={Modal} />
+
+# Modal
+
+### Basic Modal
+
+Modal consists of three sections Header, Content and Actions. All of these you can directly use from Modal component only like bellow . . .
+
+```typescript
+<Modal open onCloseModal={handleModalStateChange(false)}>
+    <Modal.Header>Add User</Modal.Header>
+    <Modal.Content>
+        <Input id="name-input" type="text" fullWidth label="Name" placeholder="Enter your Name" />
+    </Modal.Content>
+    <Modal.Actions>
+        <Button variant="outlined">Add User</Button>
+    </Modal.Actions>
+</Modal>
+```
+
+<Preview withToolbar>
+    <Story name="Basic">{stories.Basic}</Story>
+</Preview>
+
+### Props
+
+<Props of={Modal} />
+
+### ModalTheme
+
+<Props of={stories.ThemeInterface} />
+
+### ModalTheme Defaults
+
+<code>{JSON.stringify(defaultTheme.modal, null, 2)}</code>
