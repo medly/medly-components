@@ -31,8 +31,7 @@ export const PopoverWrapper: SFC<PopoverWrapperProps> & WithStyle = props => {
 
 PopoverWrapper.defaultProps = {
     interactionType: 'hover',
-    placement: 'bottom',
-    onOuterClick: undefined
+    placement: 'bottom'
 };
 PopoverWrapper.Style = PopoverWrapperStyled;
 
