@@ -1,0 +1,35 @@
+import { Stepper } from './Stepper';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Stepper.stories';
+
+<Meta title="Core/Stepper" component={Stepper} />
+
+# Stepper
+
+### Basic Stepper
+
+Use `Stepper.Step` to add step in `Stepper` component. Like bellow . . .
+
+```typescript
+<Stepper activeStep={0} size="S" onStepClick={setActiveStep}>
+    <Stepper.Step>Customer Information</Stepper.Step>
+    <Stepper.Step>Payment information</Stepper.Step>
+</Stepper>
+```
+
+<Preview withToolbar>
+    <Story name="Basic">{stories.Basic}</Story>
+</Preview>
+
+### Props
+
+<Props of={Stepper} />
+
+### StepperTheme
+
+<Props of={stories.ThemeInterface} />
+
+### StepperTheme Defaults
+
+<code>{JSON.stringify(defaultTheme.stepper, null, 2)}</code>
