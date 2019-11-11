@@ -1,0 +1,22 @@
+import { Pagination } from './Pagination';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Pagination.stories';
+
+<Meta title="Core/Pagination" component={Pagination} />
+
+# Pagination
+
+### Basic Pagination
+
+<Preview withToolbar>
+    <Story name="Basic">{stories.Basic}</Story>
+</Preview>
+
+### Props
+
+<Props of={Pagination} />
+
+### Theme
+
+There is no exclusive theme for pagination, it is actually using button theme.
