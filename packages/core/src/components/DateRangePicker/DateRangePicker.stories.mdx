@@ -1,0 +1,24 @@
+import { DateRangePicker } from './DateRangePicker';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './DateRangePicker.stories';
+
+<Meta title="Core/DateRangePicker" component={DateRangePicker} />
+
+# DateRangePicker
+
+We are using `@datepicker-react/styled` underneath with some modification.
+
+<Story name="Basic">{stories.Basic}</Story>
+
+### DateRangePicker Props
+
+<Props of={DateRangePicker} />
+
+### ReactDatepicker theme
+
+You can check the all posible values [here](https://github.com/tresko/react-datepicker#theming)
+
+### ReactDatepicker defaults
+
+<code>{JSON.stringify(defaultTheme.reactDatepicker, null, 2)}</code>

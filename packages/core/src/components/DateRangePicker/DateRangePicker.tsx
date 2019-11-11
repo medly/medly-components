@@ -30,7 +30,6 @@ export const DateRangePicker: SFC<Props> = React.memo(props => {
                 <DateRangeInput
                     {...restProps}
                     onDatesChange={handleDateChange}
-                    // @ts-ignore
                     showClose={false}
                     onFocusChange={setShowDatepicker}
                     startDate={date.startDate}

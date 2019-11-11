@@ -4,11 +4,17 @@ import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 export type LabelPositions = 'top' | 'right' | 'left' | 'bottom';
 
 export interface Common extends HTMLProps<HTMLLabelElement>, WithThemeProp {
-    /** Shows pointer while hovering on it */
+    /** Shows pointer while hovering on it
+     * @default false
+     */
     showPointer?: boolean;
-    /** Label position */
+    /** Label position
+     * @default left
+     */
     labelPosition?: LabelPositions;
-    /** Shows red color asterisk */
+    /** Shows red color asterisk
+     * @default false
+     */
     required?: boolean;
     /** Label Color */
     labelColor?: string;

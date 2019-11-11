@@ -1,5 +1,4 @@
 import { boolean, number, select, text } from '@storybook/addon-knobs';
-import { storiesOf } from '@storybook/react';
 import React, { useState } from 'react';
 import { Placement } from '../Popover/types';
 import { DateRangePicker } from './DateRangePicker';
@@ -21,7 +20,7 @@ const placement: Placement[] = [
     'left-start'
 ];
 
-const DemoComponent = () => {
+export const Basic = () => {
     const [date, setDate] = useState({ startDate: null, endDate: null });
 
     return (
@@ -37,4 +36,3 @@ const DemoComponent = () => {
         />
     );
 };
-storiesOf('Core', module).add('DateRangePicker', DemoComponent);

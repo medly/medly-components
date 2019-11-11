@@ -9,19 +9,31 @@ type PickerProps = Omit<
 >;
 
 export interface Props extends PickerProps {
-    /** Label Position */
+    /** Label Position
+     * @default left
+     */
     labelPosition?: LabelPositions;
-    /** Takes full width of the parent component */
+    /** Takes full width of the parent component
+     * @default false
+     */
     fullWidth?: boolean;
-    /** Disable date selection */
+    /** Disable date selection
+     * @default false
+     */
     disabled?: boolean;
-    /** To be used when it is required in any form */
+    /** To be used when it is required in any form
+     * @default false
+     */
     required?: boolean;
+    /** Date picker label
+     * @default
+     */
+    label?: string;
     /** Min width of the component */
     minWidth?: number;
-    /** Date picker label */
-    label?: string;
-    /** Placeholder for input */
+    /** Placeholder for input
+     * @default bottom-start
+     */
     placement?: Placement;
     /** Selected date range */
     value: { startDate: Date | null; endDate: Date | null };

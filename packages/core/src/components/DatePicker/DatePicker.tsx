@@ -55,6 +55,7 @@ export const DatePicker: SFC<Props> = React.memo(props => {
 DatePicker.displayName = 'DatePicker';
 DatePicker.defaultProps = {
     labelPosition: 'left',
+    fullWidth: false,
     required: false,
     disabled: false,
     label: ''

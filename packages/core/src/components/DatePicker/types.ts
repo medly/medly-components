@@ -5,15 +5,25 @@ import { LabelPositions } from '../Label/types';
 type PickerProps = Omit<GetComponentProps<typeof DateSingleInput>, 'date' | 'showDatepicker' | 'onDateChange' | 'onFocusChange'>;
 
 export interface Props extends PickerProps {
-    /** Label Position */
+    /** Label Position
+     * @default left
+     */
     labelPosition?: LabelPositions;
-    /** Takes full width of the parent component */
+    /** Takes full width of the parent component
+     * @default false
+     */
     fullWidth?: boolean;
-    /** Disable date selection */
+    /** Disable date selection
+     * @default false
+     */
     disabled?: boolean;
-    /** To be used when it is required in any form */
+    /** To be used when it is required in any form
+     * @default false
+     */
     required?: boolean;
-    /** Date picker label */
+    /** Date picker label
+     * @default
+     */
     label?: string;
     /** Selected date */
     value: Date | null;

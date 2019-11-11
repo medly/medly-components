@@ -1,12 +1,11 @@
 import { boolean, select, text } from '@storybook/addon-knobs';
-import { storiesOf } from '@storybook/react';
 import React, { useState } from 'react';
 import { DatePicker } from './DatePicker';
 import { Props } from './types';
 
 const labelPosition: Array<Props['labelPosition']> = ['top', 'bottom', 'left', 'right'];
 
-const DemoComponent = () => {
+export const Basic = () => {
     const [date, setDate] = useState(null);
 
     return (
@@ -21,4 +20,3 @@ const DemoComponent = () => {
         />
     );
 };
-storiesOf('Core', module).add('DatePicker', DemoComponent);
