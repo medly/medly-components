@@ -1,0 +1,28 @@
+import { SingleSelect } from './SingleSelect';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './SingleSelect.stories';
+
+<Meta title="Core/SingleSelect" component={SingleSelect} />
+
+# SingleSelect
+
+### Basic SingleSelect
+
+<Preview withToolbar>
+    <Story name="Basic">{stories.Basic}</Story>
+</Preview>
+
+### Props
+
+<Props of={SingleSelect} />
+
+### SelectTheme
+
+This theme is shared between single select and multi select.
+
+<Props of={stories.ThemeInterface} />
+
+### SelectTheme Defaults
+
+<code>{JSON.stringify(defaultTheme.select, null, 2)}</code>

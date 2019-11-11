@@ -1,5 +1,6 @@
+import { SelectTheme } from '@medly-components/theme';
+import { action } from '@storybook/addon-actions';
 import { boolean, select, text } from '@storybook/addon-knobs';
-import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { LabelPositions } from '../Label/types';
 import { MultiSelect } from './MultiSelect';
@@ -21,16 +22,13 @@ const options = [
     }
 ];
 
-const handleOnChange = (value: string[]) => {
-    // tslint:disable-next-line: no-console
-    console.log('value ====>', value);
-};
+export const ThemeInterface = (props: SelectTheme): any => null;
 
-storiesOf('Core', module).add('MultiSelect', () => (
+export const Basic = () => (
     <MultiSelect
         options={options}
         defaultValues={['medly pharmacy', 'a pharmacy']}
-        onChange={handleOnChange}
+        onChange={action('Value Changed')}
         disabled={boolean('Disabled', false)}
         showChips={boolean('Show Chips', true)}
         showCheckbox={boolean('Show Checkbox', true)}
@@ -41,4 +39,4 @@ storiesOf('Core', module).add('MultiSelect', () => (
         description={text('Description', 'We will show reports based on Pharmacy')}
         labelPosition={select('Label Position', labelPosition, 'left')}
     />
-));
+);

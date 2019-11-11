@@ -107,6 +107,8 @@ MultiSelect.Style = SelectWrapperStyled;
 MultiSelect.defaultProps = {
     labelPosition: 'left',
     defaultValues: [],
+    showChips: true,
+    showCheckbox: true,
     fullWidth: false,
     required: false,
     label: '',

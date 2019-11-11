@@ -1,5 +1,6 @@
+import { SelectTheme } from '@medly-components/theme';
+import { action } from '@storybook/addon-actions';
 import { boolean, number, select, text } from '@storybook/addon-knobs';
-import { storiesOf } from '@storybook/react';
 import React from 'react';
 import { LabelPositions } from '../Label/types';
 import { SingleSelect } from './SingleSelect';
@@ -16,17 +17,14 @@ const options = [
     { value: 'Dummy6 option', label: 'Dummy6 option' }
 ];
 
-const handleOnChange = (value: string) => {
-    // tslint:disable-next-line: no-console
-    console.log('value ====>', value);
-};
+export const ThemeInterface = (props: SelectTheme): any => null;
 
-storiesOf('Core', module).add('SingleSelect', () => (
+export const Basic = () => (
     <SingleSelect
         minWidth={number('Min Width', 300)}
         options={options}
         defaultValue="medly pharmacy"
-        onChange={handleOnChange}
+        onChange={action('Value Changed')}
         disabled={boolean('Disabled', false)}
         fullWidth={boolean('Full Width', false)}
         required={boolean('Required', false)}
@@ -35,4 +33,4 @@ storiesOf('Core', module).add('SingleSelect', () => (
         description={text('Description', 'We will show reports based on Pharmacy')}
         labelPosition={select('Label Position', labelPosition, 'left')}
     />
-));
+);
