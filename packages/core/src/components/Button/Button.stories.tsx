@@ -13,7 +13,7 @@ export const ThemeInterface = (props: ButtonTheme): any => null;
 export const Basic = () => (
     <Button
         variant={select('Variant', variant, 'solid')}
-        onClick={action('Chip Clicked')}
+        onClick={action('Button Clicked')}
         disabled={boolean('Disabled', false)}
         color={select('Color', color, 'primary')}
     >

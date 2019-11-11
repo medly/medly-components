@@ -1,0 +1,26 @@
+import { Toast } from './Toast';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Toast.stories';
+
+<Meta title="Core/Toast" component={Toast} />
+
+# Toast
+
+### Basic Toast
+
+<Preview withToolbar>
+    <Story name="Basic">{stories.Basic}</Story>
+</Preview>
+
+### Props
+
+<Props of={Toast} />
+
+### ToastTheme
+
+<Props of={stories.ThemeInterface} />
+
+### ToastTheme Defaults
+
+<code>{JSON.stringify(defaultTheme.toast, null, 2)}</code>
