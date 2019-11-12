@@ -1,0 +1,23 @@
+import { CssBaseline } from './CssBaseline.styled';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './CssBaseline.stories';
+
+<Meta title="Core/CssBaseline" component={CssBaseline} />
+
+# CssBaseline
+
+The `CssBaseline` is global style component that is required to be included in the main tree of your application.
+
+It contains base resets and fonts links used by the library
+
+```tsx
+<ThemeProvider>
+    <CssBaseline />
+    ...
+</ThemeProvider>
+```
+
+<Preview withToolbar>
+    <Story name="Basic">{stories.Basic}</Story>
+</Preview>

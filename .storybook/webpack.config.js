@@ -29,7 +29,7 @@ module.exports = ({ config, mode }) => {
 
     config.module.rules.push({
         test: /\.(ts|tsx)$/,
-        include: [packages, utils],
+        include: [packages, docs, utils],
         exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /__dist__/],
         use: [
             {

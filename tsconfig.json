@@ -15,6 +15,6 @@
             "@medly-components/*": ["packages/*/src"]
         }
     },
-    "include": ["packages"],
+    "include": ["packages", "docs"],
     "exclude": ["node_modules", "packages/**/dist", ".storybook"]
 }
