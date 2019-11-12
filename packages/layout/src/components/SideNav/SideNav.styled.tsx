@@ -1,5 +1,6 @@
 import { Text } from '@medly-components/core';
 import { BurgerIcon, SvgIcon } from '@medly-components/icons';
+import { defaultTheme } from '@medly-components/theme';
 import { centerAligned, css, styled } from '@medly-components/utils';
 import SidePanel from '../SidePanel';
 import NavItem from './NavItem';
@@ -15,6 +16,7 @@ export const Icon = styled('div')`
     min-width: ${({ theme }) => theme.sideNav.closeSize};
     min-height: ${({ theme }) => theme.sideNav.closeSize};
 `;
+Icon.defaultProps = { theme: defaultTheme };
 
 export const BottomList = styled(NavList.Style)`
     flex: unset;
@@ -82,3 +84,4 @@ export const SideNav = styled(SidePanel)<SideNavStyledProps>`
 
     ${({ open }) => (open ? openState() : closeState())}
 `;
+SideNav.defaultProps = { theme: defaultTheme };
