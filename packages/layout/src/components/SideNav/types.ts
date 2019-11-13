@@ -42,7 +42,7 @@ export interface SideNavStaticProps {
     NavIcon: AnyStyledComponent;
     NavList: SFC<NavListProps>;
     SubNavList: SFC<NavListProps>;
-    BottomList: AnyStyledComponent;
+    BottomList: SFC<NavListProps>;
     Logo: AnyStyledComponent;
     NavText: typeof Text;
 }

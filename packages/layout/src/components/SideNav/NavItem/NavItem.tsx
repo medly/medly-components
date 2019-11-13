@@ -1,9 +1,9 @@
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { SFC } from 'react';
 import { NavItemProps } from '../types';
 import { NavItemStyled } from './NavItem.styled';
 
-const NavItem: React.SFC<NavItemProps> & WithStyle = props => {
+export const NavItem: SFC<NavItemProps> & WithStyle = props => {
     const { active, openSideNavOnClick, sidenavOpenHandler, onClick, ...restProps } = props;
 
     const onClickHandler = (event: React.MouseEvent<HTMLLIElement>) => {
@@ -13,7 +13,9 @@ const NavItem: React.SFC<NavItemProps> & WithStyle = props => {
     };
     return <NavItemStyled {...{ ...restProps, active: `${active}` }} onClick={onClickHandler} />;
 };
+NavItem.defaultProps = {
+    active: false,
+    openSideNavOnClick: false
+};
 
 NavItem.Style = NavItemStyled;
-
-export default NavItem;

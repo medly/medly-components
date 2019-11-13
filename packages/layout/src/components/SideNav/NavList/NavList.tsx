@@ -3,7 +3,7 @@ import React from 'react';
 import { NavListProps } from '../types';
 import * as Styled from './NavList.styled';
 
-const NavList: React.SFC<NavListProps> & WithStyle = props => {
+export const NavList: React.SFC<NavListProps> & WithStyle = props => {
     const { sidenavOpenHandler } = props;
 
     return (
@@ -16,5 +16,3 @@ const NavList: React.SFC<NavListProps> & WithStyle = props => {
 };
 
 NavList.Style = Styled.NavList;
-
-export default NavList;

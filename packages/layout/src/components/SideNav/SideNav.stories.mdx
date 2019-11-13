@@ -1,0 +1,48 @@
+import { SideNav } from './SideNav';
+import NavItem from './NavItem';
+import NavList from './NavList';
+import { Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './SideNav.stories';
+
+<Meta title="Layout/SideNav" component={SideNav} />
+
+# SideNav
+
+### Basic SideNav
+
+Sidenav layout componenet could be pretty handy to show menu items.
+
+```tsx
+<SideNav>
+    <SideNav.NavItem as={'a'} href="#">
+        <SideNav.NavIcon>
+            <HomeIcon />
+        </SideNav.NavIcon>
+        <SideNav.NavText>Home</SideNav.NavText>
+    </SideNav.NavItem>
+</SideNav>
+```
+
+<Story name="Basic">{stories.Basic}</Story>
+
+### SideNav Props
+
+<Props of={SideNav} />
+
+### SideNav Static Props
+
+You can use all of below Components like `SideNav.<name>`
+
+<Props of={stories.StaticProps} />
+
+### NavItem Props
+
+<Props of={NavItem} />
+
+### NavList and SubNavList Props
+
+<Props of={NavList} />
+
+### SideNavTheme
+
+<Props of={stories.Theme} />
