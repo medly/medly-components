@@ -1,13 +1,3 @@
-# React Components Theme
+# Theme
 
-This library contains react components default theme and typings for the same for all the components.
-
-## Getting Started
-
-You can install the components using `npm i -S https://medly-artifacts.s3.amazonaws.com/medly-components/medly-components-theme-<version>.tgz`.
-
-## Built With
-
-⛑ [typescript](https://www.typescriptlang.org/)
-
-💥 [babel](https://babeljs.io/)
+Themes lets you define how a component should be styled across website. This can be done individually for particular type of components, eg all icons should be solid or can be done for the whole website, like color theme for all type of components across website should be orange. Check docs [here](https://medly.github.io/medly-components).
