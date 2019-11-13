@@ -1,0 +1,64 @@
+import { Table } from '../Table';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Table.stories';
+
+<Meta title="Core/Table" component={Table} />
+
+# Table
+
+### Table to show set of data
+
+<Preview withToolbar>
+    <Story name="Basic">{stories.Basic}</Story>
+</Preview>
+
+### With column hide feature
+
+To use the column hide feature use `Table.SelectableColumns` component and save the column config in state variable and pass the same column config to `Table` and `Table.SelectableColumns` component.
+
+```tsx
+export const WithColumnHide = () => {
+    const [columnConfig, setColumnConfig] = useState(columns);
+
+    return (
+        <>
+            <Table.SelectableColumns columns={columnConfig} fieldToChange="hide" onChange={setColumnConfig} />
+            <Table data={data} columns={columnConfig} />
+        </>
+    );
+};
+```
+
+You can also show `Table.SelectableColumns` in Modal to look better. Like below . . .
+
+<Preview withToolbar>
+    <Story name="WithColumnHide">{stories.WithColumnHide}</Story>
+</Preview>
+
+### Props
+
+<Props of={Table} />
+
+### Table Prop Types
+
+You can use Table Prop types like below to typesafe your column config.
+
+```ts
+import { GetComponentProps } from '@medly-components/utils';
+import { Table } from '@medly-components/core';
+
+type TableProps = GetComponentProps<typeof Table>;
+
+type ColumnConfig = TableProps['columns'];
+```
+
+#### Column config type
+
+<Props of={stories.ColumnConfigInterface} />
+
+There is one more field `children` you can provide with the same array of column config.
+
+#### TableTheme
+
+<Props of={stories.Theme} />
