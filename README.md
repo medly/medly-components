@@ -5,7 +5,7 @@
 [![styled-components version](https://img.shields.io/badge/styled--components-%5E4.2.0-blue)](https://www.npmjs.com/package/styled-components)
 [![typescript version](https://img.shields.io/badge/types-TypeScript-blue?style=flat-square)](https://www.npmjs.com/package/typescript)
 
-Medly components provides numerous themable react components, each with multiple varitaions of sizes, colors, position etc. You can checkout the storybook of the components [here](https://medlypharmacy.github.io/medly-components).
+Medly components provides numerous themable react components, each with multiple varitaions of sizes, colors, position etc. You can checkout the storybook of the components [here](https://medly.github.io/medly-components).
 
 ## Table of Contents
 
