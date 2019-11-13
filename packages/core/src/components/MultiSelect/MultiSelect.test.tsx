@@ -74,7 +74,7 @@ describe('MultiSelect component', () => {
 
         it('should deselect on click of already selected option', () => {
             const mockOnChange = jest.fn(),
-                { getByTestId, getByText } = render(
+                { getByTestId, getAllByText } = render(
                     <MultiSelect
                         defaultValues={['Dummy1', 'Dummy2']}
                         showCheckbox={showCheckbox}
@@ -84,7 +84,7 @@ describe('MultiSelect component', () => {
                 ),
                 inputEl = getByTestId('select-input');
             fireEvent.click(inputEl);
-            const option = getByText('Dummy1');
+            const option = getAllByText('Dummy1')[1];
             fireEvent.click(option);
             expect(mockOnChange).toHaveBeenCalledWith(['Dummy2']);
         });

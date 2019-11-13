@@ -7,7 +7,13 @@ import { Props } from './types';
 
 export const Checkbox: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { size, label, required, labelPosition, labelSize, labelWeight, labelColor, ...restProps } = props;
+        const { size, label, required, labelPosition, labelSize, labelWeight, labelColor, onChange, ...restProps } = props;
+
+        const changeHandler = (e: any) => {
+            // @ts-ignore
+            onChange && onChange(e);
+        };
+
         return (
             <FieldWithLabel fieldWithMaxContent {...{ labelPosition }}>
                 {label && (
@@ -20,9 +26,9 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
                     </FieldWithLabel.Label>
                 )}
                 <CheckboxWrapperStyled size={size} disabled={restProps.disabled}>
-                    <CheckboxStyled ref={ref} id={label} required={required} {...restProps} />
+                    <CheckboxStyled ref={ref} id={label} required={required} onChange={changeHandler} {...restProps} />
                     <CheckboxFillStyled>
-                        <CheckIcon />
+                        <CheckIcon onClick={changeHandler} />
                     </CheckboxFillStyled>
                 </CheckboxWrapperStyled>
             </FieldWithLabel>
