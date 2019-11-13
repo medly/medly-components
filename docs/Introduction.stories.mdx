@@ -14,7 +14,7 @@ import { Preview, Meta } from '@storybook/addon-docs/blocks';
 
 # Medly Components
 
-[![build status](https://www.travis-ci.com/medlypharmacy/medly-components.svg?token=SNKFr5qZR3cLQixWx56V&branch=master)](https://www.travis-ci.com/medlypharmacy/medly-components)
+[![build status](https://www.travis-ci.com/medly/medly-components.svg?token=SNKFr5qZR3cLQixWx56V&branch=master)](https://www.travis-ci.com/medly/medly-components)
 [![react version](https://img.shields.io/badge/react-%5E16.8.6-blue)](https://www.npmjs.org/package/react)
 [![styled-components version](https://img.shields.io/badge/styled--components-%5E4.2.0-blue)](https://www.npmjs.com/package/styled-components)
 [![typescript version](https://img.shields.io/badge/types-TypeScript-blue?style=flat-square)](https://www.npmjs.com/package/typescript)
@@ -38,12 +38,7 @@ Medly components provides numerous themable react components, each with multiple
 npx create-react-app medly-components-demo --typescript
 cd medly-components-demo
 npm i styled-components
-npm i https://medly-artifacts.s3.amazonaws.com/medly-components/medly-components-theme-1.2.0.tgz
-npm i https://medly-artifacts.s3.amazonaws.com/medly-components/medly-components-utils-1.2.0.tgz
-npm i https://medly-artifacts.s3.amazonaws.com/medly-components/medly-components-icons-1.2.0.tgz
-npm i https://medly-artifacts.s3.amazonaws.com/medly-components/medly-components-core-1.2.0.tgz
-npm i https://medly-artifacts.s3.amazonaws.com/medly-components/medly-components-layout-1.2.0.tgz
-npm i https://medly-artifacts.s3.amazonaws.com/medly-components/medly-components-loaders-1.2.0.tgz
+npm i @medly-components/theme @medly-components/utils @medly-components/icons @medly-components/core @medly-components/layout @medly-components/loaders
 ```
 
 Replace content of `index.tsx` with the following:
@@ -83,7 +78,7 @@ const App: React.FC = () => (
 
 Library consists of five packages:
 
-### [Core](https://github.com/medlypharmacy/medly-components/tree/master/packages/core)
+### [Core](https://github.com/medly/medly-components/tree/master/packages/core)
 
 Core package consits of components almost all basic react components like Avatar, Button, Input, List, Modal etc.
 
@@ -101,7 +96,7 @@ Core package consits of components almost all basic react components like Avatar
 <Button variant="solid">Solid Button</Button>
     </List>
 
-### [Icons](https://github.com/medlypharmacy/medly-components/tree/master/packages/icons)
+### [Icons](https://github.com/medly/medly-components/tree/master/packages/icons)
 
 Icons package consists of most commonly used svg icons for add, delete, clearfile, clipboard etc exposed as react components.
 
@@ -109,7 +104,7 @@ Icons package consists of most commonly used svg icons for add, delete, clearfil
 
 <EditIcon size="M" color="pink" open />
 
-### [Layout](https://github.com/medlypharmacy/medly-components/tree/master/packages/layout)
+### [Layout](https://github.com/medly/medly-components/tree/master/packages/layout)
 
 Layout package consists of components that help in creating a page layout using side panels and nav items, which are exposed as react components.
 
@@ -128,12 +123,12 @@ Layout package consists of components that help in creating a page layout using 
 </SideNav>
 ```
 
-### [Theme](https://github.com/medlypharmacy/medly-components/tree/master/packages/theme)
+### [Theme](https://github.com/medly/medly-components/tree/master/packages/theme)
 
 Themes lets you define how a component should be styled across website. This can be done individually for particular type of components, eg all icons should be solid or can be done for the whole website, like color theme for all type of components across website should be orange.
 
-### [Utils](https://github.com/medlypharmacy/medly-components/tree/master/packages/utils)
+### [Utils](https://github.com/medly/medly-components/tree/master/packages/utils)
 
-Utils package consists of most commonly used functionalities or components. Eg [String Helper](https://github.com/medlypharmacy/medly-components/tree/master/packages/utils/src/stringHelpers.ts) has functions to convert a string to camelCase, case insensitive string comparison etc
+Utils package consists of most commonly used functionalities or components. Eg [String Helper](https://github.com/medly/medly-components/tree/master/packages/utils/src/stringHelpers.ts) has functions to convert a string to camelCase, case insensitive string comparison etc
 
-## [Readme](https://github.com/medlypharmacy/medly-components/README.md)
+## [Readme](https://github.com/medly/medly-components/README.md)
