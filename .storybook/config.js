@@ -5,16 +5,10 @@ import React from 'react';
 import { CssBaseline } from '../packages/core/src';
 import { ThemeProvider } from '../packages/utils/src';
 import { defaultTheme } from '../packages/theme/src';
-import { withPropsTable } from 'storybook-addon-react-docgen';
 import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
 
 addDecorator(jsxDecorator);
 addDecorator(withKnobs);
-addDecorator(
-    withPropsTable({
-        excludedPropTypes: ['theme', 'ref']
-    })
-);
 addDecorator(story => (
     <ThemeProvider theme={defaultTheme}>
         <div style={{ padding: '10px', width: '95%', height: '100%', margin: 'auto' }}>
