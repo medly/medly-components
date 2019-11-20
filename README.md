@@ -1,6 +1,6 @@
 # Medly Components
 
-![](https://github.com/medly/medly-components/workflows/.github/workflows/test.yml/badge.svg)
+[![](https://github.com/medly/medly-components/workflows/Test/badge.svg)](https://github.com/medly/medly-components/actions?query=workflow%3ATest)
 [![react version](https://img.shields.io/badge/react-%5E16.8.6-blue)](https://www.npmjs.org/package/react)
 [![styled-components version](https://img.shields.io/badge/styled--components-%5E4.2.0-blue)](https://www.npmjs.com/package/styled-components)
 [![typescript version](https://img.shields.io/badge/types-TypeScript-blue?style=flat-square)](https://www.npmjs.com/package/typescript)
