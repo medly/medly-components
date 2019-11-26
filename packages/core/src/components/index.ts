@@ -1,4 +1,5 @@
 export { default as Avatar } from './Avatar';
+export { default as BreadCrumbs } from './BreadCrumbs';
 export { default as Button } from './Button';
 export { default as Card } from './Card';
 export { default as Chip } from './Chip';
@@ -10,8 +11,10 @@ export { default as DateRangePicker } from './DateRangePicker';
 export { default as FieldWithLabel } from './FieldWithLabel';
 export { default as Input } from './Input';
 export { default as Label } from './Label';
+export { default as Link } from './Link';
 export { default as List } from './List';
 export { default as Modal } from './Modal';
+export { default as MultiSelect } from './MultiSelect';
 export { default as Pagination } from './Pagination';
 export { Popover, PopoverWrapper } from './Popover';
 export { default as Radio } from './Radio';
