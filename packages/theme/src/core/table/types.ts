@@ -1,5 +1,6 @@
 export interface TableTheme {
-    evenLiBgColor: string;
-    oddLiBgColor: string;
+    rowDisabledColor: string;
+    rowBackgroundColor: string;
+    headerColor: string;
     borderColor: string;
 }

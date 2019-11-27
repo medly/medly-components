@@ -1,3 +1,4 @@
+import { HTMLProps } from '@medly-components/utils';
 import { ColumnConfig } from '../types';
 
 export interface StyledProps {
@@ -5,7 +6,7 @@ export interface StyledProps {
     frozen?: boolean;
 }
 
-export interface Props extends StyledProps {
+export interface Props extends StyledProps, HTMLProps<HTMLDivElement> {
     data: any;
     rowId: any;
     config: ColumnConfig;

@@ -7,7 +7,7 @@ import { Props } from './types';
 
 const Cell: React.SFC<Props> & WithStyle = props => {
     const childRef = useRef(null);
-    const { addColumnMaxSize, config, data, rowId, selectedRows, onRowSelection, dottedFieldName } = props;
+    const { addColumnMaxSize, config, data, rowId, selectedRows, disabled, onRowSelection, dottedFieldName } = props;
 
     useEffect(() => {
         if (childRef.current) {
@@ -23,6 +23,7 @@ const Cell: React.SFC<Props> & WithStyle = props => {
         <Styled.Cell hide={config.hide} frozen={config.frozen}>
             {config.field === 'medly-table-checkbox' ? (
                 <Checkbox
+                    disabled={disabled}
                     ref={childRef}
                     checked={selectedRows.includes(rowId)}
                     onChange={handleRowSelection(rowId)}
@@ -42,7 +43,7 @@ const Cell: React.SFC<Props> & WithStyle = props => {
                             const Component = config.component;
                             return (
                                 <Styled.Div ref={childRef}>
-                                    <Component {...{ data, rowId }} />
+                                    <Component {...{ data, rowId, disabled }} />
                                 </Styled.Div>
                             );
                         }

@@ -8,9 +8,11 @@ import { ColumnConfig } from '../types';
 import { Props } from './types';
 
 const Body: React.SFC<Props> = React.memo(props => {
-    const { data, columns, onRowClick, selectedRows, uniqueKeyName, onRowSelection, addColumnMaxSize } = props;
+    const { data, columns, onRowClick, selectedRows, uniqueKeyName, rowDisableKey, onRowSelection, addColumnMaxSize } = props;
 
-    const handleRowClick = (rowData: object) => () => onRowClick && onRowClick(rowData);
+    const handleRowClick = (rowData: any) => {
+        return onRowClick && !rowData[rowDisableKey] ? () => onRowClick(rowData) : undefined;
+    };
 
     const getRow = (rowData: any, configs: ColumnConfig[] = columns, field = '') => {
         const cells: React.ReactElement[] = [];
@@ -28,6 +30,7 @@ const Body: React.SFC<Props> = React.memo(props => {
                   )
                 : cells.push(
                       <Cell
+                          disabled={rowData[rowDisableKey]}
                           key={index}
                           data={rowData[config.field]}
                           rowId={rowData[uniqueKeyName]}
@@ -52,7 +55,12 @@ const Body: React.SFC<Props> = React.memo(props => {
         <>
             {data.map((row, index) => {
                 return (
-                    <Row key={row.id || index} onClick={handleRowClick(row)} gridTemplateColumns={getGridTemplateColumns(columns)}>
+                    <Row
+                        disabled={row[rowDisableKey]}
+                        key={row.id || index}
+                        onClick={handleRowClick(row)}
+                        gridTemplateColumns={getGridTemplateColumns(columns)}
+                    >
                         {getRow(row)}
                     </Row>
                 );

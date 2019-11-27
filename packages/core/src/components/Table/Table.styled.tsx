@@ -19,24 +19,17 @@ export const TableStyled = styled('ol')<TableStyledProps>`
             top: 0;
             z-index: 2;
             align-items: end;
-            background-color: ${({ theme }) => theme.table.oddLiBgColor};
             border: none;
-        }
-
-        &:not(:first-of-type) {
-            cursor: ${({ isRowClickable }) => (isRowClickable ? 'pointer' : 'default')};
 
             & > * {
-                height: 100%;
+                background-color: ${({ theme }) => theme.table.headerColor};
             }
         }
 
-        &:nth-child(even) > * {
-            background-color: ${({ theme }) => theme.table.evenLiBgColor};
-        }
-
-        &:nth-child(odd) > * {
-            background-color: ${({ theme }) => theme.table.oddLiBgColor};
+        &:not(:first-of-type) {
+            & > * {
+                height: 100%;
+            }
         }
     }
 `;

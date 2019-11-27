@@ -51,6 +51,7 @@ export const WithColumnHide = () => {
             <Button onClick={handleModalState}>Hide Columns</Button>
             <Table
                 isSelectable
+                rowDisableKey="disabled"
                 selectedRows={selectedRows}
                 onRowSelection={setSelectedRows}
                 onRowClick={action('Row Clicked')}

@@ -10,8 +10,13 @@ exports[`Row should render NoResult properly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-bottom: 1px solid #ededed;
+  cursor: default;
   text-align: center;
   line-height: 30px;
+}
+
+.c0 > * {
+  background-color: #ffffff;
 }
 
 <div>
@@ -33,6 +38,11 @@ exports[`Row should render row properly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-bottom: 1px solid #ededed;
+  cursor: default;
+}
+
+.c0 > * {
+  background-color: #ffffff;
 }
 
 <div>

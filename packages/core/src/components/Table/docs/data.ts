@@ -6,6 +6,7 @@ const data = [
         color: 'red,green',
         rating: 5,
         isPassed: true,
+        disabled: true,
         marks: {
             history: 2,
             maths: 4

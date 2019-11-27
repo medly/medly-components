@@ -25,8 +25,8 @@ const columns: ColumnConfig[] = [
         title: 'Favourite Color',
         field: 'color',
         formatter: 'react-component',
-        component: ({ data: colors }) => {
-            const chips = colors.split(',').map((color: string) => <Chip key={color} label={color} />);
+        component: ({ data: colors, disabled }) => {
+            const chips = colors.split(',').map((color: string) => <Chip key={color} label={color} disabled={disabled} />);
             return <FavouriteColor>{chips}</FavouriteColor>;
         },
         sort: true

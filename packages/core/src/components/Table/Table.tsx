@@ -10,7 +10,7 @@ import { ColumnConfig, Props, StaticProps } from './types';
 import useRowSelector from './useRowSelector';
 
 export const Table: SFC<Props> & WithStyle & StaticProps = props => {
-    const { data, onRowClick, onSort, uniqueKeyName, isSelectable, selectedRows, onRowSelection } = props,
+    const { data, onRowClick, onSort, uniqueKeyName, rowDisableKey, isSelectable, selectedRows, onRowSelection } = props,
         checkboxColumnConfig: ColumnConfig = {
             title: 'ch',
             field: 'medly-table-checkbox',
@@ -19,7 +19,11 @@ export const Table: SFC<Props> & WithStyle & StaticProps = props => {
             frozen: true
         };
 
-    const [ids, selectedIds, toggleId] = useRowSelector(data.map(dt => dt[uniqueKeyName]), selectedRows),
+    const [ids, selectedIds, toggleId] = useRowSelector(
+            data.map(dt => dt[uniqueKeyName]),
+            selectedRows
+        ),
+        [isSelectAllDisable, setSelectAllDisableState] = useState(data.every(dt => dt[rowDisableKey])),
         [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
         [columns, setColumns] = useState(addSizeToColumnConfig([checkboxColumnConfig, ...props.columns]));
 
@@ -31,6 +35,7 @@ export const Table: SFC<Props> & WithStyle & StaticProps = props => {
 
     useEffect(() => {
         ids.setValue(data.map(dt => dt[uniqueKeyName]));
+        setSelectAllDisableState(data.every(dt => dt[rowDisableKey]));
     }, [data]);
 
     useEffect(() => {
@@ -49,12 +54,13 @@ export const Table: SFC<Props> & WithStyle & StaticProps = props => {
                         columns,
                         setColumns,
                         maxColumnSizes,
+                        isSelectAllDisable,
                         onSelectAllClick: toggleId,
                         isAllRowSelected: ids.isAllSelected
                     }}
                 />
             ),
-            [columns, ids]
+            [columns, ids, isSelectAllDisable]
         ),
         body = useMemo(
             () => (
@@ -64,6 +70,7 @@ export const Table: SFC<Props> & WithStyle & StaticProps = props => {
                         data,
                         onRowClick,
                         uniqueKeyName,
+                        rowDisableKey,
                         addColumnMaxSize,
                         selectedRows: selectedIds.value,
                         onRowSelection: toggleId
@@ -83,6 +90,7 @@ export const Table: SFC<Props> & WithStyle & StaticProps = props => {
 
 Table.defaultProps = {
     uniqueKeyName: 'id',
+    rowDisableKey: '',
     data: [],
     selectedRows: [],
     isSelectable: false

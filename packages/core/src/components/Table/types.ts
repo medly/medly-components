@@ -26,7 +26,7 @@ export interface ColumnConfig {
     field: string;
     children?: ColumnConfig[];
     formatter: keyof ColumnsWidth;
-    component?: React.SFC<{ data: any; rowId: any }>;
+    component?: React.SFC<{ data: any; rowId?: any; disabled?: boolean }>;
 }
 
 export interface GridTemplateProps {
@@ -42,6 +42,8 @@ export interface Props {
     data: Data[];
     /** Key name in data to be used as unique id */
     uniqueKeyName?: string;
+    /** Key name to disable row actions */
+    rowDisableKey?: string;
     /** Column configuration */
     columns: ColumnConfig[];
     /** Shows checkboxes to select rows */
