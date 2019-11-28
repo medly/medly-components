@@ -6,9 +6,9 @@ import { Props } from './types';
 
 export const Radio: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { size, label, required, labelPosition, labelSize, labelWeight, labelColor, ...restProps } = props;
+        const { size, label, required, labelPosition, labelSize, labelWeight, fullWidth, labelColor, ...restProps } = props;
         return (
-            <FieldWithLabel fieldWithMaxContent {...{ labelPosition }}>
+            <FieldWithLabel fieldWithMaxContent {...{ fullWidth, labelPosition }}>
                 {label && (
                     <FieldWithLabel.Label
                         showPointer={!restProps.disabled}

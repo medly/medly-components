@@ -10,7 +10,7 @@ describe('Radio component', () => {
 
     it('should render correctly with all the props given', () => {
         const { container } = TestUtils.render(
-            <Radio disabled name="gender" value="female" label="Female" size="M" labelPosition="right" />
+            <Radio disabled fullWidth name="gender" value="female" label="Female" size="M" labelPosition="right" />
         );
         expect(container).toMatchSnapshot();
     });

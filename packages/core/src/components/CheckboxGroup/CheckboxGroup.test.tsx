@@ -8,9 +8,14 @@ describe('CheckboxGroup component', () => {
     it('should render correctly with all the props', () => {
         const { container } = TestUtils.render(
             <CheckboxGroup
+                fullWidth
+                disabled
                 onChange={jest.fn()}
                 label="Fruits"
-                options={[{ value: 'apple', label: 'Apple' }, { value: 'orange', label: 'Orange' }]}
+                options={[
+                    { value: 'apple', label: 'Apple' },
+                    { value: 'orange', label: 'Orange' }
+                ]}
             />
         );
         expect(container).toMatchSnapshot();
@@ -20,10 +25,13 @@ describe('CheckboxGroup component', () => {
         const mockOnChange = jest.fn(),
             { getByText } = TestUtils.render(
                 <CheckboxGroup
-                    defaultValues={['apple']}
+                    values={['apple']}
                     onChange={mockOnChange}
                     label="Fruits"
-                    options={[{ value: 'apple', label: 'Apple' }, { value: 'orange', label: 'Orange' }]}
+                    options={[
+                        { value: 'apple', label: 'Apple' },
+                        { value: 'orange', label: 'Orange' }
+                    ]}
                 />
             );
         TestUtils.fireEvent.click(getByText('Apple'));
@@ -36,7 +44,10 @@ describe('CheckboxGroup component', () => {
                 <CheckboxGroup
                     onChange={mockOnChange}
                     label="Fruits"
-                    options={[{ value: 'apple', label: 'Apple' }, { value: 'orange', label: 'Orange' }]}
+                    options={[
+                        { value: 'apple', label: 'Apple' },
+                        { value: 'orange', label: 'Orange' }
+                    ]}
                 />
             );
         TestUtils.fireEvent.click(getByText('Apple'));
@@ -48,10 +59,13 @@ describe('CheckboxGroup component', () => {
             { getByText } = TestUtils.render(
                 <CheckboxGroup
                     showSelectAll
-                    defaultValues={['apple']}
+                    values={['apple']}
                     onChange={mockOnChange}
                     label="Fruits"
-                    options={[{ value: 'apple', label: 'Apple' }, { value: 'orange', label: 'Orange' }]}
+                    options={[
+                        { value: 'apple', label: 'Apple' },
+                        { value: 'orange', label: 'Orange' }
+                    ]}
                 />
             );
         TestUtils.fireEvent.click(getByText('Fruits'));
@@ -63,10 +77,13 @@ describe('CheckboxGroup component', () => {
             { getByText } = TestUtils.render(
                 <CheckboxGroup
                     showSelectAll
-                    defaultValues={['apple', 'orange']}
+                    values={['apple', 'orange']}
                     onChange={mockOnChange}
                     label="Fruits"
-                    options={[{ value: 'apple', label: 'Apple' }, { value: 'orange', label: 'Orange' }]}
+                    options={[
+                        { value: 'apple', label: 'Apple' },
+                        { value: 'orange', label: 'Orange' }
+                    ]}
                 />
             );
         TestUtils.fireEvent.click(getByText('Fruits'));

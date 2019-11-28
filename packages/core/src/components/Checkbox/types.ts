@@ -14,6 +14,8 @@ export interface Props extends InputProps, WithThemeProp {
     label?: string;
     /** Checkbox size */
     size?: CheckboxSizes;
+    /** Takes full width of the parent component */
+    fullWidth?: boolean;
     /** Label position */
     labelPosition?: LabelPositions;
     /** Label size */

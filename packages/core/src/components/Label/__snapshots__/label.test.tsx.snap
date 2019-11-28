@@ -30,6 +30,7 @@ exports[`Label component should render correctly with default props 1`] = `
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
+  cursor: default;
 }
 
 <div>

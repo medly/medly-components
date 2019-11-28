@@ -11,7 +11,6 @@ export const ThemeInterface = (props: LabelTheme): any => null;
 
 export const Basic = () => (
     <Label
-        showPointer={boolean('Show Pointer', false)}
         required={boolean('Show Required asterisk', false)}
         labelColor={color('Color', defaultColor)}
         labelSize={select('Label Size', sizeOptions, 'L1')}

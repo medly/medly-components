@@ -7,14 +7,19 @@ const labelPosition: Array<Props['labelPosition']> = ['left', 'right', 'top', 'b
 const size: Array<Props['size']> = ['XS', 'S', 'M', 'L', 'XL'];
 
 export const Basic = () => {
-    const [value, setValue] = useState(['grapes']);
+    const [values, setValues] = useState(['grapes']);
 
     return (
         <CheckboxGroup
-            defaultValues={value}
-            onChange={setValue}
-            options={[{ value: 'apple', label: 'Apple' }, { value: 'orange', label: 'Orange' }, { value: 'grapes', label: 'Grapes' }]}
+            values={values}
+            onChange={setValues}
+            options={[
+                { value: 'apple', label: 'Apple' },
+                { value: 'orange', label: 'Orange' },
+                { value: 'grapes', label: 'Grapes' }
+            ]}
             disabled={boolean('Disabled', false)}
+            fullWidth={boolean('Full Width', false)}
             showSelectAll={boolean('Show Select All', false)}
             label={text('Label', 'Fruits')}
             size={select('Size', size, 'S')}

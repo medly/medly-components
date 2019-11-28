@@ -14,6 +14,7 @@ export const Basic = () => (
         name="fruit"
         size={select('Size', size, 'S')}
         label="Orange"
+        fullWidth={boolean('Full Width', false)}
         disabled={boolean('Disabled', false)}
         labelPosition={select('Label Position', labelPosition, 'right')}
     />

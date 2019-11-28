@@ -3,14 +3,16 @@ import { WithThemeProp } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 
 export interface Props extends WithThemeProp {
+    /** Array of selected values */
+    values?: any[];
+    /** This method will be called with checked values */
+    onChange: (values: any[]) => void;
     /** Options */
-    options: Array<{ value: any; label: string }>;
-    /** This method will be called with checked options */
-    onChange: (value: any[]) => void;
+    options: Array<{ value: any; label: string; disabled?: boolean }>;
     /** Label */
     label?: string;
-    /** Default values to be selected */
-    defaultValues?: any[];
+    /** Takes full width of the parent component */
+    fullWidth?: boolean;
     /** Disable all the checkboxes */
     disabled?: boolean;
     /** Label position */

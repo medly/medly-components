@@ -15,6 +15,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
+  cursor: default;
 }
 
 .c6 {
@@ -22,7 +23,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
   font-weight: 400;
   color: #555;
   margin: 0px 0px 0px 8px;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .c4 {
@@ -87,7 +88,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
   height: 16px;
   position: relative;
   border: 1px solid #CCCCCC;
-  background-color: #ffffff;
+  background-color: #ededed;
   border-radius: 15%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -137,7 +138,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
   width: 100%;
   height: 100%;
   margin: 0;
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .c8:focus {
@@ -178,9 +179,11 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
         </label>
         <div
           class="c7"
+          disabled=""
         >
           <input
             class="c8"
+            disabled=""
             id="Apple"
             name="apple"
             type="checkbox"
@@ -215,9 +218,11 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
         </label>
         <div
           class="c7"
+          disabled=""
         >
           <input
             class="c8"
+            disabled=""
             id="Orange"
             name="orange"
             type="checkbox"

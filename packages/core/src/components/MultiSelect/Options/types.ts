@@ -3,7 +3,7 @@ import { Option } from '../types';
 
 export interface OptionsProps extends WithThemeProp {
     options: Option[];
-    defaultValues: any[];
+    values: any[];
     onOptionClick: (options: any[]) => void;
 
     showCheckbox?: boolean;

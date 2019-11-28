@@ -6,6 +6,7 @@ exports[`Input component should render correctly when fullWidth & required props
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
+  cursor: default;
 }
 
 .c4 {
@@ -271,6 +272,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   font-weight: 400;
   color: #555;
   margin: 0px 0px 8px 0px;
+  cursor: default;
 }
 
 .c1::after {

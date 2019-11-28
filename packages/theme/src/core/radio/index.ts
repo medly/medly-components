@@ -13,7 +13,8 @@ const radio: RadioTheme = {
     bgColor: colors.white,
     fillColor: colors.violet[500],
     borderColor: colors.grey[200],
-    disabledBgcolor: colors.grey[600]
+    disabledBgcolor: colors.grey[600],
+    outlineColor: colors.violet[500]
 };
 
 export default radio;

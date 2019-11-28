@@ -8,7 +8,7 @@ import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
 const Options: React.SFC<OptionsProps> & WithStyle = React.memo(props => {
-    const selectedValues = props.defaultValues.map(op => op.value);
+    const selectedValues = props.values.map(op => op.value);
 
     const handleCheckboxClick = (event: React.ChangeEvent<HTMLInputElement>) => {
             const item = event.target.name,
@@ -38,7 +38,7 @@ const Options: React.SFC<OptionsProps> & WithStyle = React.memo(props => {
                     )}
                     {props.showCheckbox && Array.isArray(op.value) && (
                         <CheckboxGroup
-                            defaultValues={selectedValues.filter(vl => op.value.map((nestedOp: Option) => nestedOp.value).includes(vl))}
+                            values={selectedValues.filter(vl => op.value.map((nestedOp: Option) => nestedOp.value).includes(vl))}
                             showSelectAll
                             labelPosition="top"
                             disabled={op.disabled}

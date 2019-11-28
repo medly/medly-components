@@ -1,7 +1,7 @@
 import { SelectTheme } from '@medly-components/theme';
 import { action } from '@storybook/addon-actions';
 import { boolean, select, text } from '@storybook/addon-knobs';
-import React from 'react';
+import React, { useState } from 'react';
 import { LabelPositions } from '../Label/types';
 import { MultiSelect } from './MultiSelect';
 
@@ -24,19 +24,23 @@ const options = [
 
 export const ThemeInterface = (props: SelectTheme): any => null;
 
-export const Basic = () => (
-    <MultiSelect
-        options={options}
-        defaultValues={['medly pharmacy', 'a pharmacy']}
-        onChange={action('Value Changed')}
-        disabled={boolean('Disabled', false)}
-        showChips={boolean('Show Chips', true)}
-        showCheckbox={boolean('Show Checkbox', true)}
-        fullWidth={boolean('Full Width', true)}
-        required={boolean('Required', false)}
-        label={text('Label', 'Pharmacy')}
-        placeholder="Select Pharmacy"
-        description={text('Description', 'We will show reports based on Pharmacy')}
-        labelPosition={select('Label Position', labelPosition, 'left')}
-    />
-);
+export const Basic = () => {
+    const [values, setValues] = useState(['medly pharmacy', 'a pharmacy']);
+
+    return (
+        <MultiSelect
+            options={options}
+            values={values}
+            onChange={setValues}
+            disabled={boolean('Disabled', false)}
+            showChips={boolean('Show Chips', true)}
+            showCheckbox={boolean('Show Checkbox', true)}
+            fullWidth={boolean('Full Width', true)}
+            required={boolean('Required', false)}
+            label={text('Label', 'Pharmacy')}
+            placeholder="Select Pharmacy"
+            description={text('Description', 'We will show reports based on Pharmacy')}
+            labelPosition={select('Label Position', labelPosition, 'left')}
+        />
+    );
+};

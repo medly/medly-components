@@ -9,7 +9,13 @@ describe('MultiSelect component', () => {
     const options = [
         { value: 'all', label: 'All' },
         { value: 'Dummy1', label: 'Dummy1' },
-        { label: 'Nested Options', value: [{ value: 'Dummy2', label: 'Dummy2' }, { value: 'Dummy3', label: 'Dummy3' }] }
+        {
+            label: 'Nested Options',
+            value: [
+                { value: 'Dummy2', label: 'Dummy2' },
+                { value: 'Dummy3', label: 'Dummy3' }
+            ]
+        }
     ];
 
     describe.each([true, false])('with checkbox %p', showCheckbox => {
@@ -29,7 +35,7 @@ describe('MultiSelect component', () => {
                         onChange={mockOnChange}
                         showChips
                         showCheckbox={showCheckbox}
-                        defaultValues={['all']}
+                        values={['all']}
                         labelPosition="left"
                         fullWidth
                         label="Pharmacy"
@@ -75,12 +81,7 @@ describe('MultiSelect component', () => {
         it('should deselect on click of already selected option', () => {
             const mockOnChange = jest.fn(),
                 { getByTestId, getAllByText } = render(
-                    <MultiSelect
-                        defaultValues={['Dummy1', 'Dummy2']}
-                        showCheckbox={showCheckbox}
-                        options={options}
-                        onChange={mockOnChange}
-                    />
+                    <MultiSelect values={['Dummy1', 'Dummy2']} showCheckbox={showCheckbox} options={options} onChange={mockOnChange} />
                 ),
                 inputEl = getByTestId('select-input');
             fireEvent.click(inputEl);
@@ -94,12 +95,7 @@ describe('MultiSelect component', () => {
                 { container, getByTestId, getByText } = render(
                     <div>
                         <p>Outer Element</p>
-                        <MultiSelect
-                            defaultValues={['Dummy1', 'Dummy2']}
-                            showCheckbox={showCheckbox}
-                            options={options}
-                            onChange={mockOnChange}
-                        />
+                        <MultiSelect values={['Dummy1', 'Dummy2']} showCheckbox={showCheckbox} options={options} onChange={mockOnChange} />
                     </div>
                 );
             const inputEl = getByTestId('select-input');
@@ -117,7 +113,7 @@ describe('MultiSelect component', () => {
                     <MultiSelect
                         showChips
                         showCheckbox={showCheckbox}
-                        defaultValues={['Dummy1', 'Dummy2']}
+                        values={['Dummy1', 'Dummy2']}
                         options={options}
                         onChange={mockOnChange}
                     />

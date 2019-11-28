@@ -8,7 +8,7 @@ const Options: React.SFC<OptionsProps> & WithStyle = React.memo(props => {
     return (
         <OptionsStyled>
             {props.options.map(option => (
-                <Option key={option.value} option={option} onClick={props.onOptionClick(option)} />
+                <Option disabled={option.disabled} key={option.value} option={option} onClick={props.onOptionClick(option)} />
             ))}
         </OptionsStyled>
     );

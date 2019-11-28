@@ -8,10 +8,17 @@ describe('Radio Group', () => {
 
     it('should render correctly', () => {
         const { container } = TestUtils.render(
-            <RadioGroup label="Gender" name="gender" defaultChecked="female">
-                <Radio value="female" label="Female" />
-                <Radio value="male" label="Male" />
-            </RadioGroup>
+            <RadioGroup
+                disabled
+                fullWidth
+                label="Gender"
+                name="gender"
+                value="female"
+                options={[
+                    { value: 'female', label: 'Female' },
+                    { value: 'male', label: 'Male' }
+                ]}
+            />
         );
         expect(container).toMatchSnapshot();
     });
@@ -20,10 +27,19 @@ describe('Radio Group', () => {
         const mockOnChange = jest.fn();
 
         const { container, getByText } = TestUtils.render(
-            <RadioGroup label="Gender" name="gender" onChange={mockOnChange} defaultChecked="female" required size="M" labelPosition="top">
-                <Radio value="female" label="Female" />
-                <Radio value="male" label="Male" />
-            </RadioGroup>
+            <RadioGroup
+                label="Gender"
+                name="gender"
+                onChange={mockOnChange}
+                value="female"
+                required
+                size="M"
+                labelPosition="top"
+                options={[
+                    { value: 'female', label: 'Female' },
+                    { value: 'male', label: 'Male' }
+                ]}
+            />
         );
         TestUtils.fireEvent.click(getByText('Male'));
         expect(mockOnChange).toBeCalledWith('male');

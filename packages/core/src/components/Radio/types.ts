@@ -12,6 +12,8 @@ export interface RadioWrapperProps extends DivProps, WithThemeProp {
 export interface Props extends InputProps, WithThemeProp {
     /** Value of the radio */
     value: string;
+    /** Takes full width of the parent component */
+    fullWidth?: boolean;
     /** Label position */
     labelPosition?: LabelPositions;
     /** Label size */

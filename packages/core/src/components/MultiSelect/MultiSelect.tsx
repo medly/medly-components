@@ -14,16 +14,16 @@ export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
         const { id, description, label, labelPosition, required, fullWidth, disabled, minWidth } = props;
 
         const [inputValue, setInputValue] = useState(''),
-            [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(props.options, props.defaultValues)),
+            [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(props.options, props.values)),
             [options, setOptions] = useState(props.options),
             [placeholder, setPlaceholder] = useState(
-                props.defaultValues.length > 0 ? `${props.defaultValues.length} options selected` : props.placeholder
+                props.values.length > 0 ? `${props.values.length} options selected` : props.placeholder
             );
 
         useEffect(() => {
-            setSelectedOptions(getDefaultSelectedOptions(props.options, props.defaultValues));
+            setSelectedOptions(getDefaultSelectedOptions(props.options, props.values));
             setOptions(props.options);
-        }, [props.options, props.defaultValues]);
+        }, [props.options, props.values]);
 
         useEffect(() => {
             setPlaceholder(selectedOptions.length > 0 ? `${selectedOptions.length} options selected` : props.placeholder);
@@ -89,7 +89,7 @@ export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
                         {!disabled && (
                             <Options
                                 showCheckbox={props.showCheckbox}
-                                defaultValues={selectedOptions}
+                                values={selectedOptions}
                                 options={options}
                                 onOptionClick={handleOptionClick}
                             />
@@ -106,7 +106,7 @@ MultiSelect.displayName = 'MultiSelect';
 MultiSelect.Style = SelectWrapperStyled;
 MultiSelect.defaultProps = {
     labelPosition: 'left',
-    defaultValues: [],
+    values: [],
     showChips: true,
     showCheckbox: true,
     fullWidth: false,

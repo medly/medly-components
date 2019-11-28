@@ -5,6 +5,7 @@ export interface Option {
     value: any;
     label: string;
     selected?: boolean;
+    disabled?: boolean;
 }
 
 export interface DefaultSelected {
@@ -21,22 +22,24 @@ export interface SelectWrapperProps extends HTMLProps<HTMLDivElement>, WithTheme
 type InputProps = Omit<HTMLProps<HTMLInputElement>, 'onChange'>;
 
 export interface SelectProps extends InputProps, WithThemeProp {
+    /** Selected Value */
+    value?: any;
+    /** Function to be called on selecting any option */
+    onChange?: (value: any) => void;
     /** Options */
     options: Option[];
-    /** Default selected options */
-    defaultValue?: any;
+    /** Label */
+    label?: string;
     /** Min width */
     minWidth?: number;
     /** Label Position */
     labelPosition?: LabelPositions;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
-    /** Label */
-    label?: string;
     /** Description of the Select */
     description?: string;
     /** Placeholder for the input */
     placeholder?: string;
-    /** Function to be called on selecting any option */
-    onChange?: (value: any) => void;
+    /** To be used when it is required */
+    required?: boolean;
 }

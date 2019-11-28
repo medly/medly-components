@@ -9,7 +9,7 @@ describe('Checkbox component', () => {
     });
 
     it('should render correctly with all the props given', () => {
-        const { container } = TestUtils.render(<Checkbox disabled name="gender" label="Female" size="M" labelPosition="right" />);
+        const { container } = TestUtils.render(<Checkbox disabled fullWidth name="gender" label="Female" size="M" labelPosition="right" />);
         expect(container).toMatchSnapshot();
     });
 

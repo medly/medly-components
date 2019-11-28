@@ -11,7 +11,7 @@ import { Option, SelectProps } from './types';
 export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { id, description, label, placeholder, labelPosition, minWidth, required, fullWidth, disabled } = props,
-            defaultSelectedOption = getDefaultSelectedOption(props.options, props.defaultValue);
+            defaultSelectedOption = getDefaultSelectedOption(props.options, props.value);
 
         const [inputValue, setInputValue] = useState(defaultSelectedOption.label),
             [selectedOption, setSelectedOption] = useState(defaultSelectedOption),
@@ -37,7 +37,7 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                 newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
             },
             handleOptionClick = (option: Option) => () => {
-                if (option.value !== selectedOption.value) {
+                if (option.value !== selectedOption.value && !option.disabled) {
                     setInputValue(option.label);
                     setSelectedOption(option);
                     setOptions(getOptionsWithSelected(props.options, option));
@@ -50,11 +50,11 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
             };
 
         useEffect(() => {
-            const selected = getDefaultSelectedOption(props.options, props.defaultValue);
+            const selected = getDefaultSelectedOption(props.options, props.value);
             setInputValue(selected.label);
             setSelectedOption(selected);
             setOptions(getOptionsWithSelected(props.options, selected));
-        }, [props.options, props.defaultValue]);
+        }, [props.options, props.value]);
 
         useEffect(() => {
             if (downPress && popoverRef.current.style.display === 'block') {
@@ -110,7 +110,7 @@ SingleSelect.displayName = 'SingleSelect';
 SingleSelect.Style = SelectWrapperStyled;
 SingleSelect.defaultProps = {
     labelPosition: 'left',
-    defaultValue: '',
+    value: '',
     fullWidth: false,
     required: false,
     label: '',

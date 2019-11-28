@@ -9,10 +9,6 @@ const asterisk = () => css`
     }
 `;
 
-const pointerCursor = () => css`
-    cursor: pointer;
-`;
-
 const getMappedProps = ({ theme: { label, font }, ...props }: Props) => {
     const { defaults } = label;
     const { labelSize, labelWeight, labelColor } = props;
@@ -29,7 +25,7 @@ export const LabelStyled = styled('label').attrs(getMappedProps)<StyledProps>`
     color: ${({ textColor }) => textColor};
     margin: ${({ theme, labelPosition }) => oppositePositionalspacing(labelPosition, theme.spacing.S)};
     ${({ required }) => required && asterisk()}
-    ${({ showPointer }) => showPointer && pointerCursor()}
+    cursor: ${({ showPointer }) => (showPointer === undefined ? 'default' : showPointer ? 'pointer' : 'not-allowed')};
 `;
 
 LabelStyled.defaultProps = {

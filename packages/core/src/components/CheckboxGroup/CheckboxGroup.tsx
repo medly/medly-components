@@ -6,7 +6,7 @@ import { Props } from './types';
 
 export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(props => {
     const {
-        defaultValues,
+        values,
         onChange,
         options,
         size,
@@ -16,22 +16,23 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(props => {
         labelWeight,
         labelColor,
         showSelectAll,
-        disabled
+        disabled,
+        fullWidth
     } = props;
 
     const handleOptionClick = (event: React.ChangeEvent<HTMLInputElement>) => {
             const item = event.target.name,
                 isChecked = event.target.checked,
-                newValues = isChecked ? [...defaultValues, item] : defaultValues.filter(vl => vl !== item);
+                newValues = isChecked ? [...values, item] : values.filter(vl => vl !== item);
             onChange(newValues);
         },
         handleSelectAllClick = () => {
-            const newValues = options.length === defaultValues.length ? [] : options.map(option => option.value);
+            const newValues = options.length === values.length ? [] : options.map(option => option.value);
             onChange(newValues);
         };
 
     return (
-        <FieldWithLabel fullWidth {...{ labelPosition }}>
+        <FieldWithLabel fullWidth {...{ fullWidth, labelPosition }}>
             {label && (
                 <FieldWithLabel.Label {...{ labelPosition, labelSize, labelWeight, labelColor }}>
                     {showSelectAll ? (
@@ -39,7 +40,7 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(props => {
                             key="select-all"
                             {...{ size, disabled, labelSize, labelWeight, labelColor }}
                             label={label}
-                            checked={options.length === defaultValues.length}
+                            checked={options.length === values.length}
                             onChange={handleSelectAllClick}
                         />
                     ) : (
@@ -51,12 +52,13 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(props => {
                 {options.map(option => {
                     return (
                         <Checkbox
+                            size={size}
                             key={option.value}
                             name={option.value}
                             label={option.label}
-                            checked={defaultValues.includes(option.value)}
+                            checked={values.includes(option.value)}
                             onChange={handleOptionClick}
-                            {...{ size, disabled }}
+                            disabled={disabled || option.disabled}
                         />
                     );
                 })}
@@ -69,7 +71,8 @@ CheckboxGroup.displayName = 'CheckboxGroup';
 CheckboxGroup.Style = FieldWithLabel.Style;
 CheckboxGroup.defaultProps = {
     disabled: false,
-    defaultValues: [],
+    fullWidth: true,
+    values: [],
     showSelectAll: false,
     labelPosition: 'left'
 };

@@ -124,6 +124,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
+  cursor: default;
 }
 
 .c5 {
@@ -245,6 +246,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
+  cursor: default;
 }
 
 .c5 {
@@ -325,6 +327,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
+  cursor: default;
 }
 
 .c5 {
@@ -419,6 +422,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   font-weight: 400;
   color: #555;
   margin: 0px 8px 0px 0px;
+  cursor: default;
 }
 
 .c5 {

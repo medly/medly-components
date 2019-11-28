@@ -15,6 +15,7 @@ export const Basic = () => (
         name="gender"
         label="Female"
         disabled={boolean('Disabled', false)}
+        fullWidth={boolean('Full Width', false)}
         size={select('Size', size, 'S')}
         labelPosition={select('Label Position', labelPosition, 'right')}
     />

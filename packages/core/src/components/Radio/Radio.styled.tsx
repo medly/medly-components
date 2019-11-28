@@ -39,7 +39,7 @@ export const RadioWrapperStyled = styled('div')<RadioWrapperProps>`
     background-color: ${({ theme, disabled }) => (disabled ? theme.radio.disabledBgcolor : theme.radio.bgColor)};
 
     &:focus-within {
-        box-shadow: 0 0 0 1pt ${({ theme }) => theme.checkbox.outlineColor};
+        box-shadow: 0 0 0 1pt ${({ theme }) => theme.radio.outlineColor};
     }
 
     ${centerAligned()}

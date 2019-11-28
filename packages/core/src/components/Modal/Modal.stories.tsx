@@ -6,7 +6,11 @@ import Input from '../Input';
 import SingleSelect from '../SingleSelect';
 import { Modal } from './Modal';
 
-const options = [{ value: '0', label: 'Admin' }, { value: '1', label: 'Pharmacist' }, { value: '2', label: 'Covered Entity' }];
+const options = [
+    { value: '0', label: 'Admin' },
+    { value: '1', label: 'Pharmacist' },
+    { value: '2', label: 'Covered Entity' }
+];
 
 export const ThemeInterface = (props: ModalTheme): any => null;
 

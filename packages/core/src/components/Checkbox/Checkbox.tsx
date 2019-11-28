@@ -7,7 +7,7 @@ import { Props } from './types';
 
 export const Checkbox: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { size, label, required, labelPosition, labelSize, labelWeight, labelColor, onChange, ...restProps } = props;
+        const { size, label, required, labelPosition, labelSize, labelWeight, labelColor, fullWidth, onChange, ...restProps } = props;
 
         const changeHandler = (e: any) => {
             // @ts-ignore
@@ -15,7 +15,7 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
         };
 
         return (
-            <FieldWithLabel fieldWithMaxContent {...{ labelPosition }}>
+            <FieldWithLabel fieldWithMaxContent {...{ fullWidth, labelPosition }}>
                 {label && (
                     <FieldWithLabel.Label
                         showPointer={!restProps.disabled}

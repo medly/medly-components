@@ -6,7 +6,6 @@ import { Props } from './types';
 export const Label: SFC<Props> & WithStyle = React.memo(props => <LabelStyled {...props}>{props.children}</LabelStyled>);
 
 Label.defaultProps = {
-    showPointer: false,
     labelPosition: 'left',
     required: false
 };

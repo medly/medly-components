@@ -1,7 +1,7 @@
 import { WithStyle } from '@medly-components/utils';
 import React, { SFC } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
-import { Props as RadioProps } from '../Radio/types';
+import Radio from '../Radio';
 import { Props } from './types';
 
 export const RadioGroup: SFC<Props> & WithStyle = React.memo(props => {
@@ -10,12 +10,13 @@ export const RadioGroup: SFC<Props> & WithStyle = React.memo(props => {
         name,
         label,
         required,
-        children,
+        options,
         labelPosition,
         onChange,
-        defaultChecked,
+        value,
         disabled,
         labelSize,
+        fullWidth,
         labelWeight,
         labelColor
     } = props;
@@ -25,21 +26,19 @@ export const RadioGroup: SFC<Props> & WithStyle = React.memo(props => {
         onChange && onChange(target.value);
     };
     return (
-        <FieldWithLabel fullWidth {...{ labelPosition }}>
+        <FieldWithLabel fullWidth {...{ fullWidth, labelPosition }}>
             {label && (
                 <FieldWithLabel.Label {...{ required, labelPosition, labelSize, labelWeight, labelColor }}>{label}</FieldWithLabel.Label>
             )}
             <FieldWithLabel.Field onChange={handleOnChange}>
-                {React.Children.map(children, child => {
-                    return React.cloneElement(child as React.ReactElement<RadioProps> & WithStyle, {
-                        size,
-                        name,
-                        required,
-                        disabled,
-                        // @ts-ignore
-                        defaultChecked: child.props.value === defaultChecked
-                    });
-                })}
+                {options.map(option => (
+                    <Radio
+                        key={option.value}
+                        {...{ ...option, size, name, required }}
+                        disabled={disabled || option.disabled}
+                        defaultChecked={option.value === value}
+                    />
+                ))}
             </FieldWithLabel.Field>
         </FieldWithLabel>
     );
@@ -50,5 +49,6 @@ RadioGroup.Style = FieldWithLabel.Style;
 RadioGroup.defaultProps = {
     label: '',
     name: '',
+    fullWidth: true,
     labelPosition: 'left'
 };
