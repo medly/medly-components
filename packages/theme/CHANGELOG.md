@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.4](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.3...@medly-components/theme@1.0.0-beta.4) (2019-11-28)
+
+
+### Features
+
+* **core:** add row disabled feature in table component ([71c1154](https://github.com/medlypharmacy/medly-components/commit/71c1154629d3e5935cb109f7934a336ff0959612))
+
+
+
+
+
 # [1.0.0-beta.3](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.2...@medly-components/theme@1.0.0-beta.3) (2019-11-13)
 
 **Note:** Version bump only for package @medly-components/theme

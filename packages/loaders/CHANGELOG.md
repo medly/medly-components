@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.4](https://github.com/medlypharmacy/medly-components/compare/@medly-components/loaders@1.0.0-beta.3...@medly-components/loaders@1.0.0-beta.4) (2019-11-28)
+
+**Note:** Version bump only for package @medly-components/loaders
+
+
+
+
+
 # [1.0.0-beta.3](https://github.com/medlypharmacy/medly-components/compare/@medly-components/loaders@1.0.0-beta.2...@medly-components/loaders@1.0.0-beta.3) (2019-11-13)
 
 **Note:** Version bump only for package @medly-components/loaders
