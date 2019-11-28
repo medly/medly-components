@@ -3520,16 +3520,16 @@ exports[`MultiSelect component with checkbox true should close options when clic
 }
 
 .c22 {
-  margin: 8px 8px 8px 0px;
-  display: inline-grid;
+  margin: 8px 0px;
+  display: grid;
   grid-template-areas: 'label' 'field' 'description';
 }
 
 .c22 .c24 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -4232,16 +4232,16 @@ exports[`MultiSelect component with checkbox true should handle group name click
 }
 
 .c26 {
-  margin: 8px 8px 8px 0px;
-  display: inline-grid;
+  margin: 8px 0px;
+  display: grid;
   grid-template-areas: 'label' 'field' 'description';
 }
 
 .c26 .c28 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -4974,7 +4974,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
               </div>
             </div>
             <div
-              class="sc-dnqmqq bIdBVu"
+              class="sc-dnqmqq iCWiMV"
             >
               <label
                 class="sc-EHOje SsNgw sc-gzVnrw eujXuS"
@@ -5231,16 +5231,16 @@ exports[`MultiSelect component with checkbox true should not render options when
 }
 
 .c22 {
-  margin: 8px 8px 8px 0px;
-  display: inline-grid;
+  margin: 8px 0px;
+  display: grid;
   grid-template-areas: 'label' 'field' 'description';
 }
 
 .c22 .c24 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -5893,16 +5893,16 @@ exports[`MultiSelect component with checkbox true should render all the options 
 }
 
 .c22 {
-  margin: 8px 8px 8px 0px;
-  display: inline-grid;
+  margin: 8px 0px;
+  display: grid;
   grid-template-areas: 'label' 'field' 'description';
 }
 
 .c22 .c24 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -6905,16 +6905,16 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c22 {
-  margin: 8px 8px 8px 0px;
-  display: inline-grid;
+  margin: 8px 0px;
+  display: grid;
   grid-template-areas: 'label' 'field' 'description';
 }
 
 .c22 .c24 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -7972,16 +7972,16 @@ exports[`MultiSelect component with checkbox true should render options correctl
 }
 
 .c22 {
-  margin: 8px 8px 8px 0px;
-  display: inline-grid;
+  margin: 8px 0px;
+  display: grid;
   grid-template-areas: 'label' 'field' 'description';
 }
 
 .c22 .c24 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;

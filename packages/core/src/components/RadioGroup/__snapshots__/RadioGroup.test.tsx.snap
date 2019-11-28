@@ -73,16 +73,16 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
 }
 
 .c0 {
-  margin: 8px 8px 8px 0px;
-  display: inline-grid;
+  margin: 8px 0px;
+  display: grid;
   grid-template-areas: 'label' 'field' 'description';
 }
 
 .c0 .c3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
