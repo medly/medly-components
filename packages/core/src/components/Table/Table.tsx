@@ -20,7 +20,7 @@ export const Table: SFC<Props> & WithStyle & StaticProps = props => {
         };
 
     const [ids, selectedIds, toggleId] = useRowSelector(
-            data.map(dt => dt[uniqueKeyName]),
+            data.filter(dt => !dt[rowDisableKey]).map(dt => dt[uniqueKeyName]),
             selectedRows
         ),
         [isSelectAllDisable, setSelectAllDisableState] = useState(data.every(dt => dt[rowDisableKey])),
@@ -34,7 +34,7 @@ export const Table: SFC<Props> & WithStyle & StaticProps = props => {
     }, [props.columns]);
 
     useEffect(() => {
-        ids.setValue(data.map(dt => dt[uniqueKeyName]));
+        ids.setValue(data.filter(dt => !dt[rowDisableKey]).map(dt => dt[uniqueKeyName]));
         setSelectAllDisableState(data.every(dt => dt[rowDisableKey]));
     }, [data]);
 
