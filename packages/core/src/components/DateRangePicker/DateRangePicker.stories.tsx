@@ -28,6 +28,7 @@ export const Basic = () => {
             value={date}
             onChange={setDate}
             placement={select('Placement', placement, 'bottom')}
+            fullWidth={boolean('Full Width', false)}
             minWidth={number('Min Width', 300)}
             disabled={boolean('Disabled', false)}
             label={text('Label', 'Period')}
