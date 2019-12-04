@@ -11,7 +11,7 @@ import { SelectProps } from './types';
 
 export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { id, description, label, labelPosition, required, fullWidth, disabled, minWidth } = props;
+        const { id, description, descriptionColor, label, labelPosition, required, fullWidth, disabled, minWidth } = props;
 
         const [inputValue, setInputValue] = useState(''),
             [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(props.options, props.values)),
@@ -96,7 +96,7 @@ export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
                         )}
                     </Popover>
                 </PopoverWrapper>
-                {description && <FieldWithLabel.Description>{description}</FieldWithLabel.Description>}
+                {description && <FieldWithLabel.Description textColor={descriptionColor}>{description}</FieldWithLabel.Description>}
             </FieldWithLabel>
         );
     })

@@ -6,7 +6,7 @@ import { Props } from './types';
 
 export const Input: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { id, description, label, labelPosition, fullWidth, required } = props;
+        const { id, description, label, labelPosition, fullWidth, required, descriptionColor } = props;
         return (
             <FieldWithLabel {...{ fullWidth, labelPosition }}>
                 {label && (
@@ -15,7 +15,7 @@ export const Input: SFC<Props> & WithStyle = React.memo(
                     </FieldWithLabel.Label>
                 )}
                 <InputStyled id={id || 'input'} ref={ref} {...props} />
-                {description && <FieldWithLabel.Description>{description}</FieldWithLabel.Description>}
+                {description && <FieldWithLabel.Description textColor={descriptionColor}>{description}</FieldWithLabel.Description>}
             </FieldWithLabel>
         );
     })

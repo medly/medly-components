@@ -38,6 +38,8 @@ export interface SelectProps extends InputProps, WithThemeProp {
     fullWidth?: boolean;
     /** Description of the Select */
     description?: string;
+    /** Description color */
+    descriptionColor?: string;
     /** Placeholder for the input */
     placeholder?: string;
     /** To be used when it is required */

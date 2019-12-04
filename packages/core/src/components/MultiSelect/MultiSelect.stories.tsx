@@ -1,6 +1,5 @@
-import { SelectTheme } from '@medly-components/theme';
-import { action } from '@storybook/addon-actions';
-import { boolean, select, text } from '@storybook/addon-knobs';
+import { defaultTheme, SelectTheme } from '@medly-components/theme';
+import { boolean, color, select, text } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
 import { LabelPositions } from '../Label/types';
 import { MultiSelect } from './MultiSelect';
@@ -40,6 +39,7 @@ export const Basic = () => {
             label={text('Label', 'Pharmacy')}
             placeholder="Select Pharmacy"
             description={text('Description', 'We will show reports based on Pharmacy')}
+            descriptionColor={color('Description Color', defaultTheme.input.desciptionColor)}
             labelPosition={select('Label Position', labelPosition, 'left')}
         />
     );

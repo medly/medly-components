@@ -42,4 +42,6 @@ export interface SelectProps extends InputProps, WithThemeProp {
     fullWidth?: boolean;
     /** Description of the Multiselect */
     description?: string;
+    /** Description color */
+    descriptionColor?: string;
 }

@@ -14,4 +14,6 @@ export interface Props extends HTMLProps<HTMLInputElement>, WithThemeProp {
     label?: string;
     /** Input description */
     description?: string;
+    /** Description color */
+    descriptionColor?: string;
 }

@@ -1,5 +1,5 @@
 import { defaultTheme } from '@medly-components/theme';
-import { css, fullWidth, oppositePositionalspacing, styled } from '@medly-components/utils';
+import { fullWidth, styled } from '@medly-components/utils';
 import Text from '../Text';
 import { Props } from './types';
 

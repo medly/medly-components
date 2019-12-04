@@ -10,7 +10,7 @@ import { Option, SelectProps } from './types';
 
 export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { id, description, label, placeholder, labelPosition, minWidth, required, fullWidth, disabled } = props,
+        const { id, description, descriptionColor, label, placeholder, labelPosition, minWidth, required, fullWidth, disabled } = props,
             defaultSelectedOption = getDefaultSelectedOption(props.options, props.value);
 
         const [inputValue, setInputValue] = useState(defaultSelectedOption.label),
@@ -100,7 +100,7 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                         {!disabled && <Options options={options} onOptionClick={handleOptionClick} />}
                     </Popover>
                 </PopoverWrapper>
-                {description && <FieldWithLabel.Description>{description}</FieldWithLabel.Description>}
+                {description && <FieldWithLabel.Description textColor={descriptionColor}>{description}</FieldWithLabel.Description>}
             </FieldWithLabel>
         );
     })

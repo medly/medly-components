@@ -1905,6 +1905,12 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   color: inherit;
 }
 
+.c19 {
+  font-size: 14px;
+  font-weight: 400;
+  color: grey;
+}
+
 .c7 {
   background-color: transparent;
   border: none;
@@ -1951,11 +1957,11 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   margin-left: 10px;
 }
 
-.c20 .c10 * {
+.c21 .c10 * {
   fill: #ffffff;
 }
 
-.c20 .c8 + .c10 {
+.c21 .c8 + .c10 {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -1975,10 +1981,10 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   align-self: center;
 }
 
-.c19 {
+.c20 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
-  color: #818A91;
+  color: grey;
 }
 
 .c12 {
@@ -1989,7 +1995,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'field' 'description';
 }
 
-.c12 .c24 {
+.c12 .c25 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2011,7 +2017,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'label field' 'random description';
 }
 
-.c1 .c24 {
+.c1 .c25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2090,14 +2096,14 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   align-self: center;
 }
 
-.c21 .c0 {
+.c22 .c0 {
   margin: 0px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c21 .c0 .c13 {
+.c22 .c0 .c13 {
   margin: 0px;
   border: none;
   background-color: transparent;
@@ -2156,26 +2162,26 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   font-size: 10px;
 }
 
-.c22 .c10 {
+.c23 .c10 {
   width: 100%;
   height: 100%;
 }
 
-.c23 .c0 {
+.c24 .c0 {
   width: calc(100% - 10px);
   margin: 0px;
   padding: 5px;
 }
 
-.c23 .c3 {
+.c24 .c3 {
   margin-bottom: 0px;
 }
 
-.c23 .c3 .c0 {
+.c24 .c3 .c0 {
   padding: 0px 5px 5px 0px;
 }
 
-.c23 .c24 .c0 {
+.c24 .c25 .c0 {
   padding: 5px 5px 5px 0px;
 }
 
@@ -2254,7 +2260,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
       />
     </div>
     <span
-      class="c8 c9 c19"
+      class="c8 c19 c20"
     >
       We will show reports based on Pharmacy
     </span>
@@ -6440,6 +6446,12 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   color: inherit;
 }
 
+.c19 {
+  font-size: 14px;
+  font-weight: 400;
+  color: grey;
+}
+
 .c7 {
   background-color: transparent;
   border: none;
@@ -6501,10 +6513,10 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   align-self: center;
 }
 
-.c19 {
+.c20 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
-  color: #818A91;
+  color: grey;
 }
 
 .c12 {
@@ -6515,7 +6527,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   grid-template-areas: 'field' 'description';
 }
 
-.c12 .c23 {
+.c12 .c24 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -6537,7 +6549,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   grid-template-areas: 'label field' 'random description';
 }
 
-.c1 .c23 {
+.c1 .c24 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6616,14 +6628,14 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   align-self: center;
 }
 
-.c20 .c0 {
+.c21 .c0 {
   margin: 0px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c20 .c0 .c13 {
+.c21 .c0 .c13 {
   margin: 0px;
   border: none;
   background-color: transparent;
@@ -6682,26 +6694,26 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   font-size: 10px;
 }
 
-.c21 .c10 {
+.c22 .c10 {
   width: 100%;
   height: 100%;
 }
 
-.c22 .c0 {
+.c23 .c0 {
   width: calc(100% - 10px);
   margin: 0px;
   padding: 5px;
 }
 
-.c22 .c3 {
+.c23 .c3 {
   margin-bottom: 0px;
 }
 
-.c22 .c3 .c0 {
+.c23 .c3 .c0 {
   padding: 0px 5px 5px 0px;
 }
 
-.c22 .c23 .c0 {
+.c23 .c24 .c0 {
   padding: 5px 5px 5px 0px;
 }
 
@@ -6780,7 +6792,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
       />
     </div>
     <span
-      class="c8 c9 c19"
+      class="c8 c19 c20"
     >
       We will show reports based on Pharmacy
     </span>

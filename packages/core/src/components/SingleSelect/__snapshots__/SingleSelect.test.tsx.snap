@@ -1678,7 +1678,7 @@ exports[`SingleSelect component should render correctly with all the props given
 .c13 {
   font-size: 14px;
   font-weight: 400;
-  color: inherit;
+  color: grey;
 }
 
 .c3 {
@@ -1691,7 +1691,7 @@ exports[`SingleSelect component should render correctly with all the props given
 .c14 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
-  color: #818A91;
+  color: grey;
 }
 
 .c6 {

@@ -30,6 +30,7 @@ describe('SingleSelect component', () => {
                 required
                 label="Pharmacy"
                 description="We will show reports based on Pharmacy"
+                descriptionColor="grey"
                 placeholder="Please Select"
                 onChange={mockOnChange}
             />

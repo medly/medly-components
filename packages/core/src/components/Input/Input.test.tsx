@@ -14,6 +14,7 @@ describe('Input component', () => {
                 required
                 placeholder="Enter Email Address"
                 description="We will never share your email with anyone"
+                descriptionColor="grey"
             />
         );
         expect(container).toMatchSnapshot();

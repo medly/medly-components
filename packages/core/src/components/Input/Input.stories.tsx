@@ -1,5 +1,5 @@
-import { InputTheme } from '@medly-components/theme';
-import { boolean, select, text } from '@storybook/addon-knobs';
+import { defaultTheme, InputTheme } from '@medly-components/theme';
+import { boolean, color, select, text } from '@storybook/addon-knobs';
 import React from 'react';
 import { Input } from './Input';
 import { Props } from './types';
@@ -19,5 +19,6 @@ export const Basic = () => (
         required={boolean('Required', false)}
         placeholder={text('Placeholder', 'Enter Email Address')}
         description={text('Description', 'We will never share your email with anyone')}
+        descriptionColor={color('Description Color', defaultTheme.input.desciptionColor)}
     />
 );
