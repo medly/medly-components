@@ -23,6 +23,8 @@ export * from './icons/ExclamationCircleIcon';
 export * from './icons/FileIcon';
 export * from './icons/FileUploadIcon';
 export * from './icons/OrdersIcon';
+export * from './icons/ReportsIcon';
+export * from './icons/StatementIcon';
 export * from './icons/UpArrowIcon';
 export * from './icons/SearchIcon';
 export * from './icons/SliderIcon';

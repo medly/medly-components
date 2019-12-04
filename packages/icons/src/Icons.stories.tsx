@@ -25,8 +25,10 @@ import { GearIcon } from './icons/GearIcon';
 import { HomeIcon } from './icons/HomeIcon';
 import { InfoCircleIcon } from './icons/InfoCircleIcon';
 import { OrdersIcon } from './icons/OrdersIcon';
+import { ReportsIcon } from './icons/ReportsIcon';
 import { SearchIcon } from './icons/SearchIcon';
 import { SliderIcon } from './icons/SliderIcon';
+import { StatementIcon } from './icons/StatementIcon';
 import { SyncIcon } from './icons/SyncIcon';
 import { UpArrowIcon } from './icons/UpArrowIcon';
 import { Props, SVGProp } from './SvgIcon/types';
@@ -61,8 +63,10 @@ export const Basic = (props: Omit<Props, keyof SVGProp>) => (
         <HomeIcon key="home" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <InfoCircleIcon key="infocircle" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <OrdersIcon key="search" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
+        <ReportsIcon key="search" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <SearchIcon key="search" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <SliderIcon key="slider" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
+        <StatementIcon key="slider" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <SyncIcon key="sync" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <UpArrowIcon key="upArrow" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
     </IconContainer>
