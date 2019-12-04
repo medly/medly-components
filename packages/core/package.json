@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/core",
-    "version": "1.0.0-beta.4",
+    "version": "1.0.0-beta.5",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
@@ -26,7 +26,7 @@
     },
     "dependencies": {
         "@datepicker-react/styled": "^1.7.1",
-        "@medly-components/icons": "^1.0.0-beta.4",
+        "@medly-components/icons": "^1.0.0-beta.5",
         "@medly-components/theme": "^1.0.0-beta.4",
         "@medly-components/utils": "^1.0.0-beta.4"
     },

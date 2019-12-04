@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.5](https://github.com/medlypharmacy/medly-components/compare/@medly-components/icons@1.0.0-beta.4...@medly-components/icons@1.0.0-beta.5) (2019-12-04)
+
+
+### Features
+
+* **icons:** add report & statement icon ([1d9647c](https://github.com/medlypharmacy/medly-components/commit/1d9647c4372c6c7260a4812d30e4a3634b552954))
+* **icons:** modify contract & orders icon ([6609453](https://github.com/medlypharmacy/medly-components/commit/6609453de80de760c50c831fb10d422e4e9b2d42))
+
+
+
+
+
 # [1.0.0-beta.4](https://github.com/medlypharmacy/medly-components/compare/@medly-components/icons@1.0.0-beta.3...@medly-components/icons@1.0.0-beta.4) (2019-11-28)
 
 **Note:** Version bump only for package @medly-components/icons

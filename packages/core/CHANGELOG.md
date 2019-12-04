@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.5](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.4...@medly-components/core@1.0.0-beta.5) (2019-12-04)
+
+
+### Bug Fixes
+
+* **core:** fix select all issue in table component ([eca0142](https://github.com/medlypharmacy/medly-components/commit/eca01422e4e7bc71bc6283362d13ee1b5b7c4ede))
+
+
+### Features
+
+* **core:** add description color feature in input, single select & multi select component ([dee6e20](https://github.com/medlypharmacy/medly-components/commit/dee6e209459b7fe70be481593e1d50048a8cddcc))
+* **core:** add file input component ([119a132](https://github.com/medlypharmacy/medly-components/commit/119a132ffc0505daa25944bb0febc62248aee412))
+
+
+
+
+
 # [1.0.0-beta.4](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.3...@medly-components/core@1.0.0-beta.4) (2019-11-28)
 
 
