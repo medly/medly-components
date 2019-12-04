@@ -1,6 +1,5 @@
 {
     "name": "medly-components",
-    "private": true,
     "workspaces": [
         "packages/*"
     ],
