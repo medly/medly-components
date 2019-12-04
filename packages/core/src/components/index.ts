@@ -10,6 +10,7 @@ export { default as DatePicker } from './DatePicker';
 export { default as DateRangePicker } from './DateRangePicker';
 export { default as FieldWithLabel } from './FieldWithLabel';
 export { default as Input } from './Input';
+export { default as FileInput } from './FileInput';
 export { default as Label } from './Label';
 export { default as Link } from './Link';
 export { default as List } from './List';

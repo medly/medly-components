@@ -1,0 +1,22 @@
+import { FileInput } from './FileInput';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './FileInput.stories';
+
+<Meta title="Core/FileInput" component={FileInput} />
+
+# FileInput
+
+### Basic FileInput component
+
+<Preview withToolbar>
+    <Story name="Basic">{stories.Basic}</Story>
+</Preview>
+
+### Props
+
+<Props of={FileInput} />
+
+### FileInputTheme
+
+FileInput is using Input component theme
