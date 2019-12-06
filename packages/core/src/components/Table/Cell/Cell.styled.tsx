@@ -19,9 +19,10 @@ export const Div = styled('div')``;
 
 export const Cell = styled('div')<StyledProps>`
     opacity: ${({ hide }) => (hide ? 0 : 1)};
-    padding: ${({ hide }) => (hide ? '0' : '5px 0px 5px 10px')};
+    padding: ${({ hide }) => (hide ? '0' : '5px 10px')};
     position: relative;
     display: flex;
+    justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : align === 'center' ? 'center' : 'flex-start')};
     align-items: center;
     overflow: hidden;
     border-right: 1px solid ${({ theme }) => theme.table.borderColor};

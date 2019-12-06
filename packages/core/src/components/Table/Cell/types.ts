@@ -4,6 +4,7 @@ import { ColumnConfig } from '../types';
 export interface StyledProps {
     hide?: boolean;
     frozen?: boolean;
+    align?: 'left' | 'right' | 'center';
 }
 
 export interface Props extends StyledProps, HTMLProps<HTMLDivElement> {

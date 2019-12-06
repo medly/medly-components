@@ -24,6 +24,7 @@ export interface ColumnConfig {
     size?: string;
     title: string;
     field: string;
+    align?: 'left' | 'right' | 'center';
     children?: ColumnConfig[];
     formatter: keyof ColumnsWidth;
     component?: React.SFC<{ data: any; rowId?: any; disabled?: boolean }>;

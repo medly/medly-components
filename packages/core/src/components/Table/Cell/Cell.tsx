@@ -19,8 +19,10 @@ const Cell: React.SFC<Props> & WithStyle = props => {
     const stopPropogation = (e: React.MouseEvent) => e.stopPropagation(),
         handleRowSelection = (id: number) => (e: React.FormEvent<HTMLInputElement>) => onRowSelection(id);
 
+    const textAlign = config.align || (config.formatter === 'numeric' ? 'right' : 'left');
+
     return (
-        <Styled.Cell hide={config.hide} frozen={config.frozen}>
+        <Styled.Cell hide={config.hide} frozen={config.frozen} align={textAlign}>
             {config.field === 'medly-table-checkbox' ? (
                 <Checkbox
                     disabled={disabled}

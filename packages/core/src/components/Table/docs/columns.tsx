@@ -19,7 +19,7 @@ const columns: ColumnConfig[] = [
             { title: 'Math', field: 'maths', formatter: 'numeric', sort: true }
         ]
     },
-    { title: 'Age', field: 'age', formatter: 'text-short', sort: true },
+    { title: 'Age', field: 'age', formatter: 'numeric', sort: true },
     { title: 'Passed', field: 'isPassed', formatter: 'boolean', sort: true },
     {
         title: 'Favourite Color',
