@@ -33,7 +33,7 @@ export const NavItemStyled = styled('li')<NavItemStyledProps>`
         grid-area: header;
         font-size: ${({ theme: { font, sideNav } }) => font.sizes[sideNav.textSize]};
         color: ${({ theme: { sideNav } }) => sideNav.textColor};
-        font-weight: ${({ active, theme }) => (active === 'true' ? theme.font.weights.Strong : theme.font.weights.Normal)};
+        font-weight: ${({ active, theme }) => (active === 'true' ? theme.font.weights.Medium : theme.font.weights.Regular)};
     }
 `;
 

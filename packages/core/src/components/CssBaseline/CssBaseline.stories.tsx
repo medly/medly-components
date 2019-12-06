@@ -8,7 +8,10 @@ export const Basic = () => (
         <Text fullWidth textWeight="Light">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </Text>
-        <Text fullWidth textWeight="Normal">
+        <Text fullWidth textWeight="Regular">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </Text>
+        <Text fullWidth textWeight="Medium">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </Text>
         <Text fullWidth textWeight="Strong">

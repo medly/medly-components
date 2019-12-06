@@ -2,24 +2,30 @@
 import { FontFaceTheme } from './types';
 
 const proximaNova: FontFaceTheme = {
-    fontFamily: 'ProximaNova',
+    fontFamily: 'Roboto',
     fontFaces: [
         {
-            primarySrc: `url('https://d1b6bucc9jhzue.cloudfront.net/at/fonts/ProximaNova/webfonts/ProximaNovaLight.eot?cloudFrontFixScheme=http&cloudFrontFixHost=www2.vauto.com') format('eot')`,
+            primarySrc: `local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2) format('woff2')`,
             secondarySrc: '',
-            fontWeight: 200,
+            fontWeight: 300,
             fontStyle: 'normal'
         },
         {
-            primarySrc: `url('https://d1b6bucc9jhzue.cloudfront.net/at/fonts/ProximaNova/webfonts/ProximaNovaRegular.eot?cloudFrontFixScheme=http&cloudFrontFixHost=www2.vauto.com') format('eot')`,
+            primarySrc: `local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2) format('woff2')`,
             secondarySrc: '',
-            fontWeight: 400,
+            fontWeight: 500,
             fontStyle: 'normal'
         },
         {
-            primarySrc: `url('https://d1b6bucc9jhzue.cloudfront.net/at/fonts/ProximaNova/webfonts/ProximaNovaBold.eot?cloudFrontFixScheme=http&cloudFrontFixHost=www2.vauto.com') format('eot')`,
+            primarySrc: `local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfCRc4AMP6lbBP.woff2) format('woff2')`,
             secondarySrc: '',
             fontWeight: 700,
+            fontStyle: 'normal'
+        },
+        {
+            primarySrc: `local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfCRc4AMP6lbBP.woff2) format('woff2')`,
+            secondarySrc: '',
+            fontWeight: 900,
             fontStyle: 'normal'
         }
     ]

@@ -8,7 +8,7 @@ const font: FontTheme = {
     sizes,
     weights,
     faces,
-    defaultFontFamily: 'ProximaNova, Helvetica Neue, Helvetica, Arial, sans-serif',
+    defaultFontFamily: 'Roboto, Helvetica Neue, Helvetica, Arial, sans-serif',
     defaultColor: colors.grey[700]
 };
 

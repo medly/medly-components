@@ -10,5 +10,9 @@ export interface SideNavTheme {
     bgColor: string;
     textColor: string;
     iconColor: string;
+    borderColor: string;
     activeColor: string;
+    activeBorderColor: string;
+    logoBgColor: string;
+    bottomListBgColor: string;
 }

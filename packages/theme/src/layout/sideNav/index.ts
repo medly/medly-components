@@ -7,10 +7,14 @@ const sideNav: SideNavTheme = {
     openSize: '250px',
     iconSize: 'M',
     textSize: 'M3',
-    bgColor: colors.orange[400],
+    bgColor: colors.orange[300],
     textColor: colors.white,
     iconColor: colors.white,
-    activeColor: colors.grey[500]
+    activeColor: colors.grey[800],
+    borderColor: colors.orange[500],
+    activeBorderColor: colors.grey[700],
+    bottomListBgColor: colors.orange[400],
+    logoBgColor: colors.orange[400]
 };
 
 export default sideNav;

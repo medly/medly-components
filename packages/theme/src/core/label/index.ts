@@ -4,7 +4,7 @@ import { LabelTheme } from './types';
 const label: LabelTheme = {
     defaults: {
         textSize: 'M2',
-        textWeight: 'Normal',
+        textWeight: 'Regular',
         textColor: font.defaultColor
     }
 };
