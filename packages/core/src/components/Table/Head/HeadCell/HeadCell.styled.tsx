@@ -16,6 +16,7 @@ export const ResizeHandlerStyled = styled('span')`
 `;
 
 export const HeadCellStyled = styled(Cell.Style)`
+    padding: ${({ hide }) => (hide ? '0' : '5px 0px 5px 10px')};
     text-overflow: initial;
     white-space: normal;
     border-right: 1px solid ${({ theme }) => theme.table.borderColor};
