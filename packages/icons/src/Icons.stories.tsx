@@ -22,15 +22,21 @@ import { ExpandMoreIcon } from './icons/ExpandMoreIcon';
 import { FileIcon } from './icons/FileIcon';
 import { FileUploadIcon } from './icons/FileUploadIcon';
 import { GearIcon } from './icons/GearIcon';
+import { HelpIcon } from './icons/HelpIcon';
 import { HomeIcon } from './icons/HomeIcon';
 import { InfoCircleIcon } from './icons/InfoCircleIcon';
+import { LibraryBooksIcon } from './icons/LibraryBooksIcon';
 import { OrdersIcon } from './icons/OrdersIcon';
+import { PowerButtonIcon } from './icons/PowerButtonIcon';
+import { ReceiptIcon } from './icons/ReceiptIcon';
 import { ReportsIcon } from './icons/ReportsIcon';
 import { SearchIcon } from './icons/SearchIcon';
 import { SliderIcon } from './icons/SliderIcon';
 import { StatementIcon } from './icons/StatementIcon';
 import { SyncIcon } from './icons/SyncIcon';
 import { UpArrowIcon } from './icons/UpArrowIcon';
+import { UploadIcon } from './icons/UploadIcon';
+import { VisibilityOffIcon } from './icons/VisibilityOffIcon';
 import { Props, SVGProp } from './SvgIcon/types';
 
 const size: IconSizes[] = ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'];
@@ -60,14 +66,20 @@ export const Basic = (props: Omit<Props, keyof SVGProp>) => (
         <FileIcon key="file" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <FileUploadIcon key="fileUpload" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <GearIcon key="gear" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
+        <HelpIcon key="help" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <HomeIcon key="home" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <InfoCircleIcon key="infocircle" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
-        <OrdersIcon key="search" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
-        <ReportsIcon key="search" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
+        <LibraryBooksIcon key="libraryBooks" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
+        <OrdersIcon key="orders" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
+        <PowerButtonIcon key="powerButton" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
+        <ReceiptIcon key="receipt" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
+        <ReportsIcon key="reports" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <SearchIcon key="search" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <SliderIcon key="slider" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
-        <StatementIcon key="slider" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
+        <StatementIcon key="statement" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <SyncIcon key="sync" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <UpArrowIcon key="upArrow" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
+        <UploadIcon key="upload" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
+        <VisibilityOffIcon key="visibilityOff" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
     </IconContainer>
 );
