@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.6](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.5...@medly-components/core@1.0.0-beta.6) (2019-12-10)
+
+
+### Bug Fixes
+
+* **all:** change grey scale and orange color ([4a3401c](https://github.com/medlypharmacy/medly-components/commit/4a3401cdefb9a92183f85e2fe09f01ab5ed2fcab))
+* **core:** fix multiple issues related to grey scale and icons ([fe54d40](https://github.com/medlypharmacy/medly-components/commit/fe54d4042db2ebb58a0fa55472f66a986c394b33))
+* **core:** fix table head padding issue ([6c5beba](https://github.com/medlypharmacy/medly-components/commit/6c5bebab5fed65eb2930da2a784c258cc359d1cb))
+
+
+### Features
+
+* **core:** add text align feature in table component ([31a5282](https://github.com/medlypharmacy/medly-components/commit/31a52827480547abbdc2027d4e2764d5acd87b0b))
+* **theme:** add roboto font ([fc86f13](https://github.com/medlypharmacy/medly-components/commit/fc86f13a4185c520ed3de12adddefdd4d6844c3e))
+
+
+
+
+
 # [1.0.0-beta.5](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.4...@medly-components/core@1.0.0-beta.5) (2019-12-04)
 
 

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.5](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.4...@medly-components/theme@1.0.0-beta.5) (2019-12-10)
+
+
+### Bug Fixes
+
+* **all:** change grey scale and orange color ([4a3401c](https://github.com/medlypharmacy/medly-components/commit/4a3401cdefb9a92183f85e2fe09f01ab5ed2fcab))
+* **core:** fix multiple issues related to grey scale and icons ([fe54d40](https://github.com/medlypharmacy/medly-components/commit/fe54d4042db2ebb58a0fa55472f66a986c394b33))
+
+
+### Features
+
+* **theme:** add roboto font ([fc86f13](https://github.com/medlypharmacy/medly-components/commit/fc86f13a4185c520ed3de12adddefdd4d6844c3e))
+
+
+
+
+
 # [1.0.0-beta.4](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.3...@medly-components/theme@1.0.0-beta.4) (2019-11-28)
 
 
