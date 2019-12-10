@@ -2026,7 +2026,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   font-size: 14px;
   font-weight: 400;
   color: #616161;
-  background-color: #BDBDBD;
+  background-color: #E0E0E0;
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
@@ -2101,7 +2101,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 .c6 {
   border: 1px solid #E0E0E0;
-  background-color: #BDBDBD;
+  background-color: #E0E0E0;
   cursor: not-allowed;
   border-radius: 4px;
   box-sizing: border-box;
@@ -6540,7 +6540,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   font-size: 14px;
   font-weight: 400;
   color: #616161;
-  background-color: #BDBDBD;
+  background-color: #E0E0E0;
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
@@ -6615,7 +6615,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 
 .c6 {
   border: 1px solid #E0E0E0;
-  background-color: #BDBDBD;
+  background-color: #E0E0E0;
   cursor: not-allowed;
   border-radius: 4px;
   box-sizing: border-box;

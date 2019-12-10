@@ -88,7 +88,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
   height: 16px;
   position: relative;
   border: 1px solid #E0E0E0;
-  background-color: #BDBDBD;
+  background-color: #E0E0E0;
   border-radius: 15%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

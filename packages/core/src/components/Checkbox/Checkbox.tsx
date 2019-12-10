@@ -10,7 +10,7 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
         const { size, label, required, labelPosition, labelSize, labelWeight, labelColor, fullWidth, onChange, ...restProps } = props;
 
         const changeHandler = (e: any) => {
-            // @ts-ignore
+            e.stopPropagation();
             onChange && onChange(e);
         };
 

@@ -64,7 +64,7 @@ exports[`FileInput component should render properly with all props 1`] = `
   font-weight: 400;
   color: #616161;
   background-clip: padding-box;
-  background-color: #BDBDBD;
+  background-color: #E0E0E0;
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;

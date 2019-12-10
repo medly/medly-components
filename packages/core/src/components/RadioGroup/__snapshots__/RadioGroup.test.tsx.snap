@@ -141,7 +141,7 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
   height: 24px;
   position: relative;
   border-radius: 100%;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #EEEEEE;
   background-color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -346,8 +346,8 @@ exports[`Radio Group should render correctly 1`] = `
   height: 16px;
   position: relative;
   border-radius: 100%;
-  border: 1px solid #E0E0E0;
-  background-color: #BDBDBD;
+  border: 1px solid #EEEEEE;
+  background-color: #E0E0E0;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;

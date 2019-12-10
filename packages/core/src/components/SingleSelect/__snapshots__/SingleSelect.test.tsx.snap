@@ -1731,7 +1731,7 @@ exports[`SingleSelect component should render correctly with all the props given
   font-size: 14px;
   font-weight: 400;
   color: #616161;
-  background-color: #BDBDBD;
+  background-color: #E0E0E0;
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
@@ -1815,7 +1815,7 @@ exports[`SingleSelect component should render correctly with all the props given
 
 .c5 {
   border: 1px solid #E0E0E0;
-  background-color: #BDBDBD;
+  background-color: #E0E0E0;
   cursor: not-allowed;
   border-radius: 4px;
   box-sizing: border-box;
