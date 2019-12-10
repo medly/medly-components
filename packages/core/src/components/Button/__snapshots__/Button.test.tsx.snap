@@ -3,32 +3,32 @@
 exports[`Button component should render properly when it is disabled 1`] = `
 .c2 {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   color: inherit;
 }
 
 .c3 .c6 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c3 .c1 + .c6 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c4 .c6 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c4 .c1 + .c6 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c5 .c6 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c5 .c1 + .c6 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c0 {
@@ -76,11 +76,11 @@ exports[`Button component should render properly when it is disabled 1`] = `
 }
 
 .c0 .c6 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c0 .c1 + .c6 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 <div>
@@ -111,7 +111,7 @@ exports[`Button component should render properly with any icon at the beginning 
 
 .c4 {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   color: inherit;
 }
 
@@ -120,11 +120,11 @@ exports[`Button component should render properly with any icon at the beginning 
 }
 
 .c5 .c1 + .c3 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c5 .c3 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c6 .c1 * {
@@ -132,11 +132,11 @@ exports[`Button component should render properly with any icon at the beginning 
 }
 
 .c6 .c1 + .c3 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c6 .c3 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c0 {
@@ -184,11 +184,11 @@ exports[`Button component should render properly with any icon at the beginning 
 }
 
 .c0 .c1 + .c3 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c0 .c3 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 <div>
@@ -230,7 +230,7 @@ exports[`Button component should render properly with any icon at the end of the
 
 .c4 {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   color: inherit;
 }
 
@@ -239,11 +239,11 @@ exports[`Button component should render properly with any icon at the end of the
 }
 
 .c5 .c1 + .c3 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c5 .c3 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c6 .c1 * {
@@ -251,11 +251,11 @@ exports[`Button component should render properly with any icon at the end of the
 }
 
 .c6 .c1 + .c3 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c6 .c3 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c0 {
@@ -303,11 +303,11 @@ exports[`Button component should render properly with any icon at the end of the
 }
 
 .c0 .c1 + .c3 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c0 .c3 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 <div>
@@ -340,7 +340,7 @@ exports[`Button component should render properly with any icon at the end of the
 exports[`Button component should render properly with flat variant and primary color 1`] = `
 .c2 {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   color: inherit;
 }
 
@@ -387,11 +387,11 @@ exports[`Button component should render properly with flat variant and primary c
 }
 
 .c0 .c3 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c0 .c1 + .c3 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 <div>
@@ -412,16 +412,16 @@ exports[`Button component should render properly with flat variant and primary c
 exports[`Button component should render properly with outlined variant and secondary color 1`] = `
 .c2 {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   color: inherit;
 }
 
 .c3 .c4 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c3 .c1 + .c4 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c0 {
@@ -468,11 +468,11 @@ exports[`Button component should render properly with outlined variant and secon
 }
 
 .c0 .c4 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c0 .c1 + .c4 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 <div>
@@ -493,24 +493,24 @@ exports[`Button component should render properly with outlined variant and secon
 exports[`Button component should render properly with solid variant 1`] = `
 .c2 {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   color: inherit;
 }
 
 .c3 .c5 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c3 .c1 + .c5 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c4 .c5 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c4 .c1 + .c5 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c0 {
@@ -558,11 +558,11 @@ exports[`Button component should render properly with solid variant 1`] = `
 }
 
 .c0 .c5 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c0 .c1 + .c5 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 <div>
@@ -583,24 +583,24 @@ exports[`Button component should render properly with solid variant 1`] = `
 exports[`Button component should wrap children into Text component when rendering string or number 1`] = `
 .c2 {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   color: inherit;
 }
 
 .c3 .c6 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c3 .c1 + .c6 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c4 .c6 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c4 .c1 + .c6 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c0 {
@@ -648,19 +648,19 @@ exports[`Button component should wrap children into Text component when renderin
 }
 
 .c0 .c6 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c0 .c1 + .c6 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c5 .c6 + .c1 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c5 .c1 + .c6 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 <div>

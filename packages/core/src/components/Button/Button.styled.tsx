@@ -61,11 +61,11 @@ export const ButtonStyled = styled('button')<Props>`
     }
 
     ${SvgIcon} + ${Text.Style}{
-        margin-left: 5px;
+        margin-left: 10px;
     }
 
     ${Text.Style} + ${SvgIcon}{
-        margin-left: 5px;
+        margin-left: 10px;
     }
 
     ${centerAligned()}

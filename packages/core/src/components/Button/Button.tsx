@@ -8,7 +8,7 @@ export const Button: SFC<Props> & WithStyle = React.memo(props => {
     return (
         <ButtonStyled {...props}>
             {React.Children.map(props.children, c => {
-                return isValidStringOrNumber(c) ? <Text>{c}</Text> : c;
+                return isValidStringOrNumber(c) ? <Text textWeight="Medium">{c}</Text> : c;
             })}
         </ButtonStyled>
     );

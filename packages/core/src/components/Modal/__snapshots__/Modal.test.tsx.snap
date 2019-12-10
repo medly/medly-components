@@ -107,11 +107,11 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 .c3 .c5 + .c9 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c3 .c9 + .c5 {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .c4 {
