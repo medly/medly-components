@@ -1,45 +1,15 @@
 import { Text } from '@medly-components/core';
-import { BurgerIcon, SvgIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
-import { centerAligned, css, styled } from '@medly-components/utils';
+import { css, styled } from '@medly-components/utils';
 import SidePanel from '../SidePanel';
-import NavItem from './NavItem';
-import NavList from './NavList';
 import SubNavList from './SubNavList';
+import { Logo } from './TopNavItem/TopNavItem.styled';
 import { SideNavStyledProps } from './types';
-
-export const Logo = styled('div')``;
-
-export const Icon = styled('div')`
-    ${centerAligned()}
-    
-    min-width: ${({ theme }) => theme.sideNav.closeSize};
-    min-height: ${({ theme }) => theme.sideNav.closeSize};
-`;
-Icon.defaultProps = { theme: defaultTheme };
-
-export const BottomList = styled(NavList.Style)`
-    flex: unset;
-    overflow: unset;
-
-    ${NavItem.Style} {
-        overflow: unset;
-    }
-
-    ${Text.Style} {
-        cursor: default;
-    }
-`;
 
 const openState = () => css`
     ${Text.Style} , ${Logo}{
         opacity: 1;
         transition: opacity 0.4s;
-    }
-
-    ${SubNavList} {
-        max-height: 500px;
-        transition: all 0.4s;
     }
 `;
 
@@ -48,9 +18,10 @@ const closeState = () => css`
         opacity: 0;
         transition: opacity 0.2s;
     }
-    ${SubNavList} {
+
+    ${SubNavList.Style} {
         max-height: 0px;
-        transition: all 0.2s;
+        transition: max-height 0.2s ease-out;
     }
 `;
 
@@ -73,12 +44,6 @@ export const SideNav = styled(SidePanel)<SideNavStyledProps>`
     svg {
         * {
             fill: ${({ theme }) => theme.sideNav.iconColor};
-        }
-    }
-
-    ${BurgerIcon.Style} {
-        * {
-            background: ${({ theme }) => theme.sideNav.iconColor};
         }
     }
 

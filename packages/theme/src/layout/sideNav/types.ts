@@ -5,6 +5,7 @@ export interface SideNavTheme {
     scrollbarColor: string;
     closeSize: string;
     openSize: string;
+    itemMinHeight: string;
     iconSize: IconSizes;
     textSize: FontSizes;
     bgColor: string;

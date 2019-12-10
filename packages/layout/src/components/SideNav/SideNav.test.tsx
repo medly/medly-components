@@ -4,94 +4,69 @@ import React from 'react';
 import { SideNav } from './SideNav';
 
 const { act, render, fireEvent, cleanup } = TestUtils;
-afterEach(cleanup);
 
+const renderer = (mockOnChange = jest.fn()) =>
+    render(
+        <SideNav logo={HomeIcon} onChange={mockOnChange}>
+            <SideNav.NavList>
+                <SideNav.NavItem path="/home">
+                    <SideNav.NavIcon>
+                        <HomeIcon />
+                    </SideNav.NavIcon>
+                    <SideNav.NavText>Home</SideNav.NavText>
+                </SideNav.NavItem>
+                <SideNav.NavItem path="/search" openSideNavOnClick>
+                    <SideNav.NavIcon>
+                        <SearchIcon />
+                    </SideNav.NavIcon>
+                    <SideNav.NavText>Search</SideNav.NavText>
+                    <SideNav.SubNavList>
+                        <SideNav.NavItem path="/search/cars">
+                            <SideNav.NavText>Cars</SideNav.NavText>
+                        </SideNav.NavItem>
+                        <SideNav.NavItem path="/search/bikes">
+                            <SideNav.NavText>Bikes</SideNav.NavText>
+                        </SideNav.NavItem>
+                        <SideNav.NavItem path="/search/phones">
+                            <SideNav.NavText>Phones</SideNav.NavText>
+                        </SideNav.NavItem>
+                    </SideNav.SubNavList>
+                </SideNav.NavItem>
+            </SideNav.NavList>
+        </SideNav>
+    );
 describe('SideNav', () => {
+    afterEach(cleanup);
+
     it('should render properly', () => {
-        const { container } = render(
-            <SideNav logo={AddIcon}>
-                <SideNav.NavList>
-                    <SideNav.NavItem active>
-                        <SideNav.NavIcon>
-                            <SearchIcon />
-                        </SideNav.NavIcon>
-                        <SideNav.NavText>Search</SideNav.NavText>
-                    </SideNav.NavItem>
-                </SideNav.NavList>
-                <SideNav.BottomList>
-                    <SideNav.NavItem>
-                        <SideNav.NavIcon>
-                            <HomeIcon />
-                        </SideNav.NavIcon>
-                        <SideNav.NavText>Home</SideNav.NavText>
-                    </SideNav.NavItem>
-                </SideNav.BottomList>
-            </SideNav>
-        );
+        const { container } = renderer();
         expect(container).toMatchSnapshot();
     });
 
     it('should change width after clicking on burger icon', () => {
-        const { container, getByTestId } = render(
-            <SideNav>
-                <SideNav.NavList>
-                    <SideNav.NavItem>
-                        <SideNav.NavIcon>
-                            <HomeIcon />
-                        </SideNav.NavIcon>
-                        <SideNav.NavText>Home</SideNav.NavText>
-                    </SideNav.NavItem>
-                    <SideNav.NavItem active>
-                        <SideNav.NavIcon>
-                            <SearchIcon />
-                        </SideNav.NavIcon>
-                        <SideNav.NavText>Search</SideNav.NavText>
-                    </SideNav.NavItem>
-                </SideNav.NavList>
-            </SideNav>
-        );
+        const { container, getByTestId } = renderer();
         act(() => {
             fireEvent.click(container.querySelector('button'));
         });
         expect(getByTestId('sidenav')).toMatchSnapshot();
     });
 
+    it('should call onChange with expected path', () => {
+        const mockOnChange = jest.fn();
+        const { container, getByText } = renderer(mockOnChange);
+        fireEvent.click(container.querySelector('button'));
+        fireEvent.click(getByText('Search'));
+        fireEvent.click(getByText('Cars'));
+        expect(mockOnChange).toBeCalledWith('/search/cars');
+    });
+
     it('should change width when clicked on item with sidenavOpenCloseOnClick prop given', () => {
         const mockOnClick = jest.fn();
 
-        const { getByText, getByTestId } = render(
-            <SideNav>
-                <SideNav.NavList>
-                    <SideNav.NavItem>
-                        <SideNav.NavIcon>
-                            <HomeIcon />
-                        </SideNav.NavIcon>
-                        <SideNav.NavText>Home</SideNav.NavText>
-                    </SideNav.NavItem>
-                    <SideNav.NavItem active openSideNavOnClick onClick={mockOnClick}>
-                        <SideNav.NavIcon>
-                            <SearchIcon />
-                        </SideNav.NavIcon>
-                        <SideNav.NavText>Search</SideNav.NavText>
-                        <SideNav.SubNavList>
-                            <SideNav.NavItem active>
-                                <SideNav.NavText>Cars</SideNav.NavText>
-                            </SideNav.NavItem>
-                            <SideNav.NavItem>
-                                <SideNav.NavText>Bikes</SideNav.NavText>
-                            </SideNav.NavItem>
-                            <SideNav.NavItem>
-                                <SideNav.NavText>Phones</SideNav.NavText>
-                            </SideNav.NavItem>
-                        </SideNav.SubNavList>
-                    </SideNav.NavItem>
-                </SideNav.NavList>
-            </SideNav>
-        );
+        const { getByText, getByTestId } = renderer();
         act(() => {
             fireEvent.click(getByText('Search'));
         });
-        expect(mockOnClick).toBeCalled();
         expect(getByTestId('sidenav')).toMatchSnapshot();
     });
 
@@ -101,7 +76,7 @@ describe('SideNav', () => {
                 <p>Outer Element</p>
                 <SideNav closeOnOuterClick>
                     <SideNav.NavList>
-                        <SideNav.NavItem>
+                        <SideNav.NavItem path="/home">
                             <SideNav.NavIcon>
                                 <HomeIcon />
                             </SideNav.NavIcon>

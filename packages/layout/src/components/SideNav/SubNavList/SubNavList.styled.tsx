@@ -1,31 +1,17 @@
-import { Text } from '@medly-components/core';
-import { SvgIcon } from '@medly-components/icons';
 import { styled } from '@medly-components/utils';
-import NavItem from '../NavItem';
-import { NavListProps } from '../types';
+import { NavListProps } from '../NavList/types';
 
-export const SubNavList = styled('ul')<NavListProps>`
+export const SubNavList = styled('ul')<NavListProps & { leftPadding: number }>`
     grid-area: submenu;
-    padding: 0px;
-    margin: 0px;
+    border-top: 1px solid;
+    padding: 0;
     max-height: 0;
     overflow: hidden;
     box-sizing: border-box;
+    transition: max-height 0.2s ease-out;
+    border-color: ${({ theme }) => theme.sideNav.borderColor};
 
-    ${NavItem.Style} {
-        min-height: 30px;
-
-        ${SvgIcon} + ${Text.Style}{
-            margin-left: 5px;
-        }
-
-        ${Text.Style} + ${SvgIcon}{
-            margin-left: 5px;
-        }
-    }
-
-    ul {
-        margin-top: 10px;
-        padding-left: 15px;
+    & > li > :first-child {
+        padding-left: ${({ leftPadding }) => `${leftPadding}px`};
     }
 `;

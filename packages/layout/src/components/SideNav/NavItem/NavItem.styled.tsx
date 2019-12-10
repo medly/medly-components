@@ -1,23 +1,24 @@
 import { Text } from '@medly-components/core';
-import { SvgIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
-import { styled } from '@medly-components/utils';
-import { NavItemStyledProps } from '../types';
+import { css, styled } from '@medly-components/utils';
+import Dropdown from '../DropdownIcon';
+import { NavItemStyledProps } from './types';
 
-export const NavItemStyled = styled('li')<NavItemStyledProps>`
+export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ ...sideNav }))<NavItemStyledProps>`
     width: 100%;
     text-decoration: none;
     box-sizing: border-box;
-    background-color: ${({ active, theme }) => (active === 'true' ? theme.sideNav.activeColor : 'transparent')};
+    background-color: ${({ active, activeColor }) => (active ? activeColor : 'inherit')};
+    
 
     display: grid;
     grid-template-areas:
-        'icon header'
-        'icon submenu';
-    grid-template-rows: min-content min-content;
-    grid-template-columns: min-content 1fr;
+        'icon header dropdownIcon'
+        'submenu submenu submenu';
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: ${({ itemMinHeight }) => itemMinHeight} min-content;
+    align-content: center;
     align-items: center;
-    min-height: 35px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -25,15 +26,40 @@ export const NavItemStyled = styled('li')<NavItemStyledProps>`
     user-select: none;
     cursor: pointer;
 
-    ${SvgIcon} {
-        grid-area: icon;
-    }
+    ${({ containsSubList, active, activeBorderColor, borderColor }) =>
+        !containsSubList &&
+        css`
+            border-bottom: 1px solid ${active ? activeBorderColor : borderColor};
+        `}
+
+    ${({ open, borderColor }) =>
+        open &&
+        css`
+            & > ${Dropdown} {
+                transform: rotate(180deg);
+            }
+            & > ul {
+                max-height: 90vh;
+                transition: max-height 1s ease-out;
+            }
+        `}
+
+      
+    ${({ active, activeBorderColor }) =>
+        active &&
+        css`
+            ul,
+            li {
+                border-color: ${activeBorderColor};
+            }
+        `}
+    
 
     & > ${Text.Style} {
         grid-area: header;
-        font-size: ${({ theme: { font, sideNav } }) => font.sizes[sideNav.textSize]};
-        color: ${({ theme: { sideNav } }) => sideNav.textColor};
-        font-weight: ${({ active, theme }) => (active === 'true' ? theme.font.weights.Medium : theme.font.weights.Regular)};
+        font-size: ${({ theme: { font }, textSize }) => font.sizes[textSize]};
+        color: ${({ textColor }) => textColor};
+        font-weight: ${({ active, theme }) => (active ? theme.font.weights.Strong : theme.font.weights.Regular)};
     }
 `;
 

@@ -1,51 +1,55 @@
-import { Text } from '@medly-components/core';
-import { BurgerIcon } from '@medly-components/icons';
 import { useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import React, { SFC, useRef, useState } from 'react';
+import BottomList from './BottomList';
+import NavIcon from './NavIcon';
 import NavItem from './NavItem';
 import NavList from './NavList';
+import NavText from './NavText';
+import OnChangeContext from './OnChangeContext';
 import * as Styled from './SideNav.styled';
 import SubNavList from './SubNavList';
+import TopNavItem from './TopNavItem';
 import { SideNavProps, SideNavStaticProps } from './types';
 
 export const SideNav: SFC<SideNavProps> & WithStyle & SideNavStaticProps = props => {
-    const ref = useRef(null);
-    const [open, setOpenState] = useState(false),
-        Logo = props.logo;
+    const { active, children, closeOnOuterClick, defaultActive, logo, onChange } = props;
 
-    const burgerIconClickHandler = () => {
-            setOpenState(!open);
-        },
+    const ref = useRef(null),
+        [open, setOpenState] = useState(false),
+        [activeItem, setActiveItem] = useState(defaultActive);
+
+    const burgerIconClickHandler = () => setOpenState(!open),
         sidenavOpenHandler = () => {
             !open && setOpenState(true);
         };
 
+    const handleOnActiveChange = (key: string) => {
+        !active && setActiveItem(key);
+        onChange && onChange(key);
+    };
+
     useOuterClickNotifier(() => {
-        props.closeOnOuterClick && setOpenState(false);
+        closeOnOuterClick && setOpenState(false);
     }, ref);
 
     return (
         <Styled.SideNav open={open} ref={ref} position="left" data-testid="sidenav">
-            <NavItem as="div">
-                <Styled.Icon>
-                    <BurgerIcon size="S" open={open} onClick={burgerIconClickHandler} />
-                </Styled.Icon>
-                <Styled.Logo>{Logo && <Logo />}</Styled.Logo>
-            </NavItem>
-            {React.Children.map(props.children, child => {
-                return React.cloneElement(child as any, { sidenavOpenHandler });
-            })}
+            <OnChangeContext.Provider value={[activeItem, handleOnActiveChange]}>
+                <TopNavItem {...{ logo, open, burgerIconClickHandler }} />
+                {React.Children.map(children, child => {
+                    return React.cloneElement(child as any, { sidenavOpenHandler });
+                })}
+            </OnChangeContext.Provider>
         </Styled.SideNav>
     );
 };
 
-SideNav.BottomList = Styled.BottomList;
+SideNav.BottomList = BottomList;
 SideNav.NavList = NavList;
 SideNav.SubNavList = SubNavList;
 SideNav.NavItem = NavItem;
-SideNav.NavIcon = Styled.Icon;
-SideNav.NavText = Text;
-SideNav.Logo = Styled.Logo;
+SideNav.NavIcon = NavIcon;
+SideNav.NavText = NavText;
 
 SideNav.displayName = 'SideNav';
 SideNav.Style = Styled.SideNav;

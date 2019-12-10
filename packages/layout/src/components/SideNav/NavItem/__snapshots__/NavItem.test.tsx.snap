@@ -1,462 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SideNav should change width after clicking on burger icon 1`] = `
-.c9 {
-  font-size: 16px;
-  cursor: inherit;
-}
-
-.c9 * {
-  fill: #616161;
-}
-
-.c15 {
-  font-size: 12px;
-  cursor: inherit;
-}
-
-.c15 * {
-  fill: #616161;
-}
-
-.c6 {
-  display: block;
-  position: absolute;
-  width: calc(16px * 1.33);
-  height: calc(16px * 0.2);
-  background: #616161;
-  border-radius: calc(16px * 0.2);
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-
-.c6:nth-child(1) {
-  top: 0px;
-}
-
-.c6:nth-child(2) {
-  top: calc(16px * 0.4);
-}
-
-.c6:nth-child(3) {
-  top: calc(16px * 0.8);
-}
-
-.c4 {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  width: calc(16px * 1.33);
-  height: 16px;
-  position: relative;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.c4 .c5:nth-child(1) {
-  top: calc(16px * 0.4);
-  -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-
-.c4 .c5:nth-child(2) {
-  opacity: 0;
-  left: -60px;
-}
-
-.c4 .c5:nth-child(3) {
-  top: calc(16px * 0.4);
-  -webkit-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-}
-
-.c13 {
-  font-size: 14px;
-  font-weight: 400;
-  color: inherit;
-}
-
-.c16 {
-  grid-area: dropdownIcon;
-  margin-right: 15px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
+exports[`NavItem should be able to click on nested item 1`] = `
 .c11 {
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  background-color: inherit;
-  display: grid;
-  grid-template-areas: 'icon header dropdownIcon' 'submenu submenu submenu';
-  grid-template-columns: min-content 1fr min-content;
-  grid-template-rows: 48px min-content;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  border-bottom: 1px solid #F56A41;
-}
-
-.c11 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.c14 {
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  background-color: inherit;
-  display: grid;
-  grid-template-areas: 'icon header dropdownIcon' 'submenu submenu submenu';
-  grid-template-columns: min-content 1fr min-content;
-  grid-template-rows: 48px min-content;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-}
-
-.c14 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.c10 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: auto;
-  padding: 0px;
-  margin: 0px;
-  list-style-type: none;
-  color: #ffffff;
-}
-
-.c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-area: icon;
-  min-width: 60px;
-  min-height: 48px;
-}
-
-.c2 .c8 {
-  font-size: 16px;
-}
-
-.c18 {
-  grid-area: submenu;
-  border-top: 1px solid;
-  padding: 0;
-  max-height: 0;
-  overflow: hidden;
-  box-sizing: border-box;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
-  border-color: #F56A41;
-}
-
-.c18 > li > :first-child {
-  padding-left: 60px;
-}
-
-.c1 {
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  background-color: inherit;
-  display: grid;
-  grid-template-areas: 'icon header dropdownIcon' 'submenu submenu submenu';
-  grid-template-columns: min-content 1fr min-content;
-  grid-template-rows: 48px min-content;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  border-bottom: 1px solid #F56A41;
-  background-color: #E07C5E;
-  border: 0;
-}
-
-.c1 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.c1 .c3 * {
-  background: #ffffff;
-}
-
-.c19 .c12,
-.c19 .c7 {
-  opacity: 0;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
-
-.c19 .c17 {
-  max-height: 0px;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
-}
-
-.c0 {
-  height: 100vh;
-  background-color: #F5F5F5;
-  width: 0px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  left: 0;
-  width: 250px;
-  background-color: #FE8D6B;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 ul::-webkit-scrollbar {
-  width: 5px;
-  background-color: #FE8D6B;
-}
-
-.c0 ul::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #9E9E9E;
-}
-
-.c0 svg * {
-  fill: #ffffff;
-}
-
-.c0 .c12,
-.c0 .c7 {
-  opacity: 1;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-}
-
-<div
-  class="c0"
-  data-testid="sidenav"
-  open=""
->
-  <div
-    class="c1"
-  >
-    <div
-      class="c2"
-    >
-      <button
-        class="c3 c4"
-        id="burgerIcon"
-        open=""
-      >
-        <span
-          class="c5 c6"
-        />
-        <span
-          class="c5 c6"
-        />
-        <span
-          class="c5 c6"
-        />
-      </button>
-    </div>
-    <div
-      class="c7 "
-    >
-      <svg
-        class="c8 c9"
-        height="1em"
-        viewBox="0 0 20 17"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M8 16v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9h1.7c.46 0 .68-.57.33-.87L10.67.6c-.38-.34-.96-.34-1.34 0L.97 8.13c-.34.3-.13.87.33.87H3v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
-        />
-      </svg>
-    </div>
-  </div>
-  <ul
-    class="c10"
-  >
-    <li
-      class="c11"
-    >
-      <div
-        class="c2"
-      >
-        <svg
-          class="c8 c9"
-          height="1em"
-          viewBox="0 0 20 17"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M8 16v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9h1.7c.46 0 .68-.57.33-.87L10.67.6c-.38-.34-.96-.34-1.34 0L.97 8.13c-.34.3-.13.87.33.87H3v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
-          />
-        </svg>
-      </div>
-      <span
-        class="c12 c13"
-      >
-        Home
-      </span>
-    </li>
-    <li
-      class="c14"
-    >
-      <div
-        class="c2"
-      >
-        <svg
-          class="c8 c9"
-          height="1em"
-          viewBox="0 0 18 18"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12.5 11h-.79l-.28-.27A6.471 6.471 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L17.49 16l-4.99-5zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11z"
-            fill="none"
-            fill-rule="evenodd"
-          />
-        </svg>
-      </div>
-      <span
-        class="c12 c13"
-      >
-        Search
-      </span>
-      <svg
-        class="c8 c15 c16"
-        height="1em"
-        viewBox="0 0 12 8"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
-        />
-      </svg>
-      <ul
-        class="c17 c18"
-      >
-        <li
-          class="c11"
-        >
-          <span
-            class="c12 c13"
-          >
-            Cars
-          </span>
-        </li>
-        <li
-          class="c11"
-        >
-          <span
-            class="c12 c13"
-          >
-            Bikes
-          </span>
-        </li>
-        <li
-          class="c11"
-        >
-          <span
-            class="c12 c13"
-          >
-            Phones
-          </span>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`SideNav should change width when clicked on item with sidenavOpenCloseOnClick prop given 1`] = `
-.c9 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c9 * {
+.c11 * {
   fill: #616161;
 }
 
@@ -544,7 +94,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   transition: all 0.2s;
 }
 
-.c11 {
+.c9 {
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -572,14 +122,14 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   border-bottom: 1px solid #F56A41;
 }
 
-.c11 > .c12 {
+.c9 > .c12 {
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
   font-weight: 400;
 }
 
-.c20 > .c12 {
+.c21 > .c12 {
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
@@ -591,7 +141,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
-  background-color: inherit;
+  background-color: #616161;
   display: grid;
   grid-template-areas: 'icon header dropdownIcon' 'submenu submenu submenu';
   grid-template-columns: min-content 1fr min-content;
@@ -625,40 +175,71 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   transition: max-height 1s ease-out;
 }
 
+.c14 ul,
+.c14 li {
+  border-color: #424242;
+}
+
 .c14 > .c12 {
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 700;
 }
 
-.c21 > .c16 {
+.c20 {
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  background-color: #616161;
+  display: grid;
+  grid-template-areas: 'icon header dropdownIcon' 'submenu submenu submenu';
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: 48px min-content;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  border-bottom: 1px solid #424242;
+}
+
+.c20 > .c16 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
-.c21 > .c12 {
+.c20 > ul {
+  max-height: 90vh;
+  -webkit-transition: max-height 1s ease-out;
+  transition: max-height 1s ease-out;
+}
+
+.c20 ul,
+.c20 li {
+  border-color: #424242;
+}
+
+.c20 > .c12 {
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
   font-weight: 700;
 }
 
-.c22 > .c16 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.c22 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.c10 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -687,7 +268,486 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   min-height: 48px;
 }
 
-.c2 .c8 {
+.c2 .c10 {
+  font-size: 16px;
+}
+
+.c19 {
+  grid-area: submenu;
+  border-top: 1px solid;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  border-color: #F56A41;
+}
+
+.c19 > li > :first-child {
+  padding-left: 60px;
+}
+
+.c1 {
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  background-color: inherit;
+  display: grid;
+  grid-template-areas: 'icon header dropdownIcon' 'submenu submenu submenu';
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: 48px min-content;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  border-bottom: 1px solid #F56A41;
+  background-color: #E07C5E;
+  border: 0;
+}
+
+.c1 > .c12 {
+  grid-area: header;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.c1 .c3 * {
+  background: #ffffff;
+}
+
+.c22 .c12,
+.c22 .c7 {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.c22 .c18 {
+  max-height: 0px;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.c0 {
+  height: 100vh;
+  background-color: #F5F5F5;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  left: 0;
+  width: 250px;
+  background-color: #FE8D6B;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 ul::-webkit-scrollbar {
+  width: 5px;
+  background-color: #FE8D6B;
+}
+
+.c0 ul::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #9E9E9E;
+}
+
+.c0 svg * {
+  fill: #ffffff;
+}
+
+.c0 .c12,
+.c0 .c7 {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+<div
+  class="c0"
+  data-testid="sidenav"
+  open=""
+>
+  <div
+    class="c1"
+  >
+    <div
+      class="c2"
+    >
+      <button
+        class="c3 c4"
+        id="burgerIcon"
+        open=""
+      >
+        <span
+          class="c5 c6"
+        />
+        <span
+          class="c5 c6"
+        />
+        <span
+          class="c5 c6"
+        />
+      </button>
+    </div>
+    <div
+      class="c7 "
+    />
+  </div>
+  <ul
+    class="c8"
+  >
+    <li
+      class="c9"
+    >
+      <div
+        class="c2"
+      >
+        <svg
+          class="c10 c11"
+          height="1em"
+          viewBox="0 0 20 17"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8 16v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9h1.7c.46 0 .68-.57.33-.87L10.67.6c-.38-.34-.96-.34-1.34 0L.97 8.13c-.34.3-.13.87.33.87H3v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
+          />
+        </svg>
+      </div>
+      <span
+        class="c12 c13"
+      >
+        Home
+      </span>
+    </li>
+    <li
+      class="c14"
+      open=""
+    >
+      <div
+        class="c2"
+      >
+        <svg
+          class="c10 c11"
+          height="1em"
+          viewBox="0 0 18 18"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.5 11h-.79l-.28-.27A6.471 6.471 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L17.49 16l-4.99-5zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11z"
+            fill="none"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <span
+        class="c12 c13"
+      >
+        Search
+      </span>
+      <svg
+        class="c10 c15 c16 c17"
+        height="1em"
+        viewBox="0 0 12 8"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+        />
+      </svg>
+      <ul
+        class="c18 c19"
+      >
+        <li
+          class="c20"
+          open=""
+        >
+          <span
+            class="c12 c13"
+          >
+            Cars
+          </span>
+        </li>
+        <li
+          class="c9"
+        >
+          <span
+            class="c12 c13"
+          >
+            Bikes
+          </span>
+        </li>
+        <li
+          class="c9"
+        >
+          <span
+            class="c12 c13"
+          >
+            Phones
+          </span>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`NavItem should fold the open item on click on it 1`] = `
+.c11 {
+  font-size: 16px;
+  cursor: inherit;
+}
+
+.c11 * {
+  fill: #616161;
+}
+
+.c15 {
+  font-size: 12px;
+  cursor: inherit;
+}
+
+.c15 * {
+  fill: #616161;
+}
+
+.c6 {
+  display: block;
+  position: absolute;
+  width: calc(16px * 1.33);
+  height: calc(16px * 0.2);
+  background: #616161;
+  border-radius: calc(16px * 0.2);
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.c6:nth-child(1) {
+  top: 0px;
+}
+
+.c6:nth-child(2) {
+  top: calc(16px * 0.4);
+}
+
+.c6:nth-child(3) {
+  top: calc(16px * 0.8);
+}
+
+.c4 {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: calc(16px * 1.33);
+  height: 16px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.c4 .c5:nth-child(1) {
+  top: calc(16px * 0.4);
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.c4 .c5:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.c4 .c5:nth-child(3) {
+  top: calc(16px * 0.4);
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.c13 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c17 {
+  grid-area: dropdownIcon;
+  margin-right: 15px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.c9 {
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  background-color: inherit;
+  display: grid;
+  grid-template-areas: 'icon header dropdownIcon' 'submenu submenu submenu';
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: 48px min-content;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  border-bottom: 1px solid #F56A41;
+}
+
+.c9 > .c12 {
+  grid-area: header;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.c14 {
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  background-color: inherit;
+  display: grid;
+  grid-template-areas: 'icon header dropdownIcon' 'submenu submenu submenu';
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: 48px min-content;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c14 > .c12 {
+  grid-area: header;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.c20 > .c16 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c20 > .c12 {
+  grid-area: header;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.c21 > .c16 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c21 > .c12 {
+  grid-area: header;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.c22 > .c16 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c22 > .c12 {
+  grid-area: header;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.c8 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: auto;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  color: #ffffff;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-area: icon;
+  min-width: 60px;
+  min-height: 48px;
+}
+
+.c2 .c10 {
   font-size: 16px;
 }
 
@@ -832,417 +892,6 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
     </div>
     <div
       class="c7 "
-    >
-      <svg
-        class="c8 c9"
-        height="1em"
-        viewBox="0 0 20 17"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M8 16v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9h1.7c.46 0 .68-.57.33-.87L10.67.6c-.38-.34-.96-.34-1.34 0L.97 8.13c-.34.3-.13.87.33.87H3v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
-        />
-      </svg>
-    </div>
-  </div>
-  <ul
-    class="c10"
-  >
-    <li
-      class="c11"
-    >
-      <div
-        class="c2"
-      >
-        <svg
-          class="c8 c9"
-          height="1em"
-          viewBox="0 0 20 17"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M8 16v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9h1.7c.46 0 .68-.57.33-.87L10.67.6c-.38-.34-.96-.34-1.34 0L.97 8.13c-.34.3-.13.87.33.87H3v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
-          />
-        </svg>
-      </div>
-      <span
-        class="c12 c13"
-      >
-        Home
-      </span>
-    </li>
-    <li
-      class="c14"
-      open=""
-    >
-      <div
-        class="c2"
-      >
-        <svg
-          class="c8 c9"
-          height="1em"
-          viewBox="0 0 18 18"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12.5 11h-.79l-.28-.27A6.471 6.471 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L17.49 16l-4.99-5zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11z"
-            fill="none"
-            fill-rule="evenodd"
-          />
-        </svg>
-      </div>
-      <span
-        class="c12 c13"
-      >
-        Search
-      </span>
-      <svg
-        class="c8 c15 c16 c17"
-        height="1em"
-        viewBox="0 0 12 8"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
-        />
-      </svg>
-      <ul
-        class="c18 c19"
-      >
-        <li
-          class="c11"
-        >
-          <span
-            class="c12 c13"
-          >
-            Cars
-          </span>
-        </li>
-        <li
-          class="c11"
-        >
-          <span
-            class="c12 c13"
-          >
-            Bikes
-          </span>
-        </li>
-        <li
-          class="c11"
-        >
-          <span
-            class="c12 c13"
-          >
-            Phones
-          </span>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`SideNav should close sidenav if we click outside 1`] = `
-.c11 {
-  font-size: 16px;
-  cursor: inherit;
-}
-
-.c11 * {
-  fill: #616161;
-}
-
-.c6 {
-  display: block;
-  position: absolute;
-  width: calc(16px * 1.33);
-  height: calc(16px * 0.2);
-  background: #616161;
-  border-radius: calc(16px * 0.2);
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-
-.c6:nth-child(1) {
-  top: 0px;
-}
-
-.c6:nth-child(2) {
-  top: calc(16px * 0.4);
-}
-
-.c6:nth-child(3) {
-  top: calc(16px * 0.8);
-}
-
-.c4 {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  width: calc(16px * 1.33);
-  height: 16px;
-  position: relative;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.c14 .c5:nth-child(1) {
-  top: calc(16px * 0.4);
-  -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-
-.c14 .c5:nth-child(2) {
-  opacity: 0;
-  left: -60px;
-}
-
-.c14 .c5:nth-child(3) {
-  top: calc(16px * 0.4);
-  -webkit-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-}
-
-.c13 {
-  font-size: 14px;
-  font-weight: 400;
-  color: inherit;
-}
-
-.c9 {
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  background-color: inherit;
-  display: grid;
-  grid-template-areas: 'icon header dropdownIcon' 'submenu submenu submenu';
-  grid-template-columns: min-content 1fr min-content;
-  grid-template-rows: 48px min-content;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  border-bottom: 1px solid #F56A41;
-}
-
-.c9 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.c15 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.c16 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.c17 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.c18 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.c8 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  overflow: auto;
-  padding: 0px;
-  margin: 0px;
-  list-style-type: none;
-  color: #ffffff;
-}
-
-.c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-area: icon;
-  min-width: 60px;
-  min-height: 48px;
-}
-
-.c2 .c10 {
-  font-size: 16px;
-}
-
-.c1 {
-  width: 100%;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  background-color: inherit;
-  display: grid;
-  grid-template-areas: 'icon header dropdownIcon' 'submenu submenu submenu';
-  grid-template-columns: min-content 1fr min-content;
-  grid-template-rows: 48px min-content;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  border-bottom: 1px solid #F56A41;
-  background-color: #E07C5E;
-  border: 0;
-}
-
-.c1 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.c1 .c3 * {
-  background: #ffffff;
-}
-
-.c0 {
-  height: 100vh;
-  background-color: #F5F5F5;
-  width: 0px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  left: 0;
-  width: 60px;
-  background-color: #FE8D6B;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 ul::-webkit-scrollbar {
-  width: 5px;
-  background-color: #FE8D6B;
-}
-
-.c0 ul::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #9E9E9E;
-}
-
-.c0 svg * {
-  fill: #ffffff;
-}
-
-.c0 .c12,
-.c0 .c7 {
-  opacity: 0;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-}
-
-.c0 .c20 {
-  max-height: 0px;
-  -webkit-transition: max-height 0.2s ease-out;
-  transition: max-height 0.2s ease-out;
-}
-
-.c19 .c12,
-.c19 .c7 {
-  opacity: 1;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-}
-
-<div
-  class="c0"
-  data-testid="sidenav"
->
-  <div
-    class="c1"
-  >
-    <div
-      class="c2"
-    >
-      <button
-        class="c3 c4"
-        id="burgerIcon"
-      >
-        <span
-          class="c5 c6"
-        />
-        <span
-          class="c5 c6"
-        />
-        <span
-          class="c5 c6"
-        />
-      </button>
-    </div>
-    <div
-      class="c7 "
     />
   </div>
   <ul
@@ -1272,17 +921,85 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
         Home
       </span>
     </li>
+    <li
+      class="c14"
+    >
+      <div
+        class="c2"
+      >
+        <svg
+          class="c10 c11"
+          height="1em"
+          viewBox="0 0 18 18"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.5 11h-.79l-.28-.27A6.471 6.471 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L17.49 16l-4.99-5zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11z"
+            fill="none"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <span
+        class="c12 c13"
+      >
+        Search
+      </span>
+      <svg
+        class="c10 c15 c16 c17"
+        height="1em"
+        viewBox="0 0 12 8"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+        />
+      </svg>
+      <ul
+        class="c18 c19"
+      >
+        <li
+          class="c9"
+        >
+          <span
+            class="c12 c13"
+          >
+            Cars
+          </span>
+        </li>
+        <li
+          class="c9"
+        >
+          <span
+            class="c12 c13"
+          >
+            Bikes
+          </span>
+        </li>
+        <li
+          class="c9"
+        >
+          <span
+            class="c12 c13"
+          >
+            Phones
+          </span>
+        </li>
+      </ul>
+    </li>
   </ul>
 </div>
 `;
 
-exports[`SideNav should render properly 1`] = `
-.c8 {
+exports[`NavItem should render properly 1`] = `
+.c10 {
   font-size: 16px;
   cursor: inherit;
 }
 
-.c8 * {
+.c10 * {
   fill: #616161;
 }
 
@@ -1351,7 +1068,7 @@ exports[`SideNav should render properly 1`] = `
   transition: all 0.2s;
 }
 
-.c10 {
+.c8 {
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1379,7 +1096,7 @@ exports[`SideNav should render properly 1`] = `
   border-bottom: 1px solid #F56A41;
 }
 
-.c10 > .c11 {
+.c8 > .c11 {
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
@@ -1420,7 +1137,7 @@ exports[`SideNav should render properly 1`] = `
   font-weight: 400;
 }
 
-.c9 {
+.c7 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1449,7 +1166,7 @@ exports[`SideNav should render properly 1`] = `
   min-height: 48px;
 }
 
-.c2 .c7 {
+.c2 .c9 {
   font-size: 16px;
 }
 
@@ -1586,31 +1303,19 @@ exports[`SideNav should render properly 1`] = `
       </div>
       <div
         class="c6 "
-      >
-        <svg
-          class="c7 c8"
-          height="1em"
-          viewBox="0 0 20 17"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M8 16v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9h1.7c.46 0 .68-.57.33-.87L10.67.6c-.38-.34-.96-.34-1.34 0L.97 8.13c-.34.3-.13.87.33.87H3v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
-          />
-        </svg>
-      </div>
+      />
     </div>
     <ul
-      class="c9"
+      class="c7"
     >
       <li
-        class="c10"
+        class="c8"
       >
         <div
           class="c2"
         >
           <svg
-            class="c7 c8"
+            class="c9 c10"
             height="1em"
             viewBox="0 0 20 17"
             width="1em"
@@ -1634,7 +1339,7 @@ exports[`SideNav should render properly 1`] = `
           class="c2"
         >
           <svg
-            class="c7 c8"
+            class="c9 c10"
             height="1em"
             viewBox="0 0 18 18"
             width="1em"
@@ -1653,7 +1358,7 @@ exports[`SideNav should render properly 1`] = `
           Search
         </span>
         <svg
-          class="c7 c14 c15"
+          class="c9 c14 c15"
           height="1em"
           viewBox="0 0 12 8"
           width="1em"
@@ -1667,7 +1372,7 @@ exports[`SideNav should render properly 1`] = `
           class="c16 c17"
         >
           <li
-            class="c10"
+            class="c8"
           >
             <span
               class="c11 c12"
@@ -1676,7 +1381,7 @@ exports[`SideNav should render properly 1`] = `
             </span>
           </li>
           <li
-            class="c10"
+            class="c8"
           >
             <span
               class="c11 c12"
@@ -1685,7 +1390,7 @@ exports[`SideNav should render properly 1`] = `
             </span>
           </li>
           <li
-            class="c10"
+            class="c8"
           >
             <span
               class="c11 c12"
