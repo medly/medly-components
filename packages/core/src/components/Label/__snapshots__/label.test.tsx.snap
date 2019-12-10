@@ -3,7 +3,7 @@
 exports[`Label component should render correctly with all the props given 1`] = `
 .c0 {
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 300;
   color: pink;
   margin: 0px 0px 8px 0px;
   cursor: pointer;
@@ -28,7 +28,7 @@ exports[`Label component should render correctly with default props 1`] = `
 .c0 {
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }

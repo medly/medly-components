@@ -12,8 +12,8 @@ const checkbox: CheckboxTheme = {
     defaultSize: '16px',
     fillColor: colors.violet[500],
     bgColor: colors.white,
-    disabledBgcolor: colors.grey[600],
-    borderColor: colors.grey[200],
+    disabledBgcolor: colors.grey[400],
+    borderColor: colors.grey[300],
     outlineColor: colors.violet[500]
 };
 

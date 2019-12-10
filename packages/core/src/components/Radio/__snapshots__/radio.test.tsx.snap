@@ -66,7 +66,7 @@ exports[`Radio component should render correctly with all the default props 1`] 
   height: 16px;
   position: relative;
   border-radius: 100%;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -113,7 +113,7 @@ exports[`Radio component should render correctly with all the props given 1`] = 
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   margin: 0px 0px 0px 8px;
   cursor: not-allowed;
 }
@@ -195,8 +195,8 @@ exports[`Radio component should render correctly with all the props given 1`] = 
   height: 24px;
   position: relative;
   border-radius: 100%;
-  border: 1px solid #CCCCCC;
-  background-color: #ededed;
+  border: 1px solid #E0E0E0;
+  background-color: #BDBDBD;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;

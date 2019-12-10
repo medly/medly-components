@@ -4,7 +4,7 @@ import { TabsTheme } from './types';
 const tabs: TabsTheme = {
     shadowColor: 'rgba(0,0,0,0.2)',
     tablistBgColor: colors.white,
-    activeTabTextColor: colors.orange[400],
+    activeTabTextColor: colors.orange[300],
     disabledTabTextColor: colors.grey[400]
 };
 

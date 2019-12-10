@@ -76,7 +76,7 @@ exports[`Tab should render properly with icon 1`] = `
 }
 
 .c2 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c3 {

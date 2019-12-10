@@ -38,8 +38,8 @@ exports[`Chip component should render properly when it is disabled 1`] = `
   max-width: -moz-max-content;
   max-width: max-content;
   cursor: not-allowed;
-  border: 1px solid #AAAAAA;
-  background-color: #AAAAAA;
+  border: 1px solid #BDBDBD;
+  background-color: #BDBDBD;
   color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

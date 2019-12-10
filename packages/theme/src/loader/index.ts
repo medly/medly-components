@@ -10,7 +10,7 @@ const loader: LoaderTheme = {
         L: '84px',
         XL: '96px'
     },
-    defaultColor: colors.orange[400]
+    defaultColor: colors.orange[300]
 };
 
 export default loader;

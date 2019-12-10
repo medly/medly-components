@@ -4,7 +4,7 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   margin: 0px 0px 8px 0px;
   cursor: default;
 }
@@ -17,7 +17,7 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
 .c6 {
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   margin: 0px 0px 0px 8px;
   cursor: pointer;
 }
@@ -141,7 +141,7 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
   height: 24px;
   position: relative;
   border-radius: 100%;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -234,7 +234,7 @@ exports[`Radio Group should render correctly 1`] = `
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -242,7 +242,7 @@ exports[`Radio Group should render correctly 1`] = `
 .c6 {
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   margin: 0px 0px 0px 8px;
   cursor: not-allowed;
 }
@@ -346,8 +346,8 @@ exports[`Radio Group should render correctly 1`] = `
   height: 16px;
   position: relative;
   border-radius: 100%;
-  border: 1px solid #CCCCCC;
-  background-color: #ededed;
+  border: 1px solid #E0E0E0;
+  background-color: #BDBDBD;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;

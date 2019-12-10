@@ -56,11 +56,11 @@ exports[`SingleSelect component on pressing enter button should close options 1`
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   background-color: #ffffff;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
 }
 
@@ -70,19 +70,19 @@ exports[`SingleSelect component on pressing enter button should close options 1`
 }
 
 .c6::-webkit-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-moz-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6:-ms-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-webkit-file-upload-button {
@@ -157,7 +157,7 @@ exports[`SingleSelect component on pressing enter button should close options 1`
   margin: 0px;
   max-height: 200px;
   overflow: auto;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
@@ -169,11 +169,11 @@ exports[`SingleSelect component on pressing enter button should close options 1`
 }
 
 .c7 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c3 {
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -275,9 +275,7 @@ exports[`SingleSelect component on pressing enter button should close options 1`
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
-            fill="#012040"
-            fill-rule="evenodd"
+            d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
           />
         </svg>
       </div>
@@ -379,11 +377,11 @@ exports[`SingleSelect component on pressing enter button when option are not vis
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   background-color: #ffffff;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
 }
 
@@ -393,19 +391,19 @@ exports[`SingleSelect component on pressing enter button when option are not vis
 }
 
 .c6::-webkit-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-moz-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6:-ms-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-webkit-file-upload-button {
@@ -480,7 +478,7 @@ exports[`SingleSelect component on pressing enter button when option are not vis
   margin: 0px;
   max-height: 200px;
   overflow: auto;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
@@ -492,11 +490,11 @@ exports[`SingleSelect component on pressing enter button when option are not vis
 }
 
 .c7 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c3 {
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -598,9 +596,7 @@ exports[`SingleSelect component on pressing enter button when option are not vis
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
-            fill="#012040"
-            fill-rule="evenodd"
+            d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
           />
         </svg>
       </div>
@@ -701,11 +697,11 @@ exports[`SingleSelect component should close options when clicked outside 1`] = 
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   background-color: #ffffff;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
 }
 
@@ -715,19 +711,19 @@ exports[`SingleSelect component should close options when clicked outside 1`] = 
 }
 
 .c6::-webkit-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-moz-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6:-ms-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-webkit-file-upload-button {
@@ -785,7 +781,7 @@ exports[`SingleSelect component should close options when clicked outside 1`] = 
   margin: 0px;
   max-height: 200px;
   overflow: auto;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
@@ -797,11 +793,11 @@ exports[`SingleSelect component should close options when clicked outside 1`] = 
 }
 
 .c7 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c3 {
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -906,9 +902,7 @@ exports[`SingleSelect component should close options when clicked outside 1`] = 
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
-            fill="#012040"
-            fill-rule="evenodd"
+            d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
           />
         </svg>
       </div>
@@ -1010,11 +1004,11 @@ exports[`SingleSelect component should not render options when clicked outside 1
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   background-color: #ffffff;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
 }
 
@@ -1024,19 +1018,19 @@ exports[`SingleSelect component should not render options when clicked outside 1
 }
 
 .c6::-webkit-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-moz-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6:-ms-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-webkit-file-upload-button {
@@ -1094,7 +1088,7 @@ exports[`SingleSelect component should not render options when clicked outside 1
   margin: 0px;
   max-height: 200px;
   overflow: auto;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
@@ -1106,11 +1100,11 @@ exports[`SingleSelect component should not render options when clicked outside 1
 }
 
 .c7 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c3 {
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -1216,9 +1210,7 @@ exports[`SingleSelect component should not render options when clicked outside 1
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
-              fill="#012040"
-              fill-rule="evenodd"
+              d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
             />
           </svg>
         </div>
@@ -1279,7 +1271,7 @@ exports[`SingleSelect component should not render options when clicked outside 2
         data-testid="popover-wrapper"
       >
         <div
-          class="sc-jTzLTM cEibhI"
+          class="sc-jTzLTM fXLDUM"
         >
           <div
             class="sc-EHOje ezXioy"
@@ -1287,7 +1279,7 @@ exports[`SingleSelect component should not render options when clicked outside 2
             
             <input
               autocomplete="off"
-              class="sc-bZQynM XHRoh"
+              class="sc-bZQynM eDrWtB"
               data-testid="select-input"
               id="select-input"
               label=""
@@ -1298,7 +1290,7 @@ exports[`SingleSelect component should not render options when clicked outside 2
             
           </div>
           <svg
-            class="sc-gZMcBi kLaBzw sc-fjdhpX iEtKxJ"
+            class="sc-gZMcBi jdmNfe sc-fjdhpX iEtKxJ"
             height="1em"
             theme="[object Object]"
             viewBox="0 0 12 8"
@@ -1306,9 +1298,7 @@ exports[`SingleSelect component should not render options when clicked outside 2
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
-              fill="#012040"
-              fill-rule="evenodd"
+              d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
             />
           </svg>
         </div>
@@ -1317,7 +1307,7 @@ exports[`SingleSelect component should not render options when clicked outside 2
           style="display: none;"
         >
           <ul
-            class="sc-iwsKbI jHcpLx"
+            class="sc-iwsKbI kpnpPC"
           >
             <li
               class="sc-dnqmqq lhTpTY"
@@ -1411,11 +1401,11 @@ exports[`SingleSelect component should render all the options when input value i
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   background-color: #ffffff;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
 }
 
@@ -1425,19 +1415,19 @@ exports[`SingleSelect component should render all the options when input value i
 }
 
 .c6::-webkit-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-moz-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6:-ms-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-webkit-file-upload-button {
@@ -1495,7 +1485,7 @@ exports[`SingleSelect component should render all the options when input value i
   margin: 0px;
   max-height: 200px;
   overflow: auto;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
@@ -1507,11 +1497,11 @@ exports[`SingleSelect component should render all the options when input value i
 }
 
 .c7 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c3 {
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -1613,9 +1603,7 @@ exports[`SingleSelect component should render all the options when input value i
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
-            fill="#012040"
-            fill-rule="evenodd"
+            d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
           />
         </svg>
       </div>
@@ -1665,7 +1653,7 @@ exports[`SingleSelect component should render correctly with all the props given
 .c2 {
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -1742,11 +1730,11 @@ exports[`SingleSelect component should render correctly with all the props given
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
-  background-color: #ededed;
+  color: #616161;
+  background-color: #BDBDBD;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
 }
 
@@ -1756,19 +1744,19 @@ exports[`SingleSelect component should render correctly with all the props given
 }
 
 .c8::-webkit-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c8::-moz-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c8:-ms-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c8::placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c8::-webkit-file-upload-button {
@@ -1809,7 +1797,7 @@ exports[`SingleSelect component should render correctly with all the props given
 }
 
 .c9 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c15 .c0 {
@@ -1826,8 +1814,8 @@ exports[`SingleSelect component should render correctly with all the props given
 }
 
 .c5 {
-  border: 1px solid #CCCCCC;
-  background-color: #ededed;
+  border: 1px solid #E0E0E0;
+  background-color: #BDBDBD;
   cursor: not-allowed;
   border-radius: 4px;
   box-sizing: border-box;
@@ -1924,9 +1912,7 @@ exports[`SingleSelect component should render correctly with all the props given
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
-            fill="#012040"
-            fill-rule="evenodd"
+            d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
           />
         </svg>
       </div>
@@ -1999,11 +1985,11 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   background-color: #ffffff;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
 }
 
@@ -2013,19 +1999,19 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 }
 
 .c6::-webkit-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-moz-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6:-ms-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-webkit-file-upload-button {
@@ -2083,7 +2069,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   margin: 0px;
   max-height: 200px;
   overflow: auto;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
@@ -2095,11 +2081,11 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 }
 
 .c7 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c3 {
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -2188,9 +2174,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
-            fill="#012040"
-            fill-rule="evenodd"
+            d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
           />
         </svg>
       </div>
@@ -2291,11 +2275,11 @@ exports[`SingleSelect component should render matched options when input values 
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   background-color: #ffffff;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
 }
 
@@ -2305,19 +2289,19 @@ exports[`SingleSelect component should render matched options when input values 
 }
 
 .c6::-webkit-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-moz-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6:-ms-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-webkit-file-upload-button {
@@ -2375,7 +2359,7 @@ exports[`SingleSelect component should render matched options when input values 
   margin: 0px;
   max-height: 200px;
   overflow: auto;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
@@ -2387,11 +2371,11 @@ exports[`SingleSelect component should render matched options when input values 
 }
 
 .c7 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c3 {
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -2493,9 +2477,7 @@ exports[`SingleSelect component should render matched options when input values 
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
-            fill="#012040"
-            fill-rule="evenodd"
+            d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
           />
         </svg>
       </div>
@@ -2588,11 +2570,11 @@ exports[`SingleSelect component should render options correctly 1`] = `
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   background-color: #ffffff;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
 }
 
@@ -2602,19 +2584,19 @@ exports[`SingleSelect component should render options correctly 1`] = `
 }
 
 .c6::-webkit-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-moz-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6:-ms-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c6::-webkit-file-upload-button {
@@ -2672,7 +2654,7 @@ exports[`SingleSelect component should render options correctly 1`] = `
   margin: 0px;
   max-height: 200px;
   overflow: auto;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 4px;
@@ -2684,11 +2666,11 @@ exports[`SingleSelect component should render options correctly 1`] = `
 }
 
 .c7 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c3 {
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -2790,9 +2772,7 @@ exports[`SingleSelect component should render options correctly 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
-            fill="#012040"
-            fill-rule="evenodd"
+            d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
           />
         </svg>
       </div>
@@ -2848,7 +2828,7 @@ exports[`SingleSelect component should render options correctly 2`] = `
       data-testid="popover-wrapper"
     >
       <div
-        class="sc-jTzLTM cEibhI"
+        class="sc-jTzLTM fXLDUM"
       >
         <div
           class="sc-EHOje ezXioy"
@@ -2856,7 +2836,7 @@ exports[`SingleSelect component should render options correctly 2`] = `
           
           <input
             autocomplete="off"
-            class="sc-bZQynM XHRoh"
+            class="sc-bZQynM eDrWtB"
             data-testid="select-input"
             id="select-input"
             label=""
@@ -2867,7 +2847,7 @@ exports[`SingleSelect component should render options correctly 2`] = `
           
         </div>
         <svg
-          class="sc-gZMcBi kLaBzw sc-fjdhpX iEtKxJ"
+          class="sc-gZMcBi jdmNfe sc-fjdhpX iEtKxJ"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"
@@ -2875,9 +2855,7 @@ exports[`SingleSelect component should render options correctly 2`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M10.59.59L6 5.17 1.41.59 0 2l6 6 6-6z"
-            fill="#012040"
-            fill-rule="evenodd"
+            d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
           />
         </svg>
       </div>
@@ -2886,7 +2864,7 @@ exports[`SingleSelect component should render options correctly 2`] = `
         style="display: block;"
       >
         <ul
-          class="sc-iwsKbI jHcpLx"
+          class="sc-iwsKbI kpnpPC"
         >
           <li
             class="sc-dnqmqq lhTpTY"

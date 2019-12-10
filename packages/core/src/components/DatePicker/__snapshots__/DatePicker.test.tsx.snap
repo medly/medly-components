@@ -58,7 +58,7 @@ exports[`DatePicker component should render correctly 1`] = `
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -108,11 +108,11 @@ exports[`DatePicker component should render correctly 1`] = `
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   background-color: #ffffff;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
 }
 
@@ -126,19 +126,19 @@ exports[`DatePicker component should render correctly 1`] = `
 }
 
 .c3 label input::-webkit-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c3 label input::-moz-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c3 label input:-ms-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c3 label input::placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c3 label input::-webkit-file-upload-button {

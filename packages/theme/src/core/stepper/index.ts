@@ -23,7 +23,7 @@ const stepper: StepperTheme = {
     defaultSize: 'S',
     counterColor: colors.white,
     activeColor: colors.violet[500],
-    inactiveColor: colors.grey[500]
+    inactiveColor: colors.grey[400]
 };
 
 export default stepper;

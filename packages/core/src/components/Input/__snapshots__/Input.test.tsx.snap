@@ -4,7 +4,7 @@ exports[`Input component should render correctly when fullWidth & required props
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -53,11 +53,11 @@ exports[`Input component should render correctly when fullWidth & required props
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   background-color: #ffffff;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
 }
 
@@ -67,19 +67,19 @@ exports[`Input component should render correctly when fullWidth & required props
 }
 
 .c3::-webkit-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c3::-moz-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c3:-ms-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c3::placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c3::-webkit-file-upload-button {
@@ -139,11 +139,11 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
-  background-color: #ededed;
+  color: #616161;
+  background-color: #BDBDBD;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
 }
 
@@ -153,19 +153,19 @@ exports[`Input component should render correctly when it is disabled 1`] = `
 }
 
 .c1::-webkit-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c1::-moz-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c1:-ms-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c1::placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c1::-webkit-file-upload-button {
@@ -216,11 +216,11 @@ exports[`Input component should render correctly when label and description are 
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   background-color: #ffffff;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
 }
 
@@ -230,19 +230,19 @@ exports[`Input component should render correctly when label and description are 
 }
 
 .c1::-webkit-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c1::-moz-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c1:-ms-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c1::placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c1::-webkit-file-upload-button {
@@ -270,7 +270,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   margin: 0px 0px 8px 0px;
   cursor: default;
 }
@@ -323,11 +323,11 @@ exports[`Input component should render correctly with all the props given 1`] = 
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   background-color: #ffffff;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
   width: calc(100% - 0px);
 }
@@ -338,19 +338,19 @@ exports[`Input component should render correctly with all the props given 1`] = 
 }
 
 .c3::-webkit-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c3::-moz-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c3:-ms-input-placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c3::placeholder {
-  color: #999999;
+  color: #9E9E9E;
 }
 
 .c3::-webkit-file-upload-button {

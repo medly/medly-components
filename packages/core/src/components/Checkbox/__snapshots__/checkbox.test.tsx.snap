@@ -7,7 +7,7 @@ exports[`Checkbox component should render correctly with all the default props 1
 }
 
 .c6 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c0 {
@@ -37,7 +37,7 @@ exports[`Checkbox component should render correctly with all the default props 1
   width: 16px;
   height: 16px;
   position: relative;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   border-radius: 15%;
   display: -webkit-inline-box;
@@ -149,13 +149,13 @@ exports[`Checkbox component should render correctly with all the props given 1`]
 }
 
 .c8 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   margin: 0px 0px 0px 8px;
   cursor: not-allowed;
 }
@@ -192,8 +192,8 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   width: 24px;
   height: 24px;
   position: relative;
-  border: 1px solid #CCCCCC;
-  background-color: #ededed;
+  border: 1px solid #E0E0E0;
+  background-color: #BDBDBD;
   border-radius: 15%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

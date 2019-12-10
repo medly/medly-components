@@ -23,12 +23,16 @@ exports[`Cell should not render text if hide property is given 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
-  border-right: 1px solid #CCCCCC;
+  border-right: 1px solid #E0E0E0;
 }
 
 .c0 .c6 {
@@ -67,13 +71,13 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c10 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c3 {
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   margin: 0px 0px 0px 8px;
   cursor: pointer;
 }
@@ -110,7 +114,7 @@ exports[`Cell should render checkbox properly 1`] = `
   width: 16px;
   height: 16px;
   position: relative;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   background-color: #ffffff;
   border-radius: 15%;
   display: -webkit-inline-box;
@@ -211,12 +215,16 @@ exports[`Cell should render checkbox properly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
-  border-right: 1px solid #CCCCCC;
+  border-right: 1px solid #E0E0E0;
 }
 
 .c0 .c1 {
@@ -292,18 +300,22 @@ exports[`Cell should render frozen text properly 1`] = `
 
 .c0 {
   opacity: 1;
-  padding: 5px 0px 5px 10px;
+  padding: 5px 10px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
-  border-right: 1px solid #CCCCCC;
+  border-right: 1px solid #E0E0E0;
   position: -webkit-sticky;
   position: sticky;
   left: 0;
@@ -353,18 +365,22 @@ exports[`Cell should render text properly 1`] = `
 
 .c0 {
   opacity: 1;
-  padding: 5px 0px 5px 10px;
+  padding: 5px 10px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
-  border-right: 1px solid #CCCCCC;
+  border-right: 1px solid #E0E0E0;
 }
 
 .c0 .c4 {

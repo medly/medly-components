@@ -7,7 +7,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 }
 
 .c11 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c7 {
@@ -15,7 +15,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   position: absolute;
   width: calc(16px * 1.33);
   height: calc(16px * 0.2);
-  background: #555;
+  background: #616161;
   border-radius: calc(16px * 0.2);
   opacity: 1;
   left: 0;
@@ -119,7 +119,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
-  background-color: #7C7B7B;
+  background-color: #616161;
   display: grid;
   grid-template-areas: 'icon header' 'icon submenu';
   grid-template-rows: min-content min-content;
@@ -147,7 +147,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c9 {
@@ -162,7 +162,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 }
 
 .c9 .c10 {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .c3 {
@@ -183,7 +183,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 }
 
 .c15 .c10 {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .c15 .c1 {
@@ -207,7 +207,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 
 .c0 {
   height: 100vh;
-  background-color: #999999;
+  background-color: #F5F5F5;
   width: 0px;
   position: fixed;
   z-index: 1;
@@ -233,7 +233,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 
 .c0 ul::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #7C7B7B;
+  background-color: #9E9E9E;
 }
 
 .c0 svg * {
@@ -300,12 +300,12 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
         <svg
           class="c10 c11"
           height="1em"
-          viewBox="0 0 576 512"
+          viewBox="0 0 20 17"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+            d="M8 16v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9h1.7c.46 0 .68-.57.33-.87L10.67.6c-.38-.34-.96-.34-1.34 0L.97 8.13c-.34.3-.13.87.33.87H3v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
           />
         </svg>
       </div>
@@ -352,7 +352,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 }
 
 .c11 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c7 {
@@ -360,7 +360,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   position: absolute;
   width: calc(16px * 1.33);
   height: calc(16px * 0.2);
-  background: #555;
+  background: #616161;
   border-radius: calc(16px * 0.2);
   opacity: 1;
   left: 0;
@@ -464,7 +464,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
-  background-color: #7C7B7B;
+  background-color: #616161;
   display: grid;
   grid-template-areas: 'icon header' 'icon submenu';
   grid-template-rows: min-content min-content;
@@ -492,7 +492,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c9 {
@@ -507,7 +507,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 }
 
 .c9 .c10 {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .c16 {
@@ -554,7 +554,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 }
 
 .c17 .c10 {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .c17 .c1 {
@@ -584,7 +584,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 
 .c0 {
   height: 100vh;
-  background-color: #999999;
+  background-color: #F5F5F5;
   width: 0px;
   position: fixed;
   z-index: 1;
@@ -610,7 +610,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 
 .c0 ul::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #7C7B7B;
+  background-color: #9E9E9E;
 }
 
 .c0 svg * {
@@ -677,12 +677,12 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
         <svg
           class="c10 c11"
           height="1em"
-          viewBox="0 0 576 512"
+          viewBox="0 0 20 17"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+            d="M8 16v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9h1.7c.46 0 .68-.57.33-.87L10.67.6c-.38-.34-.96-.34-1.34 0L.97 8.13c-.34.3-.13.87.33.87H3v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
           />
         </svg>
       </div>
@@ -760,7 +760,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 }
 
 .c11 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c7 {
@@ -768,7 +768,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   position: absolute;
   width: calc(16px * 1.33);
   height: calc(16px * 0.2);
-  background: #555;
+  background: #616161;
   border-radius: calc(16px * 0.2);
   opacity: 1;
   left: 0;
@@ -875,7 +875,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c9 {
@@ -890,7 +890,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 }
 
 .c9 .c10 {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .c16 .c1 {
@@ -923,7 +923,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 }
 
 .c17 .c10 {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .c17 .c1 {
@@ -936,7 +936,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 
 .c0 {
   height: 100vh;
-  background-color: #999999;
+  background-color: #F5F5F5;
   width: 0px;
   position: fixed;
   z-index: 1;
@@ -962,7 +962,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 
 .c0 ul::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #7C7B7B;
+  background-color: #9E9E9E;
 }
 
 .c0 svg * {
@@ -1038,12 +1038,12 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
         <svg
           class="c10 c11"
           height="1em"
-          viewBox="0 0 576 512"
+          viewBox="0 0 20 17"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+            d="M8 16v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9h1.7c.46 0 .68-.57.33-.87L10.67.6c-.38-.34-.96-.34-1.34 0L.97 8.13c-.34.3-.13.87.33.87H3v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
           />
         </svg>
       </div>
@@ -1064,7 +1064,7 @@ exports[`SideNav should render properly 1`] = `
 }
 
 .c9 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c6 {
@@ -1072,7 +1072,7 @@ exports[`SideNav should render properly 1`] = `
   position: absolute;
   width: calc(16px * 1.33);
   height: calc(16px * 0.2);
-  background: #555;
+  background: #616161;
   border-radius: calc(16px * 0.2);
   opacity: 1;
   left: 0;
@@ -1157,7 +1157,7 @@ exports[`SideNav should render properly 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
-  background-color: #7C7B7B;
+  background-color: #616161;
   display: grid;
   grid-template-areas: 'icon header' 'icon submenu';
   grid-template-rows: min-content min-content;
@@ -1185,7 +1185,7 @@ exports[`SideNav should render properly 1`] = `
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c10 {
@@ -1200,7 +1200,7 @@ exports[`SideNav should render properly 1`] = `
 }
 
 .c10 .c8 {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .c3 {
@@ -1236,7 +1236,7 @@ exports[`SideNav should render properly 1`] = `
 }
 
 .c14 .c8 {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .c14 .c1 {
@@ -1249,7 +1249,7 @@ exports[`SideNav should render properly 1`] = `
 
 .c0 {
   height: 100vh;
-  background-color: #999999;
+  background-color: #F5F5F5;
   width: 0px;
   position: fixed;
   z-index: 1;
@@ -1275,7 +1275,7 @@ exports[`SideNav should render properly 1`] = `
 
 .c0 ul::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #7C7B7B;
+  background-color: #9E9E9E;
 }
 
 .c0 svg * {
@@ -1385,12 +1385,12 @@ exports[`SideNav should render properly 1`] = `
           <svg
             class="c8 c9"
             height="1em"
-            viewBox="0 0 576 512"
+            viewBox="0 0 20 17"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+              d="M8 16v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9h1.7c.46 0 .68-.57.33-.87L10.67.6c-.38-.34-.96-.34-1.34 0L.97 8.13c-.34.3-.13.87.33.87H3v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
             />
           </svg>
         </div>

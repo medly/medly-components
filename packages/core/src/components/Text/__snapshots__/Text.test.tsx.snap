@@ -31,7 +31,7 @@ exports[`Text Component should render strong element for strong 1`] = `
 exports[`Text Component should render with all the props 1`] = `
 .c0 {
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 300;
   color: pink;
   display: block;
   margin: 8px 0px;

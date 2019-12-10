@@ -42,8 +42,8 @@ exports[`Button component should render properly when it is disabled 1`] = `
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border: 1px solid #AAAAAA;
-  background-color: #AAAAAA;
+  border: 1px solid #BDBDBD;
+  background-color: #BDBDBD;
   color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -106,7 +106,7 @@ exports[`Button component should render properly with any icon at the beginning 
 }
 
 .c2 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c4 {
@@ -225,7 +225,7 @@ exports[`Button component should render properly with any icon at the end of the
 }
 
 .c2 * {
-  fill: #555;
+  fill: #616161;
 }
 
 .c4 {

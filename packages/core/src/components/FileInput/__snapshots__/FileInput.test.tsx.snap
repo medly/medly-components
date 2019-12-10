@@ -4,7 +4,7 @@ exports[`FileInput component should render properly with all props 1`] = `
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   margin: 0px 0px 8px 0px;
   cursor: default;
 }
@@ -62,11 +62,11 @@ exports[`FileInput component should render properly with all props 1`] = `
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   background-clip: padding-box;
-  background-color: #ededed;
+  background-color: #BDBDBD;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
   cursor: not-allowed;
   text-align: center;
@@ -150,11 +150,11 @@ exports[`FileInput component should render properly with default props 1`] = `
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #555;
+  color: #616161;
   background-clip: padding-box;
   background-color: #ffffff;
   box-sizing: border-box;
-  border: 1px solid #CCCCCC;
+  border: 1px solid #E0E0E0;
   border-radius: 5px;
   cursor: pointer;
   text-align: center;

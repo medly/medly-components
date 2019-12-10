@@ -1,15 +1,16 @@
 import { GreyScale } from './types';
 
 const grey: GreyScale = {
-    50: '#F7F7F7',
-    100: '#999999',
-    200: '#CCCCCC',
-    300: '#F9F9F9',
-    400: '#AAAAAA',
-    500: '#7C7B7B',
-    600: '#ededed',
-    700: '#555',
-    800: '#4F4F4F'
+    50: '#FAFAFA',
+    100: '#F5F5F5',
+    200: '#EEEEEE',
+    300: '#E0E0E0',
+    400: '#BDBDBD',
+    500: '#9E9E9E',
+    600: '#757575',
+    700: '#616161',
+    800: '#424242',
+    900: '#212121'
 };
 
 export default grey;
