@@ -28,6 +28,7 @@ import { InfoCircleIcon } from './icons/InfoCircleIcon';
 import { LibraryBooksIcon } from './icons/LibraryBooksIcon';
 import { OrdersIcon } from './icons/OrdersIcon';
 import { PowerButtonIcon } from './icons/PowerButtonIcon';
+import { PrescriptionIcon } from './icons/PrescriptionIcon';
 import { ReceiptIcon } from './icons/ReceiptIcon';
 import { ReportsIcon } from './icons/ReportsIcon';
 import { SearchIcon } from './icons/SearchIcon';
@@ -72,6 +73,7 @@ export const Basic = (props: Omit<Props, keyof SVGProp>) => (
         <LibraryBooksIcon key="libraryBooks" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <OrdersIcon key="orders" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <PowerButtonIcon key="powerButton" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
+        <PrescriptionIcon key="prescription" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <ReceiptIcon key="receipt" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <ReportsIcon key="reports" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <SearchIcon key="search" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />

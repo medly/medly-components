@@ -1,4 +1,3 @@
-// tslint:disable:max-line-length
 import { WithStyle } from '@medly-components/utils';
 import React, { SFC } from 'react';
 import AddSvg from '../assets/Add.svg';
