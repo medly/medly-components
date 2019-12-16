@@ -4,7 +4,7 @@ export const useOuterClickNotifier = (onOuterClick: (e: any) => void, innerRef: 
     const handleClick = (e: any) => {
         const isReactDatePicker = e.target.closest('[data-testid = "Day"]');
 
-        if (!innerRef.current.contains(e.target) && !isReactDatePicker) {
+        if (innerRef.current && !innerRef.current.contains(e.target) && !isReactDatePicker) {
             onOuterClick(e);
         }
     };

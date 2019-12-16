@@ -1,4 +1,3 @@
-import { defaultTheme } from '@medly-components/theme';
 import { centerAligned, styled } from '@medly-components/utils';
 
 export const ModalBackgroundStyled = styled('div')`
@@ -11,18 +10,3 @@ export const ModalBackgroundStyled = styled('div')`
     z-index: 1000;
     ${centerAligned()}
 `;
-
-export const ModalStyled = styled('div')`
-    background: ${({ theme }) => theme.modal.bgColor};
-    padding: ${({ theme }) => theme.spacing.L} ${({ theme }) => theme.spacing.XL};
-    border-radius: 5px;
-    width: 50%;
-    height: auto;
-    max-height: 80%;
-    overflow: hidden;
-    overflow-y: auto;
-`;
-
-ModalStyled.defaultProps = {
-    theme: defaultTheme
-};

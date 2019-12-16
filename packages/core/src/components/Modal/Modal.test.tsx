@@ -32,7 +32,7 @@ describe('Modal component', () => {
     });
 
     it('should call onCloseHandler', () => {
-        const { container, getByTestId } = TestUtils.render(
+        const { getByTestId } = TestUtils.render(
             <Modal open onCloseModal={onCloseHandler}>
                 <Modal.Header>Add User</Modal.Header>
                 <Modal.Content>Demo Content</Modal.Content>
