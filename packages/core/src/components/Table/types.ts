@@ -32,7 +32,7 @@ export interface ColumnConfig {
     field: string;
     /** Column will take max width to fit content */
     fitContent?: boolean;
-    /** Column context alignment */
+    /** Column content alignment */
     align?: 'left' | 'right' | 'center';
     /** Nested Column */
     children?: ColumnConfig[];
