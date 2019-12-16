@@ -49,6 +49,8 @@ export interface Props {
     columns: ColumnConfig[];
     /** Shows checkboxes to select rows */
     isSelectable?: boolean;
+    /** Shows placeholder shimmer */
+    isLoading?: boolean;
     /** Ids of default selected rows */
     selectedRows?: number[];
     /** Function to be called on row selection */

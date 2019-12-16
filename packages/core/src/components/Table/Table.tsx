@@ -9,8 +9,10 @@ import { TableStyled } from './Table.styled';
 import { ColumnConfig, Props, StaticProps } from './types';
 import useRowSelector from './useRowSelector';
 
+const loadingBodyData = [{ id: 0 }, { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }];
+
 export const Table: SFC<Props> & WithStyle & StaticProps = props => {
-    const { data, onRowClick, onSort, uniqueKeyName, rowDisableKey, isSelectable, selectedRows, onRowSelection } = props,
+    const { data, onRowClick, onSort, uniqueKeyName, rowDisableKey, isSelectable, selectedRows, onRowSelection, isLoading } = props,
         checkboxColumnConfig: ColumnConfig = {
             title: 'ch',
             field: 'medly-table-checkbox',
@@ -66,14 +68,15 @@ export const Table: SFC<Props> & WithStyle & StaticProps = props => {
             () => (
                 <Body
                     {...{
+                        isLoading,
                         columns,
-                        data,
-                        onRowClick,
                         uniqueKeyName,
                         rowDisableKey,
                         addColumnMaxSize,
                         selectedRows: selectedIds.value,
-                        onRowSelection: toggleId
+                        onRowSelection: toggleId,
+                        data: isLoading ? loadingBodyData : data,
+                        onRowClick: !isLoading && onRowClick
                     }}
                 />
             ),

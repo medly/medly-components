@@ -12,6 +12,7 @@ export interface Props extends StyledProps, HTMLProps<HTMLDivElement> {
     rowId: any;
     config: ColumnConfig;
     dottedFieldName: string;
+    isLoading?: boolean;
     selectedRows?: number[];
     onRowSelection?: (id: number) => void;
     addColumnMaxSize: (field: string, value: number) => void;

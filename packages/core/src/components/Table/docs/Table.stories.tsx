@@ -1,5 +1,6 @@
 import { defaultTheme, TableTheme } from '@medly-components/theme';
 import { action } from '@storybook/addon-actions';
+import { boolean } from '@storybook/addon-knobs';
 import React, { SFC, useState } from 'react';
 import Button from '../../Button';
 import Modal from '../../Modal';
@@ -23,7 +24,15 @@ export const Basic = () => {
         filterData(dottedField, order, tableData, setTableData);
     };
 
-    return <Table onRowClick={action('Row Clicked')} data={tableData} onSort={handleFilterData} columns={columns} />;
+    return (
+        <Table
+            isLoading={boolean('Loading', false)}
+            onRowClick={action('Row Clicked')}
+            data={tableData}
+            onSort={handleFilterData}
+            columns={columns}
+        />
+    );
 };
 
 export const WithColumnHide = () => {
@@ -51,6 +60,7 @@ export const WithColumnHide = () => {
             <Button onClick={handleModalState}>Hide Columns</Button>
             <Table
                 isSelectable
+                isLoading={boolean('Loading', false)}
                 rowDisableKey="disabled"
                 selectedRows={selectedRows}
                 onRowSelection={setSelectedRows}

@@ -8,13 +8,13 @@ import { ColumnConfig } from '../types';
 import { Props } from './types';
 
 const Body: React.SFC<Props> = React.memo(props => {
-    const { data, columns, onRowClick, selectedRows, uniqueKeyName, rowDisableKey, onRowSelection, addColumnMaxSize } = props;
+    const { data, columns, onRowClick, selectedRows, uniqueKeyName, rowDisableKey, onRowSelection, addColumnMaxSize, isLoading } = props;
 
     const handleRowClick = (rowData: any) => {
         return onRowClick && !rowData[rowDisableKey] ? () => onRowClick(rowData) : undefined;
     };
 
-    const getRow = (rowData: any, configs: ColumnConfig[] = columns, field = '') => {
+    const getRow = (rowData: any = {}, configs: ColumnConfig[] = columns, field = '') => {
         const cells: React.ReactElement[] = [];
 
         configs.forEach((config, index) => {
@@ -30,6 +30,7 @@ const Body: React.SFC<Props> = React.memo(props => {
                   )
                 : cells.push(
                       <Cell
+                          isLoading={isLoading}
                           disabled={rowData[rowDisableKey]}
                           key={index}
                           data={rowData[config.field]}
