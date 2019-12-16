@@ -1,10 +1,11 @@
 {
     "name": "medly-components",
+    "private": true,
     "workspaces": [
         "packages/*"
     ],
     "version": "1.0.0",
-    "description": "🚀 Simple themable component library using react, styled-compoent & typescript",
+    "description": "🚀 Simple themable component library using react, styled-components & typescript",
     "config": {
         "commitizen": {
             "path": "./node_modules/cz-lerna-changelog"
