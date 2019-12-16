@@ -24,7 +24,7 @@ export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ .
     overflow: hidden;
 
     user-select: none;
-    cursor: pointer;
+    cursor:  ${({ showPointer }) => (showPointer ? 'pointer' : 'default')};
 
     ${({ containsSubList, active, activeBorderColor, borderColor }) =>
         !containsSubList &&

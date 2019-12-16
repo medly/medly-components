@@ -7,7 +7,7 @@ exports[`BottomList should render properly 1`] = `
   color: inherit;
 }
 
-.c6 {
+.c5 {
   display: block;
   position: absolute;
   width: calc(16px * 1.33);
@@ -23,19 +23,19 @@ exports[`BottomList should render properly 1`] = `
   transition: 0.25s ease-in-out;
 }
 
-.c6:nth-child(1) {
+.c5:nth-child(1) {
   top: 0px;
 }
 
-.c6:nth-child(2) {
+.c5:nth-child(2) {
   top: calc(16px * 0.4);
 }
 
-.c6:nth-child(3) {
+.c5:nth-child(3) {
   top: calc(16px * 0.8);
 }
 
-.c5 {
+.c4 {
   border: none;
   background-color: transparent;
   outline: none;
@@ -85,7 +85,7 @@ exports[`BottomList should render properly 1`] = `
   font-weight: 400;
 }
 
-.c8 {
+.c7 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -96,15 +96,15 @@ exports[`BottomList should render properly 1`] = `
   color: #ffffff;
 }
 
-.c12 .c1 {
+.c8 {
+  -webkit-flex: unset;
+  -ms-flex: unset;
+  flex: unset;
   overflow: unset;
+  background-color: #E07C5E;
 }
 
-.c12 .c10 {
-  cursor: default;
-}
-
-.c3 {
+.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -122,11 +122,11 @@ exports[`BottomList should render properly 1`] = `
   min-height: 48px;
 }
 
-.c3 .c13 {
+.c2 .c12 {
   font-size: 16px;
 }
 
-.c2 {
+.c1 {
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -150,20 +150,20 @@ exports[`BottomList should render properly 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: pointer;
+  cursor: default;
   border-bottom: 1px solid #F56A41;
   background-color: #E07C5E;
   border: 0;
 }
 
-.c2 > .c10 {
+.c1 > .c10 {
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
   font-weight: 400;
 }
 
-.c2 .c4 * {
+.c1 .c3 * {
   background: #ffffff;
 }
 
@@ -203,13 +203,13 @@ exports[`BottomList should render properly 1`] = `
 }
 
 .c0 .c10,
-.c0 .c7 {
+.c0 .c6 {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.c0 .c14 {
+.c0 .c13 {
   max-height: 0px;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
@@ -221,35 +221,35 @@ exports[`BottomList should render properly 1`] = `
     data-testid="sidenav"
   >
     <div
-      class="c1 c2"
+      class="c1"
     >
       <div
-        class="c3"
+        class="c2"
       >
         <button
-          class="c4 c5"
+          class="c3 c4"
           id="burgerIcon"
         >
           <span
-            class="c6"
+            class="c5"
           />
           <span
-            class="c6"
+            class="c5"
           />
           <span
-            class="c6"
+            class="c5"
           />
         </button>
       </div>
       <div
-        class="c7 "
+        class="c6 "
       />
     </div>
     <ul
-      class="c8"
+      class="c7 c8"
     >
       <li
-        class="c1 c9"
+        class="c9"
       >
         <span
           class="c10 c11"

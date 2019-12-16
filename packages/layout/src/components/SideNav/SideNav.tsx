@@ -16,7 +16,7 @@ export const SideNav: SFC<SideNavProps> & WithStyle & SideNavStaticProps = props
 
     const ref = useRef(null),
         [open, setOpenState] = useState(false),
-        [activeItem, setActiveItem] = useState(defaultActive);
+        [activeItem, setActiveItem] = useState(defaultActive || '');
 
     const burgerIconClickHandler = () => setOpenState(!open),
         sidenavOpenHandler = () => {

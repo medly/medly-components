@@ -2,7 +2,7 @@ import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
 export interface NavItemProps extends HTMLProps<HTMLLIElement> {
     /** Path of the navitem */
-    path: string;
+    path?: string;
     /** To be used to open sidenav on click on it */
     openSideNavOnClick?: boolean;
     /** To be used to render any component as Navitem */
@@ -23,5 +23,6 @@ export interface NavItemStyledProps extends HTMLProps<HTMLLIElement>, WithThemeP
     as?: any;
     open?: boolean;
     active?: boolean;
+    showPointer?: boolean;
     containsSubList?: boolean;
 }

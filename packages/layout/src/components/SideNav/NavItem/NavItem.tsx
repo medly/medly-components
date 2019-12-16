@@ -12,8 +12,8 @@ export const NavItem: SFC<NavItemProps> & WithStyle = props => {
     const onClickHandler = (event: React.MouseEvent<HTMLLIElement>) => {
         event.stopPropagation();
         onClick && onClick(event);
-        setOpenItem(path === openItem ? '' : path);
-        !containsSubList && changeActiveItem(path);
+        path && setOpenItem(path === openItem ? '' : path);
+        path && !containsSubList && changeActiveItem(path);
         openSideNavOnClick && sidenavOpenHandler();
     };
 
@@ -21,7 +21,13 @@ export const NavItem: SFC<NavItemProps> & WithStyle = props => {
         isActive = containsSubList && activeItem ? activeItem.startsWith(path) : path === activeItem;
 
     return (
-        <NavItemStyled {...{ ...restProps, containsSubList, open: isOpen, active: isActive }} onClick={onClickHandler}>
+        <NavItemStyled
+            {...{ ...restProps, path, containsSubList }}
+            open={isOpen}
+            active={isActive}
+            showPointer={!!(path || onClick)}
+            onClick={onClickHandler}
+        >
             {React.Children.map(props.children, child => {
                 return React.cloneElement(child as any, { leftPadding, showDropdownIcon: containsSubList });
             })}
