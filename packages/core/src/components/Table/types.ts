@@ -18,15 +18,27 @@ export interface Data {
 }
 
 export interface ColumnConfig {
+    /** To freeze the component on the left */
     frozen?: boolean;
+    /** To show sort icons */
     sort?: boolean;
+    /** To hide the column */
     hide?: boolean;
+    /** This will be handled by the component */
     size?: string;
+    /** Title of the column */
     title: string;
+    /** Field name in the data */
     field: string;
+    /** Column will take max width to fit content */
+    fitContent?: boolean;
+    /** Column context alignment */
     align?: 'left' | 'right' | 'center';
+    /** Nested Column */
     children?: ColumnConfig[];
+    /** Column formatter */
     formatter: keyof ColumnsWidth;
+    /** Custom component */
     component?: React.SFC<{ data: any; rowId?: any; disabled?: boolean }>;
 }
 

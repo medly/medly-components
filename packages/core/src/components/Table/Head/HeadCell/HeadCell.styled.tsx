@@ -25,14 +25,12 @@ export const HeadCellStyled = styled(Cell.Style)`
     height: 100%;
     align-items: flex-end;
 
-    *:first-child {
-        margin-right: auto;
-    }
-
     ${Text.Style} {
         overflow: auto;
         white-space: unset;
         text-overflow: unset;
+        width: 100%;
+        text-align: center;
     }
 
     ${SvgIcon} {

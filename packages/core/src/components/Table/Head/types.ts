@@ -5,7 +5,7 @@ export interface Props {
     setColumns: React.Dispatch<React.SetStateAction<ColumnConfig[]>>;
     isAllRowSelected?: boolean;
     isSelectAllDisable?: boolean;
-    maxColumnSizes?: {};
+    maxColumnSizes: { [k: string]: number };
     onSelectAllClick?: (id: number) => void;
     onSort?: (field: string, order: SortOrder) => void;
 }

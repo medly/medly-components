@@ -33,6 +33,7 @@ const Head: React.SFC<Props> = React.memo(props => {
                   )
                 : cells.push(
                       <HeadCell
+                          fitContent={config.fitContent}
                           maxColumnSizes={maxColumnSizes}
                           sortField={sortField}
                           frozen={config.frozen}

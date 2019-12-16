@@ -3,13 +3,13 @@ import React from 'react';
 import Chip from '../../Chip';
 import { ColumnConfig } from '../types';
 
-const FavouriteColor = styled('div')`
+const FavoriteColor = styled('div')`
     display: flex;
     flex-direction: column;
 `;
 
 const columns: ColumnConfig[] = [
-    { title: 'Name', field: 'name', formatter: 'text-short', frozen: true },
+    { title: 'Name', field: 'name', formatter: 'text-short', frozen: true, fitContent: true },
     {
         title: 'Marks',
         field: 'marks',
@@ -22,12 +22,12 @@ const columns: ColumnConfig[] = [
     { title: 'Age', field: 'age', formatter: 'numeric', sort: true },
     { title: 'Passed', field: 'isPassed', formatter: 'boolean', sort: true },
     {
-        title: 'Favourite Color',
+        title: 'Favorite Color',
         field: 'color',
         formatter: 'react-component',
         component: ({ data: colors, disabled }) => {
             const chips = colors.split(',').map((color: string) => <Chip key={color} label={color} disabled={disabled} />);
-            return <FavouriteColor>{chips}</FavouriteColor>;
+            return <FavoriteColor>{chips}</FavoriteColor>;
         },
         sort: true
     },
