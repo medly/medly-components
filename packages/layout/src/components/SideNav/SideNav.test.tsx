@@ -32,6 +32,9 @@ const renderer = (mockOnChange = jest.fn()) =>
                         </SideNav.NavItem>
                     </SideNav.SubNavList>
                 </SideNav.NavItem>
+                <SideNav.BottomList>
+                    <SideNav.NavText>Hi Dummy Username</SideNav.NavText>
+                </SideNav.BottomList>
             </SideNav.NavList>
         </SideNav>
     );
@@ -61,8 +64,6 @@ describe('SideNav', () => {
     });
 
     it('should change width when clicked on item with sidenavOpenCloseOnClick prop given', () => {
-        const mockOnClick = jest.fn();
-
         const { getByText, getByTestId } = renderer();
         act(() => {
             fireEvent.click(getByText('Search'));
@@ -71,27 +72,27 @@ describe('SideNav', () => {
     });
 
     it('should close sidenav if we click outside', () => {
-        const { container, getByText, getByTestId } = render(
-            <div>
-                <p>Outer Element</p>
-                <SideNav closeOnOuterClick>
-                    <SideNav.NavList>
-                        <SideNav.NavItem path="/home">
-                            <SideNav.NavIcon>
-                                <HomeIcon />
-                            </SideNav.NavIcon>
-                            <SideNav.NavText>Home</SideNav.NavText>
-                        </SideNav.NavItem>
-                    </SideNav.NavList>
-                </SideNav>
-            </div>
-        );
-        act(() => {
-            fireEvent.click(container.querySelector('button'));
-        });
-        act(() => {
-            fireEvent.click(getByText('Outer Element'));
-        });
+        const mockOnClick = jest.fn(),
+            { container, getByText, getByTestId } = render(
+                <div>
+                    <p>Outer Element</p>
+                    <SideNav closeOnOuterClick>
+                        <SideNav.NavList>
+                            <SideNav.NavItem onClick={mockOnClick}>
+                                <SideNav.NavIcon>
+                                    <HomeIcon />
+                                </SideNav.NavIcon>
+                                <SideNav.NavText>Home</SideNav.NavText>
+                            </SideNav.NavItem>
+                        </SideNav.NavList>
+                    </SideNav>
+                </div>
+            );
+        fireEvent.click(container.querySelector('button'));
+        fireEvent.click(getByText('Home'));
+        expect(mockOnClick).toBeCalled();
+
+        fireEvent.click(getByText('Outer Element'));
         expect(getByTestId('sidenav')).toMatchSnapshot();
     });
 });

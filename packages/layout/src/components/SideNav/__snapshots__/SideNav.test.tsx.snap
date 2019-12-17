@@ -92,6 +92,14 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   color: #ffffff;
 }
 
+.c19 {
+  -webkit-flex: unset;
+  -ms-flex: unset;
+  flex: unset;
+  overflow: unset;
+  background-color: #E07C5E;
+}
+
 .c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -253,14 +261,14 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   background: #ffffff;
 }
 
-.c19 .c12,
-.c19 .c7 {
+.c20 .c12,
+.c20 .c7 {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.c19 .c17 {
+.c20 .c17 {
   max-height: 0px;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
@@ -446,6 +454,15 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
         </li>
       </ul>
     </li>
+    <ul
+      class="c10 c19"
+    >
+      <span
+        class="c12 c13"
+      >
+        Hi Dummy Username
+      </span>
+    </ul>
   </ul>
 </div>
 `;
@@ -542,6 +559,14 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   color: #ffffff;
 }
 
+.c20 {
+  -webkit-flex: unset;
+  -ms-flex: unset;
+  flex: unset;
+  overflow: unset;
+  background-color: #E07C5E;
+}
+
 .c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -612,7 +637,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   font-weight: 400;
 }
 
-.c20 > .c12 {
+.c21 > .c12 {
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
@@ -665,19 +690,6 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   font-weight: 400;
 }
 
-.c21 > .c16 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.c21 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 700;
-}
-
 .c22 > .c16 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -685,6 +697,19 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 }
 
 .c22 > .c12 {
+  grid-area: header;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.c23 > .c16 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c23 > .c12 {
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
@@ -748,14 +773,14 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   background: #ffffff;
 }
 
-.c23 .c12,
-.c23 .c7 {
+.c24 .c12,
+.c24 .c7 {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.c23 .c18 {
+.c24 .c18 {
   max-height: 0px;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
@@ -942,6 +967,15 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
         </li>
       </ul>
     </li>
+    <ul
+      class="c10 c20"
+    >
+      <span
+        class="c12 c13"
+      >
+        Hi Dummy Username
+      </span>
+    </ul>
   </ul>
 </div>
 `;
@@ -1057,6 +1091,41 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   color: inherit;
 }
 
+.c15 > .c12 {
+  grid-area: header;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.c16 > .c12 {
+  grid-area: header;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.c17 > .c12 {
+  grid-area: header;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.c18 > .c12 {
+  grid-area: header;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.c19 > .c12 {
+  grid-area: header;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
 .c9 {
   width: 100%;
   -webkit-text-decoration: none;
@@ -1085,39 +1154,23 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   border-bottom: 1px solid #F56A41;
 }
 
+.c9 > .c21 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c9 > ul {
+  max-height: 90vh;
+  -webkit-transition: max-height 1s ease-out;
+  transition: max-height 1s ease-out;
+}
+
 .c9 > .c12 {
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
   font-weight: 400;
-}
-
-.c15 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.c16 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.c17 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.c18 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 700;
 }
 
 .c1 {
@@ -1203,14 +1256,14 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   transition: opacity 0.2s;
 }
 
-.c0 .c20 {
+.c0 .c22 {
   max-height: 0px;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
 }
 
-.c19 .c12,
-.c19 .c7 {
+.c20 .c12,
+.c20 .c7 {
   opacity: 1;
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
@@ -1250,6 +1303,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   >
     <li
       class="c9"
+      open=""
     >
       <div
         class="c2"
@@ -1347,6 +1401,14 @@ exports[`SideNav should render properly 1`] = `
   margin: 0px;
   list-style-type: none;
   color: #ffffff;
+}
+
+.c18 {
+  -webkit-flex: unset;
+  -ms-flex: unset;
+  flex: unset;
+  overflow: unset;
+  background-color: #E07C5E;
 }
 
 .c2 {
@@ -1695,6 +1757,15 @@ exports[`SideNav should render properly 1`] = `
           </li>
         </ul>
       </li>
+      <ul
+        class="c9 c18"
+      >
+        <span
+          class="c11 c12"
+        >
+          Hi Dummy Username
+        </span>
+      </ul>
     </ul>
   </div>
 </div>
