@@ -56,13 +56,13 @@ export const Table: SFC<Props> & WithStyle & StaticProps = props => {
                         columns,
                         setColumns,
                         maxColumnSizes,
-                        isSelectAllDisable,
                         onSelectAllClick: toggleId,
-                        isAllRowSelected: ids.isAllSelected
+                        isAllRowSelected: ids.isAllSelected,
+                        isSelectAllDisable: isLoading || isSelectAllDisable
                     }}
                 />
             ),
-            [columns, ids, isSelectAllDisable]
+            [columns, ids, isSelectAllDisable, isLoading]
         ),
         body = useMemo(
             () => (
@@ -80,7 +80,7 @@ export const Table: SFC<Props> & WithStyle & StaticProps = props => {
                     }}
                 />
             ),
-            [columns, data, selectedIds]
+            [columns, data, selectedIds, isLoading]
         );
 
     return (
@@ -96,7 +96,8 @@ Table.defaultProps = {
     rowDisableKey: '',
     data: [],
     selectedRows: [],
-    isSelectable: false
+    isSelectable: false,
+    isLoading: false
 };
 
 Table.displayName = 'Table';

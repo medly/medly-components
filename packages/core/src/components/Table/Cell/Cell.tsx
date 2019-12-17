@@ -1,13 +1,13 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useEffect, useRef } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef } from 'react';
 import Checkbox from '../../Checkbox';
 import Text from '../../Text';
 import * as Styled from './Cell.styled';
 import { Props } from './types';
 
 const Cell: React.SFC<Props> & WithStyle = props => {
-    const childRef = useRef(null);
-    const { addColumnMaxSize, config, data, rowId, selectedRows, disabled, onRowSelection, dottedFieldName, isLoading } = props;
+    const childRef = useRef(null),
+        { addColumnMaxSize, config, data, rowId, selectedRows, disabled, onRowSelection, dottedFieldName, isLoading } = props;
 
     useEffect(() => {
         if (childRef.current) {
@@ -19,25 +19,20 @@ const Cell: React.SFC<Props> & WithStyle = props => {
     const stopPropagation = (e: React.MouseEvent) => e.stopPropagation(),
         handleRowSelection = (id: number) => (e: React.FormEvent<HTMLInputElement>) => onRowSelection(id);
 
-    if (isLoading) {
-        return (
-            <Styled.Cell hide={config.hide} frozen={config.frozen}>
-                <Styled.LoadingDiv />
-            </Styled.Cell>
-        );
-    }
-
-    const RowSelectionCheckbox = () => (
-            <Checkbox
-                disabled={disabled}
-                ref={childRef}
-                checked={selectedRows.includes(rowId)}
-                onChange={handleRowSelection(rowId)}
-                onClick={stopPropagation}
-                name="active"
-            />
+    const rowSelectionCheckbox = useMemo(
+            () => (
+                <Checkbox
+                    disabled={disabled}
+                    ref={childRef}
+                    checked={selectedRows.includes(rowId)}
+                    onChange={handleRowSelection(rowId)}
+                    onClick={stopPropagation}
+                    name="active"
+                />
+            ),
+            [selectedRows]
         ),
-        FormatedCell = () => {
+        formatedCell = useCallback(() => {
             switch (config.formatter) {
                 case 'boolean':
                     return (
@@ -60,13 +55,21 @@ const Cell: React.SFC<Props> & WithStyle = props => {
                         </Text>
                     );
             }
-        };
+        }, [data, isLoading]);
 
-    const textAlign = config.align || (config.formatter === 'numeric' ? 'right' : 'left');
+    const textAlign = useMemo(() => config.align || (config.formatter === 'numeric' ? 'right' : 'left'), []);
+
+    if (isLoading) {
+        return (
+            <Styled.Cell hide={config.hide} frozen={config.frozen}>
+                <Styled.LoadingDiv ref={childRef} />
+            </Styled.Cell>
+        );
+    }
 
     return (
         <Styled.Cell hide={config.hide} frozen={config.frozen} align={textAlign}>
-            {config.field === 'medly-table-checkbox' ? <RowSelectionCheckbox /> : <FormatedCell />}
+            {config.field === 'medly-table-checkbox' ? rowSelectionCheckbox : formatedCell()}
         </Styled.Cell>
     );
 };
