@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.7](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.6...@medly-components/layout@1.0.0-beta.7) (2019-12-17)
+
+
+### Bug Fixes
+
+* **core:** fix sidenav component test ([c86b9e5](https://github.com/medlypharmacy/medly-components/commit/c86b9e56e32b5554d9c6ebbcd378fdc3db5b324c))
+* **layout:** fix sidenav bottom list issue and navitem cursor pointer issue ([d5f81c1](https://github.com/medlypharmacy/medly-components/commit/d5f81c11a6b3dfdd7e9057569fb1092a58afb59d))
+
+
+
+
+
 # [1.0.0-beta.6](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.5...@medly-components/layout@1.0.0-beta.6) (2019-12-10)
 
 

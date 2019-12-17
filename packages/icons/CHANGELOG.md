@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.7](https://github.com/medlypharmacy/medly-components/compare/@medly-components/icons@1.0.0-beta.6...@medly-components/icons@1.0.0-beta.7) (2019-12-17)
+
+
+### Features
+
+* **icons:** add prescription icon ([fe1a79e](https://github.com/medlypharmacy/medly-components/commit/fe1a79e35a5b730d4b057a5d5560d4b7d4cdf92f))
+
+
+
+
+
 # [1.0.0-beta.6](https://github.com/medlypharmacy/medly-components/compare/@medly-components/icons@1.0.0-beta.5...@medly-components/icons@1.0.0-beta.6) (2019-12-10)
 
 

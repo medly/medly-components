@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.7](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.6...@medly-components/core@1.0.0-beta.7) (2019-12-17)
+
+
+### Bug Fixes
+
+* **core:** fix cell data render issue after data load ([eba41b2](https://github.com/medlypharmacy/medly-components/commit/eba41b20a3052ee76030d4d9a45f1073af3d9889))
+* **core:** fix modal close issue ([f2d8fe9](https://github.com/medlypharmacy/medly-components/commit/f2d8fe9553f9efdbeb96c8b5b213844f0c472777))
+* **core:** fix spelling mistake ([2f06441](https://github.com/medlypharmacy/medly-components/commit/2f06441eef85ad54dd530ce9f7e274f53dd72d0b))
+
+
+### Features
+
+* **core:** add feature to show loading cells in table ([bd7f691](https://github.com/medlypharmacy/medly-components/commit/bd7f691c3dcc36b7850a7eade7247ddebf98e012))
+* **core:** add prop in column config to take max with to fit the content ([3d3ca68](https://github.com/medlypharmacy/medly-components/commit/3d3ca68c451e0a8a340554be2bfd1384ee9fbd4f))
+
+
+
+
+
 # [1.0.0-beta.6](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.5...@medly-components/core@1.0.0-beta.6) (2019-12-10)
 
 
