@@ -40,7 +40,14 @@ exports[`Modal component should render properly when it is open 1`] = `
   justify-content: flex-end;
 }
 
+.c8 > * {
+  margin-left: 10px;
+}
+
 .c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-bottom: 16px;
 }
 
@@ -129,11 +136,18 @@ exports[`Modal component should render properly when it is open 1`] = `
   background: #FAFAFA;
   padding: 32px 64px;
   border-radius: 5px;
-  width: 50%;
-  height: auto;
   max-height: 80%;
   overflow: hidden;
   overflow-y: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 50%;
+  min-width: auto;
 }
 
 <div>

@@ -2,14 +2,15 @@ import { useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import React, { SFC, useContext, useRef } from 'react';
 import CloseModalContext from '../CloseModalContext';
 import * as Styled from './ModalPopup.styled';
+import { Props } from './types';
 
-export const ModalPopup: SFC & WithStyle = props => {
+export const ModalPopup: SFC<Props> & WithStyle = props => {
     const innerRef = useRef(null),
         handleClose = useContext(CloseModalContext);
 
     useOuterClickNotifier(handleClose, innerRef);
 
-    return <Styled.Popup ref={innerRef}>{props.children}</Styled.Popup>;
+    return <Styled.Popup ref={innerRef} {...props} />;
 };
 
 ModalPopup.displayName = 'ModalPopup';

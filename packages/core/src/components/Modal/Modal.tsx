@@ -9,13 +9,13 @@ import ModalPopup from './ModalPopup';
 import { ModalStaticProps, Props } from './types';
 
 export const Modal: SFC<Props> & WithStyle & ModalStaticProps = props => {
-    const { open, onCloseModal, children, ...restProps } = props;
+    const { open, onCloseModal, children, minWidth, minHeight, ...restProps } = props;
 
     return (
         open && (
             <ModalBackgroundStyled {...restProps}>
                 <CloseModalContext.Provider value={onCloseModal}>
-                    <ModalPopup>{children}</ModalPopup>
+                    <ModalPopup {...{ minWidth, minHeight }}>{children}</ModalPopup>
                 </CloseModalContext.Provider>
             </ModalBackgroundStyled>
         )
