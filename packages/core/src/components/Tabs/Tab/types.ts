@@ -5,7 +5,12 @@ export interface StyledProps extends HTMLProps<HTMLButtonElement> {
 }
 
 export interface Props extends StyledProps {
+    /** Id of tab */
     id: any;
+    /** Label of the tab */
     label: string;
+    /** To be used to hide the tab */
+    hide?: boolean;
+    /** Icon to be shown */
     icon?: React.ElementType;
 }

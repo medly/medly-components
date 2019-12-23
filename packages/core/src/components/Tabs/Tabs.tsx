@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import Tab from './Tab';
 import TabList from './TabList';
 import TabPanel from './TabPanel';
@@ -8,16 +8,19 @@ import { Props, StaticProps } from './types';
 
 export const Tabs: React.SFC<Props> & StaticProps & WithStyle = React.memo(props => {
     const { defaultActive, active, onChange, children, ...restProps } = props,
-        tabIds = children ? React.Children.map(children, (child: any) => child.props.id) : [undefined],
+        tabIds = useMemo(() => (children ? React.Children.map(children, (child: any) => child.props.id) : [undefined]), [children]),
         [key, setKey] = useState(defaultActive || tabIds[0]),
-        activeTab = active || key;
+        activeTab = useMemo(() => active || key, [active, key]);
+
+    const handleTabChange = useCallback(
+        (id: any) => {
+            !active && setKey(id);
+            onChange && onChange(id);
+        },
+        [active, onChange]
+    );
 
     if (React.Children.count(children) === 0) return null;
-
-    const handleTabChange = (id: any) => {
-        !active && setKey(id);
-        onChange && onChange(id);
-    };
 
     return (
         <Styled.Tabs>
@@ -28,7 +31,7 @@ export const Tabs: React.SFC<Props> & StaticProps & WithStyle = React.memo(props
         </Styled.Tabs>
     );
 });
-
+Tabs.displayName = 'Tabs';
 Tabs.Style = Styled.Tabs;
 Tabs.Tab = Tab;
 Tabs.TabList = TabList;
