@@ -74,5 +74,5 @@ export interface Props {
 }
 
 export interface StaticProps {
-    SelectableColumns: typeof SelectableColumns;
+    SelectableColumns?: typeof SelectableColumns;
 }
