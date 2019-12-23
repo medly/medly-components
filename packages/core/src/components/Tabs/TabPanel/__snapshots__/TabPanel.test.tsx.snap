@@ -3,6 +3,7 @@
 exports[`TabPanel should render only avtive tab content 1`] = `
 .c0 {
   padding: 10px;
+  height: 100%;
 }
 
 .c0:focus {

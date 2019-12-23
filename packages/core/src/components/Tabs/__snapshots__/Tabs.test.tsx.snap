@@ -129,6 +129,7 @@ exports[`Tabs should render properly without any prop 1`] = `
 
 .c4 {
   padding: 10px;
+  height: 100%;
 }
 
 .c4:focus {
@@ -313,6 +314,7 @@ exports[`Tabs should select expected tab on click on any tab, when only defaultA
 
 .c4 {
   padding: 10px;
+  height: 100%;
 }
 
 .c4:focus {
