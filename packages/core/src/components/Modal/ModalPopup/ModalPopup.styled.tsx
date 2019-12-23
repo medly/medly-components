@@ -12,7 +12,7 @@ export const Popup = styled('div')<Props>`
     display: flex;
     flex-direction: column;
     min-width: ${({ minWidth }) => (minWidth ? minWidth : `50%`)};
-    min-width: ${({ minHeight }) => (minHeight ? minHeight : `auto`)};
+    min-height: ${({ minHeight }) => (minHeight ? minHeight : `auto`)};
 `;
 
 Popup.defaultProps = {

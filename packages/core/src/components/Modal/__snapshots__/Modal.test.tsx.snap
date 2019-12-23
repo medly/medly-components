@@ -147,7 +147,7 @@ exports[`Modal component should render properly when it is open 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-width: 50%;
-  min-width: auto;
+  min-height: auto;
 }
 
 <div>
