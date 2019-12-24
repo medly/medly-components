@@ -3,7 +3,7 @@ import React from 'react';
 import { DescriptionStyled, FieldStyled, FieldWithLabelStyled, LabelStyled } from './FieldWithLabel.styled';
 import { Props, StaticProps } from './types';
 
-export const FieldWithLabel: React.SFC<Props> & WithStyle & StaticProps = props => {
+export const FieldWithLabel: React.SFC<Props> & WithStyle & StaticProps = React.memo(props => {
     let isLabelPresent = false;
 
     React.Children.forEach(props.children, (child: any) => {
@@ -13,7 +13,7 @@ export const FieldWithLabel: React.SFC<Props> & WithStyle & StaticProps = props 
     });
 
     return <FieldWithLabelStyled {...props} isLabelPresent={isLabelPresent} />;
-};
+});
 
 FieldWithLabel.Field = FieldStyled;
 FieldWithLabel.Label = LabelStyled;

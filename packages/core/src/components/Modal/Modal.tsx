@@ -8,7 +8,7 @@ import ModalHeader from './ModalHeader';
 import ModalPopup from './ModalPopup';
 import { ModalStaticProps, Props } from './types';
 
-export const Modal: SFC<Props> & WithStyle & ModalStaticProps = props => {
+export const Modal: SFC<Props> & WithStyle & ModalStaticProps = React.memo(props => {
     const { open, onCloseModal, children, minWidth, minHeight, ...restProps } = props;
 
     return (
@@ -20,7 +20,7 @@ export const Modal: SFC<Props> & WithStyle & ModalStaticProps = props => {
             </ModalBackgroundStyled>
         )
     );
-};
+});
 
 Modal.defaultProps = {
     open: false

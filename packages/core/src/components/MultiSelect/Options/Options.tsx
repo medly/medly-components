@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { useCallback, useMemo } from 'react';
 import Checkbox from '../../Checkbox';
 import CheckboxGroup from '../../CheckboxGroup';
 import Text from '../../Text';
@@ -8,14 +8,9 @@ import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
 const Options: React.SFC<OptionsProps> & WithStyle = React.memo(props => {
-    const selectedValues = props.values.map(op => op.value);
+    const selectedValues = useMemo(() => props.values.map(op => op.value), [props.values]);
 
-    const handleCheckboxClick = (event: React.ChangeEvent<HTMLInputElement>) => {
-            const item = event.target.name,
-                isChecked = event.target.checked,
-                newValues = isChecked ? [...selectedValues, item] : selectedValues.filter(vl => vl !== item);
-            props.onOptionClick(newValues);
-        },
+    const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
         handleTextClick = (value: any) => (event: React.MouseEvent) => {
             const newValues = selectedValues.includes(value) ? selectedValues.filter(vl => vl !== value) : [...selectedValues, value];
             props.onOptionClick(newValues);
@@ -25,12 +20,18 @@ const Options: React.SFC<OptionsProps> & WithStyle = React.memo(props => {
             options.forEach(op => (values.includes(op.value) ? newValues.add(op.value) : newValues.delete(op.value)));
             props.onOptionClick(Array.from(newValues));
         },
-        stopPropogation = (e: React.MouseEvent) => {
-            e.stopPropagation();
-        };
+        handleCheckboxClick = useCallback(
+            (event: React.ChangeEvent<HTMLInputElement>) => {
+                const item = event.target.name,
+                    isChecked = event.target.checked,
+                    newValues = isChecked ? [...selectedValues, item] : selectedValues.filter(vl => vl !== item);
+                props.onOptionClick(newValues);
+            },
+            [selectedValues, props.onOptionClick]
+        );
 
     return (
-        <Styled.Options onClick={stopPropogation}>
+        <Styled.Options onClick={stopPropagation}>
             {props.options.map((op, index) => (
                 <React.Fragment key={index}>
                     {props.showCheckbox && !Array.isArray(op.value) && (
@@ -75,7 +76,7 @@ const Options: React.SFC<OptionsProps> & WithStyle = React.memo(props => {
         </Styled.Options>
     );
 });
-
+Options.displayName = 'Options';
 Options.Style = Styled.Options;
 
 export default Options;

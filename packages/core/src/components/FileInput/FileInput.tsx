@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { SFC, useCallback, useMemo } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './FileInput.styled';
 import { Props } from './types';
@@ -23,25 +23,37 @@ export const FileInput: SFC<Props> & WithStyle = React.memo(
             } = props,
             inputId = id || 'file-input';
 
-        const handleLabelClick = (event: any) => {
-                disabled && event.preventDefault();
-                onFocus && onFocus(event);
-            },
-            handleOnChange = (event: React.FormEvent<HTMLInputElement>) => {
-                const target = event.target as HTMLInputElement;
-                onChange(target.files);
-            };
+        const handleLabelClick = useCallback(
+                (event: any) => {
+                    disabled && event.preventDefault();
+                    onFocus && onFocus(event);
+                },
+                [disabled, onFocus]
+            ),
+            handleOnChange = useCallback(
+                (event: React.FormEvent<HTMLInputElement>) => {
+                    const target = event.target as HTMLInputElement;
+                    onChange(target.files);
+                },
+                [onChange]
+            );
 
-        const createLabelFromFileList = () =>
-            Array.from(files)
-                .map((file: File) => file.name)
-                .join(', ');
-
+        const createLabelFromFileList = useCallback(
+                () =>
+                    Array.from(files)
+                        .map((file: File) => file.name)
+                        .join(', '),
+                [files]
+            ),
+            inputPlaceholder = useMemo(() => (files.length ? createLabelFromFileList() : placeholder || 'Click to choose file'), [
+                files.length,
+                placeholder
+            ]);
         return (
             <FieldWithLabel {...{ fullWidth, labelPosition }}>
                 {label && <FieldWithLabel.Label {...{ required, labelPosition }}>{label}</FieldWithLabel.Label>}
                 <Styled.Label data-testid="file-input-label" onClick={handleLabelClick} disabled={disabled} fullWidth={fullWidth}>
-                    {files.length ? createLabelFromFileList() : placeholder || 'Click to choose file'}
+                    {inputPlaceholder}
                     <Styled.Input
                         id={inputId}
                         ref={ref}

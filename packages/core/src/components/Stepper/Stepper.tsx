@@ -4,7 +4,7 @@ import Step from './Step/Step';
 import { StepperStyled } from './Stepper.styled';
 import { Props, StepperStaticProps } from './types';
 
-export const Stepper: SFC<Props> & WithStyle & StepperStaticProps = props => {
+export const Stepper: SFC<Props> & WithStyle & StepperStaticProps = React.memo(props => {
     const { size, activeStep, children, onStepClick } = props;
     return (
         <StepperStyled>
@@ -19,7 +19,7 @@ export const Stepper: SFC<Props> & WithStyle & StepperStaticProps = props => {
             })}
         </StepperStyled>
     );
-};
+});
 
 Stepper.defaultProps = {
     activeStep: 0

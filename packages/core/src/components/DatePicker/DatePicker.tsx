@@ -1,5 +1,5 @@
 import { DateSingleInput } from '@datepicker-react/styled';
-import React, { SFC, useState } from 'react';
+import React, { SFC, useCallback, useState } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import { DatePickerStyled } from './DatePicker.styled';
 import { Props } from './types';
@@ -9,15 +9,18 @@ export const DatePicker: SFC<Props> = React.memo(props => {
     const [date, setDate] = useState(value || null);
     const [showDatepicker, setShowDatepicker] = useState(false);
 
-    const handleDateChange = (state: { date: Date; showDatepicker: boolean }) => {
-            setDate(state.date);
-            setShowDatepicker(false);
-            onChange && onChange(state.date);
-        },
-        handleClick = (event: React.MouseEvent) => {
+    const handleDateChange = useCallback(
+            (state: { date: Date; showDatepicker: boolean }) => {
+                setDate(state.date);
+                setShowDatepicker(false);
+                onChange && onChange(state.date);
+            },
+            [onChange]
+        ),
+        handleClick = useCallback((event: React.MouseEvent) => {
             event.preventDefault();
             event.stopPropagation();
-        };
+        }, []);
 
     return (
         <FieldWithLabel {...{ fullWidth, labelPosition }}>

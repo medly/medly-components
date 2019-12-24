@@ -12,7 +12,7 @@ export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
 }
 
 export interface ModalStaticProps {
-    Header: React.SFC;
-    Content: React.SFC;
-    Actions: React.SFC;
+    Header?: React.SFC;
+    Content?: React.SFC;
+    Actions?: React.SFC;
 }

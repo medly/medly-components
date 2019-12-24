@@ -27,5 +27,5 @@ export interface Props {
 }
 
 export interface StepperStaticProps {
-    Step: React.SFC<StepProps>;
+    Step?: React.SFC<StepProps>;
 }

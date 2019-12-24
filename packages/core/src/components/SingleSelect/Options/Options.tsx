@@ -13,7 +13,7 @@ const Options: React.SFC<OptionsProps> & WithStyle = React.memo(props => {
         </OptionsStyled>
     );
 });
-
+Options.displayName = 'Options';
 Options.Style = OptionsStyled;
 
 export default Options;
