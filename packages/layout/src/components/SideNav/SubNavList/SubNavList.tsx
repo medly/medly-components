@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useState } from 'react';
+import React, { SFC, useMemo, useState } from 'react';
 import { NavListProps } from '../NavList/types';
 import * as Styled from './SubNavList.styled';
 
@@ -7,7 +7,7 @@ export const SubNavList: SFC<NavListProps & { leftPadding?: number }> & WithStyl
     const { children, ...restProps } = props,
         [openItem, setOpenItem] = useState();
 
-    const leftPadding = props.leftPadding ? props.leftPadding + 12 : 60;
+    const leftPadding = useMemo(() => (props.leftPadding ? props.leftPadding + 12 : 60), [props.leftPadding]);
 
     return (
         <Styled.SubNavList {...{ ...restProps, leftPadding }}>
