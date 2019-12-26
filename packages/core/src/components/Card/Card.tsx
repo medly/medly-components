@@ -4,7 +4,7 @@ import { WithStyle } from '@medly-components/utils';
 import * as Styled from './Card.styled';
 import { Props } from './types';
 
-export const Card: SFC<Props> & WithStyle = React.memo(props => <Styled.Card {...props}>{props.children}</Styled.Card>);
+export const Card: SFC<Props> & WithStyle = React.memo(props => <Styled.Card {...props} />);
 Card.defaultProps = {
     variant: 'outlined',
     flowDirection: 'vertical',
