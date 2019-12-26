@@ -2,44 +2,50 @@ import { TestUtils } from '@medly-components/utils';
 import React from 'react';
 import { Modal } from './Modal';
 
+const renderer = ({
+    open = false,
+    onCloseModal = jest.fn(),
+    minWidth,
+    minHeight
+}: {
+    minWidth?: string;
+    minHeight?: string;
+    open?: boolean;
+    onCloseModal?: () => void;
+}) =>
+    TestUtils.render(
+        <Modal {...{ open, onCloseModal, minHeight, minWidth }}>
+            <Modal.Header>
+                <p>Demo Header</p>
+            </Modal.Header>
+            <Modal.Content>Demo Content</Modal.Content>
+            <Modal.Actions>Demo Actions</Modal.Actions>
+        </Modal>
+    );
 describe('Modal component', () => {
-    const onCloseHandler = jest.fn();
+    afterEach(TestUtils.cleanup);
 
     it('should render properly when it is open', () => {
-        const { container } = TestUtils.render(
-            <Modal open onCloseModal={onCloseHandler}>
-                <Modal.Header>
-                    <p>Demo Header</p>
-                </Modal.Header>
-                <Modal.Content>Demo Content</Modal.Content>
-                <Modal.Actions>Demo Actions</Modal.Actions>
-            </Modal>
-        );
+        const { container } = renderer({ open: true, minWidth: '200px', minHeight: '200px' });
         expect(container).toMatchSnapshot();
     });
 
     it('should not render when open prop is falsy', () => {
-        const { container } = TestUtils.render(
-            <Modal onCloseModal={onCloseHandler}>
-                <Modal.Header>
-                    <h1>Demo Header</h1>
-                </Modal.Header>
+        const { container } = renderer({});
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should call onCloseModal', () => {
+        const mockOnCloseModal = jest.fn();
+        const { container, getByTestId } = TestUtils.render(
+            <Modal open onCloseModal={mockOnCloseModal}>
+                <Modal.Header>Demo Header</Modal.Header>
                 <Modal.Content>Demo Content</Modal.Content>
                 <Modal.Actions>Demo Actions</Modal.Actions>
             </Modal>
         );
         expect(container).toMatchSnapshot();
-    });
-
-    it('should call onCloseHandler', () => {
-        const { getByTestId } = TestUtils.render(
-            <Modal open onCloseModal={onCloseHandler}>
-                <Modal.Header>Add User</Modal.Header>
-                <Modal.Content>Demo Content</Modal.Content>
-                <Modal.Actions>Demo Actions</Modal.Actions>
-            </Modal>
-        );
         TestUtils.fireEvent.click(getByTestId('modal-close-button'));
-        expect(onCloseHandler).toBeCalled();
+        expect(mockOnCloseModal).toBeCalled();
     });
 });

@@ -11,8 +11,8 @@ export const Popup = styled('div')<Props>`
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    min-width: ${({ minWidth }) => (minWidth ? minWidth : `50%`)};
-    min-height: ${({ minHeight }) => (minHeight ? minHeight : `auto`)};
+    min-width: ${({ minWidth }) => minWidth || `50%`};
+    min-height: ${({ minHeight }) => minHeight || `auto`};
 `;
 
 Popup.defaultProps = {
