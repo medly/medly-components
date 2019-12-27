@@ -2892,16 +2892,16 @@
     util-deprecate "^1.0.2"
 
 "@storybook/addon-knobs@^5.1.0-alpha.27":
-  version "5.2.6"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-5.2.6.tgz#28b2c74ea26519fef204915142a03bd7476f247c"
-  integrity sha512-whEZl6PpUPtOWBhmWlZ11EloxN6ad3WrJk5FyYlg3BcXG/HtlMVogBKdch83SYTT9jhHwbfwKnAng9J3UjgPbQ==
+  version "5.2.8"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-5.2.8.tgz#e0d03823969921a0da57a329376d03066dd749ee"
+  integrity sha512-5SAMJj+0pbhCiyNkKjkUxEbM9L/wrOE4HTvM7gvm902fULuKZklb3wV8iiUNRfIPCs6VhmmIhPzXICGjhW5xIg==
   dependencies:
-    "@storybook/addons" "5.2.6"
-    "@storybook/api" "5.2.6"
-    "@storybook/client-api" "5.2.6"
-    "@storybook/components" "5.2.6"
-    "@storybook/core-events" "5.2.6"
-    "@storybook/theming" "5.2.6"
+    "@storybook/addons" "5.2.8"
+    "@storybook/api" "5.2.8"
+    "@storybook/client-api" "5.2.8"
+    "@storybook/components" "5.2.8"
+    "@storybook/core-events" "5.2.8"
+    "@storybook/theming" "5.2.8"
     "@types/react-color" "^3.0.1"
     copy-to-clipboard "^3.0.8"
     core-js "^3.0.1"
@@ -3153,7 +3153,7 @@
   dependencies:
     core-js "^3.0.1"
 
-"@storybook/components@5.2.6", "@storybook/components@^5.2.5":
+"@storybook/components@5.2.6":
   version "5.2.6"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-5.2.6.tgz#cddb60227720aea7cae34fe782d0370bcdbd4005"
   integrity sha512-C7OS90bZ1ZvxlWUZ3B2MPFFggqAtUo7X8DqqS3IwsuDUiK9dD/KS0MwPgOuFDnOTW1R5XqmQd/ylt53w3s/U5g==
