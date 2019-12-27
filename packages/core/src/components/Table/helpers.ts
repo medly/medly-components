@@ -8,11 +8,19 @@ export const addSizeToColumnConfig = (columnConfigs: ColumnConfig[]): ColumnConf
             : { ...config, size: config.hide ? `minmax(0px, 0px)` : columnsWidth[config.formatter] };
     });
 };
-const getCumulativeTemplate = (configs: ColumnConfig[]) => {
-    const cumulativeSize = configs.reduce((acc, curr) => acc.map((val, index) => val + Number(curr.size.match(/\d+(\.\d*)?/g)[index])), [
-        0,
-        0
-    ]);
+
+const getCumulativeTemplate = (configs: ColumnConfig[]): string => {
+    const cumulativeSize = configs.reduce(
+        (acc, curr) =>
+            acc.map(
+                (val, index) =>
+                    val +
+                    (curr.children
+                        ? Number(getCumulativeTemplate(curr.children).match(/\d+(\.\d*)?/g)[index])
+                        : Number(curr.size.match(/\d+(\.\d*)?/g)[index]))
+            ),
+        [0, 0]
+    );
     return `minmax(${cumulativeSize[0]}px, ${cumulativeSize[1]}fr)`;
 };
 
@@ -20,14 +28,14 @@ export const getGridTemplateColumns = (configs: ColumnConfig[]) =>
     configs.reduce((acc, curr) => (curr.children ? `${acc} ${getCumulativeTemplate(curr.children)}` : `${acc} ${curr.size}`), ``);
 
 export const changeSize = (width: number, dottedField: string, columnConfigs: ColumnConfig[]) => {
-    const newColumnConfigs = [...columnConfigs];
-    const fields = dottedField.split('.');
-    const index = columnConfigs.findIndex(config => config.field === fields[0]);
+    const newColumnConfigs = [...columnConfigs],
+        [currField, nextField] = dottedField.split(/\.(.+)/),
+        index = columnConfigs.findIndex(config => config.field === currField);
 
     if (index >= 0) {
         const config = { ...newColumnConfigs[index] };
-        if (config.children && fields[1]) {
-            config.children = changeSize(width, fields[1], config.children);
+        if (config.children && nextField) {
+            config.children = changeSize(width, nextField, config.children);
         } else if (width < 75) {
             config.size = columnsWidth[config.formatter];
         } else if (width > 900) {
