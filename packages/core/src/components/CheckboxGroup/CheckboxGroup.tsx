@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { SFC, useCallback } from 'react';
 import Checkbox from '../Checkbox';
 import FieldWithLabel from '../FieldWithLabel';
 import { Props } from './types';
@@ -20,16 +20,19 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(props => {
         fullWidth
     } = props;
 
-    const handleOptionClick = (event: React.ChangeEvent<HTMLInputElement>) => {
-            const item = event.target.name,
-                isChecked = event.target.checked,
-                newValues = isChecked ? [...values, item] : values.filter(vl => vl !== item);
-            onChange(newValues);
-        },
-        handleSelectAllClick = () => {
+    const handleOptionClick = useCallback(
+            (event: React.ChangeEvent<HTMLInputElement>) => {
+                const item = event.target.name,
+                    isChecked = event.target.checked,
+                    newValues = isChecked ? [...values, item] : values.filter(vl => vl !== item);
+                onChange(newValues);
+            },
+            [values, onChange]
+        ),
+        handleSelectAllClick = useCallback(() => {
             const newValues = options.length === values.length ? [] : options.map(option => option.value);
             onChange(newValues);
-        };
+        }, [options, values, onChange]);
 
     return (
         <FieldWithLabel fullWidth {...{ fullWidth, labelPosition }}>

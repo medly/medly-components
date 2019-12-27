@@ -1,5 +1,5 @@
 import { useOuterClickNotifier, WithStyle } from '@medly-components/utils';
-import React, { SFC, useRef, useState } from 'react';
+import React, { SFC, useCallback, useRef, useState } from 'react';
 import BottomList from './BottomList';
 import NavIcon from './NavIcon';
 import NavItem from './NavItem';
@@ -18,15 +18,18 @@ export const SideNav: SFC<SideNavProps> & WithStyle & SideNavStaticProps = props
         [open, setOpenState] = useState(false),
         [activeItem, setActiveItem] = useState(defaultActive || '');
 
-    const burgerIconClickHandler = () => setOpenState(!open),
-        sidenavOpenHandler = () => {
+    const burgerIconClickHandler = useCallback(() => setOpenState(val => !val), []),
+        sidenavOpenHandler = useCallback(() => {
             !open && setOpenState(true);
-        };
+        }, [open]);
 
-    const handleOnActiveChange = (key: string) => {
-        !active && setActiveItem(key);
-        onChange && onChange(key);
-    };
+    const handleOnActiveChange = useCallback(
+        (key: string) => {
+            !active && setActiveItem(key);
+            onChange && onChange(key);
+        },
+        [active, onChange]
+    );
 
     useOuterClickNotifier(() => {
         closeOnOuterClick && setOpenState(false);

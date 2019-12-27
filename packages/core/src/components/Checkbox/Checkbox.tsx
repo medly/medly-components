@@ -1,6 +1,6 @@
 import { CheckIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { SFC, useCallback } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import { CheckboxFillStyled, CheckboxStyled, CheckboxWrapperStyled } from './Checkbox.styled';
 import { Props } from './types';
@@ -9,10 +9,13 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { size, label, required, labelPosition, labelSize, labelWeight, labelColor, fullWidth, onChange, ...restProps } = props;
 
-        const changeHandler = (e: any) => {
-            e.stopPropagation();
-            onChange && onChange(e);
-        };
+        const changeHandler = useCallback(
+            (e: any) => {
+                e.stopPropagation();
+                onChange && onChange(e);
+            },
+            [onChange]
+        );
 
         return (
             <FieldWithLabel fieldWithMaxContent {...{ fullWidth, labelPosition }}>

@@ -1,42 +1,29 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import Checkbox from '../../Checkbox';
 import CheckboxGroup from '../../CheckboxGroup';
 import { ColumnConfig } from '../types';
+import changeFieldValue from './changeFieldValue';
 import { Props } from './types';
 
-const TableSelectableColumns: React.SFC<Props> = ({ columns, fieldToChange, onChange }) => {
-    const changeFieldValue = (dottedField: string, configs: ColumnConfig[], state = false): ColumnConfig[] => {
-        return configs.map(config => {
-            if (!dottedField.includes('.') && config.field === dottedField) return { ...config, [fieldToChange]: state };
-            if (config.field === dottedField.split('.')[0] && config.children) {
-                return {
-                    ...config,
-                    children: changeFieldValue(dottedField.substring(dottedField.indexOf('.') + 1), config.children, state)
-                };
-            }
-            return config;
-        });
-    };
-
-    const handleCheckboxClick = (field: string, state: boolean) => () => {
-        const newConfig = changeFieldValue(field, columns, state);
-        onChange(newConfig);
-    };
+const TableSelectableColumns: React.SFC<Props> = React.memo(({ columns, fieldToChange, onChange }) => {
+    const handleCheckboxClick = useCallback(
+        (field: string, state: boolean) => () => onChange(changeFieldValue(field, columns, state, fieldToChange)),
+        [columns, fieldToChange, onChange]
+    );
 
     const handleCheckboxGroupClick = (field: string) => (fields: string[]) => {
         const columnConfigOfSelectedGroup = columns.find(cc => cc.field === field);
 
         let newConfig = columnConfigOfSelectedGroup.children.reduce(
             (acc: ColumnConfig[], curr: ColumnConfig) => {
-                return changeFieldValue(`${field}.${curr.field}`, acc, fields.includes(curr.field));
+                return changeFieldValue(`${field}.${curr.field}`, acc, fields.includes(curr.field), fieldToChange);
             },
             [...columns]
         );
-
-        newConfig = changeFieldValue(field, newConfig, fields.length === columnConfigOfSelectedGroup.children.length);
-
+        newConfig = changeFieldValue(field, newConfig, fields.length === columnConfigOfSelectedGroup.children.length, fieldToChange);
         onChange(newConfig);
     };
+
     const checkBoxes = (configs: ColumnConfig[], field: string = '') =>
         configs.map(config => {
             const dottedField = field ? `${field}.${config.field}` : config.field;
@@ -72,6 +59,6 @@ const TableSelectableColumns: React.SFC<Props> = ({ columns, fieldToChange, onCh
         });
 
     return <>{checkBoxes(columns)}</>;
-};
+});
 
 export default TableSelectableColumns;

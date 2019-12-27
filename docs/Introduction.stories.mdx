@@ -37,27 +37,23 @@ Medly components provides numerous themable react components, each with multiple
 ```sh
 npx create-react-app medly-components-demo --typescript
 cd medly-components-demo
-npm i styled-components
+npm i styled-components @types/react @types/react-dom @types/styled-components
 npm i @medly-components/theme @medly-components/utils @medly-components/icons @medly-components/core @medly-components/layout @medly-components/loaders
 ```
 
 Replace content of `index.tsx` with the following:
 
 ```tsx
-import { store } from '@store';
-import { defaultTheme } from '@theme';
-import { ThemeProvider } from '@utils';
+import { defaultTheme } from '@medly-components/theme';
+import { ThemeProvider } from 'styled-components';
 import React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
 import App from './App';
 
 ReactDOM.render(
-    <Provider store={store}>
-        <ThemeProvider theme={defaultTheme}>
-            <App />
-        </ThemeProvider>
-    </Provider>,
+    <ThemeProvider theme={defaultTheme}>
+        <App />
+    </ThemeProvider>,
     document.getElementById('root')
 );
 ```
@@ -65,13 +61,16 @@ ReactDOM.render(
 Replace content in `App.tsx` with the following:
 
 ```tsx
-const App: React.FC = () => (
-    <div>
-        <Button variant="flat" color="primary">
-            Click me!
-        </Button>
-    </div>
+import React from 'react';
+import { Button } from '@medly-components/core';
+
+const App: React.SFC = () => (
+    <Button variant="flat" color="primary">
+        Click me!
+    </Button>
 );
+
+export default App;
 ```
 
 ## Packages

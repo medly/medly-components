@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 
 type Result = [
     { value: number[]; setValue: React.Dispatch<React.SetStateAction<number[]>>; isAllSelected: boolean },
@@ -10,20 +10,25 @@ const useRowSelector = (initialIds: number[], initialSelectedIds: number[]): Res
     const [ids, setIds] = useState<number[]>(initialIds),
         [selectedIds, setSelectedIds] = useState(initialSelectedIds);
 
-    function toggleId(id: number) {
-        if (id === -1) {
-            selectedIds.length === ids.length ? setSelectedIds([]) : setSelectedIds(ids);
-        } else {
-            const newSelectedIds = selectedIds.indexOf(id) === -1 ? [...selectedIds, id] : selectedIds.filter(i => i !== id);
-            setSelectedIds(newSelectedIds);
-        }
-    }
+    const toggleId = useCallback(
+        (id: number) => {
+            setSelectedIds(sIds => {
+                if (id === -1) {
+                    return sIds.length === ids.length ? [] : ids;
+                }
+                return sIds.indexOf(id) === -1 ? [...sIds, id] : sIds.filter(i => i !== id);
+            });
+        },
+        [ids]
+    );
 
-    return [
-        { value: ids, setValue: setIds, isAllSelected: ids.length > 0 && ids.length === selectedIds.length },
-        { value: selectedIds, setValue: setSelectedIds },
-        toggleId
-    ];
+    const idsHookValues = useMemo(
+            () => ({ value: ids, setValue: setIds, isAllSelected: ids.length > 0 && ids.length === selectedIds.length }),
+            [ids, selectedIds]
+        ),
+        selectedIdsHookValues = useMemo(() => ({ value: selectedIds, setValue: setSelectedIds }), [selectedIds]);
+
+    return [idsHookValues, selectedIdsHookValues, toggleId];
 };
 
 export default useRowSelector;

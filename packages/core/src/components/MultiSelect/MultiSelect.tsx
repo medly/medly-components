@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useEffect, useState } from 'react';
+import React, { SFC, useCallback, useEffect, useState } from 'react';
 import Chip from '../Chip';
 import FieldWithLabel from '../FieldWithLabel';
 import Input from '../Input';
@@ -29,31 +29,40 @@ export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
             setPlaceholder(selectedOptions.length > 0 ? `${selectedOptions.length} options selected` : props.placeholder);
         }, [selectedOptions]);
 
-        const updateToDefaultOptions = () => setOptions(props.options);
+        const updateToDefaultOptions = useCallback(() => setOptions(props.options), [props.options]);
 
-        const handleWrapperClick = () => {
+        const handleWrapperClick = useCallback(() => {
                 setInputValue('');
                 updateToDefaultOptions();
-            },
-            handleInputClick = (e: React.MouseEvent<HTMLInputElement>) => {
-                // @ts-ignore
-                e.target.setSelectionRange(inputValue.length, inputValue.length);
-            },
-            handleInputChange = ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
-                setInputValue(value);
-                const newOptions = filterOptions(options, value);
-                newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
-            },
-            handleOptionClick = (values: any[]) => {
-                setInputValue('');
-                const selected = getDefaultSelectedOptions(options, values);
-                setSelectedOptions(selected);
-                props.onChange && props.onChange(values);
-            },
-            handleOuterClick = () => {
+            }, [updateToDefaultOptions]),
+            handleInputClick = useCallback(
+                (e: React.MouseEvent<HTMLInputElement>) => {
+                    // @ts-ignore
+                    e.target.setSelectionRange(inputValue.length, inputValue.length);
+                },
+                [inputValue]
+            ),
+            handleInputChange = useCallback(
+                ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
+                    setInputValue(value);
+                    const newOptions = filterOptions(options, value);
+                    newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
+                },
+                [options, updateToDefaultOptions]
+            ),
+            handleOptionClick = useCallback(
+                (values: any[]) => {
+                    setInputValue('');
+                    const selected = getDefaultSelectedOptions(options, values);
+                    setSelectedOptions(selected);
+                    props.onChange && props.onChange(values);
+                },
+                [options, props.onChange]
+            ),
+            handleOuterClick = useCallback(() => {
                 updateToDefaultOptions();
                 setInputValue('');
-            },
+            }, []),
             handleChipDelete = (value: any) => () => {
                 setInputValue('');
                 const newSelectedOptions = selectedOptions.filter(so => so.value !== value).map(op => op.value);

@@ -1,6 +1,6 @@
 import { ClearIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { SFC, useCallback } from 'react';
 import Text from '../Text';
 import * as Styled from './Chip.styled';
 import { Props } from './types';
@@ -8,10 +8,13 @@ import { Props } from './types';
 export const Chip: SFC<Props> & WithStyle = React.memo(props => {
     const { label, onDelete, ...restProps } = props;
 
-    const handleDelete = (e: React.MouseEvent<HTMLOrSVGElement>) => {
-        e.stopPropagation();
-        !restProps.disabled && onDelete && onDelete();
-    };
+    const handleDelete = useCallback(
+        (e: React.MouseEvent<HTMLOrSVGElement>) => {
+            e.stopPropagation();
+            !restProps.disabled && onDelete && onDelete();
+        },
+        [restProps.disabled, onDelete]
+    );
 
     return (
         <Styled.Chip {...restProps}>

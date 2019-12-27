@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import Text from '../../Text';
 import Cell from '../Cell';
 import { GroupCell } from '../GroupCell';
@@ -14,35 +14,30 @@ const Body: React.SFC<Props> = React.memo(props => {
         return onRowClick && !rowData[rowDisableKey] ? () => onRowClick(rowData) : undefined;
     };
 
-    const getRow = (rowData: any = {}, configs: ColumnConfig[] = columns, field = '') => {
-        const cells: React.ReactElement[] = [];
+    const getRow = useCallback(
+        (rowData: any = {}, configs: ColumnConfig[] = columns, field = '') =>
+            configs.map((config, index) => {
+                const fieldName = `${field && `${field}.`}${config.field}`;
 
-        configs.forEach((config, index) => {
-            if (!config) return null;
-
-            const fieldName = `${field && `${field}.`}${config.field}`;
-
-            return config.children
-                ? cells.push(
-                      <GroupCell key={index} hide={config.hide} gridTemplateColumns={getGridTemplateColumns(config.children)}>
-                          {getRow(rowData[config.field], config.children, config.field)}
-                      </GroupCell>
-                  )
-                : cells.push(
-                      <Cell
-                          isLoading={isLoading}
-                          disabled={rowData[rowDisableKey]}
-                          key={index}
-                          data={rowData[config.field]}
-                          rowId={rowData[uniqueKeyName]}
-                          dottedFieldName={fieldName}
-                          {...{ config, selectedRows, onRowSelection, addColumnMaxSize }}
-                      />
-                  );
-        });
-
-        return cells;
-    };
+                return config.children ? (
+                    <GroupCell key={index} hide={config.hide} gridTemplateColumns={getGridTemplateColumns(config.children)}>
+                        {getRow(rowData[config.field], config.children, config.field)}
+                    </GroupCell>
+                ) : (
+                    <Cell
+                        isLoading={isLoading}
+                        disabled={rowData[rowDisableKey]}
+                        key={index}
+                        data={rowData[config.field]}
+                        rowId={rowData[uniqueKeyName]}
+                        dottedFieldName={fieldName}
+                        isRowSelected={selectedRows.includes(rowData[uniqueKeyName])}
+                        {...{ config, onRowSelection, addColumnMaxSize }}
+                    />
+                );
+            }),
+        [columns, isLoading, rowDisableKey, uniqueKeyName, selectedRows, onRowSelection, addColumnMaxSize]
+    );
 
     if (data.length === 0) {
         return (
@@ -69,5 +64,5 @@ const Body: React.SFC<Props> = React.memo(props => {
         </>
     );
 });
-
+Body.displayName = 'Body';
 export default Body;

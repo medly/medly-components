@@ -25,7 +25,7 @@ export interface FieldStyledProps {
 }
 
 export interface StaticProps {
-    Field: StyledComponent<'div', Theme, FieldStyledProps>;
-    Label: StyledComponent<typeof Label, Theme>;
-    Description: StyledComponent<typeof Text, Theme>;
+    Field?: StyledComponent<'div', Theme, FieldStyledProps>;
+    Label?: StyledComponent<typeof Label, Theme>;
+    Description?: StyledComponent<typeof Text, Theme>;
 }

@@ -3,11 +3,11 @@ import React, { SFC } from 'react';
 import PrescriptionSvg from '../assets/Prescription.svg';
 import SvgIcon, { Props } from '../SvgIcon';
 
-export const PrescriptionIcon: SFC<Props> & WithStyle = props => (
+export const PrescriptionIcon: SFC<Props> & WithStyle = React.memo(props => (
     <SvgIcon {...props}>
         <PrescriptionSvg {...props} width="1em" height="1em" />
     </SvgIcon>
-);
+));
 
 PrescriptionIcon.Style = SvgIcon;
 PrescriptionIcon.displayName = 'PrescriptionIcon';

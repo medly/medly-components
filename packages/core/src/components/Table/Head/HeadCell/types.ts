@@ -4,7 +4,7 @@ export interface HeadCellProps {
     hide?: boolean;
     frozen?: boolean;
     field?: string;
-    maxColumnSizes: { [k: string]: number };
+    columnMaxSize: number;
     enableSorting?: boolean;
     fitContent?: boolean;
     sortField?: string;

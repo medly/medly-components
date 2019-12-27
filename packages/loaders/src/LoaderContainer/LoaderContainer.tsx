@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Styled from './LoaderContainer.styled';
 
-export const LoaderContainer: React.SFC = props => {
+export const LoaderContainer: React.SFC = React.memo(props => {
     return (
         <Styled.List>
             {React.Children.map(props.children, (child: any) => (
@@ -12,4 +12,5 @@ export const LoaderContainer: React.SFC = props => {
             ))}
         </Styled.List>
     );
-};
+});
+LoaderContainer.displayName = 'LoaderContainer';

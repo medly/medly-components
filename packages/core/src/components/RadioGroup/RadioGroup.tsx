@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { SFC, useCallback } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import Radio from '../Radio';
 import { Props } from './types';
@@ -21,10 +21,13 @@ export const RadioGroup: SFC<Props> & WithStyle = React.memo(props => {
         labelColor
     } = props;
 
-    const handleOnChange = (event: React.FormEvent<HTMLInputElement>) => {
-        const target = event.target as HTMLInputElement;
-        onChange && onChange(target.value);
-    };
+    const handleOnChange = useCallback(
+        (event: React.FormEvent<HTMLInputElement>) => {
+            const target = event.target as HTMLInputElement;
+            onChange && onChange(target.value);
+        },
+        [onChange]
+    );
     return (
         <FieldWithLabel fullWidth {...{ fullWidth, labelPosition }}>
             {label && (

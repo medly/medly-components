@@ -1,7 +1,7 @@
 import { TestUtils } from '@medly-components/utils';
 import React from 'react';
 import Text from '../Text';
-import { Card } from './Card.styled';
+import { Card } from './Card';
 
 describe('Card component', () => {
     it('should render correctly with all the default props', () => {
@@ -73,17 +73,17 @@ describe('Card component', () => {
 
     it('should render properly when separator is set true flow direction is vertical', () => {
         const { container } = TestUtils.render(
-            <Card separator flowDirection="vertical" alignItems="left">
-                <Card variant="flat">
+            <Card separator withPadding flowDirection="vertical" alignItems="left">
+                <Card variant="flat" flowDirection="vertical" alignItems="left">
                     <Text>Marks</Text>
                 </Card>
-                <Card variant="flat" flex={6} alignItems="right">
+                <Card variant="flat" flex={6} flowDirection="vertical" alignItems="right">
                     <Text>Dummy Text</Text>
                 </Card>
-                <Card variant="flat" flex={6} alignItems="top">
+                <Card variant="flat" flex={6} flowDirection="vertical" alignItems="top">
                     <Text>Dummy Text</Text>
                 </Card>
-                <Card variant="flat" flex={6} alignItems="bottom">
+                <Card variant="flat" flex={6} flowDirection="vertical" alignItems="bottom">
                     <Text>Dummy Text</Text>
                 </Card>
             </Card>

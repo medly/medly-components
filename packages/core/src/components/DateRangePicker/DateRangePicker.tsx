@@ -1,5 +1,5 @@
 import { DateRangeInput, OnDatesChangeProps } from '@datepicker-react/styled';
-import React, { SFC, useState } from 'react';
+import React, { SFC, useCallback, useState } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import { DateRangePickerStyled } from './DateRangePicker.styled';
 import { Props } from './types';
@@ -9,15 +9,18 @@ export const DateRangePicker: SFC<Props> = React.memo(props => {
     const [date, setDate] = useState(value || { startDate: null, endDate: null });
     const [showDatepicker, setShowDatepicker] = useState(null);
 
-    const handleDateChange = ({ startDate, endDate, focusedInput }: OnDatesChangeProps) => {
-            setDate({ startDate, endDate });
-            setShowDatepicker(focusedInput);
-            onChange && onChange({ startDate, endDate });
-        },
-        handleClick = (event: React.MouseEvent) => {
+    const handleDateChange = useCallback(
+            ({ startDate, endDate, focusedInput }: OnDatesChangeProps) => {
+                setDate({ startDate, endDate });
+                setShowDatepicker(focusedInput);
+                onChange && onChange({ startDate, endDate });
+            },
+            [onChange]
+        ),
+        handleClick = useCallback((event: React.MouseEvent) => {
             event.preventDefault();
             event.stopPropagation();
-        };
+        }, []);
 
     return (
         <FieldWithLabel {...{ labelPosition, fullWidth, minWidth }}>

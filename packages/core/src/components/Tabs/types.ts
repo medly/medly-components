@@ -4,8 +4,11 @@ import { Props as TabListProps } from './TabList/types';
 import { Props as TabPanelProps } from './TabPanel/types';
 
 export interface Props extends HTMLProps<HTMLDivElement> {
+    /** Id of the default active tab */
     defaultActive?: any;
+    /** Id of the active tab */
     active?: any;
+    /**  Function to be called on selecting any tab */
     onChange?: (id: any) => void;
 }
 

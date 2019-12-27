@@ -1,14 +1,13 @@
 import { DownArrowIcon, DropDownIcon, UpArrowIcon } from '@medly-components/icons';
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Text from '../../../Text';
 import { HeadCellStyled, ResizeHandlerStyled } from './HeadCell.styled';
 import { HeadCellProps } from './types';
 
-const HeadCell: React.SFC<HeadCellProps> & WithStyle = props => {
+const HeadCell: React.SFC<HeadCellProps> & WithStyle = React.memo(props => {
     let pageX: number;
-    const { frozen, enableSorting, children, hide, field, sortField, onSortChange, onWidthChange, maxColumnSizes } = props,
-        columnMaxSize = maxColumnSizes[field];
+    const { frozen, enableSorting, children, hide, field, sortField, onSortChange, onWidthChange, columnMaxSize } = props;
 
     const cellEl = useRef(null),
         [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>('none');
@@ -30,11 +29,11 @@ const HeadCell: React.SFC<HeadCellProps> & WithStyle = props => {
         });
     };
 
-    const handleSortIconClick = () => {
+    const handleSortIconClick = useCallback(() => {
         const order = sortState === 'asc' ? 'desc' : 'asc';
         setSortState(order);
         onSortChange(field, order);
-    };
+    }, [sortState, field]);
 
     const onMouseUp = () => {
         window.removeEventListener('mousemove', onMouseMove);
@@ -49,19 +48,25 @@ const HeadCell: React.SFC<HeadCellProps> & WithStyle = props => {
         document.querySelector('body').style.cursor = 'ew-resize';
     };
 
-    const handleDoubleClick = (e: React.MouseEvent) => {
-        e.preventDefault();
-        onWidthChange(columnMaxSize, field);
-    };
+    const handleDoubleClick = useCallback(
+        (e: React.MouseEvent) => {
+            e.preventDefault();
+            onWidthChange(columnMaxSize, field);
+        },
+        [columnMaxSize, field]
+    );
 
-    const sortIcon =
-        sortField !== field ? (
-            <DropDownIcon size="XS" onClick={handleSortIconClick} />
-        ) : sortState === 'desc' ? (
-            <DownArrowIcon size="XS" onClick={handleSortIconClick} />
-        ) : (
-            <UpArrowIcon size="XS" onClick={handleSortIconClick} />
-        );
+    const sortIcon = useMemo(
+        () =>
+            sortField !== field ? (
+                <DropDownIcon size="XS" onClick={handleSortIconClick} />
+            ) : sortState === 'desc' ? (
+                <DownArrowIcon size="XS" onClick={handleSortIconClick} />
+            ) : (
+                <UpArrowIcon size="XS" onClick={handleSortIconClick} />
+            ),
+        [sortField, field, sortState]
+    );
 
     return (
         <HeadCellStyled ref={cellEl} frozen={frozen} hide={hide}>
@@ -78,7 +83,7 @@ const HeadCell: React.SFC<HeadCellProps> & WithStyle = props => {
             <ResizeHandlerStyled onMouseDown={initResize} onDoubleClick={handleDoubleClick} />
         </HeadCellStyled>
     );
-};
+});
 
 HeadCell.displayName = 'HeadCell';
 HeadCell.Style = HeadCellStyled;

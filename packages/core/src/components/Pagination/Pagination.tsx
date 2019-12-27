@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { SFC, useMemo } from 'react';
 import Button from '../Button';
 import List from '../List';
 import { paginator } from './helper';
@@ -8,7 +8,12 @@ import { PaginationProps } from './types';
 export const Pagination: SFC<PaginationProps> & WithStyle = React.memo(props => {
     const links = [];
     const { hideFirstLastLinks, hidePrevNextLinks, activePage, itemsPerPage, totalItems, pageRangeDisplayed, onPageClick } = props;
-    const pagesConfig = paginator(totalItems, activePage, itemsPerPage, pageRangeDisplayed);
+    const pagesConfig = useMemo(() => paginator(totalItems, activePage, itemsPerPage, pageRangeDisplayed), [
+        totalItems,
+        activePage,
+        itemsPerPage,
+        pageRangeDisplayed
+    ]);
 
     const onClickHandler = (page: number) => () => {
         onPageClick(page);

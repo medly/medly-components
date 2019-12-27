@@ -21,5 +21,5 @@ export const Tab: React.SFC<Props> & WithStyle = React.memo(props => {
         </Styled.Button>
     );
 });
-
+Tab.displayName = 'Tab';
 Tab.Style = Styled.Button;

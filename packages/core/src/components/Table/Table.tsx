@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useEffect, useMemo, useReducer, useState } from 'react';
+import React, { SFC, useCallback, useEffect, useMemo, useReducer, useState } from 'react';
 import Body from './Body';
 import Head from './Head';
 import { addSizeToColumnConfig } from './helpers';
@@ -10,16 +10,16 @@ import { ColumnConfig, Props, StaticProps } from './types';
 import useRowSelector from './useRowSelector';
 
 const loadingBodyData = [{ id: 0 }, { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }];
+const checkboxColumnConfig: ColumnConfig = {
+    title: 'ch',
+    field: 'medly-table-checkbox',
+    formatter: 'checkbox',
+    hide: false,
+    frozen: true
+};
 
-export const Table: SFC<Props> & WithStyle & StaticProps = props => {
-    const { data, onRowClick, onSort, uniqueKeyName, rowDisableKey, isSelectable, selectedRows, onRowSelection, isLoading } = props,
-        checkboxColumnConfig: ColumnConfig = {
-            title: 'ch',
-            field: 'medly-table-checkbox',
-            formatter: 'checkbox',
-            hide: !isSelectable,
-            frozen: true
-        };
+export const Table: SFC<Props> & WithStyle & StaticProps = React.memo(props => {
+    const { data, onRowClick, onSort, uniqueKeyName, rowDisableKey, isSelectable, selectedRows, onRowSelection, isLoading } = props;
 
     const [ids, selectedIds, toggleId] = useRowSelector(
             data.filter(dt => !dt[rowDisableKey]).map(dt => dt[uniqueKeyName]),
@@ -27,13 +27,14 @@ export const Table: SFC<Props> & WithStyle & StaticProps = props => {
         ),
         [isSelectAllDisable, setSelectAllDisableState] = useState(data.every(dt => dt[rowDisableKey])),
         [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
-        [columns, setColumns] = useState(addSizeToColumnConfig([checkboxColumnConfig, ...props.columns]));
+        [columns, setColumns] = useState(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns]));
 
-    const addColumnMaxSize = (field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' });
+    const addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]),
+        isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]);
 
     useEffect(() => {
-        setColumns(addSizeToColumnConfig([checkboxColumnConfig, ...props.columns]));
-    }, [props.columns]);
+        setColumns(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns]));
+    }, [props.columns, isSelectable]);
 
     useEffect(() => {
         ids.setValue(data.filter(dt => !dt[rowDisableKey]).map(dt => dt[uniqueKeyName]));
@@ -48,48 +49,35 @@ export const Table: SFC<Props> & WithStyle & StaticProps = props => {
         onRowSelection && onRowSelection(selectedIds.value);
     }, [selectedIds.value]);
 
-    const head = useMemo(
-            () => (
-                <Head
-                    {...{
-                        onSort,
-                        columns,
-                        setColumns,
-                        maxColumnSizes,
-                        onSelectAllClick: toggleId,
-                        isAllRowSelected: ids.isAllSelected,
-                        isSelectAllDisable: isLoading || isSelectAllDisable
-                    }}
-                />
-            ),
-            [columns, ids, isSelectAllDisable, isLoading]
-        ),
-        body = useMemo(
-            () => (
-                <Body
-                    {...{
-                        isLoading,
-                        columns,
-                        uniqueKeyName,
-                        rowDisableKey,
-                        addColumnMaxSize,
-                        selectedRows: selectedIds.value,
-                        onRowSelection: toggleId,
-                        data: isLoading ? loadingBodyData : data,
-                        onRowClick: !isLoading && onRowClick
-                    }}
-                />
-            ),
-            [columns, data, selectedIds, isLoading]
-        );
-
     return (
-        <TableStyled isRowClickable={onRowClick ? true : false}>
-            {head}
-            {body}
+        <TableStyled isRowClickable={isRowClickable}>
+            <Head
+                {...{
+                    onSort,
+                    columns,
+                    setColumns,
+                    maxColumnSizes,
+                    onSelectAllClick: toggleId,
+                    isAllRowSelected: ids.isAllSelected,
+                    isSelectAllDisable: isLoading || isSelectAllDisable
+                }}
+            />
+            <Body
+                {...{
+                    isLoading,
+                    columns,
+                    uniqueKeyName,
+                    rowDisableKey,
+                    addColumnMaxSize,
+                    selectedRows: selectedIds.value,
+                    onRowSelection: toggleId,
+                    data: isLoading ? loadingBodyData : data,
+                    onRowClick: !isLoading && onRowClick
+                }}
+            />
         </TableStyled>
     );
-};
+});
 
 Table.defaultProps = {
     uniqueKeyName: 'id',

@@ -20,5 +20,5 @@ export const TabPanel: React.SFC<Props> & WithStyle = React.memo(props => {
         </>
     );
 });
-
+TabPanel.displayName = 'TabPanel';
 TabPanel.Style = Styled.TabPanel;

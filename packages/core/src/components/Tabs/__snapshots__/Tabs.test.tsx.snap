@@ -1,5 +1,132 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Tabs should hide the tab if hide prop is given 1`] = `
+.c2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.c1 {
+  background-color: transparent;
+  border: none;
+  padding: 8px 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #FE8D6B;
+  border-bottom: 2px solid #FE8D6B;
+}
+
+.c1:hover {
+  cursor: pointer;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+}
+
+.c1 .c4 {
+  margin-bottom: 5px;
+}
+
+.c1 .c4 * {
+  fill: #FE8D6B;
+}
+
+.c0 {
+  width: 100%;
+  background-color: #ffffff;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-shadow: 0 10px 10px -5px rgba(0,0,0,0.2);
+  overflow-x: auto;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c3 {
+  padding: 10px;
+  height: 100%;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="c0"
+    >
+      <button
+        aria-controls="panel-tab1"
+        aria-selected="true"
+        class="c1"
+        id="tab1"
+        role="tab"
+        tabindex="0"
+        type="button"
+      >
+        <span
+          class="c2"
+        >
+          Add
+        </span>
+      </button>
+    </div>
+    <div
+      aria-labelledby="tab1"
+      class="c3"
+      id="panel-tab1"
+      role="tabpanel"
+      tabindex="0"
+    >
+      Content for the add panel
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Tabs should not render when there is no children 1`] = `<div />`;
 
 exports[`Tabs should render properly without any prop 1`] = `
@@ -129,6 +256,7 @@ exports[`Tabs should render properly without any prop 1`] = `
 
 .c4 {
   padding: 10px;
+  height: 100%;
 }
 
 .c4:focus {
@@ -313,6 +441,7 @@ exports[`Tabs should select expected tab on click on any tab, when only defaultA
 
 .c4 {
   padding: 10px;
+  height: 100%;
 }
 
 .c4:focus {

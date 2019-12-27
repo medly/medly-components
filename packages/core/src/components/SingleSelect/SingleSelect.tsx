@@ -1,9 +1,9 @@
 import { useKeyPress, WithStyle } from '@medly-components/utils';
-import React, { SFC, useEffect, useRef, useState } from 'react';
+import React, { SFC, useCallback, useEffect, useRef, useState } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import Input from '../Input';
 import { Popover, PopoverWrapper } from '../Popover';
-import { filterOptions, getDefaultSelectedOption, getOptionsWithSelected } from './helpers';
+import { filterOptions, findNextOption, findPrevOption, getDefaultSelectedOption, getOptionsWithSelected } from './helpers';
 import Options from './Options';
 import { SelectIconStyled, SelectWrapperStyled } from './SingleSelect.styled';
 import { Option, SelectProps } from './types';
@@ -21,21 +21,28 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
             upPress = useKeyPress('ArrowUp'),
             enterPress = useKeyPress('Enter');
 
-        const updateToDefaultOptions = () => setOptions(getOptionsWithSelected(props.options, selectedOption));
+        const updateToDefaultOptions = useCallback(() => setOptions(getOptionsWithSelected(props.options, selectedOption)), [
+            props.options,
+            selectedOption
+        ]);
 
-        const handleWrapperClick = () => {
+        const handleWrapperClick = useCallback(() => {
                 setInputValue(selectedOption.label);
                 updateToDefaultOptions();
-            },
-            handleInputClick = (e: React.MouseEvent<HTMLInputElement>) => {
+            }, [selectedOption.label, updateToDefaultOptions]),
+            handleInputClick = useCallback(
                 // @ts-ignore
-                e.target.setSelectionRange(inputValue.length, inputValue.length);
-            },
-            handleInputChange = ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
-                setInputValue(value);
-                const newOptions = filterOptions(options, value);
-                newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
-            },
+                (e: React.MouseEvent<HTMLInputElement>) => e.target.setSelectionRange(inputValue.length, inputValue.length),
+                [inputValue]
+            ),
+            handleInputChange = useCallback(
+                ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
+                    setInputValue(value);
+                    const newOptions = filterOptions(options, value);
+                    newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
+                },
+                [options, updateToDefaultOptions]
+            ),
             handleOptionClick = (option: Option) => () => {
                 if (option.value !== selectedOption.value && !option.disabled) {
                     setInputValue(option.label);
@@ -44,10 +51,10 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                     props.onChange && props.onChange(option.value);
                 }
             },
-            handleOuterClick = () => {
+            handleOuterClick = useCallback(() => {
                 updateToDefaultOptions();
                 setInputValue(selectedOption.label);
-            };
+            }, [updateToDefaultOptions, updateToDefaultOptions]);
 
         useEffect(() => {
             const selected = getDefaultSelectedOption(props.options, props.value);
@@ -58,15 +65,13 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
 
         useEffect(() => {
             if (downPress && popoverRef.current.style.display === 'block') {
-                const index = options.findIndex(op => op.value === selectedOption.value);
-                handleOptionClick(index === options.length - 1 ? options[0] : options[index + 1])();
+                handleOptionClick(findNextOption(selectedOption, options))();
             }
         }, [downPress]);
 
         useEffect(() => {
             if (upPress && popoverRef.current.style.display === 'block') {
-                const index = options.findIndex(op => op.value === selectedOption.value);
-                handleOptionClick(index === 0 ? options[options.length - 1] : options[index - 1])();
+                handleOptionClick(findPrevOption(selectedOption, options))();
             }
         }, [upPress]);
 

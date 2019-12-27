@@ -5,18 +5,18 @@ import Text from '../../Text';
 import * as Styled from './Cell.styled';
 import { Props } from './types';
 
-const Cell: React.SFC<Props> & WithStyle = props => {
+const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
     const childRef = useRef(null),
-        { addColumnMaxSize, config, data, rowId, selectedRows, disabled, onRowSelection, dottedFieldName, isLoading } = props;
+        { addColumnMaxSize, config, data, rowId, isRowSelected, disabled, onRowSelection, dottedFieldName, isLoading } = props;
 
     useEffect(() => {
         if (childRef.current) {
             const size = childRef.current.clientWidth;
-            addColumnMaxSize(dottedFieldName, size);
+            !isLoading && addColumnMaxSize(dottedFieldName, size);
         }
     }, [childRef.current]);
 
-    const stopPropagation = (e: React.MouseEvent) => e.stopPropagation(),
+    const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
         handleRowSelection = (id: number) => (e: React.FormEvent<HTMLInputElement>) => onRowSelection(id);
 
     const rowSelectionCheckbox = useMemo(
@@ -24,13 +24,13 @@ const Cell: React.SFC<Props> & WithStyle = props => {
                 <Checkbox
                     disabled={disabled}
                     ref={childRef}
-                    checked={selectedRows.includes(rowId)}
+                    checked={isRowSelected}
                     onChange={handleRowSelection(rowId)}
                     onClick={stopPropagation}
                     name="active"
                 />
             ),
-            [selectedRows]
+            [disabled, isRowSelected]
         ),
         formatedCell = useCallback(() => {
             switch (config.formatter) {
@@ -72,7 +72,8 @@ const Cell: React.SFC<Props> & WithStyle = props => {
             {config.field === 'medly-table-checkbox' ? rowSelectionCheckbox : formatedCell()}
         </Styled.Cell>
     );
-};
+});
+Cell.displayName = 'Cell';
 Cell.Style = Styled.Cell;
 
 export default Cell;
