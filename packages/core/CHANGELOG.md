@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.8](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.7...@medly-components/core@1.0.0-beta.8) (2019-12-27)
+
+
+### Bug Fixes
+
+* **core:** fix modal outside click warning issue ([efff534](https://github.com/medlypharmacy/medly-components/commit/efff534b862c76065b0ffb9faa6f57bc2de9cb41))
+* **core:** fix modal popup height issue ([06bc903](https://github.com/medlypharmacy/medly-components/commit/06bc903a2ee8ac793eadbbc733386e9d036efdb9))
+* **core:** fix tab panel height issue ([0937ada](https://github.com/medlypharmacy/medly-components/commit/0937adade5084ba772765e30c0247e1bc09c1f4e))
+* **core:** upgrade datepicker-react/styled package version ([6e9e47f](https://github.com/medlypharmacy/medly-components/commit/6e9e47f1d4abf03b23f02d80027e27730f520afd))
+
+
+### Features
+
+* **core:** add hide tab feature in tabs component ([835c93f](https://github.com/medlypharmacy/medly-components/commit/835c93f97aa4157b1891fd4253acd8935d1f1e1b))
+
+
+### Performance Improvements
+
+* **core:** refactor core components to increase performance ([95f085d](https://github.com/medlypharmacy/medly-components/commit/95f085d3a9b37cd89707429981f920255d667aa8))
+* **core:** refactor to increase performance of table component ([190d006](https://github.com/medlypharmacy/medly-components/commit/190d0069abc5ea37ee1538c4224049933803291f))
+
+
+
+
+
 # [1.0.0-beta.7](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.6...@medly-components/core@1.0.0-beta.7) (2019-12-17)
 
 

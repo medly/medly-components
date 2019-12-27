@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.7](https://github.com/medlypharmacy/medly-components/compare/@medly-components/loaders@1.0.0-beta.6...@medly-components/loaders@1.0.0-beta.7) (2019-12-27)
+
+
+### Performance Improvements
+
+* **icons:** refactor icon components to increase performace ([1f81e60](https://github.com/medlypharmacy/medly-components/commit/1f81e60848704cc89bc43b854f7913ba5a8cd008))
+* **loaders:** refactor loader components to increase performance ([31ad897](https://github.com/medlypharmacy/medly-components/commit/31ad897af5be24565dfd663a9df300c1087d4cba))
+
+
+
+
+
 # [1.0.0-beta.6](https://github.com/medlypharmacy/medly-components/compare/@medly-components/loaders@1.0.0-beta.5...@medly-components/loaders@1.0.0-beta.6) (2019-12-17)
 
 **Note:** Version bump only for package @medly-components/loaders
