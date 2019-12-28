@@ -20,6 +20,13 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(props => {
         fullWidth
     } = props;
 
+    const optionsValue = options.reduce((acc, curr) => {
+        if (!Array.isArray(curr.value)) {
+            acc.push(curr.value);
+        }
+        return acc;
+    }, []);
+
     const handleOptionClick = useCallback(
             (event: React.ChangeEvent<HTMLInputElement>) => {
                 const item = event.target.name,
@@ -30,7 +37,9 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(props => {
             [values, onChange]
         ),
         handleSelectAllClick = useCallback(() => {
-            const newValues = options.length === values.length ? [] : options.map(option => option.value);
+            const newValues = optionsValue.every(val => values.includes(val))
+                ? values.filter(val => !optionsValue.includes(val))
+                : Array.from(new Set([...values, ...optionsValue]));
             onChange(newValues);
         }, [options, values, onChange]);
 

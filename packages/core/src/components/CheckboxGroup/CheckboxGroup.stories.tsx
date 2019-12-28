@@ -16,7 +16,14 @@ export const Basic = () => {
             options={[
                 { value: 'apple', label: 'Apple' },
                 { value: 'orange', label: 'Orange' },
-                { value: 'grapes', label: 'Grapes' }
+                { value: 'grapes', label: 'Grapes' },
+                {
+                    value: [
+                        { value: 'custardApple', label: 'Custard Apple' },
+                        { value: 'papaya', label: 'Papaya' }
+                    ],
+                    label: 'Group'
+                }
             ]}
             disabled={boolean('Disabled', false)}
             fullWidth={boolean('Full Width', false)}
