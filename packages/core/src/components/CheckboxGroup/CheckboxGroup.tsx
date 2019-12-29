@@ -1,7 +1,8 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback } from 'react';
+import React, { SFC, useCallback, useMemo } from 'react';
 import Checkbox from '../Checkbox';
 import FieldWithLabel from '../FieldWithLabel';
+import getValuesFromOptions from './getValuesFromOptions';
 import { Props } from './types';
 
 export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(props => {
@@ -20,15 +21,12 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(props => {
         fullWidth
     } = props;
 
-    const optionsValue = options.reduce((acc, curr) => {
-        if (!Array.isArray(curr.value)) {
-            acc.push(curr.value);
-        }
-        return acc;
-    }, []);
+    const allChildValues = useMemo(() => getValuesFromOptions(options), [options]),
+        areAllValuesSelected = useMemo(() => allChildValues.every(val => values.includes(val)), [options, values]);
 
     const handleOptionClick = useCallback(
             (event: React.ChangeEvent<HTMLInputElement>) => {
+                event.stopPropagation();
                 const item = event.target.name,
                     isChecked = event.target.checked,
                     newValues = isChecked ? [...values, item] : values.filter(vl => vl !== item);
@@ -37,9 +35,9 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(props => {
             [values, onChange]
         ),
         handleSelectAllClick = useCallback(() => {
-            const newValues = optionsValue.every(val => values.includes(val))
-                ? values.filter(val => !optionsValue.includes(val))
-                : Array.from(new Set([...values, ...optionsValue]));
+            const newValues = areAllValuesSelected
+                ? values.filter(val => !allChildValues.includes(val))
+                : Array.from(new Set([...values, ...allChildValues]));
             onChange(newValues);
         }, [options, values, onChange]);
 
@@ -52,7 +50,7 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(props => {
                             key="select-all"
                             {...{ size, disabled, labelSize, labelWeight, labelColor }}
                             label={label}
-                            checked={options.length === values.length}
+                            checked={areAllValuesSelected}
                             onChange={handleSelectAllClick}
                         />
                     ) : (
@@ -62,7 +60,16 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(props => {
             )}
             <FieldWithLabel.Field isIndented={labelPosition === 'top'}>
                 {options.map(option => {
-                    return (
+                    return Array.isArray(option.value) ? (
+                        <CheckboxGroup
+                            key={option.label}
+                            {...{
+                                ...props,
+                                options: option.value,
+                                label: option.label
+                            }}
+                        />
+                    ) : (
                         <Checkbox
                             size={size}
                             key={option.value}
