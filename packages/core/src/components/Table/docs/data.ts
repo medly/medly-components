@@ -8,8 +8,8 @@ const data = [
         isPassed: true,
         disabled: true,
         marks: {
-            history: 2,
-            maths: 4
+            maths: { algebra: 4, trigonometry: 6 },
+            science: 4
         }
     },
     {
@@ -20,8 +20,8 @@ const data = [
         isPassed: true,
         rating: 4,
         marks: {
-            history: 9,
-            maths: 7
+            maths: { algebra: 4, trigonometry: 6 },
+            science: 7
         }
     },
     {
@@ -32,8 +32,8 @@ const data = [
         isPassed: true,
         rating: 4,
         marks: {
-            history: 12,
-            maths: 78
+            maths: { algebra: 4, trigonometry: 6 },
+            science: 78
         }
     },
     {
@@ -44,8 +44,8 @@ const data = [
         isPassed: true,
         rating: 4.5,
         marks: {
-            history: 87,
-            maths: 2
+            maths: { algebra: 4, trigonometry: 6 },
+            science: 2
         }
     },
     {
@@ -56,8 +56,8 @@ const data = [
         isPassed: true,
         rating: 4,
         marks: {
-            history: 66,
-            maths: 5
+            maths: { algebra: 4, trigonometry: 6 },
+            science: 5
         }
     },
     {
@@ -68,8 +68,8 @@ const data = [
         isPassed: false,
         rating: 4,
         marks: {
-            history: 34,
-            maths: 22
+            maths: { algebra: 4, trigonometry: 6 },
+            science: 22
         }
     },
     {
@@ -80,8 +80,8 @@ const data = [
         isPassed: false,
         rating: 4,
         marks: {
-            history: 98,
-            maths: 32
+            maths: { algebra: 4, trigonometry: 6 },
+            science: 32
         }
     }
 ];

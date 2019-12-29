@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
 import React, { SFC, useCallback, useEffect, useMemo, useReducer, useState } from 'react';
 import Body from './Body';
+import ColumnConfiguration from './ColumnConfiguration';
 import Head from './Head';
 import { addSizeToColumnConfig } from './helpers';
 import { maxColumnSizeReducer } from './maxColumnSizeReducer';
-import SelectableColumns from './SelectableColumns';
 import { TableStyled } from './Table.styled';
 import { ColumnConfig, Props, StaticProps } from './types';
 import useRowSelector from './useRowSelector';
@@ -89,5 +89,5 @@ Table.defaultProps = {
 };
 
 Table.displayName = 'Table';
-Table.SelectableColumns = SelectableColumns;
+Table.ColumnConfiguration = ColumnConfiguration;
 Table.Style = TableStyled;

@@ -54,7 +54,7 @@ export const WithColumnHide = () => {
             <Modal open={modalState} onCloseModal={handleModalState}>
                 <Modal.Header>Hide Columns</Modal.Header>
                 <Modal.Content>
-                    <Table.SelectableColumns columns={columnConfig} fieldToChange="hide" onChange={setColumnConfig} />
+                    <Table.ColumnConfiguration columns={columnConfig} onChange={setColumnConfig} />
                 </Modal.Content>
             </Modal>
             <Button onClick={handleModalState}>Hide Columns</Button>

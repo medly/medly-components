@@ -15,8 +15,17 @@ const columns: ColumnConfig[] = [
         field: 'marks',
         formatter: 'group',
         children: [
-            { title: 'History', field: 'history', formatter: 'numeric', sort: true },
-            { title: 'Math', field: 'maths', formatter: 'numeric', sort: true }
+            {
+                title: 'Maths',
+                field: 'maths',
+                formatter: 'numeric',
+                sort: true,
+                children: [
+                    { title: 'Algebra', field: 'algebra', formatter: 'numeric', sort: true },
+                    { title: 'Trigonometry', field: 'trigonometry', formatter: 'numeric', sort: true }
+                ]
+            },
+            { title: 'Science', field: 'science', formatter: 'numeric', sort: true }
         ]
     },
     { title: 'Age', field: 'age', formatter: 'numeric', sort: true },

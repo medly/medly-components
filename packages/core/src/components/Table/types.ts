@@ -1,4 +1,4 @@
-import SelectableColumns from './SelectableColumns';
+import ColumnConfiguration from './ColumnConfiguration';
 
 export type SortOrder = 'asc' | 'desc';
 
@@ -74,5 +74,5 @@ export interface Props {
 }
 
 export interface StaticProps {
-    SelectableColumns?: typeof SelectableColumns;
+    ColumnConfiguration?: typeof ColumnConfiguration;
 }
