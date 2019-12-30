@@ -30,7 +30,7 @@ const Head: React.SFC<Props> = React.memo(props => {
                     name="active"
                 />
             ),
-            [isSelectAllDisable, isAllRowSelected]
+            [isSelectAllDisable, isAllRowSelected, handleSelectAllClick]
         ),
         headCell = useCallback(
             (configs: ColumnConfig[], field = '') =>
@@ -58,7 +58,7 @@ const Head: React.SFC<Props> = React.memo(props => {
                         </HeadCell>
                     );
                 }),
-            [columns, isSelectAllDisable, isAllRowSelected]
+            [sortField, maxColumnSizes, isSelectAllDisable, isAllRowSelected, handleSelectAllClick]
         );
 
     return <Row gridTemplateColumns={getGridTemplateColumns(columns)}>{headCell(columns)}</Row>;
