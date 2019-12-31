@@ -33,7 +33,7 @@ const HeadCell: React.SFC<HeadCellProps> & WithStyle = React.memo(props => {
         const order = sortState === 'asc' ? 'desc' : 'asc';
         setSortState(order);
         onSortChange(field, order);
-    }, [sortState, field]);
+    }, [sortState, onSortChange, field]);
 
     const onMouseUp = () => {
         window.removeEventListener('mousemove', onMouseMove);
@@ -65,7 +65,7 @@ const HeadCell: React.SFC<HeadCellProps> & WithStyle = React.memo(props => {
             ) : (
                 <UpArrowIcon size="XS" onClick={handleSortIconClick} />
             ),
-        [sortField, field, sortState]
+        [handleSortIconClick, sortField, field, sortState]
     );
 
     return (

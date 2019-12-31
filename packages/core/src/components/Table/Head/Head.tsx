@@ -15,10 +15,13 @@ const Head: React.SFC<Props> = React.memo(props => {
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
         handleSelectAllClick = useCallback(() => onSelectAllClick(-1), [onSelectAllClick]),
         handleWidthChange = useCallback((width: number, field: string) => setColumns(cl => changeSize(width, field, cl)), []),
-        handleSortChange = useCallback((field: string, order: SortOrder) => {
-            setSortField(field);
-            onSort(field, order);
-        }, []);
+        handleSortChange = useCallback(
+            (field: string, order: SortOrder) => {
+                setSortField(field);
+                onSort(field, order);
+            },
+            [onSort]
+        );
 
     const selectAllCheckBox = useMemo(
             () => (
