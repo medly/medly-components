@@ -35,17 +35,27 @@ describe('Modal component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('should call onCloseModal', () => {
+    it('should call onCloseModal on click on close icon', () => {
         const mockOnCloseModal = jest.fn();
-        const { container, getByTestId } = TestUtils.render(
-            <Modal open onCloseModal={mockOnCloseModal}>
-                <Modal.Header>Demo Header</Modal.Header>
-                <Modal.Content>Demo Content</Modal.Content>
-                <Modal.Actions>Demo Actions</Modal.Actions>
-            </Modal>
-        );
-        expect(container).toMatchSnapshot();
+        const { getByTestId } = renderer({ open: true, onCloseModal: mockOnCloseModal });
         TestUtils.fireEvent.click(getByTestId('modal-close-button'));
+        expect(mockOnCloseModal).toBeCalled();
+    });
+
+    it('should call onCloseModal on pressing escape key', () => {
+        const events: { [k: string]: any } = {};
+        document.addEventListener = jest.fn((event, cb) => {
+            events[event] = cb;
+        });
+        const mockOnCloseModal = jest.fn(),
+            component = TestUtils.render(
+                <Modal open onCloseModal={mockOnCloseModal}>
+                    <Modal.Header>Demo Header</Modal.Header>
+                    <Modal.Content>Demo Content</Modal.Content>
+                    <Modal.Actions>Demo Actions</Modal.Actions>
+                </Modal>
+            );
+        events.keydown({ keyCode: 27 });
         expect(mockOnCloseModal).toBeCalled();
     });
 });
