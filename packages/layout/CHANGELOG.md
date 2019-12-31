@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.9](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.8...@medly-components/layout@1.0.0-beta.9) (2019-12-31)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 # [1.0.0-beta.8](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.7...@medly-components/layout@1.0.0-beta.8) (2019-12-27)
 
 **Note:** Version bump only for package @medly-components/layout

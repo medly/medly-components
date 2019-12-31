@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.9](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.8...@medly-components/core@1.0.0-beta.9) (2019-12-31)
+
+
+### Bug Fixes
+
+* **core:** fix modal close issue ([50b6a76](https://github.com/medlypharmacy/medly-components/commit/50b6a76f35c5770087291d807dfb1df7c4ffbe37))
+* **core:** fix select all issue in table component ([3619258](https://github.com/medlypharmacy/medly-components/commit/361925828084a01620c90ac37dc0bb286ca2771f))
+* **core:** fix sort issue in table component ([593c5fe](https://github.com/medlypharmacy/medly-components/commit/593c5fedccb2dd2ce096156a78ea313aa484c68b))
+
+
+### Features
+
+* **core:** add checkbox tree functionality ([3f06cff](https://github.com/medlypharmacy/medly-components/commit/3f06cffe295e427711669107549ee822c3c398ac))
+* **core:** add column configuration feature in table component ([f30b96c](https://github.com/medlypharmacy/medly-components/commit/f30b96c471ee3d344dd39fedaeab8b5269f1abd0))
+
+
+
+
+
 # [1.0.0-beta.8](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.7...@medly-components/core@1.0.0-beta.8) (2019-12-27)
 
 
