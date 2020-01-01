@@ -1,5 +1,4 @@
 import { Label } from './Label';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Label.stories';
 
@@ -10,7 +9,7 @@ import * as stories from './Label.stories';
 ### Basic Label
 
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic}</Story>
+    <Story name="Basic">{stories.Basic()}</Story>
 </Preview>
 
 ### Props
@@ -20,7 +19,3 @@ import * as stories from './Label.stories';
 ### LabelTheme
 
 <Props of={stories.ThemeInterface} />
-
-### LabelTheme Defaults
-
-<code>{JSON.stringify(defaultTheme.label, null, 2)}</code>

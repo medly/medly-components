@@ -13,7 +13,7 @@ import * as stories from './Loaders.stories';
 You can directly import from `@medly-components/loaders`
 
 <Preview withToolbar>
-    <Story name="Loaders">{stories.Basic}</Story>
+    <Story name="Loaders">{stories.Basic()}</Story>
 </Preview>
 
 ### Props
@@ -23,7 +23,3 @@ You can directly import from `@medly-components/loaders`
 ### LoaderTheme
 
 <Props of={stories.ThemeInterface} />
-
-### LoaderTheme defaults
-
-<code>{JSON.stringify(defaultTheme.loader, null, 2)}</code>

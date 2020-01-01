@@ -22,6 +22,9 @@ const options = [
 ];
 
 export const ThemeInterface = (props: SelectTheme): any => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.select
+};
 
 export const Basic = () => {
     const [values, setValues] = useState(['medly pharmacy', 'a pharmacy']);
@@ -39,7 +42,7 @@ export const Basic = () => {
             label={text('Label', 'Pharmacy')}
             placeholder="Select Pharmacy"
             description={text('Description', 'We will show reports based on Pharmacy')}
-            descriptionColor={color('Description Color', defaultTheme.input.desciptionColor)}
+            descriptionColor={color('Description Color', defaultTheme.input.descriptionColor)}
             labelPosition={select('Label Position', labelPosition, 'left')}
         />
     );

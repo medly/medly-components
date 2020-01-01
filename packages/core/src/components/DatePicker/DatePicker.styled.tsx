@@ -25,7 +25,7 @@ export const DatePickerStyled = styled('div').attrs(({ theme: { input, text, fon
             }
 
             &:focus {
-                border-color: ${props => props.input.focus.borderColor};
+                border-color: ${props => props.input.focusedBorderColor};
                 outline: 0;
             }
 

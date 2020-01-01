@@ -7,6 +7,9 @@ import { Props } from './types';
 const labelPosition: Array<Props['labelPosition']> = ['top', 'bottom', 'left', 'right'];
 
 export const ThemeInterface = (props: InputTheme): any => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.input
+};
 
 export const Basic = () => (
     <Input
@@ -19,6 +22,6 @@ export const Basic = () => (
         required={boolean('Required', false)}
         placeholder={text('Placeholder', 'Enter Email Address')}
         description={text('Description', 'We will never share your email with anyone')}
-        descriptionColor={color('Description Color', defaultTheme.input.desciptionColor)}
+        descriptionColor={color('Description Color', defaultTheme.input.descriptionColor)}
     />
 );

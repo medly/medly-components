@@ -1,5 +1,4 @@
 import { Table } from '../Table';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Table.stories';
 
@@ -10,7 +9,7 @@ import * as stories from './Table.stories';
 ### Table to show set of data
 
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic}</Story>
+    <Story name="Basic">{stories.Basic()}</Story>
 </Preview>
 
 ### With column hide feature
@@ -33,7 +32,7 @@ export const WithColumnHide = () => {
 You can also show `Table.SelectableColumns` in Modal to look better. Like below . . .
 
 <Preview withToolbar>
-    <Story name="WithColumnHide">{stories.WithColumnHide}</Story>
+    <Story name="WithColumnHide">{stories.WithColumnHide()}</Story>
 </Preview>
 
 ### Props

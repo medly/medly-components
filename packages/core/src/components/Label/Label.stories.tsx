@@ -8,6 +8,9 @@ const weightOptions: FontWeights[] = ['Light', 'Regular', 'Medium', 'Strong'];
 const defaultColor = defaultTheme.font.defaultColor;
 
 export const ThemeInterface = (props: LabelTheme): any => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.label
+};
 
 export const Basic = () => (
     <Label

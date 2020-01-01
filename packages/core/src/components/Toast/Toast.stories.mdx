@@ -1,5 +1,4 @@
 import { Toast } from './Toast';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Toast.stories';
 
@@ -10,7 +9,7 @@ import * as stories from './Toast.stories';
 ### Basic Toast
 
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic}</Story>
+    <Story name="Basic">{stories.Basic()}</Story>
 </Preview>
 
 ### Props
@@ -20,7 +19,3 @@ import * as stories from './Toast.stories';
 ### ToastTheme
 
 <Props of={stories.ThemeInterface} />
-
-### ToastTheme Defaults
-
-<code>{JSON.stringify(defaultTheme.toast, null, 2)}</code>

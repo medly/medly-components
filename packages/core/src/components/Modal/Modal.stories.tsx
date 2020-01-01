@@ -1,6 +1,5 @@
-import { ModalTheme } from '@medly-components/theme';
-import { useState } from '@storybook/addons';
-import React from 'react';
+import { defaultTheme, ModalTheme } from '@medly-components/theme';
+import React, { useState } from 'react';
 import Button from '../Button';
 import Input from '../Input';
 import SingleSelect from '../SingleSelect';
@@ -13,16 +12,19 @@ const options = [
 ];
 
 export const ThemeInterface = (props: ModalTheme): any => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.modal
+};
 
 export const Basic = () => {
     const [modalState, setModalState] = useState(false);
 
-    const handleModalStateChange = (value: boolean) => () => setModalState(value);
+    const changeModalState = () => setModalState(val => !val);
 
     return (
         <>
-            <Button onClick={handleModalStateChange(true)}>Click to Open</Button>
-            <Modal open={modalState} onCloseModal={handleModalStateChange(false)}>
+            <Button onClick={changeModalState}>Click to Open</Button>
+            <Modal open={modalState} onCloseModal={changeModalState}>
                 <Modal.Header>Add User</Modal.Header>
                 <Modal.Content>
                     <SingleSelect fullWidth options={options} defaultValue="0" />

@@ -1,4 +1,4 @@
-import { AvatarTheme } from '@medly-components/theme';
+import { AvatarTheme, defaultTheme } from '@medly-components/theme';
 import { color, select } from '@storybook/addon-knobs';
 import React from 'react';
 import { Avatar } from './Avatar';
@@ -7,6 +7,9 @@ import { Props } from './types';
 const size: Array<Props['size']> = ['S', 'M', 'L', 'XL'];
 
 export const ThemeInterface = (props: AvatarTheme): any => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.avatar
+};
 
 export const Basic = () => (
     <>

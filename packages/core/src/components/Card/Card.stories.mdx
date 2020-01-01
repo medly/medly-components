@@ -1,6 +1,5 @@
 import { HTMLProps } from '@medly-components/utils';
 import { Card } from './Card.tsx';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Card.stories';
 
@@ -13,7 +12,7 @@ import * as stories from './Card.stories';
 You can play with the props in canvas tab.
 
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic}</Story>
+    <Story name="Basic">{stories.Basic()}</Story>
 </Preview>
 
 ### Variants
@@ -50,7 +49,3 @@ You can play with the props in canvas tab.
 ### CardTheme
 
 <Props of={stories.ThemeInterface} />
-
-### CardTheme Defaults
-
-<code>{JSON.stringify(defaultTheme.card, null, 2)}</code>

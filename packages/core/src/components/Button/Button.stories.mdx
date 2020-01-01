@@ -1,6 +1,5 @@
 import { HTMLProps } from '@medly-components/utils';
 import { Button } from './Button.tsx';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Button.stories';
 
@@ -13,7 +12,7 @@ import * as stories from './Button.stories';
 You can play with the props in canvas tab.
 
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic}</Story>
+    <Story name="Basic">{stories.Basic()}</Story>
 </Preview>
 
 ### Variants
@@ -52,7 +51,3 @@ You can play with the props in canvas tab.
 ### ButtonTheme
 
 <Props of={stories.ThemeInterface} />
-
-### ButtonTheme Defaults
-
-<code>{JSON.stringify(defaultTheme.button, null, 2)}</code>

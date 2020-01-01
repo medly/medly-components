@@ -1,5 +1,4 @@
 import { Avatar } from './Avatar.tsx';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Avatar.stories';
 
@@ -10,7 +9,7 @@ import * as stories from './Avatar.stories';
 ### Displays an image or text that represents a user or organization
 
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic}</Story>
+    <Story name="Basic">{stories.Basic()}</Story>
 </Preview>
 
 ### Props
@@ -20,7 +19,3 @@ import * as stories from './Avatar.stories';
 ### AvatarTheme
 
 <Props of={stories.ThemeInterface} />
-
-### AvatarTheme Defaults
-
-<code>{JSON.stringify(defaultTheme.avatar, null, 2)}</code>

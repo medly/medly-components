@@ -1,5 +1,4 @@
 import { MultiSelect } from './MultiSelect';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './MultiSelect.stories';
 
@@ -10,7 +9,7 @@ import * as stories from './MultiSelect.stories';
 ### Basic MultiSelect component
 
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic}</Story>
+    <Story name="Basic">{stories.Basic()}</Story>
 </Preview>
 
 ### Props
@@ -22,7 +21,3 @@ import * as stories from './MultiSelect.stories';
 This theme is shared between single select and multi select.
 
 <Props of={stories.ThemeInterface} />
-
-### SelectTheme Defaults
-
-<code>{JSON.stringify(defaultTheme.select, null, 2)}</code>

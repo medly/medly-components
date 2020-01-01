@@ -49,7 +49,7 @@ export const DateRangePickerStyled = styled('div').attrs(({ theme: { input, text
                     }
 
                     &:focus {
-                        border-color: ${props => props.input.focus.borderColor};
+                        border-color: ${props => props.input.focusedBorderColor};
                         outline: 0;
                     }
 

@@ -1,4 +1,4 @@
-import { CardTheme } from '@medly-components/theme';
+import { CardTheme, defaultTheme } from '@medly-components/theme';
 import { boolean, select } from '@storybook/addon-knobs';
 import React from 'react';
 import Text from '../Text';
@@ -10,6 +10,9 @@ const itemsPosition: ItemsPosition[] = ['top', 'bottom', 'left', 'right', 'cente
 const flowDirection: FlowDirection[] = ['vertical', 'horizontal'];
 
 export const ThemeInterface = (props: CardTheme): any => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.card
+};
 
 export const Basic = () => (
     <Card

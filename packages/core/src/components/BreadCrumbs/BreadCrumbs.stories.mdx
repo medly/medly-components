@@ -1,5 +1,4 @@
 import { BreadCrumbs } from './BreadCrumbs.tsx';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './BreadCrumbs.stories';
 
@@ -10,17 +9,9 @@ import * as stories from './BreadCrumbs.stories';
 ### Breadcrumbs allow users to make selections from a range of values.
 
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic}</Story>
+    <Story name="Basic">{stories.Basic()}</Story>
 </Preview>
-
-### Props
-
-<Props of={BreadCrumbs} />
 
 ### BreadCrumbsTheme
 
 <Props of={stories.ThemeInterface} />
-
-### BreadCrumbsTheme Defaults
-
-<code>{JSON.stringify(defaultTheme.breadCrumbs, null, 2)}</code>

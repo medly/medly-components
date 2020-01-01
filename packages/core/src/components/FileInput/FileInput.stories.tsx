@@ -21,7 +21,7 @@ export const Basic = () => {
             required={boolean('Required', false)}
             onChange={setFiles}
             description={text('Description', 'Upload test file')}
-            descriptionColor={color('Description Color', defaultTheme.input.desciptionColor)}
+            descriptionColor={color('Description Color', defaultTheme.input.descriptionColor)}
         />
     );
 };

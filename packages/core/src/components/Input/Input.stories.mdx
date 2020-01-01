@@ -1,5 +1,4 @@
 import { Input } from './Input';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Input.stories';
 
@@ -10,7 +9,7 @@ import * as stories from './Input.stories';
 ### Basic Input component with lot of customization
 
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic}</Story>
+    <Story name="Basic">{stories.Basic()}</Story>
 </Preview>
 
 ### Props
@@ -20,7 +19,3 @@ import * as stories from './Input.stories';
 ### InputTheme
 
 <Props of={stories.ThemeInterface} />
-
-### InputTheme Defaults
-
-<code>{JSON.stringify(defaultTheme.input, null, 2)}</code>

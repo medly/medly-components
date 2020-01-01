@@ -1,5 +1,4 @@
 import { CssBaseline } from './CssBaseline.styled';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './CssBaseline.stories';
 
@@ -19,5 +18,5 @@ It contains base resets and fonts links used by the library
 ```
 
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic}</Story>
+    <Story name="Basic">{stories.Basic()}</Story>
 </Preview>

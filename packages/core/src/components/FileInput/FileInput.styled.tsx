@@ -25,7 +25,7 @@ export const Label = styled('label').attrs(({ theme: { input, text, font } }) =>
     user-select: none;
 
     &:focus {
-        border-color: ${props => props.input.focus.borderColor};
+        border-color: ${props => props.input.focusedBorderColor};
         outline: 0;
     }
 

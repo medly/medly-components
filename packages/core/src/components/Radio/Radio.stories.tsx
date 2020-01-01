@@ -1,4 +1,4 @@
-import { RadioTheme } from '@medly-components/theme';
+import { defaultTheme, RadioTheme } from '@medly-components/theme';
 import { boolean, select } from '@storybook/addon-knobs';
 import React from 'react';
 import { Radio } from './Radio';
@@ -8,6 +8,9 @@ const labelPosition: Array<Props['labelPosition']> = ['left', 'right', 'top', 'b
 const size: Array<Props['size']> = ['XS', 'S', 'M', 'L', 'XL'];
 
 export const ThemeInterface = (props: RadioTheme): any => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.radio
+};
 
 export const Basic = () => (
     <Radio

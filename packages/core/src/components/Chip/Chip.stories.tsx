@@ -8,6 +8,9 @@ import { Props } from './types';
 const variant: Array<Props['variant']> = ['solid', 'flat', 'outlined'];
 
 export const ThemeInterface = (props: ChipTheme): any => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.chip
+};
 
 export const Basic = () => (
     <Chip

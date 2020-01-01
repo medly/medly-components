@@ -12,6 +12,9 @@ const size: LoaderSizes[] = ['XXS', 'XS', 'S', 'M', 'L', 'XL'];
 const defaultColor = defaultTheme.loader.defaultColor;
 
 export const ThemeInterface = (props: LoaderTheme): any => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.loader
+};
 
 export const Basic = (props: Omit<Props, keyof SVGProp>) => (
     <LoaderContainer>

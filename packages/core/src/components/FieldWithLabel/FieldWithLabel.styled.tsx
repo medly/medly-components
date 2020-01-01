@@ -21,7 +21,7 @@ LabelStyled.displayName = 'Label';
 export const DescriptionStyled = styled(Text)`
     grid-area: description;
     margin: 5px 0px 0px 2px;
-    color: ${({ theme, textColor }) => (textColor ? textColor : theme.input.desciptionColor)};
+    color: ${({ theme, textColor }) => (textColor ? textColor : theme.input.descriptionColor)};
 `;
 
 // @ts-ignore

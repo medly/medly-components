@@ -1,5 +1,4 @@
 import { Text } from './Text';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Text.stories';
 
@@ -10,7 +9,7 @@ import * as stories from './Text.stories';
 It renders text in `span` html tag when text weight is `light` | `normal` and uses `strong` html tag for rendering text with`strong` text weight.
 
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic}</Story>
+    <Story name="Basic">{stories.Basic()}</Story>
 </Preview>
 
 ### Props
@@ -20,7 +19,3 @@ It renders text in `span` html tag when text weight is `light` | `normal` and us
 ### TextTheme
 
 <Props of={stories.ThemeInterface} />
-
-### TextTheme Defaults
-
-<code>{JSON.stringify(defaultTheme.text, null, 2)}</code>

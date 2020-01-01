@@ -44,6 +44,9 @@ const size: IconSizes[] = ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'];
 const defaultColor = defaultTheme.icon.defaultColor;
 
 export const ThemeInterface = (props: IconTheme): any => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.icon
+};
 
 export const Basic = (props: Omit<Props, keyof SVGProp>) => (
     <IconContainer>

@@ -1,9 +1,12 @@
 import { AddIcon, DeleteIcon, EditIcon } from '@medly-components/icons';
-import { TabsTheme } from '@medly-components/theme';
+import { defaultTheme, TabsTheme } from '@medly-components/theme';
 import React, { useState } from 'react';
 import { Tabs } from './Tabs';
 
 export const ThemeInterface = (props: TabsTheme): any => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.tabs
+};
 
 export const Basic = () => (
     <Tabs aria-label="Basic Tabs">
@@ -52,9 +55,9 @@ export const Uncontrolled = () => {
 };
 
 export const Controlled = () => {
-    const [active, setAciveTab] = useState('tab1');
+    const [active, setActiveTab] = useState('tab1');
     return (
-        <Tabs active={active} onChange={setAciveTab} aria-label="Controlled Tabs">
+        <Tabs active={active} onChange={setActiveTab} aria-label="Controlled Tabs">
             <Tabs.Tab id="tab1" label="Add">
                 Content for the add panel
             </Tabs.Tab>

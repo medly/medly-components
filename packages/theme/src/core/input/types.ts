@@ -2,12 +2,8 @@ export interface InputTheme {
     color: string;
     bgColor: string;
     borderColor: string;
-    desciptionColor: string;
+    descriptionColor: string;
     disabledBgcolor: string;
-
-    focus: {
-        borderColor: string;
-    };
-
+    focusedBorderColor: string;
     placeHolderColor: string;
 }

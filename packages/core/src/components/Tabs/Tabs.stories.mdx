@@ -1,6 +1,5 @@
 import { HTMLProps } from '@medly-components/utils';
 import { Tabs } from './Tabs.tsx';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Tabs.stories';
 
@@ -27,7 +26,7 @@ Use `Tabs.Tab` to add tab in `Tabs` component. Like bellow . . .
 ```
 
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic}</Story>
+    <Story name="Basic">{stories.Basic()}</Story>
 </Preview>
 
 ### Keyboard Support
@@ -46,7 +45,7 @@ It also supports keyboard navigation when it is in focus
 We can provide icon also using `icon` prop.
 
 <Preview withToolbar>
-    <Story name="WithIcon">{stories.WithIcon}</Story>
+    <Story name="WithIcon">{stories.WithIcon()}</Story>
 </Preview>
 
 ### Uncontrolled
@@ -54,7 +53,7 @@ We can provide icon also using `icon` prop.
 When using uncontrolled `Tabs` component you do not need to provide any prop. By default first tab is active if you haven't provide `defaultActive` prop.
 
 <Preview withToolbar>
-    <Story name="Uncontrolled">{stories.Uncontrolled}</Story>
+    <Story name="Uncontrolled">{stories.Uncontrolled()}</Story>
 </Preview>
 
 ### Controlled
@@ -62,7 +61,7 @@ When using uncontrolled `Tabs` component you do not need to provide any prop. By
 When using controlled `Tabs` component you have to provide `active` and `onChange` prop.
 
 <Preview withToolbar>
-    <Story name="Controlled">{stories.Controlled}</Story>
+    <Story name="Controlled">{stories.Controlled()}</Story>
 </Preview>
 
 ### Props
@@ -72,7 +71,3 @@ When using controlled `Tabs` component you have to provide `active` and `onChang
 ### TabsTheme
 
 <Props of={stories.ThemeInterface} />
-
-### TabsTheme defaults
-
-<code>{JSON.stringify(defaultTheme.tabs, null, 2)}</code>

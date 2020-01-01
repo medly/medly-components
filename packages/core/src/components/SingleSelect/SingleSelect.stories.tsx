@@ -1,7 +1,6 @@
 import { defaultTheme, SelectTheme } from '@medly-components/theme';
 import { boolean, color, number, select, text } from '@storybook/addon-knobs';
-import { useState } from '@storybook/addons';
-import React from 'react';
+import React, { useState } from 'react';
 import { LabelPositions } from '../Label/types';
 import { SingleSelect } from './SingleSelect';
 
@@ -18,6 +17,9 @@ const options = [
 ];
 
 export const ThemeInterface = (props: SelectTheme): any => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.select
+};
 
 export const Basic = () => {
     const [value, setValue] = useState('Dummy4 option');
@@ -34,7 +36,7 @@ export const Basic = () => {
             label={text('Label', 'Pharmacy')}
             placeholder="Select Pharmacy"
             description={text('Description', 'We will show reports based on Pharmacy')}
-            descriptionColor={color('Description Color', defaultTheme.input.desciptionColor)}
+            descriptionColor={color('Description Color', defaultTheme.input.descriptionColor)}
             labelPosition={select('Label Position', labelPosition, 'left')}
         />
     );

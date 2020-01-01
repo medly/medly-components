@@ -1,5 +1,4 @@
 import { Stepper } from './Stepper';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Stepper.stories';
 
@@ -19,7 +18,7 @@ Use `Stepper.Step` to add step in `Stepper` component. Like bellow . . .
 ```
 
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic}</Story>
+    <Story name="Basic">{stories.Basic()}</Story>
 </Preview>
 
 ### Props
@@ -29,7 +28,3 @@ Use `Stepper.Step` to add step in `Stepper` component. Like bellow . . .
 ### StepperTheme
 
 <Props of={stories.ThemeInterface} />
-
-### StepperTheme Defaults
-
-<code>{JSON.stringify(defaultTheme.stepper, null, 2)}</code>

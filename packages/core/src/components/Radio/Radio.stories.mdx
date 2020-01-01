@@ -1,5 +1,4 @@
 import { Radio } from './Radio';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Radio.stories';
 
@@ -10,7 +9,7 @@ import * as stories from './Radio.stories';
 ### Basic Radio
 
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic}</Story>
+    <Story name="Basic">{stories.Basic()}</Story>
 </Preview>
 
 ### Props
@@ -20,7 +19,3 @@ import * as stories from './Radio.stories';
 ### RadioTheme
 
 <Props of={stories.ThemeInterface} />
-
-### RadioTheme Defaults
-
-<code>{JSON.stringify(defaultTheme.radio, null, 2)}</code>

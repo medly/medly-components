@@ -19,15 +19,12 @@ addDecorator(story => (
 ));
 
 addParameters({
+    theme: {
+        brandTitle: 'Medly-Components'
+    },
     docs: {
         container: DocsContainer,
         page: DocsPage
-    }
-});
-addParameters({
-    options: {
-        name: 'Medly-Components',
-        addonPanelInRight: true
     }
 });
 

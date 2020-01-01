@@ -15,7 +15,7 @@ export const InputStyled = styled('input').attrs(({ theme: { input, text, font }
     border-radius: 5px;
 
     &:focus {
-        border-color: ${props => props.input.focus.borderColor};
+        border-color: ${props => props.input.focusedBorderColor};
         outline: 0;
     }
 

@@ -1,4 +1,4 @@
-import { FontSizes, FontWeights, TextTheme } from '@medly-components/theme';
+import { defaultTheme, FontSizes, FontWeights, TextTheme } from '@medly-components/theme';
 import { boolean, color, select } from '@storybook/addon-knobs';
 import React from 'react';
 import { Text } from './Text';
@@ -7,6 +7,9 @@ const sizeOptions: FontSizes[] = ['S1', 'M1', 'M2', 'M3', 'L1', 'L2', 'L3', 'L4'
 const weightOptions: FontWeights[] = ['Light', 'Regular', 'Medium', 'Strong'];
 
 export const ThemeInterface = (props: TextTheme): any => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.text
+};
 
 export const Basic = () => (
     <Text

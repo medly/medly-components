@@ -1,9 +1,12 @@
-import { BreadCrumbsTheme } from '@medly-components/theme';
+import { BreadCrumbsTheme, defaultTheme } from '@medly-components/theme';
 import React from 'react';
 import Link from '../Link';
 import { BreadCrumbs } from './BreadCrumbs';
 
 export const ThemeInterface = (props: BreadCrumbsTheme): any => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.breadCrumbs
+};
 
 export const Basic = () => (
     <BreadCrumbs>

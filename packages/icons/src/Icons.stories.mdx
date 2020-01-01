@@ -13,7 +13,7 @@ import * as stories from './Icons.stories';
 You can directly import from `@medly-components/icons`
 
 <Preview withToolbar>
-    <Story name="Icons">{stories.Basic}</Story>
+    <Story name="Icons">{stories.Basic()}</Story>
 </Preview>
 
 ### Props
@@ -23,7 +23,3 @@ You can directly import from `@medly-components/icons`
 ### IconsTheme
 
 <Props of={stories.ThemeInterface} />
-
-### IconsTheme defaults
-
-<code>{JSON.stringify(defaultTheme.icon, null, 2)}</code>

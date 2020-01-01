@@ -1,4 +1,4 @@
-import { CheckboxTheme } from '@medly-components/theme';
+import { CheckboxTheme, defaultTheme } from '@medly-components/theme';
 import { boolean, select } from '@storybook/addon-knobs';
 import React from 'react';
 import { Checkbox } from './Checkbox';
@@ -8,6 +8,9 @@ const labelPosition: Array<Props['labelPosition']> = ['left', 'right', 'top', 'b
 const size: Array<Props['size']> = ['XS', 'S', 'M', 'L', 'XL'];
 
 export const ThemeInterface = (props: CheckboxTheme): any => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.checkbox
+};
 
 export const Basic = () => (
     <Checkbox
