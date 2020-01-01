@@ -4,11 +4,11 @@ import { LoaderTheme } from './types';
 const loader: LoaderTheme = {
     sizes: {
         XXS: '32px',
-        XS: '48px',
-        S: '60px',
-        M: '72px',
-        L: '84px',
-        XL: '96px'
+        XS: '44px',
+        S: '56px',
+        M: '68px',
+        L: '80px',
+        XL: '92px'
     },
     defaultColor: colors.orange[300]
 };

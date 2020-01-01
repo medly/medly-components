@@ -5,7 +5,7 @@ import SvgLoader, { Props } from '../SvgLoader';
 
 export const DotsLoader: SFC<Props> & WithStyle = React.memo(props => (
     <SvgLoader {...props}>
-        <DotsLoaderSvg {...props} width="1em" height="1em" />
+        <DotsLoaderSvg {...props} width="1em" height="0.5em" />
     </SvgLoader>
 ));
 
