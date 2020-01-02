@@ -4016,9 +4016,9 @@
     "@types/react" "*"
 
 "@types/react-datepicker@^2.8.1":
-  version "2.9.4"
-  resolved "https://registry.yarnpkg.com/@types/react-datepicker/-/react-datepicker-2.9.4.tgz#6a125dff98f89d74d00df46ceb4688ad96b649e1"
-  integrity sha512-YhjYeNzijYl0GF7G3XfccheqHND8vo/OGsFu0uqmG2b0LFobClAaf3vkEcYYJ7zwaC/Nww1BE/T8B9t1jwpxPA==
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@types/react-datepicker/-/react-datepicker-2.10.0.tgz#702f107d5e6e4b8396765b9da8cb5fed0cbb07ea"
+  integrity sha512-w12xVGUf0jjwlRHC86YvatB6Iz/D1zj4sMQLelDEQDg4xBxN7WpnJHldLqwcThyimQFIv4XO97KX9Jh2vnFRVA==
   dependencies:
     "@types/react" "*"
     date-fns "^2.0.1"
@@ -6691,12 +6691,7 @@ data-urls@^1.0.0:
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
 
-date-fns@^2.0.1:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.7.0.tgz#8271d943cc4636a1f27698f1b8d6a9f1ceb74026"
-  integrity sha512-wxYp2PGoUDN5ZEACc61aOtYFvSsJUylIvCjpjDOqM1UDaKIIuMJ9fAnMYFHV3TQaDpfTVxhwNK/GiCaHKuemTA==
-
-date-fns@^2.8.1:
+date-fns@^2.0.1, date-fns@^2.8.1:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.8.1.tgz#2109362ccb6c87c3ca011e9e31f702bc09e4123b"
   integrity sha512-EL/C8IHvYRwAHYgFRse4MGAPSqlJVlOrhVYZ75iQBKrnv+ZedmYsgwH3t+BCDuZDXpoo07+q9j4qgSSOa7irJg==
