@@ -21,12 +21,12 @@ const placement: Placement[] = [
 ];
 
 export const Basic = () => {
-    const [date, setDate] = useState({ startDate: null, endDate: null });
+    const [dates, setDates] = useState({ startDate: null, endDate: null });
 
     return (
         <DateRangePicker
-            value={date}
-            onChange={setDate}
+            value={dates}
+            onChange={setDates}
             placement={select('Placement', placement, 'bottom')}
             fullWidth={boolean('Full Width', false)}
             minWidth={number('Min Width', 300)}

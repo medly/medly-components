@@ -5,13 +5,13 @@ import { DatePickerStyled } from './DatePicker.styled';
 import { Props } from './types';
 
 export const DatePicker: SFC<Props> = React.memo(props => {
-    const { label, labelPosition, fullWidth, value, onChange, required, disabled, placeholder, ...restProps } = props;
-    const [date, setDate] = useState(value || null);
+    const { label, labelPosition, fullWidth, value, onChange, required, disabled, placeholder, ...restProps } = props,
+        date = value || null;
+
     const [showDatepicker, setShowDatepicker] = useState(false);
 
     const handleDateChange = useCallback(
             (state: { date: Date; showDatepicker: boolean }) => {
-                setDate(state.date);
                 setShowDatepicker(false);
                 onChange && onChange(state.date);
             },
