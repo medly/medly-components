@@ -34,7 +34,7 @@ export const getGridTemplateColumns = (configs: ColumnConfig[]) => {
             curr.children
                 ? `${acc} ${getCumulativeTemplate(curr.children)}`
                 : visibleChildrenCount === 1 && visibleChildren[0].field === curr.field
-                ? `minmax(${Number(visibleChildren[0].size.match(/\d+(\.\d*)?/g)[0])}px, 1fr)`
+                ? `${acc} minmax(${Number(visibleChildren[0].size.match(/\d+(\.\d*)?/g)[0])}px, 1fr)`
                 : `${acc} ${curr.size}`,
         ``
     );
