@@ -6,8 +6,13 @@ import { createOptions, createValues, updateColumns, updateConfig } from './help
 import { Props } from './types';
 
 const ColumnConfiguration: React.SFC<Props> = React.memo(({ columns, onChange }) => {
-    const handleCheckboxClick = (field: string) => () => onChange(updateConfig(columns, field)),
-        handleCheckboxGroupClick = (fields: string[]) => onChange(updateColumns(columns, fields));
+    const handleCheckboxClick = (fieldName: string) => () => onChange(updateConfig(columns, fieldName)),
+        handleCheckboxGroupClick = (fieldName: string) => (fields: string[]) => {
+            const newColumns = [...columns],
+                index = columns.findIndex(({ field }) => field === fieldName);
+            newColumns.splice(index, 1, updateColumns([columns[index]], fields)[0]);
+            onChange(newColumns);
+        };
 
     const checkBoxes = (configs: ColumnConfig[]) =>
         configs.map(config =>
@@ -19,7 +24,7 @@ const ColumnConfiguration: React.SFC<Props> = React.memo(({ columns, onChange })
                     labelPosition="top"
                     labelWeight="Strong"
                     values={createValues(config.children, config.field)}
-                    onChange={handleCheckboxGroupClick}
+                    onChange={handleCheckboxGroupClick(config.field)}
                     options={createOptions(config.children, config.field)}
                 />
             ) : (

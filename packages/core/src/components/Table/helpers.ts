@@ -21,11 +21,25 @@ const getCumulativeTemplate = (configs: ColumnConfig[]): string => {
             ),
         [0, 0]
     );
-    return `minmax(${cumulativeSize[0]}px, ${cumulativeSize[1]}fr)`;
+    const visibleChildrenCount = configs.filter(({ hide }) => !hide).length;
+    return `minmax(${cumulativeSize[0]}px, ${visibleChildrenCount === 1 ? 1 : cumulativeSize[1]}fr)`;
 };
 
-export const getGridTemplateColumns = (configs: ColumnConfig[]) =>
-    configs.reduce((acc, curr) => (curr.children ? `${acc} ${getCumulativeTemplate(curr.children)}` : `${acc} ${curr.size}`), ``);
+export const getGridTemplateColumns = (configs: ColumnConfig[]) => {
+    const visibleChildren = configs.filter(({ hide }) => !hide),
+        visibleChildrenCount = visibleChildren.length;
+
+    const size = configs.reduce(
+        (acc, curr) =>
+            curr.children
+                ? `${acc} ${getCumulativeTemplate(curr.children)}`
+                : visibleChildrenCount === 1 && visibleChildren[0].field === curr.field
+                ? `minmax(${Number(visibleChildren[0].size.match(/\d+(\.\d*)?/g)[0])}px, 1fr)`
+                : `${acc} ${curr.size}`,
+        ``
+    );
+    return size;
+};
 
 export const changeSize = (width: number, dottedField: string, columnConfigs: ColumnConfig[]) => {
     const newColumnConfigs = [...columnConfigs],
