@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.10](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.9...@medly-components/core@1.0.0-beta.10) (2020-01-09)
+
+
+### Bug Fixes
+
+* **core:** change date components to uncontrolled components ([7cd7c93](https://github.com/medlypharmacy/medly-components/commit/7cd7c933334ed43fd02672c9a296e661a870499d))
+* **core:** fix nested column hide issue in table component ([1838548](https://github.com/medlypharmacy/medly-components/commit/18385486b82a9327613bb5426cf2d333f3555647))
+
+
+
+
+
 # [1.0.0-beta.9](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.8...@medly-components/core@1.0.0-beta.9) (2019-12-31)
 
 
