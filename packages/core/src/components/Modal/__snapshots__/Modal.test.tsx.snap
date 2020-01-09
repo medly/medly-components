@@ -136,6 +136,7 @@ exports[`Modal component should render properly when it is open 1`] = `
   background: #FAFAFA;
   padding: 32px 64px;
   border-radius: 5px;
+  max-width: 80%;
   max-height: 80%;
   overflow: hidden;
   overflow-y: auto;

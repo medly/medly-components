@@ -6,6 +6,7 @@ export const Popup = styled('div')<Props>`
     background: ${({ theme }) => theme.modal.bgColor};
     padding: ${({ theme }) => theme.spacing.L} ${({ theme }) => theme.spacing.XL};
     border-radius: 5px;
+    max-width: 80%;
     max-height: 80%;
     overflow: hidden;
     overflow-y: auto;
