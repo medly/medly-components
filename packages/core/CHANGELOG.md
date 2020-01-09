@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.11](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.10...@medly-components/core@1.0.0-beta.11) (2020-01-09)
+
+
+### Bug Fixes
+
+* **core:** fix deep nested column hide issue in table component ([9ff4590](https://github.com/medlypharmacy/medly-components/commit/9ff45904a665ed16c2285d74ad91865ae43e25bc))
+* **core:** provide  max width to modal ([5d8cc81](https://github.com/medlypharmacy/medly-components/commit/5d8cc8113ef6eb5080d03578bb3f53361a4907c7))
+
+
+
+
+
 # [1.0.0-beta.10](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.9...@medly-components/core@1.0.0-beta.10) (2020-01-09)
 
 
