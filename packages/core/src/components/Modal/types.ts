@@ -1,4 +1,5 @@
-import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, WithStyle, WithThemeProp } from '@medly-components/utils';
+import { Props as ModalPopupProps } from './ModalPopup/types';
 
 export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
     /** Shows modal only when this prop is true */
@@ -12,6 +13,7 @@ export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
 }
 
 export interface ModalStaticProps {
+    Popup?: React.SFC<ModalPopupProps> & WithStyle;
     Header?: React.SFC;
     Content?: React.SFC;
     Actions?: React.SFC;
