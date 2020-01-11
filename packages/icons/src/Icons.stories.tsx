@@ -37,6 +37,8 @@ import { StatementIcon } from './icons/StatementIcon';
 import { SyncIcon } from './icons/SyncIcon';
 import { UpArrowIcon } from './icons/UpArrowIcon';
 import { UploadIcon } from './icons/UploadIcon';
+import { PrintIcon } from './icons/PrintIcon';
+import { VisibilityIcon } from './icons/VisibilityIcon';
 import { VisibilityOffIcon } from './icons/VisibilityOffIcon';
 import { Props, SVGProp } from './SvgIcon/types';
 
@@ -85,6 +87,8 @@ export const Basic = (props: Omit<Props, keyof SVGProp>) => (
         <SyncIcon key="sync" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <UpArrowIcon key="upArrow" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <UploadIcon key="upload" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
+        <PrintIcon key="print" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
+        <VisibilityIcon key="visibility" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <VisibilityOffIcon key="visibilityOff" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
     </IconContainer>
 );

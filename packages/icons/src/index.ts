@@ -35,4 +35,6 @@ export * from './icons/HelpIcon';
 export * from './icons/VisibilityOffIcon';
 export * from './icons/PowerButtonIcon';
 export * from './icons/ReceiptIcon';
+export * from './icons/PrintIcon';
+export * from './icons/VisibilityIcon';
 export * from './icons/UploadIcon';
