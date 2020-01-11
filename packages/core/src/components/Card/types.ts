@@ -1,4 +1,5 @@
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import { Ref } from 'react';
 
 export type ItemsPosition = 'top' | 'bottom' | 'left' | 'right' | 'center';
 export type Variants = 'outlined' | 'solid' | 'flat';
@@ -11,9 +12,9 @@ export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
     variant?: 'outlined' | 'solid' | 'flat';
     /** Direction of the children */
     flowDirection?: 'vertical' | 'horizontal';
-    /** Separotor between each children */
+    /** Separator between each children */
     separator?: boolean;
-    /** To be used to difine width/height of cards inside cards */
+    /** To be used to define width/height of cards inside cards */
     flex?: number;
     /** Enable padding */
     withPadding?: boolean;
