@@ -13,7 +13,6 @@ export interface ColumnsWidth {
 }
 
 export interface Data {
-    id: any;
     [key: string]: any;
 }
 
