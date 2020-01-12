@@ -1035,19 +1035,19 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@datepicker-react/hooks@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@datepicker-react/hooks/-/hooks-2.3.0.tgz#cf2666d0a20782099fdd249875093f15157dd29b"
-  integrity sha512-LUolS1VViFJYYZYN9vSdfwBG8HX3oe0+HD8H9EyQI1lQUy/XZfbOYVbd90eETaU0cghIvvYxk83YSJIsbOP7YA==
+"@datepicker-react/hooks@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@datepicker-react/hooks/-/hooks-2.3.1.tgz#b33f28aa9dc8628b5c273846544c38693452bd8a"
+  integrity sha512-9GIGWV0jwt2sDicK/e7Wdymv52n6Hj7srTjC+TMGO6eHRyIa29nrpbrepUVTITF9nwPLCjHll6cNfCKVD0Fghw==
   dependencies:
     date-fns "^2.8.1"
 
 "@datepicker-react/styled@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@datepicker-react/styled/-/styled-2.3.0.tgz#a63b7c0171ac67abc4dae3f517ba53e2164a71a0"
-  integrity sha512-VUmcCi51wV/E98ZaPVdpHVnIyF2O9zYK+vd8p9mNocPcOwwKrUUznk7+Bd2a4XcgfjJlnJ3y3FbcB2ggbg/Gbg==
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@datepicker-react/styled/-/styled-2.3.1.tgz#f6c512c26a06b92a179ccaa9c11884987c2b5181"
+  integrity sha512-40sCT65mzT3aJeFCi604r8NXzCjONH4IFHZxVh6niQqq05K20b3U5XzzepGkrGPDSr0L4uSxNQQolYp6PrzbUw==
   dependencies:
-    "@datepicker-react/hooks" "^2.3.0"
+    "@datepicker-react/hooks" "^2.3.1"
     styled-system "^5.1.2"
 
 "@egoist/vue-to-react@^1.1.0":
