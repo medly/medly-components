@@ -2240,16 +2240,16 @@
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
 "@storybook/addon-actions@^5.3.0-rc.6":
-  version "5.3.0-rc.7"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-5.3.0-rc.7.tgz#8a254a86410e68db026fb00719a46bf9576ec3a9"
-  integrity sha512-NNkxfXqvEwBkSJw1ZeGBvCWhHMjUSWfcBvlsIKpxfhcbZf4WEB/wjT2r83YAYBBYM13wrok3WadpbeCb1ZWCGA==
+  version "5.3.0-rc.12"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-5.3.0-rc.12.tgz#26b4eb731fd1fd695019789b7fbe7fa502569b22"
+  integrity sha512-CwiA3wMGRBFJoN0hXLyWKpJpZZT9uy9Ot4zYvhhmfT/s8hBWLbjD52nCsgaJxJf25gZdQmwvfxt7moAEbbgT4g==
   dependencies:
-    "@storybook/addons" "5.3.0-rc.7"
-    "@storybook/api" "5.3.0-rc.7"
-    "@storybook/client-api" "5.3.0-rc.7"
-    "@storybook/components" "5.3.0-rc.7"
-    "@storybook/core-events" "5.3.0-rc.7"
-    "@storybook/theming" "5.3.0-rc.7"
+    "@storybook/addons" "5.3.0-rc.12"
+    "@storybook/api" "5.3.0-rc.12"
+    "@storybook/client-api" "5.3.0-rc.12"
+    "@storybook/components" "5.3.0-rc.12"
+    "@storybook/core-events" "5.3.0-rc.12"
+    "@storybook/theming" "5.3.0-rc.12"
     core-js "^3.0.1"
     fast-deep-equal "^2.0.1"
     global "^4.3.2"
