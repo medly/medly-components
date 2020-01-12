@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.8](https://github.com/medlypharmacy/medly-components/compare/@medly-components/utils@1.0.0-beta.7...@medly-components/utils@1.0.0-beta.8) (2020-01-12)
+
+
+### Features
+
+* **all:** add side-effects to package.json ([0f78b4c](https://github.com/medlypharmacy/medly-components/commit/0f78b4c2ba432373b9d66861c25a265dacd5d433))
+
+
+
+
+
 # [1.0.0-beta.7](https://github.com/medlypharmacy/medly-components/compare/@medly-components/utils@1.0.0-beta.6...@medly-components/utils@1.0.0-beta.7) (2020-01-09)
 
 **Note:** Version bump only for package @medly-components/utils

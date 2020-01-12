@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.12](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.11...@medly-components/core@1.0.0-beta.12) (2020-01-12)
+
+
+### Bug Fixes
+
+* **core:** fix toast container import in mdx file ([0a49f0b](https://github.com/medlypharmacy/medly-components/commit/0a49f0b70137b950d791c661f9cfeb348e06cea9))
+* **core:** forward ref to all the core components ([028a215](https://github.com/medlypharmacy/medly-components/commit/028a215417d0364cc05bab5fe35c49ff6c5780cc))
+* **core:** forward ref to card component ([e8478f4](https://github.com/medlypharmacy/medly-components/commit/e8478f4638962ea072306cb95e3927324d7a9afa))
+* **core:** forward ref to modal component ([c36b0c2](https://github.com/medlypharmacy/medly-components/commit/c36b0c27c5721c438d626cf5f794988f2d5c5bd8))
+* **core:** remove id from types of data prop of table component ([9912f12](https://github.com/medlypharmacy/medly-components/commit/9912f12c6cf614a18481143947da3f88eec1f880))
+
+
+### Features
+
+* **all:** add side-effects to package.json ([0f78b4c](https://github.com/medlypharmacy/medly-components/commit/0f78b4c2ba432373b9d66861c25a265dacd5d433))
+* **core:** forward ref to avatar component ([542a0ae](https://github.com/medlypharmacy/medly-components/commit/542a0ae83931b2bd781c7351ad77d45764530724))
+
+
+### Performance Improvements
+
+* **core:** use hooks while creting variable ([abacbca](https://github.com/medlypharmacy/medly-components/commit/abacbca3a1c1391afeede1024a14646e4207ed18))
+
+
+
+
+
 # [1.0.0-beta.11](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.10...@medly-components/core@1.0.0-beta.11) (2020-01-09)
 
 

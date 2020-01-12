@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.10](https://github.com/medlypharmacy/medly-components/compare/@medly-components/icons@1.0.0-beta.9...@medly-components/icons@1.0.0-beta.10) (2020-01-12)
+
+
+### Bug Fixes
+
+* **icons:** fix lint errors ([ca02365](https://github.com/medlypharmacy/medly-components/commit/ca02365fbadcda587392b24b830ffe2f8beda294))
+
+
+### Features
+
+* **all:** add side-effects to package.json ([0f78b4c](https://github.com/medlypharmacy/medly-components/commit/0f78b4c2ba432373b9d66861c25a265dacd5d433))
+* **icons:** add print and visibility icon ([5ac5b30](https://github.com/medlypharmacy/medly-components/commit/5ac5b3005f048cc8432e48e607a0ed2b6e637c05))
+
+
+
+
+
 # [1.0.0-beta.9](https://github.com/medlypharmacy/medly-components/compare/@medly-components/icons@1.0.0-beta.8...@medly-components/icons@1.0.0-beta.9) (2020-01-09)
 
 **Note:** Version bump only for package @medly-components/icons
