@@ -71,6 +71,7 @@ export const FileInput: SFC<Props> & WithStyle = React.memo(
 );
 
 FileInput.displayName = 'FileInput';
+FileInput.Style = Styled.Input;
 FileInput.defaultProps = {
     // @ts-ignore
     files: [],

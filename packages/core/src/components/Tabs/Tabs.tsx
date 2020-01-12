@@ -6,31 +6,33 @@ import TabPanel from './TabPanel';
 import * as Styled from './Tabs.styled';
 import { Props, StaticProps } from './types';
 
-export const Tabs: React.SFC<Props> & StaticProps & WithStyle = React.memo(props => {
-    const { defaultActive, active, onChange, children, ...restProps } = props,
-        tabIds = useMemo(() => (children ? React.Children.map(children, (child: any) => child.props.id) : [undefined]), [children]),
-        [key, setKey] = useState(defaultActive || tabIds[0]),
-        activeTab = useMemo(() => active || key, [active, key]);
+export const Tabs: React.SFC<Props> & StaticProps & WithStyle = React.memo(
+    React.forwardRef((props, ref) => {
+        const { defaultActive, active, onChange, children, ...restProps } = props,
+            tabIds = useMemo(() => (children ? React.Children.map(children, (child: any) => child.props.id) : [undefined]), [children]),
+            [key, setKey] = useState(defaultActive || tabIds[0]),
+            activeTab = useMemo(() => active || key, [active, key]);
 
-    const handleTabChange = useCallback(
-        (id: any) => {
-            !active && setKey(id);
-            onChange && onChange(id);
-        },
-        [active, onChange]
-    );
+        const handleTabChange = useCallback(
+            (id: any) => {
+                !active && setKey(id);
+                onChange && onChange(id);
+            },
+            [active, onChange]
+        );
 
-    if (React.Children.count(children) === 0) return null;
+        if (React.Children.count(children) === 0) return null;
 
-    return (
-        <Styled.Tabs>
-            <TabList {...restProps} active={activeTab} onChange={handleTabChange}>
-                {children}
-            </TabList>
-            <TabPanel active={activeTab}>{children}</TabPanel>
-        </Styled.Tabs>
-    );
-});
+        return (
+            <Styled.Tabs ref={ref}>
+                <TabList {...restProps} active={activeTab} onChange={handleTabChange}>
+                    {children}
+                </TabList>
+                <TabPanel active={activeTab}>{children}</TabPanel>
+            </Styled.Tabs>
+        );
+    })
+);
 Tabs.displayName = 'Tabs';
 Tabs.Style = Styled.Tabs;
 Tabs.Tab = Tab;

@@ -1,8 +1,8 @@
 import { FontSizes, FontWeights, RadioSizes } from '@medly-components/theme';
-import { WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 
-export interface Props extends WithThemeProp {
+export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChange'>, WithThemeProp {
     /** Selected radio value */
     value?: string;
     /** Function to be called on selecting any radio */

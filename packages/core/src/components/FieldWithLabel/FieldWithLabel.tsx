@@ -3,17 +3,19 @@ import React from 'react';
 import { DescriptionStyled, FieldStyled, FieldWithLabelStyled, LabelStyled } from './FieldWithLabel.styled';
 import { Props, StaticProps } from './types';
 
-export const FieldWithLabel: React.SFC<Props> & WithStyle & StaticProps = React.memo(props => {
-    let isLabelPresent = false;
+export const FieldWithLabel: React.SFC<Props> & WithStyle & StaticProps = React.memo(
+    React.forwardRef((props, ref) => {
+        let isLabelPresent = false;
 
-    React.Children.forEach(props.children, (child: any) => {
-        if (child && child.type && child.type.displayName === 'Label') {
-            isLabelPresent = true;
-        }
-    });
+        React.Children.forEach(props.children, (child: any) => {
+            if (child && child.type && child.type.displayName === 'Label') {
+                isLabelPresent = true;
+            }
+        });
 
-    return <FieldWithLabelStyled {...props} isLabelPresent={isLabelPresent} />;
-});
+        return <FieldWithLabelStyled ref={ref} {...props} isLabelPresent={isLabelPresent} />;
+    })
+);
 
 FieldWithLabel.Field = FieldStyled;
 FieldWithLabel.Label = LabelStyled;

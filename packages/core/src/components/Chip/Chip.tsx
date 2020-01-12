@@ -5,28 +5,29 @@ import Text from '../Text';
 import * as Styled from './Chip.styled';
 import { Props } from './types';
 
-export const Chip: SFC<Props> & WithStyle = React.memo(props => {
-    const { label, onDelete, ...restProps } = props;
+export const Chip: SFC<Props> & WithStyle = React.memo(
+    React.forwardRef((props, ref) => {
+        const { label, onDelete, ...restProps } = props;
 
-    const handleDelete = useCallback(
-        (e: React.MouseEvent<HTMLOrSVGElement>) => {
-            e.stopPropagation();
-            !restProps.disabled && onDelete && onDelete();
-        },
-        [restProps.disabled, onDelete]
-    );
+        const handleDelete = useCallback(
+            (e: React.MouseEvent<HTMLOrSVGElement>) => {
+                e.stopPropagation();
+                !restProps.disabled && onDelete && onDelete();
+            },
+            [restProps.disabled, onDelete]
+        );
 
-    return (
-        <Styled.Chip {...restProps}>
-            <Text>{props.label}</Text>
-            {onDelete && <ClearIcon size="XS" onClick={handleDelete} />}
-        </Styled.Chip>
-    );
-});
+        return (
+            <Styled.Chip ref={ref} {...restProps}>
+                <Text>{props.label}</Text>
+                {onDelete && <ClearIcon size="XS" onClick={handleDelete} />}
+            </Styled.Chip>
+        );
+    })
+);
 
 Chip.defaultProps = {
     variant: 'solid'
 };
-
 Chip.displayName = 'Chip';
 Chip.Style = Styled.Chip;

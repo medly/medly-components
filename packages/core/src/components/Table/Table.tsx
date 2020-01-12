@@ -18,66 +18,68 @@ const checkboxColumnConfig: ColumnConfig = {
     frozen: true
 };
 
-export const Table: SFC<Props> & WithStyle & StaticProps = React.memo(props => {
-    const { data, onRowClick, onSort, uniqueKeyName, rowDisableKey, isSelectable, selectedRows, onRowSelection, isLoading } = props;
+export const Table: SFC<Props> & WithStyle & StaticProps = React.memo(
+    React.forwardRef((props, ref) => {
+        const { data, onRowClick, onSort, uniqueKeyName, rowDisableKey, isSelectable, selectedRows, onRowSelection, isLoading } = props;
 
-    const [ids, selectedIds, toggleId] = useRowSelector(
-            data.filter(dt => !dt[rowDisableKey]).map(dt => dt[uniqueKeyName]),
-            selectedRows
-        ),
-        [isSelectAllDisable, setSelectAllDisableState] = useState(data.every(dt => dt[rowDisableKey])),
-        [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
-        [columns, setColumns] = useState(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns]));
+        const [ids, selectedIds, toggleId] = useRowSelector(
+                data.filter(dt => !dt[rowDisableKey]).map(dt => dt[uniqueKeyName]),
+                selectedRows
+            ),
+            [isSelectAllDisable, setSelectAllDisableState] = useState(data.every(dt => dt[rowDisableKey])),
+            [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
+            [columns, setColumns] = useState(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns]));
 
-    const addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]),
-        isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]);
+        const addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]),
+            isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]);
 
-    useEffect(() => {
-        setColumns(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns]));
-    }, [props.columns, isSelectable]);
+        useEffect(() => {
+            setColumns(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns]));
+        }, [props.columns, isSelectable]);
 
-    useEffect(() => {
-        ids.setValue(data.filter(dt => !dt[rowDisableKey]).map(dt => dt[uniqueKeyName]));
-        setSelectAllDisableState(data.every(dt => dt[rowDisableKey]));
-    }, [data]);
+        useEffect(() => {
+            ids.setValue(data.filter(dt => !dt[rowDisableKey]).map(dt => dt[uniqueKeyName]));
+            setSelectAllDisableState(data.every(dt => dt[rowDisableKey]));
+        }, [data]);
 
-    useEffect(() => {
-        selectedIds.setValue(selectedRows);
-    }, [selectedRows]);
+        useEffect(() => {
+            selectedIds.setValue(selectedRows);
+        }, [selectedRows]);
 
-    useEffect(() => {
-        onRowSelection && onRowSelection(selectedIds.value);
-    }, [selectedIds.value]);
+        useEffect(() => {
+            onRowSelection && onRowSelection(selectedIds.value);
+        }, [selectedIds.value]);
 
-    return (
-        <TableStyled isRowClickable={isRowClickable}>
-            <Head
-                {...{
-                    onSort,
-                    columns,
-                    setColumns,
-                    maxColumnSizes,
-                    onSelectAllClick: toggleId,
-                    isAllRowSelected: ids.isAllSelected,
-                    isSelectAllDisable: isLoading || isSelectAllDisable
-                }}
-            />
-            <Body
-                {...{
-                    isLoading,
-                    columns,
-                    uniqueKeyName,
-                    rowDisableKey,
-                    addColumnMaxSize,
-                    selectedRows: selectedIds.value,
-                    onRowSelection: toggleId,
-                    data: isLoading ? loadingBodyData : data,
-                    onRowClick: !isLoading && onRowClick
-                }}
-            />
-        </TableStyled>
-    );
-});
+        return (
+            <TableStyled ref={ref} isRowClickable={isRowClickable}>
+                <Head
+                    {...{
+                        onSort,
+                        columns,
+                        setColumns,
+                        maxColumnSizes,
+                        onSelectAllClick: toggleId,
+                        isAllRowSelected: ids.isAllSelected,
+                        isSelectAllDisable: isLoading || isSelectAllDisable
+                    }}
+                />
+                <Body
+                    {...{
+                        isLoading,
+                        columns,
+                        uniqueKeyName,
+                        rowDisableKey,
+                        addColumnMaxSize,
+                        selectedRows: selectedIds.value,
+                        onRowSelection: toggleId,
+                        data: isLoading ? loadingBodyData : data,
+                        onRowClick: !isLoading && onRowClick
+                    }}
+                />
+            </TableStyled>
+        );
+    })
+);
 
 Table.defaultProps = {
     uniqueKeyName: 'id',

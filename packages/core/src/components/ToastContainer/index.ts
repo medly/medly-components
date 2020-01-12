@@ -1,3 +1,3 @@
-import { ToastContainer } from './ToastContainer.styled';
+import { ToastContainer } from './ToastContainer.component';
 
 export default ToastContainer;

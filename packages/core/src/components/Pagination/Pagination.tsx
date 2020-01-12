@@ -5,71 +5,77 @@ import List from '../List';
 import { paginator } from './helper';
 import { PaginationProps } from './types';
 
-export const Pagination: SFC<PaginationProps> & WithStyle = React.memo(props => {
-    const links = [];
-    const { hideFirstLastLinks, hidePrevNextLinks, activePage, itemsPerPage, totalItems, pageRangeDisplayed, onPageClick } = props;
-    const pagesConfig = useMemo(() => paginator(totalItems, activePage, itemsPerPage, pageRangeDisplayed), [
-        totalItems,
-        activePage,
-        itemsPerPage,
-        pageRangeDisplayed
-    ]);
+export const Pagination: SFC<PaginationProps> & WithStyle = React.memo(
+    React.forwardRef((props, ref) => {
+        const links = [],
+            { hideFirstLastLinks, hidePrevNextLinks, activePage, itemsPerPage, totalItems, pageRangeDisplayed, onPageClick } = props,
+            pagesConfig = useMemo(() => paginator(totalItems, activePage, itemsPerPage, pageRangeDisplayed), [
+                totalItems,
+                activePage,
+                itemsPerPage,
+                pageRangeDisplayed
+            ]);
 
-    const onClickHandler = (page: number) => () => {
-        onPageClick(page);
-    };
+        const onClickHandler = (page: number) => () => {
+            onPageClick(page);
+        };
 
-    for (let i = pagesConfig.startPage; i <= pagesConfig.endPage; i++) {
-        links.push(
-            <Button key={i} onClick={onClickHandler(i)} variant={i === pagesConfig.currentPage ? 'solid' : 'outlined'}>
-                {i}
-            </Button>
-        );
-    }
+        for (let i = pagesConfig.startPage; i <= pagesConfig.endPage; i++) {
+            links.push(
+                <Button key={i} onClick={onClickHandler(i)} variant={i === pagesConfig.currentPage ? 'solid' : 'outlined'}>
+                    {i}
+                </Button>
+            );
+        }
 
-    if (!hidePrevNextLinks) {
-        links.unshift(
-            <Button
-                key="prev"
-                disabled={pagesConfig.currentPage < 2}
-                onClick={onClickHandler(pagesConfig.currentPage - 1)}
-                variant="outlined"
-            >
-                Prev
-            </Button>
-        );
-        links.push(
-            <Button
-                key="next"
-                disabled={pagesConfig.currentPage === pagesConfig.totalPages}
-                onClick={onClickHandler(pagesConfig.currentPage + 1)}
-                variant="outlined"
-            >
-                Next
-            </Button>
-        );
-    }
+        if (!hidePrevNextLinks) {
+            links.unshift(
+                <Button
+                    key="prev"
+                    disabled={pagesConfig.currentPage < 2}
+                    onClick={onClickHandler(pagesConfig.currentPage - 1)}
+                    variant="outlined"
+                >
+                    Prev
+                </Button>
+            );
+            links.push(
+                <Button
+                    key="next"
+                    disabled={pagesConfig.currentPage === pagesConfig.totalPages}
+                    onClick={onClickHandler(pagesConfig.currentPage + 1)}
+                    variant="outlined"
+                >
+                    Next
+                </Button>
+            );
+        }
 
-    if (!hideFirstLastLinks) {
-        links.unshift(
-            <Button key="first" disabled={pagesConfig.currentPage < 2} onClick={onClickHandler(1)} variant="outlined">
-                First
-            </Button>
-        );
-        links.push(
-            <Button
-                key="last"
-                disabled={pagesConfig.currentPage === pagesConfig.totalPages}
-                onClick={onClickHandler(pagesConfig.totalPages)}
-                variant="outlined"
-            >
-                Last
-            </Button>
-        );
-    }
+        if (!hideFirstLastLinks) {
+            links.unshift(
+                <Button key="first" disabled={pagesConfig.currentPage < 2} onClick={onClickHandler(1)} variant="outlined">
+                    First
+                </Button>
+            );
+            links.push(
+                <Button
+                    key="last"
+                    disabled={pagesConfig.currentPage === pagesConfig.totalPages}
+                    onClick={onClickHandler(pagesConfig.totalPages)}
+                    variant="outlined"
+                >
+                    Last
+                </Button>
+            );
+        }
 
-    return <List variant="horizontal">{links}</List>;
-});
+        return (
+            <List ref={ref} variant="horizontal">
+                {links}
+            </List>
+        );
+    })
+);
 
 Pagination.displayName = 'Pagination';
 Pagination.Style = List.Style;

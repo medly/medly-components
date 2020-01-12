@@ -1,3 +1,4 @@
+import { HTMLProps, Omit } from '@medly-components/utils';
 import ColumnConfiguration from './ColumnConfiguration';
 
 export type SortOrder = 'asc' | 'desc';
@@ -49,8 +50,8 @@ export interface TableStyledProps {
     isRowClickable?: boolean;
 }
 
-export interface Props {
-    /** Tabel data */
+export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data'> {
+    /** Table data */
     data: Data[];
     /** Key name in data to be used as unique id */
     uniqueKeyName?: string;

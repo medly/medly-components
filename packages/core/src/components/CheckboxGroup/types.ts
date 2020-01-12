@@ -1,8 +1,8 @@
 import { CheckboxSizes, FontSizes, FontWeights } from '@medly-components/theme';
-import { WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 
-export interface Props extends WithThemeProp {
+export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChange'>, WithThemeProp {
     /** Array of selected values */
     values?: any[];
     /** This method will be called with checked values */
