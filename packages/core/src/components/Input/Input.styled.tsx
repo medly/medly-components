@@ -13,6 +13,7 @@ export const InputStyled = styled('input').attrs(({ theme: { input, text, font }
     box-sizing: border-box;
     border: 1px solid ${props => props.input.borderColor};
     border-radius: 5px;
+    cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'inherit')};
 
     &:focus {
         border-color: ${props => props.input.focusedBorderColor};

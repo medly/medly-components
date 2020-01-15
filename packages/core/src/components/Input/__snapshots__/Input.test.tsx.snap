@@ -59,6 +59,7 @@ exports[`Input component should render correctly when fullWidth & required props
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c3:focus {
@@ -145,6 +146,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: not-allowed;
 }
 
 .c1:focus {
@@ -222,6 +224,7 @@ exports[`Input component should render correctly when label and description are 
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c1:focus {
@@ -329,6 +332,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
   width: calc(100% - 0px);
 }
 

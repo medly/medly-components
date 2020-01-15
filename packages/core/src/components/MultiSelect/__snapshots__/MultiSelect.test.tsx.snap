@@ -95,6 +95,7 @@ exports[`MultiSelect component with checkbox false should close options when cli
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -539,6 +540,7 @@ exports[`MultiSelect component with checkbox false should handle group name clic
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c11:focus {
@@ -981,7 +983,7 @@ exports[`MultiSelect component with checkbox false should handle group name clic
             
             <input
               autocomplete="off"
-              class="sc-iwsKbI egtGpE"
+              class="sc-iwsKbI jezRQr"
               data-testid="select-input"
               id="select-input"
               label=""
@@ -1170,6 +1172,7 @@ exports[`MultiSelect component with checkbox false should not render options whe
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -1570,6 +1573,7 @@ exports[`MultiSelect component with checkbox false should render all the options
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -2031,6 +2035,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: not-allowed;
 }
 
 .c14:focus {
@@ -2351,6 +2356,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -2739,6 +2745,7 @@ exports[`MultiSelect component with checkbox false should render only matched op
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -3073,6 +3080,7 @@ exports[`MultiSelect component with checkbox false should render options correct
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -3551,6 +3559,7 @@ exports[`MultiSelect component with checkbox true should close options when clic
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -4261,6 +4270,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c11:focus {
@@ -4848,7 +4858,7 @@ exports[`MultiSelect component with checkbox true should handle group name click
             
             <input
               autocomplete="off"
-              class="sc-iwsKbI egtGpE"
+              class="sc-iwsKbI jezRQr"
               data-testid="select-input"
               id="select-input"
               label=""
@@ -5256,6 +5266,7 @@ exports[`MultiSelect component with checkbox true should not render options when
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -5916,6 +5927,7 @@ exports[`MultiSelect component with checkbox true should render all the options 
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -6545,6 +6557,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: not-allowed;
 }
 
 .c14:focus {
@@ -6916,6 +6929,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -7507,6 +7521,7 @@ exports[`MultiSelect component with checkbox true should render only matched opt
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -7993,6 +8008,7 @@ exports[`MultiSelect component with checkbox true should render options correctl
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {

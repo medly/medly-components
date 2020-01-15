@@ -62,6 +62,7 @@ exports[`SingleSelect component on pressing enter button when option are not vis
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -382,6 +383,7 @@ exports[`SingleSelect component should close options when clicked outside 1`] = 
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -689,6 +691,7 @@ exports[`SingleSelect component should not render options when clicked outside 1
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -958,7 +961,7 @@ exports[`SingleSelect component should not render options when clicked outside 2
             
             <input
               autocomplete="off"
-              class="sc-bZQynM eDrWtB"
+              class="sc-bZQynM mVgYW"
               data-testid="select-input"
               id="select-input"
               label=""
@@ -1086,6 +1089,7 @@ exports[`SingleSelect component should render all the options when input value i
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -1415,6 +1419,7 @@ exports[`SingleSelect component should render correctly with all the props given
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: not-allowed;
 }
 
 .c8:focus {
@@ -1670,6 +1675,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -1960,6 +1966,7 @@ exports[`SingleSelect component should render matched options when input values 
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -2255,6 +2262,7 @@ exports[`SingleSelect component should render options correctly 1`] = `
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  cursor: inherit;
 }
 
 .c6:focus {
@@ -2515,7 +2523,7 @@ exports[`SingleSelect component should render options correctly 2`] = `
           
           <input
             autocomplete="off"
-            class="sc-bZQynM eDrWtB"
+            class="sc-bZQynM mVgYW"
             data-testid="select-input"
             id="select-input"
             label=""
