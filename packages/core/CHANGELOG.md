@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.13](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.12...@medly-components/core@1.0.0-beta.13) (2020-01-15)
+
+
+### Features
+
+* **core:** add rowSelectionDisableKey, rowClickDisableKey to table props ([ea1a437](https://github.com/medlypharmacy/medly-components/commit/ea1a437d806bfffce9548e7313ad7ada02d839bd))
+* **core:** change cursor to not-allowed on disabled input ([faa22f7](https://github.com/medlypharmacy/medly-components/commit/faa22f7f8f1c54ae09d9bfec842771da231fcfcb))
+
+
+
+
+
 # [1.0.0-beta.12](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.11...@medly-components/core@1.0.0-beta.12) (2020-01-12)
 
 

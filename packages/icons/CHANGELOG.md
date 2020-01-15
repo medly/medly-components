@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.11](https://github.com/medlypharmacy/medly-components/compare/@medly-components/icons@1.0.0-beta.10...@medly-components/icons@1.0.0-beta.11) (2020-01-15)
+
+
+### Bug Fixes
+
+* **icons:** fix audit icon issue ([d11ae08](https://github.com/medlypharmacy/medly-components/commit/d11ae083c1ccf1ce4d43c566071b1c3e674a28ec))
+
+
+### Features
+
+* **icons:** add audit icon ([11c280c](https://github.com/medlypharmacy/medly-components/commit/11c280c4a7d5d62b362a082b64a8e29f35c1629b))
+
+
+
+
+
 # [1.0.0-beta.10](https://github.com/medlypharmacy/medly-components/compare/@medly-components/icons@1.0.0-beta.9...@medly-components/icons@1.0.0-beta.10) (2020-01-12)
 
 
