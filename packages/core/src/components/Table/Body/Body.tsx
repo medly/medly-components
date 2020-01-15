@@ -8,10 +8,21 @@ import { ColumnConfig } from '../types';
 import { Props } from './types';
 
 const Body: React.SFC<Props> = React.memo(props => {
-    const { data, columns, onRowClick, selectedRows, uniqueKeyName, rowDisableKey, onRowSelection, addColumnMaxSize, isLoading } = props;
+    const {
+        data,
+        columns,
+        onRowClick,
+        selectedRows,
+        uniqueKeyName,
+        rowClickDisableKey,
+        rowSelectionDisableKey,
+        onRowSelection,
+        addColumnMaxSize,
+        isLoading
+    } = props;
 
     const handleRowClick = (rowData: any) => {
-        return onRowClick && !rowData[rowDisableKey] ? () => onRowClick(rowData) : undefined;
+        return onRowClick && !rowData[rowClickDisableKey] ? () => onRowClick(rowData) : undefined;
     };
 
     const getRow = useCallback(
@@ -26,7 +37,8 @@ const Body: React.SFC<Props> = React.memo(props => {
                 ) : (
                     <Cell
                         isLoading={isLoading}
-                        disabled={rowData[rowDisableKey]}
+                        isRowClickDisabled={rowData[rowClickDisableKey]}
+                        isRowSelectionDisabled={rowData[rowSelectionDisableKey]}
                         key={index}
                         data={rowData[config.field]}
                         rowId={rowData[uniqueKeyName]}
@@ -36,7 +48,7 @@ const Body: React.SFC<Props> = React.memo(props => {
                     />
                 );
             }),
-        [columns, isLoading, rowDisableKey, uniqueKeyName, selectedRows, onRowSelection, addColumnMaxSize]
+        [columns, isLoading, rowClickDisableKey, rowSelectionDisableKey, uniqueKeyName, selectedRows, onRowSelection, addColumnMaxSize]
     );
 
     if (data.length === 0) {
@@ -52,7 +64,7 @@ const Body: React.SFC<Props> = React.memo(props => {
             {data.map((row, index) => {
                 return (
                     <Row
-                        disabled={row[rowDisableKey]}
+                        disabled={row[rowClickDisableKey]}
                         key={row.id || index}
                         onClick={handleRowClick(row)}
                         gridTemplateColumns={getGridTemplateColumns(columns)}

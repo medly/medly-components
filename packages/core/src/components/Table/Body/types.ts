@@ -5,7 +5,8 @@ export interface Props {
     columns: ColumnConfig[];
     selectedRows?: number[];
     uniqueKeyName: string;
-    rowDisableKey: string;
+    rowSelectionDisableKey?: string;
+    rowClickDisableKey?: string;
     isLoading?: boolean;
     addColumnMaxSize: (field: string, value: number) => void;
     onRowSelection?: (id: number) => void;

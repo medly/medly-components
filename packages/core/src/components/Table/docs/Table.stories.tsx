@@ -61,7 +61,7 @@ export const WithColumnHide = () => {
             <Table
                 isSelectable
                 isLoading={boolean('Loading', false)}
-                rowDisableKey="disabled"
+                rowSelectionDisableKey="disabled"
                 selectedRows={selectedRows}
                 onRowSelection={setSelectedRows}
                 onRowClick={action('Row Clicked')}

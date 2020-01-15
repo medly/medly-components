@@ -15,6 +15,8 @@ export interface Props extends StyledProps, HTMLProps<HTMLDivElement> {
     isLoading?: boolean;
     selectedRows?: number[];
     isRowSelected?: boolean;
+    isRowClickDisabled?: boolean;
+    isRowSelectionDisabled?: boolean;
     onRowSelection?: (id: number) => void;
     addColumnMaxSize: (field: string, value: number) => void;
 }

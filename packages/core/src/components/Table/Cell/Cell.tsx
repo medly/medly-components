@@ -7,7 +7,18 @@ import { Props } from './types';
 
 const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
     const childRef = useRef(null),
-        { addColumnMaxSize, config, data, rowId, isRowSelected, disabled, onRowSelection, dottedFieldName, isLoading } = props;
+        {
+            addColumnMaxSize,
+            config,
+            data,
+            rowId,
+            isRowSelected,
+            isRowClickDisabled,
+            isRowSelectionDisabled,
+            onRowSelection,
+            dottedFieldName,
+            isLoading
+        } = props;
 
     useEffect(() => {
         if (childRef.current) {
@@ -22,7 +33,7 @@ const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
     const rowSelectionCheckbox = useMemo(
             () => (
                 <Checkbox
-                    disabled={disabled}
+                    disabled={isRowSelectionDisabled}
                     ref={childRef}
                     checked={isRowSelected}
                     onChange={handleRowSelection(rowId)}
@@ -30,7 +41,7 @@ const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
                     name="active"
                 />
             ),
-            [disabled, isRowSelected]
+            [rowId, isRowSelectionDisabled, isRowSelected]
         ),
         formatedCell = useCallback(() => {
             switch (config.formatter) {
@@ -44,7 +55,7 @@ const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
                     const Component = config.component;
                     return (
                         <Styled.CustomComponentWrapper ref={childRef}>
-                            <Component {...{ data, rowId, disabled }} />
+                            <Component {...{ data, rowId, disabled: isRowClickDisabled }} />
                         </Styled.CustomComponentWrapper>
                     );
                 }
@@ -55,7 +66,7 @@ const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
                         </Text>
                     );
             }
-        }, [data, isLoading]);
+        }, [data, rowId, isLoading, isRowClickDisabled]);
 
     const textAlign = useMemo(() => config.align || (config.formatter === 'numeric' ? 'right' : 'left'), []);
 

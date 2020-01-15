@@ -20,13 +20,24 @@ const checkboxColumnConfig: ColumnConfig = {
 
 export const Table: SFC<Props> & WithStyle & StaticProps = React.memo(
     React.forwardRef((props, ref) => {
-        const { data, onRowClick, onSort, uniqueKeyName, rowDisableKey, isSelectable, selectedRows, onRowSelection, isLoading } = props;
+        const {
+            data,
+            onRowClick,
+            onSort,
+            uniqueKeyName,
+            rowSelectionDisableKey,
+            rowClickDisableKey,
+            isSelectable,
+            selectedRows,
+            onRowSelection,
+            isLoading
+        } = props;
 
         const [ids, selectedIds, toggleId] = useRowSelector(
-                data.filter(dt => !dt[rowDisableKey]).map(dt => dt[uniqueKeyName]),
+                data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[uniqueKeyName]),
                 selectedRows
             ),
-            [isSelectAllDisable, setSelectAllDisableState] = useState(data.every(dt => dt[rowDisableKey])),
+            [isSelectAllDisable, setSelectAllDisableState] = useState(data.every(dt => dt[rowSelectionDisableKey])),
             [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
             [columns, setColumns] = useState(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns]));
 
@@ -38,8 +49,8 @@ export const Table: SFC<Props> & WithStyle & StaticProps = React.memo(
         }, [props.columns, isSelectable]);
 
         useEffect(() => {
-            ids.setValue(data.filter(dt => !dt[rowDisableKey]).map(dt => dt[uniqueKeyName]));
-            setSelectAllDisableState(data.every(dt => dt[rowDisableKey]));
+            ids.setValue(data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[uniqueKeyName]));
+            setSelectAllDisableState(data.every(dt => dt[rowSelectionDisableKey]));
         }, [data]);
 
         useEffect(() => {
@@ -68,7 +79,8 @@ export const Table: SFC<Props> & WithStyle & StaticProps = React.memo(
                         isLoading,
                         columns,
                         uniqueKeyName,
-                        rowDisableKey,
+                        rowClickDisableKey,
+                        rowSelectionDisableKey,
                         addColumnMaxSize,
                         selectedRows: selectedIds.value,
                         onRowSelection: toggleId,
@@ -83,7 +95,8 @@ export const Table: SFC<Props> & WithStyle & StaticProps = React.memo(
 
 Table.defaultProps = {
     uniqueKeyName: 'id',
-    rowDisableKey: '',
+    rowClickDisableKey: '',
+    rowSelectionDisableKey: '',
     data: [],
     selectedRows: [],
     isSelectable: false,
