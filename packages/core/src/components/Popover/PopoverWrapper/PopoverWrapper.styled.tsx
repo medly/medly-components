@@ -1,5 +1,6 @@
-import { css, fullHeight, fullWidth, styled } from '@medly-components/utils';
-import { Placement, PopoverProps, PopoverWrapperProps } from './types';
+import { css, styled } from '@medly-components/utils';
+import Popover from '../Popover';
+import { Placement, Props } from './types';
 
 export const getPosition = (position: Placement) => {
     switch (position) {
@@ -66,17 +67,6 @@ export const getPosition = (position: Placement) => {
     }
 };
 
-export const PopoverStyled = styled('div')<PopoverProps>`
-    position: absolute;
-    z-index: 1000;
-    display: none;
-    transition: all 2ms ease-in-out;
-    border-radius: 4px;
-
-    ${props => props.fullWidth && fullWidth()};
-    ${props => props.fullHeight && fullHeight()};
-`;
-
 const getFlexDirection = (position: Placement) => {
     switch (position) {
         case 'top-start':
@@ -106,13 +96,13 @@ const getFlexDirection = (position: Placement) => {
     }
 };
 
-export const PopoverWrapperStyled = styled('div')<PopoverWrapperProps>`
+export const PopoverWrapperStyled = styled('div')<Props>`
     display: inline-flex;
     position: relative;
 
     ${({ placement }) => getFlexDirection(placement)}
 
-    ${PopoverStyled} {
+    ${Popover.Style} {
         ${({ placement }) => getPosition(placement)}
     }
 
@@ -120,7 +110,7 @@ export const PopoverWrapperStyled = styled('div')<PopoverWrapperProps>`
         if (interactionType === 'hover') {
             return css`
                 &:hover {
-                    ${PopoverStyled} {
+                    ${Popover.Style} {
                         display: block;
                     }
                 }

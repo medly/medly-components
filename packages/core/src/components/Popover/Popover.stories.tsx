@@ -1,8 +1,10 @@
 import { centerAligned, styled } from '@medly-components/utils';
 import { boolean, select } from '@storybook/addon-knobs';
+import { useState } from '@storybook/addons';
 import React from 'react';
-import { Popover, PopoverWrapper } from './Popover';
-import { InteractionType, Placement } from './types';
+import Popover from './Popover';
+import PopoverWrapper from './PopoverWrapper';
+import { InteractionType, Placement } from './PopoverWrapper/types';
 
 const placement: Placement[] = [
     'top-start',
@@ -47,16 +49,22 @@ const DummyPopover = styled('div')`
     ${centerAligned()};
 `;
 
-export const Basic = () => (
-    <DummyWrapper>
-        <PopoverWrapper
-            placement={select('Placement', placement, 'bottom')}
-            interactionType={select('Interaction Type', interactionType, 'hover')}
-        >
-            <DummyDiv>Hello</DummyDiv>
-            <Popover fullWidth={boolean('Popover Full Width', false)} fullHeight={boolean('Popover Full Height', false)}>
-                <DummyPopover>This is Popover</DummyPopover>
-            </Popover>
-        </PopoverWrapper>
-    </DummyWrapper>
-);
+export const Basic = () => {
+    const [showPopover, setPopoverState] = useState(false);
+    const changePopoverState = () => setPopoverState(val => !val);
+
+    return (
+        <DummyWrapper>
+            <PopoverWrapper
+                showPopover={showPopover}
+                placement={select('Placement', placement, 'bottom')}
+                interactionType={select('Interaction Type', interactionType, 'hover')}
+            >
+                <DummyDiv onClick={changePopoverState}>Hello</DummyDiv>
+                <Popover fullWidth={boolean('Popover Full Width', false)} fullHeight={boolean('Popover Full Height', false)}>
+                    <DummyPopover>This is Popover</DummyPopover>
+                </Popover>
+            </PopoverWrapper>
+        </DummyWrapper>
+    );
+};

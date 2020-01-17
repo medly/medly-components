@@ -1,407 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Popover component should not render popover when interction type is hover and user clicks on it 1`] = `
-.c2 {
-  position: absolute;
-  z-index: 1000;
-  display: none;
-  -webkit-transition: all 2ms ease-in-out;
-  transition: all 2ms ease-in-out;
-  border-radius: 4px;
-}
-
-.c3 .c1 {
-  bottom: calc(100% + 5px);
-  left: 0%;
-}
-
-.c3:hover .c1 {
-  display: block;
-}
-
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c0 .c1 {
-  bottom: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c0:hover .c1 {
-  display: block;
-}
-
-.c4 .c1 {
-  bottom: calc(100% + 5px);
-  right: 0%;
-}
-
-.c4:hover .c1 {
-  display: block;
-}
-
-.c5 .c1 {
-  top: 0%;
-  left: calc(100% + 5px);
-}
-
-.c5:hover .c1 {
-  display: block;
-}
-
-.c6 .c1 {
-  left: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c6:hover .c1 {
-  display: block;
-}
-
-.c7 .c1 {
-  bottom: 0px;
-  left: calc(100% + 5px);
-}
-
-.c7:hover .c1 {
-  display: block;
-}
-
-.c8 .c1 {
-  top: calc(100% + 5px);
-  right: 0%;
-}
-
-.c8:hover .c1 {
-  display: block;
-}
-
-.c9 .c1 {
-  top: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c9:hover .c1 {
-  display: block;
-}
-
-.c10 .c1 {
-  top: calc(100% + 5px);
-  left: 0%;
-}
-
-.c10:hover .c1 {
-  display: block;
-}
-
-.c11 .c1 {
-  right: calc(100% + 5px);
-  bottom: 0%;
-}
-
-.c11:hover .c1 {
-  display: block;
-}
-
-.c12 .c1 {
-  right: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c12:hover .c1 {
-  display: block;
-}
-
-.c13 .c1 {
-  right: calc(100% + 5px);
-  top: 0%;
-}
-
-.c13:hover .c1 {
-  display: block;
-}
-
-<div>
-  <div
-    class="c0"
-    data-testid="popover-wrapper"
-  >
-    <div>
-      Dummy Div
-    </div>
-    <div
-      class="c1 c2"
-    >
-      Dummy popover
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Popover component should render properly when interction type is click 1`] = `
-.c2 {
-  position: absolute;
-  z-index: 1000;
-  display: none;
-  -webkit-transition: all 2ms ease-in-out;
-  transition: all 2ms ease-in-out;
-  border-radius: 4px;
-  width: calc(100% - 0px);
-  height: calc(100% - 0px);
-}
-
-.c3 .c1 {
-  bottom: calc(100% + 5px);
-  left: 0%;
-}
-
-.c3:hover .c1 {
-  display: block;
-}
-
-.c4 .c1 {
-  bottom: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c4:hover .c1 {
-  display: block;
-}
-
-.c5 .c1 {
-  bottom: calc(100% + 5px);
-  right: 0%;
-}
-
-.c5:hover .c1 {
-  display: block;
-}
-
-.c6 .c1 {
-  top: 0%;
-  left: calc(100% + 5px);
-}
-
-.c6:hover .c1 {
-  display: block;
-}
-
-.c7 .c1 {
-  left: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c7:hover .c1 {
-  display: block;
-}
-
-.c8 .c1 {
-  bottom: 0px;
-  left: calc(100% + 5px);
-}
-
-.c8:hover .c1 {
-  display: block;
-}
-
-.c9 .c1 {
-  top: calc(100% + 5px);
-  right: 0%;
-}
-
-.c9:hover .c1 {
-  display: block;
-}
-
-.c10 .c1 {
-  top: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c10:hover .c1 {
-  display: block;
-}
-
-.c11 .c1 {
-  top: calc(100% + 5px);
-  left: 0%;
-}
-
-.c11:hover .c1 {
-  display: block;
-}
-
-.c12 .c1 {
-  right: calc(100% + 5px);
-  bottom: 0%;
-}
-
-.c12:hover .c1 {
-  display: block;
-}
-
-.c13 .c1 {
-  right: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c13:hover .c1 {
-  display: block;
-}
-
-.c14 .c1 {
-  right: calc(100% + 5px);
-  top: 0%;
-}
-
-.c14:hover .c1 {
-  display: block;
-}
-
-.c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: relative;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.c0 .c1 {
-  right: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-<div>
-  <div>
-    <div
-      data-testid="sibling"
-    >
-      Sibling div
-    </div>
-    <div
-      class="c0"
-      data-testid="popover-wrapper"
-    >
-      <div>
-        Dummy Div
-      </div>
-      <div
-        class="c1 c2"
-      >
-        Dummy popover
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Popover component should render properly when interction type is click 2`] = `
-<div>
-  <div>
-    <div
-      data-testid="sibling"
-    >
-      Sibling div
-    </div>
-    <div
-      class="sc-bwzfXH llsvyT"
-      data-testid="popover-wrapper"
-    >
-      <div>
-        Dummy Div
-      </div>
-      <div
-        class="sc-bdVaJa bXBdOs"
-        style="display: block;"
-      >
-        Dummy popover
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Popover component should render properly when interction type is click 3`] = `
-<div>
-  <div>
-    <div
-      data-testid="sibling"
-    >
-      Sibling div
-    </div>
-    <div
-      class="sc-bwzfXH llsvyT"
-      data-testid="popover-wrapper"
-    >
-      <div>
-        Dummy Div
-      </div>
-      <div
-        class="sc-bdVaJa bXBdOs"
-        style="display: none;"
-      >
-        Dummy popover
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Popover component should render properly when interction type is click 4`] = `
-<div>
-  <div>
-    <div
-      data-testid="sibling"
-    >
-      Sibling div
-    </div>
-    <div
-      class="sc-bwzfXH llsvyT"
-      data-testid="popover-wrapper"
-    >
-      <div>
-        Dummy Div
-      </div>
-      <div
-        class="sc-bdVaJa bXBdOs"
-        style="display: none;"
-      >
-        Dummy popover
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Popover component with placement bottom, should render properly 1`] = `
 .c2 {
   position: absolute;
@@ -504,13 +102,14 @@ exports[`Popover component with placement bottom, should render properly 1`] = `
 <div>
   <div
     class="c0"
-    data-testid="popover-wrapper"
+    data-testid="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
+      data-testid="medly-popover"
     >
       Dummy popover
     </div>
@@ -609,13 +208,14 @@ exports[`Popover component with placement bottom-end, should render properly 1`]
 <div>
   <div
     class="c0"
-    data-testid="popover-wrapper"
+    data-testid="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
+      data-testid="medly-popover"
     >
       Dummy popover
     </div>
@@ -734,13 +334,14 @@ exports[`Popover component with placement bottom-start, should render properly 1
 <div>
   <div
     class="c0"
-    data-testid="popover-wrapper"
+    data-testid="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
+      data-testid="medly-popover"
     >
       Dummy popover
     </div>
@@ -879,13 +480,14 @@ exports[`Popover component with placement left, should render properly 1`] = `
 <div>
   <div
     class="c0"
-    data-testid="popover-wrapper"
+    data-testid="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
+      data-testid="medly-popover"
     >
       Dummy popover
     </div>
@@ -1013,13 +615,14 @@ exports[`Popover component with placement left-end, should render properly 1`] =
 <div>
   <div
     class="c0"
-    data-testid="popover-wrapper"
+    data-testid="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
+      data-testid="medly-popover"
     >
       Dummy popover
     </div>
@@ -1167,13 +770,14 @@ exports[`Popover component with placement left-start, should render properly 1`]
 <div>
   <div
     class="c0"
-    data-testid="popover-wrapper"
+    data-testid="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
+      data-testid="medly-popover"
     >
       Dummy popover
     </div>
@@ -1254,13 +858,14 @@ exports[`Popover component with placement right, should render properly 1`] = `
 <div>
   <div
     class="c0"
-    data-testid="popover-wrapper"
+    data-testid="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
+      data-testid="medly-popover"
     >
       Dummy popover
     </div>
@@ -1350,13 +955,14 @@ exports[`Popover component with placement right-end, should render properly 1`] 
 <div>
   <div
     class="c0"
-    data-testid="popover-wrapper"
+    data-testid="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
+      data-testid="medly-popover"
     >
       Dummy popover
     </div>
@@ -1426,13 +1032,14 @@ exports[`Popover component with placement right-start, should render properly 1`
 <div>
   <div
     class="c0"
-    data-testid="popover-wrapper"
+    data-testid="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
+      data-testid="medly-popover"
     >
       Dummy popover
     </div>
@@ -1484,13 +1091,14 @@ exports[`Popover component with placement top, should render properly 1`] = `
 <div>
   <div
     class="c0"
-    data-testid="popover-wrapper"
+    data-testid="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
+      data-testid="medly-popover"
     >
       Dummy popover
     </div>
@@ -1551,13 +1159,14 @@ exports[`Popover component with placement top-end, should render properly 1`] = 
 <div>
   <div
     class="c0"
-    data-testid="popover-wrapper"
+    data-testid="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
+      data-testid="medly-popover"
     >
       Dummy popover
     </div>
@@ -1598,13 +1207,14 @@ exports[`Popover component with placement top-start, should render properly 1`] 
 <div>
   <div
     class="c0"
-    data-testid="popover-wrapper"
+    data-testid="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
+      data-testid="medly-popover"
     >
       Dummy popover
     </div>

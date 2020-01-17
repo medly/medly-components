@@ -1,4 +1,4 @@
-import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, Omit } from '@medly-components/utils';
 
 export type Placement =
     | 'top-start'
@@ -16,18 +16,13 @@ export type Placement =
 
 export type InteractionType = 'click' | 'hover';
 
-export interface PopoverWrapperProps extends HTMLProps<HTMLDivElement> {
+export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'onChange'> {
+    /** To be used when interaction type is click */
+    showPopover?: boolean;
     /** Show popover based on this interaction type */
     interactionType?: InteractionType;
     /** Placement of the popover */
     placement?: Placement;
     /** Function to be called on  outer click of the wrapper */
     onOuterClick?: () => void;
-}
-
-export interface PopoverProps extends HTMLProps<HTMLDivElement> {
-    /** Takes full width of the parent component */
-    fullWidth?: boolean;
-    /** Takes full height of the parent component */
-    fullHeight?: boolean;
 }

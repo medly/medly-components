@@ -1,6 +1,6 @@
 import { boolean, number, select, text } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
-import { Placement } from '../Popover/types';
+import { Placement } from '../Popover/PopoverWrapper/types';
 import { DateRangePicker } from './DateRangePicker';
 import { Props } from './types';
 

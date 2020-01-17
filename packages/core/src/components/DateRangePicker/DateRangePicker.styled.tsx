@@ -1,5 +1,5 @@
 import { styled } from '@medly-components/utils';
-import { getPosition } from '../Popover/Popover.styled';
+import { getPosition } from '../Popover/PopoverWrapper/PopoverWrapper.styled';
 import { StyledProps } from './types';
 
 export const DateRangePickerStyled = styled('div').attrs(({ theme: { input, text, font } }) => ({ input, text, font }))<StyledProps>`

@@ -1,7 +1,7 @@
 import { DateRangeInput } from '@datepicker-react/styled';
 import { GetComponentProps, Omit } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
-import { Placement } from '../Popover/types';
+import { Placement } from '../Popover/PopoverWrapper/types';
 
 type PickerProps = Omit<
     GetComponentProps<typeof DateRangeInput>,
