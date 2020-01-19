@@ -1,9 +1,9 @@
-import { useKeyPress, WithStyle } from '@medly-components/utils';
+import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
 import React, { SFC, useCallback, useEffect, useRef, useState } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import Input from '../Input';
 import { Popover, PopoverWrapper } from '../Popover';
-import { filterOptions, findNextOption, findPrevOption, getDefaultSelectedOption, getOptionsWithSelected } from './helpers';
+import { filterOptions, getDefaultSelectedOption, getNextOption, getOptionsWithSelected, getPrevOption } from './helpers';
 import Options from './Options';
 import { SelectIconStyled, SelectWrapperStyled } from './SingleSelect.styled';
 import { Option, SelectProps } from './types';
@@ -13,48 +13,67 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
         const { id, description, descriptionColor, label, placeholder, labelPosition, minWidth, required, fullWidth, disabled } = props,
             defaultSelectedOption = getDefaultSelectedOption(props.options, props.value);
 
-        const [inputValue, setInputValue] = useState(defaultSelectedOption.label),
-            [selectedOption, setSelectedOption] = useState(defaultSelectedOption),
-            [options, setOptions] = useState(getOptionsWithSelected(props.options, defaultSelectedOption)),
-            popoverRef = useRef(null),
+        const popoverRef = useRef(null),
+            innerRef = React.useRef(null),
+            inputRef = useCombinedRefs<HTMLInputElement>(ref, innerRef),
             downPress = useKeyPress('ArrowDown'),
             upPress = useKeyPress('ArrowUp'),
-            enterPress = useKeyPress('Enter');
+            enterPress = useKeyPress('Enter'),
+            [inputValue, setInputValue] = useState(defaultSelectedOption.label),
+            [areOptionsVisible, setOptionsVisibilityState] = useState(false),
+            [selectedOption, setSelectedOption] = useState(defaultSelectedOption),
+            [options, setOptions] = useState(getOptionsWithSelected(props.options, defaultSelectedOption));
 
         const updateToDefaultOptions = useCallback(() => setOptions(getOptionsWithSelected(props.options, selectedOption)), [
             props.options,
             selectedOption
         ]);
 
-        const handleWrapperClick = useCallback(() => {
-                setInputValue(selectedOption.label);
-                updateToDefaultOptions();
-            }, [selectedOption.label, updateToDefaultOptions]),
+        const showOptions = () => {
+                setOptionsVisibilityState(true);
+            },
+            hideOptions = () => setOptionsVisibilityState(false),
             handleInputClick = useCallback(
-                // @ts-ignore
-                (e: React.MouseEvent<HTMLInputElement>) => e.target.setSelectionRange(inputValue.length, inputValue.length),
+                (e: React.MouseEvent<HTMLInputElement>) => {
+                    // @ts-ignore
+                    e.target.setSelectionRange(inputValue.length, inputValue.length);
+                },
                 [inputValue]
             ),
             handleInputChange = useCallback(
                 ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
                     setInputValue(value);
-                    const newOptions = filterOptions(options, value);
+                    const newOptions = filterOptions(getOptionsWithSelected(props.options, selectedOption), value);
                     newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
                 },
-                [options, updateToDefaultOptions]
+                [props.options, selectedOption, updateToDefaultOptions]
             ),
-            handleOptionClick = (option: Option) => () => {
-                if (option.value !== selectedOption.value && !option.disabled) {
-                    setInputValue(option.label);
+            selectOption = useCallback(
+                (option: Option) => {
                     setSelectedOption(option);
-                    setOptions(getOptionsWithSelected(props.options, option));
-                    props.onChange && props.onChange(option.value);
-                }
-            },
+                    setOptions(getOptionsWithSelected(options, option));
+                },
+                [options]
+            ),
+            handleOptionClick = useCallback(
+                (option: Option) => {
+                    if (!option.disabled) {
+                        selectOption(option);
+                        setInputValue(option.label);
+                        inputRef.current.blur();
+                        hideOptions();
+                        props.onChange && props.onChange(option.value);
+                    }
+                },
+                [inputRef.current, props.onChange]
+            ),
             handleOuterClick = useCallback(() => {
-                updateToDefaultOptions();
-                setInputValue(selectedOption.label);
-            }, [updateToDefaultOptions, updateToDefaultOptions]);
+                if (areOptionsVisible) {
+                    hideOptions();
+                    updateToDefaultOptions();
+                    setInputValue(selectedOption.label);
+                }
+            }, [areOptionsVisible, selectedOption, updateToDefaultOptions]);
 
         useEffect(() => {
             const selected = getDefaultSelectedOption(props.options, props.value);
@@ -65,44 +84,48 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
 
         useEffect(() => {
             if (downPress && popoverRef.current.style.display === 'block') {
-                handleOptionClick(findNextOption(selectedOption, options))();
+                selectOption(getNextOption(selectedOption, options));
             }
         }, [downPress]);
 
         useEffect(() => {
             if (upPress && popoverRef.current.style.display === 'block') {
-                handleOptionClick(findPrevOption(selectedOption, options))();
+                selectOption(getPrevOption(selectedOption, options));
             }
         }, [upPress]);
 
         useEffect(() => {
             if (enterPress && popoverRef.current.style.display === 'block') {
-                popoverRef.current.click();
+                options.length > 0 && options.find(({ value }) => selectedOption.value === value) && handleOptionClick(selectedOption);
             }
         }, [enterPress]);
 
         return (
             <FieldWithLabel {...{ fullWidth, labelPosition, minWidth }}>
                 {label && <FieldWithLabel.Label {...{ required, labelPosition }}>{label}</FieldWithLabel.Label>}
-                <PopoverWrapper interactionType="click" onOuterClick={handleOuterClick}>
-                    <SelectWrapperStyled {...{ description, fullWidth, labelPosition, disabled }} onClick={handleWrapperClick}>
+                <PopoverWrapper interactionType="click" onOuterClick={handleOuterClick} showPopover={areOptionsVisible}>
+                    <SelectWrapperStyled {...{ description, fullWidth, labelPosition, disabled }} onClick={showOptions}>
                         <Input
                             autoComplete="off"
                             id={id || 'select-input'}
                             type="text"
                             disabled={disabled}
                             required={required}
-                            data-testid="select-input"
+                            data-testid="medly-singleSelect-input"
                             placeholder={placeholder}
                             value={inputValue}
+                            onFocus={showOptions}
                             onClick={handleInputClick}
-                            ref={ref}
+                            ref={inputRef}
                             onChange={handleInputChange}
                         />
-                        <SelectIconStyled />
+                        <SelectIconStyled onClick={showOptions} />
                     </SelectWrapperStyled>
+
                     <Popover fullWidth ref={popoverRef}>
-                        {!disabled && <Options options={options} onOptionClick={handleOptionClick} />}
+                        {!disabled && (
+                            <Options data-testid="medly-singleSelect-options" options={options} onOptionClick={handleOptionClick} />
+                        )}
                     </Popover>
                 </PopoverWrapper>
                 {description && <FieldWithLabel.Description textColor={descriptionColor}>{description}</FieldWithLabel.Description>}

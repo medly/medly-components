@@ -12,8 +12,11 @@ export const getOptionsWithSelected = (options: Option[], selected: DefaultSelec
 
 export const filterOptions = (options: Option[], str: string) => options.filter(op => includesIgnoreCase(op.label, str));
 
-export const findNextOption = (selectedOption: Option, options: Option[]) => {
+export const getNextOption = (selectedOption: Option, options: Option[]) => {
     const currIndex = options.findIndex(op => op.value === selectedOption.value);
+
+    if (currIndex === -1) return options[0];
+
     let nextIndex = currIndex === options.length - 1 ? 0 : currIndex + 1;
 
     if (options[nextIndex].disabled) {
@@ -22,8 +25,11 @@ export const findNextOption = (selectedOption: Option, options: Option[]) => {
     return options[nextIndex];
 };
 
-export const findPrevOption = (selectedOption: Option, options: Option[]) => {
+export const getPrevOption = (selectedOption: Option, options: Option[]) => {
     const currIndex = options.findIndex(op => op.value === selectedOption.value);
+
+    if (currIndex === -1) return options[options.length - 1];
+
     let nextIndex = currIndex === 0 ? options.length - 1 : currIndex - 1;
 
     if (options[nextIndex].disabled) {

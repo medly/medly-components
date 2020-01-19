@@ -4,11 +4,15 @@ import Option from './Option';
 import { OptionsStyled } from './Options.styled';
 import { OptionsProps } from './types';
 
-const Options: React.SFC<OptionsProps> & WithStyle = React.memo(props => {
+const Options: React.SFC<OptionsProps> & WithStyle = React.memo(({ options, onOptionClick, ...restProps }) => {
+    const handleOptionClick = (option: OptionsProps['options'][0]) => () => {
+        onOptionClick(option);
+    };
+
     return (
-        <OptionsStyled>
-            {props.options.map(option => (
-                <Option disabled={option.disabled} key={option.value} option={option} onClick={props.onOptionClick(option)} />
+        <OptionsStyled {...restProps}>
+            {options.map(option => (
+                <Option key={option.value} {...option} onClick={handleOptionClick(option)} />
             ))}
         </OptionsStyled>
     );

@@ -3,6 +3,7 @@ import { boolean, color, number, select, text } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
 import { LabelPositions } from '../Label/types';
 import { SingleSelect } from './SingleSelect';
+import { Option } from './types';
 
 const labelPosition: LabelPositions[] = ['top', 'bottom', 'left', 'right'];
 
@@ -20,6 +21,8 @@ export const ThemeInterface = (props: SelectTheme): any => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.select
 };
+
+export const OptionProps = (props: Option): any => null;
 
 export const Basic = () => {
     const [value, setValue] = useState('Dummy4 option');

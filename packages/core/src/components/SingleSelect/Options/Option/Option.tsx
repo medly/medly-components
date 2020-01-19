@@ -5,21 +5,21 @@ import { OptionStyled } from './Option.styled';
 import { OptionProps } from './types';
 
 const Option: React.SFC<OptionProps> & WithStyle = React.memo(props => {
-    const { option, ...restProps } = props,
-        ref = useRef(null);
+    const ref = useRef(null),
+        { disabled, selected, label, onClick } = props;
 
     useEffect(() => {
-        if (option.selected) {
+        if (selected) {
             ref.current.scrollIntoView({
                 behavior: 'smooth',
                 block: 'nearest'
             });
         }
-    }, [option.selected]);
+    }, [selected]);
 
     return (
-        <OptionStyled ref={ref} selected={option.selected} {...restProps}>
-            <Text>{option.label}</Text>
+        <OptionStyled ref={ref} disabled={disabled} selected={selected} onClick={onClick}>
+            <Text>{label}</Text>
         </OptionStyled>
     );
 });

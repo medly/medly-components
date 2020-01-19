@@ -5,6 +5,4 @@ export interface OptionStyledProps extends HTMLProps<HTMLLIElement>, WithThemePr
     selected: boolean;
 }
 
-export interface OptionProps extends HTMLProps<HTMLLIElement> {
-    option: Option;
-}
+export type OptionProps = Option & HTMLProps<HTMLLIElement>;

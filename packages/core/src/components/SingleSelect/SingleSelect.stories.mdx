@@ -12,9 +12,23 @@ import * as stories from './SingleSelect.stories';
     <Story name="Basic">{stories.Basic()}</Story>
 </Preview>
 
+### Keyboard Support
+
+It also supports keyboard navigation when it is in focus
+
+| Key        | Function                           |
+| ---------- | ---------------------------------- |
+| Down Arrow | Moves focus to the next option     |
+| Up Arrow   | Moves focus to the previous option |
+| Enter      | Select the focused option          |
+
 ### Props
 
 <Props of={SingleSelect} />
+
+### Option Props
+
+<Props of={stories.OptionProps} />
 
 ### SelectTheme
 
