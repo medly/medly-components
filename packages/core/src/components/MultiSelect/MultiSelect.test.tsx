@@ -19,6 +19,8 @@ describe('MultiSelect component', () => {
     ];
 
     describe.each([true, false])('with checkbox %p', showCheckbox => {
+        afterEach(cleanup);
+
         it('should render correctly with default props', () => {
             const mockOnChange = jest.fn(),
                 { container } = render(<MultiSelect showCheckbox={showCheckbox} options={options} onChange={mockOnChange} />);
@@ -47,17 +49,17 @@ describe('MultiSelect component', () => {
             expect(container).toMatchSnapshot();
         });
 
-        it('should render options correctly', () => {
+        it('should show options on click on input', () => {
             const mockOnChange = jest.fn(),
-                { container, getByTestId } = render(<MultiSelect showCheckbox={showCheckbox} options={options} onChange={mockOnChange} />);
+                { getByTestId } = render(<MultiSelect showCheckbox={showCheckbox} options={options} onChange={mockOnChange} />);
             const inputEl = getByTestId('select-input');
             fireEvent.click(inputEl);
-            expect(container).toMatchSnapshot();
+            expect(getByTestId('medly-popover')).toBeVisible();
         });
 
-        it('should not render options when clicked outside', () => {
+        it('should hide options when clicked outside', () => {
             const mockOnChange = jest.fn(),
-                { container, getByTestId, getByText } = render(
+                { getByTestId, getByText } = render(
                     <div>
                         <p>Outer Element</p>
                         <MultiSelect showCheckbox={showCheckbox} options={options} onChange={mockOnChange} />
@@ -66,7 +68,19 @@ describe('MultiSelect component', () => {
             const inputEl = getByTestId('select-input');
             fireEvent.click(inputEl);
             fireEvent.click(getByText('Outer Element'));
-            expect(container).toMatchSnapshot();
+            expect(getByTestId('medly-popover')).not.toBeVisible();
+        });
+
+        it('should not render options when clicked outside', () => {
+            const mockOnChange = jest.fn(),
+                { getByTestId, getByText } = render(
+                    <div>
+                        <p>Outer Element</p>
+                        <MultiSelect showCheckbox={showCheckbox} options={options} onChange={mockOnChange} />
+                    </div>
+                );
+            fireEvent.click(getByText('Outer Element'));
+            expect(getByTestId('medly-popover')).not.toBeVisible();
         });
 
         it('should call onChange prop on selecting one of the prop', () => {
@@ -74,8 +88,7 @@ describe('MultiSelect component', () => {
                 { getByTestId, getByText } = render(<MultiSelect showCheckbox={showCheckbox} options={options} onChange={mockOnChange} />),
                 inputEl = getByTestId('select-input');
             fireEvent.click(inputEl);
-            const option = getByText('Dummy1');
-            fireEvent.click(option);
+            fireEvent.click(getByText('Dummy1'));
             expect(mockOnChange).toHaveBeenCalledWith(['Dummy1']);
         });
 
@@ -86,26 +99,26 @@ describe('MultiSelect component', () => {
                 ),
                 inputEl = getByTestId('select-input');
             fireEvent.click(inputEl);
-            const option = getAllByText('Dummy1')[1];
-            fireEvent.click(option);
+            fireEvent.click(getAllByText('Dummy1')[1]);
             expect(mockOnChange).toHaveBeenCalledWith(['Dummy2']);
         });
 
         it('should handle group name click as expected', () => {
             const mockOnChange = jest.fn(),
-                { container, getByTestId, getByText } = render(
+                { getByTestId, getByText, getAllByText } = render(
                     <div>
                         <p>Outer Element</p>
-                        <MultiSelect values={['Dummy1', 'Dummy2']} showCheckbox={showCheckbox} options={options} onChange={mockOnChange} />
+                        <MultiSelect values={['Dummy2']} showCheckbox={showCheckbox} options={options} onChange={mockOnChange} />
                     </div>
                 );
             const inputEl = getByTestId('select-input');
             fireEvent.click(inputEl);
             fireEvent.click(getByText('Nested Options'));
-            expect(container).toMatchSnapshot();
-            fireEvent.click(inputEl);
+            expect(getAllByText('Dummy2').length).toEqual(2);
+            expect(getAllByText('Dummy3').length).toEqual(showCheckbox ? 2 : 1);
             fireEvent.click(getByText('Nested Options'));
-            expect(container).toMatchSnapshot();
+            expect(getAllByText('Dummy2').length).toEqual(showCheckbox ? 1 : 2);
+            expect(getAllByText('Dummy3').length).toEqual(1);
         });
 
         it('should call onChange prop with expected selected values after deleting one of the chip', () => {
@@ -125,20 +138,28 @@ describe('MultiSelect component', () => {
 
         it('should render only matched options when input value changed', async () => {
             const mockOnChange = jest.fn(),
-                { container, getByTestId } = render(<MultiSelect showCheckbox={showCheckbox} options={options} onChange={mockOnChange} />),
+                { queryByText, getByTestId } = render(
+                    <MultiSelect showCheckbox={showCheckbox} options={options} onChange={mockOnChange} />
+                ),
                 inputEl = getByTestId('select-input');
             fireEvent.click(inputEl);
             fireEvent.change(inputEl, { target: { value: 'Dummy2' } });
-            expect(container).toMatchSnapshot();
+            expect(queryByText('Dummy2')).toBeVisible();
+            expect(queryByText('Dummy1')).toBeNull();
         });
 
         it('should render all the options when input value is not matched to any option', async () => {
             const mockOnChange = jest.fn(),
-                { container, getByTestId } = render(<MultiSelect showCheckbox={showCheckbox} options={options} onChange={mockOnChange} />),
+                { queryByText, getByTestId } = render(
+                    <MultiSelect showCheckbox={showCheckbox} options={options} onChange={mockOnChange} />
+                ),
                 inputEl = getByTestId('select-input');
             fireEvent.click(inputEl);
             fireEvent.change(inputEl, { target: { value: 'Hello' } });
-            expect(container).toMatchSnapshot();
+            expect(queryByText('All')).toBeVisible();
+            expect(queryByText('Dummy1')).toBeVisible();
+            expect(queryByText('Dummy2')).toBeVisible();
+            expect(queryByText('Dummy3')).toBeVisible();
         });
 
         it('should close options when clicked outside', async () => {
@@ -153,7 +174,7 @@ describe('MultiSelect component', () => {
                 outer = getByText('Outer');
             fireEvent.click(inputEl);
             fireEvent.click(outer);
-            expect(container).toMatchSnapshot();
+            expect(getByTestId('medly-popover')).not.toBeVisible();
         });
     });
 });

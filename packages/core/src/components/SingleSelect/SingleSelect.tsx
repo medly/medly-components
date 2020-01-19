@@ -29,10 +29,8 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
             selectedOption
         ]);
 
-        const showOptions = () => {
-                setOptionsVisibilityState(true);
-            },
-            hideOptions = () => setOptionsVisibilityState(false),
+        const showOptions = useCallback(() => setOptionsVisibilityState(true), []),
+            hideOptions = useCallback(() => setOptionsVisibilityState(false), []),
             handleInputClick = useCallback(
                 (e: React.MouseEvent<HTMLInputElement>) => {
                     // @ts-ignore

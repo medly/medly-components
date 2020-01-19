@@ -15,6 +15,7 @@ export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
 
         const [inputValue, setInputValue] = useState(''),
             [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(props.options, props.values)),
+            [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [options, setOptions] = useState(props.options),
             [placeholder, setPlaceholder] = useState(
                 props.values.length > 0 ? `${props.values.length} options selected` : props.placeholder
@@ -29,9 +30,11 @@ export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
             setPlaceholder(selectedOptions.length > 0 ? `${selectedOptions.length} options selected` : props.placeholder);
         }, [selectedOptions]);
 
-        const updateToDefaultOptions = useCallback(() => setOptions(props.options), [props.options]);
-
-        const handleWrapperClick = useCallback(() => {
+        const showOptions = useCallback(() => setOptionsVisibilityState(true), []),
+            hideOptions = useCallback(() => setOptionsVisibilityState(false), []),
+            updateToDefaultOptions = useCallback(() => setOptions(props.options), [props.options]),
+            handleWrapperClick = useCallback(() => {
+                showOptions();
                 setInputValue('');
                 updateToDefaultOptions();
             }, [updateToDefaultOptions]),
@@ -53,16 +56,18 @@ export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
             handleOptionClick = useCallback(
                 (values: any[]) => {
                     setInputValue('');
-                    const selected = getDefaultSelectedOptions(options, values);
-                    setSelectedOptions(selected);
+                    setSelectedOptions(getDefaultSelectedOptions(options, values));
                     props.onChange && props.onChange(values);
                 },
                 [options, props.onChange]
             ),
             handleOuterClick = useCallback(() => {
-                updateToDefaultOptions();
-                setInputValue('');
-            }, []),
+                if (areOptionsVisible) {
+                    hideOptions();
+                    setInputValue('');
+                    updateToDefaultOptions();
+                }
+            }, [areOptionsVisible]),
             handleChipDelete = (value: any) => () => {
                 setInputValue('');
                 const newSelectedOptions = selectedOptions.filter(so => so.value !== value).map(op => op.value);
@@ -73,8 +78,12 @@ export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
         return (
             <FieldWithLabel {...{ fullWidth, labelPosition, minWidth }}>
                 {label && <FieldWithLabel.Label {...{ required, labelPosition }}>{label}</FieldWithLabel.Label>}
-                <PopoverWrapper interactionType="click" onOuterClick={handleOuterClick}>
-                    <SelectWrapperStyled {...{ description, fullWidth, labelPosition, disabled }} onClick={handleWrapperClick}>
+                <PopoverWrapper interactionType="click" onOuterClick={handleOuterClick} showPopover={areOptionsVisible}>
+                    <SelectWrapperStyled
+                        {...{ description, fullWidth, labelPosition, disabled }}
+                        onClick={handleWrapperClick}
+                        data-testid="medly-multiSelect-container"
+                    >
                         {props.showChips &&
                             selectedOptions.map(op => (
                                 <Chip key={op.value} disabled={disabled} label={op.label} onDelete={handleChipDelete(op.value)} />
