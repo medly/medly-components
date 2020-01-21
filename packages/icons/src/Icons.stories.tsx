@@ -4,6 +4,7 @@ import React from 'react';
 import IconContainer from './IconContainer';
 import { AddIcon } from './icons/AddIcon';
 import { AuditIcon } from './icons/AuditIcon';
+import { BillIcon } from './icons/BillIcon';
 import { BugIcon } from './icons/BugIcon';
 import BurgerIcon from './icons/BurgerIcon';
 import { CheckCircleIcon } from './icons/CheckCircleIcon';
@@ -55,6 +56,7 @@ export const Basic = (props: Omit<Props, keyof SVGProp>) => (
     <IconContainer>
         <AuditIcon key="audit" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <AddIcon key="add" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
+        <BillIcon key="bill" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <BugIcon key="bug" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <BurgerIcon key="bug" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <CheckCircleIcon key="checkcircle" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />

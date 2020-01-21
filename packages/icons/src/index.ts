@@ -3,6 +3,7 @@ export { default as SvgIcon } from './SvgIcon';
 export { default as BurgerIcon } from './icons/BurgerIcon';
 export * from './icons/AddIcon';
 export * from './icons/AuditIcon';
+export * from './icons/BillIcon';
 export * from './icons/BugIcon';
 export * from './icons/CheckIcon';
 export * from './icons/ContractIcon';
