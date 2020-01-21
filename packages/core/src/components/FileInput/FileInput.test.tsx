@@ -26,7 +26,6 @@ describe('FileInput component', () => {
                 // @ts-ignore
                 files={[foo, bar]}
                 onChange={mockOnChange}
-                id="email-input"
                 fullWidth
                 label="Email Address"
                 labelPosition="top"
@@ -43,8 +42,8 @@ describe('FileInput component', () => {
         const mockOnFocus = jest.fn();
         const mockOnChange = jest.fn();
         // @ts-ignore
-        const { getByTestId } = TestUtils.render(<FileInput disabled files={[]} onFocus={mockOnFocus} onChange={mockOnChange} />);
-        const label = getByTestId('file-input-label');
+        const { container } = TestUtils.render(<FileInput disabled files={[]} onFocus={mockOnFocus} onChange={mockOnChange} />);
+        const label = container.querySelector('#medly-file-input-label');
         TestUtils.fireEvent.click(label);
         expect(mockOnFocus).toHaveBeenCalled();
     });
@@ -53,8 +52,8 @@ describe('FileInput component', () => {
         const mockOnFocus = jest.fn();
         const mockOnChange = jest.fn();
         // @ts-ignore
-        const { getByTestId } = TestUtils.render(<FileInput files={[]} onFocus={mockOnFocus} onChange={mockOnChange} />),
-            input = getByTestId('file-input');
+        const { container } = TestUtils.render(<FileInput files={[]} onFocus={mockOnFocus} onChange={mockOnChange} />),
+            input = container.querySelector('#medly-file-input');
 
         Object.defineProperty(input, 'files', {
             value: [foo, bar]

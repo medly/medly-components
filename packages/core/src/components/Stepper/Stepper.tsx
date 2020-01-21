@@ -6,9 +6,9 @@ import { Props, StepperStaticProps } from './types';
 
 export const Stepper: SFC<Props> & WithStyle & StepperStaticProps = React.memo(
     React.forwardRef((props, ref) => {
-        const { size, activeStep, children, onStepClick } = props;
+        const { size, activeStep, children, onStepClick, ...restProps } = props;
         return (
-            <StepperStyled ref={ref}>
+            <StepperStyled ref={ref} {...restProps}>
                 {React.Children.map(children, (child, index) => {
                     return React.cloneElement(child as any, {
                         size,

@@ -5,7 +5,8 @@ import { Props } from './types';
 
 export const PopoverWrapper: SFC<Props> & WithStyle = React.memo(props => {
     const wrapperRef = useRef(null),
-        { onOuterClick, showPopover, ...restProps } = props;
+        { onOuterClick, showPopover, ...restProps } = props,
+        id = props.id || 'medly-popover-wrapper';
 
     const changePopoverState = useCallback(
         (state: boolean) => {
@@ -27,7 +28,7 @@ export const PopoverWrapper: SFC<Props> & WithStyle = React.memo(props => {
         onOuterClick && onOuterClick();
     }, wrapperRef);
 
-    return <PopoverWrapperStyled {...restProps} ref={wrapperRef} data-testid="medly-popover-wrapper" />;
+    return <PopoverWrapperStyled {...restProps} ref={wrapperRef} id={id} />;
 });
 
 PopoverWrapper.displayName = 'PopoverWrapper';

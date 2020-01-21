@@ -164,6 +164,7 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
 <div>
   <div
     class="c0"
+    id="Gender-radioGroup"
   >
     <label
       class="c1 c2"
@@ -176,6 +177,7 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
     >
       <div
         class="c5"
+        id="Female-radio"
       >
         <label
           class="c6 c2"
@@ -202,6 +204,7 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
       </div>
       <div
         class="c5"
+        id="Male-radio"
       >
         <label
           class="c6 c2"
@@ -369,6 +372,7 @@ exports[`Radio Group should render correctly 1`] = `
 <div>
   <div
     class="c0"
+    id="Gender-radioGroup"
   >
     <label
       class="c1 c2"
@@ -380,6 +384,7 @@ exports[`Radio Group should render correctly 1`] = `
     >
       <div
         class="c5"
+        id="Female-radio"
       >
         <label
           class="c6 c2"
@@ -407,6 +412,7 @@ exports[`Radio Group should render correctly 1`] = `
       </div>
       <div
         class="c5"
+        id="Male-radio"
       >
         <label
           class="c6 c2"

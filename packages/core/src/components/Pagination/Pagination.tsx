@@ -8,7 +8,16 @@ import { PaginationProps } from './types';
 export const Pagination: SFC<PaginationProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const links = [],
-            { hideFirstLastLinks, hidePrevNextLinks, activePage, itemsPerPage, totalItems, pageRangeDisplayed, onPageClick } = props,
+            {
+                hideFirstLastLinks,
+                hidePrevNextLinks,
+                activePage,
+                itemsPerPage,
+                totalItems,
+                pageRangeDisplayed,
+                onPageClick,
+                ...restProps
+            } = props,
             pagesConfig = useMemo(() => paginator(totalItems, activePage, itemsPerPage, pageRangeDisplayed), [
                 totalItems,
                 activePage,
@@ -70,7 +79,7 @@ export const Pagination: SFC<PaginationProps> & WithStyle = React.memo(
         }
 
         return (
-            <List ref={ref} variant="horizontal">
+            <List ref={ref} variant="horizontal" {...restProps}>
                 {links}
             </List>
         );

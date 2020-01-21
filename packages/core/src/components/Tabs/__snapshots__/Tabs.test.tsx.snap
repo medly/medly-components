@@ -94,9 +94,11 @@ exports[`Tabs should hide the tab if hide prop is given 1`] = `
 <div>
   <div
     class=""
+    id="medly-tabs"
   >
     <div
       class="c0"
+      id="medly-tabs-list"
     >
       <button
         aria-controls="panel-tab1"
@@ -117,7 +119,7 @@ exports[`Tabs should hide the tab if hide prop is given 1`] = `
     <div
       aria-labelledby="tab1"
       class="c3"
-      id="panel-tab1"
+      id="medly-tabs-panel-tab1"
       role="tabpanel"
       tabindex="0"
     >
@@ -266,9 +268,11 @@ exports[`Tabs should render properly without any prop 1`] = `
 <div>
   <div
     class=""
+    id="medly-tabs"
   >
     <div
       class="c0"
+      id="medly-tabs-list"
     >
       <button
         aria-controls="panel-tab1"
@@ -304,7 +308,7 @@ exports[`Tabs should render properly without any prop 1`] = `
     <div
       aria-labelledby="tab1"
       class="c4"
-      id="panel-tab1"
+      id="medly-tabs-panel-tab1"
       role="tabpanel"
       tabindex="0"
     >
@@ -451,9 +455,11 @@ exports[`Tabs should select expected tab on click on any tab, when only defaultA
 <div>
   <div
     class=""
+    id="medly-tabs"
   >
     <div
       class="c0"
+      id="medly-tabs-list"
     >
       <button
         aria-controls="panel-tab1"
@@ -489,7 +495,7 @@ exports[`Tabs should select expected tab on click on any tab, when only defaultA
     <div
       aria-labelledby="tab2"
       class="c4"
-      id="panel-tab2"
+      id="medly-tabs-panel-tab2"
       role="tabpanel"
       tabindex="0"
     >

@@ -6,15 +6,16 @@ import { Props } from './types';
 
 export const Input: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { id, description, label, labelPosition, fullWidth, required, descriptionColor } = props;
+        const { description, label, labelPosition, fullWidth, required, descriptionColor } = props,
+            id = props.id || 'medly-input';
         return (
-            <FieldWithLabel {...{ fullWidth, labelPosition }}>
+            <FieldWithLabel id={`${id}-field`} {...{ fullWidth, labelPosition }}>
                 {label && (
-                    <FieldWithLabel.Label htmlFor={id || 'input'} {...{ required, labelPosition }}>
+                    <FieldWithLabel.Label htmlFor={id} {...{ required, labelPosition }}>
                         {label}
                     </FieldWithLabel.Label>
                 )}
-                <InputStyled id={id || 'input'} ref={ref} {...props} />
+                <InputStyled id={id} ref={ref} {...props} />
                 {description && <FieldWithLabel.Description textColor={descriptionColor}>{description}</FieldWithLabel.Description>}
             </FieldWithLabel>
         );

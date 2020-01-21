@@ -30,7 +30,7 @@ export const RadioGroup: SFC<Props> & WithStyle = React.memo(
             [onChange]
         );
         return (
-            <FieldWithLabel ref={ref} fullWidth {...{ fullWidth, labelPosition }}>
+            <FieldWithLabel id={`${label}-radioGroup`} ref={ref} fullWidth {...{ fullWidth, labelPosition }}>
                 {label && (
                     <FieldWithLabel.Label {...{ required, labelPosition, labelSize, labelWeight, labelColor }}>
                         {label}

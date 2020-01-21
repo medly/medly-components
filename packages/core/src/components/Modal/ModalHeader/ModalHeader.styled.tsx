@@ -1,7 +1,7 @@
-import { ClearIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
-import { styled, WithThemeProp } from '@medly-components/utils';
+import { styled } from '@medly-components/utils';
 import Button from '../../Button';
+import { Props } from './types';
 
 export const CloseButton = styled(Button)`
     padding: 0px;
@@ -12,7 +12,7 @@ CloseButton.defaultProps = {
     theme: defaultTheme
 };
 
-export const ModalHeaderStyled = styled('div')<WithThemeProp>`
+export const ModalHeaderStyled = styled('div')<Props>`
     color: ${({ theme }) => theme.modal.headerColor};
     display: flex;
     justify-content: space-between;

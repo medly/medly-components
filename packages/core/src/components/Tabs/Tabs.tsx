@@ -9,6 +9,7 @@ import { Props, StaticProps } from './types';
 export const Tabs: React.SFC<Props> & StaticProps & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { defaultActive, active, onChange, children, ...restProps } = props,
+            tabsId = props.id || 'medly-tabs',
             tabIds = useMemo(() => (children ? React.Children.map(children, (child: any) => child.props.id) : [undefined]), [children]),
             [key, setKey] = useState(defaultActive || tabIds[0]),
             activeTab = useMemo(() => active || key, [active, key]);
@@ -24,11 +25,13 @@ export const Tabs: React.SFC<Props> & StaticProps & WithStyle = React.memo(
         if (React.Children.count(children) === 0) return null;
 
         return (
-            <Styled.Tabs ref={ref}>
-                <TabList {...restProps} active={activeTab} onChange={handleTabChange}>
+            <Styled.Tabs id={tabsId} ref={ref}>
+                <TabList {...restProps} id={`${tabsId}-list`} active={activeTab} onChange={handleTabChange}>
                     {children}
                 </TabList>
-                <TabPanel active={activeTab}>{children}</TabPanel>
+                <TabPanel id={`${tabsId}-panel`} active={activeTab}>
+                    {children}
+                </TabPanel>
             </Styled.Tabs>
         );
     })

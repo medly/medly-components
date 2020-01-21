@@ -159,6 +159,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
 <div>
   <div
     class="c0"
+    id="Cars-checkboxGroup"
   >
     <label
       class="c1 c2"
@@ -170,6 +171,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
     >
       <div
         class="c5"
+        id="Honda-checkbox"
       >
         <label
           class="c6 c2"
@@ -209,6 +211,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
       </div>
       <div
         class="c5"
+        id="Hyundai-checkbox"
       >
         <label
           class="c6 c2"
@@ -248,6 +251,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
       </div>
       <div
         class="c0"
+        id="Tata-checkboxGroup"
       >
         <label
           class="c1 c2"
@@ -259,6 +263,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
         >
           <div
             class="c5"
+            id="Jaguar-checkbox"
           >
             <label
               class="c6 c2"
@@ -298,6 +303,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
           </div>
           <div
             class="c5"
+            id="Land Rover-checkbox"
           >
             <label
               class="c6 c2"

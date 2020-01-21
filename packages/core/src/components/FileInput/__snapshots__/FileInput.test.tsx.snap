@@ -88,6 +88,7 @@ exports[`FileInput component should render properly with all props 1`] = `
 <div>
   <div
     class="c0"
+    id="medly-file-input-field"
   >
     <label
       class="c1 c2"
@@ -97,14 +98,13 @@ exports[`FileInput component should render properly with all props 1`] = `
     </label>
     <label
       class="c3"
-      data-testid="file-input-label"
       disabled=""
+      id="medly-file-input-label"
     >
       foo.txt, bar.txt
       <input
         class="c4"
-        data-testid="email-input"
-        id="email-input"
+        id="medly-file-input"
         required=""
         type="file"
       />
@@ -175,17 +175,17 @@ exports[`FileInput component should render properly with default props 1`] = `
 <div>
   <div
     class="c0"
+    id="medly-file-input-field"
   >
     
     <label
       class="c1"
-      data-testid="file-input-label"
+      id="medly-file-input-label"
     >
       Click to choose file
       <input
         class="c2"
-        data-testid="file-input"
-        id="file-input"
+        id="medly-file-input"
         type="file"
       />
     </label>

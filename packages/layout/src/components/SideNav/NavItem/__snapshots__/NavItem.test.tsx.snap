@@ -386,7 +386,7 @@ exports[`NavItem should be able to click on nested item 1`] = `
 
 <div
   class="c0"
-  data-testid="sidenav"
+  id="medly-sidenav"
   open=""
 >
   <div
@@ -865,7 +865,7 @@ exports[`NavItem should fold the open item on click on it 1`] = `
 
 <div
   class="c0"
-  data-testid="sidenav"
+  id="medly-sidenav"
   open=""
 >
   <div
@@ -1278,7 +1278,7 @@ exports[`NavItem should render properly 1`] = `
 <div>
   <div
     class="c0"
-    data-testid="sidenav"
+    id="medly-sidenav"
   >
     <div
       class="c1"

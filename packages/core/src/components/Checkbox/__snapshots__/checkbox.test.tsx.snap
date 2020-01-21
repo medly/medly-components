@@ -109,6 +109,7 @@ exports[`Checkbox component should render correctly with all the default props 1
 <div>
   <div
     class="c0"
+    id="-checkbox"
   >
     
     <div
@@ -271,6 +272,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
 <div>
   <div
     class="c0"
+    id="Female-checkbox"
   >
     <label
       class="c1 c2"

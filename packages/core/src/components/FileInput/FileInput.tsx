@@ -7,7 +7,6 @@ import { Props } from './types';
 export const FileInput: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
-                id,
                 files,
                 disabled,
                 onFocus,
@@ -21,7 +20,7 @@ export const FileInput: SFC<Props> & WithStyle = React.memo(
                 descriptionColor,
                 ...restProps
             } = props,
-            inputId = id || 'file-input';
+            id = props.id || 'medly-file-input';
 
         const handleLabelClick = useCallback(
                 (event: any) => {
@@ -50,19 +49,11 @@ export const FileInput: SFC<Props> & WithStyle = React.memo(
                 placeholder
             ]);
         return (
-            <FieldWithLabel {...{ fullWidth, labelPosition }}>
+            <FieldWithLabel id={`${id}-field`} {...{ fullWidth, labelPosition }}>
                 {label && <FieldWithLabel.Label {...{ required, labelPosition }}>{label}</FieldWithLabel.Label>}
-                <Styled.Label data-testid="file-input-label" onClick={handleLabelClick} disabled={disabled} fullWidth={fullWidth}>
+                <Styled.Label id={`${id}-label`} onClick={handleLabelClick} disabled={disabled} fullWidth={fullWidth}>
                     {inputPlaceholder}
-                    <Styled.Input
-                        id={inputId}
-                        ref={ref}
-                        data-testid={inputId}
-                        files={files}
-                        required={required}
-                        {...restProps}
-                        onChange={handleOnChange}
-                    />
+                    <Styled.Input id={id} ref={ref} files={files} required={required} {...restProps} onChange={handleOnChange} />
                 </Styled.Label>
                 {description && <FieldWithLabel.Description textColor={descriptionColor}>{description}</FieldWithLabel.Description>}
             </FieldWithLabel>

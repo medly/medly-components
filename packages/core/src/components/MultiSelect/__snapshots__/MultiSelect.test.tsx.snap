@@ -309,20 +309,22 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 <div>
   <div
     class="c0 c1"
+    id="medly-multiSelect-field"
   >
     <label
       class="c2 c3 c4"
+      for="medly-multiSelect"
     >
       Pharmacy
     </label>
     <div
       class="c5"
-      data-testid="medly-popover-wrapper"
+      id="medly-popover-wrapper"
     >
       <div
         class="c6"
-        data-testid="medly-multiSelect-container"
         disabled=""
+        id="medly-multiSelect-container"
       >
         <button
           class="c7"
@@ -347,17 +349,16 @@ exports[`MultiSelect component with checkbox false should render correctly with 
         </button>
         <div
           class="c0 c12"
+          id="medly-multiSelect-input-field"
         >
           
           <input
             autocomplete="off"
             class="c13 c14"
-            data-testid="select-input"
             disabled=""
-            id="select-input"
+            id="medly-multiSelect-input"
             label=""
             placeholder="1 options selected"
-            type="text"
             value=""
           />
           
@@ -377,7 +378,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
       </div>
       <div
         class="c17 c18"
-        data-testid="medly-popover"
+        id="medly-multiSelect-popover"
         style="display: none;"
       />
     </div>
@@ -678,28 +679,28 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 <div>
   <div
     class="c0 c1"
+    id="medly-multiSelect-field"
   >
     
     <div
       class="c2"
-      data-testid="medly-popover-wrapper"
+      id="medly-popover-wrapper"
     >
       <div
         class="c3"
-        data-testid="medly-multiSelect-container"
+        id="medly-multiSelect-container"
       >
         <div
           class="c0 c4"
+          id="medly-multiSelect-input-field"
         >
           
           <input
             autocomplete="off"
             class="c5 c6"
-            data-testid="select-input"
-            id="select-input"
+            id="medly-multiSelect-input"
             label=""
             placeholder="Please Select . . ."
-            type="text"
             value=""
           />
           
@@ -719,7 +720,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
       </div>
       <div
         class="c10 c11"
-        data-testid="medly-popover"
+        id="medly-multiSelect-popover"
         style="display: none;"
       >
         <ul
@@ -1088,20 +1089,22 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 <div>
   <div
     class="c0 c1"
+    id="medly-multiSelect-field"
   >
     <label
       class="c2 c3 c4"
+      for="medly-multiSelect"
     >
       Pharmacy
     </label>
     <div
       class="c5"
-      data-testid="medly-popover-wrapper"
+      id="medly-popover-wrapper"
     >
       <div
         class="c6"
-        data-testid="medly-multiSelect-container"
         disabled=""
+        id="medly-multiSelect-container"
       >
         <button
           class="c7"
@@ -1126,17 +1129,16 @@ exports[`MultiSelect component with checkbox true should render correctly with a
         </button>
         <div
           class="c0 c12"
+          id="medly-multiSelect-input-field"
         >
           
           <input
             autocomplete="off"
             class="c13 c14"
-            data-testid="select-input"
             disabled=""
-            id="select-input"
+            id="medly-multiSelect-input"
             label=""
             placeholder="1 options selected"
-            type="text"
             value=""
           />
           
@@ -1156,7 +1158,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
       </div>
       <div
         class="c17 c18"
-        data-testid="medly-popover"
+        id="medly-multiSelect-popover"
         style="display: none;"
       />
     </div>
@@ -1529,28 +1531,28 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 <div>
   <div
     class="c0 c1"
+    id="medly-multiSelect-field"
   >
     
     <div
       class="c2"
-      data-testid="medly-popover-wrapper"
+      id="medly-popover-wrapper"
     >
       <div
         class="c3"
-        data-testid="medly-multiSelect-container"
+        id="medly-multiSelect-container"
       >
         <div
           class="c0 c4"
+          id="medly-multiSelect-input-field"
         >
           
           <input
             autocomplete="off"
             class="c5 c6"
-            data-testid="select-input"
-            id="select-input"
+            id="medly-multiSelect-input"
             label=""
             placeholder="Please Select . . ."
-            type="text"
             value=""
           />
           
@@ -1570,7 +1572,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
       </div>
       <div
         class="c10 c11"
-        data-testid="medly-popover"
+        id="medly-multiSelect-popover"
         style="display: none;"
       >
         <ul
@@ -1578,6 +1580,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
         >
           <div
             class="c0 c13"
+            id="All-checkbox"
           >
             <label
               class="c14 c15 c16"
@@ -1616,6 +1619,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
           </div>
           <div
             class="c0 c13"
+            id="Dummy1-checkbox"
           >
             <label
               class="c14 c15 c16"
@@ -1654,12 +1658,14 @@ exports[`MultiSelect component with checkbox true should render correctly with d
           </div>
           <div
             class="c0 c22"
+            id="Nested Options-checkboxGroup"
           >
             <label
               class="c23 c15 c16"
             >
               <div
                 class="c0 c13"
+                id="Nested Options-checkbox"
               >
                 <label
                   class="c14 c15 c16"
@@ -1700,6 +1706,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
             >
               <div
                 class="c0 c13"
+                id="Dummy2-checkbox"
               >
                 <label
                   class="c14 c15 c16"
@@ -1737,6 +1744,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
               </div>
               <div
                 class="c0 c13"
+                id="Dummy3-checkbox"
               >
                 <label
                   class="c14 c15 c16"

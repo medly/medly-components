@@ -18,7 +18,7 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
         );
 
         return (
-            <FieldWithLabel fieldWithMaxContent {...{ fullWidth, labelPosition }}>
+            <FieldWithLabel id={`${label}-checkbox`} fieldWithMaxContent {...{ fullWidth, labelPosition }}>
                 {label && (
                     <FieldWithLabel.Label
                         showPointer={!restProps.disabled}

@@ -249,6 +249,7 @@ exports[`Cell should render checkbox properly 1`] = `
   >
     <div
       class="c1 c2"
+      id="Dummy-checkbox"
     >
       <label
         class="c3 c4"

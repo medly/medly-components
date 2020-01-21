@@ -45,23 +45,23 @@ describe('NavItem', () => {
 
     it('should be able to click on nested item', () => {
         const mockOnClick = jest.fn();
-        const { container, getByText, getByTestId } = renderer(mockOnClick);
+        const { container, getByText } = renderer(mockOnClick);
         act(() => {
             fireEvent.click(container.querySelector('button'));
             fireEvent.click(getByText('Search'));
             fireEvent.click(getByText('Cars'));
         });
         expect(mockOnClick).toBeCalled();
-        expect(getByTestId('sidenav')).toMatchSnapshot();
+        expect(container.querySelector('#medly-sidenav')).toMatchSnapshot();
     });
 
     it('should fold the open item on click on it', () => {
         const mockOnClick = jest.fn();
-        const { container, getByText, getByTestId } = renderer(mockOnClick);
+        const { container, getByText } = renderer(mockOnClick);
         fireEvent.click(container.querySelector('button'));
         fireEvent.click(getByText('Search'));
         fireEvent.click(getByText('Search'));
 
-        expect(getByTestId('sidenav')).toMatchSnapshot();
+        expect(container.querySelector('#medly-sidenav')).toMatchSnapshot();
     });
 });

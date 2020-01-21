@@ -37,8 +37,8 @@ describe('Modal component', () => {
 
     it('should call onCloseModal on click on close icon', () => {
         const mockOnCloseModal = jest.fn();
-        const { getByTestId } = renderer({ open: true, onCloseModal: mockOnCloseModal });
-        TestUtils.fireEvent.click(getByTestId('modal-close-button'));
+        const { container } = renderer({ open: true, onCloseModal: mockOnCloseModal });
+        TestUtils.fireEvent.click(container.querySelector('#medly-modal-close-button'));
         expect(mockOnCloseModal).toBeCalled();
     });
 

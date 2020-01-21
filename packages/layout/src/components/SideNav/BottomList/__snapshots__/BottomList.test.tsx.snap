@@ -218,7 +218,7 @@ exports[`BottomList should render properly 1`] = `
 <div>
   <div
     class="c0"
-    data-testid="sidenav"
+    id="medly-sidenav"
   >
     <div
       class="c1"

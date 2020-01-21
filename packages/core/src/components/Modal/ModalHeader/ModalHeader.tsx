@@ -4,8 +4,9 @@ import React, { useContext } from 'react';
 import Text from '../../Text';
 import CloseModalContext from '../CloseModalContext';
 import { CloseButton, ModalHeaderStyled } from './ModalHeader.styled';
+import { Props } from './types';
 
-export const ModalHeader: React.SFC & WithStyle = React.memo(props => {
+export const ModalHeader: React.SFC<Props> & WithStyle = React.memo(props => {
     const handleClose = useContext(CloseModalContext);
     return (
         <ModalHeaderStyled {...props}>
@@ -18,7 +19,7 @@ export const ModalHeader: React.SFC & WithStyle = React.memo(props => {
                     c
                 );
             })}
-            <CloseButton variant="flat" data-testid="modal-close-button" onClick={handleClose}>
+            <CloseButton variant="flat" id={`${props.id || 'medly-modal'}-close-button`} onClick={handleClose}>
                 <ClearIcon />
             </CloseButton>
         </ModalHeaderStyled>

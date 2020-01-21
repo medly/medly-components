@@ -14,7 +14,7 @@ exports[`TabPanel should render only avtive tab content 1`] = `
   <div
     aria-labelledby="tab1"
     class="c0"
-    id="panel-tab1"
+    id="tab-panel-tab1"
     role="tabpanel"
     tabindex="0"
   >

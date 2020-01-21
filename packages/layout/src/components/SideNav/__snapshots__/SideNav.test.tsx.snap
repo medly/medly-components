@@ -318,7 +318,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 
 <div
   class="c0"
-  data-testid="sidenav"
+  id="medly-sidenav"
   open=""
 >
   <div
@@ -830,7 +830,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 
 <div
   class="c0"
-  data-testid="sidenav"
+  id="medly-sidenav"
   open=""
 >
   <div
@@ -1271,7 +1271,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 
 <div
   class="c0"
-  data-testid="sidenav"
+  id="medly-sidenav"
 >
   <div
     class="c1"
@@ -1623,7 +1623,7 @@ exports[`SideNav should render properly 1`] = `
 <div>
   <div
     class="c0"
-    data-testid="sidenav"
+    id="medly-sidenav"
   >
     <div
       class="c1"

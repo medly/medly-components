@@ -102,14 +102,14 @@ exports[`Popover component with placement bottom, should render properly 1`] = `
 <div>
   <div
     class="c0"
-    data-testid="medly-popover-wrapper"
+    id="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
-      data-testid="medly-popover"
+      id="medly-popover"
     >
       Dummy popover
     </div>
@@ -208,14 +208,14 @@ exports[`Popover component with placement bottom-end, should render properly 1`]
 <div>
   <div
     class="c0"
-    data-testid="medly-popover-wrapper"
+    id="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
-      data-testid="medly-popover"
+      id="medly-popover"
     >
       Dummy popover
     </div>
@@ -334,14 +334,14 @@ exports[`Popover component with placement bottom-start, should render properly 1
 <div>
   <div
     class="c0"
-    data-testid="medly-popover-wrapper"
+    id="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
-      data-testid="medly-popover"
+      id="medly-popover"
     >
       Dummy popover
     </div>
@@ -480,14 +480,14 @@ exports[`Popover component with placement left, should render properly 1`] = `
 <div>
   <div
     class="c0"
-    data-testid="medly-popover-wrapper"
+    id="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
-      data-testid="medly-popover"
+      id="medly-popover"
     >
       Dummy popover
     </div>
@@ -615,14 +615,14 @@ exports[`Popover component with placement left-end, should render properly 1`] =
 <div>
   <div
     class="c0"
-    data-testid="medly-popover-wrapper"
+    id="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
-      data-testid="medly-popover"
+      id="medly-popover"
     >
       Dummy popover
     </div>
@@ -770,14 +770,14 @@ exports[`Popover component with placement left-start, should render properly 1`]
 <div>
   <div
     class="c0"
-    data-testid="medly-popover-wrapper"
+    id="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
-      data-testid="medly-popover"
+      id="medly-popover"
     >
       Dummy popover
     </div>
@@ -858,14 +858,14 @@ exports[`Popover component with placement right, should render properly 1`] = `
 <div>
   <div
     class="c0"
-    data-testid="medly-popover-wrapper"
+    id="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
-      data-testid="medly-popover"
+      id="medly-popover"
     >
       Dummy popover
     </div>
@@ -955,14 +955,14 @@ exports[`Popover component with placement right-end, should render properly 1`] 
 <div>
   <div
     class="c0"
-    data-testid="medly-popover-wrapper"
+    id="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
-      data-testid="medly-popover"
+      id="medly-popover"
     >
       Dummy popover
     </div>
@@ -1032,14 +1032,14 @@ exports[`Popover component with placement right-start, should render properly 1`
 <div>
   <div
     class="c0"
-    data-testid="medly-popover-wrapper"
+    id="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
-      data-testid="medly-popover"
+      id="medly-popover"
     >
       Dummy popover
     </div>
@@ -1091,14 +1091,14 @@ exports[`Popover component with placement top, should render properly 1`] = `
 <div>
   <div
     class="c0"
-    data-testid="medly-popover-wrapper"
+    id="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
-      data-testid="medly-popover"
+      id="medly-popover"
     >
       Dummy popover
     </div>
@@ -1159,14 +1159,14 @@ exports[`Popover component with placement top-end, should render properly 1`] = 
 <div>
   <div
     class="c0"
-    data-testid="medly-popover-wrapper"
+    id="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
-      data-testid="medly-popover"
+      id="medly-popover"
     >
       Dummy popover
     </div>
@@ -1207,14 +1207,14 @@ exports[`Popover component with placement top-start, should render properly 1`] 
 <div>
   <div
     class="c0"
-    data-testid="medly-popover-wrapper"
+    id="medly-popover-wrapper"
   >
     <div>
       Dummy Div
     </div>
     <div
       class="c1 c2"
-      data-testid="medly-popover"
+      id="medly-popover"
     >
       Dummy popover
     </div>

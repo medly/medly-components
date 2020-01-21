@@ -11,6 +11,8 @@ export interface SideNavStyledProps extends WithThemeProp {
 }
 
 export interface SideNavProps {
+    /** Id for the component */
+    id?: string;
     /** path of currently active link(only if you want to controlled the state) */
     active?: string;
     /** Logo to add */

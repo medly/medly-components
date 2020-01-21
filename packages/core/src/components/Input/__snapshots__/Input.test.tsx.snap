@@ -90,16 +90,17 @@ exports[`Input component should render correctly when fullWidth & required props
 <div>
   <div
     class="c0"
+    id="medly-input-field"
   >
     <label
       class="c1 c2"
-      for="input"
+      for="medly-input"
     >
       Email Address
     </label>
     <input
       class="c3"
-      id="input"
+      id="medly-input"
       label="Email Address"
       placeholder="Enter Email Address"
       type="email"
@@ -177,6 +178,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
 <div>
   <div
     class="c0"
+    id="email-input-field"
   >
     
     <input
@@ -255,6 +257,7 @@ exports[`Input component should render correctly when label and description are 
 <div>
   <div
     class="c0"
+    id="email-input-field"
   >
     
     <input
@@ -364,6 +367,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
 <div>
   <div
     class="c0"
+    id="email-input-field"
   >
     <label
       class="c1 c2"

@@ -10,7 +10,8 @@ import { Option, SelectProps } from './types';
 
 export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { id, description, descriptionColor, label, placeholder, labelPosition, minWidth, required, fullWidth, disabled } = props,
+        const { description, descriptionColor, label, placeholder, labelPosition, minWidth, required, fullWidth, disabled } = props,
+            id = props.id || 'medly-singleSelect',
             defaultSelectedOption = getDefaultSelectedOption(props.options, props.value);
 
         const popoverRef = useRef(null),
@@ -99,17 +100,19 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
         }, [enterPress]);
 
         return (
-            <FieldWithLabel {...{ fullWidth, labelPosition, minWidth }}>
-                {label && <FieldWithLabel.Label {...{ required, labelPosition }}>{label}</FieldWithLabel.Label>}
+            <FieldWithLabel id={`${id}-field`} {...{ fullWidth, labelPosition, minWidth }}>
+                {label && (
+                    <FieldWithLabel.Label {...{ required, labelPosition }} htmlFor={id}>
+                        {label}
+                    </FieldWithLabel.Label>
+                )}
                 <PopoverWrapper interactionType="click" onOuterClick={handleOuterClick} showPopover={areOptionsVisible}>
                     <SelectWrapperStyled {...{ description, fullWidth, labelPosition, disabled }} onClick={showOptions}>
                         <Input
                             autoComplete="off"
-                            id={id || 'select-input'}
-                            type="text"
+                            id={`${id}-input`}
                             disabled={disabled}
                             required={required}
-                            data-testid="medly-singleSelect-input"
                             placeholder={placeholder}
                             value={inputValue}
                             onFocus={showOptions}
@@ -121,9 +124,7 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                     </SelectWrapperStyled>
 
                     <Popover fullWidth ref={popoverRef}>
-                        {!disabled && (
-                            <Options data-testid="medly-singleSelect-options" options={options} onOptionClick={handleOptionClick} />
-                        )}
+                        {!disabled && <Options id={`${id}-options`} options={options} onOptionClick={handleOptionClick} />}
                     </Popover>
                 </PopoverWrapper>
                 {description && <FieldWithLabel.Description textColor={descriptionColor}>{description}</FieldWithLabel.Description>}

@@ -10,7 +10,8 @@ import { ModalStaticProps, Props } from './types';
 
 export const Modal: SFC<Props> & WithStyle & ModalStaticProps = React.memo(
     React.forwardRef((props, ref) => {
-        const { open, onCloseModal, children, minWidth, minHeight, ...restProps } = props;
+        const { open, onCloseModal, children, minWidth, minHeight, ...restProps } = props,
+            id = restProps.id || 'medly-modal';
 
         const handleEscPress = useCallback((e: any) => e.keyCode === 27 && onCloseModal(), []);
 
@@ -21,9 +22,9 @@ export const Modal: SFC<Props> & WithStyle & ModalStaticProps = React.memo(
 
         return (
             open && (
-                <ModalBackgroundStyled {...restProps} onClick={onCloseModal}>
+                <ModalBackgroundStyled {...restProps} id={id} onClick={onCloseModal}>
                     <CloseModalContext.Provider value={onCloseModal}>
-                        <ModalPopup ref={ref} {...{ minWidth, minHeight }}>
+                        <ModalPopup ref={ref} id={`${id}-popup`} {...{ minWidth, minHeight }}>
                             {children}
                         </ModalPopup>
                     </CloseModalContext.Provider>

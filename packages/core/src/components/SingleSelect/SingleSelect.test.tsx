@@ -41,39 +41,39 @@ describe('SingleSelect component', () => {
     });
 
     it('should render options correctly', () => {
-        const { getByTestId } = render(<SingleSelect options={options} />),
-            inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+        const { container } = render(<SingleSelect options={options} />),
+            inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
         fireEvent.click(inputEl);
-        expect(getByTestId('medly-popover')).toBeVisible();
+        expect(container.querySelector('#medly-popover')).toBeVisible();
     });
 
     it('should hide options on click outside of the container', () => {
-        const { getByTestId } = render(
+        const { container } = render(
             <div>
-                <p data-testid="sibling">Outer Element</p>
+                <p id="sibling">Outer Element</p>
                 <SingleSelect options={options} />
             </div>
         );
-        fireEvent.click(getByTestId('medly-singleSelect-input'));
-        fireEvent.click(getByTestId('sibling'));
-        expect(getByTestId('medly-popover')).not.toBeVisible();
+        fireEvent.click(container.querySelector('#medly-singleSelect-input'));
+        fireEvent.click(container.querySelector('#sibling'));
+        expect(container.querySelector('#medly-popover')).not.toBeVisible();
     });
 
     it('should not show options on click outside of the container', () => {
-        const { getByTestId } = render(
+        const { container } = render(
             <div>
-                <p data-testid="sibling">Outer Element</p>
+                <p id="sibling">Outer Element</p>
                 <SingleSelect options={options} />
             </div>
         );
-        fireEvent.click(getByTestId('sibling'));
-        expect(getByTestId('medly-popover')).not.toBeVisible();
+        fireEvent.click(container.querySelector('#sibling'));
+        expect(container.querySelector('#medly-popover')).not.toBeVisible();
     });
 
     it('should show selected option label in input', () => {
         const mockOnChange = jest.fn(),
-            { getByTestId, getByText } = render(<SingleSelect options={options} onChange={mockOnChange} />),
-            inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+            { container, getByText } = render(<SingleSelect options={options} onChange={mockOnChange} />),
+            inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
 
         fireEvent.click(inputEl);
         fireEvent.click(getByText('Dummy1'));
@@ -83,14 +83,14 @@ describe('SingleSelect component', () => {
 
     it('should not select option which is disable', () => {
         const mockOnChange = jest.fn(),
-            { getByTestId, getByText } = render(
+            { container, getByText } = render(
                 <SingleSelect
                     value="Dummy1"
                     options={[...options, { value: 'Dummy3', label: 'Dummy3', disabled: true }]}
                     onChange={mockOnChange}
                 />
             );
-        const inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+        const inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
         fireEvent.click(inputEl);
         fireEvent.click(getByText('Dummy3'));
         expect(inputEl.value).toEqual('Dummy1');
@@ -98,16 +98,16 @@ describe('SingleSelect component', () => {
     });
 
     it('should render matched options when input values changes', async () => {
-        const { getByTestId, getByText, queryByText } = render(<SingleSelect options={options} />),
-            inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+        const { container, getByText, queryByText } = render(<SingleSelect options={options} />),
+            inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
         fireEvent.click(inputEl);
         fireEvent.change(inputEl, { target: { value: 'Dummy' } });
         expect(queryByText('All')).toBeNull();
     });
 
     it('should render all the options when input value is not matched to any option', async () => {
-        const { getByTestId, getByText } = render(<SingleSelect options={options} />),
-            inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+        const { container, getByText } = render(<SingleSelect options={options} />),
+            inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
         fireEvent.click(inputEl);
         fireEvent.change(inputEl, { target: { value: 'Hello' } });
         expect(getByText('All')).toBeVisible();
@@ -121,10 +121,8 @@ describe('SingleSelect component', () => {
         describe('down arrow', () => {
             it('should change input', async () => {
                 const mockOnChange = jest.fn(),
-                    { getByTestId, container, getByText } = render(
-                        <SingleSelect value="Dummy1" options={options} onChange={mockOnChange} />
-                    ),
-                    inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+                    { container, getByText } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} />),
+                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
                 fireEvent.focus(inputEl);
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
@@ -134,8 +132,8 @@ describe('SingleSelect component', () => {
 
             it('should change input value to the first option when currently selected options is the last option ', async () => {
                 const mockOnChange = jest.fn(),
-                    { getByTestId, container } = render(<SingleSelect value="Dummy2" options={options} onChange={mockOnChange} />),
-                    inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+                    { container } = render(<SingleSelect value="Dummy2" options={options} onChange={mockOnChange} />),
+                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
                 fireEvent.click(inputEl);
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
@@ -145,8 +143,8 @@ describe('SingleSelect component', () => {
 
             it('should change input value to the first option when there is no option selected ', async () => {
                 const mockOnChange = jest.fn(),
-                    { getByTestId, container } = render(<SingleSelect options={options} onChange={mockOnChange} />),
-                    inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+                    { container } = render(<SingleSelect options={options} onChange={mockOnChange} />),
+                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
                 fireEvent.click(inputEl);
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
@@ -156,14 +154,14 @@ describe('SingleSelect component', () => {
 
             it('should change input value to the first option when last option is disabled', async () => {
                 const mockOnChange = jest.fn(),
-                    { getByTestId, container } = render(
+                    { container } = render(
                         <SingleSelect
                             value="Dummy2"
                             options={[...options, { value: 'Dummy3', label: 'Dummy3', disabled: true }]}
                             onChange={mockOnChange}
                         />
                     ),
-                    inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
                 fireEvent.click(inputEl);
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
@@ -173,7 +171,7 @@ describe('SingleSelect component', () => {
 
             it('should change input value to the next non-disabled option', async () => {
                 const mockOnChange = jest.fn(),
-                    { getByTestId, container } = render(
+                    { container } = render(
                         <SingleSelect
                             value="Dummy2"
                             options={[
@@ -184,7 +182,7 @@ describe('SingleSelect component', () => {
                             onChange={mockOnChange}
                         />
                     ),
-                    inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
                 fireEvent.click(inputEl);
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
@@ -196,8 +194,8 @@ describe('SingleSelect component', () => {
         describe('up arrow', () => {
             it('should change input value', async () => {
                 const mockOnChange = jest.fn(),
-                    { getByTestId, container } = render(<SingleSelect value="Dummy2" options={options} onChange={mockOnChange} />),
-                    inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+                    { container } = render(<SingleSelect value="Dummy2" options={options} onChange={mockOnChange} />),
+                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
                 fireEvent.click(inputEl);
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 38 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
@@ -207,8 +205,8 @@ describe('SingleSelect component', () => {
 
             it('should change input value to the last option when currently selected option is the first option', async () => {
                 const mockOnChange = jest.fn(),
-                    { getByTestId, container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} />),
-                    inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+                    { container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} />),
+                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
                 fireEvent.click(inputEl);
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 38 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
@@ -218,8 +216,8 @@ describe('SingleSelect component', () => {
 
             it('should change input value to the last option when there is no option selected ', async () => {
                 const mockOnChange = jest.fn(),
-                    { getByTestId, container } = render(<SingleSelect options={options} onChange={mockOnChange} />),
-                    inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+                    { container } = render(<SingleSelect options={options} onChange={mockOnChange} />),
+                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
                 fireEvent.click(inputEl);
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 38 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
@@ -229,7 +227,7 @@ describe('SingleSelect component', () => {
 
             it('should change input value to the prev non-disabled option', async () => {
                 const mockOnChange = jest.fn(),
-                    { getByTestId, container } = render(
+                    { container } = render(
                         <SingleSelect
                             value="Dummy4"
                             options={[
@@ -240,7 +238,7 @@ describe('SingleSelect component', () => {
                             onChange={mockOnChange}
                         />
                     ),
-                    inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
                 fireEvent.click(inputEl);
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
@@ -250,14 +248,14 @@ describe('SingleSelect component', () => {
 
             it('should change input value to the last option when first option is disabled and second is currently selected', async () => {
                 const mockOnChange = jest.fn(),
-                    { getByTestId, container } = render(
+                    { container } = render(
                         <SingleSelect
                             value="all"
                             options={[{ value: 'Dummy3', label: 'Dummy3', disabled: true }, ...options]}
                             onChange={mockOnChange}
                         />
                     ),
-                    inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
                 fireEvent.click(inputEl);
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
@@ -269,8 +267,8 @@ describe('SingleSelect component', () => {
         describe('enter button', () => {
             it('should close options', async () => {
                 const mockOnChange = jest.fn(),
-                    { getByTestId, container } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} />),
-                    inputEl = getByTestId('medly-singleSelect-input') as HTMLInputElement;
+                    { container } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} />),
+                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
                 fireEvent.click(inputEl);
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });

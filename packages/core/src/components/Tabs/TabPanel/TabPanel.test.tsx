@@ -7,7 +7,7 @@ const { render } = TestUtils;
 describe('TabPanel', () => {
     it('should render only avtive tab content', () => {
         const { container } = render(
-            <TabPanel active="tab1" onChange={jest.fn()}>
+            <TabPanel id="tab-panel" active="tab1" onChange={jest.fn()}>
                 <Tab id="tab1" label="Add">
                     Content for the add panel
                 </Tab>

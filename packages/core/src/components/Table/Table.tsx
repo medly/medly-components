@@ -30,7 +30,8 @@ export const Table: SFC<Props> & WithStyle & StaticProps = React.memo(
             isSelectable,
             selectedRows,
             onRowSelection,
-            isLoading
+            isLoading,
+            ...restProps
         } = props;
 
         const [ids, selectedIds, toggleId] = useRowSelector(
@@ -62,7 +63,7 @@ export const Table: SFC<Props> & WithStyle & StaticProps = React.memo(
         }, [selectedIds.value]);
 
         return (
-            <TableStyled ref={ref} isRowClickable={isRowClickable}>
+            <TableStyled ref={ref} isRowClickable={isRowClickable} {...restProps}>
                 <Head
                     {...{
                         onSort,

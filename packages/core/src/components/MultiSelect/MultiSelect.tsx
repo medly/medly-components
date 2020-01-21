@@ -11,7 +11,8 @@ import { SelectProps } from './types';
 
 export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { id, description, descriptionColor, label, labelPosition, required, fullWidth, disabled, minWidth } = props;
+        const { description, descriptionColor, label, labelPosition, required, fullWidth, disabled, minWidth } = props,
+            id = props.id || 'medly-multiSelect';
 
         const [inputValue, setInputValue] = useState(''),
             [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(props.options, props.values)),
@@ -76,13 +77,17 @@ export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
             };
 
         return (
-            <FieldWithLabel {...{ fullWidth, labelPosition, minWidth }}>
-                {label && <FieldWithLabel.Label {...{ required, labelPosition }}>{label}</FieldWithLabel.Label>}
+            <FieldWithLabel id={`${id}-field`} {...{ fullWidth, labelPosition, minWidth }}>
+                {label && (
+                    <FieldWithLabel.Label {...{ required, labelPosition }} htmlFor={id}>
+                        {label}
+                    </FieldWithLabel.Label>
+                )}
                 <PopoverWrapper interactionType="click" onOuterClick={handleOuterClick} showPopover={areOptionsVisible}>
                     <SelectWrapperStyled
                         {...{ description, fullWidth, labelPosition, disabled }}
                         onClick={handleWrapperClick}
-                        data-testid="medly-multiSelect-container"
+                        id={`${id}-container`}
                     >
                         {props.showChips &&
                             selectedOptions.map(op => (
@@ -90,11 +95,9 @@ export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
                             ))}
                         <Input
                             autoComplete="off"
-                            id={id || 'select-input'}
-                            type="text"
+                            id={`${id}-input`}
                             disabled={disabled}
                             required={required}
-                            data-testid="select-input"
                             placeholder={placeholder}
                             value={inputValue}
                             onClick={handleInputClick}
@@ -103,7 +106,7 @@ export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
                         />
                         <SelectIconStyled />
                     </SelectWrapperStyled>
-                    <Popover fullWidth>
+                    <Popover fullWidth id={`${id}-popover`}>
                         {!disabled && (
                             <Options
                                 showCheckbox={props.showCheckbox}

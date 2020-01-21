@@ -12,7 +12,8 @@ import TopNavItem from './TopNavItem';
 import { SideNavProps, SideNavStaticProps } from './types';
 
 export const SideNav: SFC<SideNavProps> & WithStyle & SideNavStaticProps = props => {
-    const { active, children, closeOnOuterClick, defaultActive, logo, onChange } = props;
+    const { active, children, closeOnOuterClick, defaultActive, logo, onChange } = props,
+        id = props.id || 'medly-sidenav';
 
     const ref = useRef(null),
         [open, setOpenState] = useState(false),
@@ -36,7 +37,7 @@ export const SideNav: SFC<SideNavProps> & WithStyle & SideNavStaticProps = props
     }, ref);
 
     return (
-        <Styled.SideNav open={open} ref={ref} position="left" data-testid="sidenav">
+        <Styled.SideNav open={open} ref={ref} position="left" id={id}>
             <OnChangeContext.Provider value={[activeItem, handleOnActiveChange]}>
                 <TopNavItem {...{ logo, open, burgerIconClickHandler }} />
                 {React.Children.map(children, child => {

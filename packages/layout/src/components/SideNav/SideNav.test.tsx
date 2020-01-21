@@ -47,11 +47,11 @@ describe('SideNav', () => {
     });
 
     it('should change width after clicking on burger icon', () => {
-        const { container, getByTestId } = renderer();
+        const { container } = renderer();
         act(() => {
             fireEvent.click(container.querySelector('button'));
         });
-        expect(getByTestId('sidenav')).toMatchSnapshot();
+        expect(container.querySelector('#medly-sidenav')).toMatchSnapshot();
     });
 
     it('should call onChange with expected path', () => {
@@ -64,16 +64,16 @@ describe('SideNav', () => {
     });
 
     it('should change width when clicked on item with sidenavOpenCloseOnClick prop given', () => {
-        const { getByText, getByTestId } = renderer();
+        const { getByText, container } = renderer();
         act(() => {
             fireEvent.click(getByText('Search'));
         });
-        expect(getByTestId('sidenav')).toMatchSnapshot();
+        expect(container.querySelector('#medly-sidenav')).toMatchSnapshot();
     });
 
     it('should close sidenav if we click outside', () => {
         const mockOnClick = jest.fn(),
-            { container, getByText, getByTestId } = render(
+            { container, getByText } = render(
                 <div>
                     <p>Outer Element</p>
                     <SideNav closeOnOuterClick>
@@ -93,6 +93,6 @@ describe('SideNav', () => {
         expect(mockOnClick).toBeCalled();
 
         fireEvent.click(getByText('Outer Element'));
-        expect(getByTestId('sidenav')).toMatchSnapshot();
+        expect(container.querySelector('#medly-sidenav')).toMatchSnapshot();
     });
 });

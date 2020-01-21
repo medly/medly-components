@@ -52,11 +52,11 @@ describe('SubNavList', () => {
     });
 
     it('should be able to click on nested item', () => {
-        const { container, getByText, getByTestId } = renderer();
+        const { container, getByText } = renderer();
         fireEvent.click(container.querySelector('button'));
         fireEvent.click(getByText('Search'));
         fireEvent.click(getByText('Cars'));
         fireEvent.click(getByText('Honda'));
-        expect(getByTestId('sidenav')).toMatchSnapshot();
+        expect(container.querySelector('#medly-sidenav')).toMatchSnapshot();
     });
 });

@@ -6,7 +6,7 @@ import Popover from './Popover';
 import PopoverWrapper from './PopoverWrapper';
 import { InteractionType, Placement } from './PopoverWrapper/types';
 
-const placement: Placement[] = [
+export const placement: Placement[] = [
     'top-start',
     'top',
     'top-end',

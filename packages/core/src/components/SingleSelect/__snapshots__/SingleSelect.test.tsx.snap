@@ -242,27 +242,27 @@ exports[`SingleSelect component on pressing enter button should not change input
 <div>
   <div
     class="c0 c1"
+    id="medly-singleSelect-field"
   >
     
     <div
       class="c2"
-      data-testid="medly-popover-wrapper"
+      id="medly-popover-wrapper"
     >
       <div
         class="c3"
       >
         <div
           class="c0 c4"
+          id="medly-singleSelect-input-field"
         >
           
           <input
             autocomplete="off"
             class="c5 c6"
-            data-testid="medly-singleSelect-input"
-            id="select-input"
+            id="medly-singleSelect-input"
             label=""
             placeholder="Please Select . . ."
-            type="text"
             value="Dummy1"
           />
           
@@ -282,12 +282,12 @@ exports[`SingleSelect component on pressing enter button should not change input
       </div>
       <div
         class="c9 c10"
-        data-testid="medly-popover"
+        id="medly-popover"
         style="display: none;"
       >
         <ul
           class="c11"
-          data-testid="medly-singleSelect-options"
+          id="medly-singleSelect-options"
         >
           <li
             class="c12"
@@ -546,16 +546,18 @@ exports[`SingleSelect component should render correctly with all the props given
 <div>
   <div
     class="c0 c1"
+    id="medly-singleSelect-field"
   >
     <label
       class="c2 c3"
+      for="medly-singleSelect"
       required=""
     >
       Pharmacy
     </label>
     <div
       class="c4"
-      data-testid="medly-popover-wrapper"
+      id="medly-popover-wrapper"
     >
       <div
         class="c5"
@@ -563,18 +565,17 @@ exports[`SingleSelect component should render correctly with all the props given
       >
         <div
           class="c0 c6"
+          id="medly-singleSelect-input-field"
         >
           
           <input
             autocomplete="off"
             class="c7 c8"
-            data-testid="medly-singleSelect-input"
             disabled=""
-            id="select-input"
+            id="medly-singleSelect-input"
             label=""
             placeholder="Please Select"
             required=""
-            type="text"
             value="All"
           />
           
@@ -594,7 +595,7 @@ exports[`SingleSelect component should render correctly with all the props given
       </div>
       <div
         class="c11 c12"
-        data-testid="medly-popover"
+        id="medly-popover"
         style="display: none;"
       />
     </div>
@@ -819,27 +820,27 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 <div>
   <div
     class="c0 c1"
+    id="medly-singleSelect-field"
   >
     
     <div
       class="c2"
-      data-testid="medly-popover-wrapper"
+      id="medly-popover-wrapper"
     >
       <div
         class="c3"
       >
         <div
           class="c0 c4"
+          id="medly-singleSelect-input-field"
         >
           
           <input
             autocomplete="off"
             class="c5 c6"
-            data-testid="medly-singleSelect-input"
-            id="select-input"
+            id="medly-singleSelect-input"
             label=""
             placeholder="Please Select . . ."
-            type="text"
             value=""
           />
           
@@ -859,12 +860,12 @@ exports[`SingleSelect component should render correctly with default props 1`] =
       </div>
       <div
         class="c9 c10"
-        data-testid="medly-popover"
+        id="medly-popover"
         style="display: none;"
       >
         <ul
           class="c11"
-          data-testid="medly-singleSelect-options"
+          id="medly-singleSelect-options"
         >
           <li
             class="c12"
