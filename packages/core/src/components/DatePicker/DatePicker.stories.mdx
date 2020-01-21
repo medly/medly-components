@@ -7,18 +7,14 @@ import * as stories from './DatePicker.stories';
 
 # DatePicker
 
-We are using `@datepicker-react/styled` underneath with some modification.
+### Simple DatePicker component
 
-<Story name="Basic">{stories.Basic()}</Story>
+To open the calendar click on the input component and to close the calendar select any date or click outside of the component.
+
+<Preview withToolbar>
+    <Story name="Basic">{stories.Basic()}</Story>
+</Preview>
 
 ### DatePicker Props
 
 <Props of={DatePicker} />
-
-### ReactDatepicker theme
-
-You can check the all posible values [here](https://github.com/tresko/react-datepicker#theming)
-
-### ReactDatepicker defaults
-
-<code>{JSON.stringify(defaultTheme.reactDatepicker, null, 2)}</code>

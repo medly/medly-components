@@ -1,38 +1,30 @@
-import { DateSingleInput } from '@datepicker-react/styled';
-import { GetComponentProps, Omit } from '@medly-components/utils';
+import { HTMLProps, Omit } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
+import { Placement } from '../Popover/PopoverWrapper/types';
 
-type PickerProps = Omit<GetComponentProps<typeof DateSingleInput>, 'date' | 'showDatepicker' | 'onDateChange' | 'onFocusChange'>;
-
-export interface Props extends PickerProps {
-    /** Label Position
-     * @default left
-     */
-    labelPosition?: LabelPositions;
-    /** Takes full width of the parent component
-     * @default false
-     */
-    fullWidth?: boolean;
-    /** Disable date selection
-     * @default false
-     */
-    disabled?: boolean;
-    /** To be used when it is required in any form
-     * @default false
-     */
-    required?: boolean;
-    /** Date picker label
-     * @default
-     */
-    label?: string;
-    /** Selected date */
-    value: Date | null;
-    /** Placeholder for input */
+export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onChange'> {
+    /** Id for the date component */
+    id?: string;
+    /** Current Date */
+    value: Date;
+    /** Function to be called on changing the date */
+    onChange: (date: Date) => void;
+    /** Placeholder for the input */
     placeholder?: string;
-    /** Function to be called on change of the date */
-    onChange: (value: Date | null) => void;
-}
-
-export interface StyledProps {
+    /** Date display format */
+    displayFormat?: string;
+    /** Disable date selection */
     disabled?: boolean;
+    /** To be used when it is required in any form */
+    required?: boolean;
+    /** Date picker label */
+    label?: string;
+    /** Label Position */
+    labelPosition?: LabelPositions;
+    /** Takes full width of the parent component */
+    fullWidth?: boolean;
+    /** Min width of the component */
+    minWidth?: number;
+    /** Popover placement */
+    popoverPlacement?: Placement;
 }

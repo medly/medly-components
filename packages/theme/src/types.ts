@@ -6,23 +6,24 @@ import { LoaderTheme } from './loader/types';
 export interface CoreTheme {
     avatar?: CoreThemes.AvatarTheme;
     breadCrumbs?: CoreThemes.BreadCrumbsTheme;
+    button?: CoreThemes.ButtonTheme;
+    card?: CoreThemes.CardTheme;
+    checkbox?: CoreThemes.CheckboxTheme;
+    chip?: CoreThemes.ChipTheme;
+    colors?: CoreThemes.ColorPallet;
+    datePicker?: CoreThemes.DatePickerTheme;
+    font?: CoreThemes.FontTheme;
+    input?: CoreThemes.InputTheme;
     label?: CoreThemes.LabelTheme;
     link?: CoreThemes.LinkTheme;
     modal?: CoreThemes.ModalTheme;
-    table?: CoreThemes.TableTheme;
-    card?: CoreThemes.CardTheme;
-    button?: CoreThemes.ButtonTheme;
-    chip?: CoreThemes.ChipTheme;
-    colors?: CoreThemes.ColorPallet;
-    checkbox?: CoreThemes.CheckboxTheme;
     radio?: CoreThemes.RadioTheme;
-    font?: CoreThemes.FontTheme;
-    input?: CoreThemes.InputTheme;
     select?: CoreThemes.SelectTheme;
-    stepper?: CoreThemes.StepperTheme;
     spacing?: CoreThemes.SpacingTheme;
-    text?: CoreThemes.TextTheme;
+    stepper?: CoreThemes.StepperTheme;
+    table?: CoreThemes.TableTheme;
     tabs?: CoreThemes.TabsTheme;
+    text?: CoreThemes.TextTheme;
     toast?: CoreThemes.ToastTheme;
 }
 

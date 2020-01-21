@@ -5,6 +5,7 @@ import card from './card';
 import checkbox from './checkbox';
 import chip from './chip';
 import colors from './colors';
+import datePicker from './datePicker';
 import font from './font';
 import input from './input';
 import label from './label';
@@ -26,6 +27,7 @@ export const coreDefaultTheme = {
     button,
     checkbox,
     chip,
+    datePicker,
     label,
     link,
     card,
