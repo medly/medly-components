@@ -12,7 +12,7 @@ export const Calendar: React.SFC<Props> = React.memo(({ date, onChange, minYear,
     const today = new Date(),
         [{ month, year }, setMonthAndYear] = useState(getMonthAndDateFromDate(date || today));
 
-    const handleDateChange = (newDate: Date) => () => onChange(newDate),
+    const handleDateChange = useCallback((newDate: Date) => () => onChange(newDate), [onChange]),
         handleNextBtnClick = useCallback(() => setMonthAndYear(getNextMonthAndYear(month, year)), [month, year]),
         handlePreviousBtnClick = useCallback(() => setMonthAndYear(getPreviousMonthAndYear(month, year)), [month, year]),
         handleMonthChange = useCallback((value: number) => setMonthAndYear(prev => ({ year: prev.year, month: value })), []),
@@ -23,7 +23,7 @@ export const Calendar: React.SFC<Props> = React.memo(({ date, onChange, minYear,
         yearOptions = useMemo(
             () =>
                 [...Array(maxYear - minYear)].map((_, i) => {
-                    const value = i + 1 + minYear;
+                    const value = i + minYear;
                     return { value, label: `${value}` };
                 }),
             []
@@ -41,8 +41,8 @@ export const Calendar: React.SFC<Props> = React.memo(({ date, onChange, minYear,
                 <Button variant="flat" onClick={handleNextBtnClick}>{`>`}</Button>
             </Styled.Header>
             <Styled.MonthAndYearSelection>
-                <SingleSelect id="month-selector" value={month} options={monthOptions} onChange={handleMonthChange} />
-                <SingleSelect id="year-selector" value={year} options={yearOptions} onChange={handleYearChange} />
+                <SingleSelect id={`${restProps.id}-month-selector`} value={month} options={monthOptions} onChange={handleMonthChange} />
+                <SingleSelect id={`${restProps.id}-year-selector`} value={year} options={yearOptions} onChange={handleYearChange} />
             </Styled.MonthAndYearSelection>
 
             <Styled.CalendarGrid>

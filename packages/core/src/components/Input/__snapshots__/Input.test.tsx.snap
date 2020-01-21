@@ -187,6 +187,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
       id="email-input"
       label=""
       placeholder="Enter Email Address"
+      type="text"
     />
     
   </div>

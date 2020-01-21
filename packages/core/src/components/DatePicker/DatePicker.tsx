@@ -1,6 +1,6 @@
-import { WithStyle } from '@medly-components/utils';
+import { parseToDate, WithStyle } from '@medly-components/utils';
 import { format } from 'date-fns';
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import Calendar from '../Calendar';
 import FieldWithLabel from '../FieldWithLabel';
 import { Popover, PopoverWrapper } from '../Popover';
@@ -9,17 +9,27 @@ import { Props } from './types';
 
 export const DatePicker: React.SFC<Props> & WithStyle = React.memo(props => {
     const { value, onChange, displayFormat, label, labelPosition, fullWidth, minWidth, required, popoverPlacement, ...restProps } = props,
-        id = props.id || 'medly-datepicker';
+        id = props.id || 'medly-datepicker',
+        date: Date | null = useMemo(
+            () => (value instanceof Date ? value : typeof value === 'string' ? parseToDate(value, displayFormat) : null),
+            [value, displayFormat]
+        );
+
     const [isCalendarVisible, setCalendarVisibilityState] = useState(false),
         [formatedDate, setFormatedDate] = useState('');
 
     useEffect(() => {
-        value && setFormatedDate(format(value, displayFormat));
-        setCalendarVisibilityState(false);
-    }, [value]);
+        if (date) {
+            setFormatedDate(format(date, displayFormat));
+            setCalendarVisibilityState(false);
+        }
+    }, [date]);
 
     const hideCalendar = useCallback(() => setCalendarVisibilityState(false), []),
-        showCalendar = useCallback(() => !restProps.disabled && setCalendarVisibilityState(true), [restProps.disabled]);
+        showCalendar = useCallback(() => !restProps.disabled && setCalendarVisibilityState(true), [restProps.disabled]),
+        handleInputOnChange = useCallback(() => {
+            return;
+        }, []);
 
     return (
         <FieldWithLabel id={`${id}`} {...{ labelPosition, fullWidth, minWidth }}>
@@ -35,9 +45,9 @@ export const DatePicker: React.SFC<Props> & WithStyle = React.memo(props => {
                 onClick={showCalendar}
                 onOuterClick={hideCalendar}
             >
-                <Styled.Input readOnly {...restProps} required={required} id={`${id}-input`} value={formatedDate} />
+                <Styled.Input {...restProps} required={required} id={`${id}-input`} value={formatedDate} onChange={handleInputOnChange} />
                 <Popover id={`${id}-popover`}>
-                    <Calendar id={`${id}-calendar`} date={value} onChange={onChange} />
+                    <Calendar id={`${id}-calendar`} date={date} onChange={onChange} />
                 </Popover>
             </PopoverWrapper>
         </FieldWithLabel>

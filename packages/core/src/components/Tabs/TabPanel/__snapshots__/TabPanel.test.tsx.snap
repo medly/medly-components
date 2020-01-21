@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TabPanel should render only avtive tab content 1`] = `
+exports[`TabPanel should render only active tab content 1`] = `
 .c0 {
   padding: 10px;
   height: 100%;

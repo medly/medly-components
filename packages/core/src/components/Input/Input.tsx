@@ -25,6 +25,7 @@ export const Input: SFC<Props> & WithStyle = React.memo(
 Input.displayName = 'Input';
 Input.Style = InputStyled;
 Input.defaultProps = {
+    type: 'text',
     disabled: false,
     fullWidth: false,
     required: false,

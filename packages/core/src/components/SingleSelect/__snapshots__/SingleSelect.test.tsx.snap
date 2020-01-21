@@ -263,6 +263,7 @@ exports[`SingleSelect component on pressing enter button should not change input
             id="medly-singleSelect-input"
             label=""
             placeholder="Please Select . . ."
+            type="text"
             value="Dummy1"
           />
           
@@ -576,6 +577,7 @@ exports[`SingleSelect component should render correctly with all the props given
             label=""
             placeholder="Please Select"
             required=""
+            type="text"
             value="All"
           />
           
@@ -841,6 +843,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
             id="medly-singleSelect-input"
             label=""
             placeholder="Please Select . . ."
+            type="text"
             value=""
           />
           

@@ -6,13 +6,25 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     /** Id for the date component */
     id?: string;
     /** Current Date */
-    value: Date;
+    value: Date | string | null;
     /** Function to be called on changing the date */
     onChange: (date: Date) => void;
     /** Placeholder for the input */
     placeholder?: string;
     /** Date display format */
-    displayFormat?: string;
+    displayFormat:
+        | 'dd/MM/yyyy'
+        | 'dd/yyyy/MM'
+        | 'MM/dd/yyyy'
+        | 'MM/yyyy/dd'
+        | 'yyyy/dd/MM'
+        | 'yyyy/MM/dd'
+        | 'dd-MM-yyyy'
+        | 'dd-yyyy-MM'
+        | 'MM-dd-yyyy'
+        | 'MM-yyyy-dd'
+        | 'yyyy-dd-MM'
+        | 'yyyy-MM-dd';
     /** Disable date selection */
     disabled?: boolean;
     /** To be used when it is required in any form */

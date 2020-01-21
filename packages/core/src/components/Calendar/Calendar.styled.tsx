@@ -43,7 +43,7 @@ const nonActiveMonthDate = () => css`
     color: ${({ theme }) => theme.datePicker.nonActiveMonthDateColor};
 `;
 
-export const Date = styled('button')<DateProps>`
+export const Date = styled('button').attrs({ type: 'button' })<DateProps>`
     background-color: transparent;
     border: none;
     text-decoration: none;

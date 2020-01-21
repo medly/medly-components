@@ -13,7 +13,7 @@ export const Basic = () => {
         <DatePicker
             value={date}
             onChange={setDate}
-            displayFormat={text('Display Format', 'MM/dd/yyyy')}
+            displayFormat={text('Display Format', 'MM/dd/yyyy') as Props['displayFormat']}
             disabled={boolean('Disabled', false)}
             placeholder={text('Placeholder', 'Start Date')}
             label={text('Label', 'Start Date')}

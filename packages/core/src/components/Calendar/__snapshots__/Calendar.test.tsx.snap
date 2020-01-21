@@ -462,6 +462,7 @@ exports[`Calendar Component should render given date 1`] = `
 <div>
   <div
     class="c0"
+    id="test-calendar"
   >
     <div
       class="c1"
@@ -499,7 +500,7 @@ exports[`Calendar Component should render given date 1`] = `
     >
       <div
         class="c7 c8"
-        id="month-selector-field"
+        id="test-calendar-month-selector-field"
       >
         
         <div
@@ -511,15 +512,16 @@ exports[`Calendar Component should render given date 1`] = `
           >
             <div
               class="c7 c12"
-              id="month-selector-input-field"
+              id="test-calendar-month-selector-input-field"
             >
               
               <input
                 autocomplete="off"
                 class="c13 c14"
-                id="month-selector-input"
+                id="test-calendar-month-selector-input"
                 label=""
                 placeholder="Please Select . . ."
+                type="text"
                 value="Jan"
               />
               
@@ -544,7 +546,7 @@ exports[`Calendar Component should render given date 1`] = `
           >
             <ul
               class="c20"
-              id="month-selector-options"
+              id="test-calendar-month-selector-options"
             >
               <li
                 class="c21"
@@ -661,7 +663,7 @@ exports[`Calendar Component should render given date 1`] = `
       </div>
       <div
         class="c7 c8"
-        id="year-selector-field"
+        id="test-calendar-year-selector-field"
       >
         
         <div
@@ -673,15 +675,16 @@ exports[`Calendar Component should render given date 1`] = `
           >
             <div
               class="c7 c12"
-              id="year-selector-input-field"
+              id="test-calendar-year-selector-input-field"
             >
               
               <input
                 autocomplete="off"
                 class="c13 c14"
-                id="year-selector-input"
+                id="test-calendar-year-selector-input"
                 label=""
                 placeholder="Please Select . . ."
+                type="text"
                 value="2020"
               />
               
@@ -706,8 +709,17 @@ exports[`Calendar Component should render given date 1`] = `
           >
             <ul
               class="c20"
-              id="year-selector-options"
+              id="test-calendar-year-selector-options"
             >
+              <li
+                class="c23"
+              >
+                <span
+                  class="c3 c22"
+                >
+                  1901
+                </span>
+              </li>
               <li
                 class="c23"
               >
@@ -2490,15 +2502,6 @@ exports[`Calendar Component should render given date 1`] = `
                   2099
                 </span>
               </li>
-              <li
-                class="c23"
-              >
-                <span
-                  class="c3 c22"
-                >
-                  2100
-                </span>
-              </li>
             </ul>
           </div>
         </div>
@@ -2546,6 +2549,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c25"
         title="Sun Dec 29 2019"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2556,6 +2560,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c25"
         title="Mon Dec 30 2019"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2566,6 +2571,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c25"
         title="Tue Dec 31 2019"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2576,6 +2582,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c27"
         title="Wed Jan 01 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2586,6 +2593,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Thu Jan 02 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2596,6 +2604,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Fri Jan 03 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2606,6 +2615,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Sat Jan 04 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2616,6 +2626,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Sun Jan 05 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2626,6 +2637,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Mon Jan 06 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2636,6 +2648,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Tue Jan 07 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2646,6 +2659,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Wed Jan 08 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2656,6 +2670,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Thu Jan 09 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2666,6 +2681,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Fri Jan 10 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2676,6 +2692,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Sat Jan 11 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2686,6 +2703,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Sun Jan 12 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2696,6 +2714,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Mon Jan 13 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2706,6 +2725,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Tue Jan 14 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2716,6 +2736,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Wed Jan 15 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2726,6 +2747,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Thu Jan 16 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2736,6 +2758,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Fri Jan 17 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2746,6 +2769,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Sat Jan 18 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2756,6 +2780,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Sun Jan 19 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2766,6 +2791,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Mon Jan 20 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2776,6 +2802,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Tue Jan 21 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2786,6 +2813,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Wed Jan 22 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2796,6 +2824,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Thu Jan 23 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2806,6 +2835,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Fri Jan 24 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2816,6 +2846,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Sat Jan 25 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2826,6 +2857,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Sun Jan 26 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2836,6 +2868,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Mon Jan 27 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2846,6 +2879,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Tue Jan 28 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2856,6 +2890,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Wed Jan 29 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2866,6 +2901,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Thu Jan 30 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2876,6 +2912,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c28"
         title="Fri Jan 31 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2886,6 +2923,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c25"
         title="Sat Feb 01 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2896,6 +2934,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c25"
         title="Sun Feb 02 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2906,6 +2945,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c25"
         title="Mon Feb 03 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2916,6 +2956,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c25"
         title="Tue Feb 04 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2926,6 +2967,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c25"
         title="Wed Feb 05 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2936,6 +2978,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c25"
         title="Thu Feb 06 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2946,6 +2989,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c25"
         title="Fri Feb 07 2020"
+        type="button"
       >
         <span
           class="c3 c26"
@@ -2956,6 +3000,7 @@ exports[`Calendar Component should render given date 1`] = `
       <button
         class="c25"
         title="Sat Feb 08 2020"
+        type="button"
       >
         <span
           class="c3 c26"

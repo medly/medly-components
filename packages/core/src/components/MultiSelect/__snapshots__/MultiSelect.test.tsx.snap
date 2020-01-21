@@ -359,6 +359,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
             id="medly-multiSelect-input"
             label=""
             placeholder="1 options selected"
+            type="text"
             value=""
           />
           
@@ -701,6 +702,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
             id="medly-multiSelect-input"
             label=""
             placeholder="Please Select . . ."
+            type="text"
             value=""
           />
           
@@ -1139,6 +1141,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
             id="medly-multiSelect-input"
             label=""
             placeholder="1 options selected"
+            type="text"
             value=""
           />
           
@@ -1553,6 +1556,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
             id="medly-multiSelect-input"
             label=""
             placeholder="Please Select . . ."
+            type="text"
             value=""
           />
           
