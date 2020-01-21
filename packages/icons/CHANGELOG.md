@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.12](https://github.com/medlypharmacy/medly-components/compare/@medly-components/icons@1.0.0-beta.11...@medly-components/icons@1.0.0-beta.12) (2020-01-21)
+
+
+### Features
+
+* **icons:** add bill icon ([2b461c2](https://github.com/medlypharmacy/medly-components/commit/2b461c2478590247498b08f13cad83d225efff6e))
+
+
+
+
+
 # [1.0.0-beta.11](https://github.com/medlypharmacy/medly-components/compare/@medly-components/icons@1.0.0-beta.10...@medly-components/icons@1.0.0-beta.11) (2020-01-15)
 
 

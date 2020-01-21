@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.9](https://github.com/medlypharmacy/medly-components/compare/@medly-components/utils@1.0.0-beta.8...@medly-components/utils@1.0.0-beta.9) (2020-01-21)
+
+
+### Features
+
+* **core:** add functionaity to accept date as string also in datepicker component ([3c3c377](https://github.com/medlypharmacy/medly-components/commit/3c3c377a66c470e6765d4a98f0f55b443b5ab0bc))
+* **icons:** add bill icon ([2b461c2](https://github.com/medlypharmacy/medly-components/commit/2b461c2478590247498b08f13cad83d225efff6e))
+
+
+
+
+
 # [1.0.0-beta.8](https://github.com/medlypharmacy/medly-components/compare/@medly-components/utils@1.0.0-beta.7...@medly-components/utils@1.0.0-beta.8) (2020-01-12)
 
 

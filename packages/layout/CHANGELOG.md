@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.14](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.13...@medly-components/layout@1.0.0-beta.14) (2020-01-21)
+
+
+### Features
+
+* **all:** add jest-dom/extend-expect to assert state of a DOM ([2e4551b](https://github.com/medlypharmacy/medly-components/commit/2e4551b924e3ec4a94c078feaa45319e5271acea))
+
+
+
+
+
 # [1.0.0-beta.13](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.12...@medly-components/layout@1.0.0-beta.13) (2020-01-15)
 
 **Note:** Version bump only for package @medly-components/layout

@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.14](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.13...@medly-components/core@1.0.0-beta.14) (2020-01-21)
+
+
+### Bug Fixes
+
+* **core:** fix spell mistake ([24486d6](https://github.com/medlypharmacy/medly-components/commit/24486d653054069dee69174f9c0731f369aefb0d))
+
+
+### Features
+
+* **all:** add jest-dom/extend-expect to assert state of a DOM ([2e4551b](https://github.com/medlypharmacy/medly-components/commit/2e4551b924e3ec4a94c078feaa45319e5271acea))
+* **core:** add datePicker component ([0ba579f](https://github.com/medlypharmacy/medly-components/commit/0ba579f5fa8430f730c0f150435b2e0a4f7fdb8d))
+* **core:** add functionaity to accept date as string also in datepicker component ([3c3c377](https://github.com/medlypharmacy/medly-components/commit/3c3c377a66c470e6765d4a98f0f55b443b5ab0bc))
+
+
+
+
+
 # [1.0.0-beta.13](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.12...@medly-components/core@1.0.0-beta.13) (2020-01-15)
 
 

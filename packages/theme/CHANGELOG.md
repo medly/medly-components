@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.8](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.7...@medly-components/theme@1.0.0-beta.8) (2020-01-21)
+
+
+### Features
+
+* **core:** add datePicker component ([0ba579f](https://github.com/medlypharmacy/medly-components/commit/0ba579f5fa8430f730c0f150435b2e0a4f7fdb8d))
+
+
+
+
+
 # [1.0.0-beta.7](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.6...@medly-components/theme@1.0.0-beta.7) (2020-01-12)
 
 
