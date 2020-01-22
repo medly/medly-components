@@ -70,7 +70,7 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                 if (areOptionsVisible) {
                     hideOptions();
                     updateToDefaultOptions();
-                    setInputValue(selectedOption.label);
+                    setInputValue(defaultSelectedOption.label);
                 }
             }, [areOptionsVisible, selectedOption, updateToDefaultOptions]);
 
@@ -82,19 +82,19 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
         }, [props.options, props.value]);
 
         useEffect(() => {
-            if (downPress && popoverRef.current.style.display === 'block') {
+            if (downPress && popoverRef.current) {
                 selectOption(getNextOption(selectedOption, options));
             }
         }, [downPress]);
 
         useEffect(() => {
-            if (upPress && popoverRef.current.style.display === 'block') {
+            if (upPress && popoverRef.current) {
                 selectOption(getPrevOption(selectedOption, options));
             }
         }, [upPress]);
 
         useEffect(() => {
-            if (enterPress && popoverRef.current.style.display === 'block') {
+            if (enterPress && popoverRef.current) {
                 options.length > 0 && options.find(({ value }) => selectedOption.value === value) && handleOptionClick(selectedOption);
             }
         }, [enterPress]);
@@ -106,7 +106,7 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                         {label}
                     </FieldWithLabel.Label>
                 )}
-                <PopoverWrapper interactionType="click" onOuterClick={handleOuterClick} showPopover={areOptionsVisible}>
+                <PopoverWrapper onOuterClick={handleOuterClick} showPopover={areOptionsVisible}>
                     <SelectWrapperStyled {...{ description, fullWidth, labelPosition, disabled }} onClick={showOptions}>
                         <Input
                             autoComplete="off"

@@ -6,9 +6,9 @@ import { Placement, Props } from './PopoverWrapper/types';
 
 const { render, fireEvent, cleanup } = TestUtils;
 
-const renderer = ({ interactionType = 'hover', showPopover = false, placement = 'left', onOuterClick = jest.fn() }: Props) =>
+const renderer = ({ showPopover = false, placement = 'left', onOuterClick = jest.fn() }: Props) =>
     render(
-        <PopoverWrapper {...{ interactionType, showPopover, placement, onOuterClick }}>
+        <PopoverWrapper {...{ showPopover, placement, onOuterClick }}>
             <div>Dummy Div</div>
             <Popover>Dummy popover</Popover>
         </PopoverWrapper>
@@ -34,28 +34,20 @@ describe('Popover component', () => {
             'left',
             'left-start'
         ])('%s, should render properly', (placement: Placement) => {
-            const { container } = renderer({ placement });
+            const { container } = renderer({ placement, showPopover: true });
             fireEvent.mouseOver(container.querySelector('#medly-popover-wrapper'));
             expect(container).toMatchSnapshot();
         });
     });
 
-    it('should not render popover when interaction type is hover and user clicks on it', () => {
-        const { container } = renderer({ interactionType: 'hover' });
-        const wrapper = container.querySelector('#medly-popover-wrapper'),
-            popover = container.querySelector('#medly-popover');
-        fireEvent.click(wrapper);
-        expect(popover).not.toBeVisible();
-    });
-
-    it('should render popover when interaction type is click and showPopover prop is given', () => {
-        const { container } = renderer({ interactionType: 'click', showPopover: true });
+    it('should render popover when showPopover is given', () => {
+        const { container } = renderer({ showPopover: true });
         expect(container.querySelector('#medly-popover')).toBeVisible();
     });
 
-    it('should not render popover when interaction type is click and showPopover prop is false', () => {
-        const { container } = renderer({ interactionType: 'click', showPopover: false });
-        expect(container.querySelector('#medly-popover')).not.toBeVisible();
+    it('should not render popover when showPopover is not given', () => {
+        const { container } = renderer({});
+        expect(container.querySelector('#medly-popover')).toBeNull();
     });
 
     it('should call onOuterClick fn on click on outside', () => {
@@ -63,7 +55,7 @@ describe('Popover component', () => {
         const { container } = render(
             <div>
                 <div id="sibling">Sibling</div>
-                <PopoverWrapper interactionType="click" onOuterClick={mockOnOuterClick}>
+                <PopoverWrapper onOuterClick={mockOnOuterClick}>
                     <div>Dummy Div</div>
                     <Popover>Dummy popover</Popover>
                 </PopoverWrapper>
@@ -75,7 +67,7 @@ describe('Popover component', () => {
 
     it('should render popover with full width and height if fullWidth and fullHeight are given', () => {
         const { container } = render(
-            <PopoverWrapper interactionType="click" showPopover>
+            <PopoverWrapper showPopover>
                 <div>Dummy Div</div>
                 <Popover fullWidth fullHeight>
                     Dummy popover

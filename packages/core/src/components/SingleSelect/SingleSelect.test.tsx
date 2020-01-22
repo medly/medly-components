@@ -56,7 +56,7 @@ describe('SingleSelect component', () => {
         );
         fireEvent.click(container.querySelector('#medly-singleSelect-input'));
         fireEvent.click(container.querySelector('#sibling'));
-        expect(container.querySelector('#medly-popover')).not.toBeVisible();
+        expect(container.querySelector('#medly-popover')).toBeNull();
     });
 
     it('should not show options on click outside of the container', () => {
@@ -67,7 +67,7 @@ describe('SingleSelect component', () => {
             </div>
         );
         fireEvent.click(container.querySelector('#sibling'));
-        expect(container.querySelector('#medly-popover')).not.toBeVisible();
+        expect(container.querySelector('#medly-popover')).toBeNull();
     });
 
     it('should show selected option label in input', () => {
@@ -98,7 +98,7 @@ describe('SingleSelect component', () => {
     });
 
     it('should render matched options when input values changes', async () => {
-        const { container, getByText, queryByText } = render(<SingleSelect options={options} />),
+        const { container, queryByText } = render(<SingleSelect options={options} />),
             inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
         fireEvent.click(inputEl);
         fireEvent.change(inputEl, { target: { value: 'Dummy' } });
@@ -278,9 +278,13 @@ describe('SingleSelect component', () => {
 
             it('should not change input value when option are not visible', async () => {
                 const mockOnChange = jest.fn(),
-                    { container } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} />);
+                    { container } = render(<SingleSelect value="All" options={options} onChange={mockOnChange} />),
+                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
+                fireEvent.click(inputEl);
+                fireEvent.change(inputEl, { target: { value: 'Dummy' } });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-                expect(container).toMatchSnapshot();
+                expect(inputEl.value).toEqual('Dummy');
+                expect(container.querySelector('#medly-popover')).toBeVisible();
             });
         });
     });

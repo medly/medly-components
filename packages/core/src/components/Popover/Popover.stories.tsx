@@ -1,10 +1,9 @@
 import { centerAligned, styled } from '@medly-components/utils';
 import { boolean, select } from '@storybook/addon-knobs';
-import { useState } from '@storybook/addons';
-import React from 'react';
+import React, { useState } from 'react';
 import Popover from './Popover';
 import PopoverWrapper from './PopoverWrapper';
-import { InteractionType, Placement } from './PopoverWrapper/types';
+import { Placement } from './PopoverWrapper/types';
 
 export const placement: Placement[] = [
     'top-start',
@@ -20,8 +19,6 @@ export const placement: Placement[] = [
     'left',
     'left-start'
 ];
-
-const interactionType: InteractionType[] = ['click', 'hover'];
 
 const DummyDiv = styled('div')`
     color: white;
@@ -49,18 +46,44 @@ const DummyPopover = styled('div')`
     ${centerAligned()};
 `;
 
-export const Basic = () => {
-    const [showPopover, setPopoverState] = useState(false);
-    const changePopoverState = () => setPopoverState(val => !val);
+export const WithClickInteraction = () => {
+    const [isPopoverVisible, setPopoverVisibilityState] = useState(false);
+
+    const showPopover = () => setPopoverVisibilityState(true),
+        hidePopover = () => setPopoverVisibilityState(false);
 
     return (
         <DummyWrapper>
             <PopoverWrapper
-                showPopover={showPopover}
+                showPopover={isPopoverVisible}
+                onClick={showPopover}
+                onOuterClick={hidePopover}
                 placement={select('Placement', placement, 'bottom')}
-                interactionType={select('Interaction Type', interactionType, 'hover')}
             >
-                <DummyDiv onClick={changePopoverState}>Hello</DummyDiv>
+                <DummyDiv>Hello</DummyDiv>
+                <Popover fullWidth={boolean('Popover Full Width', false)} fullHeight={boolean('Popover Full Height', false)}>
+                    <DummyPopover>This is Popover</DummyPopover>
+                </Popover>
+            </PopoverWrapper>
+        </DummyWrapper>
+    );
+};
+
+export const WithHoverInteraction = () => {
+    const [isPopoverVisible, setPopoverVisibilityState] = useState(false);
+
+    const showPopover = () => setPopoverVisibilityState(true),
+        hidePopover = () => setPopoverVisibilityState(false);
+
+    return (
+        <DummyWrapper>
+            <PopoverWrapper
+                showPopover={isPopoverVisible}
+                onMouseEnter={showPopover}
+                onMouseLeave={hidePopover}
+                placement={select('Placement', placement, 'bottom')}
+            >
+                <DummyDiv>Hello</DummyDiv>
                 <Popover fullWidth={boolean('Popover Full Width', false)} fullHeight={boolean('Popover Full Height', false)}>
                     <DummyPopover>This is Popover</DummyPopover>
                 </Popover>

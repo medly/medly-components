@@ -5,9 +5,7 @@ import { OptionsStyled } from './Options.styled';
 import { OptionsProps } from './types';
 
 const Options: React.SFC<OptionsProps> & WithStyle = React.memo(({ options, onOptionClick, ...restProps }) => {
-    const handleOptionClick = (option: OptionsProps['options'][0]) => () => {
-        onOptionClick(option);
-    };
+    const handleOptionClick = (option: OptionsProps['options'][0]) => () => onOptionClick(option);
 
     return (
         <OptionsStyled {...restProps}>

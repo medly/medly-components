@@ -56,16 +56,16 @@ describe('DatePicker component', () => {
         TestUtils.fireEvent.click(container.querySelector('input'));
         expect(container.querySelector('#medly-datepicker-popover')).toBeVisible();
         TestUtils.fireEvent.click(getByText('sibling'));
-        await TestUtils.wait(() => expect(container.querySelector('#medly-datepicker-popover')).not.toBeVisible());
+        expect(container.querySelector('#medly-datepicker-popover')).toBeNull();
     });
 
     it('should call onChange on selecting date', async () => {
         const mockOnChange = jest.fn(),
             dateToSelect = new Date(2020, 0, 2),
-            { getByTitle } = TestUtils.render(
+            { container, getByTitle } = TestUtils.render(
                 <DatePicker value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />
             );
-
+        TestUtils.fireEvent.click(container.querySelector('input'));
         TestUtils.fireEvent.click(getByTitle(dateToSelect.toDateString()));
         expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
     });
