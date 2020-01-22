@@ -105,16 +105,4 @@ export const PopoverWrapperStyled = styled('div')<Props>`
     ${Popover.Style} {
         ${({ placement }) => getPosition(placement)}
     }
-
-    ${({ interactionType }) => {
-        if (interactionType === 'hover') {
-            return css`
-                &:hover {
-                    ${Popover.Style} {
-                        display: block;
-                    }
-                }
-            `;
-        }
-    }}
 `;

@@ -19,8 +19,6 @@ export type InteractionType = 'click' | 'hover';
 export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'onChange'> {
     /** To be used when interaction type is click */
     showPopover?: boolean;
-    /** Show popover based on this interaction type */
-    interactionType?: InteractionType;
     /** Placement of the popover */
     placement?: Placement;
     /** Function to be called on  outer click of the wrapper */

@@ -3,7 +3,7 @@
 exports[`MultiSelect component with checkbox false should render correctly with all the props given 1`] = `
 .c15 {
   font-size: 16px;
-  cursor: inherit;
+  cursor: pointer;
 }
 
 .c15 * {
@@ -25,7 +25,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   color: inherit;
 }
 
-.c19 {
+.c17 {
   font-size: 14px;
   font-weight: 400;
   color: grey;
@@ -77,11 +77,11 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   margin-left: 10px;
 }
 
-.c21 .c10 * {
+.c19 .c10 * {
   fill: #ffffff;
 }
 
-.c21 .c8 + .c10 {
+.c19 .c8 + .c10 {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -101,7 +101,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   align-self: center;
 }
 
-.c20 {
+.c18 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: grey;
@@ -115,7 +115,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'field' 'description';
 }
 
-.c12 .c25 {
+.c12 .c23 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -137,7 +137,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'label field' 'random description';
 }
 
-.c1 .c25 {
+.c1 .c23 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -189,16 +189,6 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   visibility: hidden;
 }
 
-.c18 {
-  position: absolute;
-  z-index: 1000;
-  display: none;
-  -webkit-transition: all 2ms ease-in-out;
-  transition: all 2ms ease-in-out;
-  border-radius: 4px;
-  width: calc(100% - 0px);
-}
-
 .c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -210,21 +200,21 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   flex-direction: column-reverse;
 }
 
-.c5 .c17 {
+.c5 .c24 {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c22 .c0 {
+.c20 .c0 {
   margin: 0px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c22 .c0 .c13 {
+.c20 .c0 .c13 {
   margin: 0px;
   border: none;
   background-color: transparent;
@@ -283,26 +273,26 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   font-size: 10px;
 }
 
-.c23 .c10 {
+.c21 .c10 {
   width: 100%;
   height: 100%;
 }
 
-.c24 .c0 {
+.c22 .c0 {
   width: calc(100% - 10px);
   margin: 0px;
   padding: 5px;
 }
 
-.c24 .c3 {
+.c22 .c3 {
   margin-bottom: 0px;
 }
 
-.c24 .c3 .c0 {
+.c22 .c3 .c0 {
   padding: 0px 5px 5px 0px;
 }
 
-.c24 .c25 .c0 {
+.c22 .c23 .c0 {
   padding: 5px 5px 5px 0px;
 }
 
@@ -377,14 +367,9 @@ exports[`MultiSelect component with checkbox false should render correctly with 
           />
         </svg>
       </div>
-      <div
-        class="c17 c18"
-        id="medly-multiSelect-popover"
-        style="display: none;"
-      />
     </div>
     <span
-      class="c8 c19 c20"
+      class="c8 c17 c18"
     >
       We will show reports based on Pharmacy
     </span>
@@ -395,39 +380,27 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 exports[`MultiSelect component with checkbox false should render correctly with default props 1`] = `
 .c8 {
   font-size: 16px;
-  cursor: inherit;
+  cursor: pointer;
 }
 
 .c8 * {
   fill: #616161;
 }
 
-.c15 {
-  font-size: 14px;
-  font-weight: 400;
-  color: inherit;
-}
-
-.c16 {
-  font-size: 14px;
-  font-weight: 700;
-  color: inherit;
-}
-
-.c18 .c7 * {
+.c10 .c7 * {
   fill: #ffffff;
 }
 
-.c18 .c14 + .c7 {
+.c10 .c15 + .c7 {
   cursor: not-allowed;
   margin-left: 10px;
 }
 
-.c19 .c7 * {
+.c11 .c7 * {
   fill: #ffffff;
 }
 
-.c19 .c14 + .c7 {
+.c11 .c15 + .c7 {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -441,7 +414,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'field' 'description';
 }
 
-.c1 .c22 {
+.c1 .c16 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -463,7 +436,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .c22 {
+.c4 .c16 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -515,16 +488,6 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   visibility: hidden;
 }
 
-.c11 {
-  position: absolute;
-  z-index: 1000;
-  display: none;
-  -webkit-transition: all 2ms ease-in-out;
-  transition: all 2ms ease-in-out;
-  border-radius: 4px;
-  width: calc(100% - 0px);
-}
-
 .c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -536,7 +499,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   flex-direction: column-reverse;
 }
 
-.c2 .c10 {
+.c2 .c18 {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -586,14 +549,14 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   cursor: pointer;
 }
 
-.c20 .c0 {
+.c12 .c0 {
   margin: 0px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c20 .c0 .c5 {
+.c12 .c0 .c5 {
   margin: 0px;
   border: none;
   background-color: transparent;
@@ -608,73 +571,23 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   font-size: 10px;
 }
 
-.c21 .c7 {
+.c13 .c7 {
   width: 100%;
   height: 100%;
 }
 
-.c12 {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-  max-height: 200px;
-  overflow: auto;
-  border: 1px solid #E0E0E0;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.c12 .c0 {
+.c14 .c0 {
   width: calc(100% - 10px);
   margin: 0px;
   padding: 5px;
 }
 
-.c12 .c23 {
-  margin-bottom: 0px;
-}
-
-.c12 .c23 .c0 {
+.c14 .c17 .c0 {
   padding: 0px 5px 5px 0px;
 }
 
-.c12 .c22 .c0 {
+.c14 .c16 .c0 {
   padding: 5px 5px 5px 0px;
-}
-
-.c13 {
-  cursor: pointer;
-  padding: 5px;
-  color: inherit;
-  background-color: #ffffff;
-}
-
-.c13:last-child {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-.c13:first-child {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-
-.c17 {
-  cursor: pointer;
-  padding: 5px 5px 5px 15px;
-  color: inherit;
-  background-color: #ffffff;
-}
-
-.c17:last-child {
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-.c17:first-child {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
 }
 
 <div>
@@ -720,71 +633,6 @@ exports[`MultiSelect component with checkbox false should render correctly with 
           />
         </svg>
       </div>
-      <div
-        class="c10 c11"
-        id="medly-multiSelect-popover"
-        style="display: none;"
-      >
-        <ul
-          class="c12"
-        >
-          <li
-            class="c13"
-            label="All"
-            value="all"
-          >
-            <span
-              class="c14 c15"
-            >
-              All
-            </span>
-          </li>
-          <li
-            class="c13"
-            label="Dummy1"
-            value="Dummy1"
-          >
-            <span
-              class="c14 c15"
-            >
-              Dummy1
-            </span>
-          </li>
-          <li
-            class="c13"
-            label="Nested Options"
-            value="[object Object],[object Object]"
-          >
-            <strong
-              class="c14 c16"
-            >
-              Nested Options
-            </strong>
-          </li>
-          <li
-            class="c17"
-            label="Dummy2"
-            value="Dummy2"
-          >
-            <span
-              class="c14 c15"
-            >
-              Dummy2
-            </span>
-          </li>
-          <li
-            class="c17"
-            label="Dummy3"
-            value="Dummy3"
-          >
-            <span
-              class="c14 c15"
-            >
-              Dummy3
-            </span>
-          </li>
-        </ul>
-      </div>
     </div>
     
   </div>
@@ -792,37 +640,37 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 `;
 
 exports[`MultiSelect component with checkbox true should render correctly with all the props given 1`] = `
-.c15 {
+.c14 {
   font-size: 16px;
-  cursor: inherit;
+  cursor: pointer;
 }
 
-.c15 * {
+.c14 * {
   fill: #616161;
 }
 
-.c11 {
+.c10 {
   font-size: 12px;
   cursor: pointer;
 }
 
-.c11 * {
+.c10 * {
   fill: #616161;
 }
 
-.c9 {
+.c8 {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
 }
 
-.c19 {
+.c16 {
   font-size: 14px;
   font-weight: 400;
   color: grey;
 }
 
-.c7 {
+.c6 {
   background-color: transparent;
   border: none;
   border-radius: 20px;
@@ -855,15 +703,15 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   align-items: center;
 }
 
-.c7:focus {
+.c6:focus {
   outline: none;
 }
 
-.c7 .c10 * {
+.c6 .c9 * {
   fill: #ffffff;
 }
 
-.c7 .c8 + .c10 {
+.c6 .c7 + .c9 {
   cursor: not-allowed;
   margin-left: 10px;
 }
@@ -876,20 +724,20 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   cursor: default;
 }
 
-.c4 {
+.c3 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c20 {
+.c17 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: grey;
 }
 
-.c12 {
+.c11 {
   margin: 8px 8px 8px 0px;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
@@ -897,7 +745,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   grid-template-areas: 'field' 'description';
 }
 
-.c12 .c24 {
+.c11 .c19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -919,7 +767,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   grid-template-areas: 'label field' 'random description';
 }
 
-.c1 .c24 {
+.c1 .c19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -933,7 +781,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   flex-direction: row;
 }
 
-.c14 {
+.c13 {
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
@@ -946,42 +794,32 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   cursor: not-allowed;
 }
 
-.c14:focus {
+.c13:focus {
   border-color: #012040;
   outline: 0;
 }
 
-.c14::-webkit-input-placeholder {
+.c13::-webkit-input-placeholder {
   color: #9E9E9E;
 }
 
-.c14::-moz-placeholder {
+.c13::-moz-placeholder {
   color: #9E9E9E;
 }
 
-.c14:-ms-input-placeholder {
+.c13:-ms-input-placeholder {
   color: #9E9E9E;
 }
 
-.c14::placeholder {
+.c13::placeholder {
   color: #9E9E9E;
 }
 
-.c14::-webkit-file-upload-button {
+.c13::-webkit-file-upload-button {
   visibility: hidden;
 }
 
-.c18 {
-  position: absolute;
-  z-index: 1000;
-  display: none;
-  -webkit-transition: all 2ms ease-in-out;
-  transition: all 2ms ease-in-out;
-  border-radius: 4px;
-  width: calc(100% - 0px);
-}
-
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -992,27 +830,27 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   flex-direction: column-reverse;
 }
 
-.c5 .c17 {
+.c4 .c20 {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c21 .c0 {
+.c18 .c0 {
   margin: 0px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c21 .c0 .c13 {
+.c18 .c0 .c12 {
   margin: 0px;
   border: none;
   background-color: transparent;
 }
 
-.c6 {
+.c5 {
   border: 1px solid #E0E0E0;
   background-color: #E0E0E0;
   cursor: not-allowed;
@@ -1039,24 +877,24 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   width: calc(100% - 0px);
 }
 
-.c6 .c0 {
+.c5 .c0 {
   margin: 0px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c6 .c0 .c13 {
+.c5 .c0 .c12 {
   margin: 0px;
   border: none;
   background-color: transparent;
 }
 
-.c6 * {
+.c5 * {
   cursor: not-allowed;
 }
 
-.c16 {
+.c15 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1065,60 +903,37 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   font-size: 10px;
 }
 
-.c22 .c10 {
-  width: 100%;
-  height: 100%;
-}
-
-.c23 .c0 {
-  width: calc(100% - 10px);
-  margin: 0px;
-  padding: 5px;
-}
-
-.c23 .c3 {
-  margin-bottom: 0px;
-}
-
-.c23 .c3 .c0 {
-  padding: 0px 5px 5px 0px;
-}
-
-.c23 .c24 .c0 {
-  padding: 5px 5px 5px 0px;
-}
-
 <div>
   <div
     class="c0 c1"
     id="medly-multiSelect-field"
   >
     <label
-      class="c2 c3 c4"
+      class="c2 c3"
       for="medly-multiSelect"
     >
       Pharmacy
     </label>
     <div
-      class="c5"
+      class="c4"
       id="medly-popover-wrapper"
     >
       <div
-        class="c6"
+        class="c5"
         disabled=""
         id="medly-multiSelect-container"
       >
         <button
-          class="c7"
+          class="c6"
           disabled=""
         >
           <span
-            class="c8 c9"
+            class="c7 c8"
           >
             All
           </span>
           <svg
-            class="c10 c11"
+            class="c9 c10"
             height="1em"
             viewBox="0 0 352 512"
             width="1em"
@@ -1130,13 +945,13 @@ exports[`MultiSelect component with checkbox true should render correctly with a
           </svg>
         </button>
         <div
-          class="c0 c12"
+          class="c0 c11"
           id="medly-multiSelect-input-field"
         >
           
           <input
             autocomplete="off"
-            class="c13 c14"
+            class="c12 c13"
             disabled=""
             id="medly-multiSelect-input"
             label=""
@@ -1147,7 +962,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
           
         </div>
         <svg
-          class="c10 c15 c16"
+          class="c9 c14 c15"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"
@@ -1159,14 +974,9 @@ exports[`MultiSelect component with checkbox true should render correctly with a
           />
         </svg>
       </div>
-      <div
-        class="c17 c18"
-        id="medly-multiSelect-popover"
-        style="display: none;"
-      />
     </div>
     <span
-      class="c8 c19 c20"
+      class="c7 c16 c17"
     >
       We will show reports based on Pharmacy
     </span>
@@ -1175,53 +985,13 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 `;
 
 exports[`MultiSelect component with checkbox true should render correctly with default props 1`] = `
-.c8 {
-  font-size: 16px;
-  cursor: inherit;
-}
-
-.c8 * {
-  fill: #616161;
-}
-
-.c21 {
+.c7 {
   font-size: 16px;
   cursor: pointer;
 }
 
-.c21 * {
+.c7 * {
   fill: #616161;
-}
-
-.c14 {
-  font-size: 14px;
-  font-weight: 400;
-  color: #616161;
-  margin: 0px 0px 0px 8px;
-  cursor: pointer;
-}
-
-.c23 {
-  font-size: 14px;
-  font-weight: 400;
-  color: #616161;
-  margin: 0px 0px 8px 0px;
-  cursor: default;
-}
-
-.c25 {
-  grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: 17px;
-}
-
-.c16 {
-  grid-area: label;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
 }
 
 .c1 {
@@ -1233,7 +1003,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   grid-template-areas: 'field' 'description';
 }
 
-.c1 .c24 {
+.c1 .c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1255,52 +1025,11 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .c24 {
+.c4 .c9 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c13 {
-  margin: 8px 8px 8px 0px;
-  display: inline-grid;
-  grid-template-columns: max-content minmax(max-content,25%);
-  grid-template-areas: 'field label' 'description random';
-}
-
-.c13 .c24 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.c22 {
-  margin: 8px 0px;
-  display: grid;
-  grid-template-areas: 'label' 'field' 'description';
-}
-
-.c22 .c24 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -1346,16 +1075,6 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 
 .c6::-webkit-file-upload-button {
   visibility: hidden;
-}
-
-.c11 {
-  position: absolute;
-  z-index: 1000;
-  display: none;
-  -webkit-transition: all 2ms ease-in-out;
-  transition: all 2ms ease-in-out;
-  border-radius: 4px;
-  width: calc(100% - 0px);
 }
 
 .c2 {
@@ -1419,116 +1138,13 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   cursor: pointer;
 }
 
-.c9 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   max-width: 20px;
   margin-right: 8px;
   font-size: 10px;
-}
-
-.c17 {
-  width: 16px;
-  height: 16px;
-  position: relative;
-  border: 1px solid #E0E0E0;
-  background-color: #ffffff;
-  border-radius: 15%;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c17:focus-within {
-  box-shadow: 0 0 0 1pt #012040;
-}
-
-.c20 {
-  width: 0;
-  height: 0;
-  z-index: 1;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c20 .c7 {
-  width: 100%;
-  height: 100%;
-}
-
-.c18 {
-  opacity: 0;
-  z-index: 2;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  cursor: pointer;
-}
-
-.c18:focus {
-  outline: none;
-}
-
-.c18:disabled {
-  cursor: not-allowed;
-}
-
-.c18:checked ~ .c19 {
-  width: calc(70%);
-  height: calc(70%);
-  -webkit-transition: width 0.2s ease,height 0.2s ease;
-  transition: width 0.2s ease,height 0.2s ease;
-}
-
-.c12 {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-  max-height: 200px;
-  overflow: auto;
-  border: 1px solid #E0E0E0;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.c12 .c0 {
-  width: calc(100% - 10px);
-  margin: 0px;
-  padding: 5px;
-}
-
-.c12 .c15 {
-  margin-bottom: 0px;
-}
-
-.c12 .c15 .c0 {
-  padding: 0px 5px 5px 0px;
-}
-
-.c12 .c24 .c0 {
-  padding: 5px 5px 5px 0px;
 }
 
 <div>
@@ -1562,7 +1178,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
           
         </div>
         <svg
-          class="c7 c8 c9"
+          class="c7 c8"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"
@@ -1573,220 +1189,6 @@ exports[`MultiSelect component with checkbox true should render correctly with d
             d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
           />
         </svg>
-      </div>
-      <div
-        class="c10 c11"
-        id="medly-multiSelect-popover"
-        style="display: none;"
-      >
-        <ul
-          class="c12"
-        >
-          <div
-            class="c0 c13"
-            id="All-checkbox"
-          >
-            <label
-              class="c14 c15 c16"
-              for="All"
-            >
-              All
-            </label>
-            <div
-              class="c17"
-            >
-              <input
-                class="c18"
-                id="All"
-                name="all"
-                type="checkbox"
-                value="all"
-              />
-              <div
-                class="c19 c20"
-              >
-                <svg
-                  class="c7 c21"
-                  height="1em"
-                  viewBox="0 0 18 14"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-                    fill="none"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div
-            class="c0 c13"
-            id="Dummy1-checkbox"
-          >
-            <label
-              class="c14 c15 c16"
-              for="Dummy1"
-            >
-              Dummy1
-            </label>
-            <div
-              class="c17"
-            >
-              <input
-                class="c18"
-                id="Dummy1"
-                name="Dummy1"
-                type="checkbox"
-                value="Dummy1"
-              />
-              <div
-                class="c19 c20"
-              >
-                <svg
-                  class="c7 c21"
-                  height="1em"
-                  viewBox="0 0 18 14"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-                    fill="none"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div
-            class="c0 c22"
-            id="Nested Options-checkboxGroup"
-          >
-            <label
-              class="c23 c15 c16"
-            >
-              <div
-                class="c0 c13"
-                id="Nested Options-checkbox"
-              >
-                <label
-                  class="c14 c15 c16"
-                  for="Nested Options"
-                >
-                  Nested Options
-                </label>
-                <div
-                  class="c17"
-                >
-                  <input
-                    class="c18"
-                    id="Nested Options"
-                    type="checkbox"
-                  />
-                  <div
-                    class="c19 c20"
-                  >
-                    <svg
-                      class="c7 c21"
-                      height="1em"
-                      viewBox="0 0 18 14"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-                        fill="none"
-                        fill-rule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </label>
-            <div
-              class="c24 c25"
-            >
-              <div
-                class="c0 c13"
-                id="Dummy2-checkbox"
-              >
-                <label
-                  class="c14 c15 c16"
-                  for="Dummy2"
-                >
-                  Dummy2
-                </label>
-                <div
-                  class="c17"
-                >
-                  <input
-                    class="c18"
-                    id="Dummy2"
-                    name="Dummy2"
-                    type="checkbox"
-                  />
-                  <div
-                    class="c19 c20"
-                  >
-                    <svg
-                      class="c7 c21"
-                      height="1em"
-                      viewBox="0 0 18 14"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-                        fill="none"
-                        fill-rule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="c0 c13"
-                id="Dummy3-checkbox"
-              >
-                <label
-                  class="c14 c15 c16"
-                  for="Dummy3"
-                >
-                  Dummy3
-                </label>
-                <div
-                  class="c17"
-                >
-                  <input
-                    class="c18"
-                    id="Dummy3"
-                    name="Dummy3"
-                    type="checkbox"
-                  />
-                  <div
-                    class="c19 c20"
-                  >
-                    <svg
-                      class="c7 c21"
-                      height="1em"
-                      viewBox="0 0 18 14"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-                        fill="none"
-                        fill-rule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </ul>
       </div>
     </div>
     

@@ -68,7 +68,7 @@ describe('MultiSelect component', () => {
             const inputEl = container.querySelector('#medly-multiSelect-input');
             fireEvent.click(inputEl);
             fireEvent.click(getByText('Outer Element'));
-            expect(container.querySelector('#medly-multiSelect-popover')).not.toBeVisible();
+            expect(container.querySelector('#medly-multiSelect-popover')).toBeNull();
         });
 
         it('should not render options when clicked outside', () => {
@@ -80,7 +80,7 @@ describe('MultiSelect component', () => {
                     </div>
                 );
             fireEvent.click(getByText('Outer Element'));
-            expect(container.querySelector('#medly-multiSelect-popover')).not.toBeVisible();
+            expect(container.querySelector('#medly-multiSelect-popover')).toBeNull();
         });
 
         it('should call onChange prop on selecting one of the prop', () => {
@@ -170,7 +170,7 @@ describe('MultiSelect component', () => {
                 outer = getByText('Outer');
             fireEvent.click(inputEl);
             fireEvent.click(outer);
-            expect(container.querySelector('#medly-multiSelect-popover')).not.toBeVisible();
+            expect(container.querySelector('#medly-multiSelect-popover')).toBeNull();
         });
     });
 });

@@ -11,10 +11,45 @@ You have to use both `Popover` & `PopoverWrapper` component.
 
 ```typescript
 import { Popover, PopoverWrapper } from '@medly-components/core';
+
+export const WithClickInteraction = () => {
+    const [isPopoverVisible, setPopoverVisibilityState] = useState(false);
+
+    const showPopover = () => setPopoverVisibilityState(true),
+        hidePopover = () => setPopoverVisibilityState(false);
+
+    return (
+        <DummyWrapper>
+            <PopoverWrapper
+                showPopover={isPopoverVisible}
+                onClick={showPopover}
+                onOuterClick={hidePopover}
+                placement={select('Placement', placement, 'bottom')}
+            >
+                <DummyDiv>Hello</DummyDiv>
+                <Popover fullWidth={boolean('Popover Full Width', false)} fullHeight={boolean('Popover Full Height', false)}>
+                    <DummyPopover>This is Popover</DummyPopover>
+                </Popover>
+            </PopoverWrapper>
+        </DummyWrapper>
+    );
+};
 ```
 
+### Popover with click interaction
+
+We have to use `onClick` and `onOuterclick` functions to set popover state.
+
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic()}</Story>
+    <Story name="WithClickInteraction">{stories.WithClickInteraction()}</Story>
+</Preview>
+
+### Popover with hover interaction
+
+We have to use `onMouseEnter` and `onMouseLeave` functions to set popover state.
+
+<Preview withToolbar>
+    <Story name="WithHoverInteraction">{stories.WithHoverInteraction()}</Story>
 </Preview>
 
 ### PopoverWrapper Props

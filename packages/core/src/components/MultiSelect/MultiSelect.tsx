@@ -39,13 +39,6 @@ export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
                 setInputValue('');
                 updateToDefaultOptions();
             }, [updateToDefaultOptions]),
-            handleInputClick = useCallback(
-                (e: React.MouseEvent<HTMLInputElement>) => {
-                    // @ts-ignore
-                    e.target.setSelectionRange(inputValue.length, inputValue.length);
-                },
-                [inputValue]
-            ),
             handleInputChange = useCallback(
                 ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
                     setInputValue(value);
@@ -83,28 +76,24 @@ export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
                         {label}
                     </FieldWithLabel.Label>
                 )}
-                <PopoverWrapper interactionType="click" onOuterClick={handleOuterClick} showPopover={areOptionsVisible}>
-                    <SelectWrapperStyled
-                        {...{ description, fullWidth, labelPosition, disabled }}
-                        onClick={handleWrapperClick}
-                        id={`${id}-container`}
-                    >
+                <PopoverWrapper onOuterClick={handleOuterClick} showPopover={areOptionsVisible}>
+                    <SelectWrapperStyled {...{ description, fullWidth, labelPosition, disabled }} id={`${id}-container`}>
                         {props.showChips &&
                             selectedOptions.map(op => (
                                 <Chip key={op.value} disabled={disabled} label={op.label} onDelete={handleChipDelete(op.value)} />
                             ))}
                         <Input
+                            onClick={handleWrapperClick}
                             autoComplete="off"
                             id={`${id}-input`}
                             disabled={disabled}
                             required={required}
                             placeholder={placeholder}
                             value={inputValue}
-                            onClick={handleInputClick}
                             ref={ref}
                             onChange={handleInputChange}
                         />
-                        <SelectIconStyled />
+                        <SelectIconStyled onClick={handleWrapperClick} />
                     </SelectWrapperStyled>
                     <Popover fullWidth id={`${id}-popover`}>
                         {!disabled && (
