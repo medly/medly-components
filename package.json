@@ -62,7 +62,7 @@
         "@storybook/storybook-deployer": "^2.8.1",
         "@svgr/webpack": "^5.1.0",
         "@testing-library/dom": "^6.2.0",
-        "@testing-library/jest-dom": "^4.1.0",
+        "@testing-library/jest-dom": "^5.0.0",
         "@testing-library/react": "^9.1.4",
         "@types/jest": "^24.0.11",
         "@types/react": "^16.8.13",
