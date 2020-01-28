@@ -22,6 +22,8 @@ export const Basic = () => (
         required={boolean('Required', false)}
         placeholder={text('Placeholder', 'Enter Email Address')}
         description={text('Description', 'We will never share your email with anyone')}
+        prefix={text('Prefix', '')}
+        suffix={text('Suffix', '.com')}
         descriptionColor={color('Description Color', defaultTheme.input.descriptionColor)}
     />
 );

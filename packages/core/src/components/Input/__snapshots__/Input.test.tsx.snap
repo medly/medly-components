@@ -9,7 +9,7 @@ exports[`Input component should render correctly when fullWidth & required props
   cursor: default;
 }
 
-.c4 {
+.c5 {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
@@ -22,7 +22,7 @@ exports[`Input component should render correctly when fullWidth & required props
   align-self: center;
 }
 
-.c5 {
+.c6 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: #818A91;
@@ -35,7 +35,7 @@ exports[`Input component should render correctly when fullWidth & required props
   grid-template-areas: 'label field' 'random description';
 }
 
-.c0 .c6 {
+.c0 .c7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -50,40 +50,55 @@ exports[`Input component should render correctly when fullWidth & required props
 }
 
 .c3 {
-  padding: 8px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #616161;
-  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
-  cursor: inherit;
+  overflow: hidden;
 }
 
-.c3:focus {
+.c3:focus-within {
   border-color: #012040;
+}
+
+.c3 > * {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #616161;
+}
+
+.c4 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   outline: 0;
+  border: 0;
+  cursor: inherit;
+  background-color: #ffffff;
 }
 
-.c3::-webkit-input-placeholder {
+.c4::-webkit-input-placeholder {
   color: #9E9E9E;
 }
 
-.c3::-moz-placeholder {
+.c4::-moz-placeholder {
   color: #9E9E9E;
 }
 
-.c3:-ms-input-placeholder {
+.c4:-ms-input-placeholder {
   color: #9E9E9E;
 }
 
-.c3::placeholder {
+.c4::placeholder {
   color: #9E9E9E;
 }
 
-.c3::-webkit-file-upload-button {
+.c4::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -98,15 +113,18 @@ exports[`Input component should render correctly when fullWidth & required props
     >
       Email Address
     </label>
-    <input
+    <div
       class="c3"
-      id="medly-input"
-      label="Email Address"
-      placeholder="Enter Email Address"
-      type="email"
-    />
+    >
+      <input
+        class="c4"
+        id="medly-input"
+        placeholder="Enter Email Address"
+        type="email"
+      />
+    </div>
     <span
-      class="c4 c5"
+      class="c5 c6"
     >
       We will never share your email with anyone
     </span>
@@ -123,7 +141,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   grid-template-areas: 'field' 'description';
 }
 
-.c0 .c2 {
+.c0 .c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -138,40 +156,55 @@ exports[`Input component should render correctly when it is disabled 1`] = `
 }
 
 .c1 {
-  padding: 8px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #616161;
-  background-color: #E0E0E0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
-  cursor: not-allowed;
+  overflow: hidden;
 }
 
-.c1:focus {
+.c1:focus-within {
   border-color: #012040;
+}
+
+.c1 > * {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #616161;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   outline: 0;
+  border: 0;
+  cursor: not-allowed;
+  background-color: #E0E0E0;
 }
 
-.c1::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder {
   color: #9E9E9E;
 }
 
-.c1::-moz-placeholder {
+.c2::-moz-placeholder {
   color: #9E9E9E;
 }
 
-.c1:-ms-input-placeholder {
+.c2:-ms-input-placeholder {
   color: #9E9E9E;
 }
 
-.c1::placeholder {
+.c2::placeholder {
   color: #9E9E9E;
 }
 
-.c1::-webkit-file-upload-button {
+.c2::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -181,14 +214,17 @@ exports[`Input component should render correctly when it is disabled 1`] = `
     id="email-input-field"
   >
     
-    <input
+    <div
       class="c1"
-      disabled=""
-      id="email-input"
-      label=""
-      placeholder="Enter Email Address"
-      type="text"
-    />
+    >
+      <input
+        class="c2"
+        disabled=""
+        id="email-input"
+        placeholder="Enter Email Address"
+        type="text"
+      />
+    </div>
     
   </div>
 </div>
@@ -203,7 +239,7 @@ exports[`Input component should render correctly when label and description are 
   grid-template-areas: 'field' 'description';
 }
 
-.c0 .c2 {
+.c0 .c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -218,40 +254,55 @@ exports[`Input component should render correctly when label and description are 
 }
 
 .c1 {
-  padding: 8px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #616161;
-  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
-  cursor: inherit;
+  overflow: hidden;
 }
 
-.c1:focus {
+.c1:focus-within {
   border-color: #012040;
+}
+
+.c1 > * {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #616161;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   outline: 0;
+  border: 0;
+  cursor: inherit;
+  background-color: #ffffff;
 }
 
-.c1::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder {
   color: #9E9E9E;
 }
 
-.c1::-moz-placeholder {
+.c2::-moz-placeholder {
   color: #9E9E9E;
 }
 
-.c1:-ms-input-placeholder {
+.c2:-ms-input-placeholder {
   color: #9E9E9E;
 }
 
-.c1::placeholder {
+.c2::placeholder {
   color: #9E9E9E;
 }
 
-.c1::-webkit-file-upload-button {
+.c2::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -261,13 +312,16 @@ exports[`Input component should render correctly when label and description are 
     id="email-input-field"
   >
     
-    <input
+    <div
       class="c1"
-      id="email-input"
-      label=""
-      placeholder="Enter Email Address"
-      type="email"
-    />
+    >
+      <input
+        class="c2"
+        id="email-input"
+        placeholder="Enter Email Address"
+        type="email"
+      />
+    </div>
     
   </div>
 </div>
@@ -287,7 +341,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   content: ' *';
 }
 
-.c4 {
+.c7 {
   font-size: 14px;
   font-weight: 400;
   color: grey;
@@ -300,7 +354,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   align-self: center;
 }
 
-.c5 {
+.c8 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: grey;
@@ -312,7 +366,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   grid-template-areas: 'label' 'field' 'description';
 }
 
-.c0 .c6 {
+.c0 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -327,42 +381,65 @@ exports[`Input component should render correctly with all the props given 1`] = 
 }
 
 .c3 {
-  padding: 8px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #616161;
-  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
+  overflow: hidden;
+}
+
+.c3:focus-within {
+  border-color: #012040;
+}
+
+.c3 > * {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #616161;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: 0;
+  border: 0;
   cursor: inherit;
+  background-color: #ffffff;
   width: calc(100% - 0px);
 }
 
-.c3:focus {
-  border-color: #012040;
-  outline: 0;
-}
-
-.c3::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder {
   color: #9E9E9E;
 }
 
-.c3::-moz-placeholder {
+.c5::-moz-placeholder {
   color: #9E9E9E;
 }
 
-.c3:-ms-input-placeholder {
+.c5:-ms-input-placeholder {
   color: #9E9E9E;
 }
 
-.c3::placeholder {
+.c5::placeholder {
   color: #9E9E9E;
 }
 
-.c3::-webkit-file-upload-button {
+.c5::-webkit-file-upload-button {
   visibility: hidden;
+}
+
+.c4 {
+  background-color: #EEEEEE;
+}
+
+.c6 {
+  background-color: #EEEEEE;
 }
 
 <div>
@@ -377,16 +454,29 @@ exports[`Input component should render correctly with all the props given 1`] = 
     >
       Email Address
     </label>
-    <input
+    <div
       class="c3"
-      id="email-input"
-      label="Email Address"
-      placeholder="Enter Email Address"
-      required=""
-      type="email"
-    />
+    >
+      <span
+        class="c4"
+      >
+        www.
+      </span>
+      <input
+        class="c5"
+        id="email-input"
+        placeholder="Enter Email Address"
+        required=""
+        type="email"
+      />
+      <span
+        class="c6"
+      >
+        .com
+      </span>
+    </div>
     <span
-      class="c4 c5"
+      class="c7 c8"
     >
       We will never share your email with anyone
     </span>

@@ -13,24 +13,24 @@ exports[`Calendar Component should render given date 1`] = `
   color: inherit;
 }
 
-.c19 {
+.c20 {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
 }
 
-.c21 {
+.c22 {
   font-size: 12px;
   font-weight: 400;
   color: inherit;
 }
 
-.c16 {
+.c17 {
   font-size: 16px;
   cursor: pointer;
 }
 
-.c16 * {
+.c17 * {
   fill: #616161;
 }
 
@@ -68,7 +68,7 @@ exports[`Calendar Component should render given date 1`] = `
   outline: none;
 }
 
-.c2 .c15 * {
+.c2 .c16 * {
   fill: #012040;
 }
 
@@ -76,11 +76,11 @@ exports[`Calendar Component should render given date 1`] = `
   cursor: not-allowed;
 }
 
-.c2 .c15 + .c3 {
+.c2 .c16 + .c3 {
   margin-left: 10px;
 }
 
-.c2 .c3 + .c15 {
+.c2 .c3 + .c16 {
   margin-left: 10px;
 }
 
@@ -125,7 +125,7 @@ exports[`Calendar Component should render given date 1`] = `
   grid-template-areas: 'field' 'description';
 }
 
-.c8 .c24 {
+.c8 .c25 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -147,7 +147,7 @@ exports[`Calendar Component should render given date 1`] = `
   grid-template-areas: 'field' 'description';
 }
 
-.c12 .c24 {
+.c12 .c25 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -161,41 +161,56 @@ exports[`Calendar Component should render given date 1`] = `
   flex-direction: column;
 }
 
-.c14 {
-  padding: 8px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #616161;
-  background-color: #ffffff;
+.c13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
-  cursor: inherit;
+  overflow: hidden;
 }
 
-.c14:focus {
+.c13:focus-within {
   border-color: #012040;
+}
+
+.c13 > * {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #616161;
+}
+
+.c15 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   outline: 0;
+  border: 0;
+  cursor: inherit;
+  background-color: #ffffff;
 }
 
-.c14::-webkit-input-placeholder {
+.c15::-webkit-input-placeholder {
   color: #9E9E9E;
 }
 
-.c14::-moz-placeholder {
+.c15::-moz-placeholder {
   color: #9E9E9E;
 }
 
-.c14:-ms-input-placeholder {
+.c15:-ms-input-placeholder {
   color: #9E9E9E;
 }
 
-.c14::placeholder {
+.c15::placeholder {
   color: #9E9E9E;
 }
 
-.c14::-webkit-file-upload-button {
+.c15::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -210,7 +225,7 @@ exports[`Calendar Component should render given date 1`] = `
   flex-direction: column-reverse;
 }
 
-.c9 .c25 {
+.c9 .c26 {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -251,7 +266,7 @@ exports[`Calendar Component should render given date 1`] = `
   flex: 1;
 }
 
-.c11 .c7 .c13 {
+.c11 .c7 .c14 {
   margin: 0px;
   border: none;
   background-color: transparent;
@@ -261,7 +276,7 @@ exports[`Calendar Component should render given date 1`] = `
   cursor: pointer;
 }
 
-.c17 {
+.c18 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -312,12 +327,12 @@ exports[`Calendar Component should render given date 1`] = `
   padding: 5px;
 }
 
-.c18 {
+.c19 {
   display: grid;
   grid-template: repeat(7,auto) / repeat(7,auto);
 }
 
-.c18 > * {
+.c19 > * {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -325,7 +340,7 @@ exports[`Calendar Component should render given date 1`] = `
   padding: 8px 10px;
 }
 
-.c20 {
+.c21 {
   background-color: transparent;
   border: none;
   -webkit-text-decoration: none;
@@ -347,11 +362,11 @@ exports[`Calendar Component should render given date 1`] = `
   align-items: center;
 }
 
-.c20:focus {
+.c21:focus {
   outline: none;
 }
 
-.c22 {
+.c23 {
   background-color: transparent;
   border: none;
   -webkit-text-decoration: none;
@@ -374,11 +389,11 @@ exports[`Calendar Component should render given date 1`] = `
   align-items: center;
 }
 
-.c22:focus {
+.c23:focus {
   outline: none;
 }
 
-.c23 {
+.c24 {
   background-color: transparent;
   border: none;
   -webkit-text-decoration: none;
@@ -399,7 +414,7 @@ exports[`Calendar Component should render given date 1`] = `
   align-items: center;
 }
 
-.c23:focus {
+.c24:focus {
   outline: none;
 }
 
@@ -459,19 +474,22 @@ exports[`Calendar Component should render given date 1`] = `
               id="test-calendar-month-selector-input-field"
             >
               
-              <input
-                autocomplete="off"
-                class="c13 c14"
-                id="test-calendar-month-selector-input"
-                label=""
-                placeholder="Please Select . . ."
-                type="text"
-                value="Jan"
-              />
+              <div
+                class="c13"
+              >
+                <input
+                  autocomplete="off"
+                  class="c14 c15"
+                  id="test-calendar-month-selector-input"
+                  placeholder="Please Select . . ."
+                  type="text"
+                  value="Jan"
+                />
+              </div>
               
             </div>
             <svg
-              class="c15 c16 c17"
+              class="c16 c17 c18"
               height="1em"
               theme="[object Object]"
               viewBox="0 0 12 8"
@@ -503,19 +521,22 @@ exports[`Calendar Component should render given date 1`] = `
               id="test-calendar-year-selector-input-field"
             >
               
-              <input
-                autocomplete="off"
-                class="c13 c14"
-                id="test-calendar-year-selector-input"
-                label=""
-                placeholder="Please Select . . ."
-                type="text"
-                value="2020"
-              />
+              <div
+                class="c13"
+              >
+                <input
+                  autocomplete="off"
+                  class="c14 c15"
+                  id="test-calendar-year-selector-input"
+                  placeholder="Please Select . . ."
+                  type="text"
+                  value="2020"
+                />
+              </div>
               
             </div>
             <svg
-              class="c15 c16 c17"
+              class="c16 c17 c18"
               height="1em"
               theme="[object Object]"
               viewBox="0 0 12 8"
@@ -532,501 +553,501 @@ exports[`Calendar Component should render given date 1`] = `
       </div>
     </div>
     <div
-      class="c18"
+      class="c19"
     >
       <span
-        class="c3 c19"
+        class="c3 c20"
       >
         Su
       </span>
       <span
-        class="c3 c19"
+        class="c3 c20"
       >
         Mo
       </span>
       <span
-        class="c3 c19"
+        class="c3 c20"
       >
         Tu
       </span>
       <span
-        class="c3 c19"
+        class="c3 c20"
       >
         We
       </span>
       <span
-        class="c3 c19"
+        class="c3 c20"
       >
         Th
       </span>
       <span
-        class="c3 c19"
+        class="c3 c20"
       >
         Fr
       </span>
       <span
-        class="c3 c19"
+        class="c3 c20"
       >
         Sa
       </span>
       <button
-        class="c20"
+        class="c21"
         title="Sun Dec 29 2019"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           29
         </span>
       </button>
       <button
-        class="c20"
+        class="c21"
         title="Mon Dec 30 2019"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           30
         </span>
       </button>
       <button
-        class="c20"
+        class="c21"
         title="Tue Dec 31 2019"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           31
         </span>
       </button>
       <button
-        class="c22"
+        class="c23"
         title="Wed Jan 01 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           1
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Thu Jan 02 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           2
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Fri Jan 03 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           3
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Sat Jan 04 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           4
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Sun Jan 05 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           5
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Mon Jan 06 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           6
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Tue Jan 07 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           7
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Wed Jan 08 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           8
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Thu Jan 09 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           9
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Fri Jan 10 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           10
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Sat Jan 11 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           11
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Sun Jan 12 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           12
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Mon Jan 13 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           13
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Tue Jan 14 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           14
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Wed Jan 15 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           15
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Thu Jan 16 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           16
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Fri Jan 17 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           17
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Sat Jan 18 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           18
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Sun Jan 19 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           19
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Mon Jan 20 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           20
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Tue Jan 21 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           21
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Wed Jan 22 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           22
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Thu Jan 23 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           23
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Fri Jan 24 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           24
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Sat Jan 25 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           25
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Sun Jan 26 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           26
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Mon Jan 27 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           27
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Tue Jan 28 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           28
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Wed Jan 29 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           29
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Thu Jan 30 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           30
         </span>
       </button>
       <button
-        class="c23"
+        class="c24"
         title="Fri Jan 31 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           31
         </span>
       </button>
       <button
-        class="c20"
+        class="c21"
         title="Sat Feb 01 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           1
         </span>
       </button>
       <button
-        class="c20"
+        class="c21"
         title="Sun Feb 02 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           2
         </span>
       </button>
       <button
-        class="c20"
+        class="c21"
         title="Mon Feb 03 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           3
         </span>
       </button>
       <button
-        class="c20"
+        class="c21"
         title="Tue Feb 04 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           4
         </span>
       </button>
       <button
-        class="c20"
+        class="c21"
         title="Wed Feb 05 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           5
         </span>
       </button>
       <button
-        class="c20"
+        class="c21"
         title="Thu Feb 06 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           6
         </span>
       </button>
       <button
-        class="c20"
+        class="c21"
         title="Fri Feb 07 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           7
         </span>
       </button>
       <button
-        class="c20"
+        class="c21"
         title="Sat Feb 08 2020"
         type="button"
       >
         <span
-          class="c3 c21"
+          class="c3 c22"
         >
           8
         </span>
