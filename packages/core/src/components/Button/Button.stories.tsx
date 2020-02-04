@@ -11,8 +11,8 @@ export default {
     includeStories: []
 };
 
-const variant: Array<Props['variant']> = ['solid', 'flat', 'outlined'];
-const color: Array<Props['color']> = ['primary', 'secondary'];
+const variant: Props['variant'][] = ['solid', 'flat', 'outlined'];
+const color: Props['color'][] = ['primary', 'secondary'];
 
 export const ThemeInterface = (props: ButtonTheme): any => null;
 ThemeInterface.defaultProps = {

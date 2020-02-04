@@ -4,7 +4,7 @@ import { placement } from '../Popover/Popover.stories';
 import { DatePicker } from './DatePicker';
 import { Props } from './types';
 
-const labelPosition: Array<Props['labelPosition']> = ['top', 'bottom', 'left', 'right'];
+const labelPosition: Props['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
 
 export const Basic = () => {
     const [date, setDate] = useState(null);

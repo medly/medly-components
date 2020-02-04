@@ -4,7 +4,7 @@ import React from 'react';
 import { Input } from './Input';
 import { Props } from './types';
 
-const labelPosition: Array<Props['labelPosition']> = ['top', 'bottom', 'left', 'right'];
+const labelPosition: Props['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
 
 export const ThemeInterface = (props: InputTheme): any => null;
 ThemeInterface.defaultProps = {

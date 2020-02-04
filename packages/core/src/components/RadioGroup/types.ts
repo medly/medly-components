@@ -8,7 +8,7 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChang
     /** Function to be called on selecting any radio */
     onChange?: (value: string) => void;
     /** Options */
-    options: Array<{ value: any; label: string; disabled?: boolean }>;
+    options: { value: any; label: string; disabled?: boolean }[];
     /** Name to be given to all radio option as html attribute */
     name?: string;
     /** Takes full width of the parent component */

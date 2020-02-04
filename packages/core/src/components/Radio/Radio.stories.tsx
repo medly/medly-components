@@ -4,8 +4,8 @@ import React from 'react';
 import { Radio } from './Radio';
 import { Props } from './types';
 
-const labelPosition: Array<Props['labelPosition']> = ['left', 'right', 'top', 'bottom'];
-const size: Array<Props['size']> = ['XS', 'S', 'M', 'L', 'XL'];
+const labelPosition: Props['labelPosition'][] = ['left', 'right', 'top', 'bottom'];
+const size: Props['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
 
 export const ThemeInterface = (props: RadioTheme): any => null;
 ThemeInterface.defaultProps = {

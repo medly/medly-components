@@ -4,7 +4,7 @@ import { Placement } from '../Popover/PopoverWrapper/types';
 import { DateRangePicker } from './DateRangePicker';
 import { Props } from './types';
 
-const labelPosition: Array<Props['labelPosition']> = ['top', 'bottom', 'left', 'right'];
+const labelPosition: Props['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
 const placement: Placement[] = [
     'top-start',
     'top',

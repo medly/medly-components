@@ -4,7 +4,7 @@ import React from 'react';
 import { Avatar } from './Avatar';
 import { Props } from './types';
 
-const size: Array<Props['size']> = ['S', 'M', 'L', 'XL'];
+const size: Props['size'][] = ['S', 'M', 'L', 'XL'];
 
 export const ThemeInterface = (props: AvatarTheme): any => null;
 ThemeInterface.defaultProps = {

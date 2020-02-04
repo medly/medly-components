@@ -5,7 +5,7 @@ import React from 'react';
 import { Chip } from './Chip';
 import { Props } from './types';
 
-const variant: Array<Props['variant']> = ['solid', 'flat', 'outlined'];
+const variant: Props['variant'][] = ['solid', 'flat', 'outlined'];
 
 export const ThemeInterface = (props: ChipTheme): any => null;
 ThemeInterface.defaultProps = {

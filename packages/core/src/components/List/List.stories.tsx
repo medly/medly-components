@@ -4,7 +4,7 @@ import Text from '../Text';
 import { List } from './List';
 import { Props } from './types';
 
-const variant: Array<Props['variant']> = ['horizontal', 'vertical'];
+const variant: Props['variant'][] = ['horizontal', 'vertical'];
 
 export const Basic = () => (
     <List variant={select('Variant', variant, 'vertical')}>

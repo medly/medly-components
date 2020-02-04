@@ -5,7 +5,7 @@ import React from 'react';
 import { Toast } from './Toast';
 import { Props } from './types';
 
-const variant: Array<Props['variant']> = ['error', 'warning', 'success', 'info'];
+const variant: Props['variant'][] = ['error', 'warning', 'success', 'info'];
 
 export const ThemeInterface = (props: ToastTheme): any => null;
 ThemeInterface.defaultProps = {

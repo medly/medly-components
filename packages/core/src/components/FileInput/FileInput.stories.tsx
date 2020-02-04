@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { FileInput } from './FileInput';
 import { Props } from './types';
 
-const labelPosition: Array<Props['labelPosition']> = ['top', 'bottom', 'left', 'right'];
+const labelPosition: Props['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
 
 export const Basic = () => {
     const [files, setFiles] = useState<FileList>();
