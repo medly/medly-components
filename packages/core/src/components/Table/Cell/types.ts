@@ -5,6 +5,7 @@ export interface StyledProps {
     hide?: boolean;
     frozen?: boolean;
     align?: 'left' | 'right' | 'center';
+    isRowSelectionCell?: boolean;
 }
 
 export interface Props extends StyledProps, HTMLProps<HTMLDivElement> {
