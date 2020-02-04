@@ -99,6 +99,10 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c19 {
@@ -115,7 +119,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'field' 'description';
 }
 
-.c12 .c24 {
+.c12 .c25 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -137,7 +141,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'label field' 'random description';
 }
 
-.c1 .c24 {
+.c1 .c25 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -215,7 +219,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   flex-direction: column-reverse;
 }
 
-.c5 .c25 {
+.c5 .c26 {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -289,25 +293,32 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c22 .c10 {
-  width: 100%;
-  height: 100%;
+  width: 0;
+  height: 0;
+  -webkit-transition: width 0.2s ease,height 0.2s ease;
+  transition: width 0.2s ease,height 0.2s ease;
 }
 
-.c23 .c0 {
+.c23:checked + .c27 .c10 {
+  width: calc(70%);
+  height: calc(70%);
+}
+
+.c24 .c0 {
   width: calc(100% - 10px);
   margin: 0px;
   padding: 5px;
 }
 
-.c23 .c3 {
+.c24 .c3 {
   margin-bottom: 0px;
 }
 
-.c23 .c3 .c0 {
+.c24 .c3 .c0 {
   padding: 0px 5px 5px 0px;
 }
 
-.c23 .c24 .c0 {
+.c24 .c25 .c0 {
   padding: 5px 5px 5px 0px;
 }
 
@@ -409,7 +420,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   fill: #ffffff;
 }
 
-.c11 .c16 + .c8 {
+.c11 .c17 + .c8 {
   cursor: not-allowed;
   margin-left: 10px;
 }
@@ -418,7 +429,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   fill: #ffffff;
 }
 
-.c12 .c16 + .c8 {
+.c12 .c17 + .c8 {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -432,7 +443,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'field' 'description';
 }
 
-.c1 .c17 {
+.c1 .c18 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -454,7 +465,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .c17 {
+.c4 .c18 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -532,7 +543,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   flex-direction: column-reverse;
 }
 
-.c2 .c19 {
+.c2 .c20 {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -605,21 +616,28 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c14 .c8 {
-  width: 100%;
-  height: 100%;
+  width: 0;
+  height: 0;
+  -webkit-transition: width 0.2s ease,height 0.2s ease;
+  transition: width 0.2s ease,height 0.2s ease;
 }
 
-.c15 .c0 {
+.c15:checked + .c21 .c8 {
+  width: calc(70%);
+  height: calc(70%);
+}
+
+.c16 .c0 {
   width: calc(100% - 10px);
   margin: 0px;
   padding: 5px;
 }
 
-.c15 .c18 .c0 {
+.c16 .c19 .c0 {
   padding: 0px 5px 5px 0px;
 }
 
-.c15 .c17 .c0 {
+.c16 .c18 .c0 {
   padding: 5px 5px 5px 0px;
 }
 
@@ -765,6 +783,10 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c18 {

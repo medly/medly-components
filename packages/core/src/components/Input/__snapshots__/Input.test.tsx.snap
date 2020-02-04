@@ -20,6 +20,10 @@ exports[`Input component should render correctly when fullWidth & required props
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c6 {
@@ -352,6 +356,10 @@ exports[`Input component should render correctly with all the props given 1`] = 
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c8 {

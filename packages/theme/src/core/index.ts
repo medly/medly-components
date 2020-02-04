@@ -20,6 +20,7 @@ import table from './table';
 import tabs from './tabs';
 import text from './text';
 import toast from './toast';
+import toggle from './toggle';
 
 export const coreDefaultTheme = {
     avatar,
@@ -43,5 +44,6 @@ export const coreDefaultTheme = {
     tabs,
     toast,
     table,
+    toggle,
     reactDatepicker
 };

@@ -1,11 +1,10 @@
-import { CheckIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
 import React, { SFC, useCallback } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
-import * as Styled from './Checkbox.styled';
+import * as Styled from './Toggle.styled';
 import { Props } from './types';
 
-export const Checkbox: SFC<Props> & WithStyle = React.memo(
+export const Toggle: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { size, label, required, labelPosition, labelSize, labelWeight, labelColor, fullWidth, onChange, ...restProps } = props;
 
@@ -29,19 +28,20 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
                     </FieldWithLabel.Label>
                 )}
                 <Styled.Wrapper size={size} disabled={restProps.disabled}>
-                    <Styled.Checkbox ref={ref} id={label} required={required} onChange={changeHandler} {...restProps} />
-                    <Styled.CheckIconWrapper>
-                        <CheckIcon onClick={changeHandler} />
-                    </Styled.CheckIconWrapper>
+                    {
+                        // @ts-ignore
+                        <Styled.Checkbox ref={ref} id={label} size={size} required={required} onChange={changeHandler} {...restProps} />
+                    }
+                    <Styled.Circle size={size} />
                 </Styled.Wrapper>
             </FieldWithLabel>
         );
     })
 );
 
-Checkbox.displayName = 'Checkbox';
-Checkbox.Style = FieldWithLabel.Style;
-Checkbox.defaultProps = {
+Toggle.displayName = 'Toggle';
+Toggle.Style = FieldWithLabel.Style;
+Toggle.defaultProps = {
     label: '',
     required: false,
     labelPosition: 'right'

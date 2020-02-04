@@ -25,6 +25,10 @@ exports[`SingleSelect component should render correctly with all the props given
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c13 {

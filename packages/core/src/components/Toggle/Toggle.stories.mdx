@@ -1,0 +1,21 @@
+import { Toggle } from './Toggle';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Toggle.stories';
+
+<Meta title="Core/Toggle" component={Toggle} />
+
+# Toggle
+
+### Basic Toggle
+
+<Preview withToolbar>
+    <Story name="Basic">{stories.Basic()}</Story>
+</Preview>
+
+### Props
+
+<Props of={Toggle} />
+
+### ToggleTheme
+
+<Props of={stories.ThemeInterface} />

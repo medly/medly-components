@@ -22,6 +22,7 @@ export interface CoreTheme {
     spacing?: CoreThemes.SpacingTheme;
     stepper?: CoreThemes.StepperTheme;
     table?: CoreThemes.TableTheme;
+    toggle?: CoreThemes.ToggleTheme;
     tabs?: CoreThemes.TabsTheme;
     text?: CoreThemes.TextTheme;
     toast?: CoreThemes.ToastTheme;
@@ -38,6 +39,6 @@ export interface Theme extends CoreTheme, LayoutTheme {
 }
 
 export * from './core/types';
-export * from './loader/types';
 export * from './icon/types';
 export * from './layout/types';
+export * from './loader/types';
