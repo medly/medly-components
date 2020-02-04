@@ -12,7 +12,8 @@
         "strictNullChecks": false,
         "target": "esnext",
         "paths": {
-            "@medly-components/*": ["packages/*/src"]
+            "@medly-components/*": ["packages/*/src"],
+            "@test-utils": ["packages/utils/src/test-utils"]
         }
     },
     "include": ["packages", "docs", "types"],

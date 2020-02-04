@@ -1,9 +1,7 @@
 import { HomeIcon, SearchIcon } from '@medly-components/icons';
-import { TestUtils } from '@medly-components/utils';
+import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { SideNav } from '../SideNav';
-
-const { render, fireEvent, cleanup } = TestUtils;
 
 const renderer = () =>
     render(

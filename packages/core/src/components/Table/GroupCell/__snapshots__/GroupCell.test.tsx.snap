@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`GroupCell should not rennder hide prop is given 1`] = `
+exports[`GroupCell should not render hide prop is given 1`] = `
 .c1 {
   font-size: 14px;
   font-weight: 400;
@@ -27,7 +27,7 @@ exports[`GroupCell should not rennder hide prop is given 1`] = `
 </div>
 `;
 
-exports[`GroupCell should rennder GroupCellTitle properly 1`] = `
+exports[`GroupCell should render GroupCellTitle properly 1`] = `
 .c1 {
   font-size: 14px;
   font-weight: 400;
@@ -62,7 +62,7 @@ exports[`GroupCell should rennder GroupCellTitle properly 1`] = `
 </div>
 `;
 
-exports[`GroupCell should rennder properly 1`] = `
+exports[`GroupCell should render properly 1`] = `
 .c1 {
   font-size: 14px;
   font-weight: 400;

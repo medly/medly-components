@@ -1,4 +1,4 @@
-import { TestUtils } from '@medly-components/utils';
+import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { Modal } from './Modal';
 
@@ -13,7 +13,7 @@ const renderer = ({
     open?: boolean;
     onCloseModal?: () => void;
 }) =>
-    TestUtils.render(
+    render(
         <Modal {...{ open, onCloseModal, minHeight, minWidth }}>
             <Modal.Header>
                 <p>Demo Header</p>
@@ -23,7 +23,7 @@ const renderer = ({
         </Modal>
     );
 describe('Modal component', () => {
-    afterEach(TestUtils.cleanup);
+    afterEach(cleanup);
 
     it('should render properly when it is open', () => {
         const { container } = renderer({ open: true, minWidth: '200px', minHeight: '200px' });
@@ -38,7 +38,7 @@ describe('Modal component', () => {
     it('should call onCloseModal on click on close icon', () => {
         const mockOnCloseModal = jest.fn();
         const { container } = renderer({ open: true, onCloseModal: mockOnCloseModal });
-        TestUtils.fireEvent.click(container.querySelector('#medly-modal-close-button'));
+        fireEvent.click(container.querySelector('#medly-modal-close-button'));
         expect(mockOnCloseModal).toBeCalled();
     });
 
@@ -48,7 +48,7 @@ describe('Modal component', () => {
             events[event] = cb;
         });
         const mockOnCloseModal = jest.fn(),
-            component = TestUtils.render(
+            component = render(
                 <Modal open onCloseModal={mockOnCloseModal}>
                     <Modal.Header>Demo Header</Modal.Header>
                     <Modal.Content>Demo Content</Modal.Content>

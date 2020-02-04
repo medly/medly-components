@@ -1,13 +1,12 @@
-import { TestUtils } from '@medly-components/utils';
+import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
-import Radio from '../Radio';
 import { RadioGroup } from './RadioGroup';
 
 describe('Radio Group', () => {
-    afterEach(TestUtils.cleanup);
+    afterEach(cleanup);
 
     it('should render correctly', () => {
-        const { container } = TestUtils.render(
+        const { container } = render(
             <RadioGroup
                 disabled
                 fullWidth
@@ -26,7 +25,7 @@ describe('Radio Group', () => {
     it('should call onChange prop with selected option', () => {
         const mockOnChange = jest.fn();
 
-        const { container, getByText } = TestUtils.render(
+        const { container, getByText } = render(
             <RadioGroup
                 label="Gender"
                 name="gender"
@@ -41,7 +40,7 @@ describe('Radio Group', () => {
                 ]}
             />
         );
-        TestUtils.fireEvent.click(getByText('Male'));
+        fireEvent.click(getByText('Male'));
         expect(mockOnChange).toBeCalledWith('male');
         expect(container).toMatchSnapshot();
     });

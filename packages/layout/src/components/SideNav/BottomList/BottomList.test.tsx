@@ -1,11 +1,9 @@
-import { TestUtils } from '@medly-components/utils';
+import { cleanup, render } from '@test-utils';
 import React from 'react';
 import NavItem from '../NavItem';
 import NavText from '../NavText';
 import { SideNav } from '../SideNav';
 import { BottomList } from './BottomList.styled';
-
-const { render, cleanup } = TestUtils;
 
 describe('BottomList', () => {
     afterEach(cleanup);

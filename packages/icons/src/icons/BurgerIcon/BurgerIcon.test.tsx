@@ -1,11 +1,12 @@
-import { TestUtils } from '@medly-components/utils';
+import { cleanup, render } from '@test-utils';
 import React from 'react';
 import { BurgerIcon } from './BurgerIcon';
 
-const { render, cleanup } = TestUtils;
 afterEach(cleanup);
 
 describe('BurgerIcon component', () => {
+    afterEach(cleanup);
+
     it('should render with default props', () => {
         const { container } = render(<BurgerIcon />);
         expect(container).toMatchSnapshot();

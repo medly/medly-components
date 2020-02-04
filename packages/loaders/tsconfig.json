@@ -1,9 +1,4 @@
 {
     "extends": "../../tsconfig.json",
-    "compilerOptions": {
-        "outDir": "dist",
-        "rootDir": "src",
-        "baseUrl": "./"
-    },
-    "include": ["src", "module.d.ts"]
+    "include": ["src", "../../types", "module.d.ts"]
 }

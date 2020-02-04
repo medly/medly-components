@@ -1,9 +1,7 @@
-import { TestUtils } from '@medly-components/utils';
+import { fireEvent, render, waitForElement } from '@test-utils';
 import React from 'react';
 import Tab from './Tab';
 import { Tabs } from './Tabs';
-
-const { render, fireEvent, waitForElement } = TestUtils;
 
 describe('Tabs', () => {
     it('should render properly without any prop', () => {

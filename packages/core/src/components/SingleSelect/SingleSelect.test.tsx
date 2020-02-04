@@ -1,9 +1,6 @@
-import { defaultTheme } from '@medly-components/theme';
-import { TestUtils } from '@medly-components/utils';
+import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { SingleSelect } from './SingleSelect';
-
-const { act, render, fireEvent, cleanup } = TestUtils;
 
 describe('SingleSelect component', () => {
     afterEach(cleanup);

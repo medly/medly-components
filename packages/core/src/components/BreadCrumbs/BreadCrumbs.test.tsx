@@ -1,11 +1,11 @@
-import { TestUtils } from '@medly-components/utils';
+import { render } from '@test-utils';
 import React from 'react';
 import Link from '../Link';
 import { BreadCrumbs } from './BreadCrumbs';
 
 describe('BreadCrumbs component', () => {
     it('should render correctly', () => {
-        const { container } = TestUtils.render(
+        const { container } = render(
             <BreadCrumbs>
                 <Link href="#">Covered Entities</Link>
                 <Link href="#">Add New Entities</Link>

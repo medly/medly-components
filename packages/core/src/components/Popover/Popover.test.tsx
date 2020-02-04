@@ -1,10 +1,8 @@
-import { TestUtils } from '@medly-components/utils';
+import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import Popover from './Popover';
 import PopoverWrapper from './PopoverWrapper';
 import { Placement, Props } from './PopoverWrapper/types';
-
-const { render, fireEvent, cleanup } = TestUtils;
 
 const renderer = ({ showPopover = false, placement = 'left', onOuterClick = jest.fn() }: Props) =>
     render(
