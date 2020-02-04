@@ -1,4 +1,4 @@
-import { TestUtils } from '@medly-components/utils';
+import { render } from '@test-utils';
 import React from 'react';
 import { FieldWithLabel } from './FieldWithLabel';
 
@@ -12,7 +12,7 @@ describe('FieldWithLabel component', () => {
     `(
         'should render properly with props labelPosition: $labelPosition, fullWidth: $fullWidth, fieldWithMaxContent: $fieldWithMaxContent',
         props => {
-            const { container } = TestUtils.render(
+            const { container } = render(
                 <FieldWithLabel {...props} minWidth={300}>
                     <FieldWithLabel.Label>Dummy Label</FieldWithLabel.Label>
                     <FieldWithLabel.Field>Dummy Field</FieldWithLabel.Field>
@@ -24,7 +24,7 @@ describe('FieldWithLabel component', () => {
     );
 
     it('should render properly when lable is not present', () => {
-        const { container } = TestUtils.render(
+        const { container } = render(
             <FieldWithLabel>
                 <FieldWithLabel.Field isIndented>Dummy Field</FieldWithLabel.Field>
                 <FieldWithLabel.Description>Dummy Description</FieldWithLabel.Description>

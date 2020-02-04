@@ -39,6 +39,10 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0 {
@@ -84,11 +88,10 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
 }
 
 .c7 {
+  position: relative;
   width: 16px;
   height: 16px;
-  position: relative;
   border: 1px solid #E0E0E0;
-  background-color: #E0E0E0;
   border-radius: 15%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -108,10 +111,16 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
   box-shadow: 0 0 0 1pt #012040;
 }
 
+.c7 > * {
+  width: 100%;
+  height: 100%;
+  border-radius: 15%;
+}
+
 .c10 {
-  width: 0;
-  height: 0;
   z-index: 1;
+  position: absolute;
+  background-color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -127,18 +136,18 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
 }
 
 .c10 .c11 {
-  width: 100%;
-  height: 100%;
+  width: 0;
+  height: 0;
+  -webkit-transition: width 0.2s ease,height 0.2s ease;
+  transition: width 0.2s ease,height 0.2s ease;
 }
 
 .c8 {
   opacity: 0;
   z-index: 2;
   position: absolute;
-  width: 100%;
-  height: 100%;
   margin: 0;
-  cursor: not-allowed;
+  cursor: pointer;
 }
 
 .c8:focus {
@@ -149,11 +158,13 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
   cursor: not-allowed;
 }
 
-.c8:checked ~ .c9 {
+.c8:disabled + .c9 {
+  background: #E0E0E0;
+}
+
+.c8:checked + .c9 .c11 {
   width: calc(70%);
   height: calc(70%);
-  -webkit-transition: width 0.2s ease,height 0.2s ease;
-  transition: width 0.2s ease,height 0.2s ease;
 }
 
 <div>

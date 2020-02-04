@@ -1,9 +1,8 @@
-import { TestUtils } from '@medly-components/utils';
+import { render } from '@test-utils';
 import React from 'react';
 import Tab from '../Tab';
 import { TabPanel } from './TabPanel';
 
-const { render } = TestUtils;
 describe('TabPanel', () => {
     it('should render only active tab content', () => {
         const { container } = render(

@@ -1,11 +1,11 @@
-import { TestUtils } from '@medly-components/utils';
+import { render } from '@test-utils';
 import React from 'react';
 import Text from '../Text';
 import { Card } from './Card';
 
 describe('Card component', () => {
     it('should render correctly with all the default props', () => {
-        const { container } = TestUtils.render(
+        const { container } = render(
             <Card>
                 <Text>Dummy Text</Text>
             </Card>
@@ -14,7 +14,7 @@ describe('Card component', () => {
     });
 
     it('should render solid variant properly ', () => {
-        const { container } = TestUtils.render(
+        const { container } = render(
             <Card variant="solid">
                 <Text>Dummy Text</Text>
             </Card>
@@ -22,7 +22,7 @@ describe('Card component', () => {
         expect(container).toMatchSnapshot();
     });
     it('should render flat variant properly ', () => {
-        const { container } = TestUtils.render(
+        const { container } = render(
             <Card variant="flat">
                 <Text>Dummy Text</Text>
             </Card>
@@ -31,7 +31,7 @@ describe('Card component', () => {
     });
 
     it('should render properly when it is clickable ', () => {
-        const { container } = TestUtils.render(
+        const { container } = render(
             <Card clickable>
                 <Text>Dummy Text</Text>
             </Card>
@@ -40,7 +40,7 @@ describe('Card component', () => {
     });
 
     it('should render properly when fullWidth and fullHeight is set true', () => {
-        const { container } = TestUtils.render(
+        const { container } = render(
             <Card fullWidth fullHeight>
                 <Text>Dummy Text</Text>
             </Card>
@@ -49,7 +49,7 @@ describe('Card component', () => {
     });
 
     it('should render properly when flow direction is horizontal and separator is set true', () => {
-        const { container } = TestUtils.render(
+        const { container } = render(
             <Card separator flowDirection="horizontal">
                 <Card separator flowDirection="horizontal" alignItems="left">
                     <Text>Dummy Text</Text>
@@ -72,7 +72,7 @@ describe('Card component', () => {
     });
 
     it('should render properly when separator is set true flow direction is vertical', () => {
-        const { container } = TestUtils.render(
+        const { container } = render(
             <Card separator withPadding flowDirection="vertical" alignItems="left">
                 <Card variant="flat" flowDirection="vertical" alignItems="left">
                     <Text>Marks</Text>

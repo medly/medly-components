@@ -14,6 +14,10 @@ exports[`DatePicker component should render properly when value is of date type 
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0 {
@@ -23,7 +27,7 @@ exports[`DatePicker component should render properly when value is of date type 
   grid-template-areas: 'label field' 'random description';
 }
 
-.c0 .c7 {
+.c0 .c8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -45,7 +49,7 @@ exports[`DatePicker component should render properly when value is of date type 
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .c7 {
+.c4 .c8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -60,40 +64,55 @@ exports[`DatePicker component should render properly when value is of date type 
 }
 
 .c5 {
-  padding: 8px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #616161;
-  background-color: #E0E0E0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
-  cursor: not-allowed;
+  overflow: hidden;
 }
 
-.c5:focus {
+.c5:focus-within {
   border-color: #012040;
+}
+
+.c5 > * {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #616161;
+}
+
+.c6 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   outline: 0;
+  border: 0;
+  cursor: not-allowed;
+  background-color: #E0E0E0;
 }
 
-.c5::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #9E9E9E;
 }
 
-.c5::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #9E9E9E;
 }
 
-.c5:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #9E9E9E;
 }
 
-.c5::placeholder {
+.c6::placeholder {
   color: #9E9E9E;
 }
 
-.c5::-webkit-file-upload-button {
+.c6::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -108,12 +127,12 @@ exports[`DatePicker component should render properly when value is of date type 
   flex-direction: column-reverse;
 }
 
-.c3 .c8 {
+.c3 .c9 {
   top: calc(100% + 5px);
   left: 0%;
 }
 
-.c6 {
+.c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -141,15 +160,18 @@ exports[`DatePicker component should render properly when value is of date type 
         id="medly-datepicker-input-field"
       >
         
-        <input
-          class="c5 c6"
-          disabled=""
-          id="medly-datepicker-input"
-          label=""
-          placeholder="Select Date"
-          type="text"
-          value="01/01/2020"
-        />
+        <div
+          class="c5"
+        >
+          <input
+            class="c6 c7"
+            disabled=""
+            id="medly-datepicker-input"
+            placeholder="Select Date"
+            type="text"
+            value="01/01/2020"
+          />
+        </div>
         
       </div>
     </div>
@@ -171,6 +193,10 @@ exports[`DatePicker component should render properly when value is of string typ
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c0 {
@@ -180,7 +206,7 @@ exports[`DatePicker component should render properly when value is of string typ
   grid-template-areas: 'label field' 'random description';
 }
 
-.c0 .c7 {
+.c0 .c8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -202,7 +228,7 @@ exports[`DatePicker component should render properly when value is of string typ
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .c7 {
+.c4 .c8 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -217,40 +243,55 @@ exports[`DatePicker component should render properly when value is of string typ
 }
 
 .c5 {
-  padding: 8px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #616161;
-  background-color: #E0E0E0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
-  cursor: not-allowed;
+  overflow: hidden;
 }
 
-.c5:focus {
+.c5:focus-within {
   border-color: #012040;
+}
+
+.c5 > * {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #616161;
+}
+
+.c6 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   outline: 0;
+  border: 0;
+  cursor: not-allowed;
+  background-color: #E0E0E0;
 }
 
-.c5::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #9E9E9E;
 }
 
-.c5::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #9E9E9E;
 }
 
-.c5:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #9E9E9E;
 }
 
-.c5::placeholder {
+.c6::placeholder {
   color: #9E9E9E;
 }
 
-.c5::-webkit-file-upload-button {
+.c6::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -265,12 +306,12 @@ exports[`DatePicker component should render properly when value is of string typ
   flex-direction: column-reverse;
 }
 
-.c3 .c8 {
+.c3 .c9 {
   top: calc(100% + 5px);
   left: 0%;
 }
 
-.c6 {
+.c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -298,15 +339,18 @@ exports[`DatePicker component should render properly when value is of string typ
         id="medly-datepicker-input-field"
       >
         
-        <input
-          class="c5 c6"
-          disabled=""
-          id="medly-datepicker-input"
-          label=""
-          placeholder="Select Date"
-          type="text"
-          value="01/01/2020"
-        />
+        <div
+          class="c5"
+        >
+          <input
+            class="c6 c7"
+            disabled=""
+            id="medly-datepicker-input"
+            placeholder="Select Date"
+            type="text"
+            value="01/01/2020"
+          />
+        </div>
         
       </div>
     </div>

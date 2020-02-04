@@ -1,11 +1,10 @@
-import { TestUtils } from '@medly-components/utils';
+import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { Pagination } from './Pagination';
 
-const { render, fireEvent, cleanup } = TestUtils;
-afterEach(cleanup);
-
 describe('Pagination component', () => {
+    afterEach(cleanup);
+
     it('should render correctly with all the default props', () => {
         const mockOnPageClick = jest.fn();
         const { container } = render(<Pagination totalItems={150} onPageClick={mockOnPageClick} />);
