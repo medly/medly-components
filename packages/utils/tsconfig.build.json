@@ -8,5 +8,5 @@
         "declaration": true,
         "emitDeclarationOnly": true
     },
-    "exclude": ["dist", "**/*.test.tsx", "**/*.test.ts", "**/*.stories.tsx"]
+    "exclude": ["dist", "**/*.test.tsx", "src/test-utils.tsx", "**/*.test.ts", "**/*.stories.tsx"]
 }

@@ -1,8 +1,6 @@
-import { TestUtils } from '@medly-components/utils';
+import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { MultiSelect } from './MultiSelect';
-
-const { render, fireEvent, cleanup } = TestUtils;
 
 describe('MultiSelect component', () => {
     afterEach(cleanup);

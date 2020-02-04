@@ -1,9 +1,7 @@
-import { TestUtils } from '@medly-components/utils';
+import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { Toast } from './Toast';
 import { Props } from './types';
-
-const { render, cleanup, fireEvent } = TestUtils;
 
 describe('Toast', () => {
     afterEach(cleanup);

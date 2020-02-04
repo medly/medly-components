@@ -1,21 +1,19 @@
-import { AddIcon } from '@medly-components/icons';
-import { TestUtils } from '@medly-components/utils';
+import { fireEvent, render } from '@test-utils';
 import React from 'react';
 import Tab from '../Tab';
 import { TabList } from './TabList';
 
-const { render, fireEvent } = TestUtils,
-    renderer = (active = 'tab1', onChange = jest.fn()) =>
-        render(
-            <TabList active={active} onChange={onChange}>
-                <Tab id="tab1" label="Add">
-                    Content for the add panel
-                </Tab>
-                <Tab id="tab2" label="Edit">
-                    Content for the edit panel
-                </Tab>
-            </TabList>
-        );
+const renderer = (active = 'tab1', onChange = jest.fn()) =>
+    render(
+        <TabList active={active} onChange={onChange}>
+            <Tab id="tab1" label="Add">
+                Content for the add panel
+            </Tab>
+            <Tab id="tab2" label="Edit">
+                Content for the edit panel
+            </Tab>
+        </TabList>
+    );
 
 describe('Tab', () => {
     it('should render properly', () => {

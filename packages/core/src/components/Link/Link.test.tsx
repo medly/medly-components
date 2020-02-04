@@ -1,16 +1,16 @@
-import { TestUtils } from '@medly-components/utils';
+import { render } from '@test-utils';
 import React from 'react';
 import Text from '../Text';
 import { Link } from './Link';
 
 describe('Link Component', () => {
     it('should render with default props', () => {
-        const { container } = TestUtils.render(<Link href="#">Test</Link>);
+        const { container } = render(<Link href="#">Test</Link>);
         expect(container).toMatchSnapshot();
     });
 
     it('should render with component as child', () => {
-        const { container } = TestUtils.render(
+        const { container } = render(
             <Link href="#">
                 <Text>help me Mr Kite man</Text>
             </Link>

@@ -1,4 +1,4 @@
-import { TestUtils } from '@medly-components/utils';
+import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { FileInput } from './FileInput';
 
@@ -10,18 +10,18 @@ describe('FileInput component', () => {
             type: 'text/plain'
         });
 
-    afterEach(TestUtils.cleanup);
+    afterEach(cleanup);
 
     it('should render properly with default props', () => {
         const mockOnChange = jest.fn();
         // @ts-ignore
-        const { container } = TestUtils.render(<FileInput files={[]} onChange={mockOnChange} />);
+        const { container } = render(<FileInput files={[]} onChange={mockOnChange} />);
         expect(container).toMatchSnapshot();
     });
 
     it('should render properly with all props', () => {
         const mockOnChange = jest.fn();
-        const { container } = TestUtils.render(
+        const { container } = render(
             <FileInput
                 // @ts-ignore
                 files={[foo, bar]}
@@ -42,9 +42,9 @@ describe('FileInput component', () => {
         const mockOnFocus = jest.fn();
         const mockOnChange = jest.fn();
         // @ts-ignore
-        const { container } = TestUtils.render(<FileInput disabled files={[]} onFocus={mockOnFocus} onChange={mockOnChange} />);
+        const { container } = render(<FileInput disabled files={[]} onFocus={mockOnFocus} onChange={mockOnChange} />);
         const label = container.querySelector('#medly-file-input-label');
-        TestUtils.fireEvent.click(label);
+        fireEvent.click(label);
         expect(mockOnFocus).toHaveBeenCalled();
     });
 
@@ -52,13 +52,13 @@ describe('FileInput component', () => {
         const mockOnFocus = jest.fn();
         const mockOnChange = jest.fn();
         // @ts-ignore
-        const { container } = TestUtils.render(<FileInput files={[]} onFocus={mockOnFocus} onChange={mockOnChange} />),
+        const { container } = render(<FileInput files={[]} onFocus={mockOnFocus} onChange={mockOnChange} />),
             input = container.querySelector('#medly-file-input');
 
         Object.defineProperty(input, 'files', {
             value: [foo, bar]
         });
-        TestUtils.fireEvent.change(input);
+        fireEvent.change(input);
         expect(mockOnChange).toBeCalledWith([foo, bar]);
     });
 });
