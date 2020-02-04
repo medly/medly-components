@@ -317,7 +317,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 }
 
 <div
-  class="sc-fzXfRb c0"
+  class="sc-LzLqD c0"
   id="medly-sidenav"
   open=""
 >
@@ -803,7 +803,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 }
 
 <div
-  class="sc-fzXfRb c0"
+  class="sc-LzLqD c0"
   id="medly-sidenav"
   open=""
 >
@@ -1093,7 +1093,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   border-bottom: 1px solid #F56A41;
 }
 
-.c9 > .sc-fzXfQZ {
+.c9 > .sc-fzXfRb {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -1195,7 +1195,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   transition: opacity 0.2s;
 }
 
-.c0 .sc-LzLqC {
+.c0 .sc-LzLqE {
   max-height: 0px;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
@@ -1209,7 +1209,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 }
 
 <div
-  class="sc-fzXfRb c0"
+  class="sc-LzLqD c0"
   id="medly-sidenav"
 >
   <div
@@ -1561,7 +1561,7 @@ exports[`SideNav should render properly 1`] = `
 
 <div>
   <div
-    class="sc-fzXfRb c0"
+    class="sc-LzLqD c0"
     id="medly-sidenav"
   >
     <div

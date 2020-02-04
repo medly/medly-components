@@ -414,7 +414,7 @@ exports[`SubNavList should be able to click on nested item 1`] = `
 }
 
 <div
-  class="sc-fzXfRb c0"
+  class="sc-LzLqD c0"
   id="medly-sidenav"
   open=""
 >
@@ -879,7 +879,7 @@ exports[`SubNavList should render properly 1`] = `
 
 <div>
   <div
-    class="sc-fzXfRb c0"
+    class="sc-LzLqD c0"
     id="medly-sidenav"
   >
     <div

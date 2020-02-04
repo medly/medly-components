@@ -9,7 +9,7 @@ const toggle: ToggleTheme = {
         L: '32px',
         XL: '40px'
     },
-    defaultSize: 'XS',
+    defaultSize: 'S',
     outlineColor: colors.violet[500],
     checkedBgColor: colors.violet[500],
     bgColor: colors.grey[300],

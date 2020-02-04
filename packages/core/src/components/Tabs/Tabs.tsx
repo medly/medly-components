@@ -10,7 +10,15 @@ export const Tabs: React.SFC<Props> & StaticProps & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { defaultActive, active, onChange, children, ...restProps } = props,
             tabsId = props.id || 'medly-tabs',
-            tabIds = useMemo(() => (children ? React.Children.map(children, (child: any) => child.props.id) : [undefined]), [children]),
+            tabIds = useMemo(
+                () =>
+                    children
+                        ? React.Children.toArray(children)
+                              .filter((child: any) => !child.props.hide)
+                              .map((child: any) => child.props.id)
+                        : [undefined],
+                [children]
+            ),
             [key, setKey] = useState(defaultActive || tabIds[0]),
             activeTab = useMemo(() => active || key, [active, key]);
 

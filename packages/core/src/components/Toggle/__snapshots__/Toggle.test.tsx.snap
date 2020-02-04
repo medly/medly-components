@@ -26,8 +26,8 @@ exports[`Checkbox component should render correctly with all the default props 1
 
 .c1 {
   position: relative;
-  width: calc(20px * 2);
-  height: 20px;
+  width: calc(24px * 2);
+  height: 24px;
   border-radius: 15px;
 }
 
@@ -56,8 +56,8 @@ exports[`Checkbox component should render correctly with all the default props 1
   box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.2);
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  width: calc(20px - 6px);
-  height: calc(20px - 6px);
+  width: calc(24px - 6px);
+  height: calc(24px - 6px);
 }
 
 .c2 {
@@ -85,7 +85,7 @@ exports[`Checkbox component should render correctly with all the default props 1
 }
 
 .c2:checked + .c3::after {
-  margin-left: calc(calc(20px * 2) - (20px) + 3px);
+  margin-left: calc(calc(24px * 2) - (24px) + 3px);
 }
 
 <div>

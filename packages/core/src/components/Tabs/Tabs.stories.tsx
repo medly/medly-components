@@ -10,7 +10,7 @@ ThemeInterface.defaultProps = {
 
 export const Basic = () => (
     <Tabs aria-label="Basic Tabs">
-        <Tabs.Tab id="tab1" label="Add">
+        <Tabs.Tab id="tab1" label="Add" hide>
             Content for the add panel
         </Tabs.Tab>
         <Tabs.Tab id="tab2" label="Edit">

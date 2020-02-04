@@ -32,8 +32,6 @@ exports[`Tabs should hide the tab if hide prop is given 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #FE8D6B;
-  border-bottom: 2px solid #FE8D6B;
 }
 
 .c1:hover {
@@ -50,10 +48,6 @@ exports[`Tabs should hide the tab if hide prop is given 1`] = `
 
 .c1 .sc-AykKD {
   margin-bottom: 5px;
-}
-
-.c1 .sc-AykKD * {
-  fill: #FE8D6B;
 }
 
 .c0 {
@@ -101,18 +95,18 @@ exports[`Tabs should hide the tab if hide prop is given 1`] = `
       id="medly-tabs-list"
     >
       <button
-        aria-controls="panel-tab1"
-        aria-selected="true"
+        aria-controls="panel-tab2"
+        aria-selected="false"
         class="c1"
-        id="tab1"
+        id="tab2"
         role="tab"
-        tabindex="0"
+        tabindex="-1"
         type="button"
       >
         <span
           class="c2"
         >
-          Add
+          Edit
         </span>
       </button>
     </div>

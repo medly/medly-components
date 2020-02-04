@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CheckboxGroup component should render correctly with all the props 1`] = `
-.c12 {
+.c10 {
   font-size: 16px;
   cursor: pointer;
 }
 
-.c12 * {
+.c10 * {
   fill: #616161;
 }
 
@@ -92,6 +92,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
   width: 16px;
   height: 16px;
   border: 1px solid #E0E0E0;
+  background-color: #E0E0E0;
   border-radius: 15%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -111,43 +112,25 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
   box-shadow: 0 0 0 1pt #012040;
 }
 
-.c7 > * {
-  width: 100%;
-  height: 100%;
-  border-radius: 15%;
-}
-
-.c10 {
-  z-index: 1;
-  position: absolute;
-  background-color: #ffffff;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c10 .c11 {
-  width: 0;
-  height: 0;
-  -webkit-transition: width 0.2s ease,height 0.2s ease;
-  transition: width 0.2s ease,height 0.2s ease;
-}
-
 .c8 {
   opacity: 0;
-  z-index: 2;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
   position: absolute;
   margin: 0;
   cursor: pointer;
+}
+
+.c8 + .c9 {
+  z-index: 1;
+  position: absolute;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .c8:focus {
@@ -158,13 +141,10 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
   cursor: not-allowed;
 }
 
-.c8:disabled + .c9 {
-  background: #E0E0E0;
-}
-
-.c8:checked + .c9 .c11 {
-  width: calc(70%);
-  height: calc(70%);
+.c8:checked + .c9 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
 }
 
 <div>
@@ -201,23 +181,19 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
             name="honda"
             type="checkbox"
           />
-          <div
+          <svg
             class="c9 c10"
+            height="1em"
+            viewBox="0 0 18 14"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              class="c11 c12"
-              height="1em"
-              viewBox="0 0 18 14"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-                fill="none"
-                fill-rule="evenodd"
-              />
-            </svg>
-          </div>
+            <path
+              d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
+              fill="none"
+              fill-rule="evenodd"
+            />
+          </svg>
         </div>
       </div>
       <div
@@ -241,23 +217,19 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
             name="hyundai"
             type="checkbox"
           />
-          <div
+          <svg
             class="c9 c10"
+            height="1em"
+            viewBox="0 0 18 14"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              class="c11 c12"
-              height="1em"
-              viewBox="0 0 18 14"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-                fill="none"
-                fill-rule="evenodd"
-              />
-            </svg>
-          </div>
+            <path
+              d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
+              fill="none"
+              fill-rule="evenodd"
+            />
+          </svg>
         </div>
       </div>
       <div
@@ -293,23 +265,19 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
                 name="jaguar"
                 type="checkbox"
               />
-              <div
+              <svg
                 class="c9 c10"
+                height="1em"
+                viewBox="0 0 18 14"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  class="c11 c12"
-                  height="1em"
-                  viewBox="0 0 18 14"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-                    fill="none"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
             </div>
           </div>
           <div
@@ -333,23 +301,19 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
                 name="landRover"
                 type="checkbox"
               />
-              <div
+              <svg
                 class="c9 c10"
+                height="1em"
+                viewBox="0 0 18 14"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  class="c11 c12"
-                  height="1em"
-                  viewBox="0 0 18 14"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-                    fill="none"
-                    fill-rule="evenodd"
-                  />
-                </svg>
-              </div>
+                <path
+                  d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
+                  fill="none"
+                  fill-rule="evenodd"
+                />
+              </svg>
             </div>
           </div>
         </div>

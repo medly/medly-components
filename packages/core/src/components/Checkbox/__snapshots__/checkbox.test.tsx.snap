@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Checkbox component should render correctly with all the default props 1`] = `
-.c6 {
+.c4 {
   font-size: 16px;
   cursor: pointer;
 }
 
-.c6 * {
+.c4 * {
   fill: #616161;
 }
 
@@ -38,6 +38,7 @@ exports[`Checkbox component should render correctly with all the default props 1
   width: 16px;
   height: 16px;
   border: 1px solid #E0E0E0;
+  background-color: #ffffff;
   border-radius: 15%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -57,43 +58,25 @@ exports[`Checkbox component should render correctly with all the default props 1
   box-shadow: 0 0 0 1pt #012040;
 }
 
-.c1 > * {
-  width: 100%;
-  height: 100%;
-  border-radius: 15%;
-}
-
-.c4 {
-  z-index: 1;
-  position: absolute;
-  background-color: #ffffff;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 .c5 {
-  width: 0;
-  height: 0;
-  -webkit-transition: width 0.2s ease,height 0.2s ease;
-  transition: width 0.2s ease,height 0.2s ease;
-}
-
 .c2 {
   opacity: 0;
-  z-index: 2;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
   position: absolute;
   margin: 0;
   cursor: pointer;
+}
+
+.c2 + .c3 {
+  z-index: 1;
+  position: absolute;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .c2:focus {
@@ -104,13 +87,10 @@ exports[`Checkbox component should render correctly with all the default props 1
   cursor: not-allowed;
 }
 
-.c2:disabled + .c3 {
-  background: #E0E0E0;
-}
-
-.c2:checked + .c3 .c5 {
-  width: calc(70%);
-  height: calc(70%);
+.c2:checked + .c3 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
 }
 
 <div>
@@ -128,35 +108,31 @@ exports[`Checkbox component should render correctly with all the default props 1
         name="gender"
         type="checkbox"
       />
-      <div
+      <svg
         class="c3 c4"
+        height="1em"
+        viewBox="0 0 18 14"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
-          class="c5 c6"
-          height="1em"
-          viewBox="0 0 18 14"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-            fill="none"
-            fill-rule="evenodd"
-          />
-        </svg>
-      </div>
+        <path
+          d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
+          fill="none"
+          fill-rule="evenodd"
+        />
+      </svg>
     </div>
   </div>
 </div>
 `;
 
 exports[`Checkbox component should render correctly with all the props given 1`] = `
-.c8 {
+.c6 {
   font-size: 16px;
   cursor: pointer;
 }
 
-.c8 * {
+.c6 * {
   fill: #616161;
 }
 
@@ -205,6 +181,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   width: 24px;
   height: 24px;
   border: 1px solid #E0E0E0;
+  background-color: #E0E0E0;
   border-radius: 15%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -224,43 +201,25 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   box-shadow: 0 0 0 1pt #012040;
 }
 
-.c3 > * {
-  width: 100%;
-  height: 100%;
-  border-radius: 15%;
-}
-
-.c6 {
-  z-index: 1;
-  position: absolute;
-  background-color: #ffffff;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c6 .c7 {
-  width: 0;
-  height: 0;
-  -webkit-transition: width 0.2s ease,height 0.2s ease;
-  transition: width 0.2s ease,height 0.2s ease;
-}
-
 .c4 {
   opacity: 0;
-  z-index: 2;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
   position: absolute;
   margin: 0;
   cursor: pointer;
+}
+
+.c4 + .c5 {
+  z-index: 1;
+  position: absolute;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .c4:focus {
@@ -271,13 +230,10 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   cursor: not-allowed;
 }
 
-.c4:disabled + .c5 {
-  background: #E0E0E0;
-}
-
-.c4:checked + .c5 .c7 {
-  width: calc(70%);
-  height: calc(70%);
+.c4:checked + .c5 {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
 }
 
 <div>
@@ -302,23 +258,19 @@ exports[`Checkbox component should render correctly with all the props given 1`]
         name="gender"
         type="checkbox"
       />
-      <div
+      <svg
         class="c5 c6"
+        height="1em"
+        viewBox="0 0 18 14"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <svg
-          class="c7 c8"
-          height="1em"
-          viewBox="0 0 18 14"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-            fill="none"
-            fill-rule="evenodd"
-          />
-        </svg>
-      </div>
+        <path
+          d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
+          fill="none"
+          fill-rule="evenodd"
+        />
+      </svg>
     </div>
   </div>
 </div>
