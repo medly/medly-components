@@ -8,7 +8,8 @@ const input: InputTheme = {
     descriptionColor: colors.violet[400],
     disabledBgcolor: colors.grey[300],
     focusedBorderColor: colors.violet[500],
-    placeHolderColor: colors.grey[500]
+    placeHolderColor: colors.grey[500],
+    prefixAndSuffixBgColor: colors.grey[200]
 };
 
 export default input;

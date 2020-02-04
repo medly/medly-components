@@ -6,4 +6,5 @@ export interface InputTheme {
     disabledBgcolor: string;
     focusedBorderColor: string;
     placeHolderColor: string;
+    prefixAndSuffixBgColor: string;
 }

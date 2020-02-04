@@ -15,6 +15,7 @@ export const FieldStyled = styled('div')<FieldStyledProps>`
 export const LabelStyled = styled(Label)`
     grid-area: label;
     align-self: center;
+    user-select: none;
 `;
 LabelStyled.displayName = 'Label';
 

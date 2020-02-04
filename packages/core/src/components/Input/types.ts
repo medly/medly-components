@@ -6,6 +6,10 @@ export interface Props extends HTMLProps<HTMLInputElement>, WithThemeProp {
     labelPosition?: LabelPositions;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
+    /** Prefix  */
+    prefix?: string;
+    /** Suffix */
+    suffix?: string;
     /** Disable Input */
     disabled?: boolean;
     /** To be used when it is required in any form */

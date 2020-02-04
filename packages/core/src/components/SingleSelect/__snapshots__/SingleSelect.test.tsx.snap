@@ -14,7 +14,7 @@ exports[`SingleSelect component should render correctly with all the props given
   content: ' *';
 }
 
-.c11 {
+.c12 {
   font-size: 14px;
   font-weight: 400;
   color: grey;
@@ -25,9 +25,13 @@ exports[`SingleSelect component should render correctly with all the props given
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.c12 {
+.c13 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: grey;
@@ -41,7 +45,7 @@ exports[`SingleSelect component should render correctly with all the props given
   grid-template-areas: 'field' 'description';
 }
 
-.c6 .c14 {
+.c6 .c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -63,7 +67,7 @@ exports[`SingleSelect component should render correctly with all the props given
   grid-template-areas: 'label field' 'random description';
 }
 
-.c1 .c14 {
+.c1 .c15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -77,41 +81,56 @@ exports[`SingleSelect component should render correctly with all the props given
   flex-direction: row;
 }
 
-.c8 {
-  padding: 8px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #616161;
-  background-color: #E0E0E0;
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
-  cursor: not-allowed;
+  overflow: hidden;
 }
 
-.c8:focus {
+.c7:focus-within {
   border-color: #012040;
+}
+
+.c7 > * {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #616161;
+}
+
+.c9 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   outline: 0;
+  border: 0;
+  cursor: not-allowed;
+  background-color: #E0E0E0;
 }
 
-.c8::-webkit-input-placeholder {
+.c9::-webkit-input-placeholder {
   color: #9E9E9E;
 }
 
-.c8::-moz-placeholder {
+.c9::-moz-placeholder {
   color: #9E9E9E;
 }
 
-.c8:-ms-input-placeholder {
+.c9:-ms-input-placeholder {
   color: #9E9E9E;
 }
 
-.c8::placeholder {
+.c9::placeholder {
   color: #9E9E9E;
 }
 
-.c8::-webkit-file-upload-button {
+.c9::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -126,30 +145,30 @@ exports[`SingleSelect component should render correctly with all the props given
   flex-direction: column-reverse;
 }
 
-.c4 .c15 {
+.c4 .c16 {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c9 {
+.c10 {
   font-size: 16px;
   cursor: pointer;
 }
 
-.c9 * {
+.c10 * {
   fill: #616161;
 }
 
-.c13 .c0 {
+.c14 .c0 {
   margin: 0px;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c13 .c0 .c7 {
+.c14 .c0 .c8 {
   margin: 0px;
   border: none;
   background-color: transparent;
@@ -190,7 +209,7 @@ exports[`SingleSelect component should render correctly with all the props given
   flex: 1;
 }
 
-.c5 .c0 .c7 {
+.c5 .c0 .c8 {
   margin: 0px;
   border: none;
   background-color: transparent;
@@ -200,7 +219,7 @@ exports[`SingleSelect component should render correctly with all the props given
   cursor: not-allowed;
 }
 
-.c10 {
+.c11 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -234,21 +253,24 @@ exports[`SingleSelect component should render correctly with all the props given
           id="medly-singleSelect-input-field"
         >
           
-          <input
-            autocomplete="off"
-            class="c7 c8"
-            disabled=""
-            id="medly-singleSelect-input"
-            label=""
-            placeholder="Please Select"
-            required=""
-            type="text"
-            value="All"
-          />
+          <div
+            class="c7"
+          >
+            <input
+              autocomplete="off"
+              class="c8 c9"
+              disabled=""
+              id="medly-singleSelect-input"
+              placeholder="Please Select"
+              required=""
+              type="text"
+              value="All"
+            />
+          </div>
           
         </div>
         <svg
-          class="c9 c10"
+          class="c10 c11"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"
@@ -262,7 +284,7 @@ exports[`SingleSelect component should render correctly with all the props given
       </div>
     </div>
     <span
-      class="c11 c12"
+      class="c12 c13"
     >
       We will show reports based on Pharmacy
     </span>
@@ -280,7 +302,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   grid-template-areas: 'field' 'description';
 }
 
-.c1 .c9 {
+.c1 .c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -302,7 +324,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .c9 {
+.c4 .c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -316,41 +338,56 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   flex-direction: column;
 }
 
-.c6 {
-  padding: 8px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #616161;
-  background-color: #ffffff;
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
   border: 1px solid #E0E0E0;
   border-radius: 5px;
-  cursor: inherit;
+  overflow: hidden;
 }
 
-.c6:focus {
+.c5:focus-within {
   border-color: #012040;
+}
+
+.c5 > * {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #616161;
+}
+
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   outline: 0;
+  border: 0;
+  cursor: inherit;
+  background-color: #ffffff;
 }
 
-.c6::-webkit-input-placeholder {
+.c7::-webkit-input-placeholder {
   color: #9E9E9E;
 }
 
-.c6::-moz-placeholder {
+.c7::-moz-placeholder {
   color: #9E9E9E;
 }
 
-.c6:-ms-input-placeholder {
+.c7:-ms-input-placeholder {
   color: #9E9E9E;
 }
 
-.c6::placeholder {
+.c7::placeholder {
   color: #9E9E9E;
 }
 
-.c6::-webkit-file-upload-button {
+.c7::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -365,19 +402,19 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   flex-direction: column-reverse;
 }
 
-.c2 .c10 {
+.c2 .c11 {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c7 {
+.c8 {
   font-size: 16px;
   cursor: pointer;
 }
 
-.c7 * {
+.c8 * {
   fill: #616161;
 }
 
@@ -415,7 +452,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   flex: 1;
 }
 
-.c3 .c0 .c5 {
+.c3 .c0 .c6 {
   margin: 0px;
   border: none;
   background-color: transparent;
@@ -425,7 +462,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   cursor: pointer;
 }
 
-.c8 {
+.c9 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -452,19 +489,22 @@ exports[`SingleSelect component should render correctly with default props 1`] =
           id="medly-singleSelect-input-field"
         >
           
-          <input
-            autocomplete="off"
-            class="c5 c6"
-            id="medly-singleSelect-input"
-            label=""
-            placeholder="Please Select . . ."
-            type="text"
-            value=""
-          />
+          <div
+            class="c5"
+          >
+            <input
+              autocomplete="off"
+              class="c6 c7"
+              id="medly-singleSelect-input"
+              placeholder="Please Select . . ."
+              type="text"
+              value=""
+            />
+          </div>
           
         </div>
         <svg
-          class="c7 c8"
+          class="c8 c9"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"

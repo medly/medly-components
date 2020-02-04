@@ -13,6 +13,8 @@ describe('Input component', () => {
                 labelPosition="top"
                 required
                 placeholder="Enter Email Address"
+                prefix="www."
+                suffix=".com"
                 description="We will never share your email with anyone"
                 descriptionColor="grey"
             />

@@ -1,9 +1,8 @@
 {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
+        "source.organizeImports": true,
         "source.fixAll.tslint": true
     },
-    "cSpell.words": [
-        "medly"
-    ]
+    "cSpell.words": ["medly"]
 }
