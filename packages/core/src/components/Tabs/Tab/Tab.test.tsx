@@ -1,9 +1,8 @@
 import { AddIcon } from '@medly-components/icons';
-import { TestUtils } from '@medly-components/utils';
+import { render } from '@test-utils';
 import React from 'react';
 import { Tab } from './Tab';
 
-const { render } = TestUtils;
 describe('Tab', () => {
     it('should render properly', () => {
         const { container } = render(

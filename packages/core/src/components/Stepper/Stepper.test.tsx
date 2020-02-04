@@ -1,10 +1,10 @@
-import { TestUtils } from '@medly-components/utils';
+import { fireEvent, render } from '@test-utils';
 import React from 'react';
 import { Stepper } from './Stepper';
 import { Props } from './types';
 
 const renderer = (props: Props = {}) =>
-    TestUtils.render(
+    render(
         <Stepper {...props}>
             <Stepper.Step>Customer Information</Stepper.Step>
             <Stepper.Step>Payment information</Stepper.Step>
@@ -27,7 +27,7 @@ describe('Stepper component', () => {
     it('should change active step when click on any step', async () => {
         const mockOnStepClick = jest.fn();
         const { container, getByText } = renderer({ activeStep: 0, size: 'S', onStepClick: mockOnStepClick });
-        TestUtils.fireEvent.click(getByText('Payment information'));
+        fireEvent.click(getByText('Payment information'));
         expect(mockOnStepClick).toBeCalledWith(1);
         expect(container).toMatchSnapshot();
     });

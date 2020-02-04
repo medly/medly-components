@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SidePanel component should render with left positioned by degfault 1`] = `
+exports[`SidePanel component should render with left positioned by default 1`] = `
 .c0 {
   height: 100vh;
   background-color: #F5F5F5;

@@ -21,16 +21,25 @@ module.exports = {
         {
             displayName: 'core',
             setupFilesAfterEnv: ['<rootDir>/jest.setupAfterEnv.js'],
+            moduleNameMapper: {
+                '^@test-utils': '<rootDir>/packages/utils/src/test-utils'
+            },
             testMatch: ['<rootDir>/packages/core/src/**/*.(spec|test).(ts|tsx)']
         },
         {
             displayName: 'layout',
             setupFilesAfterEnv: ['<rootDir>/jest.setupAfterEnv.js'],
+            moduleNameMapper: {
+                '^@test-utils': '<rootDir>/packages/utils/src/test-utils'
+            },
             testMatch: ['<rootDir>/packages/layout/src/**/*.(spec|test).(ts|tsx)']
         },
         {
             displayName: 'icons',
             setupFilesAfterEnv: ['<rootDir>/jest.setupAfterEnv.js'],
+            moduleNameMapper: {
+                '^@test-utils': '<rootDir>/packages/utils/src/test-utils'
+            },
             testMatch: ['<rootDir>/packages/icons/src/icons/**/*.(spec|test).(ts|tsx)']
         }
     ]
