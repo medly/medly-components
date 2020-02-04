@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.16](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.15...@medly-components/layout@1.0.0-beta.16) (2020-02-04)
+
+
+### Bug Fixes
+
+* **core:** fix tabs issue, fix checkbox issue ([c81287d](https://github.com/medlypharmacy/medly-components/commit/c81287d54604dd3ab9f0372cae5f01f544df8a29))
+
+
+### Features
+
+* **all:** update packages ([ea60c82](https://github.com/medlypharmacy/medly-components/commit/ea60c825bcef55757f3209765c1e97f892d9e509))
+
+
+
+
+
 # [1.0.0-beta.15](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.14...@medly-components/layout@1.0.0-beta.15) (2020-01-22)
 
 **Note:** Version bump only for package @medly-components/layout

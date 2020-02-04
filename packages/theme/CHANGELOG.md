@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.9](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.8...@medly-components/theme@1.0.0-beta.9) (2020-02-04)
+
+
+### Bug Fixes
+
+* **core:** fix tabs issue, fix checkbox issue ([c81287d](https://github.com/medlypharmacy/medly-components/commit/c81287d54604dd3ab9f0372cae5f01f544df8a29))
+
+
+### Features
+
+* **core:** add prefix and suffix feature in input component ([242424a](https://github.com/medlypharmacy/medly-components/commit/242424a439248fe03879dd0a7ed9e4a672bf0974))
+* **core:** add toggle component and refactor checkbox component ([300d59e](https://github.com/medlypharmacy/medly-components/commit/300d59e0e38a79986b7984f7d6f4b52d072ba010))
+
+
+
+
+
 # [1.0.0-beta.8](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.7...@medly-components/theme@1.0.0-beta.8) (2020-01-21)
 
 

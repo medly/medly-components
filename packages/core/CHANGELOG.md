@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.16](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.15...@medly-components/core@1.0.0-beta.16) (2020-02-04)
+
+
+### Bug Fixes
+
+* **all:** fix lint issues ([9fef457](https://github.com/medlypharmacy/medly-components/commit/9fef4578e72e89ced26304a4250aad1ab28fa406))
+* **core:** fix tabs issue, fix checkbox issue ([c81287d](https://github.com/medlypharmacy/medly-components/commit/c81287d54604dd3ab9f0372cae5f01f544df8a29))
+
+
+### Features
+
+* **all:** update packages ([ea60c82](https://github.com/medlypharmacy/medly-components/commit/ea60c825bcef55757f3209765c1e97f892d9e509))
+* **core:** add prefix and suffix feature in input component ([242424a](https://github.com/medlypharmacy/medly-components/commit/242424a439248fe03879dd0a7ed9e4a672bf0974))
+* **core:** add toggle component and refactor checkbox component ([300d59e](https://github.com/medlypharmacy/medly-components/commit/300d59e0e38a79986b7984f7d6f4b52d072ba010))
+
+
+
+
+
 # [1.0.0-beta.15](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.14...@medly-components/core@1.0.0-beta.15) (2020-01-22)
 
 **Note:** Version bump only for package @medly-components/core
