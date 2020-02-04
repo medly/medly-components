@@ -26,11 +26,11 @@
         "lint:ts": "tslint -p tsconfig.json",
         "prerelease": "yarn build && lerna version",
         "release": "lerna publish",
-        "test": "run-s type-check test:jest",
+        "test": "run-s typecheck test:jest",
         "test:jest": "jest --passWithNoTests --config jest.config.js",
-        "test:update": "run-s type-check \"test:jest -- -u\"",
-        "test:watch": "run-s \"type-check -- -w\" \"test:jest -- --watch\"",
-        "type-check": "tsc -p tsconfig.json"
+        "test:update": "run-s typecheck \"test:jest -- -u\"",
+        "test:watch": "run-s \"typecheck -- -w\" \"test:jest -- --watch\"",
+        "typecheck": "tsc -p tsconfig.json"
     },
     "repository": {
         "type": "git",
