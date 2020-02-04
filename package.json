@@ -87,7 +87,7 @@
         "rimraf": "^3.0.0",
         "storybook-addon-jsx": "^7.1.2",
         "styled-components": "^4.2.0",
-        "stylelint": "^10.1.0",
+        "stylelint": "^13.0.0",
         "stylelint-config-recommended": "^3.0.0",
         "stylelint-config-styled-components": "^0.1.1",
         "stylelint-custom-processor-loader": "^0.6.0",
