@@ -42,7 +42,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   outline: none;
 }
 
-.c1 .c6 * {
+.c1 .sc-AykKD * {
   fill: #BDBDBD;
 }
 
@@ -50,27 +50,11 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   cursor: not-allowed;
 }
 
-.c1 .c6 + .c2 {
+.c1 .sc-AykKD + .c2 {
   margin-left: 10px;
 }
 
-.c1 .c2 + .c6 {
-  margin-left: 10px;
-}
-
-.c4 .c6 + .c2 {
-  margin-left: 10px;
-}
-
-.c4 .c2 + .c6 {
-  margin-left: 10px;
-}
-
-.c5 .c6 + .c2 {
-  margin-left: 10px;
-}
-
-.c5 .c2 + .c6 {
+.c1 .c2 + .sc-AykKD {
   margin-left: 10px;
 }
 
@@ -205,7 +189,7 @@ exports[`Pagination component should render correctly with all the default props
   outline: none;
 }
 
-.c1 .c6 * {
+.c1 .sc-AykKD * {
   fill: #BDBDBD;
 }
 
@@ -213,11 +197,11 @@ exports[`Pagination component should render correctly with all the default props
   cursor: not-allowed;
 }
 
-.c1 .c6 + .c2 {
+.c1 .sc-AykKD + .c2 {
   margin-left: 10px;
 }
 
-.c1 .c2 + .c6 {
+.c1 .c2 + .sc-AykKD {
   margin-left: 10px;
 }
 
@@ -257,7 +241,7 @@ exports[`Pagination component should render correctly with all the default props
   outline: none;
 }
 
-.c4 .c6 * {
+.c4 .sc-AykKD * {
   fill: #ffffff;
 }
 
@@ -265,11 +249,11 @@ exports[`Pagination component should render correctly with all the default props
   cursor: not-allowed;
 }
 
-.c4 .c6 + .c2 {
+.c4 .sc-AykKD + .c2 {
   margin-left: 10px;
 }
 
-.c4 .c2 + .c6 {
+.c4 .c2 + .sc-AykKD {
   margin-left: 10px;
 }
 
@@ -308,7 +292,7 @@ exports[`Pagination component should render correctly with all the default props
   outline: none;
 }
 
-.c5 .c6 * {
+.c5 .sc-AykKD * {
   fill: #012040;
 }
 
@@ -316,11 +300,11 @@ exports[`Pagination component should render correctly with all the default props
   cursor: not-allowed;
 }
 
-.c5 .c6 + .c2 {
+.c5 .sc-AykKD + .c2 {
   margin-left: 10px;
 }
 
-.c5 .c2 + .c6 {
+.c5 .c2 + .sc-AykKD {
   margin-left: 10px;
 }
 
@@ -483,14 +467,6 @@ exports[`Pagination component should render correctly with all the props given 1
   color: inherit;
 }
 
-.c5 .c6 + .c2 {
-  margin-left: 10px;
-}
-
-.c5 .c2 + .c6 {
-  margin-left: 10px;
-}
-
 .c1 {
   background-color: transparent;
   border: none;
@@ -527,7 +503,7 @@ exports[`Pagination component should render correctly with all the props given 1
   outline: none;
 }
 
-.c1 .c6 * {
+.c1 .sc-AykKD * {
   fill: #ffffff;
 }
 
@@ -535,11 +511,11 @@ exports[`Pagination component should render correctly with all the props given 1
   cursor: not-allowed;
 }
 
-.c1 .c6 + .c2 {
+.c1 .sc-AykKD + .c2 {
   margin-left: 10px;
 }
 
-.c1 .c2 + .c6 {
+.c1 .c2 + .sc-AykKD {
   margin-left: 10px;
 }
 
@@ -578,7 +554,7 @@ exports[`Pagination component should render correctly with all the props given 1
   outline: none;
 }
 
-.c4 .c6 * {
+.c4 .sc-AykKD * {
   fill: #012040;
 }
 
@@ -586,11 +562,11 @@ exports[`Pagination component should render correctly with all the props given 1
   cursor: not-allowed;
 }
 
-.c4 .c6 + .c2 {
+.c4 .sc-AykKD + .c2 {
   margin-left: 10px;
 }
 
-.c4 .c2 + .c6 {
+.c4 .c2 + .sc-AykKD {
   margin-left: 10px;
 }
 

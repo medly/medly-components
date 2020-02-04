@@ -72,10 +72,6 @@ exports[`Stepper component should change active step when click on any step 1`] 
   user-select: none;
 }
 
-.c8 .c2 {
-  margin-right: 10px;
-}
-
 .c1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -398,10 +394,6 @@ exports[`Stepper component should render correctly with all the props given 1`] 
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.c8 .c2 {
-  margin-right: 10px;
 }
 
 .c1 {

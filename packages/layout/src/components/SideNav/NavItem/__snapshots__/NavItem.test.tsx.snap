@@ -162,7 +162,7 @@ exports[`NavItem should be able to click on nested item 1`] = `
   font-weight: 400;
 }
 
-.c21 > .c12 {
+.c22 > .c12 {
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
@@ -329,14 +329,14 @@ exports[`NavItem should be able to click on nested item 1`] = `
   background: #ffffff;
 }
 
-.c22 .c12,
-.c22 .c7 {
+.c21 .c12,
+.c21 .c7 {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.c22 .c18 {
+.c21 .c18 {
   max-height: 0px;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
@@ -385,7 +385,7 @@ exports[`NavItem should be able to click on nested item 1`] = `
 }
 
 <div
-  class="c0"
+  class="sc-fzXfRb c0"
   id="medly-sidenav"
   open=""
 >
@@ -712,19 +712,6 @@ exports[`NavItem should fold the open item on click on it 1`] = `
   font-weight: 400;
 }
 
-.c20 > .c16 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.c20 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 700;
-}
-
 .c21 > .c16 {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -732,19 +719,6 @@ exports[`NavItem should fold the open item on click on it 1`] = `
 }
 
 .c21 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.c22 > .c16 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.c22 > .c12 {
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
@@ -808,14 +782,14 @@ exports[`NavItem should fold the open item on click on it 1`] = `
   background: #ffffff;
 }
 
-.c23 .c12,
-.c23 .c7 {
+.c20 .c12,
+.c20 .c7 {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.c23 .c18 {
+.c20 .c18 {
   max-height: 0px;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
@@ -864,7 +838,7 @@ exports[`NavItem should fold the open item on click on it 1`] = `
 }
 
 <div
-  class="c0"
+  class="sc-fzXfRb c0"
   id="medly-sidenav"
   open=""
 >
@@ -1277,7 +1251,7 @@ exports[`NavItem should render properly 1`] = `
 
 <div>
   <div
-    class="c0"
+    class="sc-fzXfRb c0"
     id="medly-sidenav"
   >
     <div

@@ -9,45 +9,6 @@ exports[`Popover component with placement bottom, should render properly 1`] = `
   border-radius: 4px;
 }
 
-.c3 .c1 {
-  bottom: calc(100% + 5px);
-  left: 0%;
-}
-
-.c4 .c1 {
-  bottom: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c5 .c1 {
-  bottom: calc(100% + 5px);
-  right: 0%;
-}
-
-.c6 .c1 {
-  top: 0%;
-  left: calc(100% + 5px);
-}
-
-.c7 .c1 {
-  left: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c8 .c1 {
-  bottom: 0px;
-  left: calc(100% + 5px);
-}
-
-.c9 .c1 {
-  top: calc(100% + 5px);
-  right: 0%;
-}
-
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -93,40 +54,6 @@ exports[`Popover component with placement bottom-end, should render properly 1`]
   border-radius: 4px;
 }
 
-.c3 .c1 {
-  bottom: calc(100% + 5px);
-  left: 0%;
-}
-
-.c4 .c1 {
-  bottom: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c5 .c1 {
-  bottom: calc(100% + 5px);
-  right: 0%;
-}
-
-.c6 .c1 {
-  top: 0%;
-  left: calc(100% + 5px);
-}
-
-.c7 .c1 {
-  left: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c8 .c1 {
-  bottom: 0px;
-  left: calc(100% + 5px);
-}
-
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -170,52 +97,6 @@ exports[`Popover component with placement bottom-start, should render properly 1
   border-radius: 4px;
 }
 
-.c3 .c1 {
-  bottom: calc(100% + 5px);
-  left: 0%;
-}
-
-.c4 .c1 {
-  bottom: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c5 .c1 {
-  bottom: calc(100% + 5px);
-  right: 0%;
-}
-
-.c6 .c1 {
-  top: 0%;
-  left: calc(100% + 5px);
-}
-
-.c7 .c1 {
-  left: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c8 .c1 {
-  bottom: 0px;
-  left: calc(100% + 5px);
-}
-
-.c9 .c1 {
-  top: calc(100% + 5px);
-  right: 0%;
-}
-
-.c10 .c1 {
-  top: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -257,62 +138,6 @@ exports[`Popover component with placement left, should render properly 1`] = `
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
   border-radius: 4px;
-}
-
-.c3 .c1 {
-  bottom: calc(100% + 5px);
-  left: 0%;
-}
-
-.c4 .c1 {
-  bottom: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c5 .c1 {
-  bottom: calc(100% + 5px);
-  right: 0%;
-}
-
-.c6 .c1 {
-  top: 0%;
-  left: calc(100% + 5px);
-}
-
-.c7 .c1 {
-  left: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c8 .c1 {
-  bottom: 0px;
-  left: calc(100% + 5px);
-}
-
-.c9 .c1 {
-  top: calc(100% + 5px);
-  right: 0%;
-}
-
-.c10 .c1 {
-  top: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c11 .c1 {
-  top: calc(100% + 5px);
-  left: 0%;
-}
-
-.c12 .c1 {
-  right: calc(100% + 5px);
-  bottom: 0%;
 }
 
 .c0 {
@@ -360,57 +185,6 @@ exports[`Popover component with placement left-end, should render properly 1`] =
   border-radius: 4px;
 }
 
-.c3 .c1 {
-  bottom: calc(100% + 5px);
-  left: 0%;
-}
-
-.c4 .c1 {
-  bottom: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c5 .c1 {
-  bottom: calc(100% + 5px);
-  right: 0%;
-}
-
-.c6 .c1 {
-  top: 0%;
-  left: calc(100% + 5px);
-}
-
-.c7 .c1 {
-  left: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c8 .c1 {
-  bottom: 0px;
-  left: calc(100% + 5px);
-}
-
-.c9 .c1 {
-  top: calc(100% + 5px);
-  right: 0%;
-}
-
-.c10 .c1 {
-  top: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c11 .c1 {
-  top: calc(100% + 5px);
-  left: 0%;
-}
-
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -454,69 +228,6 @@ exports[`Popover component with placement left-start, should render properly 1`]
   border-radius: 4px;
 }
 
-.c3 .c1 {
-  bottom: calc(100% + 5px);
-  left: 0%;
-}
-
-.c4 .c1 {
-  bottom: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c5 .c1 {
-  bottom: calc(100% + 5px);
-  right: 0%;
-}
-
-.c6 .c1 {
-  top: 0%;
-  left: calc(100% + 5px);
-}
-
-.c7 .c1 {
-  left: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c8 .c1 {
-  bottom: 0px;
-  left: calc(100% + 5px);
-}
-
-.c9 .c1 {
-  top: calc(100% + 5px);
-  right: 0%;
-}
-
-.c10 .c1 {
-  top: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c11 .c1 {
-  top: calc(100% + 5px);
-  left: 0%;
-}
-
-.c12 .c1 {
-  right: calc(100% + 5px);
-  bottom: 0%;
-}
-
-.c13 .c1 {
-  right: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -558,28 +269,6 @@ exports[`Popover component with placement right, should render properly 1`] = `
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
   border-radius: 4px;
-}
-
-.c3 .c1 {
-  bottom: calc(100% + 5px);
-  left: 0%;
-}
-
-.c4 .c1 {
-  bottom: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c5 .c1 {
-  bottom: calc(100% + 5px);
-  right: 0%;
-}
-
-.c6 .c1 {
-  top: 0%;
-  left: calc(100% + 5px);
 }
 
 .c0 {
@@ -627,35 +316,6 @@ exports[`Popover component with placement right-end, should render properly 1`] 
   border-radius: 4px;
 }
 
-.c3 .c1 {
-  bottom: calc(100% + 5px);
-  left: 0%;
-}
-
-.c4 .c1 {
-  bottom: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c5 .c1 {
-  bottom: calc(100% + 5px);
-  right: 0%;
-}
-
-.c6 .c1 {
-  top: 0%;
-  left: calc(100% + 5px);
-}
-
-.c7 .c1 {
-  left: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -697,23 +357,6 @@ exports[`Popover component with placement right-start, should render properly 1`
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
   border-radius: 4px;
-}
-
-.c3 .c1 {
-  bottom: calc(100% + 5px);
-  left: 0%;
-}
-
-.c4 .c1 {
-  bottom: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c5 .c1 {
-  bottom: calc(100% + 5px);
-  right: 0%;
 }
 
 .c0 {
@@ -759,11 +402,6 @@ exports[`Popover component with placement top, should render properly 1`] = `
   border-radius: 4px;
 }
 
-.c3 .c1 {
-  bottom: calc(100% + 5px);
-  left: 0%;
-}
-
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -807,18 +445,6 @@ exports[`Popover component with placement top-end, should render properly 1`] = 
   -webkit-transition: all 2ms ease-in-out;
   transition: all 2ms ease-in-out;
   border-radius: 4px;
-}
-
-.c3 .c1 {
-  bottom: calc(100% + 5px);
-  left: 0%;
-}
-
-.c4 .c1 {
-  bottom: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
 }
 
 .c0 {

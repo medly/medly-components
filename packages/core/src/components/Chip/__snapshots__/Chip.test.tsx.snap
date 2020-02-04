@@ -7,21 +7,6 @@ exports[`Chip component should render properly when it is disabled 1`] = `
   color: inherit;
 }
 
-.c3 .c1 + .c6 {
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-.c4 .c1 + .c6 {
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-.c5 .c1 + .c6 {
-  cursor: pointer;
-  margin-left: 10px;
-}
-
 .c0 {
   background-color: transparent;
   border: none;
@@ -59,11 +44,11 @@ exports[`Chip component should render properly when it is disabled 1`] = `
   outline: none;
 }
 
-.c0 .c6 * {
+.c0 .sc-AykKC * {
   fill: #ffffff;
 }
 
-.c0 .c1 + .c6 {
+.c0 .c1 + .sc-AykKC {
   cursor: not-allowed;
   margin-left: 10px;
 }
@@ -124,11 +109,11 @@ exports[`Chip component should render properly with flat variant 1`] = `
   outline: none;
 }
 
-.c0 .c3 * {
+.c0 .sc-AykKC * {
   fill: yellow;
 }
 
-.c0 .c1 + .c3 {
+.c0 .c1 + .sc-AykKC {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -152,11 +137,6 @@ exports[`Chip component should render properly with outlined variant 1`] = `
   font-size: 14px;
   font-weight: 400;
   color: inherit;
-}
-
-.c3 .c1 + .c4 {
-  cursor: pointer;
-  margin-left: 10px;
 }
 
 .c0 {
@@ -195,11 +175,11 @@ exports[`Chip component should render properly with outlined variant 1`] = `
   outline: none;
 }
 
-.c0 .c4 * {
+.c0 .sc-AykKC * {
   fill: secondary;
 }
 
-.c0 .c1 + .c4 {
+.c0 .c1 + .sc-AykKC {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -223,16 +203,6 @@ exports[`Chip component should render properly with solid variant 1`] = `
   font-size: 14px;
   font-weight: 400;
   color: inherit;
-}
-
-.c3 .c1 + .c5 {
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-.c4 .c1 + .c5 {
-  cursor: pointer;
-  margin-left: 10px;
 }
 
 .c0 {
@@ -272,11 +242,11 @@ exports[`Chip component should render properly with solid variant 1`] = `
   outline: none;
 }
 
-.c0 .c5 * {
+.c0 .sc-AykKC * {
   fill: #ffffff;
 }
 
-.c0 .c1 + .c5 {
+.c0 .c1 + .sc-AykKC {
   cursor: pointer;
   margin-left: 10px;
 }

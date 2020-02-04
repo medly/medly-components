@@ -46,7 +46,7 @@ exports[`Tab should render properly 1`] = `
   cursor: not-allowed;
 }
 
-.c0 .c2 {
+.c0 .sc-AykKC {
   margin-bottom: 5px;
 }
 

@@ -37,28 +37,6 @@ exports[`SingleSelect component should render correctly with all the props given
   color: grey;
 }
 
-.c6 {
-  margin: 8px 8px 8px 0px;
-  display: inline-grid;
-  grid-template-areas: 'label' 'field' 'description';
-  grid-template-columns: auto;
-  grid-template-areas: 'field' 'description';
-}
-
-.c6 .c15 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .c1 {
   margin: 8px 0px;
   display: grid;
@@ -67,7 +45,7 @@ exports[`SingleSelect component should render correctly with all the props given
   grid-template-areas: 'label field' 'random description';
 }
 
-.c1 .c15 {
+.c1 .sc-AykKE {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -79,6 +57,28 @@ exports[`SingleSelect component should render correctly with all the props given
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+}
+
+.c6 {
+  margin: 8px 8px 8px 0px;
+  display: inline-grid;
+  grid-template-areas: 'label' 'field' 'description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
+}
+
+.c6 .sc-AykKE {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c7 {
@@ -145,7 +145,7 @@ exports[`SingleSelect component should render correctly with all the props given
   flex-direction: column-reverse;
 }
 
-.c4 .c16 {
+.c4 .sc-fzXfLP {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -159,19 +159,6 @@ exports[`SingleSelect component should render correctly with all the props given
 
 .c10 * {
   fill: #616161;
-}
-
-.c14 .c0 {
-  margin: 0px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c14 .c0 .c8 {
-  margin: 0px;
-  border: none;
-  background-color: transparent;
 }
 
 .c5 {
@@ -302,7 +289,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   grid-template-areas: 'field' 'description';
 }
 
-.c1 .c10 {
+.c1 .sc-AykKE {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -324,7 +311,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .c10 {
+.c4 .sc-AykKE {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -402,7 +389,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   flex-direction: column-reverse;
 }
 
-.c2 .c11 {
+.c2 .sc-fzXfLP {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;

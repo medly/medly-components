@@ -7,30 +7,6 @@ exports[`Button component should render properly when it is disabled 1`] = `
   color: inherit;
 }
 
-.c3 .c6 + .c1 {
-  margin-left: 10px;
-}
-
-.c3 .c1 + .c6 {
-  margin-left: 10px;
-}
-
-.c4 .c6 + .c1 {
-  margin-left: 10px;
-}
-
-.c4 .c1 + .c6 {
-  margin-left: 10px;
-}
-
-.c5 .c6 + .c1 {
-  margin-left: 10px;
-}
-
-.c5 .c1 + .c6 {
-  margin-left: 10px;
-}
-
 .c0 {
   background-color: transparent;
   border: none;
@@ -67,7 +43,7 @@ exports[`Button component should render properly when it is disabled 1`] = `
   outline: none;
 }
 
-.c0 .c6 * {
+.c0 .sc-AykKC * {
   fill: #ffffff;
 }
 
@@ -75,11 +51,11 @@ exports[`Button component should render properly when it is disabled 1`] = `
   cursor: not-allowed;
 }
 
-.c0 .c6 + .c1 {
+.c0 .sc-AykKC + .c1 {
   margin-left: 10px;
 }
 
-.c0 .c1 + .c6 {
+.c0 .c1 + .sc-AykKC {
   margin-left: 10px;
 }
 
@@ -113,30 +89,6 @@ exports[`Button component should render properly with any icon at the beginning 
   font-size: 14px;
   font-weight: 500;
   color: inherit;
-}
-
-.c5 .c1 * {
-  fill: #012040;
-}
-
-.c5 .c1 + .c3 {
-  margin-left: 10px;
-}
-
-.c5 .c3 + .c1 {
-  margin-left: 10px;
-}
-
-.c6 .c1 * {
-  fill: red;
-}
-
-.c6 .c1 + .c3 {
-  margin-left: 10px;
-}
-
-.c6 .c3 + .c1 {
-  margin-left: 10px;
 }
 
 .c0 {
@@ -232,30 +184,6 @@ exports[`Button component should render properly with any icon at the end of the
   font-size: 14px;
   font-weight: 500;
   color: inherit;
-}
-
-.c5 .c1 * {
-  fill: #012040;
-}
-
-.c5 .c1 + .c3 {
-  margin-left: 10px;
-}
-
-.c5 .c3 + .c1 {
-  margin-left: 10px;
-}
-
-.c6 .c1 * {
-  fill: red;
-}
-
-.c6 .c1 + .c3 {
-  margin-left: 10px;
-}
-
-.c6 .c3 + .c1 {
-  margin-left: 10px;
 }
 
 .c0 {
@@ -378,7 +306,7 @@ exports[`Button component should render properly with flat variant and primary c
   outline: none;
 }
 
-.c0 .c3 * {
+.c0 .sc-AykKC * {
   fill: #012040;
 }
 
@@ -386,11 +314,11 @@ exports[`Button component should render properly with flat variant and primary c
   cursor: not-allowed;
 }
 
-.c0 .c3 + .c1 {
+.c0 .sc-AykKC + .c1 {
   margin-left: 10px;
 }
 
-.c0 .c1 + .c3 {
+.c0 .c1 + .sc-AykKC {
   margin-left: 10px;
 }
 
@@ -414,14 +342,6 @@ exports[`Button component should render properly with outlined variant and secon
   font-size: 14px;
   font-weight: 500;
   color: inherit;
-}
-
-.c3 .c4 + .c1 {
-  margin-left: 10px;
-}
-
-.c3 .c1 + .c4 {
-  margin-left: 10px;
 }
 
 .c0 {
@@ -459,7 +379,7 @@ exports[`Button component should render properly with outlined variant and secon
   outline: none;
 }
 
-.c0 .c4 * {
+.c0 .sc-AykKC * {
   fill: red;
 }
 
@@ -467,11 +387,11 @@ exports[`Button component should render properly with outlined variant and secon
   cursor: not-allowed;
 }
 
-.c0 .c4 + .c1 {
+.c0 .sc-AykKC + .c1 {
   margin-left: 10px;
 }
 
-.c0 .c1 + .c4 {
+.c0 .c1 + .sc-AykKC {
   margin-left: 10px;
 }
 
@@ -497,22 +417,6 @@ exports[`Button component should render properly with solid variant 1`] = `
   color: inherit;
 }
 
-.c3 .c5 + .c1 {
-  margin-left: 10px;
-}
-
-.c3 .c1 + .c5 {
-  margin-left: 10px;
-}
-
-.c4 .c5 + .c1 {
-  margin-left: 10px;
-}
-
-.c4 .c1 + .c5 {
-  margin-left: 10px;
-}
-
 .c0 {
   background-color: transparent;
   border: none;
@@ -549,7 +453,7 @@ exports[`Button component should render properly with solid variant 1`] = `
   outline: none;
 }
 
-.c0 .c5 * {
+.c0 .sc-AykKC * {
   fill: #ffffff;
 }
 
@@ -557,11 +461,11 @@ exports[`Button component should render properly with solid variant 1`] = `
   cursor: not-allowed;
 }
 
-.c0 .c5 + .c1 {
+.c0 .sc-AykKC + .c1 {
   margin-left: 10px;
 }
 
-.c0 .c1 + .c5 {
+.c0 .c1 + .sc-AykKC {
   margin-left: 10px;
 }
 
@@ -587,22 +491,6 @@ exports[`Button component should wrap children into Text component when renderin
   color: inherit;
 }
 
-.c3 .c6 + .c1 {
-  margin-left: 10px;
-}
-
-.c3 .c1 + .c6 {
-  margin-left: 10px;
-}
-
-.c4 .c6 + .c1 {
-  margin-left: 10px;
-}
-
-.c4 .c1 + .c6 {
-  margin-left: 10px;
-}
-
 .c0 {
   background-color: transparent;
   border: none;
@@ -639,7 +527,7 @@ exports[`Button component should wrap children into Text component when renderin
   outline: none;
 }
 
-.c0 .c6 * {
+.c0 .sc-AykKC * {
   fill: #ffffff;
 }
 
@@ -647,19 +535,11 @@ exports[`Button component should wrap children into Text component when renderin
   cursor: not-allowed;
 }
 
-.c0 .c6 + .c1 {
+.c0 .sc-AykKC + .c1 {
   margin-left: 10px;
 }
 
-.c0 .c1 + .c6 {
-  margin-left: 10px;
-}
-
-.c5 .c6 + .c1 {
-  margin-left: 10px;
-}
-
-.c5 .c1 + .c6 {
+.c0 .c1 + .sc-AykKC {
   margin-left: 10px;
 }
 

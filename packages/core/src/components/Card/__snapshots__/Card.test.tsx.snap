@@ -114,18 +114,13 @@ exports[`Card component should render flat variant properly  1`] = `
 `;
 
 exports[`Card component should render properly when flow direction is horizontal and separator is set true 1`] = `
-.c3 {
+.c2 {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
 }
 
-.c7:hover.c0:hover * {
-  color: #ffffff;
-  background-color: #FE8D6B;
-}
-
-.c1 {
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -157,11 +152,11 @@ exports[`Card component should render properly when flow direction is horizontal
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
-.c1 > div + div {
+.c0 > div + div {
   border-left: 1px solid #9E9E9E;
 }
 
-.c2 {
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -193,11 +188,11 @@ exports[`Card component should render properly when flow direction is horizontal
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
-.c2 > div + div {
+.c1 > div + div {
   border-left: 1px solid #9E9E9E;
 }
 
-.c4 {
+.c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -229,11 +224,11 @@ exports[`Card component should render properly when flow direction is horizontal
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
-.c4 > div + div {
+.c3 > div + div {
   border-left: 1px solid #9E9E9E;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -265,11 +260,11 @@ exports[`Card component should render properly when flow direction is horizontal
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
-.c5 > div + div {
+.c4 > div + div {
   border-left: 1px solid #9E9E9E;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -301,55 +296,55 @@ exports[`Card component should render properly when flow direction is horizontal
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
-.c6 > div + div {
+.c5 > div + div {
   border-left: 1px solid #9E9E9E;
 }
 
 <div>
   <div
-    class="c0 c1"
+    class="c0"
   >
     <div
-      class="c0 c2"
+      class="c1"
     >
       <span
-        class="c3"
+        class="c2"
       >
         Dummy Text
       </span>
     </div>
     <div
-      class="c0 c4"
+      class="c3"
     >
       <span
-        class="c3"
+        class="c2"
       >
         Dummy Text
       </span>
     </div>
     <div
-      class="c0 c5"
+      class="c4"
     >
       <span
-        class="c3"
+        class="c2"
       >
         Dummy Text
       </span>
     </div>
     <div
-      class="c0 c6"
+      class="c5"
     >
       <span
-        class="c3"
+        class="c2"
       >
         Dummy Text
       </span>
     </div>
     <div
-      class="c0 c1"
+      class="c0"
     >
       <span
-        class="c3"
+        class="c2"
       >
         Dummy Text
       </span>
@@ -359,18 +354,13 @@ exports[`Card component should render properly when flow direction is horizontal
 `;
 
 exports[`Card component should render properly when fullWidth and fullHeight is set true 1`] = `
-.c2 {
+.c1 {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
 }
 
-.c3:hover.c0:hover * {
-  color: #ffffff;
-  background-color: #FE8D6B;
-}
-
-.c1 {
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -406,10 +396,10 @@ exports[`Card component should render properly when fullWidth and fullHeight is 
 
 <div>
   <div
-    class="c0 c1"
+    class="c0"
   >
     <span
-      class="c2"
+      class="c1"
     >
       Dummy Text
     </span>
@@ -485,18 +475,13 @@ exports[`Card component should render properly when it is clickable  1`] = `
 `;
 
 exports[`Card component should render properly when separator is set true flow direction is vertical 1`] = `
-.c3 {
+.c2 {
   font-size: 14px;
   font-weight: 400;
   color: inherit;
 }
 
-.c7:hover.c0:hover * {
-  color: #ffffff;
-  background-color: #FE8D6B;
-}
-
-.c1 {
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -528,11 +513,11 @@ exports[`Card component should render properly when separator is set true flow d
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
-.c1 > div + div {
+.c0 > div + div {
   border-top: 1px solid #9E9E9E;
 }
 
-.c2 {
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -569,11 +554,11 @@ exports[`Card component should render properly when separator is set true flow d
   background-color: transparent;
 }
 
-.c2.c2 * {
+.c1.c1 * {
   background-color: transparent;
 }
 
-.c4 {
+.c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -610,11 +595,11 @@ exports[`Card component should render properly when separator is set true flow d
   background-color: transparent;
 }
 
-.c4.c4 * {
+.c3.c3 * {
   background-color: transparent;
 }
 
-.c5 {
+.c4 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -651,11 +636,11 @@ exports[`Card component should render properly when separator is set true flow d
   background-color: transparent;
 }
 
-.c5.c5 * {
+.c4.c4 * {
   background-color: transparent;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -692,46 +677,46 @@ exports[`Card component should render properly when separator is set true flow d
   background-color: transparent;
 }
 
-.c6.c6 * {
+.c5.c5 * {
   background-color: transparent;
 }
 
 <div>
   <div
-    class="c0 c1"
+    class="c0"
   >
     <div
-      class="c0 c2"
+      class="c1"
     >
       <span
-        class="c3"
+        class="c2"
       >
         Marks
       </span>
     </div>
     <div
-      class="c0 c4"
+      class="c3"
     >
       <span
-        class="c3"
+        class="c2"
       >
         Dummy Text
       </span>
     </div>
     <div
-      class="c0 c5"
+      class="c4"
     >
       <span
-        class="c3"
+        class="c2"
       >
         Dummy Text
       </span>
     </div>
     <div
-      class="c0 c6"
+      class="c5"
     >
       <span
-        class="c3"
+        class="c2"
       >
         Dummy Text
       </span>

@@ -10,7 +10,7 @@ exports[`Radio component should render correctly with all the default props 1`] 
   grid-template-areas: 'field' 'description';
 }
 
-.c0 .c5 {
+.c0 .sc-AykKE {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -137,7 +137,7 @@ exports[`Radio component should render correctly with all the props given 1`] = 
   grid-template-areas: 'field label' 'description random';
 }
 
-.c0 .c8 {
+.c0 .sc-AykKE {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -169,13 +169,6 @@ exports[`Radio component should render correctly with all the props given 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c7:checked ~ .c5 {
-  width: calc(75%);
-  height: calc(75%);
-  -webkit-transition: width 0.2s ease,height 0.2s ease;
-  transition: width 0.2s ease,height 0.2s ease;
 }
 
 .c4 {

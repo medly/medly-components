@@ -7,14 +7,6 @@ exports[`Cell should not render text if hide property is given 1`] = `
   color: inherit;
 }
 
-.c3 .c1 {
-  white-space: nowrap;
-}
-
-.c4 .c1 {
-  white-space: nowrap;
-}
-
 .c0 {
   opacity: 0;
   padding: 0;
@@ -36,7 +28,7 @@ exports[`Cell should not render text if hide property is given 1`] = `
   cursor: inherit;
 }
 
-.c0 .c6 {
+.c0 .sc-AykKK {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -44,7 +36,7 @@ exports[`Cell should not render text if hide property is given 1`] = `
   margin: 0px;
 }
 
-.c0 .c6 .c5 {
+.c0 .sc-AykKK .sc-AykKC {
   margin-right: 0px;
 }
 
@@ -101,7 +93,7 @@ exports[`Cell should render checkbox properly 1`] = `
   grid-template-areas: 'field label' 'description random';
 }
 
-.c2 .c14 {
+.c2 .sc-AykKH {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -195,30 +187,6 @@ exports[`Cell should render checkbox properly 1`] = `
   height: calc(70%);
 }
 
-.c11 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0px;
-}
-
-.c11 .c1 .c9 {
-  margin-right: 0px;
-}
-
-.c12 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0px;
-}
-
-.c12 .c1 .c9 {
-  margin-right: 0px;
-}
-
 .c0 {
   opacity: 0;
   padding: 0;
@@ -252,7 +220,7 @@ exports[`Cell should render checkbox properly 1`] = `
   margin-right: 0px;
 }
 
-.c0 .c13 {
+.c0 .sc-AykKG {
   white-space: nowrap;
 }
 
@@ -308,10 +276,6 @@ exports[`Cell should render frozen text properly 1`] = `
   color: inherit;
 }
 
-.c3 .c1 {
-  white-space: nowrap;
-}
-
 .c0 {
   opacity: 1;
   padding: 5px 10px;
@@ -338,7 +302,7 @@ exports[`Cell should render frozen text properly 1`] = `
   background-color: inherit;
 }
 
-.c0 .c5 {
+.c0 .sc-AykKK {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -346,7 +310,7 @@ exports[`Cell should render frozen text properly 1`] = `
   margin: 0px;
 }
 
-.c0 .c5 .c4 {
+.c0 .sc-AykKK .sc-AykKC {
   margin-right: 0px;
 }
 
@@ -399,7 +363,7 @@ exports[`Cell should render text properly 1`] = `
   cursor: inherit;
 }
 
-.c0 .c4 {
+.c0 .sc-AykKK {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -407,7 +371,7 @@ exports[`Cell should render text properly 1`] = `
   margin: 0px;
 }
 
-.c0 .c4 .c3 {
+.c0 .sc-AykKK .sc-AykKC {
   margin-right: 0px;
 }
 

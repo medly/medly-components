@@ -317,7 +317,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 }
 
 <div
-  class="c0"
+  class="sc-fzXfRb c0"
   id="medly-sidenav"
   open=""
 >
@@ -637,7 +637,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   font-weight: 400;
 }
 
-.c21 > .c12 {
+.c22 > .c12 {
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
@@ -688,32 +688,6 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   font-size: 16px;
   color: #ffffff;
   font-weight: 400;
-}
-
-.c22 > .c16 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.c22 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.c23 > .c16 {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.c23 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 700;
 }
 
 .c19 {
@@ -773,14 +747,14 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   background: #ffffff;
 }
 
-.c24 .c12,
-.c24 .c7 {
+.c21 .c12,
+.c21 .c7 {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.c24 .c18 {
+.c21 .c18 {
   max-height: 0px;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
@@ -829,7 +803,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 }
 
 <div
-  class="c0"
+  class="sc-fzXfRb c0"
   id="medly-sidenav"
   open=""
 >
@@ -1033,19 +1007,19 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   cursor: pointer;
 }
 
-.c14 .c5:nth-child(1) {
+.c15 .c5:nth-child(1) {
   top: calc(16px * 0.4);
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
 
-.c14 .c5:nth-child(2) {
+.c15 .c5:nth-child(2) {
   opacity: 0;
   left: -60px;
 }
 
-.c14 .c5:nth-child(3) {
+.c15 .c5:nth-child(3) {
   top: calc(16px * 0.4);
   -webkit-transform: rotate(-135deg);
   -ms-transform: rotate(-135deg);
@@ -1091,41 +1065,6 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   color: inherit;
 }
 
-.c15 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.c16 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.c17 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.c18 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.c19 > .c12 {
-  grid-area: header;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 700;
-}
-
 .c9 {
   width: 100%;
   -webkit-text-decoration: none;
@@ -1154,7 +1093,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   border-bottom: 1px solid #F56A41;
 }
 
-.c9 > .c21 {
+.c9 > .sc-fzXfQZ {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -1256,21 +1195,21 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   transition: opacity 0.2s;
 }
 
-.c0 .c22 {
+.c0 .sc-LzLqC {
   max-height: 0px;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
 }
 
-.c20 .c12,
-.c20 .c7 {
+.c14 .c12,
+.c14 .c7 {
   opacity: 1;
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
 }
 
 <div
-  class="c0"
+  class="sc-fzXfRb c0"
   id="medly-sidenav"
 >
   <div
@@ -1622,7 +1561,7 @@ exports[`SideNav should render properly 1`] = `
 
 <div>
   <div
-    class="c0"
+    class="sc-fzXfRb c0"
     id="medly-sidenav"
   >
     <div

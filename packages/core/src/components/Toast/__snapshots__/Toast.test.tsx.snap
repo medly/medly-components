@@ -14,22 +14,6 @@ exports[`Toast should render properly if child jsx 1`] = `
   fill: #ffffff;
 }
 
-.c4 .c1 * {
-  fill: #ffffff;
-}
-
-.c5 .c1 * {
-  fill: #ffffff;
-}
-
-.c6 .c1 * {
-  fill: #ffffff;
-}
-
-.c7 .c1 * {
-  fill: #ffffff;
-}
-
 .c0 {
   border-radius: 5px;
   display: -webkit-box;
@@ -55,20 +39,12 @@ exports[`Toast should render properly if child jsx 1`] = `
   background-color: #008000;
 }
 
-.c0 .c10 {
+.c0 .sc-AykKF {
   color: #ffffff;
   margin: 0px 10px;
 }
 
 .c0 .c1 * {
-  fill: #ffffff;
-}
-
-.c8 .c1 * {
-  fill: #ffffff;
-}
-
-.c9 .c1 * {
   fill: #ffffff;
 }
 
@@ -224,60 +200,6 @@ exports[`Toast should render properly with info variant 1`] = `
   fill: #ffffff;
 }
 
-.c6 .c3 {
-  color: #ffffff;
-  margin: 0px 10px;
-}
-
-.c6 .c1 * {
-  fill: #ffffff;
-}
-
-.c7 .c3 {
-  color: #ffffff;
-  margin: 0px 10px;
-}
-
-.c7 .c1 * {
-  fill: #ffffff;
-}
-
-.c8 .c3 {
-  color: #ffffff;
-  margin: 0px 10px;
-}
-
-.c8 .c1 * {
-  fill: #ffffff;
-}
-
-.c9 .c3 {
-  color: #ffffff;
-  margin: 0px 10px;
-}
-
-.c9 .c1 * {
-  fill: #ffffff;
-}
-
-.c10 .c3 {
-  color: #ffffff;
-  margin: 0px 10px;
-}
-
-.c10 .c1 * {
-  fill: #ffffff;
-}
-
-.c11 .c3 {
-  color: #ffffff;
-  margin: 0px 10px;
-}
-
-.c11 .c1 * {
-  fill: #ffffff;
-}
-
 .c0 {
   border-radius: 5px;
   display: -webkit-box;
@@ -372,42 +294,6 @@ exports[`Toast should render properly with success variant 1`] = `
   fill: #ffffff;
 }
 
-.c6 .c3 {
-  color: #ffffff;
-  margin: 0px 10px;
-}
-
-.c6 .c1 * {
-  fill: #ffffff;
-}
-
-.c7 .c3 {
-  color: #ffffff;
-  margin: 0px 10px;
-}
-
-.c7 .c1 * {
-  fill: #ffffff;
-}
-
-.c8 .c3 {
-  color: #ffffff;
-  margin: 0px 10px;
-}
-
-.c8 .c1 * {
-  fill: #ffffff;
-}
-
-.c9 .c3 {
-  color: #ffffff;
-  margin: 0px 10px;
-}
-
-.c9 .c1 * {
-  fill: #ffffff;
-}
-
 .c0 {
   border-radius: 5px;
   display: -webkit-box;
@@ -499,24 +385,6 @@ exports[`Toast should render properly with warning variant 1`] = `
 }
 
 .c5 .c1 * {
-  fill: #ffffff;
-}
-
-.c6 .c3 {
-  color: #ffffff;
-  margin: 0px 10px;
-}
-
-.c6 .c1 * {
-  fill: #ffffff;
-}
-
-.c7 .c3 {
-  color: #ffffff;
-  margin: 0px 10px;
-}
-
-.c7 .c1 * {
   fill: #ffffff;
 }
 

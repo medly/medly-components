@@ -21,7 +21,7 @@ exports[`Row should render NoResult properly 1`] = `
 
 <div>
   <li
-    class="c0"
+    class="sc-AykKC c0"
   >
     Dummy
   </li>

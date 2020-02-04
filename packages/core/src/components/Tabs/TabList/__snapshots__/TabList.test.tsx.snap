@@ -48,11 +48,11 @@ exports[`Tab should render properly 1`] = `
   cursor: not-allowed;
 }
 
-.c1 .c4 {
+.c1 .sc-AykKD {
   margin-bottom: 5px;
 }
 
-.c1 .c4 * {
+.c1 .sc-AykKD * {
   fill: #FE8D6B;
 }
 
@@ -95,7 +95,7 @@ exports[`Tab should render properly 1`] = `
   cursor: not-allowed;
 }
 
-.c3 .c4 {
+.c3 .sc-AykKD {
   margin-bottom: 5px;
 }
 

@@ -52,10 +52,6 @@ exports[`Avatar component should render with size 1`] = `
   text-transform: uppercase;
 }
 
-.c3 .c1 {
-  font-size: 16px;
-}
-
 .c0 {
   display: inline-block;
   text-align: center;
@@ -105,7 +101,7 @@ exports[`Avatar component should render with size and image 1`] = `
   background: #bdbdbd;
 }
 
-.c0 .c1 {
+.c0 .sc-AykKC {
   font-size: 56px;
 }
 

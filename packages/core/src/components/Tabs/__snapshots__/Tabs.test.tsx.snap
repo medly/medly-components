@@ -48,11 +48,11 @@ exports[`Tabs should hide the tab if hide prop is given 1`] = `
   cursor: not-allowed;
 }
 
-.c1 .c4 {
+.c1 .sc-AykKD {
   margin-bottom: 5px;
 }
 
-.c1 .c4 * {
+.c1 .sc-AykKD * {
   fill: #FE8D6B;
 }
 
@@ -179,11 +179,11 @@ exports[`Tabs should render properly without any prop 1`] = `
   cursor: not-allowed;
 }
 
-.c1 .c5 {
+.c1 .sc-AykKD {
   margin-bottom: 5px;
 }
 
-.c1 .c5 * {
+.c1 .sc-AykKD * {
   fill: #FE8D6B;
 }
 
@@ -226,7 +226,7 @@ exports[`Tabs should render properly without any prop 1`] = `
   cursor: not-allowed;
 }
 
-.c3 .c5 {
+.c3 .sc-AykKD {
   margin-bottom: 5px;
 }
 
@@ -366,11 +366,11 @@ exports[`Tabs should select expected tab on click on any tab, when only defaultA
   cursor: not-allowed;
 }
 
-.c3 .c5 {
+.c3 .sc-AykKD {
   margin-bottom: 5px;
 }
 
-.c3 .c5 * {
+.c3 .sc-AykKD * {
   fill: #FE8D6B;
 }
 
@@ -413,7 +413,7 @@ exports[`Tabs should select expected tab on click on any tab, when only defaultA
   cursor: not-allowed;
 }
 
-.c1 .c5 {
+.c1 .sc-AykKD {
   margin-bottom: 5px;
 }
 

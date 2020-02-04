@@ -41,18 +41,24 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
   user-select: none;
 }
 
-.c11 .c3 {
+.c0 {
+  margin: 8px 0px;
+  display: grid;
+  grid-template-areas: 'label' 'field' 'description';
+}
+
+.c0 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c5 {
@@ -76,26 +82,6 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
   flex-direction: row-reverse;
 }
 
-.c0 {
-  margin: 8px 0px;
-  display: grid;
-  grid-template-areas: 'label' 'field' 'description';
-}
-
-.c0 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 .c10 {
   background-color: #012040;
   width: 0;
@@ -114,13 +100,6 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c12:checked ~ .c9 {
-  width: calc(75%);
-  height: calc(75%);
-  -webkit-transition: width 0.2s ease,height 0.2s ease;
-  transition: width 0.2s ease,height 0.2s ease;
 }
 
 .c8 {

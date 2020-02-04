@@ -19,7 +19,7 @@ exports[`Checkbox component should render correctly with all the default props 1
   grid-template-areas: 'field' 'description';
 }
 
-.c0 .c7 {
+.c0 .sc-AykKH {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -186,7 +186,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   grid-template-areas: 'field label' 'description random';
 }
 
-.c0 .c9 {
+.c0 .sc-AykKH {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
