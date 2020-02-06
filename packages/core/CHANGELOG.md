@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.18](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.17...@medly-components/core@1.0.0-beta.18) (2020-02-06)
+
+
+### Bug Fixes
+
+* **core:** fix table cursor issues ([1cbab14](https://github.com/medlypharmacy/medly-components/commit/1cbab14c353586c331bf6f528aa31970cfad3942))
+
+
+
+
+
 # [1.0.0-beta.17](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.16...@medly-components/core@1.0.0-beta.17) (2020-02-06)
 
 
