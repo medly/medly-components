@@ -42,7 +42,12 @@ export const Cell = styled('div')<StyledProps>`
     align-items: center;
     overflow: hidden;
     border-right: 1px solid ${({ theme }) => theme.table.borderColor};
-    cursor: ${({ isRowSelectionCell }) => (isRowSelectionCell ? 'default' : 'inherit')};
+    ${({ isRowSelectionCell }) =>
+        isRowSelectionCell &&
+        css`
+            cursor: default;
+            user-select: none;
+        `};
 
     ${Checkbox.Style} {
         display: flex;

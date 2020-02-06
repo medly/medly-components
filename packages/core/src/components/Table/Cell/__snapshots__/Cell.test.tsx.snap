@@ -25,7 +25,6 @@ exports[`Cell should not render text if hide property is given 1`] = `
   align-items: center;
   overflow: hidden;
   border-right: 1px solid #E0E0E0;
-  cursor: inherit;
 }
 
 .c0 .sc-AykKK {
@@ -185,7 +184,6 @@ exports[`Cell should render checkbox properly 1`] = `
   align-items: center;
   overflow: hidden;
   border-right: 1px solid #E0E0E0;
-  cursor: inherit;
 }
 
 .c0 .c1 {
@@ -270,7 +268,6 @@ exports[`Cell should render frozen text properly 1`] = `
   align-items: center;
   overflow: hidden;
   border-right: 1px solid #E0E0E0;
-  cursor: inherit;
   position: -webkit-sticky;
   position: sticky;
   left: 0;
@@ -336,7 +333,6 @@ exports[`Cell should render text properly 1`] = `
   align-items: center;
   overflow: hidden;
   border-right: 1px solid #E0E0E0;
-  cursor: inherit;
 }
 
 .c0 .sc-AykKK {

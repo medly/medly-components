@@ -13,7 +13,7 @@ export const Row = styled('li').attrs(({ gridTemplateColumns }: GridTemplateProp
     align-items: center;
 
     border-bottom: 1px solid #ededed;
-    cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'default')};
+    cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
 
     & > * {
         background-color: ${({ theme, disabled }) => `${disabled ? theme.table.rowDisabledColor : theme.table.rowBackgroundColor}`};

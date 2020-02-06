@@ -10,7 +10,7 @@ exports[`Row should render NoResult properly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-bottom: 1px solid #ededed;
-  cursor: default;
+  cursor: inherit;
   text-align: center;
   line-height: 30px;
 }
@@ -38,7 +38,7 @@ exports[`Row should render row properly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-bottom: 1px solid #ededed;
-  cursor: default;
+  cursor: inherit;
 }
 
 .c0 > * {
