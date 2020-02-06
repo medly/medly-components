@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.17](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.16...@medly-components/core@1.0.0-beta.17) (2020-02-06)
+
+
+### Bug Fixes
+
+* **core:** fix styles of Toggle, Input, Select & Datepicke components ([842f731](https://github.com/medlypharmacy/medly-components/commit/842f73133cc07e8612ec3b153928caf4b47cd9ec))
+
+
+
+
+
 # [1.0.0-beta.16](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.15...@medly-components/core@1.0.0-beta.16) (2020-02-04)
 
 
