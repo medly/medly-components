@@ -1,13 +1,12 @@
 import { ExpandMoreIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
-import { centerAligned, css, fullWidth, styled, WithThemeProp } from '@medly-components/utils';
+import { centerAligned, fullWidth, styled, WithThemeProp } from '@medly-components/utils';
 import FieldWithLabel from '../FieldWithLabel';
-import Input from '../Input';
 import { SelectWrapperProps } from './types';
 
 export const SelectWrapperStyled = styled('div')<SelectWrapperProps>`
     border: 1px solid ${({ theme }) => theme.select.borderColor};
-    background-color: ${({ disabled, theme }) => (disabled ? theme.select.disabledBgcolor : theme.select.bgColor)};
+    background-color: ${({ disabled, theme }) => (disabled ? theme.select.disabledBgColor : theme.select.bgColor)};
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     border-radius: 4px;
     box-sizing: border-box;
@@ -19,19 +18,23 @@ export const SelectWrapperStyled = styled('div')<SelectWrapperProps>`
 
     ${props => props.fullWidth && fullWidth()};
 
+    * {
+        cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+    }
+
     ${FieldWithLabel.Style} {
         margin: 0px;
         flex: 1;
 
-        ${Input.Style} {
+        & > * {
             margin: 0px;
             border: none;
             background-color: transparent;
         }
     }
 
-    * {
-        cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+    &:focus-within {
+        border-color: ${({ theme }) => theme.select.outlineColor};
     }
 `;
 

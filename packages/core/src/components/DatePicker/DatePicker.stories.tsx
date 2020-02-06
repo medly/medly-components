@@ -13,6 +13,7 @@ export const Basic = () => {
         <DatePicker
             value={date}
             onChange={setDate}
+            fullWidth={boolean('Full Width', false)}
             displayFormat={text('Display Format', 'MM/dd/yyyy') as Props['displayFormat']}
             disabled={boolean('Disabled', false)}
             placeholder={text('Placeholder', 'Start Date')}

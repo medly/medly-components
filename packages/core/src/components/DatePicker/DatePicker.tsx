@@ -39,7 +39,14 @@ export const DatePicker: React.SFC<Props> & WithStyle = React.memo(props => {
                 </FieldWithLabel.Label>
             )}
             <PopoverWrapper placement={popoverPlacement} showPopover={isCalendarVisible} onClick={showCalendar} onOuterClick={hideCalendar}>
-                <Styled.Input {...restProps} required={required} id={`${id}-input`} value={formatedDate} onChange={handleInputOnChange} />
+                <Styled.Input
+                    fullWidth
+                    {...restProps}
+                    required={required}
+                    id={`${id}-input`}
+                    value={formatedDate}
+                    onChange={handleInputOnChange}
+                />
                 <Popover id={`${id}-popover`}>
                     <Calendar id={`${id}-calendar`} date={date} onChange={onChange} />
                 </Popover>

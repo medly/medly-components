@@ -42,18 +42,18 @@ exports[`DatePicker component should render properly when value is of date type 
 }
 
 .c4 {
-  margin: 8px 8px 8px 0px;
-  display: inline-grid;
+  margin: 8px 0px;
+  display: grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
 }
 
 .c4 .sc-AykKJ {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -64,6 +64,11 @@ exports[`DatePicker component should render properly when value is of date type 
 }
 
 .c5 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -73,6 +78,16 @@ exports[`DatePicker component should render properly when value is of date type 
   border: 1px solid #E0E0E0;
   border-radius: 5px;
   overflow: hidden;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.c5.c5.c5 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .c5:focus-within {
@@ -92,6 +107,7 @@ exports[`DatePicker component should render properly when value is of date type 
   flex: 1;
   outline: 0;
   border: 0;
+  width: calc(100% - 16px);
   cursor: not-allowed;
   background-color: #E0E0E0;
 }
@@ -161,7 +177,7 @@ exports[`DatePicker component should render properly when value is of date type 
       >
         
         <div
-          class="c5"
+          class="sc-AykKJ c5"
         >
           <input
             class="c6 c7"
@@ -221,18 +237,18 @@ exports[`DatePicker component should render properly when value is of string typ
 }
 
 .c4 {
-  margin: 8px 8px 8px 0px;
-  display: inline-grid;
+  margin: 8px 0px;
+  display: grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
 }
 
 .c4 .sc-AykKJ {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -243,6 +259,11 @@ exports[`DatePicker component should render properly when value is of string typ
 }
 
 .c5 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -252,6 +273,16 @@ exports[`DatePicker component should render properly when value is of string typ
   border: 1px solid #E0E0E0;
   border-radius: 5px;
   overflow: hidden;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.c5.c5.c5 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .c5:focus-within {
@@ -271,6 +302,7 @@ exports[`DatePicker component should render properly when value is of string typ
   flex: 1;
   outline: 0;
   border: 0;
+  width: calc(100% - 16px);
   cursor: not-allowed;
   background-color: #E0E0E0;
 }
@@ -340,7 +372,7 @@ exports[`DatePicker component should render properly when value is of string typ
       >
         
         <div
-          class="c5"
+          class="sc-AykKJ c5"
         >
           <input
             class="c6 c7"

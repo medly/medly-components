@@ -7,10 +7,10 @@ export const OptionStyled = styled('li').attrs(({ theme: { select } }) => ({ ...
     color: ${({ selected, selectedTextColor }) => (selected ? selectedTextColor : 'inherit')};
     background-color: ${({ selected, selectedBgColor, bgColor }) => (selected ? selectedBgColor : bgColor)};
 
-    ${({ disabled, disabledBgcolor }) =>
+    ${({ disabled, disabledBgColor }) =>
         disabled &&
         css`
-            background-color: ${disabledBgcolor};
+            background-color: ${disabledBgColor};
             cursor: not-allowed;
         `}
 

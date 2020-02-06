@@ -25,6 +25,11 @@ exports[`Checkbox component should render correctly with all the default props 1
 }
 
 .c1 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   position: relative;
   width: calc(24px * 2);
   height: 24px;
@@ -95,7 +100,7 @@ exports[`Checkbox component should render correctly with all the default props 1
   >
     
     <div
-      class="c1"
+      class="sc-AykKE c1"
     >
       <input
         class="c2"
@@ -153,6 +158,11 @@ exports[`Checkbox component should render correctly with all the props given 1`]
 }
 
 .c3 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   position: relative;
   width: calc(28px * 2);
   height: 28px;
@@ -228,7 +238,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
       Female
     </label>
     <div
-      class="c3"
+      class="sc-AykKE c3"
       disabled=""
     >
       <input

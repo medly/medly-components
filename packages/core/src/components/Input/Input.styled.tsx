@@ -1,13 +1,21 @@
-import { centerAligned, fullWidth, styled } from '@medly-components/utils';
+import { fullWidth, styled } from '@medly-components/utils';
+import FieldWithLabel from '../FieldWithLabel';
 import { Props } from './types';
 
-export const Wrapper = styled('div').attrs(({ theme: { input, text, font } }) => ({ input, text, font }))`
+export const Wrapper = styled(FieldWithLabel.Field).attrs(({ theme: { input, text, font } }) => ({ input, text, font }))<{
+    fullWidth: boolean;
+}>`
     display: flex;
+    &&& {
+        flex-direction: row;
+    }
     background-clip: padding-box;
     box-sizing: border-box;
     border: 1px solid ${props => props.input.borderColor};
     border-radius: 5px;
     overflow: hidden;
+    width: ${props => (props.fullWidth ? '100%' : 'max-content')};
+    height: max-content;
 
     &:focus-within {
         border-color: ${props => props.input.focusedBorderColor};
@@ -25,6 +33,7 @@ export const Input = styled('input').attrs(({ theme: { input, text, font } }) =>
     flex: 1;
     outline: 0;
     border: 0;
+    ${fullWidth('16px')};
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'inherit')};
     background-color: ${({ disabled, input }) => (disabled ? input.disabledBgcolor : input.bgColor)};
 
@@ -35,8 +44,6 @@ export const Input = styled('input').attrs(({ theme: { input, text, font } }) =>
     &::-webkit-file-upload-button {
         visibility: hidden;
     }
-
-    ${props => props.fullWidth && fullWidth()};
 `;
 
 export const Prefix = styled('span')`

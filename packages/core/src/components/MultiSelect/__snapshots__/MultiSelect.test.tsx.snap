@@ -10,12 +10,12 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   fill: #616161;
 }
 
-.c15 {
+.c14 {
   font-size: 16px;
   cursor: pointer;
 }
 
-.c15 * {
+.c14 * {
   fill: #616161;
 }
 
@@ -25,7 +25,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   color: inherit;
 }
 
-.c17 {
+.c16 {
   font-size: 14px;
   font-weight: 400;
   color: grey;
@@ -96,7 +96,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   user-select: none;
 }
 
-.c18 {
+.c17 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: grey;
@@ -147,6 +147,11 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c12 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -156,6 +161,18 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   border: 1px solid #E0E0E0;
   border-radius: 5px;
   overflow: hidden;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.c12.c12.c12 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .c12:focus-within {
@@ -169,33 +186,34 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   color: #616161;
 }
 
-.c14 {
+.c13 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   outline: 0;
   border: 0;
+  width: calc(100% - 16px);
   cursor: not-allowed;
   background-color: #E0E0E0;
 }
 
-.c14::-webkit-input-placeholder {
+.c13::-webkit-input-placeholder {
   color: #9E9E9E;
 }
 
-.c14::-moz-placeholder {
+.c13::-moz-placeholder {
   color: #9E9E9E;
 }
 
-.c14:-ms-input-placeholder {
+.c13:-ms-input-placeholder {
   color: #9E9E9E;
 }
 
-.c14::placeholder {
+.c13::placeholder {
   color: #9E9E9E;
 }
 
-.c14::-webkit-file-upload-button {
+.c13::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -244,6 +262,10 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   width: calc(100% - 0px);
 }
 
+.c5 * {
+  cursor: not-allowed;
+}
+
 .c5 .c0 {
   margin: 0px;
   -webkit-flex: 1;
@@ -251,17 +273,17 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   flex: 1;
 }
 
-.c5 .c0 .c13 {
+.c5 .c0 > * {
   margin: 0px;
   border: none;
   background-color: transparent;
 }
 
-.c5 * {
-  cursor: not-allowed;
+.c5:focus-within {
+  border-color: #012040;
 }
 
-.c16 {
+.c15 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -317,11 +339,11 @@ exports[`MultiSelect component with checkbox false should render correctly with 
         >
           
           <div
-            class="c12"
+            class="sc-AykKI c12"
           >
             <input
               autocomplete="off"
-              class="c13 c14"
+              class="c13"
               disabled=""
               id="medly-multiSelect-input"
               placeholder="1 options selected"
@@ -332,7 +354,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
           
         </div>
         <svg
-          class="c9 c15 c16"
+          class="c9 c14 c15"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"
@@ -346,7 +368,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
       </div>
     </div>
     <span
-      class="c7 c17 c18"
+      class="c7 c16 c17"
     >
       We will show reports based on Pharmacy
     </span>
@@ -355,12 +377,12 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 `;
 
 exports[`MultiSelect component with checkbox false should render correctly with default props 1`] = `
-.c8 {
+.c7 {
   font-size: 16px;
   cursor: pointer;
 }
 
-.c8 * {
+.c7 * {
   fill: #616161;
 }
 
@@ -410,6 +432,11 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c5 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -419,6 +446,18 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   border: 1px solid #E0E0E0;
   border-radius: 5px;
   overflow: hidden;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.c5.c5.c5 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .c5:focus-within {
@@ -432,33 +471,34 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   color: #616161;
 }
 
-.c7 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   outline: 0;
   border: 0;
+  width: calc(100% - 16px);
   cursor: inherit;
   background-color: #ffffff;
 }
 
-.c7::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #9E9E9E;
 }
 
-.c7::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #9E9E9E;
 }
 
-.c7:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #9E9E9E;
 }
 
-.c7::placeholder {
+.c6::placeholder {
   color: #9E9E9E;
 }
 
-.c7::-webkit-file-upload-button {
+.c6::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -506,6 +546,10 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   align-items: center;
 }
 
+.c3 * {
+  cursor: pointer;
+}
+
 .c3 .c0 {
   margin: 0px;
   -webkit-flex: 1;
@@ -513,17 +557,17 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   flex: 1;
 }
 
-.c3 .c0 .c6 {
+.c3 .c0 > * {
   margin: 0px;
   border: none;
   background-color: transparent;
 }
 
-.c3 * {
-  cursor: pointer;
+.c3:focus-within {
+  border-color: #012040;
 }
 
-.c9 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -552,11 +596,11 @@ exports[`MultiSelect component with checkbox false should render correctly with 
         >
           
           <div
-            class="c5"
+            class="sc-AykKI c5"
           >
             <input
               autocomplete="off"
-              class="c6 c7"
+              class="c6"
               id="medly-multiSelect-input"
               placeholder="Please Select . . ."
               type="text"
@@ -566,7 +610,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
           
         </div>
         <svg
-          class="c8 c9"
+          class="c7 c8"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"
@@ -594,12 +638,12 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   fill: #616161;
 }
 
-.c15 {
+.c14 {
   font-size: 16px;
   cursor: pointer;
 }
 
-.c15 * {
+.c14 * {
   fill: #616161;
 }
 
@@ -609,7 +653,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   color: inherit;
 }
 
-.c17 {
+.c16 {
   font-size: 14px;
   font-weight: 400;
   color: grey;
@@ -680,7 +724,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   user-select: none;
 }
 
-.c18 {
+.c17 {
   grid-area: description;
   margin: 5px 0px 0px 2px;
   color: grey;
@@ -731,6 +775,11 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c12 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -740,6 +789,18 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   border: 1px solid #E0E0E0;
   border-radius: 5px;
   overflow: hidden;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.c12.c12.c12 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .c12:focus-within {
@@ -753,33 +814,34 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   color: #616161;
 }
 
-.c14 {
+.c13 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   outline: 0;
   border: 0;
+  width: calc(100% - 16px);
   cursor: not-allowed;
   background-color: #E0E0E0;
 }
 
-.c14::-webkit-input-placeholder {
+.c13::-webkit-input-placeholder {
   color: #9E9E9E;
 }
 
-.c14::-moz-placeholder {
+.c13::-moz-placeholder {
   color: #9E9E9E;
 }
 
-.c14:-ms-input-placeholder {
+.c13:-ms-input-placeholder {
   color: #9E9E9E;
 }
 
-.c14::placeholder {
+.c13::placeholder {
   color: #9E9E9E;
 }
 
-.c14::-webkit-file-upload-button {
+.c13::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -828,6 +890,10 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   width: calc(100% - 0px);
 }
 
+.c5 * {
+  cursor: not-allowed;
+}
+
 .c5 .c0 {
   margin: 0px;
   -webkit-flex: 1;
@@ -835,17 +901,17 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   flex: 1;
 }
 
-.c5 .c0 .c13 {
+.c5 .c0 > * {
   margin: 0px;
   border: none;
   background-color: transparent;
 }
 
-.c5 * {
-  cursor: not-allowed;
+.c5:focus-within {
+  border-color: #012040;
 }
 
-.c16 {
+.c15 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -901,11 +967,11 @@ exports[`MultiSelect component with checkbox true should render correctly with a
         >
           
           <div
-            class="c12"
+            class="sc-AykKI c12"
           >
             <input
               autocomplete="off"
-              class="c13 c14"
+              class="c13"
               disabled=""
               id="medly-multiSelect-input"
               placeholder="1 options selected"
@@ -916,7 +982,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
           
         </div>
         <svg
-          class="c9 c15 c16"
+          class="c9 c14 c15"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"
@@ -930,7 +996,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
       </div>
     </div>
     <span
-      class="c7 c17 c18"
+      class="c7 c16 c17"
     >
       We will show reports based on Pharmacy
     </span>
@@ -939,12 +1005,12 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 `;
 
 exports[`MultiSelect component with checkbox true should render correctly with default props 1`] = `
-.c8 {
+.c7 {
   font-size: 16px;
   cursor: pointer;
 }
 
-.c8 * {
+.c7 * {
   fill: #616161;
 }
 
@@ -994,6 +1060,11 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c5 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1003,6 +1074,18 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   border: 1px solid #E0E0E0;
   border-radius: 5px;
   overflow: hidden;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.c5.c5.c5 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .c5:focus-within {
@@ -1016,33 +1099,34 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   color: #616161;
 }
 
-.c7 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   outline: 0;
   border: 0;
+  width: calc(100% - 16px);
   cursor: inherit;
   background-color: #ffffff;
 }
 
-.c7::-webkit-input-placeholder {
+.c6::-webkit-input-placeholder {
   color: #9E9E9E;
 }
 
-.c7::-moz-placeholder {
+.c6::-moz-placeholder {
   color: #9E9E9E;
 }
 
-.c7:-ms-input-placeholder {
+.c6:-ms-input-placeholder {
   color: #9E9E9E;
 }
 
-.c7::placeholder {
+.c6::placeholder {
   color: #9E9E9E;
 }
 
-.c7::-webkit-file-upload-button {
+.c6::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -1090,6 +1174,10 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   align-items: center;
 }
 
+.c3 * {
+  cursor: pointer;
+}
+
 .c3 .c0 {
   margin: 0px;
   -webkit-flex: 1;
@@ -1097,17 +1185,17 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   flex: 1;
 }
 
-.c3 .c0 .c6 {
+.c3 .c0 > * {
   margin: 0px;
   border: none;
   background-color: transparent;
 }
 
-.c3 * {
-  cursor: pointer;
+.c3:focus-within {
+  border-color: #012040;
 }
 
-.c9 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1136,11 +1224,11 @@ exports[`MultiSelect component with checkbox true should render correctly with d
         >
           
           <div
-            class="c5"
+            class="sc-AykKI c5"
           >
             <input
               autocomplete="off"
-              class="c6 c7"
+              class="c6"
               id="medly-multiSelect-input"
               placeholder="Please Select . . ."
               type="text"
@@ -1150,7 +1238,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
           
         </div>
         <svg
-          class="c8 c9"
+          class="c7 c8"
           height="1em"
           theme="[object Object]"
           viewBox="0 0 12 8"

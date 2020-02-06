@@ -15,7 +15,7 @@ export const Input: SFC<Props> & WithStyle = React.memo(
                         {label}
                     </FieldWithLabel.Label>
                 )}
-                <Styled.Wrapper>
+                <Styled.Wrapper fullWidth={fullWidth}>
                     {prefix && <Styled.Prefix>{prefix}</Styled.Prefix>}
                     <Styled.Input id={id} ref={ref} required={required} fullWidth={fullWidth} {...restProps} />
                     {suffix && <Styled.Suffix>{suffix}</Styled.Suffix>}

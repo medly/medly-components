@@ -54,6 +54,11 @@ exports[`Input component should render correctly when fullWidth & required props
 }
 
 .c3 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -63,6 +68,18 @@ exports[`Input component should render correctly when fullWidth & required props
   border: 1px solid #E0E0E0;
   border-radius: 5px;
   overflow: hidden;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.c3.c3.c3 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .c3:focus-within {
@@ -82,6 +99,7 @@ exports[`Input component should render correctly when fullWidth & required props
   flex: 1;
   outline: 0;
   border: 0;
+  width: calc(100% - 16px);
   cursor: inherit;
   background-color: #ffffff;
 }
@@ -118,7 +136,7 @@ exports[`Input component should render correctly when fullWidth & required props
       Email Address
     </label>
     <div
-      class="c3"
+      class="sc-AykKE c3"
     >
       <input
         class="c4"
@@ -160,6 +178,11 @@ exports[`Input component should render correctly when it is disabled 1`] = `
 }
 
 .c1 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -169,6 +192,18 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   border: 1px solid #E0E0E0;
   border-radius: 5px;
   overflow: hidden;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.c1.c1.c1 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .c1:focus-within {
@@ -188,6 +223,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   flex: 1;
   outline: 0;
   border: 0;
+  width: calc(100% - 16px);
   cursor: not-allowed;
   background-color: #E0E0E0;
 }
@@ -219,7 +255,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   >
     
     <div
-      class="c1"
+      class="sc-AykKE c1"
     >
       <input
         class="c2"
@@ -258,6 +294,11 @@ exports[`Input component should render correctly when label and description are 
 }
 
 .c1 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -267,6 +308,18 @@ exports[`Input component should render correctly when label and description are 
   border: 1px solid #E0E0E0;
   border-radius: 5px;
   overflow: hidden;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.c1.c1.c1 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .c1:focus-within {
@@ -286,6 +339,7 @@ exports[`Input component should render correctly when label and description are 
   flex: 1;
   outline: 0;
   border: 0;
+  width: calc(100% - 16px);
   cursor: inherit;
   background-color: #ffffff;
 }
@@ -317,7 +371,7 @@ exports[`Input component should render correctly when label and description are 
   >
     
     <div
-      class="c1"
+      class="sc-AykKE c1"
     >
       <input
         class="c2"
@@ -389,6 +443,11 @@ exports[`Input component should render correctly with all the props given 1`] = 
 }
 
 .c3 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -398,6 +457,16 @@ exports[`Input component should render correctly with all the props given 1`] = 
   border: 1px solid #E0E0E0;
   border-radius: 5px;
   overflow: hidden;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.c3.c3.c3 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .c3:focus-within {
@@ -417,9 +486,9 @@ exports[`Input component should render correctly with all the props given 1`] = 
   flex: 1;
   outline: 0;
   border: 0;
+  width: calc(100% - 16px);
   cursor: inherit;
   background-color: #ffffff;
-  width: calc(100% - 0px);
 }
 
 .c5::-webkit-input-placeholder {
@@ -463,7 +532,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
       Email Address
     </label>
     <div
-      class="c3"
+      class="sc-AykKE c3"
     >
       <span
         class="c4"

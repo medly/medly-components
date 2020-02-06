@@ -1,6 +1,7 @@
 export interface SelectTheme {
     bgColor: string;
-    disabledBgcolor: string;
+    disabledBgColor: string;
+    outlineColor: string;
     borderColor: string;
     descriptionColor: string;
     placeHolderColor: string;
