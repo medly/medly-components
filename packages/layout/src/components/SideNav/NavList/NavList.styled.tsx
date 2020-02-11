@@ -4,7 +4,8 @@ import { NavListProps } from './types';
 
 export const NavList = styled('ul')<NavListProps>`
     flex: 1;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: 0px;
     margin: 0px;
     list-style-type: none;

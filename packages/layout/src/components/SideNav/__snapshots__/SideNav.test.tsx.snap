@@ -85,7 +85,8 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
@@ -552,7 +553,8 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
@@ -1030,7 +1032,8 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
@@ -1335,7 +1338,8 @@ exports[`SideNav should render properly 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 0px;
   margin: 0px;
   list-style-type: none;

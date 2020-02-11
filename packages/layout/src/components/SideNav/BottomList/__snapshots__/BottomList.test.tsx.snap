@@ -89,7 +89,8 @@ exports[`BottomList should render properly 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
