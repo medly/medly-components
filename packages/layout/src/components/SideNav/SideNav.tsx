@@ -38,7 +38,7 @@ export const SideNav: SFC<SideNavProps> & WithStyle & SideNavStaticProps = props
 
     return (
         <Styled.SideNav open={open} ref={ref} position="left" id={id}>
-            <OnChangeContext.Provider value={[activeItem, handleOnActiveChange]}>
+            <OnChangeContext.Provider value={[active || activeItem, handleOnActiveChange]}>
                 <TopNavItem {...{ logo, open, burgerIconClickHandler }} />
                 {React.Children.map(children, child => {
                     return React.cloneElement(child as any, { sidenavOpenHandler });

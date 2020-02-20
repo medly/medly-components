@@ -1009,19 +1009,19 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   cursor: pointer;
 }
 
-.c15 .c5:nth-child(1) {
+.c16 .c5:nth-child(1) {
   top: calc(16px * 0.4);
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
 
-.c15 .c5:nth-child(2) {
+.c16 .c5:nth-child(2) {
   opacity: 0;
   left: -60px;
 }
 
-.c15 .c5:nth-child(3) {
+.c16 .c5:nth-child(3) {
   top: calc(16px * 0.4);
   -webkit-transform: rotate(-135deg);
   -ms-transform: rotate(-135deg);
@@ -1068,7 +1068,73 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   color: inherit;
 }
 
+.c17 > .c12 {
+  grid-area: header;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.c18 > .c12 {
+  grid-area: header;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
 .c9 {
+  width: 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  background-color: #616161;
+  display: grid;
+  grid-template-areas: 'icon header dropdownIcon' 'submenu submenu submenu';
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: 48px min-content;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  border-bottom: 1px solid #424242;
+}
+
+.c9 > .sc-fzXfRb {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c9 > ul {
+  max-height: 90vh;
+  -webkit-transition: max-height 1s ease-out;
+  transition: max-height 1s ease-out;
+}
+
+.c9 ul,
+.c9 li {
+  border-color: #424242;
+}
+
+.c9 > .c12 {
+  grid-area: header;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.c14 {
   width: 100%;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -1092,23 +1158,11 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: pointer;
+  cursor: default;
   border-bottom: 1px solid #F56A41;
 }
 
-.c9 > .sc-fzXfRb {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.c9 > ul {
-  max-height: 90vh;
-  -webkit-transition: max-height 1s ease-out;
-  transition: max-height 1s ease-out;
-}
-
-.c9 > .c12 {
+.c14 > .c12 {
   grid-area: header;
   font-size: 16px;
   color: #ffffff;
@@ -1204,8 +1258,8 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   transition: max-height 0.2s ease-out;
 }
 
-.c14 .c12,
-.c14 .c7 {
+.c15 .c12,
+.c15 .c7 {
   opacity: 1;
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
@@ -1266,6 +1320,15 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
         class="c12 c13"
       >
         Home
+      </span>
+    </li>
+    <li
+      class="c14"
+    >
+      <span
+        class="c12 c13"
+      >
+        Edit
       </span>
     </li>
   </ul>

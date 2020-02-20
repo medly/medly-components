@@ -70,17 +70,20 @@ describe('SideNav', () => {
     });
 
     it('should close sidenav if we click outside', () => {
-        const mockOnClick = jest.fn(),
+        const mockOnChange = jest.fn(),
             { container, getByText } = render(
                 <div>
                     <p>Outer Element</p>
-                    <SideNav closeOnOuterClick>
+                    <SideNav active="/home" onChange={mockOnChange} closeOnOuterClick>
                         <SideNav.NavList>
-                            <SideNav.NavItem onClick={mockOnClick}>
+                            <SideNav.NavItem path="/home">
                                 <SideNav.NavIcon>
                                     <HomeIcon />
                                 </SideNav.NavIcon>
                                 <SideNav.NavText>Home</SideNav.NavText>
+                            </SideNav.NavItem>
+                            <SideNav.NavItem>
+                                <SideNav.NavText>Edit</SideNav.NavText>
                             </SideNav.NavItem>
                         </SideNav.NavList>
                     </SideNav>
@@ -88,7 +91,7 @@ describe('SideNav', () => {
             );
         fireEvent.click(container.querySelector('button'));
         fireEvent.click(getByText('Home'));
-        expect(mockOnClick).toBeCalled();
+        expect(mockOnChange).toBeCalled();
 
         fireEvent.click(getByText('Outer Element'));
         expect(container.querySelector('#medly-sidenav')).toMatchSnapshot();
