@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.19](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.18...@medly-components/layout@1.0.0-beta.19) (2020-02-20)
+
+
+### Bug Fixes
+
+* **core:** fix active tab issue in sidenav ([f65286e](https://github.com/medlypharmacy/medly-components/commit/f65286eddd4b5e639f4dce9f1df94b56b2665d4a))
+* **layout:** fix overflow issue in sidenav ([412c4b0](https://github.com/medlypharmacy/medly-components/commit/412c4b093c136eb4d9b054d6ef474155b6cb6d91))
+
+
+
+
+
 # [1.0.0-beta.18](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.17...@medly-components/layout@1.0.0-beta.18) (2020-02-06)
 
 **Note:** Version bump only for package @medly-components/layout

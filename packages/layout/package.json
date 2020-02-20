@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/layout",
-    "version": "1.0.0-beta.18",
+    "version": "1.0.0-beta.19",
     "side-effects": false,
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
