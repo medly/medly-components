@@ -5,7 +5,20 @@ import { DateRangePickerStyled } from './DateRangePicker.styled';
 import { Props } from './types';
 
 export const DateRangePicker: SFC<Props> = React.memo(props => {
-    const { label, labelPosition, fullWidth, value, onChange, required, disabled, minWidth, placement, ...restProps } = props;
+    const {
+        label,
+        labelPosition,
+        fullWidth,
+        value,
+        onChange,
+        required,
+        disabled,
+        minWidth,
+        placement,
+        minDate,
+        maxDate,
+        ...restProps
+    } = props;
 
     const [showDatepicker, setShowDatepicker] = useState(null),
         dates = useMemo(() => ({ startDate: value.startDate || null, endDate: value.endDate || null }), [value.startDate, value.endDate]);
@@ -39,6 +52,8 @@ export const DateRangePicker: SFC<Props> = React.memo(props => {
                     focusedInput={showDatepicker}
                     showStartDateCalendarIcon={false}
                     showEndDateCalendarIcon={false}
+                    minBookingDate={minDate}
+                    maxBookingDate={maxDate}
                 />
             </DateRangePickerStyled>
         </FieldWithLabel>

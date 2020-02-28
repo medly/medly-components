@@ -37,6 +37,10 @@ export interface Props extends PickerProps {
     placement?: Placement;
     /** Selected date range */
     value: { startDate: Date | null; endDate: Date | null };
+    /** Staring date of the calendar */
+    minDate?: Date;
+    /** Ending date of the calendar */
+    maxDate?: Date;
     /** Function to be called on change of the dates */
     onChange: (value: { startDate: Date | null; endDate: Date | null }) => void;
 }
