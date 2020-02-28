@@ -10,13 +10,17 @@ import { Props } from './types';
 
 export const Calendar: React.SFC<Props> = React.memo(({ date, onChange, minYear, maxYear, ...restProps }) => {
     const today = new Date(),
-        [{ month, year }, setMonthAndYear] = useState(getMonthAndDateFromDate(date || today));
+        [{ month, year }, setMonthAndYear] = useState(getMonthAndDateFromDate(date || today)),
+        DECEMBER_MONTH = 11,
+        JANUARY_MONTH = 0;
 
     const handleDateChange = useCallback((newDate: Date) => () => onChange(newDate), [onChange]),
         handleNextBtnClick = useCallback(() => setMonthAndYear(getNextMonthAndYear(month, year)), [month, year]),
         handlePreviousBtnClick = useCallback(() => setMonthAndYear(getPreviousMonthAndYear(month, year)), [month, year]),
         handleMonthChange = useCallback((value: number) => setMonthAndYear(prev => ({ year: prev.year, month: value })), []),
-        handleYearChange = useCallback((value: number) => setMonthAndYear(prev => ({ month: prev.month, year: value })), []);
+        handleYearChange = useCallback((value: number) => setMonthAndYear(prev => ({ month: prev.month, year: value })), []),
+        isPreviousBtnDisabled = useCallback(() => year === minYear && month === JANUARY_MONTH, [year, month]),
+        isNextBtnDisabled = useCallback(() => year === maxYear && month === DECEMBER_MONTH, [year, month]);
 
     const weekDays = useMemo(() => WEEK_DAYS.map(label => <Text key={label}>{label}</Text>), []),
         monthOptions = useMemo(() => CALENDAR_MONTHS.map((label, index) => ({ label, value: index })), []),
@@ -36,9 +40,9 @@ export const Calendar: React.SFC<Props> = React.memo(({ date, onChange, minYear,
     return (
         <Card variant="outlined" {...restProps}>
             <Styled.Header>
-                <Button variant="flat" onClick={handlePreviousBtnClick}>{`<`}</Button>
+                <Button variant="flat" disabled={isPreviousBtnDisabled()} onClick={handlePreviousBtnClick}>{`<`}</Button>
                 <Text textSize="L1">{`${CALENDAR_MONTHS[month]} ${year}`}</Text>
-                <Button variant="flat" onClick={handleNextBtnClick}>{`>`}</Button>
+                <Button variant="flat" disabled={isNextBtnDisabled()} onClick={handleNextBtnClick}>{`>`}</Button>
             </Styled.Header>
             <Styled.MonthAndYearSelection>
                 <SingleSelect id={`${restProps.id}-month-selector`} value={month} options={monthOptions} onChange={handleMonthChange} />

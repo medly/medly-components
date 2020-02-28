@@ -37,6 +37,10 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     fullWidth?: boolean;
     /** Min width of the component */
     minWidth?: number;
+    /** Start year range of the calendar */
+    minYear?: number;
+    /** End year range of the calendar */
+    maxYear?: number;
     /** Popover placement */
     popoverPlacement?: Placement;
 }

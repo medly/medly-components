@@ -15,7 +15,14 @@ describe('DatePicker component', () => {
 
     it('should render properly when value is of date type', () => {
         const { container } = render(
-                <DatePicker disabled label="Start Date" value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
+                <DatePicker
+                    disabled
+                    label="Start Date"
+                    value={new Date(2020, 0, 1)}
+                    displayFormat="MM/dd/yyyy"
+                    onChange={jest.fn()}
+                    minYear={2019}
+                />
             ),
             inputEl = container.querySelector('#medly-datepicker-input') as HTMLInputElement;
         expect(inputEl.value).toEqual('01/01/2020');
@@ -24,7 +31,15 @@ describe('DatePicker component', () => {
 
     it('should render properly when value is of string type', () => {
         const { container } = render(
-                <DatePicker disabled label="Start Date" value="01/01/2020" displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
+                <DatePicker
+                    disabled
+                    label="Start Date"
+                    value="01/01/2020"
+                    displayFormat="MM/dd/yyyy"
+                    onChange={jest.fn()}
+                    minYear={2010}
+                    maxYear={2030}
+                />
             ),
             inputEl = container.querySelector('#medly-datepicker-input') as HTMLInputElement;
         expect(inputEl.value).toEqual('01/01/2020');

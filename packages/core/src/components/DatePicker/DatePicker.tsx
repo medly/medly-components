@@ -8,7 +8,20 @@ import * as Styled from './DatePicker.styled';
 import { Props } from './types';
 
 export const DatePicker: React.SFC<Props> & WithStyle = React.memo(props => {
-    const { value, onChange, displayFormat, label, labelPosition, fullWidth, minWidth, required, popoverPlacement, ...restProps } = props,
+    const {
+            value,
+            onChange,
+            displayFormat,
+            label,
+            labelPosition,
+            fullWidth,
+            minWidth,
+            required,
+            popoverPlacement,
+            minYear,
+            maxYear,
+            ...restProps
+        } = props,
         id = props.id || 'medly-datepicker',
         date: Date | null = useMemo(
             () => (value instanceof Date ? value : typeof value === 'string' ? parseToDate(value, displayFormat) : null),
@@ -48,7 +61,7 @@ export const DatePicker: React.SFC<Props> & WithStyle = React.memo(props => {
                     onChange={handleInputOnChange}
                 />
                 <Popover id={`${id}-popover`}>
-                    <Calendar id={`${id}-calendar`} date={date} onChange={onChange} />
+                    <Calendar id={`${id}-calendar`} date={date} onChange={onChange} minYear={minYear} maxYear={maxYear} />
                 </Popover>
             </PopoverWrapper>
         </FieldWithLabel>

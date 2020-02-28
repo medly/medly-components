@@ -78,4 +78,20 @@ describe('Calendar Component', () => {
 
         expect(queryByText('29')).toBeNull();
     });
+
+    it('should disable next button when year is greater than the maxDate or month is ', () => {
+        const date = new Date(2020, 11, 31),
+            { queryByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} maxYear={2020} />);
+
+        expect(queryByText('>')).toBeDisabled();
+        expect(queryByText('<')).not.toBeDisabled();
+    });
+
+    it('should disable previous button when date is less than the minDate', () => {
+        const date = new Date(2020, 0, 1),
+            { queryByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} minYear={2020} />);
+
+        expect(queryByText('<')).toBeDisabled();
+        expect(queryByText('>')).not.toBeDisabled();
+    });
 });
