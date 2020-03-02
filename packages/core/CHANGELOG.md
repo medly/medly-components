@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.19](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.18...@medly-components/core@1.0.0-beta.19) (2020-03-02)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
 # [1.0.0-beta.18](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.17...@medly-components/core@1.0.0-beta.18) (2020-02-06)
 
 
