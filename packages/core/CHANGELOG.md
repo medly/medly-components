@@ -5,11 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.0.0-beta.20](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.19...@medly-components/core@1.0.0-beta.20) (2020-03-04)
 
-**Note:** Version bump only for package @medly-components/core
+### Bug Fixes
 
-
-
-
+-   **core:** Fixed calendar year list when minYear and maxYear are same ([09e616](https://github.com/medlypharmacy/medly-components/commit/09e6162adffdb8a0e07ab8a4dc9a542341c0205a)).
 
 # [1.0.0-beta.19](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.18...@medly-components/core@1.0.0-beta.19) (2020-03-02)
 
