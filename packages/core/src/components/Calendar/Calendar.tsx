@@ -26,7 +26,7 @@ export const Calendar: React.SFC<Props> = React.memo(({ date, onChange, minYear,
         monthOptions = useMemo(() => CALENDAR_MONTHS.map((label, index) => ({ label, value: index })), []),
         yearOptions = useMemo(
             () =>
-                [...Array(maxYear - minYear)].map((_, i) => {
+                [...Array(maxYear - minYear + 1)].map((_, i) => {
                     const value = i + minYear;
                     return { value, label: `${value}` };
                 }),
