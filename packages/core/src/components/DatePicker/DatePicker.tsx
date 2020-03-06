@@ -18,8 +18,8 @@ export const DatePicker: React.SFC<Props> & WithStyle = React.memo(props => {
             minWidth,
             required,
             popoverPlacement,
-            minYear,
-            maxYear,
+            minSelectableDate,
+            maxSelectableDate,
             ...restProps
         } = props,
         id = props.id || 'medly-datepicker',
@@ -29,11 +29,11 @@ export const DatePicker: React.SFC<Props> & WithStyle = React.memo(props => {
         );
 
     const [isCalendarVisible, setCalendarVisibilityState] = useState(false),
-        [formatedDate, setFormatedDate] = useState('');
+        [formattedDate, setFormattedDate] = useState('');
 
     useEffect(() => {
         if (date) {
-            setFormatedDate(format(date, displayFormat));
+            setFormattedDate(format(date, displayFormat));
             setCalendarVisibilityState(false);
         }
     }, [date]);
@@ -57,11 +57,17 @@ export const DatePicker: React.SFC<Props> & WithStyle = React.memo(props => {
                     {...restProps}
                     required={required}
                     id={`${id}-input`}
-                    value={formatedDate}
+                    value={formattedDate}
                     onChange={handleInputOnChange}
                 />
                 <Popover id={`${id}-popover`}>
-                    <Calendar id={`${id}-calendar`} date={date} onChange={onChange} minYear={minYear} maxYear={maxYear} />
+                    <Calendar
+                        id={`${id}-calendar`}
+                        date={date}
+                        onChange={onChange}
+                        minSelectableDate={minSelectableDate ?? undefined}
+                        maxSelectableDate={maxSelectableDate ?? undefined}
+                    />
                 </Popover>
             </PopoverWrapper>
         </FieldWithLabel>

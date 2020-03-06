@@ -54,6 +54,11 @@ export const Date = styled('button').attrs({ type: 'button' })<DateProps>`
         outline: none;
     }
 
+    &:disabled {
+        cursor: not-allowed;
+        color: ${({ theme }) => theme.datePicker.nonActiveMonthDateColor};
+    }
+
     ${props => props.isSelected && activeDate()};
     ${props => !props.isInActiveMonth && nonActiveMonthDate()};
 

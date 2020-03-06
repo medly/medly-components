@@ -388,6 +388,11 @@ exports[`Calendar Component should render given date 1`] = `
   outline: none;
 }
 
+.c20:disabled {
+  cursor: not-allowed;
+  color: #BDBDBD;
+}
+
 .c22 {
   background-color: transparent;
   border: none;
@@ -415,6 +420,11 @@ exports[`Calendar Component should render given date 1`] = `
   outline: none;
 }
 
+.c22:disabled {
+  cursor: not-allowed;
+  color: #BDBDBD;
+}
+
 .c23 {
   background-color: transparent;
   border: none;
@@ -438,6 +448,11 @@ exports[`Calendar Component should render given date 1`] = `
 
 .c23:focus {
   outline: none;
+}
+
+.c23:disabled {
+  cursor: not-allowed;
+  color: #BDBDBD;
 }
 
 <div>
@@ -503,7 +518,7 @@ exports[`Calendar Component should render given date 1`] = `
                   autocomplete="off"
                   class="c14"
                   id="test-calendar-month-selector-input"
-                  placeholder="Please Select . . ."
+                  placeholder="Month"
                   type="text"
                   value="Jan"
                 />
@@ -550,7 +565,7 @@ exports[`Calendar Component should render given date 1`] = `
                   autocomplete="off"
                   class="c14"
                   id="test-calendar-year-selector-input"
-                  placeholder="Please Select . . ."
+                  placeholder="Year"
                   type="text"
                   value="2020"
                 />

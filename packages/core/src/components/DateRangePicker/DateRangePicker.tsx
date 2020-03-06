@@ -15,8 +15,8 @@ export const DateRangePicker: SFC<Props> = React.memo(props => {
         disabled,
         minWidth,
         placement,
-        minDate,
-        maxDate,
+        minSelectableDate,
+        maxSelectableDate,
         ...restProps
     } = props;
 
@@ -52,8 +52,8 @@ export const DateRangePicker: SFC<Props> = React.memo(props => {
                     focusedInput={showDatepicker}
                     showStartDateCalendarIcon={false}
                     showEndDateCalendarIcon={false}
-                    minBookingDate={minDate}
-                    maxBookingDate={maxDate}
+                    minBookingDate={minSelectableDate}
+                    maxBookingDate={maxSelectableDate}
                 />
             </DateRangePickerStyled>
         </FieldWithLabel>

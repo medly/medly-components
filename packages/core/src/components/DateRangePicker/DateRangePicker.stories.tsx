@@ -34,6 +34,8 @@ export const Basic = () => {
             label={text('Label', 'Period')}
             labelPosition={select('Label Position', labelPosition, 'left')}
             required={boolean('Required', false)}
+            minSelectableDate={new Date(2020, 1, 1)}
+            maxSelectableDate={new Date(2020, 2, 15)}
         />
     );
 };

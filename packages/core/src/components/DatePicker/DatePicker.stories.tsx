@@ -21,6 +21,8 @@ export const Basic = () => {
             labelPosition={select('Label Position', labelPosition, 'left')}
             popoverPlacement={select('Popover Placement', placement, 'bottom-start')}
             required={boolean('Required', false)}
+            minSelectableDate={new Date(2020, 11, 1)}
+            maxSelectableDate={new Date(2021, 11, 30)}
         />
     );
 };

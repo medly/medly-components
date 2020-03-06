@@ -5,48 +5,80 @@ import SingleSelect from '../SingleSelect';
 import Text from '../Text';
 import * as Styled from './Calendar.styled';
 import { CALENDAR_MONTHS, WEEK_DAYS } from './constants';
-import { getCalendarDates, getMonthAndDateFromDate, getNextMonthAndYear, getPreviousMonthAndYear, isSameDay, isSameMonth } from './helper';
+import { getCalendarDates, getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear, isSameDay, isSameMonth } from './helper';
 import { Props } from './types';
 
-export const Calendar: React.SFC<Props> = React.memo(({ date, onChange, minYear, maxYear, ...restProps }) => {
+export const Calendar: React.SFC<Props> = React.memo(({ date, onChange, minSelectableDate, maxSelectableDate, ...restProps }) => {
     const today = new Date(),
-        [{ month, year }, setMonthAndYear] = useState(getMonthAndDateFromDate(date || today)),
-        DECEMBER_MONTH = 11,
-        JANUARY_MONTH = 0;
+        [{ month, year }, setMonthAndYear] = useState(getMonthAndYearFromDate(date || today)),
+        { month: minMonth, year: minYear } = getMonthAndYearFromDate(minSelectableDate),
+        { month: maxMonth, year: maxYear } = getMonthAndYearFromDate(maxSelectableDate);
 
     const handleDateChange = useCallback((newDate: Date) => () => onChange(newDate), [onChange]),
         handleNextBtnClick = useCallback(() => setMonthAndYear(getNextMonthAndYear(month, year)), [month, year]),
         handlePreviousBtnClick = useCallback(() => setMonthAndYear(getPreviousMonthAndYear(month, year)), [month, year]),
         handleMonthChange = useCallback((value: number) => setMonthAndYear(prev => ({ year: prev.year, month: value })), []),
         handleYearChange = useCallback((value: number) => setMonthAndYear(prev => ({ month: prev.month, year: value })), []),
-        isPreviousBtnDisabled = useCallback(() => year === minYear && month === JANUARY_MONTH, [year, month]),
-        isNextBtnDisabled = useCallback(() => year === maxYear && month === DECEMBER_MONTH, [year, month]);
+        isPrevBtnDisabled = useMemo(() => year === minYear && month === minMonth, [month, year, minMonth, minYear]),
+        isNextBtnDisabled = useMemo(() => year === maxYear && month === maxMonth, [month, year, maxMonth, maxYear]);
 
     const weekDays = useMemo(() => WEEK_DAYS.map(label => <Text key={label}>{label}</Text>), []),
-        monthOptions = useMemo(() => CALENDAR_MONTHS.map((label, index) => ({ label, value: index })), []),
+        monthOptions = useMemo(
+            () =>
+                CALENDAR_MONTHS.reduce((acc, curr, index) => {
+                    const isDisabled = new Date(year, index, 1) > maxSelectableDate || new Date(year, index + 1, 0) < minSelectableDate;
+                    return [...acc, { label: curr, value: index, disabled: isDisabled }];
+                }, []),
+            [minMonth, maxMonth, year]
+        ),
         yearOptions = useMemo(
             () =>
                 [...Array(maxYear - minYear + 1)].map((_, i) => {
                     const value = i + minYear;
                     return { value, label: `${value}` };
                 }),
-            []
+            [minYear, maxYear]
         );
 
     useEffect(() => {
-        setMonthAndYear(getMonthAndDateFromDate(date || today));
-    }, [date]);
+        const firstDayOfCurrentMonth = new Date(today.getFullYear(), today.getMonth(), 1),
+            lastDayOfCurrentMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+        setMonthAndYear(
+            getMonthAndYearFromDate(
+                date ||
+                    (firstDayOfCurrentMonth < maxSelectableDate && lastDayOfCurrentMonth > minSelectableDate ? today : minSelectableDate)
+            )
+        );
+    }, [date, minSelectableDate, maxSelectableDate]);
+
+    useEffect(() => {
+        // If selected month is not allowed in the newly selected year then change month to first option in the months option
+        const nonDisabledMonths = monthOptions.filter(option => !option.disabled).map(options => options.value);
+        !nonDisabledMonths.includes(month) && setMonthAndYear({ year, month: nonDisabledMonths[0] });
+    }, [year]);
 
     return (
         <Card variant="outlined" {...restProps}>
             <Styled.Header>
-                <Button variant="flat" disabled={isPreviousBtnDisabled()} onClick={handlePreviousBtnClick}>{`<`}</Button>
+                <Button variant="flat" disabled={isPrevBtnDisabled} onClick={handlePreviousBtnClick}>{`<`}</Button>
                 <Text textSize="L1">{`${CALENDAR_MONTHS[month]} ${year}`}</Text>
-                <Button variant="flat" disabled={isNextBtnDisabled()} onClick={handleNextBtnClick}>{`>`}</Button>
+                <Button variant="flat" disabled={isNextBtnDisabled} onClick={handleNextBtnClick}>{`>`}</Button>
             </Styled.Header>
             <Styled.MonthAndYearSelection>
-                <SingleSelect id={`${restProps.id}-month-selector`} value={month} options={monthOptions} onChange={handleMonthChange} />
-                <SingleSelect id={`${restProps.id}-year-selector`} value={year} options={yearOptions} onChange={handleYearChange} />
+                <SingleSelect
+                    id={`${restProps.id}-month-selector`}
+                    value={month}
+                    options={monthOptions}
+                    onChange={handleMonthChange}
+                    placeholder="Month"
+                />
+                <SingleSelect
+                    id={`${restProps.id}-year-selector`}
+                    value={year}
+                    options={yearOptions}
+                    onChange={handleYearChange}
+                    placeholder="Year"
+                />
             </Styled.MonthAndYearSelection>
 
             <Styled.CalendarGrid>
@@ -62,6 +94,7 @@ export const Calendar: React.SFC<Props> = React.memo(({ date, onChange, minYear,
                             title={_date.toDateString()}
                             isInActiveMonth={isInActiveMonth}
                             isSelected={isSelected}
+                            disabled={_date > maxSelectableDate || _date < minSelectableDate}
                             onClick={handleDateChange(_date)}
                         >
                             <Text textSize="M1">{_date.getDate()}</Text>
@@ -74,6 +107,6 @@ export const Calendar: React.SFC<Props> = React.memo(({ date, onChange, minYear,
 });
 Calendar.defaultProps = {
     date: null,
-    minYear: 1901,
-    maxYear: 2100
+    minSelectableDate: new Date(1901, 0, 1),
+    maxSelectableDate: new Date(2100, 11, 1)
 };

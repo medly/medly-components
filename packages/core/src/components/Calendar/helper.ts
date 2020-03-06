@@ -15,7 +15,7 @@ export const isSameDay = (date1: Date, date2: Date) => dateDiff(date1, date2) ==
 
 export const isSameMonth = (date1: Date, date2: Date) => isValidDate(date1) && isValidDate(date2) && date1.getMonth() === date2.getMonth();
 
-export const getMonthAndDateFromDate = (date: Date) => ({ month: date.getMonth(), year: date.getFullYear() });
+export const getMonthAndYearFromDate = (date: Date) => ({ month: date.getMonth(), year: date.getFullYear() });
 
 export const getPreviousMonthAndYear = (month: number, year: number) =>
     month === 0 ? { month: 11, year: year - 1 } : { year, month: month - 1 };
