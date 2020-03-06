@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.21](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.20...@medly-components/core@1.0.0-beta.21) (2020-03-06)
+
+
+### Bug Fixes
+
+* **core:** add minSelectanleDate and maxSelectableDate in DatePicker and DateRangePicker component ([0b5abf7](https://github.com/medlypharmacy/medly-components/commit/0b5abf7f83581b2ac509fb964f4296cd1528cfe7))
+
+
+
+
+
 # [1.0.0-beta.20](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.19...@medly-components/core@1.0.0-beta.20) (2020-03-04)
 
 ### Bug Fixes
