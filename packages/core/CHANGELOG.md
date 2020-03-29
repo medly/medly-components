@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.22](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.21...@medly-components/core@1.0.0-beta.22) (2020-03-29)
+
+
+### Bug Fixes
+
+* **core:** disable autocomplete in datepicker input ([a1dd643](https://github.com/medlypharmacy/medly-components/commit/a1dd6434e8d686b9661d00a675c58ed0d44a96b0))
+
+
+
+
+
 # [1.0.0-beta.21](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.20...@medly-components/core@1.0.0-beta.21) (2020-03-06)
 
 
