@@ -1,7 +1,7 @@
 {
     "name": "@medly-components/core",
     "version": "1.0.0-beta.21",
-    "side-effects": false,
+    "sideEffects": false,
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [

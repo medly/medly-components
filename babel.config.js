@@ -1,5 +1,14 @@
 module.exports = function(api) {
-    const presets = ['@babel/env', '@babel/react', '@babel/typescript'],
+    const presets = [
+            [
+                '@babel/env',
+                {
+                    modules: api.env('production') ? false : 'auto'
+                }
+            ],
+            '@babel/react',
+            '@babel/typescript'
+        ],
         plugins = [
             [
                 'babel-plugin-styled-components',
