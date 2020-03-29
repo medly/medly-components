@@ -58,6 +58,7 @@ export const DatePicker: React.SFC<Props> & WithStyle = React.memo(props => {
                     required={required}
                     id={`${id}-input`}
                     value={formattedDate}
+                    autoComplete="off"
                     onChange={handleInputOnChange}
                 />
                 <Popover id={`${id}-popover`}>

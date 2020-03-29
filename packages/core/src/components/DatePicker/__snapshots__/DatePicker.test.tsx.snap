@@ -180,6 +180,7 @@ exports[`DatePicker component should render properly when value is of date type 
           class="sc-AykKJ c5"
         >
           <input
+            autocomplete="off"
             class="c6 c7"
             disabled=""
             id="medly-datepicker-input"
@@ -375,6 +376,7 @@ exports[`DatePicker component should render properly when value is of string typ
           class="sc-AykKJ c5"
         >
           <input
+            autocomplete="off"
             class="c6 c7"
             disabled=""
             id="medly-datepicker-input"
