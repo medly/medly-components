@@ -6,7 +6,7 @@ import { CircleLoader } from './loaders/CircleLoader';
 import { ConcentricCircleLoader } from './loaders/ConcentricCircleLoader';
 import { DotsBouncingLoader } from './loaders/DotsBouncingLoader';
 import { DotsLoader } from './loaders/DotsLoader';
-import { Props, SVGProp } from './SvgLoader/types';
+import { SvgLoaderProps, SVGProp } from './SvgLoader/types';
 
 const size: LoaderSizes[] = ['XXS', 'XS', 'S', 'M', 'L', 'XL'];
 const defaultColor = defaultTheme.loader.defaultColor;
@@ -16,7 +16,7 @@ ThemeInterface.defaultProps = {
     ...defaultTheme.loader
 };
 
-export const Basic = (props: Omit<Props, keyof SVGProp>) => (
+export const Basic = (props: Omit<SvgLoaderProps, keyof SVGProp>) => (
     <LoaderContainer>
         <CircleLoader size={select('Size', size, 'S')} color={color('Color', defaultColor)} />
         <ConcentricCircleLoader size={select('Size', size, 'S')} color={color('Color', defaultColor)} />
