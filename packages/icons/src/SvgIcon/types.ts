@@ -3,7 +3,7 @@ import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 
 export type SVGProp = Omit<HTMLProps<HTMLOrSVGElement>, 'size'>;
 
-export interface Props extends SVGProp, WithThemeProp {
+export interface SvgIconProps extends SVGProp, WithThemeProp {
     /** Icon Size */
     size?: IconSizes;
     /** Icon color */
@@ -11,5 +11,3 @@ export interface Props extends SVGProp, WithThemeProp {
     /** Margin for the Icon */
     margin?: string;
 }
-
-export type SvgIconProps = Props;

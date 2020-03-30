@@ -42,7 +42,7 @@ import { UpArrowIcon } from './icons/UpArrowIcon';
 import { UploadIcon } from './icons/UploadIcon';
 import { VisibilityIcon } from './icons/VisibilityIcon';
 import { VisibilityOffIcon } from './icons/VisibilityOffIcon';
-import { Props, SVGProp } from './SvgIcon/types';
+import { SvgIconProps, SVGProp } from './SvgIcon/types';
 
 const size: IconSizes[] = ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'];
 const defaultColor = defaultTheme.icon.defaultColor;
@@ -52,7 +52,7 @@ ThemeInterface.defaultProps = {
     ...defaultTheme.icon
 };
 
-export const Basic = (props: Omit<Props, keyof SVGProp>) => (
+export const Basic = (props: Omit<SvgIconProps, keyof SVGProp>) => (
     <IconContainer>
         <AuditIcon key="audit" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <AddIcon key="add" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />

@@ -1,8 +1,8 @@
 import { defaultTheme } from '@medly-components/theme';
 import { InjectClassName, styled } from '@medly-components/utils';
-import { Props } from './types';
+import { SvgIconProps } from './types';
 
-export const SvgIconStyled = styled(InjectClassName)<Props>`
+export const SvgIconStyled = styled(InjectClassName)<SvgIconProps>`
     font-size: ${({ theme, size }) => theme.icon.sizes[size]};
     margin: ${({ margin }) => margin};
     cursor: ${({ onClick }) => (onClick ? 'pointer' : 'inherit')};
