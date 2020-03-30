@@ -1,3 +1,3 @@
-import ModalHeader from './ModalHeader';
+import { ModalHeader } from './ModalHeader';
 
 export default ModalHeader;

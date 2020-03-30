@@ -9,3 +9,5 @@ export interface Props extends SVGProp, WithThemeProp {
     /** Loader color */
     color?: string;
 }
+
+export type SvgLoaderProps = Props;

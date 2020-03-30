@@ -11,3 +11,5 @@ export interface Props extends SVGProp, WithThemeProp {
     /** Margin for the Icon */
     margin?: string;
 }
+
+export type SvgIconProps = Props;

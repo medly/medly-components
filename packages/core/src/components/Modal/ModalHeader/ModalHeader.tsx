@@ -31,5 +31,3 @@ ModalHeader.defaultProps = {
 };
 ModalHeader.displayName = 'ModalHeader';
 ModalHeader.Style = ModalHeaderStyled;
-
-export default ModalHeader;
