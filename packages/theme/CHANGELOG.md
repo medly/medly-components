@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.12](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.11...@medly-components/theme@1.0.0-beta.12) (2020-03-30)
+
+
+### Features
+
+* **all:** add rollup to create bundles ([08b5972](https://github.com/medlypharmacy/medly-components/commit/08b5972f4a221037d14449ffce508f8656d0f447))
+
+
+
+
+
 # [1.0.0-beta.11](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.10...@medly-components/theme@1.0.0-beta.11) (2020-03-29)
 
 **Note:** Version bump only for package @medly-components/theme
