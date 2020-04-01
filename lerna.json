@@ -1,7 +1,11 @@
 {
     "access": "public",
     "allowBranch": ["master", "feature/*"],
-    "conventionalCommits": true,
+    "command": {
+        "publish": {
+            "conventionalCommits": true
+        }
+    },
     "npmClient": "yarn",
     "packages": ["packages/*"],
     "useWorkspaces": true,

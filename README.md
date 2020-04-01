@@ -4,6 +4,7 @@
 [![react version](https://img.shields.io/badge/react-%5E16.8.6-blue)](https://www.npmjs.org/package/react)
 [![styled-components version](https://img.shields.io/badge/styled--components-%5E4.2.0-blue)](https://www.npmjs.com/package/styled-components)
 [![typescript version](https://img.shields.io/badge/types-TypeScript-blue?style=flat-square)](https://www.npmjs.com/package/typescript)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 Medly components provides numerous themable react components, each with multiple varitaions of sizes, colors, position etc. You can checkout the storybook of the components [here](https://medly.github.io/medly-components).
 
