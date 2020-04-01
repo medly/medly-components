@@ -47,12 +47,12 @@ import { SvgIconProps, SVGProp } from './SvgIcon/types';
 const size: IconSizes[] = ['XS', 'S', 'M', 'L', 'XL', 'XXL', 'XXXL'];
 const defaultColor = defaultTheme.icon.defaultColor;
 
-export const ThemeInterface = (props: IconTheme): any => null;
+export const ThemeInterface: React.SFC<IconTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.icon
 };
 
-export const Basic = (props: Omit<SvgIconProps, keyof SVGProp>) => (
+export const Basic: React.SFC<Omit<SvgIconProps, keyof SVGProp>> = () => (
     <IconContainer>
         <AuditIcon key="audit" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />
         <AddIcon key="add" size={select('Size', size, 'M')} color={color('Color', defaultColor)} />

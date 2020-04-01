@@ -3,13 +3,13 @@ import { boolean, select } from '@storybook/addon-knobs';
 import React from 'react';
 import Text from '../Text';
 import { Card } from './Card';
-import { FlowDirection, ItemsPosition, Props, Variants } from './types';
+import { FlowDirection, ItemsPosition, Variants } from './types';
 
 const variants: Variants[] = ['outlined', 'solid', 'flat'];
 const itemsPosition: ItemsPosition[] = ['top', 'bottom', 'left', 'right', 'center'];
 const flowDirection: FlowDirection[] = ['vertical', 'horizontal'];
 
-export const ThemeInterface = (props: CardTheme): any => null;
+export const ThemeInterface: React.SFC<CardTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.card
 };

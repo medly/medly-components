@@ -37,7 +37,7 @@ export const DateRangePickerStyled = styled('div').attrs(({ theme: { input, text
                     text-align: center;
                     max-width: 90px;
                     min-height: unset;
-                    padding: 0px;
+                    padding: 0;
                     font-size: ${({ font, text }) => font.sizes[text.defaults.textSize]};
                     font-weight: ${({ font, text }) => font.weights[text.defaults.textWeight]};
                     color: ${props => props.input.color};

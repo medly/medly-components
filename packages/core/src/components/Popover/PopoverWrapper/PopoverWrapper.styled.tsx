@@ -31,7 +31,7 @@ export const getPosition = (position: Placement) => {
             `;
         case 'right-end':
             return css`
-                bottom: 0px;
+                bottom: 0;
                 left: calc(100% + 5px);
             `;
         case 'bottom-start':

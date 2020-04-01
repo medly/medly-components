@@ -6,19 +6,19 @@ const leftPositioned = () => css`
     left: 0;
 `;
 
-const rigthPositioned = () => css`
+const rightPositioned = () => css`
     right: 0;
 `;
 
 export const SidePanelStyled = styled('div')<SidePanelStyledProps>`
     height: 100vh;
     background-color: ${({ theme }) => theme.sidePanel.bgColor};
-    width: 0px;
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     transition: 0.2s;
-    ${({ position }) => (position === 'left' ? leftPositioned() : rigthPositioned())}
+    ${({ position }) => (position === 'left' ? leftPositioned() : rightPositioned())}
 `;
 
 SidePanelStyled.defaultProps = {

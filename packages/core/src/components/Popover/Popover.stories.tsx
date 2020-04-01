@@ -1,6 +1,6 @@
 import { centerAligned, styled } from '@medly-components/utils';
 import { boolean, select } from '@storybook/addon-knobs';
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import Popover from './Popover';
 import PopoverWrapper from './PopoverWrapper';
 import { Placement } from './PopoverWrapper/types';
@@ -47,17 +47,15 @@ const DummyPopover = styled('div')`
 `;
 
 export const WithClickInteraction = () => {
-    const [isPopoverVisible, setPopoverVisibilityState] = useState(false);
-
-    const showPopover = () => setPopoverVisibilityState(true),
-        hidePopover = () => setPopoverVisibilityState(false);
+    const [isPopoverVisible, setPopoverVisibilityState] = useState(false),
+        changePopoverState = useCallback(() => setPopoverVisibilityState(val => !val), []);
 
     return (
         <DummyWrapper>
             <PopoverWrapper
                 showPopover={isPopoverVisible}
-                onClick={showPopover}
-                onOuterClick={hidePopover}
+                onClick={changePopoverState}
+                onOuterClick={changePopoverState}
                 placement={select('Placement', placement, 'bottom')}
             >
                 <DummyDiv>Hello</DummyDiv>
@@ -70,17 +68,15 @@ export const WithClickInteraction = () => {
 };
 
 export const WithHoverInteraction = () => {
-    const [isPopoverVisible, setPopoverVisibilityState] = useState(false);
-
-    const showPopover = () => setPopoverVisibilityState(true),
-        hidePopover = () => setPopoverVisibilityState(false);
+    const [isPopoverVisible, setPopoverVisibilityState] = useState(false),
+        changePopoverState = useCallback(() => setPopoverVisibilityState(val => !val), []);
 
     return (
         <DummyWrapper>
             <PopoverWrapper
                 showPopover={isPopoverVisible}
-                onMouseEnter={showPopover}
-                onMouseLeave={hidePopover}
+                onMouseEnter={changePopoverState}
+                onMouseLeave={changePopoverState}
                 placement={select('Placement', placement, 'bottom')}
             >
                 <DummyDiv>Hello</DummyDiv>

@@ -20,7 +20,7 @@ const closeState = () => css`
     }
 
     ${SubNavList.Style} {
-        max-height: 0px;
+        max-height: 0;
         transition: max-height 0.2s ease-out;
     }
 `;

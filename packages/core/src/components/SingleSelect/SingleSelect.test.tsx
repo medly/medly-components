@@ -118,7 +118,7 @@ describe('SingleSelect component', () => {
         describe('down arrow', () => {
             it('should change input', async () => {
                 const mockOnChange = jest.fn(),
-                    { container, getByText } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} />),
+                    { container } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} />),
                     inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
                 fireEvent.focus(inputEl);
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });

@@ -8,7 +8,6 @@ import { FieldStyledProps, FieldWithLabelStyledProps, StaticProps } from './type
 export const FieldStyled = styled('div')<FieldStyledProps>`
     grid-area: field;
     flex-wrap: wrap;
-
     margin-left: ${({ isIndented }) => (isIndented ? '17px' : '0px')};
 `;
 
@@ -21,14 +20,13 @@ LabelStyled.displayName = 'Label';
 
 export const DescriptionStyled = styled(Text)`
     grid-area: description;
-    margin: 5px 0px 0px 2px;
+    margin: 5px 0 0 2px;
     color: ${({ theme, textColor }) => (textColor ? textColor : theme.input.descriptionColor)};
 `;
 
-// @ts-ignore
 export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('div')<FieldWithLabelStyledProps>`
     margin: ${({ theme, fullWidth }) =>
-        fullWidth ? `${theme.spacing.S} 0px` : `${theme.spacing.S} ${theme.spacing.S} ${theme.spacing.S} 0px`};
+        fullWidth ? `${theme.spacing.S} 0` : `${theme.spacing.S} ${theme.spacing.S} ${theme.spacing.S} 0`};
     display: ${({ fullWidth }) => (fullWidth ? 'grid' : 'inline-grid')};
     ${({ minWidth }) =>
         minWidth &&

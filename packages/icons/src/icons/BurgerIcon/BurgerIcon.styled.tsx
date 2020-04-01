@@ -17,7 +17,7 @@ export const SpanStyled = styled('span')<SpanProps>`
     transition: 0.25s ease-in-out;
 
     &:nth-child(1) {
-        top: 0px;
+        top: 0;
     }
 
     &:nth-child(2) {

@@ -51,9 +51,9 @@ export const Cell = styled('div')<StyledProps>`
 
     ${Checkbox.Style} {
         display: flex;
-        margin: 0px;
+        margin: 0;
         ${SvgIcon} {
-            margin-right: 0px;
+            margin-right: 0;
         }
     }
 

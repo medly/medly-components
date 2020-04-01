@@ -4,7 +4,7 @@ import Button from '../../Button';
 import { Props } from './types';
 
 export const CloseButton = styled(Button)`
-    padding: 0px;
+    padding: 0;
     margin-right: -24px;
 `;
 

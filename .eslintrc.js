@@ -28,7 +28,7 @@ module.exports = {
     rules: {
         'arrow-parens': ['error', 'as-needed'],
         'react-hooks/rules-of-hooks': 'error',
-        'react-hooks/exhaustive-deps': 'warn',
+        'react-hooks/exhaustive-deps': 'off',
         'react/jsx-no-bind': 'warn',
         'react/prop-types': 'off',
         '@typescript-eslint/no-explicit-any': 'off',

@@ -48,8 +48,8 @@ const outlined = ({ borderColor, shadowColor }: Partial<CardTheme>) => css`
 `;
 
 const flat = () => css`
-    border-radius: 0px;
-    margin: 0px;
+    border-radius: 0;
+    margin: 0;
     border: none;
     box-shadow: none;
     background-color: transparent;

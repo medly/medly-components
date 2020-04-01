@@ -6,7 +6,7 @@ import { Props } from './types';
 
 const labelPosition: Props['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
 
-export const ThemeInterface = (props: InputTheme): any => null;
+export const ThemeInterface: React.SFC<InputTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.input
 };

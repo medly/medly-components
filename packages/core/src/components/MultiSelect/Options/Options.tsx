@@ -11,7 +11,7 @@ const Options: React.SFC<OptionsProps> & WithStyle = React.memo(props => {
     const selectedValues = useMemo(() => props.values.map(op => op.value), [props.values]);
 
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
-        handleTextClick = (value: any) => (event: React.MouseEvent) => {
+        handleTextClick = (value: any) => () => {
             const newValues = selectedValues.includes(value) ? selectedValues.filter(vl => vl !== value) : [...selectedValues, value];
             props.onOptionClick(newValues);
         },

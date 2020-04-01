@@ -1,12 +1,12 @@
-import { css, styled } from '@medly-components/utils';
+import { styled } from '@medly-components/utils';
 import Checkbox from '../../Checkbox';
 import FieldWithLabel from '../../FieldWithLabel';
 import { OptionsStyledProps, OptionStyledProps } from './types';
 
 export const Options = styled('ul')<OptionsStyledProps>`
     list-style: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     max-height: 200px;
     overflow: auto;
     border: 1px solid ${({ theme }) => theme.select.borderColor};
@@ -16,20 +16,20 @@ export const Options = styled('ul')<OptionsStyledProps>`
 
     ${Checkbox.Style} {
         width: calc(100% - 10px);
-        margin: 0px;
+        margin: 0;
         padding: 5px;
     }
 
     ${FieldWithLabel.Label} {
-        margin-bottom: 0px;
+        margin-bottom: 0;
         ${Checkbox.Style} {
-            padding: 0px 5px 5px 0px;
+            padding: 0 5px 5px 0;
         }
     }
 
     ${FieldWithLabel.Field} {
         ${Checkbox.Style} {
-            padding: 5px 5px 5px 0px;
+            padding: 5px 5px 5px 0;
         }
     }
 `;

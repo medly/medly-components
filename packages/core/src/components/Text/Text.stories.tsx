@@ -6,7 +6,7 @@ import { Text } from './Text';
 const sizeOptions: FontSizes[] = ['S1', 'M1', 'M2', 'M3', 'L1', 'L2', 'L3', 'L4'];
 const weightOptions: FontWeights[] = ['Light', 'Regular', 'Medium', 'Strong'];
 
-export const ThemeInterface = (props: TextTheme): any => null;
+export const ThemeInterface: React.SFC<TextTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.text
 };

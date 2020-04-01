@@ -21,7 +21,6 @@ export const HeadCellStyled = styled(Cell.Style)`
     white-space: normal;
     border-right: 1px solid ${({ theme }) => theme.table.borderColor};
     border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
-
     height: 100%;
     align-items: flex-end;
 

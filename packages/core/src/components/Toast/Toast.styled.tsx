@@ -18,12 +18,11 @@ export const Toast = styled('div')<StyledProps>`
     margin: 5px;
     opacity: ${({ show }) => (show ? 1 : 0)};
     transition: opacity 0.3s ease;
-
     background-color: ${getColor};
 
     ${Text.Style} {
         color: ${({ theme }) => theme.toast.textColor};
-        margin: 0px 10px;
+        margin: 0 10px;
     }
     ${SvgIcon} {
         * {

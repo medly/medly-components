@@ -2,7 +2,7 @@ import { defaultTheme, LinkTheme } from '@medly-components/theme';
 import React from 'react';
 import { Link } from './Link';
 
-export const ThemeInterface = (props: LinkTheme): any => null;
+export const ThemeInterface: React.SFC<LinkTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.link
 };

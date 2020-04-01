@@ -6,8 +6,8 @@ export const NavList = styled('ul')<NavListProps>`
     flex: 1;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     list-style-type: none;
     color: ${({ theme }) => theme.sideNav.textColor};
 `;

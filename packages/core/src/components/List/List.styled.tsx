@@ -1,11 +1,11 @@
-/* stylelint-disable  no-descending-specificity*/
+/* stylelint-disable  no-descending-specificity */
 import { defaultTheme, SpacingTheme } from '@medly-components/theme';
 import { css, styled } from '@medly-components/utils';
 import { Props } from './types';
 
 const horizontal = (spacings: SpacingTheme) => css`
     li {
-        margin: 0px ${spacings.XS};
+        margin: 0 ${spacings.XS};
         &:last-child {
             margin-right: ${spacings.S};
         }
@@ -17,7 +17,7 @@ const horizontal = (spacings: SpacingTheme) => css`
 
 const vertical = (spacings: SpacingTheme) => css`
     li {
-        margin: ${spacings.XS} 0px;
+        margin: ${spacings.XS} 0;
         &:last-child {
             margin-bottom: ${spacings.S};
         }
@@ -33,7 +33,6 @@ export const ListStyled = styled('ul').attrs(({ theme: { spacing: spacings } }) 
     display: flex;
     list-style: none;
     flex-direction: ${({ variant }) => (variant === 'horizontal' ? 'row' : 'column')};
-
     ${({ spacings, variant }) => variant === 'horizontal' && horizontal(spacings)};
     ${({ spacings, variant }) => variant === 'vertical' && vertical(spacings)};
 `;

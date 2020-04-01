@@ -15,8 +15,8 @@ type DisplayFormat =
 const getIndex = (arr: string[], str: string) => arr.findIndex(curr => curr === str);
 
 export const parseToDate = (initialState: string, displayFormat: DisplayFormat) => {
-    const dateStrings = displayFormat.split(/[-\/]/),
-        dateValues = initialState.split(/[-\/]/),
+    const dateStrings = displayFormat.split(/[-/]/),
+        dateValues = initialState.split(/[-/]/),
         yyyy = dateValues[getIndex(dateStrings, 'yyyy')],
         MM = dateValues[getIndex(dateStrings, 'MM')],
         dd = dateValues[getIndex(dateStrings, 'dd')];

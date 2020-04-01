@@ -105,6 +105,7 @@ export const Calendar: React.SFC<Props> = React.memo(({ date, onChange, minSelec
         </Card>
     );
 });
+Calendar.displayName = 'Calendar';
 Calendar.defaultProps = {
     date: null,
     minSelectableDate: new Date(1901, 0, 1),

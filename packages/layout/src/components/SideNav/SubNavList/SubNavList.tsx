@@ -11,7 +11,7 @@ export const SubNavList: SFC<NavListProps & { leftPadding?: number }> & WithStyl
 
     return (
         <Styled.SubNavList {...{ ...restProps, leftPadding }}>
-            {React.Children.map(props.children, child => {
+            {React.Children.map(children, child => {
                 return React.cloneElement(child as any, { openItem, setOpenItem, leftPadding });
             })}
         </Styled.SubNavList>

@@ -3,8 +3,8 @@ import Row from './Row';
 import { TableStyledProps } from './types';
 
 export const TableStyled = styled('ol')<TableStyledProps>`
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     overflow: auto;
     border: 1px solid ${({ theme }) => theme.table.borderColor};
 

@@ -17,12 +17,12 @@ const options = [
     { value: 'Dummy6 option', label: 'Dummy6 option' }
 ];
 
-export const ThemeInterface = (props: SelectTheme): any => null;
+export const ThemeInterface: React.SFC<SelectTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.select
 };
 
-export const OptionProps = (props: Option): any => null;
+export const OptionProps: React.SFC<Option> = () => null;
 
 export const Basic = () => {
     const [value, setValue] = useState('Dummy4 option');

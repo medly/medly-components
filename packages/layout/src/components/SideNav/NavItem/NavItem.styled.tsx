@@ -9,8 +9,6 @@ export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ .
     text-decoration: none;
     box-sizing: border-box;
     background-color: ${({ active, activeColor }) => (active ? activeColor : 'inherit')};
-    
-
     display: grid;
     grid-template-areas:
         'icon header dropdownIcon'
@@ -22,17 +20,15 @@ export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ .
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-
     user-select: none;
     cursor:  ${({ showPointer }) => (showPointer ? 'pointer' : 'default')};
-
     ${({ containsSubList, active, activeBorderColor, borderColor }) =>
         !containsSubList &&
         css`
             border-bottom: 1px solid ${active ? activeBorderColor : borderColor};
         `}
 
-    ${({ open, borderColor }) =>
+    ${({ open }) =>
         open &&
         css`
             & > ${Dropdown} {

@@ -3,10 +3,14 @@ import React from 'react';
 import Chip from '../../Chip';
 import { ColumnConfig } from '../types';
 
-const FavoriteColor = styled('div')`
-    display: flex;
-    flex-direction: column;
-`;
+const StyledDiv = styled('div')`
+        display: flex;
+        flex-direction: column;
+    `,
+    FavoriteColor: ColumnConfig['component'] = ({ data: colors, disabled }) => {
+        const chips = colors.split(',').map((color: string) => <Chip key={color} label={color} disabled={disabled} />);
+        return <StyledDiv>{chips}</StyledDiv>;
+    };
 
 const columns: ColumnConfig[] = [
     { title: 'Name', field: 'name', formatter: 'text-short', frozen: true, fitContent: true },
@@ -34,10 +38,7 @@ const columns: ColumnConfig[] = [
         title: 'Favorite Color',
         field: 'color',
         formatter: 'react-component',
-        component: ({ data: colors, disabled }) => {
-            const chips = colors.split(',').map((color: string) => <Chip key={color} label={color} disabled={disabled} />);
-            return <FavoriteColor>{chips}</FavoriteColor>;
-        },
+        component: FavoriteColor,
         sort: true
     },
     { title: 'Rating', field: 'rating', formatter: 'numeric', sort: true }

@@ -11,7 +11,6 @@ export const Row = styled('li').attrs(({ gridTemplateColumns }: GridTemplateProp
     position: relative;
     grid-template-rows: minmax(30px, auto);
     align-items: center;
-
     border-bottom: 1px solid #ededed;
     cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
 

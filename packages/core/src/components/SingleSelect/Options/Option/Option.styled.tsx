@@ -6,7 +6,6 @@ export const OptionStyled = styled('li').attrs(({ theme: { select } }) => ({ ...
     padding: 5px;
     color: ${({ selected, selectedTextColor }) => (selected ? selectedTextColor : 'inherit')};
     background-color: ${({ selected, selectedBgColor, bgColor }) => (selected ? selectedBgColor : bgColor)};
-
     ${({ disabled, disabledBgColor }) =>
         disabled &&
         css`

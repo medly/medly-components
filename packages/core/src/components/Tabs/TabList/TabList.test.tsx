@@ -68,7 +68,7 @@ describe('Tab', () => {
         expect(mockOnChange).toBeCalledWith('tab1');
     });
 
-    it('should call onChange prop with expected data on pressing left arrow key', () => {
+    it('should call onChange prop with expected data on pressing End arrow key', () => {
         const mockOnChange = jest.fn();
         const { container, getByText } = renderer('tab1', mockOnChange);
         fireEvent.focus(getByText('Add'));

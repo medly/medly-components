@@ -1,5 +1,4 @@
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
-import { Ref } from 'react';
 
 export type ItemsPosition = 'top' | 'bottom' | 'left' | 'right' | 'center';
 export type Variants = 'outlined' | 'solid' | 'flat';

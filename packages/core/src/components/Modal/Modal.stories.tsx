@@ -1,5 +1,5 @@
 import { defaultTheme, ModalTheme } from '@medly-components/theme';
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import Button from '../Button';
 import Input from '../Input';
 import SingleSelect from '../SingleSelect';
@@ -11,7 +11,7 @@ const options = [
     { value: '2', label: 'Covered Entity' }
 ];
 
-export const ThemeInterface = (props: ModalTheme): any => null;
+export const ThemeInterface: React.SFC<ModalTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.modal
 };
@@ -19,7 +19,7 @@ ThemeInterface.defaultProps = {
 export const Basic = () => {
     const [modalState, setModalState] = useState(false);
 
-    const changeModalState = () => setModalState(val => !val);
+    const changeModalState = useCallback(() => setModalState(val => !val), []);
 
     return (
         <>

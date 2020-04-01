@@ -108,7 +108,7 @@ describe('Calendar Component', () => {
 
     it('should change month to first non disable month on changing year if selected month is disabled in the newly selected year', () => {
         const date = new Date(2020, 11, 15),
-            { getByTitle, getByText, container } = render(
+            { getByText, container } = render(
                 <Calendar
                     id="test-calendar"
                     date={date}
@@ -125,7 +125,7 @@ describe('Calendar Component', () => {
 
     it('should non change month on changing year if that month is non disable in the newly selected year', () => {
         const date = new Date(2020, 11, 15),
-            { getByTitle, getByText, container } = render(
+            { getByText, container } = render(
                 <Calendar
                     id="test-calendar"
                     date={date}

@@ -21,7 +21,7 @@ const options = [
     }
 ];
 
-export const ThemeInterface = (props: SelectTheme): any => null;
+export const ThemeInterface: React.SFC<SelectTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.select
 };

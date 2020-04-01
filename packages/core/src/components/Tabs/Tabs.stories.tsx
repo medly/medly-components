@@ -3,7 +3,7 @@ import { defaultTheme, TabsTheme } from '@medly-components/theme';
 import React, { useState } from 'react';
 import { Tabs } from './Tabs';
 
-export const ThemeInterface = (props: TabsTheme): any => null;
+export const ThemeInterface: React.SFC<TabsTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.tabs
 };

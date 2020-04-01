@@ -6,7 +6,7 @@ import { Props } from './types';
 
 const size: Props['size'][] = ['S', 'M', 'L', 'XL'];
 
-export const ThemeInterface = (props: AvatarTheme): any => null;
+export const ThemeInterface: React.SFC<AvatarTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.avatar
 };

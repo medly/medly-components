@@ -9,7 +9,7 @@ import { SideNavStaticProps } from './types';
 
 const { NavItem, NavIcon, NavText, SubNavList } = SideNav;
 
-export const Theme: SFC<SideNavTheme> = props => null;
+export const Theme: SFC<SideNavTheme> = () => null;
 Theme.defaultProps = {
     ...defaultTheme.sideNav
 };

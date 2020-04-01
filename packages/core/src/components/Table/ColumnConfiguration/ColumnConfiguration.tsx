@@ -34,5 +34,5 @@ const ColumnConfiguration: React.SFC<Props> = React.memo(({ columns, onChange })
 
     return <>{checkBoxes(columns)}</>;
 });
-
+ColumnConfiguration.displayName = 'ColumnConfiguration';
 export default ColumnConfiguration;

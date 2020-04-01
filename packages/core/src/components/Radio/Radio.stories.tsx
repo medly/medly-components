@@ -7,7 +7,7 @@ import { Props } from './types';
 const labelPosition: Props['labelPosition'][] = ['left', 'right', 'top', 'bottom'];
 const size: Props['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
 
-export const ThemeInterface = (props: RadioTheme): any => null;
+export const ThemeInterface: React.SFC<RadioTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.radio
 };

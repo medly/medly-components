@@ -30,7 +30,7 @@ const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
 
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
         handleCellClick = useCallback((e: React.MouseEvent) => isRowSelectionCell && e.stopPropagation(), []),
-        handleRowSelection = (id: number) => (e: React.FormEvent<HTMLInputElement>) => onRowSelection(id);
+        handleRowSelection = (id: number) => () => onRowSelection(id);
 
     const rowSelectionCheckbox = useMemo(
             () => (
@@ -45,7 +45,7 @@ const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
             ),
             [rowId, isRowSelectionDisabled, isRowSelected]
         ),
-        formatedCell = useCallback(() => {
+        formattedCell = useCallback(() => {
             switch (config.formatter) {
                 case 'boolean':
                     return (
@@ -80,7 +80,7 @@ const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
             onClick={handleCellClick}
             isRowSelectionCell={isRowSelectionCell}
         >
-            {isLoading ? <Styled.LoadingDiv ref={childRef} /> : isRowSelectionCell ? rowSelectionCheckbox : formatedCell()}
+            {isLoading ? <Styled.LoadingDiv ref={childRef} /> : isRowSelectionCell ? rowSelectionCheckbox : formattedCell()}
         </Styled.Cell>
     );
 });

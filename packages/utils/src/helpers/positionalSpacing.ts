@@ -13,7 +13,7 @@ export const positionalSpacing = (position: 'top' | 'bottom' | 'left' | 'right',
     }
 };
 
-export const oppositePositionalspacing = (position: 'top' | 'bottom' | 'left' | 'right', spacing: string) => {
+export const oppositePositionalSpacing = (position: 'top' | 'bottom' | 'left' | 'right', spacing: string) => {
     switch (position) {
         case 'top':
             return `0px 0px ${spacing} 0px`;

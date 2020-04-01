@@ -1,4 +1,4 @@
-import { HTMLProps, Omit } from '@medly-components/utils';
+import { HTMLProps } from '@medly-components/utils';
 
 export interface StyledProps extends HTMLProps<HTMLButtonElement> {
     active?: boolean;

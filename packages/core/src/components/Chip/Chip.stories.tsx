@@ -7,7 +7,7 @@ import { Props } from './types';
 
 const variant: Props['variant'][] = ['solid', 'flat', 'outlined'];
 
-export const ThemeInterface = (props: ChipTheme): any => null;
+export const ThemeInterface: React.SFC<ChipTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.chip
 };

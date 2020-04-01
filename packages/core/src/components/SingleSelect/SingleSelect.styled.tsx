@@ -23,11 +23,11 @@ export const SelectWrapperStyled = styled('div')<SelectWrapperProps>`
     }
 
     ${FieldWithLabel.Style} {
-        margin: 0px;
+        margin: 0;
         flex: 1;
 
         & > * {
-            margin: 0px;
+            margin: 0;
             border: none;
             background-color: transparent;
         }

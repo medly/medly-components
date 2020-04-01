@@ -7,7 +7,7 @@ const sizeOptions: FontSizes[] = ['S1', 'M1', 'M2', 'M3', 'L1', 'L2', 'L3', 'L4'
 const weightOptions: FontWeights[] = ['Light', 'Regular', 'Medium', 'Strong'];
 const defaultColor = defaultTheme.font.defaultColor;
 
-export const ThemeInterface = (props: LabelTheme): any => null;
+export const ThemeInterface: React.SFC<LabelTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.label
 };

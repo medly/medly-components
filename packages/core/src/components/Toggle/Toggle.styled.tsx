@@ -39,8 +39,8 @@ export const Circle = styled('div')<ToggleWrapperProps>`
         background: ${({ theme }) => theme.colors.white};
         box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2);
         transition: 0.2s;
-        width: ${props => `calc(${getHeight(props)} - 6px)`};
-        height: ${props => `calc(${getHeight(props)} - 6px)`};
+        width: ${props => `calc(${getHeight(props)} - 6px) `};
+        height: ${props => `calc(${getHeight(props)} - 6px) `};
     }
 `;
 Circle.defaultProps = {
@@ -68,7 +68,7 @@ export const Checkbox = styled('input').attrs({ type: 'checkbox' })<Props>`
     &:checked + ${Circle} {
         background: ${({ theme }) => theme.toggle.checkedBgColor};
         &::after {
-            margin-left: ${props => `calc(${getWidth(props)} - (${getHeight(props)}) + 3px)`};
+            margin-left: ${props => `calc(${getWidth(props)} - (${getHeight(props)}) + 3px) `};
         }
     }
 `;

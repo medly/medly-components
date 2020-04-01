@@ -12,7 +12,7 @@ export const Item = styled('div')`
     align-items: center;
     flex: 1;
     min-width: 140px;
-    padding: 0px 7.5px 20px;
+    padding: 0 7.5px 20px;
     word-wrap: break-word;
 
     & > span:last-of-type {

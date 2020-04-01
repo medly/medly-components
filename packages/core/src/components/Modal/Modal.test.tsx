@@ -48,6 +48,7 @@ describe('Modal component', () => {
             events[event] = cb;
         });
         const mockOnCloseModal = jest.fn(),
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
             component = render(
                 <Modal open onCloseModal={mockOnCloseModal}>
                     <Modal.Header>Demo Header</Modal.Header>

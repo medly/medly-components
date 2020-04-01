@@ -1,15 +1,15 @@
 import { css } from '../styled';
 
 export const clearMarginPadding = () => css`
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 `;
 
-export const fullWidth = (margin: string = '0px') => css`
+export const fullWidth = (margin = '0px') => css`
     width: calc(100% - ${margin});
 `;
 
-export const fullHeight = (margin: string = '0px') => css`
+export const fullHeight = (margin = '0px') => css`
     height: calc(100% - ${margin});
 `;
 

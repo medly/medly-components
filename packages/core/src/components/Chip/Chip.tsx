@@ -19,7 +19,7 @@ export const Chip: SFC<Props> & WithStyle = React.memo(
 
         return (
             <Styled.Chip ref={ref} {...restProps}>
-                <Text>{props.label}</Text>
+                <Text>{label}</Text>
                 {onDelete && <ClearIcon size="XS" onClick={handleDelete} />}
             </Styled.Chip>
         );

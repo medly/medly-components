@@ -14,7 +14,7 @@ export default {
 const variant: Props['variant'][] = ['solid', 'flat', 'outlined'];
 const color: Props['color'][] = ['primary', 'secondary'];
 
-export const ThemeInterface = (props: ButtonTheme): any => null;
+export const ThemeInterface: React.SFC<ButtonTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.button
 };

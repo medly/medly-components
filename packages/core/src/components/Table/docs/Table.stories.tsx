@@ -5,17 +5,17 @@ import React, { SFC, useState } from 'react';
 import Button from '../../Button';
 import Modal from '../../Modal';
 import { Table } from '../Table';
-import { ColumnConfig, Data, SortOrder } from '../types';
+import { ColumnConfig, SortOrder } from '../types';
 import columns from './columns';
 import data from './data';
 import { filterData } from './filterData';
 
-export const Theme: SFC<TableTheme> = props => null;
+export const Theme: SFC<TableTheme> = () => null;
 Theme.defaultProps = {
     ...defaultTheme.table
 };
 
-export const ColumnConfigInterface: SFC<ColumnConfig> = props => null;
+export const ColumnConfigInterface: SFC<ColumnConfig> = () => null;
 
 export const Basic = () => {
     const [tableData, setTableData] = useState(data);

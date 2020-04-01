@@ -29,7 +29,7 @@ export const TextStyled = styled('span').attrs(getMappedProps)<StyledProps>`
         fullWidth &&
         css`
             display: block;
-            margin: ${theme.spacing.S} 0px;
+            margin: ${theme.spacing.S} 0;
         `}
 
     ${props => props.uppercase && uppercase()};

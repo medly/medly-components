@@ -19,7 +19,7 @@ export const BreadCrumbsStyled = styled('div').attrs(({ theme: { breadCrumbs } }
     }
 
     ${List.Style} {
-        li + li:before {
+        li + li::before {
             margin-right: ${({ theme }) => theme.spacing.S};
             content: '/';
             color: ${({ textColor }) => textColor};
