@@ -13,10 +13,10 @@
     },
     "license": "MIT",
     "scripts": {
-        "build": "cross-env BABEL_ENV=production  yarn build:js && yarn build:types",
-        "build:js": "rollup -c",
+        "build": "run-s build:js build:types",
+        "build:js": "cross-env BABEL_ENV=production rollup -c",
         "build:types": "tsc -p tsconfig.build.json",
         "prebuild": "tsc -p tsconfig.json && rimraf dist",
-        "watch": "cross-env BABEL_ENV=production rollup -c -w"
+        "watch": "run-p \"build:types -w\" \"build:js --watch\""
     }
 }
