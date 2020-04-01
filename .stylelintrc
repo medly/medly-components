@@ -1,5 +1,14 @@
 {
-    processors: ['stylelint-processor-styled-components'],
-    extends: ['stylelint-config-recommended', 'stylelint-config-styled-components'],
-    syntax: "scss"
+  "syntax": "scss",
+  "plugins": ["stylelint-prettier"],
+  "extends": [ "stylelint-config-standard","stylelint-config-styled-components","stylelint-prettier/recommended" ],
+  "rules": {
+    "prettier/prettier": true,
+    "value-keyword-case": null,
+    "declaration-empty-line-before" : "never",
+    "unit-no-unknown": [true, {
+      "ignoreUnits": ["`"]
+    }],
+    "function-name-case": null
+  },
 }

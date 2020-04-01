@@ -1,4 +1,4 @@
-module.exports = function(api) {
+module.exports = function (api) {
     const presets = [
             [
                 '@babel/env',
@@ -13,11 +13,12 @@ module.exports = function(api) {
             [
                 'babel-plugin-styled-components',
                 {
-                    pure: true
+                    pure: true,
+                    displayName: true,
+                    minify: true,
+                    transpileTemplateLiterals: true
                 }
             ],
-            '@babel/plugin-proposal-class-properties',
-            '@babel/plugin-proposal-object-rest-spread',
             'inline-react-svg'
         ],
         ignore = ['node_modules'];

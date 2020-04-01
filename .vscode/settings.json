@@ -1,8 +1,9 @@
 {
-    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
         "source.organizeImports": true,
-        "source.fixAll.tslint": true
+        "source.fixAll.stylelint": true
     },
-    "cSpell.words": ["medly"]
+    "eslint.validate": ["html", "javascript", "javascriptreact", "typescript", "typescriptreact"],
+    "cSpell.words": ["Medly"]
 }
