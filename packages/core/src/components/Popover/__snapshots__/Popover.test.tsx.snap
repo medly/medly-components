@@ -328,7 +328,7 @@ exports[`Popover component with placement right-end, should render properly 1`] 
 }
 
 .c0 .c1 {
-  bottom: 0px;
+  bottom: 0;
   left: calc(100% + 5px);
 }
 

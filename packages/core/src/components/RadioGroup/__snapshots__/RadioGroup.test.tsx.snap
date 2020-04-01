@@ -42,7 +42,7 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
 }
 
 .c0 {
-  margin: 8px 0px;
+  margin: 8px 0;
   display: grid;
   grid-template-areas: 'label' 'field' 'description';
 }
@@ -62,7 +62,7 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
 }
 
 .c5 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-columns: max-content minmax(max-content,25%);
   grid-template-areas: 'field label' 'description random';
@@ -253,7 +253,7 @@ exports[`Radio Group should render correctly 1`] = `
 }
 
 .c0 {
-  margin: 8px 0px;
+  margin: 8px 0;
   display: grid;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
@@ -274,7 +274,7 @@ exports[`Radio Group should render correctly 1`] = `
 }
 
 .c5 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-columns: max-content minmax(max-content,25%);
   grid-template-areas: 'field label' 'description random';

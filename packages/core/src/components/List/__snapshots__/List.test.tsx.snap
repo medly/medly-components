@@ -15,7 +15,7 @@ exports[`List component should render horizontal list 1`] = `
 }
 
 .c0 li {
-  margin: 0px 4px;
+  margin: 0 4px;
 }
 
 .c0 li:last-child {
@@ -59,7 +59,7 @@ exports[`List component should render vertical list 1`] = `
 }
 
 .c0 li {
-  margin: 4px 0px;
+  margin: 4px 0;
 }
 
 .c0 li:last-child {

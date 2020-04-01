@@ -32,11 +32,11 @@ exports[`Cell should not render text if hide property is given 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px;
+  margin: 0;
 }
 
 .c0 .sc-AykKK .sc-AykKC {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .c0 .c1 {
@@ -86,7 +86,7 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c2 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-columns: max-content minmax(max-content,25%);
   grid-template-areas: 'field label' 'description random';
@@ -191,11 +191,11 @@ exports[`Cell should render checkbox properly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px;
+  margin: 0;
 }
 
 .c0 .c1 .c7 {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .c0 .sc-AykKG {
@@ -280,11 +280,11 @@ exports[`Cell should render frozen text properly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px;
+  margin: 0;
 }
 
 .c0 .sc-AykKK .sc-AykKC {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .c0 .c1 {
@@ -340,11 +340,11 @@ exports[`Cell should render text properly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px;
+  margin: 0;
 }
 
 .c0 .sc-AykKK .sc-AykKC {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .c0 .c1 {

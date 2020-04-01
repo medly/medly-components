@@ -40,7 +40,7 @@ exports[`BreadCrumbs component should render correctly 1`] = `
 }
 
 .c2 li {
-  margin: 0px 4px;
+  margin: 0 4px;
 }
 
 .c2 li:last-child {
@@ -72,7 +72,7 @@ exports[`BreadCrumbs component should render correctly 1`] = `
   font-size: 16px;
 }
 
-.c0 .c1 li + li:before {
+.c0 .c1 li + li::before {
   margin-right: 8px;
   content: '/';
   color: #ffffff;

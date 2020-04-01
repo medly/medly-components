@@ -41,7 +41,7 @@ exports[`Toast should render properly if child jsx 1`] = `
 
 .c0 .sc-AykKF {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c0 .c1 * {
@@ -99,7 +99,7 @@ exports[`Toast should render properly with error variant 1`] = `
 
 .c5 .c3 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c5 .c1 * {
@@ -133,7 +133,7 @@ exports[`Toast should render properly with error variant 1`] = `
 
 .c0 .c3 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c0 .c1 * {
@@ -193,7 +193,7 @@ exports[`Toast should render properly with info variant 1`] = `
 
 .c5 .c3 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c5 .c1 * {
@@ -227,7 +227,7 @@ exports[`Toast should render properly with info variant 1`] = `
 
 .c0 .c3 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c0 .c1 * {
@@ -287,7 +287,7 @@ exports[`Toast should render properly with success variant 1`] = `
 
 .c5 .c3 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c5 .c1 * {
@@ -321,7 +321,7 @@ exports[`Toast should render properly with success variant 1`] = `
 
 .c0 .c3 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c0 .c1 * {
@@ -381,7 +381,7 @@ exports[`Toast should render properly with warning variant 1`] = `
 
 .c5 .c3 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c5 .c1 * {
@@ -415,7 +415,7 @@ exports[`Toast should render properly with warning variant 1`] = `
 
 .c0 .c3 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c0 .c1 * {

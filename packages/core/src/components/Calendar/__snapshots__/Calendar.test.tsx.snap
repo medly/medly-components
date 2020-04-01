@@ -117,7 +117,7 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c8 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
@@ -140,7 +140,7 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c12 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
@@ -282,14 +282,14 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c11 .c7 {
-  margin: 0px;
+  margin: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
 .c11 .c7 > * {
-  margin: 0px;
+  margin: 0;
   border: none;
   background-color: transparent;
 }

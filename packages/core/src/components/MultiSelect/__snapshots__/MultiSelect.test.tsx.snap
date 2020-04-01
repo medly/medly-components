@@ -98,12 +98,12 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 .c17 {
   grid-area: description;
-  margin: 5px 0px 0px 2px;
+  margin: 5px 0 0 2px;
   color: grey;
 }
 
 .c1 {
-  margin: 8px 0px;
+  margin: 8px 0;
   display: grid;
   min-width: 300px;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
@@ -125,7 +125,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c11 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
@@ -267,14 +267,14 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c5 .c0 {
-  margin: 0px;
+  margin: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
 .c5 .c0 > * {
-  margin: 0px;
+  margin: 0;
   border: none;
   background-color: transparent;
 }
@@ -387,7 +387,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c1 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
@@ -410,7 +410,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c4 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
@@ -551,14 +551,14 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c3 .c0 {
-  margin: 0px;
+  margin: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
 .c3 .c0 > * {
-  margin: 0px;
+  margin: 0;
   border: none;
   background-color: transparent;
 }
@@ -726,12 +726,12 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 
 .c17 {
   grid-area: description;
-  margin: 5px 0px 0px 2px;
+  margin: 5px 0 0 2px;
   color: grey;
 }
 
 .c1 {
-  margin: 8px 0px;
+  margin: 8px 0;
   display: grid;
   min-width: 300px;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
@@ -753,7 +753,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c11 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
@@ -895,14 +895,14 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c5 .c0 {
-  margin: 0px;
+  margin: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
 .c5 .c0 > * {
-  margin: 0px;
+  margin: 0;
   border: none;
   background-color: transparent;
 }
@@ -1015,7 +1015,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c1 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
@@ -1038,7 +1038,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c4 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
@@ -1179,14 +1179,14 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c3 .c0 {
-  margin: 0px;
+  margin: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
 .c3 .c0 > * {
-  margin: 0px;
+  margin: 0;
   border: none;
   background-color: transparent;
 }

@@ -40,7 +40,7 @@ exports[`GroupCell should render GroupCellTitle properly 1`] = `
   font-size: 16px;
   font-weight: 700;
   text-align: center;
-  padding: 5px 0px 5px 10px;
+  padding: 5px 0 5px 10px;
   grid-column: -1/1;
   text-overflow: initial;
   overflow: auto;

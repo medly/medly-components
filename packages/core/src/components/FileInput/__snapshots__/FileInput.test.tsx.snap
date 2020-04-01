@@ -33,12 +33,12 @@ exports[`FileInput component should render properly with all props 1`] = `
 
 .c6 {
   grid-area: description;
-  margin: 5px 0px 0px 2px;
+  margin: 5px 0 0 2px;
   color: grey;
 }
 
 .c0 {
-  margin: 8px 0px;
+  margin: 8px 0;
   display: grid;
   grid-template-areas: 'label' 'field' 'description';
 }
@@ -124,7 +124,7 @@ exports[`FileInput component should render properly with all props 1`] = `
 
 exports[`FileInput component should render properly with default props 1`] = `
 .c0 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;

@@ -33,12 +33,12 @@ exports[`SingleSelect component should render correctly with all the props given
 
 .c12 {
   grid-area: description;
-  margin: 5px 0px 0px 2px;
+  margin: 5px 0 0 2px;
   color: grey;
 }
 
 .c1 {
-  margin: 8px 0px;
+  margin: 8px 0;
   display: grid;
   min-width: 300px;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
@@ -60,7 +60,7 @@ exports[`SingleSelect component should render correctly with all the props given
 }
 
 .c6 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
@@ -212,14 +212,14 @@ exports[`SingleSelect component should render correctly with all the props given
 }
 
 .c5 .c0 {
-  margin: 0px;
+  margin: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
 .c5 .c0 > * {
-  margin: 0px;
+  margin: 0;
   border: none;
   background-color: transparent;
 }
@@ -303,7 +303,7 @@ exports[`SingleSelect component should render correctly with all the props given
 
 exports[`SingleSelect component should render correctly with default props 1`] = `
 .c1 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
@@ -326,7 +326,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 }
 
 .c4 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
@@ -477,14 +477,14 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 }
 
 .c3 .c0 {
-  margin: 0px;
+  margin: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
 .c3 .c0 > * {
-  margin: 0px;
+  margin: 0;
   border: none;
   background-color: transparent;
 }

@@ -36,7 +36,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 }
 
 .c6:nth-child(1) {
-  top: 0px;
+  top: 0;
 }
 
 .c6:nth-child(2) {
@@ -87,8 +87,8 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   list-style-type: none;
   color: #ffffff;
 }
@@ -270,7 +270,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 }
 
 .c20 .c17 {
-  max-height: 0px;
+  max-height: 0;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
 }
@@ -278,7 +278,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 .c0 {
   height: 100vh;
   background-color: #F5F5F5;
-  width: 0px;
+  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -504,7 +504,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 }
 
 .c6:nth-child(1) {
-  top: 0px;
+  top: 0;
 }
 
 .c6:nth-child(2) {
@@ -555,8 +555,8 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   list-style-type: none;
   color: #ffffff;
 }
@@ -757,7 +757,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 }
 
 .c21 .c18 {
-  max-height: 0px;
+  max-height: 0;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
 }
@@ -765,7 +765,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 .c0 {
   height: 100vh;
   background-color: #F5F5F5;
-  width: 0px;
+  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -983,7 +983,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 }
 
 .c6:nth-child(1) {
-  top: 0px;
+  top: 0;
 }
 
 .c6:nth-child(2) {
@@ -1034,8 +1034,8 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   list-style-type: none;
   color: #ffffff;
 }
@@ -1213,7 +1213,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 .c0 {
   height: 100vh;
   background-color: #F5F5F5;
-  width: 0px;
+  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -1253,7 +1253,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 }
 
 .c0 .sc-LzLqE {
-  max-height: 0px;
+  max-height: 0;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
 }
@@ -1371,7 +1371,7 @@ exports[`SideNav should render properly 1`] = `
 }
 
 .c5:nth-child(1) {
-  top: 0px;
+  top: 0;
 }
 
 .c5:nth-child(2) {
@@ -1403,8 +1403,8 @@ exports[`SideNav should render properly 1`] = `
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   list-style-type: none;
   color: #ffffff;
 }
@@ -1581,7 +1581,7 @@ exports[`SideNav should render properly 1`] = `
 .c0 {
   height: 100vh;
   background-color: #F5F5F5;
-  width: 0px;
+  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -1621,7 +1621,7 @@ exports[`SideNav should render properly 1`] = `
 }
 
 .c0 .c16 {
-  max-height: 0px;
+  max-height: 0;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
 }

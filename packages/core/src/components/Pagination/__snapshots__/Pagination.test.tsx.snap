@@ -72,7 +72,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
 }
 
 .c0 li {
-  margin: 0px 4px;
+  margin: 0 4px;
 }
 
 .c0 li:last-child {
@@ -322,7 +322,7 @@ exports[`Pagination component should render correctly with all the default props
 }
 
 .c0 li {
-  margin: 0px 4px;
+  margin: 0 4px;
 }
 
 .c0 li:last-child {
@@ -584,7 +584,7 @@ exports[`Pagination component should render correctly with all the props given 1
 }
 
 .c0 li {
-  margin: 0px 4px;
+  margin: 0 4px;
 }
 
 .c0 li:last-child {

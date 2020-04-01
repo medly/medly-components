@@ -34,7 +34,7 @@ exports[`Text Component should render with all the props 1`] = `
   font-weight: 300;
   color: pink;
   display: block;
-  margin: 8px 0px;
+  margin: 8px 0;
   text-transform: uppercase;
   -webkit-text-decoration: line-through;
   text-decoration: line-through;

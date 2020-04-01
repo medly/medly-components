@@ -21,7 +21,7 @@ exports[`DatePicker component should render properly when value is of date type 
 }
 
 .c0 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
@@ -42,7 +42,7 @@ exports[`DatePicker component should render properly when value is of date type 
 }
 
 .c4 {
-  margin: 8px 0px;
+  margin: 8px 0;
   display: grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
@@ -217,7 +217,7 @@ exports[`DatePicker component should render properly when value is of string typ
 }
 
 .c0 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
@@ -238,7 +238,7 @@ exports[`DatePicker component should render properly when value is of string typ
 }
 
 .c4 {
-  margin: 8px 0px;
+  margin: 8px 0;
   display: grid;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;

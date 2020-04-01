@@ -18,7 +18,7 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
 
 .c6 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c6 .c2 * {
@@ -52,7 +52,7 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
 
 .c1 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c1 .c2 * {
@@ -134,7 +134,7 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
 
 .c6 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c6 .c2 * {
@@ -168,7 +168,7 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
 
 .c1 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c1 .c2 * {
@@ -247,7 +247,7 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
 
 .c6 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c6 .c2 * {
@@ -281,7 +281,7 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
 
 .c1 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c1 .c2 * {
@@ -360,7 +360,7 @@ exports[`ToastContainer should render properly with position left 1`] = `
 
 .c6 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c6 .c2 * {
@@ -394,7 +394,7 @@ exports[`ToastContainer should render properly with position left 1`] = `
 
 .c1 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c1 .c2 * {
@@ -476,7 +476,7 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
 
 .c6 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c6 .c2 * {
@@ -510,7 +510,7 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
 
 .c1 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c1 .c2 * {
@@ -587,7 +587,7 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
 
 .c6 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c6 .c2 * {
@@ -621,7 +621,7 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
 
 .c1 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c1 .c2 * {
@@ -698,7 +698,7 @@ exports[`ToastContainer should render properly with position right 1`] = `
 
 .c6 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c6 .c2 * {
@@ -732,7 +732,7 @@ exports[`ToastContainer should render properly with position right 1`] = `
 
 .c1 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c1 .c2 * {
@@ -814,7 +814,7 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
 
 .c6 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c6 .c2 * {
@@ -848,7 +848,7 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
 
 .c1 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c1 .c2 * {
@@ -925,7 +925,7 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
 
 .c6 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c6 .c2 * {
@@ -959,7 +959,7 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
 
 .c1 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c1 .c2 * {
@@ -1036,7 +1036,7 @@ exports[`ToastContainer should render properly with position top 1`] = `
 
 .c6 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c6 .c2 * {
@@ -1070,7 +1070,7 @@ exports[`ToastContainer should render properly with position top 1`] = `
 
 .c1 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c1 .c2 * {
@@ -1152,7 +1152,7 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
 
 .c6 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c6 .c2 * {
@@ -1186,7 +1186,7 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
 
 .c1 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c1 .c2 * {
@@ -1265,7 +1265,7 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
 
 .c6 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c6 .c2 * {
@@ -1299,7 +1299,7 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
 
 .c1 .c4 {
   color: #ffffff;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .c1 .c2 * {

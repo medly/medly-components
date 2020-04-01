@@ -2,7 +2,7 @@
 
 exports[`Radio component should render correctly with all the default props 1`] = `
 .c0 {
-  margin: 8px 8px 8px 0px;
+  margin: 8px 8px 8px 0;
   display: inline-grid;
   grid-template-columns: max-content minmax(max-content,25%);
   grid-template-areas: 'field label' 'description random';
@@ -131,7 +131,7 @@ exports[`Radio component should render correctly with all the props given 1`] = 
 }
 
 .c0 {
-  margin: 8px 0px;
+  margin: 8px 0;
   display: grid;
   grid-template-columns: max-content minmax(max-content,25%);
   grid-template-areas: 'field label' 'description random';
