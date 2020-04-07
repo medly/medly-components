@@ -414,7 +414,7 @@ exports[`SubNavList should be able to click on nested item 1`] = `
   transition: opacity 0.4s;
 }
 
-<div
+<nav
   class="sc-LzLqD c0"
   id="medly-sidenav"
   open=""
@@ -577,7 +577,7 @@ exports[`SubNavList should be able to click on nested item 1`] = `
       </ul>
     </li>
   </ul>
-</div>
+</nav>
 `;
 
 exports[`SubNavList should render properly 1`] = `
@@ -880,7 +880,7 @@ exports[`SubNavList should render properly 1`] = `
 }
 
 <div>
-  <div
+  <nav
     class="sc-LzLqD c0"
     id="medly-sidenav"
   >
@@ -1038,6 +1038,6 @@ exports[`SubNavList should render properly 1`] = `
         </ul>
       </li>
     </ul>
-  </div>
+  </nav>
 </div>
 `;

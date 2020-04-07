@@ -14,7 +14,7 @@ exports[`SidePanel component should render with left positioned by default 1`] =
 }
 
 <div>
-  <div
+  <aside
     class="c0"
   />
 </div>
@@ -34,7 +34,7 @@ exports[`SidePanel component should render with right positioned when position p
 }
 
 <div>
-  <div
+  <aside
     class="c0"
   />
 </div>

@@ -10,7 +10,7 @@ const rightPositioned = () => css`
     right: 0;
 `;
 
-export const SidePanelStyled = styled('div')<SidePanelStyledProps>`
+export const SidePanelStyled = styled('aside')<SidePanelStyledProps>`
     height: 100vh;
     background-color: ${({ theme }) => theme.sidePanel.bgColor};
     width: 0;

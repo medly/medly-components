@@ -385,7 +385,7 @@ exports[`NavItem should be able to click on nested item 1`] = `
   transition: opacity 0.4s;
 }
 
-<div
+<nav
   class="sc-LzLqD c0"
   id="medly-sidenav"
   open=""
@@ -514,7 +514,7 @@ exports[`NavItem should be able to click on nested item 1`] = `
       </ul>
     </li>
   </ul>
-</div>
+</nav>
 `;
 
 exports[`NavItem should fold the open item on click on it 1`] = `
@@ -839,7 +839,7 @@ exports[`NavItem should fold the open item on click on it 1`] = `
   transition: opacity 0.4s;
 }
 
-<div
+<nav
   class="sc-LzLqD c0"
   id="medly-sidenav"
   open=""
@@ -966,7 +966,7 @@ exports[`NavItem should fold the open item on click on it 1`] = `
       </ul>
     </li>
   </ul>
-</div>
+</nav>
 `;
 
 exports[`NavItem should render properly 1`] = `
@@ -1253,7 +1253,7 @@ exports[`NavItem should render properly 1`] = `
 }
 
 <div>
-  <div
+  <nav
     class="sc-LzLqD c0"
     id="medly-sidenav"
   >
@@ -1378,6 +1378,6 @@ exports[`NavItem should render properly 1`] = `
         </ul>
       </li>
     </ul>
-  </div>
+  </nav>
 </div>
 `;

@@ -317,7 +317,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   transition: opacity 0.4s;
 }
 
-<div
+<nav
   class="sc-LzLqD c0"
   id="medly-sidenav"
   open=""
@@ -465,7 +465,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
       </span>
     </ul>
   </ul>
-</div>
+</nav>
 `;
 
 exports[`SideNav should change width when clicked on item with sidenavOpenCloseOnClick prop given 1`] = `
@@ -804,7 +804,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   transition: opacity 0.4s;
 }
 
-<div
+<nav
   class="sc-LzLqD c0"
   id="medly-sidenav"
   open=""
@@ -953,7 +953,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
       </span>
     </ul>
   </ul>
-</div>
+</nav>
 `;
 
 exports[`SideNav should close sidenav if we click outside 1`] = `
@@ -1265,7 +1265,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   transition: opacity 0.4s;
 }
 
-<div
+<nav
   class="sc-LzLqD c0"
   id="medly-sidenav"
 >
@@ -1332,7 +1332,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
       </span>
     </li>
   </ul>
-</div>
+</nav>
 `;
 
 exports[`SideNav should render properly 1`] = `
@@ -1627,7 +1627,7 @@ exports[`SideNav should render properly 1`] = `
 }
 
 <div>
-  <div
+  <nav
     class="sc-LzLqD c0"
     id="medly-sidenav"
   >
@@ -1773,6 +1773,6 @@ exports[`SideNav should render properly 1`] = `
         </span>
       </ul>
     </ul>
-  </div>
+  </nav>
 </div>
 `;
