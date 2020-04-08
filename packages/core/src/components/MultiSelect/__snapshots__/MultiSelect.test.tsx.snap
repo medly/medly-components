@@ -7,7 +7,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c10 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c14 {
@@ -16,7 +16,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c14 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c8 {
@@ -47,8 +47,8 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   max-width: -moz-max-content;
   max-width: max-content;
   cursor: not-allowed;
-  border: 1px solid #BDBDBD;
-  background-color: #BDBDBD;
+  border: 1px solid #b0bcc8;
+  background-color: #b0bcc8;
   color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -80,7 +80,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 .c2 {
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -158,7 +158,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
   width: -webkit-max-content;
@@ -183,7 +183,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
 }
 
 .c13 {
@@ -194,23 +194,23 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   border: 0;
   width: calc(100% - 16px);
   cursor: not-allowed;
-  background-color: #E0E0E0;
+  background-color: #C7D0D8;
 }
 
 .c13::-webkit-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c13::-moz-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c13:-ms-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c13::placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c13::-webkit-file-upload-button {
@@ -236,8 +236,8 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c5 {
-  border: 1px solid #E0E0E0;
-  background-color: #E0E0E0;
+  border: 1px solid #C7D0D8;
+  background-color: #dfe4e9;
   cursor: not-allowed;
   border-radius: 4px;
   box-sizing: border-box;
@@ -383,7 +383,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c7 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c1 {
@@ -443,7 +443,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
   width: -webkit-max-content;
@@ -468,7 +468,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
 }
 
 .c6 {
@@ -483,19 +483,19 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c6::-webkit-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6::-moz-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6:-ms-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6::placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6::-webkit-file-upload-button {
@@ -521,7 +521,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c3 {
-  border: 1px solid #E0E0E0;
+  border: 1px solid #C7D0D8;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -635,7 +635,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c10 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c14 {
@@ -644,7 +644,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c14 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c8 {
@@ -675,8 +675,8 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   max-width: -moz-max-content;
   max-width: max-content;
   cursor: not-allowed;
-  border: 1px solid #BDBDBD;
-  background-color: #BDBDBD;
+  border: 1px solid #b0bcc8;
+  background-color: #b0bcc8;
   color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -708,7 +708,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 .c2 {
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -786,7 +786,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
   width: -webkit-max-content;
@@ -811,7 +811,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
 }
 
 .c13 {
@@ -822,23 +822,23 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   border: 0;
   width: calc(100% - 16px);
   cursor: not-allowed;
-  background-color: #E0E0E0;
+  background-color: #C7D0D8;
 }
 
 .c13::-webkit-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c13::-moz-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c13:-ms-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c13::placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c13::-webkit-file-upload-button {
@@ -864,8 +864,8 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c5 {
-  border: 1px solid #E0E0E0;
-  background-color: #E0E0E0;
+  border: 1px solid #C7D0D8;
+  background-color: #dfe4e9;
   cursor: not-allowed;
   border-radius: 4px;
   box-sizing: border-box;
@@ -1011,7 +1011,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c7 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c1 {
@@ -1071,7 +1071,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
   width: -webkit-max-content;
@@ -1096,7 +1096,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
 }
 
 .c6 {
@@ -1111,19 +1111,19 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c6::-webkit-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6::-moz-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6:-ms-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6::placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6::-webkit-file-upload-button {
@@ -1149,7 +1149,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c3 {
-  border: 1px solid #E0E0E0;
+  border: 1px solid #C7D0D8;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;

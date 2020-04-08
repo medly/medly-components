@@ -4,7 +4,7 @@ exports[`Input component should render correctly when fullWidth & required props
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -29,7 +29,7 @@ exports[`Input component should render correctly when fullWidth & required props
 .c6 {
   grid-area: description;
   margin: 5px 0 0 2px;
-  color: #818A91;
+  color: #012040;
 }
 
 .c0 {
@@ -65,7 +65,7 @@ exports[`Input component should render correctly when fullWidth & required props
   display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
   width: -webkit-max-content;
@@ -90,7 +90,7 @@ exports[`Input component should render correctly when fullWidth & required props
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
 }
 
 .c4 {
@@ -105,19 +105,19 @@ exports[`Input component should render correctly when fullWidth & required props
 }
 
 .c4::-webkit-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c4::-moz-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c4:-ms-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c4::placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c4::-webkit-file-upload-button {
@@ -189,7 +189,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
   width: -webkit-max-content;
@@ -214,7 +214,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
 }
 
 .c2 {
@@ -225,23 +225,23 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   border: 0;
   width: calc(100% - 16px);
   cursor: not-allowed;
-  background-color: #E0E0E0;
+  background-color: #C7D0D8;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c2::-moz-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c2::placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c2::-webkit-file-upload-button {
@@ -305,7 +305,7 @@ exports[`Input component should render correctly when label and description are 
   display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
   width: -webkit-max-content;
@@ -330,7 +330,7 @@ exports[`Input component should render correctly when label and description are 
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
 }
 
 .c2 {
@@ -345,19 +345,19 @@ exports[`Input component should render correctly when label and description are 
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c2::-moz-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c2::placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c2::-webkit-file-upload-button {
@@ -389,7 +389,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
   margin: 0px 0px 8px 0px;
   cursor: default;
 }
@@ -454,7 +454,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
   width: 100%;
@@ -477,7 +477,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
 }
 
 .c5 {
@@ -492,19 +492,19 @@ exports[`Input component should render correctly with all the props given 1`] = 
 }
 
 .c5::-webkit-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c5::-moz-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c5:-ms-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c5::placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c5::-webkit-file-upload-button {
@@ -512,11 +512,11 @@ exports[`Input component should render correctly with all the props given 1`] = 
 }
 
 .c4 {
-  background-color: #EEEEEE;
+  background-color: #eff2f4;
 }
 
 .c6 {
-  background-color: #EEEEEE;
+  background-color: #eff2f4;
 }
 
 <div>

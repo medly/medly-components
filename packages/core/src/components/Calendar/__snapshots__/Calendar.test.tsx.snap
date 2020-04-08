@@ -31,7 +31,7 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c16 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c2 {
@@ -112,7 +112,7 @@ exports[`Calendar Component should render given date 1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
@@ -173,7 +173,7 @@ exports[`Calendar Component should render given date 1`] = `
   display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
   width: -webkit-max-content;
@@ -198,7 +198,7 @@ exports[`Calendar Component should render given date 1`] = `
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
 }
 
 .c14 {
@@ -213,19 +213,19 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c14::-webkit-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c14::-moz-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c14:-ms-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c14::placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c14::-webkit-file-upload-button {
@@ -251,7 +251,7 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c11 {
-  border: 1px solid #E0E0E0;
+  border: 1px solid #C7D0D8;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -369,7 +369,7 @@ exports[`Calendar Component should render given date 1`] = `
   text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
-  color: #BDBDBD;
+  color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -390,7 +390,7 @@ exports[`Calendar Component should render given date 1`] = `
 
 .c20:disabled {
   cursor: not-allowed;
-  color: #BDBDBD;
+  color: #b0bcc8;
 }
 
 .c22 {
@@ -400,7 +400,7 @@ exports[`Calendar Component should render given date 1`] = `
   text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
-  background-color: #FE8D6B;
+  background-color: #F38037;
   color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -422,7 +422,7 @@ exports[`Calendar Component should render given date 1`] = `
 
 .c22:disabled {
   cursor: not-allowed;
-  color: #BDBDBD;
+  color: #b0bcc8;
 }
 
 .c23 {
@@ -452,7 +452,7 @@ exports[`Calendar Component should render given date 1`] = `
 
 .c23:disabled {
   cursor: not-allowed;
-  color: #BDBDBD;
+  color: #b0bcc8;
 }
 
 <div>

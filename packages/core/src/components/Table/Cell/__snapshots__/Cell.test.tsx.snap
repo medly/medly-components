@@ -24,7 +24,7 @@ exports[`Cell should not render text if hide property is given 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
-  border-right: 1px solid #E0E0E0;
+  border-right: 1px solid #C7D0D8;
 }
 
 .c0 .sc-AykKK {
@@ -63,13 +63,13 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c8 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c3 {
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
   margin: 0px 0px 0px 8px;
   cursor: pointer;
 }
@@ -110,7 +110,7 @@ exports[`Cell should render checkbox properly 1`] = `
   position: relative;
   width: 16px;
   height: 16px;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #C7D0D8;
   background-color: #ffffff;
   border-radius: 15%;
   display: -webkit-inline-box;
@@ -183,7 +183,7 @@ exports[`Cell should render checkbox properly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
-  border-right: 1px solid #E0E0E0;
+  border-right: 1px solid #C7D0D8;
 }
 
 .c0 .c1 {
@@ -267,7 +267,7 @@ exports[`Cell should render frozen text properly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
-  border-right: 1px solid #E0E0E0;
+  border-right: 1px solid #C7D0D8;
   position: -webkit-sticky;
   position: sticky;
   left: 0;
@@ -332,7 +332,7 @@ exports[`Cell should render text properly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
-  border-right: 1px solid #E0E0E0;
+  border-right: 1px solid #C7D0D8;
 }
 
 .c0 .sc-AykKK {

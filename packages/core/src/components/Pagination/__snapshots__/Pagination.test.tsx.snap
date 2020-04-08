@@ -18,8 +18,8 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border: 1px solid #BDBDBD;
-  color: #BDBDBD;
+  border: 1px solid #b0bcc8;
+  color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -43,7 +43,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
 }
 
 .c1 .sc-AykKD * {
-  fill: #BDBDBD;
+  fill: #b0bcc8;
 }
 
 .c1:disabled {
@@ -165,8 +165,8 @@ exports[`Pagination component should render correctly with all the default props
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border: 1px solid #BDBDBD;
-  color: #BDBDBD;
+  border: 1px solid #b0bcc8;
+  color: #b0bcc8;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -190,7 +190,7 @@ exports[`Pagination component should render correctly with all the default props
 }
 
 .c1 .sc-AykKD * {
-  fill: #BDBDBD;
+  fill: #b0bcc8;
 }
 
 .c1:disabled {

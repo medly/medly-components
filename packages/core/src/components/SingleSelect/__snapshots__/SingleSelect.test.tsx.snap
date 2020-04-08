@@ -4,7 +4,7 @@ exports[`SingleSelect component should render correctly with all the props given
 .c2 {
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -93,7 +93,7 @@ exports[`SingleSelect component should render correctly with all the props given
   display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
   width: -webkit-max-content;
@@ -118,7 +118,7 @@ exports[`SingleSelect component should render correctly with all the props given
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
 }
 
 .c8 {
@@ -129,23 +129,23 @@ exports[`SingleSelect component should render correctly with all the props given
   border: 0;
   width: calc(100% - 16px);
   cursor: not-allowed;
-  background-color: #E0E0E0;
+  background-color: #C7D0D8;
 }
 
 .c8::-webkit-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c8::-moz-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c8:-ms-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c8::placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c8::-webkit-file-upload-button {
@@ -176,12 +176,12 @@ exports[`SingleSelect component should render correctly with all the props given
 }
 
 .c9 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c5 {
-  border: 1px solid #E0E0E0;
-  background-color: #E0E0E0;
+  border: 1px solid #C7D0D8;
+  background-color: #dfe4e9;
   cursor: not-allowed;
   border-radius: 4px;
   box-sizing: border-box;
@@ -359,7 +359,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
   width: -webkit-max-content;
@@ -384,7 +384,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
 }
 
 .c6 {
@@ -399,19 +399,19 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 }
 
 .c6::-webkit-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6::-moz-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6:-ms-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6::placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6::-webkit-file-upload-button {
@@ -442,11 +442,11 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 }
 
 .c7 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c3 {
-  border: 1px solid #E0E0E0;
+  border: 1px solid #C7D0D8;
   background-color: #ffffff;
   cursor: pointer;
   border-radius: 4px;

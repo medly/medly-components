@@ -18,8 +18,8 @@ exports[`Button component should render properly when it is disabled 1`] = `
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border: 1px solid #BDBDBD;
-  background-color: #BDBDBD;
+  border: 1px solid #b0bcc8;
+  background-color: #b0bcc8;
   color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -82,7 +82,7 @@ exports[`Button component should render properly with any icon at the beginning 
 }
 
 .c2 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c4 {
@@ -177,7 +177,7 @@ exports[`Button component should render properly with any icon at the end of the
 }
 
 .c2 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c4 {
@@ -355,8 +355,8 @@ exports[`Button component should render properly with outlined variant and secon
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border: 1px solid red;
-  color: red;
+  border: 1px solid #cc0000;
+  color: #cc0000;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -380,7 +380,7 @@ exports[`Button component should render properly with outlined variant and secon
 }
 
 .c0 .sc-AykKC * {
-  fill: red;
+  fill: #cc0000;
 }
 
 .c0:disabled {

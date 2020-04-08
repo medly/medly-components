@@ -7,13 +7,13 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
 }
 
 .c10 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -21,7 +21,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
 .c6 {
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
   margin: 0px 0px 0px 8px;
   cursor: not-allowed;
 }
@@ -91,8 +91,8 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
   position: relative;
   width: 16px;
   height: 16px;
-  border: 1px solid #E0E0E0;
-  background-color: #E0E0E0;
+  border: 1px solid #C7D0D8;
+  background-color: #C7D0D8;
   border-radius: 15%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

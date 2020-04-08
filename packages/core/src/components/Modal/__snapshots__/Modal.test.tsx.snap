@@ -57,7 +57,7 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 .c6 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c3 {
@@ -133,7 +133,7 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 .c1 {
-  background: #FAFAFA;
+  background: #eff2f4;
   padding: 32px 64px;
   border-radius: 5px;
   max-width: 80%;

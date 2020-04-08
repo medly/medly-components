@@ -32,8 +32,8 @@ exports[`Tab should render properly 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #FE8D6B;
-  border-bottom: 2px solid #FE8D6B;
+  color: #F27221;
+  border-bottom: 2px solid #F27221;
 }
 
 .c1:hover {
@@ -53,7 +53,7 @@ exports[`Tab should render properly 1`] = `
 }
 
 .c1 .sc-AykKD * {
-  fill: #FE8D6B;
+  fill: #F27221;
 }
 
 .c3 {

@@ -7,11 +7,11 @@ exports[`Toast should render properly if child jsx 1`] = `
 }
 
 .c2 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c3 .c1 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -36,16 +36,16 @@ exports[`Toast should render properly if child jsx 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #008000;
+  background-color: #CCE6CC;
 }
 
 .c0 .sc-AykKF {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c0 .c1 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 <div>
@@ -88,7 +88,7 @@ exports[`Toast should render properly with error variant 1`] = `
 }
 
 .c2 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c4 {
@@ -98,12 +98,12 @@ exports[`Toast should render properly with error variant 1`] = `
 }
 
 .c5 .c3 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c5 .c1 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -128,16 +128,16 @@ exports[`Toast should render properly with error variant 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: red;
+  background-color: #F5CCCC;
 }
 
 .c0 .c3 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c0 .c1 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 <div>
@@ -182,7 +182,7 @@ exports[`Toast should render properly with info variant 1`] = `
 }
 
 .c2 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c4 {
@@ -192,12 +192,12 @@ exports[`Toast should render properly with info variant 1`] = `
 }
 
 .c5 .c3 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c5 .c1 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -222,16 +222,16 @@ exports[`Toast should render properly with info variant 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #6BA3E5;
+  background-color: #ccdefc;
 }
 
 .c0 .c3 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c0 .c1 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 <div>
@@ -276,7 +276,7 @@ exports[`Toast should render properly with success variant 1`] = `
 }
 
 .c2 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c4 {
@@ -286,12 +286,12 @@ exports[`Toast should render properly with success variant 1`] = `
 }
 
 .c5 .c3 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c5 .c1 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -316,16 +316,16 @@ exports[`Toast should render properly with success variant 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #008000;
+  background-color: #CCE6CC;
 }
 
 .c0 .c3 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c0 .c1 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 <div>
@@ -370,7 +370,7 @@ exports[`Toast should render properly with warning variant 1`] = `
 }
 
 .c2 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c4 {
@@ -380,12 +380,12 @@ exports[`Toast should render properly with warning variant 1`] = `
 }
 
 .c5 .c3 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c5 .c1 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -410,16 +410,16 @@ exports[`Toast should render properly with warning variant 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #FBD94F;
+  background-color: #FEF7DC;
 }
 
 .c0 .c3 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c0 .c1 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 <div>

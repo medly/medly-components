@@ -12,7 +12,7 @@ exports[`BottomList should render properly 1`] = `
   position: absolute;
   width: calc(16px * 1.33);
   height: calc(16px * 0.2);
-  background: #616161;
+  background: #757575;
   border-radius: calc(16px * 0.2);
   opacity: 1;
   left: 0;
@@ -75,7 +75,7 @@ exports[`BottomList should render properly 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  border-bottom: 1px solid #F56A41;
+  border-bottom: 1px solid #F38037;
 }
 
 .c9 > .c10 {
@@ -102,7 +102,7 @@ exports[`BottomList should render properly 1`] = `
   -ms-flex: unset;
   flex: unset;
   overflow: unset;
-  background-color: #E07C5E;
+  background-color: #F38037;
 }
 
 .c2 {
@@ -152,8 +152,8 @@ exports[`BottomList should render properly 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: default;
-  border-bottom: 1px solid #F56A41;
-  background-color: #E07C5E;
+  border-bottom: 1px solid #F38037;
+  background-color: #F27221;
   border: 0;
 }
 
@@ -170,7 +170,7 @@ exports[`BottomList should render properly 1`] = `
 
 .c0 {
   height: 100vh;
-  background-color: #F5F5F5;
+  background-color: #dfe4e9;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -179,7 +179,7 @@ exports[`BottomList should render properly 1`] = `
   transition: 0.2s;
   left: 0;
   width: 60px;
-  background-color: #FE8D6B;
+  background-color: #F38037;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -191,12 +191,12 @@ exports[`BottomList should render properly 1`] = `
 
 .c0 ul::-webkit-scrollbar {
   width: 5px;
-  background-color: #FE8D6B;
+  background-color: #F38037;
 }
 
 .c0 ul::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #9E9E9E;
+  background-color: #98A7B7;
 }
 
 .c0 svg * {

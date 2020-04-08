@@ -52,7 +52,7 @@ exports[`Stepper component should change active step when click on any step 1`] 
   border-radius: 50%;
   overflow: hidden;
   color: #ffffff;
-  background: #BDBDBD;
+  background: #C7D0D8;
 }
 
 .c7 .c4 {
@@ -64,7 +64,7 @@ exports[`Stepper component should change active step when click on any step 1`] 
 }
 
 .c7 + .c4 {
-  color: #BDBDBD;
+  color: #C7D0D8;
   font-size: 16px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -216,7 +216,7 @@ exports[`Stepper component should render correctly with all the default props 1`
   border-radius: 50%;
   overflow: hidden;
   color: #ffffff;
-  background: #BDBDBD;
+  background: #C7D0D8;
 }
 
 .c7 .c4 {
@@ -228,7 +228,7 @@ exports[`Stepper component should render correctly with all the default props 1`
 }
 
 .c7 + .c4 {
-  color: #BDBDBD;
+  color: #C7D0D8;
   font-size: 16px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -376,7 +376,7 @@ exports[`Stepper component should render correctly with all the props given 1`] 
   border-radius: 50%;
   overflow: hidden;
   color: #ffffff;
-  background: #BDBDBD;
+  background: #C7D0D8;
 }
 
 .c7 .c4 {
@@ -388,7 +388,7 @@ exports[`Stepper component should render correctly with all the props given 1`] 
 }
 
 .c7 + .c4 {
-  color: #BDBDBD;
+  color: #C7D0D8;
   font-size: 16px;
   -webkit-user-select: none;
   -moz-user-select: none;

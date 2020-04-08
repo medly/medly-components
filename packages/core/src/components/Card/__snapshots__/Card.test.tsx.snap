@@ -35,7 +35,7 @@ exports[`Card component should render correctly with all the default props 1`] =
   -ms-flex-align: center;
   align-items: center;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
@@ -87,7 +87,7 @@ exports[`Card component should render flat variant properly  1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
   border-radius: 0;
   margin: 0;
@@ -148,12 +148,12 @@ exports[`Card component should render properly when flow direction is horizontal
   -ms-flex-pack: center;
   justify-content: center;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
 .c0 > div + div {
-  border-left: 1px solid #9E9E9E;
+  border-left: 1px solid #98A7B7;
 }
 
 .c1 {
@@ -184,12 +184,12 @@ exports[`Card component should render properly when flow direction is horizontal
   -ms-flex-pack: start;
   justify-content: flex-start;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
 .c1 > div + div {
-  border-left: 1px solid #9E9E9E;
+  border-left: 1px solid #98A7B7;
 }
 
 .c3 {
@@ -220,12 +220,12 @@ exports[`Card component should render properly when flow direction is horizontal
   -ms-flex-pack: end;
   justify-content: flex-end;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
 .c3 > div + div {
-  border-left: 1px solid #9E9E9E;
+  border-left: 1px solid #98A7B7;
 }
 
 .c4 {
@@ -256,12 +256,12 @@ exports[`Card component should render properly when flow direction is horizontal
   -ms-flex-pack: center;
   justify-content: center;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
 .c4 > div + div {
-  border-left: 1px solid #9E9E9E;
+  border-left: 1px solid #98A7B7;
 }
 
 .c5 {
@@ -292,12 +292,12 @@ exports[`Card component should render properly when flow direction is horizontal
   -ms-flex-pack: center;
   justify-content: center;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
 .c5 > div + div {
-  border-left: 1px solid #9E9E9E;
+  border-left: 1px solid #98A7B7;
 }
 
 <div>
@@ -388,7 +388,7 @@ exports[`Card component should render properly when fullWidth and fullHeight is 
   -ms-flex-align: center;
   align-items: center;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
   width: calc(100% - 10px);
   height: calc(100% - 10px);
@@ -442,19 +442,19 @@ exports[`Card component should render properly when it is clickable  1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
   cursor: pointer;
 }
 
 .c1:hover {
-  border-color: #FE8D6B;
-  background-color: #FE8D6B;
+  border-color: #F38037;
+  background-color: #F38037;
 }
 
 .c1:hover.c0:hover * {
   color: #ffffff;
-  background-color: #FE8D6B;
+  background-color: #F38037;
 }
 
 .c1:active {
@@ -509,12 +509,12 @@ exports[`Card component should render properly when separator is set true flow d
   -ms-flex-align: flex-start;
   align-items: flex-start;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
 }
 
 .c0 > div + div {
-  border-top: 1px solid #9E9E9E;
+  border-top: 1px solid #98A7B7;
 }
 
 .c1 {
@@ -545,7 +545,7 @@ exports[`Card component should render properly when separator is set true flow d
   -ms-flex-align: flex-start;
   align-items: flex-start;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
   border-radius: 0;
   margin: 0;
@@ -586,7 +586,7 @@ exports[`Card component should render properly when separator is set true flow d
   -ms-flex-align: flex-end;
   align-items: flex-end;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
   border-radius: 0;
   margin: 0;
@@ -627,7 +627,7 @@ exports[`Card component should render properly when separator is set true flow d
   -ms-flex-align: center;
   align-items: center;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
   border-radius: 0;
   margin: 0;
@@ -668,7 +668,7 @@ exports[`Card component should render properly when separator is set true flow d
   -ms-flex-align: center;
   align-items: center;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
   border-radius: 0;
   margin: 0;
@@ -760,15 +760,15 @@ exports[`Card component should render solid variant properly  1`] = `
   -ms-flex-align: center;
   align-items: center;
   border-radius: 4px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #dfe4e9;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-  border-color: #FE8D6B;
-  background-color: #FE8D6B;
+  border-color: #F38037;
+  background-color: #F38037;
 }
 
 .c0.c0 * {
   color: #ffffff;
-  background-color: #FE8D6B;
+  background-color: #F38037;
 }
 
 <div>

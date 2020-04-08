@@ -18,7 +18,7 @@ exports[`FieldWithLabel component should render properly when lable is not prese
 .c4 {
   grid-area: description;
   margin: 5px 0 0 2px;
-  color: #818A91;
+  color: #012040;
 }
 
 .c0 {
@@ -66,7 +66,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -99,7 +99,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c6 {
   grid-area: description;
   margin: 5px 0 0 2px;
-  color: #818A91;
+  color: #012040;
 }
 
 .c0 {
@@ -150,7 +150,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -183,7 +183,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c6 {
   grid-area: description;
   margin: 5px 0 0 2px;
-  color: #818A91;
+  color: #012040;
 }
 
 .c0 {
@@ -235,7 +235,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -268,7 +268,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c6 {
   grid-area: description;
   margin: 5px 0 0 2px;
-  color: #818A91;
+  color: #012040;
 }
 
 .c0 {
@@ -320,7 +320,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -353,7 +353,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c6 {
   grid-area: description;
   margin: 5px 0 0 2px;
-  color: #818A91;
+  color: #012040;
 }
 
 .c0 {

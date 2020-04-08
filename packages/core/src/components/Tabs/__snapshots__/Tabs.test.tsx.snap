@@ -157,8 +157,8 @@ exports[`Tabs should render properly without any prop 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #FE8D6B;
-  border-bottom: 2px solid #FE8D6B;
+  color: #F27221;
+  border-bottom: 2px solid #F27221;
 }
 
 .c1:hover {
@@ -178,7 +178,7 @@ exports[`Tabs should render properly without any prop 1`] = `
 }
 
 .c1 .sc-AykKD * {
-  fill: #FE8D6B;
+  fill: #F27221;
 }
 
 .c3 {
@@ -344,8 +344,8 @@ exports[`Tabs should select expected tab on click on any tab, when only defaultA
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #FE8D6B;
-  border-bottom: 2px solid #FE8D6B;
+  color: #F27221;
+  border-bottom: 2px solid #F27221;
 }
 
 .c3:hover {
@@ -365,7 +365,7 @@ exports[`Tabs should select expected tab on click on any tab, when only defaultA
 }
 
 .c3 .sc-AykKD * {
-  fill: #FE8D6B;
+  fill: #F27221;
 }
 
 .c1 {

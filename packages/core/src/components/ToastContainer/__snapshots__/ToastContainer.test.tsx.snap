@@ -7,7 +7,7 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
 }
 
 .c3 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c5 {
@@ -17,12 +17,12 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
 }
 
 .c6 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c6 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c1 {
@@ -47,16 +47,16 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #008000;
+  background-color: #CCE6CC;
 }
 
 .c1 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c1 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -123,7 +123,7 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
 }
 
 .c3 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c5 {
@@ -133,12 +133,12 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
 }
 
 .c6 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c6 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c1 {
@@ -163,16 +163,16 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #008000;
+  background-color: #CCE6CC;
 }
 
 .c1 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c1 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -236,7 +236,7 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
 }
 
 .c3 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c5 {
@@ -246,12 +246,12 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
 }
 
 .c6 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c6 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c1 {
@@ -276,16 +276,16 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #008000;
+  background-color: #CCE6CC;
 }
 
 .c1 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c1 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -349,7 +349,7 @@ exports[`ToastContainer should render properly with position left 1`] = `
 }
 
 .c3 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c5 {
@@ -359,12 +359,12 @@ exports[`ToastContainer should render properly with position left 1`] = `
 }
 
 .c6 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c6 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c1 {
@@ -389,16 +389,16 @@ exports[`ToastContainer should render properly with position left 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #008000;
+  background-color: #CCE6CC;
 }
 
 .c1 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c1 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -465,7 +465,7 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
 }
 
 .c3 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c5 {
@@ -475,12 +475,12 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
 }
 
 .c6 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c6 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c1 {
@@ -505,16 +505,16 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #008000;
+  background-color: #CCE6CC;
 }
 
 .c1 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c1 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -576,7 +576,7 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
 }
 
 .c3 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c5 {
@@ -586,12 +586,12 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
 }
 
 .c6 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c6 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c1 {
@@ -616,16 +616,16 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #008000;
+  background-color: #CCE6CC;
 }
 
 .c1 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c1 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -687,7 +687,7 @@ exports[`ToastContainer should render properly with position right 1`] = `
 }
 
 .c3 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c5 {
@@ -697,12 +697,12 @@ exports[`ToastContainer should render properly with position right 1`] = `
 }
 
 .c6 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c6 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c1 {
@@ -727,16 +727,16 @@ exports[`ToastContainer should render properly with position right 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #008000;
+  background-color: #CCE6CC;
 }
 
 .c1 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c1 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -803,7 +803,7 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
 }
 
 .c3 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c5 {
@@ -813,12 +813,12 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
 }
 
 .c6 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c6 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c1 {
@@ -843,16 +843,16 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #008000;
+  background-color: #CCE6CC;
 }
 
 .c1 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c1 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -914,7 +914,7 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
 }
 
 .c3 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c5 {
@@ -924,12 +924,12 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
 }
 
 .c6 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c6 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c1 {
@@ -954,16 +954,16 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #008000;
+  background-color: #CCE6CC;
 }
 
 .c1 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c1 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -1025,7 +1025,7 @@ exports[`ToastContainer should render properly with position top 1`] = `
 }
 
 .c3 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c5 {
@@ -1035,12 +1035,12 @@ exports[`ToastContainer should render properly with position top 1`] = `
 }
 
 .c6 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c6 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c1 {
@@ -1065,16 +1065,16 @@ exports[`ToastContainer should render properly with position top 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #008000;
+  background-color: #CCE6CC;
 }
 
 .c1 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c1 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -1141,7 +1141,7 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
 }
 
 .c3 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c5 {
@@ -1151,12 +1151,12 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
 }
 
 .c6 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c6 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c1 {
@@ -1181,16 +1181,16 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #008000;
+  background-color: #CCE6CC;
 }
 
 .c1 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c1 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {
@@ -1254,7 +1254,7 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
 }
 
 .c3 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c5 {
@@ -1264,12 +1264,12 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
 }
 
 .c6 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c6 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c1 {
@@ -1294,16 +1294,16 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
   opacity: 1;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
-  background-color: #008000;
+  background-color: #CCE6CC;
 }
 
 .c1 .c4 {
-  color: #ffffff;
+  color: #012040;
   margin: 0 10px;
 }
 
 .c1 .c2 * {
-  fill: #ffffff;
+  fill: #012040;
 }
 
 .c0 {

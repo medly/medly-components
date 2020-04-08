@@ -4,7 +4,7 @@ exports[`DatePicker component should render properly when value is of date type 
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -75,7 +75,7 @@ exports[`DatePicker component should render properly when value is of date type 
   display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
   width: 100%;
@@ -98,7 +98,7 @@ exports[`DatePicker component should render properly when value is of date type 
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
 }
 
 .c6 {
@@ -109,23 +109,23 @@ exports[`DatePicker component should render properly when value is of date type 
   border: 0;
   width: calc(100% - 16px);
   cursor: not-allowed;
-  background-color: #E0E0E0;
+  background-color: #C7D0D8;
 }
 
 .c6::-webkit-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6::-moz-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6:-ms-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6::placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6::-webkit-file-upload-button {
@@ -200,7 +200,7 @@ exports[`DatePicker component should render properly when value is of string typ
 .c1 {
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -271,7 +271,7 @@ exports[`DatePicker component should render properly when value is of string typ
   display: flex;
   background-clip: padding-box;
   box-sizing: border-box;
-  border: 1px solid #E0E0E0;
+  border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
   width: 100%;
@@ -294,7 +294,7 @@ exports[`DatePicker component should render properly when value is of string typ
   padding: 8px;
   font-size: 14px;
   font-weight: 400;
-  color: #616161;
+  color: #435465;
 }
 
 .c6 {
@@ -305,23 +305,23 @@ exports[`DatePicker component should render properly when value is of string typ
   border: 0;
   width: calc(100% - 16px);
   cursor: not-allowed;
-  background-color: #E0E0E0;
+  background-color: #C7D0D8;
 }
 
 .c6::-webkit-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6::-moz-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6:-ms-input-placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6::placeholder {
-  color: #9E9E9E;
+  color: #98A7B7;
 }
 
 .c6::-webkit-file-upload-button {

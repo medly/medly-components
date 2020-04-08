@@ -7,7 +7,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 }
 
 .c9 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c15 {
@@ -16,7 +16,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 }
 
 .c15 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c6 {
@@ -24,7 +24,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   position: absolute;
   width: calc(16px * 1.33);
   height: calc(16px * 0.2);
-  background: #616161;
+  background: #757575;
   border-radius: calc(16px * 0.2);
   opacity: 1;
   left: 0;
@@ -98,7 +98,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   -ms-flex: unset;
   flex: unset;
   overflow: unset;
-  background-color: #E07C5E;
+  background-color: #F38037;
 }
 
 .c2 {
@@ -161,7 +161,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  border-bottom: 1px solid #F56A41;
+  border-bottom: 1px solid #F38037;
 }
 
 .c11 > .c12 {
@@ -214,7 +214,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   box-sizing: border-box;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
-  border-color: #F56A41;
+  border-color: #F38037;
 }
 
 .c18 > li > :first-child {
@@ -246,8 +246,8 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: default;
-  border-bottom: 1px solid #F56A41;
-  background-color: #E07C5E;
+  border-bottom: 1px solid #F38037;
+  background-color: #F27221;
   border: 0;
 }
 
@@ -277,7 +277,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 
 .c0 {
   height: 100vh;
-  background-color: #F5F5F5;
+  background-color: #dfe4e9;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -286,7 +286,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   transition: 0.2s;
   left: 0;
   width: 250px;
-  background-color: #FE8D6B;
+  background-color: #F38037;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -298,12 +298,12 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 
 .c0 ul::-webkit-scrollbar {
   width: 5px;
-  background-color: #FE8D6B;
+  background-color: #F38037;
 }
 
 .c0 ul::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #9E9E9E;
+  background-color: #98A7B7;
 }
 
 .c0 svg * {
@@ -475,7 +475,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 }
 
 .c9 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c15 {
@@ -484,7 +484,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 }
 
 .c15 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c6 {
@@ -492,7 +492,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   position: absolute;
   width: calc(16px * 1.33);
   height: calc(16px * 0.2);
-  background: #616161;
+  background: #757575;
   border-radius: calc(16px * 0.2);
   opacity: 1;
   left: 0;
@@ -566,7 +566,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   -ms-flex: unset;
   flex: unset;
   overflow: unset;
-  background-color: #E07C5E;
+  background-color: #F38037;
 }
 
 .c2 {
@@ -629,7 +629,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  border-bottom: 1px solid #F56A41;
+  border-bottom: 1px solid #F38037;
 }
 
 .c11 > .c12 {
@@ -701,7 +701,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   box-sizing: border-box;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
-  border-color: #F56A41;
+  border-color: #F38037;
 }
 
 .c19 > li > :first-child {
@@ -733,8 +733,8 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   -ms-user-select: none;
   user-select: none;
   cursor: default;
-  border-bottom: 1px solid #F56A41;
-  background-color: #E07C5E;
+  border-bottom: 1px solid #F38037;
+  background-color: #F27221;
   border: 0;
 }
 
@@ -764,7 +764,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 
 .c0 {
   height: 100vh;
-  background-color: #F5F5F5;
+  background-color: #dfe4e9;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -773,7 +773,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   transition: 0.2s;
   left: 0;
   width: 250px;
-  background-color: #FE8D6B;
+  background-color: #F38037;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -785,12 +785,12 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 
 .c0 ul::-webkit-scrollbar {
   width: 5px;
-  background-color: #FE8D6B;
+  background-color: #F38037;
 }
 
 .c0 ul::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #9E9E9E;
+  background-color: #98A7B7;
 }
 
 .c0 svg * {
@@ -963,7 +963,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 }
 
 .c11 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c6 {
@@ -971,7 +971,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   position: absolute;
   width: calc(16px * 1.33);
   height: calc(16px * 0.2);
-  background: #616161;
+  background: #757575;
   border-radius: calc(16px * 0.2);
   opacity: 1;
   left: 0;
@@ -1087,7 +1087,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
-  background-color: #616161;
+  background-color: #607890;
   display: grid;
   grid-template-areas: 'icon header dropdownIcon' 'submenu submenu submenu';
   grid-template-columns: min-content 1fr min-content;
@@ -1107,7 +1107,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  border-bottom: 1px solid #424242;
+  border-bottom: 1px solid #435465;
 }
 
 .c9 > .sc-fzXfRb {
@@ -1124,7 +1124,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 
 .c9 ul,
 .c9 li {
-  border-color: #424242;
+  border-color: #435465;
 }
 
 .c9 > .c12 {
@@ -1159,7 +1159,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: default;
-  border-bottom: 1px solid #F56A41;
+  border-bottom: 1px solid #F38037;
 }
 
 .c14 > .c12 {
@@ -1194,8 +1194,8 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: default;
-  border-bottom: 1px solid #F56A41;
-  background-color: #E07C5E;
+  border-bottom: 1px solid #F38037;
+  background-color: #F27221;
   border: 0;
 }
 
@@ -1212,7 +1212,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 
 .c0 {
   height: 100vh;
-  background-color: #F5F5F5;
+  background-color: #dfe4e9;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -1221,7 +1221,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   transition: 0.2s;
   left: 0;
   width: 60px;
-  background-color: #FE8D6B;
+  background-color: #F38037;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1233,12 +1233,12 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 
 .c0 ul::-webkit-scrollbar {
   width: 5px;
-  background-color: #FE8D6B;
+  background-color: #F38037;
 }
 
 .c0 ul::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #9E9E9E;
+  background-color: #98A7B7;
 }
 
 .c0 svg * {
@@ -1342,7 +1342,7 @@ exports[`SideNav should render properly 1`] = `
 }
 
 .c8 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c14 {
@@ -1351,7 +1351,7 @@ exports[`SideNav should render properly 1`] = `
 }
 
 .c14 * {
-  fill: #616161;
+  fill: #757575;
 }
 
 .c5 {
@@ -1359,7 +1359,7 @@ exports[`SideNav should render properly 1`] = `
   position: absolute;
   width: calc(16px * 1.33);
   height: calc(16px * 0.2);
-  background: #616161;
+  background: #757575;
   border-radius: calc(16px * 0.2);
   opacity: 1;
   left: 0;
@@ -1414,7 +1414,7 @@ exports[`SideNav should render properly 1`] = `
   -ms-flex: unset;
   flex: unset;
   overflow: unset;
-  background-color: #E07C5E;
+  background-color: #F38037;
 }
 
 .c2 {
@@ -1477,7 +1477,7 @@ exports[`SideNav should render properly 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  border-bottom: 1px solid #F56A41;
+  border-bottom: 1px solid #F38037;
 }
 
 .c10 > .c11 {
@@ -1530,7 +1530,7 @@ exports[`SideNav should render properly 1`] = `
   box-sizing: border-box;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
-  border-color: #F56A41;
+  border-color: #F38037;
 }
 
 .c17 > li > :first-child {
@@ -1562,8 +1562,8 @@ exports[`SideNav should render properly 1`] = `
   -ms-user-select: none;
   user-select: none;
   cursor: default;
-  border-bottom: 1px solid #F56A41;
-  background-color: #E07C5E;
+  border-bottom: 1px solid #F38037;
+  background-color: #F27221;
   border: 0;
 }
 
@@ -1580,7 +1580,7 @@ exports[`SideNav should render properly 1`] = `
 
 .c0 {
   height: 100vh;
-  background-color: #F5F5F5;
+  background-color: #dfe4e9;
   width: 0;
   position: fixed;
   z-index: 1;
@@ -1589,7 +1589,7 @@ exports[`SideNav should render properly 1`] = `
   transition: 0.2s;
   left: 0;
   width: 60px;
-  background-color: #FE8D6B;
+  background-color: #F38037;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1601,12 +1601,12 @@ exports[`SideNav should render properly 1`] = `
 
 .c0 ul::-webkit-scrollbar {
   width: 5px;
-  background-color: #FE8D6B;
+  background-color: #F38037;
 }
 
 .c0 ul::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #9E9E9E;
+  background-color: #98A7B7;
 }
 
 .c0 svg * {

@@ -23,8 +23,8 @@ exports[`Chip component should render properly when it is disabled 1`] = `
   max-width: -moz-max-content;
   max-width: max-content;
   cursor: not-allowed;
-  border: 1px solid #BDBDBD;
-  background-color: #BDBDBD;
+  border: 1px solid #b0bcc8;
+  background-color: #b0bcc8;
   color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -221,8 +221,8 @@ exports[`Chip component should render properly with solid variant 1`] = `
   max-width: -moz-max-content;
   max-width: max-content;
   cursor: default;
-  border: 1px solid #FE8D6B;
-  background-color: #FE8D6B;
+  border: 1px solid #F38037;
+  background-color: #F38037;
   color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

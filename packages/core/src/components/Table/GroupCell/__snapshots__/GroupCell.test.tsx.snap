@@ -45,8 +45,8 @@ exports[`GroupCell should render GroupCellTitle properly 1`] = `
   text-overflow: initial;
   overflow: auto;
   white-space: normal;
-  border-right: 1px solid #E0E0E0;
-  border-bottom: 1px solid #E0E0E0;
+  border-right: 1px solid #C7D0D8;
+  border-bottom: 1px solid #C7D0D8;
 }
 
 <div>
