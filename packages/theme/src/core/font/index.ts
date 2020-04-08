@@ -9,7 +9,7 @@ const font: FontTheme = {
     weights,
     faces,
     defaultFontFamily: 'Roboto, Helvetica Neue, Helvetica, Arial, sans-serif',
-    defaultColor: colors.grey[700]
+    defaultColor: colors.grey[800]
 };
 
 export default font;

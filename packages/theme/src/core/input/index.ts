@@ -2,14 +2,14 @@ import colors from '../colors';
 import { InputTheme } from './types';
 
 const input: InputTheme = {
-    color: colors.grey[700],
+    color: colors.grey[800],
     bgColor: colors.white,
-    borderColor: colors.grey[300],
-    descriptionColor: colors.violet[400],
+    borderColor: colors.grey[400],
+    descriptionColor: colors.professionalNavy,
     disabledBgcolor: colors.grey[300],
-    focusedBorderColor: colors.violet[500],
+    focusedBorderColor: colors.professionalNavy,
     placeHolderColor: colors.grey[500],
-    prefixAndSuffixBgColor: colors.grey[200]
+    prefixAndSuffixBgColor: colors.grey[100]
 };
 
 export default input;

@@ -1,0 +1,36 @@
+import { defaultTheme } from '@medly-components/theme';
+import { Button } from '@medly-components/core';
+import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
+import { SingleShadeColors, MultiShadeColors, GreyScale } from './Colors.stories';
+
+<Meta title="Colors" parameters={{ previewTabs: { 'storybook/docs/panel': { index: -1 } } }} />
+
+# Colors
+
+These colors can be used to create a color theme that reflects your brand or style.
+
+### How to use
+
+```tsx
+import { defaultTheme } from '@medly-components/theme';
+
+const color = defaultTheme.colors.medlyGreen[500];
+```
+
+### Colors with single shade
+
+<Preview withToolbar>
+    <SingleShadeColors />
+</Preview>
+
+### Colors with multiple shades
+
+<Preview withToolbar>
+    <MultiShadeColors />
+</Preview>
+
+### GreyScale
+
+<Preview withToolbar>
+    <GreyScale />
+</Preview>

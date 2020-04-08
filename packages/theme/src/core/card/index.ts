@@ -6,7 +6,7 @@ const card: CardTheme = {
     separatorColor: colors.grey[500],
     shadowColor: 'rgba(0,0,0,0.2)',
     borderColor: colors.grey[200],
-    solidBgColor: colors.orange[300],
+    solidBgColor: colors.marigoldOrange[400],
     solidTextColor: colors.white
 };
 

@@ -1,10 +1,10 @@
 import colors from '../colors';
 const reactDatepicker = {
     colors: {
-        accessibility: colors.orange[300],
-        selectedDay: colors.orange[300],
-        selectedDayHover: colors.orange[400],
-        primaryColor: colors.orange[500]
+        accessibility: colors.marigoldOrange[300],
+        selectedDay: colors.marigoldOrange[300],
+        selectedDayHover: colors.marigoldOrange[400],
+        primaryColor: colors.marigoldOrange[500]
     }
 };
 

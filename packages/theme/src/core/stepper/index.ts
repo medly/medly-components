@@ -22,8 +22,8 @@ const stepper: StepperTheme = {
     },
     defaultSize: 'S',
     counterColor: colors.white,
-    activeColor: colors.violet[500],
-    inactiveColor: colors.grey[400]
+    activeColor: colors.professionalNavy,
+    inactiveColor: colors.grey[300]
 };
 
 export default stepper;

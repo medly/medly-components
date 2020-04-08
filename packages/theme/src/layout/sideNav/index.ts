@@ -8,14 +8,14 @@ const sideNav: SideNavTheme = {
     iconSize: 'S',
     textSize: 'M3',
     itemMinHeight: '48px',
-    bgColor: colors.orange[300],
+    bgColor: colors.marigoldOrange[400],
     textColor: colors.white,
     iconColor: colors.white,
-    activeColor: colors.grey[700],
-    borderColor: colors.orange[500],
+    activeColor: colors.grey[600],
+    borderColor: colors.marigoldOrange[400],
     activeBorderColor: colors.grey[800],
-    bottomListBgColor: colors.orange[400],
-    logoBgColor: colors.orange[400]
+    bottomListBgColor: colors.marigoldOrange[400],
+    logoBgColor: colors.marigoldOrange[500]
 };
 
 export default sideNav;

@@ -10,11 +10,11 @@ const checkbox: CheckboxTheme = {
         XL: '48px'
     },
     defaultSize: '16px',
-    fillColor: colors.violet[500],
+    fillColor: colors.professionalNavy,
     bgColor: colors.white,
     disabledBgColor: colors.grey[300],
     borderColor: colors.grey[300],
-    outlineColor: colors.violet[500]
+    outlineColor: colors.professionalNavy
 };
 
 export default checkbox;

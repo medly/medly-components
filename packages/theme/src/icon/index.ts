@@ -1,4 +1,3 @@
-import colors from '../core/colors';
 import { IconTheme } from './types';
 
 const icon: IconTheme = {
@@ -11,7 +10,7 @@ const icon: IconTheme = {
         XXL: '72px',
         XXXL: '96px'
     },
-    defaultColor: colors.grey[700]
+    defaultColor: '#757575'
 };
 
 export default icon;

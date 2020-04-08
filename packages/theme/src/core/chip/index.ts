@@ -2,7 +2,7 @@ import colors from '../colors';
 import { ChipTheme } from './types';
 
 const chip: ChipTheme = {
-    defaultColor: colors.orange[300],
+    defaultColor: colors.marigoldOrange[400],
     disabledColor: colors.grey[400]
 };
 

@@ -1,11 +1,11 @@
-import { configure, addParameters, addDecorator } from '@storybook/react';
+import { DocsContainer, DocsPage } from '@storybook/addon-docs/blocks';
 import { withKnobs } from '@storybook/addon-knobs/react';
-import { jsxDecorator } from 'storybook-addon-jsx';
+import { addDecorator, addParameters, configure } from '@storybook/react';
 import React from 'react';
+import { jsxDecorator } from 'storybook-addon-jsx';
 import { CssBaseline } from '../packages/core/src';
-import { ThemeProvider } from '../packages/utils/src';
 import { defaultTheme } from '../packages/theme/src';
-import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks';
+import { ThemeProvider } from '../packages/utils/src';
 
 addDecorator(jsxDecorator);
 addDecorator(withKnobs);

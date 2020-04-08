@@ -1,3 +1,3 @@
-const black = '#10161A';
+const black = '#13181D';
 
 export default black;

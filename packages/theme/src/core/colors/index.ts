@@ -1,26 +1,30 @@
 import black from './black';
-import blue from './blue';
+import blushedPink from './blushedPink';
+import communityBlue from './communityBlue';
 import green from './green';
 import grey from './grey';
-import orange from './orange';
-import pink from './pink';
+import marigoldOrange from './marigoldOrange';
+import medlyGreen from './medlyGreen';
+import professionalNavy from './professionalNavy';
 import red from './red';
+import springTeal from './springTeal';
+import sunshineYellow from './sunshineYellow';
 import { ColorPallet } from './types';
-import violet from './violet';
 import white from './white';
-import yellow from './yellow';
 
 const colors: ColorPallet = {
     black,
-    blue,
+    blushedPink,
+    communityBlue,
     green,
     grey,
-    orange,
-    pink,
+    marigoldOrange,
+    medlyGreen,
+    professionalNavy,
     red,
-    violet,
-    white,
-    yellow
+    springTeal,
+    sunshineYellow,
+    white
 };
 
 export default colors;

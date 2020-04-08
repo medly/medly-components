@@ -3,12 +3,12 @@ import { SelectTheme } from './types';
 
 const select: SelectTheme = {
     bgColor: colors.white,
-    disabledBgColor: colors.grey[300],
-    outlineColor: colors.violet[500],
+    disabledBgColor: colors.grey[200],
+    outlineColor: colors.professionalNavy,
     borderColor: colors.grey[300],
-    descriptionColor: colors.violet[400],
+    descriptionColor: colors.professionalNavy,
     placeHolderColor: colors.grey[500],
-    selectedBgColor: colors.orange[300],
+    selectedBgColor: colors.marigoldOrange[400],
     selectedTextColor: colors.white
 };
 

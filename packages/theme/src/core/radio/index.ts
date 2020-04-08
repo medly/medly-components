@@ -11,10 +11,10 @@ const radio: RadioTheme = {
     },
     defaultSize: '16px',
     bgColor: colors.white,
-    fillColor: colors.violet[500],
-    borderColor: colors.grey[200],
+    fillColor: colors.professionalNavy,
+    borderColor: colors.grey[300],
     disabledBgcolor: colors.grey[300],
-    outlineColor: colors.violet[500]
+    outlineColor: colors.professionalNavy
 };
 
 export default radio;

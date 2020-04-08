@@ -10,10 +10,10 @@ const toggle: ToggleTheme = {
         XL: '40px'
     },
     defaultSize: 'S',
-    outlineColor: colors.violet[500],
-    checkedBgColor: colors.violet[500],
-    bgColor: colors.grey[300],
-    disabledBgColor: colors.grey[400]
+    outlineColor: colors.professionalNavy,
+    checkedBgColor: colors.professionalNavy,
+    bgColor: colors.grey[200],
+    disabledBgColor: colors.grey[300]
 };
 
 export default toggle;

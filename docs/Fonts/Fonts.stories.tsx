@@ -1,20 +1,20 @@
-import { defaultTheme, FontFaceItem, FontFaceTheme, FontSizeTheme, FontTheme, FontWeightTheme } from '@medly-components/theme';
+import { defaultTheme, FontFaceTheme, FontSizeTheme, FontTheme, FontWeightTheme } from '@medly-components/theme';
 import * as React from 'react';
 
-export const FontThemeInterfcae: React.SFC<FontTheme> = () => null;
-FontThemeInterfcae.defaultProps = {
+export const FontThemeInterface: React.SFC<FontTheme> = () => null;
+FontThemeInterface.defaultProps = {
     ...defaultTheme.font
 };
-export const FontFaceThemeInterfcae: React.SFC<FontFaceTheme> = () => null;
-FontFaceThemeInterfcae.defaultProps = {
+export const FontFaceThemeInterface: React.SFC<FontFaceTheme> = () => null;
+FontFaceThemeInterface.defaultProps = {
     ...defaultTheme.font.faces[0]
 };
 
-export const FontSizeThemeInterfcae: React.SFC<FontSizeTheme> = () => null;
-FontSizeThemeInterfcae.defaultProps = {
+export const FontSizeThemeInterface: React.SFC<FontSizeTheme> = () => null;
+FontSizeThemeInterface.defaultProps = {
     ...defaultTheme.font.sizes
 };
-export const FontWeightThemeInterfcae: React.SFC<FontWeightTheme> = () => null;
-FontWeightThemeInterfcae.defaultProps = {
+export const FontWeightThemeInterface: React.SFC<FontWeightTheme> = () => null;
+FontWeightThemeInterface.defaultProps = {
     ...defaultTheme.font.weights
 };
