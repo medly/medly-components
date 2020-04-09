@@ -8,6 +8,7 @@ const font: FontTheme = {
     sizes,
     weights,
     faces,
+    defaultFontSize: '1.4rem',
     defaultFontFamily: 'Roboto, Helvetica Neue, Helvetica, Arial, sans-serif',
     defaultColor: colors.grey[800]
 };

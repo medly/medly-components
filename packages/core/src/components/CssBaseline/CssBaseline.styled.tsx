@@ -1,6 +1,5 @@
 import { defaultTheme } from '@medly-components/theme';
 import { createGlobalStyle } from '@medly-components/utils';
-
 import fonts from './fonts';
 
 export const CssBaseline = createGlobalStyle`
@@ -8,10 +7,12 @@ export const CssBaseline = createGlobalStyle`
     html {
         height: 100%;
         width: 100%;
+        font-size: 62.5%;
     }
     body {
         font-family: ${props => props.theme.font.defaultFontFamily || 'sans-serif'};
         color:  ${props => props.theme.font.defaultColor};
+        font-size: ${props => props.theme.font.defaultFontSize};
         margin: 0px;
         height: 100%;
         width: 100%;
