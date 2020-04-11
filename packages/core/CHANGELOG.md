@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.25](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.24...@medly-components/core@1.0.0-beta.25) (2020-04-11)
+
+
+### Features
+
+* add typography and refactor components based on new typography ([462f2aa](https://github.com/medlypharmacy/medly-components/commit/462f2aa5b24c968b941887e6fcea5fd4e5c7b3f1))
+* **theme:** add base font in html tag to calculate rem units in all components ([fe40a8e](https://github.com/medlypharmacy/medly-components/commit/fe40a8e06d650969723a5b0fb8559ddf60bc282e))
+
+
+
+
+
 # [1.0.0-beta.24](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.23...@medly-components/core@1.0.0-beta.24) (2020-04-02)
 
 

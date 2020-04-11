@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.16](https://github.com/medlypharmacy/medly-components/compare/@medly-components/utils@1.0.0-beta.15...@medly-components/utils@1.0.0-beta.16) (2020-04-11)
+
+
+### Features
+
+* add typography and refactor components based on new typography ([462f2aa](https://github.com/medlypharmacy/medly-components/commit/462f2aa5b24c968b941887e6fcea5fd4e5c7b3f1))
+
+
+
+
+
 # [1.0.0-beta.15](https://github.com/medlypharmacy/medly-components/compare/@medly-components/utils@1.0.0-beta.14...@medly-components/utils@1.0.0-beta.15) (2020-04-02)
 
 
