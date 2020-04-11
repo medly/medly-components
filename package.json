@@ -30,7 +30,7 @@
         "lint:css": "stylelint 'packages/**/src/**/*.tsx'",
         "lint:ts": "eslint 'packages/**/src/**/*.{ts,tsx}'",
         "prerelease": "yarn build && lerna version",
-        "release": "lerna publish",
+        "release": "lerna publish from-git",
         "test": "run-s typecheck test:jest",
         "test:jest": "jest --passWithNoTests --config jest.config.js",
         "test:update": "run-s typecheck \"test:jest -- -u\"",
