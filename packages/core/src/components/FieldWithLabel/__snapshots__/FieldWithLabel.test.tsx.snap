@@ -2,9 +2,15 @@
 
 exports[`FieldWithLabel component should render properly when lable is not present 1`] = `
 .c3 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c2 {
@@ -24,6 +30,10 @@ exports[`FieldWithLabel component should render properly when lable is not prese
 .c0 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
@@ -64,17 +74,28 @@ exports[`FieldWithLabel component should render properly when lable is not prese
 
 exports[`FieldWithLabel component should render properly with props labelPosition: bottom, fullWidth: false, fieldWithMaxContent: false 1`] = `
 .c1 {
-  font-size: 14px;
-  font-weight: 400;
   color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
 
 .c5 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c4 {
@@ -105,6 +126,10 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c0 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-width: 300px;
   grid-template-areas: 'field' 'description' 'label';
 }
@@ -148,17 +173,28 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 
 exports[`FieldWithLabel component should render properly with props labelPosition: left, fullWidth: true, fieldWithMaxContent: true 1`] = `
 .c1 {
-  font-size: 14px;
-  font-weight: 400;
   color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
 
 .c5 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c4 {
@@ -189,6 +225,10 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c0 {
   margin: 8px 0;
   display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-width: 300px;
   grid-template-columns: minmax(max-content,25%) max-content;
   grid-template-areas: 'label field' 'random description';
@@ -233,17 +273,28 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 
 exports[`FieldWithLabel component should render properly with props labelPosition: right, fullWidth: true, fieldWithMaxContent: false 1`] = `
 .c1 {
-  font-size: 14px;
-  font-weight: 400;
   color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
 
 .c5 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c4 {
@@ -274,6 +325,10 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c0 {
   margin: 8px 0;
   display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-width: 300px;
   grid-template-columns: minmax(max-content,80%) minmax(max-content,25%);
   grid-template-areas: 'field label' 'description random';
@@ -318,17 +373,28 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 
 exports[`FieldWithLabel component should render properly with props labelPosition: top, fullWidth: false, fieldWithMaxContent: true 1`] = `
 .c1 {
-  font-size: 14px;
-  font-weight: 400;
   color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
 
 .c5 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c4 {
@@ -359,6 +425,10 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 .c0 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-width: 300px;
   grid-template-areas: 'label' 'field' 'description';
 }

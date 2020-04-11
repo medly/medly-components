@@ -2,9 +2,15 @@
 
 exports[`Tabs should hide the tab if hide prop is given 1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c1 {
@@ -127,9 +133,15 @@ exports[`Tabs should not render when there is no children 1`] = `<div />`;
 
 exports[`Tabs should render properly without any prop 1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c1 {
@@ -314,9 +326,15 @@ exports[`Tabs should render properly without any prop 1`] = `
 
 exports[`Tabs should select expected tab on click on any tab, when only defaultActive prop is given 1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c3 {

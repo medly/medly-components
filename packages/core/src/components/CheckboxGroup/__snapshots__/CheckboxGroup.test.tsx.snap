@@ -11,17 +11,27 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
 }
 
 .c1 {
-  font-size: 14px;
-  font-weight: 400;
   color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
 
 .c6 {
-  font-size: 14px;
-  font-weight: 400;
   color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   margin: 0px 0px 0px 8px;
   cursor: not-allowed;
 }
@@ -48,6 +58,10 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
 .c0 {
   margin: 8px 0;
   display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
 }
@@ -69,6 +83,10 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
 .c5 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-columns: max-content minmax(max-content,25%);
   grid-template-areas: 'field label' 'description random';
 }

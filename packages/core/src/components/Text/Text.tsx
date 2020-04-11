@@ -8,7 +8,7 @@ export const Text: SFC<Props> & WithStyle = React.memo(
         const componentType = useMemo(() => {
             let type: keyof JSX.IntrinsicElements | React.ComponentType<any> = 'span';
 
-            if (textVariant === 'body1' || textVariant == 'body2') {
+            if (!textVariant || textVariant === 'body1' || textVariant == 'body2') {
                 type = textWeight === 'Strong' || textWeight === 'ExtraStrong' ? 'strong' : 'span';
             } else {
                 type = textVariant;

@@ -2,9 +2,15 @@
 
 exports[`Chip component should render properly when it is disabled 1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
@@ -69,9 +75,15 @@ exports[`Chip component should render properly when it is disabled 1`] = `
 
 exports[`Chip component should render properly with flat variant 1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
@@ -134,9 +146,15 @@ exports[`Chip component should render properly with flat variant 1`] = `
 
 exports[`Chip component should render properly with outlined variant 1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
@@ -200,9 +218,15 @@ exports[`Chip component should render properly with outlined variant 1`] = `
 
 exports[`Chip component should render properly with solid variant 1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {

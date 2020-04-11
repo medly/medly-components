@@ -2,9 +2,15 @@
 
 exports[`GroupCell should not render hide prop is given 1`] = `
 .c1 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
@@ -29,16 +35,26 @@ exports[`GroupCell should not render hide prop is given 1`] = `
 
 exports[`GroupCell should render GroupCellTitle properly 1`] = `
 .c1 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
-  font-size: 14px;
+  margin: 0;
+  font-size: 1.4rem;
   font-weight: 400;
-  font-size: 16px;
-  font-weight: 700;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   text-align: center;
   padding: 5px 0 5px 10px;
   grid-column: -1/1;
@@ -64,9 +80,15 @@ exports[`GroupCell should render GroupCellTitle properly 1`] = `
 
 exports[`GroupCell should render properly 1`] = `
 .c1 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {

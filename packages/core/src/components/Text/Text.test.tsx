@@ -8,8 +8,13 @@ describe('Text Component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('should render strong element for strong', () => {
+    it('should render strong html tag for textWeight Strong', () => {
         const { container } = render(<Text textWeight="Strong" />);
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render strong html tag for textWeight ExtraStrong', () => {
+        const { container } = render(<Text textWeight="ExtraStrong" />);
         expect(container).toMatchSnapshot();
     });
 

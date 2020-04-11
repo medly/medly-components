@@ -92,9 +92,15 @@ exports[`Toast should render properly with error variant 1`] = `
 }
 
 .c4 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c5 .c3 {
@@ -186,9 +192,15 @@ exports[`Toast should render properly with info variant 1`] = `
 }
 
 .c4 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c5 .c3 {
@@ -280,9 +292,15 @@ exports[`Toast should render properly with success variant 1`] = `
 }
 
 .c4 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c5 .c3 {
@@ -374,9 +392,15 @@ exports[`Toast should render properly with warning variant 1`] = `
 }
 
 .c4 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c5 .c3 {

@@ -2,9 +2,15 @@
 
 exports[`Button component should render properly when it is disabled 1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 500;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
@@ -86,9 +92,15 @@ exports[`Button component should render properly with any icon at the beginning 
 }
 
 .c4 {
-  font-size: 14px;
-  font-weight: 500;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
@@ -181,9 +193,15 @@ exports[`Button component should render properly with any icon at the end of the
 }
 
 .c4 {
-  font-size: 14px;
-  font-weight: 500;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
@@ -267,9 +285,15 @@ exports[`Button component should render properly with any icon at the end of the
 
 exports[`Button component should render properly with flat variant and primary color 1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 500;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
@@ -339,9 +363,15 @@ exports[`Button component should render properly with flat variant and primary c
 
 exports[`Button component should render properly with outlined variant and secondary color 1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 500;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
@@ -412,9 +442,15 @@ exports[`Button component should render properly with outlined variant and secon
 
 exports[`Button component should render properly with solid variant 1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 500;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
@@ -486,9 +522,15 @@ exports[`Button component should render properly with solid variant 1`] = `
 
 exports[`Button component should wrap children into Text component when rendering string or number 1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 500;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {

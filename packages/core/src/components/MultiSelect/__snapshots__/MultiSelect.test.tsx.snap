@@ -20,15 +20,27 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c8 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c16 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: grey;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c6 {
@@ -78,9 +90,14 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c2 {
-  font-size: 14px;
-  font-weight: 400;
   color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -105,6 +122,10 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 .c1 {
   margin: 8px 0;
   display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-width: 300px;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
@@ -127,6 +148,10 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 .c11 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -173,6 +198,10 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c12:focus-within {
@@ -180,9 +209,14 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c12 > * {
-  padding: 8px;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  padding: 8px;
   color: #435465;
 }
 
@@ -389,6 +423,10 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 .c1 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
@@ -412,6 +450,10 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 .c4 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -458,6 +500,10 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c5:focus-within {
@@ -465,9 +511,14 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c5 > * {
-  padding: 8px;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  padding: 8px;
   color: #435465;
 }
 
@@ -648,15 +699,27 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c8 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c16 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: grey;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c6 {
@@ -706,9 +769,14 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c2 {
-  font-size: 14px;
-  font-weight: 400;
   color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -733,6 +801,10 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 .c1 {
   margin: 8px 0;
   display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-width: 300px;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
@@ -755,6 +827,10 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 .c11 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -801,6 +877,10 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c12:focus-within {
@@ -808,9 +888,14 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c12 > * {
-  padding: 8px;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  padding: 8px;
   color: #435465;
 }
 
@@ -1017,6 +1102,10 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 .c1 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
@@ -1040,6 +1129,10 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 .c4 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -1086,6 +1179,10 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c5:focus-within {
@@ -1093,9 +1190,14 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c5 > * {
-  padding: 8px;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  padding: 8px;
   color: #435465;
 }
 

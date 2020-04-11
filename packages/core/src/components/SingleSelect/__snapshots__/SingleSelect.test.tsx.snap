@@ -2,9 +2,14 @@
 
 exports[`SingleSelect component should render correctly with all the props given 1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 400;
   color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
@@ -15,9 +20,15 @@ exports[`SingleSelect component should render correctly with all the props given
 }
 
 .c11 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: grey;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c3 {
@@ -40,6 +51,10 @@ exports[`SingleSelect component should render correctly with all the props given
 .c1 {
   margin: 8px 0;
   display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-width: 300px;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
@@ -62,6 +77,10 @@ exports[`SingleSelect component should render correctly with all the props given
 .c6 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -108,6 +127,10 @@ exports[`SingleSelect component should render correctly with all the props given
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c7:focus-within {
@@ -115,9 +138,14 @@ exports[`SingleSelect component should render correctly with all the props given
 }
 
 .c7 > * {
-  padding: 8px;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  padding: 8px;
   color: #435465;
 }
 
@@ -305,6 +333,10 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 .c1 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
   grid-template-columns: auto;
@@ -328,6 +360,10 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 .c4 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -374,6 +410,10 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c5:focus-within {
@@ -381,9 +421,14 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 }
 
 .c5 > * {
-  padding: 8px;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  padding: 8px;
   color: #435465;
 }
 

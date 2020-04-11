@@ -2,9 +2,14 @@
 
 exports[`FileInput component should render properly with all props 1`] = `
 .c1 {
-  font-size: 14px;
-  font-weight: 400;
   color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   margin: 0px 0px 8px 0px;
   cursor: default;
 }
@@ -15,9 +20,15 @@ exports[`FileInput component should render properly with all props 1`] = `
 }
 
 .c5 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: grey;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c2 {
@@ -40,6 +51,10 @@ exports[`FileInput component should render properly with all props 1`] = `
 .c0 {
   margin: 8px 0;
   display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-areas: 'label' 'field' 'description';
 }
 
@@ -63,9 +78,14 @@ exports[`FileInput component should render properly with all props 1`] = `
 }
 
 .c3 {
-  padding: 8px;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  padding: 8px;
   color: #435465;
   background-clip: padding-box;
   background-color: #C7D0D8;
@@ -126,6 +146,10 @@ exports[`FileInput component should render properly with default props 1`] = `
 .c0 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -151,9 +175,14 @@ exports[`FileInput component should render properly with default props 1`] = `
 }
 
 .c1 {
-  padding: 8px;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  padding: 8px;
   color: #435465;
   background-clip: padding-box;
   background-color: #ffffff;

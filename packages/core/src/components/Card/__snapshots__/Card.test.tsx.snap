@@ -2,9 +2,15 @@
 
 exports[`Card component should render correctly with all the default props 1`] = `
 .c1 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
@@ -54,9 +60,15 @@ exports[`Card component should render correctly with all the default props 1`] =
 
 exports[`Card component should render flat variant properly  1`] = `
 .c1 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
@@ -115,9 +127,15 @@ exports[`Card component should render flat variant properly  1`] = `
 
 exports[`Card component should render properly when flow direction is horizontal and separator is set true 1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
@@ -355,9 +373,15 @@ exports[`Card component should render properly when flow direction is horizontal
 
 exports[`Card component should render properly when fullWidth and fullHeight is set true 1`] = `
 .c1 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
@@ -409,9 +433,15 @@ exports[`Card component should render properly when fullWidth and fullHeight is 
 
 exports[`Card component should render properly when it is clickable  1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c1 {
@@ -476,9 +506,15 @@ exports[`Card component should render properly when it is clickable  1`] = `
 
 exports[`Card component should render properly when separator is set true flow direction is vertical 1`] = `
 .c2 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {
@@ -727,9 +763,15 @@ exports[`Card component should render properly when separator is set true flow d
 
 exports[`Card component should render solid variant properly  1`] = `
 .c1 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c0 {

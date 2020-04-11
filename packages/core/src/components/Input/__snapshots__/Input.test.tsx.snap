@@ -2,17 +2,28 @@
 
 exports[`Input component should render correctly when fullWidth & required props are falsy 1`] = `
 .c1 {
-  font-size: 14px;
-  font-weight: 400;
   color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   margin: 0px 8px 0px 0px;
   cursor: default;
 }
 
 .c5 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c2 {
@@ -35,6 +46,10 @@ exports[`Input component should render correctly when fullWidth & required props
 .c0 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
   grid-template-areas: 'label field' 'random description';
 }
@@ -80,6 +95,10 @@ exports[`Input component should render correctly when fullWidth & required props
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c3:focus-within {
@@ -87,9 +106,14 @@ exports[`Input component should render correctly when fullWidth & required props
 }
 
 .c3 > * {
-  padding: 8px;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  padding: 8px;
   color: #435465;
 }
 
@@ -158,6 +182,10 @@ exports[`Input component should render correctly when it is disabled 1`] = `
 .c0 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -204,6 +232,10 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c1:focus-within {
@@ -211,9 +243,14 @@ exports[`Input component should render correctly when it is disabled 1`] = `
 }
 
 .c1 > * {
-  padding: 8px;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  padding: 8px;
   color: #435465;
 }
 
@@ -274,6 +311,10 @@ exports[`Input component should render correctly when label and description are 
 .c0 {
   margin: 8px 8px 8px 0;
   display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
@@ -320,6 +361,10 @@ exports[`Input component should render correctly when label and description are 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c1:focus-within {
@@ -327,9 +372,14 @@ exports[`Input component should render correctly when label and description are 
 }
 
 .c1 > * {
-  padding: 8px;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  padding: 8px;
   color: #435465;
 }
 
@@ -387,9 +437,14 @@ exports[`Input component should render correctly when label and description are 
 
 exports[`Input component should render correctly with all the props given 1`] = `
 .c1 {
-  font-size: 14px;
-  font-weight: 400;
   color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   margin: 0px 0px 8px 0px;
   cursor: default;
 }
@@ -400,9 +455,15 @@ exports[`Input component should render correctly with all the props given 1`] = 
 }
 
 .c7 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: grey;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c2 {
@@ -425,6 +486,10 @@ exports[`Input component should render correctly with all the props given 1`] = 
 .c0 {
   margin: 8px 0;
   display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   grid-template-areas: 'label' 'field' 'description';
 }
 
@@ -467,6 +532,10 @@ exports[`Input component should render correctly with all the props given 1`] = 
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c3:focus-within {
@@ -474,9 +543,14 @@ exports[`Input component should render correctly with all the props given 1`] = 
 }
 
 .c3 > * {
-  padding: 8px;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  padding: 8px;
   color: #435465;
 }
 

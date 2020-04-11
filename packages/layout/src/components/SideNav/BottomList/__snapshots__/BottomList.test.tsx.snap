@@ -2,9 +2,15 @@
 
 exports[`BottomList should render properly 1`] = `
 .c11 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c5 {
@@ -79,8 +85,14 @@ exports[`BottomList should render properly 1`] = `
 }
 
 .c9 > .c10 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
   grid-area: header;
-  font-size: 16px;
   color: #ffffff;
   font-weight: 400;
 }
@@ -158,8 +170,14 @@ exports[`BottomList should render properly 1`] = `
 }
 
 .c1 > .c10 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
   grid-area: header;
-  font-size: 16px;
   color: #ffffff;
   font-weight: 400;
 }
@@ -223,6 +241,7 @@ exports[`BottomList should render properly 1`] = `
   >
     <div
       class="c1"
+      font-variant="body1"
     >
       <div
         class="c2"
@@ -251,6 +270,7 @@ exports[`BottomList should render properly 1`] = `
     >
       <li
         class="c9"
+        font-variant="body1"
       >
         <span
           class="c10 c11"

@@ -2,9 +2,15 @@
 
 exports[`Text Component should render span element by default 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 400;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 <div>
@@ -14,11 +20,37 @@ exports[`Text Component should render span element by default 1`] = `
 </div>
 `;
 
-exports[`Text Component should render strong element for strong 1`] = `
+exports[`Text Component should render strong html tag for textWeight ExtraStrong 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 700;
+  margin: 0;
   color: inherit;
+  font-size: 1.4rem;
+  font-weight: 800;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+<div>
+  <strong
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Text Component should render strong html tag for textWeight Strong 1`] = `
+.c0 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 <div>
@@ -30,9 +62,15 @@ exports[`Text Component should render strong element for strong 1`] = `
 
 exports[`Text Component should render with all the props 1`] = `
 .c0 {
-  font-size: 14px;
-  font-weight: 300;
+  margin: 0;
   color: pink;
+  font-size: 1.4rem;
+  font-weight: 300;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   display: block;
   margin: 8px 0;
   text-transform: uppercase;
