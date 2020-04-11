@@ -1,6 +1,6 @@
 import { DocsContainer, DocsPage } from '@storybook/addon-docs/blocks';
-import { withKnobs } from '@storybook/addon-knobs/react';
-import { addDecorator, addParameters, configure } from '@storybook/react';
+import { withKnobs } from '@storybook/addon-knobs';
+import { addDecorator, addParameters } from '@storybook/react';
 import React from 'react';
 import { jsxDecorator } from 'storybook-addon-jsx';
 import { CssBaseline } from '../packages/core/src';
@@ -23,17 +23,14 @@ addParameters({
         brandTitle: 'Medly-Components'
     },
     docs: {
-        container: DocsContainer,
+        container: props => (
+            <ThemeProvider theme={defaultTheme}>
+                <>
+                    <CssBaseline />
+                    <DocsContainer {...props} />
+                </>
+            </ThemeProvider>
+        ),
         page: DocsPage
     }
 });
-
-configure(
-    [
-        require.context('../docs', false, /Introduction\.stories\.mdx/),
-        require.context('../docs', true, /\.stories\.mdx$/),
-        require.context('../packages', false, /Introduction\.stories\.mdx/),
-        require.context('../packages', true, /\.stories\.(tsx|mdx)$/)
-    ],
-    module
-);

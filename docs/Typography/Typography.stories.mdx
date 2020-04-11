@@ -1,6 +1,8 @@
+import { Text } from '@medly-components/core';
 import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Typography.stories';
+import { VerticalAlign } from './Typography.stories';
 
 <Meta title="Typography" />
 
@@ -34,26 +36,40 @@ Use font variant to decide the font style(`font-size`,`font-weight`,`line-height
 | body2   | span     |
 
 <Preview withToolbar>
-    <Story name="FontVariants">{stories.FontVariants()}</Story>
+    <VerticalAlign>
+        <Text textVariant="h1">Header 1 / Open Sans - Medium</Text>
+        <Text textVariant="h2">Header 2 / Open Sans - Medium</Text>
+        <Text textVariant="h3">Header 3 / Open Sans - Regular</Text>
+        <Text textVariant="h4">Header 4 / Open Sans - Strong</Text>
+        <Text textVariant="h5">HEADER 5 / Open Sans - Strong</Text>
+        <Text textVariant="body1">Body 1 / Open Sans - Regular</Text>
+        <Text textVariant="body2">Body 2 / Open Sans - Regular</Text>
+    </VerticalAlign>
 </Preview>
 
 #### Font Variants Theme
 
 Default font style for each variant.
 
-<Props of={stories.FontVariants} />
+<Props of={stories.FontVariantsThemeInterface} />
 
 ### Font Weights
 
 <Preview withToolbar>
-    <Story name="FontWeights">{stories.FontWeights()}</Story>
+    <VerticalAlign>
+        <Text textWeight="Light">Body 2 / Open Sans - Light</Text>
+        <Text textWeight="Regular">Body 2 / Open Sans - Regular</Text>
+        <Text textWeight="Medium">Body 2 / Open Sans - Medium</Text>
+        <Text textWeight="Strong">Body 2 / Open Sans - Strong</Text>
+        <Text textWeight="ExtraStrong">Body 2 / Open Sans - Extra Strong</Text>
+    </VerticalAlign>
 </Preview>
 
 #### Font Weights Theme
 
 Default font style for each variant.
 
-<Props of={stories.FontWeights} />
+<Props of={stories.FontWeightThemeInterface} />
 
 ### FontTheme
 

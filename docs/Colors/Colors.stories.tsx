@@ -45,7 +45,7 @@ export const SingleShadeColors = () => {
             {Object.entries(defaultTheme.colors)
                 .filter(([_, color]) => typeof color === 'string')
                 .map(([name, color]: Array<string>) => (
-                    <div key="name">
+                    <div key={name}>
                         <Text textVariant="body1" fullWidth>
                             {name}
                         </Text>
@@ -62,7 +62,7 @@ export const MultiShadeColors = () => {
             {Object.entries(defaultTheme.colors)
                 .filter(([name, color]) => typeof color !== 'string' && name !== 'grey')
                 .map(([name, color]: Array<string>) => (
-                    <div key="name">
+                    <div key={name}>
                         <Text textVariant="body1" fullWidth>
                             {name}
                         </Text>
@@ -81,7 +81,7 @@ export const GreyScale = () => {
             {Object.entries(defaultTheme.colors)
                 .filter(([name]) => name === 'grey')
                 .map(([name, color]: Array<string>) => (
-                    <div key="name">
+                    <div key={name}>
                         <Text textVariant="body1" fullWidth>
                             {name}
                         </Text>

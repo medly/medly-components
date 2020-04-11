@@ -2,8 +2,9 @@ import { defaultTheme } from '@medly-components/theme';
 import { Button } from '@medly-components/core';
 import { Preview, Meta, Props, Story } from '@storybook/addon-docs/blocks';
 import * as stories from './Colors.stories.tsx';
+import { SingleShadeColors, MultiShadeColors, GreyScale } from './Colors.stories.tsx';
 
-<Meta title="Colors" parameters={{ previewTabs: { 'storybook/docs/panel': { index: -1 } } }} />
+<Meta title="Colors" />
 
 # Colors
 
@@ -20,17 +21,17 @@ const color = defaultTheme.colors.medlyGreen[500];
 ### Colors with single shade
 
 <Preview withToolbar>
-    <Story name="SingleShadeColors">{stories.SingleShadeColors()}</Story>
+    <SingleShadeColors />
 </Preview>
 
 ### Colors with multiple shades
 
 <Preview withToolbar>
-    <Story name="MultiShadeColors">{stories.MultiShadeColors()}</Story>
+    <MultiShadeColors />
 </Preview>
 
 ### GreyScale
 
 <Preview withToolbar>
-    <Story name="GreyScale">{stories.GreyScale()}</Story>
+    <GreyScale />
 </Preview>
