@@ -4,11 +4,21 @@ import { TextStyled } from './Text.styled';
 import { Props } from './types';
 
 export const Text: SFC<Props> & WithStyle = React.memo(
-    React.forwardRef((props, ref) => {
-        const componentType = useMemo(() => (props.textWeight === 'Strong' ? 'strong' : 'span'), [props.textWeight]);
+    React.forwardRef(({ as, textVariant, textWeight, children, ...restProps }, ref) => {
+        const componentType = useMemo(() => {
+            let type: keyof JSX.IntrinsicElements | React.ComponentType<any> = 'span';
+
+            if (textVariant === 'body1' || textVariant == 'body2') {
+                type = textWeight === 'Strong' || textWeight === 'ExtraStrong' ? 'strong' : 'span';
+            } else {
+                type = textVariant;
+            }
+
+            return type;
+        }, [textWeight, textVariant]);
         return (
-            <TextStyled {...props} as={componentType} ref={ref}>
-                {props.children}
+            <TextStyled {...{ textVariant, textWeight, ...restProps }} as={as || componentType} ref={ref}>
+                {children}
             </TextStyled>
         );
     })

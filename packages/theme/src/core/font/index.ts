@@ -1,16 +1,18 @@
 import colors from '../colors';
 import faces from './faces';
-import sizes from './sizes';
 import { FontTheme } from './types';
+import variants from './variants';
 import weights from './weights';
 
 const font: FontTheme = {
-    sizes,
+    variants,
     weights,
     faces,
-    defaultFontSize: '1.4rem',
-    defaultFontFamily: 'Roboto, Helvetica Neue, Helvetica, Arial, sans-serif',
-    defaultColor: colors.grey[800]
+    defaults: {
+        color: colors.grey[800],
+        variant: 'body2',
+        fontFamily: 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif'
+    }
 };
 
 export default font;

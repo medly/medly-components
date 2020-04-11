@@ -4,19 +4,19 @@ const avatar: AvatarTheme = {
     sizes: {
         S: {
             avatarSize: '30px',
-            fontSize: 'M3'
+            fontVariant: 'body2'
         },
         M: {
             avatarSize: '60px',
-            fontSize: 'L2'
+            fontVariant: 'h3'
         },
         L: {
             avatarSize: '90px',
-            fontSize: 'L3'
+            fontVariant: 'h2'
         },
         XL: {
             avatarSize: '120px',
-            fontSize: 'L4'
+            fontVariant: 'h1'
         }
     },
     defaults: {

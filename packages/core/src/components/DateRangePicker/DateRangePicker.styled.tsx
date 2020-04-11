@@ -1,8 +1,8 @@
-import { styled } from '@medly-components/utils';
+import { getFontStyle, styled } from '@medly-components/utils';
 import { getPosition } from '../Popover/PopoverWrapper/PopoverWrapper.styled';
 import { StyledProps } from './types';
 
-export const DateRangePickerStyled = styled('div').attrs(({ theme: { input, text, font } }) => ({ input, text, font }))<StyledProps>`
+export const DateRangePickerStyled = styled('div').attrs(({ theme: { input, font } }) => ({ input, font }))<StyledProps>`
     & > div:first-child {
         div {
             z-index: 5;
@@ -34,12 +34,11 @@ export const DateRangePickerStyled = styled('div').attrs(({ theme: { input, text
                 text-align: center;
                 border: 0;
                 input {
+                    ${getFontStyle}
                     text-align: center;
                     max-width: 90px;
                     min-height: unset;
                     padding: 0;
-                    font-size: ${({ font, text }) => font.sizes[text.defaults.textSize]};
-                    font-weight: ${({ font, text }) => font.weights[text.defaults.textWeight]};
                     color: ${props => props.input.color};
                     background-clip: padding-box;
                     box-sizing: border-box;

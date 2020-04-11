@@ -6,7 +6,7 @@ const sideNav: SideNavTheme = {
     closeSize: '60px',
     openSize: '250px',
     iconSize: 'S',
-    textSize: 'M3',
+    fontVariant: 'body1',
     itemMinHeight: '48px',
     bgColor: colors.marigoldOrange[400],
     textColor: colors.white,

@@ -14,8 +14,6 @@ export const GroupCell = styled('div').attrs(({ gridTemplateColumns }: Props) =>
 `;
 
 export const GroupCellTitle = styled(Text.Style)<WithThemeProp>`
-    font-size: ${({ theme }) => theme.font.sizes.M3};
-    font-weight: ${({ theme }) => theme.font.weights.Strong};
     text-align: center;
     padding: 5px 0 5px 10px;
     grid-column: -1/1;

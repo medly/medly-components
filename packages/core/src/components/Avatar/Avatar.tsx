@@ -21,6 +21,5 @@ export const Avatar: SFC<Props> & WithStyle = React.memo(
         );
     })
 );
-
 Avatar.displayName = 'Avatar';
 Avatar.Style = AvatarStyled;

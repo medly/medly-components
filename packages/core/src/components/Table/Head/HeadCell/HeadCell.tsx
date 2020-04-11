@@ -72,7 +72,7 @@ const HeadCell: React.SFC<HeadCellProps> & WithStyle = React.memo(props => {
         <HeadCellStyled ref={cellEl} frozen={frozen} hide={hide}>
             {React.Children.map(children, c => {
                 return isValidStringOrNumber(c) ? (
-                    <Text textWeight="Strong" textSize="M3">
+                    <Text textWeight="Strong" textVariant="h5">
                         {c}
                     </Text>
                 ) : (

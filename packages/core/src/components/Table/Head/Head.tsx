@@ -41,7 +41,9 @@ const Head: React.SFC<Props> = React.memo(props => {
                     const fieldName = field ? `${field}.${config.field}` : config.field;
                     return config.children ? (
                         <GroupCell key={index} hide={config.hide} gridTemplateColumns={getGridTemplateColumns(config.children)}>
-                            <GroupCellTitle>{config.title}</GroupCellTitle>
+                            <GroupCellTitle textVariant="h5" textWeight="Strong">
+                                {config.title}
+                            </GroupCellTitle>
                             {headCell(config.children, fieldName)}
                         </GroupCell>
                     ) : (

@@ -1,6 +1,6 @@
 import { defaultTheme } from '@medly-components/theme';
 import { css, styled } from '@medly-components/utils';
-import { Props, StyledProps } from './types';
+import { Props } from './types';
 
 const uppercase = () => css`
     text-transform: uppercase;
@@ -9,21 +9,23 @@ const uppercase = () => css`
 const lineThrough = () => css`
     text-decoration: line-through;
 `;
+const getTextStyle = ({ theme, ...props }: Props) => {
+    const { textColor, textVariant, textWeight } = props,
+        { defaults, weights, variants } = theme.font,
+        { fontSize, fontWeight, lineHeight, letterSpacing } = variants[textVariant || defaults.variant];
 
-const getMappedProps = ({ theme: { text, font }, ...props }: Props) => {
-    const { defaults } = text;
-    const { textSize, textWeight, textColor } = props;
-    return {
-        textColor,
-        textSize: font.sizes[textSize || defaults.textSize],
-        textWeight: font.weights[textWeight || defaults.textWeight]
-    };
+    return css`
+        margin: 0;
+        color: ${textColor};
+        font-size: ${fontSize};
+        font-weight: ${weights[textWeight || fontWeight]};
+        letter-spacing: ${letterSpacing};
+        line-height: ${lineHeight};
+    `;
 };
 
-export const TextStyled = styled('span').attrs(getMappedProps)<StyledProps>`
-    font-size: ${({ textSize }) => textSize};
-    font-weight: ${({ textWeight }) => textWeight};
-    color: ${({ textColor }) => textColor};
+export const TextStyled = styled('span')<Props>`
+    ${getTextStyle}
 
     ${({ fullWidth, theme }) =>
         fullWidth &&

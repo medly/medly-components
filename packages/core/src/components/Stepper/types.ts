@@ -6,13 +6,6 @@ export interface CounterProps extends WithThemeProp, Omit<HTMLProps<HTMLDivEleme
     active?: boolean;
 }
 
-export interface CounterStyledProps extends CounterProps {
-    counterSize: string;
-    fontSize: string;
-    bgColor: string;
-    descriptionColor: string;
-}
-
 export interface StepProps extends CounterProps {
     step?: number;
 }

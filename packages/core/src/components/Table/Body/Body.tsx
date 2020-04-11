@@ -54,7 +54,7 @@ const Body: React.SFC<Props> = React.memo(props => {
     if (data.length === 0) {
         return (
             <NoResult>
-                <Text textSize="M3">No result</Text>
+                <Text>No result</Text>
             </NoResult>
         );
     }

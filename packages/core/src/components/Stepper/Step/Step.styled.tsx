@@ -1,47 +1,40 @@
 import { defaultTheme } from '@medly-components/theme';
 import { css, styled } from '@medly-components/utils';
 import Text from '../../Text';
-import { CounterProps, CounterStyledProps } from '../types';
+import { CounterProps } from '../types';
 
-const getSize = ({ counterSize }: CounterStyledProps) => counterSize;
-const getFontSize = ({ fontSize }: CounterStyledProps) => fontSize;
-
-const getMappedProps = ({ theme, size, active }: CounterProps) => {
-    const { font, stepper } = theme;
-    const { sizes, activeColor, inactiveColor, defaultSize } = stepper;
-    const { counterSize, fontSize } = sizes[size || defaultSize];
-
-    return {
-        counterSize,
-        fontSize: font.sizes[fontSize],
-        bgColor: active ? activeColor : inactiveColor,
-        descriptionColor: active ? activeColor : inactiveColor
-    };
-};
-
-export const StepCounterStyled = styled('div').attrs(getMappedProps)<CounterStyledProps>`
+export const StepCounterStyled = styled('div')<CounterProps>`
     display: inline-block;
     text-align: center;
-    width: ${getSize};
-    height: ${getSize};
-    line-height: ${getSize};
     border-radius: 50%;
     overflow: hidden;
-    color: ${({ theme }) => theme.stepper.counterColor};
-    background: ${({ bgColor }) => bgColor};
+    ${({ theme, size, active }) => {
+        const { sizes, activeColor, inactiveColor, defaultSize, counterColor } = theme.stepper,
+            { counterSize, fontVariant } = sizes[size || defaultSize];
 
-    /* This is the counter */
-    ${Text.Style} {
-        user-select: none;
-        font-size: ${getFontSize};
-    }
+        return css`
+            width: ${counterSize};
+            height: ${counterSize};
+            line-height: ${counterSize};
+            background: ${active ? activeColor : inactiveColor};
 
-    /* This is the description */
-    & + ${Text.Style} {
-        color: ${({ descriptionColor }) => descriptionColor};
-        font-size: ${getFontSize};
-        user-select: none;
-    }
+            /* This is the counter */
+            ${Text.Style} {
+                user-select: none;
+                color: ${counterColor};
+                line-height: ${counterSize};
+                font-size: ${theme.font.variants[fontVariant].fontSize};
+            }
+
+            /* This is the description */
+            & + ${Text.Style} {
+                user-select: none;
+                line-height: ${theme.font.variants[fontVariant].lineHeight};
+                font-size: ${theme.font.variants[fontVariant].fontSize};
+                color: ${active ? activeColor : inactiveColor};
+            }
+        `;
+    }}
 `;
 
 StepCounterStyled.defaultProps = {

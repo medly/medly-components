@@ -1,4 +1,4 @@
-import { FontSizes, FontWeights } from '@medly-components/theme';
+import { FontVariants, FontWeights } from '@medly-components/theme';
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
 interface Common extends HTMLProps<HTMLElement>, WithThemeProp {
@@ -13,13 +13,8 @@ interface Common extends HTMLProps<HTMLElement>, WithThemeProp {
 }
 
 export interface Props extends Common {
-    /** Text size */
-    textSize?: FontSizes;
+    /** Text Variant */
+    textVariant?: FontVariants;
     /** Text weight */
     textWeight?: FontWeights;
-}
-
-export interface StyledProps extends Common {
-    textSize?: string;
-    textWeight?: string;
 }

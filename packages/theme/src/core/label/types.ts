@@ -1,9 +1,8 @@
-import { FontSizes, FontWeights } from '../font/types';
+import { FontVariants } from '../font/types';
 
 export interface LabelTheme {
     defaults: {
-        textWeight: FontWeights;
-        textSize: FontSizes;
-        textColor: string;
+        variant: FontVariants;
+        color: string;
     };
 }

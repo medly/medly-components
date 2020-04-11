@@ -1,4 +1,4 @@
-import { CheckboxSizes, FontSizes, FontWeights } from '@medly-components/theme';
+import { CheckboxSizes, FontVariants, FontWeights } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 
@@ -17,8 +17,8 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChang
     disabled?: boolean;
     /** Label position */
     labelPosition?: LabelPositions;
-    /** Label size */
-    labelSize?: FontSizes;
+    /** Label Variant */
+    labelVariant?: FontVariants;
     /** Label weight */
     labelWeight?: FontWeights;
     /** Label color */

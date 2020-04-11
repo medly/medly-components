@@ -48,11 +48,7 @@ const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
         formattedCell = useCallback(() => {
             switch (config.formatter) {
                 case 'boolean':
-                    return (
-                        <Text ref={childRef} textSize="M3">
-                            {data ? 'Yes' : 'No'}
-                        </Text>
-                    );
+                    return <Text ref={childRef}>{data ? 'Yes' : 'No'}</Text>;
                 case 'react-component': {
                     const Component = config.component;
                     return (
@@ -62,11 +58,7 @@ const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
                     );
                 }
                 default:
-                    return (
-                        <Text ref={childRef} textSize="M3">
-                            {data}
-                        </Text>
-                    );
+                    return <Text ref={childRef}>{data}</Text>;
             }
         }, [data, rowId, isLoading, isRowClickDisabled]);
 

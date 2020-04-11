@@ -6,7 +6,7 @@ import { Props } from './types';
 
 export const Toggle: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { size, label, required, labelPosition, labelSize, labelWeight, labelColor, fullWidth, onChange, ...restProps } = props;
+        const { size, label, required, labelPosition, labelVariant, labelWeight, labelColor, fullWidth, onChange, ...restProps } = props;
 
         const changeHandler = useCallback(
             (e: any) => {
@@ -21,7 +21,7 @@ export const Toggle: SFC<Props> & WithStyle = React.memo(
                 {label && (
                     <FieldWithLabel.Label
                         showPointer={!restProps.disabled}
-                        {...{ required, labelPosition, labelSize, labelWeight, labelColor }}
+                        {...{ required, labelPosition, labelVariant, labelWeight, labelColor }}
                         htmlFor={label}
                     >
                         {label}

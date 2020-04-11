@@ -1,6 +1,16 @@
-import { defaultTheme } from '@medly-components/theme';
-import { createGlobalStyle } from '@medly-components/utils';
+import { defaultTheme, Theme } from '@medly-components/theme';
+import { createGlobalStyle, css, getFontStyle } from '@medly-components/utils';
 import fonts from './fonts';
+
+const getTextStyled = ({ theme }: { theme: Theme }) => {
+    const { defaults } = theme.font;
+
+    return css`
+        font-family: ${defaults.fontFamily};
+        color: ${defaults.color};
+        ${getFontStyle}
+    `;
+};
 
 export const CssBaseline = createGlobalStyle`
     ${fonts} 
@@ -10,12 +20,11 @@ export const CssBaseline = createGlobalStyle`
         font-size: 62.5%;
     }
     body {
-        font-family: ${props => props.theme.font.defaultFontFamily || 'sans-serif'};
-        color:  ${props => props.theme.font.defaultColor};
-        font-size: ${props => props.theme.font.defaultFontSize};
-        margin: 0px;
+        margin: 0;
         height: 100%;
         width: 100%;
+       
+       ${getTextStyled}
 
         #root, .root{
             height: 100%;

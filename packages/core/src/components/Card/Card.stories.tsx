@@ -26,14 +26,14 @@ export const Basic = () => (
         fullHeight={boolean('Full Height', false)}
     >
         <Card variant="flat">
-            <Text textWeight="Strong" textSize="L3">
+            <Text textWeight="Strong" textVariant="h2">
                 8
             </Text>
             <Text>Marks</Text>
         </Card>
         <Card variant="flat" flex={6} alignItems="left">
             <Text>1760712004</Text>
-            <Text textSize="L2">Stevens, Hilary</Text>
+            <Text textVariant="h3">Stevens, Hilary</Text>
             <Text>4 Atno Avenue, Morristown, NJ, 07960</Text>
         </Card>
     </Card>

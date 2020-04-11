@@ -3,9 +3,8 @@ import { LabelTheme } from './types';
 
 const label: LabelTheme = {
     defaults: {
-        textSize: 'M2',
-        textWeight: 'Regular',
-        textColor: font.defaultColor
+        variant: 'body2',
+        color: font.defaults.color
     }
 };
 

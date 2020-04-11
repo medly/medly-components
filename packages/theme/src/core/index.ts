@@ -18,7 +18,6 @@ import spacing from './spacing';
 import stepper from './stepper';
 import table from './table';
 import tabs from './tabs';
-import text from './text';
 import toast from './toast';
 import toggle from './toggle';
 
@@ -40,7 +39,6 @@ export const coreDefaultTheme = {
     select,
     stepper,
     spacing,
-    text,
     tabs,
     toast,
     table,

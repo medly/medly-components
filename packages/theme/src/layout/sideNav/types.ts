@@ -1,4 +1,4 @@
-import { FontSizes } from '../../core/types';
+import { FontVariants } from '../../core/types';
 import { IconSizes } from '../../icon/types';
 
 export interface SideNavTheme {
@@ -7,7 +7,7 @@ export interface SideNavTheme {
     openSize: string;
     itemMinHeight: string;
     iconSize: IconSizes;
-    textSize: FontSizes;
+    fontVariant: FontVariants;
     bgColor: string;
     textColor: string;
     iconColor: string;

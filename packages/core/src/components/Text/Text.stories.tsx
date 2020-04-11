@@ -1,15 +1,11 @@
-import { defaultTheme, FontSizes, FontWeights, TextTheme } from '@medly-components/theme';
+import { FontVariants, FontWeights } from '@medly-components/theme';
+import { styled } from '@medly-components/utils/src';
 import { boolean, color, select } from '@storybook/addon-knobs';
 import React from 'react';
 import { Text } from './Text';
 
-const sizeOptions: FontSizes[] = ['S1', 'M1', 'M2', 'M3', 'L1', 'L2', 'L3', 'L4'];
+const variantOptions: FontVariants[] = ['h1', 'h2', 'h3', 'h4', 'h5', 'body1', 'body2'];
 const weightOptions: FontWeights[] = ['Light', 'Regular', 'Medium', 'Strong'];
-
-export const ThemeInterface: React.SFC<TextTheme> = () => null;
-ThemeInterface.defaultProps = {
-    ...defaultTheme.text
-};
 
 export const Basic = () => (
     <Text
@@ -17,9 +13,18 @@ export const Basic = () => (
         uppercase={boolean('Upper Case', false)}
         lineThrough={boolean('Line through', false)}
         textColor={color('Color', '#012040')}
-        textSize={select('Text Size', sizeOptions, 'L1')}
+        textVariant={select('Text Variant', variantOptions, 'body2')}
         textWeight={select('Text Weight', weightOptions, 'Regular')}
     >
         Lorem ipsum dolor sit, amet consectetur adipisicing elit.
     </Text>
 );
+
+export const VerticalAlign = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    & > * {
+        margin-bottom: 8px;
+    }
+`;

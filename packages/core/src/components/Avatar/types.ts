@@ -9,8 +9,3 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size'>, WithThem
     /** Background color */
     bgColor?: string;
 }
-
-export interface StyledProps extends Props {
-    fontSize: string;
-    avatarSize: string;
-}

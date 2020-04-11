@@ -14,7 +14,7 @@ describe('Text Component', () => {
     });
 
     it('should render with all the props', () => {
-        const { container } = render(<Text fullWidth textSize="M2" textWeight="Light" textColor="pink" uppercase lineThrough />);
+        const { container } = render(<Text fullWidth textVariant="body2" textWeight="Light" textColor="pink" uppercase lineThrough />);
         expect(container).toMatchSnapshot();
     });
 });

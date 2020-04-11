@@ -28,6 +28,7 @@ export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('di
     margin: ${({ theme, fullWidth }) =>
         fullWidth ? `${theme.spacing.S} 0` : `${theme.spacing.S} ${theme.spacing.S} ${theme.spacing.S} 0`};
     display: ${({ fullWidth }) => (fullWidth ? 'grid' : 'inline-grid')};
+    align-items: center;
     ${({ minWidth }) =>
         minWidth &&
         css`

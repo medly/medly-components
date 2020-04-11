@@ -1,11 +1,22 @@
-export type FontSizes = 'L1' | 'L2' | 'L3' | 'L4' | 'M1' | 'M2' | 'M3' | 'S1';
-export type FontSizeTheme = { [k in FontSizes]: string };
+export type FontVariants = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'body1' | 'body2';
+export type FontVariantTheme = {
+    [k in FontVariants]: {
+        fontSize: string;
+        fontWeight: FontWeights;
+        lineHeight: string;
+        letterSpacing: string;
+    };
+};
 
-export type FontWeights = 'Light' | 'Regular' | 'Medium' | 'Strong';
-export type FontWeightTheme = { [k in FontWeights]: string };
+export type FontWeights = 'Light' | 'Regular' | 'Medium' | 'Strong' | 'ExtraStrong';
+export type FontWeightTheme = {
+    [k in FontWeights]: string;
+};
 
 export interface FontFaceTheme {
+    /** Font family name */
     fontFamily: string;
+    /** Font faces */
     fontFaces: FontFaceItem[];
 }
 
@@ -17,10 +28,16 @@ export interface FontFaceItem {
 }
 
 export interface FontTheme {
-    defaultColor: string;
-    defaultFontSize: string;
-    defaultFontFamily: string;
-    sizes: FontSizeTheme;
+    /** Font variants */
+    variants: FontVariantTheme;
+    /** Font weights */
     weights: FontWeightTheme;
+    /** Font faces */
     faces: FontFaceTheme[];
+    /** Default font style */
+    defaults: {
+        color: string;
+        variant: FontVariants;
+        fontFamily: string;
+    };
 }

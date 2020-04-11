@@ -10,7 +10,7 @@ describe('Label component', () => {
 
     it('should render correctly with all the props given', () => {
         const { container } = render(
-            <Label required showPointer labelPosition="top" labelSize="M2" labelWeight="Light" labelColor="pink">
+            <Label required showPointer labelPosition="top" labelVariant="body2" labelColor="pink">
                 Demo Label
             </Label>
         );

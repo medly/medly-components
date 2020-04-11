@@ -1,4 +1,4 @@
-import { FontSizes, FontWeights, ToggleSizes } from '@medly-components/theme';
+import { FontVariants, FontWeights, ToggleSizes } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 
@@ -18,8 +18,8 @@ export interface Props extends InputProps, WithThemeProp {
     fullWidth?: boolean;
     /** Label position */
     labelPosition?: LabelPositions;
-    /** Label size */
-    labelSize?: FontSizes;
+    /** Label variant */
+    labelVariant?: FontVariants;
     /** Label color */
     labelColor?: string;
     /** Label weight */

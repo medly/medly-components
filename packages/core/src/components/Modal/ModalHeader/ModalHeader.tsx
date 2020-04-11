@@ -12,7 +12,7 @@ export const ModalHeader: React.SFC<Props> & WithStyle = React.memo(props => {
         <ModalHeaderStyled {...props}>
             {React.Children.map(props.children, c => {
                 return isValidStringOrNumber(c) ? (
-                    <Text textWeight="Strong" textSize="L2">
+                    <Text textWeight="Strong" textVariant="h3">
                         {c}
                     </Text>
                 ) : (

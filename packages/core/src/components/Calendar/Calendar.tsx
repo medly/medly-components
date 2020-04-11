@@ -61,7 +61,7 @@ export const Calendar: React.SFC<Props> = React.memo(({ date, onChange, minSelec
         <Card variant="outlined" {...restProps}>
             <Styled.Header>
                 <Button variant="flat" disabled={isPrevBtnDisabled} onClick={handlePreviousBtnClick}>{`<`}</Button>
-                <Text textSize="L1">{`${CALENDAR_MONTHS[month]} ${year}`}</Text>
+                <Text textVariant="h3">{`${CALENDAR_MONTHS[month]} ${year}`}</Text>
                 <Button variant="flat" disabled={isNextBtnDisabled} onClick={handleNextBtnClick}>{`>`}</Button>
             </Styled.Header>
             <Styled.MonthAndYearSelection>
@@ -97,7 +97,7 @@ export const Calendar: React.SFC<Props> = React.memo(({ date, onChange, minSelec
                             disabled={_date > maxSelectableDate || _date < minSelectableDate}
                             onClick={handleDateChange(_date)}
                         >
-                            <Text textSize="M1">{_date.getDate()}</Text>
+                            <Text>{_date.getDate()}</Text>
                         </Styled.Date>
                     );
                 })}

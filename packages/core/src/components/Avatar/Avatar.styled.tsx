@@ -1,38 +1,37 @@
-import { defaultTheme } from '@medly-components/theme';
-import { styled } from '@medly-components/utils';
+import { css, styled } from '@medly-components/utils';
 import Text from '../Text';
-import { Props, StyledProps } from './types';
+import { Props } from './types';
 
-const getAvatarSize = ({ avatarSize }: StyledProps) => avatarSize;
-
-const getMappedProps = ({ theme, ...props }: Props) => {
-    const { font, avatar } = theme;
-    const { defaults } = avatar;
-    const { size, textColor, bgColor } = props;
-    const { avatarSize, fontSize } = avatar.sizes[size || defaults.size];
-
-    return {
-        avatarSize,
-        fontSize: font.sizes[fontSize],
-        bgColor: bgColor || defaults.bgColor,
-        textColor: textColor || defaults.textColor
-    };
+const getAvatarSize = ({ theme: { avatar }, size }: Props) => {
+    const { sizes, defaults } = avatar;
+    return sizes[size || defaults.size].avatarSize;
 };
 
-export const AvatarStyled = styled('div').attrs(getMappedProps)<StyledProps>`
+const getTextStyle = ({ theme, ...props }: Props) => {
+    const { size, textColor, bgColor } = props,
+        { defaults, sizes } = theme.avatar,
+        { fontVariant, avatarSize } = sizes[size || defaults.size];
+
+    return css`
+        color: ${textColor || defaults.textColor};
+        background: ${bgColor || defaults.bgColor};
+
+        ${Text.Style} {
+            line-height: ${avatarSize};
+            font-size: ${theme.font.variants[fontVariant].fontSize};
+            letter-spacing: ${theme.font.variants[fontVariant].letterSpacing};
+        }
+    `;
+};
+
+export const AvatarStyled = styled('div')<Props>`
     display: inline-block;
     text-align: center;
     width: ${getAvatarSize};
     height: ${getAvatarSize};
-    line-height: ${getAvatarSize};
     border-radius: 50%;
     overflow: hidden;
-    color: ${({ textColor }) => textColor};
-    background: ${({ bgColor }) => bgColor};
-
-    ${Text.Style} {
-        font-size: ${({ fontSize }) => fontSize};
-    }
+    ${getTextStyle}
 
     img {
         width: ${getAvatarSize};
@@ -40,7 +39,3 @@ export const AvatarStyled = styled('div').attrs(getMappedProps)<StyledProps>`
         object-fit: cover;
     }
 `;
-
-AvatarStyled.defaultProps = {
-    theme: defaultTheme
-};

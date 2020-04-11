@@ -1,6 +1,6 @@
 import { Text } from '@medly-components/core';
 import { defaultTheme } from '@medly-components/theme';
-import { css, styled } from '@medly-components/utils';
+import { css, getFontStyle, styled } from '@medly-components/utils';
 import Dropdown from '../DropdownIcon';
 import { NavItemStyledProps } from './types';
 
@@ -52,8 +52,8 @@ export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ .
     
 
     & > ${Text.Style} {
+        ${getFontStyle};
         grid-area: header;
-        font-size: ${({ theme: { font }, textSize }) => font.sizes[textSize]};
         color: ${({ textColor }) => textColor};
         font-weight: ${({ active, theme }) => (active ? theme.font.weights.Strong : theme.font.weights.Regular)};
     }

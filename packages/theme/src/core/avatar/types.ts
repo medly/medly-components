@@ -1,4 +1,4 @@
-import { FontSizes } from '../font/types';
+import { FontVariants } from '../font/types';
 
 export type AvatarSizes = 'S' | 'M' | 'L' | 'XL';
 
@@ -6,7 +6,7 @@ export interface AvatarTheme {
     sizes: {
         [k in AvatarSizes]: {
             avatarSize: string;
-            fontSize: FontSizes;
+            fontVariant: FontVariants;
         };
     };
     defaults: {

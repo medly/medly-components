@@ -1,21 +1,55 @@
 import { Text } from './Text';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './Text.stories';
+import { Basic, VerticalAlign } from './Text.stories';
 
 <Meta title="Core/Text" component={Text} />
 
 # Text
 
-It renders text in `span` html tag when text weight is `light` | `normal` and uses `strong` html tag for rendering text with`strong` text weight.
+Use this to design your content efficiently.
 
-<Preview withToolbar>
-    <Story name="Basic">{stories.Basic()}</Story>
+<Preview>
+    <Story name="Basic">{Basic()}</Story>
+</Preview>
+
+### Text with different Variants
+
+Use font variant to decide the font style(`font-size`,`font-weight`,`line-height`,`letter-spacing`) and `html tag` also. If you have used `textWeight` prop as `Strong`|`ExtraStrong`, then both `body1` and `body2` variant will use `strong` html tag.
+
+| Variant | Html Tag |
+| ------- | -------- |
+| h1      | h1       |
+| h2      | h2       |
+| h3      | h3       |
+| h4      | h4       |
+| h5      | h5       |
+| body1   | span     |
+| body2   | span     |
+
+<Preview>
+    <VerticalAlign>
+        <Text textVariant="h1">Header 1 / Open Sans - Medium</Text>
+        <Text textVariant="h2">Header 2 / Open Sans - Medium</Text>
+        <Text textVariant="h3">Header 3 / Open Sans - Regular</Text>
+        <Text textVariant="h4">Header 4 / Open Sans - Strong</Text>
+        <Text textVariant="h5">HEADER 5 / Open Sans - Strong</Text>
+        <Text textVariant="body1">Body 1 / Open Sans - Regular</Text>
+        <Text textVariant="body2">Body 2 / Open Sans - Regular</Text>
+    </VerticalAlign>
+</Preview>
+
+### Text with different fontWeight
+
+<Preview>
+    <VerticalAlign>
+        <Text textWeight="Light">Body 2 / Open Sans - Light</Text>
+        <Text textWeight="Regular">Body 2 / Open Sans - Regular</Text>
+        <Text textWeight="Medium">Body 2 / Open Sans - Medium</Text>
+        <Text textWeight="Strong">Body 2 / Open Sans - Strong</Text>
+        <Text textWeight="ExtraStrong">Body 2 / Open Sans - Extra Strong</Text>
+    </VerticalAlign>
 </Preview>
 
 ### Props
 
 <Props of={Text} />
-
-### TextTheme
-
-<Props of={stories.ThemeInterface} />

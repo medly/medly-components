@@ -14,7 +14,7 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
             size,
             label,
             labelPosition,
-            labelSize,
+            labelVariant,
             labelWeight,
             labelColor,
             showSelectAll,
@@ -45,11 +45,11 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
         return (
             <FieldWithLabel id={`${label}-checkboxGroup`} ref={ref} fullWidth {...{ fullWidth, labelPosition }}>
                 {label && (
-                    <FieldWithLabel.Label {...{ labelPosition, labelSize, labelWeight, labelColor }}>
+                    <FieldWithLabel.Label {...{ labelPosition, labelVariant, labelWeight, labelColor }}>
                         {showSelectAll ? (
                             <Checkbox
                                 key="select-all"
-                                {...{ size, disabled, labelSize, labelWeight, labelColor }}
+                                {...{ size, disabled, labelVariant, labelWeight, labelColor }}
                                 label={label}
                                 checked={areAllValuesSelected}
                                 onChange={handleSelectAllClick}

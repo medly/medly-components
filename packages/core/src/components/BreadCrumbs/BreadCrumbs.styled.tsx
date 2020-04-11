@@ -2,7 +2,6 @@ import { defaultTheme } from '@medly-components/theme';
 import { styled } from '@medly-components/utils';
 import Link from '../Link';
 import List from '../List';
-import Text from '../Text';
 import { StyledProps } from './types';
 
 export const BreadCrumbsStyled = styled('div').attrs(({ theme: { breadCrumbs } }) => ({ ...breadCrumbs }))<StyledProps>`
@@ -13,9 +12,6 @@ export const BreadCrumbsStyled = styled('div').attrs(({ theme: { breadCrumbs } }
 
     ${Link.Style} {
         color: ${({ textColor }) => textColor};
-        ${Text.Style} {
-            font-size: ${({ theme }) => theme.font.sizes.M3};
-        }
     }
 
     ${List.Style} {

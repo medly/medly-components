@@ -32,8 +32,8 @@ const Color: React.SFC<{ hex: string }> = styled.div<{ hex: string }>`
 
 const ColorLine: React.SFC<{ shade: number | string; hex: string }> = ({ shade, hex }) => (
     <Color hex={hex} key={hex}>
-        <Text textSize="M2">{shade}</Text>
-        <Text textSize="M2">
+        <Text textVariant="body1">{shade}</Text>
+        <Text textVariant="body1">
             <code>{hex}</code>
         </Text>
     </Color>
@@ -46,7 +46,7 @@ export const SingleShadeColors = () => {
                 .filter(([_, color]) => typeof color === 'string')
                 .map(([name, color]: Array<string>) => (
                     <div key="name">
-                        <Text textSize="M3" fullWidth>
+                        <Text textVariant="body1" fullWidth>
                             {name}
                         </Text>
                         <ColorLine hex={color} shade="" />
@@ -63,7 +63,7 @@ export const MultiShadeColors = () => {
                 .filter(([name, color]) => typeof color !== 'string' && name !== 'grey')
                 .map(([name, color]: Array<string>) => (
                     <div key="name">
-                        <Text textSize="M3" fullWidth>
+                        <Text textVariant="body1" fullWidth>
                             {name}
                         </Text>
                         {Object.entries(color).map(([shade, hex]) => (
@@ -82,7 +82,7 @@ export const GreyScale = () => {
                 .filter(([name]) => name === 'grey')
                 .map(([name, color]: Array<string>) => (
                     <div key="name">
-                        <Text textSize="M3" fullWidth>
+                        <Text textVariant="body1" fullWidth>
                             {name}
                         </Text>
                         {Object.entries(color).map(([shade, hex]) => (

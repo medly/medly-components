@@ -4,7 +4,7 @@ import React, { SFC, useState } from 'react';
 import { Stepper } from './Stepper';
 import { Props } from './types';
 
-const size: Props['size'][] = ['S', 'M', 'L', 'XL'];
+const size: Props['size'][] = ['S', 'M', 'L'];
 
 export const ThemeInterface: SFC<StepperTheme> = () => null;
 ThemeInterface.defaultProps = {

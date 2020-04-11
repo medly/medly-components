@@ -1,4 +1,4 @@
-import { FontSizes, FontWeights } from '@medly-components/theme';
+import { FontVariants, FontWeights } from '@medly-components/theme';
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
 export type LabelPositions = 'top' | 'right' | 'left' | 'bottom';
@@ -21,13 +21,8 @@ export interface Common extends HTMLProps<HTMLLabelElement>, WithThemeProp {
 }
 
 export interface Props extends Common {
-    /** Label size */
-    labelSize?: FontSizes;
-    /** Label weight */
+    /** Label Variant */
+    labelVariant?: FontVariants;
+    /** Label Weight */
     labelWeight?: FontWeights;
-}
-
-export interface StyledProps extends Common {
-    labelSize?: string;
-    labelWeight?: string;
 }

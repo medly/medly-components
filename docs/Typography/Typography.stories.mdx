@@ -1,0 +1,68 @@
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Typography.stories';
+
+<Meta title="Typography" />
+
+# Typography
+
+Use this to design your content efficiently. By default we use `Open Sans` font but you can change in the font theme.
+
+### How to use
+
+You have to include styled component global style using `CssBaseline` component like below. `CssBaseline` component will add all the font faces and default font style. Then you can use `Text` component with various configuration to match desired output and html tag.
+
+```tsx
+<ThemeProvider theme={defaultTheme}>
+    <CssBaseline />
+    <Text textVariant="h1" textWeight="Strong">
+</ThemeProvider>
+```
+
+### Font Variants
+
+Use font variant to decide the font style(`font-size`,`font-weight`,`line-height`,`letter-spacing`) and `html tag` also. If you have used `textWeight` prop as `Strong`|`ExtraStrong`, then both `body1` and `body2` variant will use `strong` html tag.
+
+| Variant | Html Tag |
+| ------- | -------- |
+| h1      | h1       |
+| h2      | h2       |
+| h3      | h3       |
+| h4      | h4       |
+| h5      | h5       |
+| body1   | span     |
+| body2   | span     |
+
+<Preview withToolbar>
+    <Story name="FontVariants">{stories.FontVariants()}</Story>
+</Preview>
+
+#### Font Variants Theme
+
+Default font style for each variant.
+
+<Props of={stories.FontVariants} />
+
+### Font Weights
+
+<Preview withToolbar>
+    <Story name="FontWeights">{stories.FontWeights()}</Story>
+</Preview>
+
+#### Font Weights Theme
+
+Default font style for each variant.
+
+<Props of={stories.FontWeights} />
+
+### FontTheme
+
+Below are the types of the font theme. If you wish to change any theme just provide your theme in `ThemeProvider` with `font` key in it.
+
+<Props of={stories.FontThemeInterface} />
+
+### FontFaceTheme
+
+Below are the types of the font faces. Provide all the font faces in array which you want to use.
+
+<Props of={stories.FontFaceThemeInterface} />

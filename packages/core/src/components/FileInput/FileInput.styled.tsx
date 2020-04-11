@@ -1,5 +1,5 @@
 import { defaultTheme } from '@medly-components/theme';
-import { fullWidth, styled } from '@medly-components/utils';
+import { fullWidth, getFontStyle, styled } from '@medly-components/utils';
 import { StyledInputProps, StyledLabelProps } from './types';
 
 export const Input = styled('input').attrs({ type: 'file' })<StyledInputProps>`
@@ -7,10 +7,9 @@ export const Input = styled('input').attrs({ type: 'file' })<StyledInputProps>`
     opacity: 0;
 `;
 
-export const Label = styled('label').attrs(({ theme: { input, text, font } }) => ({ input, text, font }))<StyledLabelProps>`
+export const Label = styled('label').attrs(({ theme: { input, font } }) => ({ input, font }))<StyledLabelProps>`
+    ${getFontStyle}
     padding: ${({ theme }) => theme.spacing.S};
-    font-size: ${({ font, text }) => font.sizes[text.defaults.textSize]};
-    font-weight: ${({ font, text }) => font.weights[text.defaults.textWeight]};
     color: ${props => props.input.color};
     background-clip: padding-box;
     background-color: ${({ disabled, input }) => (disabled ? input.disabledBgcolor : input.bgColor)};

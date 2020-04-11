@@ -1,12 +1,12 @@
-import { FontSizes } from '../font/types';
+import { FontVariants } from '../font/types';
 
-export type StepperSizes = 'S' | 'M' | 'L' | 'XL';
+export type StepperSizes = 'S' | 'M' | 'L';
 
 export interface StepperTheme {
     sizes: {
         [k in StepperSizes]: {
             counterSize: string;
-            fontSize: FontSizes;
+            fontVariant: FontVariants;
         };
     };
     defaultSize: StepperSizes;
