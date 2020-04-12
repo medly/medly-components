@@ -16,7 +16,7 @@
         "build": "run-s build:js build:types",
         "build:js": "cross-env BABEL_ENV=production rollup -c",
         "build:types": "tsc -p tsconfig.build.json",
-        "prebuild": "tsc -p tsconfig.json && rimraf dist",
+        "prebuild": "tsc -p tsconfig.json && rimraf dist && ts-node ./src/createIcons.ts",
         "watch": "run-p \"build:types -w\" \"build:js --watch\""
     },
     "peerDependencies": {
