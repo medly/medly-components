@@ -2,24 +2,117 @@ import { HTMLProps } from '@medly-components/utils';
 import SvgIcon from './SvgIcon';
 import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './Icons.stories';
+import IconContainer from './IconContainer';
+import { withKnobs, color, select } from '@storybook/addon-knobs';
+import { sizes, defaultColor, ThemeInterface, IconProps } from './Icons.stories';
+import AddIcon from './icons/AddIcon';
+import AuditIcon from './icons/AuditIcon';
+import BillIcon from './icons/BillIcon';
+import BugIcon from './icons/BugIcon';
+import CheckIcon from './icons/CheckIcon';
+import CheckCircleIcon from './icons/CheckCircleIcon';
+import ClearIcon from './icons/ClearIcon';
+import ClipboardIcon from './icons/ClipboardIcon';
+import ContractIcon from './icons/ContractIcon';
+import DeleteIcon from './icons/DeleteIcon';
+import DownArrowIcon from './icons/DownArrowIcon';
+import DownloadIcon from './icons/DownloadIcon';
+import DropDownIcon from './icons/DropDownIcon';
+import EditIcon from './icons/EditIcon';
+import ExclamationCircleIcon from './icons/ExclamationCircleIcon';
+import ExclamationTriangleIcon from './icons/ExclamationTriangleIcon';
+import ExpandLessIcon from './icons/ExpandLessIcon';
+import ExpandMoreIcon from './icons/ExpandMoreIcon';
+import FileIcon from './icons/FileIcon';
+import FileUploadIcon from './icons/FileUploadIcon';
+import GearIcon from './icons/GearIcon';
+import HelpIcon from './icons/HelpIcon';
+import HomeIcon from './icons/HomeIcon';
+import InfoCircleIcon from './icons/InfoCircleIcon';
+import LibraryBooksIcon from './icons/LibraryBooksIcon';
+import OrdersIcon from './icons/OrdersIcon';
+import PowerButtonIcon from './icons/PowerButtonIcon';
+import PrescriptionIcon from './icons/PrescriptionIcon';
+import PrintIcon from './icons/PrintIcon';
+import ReceiptIcon from './icons/ReceiptIcon';
+import ReportsIcon from './icons/ReportsIcon';
+import SearchIcon from './icons/SearchIcon';
+import SliderIcon from './icons/SliderIcon';
+import StatementIcon from './icons/StatementIcon';
+import SyncIcon from './icons/SyncIcon';
+import UpArrowIcon from './icons/UpArrowIcon';
+import UploadIcon from './icons/UploadIcon';
+import VisibilityIcon from './icons/VisibilityIcon';
+import VisibilityOffIcon from './icons/VisibilityOffIcon';
 
 <Meta title="Icons" component={SvgIcon} />
 
 # Icons
 
-### A collection of icons in SVG format.
+A collection icons exported as React components (SVG icons).
+
+### How to use
+
+```tsx
+import { AddIcon } from '@medly-components/icons';
+
+<AddIcon />
+```
+
+### Props
+
+None of the props is required but still you can style all the icons according to your requirement using below props.
+
+<Props of={IconProps} />
+
+### Theme
+
+<Props of={ThemeInterface} />
 
 You can directly import from `@medly-components/icons`
 
 <Preview withToolbar>
-    <Story name="Icons">{stories.Basic()}</Story>
+    <Story name="Icons" parameters={{ decorators: [withKnobs] }}>
+        <IconContainer>
+            <AddIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <AuditIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <BillIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <BugIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <CheckIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <CheckCircleIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <ClearIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <ClipboardIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <ContractIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <DeleteIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <DownArrowIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <DownloadIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <DropDownIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <EditIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <ExclamationCircleIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <ExclamationTriangleIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <ExpandLessIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <ExpandMoreIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <FileIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <FileUploadIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <GearIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <HelpIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <HomeIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <InfoCircleIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <LibraryBooksIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <OrdersIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <PowerButtonIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <PrescriptionIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <PrintIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <ReceiptIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <ReportsIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <SearchIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <SliderIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <StatementIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <SyncIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <UpArrowIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <UploadIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <VisibilityIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <VisibilityOffIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+        </IconContainer>
+    </Story>
 </Preview>
-
-### Props
-
-<Props of={stories.Basic} />
-
-### IconsTheme
-
-<Props of={stories.ThemeInterface} />
