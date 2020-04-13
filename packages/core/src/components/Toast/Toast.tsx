@@ -1,4 +1,4 @@
-import { BugIcon, CheckCircleIcon, ClearIcon, ExclamationCircleIcon, ExclamationTriangleIcon } from '@medly-components/icons';
+import { CheckIcon, ClearIcon, ErrorIcon, NotificationsIcon, WarningAmberIcon } from '@medly-components/icons';
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
 import React, { SFC, useEffect, useState } from 'react';
 import Text from '../Text';
@@ -18,10 +18,10 @@ export const Toast: SFC<Props> & WithStyle = React.memo(
             <Styled.Toast ref={ref} show={show} variant={variant} {...restProps}>
                 {
                     {
-                        error: <BugIcon />,
-                        warning: <ExclamationTriangleIcon />,
-                        info: <ExclamationCircleIcon />,
-                        success: <CheckCircleIcon />
+                        error: <ErrorIcon />,
+                        warning: <WarningAmberIcon />,
+                        info: <NotificationsIcon />,
+                        success: <CheckIcon />
                     }[variant]
                 }
                 {React.Children.map(props.children, c => {

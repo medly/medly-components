@@ -1,4 +1,4 @@
-import { GearIcon } from '@medly-components/icons';
+import { AddIcon } from '@medly-components/icons';
 import { render } from '@test-utils';
 import React from 'react';
 import { Button } from './Button';
@@ -28,7 +28,7 @@ describe('Button component', () => {
     it('should render properly with any icon at the beginning of the text', () => {
         const { container } = render(
             <Button variant="solid">
-                <GearIcon />
+                <AddIcon />
                 Solid Button
             </Button>
         );
@@ -38,7 +38,7 @@ describe('Button component', () => {
     it('should render properly with any icon at the end of the text', () => {
         const { container } = render(
             <Button variant="solid">
-                <GearIcon />
+                <AddIcon />
                 Solid Button
             </Button>
         );

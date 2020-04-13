@@ -1,0 +1,15 @@
+import { WithStyle } from '@medly-components/utils';
+import React, { SFC } from 'react';
+import TrendingFlatIconSvg from '../../assets/Action/trending_flat_24px_rounded.svg';
+import SvgIcon, { SvgIconProps } from '../../SvgIcon';
+
+const TrendingFlatIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
+    <SvgIcon {...props}>
+        <TrendingFlatIconSvg {...props} width="1em" height="1em" />
+    </SvgIcon>
+));
+
+TrendingFlatIcon.Style = SvgIcon;
+TrendingFlatIcon.displayName = 'TrendingFlatIcon';
+
+export default TrendingFlatIcon

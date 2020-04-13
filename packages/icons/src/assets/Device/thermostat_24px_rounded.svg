@@ -1,0 +1,5 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="thermostat_24px">
+<path id="icon/device/thermostat_24px" fill-rule="evenodd" clip-rule="evenodd" d="M12 2C13.66 2 15 3.34 15 5V13C16.21 13.91 17 15.37 17 17C17 19.76 14.76 22 12 22C9.24 22 7 19.76 7 17C7 15.37 7.79 13.91 9 13V5C9 3.34 10.34 2 12 2ZM11 11H13V9H12.5C12.22 9 12 8.78 12 8.5C12 8.22 12.22 8 12.5 8H13V6H12.5C12.22 6 12 5.78 12 5.5C12 5.22 12.22 5 12.5 5H13C13 4.45 12.55 4 12 4C11.45 4 11 4.45 11 5V11Z" fill="black" fill-opacity="0.54"/>
+</g>
+</svg>

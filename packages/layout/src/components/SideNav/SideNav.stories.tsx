@@ -1,4 +1,4 @@
-import { EditIcon, HomeIcon, SearchIcon, SliderIcon } from '@medly-components/icons';
+import { EditIcon, HomeIcon, LibraryBooksIcon, SearchIcon } from '@medly-components/icons';
 import { defaultTheme, SideNavTheme } from '@medly-components/theme';
 import { action } from '@storybook/addon-actions';
 import { boolean } from '@storybook/addon-knobs';
@@ -44,7 +44,7 @@ export const Basic = () => (
             </NavItem>
             <NavItem openSideNavOnClick path="/manage">
                 <NavIcon>
-                    <SliderIcon />
+                    <LibraryBooksIcon />
                 </NavIcon>
                 <NavText>Manage</NavText>
                 <SubNavList>

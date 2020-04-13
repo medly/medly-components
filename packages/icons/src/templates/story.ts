@@ -15,8 +15,11 @@ export const storyTemplate = (icons: { [k: string]: string[] }) => {
             )
             .join('\n            ');
 
-    const preview = Object.keys(icons).map(
-        DIR => `### ${DIR.slice(0, -1)}
+    const preview = Object.keys(icons)
+        .map(
+            DIR => `
+### ${DIR.slice(0, -1)}
+
 <Preview withToolbar>
     <Story name="${DIR.slice(0, -1)}" parameters={{ decorators: [withKnobs] }}>
         <IconContainer>
@@ -24,11 +27,11 @@ export const storyTemplate = (icons: { [k: string]: string[] }) => {
         </IconContainer>
     </Story>
 </Preview>`
-    );
+        )
+        .join('\n');
 
     return `import { HTMLProps } from '@medly-components/utils';
 import SvgIcon from './SvgIcon';
-import { action } from '@storybook/addon-actions';
 import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import IconContainer from './IconContainer';
@@ -60,7 +63,7 @@ If you pass onClick prop to any icon it will render background color on hover li
 
 <Preview>
     <${icons[Object.keys(icons)[0]][0]} 
-        onClick={action('Icon Clicked')}
+        onClick={() => {}}
         size={select('Size', sizes, 'M')} 
         color={color('Color', defaultColor)} 
         disabled={boolean('Disabled', false)} 
@@ -70,7 +73,6 @@ If you pass onClick prop to any icon it will render background color on hover li
 ### Theme
 
 <Props of={ThemeInterface} />
-
 ${preview}
 `;
 };
