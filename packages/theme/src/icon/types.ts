@@ -1,8 +1,12 @@
-export type IconSizes = 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL' | 'XXXL';
+export type IconSizes = 'XS' | 'S' | 'M' | 'L' | 'XL';
 
 export interface IconTheme {
-    /** Avatar sizes */
+    /** Icon sizes */
     sizes: { [k in IconSizes]: string };
-    /** Avatar default color */
+    /** Icon default color */
     defaultColor: string;
+    /** Icon disabled color */
+    disabledColor: string;
+    /** Icon background colors */
+    bgColor: string;
 }

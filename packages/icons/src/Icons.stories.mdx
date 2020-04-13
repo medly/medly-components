@@ -1,9 +1,10 @@
 import { HTMLProps } from '@medly-components/utils';
 import SvgIcon from './SvgIcon';
+import { action } from '@storybook/addon-actions';
 import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import IconContainer from './IconContainer';
-import { withKnobs, color, select } from '@storybook/addon-knobs';
+import { withKnobs, color, select, boolean } from '@storybook/addon-knobs';
 import { sizes, defaultColor, ThemeInterface, IconProps } from './Icons.stories';
 import AddIcon from './icons/Forms/AddIcon';
 import AuditIcon from './icons/Forms/AuditIcon';
@@ -49,7 +50,7 @@ import VisibilityOffIcon from './icons/Forms/VisibilityOffIcon';
 
 # Icons
 
-A collection icons exported as React components (SVG icons).
+A collection of icons exported as React components (SVG icons).
 
 ### How to use
 
@@ -65,53 +66,220 @@ None of the props is required but still you can style all the icons according to
 
 <Props of={IconProps} />
 
+If you pass onClick prop to any icon it will render background color on hover like below.
+
+<Preview>
+    <AddIcon 
+        onClick={action('Icon Clicked')}
+        size={select('Size', sizes, 'M')} 
+        color={color('Color', defaultColor)} 
+        disabled={boolean('Disabled', false)} 
+    />
+</Preview>
+
 ### Theme
 
 <Props of={ThemeInterface} />
 
 ### Forms
 <Preview withToolbar>
-    <Story name="Icons" parameters={{ decorators: [withKnobs] }}>
+    <Story name="Forms" parameters={{ decorators: [withKnobs] }}>
         <IconContainer>
-            <AddIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <AuditIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <BillIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <BugIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <CheckIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <CheckCircleIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <ClearIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <ClipboardIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <ContractIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <DeleteIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <DownArrowIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <DownloadIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <DropDownIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <EditIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <ExclamationCircleIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <ExclamationTriangleIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <ExpandLessIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <ExpandMoreIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <FileIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <FileUploadIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <GearIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <HelpIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <HomeIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <InfoCircleIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <LibraryBooksIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <OrdersIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <PowerButtonIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <PrescriptionIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <PrintIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <ReceiptIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <ReportsIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <SearchIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <SliderIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <StatementIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <SyncIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <UpArrowIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <UploadIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <VisibilityIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
-            <VisibilityOffIcon size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />
+            <AddIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <AuditIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <BillIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <BugIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <CheckIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <CheckCircleIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <ClearIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <ClipboardIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <ContractIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <DeleteIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <DownArrowIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <DownloadIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <DropDownIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <EditIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <ExclamationCircleIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <ExclamationTriangleIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <ExpandLessIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <ExpandMoreIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <FileIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <FileUploadIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <GearIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <HelpIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <HomeIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <InfoCircleIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <LibraryBooksIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <OrdersIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <PowerButtonIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <PrescriptionIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <PrintIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <ReceiptIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <ReportsIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <SearchIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <SliderIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <StatementIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <SyncIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <UpArrowIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <UploadIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <VisibilityIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <VisibilityOffIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
         </IconContainer>
     </Story>
 </Preview>

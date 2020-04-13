@@ -4,7 +4,16 @@ export const storyTemplate = (icons: { [k: string]: string[] }) => {
         .join('');
 
     const iconComponents = (iconNames: string[]) =>
-        iconNames.map(name => `<${name} size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />`).join('\n            ');
+        iconNames
+            .map(
+                name =>
+                    `<${name} 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />`
+            )
+            .join('\n            ');
 
     const preview = Object.keys(icons).map(
         DIR => `### ${DIR.slice(0, -1)}
@@ -19,10 +28,11 @@ export const storyTemplate = (icons: { [k: string]: string[] }) => {
 
     return `import { HTMLProps } from '@medly-components/utils';
 import SvgIcon from './SvgIcon';
+import { action } from '@storybook/addon-actions';
 import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import IconContainer from './IconContainer';
-import { withKnobs, color, select } from '@storybook/addon-knobs';
+import { withKnobs, color, select, boolean } from '@storybook/addon-knobs';
 import { sizes, defaultColor, ThemeInterface, IconProps } from './Icons.stories';
 ${imports}
 
@@ -30,7 +40,7 @@ ${imports}
 
 # Icons
 
-A collection icons exported as React components (SVG icons).
+A collection of icons exported as React components (SVG icons).
 
 ### How to use
 
@@ -45,6 +55,17 @@ import { AddIcon } from '@medly-components/icons';
 None of the props is required but still you can style all the icons according to your requirement using below props.
 
 <Props of={IconProps} />
+
+If you pass onClick prop to any icon it will render background color on hover like below.
+
+<Preview>
+    <${icons[Object.keys(icons)[0]][0]} 
+        onClick={action('Icon Clicked')}
+        size={select('Size', sizes, 'M')} 
+        color={color('Color', defaultColor)} 
+        disabled={boolean('Disabled', false)} 
+    />
+</Preview>
 
 ### Theme
 
