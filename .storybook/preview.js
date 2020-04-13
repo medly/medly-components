@@ -1,8 +1,10 @@
 import { DocsContainer, DocsPage } from '@storybook/addon-docs/blocks';
+import { withTests } from '@storybook/addon-jest';
 import { withKnobs } from '@storybook/addon-knobs';
 import { addDecorator, addParameters } from '@storybook/react';
 import React from 'react';
 import { jsxDecorator } from 'storybook-addon-jsx';
+import results from '../.jest-test-results.json';
 import { CssBaseline } from '../packages/core/src';
 import { defaultTheme } from '../packages/theme/src';
 import { ThemeProvider } from '../packages/utils/src';
@@ -17,6 +19,11 @@ addDecorator(story => (
         </div>
     </ThemeProvider>
 ));
+addDecorator(
+    withTests({
+        results
+    })
+);
 
 addParameters({
     theme: {

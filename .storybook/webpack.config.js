@@ -1,7 +1,6 @@
 const path = require('path');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
 
 const packages = path.resolve(__dirname, '../', 'packages');
 const docs = path.resolve(__dirname, '../', 'docs');
@@ -9,24 +8,18 @@ const pathToInlineSvg = path.resolve(__dirname, '../packages/icons/src/assets/')
 const tsconfigPath = path.resolve(__dirname, '../tsconfig.json');
 
 module.exports = ({ config, mode }) => {
-    config.optimization = {
-        ...config.optimization,
-        minimize: true,
-        minimizer: [
-            new TerserPlugin({
-                sourceMap: true,
-                terserOptions: {
-                    mangle: false
-                }
-            })
-        ]
-    };
-
     config.module.rules.push({
         test: /\.(ts|tsx)$/,
         include: [packages, docs],
         exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /__dist__/],
         use: [
+            {
+                loader: 'thread-loader',
+                options: {
+                    workers: 4,
+                    workerParallelJobs: 50
+                }
+            },
             {
                 loader: 'babel-loader'
             },
@@ -59,6 +52,7 @@ module.exports = ({ config, mode }) => {
 
     config.module.rules.push({
         test: /\.svg$/,
+        exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /__dist__/],
         use: [
             {
                 loader: '@svgr/webpack',
