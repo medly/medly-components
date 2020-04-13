@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import RestaurantIconSvg from '../../assets/Maps/restaurant_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const RestaurantIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <RestaurantIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const RestaurantIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <RestaurantIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 RestaurantIcon.Style = SvgIcon;
 RestaurantIcon.displayName = 'RestaurantIcon';

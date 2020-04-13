@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import LocalPlayIconSvg from '../../assets/Maps/local_play_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LocalPlayIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <LocalPlayIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const LocalPlayIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <LocalPlayIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 LocalPlayIcon.Style = SvgIcon;
 LocalPlayIcon.displayName = 'LocalPlayIcon';

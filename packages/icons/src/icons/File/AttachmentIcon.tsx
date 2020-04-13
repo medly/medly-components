@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import AttachmentIconSvg from '../../assets/File/attachment_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AttachmentIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <AttachmentIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const AttachmentIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <AttachmentIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 AttachmentIcon.Style = SvgIcon;
 AttachmentIcon.displayName = 'AttachmentIcon';

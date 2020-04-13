@@ -4,9 +4,11 @@ export interface IconTheme {
     /** Icon sizes */
     sizes: { [k in IconSizes]: string };
     /** Icon default color */
-    defaultColor: string;
+    defaultIconColor: string;
     /** Icon disabled color */
-    disabledColor: string;
+    disabledIconColor: string;
+    /** Icon color when we hover on it */
+    hoverIconColor: string;
     /** Icon background colors */
     bgColor: string;
 }

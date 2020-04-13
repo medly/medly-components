@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import MicOffIconSvg from '../../assets/Media/mic_off_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const MicOffIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <MicOffIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const MicOffIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <MicOffIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 MicOffIcon.Style = SvgIcon;
 MicOffIcon.displayName = 'MicOffIcon';

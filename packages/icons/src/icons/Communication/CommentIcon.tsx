@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import CommentIconSvg from '../../assets/Communication/comment_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CommentIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <CommentIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const CommentIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <CommentIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 CommentIcon.Style = SvgIcon;
 CommentIcon.displayName = 'CommentIcon';

@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import MmsIconSvg from '../../assets/Notification/mms_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const MmsIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <MmsIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const MmsIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <MmsIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 MmsIcon.Style = SvgIcon;
 MmsIcon.displayName = 'MmsIcon';

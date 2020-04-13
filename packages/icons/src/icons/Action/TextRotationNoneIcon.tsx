@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import TextRotationNoneIconSvg from '../../assets/Action/text_rotation_none_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const TextRotationNoneIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <TextRotationNoneIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const TextRotationNoneIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <TextRotationNoneIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 TextRotationNoneIcon.Style = SvgIcon;
 TextRotationNoneIcon.displayName = 'TextRotationNoneIcon';

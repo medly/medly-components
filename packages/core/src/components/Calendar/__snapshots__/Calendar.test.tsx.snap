@@ -162,8 +162,8 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c12 {
-  margin: 0.8rem 0.8rem 0.8rem 0;
-  display: inline-grid;
+  margin: 0.8rem 0;
+  display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -174,10 +174,10 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c12 .sc-AykKH {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -202,9 +202,7 @@ exports[`Calendar Component should render given date 1`] = `
   border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -294,6 +292,7 @@ exports[`Calendar Component should render given date 1`] = `
   overflow: hidden;
   height: 35px;
   min-width: 150px;
+  width: 100%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -334,12 +333,8 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c17 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  max-width: 20px;
-  margin-right: 8px;
-  font-size: 10px;
+  max-width: 24px;
+  margin-right: 0.4rem;
 }
 
 .c1 {

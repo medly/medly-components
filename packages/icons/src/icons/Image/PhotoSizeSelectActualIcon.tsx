@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import PhotoSizeSelectActualIconSvg from '../../assets/Image/photo_size_select_actual_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PhotoSizeSelectActualIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <PhotoSizeSelectActualIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const PhotoSizeSelectActualIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <PhotoSizeSelectActualIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 PhotoSizeSelectActualIcon.Style = SvgIcon;
 PhotoSizeSelectActualIcon.displayName = 'PhotoSizeSelectActualIcon';

@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import Filter4IconSvg from '../../assets/Image/filter_4_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const Filter4Icon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <Filter4IconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const Filter4Icon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <Filter4IconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 Filter4Icon.Style = SvgIcon;
 Filter4Icon.displayName = 'Filter4Icon';

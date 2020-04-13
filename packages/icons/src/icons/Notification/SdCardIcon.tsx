@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import SdCardIconSvg from '../../assets/Notification/sd_card_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SdCardIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <SdCardIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const SdCardIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <SdCardIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 SdCardIcon.Style = SvgIcon;
 SdCardIcon.displayName = 'SdCardIcon';

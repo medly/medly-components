@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import TrendingUpIconSvg from '../../assets/Action/trending_up_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const TrendingUpIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <TrendingUpIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const TrendingUpIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <TrendingUpIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 TrendingUpIcon.Style = SvgIcon;
 TrendingUpIcon.displayName = 'TrendingUpIcon';

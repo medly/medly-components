@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import FormatPaintIconSvg from '../../assets/Editor/format_paint_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FormatPaintIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <FormatPaintIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const FormatPaintIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <FormatPaintIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 FormatPaintIcon.Style = SvgIcon;
 FormatPaintIcon.displayName = 'FormatPaintIcon';

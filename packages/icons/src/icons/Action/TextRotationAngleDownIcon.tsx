@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import TextRotationAngleDownIconSvg from '../../assets/Action/text_rotation_angle_down_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const TextRotationAngleDownIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <TextRotationAngleDownIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const TextRotationAngleDownIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <TextRotationAngleDownIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 TextRotationAngleDownIcon.Style = SvgIcon;
 TextRotationAngleDownIcon.displayName = 'TextRotationAngleDownIcon';

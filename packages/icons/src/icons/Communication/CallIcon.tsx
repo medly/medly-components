@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import CallIconSvg from '../../assets/Communication/call_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CallIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <CallIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const CallIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <CallIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 CallIcon.Style = SvgIcon;
 CallIcon.displayName = 'CallIcon';

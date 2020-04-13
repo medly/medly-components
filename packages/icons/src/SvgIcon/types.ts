@@ -8,6 +8,8 @@ export interface SvgIconProps extends SVGProp, WithThemeProp {
     size?: IconSizes;
     /** Icon color */
     color?: string;
+    /** Show hover state if you want to use it as individual button */
+    withHoverEffect?: boolean;
     /** Margin for the Icon */
     margin?: string;
 }

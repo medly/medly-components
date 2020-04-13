@@ -1,5 +1,4 @@
 export { default as AccessibilityIcon } from './icons/Action/AccessibilityIcon';
-export { default as AccessibilityNewIcon } from './icons/Action/AccessibilityNewIcon';
 export { default as AccessibleIcon } from './icons/Action/AccessibleIcon';
 export { default as AccessibleForwardIcon } from './icons/Action/AccessibleForwardIcon';
 export { default as AccountBalanceIcon } from './icons/Action/AccountBalanceIcon';
@@ -910,6 +909,7 @@ export { default as CheckIcon } from './icons/Navigation/CheckIcon';
 export { default as ChevronLeftIcon } from './icons/Navigation/ChevronLeftIcon';
 export { default as ChevronRightIcon } from './icons/Navigation/ChevronRightIcon';
 export { default as CloseIcon } from './icons/Navigation/CloseIcon';
+export { default as DropdownIcon } from './icons/Navigation/DropdownIcon';
 export { default as ExpandLessIcon } from './icons/Navigation/ExpandLessIcon';
 export { default as ExpandMoreIcon } from './icons/Navigation/ExpandMoreIcon';
 export { default as FirstPageIcon } from './icons/Navigation/FirstPageIcon';

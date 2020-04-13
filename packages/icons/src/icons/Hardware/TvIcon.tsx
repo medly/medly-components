@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import TvIconSvg from '../../assets/Hardware/tv_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const TvIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <TvIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const TvIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <TvIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 TvIcon.Style = SvgIcon;
 TvIcon.displayName = 'TvIcon';

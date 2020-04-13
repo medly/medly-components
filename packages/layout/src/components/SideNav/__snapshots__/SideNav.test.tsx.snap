@@ -182,7 +182,6 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   position: absolute;
   width: calc(2.0rem * 1.33);
   height: calc(2.0rem * 0.2);
-  background: rgba(0,0,0,0.54);
   border-radius: calc(2.0rem * 0.2);
   opacity: 1;
   left: 0;
@@ -717,7 +716,6 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   position: absolute;
   width: calc(2.0rem * 1.33);
   height: calc(2.0rem * 0.2);
-  background: rgba(0,0,0,0.54);
   border-radius: calc(2.0rem * 0.2);
   opacity: 1;
   left: 0;
@@ -1232,7 +1230,6 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   position: absolute;
   width: calc(2.0rem * 1.33);
   height: calc(2.0rem * 0.2);
-  background: rgba(0,0,0,0.54);
   border-radius: calc(2.0rem * 0.2);
   opacity: 1;
   left: 0;
@@ -1649,7 +1646,6 @@ exports[`SideNav should render properly 1`] = `
   position: absolute;
   width: calc(2.0rem * 1.33);
   height: calc(2.0rem * 0.2);
-  background: rgba(0,0,0,0.54);
   border-radius: calc(2.0rem * 0.2);
   opacity: 1;
   left: 0;

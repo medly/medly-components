@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import DataUsageIconSvg from '../../assets/Device/data_usage_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DataUsageIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <DataUsageIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const DataUsageIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <DataUsageIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 DataUsageIcon.Style = SvgIcon;
 DataUsageIcon.displayName = 'DataUsageIcon';

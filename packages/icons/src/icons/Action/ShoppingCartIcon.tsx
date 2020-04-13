@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import ShoppingCartIconSvg from '../../assets/Action/shopping_cart_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ShoppingCartIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <ShoppingCartIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const ShoppingCartIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <ShoppingCartIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 ShoppingCartIcon.Style = SvgIcon;
 ShoppingCartIcon.displayName = 'ShoppingCartIcon';

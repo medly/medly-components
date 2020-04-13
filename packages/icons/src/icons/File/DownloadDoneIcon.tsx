@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import DownloadDoneIconSvg from '../../assets/File/download_done_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const DownloadDoneIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <DownloadDoneIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const DownloadDoneIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <DownloadDoneIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 DownloadDoneIcon.Style = SvgIcon;
 DownloadDoneIcon.displayName = 'DownloadDoneIcon';

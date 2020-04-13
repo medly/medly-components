@@ -2,7 +2,7 @@
 
 exports[`MultiSelect component with checkbox false should render correctly with all the props given 1`] = `
 .c10 {
-  font-size: 1.6rem;
+  font-size: 2.0rem;
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
@@ -13,21 +13,6 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c10:hover {
-  background-color: #eff2f4;
-}
-
-.c14 {
-  font-size: 2.0rem;
-  cursor: pointer;
-  padding: 0.8rem;
-  border-radius: 50%;
-}
-
-.c14 * {
-  fill: rgba(0,0,0,0.54);
-}
-
-.c14:hover {
   background-color: #eff2f4;
 }
 
@@ -43,7 +28,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   line-height: 2.2rem;
 }
 
-.c16 {
+.c15 {
   margin: 0;
   color: grey;
   font-size: 1.4rem;
@@ -125,7 +110,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   user-select: none;
 }
 
-.c17 {
+.c16 {
   grid-area: description;
   margin: 5px 0 0 2px;
   color: grey;
@@ -158,8 +143,8 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c11 {
-  margin: 0.8rem 0.8rem 0.8rem 0;
-  display: inline-grid;
+  margin: 0.8rem 0;
+  display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -170,10 +155,10 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c11 .sc-AykKG {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -198,9 +183,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -305,7 +288,6 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: calc(100% - 0px);
 }
 
 .c5 * {
@@ -329,13 +311,9 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   border-color: #012040;
 }
 
-.c15 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  max-width: 20px;
-  margin-right: 8px;
-  font-size: 10px;
+.c14 {
+  max-width: 24px;
+  margin-right: 0.4rem;
 }
 
 <div>
@@ -403,7 +381,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
           
         </div>
         <svg
-          class="c9 c14 c15"
+          class="c9 c10 c14"
           fill="none"
           height="1em"
           theme="[object Object]"
@@ -420,7 +398,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
       </div>
     </div>
     <span
-      class="c7 c16 c17"
+      class="c7 c15 c16"
     >
       We will show reports based on Pharmacy
     </span>
@@ -472,8 +450,8 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c4 {
-  margin: 0.8rem 0.8rem 0.8rem 0;
-  display: inline-grid;
+  margin: 0.8rem 0;
+  display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -484,10 +462,10 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c4 .sc-AykKG {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -512,9 +490,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -643,12 +619,8 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c8 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  max-width: 20px;
-  margin-right: 8px;
-  font-size: 10px;
+  max-width: 24px;
+  margin-right: 0.4rem;
 }
 
 <div>
@@ -708,7 +680,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 exports[`MultiSelect component with checkbox true should render correctly with all the props given 1`] = `
 .c10 {
-  font-size: 1.6rem;
+  font-size: 2.0rem;
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
@@ -719,21 +691,6 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c10:hover {
-  background-color: #eff2f4;
-}
-
-.c14 {
-  font-size: 2.0rem;
-  cursor: pointer;
-  padding: 0.8rem;
-  border-radius: 50%;
-}
-
-.c14 * {
-  fill: rgba(0,0,0,0.54);
-}
-
-.c14:hover {
   background-color: #eff2f4;
 }
 
@@ -749,7 +706,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   line-height: 2.2rem;
 }
 
-.c16 {
+.c15 {
   margin: 0;
   color: grey;
   font-size: 1.4rem;
@@ -831,7 +788,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   user-select: none;
 }
 
-.c17 {
+.c16 {
   grid-area: description;
   margin: 5px 0 0 2px;
   color: grey;
@@ -864,8 +821,8 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c11 {
-  margin: 0.8rem 0.8rem 0.8rem 0;
-  display: inline-grid;
+  margin: 0.8rem 0;
+  display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -876,10 +833,10 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c11 .sc-AykKG {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -904,9 +861,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -1011,7 +966,6 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: calc(100% - 0px);
 }
 
 .c5 * {
@@ -1035,13 +989,9 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   border-color: #012040;
 }
 
-.c15 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  max-width: 20px;
-  margin-right: 8px;
-  font-size: 10px;
+.c14 {
+  max-width: 24px;
+  margin-right: 0.4rem;
 }
 
 <div>
@@ -1109,7 +1059,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
           
         </div>
         <svg
-          class="c9 c14 c15"
+          class="c9 c10 c14"
           fill="none"
           height="1em"
           theme="[object Object]"
@@ -1126,7 +1076,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
       </div>
     </div>
     <span
-      class="c7 c16 c17"
+      class="c7 c15 c16"
     >
       We will show reports based on Pharmacy
     </span>
@@ -1178,8 +1128,8 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c4 {
-  margin: 0.8rem 0.8rem 0.8rem 0;
-  display: inline-grid;
+  margin: 0.8rem 0;
+  display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1190,10 +1140,10 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c4 .sc-AykKG {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -1218,9 +1168,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -1349,12 +1297,8 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c8 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  max-width: 20px;
-  margin-right: 8px;
-  font-size: 10px;
+  max-width: 24px;
+  margin-right: 0.4rem;
 }
 
 <div>

@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import PlaylistAddIconSvg from '../../assets/Media/playlist_add_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PlaylistAddIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <PlaylistAddIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const PlaylistAddIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <PlaylistAddIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 PlaylistAddIcon.Style = SvgIcon;
 PlaylistAddIcon.displayName = 'PlaylistAddIcon';

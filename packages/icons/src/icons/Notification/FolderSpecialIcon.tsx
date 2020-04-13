@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import FolderSpecialIconSvg from '../../assets/Notification/folder_special_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FolderSpecialIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <FolderSpecialIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const FolderSpecialIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <FolderSpecialIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 FolderSpecialIcon.Style = SvgIcon;
 FolderSpecialIcon.displayName = 'FolderSpecialIcon';

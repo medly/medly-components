@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import LensIconSvg from '../../assets/Image/lens_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LensIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <LensIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const LensIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <LensIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 LensIcon.Style = SvgIcon;
 LensIcon.displayName = 'LensIcon';

@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import GetAppIconSvg from '../../assets/Action/get_app_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const GetAppIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <GetAppIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const GetAppIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <GetAppIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 GetAppIcon.Style = SvgIcon;
 GetAppIcon.displayName = 'GetAppIcon';

@@ -3,7 +3,9 @@ import { create } from '@storybook/theming/create';
 
 const theme = create({
     base: 'light',
-    brandTitle: 'Medly-components'
+    brandTitle: 'Medly-components',
+    fontCode: 'monospace',
+    fontBase: '"Open Sans", sans-serif'
 });
 
 addons.setConfig({

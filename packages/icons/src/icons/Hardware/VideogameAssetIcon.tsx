@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import VideogameAssetIconSvg from '../../assets/Hardware/videogame_asset_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const VideogameAssetIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <VideogameAssetIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const VideogameAssetIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <VideogameAssetIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 VideogameAssetIcon.Style = SvgIcon;
 VideogameAssetIcon.displayName = 'VideogameAssetIcon';

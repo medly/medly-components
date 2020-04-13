@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import BuildIconSvg from '../../assets/Action/build_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const BuildIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <BuildIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const BuildIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <BuildIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 BuildIcon.Style = SvgIcon;
 BuildIcon.displayName = 'BuildIcon';

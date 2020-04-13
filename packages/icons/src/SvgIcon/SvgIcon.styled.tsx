@@ -6,17 +6,21 @@ export const SvgIconStyled = styled(InjectClassName)<SvgIconProps>`
     font-size: ${({ theme, size }) => theme.icon.sizes[size]};
     margin: ${({ margin }) => margin};
     cursor: ${({ onClick, disabled }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
+    transition: all 100ms linear;
     * {
-        fill: ${({ theme, color, disabled }) => (disabled ? theme.icon.disabledColor : color || theme.icon.defaultColor)};
+        fill: ${({ theme, color, disabled }) => (disabled ? theme.icon.disabledIconColor : color || theme.icon.defaultIconColor)};
     }
-    ${({ onClick, theme, disabled }) =>
+    ${({ withHoverEffect, theme, disabled, color }) =>
         !disabled &&
-        onClick &&
+        withHoverEffect &&
         css`
             padding: ${theme.spacing.S2};
             border-radius: 50%;
             &:hover {
                 background-color: ${theme.icon.bgColor};
+                * {
+                    fill: ${color || theme.icon.hoverIconColor};
+                }
             }
         `}
 `;
@@ -24,6 +28,6 @@ export const SvgIconStyled = styled(InjectClassName)<SvgIconProps>`
 SvgIconStyled.displayName = 'SvgIcon';
 
 SvgIconStyled.defaultProps = {
-    size: 'S',
+    size: 'M',
     theme: defaultTheme
 };

@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import RvHookupIconSvg from '../../assets/Places/rv_hookup_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const RvHookupIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <RvHookupIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const RvHookupIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <RvHookupIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 RvHookupIcon.Style = SvgIcon;
 RvHookupIcon.displayName = 'RvHookupIcon';

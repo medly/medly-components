@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import ExpandMoreIconSvg from '../../assets/Navigation/expand_more_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ExpandMoreIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <ExpandMoreIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const ExpandMoreIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <ExpandMoreIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 ExpandMoreIcon.Style = SvgIcon;
 ExpandMoreIcon.displayName = 'ExpandMoreIcon';

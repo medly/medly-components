@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import SettingsApplicationsIconSvg from '../../assets/Action/settings_applications_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const SettingsApplicationsIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <SettingsApplicationsIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const SettingsApplicationsIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <SettingsApplicationsIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 SettingsApplicationsIcon.Style = SvgIcon;
 SettingsApplicationsIcon.displayName = 'SettingsApplicationsIcon';

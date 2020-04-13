@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import QuestionAnswerIconSvg from '../../assets/Action/question_answer_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const QuestionAnswerIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <QuestionAnswerIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const QuestionAnswerIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <QuestionAnswerIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 QuestionAnswerIcon.Style = SvgIcon;
 QuestionAnswerIcon.displayName = 'QuestionAnswerIcon';

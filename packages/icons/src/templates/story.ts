@@ -22,9 +22,9 @@ export const storyTemplate = (icons: { [k: string]: string[] }) => {
 
 <Preview withToolbar>
     <Story name="${DIR.slice(0, -1)}" parameters={{ decorators: [withKnobs] }}>
-        <IconContainer>
+        <IconGrid>
             ${iconComponents(icons[DIR])}
-        </IconContainer>
+        </IconGrid>
     </Story>
 </Preview>`
         )
@@ -34,7 +34,7 @@ export const storyTemplate = (icons: { [k: string]: string[] }) => {
 import SvgIcon from './SvgIcon';
 import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import IconContainer from './IconContainer';
+import IconGrid from './IconGrid';
 import { withKnobs, color, select, boolean } from '@storybook/addon-knobs';
 import { sizes, defaultColor, ThemeInterface, IconProps } from './Icons.stories';
 ${imports}
@@ -59,15 +59,10 @@ None of the props is required but still you can style all the icons according to
 
 <Props of={IconProps} />
 
-If you pass onClick prop to any icon it will render background color on hover like below.
+If you withHoverEffect prop to any icon it will render background color on hover like below.
 
 <Preview>
-    <${icons[Object.keys(icons)[0]][0]} 
-        onClick={() => {}}
-        size={select('Size', sizes, 'M')} 
-        color={color('Color', defaultColor)} 
-        disabled={boolean('Disabled', false)} 
-    />
+    <${icons[Object.keys(icons)[0]][0]} withHoverEffect />
 </Preview>
 
 ### Theme

@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import PhoneIconSvg from '../../assets/Communication/phone_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PhoneIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <PhoneIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const PhoneIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <PhoneIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 PhoneIcon.Style = SvgIcon;
 PhoneIcon.displayName = 'PhoneIcon';

@@ -75,8 +75,8 @@ exports[`SingleSelect component should render correctly with all the props given
 }
 
 .c6 {
-  margin: 0.8rem 0.8rem 0.8rem 0;
-  display: inline-grid;
+  margin: 0.8rem 0;
+  display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -87,10 +87,10 @@ exports[`SingleSelect component should render correctly with all the props given
 }
 
 .c6 .sc-AykKE {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -115,9 +115,7 @@ exports[`SingleSelect component should render correctly with all the props given
   border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -222,6 +220,7 @@ exports[`SingleSelect component should render correctly with all the props given
   overflow: hidden;
   height: 35px;
   min-width: 150px;
+  width: 100%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -238,7 +237,6 @@ exports[`SingleSelect component should render correctly with all the props given
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: calc(100% - 0px);
 }
 
 .c5 * {
@@ -263,12 +261,8 @@ exports[`SingleSelect component should render correctly with all the props given
 }
 
 .c10 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  max-width: 20px;
-  margin-right: 8px;
-  font-size: 10px;
+  max-width: 24px;
+  margin-right: 0.4rem;
 }
 
 <div>
@@ -367,8 +361,8 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 }
 
 .c4 {
-  margin: 0.8rem 0.8rem 0.8rem 0;
-  display: inline-grid;
+  margin: 0.8rem 0;
+  display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -379,10 +373,10 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 }
 
 .c4 .sc-AykKE {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -407,9 +401,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   border: 1px solid #b0bcc8;
   border-radius: 5px;
   overflow: hidden;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -514,6 +506,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
   overflow: hidden;
   height: 35px;
   min-width: 150px;
+  width: 100%;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -554,12 +547,8 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 }
 
 .c8 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  max-width: 20px;
-  margin-right: 8px;
-  font-size: 10px;
+  max-width: 24px;
+  margin-right: 0.4rem;
 }
 
 <div>

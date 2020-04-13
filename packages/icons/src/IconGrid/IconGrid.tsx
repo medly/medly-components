@@ -1,7 +1,7 @@
 import React from 'react';
-import * as Styled from './IconContainer.styled';
+import * as Styled from './IconGrid.styled';
 
-export const IconContainer: React.SFC = React.memo(props => {
+export const IconGrid: React.SFC = React.memo(props => {
     return (
         <Styled.List>
             {React.Children.map(props.children, (child: any) => (
@@ -13,4 +13,4 @@ export const IconContainer: React.SFC = React.memo(props => {
         </Styled.List>
     );
 });
-IconContainer.displayName = 'IconContainer';
+IconGrid.displayName = 'IconGrid';

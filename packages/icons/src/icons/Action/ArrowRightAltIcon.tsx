@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import ArrowRightAltIconSvg from '../../assets/Action/arrow_right_alt_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ArrowRightAltIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <ArrowRightAltIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const ArrowRightAltIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <ArrowRightAltIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 ArrowRightAltIcon.Style = SvgIcon;
 ArrowRightAltIcon.displayName = 'ArrowRightAltIcon';

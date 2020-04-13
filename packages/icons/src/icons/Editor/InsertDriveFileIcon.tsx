@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import InsertDriveFileIconSvg from '../../assets/Editor/insert_drive_file_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const InsertDriveFileIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <InsertDriveFileIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const InsertDriveFileIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <InsertDriveFileIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 InsertDriveFileIcon.Style = SvgIcon;
 InsertDriveFileIcon.displayName = 'InsertDriveFileIcon';

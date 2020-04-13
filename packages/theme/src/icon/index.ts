@@ -9,8 +9,9 @@ const icon: IconTheme = {
         L: '3.2rem',
         XL: '4.0rem'
     },
-    defaultColor: 'rgba(0,0,0,0.54)',
-    disabledColor: colors.grey[300],
+    defaultIconColor: colors.grey[600],
+    disabledIconColor: colors.grey[300],
+    hoverIconColor: colors.grey[800],
     bgColor: colors.grey[100]
 };
 

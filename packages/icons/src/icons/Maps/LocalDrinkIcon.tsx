@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import LocalDrinkIconSvg from '../../assets/Maps/local_drink_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LocalDrinkIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <LocalDrinkIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const LocalDrinkIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <LocalDrinkIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 LocalDrinkIcon.Style = SvgIcon;
 LocalDrinkIcon.displayName = 'LocalDrinkIcon';

@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import EditLocationIconSvg from '../../assets/Maps/edit_location_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const EditLocationIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <EditLocationIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const EditLocationIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <EditLocationIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 EditLocationIcon.Style = SvgIcon;
 EditLocationIcon.displayName = 'EditLocationIcon';

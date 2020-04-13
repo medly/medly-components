@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import MouseIconSvg from '../../assets/Hardware/mouse_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const MouseIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <MouseIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const MouseIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <MouseIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 MouseIcon.Style = SvgIcon;
 MouseIcon.displayName = 'MouseIcon';

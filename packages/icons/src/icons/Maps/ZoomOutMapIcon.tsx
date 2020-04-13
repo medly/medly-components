@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import ZoomOutMapIconSvg from '../../assets/Maps/zoom_out_map_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ZoomOutMapIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <ZoomOutMapIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const ZoomOutMapIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <ZoomOutMapIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 ZoomOutMapIcon.Style = SvgIcon;
 ZoomOutMapIcon.displayName = 'ZoomOutMapIcon';

@@ -107,8 +107,9 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                     </FieldWithLabel.Label>
                 )}
                 <PopoverWrapper onOuterClick={handleOuterClick} showPopover={areOptionsVisible}>
-                    <SelectWrapperStyled {...{ description, fullWidth, labelPosition, disabled }} onClick={showOptions}>
+                    <SelectWrapperStyled {...{ description, labelPosition, disabled }} onClick={showOptions}>
                         <Input
+                            fullWidth
                             autoComplete="off"
                             id={`${id}-input`}
                             disabled={disabled}

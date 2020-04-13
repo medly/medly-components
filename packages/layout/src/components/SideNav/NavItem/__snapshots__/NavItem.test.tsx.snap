@@ -262,7 +262,6 @@ exports[`NavItem should be able to click on nested item 1`] = `
   position: absolute;
   width: calc(2.0rem * 1.33);
   height: calc(2.0rem * 0.2);
-  background: rgba(0,0,0,0.54);
   border-radius: calc(2.0rem * 0.2);
   opacity: 1;
   left: 0;
@@ -761,7 +760,6 @@ exports[`NavItem should fold the open item on click on it 1`] = `
   position: absolute;
   width: calc(2.0rem * 1.33);
   height: calc(2.0rem * 0.2);
-  background: rgba(0,0,0,0.54);
   border-radius: calc(2.0rem * 0.2);
   opacity: 1;
   left: 0;
@@ -1239,7 +1237,6 @@ exports[`NavItem should render properly 1`] = `
   position: absolute;
   width: calc(2.0rem * 1.33);
   height: calc(2.0rem * 0.2);
-  background: rgba(0,0,0,0.54);
   border-radius: calc(2.0rem * 0.2);
   opacity: 1;
   left: 0;

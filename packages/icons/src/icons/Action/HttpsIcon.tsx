@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import HttpsIconSvg from '../../assets/Action/https_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const HttpsIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <HttpsIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const HttpsIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <HttpsIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 HttpsIcon.Style = SvgIcon;
 HttpsIcon.displayName = 'HttpsIcon';

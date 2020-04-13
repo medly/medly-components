@@ -77,12 +77,13 @@ export const MultiSelect: SFC<SelectProps> & WithStyle = React.memo(
                     </FieldWithLabel.Label>
                 )}
                 <PopoverWrapper onOuterClick={handleOuterClick} showPopover={areOptionsVisible}>
-                    <SelectWrapperStyled {...{ description, fullWidth, labelPosition, disabled }} id={`${id}-container`}>
+                    <SelectWrapperStyled {...{ description, labelPosition, disabled }} id={`${id}-container`}>
                         {props.showChips &&
                             selectedOptions.map(op => (
                                 <Chip key={op.value} disabled={disabled} label={op.label} onDelete={handleChipDelete(op.value)} />
                             ))}
                         <Input
+                            fullWidth
                             onClick={handleWrapperClick}
                             autoComplete="off"
                             id={`${id}-input`}

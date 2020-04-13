@@ -3,11 +3,14 @@ import React, { SFC } from 'react';
 import InsertCommentIconSvg from '../../assets/Editor/insert_comment_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const InsertCommentIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => (
-    <SvgIcon {...props}>
-        <InsertCommentIconSvg {...props} width="1em" height="1em" />
-    </SvgIcon>
-));
+const InsertCommentIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+    const { size, withHoverEffect, color, margin, ...restProps } = props;
+    return (
+        <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>
+            <InsertCommentIconSvg {...restProps} width="1em" height="1em" />
+        </SvgIcon>
+    );
+});
 
 InsertCommentIcon.Style = SvgIcon;
 InsertCommentIcon.displayName = 'InsertCommentIcon';
