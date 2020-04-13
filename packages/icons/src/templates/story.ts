@@ -1,8 +1,21 @@
-export const storyTemplate = (iconNames: string[]) => {
-    const imports = iconNames.map(name => `import ${name} from './icons/${name}';`).join('\n');
-    const iconComponents = iconNames
-        .map(name => `<${name} size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />`)
-        .join('\n            ');
+export const storyTemplate = (icons: { [k: string]: string[] }) => {
+    const imports = Object.keys(icons)
+        .map(DIR => icons[DIR].map(iconName => `import ${iconName} from './icons/${DIR}${iconName}';`).join('\n'))
+        .join('');
+
+    const iconComponents = (iconNames: string[]) =>
+        iconNames.map(name => `<${name} size={select('Size', sizes, 'M')} color={color('Color', defaultColor)} />`).join('\n            ');
+
+    const preview = Object.keys(icons).map(
+        DIR => `### ${DIR.slice(0, -1)}
+<Preview withToolbar>
+    <Story name="${DIR.slice(0, -1)}" parameters={{ decorators: [withKnobs] }}>
+        <IconContainer>
+            ${iconComponents(icons[DIR])}
+        </IconContainer>
+    </Story>
+</Preview>`
+    );
 
     return `import { HTMLProps } from '@medly-components/utils';
 import SvgIcon from './SvgIcon';
@@ -37,14 +50,6 @@ None of the props is required but still you can style all the icons according to
 
 <Props of={ThemeInterface} />
 
-You can directly import from \`@medly-components/icons\`
-
-<Preview withToolbar>
-    <Story name="Icons" parameters={{ decorators: [withKnobs] }}>
-        <IconContainer>
-            ${iconComponents}
-        </IconContainer>
-    </Story>
-</Preview>
+${preview}
 `;
 };

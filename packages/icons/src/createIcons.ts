@@ -1,5 +1,5 @@
 import { capitalize } from '@medly-components/utils/src';
-import { existsSync, readdirSync, unlinkSync, writeFileSync } from 'fs';
+import { mkdirSync, readdirSync, writeFileSync } from 'fs';
 import { exportTemplate, iconTemplate, storyTemplate } from './templates';
 
 const ICONS_DIR = './src/icons/',
@@ -12,33 +12,43 @@ interface IconInfo {
     filenameWithExt: string;
 }
 
-const cleanup = () => {
-    readdirSync(ICONS_DIR).forEach(file => file.endsWith('.tsx') && unlinkSync(`${ICONS_DIR}${file}`));
-    existsSync(INDEX_TS) && unlinkSync(INDEX_TS);
-    existsSync(STORY_MDX) && unlinkSync(STORY_MDX);
-};
-
-const getIconInfo = () =>
-    readdirSync(ASSETS_DIR).map(filenameWithExt => ({
+const getIcons = (DIR: string): IconInfo[] =>
+    readdirSync(ASSETS_DIR + DIR).map(filenameWithExt => ({
         filenameWithExt,
         iconName: `${filenameWithExt.split('_24')[0].split('.')[0].split('_').map(capitalize).join('')}Icon`
     }));
 
-const createComponents = (icons: IconInfo[]) =>
-    icons.forEach(({ iconName, filenameWithExt }) =>
-        writeFileSync(`${ICONS_DIR}${iconName}.tsx`, iconTemplate(iconName, `../assets/${filenameWithExt}`))
+const getDirectories = () => readdirSync(ASSETS_DIR).map(DIR => DIR + '/'),
+    getIconNames = (DIR: string) => getIcons(DIR).map(({ iconName }) => iconName);
+
+const createComponents = (directories: string[]) =>
+    directories.forEach((DIR: string) =>
+        getIcons(DIR).forEach(({ iconName, filenameWithExt }) => {
+            mkdirSync(ICONS_DIR + DIR, { recursive: true });
+            writeFileSync(`${ICONS_DIR}${DIR}${iconName}.tsx`, iconTemplate(iconName, `../../assets/${DIR}${filenameWithExt}`));
+        })
     );
 
-const createIndexFile = (icons: IconInfo[]) => writeFileSync(INDEX_TS, exportTemplate(icons.map(({ iconName }) => iconName)));
+const createIndexFile = (directories: string[]) =>
+    directories.forEach(DIR => writeFileSync(INDEX_TS, exportTemplate(DIR, getIconNames(DIR))));
 
-const createStory = (icons: IconInfo[]) => writeFileSync(STORY_MDX, storyTemplate(icons.map(({ iconName }) => iconName)));
+const createStory = (directories: string[]) => {
+    // Icon names as array for each dir. {[dir_name]: iconNames[]}
+    const icons = directories.reduce(
+        (acc, cur) => ({
+            ...acc,
+            [cur]: getIconNames(cur)
+        }),
+        {}
+    );
+    writeFileSync(STORY_MDX, storyTemplate(icons));
+};
 
 const createIcons = () => {
-    cleanup();
-    const icons: IconInfo[] = getIconInfo();
-    createComponents(icons);
-    createIndexFile(icons);
-    createStory(icons);
+    const directories = getDirectories();
+    createComponents(directories);
+    createIndexFile(directories);
+    createStory(directories);
 };
 
 createIcons();

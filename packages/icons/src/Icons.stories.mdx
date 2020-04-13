@@ -5,45 +5,45 @@ import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import IconContainer from './IconContainer';
 import { withKnobs, color, select } from '@storybook/addon-knobs';
 import { sizes, defaultColor, ThemeInterface, IconProps } from './Icons.stories';
-import AddIcon from './icons/AddIcon';
-import AuditIcon from './icons/AuditIcon';
-import BillIcon from './icons/BillIcon';
-import BugIcon from './icons/BugIcon';
-import CheckIcon from './icons/CheckIcon';
-import CheckCircleIcon from './icons/CheckCircleIcon';
-import ClearIcon from './icons/ClearIcon';
-import ClipboardIcon from './icons/ClipboardIcon';
-import ContractIcon from './icons/ContractIcon';
-import DeleteIcon from './icons/DeleteIcon';
-import DownArrowIcon from './icons/DownArrowIcon';
-import DownloadIcon from './icons/DownloadIcon';
-import DropDownIcon from './icons/DropDownIcon';
-import EditIcon from './icons/EditIcon';
-import ExclamationCircleIcon from './icons/ExclamationCircleIcon';
-import ExclamationTriangleIcon from './icons/ExclamationTriangleIcon';
-import ExpandLessIcon from './icons/ExpandLessIcon';
-import ExpandMoreIcon from './icons/ExpandMoreIcon';
-import FileIcon from './icons/FileIcon';
-import FileUploadIcon from './icons/FileUploadIcon';
-import GearIcon from './icons/GearIcon';
-import HelpIcon from './icons/HelpIcon';
-import HomeIcon from './icons/HomeIcon';
-import InfoCircleIcon from './icons/InfoCircleIcon';
-import LibraryBooksIcon from './icons/LibraryBooksIcon';
-import OrdersIcon from './icons/OrdersIcon';
-import PowerButtonIcon from './icons/PowerButtonIcon';
-import PrescriptionIcon from './icons/PrescriptionIcon';
-import PrintIcon from './icons/PrintIcon';
-import ReceiptIcon from './icons/ReceiptIcon';
-import ReportsIcon from './icons/ReportsIcon';
-import SearchIcon from './icons/SearchIcon';
-import SliderIcon from './icons/SliderIcon';
-import StatementIcon from './icons/StatementIcon';
-import SyncIcon from './icons/SyncIcon';
-import UpArrowIcon from './icons/UpArrowIcon';
-import UploadIcon from './icons/UploadIcon';
-import VisibilityIcon from './icons/VisibilityIcon';
-import VisibilityOffIcon from './icons/VisibilityOffIcon';
+import AddIcon from './icons/Forms/AddIcon';
+import AuditIcon from './icons/Forms/AuditIcon';
+import BillIcon from './icons/Forms/BillIcon';
+import BugIcon from './icons/Forms/BugIcon';
+import CheckIcon from './icons/Forms/CheckIcon';
+import CheckCircleIcon from './icons/Forms/CheckCircleIcon';
+import ClearIcon from './icons/Forms/ClearIcon';
+import ClipboardIcon from './icons/Forms/ClipboardIcon';
+import ContractIcon from './icons/Forms/ContractIcon';
+import DeleteIcon from './icons/Forms/DeleteIcon';
+import DownArrowIcon from './icons/Forms/DownArrowIcon';
+import DownloadIcon from './icons/Forms/DownloadIcon';
+import DropDownIcon from './icons/Forms/DropDownIcon';
+import EditIcon from './icons/Forms/EditIcon';
+import ExclamationCircleIcon from './icons/Forms/ExclamationCircleIcon';
+import ExclamationTriangleIcon from './icons/Forms/ExclamationTriangleIcon';
+import ExpandLessIcon from './icons/Forms/ExpandLessIcon';
+import ExpandMoreIcon from './icons/Forms/ExpandMoreIcon';
+import FileIcon from './icons/Forms/FileIcon';
+import FileUploadIcon from './icons/Forms/FileUploadIcon';
+import GearIcon from './icons/Forms/GearIcon';
+import HelpIcon from './icons/Forms/HelpIcon';
+import HomeIcon from './icons/Forms/HomeIcon';
+import InfoCircleIcon from './icons/Forms/InfoCircleIcon';
+import LibraryBooksIcon from './icons/Forms/LibraryBooksIcon';
+import OrdersIcon from './icons/Forms/OrdersIcon';
+import PowerButtonIcon from './icons/Forms/PowerButtonIcon';
+import PrescriptionIcon from './icons/Forms/PrescriptionIcon';
+import PrintIcon from './icons/Forms/PrintIcon';
+import ReceiptIcon from './icons/Forms/ReceiptIcon';
+import ReportsIcon from './icons/Forms/ReportsIcon';
+import SearchIcon from './icons/Forms/SearchIcon';
+import SliderIcon from './icons/Forms/SliderIcon';
+import StatementIcon from './icons/Forms/StatementIcon';
+import SyncIcon from './icons/Forms/SyncIcon';
+import UpArrowIcon from './icons/Forms/UpArrowIcon';
+import UploadIcon from './icons/Forms/UploadIcon';
+import VisibilityIcon from './icons/Forms/VisibilityIcon';
+import VisibilityOffIcon from './icons/Forms/VisibilityOffIcon';
 
 <Meta title="Icons" component={SvgIcon} />
 
@@ -69,8 +69,7 @@ None of the props is required but still you can style all the icons according to
 
 <Props of={ThemeInterface} />
 
-You can directly import from `@medly-components/icons`
-
+### Forms
 <Preview withToolbar>
     <Story name="Icons" parameters={{ decorators: [withKnobs] }}>
         <IconContainer>
