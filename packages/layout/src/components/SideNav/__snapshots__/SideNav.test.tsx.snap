@@ -2,21 +2,25 @@
 
 exports[`SideNav should change width after clicking on burger icon 1`] = `
 .c9 {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c9 * {
-  fill: rgba(0,0,0,0.54);
+  fill: #607890;
 }
 
 .c15 {
   font-size: 1.6rem;
   cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c15 * {
-  fill: rgba(0,0,0,0.54);
+  fill: #607890;
 }
 
 .c10 {
@@ -182,6 +186,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
   position: absolute;
   width: calc(2.0rem * 1.33);
   height: calc(2.0rem * 0.2);
+  background: #607890;
   border-radius: calc(2.0rem * 0.2);
   opacity: 1;
   left: 0;
@@ -511,21 +516,25 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 
 exports[`SideNav should change width when clicked on item with sidenavOpenCloseOnClick prop given 1`] = `
 .c9 {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c9 * {
-  fill: rgba(0,0,0,0.54);
+  fill: #607890;
 }
 
 .c15 {
   font-size: 1.6rem;
   cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c15 * {
-  fill: rgba(0,0,0,0.54);
+  fill: #607890;
 }
 
 .c10 {
@@ -716,6 +725,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
   position: absolute;
   width: calc(2.0rem * 1.33);
   height: calc(2.0rem * 0.2);
+  background: #607890;
   border-radius: calc(2.0rem * 0.2);
   opacity: 1;
   left: 0;
@@ -1046,12 +1056,14 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 
 exports[`SideNav should close sidenav if we click outside 1`] = `
 .c11 {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c11 * {
-  fill: rgba(0,0,0,0.54);
+  fill: #607890;
 }
 
 .c8 {
@@ -1230,6 +1242,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
   position: absolute;
   width: calc(2.0rem * 1.33);
   height: calc(2.0rem * 0.2);
+  background: #607890;
   border-radius: calc(2.0rem * 0.2);
   opacity: 1;
   left: 0;
@@ -1466,21 +1479,25 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 
 exports[`SideNav should render properly 1`] = `
 .c8 {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c8 * {
-  fill: rgba(0,0,0,0.54);
+  fill: #607890;
 }
 
 .c14 {
   font-size: 1.6rem;
   cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c14 * {
-  fill: rgba(0,0,0,0.54);
+  fill: #607890;
 }
 
 .c9 {
@@ -1646,6 +1663,7 @@ exports[`SideNav should render properly 1`] = `
   position: absolute;
   width: calc(2.0rem * 1.33);
   height: calc(2.0rem * 0.2);
+  background: #607890;
   border-radius: calc(2.0rem * 0.2);
   opacity: 1;
   left: 0;

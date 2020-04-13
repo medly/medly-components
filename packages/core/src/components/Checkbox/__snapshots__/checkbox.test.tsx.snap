@@ -2,18 +2,14 @@
 
 exports[`Checkbox component should render correctly with all the default props 1`] = `
 .c4 {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   cursor: pointer;
-  padding: 0.8rem;
-  border-radius: 50%;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c4 * {
-  fill: rgba(0,0,0,0.54);
-}
-
-.c4:hover {
-  background-color: #eff2f4;
+  fill: #607890;
 }
 
 .c0 {
@@ -139,18 +135,14 @@ exports[`Checkbox component should render correctly with all the default props 1
 
 exports[`Checkbox component should render correctly with all the props given 1`] = `
 .c6 {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   cursor: pointer;
-  padding: 0.8rem;
-  border-radius: 50%;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c6 * {
-  fill: rgba(0,0,0,0.54);
-}
-
-.c6:hover {
-  background-color: #eff2f4;
+  fill: #607890;
 }
 
 .c1 {

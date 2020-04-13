@@ -83,12 +83,14 @@ exports[`Button component should render properly when it is disabled 1`] = `
 
 exports[`Button component should render properly with any icon at the beginning of the text 1`] = `
 .c2 {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c2 * {
-  fill: rgba(0,0,0,0.54);
+  fill: #607890;
 }
 
 .c4 {
@@ -186,12 +188,14 @@ exports[`Button component should render properly with any icon at the beginning 
 
 exports[`Button component should render properly with any icon at the end of the text 1`] = `
 .c2 {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c2 * {
-  fill: rgba(0,0,0,0.54);
+  fill: #607890;
 }
 
 .c4 {

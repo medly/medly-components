@@ -38,18 +38,14 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c16 {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   cursor: pointer;
-  padding: 0.8rem;
-  border-radius: 50%;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c16 * {
-  fill: rgba(0,0,0,0.54);
-}
-
-.c16:hover {
-  background-color: #eff2f4;
+  fill: #607890;
 }
 
 .c2 {

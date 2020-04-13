@@ -101,6 +101,7 @@ exports[`BottomList should render properly 1`] = `
   position: absolute;
   width: calc(2.0rem * 1.33);
   height: calc(2.0rem * 0.2);
+  background: #607890;
   border-radius: calc(2.0rem * 0.2);
   opacity: 1;
   left: 0;

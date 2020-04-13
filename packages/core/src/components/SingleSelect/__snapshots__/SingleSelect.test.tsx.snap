@@ -197,18 +197,14 @@ exports[`SingleSelect component should render correctly with all the props given
 }
 
 .c9 {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   cursor: pointer;
-  padding: 0.8rem;
-  border-radius: 50%;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c9 * {
-  fill: rgba(0,0,0,0.54);
-}
-
-.c9:hover {
-  background-color: #eff2f4;
+  fill: #607890;
 }
 
 .c5 {
@@ -483,18 +479,14 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 }
 
 .c7 {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   cursor: pointer;
-  padding: 0.8rem;
-  border-radius: 50%;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c7 * {
-  fill: rgba(0,0,0,0.54);
-}
-
-.c7:hover {
-  background-color: #eff2f4;
+  fill: #607890;
 }
 
 .c3 {

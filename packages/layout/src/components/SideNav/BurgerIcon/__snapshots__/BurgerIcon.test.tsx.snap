@@ -92,6 +92,7 @@ exports[`BurgerIcon component should render with default props 1`] = `
   position: absolute;
   width: calc(3.2rem * 1.33);
   height: calc(3.2rem * 0.2);
+  background: #607890;
   border-radius: calc(3.2rem * 0.2);
   opacity: 1;
   left: 0;

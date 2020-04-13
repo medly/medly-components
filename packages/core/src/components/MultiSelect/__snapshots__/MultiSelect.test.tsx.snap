@@ -4,16 +4,23 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 .c10 {
   font-size: 2.0rem;
   cursor: pointer;
-  padding: 0.8rem;
-  border-radius: 50%;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c10 * {
-  fill: rgba(0,0,0,0.54);
+  fill: #607890;
 }
 
-.c10:hover {
-  background-color: #eff2f4;
+.c14 {
+  font-size: 2.4rem;
+  cursor: pointer;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.c14 * {
+  fill: #607890;
 }
 
 .c8 {
@@ -28,7 +35,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   line-height: 2.2rem;
 }
 
-.c15 {
+.c16 {
   margin: 0;
   color: grey;
   font-size: 1.4rem;
@@ -110,7 +117,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   user-select: none;
 }
 
-.c16 {
+.c17 {
   grid-area: description;
   margin: 5px 0 0 2px;
   color: grey;
@@ -311,7 +318,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   border-color: #012040;
 }
 
-.c14 {
+.c15 {
   max-width: 24px;
   margin-right: 0.4rem;
 }
@@ -381,7 +388,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
           
         </div>
         <svg
-          class="c9 c10 c14"
+          class="c9 c14 c15"
           fill="none"
           height="1em"
           theme="[object Object]"
@@ -398,7 +405,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
       </div>
     </div>
     <span
-      class="c7 c15 c16"
+      class="c7 c16 c17"
     >
       We will show reports based on Pharmacy
     </span>
@@ -408,18 +415,14 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 exports[`MultiSelect component with checkbox false should render correctly with default props 1`] = `
 .c7 {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   cursor: pointer;
-  padding: 0.8rem;
-  border-radius: 50%;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c7 * {
-  fill: rgba(0,0,0,0.54);
-}
-
-.c7:hover {
-  background-color: #eff2f4;
+  fill: #607890;
 }
 
 .c1 {
@@ -682,16 +685,23 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 .c10 {
   font-size: 2.0rem;
   cursor: pointer;
-  padding: 0.8rem;
-  border-radius: 50%;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c10 * {
-  fill: rgba(0,0,0,0.54);
+  fill: #607890;
 }
 
-.c10:hover {
-  background-color: #eff2f4;
+.c14 {
+  font-size: 2.4rem;
+  cursor: pointer;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.c14 * {
+  fill: #607890;
 }
 
 .c8 {
@@ -706,7 +716,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   line-height: 2.2rem;
 }
 
-.c15 {
+.c16 {
   margin: 0;
   color: grey;
   font-size: 1.4rem;
@@ -788,7 +798,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   user-select: none;
 }
 
-.c16 {
+.c17 {
   grid-area: description;
   margin: 5px 0 0 2px;
   color: grey;
@@ -989,7 +999,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   border-color: #012040;
 }
 
-.c14 {
+.c15 {
   max-width: 24px;
   margin-right: 0.4rem;
 }
@@ -1059,7 +1069,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
           
         </div>
         <svg
-          class="c9 c10 c14"
+          class="c9 c14 c15"
           fill="none"
           height="1em"
           theme="[object Object]"
@@ -1076,7 +1086,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
       </div>
     </div>
     <span
-      class="c7 c15 c16"
+      class="c7 c16 c17"
     >
       We will show reports based on Pharmacy
     </span>
@@ -1086,18 +1096,14 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 
 exports[`MultiSelect component with checkbox true should render correctly with default props 1`] = `
 .c7 {
-  font-size: 2.0rem;
+  font-size: 2.4rem;
   cursor: pointer;
-  padding: 0.8rem;
-  border-radius: 50%;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
 }
 
 .c7 * {
-  fill: rgba(0,0,0,0.54);
-}
-
-.c7:hover {
-  background-color: #eff2f4;
+  fill: #607890;
 }
 
 .c1 {
