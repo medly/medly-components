@@ -1,4 +1,3 @@
-export { default as BurgerIcon } from './icons/BurgerIcon';
 export { default as AddIcon } from './icons/Forms/AddIcon';
 export { default as AuditIcon } from './icons/Forms/AuditIcon';
 export { default as BillIcon } from './icons/Forms/BillIcon';

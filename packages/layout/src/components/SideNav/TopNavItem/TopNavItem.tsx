@@ -1,6 +1,6 @@
-import { BurgerIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
 import React, { SFC } from 'react';
+import BurgerIcon from '../BurgerIcon';
 import NavIcon from '../NavIcon';
 import * as Styled from './TopNavItem.styled';
 import { Props } from './types';

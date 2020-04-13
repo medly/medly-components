@@ -1,5 +1,5 @@
-import { BurgerIcon } from '@medly-components/icons';
 import { styled } from '@medly-components/utils';
+import BurgerIcon from '../BurgerIcon';
 import NavItem from '../NavItem';
 
 export const Logo = styled('div')``;
