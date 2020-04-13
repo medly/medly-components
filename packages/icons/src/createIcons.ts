@@ -29,26 +29,22 @@ const createComponents = (directories: string[]) =>
         })
     );
 
-const createIndexFile = (directories: string[]) =>
-    directories.forEach(DIR => writeFileSync(INDEX_TS, exportTemplate(DIR, getIconNames(DIR))));
-
-const createStory = (directories: string[]) => {
-    // Icon names as array for each dir. {[dir_name]: iconNames[]}
-    const icons = directories.reduce(
-        (acc, cur) => ({
-            ...acc,
-            [cur]: getIconNames(cur)
-        }),
-        {}
-    );
-    writeFileSync(STORY_MDX, storyTemplate(icons));
-};
+const createIndexFile = (icons: { [k: string]: string[] }) => writeFileSync(INDEX_TS, exportTemplate(icons));
+const createStory = (icons: { [k: string]: string[] }) => writeFileSync(STORY_MDX, storyTemplate(icons));
 
 const createIcons = () => {
-    const directories = getDirectories();
+    const directories = getDirectories(),
+        // Icon names as array for each dir. {[dir_name]: iconNames[]}
+        icons = directories.reduce(
+            (acc, cur) => ({
+                ...acc,
+                [cur]: getIconNames(cur)
+            }),
+            {}
+        );
     createComponents(directories);
-    createIndexFile(directories);
-    createStory(directories);
+    createIndexFile(icons);
+    createStory(icons);
 };
 
 createIcons();

@@ -1,7 +1,7 @@
 export const storyTemplate = (icons: { [k: string]: string[] }) => {
     const imports = Object.keys(icons)
         .map(DIR => icons[DIR].map(iconName => `import ${iconName} from './icons/${DIR}${iconName}';`).join('\n'))
-        .join('');
+        .join('\n');
 
     const iconComponents = (iconNames: string[]) =>
         iconNames
