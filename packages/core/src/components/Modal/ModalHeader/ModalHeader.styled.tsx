@@ -17,7 +17,7 @@ export const ModalHeaderStyled = styled('div')<Props>`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: ${({ theme }) => theme.spacing.M};
+    margin-bottom: ${({ theme }) => theme.spacing.S4};
 `;
 
 ModalHeaderStyled.defaultProps = {

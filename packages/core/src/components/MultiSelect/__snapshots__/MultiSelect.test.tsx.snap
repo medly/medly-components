@@ -2,21 +2,33 @@
 
 exports[`MultiSelect component with checkbox false should render correctly with all the props given 1`] = `
 .c10 {
-  font-size: 12px;
+  font-size: 1.6rem;
   cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 50%;
 }
 
 .c10 * {
-  fill: #757575;
+  fill: rgba(0,0,0,0.54);
+}
+
+.c10:hover {
+  background-color: #eff2f4;
 }
 
 .c14 {
-  font-size: 16px;
+  font-size: 2.0rem;
   cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 50%;
 }
 
 .c14 * {
-  fill: #757575;
+  fill: rgba(0,0,0,0.54);
+}
+
+.c14:hover {
+  background-color: #eff2f4;
 }
 
 .c8 {
@@ -98,7 +110,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 8px 0px 0px;
+  margin: 0px 0.8rem 0px 0px;
   cursor: default;
 }
 
@@ -120,7 +132,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c1 {
-  margin: 8px 0;
+  margin: 0.8rem 0;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -131,7 +143,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'label field' 'random description';
 }
 
-.c1 .sc-AykKI {
+.c1 .sc-AykKG {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -146,7 +158,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c11 {
-  margin: 8px 8px 8px 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -157,7 +169,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'field' 'description';
 }
 
-.c11 .sc-AykKI {
+.c11 .sc-AykKG {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -216,7 +228,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  padding: 8px;
+  padding: 0.8rem;
   color: #435465;
 }
 
@@ -262,7 +274,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   flex-direction: column-reverse;
 }
 
-.c4 .sc-fzXfLT {
+.c4 .sc-fzXfLR {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -357,13 +369,16 @@ exports[`MultiSelect component with checkbox false should render correctly with 
           </span>
           <svg
             class="c9 c10"
+            fill="none"
             height="1em"
-            viewBox="0 0 352 512"
+            viewBox="0 0 24 24"
             width="1em"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-              fill="currentColor"
+              d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+              fill="#000"
+              fill-opacity=".54"
             />
           </svg>
         </button>
@@ -373,7 +388,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
         >
           
           <div
-            class="sc-AykKI c12"
+            class="sc-AykKG c12"
           >
             <input
               autocomplete="off"
@@ -389,14 +404,17 @@ exports[`MultiSelect component with checkbox false should render correctly with 
         </div>
         <svg
           class="c9 c14 c15"
+          fill="none"
           height="1em"
           theme="[object Object]"
-          viewBox="0 0 12 8"
+          viewBox="0 0 24 24"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+            d="M15.875 9l-3.88 3.88L8.115 9a.996.996 0 1 0-1.41 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+            fill="#000"
+            fill-opacity=".54"
           />
         </svg>
       </div>
@@ -412,16 +430,22 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 exports[`MultiSelect component with checkbox false should render correctly with default props 1`] = `
 .c7 {
-  font-size: 16px;
+  font-size: 2.0rem;
   cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 50%;
 }
 
 .c7 * {
-  fill: #757575;
+  fill: rgba(0,0,0,0.54);
+}
+
+.c7:hover {
+  background-color: #eff2f4;
 }
 
 .c1 {
-  margin: 8px 8px 8px 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -433,7 +457,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'field' 'description';
 }
 
-.c1 .sc-AykKI {
+.c1 .sc-AykKG {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -448,7 +472,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c4 {
-  margin: 8px 8px 8px 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -459,7 +483,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .sc-AykKI {
+.c4 .sc-AykKG {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -518,7 +542,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  padding: 8px;
+  padding: 0.8rem;
   color: #435465;
 }
 
@@ -564,7 +588,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   flex-direction: column-reverse;
 }
 
-.c2 .sc-fzXfLT {
+.c2 .sc-fzXfLR {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -647,7 +671,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
         >
           
           <div
-            class="sc-AykKI c5"
+            class="sc-AykKG c5"
           >
             <input
               autocomplete="off"
@@ -662,14 +686,17 @@ exports[`MultiSelect component with checkbox false should render correctly with 
         </div>
         <svg
           class="c7 c8"
+          fill="none"
           height="1em"
           theme="[object Object]"
-          viewBox="0 0 12 8"
+          viewBox="0 0 24 24"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+            d="M15.875 9l-3.88 3.88L8.115 9a.996.996 0 1 0-1.41 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+            fill="#000"
+            fill-opacity=".54"
           />
         </svg>
       </div>
@@ -681,21 +708,33 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 exports[`MultiSelect component with checkbox true should render correctly with all the props given 1`] = `
 .c10 {
-  font-size: 12px;
+  font-size: 1.6rem;
   cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 50%;
 }
 
 .c10 * {
-  fill: #757575;
+  fill: rgba(0,0,0,0.54);
+}
+
+.c10:hover {
+  background-color: #eff2f4;
 }
 
 .c14 {
-  font-size: 16px;
+  font-size: 2.0rem;
   cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 50%;
 }
 
 .c14 * {
-  fill: #757575;
+  fill: rgba(0,0,0,0.54);
+}
+
+.c14:hover {
+  background-color: #eff2f4;
 }
 
 .c8 {
@@ -777,7 +816,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 8px 0px 0px;
+  margin: 0px 0.8rem 0px 0px;
   cursor: default;
 }
 
@@ -799,7 +838,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c1 {
-  margin: 8px 0;
+  margin: 0.8rem 0;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -810,7 +849,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   grid-template-areas: 'label field' 'random description';
 }
 
-.c1 .sc-AykKI {
+.c1 .sc-AykKG {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -825,7 +864,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c11 {
-  margin: 8px 8px 8px 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -836,7 +875,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   grid-template-areas: 'field' 'description';
 }
 
-.c11 .sc-AykKI {
+.c11 .sc-AykKG {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -895,7 +934,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  padding: 8px;
+  padding: 0.8rem;
   color: #435465;
 }
 
@@ -941,7 +980,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   flex-direction: column-reverse;
 }
 
-.c4 .sc-fzXfLT {
+.c4 .sc-fzXfLR {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -1036,13 +1075,16 @@ exports[`MultiSelect component with checkbox true should render correctly with a
           </span>
           <svg
             class="c9 c10"
+            fill="none"
             height="1em"
-            viewBox="0 0 352 512"
+            viewBox="0 0 24 24"
             width="1em"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-              fill="currentColor"
+              d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+              fill="#000"
+              fill-opacity=".54"
             />
           </svg>
         </button>
@@ -1052,7 +1094,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
         >
           
           <div
-            class="sc-AykKI c12"
+            class="sc-AykKG c12"
           >
             <input
               autocomplete="off"
@@ -1068,14 +1110,17 @@ exports[`MultiSelect component with checkbox true should render correctly with a
         </div>
         <svg
           class="c9 c14 c15"
+          fill="none"
           height="1em"
           theme="[object Object]"
-          viewBox="0 0 12 8"
+          viewBox="0 0 24 24"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+            d="M15.875 9l-3.88 3.88L8.115 9a.996.996 0 1 0-1.41 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+            fill="#000"
+            fill-opacity=".54"
           />
         </svg>
       </div>
@@ -1091,16 +1136,22 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 
 exports[`MultiSelect component with checkbox true should render correctly with default props 1`] = `
 .c7 {
-  font-size: 16px;
+  font-size: 2.0rem;
   cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 50%;
 }
 
 .c7 * {
-  fill: #757575;
+  fill: rgba(0,0,0,0.54);
+}
+
+.c7:hover {
+  background-color: #eff2f4;
 }
 
 .c1 {
-  margin: 8px 8px 8px 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1112,7 +1163,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   grid-template-areas: 'field' 'description';
 }
 
-.c1 .sc-AykKI {
+.c1 .sc-AykKG {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1127,7 +1178,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c4 {
-  margin: 8px 8px 8px 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1138,7 +1189,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .sc-AykKI {
+.c4 .sc-AykKG {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1197,7 +1248,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  padding: 8px;
+  padding: 0.8rem;
   color: #435465;
 }
 
@@ -1243,7 +1294,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   flex-direction: column-reverse;
 }
 
-.c2 .sc-fzXfLT {
+.c2 .sc-fzXfLR {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -1326,7 +1377,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
         >
           
           <div
-            class="sc-AykKI c5"
+            class="sc-AykKG c5"
           >
             <input
               autocomplete="off"
@@ -1341,14 +1392,17 @@ exports[`MultiSelect component with checkbox true should render correctly with d
         </div>
         <svg
           class="c7 c8"
+          fill="none"
           height="1em"
           theme="[object Object]"
-          viewBox="0 0 12 8"
+          viewBox="0 0 24 24"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+            d="M15.875 9l-3.88 3.88L8.115 9a.996.996 0 1 0-1.41 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+            fill="#000"
+            fill-opacity=".54"
           />
         </svg>
       </div>

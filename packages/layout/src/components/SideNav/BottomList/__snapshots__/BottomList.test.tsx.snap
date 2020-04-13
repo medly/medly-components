@@ -13,49 +13,6 @@ exports[`BottomList should render properly 1`] = `
   line-height: 2.2rem;
 }
 
-.c5 {
-  display: block;
-  position: absolute;
-  width: calc(16px * 1.33);
-  height: calc(16px * 0.2);
-  background: #757575;
-  border-radius: calc(16px * 0.2);
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-
-.c5:nth-child(1) {
-  top: 0;
-}
-
-.c5:nth-child(2) {
-  top: calc(16px * 0.4);
-}
-
-.c5:nth-child(3) {
-  top: calc(16px * 0.8);
-}
-
-.c4 {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  width: calc(16px * 1.33);
-  height: 16px;
-  position: relative;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-}
-
 .c9 {
   width: 100%;
   -webkit-text-decoration: none;
@@ -136,7 +93,50 @@ exports[`BottomList should render properly 1`] = `
 }
 
 .c2 .sc-AykKH {
-  font-size: 16px;
+  font-size: 2.0rem;
+}
+
+.c5 {
+  display: block;
+  position: absolute;
+  width: calc(2.0rem * 1.33);
+  height: calc(2.0rem * 0.2);
+  background: rgba(0,0,0,0.54);
+  border-radius: calc(2.0rem * 0.2);
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.c5:nth-child(1) {
+  top: 0;
+}
+
+.c5:nth-child(2) {
+  top: calc(2.0rem * 0.4);
+}
+
+.c5:nth-child(3) {
+  top: calc(2.0rem * 0.8);
+}
+
+.c4 {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: calc(2.0rem * 1.33);
+  height: 2.0rem;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .c1 {
@@ -228,7 +228,7 @@ exports[`BottomList should render properly 1`] = `
   transition: opacity 0.2s;
 }
 
-.c0 .sc-LzLqE {
+.c0 .sc-LzLqC {
   max-height: 0;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
@@ -236,7 +236,7 @@ exports[`BottomList should render properly 1`] = `
 
 <div>
   <nav
-    class="sc-LzLqD c0"
+    class="sc-fzXfRb c0"
     id="medly-sidenav"
   >
     <div

@@ -15,15 +15,15 @@ exports[`List component should render horizontal list 1`] = `
 }
 
 .c0 li {
-  margin: 0 4px;
+  margin: 0 0.4rem;
 }
 
 .c0 li:last-child {
-  margin-right: 8px;
+  margin-right: 0.8rem;
 }
 
 .c0 li:first-child {
-  margin-left: 8px;
+  margin-left: 0.8rem;
 }
 
 <div>
@@ -59,15 +59,15 @@ exports[`List component should render vertical list 1`] = `
 }
 
 .c0 li {
-  margin: 4px 0;
+  margin: 0.4rem 0;
 }
 
 .c0 li:last-child {
-  margin-bottom: 8px;
+  margin-bottom: 0.8rem;
 }
 
 .c0 li:first-child {
-  margin-top: 8px;
+  margin-top: 0.8rem;
 }
 
 <div>

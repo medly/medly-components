@@ -24,7 +24,7 @@ export const Wrapper = styled(FieldWithLabel.Field).attrs(({ theme: { input, fon
 
     & > * {
         ${getFontStyle}
-        padding: ${({ theme }) => theme.spacing.S};
+        padding: ${({ theme }) => theme.spacing.S2};
         color: ${props => props.input.color};
     }
 `;

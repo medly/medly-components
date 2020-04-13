@@ -10,7 +10,7 @@ exports[`DatePicker component should render properly when value is of date type 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 8px 0px 0px;
+  margin: 0px 0.8rem 0px 0px;
   cursor: default;
 }
 
@@ -26,7 +26,7 @@ exports[`DatePicker component should render properly when value is of date type 
 }
 
 .c0 {
-  margin: 8px 8px 8px 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -36,7 +36,7 @@ exports[`DatePicker component should render properly when value is of date type 
   grid-template-areas: 'label field' 'random description';
 }
 
-.c0 .sc-AykKJ {
+.c0 .sc-AykKH {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -51,7 +51,7 @@ exports[`DatePicker component should render properly when value is of date type 
 }
 
 .c4 {
-  margin: 8px 0;
+  margin: 0.8rem 0;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -62,7 +62,7 @@ exports[`DatePicker component should render properly when value is of date type 
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .sc-AykKJ {
+.c4 .sc-AykKH {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -119,7 +119,7 @@ exports[`DatePicker component should render properly when value is of date type 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  padding: 8px;
+  padding: 0.8rem;
   color: #435465;
 }
 
@@ -165,7 +165,7 @@ exports[`DatePicker component should render properly when value is of date type 
   flex-direction: column-reverse;
 }
 
-.c3 .sc-fzXfLU {
+.c3 .sc-fzXfLS {
   top: calc(100% + 5px);
   left: 0%;
 }
@@ -199,7 +199,7 @@ exports[`DatePicker component should render properly when value is of date type 
       >
         
         <div
-          class="sc-AykKJ c5"
+          class="sc-AykKH c5"
         >
           <input
             autocomplete="off"
@@ -228,7 +228,7 @@ exports[`DatePicker component should render properly when value is of string typ
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 8px 0px 0px;
+  margin: 0px 0.8rem 0px 0px;
   cursor: default;
 }
 
@@ -244,7 +244,7 @@ exports[`DatePicker component should render properly when value is of string typ
 }
 
 .c0 {
-  margin: 8px 8px 8px 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -254,7 +254,7 @@ exports[`DatePicker component should render properly when value is of string typ
   grid-template-areas: 'label field' 'random description';
 }
 
-.c0 .sc-AykKJ {
+.c0 .sc-AykKH {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -269,7 +269,7 @@ exports[`DatePicker component should render properly when value is of string typ
 }
 
 .c4 {
-  margin: 8px 0;
+  margin: 0.8rem 0;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -280,7 +280,7 @@ exports[`DatePicker component should render properly when value is of string typ
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .sc-AykKJ {
+.c4 .sc-AykKH {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -337,7 +337,7 @@ exports[`DatePicker component should render properly when value is of string typ
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  padding: 8px;
+  padding: 0.8rem;
   color: #435465;
 }
 
@@ -383,7 +383,7 @@ exports[`DatePicker component should render properly when value is of string typ
   flex-direction: column-reverse;
 }
 
-.c3 .sc-fzXfLU {
+.c3 .sc-fzXfLS {
   top: calc(100% + 5px);
   left: 0%;
 }
@@ -417,7 +417,7 @@ exports[`DatePicker component should render properly when value is of string typ
       >
         
         <div
-          class="sc-AykKJ c5"
+          class="sc-AykKH c5"
         >
           <input
             autocomplete="off"

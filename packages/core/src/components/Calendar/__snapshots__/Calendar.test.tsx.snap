@@ -38,12 +38,18 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c16 {
-  font-size: 16px;
+  font-size: 2.0rem;
   cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 50%;
 }
 
 .c16 * {
-  fill: #757575;
+  fill: rgba(0,0,0,0.54);
+}
+
+.c16:hover {
+  background-color: #eff2f4;
 }
 
 .c2 {
@@ -129,7 +135,7 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c8 {
-  margin: 8px 8px 8px 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -141,7 +147,7 @@ exports[`Calendar Component should render given date 1`] = `
   grid-template-areas: 'field' 'description';
 }
 
-.c8 .sc-AykKJ {
+.c8 .sc-AykKH {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -156,7 +162,7 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c12 {
-  margin: 8px 8px 8px 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -167,7 +173,7 @@ exports[`Calendar Component should render given date 1`] = `
   grid-template-areas: 'field' 'description';
 }
 
-.c12 .sc-AykKJ {
+.c12 .sc-AykKH {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -226,7 +232,7 @@ exports[`Calendar Component should render given date 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  padding: 8px;
+  padding: 0.8rem;
   color: #435465;
 }
 
@@ -272,7 +278,7 @@ exports[`Calendar Component should render given date 1`] = `
   flex-direction: column-reverse;
 }
 
-.c9 .sc-fzXfLU {
+.c9 .sc-fzXfLS {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -541,7 +547,7 @@ exports[`Calendar Component should render given date 1`] = `
             >
               
               <div
-                class="sc-AykKJ c13"
+                class="sc-AykKH c13"
               >
                 <input
                   autocomplete="off"
@@ -556,14 +562,17 @@ exports[`Calendar Component should render given date 1`] = `
             </div>
             <svg
               class="c15 c16 c17"
+              fill="none"
               height="1em"
               theme="[object Object]"
-              viewBox="0 0 12 8"
+              viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+                d="M15.875 9l-3.88 3.88L8.115 9a.996.996 0 1 0-1.41 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+                fill="#000"
+                fill-opacity=".54"
               />
             </svg>
           </div>
@@ -588,7 +597,7 @@ exports[`Calendar Component should render given date 1`] = `
             >
               
               <div
-                class="sc-AykKJ c13"
+                class="sc-AykKH c13"
               >
                 <input
                   autocomplete="off"
@@ -603,14 +612,17 @@ exports[`Calendar Component should render given date 1`] = `
             </div>
             <svg
               class="c15 c16 c17"
+              fill="none"
               height="1em"
               theme="[object Object]"
-              viewBox="0 0 12 8"
+              viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+                d="M15.875 9l-3.88 3.88L8.115 9a.996.996 0 1 0-1.41 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+                fill="#000"
+                fill-opacity=".54"
               />
             </svg>
           </div>

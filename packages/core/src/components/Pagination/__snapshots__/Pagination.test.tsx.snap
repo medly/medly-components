@@ -78,15 +78,15 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
 }
 
 .c0 li {
-  margin: 0 4px;
+  margin: 0 0.4rem;
 }
 
 .c0 li:last-child {
-  margin-right: 8px;
+  margin-right: 0.8rem;
 }
 
 .c0 li:first-child {
-  margin-left: 8px;
+  margin-left: 0.8rem;
 }
 
 <div>
@@ -334,15 +334,15 @@ exports[`Pagination component should render correctly with all the default props
 }
 
 .c0 li {
-  margin: 0 4px;
+  margin: 0 0.4rem;
 }
 
 .c0 li:last-child {
-  margin-right: 8px;
+  margin-right: 0.8rem;
 }
 
 .c0 li:first-child {
-  margin-left: 8px;
+  margin-left: 0.8rem;
 }
 
 <div>
@@ -602,15 +602,15 @@ exports[`Pagination component should render correctly with all the props given 1
 }
 
 .c0 li {
-  margin: 0 4px;
+  margin: 0 0.4rem;
 }
 
 .c0 li:last-child {
-  margin-right: 8px;
+  margin-right: 0.8rem;
 }
 
 .c0 li:first-child {
-  margin-left: 8px;
+  margin-left: 0.8rem;
 }
 
 <div>

@@ -2,16 +2,22 @@
 
 exports[`Checkbox component should render correctly with all the default props 1`] = `
 .c4 {
-  font-size: 16px;
+  font-size: 2.0rem;
   cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 50%;
 }
 
 .c4 * {
-  fill: #757575;
+  fill: rgba(0,0,0,0.54);
+}
+
+.c4:hover {
+  background-color: #eff2f4;
 }
 
 .c0 {
-  margin: 8px 8px 8px 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -23,7 +29,7 @@ exports[`Checkbox component should render correctly with all the default props 1
   grid-template-areas: 'field' 'description';
 }
 
-.c0 .sc-AykKH {
+.c0 .sc-AykKF {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -114,15 +120,16 @@ exports[`Checkbox component should render correctly with all the default props 1
       />
       <svg
         class="c3 c4"
+        fill="none"
         height="1em"
-        viewBox="0 0 18 14"
+        viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-          fill="none"
-          fill-rule="evenodd"
+          d="M8.795 15.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+          fill="#000"
+          fill-opacity=".54"
         />
       </svg>
     </div>
@@ -132,12 +139,18 @@ exports[`Checkbox component should render correctly with all the default props 1
 
 exports[`Checkbox component should render correctly with all the props given 1`] = `
 .c6 {
-  font-size: 16px;
+  font-size: 2.0rem;
   cursor: pointer;
+  padding: 0.8rem;
+  border-radius: 50%;
 }
 
 .c6 * {
-  fill: #757575;
+  fill: rgba(0,0,0,0.54);
+}
+
+.c6:hover {
+  background-color: #eff2f4;
 }
 
 .c1 {
@@ -149,7 +162,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0px 0px 8px;
+  margin: 0px 0px 0px 0.8rem;
   cursor: not-allowed;
 }
 
@@ -165,7 +178,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
 }
 
 .c0 {
-  margin: 8px 0;
+  margin: 0.8rem 0;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -175,7 +188,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
   grid-template-areas: 'field label' 'description random';
 }
 
-.c0 .sc-AykKH {
+.c0 .sc-AykKF {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -273,15 +286,16 @@ exports[`Checkbox component should render correctly with all the props given 1`]
       />
       <svg
         class="c5 c6"
+        fill="none"
         height="1em"
-        viewBox="0 0 18 14"
+        viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M6 11.17L1.83 7 .41 8.41 6 14 18 2 16.59.59z"
-          fill="none"
-          fill-rule="evenodd"
+          d="M8.795 15.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+          fill="#000"
+          fill-opacity=".54"
         />
       </svg>
     </div>

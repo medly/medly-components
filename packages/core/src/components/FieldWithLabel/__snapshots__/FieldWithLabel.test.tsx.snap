@@ -28,7 +28,7 @@ exports[`FieldWithLabel component should render properly when lable is not prese
 }
 
 .c0 {
-  margin: 8px 8px 8px 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -82,7 +82,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 8px 0px 0px;
+  margin: 0px 0.8rem 0px 0px;
   cursor: default;
 }
 
@@ -124,7 +124,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 }
 
 .c0 {
-  margin: 8px 8px 8px 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -181,7 +181,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 8px 0px 0px;
+  margin: 0px 0.8rem 0px 0px;
   cursor: default;
 }
 
@@ -223,7 +223,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 }
 
 .c0 {
-  margin: 8px 0;
+  margin: 0.8rem 0;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -281,7 +281,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 8px 0px 0px;
+  margin: 0px 0.8rem 0px 0px;
   cursor: default;
 }
 
@@ -323,7 +323,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 }
 
 .c0 {
-  margin: 8px 0;
+  margin: 0.8rem 0;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -381,7 +381,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 8px 0px 0px;
+  margin: 0px 0.8rem 0px 0px;
   cursor: default;
 }
 
@@ -423,7 +423,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 }
 
 .c0 {
-  margin: 8px 8px 8px 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;

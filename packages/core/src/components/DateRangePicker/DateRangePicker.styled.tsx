@@ -20,7 +20,7 @@ export const DateRangePickerStyled = styled('div').attrs(({ theme: { input, font
             grid-template-columns: auto 30px auto;
             border: 1px solid ${props => props.input.borderColor};
             border-radius: 5px;
-            padding: ${({ theme }) => theme.spacing.S};
+            padding: ${({ theme }) => theme.spacing.S2};
             box-sizing: border-box;
             text-align: center;
             background-color: ${({ disabled, input }) => (disabled ? input.disabledBgcolor : input.bgColor)};

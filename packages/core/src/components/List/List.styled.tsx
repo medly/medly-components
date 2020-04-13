@@ -5,24 +5,24 @@ import { Props } from './types';
 
 const horizontal = (spacings: SpacingTheme) => css`
     li {
-        margin: 0 ${spacings.XS};
+        margin: 0 ${spacings.S1};
         &:last-child {
-            margin-right: ${spacings.S};
+            margin-right: ${spacings.S2};
         }
         &:first-child {
-            margin-left: ${spacings.S};
+            margin-left: ${spacings.S2};
         }
     }
 `;
 
 const vertical = (spacings: SpacingTheme) => css`
     li {
-        margin: ${spacings.XS} 0;
+        margin: ${spacings.S1} 0;
         &:last-child {
-            margin-bottom: ${spacings.S};
+            margin-bottom: ${spacings.S2};
         }
         &:first-child {
-            margin-top: ${spacings.S};
+            margin-top: ${spacings.S2};
         }
     }
 `;

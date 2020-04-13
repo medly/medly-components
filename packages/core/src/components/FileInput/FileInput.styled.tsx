@@ -9,7 +9,7 @@ export const Input = styled('input').attrs({ type: 'file' })<StyledInputProps>`
 
 export const Label = styled('label').attrs(({ theme: { input, font } }) => ({ input, font }))<StyledLabelProps>`
     ${getFontStyle}
-    padding: ${({ theme }) => theme.spacing.S};
+    padding: ${({ theme }) => theme.spacing.S2};
     color: ${props => props.input.color};
     background-clip: padding-box;
     background-color: ${({ disabled, input }) => (disabled ? input.disabledBgcolor : input.bgColor)};

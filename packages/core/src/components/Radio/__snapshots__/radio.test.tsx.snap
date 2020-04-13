@@ -2,7 +2,7 @@
 
 exports[`Radio component should render correctly with all the default props 1`] = `
 .c0 {
-  margin: 8px 8px 8px 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -124,7 +124,7 @@ exports[`Radio component should render correctly with all the props given 1`] = 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0px 0px 8px;
+  margin: 0px 0px 0px 0.8rem;
   cursor: not-allowed;
 }
 
@@ -140,7 +140,7 @@ exports[`Radio component should render correctly with all the props given 1`] = 
 }
 
 .c0 {
-  margin: 8px 0;
+  margin: 0.8rem 0;
   display: grid;
   -webkit-align-items: center;
   -webkit-box-align: center;

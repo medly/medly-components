@@ -13,7 +13,7 @@ export const SvgIconStyled = styled(InjectClassName)<SvgIconProps>`
         !disabled &&
         onClick &&
         css`
-            padding: 0.8rem;
+            padding: ${theme.spacing.S2};
             border-radius: 50%;
             &:hover {
                 background-color: ${theme.icon.bgColor};

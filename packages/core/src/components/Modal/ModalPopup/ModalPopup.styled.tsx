@@ -4,7 +4,7 @@ import { Props } from './types';
 
 export const Popup = styled('div')<Props>`
     background: ${({ theme }) => theme.modal.bgColor};
-    padding: ${({ theme }) => theme.spacing.L} ${({ theme }) => theme.spacing.XL};
+    padding: ${({ theme }) => theme.spacing.M2} ${({ theme }) => theme.spacing.L3};
     border-radius: 5px;
     max-width: 80%;
     max-height: 80%;

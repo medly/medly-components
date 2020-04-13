@@ -2,83 +2,21 @@
 
 exports[`SubNavList should be able to click on nested item 1`] = `
 .c11 {
-  font-size: 16px;
+  font-size: 2.0rem;
   cursor: inherit;
 }
 
 .c11 * {
-  fill: #757575;
+  fill: rgba(0,0,0,0.54);
 }
 
 .c15 {
-  font-size: 12px;
+  font-size: 1.6rem;
   cursor: inherit;
 }
 
 .c15 * {
-  fill: #757575;
-}
-
-.c6 {
-  display: block;
-  position: absolute;
-  width: calc(16px * 1.33);
-  height: calc(16px * 0.2);
-  background: #757575;
-  border-radius: calc(16px * 0.2);
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-
-.c6:nth-child(1) {
-  top: 0;
-}
-
-.c6:nth-child(2) {
-  top: calc(16px * 0.4);
-}
-
-.c6:nth-child(3) {
-  top: calc(16px * 0.8);
-}
-
-.c4 {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  width: calc(16px * 1.33);
-  height: 16px;
-  position: relative;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.c4 .c5:nth-child(1) {
-  top: calc(16px * 0.4);
-  -webkit-transform: rotate(135deg);
-  -ms-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-
-.c4 .c5:nth-child(2) {
-  opacity: 0;
-  left: -60px;
-}
-
-.c4 .c5:nth-child(3) {
-  top: calc(16px * 0.4);
-  -webkit-transform: rotate(-135deg);
-  -ms-transform: rotate(-135deg);
-  transform: rotate(-135deg);
+  fill: rgba(0,0,0,0.54);
 }
 
 .c8 {
@@ -112,7 +50,7 @@ exports[`SubNavList should be able to click on nested item 1`] = `
 }
 
 .c2 .c10 {
-  font-size: 16px;
+  font-size: 2.0rem;
 }
 
 .c13 {
@@ -354,6 +292,68 @@ exports[`SubNavList should be able to click on nested item 1`] = `
   padding-left: 72px;
 }
 
+.c6 {
+  display: block;
+  position: absolute;
+  width: calc(2.0rem * 1.33);
+  height: calc(2.0rem * 0.2);
+  background: rgba(0,0,0,0.54);
+  border-radius: calc(2.0rem * 0.2);
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.c6:nth-child(1) {
+  top: 0;
+}
+
+.c6:nth-child(2) {
+  top: calc(2.0rem * 0.4);
+}
+
+.c6:nth-child(3) {
+  top: calc(2.0rem * 0.8);
+}
+
+.c4 {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: calc(2.0rem * 1.33);
+  height: 2.0rem;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.c4 .c5:nth-child(1) {
+  top: calc(2.0rem * 0.4);
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.c4 .c5:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.c4 .c5:nth-child(3) {
+  top: calc(2.0rem * 0.4);
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
 .c1 {
   width: 100%;
   -webkit-text-decoration: none;
@@ -457,7 +457,7 @@ exports[`SubNavList should be able to click on nested item 1`] = `
 }
 
 <nav
-  class="sc-LzLqD c0"
+  class="sc-fzXfRb c0"
   id="medly-sidenav"
   open=""
 >
@@ -500,13 +500,16 @@ exports[`SubNavList should be able to click on nested item 1`] = `
       >
         <svg
           class="c10 c11"
+          fill="none"
           height="1em"
-          viewBox="0 0 20 17"
+          viewBox="0 0 24 24"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M8 16v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9h1.7c.46 0 .68-.57.33-.87L10.67.6c-.38-.34-.96-.34-1.34 0L.97 8.13c-.34.3-.13.87.33.87H3v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
+            d="M9.998 19.328v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87l-8.36-7.53c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87h1.7v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
+            fill="#000"
+            fill-opacity=".54"
           />
         </svg>
       </div>
@@ -526,14 +529,17 @@ exports[`SubNavList should be able to click on nested item 1`] = `
       >
         <svg
           class="c10 c11"
+          fill="none"
           height="1em"
-          viewBox="0 0 18 18"
+          viewBox="0 0 24 24"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M12.5 11h-.79l-.28-.27A6.471 6.471 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L17.49 16l-4.99-5zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11z"
-            fill="none"
+            clip-rule="evenodd"
+            d="M15.187 14.472h.79l4.24 4.26c.41.41.41 1.08 0 1.49-.41.41-1.08.41-1.49 0l-4.25-4.25v-.79l-.27-.28a6.5 6.5 0 0 1-5.34 1.48c-2.78-.47-5-2.79-5.34-5.59a6.505 6.505 0 0 1 7.27-7.27c2.8.34 5.12 2.56 5.59 5.34a6.5 6.5 0 0 1-1.48 5.34l.28.27zm-9.71-4.5c0 2.49 2.01 4.5 4.5 4.5s4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5-4.5 2.01-4.5 4.5z"
+            fill="#000"
+            fill-opacity=".54"
             fill-rule="evenodd"
           />
         </svg>
@@ -545,13 +551,16 @@ exports[`SubNavList should be able to click on nested item 1`] = `
       </span>
       <svg
         class="c10 c15 c16 c17"
+        fill="none"
         height="1em"
-        viewBox="0 0 12 8"
+        viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+          d="M15.875 9l-3.88 3.88L8.115 9a.996.996 0 1 0-1.41 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+          fill="#000"
+          fill-opacity=".54"
         />
       </svg>
       <ul
@@ -569,13 +578,16 @@ exports[`SubNavList should be able to click on nested item 1`] = `
           </span>
           <svg
             class="c10 c15 c16 c17"
+            fill="none"
             height="1em"
-            viewBox="0 0 12 8"
+            viewBox="0 0 24 24"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+              d="M15.875 9l-3.88 3.88L8.115 9a.996.996 0 1 0-1.41 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+              fill="#000"
+              fill-opacity=".54"
             />
           </svg>
           <ul
@@ -632,64 +644,21 @@ exports[`SubNavList should be able to click on nested item 1`] = `
 
 exports[`SubNavList should render properly 1`] = `
 .c10 {
-  font-size: 16px;
+  font-size: 2.0rem;
   cursor: inherit;
 }
 
 .c10 * {
-  fill: #757575;
+  fill: rgba(0,0,0,0.54);
 }
 
 .c14 {
-  font-size: 12px;
+  font-size: 1.6rem;
   cursor: inherit;
 }
 
 .c14 * {
-  fill: #757575;
-}
-
-.c5 {
-  display: block;
-  position: absolute;
-  width: calc(16px * 1.33);
-  height: calc(16px * 0.2);
-  background: #757575;
-  border-radius: calc(16px * 0.2);
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-
-.c5:nth-child(1) {
-  top: 0;
-}
-
-.c5:nth-child(2) {
-  top: calc(16px * 0.4);
-}
-
-.c5:nth-child(3) {
-  top: calc(16px * 0.8);
-}
-
-.c4 {
-  border: none;
-  background-color: transparent;
-  outline: none;
-  width: calc(16px * 1.33);
-  height: 16px;
-  position: relative;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
+  fill: rgba(0,0,0,0.54);
 }
 
 .c7 {
@@ -723,7 +692,7 @@ exports[`SubNavList should render properly 1`] = `
 }
 
 .c2 .c9 {
-  font-size: 16px;
+  font-size: 2.0rem;
 }
 
 .c12 {
@@ -858,6 +827,49 @@ exports[`SubNavList should render properly 1`] = `
   padding-left: 72px;
 }
 
+.c5 {
+  display: block;
+  position: absolute;
+  width: calc(2.0rem * 1.33);
+  height: calc(2.0rem * 0.2);
+  background: rgba(0,0,0,0.54);
+  border-radius: calc(2.0rem * 0.2);
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.c5:nth-child(1) {
+  top: 0;
+}
+
+.c5:nth-child(2) {
+  top: calc(2.0rem * 0.4);
+}
+
+.c5:nth-child(3) {
+  top: calc(2.0rem * 0.8);
+}
+
+.c4 {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: calc(2.0rem * 1.33);
+  height: 2.0rem;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
 .c1 {
   width: 100%;
   -webkit-text-decoration: none;
@@ -955,7 +967,7 @@ exports[`SubNavList should render properly 1`] = `
 
 <div>
   <nav
-    class="sc-LzLqD c0"
+    class="sc-fzXfRb c0"
     id="medly-sidenav"
   >
     <div
@@ -996,13 +1008,16 @@ exports[`SubNavList should render properly 1`] = `
         >
           <svg
             class="c9 c10"
+            fill="none"
             height="1em"
-            viewBox="0 0 20 17"
+            viewBox="0 0 24 24"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M8 16v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9h1.7c.46 0 .68-.57.33-.87L10.67.6c-.38-.34-.96-.34-1.34 0L.97 8.13c-.34.3-.13.87.33.87H3v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
+              d="M9.998 19.328v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87l-8.36-7.53c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87h1.7v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z"
+              fill="#000"
+              fill-opacity=".54"
             />
           </svg>
         </div>
@@ -1021,14 +1036,17 @@ exports[`SubNavList should render properly 1`] = `
         >
           <svg
             class="c9 c10"
+            fill="none"
             height="1em"
-            viewBox="0 0 18 18"
+            viewBox="0 0 24 24"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M12.5 11h-.79l-.28-.27A6.471 6.471 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L17.49 16l-4.99-5zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11z"
-              fill="none"
+              clip-rule="evenodd"
+              d="M15.187 14.472h.79l4.24 4.26c.41.41.41 1.08 0 1.49-.41.41-1.08.41-1.49 0l-4.25-4.25v-.79l-.27-.28a6.5 6.5 0 0 1-5.34 1.48c-2.78-.47-5-2.79-5.34-5.59a6.505 6.505 0 0 1 7.27-7.27c2.8.34 5.12 2.56 5.59 5.34a6.5 6.5 0 0 1-1.48 5.34l.28.27zm-9.71-4.5c0 2.49 2.01 4.5 4.5 4.5s4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5-4.5 2.01-4.5 4.5z"
+              fill="#000"
+              fill-opacity=".54"
               fill-rule="evenodd"
             />
           </svg>
@@ -1040,13 +1058,16 @@ exports[`SubNavList should render properly 1`] = `
         </span>
         <svg
           class="c9 c14 c15"
+          fill="none"
           height="1em"
-          viewBox="0 0 12 8"
+          viewBox="0 0 24 24"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+            d="M15.875 9l-3.88 3.88L8.115 9a.996.996 0 1 0-1.41 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+            fill="#000"
+            fill-opacity=".54"
           />
         </svg>
         <ul
@@ -1063,13 +1084,16 @@ exports[`SubNavList should render properly 1`] = `
             </span>
             <svg
               class="c9 c14 c15"
+              fill="none"
               height="1em"
-              viewBox="0 0 12 8"
+              viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M9.88 1.29L6 5.17 2.12 1.29A.996.996 0 1 0 .71 2.7L5.3 7.29c.39.39 1.02.39 1.41 0L11.3 2.7a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+                d="M15.875 9l-3.88 3.88L8.115 9a.996.996 0 1 0-1.41 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+                fill="#000"
+                fill-opacity=".54"
               />
             </svg>
             <ul
