@@ -1,32 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component should render properly when it is disabled 1`] = `
+exports[`Button component should render properly with "M" size 1`] = `
 .c2 {
   margin: 0;
   color: inherit;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 2.6rem;
 }
 
 .c0 {
-  background-color: transparent;
   border: none;
-  padding: 8px 10px;
-  border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border: 1px solid #b0bcc8;
-  background-color: #b0bcc8;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem;
+  border-radius: 0.8rem;
   color: #ffffff;
+  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -53,22 +53,1251 @@ exports[`Button component should render properly when it is disabled 1`] = `
   fill: #ffffff;
 }
 
+.c0:hover {
+  background: #005AEE;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c0:disabled {
+  box-shadow: none;
+  color: #ffffff;
+  background: #dfe4e9;
+}
+
 .c0:disabled {
   cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c0 .c1 + .sc-AykKC {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
-    color="primary"
+    color="default"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Flat Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "S" size 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c0 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 0.8rem 2.4rem;
+  border-radius: 0.8rem;
+  color: #ffffff;
+  background: #005AEE;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .sc-AykKC * {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  background: #005AEE;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c0:disabled {
+  box-shadow: none;
+  color: #ffffff;
+  background: #dfe4e9;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .sc-AykKC + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AykKC {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="default"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Flat Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "flat" variant and "confirmation" color  1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem;
+  border-radius: 0.8rem;
+  background: transparent;
+  color: #008000;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .sc-AykKC * {
+  fill: #008000;
+}
+
+.c0:hover {
+  color: #1A8D1A;
+}
+
+.c0:hover .sc-AykKC * {
+  fill: #1A8D1A;
+}
+
+.c0:disabled {
+  color: #b0bcc8;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .sc-AykKC + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AykKC {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="confirmation"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Flat Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "flat" variant and "default" color  1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem;
+  border-radius: 0.8rem;
+  background: transparent;
+  color: #005AEE;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .sc-AykKC * {
+  fill: #005AEE;
+}
+
+.c0:hover {
+  color: #1A6BF0;
+}
+
+.c0:hover .sc-AykKC * {
+  fill: #1A6BF0;
+}
+
+.c0:disabled {
+  color: #b0bcc8;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .sc-AykKC + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AykKC {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="default"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Flat Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "flat" variant and "error" color  1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem;
+  border-radius: 0.8rem;
+  background: transparent;
+  color: #cc0000;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .sc-AykKC * {
+  fill: #cc0000;
+}
+
+.c0:hover {
+  color: #D11A1A;
+}
+
+.c0:hover .sc-AykKC * {
+  fill: #D11A1A;
+}
+
+.c0:disabled {
+  color: #b0bcc8;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .sc-AykKC + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AykKC {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="error"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Flat Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "flat" variant should render properly when it is disabled 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem;
+  border-radius: 0.8rem;
+  color: #ffffff;
+  background: #005AEE;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .sc-AykKC * {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  background: #005AEE;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c0:disabled {
+  box-shadow: none;
+  color: #ffffff;
+  background: #dfe4e9;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .sc-AykKC + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AykKC {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="default"
+    disabled=""
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Solid Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "outlined" variant and "confirmation" color  1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
+  border-radius: 0.8rem;
+  border: 0.1rem solid;
+  color: #008000;
+  border-color: #008000;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .sc-AykKC * {
+  fill: #008000;
+}
+
+.c0:hover {
+  color: #1A8D1A;
+  border-color: #1A8D1A;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,128,0,0.35);
+}
+
+.c0:hover .sc-AykKC * {
+  fill: #1A8D1A;
+}
+
+.c0:disabled {
+  box-shadow: none;
+  color: #b0bcc8;
+  border-color: #b0bcc8;
+}
+
+.c0:disabled .sc-AykKC * {
+  fill: #b0bcc8;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .sc-AykKC + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AykKC {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="confirmation"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Flat Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "outlined" variant and "default" color  1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
+  border-radius: 0.8rem;
+  border: 0.1rem solid;
+  color: #005AEE;
+  border-color: #005AEE;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .sc-AykKC * {
+  fill: #005AEE;
+}
+
+.c0:hover {
+  color: #1A6BF0;
+  border-color: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c0:hover .sc-AykKC * {
+  fill: #1A6BF0;
+}
+
+.c0:disabled {
+  box-shadow: none;
+  color: #b0bcc8;
+  border-color: #b0bcc8;
+}
+
+.c0:disabled .sc-AykKC * {
+  fill: #b0bcc8;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .sc-AykKC + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AykKC {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="default"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Flat Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "outlined" variant and "error" color  1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
+  border-radius: 0.8rem;
+  border: 0.1rem solid;
+  color: #cc0000;
+  border-color: #cc0000;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .sc-AykKC * {
+  fill: #cc0000;
+}
+
+.c0:hover {
+  color: #D11A1A;
+  border-color: #D11A1A;
+  box-shadow: 0 0.4rem 0.8rem rgba(204,0,0,0.35);
+}
+
+.c0:hover .sc-AykKC * {
+  fill: #D11A1A;
+}
+
+.c0:disabled {
+  box-shadow: none;
+  color: #b0bcc8;
+  border-color: #b0bcc8;
+}
+
+.c0:disabled .sc-AykKC * {
+  fill: #b0bcc8;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .sc-AykKC + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AykKC {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="error"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Flat Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "outlined" variant should render properly when it is disabled 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem;
+  border-radius: 0.8rem;
+  color: #ffffff;
+  background: #005AEE;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .sc-AykKC * {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  background: #005AEE;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c0:disabled {
+  box-shadow: none;
+  color: #ffffff;
+  background: #dfe4e9;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .sc-AykKC + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AykKC {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="default"
+    disabled=""
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Solid Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "solid" variant and "confirmation" color  1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem;
+  border-radius: 0.8rem;
+  color: #ffffff;
+  background: #008000;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .sc-AykKC * {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  background: #008000;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,128,0,0.35);
+}
+
+.c0:disabled {
+  box-shadow: none;
+  color: #ffffff;
+  background: #dfe4e9;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .sc-AykKC + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AykKC {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="confirmation"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Flat Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "solid" variant and "default" color  1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem;
+  border-radius: 0.8rem;
+  color: #ffffff;
+  background: #005AEE;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .sc-AykKC * {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  background: #005AEE;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c0:disabled {
+  box-shadow: none;
+  color: #ffffff;
+  background: #dfe4e9;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .sc-AykKC + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AykKC {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="default"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Flat Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "solid" variant and "error" color  1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem;
+  border-radius: 0.8rem;
+  color: #ffffff;
+  background: #cc0000;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .sc-AykKC * {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  background: #cc0000;
+  box-shadow: 0 0.4rem 0.8rem rgba(204,0,0,0.35);
+}
+
+.c0:disabled {
+  box-shadow: none;
+  color: #ffffff;
+  background: #dfe4e9;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .sc-AykKC + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AykKC {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="error"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Flat Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "solid" variant should render properly when it is disabled 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem;
+  border-radius: 0.8rem;
+  color: #ffffff;
+  background: #005AEE;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .sc-AykKC * {
+  fill: #ffffff;
+}
+
+.c0:hover {
+  background: #005AEE;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c0:disabled {
+  box-shadow: none;
+  color: #ffffff;
+  background: #dfe4e9;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0 .sc-AykKC + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AykKC {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="default"
     disabled=""
     type="button"
   >
@@ -96,29 +1325,29 @@ exports[`Button component should render properly with any icon at the beginning 
 .c4 {
   margin: 0;
   color: inherit;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 2.6rem;
 }
 
 .c0 {
-  background-color: transparent;
   border: none;
-  padding: 8px 10px;
-  border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border: 1px solid #012040;
-  background-color: #012040;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem;
+  border-radius: 0.8rem;
   color: #ffffff;
+  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -145,22 +1374,33 @@ exports[`Button component should render properly with any icon at the beginning 
   fill: #ffffff;
 }
 
+.c0:hover {
+  background: #005AEE;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c0:disabled {
+  box-shadow: none;
+  color: #ffffff;
+  background: #dfe4e9;
+}
+
 .c0:disabled {
   cursor: not-allowed;
 }
 
 .c0 .c1 + .c3 {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c0 .c3 + .c1 {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
-    color="primary"
+    color="default"
     type="button"
   >
     <svg
@@ -201,29 +1441,29 @@ exports[`Button component should render properly with any icon at the end of the
 .c4 {
   margin: 0;
   color: inherit;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 2.6rem;
 }
 
 .c0 {
-  background-color: transparent;
   border: none;
-  padding: 8px 10px;
-  border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border: 1px solid #012040;
-  background-color: #012040;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem;
+  border-radius: 0.8rem;
   color: #ffffff;
+  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -250,22 +1490,33 @@ exports[`Button component should render properly with any icon at the end of the
   fill: #ffffff;
 }
 
+.c0:hover {
+  background: #005AEE;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c0:disabled {
+  box-shadow: none;
+  color: #ffffff;
+  background: #dfe4e9;
+}
+
 .c0:disabled {
   cursor: not-allowed;
 }
 
 .c0 .c1 + .c3 {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c0 .c3 + .c1 {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
-    color="primary"
+    color="default"
     type="button"
   >
     <svg
@@ -291,270 +1542,33 @@ exports[`Button component should render properly with any icon at the end of the
 </div>
 `;
 
-exports[`Button component should render properly with flat variant and primary color 1`] = `
-.c2 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-}
-
-.c0 {
-  background-color: transparent;
-  border: none;
-  padding: 8px 10px;
-  border-radius: 3px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: #012040;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c0:hover {
-  cursor: pointer;
-}
-
-.c0:focus {
-  outline: none;
-}
-
-.c0 .sc-AykKC * {
-  fill: #012040;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-}
-
-.c0 .sc-AykKC + .c1 {
-  margin-left: 10px;
-}
-
-.c0 .c1 + .sc-AykKC {
-  margin-left: 10px;
-}
-
-<div>
-  <button
-    class="c0"
-    color="primary"
-    type="button"
-  >
-    <span
-      class="c1 c2"
-    >
-      Flat Button
-    </span>
-  </button>
-</div>
-`;
-
-exports[`Button component should render properly with outlined variant and secondary color 1`] = `
-.c2 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-}
-
-.c0 {
-  background-color: transparent;
-  border: none;
-  padding: 8px 10px;
-  border-radius: 3px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: 1px solid #cc0000;
-  color: #cc0000;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c0:hover {
-  cursor: pointer;
-}
-
-.c0:focus {
-  outline: none;
-}
-
-.c0 .sc-AykKC * {
-  fill: #cc0000;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-}
-
-.c0 .sc-AykKC + .c1 {
-  margin-left: 10px;
-}
-
-.c0 .c1 + .sc-AykKC {
-  margin-left: 10px;
-}
-
-<div>
-  <button
-    class="c0"
-    color="secondary"
-    type="button"
-  >
-    <span
-      class="c1 c2"
-    >
-      Outlined Button
-    </span>
-  </button>
-</div>
-`;
-
-exports[`Button component should render properly with solid variant 1`] = `
-.c2 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-}
-
-.c0 {
-  background-color: transparent;
-  border: none;
-  padding: 8px 10px;
-  border-radius: 3px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: 1px solid #012040;
-  background-color: #012040;
-  color: #ffffff;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c0:hover {
-  cursor: pointer;
-}
-
-.c0:focus {
-  outline: none;
-}
-
-.c0 .sc-AykKC * {
-  fill: #ffffff;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-}
-
-.c0 .sc-AykKC + .c1 {
-  margin-left: 10px;
-}
-
-.c0 .c1 + .sc-AykKC {
-  margin-left: 10px;
-}
-
-<div>
-  <button
-    class="c0"
-    color="primary"
-    type="button"
-  >
-    <span
-      class="c1 c2"
-    >
-      Solid Button
-    </span>
-  </button>
-</div>
-`;
-
 exports[`Button component should wrap children into Text component when rendering string or number 1`] = `
 .c2 {
   margin: 0;
   color: inherit;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 2.6rem;
 }
 
 .c0 {
-  background-color: transparent;
   border: none;
-  padding: 8px 10px;
-  border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border: 1px solid #012040;
-  background-color: #012040;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem;
+  border-radius: 0.8rem;
   color: #ffffff;
+  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -581,22 +1595,33 @@ exports[`Button component should wrap children into Text component when renderin
   fill: #ffffff;
 }
 
+.c0:hover {
+  background: #005AEE;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c0:disabled {
+  box-shadow: none;
+  color: #ffffff;
+  background: #dfe4e9;
+}
+
 .c0:disabled {
   cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c0 .c1 + .sc-AykKC {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 <div>
   <button
     class="c0"
-    color="primary"
+    color="default"
     type="button"
   >
     <span

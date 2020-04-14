@@ -7,11 +7,11 @@ const docs = path.resolve(__dirname, '../', 'docs');
 const pathToInlineSvg = path.resolve(__dirname, '../packages/icons/src/assets/');
 const tsconfigPath = path.resolve(__dirname, '../tsconfig.json');
 
-module.exports = ({ config, mode }) => {
+module.exports = ({ config }) => {
     config.module.rules.push({
         test: /\.(ts|tsx)$/,
         include: [packages, docs],
-        exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /__dist__/],
+        exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /dist/],
         use: [
             {
                 loader: 'thread-loader',
@@ -52,7 +52,7 @@ module.exports = ({ config, mode }) => {
 
     config.module.rules.push({
         test: /\.svg$/,
-        exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /__dist__/],
+        exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /dist/],
         use: [
             {
                 loader: '@svgr/webpack',

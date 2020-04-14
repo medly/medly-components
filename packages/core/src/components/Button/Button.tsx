@@ -9,7 +9,13 @@ export const Button: SFC<Props> & WithStyle = React.memo(
         return (
             <ButtonStyled ref={ref} {...props}>
                 {React.Children.map(props.children, c => {
-                    return isValidStringOrNumber(c) ? <Text textWeight="Medium">{c}</Text> : c;
+                    return isValidStringOrNumber(c) ? (
+                        <Text textVariant={props.size === 'M' ? 'body1' : 'body2'} textWeight="Medium">
+                            {c}
+                        </Text>
+                    ) : (
+                        c
+                    );
                 })}
             </ButtonStyled>
         );
@@ -18,8 +24,10 @@ export const Button: SFC<Props> & WithStyle = React.memo(
 Button.defaultProps = {
     type: 'button',
     variant: 'solid',
-    color: 'primary',
-    disabled: false
+    color: 'default',
+    disabled: false,
+    edges: 'square',
+    size: 'M'
 };
 Button.displayName = 'Button';
 Button.Style = ButtonStyled;

@@ -2,26 +2,31 @@ import { AddIcon } from '@medly-components/icons';
 import { render } from '@test-utils';
 import React from 'react';
 import { Button } from './Button';
+import { Props } from './types';
 
 describe('Button component', () => {
-    it('should render properly with flat variant and primary color', () => {
-        const { container } = render(
-            <Button variant="flat" color="primary">
-                Flat Button
-            </Button>
-        );
-        expect(container).toMatchSnapshot();
+    describe.each(['solid', 'outlined', 'flat'])('should render properly with %p variant', (variant: Props['variant']) => {
+        test.each(['default', 'confirmation', 'error'])('and %p color ', (color: Props['color']) => {
+            const { container } = render(
+                <Button variant={variant} color={color}>
+                    Flat Button
+                </Button>
+            );
+            expect(container).toMatchSnapshot();
+        });
+
+        test('should render properly when it is disabled', () => {
+            const { container } = render(
+                <Button disabled variant="solid">
+                    Solid Button
+                </Button>
+            );
+            expect(container).toMatchSnapshot();
+        });
     });
-    it('should render properly with outlined variant and secondary color', () => {
-        const { container } = render(
-            <Button variant="outlined" color="secondary">
-                Outlined Button
-            </Button>
-        );
-        expect(container).toMatchSnapshot();
-    });
-    it('should render properly with solid variant', () => {
-        const { container } = render(<Button variant="solid">Solid Button</Button>);
+
+    test.each(['S', 'M'])('should render properly with %p size', (size: Props['size']) => {
+        const { container } = render(<Button size={size}>Flat Button</Button>);
         expect(container).toMatchSnapshot();
     });
 
@@ -39,15 +44,6 @@ describe('Button component', () => {
         const { container } = render(
             <Button variant="solid">
                 <AddIcon />
-                Solid Button
-            </Button>
-        );
-        expect(container).toMatchSnapshot();
-    });
-
-    it('should render properly when it is disabled', () => {
-        const { container } = render(
-            <Button disabled variant="solid">
                 Solid Button
             </Button>
         );

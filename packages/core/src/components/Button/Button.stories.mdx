@@ -1,9 +1,10 @@
 import { HTMLProps } from '@medly-components/utils';
 import { Button } from './Button.tsx';
+import { withKnobs, color, select, boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './Button.stories';
+import { sizes, variants, colors, ThemeInterface } from './Button.stories';
 
-<Meta title="Core/Button" component={Button} />
+<Meta title="Core/Button" component={Button} parameters={{ jest: ['Button.test.tsx'] }} />
 
 # Button
 
@@ -12,7 +13,23 @@ import * as stories from './Button.stories';
 You can play with the props in canvas tab.
 
 <Preview withToolbar>
-    <Story name="Basic">{stories.Basic()}</Story>
+    <Story name="Basic" parameters={{ decorators: [withKnobs] }}>
+        <Button
+            variant={select('Size', sizes, 'S')}
+            variant={select('Variant', variants, 'solid')}
+            disabled={boolean('Disabled', false)}
+            color={select('Color', colors, 'default')}
+        >
+            Button Text
+        </Button>
+    </Story>
+</Preview>
+
+### Sizes
+
+<Preview>
+    <Button size="S">Small Size</Button>
+    <Button size="M">Medium Size</Button>
 </Preview>
 
 ### Variants
@@ -26,8 +43,9 @@ You can play with the props in canvas tab.
 ### Colors
 
 <Preview>
-    <Button color="primary">Primary Button</Button>
-    <Button color="secondary">Secondary Button</Button>
+    <Button color="default">Default Button</Button>
+    <Button color="confirmation">Confirmation Button</Button>
+    <Button color="error">Error Button</Button>
 </Preview>
 
 ### Disabled
@@ -50,4 +68,4 @@ You can play with the props in canvas tab.
 
 ### ButtonTheme
 
-<Props of={stories.ThemeInterface} />
+<Props of={ThemeInterface} />

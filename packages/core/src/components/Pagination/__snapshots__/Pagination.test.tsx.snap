@@ -14,18 +14,20 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
 }
 
 .c1 {
-  background-color: transparent;
   border: none;
-  padding: 8px 10px;
-  border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border: 1px solid #b0bcc8;
-  color: #b0bcc8;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem);
+  border-radius: 0.8rem;
+  border: 0.1rem solid;
+  color: #005AEE;
+  border-color: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -49,6 +51,26 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
 }
 
 .c1 .sc-AykKD * {
+  fill: #005AEE;
+}
+
+.c1:hover {
+  color: #1A6BF0;
+  border-color: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c1:hover .sc-AykKD * {
+  fill: #1A6BF0;
+}
+
+.c1:disabled {
+  box-shadow: none;
+  color: #b0bcc8;
+  border-color: #b0bcc8;
+}
+
+.c1:disabled .sc-AykKD * {
   fill: #b0bcc8;
 }
 
@@ -57,11 +79,11 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
 }
 
 .c1 .sc-AykKD + .c2 {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c1 .c2 + .sc-AykKD {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c0 {
@@ -96,7 +118,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
     <li>
       <button
         class="c1"
-        color="primary"
+        color="default"
         disabled=""
         type="button"
       >
@@ -110,7 +132,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
     <li>
       <button
         class="c1"
-        color="primary"
+        color="default"
         disabled=""
         type="button"
       >
@@ -124,7 +146,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
     <li>
       <button
         class="c1"
-        color="primary"
+        color="default"
         disabled=""
         type="button"
       >
@@ -138,7 +160,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
     <li>
       <button
         class="c1"
-        color="primary"
+        color="default"
         disabled=""
         type="button"
       >
@@ -167,18 +189,20 @@ exports[`Pagination component should render correctly with all the default props
 }
 
 .c1 {
-  background-color: transparent;
   border: none;
-  padding: 8px 10px;
-  border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border: 1px solid #b0bcc8;
-  color: #b0bcc8;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem);
+  border-radius: 0.8rem;
+  border: 0.1rem solid;
+  color: #005AEE;
+  border-color: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -202,6 +226,26 @@ exports[`Pagination component should render correctly with all the default props
 }
 
 .c1 .sc-AykKD * {
+  fill: #005AEE;
+}
+
+.c1:hover {
+  color: #1A6BF0;
+  border-color: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c1:hover .sc-AykKD * {
+  fill: #1A6BF0;
+}
+
+.c1:disabled {
+  box-shadow: none;
+  color: #b0bcc8;
+  border-color: #b0bcc8;
+}
+
+.c1:disabled .sc-AykKD * {
   fill: #b0bcc8;
 }
 
@@ -210,27 +254,27 @@ exports[`Pagination component should render correctly with all the default props
 }
 
 .c1 .sc-AykKD + .c2 {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c1 .c2 + .sc-AykKD {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c4 {
-  background-color: transparent;
   border: none;
-  padding: 8px 10px;
-  border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border: 1px solid #012040;
-  background-color: #012040;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 0.8rem 2.4rem;
+  border-radius: 0.8rem;
   color: #ffffff;
+  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -257,67 +301,27 @@ exports[`Pagination component should render correctly with all the default props
   fill: #ffffff;
 }
 
+.c4:hover {
+  background: #005AEE;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c4:disabled {
+  box-shadow: none;
+  color: #ffffff;
+  background: #dfe4e9;
+}
+
 .c4:disabled {
   cursor: not-allowed;
 }
 
 .c4 .sc-AykKD + .c2 {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c4 .c2 + .sc-AykKD {
-  margin-left: 10px;
-}
-
-.c5 {
-  background-color: transparent;
-  border: none;
-  padding: 8px 10px;
-  border-radius: 3px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: 1px solid #012040;
-  color: #012040;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5:hover {
-  cursor: pointer;
-}
-
-.c5:focus {
-  outline: none;
-}
-
-.c5 .sc-AykKD * {
-  fill: #012040;
-}
-
-.c5:disabled {
-  cursor: not-allowed;
-}
-
-.c5 .sc-AykKD + .c2 {
-  margin-left: 10px;
-}
-
-.c5 .c2 + .sc-AykKD {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c0 {
@@ -352,7 +356,7 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="c1"
-        color="primary"
+        color="default"
         disabled=""
         type="button"
       >
@@ -366,7 +370,7 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="c1"
-        color="primary"
+        color="default"
         disabled=""
         type="button"
       >
@@ -380,7 +384,7 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="c4"
-        color="primary"
+        color="default"
         type="button"
       >
         <span
@@ -392,8 +396,8 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="c5"
-        color="primary"
+        class="c1"
+        color="default"
         type="button"
       >
         <span
@@ -405,8 +409,8 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="c5"
-        color="primary"
+        class="c1"
+        color="default"
         type="button"
       >
         <span
@@ -418,8 +422,8 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="c5"
-        color="primary"
+        class="c1"
+        color="default"
         type="button"
       >
         <span
@@ -431,8 +435,8 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="c5"
-        color="primary"
+        class="c1"
+        color="default"
         type="button"
       >
         <span
@@ -444,8 +448,8 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="c5"
-        color="primary"
+        class="c1"
+        color="default"
         type="button"
       >
         <span
@@ -457,8 +461,8 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="c5"
-        color="primary"
+        class="c1"
+        color="default"
         type="button"
       >
         <span
@@ -486,19 +490,19 @@ exports[`Pagination component should render correctly with all the props given 1
 }
 
 .c1 {
-  background-color: transparent;
   border: none;
-  padding: 8px 10px;
-  border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border: 1px solid #012040;
-  background-color: #012040;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 0.8rem 2.4rem;
+  border-radius: 0.8rem;
   color: #ffffff;
+  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -525,31 +529,44 @@ exports[`Pagination component should render correctly with all the props given 1
   fill: #ffffff;
 }
 
+.c1:hover {
+  background: #005AEE;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c1:disabled {
+  box-shadow: none;
+  color: #ffffff;
+  background: #dfe4e9;
+}
+
 .c1:disabled {
   cursor: not-allowed;
 }
 
 .c1 .sc-AykKD + .c2 {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c1 .c2 + .sc-AykKD {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c4 {
-  background-color: transparent;
   border: none;
-  padding: 8px 10px;
-  border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  border: 1px solid #012040;
-  color: #012040;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem);
+  border-radius: 0.8rem;
+  border: 0.1rem solid;
+  color: #005AEE;
+  border-color: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -573,7 +590,27 @@ exports[`Pagination component should render correctly with all the props given 1
 }
 
 .c4 .sc-AykKD * {
-  fill: #012040;
+  fill: #005AEE;
+}
+
+.c4:hover {
+  color: #1A6BF0;
+  border-color: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c4:hover .sc-AykKD * {
+  fill: #1A6BF0;
+}
+
+.c4:disabled {
+  box-shadow: none;
+  color: #b0bcc8;
+  border-color: #b0bcc8;
+}
+
+.c4:disabled .sc-AykKD * {
+  fill: #b0bcc8;
 }
 
 .c4:disabled {
@@ -581,11 +618,11 @@ exports[`Pagination component should render correctly with all the props given 1
 }
 
 .c4 .sc-AykKD + .c2 {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c4 .c2 + .sc-AykKD {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c0 {
@@ -620,7 +657,7 @@ exports[`Pagination component should render correctly with all the props given 1
     <li>
       <button
         class="c1"
-        color="primary"
+        color="default"
         type="button"
       >
         <span
@@ -633,7 +670,7 @@ exports[`Pagination component should render correctly with all the props given 1
     <li>
       <button
         class="c4"
-        color="primary"
+        color="default"
         type="button"
       >
         <span
@@ -646,7 +683,7 @@ exports[`Pagination component should render correctly with all the props given 1
     <li>
       <button
         class="c4"
-        color="primary"
+        color="default"
         type="button"
       >
         <span
@@ -659,7 +696,7 @@ exports[`Pagination component should render correctly with all the props given 1
     <li>
       <button
         class="c4"
-        color="primary"
+        color="default"
         type="button"
       >
         <span

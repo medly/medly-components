@@ -4,13 +4,13 @@ exports[`Calendar Component should render given date 1`] = `
 .c4 {
   margin: 0;
   color: inherit;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 2.6rem;
 }
 
 .c5 {
@@ -49,17 +49,19 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c2 {
-  background-color: transparent;
   border: none;
-  padding: 8px 10px;
-  border-radius: 3px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-text-decoration: none;
   text-decoration: none;
-  color: #012040;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem;
+  border-radius: 0.8rem;
+  background: transparent;
+  color: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -83,7 +85,19 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c2 .c15 * {
-  fill: #012040;
+  fill: #005AEE;
+}
+
+.c2:hover {
+  color: #1A6BF0;
+}
+
+.c2:hover .c15 * {
+  fill: #1A6BF0;
+}
+
+.c2:disabled {
+  color: #b0bcc8;
 }
 
 .c2:disabled {
@@ -91,11 +105,11 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c2 .c15 + .c3 {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c2 .c3 + .c15 {
-  margin-left: 10px;
+  margin-left: 0.8rem;
 }
 
 .c0 {
@@ -491,7 +505,7 @@ exports[`Calendar Component should render given date 1`] = `
     >
       <button
         class="c2"
-        color="primary"
+        color="default"
         type="button"
       >
         <span
@@ -507,7 +521,7 @@ exports[`Calendar Component should render given date 1`] = `
       </h3>
       <button
         class="c2"
-        color="primary"
+        color="default"
         type="button"
       >
         <span

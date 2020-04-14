@@ -3,7 +3,7 @@ import { centerAligned, css, styled } from '@medly-components/utils';
 import Text from '../Text';
 import { StyledProps } from './types';
 
-const getColor = ({ theme, color, disabled }: StyledProps) => (disabled ? theme.button.disabled : color || theme.chip.defaultColor);
+const getColor = ({ theme, color, disabled }: StyledProps) => (disabled ? theme.chip.disabledColor : color || theme.chip.defaultColor);
 
 const outlined = () => css`
     border: 1px solid ${getColor};

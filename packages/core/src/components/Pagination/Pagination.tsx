@@ -31,7 +31,7 @@ export const Pagination: SFC<PaginationProps> & WithStyle = React.memo(
 
         for (let i = pagesConfig.startPage; i <= pagesConfig.endPage; i++) {
             links.push(
-                <Button key={i} onClick={onClickHandler(i)} variant={i === pagesConfig.currentPage ? 'solid' : 'outlined'}>
+                <Button size="S" key={i} onClick={onClickHandler(i)} variant={i === pagesConfig.currentPage ? 'solid' : 'outlined'}>
                     {i}
                 </Button>
             );
@@ -40,6 +40,7 @@ export const Pagination: SFC<PaginationProps> & WithStyle = React.memo(
         if (!hidePrevNextLinks) {
             links.unshift(
                 <Button
+                    size="S"
                     key="prev"
                     disabled={pagesConfig.currentPage < 2}
                     onClick={onClickHandler(pagesConfig.currentPage - 1)}
@@ -50,6 +51,7 @@ export const Pagination: SFC<PaginationProps> & WithStyle = React.memo(
             );
             links.push(
                 <Button
+                    size="S"
                     key="next"
                     disabled={pagesConfig.currentPage === pagesConfig.totalPages}
                     onClick={onClickHandler(pagesConfig.currentPage + 1)}
@@ -62,12 +64,13 @@ export const Pagination: SFC<PaginationProps> & WithStyle = React.memo(
 
         if (!hideFirstLastLinks) {
             links.unshift(
-                <Button key="first" disabled={pagesConfig.currentPage < 2} onClick={onClickHandler(1)} variant="outlined">
+                <Button size="S" key="first" disabled={pagesConfig.currentPage < 2} onClick={onClickHandler(1)} variant="outlined">
                     First
                 </Button>
             );
             links.push(
                 <Button
+                    size="S"
                     key="last"
                     disabled={pagesConfig.currentPage === pagesConfig.totalPages}
                     onClick={onClickHandler(pagesConfig.totalPages)}
