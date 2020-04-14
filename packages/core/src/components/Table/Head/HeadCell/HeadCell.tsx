@@ -1,4 +1,4 @@
-import { ArrowDropDownIcon, ArrowDropUpIcon, UnfoldMoreIcon } from '@medly-components/icons';
+import { ArrowDropDownIcon, ArrowDropUpIcon, DropdownIcon } from '@medly-components/icons';
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Text from '../../../Text';
@@ -59,11 +59,11 @@ const HeadCell: React.SFC<HeadCellProps> & WithStyle = React.memo(props => {
     const sortIcon = useMemo(
         () =>
             sortField !== field ? (
-                <UnfoldMoreIcon size="XS" onClick={handleSortIconClick} />
+                <DropdownIcon size="XS" onClick={handleSortIconClick} />
             ) : sortState === 'desc' ? (
-                <ArrowDropDownIcon size="XS" onClick={handleSortIconClick} />
+                <ArrowDropDownIcon size="M" onClick={handleSortIconClick} />
             ) : (
-                <ArrowDropUpIcon size="XS" onClick={handleSortIconClick} />
+                <ArrowDropUpIcon size="M" onClick={handleSortIconClick} />
             ),
         [handleSortIconClick, sortField, field, sortState]
     );
