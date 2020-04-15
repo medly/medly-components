@@ -45,6 +45,7 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c16 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 

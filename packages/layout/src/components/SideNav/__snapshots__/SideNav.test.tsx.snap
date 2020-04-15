@@ -9,6 +9,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 }
 
 .c9 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -20,6 +21,7 @@ exports[`SideNav should change width after clicking on burger icon 1`] = `
 }
 
 .c15 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -523,6 +525,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 }
 
 .c9 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -534,6 +537,7 @@ exports[`SideNav should change width when clicked on item with sidenavOpenCloseO
 }
 
 .c15 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -1063,6 +1067,7 @@ exports[`SideNav should close sidenav if we click outside 1`] = `
 }
 
 .c11 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -1486,6 +1491,7 @@ exports[`SideNav should render properly 1`] = `
 }
 
 .c8 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -1497,6 +1503,7 @@ exports[`SideNav should render properly 1`] = `
 }
 
 .c14 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 

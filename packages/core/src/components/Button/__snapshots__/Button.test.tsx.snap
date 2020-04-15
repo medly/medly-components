@@ -1319,6 +1319,7 @@ exports[`Button component should render properly with any icon at the beginning 
 }
 
 .c2 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -1435,6 +1436,7 @@ exports[`Button component should render properly with any icon at the end of the
 }
 
 .c2 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 

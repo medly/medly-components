@@ -9,6 +9,7 @@ exports[`Checkbox component should render correctly with all the default props 1
 }
 
 .c4 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -142,6 +143,7 @@ exports[`Checkbox component should render correctly with all the props given 1`]
 }
 
 .c6 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 

@@ -9,6 +9,7 @@ exports[`NavItem should be able to click on nested item 1`] = `
 }
 
 .c11 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -20,6 +21,7 @@ exports[`NavItem should be able to click on nested item 1`] = `
 }
 
 .c15 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -581,6 +583,7 @@ exports[`NavItem should fold the open item on click on it 1`] = `
 }
 
 .c11 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -592,6 +595,7 @@ exports[`NavItem should fold the open item on click on it 1`] = `
 }
 
 .c15 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -1082,6 +1086,7 @@ exports[`NavItem should render properly 1`] = `
 }
 
 .c10 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -1093,6 +1098,7 @@ exports[`NavItem should render properly 1`] = `
 }
 
 .c14 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 

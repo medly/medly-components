@@ -8,6 +8,7 @@ export const SvgIconStyled = styled(InjectClassName)<SvgIconProps>`
     cursor: ${({ onClick, disabled }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
     transition: all 100ms linear;
     * {
+        fill-opacity: 1;
         fill: ${({ theme, color, disabled }) => (disabled ? theme.icon.disabledIconColor : color || theme.icon.defaultIconColor)};
     }
     ${({ withHoverEffect, theme, disabled, color }) =>

@@ -84,6 +84,7 @@ exports[`Tab should render properly with icon 1`] = `
 }
 
 .c2 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 

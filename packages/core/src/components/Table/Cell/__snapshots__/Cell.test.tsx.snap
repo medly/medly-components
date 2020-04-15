@@ -71,6 +71,7 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c8 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 

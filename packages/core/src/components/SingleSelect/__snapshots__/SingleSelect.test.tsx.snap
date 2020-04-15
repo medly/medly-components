@@ -204,6 +204,7 @@ exports[`SingleSelect component should render correctly with all the props given
 }
 
 .c9 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -486,6 +487,7 @@ exports[`SingleSelect component should render correctly with default props 1`] =
 }
 
 .c7 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 

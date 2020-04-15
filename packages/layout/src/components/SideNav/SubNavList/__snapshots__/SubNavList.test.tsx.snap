@@ -9,6 +9,7 @@ exports[`SubNavList should be able to click on nested item 1`] = `
 }
 
 .c11 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -20,6 +21,7 @@ exports[`SubNavList should be able to click on nested item 1`] = `
 }
 
 .c15 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -655,6 +657,7 @@ exports[`SubNavList should render properly 1`] = `
 }
 
 .c10 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -666,6 +669,7 @@ exports[`SubNavList should render properly 1`] = `
 }
 
 .c14 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 

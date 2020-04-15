@@ -59,6 +59,7 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 .c6 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 

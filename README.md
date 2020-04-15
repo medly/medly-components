@@ -52,11 +52,7 @@ Replace content in `App.tsx` with the following:
 import React from 'react';
 import { Button } from '@medly-components/core';
 
-const App: React.SFC = () => (
-    <Button variant="flat" color="primary">
-        Click me!
-    </Button>
-);
+const App: React.SFC = () => <Button variant="solid">Click me!</Button>;
 
 export default App;
 ```

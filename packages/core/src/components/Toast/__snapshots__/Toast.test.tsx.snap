@@ -9,6 +9,7 @@ exports[`Toast should render properly if child jsx 1`] = `
 }
 
 .c2 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -98,6 +99,7 @@ exports[`Toast should render properly with error variant 1`] = `
 }
 
 .c2 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -208,6 +210,7 @@ exports[`Toast should render properly with info variant 1`] = `
 }
 
 .c2 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -318,6 +321,7 @@ exports[`Toast should render properly with success variant 1`] = `
 }
 
 .c2 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -426,6 +430,7 @@ exports[`Toast should render properly with warning variant 1`] = `
 }
 
 .c2 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 

@@ -9,6 +9,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c10 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -20,6 +21,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c14 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -422,6 +424,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c7 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -690,6 +693,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c10 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -701,6 +705,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c14 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
@@ -1103,6 +1108,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c7 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 

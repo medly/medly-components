@@ -9,6 +9,7 @@ exports[`CheckboxGroup component should render correctly with all the props 1`] 
 }
 
 .c10 * {
+  fill-opacity: 1;
   fill: #607890;
 }
 
