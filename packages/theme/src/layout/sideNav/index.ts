@@ -2,20 +2,28 @@ import colors from '../../core/colors';
 import { SideNavTheme } from './types';
 
 const sideNav: SideNavTheme = {
-    scrollbarColor: colors.grey[500],
-    closeSize: '60px',
-    openSize: '250px',
-    iconSize: 'S',
+    closeSize: '7.2rem',
+    openSize: '25.6rem',
+    iconSize: 'M',
     fontVariant: 'body1',
-    itemMinHeight: '48px',
-    bgColor: colors.marigoldOrange[400],
-    textColor: colors.white,
-    iconColor: colors.white,
-    activeColor: colors.grey[600],
-    borderColor: colors.marigoldOrange[400],
-    activeBorderColor: colors.grey[800],
-    bottomListBgColor: colors.marigoldOrange[400],
-    logoBgColor: colors.marigoldOrange[500]
+    navItemMinHeight: '4.8rem',
+    bgColor: colors.white,
+    scrollBarColor: colors.grey[500],
+    separatorColor: colors.grey[200],
+    navItemColors: {
+        active: {
+            textColor: colors.communityBlue[500],
+            bgColor: 'rgba(0, 90, 238, 0.1)'
+        },
+        hover: {
+            textColor: colors.grey[800],
+            bgColor: colors.grey[100]
+        },
+        default: {
+            textColor: colors.grey[600],
+            bgColor: colors.white
+        }
+    }
 };
 
 export default sideNav;

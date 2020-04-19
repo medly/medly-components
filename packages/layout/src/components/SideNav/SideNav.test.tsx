@@ -1,99 +1,80 @@
+import { Text } from '@medly-components/core';
 import { HomeIcon, SearchIcon } from '@medly-components/icons';
-import { act, cleanup, fireEvent, render } from '@test-utils';
+import { defaultTheme } from '@medly-components/theme';
+import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { SideNav } from './SideNav';
 
-const renderer = (mockOnChange = jest.fn()) =>
+const renderer = (active: string, mockOnChange = jest.fn()) =>
     render(
-        <SideNav logo={HomeIcon} onChange={mockOnChange}>
-            <SideNav.NavList>
-                <SideNav.NavItem path="/home">
-                    <SideNav.NavIcon>
-                        <HomeIcon />
-                    </SideNav.NavIcon>
-                    <SideNav.NavText>Home</SideNav.NavText>
-                </SideNav.NavItem>
-                <SideNav.NavItem path="/search" openSideNavOnClick>
-                    <SideNav.NavIcon>
-                        <SearchIcon />
-                    </SideNav.NavIcon>
-                    <SideNav.NavText>Search</SideNav.NavText>
-                    <SideNav.SubNavList>
-                        <SideNav.NavItem path="/search/cars">
-                            <SideNav.NavText>Cars</SideNav.NavText>
-                        </SideNav.NavItem>
-                        <SideNav.NavItem path="/search/bikes">
-                            <SideNav.NavText>Bikes</SideNav.NavText>
-                        </SideNav.NavItem>
-                        <SideNav.NavItem path="/search/phones">
-                            <SideNav.NavText>Phones</SideNav.NavText>
-                        </SideNav.NavItem>
-                    </SideNav.SubNavList>
-                </SideNav.NavItem>
-                <SideNav.BottomList>
-                    <SideNav.NavText>Hi Dummy Username</SideNav.NavText>
-                </SideNav.BottomList>
-            </SideNav.NavList>
+        <SideNav active={active} onChange={mockOnChange}>
+            <SideNav.List>
+                <SideNav.Nav path="/home">
+                    <HomeIcon />
+                    <Text>Home</Text>
+                </SideNav.Nav>
+                <SideNav.Nav path="/search">
+                    <SearchIcon />
+                    <Text>Search</Text>
+                </SideNav.Nav>
+            </SideNav.List>
         </SideNav>
     );
 describe('SideNav', () => {
     afterEach(cleanup);
 
     it('should render properly', () => {
-        const { container } = renderer();
+        const { container } = renderer('/home');
         expect(container).toMatchSnapshot();
     });
 
-    it('should change width after clicking on burger icon', () => {
-        const { container } = renderer();
-        act(() => {
-            fireEvent.click(container.querySelector('button'));
-        });
-        expect(container.querySelector('#medly-sidenav')).toMatchSnapshot();
+    it('should expand aside on clicking on the expand icon', () => {
+        const { container } = renderer('/home');
+        fireEvent.click(container.querySelector('#medly-sidenav-toggle-expand'));
+        expect(container.querySelector('aside')).toHaveStyle(`
+           width: ${defaultTheme.sideNav.openSize};
+        `);
     });
 
-    it('should call onChange with expected path', () => {
+    it('should collapse aside on clicking on the hide icon', () => {
+        const { container } = renderer('/home');
+        fireEvent.click(container.querySelector('#medly-sidenav-toggle-expand'));
+        fireEvent.click(container.querySelector('#medly-sidenav-toggle-hide'));
+        expect(container.querySelector('aside')).toHaveStyle(`
+           width: ${defaultTheme.sideNav.closeSize};
+        `);
+    });
+
+    it('should expand nav on hovering on it', () => {
+        const { container } = renderer('/home');
+        fireEvent.mouseEnter(container.querySelector('nav'));
+        expect(container.querySelector('nav')).toHaveStyle(`
+                width: ${defaultTheme.sideNav.openSize};
+            `);
+    });
+
+    it('should collapse nav on moving cursor out of it', () => {
+        const { container } = renderer('/home');
+        fireEvent.mouseEnter(container.querySelector('nav'));
+        fireEvent.mouseLeave(container.querySelector('nav'));
+        expect(container.querySelector('nav')).toHaveStyle(`
+                width: ${defaultTheme.sideNav.closeSize};
+            `);
+    });
+
+    it('should call onChange with expected path when it is used as controlled component', () => {
         const mockOnChange = jest.fn();
-        const { container, getByText } = renderer(mockOnChange);
-        fireEvent.click(container.querySelector('button'));
+        const { container, getByText } = renderer('/home', mockOnChange);
+        fireEvent.click(container.querySelector('#medly-sidenav-toggle-expand'));
         fireEvent.click(getByText('Search'));
-        fireEvent.click(getByText('Cars'));
-        expect(mockOnChange).toBeCalledWith('/search/cars');
+        expect(mockOnChange).toBeCalledWith('/search');
     });
 
-    it('should change width when clicked on item with sidenavOpenCloseOnClick prop given', () => {
-        const { getByText, container } = renderer();
-        act(() => {
-            fireEvent.click(getByText('Search'));
-        });
-        expect(container.querySelector('#medly-sidenav')).toMatchSnapshot();
-    });
-
-    it('should close sidenav if we click outside', () => {
-        const mockOnChange = jest.fn(),
-            { container, getByText } = render(
-                <div>
-                    <p>Outer Element</p>
-                    <SideNav active="/home" onChange={mockOnChange} closeOnOuterClick>
-                        <SideNav.NavList>
-                            <SideNav.NavItem path="/home">
-                                <SideNav.NavIcon>
-                                    <HomeIcon />
-                                </SideNav.NavIcon>
-                                <SideNav.NavText>Home</SideNav.NavText>
-                            </SideNav.NavItem>
-                            <SideNav.NavItem>
-                                <SideNav.NavText>Edit</SideNav.NavText>
-                            </SideNav.NavItem>
-                        </SideNav.NavList>
-                    </SideNav>
-                </div>
-            );
-        fireEvent.click(container.querySelector('button'));
-        fireEvent.click(getByText('Home'));
-        expect(mockOnChange).toBeCalled();
-
-        fireEvent.click(getByText('Outer Element'));
-        expect(container.querySelector('#medly-sidenav')).toMatchSnapshot();
+    it('should call onChange with expected path when it is used as uncontrolled component', () => {
+        const mockOnChange = jest.fn();
+        const { container, getByText } = renderer(undefined, mockOnChange);
+        fireEvent.click(container.querySelector('#medly-sidenav-toggle-expand'));
+        fireEvent.click(getByText('Search'));
+        expect(mockOnChange).toBeCalledWith('/search');
     });
 });

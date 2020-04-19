@@ -1,29 +1,106 @@
 import { SideNav } from './SideNav';
+import { Text } from '@medly-components/core';
 import NavItem from './NavItem';
 import NavList from './NavList';
-import { Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import SideNavContext from './SideNav.context';
+import MedlySidenavHeader from './MedlySidenavHeader';
 import * as stories from './SideNav.stories';
 
-<Meta title="Layout/SideNav" component={SideNav} />
+<Meta title="Layout/SideNav" component={SideNav} parameters={{ jest: ['SideNav.test.tsx', 'NavList.test.tsx', 'NavItem.test.tsx'] }} />
 
 # SideNav
 
-### Basic SideNav
-
 Sidenav layout componenet could be pretty handy to show menu items.
 
+#### How to use
+
+You can create you Sidenav component like below
+
 ```tsx
-<SideNav>
-    <SideNav.NavItem path="/home">
-        <SideNav.NavIcon>
-            <HomeIcon />
-        </SideNav.NavIcon>
-        <SideNav.NavText>Home</SideNav.NavText>
-    </SideNav.NavItem>
-</SideNav>
+import { Text } from '@medly-components/core';
+import { HomeIcon, ReceiptIcon } from '@medly-components/icons';
+import { MedlySidenavHeader, SideNav as MedlySideNav } from '@medly-components/layout';
+import React, { useCallback } from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
+
+export const SideNav: React.SFC = React.memo(() => {
+    // If you are using react-router for managing your routes
+    const { pathname } = useLocation(),
+        history = useHistory(),
+        handlePathChange = useCallback((page: string) => history.push(page), [history]);
+
+    // Design your own header instead of MedlySidenavHeader
+    return (
+        <MedlySideNav onChange={handlePathChange} active={pathname} defaultActive="/home">
+            <MedlySidenavHeader />
+            <MedlySideNav.List>
+                <MedlySideNav.Nav path="/home">
+                    <HomeIcon />
+                    <Text>Home</Text>
+                </MedlySideNav.Nav>
+                <MedlySideNav.Nav path="/records">
+                    <ReceiptIcon />
+                    <Text>Records</Text>
+                </MedlySideNav.Nav>
+            </MedlySideNav.List>
+        </MedlySideNav>
+    );
+});
+SideNav.displayName = 'IBDSideNav';
+```
+
+Then you can structure your webpage like below
+
+```tsx
+import { styled } from '@styled';
+
+export const PageLayoutStyled = styled('div')`
+    display: grid;
+    grid-template-areas:
+        'aside header'
+        'aside  main';
+    grid-template-rows: max-content auto;
+    grid-template-columns: auto 1fr;
+
+    & > aside {
+        grid-area: aside;
+    }
+
+    & > header {
+        grid-area: header;
+    }
+
+    & > main {
+        grid-area: main;
+        transition: width 200ms;
+    }
+`;
+```
+
+Then in your App.tsx you can use SideNav like below
+
+```tsx
+<PageLayout>
+    <SideNav />
+    <Header />
+    <Main />
+</PageLayout>
 ```
 
 <Story name="Basic">{stories.Basic()}</Story>
+
+### Sidenav Header
+
+<Preview>
+    <SideNavContext.Provider value={{ activeItem: 'dummy', isHovered: true, isExpanded: true, activeItemChangeHandler: () => null }}>
+        <MedlySidenavHeader />
+    </SideNavContext.Provider>
+</Preview>
+
+You have to design your header component and use it as first child in Sidenav. You can use SidenavContext to find out below properties:
+
+<Props of={stories.SidenavContextTheme} />
 
 ### SideNav Props
 
@@ -38,10 +115,6 @@ You can use all of below Components like `SideNav.<name>`
 ### NavItem Props
 
 <Props of={NavItem} />
-
-### NavList and SubNavList Props
-
-<Props of={NavList} />
 
 ### SideNavTheme
 

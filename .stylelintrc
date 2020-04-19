@@ -5,6 +5,7 @@
   "rules": {
     "prettier/prettier": true,
     "value-keyword-case": null,
+    "declaration-bang-space-before": null,
     "declaration-empty-line-before" : "never",
     "unit-no-unknown": [true, {
       "ignoreUnits": ["`"]

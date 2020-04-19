@@ -1,0 +1,472 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavItem should call onClick when we click on it 1`] = `
+.c5 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c3 {
+  font-size: 2.4rem;
+  cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.c3 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c1 {
+  width: 100%;
+  border-left: 0.4rem solid;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: calc(7.2rem - 0.8rem) calc(25.6rem - 7.2rem - 1.6rem);
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-height: 4.8rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: pointer;
+  border-radius: 0 calc(4.8rem / 2) calc(4.8rem / 2) 0;
+  border-color: #ffffff;
+}
+
+.c1 .c2 {
+  font-size: 2.4rem;
+}
+
+.c1 .c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  justify-self: left;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.c1:hover {
+  color: #435465;
+  border-color: #eff2f4;
+  background-color: #eff2f4;
+}
+
+.c1:hover .c2 * {
+  fill: #435465;
+}
+
+.c0 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  list-style-type: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 7.2rem;
+  -webkit-flex: unset;
+  -ms-flex: unset;
+  flex: unset;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: end;
+  -ms-flex-item-align: end;
+  align-self: end;
+  position: relative;
+  width: 100%;
+}
+
+.c0::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #ffffff;
+}
+
+.c0::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #98A7B7;
+}
+
+.c0::before {
+  content: '';
+  width: calc(100% - 3.2rem);
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  border-top: 1px solid #dfe4e9;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+<div>
+  <ul
+    class="sc-fzXfQX c0"
+  >
+    <li
+      class="c1"
+      font-variant="body1"
+    >
+      <svg
+        class="c2 c3"
+        fill="none"
+        height="1em"
+        id="dummy-hide"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.889 18H22.11c.489 0 .889-.45.889-1s-.4-1-.889-1H7.89C7.4 16 7 16.45 7 17s.4 1 .889 1zM7.889 13H22.11c.489 0 .889-.45.889-1s-.4-1-.889-1H7.89C7.4 11 7 11.45 7 12s.4 1 .889 1zM7 7c0 .55.4 1 .889 1H22.11C22.6 8 23 7.55 23 7s-.4-1-.889-1H7.89C7.4 6 7 6.45 7 7zM3.824 8.789l-2.537 2.525a.967.967 0 0 0 0 1.374l2.537 2.525c.618.615 1.676.176 1.676-.692v-5.05c0-.867-1.058-1.296-1.676-.682z"
+          fill="#000"
+        />
+      </svg>
+      <span
+        class="c4 c5"
+      >
+        Hide Menu
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`NavItem should render properly when it is showing hide option 1`] = `
+.c5 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c3 {
+  font-size: 2.4rem;
+  cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.c3 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c1 {
+  width: 100%;
+  border-left: 0.4rem solid;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: calc(7.2rem - 0.8rem) calc(25.6rem - 7.2rem - 1.6rem);
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-height: 4.8rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: pointer;
+  border-radius: 0 calc(4.8rem / 2) calc(4.8rem / 2) 0;
+  border-color: #ffffff;
+}
+
+.c1 .c2 {
+  font-size: 2.4rem;
+}
+
+.c1 .c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  justify-self: left;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.c1:hover {
+  color: #435465;
+  border-color: #eff2f4;
+  background-color: #eff2f4;
+}
+
+.c1:hover .c2 * {
+  fill: #435465;
+}
+
+.c0 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  list-style-type: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 7.2rem;
+  -webkit-flex: unset;
+  -ms-flex: unset;
+  flex: unset;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: end;
+  -ms-flex-item-align: end;
+  align-self: end;
+  position: relative;
+  width: 100%;
+}
+
+.c0::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #ffffff;
+}
+
+.c0::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #98A7B7;
+}
+
+.c0::before {
+  content: '';
+  width: calc(100% - 3.2rem);
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  border-top: 1px solid #dfe4e9;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+<div>
+  <ul
+    class="sc-fzXfQX c0"
+  >
+    <li
+      class="c1"
+      font-variant="body1"
+    >
+      <svg
+        class="c2 c3"
+        fill="none"
+        height="1em"
+        id="dummy-hide"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.889 18H22.11c.489 0 .889-.45.889-1s-.4-1-.889-1H7.89C7.4 16 7 16.45 7 17s.4 1 .889 1zM7.889 13H22.11c.489 0 .889-.45.889-1s-.4-1-.889-1H7.89C7.4 11 7 11.45 7 12s.4 1 .889 1zM7 7c0 .55.4 1 .889 1H22.11C22.6 8 23 7.55 23 7s-.4-1-.889-1H7.89C7.4 6 7 6.45 7 7zM3.824 8.789l-2.537 2.525a.967.967 0 0 0 0 1.374l2.537 2.525c.618.615 1.676.176 1.676-.692v-5.05c0-.867-1.058-1.296-1.676-.682z"
+          fill="#000"
+        />
+      </svg>
+      <span
+        class="c4 c5"
+      >
+        Hide Menu
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`NavItem should render properly when it is showing open option 1`] = `
+.c5 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c3 {
+  font-size: 2.4rem;
+  cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.c3 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c1 {
+  width: 100%;
+  border-left: 0.4rem solid;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: calc(7.2rem - 0.8rem) calc(25.6rem - 7.2rem - 1.6rem);
+  justify-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-height: 4.8rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: pointer;
+  border-radius: 0 calc(4.8rem / 2) calc(4.8rem / 2) 0;
+  border-color: #ffffff;
+}
+
+.c1 .c2 {
+  font-size: 2.4rem;
+}
+
+.c1 .c4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  justify-self: left;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.c1:hover {
+  color: #435465;
+  border-color: #eff2f4;
+  background-color: #eff2f4;
+}
+
+.c1:hover .c2 * {
+  fill: #435465;
+}
+
+.c0 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  list-style-type: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 7.2rem;
+  -webkit-flex: unset;
+  -ms-flex: unset;
+  flex: unset;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: end;
+  -ms-flex-item-align: end;
+  align-self: end;
+  position: relative;
+  width: 100%;
+}
+
+.c0::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #ffffff;
+}
+
+.c0::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #98A7B7;
+}
+
+.c0::before {
+  content: '';
+  width: calc(100% - 3.2rem);
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  border-top: 1px solid #dfe4e9;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+<div>
+  <ul
+    class="sc-fzXfQX c0"
+  >
+    <li
+      class="c1"
+      font-variant="body1"
+    >
+      <svg
+        class="c2 c3"
+        fill="none"
+        height="1em"
+        id="dummy-expand"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16.111 6H1.89C1.4 6 1 6.45 1 7s.4 1 .889 1H16.11C16.6 8 17 7.55 17 7s-.4-1-.889-1zM16.111 11H1.89C1.4 11 1 11.45 1 12s.4 1 .889 1H16.11c.489 0 .889-.45.889-1s-.4-1-.889-1zM17 17c0-.55-.4-1-.889-1H1.89C1.4 16 1 16.45 1 17s.4 1 .889 1H16.11c.489 0 .889-.45.889-1zM20.176 15.211l2.537-2.525a.967.967 0 0 0 0-1.374l-2.537-2.525c-.618-.615-1.676-.176-1.676.692v5.05c0 .867 1.058 1.296 1.676.682z"
+          fill="#000"
+        />
+      </svg>
+      <span
+        class="c4 c5"
+      >
+        Open Menu
+      </span>
+    </li>
+  </ul>
+</div>
+`;

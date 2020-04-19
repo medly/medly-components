@@ -1,62 +1,50 @@
-import { useOuterClickNotifier, WithStyle } from '@medly-components/utils';
+import { WithStyle } from '@medly-components/utils';
 import React, { SFC, useCallback, useRef, useState } from 'react';
-import BottomList from './BottomList';
-import NavIcon from './NavIcon';
 import NavItem from './NavItem';
 import NavList from './NavList';
-import NavText from './NavText';
-import OnChangeContext from './OnChangeContext';
+import SideNavContext from './SideNav.context';
 import * as Styled from './SideNav.styled';
-import SubNavList from './SubNavList';
-import TopNavItem from './TopNavItem';
+import ToggleSwitch from './ToggleSwitch';
 import { SideNavProps, SideNavStaticProps } from './types';
 
 export const SideNav: SFC<SideNavProps> & WithStyle & SideNavStaticProps = props => {
-    const { active, children, closeOnOuterClick, defaultActive, logo, onChange } = props,
+    const { active, children, defaultActive, onChange } = props,
         id = props.id || 'medly-sidenav';
 
     const ref = useRef(null),
-        [open, setOpenState] = useState(false),
+        [isHovered, setHoveredState] = useState(false),
+        [isExpanded, setExpandedState] = useState(false),
         [activeItem, setActiveItem] = useState(defaultActive || '');
 
-    const burgerIconClickHandler = useCallback(() => setOpenState(val => !val), []),
-        sidenavOpenHandler = useCallback(() => {
-            !open && setOpenState(true);
-        }, [open]);
-
-    const handleOnActiveChange = useCallback(
-        (key: string) => {
-            !active && setActiveItem(key);
-            onChange && onChange(key);
-        },
-        [active, onChange]
-    );
-
-    useOuterClickNotifier(() => {
-        closeOnOuterClick && setOpenState(false);
-    }, ref);
+    const openSidenav = useCallback(() => !isExpanded && setHoveredState(true), [isExpanded]),
+        closeSidenav = useCallback(() => !isExpanded && setHoveredState(false), [isExpanded]),
+        expandSidenav = useCallback(() => setExpandedState(true), []),
+        collapseSidenav = useCallback(() => {
+            setExpandedState(false);
+            setHoveredState(false);
+        }, []),
+        activeItemChangeHandler = useCallback(
+            (key: string) => {
+                !active && setActiveItem(key);
+                onChange && onChange(key);
+            },
+            [active, onChange]
+        );
 
     return (
-        <Styled.SideNav open={open} ref={ref} position="left" id={id} as="nav">
-            <OnChangeContext.Provider value={[active || activeItem, handleOnActiveChange]}>
-                <TopNavItem {...{ logo, open, burgerIconClickHandler }} />
-                {React.Children.map(children, child => {
-                    return React.cloneElement(child as any, { sidenavOpenHandler });
-                })}
-            </OnChangeContext.Provider>
-        </Styled.SideNav>
+        <SideNavContext.Provider value={{ isHovered, isExpanded, activeItem: active || activeItem, activeItemChangeHandler }}>
+            <Styled.Aside ref={ref} position="left" id={id} isExpanded={isExpanded} isHovered={isHovered}>
+                <Styled.Nav isHovered={isHovered} isExpanded={isExpanded} onMouseEnter={openSidenav} onMouseLeave={closeSidenav}>
+                    {children}
+                    <ToggleSwitch id={`${id}-toggle`} isActive={isExpanded} onClick={isExpanded ? collapseSidenav : expandSidenav} />
+                </Styled.Nav>
+            </Styled.Aside>
+        </SideNavContext.Provider>
     );
 };
 
-SideNav.BottomList = BottomList;
-SideNav.NavList = NavList;
-SideNav.SubNavList = SubNavList;
-SideNav.NavItem = NavItem;
-SideNav.NavIcon = NavIcon;
-SideNav.NavText = NavText;
+SideNav.List = NavList;
+SideNav.Nav = NavItem;
 
 SideNav.displayName = 'SideNav';
-SideNav.Style = Styled.SideNav;
-SideNav.defaultProps = {
-    closeOnOuterClick: false
-};
+SideNav.Style = Styled.Aside;

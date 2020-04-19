@@ -1,62 +1,90 @@
 import { Text } from '@medly-components/core';
+import { SvgIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
-import { css, getFontStyle, styled } from '@medly-components/utils';
-import Dropdown from '../DropdownIcon';
+import { css, styled } from '@medly-components/utils';
 import { NavItemStyledProps } from './types';
+
+const openNavStyle = ({ isActive, bgColor, navItemColors, navItemMinHeight }: NavItemStyledProps) => css`
+    border-radius: ${`0 calc(${navItemMinHeight} / 2) calc(${navItemMinHeight} / 2) 0`};
+    ${isActive
+        ? css`
+              border-color: ${navItemColors.active.textColor};
+              color: ${navItemColors.active.textColor};
+              background-color: ${navItemColors.active.bgColor};
+              ${SvgIcon} {
+                  * {
+                      fill: ${navItemColors.active.textColor};
+                  }
+              }
+          `
+        : css`
+              border-color: ${bgColor};
+              &:hover {
+                  color: ${navItemColors.hover.textColor};
+                  border-color: ${navItemColors.hover.bgColor};
+                  background-color: ${navItemColors.hover.bgColor};
+                  ${SvgIcon} {
+                      * {
+                          fill: ${navItemColors.hover.textColor};
+                      }
+                  }
+              }
+          `};
+`;
+
+const closeNavStyle = ({ isActive, bgColor, navItemColors, iconSize, theme, navItemMinHeight }: NavItemStyledProps) => css`
+    border-color: ${bgColor};
+    ${SvgIcon} {
+        padding: ${`calc((${navItemMinHeight} - ${theme.icon.sizes[iconSize]}) / 2) `};
+        border-radius: 50%;
+        ${isActive
+            ? css`
+                  background-color: ${navItemColors.active.bgColor};
+                  * {
+                      fill: ${navItemColors.active.textColor};
+                  }
+              `
+            : css`
+                  &:hover {
+                      background-color: ${navItemColors.hover.bgColor};
+                      * {
+                          fill: ${navItemColors.hover.textColor};
+                      }
+                  }
+              `}
+    }
+`;
 
 export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ ...sideNav }))<NavItemStyledProps>`
     width: 100%;
+    border-left: ${({ theme }) => theme.spacing.S1} solid;
     text-decoration: none;
     box-sizing: border-box;
-    background-color: ${({ active, activeColor }) => (active ? activeColor : 'inherit')};
     display: grid;
-    grid-template-areas:
-        'icon header dropdownIcon'
-        'submenu submenu submenu';
-    grid-template-columns: min-content 1fr min-content;
-    grid-template-rows: ${({ itemMinHeight }) => itemMinHeight} min-content;
-    align-content: center;
+    grid-template-columns: ${({ openSize, closeSize, theme }) =>
+        `calc(${closeSize} - ${theme.spacing.S2}) calc(${openSize} - ${closeSize} - ${theme.spacing.S4}) `};
+    justify-items: center;
     align-items: center;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     overflow: hidden;
     user-select: none;
-    cursor:  ${({ showPointer }) => (showPointer ? 'pointer' : 'default')};
-    ${({ containsSubList, active, activeBorderColor, borderColor }) =>
-        !containsSubList &&
-        css`
-            border-bottom: 1px solid ${active ? activeBorderColor : borderColor};
-        `}
+    min-height: ${({ navItemMinHeight }) => navItemMinHeight};
+    transition: all 100ms linear;
+    cursor: pointer;
 
-    ${({ open }) =>
-        open &&
-        css`
-            & > ${Dropdown} {
-                transform: rotate(180deg);
-            }
-            & > ul {
-                max-height: 90vh;
-                transition: max-height 1s ease-out;
-            }
-        `}
-
-      
-    ${({ active, activeBorderColor }) =>
-        active &&
-        css`
-            ul,
-            li {
-                border-color: ${activeBorderColor};
-            }
-        `}
-    
-
-    & > ${Text.Style} {
-        ${getFontStyle};
-        grid-area: header;
-        color: ${({ textColor }) => textColor};
-        font-weight: ${({ active, theme }) => (active ? theme.font.weights.Strong : theme.font.weights.Regular)};
+    ${SvgIcon} {
+        font-size: ${({ theme, iconSize }) => theme.icon.sizes[iconSize]};
     }
+
+    ${Text.Style} {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        justify-self: left;
+        transition: opacity 200ms;
+        opacity: ${({ isHovered }) => (isHovered ? 1 : 0)};
+        font-weight: ${({ theme }) => theme.font.weights.Medium};
+    }
+
+    ${props => (props.isHovered ? openNavStyle(props) : closeNavStyle(props))};
 `;
 
 NavItemStyled.defaultProps = {
