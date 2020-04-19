@@ -12,7 +12,7 @@
         "strictNullChecks": false,
         "target": "esnext",
         "paths": {
-            "@medly-components/*": ["packages/*"],
+            "@medly-components/*": ["packages/*/src"],
             "@test-utils": ["packages/utils/src/test-utils"]
         }
     },
