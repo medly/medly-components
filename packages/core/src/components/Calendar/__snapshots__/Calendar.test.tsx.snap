@@ -59,7 +59,7 @@ exports[`Calendar Component should render given date 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   background: transparent;
   color: #005AEE;
@@ -85,6 +85,10 @@ exports[`Calendar Component should render given date 1`] = `
   outline: none;
 }
 
+.c2:disabled {
+  cursor: not-allowed;
+}
+
 .c2 .c15 * {
   fill: #005AEE;
 }
@@ -99,10 +103,6 @@ exports[`Calendar Component should render given date 1`] = `
 
 .c2:disabled {
   color: #b0bcc8;
-}
-
-.c2:disabled {
-  cursor: not-allowed;
 }
 
 .c2 .c15 + .c3 {

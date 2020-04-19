@@ -23,7 +23,7 @@ exports[`Button component should render properly with "M" size 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   color: #ffffff;
   background: #005AEE;
@@ -49,23 +49,23 @@ exports[`Button component should render properly with "M" size 1`] = `
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .sc-AykKC * {
   fill: #ffffff;
 }
 
 .c0:hover {
-  background: #005AEE;
+  background: #1A6BF0;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
 }
 
 .c0:disabled {
   box-shadow: none;
-  color: #ffffff;
+  color: #98A7B7;
   background: #dfe4e9;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
@@ -114,7 +114,7 @@ exports[`Button component should render properly with "S" size 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 0.8rem 2.4rem;
+  padding: 0.8rem 2.4rem 1rem 2.4rem;
   border-radius: 0.8rem;
   color: #ffffff;
   background: #005AEE;
@@ -140,23 +140,23 @@ exports[`Button component should render properly with "S" size 1`] = `
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .sc-AykKC * {
   fill: #ffffff;
 }
 
 .c0:hover {
-  background: #005AEE;
+  background: #1A6BF0;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
 }
 
 .c0:disabled {
   box-shadow: none;
-  color: #ffffff;
+  color: #98A7B7;
   background: #dfe4e9;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
@@ -205,7 +205,7 @@ exports[`Button component should render properly with "flat" variant and "confir
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   background: transparent;
   color: #008000;
@@ -231,6 +231,10 @@ exports[`Button component should render properly with "flat" variant and "confir
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .sc-AykKC * {
   fill: #008000;
 }
@@ -245,10 +249,6 @@ exports[`Button component should render properly with "flat" variant and "confir
 
 .c0:disabled {
   color: #b0bcc8;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
@@ -297,7 +297,7 @@ exports[`Button component should render properly with "flat" variant and "defaul
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   background: transparent;
   color: #005AEE;
@@ -323,6 +323,10 @@ exports[`Button component should render properly with "flat" variant and "defaul
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .sc-AykKC * {
   fill: #005AEE;
 }
@@ -337,10 +341,6 @@ exports[`Button component should render properly with "flat" variant and "defaul
 
 .c0:disabled {
   color: #b0bcc8;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
@@ -389,7 +389,7 @@ exports[`Button component should render properly with "flat" variant and "error"
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   background: transparent;
   color: #cc0000;
@@ -415,6 +415,10 @@ exports[`Button component should render properly with "flat" variant and "error"
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .sc-AykKC * {
   fill: #cc0000;
 }
@@ -429,10 +433,6 @@ exports[`Button component should render properly with "flat" variant and "error"
 
 .c0:disabled {
   color: #b0bcc8;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
@@ -481,7 +481,7 @@ exports[`Button component should render properly with "flat" variant should rend
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   color: #ffffff;
   background: #005AEE;
@@ -507,23 +507,23 @@ exports[`Button component should render properly with "flat" variant should rend
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .sc-AykKC * {
   fill: #ffffff;
 }
 
 .c0:hover {
-  background: #005AEE;
+  background: #1A6BF0;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
 }
 
 .c0:disabled {
   box-shadow: none;
-  color: #ffffff;
+  color: #98A7B7;
   background: #dfe4e9;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
@@ -573,9 +573,9 @@ exports[`Button component should render properly with "outlined" variant and "co
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
+  padding: calc(1rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1.2rem - 0.2rem) calc(2.4rem - 0.2rem);
   border-radius: 0.8rem;
-  border: 0.1rem solid;
+  border: 0.2rem solid;
   color: #008000;
   border-color: #008000;
   display: -webkit-inline-box;
@@ -600,6 +600,10 @@ exports[`Button component should render properly with "outlined" variant and "co
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .sc-AykKC * {
   fill: #008000;
 }
@@ -622,10 +626,6 @@ exports[`Button component should render properly with "outlined" variant and "co
 
 .c0:disabled .sc-AykKC * {
   fill: #b0bcc8;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
@@ -674,9 +674,9 @@ exports[`Button component should render properly with "outlined" variant and "de
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
+  padding: calc(1rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1.2rem - 0.2rem) calc(2.4rem - 0.2rem);
   border-radius: 0.8rem;
-  border: 0.1rem solid;
+  border: 0.2rem solid;
   color: #005AEE;
   border-color: #005AEE;
   display: -webkit-inline-box;
@@ -701,6 +701,10 @@ exports[`Button component should render properly with "outlined" variant and "de
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .sc-AykKC * {
   fill: #005AEE;
 }
@@ -723,10 +727,6 @@ exports[`Button component should render properly with "outlined" variant and "de
 
 .c0:disabled .sc-AykKC * {
   fill: #b0bcc8;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
@@ -775,9 +775,9 @@ exports[`Button component should render properly with "outlined" variant and "er
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
+  padding: calc(1rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1.2rem - 0.2rem) calc(2.4rem - 0.2rem);
   border-radius: 0.8rem;
-  border: 0.1rem solid;
+  border: 0.2rem solid;
   color: #cc0000;
   border-color: #cc0000;
   display: -webkit-inline-box;
@@ -802,6 +802,10 @@ exports[`Button component should render properly with "outlined" variant and "er
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .sc-AykKC * {
   fill: #cc0000;
 }
@@ -824,10 +828,6 @@ exports[`Button component should render properly with "outlined" variant and "er
 
 .c0:disabled .sc-AykKC * {
   fill: #b0bcc8;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
@@ -876,7 +876,7 @@ exports[`Button component should render properly with "outlined" variant should 
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   color: #ffffff;
   background: #005AEE;
@@ -902,23 +902,23 @@ exports[`Button component should render properly with "outlined" variant should 
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .sc-AykKC * {
   fill: #ffffff;
 }
 
 .c0:hover {
-  background: #005AEE;
+  background: #1A6BF0;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
 }
 
 .c0:disabled {
   box-shadow: none;
-  color: #ffffff;
+  color: #98A7B7;
   background: #dfe4e9;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
@@ -968,7 +968,7 @@ exports[`Button component should render properly with "solid" variant and "confi
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   color: #ffffff;
   background: #008000;
@@ -994,23 +994,23 @@ exports[`Button component should render properly with "solid" variant and "confi
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .sc-AykKC * {
   fill: #ffffff;
 }
 
 .c0:hover {
-  background: #008000;
+  background: #1A8D1A;
   box-shadow: 0 0.4rem 0.8rem rgba(0,128,0,0.35);
 }
 
 .c0:disabled {
   box-shadow: none;
-  color: #ffffff;
+  color: #98A7B7;
   background: #dfe4e9;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
@@ -1059,7 +1059,7 @@ exports[`Button component should render properly with "solid" variant and "defau
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   color: #ffffff;
   background: #005AEE;
@@ -1085,23 +1085,23 @@ exports[`Button component should render properly with "solid" variant and "defau
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .sc-AykKC * {
   fill: #ffffff;
 }
 
 .c0:hover {
-  background: #005AEE;
+  background: #1A6BF0;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
 }
 
 .c0:disabled {
   box-shadow: none;
-  color: #ffffff;
+  color: #98A7B7;
   background: #dfe4e9;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
@@ -1150,7 +1150,7 @@ exports[`Button component should render properly with "solid" variant and "error
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   color: #ffffff;
   background: #cc0000;
@@ -1176,23 +1176,23 @@ exports[`Button component should render properly with "solid" variant and "error
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .sc-AykKC * {
   fill: #ffffff;
 }
 
 .c0:hover {
-  background: #cc0000;
+  background: #D11A1A;
   box-shadow: 0 0.4rem 0.8rem rgba(204,0,0,0.35);
 }
 
 .c0:disabled {
   box-shadow: none;
-  color: #ffffff;
+  color: #98A7B7;
   background: #dfe4e9;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
@@ -1241,7 +1241,7 @@ exports[`Button component should render properly with "solid" variant should ren
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   color: #ffffff;
   background: #005AEE;
@@ -1267,23 +1267,23 @@ exports[`Button component should render properly with "solid" variant should ren
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .sc-AykKC * {
   fill: #ffffff;
 }
 
 .c0:hover {
-  background: #005AEE;
+  background: #1A6BF0;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
 }
 
 .c0:disabled {
   box-shadow: none;
-  color: #ffffff;
+  color: #98A7B7;
   background: #dfe4e9;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {
@@ -1345,7 +1345,7 @@ exports[`Button component should render properly with any icon at the beginning 
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   color: #ffffff;
   background: #005AEE;
@@ -1371,23 +1371,23 @@ exports[`Button component should render properly with any icon at the beginning 
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .c1 * {
   fill: #ffffff;
 }
 
 .c0:hover {
-  background: #005AEE;
+  background: #1A6BF0;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
 }
 
 .c0:disabled {
   box-shadow: none;
-  color: #ffffff;
+  color: #98A7B7;
   background: #dfe4e9;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .c1 + .c3 {
@@ -1462,7 +1462,7 @@ exports[`Button component should render properly with any icon at the end of the
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   color: #ffffff;
   background: #005AEE;
@@ -1488,23 +1488,23 @@ exports[`Button component should render properly with any icon at the end of the
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .c1 * {
   fill: #ffffff;
 }
 
 .c0:hover {
-  background: #005AEE;
+  background: #1A6BF0;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
 }
 
 .c0:disabled {
   box-shadow: none;
-  color: #ffffff;
+  color: #98A7B7;
   background: #dfe4e9;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .c1 + .c3 {
@@ -1567,7 +1567,7 @@ exports[`Button component should wrap children into Text component when renderin
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   color: #ffffff;
   background: #005AEE;
@@ -1593,23 +1593,23 @@ exports[`Button component should wrap children into Text component when renderin
   outline: none;
 }
 
+.c0:disabled {
+  cursor: not-allowed;
+}
+
 .c0 .sc-AykKC * {
   fill: #ffffff;
 }
 
 .c0:hover {
-  background: #005AEE;
+  background: #1A6BF0;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
 }
 
 .c0:disabled {
   box-shadow: none;
-  color: #ffffff;
+  color: #98A7B7;
   background: #dfe4e9;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
 }
 
 .c0 .sc-AykKC + .c1 {

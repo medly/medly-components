@@ -73,7 +73,7 @@ exports[`Modal component should render properly when it is open 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 1rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   background: transparent;
   color: #005AEE;
@@ -99,6 +99,10 @@ exports[`Modal component should render properly when it is open 1`] = `
   outline: none;
 }
 
+.c3:disabled {
+  cursor: not-allowed;
+}
+
 .c3 .c5 * {
   fill: #005AEE;
 }
@@ -113,10 +117,6 @@ exports[`Modal component should render properly when it is open 1`] = `
 
 .c3:disabled {
   color: #b0bcc8;
-}
-
-.c3:disabled {
-  cursor: not-allowed;
 }
 
 .c3 .c5 + .sc-AykKG {

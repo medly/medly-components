@@ -13,7 +13,7 @@ export interface Props extends Omit<HTMLProps<HTMLButtonElement>, 'size'>, WithT
     /** Button design */
     variant?: 'solid' | 'flat' | 'outlined';
     /** Button edges */
-    edges?: 'square' | 'rounded';
+    edges?: 'square' | 'rounded' | 'circle';
     /** Button colors */
     color?: 'default' | 'confirmation' | 'error';
     /** To be used to disable button */

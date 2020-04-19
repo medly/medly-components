@@ -23,9 +23,9 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem);
+  padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
   border-radius: 0.8rem;
-  border: 0.1rem solid;
+  border: 0.2rem solid;
   color: #005AEE;
   border-color: #005AEE;
   display: -webkit-inline-box;
@@ -50,6 +50,10 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   outline: none;
 }
 
+.c1:disabled {
+  cursor: not-allowed;
+}
+
 .c1 .sc-AykKD * {
   fill: #005AEE;
 }
@@ -72,10 +76,6 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
 
 .c1:disabled .sc-AykKD * {
   fill: #b0bcc8;
-}
-
-.c1:disabled {
-  cursor: not-allowed;
 }
 
 .c1 .sc-AykKD + .c2 {
@@ -198,9 +198,9 @@ exports[`Pagination component should render correctly with all the default props
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem);
+  padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
   border-radius: 0.8rem;
-  border: 0.1rem solid;
+  border: 0.2rem solid;
   color: #005AEE;
   border-color: #005AEE;
   display: -webkit-inline-box;
@@ -223,6 +223,10 @@ exports[`Pagination component should render correctly with all the default props
 
 .c1:focus {
   outline: none;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
 }
 
 .c1 .sc-AykKD * {
@@ -249,10 +253,6 @@ exports[`Pagination component should render correctly with all the default props
   fill: #b0bcc8;
 }
 
-.c1:disabled {
-  cursor: not-allowed;
-}
-
 .c1 .sc-AykKD + .c2 {
   margin-left: 0.8rem;
 }
@@ -271,7 +271,7 @@ exports[`Pagination component should render correctly with all the default props
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 0.8rem 2.4rem;
+  padding: 0.8rem 2.4rem 1rem 2.4rem;
   border-radius: 0.8rem;
   color: #ffffff;
   background: #005AEE;
@@ -297,23 +297,23 @@ exports[`Pagination component should render correctly with all the default props
   outline: none;
 }
 
+.c4:disabled {
+  cursor: not-allowed;
+}
+
 .c4 .sc-AykKD * {
   fill: #ffffff;
 }
 
 .c4:hover {
-  background: #005AEE;
+  background: #1A6BF0;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
 }
 
 .c4:disabled {
   box-shadow: none;
-  color: #ffffff;
+  color: #98A7B7;
   background: #dfe4e9;
-}
-
-.c4:disabled {
-  cursor: not-allowed;
 }
 
 .c4 .sc-AykKD + .c2 {
@@ -499,7 +499,7 @@ exports[`Pagination component should render correctly with all the props given 1
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: 0.8rem 2.4rem;
+  padding: 0.8rem 2.4rem 1rem 2.4rem;
   border-radius: 0.8rem;
   color: #ffffff;
   background: #005AEE;
@@ -525,23 +525,23 @@ exports[`Pagination component should render correctly with all the props given 1
   outline: none;
 }
 
+.c1:disabled {
+  cursor: not-allowed;
+}
+
 .c1 .sc-AykKD * {
   fill: #ffffff;
 }
 
 .c1:hover {
-  background: #005AEE;
+  background: #1A6BF0;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
 }
 
 .c1:disabled {
   box-shadow: none;
-  color: #ffffff;
+  color: #98A7B7;
   background: #dfe4e9;
-}
-
-.c1:disabled {
-  cursor: not-allowed;
 }
 
 .c1 .sc-AykKD + .c2 {
@@ -562,9 +562,9 @@ exports[`Pagination component should render correctly with all the props given 1
   text-decoration: none;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem);
+  padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
   border-radius: 0.8rem;
-  border: 0.1rem solid;
+  border: 0.2rem solid;
   color: #005AEE;
   border-color: #005AEE;
   display: -webkit-inline-box;
@@ -589,6 +589,10 @@ exports[`Pagination component should render correctly with all the props given 1
   outline: none;
 }
 
+.c4:disabled {
+  cursor: not-allowed;
+}
+
 .c4 .sc-AykKD * {
   fill: #005AEE;
 }
@@ -611,10 +615,6 @@ exports[`Pagination component should render correctly with all the props given 1
 
 .c4:disabled .sc-AykKD * {
   fill: #b0bcc8;
-}
-
-.c4:disabled {
-  cursor: not-allowed;
 }
 
 .c4 .sc-AykKD + .c2 {
