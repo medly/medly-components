@@ -24,6 +24,6 @@
         "styled-components": "^4.2.0"
     },
     "dependencies": {
-        "@medly-components/theme": "^1.0.0-beta.14"
+        "@medly-components/theme": "1.0.0-beta.14"
     }
 }
