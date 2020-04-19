@@ -9,7 +9,6 @@ const openNavStyle = ({ isActive, bgColor, navItemColors, navItemMinHeight }: Na
     ${isActive
         ? css`
               border-color: ${navItemColors.active.textColor};
-              color: ${navItemColors.active.textColor};
               background-color: ${navItemColors.active.bgColor};
               ${SvgIcon} {
                   * {
@@ -20,9 +19,11 @@ const openNavStyle = ({ isActive, bgColor, navItemColors, navItemMinHeight }: Na
         : css`
               border-color: ${bgColor};
               &:hover {
-                  color: ${navItemColors.hover.textColor};
                   border-color: ${navItemColors.hover.bgColor};
                   background-color: ${navItemColors.hover.bgColor};
+                  ${Text.Style} {
+                      color: ${navItemColors.hover.textColor};
+                  }
                   ${SvgIcon} {
                       * {
                           fill: ${navItemColors.hover.textColor};
@@ -82,6 +83,7 @@ export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ .
         transition: opacity 200ms;
         opacity: ${({ isHovered }) => (isHovered ? 1 : 0)};
         font-weight: ${({ theme }) => theme.font.weights.Medium};
+        color: ${({ isActive, navItemColors }) => (isActive ? navItemColors.active.textColor : navItemColors.default.textColor)};
     }
 
     ${props => (props.isHovered ? openNavStyle(props) : closeNavStyle(props))};

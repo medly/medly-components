@@ -62,6 +62,7 @@ exports[`SideNav should render properly 1`] = `
   transition: opacity 200ms;
   opacity: 0;
   font-weight: 600;
+  color: #005AEE;
 }
 
 .c3 .c4 {
@@ -111,6 +112,7 @@ exports[`SideNav should render properly 1`] = `
   transition: opacity 200ms;
   opacity: 0;
   font-weight: 600;
+  color: #607890;
 }
 
 .c8 .c4 {

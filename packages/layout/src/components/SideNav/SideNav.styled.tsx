@@ -17,5 +17,5 @@ export const Nav = styled('nav')<SideNavStyledProps>`
     background-color: ${({ theme }) => theme.sideNav.bgColor};
     padding-right: ${({ isHovered, theme }) => (isHovered ? theme.spacing.S4 : 0)};
     width: ${({ isHovered, theme }) => (isHovered ? theme.sideNav.openSize : theme.sideNav.closeSize)};
-    box-shadow: ${({ isExpanded, isHovered }) => (!isExpanded && isHovered ? `0.2rem 0 1.6rem rgba(96, 120, 144, 1) ` : 'none')};
+    box-shadow: ${({ isExpanded, isHovered }) => (!isExpanded && isHovered ? `0.2rem 0 1.6rem #B0BCC8` : 'none')};
 `;

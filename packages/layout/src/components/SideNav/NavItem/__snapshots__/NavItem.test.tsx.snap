@@ -21,6 +21,7 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   transition: opacity 200ms;
   opacity: 0;
   font-weight: 600;
+  color: #005AEE;
 }
 
 .c3 .c0 {
@@ -31,6 +32,7 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   transition: opacity 200ms;
   opacity: 0;
   font-weight: 600;
+  color: #607890;
 }
 
 <span
@@ -61,6 +63,7 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   transition: opacity 200ms;
   opacity: 0;
   font-weight: 600;
+  color: #005AEE;
 }
 
 .c3 .c0 {
@@ -71,6 +74,7 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   transition: opacity 200ms;
   opacity: 0;
   font-weight: 600;
+  color: #607890;
 }
 
 .c4 .c0 {
@@ -81,6 +85,7 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   transition: opacity 200ms;
   opacity: 1;
   font-weight: 600;
+  color: #005AEE;
 }
 
 .c5 .c0 {
@@ -91,6 +96,11 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   transition: opacity 200ms;
   opacity: 1;
   font-weight: 600;
+  color: #607890;
+}
+
+.c5:hover .c0 {
+  color: #435465;
 }
 
 <span
@@ -121,6 +131,7 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   transition: opacity 200ms;
   opacity: 0;
   font-weight: 600;
+  color: #005AEE;
 }
 
 .c3 .c0 {
@@ -131,6 +142,7 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   transition: opacity 200ms;
   opacity: 0;
   font-weight: 600;
+  color: #607890;
 }
 
 .c4 .c0 {
@@ -141,6 +153,7 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   transition: opacity 200ms;
   opacity: 1;
   font-weight: 600;
+  color: #005AEE;
 }
 
 .c5 .c0 {
@@ -151,6 +164,11 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   transition: opacity 200ms;
   opacity: 1;
   font-weight: 600;
+  color: #607890;
+}
+
+.c5:hover .c0 {
+  color: #435465;
 }
 
 <span

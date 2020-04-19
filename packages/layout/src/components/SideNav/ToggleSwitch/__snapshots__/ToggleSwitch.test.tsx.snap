@@ -63,12 +63,16 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   transition: opacity 200ms;
   opacity: 1;
   font-weight: 600;
+  color: #607890;
 }
 
 .c1:hover {
-  color: #435465;
   border-color: #eff2f4;
   background-color: #eff2f4;
+}
+
+.c1:hover .c4 {
+  color: #435465;
 }
 
 .c1:hover .c2 * {
@@ -220,12 +224,16 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   transition: opacity 200ms;
   opacity: 1;
   font-weight: 600;
+  color: #607890;
 }
 
 .c1:hover {
-  color: #435465;
   border-color: #eff2f4;
   background-color: #eff2f4;
+}
+
+.c1:hover .c4 {
+  color: #435465;
 }
 
 .c1:hover .c2 * {
@@ -377,12 +385,16 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   transition: opacity 200ms;
   opacity: 1;
   font-weight: 600;
+  color: #607890;
 }
 
 .c1:hover {
-  color: #435465;
   border-color: #eff2f4;
   background-color: #eff2f4;
+}
+
+.c1:hover .c4 {
+  color: #435465;
 }
 
 .c1:hover .c2 * {
