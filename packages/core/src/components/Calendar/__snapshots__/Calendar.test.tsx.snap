@@ -55,6 +55,7 @@ exports[`Calendar Component should render given date 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;

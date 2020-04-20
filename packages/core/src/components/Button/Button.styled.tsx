@@ -121,6 +121,7 @@ const getPaddings = ({ size, variant, edges }: Props) => {
 export const ButtonStyled = styled('button')<Props>`
     border: none;
     user-select: none;
+    font-family: inherit;
     text-decoration: none;
     transition: all 100ms linear;
     padding: ${getPaddings};

@@ -19,6 +19,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -194,6 +195,7 @@ exports[`Pagination component should render correctly with all the default props
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -267,6 +269,7 @@ exports[`Pagination component should render correctly with all the default props
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -495,6 +498,7 @@ exports[`Pagination component should render correctly with all the props given 1
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -558,6 +562,7 @@ exports[`Pagination component should render correctly with all the props given 1
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;

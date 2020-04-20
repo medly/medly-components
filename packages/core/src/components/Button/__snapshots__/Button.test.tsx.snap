@@ -19,6 +19,7 @@ exports[`Button component should render properly with "M" size 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -110,6 +111,7 @@ exports[`Button component should render properly with "S" size 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -201,6 +203,7 @@ exports[`Button component should render properly with "flat" variant and "confir
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -293,6 +296,7 @@ exports[`Button component should render properly with "flat" variant and "defaul
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -385,6 +389,7 @@ exports[`Button component should render properly with "flat" variant and "error"
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -477,6 +482,7 @@ exports[`Button component should render properly with "flat" variant should rend
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -569,6 +575,7 @@ exports[`Button component should render properly with "outlined" variant and "co
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -670,6 +677,7 @@ exports[`Button component should render properly with "outlined" variant and "de
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -771,6 +779,7 @@ exports[`Button component should render properly with "outlined" variant and "er
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -872,6 +881,7 @@ exports[`Button component should render properly with "outlined" variant should 
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -964,6 +974,7 @@ exports[`Button component should render properly with "solid" variant and "confi
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -1055,6 +1066,7 @@ exports[`Button component should render properly with "solid" variant and "defau
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -1146,6 +1158,7 @@ exports[`Button component should render properly with "solid" variant and "error
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -1237,6 +1250,7 @@ exports[`Button component should render properly with "solid" variant should ren
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -1341,6 +1355,7 @@ exports[`Button component should render properly with any icon at the beginning 
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -1458,6 +1473,7 @@ exports[`Button component should render properly with any icon at the end of the
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
@@ -1563,6 +1579,7 @@ exports[`Button component should wrap children into Text component when renderin
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: all 100ms linear;
