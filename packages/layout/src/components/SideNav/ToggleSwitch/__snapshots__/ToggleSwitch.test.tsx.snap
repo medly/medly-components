@@ -52,6 +52,7 @@ exports[`NavItem should call onClick when we click on it 1`] = `
 }
 
 .c1 .c2 {
+  overflow: visible;
   font-size: 2.4rem;
 }
 
@@ -213,6 +214,7 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
 }
 
 .c1 .c2 {
+  overflow: visible;
   font-size: 2.4rem;
 }
 
@@ -374,6 +376,7 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
 }
 
 .c1 .c2 {
+  overflow: visible;
   font-size: 2.4rem;
 }
 

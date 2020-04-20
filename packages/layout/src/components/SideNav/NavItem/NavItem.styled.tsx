@@ -73,6 +73,7 @@ export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ .
     cursor: pointer;
 
     ${SvgIcon} {
+        overflow: visible;
         font-size: ${({ theme, iconSize }) => theme.icon.sizes[iconSize]};
     }
 
