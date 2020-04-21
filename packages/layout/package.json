@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/layout",
-    "version": "1.0.0-beta.26",
+    "version": "1.0.0-beta.27",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
@@ -25,9 +25,9 @@
         "styled-components": "^4.2.0"
     },
     "dependencies": {
-        "@medly-components/core": "1.0.0-beta.25",
-        "@medly-components/icons": "1.0.0-beta.19",
-        "@medly-components/theme": "1.0.0-beta.14",
-        "@medly-components/utils": "1.0.0-beta.16"
+        "@medly-components/core": "1.0.0-beta.26",
+        "@medly-components/icons": "1.0.0-beta.20",
+        "@medly-components/theme": "1.0.0-beta.15",
+        "@medly-components/utils": "1.0.0-beta.17"
     }
 }

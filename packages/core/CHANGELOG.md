@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.26](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.25...@medly-components/core@1.0.0-beta.26) (2020-04-21)
+
+
+### Bug Fixes
+
+* **core:** fix buttton padding issue ([fdbc940](https://github.com/medlypharmacy/medly-components/commit/fdbc9408fa9d79c13a8519bfd9958469645944ba))
+* **core:** fix font-family issue in button component ([4602fd2](https://github.com/medlypharmacy/medly-components/commit/4602fd2e2de77eb9cec514efc37d1c0699ee1064))
+* fix icons color and hover effectt issue ([7457e6b](https://github.com/medlypharmacy/medly-components/commit/7457e6b4babac2835e00ed1e5fca1890fd20b139))
+
+
+### Features
+
+* **core:** redesign button component ([a959410](https://github.com/medlypharmacy/medly-components/commit/a959410e4eab66926c4b5cafafbae6040a758cab))
+* change spacing theme value ([331a542](https://github.com/medlypharmacy/medly-components/commit/331a54289ea7d619f5161124c87d93dccdd6b6e3))
+
+
+
+
+
 # [1.0.0-beta.25](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.24...@medly-components/core@1.0.0-beta.25) (2020-04-11)
 
 

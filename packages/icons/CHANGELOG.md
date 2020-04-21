@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.20](https://github.com/medlypharmacy/medly-components/compare/@medly-components/icons@1.0.0-beta.19...@medly-components/icons@1.0.0-beta.20) (2020-04-21)
+
+
+### Bug Fixes
+
+* fix icons color and hover effectt issue ([7457e6b](https://github.com/medlypharmacy/medly-components/commit/7457e6b4babac2835e00ed1e5fca1890fd20b139))
+* **icons:** handle directories while creating icons ([20a3c54](https://github.com/medlypharmacy/medly-components/commit/20a3c54e8981c38d14fa3827c95b2d3560f6d8d3))
+* **layout:** move burgericon to layout package ([7dab30d](https://github.com/medlypharmacy/medly-components/commit/7dab30dc822bc233f76a38315553b4b3bcfe81a0))
+
+
+### Features
+
+* change spacing theme value ([331a542](https://github.com/medlypharmacy/medly-components/commit/331a54289ea7d619f5161124c87d93dccdd6b6e3))
+* **icons:** add hover effect and change size of the icons ([0e87438](https://github.com/medlypharmacy/medly-components/commit/0e87438198351e25c90cedea31a91de69d0ee8f3))
+* **icons:** add script to export svgs as React component ([f14906c](https://github.com/medlypharmacy/medly-components/commit/f14906c54f81ae8f23c49a0d79fd2c6b0ce29142))
+* **icons:** create icons with the script ([414143d](https://github.com/medlypharmacy/medly-components/commit/414143d21ee0c278f375bdbc189c5b9903daf0b1))
+
+
+
+
+
 # [1.0.0-beta.19](https://github.com/medlypharmacy/medly-components/compare/@medly-components/icons@1.0.0-beta.18...@medly-components/icons@1.0.0-beta.19) (2020-04-11)
 
 **Note:** Version bump only for package @medly-components/icons
