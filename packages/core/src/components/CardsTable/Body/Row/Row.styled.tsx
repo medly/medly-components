@@ -10,7 +10,7 @@ export const Row = styled(Card)<Props>`
     border: ${({ withLightTheme }) => withLightTheme ? 'default' : 'none'};
 
     &:hover {
-        box-shadow: ${({ withLightTheme, theme }) => withLightTheme ? `0px 2px 4px ${theme.colors.grey[400]}` : `0px 4px 8px ${theme.colors.grey[400]}`};
+        box-shadow: ${({ withLightTheme }) => withLightTheme ? '0 0.2rem 0.4rem rgba(176,188,200,0.60)' : '0 0.4rem 0.8rem rgba(176,188,200,0.60)'};
     };
 
     & > * {
@@ -21,5 +21,3 @@ export const Row = styled(Card)<Props>`
         background: ${({ theme, withLightTheme}) => withLightTheme ? `${theme.colors.grey[100]}` : theme.table.rowBackgroundColor};
     };
 `;
-
-

@@ -42,7 +42,7 @@ exports[`Row should render row properly 1`] = `
 }
 
 .c1:hover {
-  box-shadow: 0px 2px 4px #b0bcc8;
+  box-shadow: 0 0.2rem 0.4rem rgba(176,188,200,0.60);
 }
 
 .c1 > * {

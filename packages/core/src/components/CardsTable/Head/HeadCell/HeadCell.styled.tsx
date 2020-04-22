@@ -19,8 +19,9 @@ const getTextStyle = ({ theme }: Props) => {
     `;
 };
 
-export const HeaderStyled = styled(Card)<Props>`
-    padding: 0 10px;
+export const HeadCellStyled = styled(Card.Style)<Props>`
+    padding: 0;
+    margin: 2.0rem 2.5rem;
     ${Text.Style} {
         ${getTextStyle};
     }

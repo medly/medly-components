@@ -1,6 +1,6 @@
 import { styled } from '@medly-components/utils';
 import React from 'react';
-import { ColumnConfig } from './types';
+import { ColumnConfig } from '../types';
 
 interface StatusReport {
     status: string;

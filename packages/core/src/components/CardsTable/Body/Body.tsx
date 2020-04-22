@@ -1,12 +1,12 @@
 import { WithStyle } from '@medly-components/utils';
 import React, { SFC } from "react";
-import * as Style from './CardTableBody.styled';
+import * as Style from './Body.styled';
 import Cell from './Cell';
 import Row from './Row';
 import { Props } from "./types";
 
 
-export const CardTableBody: SFC<Props> & WithStyle= React.memo( props => {
+export const Body: SFC<Props> & WithStyle= React.memo( props => {
     const { data, columns, onRowClick, rowClickDisableKey, uniqueKeyName, withLightTheme} = props;
     
     const handleRowClick = (rowData: any) => {
@@ -43,4 +43,4 @@ export const CardTableBody: SFC<Props> & WithStyle= React.memo( props => {
     )  
 });
 
-CardTableBody.displayName = 'CardTableBody';
+Body.displayName = 'Body';

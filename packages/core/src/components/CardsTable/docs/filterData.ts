@@ -1,4 +1,4 @@
-import { Data, SortOrder } from './types';
+import { Data, SortOrder } from '../types';
 
 // @ts-ignore
 const getNestedValue = (obj: {}, dottedKey: string) => dottedKey.split('.').reduce((acc, curr) => acc[curr], obj);

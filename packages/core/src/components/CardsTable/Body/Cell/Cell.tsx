@@ -1,11 +1,10 @@
-import React, { useCallback, useRef } from 'react';
+import React, { useCallback } from 'react';
 import Text from '../../../Text';
 import { Props } from './types';
 
 
 export const Cell: React.SFC<Props> = React.memo(props => {
-    const childRef = useRef(null),
-        {
+    const {
             data,
             rowId,
             column,
@@ -18,9 +17,7 @@ export const Cell: React.SFC<Props> = React.memo(props => {
                 case 'react-component': {
                     const Component = column.component;
                     return (
-                        <div ref={childRef}>
-                            <Component {...{ data, rowId, disabled: isRowClickDisabled }} />
-                        </div>
+                        <Component {...{ data, rowId, disabled: isRowClickDisabled }} />
                     );
                 }
                 default:

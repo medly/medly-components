@@ -1,9 +1,9 @@
 import { render } from '@test-utils';
 import React from 'react';
-import { CardTableBody } from './CardTableBody'
+import { Body } from './Body'
 import { ColumnConfig } from '../types';
 
-describe('CardTableBody', () => {
+describe('Body', () => {
     it('should render cart table body properly', () => {
 
         const data = [{
@@ -21,7 +21,7 @@ describe('CardTableBody', () => {
 
         const onRowClick = jest.fn();
         
-        const { container } = render(<CardTableBody 
+        const { container } = render(<Body 
             data= {data}
             columns={columns}
             onRowClick={onRowClick}

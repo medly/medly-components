@@ -1,6 +1,6 @@
 import React, { SFC } from 'react';
-import CardTableBody from './CardTableBody';
-import CardTableHeader from './CardTableHeader';
+import Body from './Body';
+import Head from './Head';
 import { Props } from './types';
 
 export const CardsTable: SFC<Props> = React.memo(props => {
@@ -8,13 +8,13 @@ export const CardsTable: SFC<Props> = React.memo(props => {
     const { data, onSort, columns, onRowClick, rowClickDisableKey, uniqueKeyName, ...restProps } = props;   
     return (
         <>
-            <CardTableHeader 
+            <Head 
                 {...{
                     onSort,
                     columns,                        
                 }}
             />
-            <CardTableBody 
+            <Body 
                 {...{
                     data,
                     columns,

@@ -2,9 +2,9 @@ import { CardTheme, defaultTheme } from '@medly-components/theme';
 import { boolean } from '@storybook/addon-knobs';
 import React, { SFC, useState } from 'react';
 import { CardsTable } from '../CardsTable';
-import columns from '../columns';
-import data from '../data';
-import { filterData } from '../filterData';
+import columns from './columns';
+import data from './data';
+import { filterData } from './filterData';
 import { ColumnConfig, SortOrder } from '../types';
 import { DarkBackground } from './GlobalStyle.styled';
 

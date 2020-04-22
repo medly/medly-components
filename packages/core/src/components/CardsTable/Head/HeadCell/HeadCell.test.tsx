@@ -1,12 +1,12 @@
 import { render } from '@test-utils';
 import React from 'react';
-import { Header } from './Header';
+import { HeadCell } from './HeadCell';
 
-describe('Header', () => {
-    it('should render header of cards table properly', () => {
+describe('HeadCell', () => {
+    it('should render head cell of cards table properly', () => {
 
         const onSortChange = jest.fn();
-        const { container } = render(<Header 
+        const { container } = render(<HeadCell
             sortField='RxInfo'
             field='RxInfo'
             onSortChange={onSortChange}

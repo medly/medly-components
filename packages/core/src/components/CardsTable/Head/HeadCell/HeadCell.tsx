@@ -3,11 +3,11 @@ import { WithStyle } from "@medly-components/utils/src";
 import React, { SFC, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Card from "../../../Card";
 import Text from "../../../Text";
-import { HeaderStyled } from "./Header.styled";
+import { HeadCellStyled } from "./HeadCell.styled";
 import { Props } from "./types";
 
 
-export const Header: SFC<Props> & WithStyle = React.memo( props => {
+export const HeadCell: SFC<Props> & WithStyle = React.memo( props => {
 
     const { sortField, field, onSortChange, enableSorting, title } = props;
 
@@ -37,7 +37,7 @@ export const Header: SFC<Props> & WithStyle = React.memo( props => {
     );
     
     return (
-        <HeaderStyled 
+        <HeadCellStyled 
             ref={cellEl} 
             flowDirection="horizontal" 
             variant="flat"
@@ -45,19 +45,19 @@ export const Header: SFC<Props> & WithStyle = React.memo( props => {
             withPadding={false}
             title={title}
         >
-            <Card key={field} variant="flat" alignItems="left">
+            <Card key={field} variant="flat" alignItems="left" withPadding={false}>
                 <Text>
                     {title}
                     {enableSorting && sortIcon}
                 </Text>
             </Card>
 
-        </HeaderStyled>
+        </HeadCellStyled>
     )
  
 
 
 });
-Header.displayName = 'Header';
-Header.Style = HeaderStyled;
+HeadCell.displayName = 'HeadCell';
+HeadCell.Style = HeadCellStyled;
 

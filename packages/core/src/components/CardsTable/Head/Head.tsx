@@ -2,10 +2,10 @@ import React, { SFC, useCallback, useState } from "react";
 import Card from "../../Card";
 import { Props } from "./types";
 import { SortOrder } from "../types";
-import Header from "./Header";
+import Header from "./HeadCell";
 
 
-export const CardTableHeader: SFC<Props> = React.memo( props => {
+export const Head: SFC<Props> = React.memo( props => {
 
     const { onSort, columns } = props;
     const [sortField, setSortField] = useState(''),
@@ -18,7 +18,7 @@ export const CardTableHeader: SFC<Props> = React.memo( props => {
         );
     
     return (
-        <Card flowDirection="horizontal" variant="flat" fullWidth >
+        <Card flowDirection="horizontal" variant="flat" fullWidth withPadding={false}>
             {columns.map((column, index) => {
                 return (
                     <Header 
@@ -37,4 +37,4 @@ export const CardTableHeader: SFC<Props> = React.memo( props => {
 
 });
 
-CardTableHeader.displayName = 'CardTableHeader';
+Head.displayName = 'Head';
