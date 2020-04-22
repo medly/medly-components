@@ -21,7 +21,8 @@ describe('Body', () => {
 
         const onRowClick = jest.fn();
         
-        const { container } = render(<Body 
+        const { container } = render(
+        <Body 
             data= {data}
             columns={columns}
             onRowClick={onRowClick}

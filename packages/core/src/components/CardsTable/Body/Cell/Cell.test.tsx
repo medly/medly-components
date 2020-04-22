@@ -1,8 +1,8 @@
-import { render } from '@test-utils';
 import React from 'react';
 import Text from '../../../Text';
 import { ColumnConfig } from '../../types';
 import { Cell } from './Cell';
+import { render } from '@testing-library/react';
 
 
 describe('Cell', () => {

@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CardsTable should render CardsTable of cards table properly 1`] = `
+.c4 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -159,26 +171,14 @@ exports[`CardsTable should render CardsTable of cards table properly 1`] = `
   padding: 15px 20px;
 }
 
-.c4 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-}
-
 .c7 {
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
-  box-shadow: none;
   box-sizing: border-box;
   border-radius: 0.8rem;
   border: none;
+  box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
 }
 
 .c7:hover {

@@ -35,10 +35,10 @@ exports[`Row should render row properly 1`] = `
 
 .c1 {
   cursor: not-allowed;
-  box-shadow: none;
   box-sizing: border-box;
   border-radius: 0.8rem;
   border: default;
+  box-shadow: none;
 }
 
 .c1:hover {

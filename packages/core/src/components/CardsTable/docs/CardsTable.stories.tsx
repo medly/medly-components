@@ -23,7 +23,6 @@ export const Basic = () => {
         <>
             <DarkBackground />
             <CardsTable 
-                isLoading={boolean('Loading', false)}
                 data={cardsTableData}
                 onSort={handleFilterData}
                 columns={columns}
@@ -43,7 +42,6 @@ export const DisabledRow = () => {
         <>
             <DarkBackground />
             <CardsTable 
-                isLoading={boolean('Loading', false)}
                 data={cardsTableData}
                 onSort={handleFilterData}
                 columns={columns}
@@ -61,7 +59,6 @@ export const MultiLine = () => {
     };
 return (
     <CardsTable 
-        isLoading={boolean('Loading', false)}
         data={cardsTableData}
         onSort={handleFilterData}
         columns={columns}

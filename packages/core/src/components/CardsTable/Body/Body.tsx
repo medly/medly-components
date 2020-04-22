@@ -1,6 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
 import React, { SFC } from "react";
-import * as Style from './Body.styled';
 import Cell from './Cell';
 import Row from './Row';
 import { Props } from "./types";
@@ -26,15 +25,14 @@ export const Body: SFC<Props> & WithStyle= React.memo( props => {
                         disabled={row[rowClickDisableKey]}
                         withLightTheme={withLightTheme}
                         >
-                        { columns.map(column => (
-                            <Style.Column key={`${column.field}-${index}`} variant="flat" flowDirection="vertical" alignItems="left">
-                               <Cell 
-                                    isRowClickDisabled={row[rowClickDisableKey]}
-                                    data={row[column.field]}
-                                    column={column}
-                                    rowId={row[uniqueKeyName]}
-                               />
-                            </Style.Column>
+                        { columns.map((column, columnIndex) => (
+                            <Cell 
+                                key={columnIndex}
+                                isRowClickDisabled={row[rowClickDisableKey]}
+                                data={row[column.field]}
+                                column={column}
+                                rowId={row[uniqueKeyName]}
+                            />
                         )) }
                     </Row>
                 )})

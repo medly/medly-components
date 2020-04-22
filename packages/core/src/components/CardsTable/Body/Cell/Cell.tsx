@@ -1,9 +1,12 @@
 import React, { useCallback } from 'react';
 import Text from '../../../Text';
 import { Props } from './types';
+import * as Style from './Cell.styled';
+import { WithStyle } from '@medly-components/utils/src';
 
 
-export const Cell: React.SFC<Props> = React.memo(props => {
+
+export const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
     const {
             data,
             rowId,
@@ -27,9 +30,9 @@ export const Cell: React.SFC<Props> = React.memo(props => {
 
 
     return (
-        <>
+        <Style.CellContent variant="flat" flowDirection="vertical" alignItems="left" >
             {formattedCell()}
-        </>
+        </Style.CellContent>
     );
 });
 Cell.displayName = 'Cell';
