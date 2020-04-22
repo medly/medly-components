@@ -4,15 +4,12 @@ import { CardsTable } from './CardsTable'
 import { ColumnConfig } from './types';
 
 describe('CardsTable', () => {
-    it('should render CardsTable of cards table properly', () => {
-
-        // const { data, onSort, columns, onRowClick, rowClickDisableKey, uniqueKeyName, ...restProps } = props; 
-        
+    it('should render CardsTable of cards table properly', () => {        
         const onSort = jest.fn(),
             onRowClick = jest.fn(),
             columns: ColumnConfig[] = [
-            { title: 'Patient Info', field: 'patientInfo', formatter: 'text-short', sort: true },
-            { title: 'RxInfo', field: 'rxInfo', formatter: 'group', sort: true }
+            { title: 'Patient Info', field: 'patientInfo', sort: true },
+            { title: 'RxInfo', field: 'rxInfo', sort: true }
         ];
         const data = [{
             id: 1,

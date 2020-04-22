@@ -15,8 +15,8 @@ describe('Body', () => {
             
         }];
         const columns: ColumnConfig[] = [
-            { title: 'Patient Info', field: 'patientInfo', formatter: 'text-short', sort: true },
-            { title: 'RxInfo', field: 'rxInfo', formatter: 'group', sort: true }
+            { title: 'Patient Info', field: 'patientInfo', sort: true },
+            { title: 'RxInfo', field: 'rxInfo', sort: true }
         ];
 
         const onRowClick = jest.fn();

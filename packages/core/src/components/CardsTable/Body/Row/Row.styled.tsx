@@ -18,6 +18,6 @@ export const Row = styled(Card)<Props>`
     };
 
     :nth-child(2n) {
-        background: ${({ theme, withLightTheme}) => withLightTheme ? `${theme.colors.grey[100]}` : theme.table.rowBackgroundColor};
+        background: ${({ theme, withLightTheme}) => withLightTheme ? `${theme.colors.grey[50]}` : theme.table.rowBackgroundColor};
     };
 `;

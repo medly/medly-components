@@ -9,7 +9,6 @@ describe('Cell', () => {
     const columnConfig: ColumnConfig = {
         title: 'Column 1',
         field: 'column1',
-        formatter: 'boolean'
     };
     
     it('should render text properly', () => {

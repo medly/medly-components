@@ -65,9 +65,7 @@ exports[`Cell should render text properly 1`] = `
     <span
       class="c2"
     >
-       
       text
-       
     </span>
   </div>
 </div>

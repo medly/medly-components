@@ -30,10 +30,10 @@ const StyledDiv = styled('div')`
 
 
 const columns: ColumnConfig[] = [
-    { title: 'Patient Info', field: 'patientInfo', formatter: 'react-component', sort: true, component: StatusFormatter  },
-    { title: 'RxInfo', field: 'rxInfo', formatter: 'text-short', sort: true},
-    { title: 'Price', field: 'price', formatter: 'react-component', sort: true, component: StatusFormatter},
-    { title: 'Status', field: 'status', formatter: 'react-component', sort: true, component: StatusFormatter},  
+    { title: 'Patient Info', field: 'patientInfo', sort: true, component: StatusFormatter },
+    { title: 'RxInfo', field: 'rxInfo', sort: true},
+    { title: 'Price', field: 'price', sort: true, component: StatusFormatter},
+    { title: 'Status', field: 'status', sort: true, component: StatusFormatter},  
 ];
 
 export default columns;

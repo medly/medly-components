@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useMemo } from 'react';
 import Text from '../../../Text';
 import { Props } from './types';
 import * as Style from './Cell.styled';
@@ -13,25 +13,16 @@ export const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
             column,
             isRowClickDisabled,
         } = props
-    const formattedCell = useCallback(() => {
-            switch (column.formatter) {
-                case 'boolean':
-                    return <Text> {data} </Text>;
-                case 'react-component': {
-                    const Component = column.component;
-                    return (
-                        <Component {...{ data, rowId, disabled: isRowClickDisabled }} />
-                    );
-                }
-                default:
-                    return <Text>{data}</Text>;
-            }
-        }, [data, rowId, isRowClickDisabled, column]);
+    const FormattedCell = useMemo(() => {
+    const Component = column.component;
+        return Component ? <Component {...{ data, rowId, disabled: isRowClickDisabled }} />
+            : <Text>{data}</Text>
+    }, [data, rowId, isRowClickDisabled, column]);
 
 
     return (
         <Style.CellContent variant="flat" flowDirection="vertical" alignItems="left" >
-            {formattedCell()}
+            {FormattedCell}
         </Style.CellContent>
     );
 });
