@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render header of cards table properly 1`] = `
+.c5 {
+  font-size: 2.4rem;
+  cursor: pointer;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.c5 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  margin: 5px;
+  overflow: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid #dfe4e9;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  border-radius: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  width: calc(100% - 10px);
+}
+
+.c0.c0 * {
+  background-color: transparent;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  margin: 5px;
+  overflow: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 10px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  border-radius: 4px;
+  border: 1px solid #dfe4e9;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+  border-radius: 0;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.c2.c2 * {
+  background-color: transparent;
+}
+
+.c4 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c1 {
+  padding: 0 10px;
+}
+
+.c1 .c3 {
+  color: #435465;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  -webkit-letter-spacing: 0.2rem;
+  -moz-letter-spacing: 0.2rem;
+  -ms-letter-spacing: 0.2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .sc-AykKF {
+  cursor: pointer;
+  margin-right: 1.0rem;
+  padding-left: 1.0rem;
+}
+
+<div>
+  <div
+    class="c0 c1"
+    title="Hello"
+  >
+    <div
+      class="c2"
+    >
+      <span
+        class="c3 c4"
+      >
+        Hello
+        <svg
+          class="c5"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.706 12.586l2.59-2.59a.996.996 0 0 1 1.41 0l2.59 2.59c.63.63.18 1.71-.71 1.71h-5.18c-.89 0-1.33-1.08-.7-1.71z"
+            fill="#000"
+            fill-opacity=".54"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+`;

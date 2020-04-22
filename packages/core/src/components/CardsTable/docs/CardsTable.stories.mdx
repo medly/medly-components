@@ -1,0 +1,65 @@
+import { HTMLProps } from '@medly-components/utils';
+import { CardsTable } from '../CardsTable.tsx';
+import { withKnobs, color, select, boolean } from '@storybook/addon-knobs';
+import { Preview, Story, Meta } from '@storybook/addon-docs/blocks';
+import * as stories from './CardsTable.stories';
+
+<Meta title="Core/CardsTable" component={CardsTable} parameters={{ jest: ['CardsTable.test.tsx'] }}/>
+
+# CardsTable
+
+### Simple card component with two different designs.
+You can play with the props in canvas tab.
+
+
+
+<Preview withToolbar>
+    <Story name="Basic" parameters={{ decorators: [withKnobs] }}>
+        {
+            stories.Basic()
+        }
+    </Story>
+</Preview>
+
+### With row disable feature
+To disable the particular row pass the disabled as true in the data provided to the CardsTable
+<Preview withToolbar>
+    <Story name="DisabledRow" parameters={{ decorators: [withKnobs] }}>
+        {
+            stories.DisabledRow()
+        }
+    </Story>
+</Preview>
+
+### Passing component to a row
+To disable the particular row pass the disabled as true in the data provided to the CardsTable
+<Preview withToolbar>
+    <Story name="MultiLine" parameters={{ decorators: [withKnobs] }}>
+        {
+            stories.MultiLine()
+        }
+    </Story>
+</Preview>
+
+### Props
+<Props of={CardsTable} />
+
+### CardsTable Prop Types
+
+You can use Table Prop types like below to typesafe your column config.
+
+```ts
+import { GetComponentProps } from '@medly-components/utils';
+import { CardsTable } from '@medly-components/core';
+
+type CardsTableProps = GetComponentProps<typeof CardsTable>;
+
+type ColumnConfig = CardsTableProps['columns'];
+```
+#### Column config type
+
+<Props of={stories.ColumnConfigInterface} />
+
+### CardsTableTheme
+
+<Props of={stories.Theme} />
