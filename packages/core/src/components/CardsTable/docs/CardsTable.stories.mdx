@@ -8,10 +8,10 @@ import * as stories from './CardsTable.stories';
 
 # CardsTable
 
-### Simple card component with two different designs.
+Simple card component with two different designs.
 You can play with the props in canvas tab.
 
-
+#### With Grey Background
 
 <Preview withToolbar>
     <Story name="Basic" parameters={{ decorators: [withKnobs] }}>
@@ -21,9 +21,7 @@ You can play with the props in canvas tab.
     </Story>
 </Preview>
 
-
-### Passing component to a row
-To disable the particular row pass the disabled as true in the data provided to the CardsTable
+#### With White Background
 <Preview withToolbar>
     <Story name="MultiLine" parameters={{ decorators: [withKnobs] }}>
         {
@@ -32,10 +30,19 @@ To disable the particular row pass the disabled as true in the data provided to 
     </Story>
 </Preview>
 
-### Props
-<Props of={CardsTable} />
 
-### CardsTable Prop Types
+### Passing component to a row
+If you want to render any cell according to your design you can pass the component in column config like below
+
+```ts
+const columns: ColumnConfig[] = [
+    { title: 'Patient Info', field: 'patientInfo', sort: true, component: StatusFormatter },
+    { title: 'RxInfo', field: 'rxInfo', sort: true},
+    { title: 'Price', field: 'price', sort: true, component: StatusFormatter},
+    { title: 'Status', field: 'status', sort: true, component: StatusFormatter},  
+];
+```
+#### Column Config Prop Types
 
 You can use Table Prop types like below to typesafe your column config.
 
@@ -47,10 +54,3 @@ type CardsTableProps = GetComponentProps<typeof CardsTable>;
 
 type ColumnConfig = CardsTableProps['columns'];
 ```
-#### Column config type
-
-<Props of={stories.ColumnConfigInterface} />
-
-### CardsTableTheme
-
-<Props of={stories.Theme} />
