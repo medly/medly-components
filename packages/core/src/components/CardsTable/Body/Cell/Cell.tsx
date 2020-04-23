@@ -1,8 +1,8 @@
-import React, { useCallback, useMemo } from 'react';
-import Text from '../../../Text';
-import { Props } from './types';
-import * as Style from './Cell.styled';
 import { WithStyle } from '@medly-components/utils/src';
+import React, { useMemo } from 'react';
+import Text from '../../../Text';
+import * as Style from './Cell.styled';
+import { Props } from './types';
 
 
 

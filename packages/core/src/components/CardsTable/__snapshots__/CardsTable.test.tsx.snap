@@ -215,6 +215,9 @@ exports[`CardsTable should render CardsTable of cards table properly 1`] = `
   align-self: stretch;
   margin: 5px;
   overflow: auto;
+  -webkit-flex: true;
+  -ms-flex: true;
+  flex: true;
   box-sizing: border-box;
   background-color: #ffffff;
   -webkit-flex-direction: row;

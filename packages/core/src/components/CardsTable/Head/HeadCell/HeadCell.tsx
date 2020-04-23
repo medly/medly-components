@@ -44,8 +44,9 @@ export const HeadCell: SFC<Props> & WithStyle = React.memo( props => {
             fullWidth 
             withPadding={false}
             title={title}
+            flex
         >
-            <Card key={field} variant="flat" alignItems="left" withPadding={false}>
+            <Card key={field} variant="flat" alignItems="left" withPadding={false} >
                 <Text>
                     {title}
                     {enableSorting && sortIcon}
@@ -60,4 +61,3 @@ export const HeadCell: SFC<Props> & WithStyle = React.memo( props => {
 });
 HeadCell.displayName = 'HeadCell';
 HeadCell.Style = HeadCellStyled;
-

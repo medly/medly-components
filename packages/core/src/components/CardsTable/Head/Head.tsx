@@ -2,7 +2,7 @@ import React, { SFC, useCallback, useState } from "react";
 import Card from "../../Card";
 import { Props } from "./types";
 import { SortOrder } from "../types";
-import Header from "./HeadCell";
+import HeadCell from "./HeadCell";
 
 
 export const Head: SFC<Props> = React.memo( props => {
@@ -21,7 +21,7 @@ export const Head: SFC<Props> = React.memo( props => {
         <Card flowDirection="horizontal" variant="flat" fullWidth withPadding={false}>
             {columns.map((column, index) => {
                 return (
-                    <Header 
+                    <HeadCell 
                         key={index}
                         sortField={sortField}
                         field={column.field}

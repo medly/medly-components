@@ -91,9 +91,7 @@ exports[`Body should render cart table body properly 1`] = `
 }
 
 .c1 {
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-  cursor: grab;
+  cursor: inherit;
   box-sizing: border-box;
   border-radius: 0.8rem;
   border: none;

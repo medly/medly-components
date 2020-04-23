@@ -11,11 +11,20 @@ describe('Cell', () => {
         field: 'column1',
     };
     
-    it('should render text properly', () => {
+    it('should render cell with text properly', () => {
         const { container } = render(
-            <Cell column={columnConfig} data="text" rowId="1">
-                <Text>Dummy</Text>
-            </Cell>
+            <Cell column={columnConfig} data="text" rowId="1" />
+        );
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render cell with component properly', () => {
+        const config: ColumnConfig = {
+            ...columnConfig,
+            component: Text
+        }
+        const { container } = render(
+            <Cell column={config} data="text" rowId="1" />
         );
         expect(container).toMatchSnapshot();
     });
