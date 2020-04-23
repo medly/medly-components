@@ -18,6 +18,7 @@ import spacing from './spacing';
 import stepper from './stepper';
 import table from './table';
 import tabs from './tabs';
+import textField from './textField';
 import toast from './toast';
 import toggle from './toggle';
 
@@ -25,23 +26,24 @@ export const coreDefaultTheme = {
     avatar,
     breadCrumbs,
     button,
+    card,
     checkbox,
     chip,
-    datePicker,
-    label,
-    link,
-    card,
     colors,
-    modal,
-    radio,
+    datePicker,
     font,
     input,
+    label,
+    link,
+    modal,
+    radio,
+    reactDatepicker,
     select,
-    stepper,
     spacing,
-    tabs,
-    toast,
+    stepper,
     table,
-    toggle,
-    reactDatepicker
+    tabs,
+    textField,
+    toast,
+    toggle
 };

@@ -24,6 +24,7 @@ export interface CoreTheme {
     table?: CoreThemes.TableTheme;
     toggle?: CoreThemes.ToggleTheme;
     tabs?: CoreThemes.TabsTheme;
+    textField?: CoreThemes.TextFieldTheme;
     toast?: CoreThemes.ToastTheme;
 }
 

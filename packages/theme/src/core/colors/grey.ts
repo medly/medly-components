@@ -1,6 +1,7 @@
 import { GreyScale } from './types';
 
 const grey: GreyScale = {
+    50: '#F7F8F9',
     100: '#eff2f4',
     200: '#dfe4e9',
     300: '#C7D0D8',
