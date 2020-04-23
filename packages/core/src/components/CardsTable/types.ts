@@ -29,7 +29,7 @@ export interface ColumnConfig {
     /** Column content alignment */
     align?: 'left' | 'right' | 'center';
     /** Column flex */
-    flex?:number
+    flex?:number;
     /** Custom component */
     component?: React.SFC<{ data: any; rowId?: any; disabled?: boolean }>;
 }

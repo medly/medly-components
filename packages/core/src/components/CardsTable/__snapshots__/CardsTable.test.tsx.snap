@@ -189,6 +189,10 @@ exports[`CardsTable should render CardsTable properly 1`] = `
   background-color: inherit;
 }
 
+.c7:nth-child(2n) {
+  background: #ffffff;
+}
+
 .c5 {
   font-size: 1.6rem;
   cursor: pointer;

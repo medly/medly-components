@@ -106,6 +106,10 @@ exports[`Body should render card table body properly 1`] = `
   background-color: inherit;
 }
 
+.c1:nth-child(2n) {
+  background: #ffffff;
+}
+
 <div>
   <div
     class="c0 c1"
