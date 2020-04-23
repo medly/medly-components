@@ -1,4 +1,4 @@
-import { render, fireEvent } from '@test-utils';
+import { render } from '@test-utils';
 import React from 'react';
 import { HeadCell } from './HeadCell';
 

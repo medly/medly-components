@@ -1,5 +1,4 @@
 import { HTMLProps } from '@medly-components/utils';
-import ColumnConfiguration from '../Table/ColumnConfiguration';
 
 export type ItemsPosition = 'top' | 'bottom' | 'left' | 'right' | 'center';
 export type Variants = 'outlined' | 'solid' | 'flat';

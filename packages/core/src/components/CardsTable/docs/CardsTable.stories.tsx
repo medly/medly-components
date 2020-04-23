@@ -1,5 +1,4 @@
 import { CardTheme, defaultTheme } from '@medly-components/theme';
-import { boolean } from '@storybook/addon-knobs';
 import React, { SFC, useState } from 'react';
 import { CardsTable } from '../CardsTable';
 import columns from './columns';
