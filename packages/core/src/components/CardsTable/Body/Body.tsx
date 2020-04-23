@@ -5,7 +5,7 @@ import Row from './Row';
 import { Props } from "./types";
 
 
-export const Body: SFC<Props> & WithStyle= React.memo( props => {
+export const Body: SFC<Props> & WithStyle = React.memo( props => {
     const { data, columns, onRowClick, rowClickDisableKey, uniqueKeyName, withLightTheme} = props;
     
     const handleRowClick = (rowData: any) => {

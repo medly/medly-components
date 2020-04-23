@@ -29,7 +29,7 @@ describe('Body', () => {
         />
     );
 
-    it('should render cart table body properly', () => {
+    it('should render card table body properly', () => {
         const { container } = renderer()
         expect(container).toMatchSnapshot();
     });

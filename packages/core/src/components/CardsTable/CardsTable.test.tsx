@@ -4,7 +4,7 @@ import { CardsTable } from './CardsTable'
 import { ColumnConfig } from './types';
 
 describe('CardsTable', () => {
-    it('should render CardsTable of cards table properly', () => {        
+    it('should render CardsTable properly', () => {        
         const onSort = jest.fn(),
             onRowClick = jest.fn(),
             columns: ColumnConfig[] = [

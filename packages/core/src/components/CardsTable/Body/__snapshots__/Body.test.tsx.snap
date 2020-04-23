@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Body should render cart table body properly 1`] = `
+exports[`Body should render card table body properly 1`] = `
 .c4 {
   margin: 0;
   color: inherit;
@@ -104,10 +104,6 @@ exports[`Body should render cart table body properly 1`] = `
 
 .c1 > * {
   background-color: inherit;
-}
-
-.c1:nth-child(2n) {
-  background: #ffffff;
 }
 
 <div>

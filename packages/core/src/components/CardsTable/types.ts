@@ -53,6 +53,3 @@ export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'
     withLightTheme?: boolean;
 
 }
-export interface StaticProps {
-    ColumnConfiguration?: typeof ColumnConfiguration;
-}

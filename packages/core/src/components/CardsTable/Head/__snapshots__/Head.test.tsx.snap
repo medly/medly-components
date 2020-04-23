@@ -158,10 +158,6 @@ exports[`Head should render Head of cards table properly 1`] = `
   -ms-letter-spacing: 0.2rem;
   letter-spacing: 0.2rem;
   font-weight: 700;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;

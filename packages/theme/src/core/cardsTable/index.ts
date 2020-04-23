@@ -7,7 +7,9 @@ const cardsTable: CardsTableTheme = {
     shadowColor: 'rgba(0,0,0,0.2)',
     borderColor: colors.grey[200],
     solidBgColor: colors.marigoldOrange[400],
-    solidTextColor: colors.white
+    solidTextColor: colors.white,
+    rowDisabledColor: colors.grey[50],
+    rowBackgroundColor: colors.white,
 };
 
 export default cardsTable;

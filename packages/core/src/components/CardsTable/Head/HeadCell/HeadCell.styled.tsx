@@ -14,7 +14,6 @@ const getTextStyle = ({ theme }: Props) => {
         font-size: ${variants.h5.fontSize};
         letter-spacing: ${variants.h5.letterSpacing};
         font-weight: ${weights[variants.h5.fontWeight]};
-        display: flex;
         align-items: center;
     `;
 };

@@ -32,26 +32,6 @@ export const Basic = () => {
     )
 };
 
-
-export const DisabledRow = () => {
-    const [cardsTableData, setCardsTableData] = useState(data);
-    const handleFilterData = (dottedField: string, order: SortOrder) => {
-        filterData(dottedField, order, cardsTableData, setCardsTableData);
-    };
-    return (
-        <>
-            <DarkBackground />
-            <CardsTable 
-                data={cardsTableData}
-                onSort={handleFilterData}
-                columns={columns}
-                rowClickDisableKey={'disabled'}
-                onRowClick={() => alert('hello')}
-            />
-        </>
-    )
-}
-
 export const MultiLine = () => {
     const [cardsTableData, setCardsTableData] = useState(data);
     const handleFilterData = (dottedField: string, order: SortOrder) => {

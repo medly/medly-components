@@ -46,11 +46,7 @@ exports[`Row should render row properly 1`] = `
 }
 
 .c1 > * {
-  background-color: #eff2f4;
-}
-
-.c1:nth-child(2n) {
-  background: #F7F8F9;
+  background-color: undefined;
 }
 
 <div>

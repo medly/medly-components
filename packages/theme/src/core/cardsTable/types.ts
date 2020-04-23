@@ -5,4 +5,6 @@ export interface CardsTableTheme {
     borderColor: string;
     solidBgColor: string;
     solidTextColor: string;
+    rowDisabledColor: string;
+    rowBackgroundColor: string;
 }

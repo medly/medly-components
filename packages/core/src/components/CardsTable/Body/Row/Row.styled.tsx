@@ -14,10 +14,10 @@ export const Row = styled(Card)<Props>`
     };
 
     & > * {
-        background-color: ${({ theme, disabled }) => `${disabled ? theme.table.rowDisabledColor : 'inherit'}`};
+        background-color: ${({ theme, disabled }) => `${disabled ? theme.cardsTable.rowDisabledColor : 'inherit'}`};
     };
 
     :nth-child(2n) {
-        background: ${({ theme, withLightTheme}) => withLightTheme ? `${theme.colors.grey[50]}` : theme.table.rowBackgroundColor};
+        background: ${({ theme, withLightTheme}) => withLightTheme ? theme.cardsTable.rowDisabledColor : theme.cardsTable.rowBackgroundColor};
     };
 `;
