@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardsTable should render CardsTable properly 1`] = `
+exports[`CardTable should render CardTable properly 1`] = `
 .c4 {
   margin: 0;
   color: inherit;

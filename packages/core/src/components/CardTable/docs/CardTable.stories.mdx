@@ -1,12 +1,12 @@
 import { HTMLProps } from '@medly-components/utils';
-import { CardsTable } from '../CardsTable.tsx';
+import { CardTable } from '../CardTable.tsx';
 import { withKnobs, color, select, boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta } from '@storybook/addon-docs/blocks';
-import * as stories from './CardsTable.stories';
+import * as stories from './CardTable.stories';
 
-<Meta title="Core/CardsTable" component={CardsTable} parameters={{ jest: ['CardsTable.test.tsx'] }}/>
+<Meta title="Core/CardTable" component={CardTable} parameters={{ jest: ['CardTable.test.tsx'] }} />
 
-# CardsTable
+# CardTable
 
 Simple card component with two different designs.
 You can play with the props in canvas tab.
@@ -15,42 +15,40 @@ You can play with the props in canvas tab.
 
 <Preview withToolbar>
     <Story name="Basic" parameters={{ decorators: [withKnobs] }}>
-        {
-            stories.Basic()
-        }
+        {stories.Basic()}
     </Story>
 </Preview>
 
 #### With White Background
+
 <Preview withToolbar>
     <Story name="MultiLine" parameters={{ decorators: [withKnobs] }}>
-        {
-            stories.MultiLine()
-        }
+        {stories.MultiLine()}
     </Story>
 </Preview>
 
-
 ### Passing component to a row
+
 If you want to render any cell according to your design you can pass the component in column config like below
 
 ```ts
 const columns: ColumnConfig[] = [
     { title: 'Patient Info', field: 'patientInfo', sort: true, component: StatusFormatter },
-    { title: 'RxInfo', field: 'rxInfo', sort: true},
-    { title: 'Price', field: 'price', sort: true, component: StatusFormatter},
-    { title: 'Status', field: 'status', sort: true, component: StatusFormatter, align: center},  
+    { title: 'RxInfo', field: 'rxInfo', sort: true },
+    { title: 'Price', field: 'price', sort: true, component: StatusFormatter },
+    { title: 'Status', field: 'status', sort: true, component: StatusFormatter, align: center }
 ];
 ```
+
 #### Column Config Prop Types
 
 You can use Table Prop types like below to typesafe your column config.
 
 ```ts
 import { GetComponentProps } from '@medly-components/utils';
-import { CardsTable } from '@medly-components/core';
+import { CardTable } from '@medly-components/core';
 
-type CardsTableProps = GetComponentProps<typeof CardsTable>;
+type CardTableProps = GetComponentProps<typeof CardTable>;
 
-type ColumnConfig = CardsTableProps['columns'];
+type ColumnConfig = CardTableProps['columns'];
 ```

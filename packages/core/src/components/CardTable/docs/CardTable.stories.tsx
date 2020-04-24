@@ -1,6 +1,6 @@
 import { CardTableTheme, defaultTheme } from '@medly-components/theme';
 import React, { SFC, useState } from 'react';
-import { CardsTable } from '../CardsTable';
+import { CardTable } from '../CardTable';
 import { ColumnConfig, SortOrder } from '../types';
 import columns from './columns';
 import data from './data';
@@ -14,26 +14,26 @@ Theme.defaultProps = {
 export const ColumnConfigInterface: SFC<ColumnConfig> = () => null;
 
 export const Basic = () => {
-    const [cardsTableData, setCardsTableData] = useState(data);
+    const [cardTableData, setCardTableData] = useState(data);
     const handleFilterData = (dottedField: string, order: SortOrder) => {
-        filterData(dottedField, order, cardsTableData, setCardsTableData);
+        filterData(dottedField, order, cardTableData, setCardTableData);
     };
     return (
         <>
             <DarkBackground />
-            <CardsTable data={cardsTableData} onSort={handleFilterData} columns={columns} onRowClick={() => null} />
+            <CardTable data={cardTableData} onSort={handleFilterData} columns={columns} onRowClick={() => null} />
         </>
     );
 };
 
 export const MultiLine = () => {
-    const [cardsTableData, setCardsTableData] = useState(data);
+    const [cardTableData, setCardTableData] = useState(data);
     const handleFilterData = (dottedField: string, order: SortOrder) => {
-        filterData(dottedField, order, cardsTableData, setCardsTableData);
+        filterData(dottedField, order, cardTableData, setCardTableData);
     };
     return (
-        <CardsTable
-            data={cardsTableData}
+        <CardTable
+            data={cardTableData}
             onSort={handleFilterData}
             columns={columns}
             rowClickDisableKey={''}
