@@ -28,6 +28,7 @@ export const Head: SFC<Props> = React.memo( props => {
                         onSortChange={handleSortChange}
                         enableSorting={column.sort}
                         title={column.title}
+                        align={column.align}
                     />
                 )
             })}

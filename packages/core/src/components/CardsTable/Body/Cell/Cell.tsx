@@ -16,12 +16,12 @@ export const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
     const FormattedCell = useMemo(() => {
     const Component = column.component;
         return Component ? <Component {...{ data, rowId, disabled: isRowClickDisabled }} />
-            : <Text>{data}</Text>
+            : <Text >{data}</Text>
     }, [data, rowId, isRowClickDisabled, column]);
 
 
     return (
-        <Style.CellContent variant="flat" flowDirection="vertical" alignItems="left" >
+        <Style.CellContent variant="flat" flowDirection="vertical"  alignItems={column.align || 'left'} >
             {FormattedCell}
         </Style.CellContent>
     );

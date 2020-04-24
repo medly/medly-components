@@ -9,7 +9,7 @@ import { Props } from "./types";
 
 export const HeadCell: SFC<Props> & WithStyle = React.memo( props => {
 
-    const { sortField, field, onSortChange, enableSorting, title } = props;
+    const { sortField, field, onSortChange, enableSorting, title, align } = props;
 
     const [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>('none');
 
@@ -44,8 +44,9 @@ export const HeadCell: SFC<Props> & WithStyle = React.memo( props => {
             fullWidth 
             withPadding={false}
             title={title}
+            
         >
-            <Card key={field} variant="flat" alignItems="left" withPadding={false} >
+            <Card key={field} variant="flat" alignItems={align || 'left'} withPadding={false} >
                 <Text>
                     {title}
                     {enableSorting && sortIcon}

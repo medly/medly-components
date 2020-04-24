@@ -31,7 +31,7 @@ export interface ColumnConfig {
     /** Column flex */
     flex?:number;
     /** Custom component */
-    component?: React.SFC<{ data: any; rowId?: any; disabled?: boolean }>;
+    component?: React.SFC<{ data: any; rowId?: any; disabled?: boolean; align?: string;}>;
 }
 export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'> {
     /** Table data */

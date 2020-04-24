@@ -7,4 +7,5 @@ export interface Props extends WithThemeProp{
     onSortChange?: (field: string, order: SortOrder) => void;
     enableSorting?: boolean;
     title: string;
+    align?: 'top' | 'bottom' | 'left' | 'right' | 'center';
 }    
