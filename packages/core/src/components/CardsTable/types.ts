@@ -1,37 +1,24 @@
 import { HTMLProps } from '@medly-components/utils';
 
-export type ItemsPosition = 'top' | 'bottom' | 'left' | 'right' | 'center';
-export type Variants = 'outlined' | 'solid' | 'flat';
-export type FlowDirection = 'vertical' | 'horizontal';
 export type SortOrder = 'asc' | 'desc';
 
 export interface Data {
     [key: string]: any;
 }
 
-export interface ColumnsWidth {
-    numeric: string;
-    group: string;
-    checkbox: string;
-    boolean: string;
-    'text-short': string;
-    'text-long': string;
-    'react-component': string;
-}
-
 export interface ColumnConfig {
-    /** To show sort icons */
+    /** Set it true to show sort icons */
     sort?: boolean;
-    /** To hide the column */
+    /** Title of the column */
     title: string;
     /** Field name in the data */
     field: string;
     /** Column content alignment */
     align?: 'left' | 'right' | 'center';
     /** Column flex */
-    flex?:number;
+    flex?: number;
     /** Custom component */
-    component?: React.SFC<{ data: any; rowId?: any; disabled?: boolean; align?: string;}>;
+    component?: React.SFC<{ data: any; rowId?: any; disabled?: boolean }>;
 }
 export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'> {
     /** Table data */
@@ -40,8 +27,6 @@ export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'
     uniqueKeyName?: string;
     /** Column configuration */
     columns: ColumnConfig[];
-    /** Shows placeholder shimmer */
-    isLoading?: boolean;
     /** Function to be called on click of sort icon */
     onSort?: (field: string, order: SortOrder) => void;
     /** Function to be called on row click */
@@ -50,5 +35,4 @@ export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'
     rowClickDisableKey?: string;
     /** Key name to select background color */
     withLightTheme?: boolean;
-
 }

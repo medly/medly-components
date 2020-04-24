@@ -169,7 +169,7 @@ exports[`TextField should render properly with default props 1`] = `
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
-  background-color: #eff2f4;
+  background-color: #F7F8F9;
   border-color: #C7D0D8;
 }
 
@@ -399,7 +399,7 @@ exports[`TextField with filled variant should render default state properly 1`] 
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
-  background-color: #eff2f4;
+  background-color: #F7F8F9;
   border-color: #C7D0D8;
 }
 
@@ -638,7 +638,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
-  background-color: #eff2f4;
+  background-color: #F7F8F9;
   border-color: #C7D0D8;
 }
 
@@ -903,7 +903,7 @@ exports[`TextField with filled variant should render focus state properly  1`] =
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
-  background-color: #eff2f4;
+  background-color: #F7F8F9;
   border-color: #C7D0D8;
 }
 
@@ -1183,7 +1183,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
-  background-color: #eff2f4;
+  background-color: #F7F8F9;
   border-color: #C7D0D8;
 }
 
@@ -1451,7 +1451,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
-  background-color: #eff2f4;
+  background-color: #F7F8F9;
   border-color: #C7D0D8;
 }
 

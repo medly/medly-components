@@ -5,6 +5,6 @@ export interface Props {
     columns: ColumnConfig[];
     onRowClick?: (rowData: object) => void;
     rowClickDisableKey?: string;
-    uniqueKeyName: string;
+    uniqueKeyName?: string;
     withLightTheme?: boolean;
 }

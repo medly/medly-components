@@ -1,28 +1,28 @@
-import React, { SFC, useCallback, useState } from "react";
-import Card from "../../Card";
-import { Props } from "./types";
-import { SortOrder } from "../types";
-import HeadCell from "./HeadCell";
+import React, { SFC, useCallback, useState } from 'react';
+import Card from '../../Card';
+import { SortOrder } from '../types';
+import HeadCell from './HeadCell';
+import { Props } from './types';
 
+export const Head: SFC<Props> = React.memo(({ onSort, columns }) => {
+    const [sortField, setSortField] = useState('');
 
-export const Head: SFC<Props> = React.memo( props => {
+    const handleSortChange = useCallback(
+        (field: string, order: SortOrder) => {
+            setSortField(field);
+            onSort(field, order);
+        },
+        [onSort]
+    );
 
-    const { onSort, columns } = props;
-    const [sortField, setSortField] = useState(''),
-        handleSortChange = useCallback(
-            (field: string, order: SortOrder) => {
-                setSortField(field);
-                onSort(field, order);
-            },
-            [onSort]
-        );
-    
     return (
+        // TODO: Change Card to TH
         <Card flowDirection="horizontal" variant="flat" fullWidth withPadding={false}>
-            {columns.map((column, index) => {
+            {columns.map(column => {
                 return (
-                    <HeadCell 
-                        key={index}
+                    // TODO: pass column config directly
+                    <HeadCell
+                        key={column.field}
                         sortField={sortField}
                         field={column.field}
                         onSortChange={handleSortChange}
@@ -30,12 +30,9 @@ export const Head: SFC<Props> = React.memo( props => {
                         title={column.title}
                         align={column.align}
                     />
-                )
+                );
             })}
         </Card>
-    )   
-
-
+    );
 });
-
 Head.displayName = 'Head';

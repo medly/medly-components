@@ -3,42 +3,15 @@ import Body from './Body';
 import Head from './Head';
 import { Props } from './types';
 
-export const CardsTable: SFC<Props> = React.memo(props => {
-    
-    const { data, onSort, columns, onRowClick, rowClickDisableKey, uniqueKeyName, ...restProps } = props;   
-    return (
-        <>
-            <Head 
-                {...{
-                    onSort,
-                    columns,                        
-                }}
-            />
-            <Body 
-                {...{
-                    data,
-                    columns,
-                    onRowClick,
-                    rowClickDisableKey,
-                    uniqueKeyName,
-                    ...restProps
-                }}
-            />
-        </>
-    );
-})
-
-
-CardsTable.defaultProps = {
-    data: [],
-    rowClickDisableKey: '',
-    uniqueKeyName: 'id',
-    withLightTheme: false
-};
+export const CardsTable: SFC<Props> = React.memo(({ onSort, columns, ...restProps }) => (
+    // TODO: Change Card to Table
+    <>
+        <Head onSort={onSort} columns={columns} />
+        <Body {...restProps} columns={columns} />
+    </>
+));
 
 CardsTable.displayName = 'CardsTable';
-
-
-
-
-
+CardsTable.defaultProps = {
+    withLightTheme: false
+};
