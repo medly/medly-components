@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Row should render row properly 1`] = `
+exports[`Row should render properly with dark theme 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9,7 +9,53 @@ exports[`Row should render row properly 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  cursor: inherit;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 1.6rem 0;
+  border-radius: 0.8rem;
+  margin-bottom: 0.8rem;
+  background-color: white;
+  border: 0.1rem solid #ffffff;
+  box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
+}
+
+.c0:hover {
+  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
+}
+
+.c0:nth-child(odd) {
+  background: #ffffff;
+}
+
+.c0:nth-child(even) {
+  background: #ffffff;
+}
+
+<div>
+  <table>
+    <tbody>
+      <tr
+        class="c0"
+      >
+        <td>
+          Demo
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Row should render properly with light theme 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  cursor: pointer;
   box-sizing: border-box;
   padding: 1.6rem 0;
   border-radius: 0.8rem;
@@ -32,14 +78,16 @@ exports[`Row should render row properly 1`] = `
 }
 
 <div>
-  <tbody>
-    <tr
-      class="c0"
-    >
-      <td>
-        Demo
-      </td>
-    </tr>
-  </tbody>
+  <table>
+    <tbody>
+      <tr
+        class="c0"
+      >
+        <td>
+          Demo
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 `;

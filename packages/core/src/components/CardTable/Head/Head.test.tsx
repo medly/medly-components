@@ -3,33 +3,33 @@ import React from 'react';
 import { ColumnConfig } from '../types';
 import { Head } from './Head';
 
-describe('Head', () => {
-    const columns: ColumnConfig[] = [
+const patientColumns: ColumnConfig[] = [
         { title: 'Patient Info', field: 'patientInfo', sort: true },
         { title: 'RxInfo', field: 'rxInfo', sort: true }
-    ];
-
-    it('should render Head of cards table properly', () => {
-        const onSort = jest.fn();
-
-        const { container } = render(
+    ],
+    renderer = ({ withWhiteBackground = false, onSort = jest.fn(), columns = patientColumns }) =>
+        render(
             <table>
-                <Head onSort={onSort} columns={columns} withWhiteBackground />
+                <Head onSort={onSort} columns={columns} withWhiteBackground={withWhiteBackground} />
             </table>
         );
+
+describe('Card Table Head', () => {
+    it('should render properly with dark background', () => {
+        const { container } = renderer({ withWhiteBackground: false });
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly with light background', () => {
+        const { container } = renderer({ withWhiteBackground: true });
         expect(container).toMatchSnapshot();
     });
 
     it('should call onSort when clicked on sorting icon', () => {
-        const mockOnSortChange = jest.fn();
-        const { container } = render(
-            <table>
-                <Head onSort={mockOnSortChange} columns={columns} withWhiteBackground />
-            </table>
-        );
+        const mockOnSortChange = jest.fn(),
+            { container } = renderer({ onSort: mockOnSortChange });
 
         fireEvent.click(container.querySelectorAll('svg')[0]);
-
-        expect(mockOnSortChange).toHaveBeenCalled();
+        expect(mockOnSortChange).toHaveBeenCalledWith('patientInfo', 'asc');
     });
 });
