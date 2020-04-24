@@ -5,16 +5,18 @@ import * as Style from './Cell.styled';
 import { Props } from './types';
 
 export const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
-    const { data, rowId, column, isRowClickDisabled } = props;
-    const FormattedCell = useMemo(() => {
-        const Component = column.component;
-        return Component ? <Component {...{ data, rowId, disabled: isRowClickDisabled }} /> : <Text>{data}</Text>;
-    }, [data, rowId, isRowClickDisabled, column]);
+    const { data, rowId, column, isRowClickDisabled } = props,
+        { component: Component, align, flex } = column;
+
+    const FormattedCell = useMemo(
+        () => (Component ? <Component {...{ data, rowId, disabled: isRowClickDisabled }} /> : <Text>{data}</Text>),
+        [data, rowId, isRowClickDisabled, Component]
+    );
 
     return (
-        <Style.CellContent variant="flat" flowDirection="vertical" alignItems={column.align || 'left'}>
+        <Style.Cell flex={flex} align={align}>
             {FormattedCell}
-        </Style.CellContent>
+        </Style.Cell>
     );
 });
 Cell.displayName = 'Cell';

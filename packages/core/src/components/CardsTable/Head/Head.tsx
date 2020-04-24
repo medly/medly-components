@@ -1,6 +1,6 @@
 import React, { SFC, useCallback, useState } from 'react';
-import Card from '../../Card';
 import { SortOrder } from '../types';
+import * as Styled from './Head.styled';
 import HeadCell from './HeadCell';
 import { Props } from './types';
 
@@ -16,23 +16,13 @@ export const Head: SFC<Props> = React.memo(({ onSort, columns }) => {
     );
 
     return (
-        // TODO: Change Card to TH
-        <Card flowDirection="horizontal" variant="flat" fullWidth withPadding={false}>
-            {columns.map(column => {
-                return (
-                    // TODO: pass column config directly
-                    <HeadCell
-                        key={column.field}
-                        sortField={sortField}
-                        field={column.field}
-                        onSortChange={handleSortChange}
-                        enableSorting={column.sort}
-                        title={column.title}
-                        align={column.align}
-                    />
-                );
-            })}
-        </Card>
+        <thead>
+            <Styled.HeadRow>
+                {columns.map(column => (
+                    <HeadCell key={column.field} sortField={sortField} onSortChange={handleSortChange} column={column} />
+                ))}
+            </Styled.HeadRow>
+        </thead>
     );
 });
 Head.displayName = 'Head';

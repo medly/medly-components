@@ -1,34 +1,24 @@
 import { SvgIcon } from '@medly-components/icons';
-import { css, styled } from '@medly-components/utils';
-import Card from '../../../Card';
+import { styled } from '@medly-components/utils';
 import Text from '../../../Text';
-import { Props } from './types';
+import { StyledProps } from './types';
 
-
-const getTextStyle = ({ theme }: Props) => {
-    const {variants, defaults, weights} = theme.font
-
-    return css`
-        color: ${defaults.color};
-        text-transform: uppercase;
-        font-size: ${variants.h5.fontSize};
-        letter-spacing: ${variants.h5.letterSpacing};
-        font-weight: ${weights[variants.h5.fontWeight]};
-        align-items: center;
-        display: flex;
-    `;
-};
-
-export const HeadCellStyled = styled(Card.Style)<Props>`
+export const HeadCell = styled('th')<StyledProps>`
+    flex: ${({ flex }) => flex};
     padding: 0;
-    margin: 2.0rem 2.5rem;
+    margin: 2rem 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: ${({ align }) => (align === 'left' ? 'flex-start' : align === 'right' ? 'flex-end' : 'center')};
+
     ${Text.Style} {
-        ${getTextStyle};
+        display: inline;
     }
 
     ${SvgIcon} {
         cursor: pointer;
-        margin-right: 1.0rem;
-        padding-left: 1.0rem;
+        padding-left: 1rem;
     }
 `;
+HeadCell.defaultProps = { flex: 1, align: 'left' };

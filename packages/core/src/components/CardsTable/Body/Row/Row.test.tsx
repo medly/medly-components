@@ -4,7 +4,13 @@ import { Row } from './Row.styled';
 
 describe('Row', () => {
     it('should render row properly', () => {
-        const { container } = render(<Row disabled={true} withLightTheme={true} >Dummy</Row>);
+        const { container } = render(
+            <tbody>
+                <Row disabled={true} withLightTheme={true}>
+                    <td>Demo</td>
+                </Row>
+            </tbody>
+        );
         expect(container).toMatchSnapshot();
     });
 });

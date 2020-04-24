@@ -5,15 +5,11 @@ import { HeadCell } from './HeadCell';
 describe('HeadCell', () => {
     const onSortChange = jest.fn();
     it('should render head cell of cards table properly', () => {
-
-        const { container } = render(<HeadCell
-            sortField='RxInfo'
-            field='RxInfo'
-            onSortChange={onSortChange}
-            enableSorting={true}
-            title='Hello'
-
-         />);
+        const { container } = render(
+            <table>
+                <HeadCell sortField="RxInfo" onSortChange={onSortChange} column={{ title: 'Demo', field: 'demo' }} />
+            </table>
+        );
         expect(container).toMatchSnapshot();
     });
 });

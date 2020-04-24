@@ -1,7 +1,7 @@
-import { render, fireEvent } from '@test-utils';
+import { fireEvent, render } from '@test-utils';
 import React from 'react';
-import { Head } from './Head'
 import { ColumnConfig } from '../types';
+import { Head } from './Head';
 
 describe('Head', () => {
     const columns: ColumnConfig[] = [
@@ -11,23 +11,25 @@ describe('Head', () => {
 
     it('should render Head of cards table properly', () => {
         const onSort = jest.fn();
-        
-        const { container } = render(<Head 
-            onSort={onSort}
-            columns={columns}
 
-         />);
+        const { container } = render(
+            <table>
+                <Head onSort={onSort} columns={columns} />
+            </table>
+        );
         expect(container).toMatchSnapshot();
     });
 
     it('should call onSort when clicked on sorting icon', () => {
         const mockOnSortChange = jest.fn();
         const { container } = render(
-            <Head onSort={mockOnSortChange} columns={columns} />
+            <table>
+                <Head onSort={mockOnSortChange} columns={columns} />
+            </table>
         );
-        
+
         fireEvent.click(container.querySelectorAll('svg')[0]);
-        
+
         expect(mockOnSortChange).toHaveBeenCalled();
     });
 });

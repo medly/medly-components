@@ -1,11 +1,13 @@
-import { SortOrder } from '../../types';
 import { WithThemeProp } from '@medly-components/utils/src';
+import { ColumnConfig, SortOrder } from '../../types';
 
-export interface Props extends WithThemeProp{
+export interface Props extends WithThemeProp {
+    column: ColumnConfig;
     sortField?: string;
-    field?: string;
     onSortChange?: (field: string, order: SortOrder) => void;
-    enableSorting?: boolean;
-    title: string;
-    align?: 'top' | 'bottom' | 'left' | 'right' | 'center';
-}    
+}
+
+export interface StyledProps {
+    flex: number;
+    align: 'left' | 'center' | 'right';
+}

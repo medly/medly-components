@@ -1,36 +1,32 @@
-import { render, fireEvent } from '@test-utils';
+import { fireEvent, render } from '@test-utils';
 import React from 'react';
-import { Body } from './Body'
 import { ColumnConfig } from '../types';
+import { Body } from './Body';
 
 describe('Body', () => {
-
-    const data = [{
-        id: 1,
-        patientInfo: 'Oli Bob',
-        rxInfo: 'Metaformin',
-        price: '535.76',
-        status: 'Pending'
-        
-    }];
+    const data = [
+        {
+            id: 1,
+            patientInfo: 'Oli Bob',
+            rxInfo: 'Metaformin',
+            price: '535.76',
+            status: 'Pending'
+        }
+    ];
     const columns: ColumnConfig[] = [
         { title: 'Patient Info', field: 'patientInfo', sort: true },
         { title: 'RxInfo', field: 'rxInfo', sort: true }
     ];
 
-    const renderer = (onRowClick?: any) => render(
-        <Body 
-            data= {data}
-            columns={columns}
-            onRowClick={onRowClick}
-            rowClickDisableKey="disable"
-            uniqueKeyName="124"
-
-        />
-    );
+    const renderer = (onRowClick?: any) =>
+        render(
+            <table>
+                <Body data={data} columns={columns} onRowClick={onRowClick} rowClickDisableKey="disable" uniqueKeyName="124" />
+            </table>
+        );
 
     it('should render card table body properly', () => {
-        const { container } = renderer()
+        const { container } = renderer();
         expect(container).toMatchSnapshot();
     });
 
