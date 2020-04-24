@@ -32,7 +32,7 @@ export const HeadCell: SFC<Props> & WithStyle = React.memo(({ sortField, onSortC
     );
 
     return (
-        <Styled.HeadCell flex={flex} align={align} withWhiteBackground={withWhiteBackground}>
+        <Styled.HeadCell flex={flex} align={align} withWhiteBackground={withWhiteBackground} isActive={sortField === field}>
             <Text textVariant="h5">{title}</Text>
             {isSortEnabled && sortIcon}
         </Styled.HeadCell>

@@ -13,7 +13,7 @@ const renderer = ({ withWhiteBackground = false, onClick = jest.fn(), isRowClick
         </table>
     );
 
-describe('Row', () => {
+describe('CardTable Row', () => {
     it('should render properly with dark theme', () => {
         const { container } = renderer({ withWhiteBackground: false });
         expect(container).toMatchSnapshot();

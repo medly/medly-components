@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Row should render properly with dark theme 1`] = `
+exports[`CardTable Row should render properly with dark theme 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11,7 +11,6 @@ exports[`Row should render properly with dark theme 1`] = `
   flex-direction: row;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 1.6rem 0;
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
   background-color: white;
@@ -46,7 +45,7 @@ exports[`Row should render properly with dark theme 1`] = `
 </div>
 `;
 
-exports[`Row should render properly with light theme 1`] = `
+exports[`CardTable Row should render properly with light theme 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -57,7 +56,6 @@ exports[`Row should render properly with light theme 1`] = `
   flex-direction: row;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 1.6rem 0;
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
   background-color: white;

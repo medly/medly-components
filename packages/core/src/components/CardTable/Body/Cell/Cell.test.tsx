@@ -15,7 +15,7 @@ const renderer = (columnConfig: ColumnConfig) =>
         </table>
     );
 
-describe('Cell', () => {
+describe('CardTable Cell', () => {
     it('should render cell with text properly', () => {
         const { container } = renderer({
             title: 'Column 1',

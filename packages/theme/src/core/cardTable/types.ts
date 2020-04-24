@@ -1,7 +1,9 @@
 export interface CardTableTheme {
     /** Theme for table with light background */
     lightBackground: {
-        headerTextColor: string;
+        headerColor: string;
+        headerActiveColor: string;
+        headerHoverColor: string;
         evenRowBgColor: string;
         oddRowBgColor: string;
         borderColor: string;
@@ -10,7 +12,9 @@ export interface CardTableTheme {
     };
     /** Theme for table with dark background */
     darkBackground: {
-        headerTextColor: string;
+        headerColor: string;
+        headerActiveColor: string;
+        headerHoverColor: string;
         evenRowBgColor: string;
         oddRowBgColor: string;
         borderColor: string;

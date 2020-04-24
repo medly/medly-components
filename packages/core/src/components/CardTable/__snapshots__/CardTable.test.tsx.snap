@@ -30,7 +30,7 @@ exports[`CardTable should render properly with grey background 1`] = `
   -ms-flex: 1;
   flex: 1;
   padding: 0;
-  margin: 0 2.4rem;
+  padding: 1.5rem 2.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -58,7 +58,6 @@ exports[`CardTable should render properly with grey background 1`] = `
   flex-direction: row;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 1.6rem 0;
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
   background-color: white;
@@ -91,7 +90,6 @@ exports[`CardTable should render properly with grey background 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   background-color: transparent;
-  margin: 2.4rem 0;
 }
 
 .c5 {
@@ -111,7 +109,7 @@ exports[`CardTable should render properly with grey background 1`] = `
   -ms-flex: 1;
   flex: 1;
   padding: 0;
-  margin: 0 2.4rem;
+  padding: 2.4rem 2.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -123,24 +121,33 @@ exports[`CardTable should render properly with grey background 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
+.c2::after {
+  content: '';
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  height: 0.2rem;
+  border-radius: 0.2rem 0.2rem 0 0;
+}
+
 .c2 .c3 {
   display: inline;
-  color: #435465;
+  cursor: default;
 }
 
 .c2 .sc-AykKI {
   cursor: pointer;
   padding-left: 1rem;
-}
-
-.c2 .sc-AykKI * {
-  fill: #435465;
 }
 
 <div>
@@ -255,7 +262,7 @@ exports[`CardTable should render properly with white background 1`] = `
   -ms-flex: 1;
   flex: 1;
   padding: 0;
-  margin: 0 2.4rem;
+  padding: 1.5rem 2.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -283,7 +290,6 @@ exports[`CardTable should render properly with white background 1`] = `
   flex-direction: row;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 1.6rem 0;
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
   background-color: white;
@@ -316,7 +322,6 @@ exports[`CardTable should render properly with white background 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   background-color: transparent;
-  margin: 2.4rem 0;
 }
 
 .c5 {
@@ -336,7 +341,7 @@ exports[`CardTable should render properly with white background 1`] = `
   -ms-flex: 1;
   flex: 1;
   padding: 0;
-  margin: 0 2.4rem;
+  padding: 2.4rem 2.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -348,24 +353,33 @@ exports[`CardTable should render properly with white background 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
+.c2::after {
+  content: '';
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  height: 0.2rem;
+  border-radius: 0.2rem 0.2rem 0 0;
+}
+
 .c2 .c3 {
   display: inline;
-  color: #607890;
+  cursor: default;
 }
 
 .c2 .sc-AykKI {
   cursor: pointer;
   padding-left: 1rem;
-}
-
-.c2 .sc-AykKI * {
-  fill: #607890;
 }
 
 <div>

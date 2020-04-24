@@ -31,6 +31,12 @@ describe('Card Table HeadCell', () => {
         expect(container).toMatchSnapshot();
     });
 
+    it('should render properly with hover state', () => {
+        const { container, getByText } = renderer({ withWhiteBackground: true });
+        fireEvent.mouseEnter(getByText('Demo'));
+        expect(container).toMatchSnapshot();
+    });
+
     it('should call onSortChange with asc order when clicked on sorting icon', () => {
         const mockOnSortChange = jest.fn(),
             { container } = renderer({ onSortChange: mockOnSortChange, sortField: 'demo' });

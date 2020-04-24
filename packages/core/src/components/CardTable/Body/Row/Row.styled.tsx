@@ -9,7 +9,6 @@ export const Row = styled('tr').attrs(({ withWhiteBackground, theme: { cardTable
     flex-direction: row;
     cursor: ${({ onClick, isRowClickDisabled }) => (onClick && !isRowClickDisabled ? 'pointer' : 'inherit')};
     box-sizing: border-box;
-    padding: 1.6rem 0;
     border-radius: 0.8rem;
     margin-bottom: 0.8rem;
     background-color: white;

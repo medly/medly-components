@@ -3,7 +3,7 @@ import React from 'react';
 import { ColumnConfig } from '../types';
 import { Body } from './Body';
 
-describe('Body', () => {
+describe('CardTable Body', () => {
     const data = [
             {
                 id: 1,

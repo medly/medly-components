@@ -4,7 +4,20 @@ import { withKnobs, color, select, boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { ColumnConfigInterface, WithGreyBackground, WithWhiteBackground, Theme } from './CardTable.stories';
 
-<Meta title="Core/CardTable" component={CardTable} parameters={{ jest: ['CardTable.test.tsx'] }} />
+<Meta
+    title="Core/CardTable"
+    component={CardTable}
+    parameters={{
+        jest: [
+            'CardTable.test.tsx',
+            'CardTable/Head/Head.test.tsx',
+            'CardTable/Head/HeadCell/HeadCell.test.tsx',
+            'CardTable/Body/Body.test.tsx',
+            'CardTable/Body/Row/Row.test.tsx',
+            'CardTable/Body/Cell/Cell.test.tsx'
+        ]
+    }}
+/>
 
 # CardTable
 

@@ -1,8 +1,11 @@
 import colors from '../colors';
+import { CardTableTheme } from './types';
 
-const cardTable = {
+const cardTable: CardTableTheme = {
     lightBackground: {
-        headerTextColor: colors.grey[600],
+        headerColor: colors.grey[600],
+        headerActiveColor: colors.communityBlue[500],
+        headerHoverColor: colors.communityBlue[400],
         evenRowBgColor: colors.white,
         oddRowBgColor: colors.grey[50],
         borderColor: colors.grey[200],
@@ -10,7 +13,9 @@ const cardTable = {
         hoverBoxShadow: '0px 0.2rem 0.4rem rgba(176, 188, 200, 0.6)'
     },
     darkBackground: {
-        headerTextColor: colors.grey[800],
+        headerColor: colors.grey[800],
+        headerActiveColor: colors.communityBlue[500],
+        headerHoverColor: colors.communityBlue[400],
         evenRowBgColor: colors.white,
         oddRowBgColor: colors.white,
         borderColor: colors.white,

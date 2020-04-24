@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Body should render card table body properly 1`] = `
+exports[`CardTable Body should render card table body properly 1`] = `
 .c2 {
   margin: 0;
   color: inherit;
@@ -18,7 +18,7 @@ exports[`Body should render card table body properly 1`] = `
   -ms-flex: 1;
   flex: 1;
   padding: 0;
-  margin: 0 2.4rem;
+  padding: 1.5rem 2.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -46,7 +46,6 @@ exports[`Body should render card table body properly 1`] = `
   flex-direction: row;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 1.6rem 0;
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
   background-color: white;

@@ -9,6 +9,7 @@ export interface Props extends WithThemeProp {
 }
 
 export interface StyledProps {
+    isActive: boolean;
     withWhiteBackground: boolean;
     flex: number;
     align: 'left' | 'center' | 'right';

@@ -8,22 +8,53 @@ export const HeadCell = styled('th').attrs(({ withWhiteBackground }: StyledProps
 }))<StyledProps & { bgTheme: 'lightBackground' | 'darkBackground' }>`
     flex: ${({ flex }) => flex};
     padding: 0;
-    margin: 0 2.4rem;
+    padding: 2.4rem 2.4rem;
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
     justify-content: ${({ align }) => (align === 'left' ? 'flex-start' : align === 'right' ? 'flex-end' : 'center')};
+
+    &::after {
+        content: '';
+        width: 100%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: ${({ theme, bgTheme, isActive }) => (isActive ? theme.cardTable[bgTheme].headerActiveColor : 'transparent')};
+        height: 0.2rem;
+        border-radius: 0.2rem 0.2rem 0 0;
+    }
+
+    &:hover {
+        ${Text.Style} {
+            color: ${({ theme, bgTheme }) => theme.cardTable[bgTheme].headerHoverColor};
+        }
+        &::after {
+            background-color: ${({ theme, bgTheme }) => theme.cardTable[bgTheme].headerHoverColor};
+        }
+
+        ${SvgIcon} {
+            * {
+                fill: ${({ theme, bgTheme }) => theme.cardTable[bgTheme].headerHoverColor};
+            }
+        }
+    }
 
     ${Text.Style} {
         display: inline;
-        color: ${({ theme, bgTheme }) => theme.cardTable[bgTheme].headerTextColor};
+        cursor: default;
+        color: ${({ theme, bgTheme, isActive }) =>
+            isActive ? theme.cardTable[bgTheme].headerActiveColor : theme.cardTable[bgTheme].headerColor};
     }
 
     ${SvgIcon} {
         cursor: pointer;
         padding-left: 1rem;
         * {
-            fill: ${({ theme, bgTheme }) => theme.cardTable[bgTheme].headerTextColor};
+            fill: ${({ theme, bgTheme, isActive }) =>
+                isActive ? theme.cardTable[bgTheme].headerActiveColor : theme.cardTable[bgTheme].headerColor};
         }
     }
 `;
