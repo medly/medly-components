@@ -4,8 +4,8 @@ import Text from '../../../Text';
 import { StyledProps } from './types';
 
 export const HeadCell = styled('th').attrs(({ withWhiteBackground }: StyledProps) => ({
-    bgTheme: withWhiteBackground ? 'lightTheme' : 'darkTheme'
-}))<StyledProps & { bgTheme: 'lightTheme' | 'darkTheme' }>`
+    bgTheme: withWhiteBackground ? 'lightBackground' : 'darkBackground'
+}))<StyledProps & { bgTheme: 'lightBackground' | 'darkBackground' }>`
     flex: ${({ flex }) => flex};
     padding: 0;
     margin: 0 2.4rem;

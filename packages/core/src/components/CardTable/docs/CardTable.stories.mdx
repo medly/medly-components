@@ -1,37 +1,52 @@
 import { HTMLProps } from '@medly-components/utils';
 import { CardTable } from '../CardTable.tsx';
 import { withKnobs, color, select, boolean } from '@storybook/addon-knobs';
-import { Preview, Story, Meta } from '@storybook/addon-docs/blocks';
-import * as stories from './CardTable.stories';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import { ColumnConfigInterface, WithGreyBackground, WithWhiteBackground, Theme } from './CardTable.stories';
 
 <Meta title="Core/CardTable" component={CardTable} parameters={{ jest: ['CardTable.test.tsx'] }} />
 
 # CardTable
 
-Simple card component with two different designs.
-You can play with the props in canvas tab.
+Simple table with all the rows shown as card.
 
 #### With Grey Background
 
 <Preview withToolbar>
-    <Story name="Basic" parameters={{ decorators: [withKnobs] }}>
-        {stories.Basic()}
+    <Story name="WithGreyBackground" parameters={{ decorators: [withKnobs] }}>
+        <WithGreyBackground />
     </Story>
 </Preview>
 
 #### With White Background
 
 <Preview withToolbar>
-    <Story name="MultiLine" parameters={{ decorators: [withKnobs] }}>
-        {stories.MultiLine()}
+    <Story name="WithWhiteBackground" parameters={{ decorators: [withKnobs] }}>
+        <WithWhiteBackground />
     </Story>
 </Preview>
 
-### Passing component to a row
+### Props
 
-If you want to render any cell according to your design you can pass the component in column config like below
+There are only two props required `data` & `columns`.
 
-```ts
+<Props of={CardTable} />
+
+#### ColumnConfig
+
+You can provide array of below column config to table to change the style of the individual columns.
+
+<Props of={ColumnConfigInterface} />
+
+#### Sample column config
+
+```tsx
+import { GetComponentProps } from '@medly-components/utils';
+import { CardTable } from '@medly-components/core';
+
+type CardTableProps = GetComponentProps<typeof CardTable>;
+type ColumnConfig = CardTableProps['columns'];
+
 const columns: ColumnConfig[] = [
     { title: 'Patient Info', field: 'patientInfo', sort: true, component: StatusFormatter },
     { title: 'RxInfo', field: 'rxInfo', sort: true },
@@ -40,15 +55,34 @@ const columns: ColumnConfig[] = [
 ];
 ```
 
-#### Column Config Prop Types
+#### Custom Cells
 
-You can use Table Prop types like below to typesafe your column config.
+If you want to change the style of any cell you can provide custom component like below.
 
-```ts
+```tsx
 import { GetComponentProps } from '@medly-components/utils';
 import { CardTable } from '@medly-components/core';
 
 type CardTableProps = GetComponentProps<typeof CardTable>;
-
 type ColumnConfig = CardTableProps['columns'];
+
+const StatusFormatter: ColumnConfig['component'] = ({ data }) => {
+    return (
+        <StyledDiv>
+            <Report status={data}>{data}</Report>
+            <div>02/24/2020</div>
+        </StyledDiv>
+    );
+};
+
+const columns: ColumnConfig[] = [
+    { title: 'Patient Info', field: 'patientInfo', sort: true, component: StatusFormatter },
+    { title: 'RxInfo', field: 'rxInfo', sort: true, align: 'center' },
+    { title: 'Price', field: 'price', sort: true, component: StatusFormatter },
+    { title: 'Status', field: 'status', sort: true, component: StatusFormatter }
+];
 ```
+
+#### Card Table Theme
+
+<Props of={Theme} />

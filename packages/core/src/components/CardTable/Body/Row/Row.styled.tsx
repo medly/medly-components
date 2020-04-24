@@ -2,9 +2,9 @@ import { styled } from '@medly-components/utils';
 import { Props } from './types';
 
 export const Row = styled('tr').attrs(({ withWhiteBackground, theme: { cardTable } }: Props) => ({
-    bgTheme: withWhiteBackground ? 'lightTheme' : 'darkTheme',
+    bgTheme: withWhiteBackground ? 'lightBackground' : 'darkBackground',
     cardTable
-}))<Props & { bgTheme: 'lightTheme' | 'darkTheme' }>`
+}))<Props & { bgTheme: 'lightBackground' | 'darkBackground' }>`
     display: flex;
     flex-direction: row;
     cursor: ${({ onClick }) => (onClick ? 'pointer' : 'inherit')};

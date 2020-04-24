@@ -13,27 +13,22 @@ const StyledDiv = styled('div')`
         flex-direction: column;
     `,
     Report = styled(`div`)<StatusReport>`
-        color: ${ ({status}: StatusReport) => status === 'Pending' ? 'red': 'inherit' };
+        color: ${({ status }: StatusReport) => (status === 'Pending' ? 'red' : 'inherit')};
     `,
-    StatusFormatter: ColumnConfig['component'] = ({data}) => {
+    StatusFormatter: ColumnConfig['component'] = ({ data }) => {
         return (
             <StyledDiv>
-                <Report status={data}>
-                    {data}
-                </Report>
-                <div>
-                    02/24/2020
-                </div>
+                <Report status={data}>{data}</Report>
+                <div>02/24/2020</div>
             </StyledDiv>
         );
     };
 
-
 const columns: ColumnConfig[] = [
     { title: 'Patient Info', field: 'patientInfo', sort: true, component: StatusFormatter },
-    { title: 'RxInfo', field: 'rxInfo', sort: true },
-    { title: 'Price', field: 'price', sort: true, component: StatusFormatter,  align: 'center'},
-    { title: 'Status', field: 'status', sort: true, component: StatusFormatter, },  
+    { title: 'RxInfo', field: 'rxInfo', sort: true, align: 'center' },
+    { title: 'Price', field: 'price', sort: true, component: StatusFormatter },
+    { title: 'Status', field: 'status', sort: true, component: StatusFormatter }
 ];
 
 export default columns;
