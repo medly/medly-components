@@ -5,7 +5,7 @@ import Row from './Row';
 import { Props } from './types';
 
 export const Body: SFC<Props> & WithStyle = React.memo(props => {
-    const { data, columns, onRowClick, rowClickDisableKey, uniqueKeyName, withLightTheme } = props;
+    const { data, columns, onRowClick, rowClickDisableKey, uniqueKeyName, withWhiteBackground } = props;
 
     const handleRowClick = (rowData: any) => {
         return onRowClick && !rowData[rowClickDisableKey] ? () => onRowClick(rowData) : undefined;
@@ -14,7 +14,7 @@ export const Body: SFC<Props> & WithStyle = React.memo(props => {
     return (
         <tbody>
             {data.map((row, index) => (
-                <Row key={row[uniqueKeyName] || index} onClick={handleRowClick(row)} withLightTheme={withLightTheme}>
+                <Row key={row[uniqueKeyName] || index} onClick={handleRowClick(row)} withWhiteBackground={withWhiteBackground}>
                     {columns.map(column => (
                         <Cell
                             key={column.field}

@@ -7,7 +7,7 @@ describe('HeadCell', () => {
     it('should render head cell of cards table properly', () => {
         const { container } = render(
             <table>
-                <HeadCell sortField="RxInfo" onSortChange={onSortChange} column={{ title: 'Demo', field: 'demo' }} />
+                <HeadCell sortField="RxInfo" onSortChange={onSortChange} column={{ title: 'Demo', field: 'demo' }} withWhiteBackground />
             </table>
         );
         expect(container).toMatchSnapshot();

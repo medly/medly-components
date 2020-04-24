@@ -30,7 +30,7 @@ exports[`CardsTable should render CardsTable properly 1`] = `
   -ms-flex: 1;
   flex: 1;
   padding: 0;
-  margin: 2rem 2.5rem;
+  margin: 0 2.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -58,17 +58,23 @@ exports[`CardsTable should render CardsTable properly 1`] = `
   flex-direction: row;
   cursor: pointer;
   box-sizing: border-box;
+  padding: 1.6rem 0;
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
   background-color: white;
+  border: 0.1rem solid #ffffff;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
 }
 
 .c6:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.60);
+  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
 }
 
 .c6:nth-child(odd) {
+  background: #ffffff;
+}
+
+.c6:nth-child(even) {
   background: #ffffff;
 }
 
@@ -85,6 +91,7 @@ exports[`CardsTable should render CardsTable properly 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   background-color: transparent;
+  margin: 2.4rem 0;
 }
 
 .c5 {
@@ -104,7 +111,7 @@ exports[`CardsTable should render CardsTable properly 1`] = `
   -ms-flex: 1;
   flex: 1;
   padding: 0;
-  margin: 2rem 2.5rem;
+  margin: 0 2.4rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -124,11 +131,16 @@ exports[`CardsTable should render CardsTable properly 1`] = `
 
 .c2 .c3 {
   display: inline;
+  color: #435465;
 }
 
 .c2 .sc-AykKI {
   cursor: pointer;
   padding-left: 1rem;
+}
+
+.c2 .sc-AykKI * {
+  fill: #435465;
 }
 
 <div>

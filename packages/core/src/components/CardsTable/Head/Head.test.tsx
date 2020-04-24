@@ -14,7 +14,7 @@ describe('Head', () => {
 
         const { container } = render(
             <table>
-                <Head onSort={onSort} columns={columns} />
+                <Head onSort={onSort} columns={columns} withWhiteBackground />
             </table>
         );
         expect(container).toMatchSnapshot();
@@ -24,7 +24,7 @@ describe('Head', () => {
         const mockOnSortChange = jest.fn();
         const { container } = render(
             <table>
-                <Head onSort={mockOnSortChange} columns={columns} />
+                <Head onSort={mockOnSortChange} columns={columns} withWhiteBackground />
             </table>
         );
 

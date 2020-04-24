@@ -2,7 +2,7 @@ export * from './avatar/types';
 export * from './breadCrumbs/types';
 export * from './button/types';
 export * from './card/types';
-export * from './cardsTable/types';
+export * from './cardTable/types';
 export * from './checkbox/types';
 export * from './chip/types';
 export * from './colors/types';

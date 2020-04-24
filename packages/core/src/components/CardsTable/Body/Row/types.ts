@@ -1,6 +1,6 @@
-import { Props as CardProps } from '../../../Card/types';
+import { WithThemeProp } from '@medly-components/utils';
 
-export interface Props extends CardProps {
-    disabled?: boolean;
-    withLightTheme: boolean;
+export interface Props extends WithThemeProp {
+    onClick?: () => void;
+    withWhiteBackground: boolean;
 }

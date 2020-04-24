@@ -6,5 +6,5 @@ export interface Props {
     onRowClick?: (rowData: object) => void;
     rowClickDisableKey?: string;
     uniqueKeyName?: string;
-    withLightTheme?: boolean;
+    withWhiteBackground?: boolean;
 }

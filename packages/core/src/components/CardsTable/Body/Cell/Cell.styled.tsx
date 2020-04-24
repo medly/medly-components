@@ -4,7 +4,7 @@ import { StyledProps } from './types';
 export const Cell = styled('td')<StyledProps>`
     flex: ${({ flex }) => flex};
     padding: 0;
-    margin: 2rem 2.5rem;
+    margin: 0 2.4rem;
     display: flex;
     flex-direction: row;
     align-items: center;

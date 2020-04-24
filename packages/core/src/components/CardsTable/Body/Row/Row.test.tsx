@@ -6,7 +6,7 @@ describe('Row', () => {
     it('should render row properly', () => {
         const { container } = render(
             <tbody>
-                <Row disabled={true} withLightTheme={true}>
+                <Row withWhiteBackground={true}>
                     <td>Demo</td>
                 </Row>
             </tbody>

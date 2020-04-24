@@ -2,7 +2,7 @@ import avatar from './avatar';
 import breadCrumbs from './breadCrumbs';
 import button from './button';
 import card from './card';
-import cardsTable from './cardsTable';
+import cardTable from './cardTable';
 import checkbox from './checkbox';
 import chip from './chip';
 import colors from './colors';
@@ -28,7 +28,7 @@ export const coreDefaultTheme = {
     breadCrumbs,
     button,
     card,
-    cardsTable,
+    cardTable,
     checkbox,
     chip,
     colors,

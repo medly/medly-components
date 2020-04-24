@@ -1,24 +1,29 @@
 import { styled } from '@medly-components/utils';
 import { Props } from './types';
 
-export const Row = styled('tr')<Props>`
+export const Row = styled('tr').attrs(({ withWhiteBackground, theme: { cardTable } }: Props) => ({
+    bgTheme: withWhiteBackground ? 'lightTheme' : 'darkTheme',
+    cardTable
+}))<Props & { bgTheme: 'lightTheme' | 'darkTheme' }>`
     display: flex;
     flex-direction: row;
     cursor: ${({ onClick }) => (onClick ? 'pointer' : 'inherit')};
     box-sizing: border-box;
+    padding: 1.6rem 0;
     border-radius: 0.8rem;
     margin-bottom: 0.8rem;
     background-color: white;
-    box-shadow: ${({ withLightTheme }) => (withLightTheme ? 'none' : '0 0.2rem 0.8rem rgba(176,188,200,0.2)')};
+    border: 0.1rem solid ${({ bgTheme, cardTable }) => cardTable[bgTheme].borderColor};
+    box-shadow: ${({ bgTheme, cardTable }) => cardTable[bgTheme].boxShadow};
 
     &:hover {
-        box-shadow: ${({ withLightTheme }) =>
-            withLightTheme ? '0 0.2rem 0.4rem rgba(176,188,200,0.60)' : '0 0.4rem 0.8rem rgba(176,188,200,0.60)'};
+        box-shadow: ${({ bgTheme, cardTable }) => cardTable[bgTheme].hoverBoxShadow};
     }
 
     :nth-child(odd) {
-        background: ${({ theme, withLightTheme }) =>
-            withLightTheme ? theme.cardsTable.rowDisabledColor : theme.cardsTable.rowBackgroundColor};
+        background: ${({ bgTheme, cardTable }) => cardTable[bgTheme].oddRowBgColor};
+    }
+    :nth-child(even) {
+        background: ${({ bgTheme, cardTable }) => cardTable[bgTheme].evenRowBgColor};
     }
 `;
-//TODO: theme.cardsTable.rowDisabledColor to AlternateRow Color

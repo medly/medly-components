@@ -5,7 +5,7 @@ import Text from '../../../Text';
 import * as Styled from './HeadCell.styled';
 import { Props } from './types';
 
-export const HeadCell: SFC<Props> & WithStyle = React.memo(({ sortField, onSortChange, column }) => {
+export const HeadCell: SFC<Props> & WithStyle = React.memo(({ sortField, onSortChange, withWhiteBackground, column }) => {
     const { field, sort: isSortEnabled, title, align, flex } = column,
         [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>('none');
 
@@ -32,7 +32,7 @@ export const HeadCell: SFC<Props> & WithStyle = React.memo(({ sortField, onSortC
     );
 
     return (
-        <Styled.HeadCell flex={flex} align={align}>
+        <Styled.HeadCell flex={flex} align={align} withWhiteBackground={withWhiteBackground}>
             <Text textVariant="h5">{title}</Text>
             {isSortEnabled && sortIcon}
         </Styled.HeadCell>

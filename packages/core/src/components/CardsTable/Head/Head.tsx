@@ -4,7 +4,7 @@ import * as Styled from './Head.styled';
 import HeadCell from './HeadCell';
 import { Props } from './types';
 
-export const Head: SFC<Props> = React.memo(({ onSort, columns }) => {
+export const Head: SFC<Props> = React.memo(({ onSort, columns, withWhiteBackground }) => {
     const [sortField, setSortField] = useState('');
 
     const handleSortChange = useCallback(
@@ -19,7 +19,13 @@ export const Head: SFC<Props> = React.memo(({ onSort, columns }) => {
         <thead>
             <Styled.HeadRow>
                 {columns.map(column => (
-                    <HeadCell key={column.field} sortField={sortField} onSortChange={handleSortChange} column={column} />
+                    <HeadCell
+                        key={column.field}
+                        sortField={sortField}
+                        onSortChange={handleSortChange}
+                        column={column}
+                        withWhiteBackground={withWhiteBackground}
+                    />
                 ))}
             </Styled.HeadRow>
         </thead>

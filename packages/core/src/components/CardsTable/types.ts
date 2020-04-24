@@ -34,5 +34,5 @@ export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'
     /** Key name to disable row click */
     rowClickDisableKey?: string;
     /** Key name to select background color */
-    withLightTheme?: boolean;
+    withWhiteBackground?: boolean;
 }
