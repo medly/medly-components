@@ -49,14 +49,31 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
+.c0:hover .c1 {
+  color: #1A6BF0;
+}
+
+.c0:hover::after {
+  background-color: #1A6BF0;
+}
+
+.c0:hover .sc-AykKE * {
+  fill: #1A6BF0;
+}
+
 .c0 .c1 {
   display: inline;
   cursor: default;
+  color: #435465;
 }
 
 .c0 .sc-AykKE {
   cursor: pointer;
   padding-left: 1rem;
+}
+
+.c0 .sc-AykKE * {
+  fill: #435465;
 }
 
 <div>
@@ -127,14 +144,31 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
+.c0:hover .c1 {
+  color: #1A6BF0;
+}
+
+.c0:hover::after {
+  background-color: #1A6BF0;
+}
+
+.c0:hover .sc-AykKE * {
+  fill: #1A6BF0;
+}
+
 .c0 .c1 {
   display: inline;
   cursor: default;
+  color: #435465;
 }
 
 .c0 .sc-AykKE {
   cursor: pointer;
   padding-left: 1rem;
+}
+
+.c0 .sc-AykKE * {
+  fill: #435465;
 }
 
 <div>
@@ -205,14 +239,31 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
+.c0:hover .c1 {
+  color: #1A6BF0;
+}
+
+.c0:hover::after {
+  background-color: #1A6BF0;
+}
+
+.c0:hover .sc-AykKE * {
+  fill: #1A6BF0;
+}
+
 .c0 .c1 {
   display: inline;
   cursor: default;
+  color: #435465;
 }
 
 .c0 .sc-AykKE {
   cursor: pointer;
   padding-left: 1rem;
+}
+
+.c0 .sc-AykKE * {
+  fill: #435465;
 }
 
 <div>
@@ -290,18 +341,36 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
   position: absolute;
   bottom: 0;
   left: 0;
+  background-color: #005AEE;
   height: 0.2rem;
   border-radius: 0.2rem 0.2rem 0 0;
+}
+
+.c0:hover .c1 {
+  color: #1A6BF0;
+}
+
+.c0:hover::after {
+  background-color: #1A6BF0;
+}
+
+.c0:hover .sc-AykKE * {
+  fill: #1A6BF0;
 }
 
 .c0 .c1 {
   display: inline;
   cursor: default;
+  color: #005AEE;
 }
 
 .c0 .sc-AykKE {
   cursor: pointer;
   padding-left: 1rem;
+}
+
+.c0 .sc-AykKE * {
+  fill: #005AEE;
 }
 
 <div>
@@ -393,18 +462,36 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
   position: absolute;
   bottom: 0;
   left: 0;
+  background-color: #005AEE;
   height: 0.2rem;
   border-radius: 0.2rem 0.2rem 0 0;
+}
+
+.c0:hover .c1 {
+  color: #1A6BF0;
+}
+
+.c0:hover::after {
+  background-color: #1A6BF0;
+}
+
+.c0:hover .sc-AykKE * {
+  fill: #1A6BF0;
 }
 
 .c0 .c1 {
   display: inline;
   cursor: default;
+  color: #005AEE;
 }
 
 .c0 .sc-AykKE {
   cursor: pointer;
   padding-left: 1rem;
+}
+
+.c0 .sc-AykKE * {
+  fill: #005AEE;
 }
 
 <div>
@@ -489,14 +576,31 @@ exports[`Card Table HeadCell should render properly with dark background and dro
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
+.c0:hover .c1 {
+  color: #1A6BF0;
+}
+
+.c0:hover::after {
+  background-color: #1A6BF0;
+}
+
+.c0:hover .sc-AykKE * {
+  fill: #1A6BF0;
+}
+
 .c0 .c1 {
   display: inline;
   cursor: default;
+  color: #435465;
 }
 
 .c0 .sc-AykKE {
   cursor: pointer;
   padding-left: 1rem;
+}
+
+.c0 .sc-AykKE * {
+  fill: #435465;
 }
 
 <div>
@@ -579,14 +683,31 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
+.c0:hover .c1 {
+  color: #1A6BF0;
+}
+
+.c0:hover::after {
+  background-color: #1A6BF0;
+}
+
+.c0:hover .sc-AykKE * {
+  fill: #1A6BF0;
+}
+
 .c0 .c1 {
   display: inline;
   cursor: default;
+  color: #607890;
 }
 
 .c0 .sc-AykKE {
   cursor: pointer;
   padding-left: 1rem;
+}
+
+.c0 .sc-AykKE * {
+  fill: #607890;
 }
 
 <div>
@@ -682,14 +803,31 @@ exports[`Card Table HeadCell should render properly with light background and dr
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
+.c0:hover .c1 {
+  color: #1A6BF0;
+}
+
+.c0:hover::after {
+  background-color: #1A6BF0;
+}
+
+.c0:hover .sc-AykKE * {
+  fill: #1A6BF0;
+}
+
 .c0 .c1 {
   display: inline;
   cursor: default;
+  color: #607890;
 }
 
 .c0 .sc-AykKE {
   cursor: pointer;
   padding-left: 1rem;
+}
+
+.c0 .sc-AykKE * {
+  fill: #607890;
 }
 
 <div>

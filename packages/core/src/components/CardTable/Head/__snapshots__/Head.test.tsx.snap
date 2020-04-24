@@ -72,14 +72,31 @@ exports[`Card Table Head should render properly with dark background 1`] = `
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
+.c1:hover .c2 {
+  color: #1A6BF0;
+}
+
+.c1:hover::after {
+  background-color: #1A6BF0;
+}
+
+.c1:hover .sc-AykKF * {
+  fill: #1A6BF0;
+}
+
 .c1 .c2 {
   display: inline;
   cursor: default;
+  color: #435465;
 }
 
 .c1 .sc-AykKF {
   cursor: pointer;
   padding-left: 1rem;
+}
+
+.c1 .sc-AykKF * {
+  fill: #435465;
 }
 
 <div>
@@ -210,14 +227,31 @@ exports[`Card Table Head should render properly with light background 1`] = `
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
+.c1:hover .c2 {
+  color: #1A6BF0;
+}
+
+.c1:hover::after {
+  background-color: #1A6BF0;
+}
+
+.c1:hover .sc-AykKF * {
+  fill: #1A6BF0;
+}
+
 .c1 .c2 {
   display: inline;
   cursor: default;
+  color: #607890;
 }
 
 .c1 .sc-AykKF {
   cursor: pointer;
   padding-left: 1rem;
+}
+
+.c1 .sc-AykKF * {
+  fill: #607890;
 }
 
 <div>

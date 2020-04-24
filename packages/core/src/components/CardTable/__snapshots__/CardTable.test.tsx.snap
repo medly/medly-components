@@ -140,14 +140,31 @@ exports[`CardTable should render properly with grey background 1`] = `
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
+.c2:hover .c3 {
+  color: #1A6BF0;
+}
+
+.c2:hover::after {
+  background-color: #1A6BF0;
+}
+
+.c2:hover .sc-AykKI * {
+  fill: #1A6BF0;
+}
+
 .c2 .c3 {
   display: inline;
   cursor: default;
+  color: #435465;
 }
 
 .c2 .sc-AykKI {
   cursor: pointer;
   padding-left: 1rem;
+}
+
+.c2 .sc-AykKI * {
+  fill: #435465;
 }
 
 <div>
@@ -372,14 +389,31 @@ exports[`CardTable should render properly with white background 1`] = `
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
+.c2:hover .c3 {
+  color: #1A6BF0;
+}
+
+.c2:hover::after {
+  background-color: #1A6BF0;
+}
+
+.c2:hover .sc-AykKI * {
+  fill: #1A6BF0;
+}
+
 .c2 .c3 {
   display: inline;
   cursor: default;
+  color: #607890;
 }
 
 .c2 .sc-AykKI {
   cursor: pointer;
   padding-left: 1rem;
+}
+
+.c2 .sc-AykKI * {
+  fill: #607890;
 }
 
 <div>
