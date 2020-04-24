@@ -102,9 +102,10 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M8.795 15.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-          fill="#000"
-          fill-opacity=".54"
+          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="2"
         />
       </svg>
       <span
@@ -230,9 +231,10 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M8.795 15.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-          fill="#000"
-          fill-opacity=".54"
+          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="2"
         />
       </svg>
       <span
@@ -358,9 +360,10 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M8.795 15.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-          fill="#000"
-          fill-opacity=".54"
+          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="2"
         />
       </svg>
       <span
@@ -489,9 +492,10 @@ exports[`ToastContainer should render properly with position left 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M8.795 15.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-          fill="#000"
-          fill-opacity=".54"
+          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="2"
         />
       </svg>
       <span
@@ -615,9 +619,10 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M8.795 15.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-          fill="#000"
-          fill-opacity=".54"
+          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="2"
         />
       </svg>
       <span
@@ -741,9 +746,10 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M8.795 15.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-          fill="#000"
-          fill-opacity=".54"
+          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="2"
         />
       </svg>
       <span
@@ -872,9 +878,10 @@ exports[`ToastContainer should render properly with position right 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M8.795 15.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-          fill="#000"
-          fill-opacity=".54"
+          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="2"
         />
       </svg>
       <span
@@ -998,9 +1005,10 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M8.795 15.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-          fill="#000"
-          fill-opacity=".54"
+          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="2"
         />
       </svg>
       <span
@@ -1124,9 +1132,10 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M8.795 15.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-          fill="#000"
-          fill-opacity=".54"
+          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="2"
         />
       </svg>
       <span
@@ -1255,9 +1264,10 @@ exports[`ToastContainer should render properly with position top 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M8.795 15.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-          fill="#000"
-          fill-opacity=".54"
+          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="2"
         />
       </svg>
       <span
@@ -1383,9 +1393,10 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M8.795 15.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-          fill="#000"
-          fill-opacity=".54"
+          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="2"
         />
       </svg>
       <span
@@ -1511,9 +1522,10 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M8.795 15.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-          fill="#000"
-          fill-opacity=".54"
+          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-width="2"
         />
       </svg>
       <span

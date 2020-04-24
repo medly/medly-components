@@ -29,7 +29,7 @@ const variants: FontVariantTheme = {
         fontSize: '1.2rem',
         fontWeight: 'Strong',
         lineHeight: '2.0rem',
-        letterSpacing: '0.2rem'
+        letterSpacing: '0.12rem'
     },
     body1: {
         fontSize: '1.6rem',

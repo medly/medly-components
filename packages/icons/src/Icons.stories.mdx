@@ -377,6 +377,13 @@ import UndoIcon from './icons/Content/UndoIcon';
 import WavesIcon from './icons/Content/WavesIcon';
 import WeekendIcon from './icons/Content/WeekendIcon';
 import WhereToVoteIcon from './icons/Content/WhereToVoteIcon';
+import CapsuleIcon from './icons/Custom/CapsuleIcon';
+import CheckIcon from './icons/Custom/CheckIcon';
+import ChevronDownIcon from './icons/Custom/ChevronDownIcon';
+import ChevronUpIcon from './icons/Custom/ChevronUpIcon';
+import DropdownIcon from './icons/Custom/DropdownIcon';
+import MenuExpandIcon from './icons/Custom/MenuExpandIcon';
+import MenuHideIcon from './icons/Custom/MenuHideIcon';
 import AccessAlarmIcon from './icons/Device/AccessAlarmIcon';
 import AccessAlarmsIcon from './icons/Device/AccessAlarmsIcon';
 import AccessTimeIcon from './icons/Device/AccessTimeIcon';
@@ -912,11 +919,10 @@ import ArrowLeftIcon from './icons/Navigation/ArrowLeftIcon';
 import ArrowRightIcon from './icons/Navigation/ArrowRightIcon';
 import ArrowUpwardIcon from './icons/Navigation/ArrowUpwardIcon';
 import CancelIcon from './icons/Navigation/CancelIcon';
-import CheckIcon from './icons/Navigation/CheckIcon';
+import CheckMaterialIcon from './icons/Navigation/CheckMaterialIcon';
 import ChevronLeftIcon from './icons/Navigation/ChevronLeftIcon';
 import ChevronRightIcon from './icons/Navigation/ChevronRightIcon';
 import CloseIcon from './icons/Navigation/CloseIcon';
-import DropdownIcon from './icons/Navigation/DropdownIcon';
 import ExpandLessIcon from './icons/Navigation/ExpandLessIcon';
 import ExpandMoreIcon from './icons/Navigation/ExpandMoreIcon';
 import FirstPageIcon from './icons/Navigation/FirstPageIcon';
@@ -2974,6 +2980,50 @@ If you withHoverEffect prop to any icon it will render background color on hover
                 disabled={boolean('Disabled', false)} 
             />
             <WhereToVoteIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+        </IconGrid>
+    </Story>
+</Preview>
+
+### Custom
+
+<Preview withToolbar>
+    <Story name="Custom" parameters={{ decorators: [withKnobs] }}>
+        <IconGrid>
+            <CapsuleIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <CheckIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <ChevronDownIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <ChevronUpIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <DropdownIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <MenuExpandIcon 
+                size={select('Size', sizes, 'M')} 
+                color={color('Color', defaultColor)} 
+                disabled={boolean('Disabled', false)} 
+            />
+            <MenuHideIcon 
                 size={select('Size', sizes, 'M')} 
                 color={color('Color', defaultColor)} 
                 disabled={boolean('Disabled', false)} 
@@ -5725,7 +5775,7 @@ If you withHoverEffect prop to any icon it will render background color on hover
                 color={color('Color', defaultColor)} 
                 disabled={boolean('Disabled', false)} 
             />
-            <CheckIcon 
+            <CheckMaterialIcon 
                 size={select('Size', sizes, 'M')} 
                 color={color('Color', defaultColor)} 
                 disabled={boolean('Disabled', false)} 
@@ -5741,11 +5791,6 @@ If you withHoverEffect prop to any icon it will render background color on hover
                 disabled={boolean('Disabled', false)} 
             />
             <CloseIcon 
-                size={select('Size', sizes, 'M')} 
-                color={color('Color', defaultColor)} 
-                disabled={boolean('Disabled', false)} 
-            />
-            <DropdownIcon 
                 size={select('Size', sizes, 'M')} 
                 color={color('Color', defaultColor)} 
                 disabled={boolean('Disabled', false)} 

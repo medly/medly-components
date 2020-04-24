@@ -1,21 +1,23 @@
 import { HTMLProps } from '@medly-components/utils';
+import { SendIcon } from '@medly-components/icons';
 import { Button } from './Button.tsx';
 import { withKnobs, color, select, boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import { sizes, variants, colors, ThemeInterface } from './Button.stories';
+import { sizes, edges, variants, colors, ThemeInterface } from './Button.stories';
 
-<Meta title="Core/Button" component={Button} parameters={{ jest: ['Button.test.tsx'] }} />
+<Meta title="Core" component={Button} parameters={{ jest: ['Button.test.tsx'] }} />
 
 # Button
 
-### Simple button component with different design & colors.
+Simple button component with different design & colors.
 
 You can play with the props in canvas tab.
 
 <Preview withToolbar>
-    <Story name="Basic" parameters={{ decorators: [withKnobs] }}>
+    <Story name="Button" parameters={{ decorators: [withKnobs] }}>
         <Button
-            variant={select('Size', sizes, 'S')}
+            size={select('Size', sizes, 'S')}
+            edges={select('Edges', edges, 'square')}
             variant={select('Variant', variants, 'solid')}
             disabled={boolean('Disabled', false)}
             color={select('Color', colors, 'default')}
@@ -27,12 +29,35 @@ You can play with the props in canvas tab.
 
 ### Sizes
 
+There are two button sizes are available `S` | `M`
+
+##### Small Buttons
+
 <Preview>
     <Button size="S">Small Size</Button>
+    <Button size="S" edges="rounded">
+        Small Size
+    </Button>
+    <Button size="S" edges="circle">
+        <SendIcon size="S" />
+    </Button>
+</Preview>
+
+##### Medium Buttons
+
+<Preview>
     <Button size="M">Medium Size</Button>
+    <Button size="M" edges="rounded">
+        Medium Size
+    </Button>
+    <Button size="M" edges="circle">
+        <SendIcon size="M" />
+    </Button>
 </Preview>
 
 ### Variants
+
+Use variant prop to change the style of the button.
 
 <Preview>
     <Button variant="solid">Solid Button</Button>
@@ -42,6 +67,8 @@ You can play with the props in canvas tab.
 
 ### Colors
 
+There are three different color option available.
+
 <Preview>
     <Button color="default">Default Button</Button>
     <Button color="confirmation">Confirmation Button</Button>
@@ -49,6 +76,8 @@ You can play with the props in canvas tab.
 </Preview>
 
 ### Disabled
+
+Disable style for all the variants.
 
 <Preview>
     <Button disabled variant="solid">
@@ -59,6 +88,31 @@ You can play with the props in canvas tab.
     </Button>
     <Button disabled variant="flat">
         Flat Button
+    </Button>
+</Preview>
+
+### With Icon
+
+You can also use icons as content in the button like below.
+
+```tsx
+import { SendIcon } from '@medly-components/icons';
+import { Button } from '@medly-components/icons';
+
+<Button>
+    <SendIcon size="S" />
+    Send
+</Button>;
+```
+
+<Preview>
+    <Button variant="solid">
+        <SendIcon size="S" />
+        Send
+    </Button>
+    <Button variant="outlined">
+        <SendIcon size="S" />
+        Send
     </Button>
 </Preview>
 

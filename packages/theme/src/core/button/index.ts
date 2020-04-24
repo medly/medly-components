@@ -32,7 +32,8 @@ const button = {
     },
     borderRadius: {
         square: '0.8rem',
-        rounded: '50%'
+        rounded: '100rem',
+        circle: '50%'
     }
 };
 

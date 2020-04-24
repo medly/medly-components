@@ -35,5 +35,6 @@ export interface ButtonTheme {
     borderRadius: {
         square: string;
         rounded: string;
+        circle: string;
     };
 }

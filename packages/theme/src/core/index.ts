@@ -2,7 +2,7 @@ import avatar from './avatar';
 import breadCrumbs from './breadCrumbs';
 import button from './button';
 import card from './card';
-import cardsTable from './cardsTable'
+import cardsTable from './cardsTable';
 import checkbox from './checkbox';
 import chip from './chip';
 import colors from './colors';
@@ -19,6 +19,7 @@ import spacing from './spacing';
 import stepper from './stepper';
 import table from './table';
 import tabs from './tabs';
+import textField from './textField';
 import toast from './toast';
 import toggle from './toggle';
 
@@ -26,24 +27,25 @@ export const coreDefaultTheme = {
     avatar,
     breadCrumbs,
     button,
-    checkbox,
-    chip,
-    datePicker,
-    label,
-    link,
     card,
     cardsTable,
+    checkbox,
+    chip,
     colors,
-    modal,
-    radio,
+    datePicker,
     font,
     input,
+    label,
+    link,
+    modal,
+    radio,
+    reactDatepicker,
     select,
-    stepper,
     spacing,
-    tabs,
-    toast,
+    stepper,
     table,
-    toggle,
-    reactDatepicker
+    tabs,
+    textField,
+    toast,
+    toggle
 };

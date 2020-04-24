@@ -2,18 +2,26 @@ import { FontVariants } from '../../core/types';
 import { IconSizes } from '../../icon/types';
 
 export interface SideNavTheme {
-    scrollbarColor: string;
     closeSize: string;
     openSize: string;
-    itemMinHeight: string;
-    iconSize: IconSizes;
+    navItemMinHeight: string;
     fontVariant: FontVariants;
     bgColor: string;
-    textColor: string;
-    iconColor: string;
-    borderColor: string;
-    activeColor: string;
-    activeBorderColor: string;
-    logoBgColor: string;
-    bottomListBgColor: string;
+    iconSize: IconSizes;
+    separatorColor: string;
+    scrollBarColor: string;
+    navItemColors: {
+        active: {
+            textColor: string;
+            bgColor: string;
+        };
+        hover: {
+            textColor: string;
+            bgColor: string;
+        };
+        default: {
+            textColor: string;
+            bgColor: string;
+        };
+    };
 }

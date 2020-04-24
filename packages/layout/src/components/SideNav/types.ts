@@ -1,24 +1,19 @@
-import { Text } from '@medly-components/core';
-import { SvgIconProps } from '@medly-components/icons';
+import { Theme } from '@medly-components/theme/src';
 import { WithStyle, WithThemeProp } from '@medly-components/utils';
 import { SFC } from 'react';
-import { AnyStyledComponent } from 'styled-components';
+import { StyledComponent } from 'styled-components';
 import { NavItemProps } from './NavItem/types';
-import { NavListProps } from './NavList/types';
 
 export interface SideNavStyledProps extends WithThemeProp {
-    open: boolean;
+    isHovered?: boolean;
+    isExpanded?: boolean;
 }
 
 export interface SideNavProps {
     /** Id for the component */
     id?: string;
-    /** path of currently active link(only if you want to controlled the state) */
+    /** Path of currently active link(only if you want to controlled the state) */
     active?: string;
-    /** Logo to add */
-    logo?: React.FunctionComponent<SvgIconProps> & WithStyle;
-    /** To be used to close sidenav on click outside */
-    closeOnOuterClick?: boolean;
     /** Default active path */
     defaultActive?: string;
     /** This func will be called on the item click */
@@ -26,10 +21,8 @@ export interface SideNavProps {
 }
 
 export interface SideNavStaticProps {
-    NavItem: SFC<NavItemProps> & WithStyle;
-    NavIcon: AnyStyledComponent;
-    NavList: SFC<NavListProps>;
-    SubNavList: SFC<NavListProps>;
-    BottomList: SFC<NavListProps>;
-    NavText: typeof Text;
+    /** This can be used to define Nav item */
+    Nav: SFC<NavItemProps> & WithStyle;
+    /** This is a styled component which can be used to define List*/
+    List: StyledComponent<'ul', Theme>;
 }

@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.15](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.14...@medly-components/theme@1.0.0-beta.15) (2020-04-21)
+
+
+### Bug Fixes
+
+* **core:** fix buttton padding issue ([fdbc940](https://github.com/medlypharmacy/medly-components/commit/fdbc9408fa9d79c13a8519bfd9958469645944ba))
+* change letter spacing value of h5 font variant ([4d89225](https://github.com/medlypharmacy/medly-components/commit/4d8922574af0c07eaf3565ae5c9cde9be7d24fd6))
+* fix icons color and hover effectt issue ([7457e6b](https://github.com/medlypharmacy/medly-components/commit/7457e6b4babac2835e00ed1e5fca1890fd20b139))
+
+
+### Features
+
+* **core:** redesign button component ([a959410](https://github.com/medlypharmacy/medly-components/commit/a959410e4eab66926c4b5cafafbae6040a758cab))
+* change spacing theme value ([331a542](https://github.com/medlypharmacy/medly-components/commit/331a54289ea7d619f5161124c87d93dccdd6b6e3))
+* **icons:** add hover effect and change size of the icons ([0e87438](https://github.com/medlypharmacy/medly-components/commit/0e87438198351e25c90cedea31a91de69d0ee8f3))
+* **icons:** add script to export svgs as React component ([f14906c](https://github.com/medlypharmacy/medly-components/commit/f14906c54f81ae8f23c49a0d79fd2c6b0ce29142))
+
+
+
+
+
 # [1.0.0-beta.14](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.13...@medly-components/theme@1.0.0-beta.14) (2020-04-11)
 
 

@@ -1,52 +1,21 @@
-import { Text } from '@medly-components/core';
-import { defaultTheme } from '@medly-components/theme';
-import { css, styled } from '@medly-components/utils';
+import { styled } from '@medly-components/utils';
 import SidePanel from '../SidePanel';
-import SubNavList from './SubNavList';
-import { Logo } from './TopNavItem/TopNavItem.styled';
 import { SideNavStyledProps } from './types';
 
-const openState = () => css`
-    ${Text.Style} , ${Logo}{
-        opacity: 1;
-        transition: opacity 0.4s;
-    }
+export const Aside = styled(SidePanel)<SideNavStyledProps>`
+    position: inherit;
+    width: ${({ isExpanded, theme }) => (isExpanded ? theme.sideNav.openSize : theme.sideNav.closeSize)};
+    box-shadow: ${({ isHovered, isExpanded }) => (isHovered && !isExpanded ? 'none' : `0.2rem 0 8px rgba(96, 120, 144, 0.2) `)};
 `;
 
-const closeState = () => css`
-    ${Text.Style}, ${Logo} {
-        opacity: 0;
-        transition: opacity 0.2s;
-    }
-
-    ${SubNavList.Style} {
-        max-height: 0;
-        transition: max-height 0.2s ease-out;
-    }
-`;
-
-export const SideNav = styled(SidePanel)<SideNavStyledProps>`
-    width: ${({ open, theme }) => (open ? theme.sideNav.openSize : theme.sideNav.closeSize)};
-    background-color: ${({ theme }) => theme.sideNav.bgColor};
+export const Nav = styled('nav')<SideNavStyledProps>`
+    height: 100%;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
-
-    ul::-webkit-scrollbar {
-        width: 5px;
-        background-color: ${({ theme }) => theme.sideNav.bgColor};
-    }
-
-    ul::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        background-color: ${({ theme }) => theme.sideNav.scrollbarColor};
-    }
-
-    svg {
-        * {
-            fill: ${({ theme }) => theme.sideNav.iconColor};
-        }
-    }
-
-    ${({ open }) => (open ? openState() : closeState())}
+    transition: width 200ms, box-shadow 200ms;
+    background-color: ${({ theme }) => theme.sideNav.bgColor};
+    padding-right: ${({ isHovered, theme }) => (isHovered ? theme.spacing.S4 : 0)};
+    width: ${({ isHovered, theme }) => (isHovered ? theme.sideNav.openSize : theme.sideNav.closeSize)};
+    box-shadow: ${({ isExpanded, isHovered }) => (!isExpanded && isHovered ? `0.2rem 0 1.6rem #B0BCC8` : 'none')};
 `;
-SideNav.defaultProps = { theme: defaultTheme };

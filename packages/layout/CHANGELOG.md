@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.27](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.26...@medly-components/layout@1.0.0-beta.27) (2020-04-21)
+
+
+### Bug Fixes
+
+* **core:** fix font-family issue in button component ([4602fd2](https://github.com/medlypharmacy/medly-components/commit/4602fd2e2de77eb9cec514efc37d1c0699ee1064))
+* **layout:** fix icon crop issue in sidenav ([cb80b95](https://github.com/medlypharmacy/medly-components/commit/cb80b95ce385baa1aa049a7f6aefa03957d18e31))
+* **layout:** fix lint issue ([250d4a8](https://github.com/medlypharmacy/medly-components/commit/250d4a8b2d621376d8e101c9aea175eee30758a6))
+* fix icons color and hover effectt issue ([7457e6b](https://github.com/medlypharmacy/medly-components/commit/7457e6b4babac2835e00ed1e5fca1890fd20b139))
+* fix text color issue in the sidenav ([debe31f](https://github.com/medlypharmacy/medly-components/commit/debe31f331947749a9c55f340ab1cb0c299d558f))
+* **layout:** move burgericon to layout package ([7dab30d](https://github.com/medlypharmacy/medly-components/commit/7dab30dc822bc233f76a38315553b4b3bcfe81a0))
+
+
+### Features
+
+* change spacing theme value ([331a542](https://github.com/medlypharmacy/medly-components/commit/331a54289ea7d619f5161124c87d93dccdd6b6e3))
+
+
+
+
+
 # [1.0.0-beta.26](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.25...@medly-components/layout@1.0.0-beta.26) (2020-04-11)
 
 

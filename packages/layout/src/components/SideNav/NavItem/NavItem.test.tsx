@@ -1,65 +1,49 @@
+import { Text } from '@medly-components/core';
 import { HomeIcon, SearchIcon } from '@medly-components/icons';
-import { act, cleanup, fireEvent, render } from '@test-utils';
+import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { SideNav } from '../SideNav';
 
-const renderer = (mockOnClick = jest.fn()) =>
+const renderer = (active: string, mockOnClick = jest.fn()) =>
     render(
-        <SideNav>
-            <SideNav.NavList>
-                <SideNav.NavItem path="/home">
-                    <SideNav.NavIcon>
-                        <HomeIcon />
-                    </SideNav.NavIcon>
-                    <SideNav.NavText>Home</SideNav.NavText>
-                </SideNav.NavItem>
-                <SideNav.NavItem path="/search" openSideNavOnClick onClick={mockOnClick}>
-                    <SideNav.NavIcon>
-                        <SearchIcon />
-                    </SideNav.NavIcon>
-                    <SideNav.NavText>Search</SideNav.NavText>
-                    <SideNav.SubNavList>
-                        <SideNav.NavItem path="/search/cars">
-                            <SideNav.NavText>Cars</SideNav.NavText>
-                        </SideNav.NavItem>
-                        <SideNav.NavItem path="/search/bikes">
-                            <SideNav.NavText>Bikes</SideNav.NavText>
-                        </SideNav.NavItem>
-                        <SideNav.NavItem path="/search/phones">
-                            <SideNav.NavText>Phones</SideNav.NavText>
-                        </SideNav.NavItem>
-                    </SideNav.SubNavList>
-                </SideNav.NavItem>
-            </SideNav.NavList>
+        <SideNav active={active} onChange={mockOnClick}>
+            <SideNav.List>
+                <SideNav.Nav to="/home">
+                    <HomeIcon />
+                    <Text>Home</Text>
+                </SideNav.Nav>
+                <SideNav.Nav to="/search">
+                    <SearchIcon />
+                    <Text>Search</Text>
+                </SideNav.Nav>
+            </SideNav.List>
         </SideNav>
     );
 describe('NavItem', () => {
     afterEach(cleanup);
 
-    it('should render properly', () => {
-        const { container } = renderer();
-        expect(container).toMatchSnapshot();
+    it('should render properly when it is in default state', () => {
+        const { getByText } = renderer('/home');
+        fireEvent.mouseOver(getByText('Search'));
+        expect(getByText('Search')).toMatchSnapshot();
     });
 
-    it('should be able to click on nested item', () => {
-        const mockOnClick = jest.fn();
-        const { container, getByText } = renderer(mockOnClick);
-        act(() => {
-            fireEvent.click(container.querySelector('button'));
-            fireEvent.click(getByText('Search'));
-            fireEvent.click(getByText('Cars'));
-        });
-        expect(mockOnClick).toBeCalled();
-        expect(container.querySelector('#medly-sidenav')).toMatchSnapshot();
+    it('should render properly when it is in active state', () => {
+        const { getByText } = renderer('/home');
+        expect(getByText('Home')).toMatchSnapshot();
     });
 
-    it('should fold the open item on click on it', () => {
-        const mockOnClick = jest.fn();
-        const { container, getByText } = renderer(mockOnClick);
-        fireEvent.click(container.querySelector('button'));
-        fireEvent.click(getByText('Search'));
-        fireEvent.click(getByText('Search'));
+    it('should render properly when it is in hovered state', () => {
+        const { getByText } = renderer('/home');
+        fireEvent.mouseOver(getByText('Search'));
+        expect(getByText('Search')).toMatchSnapshot();
+    });
 
-        expect(container.querySelector('#medly-sidenav')).toMatchSnapshot();
+    it('should call onChange with expected data', () => {
+        const mockOnChange = jest.fn();
+        const { container, getByText } = renderer(undefined, mockOnChange);
+        fireEvent.click(container.querySelector('#medly-sidenav-toggle-expand'));
+        fireEvent.click(getByText('Search'));
+        expect(mockOnChange).toBeCalledWith('/search');
     });
 });
