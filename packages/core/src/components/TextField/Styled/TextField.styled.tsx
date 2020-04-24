@@ -139,8 +139,5 @@ export const Input = styled('input').attrs(({ theme: { textField } }) => ({ ...t
         ${disabledStyle}
     }
 
-    &:invalid:focus:not(:placeholder-shown) {
-        ${errorStyle}
-    }
     ${({ errorText }) => (errorText ? errorStyle : activeStyle)}
 `;
