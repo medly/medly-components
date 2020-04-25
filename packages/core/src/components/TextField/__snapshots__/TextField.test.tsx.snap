@@ -39,7 +39,7 @@ exports[`TextField should render asterisk if we pass required prop as true 1`] =
   color: #b0bcc8;
 }
 
-.c2:focus:valid ~ .c0 {
+.c2:focus ~ .c0 {
   color: #005AEE;
 }
 
@@ -185,32 +185,32 @@ exports[`TextField should render properly with default props 1`] = `
   cursor: not-allowed;
 }
 
-.c1:focus:valid {
+.c1:focus {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c1:focus:valid ~ .c2 {
+.c1:focus ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus:valid ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus:valid::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:valid::-moz-placeholder {
+.c1:focus::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:valid:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:valid::placeholder {
+.c1:focus::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -381,32 +381,32 @@ exports[`TextField with filled variant should render default state properly 1`] 
   cursor: not-allowed;
 }
 
-.c1:focus:valid {
+.c1:focus {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c1:focus:valid ~ .c2 {
+.c1:focus ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus:valid ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus:valid::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:valid::-moz-placeholder {
+.c1:focus::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:valid:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:valid::placeholder {
+.c1:focus::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -813,32 +813,32 @@ exports[`TextField with filled variant should render focus state properly  1`] =
   cursor: not-allowed;
 }
 
-.c1:focus:valid {
+.c1:focus {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c1:focus:valid ~ .c2 {
+.c1:focus ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus:valid ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus:valid::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:valid::-moz-placeholder {
+.c1:focus::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:valid:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:valid::placeholder {
+.c1:focus::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -1055,32 +1055,32 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   cursor: not-allowed;
 }
 
-.c1:focus:valid {
+.c1:focus {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c1:focus:valid ~ .c2 {
+.c1:focus ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus:valid ~ .c5 * {
+.c1:focus ~ .c5 * {
   fill: #005AEE;
 }
 
-.c1:focus:valid::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:valid::-moz-placeholder {
+.c1:focus::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:valid:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:valid::placeholder {
+.c1:focus::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -1289,32 +1289,32 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   cursor: not-allowed;
 }
 
-.c1:focus:valid {
+.c1:focus {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c1:focus:valid ~ .c2 {
+.c1:focus ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus:valid ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus:valid::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:valid::-moz-placeholder {
+.c1:focus::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:valid:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:valid::placeholder {
+.c1:focus::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -1496,32 +1496,32 @@ exports[`TextField with outlined variant should render default state properly 1`
   cursor: not-allowed;
 }
 
-.c1:focus:valid {
+.c1:focus {
   border-color: #005AEE;
   background-color: transparent;
 }
 
-.c1:focus:valid ~ .c2 {
+.c1:focus ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus:valid ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus:valid::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:valid::-moz-placeholder {
+.c1:focus::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:valid:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:valid::placeholder {
+.c1:focus::placeholder {
   color: #C7D0D8;
 }
 
@@ -1920,32 +1920,32 @@ exports[`TextField with outlined variant should render focus state properly  1`]
   cursor: not-allowed;
 }
 
-.c1:focus:valid {
+.c1:focus {
   border-color: #005AEE;
   background-color: transparent;
 }
 
-.c1:focus:valid ~ .c2 {
+.c1:focus ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus:valid ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus:valid::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:valid::-moz-placeholder {
+.c1:focus::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:valid:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:valid::placeholder {
+.c1:focus::placeholder {
   color: #C7D0D8;
 }
 
@@ -2158,32 +2158,32 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   cursor: not-allowed;
 }
 
-.c1:focus:valid {
+.c1:focus {
   border-color: #005AEE;
   background-color: transparent;
 }
 
-.c1:focus:valid ~ .c2 {
+.c1:focus ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus:valid ~ .c5 * {
+.c1:focus ~ .c5 * {
   fill: #005AEE;
 }
 
-.c1:focus:valid::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:valid::-moz-placeholder {
+.c1:focus::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:valid:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:valid::placeholder {
+.c1:focus::placeholder {
   color: #C7D0D8;
 }
 
@@ -2388,32 +2388,32 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   cursor: not-allowed;
 }
 
-.c1:focus:valid {
+.c1:focus {
   border-color: #005AEE;
   background-color: transparent;
 }
 
-.c1:focus:valid ~ .c2 {
+.c1:focus ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus:valid ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus:valid::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:valid::-moz-placeholder {
+.c1:focus::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:valid:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:valid::placeholder {
+.c1:focus::placeholder {
   color: #C7D0D8;
 }
 

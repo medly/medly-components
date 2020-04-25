@@ -33,7 +33,7 @@ const filledStyle = ({ theme, filled }: StyledProps) => {
 };
 
 const activeStyle = ({ theme: { textField }, variant }: StyledProps) => css`
-    &:focus:valid {
+    &:focus {
         border-color: ${textField[variant].active.borderColor};
         background-color: ${variant === 'filled' ? textField.filled.active.bgColor : 'transparent'};
         & ~ ${Label} {
