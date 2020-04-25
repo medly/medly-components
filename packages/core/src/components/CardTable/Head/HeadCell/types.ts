@@ -1,4 +1,4 @@
-import { WithThemeProp } from '@medly-components/utils/src';
+import { WithThemeProp } from '@medly-components/utils';
 import { ColumnConfig, SortOrder } from '../../types';
 
 export interface Props extends WithThemeProp {

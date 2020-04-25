@@ -1,4 +1,4 @@
-import { WithStyle } from '@medly-components/utils/src';
+import { WithStyle } from '@medly-components/utils';
 import React, { useMemo } from 'react';
 import Text from '../../../Text';
 import * as Style from './Cell.styled';

@@ -1,4 +1,4 @@
-import { Theme } from '@medly-components/theme/src';
+import { Theme } from '@medly-components/theme';
 import { WithStyle, WithThemeProp } from '@medly-components/utils';
 import { SFC } from 'react';
 import { StyledComponent } from 'styled-components';

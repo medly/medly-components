@@ -1,5 +1,5 @@
-import { ArrowDropDownIcon, ArrowDropUpIcon, DropdownIcon } from '@medly-components/icons/src';
-import { WithStyle } from '@medly-components/utils/src';
+import { ArrowDropDownIcon, ArrowDropUpIcon, DropdownIcon } from '@medly-components/icons';
+import { WithStyle } from '@medly-components/utils';
 import React, { SFC, useCallback, useEffect, useMemo, useState } from 'react';
 import Text from '../../../Text';
 import * as Styled from './HeadCell.styled';
