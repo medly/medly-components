@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Card Table HeadCell should be able to "center" align  1`] = `
-.c2 {
+.c4 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -11,21 +11,31 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-transform: uppercase;
+}
+
+.c2 {
+  padding: 1rem 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0;
-  padding: 2.4rem 2.4rem;
+  padding: 0 0.8rem;
+  margin: 1.4rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -42,32 +52,36 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
   width: 100%;
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1.6rem;
   left: 0;
   background-color: transparent;
   height: 0.2rem;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
-.c0:hover .c1 {
+.c0 .c1:hover {
+  cursor: default;
+}
+
+.c0 .c1:hover .c3 {
   color: #1A6BF0;
 }
 
-.c0:hover::after {
-  background-color: #1A6BF0;
-}
-
-.c0:hover .sc-AykKE * {
+.c0 .c1:hover .sc-AykKE * {
   fill: #1A6BF0;
 }
 
-.c0 .c1 {
+.c0 .c3 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: inline;
-  cursor: default;
   color: #435465;
 }
 
 .c0 .sc-AykKE {
+  width: 2.4rem;
   cursor: pointer;
   padding-left: 1rem;
 }
@@ -83,11 +97,15 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
         <th
           class="c0"
         >
-          <h5
+          <span
             class="c1 c2"
           >
-            Column 1
-          </h5>
+            <h5
+              class="c3 c4"
+            >
+              Column 1
+            </h5>
+          </span>
         </th>
       </tr>
     </thead>
@@ -96,7 +114,7 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
 `;
 
 exports[`Card Table HeadCell should be able to "left" align  1`] = `
-.c2 {
+.c4 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -106,21 +124,31 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-transform: uppercase;
+}
+
+.c2 {
+  padding: 1rem 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0;
-  padding: 2.4rem 2.4rem;
+  padding: 0 0.8rem;
+  margin: 1.4rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -137,32 +165,36 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
   width: 100%;
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1.6rem;
   left: 0;
   background-color: transparent;
   height: 0.2rem;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
-.c0:hover .c1 {
+.c0 .c1:hover {
+  cursor: default;
+}
+
+.c0 .c1:hover .c3 {
   color: #1A6BF0;
 }
 
-.c0:hover::after {
-  background-color: #1A6BF0;
-}
-
-.c0:hover .sc-AykKE * {
+.c0 .c1:hover .sc-AykKE * {
   fill: #1A6BF0;
 }
 
-.c0 .c1 {
+.c0 .c3 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: inline;
-  cursor: default;
   color: #435465;
 }
 
 .c0 .sc-AykKE {
+  width: 2.4rem;
   cursor: pointer;
   padding-left: 1rem;
 }
@@ -178,11 +210,15 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
         <th
           class="c0"
         >
-          <h5
+          <span
             class="c1 c2"
           >
-            Column 1
-          </h5>
+            <h5
+              class="c3 c4"
+            >
+              Column 1
+            </h5>
+          </span>
         </th>
       </tr>
     </thead>
@@ -191,7 +227,7 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
 `;
 
 exports[`Card Table HeadCell should be able to "right" align  1`] = `
-.c2 {
+.c4 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -201,21 +237,31 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-transform: uppercase;
+}
+
+.c2 {
+  padding: 1rem 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0;
-  padding: 2.4rem 2.4rem;
+  padding: 0 0.8rem;
+  margin: 1.4rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -232,32 +278,36 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
   width: 100%;
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1.6rem;
   left: 0;
   background-color: transparent;
   height: 0.2rem;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
-.c0:hover .c1 {
+.c0 .c1:hover {
+  cursor: default;
+}
+
+.c0 .c1:hover .c3 {
   color: #1A6BF0;
 }
 
-.c0:hover::after {
-  background-color: #1A6BF0;
-}
-
-.c0:hover .sc-AykKE * {
+.c0 .c1:hover .sc-AykKE * {
   fill: #1A6BF0;
 }
 
-.c0 .c1 {
+.c0 .c3 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: inline;
-  cursor: default;
   color: #435465;
 }
 
 .c0 .sc-AykKE {
+  width: 2.4rem;
   cursor: pointer;
   padding-left: 1rem;
 }
@@ -273,11 +323,15 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
         <th
           class="c0"
         >
-          <h5
+          <span
             class="c1 c2"
           >
-            Column 1
-          </h5>
+            <h5
+              class="c3 c4"
+            >
+              Column 1
+            </h5>
+          </span>
         </th>
       </tr>
     </thead>
@@ -286,19 +340,19 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
 `;
 
 exports[`Card Table HeadCell should call onSortChange with asc order when clicked on sorting icon 1`] = `
-.c3 {
+.c5 {
   font-size: 2.4rem;
-  cursor: pointer;
+  cursor: inherit;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
 }
 
-.c3 * {
+.c5 * {
   fill-opacity: 1;
   fill: #607890;
 }
 
-.c2 {
+.c4 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -308,21 +362,31 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-transform: uppercase;
+}
+
+.c2 {
+  padding: 1rem 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0;
-  padding: 2.4rem 2.4rem;
+  padding: 0 0.8rem;
+  margin: 1.4rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -339,32 +403,36 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
   width: 100%;
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1.6rem;
   left: 0;
   background-color: #005AEE;
   height: 0.2rem;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
-.c0:hover .c1 {
+.c0 .c1:hover {
+  cursor: pointer;
+}
+
+.c0 .c1:hover .c3 {
   color: #1A6BF0;
 }
 
-.c0:hover::after {
-  background-color: #1A6BF0;
-}
-
-.c0:hover .sc-AykKE * {
+.c0 .c1:hover .sc-AykKE * {
   fill: #1A6BF0;
 }
 
-.c0 .c1 {
+.c0 .c3 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: inline;
-  cursor: default;
   color: #005AEE;
 }
 
 .c0 .sc-AykKE {
+  width: 2.4rem;
   cursor: pointer;
   padding-left: 1rem;
 }
@@ -380,25 +448,29 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
         <th
           class="c0"
         >
-          <h5
+          <span
             class="c1 c2"
           >
-            Demo
-          </h5>
-          <svg
-            class="c3"
-            fill="none"
-            height="1em"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M8.706 12.586l2.59-2.59a.996.996 0 0 1 1.41 0l2.59 2.59c.63.63.18 1.71-.71 1.71h-5.18c-.89 0-1.33-1.08-.7-1.71z"
-              fill="#000"
-              fill-opacity=".54"
-            />
-          </svg>
+            <h5
+              class="c3 c4"
+            >
+              Demo
+            </h5>
+            <svg
+              class="c5"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.706 12.586l2.59-2.59a.996.996 0 0 1 1.41 0l2.59 2.59c.63.63.18 1.71-.71 1.71h-5.18c-.89 0-1.33-1.08-.7-1.71z"
+                fill="#000"
+                fill-opacity=".54"
+              />
+            </svg>
+          </span>
         </th>
       </tr>
     </thead>
@@ -407,19 +479,19 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
 `;
 
 exports[`Card Table HeadCell should call onSortChange with desc order when clicked on sorting icon 1`] = `
-.c3 {
+.c5 {
   font-size: 2.4rem;
-  cursor: pointer;
+  cursor: inherit;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
 }
 
-.c3 * {
+.c5 * {
   fill-opacity: 1;
   fill: #607890;
 }
 
-.c2 {
+.c4 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -429,21 +501,31 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-transform: uppercase;
+}
+
+.c2 {
+  padding: 1rem 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0;
-  padding: 2.4rem 2.4rem;
+  padding: 0 0.8rem;
+  margin: 1.4rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -460,32 +542,36 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
   width: 100%;
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1.6rem;
   left: 0;
   background-color: #005AEE;
   height: 0.2rem;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
-.c0:hover .c1 {
+.c0 .c1:hover {
+  cursor: pointer;
+}
+
+.c0 .c1:hover .c3 {
   color: #1A6BF0;
 }
 
-.c0:hover::after {
-  background-color: #1A6BF0;
-}
-
-.c0:hover .sc-AykKE * {
+.c0 .c1:hover .sc-AykKE * {
   fill: #1A6BF0;
 }
 
-.c0 .c1 {
+.c0 .c3 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: inline;
-  cursor: default;
   color: #005AEE;
 }
 
 .c0 .sc-AykKE {
+  width: 2.4rem;
   cursor: pointer;
   padding-left: 1rem;
 }
@@ -501,25 +587,29 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
         <th
           class="c0"
         >
-          <h5
+          <span
             class="c1 c2"
           >
-            Demo
-          </h5>
-          <svg
-            class="c3"
-            fill="none"
-            height="1em"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M8.706 11.414l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71h-5.18c-.89 0-1.33 1.08-.7 1.71z"
-              fill="#000"
-              fill-opacity=".54"
-            />
-          </svg>
+            <h5
+              class="c3 c4"
+            >
+              Demo
+            </h5>
+            <svg
+              class="c5"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.706 11.414l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71h-5.18c-.89 0-1.33 1.08-.7 1.71z"
+                fill="#000"
+                fill-opacity=".54"
+              />
+            </svg>
+          </span>
         </th>
       </tr>
     </thead>
@@ -528,7 +618,7 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
 `;
 
 exports[`Card Table HeadCell should render properly with dark background and dropdown icon by default 1`] = `
-.c2 {
+.c4 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -538,21 +628,31 @@ exports[`Card Table HeadCell should render properly with dark background and dro
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-transform: uppercase;
+}
+
+.c2 {
+  padding: 1rem 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0;
-  padding: 2.4rem 2.4rem;
+  padding: 0 0.8rem;
+  margin: 1.4rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -569,32 +669,36 @@ exports[`Card Table HeadCell should render properly with dark background and dro
   width: 100%;
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1.6rem;
   left: 0;
   background-color: transparent;
   height: 0.2rem;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
-.c0:hover .c1 {
+.c0 .c1:hover {
+  cursor: default;
+}
+
+.c0 .c1:hover .c3 {
   color: #1A6BF0;
 }
 
-.c0:hover::after {
-  background-color: #1A6BF0;
-}
-
-.c0:hover .sc-AykKE * {
+.c0 .c1:hover .sc-AykKE * {
   fill: #1A6BF0;
 }
 
-.c0 .c1 {
+.c0 .c3 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: inline;
-  cursor: default;
   color: #435465;
 }
 
 .c0 .sc-AykKE {
+  width: 2.4rem;
   cursor: pointer;
   padding-left: 1rem;
 }
@@ -610,11 +714,15 @@ exports[`Card Table HeadCell should render properly with dark background and dro
         <th
           class="c0"
         >
-          <h5
+          <span
             class="c1 c2"
           >
-            Demo
-          </h5>
+            <h5
+              class="c3 c4"
+            >
+              Demo
+            </h5>
+          </span>
         </th>
       </tr>
     </thead>
@@ -623,19 +731,19 @@ exports[`Card Table HeadCell should render properly with dark background and dro
 `;
 
 exports[`Card Table HeadCell should render properly with hover state 1`] = `
-.c3 {
+.c5 {
   font-size: 1.6rem;
-  cursor: pointer;
+  cursor: inherit;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
 }
 
-.c3 * {
+.c5 * {
   fill-opacity: 1;
   fill: #607890;
 }
 
-.c2 {
+.c4 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -645,21 +753,31 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-transform: uppercase;
+}
+
+.c2 {
+  padding: 1rem 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0;
-  padding: 2.4rem 2.4rem;
+  padding: 0 0.8rem;
+  margin: 1.4rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -676,32 +794,36 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
   width: 100%;
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1.6rem;
   left: 0;
   background-color: transparent;
   height: 0.2rem;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
-.c0:hover .c1 {
+.c0 .c1:hover {
+  cursor: pointer;
+}
+
+.c0 .c1:hover .c3 {
   color: #1A6BF0;
 }
 
-.c0:hover::after {
-  background-color: #1A6BF0;
-}
-
-.c0:hover .sc-AykKE * {
+.c0 .c1:hover .sc-AykKE * {
   fill: #1A6BF0;
 }
 
-.c0 .c1 {
+.c0 .c3 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: inline;
-  cursor: default;
   color: #607890;
 }
 
 .c0 .sc-AykKE {
+  width: 2.4rem;
   cursor: pointer;
   padding-left: 1rem;
 }
@@ -717,24 +839,28 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
         <th
           class="c0"
         >
-          <h5
+          <span
             class="c1 c2"
           >
-            Demo
-          </h5>
-          <svg
-            class="c3"
-            fill="none"
-            height="1em"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M11.208 5.03a1 1 0 0 1 1.584 0l3.165 4.11a1 1 0 0 1-.793 1.61H8.836a1 1 0 0 1-.793-1.61l3.165-4.11zM12.792 18.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
-              fill="#000"
-            />
-          </svg>
+            <h5
+              class="c3 c4"
+            >
+              Demo
+            </h5>
+            <svg
+              class="c5"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.208 5.03a1 1 0 0 1 1.584 0l3.165 4.11a1 1 0 0 1-.793 1.61H8.836a1 1 0 0 1-.793-1.61l3.165-4.11zM12.792 18.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                fill="#000"
+              />
+            </svg>
+          </span>
         </th>
       </tr>
     </thead>
@@ -743,19 +869,19 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
 `;
 
 exports[`Card Table HeadCell should render properly with light background and dropdown icon by default 1`] = `
-.c3 {
+.c5 {
   font-size: 1.6rem;
-  cursor: pointer;
+  cursor: inherit;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
 }
 
-.c3 * {
+.c5 * {
   fill-opacity: 1;
   fill: #607890;
 }
 
-.c2 {
+.c4 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -765,21 +891,31 @@ exports[`Card Table HeadCell should render properly with light background and dr
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-transform: uppercase;
+}
+
+.c2 {
+  padding: 1rem 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0;
-  padding: 2.4rem 2.4rem;
+  padding: 0 0.8rem;
+  margin: 1.4rem 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -796,32 +932,36 @@ exports[`Card Table HeadCell should render properly with light background and dr
   width: 100%;
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1.6rem;
   left: 0;
   background-color: transparent;
   height: 0.2rem;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
-.c0:hover .c1 {
+.c0 .c1:hover {
+  cursor: pointer;
+}
+
+.c0 .c1:hover .c3 {
   color: #1A6BF0;
 }
 
-.c0:hover::after {
-  background-color: #1A6BF0;
-}
-
-.c0:hover .sc-AykKE * {
+.c0 .c1:hover .sc-AykKE * {
   fill: #1A6BF0;
 }
 
-.c0 .c1 {
+.c0 .c3 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: inline;
-  cursor: default;
   color: #607890;
 }
 
 .c0 .sc-AykKE {
+  width: 2.4rem;
   cursor: pointer;
   padding-left: 1rem;
 }
@@ -837,24 +977,28 @@ exports[`Card Table HeadCell should render properly with light background and dr
         <th
           class="c0"
         >
-          <h5
+          <span
             class="c1 c2"
           >
-            Demo
-          </h5>
-          <svg
-            class="c3"
-            fill="none"
-            height="1em"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M11.208 5.03a1 1 0 0 1 1.584 0l3.165 4.11a1 1 0 0 1-.793 1.61H8.836a1 1 0 0 1-.793-1.61l3.165-4.11zM12.792 18.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
-              fill="#000"
-            />
-          </svg>
+            <h5
+              class="c3 c4"
+            >
+              Demo
+            </h5>
+            <svg
+              class="c5"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.208 5.03a1 1 0 0 1 1.584 0l3.165 4.11a1 1 0 0 1-.793 1.61H8.836a1 1 0 0 1-.793-1.61l3.165-4.11zM12.792 18.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                fill="#000"
+              />
+            </svg>
+          </span>
         </th>
       </tr>
     </thead>

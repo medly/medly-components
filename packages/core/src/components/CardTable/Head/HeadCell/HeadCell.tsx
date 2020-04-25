@@ -5,15 +5,15 @@ import Text from '../../../Text';
 import * as Styled from './HeadCell.styled';
 import { Props } from './types';
 
-export const HeadCell: SFC<Props> & WithStyle = React.memo(({ sortField, onSortChange, withWhiteBackground, column }) => {
+export const HeadCell: SFC<Props> & WithStyle = React.memo(({ defaultSortOrder, sortField, onSortChange, withWhiteBackground, column }) => {
     const { field, sort: isSortEnabled, title, align, flex } = column,
-        [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>('none');
+        [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>(defaultSortOrder);
 
     useEffect(() => {
         sortField !== field && setSortState('none');
     }, [sortField]);
 
-    const handleSortIconClick = useCallback(() => {
+    const handleSort = useCallback(() => {
         const order = sortState === 'asc' ? 'desc' : 'asc';
         setSortState(order);
         onSortChange(field, order);
@@ -22,21 +22,28 @@ export const HeadCell: SFC<Props> & WithStyle = React.memo(({ sortField, onSortC
     const sortIcon = useMemo(
         () =>
             sortField !== field ? (
-                <DropdownIcon size="XS" onClick={handleSortIconClick} />
+                <DropdownIcon size="XS" />
             ) : sortState === 'desc' ? (
-                <ArrowDropDownIcon size="M" onClick={handleSortIconClick} />
+                <ArrowDropDownIcon size="M" />
             ) : (
-                <ArrowDropUpIcon size="M" onClick={handleSortIconClick} />
+                <ArrowDropUpIcon size="M" />
             ),
-        [handleSortIconClick, sortField, field, sortState]
+        [handleSort, sortField, field, sortState]
     );
 
     return (
-        <Styled.HeadCell flex={flex} align={align} withWhiteBackground={withWhiteBackground} isActive={sortField === field}>
-            <Text textVariant="h5">{title}</Text>
-            {isSortEnabled && sortIcon}
+        <Styled.HeadCell isActive={sortField === field} {...{ flex, align, isSortEnabled, withWhiteBackground }}>
+            <Styled.HeadCellContent onClick={isSortEnabled && handleSort}>
+                <Text uppercase textVariant="h5">
+                    {title}
+                </Text>
+                {isSortEnabled && sortIcon}
+            </Styled.HeadCellContent>
         </Styled.HeadCell>
     );
 });
+HeadCell.defaultProps = {
+    defaultSortOrder: 'none'
+};
 HeadCell.displayName = 'HeadCell';
 HeadCell.Style = Styled.HeadCell;

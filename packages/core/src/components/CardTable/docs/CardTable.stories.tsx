@@ -27,7 +27,14 @@ export const WithGreyBackground = () => {
     return (
         <>
             <DarkBackground />
-            <CardTable data={cardTableData} onSort={handleFilterData} columns={columns} onRowClick={handleRowClick} />
+            <CardTable
+                defaultSortField="patientInfo"
+                defaultSortOrder="desc"
+                data={cardTableData}
+                onSort={handleFilterData}
+                columns={columns}
+                onRowClick={handleRowClick}
+            />
         </>
     );
 };
@@ -41,10 +48,11 @@ export const WithWhiteBackground = () => {
 
     return (
         <CardTable
+            defaultSortField="patientInfo"
+            defaultSortOrder="desc"
             data={cardTableData}
             onSort={handleFilterData}
             columns={columns}
-            rowClickDisableKey={''}
             onRowClick={handleRowClick}
             withWhiteBackground
         />

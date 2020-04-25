@@ -25,6 +25,17 @@ Simple table with all the rows shown as card.
 
 #### With Grey Background
 
+```tsx
+<CardTable
+    defaultSortField="patientInfo"
+    defaultSortOrder="desc"
+    data={cardTableData}
+    onSort={handleFilterData}
+    columns={columns}
+    onRowClick={handleRowClick}
+/>
+```
+
 <Preview withToolbar>
     <Story name="WithGreyBackground" parameters={{ decorators: [withKnobs] }}>
         <WithGreyBackground />
@@ -32,6 +43,18 @@ Simple table with all the rows shown as card.
 </Preview>
 
 #### With White Background
+
+```tsx
+<CardTable
+    withWhiteBackground
+    defaultSortField="patientInfo"
+    defaultSortOrder="desc"
+    data={cardTableData}
+    onSort={handleFilterData}
+    columns={columns}
+    onRowClick={handleRowClick}
+/>
+```
 
 <Preview withToolbar>
     <Story name="WithWhiteBackground" parameters={{ decorators: [withKnobs] }}>

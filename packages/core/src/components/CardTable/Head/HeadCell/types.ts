@@ -2,6 +2,7 @@ import { WithThemeProp } from '@medly-components/utils/src';
 import { ColumnConfig, SortOrder } from '../../types';
 
 export interface Props extends WithThemeProp {
+    defaultSortOrder?: SortOrder | 'none';
     column: ColumnConfig;
     sortField?: string;
     withWhiteBackground: boolean;
@@ -10,6 +11,7 @@ export interface Props extends WithThemeProp {
 
 export interface StyledProps {
     isActive: boolean;
+    isSortEnabled: boolean;
     withWhiteBackground: boolean;
     flex: number;
     align: 'left' | 'center' | 'right';

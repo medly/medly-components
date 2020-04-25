@@ -29,6 +29,10 @@ export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'
     columns: ColumnConfig[];
     /** Key name in data to be used as unique id */
     uniqueKeyName?: string;
+    /** Default Sort Field*/
+    defaultSortField?: string;
+    /** Default Sort Order*/
+    defaultSortOrder?: SortOrder;
     /** Function to be called on click of sort icon */
     onSort?: (field: string, order: SortOrder) => void;
     /** Function to be called on row click */
