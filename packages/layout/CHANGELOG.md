@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.28](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.27...@medly-components/layout@1.0.0-beta.28) (2020-04-27)
+
+
+### Bug Fixes
+
+* fix build issue ([a8cf4aa](https://github.com/medlypharmacy/medly-components/commit/a8cf4aa56025651c062af1fc513b019cac24a7f8))
+
+
+
+
+
 # [1.0.0-beta.27](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.26...@medly-components/layout@1.0.0-beta.27) (2020-04-21)
 
 

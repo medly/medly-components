@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.21](https://github.com/medlypharmacy/medly-components/compare/@medly-components/icons@1.0.0-beta.20...@medly-components/icons@1.0.0-beta.21) (2020-04-27)
+
+
+### Bug Fixes
+
+* fix build issue ([a8cf4aa](https://github.com/medlypharmacy/medly-components/commit/a8cf4aa56025651c062af1fc513b019cac24a7f8))
+
+
+
+
+
 # [1.0.0-beta.20](https://github.com/medlypharmacy/medly-components/compare/@medly-components/icons@1.0.0-beta.19...@medly-components/icons@1.0.0-beta.20) (2020-04-21)
 
 

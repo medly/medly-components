@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.27](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.26...@medly-components/core@1.0.0-beta.27) (2020-04-27)
+
+
+### Bug Fixes
+
+* **core:** fix card table header icon and click issue ([e65e321](https://github.com/medlypharmacy/medly-components/commit/e65e321f96a0e0570b4e0363a356c9fe0fc6f6ba))
+* **core:** fix design issues in card table ([10230d4](https://github.com/medlypharmacy/medly-components/commit/10230d43418e989123dd907f472365a964006b9a))
+* **core:** fix lint issue ([67653f7](https://github.com/medlypharmacy/medly-components/commit/67653f73ae76ce83d455dbbf20e4d47f15aea574))
+* fix build issue ([a8cf4aa](https://github.com/medlypharmacy/medly-components/commit/a8cf4aa56025651c062af1fc513b019cac24a7f8))
+* **core:** remove :invalid pseudo class from text field ([60e6c08](https://github.com/medlypharmacy/medly-components/commit/60e6c08fdd955baf34f0d437ff260d9b370d74ba))
+* **core:** remove :valid pseudo class from text field component ([c2007f1](https://github.com/medlypharmacy/medly-components/commit/c2007f197ca01af71b1979338cec8e829aa73bb0))
+
+
+### Features
+
+* **core:** add a new CardsTable component ([f983574](https://github.com/medlypharmacy/medly-components/commit/f983574dd962c58185d80de454921baf34dc8e70))
+* **core:** add active and hover state on card table header ([ceb0b8d](https://github.com/medlypharmacy/medly-components/commit/ceb0b8d6f90758da00b4d555784dbcf3acc6a009))
+* **core:** add TextField component ([06e8c11](https://github.com/medlypharmacy/medly-components/commit/06e8c1142b05072d53c078946c578d928b21c902))
+
+
+
+
+
 # [1.0.0-beta.26](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.25...@medly-components/core@1.0.0-beta.26) (2020-04-21)
 
 
