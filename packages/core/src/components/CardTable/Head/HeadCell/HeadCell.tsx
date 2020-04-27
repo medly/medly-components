@@ -1,4 +1,4 @@
-import { ArrowDropDownIcon, ArrowDropUpIcon, DropdownIcon } from '@medly-components/icons';
+import { ChevronDownIcon, ChevronUpIcon, DropdownIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
 import React, { SFC, useCallback, useEffect, useMemo, useState } from 'react';
 import Text from '../../../Text';
@@ -22,11 +22,11 @@ export const HeadCell: SFC<Props> & WithStyle = React.memo(({ defaultSortOrder, 
     const sortIcon = useMemo(
         () =>
             sortField !== field ? (
-                <DropdownIcon size="XS" />
+                <DropdownIcon size="S" />
             ) : sortState === 'desc' ? (
-                <ArrowDropDownIcon size="M" />
+                <ChevronDownIcon size="M" />
             ) : (
-                <ArrowDropUpIcon size="M" />
+                <ChevronUpIcon size="M" />
             ),
         [handleSort, sortField, field, sortState]
     );

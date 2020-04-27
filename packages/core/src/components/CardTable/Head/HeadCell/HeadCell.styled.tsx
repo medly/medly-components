@@ -22,13 +22,15 @@ export const HeadCell = styled('th').attrs(({ withWhiteBackground }: StyledProps
 
     &::after {
         content: '';
-        width: 100%;
+        width: calc(100% - 1.6rem);
+        margin: 0 0.8rem;
         display: block;
         position: absolute;
         bottom: -1.6rem;
         left: 0;
         background-color: ${({ theme, bgTheme, isActive }) => (isActive ? theme.cardTable[bgTheme].headerActiveColor : 'transparent')};
         height: 0.2rem;
+        transition: all 100ms ease-out;
         border-radius: 0.2rem 0.2rem 0 0;
     }
 
@@ -47,6 +49,7 @@ export const HeadCell = styled('th').attrs(({ withWhiteBackground }: StyledProps
     }
 
     ${Text.Style} {
+        transition: all 100ms ease-out;
         user-select: none;
         display: inline;
         color: ${({ theme, bgTheme, isActive }) =>
@@ -54,9 +57,10 @@ export const HeadCell = styled('th').attrs(({ withWhiteBackground }: StyledProps
     }
 
     ${SvgIcon} {
+        transition: all 100ms ease-out;
         width: 2.4rem;
         cursor: pointer;
-        padding-left: 1rem;
+        padding-left: 0.4rem;
         * {
             fill: ${({ theme, bgTheme, isActive }) =>
                 isActive ? theme.cardTable[bgTheme].headerActiveColor : theme.cardTable[bgTheme].headerColor};

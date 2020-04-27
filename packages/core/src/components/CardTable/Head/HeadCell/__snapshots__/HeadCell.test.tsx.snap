@@ -49,13 +49,16 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
 
 .c0::after {
   content: '';
-  width: 100%;
+  width: calc(100% - 1.6rem);
+  margin: 0 0.8rem;
   display: block;
   position: absolute;
   bottom: -1.6rem;
   left: 0;
   background-color: transparent;
   height: 0.2rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
@@ -72,6 +75,8 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
 }
 
 .c0 .c3 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -81,9 +86,11 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
 }
 
 .c0 .sc-AykKC {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
-  padding-left: 1rem;
+  padding-left: 0.4rem;
 }
 
 .c0 .sc-AykKC * {
@@ -162,13 +169,16 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
 
 .c0::after {
   content: '';
-  width: 100%;
+  width: calc(100% - 1.6rem);
+  margin: 0 0.8rem;
   display: block;
   position: absolute;
   bottom: -1.6rem;
   left: 0;
   background-color: transparent;
   height: 0.2rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
@@ -185,6 +195,8 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
 }
 
 .c0 .c3 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -194,9 +206,11 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
 }
 
 .c0 .sc-AykKC {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
-  padding-left: 1rem;
+  padding-left: 0.4rem;
 }
 
 .c0 .sc-AykKC * {
@@ -275,13 +289,16 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
 
 .c0::after {
   content: '';
-  width: 100%;
+  width: calc(100% - 1.6rem);
+  margin: 0 0.8rem;
   display: block;
   position: absolute;
   bottom: -1.6rem;
   left: 0;
   background-color: transparent;
   height: 0.2rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
@@ -298,6 +315,8 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
 }
 
 .c0 .c3 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -307,9 +326,11 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
 }
 
 .c0 .sc-AykKC {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
-  padding-left: 1rem;
+  padding-left: 0.4rem;
 }
 
 .c0 .sc-AykKC * {
@@ -400,13 +421,16 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
 
 .c0::after {
   content: '';
-  width: 100%;
+  width: calc(100% - 1.6rem);
+  margin: 0 0.8rem;
   display: block;
   position: absolute;
   bottom: -1.6rem;
   left: 0;
   background-color: #005AEE;
   height: 0.2rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
@@ -423,6 +447,8 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
 }
 
 .c0 .c3 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -432,9 +458,11 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
 }
 
 .c0 .c5 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
-  padding-left: 1rem;
+  padding-left: 0.4rem;
 }
 
 .c0 .c5 * {
@@ -465,9 +493,8 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M8.706 12.586l2.59-2.59a.996.996 0 0 1 1.41 0l2.59 2.59c.63.63.18 1.71-.71 1.71h-5.18c-.89 0-1.33-1.08-.7-1.71z"
+                d="M11.208 9.03a1 1 0 0 1 1.584 0l3.165 4.11a1 1 0 0 1-.793 1.61H8.836a1 1 0 0 1-.793-1.61l3.165-4.11z"
                 fill="#000"
-                fill-opacity=".54"
               />
             </svg>
           </span>
@@ -539,13 +566,16 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
 
 .c0::after {
   content: '';
-  width: 100%;
+  width: calc(100% - 1.6rem);
+  margin: 0 0.8rem;
   display: block;
   position: absolute;
   bottom: -1.6rem;
   left: 0;
   background-color: #005AEE;
   height: 0.2rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
@@ -562,6 +592,8 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
 }
 
 .c0 .c3 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -571,9 +603,11 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
 }
 
 .c0 .c5 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
-  padding-left: 1rem;
+  padding-left: 0.4rem;
 }
 
 .c0 .c5 * {
@@ -604,9 +638,8 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M8.706 11.414l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71h-5.18c-.89 0-1.33 1.08-.7 1.71z"
+                d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
                 fill="#000"
-                fill-opacity=".54"
               />
             </svg>
           </span>
@@ -666,13 +699,16 @@ exports[`Card Table HeadCell should render properly with dark background and dro
 
 .c0::after {
   content: '';
-  width: 100%;
+  width: calc(100% - 1.6rem);
+  margin: 0 0.8rem;
   display: block;
   position: absolute;
   bottom: -1.6rem;
   left: 0;
   background-color: transparent;
   height: 0.2rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
@@ -689,6 +725,8 @@ exports[`Card Table HeadCell should render properly with dark background and dro
 }
 
 .c0 .c3 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -698,9 +736,11 @@ exports[`Card Table HeadCell should render properly with dark background and dro
 }
 
 .c0 .sc-AykKC {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
-  padding-left: 1rem;
+  padding-left: 0.4rem;
 }
 
 .c0 .sc-AykKC * {
@@ -732,7 +772,7 @@ exports[`Card Table HeadCell should render properly with dark background and dro
 
 exports[`Card Table HeadCell should render properly with hover state 1`] = `
 .c6 {
-  font-size: 1.6rem;
+  font-size: 2.0rem;
   cursor: inherit;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -791,13 +831,16 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
 
 .c0::after {
   content: '';
-  width: 100%;
+  width: calc(100% - 1.6rem);
+  margin: 0 0.8rem;
   display: block;
   position: absolute;
   bottom: -1.6rem;
   left: 0;
   background-color: transparent;
   height: 0.2rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
@@ -814,6 +857,8 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
 }
 
 .c0 .c3 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -823,9 +868,11 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
 }
 
 .c0 .c5 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
-  padding-left: 1rem;
+  padding-left: 0.4rem;
 }
 
 .c0 .c5 * {
@@ -870,7 +917,7 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
 
 exports[`Card Table HeadCell should render properly with light background and dropdown icon by default 1`] = `
 .c6 {
-  font-size: 1.6rem;
+  font-size: 2.0rem;
   cursor: inherit;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -929,13 +976,16 @@ exports[`Card Table HeadCell should render properly with light background and dr
 
 .c0::after {
   content: '';
-  width: 100%;
+  width: calc(100% - 1.6rem);
+  margin: 0 0.8rem;
   display: block;
   position: absolute;
   bottom: -1.6rem;
   left: 0;
   background-color: transparent;
   height: 0.2rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
@@ -952,6 +1002,8 @@ exports[`Card Table HeadCell should render properly with light background and dr
 }
 
 .c0 .c3 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -961,9 +1013,11 @@ exports[`Card Table HeadCell should render properly with light background and dr
 }
 
 .c0 .c5 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   width: 2.4rem;
   cursor: pointer;
-  padding-left: 1rem;
+  padding-left: 0.4rem;
 }
 
 .c0 .c5 * {

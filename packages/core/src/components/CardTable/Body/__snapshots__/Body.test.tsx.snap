@@ -49,6 +49,8 @@ exports[`CardTable Body should render card table body properly 1`] = `
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
   background-color: white;
+  -webkit-transition: box-shadow 100ms ease-out;
+  transition: box-shadow 100ms ease-out;
   border: 0.1rem solid #ffffff;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
 }
