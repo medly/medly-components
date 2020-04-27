@@ -31,7 +31,7 @@
         "lint": "run-p -c lint:*",
         "lint:css": "stylelint 'packages/**/src/**/*.tsx'",
         "lint:ts": "eslint 'packages/**/src/**/*.{ts,tsx}'",
-        "prerelease": "yarn build && lerna version --exact --conventional-commits",
+        "prerelease": "yarn build && lerna version --exact --conventional-commits --yes",
         "release": "lerna publish from-git --yes",
         "test:generate-output": "jest --json --outputFile=.jest-test-results.json || true",
         "test": "run-s typecheck test:jest",
