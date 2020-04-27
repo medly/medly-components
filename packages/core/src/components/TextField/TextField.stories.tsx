@@ -44,6 +44,7 @@ type Result = [
     React.Dispatch<React.SetStateAction<string>>
 ];
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const useTextInput = ({ initialState = '', validator = (vl: string) => '' }): Result => {
     const [value, setValue] = useState(initialState),
         [errorText, setErrorText] = useState('');
