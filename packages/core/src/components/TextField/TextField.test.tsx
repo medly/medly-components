@@ -20,6 +20,11 @@ describe('TextField', () => {
         `);
     });
 
+    it('should handle with builtin form validation', () => {
+        const { container } = render(<TextField withBuiltInValidation label="Name" required type="email" />);
+        expect(container).toMatchSnapshot();
+    });
+
     it('should render asterisk if we pass required prop as true', () => {
         const { container } = render(<TextField label="Name" required />);
         expect(container.querySelector('label')).toMatchSnapshot();

@@ -1,5 +1,241 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`TextField should handle with builtin form validation 1`] = `
+.c3 {
+  top: 0;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  margin-left: 1.6rem;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
+}
+
+.c3::after {
+  content: ' *';
+}
+
+.c1 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 0.6rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  color: #13181D;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  cursor: text;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding-top: 2.3rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
+  border: none;
+  border-bottom: 0.1rem solid #566c82;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c1:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::placeholder {
+  opacity: 1;
+}
+
+.c1::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:not(:placeholder-shown) + .c2,
+.c1:focus + .c2 {
+  -webkit-transform: translate3d(0,20%,0) scale(0.75);
+  -ms-transform: translate3d(0,20%,0) scale(0.75);
+  transform: translate3d(0,20%,0) scale(0.75);
+}
+
+.c1 ~ .c2 {
+  color: #566c82;
+}
+
+.c1 ~ .sc-AykKF * {
+  fill: #566c82;
+}
+
+.c1 ~ .sc-AykKD {
+  color: #566c82;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled):focus {
+  padding-bottom: 0.5rem;
+  border-bottom-width: 0.2rem;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  color: #435465;
+  background-color: #F7F8F9;
+  border-color: #C7D0D8;
+}
+
+.c1:disabled ~ .c2 {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKF * {
+  fill: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKD {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ * {
+  cursor: not-allowed;
+}
+
+.c1:invalid {
+  caret-color: #cc0000;
+  border-color: #cc0000;
+  background-color: #FAE6E6;
+}
+
+.c1:invalid ~ .c2 {
+  color: #cc0000;
+}
+
+.c1:invalid ~ .sc-AykKF * {
+  fill: #cc0000;
+}
+
+.c1:invalid ~ .sc-AykKD {
+  color: #cc0000;
+}
+
+.c1:invalid::-webkit-input-placeholder {
+  color: rgba(204,0,0,.2);
+}
+
+.c1:invalid::-moz-placeholder {
+  color: rgba(204,0,0,.2);
+}
+
+.c1:invalid:-ms-input-placeholder {
+  color: rgba(204,0,0,.2);
+}
+
+.c1:invalid::placeholder {
+  color: rgba(204,0,0,.2);
+}
+
+.c1:focus {
+  border-color: #005AEE;
+  background-color: #e6effd;
+}
+
+.c1:focus ~ .c2 {
+  color: #005AEE;
+}
+
+.c1:focus ~ .sc-AykKF * {
+  fill: #005AEE;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus::placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      aria-describedby="medly-textField-helper-text"
+      class="c1"
+      id="medly-textField-input"
+      placeholder=" "
+      required=""
+      type="email"
+    />
+    <label
+      class="c2 c3"
+      for="medly-textField-input"
+      required=""
+    >
+      Name
+    </label>
+    
+  </div>
+</div>
+`;
+
 exports[`TextField should render asterisk if we pass required prop as true 1`] = `
 .c1 {
   top: 0;

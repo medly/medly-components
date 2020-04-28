@@ -48,6 +48,7 @@ TextField.Style = Styled.Input;
 TextField.defaultProps = {
     type: 'text',
     variant: 'filled',
+    withBuiltInValidation: false,
     fullWidth: false,
     disabled: false,
     required: false,

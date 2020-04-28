@@ -28,7 +28,15 @@ export const BuiltIn: React.SFC = () => {
         };
     return (
         <Form onSubmit={handleFormSubmit}>
-            <TextField type="email" label="Email" placeholder="Enter email" required value={email} onChange={handleEmailChange} />
+            <TextField
+                withBuiltInValidation
+                type="email"
+                label="Email"
+                placeholder="Enter email"
+                required
+                value={email}
+                onChange={handleEmailChange}
+            />
             <Button type="submit">Submit</Button>
         </Form>
     );
