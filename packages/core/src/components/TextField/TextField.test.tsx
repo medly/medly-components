@@ -20,7 +20,27 @@ describe('TextField', () => {
         `);
     });
 
-    it('should handle with builtin form validation', () => {
+    it('should take passed min width', () => {
+        const { container } = render(<TextField label="Name" minWidth="30rem" />);
+        expect(container.querySelector('div')).toHaveStyle(`
+            min-width: 30rem;
+        `);
+    });
+
+    describe('without label', () => {
+        it('should render default state properly', () => {
+            const { container } = render(<TextField type="email" />);
+            expect(container).toMatchSnapshot();
+        });
+
+        it('should render focus state properly ', () => {
+            const { container } = render(<TextField label="Name" />);
+            fireEvent.focusIn(container.querySelector('input'));
+            expect(container).toMatchSnapshot();
+        });
+    });
+
+    it('should handle builtin form validation', () => {
         const { container } = render(<TextField withBuiltInValidation label="Name" required type="email" />);
         expect(container).toMatchSnapshot();
     });
@@ -31,15 +51,19 @@ describe('TextField', () => {
     });
 
     describe.each(['outlined', 'filled'])('with %s variant', (variant: Props['variant']) => {
-        it('should render default state properly', () => {
-            const { container } = render(<TextField variant={variant} label="Name" />);
-            expect(container).toMatchSnapshot();
+        describe.each(['with label', 'without label'])('and %s', (labelCnd: string) => {
+            it('should render default state properly', () => {
+                const { container } = render(<TextField variant={variant} label={labelCnd === 'with labe' ? 'Name' : ''} />);
+                expect(container).toMatchSnapshot();
+            });
         });
 
-        it('should render focus state properly ', () => {
-            const { container } = render(<TextField variant={variant} label="Name" />);
-            fireEvent.focusIn(container.querySelector('input'));
-            expect(container).toMatchSnapshot();
+        describe.each(['with label', 'without label'])('and %s', (labelCnd: string) => {
+            it('should render focus state properly', () => {
+                const { container } = render(<TextField variant={variant} label={labelCnd === 'with labe' ? 'Name' : ''} />);
+                fireEvent.focusIn(container.querySelector('input'));
+                expect(container).toMatchSnapshot();
+            });
         });
 
         it('should render error state properly ', () => {

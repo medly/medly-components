@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TextField should handle with builtin form validation 1`] = `
+exports[`TextField should handle builtin form validation 1`] = `
 .c3 {
   top: 0;
   left: 0;
@@ -209,6 +209,12 @@ exports[`TextField should handle with builtin form validation 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -459,6 +465,12 @@ exports[`TextField should render properly with default props 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -484,7 +496,7 @@ exports[`TextField should render properly with default props 1`] = `
 </div>
 `;
 
-exports[`TextField with filled variant should render default state properly 1`] = `
+exports[`TextField with filled variant and with label should render default state properly 1`] = `
 .c3 {
   top: 0;
   left: 0;
@@ -508,7 +520,7 @@ exports[`TextField with filled variant should render default state properly 1`] 
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 0.6rem;
+  padding-bottom: 1.4rem;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
   color: #13181D;
@@ -518,7 +530,7 @@ exports[`TextField with filled variant should render default state properly 1`] 
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding-top: 2.3rem;
+  padding-top: 1.4rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   border: none;
@@ -590,7 +602,7 @@ exports[`TextField with filled variant should render default state properly 1`] 
 
 .c1:not(:disabled):hover,
 .c1:not(:disabled):focus {
-  padding-bottom: 0.5rem;
+  padding-bottom: 1.3rem;
   border-bottom-width: 0.2rem;
 }
 
@@ -655,6 +667,12 @@ exports[`TextField with filled variant should render default state properly 1`] 
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -672,9 +690,607 @@ exports[`TextField with filled variant should render default state properly 1`] 
     <label
       class="c2 c3"
       for="medly-textField-input"
-    >
-      Name
-    </label>
+    />
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with filled variant and with label should render focus state properly 1`] = `
+.c3 {
+  top: 0;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  margin-left: 1.6rem;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
+}
+
+.c1 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 1.4rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  color: #13181D;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  cursor: text;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding-top: 1.4rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
+  border: none;
+  border-bottom: 0.1rem solid #566c82;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c1:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::placeholder {
+  opacity: 1;
+}
+
+.c1::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:not(:placeholder-shown) + .c2,
+.c1:focus + .c2 {
+  -webkit-transform: translate3d(0,20%,0) scale(0.75);
+  -ms-transform: translate3d(0,20%,0) scale(0.75);
+  transform: translate3d(0,20%,0) scale(0.75);
+}
+
+.c1 ~ .c2 {
+  color: #566c82;
+}
+
+.c1 ~ .sc-AykKF * {
+  fill: #566c82;
+}
+
+.c1 ~ .sc-AykKD {
+  color: #566c82;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled):focus {
+  padding-bottom: 1.3rem;
+  border-bottom-width: 0.2rem;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  color: #435465;
+  background-color: #F7F8F9;
+  border-color: #C7D0D8;
+}
+
+.c1:disabled ~ .c2 {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKF * {
+  fill: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKD {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ * {
+  cursor: not-allowed;
+}
+
+.c1:focus {
+  border-color: #005AEE;
+  background-color: #e6effd;
+}
+
+.c1:focus ~ .c2 {
+  color: #005AEE;
+}
+
+.c1:focus ~ .sc-AykKF * {
+  fill: #005AEE;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus::placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      aria-describedby="medly-textField-helper-text"
+      class="c1"
+      id="medly-textField-input"
+      placeholder=" "
+      type="text"
+    />
+    <label
+      class="c2 c3"
+      for="medly-textField-input"
+    />
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with filled variant and without label should render default state properly 1`] = `
+.c3 {
+  top: 0;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  margin-left: 1.6rem;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
+}
+
+.c1 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 1.4rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  color: #13181D;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  cursor: text;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding-top: 1.4rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
+  border: none;
+  border-bottom: 0.1rem solid #566c82;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c1:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::placeholder {
+  opacity: 1;
+}
+
+.c1::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:not(:placeholder-shown) + .c2,
+.c1:focus + .c2 {
+  -webkit-transform: translate3d(0,20%,0) scale(0.75);
+  -ms-transform: translate3d(0,20%,0) scale(0.75);
+  transform: translate3d(0,20%,0) scale(0.75);
+}
+
+.c1 ~ .c2 {
+  color: #566c82;
+}
+
+.c1 ~ .sc-AykKF * {
+  fill: #566c82;
+}
+
+.c1 ~ .sc-AykKD {
+  color: #566c82;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled):focus {
+  padding-bottom: 1.3rem;
+  border-bottom-width: 0.2rem;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  color: #435465;
+  background-color: #F7F8F9;
+  border-color: #C7D0D8;
+}
+
+.c1:disabled ~ .c2 {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKF * {
+  fill: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKD {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ * {
+  cursor: not-allowed;
+}
+
+.c1:focus {
+  border-color: #005AEE;
+  background-color: #e6effd;
+}
+
+.c1:focus ~ .c2 {
+  color: #005AEE;
+}
+
+.c1:focus ~ .sc-AykKF * {
+  fill: #005AEE;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus::placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      aria-describedby="medly-textField-helper-text"
+      class="c1"
+      id="medly-textField-input"
+      placeholder=" "
+      type="text"
+    />
+    <label
+      class="c2 c3"
+      for="medly-textField-input"
+    />
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with filled variant and without label should render focus state properly 1`] = `
+.c3 {
+  top: 0;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  margin-left: 1.6rem;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
+}
+
+.c1 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 1.4rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  color: #13181D;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  cursor: text;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding-top: 1.4rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
+  border: none;
+  border-bottom: 0.1rem solid #566c82;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c1:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::placeholder {
+  opacity: 1;
+}
+
+.c1::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:not(:placeholder-shown) + .c2,
+.c1:focus + .c2 {
+  -webkit-transform: translate3d(0,20%,0) scale(0.75);
+  -ms-transform: translate3d(0,20%,0) scale(0.75);
+  transform: translate3d(0,20%,0) scale(0.75);
+}
+
+.c1 ~ .c2 {
+  color: #566c82;
+}
+
+.c1 ~ .sc-AykKF * {
+  fill: #566c82;
+}
+
+.c1 ~ .sc-AykKD {
+  color: #566c82;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled):focus {
+  padding-bottom: 1.3rem;
+  border-bottom-width: 0.2rem;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  color: #435465;
+  background-color: #F7F8F9;
+  border-color: #C7D0D8;
+}
+
+.c1:disabled ~ .c2 {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKF * {
+  fill: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKD {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ * {
+  cursor: not-allowed;
+}
+
+.c1:focus {
+  border-color: #005AEE;
+  background-color: #e6effd;
+}
+
+.c1:focus ~ .c2 {
+  color: #005AEE;
+}
+
+.c1:focus ~ .sc-AykKF * {
+  fill: #005AEE;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus::placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      aria-describedby="medly-textField-helper-text"
+      class="c1"
+      id="medly-textField-input"
+      placeholder=" "
+      type="text"
+    />
+    <label
+      class="c2 c3"
+      for="medly-textField-input"
+    />
     
   </div>
 </div>
@@ -859,6 +1475,12 @@ exports[`TextField with filled variant should render error state properly  1`] =
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -914,202 +1536,6 @@ exports[`TextField with filled variant should render error text properly 1`] = `
 >
   Some text
 </span>
-`;
-
-exports[`TextField with filled variant should render focus state properly  1`] = `
-.c3 {
-  top: 0;
-  left: 0;
-  cursor: text;
-  position: absolute;
-  margin-left: 1.6rem;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translate3d(0,58%,0);
-  -ms-transform: translate3d(0,58%,0);
-  transform: translate3d(0,58%,0);
-}
-
-.c1 {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding-bottom: 0.6rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
-  color: #13181D;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  cursor: text;
-  box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  padding-top: 2.3rem;
-  border-radius: 0.4rem 0.4rem 0 0;
-  background-color: #eff2f4;
-  border: none;
-  border-bottom: 0.1rem solid #566c82;
-}
-
-.c1:focus {
-  outline: none;
-}
-
-.c1:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c1:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c1:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
-.c1:focus::placeholder {
-  opacity: 1;
-}
-
-.c1::-webkit-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 150ms ease-out;
-  transition: all 150ms ease-out;
-}
-
-.c1::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 150ms ease-out;
-  transition: all 150ms ease-out;
-}
-
-.c1:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 150ms ease-out;
-  transition: all 150ms ease-out;
-}
-
-.c1::placeholder {
-  opacity: 0;
-  -webkit-transition: all 150ms ease-out;
-  transition: all 150ms ease-out;
-}
-
-.c1:not(:placeholder-shown) + .c2,
-.c1:focus + .c2 {
-  -webkit-transform: translate3d(0,20%,0) scale(0.75);
-  -ms-transform: translate3d(0,20%,0) scale(0.75);
-  transform: translate3d(0,20%,0) scale(0.75);
-}
-
-.c1 ~ .c2 {
-  color: #566c82;
-}
-
-.c1 ~ .sc-AykKF * {
-  fill: #566c82;
-}
-
-.c1 ~ .sc-AykKD {
-  color: #566c82;
-}
-
-.c1:not(:disabled):hover,
-.c1:not(:disabled):focus {
-  padding-bottom: 0.5rem;
-  border-bottom-width: 0.2rem;
-}
-
-.c1:disabled {
-  cursor: not-allowed;
-  color: #435465;
-  background-color: #F7F8F9;
-  border-color: #C7D0D8;
-}
-
-.c1:disabled ~ .c2 {
-  color: #b0bcc8;
-}
-
-.c1:disabled ~ .sc-AykKF * {
-  fill: #b0bcc8;
-}
-
-.c1:disabled ~ .sc-AykKD {
-  color: #b0bcc8;
-}
-
-.c1:disabled ~ * {
-  cursor: not-allowed;
-}
-
-.c1:focus {
-  border-color: #005AEE;
-  background-color: #e6effd;
-}
-
-.c1:focus ~ .c2 {
-  color: #005AEE;
-}
-
-.c1:focus ~ .sc-AykKF * {
-  fill: #005AEE;
-}
-
-.c1:focus::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c1:focus::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c1:focus:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c1:focus::placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c0 {
-  position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-<div>
-  <div
-    class="c0"
-  >
-    <input
-      aria-describedby="medly-textField-helper-text"
-      class="c1"
-      id="medly-textField-input"
-      placeholder=" "
-      type="text"
-    />
-    <label
-      class="c2 c3"
-      for="medly-textField-input"
-    >
-      Name
-    </label>
-    
-  </div>
-</div>
 `;
 
 exports[`TextField with filled variant should render helper text properly 1`] = `
@@ -1171,7 +1597,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 50%;
+  top: 2.8rem;
   left: 1.6rem;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -1329,6 +1755,12 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -1405,7 +1837,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 50%;
+  top: 2.8rem;
   right: 1.6rem;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -1563,6 +1995,12 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -1603,7 +2041,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 </div>
 `;
 
-exports[`TextField with outlined variant should render default state properly 1`] = `
+exports[`TextField with outlined variant and with label should render default state properly 1`] = `
 .c3 {
   top: 0;
   left: 0;
@@ -1627,7 +2065,7 @@ exports[`TextField with outlined variant should render default state properly 1`
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 0.6rem;
+  padding-bottom: 1.4rem;
   padding-left: 1.6rem;
   padding-right: 1.6rem;
   color: #13181D;
@@ -1637,7 +2075,7 @@ exports[`TextField with outlined variant should render default state properly 1`
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding-top: 2.2rem;
+  padding-top: 1.4rem;
   border-radius: 0.4rem;
   border: 1px solid #98A7B7;
 }
@@ -1770,6 +2208,12 @@ exports[`TextField with outlined variant should render default state properly 1`
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -1787,9 +2231,595 @@ exports[`TextField with outlined variant should render default state properly 1`
     <label
       class="c2 c3"
       for="medly-textField-input"
-    >
-      Name
-    </label>
+    />
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with outlined variant and with label should render focus state properly 1`] = `
+.c3 {
+  top: 0;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  margin-left: 1.6rem;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
+}
+
+.c1 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 1.4rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  color: #13181D;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  cursor: text;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding-top: 1.4rem;
+  border-radius: 0.4rem;
+  border: 1px solid #98A7B7;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c1:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::placeholder {
+  opacity: 1;
+}
+
+.c1::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:not(:placeholder-shown) + .c2,
+.c1:focus + .c2 {
+  -webkit-transform: translate3d(0,20%,0) scale(0.75);
+  -ms-transform: translate3d(0,20%,0) scale(0.75);
+  transform: translate3d(0,20%,0) scale(0.75);
+}
+
+.c1 ~ .c2 {
+  color: #607890;
+}
+
+.c1 ~ .sc-AykKF * {
+  fill: #607890;
+}
+
+.c1 ~ .sc-AykKD {
+  color: #566c82;
+}
+
+.c1:not(:disabled):hover {
+  border-color: #607890;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  color: #435465;
+  background-color: transparent;
+  border-color: #C7D0D8;
+}
+
+.c1:disabled ~ .c2 {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKF * {
+  fill: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKD {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ * {
+  cursor: not-allowed;
+}
+
+.c1:focus {
+  border-color: #005AEE;
+  background-color: transparent;
+}
+
+.c1:focus ~ .c2 {
+  color: #005AEE;
+}
+
+.c1:focus ~ .sc-AykKF * {
+  fill: #005AEE;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus::placeholder {
+  color: #C7D0D8;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      aria-describedby="medly-textField-helper-text"
+      class="c1"
+      id="medly-textField-input"
+      placeholder=" "
+      type="text"
+    />
+    <label
+      class="c2 c3"
+      for="medly-textField-input"
+    />
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with outlined variant and without label should render default state properly 1`] = `
+.c3 {
+  top: 0;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  margin-left: 1.6rem;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
+}
+
+.c1 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 1.4rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  color: #13181D;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  cursor: text;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding-top: 1.4rem;
+  border-radius: 0.4rem;
+  border: 1px solid #98A7B7;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c1:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::placeholder {
+  opacity: 1;
+}
+
+.c1::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:not(:placeholder-shown) + .c2,
+.c1:focus + .c2 {
+  -webkit-transform: translate3d(0,20%,0) scale(0.75);
+  -ms-transform: translate3d(0,20%,0) scale(0.75);
+  transform: translate3d(0,20%,0) scale(0.75);
+}
+
+.c1 ~ .c2 {
+  color: #607890;
+}
+
+.c1 ~ .sc-AykKF * {
+  fill: #607890;
+}
+
+.c1 ~ .sc-AykKD {
+  color: #566c82;
+}
+
+.c1:not(:disabled):hover {
+  border-color: #607890;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  color: #435465;
+  background-color: transparent;
+  border-color: #C7D0D8;
+}
+
+.c1:disabled ~ .c2 {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKF * {
+  fill: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKD {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ * {
+  cursor: not-allowed;
+}
+
+.c1:focus {
+  border-color: #005AEE;
+  background-color: transparent;
+}
+
+.c1:focus ~ .c2 {
+  color: #005AEE;
+}
+
+.c1:focus ~ .sc-AykKF * {
+  fill: #005AEE;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus::placeholder {
+  color: #C7D0D8;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      aria-describedby="medly-textField-helper-text"
+      class="c1"
+      id="medly-textField-input"
+      placeholder=" "
+      type="text"
+    />
+    <label
+      class="c2 c3"
+      for="medly-textField-input"
+    />
+    
+  </div>
+</div>
+`;
+
+exports[`TextField with outlined variant and without label should render focus state properly 1`] = `
+.c3 {
+  top: 0;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  margin-left: 1.6rem;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
+}
+
+.c1 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 1.4rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  color: #13181D;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  cursor: text;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding-top: 1.4rem;
+  border-radius: 0.4rem;
+  border: 1px solid #98A7B7;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c1:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::placeholder {
+  opacity: 1;
+}
+
+.c1::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:not(:placeholder-shown) + .c2,
+.c1:focus + .c2 {
+  -webkit-transform: translate3d(0,20%,0) scale(0.75);
+  -ms-transform: translate3d(0,20%,0) scale(0.75);
+  transform: translate3d(0,20%,0) scale(0.75);
+}
+
+.c1 ~ .c2 {
+  color: #607890;
+}
+
+.c1 ~ .sc-AykKF * {
+  fill: #607890;
+}
+
+.c1 ~ .sc-AykKD {
+  color: #566c82;
+}
+
+.c1:not(:disabled):hover {
+  border-color: #607890;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  color: #435465;
+  background-color: transparent;
+  border-color: #C7D0D8;
+}
+
+.c1:disabled ~ .c2 {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKF * {
+  fill: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKD {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ * {
+  cursor: not-allowed;
+}
+
+.c1:focus {
+  border-color: #005AEE;
+  background-color: transparent;
+}
+
+.c1:focus ~ .c2 {
+  color: #005AEE;
+}
+
+.c1:focus ~ .sc-AykKF * {
+  fill: #005AEE;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus::placeholder {
+  color: #C7D0D8;
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      aria-describedby="medly-textField-helper-text"
+      class="c1"
+      id="medly-textField-input"
+      placeholder=" "
+      type="text"
+    />
+    <label
+      class="c2 c3"
+      for="medly-textField-input"
+    />
     
   </div>
 </div>
@@ -1970,6 +3000,12 @@ exports[`TextField with outlined variant should render error state properly  1`]
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -2025,198 +3061,6 @@ exports[`TextField with outlined variant should render error text properly 1`] =
 >
   Some text
 </span>
-`;
-
-exports[`TextField with outlined variant should render focus state properly  1`] = `
-.c3 {
-  top: 0;
-  left: 0;
-  cursor: text;
-  position: absolute;
-  margin-left: 1.6rem;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translate3d(0,58%,0);
-  -ms-transform: translate3d(0,58%,0);
-  transform: translate3d(0,58%,0);
-}
-
-.c1 {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding-bottom: 0.6rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
-  color: #13181D;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  cursor: text;
-  box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  padding-top: 2.2rem;
-  border-radius: 0.4rem;
-  border: 1px solid #98A7B7;
-}
-
-.c1:focus {
-  outline: none;
-}
-
-.c1:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c1:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c1:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
-.c1:focus::placeholder {
-  opacity: 1;
-}
-
-.c1::-webkit-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 150ms ease-out;
-  transition: all 150ms ease-out;
-}
-
-.c1::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 150ms ease-out;
-  transition: all 150ms ease-out;
-}
-
-.c1:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 150ms ease-out;
-  transition: all 150ms ease-out;
-}
-
-.c1::placeholder {
-  opacity: 0;
-  -webkit-transition: all 150ms ease-out;
-  transition: all 150ms ease-out;
-}
-
-.c1:not(:placeholder-shown) + .c2,
-.c1:focus + .c2 {
-  -webkit-transform: translate3d(0,20%,0) scale(0.75);
-  -ms-transform: translate3d(0,20%,0) scale(0.75);
-  transform: translate3d(0,20%,0) scale(0.75);
-}
-
-.c1 ~ .c2 {
-  color: #607890;
-}
-
-.c1 ~ .sc-AykKF * {
-  fill: #607890;
-}
-
-.c1 ~ .sc-AykKD {
-  color: #566c82;
-}
-
-.c1:not(:disabled):hover {
-  border-color: #607890;
-}
-
-.c1:disabled {
-  cursor: not-allowed;
-  color: #435465;
-  background-color: transparent;
-  border-color: #C7D0D8;
-}
-
-.c1:disabled ~ .c2 {
-  color: #b0bcc8;
-}
-
-.c1:disabled ~ .sc-AykKF * {
-  fill: #b0bcc8;
-}
-
-.c1:disabled ~ .sc-AykKD {
-  color: #b0bcc8;
-}
-
-.c1:disabled ~ * {
-  cursor: not-allowed;
-}
-
-.c1:focus {
-  border-color: #005AEE;
-  background-color: transparent;
-}
-
-.c1:focus ~ .c2 {
-  color: #005AEE;
-}
-
-.c1:focus ~ .sc-AykKF * {
-  fill: #005AEE;
-}
-
-.c1:focus::-webkit-input-placeholder {
-  color: #C7D0D8;
-}
-
-.c1:focus::-moz-placeholder {
-  color: #C7D0D8;
-}
-
-.c1:focus:-ms-input-placeholder {
-  color: #C7D0D8;
-}
-
-.c1:focus::placeholder {
-  color: #C7D0D8;
-}
-
-.c0 {
-  position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-<div>
-  <div
-    class="c0"
-  >
-    <input
-      aria-describedby="medly-textField-helper-text"
-      class="c1"
-      id="medly-textField-input"
-      placeholder=" "
-      type="text"
-    />
-    <label
-      class="c2 c3"
-      for="medly-textField-input"
-    >
-      Name
-    </label>
-    
-  </div>
-</div>
 `;
 
 exports[`TextField with outlined variant should render helper text properly 1`] = `
@@ -2278,7 +3122,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 50%;
+  top: 2.8rem;
   left: 1.6rem;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2432,6 +3276,12 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -2508,7 +3358,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 50%;
+  top: 2.8rem;
   right: 1.6rem;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2662,6 +3512,12 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -2697,6 +3553,408 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
         stroke-width="2"
       />
     </svg>
+    
+  </div>
+</div>
+`;
+
+exports[`TextField without label should render default state properly 1`] = `
+.c3 {
+  top: 0;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  margin-left: 1.6rem;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
+}
+
+.c1 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 1.4rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  color: #13181D;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  cursor: text;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding-top: 1.4rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
+  border: none;
+  border-bottom: 0.1rem solid #566c82;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c1:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::placeholder {
+  opacity: 1;
+}
+
+.c1::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:not(:placeholder-shown) + .c2,
+.c1:focus + .c2 {
+  -webkit-transform: translate3d(0,20%,0) scale(0.75);
+  -ms-transform: translate3d(0,20%,0) scale(0.75);
+  transform: translate3d(0,20%,0) scale(0.75);
+}
+
+.c1 ~ .c2 {
+  color: #566c82;
+}
+
+.c1 ~ .sc-AykKF * {
+  fill: #566c82;
+}
+
+.c1 ~ .sc-AykKD {
+  color: #566c82;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled):focus {
+  padding-bottom: 1.3rem;
+  border-bottom-width: 0.2rem;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  color: #435465;
+  background-color: #F7F8F9;
+  border-color: #C7D0D8;
+}
+
+.c1:disabled ~ .c2 {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKF * {
+  fill: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKD {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ * {
+  cursor: not-allowed;
+}
+
+.c1:focus {
+  border-color: #005AEE;
+  background-color: #e6effd;
+}
+
+.c1:focus ~ .c2 {
+  color: #005AEE;
+}
+
+.c1:focus ~ .sc-AykKF * {
+  fill: #005AEE;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus::placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      aria-describedby="medly-textField-helper-text"
+      class="c1"
+      id="medly-textField-input"
+      placeholder=" "
+      type="email"
+    />
+    <label
+      class="c2 c3"
+      for="medly-textField-input"
+    />
+    
+  </div>
+</div>
+`;
+
+exports[`TextField without label should render focus state properly  1`] = `
+.c3 {
+  top: 0;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  margin-left: 1.6rem;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
+}
+
+.c1 {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-bottom: 0.6rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  color: #13181D;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  cursor: text;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding-top: 2.3rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
+  border: none;
+  border-bottom: 0.1rem solid #566c82;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c1:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c1:focus::placeholder {
+  opacity: 1;
+}
+
+.c1::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1::placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c1:not(:placeholder-shown) + .c2,
+.c1:focus + .c2 {
+  -webkit-transform: translate3d(0,20%,0) scale(0.75);
+  -ms-transform: translate3d(0,20%,0) scale(0.75);
+  transform: translate3d(0,20%,0) scale(0.75);
+}
+
+.c1 ~ .c2 {
+  color: #566c82;
+}
+
+.c1 ~ .sc-AykKF * {
+  fill: #566c82;
+}
+
+.c1 ~ .sc-AykKD {
+  color: #566c82;
+}
+
+.c1:not(:disabled):hover,
+.c1:not(:disabled):focus {
+  padding-bottom: 0.5rem;
+  border-bottom-width: 0.2rem;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+  color: #435465;
+  background-color: #F7F8F9;
+  border-color: #C7D0D8;
+}
+
+.c1:disabled ~ .c2 {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKF * {
+  fill: #b0bcc8;
+}
+
+.c1:disabled ~ .sc-AykKD {
+  color: #b0bcc8;
+}
+
+.c1:disabled ~ * {
+  cursor: not-allowed;
+}
+
+.c1:focus {
+  border-color: #005AEE;
+  background-color: #e6effd;
+}
+
+.c1:focus ~ .c2 {
+  color: #005AEE;
+}
+
+.c1:focus ~ .sc-AykKF * {
+  fill: #005AEE;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus::placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c0 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      aria-describedby="medly-textField-helper-text"
+      class="c1"
+      id="medly-textField-input"
+      placeholder=" "
+      type="text"
+    />
+    <label
+      class="c2 c3"
+      for="medly-textField-input"
+    >
+      Name
+    </label>
     
   </div>
 </div>

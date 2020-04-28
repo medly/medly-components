@@ -4,7 +4,7 @@ export const Prefix = styled(InjectClassName)`
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 50%;
+    top: 2.8rem;
     left: 1.6rem;
     transform: translateY(-50%);
 `;

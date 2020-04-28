@@ -5,13 +5,14 @@ import { Props } from './types';
 
 export const TextField: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props: Props, ref) => {
-        const { id, label, fullWidth, helperText, prefix: Prefix, suffix: Suffix, required, placeholder, ...restProps } = props,
+        const { id, label, minWidth, fullWidth, helperText, prefix: Prefix, suffix: Suffix, required, placeholder, ...restProps } = props,
             inputId = id || 'medly-textField',
+            isLabelPresent = !!label,
             isPrefixPresent = !!Prefix,
             isSuffixPresent = !!Suffix;
 
         return (
-            <Styled.Wrapper fullWidth={fullWidth}>
+            <Styled.Wrapper fullWidth={fullWidth} minWidth={minWidth}>
                 <Styled.Input
                     ref={ref}
                     id={`${inputId}-input`}
@@ -20,6 +21,7 @@ export const TextField: SFC<Props> & WithStyle = React.memo(
                     placeholder={placeholder || ' '}
                     isPrefixPresent={isPrefixPresent}
                     isSuffixPresent={isSuffixPresent}
+                    isLabelPresent={isLabelPresent}
                     fullWidth={fullWidth}
                     {...restProps}
                 />
@@ -44,7 +46,7 @@ export const TextField: SFC<Props> & WithStyle = React.memo(
     })
 );
 TextField.displayName = 'TextField';
-TextField.Style = Styled.Input;
+TextField.Style = Styled.Wrapper;
 TextField.defaultProps = {
     type: 'text',
     variant: 'filled',

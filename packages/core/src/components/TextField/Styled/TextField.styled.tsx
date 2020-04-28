@@ -4,9 +4,9 @@ import { HelperText } from './HelperText.styled';
 import { Label } from './Label.styled';
 import { Prefix } from './Prefix.styled';
 
-const outlineStyle = ({ theme, outlined }: StyledProps) => {
+const outlineStyle = ({ theme, outlined, isLabelPresent }: StyledProps) => {
     return css`
-        padding-top: 2.2rem;
+        padding-top: ${isLabelPresent ? '2.2rem' : '1.4rem'};
         border-radius: ${theme.spacing.S1};
         border: 1px solid ${outlined.default.borderColor};
 
@@ -16,9 +16,9 @@ const outlineStyle = ({ theme, outlined }: StyledProps) => {
     `;
 };
 
-const filledStyle = ({ theme, filled }: StyledProps) => {
+const filledStyle = ({ theme, filled, isLabelPresent }: StyledProps) => {
     return css`
-        padding-top: 2.3rem;
+        padding-top: ${isLabelPresent ? '2.3rem' : '1.4rem'};
         border-radius: ${theme.spacing.S1} ${theme.spacing.S1} 0 0;
         background-color: ${filled.default.bgColor};
         border: none;
@@ -26,7 +26,7 @@ const filledStyle = ({ theme, filled }: StyledProps) => {
 
         &:not(:disabled):hover,
         &:not(:disabled):focus {
-            padding-bottom: 0.5rem;
+            padding-bottom: ${isLabelPresent ? '0.5rem' : '1.3rem'};
             border-bottom-width: 0.2rem;
         }
     `;
@@ -93,7 +93,7 @@ const errorStyle = ({ theme: { textField }, variant }: StyledProps) => css`
 
 export const Input = styled('input').attrs(({ theme: { textField } }) => ({ ...textField, textField }))<StyledProps>`
     width: ${({ fullWidth }) => (fullWidth ? '100%' : 'max-content')};
-    padding-bottom: 0.6rem;
+    padding-bottom: ${({ isLabelPresent }) => (isLabelPresent ? '0.6rem' : '1.4rem')};
     padding-left: ${({ isPrefixPresent }) => (isPrefixPresent ? '5.6rem' : '1.6rem')};
     padding-right: ${({ isSuffixPresent }) => (isSuffixPresent ? '5.6rem' : '1.6rem')};
     color: ${({ variant, textField }) => textField[variant].default.textColor};

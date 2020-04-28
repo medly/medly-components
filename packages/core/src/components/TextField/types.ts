@@ -17,14 +17,17 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix'>, With
     /** To be used when it is required in any form */
     required?: boolean;
     /** Input label */
-    label: string;
+    label?: string;
     /** Helper Text */
     helperText?: string;
     /** Error Text */
     errorText?: string;
+    /** Min width */
+    minWidth?: string;
 }
 
 export interface StyledProps extends Props, TextFieldTheme {
     isPrefixPresent: boolean;
     isSuffixPresent: boolean;
+    isLabelPresent: boolean;
 }
