@@ -1,6 +1,7 @@
 import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { SingleSelect } from './SingleSelect';
+import { SelectProps } from './types';
 
 describe('SingleSelect component', () => {
     afterEach(cleanup);
@@ -11,37 +12,47 @@ describe('SingleSelect component', () => {
         { value: 'Dummy2', label: 'Dummy2' }
     ];
 
-    it('should render correctly with default props', () => {
-        const { container } = render(<SingleSelect options={options} />);
-        expect(container).toMatchSnapshot();
+    describe.each(['outlined', 'filled'])('with %s variant', (variant: SelectProps['variant']) => {
+        it('should render properly', () => {
+            const { container } = render(<SingleSelect options={options} variant={variant} value="dummy" />);
+            expect(container).toMatchSnapshot();
+        });
+
+        it('should render disabled state properly ', () => {
+            const { container } = render(<SingleSelect disabled options={options} variant={variant} value="dummy" />);
+            expect(container).toMatchSnapshot();
+        });
+
+        it('should render error text properly', () => {
+            const { container } = render(
+                <SingleSelect errorText="Something went wrong" options={options} variant={variant} value="dummy" />
+            );
+            expect(container.querySelector('span')).toMatchSnapshot();
+            expect(container.querySelector('svg')).toMatchSnapshot();
+        });
+
+        it('should render options correctly on click on the input', () => {
+            const { container } = render(<SingleSelect options={options} variant={variant} />),
+                inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
+            fireEvent.click(inputEl);
+            expect(container.querySelector('#medly-singleSelect-options')).toMatchSnapshot();
+        });
     });
 
-    it('should render correctly with all the props given', () => {
-        const mockOnChange = jest.fn();
-        const { container } = render(
-            <SingleSelect
-                disabled
-                minWidth={300}
-                options={options}
-                value="all"
-                labelPosition="left"
-                fullWidth
-                required
-                label="Pharmacy"
-                description="We will show reports based on Pharmacy"
-                descriptionColor="grey"
-                placeholder="Please Select"
-                onChange={mockOnChange}
-            />
-        );
-        expect(container).toMatchSnapshot();
+    it('should take parents width if we pass fullWidth prop as true', () => {
+        const { container } = render(<SingleSelect fullWidth options={options} value="dummy" />);
+        expect(container.querySelector('div')).toHaveStyle(`
+            display: flex;
+            width: 100%;
+            margin: 0.8rem 0px;
+        `);
     });
 
-    it('should render options correctly', () => {
-        const { container } = render(<SingleSelect options={options} />),
-            inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-        fireEvent.click(inputEl);
-        expect(container.querySelector('#medly-popover')).toBeVisible();
+    it('should take passed min width', () => {
+        const { container } = render(<SingleSelect options={options} value="dummy" minWidth="30rem" />);
+        expect(container.querySelector('div')).toHaveStyle(`
+            min-width: 30rem;
+        `);
     });
 
     it('should hide options on click outside of the container', () => {
@@ -67,7 +78,7 @@ describe('SingleSelect component', () => {
         expect(container.querySelector('#medly-popover')).toBeNull();
     });
 
-    it('should show selected option label in input', () => {
+    it('should show the selected option label in input on click on the option', () => {
         const mockOnChange = jest.fn(),
             { container, getByText } = render(<SingleSelect options={options} onChange={mockOnChange} />),
             inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
@@ -78,7 +89,7 @@ describe('SingleSelect component', () => {
         expect(mockOnChange).toHaveBeenCalledWith('Dummy1');
     });
 
-    it('should not select option which is disable', () => {
+    it('should not select option on click on the disable option', () => {
         const mockOnChange = jest.fn(),
             { container, getByText } = render(
                 <SingleSelect
@@ -281,7 +292,7 @@ describe('SingleSelect component', () => {
                 fireEvent.change(inputEl, { target: { value: 'Dummy' } });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(inputEl.value).toEqual('Dummy');
-                expect(container.querySelector('#medly-popover')).toBeVisible();
+                expect(container.querySelector('#medly-singleSelect-options')).toBeVisible();
             });
         });
     });

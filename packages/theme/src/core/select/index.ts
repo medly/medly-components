@@ -9,7 +9,13 @@ const select: SelectTheme = {
     descriptionColor: colors.professionalNavy,
     placeHolderColor: colors.grey[500],
     selectedBgColor: colors.marigoldOrange[400],
-    selectedTextColor: colors.white
+    selectedTextColor: colors.white,
+    options: {
+        bgColor: colors.white,
+        textColor: colors.black,
+        disableTextColor: colors.grey[500],
+        hoverBgColor: colors.grey[100]
+    }
 };
 
 export default select;

@@ -1,3 +1,4 @@
+import { CheckIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
 import React, { useEffect, useRef } from 'react';
 import Text from '../../../Text';
@@ -19,7 +20,8 @@ const Option: React.SFC<OptionProps> & WithStyle = React.memo(props => {
 
     return (
         <OptionStyled ref={ref} disabled={disabled} selected={selected} onClick={onClick}>
-            <Text>{label}</Text>
+            <Text textWeight={selected ? 'Strong' : 'Regular'}>{label}</Text>
+            {selected && <CheckIcon />}
         </OptionStyled>
     );
 });

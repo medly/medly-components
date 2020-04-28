@@ -1,10 +1,13 @@
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
-import { LabelPositions } from '../Label/types';
 
 export interface Option {
+    /** Option value */
     value: any;
+    /** Option label */
     label: string;
+    /** This will be handled by component itself */
     selected?: boolean;
+    /** Set it true if this option is disabled */
     disabled?: boolean;
 }
 
@@ -14,12 +17,14 @@ export interface DefaultSelected {
 }
 
 export interface SelectWrapperProps extends HTMLProps<HTMLDivElement>, WithThemeProp {
-    labelPosition?: LabelPositions;
     fullWidth?: boolean;
-    description?: string;
+    disabled?: boolean;
+    minWidth?: string;
+    isErrorPresent?: boolean;
+    variant?: 'outlined' | 'filled';
 }
 
-type InputProps = Omit<HTMLProps<HTMLInputElement>, 'onChange'>;
+type InputProps = Omit<HTMLProps<HTMLInputElement>, 'onChange' | 'prefix'>;
 
 export interface SelectProps extends InputProps, WithThemeProp {
     /** Selected Value */
@@ -28,20 +33,24 @@ export interface SelectProps extends InputProps, WithThemeProp {
     onChange?: (value: any) => void;
     /** Options */
     options: Option[];
-    /** Label */
-    label?: string;
+    /** Variants */
+    variant?: 'outlined' | 'filled';
     /** Min width */
-    minWidth?: number;
-    /** Label Position */
-    labelPosition?: LabelPositions;
+    minWidth?: string;
+    /** Set it true if you are using built in form validation */
+    withBuiltInValidation?: boolean;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
-    /** Description of the Select */
-    description?: string;
-    /** Description color */
-    descriptionColor?: string;
-    /** Placeholder for the input */
-    placeholder?: string;
-    /** To be used when it is required */
+    /** Set it true to disable the select action */
+    disabled?: boolean;
+    /** Set it true when it is required in any form */
     required?: boolean;
+    /** Label */
+    label?: string;
+    /** Leading icon */
+    prefix?: React.SFC<any>;
+    /** Helper Text */
+    helperText?: string;
+    /** Error Text */
+    errorText?: string;
 }

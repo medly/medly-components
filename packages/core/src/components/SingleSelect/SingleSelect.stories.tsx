@@ -1,13 +1,10 @@
 import { defaultTheme, SelectTheme } from '@medly-components/theme';
-import { boolean, color, number, select, text } from '@storybook/addon-knobs';
-import React, { useState } from 'react';
-import { LabelPositions } from '../Label/types';
-import { SingleSelect } from './SingleSelect';
-import { Option } from './types';
+import React from 'react';
+import { Option, SelectProps } from './types';
 
-const labelPosition: LabelPositions[] = ['top', 'bottom', 'left', 'right'];
+export const variants: SelectProps['variant'][] = ['outlined', 'filled'];
 
-const options = [
+export const options = [
     { value: 'all', label: 'All' },
     { value: 'Dummy1 option', label: 'Dummy1 option', disabled: true },
     { value: 'Dummy2 option', label: 'Dummy2 option' },
@@ -23,24 +20,3 @@ ThemeInterface.defaultProps = {
 };
 
 export const OptionProps: React.SFC<Option> = () => null;
-
-export const Basic = () => {
-    const [value, setValue] = useState('Dummy4 option');
-
-    return (
-        <SingleSelect
-            minWidth={number('Min Width', 300)}
-            options={options}
-            value={value}
-            onChange={setValue}
-            disabled={boolean('Disabled', false)}
-            fullWidth={boolean('Full Width', false)}
-            required={boolean('Required', false)}
-            label={text('Label', 'Pharmacy')}
-            placeholder="Select Pharmacy"
-            description={text('Description', 'We will show reports based on Pharmacy')}
-            descriptionColor={color('Description Color', defaultTheme.input.descriptionColor)}
-            labelPosition={select('Label Position', labelPosition, 'left')}
-        />
-    );
-};

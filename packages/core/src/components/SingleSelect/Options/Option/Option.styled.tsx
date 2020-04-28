@@ -1,25 +1,25 @@
-import { css, styled } from '@medly-components/utils';
+import { styled } from '@medly-components/utils';
+import Text from '../../../Text';
 import { OptionStyledProps } from './types';
 
-export const OptionStyled = styled('li').attrs(({ theme: { select } }) => ({ ...select }))<OptionStyledProps>`
-    cursor: pointer;
-    padding: 5px;
-    color: ${({ selected, selectedTextColor }) => (selected ? selectedTextColor : 'inherit')};
-    background-color: ${({ selected, selectedBgColor, bgColor }) => (selected ? selectedBgColor : bgColor)};
-    ${({ disabled, disabledBgColor }) =>
-        disabled &&
-        css`
-            background-color: ${disabledBgColor};
-            cursor: not-allowed;
-        `}
+export const OptionStyled = styled('li').attrs(({ theme: { select } }) => ({ ...select.options }))<OptionStyledProps>`
+    cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+    padding: 0 1.6rem;
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    color: ${({ disabled, textColor, disableTextColor }) => (disabled ? disableTextColor : textColor)};
+    background-color: ${({ bgColor }) => bgColor};
 
-    &:last-child {
-        border-bottom-left-radius: 3px;
-        border-bottom-right-radius: 3px;
+    &:hover {
+        background-color: ${({ hoverBgColor }) => hoverBgColor};
     }
 
-    :first-child {
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
+    ${Text.Style} {
+        flex: 1;
+        user-select: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 `;

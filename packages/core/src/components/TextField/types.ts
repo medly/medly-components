@@ -8,13 +8,13 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix'>, With
     withBuiltInValidation?: boolean;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
-    /** Prefix  */
+    /** Leading icon */
     prefix?: React.SFC<any>;
-    /** Suffix */
+    /** Trailing icon */
     suffix?: React.SFC<any>;
     /** Disable Input */
     disabled?: boolean;
-    /** To be used when it is required in any form */
+    /** Set it true when it is required in any form */
     required?: boolean;
     /** Input label */
     label?: string;
