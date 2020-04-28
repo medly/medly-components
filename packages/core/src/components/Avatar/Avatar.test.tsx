@@ -15,7 +15,7 @@ describe('Avatar component', () => {
 
     it('should render with size and image', () => {
         const { container } = render(
-            <Avatar size="XL">
+            <Avatar size="L">
                 <img src="http://dummurl" />
             </Avatar>
         );

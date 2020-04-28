@@ -6,8 +6,9 @@ import { Props } from './types';
 
 export const Avatar: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
+        const isImage = React.Children.toArray(props.children).find((child: any) => child.type === 'img')
         return (
-            <AvatarStyled ref={ref} {...props}>
+            <AvatarStyled ref={ref} {...props} isImage={isImage}>
                 {React.Children.map(props.children, c => {
                     return isValidStringOrNumber(c) ? (
                         <Text uppercase textWeight="Strong">

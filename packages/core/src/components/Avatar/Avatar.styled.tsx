@@ -10,7 +10,7 @@ const getAvatarSize = ({ theme: { avatar }, size }: Props) => {
 const getTextStyle = ({ theme, ...props }: Props) => {
     const { size, textColor, bgColor } = props,
         { defaults, sizes } = theme.avatar,
-        { fontVariant, avatarSize } = sizes[size || defaults.size];
+        { avatarSize, fontSize} = sizes[size || defaults.size];
 
     return css`
         color: ${textColor || defaults.textColor};
@@ -18,13 +18,15 @@ const getTextStyle = ({ theme, ...props }: Props) => {
 
         ${Text.Style} {
             line-height: ${avatarSize};
-            font-size: ${theme.font.variants[fontVariant].fontSize};
-            letter-spacing: ${theme.font.variants[fontVariant].letterSpacing};
+            font-size: ${fontSize};
+            font-weight: ${defaults.fontWeight};
         }
     `;
 };
 
-export const AvatarStyled = styled('div')<Props>`
+
+export const AvatarStyled = styled('div').attrs(({ imgHoverShadow, hoverShadowColor, theme: {avatar: { defaults }}} : Props) => ({
+    defaults, imgHoverShadow, hoverShadowColor }))<Props>`
     display: inline-block;
     text-align: center;
     width: ${getAvatarSize};
@@ -37,5 +39,22 @@ export const AvatarStyled = styled('div')<Props>`
         width: ${getAvatarSize};
         height: ${getAvatarSize};
         object-fit: cover;
+        border: 0.1rem solid ${({ defaults }) => defaults.borderColor};
+        box-sizing: border-box;
+        border-radius: 50%;
+
+        &:hover{
+            box-shadow:  ${({imgHoverShadow, defaults }) =>  imgHoverShadow || defaults.imgHoverShadowColor }; 
+        } 
     }
+
+    &:hover {
+        box-shadow: ${({ defaults, hoverShadowColor, isImage}) => 
+            hoverShadowColor ||  defaults[isImage ? 'imgHoverShadowColor' : 'hoverBoxShadowColor']};
+
+        ${Text.Style} {
+            color: ${({ defaults : {hoverTextColor}}) => hoverTextColor };
+        }
+        background: ${({ defaults : {hoverBgColor}}) => hoverBgColor };
+    }  
 `;

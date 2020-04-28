@@ -17,27 +17,40 @@ exports[`Avatar component should render with default props 1`] = `
 .c0 {
   display: inline-block;
   text-align: center;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   overflow: hidden;
-  color: #fafafa;
-  background: #bdbdbd;
+  color: #005AEE;
+  background: #E6EFFD;
 }
 
 .c0 .c1 {
-  line-height: 30px;
-  font-size: 1.4rem;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .c0 img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
+  border: 0.1rem solid #DFE4E9;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.c0 img:hover {
+  box-shadow: 0 0.4rem 0.8rem rgba(96,120,144,0.35);
+}
+
+.c0:hover {
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+  background: #1A6BF0;
+}
+
+.c0:hover .c1 {
+  color: #FFFFFF;
 }
 
 <div>
@@ -70,27 +83,40 @@ exports[`Avatar component should render with size 1`] = `
 .c0 {
   display: inline-block;
   text-align: center;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   overflow: hidden;
-  color: #fafafa;
-  background: #bdbdbd;
+  color: #005AEE;
+  background: #E6EFFD;
 }
 
 .c0 .c1 {
-  line-height: 60px;
-  font-size: 2.4rem;
-  -webkit-letter-spacing: -0.04rem;
-  -moz-letter-spacing: -0.04rem;
-  -ms-letter-spacing: -0.04rem;
-  letter-spacing: -0.04rem;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .c0 img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
+  border: 0.1rem solid #DFE4E9;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.c0 img:hover {
+  box-shadow: 0 0.4rem 0.8rem rgba(96,120,144,0.35);
+}
+
+.c0:hover {
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+  background: #1A6BF0;
+}
+
+.c0:hover .c1 {
+  color: #FFFFFF;
 }
 
 <div>
@@ -110,27 +136,40 @@ exports[`Avatar component should render with size and image 1`] = `
 .c0 {
   display: inline-block;
   text-align: center;
-  width: 120px;
-  height: 120px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   overflow: hidden;
-  color: #fafafa;
-  background: #bdbdbd;
+  color: #005AEE;
+  background: #E6EFFD;
 }
 
 .c0 .sc-AykKC {
-  line-height: 120px;
-  font-size: 4.8rem;
-  -webkit-letter-spacing: -0.04rem;
-  -moz-letter-spacing: -0.04rem;
-  -ms-letter-spacing: -0.04rem;
-  letter-spacing: -0.04rem;
+  line-height: 48px;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 .c0 img {
-  width: 120px;
-  height: 120px;
+  width: 48px;
+  height: 48px;
   object-fit: cover;
+  border: 0.1rem solid #DFE4E9;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.c0 img:hover {
+  box-shadow: 0 0.4rem 0.8rem rgba(96,120,144,0.35);
+}
+
+.c0:hover {
+  box-shadow: 0 0.4rem 0.8rem rgba(96,120,144,0.35);
+  background: #1A6BF0;
+}
+
+.c0:hover .sc-AykKC {
+  color: #FFFFFF;
 }
 
 <div>
