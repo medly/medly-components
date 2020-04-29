@@ -29,6 +29,7 @@ exports[`Avatar component should render with default props 1`] = `
   line-height: 40px;
   font-size: 16px;
   font-weight: normal;
+  font-family: Open Sans;
 }
 
 .c0 img {
@@ -95,6 +96,7 @@ exports[`Avatar component should render with size 1`] = `
   line-height: 40px;
   font-size: 16px;
   font-weight: normal;
+  font-family: Open Sans;
 }
 
 .c0 img {
@@ -148,6 +150,7 @@ exports[`Avatar component should render with size and image 1`] = `
   line-height: 48px;
   font-size: 20px;
   font-weight: normal;
+  font-family: Open Sans;
 }
 
 .c0 img {

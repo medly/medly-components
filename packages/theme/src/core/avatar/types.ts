@@ -13,6 +13,7 @@ export interface AvatarTheme {
         textColor: string;
         fontWeight: string;
         bgColor: string;
+        fontFamily: string;
         textHoverShadowColor: string;
         imgHoverShadowColor: string;
         hoverTextColor: string;

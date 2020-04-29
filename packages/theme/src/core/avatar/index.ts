@@ -23,6 +23,7 @@ const avatar: AvatarTheme = {
         textColor: '#005AEE',
         bgColor: '#E6EFFD',
         fontWeight: 'normal',
+        fontFamily: 'Open Sans',
         textHoverShadowColor: '#005aee',
         imgHoverShadowColor: '#607890',
         hoverTextColor: '#FFFFFF',

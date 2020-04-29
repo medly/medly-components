@@ -20,6 +20,7 @@ const getTextStyle = ({ theme, ...props }: Props) => {
             line-height: ${avatarSize};
             font-size: ${fontSize};
             font-weight: ${defaults.fontWeight};
+            font-family: ${defaults.fontFamily};
         }
     `;
 };
