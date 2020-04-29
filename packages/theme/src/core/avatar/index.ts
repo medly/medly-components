@@ -1,34 +1,34 @@
+import colors from '../colors';
 import { AvatarTheme } from './types';
 
 const avatar: AvatarTheme = {
     sizes: {
         S: {
-            avatarSize: '32px',
-            fontSize: '14px',
-            lineHeight: '20px',
+            avatarSize: '3.2rem',
+            fontSize: '1.4rem'
         },
         M: {
-            avatarSize: '40px',
-            fontSize: '16px',
-            lineHeight: '20px',
+            avatarSize: '4rem',
+            fontSize: '1.6rem'
         },
         L: {
-            avatarSize: '48px',
-            fontSize: '20px',
-            lineHeight: '24px',
+            avatarSize: '4.8rem',
+            fontSize: '2rem'
         }
     },
     defaults: {
         size: 'M',
-        textColor: '#005AEE',
-        bgColor: '#E6EFFD',
-        fontWeight: 'normal',
+        textColor: colors.communityBlue[500],
+        bgColor: colors.communityBlue[100],
+        fontWeight: 'Regular',
         fontFamily: 'Open Sans',
-        textHoverShadowColor: '#005aee',
-        imgHoverShadowColor: '#607890',
-        hoverTextColor: '#FFFFFF',
-        hoverBgColor: '#1A6BF0',
-        borderColor: '#DFE4E9',
+        borderColor: colors.grey[200],
+        hover: {
+            textShadowColor: 'rgba(0, 90, 238, 0.35)',
+            imgShadowColor: 'rgba(96, 120, 144, 0.35)',
+            textColor: colors.white,
+            bgColor: colors.communityBlue[400]
+        }
     }
 };
 

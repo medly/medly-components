@@ -1,23 +1,28 @@
+import { FontWeights } from '../font/types';
+
 export type AvatarSizes = 'S' | 'M' | 'L';
 
 export interface AvatarTheme {
+    /** Avatar sizes */
     sizes: {
         [k in AvatarSizes]: {
             avatarSize: string;
             fontSize: string;
-            lineHeight: string;
         };
     };
+    /** Avatar default properties */
     defaults: {
         size: AvatarSizes;
         textColor: string;
-        fontWeight: string;
         bgColor: string;
+        fontWeight: FontWeights;
         fontFamily: string;
-        textHoverShadowColor: string;
-        imgHoverShadowColor: string;
-        hoverTextColor: string;
-        hoverBgColor: string;
         borderColor: string;
+        hover: {
+            bgColor: string;
+            textColor: string;
+            textShadowColor: string;
+            imgShadowColor: string;
+        };
     };
 }

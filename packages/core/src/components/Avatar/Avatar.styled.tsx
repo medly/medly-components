@@ -7,10 +7,16 @@ const getAvatarSize = ({ theme: { avatar }, size }: Props) => {
     return sizes[size || defaults.size].avatarSize;
 };
 
+const getShadowColor = ({ theme: { avatar }, hoverTextShadowColor, hoverImgShadowColor, isImage }: Props) => {
+    return isImage
+        ? hoverImgShadowColor || avatar.defaults.hover.imgShadowColor
+        : hoverTextShadowColor || avatar.defaults.hover.textShadowColor;
+};
+
 const getTextStyle = ({ theme, ...props }: Props) => {
     const { size, textColor, bgColor } = props,
         { defaults, sizes } = theme.avatar,
-        { avatarSize, fontSize} = sizes[size || defaults.size];
+        { avatarSize, fontSize } = sizes[size || defaults.size];
 
     return css`
         color: ${textColor || defaults.textColor};
@@ -19,15 +25,15 @@ const getTextStyle = ({ theme, ...props }: Props) => {
         ${Text.Style} {
             line-height: ${avatarSize};
             font-size: ${fontSize};
-            font-weight: ${defaults.fontWeight};
+            font-weight: ${theme.font.weights[defaults.fontWeight]};
             font-family: ${defaults.fontFamily};
         }
     `;
 };
 
-
-export const AvatarStyled = styled('div').attrs(({ imgShadowColor, textShadowColor, theme: {avatar: { defaults }}} : Props) => ({
-    defaults, imgShadowColor, textShadowColor }))<Props>`
+export const AvatarStyled = styled('div').attrs(({ theme: { avatar: { defaults } } }: Props) => ({
+    defaults
+}))<Props>`
     display: inline-block;
     text-align: center;
     width: ${getAvatarSize};
@@ -43,19 +49,13 @@ export const AvatarStyled = styled('div').attrs(({ imgShadowColor, textShadowCol
         border: 0.1rem solid ${({ defaults }) => defaults.borderColor};
         box-sizing: border-box;
         border-radius: 50%;
-
-        &:hover{
-            box-shadow:  0 0.4rem 0.8rem  ${({imgShadowColor, defaults }) =>  imgShadowColor || defaults.imgHoverShadowColor }; 
-        } 
     }
 
     &:hover {
-        box-shadow: 0 0.4rem 0.8rem ${({ defaults, textShadowColor, isImage}) => 
-            textShadowColor ||  defaults[isImage ? 'imgHoverShadowColor' : 'textHoverShadowColor']};
-
+        background: ${({ defaults, hoverBgColor }) => hoverBgColor || defaults.hover.bgColor};
+        box-shadow: 0 0.4rem 0.8rem ${getShadowColor};
         ${Text.Style} {
-            color: ${({ defaults : {hoverTextColor}}) => hoverTextColor };
+            color: ${({ defaults, hoverTextColor }) => hoverTextColor || defaults.hover.textColor};
         }
-        background: ${({ defaults : {hoverBgColor}}) => hoverBgColor };
-    }  
+    }
 `;

@@ -1,15 +1,87 @@
 import { Avatar } from './Avatar.tsx';
+import Text from '../Text';
+import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './Avatar.stories';
+import { sizes, Div, ThemeInterface } from './Avatar.stories';
+import { withKnobs, color, select } from '@storybook/addon-knobs';
 
 <Meta title="Core" component={Avatar} parameters={{ jest: ['Avatar.test.tsx'] }} />
 
 # Avatar
 
-### Displays an image or text that represents a user or organization
+Displays an image or text that represents a user or organization
 
 <Preview withToolbar>
-    <Story name="Avatar">{stories.Basic()}</Story>
+    <Story name="Avatar" parameters={{ decorators: [withKnobs] }}>
+        <Div>
+            <Avatar size={select('Size', sizes, 'M')}>
+                <img src="http://i.pravatar.cc/150?img=66" />
+            </Avatar>
+            <Avatar
+                size={select('Size', sizes, 'M')}
+                bgColor={color('Background color', defaultTheme.avatar.defaults.bgColor)}
+                textColor={color('Text color', defaultTheme.avatar.defaults.textColor)}
+                hoverBgColor={color('Hover background color', defaultTheme.avatar.defaults.hover.bgColor)}
+                hoverTextColor={color('Hover text color', defaultTheme.avatar.defaults.hover.textColor)}
+                hoverImgShadowColor={color('Hover img shadow color', defaultTheme.avatar.defaults.hover.imgShadowColor)}
+                hoverTextShadowColor={color('Hover text shadow color', defaultTheme.avatar.defaults.hover.textShadowColor)}
+            >
+                <Text>KP</Text>
+            </Avatar>
+        </Div>
+    </Story>
+</Preview>
+
+### Color Variations
+
+You can either change the theme or pass the colors as props.
+
+<Preview withToolbar>
+    <Div>
+        <Avatar
+            sizes="L"
+            textColor={defaultTheme.colors.green[500]}
+            bgColor={defaultTheme.colors.green[100]}
+            hoverBgColor={defaultTheme.colors.green[400]}
+            hoverTextColor={defaultTheme.colors.white}
+            hoverImgShadowColor="rgba(96, 120, 144, 0.35)"
+            hoverTextShadowColor="rgba(0, 128, 0, 0.35)"
+        >
+            <Text>KP</Text>
+        </Avatar>
+        <Avatar
+            sizes="L"
+            textColor={defaultTheme.colors.marigoldOrange[500]}
+            bgColor={defaultTheme.colors.marigoldOrange[100]}
+            hoverBgColor={defaultTheme.colors.marigoldOrange[400]}
+            hoverTextColor={defaultTheme.colors.white}
+            hoverImgShadowColor="rgba(96, 120, 144, 0.35)"
+            hoverTextShadowColor="rgba(242, 113, 33, 0.35)"
+        >
+            <Text>KP</Text>
+        </Avatar>
+    </Div>
+</Preview>
+
+### Sizes
+
+There are three sizs available `S` | `M` | `L`.
+
+<Preview withToolbar>
+    <Div>
+        <Avatar size="S">SM</Avatar>
+        <Avatar size="M">MD</Avatar>
+        <Avatar size="L">LG</Avatar>
+        <Avatar size="S">
+            <img src="http://i.pravatar.cc/150?img=66" />
+        </Avatar>
+        <Avatar size="M">
+            <img src="http://i.pravatar.cc/150?img=66" />
+        </Avatar>
+        <Avatar size="L">
+            <img src="http://i.pravatar.cc/150?img=66" />
+        </Avatar>
+    </Div>
 </Preview>
 
 ### Props
@@ -18,4 +90,4 @@ import * as stories from './Avatar.stories';
 
 ### AvatarTheme
 
-<Props of={stories.ThemeInterface} />
+<Props of={ThemeInterface} />
