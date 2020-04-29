@@ -9,9 +9,9 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size'>, WithThem
     /** Background color */
     bgColor?: string;
     /** Hover shadow color*/
-    hoverShadowColor?: string;
+    textShadowColor?: string;
     /** Image Hover shadow color */
-    imgHoverShadow?: string;
+    imgShadowColor?: string;
     /** To check children is image */
     isImage?: boolean;
 }

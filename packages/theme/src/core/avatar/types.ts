@@ -1,5 +1,3 @@
-import { FontVariants } from '../font/types';
-
 export type AvatarSizes = 'S' | 'M' | 'L';
 
 export interface AvatarTheme {
@@ -7,16 +5,15 @@ export interface AvatarTheme {
         [k in AvatarSizes]: {
             avatarSize: string;
             fontSize: string;
+            lineHeight: string;
         };
     };
     defaults: {
         size: AvatarSizes;
         textColor: string;
-        bgColor: string;
-        lineHeight: string;
         fontWeight: string;
-        fontFamily: string;
-        hoverBoxShadowColor: string;
+        bgColor: string;
+        textHoverShadowColor: string;
         imgHoverShadowColor: string;
         hoverTextColor: string;
         hoverBgColor: string;

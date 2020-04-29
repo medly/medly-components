@@ -41,11 +41,11 @@ exports[`Avatar component should render with default props 1`] = `
 }
 
 .c0 img:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(96,120,144,0.35);
+  box-shadow: 0 0.4rem 0.8rem 0 0.4rem 0.8rem rgba(96,120,144,0.35);
 }
 
 .c0:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+  box-shadow: 0 0.4rem 0.8rem;
   background: #1A6BF0;
 }
 
@@ -107,11 +107,11 @@ exports[`Avatar component should render with size 1`] = `
 }
 
 .c0 img:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(96,120,144,0.35);
+  box-shadow: 0 0.4rem 0.8rem 0 0.4rem 0.8rem rgba(96,120,144,0.35);
 }
 
 .c0:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+  box-shadow: 0 0.4rem 0.8rem;
   background: #1A6BF0;
 }
 
@@ -160,11 +160,11 @@ exports[`Avatar component should render with size and image 1`] = `
 }
 
 .c0 img:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(96,120,144,0.35);
+  box-shadow: 0 0.4rem 0.8rem 0 0.4rem 0.8rem rgba(96,120,144,0.35);
 }
 
 .c0:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(96,120,144,0.35);
+  box-shadow: 0 0.4rem 0.8rem 0 0.4rem 0.8rem rgba(96,120,144,0.35);
   background: #1A6BF0;
 }
 
