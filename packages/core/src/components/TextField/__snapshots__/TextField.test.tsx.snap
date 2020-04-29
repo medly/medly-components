@@ -28,9 +28,6 @@ exports[`TextField should handle builtin form validation 1`] = `
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 0.6rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -39,6 +36,9 @@ exports[`TextField should handle builtin form validation 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 2.3rem;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 0.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   border: none;
@@ -114,6 +114,10 @@ exports[`TextField should handle builtin form validation 1`] = `
   border-bottom-width: 0.2rem;
 }
 
+.c1:not(:disabled):hover {
+  border-color: #566c82;
+}
+
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
@@ -137,67 +141,90 @@ exports[`TextField should handle builtin form validation 1`] = `
   cursor: not-allowed;
 }
 
-.c1:invalid {
+.c1:focus,
+.c1:focus:hover {
+  border-color: #005AEE;
+  background-color: #e6effd;
+}
+
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
+  color: #005AEE;
+}
+
+.c1:focus ~ .sc-AykKF *,
+.c1:focus:hover ~ .sc-AykKF * {
+  fill: #005AEE;
+}
+
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c1:invalid,
+.c1:invalid:focus,
+.c1:invalid:not(:disabled):hover {
   caret-color: #cc0000;
   border-color: #cc0000;
   background-color: #FAE6E6;
 }
 
-.c1:invalid ~ .c2 {
+.c1:invalid ~ .c2,
+.c1:invalid:focus ~ .c2,
+.c1:invalid:not(:disabled):hover ~ .c2 {
   color: #cc0000;
 }
 
-.c1:invalid ~ .sc-AykKF * {
+.c1:invalid ~ .sc-AykKF *,
+.c1:invalid:focus ~ .sc-AykKF *,
+.c1:invalid:not(:disabled):hover ~ .sc-AykKF * {
   fill: #cc0000;
 }
 
-.c1:invalid ~ .sc-AykKD {
+.c1:invalid ~ .sc-AykKD,
+.c1:invalid:focus ~ .sc-AykKD,
+.c1:invalid:not(:disabled):hover ~ .sc-AykKD {
   color: #cc0000;
 }
 
-.c1:invalid::-webkit-input-placeholder {
+.c1:invalid::-webkit-input-placeholder,
+.c1:invalid:focus::-webkit-input-placeholder,
+.c1:invalid:not(:disabled):hover::-webkit-input-placeholder {
   color: rgba(204,0,0,.2);
 }
 
-.c1:invalid::-moz-placeholder {
+.c1:invalid::-moz-placeholder,
+.c1:invalid:focus::-moz-placeholder,
+.c1:invalid:not(:disabled):hover::-moz-placeholder {
   color: rgba(204,0,0,.2);
 }
 
-.c1:invalid:-ms-input-placeholder {
+.c1:invalid:-ms-input-placeholder,
+.c1:invalid:focus:-ms-input-placeholder,
+.c1:invalid:not(:disabled):hover:-ms-input-placeholder {
   color: rgba(204,0,0,.2);
 }
 
-.c1:invalid::placeholder {
+.c1:invalid::placeholder,
+.c1:invalid:focus::placeholder,
+.c1:invalid:not(:disabled):hover::placeholder {
   color: rgba(204,0,0,.2);
-}
-
-.c1:focus {
-  border-color: #005AEE;
-  background-color: #e6effd;
-}
-
-.c1:focus ~ .c2 {
-  color: #005AEE;
-}
-
-.c1:focus ~ .sc-AykKF * {
-  fill: #005AEE;
-}
-
-.c1:focus::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c1:focus::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c1:focus:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c1:focus::placeholder {
-  color: rgba(0,90,238,.2);
 }
 
 .c0 {
@@ -281,7 +308,8 @@ exports[`TextField should render asterisk if we pass required prop as true 1`] =
   color: #b0bcc8;
 }
 
-.c2:focus ~ .c0 {
+.c2:focus ~ .c0,
+.c2:focus:hover ~ .c0 {
   color: #005AEE;
 }
 
@@ -318,9 +346,6 @@ exports[`TextField should render properly with default props 1`] = `
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 0.6rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -329,6 +354,9 @@ exports[`TextField should render properly with default props 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 2.3rem;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 0.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   border: none;
@@ -404,6 +432,10 @@ exports[`TextField should render properly with default props 1`] = `
   border-bottom-width: 0.2rem;
 }
 
+.c1:not(:disabled):hover {
+  border-color: #566c82;
+}
+
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
@@ -427,32 +459,39 @@ exports[`TextField should render properly with default props 1`] = `
   cursor: not-allowed;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus:hover {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c1:focus ~ .c2 {
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF *,
+.c1:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::-moz-placeholder {
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::placeholder {
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -520,9 +559,6 @@ exports[`TextField with filled variant and with label should render default stat
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 1.4rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -531,6 +567,9 @@ exports[`TextField with filled variant and with label should render default stat
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 1.4rem;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 1.4rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   border: none;
@@ -606,6 +645,10 @@ exports[`TextField with filled variant and with label should render default stat
   border-bottom-width: 0.2rem;
 }
 
+.c1:not(:disabled):hover {
+  border-color: #566c82;
+}
+
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
@@ -629,32 +672,39 @@ exports[`TextField with filled variant and with label should render default stat
   cursor: not-allowed;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus:hover {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c1:focus ~ .c2 {
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF *,
+.c1:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::-moz-placeholder {
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::placeholder {
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -720,9 +770,6 @@ exports[`TextField with filled variant and with label should render focus state 
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 1.4rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -731,6 +778,9 @@ exports[`TextField with filled variant and with label should render focus state 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 1.4rem;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 1.4rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   border: none;
@@ -806,6 +856,10 @@ exports[`TextField with filled variant and with label should render focus state 
   border-bottom-width: 0.2rem;
 }
 
+.c1:not(:disabled):hover {
+  border-color: #566c82;
+}
+
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
@@ -829,32 +883,39 @@ exports[`TextField with filled variant and with label should render focus state 
   cursor: not-allowed;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus:hover {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c1:focus ~ .c2 {
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF *,
+.c1:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::-moz-placeholder {
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::placeholder {
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -920,9 +981,6 @@ exports[`TextField with filled variant and without label should render default s
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 1.4rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -931,6 +989,9 @@ exports[`TextField with filled variant and without label should render default s
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 1.4rem;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 1.4rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   border: none;
@@ -1006,6 +1067,10 @@ exports[`TextField with filled variant and without label should render default s
   border-bottom-width: 0.2rem;
 }
 
+.c1:not(:disabled):hover {
+  border-color: #566c82;
+}
+
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
@@ -1029,32 +1094,39 @@ exports[`TextField with filled variant and without label should render default s
   cursor: not-allowed;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus:hover {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c1:focus ~ .c2 {
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF *,
+.c1:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::-moz-placeholder {
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::placeholder {
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -1120,9 +1192,6 @@ exports[`TextField with filled variant and without label should render focus sta
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 1.4rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -1131,6 +1200,9 @@ exports[`TextField with filled variant and without label should render focus sta
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 1.4rem;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 1.4rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   border: none;
@@ -1206,6 +1278,10 @@ exports[`TextField with filled variant and without label should render focus sta
   border-bottom-width: 0.2rem;
 }
 
+.c1:not(:disabled):hover {
+  border-color: #566c82;
+}
+
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
@@ -1229,32 +1305,39 @@ exports[`TextField with filled variant and without label should render focus sta
   cursor: not-allowed;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus:hover {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c1:focus ~ .c2 {
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF *,
+.c1:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::-moz-placeholder {
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::placeholder {
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -1326,9 +1409,6 @@ exports[`TextField with filled variant should render error state properly  1`] =
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 0.6rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -1337,13 +1417,13 @@ exports[`TextField with filled variant should render error state properly  1`] =
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 2.3rem;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 0.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   border: none;
   border-bottom: 0.1rem solid #566c82;
-  caret-color: #cc0000;
-  border-color: #cc0000;
-  background-color: #FAE6E6;
 }
 
 .c1:focus {
@@ -1415,6 +1495,10 @@ exports[`TextField with filled variant should render error state properly  1`] =
   border-bottom-width: 0.2rem;
 }
 
+.c1:not(:disabled):hover {
+  border-color: #566c82;
+}
+
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
@@ -1438,31 +1522,53 @@ exports[`TextField with filled variant should render error state properly  1`] =
   cursor: not-allowed;
 }
 
-.c1 ~ .c2 {
+.c1,
+.c1:focus,
+.c1:not(:disabled):hover {
+  caret-color: #cc0000;
+  border-color: #cc0000;
+  background-color: #FAE6E6;
+}
+
+.c1 ~ .c2,
+.c1:focus ~ .c2,
+.c1:not(:disabled):hover ~ .c2 {
   color: #cc0000;
 }
 
-.c1 ~ .sc-AykKF * {
+.c1 ~ .sc-AykKF *,
+.c1:focus ~ .sc-AykKF *,
+.c1:not(:disabled):hover ~ .sc-AykKF * {
   fill: #cc0000;
 }
 
-.c1 ~ .c4 {
+.c1 ~ .c4,
+.c1:focus ~ .c4,
+.c1:not(:disabled):hover ~ .c4 {
   color: #cc0000;
 }
 
-.c1::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder,
+.c1:focus::-webkit-input-placeholder,
+.c1:not(:disabled):hover::-webkit-input-placeholder {
   color: rgba(204,0,0,.2);
 }
 
-.c1::-moz-placeholder {
+.c1::-moz-placeholder,
+.c1:focus::-moz-placeholder,
+.c1:not(:disabled):hover::-moz-placeholder {
   color: rgba(204,0,0,.2);
 }
 
-.c1:-ms-input-placeholder {
+.c1:-ms-input-placeholder,
+.c1:focus:-ms-input-placeholder,
+.c1:not(:disabled):hover:-ms-input-placeholder {
   color: rgba(204,0,0,.2);
 }
 
-.c1::placeholder {
+.c1::placeholder,
+.c1:focus::placeholder,
+.c1:not(:disabled):hover::placeholder {
   color: rgba(204,0,0,.2);
 }
 
@@ -1526,7 +1632,9 @@ exports[`TextField with filled variant should render error text properly 1`] = `
   color: #b0bcc8;
 }
 
-.c2 ~ .c0 {
+.c2 ~ .c0,
+.c2:focus ~ .c0,
+.c2:not(:disabled):hover ~ .c0 {
   color: #cc0000;
 }
 
@@ -1594,6 +1702,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 }
 
 .c6 {
+  pointer-events: none;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -1608,9 +1717,6 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 0.6rem;
-  padding-left: 5.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -1619,6 +1725,9 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 2.3rem;
+  padding-right: 1.6rem;
+  padding-left: 5.6rem;
+  padding-bottom: 0.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   border: none;
@@ -1694,6 +1803,10 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   border-bottom-width: 0.2rem;
 }
 
+.c1:not(:disabled):hover {
+  border-color: #566c82;
+}
+
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
@@ -1717,32 +1830,39 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   cursor: not-allowed;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus:hover {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c1:focus ~ .c2 {
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus ~ .c5 * {
+.c1:focus ~ .c5 *,
+.c1:focus:hover ~ .c5 * {
   fill: #005AEE;
 }
 
-.c1:focus::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::-moz-placeholder {
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::placeholder {
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -1834,6 +1954,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 }
 
 .c5 {
+  pointer-events: none;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -1848,9 +1969,6 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 0.6rem;
-  padding-left: 1.6rem;
-  padding-right: 5.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -1859,6 +1977,9 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 2.3rem;
+  padding-right: 5.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 0.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   border: none;
@@ -1934,6 +2055,10 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   border-bottom-width: 0.2rem;
 }
 
+.c1:not(:disabled):hover {
+  border-color: #566c82;
+}
+
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
@@ -1957,32 +2082,39 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   cursor: not-allowed;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus:hover {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c1:focus ~ .c2 {
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF *,
+.c1:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::-moz-placeholder {
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::placeholder {
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -2065,9 +2197,6 @@ exports[`TextField with outlined variant and with label should render default st
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 1.4rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -2076,6 +2205,9 @@ exports[`TextField with outlined variant and with label should render default st
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 1.4rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.4rem;
+  padding-left: 1.5rem;
   border-radius: 0.4rem;
   border: 1px solid #98A7B7;
 }
@@ -2170,32 +2302,39 @@ exports[`TextField with outlined variant and with label should render default st
   cursor: not-allowed;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus:hover {
   border-color: #005AEE;
   background-color: transparent;
 }
 
-.c1:focus ~ .c2 {
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF *,
+.c1:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus::-moz-placeholder {
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus::placeholder {
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
   color: #C7D0D8;
 }
 
@@ -2261,9 +2400,6 @@ exports[`TextField with outlined variant and with label should render focus stat
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 1.4rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -2272,6 +2408,9 @@ exports[`TextField with outlined variant and with label should render focus stat
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 1.4rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.4rem;
+  padding-left: 1.5rem;
   border-radius: 0.4rem;
   border: 1px solid #98A7B7;
 }
@@ -2366,32 +2505,39 @@ exports[`TextField with outlined variant and with label should render focus stat
   cursor: not-allowed;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus:hover {
   border-color: #005AEE;
   background-color: transparent;
 }
 
-.c1:focus ~ .c2 {
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF *,
+.c1:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus::-moz-placeholder {
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus::placeholder {
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
   color: #C7D0D8;
 }
 
@@ -2457,9 +2603,6 @@ exports[`TextField with outlined variant and without label should render default
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 1.4rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -2468,6 +2611,9 @@ exports[`TextField with outlined variant and without label should render default
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 1.4rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.4rem;
+  padding-left: 1.5rem;
   border-radius: 0.4rem;
   border: 1px solid #98A7B7;
 }
@@ -2562,32 +2708,39 @@ exports[`TextField with outlined variant and without label should render default
   cursor: not-allowed;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus:hover {
   border-color: #005AEE;
   background-color: transparent;
 }
 
-.c1:focus ~ .c2 {
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF *,
+.c1:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus::-moz-placeholder {
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus::placeholder {
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
   color: #C7D0D8;
 }
 
@@ -2653,9 +2806,6 @@ exports[`TextField with outlined variant and without label should render focus s
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 1.4rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -2664,6 +2814,9 @@ exports[`TextField with outlined variant and without label should render focus s
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 1.4rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.4rem;
+  padding-left: 1.5rem;
   border-radius: 0.4rem;
   border: 1px solid #98A7B7;
 }
@@ -2758,32 +2911,39 @@ exports[`TextField with outlined variant and without label should render focus s
   cursor: not-allowed;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus:hover {
   border-color: #005AEE;
   background-color: transparent;
 }
 
-.c1:focus ~ .c2 {
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF *,
+.c1:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus::-moz-placeholder {
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus::placeholder {
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
   color: #C7D0D8;
 }
 
@@ -2855,9 +3015,6 @@ exports[`TextField with outlined variant should render error state properly  1`]
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 0.6rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -2866,11 +3023,11 @@ exports[`TextField with outlined variant should render error state properly  1`]
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 2.2rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1.5rem;
   border-radius: 0.4rem;
   border: 1px solid #98A7B7;
-  caret-color: #cc0000;
-  border-color: #cc0000;
-  background-color: transparent;
 }
 
 .c1:focus {
@@ -2963,31 +3120,53 @@ exports[`TextField with outlined variant should render error state properly  1`]
   cursor: not-allowed;
 }
 
-.c1 ~ .c2 {
+.c1,
+.c1:focus,
+.c1:not(:disabled):hover {
+  caret-color: #cc0000;
+  border-color: #cc0000;
+  background-color: transparent;
+}
+
+.c1 ~ .c2,
+.c1:focus ~ .c2,
+.c1:not(:disabled):hover ~ .c2 {
   color: #cc0000;
 }
 
-.c1 ~ .sc-AykKF * {
+.c1 ~ .sc-AykKF *,
+.c1:focus ~ .sc-AykKF *,
+.c1:not(:disabled):hover ~ .sc-AykKF * {
   fill: #cc0000;
 }
 
-.c1 ~ .c4 {
+.c1 ~ .c4,
+.c1:focus ~ .c4,
+.c1:not(:disabled):hover ~ .c4 {
   color: #cc0000;
 }
 
-.c1::-webkit-input-placeholder {
+.c1::-webkit-input-placeholder,
+.c1:focus::-webkit-input-placeholder,
+.c1:not(:disabled):hover::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1::-moz-placeholder {
+.c1::-moz-placeholder,
+.c1:focus::-moz-placeholder,
+.c1:not(:disabled):hover::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1:-ms-input-placeholder {
+.c1:-ms-input-placeholder,
+.c1:focus:-ms-input-placeholder,
+.c1:not(:disabled):hover:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1::placeholder {
+.c1::placeholder,
+.c1:focus::placeholder,
+.c1:not(:disabled):hover::placeholder {
   color: #C7D0D8;
 }
 
@@ -3051,7 +3230,9 @@ exports[`TextField with outlined variant should render error text properly 1`] =
   color: #b0bcc8;
 }
 
-.c2 ~ .c0 {
+.c2 ~ .c0,
+.c2:focus ~ .c0,
+.c2:not(:disabled):hover ~ .c0 {
   color: #cc0000;
 }
 
@@ -3119,6 +3300,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 }
 
 .c6 {
+  pointer-events: none;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -3133,9 +3315,6 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 0.6rem;
-  padding-left: 5.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -3144,6 +3323,9 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 2.2rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.6rem;
+  padding-left: 5.5rem;
   border-radius: 0.4rem;
   border: 1px solid #98A7B7;
 }
@@ -3238,32 +3420,39 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   cursor: not-allowed;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus:hover {
   border-color: #005AEE;
   background-color: transparent;
 }
 
-.c1:focus ~ .c2 {
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus ~ .c5 * {
+.c1:focus ~ .c5 *,
+.c1:focus:hover ~ .c5 * {
   fill: #005AEE;
 }
 
-.c1:focus::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus::-moz-placeholder {
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus::placeholder {
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
   color: #C7D0D8;
 }
 
@@ -3355,6 +3544,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 }
 
 .c5 {
+  pointer-events: none;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -3369,9 +3559,6 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 0.6rem;
-  padding-left: 1.6rem;
-  padding-right: 5.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -3380,6 +3567,9 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 2.2rem;
+  padding-right: 5.5rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1.5rem;
   border-radius: 0.4rem;
   border: 1px solid #98A7B7;
 }
@@ -3474,32 +3664,39 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   cursor: not-allowed;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus:hover {
   border-color: #005AEE;
   background-color: transparent;
 }
 
-.c1:focus ~ .c2 {
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF *,
+.c1:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus::-moz-placeholder {
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c1:focus::placeholder {
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
   color: #C7D0D8;
 }
 
@@ -3582,9 +3779,6 @@ exports[`TextField without label should render default state properly 1`] = `
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 1.4rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -3593,6 +3787,9 @@ exports[`TextField without label should render default state properly 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 1.4rem;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 1.4rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   border: none;
@@ -3668,6 +3865,10 @@ exports[`TextField without label should render default state properly 1`] = `
   border-bottom-width: 0.2rem;
 }
 
+.c1:not(:disabled):hover {
+  border-color: #566c82;
+}
+
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
@@ -3691,32 +3892,39 @@ exports[`TextField without label should render default state properly 1`] = `
   cursor: not-allowed;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus:hover {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c1:focus ~ .c2 {
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF *,
+.c1:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::-moz-placeholder {
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::placeholder {
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -3782,9 +3990,6 @@ exports[`TextField without label should render focus state properly  1`] = `
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-bottom: 0.6rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -3793,6 +3998,9 @@ exports[`TextField without label should render focus state properly  1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 2.3rem;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 0.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   border: none;
@@ -3868,6 +4076,10 @@ exports[`TextField without label should render focus state properly  1`] = `
   border-bottom-width: 0.2rem;
 }
 
+.c1:not(:disabled):hover {
+  border-color: #566c82;
+}
+
 .c1:disabled {
   cursor: not-allowed;
   color: #435465;
@@ -3891,32 +4103,39 @@ exports[`TextField without label should render focus state properly  1`] = `
   cursor: not-allowed;
 }
 
-.c1:focus {
+.c1:focus,
+.c1:focus:hover {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c1:focus ~ .c2 {
+.c1:focus ~ .c2,
+.c1:focus:hover ~ .c2 {
   color: #005AEE;
 }
 
-.c1:focus ~ .sc-AykKF * {
+.c1:focus ~ .sc-AykKF *,
+.c1:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c1:focus::-webkit-input-placeholder {
+.c1:focus::-webkit-input-placeholder,
+.c1:focus:hover::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::-moz-placeholder {
+.c1:focus::-moz-placeholder,
+.c1:focus:hover::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus:-ms-input-placeholder {
+.c1:focus:-ms-input-placeholder,
+.c1:focus:hover:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c1:focus::placeholder {
+.c1:focus::placeholder,
+.c1:focus:hover::placeholder {
   color: rgba(0,90,238,.2);
 }
 

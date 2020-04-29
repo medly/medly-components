@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SingleSelect component with filled variant should render disabled state properly  1`] = `
+exports[`SingleSelect component should handle builtin form validation 1`] = `
 .c6 {
   font-size: 2.4rem;
   cursor: inherit;
@@ -33,6 +33,7 @@ exports[`SingleSelect component with filled variant should render disabled state
 }
 
 .c8 {
+  pointer-events: none;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -45,9 +46,6 @@ exports[`SingleSelect component with filled variant should render disabled state
 
 .c3 {
   width: 100%;
-  padding-bottom: 1.4rem;
-  padding-left: 1.6rem;
-  padding-right: 5.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -56,6 +54,9 @@ exports[`SingleSelect component with filled variant should render disabled state
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 1.4rem;
+  padding-right: 5.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 1.4rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   border: none;
@@ -131,6 +132,10 @@ exports[`SingleSelect component with filled variant should render disabled state
   border-bottom-width: 0.2rem;
 }
 
+.c3:not(:disabled):hover {
+  border-color: #566c82;
+}
+
 .c3:disabled {
   cursor: not-allowed;
   color: #435465;
@@ -154,32 +159,400 @@ exports[`SingleSelect component with filled variant should render disabled state
   cursor: not-allowed;
 }
 
-.c3:focus {
+.c3:focus,
+.c3:focus:hover {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c3:focus ~ .c4 {
+.c3:focus ~ .c4,
+.c3:focus:hover ~ .c4 {
   color: #005AEE;
 }
 
-.c3:focus ~ .sc-AykKF * {
+.c3:focus ~ .sc-AykKF *,
+.c3:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3:focus::-webkit-input-placeholder,
+.c3:focus:hover::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
+}
+
+.c3:focus::-moz-placeholder,
+.c3:focus:hover::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c3:focus:-ms-input-placeholder,
+.c3:focus:hover:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c3:focus::placeholder,
+.c3:focus:hover::placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c3:invalid,
+.c3:invalid:focus,
+.c3:invalid:not(:disabled):hover {
+  caret-color: #cc0000;
+  border-color: #cc0000;
+  background-color: #FAE6E6;
+}
+
+.c3:invalid ~ .c4,
+.c3:invalid:focus ~ .c4,
+.c3:invalid:not(:disabled):hover ~ .c4 {
+  color: #cc0000;
+}
+
+.c3:invalid ~ .sc-AykKF *,
+.c3:invalid:focus ~ .sc-AykKF *,
+.c3:invalid:not(:disabled):hover ~ .sc-AykKF * {
+  fill: #cc0000;
+}
+
+.c3:invalid ~ .sc-AykKD,
+.c3:invalid:focus ~ .sc-AykKD,
+.c3:invalid:not(:disabled):hover ~ .sc-AykKD {
+  color: #cc0000;
+}
+
+.c3:invalid::-webkit-input-placeholder,
+.c3:invalid:focus::-webkit-input-placeholder,
+.c3:invalid:not(:disabled):hover::-webkit-input-placeholder {
+  color: rgba(204,0,0,.2);
+}
+
+.c3:invalid::-moz-placeholder,
+.c3:invalid:focus::-moz-placeholder,
+.c3:invalid:not(:disabled):hover::-moz-placeholder {
+  color: rgba(204,0,0,.2);
+}
+
+.c3:invalid:-ms-input-placeholder,
+.c3:invalid:focus:-ms-input-placeholder,
+.c3:invalid:not(:disabled):hover:-ms-input-placeholder {
+  color: rgba(204,0,0,.2);
+}
+
+.c3:invalid::placeholder,
+.c3:invalid:focus::placeholder,
+.c3:invalid:not(:disabled):hover::placeholder {
+  color: rgba(204,0,0,.2);
+}
+
+.c2 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  margin: 0.8rem 0;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c0 .c1 {
+  margin: 0;
+}
+
+.c0 .c1 input {
+  cursor: pointer;
+}
+
+.c0 .c1 input ~ .c7 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%) rotate(0deg);
+  -ms-transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(0deg);
+}
+
+.c0 .c1 input ~ .c7 * {
+  fill: #566c82;
+}
+
+.c0 .c1 input ~ .c7:hover * {
+  fill: #13181D;
+}
+
+.c0 .c1 input:hover ~ .c7 * {
+  fill: #13181D;
+}
+
+.c0 .c1 input:focus ~ .c7 * {
+  fill: #005AEE;
+}
+
+.c0 .c1 input:invalid ~ .c7 *,
+.c0 .c1 input:invalid:hover ~ .c7 *,
+.c0 .c1 input:invalid:focus ~ .c7 * {
+  fill: #cc0000;
+}
+
+.c0 .c1 input:invalid ~ .c7:hover *,
+.c0 .c1 input:invalid:hover ~ .c7:hover *,
+.c0 .c1 input:invalid:focus ~ .c7:hover * {
+  fill: #cc0000;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1 c2"
+    >
+      <input
+        aria-describedby="medly-singleSelect-helper-text"
+        autocomplete="off"
+        class="c3"
+        id="medly-singleSelect-input"
+        placeholder="Please Select . . ."
+        type="text"
+        value=""
+      />
+      <label
+        class="c4 c5"
+        for="medly-singleSelect-input"
+      />
+      <svg
+        class="c6 c7 c8"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+          fill="#000"
+        />
+      </svg>
+      
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SingleSelect component with filled variant should render disabled state properly  1`] = `
+.c6 {
+  font-size: 2.4rem;
+  cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c5 {
+  top: 0;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  margin-left: 1.6rem;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
+}
+
+.c8 {
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 2.8rem;
+  right: 1.6rem;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.c3 {
+  width: 100%;
+  color: #13181D;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  cursor: text;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding-top: 1.4rem;
+  padding-right: 5.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 1.4rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
+  border: none;
+  border-bottom: 0.1rem solid #566c82;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3:focus::-webkit-input-placeholder {
+  opacity: 1;
 }
 
 .c3:focus::-moz-placeholder {
-  color: rgba(0,90,238,.2);
+  opacity: 1;
 }
 
 .c3:focus:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
+  opacity: 1;
 }
 
 .c3:focus::placeholder {
+  opacity: 1;
+}
+
+.c3::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c3::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c3:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c3::placeholder {
+  opacity: 0;
+  -webkit-transition: all 150ms ease-out;
+  transition: all 150ms ease-out;
+}
+
+.c3:not(:placeholder-shown) + .c4,
+.c3:focus + .c4 {
+  -webkit-transform: translate3d(0,20%,0) scale(0.75);
+  -ms-transform: translate3d(0,20%,0) scale(0.75);
+  transform: translate3d(0,20%,0) scale(0.75);
+}
+
+.c3 ~ .c4 {
+  color: #566c82;
+}
+
+.c3 ~ .sc-AykKF * {
+  fill: #566c82;
+}
+
+.c3 ~ .sc-AykKD {
+  color: #566c82;
+}
+
+.c3:not(:disabled):hover,
+.c3:not(:disabled):focus {
+  padding-bottom: 1.3rem;
+  border-bottom-width: 0.2rem;
+}
+
+.c3:not(:disabled):hover {
+  border-color: #566c82;
+}
+
+.c3:disabled {
+  cursor: not-allowed;
+  color: #435465;
+  background-color: #F7F8F9;
+  border-color: #C7D0D8;
+}
+
+.c3:disabled ~ .c4 {
+  color: #b0bcc8;
+}
+
+.c3:disabled ~ .sc-AykKF * {
+  fill: #b0bcc8;
+}
+
+.c3:disabled ~ .sc-AykKD {
+  color: #b0bcc8;
+}
+
+.c3:disabled ~ * {
+  cursor: not-allowed;
+}
+
+.c3:focus,
+.c3:focus:hover {
+  border-color: #005AEE;
+  background-color: #e6effd;
+}
+
+.c3:focus ~ .c4,
+.c3:focus:hover ~ .c4 {
+  color: #005AEE;
+}
+
+.c3:focus ~ .sc-AykKF *,
+.c3:focus:hover ~ .sc-AykKF * {
+  fill: #005AEE;
+}
+
+.c3:focus::-webkit-input-placeholder,
+.c3:focus:hover::-webkit-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c3:focus::-moz-placeholder,
+.c3:focus:hover::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c3:focus:-ms-input-placeholder,
+.c3:focus:hover:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c3:focus::placeholder,
+.c3:focus:hover::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -223,15 +596,29 @@ exports[`SingleSelect component with filled variant should render disabled state
 }
 
 .c0 .c1 input ~ .c7 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
   cursor: not-allowed;
+  -webkit-transform: translateY(-50%) rotate(0deg);
+  -ms-transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(0deg);
 }
 
 .c0 .c1 input ~ .c7 * {
   fill: #566c82;
 }
 
-.c0 .c1 input:focus ~ .c7 * {
+.c0 .c1 input ~ .c7:hover * {
   fill: #13181D;
+}
+
+.c0 .c1 input:hover ~ .c7 * {
+  fill: #13181D;
+}
+
+.c0 .c1 input:focus ~ .c7 * {
+  fill: #005AEE;
 }
 
 <div>
@@ -290,7 +677,9 @@ exports[`SingleSelect component with filled variant should render error text pro
   color: #b0bcc8;
 }
 
-.c2 ~ .c0 {
+.c2 ~ .c0,
+.c2:focus ~ .c0,
+.c2:not(:disabled):hover ~ .c0 {
   color: #cc0000;
 }
 
@@ -316,6 +705,7 @@ exports[`SingleSelect component with filled variant should render error text pro
 }
 
 .c2 {
+  pointer-events: none;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -327,15 +717,41 @@ exports[`SingleSelect component with filled variant should render error text pro
 }
 
 .c3 .c4 input ~ .c1 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
   cursor: pointer;
+  -webkit-transform: translateY(-50%) rotate(0deg);
+  -ms-transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(0deg);
 }
 
 .c3 .c4 input ~ .c1 * {
-  fill: #cc0000;
+  fill: #566c82;
+}
+
+.c3 .c4 input ~ .c1:hover * {
+  fill: #13181D;
+}
+
+.c3 .c4 input:hover ~ .c1 * {
+  fill: #13181D;
 }
 
 .c3 .c4 input:focus ~ .c1 * {
-  fill: #13181D;
+  fill: #005AEE;
+}
+
+.c3 .c4 input ~ .c1 *,
+.c3 .c4 input:hover ~ .c1 *,
+.c3 .c4 input:focus ~ .c1 * {
+  fill: #cc0000;
+}
+
+.c3 .c4 input ~ .c1:hover *,
+.c3 .c4 input:hover ~ .c1:hover *,
+.c3 .c4 input:focus ~ .c1:hover * {
+  fill: #cc0000;
 }
 
 <svg
@@ -482,6 +898,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 }
 
 .c8 {
+  pointer-events: none;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -494,9 +911,6 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 
 .c3 {
   width: 100%;
-  padding-bottom: 1.4rem;
-  padding-left: 1.6rem;
-  padding-right: 5.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -505,6 +919,9 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 1.4rem;
+  padding-right: 5.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 1.4rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   border: none;
@@ -580,6 +997,10 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   border-bottom-width: 0.2rem;
 }
 
+.c3:not(:disabled):hover {
+  border-color: #566c82;
+}
+
 .c3:disabled {
   cursor: not-allowed;
   color: #435465;
@@ -603,32 +1024,39 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   cursor: not-allowed;
 }
 
-.c3:focus {
+.c3:focus,
+.c3:focus:hover {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c3:focus ~ .c4 {
+.c3:focus ~ .c4,
+.c3:focus:hover ~ .c4 {
   color: #005AEE;
 }
 
-.c3:focus ~ .sc-AykKF * {
+.c3:focus ~ .sc-AykKF *,
+.c3:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3:focus::-webkit-input-placeholder,
+.c3:focus:hover::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c3:focus::-moz-placeholder {
+.c3:focus::-moz-placeholder,
+.c3:focus:hover::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3:focus:-ms-input-placeholder,
+.c3:focus:hover:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c3:focus::placeholder {
+.c3:focus::placeholder,
+.c3:focus:hover::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -672,15 +1100,29 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 }
 
 .c0 .c1 input ~ .c7 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
   cursor: pointer;
+  -webkit-transform: translateY(-50%) rotate(0deg);
+  -ms-transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(0deg);
 }
 
 .c0 .c1 input ~ .c7 * {
   fill: #566c82;
 }
 
-.c0 .c1 input:focus ~ .c7 * {
+.c0 .c1 input ~ .c7:hover * {
   fill: #13181D;
+}
+
+.c0 .c1 input:hover ~ .c7 * {
+  fill: #13181D;
+}
+
+.c0 .c1 input:focus ~ .c7 * {
+  fill: #005AEE;
 }
 
 <div>
@@ -755,6 +1197,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 }
 
 .c8 {
+  pointer-events: none;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -767,9 +1210,6 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 
 .c3 {
   width: 100%;
-  padding-bottom: 1.4rem;
-  padding-left: 1.6rem;
-  padding-right: 5.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -778,6 +1218,9 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 1.4rem;
+  padding-right: 5.5rem;
+  padding-bottom: 1.4rem;
+  padding-left: 1.5rem;
   border-radius: 0.4rem;
   border: 1px solid #98A7B7;
 }
@@ -872,32 +1315,39 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   cursor: not-allowed;
 }
 
-.c3:focus {
+.c3:focus,
+.c3:focus:hover {
   border-color: #005AEE;
   background-color: transparent;
 }
 
-.c3:focus ~ .c4 {
+.c3:focus ~ .c4,
+.c3:focus:hover ~ .c4 {
   color: #005AEE;
 }
 
-.c3:focus ~ .sc-AykKF * {
+.c3:focus ~ .sc-AykKF *,
+.c3:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3:focus::-webkit-input-placeholder,
+.c3:focus:hover::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3:focus::-moz-placeholder {
+.c3:focus::-moz-placeholder,
+.c3:focus:hover::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3:focus:-ms-input-placeholder,
+.c3:focus:hover:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3:focus::placeholder {
+.c3:focus::placeholder,
+.c3:focus:hover::placeholder {
   color: #C7D0D8;
 }
 
@@ -941,15 +1391,29 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 }
 
 .c0 .c1 input ~ .c7 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
   cursor: not-allowed;
+  -webkit-transform: translateY(-50%) rotate(0deg);
+  -ms-transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(0deg);
 }
 
 .c0 .c1 input ~ .c7 * {
   fill: #607890;
 }
 
-.c0 .c1 input:focus ~ .c7 * {
+.c0 .c1 input ~ .c7:hover * {
   fill: #13181D;
+}
+
+.c0 .c1 input:hover ~ .c7 * {
+  fill: #13181D;
+}
+
+.c0 .c1 input:focus ~ .c7 * {
+  fill: #005AEE;
 }
 
 <div>
@@ -1008,7 +1472,9 @@ exports[`SingleSelect component with outlined variant should render error text p
   color: #b0bcc8;
 }
 
-.c2 ~ .c0 {
+.c2 ~ .c0,
+.c2:focus ~ .c0,
+.c2:not(:disabled):hover ~ .c0 {
   color: #cc0000;
 }
 
@@ -1034,6 +1500,7 @@ exports[`SingleSelect component with outlined variant should render error text p
 }
 
 .c2 {
+  pointer-events: none;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -1045,15 +1512,41 @@ exports[`SingleSelect component with outlined variant should render error text p
 }
 
 .c3 .c4 input ~ .c1 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
   cursor: pointer;
+  -webkit-transform: translateY(-50%) rotate(0deg);
+  -ms-transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(0deg);
 }
 
 .c3 .c4 input ~ .c1 * {
-  fill: #cc0000;
+  fill: #607890;
+}
+
+.c3 .c4 input ~ .c1:hover * {
+  fill: #13181D;
+}
+
+.c3 .c4 input:hover ~ .c1 * {
+  fill: #13181D;
 }
 
 .c3 .c4 input:focus ~ .c1 * {
-  fill: #13181D;
+  fill: #005AEE;
+}
+
+.c3 .c4 input ~ .c1 *,
+.c3 .c4 input:hover ~ .c1 *,
+.c3 .c4 input:focus ~ .c1 * {
+  fill: #cc0000;
+}
+
+.c3 .c4 input ~ .c1:hover *,
+.c3 .c4 input:hover ~ .c1:hover *,
+.c3 .c4 input:focus ~ .c1:hover * {
+  fill: #cc0000;
 }
 
 <svg
@@ -1200,6 +1693,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 }
 
 .c8 {
+  pointer-events: none;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -1212,9 +1706,6 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 
 .c3 {
   width: 100%;
-  padding-bottom: 1.4rem;
-  padding-left: 1.6rem;
-  padding-right: 5.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -1223,6 +1714,9 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 1.4rem;
+  padding-right: 5.5rem;
+  padding-bottom: 1.4rem;
+  padding-left: 1.5rem;
   border-radius: 0.4rem;
   border: 1px solid #98A7B7;
 }
@@ -1317,32 +1811,39 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   cursor: not-allowed;
 }
 
-.c3:focus {
+.c3:focus,
+.c3:focus:hover {
   border-color: #005AEE;
   background-color: transparent;
 }
 
-.c3:focus ~ .c4 {
+.c3:focus ~ .c4,
+.c3:focus:hover ~ .c4 {
   color: #005AEE;
 }
 
-.c3:focus ~ .sc-AykKF * {
+.c3:focus ~ .sc-AykKF *,
+.c3:focus:hover ~ .sc-AykKF * {
   fill: #005AEE;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3:focus::-webkit-input-placeholder,
+.c3:focus:hover::-webkit-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3:focus::-moz-placeholder {
+.c3:focus::-moz-placeholder,
+.c3:focus:hover::-moz-placeholder {
   color: #C7D0D8;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3:focus:-ms-input-placeholder,
+.c3:focus:hover:-ms-input-placeholder {
   color: #C7D0D8;
 }
 
-.c3:focus::placeholder {
+.c3:focus::placeholder,
+.c3:focus:hover::placeholder {
   color: #C7D0D8;
 }
 
@@ -1386,15 +1887,29 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 }
 
 .c0 .c1 input ~ .c7 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
   cursor: pointer;
+  -webkit-transform: translateY(-50%) rotate(0deg);
+  -ms-transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(0deg);
 }
 
 .c0 .c1 input ~ .c7 * {
   fill: #607890;
 }
 
-.c0 .c1 input:focus ~ .c7 * {
+.c0 .c1 input ~ .c7:hover * {
   fill: #13181D;
+}
+
+.c0 .c1 input:hover ~ .c7 * {
+  fill: #13181D;
+}
+
+.c0 .c1 input:focus ~ .c7 * {
+  fill: #005AEE;
 }
 
 <div>

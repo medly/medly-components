@@ -16,14 +16,6 @@ export interface DefaultSelected {
     label: string;
 }
 
-export interface SelectWrapperProps extends HTMLProps<HTMLDivElement>, WithThemeProp {
-    fullWidth?: boolean;
-    disabled?: boolean;
-    minWidth?: string;
-    isErrorPresent?: boolean;
-    variant?: 'outlined' | 'filled';
-}
-
 type InputProps = Omit<HTMLProps<HTMLInputElement>, 'onChange' | 'prefix'>;
 
 export interface SelectProps extends InputProps, WithThemeProp {
@@ -53,4 +45,9 @@ export interface SelectProps extends InputProps, WithThemeProp {
     helperText?: string;
     /** Error Text */
     errorText?: string;
+}
+
+export interface SelectWrapperProps extends Omit<SelectProps, 'ref' | 'options'> {
+    isErrorPresent?: boolean;
+    areOptionsVisible?: boolean;
 }

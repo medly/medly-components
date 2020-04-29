@@ -12,7 +12,7 @@ export const OptionStyled = styled('li').attrs(({ theme: { select } }) => ({ ...
     background-color: ${({ bgColor }) => bgColor};
 
     &:hover {
-        background-color: ${({ hoverBgColor }) => hoverBgColor};
+        background-color: ${({ disabled, hoverBgColor, bgColor }) => (disabled ? bgColor : hoverBgColor)};
     }
 
     ${Text.Style} {

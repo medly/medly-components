@@ -55,6 +55,19 @@ describe('SingleSelect component', () => {
         `);
     });
 
+    it('should show options on click on drop icon', () => {
+        const { container } = render(<SingleSelect options={options} />);
+        fireEvent.click(container.querySelector('svg'));
+        expect(container.querySelector('#medly-singleSelect-options')).toBeVisible();
+    });
+
+    it('should hide options on click on drop icon, if options are already visible', () => {
+        const { container } = render(<SingleSelect options={options} />);
+        fireEvent.click(container.querySelector('svg'));
+        fireEvent.click(container.querySelector('svg'));
+        expect(container.querySelector('#medly-singleSelect-options')).toBeNull();
+    });
+
     it('should hide options on click outside of the container', () => {
         const { container } = render(
             <div>
@@ -64,7 +77,7 @@ describe('SingleSelect component', () => {
         );
         fireEvent.click(container.querySelector('#medly-singleSelect-input'));
         fireEvent.click(container.querySelector('#sibling'));
-        expect(container.querySelector('#medly-popover')).toBeNull();
+        expect(container.querySelector('#medly-singleSelect-options')).toBeNull();
     });
 
     it('should not show options on click outside of the container', () => {
@@ -75,7 +88,7 @@ describe('SingleSelect component', () => {
             </div>
         );
         fireEvent.click(container.querySelector('#sibling'));
-        expect(container.querySelector('#medly-popover')).toBeNull();
+        expect(container.querySelector('#medly-singleSelect-options')).toBeNull();
     });
 
     it('should show the selected option label in input on click on the option', () => {
@@ -108,9 +121,9 @@ describe('SingleSelect component', () => {
     it('should render matched options when input values changes', async () => {
         const { container, queryByText } = render(<SingleSelect options={options} />),
             inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-        fireEvent.click(inputEl);
         fireEvent.change(inputEl, { target: { value: 'Dummy' } });
         expect(queryByText('All')).toBeNull();
+        expect(container.querySelector('#medly-singleSelect-options')).toBeVisible();
     });
 
     it('should render all the options when input value is not matched to any option', async () => {
@@ -123,10 +136,40 @@ describe('SingleSelect component', () => {
         expect(getByText('Dummy2')).toBeVisible();
     });
 
+    it('should call onFocus function on focusing on input', async () => {
+        const mockOnFocus = jest.fn(),
+            { container } = render(<SingleSelect value="Dummy1" options={options} onFocus={mockOnFocus} />),
+            inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
+        fireEvent.focus(inputEl);
+        expect(mockOnFocus).toHaveBeenCalled();
+    });
+
+    it('should call onBlur function on moving focus out of input', async () => {
+        const mockOnBlur = jest.fn(),
+            { container } = render(<SingleSelect value="Dummy1" options={options} onBlur={mockOnBlur} />),
+            inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
+        fireEvent.focus(inputEl);
+        fireEvent.blur(inputEl);
+        expect(mockOnBlur).toHaveBeenCalled();
+    });
+
+    it('should handle builtin form validation', () => {
+        const { container } = render(<SingleSelect withBuiltInValidation options={options} />);
+        expect(container).toMatchSnapshot();
+    });
+
     describe('on pressing', () => {
         afterEach(cleanup);
 
         describe('down arrow', () => {
+            it('should show options if input is in focus and options are not visible', async () => {
+                const { container } = render(<SingleSelect value="Dummy1" options={options} />),
+                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
+                fireEvent.focus(inputEl);
+                fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
+                expect(container.querySelector('#medly-singleSelect-options')).toBeVisible();
+            });
+
             it('should change input', async () => {
                 const mockOnChange = jest.fn(),
                     { container } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} />),
@@ -200,6 +243,14 @@ describe('SingleSelect component', () => {
         });
 
         describe('up arrow', () => {
+            it('should show options if input is in focus and options are not visible', async () => {
+                const { container } = render(<SingleSelect value="Dummy1" options={options} />),
+                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
+                fireEvent.focus(inputEl);
+                fireEvent.keyDown(container, { key: 'ArrowUp', code: 38 });
+                expect(container.querySelector('#medly-singleSelect-options')).toBeVisible();
+            });
+
             it('should change input value', async () => {
                 const mockOnChange = jest.fn(),
                     { container } = render(<SingleSelect value="Dummy2" options={options} onChange={mockOnChange} />),

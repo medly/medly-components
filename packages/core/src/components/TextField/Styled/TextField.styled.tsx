@@ -4,9 +4,12 @@ import { HelperText } from './HelperText.styled';
 import { Label } from './Label.styled';
 import { Prefix } from './Prefix.styled';
 
-const outlineStyle = ({ theme, outlined, isLabelPresent }: StyledProps) => {
+const outlineStyle = ({ theme, outlined, isLabelPresent, isPrefixPresent, isSuffixPresent }: StyledProps) => {
     return css`
         padding-top: ${isLabelPresent ? '2.2rem' : '1.4rem'};
+        padding-right: ${isSuffixPresent ? '5.5rem' : '1.5rem'};
+        padding-bottom: ${isLabelPresent ? '0.6rem' : '1.4rem'};
+        padding-left: ${isPrefixPresent ? '5.5rem' : '1.5rem'};
         border-radius: ${theme.spacing.S1};
         border: 1px solid ${outlined.default.borderColor};
 
@@ -16,9 +19,12 @@ const outlineStyle = ({ theme, outlined, isLabelPresent }: StyledProps) => {
     `;
 };
 
-const filledStyle = ({ theme, filled, isLabelPresent }: StyledProps) => {
+const filledStyle = ({ theme, filled, isLabelPresent, isPrefixPresent, isSuffixPresent }: StyledProps) => {
     return css`
         padding-top: ${isLabelPresent ? '2.3rem' : '1.4rem'};
+        padding-right: ${isSuffixPresent ? '5.6rem' : '1.6rem'};
+        padding-left: ${isPrefixPresent ? '5.6rem' : '1.6rem'};
+        padding-bottom: ${isLabelPresent ? '0.6rem' : '1.4rem'};
         border-radius: ${theme.spacing.S1} ${theme.spacing.S1} 0 0;
         background-color: ${filled.default.bgColor};
         border: none;
@@ -29,11 +35,16 @@ const filledStyle = ({ theme, filled, isLabelPresent }: StyledProps) => {
             padding-bottom: ${isLabelPresent ? '0.5rem' : '1.3rem'};
             border-bottom-width: 0.2rem;
         }
+
+        &:not(:disabled):hover {
+            border-color: ${filled.hover.borderColor};
+        }
     `;
 };
 
 const activeStyle = ({ theme: { textField }, variant }: StyledProps) => css`
-    &:focus {
+    &:focus,
+    &:focus:hover {
         border-color: ${textField[variant].active.borderColor};
         background-color: ${variant === 'filled' ? textField.filled.active.bgColor : 'transparent'};
         & ~ ${Label} {
@@ -72,30 +83,31 @@ const disabledStyle = ({ theme: { textField }, variant }: StyledProps) => css`
 `;
 
 const errorStyle = ({ theme: { textField }, variant }: StyledProps) => css`
-    caret-color: ${textField[variant].error.caretColor};
-    border-color: ${textField[variant].error.borderColor};
-    background-color: ${variant === 'filled' ? textField.filled.error.bgColor : 'transparent'};
-    & ~ ${Label} {
-        color: ${textField[variant].error.labelColor};
-    }
-    & ~ ${Prefix} {
-        * {
-            fill: ${textField[variant].error.labelColor};
+    &,
+    &:focus,
+    &:not(:disabled):hover {
+        caret-color: ${textField[variant].error.caretColor};
+        border-color: ${textField[variant].error.borderColor};
+        background-color: ${variant === 'filled' ? textField.filled.error.bgColor : 'transparent'};
+        & ~ ${Label} {
+            color: ${textField[variant].error.labelColor};
         }
-    }
-    & ~ ${HelperText} {
-        color: ${textField[variant].error.helperTextColor};
-    }
-    &::placeholder {
-        color: ${textField[variant].error.placeholderColor};
+        & ~ ${Prefix} {
+            * {
+                fill: ${textField[variant].error.labelColor};
+            }
+        }
+        & ~ ${HelperText} {
+            color: ${textField[variant].error.helperTextColor};
+        }
+        &::placeholder {
+            color: ${textField[variant].error.placeholderColor};
+        }
     }
 `;
 
 export const Input = styled('input').attrs(({ theme: { textField } }) => ({ ...textField, textField }))<StyledProps>`
     width: ${({ fullWidth }) => (fullWidth ? '100%' : 'max-content')};
-    padding-bottom: ${({ isLabelPresent }) => (isLabelPresent ? '0.6rem' : '1.4rem')};
-    padding-left: ${({ isPrefixPresent }) => (isPrefixPresent ? '5.6rem' : '1.6rem')};
-    padding-right: ${({ isSuffixPresent }) => (isSuffixPresent ? '5.6rem' : '1.6rem')};
     color: ${({ variant, textField }) => textField[variant].default.textColor};
     font-size: 1.6rem;
     line-height: 2.6rem;
@@ -139,6 +151,7 @@ export const Input = styled('input').attrs(({ theme: { textField } }) => ({ ...t
         ${disabledStyle}
     }
 
+    ${({ errorText }) => (errorText ? errorStyle : activeStyle)}
     ${({ withBuiltInValidation }) =>
         withBuiltInValidation &&
         css`
@@ -146,6 +159,4 @@ export const Input = styled('input').attrs(({ theme: { textField } }) => ({ ...t
                 ${errorStyle}
             }
         `}
-
-    ${({ errorText }) => (errorText ? errorStyle : activeStyle)}
 `;

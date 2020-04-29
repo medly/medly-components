@@ -9,7 +9,19 @@ import { Option, SelectProps } from './types';
 
 export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { id, value, onChange, options: defaultOptions, variant, minWidth, fullWidth, disabled, ...inputProps } = props,
+        const {
+                id,
+                value,
+                onChange,
+                options: defaultOptions,
+                variant,
+                minWidth,
+                fullWidth,
+                disabled,
+                onFocus,
+                onBlur,
+                ...inputProps
+            } = props,
             selectId = id || 'medly-singleSelect',
             defaultSelectedOption = getDefaultSelectedOption(defaultOptions, value);
 
@@ -19,8 +31,9 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
             downPress = useKeyPress('ArrowDown'),
             upPress = useKeyPress('ArrowUp'),
             enterPress = useKeyPress('Enter'),
-            [inputValue, setInputValue] = useState(defaultSelectedOption.label),
+            [isFocused, setFocusedState] = useState(false),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
+            [inputValue, setInputValue] = useState(defaultSelectedOption.label),
             [selectedOption, setSelectedOption] = useState(defaultSelectedOption),
             [options, setOptions] = useState(getOptionsWithSelected(defaultOptions, defaultSelectedOption));
 
@@ -36,14 +49,28 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                 inputRef.current.focus();
             }, [inputValue]),
             hideOptions = useCallback(() => setOptionsVisibilityState(false), []),
+            toggleOptions = useCallback(() => (areOptionsVisible ? hideOptions() : showOptions()), [areOptionsVisible]),
+            handleFocus = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
+                setFocusedState(true);
+                onFocus && onFocus(event);
+            }, []),
+            handleBlur = useCallback(
+                (event: React.FocusEvent<HTMLInputElement>) => {
+                    setFocusedState(false);
+                    areOptionsVisible && hideOptions();
+                    onBlur && onBlur(event);
+                },
+                [areOptionsVisible]
+            ),
             handleInputChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     const target = event.target as HTMLInputElement;
                     setInputValue(target.value);
                     const newOptions = filterOptions(getOptionsWithSelected(defaultOptions, selectedOption), target.value);
                     newOptions.length && target.value ? setOptions(newOptions) : updateToDefaultOptions();
+                    !areOptionsVisible && showOptions();
                 },
-                [defaultOptions, selectedOption, updateToDefaultOptions]
+                [areOptionsVisible, defaultOptions, selectedOption, updateToDefaultOptions]
             ),
             selectOption = useCallback(
                 (option: Option) => {
@@ -60,6 +87,8 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                         inputRef.current.blur();
                         hideOptions();
                         onChange && onChange(option.value);
+                    } else {
+                        inputRef.current.focus();
                     }
                 },
                 [inputRef.current, onChange]
@@ -80,16 +109,16 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
         }, [defaultOptions, value]);
 
         useEffect(() => {
-            if (downPress && optionsRef.current) {
-                selectOption(getNextOption(selectedOption, options));
+            if (downPress && isFocused) {
+                areOptionsVisible ? selectOption(getNextOption(selectedOption, options)) : showOptions();
             }
-        }, [downPress]);
+        }, [downPress, isFocused, areOptionsVisible]);
 
         useEffect(() => {
-            if (upPress && optionsRef.current) {
-                selectOption(getPrevOption(selectedOption, options));
+            if (upPress && isFocused) {
+                areOptionsVisible ? selectOption(getPrevOption(selectedOption, options)) : showOptions();
             }
-        }, [upPress]);
+        }, [upPress, isFocused, areOptionsVisible]);
 
         useEffect(() => {
             if (enterPress && optionsRef.current) {
@@ -103,19 +132,22 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
 
         return (
             <Styled.Wrapper
-                ref={wrapperRef}
                 {...{ variant, disabled, minWidth, fullWidth }}
+                ref={wrapperRef}
                 isErrorPresent={!!props.errorText}
-                onClick={showOptions}
+                onClick={toggleOptions}
+                withBuiltInValidation={inputProps.withBuiltInValidation}
+                areOptionsVisible={areOptionsVisible}
             >
                 <TextField
                     variant={variant}
                     fullWidth
                     autoComplete="off"
                     id={selectId}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                     disabled={disabled}
                     value={inputValue}
-                    onFocus={showOptions}
                     ref={inputRef}
                     onChange={handleInputChange}
                     suffix={ChevronDownIcon}

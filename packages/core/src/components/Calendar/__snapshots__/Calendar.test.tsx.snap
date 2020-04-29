@@ -166,6 +166,7 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c17 {
+  pointer-events: none;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -178,9 +179,6 @@ exports[`Calendar Component should render given date 1`] = `
 
 .c11 {
   width: 100%;
-  padding-bottom: 1.4rem;
-  padding-left: 1.6rem;
-  padding-right: 5.6rem;
   color: #13181D;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -189,6 +187,9 @@ exports[`Calendar Component should render given date 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding-top: 1.4rem;
+  padding-right: 5.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 1.4rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   border: none;
@@ -264,6 +265,10 @@ exports[`Calendar Component should render given date 1`] = `
   border-bottom-width: 0.2rem;
 }
 
+.c11:not(:disabled):hover {
+  border-color: #566c82;
+}
+
 .c11:disabled {
   cursor: not-allowed;
   color: #435465;
@@ -287,32 +292,39 @@ exports[`Calendar Component should render given date 1`] = `
   cursor: not-allowed;
 }
 
-.c11:focus {
+.c11:focus,
+.c11:focus:hover {
   border-color: #005AEE;
   background-color: #e6effd;
 }
 
-.c11:focus ~ .c12 {
+.c11:focus ~ .c12,
+.c11:focus:hover ~ .c12 {
   color: #005AEE;
 }
 
-.c11:focus ~ .sc-AykKI * {
+.c11:focus ~ .sc-AykKI *,
+.c11:focus:hover ~ .sc-AykKI * {
   fill: #005AEE;
 }
 
-.c11:focus::-webkit-input-placeholder {
+.c11:focus::-webkit-input-placeholder,
+.c11:focus:hover::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c11:focus::-moz-placeholder {
+.c11:focus::-moz-placeholder,
+.c11:focus:hover::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c11:focus:-ms-input-placeholder {
+.c11:focus:-ms-input-placeholder,
+.c11:focus:hover:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c11:focus::placeholder {
+.c11:focus::placeholder,
+.c11:focus:hover::placeholder {
   color: rgba(0,90,238,.2);
 }
 
@@ -356,15 +368,29 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c8 .c9 input ~ .c16 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
   cursor: pointer;
+  -webkit-transform: translateY(-50%) rotate(0deg);
+  -ms-transform: translateY(-50%) rotate(0deg);
+  transform: translateY(-50%) rotate(0deg);
 }
 
 .c8 .c9 input ~ .c16 * {
   fill: #566c82;
 }
 
-.c8 .c9 input:focus ~ .c16 * {
+.c8 .c9 input ~ .c16:hover * {
   fill: #13181D;
+}
+
+.c8 .c9 input:hover ~ .c16 * {
+  fill: #13181D;
+}
+
+.c8 .c9 input:focus ~ .c16 * {
+  fill: #005AEE;
 }
 
 .c1 {
