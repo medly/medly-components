@@ -6,7 +6,9 @@ import { Props } from './types';
 
 export const Avatar: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const isImage = React.Children.toArray(props.children).find((child: any) => child.type === 'img')
+        const isImage = React.Children.toArray(props.children).find(
+            (child: any) => child.type === 'img' || child.props?.originalType === 'img'
+        );
         return (
             <AvatarStyled ref={ref} {...props} isImage={isImage}>
                 {React.Children.map(props.children, c => {

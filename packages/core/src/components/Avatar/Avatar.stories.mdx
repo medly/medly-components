@@ -14,7 +14,15 @@ Displays an image or text that represents a user or organization
 <Preview withToolbar>
     <Story name="Avatar" parameters={{ decorators: [withKnobs] }}>
         <Div>
-            <Avatar size={select('Size', sizes, 'M')}>
+            <Avatar
+                size={select('Size', sizes, 'M')}
+                bgColor={color('Background color', defaultTheme.avatar.defaults.bgColor)}
+                textColor={color('Text color', defaultTheme.avatar.defaults.textColor)}
+                hoverBgColor={color('Hover background color', defaultTheme.avatar.defaults.hover.bgColor)}
+                hoverTextColor={color('Hover text color', defaultTheme.avatar.defaults.hover.textColor)}
+                hoverImgShadowColor={color('Hover img shadow color', defaultTheme.avatar.defaults.hover.imgShadowColor)}
+                hoverTextShadowColor={color('Hover text shadow color', defaultTheme.avatar.defaults.hover.textShadowColor)}
+            >
                 <img src="http://i.pravatar.cc/150?img=66" />
             </Avatar>
             <Avatar
