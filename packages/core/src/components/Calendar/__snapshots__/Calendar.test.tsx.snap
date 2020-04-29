@@ -338,9 +338,9 @@ exports[`Calendar Component should render given date 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
   margin: 0.8rem 0;
 }
 
@@ -378,6 +378,8 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c8 .c9 input ~ .c16 * {
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
   fill: #566c82;
 }
 
@@ -603,6 +605,7 @@ exports[`Calendar Component should render given date 1`] = `
             class="c11"
             id="test-calendar-month-selector-input"
             placeholder="Month"
+            readonly=""
             type="text"
             value="Jan"
           />
@@ -638,6 +641,7 @@ exports[`Calendar Component should render given date 1`] = `
             class="c11"
             id="test-calendar-year-selector-input"
             placeholder="Year"
+            readonly=""
             type="text"
             value="2020"
           />

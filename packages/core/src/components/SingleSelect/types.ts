@@ -27,6 +27,8 @@ export interface SelectProps extends InputProps, WithThemeProp {
     options: Option[];
     /** Variants */
     variant?: 'outlined' | 'filled';
+    /** Set it it true to enable search functionality */
+    isSearchable?: boolean;
     /** Min width */
     minWidth?: string;
     /** Set it true if you are using built in form validation */

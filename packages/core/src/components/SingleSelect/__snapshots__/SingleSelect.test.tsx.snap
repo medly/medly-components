@@ -255,9 +255,9 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
   margin: 0.8rem 0;
 }
 
@@ -295,6 +295,8 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 }
 
 .c0 .c1 input ~ .c7 * {
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
   fill: #566c82;
 }
 
@@ -335,6 +337,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
         class="c3"
         id="medly-singleSelect-input"
         placeholder="Please Select . . ."
+        readonly=""
         type="text"
         value=""
       />
@@ -566,9 +569,9 @@ exports[`SingleSelect component with filled variant should render disabled state
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
   margin: 0.8rem 0;
 }
 
@@ -591,10 +594,6 @@ exports[`SingleSelect component with filled variant should render disabled state
   margin: 0;
 }
 
-.c0 .c1 input {
-  cursor: not-allowed;
-}
-
 .c0 .c1 input ~ .c7 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -606,15 +605,17 @@ exports[`SingleSelect component with filled variant should render disabled state
 }
 
 .c0 .c1 input ~ .c7 * {
-  fill: #566c82;
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
+  fill: #b0bcc8;
 }
 
 .c0 .c1 input ~ .c7:hover * {
-  fill: #13181D;
+  fill: #b0bcc8;
 }
 
 .c0 .c1 input:hover ~ .c7 * {
-  fill: #13181D;
+  fill: #b0bcc8;
 }
 
 .c0 .c1 input:focus ~ .c7 * {
@@ -636,6 +637,7 @@ exports[`SingleSelect component with filled variant should render disabled state
         disabled=""
         id="medly-singleSelect-input"
         placeholder="Please Select . . ."
+        readonly=""
         type="text"
         value=""
       />
@@ -666,7 +668,8 @@ exports[`SingleSelect component with filled variant should render error text pro
 .c1 {
   font-size: 1.2rem;
   line-height: 1.6rem;
-  margin: 0.5rem 0 0 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
 }
 
 .c2 ~ .c0 {
@@ -727,6 +730,8 @@ exports[`SingleSelect component with filled variant should render error text pro
 }
 
 .c3 .c4 input ~ .c1 * {
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
   fill: #566c82;
 }
 
@@ -1070,9 +1075,9 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
   margin: 0.8rem 0;
 }
 
@@ -1110,6 +1115,8 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 }
 
 .c0 .c1 input ~ .c7 * {
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
   fill: #566c82;
 }
 
@@ -1138,6 +1145,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
         class="c3"
         id="medly-singleSelect-input"
         placeholder="Please Select . . ."
+        readonly=""
         type="text"
         value=""
       />
@@ -1361,9 +1369,9 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
   margin: 0.8rem 0;
 }
 
@@ -1386,10 +1394,6 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   margin: 0;
 }
 
-.c0 .c1 input {
-  cursor: not-allowed;
-}
-
 .c0 .c1 input ~ .c7 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -1401,15 +1405,17 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 }
 
 .c0 .c1 input ~ .c7 * {
-  fill: #607890;
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
+  fill: #b0bcc8;
 }
 
 .c0 .c1 input ~ .c7:hover * {
-  fill: #13181D;
+  fill: #b0bcc8;
 }
 
 .c0 .c1 input:hover ~ .c7 * {
-  fill: #13181D;
+  fill: #b0bcc8;
 }
 
 .c0 .c1 input:focus ~ .c7 * {
@@ -1431,6 +1437,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
         disabled=""
         id="medly-singleSelect-input"
         placeholder="Please Select . . ."
+        readonly=""
         type="text"
         value=""
       />
@@ -1461,7 +1468,8 @@ exports[`SingleSelect component with outlined variant should render error text p
 .c1 {
   font-size: 1.2rem;
   line-height: 1.6rem;
-  margin: 0.5rem 0 0 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
 }
 
 .c2 ~ .c0 {
@@ -1522,6 +1530,8 @@ exports[`SingleSelect component with outlined variant should render error text p
 }
 
 .c3 .c4 input ~ .c1 * {
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
   fill: #607890;
 }
 
@@ -1857,9 +1867,9 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
   margin: 0.8rem 0;
 }
 
@@ -1897,6 +1907,8 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 }
 
 .c0 .c1 input ~ .c7 * {
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
   fill: #607890;
 }
 
@@ -1925,6 +1937,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
         class="c3"
         id="medly-singleSelect-input"
         placeholder="Please Select . . ."
+        readonly=""
         type="text"
         value=""
       />

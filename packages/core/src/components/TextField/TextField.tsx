@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { SFC, useCallback } from 'react';
 import * as Styled from './Styled';
 import { Props } from './types';
 
@@ -10,6 +10,8 @@ export const TextField: SFC<Props> & WithStyle = React.memo(
             isLabelPresent = !!label,
             isPrefixPresent = !!Prefix,
             isSuffixPresent = !!Suffix;
+
+        const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []);
 
         return (
             <Styled.Wrapper fullWidth={fullWidth} minWidth={minWidth}>
@@ -39,7 +41,9 @@ export const TextField: SFC<Props> & WithStyle = React.memo(
                     </Styled.Suffix>
                 )}
                 {(restProps.errorText || helperText) && (
-                    <Styled.HelperText id={`${inputId}-helper-text`}>{restProps.errorText || helperText}</Styled.HelperText>
+                    <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation}>
+                        {restProps.errorText || helperText}
+                    </Styled.HelperText>
                 )}
             </Styled.Wrapper>
         );

@@ -20,6 +20,7 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                 disabled,
                 onFocus,
                 onBlur,
+                isSearchable,
                 ...inputProps
             } = props,
             selectId = id || 'medly-singleSelect',
@@ -48,20 +49,15 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                 inputRef.current.setSelectionRange(inputValue.length, inputValue.length);
                 inputRef.current.focus();
             }, [inputValue]),
-            hideOptions = useCallback(() => setOptionsVisibilityState(false), []),
-            toggleOptions = useCallback(() => (areOptionsVisible ? hideOptions() : showOptions()), [areOptionsVisible]),
-            handleFocus = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
-                setFocusedState(true);
-                onFocus && onFocus(event);
+            hideOptions = useCallback(() => {
+                setOptionsVisibilityState(false);
+                inputRef.current && inputRef.current.blur();
             }, []),
-            handleBlur = useCallback(
-                (event: React.FocusEvent<HTMLInputElement>) => {
-                    setFocusedState(false);
-                    areOptionsVisible && hideOptions();
-                    onBlur && onBlur(event);
-                },
-                [areOptionsVisible]
-            ),
+            toggleOptions = useCallback(() => {
+                if (!disabled) {
+                    areOptionsVisible ? hideOptions() : showOptions();
+                }
+            }, [disabled, areOptionsVisible]),
             handleInputChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     const target = event.target as HTMLInputElement;
@@ -84,11 +80,8 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                     if (!option.disabled) {
                         selectOption(option);
                         setInputValue(option.label);
-                        inputRef.current.blur();
                         hideOptions();
                         onChange && onChange(option.value);
-                    } else {
-                        inputRef.current.focus();
                     }
                 },
                 [inputRef.current, onChange]
@@ -99,7 +92,19 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                     updateToDefaultOptions();
                     setInputValue(defaultSelectedOption.label);
                 }
-            }, [areOptionsVisible, selectedOption, updateToDefaultOptions]);
+            }, [areOptionsVisible, selectedOption, updateToDefaultOptions]),
+            handleFocus = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
+                setFocusedState(true);
+                onFocus && onFocus(event);
+            }, []),
+            handleBlur = useCallback(
+                (event: React.FocusEvent<HTMLInputElement>) => {
+                    setFocusedState(false);
+                    areOptionsVisible && setTimeout(() => hideOptions(), 100);
+                    onBlur && onBlur(event);
+                },
+                [areOptionsVisible, onBlur]
+            );
 
         useEffect(() => {
             const selected = getDefaultSelectedOption(defaultOptions, value);
@@ -140,6 +145,7 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                 areOptionsVisible={areOptionsVisible}
             >
                 <TextField
+                    readOnly={!isSearchable}
                     variant={variant}
                     fullWidth
                     autoComplete="off"
@@ -175,5 +181,6 @@ SingleSelect.defaultProps = {
     fullWidth: false,
     required: false,
     label: '',
+    isSearchable: false,
     placeholder: 'Please Select . . .'
 };

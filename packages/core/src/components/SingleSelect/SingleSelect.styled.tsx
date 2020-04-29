@@ -29,24 +29,28 @@ export const Wrapper = styled('div')<SelectWrapperProps>`
     ${TextField.Style} {
         margin: 0;
         input {
-            cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+            cursor: ${({ disabled }) => !disabled && 'pointer'};
             & ~ ${Suffix} {
                 transition: transform 200ms ease-out;
                 cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
                 transform: ${({ areOptionsVisible }) =>
                     areOptionsVisible ? 'translateY(-50%) rotate(180deg)' : 'translateY(-50%) rotate(0deg)'};
                 * {
-                    fill: ${({ theme, variant }) => theme.textField[variant].default.labelColor};
+                    transition: fill 100ms ease-out;
+                    fill: ${({ theme, variant, disabled }) =>
+                        disabled ? theme.textField[variant].disabled.labelColor : theme.textField[variant].default.labelColor};
                 }
                 &:hover {
                     * {
-                        fill: ${({ theme, variant }) => theme.textField[variant].default.textColor};
+                        fill: ${({ theme, variant, disabled }) =>
+                            disabled ? theme.textField[variant].disabled.labelColor : theme.textField[variant].default.textColor};
                     }
                 }
             }
             &:hover ~ ${Suffix} {
                 * {
-                    fill: ${({ theme, variant }) => theme.textField[variant].default.textColor};
+                    fill: ${({ theme, variant, disabled }) =>
+                        disabled ? theme.textField[variant].disabled.labelColor : theme.textField[variant].default.textColor};
                 }
             }
             &:focus ~ ${Suffix} {
@@ -54,14 +58,15 @@ export const Wrapper = styled('div')<SelectWrapperProps>`
                     fill: ${({ theme, variant }) => theme.textField[variant].active.labelColor};
                 }
             }
-            ${({ withBuiltInValidation }) =>
+            ${({ withBuiltInValidation, disabled }) =>
+                !disabled &&
                 withBuiltInValidation &&
                 css`
                     &:invalid {
                         ${errorStyle}
                     }
                 `}
-            ${props => props.isErrorPresent && errorStyle(props)}
+            ${props => props.isErrorPresent && !props.disabled && errorStyle(props)}
         }
     }
 `;

@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render } from '@test-utils';
+import { cleanup, fireEvent, render, wait } from '@test-utils';
 import React from 'react';
 import { SingleSelect } from './SingleSelect';
 import { SelectProps } from './types';
@@ -39,6 +39,12 @@ describe('SingleSelect component', () => {
         });
     });
 
+    it('should render input in readOnly state by default', async () => {
+        const { container } = render(<SingleSelect value="Dummy1" options={options} />),
+            inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
+        expect(inputEl).toHaveAttribute('readonly');
+    });
+
     it('should take parents width if we pass fullWidth prop as true', () => {
         const { container } = render(<SingleSelect fullWidth options={options} value="dummy" />);
         expect(container.querySelector('div')).toHaveStyle(`
@@ -59,6 +65,12 @@ describe('SingleSelect component', () => {
         const { container } = render(<SingleSelect options={options} />);
         fireEvent.click(container.querySelector('svg'));
         expect(container.querySelector('#medly-singleSelect-options')).toBeVisible();
+    });
+
+    it('should not show options on click on drop icon, if disabled prop is set true', () => {
+        const { container } = render(<SingleSelect options={options} disabled />);
+        fireEvent.click(container.querySelector('svg'));
+        expect(container.querySelector('#medly-singleSelect-options')).toBeNull();
     });
 
     it('should hide options on click on drop icon, if options are already visible', () => {
@@ -148,9 +160,10 @@ describe('SingleSelect component', () => {
         const mockOnBlur = jest.fn(),
             { container } = render(<SingleSelect value="Dummy1" options={options} onBlur={mockOnBlur} />),
             inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-        fireEvent.focus(inputEl);
+        fireEvent.click(inputEl);
         fireEvent.blur(inputEl);
         expect(mockOnBlur).toHaveBeenCalled();
+        await wait(() => expect(container.querySelector('#medly-singleSelect-options')).toBeNull(), { timeout: 200 });
     });
 
     it('should handle builtin form validation', () => {

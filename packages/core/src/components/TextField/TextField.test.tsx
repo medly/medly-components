@@ -45,6 +45,16 @@ describe('TextField', () => {
         expect(container).toMatchSnapshot();
     });
 
+    it('should not call onClick function on click on helper text', () => {
+        const mockOnClick = jest.fn();
+        const { container } = render(
+            <div onClick={mockOnClick}>
+                <TextField withBuiltInValidation label="Name" required type="email" />
+            </div>
+        );
+        expect(container).toMatchSnapshot();
+    });
+
     it('should render asterisk if we pass required prop as true', () => {
         const { container } = render(<TextField label="Name" required />);
         expect(container.querySelector('label')).toMatchSnapshot();
