@@ -1,19 +1,19 @@
 import { css, styled } from '@medly-components/utils';
 import Text from '../Text';
-import { Props } from './types';
+import { StyledProps } from './types';
 
-const getAvatarSize = ({ theme: { avatar }, size }: Props) => {
+const getAvatarSize = ({ theme: { avatar }, size }: StyledProps) => {
     const { sizes, defaults } = avatar;
     return sizes[size || defaults.size].avatarSize;
 };
 
-const getShadowColor = ({ theme: { avatar }, hoverTextShadowColor, hoverImgShadowColor, isImage }: Props) => {
+const getShadowColor = ({ theme: { avatar }, hoverTextShadowColor, hoverImgShadowColor, isImage }: StyledProps) => {
     return isImage
         ? hoverImgShadowColor || avatar.defaults.hover.imgShadowColor
         : hoverTextShadowColor || avatar.defaults.hover.textShadowColor;
 };
 
-const getTextStyle = ({ theme, ...props }: Props) => {
+const getTextStyle = ({ theme, ...props }: StyledProps) => {
     const { size, textColor, bgColor } = props,
         { defaults, sizes } = theme.avatar,
         { avatarSize, fontSize } = sizes[size || defaults.size];
@@ -31,9 +31,9 @@ const getTextStyle = ({ theme, ...props }: Props) => {
     `;
 };
 
-export const AvatarStyled = styled('div').attrs(({ theme: { avatar: { defaults } } }: Props) => ({
+export const AvatarStyled = styled('div').attrs(({ theme: { avatar: { defaults } } }: StyledProps) => ({
     defaults
-}))<Props>`
+}))<StyledProps>`
     display: inline-block;
     text-align: center;
     width: ${getAvatarSize};

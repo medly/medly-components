@@ -16,6 +16,9 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size'>, WithThem
     hoverTextShadowColor?: string;
     /** Hover image shadow color */
     hoverImgShadowColor?: string;
+}
+
+export interface StyledProps extends Props {
     /** To check children is image */
     isImage?: boolean;
 }
