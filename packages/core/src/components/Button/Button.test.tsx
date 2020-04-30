@@ -30,6 +30,22 @@ describe('Button component', () => {
         expect(container).toMatchSnapshot();
     });
 
+    test.each(['square', 'rounded', 'circle'])('should render properly with %p edges', (edges: Props['edges']) => {
+        const { container } = render(<Button edges={edges}>Flat Button</Button>);
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly with circle edges and S size', () => {
+        const { container } = render(
+            <Button edges="circle" size="S">
+                Flat Button
+            </Button>
+        );
+        expect(container.querySelector('button')).toHaveStyle(`
+            padding: 1.4rem
+        `);
+    });
+
     it('should render properly with any icon at the beginning of the text', () => {
         const { container } = render(
             <Button variant="solid">
