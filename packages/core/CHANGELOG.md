@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.28](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.27...@medly-components/core@1.0.0-beta.28) (2020-04-30)
+
+
+### Bug Fixes
+
+* **core:** add isSearchable prop in SingleSelect component and fix hover issue ([ab54c85](https://github.com/medlypharmacy/medly-components/commit/ab54c859181d3f168ef7d3f801aefa188e022054))
+* **core:** fix calendar popover style issue after single select component update ([3ed86ba](https://github.com/medlypharmacy/medly-components/commit/3ed86ba410818ba922b2172edc4a70399f8d968b))
+* **core:** fix hover and error style in SingleSelect and TextField component ([251bebd](https://github.com/medlypharmacy/medly-components/commit/251bebdc08fb627c33bbf980dd1ca13c9a8a7625))
+* **core:** fix hover issue of avatar with image in storybook ([3634ddd](https://github.com/medlypharmacy/medly-components/commit/3634dddd64c4c594e493c98ac8796c17da5dcfdb))
+* **core:** increase unit test coverage for button component ([4362453](https://github.com/medlypharmacy/medly-components/commit/436245356c036481a070ad2d350289181b467893))
+* **core:** refactor avatar component to handle colors coming from prop ([651c2a0](https://github.com/medlypharmacy/medly-components/commit/651c2a0c0ab5617ed85fee73b36635390a06678d))
+
+
+### Features
+
+* **core:** add functionality to handle minWidth & absense of label in TextField component ([92c00c4](https://github.com/medlypharmacy/medly-components/commit/92c00c4db959284ad703936153f74926bb73f72c))
+* **core:** add withBuiltInFormValidation prop in TextField component to enable HTML5 builtin form v ([81effbc](https://github.com/medlypharmacy/medly-components/commit/81effbc0c60472ebf8f8a3d4291fd1184df52648))
+* **core:** update the single select style based on new design ([e87d51a](https://github.com/medlypharmacy/medly-components/commit/e87d51a70d3655cd2a6da467cf6e6ada978e830d))
+
+
+
+
+
 # [1.0.0-beta.27](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.26...@medly-components/core@1.0.0-beta.27) (2020-04-27)
 
 

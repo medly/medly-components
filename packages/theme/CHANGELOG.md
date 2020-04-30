@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.17](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.16...@medly-components/theme@1.0.0-beta.17) (2020-04-30)
+
+
+### Bug Fixes
+
+* **core:** refactor avatar component to handle colors coming from prop ([651c2a0](https://github.com/medlypharmacy/medly-components/commit/651c2a0c0ab5617ed85fee73b36635390a06678d))
+
+
+### Features
+
+* **core:** update the single select style based on new design ([e87d51a](https://github.com/medlypharmacy/medly-components/commit/e87d51a70d3655cd2a6da467cf6e6ada978e830d))
+
+
+
+
+
 # [1.0.0-beta.16](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.15...@medly-components/theme@1.0.0-beta.16) (2020-04-27)
 
 
