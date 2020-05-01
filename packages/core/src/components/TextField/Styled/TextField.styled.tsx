@@ -152,11 +152,4 @@ export const Input = styled('input').attrs(({ theme: { textField } }) => ({ ...t
     }
 
     ${({ errorText }) => (errorText ? errorStyle : activeStyle)}
-    ${({ withBuiltInValidation }) =>
-        withBuiltInValidation &&
-        css`
-            &:invalid {
-                ${errorStyle}
-            }
-        `}
 `;

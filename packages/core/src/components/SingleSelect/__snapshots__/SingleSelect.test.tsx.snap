@@ -195,56 +195,6 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   color: rgba(0,90,238,.2);
 }
 
-.c3:invalid,
-.c3:invalid:focus,
-.c3:invalid:not(:disabled):hover {
-  caret-color: #cc0000;
-  border-color: #cc0000;
-  background-color: #FAE6E6;
-}
-
-.c3:invalid ~ .c4,
-.c3:invalid:focus ~ .c4,
-.c3:invalid:not(:disabled):hover ~ .c4 {
-  color: #cc0000;
-}
-
-.c3:invalid ~ .sc-AykKF *,
-.c3:invalid:focus ~ .sc-AykKF *,
-.c3:invalid:not(:disabled):hover ~ .sc-AykKF * {
-  fill: #cc0000;
-}
-
-.c3:invalid ~ .sc-AykKD,
-.c3:invalid:focus ~ .sc-AykKD,
-.c3:invalid:not(:disabled):hover ~ .sc-AykKD {
-  color: #cc0000;
-}
-
-.c3:invalid::-webkit-input-placeholder,
-.c3:invalid:focus::-webkit-input-placeholder,
-.c3:invalid:not(:disabled):hover::-webkit-input-placeholder {
-  color: rgba(204,0,0,.2);
-}
-
-.c3:invalid::-moz-placeholder,
-.c3:invalid:focus::-moz-placeholder,
-.c3:invalid:not(:disabled):hover::-moz-placeholder {
-  color: rgba(204,0,0,.2);
-}
-
-.c3:invalid:-ms-input-placeholder,
-.c3:invalid:focus:-ms-input-placeholder,
-.c3:invalid:not(:disabled):hover:-ms-input-placeholder {
-  color: rgba(204,0,0,.2);
-}
-
-.c3:invalid::placeholder,
-.c3:invalid:focus::placeholder,
-.c3:invalid:not(:disabled):hover::placeholder {
-  color: rgba(204,0,0,.2);
-}
-
 .c2 {
   position: relative;
   -webkit-flex-direction: column;
