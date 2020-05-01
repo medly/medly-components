@@ -31,3 +31,10 @@ export interface StyledProps extends Props, TextFieldTheme {
     isSuffixPresent: boolean;
     isLabelPresent: boolean;
 }
+
+export interface InnerWrapperProps extends HTMLProps<HTMLDivElement>, TextFieldTheme, WithThemeProp {
+    variant?: 'outlined' | 'filled';
+    disabled?: boolean;
+    isLabelPresent?: boolean;
+    isErrorPresent?: boolean;
+}

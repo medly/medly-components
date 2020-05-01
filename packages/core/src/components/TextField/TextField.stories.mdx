@@ -1,5 +1,6 @@
 import { TextField } from './TextField.tsx';
-import { AddCircleOutlineIcon, AddCircleIcon, CheckIcon } from '@medly-components/icons';
+import Text from '../Text';
+import { AddCircleOutlineIcon, AddCircleIcon, CheckCircleIcon } from '@medly-components/icons';
 import { withKnobs, text, color, select, boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { ThemeInterface, variants, BuiltIn, Custom } from './TextField.stories.tsx';
@@ -15,6 +16,7 @@ Basic TextField component with lot of customization
         <TextField
             id="storybook-input"
             type="email"
+            minWidth={text('Min Width', '20rem')}
             variant={select('Variant', variants, 'filled')}
             fullWidth={boolean('Full Width', false)}
             disabled={boolean('Disabled', false)}
@@ -41,13 +43,53 @@ Basic TextField component with lot of customization
     <TextField id="filled" type="Name" variant="filled" label="Address" defaultValue="Demo" errorText="Something wrong" />
 </Preview>
 
-##### With Icons
+##### With Prefix and suffix
+
+To use the label color pass the className name prop to your prefix/suffix element or you can directly use our icons.
 
 <Preview withToolbar>
-    <TextField id="outline-prefix" type="Name" variant="outlined" label="Address" prefix={AddCircleOutlineIcon} />
-    <TextField id="outline-suffix" type="Name" variant="outlined" label="Address" suffix={CheckIcon} />
-    <TextField id="filled-prefix" type="Name" variant="filled" label="Address" prefix={AddCircleIcon} />
-    <TextField id="filled-suffix" type="Name" variant="filled" label="Address" suffix={CheckIcon} />
+    <TextField id="outline-prefix-icon" type="Name" variant="outlined" label="Address" prefix={AddCircleOutlineIcon} />
+    <TextField id="outline-suffix-icon" type="Name" variant="outlined" label="Address" suffix={CheckCircleIcon} />
+    <TextField id="filled-prefix-icon" type="Name" variant="filled" label="Address" prefix={AddCircleIcon} />
+    <TextField id="filled-suffix-icon" type="Name" variant="filled" label="Address" suffix={CheckCircleIcon} />
+    <TextField
+        id="outline-prefix-text"
+        type="Name"
+        variant="outlined"
+        label="Address"
+        prefix={props => (
+            <Text {...props} textVariant="body1">
+                $
+            </Text>
+        )}
+    />
+    <TextField
+        id="outline-suffix-text"
+        type="Name"
+        variant="outlined"
+        label="Email"
+        suffix={props => <Text className={props.className}>.com</Text>}
+    />
+    <TextField
+        id="filled-prefix-text"
+        type="Name"
+        variant="filled"
+        label="Address"
+        prefix={props => (
+            <Text {...props} textVariant="body1">
+                $
+            </Text>
+        )}
+    />
+    <TextField id="filled-suffix-text" type="Name" variant="filled" label="Email" suffix={props => <Text {...props}>.com</Text>} />
+</Preview>
+
+If you dont want to apply the label color on your prefix and suffix just pass your element like this `() => <CheckCircleIcon/>`
+
+<Preview withToolbar>
+    <TextField id="outline-suffix" type="Name" variant="outlined" label="Address" suffix={() => <CheckCircleIcon />} />
+    <TextField id="filled-suffix" type="Name" variant="filled" label="Address" suffix={() => <CheckCircleIcon />} />
+    <TextField id="filled-suffix-text-without-color" type="Name" variant="filled" label="Email" suffix={() => <Text>.com</Text>} />
 </Preview>
 
 <Props of={TextField} />

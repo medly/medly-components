@@ -139,6 +139,7 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
             <Styled.Wrapper
                 {...{ variant, disabled, minWidth, fullWidth }}
                 ref={wrapperRef}
+                isSearchable={isSearchable}
                 isErrorPresent={!!props.errorText}
                 onClick={toggleOptions}
                 withBuiltInValidation={inputProps.withBuiltInValidation}

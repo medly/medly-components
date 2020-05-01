@@ -1,19 +1,37 @@
-import { WithStyle } from '@medly-components/utils';
+import { useCombinedRefs, WithStyle } from '@medly-components/utils';
 import React, { SFC, useCallback, useMemo, useState } from 'react';
 import * as Styled from './Styled';
 import { Props } from './types';
 
 export const TextField: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props: Props, ref) => {
-        const [builtInErrorMessage, setErrorMessage] = useState('');
+        const [builtInErrorMessage, setErrorMessage] = useState(''),
+            inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null));
 
-        const { id, label, minWidth, fullWidth, helperText, prefix: Prefix, suffix: Suffix, required, placeholder, ...restProps } = props,
+        const {
+                id,
+                label,
+                minWidth,
+                fullWidth,
+                errorText,
+                helperText,
+                prefix: Prefix,
+                suffix: Suffix,
+                required,
+                disabled,
+                placeholder,
+                ...restProps
+            } = props,
             inputId = id || 'medly-textField',
             isLabelPresent = !!label,
             isPrefixPresent = !!Prefix,
-            isSuffixPresent = !!Suffix;
+            isSuffixPresent = !!Suffix,
+            isErrorPresent = !!errorText || !!builtInErrorMessage;
 
         const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
+            handleWrapperClick = useCallback(() => {
+                !disabled && inputRef.current.focus();
+            }, [inputRef, disabled]),
             onBlur = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
                 setErrorMessage((event.target as HTMLInputElement).validationMessage);
                 props.onBlur && props.onBlur(event);
@@ -27,48 +45,59 @@ export const TextField: SFC<Props> & WithStyle = React.memo(
                 () => ({
                     onBlur,
                     onInvalid,
-                    errorText: props.errorText || builtInErrorMessage
+                    errorText: errorText || builtInErrorMessage
                 }),
-                [onBlur, onInvalid, props.errorText, builtInErrorMessage]
+                [onBlur, onInvalid, errorText, builtInErrorMessage]
             );
+
         return (
-            <Styled.Wrapper fullWidth={fullWidth} minWidth={minWidth}>
-                <Styled.Input
-                    ref={ref}
-                    id={`${inputId}-input`}
-                    aria-describedby={`${inputId}-helper-text`}
-                    required={required}
-                    placeholder={placeholder || ' '}
-                    isPrefixPresent={isPrefixPresent}
-                    isSuffixPresent={isSuffixPresent}
+            <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth}>
+                <Styled.InnerWrapper
+                    onClick={handleWrapperClick}
+                    variant={props.variant}
+                    disabled={disabled}
+                    isErrorPresent={isErrorPresent}
                     isLabelPresent={isLabelPresent}
-                    fullWidth={fullWidth}
-                    {...{ ...restProps, ...(props.withBuiltInValidation && builtInFormValidators) }}
-                />
-                <Styled.Label htmlFor={`${inputId}-input`} required={required} isPrefixPresent={isPrefixPresent}>
-                    {label}
-                </Styled.Label>
-                {isPrefixPresent && (
-                    <Styled.Prefix>
-                        <Prefix />
-                    </Styled.Prefix>
-                )}
-                {isSuffixPresent && (
-                    <Styled.Suffix>
-                        <Suffix />
-                    </Styled.Suffix>
-                )}
-                {(restProps.errorText || builtInErrorMessage || helperText) && (
+                >
+                    {isPrefixPresent && (
+                        <Styled.Prefix>
+                            <Prefix />
+                        </Styled.Prefix>
+                    )}
+                    <Styled.InputWrapper>
+                        <Styled.Input
+                            ref={inputRef}
+                            id={`${inputId}-input`}
+                            aria-describedby={`${inputId}-helper-text`}
+                            required={required}
+                            disabled={disabled}
+                            placeholder={placeholder || ' '}
+                            isPrefixPresent={isPrefixPresent}
+                            isSuffixPresent={isSuffixPresent}
+                            isLabelPresent={isLabelPresent}
+                            {...{ ...restProps, ...(props.withBuiltInValidation && builtInFormValidators) }}
+                        />
+                        <Styled.Label htmlFor={`${inputId}-input`} required={required} variant={props.variant}>
+                            {label}
+                        </Styled.Label>
+                    </Styled.InputWrapper>
+                    {isSuffixPresent && (
+                        <Styled.Suffix>
+                            <Suffix />
+                        </Styled.Suffix>
+                    )}
+                </Styled.InnerWrapper>
+                {(isErrorPresent || helperText) && (
                     <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation}>
-                        {restProps.errorText || builtInErrorMessage || helperText}
+                        {errorText || builtInErrorMessage || helperText}
                     </Styled.HelperText>
                 )}
-            </Styled.Wrapper>
+            </Styled.OuterWrapper>
         );
     })
 );
 TextField.displayName = 'TextField';
-TextField.Style = Styled.Wrapper;
+TextField.Style = Styled.OuterWrapper;
 TextField.defaultProps = {
     type: 'text',
     variant: 'filled',
