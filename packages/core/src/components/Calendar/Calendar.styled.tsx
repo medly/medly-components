@@ -1,5 +1,5 @@
 import { centerAligned, css, styled } from '@medly-components/utils';
-import { InnerWrapper, OuterWrapper } from '../TextField/Styled';
+import TextField from '../TextField';
 import { DateProps } from './types';
 
 export const Header = styled.div`
@@ -16,12 +16,21 @@ export const MonthAndYearSelection = styled.div`
     align-items: center;
     justify-content: space-around;
 
-    ${OuterWrapper} {
+    ul {
+        top: 3.5rem;
+        max-height: 200px;
+        overflow: scroll;
+        li {
+            padding: 0 1rem;
+        }
+    }
+
+    ${TextField.Style} {
         min-width: unset;
         max-width: 10rem;
-        ${InnerWrapper} {
+        & > div {
             height: 3.5rem;
-            padding: 0 0.5rem;
+            padding: 0 1rem;
         }
     }
 `;

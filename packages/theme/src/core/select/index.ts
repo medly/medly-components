@@ -11,6 +11,7 @@ const select: SelectTheme = {
     selectedBgColor: colors.marigoldOrange[400],
     selectedTextColor: colors.white,
     options: {
+        shadowColor: '#B0BCC8',
         bgColor: colors.white,
         textColor: colors.black,
         disableTextColor: colors.grey[500],

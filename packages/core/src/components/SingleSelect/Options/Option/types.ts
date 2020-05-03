@@ -5,4 +5,6 @@ export interface OptionStyledProps extends HTMLProps<HTMLLIElement>, WithThemePr
     selected: boolean;
 }
 
-export type OptionProps = Option & HTMLProps<HTMLLIElement>;
+export interface OptionProps extends Option, Omit<HTMLProps<HTMLLIElement>, 'onClick' | 'value' | 'label'> {
+    onClick: (op: Option) => void;
+}

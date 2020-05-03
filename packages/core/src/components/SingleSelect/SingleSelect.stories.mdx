@@ -15,7 +15,7 @@ Basic single select component.
 <Preview withToolbar>
     <Story name="SingleSelect">
         {() => {
-            const [value, setValue] = useState('Dummy4 option');
+            const [value, setValue] = useState('Some 1');
             return (
                 <SingleSelect
                     options={options}
@@ -148,11 +148,31 @@ You can also provode prefix icon, which will always take the label color.
 
 It also supports keyboard navigation when it is in focus
 
-| Key        | Function                           |
-| ---------- | ---------------------------------- |
-| Down Arrow | Moves focus to the next option     |
-| Up Arrow   | Moves focus to the previous option |
-| Enter      | Select the focused option          |
+| Key         | Function                              |
+| ----------- | ------------------------------------- |
+| Down Arrow  | Moves focus to the next option        |
+| Up Arrow    | Moves focus to the previous option    |
+| Right Arrow | Moves focus to nested options         |
+| Left Arrow  | Moves focus out of the nested options |
+| Enter       | Select the focused option             |
+
+##### Nested Options
+
+If you want to use nested options then you can directly pass nested array of `{label:'' , value:''}` in option list like below.
+
+```tsx
+const options = [
+    { value: 'Dummy1 option', label: 'Dummy1 option' },
+    {
+        label: 'Dummy2 option',
+        value: [
+            { value: 'Some 1', label: 'Some 1' },
+            { value: 'Some 2', label: 'Some 2' }
+        ]
+    },
+    { value: 'Dummy3 option', label: 'Dummy3 option' }
+];
+```
 
 ### Props
 

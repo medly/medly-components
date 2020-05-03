@@ -2,7 +2,7 @@ import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 
 export interface Option {
     /** Option value */
-    value: any;
+    value: Option[] | any;
     /** Option label */
     label: string;
     /** This will be handled by component itself */

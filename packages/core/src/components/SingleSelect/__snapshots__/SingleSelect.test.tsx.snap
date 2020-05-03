@@ -331,6 +331,340 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 </div>
 `;
 
+exports[`SingleSelect component should render properly when isSearchable is true 1`] = `
+.c8 {
+  font-size: 2.4rem;
+  cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.c8 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c7 {
+  top: 0;
+  left: 0;
+  cursor: text;
+  position: absolute;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
+}
+
+.c10 {
+  pointer-events: none;
+  margin-left: 1.6rem;
+}
+
+.c3 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  padding: 0 1.6rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
+}
+
+.c3 .c6 {
+  color: #566c82;
+}
+
+.c3 .sc-AykKF,
+.c3 .c9 {
+  color: #566c82;
+}
+
+.c3 .sc-AykKF *,
+.c3 .c9 * {
+  fill: #566c82;
+}
+
+.c3 ~ .sc-AykKD {
+  color: #566c82;
+}
+
+.c3::after {
+  content: '';
+  width: 100%;
+  height: 0.1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #566c82;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:hover::after,
+.c3:focus-within::after {
+  height: 0.2rem;
+}
+
+.c3:focus-within,
+.c3:focus-within:hover {
+  border-color: #005AEE;
+  background-color: #e6effd;
+}
+
+.c3:focus-within::after,
+.c3:focus-within:hover::after {
+  background-color: #005AEE;
+}
+
+.c3:focus-within .c6,
+.c3:focus-within:hover .c6 {
+  color: #005AEE;
+}
+
+.c3:focus-within .sc-AykKF,
+.c3:focus-within:hover .sc-AykKF,
+.c3:focus-within .c9,
+.c3:focus-within:hover .c9 {
+  color: #005AEE;
+}
+
+.c3:focus-within .sc-AykKF *,
+.c3:focus-within:hover .sc-AykKF *,
+.c3:focus-within .c9 *,
+.c3:focus-within:hover .c9 * {
+  fill: #005AEE;
+}
+
+.c3:focus-within input::-webkit-input-placeholder,
+.c3:focus-within:hover input::-webkit-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c3:focus-within input::-moz-placeholder,
+.c3:focus-within:hover input::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c3:focus-within input:-ms-input-placeholder,
+.c3:focus-within:hover input:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c3:focus-within input::placeholder,
+.c3:focus-within:hover input::placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c2 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: 20rem;
+  margin: 0.8rem 0;
+}
+
+.c5 {
+  color: #13181D;
+  font-size: 1.6rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 2.6rem;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background: transparent;
+  border: none;
+}
+
+.c5:focus {
+  outline: none;
+}
+
+.c5:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c5:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c5:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c5:focus::placeholder {
+  opacity: 1;
+}
+
+.c5::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:not(:placeholder-shown) + .c6,
+.c5:focus + .c6 {
+  -webkit-transform: translate3d(0,20%,0) scale(0.75);
+  -ms-transform: translate3d(0,20%,0) scale(0.75);
+  transform: translate3d(0,20%,0) scale(0.75);
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c0 .c1 {
+  margin: 0;
+}
+
+.c0 .c1 div,
+.c0 .c1 input,
+.c0 .c1 label {
+  cursor: pointer;
+}
+
+.c0 .c1:focus-within input {
+  cursor: text;
+}
+
+.c0 .c1 .c9 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c0 .c1 .c9 * {
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
+}
+
+.c0 .c1:not(:focus-within):hover .c9 * {
+  fill: #13181D;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1 c2"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <input
+            aria-describedby="medly-singleSelect-helper-text"
+            autocomplete="off"
+            class="c5"
+            id="medly-singleSelect-input"
+            placeholder="Please Select . . ."
+            type="text"
+            value=""
+          />
+          <label
+            class="c6 c7"
+            for="medly-singleSelect-input"
+          />
+        </div>
+        <svg
+          class="c8 c9 c10"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+      </div>
+      
+    </div>
+  </div>
+</div>
+`;
+
 exports[`SingleSelect component with filled variant should render disabled state properly  1`] = `
 .c8 {
   font-size: 2.4rem;
@@ -751,6 +1085,18 @@ exports[`SingleSelect component with filled variant should render error text pro
 `;
 
 exports[`SingleSelect component with filled variant should render options correctly on click on the input 1`] = `
+.c5 {
+  font-size: 2.4rem;
+  cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.c5 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
 .c3 {
   margin: 0;
   color: inherit;
@@ -775,6 +1121,7 @@ exports[`SingleSelect component with filled variant should render options correc
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
   color: #13181D;
   background-color: #ffffff;
 }
@@ -796,6 +1143,14 @@ exports[`SingleSelect component with filled variant should render options correc
   text-overflow: ellipsis;
 }
 
+.c1 .c4 {
+  margin-left: 1.6rem;
+}
+
+.c1 .c4 * {
+  fill: #13181D;
+}
+
 .c0 {
   z-index: 1000;
   position: absolute;
@@ -805,10 +1160,16 @@ exports[`SingleSelect component with filled variant should render options correc
   padding: 0;
   width: 100%;
   list-style: none;
-  max-height: 200px;
-  overflow-y: auto;
   box-sizing: border-box;
-  box-shadow: 0 2px 8px #b0bcc8;
+  box-shadow: 0 2px 8px #B0BCC8;
+  border-radius: 0 0 0.4rem 0.4rem;
+}
+
+.c0 li:first-child {
+  border-radius: 0;
+}
+
+.c0 li:last-child {
   border-radius: 0 0 0.4rem 0.4rem;
 }
 
@@ -818,6 +1179,7 @@ exports[`SingleSelect component with filled variant should render options correc
 >
   <li
     class="c1"
+    id="All"
   >
     <span
       class="c2 c3"
@@ -827,6 +1189,7 @@ exports[`SingleSelect component with filled variant should render options correc
   </li>
   <li
     class="c1"
+    id="Dummy1"
   >
     <span
       class="c2 c3"
@@ -836,11 +1199,36 @@ exports[`SingleSelect component with filled variant should render options correc
   </li>
   <li
     class="c1"
+    id="Dummy2"
   >
     <span
       class="c2 c3"
     >
       Dummy2
+    </span>
+    <svg
+      class="c4 c5"
+      fill="none"
+      height="1em"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M11.414 15.292l2.59-2.59a.996.996 0 0 0 0-1.41l-2.59-2.59c-.63-.62-1.71-.18-1.71.71v5.17c0 .9 1.08 1.34 1.71.71z"
+        fill="#000"
+        fill-opacity=".54"
+      />
+    </svg>
+  </li>
+  <li
+    class="c1"
+    id="Dummy3"
+  >
+    <span
+      class="c2 c3"
+    >
+      Dummy3
     </span>
   </li>
 </ul>
@@ -1585,6 +1973,18 @@ exports[`SingleSelect component with outlined variant should render error text p
 `;
 
 exports[`SingleSelect component with outlined variant should render options correctly on click on the input 1`] = `
+.c5 {
+  font-size: 2.4rem;
+  cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.c5 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
 .c3 {
   margin: 0;
   color: inherit;
@@ -1609,6 +2009,7 @@ exports[`SingleSelect component with outlined variant should render options corr
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
   color: #13181D;
   background-color: #ffffff;
 }
@@ -1630,6 +2031,14 @@ exports[`SingleSelect component with outlined variant should render options corr
   text-overflow: ellipsis;
 }
 
+.c1 .c4 {
+  margin-left: 1.6rem;
+}
+
+.c1 .c4 * {
+  fill: #13181D;
+}
+
 .c0 {
   z-index: 1000;
   position: absolute;
@@ -1639,11 +2048,17 @@ exports[`SingleSelect component with outlined variant should render options corr
   padding: 0;
   width: 100%;
   list-style: none;
-  max-height: 200px;
-  overflow-y: auto;
   box-sizing: border-box;
-  box-shadow: 0 2px 8px #b0bcc8;
+  box-shadow: 0 2px 8px #B0BCC8;
   border-radius: 0.4rem;
+}
+
+.c0 li:first-child {
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+
+.c0 li:last-child {
+  border-radius: 0 0 0.4rem 0.4rem;
 }
 
 <ul
@@ -1652,6 +2067,7 @@ exports[`SingleSelect component with outlined variant should render options corr
 >
   <li
     class="c1"
+    id="All"
   >
     <span
       class="c2 c3"
@@ -1661,6 +2077,7 @@ exports[`SingleSelect component with outlined variant should render options corr
   </li>
   <li
     class="c1"
+    id="Dummy1"
   >
     <span
       class="c2 c3"
@@ -1670,11 +2087,36 @@ exports[`SingleSelect component with outlined variant should render options corr
   </li>
   <li
     class="c1"
+    id="Dummy2"
   >
     <span
       class="c2 c3"
     >
       Dummy2
+    </span>
+    <svg
+      class="c4 c5"
+      fill="none"
+      height="1em"
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M11.414 15.292l2.59-2.59a.996.996 0 0 0 0-1.41l-2.59-2.59c-.63-.62-1.71-.18-1.71.71v5.17c0 .9 1.08 1.34 1.71.71z"
+        fill="#000"
+        fill-opacity=".54"
+      />
+    </svg>
+  </li>
+  <li
+    class="c1"
+    id="Dummy3"
+  >
+    <span
+      class="c2 c3"
+    >
+      Dummy3
     </span>
   </li>
 </ul>

@@ -1,11 +1,12 @@
 import { ChevronDownIcon } from '@medly-components/icons';
-import { useCombinedRefs, useKeyPress, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
+import { useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import React, { SFC, useCallback, useEffect, useRef, useState } from 'react';
 import { TextField } from '../TextField/TextField';
-import { filterOptions, getDefaultSelectedOption, getNextOption, getOptionsWithSelected, getPrevOption } from './helpers';
+import { filterOptions, getDefaultSelectedOption, getOptionsWithSelected } from './helpers';
 import Options from './Options';
 import * as Styled from './SingleSelect.styled';
 import { Option, SelectProps } from './types';
+import { useKeyboardNavigation } from './useKeyboardNavigation';
 
 export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
@@ -29,10 +30,7 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
         const wrapperRef = useRef<HTMLDivElement>(null),
             optionsRef = useRef<HTMLUListElement>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
-            downPress = useKeyPress('ArrowDown'),
-            upPress = useKeyPress('ArrowUp'),
-            enterPress = useKeyPress('Enter'),
-            [isFocused, setFocusedState] = useState(false),
+            isFocused = useRef(false),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [inputValue, setInputValue] = useState(defaultSelectedOption.label),
             [selectedOption, setSelectedOption] = useState(defaultSelectedOption),
@@ -53,16 +51,15 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                 setOptionsVisibilityState(false);
                 inputRef.current && inputRef.current.blur();
             }, []),
-            toggleOptions = useCallback(() => {
-                if (!disabled) {
-                    areOptionsVisible ? hideOptions() : showOptions();
-                }
-            }, [disabled, areOptionsVisible]),
+            toggleOptions = useCallback(() => !disabled && (areOptionsVisible ? hideOptions() : showOptions()), [
+                disabled,
+                areOptionsVisible
+            ]),
             handleInputChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
-                    const target = event.target as HTMLInputElement;
+                    const target = event.target as HTMLInputElement,
+                        newOptions = filterOptions(getOptionsWithSelected(defaultOptions, selectedOption), target.value);
                     setInputValue(target.value);
-                    const newOptions = filterOptions(getOptionsWithSelected(defaultOptions, selectedOption), target.value);
                     newOptions.length && target.value ? setOptions(newOptions) : updateToDefaultOptions();
                     !areOptionsVisible && showOptions();
                 },
@@ -77,11 +74,13 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
             ),
             handleOptionClick = useCallback(
                 (option: Option) => {
-                    if (!option.disabled) {
+                    if (!option.disabled && !Array.isArray(option.value)) {
                         selectOption(option);
                         setInputValue(option.label);
                         hideOptions();
                         onChange && onChange(option.value);
+                    } else {
+                        inputRef.current.focus();
                     }
                 },
                 [inputRef.current, onChange]
@@ -93,17 +92,20 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                     setInputValue(defaultSelectedOption.label);
                 }
             }, [areOptionsVisible, selectedOption, updateToDefaultOptions]),
-            handleFocus = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
-                setFocusedState(true);
-                onFocus && onFocus(event);
-            }, []),
+            handleFocus = useCallback(
+                (event: React.FocusEvent<HTMLInputElement>) => {
+                    isFocused.current = true;
+                    onFocus && onFocus(event);
+                },
+                [onFocus]
+            ),
             handleBlur = useCallback(
                 (event: React.FocusEvent<HTMLInputElement>) => {
-                    setFocusedState(false);
-                    areOptionsVisible && setTimeout(() => hideOptions(), 100);
+                    isFocused.current = false;
                     onBlur && onBlur(event);
+                    setTimeout(() => !isFocused.current && hideOptions(), 150);
                 },
-                [areOptionsVisible, onBlur]
+                [onBlur]
             );
 
         useEffect(() => {
@@ -113,23 +115,16 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
             setOptions(getOptionsWithSelected(defaultOptions, selected));
         }, [defaultOptions, value]);
 
-        useEffect(() => {
-            if (downPress && isFocused) {
-                areOptionsVisible ? selectOption(getNextOption(selectedOption, options)) : showOptions();
-            }
-        }, [downPress, isFocused, areOptionsVisible]);
-
-        useEffect(() => {
-            if (upPress && isFocused) {
-                areOptionsVisible ? selectOption(getPrevOption(selectedOption, options)) : showOptions();
-            }
-        }, [upPress, isFocused, areOptionsVisible]);
-
-        useEffect(() => {
-            if (enterPress && optionsRef.current) {
-                options.length > 0 && options.find(op => selectedOption.value === op.value) && handleOptionClick(selectedOption);
-            }
-        }, [enterPress]);
+        useKeyboardNavigation({
+            isFocused,
+            selectedOption,
+            options,
+            areOptionsVisible,
+            selectOption,
+            handleOptionClick,
+            showOptions,
+            optionsRef
+        });
 
         useOuterClickNotifier(() => {
             handleOuterClick();

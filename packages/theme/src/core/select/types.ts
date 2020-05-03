@@ -8,6 +8,7 @@ export interface SelectTheme {
     selectedBgColor: string;
     selectedTextColor: string;
     options: {
+        shadowColor: string;
         bgColor: string;
         textColor: string;
         disableTextColor: string;
