@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.18](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.17...@medly-components/theme@1.0.0-beta.18) (2020-05-04)
+
+
+### Features
+
+* **core:** add functionality to handle nested options in singleselect component ([331228f](https://github.com/medlypharmacy/medly-components/commit/331228fc908812d3e0290beb0f1e658e536938de))
+
+
+
+
+
 # [1.0.0-beta.17](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.16...@medly-components/theme@1.0.0-beta.17) (2020-04-30)
 
 

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.29](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.28...@medly-components/core@1.0.0-beta.29) (2020-05-04)
+
+
+### Features
+
+* **core:** add feature to add any component as Prefix and suffix in TextField ([930535a](https://github.com/medlypharmacy/medly-components/commit/930535a97e5d221c7c7b2c52e6fca694801fbd04))
+* **core:** add functionality to handle nested options in singleselect component ([331228f](https://github.com/medlypharmacy/medly-components/commit/331228fc908812d3e0290beb0f1e658e536938de))
+* **core:** remove html5 built in validation message bubble and add them to error text area. ([45dfd3f](https://github.com/medlypharmacy/medly-components/commit/45dfd3f0d3bf31594bcc023d4dee77e6d5f43074))
+
+
+
+
+
 # [1.0.0-beta.28](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.27...@medly-components/core@1.0.0-beta.28) (2020-04-30)
 
 
