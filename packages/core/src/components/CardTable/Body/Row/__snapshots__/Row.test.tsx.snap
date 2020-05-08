@@ -2,13 +2,8 @@
 
 exports[`CardTable Row should render properly with dark theme 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr;
   cursor: pointer;
   box-sizing: border-box;
   border-radius: 0.8rem;
@@ -49,13 +44,8 @@ exports[`CardTable Row should render properly with dark theme 1`] = `
 
 exports[`CardTable Row should render properly with light theme 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr;
   cursor: pointer;
   box-sizing: border-box;
   border-radius: 0.8rem;

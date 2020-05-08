@@ -27,9 +27,6 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 0 0.8rem;
   margin: 1.4rem 0;
   display: -webkit-box;
@@ -147,9 +144,6 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 0 0.8rem;
   margin: 1.4rem 0;
   display: -webkit-box;
@@ -267,9 +261,6 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 0 0.8rem;
   margin: 1.4rem 0;
   display: -webkit-box;
@@ -399,9 +390,6 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 0 0.8rem;
   margin: 1.4rem 0;
   display: -webkit-box;
@@ -544,9 +532,6 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 0 0.8rem;
   margin: 1.4rem 0;
   display: -webkit-box;
@@ -677,9 +662,6 @@ exports[`Card Table HeadCell should render properly with dark background and dro
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 0 0.8rem;
   margin: 1.4rem 0;
   display: -webkit-box;
@@ -809,9 +791,6 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 0 0.8rem;
   margin: 1.4rem 0;
   display: -webkit-box;
@@ -954,9 +933,6 @@ exports[`Card Table HeadCell should render properly with light background and dr
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 0 0.8rem;
   margin: 1.4rem 0;
   display: -webkit-box;

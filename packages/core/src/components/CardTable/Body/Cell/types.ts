@@ -8,6 +8,5 @@ export interface Props {
 }
 
 export interface StyledProps {
-    flex: number;
     align: 'left' | 'center' | 'right';
 }

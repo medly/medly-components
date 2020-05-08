@@ -14,9 +14,6 @@ exports[`CardTable Body should render card table body properly 1`] = `
 }
 
 .c1 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 0;
   padding: 1.5rem 2.4rem;
   display: -webkit-box;
@@ -37,13 +34,8 @@ exports[`CardTable Body should render card table body properly 1`] = `
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   cursor: pointer;
   box-sizing: border-box;
   border-radius: 0.8rem;

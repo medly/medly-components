@@ -5,8 +5,8 @@ export const Row = styled('tr').attrs(({ withWhiteBackground, theme: { cardTable
     bgTheme: withWhiteBackground ? 'lightBackground' : 'darkBackground',
     cardTable
 }))<Props & { bgTheme: 'lightBackground' | 'darkBackground' }>`
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: ${({ gridTemplateColumns }) => gridTemplateColumns};
     cursor: ${({ onClick, isRowClickDisabled }) => (onClick && !isRowClickDisabled ? 'pointer' : 'inherit')};
     box-sizing: border-box;
     border-radius: 0.8rem;

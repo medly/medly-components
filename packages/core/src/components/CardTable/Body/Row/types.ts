@@ -4,4 +4,5 @@ export interface Props extends WithThemeProp {
     onClick?: () => void;
     isRowClickDisabled?: boolean;
     withWhiteBackground: boolean;
+    gridTemplateColumns: string;
 }

@@ -12,7 +12,6 @@ export const HeadCellContent = styled('span')`
 export const HeadCell = styled('th').attrs(({ withWhiteBackground }: StyledProps) => ({
     bgTheme: withWhiteBackground ? 'lightBackground' : 'darkBackground'
 }))<StyledProps & { bgTheme: 'lightBackground' | 'darkBackground' }>`
-    flex: ${({ flex }) => flex};
     padding: 0 0.8rem;
     margin: 1.4rem 0;
     display: flex;
@@ -67,4 +66,4 @@ export const HeadCell = styled('th').attrs(({ withWhiteBackground }: StyledProps
         }
     }
 `;
-HeadCell.defaultProps = { flex: 1, align: 'left' };
+HeadCell.defaultProps = { align: 'left' };

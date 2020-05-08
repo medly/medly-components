@@ -15,8 +15,8 @@ export interface ColumnConfig {
     sort?: boolean;
     /** Column content alignment */
     align?: 'left' | 'right' | 'center';
-    /** Provide number from 1 to 12 to change the column width */
-    flex?: number;
+    /** Provide the fraction of the of the total width of the row */
+    fraction?: number;
     /** Custom component */
     component?: React.SFC<{ data: any; rowId?: any; disabled?: boolean }>;
 }

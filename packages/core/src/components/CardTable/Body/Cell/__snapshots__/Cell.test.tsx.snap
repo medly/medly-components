@@ -14,9 +14,6 @@ exports[`CardTable Cell should be able to "center" align  1`] = `
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 0;
   padding: 1.5rem 2.4rem;
   display: -webkit-box;
@@ -69,9 +66,6 @@ exports[`CardTable Cell should be able to "left" align  1`] = `
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 0;
   padding: 1.5rem 2.4rem;
   display: -webkit-box;
@@ -124,9 +118,6 @@ exports[`CardTable Cell should be able to "right" align  1`] = `
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 0;
   padding: 1.5rem 2.4rem;
   display: -webkit-box;
@@ -179,9 +170,6 @@ exports[`CardTable Cell should render cell with component properly 1`] = `
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 0;
   padding: 1.5rem 2.4rem;
   display: -webkit-box;
@@ -233,9 +221,6 @@ exports[`CardTable Cell should render cell with text properly 1`] = `
 }
 
 .c0 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   padding: 0;
   padding: 1.5rem 2.4rem;
   display: -webkit-box;

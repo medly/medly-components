@@ -6,7 +6,7 @@ import * as Styled from './HeadCell.styled';
 import { Props } from './types';
 
 export const HeadCell: SFC<Props> & WithStyle = React.memo(({ defaultSortOrder, sortField, onSortChange, withWhiteBackground, column }) => {
-    const { field, sort: isSortEnabled, title, align, flex } = column,
+    const { field, sort: isSortEnabled, title, align } = column,
         [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>(defaultSortOrder);
 
     useEffect(() => {
@@ -32,7 +32,7 @@ export const HeadCell: SFC<Props> & WithStyle = React.memo(({ defaultSortOrder, 
     );
 
     return (
-        <Styled.HeadCell isActive={sortField === field} {...{ flex, align, isSortEnabled, withWhiteBackground }}>
+        <Styled.HeadCell isActive={sortField === field} {...{ align, isSortEnabled, withWhiteBackground }}>
             <Styled.HeadCellContent onClick={isSortEnabled && handleSort}>
                 <Text uppercase textVariant="h5">
                     {title}

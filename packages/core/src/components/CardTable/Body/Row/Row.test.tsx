@@ -6,7 +6,12 @@ const renderer = ({ withWhiteBackground = false, onClick = jest.fn(), isRowClick
     render(
         <table>
             <tbody>
-                <Row withWhiteBackground={withWhiteBackground} onClick={onClick} isRowClickDisabled={isRowClickDisabled}>
+                <Row
+                    withWhiteBackground={withWhiteBackground}
+                    onClick={onClick}
+                    isRowClickDisabled={isRowClickDisabled}
+                    gridTemplateColumns="1fr"
+                >
                     <td>Demo</td>
                 </Row>
             </tbody>

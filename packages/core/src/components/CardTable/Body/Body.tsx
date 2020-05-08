@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { SFC, useCallback, useMemo } from 'react';
 import Cell from './Cell';
 import Row from './Row';
 import { Props } from './types';
@@ -7,9 +7,13 @@ import { Props } from './types';
 export const Body: SFC<Props> & WithStyle = React.memo(props => {
     const { data, columns, onRowClick, rowClickDisableKey, uniqueKeyName, withWhiteBackground } = props;
 
-    const handleRowClick = (rowData: any) => {
-        return onRowClick && !rowData[rowClickDisableKey] ? () => onRowClick(rowData) : undefined;
-    };
+    const gridTemplateColumns = useMemo(() => columns.reduce((acc, curr) => acc.concat(`${curr.fraction || 1}fr `), ''), [columns]),
+        handleRowClick = useCallback(
+            (rowData: any) => {
+                return onRowClick && !rowData[rowClickDisableKey] ? () => onRowClick(rowData) : undefined;
+            },
+            [onRowClick, rowClickDisableKey]
+        );
 
     return (
         <tbody>
@@ -19,6 +23,7 @@ export const Body: SFC<Props> & WithStyle = React.memo(props => {
                     onClick={handleRowClick(row)}
                     withWhiteBackground={withWhiteBackground}
                     isRowClickDisabled={row[rowClickDisableKey]}
+                    gridTemplateColumns={gridTemplateColumns}
                 >
                     {columns.map(column => (
                         <Cell

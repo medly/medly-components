@@ -1,7 +1,7 @@
 import { styled } from '@medly-components/utils';
 
-export const HeadRow = styled('tr')`
-    display: flex;
-    flex-direction: row;
+export const HeadRow = styled('tr')<{ gridTemplateColumns: string }>`
+    display: grid;
+    grid-template-columns: ${({ gridTemplateColumns }) => gridTemplateColumns};
     background-color: transparent;
 `;

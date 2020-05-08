@@ -13,6 +13,5 @@ export interface StyledProps {
     isActive: boolean;
     isSortEnabled: boolean;
     withWhiteBackground: boolean;
-    flex: number;
     align: 'left' | 'center' | 'right';
 }

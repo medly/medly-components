@@ -13,8 +13,8 @@ Theme.defaultProps = {
 };
 export const ColumnConfigInterface: SFC<ColumnConfig> = () => null;
 ColumnConfigInterface.defaultProps = {
-    align: 'left',
-    flex: 1
+    fraction: 1,
+    align: 'left'
 };
 
 export const WithGreyBackground = () => {

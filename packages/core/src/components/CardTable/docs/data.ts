@@ -5,7 +5,7 @@ const data = [
         rxInfo: 'Metaformin',
         price: '535.76',
         status: 'Processing',
-        disabled: true,
+        disabled: true
     },
     {
         id: 2,
@@ -13,7 +13,6 @@ const data = [
         rxInfo: 'Carbinoxamine 6mg',
         price: '17.32',
         status: 'Pending'
-        
     },
     {
         id: 3,
