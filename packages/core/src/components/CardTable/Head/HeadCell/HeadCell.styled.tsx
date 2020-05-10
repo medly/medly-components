@@ -35,7 +35,7 @@ export const HeadCell = styled('th').attrs(({ withWhiteBackground }: StyledProps
 
     ${HeadCellContent} {
         &:hover {
-            cursor: ${({ isSortEnabled }) => (isSortEnabled ? 'pointer' : 'default')};
+            cursor: ${({ sortable }) => (sortable ? 'pointer' : 'default')};
             ${Text.Style} {
                 color: ${({ theme, bgTheme }) => theme.cardTable[bgTheme].headerHoverColor};
             }

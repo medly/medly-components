@@ -4,8 +4,8 @@ import { ColumnConfig } from '../types';
 import { Head } from './Head';
 
 const patientColumns: ColumnConfig[] = [
-        { title: 'Patient Info', field: 'patientInfo', sort: true },
-        { title: 'RxInfo', field: 'rxInfo', sort: true }
+        { title: 'Patient Info', field: 'patientInfo', sortable: true },
+        { title: 'RxInfo', field: 'rxInfo', sortable: true }
     ],
     renderer = ({ withWhiteBackground = false, onSort = jest.fn(), columns = patientColumns }) =>
         render(

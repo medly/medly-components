@@ -12,7 +12,7 @@ export interface ColumnConfig {
     /** Field name in the data */
     field: string;
     /** Set it true to show sort icons */
-    sort?: boolean;
+    sortable?: boolean;
     /** Column content alignment */
     align?: 'left' | 'right' | 'center';
     /** Provide the fraction of the of the total width of the row */

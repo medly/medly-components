@@ -13,8 +13,8 @@ const transactions = [
         }
     ],
     transactionColumnConfig: ColumnConfig[] = [
-        { title: 'Patient Info', field: 'patientInfo', sort: true },
-        { title: 'RxInfo', field: 'rxInfo', sort: true }
+        { title: 'Patient Info', field: 'patientInfo', sortable: true },
+        { title: 'RxInfo', field: 'rxInfo', sortable: true }
     ],
     renderer = ({
         onSort = jest.fn(),

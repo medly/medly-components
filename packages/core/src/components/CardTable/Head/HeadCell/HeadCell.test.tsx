@@ -3,7 +3,7 @@ import React from 'react';
 import { ColumnConfig } from '../../types';
 import { HeadCell } from './HeadCell';
 
-const dummyColumn: ColumnConfig = { title: 'Demo', field: 'demo', sort: true },
+const dummyColumn: ColumnConfig = { title: 'Demo', field: 'demo', sortable: true },
     renderer = ({ withWhiteBackground = false, sortField = 'random', onSortChange = jest.fn(), column = dummyColumn }) =>
         render(
             <table>

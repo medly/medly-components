@@ -15,8 +15,8 @@ describe('CardTable Body', () => {
             }
         ],
         columns: ColumnConfig[] = [
-            { title: 'Patient Info', field: 'patientInfo', sort: true },
-            { title: 'RxInfo', field: 'rxInfo', sort: true }
+            { title: 'Patient Info', field: 'patientInfo', sortable: true },
+            { title: 'RxInfo', field: 'rxInfo', sortable: true }
         ];
 
     const renderer = (onRowClick = jest.fn(), rowClickDisableKey = '', uniqueKeyName = 'id') =>

@@ -11,7 +11,7 @@ export interface Props extends WithThemeProp {
 
 export interface StyledProps {
     isActive: boolean;
-    isSortEnabled: boolean;
+    sortable: boolean;
     withWhiteBackground: boolean;
     align: 'left' | 'center' | 'right';
 }

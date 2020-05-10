@@ -84,10 +84,10 @@ type CardTableProps = GetComponentProps<typeof CardTable>;
 type ColumnConfig = CardTableProps['columns'];
 
 const columns: ColumnConfig[] = [
-    { title: 'Patient Info', field: 'patientInfo', sort: true, component: StatusFormatter },
-    { title: 'RxInfo', field: 'rxInfo', sort: true },
-    { title: 'Price', field: 'price', sort: true, component: StatusFormatter },
-    { title: 'Status', field: 'status', sort: true, component: StatusFormatter, align: center }
+    { title: 'Patient Info', field: 'patientInfo', sortable: true, component: StatusFormatter },
+    { title: 'RxInfo', field: 'rxInfo', sortable: true },
+    { title: 'Price', field: 'price', sortable: true, component: StatusFormatter },
+    { title: 'Status', field: 'status', sortable: true, component: StatusFormatter, align: center }
 ];
 ```
 
@@ -112,10 +112,10 @@ const StatusFormatter: ColumnConfig['component'] = ({ data }) => {
 };
 
 const columns: ColumnConfig[] = [
-    { title: 'Patient Info', field: 'patientInfo', sort: true, component: StatusFormatter },
-    { title: 'RxInfo', field: 'rxInfo', sort: true, align: 'center' },
-    { title: 'Price', field: 'price', sort: true, component: StatusFormatter },
-    { title: 'Status', field: 'status', sort: true, component: StatusFormatter }
+    { title: 'Patient Info', field: 'patientInfo', sortable: true, component: StatusFormatter },
+    { title: 'RxInfo', field: 'rxInfo', sortable: true, align: 'center' },
+    { title: 'Price', field: 'price', sortable: true, component: StatusFormatter },
+    { title: 'Status', field: 'status', sortable: true, component: StatusFormatter }
 ];
 ```
 
