@@ -3,6 +3,10 @@ import React, { SFC, useCallback, useMemo } from 'react';
 import Cell from './Cell';
 import Row from './Row';
 import { Props } from './types';
+import { NoResult } from './Row/Row.styled';
+import Text from '../../Text';
+import Card from '../../Card';
+
 
 export const Body: SFC<Props> & WithStyle = React.memo(props => {
     const { data, columns, onRowClick, rowClickDisableKey, uniqueKeyName, withWhiteBackground } = props;
@@ -14,6 +18,16 @@ export const Body: SFC<Props> & WithStyle = React.memo(props => {
             },
             [onRowClick, rowClickDisableKey]
         );
+
+    if (data.length === 0) {
+        return (
+            <NoResult withWhiteBackground={withWhiteBackground} gridTemplateColumns={gridTemplateColumns}>
+                <Card variant="flat" fullWidth={true} fullHeight={true}>
+                    <Text textVariant="body2" textWeight="Strong" > No Result </Text>
+                </Card>
+            </NoResult>
+        );
+    }
 
     return (
         <tbody>

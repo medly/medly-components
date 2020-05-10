@@ -50,4 +50,11 @@ describe('CardTable Body', () => {
         fireEvent.click(getByText('Metaformin'));
         expect(mockOnRowClick).not.toHaveBeenCalled();
     });
+
+    it('should render no result row when there is no data', () => {
+        const { container, queryByText } = render(<Body data={[]} columns={columns} />)
+        expect(container).toMatchSnapshot();
+        expect(queryByText("No Result")).toBeTruthy();
+
+    });
 });
