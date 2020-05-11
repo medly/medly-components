@@ -31,5 +31,7 @@ export const Row = styled('tr').attrs(({ withWhiteBackground, theme: { cardTable
 
 export const NoResult = styled(Row)`
     display: flex;
-    padding: 1.0rem 0;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
 `;

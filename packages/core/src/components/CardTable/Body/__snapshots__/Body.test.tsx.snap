@@ -90,7 +90,7 @@ exports[`CardTable Body should render card table body properly 1`] = `
 `;
 
 exports[`CardTable Body should render no result row when there is no data 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -118,7 +118,15 @@ exports[`CardTable Body should render no result row when there is no data 1`] = 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.0rem 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.5rem 0;
 }
 
 .c0:hover {
@@ -133,62 +141,15 @@ exports[`CardTable Body should render no result row when there is no data 1`] = 
   background: #ffffff;
 }
 
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  margin: 5px;
-  overflow: auto;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  padding: 10px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 4px;
-  border: 1px solid #dfe4e9;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-  border-radius: 0;
-  margin: 0;
-  border: none;
-  box-shadow: none;
-  background-color: transparent;
-  width: calc(100% - 10px);
-  height: calc(100% - 10px);
-}
-
-.c1.c1 * {
-  background-color: transparent;
-}
-
 <div>
   <tr
     class="sc-AykKE c0"
   >
-    <div
+    <strong
       class="c1"
     >
-      <strong
-        class="c2"
-      >
-         No Result 
-      </strong>
-    </div>
+       No Result 
+    </strong>
   </tr>
 </div>
 `;
