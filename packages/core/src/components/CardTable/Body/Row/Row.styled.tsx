@@ -27,3 +27,11 @@ export const Row = styled('tr').attrs(({ withWhiteBackground, theme: { cardTable
         background: ${({ bgTheme, cardTable }) => cardTable[bgTheme].evenRowBgColor};
     }
 `;
+
+
+export const NoResult = styled(Row)`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+`;
