@@ -1,4 +1,4 @@
-import { SideNavTheme } from '@medly-components/theme/src';
+import { SideNavTheme } from '@medly-components/theme';
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
 export interface NavItemProps extends HTMLProps<HTMLLIElement> {

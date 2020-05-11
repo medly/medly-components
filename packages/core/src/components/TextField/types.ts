@@ -4,25 +4,37 @@ import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix'>, WithThemeProp {
     /** Input Variants */
     variant?: 'outlined' | 'filled';
+    /** Set it true if you are using built in form validation */
+    withBuiltInValidation?: boolean;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
-    /** Prefix  */
+    /** Leading icon */
     prefix?: React.SFC<any>;
-    /** Suffix */
+    /** Trailing icon */
     suffix?: React.SFC<any>;
     /** Disable Input */
     disabled?: boolean;
-    /** To be used when it is required in any form */
+    /** Set it true when it is required in any form */
     required?: boolean;
     /** Input label */
-    label: string;
+    label?: string;
     /** Helper Text */
     helperText?: string;
     /** Error Text */
     errorText?: string;
+    /** Min width in px/rem/% (1rem = 10px)*/
+    minWidth?: string;
 }
 
 export interface StyledProps extends Props, TextFieldTheme {
     isPrefixPresent: boolean;
     isSuffixPresent: boolean;
+    isLabelPresent: boolean;
+}
+
+export interface InnerWrapperProps extends HTMLProps<HTMLDivElement>, TextFieldTheme, WithThemeProp {
+    variant?: 'outlined' | 'filled';
+    disabled?: boolean;
+    isLabelPresent?: boolean;
+    isErrorPresent?: boolean;
 }

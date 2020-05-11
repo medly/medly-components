@@ -1,51 +1,42 @@
-import { ExpandMoreIcon } from '@medly-components/icons';
-import { defaultTheme } from '@medly-components/theme';
-import { centerAligned, styled, WithThemeProp } from '@medly-components/utils';
-import FieldWithLabel from '../FieldWithLabel';
+import { styled } from '@medly-components/utils';
+import TextField from '../TextField';
+import { Suffix } from '../TextField/Styled';
 import { SelectWrapperProps } from './types';
 
-export const SelectWrapperStyled = styled('div')<SelectWrapperProps>`
-    border: 1px solid ${({ theme }) => theme.select.borderColor};
-    background-color: ${({ disabled, theme }) => (disabled ? theme.select.disabledBgColor : theme.select.bgColor)};
-    cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-    border-radius: 4px;
-    box-sizing: border-box;
-    overflow: hidden;
-    height: 35px;
-    min-width: 150px;
-    width: 100%;
-    display: inline-flex;
-    ${centerAligned()}
+export const Wrapper = styled('div')<SelectWrapperProps>`
+    position: relative;
+    display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
+    min-width: ${({ minWidth }) => minWidth || 'max-content'};
+    width: ${({ fullWidth }) => (fullWidth ? '100%' : 'max-content')};
+    margin: ${({ theme, fullWidth }) =>
+        fullWidth ? `${theme.spacing.S2} 0` : `${theme.spacing.S2} ${theme.spacing.S2} ${theme.spacing.S2} 0`};
 
-    * {
-        cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-    }
-
-    ${FieldWithLabel.Style} {
+    ${TextField.Style} {
         margin: 0;
-        flex: 1;
-
-        & > * {
-            margin: 0;
-            border: none;
-            background-color: transparent;
+        div,
+        input,
+        label {
+            cursor: ${({ disabled }) => !disabled && 'pointer'};
+        }
+        &:focus-within {
+            input {
+                cursor: ${({ disabled, isSearchable }) => !disabled && isSearchable && 'text'};
+            }
+        }
+        ${Suffix} {
+            transition: transform 200ms ease-out;
+            transform: ${({ areOptionsVisible }) => (areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)')};
+            * {
+                transition: fill 100ms ease-out;
+            }
+        }
+        &:not(:focus-within):hover {
+            ${Suffix} {
+                * {
+                    fill: ${({ theme, variant, disabled, isErrorPresent }) =>
+                        !disabled && !isErrorPresent && theme.textField[variant].default.textColor};
+                }
+            }
         }
     }
-
-    &:focus-within {
-        border-color: ${({ theme }) => theme.select.outlineColor};
-    }
 `;
-
-SelectWrapperStyled.defaultProps = {
-    theme: defaultTheme
-};
-
-export const SelectIconStyled = styled(ExpandMoreIcon)<WithThemeProp>`
-    max-width: 24px;
-    margin-right: ${({ theme }) => theme.spacing.S1};
-`;
-
-SelectIconStyled.defaultProps = {
-    theme: defaultTheme
-};

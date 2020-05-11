@@ -1,13 +1,24 @@
 import { styled, WithThemeProp } from '@medly-components/utils';
+import { StyledOptionsProps } from './types';
 
-export const OptionsStyled = styled('ul')<WithThemeProp>`
-    list-style: none;
-    padding: 0;
+export const Options = styled('ul')<StyledOptionsProps & WithThemeProp>`
+    z-index: 1000;
+    position: absolute;
+    top: ${({ isNested }) => (isNested ? 0 : '5.6rem')};
+    left: ${({ isNested }) => (isNested ? `calc(100% - 0.4rem) ` : 0)};
     margin: 0;
-    max-height: 200px;
-    overflow: auto;
-    border: 1px solid ${({ theme }) => theme.select.borderColor};
-    background-color: ${({ theme }) => theme.select.bgColor};
+    padding: 0;
+    width: ${({ isNested }) => (isNested ? 'max-content' : '100%')};
+    list-style: none;
     box-sizing: border-box;
-    border-radius: 4px;
+    box-shadow: 0 2px 8px ${({ theme }) => theme.select.options.shadowColor};
+    border-radius: ${({ variant }) => (variant === 'outlined' ? `0.4rem` : `0 0 0.4rem 0.4rem `)};
+
+    li:first-child {
+        border-radius: ${({ variant }) => (variant === 'outlined' ? `0.4rem 0.4rem 0 0` : 0)};
+    }
+
+    li:last-child {
+        border-radius: 0 0 0.4rem 0.4rem;
+    }
 `;

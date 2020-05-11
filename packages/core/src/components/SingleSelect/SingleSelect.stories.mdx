@@ -1,26 +1,178 @@
+import { useState } from 'react';
+import { PreviewContent } from '@medly-components/utils';
+import { StarIcon } from '@medly-components/icons';
 import { SingleSelect } from './SingleSelect';
+import { boolean, select, text } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './SingleSelect.stories';
+import { variants, options, ThemeInterface, OptionProps } from './SingleSelect.stories.tsx';
 
-<Meta title="Core" component={SingleSelect} />
+<Meta title="Core" component={SingleSelect} parameters={{ jest: ['SingleSelect.test.tsx'] }} />
 
 # SingleSelect
 
-### Basic SingleSelect
+Basic single select component.
 
 <Preview withToolbar>
-    <Story name="SingleSelect">{stories.Basic()}</Story>
+    <Story name="SingleSelect">
+        {() => {
+            const [value, setValue] = useState('Some 1');
+            return (
+                <SingleSelect
+                    options={options}
+                    value={value}
+                    onChange={setValue}
+                    isSearchable={boolean('Is Searchable', false)}
+                    variant={select('Variant', variants, 'filled')}
+                    disabled={boolean('Disabled', false)}
+                    fullWidth={boolean('Full Width', false)}
+                    required={boolean('Required', false)}
+                    label={text('Label', 'Pharmacy')}
+                    placeholder="Select Pharmacy"
+                    helperText={text('Helper Text', 'Pharmacy')}
+                    errorText={text('Error Text', '')}
+                    minWidth={text('Min Width', '')}
+                />
+            );
+        }}
+    </Story>
+</Preview>
+
+#### Variants
+
+There are two variants available `filled` & `outlined`.
+
+<Preview>
+    <PreviewContent>
+        {() => {
+            const [filledValue, setFilledValue] = useState('Dummy4 option'),
+                [outlinedValue, setOutlinedValue] = useState('Dummy4 option');
+            return (
+                <>
+                    <SingleSelect
+                        variant="filled"
+                        options={options}
+                        value={filledValue}
+                        onChange={setFilledValue}
+                        label="Pharmacy"
+                        helperText="Filled Variant"
+                    />
+                    <SingleSelect
+                        variant="outlined"
+                        options={options}
+                        value={outlinedValue}
+                        onChange={setOutlinedValue}
+                        label="Pharmacy"
+                        helperText="Outlined Variant"
+                    />
+                </>
+            );
+        }}
+    </PreviewContent>
+</Preview>
+
+#### Error State
+
+As mentioned in TextField component there are two ways of handling form validation:
+
+##### 1. Html5 Built In form validation
+
+In this scenario just pass `withBuiltInValidation` prop as `true`.
+
+##### 2. Custom Form validation
+
+In this scenario you have to pass `errorText`.
+
+<Preview>
+    <PreviewContent>
+        {() => {
+            const [filledValue, setFilledValue] = useState('Dummy4 option'),
+                [outlinedValue, setOutlinedValue] = useState('Dummy4 option');
+            return (
+                <>
+                    <SingleSelect
+                        variant="filled"
+                        errorText="Something wrong"
+                        options={options}
+                        value={filledValue}
+                        onChange={setFilledValue}
+                        label="Pharmacy"
+                    />
+                    <SingleSelect
+                        variant="outlined"
+                        errorText="Something wrong"
+                        options={options}
+                        value={outlinedValue}
+                        onChange={setOutlinedValue}
+                        label="Pharmacy"
+                    />
+                </>
+            );
+        }}
+    </PreviewContent>
+</Preview>
+
+##### With Icons
+
+You can also provode prefix icon, which will always take the label color.
+
+<Preview>
+    <PreviewContent>
+        {() => {
+            const [filledValue, setFilledValue] = useState('Dummy4 option'),
+                [outlinedValue, setOutlinedValue] = useState('Dummy4 option');
+            return (
+                <>
+                    <SingleSelect
+                        prefix={StarIcon}
+                        variant="filled"
+                        options={options}
+                        value={filledValue}
+                        onChange={setFilledValue}
+                        label="Pharmacy"
+                    />
+                    <SingleSelect
+                        prefix={StarIcon}
+                        variant="outlined"
+                        options={options}
+                        value={outlinedValue}
+                        onChange={setOutlinedValue}
+                        label="Pharmacy"
+                    />
+                </>
+            );
+        }}
+    </PreviewContent>
 </Preview>
 
 ### Keyboard Support
 
 It also supports keyboard navigation when it is in focus
 
-| Key        | Function                           |
-| ---------- | ---------------------------------- |
-| Down Arrow | Moves focus to the next option     |
-| Up Arrow   | Moves focus to the previous option |
-| Enter      | Select the focused option          |
+| Key         | Function                              |
+| ----------- | ------------------------------------- |
+| Down Arrow  | Moves focus to the next option        |
+| Up Arrow    | Moves focus to the previous option    |
+| Right Arrow | Moves focus to nested options         |
+| Left Arrow  | Moves focus out of the nested options |
+| Enter       | Select the focused option             |
+
+##### Nested Options
+
+If you want to use nested options then you can directly pass nested array of `{label:'' , value:''}` in option list like below.
+
+```tsx
+const options = [
+    { value: 'Dummy1 option', label: 'Dummy1 option' },
+    {
+        label: 'Dummy2 option',
+        value: [
+            { value: 'Some 1', label: 'Some 1' },
+            { value: 'Some 2', label: 'Some 2' }
+        ]
+    },
+    { value: 'Dummy3 option', label: 'Dummy3 option' }
+];
+```
 
 ### Props
 
@@ -28,10 +180,10 @@ It also supports keyboard navigation when it is in focus
 
 ### Option Props
 
-<Props of={stories.OptionProps} />
+<Props of={OptionProps} />
 
 ### SelectTheme
 
 This theme is shared between single select and multi select.
 
-<Props of={stories.ThemeInterface} />
+<Props of={ThemeInterface} />

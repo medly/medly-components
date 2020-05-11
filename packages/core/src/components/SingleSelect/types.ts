@@ -1,10 +1,13 @@
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
-import { LabelPositions } from '../Label/types';
 
 export interface Option {
-    value: any;
+    /** Option value */
+    value: Option[] | any;
+    /** Option label */
     label: string;
+    /** This will be handled by component itself */
     selected?: boolean;
+    /** Set it true if this option is disabled */
     disabled?: boolean;
 }
 
@@ -13,13 +16,7 @@ export interface DefaultSelected {
     label: string;
 }
 
-export interface SelectWrapperProps extends HTMLProps<HTMLDivElement>, WithThemeProp {
-    labelPosition?: LabelPositions;
-    fullWidth?: boolean;
-    description?: string;
-}
-
-type InputProps = Omit<HTMLProps<HTMLInputElement>, 'onChange'>;
+type InputProps = Omit<HTMLProps<HTMLInputElement>, 'onChange' | 'prefix'>;
 
 export interface SelectProps extends InputProps, WithThemeProp {
     /** Selected Value */
@@ -28,20 +25,31 @@ export interface SelectProps extends InputProps, WithThemeProp {
     onChange?: (value: any) => void;
     /** Options */
     options: Option[];
-    /** Label */
-    label?: string;
-    /** Min width */
-    minWidth?: number;
-    /** Label Position */
-    labelPosition?: LabelPositions;
+    /** Variants */
+    variant?: 'outlined' | 'filled';
+    /** Set it it true to enable search functionality */
+    isSearchable?: boolean;
+    /** Min width in px/rem/% (1rem = 10px)*/
+    minWidth?: string;
+    /** Set it true if you are using built in form validation */
+    withBuiltInValidation?: boolean;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
-    /** Description of the Select */
-    description?: string;
-    /** Description color */
-    descriptionColor?: string;
-    /** Placeholder for the input */
-    placeholder?: string;
-    /** To be used when it is required */
+    /** Set it true to disable the select action */
+    disabled?: boolean;
+    /** Set it true when it is required in any form */
     required?: boolean;
+    /** Label */
+    label?: string;
+    /** Leading icon */
+    prefix?: React.SFC<any>;
+    /** Helper Text */
+    helperText?: string;
+    /** Error Text */
+    errorText?: string;
+}
+
+export interface SelectWrapperProps extends Omit<SelectProps, 'ref' | 'options'> {
+    isErrorPresent?: boolean;
+    areOptionsVisible?: boolean;
 }

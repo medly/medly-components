@@ -1,18 +1,17 @@
-import React, { SFC } from 'react';
-
 import { WithStyle } from '@medly-components/utils';
+import React, { SFC } from 'react';
 import * as Styled from './Card.styled';
 import { Props } from './types';
 
 export const Card: SFC<Props> & WithStyle = React.memo(React.forwardRef((props, ref) => <Styled.Card ref={ref} {...props} />));
 Card.defaultProps = {
-    variant: 'outlined',
+    display: 'block',
+    variant: 'solid',
     flowDirection: 'vertical',
     separator: false,
     flex: 1,
-    withPadding: true,
+    withoutPadding: false,
     alignItems: 'center',
-    clickable: false,
     fullWidth: false,
     fullHeight: false
 };

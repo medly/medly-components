@@ -1,5 +1,6 @@
 import { TextField } from './TextField.tsx';
-import { AddCircleOutlineIcon, AddCircleIcon, CheckIcon } from '@medly-components/icons';
+import Text from '../Text';
+import { AddCircleOutlineIcon, AddCircleIcon, CheckCircleIcon } from '@medly-components/icons';
 import { withKnobs, text, color, select, boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { ThemeInterface, variants, BuiltIn, Custom } from './TextField.stories.tsx';
@@ -15,6 +16,7 @@ Basic TextField component with lot of customization
         <TextField
             id="storybook-input"
             type="email"
+            minWidth={text('Min Width', '20rem')}
             variant={select('Variant', variants, 'filled')}
             fullWidth={boolean('Full Width', false)}
             disabled={boolean('Disabled', false)}
@@ -41,13 +43,53 @@ Basic TextField component with lot of customization
     <TextField id="filled" type="Name" variant="filled" label="Address" defaultValue="Demo" errorText="Something wrong" />
 </Preview>
 
-##### With Icons
+##### With Prefix and suffix
+
+To use the label color pass the className name prop to your prefix/suffix element or you can directly use our icons.
 
 <Preview withToolbar>
-    <TextField id="outline-prefix" type="Name" variant="outlined" label="Address" prefix={AddCircleOutlineIcon} />
-    <TextField id="outline-suffix" type="Name" variant="outlined" label="Address" suffix={CheckIcon} />
-    <TextField id="filled-prefix" type="Name" variant="filled" label="Address" prefix={AddCircleIcon} />
-    <TextField id="filled-suffix" type="Name" variant="filled" label="Address" suffix={CheckIcon} />
+    <TextField id="outline-prefix-icon" type="Name" variant="outlined" label="Address" prefix={AddCircleOutlineIcon} />
+    <TextField id="outline-suffix-icon" type="Name" variant="outlined" label="Address" suffix={CheckCircleIcon} />
+    <TextField id="filled-prefix-icon" type="Name" variant="filled" label="Address" prefix={AddCircleIcon} />
+    <TextField id="filled-suffix-icon" type="Name" variant="filled" label="Address" suffix={CheckCircleIcon} />
+    <TextField
+        id="outline-prefix-text"
+        type="Name"
+        variant="outlined"
+        label="Address"
+        prefix={props => (
+            <Text {...props} textVariant="body1">
+                $
+            </Text>
+        )}
+    />
+    <TextField
+        id="outline-suffix-text"
+        type="Name"
+        variant="outlined"
+        label="Email"
+        suffix={props => <Text className={props.className}>.com</Text>}
+    />
+    <TextField
+        id="filled-prefix-text"
+        type="Name"
+        variant="filled"
+        label="Address"
+        prefix={props => (
+            <Text {...props} textVariant="body1">
+                $
+            </Text>
+        )}
+    />
+    <TextField id="filled-suffix-text" type="Name" variant="filled" label="Email" suffix={props => <Text {...props}>.com</Text>} />
+</Preview>
+
+If you dont want to apply the label color on your prefix and suffix just pass your element like this `() => <CheckCircleIcon/>`
+
+<Preview withToolbar>
+    <TextField id="outline-suffix" type="Name" variant="outlined" label="Address" suffix={() => <CheckCircleIcon />} />
+    <TextField id="filled-suffix" type="Name" variant="filled" label="Address" suffix={() => <CheckCircleIcon />} />
+    <TextField id="filled-suffix-text-without-color" type="Name" variant="filled" label="Email" suffix={() => <Text>.com</Text>} />
 </Preview>
 
 <Props of={TextField} />
@@ -61,19 +103,33 @@ There are multiple ways to valide the form. But we explaining below two ways to 
 In TextField we have provided `type="email"` and `required` prop. Providing these two prop will ensure that user has to fill valid email address.
 
 ```tsx
-export const BuiltIn: React.SFC = () => {
-    const [email, setEmail] = useState('');
+type Result = [
+    {
+        value: string;
+        onChange: (e: React.FormEvent<HTMLInputElement>) => void;
+    }
+];
 
-    const handleEmailChange = (event: React.FormEvent<HTMLInputElement>) => {
-            const target = event.target as HTMLInputElement;
-            setEmail(target.value);
-        },
-        handleFormSubmit = (e: React.FormEvent) => {
-            e.preventDefault();
-        };
+export const useTextInput = (initialState = ''): Result => {
+    const [value, setValue] = useState(initialState),
+        onChange = useCallback((event: React.FormEvent) => setValue((event.target as HTMLInputElement).value), []);
+    return [{ value, onChange }];
+};
+
+export const BuiltIn: React.SFC = () => {
+    const [email] = useTextInput(''),
+        handleFormSubmit = (e: React.FormEvent) => e.preventDefault();
+
     return (
         <Form onSubmit={handleFormSubmit}>
-            <TextField type="email" label="Email" placeholder="Enter email" required value={email} onChange={handleEmailChange} />
+            <TextField
+                withBuiltInValidation
+                type="email"
+                label="Email"
+                placeholder="Enter email"
+                required
+                {..eamil}
+            />
             <Button type="submit">Submit</Button>
         </Form>
     );
@@ -95,6 +151,7 @@ type Result = [
         errorText: string;
         onChange: (e: React.FormEvent<HTMLInputElement>) => void;
         onBlur: (e: React.FormEvent<HTMLInputElement>) => void;
+        onInvalid: (e: React.FormEvent<HTMLInputElement>) => void;
     },
     React.Dispatch<React.SetStateAction<string>>
 ];
@@ -104,25 +161,30 @@ export const useTextInput = ({ initialState = '', validator = (vl: string) => ''
         [errorText, setErrorText] = useState('');
 
     const onChange = useCallback((event: React.FormEvent) => setValue((event.target as HTMLInputElement).value), []),
-        onBlur = useCallback((event: React.FormEvent) => setErrorText(validator((event.target as HTMLInputElement).value)), []);
+        onBlur = useCallback((event: React.FormEvent) => setErrorText((event.target as HTMLInputElement).validationMessage), []),
+        onInvalid = useCallback((event: React.FormEvent) => {
+            event.preventDefault();
+            setErrorText((event.target as HTMLInputElement).validationMessage);
+        }, []);
 
-    return [{ value, errorText, onChange, onBlur }, setErrorText];
+    return [{ value, errorText, onChange, onBlur, onInvalid }, setErrorText];
 };
 ```
 
 And you can use the above react hook in the form like below.
 
 ```tsx
-const emailValidation = (value: string) => !value.includes('@') && 'Email address should contain @';
-export const Custom: React.SFC = () => {
-    const [email, setEmailErrorText] = useTextInput({ initialState: '', validator: emailValidation });
+const emailValidation = (value: string) => {
+    if (value === '') return 'Email is required';
+    if (!value.includes('@')) return 'Email address should contain @';
+};
 
-    const handleFormSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        email.value === '' && setEmailErrorText('Email is required');
-    };
+export const Custom: React.SFC = () => {
+    const [email] = useTextInput({ initialState: '', validator: emailValidation }),
+        handleFormSubmit = useCallback((e: React.FormEvent) => e.preventDefault(), []);
+
     return (
-        <Form onSubmit={handleFormSubmit} noValidate>
+        <Form onSubmit={handleFormSubmit}>
             <TextField type="email" label="Email" placeholder="Enter email" required {...email} />
             <Button type="submit">Submit</Button>
         </Form>

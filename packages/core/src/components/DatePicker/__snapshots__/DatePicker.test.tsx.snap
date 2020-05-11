@@ -36,7 +36,7 @@ exports[`DatePicker component should render properly when value is of date type 
   grid-template-areas: 'label field' 'random description';
 }
 
-.c0 .sc-AykKH {
+.c0 .sc-fzXfMw {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -62,7 +62,7 @@ exports[`DatePicker component should render properly when value is of date type 
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .sc-AykKH {
+.c4 .sc-fzXfMw {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -74,6 +74,22 @@ exports[`DatePicker component should render properly when value is of date type 
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c3 .sc-fzXfMA {
+  top: calc(100% + 5px);
+  left: 0%;
 }
 
 .c5 {
@@ -154,22 +170,6 @@ exports[`DatePicker component should render properly when value is of date type 
   visibility: hidden;
 }
 
-.c3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: relative;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-}
-
-.c3 .sc-fzXfLS {
-  top: calc(100% + 5px);
-  left: 0%;
-}
-
 .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -199,7 +199,7 @@ exports[`DatePicker component should render properly when value is of date type 
       >
         
         <div
-          class="sc-AykKH c5"
+          class="sc-fzXfMw c5"
         >
           <input
             autocomplete="off"
@@ -254,7 +254,7 @@ exports[`DatePicker component should render properly when value is of string typ
   grid-template-areas: 'label field' 'random description';
 }
 
-.c0 .sc-AykKH {
+.c0 .sc-fzXfMw {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -280,7 +280,7 @@ exports[`DatePicker component should render properly when value is of string typ
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .sc-AykKH {
+.c4 .sc-fzXfMw {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -292,6 +292,22 @@ exports[`DatePicker component should render properly when value is of string typ
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.c3 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c3 .sc-fzXfMA {
+  top: calc(100% + 5px);
+  left: 0%;
 }
 
 .c5 {
@@ -372,22 +388,6 @@ exports[`DatePicker component should render properly when value is of string typ
   visibility: hidden;
 }
 
-.c3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: relative;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-}
-
-.c3 .sc-fzXfLS {
-  top: calc(100% + 5px);
-  left: 0%;
-}
-
 .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -417,7 +417,7 @@ exports[`DatePicker component should render properly when value is of string typ
       >
         
         <div
-          class="sc-AykKH c5"
+          class="sc-fzXfMw c5"
         >
           <input
             autocomplete="off"

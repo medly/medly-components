@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.29](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.28...@medly-components/core@1.0.0-beta.29) (2020-05-04)
+
+
+### Features
+
+* **core:** add feature to add any component as Prefix and suffix in TextField ([930535a](https://github.com/medlypharmacy/medly-components/commit/930535a97e5d221c7c7b2c52e6fca694801fbd04))
+* **core:** add functionality to handle nested options in singleselect component ([331228f](https://github.com/medlypharmacy/medly-components/commit/331228fc908812d3e0290beb0f1e658e536938de))
+* **core:** remove html5 built in validation message bubble and add them to error text area. ([45dfd3f](https://github.com/medlypharmacy/medly-components/commit/45dfd3f0d3bf31594bcc023d4dee77e6d5f43074))
+
+
+
+
+
+# [1.0.0-beta.28](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.27...@medly-components/core@1.0.0-beta.28) (2020-04-30)
+
+
+### Bug Fixes
+
+* **core:** add isSearchable prop in SingleSelect component and fix hover issue ([ab54c85](https://github.com/medlypharmacy/medly-components/commit/ab54c859181d3f168ef7d3f801aefa188e022054))
+* **core:** fix calendar popover style issue after single select component update ([3ed86ba](https://github.com/medlypharmacy/medly-components/commit/3ed86ba410818ba922b2172edc4a70399f8d968b))
+* **core:** fix hover and error style in SingleSelect and TextField component ([251bebd](https://github.com/medlypharmacy/medly-components/commit/251bebdc08fb627c33bbf980dd1ca13c9a8a7625))
+* **core:** fix hover issue of avatar with image in storybook ([3634ddd](https://github.com/medlypharmacy/medly-components/commit/3634dddd64c4c594e493c98ac8796c17da5dcfdb))
+* **core:** increase unit test coverage for button component ([4362453](https://github.com/medlypharmacy/medly-components/commit/436245356c036481a070ad2d350289181b467893))
+* **core:** refactor avatar component to handle colors coming from prop ([651c2a0](https://github.com/medlypharmacy/medly-components/commit/651c2a0c0ab5617ed85fee73b36635390a06678d))
+
+
+### Features
+
+* **core:** add functionality to handle minWidth & absense of label in TextField component ([92c00c4](https://github.com/medlypharmacy/medly-components/commit/92c00c4db959284ad703936153f74926bb73f72c))
+* **core:** add withBuiltInFormValidation prop in TextField component to enable HTML5 builtin form v ([81effbc](https://github.com/medlypharmacy/medly-components/commit/81effbc0c60472ebf8f8a3d4291fd1184df52648))
+* **core:** update the single select style based on new design ([e87d51a](https://github.com/medlypharmacy/medly-components/commit/e87d51a70d3655cd2a6da467cf6e6ada978e830d))
+
+
+
+
+
+# [1.0.0-beta.27](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.26...@medly-components/core@1.0.0-beta.27) (2020-04-27)
+
+
+### Bug Fixes
+
+* **core:** fix card table header icon and click issue ([e65e321](https://github.com/medlypharmacy/medly-components/commit/e65e321f96a0e0570b4e0363a356c9fe0fc6f6ba))
+* **core:** fix design issues in card table ([10230d4](https://github.com/medlypharmacy/medly-components/commit/10230d43418e989123dd907f472365a964006b9a))
+* **core:** fix lint issue ([67653f7](https://github.com/medlypharmacy/medly-components/commit/67653f73ae76ce83d455dbbf20e4d47f15aea574))
+* fix build issue ([a8cf4aa](https://github.com/medlypharmacy/medly-components/commit/a8cf4aa56025651c062af1fc513b019cac24a7f8))
+* **core:** remove :invalid pseudo class from text field ([60e6c08](https://github.com/medlypharmacy/medly-components/commit/60e6c08fdd955baf34f0d437ff260d9b370d74ba))
+* **core:** remove :valid pseudo class from text field component ([c2007f1](https://github.com/medlypharmacy/medly-components/commit/c2007f197ca01af71b1979338cec8e829aa73bb0))
+
+
+### Features
+
+* **core:** add a new CardsTable component ([f983574](https://github.com/medlypharmacy/medly-components/commit/f983574dd962c58185d80de454921baf34dc8e70))
+* **core:** add active and hover state on card table header ([ceb0b8d](https://github.com/medlypharmacy/medly-components/commit/ceb0b8d6f90758da00b4d555784dbcf3acc6a009))
+* **core:** add TextField component ([06e8c11](https://github.com/medlypharmacy/medly-components/commit/06e8c1142b05072d53c078946c578d928b21c902))
+
+
+
+
+
 # [1.0.0-beta.26](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.25...@medly-components/core@1.0.0-beta.26) (2020-04-21)
 
 

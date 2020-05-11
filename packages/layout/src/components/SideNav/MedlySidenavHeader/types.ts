@@ -1,4 +1,4 @@
-import { SvgIconProps } from '@medly-components/icons/src';
+import { SvgIconProps } from '@medly-components/icons';
 
 export interface Props {
     companyLogo?: React.FunctionComponent<SvgIconProps>;

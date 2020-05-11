@@ -1,16 +1,22 @@
 import { css, styled } from '@medly-components/utils';
 import Text from '../Text';
-import { Props } from './types';
+import { StyledProps } from './types';
 
-const getAvatarSize = ({ theme: { avatar }, size }: Props) => {
+const getAvatarSize = ({ theme: { avatar }, size }: StyledProps) => {
     const { sizes, defaults } = avatar;
     return sizes[size || defaults.size].avatarSize;
 };
 
-const getTextStyle = ({ theme, ...props }: Props) => {
+const getShadowColor = ({ theme: { avatar }, hoverTextShadowColor, hoverImgShadowColor, isImage }: StyledProps) => {
+    return isImage
+        ? hoverImgShadowColor || avatar.defaults.hover.imgShadowColor
+        : hoverTextShadowColor || avatar.defaults.hover.textShadowColor;
+};
+
+const getTextStyle = ({ theme, ...props }: StyledProps) => {
     const { size, textColor, bgColor } = props,
         { defaults, sizes } = theme.avatar,
-        { fontVariant, avatarSize } = sizes[size || defaults.size];
+        { avatarSize, fontSize } = sizes[size || defaults.size];
 
     return css`
         color: ${textColor || defaults.textColor};
@@ -18,13 +24,16 @@ const getTextStyle = ({ theme, ...props }: Props) => {
 
         ${Text.Style} {
             line-height: ${avatarSize};
-            font-size: ${theme.font.variants[fontVariant].fontSize};
-            letter-spacing: ${theme.font.variants[fontVariant].letterSpacing};
+            font-size: ${fontSize};
+            font-weight: ${theme.font.weights[defaults.fontWeight]};
+            font-family: ${defaults.fontFamily};
         }
     `;
 };
 
-export const AvatarStyled = styled('div')<Props>`
+export const AvatarStyled = styled('div').attrs(({ theme: { avatar: { defaults } } }: StyledProps) => ({
+    defaults
+}))<StyledProps>`
     display: inline-block;
     text-align: center;
     width: ${getAvatarSize};
@@ -37,5 +46,16 @@ export const AvatarStyled = styled('div')<Props>`
         width: ${getAvatarSize};
         height: ${getAvatarSize};
         object-fit: cover;
+        border: 0.1rem solid ${({ defaults }) => defaults.borderColor};
+        box-sizing: border-box;
+        border-radius: 50%;
+    }
+
+    &:hover {
+        background: ${({ defaults, hoverBgColor }) => hoverBgColor || defaults.hover.bgColor};
+        box-shadow: 0 0.4rem 0.8rem ${getShadowColor};
+        ${Text.Style} {
+            color: ${({ defaults, hoverTextColor }) => hoverTextColor || defaults.hover.textColor};
+        }
     }
 `;

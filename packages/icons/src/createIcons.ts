@@ -1,4 +1,4 @@
-import { capitalize } from '@medly-components/utils/src';
+import { capitalize } from '@medly-components/utils';
 import { mkdirSync, readdirSync, writeFileSync } from 'fs';
 import { exportTemplate, iconTemplate, storyTemplate } from './templates';
 

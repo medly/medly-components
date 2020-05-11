@@ -2,6 +2,7 @@ import { render } from '@test-utils';
 import React from 'react';
 import Text from '../Text';
 import { Card } from './Card';
+import { Props } from './types';
 
 describe('Card component', () => {
     it('should render correctly with all the default props', () => {
@@ -13,17 +14,18 @@ describe('Card component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('should render solid variant properly ', () => {
+    test.each(['solid', 'flat'])('should render properly with %p variant', (variant: Props['variant']) => {
         const { container } = render(
-            <Card variant="solid">
+            <Card variant={variant}>
                 <Text>Dummy Text</Text>
             </Card>
         );
         expect(container).toMatchSnapshot();
     });
-    it('should render flat variant properly ', () => {
+
+    test.each(['block', 'flex'])('should render properly with display %p', (display: Props['display']) => {
         const { container } = render(
-            <Card variant="flat">
+            <Card display={display}>
                 <Text>Dummy Text</Text>
             </Card>
         );
@@ -32,7 +34,7 @@ describe('Card component', () => {
 
     it('should render properly when it is clickable ', () => {
         const { container } = render(
-            <Card clickable>
+            <Card onClick={jest.fn()}>
                 <Text>Dummy Text</Text>
             </Card>
         );
@@ -73,7 +75,7 @@ describe('Card component', () => {
 
     it('should render properly when separator is set true flow direction is vertical', () => {
         const { container } = render(
-            <Card separator withPadding flowDirection="vertical" alignItems="left">
+            <Card separator withoutPadding flowDirection="vertical" alignItems="left">
                 <Card variant="flat" flowDirection="vertical" alignItems="left">
                     <Text>Marks</Text>
                 </Card>

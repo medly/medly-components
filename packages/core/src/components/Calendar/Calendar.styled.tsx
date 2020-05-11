@@ -1,5 +1,5 @@
 import { centerAligned, css, styled } from '@medly-components/utils';
-import SingleSelect from '../SingleSelect';
+import TextField from '../TextField';
 import { DateProps } from './types';
 
 export const Header = styled.div`
@@ -12,15 +12,25 @@ export const Header = styled.div`
 export const MonthAndYearSelection = styled.div`
     width: 100%;
     display: flex;
+    margin: 5px 0;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
-    ${SingleSelect.Style} {
+    ul {
+        top: 3.5rem;
+        max-height: 200px;
+        overflow: scroll;
+        li {
+            padding: 0 1rem;
+        }
+    }
+
+    ${TextField.Style} {
         min-width: unset;
-        height: unset;
-        input {
-            max-width: 50px;
-            padding: 5px;
+        max-width: 10rem;
+        & > div {
+            height: 3.5rem;
+            padding: 0 1rem;
         }
     }
 `;

@@ -8,4 +8,17 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size'>, WithThem
     textColor?: string;
     /** Background color */
     bgColor?: string;
+    /** Hover Text color */
+    hoverTextColor?: string;
+    /** Hover Background color */
+    hoverBgColor?: string;
+    /** Hover text shadow color*/
+    hoverTextShadowColor?: string;
+    /** Hover image shadow color */
+    hoverImgShadowColor?: string;
+}
+
+export interface StyledProps extends Props {
+    /** To check children is image */
+    isImage?: boolean;
 }

@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.18](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.17...@medly-components/theme@1.0.0-beta.18) (2020-05-04)
+
+
+### Features
+
+* **core:** add functionality to handle nested options in singleselect component ([331228f](https://github.com/medlypharmacy/medly-components/commit/331228fc908812d3e0290beb0f1e658e536938de))
+
+
+
+
+
+# [1.0.0-beta.17](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.16...@medly-components/theme@1.0.0-beta.17) (2020-04-30)
+
+
+### Bug Fixes
+
+* **core:** refactor avatar component to handle colors coming from prop ([651c2a0](https://github.com/medlypharmacy/medly-components/commit/651c2a0c0ab5617ed85fee73b36635390a06678d))
+
+
+### Features
+
+* **core:** update the single select style based on new design ([e87d51a](https://github.com/medlypharmacy/medly-components/commit/e87d51a70d3655cd2a6da467cf6e6ada978e830d))
+
+
+
+
+
+# [1.0.0-beta.16](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.15...@medly-components/theme@1.0.0-beta.16) (2020-04-27)
+
+
+### Features
+
+* **core:** add a new CardsTable component ([f983574](https://github.com/medlypharmacy/medly-components/commit/f983574dd962c58185d80de454921baf34dc8e70))
+* **core:** add active and hover state on card table header ([ceb0b8d](https://github.com/medlypharmacy/medly-components/commit/ceb0b8d6f90758da00b4d555784dbcf3acc6a009))
+* **core:** add TextField component ([06e8c11](https://github.com/medlypharmacy/medly-components/commit/06e8c1142b05072d53c078946c578d928b21c902))
+
+
+
+
+
 # [1.0.0-beta.15](https://github.com/medlypharmacy/medly-components/compare/@medly-components/theme@1.0.0-beta.14...@medly-components/theme@1.0.0-beta.15) (2020-04-21)
 
 

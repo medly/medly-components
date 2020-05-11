@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.30](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.29...@medly-components/layout@1.0.0-beta.30) (2020-05-04)
+
+
+### Features
+
+* **core:** add functionality to handle nested options in singleselect component ([331228f](https://github.com/medlypharmacy/medly-components/commit/331228fc908812d3e0290beb0f1e658e536938de))
+
+
+
+
+
+# [1.0.0-beta.29](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.28...@medly-components/layout@1.0.0-beta.29) (2020-04-30)
+
+
+### Features
+
+* **core:** update the single select style based on new design ([e87d51a](https://github.com/medlypharmacy/medly-components/commit/e87d51a70d3655cd2a6da467cf6e6ada978e830d))
+
+
+
+
+
+# [1.0.0-beta.28](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.27...@medly-components/layout@1.0.0-beta.28) (2020-04-27)
+
+
+### Bug Fixes
+
+* fix build issue ([a8cf4aa](https://github.com/medlypharmacy/medly-components/commit/a8cf4aa56025651c062af1fc513b019cac24a7f8))
+
+
+
+
+
 # [1.0.0-beta.27](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.26...@medly-components/layout@1.0.0-beta.27) (2020-04-21)
 
 
