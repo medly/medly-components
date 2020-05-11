@@ -29,7 +29,7 @@ export interface SelectProps extends InputProps, WithThemeProp {
     variant?: 'outlined' | 'filled';
     /** Set it it true to enable search functionality */
     isSearchable?: boolean;
-    /** Min width */
+    /** Min width in px/rem/% (1rem = 10px)*/
     minWidth?: string;
     /** Set it true if you are using built in form validation */
     withBuiltInValidation?: boolean;

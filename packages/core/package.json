@@ -28,7 +28,8 @@
         "@datepicker-react/styled": "^2.3.0",
         "@medly-components/icons": "1.0.0-beta.23",
         "@medly-components/theme": "1.0.0-beta.18",
-        "@medly-components/utils": "1.0.0-beta.20"
+        "@medly-components/utils": "1.0.0-beta.20",
+        "polished": "^3.6.2"
     },
     "devDependencies": {
         "@types/react-datepicker": "^2.8.1"

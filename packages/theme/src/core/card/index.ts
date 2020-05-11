@@ -1,13 +1,12 @@
 import colors from '../colors';
+import font from '../font';
 import { CardTheme } from './types';
 
 const card: CardTheme = {
-    bgColor: colors.white,
+    backgroundColor: colors.white,
+    textColor: font.defaults.color,
     separatorColor: colors.grey[500],
-    shadowColor: 'rgba(0,0,0,0.2)',
-    borderColor: colors.grey[200],
-    solidBgColor: colors.marigoldOrange[400],
-    solidTextColor: colors.white
+    shadowColor: colors.grey[400]
 };
 
 export default card;

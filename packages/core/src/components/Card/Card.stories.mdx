@@ -1,18 +1,45 @@
 import { HTMLProps } from '@medly-components/utils';
+import { HomeIcon } from '@medly-components/icons';
 import { Card } from './Card.tsx';
+import Text from '../Text';
+import { withKnobs, text, color, select, boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './Card.stories';
+import { variants, display, itemsPosition, flowDirection, ThemeInterface } from './Card.stories';
 
 <Meta title="Core" component={Card} />
 
 # Card
 
-### Simple card component with lot of customization.
-
-You can play with the props in canvas tab.
+Simple card component with lot of customization. Hover effect will only work when you pass `onClick` prop. You can play with the props in canvas tab.
 
 <Preview withToolbar>
-    <Story name="Card">{stories.Basic()}</Story>
+    <Story name="Card" parameters={{ decorators: [withKnobs] }}>
+        <Card
+            variant={select('Variant', variants, 'solid')}
+            flowDirection={select('Flow Direction', flowDirection, 'horizontal')}
+            alignItems={select('Items Position', itemsPosition, 'center')}
+            display={select('Display', display, 'flex')}
+            separator={boolean('Separator', true)}
+            withoutPadding={boolean('Without Padding', true)}
+            fullWidth={boolean('Full Width', false)}
+            fullHeight={boolean('Full Height', false)}
+            minWidth={text('Min Width', '')}
+            minHeight={text('Min Height', '')}
+            onClick={() => console.log('Clicked')}
+        >
+            <Card variant="flat" display="flex" alignItems="center">
+                <Text textWeight="Strong" textVariant="h2">
+                    8
+                </Text>
+                <Text>Marks</Text>
+            </Card>
+            <Card variant="flat" display="flex" flex={6} alignItems="left">
+                <Text>1760712004</Text>
+                <Text textVariant="h3">Stevens, Hilary</Text>
+                <Text>4 Atno Avenue, Morristown, NJ, 07960</Text>
+            </Card>
+        </Card>
+    </Story>
 </Preview>
 
 ### Variants
@@ -21,9 +48,6 @@ You can play with the props in canvas tab.
     <Card variant="solid">
         <Text>Solid Card</Text>
     </Card>
-    <Card variant="outlined">
-        <Text>Outlined Card</Text>
-    </Card>
     <Card variant="flat">
         <Text>Flat Card</Text>
     </Card>
@@ -31,13 +55,15 @@ You can play with the props in canvas tab.
 
 ### Children direction
 
+If you are using `display='flex'` then you can customize it in lot many ways.
+
 <Preview>
-    <Card variant="outlined" flowDirection="horizontal">
-        <Text>1</Text>
+    <Card display="flex" flowDirection="horizontal" alignItems="center">
+        <HomeIcon />
         <Text>Horizontal</Text>
     </Card>
-    <Card variant="outlined" flowDirection="vertical">
-        <Text>1</Text>
+    <Card display="flex" flowDirection="vertical">
+        <HomeIcon />
         <Text>Vertical</Text>
     </Card>
 </Preview>
@@ -48,4 +74,4 @@ You can play with the props in canvas tab.
 
 ### CardTheme
 
-<Props of={stories.ThemeInterface} />
+<Props of={ThemeInterface} />

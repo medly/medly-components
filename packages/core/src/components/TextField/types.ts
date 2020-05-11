@@ -22,7 +22,7 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix'>, With
     helperText?: string;
     /** Error Text */
     errorText?: string;
-    /** Min width */
+    /** Min width in px/rem/% (1rem = 10px)*/
     minWidth?: string;
 }
 

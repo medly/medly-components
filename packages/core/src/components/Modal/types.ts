@@ -6,9 +6,9 @@ export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
     open?: boolean;
     /** Function to be called on closing modal */
     onCloseModal?: () => void;
-    /** Min width of the component */
+    /** Min width in px/rem/% (1rem = 10px)*/
     minWidth?: string;
-    /** Min height of the component */
+    /** Min height in px/rem/% (1rem = 10px)*/
     minHeight?: string;
 }
 

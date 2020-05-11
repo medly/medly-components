@@ -58,7 +58,7 @@ export const Calendar: React.SFC<Props> = React.memo(({ date, onChange, minSelec
     }, [year]);
 
     return (
-        <Card variant="outlined" {...restProps}>
+        <Card variant="solid" {...restProps}>
             <Styled.Header>
                 <Button variant="flat" disabled={isPrevBtnDisabled} onClick={handlePreviousBtnClick}>{`<`}</Button>
                 <Text textVariant="h3">{`${CALENDAR_MONTHS[month]} ${year}`}</Text>

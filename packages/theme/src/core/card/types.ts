@@ -1,8 +1,6 @@
 export interface CardTheme {
-    bgColor: string;
-    shadowColor: string;
+    backgroundColor: string;
+    textColor: string;
     separatorColor: string;
-    borderColor: string;
-    solidBgColor: string;
-    solidTextColor: string;
+    shadowColor: string;
 }

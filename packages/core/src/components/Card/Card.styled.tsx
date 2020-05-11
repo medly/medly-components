@@ -1,14 +1,15 @@
-import { CardTheme, defaultTheme } from '@medly-components/theme';
-import { css, fullHeight, fullWidth, styled } from '@medly-components/utils';
-import { ItemsPosition, Props } from './types';
+import { CardTheme } from '@medly-components/theme';
+import { css, styled } from '@medly-components/utils';
+import { rgba } from 'polished';
+import { Props } from './types';
 
-const verticalFlow = (alignItems: ItemsPosition) => css`
+const verticalFlow = ({ alignItems }: Props) => css`
     flex-direction: column;
     justify-content: ${alignItems === 'top' ? 'flex-start' : alignItems === 'bottom' ? 'flex-end' : 'center'};
     align-items: ${alignItems === 'left' ? 'flex-start' : alignItems === 'right' ? 'flex-end' : 'center'};
 `;
 
-const horizontalFlow = (alignItems: ItemsPosition) => css`
+const horizontalFlow = ({ alignItems }: Props) => css`
     flex-direction: row;
     align-items: ${alignItems === 'top' ? 'flex-start' : alignItems === 'bottom' ? 'flex-end' : 'center'};
     justify-content: ${alignItems === 'left' ? 'flex-start' : alignItems === 'right' ? 'flex-end' : 'center'};
@@ -22,29 +23,21 @@ const borderLeft = (separatorColor: string) => css`
     border-left: 1px solid ${separatorColor};
 `;
 
-const applyBorder = ({ separator, flowDirection, separatorColor }: Partial<Props & CardTheme>) =>
-    separator &&
-    css`
-        > div + div {
-            ${flowDirection === 'vertical' ? borderTop(separatorColor) : borderLeft(separatorColor)}
-        }
-    `;
-
-const solid = ({ solidBgColor, solidTextColor }: Partial<CardTheme>) => css`
-    border-color: ${solidBgColor};
-    background-color: ${solidBgColor};
-    && {
-        * {
-            color: ${solidTextColor};
-            background-color: ${solidBgColor};
-        }
+const applyBorder = ({ separator, flowDirection, separatorColor }: Partial<Props & CardTheme>) => css`
+    > div + div {
+        ${flowDirection === 'vertical' ? borderTop(separatorColor) : borderLeft(separatorColor)}
     }
 `;
 
-const outlined = ({ borderColor, shadowColor }: Partial<CardTheme>) => css`
-    border-radius: 4px;
-    border: 1px solid ${borderColor};
-    box-shadow: 0 2px 4px 0 ${shadowColor};
+const solid = ({ backgroundColor, shadowColor }: Partial<CardTheme>) => css`
+    border-radius: 0.8rem;
+    background-color: ${backgroundColor};
+    box-shadow: 0 0.2rem 0.8rem ${rgba(shadowColor, 0.2)};
+    && {
+        * {
+            background-color: ${backgroundColor};
+        }
+    }
 `;
 
 const flat = () => css`
@@ -60,42 +53,34 @@ const flat = () => css`
     }
 `;
 
-const clickable = (props: Partial<CardTheme>) => css`
+const clickable = ({ shadowColor }: Partial<CardTheme>) => css`
     cursor: pointer;
 
     :hover {
-        ${solid(props)}
-    }
-
-    :active {
-        box-shadow: none;
+        box-shadow: 0 0.4rem 0.8rem ${rgba(shadowColor, 0.6)};
     }
 `;
 
 export const Card = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<Props>`
-    display: inline-flex;
-    align-self: stretch;
-    margin: 5px;
     overflow: auto;
-    flex: ${({ flex }) => flex};
     box-sizing: border-box;
-    background-color: ${({ bgColor }) => bgColor};
-    padding: ${({ withPadding }) => withPadding && '10px'};
+    flex: ${({ flex }) => flex};
+    display: ${({ display, fullWidth }) => (fullWidth ? display : `inline-${display}`)};
+    padding: ${({ withoutPadding }) => !withoutPadding && '2.4rem'};
+    width: ${({ fullWidth }) => fullWidth && '100%'};
+    height: ${({ fullHeight }) => fullHeight && '100%'};
+    min-width: ${({ minWidth }) => minWidth};
+    min-height: ${({ minHeight }) => minHeight};
 
-    ${({ alignItems, flowDirection }) => (flowDirection === 'vertical' ? verticalFlow(alignItems) : horizontalFlow(alignItems))}
+    && {
+        * {
+            color: ${({ textColor }) => textColor};
+        }
+    }
 
-    ${outlined};
-    ${({ variant }) => variant === 'flat' && flat()};
-    ${props => props.variant === 'solid' && solid(props)};
-
-    ${props => props.fullWidth && fullWidth('10px')};
-    ${props => props.fullHeight && fullHeight('10px')};
-
-    ${props => applyBorder(props)}
-
-    ${props => props.clickable && clickable(props)}
+    ${props => (props.variant === 'solid' ? solid : flat)};
+    ${props => props.separator && applyBorder}
+    ${props => props.onClick && clickable}
+    ${({ flowDirection }) => flowDirection === 'vertical' && verticalFlow}
+    ${({ flowDirection }) => flowDirection === 'horizontal' && horizontalFlow}
 `;
-
-Card.defaultProps = {
-    theme: defaultTheme
-};
