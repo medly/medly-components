@@ -44,6 +44,13 @@ exports[`CardTable should render properly with grey background 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  overflow: hidden;
+}
+
+.c10 .c5 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .c9 {
@@ -245,6 +252,7 @@ exports[`CardTable should render properly with grey background 1`] = `
         >
           <span
             class="c5 c11"
+            title="Oli Bob"
           >
             Oli Bob
           </span>
@@ -254,6 +262,7 @@ exports[`CardTable should render properly with grey background 1`] = `
         >
           <span
             class="c5 c11"
+            title="Metaformin"
           >
             Metaformin
           </span>
@@ -308,6 +317,13 @@ exports[`CardTable should render properly with white background 1`] = `
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  overflow: hidden;
+}
+
+.c10 .c5 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .c9 {
@@ -509,6 +525,7 @@ exports[`CardTable should render properly with white background 1`] = `
         >
           <span
             class="c5 c11"
+            title="Oli Bob"
           >
             Oli Bob
           </span>
@@ -518,6 +535,7 @@ exports[`CardTable should render properly with white background 1`] = `
         >
           <span
             class="c5 c11"
+            title="Metaformin"
           >
             Metaformin
           </span>

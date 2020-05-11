@@ -9,7 +9,7 @@ export const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
         { component: Component, align } = column;
 
     const FormattedCell = useMemo(
-        () => (Component ? <Component {...{ data, rowId, disabled: isRowClickDisabled }} /> : <Text>{data}</Text>),
+        () => (Component ? <Component {...{ data, rowId, disabled: isRowClickDisabled }} /> : <Text title={data}>{data}</Text>),
         [data, rowId, isRowClickDisabled, Component]
     );
 
