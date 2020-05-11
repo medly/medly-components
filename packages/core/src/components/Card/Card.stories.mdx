@@ -6,7 +6,7 @@ import { withKnobs, text, color, select, boolean } from '@storybook/addon-knobs'
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { variants, display, itemsPosition, flowDirection, ThemeInterface } from './Card.stories';
 
-<Meta title="Core" component={Card} />
+<Meta title="Core" component={Card} parameters={{ jest: ['Card.test.tsx'] }} />
 
 # Card
 

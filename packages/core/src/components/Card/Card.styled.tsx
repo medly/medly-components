@@ -23,7 +23,7 @@ const borderLeft = (separatorColor: string) => css`
     border-left: 1px solid ${separatorColor};
 `;
 
-const applyBorder = ({ separator, flowDirection, separatorColor }: Partial<Props & CardTheme>) => css`
+const applyBorder = ({ flowDirection, separatorColor }: Partial<Props & CardTheme>) => css`
     > div + div {
         ${flowDirection === 'vertical' ? borderTop(separatorColor) : borderLeft(separatorColor)}
     }
