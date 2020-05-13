@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.24](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.0-beta.23...@medly-components/icons@1.0.0-beta.24) (2020-05-13)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
 # [1.0.0-beta.23](https://github.com/medlypharmacy/medly-components/compare/@medly-components/icons@1.0.0-beta.22...@medly-components/icons@1.0.0-beta.23) (2020-05-04)
 
 **Note:** Version bump only for package @medly-components/icons

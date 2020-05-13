@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.31](https://github.com/medly/medly-components/compare/@medly-components/layout@1.0.0-beta.30...@medly-components/layout@1.0.0-beta.31) (2020-05-13)
+
+
+### Features
+
+* **core:** add transition in the card component ([d991f78](https://github.com/medly/medly-components/commit/d991f78fe79fa9285894509127d35add6bda52a6))
+
+
+
+
+
 # [1.0.0-beta.30](https://github.com/medlypharmacy/medly-components/compare/@medly-components/layout@1.0.0-beta.29...@medly-components/layout@1.0.0-beta.30) (2020-05-04)
 
 

@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.30](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.29...@medly-components/core@1.0.0-beta.30) (2020-05-13)
+
+
+### Bug Fixes
+
+* **core:** fix column width issue in the card table ([c16b1f3](https://github.com/medly/medly-components/commit/c16b1f37cd65b2667f8467e24c413934368b650f))
+* **core:** fix lint issue ([256b3ca](https://github.com/medly/medly-components/commit/256b3ca2d0bab9ba0a5738908b8a4d4c99e8e500))
+* **core:** fix text overflow issue in card table cell ([914a86e](https://github.com/medly/medly-components/commit/914a86e2aca4d19c0434223346f3e348c5ad44fc))
+* **core:** update card component style ([1053c0b](https://github.com/medly/medly-components/commit/1053c0b2e43658162aef1e9c0a61dd22a3485812))
+
+
+### Features
+
+* **core:** add no result row to cards table ([d3a66bd](https://github.com/medly/medly-components/commit/d3a66bd7f1afcf06647ceab73b190facd34e40c7))
+* **core:** add transition in the card component ([d991f78](https://github.com/medly/medly-components/commit/d991f78fe79fa9285894509127d35add6bda52a6))
+* **core:** change column config key name from sort to sortable ([cb5325a](https://github.com/medly/medly-components/commit/cb5325a27860c44be3deb02d0bbad6238f844624))
+
+
+
+
+
 # [1.0.0-beta.29](https://github.com/medlypharmacy/medly-components/compare/@medly-components/core@1.0.0-beta.28...@medly-components/core@1.0.0-beta.29) (2020-05-04)
 
 
