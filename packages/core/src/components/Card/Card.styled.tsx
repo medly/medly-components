@@ -71,6 +71,7 @@ export const Card = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<
     height: ${({ fullHeight }) => fullHeight && '100%'};
     min-width: ${({ minWidth }) => minWidth};
     min-height: ${({ minHeight }) => minHeight};
+    transition: all 100ms ease-out;
 
     && {
         * {
