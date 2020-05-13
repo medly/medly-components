@@ -4,3 +4,4 @@ coverage/
 packages/**/dist
 .DS_Store
 .jest-test-results.json
+.out/

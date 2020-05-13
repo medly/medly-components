@@ -3,13 +3,83 @@
 exports[`Modal component should not render when open prop is falsy 1`] = `<div />`;
 
 exports[`Modal component should render properly when it is open 1`] = `
+.c6 {
+  z-index: 10;
+  padding: 2.4rem 1.6rem 0;
+}
+
+.c2 {
+  font-size: 2.4rem;
+  cursor: pointer;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.c2 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c3 {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  border-radius: 50%;
+  padding: 4px;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: #eff2f4;
+}
+
+.c3 * {
+  fill: #13181D;
+}
+
+.c3:hover {
+  background-color: #1A6BF0;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.c3:hover * {
+  fill: #ffffff;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: scroll;
+  padding: 0 1.6rem;
+}
+
+.c5::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.c5::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.c5::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #b0bcc8;
+}
+
+.c4 {
+  z-index: 10;
+  color: #13181D;
+  padding: 0 1.6rem 1.6rem;
+}
+
 .c0 {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(67,84,101,0.65);
   z-index: 1000;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -25,139 +95,12 @@ exports[`Modal component should render properly when it is open 1`] = `
   align-items: center;
 }
 
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.c8 > * {
-  margin-left: 10px;
-}
-
-.c7 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  margin-bottom: 1.6rem;
-}
-
-.c6 {
-  font-size: 2.4rem;
-  cursor: inherit;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-}
-
-.c6 * {
-  fill-opacity: 1;
-  fill: #607890;
-}
-
-.c3 {
-  border: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
-  border-radius: 0.8rem;
-  background: transparent;
-  color: #005AEE;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c3:hover {
-  cursor: pointer;
-}
-
-.c3:focus {
-  outline: none;
-}
-
-.c3:disabled {
-  cursor: not-allowed;
-}
-
-.c3 .c5 * {
-  fill: #005AEE;
-}
-
-.c3:hover {
-  color: #1A6BF0;
-}
-
-.c3:hover .c5 * {
-  fill: #1A6BF0;
-}
-
-.c3:disabled {
-  color: #b0bcc8;
-}
-
-.c3 .c5 + .sc-AykKG {
-  margin-left: 0.8rem;
-}
-
-.c3 .sc-AykKG + .c5 {
-  margin-left: 0.8rem;
-}
-
-.c4 {
-  padding: 0;
-  margin-right: -24px;
-}
-
-.c2 {
-  color: #012040;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 1.6rem;
-}
-
 .c1 {
-  background: #eff2f4;
-  padding: 3.2rem 6.4rem;
-  border-radius: 5px;
-  max-width: 80%;
-  max-height: 80%;
+  background: #ffffff;
+  padding: 4.8rem 3.2rem;
+  border-radius: 2.4rem;
   overflow: hidden;
-  overflow-y: auto;
+  overflow-y: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -165,8 +108,24 @@ exports[`Modal component should render properly when it is open 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-width: 200px;
+  max-height: 80%;
+  position: relative;
   min-height: 200px;
+  box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
+}
+
+@media (min-width:768px) and (max-width:1439px) {
+  .c1 {
+    max-width: 72%;
+    min-width: 200px;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    min-width: 200px;
+    max-width: 103.6rem;
+  }
 }
 
 <div>
@@ -178,41 +137,38 @@ exports[`Modal component should render properly when it is open 1`] = `
       class="c1"
       id="medly-modal-popup"
     >
+      <svg
+        class="c2 c3"
+        fill="none"
+        height="1em"
+        id="medly-modal-close-button"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+          fill="#000"
+          fill-opacity=".54"
+        />
+      </svg>
       <div
-        class="c2"
+        class="c4"
+        id="medly-modal-header"
       >
         <p>
           Demo Header
         </p>
-        <button
-          class="c3 c4"
-          color="default"
-          id="medly-modal-close-button"
-          type="button"
-        >
-          <svg
-            class="c5 c6"
-            fill="none"
-            height="1em"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
-              fill="#000"
-              fill-opacity=".54"
-            />
-          </svg>
-        </button>
       </div>
       <div
-        class="c7"
+        class="c5"
+        id="medly-modal-content"
       >
-        Demo Content
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
       </div>
       <div
-        class="c8"
+        class="c6"
+        id="medly-modal-actions"
       >
         Demo Actions
       </div>

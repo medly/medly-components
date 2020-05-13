@@ -1,5 +1,7 @@
 export interface ModalTheme {
+    overlayColor: string;
+    shadowColor: string;
     headerColor: string;
-    bgColor: string;
-    borderColor: string;
+    backgroundColor: string;
+    scrollbarThumbColor: string;
 }

@@ -1,33 +1,39 @@
-import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback, useEffect } from 'react';
-import CloseModalContext from './CloseModalContext';
+import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
+import React, { SFC, useEffect, useReducer } from 'react';
+import Actions from './Actions';
+import CloseIcon from './CloseIcon';
+import Content from './Content';
+import Header from './Header';
 import { ModalBackgroundStyled } from './Modal.styled';
-import ModalActions from './ModalActions';
-import ModalContent from './ModalContent';
-import ModalHeader from './ModalHeader';
-import ModalPopup from './ModalPopup';
+import Popup from './Popup';
+import { reducer } from './scrollStateReducer';
 import { ModalStaticProps, Props } from './types';
 
 export const Modal: SFC<Props> & WithStyle & ModalStaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const { open, onCloseModal, children, minWidth, minHeight, ...restProps } = props,
-            id = restProps.id || 'medly-modal';
-
-        const handleEscPress = useCallback((e: any) => e.keyCode === 27 && onCloseModal(), []);
+            id = restProps.id || 'medly-modal',
+            enterPress = useKeyPress('Escape'),
+            modalRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
+            [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false });
 
         useEffect(() => {
-            document.addEventListener('keydown', handleEscPress);
-            return () => document.removeEventListener('keydown', handleEscPress);
-        }, []);
+            enterPress && onCloseModal();
+        }, [enterPress]);
 
         return (
             open && (
-                <ModalBackgroundStyled {...restProps} id={id} onClick={onCloseModal}>
-                    <CloseModalContext.Provider value={onCloseModal}>
-                        <ModalPopup ref={ref} id={`${id}-popup`} {...{ minWidth, minHeight }}>
-                            {children}
-                        </ModalPopup>
-                    </CloseModalContext.Provider>
+                <ModalBackgroundStyled {...{ ...restProps, id }} onClick={onCloseModal}>
+                    <Popup ref={modalRef} id={`${id}-popup`} {...{ minWidth, minHeight }}>
+                        <CloseIcon id={`${id}-close-button`} onClick={onCloseModal} />
+                        {React.Children.map(children, (child: any) =>
+                            React.cloneElement(child as any, {
+                                scrollState,
+                                dispatch,
+                                id
+                            })
+                        )}
+                    </Popup>
                 </ModalBackgroundStyled>
             )
         );
@@ -39,8 +45,8 @@ Modal.defaultProps = {
 };
 Modal.displayName = 'Modal';
 Modal.Style = ModalBackgroundStyled;
-Modal.Header = ModalHeader;
-Modal.Popup = ModalPopup;
-Modal.Header = ModalHeader;
-Modal.Content = ModalContent;
-Modal.Actions = ModalActions;
+Modal.Header = Header;
+Modal.Popup = Popup;
+Modal.Header = Header;
+Modal.Content = Content;
+Modal.Actions = Actions;

@@ -1,5 +1,5 @@
 import { HTMLProps, WithStyle, WithThemeProp } from '@medly-components/utils';
-import { Props as ModalPopupProps } from './ModalPopup/types';
+import { Props as ModalPopupProps } from './Popup/types';
 
 export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
     /** Shows modal only when this prop is true */

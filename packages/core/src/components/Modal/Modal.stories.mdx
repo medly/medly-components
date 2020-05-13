@@ -2,16 +2,16 @@ import { Modal } from './Modal';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Modal.stories';
 
-<Meta title="Core" component={Modal} />
+<Meta title="Core" component={Modal} parameters={{ jest: ['Modal.test.tsx'] }} />
 
 # Modal
 
-### Basic Modal
+Basic modal component. You can play with the component in the canvas tab.
 
 Modal consists of three sections Header, Content and Actions. All of these you can directly use from Modal component only like bellow . . .
 
 ```typescript
-<Modal open onCloseModal={changeModalState(false)}>
+<Modal open={openState} onCloseModal={changeModalState(false)}>
     <Modal.Header>Add User</Modal.Header>
     <Modal.Content>
         <Input id="name-input" type="text" fullWidth label="Name" placeholder="Enter your Name" />
@@ -21,6 +21,8 @@ Modal consists of three sections Header, Content and Actions. All of these you c
     </Modal.Actions>
 </Modal>
 ```
+
+Shadow will apear on the Header & Actions section if you scroll the content.
 
 <Preview withToolbar>
     <Story name="Modal">{stories.Basic()}</Story>
