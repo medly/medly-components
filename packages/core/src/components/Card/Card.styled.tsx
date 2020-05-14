@@ -38,6 +38,9 @@ const solid = ({ backgroundColor, shadowColor }: Partial<CardTheme>) => css`
             background-color: ${backgroundColor};
         }
     }
+    &:hover {
+        box-shadow: 0 0.4rem 0.8rem ${rgba(shadowColor, 0.6)};
+    }
 `;
 
 const flat = () => css`
@@ -53,14 +56,6 @@ const flat = () => css`
     }
 `;
 
-const clickable = ({ shadowColor }: Partial<CardTheme>) => css`
-    cursor: pointer;
-
-    :hover {
-        box-shadow: 0 0.4rem 0.8rem ${rgba(shadowColor, 0.6)};
-    }
-`;
-
 export const Card = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<Props>`
     overflow: auto;
     box-sizing: border-box;
@@ -73,15 +68,15 @@ export const Card = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<
     min-height: ${({ minHeight }) => minHeight};
     transition: all 100ms ease-out;
 
-    && {
+    & {
         * {
             color: ${({ textColor }) => textColor};
+            cursor:  ${props => props.onClick && 'pointer'};     
         }
     }
 
     ${props => (props.variant === 'solid' ? solid : flat)};
     ${props => props.separator && applyBorder}
-    ${props => props.onClick && clickable}
     ${({ flowDirection }) => flowDirection === 'vertical' && verticalFlow}
     ${({ flowDirection }) => flowDirection === 'horizontal' && horizontalFlow}
 `;
