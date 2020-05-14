@@ -15,7 +15,7 @@ export const Content: React.SFC<Props> & WithStyle = React.memo(({ id, scrollSta
         e.stopPropagation();
         const element = e.target as HTMLElement,
             isScrolledToTop = element.scrollTop === 0,
-            isScrolledToBottom = Math.round(element.scrollTop + element.clientHeight) === element.scrollHeight;
+            isScrolledToBottom = Math.ceil(element.scrollTop + element.clientHeight) === element.scrollHeight;
 
         scrollState.scrolledToTop !== isScrolledToTop && dispatch({ type: 'scrolledToTop', value: isScrolledToTop });
         scrollState.scrolledToBottom !== isScrolledToBottom && dispatch({ type: 'scrolledToBottom', value: isScrolledToBottom });
