@@ -1,5 +1,1 @@
-import { NoResult, Row } from './Row.styled';
-
-export default Row;
-
-export { NoResult };
+export { Row as default } from './Row.styled';

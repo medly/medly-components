@@ -3,7 +3,8 @@ import Text from '../../Text';
 import Cell from '../Cell';
 import { GroupCell } from '../GroupCell';
 import { getGridTemplateColumns } from '../helpers';
-import Row, { NoResult } from '../Row';
+import Row from '../Row';
+import { NoResult } from '../Row/Row.styled';
 import { ColumnConfig } from '../types';
 import { Props } from './types';
 

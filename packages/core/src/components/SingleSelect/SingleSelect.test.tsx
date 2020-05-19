@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, wait } from '@test-utils';
+import { cleanup, fireEvent, render, waitFor } from '@test-utils';
 import React from 'react';
 import { SingleSelect } from './SingleSelect';
 import { SelectProps } from './types';
@@ -183,7 +183,7 @@ describe('SingleSelect component', () => {
         fireEvent.click(inputEl);
         fireEvent.blur(inputEl);
         expect(mockOnBlur).toHaveBeenCalled();
-        await wait(() => expect(container.querySelector('#medly-singleSelect-options')).toBeNull(), { timeout: 200 });
+        await waitFor(() => expect(container.querySelector('#medly-singleSelect-options')).toBeNull(), { timeout: 200 });
     });
 
     it('should handle builtin form validation', () => {

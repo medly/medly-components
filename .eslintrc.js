@@ -26,13 +26,22 @@ module.exports = {
         'prettier/@typescript-eslint'
     ],
     rules: {
-        'arrow-parens': ['error', 'as-needed'],
-        'react-hooks/rules-of-hooks': 'error',
-        'react-hooks/exhaustive-deps': 'off',
-        'react/jsx-no-bind': 'warn',
-        'react/prop-types': 'off',
-        '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/ban-ts-ignore': 'off',
-        '@typescript-eslint/explicit-function-return-type': 'off'
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
+        'arrow-parens': ['error', 'as-needed'],
+        'no-param-reassign': 'error',
+        'no-undef': 'error',
+        'no-var': 'error',
+        'prefer-const': 'error',
+        'react-hooks/exhaustive-deps': 'off',
+        'react-hooks/rules-of-hooks': 'error',
+        'react/prop-types': 'off',
+        'react/jsx-no-bind': [
+            'error',
+            {
+                allowArrowFunctions: true
+            }
+        ]
     }
 };

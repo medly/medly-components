@@ -1,0 +1,18 @@
+name: Lint, Build, Test
+on: [push, pull_request]
+jobs:
+    lint-build-test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v1
+            - name: Setup Node.js
+              uses: actions/setup-node@v1
+              with:
+                  node-version: '12.x'
+            - name: Install dependencies
+              run: yarn
+            - name: Build Packages
+              run: yarn build
+            - name: Run Tests
+              run: yarn test

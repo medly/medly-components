@@ -12,17 +12,10 @@
         "access": "public"
     },
     "license": "MIT",
-    "scripts": {
-        "build": "run-s build:js build:types",
-        "build:js": "cross-env BABEL_ENV=production rollup -c",
-        "build:types": "tsc -p tsconfig.build.json",
-        "prebuild": "tsc -p tsconfig.json && rimraf dist",
-        "watch": "run-p \"build:types -w\" \"build:js --watch\""
-    },
     "peerDependencies": {
-        "react": "16.8.6",
-        "react-dom": "^16.8.6",
-        "styled-components": "^4.2.0"
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "styled-components": "^5.1.0"
     },
     "dependencies": {
         "@medly-components/core": "1.0.0-beta.30",

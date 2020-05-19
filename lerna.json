@@ -3,7 +3,8 @@
     "allowBranch": ["master", "feature/*"],
     "command": {
         "publish": {
-            "conventionalCommits": true
+            "conventionalCommits": true,
+            "yes": true
         }
     },
     "npmClient": "yarn",
