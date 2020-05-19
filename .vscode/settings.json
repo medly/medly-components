@@ -8,13 +8,14 @@
     "eslint.validate": ["html", "javascript", "javascriptreact", "typescript", "typescriptreact"],
     "cSpell.words": ["Medly"],
     "files.exclude": {
-        // ".yarnrc": true,
+        ".yarnrc": true,
+        ".yarn/": true,
         ".jest-test-results.json": true,
         "commitlint.config.js": true,
         "coverage": true,
         "node_modules/": true,
-        // "packages/**/dist/": true,
-        // "packages/**/node_modules/": true,
+        "packages/**/dist/": true,
+        "packages/**/node_modules/": true,
         "yarn.lock": true
     }
 }
