@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.20](https://github.com/medly/medly-components/compare/@medly-components/theme@1.0.0-beta.19...@medly-components/theme@1.0.0-beta.20) (2020-05-19)
+
+
+### Bug Fixes
+
+* fix card content background color ([4b7f86b](https://github.com/medly/medly-components/commit/4b7f86b7ddb6b0fbe7c2badbcef3fec5db0e1c82))
+
+
+
+
+
 # [1.0.0-beta.19](https://github.com/medly/medly-components/compare/@medly-components/theme@1.0.0-beta.18...@medly-components/theme@1.0.0-beta.19) (2020-05-13)
 
 

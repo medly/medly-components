@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.32](https://github.com/medly/medly-components/compare/@medly-components/layout@1.0.0-beta.31...@medly-components/layout@1.0.0-beta.32) (2020-05-19)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 # [1.0.0-beta.31](https://github.com/medly/medly-components/compare/@medly-components/layout@1.0.0-beta.30...@medly-components/layout@1.0.0-beta.31) (2020-05-13)
 
 
