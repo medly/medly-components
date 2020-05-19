@@ -67,7 +67,7 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
   color: #1A6BF0;
 }
 
-.c0 .c1:hover .sc-AykKC * {
+.c0 .c1:hover .sc-AxjAm * {
   fill: #1A6BF0;
 }
 
@@ -82,7 +82,7 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
   color: #435465;
 }
 
-.c0 .sc-AykKC {
+.c0 .sc-AxjAm {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
@@ -90,7 +90,7 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
   padding-left: 0.4rem;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #435465;
 }
 
@@ -184,7 +184,7 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
   color: #1A6BF0;
 }
 
-.c0 .c1:hover .sc-AykKC * {
+.c0 .c1:hover .sc-AxjAm * {
   fill: #1A6BF0;
 }
 
@@ -199,7 +199,7 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
   color: #435465;
 }
 
-.c0 .sc-AykKC {
+.c0 .sc-AxjAm {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
@@ -207,7 +207,7 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
   padding-left: 0.4rem;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #435465;
 }
 
@@ -301,7 +301,7 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
   color: #1A6BF0;
 }
 
-.c0 .c1:hover .sc-AykKC * {
+.c0 .c1:hover .sc-AxjAm * {
   fill: #1A6BF0;
 }
 
@@ -316,7 +316,7 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
   color: #435465;
 }
 
-.c0 .sc-AykKC {
+.c0 .sc-AxjAm {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
@@ -324,7 +324,7 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
   padding-left: 0.4rem;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #435465;
 }
 
@@ -702,7 +702,7 @@ exports[`Card Table HeadCell should render properly with dark background and dro
   color: #1A6BF0;
 }
 
-.c0 .c1:hover .sc-AykKC * {
+.c0 .c1:hover .sc-AxjAm * {
   fill: #1A6BF0;
 }
 
@@ -717,7 +717,7 @@ exports[`Card Table HeadCell should render properly with dark background and dro
   color: #435465;
 }
 
-.c0 .sc-AykKC {
+.c0 .sc-AxjAm {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   width: 2.4rem;
@@ -725,7 +725,7 @@ exports[`Card Table HeadCell should render properly with dark background and dro
   padding-left: 0.4rem;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #435465;
 }
 

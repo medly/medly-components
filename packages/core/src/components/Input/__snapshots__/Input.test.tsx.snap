@@ -54,7 +54,7 @@ exports[`Input component should render correctly when fullWidth & required props
   grid-template-areas: 'label field' 'random description';
 }
 
-.c0 .sc-AykKE {
+.c0 .sc-AxiKw {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -160,7 +160,7 @@ exports[`Input component should render correctly when fullWidth & required props
       Email Address
     </label>
     <div
-      class="sc-AykKE c3"
+      class="sc-AxiKw c3"
     >
       <input
         class="c4"
@@ -191,7 +191,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   grid-template-areas: 'field' 'description';
 }
 
-.c0 .sc-AykKE {
+.c0 .sc-AxiKw {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -292,7 +292,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   >
     
     <div
-      class="sc-AykKE c1"
+      class="sc-AxiKw c1"
     >
       <input
         class="c2"
@@ -320,7 +320,7 @@ exports[`Input component should render correctly when label and description are 
   grid-template-areas: 'field' 'description';
 }
 
-.c0 .sc-AykKE {
+.c0 .sc-AxiKw {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -421,7 +421,7 @@ exports[`Input component should render correctly when label and description are 
   >
     
     <div
-      class="sc-AykKE c1"
+      class="sc-AxiKw c1"
     >
       <input
         class="c2"
@@ -493,7 +493,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   grid-template-areas: 'label' 'field' 'description';
 }
 
-.c0 .sc-AykKE {
+.c0 .sc-AxiKw {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -606,7 +606,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
       Email Address
     </label>
     <div
-      class="sc-AykKE c3"
+      class="sc-AxiKw c3"
     >
       <span
         class="c4"

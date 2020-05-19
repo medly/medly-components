@@ -137,7 +137,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'label field' 'random description';
 }
 
-.c1 .sc-AykKG {
+.c1 .sc-AxhUy {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -163,7 +163,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'field' 'description';
 }
 
-.c11 .sc-AykKG {
+.c11 .sc-AxhUy {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -266,7 +266,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   flex-direction: column-reverse;
 }
 
-.c4 .sc-fzXfLR {
+.c4 .sc-fzplWN {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -375,7 +375,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
         >
           
           <div
-            class="sc-AykKG c12"
+            class="sc-AxhUy c12"
           >
             <input
               autocomplete="off"
@@ -441,7 +441,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'field' 'description';
 }
 
-.c1 .sc-AykKG {
+.c1 .sc-AxhUy {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -467,7 +467,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .sc-AykKG {
+.c4 .sc-AxhUy {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -570,7 +570,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   flex-direction: column-reverse;
 }
 
-.c2 .sc-fzXfLR {
+.c2 .sc-fzplWN {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -649,7 +649,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
         >
           
           <div
-            class="sc-AykKG c5"
+            class="sc-AxhUy c5"
           >
             <input
               autocomplete="off"
@@ -821,7 +821,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   grid-template-areas: 'label field' 'random description';
 }
 
-.c1 .sc-AykKG {
+.c1 .sc-AxhUy {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -847,7 +847,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   grid-template-areas: 'field' 'description';
 }
 
-.c11 .sc-AykKG {
+.c11 .sc-AxhUy {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -950,7 +950,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   flex-direction: column-reverse;
 }
 
-.c4 .sc-fzXfLR {
+.c4 .sc-fzplWN {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -1059,7 +1059,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
         >
           
           <div
-            class="sc-AykKG c12"
+            class="sc-AxhUy c12"
           >
             <input
               autocomplete="off"
@@ -1125,7 +1125,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   grid-template-areas: 'field' 'description';
 }
 
-.c1 .sc-AykKG {
+.c1 .sc-AxhUy {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1151,7 +1151,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .sc-AykKG {
+.c4 .sc-AxhUy {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1254,7 +1254,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   flex-direction: column-reverse;
 }
 
-.c2 .sc-fzXfLR {
+.c2 .sc-fzplWN {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -1333,7 +1333,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
         >
           
           <div
-            class="sc-AykKG c5"
+            class="sc-AxhUy c5"
           >
             <input
               autocomplete="off"

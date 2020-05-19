@@ -63,17 +63,17 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   color: #566c82;
 }
 
-.c3 .sc-AykKF,
+.c3 .sc-AxhCb,
 .c3 .c9 {
   color: #566c82;
 }
 
-.c3 .sc-AykKF *,
+.c3 .sc-AxhCb *,
 .c3 .c9 * {
   fill: #566c82;
 }
 
-.c3 ~ .sc-AykKD {
+.c3 ~ .sc-AxirZ {
   color: #566c82;
 }
 
@@ -110,15 +110,15 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   color: #005AEE;
 }
 
-.c3:focus-within .sc-AykKF,
-.c3:focus-within:hover .sc-AykKF,
+.c3:focus-within .sc-AxhCb,
+.c3:focus-within:hover .sc-AxhCb,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
   color: #005AEE;
 }
 
-.c3:focus-within .sc-AykKF *,
-.c3:focus-within:hover .sc-AykKF *,
+.c3:focus-within .sc-AxhCb *,
+.c3:focus-within:hover .sc-AxhCb *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #005AEE;
@@ -394,17 +394,17 @@ exports[`SingleSelect component should render properly when isSearchable is true
   color: #566c82;
 }
 
-.c3 .sc-AykKF,
+.c3 .sc-AxhCb,
 .c3 .c9 {
   color: #566c82;
 }
 
-.c3 .sc-AykKF *,
+.c3 .sc-AxhCb *,
 .c3 .c9 * {
   fill: #566c82;
 }
 
-.c3 ~ .sc-AykKD {
+.c3 ~ .sc-AxirZ {
   color: #566c82;
 }
 
@@ -441,15 +441,15 @@ exports[`SingleSelect component should render properly when isSearchable is true
   color: #005AEE;
 }
 
-.c3:focus-within .sc-AykKF,
-.c3:focus-within:hover .sc-AykKF,
+.c3:focus-within .sc-AxhCb,
+.c3:focus-within:hover .sc-AxhCb,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
   color: #005AEE;
 }
 
-.c3:focus-within .sc-AykKF *,
-.c3:focus-within:hover .sc-AykKF *,
+.c3:focus-within .sc-AxhCb *,
+.c3:focus-within:hover .sc-AxhCb *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #005AEE;
@@ -731,17 +731,17 @@ exports[`SingleSelect component with filled variant should render disabled state
   color: #566c82;
 }
 
-.c3 .sc-AykKF,
+.c3 .sc-AxhCb,
 .c3 .c9 {
   color: #566c82;
 }
 
-.c3 .sc-AykKF *,
+.c3 .sc-AxhCb *,
 .c3 .c9 * {
   fill: #566c82;
 }
 
-.c3 ~ .sc-AykKD {
+.c3 ~ .sc-AxirZ {
   color: #566c82;
 }
 
@@ -780,17 +780,17 @@ exports[`SingleSelect component with filled variant should render disabled state
   color: #b0bcc8;
 }
 
-.c3 .sc-AykKF,
+.c3 .sc-AxhCb,
 .c3 .c9 {
   color: #b0bcc8;
 }
 
-.c3 .sc-AykKF *,
+.c3 .sc-AxhCb *,
 .c3 .c9 * {
   fill: #b0bcc8;
 }
 
-.c3 ~ .sc-AykKD {
+.c3 ~ .sc-AxirZ {
   color: #b0bcc8;
 }
 
@@ -1023,20 +1023,20 @@ exports[`SingleSelect component with filled variant should render error text pro
   margin-left: 1.6rem;
 }
 
-.c5 .sc-AykKF,
+.c5 .sc-AxhCb,
 .c5 .c1 {
   color: #566c82;
 }
 
-.c5 .sc-AykKF *,
+.c5 .sc-AxhCb *,
 .c5 .c1 * {
   fill: #566c82;
 }
 
-.c5 .sc-AykKF,
-.c5:hover .sc-AykKF,
-.c5:focus-within .sc-AykKF,
-.c5:focus-within:hover .sc-AykKF,
+.c5 .sc-AxhCb,
+.c5:hover .sc-AxhCb,
+.c5:focus-within .sc-AxhCb,
+.c5:focus-within:hover .sc-AxhCb,
 .c5 .c1,
 .c5:hover .c1,
 .c5:focus-within .c1,
@@ -1044,10 +1044,10 @@ exports[`SingleSelect component with filled variant should render error text pro
   color: #cc0000;
 }
 
-.c5 .sc-AykKF *,
-.c5:hover .sc-AykKF *,
-.c5:focus-within .sc-AykKF *,
-.c5:focus-within:hover .sc-AykKF *,
+.c5 .sc-AxhCb *,
+.c5:hover .sc-AxhCb *,
+.c5:focus-within .sc-AxhCb *,
+.c5:focus-within:hover .sc-AxhCb *,
 .c5 .c1 *,
 .c5:hover .c1 *,
 .c5:focus-within .c1 *,
@@ -1297,17 +1297,17 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   color: #566c82;
 }
 
-.c3 .sc-AykKF,
+.c3 .sc-AxhCb,
 .c3 .c9 {
   color: #566c82;
 }
 
-.c3 .sc-AykKF *,
+.c3 .sc-AxhCb *,
 .c3 .c9 * {
   fill: #566c82;
 }
 
-.c3 ~ .sc-AykKD {
+.c3 ~ .sc-AxirZ {
   color: #566c82;
 }
 
@@ -1344,15 +1344,15 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   color: #005AEE;
 }
 
-.c3:focus-within .sc-AykKF,
-.c3:focus-within:hover .sc-AykKF,
+.c3:focus-within .sc-AxhCb,
+.c3:focus-within:hover .sc-AxhCb,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
   color: #005AEE;
 }
 
-.c3:focus-within .sc-AykKF *,
-.c3:focus-within:hover .sc-AykKF *,
+.c3:focus-within .sc-AxhCb *,
+.c3:focus-within:hover .sc-AxhCb *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #005AEE;
@@ -1632,17 +1632,17 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   color: #607890;
 }
 
-.c3 .sc-AykKF,
+.c3 .sc-AxhCb,
 .c3 .c9 {
   color: #607890;
 }
 
-.c3 .sc-AykKF *,
+.c3 .sc-AxhCb *,
 .c3 .c9 * {
   fill: #607890;
 }
 
-.c3 ~ .sc-AykKD {
+.c3 ~ .sc-AxirZ {
   color: #566c82;
 }
 
@@ -1668,17 +1668,17 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   color: #b0bcc8;
 }
 
-.c3 .sc-AykKF,
+.c3 .sc-AxhCb,
 .c3 .c9 {
   color: #b0bcc8;
 }
 
-.c3 .sc-AykKF *,
+.c3 .sc-AxhCb *,
 .c3 .c9 * {
   fill: #b0bcc8;
 }
 
-.c3 ~ .sc-AykKD {
+.c3 ~ .sc-AxirZ {
   color: #b0bcc8;
 }
 
@@ -1911,20 +1911,20 @@ exports[`SingleSelect component with outlined variant should render error text p
   margin-left: 1.6rem;
 }
 
-.c5 .sc-AykKF,
+.c5 .sc-AxhCb,
 .c5 .c1 {
   color: #607890;
 }
 
-.c5 .sc-AykKF *,
+.c5 .sc-AxhCb *,
 .c5 .c1 * {
   fill: #607890;
 }
 
-.c5 .sc-AykKF,
-.c5:hover .sc-AykKF,
-.c5:focus-within .sc-AykKF,
-.c5:focus-within:hover .sc-AykKF,
+.c5 .sc-AxhCb,
+.c5:hover .sc-AxhCb,
+.c5:focus-within .sc-AxhCb,
+.c5:focus-within:hover .sc-AxhCb,
 .c5 .c1,
 .c5:hover .c1,
 .c5:focus-within .c1,
@@ -1932,10 +1932,10 @@ exports[`SingleSelect component with outlined variant should render error text p
   color: #cc0000;
 }
 
-.c5 .sc-AykKF *,
-.c5:hover .sc-AykKF *,
-.c5:focus-within .sc-AykKF *,
-.c5:focus-within:hover .sc-AykKF *,
+.c5 .sc-AxhCb *,
+.c5:hover .sc-AxhCb *,
+.c5:focus-within .sc-AxhCb *,
+.c5:focus-within:hover .sc-AxhCb *,
 .c5 .c1 *,
 .c5:hover .c1 *,
 .c5:focus-within .c1 *,
@@ -2186,17 +2186,17 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   color: #607890;
 }
 
-.c3 .sc-AykKF,
+.c3 .sc-AxhCb,
 .c3 .c9 {
   color: #607890;
 }
 
-.c3 .sc-AykKF *,
+.c3 .sc-AxhCb *,
 .c3 .c9 * {
   fill: #607890;
 }
 
-.c3 ~ .sc-AykKD {
+.c3 ~ .sc-AxirZ {
   color: #566c82;
 }
 
@@ -2220,15 +2220,15 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   color: #005AEE;
 }
 
-.c3:focus-within .sc-AykKF,
-.c3:focus-within:hover .sc-AykKF,
+.c3:focus-within .sc-AxhCb,
+.c3:focus-within:hover .sc-AxhCb,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
   color: #005AEE;
 }
 
-.c3:focus-within .sc-AykKF *,
-.c3:focus-within:hover .sc-AykKF *,
+.c3:focus-within .sc-AxhCb *,
+.c3:focus-within:hover .sc-AxhCb *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #005AEE;

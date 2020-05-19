@@ -54,7 +54,7 @@ exports[`Button component should render properly with "M" size 1`] = `
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #ffffff;
 }
 
@@ -69,11 +69,11 @@ exports[`Button component should render properly with "M" size 1`] = `
   background: #dfe4e9;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -146,7 +146,7 @@ exports[`Button component should render properly with "S" size 1`] = `
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #ffffff;
 }
 
@@ -161,11 +161,11 @@ exports[`Button component should render properly with "S" size 1`] = `
   background: #dfe4e9;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -238,7 +238,7 @@ exports[`Button component should render properly with "circle" edges 1`] = `
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #ffffff;
 }
 
@@ -253,11 +253,11 @@ exports[`Button component should render properly with "circle" edges 1`] = `
   background: #dfe4e9;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -330,7 +330,7 @@ exports[`Button component should render properly with "flat" variant and "confir
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #008000;
 }
 
@@ -338,7 +338,7 @@ exports[`Button component should render properly with "flat" variant and "confir
   color: #1A8D1A;
 }
 
-.c0:hover .sc-AykKC * {
+.c0:hover .sc-AxjAm * {
   fill: #1A8D1A;
 }
 
@@ -346,11 +346,11 @@ exports[`Button component should render properly with "flat" variant and "confir
   color: #b0bcc8;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -423,7 +423,7 @@ exports[`Button component should render properly with "flat" variant and "defaul
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #005AEE;
 }
 
@@ -431,7 +431,7 @@ exports[`Button component should render properly with "flat" variant and "defaul
   color: #1A6BF0;
 }
 
-.c0:hover .sc-AykKC * {
+.c0:hover .sc-AxjAm * {
   fill: #1A6BF0;
 }
 
@@ -439,11 +439,11 @@ exports[`Button component should render properly with "flat" variant and "defaul
   color: #b0bcc8;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -516,7 +516,7 @@ exports[`Button component should render properly with "flat" variant and "error"
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #cc0000;
 }
 
@@ -524,7 +524,7 @@ exports[`Button component should render properly with "flat" variant and "error"
   color: #D11A1A;
 }
 
-.c0:hover .sc-AykKC * {
+.c0:hover .sc-AxjAm * {
   fill: #D11A1A;
 }
 
@@ -532,11 +532,11 @@ exports[`Button component should render properly with "flat" variant and "error"
   color: #b0bcc8;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -609,7 +609,7 @@ exports[`Button component should render properly with "flat" variant should rend
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #ffffff;
 }
 
@@ -624,11 +624,11 @@ exports[`Button component should render properly with "flat" variant should rend
   background: #dfe4e9;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -703,7 +703,7 @@ exports[`Button component should render properly with "outlined" variant and "co
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #008000;
 }
 
@@ -713,7 +713,7 @@ exports[`Button component should render properly with "outlined" variant and "co
   box-shadow: 0 0.4rem 0.8rem rgba(0,128,0,0.35);
 }
 
-.c0:hover .sc-AykKC * {
+.c0:hover .sc-AxjAm * {
   fill: #1A8D1A;
 }
 
@@ -723,15 +723,15 @@ exports[`Button component should render properly with "outlined" variant and "co
   border-color: #b0bcc8;
 }
 
-.c0:disabled .sc-AykKC * {
+.c0:disabled .sc-AxjAm * {
   fill: #b0bcc8;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -805,7 +805,7 @@ exports[`Button component should render properly with "outlined" variant and "de
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #005AEE;
 }
 
@@ -815,7 +815,7 @@ exports[`Button component should render properly with "outlined" variant and "de
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
 }
 
-.c0:hover .sc-AykKC * {
+.c0:hover .sc-AxjAm * {
   fill: #1A6BF0;
 }
 
@@ -825,15 +825,15 @@ exports[`Button component should render properly with "outlined" variant and "de
   border-color: #b0bcc8;
 }
 
-.c0:disabled .sc-AykKC * {
+.c0:disabled .sc-AxjAm * {
   fill: #b0bcc8;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -907,7 +907,7 @@ exports[`Button component should render properly with "outlined" variant and "er
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #cc0000;
 }
 
@@ -917,7 +917,7 @@ exports[`Button component should render properly with "outlined" variant and "er
   box-shadow: 0 0.4rem 0.8rem rgba(204,0,0,0.35);
 }
 
-.c0:hover .sc-AykKC * {
+.c0:hover .sc-AxjAm * {
   fill: #D11A1A;
 }
 
@@ -927,15 +927,15 @@ exports[`Button component should render properly with "outlined" variant and "er
   border-color: #b0bcc8;
 }
 
-.c0:disabled .sc-AykKC * {
+.c0:disabled .sc-AxjAm * {
   fill: #b0bcc8;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -1008,7 +1008,7 @@ exports[`Button component should render properly with "outlined" variant should 
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #ffffff;
 }
 
@@ -1023,11 +1023,11 @@ exports[`Button component should render properly with "outlined" variant should 
   background: #dfe4e9;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -1101,7 +1101,7 @@ exports[`Button component should render properly with "rounded" edges 1`] = `
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #ffffff;
 }
 
@@ -1116,11 +1116,11 @@ exports[`Button component should render properly with "rounded" edges 1`] = `
   background: #dfe4e9;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -1193,7 +1193,7 @@ exports[`Button component should render properly with "solid" variant and "confi
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #ffffff;
 }
 
@@ -1208,11 +1208,11 @@ exports[`Button component should render properly with "solid" variant and "confi
   background: #dfe4e9;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -1285,7 +1285,7 @@ exports[`Button component should render properly with "solid" variant and "defau
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #ffffff;
 }
 
@@ -1300,11 +1300,11 @@ exports[`Button component should render properly with "solid" variant and "defau
   background: #dfe4e9;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -1377,7 +1377,7 @@ exports[`Button component should render properly with "solid" variant and "error
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #ffffff;
 }
 
@@ -1392,11 +1392,11 @@ exports[`Button component should render properly with "solid" variant and "error
   background: #dfe4e9;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -1469,7 +1469,7 @@ exports[`Button component should render properly with "solid" variant should ren
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #ffffff;
 }
 
@@ -1484,11 +1484,11 @@ exports[`Button component should render properly with "solid" variant should ren
   background: #dfe4e9;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -1562,7 +1562,7 @@ exports[`Button component should render properly with "square" edges 1`] = `
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #ffffff;
 }
 
@@ -1577,11 +1577,11 @@ exports[`Button component should render properly with "square" edges 1`] = `
   background: #dfe4e9;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 
@@ -1890,7 +1890,7 @@ exports[`Button component should wrap children into Text component when renderin
   cursor: not-allowed;
 }
 
-.c0 .sc-AykKC * {
+.c0 .sc-AxjAm * {
   fill: #ffffff;
 }
 
@@ -1905,11 +1905,11 @@ exports[`Button component should wrap children into Text component when renderin
   background: #dfe4e9;
 }
 
-.c0 .sc-AykKC + .c1 {
+.c0 .sc-AxjAm + .c1 {
   margin-left: 0.8rem;
 }
 
-.c0 .c1 + .sc-AykKC {
+.c0 .c1 + .sc-AxjAm {
   margin-left: 0.8rem;
 }
 

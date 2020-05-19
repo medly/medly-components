@@ -202,17 +202,17 @@ exports[`Calendar Component should render given date 1`] = `
   color: #566c82;
 }
 
-.c10 .sc-AykKI,
+.c10 .sc-AxheI,
 .c10 .c17 {
   color: #566c82;
 }
 
-.c10 .sc-AykKI *,
+.c10 .sc-AxheI *,
 .c10 .c17 * {
   fill: #566c82;
 }
 
-.c10 ~ .sc-AykKG {
+.c10 ~ .sc-AxhUy {
   color: #566c82;
 }
 
@@ -249,15 +249,15 @@ exports[`Calendar Component should render given date 1`] = `
   color: #005AEE;
 }
 
-.c10:focus-within .sc-AykKI,
-.c10:focus-within:hover .sc-AykKI,
+.c10:focus-within .sc-AxheI,
+.c10:focus-within:hover .sc-AxheI,
 .c10:focus-within .c17,
 .c10:focus-within:hover .c17 {
   color: #005AEE;
 }
 
-.c10:focus-within .sc-AykKI *,
-.c10:focus-within:hover .sc-AykKI *,
+.c10:focus-within .sc-AxheI *,
+.c10:focus-within:hover .sc-AxheI *,
 .c10:focus-within .c17 *,
 .c10:focus-within:hover .c17 * {
   fill: #005AEE;

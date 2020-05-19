@@ -42,7 +42,7 @@ exports[`Toast should render properly if child jsx 1`] = `
   background-color: #CCE6CC;
 }
 
-.c0 .sc-AykKD {
+.c0 .sc-AxirZ {
   color: #012040;
   margin: 0 10px;
 }
