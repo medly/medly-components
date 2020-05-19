@@ -39,14 +39,6 @@ exports[`Card component should render correctly with all the default props 1`] =
   align-items: center;
 }
 
-.c0 * {
-  color: #435465;
-}
-
-.c0.c0 * {
-  background-color: #ffffff;
-}
-
 .c0:hover {
   box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
 }
@@ -104,14 +96,6 @@ exports[`Card component should render properly when flow direction is horizontal
   justify-content: center;
 }
 
-.c0 * {
-  color: #435465;
-}
-
-.c0.c0 * {
-  background-color: #ffffff;
-}
-
 .c0:hover {
   box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
 }
@@ -144,14 +128,6 @@ exports[`Card component should render properly when flow direction is horizontal
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-}
-
-.c1 * {
-  color: #435465;
-}
-
-.c1.c1 * {
-  background-color: #ffffff;
 }
 
 .c1:hover {
@@ -188,14 +164,6 @@ exports[`Card component should render properly when flow direction is horizontal
   justify-content: flex-end;
 }
 
-.c3 * {
-  color: #435465;
-}
-
-.c3.c3 * {
-  background-color: #ffffff;
-}
-
 .c3:hover {
   box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
 }
@@ -230,14 +198,6 @@ exports[`Card component should render properly when flow direction is horizontal
   justify-content: center;
 }
 
-.c4 * {
-  color: #435465;
-}
-
-.c4.c4 * {
-  background-color: #ffffff;
-}
-
 .c4:hover {
   box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
 }
@@ -270,14 +230,6 @@ exports[`Card component should render properly when flow direction is horizontal
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c5 * {
-  color: #435465;
-}
-
-.c5.c5 * {
-  background-color: #ffffff;
 }
 
 .c5:hover {
@@ -388,14 +340,6 @@ exports[`Card component should render properly when fullWidth and fullHeight is 
   align-items: center;
 }
 
-.c0 * {
-  color: #435465;
-}
-
-.c0.c0 * {
-  background-color: #ffffff;
-}
-
 .c0:hover {
   box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
 }
@@ -454,12 +398,7 @@ exports[`Card component should render properly when it is clickable  1`] = `
 }
 
 .c0 * {
-  color: #435465;
   cursor: pointer;
-}
-
-.c0.c0 * {
-  background-color: #ffffff;
 }
 
 .c0:hover {
@@ -518,14 +457,6 @@ exports[`Card component should render properly when separator is set true flow d
   align-items: flex-start;
 }
 
-.c0 * {
-  color: #435465;
-}
-
-.c0.c0 * {
-  background-color: #ffffff;
-}
-
 .c0:hover {
   box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
 }
@@ -562,14 +493,6 @@ exports[`Card component should render properly when separator is set true flow d
   align-items: flex-start;
 }
 
-.c1 * {
-  color: #435465;
-}
-
-.c1.c1 * {
-  background-color: transparent;
-}
-
 .c3 {
   overflow: auto;
   box-sizing: border-box;
@@ -596,14 +519,6 @@ exports[`Card component should render properly when separator is set true flow d
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
-}
-
-.c3 * {
-  color: #435465;
-}
-
-.c3.c3 * {
-  background-color: transparent;
 }
 
 .c4 {
@@ -634,14 +549,6 @@ exports[`Card component should render properly when separator is set true flow d
   align-items: center;
 }
 
-.c4 * {
-  color: #435465;
-}
-
-.c4.c4 * {
-  background-color: transparent;
-}
-
 .c5 {
   overflow: auto;
   box-sizing: border-box;
@@ -668,14 +575,6 @@ exports[`Card component should render properly when separator is set true flow d
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c5 * {
-  color: #435465;
-}
-
-.c5.c5 * {
-  background-color: transparent;
 }
 
 <div>
@@ -768,14 +667,6 @@ exports[`Card component should render properly with "flat" variant 1`] = `
   align-items: center;
 }
 
-.c0 * {
-  color: #435465;
-}
-
-.c0.c0 * {
-  background-color: transparent;
-}
-
 <div>
   <div
     class="c0"
@@ -827,14 +718,6 @@ exports[`Card component should render properly with "solid" variant 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c0 * {
-  color: #435465;
-}
-
-.c0.c0 * {
-  background-color: #ffffff;
 }
 
 .c0:hover {
@@ -892,14 +775,6 @@ exports[`Card component should render properly with display "block" 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c0 * {
-  color: #435465;
-}
-
-.c0.c0 * {
-  background-color: #ffffff;
 }
 
 .c0:hover {
@@ -960,14 +835,6 @@ exports[`Card component should render properly with display "flex" 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c0 * {
-  color: #435465;
-}
-
-.c0.c0 * {
-  background-color: #ffffff;
 }
 
 .c0:hover {

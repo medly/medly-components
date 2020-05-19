@@ -33,11 +33,6 @@ const solid = ({ backgroundColor, shadowColor }: Partial<CardTheme>) => css`
     border-radius: 0.8rem;
     background-color: ${backgroundColor};
     box-shadow: 0 0.2rem 0.8rem ${rgba(shadowColor, 0.2)};
-    && {
-        * {
-            background-color: ${backgroundColor};
-        }
-    }
     &:hover {
         box-shadow: 0 0.4rem 0.8rem ${rgba(shadowColor, 0.6)};
     }
@@ -49,11 +44,6 @@ const flat = () => css`
     border: none;
     box-shadow: none;
     background-color: transparent;
-    && {
-        * {
-            background-color: transparent;
-        }
-    }
 `;
 
 export const Card = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<Props>`
@@ -70,7 +60,6 @@ export const Card = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<
 
     & {
         * {
-            color: ${({ textColor }) => textColor};
             cursor:  ${props => props.onClick && 'pointer'};     
         }
     }

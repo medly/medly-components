@@ -140,14 +140,6 @@ exports[`Calendar Component should render given date 1`] = `
   align-items: center;
 }
 
-.c0 * {
-  color: #435465;
-}
-
-.c0.c0 * {
-  background-color: #ffffff;
-}
-
 .c0:hover {
   box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
 }
