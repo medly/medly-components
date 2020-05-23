@@ -1,5 +1,5 @@
 import { CheckIcon } from '@medly-components/icons';
-import { fireEvent, render, waitForElement } from '@test-utils';
+import { fireEvent, render } from '@test-utils';
 import React from 'react';
 import { TextField } from './TextField';
 import { Props } from './types';
@@ -58,26 +58,24 @@ describe('TextField', () => {
     describe('with builtin form validation', () => {
         it('should render html5 error message on invalid form submission', async () => {
             const mockOnInvalid = jest.fn(),
-                { container, getByText } = render(
+                { container, findByText } = render(
                     <TextField withBuiltInValidation label="Name" required type="email" onInvalid={mockOnInvalid} />
                 );
             fireEvent.invalid(container.querySelector('input'));
-            const message = await waitForElement(() => container.querySelector('#medly-textField-helper-text'));
+            const message = await findByText('Constraints not satisfied');
             expect(message).toBeInTheDocument();
-            expect(getByText('Constraints not satisfied')).toBeInTheDocument();
             expect(mockOnInvalid).toHaveBeenCalled();
         });
 
         it('should render html5 error message on moving focus out with invalid value', async () => {
             const mockOnBlur = jest.fn(),
-                { container, getByText } = render(
+                { container, findByText } = render(
                     <TextField withBuiltInValidation label="Name" required type="email" value="a" onBlur={mockOnBlur} />
                 );
             fireEvent.focus(container.querySelector('input'));
             fireEvent.blur(container.querySelector('input'));
-            const message = await waitForElement(() => container.querySelector('#medly-textField-helper-text'));
+            const message = await findByText('Constraints not satisfied');
             expect(message).toBeInTheDocument();
-            expect(getByText('Constraints not satisfied')).toBeInTheDocument();
             expect(mockOnBlur).toHaveBeenCalled();
         });
     });

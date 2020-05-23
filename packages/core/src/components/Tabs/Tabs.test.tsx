@@ -1,4 +1,4 @@
-import { fireEvent, render, waitForElement } from '@test-utils';
+import { fireEvent, render } from '@test-utils';
 import React from 'react';
 import Tab from './Tab';
 import { Tabs } from './Tabs';
@@ -24,8 +24,8 @@ describe('Tabs', () => {
     });
 
     it('should hide the tab if hide prop is given', async () => {
-        const { container } = render(
-            <Tabs defaultActive="tab1">
+        const { queryByText } = render(
+            <Tabs defaultActive="tab2">
                 <Tab id="tab1" label="Add" hide>
                     Content for the add panel
                 </Tab>
@@ -34,11 +34,11 @@ describe('Tabs', () => {
                 </Tab>
             </Tabs>
         );
-        expect(container).toMatchSnapshot();
+        expect(queryByText('Content for the add panel')).toBeNull();
     });
 
     it('should select expected tab on click on any tab, when only defaultActive prop is given', async () => {
-        const { container, getByText } = render(
+        const { getByText, queryByText } = render(
             <Tabs defaultActive="tab1">
                 <Tab id="tab1" label="Add">
                     Content for the add panel
@@ -49,8 +49,7 @@ describe('Tabs', () => {
             </Tabs>
         );
         fireEvent.click(getByText('Edit'));
-        await waitForElement(() => getByText('Content for the edit panel'));
-        expect(container).toMatchSnapshot();
+        expect(queryByText('Content for the edit panel')).toBeInTheDocument();
     });
 
     it('should call onChange prop with expected tab id', () => {
