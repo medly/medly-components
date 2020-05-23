@@ -26,7 +26,7 @@
         "lint:ts": "eslint 'packages/**/src/**/*.{ts,tsx}'",
         "lint": "run-p -c lint:*",
         "prebuild": "yarn typecheck && rimraf packages/*/dist",
-        "prerelease": "yarn build && yarn test",
+        "prerelease": "yarn lint && yarn build && yarn test",
         "prestorybook:build": "yarn test:generate-output",
         "prestorybook:deploy": "yarn test:generate-output",
         "release": "cross-env HUSKY_BYPASS=true lerna publish",
