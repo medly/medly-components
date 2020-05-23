@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.33](https://github.com/medly/medly-components/compare/@medly-components/layout@1.0.0-beta.32...@medly-components/layout@1.0.0-beta.33) (2020-05-23)
+
+
+### Bug Fixes
+
+* **layout:** fix sidenav text opacity issue when we continuously hide and open sidenav ([5ca3ad6](https://github.com/medly/medly-components/commit/5ca3ad6ed540f258475309e96779ac757357cd9a))
+
+
+
+
+
 # [1.0.0-beta.32](https://github.com/medly/medly-components/compare/@medly-components/layout@1.0.0-beta.31...@medly-components/layout@1.0.0-beta.32) (2020-05-19)
 
 **Note:** Version bump only for package @medly-components/layout
