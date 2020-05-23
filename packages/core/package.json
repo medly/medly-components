@@ -19,9 +19,9 @@
     },
     "dependencies": {
         "@datepicker-react/styled": "^2.3.0",
-        "@medly-components/icons": "^1.0.0-beta.25",
-        "@medly-components/theme": "^1.0.0-beta.20",
-        "@medly-components/utils": "^1.0.0-beta.22",
+        "@medly-components/icons": "1.0.0-beta.25",
+        "@medly-components/theme": "1.0.0-beta.20",
+        "@medly-components/utils": "1.0.0-beta.22",
         "polished": "^3.6.2"
     },
     "devDependencies": {

@@ -2,6 +2,9 @@
     "access": "public",
     "allowBranch": ["master", "feature/*"],
     "command": {
+        "version": {
+            "exact": true
+        },
         "publish": {
             "conventionalCommits": true,
             "yes": true
