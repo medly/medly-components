@@ -7,9 +7,9 @@ import * as Styled from './MedlySidenavHeader.styled';
 import { Props } from './types';
 
 export const MedlySidenavHeader: SFC<Props> & WithStyle = React.memo(({ companyLogo: Logo, companyName: Name }) => {
-    const { isHovered } = useContext(SideNavContext);
+    const { isHovered, isExpanded } = useContext(SideNavContext);
     return (
-        <Styled.SidenavHeader as="div" isHovered={isHovered}>
+        <Styled.SidenavHeader as="div" isHovered={isHovered} isExpanded={isExpanded}>
             <Logo />
             <Name />
         </Styled.SidenavHeader>

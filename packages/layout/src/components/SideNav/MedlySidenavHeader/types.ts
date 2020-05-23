@@ -7,4 +7,5 @@ export interface Props {
 
 export interface HeaderStyledProps {
     isHovered?: boolean;
+    isExpanded?: boolean;
 }

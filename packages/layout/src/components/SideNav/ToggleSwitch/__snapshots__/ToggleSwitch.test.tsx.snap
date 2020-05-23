@@ -44,8 +44,8 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   -ms-user-select: none;
   user-select: none;
   min-height: 4.8rem;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
   cursor: pointer;
   border-radius: 0 calc(4.8rem / 2) calc(4.8rem / 2) 0;
   border-color: #ffffff;
@@ -60,8 +60,8 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: opacity 200ms;
-  transition: opacity 200ms;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
   opacity: 1;
   font-weight: 600;
   color: #607890;
@@ -206,8 +206,8 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   -ms-user-select: none;
   user-select: none;
   min-height: 4.8rem;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
   cursor: pointer;
   border-radius: 0 calc(4.8rem / 2) calc(4.8rem / 2) 0;
   border-color: #ffffff;
@@ -222,8 +222,8 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: opacity 200ms;
-  transition: opacity 200ms;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
   opacity: 1;
   font-weight: 600;
   color: #607890;
@@ -368,8 +368,8 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   -ms-user-select: none;
   user-select: none;
   min-height: 4.8rem;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
   cursor: pointer;
   border-radius: 0 calc(4.8rem / 2) calc(4.8rem / 2) 0;
   border-color: #ffffff;
@@ -384,8 +384,8 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: opacity 200ms;
-  transition: opacity 200ms;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
   opacity: 1;
   font-weight: 600;
   color: #607890;

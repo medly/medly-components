@@ -69,7 +69,7 @@ export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ .
     overflow: hidden;
     user-select: none;
     min-height: ${({ navItemMinHeight }) => navItemMinHeight};
-    transition: all 100ms linear;
+    transition: all 200ms ease-out;
     cursor: pointer;
 
     ${SvgIcon} {
@@ -81,13 +81,13 @@ export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ .
         text-overflow: ellipsis;
         white-space: nowrap;
         justify-self: left;
-        transition: opacity 200ms;
-        opacity: ${({ isHovered }) => (isHovered ? 1 : 0)};
+        transition: all 200ms ease-out;
+        opacity: ${({ isHovered, isExpanded }) => (isHovered || isExpanded ? 1 : 0)};
         font-weight: ${({ theme }) => theme.font.weights.Medium};
         color: ${({ isActive, navItemColors }) => (isActive ? navItemColors.active.textColor : navItemColors.default.textColor)};
     }
 
-    ${props => (props.isHovered ? openNavStyle(props) : closeNavStyle(props))};
+    ${props => (props.isHovered || props.isExpanded ? openNavStyle(props) : closeNavStyle(props))};
 `;
 
 NavItemStyled.defaultProps = {

@@ -19,7 +19,7 @@ export const SidenavHeader = styled('div')<HeaderStyledProps>`
         justify-self: left;
         transform: translateX(-1rem);
         transition: opacity 200ms;
-        opacity: ${({ isHovered }) => (isHovered ? 1 : 0)};
+        opacity: ${({ isHovered, isExpanded }) => (isHovered || isExpanded ? 1 : 0)};
     }
 
     &::after {

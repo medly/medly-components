@@ -13,5 +13,6 @@ export interface NavItemProps extends HTMLProps<HTMLLIElement> {
 export interface NavItemStyledProps extends HTMLProps<HTMLLIElement>, WithThemeProp, SideNavTheme {
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
     isHovered?: boolean;
+    isExpanded?: boolean;
     isActive?: boolean;
 }

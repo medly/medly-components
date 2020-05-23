@@ -20,7 +20,7 @@ describe('Medly sidenav header', () => {
     it('should render properly when it is not hovered', () => {
         const { container } = render(
             <SidenavContext.Provider
-                value={{ activeItem: 'dummy', isHovered: false, isExpanded: true, activeItemChangeHandler: () => null }}
+                value={{ activeItem: 'dummy', isHovered: false, isExpanded: false, activeItemChangeHandler: () => null }}
             >
                 <MedlySidenavHeader />
             </SidenavContext.Provider>

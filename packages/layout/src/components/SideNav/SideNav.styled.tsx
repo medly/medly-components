@@ -4,6 +4,7 @@ import { SideNavStyledProps } from './types';
 
 export const Aside = styled(SidePanel)<SideNavStyledProps>`
     position: inherit;
+    transition: width 200ms ease-out;
     width: ${({ isExpanded, theme }) => (isExpanded ? theme.sideNav.openSize : theme.sideNav.closeSize)};
     box-shadow: ${({ isHovered, isExpanded }) => (isHovered && !isExpanded ? 'none' : `0.2rem 0 8px rgba(96, 120, 144, 0.2) `)};
 `;
@@ -13,9 +14,9 @@ export const Nav = styled('nav')<SideNavStyledProps>`
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
-    transition: width 200ms, box-shadow 200ms;
+    transition: width 200ms ease-out, box-shadow 200ms ease-out;
     background-color: ${({ theme }) => theme.sideNav.bgColor};
-    padding-right: ${({ isHovered, theme }) => (isHovered ? theme.spacing.S4 : 0)};
-    width: ${({ isHovered, theme }) => (isHovered ? theme.sideNav.openSize : theme.sideNav.closeSize)};
+    padding-right: ${({ isHovered, isExpanded, theme }) => (isHovered || isExpanded ? theme.spacing.S4 : 0)};
+    width: ${({ isHovered, isExpanded, theme }) => (isHovered || isExpanded ? theme.sideNav.openSize : theme.sideNav.closeSize)};
     box-shadow: ${({ isExpanded, isHovered }) => (!isExpanded && isHovered ? `0.2rem 0 1.6rem #B0BCC8` : 'none')};
 `;

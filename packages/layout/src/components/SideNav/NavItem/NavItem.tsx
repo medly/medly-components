@@ -5,7 +5,7 @@ import { NavItemStyled } from './NavItem.styled';
 import { NavItemProps } from './types';
 
 export const NavItem: SFC<NavItemProps> & WithStyle = props => {
-    const { activeItem, activeItemChangeHandler, isHovered } = useContext(SideNavContext),
+    const { activeItem, activeItemChangeHandler, isHovered, isExpanded } = useContext(SideNavContext),
         { path, onClick, to, ...restProps } = props;
 
     const isActive = useMemo(() => path === activeItem || to === activeItem, [to, path, activeItem]),
@@ -18,7 +18,7 @@ export const NavItem: SFC<NavItemProps> & WithStyle = props => {
             [onClick, path]
         );
 
-    return <NavItemStyled {...{ ...restProps, isHovered, isActive }} onClick={onClickHandler} />;
+    return <NavItemStyled {...{ ...restProps, isHovered, isExpanded, isActive }} onClick={onClickHandler} />;
 };
 
 NavItem.displayName = 'NavItem';
