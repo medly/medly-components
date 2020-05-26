@@ -1,0 +1,17 @@
+import { Form } from './Form.tsx';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, color, select } from '@storybook/addon-knobs';
+import { testSchema } from './testSchema.ts';
+
+<Meta title="Forms" component={Form} />
+
+# Avatar
+
+Displays an image or text that represents a user or organization
+
+<Preview withToolbar>
+    <Story name="Form" parameters={{ decorators: [withKnobs] }}>
+        <Form schema={testSchema} actionLabel="Upload" />
+    </Story>
+</Preview>

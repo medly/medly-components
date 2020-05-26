@@ -1,4 +1,5 @@
 import { DateRangeInput, OnDatesChangeProps } from '@datepicker-react/styled';
+import { format } from 'date-fns';
 import React, { SFC, useCallback, useMemo, useState } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import { DateRangePickerStyled } from './DateRangePicker.styled';
@@ -17,6 +18,7 @@ export const DateRangePicker: SFC<Props> = React.memo(props => {
         placement,
         minSelectableDate,
         maxSelectableDate,
+        displayFormat,
         ...restProps
     } = props;
 
@@ -33,7 +35,8 @@ export const DateRangePicker: SFC<Props> = React.memo(props => {
                 onChange && onChange({ startDate, endDate });
             },
             [onChange]
-        );
+        ),
+        formatFn = useCallback((date: Date) => format(date, displayFormat), [displayFormat]);
 
     return (
         <FieldWithLabel {...{ labelPosition, fullWidth, minWidth }}>
@@ -46,6 +49,7 @@ export const DateRangePicker: SFC<Props> = React.memo(props => {
                 <DateRangeInput
                     {...dates}
                     {...restProps}
+                    displayFormat={formatFn}
                     onDatesChange={handleDateChange}
                     showClose={false}
                     onFocusChange={setShowDatepicker}
@@ -62,6 +66,7 @@ export const DateRangePicker: SFC<Props> = React.memo(props => {
 
 DateRangePicker.displayName = 'DateRangePicker';
 DateRangePicker.defaultProps = {
+    displayFormat: 'MM/dd/yyyy',
     placement: 'bottom-start',
     labelPosition: 'left',
     fullWidth: false,

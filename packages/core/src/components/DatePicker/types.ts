@@ -12,7 +12,7 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     /** Placeholder for the input */
     placeholder?: string;
     /** Date display format */
-    displayFormat:
+    displayFormat?:
         | 'dd/MM/yyyy'
         | 'dd/yyyy/MM'
         | 'MM/dd/yyyy'

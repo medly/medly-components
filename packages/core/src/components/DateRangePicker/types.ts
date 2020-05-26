@@ -5,7 +5,7 @@ import { Placement } from '../Popover/PopoverWrapper/types';
 
 type PickerProps = Omit<
     GetComponentProps<typeof DateRangeInput>,
-    'onFocusChange' | 'onDatesChange' | 'startDate' | 'endDate' | 'focusedInput' | 'placement'
+    'onFocusChange' | 'onDatesChange' | 'startDate' | 'endDate' | 'focusedInput' | 'placement' | 'displayFormat'
 >;
 
 export interface Props extends PickerProps {
@@ -43,6 +43,20 @@ export interface Props extends PickerProps {
     maxSelectableDate?: Date;
     /** Function to be called on change of the dates */
     onChange: (value: { startDate: Date | null; endDate: Date | null }) => void;
+    /** Date display format */
+    displayFormat?:
+        | 'dd/MM/yyyy'
+        | 'dd/yyyy/MM'
+        | 'MM/dd/yyyy'
+        | 'MM/yyyy/dd'
+        | 'yyyy/dd/MM'
+        | 'yyyy/MM/dd'
+        | 'dd-MM-yyyy'
+        | 'dd-yyyy-MM'
+        | 'MM-dd-yyyy'
+        | 'MM-yyyy-dd'
+        | 'yyyy-dd-MM'
+        | 'yyyy-MM-dd';
 }
 
 export interface StyledProps {
