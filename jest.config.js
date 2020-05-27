@@ -42,6 +42,14 @@ module.exports = {
                 '^@test-utils': '<rootDir>/packages/utils/src/test-utils'
             },
             testMatch: ['<rootDir>/packages/icons/src/icons/**/*.(spec|test).(ts|tsx)']
+        },
+        {
+            displayName: 'forms',
+            setupFilesAfterEnv: ['<rootDir>/jest.setupAfterEnv.js'],
+            moduleNameMapper: {
+                '^@test-utils': '<rootDir>/packages/utils/src/test-utils'
+            },
+            testMatch: ['<rootDir>/packages/forms/src/**/*.(spec|test).(ts|tsx)']
         }
     ]
 };

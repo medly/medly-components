@@ -50,8 +50,6 @@ export const TextField: SFC<Props> & WithStyle = React.memo(
                 [onBlur, onInvalid, errorText, builtInErrorMessage]
             );
 
-        console.log('========>', restProps.value);
-
         return (
             <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth}>
                 <Styled.InnerWrapper

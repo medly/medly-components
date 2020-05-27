@@ -43,15 +43,16 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                         ...componentProps,
                         name,
                         disabled,
-                        onFocus: handlers.handleFocus(name, onfocus),
+                        onFocus: handlers.handleFocus(name, (componentProps as TextFieldProps).onFocus),
                         helperText: errorMessages[name] || (componentProps as TextFieldProps).helperText,
+                        // These two fields will be removed very soon
                         description: errorMessages[name] || (componentProps as FileInputProps).description,
                         descriptionColor: errorMessages[name] && 'red'
                     };
 
                     if (componentProps.type === 'nested') {
                         return (
-                            <>
+                            <React.Fragment key={name}>
                                 <FieldHeader textVariant="h4">{componentProps.label}</FieldHeader>
                                 <Fields
                                     values={values}
@@ -59,9 +60,9 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                                     handlers={handlers}
                                     fields={(componentProps as NestedProps).fields}
                                     addErrorMessage={addErrorMessage}
-                                    parentName={parentName ? `${parentName}.${name}` : name}
+                                    parentName={name}
                                 />
-                            </>
+                            </React.Fragment>
                         );
                     }
 
@@ -77,7 +78,7 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                                                 withBuiltInValidation
                                                 {...({
                                                     ...commonProps,
-                                                    value,
+                                                    value: value || '',
                                                     onChange: handlers.handleTextChange(name)
                                                 } as TextFieldProps)}
                                             />
@@ -89,7 +90,7 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                                                 withBuiltInValidation
                                                 {...({
                                                     ...commonProps,
-                                                    value,
+                                                    value: value || '',
                                                     onChange: handlers.handleNumberChange(name)
                                                 } as TextFieldProps)}
                                             />
@@ -163,7 +164,11 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                                             />
                                         );
 
-                                    case 'date':
+                                    case 'date': {
+                                        // console.log(
+                                        //     '===============>',
+                                        //     format(value || null, (componentProps as DateRangePickerProps).displayFormat)
+                                        // );
                                         return (
                                             <DatePicker
                                                 {...({
@@ -177,8 +182,8 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                                                 } as DatePickerProps)}
                                             />
                                         );
-
-                                    case 'date-range': {
+                                    }
+                                    case 'date-range':
                                         return (
                                             <DateRangePicker
                                                 {...{
@@ -186,7 +191,8 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                                                         ...commonProps,
                                                         value: handlers.getPeriodFromDates(
                                                             values[`${name}.startDate`],
-                                                            values[`${name}.endDate`]
+                                                            values[`${name}.endDate`],
+                                                            (componentProps as DateRangePickerProps).displayFormat
                                                         ),
                                                         onChange: handlers.handleDateRangeChange(
                                                             name,
@@ -196,7 +202,6 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                                                 }}
                                             />
                                         );
-                                    }
 
                                     default:
                                         return null;

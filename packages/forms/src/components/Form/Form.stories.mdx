@@ -12,6 +12,6 @@ Displays an image or text that represents a user or organization
 
 <Preview withToolbar>
     <Story name="Form" parameters={{ decorators: [withKnobs] }}>
-        <Form schema={testSchema} actionLabel="Upload" />
+        <Form schema={testSchema} onSubmit={values => console.log('Values==>', values)} />
     </Story>
 </Preview>

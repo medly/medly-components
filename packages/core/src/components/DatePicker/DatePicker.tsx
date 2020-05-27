@@ -32,10 +32,8 @@ export const DatePicker: React.SFC<Props> & WithStyle = React.memo(props => {
         [formattedDate, setFormattedDate] = useState('');
 
     useEffect(() => {
-        if (date) {
-            setFormattedDate(format(date, displayFormat));
-            setCalendarVisibilityState(false);
-        }
+        setFormattedDate(date ? format(date, displayFormat) : '');
+        setCalendarVisibilityState(false);
     }, [date]);
 
     const hideCalendar = useCallback(() => setCalendarVisibilityState(false), []),

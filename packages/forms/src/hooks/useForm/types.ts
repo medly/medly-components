@@ -1,3 +1,5 @@
+import { DisplayFormat } from '../../components/Fields/types';
+
 export interface Handlers {
     // Common Focus handler
     handleFocus: (name: string, onFocus: (e: any) => void) => (event: any) => void;
@@ -12,9 +14,9 @@ export interface Handlers {
     // SingleSelect change handler
     handleSingleSelectChange: (name: string) => (value: any) => void;
     // DatePicker Component
-    handleDateChange: (name: string, displayFormat: string) => (value: any) => void;
+    handleDateChange: (name: string, displayFormat: DisplayFormat) => (value: any) => void;
     // DateRangePicker Component
-    handleDateRangeChange: (name: string, displayFormat: string) => (value: any) => void;
+    handleDateRangeChange: (name: string, displayFormat: DisplayFormat) => (value: any) => void;
     // CheckboxGroup change handler
     handleCheckboxGroupChange: (name: string) => (values: any[]) => void;
     // MultiSelect change handler
@@ -24,7 +26,11 @@ export interface Handlers {
     // File input Component
     handleFileChange: (name: string, maxSize?: number, onError?: (key: string, message: string) => void) => (files: FileList) => void;
     // Common Focus handler
-    getPeriodFromDates: (startDate: string | Date, endDate: string | Date) => { startDate: Date; endDate: Date };
+    getPeriodFromDates: (
+        startDate: string | Date,
+        endDate: string | Date,
+        displayFormat: DisplayFormat
+    ) => { startDate: Date; endDate: Date };
 }
 
 export interface UseFormResult {

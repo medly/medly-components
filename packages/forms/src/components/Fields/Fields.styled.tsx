@@ -1,4 +1,4 @@
-import { Text } from '@medly-components/core/src';
+import { Text } from '@medly-components/core';
 import { styled } from '@medly-components/utils';
 import { CommonFieldProps } from './types';
 

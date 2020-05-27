@@ -1,5 +1,5 @@
 import { Button } from '@medly-components/core';
-import { WithStyle } from '@medly-components/utils/src';
+import { WithStyle } from '@medly-components/utils';
 import React, { useMemo } from 'react';
 import useForm from '../../hooks/useForm';
 import Fields from '../Fields';
@@ -12,7 +12,7 @@ export const Form: React.SFC<Props> & WithStyle = React.memo(
             formId = useMemo(() => id || 'medly-dynamic-form', [id]);
 
         return (
-            <Styled.Form id={formId} ref={ref} onSubmit={handlers.handleFormSubmit(onSubmit)} {...{ restProps }}>
+            <Styled.Form id={formId} ref={ref} onSubmit={handlers.handleFormSubmit(onSubmit)} {...restProps}>
                 <Fields
                     errorMessages={errorMessages}
                     addErrorMessage={addErrorMessage}
@@ -38,5 +38,6 @@ Form.defaultProps = {
     initialState: {},
     hideActions: false,
     disabled: false,
-    actionLabel: 'Save'
+    actionLabel: 'Save',
+    fullWidth: false
 };

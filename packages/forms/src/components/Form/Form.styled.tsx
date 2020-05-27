@@ -6,7 +6,7 @@ export const Form = styled('form')<{ fullWidth?: boolean; minWidth?: string }>`
     grid-gap: 1.6rem;
     display: ${({ fullWidth }) => (fullWidth ? 'grid' : 'inline-grid')};
     width: ${({ fullWidth }) => (fullWidth ? '100%' : 'min-content')};
-    min-width: ${({ minWidth }) => minWidth || '50rem'};
+    min-width: ${({ minWidth }) => minWidth || 'fit-content'};
 `;
 
 export const Actions = styled('div')`

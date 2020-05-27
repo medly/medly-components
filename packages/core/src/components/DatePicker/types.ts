@@ -2,6 +2,20 @@ import { HTMLProps, Omit } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 import { Placement } from '../Popover/PopoverWrapper/types';
 
+export type DisplayFormat =
+    | 'dd/MM/yyyy'
+    | 'dd/yyyy/MM'
+    | 'MM/dd/yyyy'
+    | 'MM/yyyy/dd'
+    | 'yyyy/dd/MM'
+    | 'yyyy/MM/dd'
+    | 'dd-MM-yyyy'
+    | 'dd-yyyy-MM'
+    | 'MM-dd-yyyy'
+    | 'MM-yyyy-dd'
+    | 'yyyy-dd-MM'
+    | 'yyyy-MM-dd';
+
 export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onChange'> {
     /** Id for the date component */
     id?: string;
@@ -12,19 +26,7 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     /** Placeholder for the input */
     placeholder?: string;
     /** Date display format */
-    displayFormat?:
-        | 'dd/MM/yyyy'
-        | 'dd/yyyy/MM'
-        | 'MM/dd/yyyy'
-        | 'MM/yyyy/dd'
-        | 'yyyy/dd/MM'
-        | 'yyyy/MM/dd'
-        | 'dd-MM-yyyy'
-        | 'dd-yyyy-MM'
-        | 'MM-dd-yyyy'
-        | 'MM-yyyy-dd'
-        | 'yyyy-dd-MM'
-        | 'yyyy-MM-dd';
+    displayFormat?: DisplayFormat;
     /** Disable date selection */
     disabled?: boolean;
     /** To be used when it is required in any form */

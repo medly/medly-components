@@ -9,8 +9,8 @@ import {
     RadioGroup,
     SingleSelect,
     TextField
-} from '@medly-components/core/src';
-import { GetComponentProps } from '@medly-components/utils/src';
+} from '@medly-components/core';
+import { GetComponentProps } from '@medly-components/utils';
 import { HTMLProps } from 'react';
 import { Handlers } from '../../hooks/useForm/types';
 
@@ -46,6 +46,8 @@ export type NestedProps = {
         [key: string]: FieldProperties;
     };
 };
+
+export type DisplayFormat = DatePickerProps['displayFormat'];
 
 export type FieldProperties =
     | TextFieldProps

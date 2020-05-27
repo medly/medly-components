@@ -18,92 +18,89 @@ export const testSchema: Schema = {
         required: true,
         label: 'Email'
     },
-    file: {
+    resume: {
         type: 'file',
-        label: 'File',
+        label: 'Resume',
         labelPosition: 'left',
         required: true,
-        fullWidth: false,
         maxSize: 5000000,
         description: 'File size should be less than 5MB'
     },
-    active: {
-        type: 'checkbox',
-        label: 'Is Active',
-        labelPosition: 'left'
-    },
-    coveredEntity: {
+    languages: {
         type: 'checkbox-group',
-        label: 'Covered Entity',
+        label: 'Languages',
         options: [
-            { value: 'mhsc', label: 'MHSC' },
-            { value: 'zufall', label: 'Zufall' }
+            { value: 'java', label: 'JAVA' },
+            { value: 'ruby', label: 'RUBY' }
         ]
     },
-    pharmacy: {
+    role: {
         type: 'radio-group',
-        label: 'Pharmacy',
+        label: 'Role',
         options: [
-            { value: 'marg', label: 'Marg' },
-            { value: 'kala', label: 'Kala' }
+            { value: 'front-end', label: 'Front End' },
+            { value: 'back-end', label: 'Back End' },
+            { value: 'full-stack', label: 'Full Stack' }
         ]
     },
-    startDate: {
+    birthDate: {
         type: 'date',
         displayFormat: 'dd/MM/yyyy',
-        label: 'Start Date',
-        placeholder: 'Start date'
+        label: 'Birth Date',
+        placeholder: 'Birth Date'
     },
-    contract: {
+    experience: {
         type: 'date-range',
-        label: 'Contract Period'
+        displayFormat: 'dd/MM/yyyy',
+        label: 'Experience'
     },
-    wholesaler: {
+    country: {
         type: 'single-select',
-        label: 'Wholesaler',
-        placeholder: 'Please select',
+        label: 'Country',
         options: [
-            { value: 'kinray', label: 'Kinray' },
-            { value: 'cardinal', label: 'Cardinal' }
+            { value: 'india', label: 'India' },
+            { value: 'usa', label: 'USA' }
         ]
     },
-    users: {
+    graduation: {
         type: 'multi-select',
-        label: 'Users',
+        label: 'Graduation',
         options: [
-            { value: 'all', label: 'All' },
-            { value: 'john', label: 'John' }
+            { value: 'b-tech', label: 'BTech' },
+            { value: 'm-tech', label: 'MTech' }
         ]
     },
-    dispensingFee: {
+    marks: {
         type: 'nested',
-        label: 'Dispensing Fee',
+        label: 'Marks',
         labelPosition: 'left',
         fields: {
-            brand: {
+            database: {
                 type: 'number',
                 gridColumn: '1/5',
-                label: 'Brand',
-                placeholder: 'Brand',
-                fullWidth: false,
+                label: 'Database',
+                placeholder: 'Database',
                 required: true
             },
-            generic: {
+            algorithms: {
                 type: 'number',
                 gridColumn: '5/9',
-                label: 'Generic',
-                placeholder: 'Generic',
-                fullWidth: false,
+                label: 'Algorithms',
+                placeholder: 'Algorithms',
                 required: true
             },
-            specialty: {
+            maths: {
                 type: 'number',
                 gridColumn: '9/-1',
-                label: 'Specialty',
-                placeholder: 'Specialty',
-                fullWidth: false,
+                label: 'Maths',
+                placeholder: 'Maths',
                 required: true
             }
         }
+    },
+    agree: {
+        type: 'checkbox',
+        label: 'Do you Agree',
+        labelPosition: 'left'
     }
 };

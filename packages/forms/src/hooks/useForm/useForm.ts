@@ -1,6 +1,8 @@
+import { parseToDate } from '@medly-components/utils';
 import { format } from 'date-fns';
 import memoize from 'fast-memoize';
 import React, { useCallback, useState } from 'react';
+import { DisplayFormat } from '../../components/Fields/types';
 import { createDottedKeyObject, createObjectFromDottedKeys } from '../../helpers';
 import { UseFormResult } from './types';
 
@@ -13,9 +15,9 @@ export const useForm = (initialState: {}): UseFormResult => {
     }, []);
 
     const getPeriodFromDates = useCallback(
-        memoize((startDate: string | Date, endDate: string | Date) => ({
-            startDate: startDate ? (startDate instanceof Date ? startDate : new Date(startDate)) : null,
-            endDate: endDate ? (endDate instanceof Date ? endDate : new Date(endDate)) : null
+        memoize((startDate: string | Date, endDate: string | Date, displayFormat: DisplayFormat) => ({
+            startDate: startDate ? (startDate instanceof Date ? startDate : parseToDate(startDate, displayFormat || 'MM/dd/yyyy')) : null,
+            endDate: endDate ? (endDate instanceof Date ? endDate : parseToDate(endDate, displayFormat || 'MM/dd/yyyy')) : null
         })),
         []
     );
@@ -80,17 +82,17 @@ export const useForm = (initialState: {}): UseFormResult => {
 
     const handleDateChange = useCallback(
         memoize((name: string, displayFormat: string) => (value: Date | null) => {
-            setValues(val => ({ ...val, [name]: value ? format(value, displayFormat) : '' }));
+            setValues(val => ({ ...val, [name]: format(value, displayFormat || 'MM/dd/yyyy') }));
         }),
         []
     );
 
     const handleDateRangeChange = useCallback(
-        memoize((name: string, displayFormat = 'MM/dd/yyyy') => (value: { startDate: Date; endDate: Date }) => {
+        memoize((name: string, displayFormat: DisplayFormat) => (value: { startDate: Date; endDate: Date }) => {
             setValues(val => ({
                 ...val,
-                [`${name}.startDate`]: value.startDate ? format(value.startDate, displayFormat) : '',
-                [`${name}.endDate`]: value.endDate ? format(value.endDate, displayFormat) : ''
+                [`${name}.startDate`]: format(value.startDate, displayFormat || 'MM/dd/yyyy'),
+                [`${name}.endDate`]: value.endDate ? format(value.endDate, displayFormat || 'MM/dd/yyyy') : ''
             }));
         }),
         []

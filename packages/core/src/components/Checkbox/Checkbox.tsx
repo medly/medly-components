@@ -7,7 +7,19 @@ import { Props } from './types';
 
 export const Checkbox: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { size, label, required, labelPosition, labelVariant, labelWeight, labelColor, fullWidth, onChange, ...restProps } = props;
+        const {
+            id,
+            size,
+            label,
+            required,
+            labelPosition,
+            labelVariant,
+            labelWeight,
+            labelColor,
+            fullWidth,
+            onChange,
+            ...restProps
+        } = props;
 
         const changeHandler = useCallback(
             (e: any) => {
@@ -23,13 +35,13 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
                     <FieldWithLabel.Label
                         showPointer={!restProps.disabled}
                         {...{ required, labelPosition, labelVariant, labelWeight, labelColor }}
-                        htmlFor={label}
+                        htmlFor={id || label}
                     >
                         {label}
                     </FieldWithLabel.Label>
                 )}
                 <Styled.Wrapper size={size} disabled={restProps.disabled}>
-                    <Styled.Checkbox ref={ref} id={label} required={required} onChange={changeHandler} {...restProps} />
+                    <Styled.Checkbox ref={ref} id={id || label} required={required} onChange={changeHandler} {...restProps} />
                     <CheckIcon onClick={changeHandler} />
                 </Styled.Wrapper>
             </FieldWithLabel>
