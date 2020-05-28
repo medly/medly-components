@@ -33,8 +33,8 @@ export const useForm = (initialState: {}): UseFormResult => {
     const handleFormSubmit = useCallback(
         memoize((onSubmit: (values: object) => void) => (e: React.FormEvent) => {
             e.preventDefault();
-            (e.target as HTMLFormElement).reset();
             const result = createObjectFromDottedKeys(values);
+            (e.target as HTMLFormElement).reset();
             setValues({});
             setErrorMessages({});
             onSubmit && onSubmit(result);
@@ -59,16 +59,12 @@ export const useForm = (initialState: {}): UseFormResult => {
     );
 
     const handleValueChange = useCallback(
-        memoize((name: string) => (value: any) => {
-            setValues(val => ({ ...val, [name]: value }));
-        }),
+        memoize((name: string) => (value: any) => setValues(val => ({ ...val, [name]: value }))),
         []
     );
 
     const handleValuesChange = useCallback(
-        memoize((name: string) => (values: any[]) => {
-            setValues(val => ({ ...val, [name]: values }));
-        }),
+        memoize((name: string) => (values: any[]) => setValues(val => ({ ...val, [name]: values }))),
         []
     );
 

@@ -15,7 +15,9 @@ import { HTMLProps } from 'react';
 import { Handlers } from '../../hooks/useForm/types';
 
 export type CommonFieldProps = {
+    /** Grid column to render the field */
     gridColumn?: string;
+    /** Grid row to render the field */
     gridRow?: string;
 };
 
@@ -39,12 +41,16 @@ export type FileInputProps = GetComponentProps<typeof FileInput> &
         accept?: string;
     };
 export type NestedProps = {
+    /** Type to identify field type */
     type: 'nested';
-    label: string;
-    disabled?: boolean;
-    fields?: {
+    /** Nested Fields */
+    fields: {
         [key: string]: FieldProperties;
     };
+    /** Label for Field group */
+    label?: string;
+    /** This will be handled internally */
+    disabled?: boolean;
 };
 
 export type DisplayFormat = DatePickerProps['displayFormat'];

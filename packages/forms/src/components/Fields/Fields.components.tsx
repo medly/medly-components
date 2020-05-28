@@ -53,7 +53,7 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                     if (componentProps.type === 'nested') {
                         return (
                             <React.Fragment key={name}>
-                                <FieldHeader textVariant="h4">{componentProps.label}</FieldHeader>
+                                {componentProps.label && <FieldHeader textVariant="h4">{componentProps.label}</FieldHeader>}
                                 <Fields
                                     values={values}
                                     disabled={disabled}

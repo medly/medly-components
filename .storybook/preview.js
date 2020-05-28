@@ -1,4 +1,3 @@
-import '@storybook/addon-console';
 import { DocsContainer, DocsPage } from '@storybook/addon-docs/blocks';
 import { withTests } from '@storybook/addon-jest';
 import { withKnobs } from '@storybook/addon-knobs';

@@ -3,15 +3,22 @@ import { FieldProperties } from '../Fields/types';
 
 type FormProps = Omit<HTMLProps<HTMLFormElement>, 'onSubmit'>;
 
-export interface Schema {
+export interface FormSchema {
     [key: string]: FieldProperties;
 }
 export interface Props extends FormProps {
-    schema: Schema;
+    // Form Schema
+    schema: FormSchema;
+    // Function to be called on submit
+    onSubmit: (data: { [key: string]: any }) => void;
+    // Form submit button label
     actionLabel?: string;
+    // Set it to true to hide the actions
     hideActions?: boolean;
+    // Initial state of the form
     initialState?: { [key: string]: any };
-    onSubmit?: (data: { [key: string]: any }) => void;
+    // Set it true to take the full width of the parent
     fullWidth?: boolean;
+    // This key is to set the min width in px/rem/% (1rem = 10px)*/
     minWidth?: string;
 }
