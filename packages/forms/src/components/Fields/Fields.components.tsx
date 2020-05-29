@@ -44,7 +44,7 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                         name,
                         disabled,
                         onFocus: handlers.handleFocus(name, (componentProps as TextFieldProps).onFocus),
-                        helperText: errorMessages[name] || (componentProps as TextFieldProps).helperText,
+                        errorText: errorMessages[name],
                         // These two fields will be removed very soon
                         description: errorMessages[name] || (componentProps as FileInputProps).description,
                         descriptionColor: errorMessages[name] && 'red'

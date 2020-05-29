@@ -13,6 +13,8 @@ export interface Props extends FormProps {
     onSubmit: (data: { [key: string]: any }) => void;
     // Form submit button label
     actionLabel?: string;
+    // Api failure error messages (key should be aligned with the field key)
+    apiErrorMessages?: { [key: string]: any };
     // Set it to true to hide the actions
     hideActions?: boolean;
     // Initial state of the form

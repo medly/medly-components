@@ -35,30 +35,41 @@ const initialState = {
 describe('Dynamic Form', () => {
     afterEach(cleanup);
     it('should render properly without initial state', () => {
-        const { container } = render(<Form schema={testSchema} minWidth="300px" fullWidth actionLabel="Upload" />);
+        const { container } = render(<Form schema={testSchema} onSubmit={jest.fn()} minWidth="300px" fullWidth actionLabel="Upload" />);
         expect(container).toMatchSnapshot();
     });
 
     it('should render properly with initial state', () => {
-        const { container } = render(<Form schema={testSchema} initialState={initialState} />);
+        const { container } = render(<Form schema={testSchema} onSubmit={jest.fn()} initialState={initialState} />);
         expect(container).toMatchSnapshot();
     });
 
     it('should render error message properly', () => {
-        const { container, getByText } = render(<Form schema={{ firstName: { required: true, type: 'text' } }} />);
+        const { container, getByText } = render(<Form schema={{ firstName: { required: true, type: 'text' } }} onSubmit={jest.fn()} />);
         fireEvent.focus(container.querySelector('#firstName-input'));
         fireEvent.blur(container.querySelector('#firstName-input'));
         expect(getByText('Constraints not satisfied')).toBeInTheDocument();
     });
 
     it('should not any field if component type is not matched', () => {
-        const { container } = render(<Form schema={{ dummy: { type: 'wrongType' } }} />);
+        const { container } = render(<Form schema={{ dummy: { type: 'wrongType' } }} onSubmit={jest.fn()} />);
         expect(container).toMatchSnapshot();
     });
 
     it('should hide actions when hideAction props is truthy', () => {
-        const { queryByText } = render(<Form hideActions schema={testSchema} initialState={initialState} />);
+        const { queryByText } = render(<Form hideActions schema={testSchema} initialState={initialState} onSubmit={jest.fn()} />);
         expect(queryByText('Save')).toBeNull();
+    });
+
+    it('should be able to add api validation error causes', () => {
+        const { getByText } = render(
+            <Form
+                apiErrorMessages={{ firstName: 'First name should be at least 8 character' }}
+                schema={{ firstName: { required: true, type: 'text' } }}
+                onSubmit={jest.fn()}
+            />
+        );
+        expect(getByText('First name should be at least 8 character')).toBeInTheDocument();
     });
 
     describe('should call onSubmit', () => {
@@ -225,6 +236,7 @@ describe('Dynamic Form', () => {
                             onFocus: mockOnFocus
                         }
                     }}
+                    onSubmit={jest.fn()}
                     onFocus={mockOnFocus}
                 />
             );

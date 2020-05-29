@@ -1,15 +1,19 @@
 import { Button } from '@medly-components/core';
 import { WithStyle } from '@medly-components/utils';
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import useForm from '../../hooks/useForm';
 import Fields from '../Fields';
 import * as Styled from './Form.styled';
 import { Props } from './types';
 
 export const Form: React.SFC<Props> & WithStyle = React.memo(
-    React.forwardRef(({ disabled, hideActions, initialState, actionLabel, onSubmit, id, schema, ...restProps }, ref) => {
-        const { values, handlers, errorMessages, addErrorMessage } = useForm(initialState),
+    React.forwardRef(({ disabled, hideActions, apiErrorMessages, initialState, actionLabel, onSubmit, id, schema, ...restProps }, ref) => {
+        const { values, handlers, errorMessages, addErrorMessage, setErrorMessages } = useForm(initialState),
             formId = useMemo(() => id || 'medly-dynamic-form', [id]);
+
+        useEffect(() => {
+            apiErrorMessages && Object.keys(apiErrorMessages).length && setErrorMessages(apiErrorMessages);
+        }, [apiErrorMessages]);
 
         return (
             <Styled.Form id={formId} ref={ref} onSubmit={handlers.handleFormSubmit(onSubmit)} {...restProps}>
