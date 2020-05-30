@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Actions should render center aligned actions defined in action schema 1`] = `
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c1 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  border-radius: 0.8rem;
+  color: #ffffff;
+  background: #005AEE;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1:hover {
+  cursor: pointer;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+}
+
+.c1 .sc-AxgMl * {
+  fill: #ffffff;
+}
+
+.c1:hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c1:disabled {
+  box-shadow: none;
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c1 .sc-AxgMl + .c2 {
+  margin-left: 0.8rem;
+}
+
+.c1 .c2 + .sc-AxgMl {
+  margin-left: 0.8rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 1/-1;
+  margin-top: 1.6rem;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 > * {
+  margin-top: 1.6rem;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <button
+      class="c1"
+      color="default"
+      disabled=""
+      form="dummy"
+      type="submit"
+    >
+      <span
+        class="c2 c3"
+      >
+        Submit
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Form Actions should render default action button 1`] = `
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c1 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  border-radius: 100rem;
+  color: #ffffff;
+  background: #005AEE;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1:hover {
+  cursor: pointer;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+}
+
+.c1 .sc-AxgMl * {
+  fill: #ffffff;
+}
+
+.c1:hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c1:disabled {
+  box-shadow: none;
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c1 .sc-AxgMl + .c2 {
+  margin-left: 0.8rem;
+}
+
+.c1 .c2 + .sc-AxgMl {
+  margin-left: 0.8rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 1/-1;
+  margin-top: 1.6rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c0 > * {
+  margin-left: 1.6rem;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <button
+      class="c1"
+      color="default"
+      disabled=""
+      form="dummy"
+      type="submit"
+    >
+      <span
+        class="c2 c3"
+      >
+        Save
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Form Actions should render left aligned actions defined in action schema 1`] = `
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c1 {
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  border-radius: 0.8rem;
+  color: #ffffff;
+  background: #005AEE;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1:hover {
+  cursor: pointer;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+}
+
+.c1 .sc-AxgMl * {
+  fill: #ffffff;
+}
+
+.c1:hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c1:disabled {
+  box-shadow: none;
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c1 .sc-AxgMl + .c2 {
+  margin-left: 0.8rem;
+}
+
+.c1 .c2 + .sc-AxgMl {
+  margin-left: 0.8rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 1/-1;
+  margin-top: 1.6rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c0 > * {
+  margin-left: 1.6rem;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <button
+      class="c1"
+      color="default"
+      disabled=""
+      form="dummy"
+      type="submit"
+    >
+      <span
+        class="c2 c3"
+      >
+        Submit
+      </span>
+    </button>
+  </div>
+</div>
+`;

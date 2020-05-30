@@ -1,6 +1,6 @@
-import { FormSchema } from './types';
+import { FormFieldSchema } from './types';
 
-export const testSchema: FormSchema = {
+export const testSchema: FormFieldSchema = {
     firstName: {
         gridColumn: '1/7',
         type: 'text',

@@ -3,7 +3,7 @@ import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { withKnobs, text, color, select, boolean } from '@storybook/addon-knobs';
 import { testSchema } from './testSchema.ts';
-import { CommonProps, NestedFieldProps } from './Form.stories.tsx';
+import { CommonProps, NestedFieldProps, ActionSchema } from './Form.stories.tsx';
 import { action } from '@storybook/addon-actions';
 
 <Meta title="Forms" component={Form} />
@@ -13,16 +13,16 @@ import { action } from '@storybook/addon-actions';
 Create dynamic react form with simple json.
 
 ```tsx
-import { Form, FormSchema } from '@medly-component/forms';
+import { Form, FormFieldSchema } from '@medly-component/forms';
 
-const schema: FormSchema = { email: { type: 'email', label: 'Email' }, password: { type: 'password', label: 'Password' } };
+const schema: FormFieldSchema = { email: { type: 'email', label: 'Email' }, password: { type: 'password', label: 'Password' } };
 
-const UserInfoForm = () => <Form schema={schema} onSubmit={values => console.log('Values==>', values)} actionLabel="Login" />;
+const UserInfoForm = () => <Form fieldSchema={schema} onSubmit={values => console.log('Values==>', values)} actionLabel="Login" />;
 ```
 
 <Preview withToolbar>
     <Form
-        schema={{ email: { type: 'email', label: 'Email' }, password: { type: 'password', label: 'Password' } }}
+        fieldSchema={{ email: { type: 'email', label: 'Email' }, password: { type: 'password', label: 'Password' } }}
         actionLabel="Login"
         onSubmit={action('Submitted')}
     />
@@ -30,11 +30,13 @@ const UserInfoForm = () => <Form schema={schema} onSubmit={values => console.log
 
 ### Form Design
 
+#### 1) Field Design
+
 To arrange the fields in the form we have used css `display: grid` and `grid-template-columns: repeat(12, 1fr);`. So that we can arrange our fields using `grid-column` and `grid-row`. By default each field will take full width of the form. But you can adjust the width of the fields acrss the `12 colums`. Click on the `Show Code` below to check out the example.
 
 <Preview withToolbar>
     <Form
-        schema={{
+        fieldSchema={{
             firstName: {
                 gridColumn: '1/7',
                 type: 'text',
@@ -55,11 +57,51 @@ To arrange the fields in the form we have used css `display: grid` and `grid-tem
     />
 </Preview>
 
+#### 2) Action Design
+
+To change the label of the form's default action button you can use `actionLabel` but if you want to use more buttons you can use `actionSchema` to add more buttons.
+
+<Preview withToolbar>
+    <Form
+        fieldSchema={{
+            firstName: {
+                type: 'text',
+                label: 'First Name'
+            },
+            lastName: {
+                type: 'text',
+                label: 'Last Name'
+            }
+        }}
+        actionSchema={{
+            alignItems: 'right',
+            flexDirection: 'row',
+            actions: [
+                {
+                    type: 'reset',
+                    variant: 'flat',
+                    label: 'Clear'
+                },
+                {
+                    type: 'submit',
+                    edges: 'rounded',
+                    label: 'Submit'
+                }
+            ]
+        }}
+        onSubmit={action('Submitted')}
+    />
+</Preview>
+
+##### Action Schema
+
+<Props of={ActionSchema} />
+
 ### Form Props
 
 <Props of={Form} />
 
-### Form Schema
+### Form Field Schema
 
 Form schema basically is a simple json which includes the info of each field. There are three field props which are common across all the fields are `type` | `gridColumn` | `gridRow`. Appart from that each field type will have its own props. To see the individual field props checkout out that component's docs page.
 
@@ -78,9 +120,24 @@ You can play with this form in the `Canvas` tab.
 <Preview withToolbar>
     <Story name="Form" parameters={{ decorators: [withKnobs] }}>
         <Form
-            schema={testSchema}
+            fieldSchema={testSchema}
+            actionSchema={{
+                alignItems: 'right',
+                flexDirection: 'row',
+                actions: [
+                    {
+                        type: 'reset',
+                        variant: 'flat',
+                        label: 'Clear'
+                    },
+                    {
+                        type: 'submit',
+                        edges: 'rounded',
+                        label: 'Submit'
+                    }
+                ]
+            }}
             onSubmit={action('Submitted')}
-            actionLabel={text('Action Label', 'Save')}
             hideActions={boolean('Hide Actions', false)}
             fullWidth={boolean('Full Width', false)}
             minWidth={text('Min Width', '50rem')}

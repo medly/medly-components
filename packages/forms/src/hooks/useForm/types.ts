@@ -1,10 +1,13 @@
 import { DisplayFormat } from '../../components/Fields/types';
 
 export interface Handlers {
-    // Common Focus handler
-    handleFocus: (name: string, onFocus: (e: any) => void) => (event: any) => void;
     // Form submit handler
     handleFormSubmit: (onSubmit: (values: object) => void) => (e: React.FormEvent<Element>) => void;
+    // Form reset handler
+    handleFormReset: (onReset?: (e: React.FormEvent<Element>) => void) => (e: React.FormEvent<Element>) => void;
+
+    // Common Focus handler
+    handleFocus: (name: string, onFocus: (e: any) => void) => (event: any) => void;
     // Text change handler
     handleTextChange: (name: string) => (event: React.FormEvent<HTMLInputElement>) => void;
     // Number Change handler

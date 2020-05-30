@@ -25,7 +25,7 @@ exports[`Dynamic Form should not any field if component type is not matched 1`] 
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
-  border-radius: 0.8rem;
+  border-radius: 100rem;
   color: #ffffff;
   background: #005AEE;
   display: -webkit-inline-box;
@@ -77,6 +77,26 @@ exports[`Dynamic Form should not any field if component type is not matched 1`] 
   margin-left: 0.8rem;
 }
 
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 1/-1;
+  margin-top: 1.6rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c2 > * {
+  margin-left: 1.6rem;
+}
+
 .c1 {
   grid-column: 1/-1;
 }
@@ -99,23 +119,6 @@ exports[`Dynamic Form should not any field if component type is not matched 1`] 
   min-width: fit-content;
 }
 
-.c2 {
-  grid-column: 1/-1;
-  margin-top: 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
 <div>
   <form
     class="c0"
@@ -136,7 +139,7 @@ exports[`Dynamic Form should not any field if component type is not matched 1`] 
         <span
           class="c4 c5"
         >
-          Save
+          Submit
         </span>
       </button>
     </div>
@@ -229,7 +232,7 @@ exports[`Dynamic Form should render properly with initial state 1`] = `
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
-  border-radius: 0.8rem;
+  border-radius: 100rem;
   color: #ffffff;
   background: #005AEE;
   display: -webkit-inline-box;
@@ -1342,6 +1345,26 @@ exports[`Dynamic Form should render properly with initial state 1`] = `
   box-shadow: 0 0 0 1pt #012040;
 }
 
+.c65 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 1/-1;
+  margin-top: 1.6rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c65 > * {
+  margin-left: 1.6rem;
+}
+
 .c1 {
   grid-column: 1/7;
 }
@@ -1411,23 +1434,6 @@ exports[`Dynamic Form should render properly with initial state 1`] = `
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-}
-
-.c65 {
-  grid-column: 1/-1;
-  margin-top: 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 
 <div>
@@ -2179,7 +2185,7 @@ exports[`Dynamic Form should render properly with initial state 1`] = `
         <span
           class="c17 c67"
         >
-          Save
+          Submit
         </span>
       </button>
     </div>
@@ -2260,7 +2266,7 @@ exports[`Dynamic Form should render properly without initial state 1`] = `
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
-  border-radius: 0.8rem;
+  border-radius: 100rem;
   color: #ffffff;
   background: #005AEE;
   display: -webkit-inline-box;
@@ -3327,6 +3333,26 @@ exports[`Dynamic Form should render properly without initial state 1`] = `
   box-shadow: 0 0 0 1pt #012040;
 }
 
+.c63 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 1/-1;
+  margin-top: 1.6rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c63 > * {
+  margin-left: 1.6rem;
+}
+
 .c1 {
   grid-column: 1/7;
 }
@@ -3392,23 +3418,6 @@ exports[`Dynamic Form should render properly without initial state 1`] = `
   display: grid;
   width: 100%;
   min-width: 300px;
-}
-
-.c63 {
-  grid-column: 1/-1;
-  margin-top: 1.6rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 
 <div>

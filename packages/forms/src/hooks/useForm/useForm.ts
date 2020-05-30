@@ -1,12 +1,11 @@
 import { parseToDate } from '@medly-components/utils';
 import { format } from 'date-fns';
 import memoize from 'fast-memoize';
-import React, { useCallback, useState } from 'react';
-import { DisplayFormat } from '../../components/Fields/types';
+import { useCallback, useState } from 'react';
 import { createDottedKeyObject, createObjectFromDottedKeys } from '../../helpers';
-import { UseFormResult } from './types';
+import { Handlers, UseFormResult } from './types';
 
-export const useForm = (initialState: {}): UseFormResult => {
+export const useForm = (initialState: object): UseFormResult => {
     const [values, setValues] = useState(createDottedKeyObject(initialState));
     const [errorMessages, setErrorMessages] = useState({});
 
@@ -14,73 +13,83 @@ export const useForm = (initialState: {}): UseFormResult => {
         setErrorMessages(error => ({ ...error, [key]: message }));
     }, []);
 
-    const getPeriodFromDates = useCallback(
-        memoize((startDate: string | Date, endDate: string | Date, displayFormat: DisplayFormat) => ({
+    const getPeriodFromDates: Handlers['getPeriodFromDates'] = useCallback(
+        memoize((startDate, endDate, displayFormat) => ({
             startDate: startDate ? (startDate instanceof Date ? startDate : parseToDate(startDate, displayFormat || 'MM/dd/yyyy')) : null,
             endDate: endDate ? (endDate instanceof Date ? endDate : parseToDate(endDate, displayFormat || 'MM/dd/yyyy')) : null
         })),
         []
     );
 
-    const handleFocus = useCallback(
-        memoize((name: string, onFocus: (e: any) => void) => (event: any) => {
+    const handleFocus: Handlers['handleFocus'] = useCallback(
+        memoize((name, onFocus) => event => {
             addErrorMessage(name, '');
             onFocus && onFocus(event);
         }),
         []
     );
 
-    const handleFormSubmit = useCallback(
-        memoize((onSubmit: (values: object) => void) => (e: React.FormEvent) => {
-            e.preventDefault();
-            onSubmit && onSubmit(createObjectFromDottedKeys(values));
+    const handleFormSubmit: Handlers['handleFormSubmit'] = useCallback(
+        memoize(onSubmit => event => {
+            event.preventDefault();
+            onSubmit(createObjectFromDottedKeys(values));
         }),
         [values]
     );
 
-    const handleTextChange = useCallback(
-        memoize((name: string) => (event: React.FormEvent<HTMLInputElement>) => {
+    const handleFormReset: Handlers['handleFormReset'] = useCallback(
+        memoize(onReset => event => {
+            event.preventDefault();
+            setValues({});
+            setErrorMessages({});
+            onReset && onReset(event);
+        }),
+        []
+    );
+
+    const handleTextChange: Handlers['handleTextChange'] = useCallback(
+        memoize(name => event => {
             const target = event.target as HTMLInputElement;
             setValues(val => ({ ...val, [name]: target.value }));
         }),
         []
     );
 
-    const handleNumberChange = useCallback(
-        memoize((name: string) => (event: React.FormEvent<HTMLInputElement>) => {
+    const handleNumberChange: Handlers['handleNumberChange'] = useCallback(
+        memoize(name => event => {
             const target = event.target as HTMLInputElement;
             setValues(val => ({ ...val, [name]: Number(target.value) }));
         }),
         []
     );
 
-    const handleValueChange = useCallback(
-        memoize((name: string) => (value: any) => setValues(val => ({ ...val, [name]: value }))),
+    const handleValueChange: Handlers['handleSingleSelectChange'] = useCallback(
+        memoize(name => value => setValues(val => ({ ...val, [name]: value }))),
         []
     );
 
-    const handleValuesChange = useCallback(
-        memoize((name: string) => (values: any[]) => setValues(val => ({ ...val, [name]: values }))),
+    const handleValuesChange: Handlers['handleCheckboxGroupChange'] = useCallback(
+        memoize(name => values => setValues(val => ({ ...val, [name]: values }))),
         []
     );
 
-    const handleCheckboxChange = useCallback(
-        memoize((name: string) => (event: React.FormEvent<HTMLInputElement>) => {
+    const handleCheckboxChange: Handlers['handleCheckboxChange'] = useCallback(
+        memoize(name => event => {
             const target = event.target as HTMLInputElement;
             setValues(val => ({ ...val, [name]: target.checked }));
         }),
         []
     );
 
-    const handleDateChange = useCallback(
-        memoize((name: string, displayFormat: string) => (value: Date | null) => {
+    const handleDateChange: Handlers['handleDateChange'] = useCallback(
+        memoize((name, displayFormat) => value => {
             setValues(val => ({ ...val, [name]: format(value, displayFormat || 'MM/dd/yyyy') }));
         }),
         []
     );
 
-    const handleDateRangeChange = useCallback(
-        memoize((name: string, displayFormat: DisplayFormat) => (value: { startDate: Date; endDate: Date }) => {
+    const handleDateRangeChange: Handlers['handleDateRangeChange'] = useCallback(
+        memoize((name, displayFormat) => value => {
             setValues(val => ({
                 ...val,
                 [`${name}.startDate`]: format(value.startDate, displayFormat || 'MM/dd/yyyy'),
@@ -90,8 +99,8 @@ export const useForm = (initialState: {}): UseFormResult => {
         []
     );
 
-    const handleFileChange = useCallback(
-        memoize((name: string, maxSize?: number) => (files: FileList) => {
+    const handleFileChange: Handlers['handleFileChange'] = useCallback(
+        memoize((name, maxSize) => files => {
             Array.from(files).find(file => file.size > maxSize)
                 ? addErrorMessage(name, `File size should be less then ${maxSize / 1000000}MB`)
                 : setValues(val => ({ ...val, [name]: files }));
@@ -101,24 +110,25 @@ export const useForm = (initialState: {}): UseFormResult => {
 
     return {
         values,
+        setValues,
         errorMessages,
         addErrorMessage,
+        setErrorMessages,
         handlers: {
-            handleFocus,
+            handleFormReset,
             handleFormSubmit,
+            handleFocus,
             handleTextChange,
             handleNumberChange,
             handleFileChange,
             handleCheckboxChange,
+            handleDateChange,
+            handleDateRangeChange,
+            getPeriodFromDates,
             handleCheckboxGroupChange: handleValuesChange,
             handleRadioGroupChange: handleValueChange,
             handleSingleSelectChange: handleValueChange,
-            handleMultiSelectChange: handleValuesChange,
-            handleDateChange,
-            handleDateRangeChange,
-            getPeriodFromDates
-        },
-        setValues,
-        setErrorMessages
+            handleMultiSelectChange: handleValuesChange
+        }
     };
 };

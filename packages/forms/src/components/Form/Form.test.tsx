@@ -35,29 +35,33 @@ const initialState = {
 describe('Dynamic Form', () => {
     afterEach(cleanup);
     it('should render properly without initial state', () => {
-        const { container } = render(<Form schema={testSchema} onSubmit={jest.fn()} minWidth="300px" fullWidth actionLabel="Upload" />);
+        const { container } = render(
+            <Form fieldSchema={testSchema} onSubmit={jest.fn()} minWidth="300px" fullWidth actionLabel="Upload" />
+        );
         expect(container).toMatchSnapshot();
     });
 
     it('should render properly with initial state', () => {
-        const { container } = render(<Form schema={testSchema} onSubmit={jest.fn()} initialState={initialState} />);
+        const { container } = render(<Form fieldSchema={testSchema} onSubmit={jest.fn()} initialState={initialState} />);
         expect(container).toMatchSnapshot();
     });
 
     it('should render error message properly', () => {
-        const { container, getByText } = render(<Form schema={{ firstName: { required: true, type: 'text' } }} onSubmit={jest.fn()} />);
+        const { container, getByText } = render(
+            <Form fieldSchema={{ firstName: { required: true, type: 'text' } }} onSubmit={jest.fn()} />
+        );
         fireEvent.focus(container.querySelector('#firstName-input'));
         fireEvent.blur(container.querySelector('#firstName-input'));
         expect(getByText('Constraints not satisfied')).toBeInTheDocument();
     });
 
     it('should not any field if component type is not matched', () => {
-        const { container } = render(<Form schema={{ dummy: { type: 'wrongType' } }} onSubmit={jest.fn()} />);
+        const { container } = render(<Form fieldSchema={{ dummy: { type: 'wrongType' } }} onSubmit={jest.fn()} />);
         expect(container).toMatchSnapshot();
     });
 
     it('should hide actions when hideAction props is truthy', () => {
-        const { queryByText } = render(<Form hideActions schema={testSchema} initialState={initialState} onSubmit={jest.fn()} />);
+        const { queryByText } = render(<Form hideActions fieldSchema={testSchema} initialState={initialState} onSubmit={jest.fn()} />);
         expect(queryByText('Save')).toBeNull();
     });
 
@@ -65,11 +69,33 @@ describe('Dynamic Form', () => {
         const { getByText } = render(
             <Form
                 apiErrorMessages={{ firstName: 'First name should be at least 8 character' }}
-                schema={{ firstName: { required: true, type: 'text' } }}
+                fieldSchema={{ firstName: { required: true, type: 'text' } }}
                 onSubmit={jest.fn()}
             />
         );
         expect(getByText('First name should be at least 8 character')).toBeInTheDocument();
+    });
+
+    it('should reset all fields on clicking on reset button', () => {
+        const mockOnReset = jest.fn(),
+            { container } = render(
+                <Form
+                    fieldSchema={{ firstName: { type: 'text', label: 'First Name' } }}
+                    actionSchema={{
+                        actions: [{ type: 'reset', label: 'Reset' }]
+                    }}
+                    onReset={mockOnReset}
+                    onSubmit={jest.fn()}
+                />
+            );
+        const input = container.querySelector('#firstName-input');
+        fireEvent.change(input, {
+            target: { name: 'firstName', value: 'Dummy Value' }
+        });
+        expect(input).toHaveValue('Dummy Value');
+        fireEvent.reset(container.querySelector('form'));
+        expect(input).toHaveValue('');
+        // expect(mockOnReset).toBeCalled();
     });
 
     describe('should call onSubmit', () => {
@@ -77,7 +103,7 @@ describe('Dynamic Form', () => {
 
         it('with initial state', () => {
             const mockOnSubmit = jest.fn(),
-                { container } = render(<Form schema={testSchema} onSubmit={mockOnSubmit} initialState={initialState} />);
+                { container } = render(<Form fieldSchema={testSchema} onSubmit={mockOnSubmit} initialState={initialState} />);
             fireEvent.submit(container.querySelector('form'));
             expect(mockOnSubmit).toHaveBeenCalledWith(initialState);
         });
@@ -116,7 +142,7 @@ describe('Dynamic Form', () => {
                     resume: [fooFile]
                 },
                 renderComp = (state: object = dateStringInitialState) => (
-                    <Form schema={testSchema} onSubmit={mockOnSubmit} initialState={state} />
+                    <Form fieldSchema={testSchema} onSubmit={mockOnSubmit} initialState={state} />
                 ),
                 { container, getByText, findByText, getByPlaceholderText, getByTitle, getByLabelText, rerender } = render(renderComp());
             const fileInput = container.querySelector('#resume');
@@ -229,7 +255,7 @@ describe('Dynamic Form', () => {
         const mockOnFocus = jest.fn(),
             { container } = render(
                 <Form
-                    schema={{
+                    fieldSchema={{
                         firstName: {
                             type: 'text',
                             label: 'First Name',
@@ -256,7 +282,7 @@ describe('Dynamic Form', () => {
                 },
                 { container, getByTitle, getByLabelText } = render(
                     <Form
-                        schema={{
+                        fieldSchema={{
                             birthDate: {
                                 type: 'date',
                                 displayFormat: 'dd/MM/yyyy',
@@ -297,7 +323,7 @@ describe('Dynamic Form', () => {
                 },
                 { container, getByTitle, getByLabelText } = render(
                     <Form
-                        schema={{
+                        fieldSchema={{
                             birthDate: {
                                 type: 'date',
                                 label: 'Birth Date',
@@ -329,7 +355,7 @@ describe('Dynamic Form', () => {
             const mockOnSubmit = jest.fn(),
                 { container, getAllByText } = render(
                     <Form
-                        schema={{
+                        fieldSchema={{
                             experience: {
                                 type: 'date-range',
                                 displayFormat: 'dd/MM/yyyy',

@@ -1,17 +1,21 @@
 import { HTMLProps } from '@medly-components/utils';
+import { FormActionSchema } from '../Actions/types';
 import { FieldProperties } from '../Fields/types';
 
 type FormProps = Omit<HTMLProps<HTMLFormElement>, 'onSubmit'>;
 
-export interface FormSchema {
+export interface FormFieldSchema {
     [key: string]: FieldProperties;
 }
+
 export interface Props extends FormProps {
-    // Form Schema
-    schema: FormSchema;
+    // Field Schema
+    fieldSchema: FormFieldSchema;
+    // Action Schema
+    actionSchema?: FormActionSchema;
     // Function to be called on submit
     onSubmit: (data: { [key: string]: any }) => void;
-    // Form submit button label
+    // Label for default action
     actionLabel?: string;
     // Api failure error messages (key should be aligned with the field key)
     apiErrorMessages?: { [key: string]: any };

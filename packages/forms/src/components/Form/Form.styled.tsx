@@ -8,11 +8,3 @@ export const Form = styled('form')<{ fullWidth?: boolean; minWidth?: string }>`
     width: ${({ fullWidth }) => (fullWidth ? '100%' : 'min-content')};
     min-width: ${({ minWidth }) => minWidth || 'fit-content'};
 `;
-
-export const Actions = styled('div')`
-    grid-column: 1/-1;
-    margin-top: ${({ theme }) => theme.spacing.S4};
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-`;
