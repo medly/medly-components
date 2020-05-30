@@ -60,5 +60,6 @@ describe('FileInput component', () => {
         });
         fireEvent.change(input);
         expect(mockOnChange).toBeCalledWith([foo, bar]);
+        expect(input).toHaveValue('');
     });
 });
