@@ -76,4 +76,13 @@ describe('Button component', () => {
         );
         expect(container).toMatchSnapshot();
     });
+
+    it('should render with 100% width if fullWidth prop is truthy', () => {
+        const { container } = render(
+            <Button fullWidth variant="solid">
+                Some text
+            </Button>
+        );
+        expect(container.querySelector('button')).toHaveStyle(`width: 100%`);
+    });
 });

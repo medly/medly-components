@@ -125,6 +125,7 @@ export const ButtonStyled = styled('button')<Props>`
     text-decoration: none;
     transition: all 100ms linear;
     padding: ${getPaddings};
+    width: ${({ fullWidth }) => fullWidth && '100%'};
     border-radius: ${({ edges, theme }) => theme.button.borderRadius[edges]};
     
 
