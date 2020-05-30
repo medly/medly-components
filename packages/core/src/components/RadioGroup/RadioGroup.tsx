@@ -42,7 +42,7 @@ export const RadioGroup: SFC<Props> & WithStyle = React.memo(
                             key={option.value}
                             {...{ ...option, size, name, required }}
                             disabled={disabled || option.disabled}
-                            defaultChecked={option.value === value}
+                            checked={option.value === value}
                         />
                     ))}
                 </FieldWithLabel.Field>
