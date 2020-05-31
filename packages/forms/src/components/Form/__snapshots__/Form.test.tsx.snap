@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Dynamic Form should not any field if component type is not matched 1`] = `
+exports[`Form should not render any field if component type is not matched 1`] = `
 .c5 {
   margin: 0;
   color: inherit;
@@ -157,7 +157,7 @@ exports[`Dynamic Form should not any field if component type is not matched 1`] 
 </div>
 `;
 
-exports[`Dynamic Form should render properly with initial state 1`] = `
+exports[`Form should render properly with initial state 1`] = `
 .c18 {
   margin: 0;
   color: inherit;
@@ -2228,7 +2228,7 @@ exports[`Dynamic Form should render properly with initial state 1`] = `
 </div>
 `;
 
-exports[`Dynamic Form should render properly without initial state 1`] = `
+exports[`Form should render properly without initial state 1`] = `
 .c2 {
   margin: 0;
   color: inherit;

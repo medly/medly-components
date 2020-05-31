@@ -6,7 +6,7 @@ import { testSchema } from './testSchema.ts';
 import { CommonProps, NestedFieldProps, ActionSchema } from './Form.stories.tsx';
 import { action } from '@storybook/addon-actions';
 
-<Meta title="Forms" component={Form} />
+<Meta title="Forms" component={Form} parameters={{ jest: ['Form.test.tsx', 'Actions/Actions.test.tsx'] }} />
 
 # Forms
 

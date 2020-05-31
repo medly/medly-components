@@ -32,7 +32,7 @@ const initialState = {
         }
     };
 
-describe('Dynamic Form', () => {
+describe('Form', () => {
     afterEach(cleanup);
     it('should render properly without initial state', () => {
         const { container } = render(
@@ -63,7 +63,7 @@ describe('Dynamic Form', () => {
         expect(getByText('Constraints not satisfied')).toBeInTheDocument();
     });
 
-    it('should not any field if component type is not matched', () => {
+    it('should not render any field if component type is not matched', () => {
         const { container } = render(<Form fieldSchema={{ dummy: { type: 'wrongType' } }} onSubmit={jest.fn()} />);
         expect(container).toMatchSnapshot();
     });
@@ -84,7 +84,7 @@ describe('Dynamic Form', () => {
         expect(getByText('First name should be at least 8 character')).toBeInTheDocument();
     });
 
-    it('should reset all fields on clicking on reset button', () => {
+    it('should reset all the fields on clicking on reset button', () => {
         const mockOnReset = jest.fn(),
             { container } = render(
                 <Form
