@@ -10,7 +10,7 @@ import {
     TextField
 } from '@medly-components/core';
 import React from 'react';
-import { FieldHeader, FieldWrapper } from './Fields.styled';
+import { FieldWrapper, Header, HelperText } from './Fields.styled';
 import {
     CheckboxGroupProps,
     CheckboxProps,
@@ -53,7 +53,10 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                     if (componentProps.type === 'nested') {
                         return (
                             <React.Fragment key={name}>
-                                {componentProps.label && <FieldHeader textVariant="h4">{componentProps.label}</FieldHeader>}
+                                {(componentProps as NestedProps).header && (
+                                    <Header textVariant="h4">{(componentProps as NestedProps).header}</Header>
+                                )}
+                                {componentProps.helperText && <HelperText textVariant="body2">{componentProps.helperText}</HelperText>}
                                 <Fields
                                     values={values}
                                     disabled={disabled}

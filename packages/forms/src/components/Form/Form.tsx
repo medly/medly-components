@@ -1,3 +1,4 @@
+import { Text } from '@medly-components/core';
 import { WithStyle } from '@medly-components/utils';
 import React, { useEffect, useMemo } from 'react';
 import useForm from '../../hooks/useForm';
@@ -10,6 +11,8 @@ export const Form: React.SFC<Props> & WithStyle = React.memo(
     React.forwardRef(
         (
             {
+                header,
+                helperText,
                 disabled,
                 hideActions,
                 apiErrorMessages,
@@ -39,6 +42,8 @@ export const Form: React.SFC<Props> & WithStyle = React.memo(
                     onSubmit={handlers.handleFormSubmit(onSubmit)}
                     onReset={handlers.handleFormReset(onReset)}
                 >
+                    {header && <Text textVariant="h2">{header}</Text>}
+                    {helperText && <Text textVariant="body1">{helperText}</Text>}
                     <Fields
                         errorMessages={errorMessages}
                         addErrorMessage={addErrorMessage}

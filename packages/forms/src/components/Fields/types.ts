@@ -47,8 +47,10 @@ export type NestedProps = {
     fields: {
         [key: string]: FieldProperties;
     };
-    /** Label for Field group */
-    label?: string;
+    /** Header for field group */
+    header?: string;
+    /** Helper text for field group */
+    helperText?: string;
     /** This will be handled internally */
     disabled?: boolean;
 };

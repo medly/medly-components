@@ -7,6 +7,7 @@ export const FieldWrapper = styled('div')<CommonFieldProps>`
     grid-row: ${({ gridRow }) => gridRow};
     & > * {
         width: 100%;
+        margin: 0;
         min-width: auto;
     }
 `;
@@ -14,6 +15,11 @@ FieldWrapper.defaultProps = {
     gridColumn: '1/-1'
 };
 
-export const FieldHeader = styled(Text)`
+export const Header = styled(Text)`
     grid-column: 1/-1;
+    margin-top: 1rem;
+`;
+
+export const HelperText = styled(Text)`
+    margin-bottom: 1rem;
 `;

@@ -93,7 +93,7 @@ exports[`Form Actions should render center aligned actions defined in action sch
   justify-content: center;
 }
 
-.c0 > * {
+.c0 > * + * {
   margin-top: 1.6rem;
 }
 
@@ -211,7 +211,7 @@ exports[`Form Actions should render default action button 1`] = `
   justify-content: flex-end;
 }
 
-.c0 > * {
+.c0 > * + * {
   margin-left: 1.6rem;
 }
 
@@ -329,7 +329,7 @@ exports[`Form Actions should render left aligned actions defined in action schem
   justify-content: flex-start;
 }
 
-.c0 > * {
+.c0 > * + * {
   margin-left: 1.6rem;
 }
 

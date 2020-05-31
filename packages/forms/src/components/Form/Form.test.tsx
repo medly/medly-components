@@ -36,7 +36,15 @@ describe('Dynamic Form', () => {
     afterEach(cleanup);
     it('should render properly without initial state', () => {
         const { container } = render(
-            <Form fieldSchema={testSchema} onSubmit={jest.fn()} minWidth="300px" fullWidth actionLabel="Upload" />
+            <Form
+                fieldSchema={testSchema}
+                header="Dummy Form"
+                helperText="Dummy Description"
+                onSubmit={jest.fn()}
+                minWidth="300px"
+                fullWidth
+                actionLabel="Upload"
+            />
         );
         expect(container).toMatchSnapshot();
     });

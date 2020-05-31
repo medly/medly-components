@@ -120,6 +120,11 @@ You can play with this form in the `Canvas` tab.
 <Preview withToolbar>
     <Story name="Form" parameters={{ decorators: [withKnobs] }}>
         <Form
+            header={text('Header', 'Form Header')}
+            helperText={text(
+                'Helper Text',
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. '
+            )}
             fieldSchema={testSchema}
             actionSchema={{
                 alignItems: 'right',

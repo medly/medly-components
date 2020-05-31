@@ -7,4 +7,13 @@ export const Form = styled('form')<{ fullWidth?: boolean; minWidth?: string }>`
     display: ${({ fullWidth }) => (fullWidth ? 'grid' : 'inline-grid')};
     width: ${({ fullWidth }) => (fullWidth ? '100%' : 'min-content')};
     min-width: ${({ minWidth }) => minWidth || 'fit-content'};
+
+    & > h2 {
+        grid-column: 1/-1;
+    }
+
+    & > span {
+        grid-column: 1/-1;
+        margin-bottom: 1.6rem;
+    }
 `;

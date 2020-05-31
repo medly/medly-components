@@ -7,7 +7,7 @@ export const Actions = styled('div')<{ alignItems?: 'left' | 'center' | 'right';
     flex-direction: ${({ flexDirection }) => flexDirection};
     justify-content: ${({ alignItems }) => (alignItems === 'left' ? 'flex-start' : alignItems === 'center' ? 'center' : 'flex-end')};
 
-    & > * {
+    & > * + * {
         margin-left: ${({ flexDirection }) => flexDirection === 'row' && `1.6rem`};
         margin-top: ${({ flexDirection }) => flexDirection === 'column' && `1.6rem`};
     }

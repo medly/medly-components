@@ -72,7 +72,8 @@ export const testSchema: FormFieldSchema = {
     },
     marks: {
         type: 'nested',
-        label: 'Marks',
+        header: 'Marks',
+        helperText: 'Marks Information',
         labelPosition: 'left',
         fields: {
             database: {

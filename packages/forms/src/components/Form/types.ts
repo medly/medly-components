@@ -11,12 +11,17 @@ export interface FormFieldSchema {
 export interface Props extends FormProps {
     // Field Schema
     fieldSchema: FormFieldSchema;
+
     // Action Schema
     actionSchema?: FormActionSchema;
     // Function to be called on submit
     onSubmit: (data: { [key: string]: any }) => void;
     // Label for default action
     actionLabel?: string;
+    // Form header
+    header?: string;
+    // Form Helper text
+    helperText?: string;
     // Api failure error messages (key should be aligned with the field key)
     apiErrorMessages?: { [key: string]: any };
     // Set it to true to hide the actions
