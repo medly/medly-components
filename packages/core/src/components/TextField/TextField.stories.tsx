@@ -16,56 +16,20 @@ const Form = styled('form')`
     display: flex;
     align-items: center;
 `;
-export const BuiltIn: React.SFC = () => {
-    const [email, setEmail] = useState('');
-
-    const handleEmailChange = (event: React.FormEvent<HTMLInputElement>) => {
-            const target = event.target as HTMLInputElement;
-            setEmail(target.value);
-        },
-        handleFormSubmit = (e: React.FormEvent) => {
-            e.preventDefault();
-        };
-    return (
-        <Form onSubmit={handleFormSubmit}>
-            <TextField
-                withBuiltInValidation
-                type="email"
-                label="Email"
-                placeholder="Enter email"
-                required
-                value={email}
-                onChange={handleEmailChange}
-            />
-            <Button type="submit">Submit</Button>
-        </Form>
-    );
-};
 
 type Result = [
     {
         value: string;
-        errorText: string;
         onChange: (e: React.FormEvent<HTMLInputElement>) => void;
-        onBlur: (e: React.FormEvent<HTMLInputElement>) => void;
-        onInvalid: (e: React.FormEvent<HTMLInputElement>) => void;
     },
     React.Dispatch<React.SetStateAction<string>>
 ];
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const useTextInput = ({ initialState = '', validator = (vl: string) => '' }): Result => {
+export const useTextInput = (initialState = ''): Result => {
     const [value, setValue] = useState(initialState),
-        [errorText, setErrorText] = useState('');
+        onChange = useCallback((event: React.FormEvent) => setValue((event.target as HTMLInputElement).value), []);
 
-    const onChange = useCallback((event: React.FormEvent) => setValue((event.target as HTMLInputElement).value), []),
-        onBlur = useCallback((event: React.FormEvent) => setErrorText((event.target as HTMLInputElement).validationMessage), []),
-        onInvalid = useCallback((event: React.FormEvent) => {
-            event.preventDefault();
-            setErrorText((event.target as HTMLInputElement).validationMessage);
-        }, []);
-
-    return [{ value, errorText, onChange, onBlur, onInvalid }, setErrorText];
+    return [{ value, onChange }, setValue];
 };
 
 const emailValidation = (value: string) => {
@@ -74,12 +38,12 @@ const emailValidation = (value: string) => {
 };
 
 export const Custom: React.SFC = () => {
-    const [email] = useTextInput({ initialState: '', validator: emailValidation }),
+    const [email] = useTextInput(''),
         handleFormSubmit = useCallback((e: React.FormEvent) => e.preventDefault(), []);
 
     return (
         <Form onSubmit={handleFormSubmit}>
-            <TextField type="email" label="Email" placeholder="Enter email" required {...email} />
+            <TextField type="email" label="Email" placeholder="Enter email" required {...email} validator={emailValidation} />
             <Button type="submit">Submit</Button>
         </Form>
     );
