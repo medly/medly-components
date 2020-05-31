@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.33](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.32...@medly-components/core@1.0.0-beta.33) (2020-05-31)
+
+
+### Bug Fixes
+
+* change defaultChecked to checked in radio group ([5419636](https://github.com/medly/medly-components/commit/5419636f8257cbf9111a897d70b5a683843a0789))
+* fix issue of selecting the same file ([9840ecd](https://github.com/medly/medly-components/commit/9840ecde509af192a2c2e04be417e2a596539978))
+
+
+### Features
+
+* add full width functionality in Button component ([59f8615](https://github.com/medly/medly-components/commit/59f8615c67fb6d4b6db50ba3681cab6b4d4d1fa4))
+
+
+
+
+
 # [1.0.0-beta.32](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.31...@medly-components/core@1.0.0-beta.32) (2020-05-23)
 
 **Note:** Version bump only for package @medly-components/core
