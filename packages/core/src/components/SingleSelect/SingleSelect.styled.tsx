@@ -13,6 +13,8 @@ export const Wrapper = styled('div')<SelectWrapperProps>`
 
     ${TextField.Style} {
         margin: 0;
+        caret-color: ${({ isSearchable }) => !isSearchable && 'transparent'};
+
         div,
         input,
         label {

@@ -47,6 +47,8 @@ export interface SelectProps extends InputProps, WithThemeProp {
     helperText?: string;
     /** Error Text */
     errorText?: string;
+    /** Function will called with the input value on Blur event*/
+    validator?: (val: any) => string;
 }
 
 export interface SelectWrapperProps extends Omit<SelectProps, 'ref' | 'options'> {

@@ -388,6 +388,7 @@ exports[`Calendar Component should render given date 1`] = `
 
 .c7 .c8 {
   margin: 0;
+  caret-color: transparent;
 }
 
 .c7 .c8 div,
@@ -631,7 +632,6 @@ exports[`Calendar Component should render given date 1`] = `
                 class="c12"
                 id="test-calendar-month-selector-input"
                 placeholder="Month"
-                readonly=""
                 type="text"
                 value="Jan"
               />
@@ -675,7 +675,6 @@ exports[`Calendar Component should render given date 1`] = `
                 class="c12"
                 id="test-calendar-year-selector-input"
                 placeholder="Year"
-                readonly=""
                 type="text"
                 value="2020"
               />

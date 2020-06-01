@@ -55,6 +55,7 @@ export const testSchema: FormFieldSchema = {
         label: 'Experience'
     },
     country: {
+        required: true,
         type: 'single-select',
         label: 'Country',
         options: [

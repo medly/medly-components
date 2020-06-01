@@ -49,10 +49,13 @@ describe('SingleSelect component', () => {
         });
     });
 
-    it('should render input in readOnly state by default', async () => {
+    it('should not change input on pressing any key if isSearchable key is falsy', async () => {
         const { container } = render(<SingleSelect value="Dummy1" options={options} />),
-            inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-        expect(inputEl).toHaveAttribute('readonly');
+            input = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
+
+        fireEvent.focus(input);
+        fireEvent.keyPress(input, { key: 'a', code: 65, charCode: 65 });
+        expect(input).toHaveValue('Dummy1');
     });
 
     it('should take parents width if we pass fullWidth prop as true', () => {
