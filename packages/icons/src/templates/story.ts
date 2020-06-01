@@ -21,7 +21,7 @@ export const storyTemplate = (icons: { [k: string]: string[] }) => {
 ### ${DIR.slice(0, -1)}
 
 <Preview withToolbar>
-    <Story name="${DIR.slice(0, -1)}" parameters={{ decorators: [withKnobs] }}>
+    <Story name="${DIR.slice(0, -1)}" decorators={[withKnobs]}>
         <IconGrid>
             ${iconComponents(icons[DIR])}
         </IconGrid>

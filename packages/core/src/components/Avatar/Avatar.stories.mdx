@@ -12,7 +12,7 @@ import { withKnobs, color, select } from '@storybook/addon-knobs';
 Displays an image or text that represents a user or organization
 
 <Preview withToolbar>
-    <Story name="Avatar" parameters={{ decorators: [withKnobs] }}>
+    <Story name="Avatar" decorators={[withKnobs]}>
         <Div>
             <Avatar
                 size={select('Size', sizes, 'M')}

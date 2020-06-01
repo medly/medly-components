@@ -13,7 +13,7 @@ import { variants, display, itemsPosition, flowDirection, ThemeInterface } from 
 Simple card component with lot of customization. Hover effect will only work when you pass `onClick` prop. You can play with the props in canvas tab.
 
 <Preview withToolbar>
-    <Story name="Card" parameters={{ decorators: [withKnobs] }}>
+    <Story name="Card" decorators={[withKnobs]}>
         <Card
             variant={select('Variant', variants, 'solid')}
             flowDirection={select('Flow Direction', flowDirection, 'horizontal')}
