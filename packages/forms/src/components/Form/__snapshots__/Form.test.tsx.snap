@@ -876,6 +876,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c47 .c2 {
   margin: 0;
+  caret-color: transparent;
 }
 
 .c47 .c2 div,
@@ -1925,7 +1926,6 @@ exports[`Form should render properly with initial state 1`] = `
                 id="country-input"
                 name="country"
                 placeholder="Please Select . . ."
-                readonly=""
                 required=""
                 type="text"
                 value="India"
@@ -2897,6 +2897,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c49 .c5 {
   margin: 0;
+  caret-color: transparent;
 }
 
 .c49 .c5 div,
@@ -3950,7 +3951,6 @@ exports[`Form should render properly without initial state 1`] = `
                 id="country-input"
                 name="country"
                 placeholder="Please Select . . ."
-                readonly=""
                 required=""
                 type="text"
                 value=""
