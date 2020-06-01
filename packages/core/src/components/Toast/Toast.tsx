@@ -16,17 +16,21 @@ export const Toast: SFC<Props> & WithStyle = React.memo(
 
         return (
             <Styled.Toast ref={ref} show={show} variant={variant} {...restProps}>
-                {
+                <Styled.SvgWrapper variant={variant}>
                     {
-                        error: <ErrorIcon />,
-                        warning: <WarningAmberIcon />,
-                        info: <NotificationsIcon />,
-                        success: <CheckIcon />
-                    }[variant]
-                }
-                {React.Children.map(props.children, c => {
-                    return isValidStringOrNumber(c) ? <Text>{c}</Text> : c;
-                })}
+                        {
+                            error: <ErrorIcon />,
+                            warning: <WarningAmberIcon />,
+                            info: <NotificationsIcon />,
+                            success: <CheckIcon />
+                        }[variant]
+                    }
+                </Styled.SvgWrapper>
+                <Styled.ToastContent>
+                    {React.Children.map(props.children, c => {
+                        return isValidStringOrNumber(c) ? <Text>{c}</Text> : c;
+                    })}
+                </Styled.ToastContent>
                 <ClearIcon onClick={onClose} />
             </Styled.Toast>
         );
