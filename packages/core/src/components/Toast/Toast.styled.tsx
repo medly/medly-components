@@ -5,17 +5,18 @@ import { StyledProps } from './types';
 
 export const Toast = styled('div')<StyledProps>`
     display: flex;
-    align-items: center;
+    align-items: stretch;
     min-width: 250px;
-    padding-right: 20px;
+    padding-right: 8px;
     box-shadow: 0 8px 32px ${({ theme }) => theme.toast.boxShadow};
     border-radius: 4px;
-    border-left: 4px solid ${({ theme, variant }) => theme.toast.fillColor[`${variant}`]};
+    border-left: 4px solid ${({ theme, variant }) => theme.toast.fillColor[variant]};
+
     ${Text.Style} {
         color: ${({ theme }) => theme.toast.textColor};
-        text-align: left;
     }
     ${SvgIcon} {
+        padding: 12px;
         * {
             fill: ${({ theme }) => theme.toast.textColor};
         }
@@ -23,14 +24,11 @@ export const Toast = styled('div')<StyledProps>`
 `;
 
 export const SvgWrapper = styled('div')<StyledProps>`
-    background-color: ${({ theme, variant }) => theme.toast.bgColor[`${variant}`]};
-    padding: 12px;
-    display: inline-flex;
+    background-color: ${({ theme, variant }) => theme.toast.bgColor[variant]};
 
     ${SvgIcon} {
         * {
             fill: ${({ theme, variant }) => theme.toast.fillColor[`${variant}`]};
-            stroke: ${({ theme, variant }) => theme.toast.fillColor[`${variant}`]};
         }
     }
 `;
@@ -38,5 +36,5 @@ export const SvgWrapper = styled('div')<StyledProps>`
 export const ToastContent = styled('div')`
     display: flex;
     flex-grow: 1;
-    margin: 0 20px;
+    padding: 4px 0 12px 20px;
 `;
