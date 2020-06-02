@@ -5,6 +5,7 @@ import { LoaderTheme } from './loader/types';
 
 export interface CoreTheme {
     avatar?: CoreThemes.AvatarTheme;
+    accordion?: CoreThemes.AccordionTheme;
     breadCrumbs?: CoreThemes.BreadCrumbsTheme;
     button?: CoreThemes.ButtonTheme;
     card?: CoreThemes.CardTheme;
