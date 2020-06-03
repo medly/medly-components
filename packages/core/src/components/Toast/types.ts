@@ -5,6 +5,7 @@ export interface Props extends HTMLProps<HTMLDivElement> {
     variant: 'success' | 'error' | 'info' | 'warning';
     /** Function to be called on close */
     onClose?: () => void;
+    heading?: string;
 }
 
 export interface StyledProps extends WithThemeProp, Props {

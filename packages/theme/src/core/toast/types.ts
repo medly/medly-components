@@ -1,7 +1,16 @@
 export interface ToastTheme {
-    successColor: string;
-    infoColor: string;
-    warningColor: string;
-    errorColor: string;
     textColor: string;
+    boxShadow: string;
+    bgColor: {
+        success: string;
+        info: string;
+        warning: string;
+        error: string;
+    };
+    fillColor: {
+        success: string;
+        info: string;
+        warning: string;
+        error: string;
+    };
 }
