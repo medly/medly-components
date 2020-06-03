@@ -1,22 +1,23 @@
 import { ExpandMoreIcon } from '@medly-components/icons';
-import React, { SFC, useState } from 'react';
+import React, { SFC, useCallback, useState } from 'react';
 import Text from '../Text';
-import { Content, Wrapper, Section } from './Accordion.styled';
+import { Content, Section, Wrapper } from './Accordion.styled';
 import { Props } from './types';
-
 
 export const Accordion: SFC<Props> = React.memo(({ title, titleColor, bgColor, children }) => {
     const [active, setActive] = useState(false),
-        toggleAccordion = () => setActive(active ? false : true);
+        toggleAccordion = useCallback(() => setActive(val => !val), []);
 
     return (
-        <Section bgColor={bgColor} >
+        <Section bgColor={bgColor}>
             <Wrapper isActive={active} onClick={toggleAccordion}>
-                <Text textVariant="body1" textColor={titleColor} >{title}</Text>
+                <Text textVariant="body1" textColor={titleColor}>
+                    {title}
+                </Text>
                 <ExpandMoreIcon />
             </Wrapper>
 
-            {active && (<Content>{children}</Content>)}
+            {active && <Content>{children}</Content>}
         </Section>
     );
 });
