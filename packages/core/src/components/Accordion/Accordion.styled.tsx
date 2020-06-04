@@ -7,7 +7,7 @@ export const Section = styled('div').attrs(({ theme: { accordion: { backgroundCo
 }))<StyleProps>`
     display: flex;
     flex-direction: column;
-    background-color: ${({ bgColor, backgroundColor }) => bgColor || backgroundColor };
+    background-color: ${({ bgColor, backgroundColor }) => bgColor || backgroundColor};
     border-radius: 0.8rem;
 `;
 
@@ -19,7 +19,7 @@ export const Wrapper = styled('button')<StyleProps>`
     outline: none;
     border: none;
     background-color: transparent;
-    
+
     ${SvgIcon} {
         margin-left: auto;
         transition: transform 0.25s ease;
@@ -27,10 +27,12 @@ export const Wrapper = styled('button')<StyleProps>`
     }
 `;
 
-export const Content = styled('div')`
+export const Content = styled('div').attrs(({ theme: { accordion: { separatorColor } } }: StyleProps) => ({
+    separatorColor
+}))<StyleProps>`
     display: flex;
     transition: width 2s;
     transition-timing-function: linear;
     padding: 1.8rem;
-    border-top: solid 0.2rem ${({ theme }) => theme.colors.grey[100]};
+    border-top: solid 0.2rem ${({ separatorColor }) => separatorColor};
 `;
