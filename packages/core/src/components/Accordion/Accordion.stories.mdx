@@ -14,7 +14,11 @@ Accordion is a container that can either stand alone or be connected with other 
 
 <Preview withToolbar>
     <Story name="Accordion" parameters={{ decorators: [withKnobs] }}>
-        <Accordion title="Uploaded Files" bgColor={defaultTheme.colors.grey[200]} titleColor={defaultTheme.colors.black}> 
+        <Accordion
+            title="Uploaded Files"
+            bgColor={color('Background color', defaultTheme.accordion.backgroundColor)}
+            titleColor={color('Title Color', defaultTheme.colors.black)}
+        >
             <div>File 1</div>
         </Accordion>
     </Story>
