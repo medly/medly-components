@@ -80,7 +80,7 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                                             <TextField
                                                 {...({
                                                     ...commonProps,
-                                                    value: value || '',
+                                                    value: value,
                                                     onChange: handlers.handleTextChange(name)
                                                 } as TextFieldProps)}
                                             />
@@ -91,7 +91,7 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                                             <TextField
                                                 {...({
                                                     ...commonProps,
-                                                    value: value || '',
+                                                    value: value,
                                                     onChange: handlers.handleNumberChange(name)
                                                 } as TextFieldProps)}
                                             />
@@ -166,10 +166,6 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                                         );
 
                                     case 'date': {
-                                        // console.log(
-                                        //     '===============>',
-                                        //     format(value || null, (componentProps as DateRangePickerProps).displayFormat)
-                                        // );
                                         return (
                                             <DatePicker
                                                 {...({

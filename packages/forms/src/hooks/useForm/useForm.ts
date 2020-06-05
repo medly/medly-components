@@ -8,6 +8,7 @@ import { Handlers, UseFormResult } from './types';
 export const useForm = (initialState: object): UseFormResult => {
     const [values, setValues] = useState(createDottedKeyObject(initialState));
     const [errorMessages, setErrorMessages] = useState({});
+    const [formKey, setFormKey] = useState(0);
 
     const addErrorMessage = useCallback((key: string, message: string) => {
         setErrorMessages(error => ({ ...error, [key]: message }));
@@ -42,6 +43,7 @@ export const useForm = (initialState: object): UseFormResult => {
             event.preventDefault();
             setValues({});
             setErrorMessages({});
+            setFormKey(key => key + 1);
             onReset && onReset(event);
         }),
         []
@@ -109,6 +111,7 @@ export const useForm = (initialState: object): UseFormResult => {
     );
 
     return {
+        formKey,
         values,
         setValues,
         errorMessages,
