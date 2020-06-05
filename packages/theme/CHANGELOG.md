@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.21](https://github.com/medly/medly-components/compare/@medly-components/theme@1.0.0-beta.20...@medly-components/theme@1.0.0-beta.21) (2020-06-05)
+
+
+### Features
+
+* **core:** add accordion component ([eed4eb3](https://github.com/medly/medly-components/commit/eed4eb30e8883686a1e531d74fb144b8aa653e40))
+
+
+
+
+
 # [1.0.0-beta.20](https://github.com/medly/medly-components/compare/@medly-components/theme@1.0.0-beta.19...@medly-components/theme@1.0.0-beta.20) (2020-05-19)
 
 

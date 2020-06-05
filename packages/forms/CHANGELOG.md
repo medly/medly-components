@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.0-beta.2...@medly-components/forms@1.0.0-beta.3) (2020-06-05)
+
+
+### Bug Fixes
+
+* fix form clear issue ([374a51e](https://github.com/medly/medly-components/commit/374a51eb580ade889e6e8fffa6257cf4fa99535e))
+* fix snapshot tests after updating textfield ([f4a80aa](https://github.com/medly/medly-components/commit/f4a80aa0a1f5e8c1e808502522269299146de12d))
+* fix textfield and singleselect component validation ([c121bce](https://github.com/medly/medly-components/commit/c121bceb343fd18cde74b1468393a0879943e591))
+
+
+
+
+
 # [1.0.0-beta.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.0-beta.1...@medly-components/forms@1.0.0-beta.2) (2020-06-01)
 
 
