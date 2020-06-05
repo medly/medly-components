@@ -102,8 +102,7 @@ describe('Form', () => {
         });
         expect(input).toHaveValue('Dummy Value');
         fireEvent.reset(container.querySelector('form'));
-        expect(input).toHaveValue('');
-        // expect(mockOnReset).toBeCalled();
+        expect(mockOnReset).toBeCalled();
     });
 
     describe('should call onSubmit', () => {
@@ -152,7 +151,7 @@ describe('Form', () => {
                 renderComp = (state: object = dateStringInitialState) => (
                     <Form fieldSchema={testSchema} onSubmit={mockOnSubmit} initialState={state} />
                 ),
-                { container, getByText, findByText, getByPlaceholderText, getByTitle, getByLabelText, rerender } = render(renderComp());
+                { container, getByText, findByText, getByPlaceholderText, getByTitle, getByLabelText } = render(renderComp());
             const fileInput = container.querySelector('#resume');
             Object.defineProperty(fileInput, 'files', {
                 value: [fooFile]
@@ -160,33 +159,12 @@ describe('Form', () => {
             fireEvent.change(container.querySelector('#firstName-input'), {
                 target: { name: 'firstName', value: formData.firstName }
             });
-            rerender(
-                renderComp({
-                    ...dateStringInitialState,
-                    firstName: formData.firstName
-                })
-            );
             fireEvent.change(container.querySelector('#lastName-input'), {
                 target: { name: 'lastName', value: formData.lastName }
             });
-            rerender(
-                renderComp({
-                    ...dateStringInitialState,
-                    firstName: formData.firstName,
-                    lastName: formData.lastName
-                })
-            );
             fireEvent.change(container.querySelector('#email-input'), {
                 target: { value: formData.email }
             });
-            rerender(
-                renderComp({
-                    ...dateStringInitialState,
-                    firstName: formData.firstName,
-                    lastName: formData.lastName,
-                    email: formData.email
-                })
-            );
             fireEvent.change(fileInput);
             fireEvent.click(getByText('JAVA'));
             fireEvent.click(getByText('Front End'));
@@ -210,49 +188,13 @@ describe('Form', () => {
             fireEvent.change(getByPlaceholderText('Database'), {
                 target: { value: formData.marks.database }
             });
-            rerender(
-                renderComp({
-                    ...dateStringInitialState,
-                    firstName: formData.firstName,
-                    lastName: formData.lastName,
-                    email: formData.email,
-                    marks: {
-                        database: 10
-                    }
-                })
-            );
             fireEvent.change(getByPlaceholderText('Algorithms'), {
                 target: { value: formData.marks.algorithms }
             });
-            rerender(
-                renderComp({
-                    ...dateStringInitialState,
-                    firstName: formData.firstName,
-                    lastName: formData.lastName,
-                    email: formData.email,
-                    marks: {
-                        database: 10,
-                        algorithms: 10
-                    }
-                })
-            );
             fireEvent.change(getByPlaceholderText('Maths'), {
                 target: { value: formData.marks.maths }
             });
-            rerender(
-                renderComp({
-                    ...dateStringInitialState,
-                    firstName: formData.firstName,
-                    lastName: formData.lastName,
-                    email: formData.email,
-                    marks: {
-                        database: 10,
-                        algorithms: 10,
-                        maths: 10
-                    }
-                })
-            );
-            fireEvent.click(getByText('Do you Agree'));
+            fireEvent.click(container.querySelector('#agree'));
 
             fireEvent.submit(container.querySelector('form'));
             expect(mockOnSubmit).toHaveBeenCalledWith(formData);

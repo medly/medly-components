@@ -29,18 +29,21 @@ export const TextField: SFC<Props> & WithStyle = React.memo(
             isSuffixPresent = useMemo(() => !!Suffix, [Suffix]),
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
-        const validate = (event: React.FormEvent<HTMLInputElement>, eventFunc: (e: React.FormEvent<HTMLInputElement>) => void) => {
-            event.preventDefault();
-            const element = event.target as HTMLInputElement,
-                message = (validator && validator(element.value)) || element.validationMessage;
-            setErrorMessage(message);
-            eventFunc && eventFunc(event);
-        };
+        const validate = useCallback(
+            (event: React.FormEvent<HTMLInputElement>, eventFunc: (e: React.FormEvent<HTMLInputElement>) => void) => {
+                event.preventDefault();
+                const element = event.target as HTMLInputElement,
+                    message = (validator && validator(element.value)) || element.validationMessage || '';
+                message.length && setErrorMessage(message);
+                eventFunc && eventFunc(event);
+            },
+            [validator]
+        );
 
         const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
             handleWrapperClick = useCallback(() => !disabled && inputRef.current.focus(), [inputRef, disabled]),
-            onBlur = useCallback((event: React.FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), []),
-            onInvalid = useCallback((event: React.FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), []);
+            onBlur = useCallback((event: React.FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [validator]),
+            onInvalid = useCallback((event: React.FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validator]);
 
         return (
             <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth}>

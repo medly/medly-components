@@ -37,6 +37,8 @@ export interface Handlers {
 }
 
 export interface UseFormResult {
+    // Form key
+    formKey: number;
     // Form fields values
     values: { [K: string]: any };
     // Form fields handlers

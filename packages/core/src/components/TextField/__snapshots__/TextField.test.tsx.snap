@@ -176,6 +176,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -487,6 +488,7 @@ exports[`TextField should render properly with default props 1`] = `
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -746,6 +748,7 @@ exports[`TextField with filled variant and with label should render default stat
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c3:focus {
@@ -999,6 +1002,7 @@ exports[`TextField with filled variant and with label should render focus state 
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c3:focus {
@@ -1252,6 +1256,7 @@ exports[`TextField with filled variant and without label should render default s
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c3:focus {
@@ -1505,6 +1510,7 @@ exports[`TextField with filled variant and without label should render focus sta
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c3:focus {
@@ -1801,6 +1807,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -2129,6 +2136,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -2420,6 +2428,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -2682,6 +2691,7 @@ exports[`TextField with outlined variant and with label should render default st
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c3:focus {
@@ -2923,6 +2933,7 @@ exports[`TextField with outlined variant and with label should render focus stat
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c3:focus {
@@ -3164,6 +3175,7 @@ exports[`TextField with outlined variant and without label should render default
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c3:focus {
@@ -3405,6 +3417,7 @@ exports[`TextField with outlined variant and without label should render focus s
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c3:focus {
@@ -3689,6 +3702,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -4005,6 +4019,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -4284,6 +4299,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -4558,6 +4574,7 @@ exports[`TextField without label should render default state properly 1`] = `
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c3:focus {
@@ -4811,6 +4828,7 @@ exports[`TextField without label should render focus state properly  1`] = `
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;

@@ -15,6 +15,10 @@ export const Wrapper = styled('div')<SelectWrapperProps>`
         margin: 0;
         caret-color: ${({ isSearchable }) => !isSearchable && 'transparent'};
 
+        label {
+            pointer-events: none;
+        }
+
         div,
         input,
         label {

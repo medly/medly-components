@@ -318,6 +318,7 @@ exports[`Calendar Component should render given date 1`] = `
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c12:focus {
@@ -389,6 +390,10 @@ exports[`Calendar Component should render given date 1`] = `
 .c7 .c8 {
   margin: 0;
   caret-color: transparent;
+}
+
+.c7 .c8 label {
+  pointer-events: none;
 }
 
 .c7 .c8 div,
