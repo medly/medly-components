@@ -28,7 +28,7 @@ export const SvgWrapper = styled('div')<StyledProps>`
 
     ${SvgIcon} {
         * {
-            fill: ${({ theme, variant }) => theme.toast.fillColor[`${variant}`]};
+            fill: ${({ theme, variant }) => theme.toast.fillColor[variant]};
         }
     }
 `;
