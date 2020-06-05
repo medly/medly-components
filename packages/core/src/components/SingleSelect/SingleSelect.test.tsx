@@ -118,12 +118,11 @@ describe('SingleSelect component', () => {
 
     it('should show the selected option label in input on click on the option', () => {
         const mockOnChange = jest.fn(),
-            { container, getByText } = render(<SingleSelect options={options} onChange={mockOnChange} />),
-            inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
+            { container, getByText } = render(<SingleSelect options={options} onChange={mockOnChange} />);
 
-        fireEvent.click(inputEl);
+        fireEvent.click(container.querySelector('#medly-singleSelect-input'));
         fireEvent.click(getByText('Dummy1'));
-        expect(inputEl.value).toEqual('Dummy1');
+        expect(container.querySelector('#medly-singleSelect-input')).toHaveValue('Dummy1');
         expect(mockOnChange).toHaveBeenCalledWith('Dummy1');
     });
 
@@ -204,43 +203,39 @@ describe('SingleSelect component', () => {
 
         describe('down arrow', () => {
             it('should show options if input is in focus and options are not visible', async () => {
-                const { container } = render(<SingleSelect value="Dummy1" options={options} />),
-                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-                fireEvent.focus(inputEl);
+                const { container } = render(<SingleSelect value="Dummy1" options={options} />);
+                fireEvent.focus(container.querySelector('#medly-singleSelect-input'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 expect(container.querySelector('#medly-singleSelect-options')).toBeVisible();
             });
 
             it('should change input', async () => {
                 const mockOnChange = jest.fn(),
-                    { container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} />),
-                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-                fireEvent.click(inputEl);
+                    { container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} />);
+                fireEvent.click(container.querySelector('#medly-singleSelect-input'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-                expect(inputEl.value).toEqual('Dummy1');
+                expect(container.querySelector('#medly-singleSelect-input')).toHaveValue('Dummy1');
                 expect(mockOnChange).toHaveBeenCalledWith('Dummy1');
             });
 
             it('should change input value to the first option when currently selected options is the last option ', async () => {
                 const mockOnChange = jest.fn(),
-                    { container } = render(<SingleSelect value="Dummy3" options={options} onChange={mockOnChange} />),
-                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-                fireEvent.click(inputEl);
+                    { container } = render(<SingleSelect value="Dummy3" options={options} onChange={mockOnChange} />);
+                fireEvent.click(container.querySelector('#medly-singleSelect-input'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-                expect(inputEl.value).toEqual('All');
+                expect(container.querySelector('#medly-singleSelect-input')).toHaveValue('All');
                 expect(mockOnChange).toHaveBeenCalledWith('all');
             });
 
             it('should change input value to the first option when there is no option selected ', async () => {
                 const mockOnChange = jest.fn(),
-                    { container } = render(<SingleSelect options={options} onChange={mockOnChange} />),
-                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-                fireEvent.click(inputEl);
+                    { container } = render(<SingleSelect options={options} onChange={mockOnChange} />);
+                fireEvent.click(container.querySelector('#medly-singleSelect-input'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-                expect(inputEl.value).toEqual('All');
+                expect(container.querySelector('#medly-singleSelect-input')).toHaveValue('All');
                 expect(mockOnChange).toHaveBeenCalledWith('all');
             });
 
@@ -252,12 +247,11 @@ describe('SingleSelect component', () => {
                             options={[...options, { value: 'Dummy4', label: 'Dummy4', disabled: true }]}
                             onChange={mockOnChange}
                         />
-                    ),
-                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-                fireEvent.click(inputEl);
+                    );
+                fireEvent.click(container.querySelector('#medly-singleSelect-input'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-                expect(inputEl.value).toEqual('All');
+                expect(container.querySelector('#medly-singleSelect-input')).toHaveValue('All');
                 expect(mockOnChange).toHaveBeenCalledWith('all');
             });
 
@@ -275,55 +269,50 @@ describe('SingleSelect component', () => {
                             ]}
                             onChange={mockOnChange}
                         />
-                    ),
-                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-                fireEvent.click(inputEl);
+                    );
+                fireEvent.click(container.querySelector('#medly-singleSelect-input'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-                expect(inputEl.value).toEqual('Dummy6');
+                expect(container.querySelector('#medly-singleSelect-input')).toHaveValue('Dummy6');
                 expect(mockOnChange).toHaveBeenCalledWith('Dummy6');
             });
         });
 
         describe('up arrow', () => {
             it('should show options if input is in focus and options are not visible', async () => {
-                const { container } = render(<SingleSelect value="Dummy1" options={options} />),
-                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-                fireEvent.focus(inputEl);
+                const { container } = render(<SingleSelect value="Dummy1" options={options} />);
+                fireEvent.focus(container.querySelector('#medly-singleSelect-input'));
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 38 });
                 expect(container.querySelector('#medly-singleSelect-options')).toBeVisible();
             });
 
             it('should change input value', async () => {
                 const mockOnChange = jest.fn(),
-                    { container } = render(<SingleSelect value="Some 1" options={options} onChange={mockOnChange} />),
-                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-                fireEvent.click(inputEl);
+                    { container } = render(<SingleSelect value="Some 1" options={options} onChange={mockOnChange} />);
+                fireEvent.click(container.querySelector('#medly-singleSelect-input'));
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 38 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-                expect(inputEl.value).toEqual('Dummy1');
+                expect(container.querySelector('#medly-singleSelect-input')).toHaveValue('Dummy1');
                 expect(mockOnChange).toHaveBeenCalledWith('Dummy1');
             });
 
             it('should change input value to the last option when currently selected option is the first option', async () => {
                 const mockOnChange = jest.fn(),
-                    { container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} />),
-                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-                fireEvent.click(inputEl);
+                    { container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} />);
+                fireEvent.click(container.querySelector('#medly-singleSelect-input'));
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 38 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-                expect(inputEl.value).toEqual('Dummy3');
+                expect(container.querySelector('#medly-singleSelect-input')).toHaveValue('Dummy3');
                 expect(mockOnChange).toHaveBeenCalledWith('Dummy3');
             });
 
             it('should change input value to the last option when there is no option selected ', async () => {
                 const mockOnChange = jest.fn(),
-                    { container } = render(<SingleSelect options={options} onChange={mockOnChange} />),
-                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-                fireEvent.click(inputEl);
+                    { container } = render(<SingleSelect options={options} onChange={mockOnChange} />);
+                fireEvent.click(container.querySelector('#medly-singleSelect-input'));
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 38 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-                expect(inputEl.value).toEqual('Dummy3');
+                expect(container.querySelector('#medly-singleSelect-input')).toHaveValue('Dummy3');
                 expect(mockOnChange).toHaveBeenCalledWith('Dummy3');
             });
 
@@ -339,12 +328,11 @@ describe('SingleSelect component', () => {
                             ]}
                             onChange={mockOnChange}
                         />
-                    ),
-                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-                fireEvent.click(inputEl);
+                    );
+                fireEvent.click(container.querySelector('#medly-singleSelect-input'));
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-                expect(inputEl.value).toEqual('Dummy3');
+                expect(container.querySelector('#medly-singleSelect-input')).toHaveValue('Dummy3');
                 expect(mockOnChange).toHaveBeenCalledWith('Dummy3');
             });
 
@@ -356,12 +344,11 @@ describe('SingleSelect component', () => {
                             options={[{ value: 'Dummy4', label: 'Dummy4', disabled: true }, ...options]}
                             onChange={mockOnChange}
                         />
-                    ),
-                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-                fireEvent.click(inputEl);
+                    );
+                fireEvent.click(container.querySelector('#medly-singleSelect-input'));
                 fireEvent.keyDown(container, { key: 'ArrowUp', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-                expect(inputEl.value).toEqual('Dummy3');
+                expect(container.querySelector('#medly-singleSelect-input')).toHaveValue('Dummy3');
                 expect(mockOnChange).toHaveBeenCalledWith('Dummy3');
             });
         });
@@ -369,13 +356,12 @@ describe('SingleSelect component', () => {
         describe('right arrow', () => {
             it('should open nested options', async () => {
                 const mockOnChange = jest.fn(),
-                    { container } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} />),
-                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-                fireEvent.click(inputEl);
+                    { container } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} />);
+                fireEvent.click(container.querySelector('#medly-singleSelect-input'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'ArrowRight', code: 39 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-                expect(inputEl.value).toEqual('Some 1');
+                expect(container.querySelector('#medly-singleSelect-input')).toHaveValue('Some 1');
                 expect(mockOnChange).toHaveBeenCalledWith('Some 1');
             });
         });
@@ -383,13 +369,12 @@ describe('SingleSelect component', () => {
         describe('left arrow', () => {
             it('should close nested options', async () => {
                 const mockOnChange = jest.fn(),
-                    { container } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} />),
-                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-                fireEvent.click(inputEl);
+                    { container } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} />);
+                fireEvent.click(container.querySelector('#medly-singleSelect-input'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'ArrowRight', code: 39 });
                 fireEvent.keyDown(container, { key: 'ArrowLeft', code: 37 });
-                expect(inputEl.value).toEqual('Dummy1');
+                expect(container.querySelector('#medly-singleSelect-input')).toHaveValue('Dummy1');
                 expect(container.querySelector('#Dummy2-options')).toBeNull();
             });
         });
@@ -397,12 +382,11 @@ describe('SingleSelect component', () => {
         describe('enter key', () => {
             it('should close options and select the hovered option', async () => {
                 const mockOnChange = jest.fn(),
-                    { container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} />),
-                    inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-                fireEvent.click(inputEl);
+                    { container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} />);
+                fireEvent.click(container.querySelector('#medly-singleSelect-input'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-                expect(inputEl.value).toEqual('Dummy1');
+                expect(container.querySelector('#medly-singleSelect-input')).toHaveValue('Dummy1');
                 expect(mockOnChange).toHaveBeenCalledWith('Dummy1');
             });
         });

@@ -156,7 +156,6 @@ describe('Form', () => {
             Object.defineProperty(fileInput, 'files', {
                 value: [fooFile]
             });
-            fireEvent.click(container.querySelector('#agree'));
             fireEvent.change(container.querySelector('#firstName-input'), {
                 target: { name: 'firstName', value: formData.firstName }
             });
@@ -195,6 +194,7 @@ describe('Form', () => {
             fireEvent.change(getByPlaceholderText('Maths'), {
                 target: { value: formData.marks.maths }
             });
+            fireEvent.click(container.querySelector('#agree'));
 
             fireEvent.submit(container.querySelector('form'));
             expect(mockOnSubmit).toHaveBeenCalledWith(formData);

@@ -187,6 +187,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c5:focus {
@@ -258,6 +259,10 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 .c0 .c1 {
   margin: 0;
   caret-color: transparent;
+}
+
+.c0 .c1 label {
+  pointer-events: none;
 }
 
 .c0 .c1 div,
@@ -518,6 +523,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c5:focus {
@@ -588,6 +594,10 @@ exports[`SingleSelect component should render properly when isSearchable is true
 
 .c0 .c1 {
   margin: 0;
+}
+
+.c0 .c1 label {
+  pointer-events: none;
 }
 
 .c0 .c1 div,
@@ -841,6 +851,7 @@ exports[`SingleSelect component with filled variant should render disabled state
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c5:focus {
@@ -912,6 +923,10 @@ exports[`SingleSelect component with filled variant should render disabled state
 .c0 .c1 {
   margin: 0;
   caret-color: transparent;
+}
+
+.c0 .c1 label {
+  pointer-events: none;
 }
 
 .c0 .c1 .c9 {
@@ -1421,6 +1436,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c5:focus {
@@ -1492,6 +1508,10 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 .c0 .c1 {
   margin: 0;
   caret-color: transparent;
+}
+
+.c0 .c1 label {
+  pointer-events: none;
 }
 
 .c0 .c1 div,
@@ -1729,6 +1749,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c5:focus {
@@ -1800,6 +1821,10 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 .c0 .c1 {
   margin: 0;
   caret-color: transparent;
+}
+
+.c0 .c1 label {
+  pointer-events: none;
 }
 
 .c0 .c1 .c9 {
@@ -2297,6 +2322,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
 }
 
 .c5:focus {
@@ -2368,6 +2394,10 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 .c0 .c1 {
   margin: 0;
   caret-color: transparent;
+}
+
+.c0 .c1 label {
+  pointer-events: none;
 }
 
 .c0 .c1 div,
