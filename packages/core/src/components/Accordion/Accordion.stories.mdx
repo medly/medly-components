@@ -1,0 +1,34 @@
+import Text from '../Text';
+import { defaultTheme } from '@medly-components/theme';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, color, select } from '@storybook/addon-knobs';
+import { SimpleAccordion, ThemeInterface } from './Accordion.stories';
+import { Accordion } from './Accordion';
+
+
+<Meta title="Core" component={Accordion} parameters={{ jest: ['Accordion.test.tsx'] }} />
+
+# Accordion
+
+Accordion is a container that can either stand alone or be connected with other components.
+
+<Preview withToolbar>
+    <Story name="Accordion" parameters={{ decorators: [withKnobs] }}>
+        <Accordion
+            title="Uploaded Files"
+            bgColor={color('Background color', defaultTheme.accordion.backgroundColor)}
+            titleColor={color('Title Color', defaultTheme.colors.black)}
+        >
+            <div>File 1</div>
+        </Accordion>
+    </Story>
+</Preview>
+
+
+### Props
+
+<Props of={Accordion} />
+
+#### Accordion Theme
+
+<Props of={ThemeInterface} />
