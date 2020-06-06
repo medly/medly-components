@@ -31,7 +31,7 @@ const solid = ({ theme, color }: Props) => {
 const outlined = ({ theme, color }: Props) => {
     const { colors } = theme.button;
     return css`
-        border: 0.2rem solid;
+        border: 0.1rem solid;
         color: ${colors[color].bgColor};
         border-color: ${colors[color].bgColor};
         ${SvgIcon} {
@@ -44,6 +44,7 @@ const outlined = ({ theme, color }: Props) => {
             color: ${colors[color].hoverBgColor};
             border-color: ${colors[color].hoverBgColor};
             box-shadow: ${colors[color].shadowColor};
+            border: 0.2rem solid;
             ${SvgIcon} {
                 * {
                     fill: ${colors[color].hoverBgColor};
@@ -77,6 +78,8 @@ const flat = ({ theme, color }: Props) => {
 
         &:hover {
             color: ${colors[color].hoverBgColor};
+            text-decoration: underline;
+            text-underline-position: under;
             ${SvgIcon} {
                 * {
                     fill: ${colors[color].hoverBgColor};

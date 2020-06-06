@@ -17,17 +17,17 @@ const button = {
         default: {
             bgColor: colors.communityBlue[500],
             hoverBgColor: colors.communityBlue[400],
-            shadowColor: '0 0.4rem 0.8rem rgba(0, 90, 238, 0.35)'
+            shadowColor: '0 0.4rem 0.8rem rgba(0, 90, 238, 0.2)'
         },
         confirmation: {
             bgColor: colors.green[500],
             hoverBgColor: colors.green[400],
-            shadowColor: '0 0.4rem 0.8rem rgba(0,128,0, 0.35)'
+            shadowColor: '0 0.4rem 0.8rem rgba(0,128,0, 0.2)'
         },
         error: {
             bgColor: colors.red[500],
             hoverBgColor: colors.red[400],
-            shadowColor: '0 0.4rem 0.8rem rgba(204,0,0, 0.35)'
+            shadowColor: '0 0.4rem 0.8rem rgba(204,0,0, 0.2)'
         }
     },
     borderRadius: {
