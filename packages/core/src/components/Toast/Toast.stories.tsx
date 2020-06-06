@@ -13,8 +13,11 @@ ThemeInterface.defaultProps = {
 };
 
 export const Basic = () => (
-    <Toast variant={select('Variant', variant, 'success')} onClose={action('Close icon cliked')} heading="Default Notification">
-        If there is a long description that breaks to multiple lines, then the height of the component should increase by the line height of
-        the added text.
-    </Toast>
+    <Toast
+        variant={select('Variant', variant, 'success')}
+        onClose={action('Close icon cliked')}
+        heading="Default Notification"
+        message="If there is a long description that breaks to multiple lines, then the height of the component should increase by the line height of
+    the added text."
+    ></Toast>
 );

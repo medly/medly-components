@@ -1,5 +1,5 @@
 import { CheckIcon, ClearIcon, ErrorIcon, NotificationsIcon, WarningAmberIcon } from '@medly-components/icons';
-import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
+import { WithStyle } from '@medly-components/utils';
 import React, { SFC, useEffect, useState } from 'react';
 import Text from '../Text';
 import * as Styled from './Toast.styled';
@@ -7,7 +7,7 @@ import { Props } from './types';
 
 export const Toast: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { variant, onClose, heading, ...restProps } = props,
+        const { variant, onClose, heading, message, ...restProps } = props,
             [show, setShowState] = useState(false);
 
         useEffect(() => {
@@ -27,24 +27,12 @@ export const Toast: SFC<Props> & WithStyle = React.memo(
                     }
                 </Styled.SvgWrapper>
                 <Styled.ToastContent>
-                    {React.Children.map(props.children, c => {
-                        if (isValidStringOrNumber(c)) {
-                            {
-                                return props.heading ? (
-                                    <span>
-                                        <Text fullWidth={true} textVariant="body2" textWeight="Medium">
-                                            {heading}
-                                        </Text>
-                                        <Text>{c}</Text>
-                                    </span>
-                                ) : (
-                                    <Text>{c}</Text>
-                                );
-                            }
-                        } else {
-                            return c;
-                        }
-                    })}
+                    {heading && (
+                        <Text fullWidth textVariant="body2" textWeight="Medium">
+                            {heading}
+                        </Text>
+                    )}
+                    {message && <Text fullWidth>{message}</Text>}
                 </Styled.ToastContent>
                 <ClearIcon onClick={onClose} />
             </Styled.Toast>

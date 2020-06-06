@@ -127,5 +127,7 @@
         "typescript": "^3.9.2",
         "webpack": "^4.43.0"
     },
-    "dependencies": {}
+    "dependencies": {
+        "effector-react": "^20.7.3"
+    }
 }

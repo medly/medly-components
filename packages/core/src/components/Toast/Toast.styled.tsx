@@ -15,6 +15,7 @@ export const Toast = styled('div')<StyledProps>`
     ${Text.Style} {
         color: ${({ theme }) => theme.toast.textColor};
     }
+
     ${SvgIcon} {
         padding: 12px;
         * {
@@ -35,6 +36,7 @@ export const SvgWrapper = styled('div')<StyledProps>`
 
 export const ToastContent = styled('div')`
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    padding: 4px 0 12px 20px;
+    margin: 4px 0 4px 20px;
 `;

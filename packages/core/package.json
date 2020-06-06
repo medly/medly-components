@@ -22,6 +22,8 @@
         "@medly-components/icons": "1.0.0-beta.28",
         "@medly-components/theme": "1.0.0-beta.21",
         "@medly-components/utils": "1.0.0-beta.24",
+        "effector": "^20.15.8",
+        "effector-react": "^20.7.3",
         "polished": "^3.6.2"
     },
     "devDependencies": {
