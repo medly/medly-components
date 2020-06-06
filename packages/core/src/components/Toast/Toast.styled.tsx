@@ -5,19 +5,21 @@ import { StyledProps } from './types';
 
 export const Toast = styled('div')<StyledProps>`
     display: flex;
+    position: relative;
     align-items: stretch;
-    min-width: 250px;
-    padding-right: 8px;
-    box-shadow: 0 8px 32px ${({ theme }) => theme.toast.boxShadow};
-    border-radius: 4px;
-    border-left: 4px solid ${({ theme, variant }) => theme.toast.fillColor[variant]};
+    min-width: 25rem;
+    box-shadow: 0 0.8rem 3.2rem ${({ theme }) => theme.toast.boxShadow};
+    border-radius: 0.4rem;
+    border-left: 0.4rem solid ${({ theme, variant }) => theme.toast.fillColor[variant]};
 
     ${Text.Style} {
         color: ${({ theme }) => theme.toast.textColor};
     }
 
-    ${SvgIcon} {
-        padding: 12px;
+    & > ${SvgIcon} {
+        position: absolute;
+        right: 1.2rem;
+        top: 1.2rem;
         * {
             fill: ${({ theme }) => theme.toast.textColor};
         }
@@ -28,6 +30,7 @@ export const SvgWrapper = styled('div')<StyledProps>`
     background-color: ${({ theme, variant }) => theme.toast.bgColor[variant]};
 
     ${SvgIcon} {
+        padding: 1.2rem;
         * {
             fill: ${({ theme, variant }) => theme.toast.fillColor[variant]};
         }
@@ -36,7 +39,8 @@ export const SvgWrapper = styled('div')<StyledProps>`
 
 export const ToastContent = styled('div')`
     display: flex;
+    background-color: ${({ theme }) => theme.colors.white};
     flex-direction: column;
     flex-grow: 1;
-    margin: 4px 0 4px 20px;
+    padding: 1.3rem 1.6rem;
 `;

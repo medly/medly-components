@@ -53,7 +53,7 @@ const getPosition = (position: Props['position']) => {
 export const Container = styled('div')<Props>`
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 2rem;
     position: fixed;
     z-index: 1000;
     ${({ position }) => getPosition(position)}

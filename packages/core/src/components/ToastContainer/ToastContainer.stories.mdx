@@ -1,6 +1,10 @@
 import { ToastContainer } from './ToastContainer.component';
+import Button from '../Button';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './ToastContainer.stories';
+import { withKnobs, select } from '@storybook/addon-knobs';
+import { positions, ToastButtons } from './ToastContainer.stories';
+import { addToast } from './ToastStore.ts';
+import { PersonAddIcon } from '@medly-components/icons';
 
 <Meta title="Core" component={ToastContainer} />
 
@@ -8,7 +12,38 @@ import * as stories from './ToastContainer.stories';
 
 ### Shows all the toast at particular position on the page
 
-<Story name="ToastContainer">{stories.Basic()}</Story>
+<Preview>
+    <Story name="ToastContainer" decorators={[withKnobs]}>
+        <>
+            <ToastContainer position={select('Position', positions, 'top')}></ToastContainer>
+            <ToastButtons>
+                <Button
+                    onClick={() => {
+                        addToast({
+                            variant: 'info',
+                            header: 'Default Notification',
+                            message: 'If there is a long description that breaks to multiple lines, then the height of the'
+                        });
+                    }}
+                >
+                    Raise toast
+                </Button>
+                <Button
+                    onClick={() => {
+                        addToast({
+                            icon: PersonAddIcon,
+                            variant: 'info',
+                            header: 'Default Notification',
+                            message: 'If there is a long description that breaks to multiple lines, then the height of the'
+                        });
+                    }}
+                >
+                    Raise toast with Icon
+                </Button>
+            </ToastButtons>
+        </>
+    </Story>
+</Preview>
 
 ### Props
 

@@ -1,17 +1,31 @@
 import { createEvent, createStore } from 'effector';
+import { ToastVariants } from '../Toast/types';
 
 type Toast = {
+    /** Auto generated id of the Toast */
     id?: number;
-    header?: number;
+    /** Variant of the toast */
+    variant: ToastVariants;
+    /** Header of the toast */
+    header?: string;
+    /** Message of the toast */
     message?: string;
+    /** Custom of the toast */
+    icon?: React.SFC<any>;
+    /** Toast will automatically will be close after this time */
+    timer?: number;
 };
 
-export const addToast = createEvent();
-const removeToast = createEvent();
+export const addToast = createEvent<Toast>();
+export const removeToast = createEvent<number>();
 
 const toast = createStore<Toast[]>([])
-    .on(addToast, (state, toast: Toast) => [...state, toast])
-    .on(removeToast, (state, id) => state.filter(toast => toast !== id))
+    .on(addToast, (state, toast) => {
+        const id = Math.floor(Math.random() * 100);
+        setTimeout(() => removeToast(id), toast.timer || 5000);
+        return [...state, { ...toast, id }];
+    })
+    .on(removeToast, (state, id) => state.filter(toast => toast.id !== id))
     .reset(removeToast);
 
 export default toast;

@@ -7281,6 +7281,18 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
+effector-react@^20.7.3:
+  version "20.7.3"
+  resolved "https://registry.yarnpkg.com/effector-react/-/effector-react-20.7.3.tgz#461edde5bd1663026d32c6bd8834c525b33eabd7"
+  integrity sha512-bqSZDk2yw9pntaYQTMDLvke3pcuj2gi0+fKJEUZbAfV4j9E9DBMkVG+SggkPqq95R4ne4F8I8+RjNyC11K4iAQ==
+
+effector@^20.15.8:
+  version "20.15.9"
+  resolved "https://registry.yarnpkg.com/effector/-/effector-20.15.9.tgz#488a738c5d02653808f160ab99a29f8ce9afb869"
+  integrity sha512-3NHrYNu+g/tGMAIShGKux+CiAtW/gAelZbYUmRXhYNRfepFddlby48laP+uNSYu/4UrKqjifKu3Xjy5WOZGBJA==
+  dependencies:
+    symbol-observable "^1.2.0"
+
 ejs@^2.7.4:
   version "2.7.4"
   resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.7.4.tgz#48661287573dcc53e366c7a1ae52c3a120eec9ba"
@@ -15304,6 +15316,11 @@ svgo@^1.2.2:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+symbol-observable@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
+  integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==
 
 symbol-tree@^3.2.2:
   version "3.2.4"

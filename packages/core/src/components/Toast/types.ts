@@ -1,11 +1,17 @@
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
-export interface Props extends HTMLProps<HTMLDivElement> {
+export type ToastVariants = 'success' | 'error' | 'info' | 'warning';
+
+export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'id'> {
+    /** Id of the Toast */
+    id?: number;
     /** Toast purpose */
-    variant: 'success' | 'error' | 'info' | 'warning';
-    /** Function to be called on close */
-    onClose?: () => void;
-    heading?: string;
+    variant: ToastVariants;
+    /** Icon to be shown in the toast */
+    icon?: React.SFC<any>;
+    /** Toast Header */
+    header?: string;
+    /** Toast message */
     message?: string;
 }
 

@@ -11,9 +11,9 @@ export const ToastContainer: SFC<Props> & WithStyle = React.memo(
         const toasts = useStore(toast);
         return (
             <Styled.Container ref={ref} {...props}>
-                {toasts.map(toast => {
-                    return <Toast key={toast.id} heading={toast.heading} message={toast.message} variant={toast.variant}></Toast>;
-                })}
+                {toasts.map(toast => (
+                    <Toast key={toast.id} {...toast} />
+                ))}
             </Styled.Container>
         );
     })
