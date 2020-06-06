@@ -3,10 +3,7 @@ import { styled } from '@medly-components/utils';
 import Text from '../Text';
 import { StyledProps } from './types';
 
-// @ts-ignore
-const fillColor = ({ theme, variant }: StyledProps) => theme.toast[`${variant}`];
-// @ts-ignore
-const bgColor = ({ theme, variant }: StyledProps) => theme.toast[`${variant}`];
+const fillColor = ({ theme, variant }: StyledProps) => theme.toast.fillColor[variant];
 
 export const Toast = styled('div')<StyledProps>`
     display: flex;
@@ -32,7 +29,7 @@ export const Toast = styled('div')<StyledProps>`
 `;
 
 export const SvgWrapper = styled('div')<StyledProps>`
-    background-color: ${bgColor};
+    background-color: ${({ theme, variant }) => theme.toast.bgColor[variant]};
 
     ${SvgIcon} {
         padding: 1.2rem;
