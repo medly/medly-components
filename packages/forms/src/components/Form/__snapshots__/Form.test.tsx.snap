@@ -1640,10 +1640,8 @@ exports[`Form should render properly with initial state 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
-                  stroke="#000"
-                  stroke-linecap="round"
-                  stroke-width="2"
+                  d="M5.795 10.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                  fill="green"
                 />
               </svg>
             </div>
@@ -1676,10 +1674,8 @@ exports[`Form should render properly with initial state 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
-                  stroke="#000"
-                  stroke-linecap="round"
-                  stroke-width="2"
+                  d="M5.795 10.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                  fill="green"
                 />
               </svg>
             </div>
@@ -2190,10 +2186,8 @@ exports[`Form should render properly with initial state 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
-              stroke="#000"
-              stroke-linecap="round"
-              stroke-width="2"
+              d="M5.795 10.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+              fill="green"
             />
           </svg>
         </div>
@@ -3672,10 +3666,8 @@ exports[`Form should render properly without initial state 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
-                  stroke="#000"
-                  stroke-linecap="round"
-                  stroke-width="2"
+                  d="M5.795 10.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                  fill="green"
                 />
               </svg>
             </div>
@@ -3708,10 +3700,8 @@ exports[`Form should render properly without initial state 1`] = `
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
-                  stroke="#000"
-                  stroke-linecap="round"
-                  stroke-width="2"
+                  d="M5.795 10.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                  fill="green"
                 />
               </svg>
             </div>
@@ -4197,10 +4187,8 @@ exports[`Form should render properly without initial state 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
-              stroke="#000"
-              stroke-linecap="round"
-              stroke-width="2"
+              d="M5.795 10.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+              fill="green"
             />
           </svg>
         </div>

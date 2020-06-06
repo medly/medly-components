@@ -19,6 +19,10 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
   transform: translateX(-50%);
 }
 
+.c0 > * + * {
+  margin-top: 2rem;
+}
+
 <div>
   <div
     class="c0"
@@ -42,6 +46,10 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
   right: 0;
 }
 
+.c0 > * + * {
+  margin-top: 2rem;
+}
+
 <div>
   <div
     class="c0"
@@ -63,6 +71,10 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
   z-index: 1000;
   bottom: 0;
   left: 0;
+}
+
+.c0 > * + * {
+  margin-top: 2rem;
 }
 
 <div>
@@ -91,6 +103,10 @@ exports[`ToastContainer should render properly with position left 1`] = `
   transform: translateY(-50%);
 }
 
+.c0 > * + * {
+  margin-top: 2rem;
+}
+
 <div>
   <div
     class="c0"
@@ -112,6 +128,10 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
   z-index: 1000;
 }
 
+.c0 > * + * {
+  margin-top: 2rem;
+}
+
 <div>
   <div
     class="c0"
@@ -131,6 +151,10 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
   padding: 2rem;
   position: fixed;
   z-index: 1000;
+}
+
+.c0 > * + * {
+  margin-top: 2rem;
 }
 
 <div>
@@ -159,6 +183,10 @@ exports[`ToastContainer should render properly with position right 1`] = `
   transform: translateY(-50%);
 }
 
+.c0 > * + * {
+  margin-top: 2rem;
+}
+
 <div>
   <div
     class="c0"
@@ -180,6 +208,10 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
   z-index: 1000;
 }
 
+.c0 > * + * {
+  margin-top: 2rem;
+}
+
 <div>
   <div
     class="c0"
@@ -199,6 +231,10 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
   padding: 2rem;
   position: fixed;
   z-index: 1000;
+}
+
+.c0 > * + * {
+  margin-top: 2rem;
 }
 
 <div>
@@ -227,6 +263,10 @@ exports[`ToastContainer should render properly with position top 1`] = `
   transform: translateX(-50%);
 }
 
+.c0 > * + * {
+  margin-top: 2rem;
+}
+
 <div>
   <div
     class="c0"
@@ -250,6 +290,10 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
   right: 0;
 }
 
+.c0 > * + * {
+  margin-top: 2rem;
+}
+
 <div>
   <div
     class="c0"
@@ -271,6 +315,10 @@ exports[`ToastContainer should render properly with position top-start 1`] = `
   z-index: 1000;
   top: 0;
   left: 0;
+}
+
+.c0 > * + * {
+  margin-top: 2rem;
 }
 
 <div>

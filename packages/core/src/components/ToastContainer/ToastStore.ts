@@ -10,22 +10,19 @@ export interface Toast {
     header?: string;
     /** Message of the toast */
     message?: string;
-    /** Custom of the toast */
+    /** Custom icon */
     icon?: React.SFC<any>;
-    /** Toast will automatically will be close after this time */
+    /** Time after which toast will automatically removed */
     timer?: number;
 }
 
 export const addToast = createEvent<Toast>();
 export const removeToast = createEvent<number>();
 
-const toastStore = createStore<Toast[]>([])
+export const toastStore = createStore<Toast[]>([])
     .on(addToast, (state, toast) => {
         const id = Math.floor(Math.random() * 100);
         setTimeout(() => removeToast(id), toast.timer || 5000);
         return [...state, { ...toast, id }];
     })
-    .on(removeToast, (state, id) => state.filter(toast => toast.id !== id))
-    .reset(removeToast);
-
-export default toastStore;
+    .on(removeToast, (state, id) => state.filter(toast => toast.id !== id));

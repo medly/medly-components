@@ -44,5 +44,5 @@ export const ToastContent = styled('div')`
     background-color: ${({ theme }) => theme.colors.white};
     flex-direction: column;
     flex-grow: 1;
-    padding: 1.3rem 1.6rem;
+    padding: 1.3rem 5.6rem 1.3rem 1.6rem;
 `;

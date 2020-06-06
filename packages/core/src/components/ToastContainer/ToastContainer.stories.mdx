@@ -6,41 +6,63 @@ import { positions, ToastButtons, AddToast } from './ToastContainer.stories';
 import { addToast } from './ToastStore.ts';
 import { PersonAddIcon } from '@medly-components/icons';
 
-<Meta title="Core" component={ToastContainer} />
+<Meta title="Core" component={ToastContainer} parameters={{ jest: ['ToastContainer.test.tsx'] }} />
 
 # ToastContainer
 
-### Raise a toast notification by triggering an action
+Raise a toast notification by triggering an action. You have to add `<ToastContainer/>` in your app at root level and then just use `addToast` function to raise the toast.
+
+```tsx
+import { ToastContainer, addToast } from '@medly-components/core';
+
+export const App: React.SFC = () => {
+    const handleClick = () => addToast({ variant: 'success', header: 'User Notification', message: 'User successfully added' });
+
+    return (
+        <>
+            <button onClick={handleClick}>Notify !</button>
+            <ToastContainer position="top" />
+        </>
+    );
+};
+```
 
 <Preview>
     <Story name="ToastContainer" decorators={[withKnobs]}>
         <>
             <ToastContainer position={select('Position', positions, 'top')}></ToastContainer>
-            <ToastButtons>
-                <Button
-                    onClick={() => {
-                        addToast({
-                            variant: 'info',
-                            header: 'Default Notification',
-                            message: 'If there is a long description that breaks to multiple lines, then the height of the'
-                        });
-                    }}
-                >
-                    Raise toast
-                </Button>
-                <Button
-                    onClick={() => {
-                        addToast({
-                            icon: PersonAddIcon,
-                            variant: 'info',
-                            header: 'Default Notification',
-                            message: 'If there is a long description that breaks to multiple lines, then the height of the'
-                        });
-                    }}
-                >
-                    Raise toast with Icon
-                </Button>
-            </ToastButtons>
+            <Button
+                onClick={() => {
+                    addToast({
+                        variant: 'success',
+                        header: 'Success Notification',
+                        message: 'Lorem Ipsum is simply dummy text.'
+                    });
+                    addToast({
+                        variant: 'warning',
+                        header: 'Warning Notification',
+                        message: 'Lorem Ipsum is simply dummy text.'
+                    });
+                    addToast({
+                        variant: 'info',
+                        header: 'Info Notification',
+                        message: 'Lorem Ipsum is simply dummy text.'
+                    });
+                    addToast({
+                        variant: 'error',
+                        header: 'Error Notification',
+                        message: 'Lorem Ipsum is simply dummy text.'
+                    });
+                    addToast({
+                        variant: 'success',
+                        icon: PersonAddIcon,
+                        header: 'Custom Icon',
+                        message: 'Lorem Ipsum is simply dummy text.'
+                    });
+                }}
+            >
+                Raise toast
+            </Button>
         </>
     </Story>
 </Preview>
@@ -49,10 +71,6 @@ import { PersonAddIcon } from '@medly-components/icons';
 
 <Props of={ToastContainer} />
 
-
-### Add Toast
-
-Raise a toast notification by calling AddToast method with following keys <br/><br/>
-Usage: addToast({ variant; 'success', header; 'Heading 1', message: 'Info message' })
+### addToast param types
 
 <Props of={AddToast} />

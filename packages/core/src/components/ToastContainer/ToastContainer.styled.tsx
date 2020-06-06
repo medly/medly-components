@@ -57,4 +57,8 @@ export const Container = styled('div')<Props>`
     position: fixed;
     z-index: 1000;
     ${({ position }) => getPosition(position)}
+
+    & > * + * {
+        margin-top: 2rem;
+    }
 `;
