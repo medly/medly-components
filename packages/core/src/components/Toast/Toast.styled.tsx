@@ -3,6 +3,11 @@ import { styled } from '@medly-components/utils';
 import Text from '../Text';
 import { StyledProps } from './types';
 
+// @ts-ignore
+const fillColor = ({ theme, variant }: StyledProps) => theme.toast[`${variant}`];
+// @ts-ignore
+const bgColor = ({ theme, variant }: StyledProps) => theme.toast[`${variant}`];
+
 export const Toast = styled('div')<StyledProps>`
     display: flex;
     position: relative;
@@ -10,7 +15,7 @@ export const Toast = styled('div')<StyledProps>`
     min-width: 25rem;
     box-shadow: 0 0.8rem 3.2rem ${({ theme }) => theme.toast.boxShadow};
     border-radius: 0.4rem;
-    border-left: 0.4rem solid ${({ theme, variant }) => theme.toast.fillColor[variant]};
+    border-left: 0.4rem solid ${fillColor};
 
     ${Text.Style} {
         color: ${({ theme }) => theme.toast.textColor};
@@ -27,12 +32,12 @@ export const Toast = styled('div')<StyledProps>`
 `;
 
 export const SvgWrapper = styled('div')<StyledProps>`
-    background-color: ${({ theme, variant }) => theme.toast.bgColor[variant]};
+    background-color: ${bgColor};
 
     ${SvgIcon} {
         padding: 1.2rem;
         * {
-            fill: ${({ theme, variant }) => theme.toast.fillColor[variant]};
+            fill: ${fillColor};
         }
     }
 `;

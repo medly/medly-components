@@ -8,8 +8,3 @@ export const ThemeInterface: React.SFC<ToastTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.toast
 };
-
-export const ThemeInterface: React.SFC<ToastTheme> = () => null;
-ThemeInterface.defaultProps = {
-    ...defaultTheme.toast
-};

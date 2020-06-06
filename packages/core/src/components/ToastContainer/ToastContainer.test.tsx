@@ -1,6 +1,5 @@
 import { cleanup, render } from '@test-utils';
 import React from 'react';
-import Toast from '../Toast';
 import { ToastContainer } from './ToastContainer.component';
 import { Props } from './types';
 
@@ -21,11 +20,7 @@ describe('ToastContainer', () => {
         'left',
         'left-start'
     ])('should render properly with position %s', (position: Props['position']) => {
-        const { container } = render(
-            <ToastContainer position={position}>
-                <Toast variant="success">Hello</Toast>
-            </ToastContainer>
-        );
+        const { container } = render(<ToastContainer position={position}></ToastContainer>);
         expect(container).toMatchSnapshot();
     });
 });

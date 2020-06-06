@@ -1,7 +1,7 @@
 import { createEvent, createStore } from 'effector';
 import { ToastVariants } from '../Toast/types';
 
-type Toast = {
+export interface Toast {
     /** Auto generated id of the Toast */
     id?: number;
     /** Variant of the toast */
@@ -14,12 +14,12 @@ type Toast = {
     icon?: React.SFC<any>;
     /** Toast will automatically will be close after this time */
     timer?: number;
-};
+}
 
 export const addToast = createEvent<Toast>();
 export const removeToast = createEvent<number>();
 
-const toast = createStore<Toast[]>([])
+const toastStore = createStore<Toast[]>([])
     .on(addToast, (state, toast) => {
         const id = Math.floor(Math.random() * 100);
         setTimeout(() => removeToast(id), toast.timer || 5000);
@@ -28,4 +28,4 @@ const toast = createStore<Toast[]>([])
     .on(removeToast, (state, id) => state.filter(toast => toast.id !== id))
     .reset(removeToast);
 
-export default toast;
+export default toastStore;

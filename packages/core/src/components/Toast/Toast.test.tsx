@@ -7,27 +7,28 @@ describe('Toast', () => {
     afterEach(cleanup);
 
     test.each(['error', 'warning', 'success', 'info'])('should render properly with %s variant', (variant: Props['variant']) => {
-        const { container } = render(<Toast variant={variant}>Hello</Toast>);
+        const { container } = render(<Toast variant={variant}></Toast>);
         expect(container).toMatchSnapshot();
     });
 
-    it('should render properly if child jsx', () => {
-        const { container } = render(
-            <Toast variant="success">
-                <p>Hello</p>
-            </Toast>
-        );
+    it('should render header text', () => {
+        const { container } = render(<Toast variant="success" header="Heading 1"></Toast>);
         expect(container).toMatchSnapshot();
     });
 
-    it('should call on Close when click on the clear icon', () => {
-        const mockOnClose = jest.fn();
-        const { container } = render(
-            <Toast variant="success" onClose={mockOnClose}>
-                Hello
-            </Toast>
-        );
-        fireEvent.click(container.querySelectorAll('svg')[1]);
-        expect(mockOnClose).toBeCalled();
+    it('should render message text', () => {
+        const { container } = render(<Toast variant="success" message="Info message"></Toast>);
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render header and message text', () => {
+        const { container } = render(<Toast variant="success" header="Heading 1" message="Info message"></Toast>);
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should close toast when close icon is clicked', () => {
+        const { container } = render(<Toast variant="success" header="Heading 1" message="Info message" />);
+        fireEvent.click(container.querySelectorAll('svg')[1], 2);
+        expect(container).toMatchSnapshot();
     });
 });
