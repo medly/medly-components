@@ -20,8 +20,8 @@ export const Wrapper = styled('div')<CheckboxWrapperProps>`
     width: ${({ theme, size }) => theme.checkbox.sizes[size || theme.checkbox.defaultSize]};
     height: ${({ theme, size }) => theme.checkbox.sizes[size || theme.checkbox.defaultSize]};
     border-radius: 15%;
-    border: 1px solid ${({ theme }) => theme.checkbox.colors.default.borderColor};
-    background-color: ${({ theme }) => theme.checkbox.colors.default.bgColor};
+    border: 1px solid ${({ theme, isActive }) => theme.checkbox.colors[isActive ? 'active' : 'default'].borderColor};
+    background-color: ${({ theme, isActive }) => theme.checkbox.colors[isActive ? 'active' : 'default'].bgColor};
 
     ${CheckIcon.Style} {
         * {
@@ -31,10 +31,34 @@ export const Wrapper = styled('div')<CheckboxWrapperProps>`
 
     &:hover {
         border: 1px solid ${({ theme }) => theme.checkbox.colors.hover.borderColor};
-        background-color: ${({ theme, isActive }) => theme.checkbox.colors[isActive ? 'hover' : 'default'].bgColor};
+        background-color: ${({ theme, isActive, disabled }) => {
+            if (disabled) {
+                return theme.checkbox.colors[isActive ? 'checkedDisabled' : 'disabled'].bgColor;
+            } else {
+                return theme.checkbox.colors[isActive ? 'hover' : 'default'].bgColor;
+            }
+        }};
     }
 
-    ${({ theme, disabled }) => disabled && getStyle(theme.checkbox.colors.disabled)}
+    ${({ isActive, disabled, error, theme }) => {
+        const { checkedDisabled, checkedError, error: errorStyle, disabled: disabledStyle } = theme.checkbox.colors;
+
+        if (isActive && disabled) {
+            return getStyle(checkedDisabled);
+        }
+
+        if (isActive && error) {
+            return getStyle(checkedError);
+        }
+
+        if (error) {
+            return getStyle(errorStyle);
+        }
+
+        if (disabled) {
+            return getStyle(disabledStyle);
+        }
+    }}
 
     ${centerAligned()}
 `;

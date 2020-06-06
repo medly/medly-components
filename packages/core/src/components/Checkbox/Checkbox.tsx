@@ -44,7 +44,7 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
                         {label}
                     </FieldWithLabel.Label>
                 )}
-                <Styled.Wrapper size={size} disabled={restProps.disabled} isActive={isActive}>
+                <Styled.Wrapper size={size} disabled={restProps.disabled} isActive={isActive} error={restProps.error}>
                     <Styled.Checkbox ref={inputRef} id={id || label} required={required} onChange={changeHandler} {...restProps} />
                     <CheckMaterialIcon onClick={changeHandler} />
                 </Styled.Wrapper>

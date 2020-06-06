@@ -17,6 +17,13 @@ const checkbox: CheckboxTheme = {
             outlineColor: '',
             textColor: colors.black
         },
+        disabled: {
+            borderColor: colors.grey[500],
+            iconColor: colors.grey[500],
+            bgColor: colors.white,
+            outlineColor: '',
+            textColor: colors.grey[500]
+        },
         hover: {
             borderColor: colors.communityBlue[400],
             iconColor: colors.white,
@@ -24,8 +31,8 @@ const checkbox: CheckboxTheme = {
             outlineColor: '',
             textColor: colors.black
         },
-        disabled: {
-            borderColor: colors.grey[500],
+        checkedDisabled: {
+            borderColor: colors.grey[200],
             iconColor: colors.grey[500],
             bgColor: colors.grey[200],
             outlineColor: '',
@@ -39,6 +46,13 @@ const checkbox: CheckboxTheme = {
             textColor: colors.black
         },
         error: {
+            borderColor: colors.red[500],
+            iconColor: colors.white, // not needed here
+            bgColor: colors.white,
+            outlineColor: '',
+            textColor: colors.black
+        },
+        checkedError: {
             borderColor: colors.red[500],
             iconColor: colors.white,
             bgColor: colors.red[500],

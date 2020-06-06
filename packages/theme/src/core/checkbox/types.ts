@@ -14,8 +14,10 @@ export interface CheckboxTheme {
         default: Colors;
         hover: Colors;
         disabled: Colors;
+        checkedDisabled: Colors;
         active: Colors;
         error: Colors;
+        checkedError: Colors;
     };
     defaultSize: CheckboxSizes;
 }
