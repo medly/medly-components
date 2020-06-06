@@ -1,6 +1,6 @@
-import { CheckIcon } from '@medly-components/icons';
-import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback } from 'react';
+import { CheckMaterialIcon } from '@medly-components/icons';
+import { useCombinedRefs, WithStyle } from '@medly-components/utils';
+import React, { SFC, useCallback, useState } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './Checkbox.styled';
 import { Props } from './types';
@@ -21,9 +21,13 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
             ...restProps
         } = props;
 
+        const inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
+            [isActive, setActiveState] = useState(restProps.checked || restProps.defaultChecked);
+
         const changeHandler = useCallback(
             (e: any) => {
                 e.stopPropagation();
+                setActiveState((e.target as HTMLInputElement).checked);
                 onChange && onChange(e);
             },
             [onChange]
@@ -40,9 +44,9 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
                         {label}
                     </FieldWithLabel.Label>
                 )}
-                <Styled.Wrapper size={size} disabled={restProps.disabled}>
-                    <Styled.Checkbox ref={ref} id={id || label} required={required} onChange={changeHandler} {...restProps} />
-                    <CheckIcon onClick={changeHandler} />
+                <Styled.Wrapper size={size} disabled={restProps.disabled} isActive={isActive}>
+                    <Styled.Checkbox ref={inputRef} id={id || label} required={required} onChange={changeHandler} {...restProps} />
+                    <CheckMaterialIcon onClick={changeHandler} />
                 </Styled.Wrapper>
             </FieldWithLabel>
         );
