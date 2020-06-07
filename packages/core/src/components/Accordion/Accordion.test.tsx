@@ -1,26 +1,25 @@
-import { render } from '@test-utils';
+import { fireEvent, render, waitFor } from '@test-utils';
 import React from 'react';
 import { Accordion } from './Accordion';
-import { fireEvent, waitFor } from '@testing-library/dom';
 
 describe('Accordion component', () => {
-
     const renderAccordion = () =>
         render(
-            <Accordion title="Test Accordion">
-                <p>Test Text</p>
+            <Accordion>
+                <Accordion.Title>List Of Components</Accordion.Title>
+                <Accordion.Content>Avatar</Accordion.Content>
             </Accordion>
-        )
-    it('should render accordion with default prop values', () => {
+        );
+    it('should render properly', () => {
         const { container } = renderAccordion();
         expect(container).toMatchSnapshot();
     });
 
     it('should render children when accordion is clicked', async () => {
-        const { getByText, queryByText  } = renderAccordion();
-        fireEvent.click(getByText(/Test Accordion/));
-        await waitFor(() => expect(getByText(/Test Text/)).toBeInTheDocument());
-        fireEvent.click(getByText(/Test Accordion/));
-        expect(queryByText(/Test Text/)).not.toBeInTheDocument();
+        const { getByText, queryByText } = renderAccordion();
+        fireEvent.click(getByText(/List Of Components/));
+        await waitFor(() => expect(getByText(/Avatar/)).toBeInTheDocument());
+        fireEvent.click(getByText(/List Of Components/));
+        expect(queryByText(/Avatar/)).not.toBeInTheDocument();
     });
 });
