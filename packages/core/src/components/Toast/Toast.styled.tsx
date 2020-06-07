@@ -7,6 +7,7 @@ const fillColor = ({ theme, variant }: StyledProps) => theme.toast.fillColor[var
 
 export const Toast = styled('div')<StyledProps>`
     display: flex;
+    flex-direction: row;
     position: relative;
     align-items: stretch;
     min-width: 25rem;
@@ -29,6 +30,7 @@ export const Toast = styled('div')<StyledProps>`
 `;
 
 export const SvgWrapper = styled('div')<StyledProps>`
+    display: flex;
     background-color: ${({ theme, variant }) => theme.toast.bgColor[variant]};
 
     ${SvgIcon} {
@@ -41,8 +43,8 @@ export const SvgWrapper = styled('div')<StyledProps>`
 
 export const ToastContent = styled('div')`
     display: flex;
+    flex: 1;
     background-color: ${({ theme }) => theme.colors.white};
     flex-direction: column;
-    flex-grow: 1;
     padding: 1.3rem 5.6rem 1.3rem 1.6rem;
 `;

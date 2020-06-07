@@ -28,7 +28,7 @@ export const Toast: SFC<Props> & WithStyle = React.memo(
                 </Styled.SvgWrapper>
                 <Styled.ToastContent>
                     {header && <Text textWeight="Medium">{header}</Text>}
-                    {message && <Text fullWidth>{message}</Text>}
+                    {message && <Text>{message}</Text>}
                 </Styled.ToastContent>
                 <ClearIcon size="M" onClick={handleClose} />
             </Styled.Toast>

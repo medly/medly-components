@@ -30,6 +30,9 @@ exports[`Toast should render custom icons 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   position: relative;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -56,6 +59,10 @@ exports[`Toast should render custom icons 1`] = `
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #CCE6CC;
 }
 
@@ -72,14 +79,13 @@ exports[`Toast should render custom icons 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   background-color: #ffffff;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   padding: 1.3rem 5.6rem 1.3rem 1.6rem;
 }
 
@@ -173,8 +179,6 @@ exports[`Toast should render header and message text 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  display: block;
-  margin: 0.8rem 0;
 }
 
 .c0 {
@@ -182,6 +186,9 @@ exports[`Toast should render header and message text 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   position: relative;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -208,6 +215,10 @@ exports[`Toast should render header and message text 1`] = `
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #CCE6CC;
 }
 
@@ -224,14 +235,13 @@ exports[`Toast should render header and message text 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   background-color: #ffffff;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   padding: 1.3rem 5.6rem 1.3rem 1.6rem;
 }
 
@@ -251,8 +261,9 @@ exports[`Toast should render header and message text 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M5.795 10.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-          fill="green"
+          d="M8.8 15.905l-3.5-3.5a.984.984 0 0 0-1.4 0 .984.984 0 0 0 0 1.4l4.19 4.19c.39.39 1.02.39 1.41 0l10.6-10.59a.984.984 0 0 0 0-1.4.984.984 0 0 0-1.4 0l-9.9 9.9z"
+          fill="#000"
+          fill-opacity=".54"
         />
       </svg>
     </div>
@@ -318,6 +329,9 @@ exports[`Toast should render properly with error variant 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   position: relative;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -344,6 +358,10 @@ exports[`Toast should render properly with error variant 1`] = `
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #F5CCCC;
 }
 
@@ -360,14 +378,13 @@ exports[`Toast should render properly with error variant 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   background-color: #ffffff;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   padding: 1.3rem 5.6rem 1.3rem 1.6rem;
 }
 
@@ -446,6 +463,9 @@ exports[`Toast should render properly with info variant 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   position: relative;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -472,6 +492,10 @@ exports[`Toast should render properly with info variant 1`] = `
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #ccdefc;
 }
 
@@ -488,14 +512,13 @@ exports[`Toast should render properly with info variant 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   background-color: #ffffff;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   padding: 1.3rem 5.6rem 1.3rem 1.6rem;
 }
 
@@ -574,6 +597,9 @@ exports[`Toast should render properly with success variant 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   position: relative;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -600,6 +626,10 @@ exports[`Toast should render properly with success variant 1`] = `
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #CCE6CC;
 }
 
@@ -616,14 +646,13 @@ exports[`Toast should render properly with success variant 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   background-color: #ffffff;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   padding: 1.3rem 5.6rem 1.3rem 1.6rem;
 }
 
@@ -643,8 +672,9 @@ exports[`Toast should render properly with success variant 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M5.795 10.875l-3.47-3.47a.996.996 0 1 0-1.41 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-          fill="green"
+          d="M8.8 15.905l-3.5-3.5a.984.984 0 0 0-1.4 0 .984.984 0 0 0 0 1.4l4.19 4.19c.39.39 1.02.39 1.41 0l10.6-10.59a.984.984 0 0 0 0-1.4.984.984 0 0 0-1.4 0l-9.9 9.9z"
+          fill="#000"
+          fill-opacity=".54"
         />
       </svg>
     </div>
@@ -699,6 +729,9 @@ exports[`Toast should render properly with warning variant 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   position: relative;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -725,6 +758,10 @@ exports[`Toast should render properly with warning variant 1`] = `
 }
 
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #FEF7DC;
 }
 
@@ -741,14 +778,13 @@ exports[`Toast should render properly with warning variant 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   background-color: #ffffff;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   padding: 1.3rem 5.6rem 1.3rem 1.6rem;
 }
 
