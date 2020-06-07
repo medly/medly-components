@@ -1,13 +1,30 @@
-import { SearchBox } from './SearchBox';
-import { Preview, Story, Meta } from '@storybook/addon-docs/blocks';
+import { SearchBox } from './SearchBox.tsx';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './SearchBox.stories';
 
 <Meta title="Core" component={SearchBox} />
 
 # SearchBox
 
-### Small SearchBox
+### Add a auto suggest text box
 
 <Preview withToolbar>
     <Story name="SearchBox">{stories.Basic()}</Story>
+</Preview>
+
+
+### Props
+
+<Props of={SearchBox} />
+
+##### Small search text box
+
+<Preview>
+    <SearchBox boxSize='S' />
+</Preview>
+
+##### Medium search text box
+
+<Preview>
+     <SearchBox boxSize='M' />
 </Preview>
