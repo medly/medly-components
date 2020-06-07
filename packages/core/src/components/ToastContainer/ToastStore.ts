@@ -4,11 +4,11 @@ import { ToastVariants } from '../Toast/types';
 export interface Toast {
     /** Auto generated id of the Toast */
     id?: number;
-    /** Variant of the toast */
+    /** Toast purpose */
     variant: ToastVariants;
-    /** Header of the toast */
+    /** Toast Header */
     header?: string;
-    /** Message of the toast */
+    /** Toast message */
     message?: string;
     /** Custom icon */
     icon?: React.SFC<any>;
