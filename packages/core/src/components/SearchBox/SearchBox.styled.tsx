@@ -13,6 +13,7 @@ export const SearchBoxWrapper = styled('div')<Props>`
         position: absolute;
         right: 1.2rem;
         top: 1.1rem;
+        cursor: pointer;
         * {
             fill: ${({ theme }) => theme.searchBox.iconColor};
         }
@@ -54,6 +55,12 @@ export const SearchBox = styled('input')<Props>`
             color: ${({ theme }) => theme.searchBox.active.placeholderTextColor};
         }
     }
+`;
+
+export const CloseIconWrapper = styled('span')`
+    border: solid 1px red;
+    position: absolute;
+    right: 3rem;
 `;
 
 SearchBox.defaultProps = {
