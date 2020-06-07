@@ -1,0 +1,13 @@
+import { SearchBox } from './SearchBox';
+import { Preview, Story, Meta } from '@storybook/addon-docs/blocks';
+import * as stories from './SearchBox.stories';
+
+<Meta title="Core" component={SearchBox} />
+
+# SearchBox
+
+### Small SearchBox
+
+<Preview withToolbar>
+    <Story name="SearchBox">{stories.Basic()}</Story>
+</Preview>

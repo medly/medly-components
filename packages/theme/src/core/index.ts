@@ -15,6 +15,7 @@ import link from './link';
 import modal from './modal';
 import radio from './radio';
 import reactDatepicker from './reactDatepicker';
+import searchBox from './searchBox';
 import select from './select';
 import spacing from './spacing';
 import stepper from './stepper';
@@ -42,6 +43,7 @@ export const coreDefaultTheme = {
     modal,
     radio,
     reactDatepicker,
+    searchBox,
     select,
     spacing,
     stepper,
