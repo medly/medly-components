@@ -20,6 +20,8 @@ export const Input = styled('input').attrs(({ theme: { textField } }) => ({ ...t
     transition: all 100ms ease-out;
     background: transparent;
     border: none;
+    text-overflow: ellipsis;
+
     ${({ isLabelPresent }) => isLabelPresent && styleWithLabel};
 
     &:focus {

@@ -166,10 +166,6 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                                         );
 
                                     case 'date': {
-                                        // console.log(
-                                        //     '===============>',
-                                        //     format(value || null, (componentProps as DateRangePickerProps).displayFormat)
-                                        // );
                                         return (
                                             <DatePicker
                                                 {...({

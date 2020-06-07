@@ -28,7 +28,7 @@ export const Form: React.SFC<Props> & WithStyle = React.memo(
             ref
         ) => {
             const formId = useMemo(() => id || 'medly-dynamic-form', [id]),
-                { values, handlers, errorMessages, addErrorMessage, setErrorMessages } = useForm(initialState);
+                { values, formKey, handlers, errorMessages, addErrorMessage, setErrorMessages } = useForm(initialState);
 
             useEffect(() => {
                 apiErrorMessages && Object.keys(apiErrorMessages).length && setErrorMessages(apiErrorMessages);
@@ -39,6 +39,7 @@ export const Form: React.SFC<Props> & WithStyle = React.memo(
                     {...restProps}
                     id={formId}
                     ref={ref}
+                    key={formKey}
                     onSubmit={handlers.handleFormSubmit(onSubmit)}
                     onReset={handlers.handleFormReset(onReset)}
                 >

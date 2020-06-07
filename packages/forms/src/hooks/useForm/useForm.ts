@@ -8,6 +8,7 @@ import { Handlers, UseFormResult } from './types';
 export const useForm = (initialState: object): UseFormResult => {
     const [values, setValues] = useState(createDottedKeyObject(initialState));
     const [errorMessages, setErrorMessages] = useState({});
+    const [formKey, setFormKey] = useState(0);
 
     const addErrorMessage = useCallback((key: string, message: string) => {
         setErrorMessages(error => ({ ...error, [key]: message }));
@@ -42,6 +43,7 @@ export const useForm = (initialState: object): UseFormResult => {
             event.preventDefault();
             setValues({});
             setErrorMessages({});
+            setFormKey(key => key + 1);
             onReset && onReset(event);
         }),
         []
@@ -49,16 +51,16 @@ export const useForm = (initialState: object): UseFormResult => {
 
     const handleTextChange: Handlers['handleTextChange'] = useCallback(
         memoize(name => event => {
-            const target = event.target as HTMLInputElement;
-            setValues(val => ({ ...val, [name]: target.value }));
+            const { value } = event.target as HTMLInputElement;
+            setValues(val => ({ ...val, [name]: value }));
         }),
         []
     );
 
     const handleNumberChange: Handlers['handleNumberChange'] = useCallback(
         memoize(name => event => {
-            const target = event.target as HTMLInputElement;
-            setValues(val => ({ ...val, [name]: Number(target.value) }));
+            const { value } = event.target as HTMLInputElement;
+            setValues(val => ({ ...val, [name]: Number(value) }));
         }),
         []
     );
@@ -75,8 +77,8 @@ export const useForm = (initialState: object): UseFormResult => {
 
     const handleCheckboxChange: Handlers['handleCheckboxChange'] = useCallback(
         memoize(name => event => {
-            const target = event.target as HTMLInputElement;
-            setValues(val => ({ ...val, [name]: target.checked }));
+            const { checked } = event.target as HTMLInputElement;
+            setValues(val => ({ ...val, [name]: checked }));
         }),
         []
     );
@@ -109,6 +111,7 @@ export const useForm = (initialState: object): UseFormResult => {
     );
 
     return {
+        formKey,
         values,
         setValues,
         errorMessages,

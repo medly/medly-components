@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.35](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.34...@medly-components/core@1.0.0-beta.35) (2020-06-05)
+
+
+### Bug Fixes
+
+* fix form clear issue ([374a51e](https://github.com/medly/medly-components/commit/374a51eb580ade889e6e8fffa6257cf4fa99535e))
+* fix textfield and singleselect component validation ([c121bce](https://github.com/medly/medly-components/commit/c121bceb343fd18cde74b1468393a0879943e591))
+
+
+### Features
+
+* **core:** add accordion component ([eed4eb3](https://github.com/medly/medly-components/commit/eed4eb30e8883686a1e531d74fb144b8aa653e40))
+
+
+
+
+
 # [1.0.0-beta.34](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.33...@medly-components/core@1.0.0-beta.34) (2020-06-01)
 
 

@@ -17,7 +17,7 @@ FieldWrapper.defaultProps = {
 
 export const Header = styled(Text)`
     grid-column: 1/-1;
-    margin-top: 1rem;
+    margin-top: 2.6rem;
 `;
 
 export const HelperText = styled(Text)`

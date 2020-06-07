@@ -122,11 +122,12 @@ exports[`Form should not render any field if component type is not matched 1`] =
 
 .c0 > h2 {
   grid-column: 1/-1;
+  margin-bottom: 0.8rem;
 }
 
 .c0 > span {
   grid-column: 1/-1;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 <div>
@@ -802,6 +803,7 @@ exports[`Form should render properly with initial state 1`] = `
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -877,6 +879,10 @@ exports[`Form should render properly with initial state 1`] = `
 .c47 .c2 {
   margin: 0;
   caret-color: transparent;
+}
+
+.c47 .c2 label {
+  pointer-events: none;
 }
 
 .c47 .c2 div,
@@ -1420,7 +1426,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c58 {
   grid-column: 1/-1;
-  margin-top: 1rem;
+  margin-top: 2.6rem;
 }
 
 .c59 {
@@ -1442,11 +1448,12 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c0 > h2 {
   grid-column: 1/-1;
+  margin-bottom: 0.8rem;
 }
 
 .c0 > span {
   grid-column: 1/-1;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 <div>
@@ -2823,6 +2830,7 @@ exports[`Form should render properly without initial state 1`] = `
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
+  text-overflow: ellipsis;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -2898,6 +2906,10 @@ exports[`Form should render properly without initial state 1`] = `
 .c49 .c5 {
   margin: 0;
   caret-color: transparent;
+}
+
+.c49 .c5 label {
+  pointer-events: none;
 }
 
 .c49 .c5 div,
@@ -3441,7 +3453,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c58 {
   grid-column: 1/-1;
-  margin-top: 1rem;
+  margin-top: 2.6rem;
 }
 
 .c59 {
@@ -3459,11 +3471,12 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c0 > h2 {
   grid-column: 1/-1;
+  margin-bottom: 0.8rem;
 }
 
 .c0 > span {
   grid-column: 1/-1;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 <div>

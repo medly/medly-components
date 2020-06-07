@@ -10,10 +10,11 @@ export const Form = styled('form')<{ fullWidth?: boolean; minWidth?: string }>`
 
     & > h2 {
         grid-column: 1/-1;
+        margin-bottom: 0.8rem;
     }
 
     & > span {
         grid-column: 1/-1;
-        margin-bottom: 1.6rem;
+        margin-bottom: 1rem;
     }
 `;

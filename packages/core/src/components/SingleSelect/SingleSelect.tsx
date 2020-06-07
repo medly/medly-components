@@ -141,6 +141,7 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                 areOptionsVisible={areOptionsVisible}
             >
                 <TextField
+                    key={selectedOption.value}
                     variant={variant}
                     fullWidth
                     autoComplete="off"
