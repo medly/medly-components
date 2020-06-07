@@ -14,7 +14,7 @@ Simple button component with different design & colors.
 You can play with the props in canvas tab.
 
 <Preview withToolbar>
-    <Story name="Button" parameters={{ decorators: [withKnobs] }}>
+    <Story name="Button" decorators={[withKnobs]}>
         <Button
             size={select('Size', sizes, 'S')}
             fullWidth={boolean('Full Width', false)}

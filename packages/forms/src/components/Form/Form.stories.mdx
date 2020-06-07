@@ -118,7 +118,7 @@ Form schema basically is a simple json which includes the info of each field. Th
 You can play with this form in the `Canvas` tab.
 
 <Preview withToolbar>
-    <Story name="Form" parameters={{ decorators: [withKnobs] }}>
+    <Story name="Form" decorators={[withKnobs]}>
         <Form
             header={text('Header', 'Form Header')}
             helperText={text(

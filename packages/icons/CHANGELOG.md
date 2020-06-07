@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.27](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.0-beta.26...@medly-components/icons@1.0.0-beta.27) (2020-06-01)
+
+
+### Bug Fixes
+
+* remove few deprecated storybook functionality ([b1a12bd](https://github.com/medly/medly-components/commit/b1a12bd347550b56e8b7985cbd0013a56108c5dd))
+
+
+
+
+
 # [1.0.0-beta.26](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.0-beta.25...@medly-components/icons@1.0.0-beta.26) (2020-05-23)
 
 **Note:** Version bump only for package @medly-components/icons

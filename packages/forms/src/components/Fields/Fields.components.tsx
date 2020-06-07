@@ -78,7 +78,6 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                                     case 'password':
                                         return (
                                             <TextField
-                                                withBuiltInValidation
                                                 {...({
                                                     ...commonProps,
                                                     value: value || '',
@@ -90,7 +89,6 @@ export const Fields: React.SFC<Props> = React.memo(props => {
                                     case 'number':
                                         return (
                                             <TextField
-                                                withBuiltInValidation
                                                 {...({
                                                     ...commonProps,
                                                     value: value || '',

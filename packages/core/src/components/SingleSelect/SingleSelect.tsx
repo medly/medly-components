@@ -106,7 +106,8 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                     setTimeout(() => !isFocused.current && hideOptions(), 150);
                 },
                 [onBlur]
-            );
+            ),
+            handleKeyPress = useCallback((event: React.KeyboardEvent) => !isSearchable && event.preventDefault(), [isSearchable]);
 
         useEffect(() => {
             const selected = getDefaultSelectedOption(defaultOptions, value);
@@ -137,11 +138,9 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                 isSearchable={isSearchable}
                 isErrorPresent={!!props.errorText}
                 onClick={toggleOptions}
-                withBuiltInValidation={inputProps.withBuiltInValidation}
                 areOptionsVisible={areOptionsVisible}
             >
                 <TextField
-                    readOnly={!isSearchable}
                     variant={variant}
                     fullWidth
                     autoComplete="off"
@@ -153,6 +152,7 @@ export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
                     ref={inputRef}
                     onChange={handleInputChange}
                     suffix={ChevronDownIcon}
+                    onKeyPress={handleKeyPress}
                     {...inputProps}
                 />
                 {!disabled && areOptionsVisible && (

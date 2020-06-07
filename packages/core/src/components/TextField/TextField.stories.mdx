@@ -3,7 +3,7 @@ import Text from '../Text';
 import { AddCircleOutlineIcon, AddCircleIcon, CheckCircleIcon } from '@medly-components/icons';
 import { withKnobs, text, color, select, boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import { ThemeInterface, variants, BuiltIn, Custom } from './TextField.stories.tsx';
+import { ThemeInterface, variants, Custom } from './TextField.stories.tsx';
 
 <Meta title="Core" component={TextField} parameters={{ jest: ['TextField.test.tsx'] }} />
 
@@ -12,7 +12,7 @@ import { ThemeInterface, variants, BuiltIn, Custom } from './TextField.stories.t
 Basic TextField component with lot of customization
 
 <Preview withToolbar>
-    <Story name="TextField" parameters={{ decorators: [withKnobs] }}>
+    <Story name="TextField" decorators={[withKnobs]}>
         <TextField
             id="storybook-input"
             type="email"
@@ -92,82 +92,28 @@ If you dont want to apply the label color on your prefix and suffix just pass yo
     <TextField id="filled-suffix-text-without-color" type="Name" variant="filled" label="Email" suffix={() => <Text>.com</Text>} />
 </Preview>
 
-<Props of={TextField} />
-
 ### Form Validation
 
-There are multiple ways to valide the form. But we explaining below two ways to validate the form.
+You can give validator function to check the value and return the error messages. If your validator return empty string then HTML5 default error message will be rendered if any. We can create a generic react hook like below to handle onchange event.
 
-#### 1) BuiltIn form validation
-
-In TextField we have provided `type="email"` and `required` prop. Providing these two prop will ensure that user has to fill valid email address.
+<Preview>
+    <Custom />
+</Preview>
 
 ```tsx
 type Result = [
     {
         value: string;
         onChange: (e: React.FormEvent<HTMLInputElement>) => void;
-    }
+    },
+    React.Dispatch<React.SetStateAction<string>>
 ];
 
 export const useTextInput = (initialState = ''): Result => {
     const [value, setValue] = useState(initialState),
         onChange = useCallback((event: React.FormEvent) => setValue((event.target as HTMLInputElement).value), []);
-    return [{ value, onChange }];
-};
 
-export const BuiltIn: React.SFC = () => {
-    const [email] = useTextInput(''),
-        handleFormSubmit = (e: React.FormEvent) => e.preventDefault();
-
-    return (
-        <Form onSubmit={handleFormSubmit}>
-            <TextField
-                withBuiltInValidation
-                type="email"
-                label="Email"
-                placeholder="Enter email"
-                required
-                {..eamil}
-            />
-            <Button type="submit">Submit</Button>
-        </Form>
-    );
-};
-```
-
-<Preview>
-    <BuiltIn />
-</Preview>
-
-#### 2) Custom form validation
-
-In Custom validation we have to handle all the cases. We can create a generic react hook like below to handle error scenarios.
-
-```tsx
-type Result = [
-    {
-        value: string;
-        errorText: string;
-        onChange: (e: React.FormEvent<HTMLInputElement>) => void;
-        onBlur: (e: React.FormEvent<HTMLInputElement>) => void;
-        onInvalid: (e: React.FormEvent<HTMLInputElement>) => void;
-    },
-    React.Dispatch<React.SetStateAction<string>>
-];
-
-export const useTextInput = ({ initialState = '', validator = (vl: string) => '' }): Result => {
-    const [value, setValue] = useState(initialState),
-        [errorText, setErrorText] = useState('');
-
-    const onChange = useCallback((event: React.FormEvent) => setValue((event.target as HTMLInputElement).value), []),
-        onBlur = useCallback((event: React.FormEvent) => setErrorText((event.target as HTMLInputElement).validationMessage), []),
-        onInvalid = useCallback((event: React.FormEvent) => {
-            event.preventDefault();
-            setErrorText((event.target as HTMLInputElement).validationMessage);
-        }, []);
-
-    return [{ value, errorText, onChange, onBlur, onInvalid }, setErrorText];
+    return [{ value, onChange }, setValue];
 };
 ```
 
@@ -180,21 +126,21 @@ const emailValidation = (value: string) => {
 };
 
 export const Custom: React.SFC = () => {
-    const [email] = useTextInput({ initialState: '', validator: emailValidation }),
+    const [email] = useTextInput(''),
         handleFormSubmit = useCallback((e: React.FormEvent) => e.preventDefault(), []);
 
     return (
         <Form onSubmit={handleFormSubmit}>
-            <TextField type="email" label="Email" placeholder="Enter email" required {...email} />
+            <TextField type="email" label="Email" placeholder="Enter email" required {...email} validator={emailValidation} />
             <Button type="submit">Submit</Button>
         </Form>
     );
 };
 ```
 
-<Preview>
-    <Custom />
-</Preview>
+### Props
+
+<Props of={TextField} />
 
 ### TextFieldTheme
 

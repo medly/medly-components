@@ -257,6 +257,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 
 .c0 .c1 {
   margin: 0;
+  caret-color: transparent;
 }
 
 .c0 .c1 div,
@@ -302,7 +303,6 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
             class="c5"
             id="medly-singleSelect-input"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value=""
           />
@@ -911,6 +911,7 @@ exports[`SingleSelect component with filled variant should render disabled state
 
 .c0 .c1 {
   margin: 0;
+  caret-color: transparent;
 }
 
 .c0 .c1 .c9 {
@@ -949,7 +950,6 @@ exports[`SingleSelect component with filled variant should render disabled state
             disabled=""
             id="medly-singleSelect-input"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value=""
           />
@@ -1491,6 +1491,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 
 .c0 .c1 {
   margin: 0;
+  caret-color: transparent;
 }
 
 .c0 .c1 div,
@@ -1536,7 +1537,6 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
             class="c5"
             id="medly-singleSelect-input"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value=""
           />
@@ -1799,6 +1799,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 
 .c0 .c1 {
   margin: 0;
+  caret-color: transparent;
 }
 
 .c0 .c1 .c9 {
@@ -1837,7 +1838,6 @@ exports[`SingleSelect component with outlined variant should render disabled sta
             disabled=""
             id="medly-singleSelect-input"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value=""
           />
@@ -2367,6 +2367,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 
 .c0 .c1 {
   margin: 0;
+  caret-color: transparent;
 }
 
 .c0 .c1 div,
@@ -2412,7 +2413,6 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
             class="c5"
             id="medly-singleSelect-input"
             placeholder="Please Select . . ."
-            readonly=""
             type="text"
             value=""
           />

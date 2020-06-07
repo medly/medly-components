@@ -44,7 +44,7 @@ describe('TextField', () => {
         const mockOnClick = jest.fn();
         const { container } = render(
             <div onClick={mockOnClick}>
-                <TextField withBuiltInValidation label="Name" required type="email" />
+                <TextField label="Name" required type="email" />
             </div>
         );
         expect(container).toMatchSnapshot();
@@ -55,12 +55,10 @@ describe('TextField', () => {
         expect(container.querySelector('label')).toMatchSnapshot();
     });
 
-    describe('with builtin form validation', () => {
+    describe('error Validation', () => {
         it('should render html5 error message on invalid form submission', async () => {
             const mockOnInvalid = jest.fn(),
-                { container, findByText } = render(
-                    <TextField withBuiltInValidation label="Name" required type="email" onInvalid={mockOnInvalid} />
-                );
+                { container, findByText } = render(<TextField label="Name" required type="email" onInvalid={mockOnInvalid} />);
             fireEvent.invalid(container.querySelector('input'));
             const message = await findByText('Constraints not satisfied');
             expect(message).toBeInTheDocument();
@@ -69,12 +67,24 @@ describe('TextField', () => {
 
         it('should render html5 error message on moving focus out with invalid value', async () => {
             const mockOnBlur = jest.fn(),
-                { container, findByText } = render(
-                    <TextField withBuiltInValidation label="Name" required type="email" value="a" onBlur={mockOnBlur} />
-                );
+                { container, findByText } = render(<TextField label="Name" required type="email" value="a" onBlur={mockOnBlur} />);
             fireEvent.focus(container.querySelector('input'));
             fireEvent.blur(container.querySelector('input'));
             const message = await findByText('Constraints not satisfied');
+            expect(message).toBeInTheDocument();
+            expect(mockOnBlur).toHaveBeenCalled();
+        });
+
+        it('should render custom error message if validator function is provided', async () => {
+            const mockOnBlur = jest.fn(),
+                validator = (val: string) => (val.length < 3 ? 'Email should be more then 3 characters' : ''),
+                { container, findByText } = render(
+                    <TextField label="Name" required type="email" value="a" onBlur={mockOnBlur} validator={validator} />
+                ),
+                input = container.querySelector('input');
+            fireEvent.change(input, { target: { value: 'Du' } });
+            fireEvent.blur(input);
+            const message = await findByText('Email should be more then 3 characters');
             expect(message).toBeInTheDocument();
             expect(mockOnBlur).toHaveBeenCalled();
         });
