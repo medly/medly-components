@@ -1,23 +1,61 @@
+import { SvgIcon } from '@medly-components/icons';
+import { defaultTheme } from '@medly-components/theme';
 import { styled } from '@medly-components/utils';
+import { Props } from './types';
 
-export const SearchBox = styled('input')`
-    height: 40px;
-    min-width: 256px;
-    background: #fff;
-    box-sizing: border-box;
-    border: 1px solid #98a7b7;
-    border-radius: 40px;
-    font-size: 14px;
-    padding-left: 20px;
-    outline: none;
+const getSearchBoxSize = ({ theme, boxSize }: Props) => theme.searchBox.sizes[boxSize].height;
 
-    &:hover {
-        border: 1px solid #607890;
-        box-shadow: 0 2px 8px rgba(96, 120, 144, 0.25);
-    }
+export const SearchBoxWrapper = styled('div')<Props>`
+    position: relative;
+    width: 25.6rem;
 
-    &:active {
-        border: 1px solid #005aee;
-        box-shadow: 0 2px 16px rgba(96, 120, 144, 0.25);
+    ${SvgIcon} {
+        position: absolute;
+        right: 1.2rem;
+        top: 1.1rem;
+        * {
+            fill: ${({ theme }) => theme.searchBox.iconColor};
+        }
     }
 `;
+
+export const SearchBox = styled('input')<Props>`
+    height: ${getSearchBoxSize};
+    width: 100%;
+    background: ${({ theme }) => theme.searchBox.bgColor};
+    box-sizing: border-box;
+    border: 0.1rem solid ${({ theme }) => theme.searchBox.borderColor};
+    border-radius: 4.9rem;
+    font-size: 1.4rem;
+    padding-left: 2rem;
+    outline: none;
+    color: ${({ theme }) => theme.searchBox.textColor};
+
+    &::placeholder {
+        color: ${({ theme }) => theme.searchBox.placeholderTextColor};
+    }
+
+    &:hover {
+        border: solid 0.1rem ${({ theme }) => theme.searchBox.hover.borderColor};
+        box-shadow: ${({ theme }) => theme.searchBox.hover.boxShadow};
+    }
+
+    &:focus {
+        border: solid 0.1rem ${({ theme }) => theme.searchBox.active.borderColor};
+        box-shadow: ${({ theme }) => theme.searchBox.active.boxShadow};
+
+        ${SvgIcon} {
+            * {
+                fill: ${({ theme }) => theme.searchBox.active.borderColor};
+            }
+        }
+
+        &::placeholder {
+            color: ${({ theme }) => theme.searchBox.active.placeholderTextColor};
+        }
+    }
+`;
+
+SearchBox.defaultProps = {
+    theme: defaultTheme
+};
