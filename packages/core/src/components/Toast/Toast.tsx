@@ -1,4 +1,4 @@
-import { CheckIcon, ClearIcon, ErrorIcon, NotificationsIcon, WarningAmberIcon } from '@medly-components/icons';
+import { ClearIcon, DoneIcon, ErrorIcon, NotificationsIcon, WarningAmberIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
 import React, { SFC, useCallback } from 'react';
 import Text from '../Text';
@@ -22,7 +22,7 @@ export const Toast: SFC<Props> & WithStyle = React.memo(
                             error: <ErrorIcon />,
                             warning: <WarningAmberIcon />,
                             info: <NotificationsIcon />,
-                            success: <CheckIcon />
+                            success: <DoneIcon />
                         }[variant]
                     )}
                 </Styled.SvgWrapper>

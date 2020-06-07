@@ -1,5 +1,5 @@
 import { defaultTheme, ToastTheme } from '@medly-components/theme';
-import { styled } from '@medly-components/utils/src';
+import { styled } from '@medly-components/utils';
 import React from 'react';
 import { Props } from './types';
 
