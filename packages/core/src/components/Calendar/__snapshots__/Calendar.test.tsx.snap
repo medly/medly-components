@@ -51,6 +51,7 @@ exports[`Calendar Component should render given date 1`] = `
 
 .c2 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -58,12 +59,11 @@ exports[`Calendar Component should render given date 1`] = `
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   background: transparent;
-  color: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -78,6 +78,11 @@ exports[`Calendar Component should render given date 1`] = `
   align-items: center;
 }
 
+.c2 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c2:hover {
   cursor: pointer;
 }
@@ -90,20 +95,49 @@ exports[`Calendar Component should render given date 1`] = `
   cursor: not-allowed;
 }
 
-.c2 .c15 * {
-  fill: #005AEE;
-}
-
-.c2:hover {
-  color: #1A6BF0;
-}
-
-.c2:hover .c15 * {
-  fill: #1A6BF0;
+.c2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  bottom: 1.05rem;
+  left: 50%;
+  background: #1A6BF0;
+  height: 0.15rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.15rem;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 .c2:disabled {
   color: #b0bcc8;
+}
+
+.c2:disabled .c15 * {
+  fill: #b0bcc8;
+}
+
+.c2:not(:disabled):not(:hover) {
+  color: #005AEE;
+}
+
+.c2:not(:disabled):not(:hover) .c15 * {
+  fill: #005AEE;
+}
+
+.c2:not(:disabled):hover {
+  color: #1A6BF0;
+}
+
+.c2:not(:disabled):hover .c15 * {
+  fill: #1A6BF0;
+}
+
+.c2:not(:disabled):hover::after {
+  width: calc(100% - 4.8rem);
 }
 
 .c2 .c15 + .c3 {

@@ -15,6 +15,7 @@ exports[`Form should not render any field if component type is not matched 1`] =
 
 .c3 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -22,12 +23,10 @@ exports[`Form should not render any field if component type is not matched 1`] =
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 100rem;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -42,6 +41,11 @@ exports[`Form should not render any field if component type is not matched 1`] =
   align-items: center;
 }
 
+.c3 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c3:hover {
   cursor: pointer;
 }
@@ -54,19 +58,30 @@ exports[`Form should not render any field if component type is not matched 1`] =
   cursor: not-allowed;
 }
 
-.c3 .sc-AxiKw * {
+.c3:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c3:disabled .sc-AxiKw * {
+  fill: #dfe4e9;
+}
+
+.c3:not(:disabled) {
+  color: #ffffff;
+}
+
+.c3:not(:disabled) .sc-AxiKw * {
   fill: #ffffff;
 }
 
-.c3:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c3:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c3:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c3:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c3 .sc-AxiKw + .c4 {
@@ -233,6 +248,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c66 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -240,12 +256,10 @@ exports[`Form should render properly with initial state 1`] = `
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 100rem;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -260,6 +274,11 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: center;
 }
 
+.c66 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c66:hover {
   cursor: pointer;
 }
@@ -272,19 +291,30 @@ exports[`Form should render properly with initial state 1`] = `
   cursor: not-allowed;
 }
 
-.c66 .c28 * {
+.c66:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c66:disabled .c28 * {
+  fill: #dfe4e9;
+}
+
+.c66:not(:disabled) {
+  color: #ffffff;
+}
+
+.c66:not(:disabled) .c28 * {
   fill: #ffffff;
 }
 
-.c66:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c66:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c66:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c66:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c66 .c28 + .c17 {
@@ -2306,6 +2336,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c66 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2313,12 +2344,10 @@ exports[`Form should render properly without initial state 1`] = `
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 100rem;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2333,6 +2362,11 @@ exports[`Form should render properly without initial state 1`] = `
   align-items: center;
 }
 
+.c66 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c66:hover {
   cursor: pointer;
 }
@@ -2345,19 +2379,30 @@ exports[`Form should render properly without initial state 1`] = `
   cursor: not-allowed;
 }
 
-.c66 .c30 * {
+.c66:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c66:disabled .c30 * {
+  fill: #dfe4e9;
+}
+
+.c66:not(:disabled) {
+  color: #ffffff;
+}
+
+.c66:not(:disabled) .c30 * {
   fill: #ffffff;
 }
 
-.c66:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c66:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c66:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c66:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c66 .c30 + .c1 {
