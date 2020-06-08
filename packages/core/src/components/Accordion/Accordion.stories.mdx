@@ -1,7 +1,9 @@
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { withKnobs } from '@storybook/addon-knobs';
-import { Basic, ThemeInterface, TitleWithCount} from './Accordion.stories';
+import { CountStyle, ThemeInterface, Data} from './Accordion.stories';
 import { Accordion  } from './Accordion';
+import { AccordionTheme, defaultTheme } from '@medly-components/theme';
+
 
 
 <Meta title="Core/Accordion" component={Accordion} parameters={{ jest: ['Accordion.test.tsx'] }} />
@@ -13,14 +15,31 @@ Accordion is a container that can either stand alone or be connected with other 
 #### Basic Accordion
 <Preview withToolbar>
     <Story name="BasicAccordion" parameters={{ decorators: [withKnobs] }}>
-        <Basic />
+        <Accordion>
+            <Accordion.Title>
+                <Text> Uploaded Files</Text>
+            </Accordion.Title>
+            <Accordion.Content>
+                <div>File 1</div>
+            </Accordion.Content>
+        </Accordion>
     </Story>
 </Preview>
 
 #### Accordion with title content
 <Preview withToolbar>
     <Story name="AccordionWithCount" parameters={{ decorators: [withKnobs] }}>
-        <TitleWithCount />
+        <Accordion>
+            <Accordion.Title bgColor={defaultTheme.colors.springTeal[100]}>
+                <Data> Uploaded Files</Data>
+                <CountStyle textColor={defaultTheme.colors.communityBlue[500]} textWeight="Strong">
+                    34
+                </CountStyle>
+            </Accordion.Title>
+            <Accordion.Content>
+                <div>File 1</div>
+            </Accordion.Content>
+        </Accordion>
     </Story>
 </Preview>
 

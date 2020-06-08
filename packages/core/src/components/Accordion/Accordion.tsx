@@ -1,4 +1,4 @@
-import React, { ReactElement, SFC, useState } from 'react';
+import React, { ReactElement, SFC, useCallback, useState } from 'react';
 import { Section } from './Accordion.styled';
 import Content from './Content';
 import Title from './Title';
@@ -8,9 +8,7 @@ export const Accordion: SFC & Props = React.memo(({ children }) => {
     const [title, content] = React.Children.toArray(children) as ReactElement[],
         [isActive, setIsActive] = useState(false);
 
-    const handleToggle = () => {
-        setIsActive(!isActive);
-    };
+    const handleToggle = useCallback(() => setIsActive(!isActive), [isActive]);
 
     return (
         <Section>
