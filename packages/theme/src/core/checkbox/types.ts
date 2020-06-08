@@ -4,7 +4,6 @@ type Colors = {
     borderColor: string;
     iconColor: string;
     bgColor: string;
-    textColor: string;
     outlineColor: string;
 };
 

@@ -19,7 +19,7 @@ export const Basic = () => (
         label="Orange"
         fullWidth={boolean('Full Width', false)}
         disabled={boolean('Disabled', false)}
-        error={boolean('error', false)}
+        error={boolean('Error', false)}
         labelPosition={select('Label Position', labelPosition, 'right')}
     />
 );

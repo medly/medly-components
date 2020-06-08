@@ -6,7 +6,6 @@ export type CheckboxColors = {
     borderColor: string;
     iconColor: string;
     bgColor: string;
-    textColor: string;
     outlineColor: string;
 };
 
@@ -36,5 +35,6 @@ export interface Props extends InputProps, WithThemeProp {
     labelWeight?: FontWeights;
     /** To be used if required in any form for example user needs to check 'I Agree' */
     required?: boolean;
-    error: boolean;
+    /** Error state for checkbox */
+    error?: boolean;
 }

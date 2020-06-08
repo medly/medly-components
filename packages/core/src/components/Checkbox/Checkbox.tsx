@@ -1,5 +1,6 @@
 import { CheckMaterialIcon } from '@medly-components/icons';
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
+import colors from 'packages/theme/src/core/colors';
 import React, { SFC, useCallback, useState } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './Checkbox.styled';
@@ -33,12 +34,14 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
             [onChange]
         );
 
+        const getLabelColor = restProps.disabled ? colors.grey[500] : colors.black;
+
         return (
             <FieldWithLabel id={`${label}-checkbox`} fieldWithMaxContent {...{ fullWidth, labelPosition }}>
                 {label && (
                     <FieldWithLabel.Label
                         showPointer={!restProps.disabled}
-                        {...{ required, labelPosition, labelVariant, labelWeight, labelColor }}
+                        {...{ required, labelPosition, labelVariant, labelWeight, labelColor: getLabelColor }}
                         htmlFor={id || label}
                     >
                         {label}

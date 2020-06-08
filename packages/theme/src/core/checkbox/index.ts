@@ -14,50 +14,43 @@ const checkbox: CheckboxTheme = {
             borderColor: colors.black,
             iconColor: colors.black,
             bgColor: colors.white,
-            outlineColor: '',
-            textColor: colors.black
+            outlineColor: ''
         },
         disabled: {
             borderColor: colors.grey[500],
             iconColor: colors.grey[500],
             bgColor: colors.white,
-            outlineColor: '',
-            textColor: colors.grey[500]
+            outlineColor: ''
         },
         hover: {
             borderColor: colors.communityBlue[400],
             iconColor: colors.white,
             bgColor: colors.communityBlue[400],
-            outlineColor: '',
-            textColor: colors.black
+            outlineColor: ''
         },
         checkedDisabled: {
             borderColor: colors.grey[200],
             iconColor: colors.grey[500],
             bgColor: colors.grey[200],
-            outlineColor: '',
-            textColor: colors.grey[500]
+            outlineColor: ''
         },
         active: {
             borderColor: colors.communityBlue[500],
             iconColor: colors.white,
             bgColor: colors.communityBlue[500],
-            outlineColor: '',
-            textColor: colors.black
+            outlineColor: ''
         },
         error: {
             borderColor: colors.red[500],
             iconColor: colors.white, // not needed here
             bgColor: colors.white,
-            outlineColor: '',
-            textColor: colors.black
+            outlineColor: ''
         },
         checkedError: {
             borderColor: colors.red[500],
             iconColor: colors.white,
             bgColor: colors.red[500],
-            outlineColor: '',
-            textColor: colors.black
+            outlineColor: ''
         }
     },
     defaultSize: 'S'

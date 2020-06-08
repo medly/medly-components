@@ -30,7 +30,10 @@ export const Wrapper = styled('div')<CheckboxWrapperProps>`
     }
 
     &:hover {
-        border: 1px solid ${({ theme }) => theme.checkbox.colors.hover.borderColor};
+        border: 1px solid
+            ${({ theme, disabled }) => {
+                return theme.checkbox.colors[disabled ? 'disabled' : 'hover'].borderColor;
+            }};
         background-color: ${({ theme, isActive, disabled }) => {
             if (disabled) {
                 return theme.checkbox.colors[isActive ? 'checkedDisabled' : 'disabled'].bgColor;
@@ -40,6 +43,7 @@ export const Wrapper = styled('div')<CheckboxWrapperProps>`
         }};
     }
 
+    /* TODO: elegant way to write these if else statements */
     ${({ isActive, disabled, error, theme }) => {
         const { checkedDisabled, checkedError, error: errorStyle, disabled: disabledStyle } = theme.checkbox.colors;
 
@@ -74,7 +78,7 @@ export const Checkbox = styled('input').attrs({ type: 'checkbox' })<Props>`
     height: 100%;
     position: absolute;
     margin: 0;
-    cursor: pointer;
+    cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
 
     & + ${CheckIcon.Style} {
         z-index: 1;
