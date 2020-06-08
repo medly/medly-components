@@ -56,6 +56,7 @@ exports[`Accordion component should invoke handleToggle when accordion is clicke
   outline: none;
   border: none;
   background-color: #ffffff;
+  color: #607890;
   border-radius: none;
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
@@ -137,6 +138,7 @@ exports[`Accordion component should render properly 1`] = `
   outline: none;
   border: none;
   background-color: #ffffff;
+  color: #607890;
   border-radius: 0.8rem;
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;

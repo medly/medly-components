@@ -35,6 +35,7 @@ exports[`Title component should change background color when provided 1`] = `
   outline: none;
   border: none;
   background-color: #e6effd;
+  color: #607890;
   border-radius: 0.8rem;
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
@@ -112,6 +113,7 @@ exports[`Title component should render properly 1`] = `
   outline: none;
   border: none;
   background-color: #ffffff;
+  color: #607890;
   border-radius: 0.8rem;
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
