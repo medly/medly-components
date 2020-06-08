@@ -34,7 +34,7 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
             [onChange]
         );
 
-        const getLabelColor = restProps.disabled ? colors.grey[500] : colors.black;
+        const getLabelColor = restProps.disabled ? colors.grey[500] : labelColor;
 
         return (
             <FieldWithLabel id={`${label}-checkbox`} fieldWithMaxContent {...{ fullWidth, labelPosition }}>
