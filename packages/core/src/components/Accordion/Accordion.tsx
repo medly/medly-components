@@ -1,5 +1,6 @@
 import React, { ReactElement, SFC, useCallback, useState } from 'react';
 import { Section } from './Accordion.styled';
+import { AccordionContext } from './AccordionContext';
 import Content from './Content';
 import Title from './Title';
 import { Props } from './types';
@@ -8,14 +9,13 @@ export const Accordion: SFC & Props = React.memo(({ children }) => {
     const [title, content] = React.Children.toArray(children) as ReactElement[],
         [isActive, setIsActive] = useState(false);
 
-    const handleToggle = useCallback(() => setIsActive(!isActive), [isActive]);
+    const handleToggle = useCallback(() => setIsActive(!isActive), [isActive]),
+        contextValue = React.useMemo(() => ({ isActive, toggle: handleToggle }), [isActive, setIsActive]);
 
     return (
         <Section>
-            <Title isActive={isActive} onToggle={handleToggle} {...title.props}>
-                {title.props.children}
-            </Title>
-            {isActive && <Content>{content.props.children}</Content>}
+            <AccordionContext.Provider value={contextValue}>{title}</AccordionContext.Provider>
+            {isActive && content}
         </Section>
     );
 });

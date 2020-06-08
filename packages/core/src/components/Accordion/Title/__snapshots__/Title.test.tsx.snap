@@ -35,7 +35,7 @@ exports[`Title component should change background color when provided 1`] = `
   outline: none;
   border: none;
   background-color: #e6effd;
-  border-radius: none;
+  border-radius: 0.8rem;
   border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
 }
@@ -45,9 +45,9 @@ exports[`Title component should change background color when provided 1`] = `
   -webkit-transition: -webkit-transform 0.25s ease;
   -webkit-transition: transform 0.25s ease;
   transition: transform 0.25s ease;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 <div>
