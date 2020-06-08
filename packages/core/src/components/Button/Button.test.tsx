@@ -9,7 +9,7 @@ describe('Button component', () => {
         test.each(['default', 'confirmation', 'error'])('and %p color ', (color: Props['color']) => {
             const { container } = render(
                 <Button variant={variant} color={color}>
-                    Flat Button
+                    Button
                 </Button>
             );
             expect(container).toMatchSnapshot();
@@ -17,17 +17,21 @@ describe('Button component', () => {
 
         test('should render properly when it is disabled', () => {
             const { container } = render(
-                <Button disabled variant="solid">
-                    Solid Button
+                <Button disabled variant={variant}>
+                    Button
                 </Button>
             );
             expect(container).toMatchSnapshot();
         });
-    });
 
-    test.each(['S', 'M'])('should render properly with %p size', (size: Props['size']) => {
-        const { container } = render(<Button size={size}>Flat Button</Button>);
-        expect(container).toMatchSnapshot();
+        test.each(['S', 'M'])('should render properly with %p size', (size: Props['size']) => {
+            const { container } = render(
+                <Button size={size} variant={variant}>
+                    Button
+                </Button>
+            );
+            expect(container).toMatchSnapshot();
+        });
     });
 
     test.each(['square', 'rounded', 'circle'])('should render properly with %p edges', (edges: Props['edges']) => {
@@ -35,10 +39,19 @@ describe('Button component', () => {
         expect(container).toMatchSnapshot();
     });
 
+    it('should render properly with gradient', () => {
+        const { container } = render(
+            <Button variant="solid" withGradient>
+                Gradient Button
+            </Button>
+        );
+        expect(container).toMatchSnapshot();
+    });
+
     it('should render properly with circle edges and S size', () => {
         const { container } = render(
             <Button edges="circle" size="S">
-                Flat Button
+                Button
             </Button>
         );
         expect(container.querySelector('button')).toHaveStyle(`

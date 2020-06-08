@@ -15,6 +15,7 @@ exports[`Form Actions should render center aligned actions defined in action sch
 
 .c1 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -22,12 +23,10 @@ exports[`Form Actions should render center aligned actions defined in action sch
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -42,6 +41,11 @@ exports[`Form Actions should render center aligned actions defined in action sch
   align-items: center;
 }
 
+.c1 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c1:hover {
   cursor: pointer;
 }
@@ -54,19 +58,30 @@ exports[`Form Actions should render center aligned actions defined in action sch
   cursor: not-allowed;
 }
 
-.c1 .sc-AxgMl * {
+.c1:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c1:disabled .sc-AxgMl * {
+  fill: #dfe4e9;
+}
+
+.c1:not(:disabled) {
+  color: #ffffff;
+}
+
+.c1:not(:disabled) .sc-AxgMl * {
   fill: #ffffff;
 }
 
-.c1:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c1:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c1:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c1:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c1 .sc-AxgMl + .c2 {
@@ -133,6 +148,7 @@ exports[`Form Actions should render default action button 1`] = `
 
 .c1 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -140,12 +156,10 @@ exports[`Form Actions should render default action button 1`] = `
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 100rem;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -160,6 +174,11 @@ exports[`Form Actions should render default action button 1`] = `
   align-items: center;
 }
 
+.c1 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c1:hover {
   cursor: pointer;
 }
@@ -172,19 +191,30 @@ exports[`Form Actions should render default action button 1`] = `
   cursor: not-allowed;
 }
 
-.c1 .sc-AxgMl * {
+.c1:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c1:disabled .sc-AxgMl * {
+  fill: #dfe4e9;
+}
+
+.c1:not(:disabled) {
+  color: #ffffff;
+}
+
+.c1:not(:disabled) .sc-AxgMl * {
   fill: #ffffff;
 }
 
-.c1:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c1:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c1:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c1:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c1 .sc-AxgMl + .c2 {
@@ -251,6 +281,7 @@ exports[`Form Actions should render left aligned actions defined in action schem
 
 .c1 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -258,12 +289,10 @@ exports[`Form Actions should render left aligned actions defined in action schem
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -278,6 +307,11 @@ exports[`Form Actions should render left aligned actions defined in action schem
   align-items: center;
 }
 
+.c1 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c1:hover {
   cursor: pointer;
 }
@@ -290,19 +324,30 @@ exports[`Form Actions should render left aligned actions defined in action schem
   cursor: not-allowed;
 }
 
-.c1 .sc-AxgMl * {
+.c1:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c1:disabled .sc-AxgMl * {
+  fill: #dfe4e9;
+}
+
+.c1:not(:disabled) {
+  color: #ffffff;
+}
+
+.c1:not(:disabled) .sc-AxgMl * {
   fill: #ffffff;
 }
 
-.c1:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c1:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c1:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c1:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c1 .sc-AxgMl + .c2 {
