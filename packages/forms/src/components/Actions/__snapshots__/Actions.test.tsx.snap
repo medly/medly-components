@@ -54,7 +54,7 @@ exports[`Form Actions should render center aligned actions defined in action sch
   cursor: not-allowed;
 }
 
-.c1 .sc-AxgMl * {
+.c1 .sc-AxiKw * {
   fill: #ffffff;
 }
 
@@ -69,11 +69,11 @@ exports[`Form Actions should render center aligned actions defined in action sch
   background: #dfe4e9;
 }
 
-.c1 .sc-AxgMl + .c2 {
+.c1 .sc-AxiKw + .c2 {
   margin-left: 0.8rem;
 }
 
-.c1 .c2 + .sc-AxgMl {
+.c1 .c2 + .sc-AxiKw {
   margin-left: 0.8rem;
 }
 
@@ -172,7 +172,7 @@ exports[`Form Actions should render default action button 1`] = `
   cursor: not-allowed;
 }
 
-.c1 .sc-AxgMl * {
+.c1 .sc-AxiKw * {
   fill: #ffffff;
 }
 
@@ -187,11 +187,11 @@ exports[`Form Actions should render default action button 1`] = `
   background: #dfe4e9;
 }
 
-.c1 .sc-AxgMl + .c2 {
+.c1 .sc-AxiKw + .c2 {
   margin-left: 0.8rem;
 }
 
-.c1 .c2 + .sc-AxgMl {
+.c1 .c2 + .sc-AxiKw {
   margin-left: 0.8rem;
 }
 
@@ -290,7 +290,7 @@ exports[`Form Actions should render left aligned actions defined in action schem
   cursor: not-allowed;
 }
 
-.c1 .sc-AxgMl * {
+.c1 .sc-AxiKw * {
   fill: #ffffff;
 }
 
@@ -305,11 +305,11 @@ exports[`Form Actions should render left aligned actions defined in action schem
   background: #dfe4e9;
 }
 
-.c1 .sc-AxgMl + .c2 {
+.c1 .sc-AxiKw + .c2 {
   margin-left: 0.8rem;
 }
 
-.c1 .c2 + .sc-AxgMl {
+.c1 .c2 + .sc-AxiKw {
   margin-left: 0.8rem;
 }
 

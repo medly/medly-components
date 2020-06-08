@@ -54,7 +54,7 @@ exports[`Form should not render any field if component type is not matched 1`] =
   cursor: not-allowed;
 }
 
-.c3 .sc-AxgMl * {
+.c3 .sc-AxiKw * {
   fill: #ffffff;
 }
 
@@ -69,11 +69,11 @@ exports[`Form should not render any field if component type is not matched 1`] =
   background: #dfe4e9;
 }
 
-.c3 .sc-AxgMl + .c4 {
+.c3 .sc-AxiKw + .c4 {
   margin-left: 0.8rem;
 }
 
-.c3 .c4 + .sc-AxgMl {
+.c3 .c4 + .sc-AxiKw {
   margin-left: 0.8rem;
 }
 
@@ -159,42 +159,6 @@ exports[`Form should not render any field if component type is not matched 1`] =
 `;
 
 exports[`Form should render properly with initial state 1`] = `
-.c18 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-}
-
-.c57 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.8rem;
-  font-weight: 700;
-  -webkit-letter-spacing: -0.02rem;
-  -moz-letter-spacing: -0.02rem;
-  -ms-letter-spacing: -0.02rem;
-  letter-spacing: -0.02rem;
-  line-height: 2.4rem;
-}
-
-.c67 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.6rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-}
-
 .c29 {
   font-size: 2.4rem;
   cursor: pointer;
@@ -229,6 +193,42 @@ exports[`Form should render properly with initial state 1`] = `
 .c55 * {
   fill-opacity: 1;
   fill: #607890;
+}
+
+.c18 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c57 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.8rem;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.02rem;
+  -moz-letter-spacing: -0.02rem;
+  -ms-letter-spacing: -0.02rem;
+  letter-spacing: -0.02rem;
+  line-height: 2.4rem;
+}
+
+.c67 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c66 {
@@ -663,17 +663,17 @@ exports[`Form should render properly with initial state 1`] = `
   color: #566c82;
 }
 
-.c4 .sc-fznWqX,
+.c4 .sc-fzqNqU,
 .c4 .c50 {
   color: #566c82;
 }
 
-.c4 .sc-fznWqX *,
+.c4 .sc-fzqNqU *,
 .c4 .c50 * {
   fill: #566c82;
 }
 
-.c4 ~ .sc-fznxsB {
+.c4 ~ .sc-fzoiQi {
   color: #566c82;
 }
 
@@ -710,15 +710,15 @@ exports[`Form should render properly with initial state 1`] = `
   color: #005AEE;
 }
 
-.c4:focus-within .sc-fznWqX,
-.c4:focus-within:hover .sc-fznWqX,
+.c4:focus-within .sc-fzqNqU,
+.c4:focus-within:hover .sc-fzqNqU,
 .c4:focus-within .c50,
 .c4:focus-within:hover .c50 {
   color: #005AEE;
 }
 
-.c4:focus-within .sc-fznWqX *,
-.c4:focus-within:hover .sc-fznWqX *,
+.c4:focus-within .sc-fzqNqU *,
+.c4:focus-within:hover .sc-fzqNqU *,
 .c4:focus-within .c50 *,
 .c4:focus-within:hover .c50 * {
   fill: #005AEE;
@@ -920,7 +920,7 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: column-reverse;
 }
 
-.c34 .sc-fznMAR {
+.c34 .sc-fzqBkg {
   top: calc(100% + 5px);
   left: 0%;
 }
@@ -936,7 +936,7 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: column-reverse;
 }
 
-.c52 .sc-fznMAR {
+.c52 .sc-fzqBkg {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -1841,7 +1841,7 @@ exports[`Form should render properly with initial state 1`] = `
             class="c40"
           >
             <div
-              class="sc-fzoant c41"
+              class="sc-fzqMAW c41"
               data-testid="DateRangeInputGrid"
             >
               <label
@@ -2220,6 +2220,30 @@ exports[`Form should render properly with initial state 1`] = `
 `;
 
 exports[`Form should render properly without initial state 1`] = `
+.c31 {
+  font-size: 2.4rem;
+  cursor: pointer;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.c31 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c51 {
+  font-size: 2.4rem;
+  cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.c51 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
 .c2 {
   margin: 0;
   color: inherit;
@@ -2278,30 +2302,6 @@ exports[`Form should render properly without initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
-}
-
-.c31 {
-  font-size: 2.4rem;
-  cursor: pointer;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-}
-
-.c31 * {
-  fill-opacity: 1;
-  fill: #607890;
-}
-
-.c51 {
-  font-size: 2.4rem;
-  cursor: inherit;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-}
-
-.c51 * {
-  fill-opacity: 1;
-  fill: #607890;
 }
 
 .c66 {
@@ -2690,17 +2690,17 @@ exports[`Form should render properly without initial state 1`] = `
   color: #566c82;
 }
 
-.c7 .sc-fznWqX,
+.c7 .sc-fzqNqU,
 .c7 .c52 {
   color: #566c82;
 }
 
-.c7 .sc-fznWqX *,
+.c7 .sc-fzqNqU *,
 .c7 .c52 * {
   fill: #566c82;
 }
 
-.c7 ~ .sc-fznxsB {
+.c7 ~ .sc-fzoiQi {
   color: #566c82;
 }
 
@@ -2737,15 +2737,15 @@ exports[`Form should render properly without initial state 1`] = `
   color: #005AEE;
 }
 
-.c7:focus-within .sc-fznWqX,
-.c7:focus-within:hover .sc-fznWqX,
+.c7:focus-within .sc-fzqNqU,
+.c7:focus-within:hover .sc-fzqNqU,
 .c7:focus-within .c52,
 .c7:focus-within:hover .c52 {
   color: #005AEE;
 }
 
-.c7:focus-within .sc-fznWqX *,
-.c7:focus-within:hover .sc-fznWqX *,
+.c7:focus-within .sc-fzqNqU *,
+.c7:focus-within:hover .sc-fzqNqU *,
 .c7:focus-within .c52 *,
 .c7:focus-within:hover .c52 * {
   fill: #005AEE;
@@ -2947,7 +2947,7 @@ exports[`Form should render properly without initial state 1`] = `
   flex-direction: column-reverse;
 }
 
-.c36 .sc-fznMAR {
+.c36 .sc-fzqBkg {
   top: calc(100% + 5px);
   left: 0%;
 }
@@ -2963,7 +2963,7 @@ exports[`Form should render properly without initial state 1`] = `
   flex-direction: column-reverse;
 }
 
-.c54 .sc-fznMAR {
+.c54 .sc-fzqBkg {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -3872,7 +3872,7 @@ exports[`Form should render properly without initial state 1`] = `
             class="c42"
           >
             <div
-              class="sc-fzoant c43"
+              class="sc-fzqMAW c43"
               data-testid="DateRangeInputGrid"
             >
               <label
