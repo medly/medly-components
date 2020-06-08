@@ -19,6 +19,11 @@ const button = {
             hoverBgColor: colors.communityBlue[400],
             shadowColor: '0 0.4rem 0.8rem rgba(0, 90, 238, 0.2)'
         },
+        gradient: {
+            bgColor: `linear-gradient(to right, ${colors.communityBlue[500]}, ${colors.springTeal[500]})`,
+            hoverBgColor: `linear-gradient(to right, ${colors.communityBlue[400]}, ${colors.springTeal[400]})`,
+            shadowColor: '0 0.4rem 0.8rem rgba(0, 90, 238, 0.2)'
+        },
         confirmation: {
             bgColor: colors.green[500],
             hoverBgColor: colors.green[400],
