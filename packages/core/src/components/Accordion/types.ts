@@ -1,6 +1,6 @@
 import { Props as TitleProps } from './Title';
 
-export interface Props {
+export interface StaticProps {
     Title?: React.SFC<TitleProps>;
     Content?: React.SFC;
 }
