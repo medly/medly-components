@@ -14,7 +14,7 @@ export const flatButton = ({ theme, color, size }: Props) => {
             width: 0;
             bottom: ${size === 'M' ? `1.05rem` : `0.85rem`};
             left: 50%;
-            background: ${colors[color].bgColor};
+            background: ${colors[color].hoverBgColor};
             height: 0.15rem;
             transition: all 100ms ease-out;
             border-radius: 0.15rem;

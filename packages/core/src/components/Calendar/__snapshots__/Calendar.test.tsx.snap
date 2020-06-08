@@ -102,7 +102,7 @@ exports[`Calendar Component should render given date 1`] = `
   width: 0;
   bottom: 1.05rem;
   left: 50%;
-  background: #005AEE;
+  background: #1A6BF0;
   height: 0.15rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
