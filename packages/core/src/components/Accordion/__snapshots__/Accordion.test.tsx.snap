@@ -1,30 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Accordion component should render accordion with default prop values 1`] = `
-.c4 {
-  font-size: 2.4rem;
-  cursor: inherit;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-}
-
-.c4 * {
-  fill-opacity: 1;
-  fill: #607890;
-}
-
-.c2 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-}
-
+exports[`Accordion component should render content when title is clicked 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -33,8 +9,41 @@ exports[`Accordion component should render accordion with default prop values 1`
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: #ffffff;
   border-radius: 0.8rem;
+}
+
+.c4 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  border-top: solid 0.2rem #eff2f4;
+  padding: 1.8rem;
+  background-color: transparent;
+}
+
+.c3 {
+  font-size: 2.4rem;
+  cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.c3 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c5 .c2 {
+  margin-left: auto;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  -webkit-transition: transform 0.25s ease;
+  transition: transform 0.25s ease;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .c1 {
@@ -44,16 +53,98 @@ exports[`Accordion component should render accordion with default prop values 1`
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   outline: none;
   border: none;
-  background-color: transparent;
+  background-color: #ffffff;
+  color: #607890;
+  border-radius: none;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
 }
 
-.c1 .c3 {
+.c1 .c2 {
+  margin-left: auto;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  -webkit-transition: transform 0.25s ease;
+  transition: transform 0.25s ease;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <button
+      class="c1"
+    >
+      List Of Components
+      <svg
+        class="c2 c3"
+        fill="none"
+        height="1em"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.875 9l-3.88 3.88L8.115 9a.996.996 0 1 0-1.41 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
+          fill="#000"
+          fill-opacity=".54"
+        />
+      </svg>
+    </button>
+    <div
+      class="c4"
+    >
+      Avatar
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Accordion component should render properly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-radius: 0.8rem;
+}
+
+.c3 {
+  font-size: 2.4rem;
+  cursor: inherit;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+}
+
+.c3 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c1 {
+  cursor: pointer;
+  padding: 1.8rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  border: none;
+  background-color: #ffffff;
+  color: #607890;
+  border-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+}
+
+.c1 .c2 {
   margin-left: auto;
   -webkit-transition: -webkit-transform 0.25s ease;
   -webkit-transition: transform 0.25s ease;
@@ -70,13 +161,9 @@ exports[`Accordion component should render accordion with default prop values 1`
     <button
       class="c1"
     >
-      <span
-        class="c2"
-      >
-        Test Accordion
-      </span>
+      List Of Components
       <svg
-        class="c3 c4"
+        class="c2 c3"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"

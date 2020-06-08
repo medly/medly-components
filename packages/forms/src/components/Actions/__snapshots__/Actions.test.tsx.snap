@@ -63,7 +63,7 @@ exports[`Form Actions should render center aligned actions defined in action sch
   background: #dfe4e9;
 }
 
-.c1:disabled .sc-AxgMl * {
+.c1:disabled .sc-AxiKw * {
   fill: #dfe4e9;
 }
 
@@ -71,7 +71,7 @@ exports[`Form Actions should render center aligned actions defined in action sch
   color: #ffffff;
 }
 
-.c1:not(:disabled) .sc-AxgMl * {
+.c1:not(:disabled) .sc-AxiKw * {
   fill: #ffffff;
 }
 
@@ -84,11 +84,11 @@ exports[`Form Actions should render center aligned actions defined in action sch
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
-.c1 .sc-AxgMl + .c2 {
+.c1 .sc-AxiKw + .c2 {
   margin-left: 0.8rem;
 }
 
-.c1 .c2 + .sc-AxgMl {
+.c1 .c2 + .sc-AxiKw {
   margin-left: 0.8rem;
 }
 
@@ -196,7 +196,7 @@ exports[`Form Actions should render default action button 1`] = `
   background: #dfe4e9;
 }
 
-.c1:disabled .sc-AxgMl * {
+.c1:disabled .sc-AxiKw * {
   fill: #dfe4e9;
 }
 
@@ -204,7 +204,7 @@ exports[`Form Actions should render default action button 1`] = `
   color: #ffffff;
 }
 
-.c1:not(:disabled) .sc-AxgMl * {
+.c1:not(:disabled) .sc-AxiKw * {
   fill: #ffffff;
 }
 
@@ -217,11 +217,11 @@ exports[`Form Actions should render default action button 1`] = `
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
-.c1 .sc-AxgMl + .c2 {
+.c1 .sc-AxiKw + .c2 {
   margin-left: 0.8rem;
 }
 
-.c1 .c2 + .sc-AxgMl {
+.c1 .c2 + .sc-AxiKw {
   margin-left: 0.8rem;
 }
 
@@ -329,7 +329,7 @@ exports[`Form Actions should render left aligned actions defined in action schem
   background: #dfe4e9;
 }
 
-.c1:disabled .sc-AxgMl * {
+.c1:disabled .sc-AxiKw * {
   fill: #dfe4e9;
 }
 
@@ -337,7 +337,7 @@ exports[`Form Actions should render left aligned actions defined in action schem
   color: #ffffff;
 }
 
-.c1:not(:disabled) .sc-AxgMl * {
+.c1:not(:disabled) .sc-AxiKw * {
   fill: #ffffff;
 }
 
@@ -350,11 +350,11 @@ exports[`Form Actions should render left aligned actions defined in action schem
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
-.c1 .sc-AxgMl + .c2 {
+.c1 .sc-AxiKw + .c2 {
   margin-left: 0.8rem;
 }
 
-.c1 .c2 + .sc-AxgMl {
+.c1 .c2 + .sc-AxiKw {
   margin-left: 0.8rem;
 }
 
