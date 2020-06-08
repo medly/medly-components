@@ -15,18 +15,12 @@ describe('Accordion component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('should render children when accordion is clicked', async () => {
-        const { getByText, queryByText } = renderAccordion();
-        fireEvent.click(getByText(/List Of Components/));
-        await waitFor(() => expect(getByText(/Avatar/)).toBeInTheDocument());
-        fireEvent.click(getByText(/List Of Components/));
-        expect(queryByText(/Avatar/)).not.toBeInTheDocument();
-    });
-
-    it('should invoke handleToggle when accordion is clicked', () => {
+    it('should render content when title is clicked', async () => {
         const { getByText, queryByText, container } = renderAccordion();
         fireEvent.click(getByText(/List Of Components/));
-        expect(queryByText(/Avatar/)).toBeInTheDocument();
+        await waitFor(() => expect(getByText(/Avatar/)).toBeInTheDocument());
         expect(container).toMatchSnapshot();
+        fireEvent.click(getByText(/List Of Components/));
+        expect(queryByText(/Avatar/)).not.toBeInTheDocument();
     });
 });

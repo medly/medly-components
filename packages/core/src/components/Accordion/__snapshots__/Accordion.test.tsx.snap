@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Accordion component should invoke handleToggle when accordion is clicked 1`] = `
+exports[`Accordion component should render content when title is clicked 1`] = `
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
