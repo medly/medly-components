@@ -19,7 +19,17 @@ describe('Avatar component', () => {
                 hoverTextColor={defaultTheme.colors.white}
                 hoverImgShadowColor="rgba(96, 120, 144, 0.35)"
                 hoverTextShadowColor="rgba(0, 128, 0, 0.35)"
+                onClick={jest.fn()}
             >
+                M
+            </Avatar>
+        );
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render with not-allowed cursor when it is disabled', () => {
+        const { container } = render(
+            <Avatar size="M" disabled>
                 M
             </Avatar>
         );
