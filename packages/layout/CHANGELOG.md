@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.38](https://github.com/medly/medly-components/compare/@medly-components/layout@1.0.0-beta.37...@medly-components/layout@1.0.0-beta.38) (2020-06-09)
+
+
+### Bug Fixes
+
+* increase z-index of sidenav component ([26c3726](https://github.com/medly/medly-components/commit/26c3726cf022260de97166ceb356eba3f8bc121b))
+
+
+
+
+
 # [1.0.0-beta.37](https://github.com/medly/medly-components/compare/@medly-components/layout@1.0.0-beta.36...@medly-components/layout@1.0.0-beta.37) (2020-06-05)
 
 **Note:** Version bump only for package @medly-components/layout
