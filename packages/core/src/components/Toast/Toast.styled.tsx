@@ -19,9 +19,6 @@ export const Toast = styled('div')<StyledProps>`
     }
 
     & > ${SvgIcon} {
-        position: absolute;
-        right: 1.2rem;
-        top: 1.2rem;
         * {
             fill: ${({ theme }) => theme.toast.textColor};
         }
@@ -45,4 +42,17 @@ export const ToastContent = styled('div')`
     flex-direction: column;
     flex-grow: 1;
     padding: 1.3rem 5.6rem 1.3rem 1.6rem;
+`;
+
+export const IconWrapper = styled('div')`
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 1.2rem;
+    top: 1.2rem;
+    padding: 0.8rem 0 0 0.8rem;
+    &:hover {
+        background-color: ${({ theme }) => theme.toast.iconBg};
+        border-radius: 50%;
+    }
 `;

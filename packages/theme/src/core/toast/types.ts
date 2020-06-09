@@ -1,6 +1,7 @@
 export interface ToastTheme {
     textColor: string;
     boxShadow: string;
+    iconBg: string;
     bgColor: {
         success: string;
         info: string;
