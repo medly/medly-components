@@ -1,4 +1,4 @@
-import { defaultTheme, Theme } from '@medly-components/theme';
+import { Theme } from '@medly-components/theme';
 import { createGlobalStyle, css, getFontStyle } from '@medly-components/utils';
 import fonts from './fonts';
 
@@ -33,6 +33,3 @@ export const CssBaseline = createGlobalStyle`
     }
 `;
 CssBaseline.displayName = 'CssBaseline';
-CssBaseline.defaultProps = {
-    theme: defaultTheme
-};
