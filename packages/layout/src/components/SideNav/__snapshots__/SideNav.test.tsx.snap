@@ -156,7 +156,7 @@ exports[`SideNav should render properly 1`] = `
   background-color: #dfe4e9;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   top: 0;
   -webkit-transition: 0.2s;
   transition: 0.2s;
