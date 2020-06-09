@@ -1,13 +1,14 @@
 import { CheckIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
 import { centerAligned, css, styled } from '@medly-components/utils';
+import colors from 'packages/theme/src/core/colors';
+import FieldWithLabel from '../FieldWithLabel';
 import { CheckboxColors, CheckboxWrapperProps, Props } from './types';
 
 const getStyle = (colors: CheckboxColors) => css`
     border: 1px solid ${colors.borderColor};
     background-color: ${colors.bgColor};
 
-    /* box-shadow: 0 0 0 1pt ${colors.outlineColor}; */
     ${CheckIcon.Style} {
         * {
             fill: ${colors.iconColor};
@@ -15,7 +16,7 @@ const getStyle = (colors: CheckboxColors) => css`
     }
 `;
 
-export const Wrapper = styled('div')<CheckboxWrapperProps>`
+export const Wrapper = styled.div<CheckboxWrapperProps>`
     position: relative;
     width: ${({ theme, size }) => theme.checkbox.sizes[size || theme.checkbox.defaultSize]};
     height: ${({ theme, size }) => theme.checkbox.sizes[size || theme.checkbox.defaultSize]};
@@ -71,7 +72,21 @@ Wrapper.defaultProps = {
     theme: defaultTheme
 };
 
-export const Checkbox = styled('input').attrs({ type: 'checkbox' })<Props>`
+export const CheckboxWithLabelWrapper = styled(FieldWithLabel)<Props>`
+    label {
+        color: ${({ disabled }) => (disabled ? colors.grey[500] : colors.black)};
+    }
+    &:hover {
+        ${Wrapper} {
+            border: 1px solid
+                ${({ theme, disabled }) => {
+                    return theme.checkbox.colors[disabled ? 'disabled' : 'hover'].borderColor;
+                }};
+        }
+    }
+`;
+
+export const Checkbox = styled.input.attrs({ type: 'checkbox' })<Props>`
     opacity: 0;
     z-index: 100;
     width: 100%;

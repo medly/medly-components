@@ -6,7 +6,6 @@ export type CheckboxColors = {
     borderColor: string;
     iconColor: string;
     bgColor: string;
-    outlineColor: string;
 };
 
 type DivProps = Omit<HTMLProps<HTMLInputElement>, 'size'>;

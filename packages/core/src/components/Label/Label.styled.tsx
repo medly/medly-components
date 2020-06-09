@@ -27,7 +27,7 @@ const getTextStyle = ({ theme, ...props }: Props) => {
 export const LabelStyled = styled('label')<Props>`
     ${getTextStyle}
     ${({ required }) => required && asterisk()}
-    margin: ${({ theme, labelPosition }) => oppositePositionalSpacing(labelPosition, theme.spacing.S2)};
+    margin: ${({ theme, labelPosition }) => oppositePositionalSpacing(labelPosition, `${theme.spacing.S5}`)};
     cursor: ${({ showPointer }) => (showPointer === undefined ? 'default' : showPointer ? 'pointer' : 'not-allowed')};
 `;
 

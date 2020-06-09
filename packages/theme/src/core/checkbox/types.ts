@@ -4,7 +4,6 @@ type Colors = {
     borderColor: string;
     iconColor: string;
     bgColor: string;
-    outlineColor: string;
 };
 
 export interface CheckboxTheme {
