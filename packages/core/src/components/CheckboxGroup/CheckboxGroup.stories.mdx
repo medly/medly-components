@@ -2,14 +2,20 @@ import { CheckboxGroup } from './CheckboxGroup';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './CheckboxGroup.stories';
 
-<Meta title="Core" component={CheckboxGroup} />
+<Meta title="Core/CheckboxGroup" component={CheckboxGroup} />
 
 # CheckboxGroup
 
-### Displays group of checkboxes
+### Basic CheckboxGroup
 
 <Preview withToolbar>
-    <Story name="CheckboxGroup">{stories.Basic()}</Story>
+    <Story name="Basic">{stories.Basic()}</Story>
+</Preview>
+
+### CheckboxGroup With Error
+
+<Preview withToolbar>
+    <Story name="WithError">{stories.WithError()}</Story>
 </Preview>
 
 ### Props

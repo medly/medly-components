@@ -36,4 +36,6 @@ export interface Props extends InputProps, WithThemeProp {
     required?: boolean;
     /** Error state for checkbox */
     error?: boolean;
+    /**  */
+    labelSpacing?: string;
 }

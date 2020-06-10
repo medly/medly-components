@@ -8,7 +8,7 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChang
     /** This method will be called with checked values */
     onChange: (values: any[]) => void;
     /** Options */
-    options: { value: any; label: string; disabled?: boolean }[];
+    options: { value: any; label: string; disabled?: boolean; error?: boolean }[];
     /** Label */
     label?: string;
     /** Takes full width of the parent component */
@@ -29,4 +29,8 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChang
     size?: CheckboxSizes;
     /** Show checkbox to select all options */
     showSelectAll?: boolean;
+    /** Error Message */
+    errorMessage?: string;
+    /** Error State */
+    error?: boolean;
 }

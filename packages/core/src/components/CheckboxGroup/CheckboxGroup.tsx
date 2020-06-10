@@ -1,7 +1,9 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback, useMemo } from 'react';
+import React, { SFC, useCallback, useContext, useMemo } from 'react';
+import { ThemeContext } from 'styled-components';
 import Checkbox from '../Checkbox';
 import FieldWithLabel from '../FieldWithLabel';
+import { HelperText } from '../TextField/Styled';
 import getValuesFromOptions from './getValuesFromOptions';
 import { Props } from './types';
 
@@ -19,11 +21,15 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
             labelColor,
             showSelectAll,
             disabled,
-            fullWidth
+            fullWidth,
+            errorMessage,
+            error
         } = props;
 
         const allChildValues = useMemo(() => getValuesFromOptions(options), [options]),
             areAllValuesSelected = useMemo(() => allChildValues.every(val => values.includes(val)), [options, values]);
+
+        const theme = useContext(ThemeContext);
 
         const handleOptionClick = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -45,7 +51,9 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
         return (
             <FieldWithLabel id={`${label}-checkboxGroup`} ref={ref} fullWidth {...{ fullWidth, labelPosition }}>
                 {label && (
-                    <FieldWithLabel.Label {...{ labelPosition, labelVariant, labelWeight, labelColor }}>
+                    <FieldWithLabel.Label
+                        {...{ labelPosition, labelVariant, labelWeight, labelColor, labelSpacing: showSelectAll ? '0' : theme.spacing.S2 }}
+                    >
                         {showSelectAll ? (
                             <Checkbox
                                 key="select-all"
@@ -59,6 +67,7 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                         )}
                     </FieldWithLabel.Label>
                 )}
+                {error && <HelperText id={`checkbox-helper-text`}>{errorMessage}</HelperText>}
                 <FieldWithLabel.Field isIndented={labelPosition === 'top'}>
                     {options.map(option => {
                         return Array.isArray(option.value) ? (
@@ -67,7 +76,8 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                                 {...{
                                     ...props,
                                     options: option.value,
-                                    label: option.label
+                                    label: option.label,
+                                    error: option.error
                                 }}
                             />
                         ) : (
@@ -95,5 +105,7 @@ CheckboxGroup.defaultProps = {
     fullWidth: true,
     values: [],
     showSelectAll: false,
-    labelPosition: 'left'
+    labelPosition: 'left',
+    errorMessage: 'Error text here',
+    error: false
 };

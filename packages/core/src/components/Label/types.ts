@@ -25,4 +25,6 @@ export interface Props extends Common {
     labelVariant?: FontVariants;
     /** Label Weight */
     labelWeight?: FontWeights;
+    /** Label Margin */
+    labelSpacing?: string;
 }

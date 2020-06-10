@@ -33,3 +33,29 @@ export const Basic = () => {
         />
     );
 };
+
+export const WithError = () => {
+    const [values, setValues] = useState(['honda']);
+
+    return (
+        <CheckboxGroup
+            values={values}
+            onChange={setValues}
+            options={[
+                { value: 'honda', label: 'Honda' },
+                { value: 'hyundai', label: 'Hyundai' },
+                {
+                    value: [{ value: 'jaguar', label: 'Jaguar' }],
+                    label: 'Tata',
+                    error: true
+                }
+            ]}
+            disabled={boolean('Disabled', false)}
+            fullWidth={boolean('Full Width', false)}
+            showSelectAll={boolean('Show Select All', false)}
+            label={text('Label', 'Cars')}
+            size={select('Size', size, 'S')}
+            labelPosition={select('Label Position', labelPosition, 'top')}
+        />
+    );
+};
