@@ -1,7 +1,6 @@
 import { CheckIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
 import { centerAligned, css, styled } from '@medly-components/utils';
-import colors from 'packages/theme/src/core/colors';
 import FieldWithLabel from '../FieldWithLabel';
 import { CheckboxColors, CheckboxWrapperProps, Props } from './types';
 
@@ -74,7 +73,7 @@ Wrapper.defaultProps = {
 
 export const CheckboxWithLabelWrapper = styled(FieldWithLabel)<Props>`
     label {
-        color: ${({ disabled }) => (disabled ? colors.grey[500] : colors.black)};
+        color: ${({ theme, disabled }) => (disabled ? theme.colors.grey[500] : theme.colors.black)};
     }
     &:hover {
         ${Wrapper} {
