@@ -2,10 +2,11 @@
 
 exports[`MultiSelect component with checkbox false should render correctly with all the props given 1`] = `
 .c10 {
-  font-size: 2.0rem;
-  cursor: pointer;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.0rem;
+  cursor: pointer;
 }
 
 .c10 * {
@@ -14,10 +15,11 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c14 {
-  font-size: 2.4rem;
-  cursor: pointer;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: pointer;
 }
 
 .c14 * {
@@ -417,10 +419,11 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 exports[`MultiSelect component with checkbox false should render correctly with default props 1`] = `
 .c7 {
-  font-size: 2.4rem;
-  cursor: pointer;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: pointer;
 }
 
 .c7 * {
@@ -686,10 +689,11 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 exports[`MultiSelect component with checkbox true should render correctly with all the props given 1`] = `
 .c10 {
-  font-size: 2.0rem;
-  cursor: pointer;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.0rem;
+  cursor: pointer;
 }
 
 .c10 * {
@@ -698,10 +702,11 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c14 {
-  font-size: 2.4rem;
-  cursor: pointer;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: pointer;
 }
 
 .c14 * {
@@ -1101,10 +1106,11 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 
 exports[`MultiSelect component with checkbox true should render correctly with default props 1`] = `
 .c7 {
-  font-size: 2.4rem;
-  cursor: pointer;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: pointer;
 }
 
 .c7 * {

@@ -175,10 +175,11 @@ exports[`Form should not render any field if component type is not matched 1`] =
 
 exports[`Form should render properly with initial state 1`] = `
 .c29 {
-  font-size: 2.4rem;
-  cursor: pointer;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: pointer;
 }
 
 .c29 * {
@@ -187,10 +188,11 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c49 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c49 * {
@@ -199,10 +201,11 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c55 {
-  font-size: 2.0rem;
-  cursor: pointer;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.0rem;
+  cursor: pointer;
 }
 
 .c55 * {
@@ -2251,10 +2254,11 @@ exports[`Form should render properly with initial state 1`] = `
 
 exports[`Form should render properly without initial state 1`] = `
 .c31 {
-  font-size: 2.4rem;
-  cursor: pointer;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: pointer;
 }
 
 .c31 * {
@@ -2263,10 +2267,11 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c51 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c51 * {
