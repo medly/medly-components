@@ -1949,10 +1949,11 @@ exports[`TextField with filled variant should render helper text properly 1`] = 
 
 exports[`TextField with filled variant should render properly with prefix 1`] = `
 .c2 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c2 * {
@@ -2239,10 +2240,11 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 
 exports[`TextField with filled variant should render properly with suffix 1`] = `
 .c6 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c6 * {
@@ -3840,10 +3842,11 @@ exports[`TextField with outlined variant should render helper text properly 1`] 
 
 exports[`TextField with outlined variant should render properly with prefix 1`] = `
 .c2 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c2 * {
@@ -4118,10 +4121,11 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 
 exports[`TextField with outlined variant should render properly with suffix 1`] = `
 .c6 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c6 * {

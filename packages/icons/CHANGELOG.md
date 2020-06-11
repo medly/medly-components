@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.30](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.0-beta.29...@medly-components/icons@1.0.0-beta.30) (2020-06-11)
+
+
+### Features
+
+* add solid and flat variant in icons ([0eaf69c](https://github.com/medly/medly-components/commit/0eaf69c159e81360cecb9fa126dd2d158289afb1))
+
+
+
+
+
+# [1.0.0-beta.29](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.0-beta.28...@medly-components/icons@1.0.0-beta.29) (2020-06-09)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
 # [1.0.0-beta.28](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.0-beta.27...@medly-components/icons@1.0.0-beta.28) (2020-06-05)
 
 **Note:** Version bump only for package @medly-components/icons

@@ -21,6 +21,7 @@ You can play with the props in canvas tab.
             edges={select('Edges', edges, 'square')}
             variant={select('Variant', variants, 'solid')}
             disabled={boolean('Disabled', false)}
+            withGradient={boolean('Witth Gradient', false)}
             color={select('Color', colors, 'default')}
         >
             Button Text
@@ -114,6 +115,20 @@ import { Button } from '@medly-components/icons';
     <Button variant="outlined">
         <SendIcon size="S" />
         Send
+    </Button>
+    <Button variant="flat">
+        <SendIcon size="S" />
+        Send
+    </Button>
+</Preview>
+
+### Gradient Buttton
+
+Only `Solid` variant can also be shown with gradient, just set `witthGradient` prop true.
+
+<Preview>
+    <Button variant="solid" withGradient>
+        Gradient Button
     </Button>
 </Preview>
 

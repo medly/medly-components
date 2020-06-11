@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.37](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.36...@medly-components/core@1.0.0-beta.37) (2020-06-11)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+# [1.0.0-beta.36](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.35...@medly-components/core@1.0.0-beta.36) (2020-06-09)
+
+
+### Bug Fixes
+
+* remove defaultTheme from CSSBaseline component ([91a4b0f](https://github.com/medly/medly-components/commit/91a4b0ff955f18e3bd6d43e09aecc9835c472b0c))
+* show pointer cursor on avatar component when onClick prop is passed ([4a47566](https://github.com/medly/medly-components/commit/4a475668971ca1154349385461772009de91deb8))
+
+
+### Features
+
+* add gradient in button ([689a4af](https://github.com/medly/medly-components/commit/689a4af02c8659e86a56a48f837967c7daaacfc3))
+* change flat buttton underline color ([2ab4a6e](https://github.com/medly/medly-components/commit/2ab4a6eb1e2b541eda5fa535c50fe1d4f7c248b6))
+* **core:** accordion component with enhancements ([6bfdd38](https://github.com/medly/medly-components/commit/6bfdd3893b25920830c818d15584a80587bc8b25))
+
+
+
+
+
 # [1.0.0-beta.35](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.34...@medly-components/core@1.0.0-beta.35) (2020-06-05)
 
 

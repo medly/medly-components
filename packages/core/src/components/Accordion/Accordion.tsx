@@ -1,25 +1,21 @@
-import { ExpandMoreIcon } from '@medly-components/icons';
-import React, { SFC, useCallback, useState } from 'react';
-import Text from '../Text';
-import { Content, Section, Wrapper } from './Accordion.styled';
-import { Props } from './types';
+import React, { SFC, useState } from 'react';
+import { Section } from './Accordion.styled';
+import { AccordionContext } from './AccordionContext';
+import Content from './Content';
+import Header from './Header';
+import { StaticProps } from './types';
 
-export const Accordion: SFC<Props> = React.memo(({ title, titleColor, bgColor, children }) => {
-    const [active, setActive] = useState(false),
-        toggleAccordion = useCallback(() => setActive(val => !val), []);
+export const Accordion: SFC & StaticProps = React.memo(props => {
+    const activeState = useState(false);
 
     return (
-        <Section bgColor={bgColor}>
-            <Wrapper isActive={active} onClick={toggleAccordion}>
-                <Text textVariant="body1" textColor={titleColor}>
-                    {title}
-                </Text>
-                <ExpandMoreIcon />
-            </Wrapper>
-
-            {active && <Content>{children}</Content>}
-        </Section>
+        <AccordionContext.Provider value={activeState}>
+            <Section {...props} />
+        </AccordionContext.Provider>
     );
 });
 
 Accordion.displayName = 'Accordion';
+Accordion.Header = Header;
+Accordion.Content = Content;
+Accordion.Context = AccordionContext;

@@ -15,6 +15,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
 
 .c1 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -22,13 +23,10 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
-  border: 0.2rem solid;
-  color: #005AEE;
-  border-color: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -43,6 +41,11 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   align-items: center;
 }
 
+.c1 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c1:hover {
   cursor: pointer;
 }
@@ -55,28 +58,36 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   cursor: not-allowed;
 }
 
-.c1 .sc-AxirZ * {
-  fill: #005AEE;
-}
-
-.c1:hover {
-  color: #1A6BF0;
-  border-color: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
-}
-
-.c1:hover .sc-AxirZ * {
-  fill: #1A6BF0;
-}
-
 .c1:disabled {
-  box-shadow: none;
+  border: 0.1rem solid;
   color: #b0bcc8;
   border-color: #b0bcc8;
 }
 
 .c1:disabled .sc-AxirZ * {
   fill: #b0bcc8;
+}
+
+.c1:not(:disabled):not(:hover) {
+  border: 0.1rem solid;
+  color: #005AEE;
+  border-color: #005AEE;
+}
+
+.c1:not(:disabled):not(:hover) .sc-AxirZ * {
+  fill: #005AEE;
+}
+
+.c1:not(:disabled):hover {
+  border: 0.2rem solid;
+  color: #1A6BF0;
+  border-color: #1A6BF0;
+  padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+}
+
+.c1:not(:disabled):hover .sc-AxirZ * {
+  fill: #1A6BF0;
 }
 
 .c1 .sc-AxirZ + .c2 {
@@ -191,6 +202,7 @@ exports[`Pagination component should render correctly with all the default props
 
 .c1 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -198,13 +210,10 @@ exports[`Pagination component should render correctly with all the default props
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
-  border: 0.2rem solid;
-  color: #005AEE;
-  border-color: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -217,6 +226,11 @@ exports[`Pagination component should render correctly with all the default props
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c1 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
 }
 
 .c1:hover {
@@ -231,28 +245,36 @@ exports[`Pagination component should render correctly with all the default props
   cursor: not-allowed;
 }
 
-.c1 .sc-AxirZ * {
-  fill: #005AEE;
-}
-
-.c1:hover {
-  color: #1A6BF0;
-  border-color: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
-}
-
-.c1:hover .sc-AxirZ * {
-  fill: #1A6BF0;
-}
-
 .c1:disabled {
-  box-shadow: none;
+  border: 0.1rem solid;
   color: #b0bcc8;
   border-color: #b0bcc8;
 }
 
 .c1:disabled .sc-AxirZ * {
   fill: #b0bcc8;
+}
+
+.c1:not(:disabled):not(:hover) {
+  border: 0.1rem solid;
+  color: #005AEE;
+  border-color: #005AEE;
+}
+
+.c1:not(:disabled):not(:hover) .sc-AxirZ * {
+  fill: #005AEE;
+}
+
+.c1:not(:disabled):hover {
+  border: 0.2rem solid;
+  color: #1A6BF0;
+  border-color: #1A6BF0;
+  padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+}
+
+.c1:not(:disabled):hover .sc-AxirZ * {
+  fill: #1A6BF0;
 }
 
 .c1 .sc-AxirZ + .c2 {
@@ -265,6 +287,7 @@ exports[`Pagination component should render correctly with all the default props
 
 .c4 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -272,12 +295,10 @@ exports[`Pagination component should render correctly with all the default props
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 0.8rem 2.4rem 1rem 2.4rem;
   border-radius: 0.8rem;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -292,6 +313,11 @@ exports[`Pagination component should render correctly with all the default props
   align-items: center;
 }
 
+.c4 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c4:hover {
   cursor: pointer;
 }
@@ -304,19 +330,30 @@ exports[`Pagination component should render correctly with all the default props
   cursor: not-allowed;
 }
 
-.c4 .sc-AxirZ * {
+.c4:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c4:disabled .sc-AxirZ * {
+  fill: #dfe4e9;
+}
+
+.c4:not(:disabled) {
+  color: #ffffff;
+}
+
+.c4:not(:disabled) .sc-AxirZ * {
   fill: #ffffff;
 }
 
-.c4:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c4:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c4:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c4:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c4 .sc-AxirZ + .c2 {
@@ -494,6 +531,7 @@ exports[`Pagination component should render correctly with all the props given 1
 
 .c1 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -501,12 +539,10 @@ exports[`Pagination component should render correctly with all the props given 1
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 0.8rem 2.4rem 1rem 2.4rem;
   border-radius: 0.8rem;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -519,6 +555,11 @@ exports[`Pagination component should render correctly with all the props given 1
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c1 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
 }
 
 .c1:hover {
@@ -533,19 +574,30 @@ exports[`Pagination component should render correctly with all the props given 1
   cursor: not-allowed;
 }
 
-.c1 .sc-AxirZ * {
+.c1:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c1:disabled .sc-AxirZ * {
+  fill: #dfe4e9;
+}
+
+.c1:not(:disabled) {
+  color: #ffffff;
+}
+
+.c1:not(:disabled) .sc-AxirZ * {
   fill: #ffffff;
 }
 
-.c1:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c1:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c1:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c1:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c1 .sc-AxirZ + .c2 {
@@ -558,6 +610,7 @@ exports[`Pagination component should render correctly with all the props given 1
 
 .c4 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -565,13 +618,10 @@ exports[`Pagination component should render correctly with all the props given 1
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
-  border: 0.2rem solid;
-  color: #005AEE;
-  border-color: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -586,6 +636,11 @@ exports[`Pagination component should render correctly with all the props given 1
   align-items: center;
 }
 
+.c4 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c4:hover {
   cursor: pointer;
 }
@@ -598,28 +653,36 @@ exports[`Pagination component should render correctly with all the props given 1
   cursor: not-allowed;
 }
 
-.c4 .sc-AxirZ * {
-  fill: #005AEE;
-}
-
-.c4:hover {
-  color: #1A6BF0;
-  border-color: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
-}
-
-.c4:hover .sc-AxirZ * {
-  fill: #1A6BF0;
-}
-
 .c4:disabled {
-  box-shadow: none;
+  border: 0.1rem solid;
   color: #b0bcc8;
   border-color: #b0bcc8;
 }
 
 .c4:disabled .sc-AxirZ * {
   fill: #b0bcc8;
+}
+
+.c4:not(:disabled):not(:hover) {
+  border: 0.1rem solid;
+  color: #005AEE;
+  border-color: #005AEE;
+}
+
+.c4:not(:disabled):not(:hover) .sc-AxirZ * {
+  fill: #005AEE;
+}
+
+.c4:not(:disabled):hover {
+  border: 0.2rem solid;
+  color: #1A6BF0;
+  border-color: #1A6BF0;
+  padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+}
+
+.c4:not(:disabled):hover .sc-AxirZ * {
+  fill: #1A6BF0;
 }
 
 .c4 .sc-AxirZ + .c2 {
