@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.5](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.0-beta.4...@medly-components/forms@1.0.0-beta.5) (2020-06-11)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 # [1.0.0-beta.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.0-beta.3...@medly-components/forms@1.0.0-beta.4) (2020-06-09)
 
 **Note:** Version bump only for package @medly-components/forms
