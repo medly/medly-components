@@ -4,11 +4,13 @@ import { ToastTheme } from './types';
 const toast: ToastTheme = {
     textColor: colors.professionalNavy,
     boxShadow: colors.grey[400],
+    iconBg: colors.grey[100],
+    buttonColor: colors.communityBlue[500],
     bgColor: {
-        success: colors.green[200],
-        info: colors.communityBlue[200],
+        success: colors.green[100],
+        info: colors.communityBlue[100],
         warning: colors.sunshineYellow[200],
-        error: colors.red[200]
+        error: colors.red[100]
     },
     fillColor: {
         success: colors.green[500],

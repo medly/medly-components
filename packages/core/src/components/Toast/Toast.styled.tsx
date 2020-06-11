@@ -1,5 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
 import { styled } from '@medly-components/utils';
+import Button from '../Button';
 import Text from '../Text';
 import { StyledProps } from './types';
 
@@ -20,9 +21,6 @@ export const Toast = styled('div')<StyledProps>`
     }
 
     & > ${SvgIcon} {
-        position: absolute;
-        right: 1.2rem;
-        top: 1.2rem;
         * {
             fill: ${({ theme }) => theme.toast.textColor};
         }
@@ -42,9 +40,28 @@ export const SvgWrapper = styled('div')<StyledProps>`
 `;
 
 export const ToastContent = styled('div')`
-    display: flex;
-    flex: 1;
     background-color: ${({ theme }) => theme.colors.white};
-    flex-direction: column;
-    padding: 1.3rem 5.6rem 1.3rem 1.6rem;
+    padding: 1.3rem 0 0.7rem 1.6rem;
+    ${Button.Style} {
+        position: absolute;
+        padding: 0;
+        right: 6.2rem;
+        top: 1.3rem;
+
+        ${Text.Style} {
+            color: ${({ theme }) => theme.toast.buttonColor};
+        }
+    }
+`;
+
+export const IconWrapper = styled('div')`
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 1.2rem;
+    top: 1.2rem;
+    &:hover {
+        background-color: ${({ theme }) => theme.toast.iconBg};
+        border-radius: 50%;
+    }
 `;
