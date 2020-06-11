@@ -2,6 +2,7 @@ export interface ToastTheme {
     textColor: string;
     boxShadow: string;
     iconBg: string;
+    buttonColor: string;
     bgColor: {
         success: string;
         info: string;
