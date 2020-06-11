@@ -1,23 +1,21 @@
-import React, { SFC, useCallback, useMemo, useState } from 'react';
+import React, { SFC, useState } from 'react';
 import { Section } from './Accordion.styled';
 import { AccordionContext } from './AccordionContext';
 import Content from './Content';
-import Title from './Title';
+import Header from './Header';
 import { StaticProps } from './types';
 
-export const Accordion: SFC & StaticProps = React.memo(({ children }) => {
-    const [isActive, setIsActive] = useState(false);
-
-    const handleToggle = useCallback(() => setIsActive(val => !val), []),
-        contextValue = useMemo(() => ({ isActive, toggle: handleToggle }), [isActive]);
+export const Accordion: SFC & StaticProps = React.memo(props => {
+    const activeState = useState(false);
 
     return (
-        <Section>
-            <AccordionContext.Provider value={contextValue}>{children}</AccordionContext.Provider>
-        </Section>
+        <AccordionContext.Provider value={activeState}>
+            <Section {...props} />
+        </AccordionContext.Provider>
     );
 });
 
 Accordion.displayName = 'Accordion';
-Accordion.Title = Title;
+Accordion.Header = Header;
 Accordion.Content = Content;
+Accordion.Context = AccordionContext;

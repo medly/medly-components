@@ -1,4 +1,4 @@
-import { fireEvent, render, waitFor } from '@test-utils';
+import { fireEvent, render } from '@test-utils';
 import React from 'react';
 import { Accordion } from './Accordion';
 
@@ -6,7 +6,7 @@ describe('Accordion component', () => {
     const renderAccordion = () =>
         render(
             <Accordion>
-                <Accordion.Title>List Of Components</Accordion.Title>
+                <Accordion.Header>List Of Components</Accordion.Header>
                 <Accordion.Content>Avatar</Accordion.Content>
             </Accordion>
         );
@@ -15,12 +15,11 @@ describe('Accordion component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('should render content when title is clicked', async () => {
-        const { getByText, queryByText, container } = renderAccordion();
+    it('should render content when header is clicked', async () => {
+        const { getByText, getByRole } = renderAccordion();
         fireEvent.click(getByText(/List Of Components/));
-        await waitFor(() => expect(getByText(/Avatar/)).toBeInTheDocument());
-        expect(container).toMatchSnapshot();
+        expect(getByRole('region')).toHaveStyle(`opacity: 1; max-height: 100vh`);
         fireEvent.click(getByText(/List Of Components/));
-        expect(queryByText(/Avatar/)).not.toBeInTheDocument();
+        expect(getByRole('region')).toHaveStyle(`opacity: 0; max-height: 0`);
     });
 });
