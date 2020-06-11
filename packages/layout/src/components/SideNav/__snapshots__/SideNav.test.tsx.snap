@@ -1,6 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SideNav should render properly 1`] = `
+.c5 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
+}
+
+.c5 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
 .c7 {
   margin: 0;
   color: inherit;
@@ -11,18 +24,6 @@ exports[`SideNav should render properly 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-}
-
-.c5 {
-  font-size: 2.4rem;
-  cursor: inherit;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-}
-
-.c5 * {
-  fill-opacity: 1;
-  fill: #607890;
 }
 
 .c3 {
@@ -156,7 +157,7 @@ exports[`SideNav should render properly 1`] = `
   background-color: #dfe4e9;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   top: 0;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -238,7 +239,7 @@ exports[`SideNav should render properly 1`] = `
 
 <div>
   <aside
-    class="sc-pAZqv c0"
+    class="sc-qapaw c0"
     id="medly-sidenav"
   >
     <nav

@@ -1,5 +1,11 @@
 export type ButtonSizes = 'S' | 'M';
 
+type Colors = {
+    bgColor: string;
+    hoverBgColor: string;
+    shadowColor: string;
+};
+
 export interface ButtonTheme {
     /** Multiple color combinations */
     colors: {
@@ -15,21 +21,10 @@ export interface ButtonTheme {
         flat: {
             disabledTextColor: string;
         };
-        default: {
-            bgColor: string;
-            hoverBgColor: string;
-            shadowColor: string;
-        };
-        confirmation: {
-            bgColor: string;
-            hoverBgColor: string;
-            shadowColor: string;
-        };
-        error: {
-            bgColor: string;
-            hoverBgColor: string;
-            shadowColor: string;
-        };
+        default: Colors;
+        gradient: Colors;
+        confirmation: Colors;
+        error: Colors;
     };
     /** Border radius for  different type of edges*/
     borderRadius: {
