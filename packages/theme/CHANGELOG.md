@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.22](https://github.com/medly/medly-components/compare/@medly-components/theme@1.0.0-beta.21...@medly-components/theme@1.0.0-beta.22) (2020-06-09)
+
+
+### Features
+
+* add gradient in button ([689a4af](https://github.com/medly/medly-components/commit/689a4af02c8659e86a56a48f837967c7daaacfc3))
+* **core:** accordion component with enhancements ([6bfdd38](https://github.com/medly/medly-components/commit/6bfdd3893b25920830c818d15584a80587bc8b25))
+
+
+
+
+
 # [1.0.0-beta.21](https://github.com/medly/medly-components/compare/@medly-components/theme@1.0.0-beta.20...@medly-components/theme@1.0.0-beta.21) (2020-06-05)
 
 

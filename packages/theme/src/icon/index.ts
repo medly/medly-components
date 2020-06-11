@@ -9,10 +9,11 @@ const icon: IconTheme = {
         L: '3.2rem',
         XL: '4.0rem'
     },
-    defaultIconColor: colors.grey[600],
-    disabledIconColor: colors.grey[300],
-    hoverIconColor: colors.grey[800],
-    bgColor: colors.grey[100]
+    colors: {
+        default: { iconColor: colors.grey[600], bgColor: colors.communityBlue[100] },
+        disabled: { iconColor: colors.grey[300], bgColor: 'transparent' },
+        hovered: { iconColor: colors.white, bgColor: colors.communityBlue[400] }
+    }
 };
 
 export default icon;

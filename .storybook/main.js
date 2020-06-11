@@ -25,7 +25,7 @@ module.exports = {
         config.module.rules.push({
             test: /\.(ts|tsx)$/,
             include: [packages, docs],
-            exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /dist/, /icons/],
+            exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /dist/, /icons\/src\/assets/, /icons\/src\/icons/],
             loader: 'react-docgen-typescript-loader',
             options: {
                 tsconfigPath,

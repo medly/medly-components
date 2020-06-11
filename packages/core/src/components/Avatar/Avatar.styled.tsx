@@ -21,6 +21,7 @@ const getTextStyle = ({ theme, ...props }: StyledProps) => {
     return css`
         color: ${textColor || defaults.textColor};
         background: ${bgColor || defaults.bgColor};
+        user-select: none;
 
         ${Text.Style} {
             line-height: ${avatarSize};
@@ -40,6 +41,8 @@ export const AvatarStyled = styled('div').attrs(({ theme: { avatar: { defaults }
     height: ${getAvatarSize};
     border-radius: 50%;
     overflow: hidden;
+    cursor: ${({ onClick, disabled }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
+
     ${getTextStyle}
 
     img {

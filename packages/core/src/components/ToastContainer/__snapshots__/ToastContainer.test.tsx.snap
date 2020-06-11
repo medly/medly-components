@@ -2,10 +2,11 @@
 
 exports[`ToastContainer should render properly with position bottom 1`] = `
 .c3 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c3 * {
@@ -134,10 +135,11 @@ exports[`ToastContainer should render properly with position bottom 1`] = `
 
 exports[`ToastContainer should render properly with position bottom-end 1`] = `
 .c3 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c3 * {
@@ -263,10 +265,11 @@ exports[`ToastContainer should render properly with position bottom-end 1`] = `
 
 exports[`ToastContainer should render properly with position bottom-start 1`] = `
 .c3 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c3 * {
@@ -392,10 +395,11 @@ exports[`ToastContainer should render properly with position bottom-start 1`] = 
 
 exports[`ToastContainer should render properly with position left 1`] = `
 .c3 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c3 * {
@@ -524,10 +528,11 @@ exports[`ToastContainer should render properly with position left 1`] = `
 
 exports[`ToastContainer should render properly with position left-end 1`] = `
 .c3 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c3 * {
@@ -651,10 +656,11 @@ exports[`ToastContainer should render properly with position left-end 1`] = `
 
 exports[`ToastContainer should render properly with position left-start 1`] = `
 .c3 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c3 * {
@@ -778,10 +784,11 @@ exports[`ToastContainer should render properly with position left-start 1`] = `
 
 exports[`ToastContainer should render properly with position right 1`] = `
 .c3 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c3 * {
@@ -910,10 +917,11 @@ exports[`ToastContainer should render properly with position right 1`] = `
 
 exports[`ToastContainer should render properly with position right-end 1`] = `
 .c3 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c3 * {
@@ -1037,10 +1045,11 @@ exports[`ToastContainer should render properly with position right-end 1`] = `
 
 exports[`ToastContainer should render properly with position right-start 1`] = `
 .c3 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c3 * {
@@ -1164,10 +1173,11 @@ exports[`ToastContainer should render properly with position right-start 1`] = `
 
 exports[`ToastContainer should render properly with position top 1`] = `
 .c3 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c3 * {
@@ -1296,10 +1306,11 @@ exports[`ToastContainer should render properly with position top 1`] = `
 
 exports[`ToastContainer should render properly with position top-end 1`] = `
 .c3 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c3 * {
@@ -1425,10 +1436,11 @@ exports[`ToastContainer should render properly with position top-end 1`] = `
 
 exports[`ToastContainer should render properly with position top-start 1`] = `
 .c3 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c3 * {

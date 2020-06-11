@@ -2,10 +2,11 @@
 
 exports[`SideNav should render properly 1`] = `
 .c5 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c5 * {
@@ -156,7 +157,7 @@ exports[`SideNav should render properly 1`] = `
   background-color: #dfe4e9;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   top: 0;
   -webkit-transition: 0.2s;
   transition: 0.2s;
