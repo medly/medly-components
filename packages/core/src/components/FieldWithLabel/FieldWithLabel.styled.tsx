@@ -59,8 +59,8 @@ export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('di
                 return css`
                     grid-template-areas:
                         'label'
-                        'field'
-                        'description';
+                        'description'
+                        'field';
                 `;
             case 'bottom':
                 return css`

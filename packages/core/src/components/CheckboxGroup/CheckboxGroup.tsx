@@ -4,6 +4,7 @@ import { ThemeContext } from 'styled-components';
 import Checkbox from '../Checkbox';
 import FieldWithLabel from '../FieldWithLabel';
 import { HelperText } from '../TextField/Styled';
+import * as Styled from './CheckboxGroup.styled';
 import getValuesFromOptions from './getValuesFromOptions';
 import { Props } from './types';
 
@@ -49,10 +50,21 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
             }, [options, values, onChange]);
 
         return (
-            <FieldWithLabel id={`${label}-checkboxGroup`} ref={ref} fullWidth {...{ fullWidth, labelPosition }}>
+            <Styled.CheckboxGroupWrapper
+                id={`${label}-checkboxGroup`}
+                ref={ref}
+                fullWidth
+                {...{ fullWidth, labelPosition, error, showSelectAll }}
+            >
                 {label && (
                     <FieldWithLabel.Label
-                        {...{ labelPosition, labelVariant, labelWeight, labelColor, labelSpacing: showSelectAll ? '0' : theme.spacing.S2 }}
+                        {...{
+                            labelPosition,
+                            labelVariant,
+                            labelWeight,
+                            labelColor,
+                            labelSpacing: error || showSelectAll ? '0' : theme.spacing.S2
+                        }}
                     >
                         {showSelectAll ? (
                             <Checkbox
@@ -61,6 +73,7 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                                 label={label}
                                 checked={areAllValuesSelected}
                                 onChange={handleSelectAllClick}
+                                error={error}
                             />
                         ) : (
                             `${label}`
@@ -89,11 +102,12 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                                 checked={values.includes(option.value)}
                                 onChange={handleOptionClick}
                                 disabled={disabled || option.disabled}
+                                error={error}
                             />
                         );
                     })}
                 </FieldWithLabel.Field>
-            </FieldWithLabel>
+            </Styled.CheckboxGroupWrapper>
         );
     })
 );

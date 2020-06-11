@@ -45,7 +45,10 @@ export const WithError = () => {
                 { value: 'honda', label: 'Honda' },
                 { value: 'hyundai', label: 'Hyundai' },
                 {
-                    value: [{ value: 'jaguar', label: 'Jaguar' }],
+                    value: [
+                        { value: 'jaguar', label: 'Jaguar' },
+                        { value: 'mahindra', label: 'Mahindra' }
+                    ],
                     label: 'Tata',
                     error: true
                 }
