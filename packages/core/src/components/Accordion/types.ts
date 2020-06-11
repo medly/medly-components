@@ -1,11 +1,10 @@
-import { Props as TitleProps } from './Title';
-
-export interface StaticProps {
-    Title?: React.SFC<TitleProps>;
+export type StaticProps = {
+    Header?: React.SFC;
     Content?: React.SFC;
-}
+    Context?: React.Context<AccordionContextType>;
+};
 
-export interface AccordionContextProps {
-    isActive?: boolean;
-    toggle?: () => void;
-}
+export type AccordionContextType = [
+    boolean /** Current active state */,
+    React.Dispatch<React.SetStateAction<boolean>> /** Function to be called to toggle the active state */
+];
