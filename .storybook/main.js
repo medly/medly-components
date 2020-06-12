@@ -20,6 +20,7 @@ module.exports = {
         '@storybook/addon-knobs',
         'storybook-addon-jsx',
         'storybook-addon-designs',
+        '@storybook/addon-viewport',
         '@storybook/addon-actions'
     ],
     webpack: async config => {
