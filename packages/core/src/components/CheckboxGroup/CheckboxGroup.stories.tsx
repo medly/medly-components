@@ -50,7 +50,8 @@ export const WithError = () => {
                         { value: 'mahindra', label: 'Mahindra' }
                     ],
                     label: 'Tata',
-                    error: true
+                    error: true,
+                    columns: 2
                 }
             ]}
             disabled={boolean('Disabled', false)}

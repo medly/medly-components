@@ -10,7 +10,7 @@ exports[`DatePicker component should render properly when value is of date type 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
+  margin: 0px 2.0rem 0px 0px;
   cursor: default;
 }
 
@@ -37,10 +37,6 @@ exports[`DatePicker component should render properly when value is of date type 
 }
 
 .c0 .sc-fzoLag {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -57,16 +53,12 @@ exports[`DatePicker component should render properly when value is of date type 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  grid-template-areas: 'label' 'field' 'description';
+  grid-template-areas: 'label' 'description' 'field';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
 }
 
 .c4 .sc-fzoLag {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -98,6 +90,7 @@ exports[`DatePicker component should render properly when value is of date type 
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
+  display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -228,7 +221,7 @@ exports[`DatePicker component should render properly when value is of string typ
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
+  margin: 0px 2.0rem 0px 0px;
   cursor: default;
 }
 
@@ -255,10 +248,6 @@ exports[`DatePicker component should render properly when value is of string typ
 }
 
 .c0 .sc-fzoLag {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -275,16 +264,12 @@ exports[`DatePicker component should render properly when value is of string typ
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  grid-template-areas: 'label' 'field' 'description';
+  grid-template-areas: 'label' 'description' 'field';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
 }
 
 .c4 .sc-fzoLag {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -316,6 +301,7 @@ exports[`DatePicker component should render properly when value is of string typ
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
+  display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

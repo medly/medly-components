@@ -106,7 +106,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
+  margin: 0px 2.0rem 0px 0px;
   cursor: default;
 }
 
@@ -140,10 +140,6 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c1 .sc-AxhUy {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -160,16 +156,12 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  grid-template-areas: 'label' 'field' 'description';
+  grid-template-areas: 'label' 'description' 'field';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
 }
 
 .c11 .sc-AxhUy {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -185,6 +177,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
+  display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -445,10 +438,6 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c1 .sc-AxhUy {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -465,16 +454,12 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  grid-template-areas: 'label' 'field' 'description';
+  grid-template-areas: 'label' 'description' 'field';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
 }
 
 .c4 .sc-AxhUy {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -490,6 +475,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
+  display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -793,7 +779,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
+  margin: 0px 2.0rem 0px 0px;
   cursor: default;
 }
 
@@ -827,10 +813,6 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c1 .sc-AxhUy {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -847,16 +829,12 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  grid-template-areas: 'label' 'field' 'description';
+  grid-template-areas: 'label' 'description' 'field';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
 }
 
 .c11 .sc-AxhUy {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -872,6 +850,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
+  display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1132,10 +1111,6 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c1 .sc-AxhUy {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1152,16 +1127,12 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  grid-template-areas: 'label' 'field' 'description';
+  grid-template-areas: 'label' 'description' 'field';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
 }
 
 .c4 .sc-AxhUy {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -1177,6 +1148,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
+  display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

@@ -10,7 +10,7 @@ exports[`Input component should render correctly when fullWidth & required props
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
+  margin: 0px 2.0rem 0px 0px;
   cursor: default;
 }
 
@@ -55,10 +55,6 @@ exports[`Input component should render correctly when fullWidth & required props
 }
 
 .c0 .sc-AxiKw {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -74,6 +70,7 @@ exports[`Input component should render correctly when fullWidth & required props
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
+  display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -186,16 +183,12 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  grid-template-areas: 'label' 'field' 'description';
+  grid-template-areas: 'label' 'description' 'field';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
 }
 
 .c0 .sc-AxiKw {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -211,6 +204,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
+  display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -315,16 +309,12 @@ exports[`Input component should render correctly when label and description are 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  grid-template-areas: 'label' 'field' 'description';
+  grid-template-areas: 'label' 'description' 'field';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
 }
 
 .c0 .sc-AxiKw {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -340,6 +330,7 @@ exports[`Input component should render correctly when label and description are 
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
+  display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -445,7 +436,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0px 0.8rem 0px;
+  margin: 0px 0px 2.0rem 0px;
   cursor: default;
 }
 
@@ -490,14 +481,10 @@ exports[`Input component should render correctly with all the props given 1`] = 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  grid-template-areas: 'label' 'field' 'description';
+  grid-template-areas: 'label' 'description' 'field';
 }
 
 .c0 .sc-AxiKw {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -513,6 +500,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
+  display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

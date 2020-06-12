@@ -9,6 +9,12 @@ export const FieldStyled = styled('div')<FieldStyledProps>`
     grid-area: field;
     flex-wrap: wrap;
     margin-left: ${({ isIndented }) => (isIndented ? '17px' : '0px')};
+    display: ${({ columns }) => (columns > 1 ? 'grid' : 'inline-grid')};
+    ${({ columns }) =>
+        columns > 1 &&
+        css`
+            grid-template-columns: repeat(${columns}, 1fr);
+        `}
 `;
 
 export const LabelStyled = styled(Label)`
@@ -36,7 +42,6 @@ export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('di
         `}
 
     ${FieldStyled} {
-        display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
         align-items: ${({ labelPosition }) => (labelPosition === 'top' || labelPosition === 'bottom' ? 'flex-start' : 'center')};
         flex-direction: ${({ labelPosition }) => {
             switch (labelPosition) {

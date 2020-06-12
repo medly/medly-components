@@ -25,7 +25,8 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
             fullWidth,
             errorMessage,
             error,
-            helperText
+            helperText,
+            columns
         } = props;
 
         const allChildValues = useMemo(() => getValuesFromOptions(options), [options]),
@@ -82,7 +83,7 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                     </FieldWithLabel.Label>
                 )}
                 {(error || helperText) && <HelperText id={`checkbox-helper-text`}>{errorMessage || helperText}</HelperText>}
-                <FieldWithLabel.Field isIndented={labelPosition === 'top'}>
+                <FieldWithLabel.Field isIndented={labelPosition === 'top'} columns={columns}>
                     {options.map(option => {
                         return Array.isArray(option.value) ? (
                             <CheckboxGroup
@@ -91,7 +92,8 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                                     ...props,
                                     options: option.value,
                                     label: option.label,
-                                    error: option.error
+                                    error: option.error,
+                                    columns: option.columns
                                 }}
                             />
                         ) : (
@@ -123,5 +125,6 @@ CheckboxGroup.defaultProps = {
     labelPosition: 'left',
     errorMessage: 'Error text here',
     helperText: '',
-    error: false
+    error: false,
+    columns: 1
 };

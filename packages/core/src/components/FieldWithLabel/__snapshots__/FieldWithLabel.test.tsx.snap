@@ -19,6 +19,7 @@ exports[`FieldWithLabel component should render properly when lable is not prese
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 17px;
+  display: inline-grid;
 }
 
 .c4 {
@@ -41,10 +42,6 @@ exports[`FieldWithLabel component should render properly when lable is not prese
 }
 
 .c0 .c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -82,7 +79,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
+  margin: 0px 2.0rem 0px 0px;
   cursor: default;
 }
 
@@ -104,6 +101,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
+  display: inline-grid;
 }
 
 .c2 {
@@ -135,10 +133,6 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 }
 
 .c0 .c3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -181,7 +175,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
+  margin: 0px 2.0rem 0px 0px;
   cursor: default;
 }
 
@@ -203,6 +197,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
+  display: inline-grid;
 }
 
 .c2 {
@@ -235,10 +230,6 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 }
 
 .c0 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -281,7 +272,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
+  margin: 0px 2.0rem 0px 0px;
   cursor: default;
 }
 
@@ -303,6 +294,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
+  display: inline-grid;
 }
 
 .c2 {
@@ -335,10 +327,6 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 }
 
 .c0 .c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -381,7 +369,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
+  margin: 0px 2.0rem 0px 0px;
   cursor: default;
 }
 
@@ -403,6 +391,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: 0px;
+  display: inline-grid;
 }
 
 .c2 {
@@ -430,14 +419,10 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-flex-align: center;
   align-items: center;
   min-width: 300px;
-  grid-template-areas: 'label' 'field' 'description';
+  grid-template-areas: 'label' 'description' 'field';
 }
 
 .c0 .c3 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;

@@ -10,7 +10,7 @@ exports[`Label component should render correctly with all the props given 1`] = 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0px 0.8rem 0px;
+  margin: 0px 0px 2.0rem 0px;
   cursor: pointer;
 }
 
@@ -39,7 +39,7 @@ exports[`Label component should render correctly with default props 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
+  margin: 0px 2.0rem 0px 0px;
   cursor: default;
 }
 
