@@ -1,6 +1,9 @@
 name: Lint, Build, Test
 
-on: [push]
+on:
+    push:
+        branches:
+            - master
 
 jobs:
     lint-build-test:
@@ -22,3 +25,9 @@ jobs:
 
             - name: Run tests
               run: yarn test
+
+            - name: Release packages
+              run: yarn release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
