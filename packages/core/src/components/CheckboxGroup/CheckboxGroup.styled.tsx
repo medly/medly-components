@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils/src/styled';
+import { styled } from '@medly-components/utils';
 import FieldWithLabel from '../FieldWithLabel';
 import { HelperText } from '../TextField/Styled';
 

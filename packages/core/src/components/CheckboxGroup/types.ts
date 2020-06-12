@@ -31,6 +31,8 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChang
     showSelectAll?: boolean;
     /** Error Message */
     errorMessage?: string;
+    /** Helper Message below checkboxGroup */
+    helperText?: string;
     /** Error State */
     error?: boolean;
 }
