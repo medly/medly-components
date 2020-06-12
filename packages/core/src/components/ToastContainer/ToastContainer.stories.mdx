@@ -6,7 +6,17 @@ import { positions, ToastButtons, AddToast } from './ToastContainer.stories';
 import { addToast } from './ToastStore.ts';
 import { PersonAddIcon } from '@medly-components/icons';
 
-<Meta title="Core" component={ToastContainer} parameters={{ jest: ['ToastContainer.test.tsx'] }} />
+<Meta
+    title="Core"
+    component={ToastContainer}
+    parameters={{
+        jest: ['ToastContainer.test.tsx'],
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=3672%3A0'
+        }
+    }}
+/>
 
 # ToastContainer
 

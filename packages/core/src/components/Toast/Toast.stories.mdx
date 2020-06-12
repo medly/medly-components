@@ -3,7 +3,17 @@ import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { variants, ThemeInterface, Div } from './Toast.stories';
 import { withKnobs, select, text } from '@storybook/addon-knobs';
 
-<Meta title="Core" component={Toast} parameters={{ jest: ['Toast.test.tsx'] }} />
+<Meta
+    title="Core"
+    component={Toast}
+    parameters={{
+        jest: ['Toast.test.tsx'],
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=3672%3A0'
+        }
+    }}
+/>
 
 # Toast
 
