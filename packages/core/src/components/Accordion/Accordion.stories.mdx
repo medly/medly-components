@@ -1,48 +1,43 @@
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { withKnobs } from '@storybook/addon-knobs';
-import { CountStyle, ThemeInterface, Data} from './Accordion.stories';
-import { Accordion  } from './Accordion';
-import { AccordionTheme, defaultTheme } from '@medly-components/theme';
+import { defaultTheme } from '@medly-components/theme';
+import { Accordion } from './Accordion';
+import Text from '../Text';
 
-
-
-<Meta title="Core/Accordion" component={Accordion} parameters={{ jest: ['Accordion.test.tsx'] }} />
+<Meta title="Core" component={Accordion} parameters={{ jest: ['Accordion.test.tsx'] }} />
 
 # Accordion
 
-Accordion is a container that can either stand alone or be connected with other components.
+Simple accordion component with two children components `Accordion.Header` & `Accordion.Content`, which are just wrapper components. You can pass any component as children to `Accordion.Header` & `Accordion.Content`.
 
-#### Basic Accordion
 <Preview withToolbar>
-    <Story name="BasicAccordion" parameters={{ decorators: [withKnobs] }}>
+    <Story name="Accordion">
         <Accordion>
-            <Accordion.Title>
-                <Text> Uploaded Files</Text>
-            </Accordion.Title>
+            <Accordion.Header>
+                <div style={{ backgroundColor: '#e6effd', padding: `1.8rem` }}>
+                    <Text>Header</Text>
+                </div>
+            </Accordion.Header>
             <Accordion.Content>
-                <div>File 1</div>
+                <div style={{ backgroundColor: '#ecfbf9', padding: `1.8rem` }}>
+                    <Text>Content</Text>
+                </div>
             </Accordion.Content>
         </Accordion>
     </Story>
 </Preview>
 
-#### Accordion with title content
-<Preview withToolbar>
-    <Story name="AccordionWithCount" parameters={{ decorators: [withKnobs] }}>
-        <Accordion>
-            <Accordion.Title bgColor={defaultTheme.colors.springTeal[100]}>
-                <Data> Uploaded Files</Data>
-                <CountStyle textColor={defaultTheme.colors.communityBlue[500]} textWeight="Strong">
-                    34
-                </CountStyle>
-            </Accordion.Title>
-            <Accordion.Content>
-                <div>File 1</div>
-            </Accordion.Content>
-        </Accordion>
-    </Story>
-</Preview>
+We have also exposed `Accordion.Context`, so that you can find out the latest active state. Accordion context can be used like below:
 
-#### Accordion Theme
+```tsx
+const [isActive, setActiveState] = useContext(Accordion.Context);
+```
 
-<Props of={ThemeInterface} />
+Type of Accordion Context is:
+
+```tsx
+export type AccordionContextType = [
+    boolean /** Current active state */,
+    React.Dispatch<React.SetStateAction<boolean>> /** Function to be called to toggle the active state */
+];
+```

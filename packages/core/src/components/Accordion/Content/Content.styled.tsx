@@ -1,10 +1,10 @@
 import { styled } from '@medly-components/utils';
 
-export const Wrapper = styled('div')`
-    cursor: pointer;
-    display: flex;
-    outline: none;
-    border-top: solid 0.2rem ${({ theme }) => theme.accordion.separatorColor};
-    padding: 1.8rem;
-    background-color: transparent;
+export const Wrapper = styled('div')<{ isActive: boolean }>`
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    max-height: ${({ isActive }) => (isActive ? '100vh' : 0)};
+    opacity: ${({ isActive }) => (isActive ? 1 : 0)};
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
 `;

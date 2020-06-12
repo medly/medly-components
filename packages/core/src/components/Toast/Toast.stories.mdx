@@ -1,16 +1,38 @@
 import { Toast } from './Toast';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './Toast.stories';
+import { variants, ThemeInterface, Div } from './Toast.stories';
+import { withKnobs, select, text } from '@storybook/addon-knobs';
 
-<Meta title="Core" component={Toast} />
+<Meta
+    title="Core"
+    component={Toast}
+    parameters={{
+        jest: ['Toast.test.tsx'],
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=3672%3A0'
+        }
+    }}
+/>
 
 # Toast
 
-### Basic Toast
+Basic toast component with four different variants.
 
 <Preview withToolbar>
-    <Story name="Toast">{stories.Basic()}</Story>
+    <Div>
+        <Toast variant="success" header="Success Notification" message="Lorem Ipsum is simply dummy text."></Toast>
+        <Toast variant="error" header="Error Notification" message="Lorem Ipsum is simply dummy text."></Toast>
+        <Toast variant="warning" header="Warning Notification" message="Lorem Ipsum is simply dummy text."></Toast>
+        <Toast variant="info" header="Info Notification" message="Lorem Ipsum is simply dummy text."></Toast>
+    </Div>
 </Preview>
+
+### How to use
+
+You have to add `<ToastContainer/>` in your app at root level and then just use `addToast` function to raise the toast. For more info check `ToastContainer` docs.
+
+<Props of={ThemeInterface} />
 
 ### Props
 
@@ -18,4 +40,17 @@ import * as stories from './Toast.stories';
 
 ### ToastTheme
 
-<Props of={stories.ThemeInterface} />
+<Props of={ThemeInterface} />
+
+Yuo can play with this toast in canvas tab.
+
+<Preview withToolbar>
+    <Story name="Toast" decorators={[withKnobs]}>
+        <Toast
+            variant={select('Variant', variants, 'success')}
+            header={text('Header', 'Default Notification')}
+            message={text('Message', 'Lorem Ipsum is simply dummy text.')}
+            action={{ label: 'Take Action', handler: () => {} }}
+        ></Toast>
+    </Story>
+</Preview>
