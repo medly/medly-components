@@ -1,13 +1,9 @@
-import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import { Props as ButtonProps } from '../Button/types';
 
 export type ToastVariants = 'success' | 'error' | 'info' | 'warning';
 
-export type Action = {
-    label: string;
-    handler: () => void;
-};
-
-export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'id'> {
+export type ToastProps = Omit<HTMLProps<HTMLDivElement>, 'id' | 'action'> & {
     /** Id of the Toast */
     id?: number;
     /** Toast purpose */
@@ -18,9 +14,8 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'id'> {
     header?: string;
     /** Toast message */
     message?: string;
-    action?: Action;
-}
+    /** Additional action if you want to add */
+    action?: { label: string } & Omit<ButtonProps, 'variant' | 'size'>;
+};
 
-export interface StyledProps extends WithThemeProp, Props {
-    show?: boolean;
-}
+export type StyledProps = WithThemeProp & ToastProps;

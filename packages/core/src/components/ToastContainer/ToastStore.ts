@@ -1,20 +1,10 @@
 import { createEvent, createStore } from 'effector';
-import { ToastVariants } from '../Toast/types';
+import { ToastProps } from '../Toast/types';
 
-export interface Toast {
-    /** Auto generated id of the Toast */
-    id?: number;
-    /** Toast purpose */
-    variant: ToastVariants;
-    /** Toast Header */
-    header?: string;
-    /** Toast message */
-    message?: string;
-    /** Custom icon */
-    icon?: React.SFC<any>;
+export type Toast = ToastProps & {
     /** Time after which toast will automatically removed */
     timer?: number;
-}
+};
 
 export const addToast = createEvent<Toast>();
 export const removeToast = createEvent<number>();

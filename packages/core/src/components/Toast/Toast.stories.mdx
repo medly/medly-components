@@ -22,6 +22,8 @@ Basic toast component with four different variants.
 
 You have to add `<ToastContainer/>` in your app at root level and then just use `addToast` function to raise the toast. For more info check `ToastContainer` docs.
 
+<Props of={ThemeInterface} />
+
 ### Props
 
 <Props of={Toast} />
@@ -38,7 +40,7 @@ Yuo can play with this toast in canvas tab.
             variant={select('Variant', variants, 'success')}
             header={text('Header', 'Default Notification')}
             message={text('Message', 'Lorem Ipsum is simply dummy text.')}
-            action={{label: 'Take Action', handler: ()=>{}}}
+            action={{ label: 'Take Action', handler: () => {} }}
         ></Toast>
     </Story>
 </Preview>

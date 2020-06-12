@@ -2,10 +2,8 @@ import colors from '../colors';
 import { ToastTheme } from './types';
 
 const toast: ToastTheme = {
-    textColor: colors.professionalNavy,
+    textColor: colors.grey[900],
     boxShadow: colors.grey[400],
-    iconBg: colors.grey[100],
-    buttonColor: colors.communityBlue[500],
     bgColor: {
         success: colors.green[100],
         info: colors.communityBlue[100],

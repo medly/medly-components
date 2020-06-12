@@ -5,9 +5,9 @@ import Button from '../Button';
 import Text from '../Text';
 import { removeToast } from '../ToastContainer/ToastStore';
 import * as Styled from './Toast.styled';
-import { Props } from './types';
+import { ToastProps } from './types';
 
-export const Toast: SFC<Props> & WithStyle = React.memo(
+export const Toast: SFC<ToastProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { id, variant, header, icon: Icon, message, action, ...restProps } = props;
 
@@ -15,7 +15,7 @@ export const Toast: SFC<Props> & WithStyle = React.memo(
 
         return (
             <Styled.Toast ref={ref} variant={variant} {...restProps}>
-                <Styled.SvgWrapper variant={variant}>
+                <Styled.IconWrapper variant={variant}>
                     {Icon ? (
                         <Icon />
                     ) : (
@@ -26,19 +26,19 @@ export const Toast: SFC<Props> & WithStyle = React.memo(
                             success: <CheckIcon />
                         }[variant]
                     )}
-                </Styled.SvgWrapper>
-                <Styled.ToastContent>
+                </Styled.IconWrapper>
+                <Styled.ContentWrapper>
                     {header && <Text textWeight="Medium">{header}</Text>}
+                    {message && <Text>{message}</Text>}
+                </Styled.ContentWrapper>
+                <Styled.ActionWrapper>
                     {action && (
-                        <Button onClick={() => action.handler()} variant="flat" color="default" size="S">
+                        <Button {...action} variant="flat" size="S">
                             {action.label}
                         </Button>
                     )}
-                    {message && <Text fullWidth>{message}</Text>}
-                </Styled.ToastContent>
-                <Styled.IconWrapper>
-                    <ClearIcon size="M" onClick={handleClose} />
-                </Styled.IconWrapper>
+                    <ClearIcon size="XS" variant="solid" onClick={handleClose} />
+                </Styled.ActionWrapper>
             </Styled.Toast>
         );
     })
