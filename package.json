@@ -13,8 +13,8 @@
     },
     "husky": {
         "hooks": {
-            "prepare-commit-msg": "[[ -n $HUSKY_BYPASS ]] || exec < /dev/tty && git cz --hook || true",
-            "commit-msg": "[[ -n $HUSKY_BYPASS ]] || commitlint -E HUSKY_GIT_PARAMS"
+            "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
         }
     },
     "scripts": {
@@ -26,10 +26,9 @@
         "lint:ts": "eslint 'packages/**/src/**/*.{ts,tsx}'",
         "lint": "run-p -c lint:*",
         "prebuild": "yarn typecheck && rimraf packages/*/dist",
-        "prerelease": "yarn lint && yarn build && yarn test",
         "prestorybook:build": "yarn test:generate-output",
         "prestorybook:deploy": "yarn test:generate-output",
-        "release": "cross-env HUSKY_BYPASS=true lerna publish",
+        "release": "lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo",
         "storybook:build": "cross-env BABEL_ENV=storybook build-storybook -c .storybook -o .out",
         "storybook:deploy": "cross-env BABEL_ENV=storybook storybook-to-ghpages",
         "storybook": "start-storybook -p 6006",
@@ -112,6 +111,8 @@
         "rimraf": "^3.0.1",
         "rollup": "^2.10.0",
         "rollup-plugin-terser": "^5.3.0",
+        "semantic-release": "^17.0.8",
+        "semantic-release-monorepo": "^7.0.2",
         "storybook-addon-designs": "^5.2.1",
         "storybook-addon-jsx": "7.1.14",
         "styled-components": "^5.1.0",

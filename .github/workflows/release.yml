@@ -1,9 +1,12 @@
-name: Lint, Build, Test
+name: Release packages
 
-on: [push]
+on:
+    push:
+        branches:
+            - master
 
 jobs:
-    lint-build-test:
+    release:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repo
@@ -22,3 +25,9 @@ jobs:
 
             - name: Run tests
               run: yarn test
+
+            - name: Release packages
+              run: yarn release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
