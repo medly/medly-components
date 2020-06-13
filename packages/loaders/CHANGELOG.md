@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.0.0-beta.27...@medly-components/loaders@1.0.1) (2020-06-13)
+
+
+### Bug Fixes
+
+* remove semantic release ([#109](https://github.com/medly/medly-components/issues/109)) ([db2903d](https://github.com/medly/medly-components/commit/db2903d4b0e5b8dec576d3981b96775f8f4d6b28))
+
+
+
+
+
 # [1.0.0-beta.27](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.0.0-beta.26...@medly-components/loaders@1.0.0-beta.27) (2020-06-11)
 
 **Note:** Version bump only for package @medly-components/loaders
