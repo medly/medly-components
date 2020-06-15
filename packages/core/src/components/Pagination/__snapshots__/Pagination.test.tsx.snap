@@ -27,6 +27,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   transition: all 100ms ease-out;
   padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -214,6 +215,7 @@ exports[`Pagination component should render correctly with all the default props
   transition: all 100ms ease-out;
   padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -622,6 +624,7 @@ exports[`Pagination component should render correctly with all the props given 1
   transition: all 100ms ease-out;
   padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;

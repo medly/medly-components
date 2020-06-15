@@ -897,6 +897,7 @@ exports[`Button component should render properly with "outlined" variant and "co
   transition: all 100ms ease-out;
   padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1.2rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1010,6 +1011,7 @@ exports[`Button component should render properly with "outlined" variant and "de
   transition: all 100ms ease-out;
   padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1.2rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1123,6 +1125,7 @@ exports[`Button component should render properly with "outlined" variant and "er
   transition: all 100ms ease-out;
   padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1.2rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1236,6 +1239,7 @@ exports[`Button component should render properly with "outlined" variant should 
   transition: all 100ms ease-out;
   padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1.2rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1350,6 +1354,7 @@ exports[`Button component should render properly with "outlined" variant should 
   transition: all 100ms ease-out;
   padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1.2rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1463,6 +1468,7 @@ exports[`Button component should render properly with "outlined" variant should 
   transition: all 100ms ease-out;
   padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
