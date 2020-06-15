@@ -1,4 +1,4 @@
-import { CheckMaterialIcon } from '@medly-components/icons';
+import { CheckMaterialIcon, MinimizeIcon } from '@medly-components/icons';
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
 import React, { SFC, useCallback } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
@@ -7,7 +7,19 @@ import { Props } from './types';
 
 export const Checkbox: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { id, size, label, required, labelPosition, labelVariant, labelWeight, fullWidth, onChange, ...restProps } = props;
+        const {
+            id,
+            size,
+            label,
+            required,
+            labelPosition,
+            labelVariant,
+            labelWeight,
+            fullWidth,
+            indeterminate,
+            onChange,
+            ...restProps
+        } = props;
 
         const inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null));
 
@@ -43,7 +55,7 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
                     data-testid="checkbox-wrapper"
                 >
                     <Styled.Checkbox ref={inputRef} id={id || label} required={required} onChange={changeHandler} {...restProps} />
-                    <CheckMaterialIcon onClick={changeHandler} />
+                    {indeterminate ? <MinimizeIcon /> : <CheckMaterialIcon onClick={changeHandler}></CheckMaterialIcon>}
                 </Styled.Wrapper>
             </Styled.CheckboxWithLabelWrapper>
         );

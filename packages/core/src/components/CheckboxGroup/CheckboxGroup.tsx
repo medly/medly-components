@@ -75,6 +75,7 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                                 label={label}
                                 checked={areAllValuesSelected}
                                 onChange={handleSelectAllClick}
+                                indeterminate={true}
                                 error={error}
                             />
                         ) : (

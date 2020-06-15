@@ -30,6 +30,7 @@ export const Basic = () => {
             fullWidth={boolean('Full Width', false)}
             disabled={boolean('Disabled', false)}
             error={boolean('Error', false)}
+            indeterminate={boolean('indeterminate', false)}
             labelPosition={select('Label Position', labelPosition, 'right')}
             checked={isChecked}
             onChange={onChangeHandler}
