@@ -43,7 +43,7 @@ export const Custom: React.SFC = () => {
 
     return (
         <Form onSubmit={handleFormSubmit}>
-            <TextField type="email" label="Email" placeholder="Enter email" required {...email} validator={emailValidation} />
+            <TextField type="email" label="Email" placeholder="Enter email" required {...email} errorText={emailValidation(email.value)} />
             <Button type="submit">Submit</Button>
         </Form>
     );
