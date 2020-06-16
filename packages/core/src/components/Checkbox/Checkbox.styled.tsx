@@ -1,31 +1,36 @@
 import { CheckIcon } from '@medly-components/icons';
-import { defaultTheme } from '@medly-components/theme';
+import { CoreTheme, defaultTheme } from '@medly-components/theme';
 import { centerAligned, css, styled } from '@medly-components/utils';
 import FieldWithLabel from '../FieldWithLabel';
 import { CheckboxWrapperProps, Props } from './types';
 
-const activeStyle = ({ theme, error, disabled }: CheckboxWrapperProps) => {
-    const color = disabled ? 'disabled' : error ? 'error' : 'confirmation';
+type CheckboxState = 'disabled' | 'error' | 'confirmation';
+
+const getCheckIconStyle = (checkboxState: CheckboxState, theme: CoreTheme) => {
     return css`
-        border-color: ${theme.checkbox.colors[color].bgColor};
-        background-color: ${theme.checkbox.colors[color].bgColor};
         ${CheckIcon.Style} {
             * {
-                fill: ${theme.checkbox.colors[color].iconColor};
-            }
-        }
-
-        &:hover {
-            border-color: ${theme.checkbox.colors[color].hoverBgColor};
-            background-color: ${theme.checkbox.colors[color].hoverBgColor};
-            ${CheckIcon.Style} {
-                * {
-                    fill: ${theme.checkbox.colors[color].iconColor};
-                }
+                fill: ${theme.checkbox.colors[checkboxState].iconColor};
             }
         }
     `;
 };
+
+const activeStyle = ({ theme, error, disabled }: CheckboxWrapperProps) => {
+    const checkboxState: CheckboxState = disabled ? 'disabled' : error ? 'error' : 'confirmation';
+    return css`
+        border-color: ${theme.checkbox.colors[checkboxState].bgColor};
+        background-color: ${theme.checkbox.colors[checkboxState].bgColor};
+        ${getCheckIconStyle(checkboxState, theme)};
+
+        &:hover {
+            border-color: ${theme.checkbox.colors[checkboxState].hoverBgColor};
+            background-color: ${theme.checkbox.colors[checkboxState].hoverBgColor};
+            ${getCheckIconStyle(checkboxState, theme)};
+        }
+    `;
+};
+
 const nonActiveStyle = ({ theme, error, disabled }: CheckboxWrapperProps) => {
     const colors = theme.checkbox.colors,
         color = error ? 'error' : 'confirmation';
