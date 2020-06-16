@@ -7,24 +7,26 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![GitHub](https://img.shields.io/github/license/medly/medly-components)](https://github.com/medly/medly-components/blob/master/LICENSE)
 
-Medly components provides numerous themable react components, each with multiple varitaions of sizes, colors, position etc. You can checkout the storybook of the components [here](https://medly.github.io/medly-components).
+Themable react components with various configuration to match your need. You can checkout the storybook of the components [here](https://medly.github.io/medly-components).
 
 ## Table of Contents
 
 -   🚀[Getting Started](#getting-started)
 -   📦[Packages](#packages)
-    -   🛠[Core](#core)
-    -   ℹ[Icons](#icons)
-    -   ⧉[Layout](#layout)
-    -   🏞[Theme](#theme)
-    -   🛠[Utils](#utils)
+    -   🧩 [Core](#core)
+    -   ℹ [Icons](#icons)
+    -   🌀 [Loaders](#loaders)
+    -   ⧉ [Layout](#layout)
+    -   📝 [Forms](#forms)
+    -   🏞 [Theme](#theme)
+    -   🛠 [Utils](#utils)
 -   📜[Built With](#built-with)
 -   📝[Npm Scripts](#npm-scripts)
 
 ## Getting Started
 
-```sh
-npx create-react-app medly-components-demo --typescript
+```properties
+npx create-react-app medly-components-demo --template typescript
 cd medly-components-demo
 yarn add styled-components @types/styled-components
 yarn add @medly-components/theme @medly-components/utils @medly-components/icons @medly-components/core @medly-components/layout @medly-components/loaders @medly-components/forms
@@ -68,15 +70,23 @@ Library consists of five packages:
 
 ### [Core](https://github.com/medly/medly-components/tree/master/packages/core)
 
-Core package consits of components almost all basic react components like Avatar, Button, Input, List, Modal etc.
+Core package consists of components almost all basic react components like Avatar, Button, Input, List, Modal etc.
 
 ### [Icons](https://github.com/medly/medly-components/tree/master/packages/icons)
 
-Icons package consists of most commonly used svg icons for add, delete, clearfile, clipboard etc exposed as react components.
+Icons package consists of most commonly used svg icons exposed as react components.
+
+### [Loaders](https://github.com/medly/medly-components/tree/master/packages/loaders)
+
+Few simple svg loaders exposed as react components.
 
 ### [Layout](https://github.com/medly/medly-components/tree/master/packages/layout)
 
 Layout package consists of components that help in creating a page layout using side panels and nav items, which are exposed as react components.
+
+### [Forms](https://github.com/medly/medly-components/tree/master/packages/forms)
+
+Using this package you can create dynamic form using simple json
 
 ### [Theme](https://github.com/medly/medly-components/tree/master/packages/theme)
 
@@ -108,9 +118,9 @@ Utils package consists of most commonly used functionalities or components. Eg [
 -   `yarn lint:ts` to run the ts lint
 -   `yarn lint` to run both css & ts lint
 -   `yarn test` to run tests and type check
--   `yarn test:update` to upgrate snapshots
+-   `yarn test:update` to update snapshots
 -   `yarn test:watch` to watch tests
 -   `yarn type-check` to run tsc to check types
 -   `yarn test:jest` to run test only
 -   `yarn storybook` to run storybook for live reloading your components
--   `yarn release` to version your components
+-   `yarn release` to publish the latest version to npm
