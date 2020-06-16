@@ -1,9 +1,9 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 import FastRewindIconSvg from '../../assets/Media/fast_rewind_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const FastRewindIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+const FastRewindIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>

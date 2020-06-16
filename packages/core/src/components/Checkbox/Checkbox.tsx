@@ -1,11 +1,11 @@
 import { CheckIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback } from 'react';
+import React, { FC, useCallback } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './Checkbox.styled';
 import { Props } from './types';
 
-export const Checkbox: SFC<Props> & WithStyle = React.memo(
+export const Checkbox: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
             id,

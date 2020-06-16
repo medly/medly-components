@@ -1,9 +1,9 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 import BatteryStdIconSvg from '../../assets/Device/battery_std_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const BatteryStdIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+const BatteryStdIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>

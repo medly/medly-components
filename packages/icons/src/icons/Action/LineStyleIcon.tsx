@@ -1,9 +1,9 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 import LineStyleIconSvg from '../../assets/Action/line_style_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const LineStyleIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+const LineStyleIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>

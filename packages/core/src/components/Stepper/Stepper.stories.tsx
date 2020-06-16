@@ -1,12 +1,12 @@
 import { defaultTheme, StepperTheme } from '@medly-components/theme';
 import { select } from '@storybook/addon-knobs';
-import React, { SFC, useState } from 'react';
+import React, { FC, useState } from 'react';
 import { Stepper } from './Stepper';
 import { Props } from './types';
 
 const size: Props['size'][] = ['S', 'M', 'L'];
 
-export const ThemeInterface: SFC<StepperTheme> = () => null;
+export const ThemeInterface: FC<StepperTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.stepper
 };

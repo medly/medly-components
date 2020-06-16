@@ -4,7 +4,7 @@ import Text from '../../../Text';
 import * as Style from './Cell.styled';
 import { Props } from './types';
 
-export const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
+export const Cell: React.FC<Props> & WithStyle = React.memo(props => {
     const { data, rowId, column, isRowClickDisabled } = props,
         { component: Component, align } = column;
 

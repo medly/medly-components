@@ -13,12 +13,12 @@ const options = [
     { value: '2', label: 'Covered Entity' }
 ];
 
-export const ThemeInterface: React.SFC<ModalTheme> = () => null;
+export const ThemeInterface: React.FC<ModalTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.modal
 };
 
-export const ModalActionProps: React.SFC<ModalActionUserProps> = () => null;
+export const ModalActionProps: React.FC<ModalActionUserProps> = () => null;
 ModalActionProps.defaultProps = {
     alignItems: 'right'
 };

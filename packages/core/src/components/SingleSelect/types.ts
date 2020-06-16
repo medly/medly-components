@@ -42,7 +42,7 @@ export interface SelectProps extends InputProps, WithThemeProp {
     /** Label */
     label?: string;
     /** Leading icon */
-    prefix?: React.SFC<any>;
+    prefix?: React.FC<any>;
     /** Helper Text */
     helperText?: string;
     /** Error Text */

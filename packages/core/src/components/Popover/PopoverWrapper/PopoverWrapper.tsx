@@ -1,9 +1,9 @@
 import { useOuterClickNotifier, WithStyle } from '@medly-components/utils';
-import React, { SFC, useMemo, useRef } from 'react';
+import React, { FC, useMemo, useRef } from 'react';
 import { PopoverWrapperStyled } from './PopoverWrapper.styled';
 import { Props } from './types';
 
-export const PopoverWrapper: SFC<Props> & WithStyle = React.memo(props => {
+export const PopoverWrapper: FC<Props> & WithStyle = React.memo(props => {
     const wrapperRef = useRef(null),
         { children, onOuterClick, showPopover, ...restProps } = props,
         id = props.id || 'medly-popover-wrapper';

@@ -4,7 +4,7 @@ import Option from './Option';
 import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
-const Options: React.SFC<OptionsProps> & WithStyle = React.memo(
+const Options: React.FC<OptionsProps> & WithStyle = React.memo(
     React.forwardRef(({ options, onOptionClick, ...restProps }, ref) => {
         return (
             <Styled.Options {...restProps} ref={ref}>

@@ -1,5 +1,5 @@
 import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
-import React, { SFC, useEffect, useReducer } from 'react';
+import React, { FC, useEffect, useReducer } from 'react';
 import Actions from './Actions';
 import CloseIcon from './CloseIcon';
 import Content from './Content';
@@ -9,7 +9,7 @@ import Popup from './Popup';
 import { reducer } from './scrollStateReducer';
 import { ModalStaticProps, Props } from './types';
 
-export const Modal: SFC<Props> & WithStyle & ModalStaticProps = React.memo(
+export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const { open, onCloseModal, children, minWidth, minHeight, ...restProps } = props,
             id = restProps.id || 'medly-modal',

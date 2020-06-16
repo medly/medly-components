@@ -5,7 +5,7 @@ import Text from '../../Text';
 import * as Styled from './Cell.styled';
 import { Props } from './types';
 
-const Cell: React.SFC<Props> & WithStyle = React.memo(props => {
+const Cell: React.FC<Props> & WithStyle = React.memo(props => {
     const childRef = useRef(null),
         {
             addColumnMaxSize,

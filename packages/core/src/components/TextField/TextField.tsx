@@ -1,9 +1,9 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback, useMemo, useState } from 'react';
+import React, { FC, useCallback, useMemo, useState } from 'react';
 import * as Styled from './Styled';
 import { Props } from './types';
 
-export const TextField: SFC<Props> & WithStyle = React.memo(
+export const TextField: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props: Props, ref) => {
         const [builtInErrorMessage, setErrorMessage] = useState(''),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null));

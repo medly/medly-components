@@ -6,7 +6,7 @@ import { Label } from './Label';
 const variantOptions: FontVariants[] = ['h1', 'h2', 'h3', 'h4', 'h5', 'body1', 'body2'];
 const defaultColor = defaultTheme.font.defaults.color;
 
-export const ThemeInterface: React.SFC<LabelTheme> = () => null;
+export const ThemeInterface: React.FC<LabelTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.label
 };

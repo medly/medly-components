@@ -7,7 +7,7 @@ import Fields from '../Fields';
 import * as Styled from './Form.styled';
 import { Props } from './types';
 
-export const Form: React.SFC<Props> & WithStyle = React.memo(
+export const Form: React.FC<Props> & WithStyle = React.memo(
     React.forwardRef(
         (
             {

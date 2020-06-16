@@ -1,11 +1,11 @@
 import { ChevronDownIcon, ChevronUpIcon, DropdownIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback, useEffect, useMemo, useState } from 'react';
+import React, { FC, useCallback, useEffect, useMemo, useState } from 'react';
 import Text from '../../../Text';
 import * as Styled from './HeadCell.styled';
 import { Props } from './types';
 
-export const HeadCell: SFC<Props> & WithStyle = React.memo(({ defaultSortOrder, sortField, onSortChange, withWhiteBackground, column }) => {
+export const HeadCell: FC<Props> & WithStyle = React.memo(({ defaultSortOrder, sortField, onSortChange, withWhiteBackground, column }) => {
     const { field, sortable, title, align } = column,
         [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>(defaultSortOrder);
 

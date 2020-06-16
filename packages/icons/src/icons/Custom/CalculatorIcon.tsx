@@ -1,9 +1,9 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 import CalculatorIconSvg from '../../assets/Custom/calculator_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CalculatorIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+const CalculatorIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>

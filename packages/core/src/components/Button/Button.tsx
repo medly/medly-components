@@ -1,10 +1,10 @@
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 import Text from '../Text';
 import { ButtonStyled } from './Button.styled';
 import { Props } from './types';
 
-export const Button: SFC<Props> & WithStyle = React.memo(
+export const Button: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => (
         <ButtonStyled ref={ref} {...props}>
             {React.Children.map(props.children, c => {

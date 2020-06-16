@@ -1,11 +1,11 @@
 import { DateRangeInput, OnDatesChangeProps } from '@datepicker-react/styled';
 import { format } from 'date-fns';
-import React, { SFC, useCallback, useMemo, useState } from 'react';
+import React, { FC, useCallback, useMemo, useState } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import { DateRangePickerStyled } from './DateRangePicker.styled';
 import { Props } from './types';
 
-export const DateRangePicker: SFC<Props> = React.memo(props => {
+export const DateRangePicker: FC<Props> = React.memo(props => {
     const {
         label,
         labelPosition,

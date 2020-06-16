@@ -1,10 +1,10 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback, useMemo } from 'react';
+import React, { FC, useCallback, useMemo } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './FileInput.styled';
 import { Props } from './types';
 
-export const FileInput: SFC<Props> & WithStyle = React.memo(
+export const FileInput: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 files,

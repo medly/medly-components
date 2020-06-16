@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback, useContext, useMemo } from 'react';
+import React, { FC, useCallback, useContext, useMemo } from 'react';
 import SideNavContext from '../SideNav.context';
 import { NavItemStyled } from './NavItem.styled';
 import { NavItemProps } from './types';
 
-export const NavItem: SFC<NavItemProps> & WithStyle = props => {
+export const NavItem: FC<NavItemProps> & WithStyle = props => {
     const { activeItem, activeItemChangeHandler, isHovered, isExpanded } = useContext(SideNavContext),
         { path, onClick, to, ...restProps } = props;
 

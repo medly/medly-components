@@ -1,9 +1,9 @@
 import { HTMLProps, WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 import List from '../List';
 import { BreadCrumbsStyled } from './BreadCrumbs.styled';
 
-export const BreadCrumbs: SFC<HTMLProps<HTMLDivElement>> & WithStyle = React.memo(
+export const BreadCrumbs: FC<HTMLProps<HTMLDivElement>> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         return (
             <BreadCrumbsStyled ref={ref} {...props}>

@@ -4,7 +4,7 @@ import React, { useCallback, useContext } from 'react';
 import { AccordionContext } from '../AccordionContext';
 import * as Styled from './Header.styled';
 
-export const Header: React.SFC & WithStyle = React.memo(({ children, ...restProps }) => {
+export const Header: React.FC & WithStyle = React.memo(({ children, ...restProps }) => {
     const [isActive, setActiveState] = useContext(AccordionContext),
         handleClick = useCallback(() => setActiveState(val => !val), []);
 

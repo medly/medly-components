@@ -3,7 +3,7 @@ import React from 'react';
 import Link from '../Link';
 import { BreadCrumbs } from './BreadCrumbs';
 
-export const ThemeInterface: React.SFC<BreadCrumbsTheme> = () => null;
+export const ThemeInterface: React.FC<BreadCrumbsTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.breadCrumbs
 };

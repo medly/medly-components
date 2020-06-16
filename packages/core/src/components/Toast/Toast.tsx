@@ -1,13 +1,13 @@
 import { CheckIcon, ClearIcon, ErrorIcon, NotificationsIcon, WarningAmberIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback } from 'react';
+import React, { FC, useCallback } from 'react';
 import Button from '../Button';
 import Text from '../Text';
 import { removeToast } from '../ToastContainer/ToastStore';
 import * as Styled from './Toast.styled';
 import { ToastProps } from './types';
 
-export const Toast: SFC<ToastProps> & WithStyle = React.memo(
+export const Toast: FC<ToastProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { id, variant, header, icon: Icon, message, action, ...restProps } = props;
 

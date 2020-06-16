@@ -14,8 +14,8 @@ export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
 }
 
 export interface ModalStaticProps {
-    Popup?: React.SFC<ModalPopupProps> & WithStyle;
-    Header?: React.SFC;
-    Content?: React.SFC;
-    Actions?: React.SFC<ModalActionUserProps>;
+    Popup?: React.FC<ModalPopupProps> & WithStyle;
+    Header?: React.FC;
+    Content?: React.FC;
+    Actions?: React.FC<ModalActionUserProps>;
 }
