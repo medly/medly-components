@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useCallback, useContext, useMemo } from 'react';
+import React, { SFC, useCallback, useContext, useMemo } from 'react';
 import { ThemeContext } from 'styled-components';
 import Checkbox from '../Checkbox';
 import FieldWithLabel from '../FieldWithLabel';
@@ -8,7 +8,7 @@ import * as Styled from './CheckboxGroup.styled';
 import getValuesFromOptions from './getValuesFromOptions';
 import { Props } from './types';
 
-export const CheckboxGroup: FC<Props> & WithStyle = React.memo(
+export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
             values,
