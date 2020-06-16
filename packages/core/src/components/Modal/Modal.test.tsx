@@ -53,7 +53,7 @@ describe('Modal component', () => {
 
     it('should not render when open prop is falsy', () => {
         const { container } = renderer({});
-        expect(container).toMatchSnapshot();
+        expect(container).toBeEmptyDOMElement();
     });
 
     it('should call onCloseModal on click on close icon', () => {

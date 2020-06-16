@@ -4,6 +4,7 @@ import React, { useCallback, useState } from 'react';
 import Button from '../Button';
 import Input from '../Input';
 import SingleSelect from '../SingleSelect';
+import { ModalActionUserProps } from './Actions/types';
 import { Modal } from './Modal';
 
 const options = [
@@ -15,6 +16,11 @@ const options = [
 export const ThemeInterface: React.SFC<ModalTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.modal
+};
+
+export const ModalActionProps: React.SFC<ModalActionUserProps> = () => null;
+ModalActionProps.defaultProps = {
+    alignItems: 'right'
 };
 
 const Form = styled('form')`
