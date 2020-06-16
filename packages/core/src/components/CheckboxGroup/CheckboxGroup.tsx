@@ -26,7 +26,8 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
             errorMessage,
             error,
             helperText,
-            columns
+            columns,
+            isIndented
         } = props;
 
         const allChildValues = useMemo(() => getValuesFromOptions(options), [options]),
@@ -56,7 +57,7 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                 id={`${label}-checkboxGroup`}
                 ref={ref}
                 fullWidth
-                {...{ fullWidth, labelPosition, error, showSelectAll }}
+                {...{ fullWidth, labelPosition, error, showSelectAll, isIndented }}
             >
                 {label && (
                     <FieldWithLabel.Label
@@ -75,7 +76,7 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                                 label={label}
                                 checked={areAllValuesSelected}
                                 onChange={handleSelectAllClick}
-                                indeterminate={true}
+                                indeterminate={!areAllValuesSelected && allChildValues.find(el => values.includes(el))}
                                 hasError={error}
                             />
                         ) : (
@@ -84,7 +85,7 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                     </FieldWithLabel.Label>
                 )}
                 {(error || helperText) && <HelperText id={`checkbox-helper-text`}>{errorMessage || helperText}</HelperText>}
-                <FieldWithLabel.Field isIndented={labelPosition === 'top'} columns={columns}>
+                <FieldWithLabel.Field columns={columns}>
                     {options.map(option => {
                         return Array.isArray(option.value) ? (
                             <CheckboxGroup
@@ -93,8 +94,9 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                                     ...props,
                                     options: option.value,
                                     label: option.label,
-                                    error: option.error,
-                                    columns: option.columns
+                                    error: option.hasError,
+                                    columns: option.columns,
+                                    isIndented: labelPosition === 'top'
                                 }}
                             />
                         ) : (

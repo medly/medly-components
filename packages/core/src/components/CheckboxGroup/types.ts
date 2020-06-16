@@ -37,4 +37,6 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChang
     error?: boolean;
     /** Display the options as vertical or horizontal */
     columns?: number;
+    /** Add Indentation to child nodes of checkboxGroup */
+    isIndented?: boolean;
 }

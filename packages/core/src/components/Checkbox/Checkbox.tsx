@@ -51,11 +51,18 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
                 <Styled.Wrapper
                     size={size}
                     disabled={restProps.disabled}
-                    isActive={restProps.checked || restProps.defaultChecked}
+                    isActive={restProps.checked || restProps.defaultChecked || indeterminate}
                     hasError={restProps.hasError}
                     data-testid="checkbox-wrapper"
                 >
-                    <Styled.Checkbox ref={inputRef} id={id || label} required={required} onChange={changeHandler} {...restProps} />
+                    <Styled.Checkbox
+                        ref={inputRef}
+                        id={id || label}
+                        required={required}
+                        onChange={changeHandler}
+                        indeterminate={indeterminate}
+                        {...restProps}
+                    />
                     {indeterminate ? <MinimizeIcon /> : <CheckMaterialIcon onClick={changeHandler}></CheckMaterialIcon>}
                 </Styled.Wrapper>
             </Styled.CheckboxWithLabelWrapper>

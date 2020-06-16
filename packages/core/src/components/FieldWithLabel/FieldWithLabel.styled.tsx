@@ -8,7 +8,6 @@ import { FieldStyledProps, FieldWithLabelStyledProps, StaticProps } from './type
 export const FieldStyled = styled('div')<FieldStyledProps>`
     grid-area: field;
     flex-wrap: wrap;
-    margin-left: ${({ isIndented }) => (isIndented ? '17px' : '0px')};
     display: ${({ columns }) => (columns > 1 ? 'grid' : 'inline-grid')};
     ${({ columns }) =>
         columns > 1 &&

@@ -33,14 +33,14 @@ const activeStyle = ({ theme, hasError, disabled }: CheckboxWrapperProps) => {
 
 const nonActiveStyle = ({ theme, hasError, disabled }: CheckboxWrapperProps) => {
     const colors = theme.checkbox.colors,
-        color = hasError ? 'error' : 'confirmation';
+        checkboxState = hasError ? 'error' : 'confirmation';
 
     return css`
         background-color: transparent;
         border-color: ${disabled ? colors.disabled.iconColor : hasError ? colors.error.bgColor : theme.checkbox.colors.default.borderColor};
 
         &:hover {
-            border-color: ${disabled ? colors.disabled.iconColor : colors[color].hoverBgColor};
+            border-color: ${disabled ? colors.disabled.iconColor : colors[checkboxState].hoverBgColor};
         }
     `;
 };
@@ -85,7 +85,7 @@ export const Checkbox = styled.input.attrs({ type: 'checkbox' })<Props>`
     & + ${CheckIcon.Style} {
         z-index: 1;
         position: absolute;
-        transform: scale(0);
+        transform: ${({ indeterminate }) => (indeterminate ? 'scale(0.7)' : 'scale(0)')};
         transition: transform 0.2s ease-in-out;
     }
 
