@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.1.0...@medly-components/core@1.2.0) (2020-06-16)
+
+
+### Bug Fixes
+
+* fix background color issue of outlined button ([1c71d8d](https://github.com/medly/medly-components/commit/1c71d8df63439b1563e67c68ec4d53c608c7aab4))
+* use FC instead of SFC, as it is depricated ([8c00154](https://github.com/medly/medly-components/commit/8c0015452d494e2b292a8f88c1bf5c739aacbab8))
+
+
+### Features
+
+* add align-items property in Modal component ([53678f3](https://github.com/medly/medly-components/commit/53678f355c2ce0d2eb685e99de2b04a1278bb499))
+
+
+
+
+
 # [1.1.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.37...@medly-components/core@1.1.0) (2020-06-13)
 
 
