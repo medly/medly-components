@@ -13,7 +13,7 @@ export interface Props extends HTMLProps<HTMLDivElement> {
 }
 
 export interface StaticProps {
-    Tab?: React.SFC<TabProps> & WithStyle;
-    TabList?: React.SFC<TabListProps> & WithStyle;
-    TabPanel?: React.SFC<TabPanelProps> & WithStyle;
+    Tab?: React.FC<TabProps> & WithStyle;
+    TabList?: React.FC<TabListProps> & WithStyle;
+    TabPanel?: React.FC<TabPanelProps> & WithStyle;
 }

@@ -4,7 +4,7 @@ import Text from '../../Text';
 import * as Styled from './Tab.styled';
 import { Props } from './types';
 
-export const Tab: React.SFC<Props> & WithStyle = React.memo(props => {
+export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
     const { id, active, label, icon: Icon = null, ...restProps } = props;
 
     return (

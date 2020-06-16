@@ -39,7 +39,7 @@ export interface ColumnConfig {
     /** Column formatter */
     formatter: keyof ColumnsWidth;
     /** Custom component */
-    component?: React.SFC<{ data: any; rowId?: any; disabled?: boolean }>;
+    component?: React.FC<{ data: any; rowId?: any; disabled?: boolean }>;
 }
 
 export interface GridTemplateProps {

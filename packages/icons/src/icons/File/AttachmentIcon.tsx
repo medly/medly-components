@@ -1,9 +1,9 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 import AttachmentIconSvg from '../../assets/File/attachment_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const AttachmentIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+const AttachmentIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>

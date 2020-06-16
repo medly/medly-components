@@ -7,10 +7,12 @@ import { Preview, Meta } from '@storybook/addon-docs/blocks';
 
 # Medly Components
 
-[![](https://github.com/medly/medly-components/workflows/Test/badge.svg)](https://github.com/medly/medly-components/actions?query=workflow%3ATest)
+[![Lint, Build, Test](https://github.com/medly/medly-components/workflows/Lint,%20Build,%20Test/badge.svg)](https://github.com/medly/medly-components/actions?query=workflow%3A%22Lint%2C+Build%2C+Test%22)
 [![react version](https://img.shields.io/badge/react-%5E16.8.6-blue)](https://www.npmjs.org/package/react)
 [![styled-components version](https://img.shields.io/badge/styled--components-%5E4.2.0-blue)](https://www.npmjs.com/package/styled-components)
 [![typescript version](https://img.shields.io/badge/types-TypeScript-blue?style=flat-square)](https://www.npmjs.com/package/typescript)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![GitHub](https://img.shields.io/github/license/medly/medly-components)](https://github.com/medly/medly-components/blob/master/LICENSE)
 
 Medly components provides numerous themable react components, each with multiple varitaions of sizes, colors, position etc.
 
@@ -30,14 +32,15 @@ Medly components provides numerous themable react components, each with multiple
 ```sh
 npx create-react-app medly-components-demo --typescript
 cd medly-components-demo
-npm i styled-components @types/react @types/react-dom @types/styled-components
-npm i @medly-components/theme @medly-components/utils @medly-components/icons @medly-components/core @medly-components/layout @medly-components/loaders
+yarn add styled-components @types/styled-components
+yarn add @medly-components/theme @medly-components/utils @medly-components/icons @medly-components/core @medly-components/layout @medly-components/loaders @medly-components/forms
 ```
 
 Replace content of `index.tsx` with the following:
 
 ```tsx
 import { defaultTheme } from '@medly-components/theme';
+import { CssBaseline } from '@medly-components/core';
 import { ThemeProvider } from 'styled-components';
 import React from 'react';
 import * as ReactDOM from 'react-dom';
@@ -45,6 +48,7 @@ import App from './App';
 
 ReactDOM.render(
     <ThemeProvider theme={defaultTheme}>
+        <CssBaseline />
         <App />
     </ThemeProvider>,
     document.getElementById('root')
@@ -57,10 +61,12 @@ Replace content in `App.tsx` with the following:
 import React from 'react';
 import { Button } from '@medly-components/core';
 
-const App: React.SFC = () => <Button variant="solid">Click me!</Button>;
+const App: React.FC = () => <Button variant="solid">Click me!</Button>;
 
 export default App;
 ```
+
+If you are using any static property of any component like `Modal.Header`, you have to add `"strictNullChecks": false` in your `tsconfig.json` file.
 
 ## Packages
 

@@ -7,7 +7,7 @@ import { ColumnConfig, SortOrder } from '../types';
 import HeadCell from './HeadCell';
 import { Props } from './types';
 
-const Head: React.SFC<Props> = React.memo(props => {
+const Head: React.FC<Props> = React.memo(props => {
     const { columns, onSort, setColumns, isAllRowSelected, isSelectAllDisable, onSelectAllClick, maxColumnSizes } = props;
 
     const [sortField, setSortField] = useState('');

@@ -33,6 +33,7 @@ export const getPaddings = ({ size, variant, edges, isHovered }: Props & { isHov
 export const outlinedButton = ({ theme, color }: Props) => {
     const { colors } = theme.button;
     return css`
+        background-color: transparent;
         &:disabled {
             border: 0.1rem solid;
             color: ${colors.outlined.disabledTextColor};

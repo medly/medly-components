@@ -7,7 +7,7 @@ import { Props } from './types';
 
 export const variants: Props['variant'][] = ['filled', 'outlined'];
 
-export const ThemeInterface: React.SFC<TextFieldTheme> = () => null;
+export const ThemeInterface: React.FC<TextFieldTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.textField
 };
@@ -37,7 +37,7 @@ const emailValidation = (value: string) => {
     if (!value.includes('@')) return 'Email address should contain @';
 };
 
-export const Custom: React.SFC = () => {
+export const Custom: React.FC = () => {
     const [email] = useTextInput(''),
         handleFormSubmit = useCallback((e: React.FormEvent) => e.preventDefault(), []);
 

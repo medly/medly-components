@@ -1,11 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useMemo } from 'react';
+import React, { FC, useMemo } from 'react';
 import Button from '../Button';
 import List from '../List';
 import { paginator } from './helper';
 import { PaginationProps } from './types';
 
-export const Pagination: SFC<PaginationProps> & WithStyle = React.memo(
+export const Pagination: FC<PaginationProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const links = [],
             {

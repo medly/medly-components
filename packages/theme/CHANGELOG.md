@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.0.0-beta.23...@medly-components/theme@1.1.0) (2020-06-13)
+
+
+### Bug Fixes
+
+* remove semantic release ([#109](https://github.com/medly/medly-components/issues/109)) ([db2903d](https://github.com/medly/medly-components/commit/db2903d4b0e5b8dec576d3981b96775f8f4d6b28))
+
+
+### Features
+
+* add hover for close icon ([540c442](https://github.com/medly/medly-components/commit/540c442e3d0c97c93148e1da7d032c0937aa70bd))
+* style changes for toast components as per new design ([cfe8a23](https://github.com/medly/medly-components/commit/cfe8a23054e733e59b57d7648378b22be802964e))
+
+
+
+
+
 # [1.0.0-beta.23](https://github.com/medly/medly-components/compare/@medly-components/theme@1.0.0-beta.22...@medly-components/theme@1.0.0-beta.23) (2020-06-11)
 
 

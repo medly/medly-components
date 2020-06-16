@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback, useEffect, useMemo, useReducer, useState } from 'react';
+import React, { FC, useCallback, useEffect, useMemo, useReducer, useState } from 'react';
 import Body from './Body';
 import ColumnConfiguration from './ColumnConfiguration';
 import Head from './Head';
@@ -18,7 +18,7 @@ const checkboxColumnConfig: ColumnConfig = {
     frozen: true
 };
 
-export const Table: SFC<Props> & WithStyle & StaticProps = React.memo(
+export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const {
             data,

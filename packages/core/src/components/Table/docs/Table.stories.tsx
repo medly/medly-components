@@ -1,7 +1,7 @@
 import { defaultTheme, TableTheme } from '@medly-components/theme';
 import { action } from '@storybook/addon-actions';
 import { boolean } from '@storybook/addon-knobs';
-import React, { SFC, useState } from 'react';
+import React, { FC, useState } from 'react';
 import Button from '../../Button';
 import Modal from '../../Modal';
 import { Table } from '../Table';
@@ -10,12 +10,12 @@ import columns from './columns';
 import data from './data';
 import { filterData } from './filterData';
 
-export const Theme: SFC<TableTheme> = () => null;
+export const Theme: FC<TableTheme> = () => null;
 Theme.defaultProps = {
     ...defaultTheme.table
 };
 
-export const ColumnConfigInterface: SFC<ColumnConfig> = () => null;
+export const ColumnConfigInterface: FC<ColumnConfig> = () => null;
 
 export const Basic = () => {
     const [tableData, setTableData] = useState(data);

@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import * as Styled from './Content.styled';
 import { Props } from './types';
 
-export const Content: React.SFC<Props> & WithStyle = React.memo(({ id, scrollState, dispatch, ...restProps }) => {
+export const Content: React.FC<Props> & WithStyle = React.memo(({ id, scrollState, dispatch, ...restProps }) => {
     const ref = useRef();
 
     useEffect(() => {

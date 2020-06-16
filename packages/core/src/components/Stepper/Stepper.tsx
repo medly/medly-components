@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 import Step from './Step/Step';
 import { StepperStyled } from './Stepper.styled';
 import { Props, StepperStaticProps } from './types';
 
-export const Stepper: SFC<Props> & WithStyle & StepperStaticProps = React.memo(
+export const Stepper: FC<Props> & WithStyle & StepperStaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const { size, activeStep, children, onStepClick, ...restProps } = props;
         return (

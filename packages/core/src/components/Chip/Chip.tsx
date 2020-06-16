@@ -1,11 +1,11 @@
 import { ClearIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback } from 'react';
+import React, { FC, useCallback } from 'react';
 import Text from '../Text';
 import * as Styled from './Chip.styled';
 import { Props } from './types';
 
-export const Chip: SFC<Props> & WithStyle = React.memo(
+export const Chip: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { label, onDelete, ...restProps } = props;
 

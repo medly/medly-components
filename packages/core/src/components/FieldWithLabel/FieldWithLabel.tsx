@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { DescriptionStyled, FieldStyled, FieldWithLabelStyled, LabelStyled } from './FieldWithLabel.styled';
 import { Props, StaticProps } from './types';
 
-export const FieldWithLabel: React.SFC<Props> & WithStyle & StaticProps = React.memo(
+export const FieldWithLabel: React.FC<Props> & WithStyle & StaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const isLabelPresent = useMemo(
             () => !!React.Children.toArray(props.children).find((child: any) => child && child.type && child.type.displayName === 'Label'),

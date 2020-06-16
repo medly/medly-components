@@ -1,9 +1,9 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 import CheckIconSvg from '../../assets/Custom/check_24px.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const CheckIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+const CheckIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>

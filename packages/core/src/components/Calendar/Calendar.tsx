@@ -8,7 +8,7 @@ import { CALENDAR_MONTHS, WEEK_DAYS } from './constants';
 import { getCalendarDates, getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear, isSameDay, isSameMonth } from './helper';
 import { Props } from './types';
 
-export const Calendar: React.SFC<Props> = React.memo(({ date, onChange, minSelectableDate, maxSelectableDate, ...restProps }) => {
+export const Calendar: React.FC<Props> = React.memo(({ date, onChange, minSelectableDate, maxSelectableDate, ...restProps }) => {
     const today = new Date(),
         [{ month, year }, setMonthAndYear] = useState(getMonthAndYearFromDate(date || today)),
         { month: minMonth, year: minYear } = getMonthAndYearFromDate(minSelectableDate),

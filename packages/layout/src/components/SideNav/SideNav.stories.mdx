@@ -24,7 +24,7 @@ import { MedlySidenavHeader, SideNav as MedlySideNav } from '@medly-components/l
 import React, { useCallback } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 
-export const SideNav: React.SFC = React.memo(() => {
+export const SideNav: React.FC = React.memo(() => {
     // If you are using react-router for managing your routes
     const { pathname } = useLocation(),
         history = useHistory(),

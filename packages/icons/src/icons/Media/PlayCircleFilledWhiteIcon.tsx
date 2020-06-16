@@ -1,9 +1,9 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 import PlayCircleFilledWhiteIconSvg from '../../assets/Media/play_circle_filled_white_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const PlayCircleFilledWhiteIcon: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+const PlayCircleFilledWhiteIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>

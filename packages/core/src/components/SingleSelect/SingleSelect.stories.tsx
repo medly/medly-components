@@ -26,9 +26,9 @@ export const options = [
     { value: 'Dummy6 option', label: 'Dummy6 option' }
 ];
 
-export const ThemeInterface: React.SFC<SelectTheme> = () => null;
+export const ThemeInterface: React.FC<SelectTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.select
 };
 
-export const OptionProps: React.SFC<Option> = () => null;
+export const OptionProps: React.FC<Option> = () => null;

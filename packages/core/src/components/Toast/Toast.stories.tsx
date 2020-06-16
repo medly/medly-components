@@ -5,7 +5,7 @@ import { ToastProps } from './types';
 
 export const variants: ToastProps['variant'][] = ['error', 'warning', 'success', 'info'];
 
-export const ThemeInterface: React.SFC<ToastTheme> = () => null;
+export const ThemeInterface: React.FC<ToastTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.toast
 };

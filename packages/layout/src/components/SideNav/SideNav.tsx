@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback, useRef, useState } from 'react';
+import React, { FC, useCallback, useRef, useState } from 'react';
 import NavItem from './NavItem';
 import NavList from './NavList';
 import SideNavContext from './SideNav.context';
@@ -7,7 +7,7 @@ import * as Styled from './SideNav.styled';
 import ToggleSwitch from './ToggleSwitch';
 import { SideNavProps, SideNavStaticProps } from './types';
 
-export const SideNav: SFC<SideNavProps> & WithStyle & SideNavStaticProps = props => {
+export const SideNav: FC<SideNavProps> & WithStyle & SideNavStaticProps = props => {
     const { active, children, defaultActive, onChange } = props,
         id = props.id || 'medly-sidenav';
 

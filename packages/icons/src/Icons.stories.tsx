@@ -6,12 +6,12 @@ import { SvgIconProps } from './SvgIcon';
 export const sizes: IconSizes[] = ['XS', 'S', 'M', 'L', 'XL'];
 export const variants: SvgIconProps['variant'][] = ['solid', 'flat'];
 
-export const ThemeInterface: React.SFC<IconTheme> = () => null;
+export const ThemeInterface: React.FC<IconTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.icon
 };
 
-export const IconProps: React.SFC<SvgIconProps> = () => null;
+export const IconProps: React.FC<SvgIconProps> = () => null;
 IconProps.defaultProps = {
     size: 'M'
 };

@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.37...@medly-components/core@1.1.0) (2020-06-13)
+
+
+### Bug Fixes
+
+* add custom icon and auto closure functionality in toast ([1e196c1](https://github.com/medly/medly-components/commit/1e196c10d963b78c4421ce72ff9edd8727b4fa9c))
+* fix toast icons fill color issue ([ba868f8](https://github.com/medly/medly-components/commit/ba868f833401f129aaed621085c67a22681f00b5))
+* remove semantic release ([#109](https://github.com/medly/medly-components/issues/109)) ([db2903d](https://github.com/medly/medly-components/commit/db2903d4b0e5b8dec576d3981b96775f8f4d6b28))
+* update check icon and fix toast size issue ([d8a3a9b](https://github.com/medly/medly-components/commit/d8a3a9b73e2a35ac23e8679008537e1214c71fbe))
+
+
+### Features
+
+* add hover for close icon ([540c442](https://github.com/medly/medly-components/commit/540c442e3d0c97c93148e1da7d032c0937aa70bd))
+* style changes for toast components as per new design ([cfe8a23](https://github.com/medly/medly-components/commit/cfe8a23054e733e59b57d7648378b22be802964e))
+
+
+### Performance Improvements
+
+* change icon for success toast notification ([d8467cf](https://github.com/medly/medly-components/commit/d8467cf6f9293cc9aac5d73ae14ab14c6862670a))
+
+
+
+
+
 # [1.0.0-beta.37](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.36...@medly-components/core@1.0.0-beta.37) (2020-06-11)
 
 **Note:** Version bump only for package @medly-components/core

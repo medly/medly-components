@@ -3,7 +3,7 @@ import React from 'react';
 import * as Styled from './TabPanel.styled';
 import { Props } from './types';
 
-export const TabPanel: React.SFC<Props> & WithStyle = React.memo(props => {
+export const TabPanel: React.FC<Props> & WithStyle = React.memo(props => {
     const { active, children } = props;
 
     return (

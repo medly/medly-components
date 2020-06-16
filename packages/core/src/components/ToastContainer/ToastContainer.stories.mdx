@@ -25,7 +25,7 @@ Raise a toast notification by triggering an action. You have to add `<ToastConta
 ```tsx
 import { ToastContainer, addToast } from '@medly-components/core';
 
-export const App: React.SFC = () => {
+export const App: React.FC = () => {
     const handleClick = () => addToast({ variant: 'success', header: 'User Notification', message: 'User successfully added' });
 
     return (

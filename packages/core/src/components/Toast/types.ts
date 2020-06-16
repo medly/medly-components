@@ -9,7 +9,7 @@ export type ToastProps = Omit<HTMLProps<HTMLDivElement>, 'id' | 'action'> & {
     /** Toast purpose */
     variant: ToastVariants;
     /** Icon to be shown in the toast */
-    icon?: React.SFC<any>;
+    icon?: React.FC<any>;
     /** Toast Header */
     header?: string;
     /** Toast message */

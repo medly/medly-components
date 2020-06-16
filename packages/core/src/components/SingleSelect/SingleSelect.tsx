@@ -1,6 +1,6 @@
 import { ChevronDownIcon } from '@medly-components/icons';
 import { useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback, useEffect, useRef, useState } from 'react';
+import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
 import { TextField } from '../TextField/TextField';
 import { filterOptions, getDefaultSelectedOption, getOptionsWithSelected } from './helpers';
 import Options from './Options';
@@ -8,7 +8,7 @@ import * as Styled from './SingleSelect.styled';
 import { Option, SelectProps } from './types';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
 
-export const SingleSelect: SFC<SelectProps> & WithStyle = React.memo(
+export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 id,
