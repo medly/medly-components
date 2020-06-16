@@ -1,21 +1,28 @@
 export type CheckboxSizes = 'XS' | 'S' | 'M' | 'L' | 'XL';
 
-type Colors = {
-    borderColor: string;
-    iconColor: string;
-    bgColor: string;
-};
-
 export interface CheckboxTheme {
     sizes: { [k in CheckboxSizes]: string };
-    colors: {
-        default: Colors;
-        hover: Colors;
-        disabled: Colors;
-        checkedDisabled: Colors;
-        active: Colors;
-        error: Colors;
-        checkedError: Colors;
-    };
     defaultSize: CheckboxSizes;
+    colors: {
+        default: {
+            borderColor: string;
+            labelColor: string;
+        };
+        disabled: {
+            bgColor: string;
+            labelColor: string;
+            iconColor: string;
+            hoverBgColor: string;
+        };
+        confirmation: {
+            bgColor: string;
+            iconColor: string;
+            hoverBgColor: string;
+        };
+        error: {
+            bgColor: string;
+            iconColor: string;
+            hoverBgColor: string;
+        };
+    };
 }

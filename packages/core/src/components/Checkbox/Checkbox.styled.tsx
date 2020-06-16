@@ -2,68 +2,52 @@ import { CheckIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
 import { centerAligned, css, styled } from '@medly-components/utils';
 import FieldWithLabel from '../FieldWithLabel';
-import { CheckboxColors, CheckboxWrapperProps, Props } from './types';
+import { CheckboxWrapperProps, Props } from './types';
 
-const getStyle = (colors: CheckboxColors) => css`
-    border: 1px solid ${colors.borderColor};
-    background-color: ${colors.bgColor};
-
-    ${CheckIcon.Style} {
-        * {
-            fill: ${colors.iconColor};
+const activeStyle = ({ theme, error, disabled }: CheckboxWrapperProps) => {
+    const color = disabled ? 'disabled' : error ? 'error' : 'confirmation';
+    return css`
+        border-color: ${theme.checkbox.colors[color].bgColor};
+        background-color: ${theme.checkbox.colors[color].bgColor};
+        ${CheckIcon.Style} {
+            * {
+                fill: ${theme.checkbox.colors[color].iconColor};
+            }
         }
-    }
-`;
+
+        &:hover {
+            border-color: ${theme.checkbox.colors[color].hoverBgColor};
+            background-color: ${theme.checkbox.colors[color].hoverBgColor};
+            ${CheckIcon.Style} {
+                * {
+                    fill: ${theme.checkbox.colors[color].iconColor};
+                }
+            }
+        }
+    `;
+};
+const nonActiveStyle = ({ theme, error, disabled }: CheckboxWrapperProps) => {
+    const colors = theme.checkbox.colors,
+        color = error ? 'error' : 'confirmation';
+
+    return css`
+        background-color: transparent;
+        border-color: ${disabled ? colors.disabled.iconColor : error ? colors.error.bgColor : theme.checkbox.colors.default.borderColor};
+
+        &:hover {
+            border-color: ${disabled ? colors.disabled.iconColor : colors[color].hoverBgColor};
+        }
+    `;
+};
 
 export const Wrapper = styled.div<CheckboxWrapperProps>`
     position: relative;
+    border: 1px solid;
     width: ${({ theme, size }) => theme.checkbox.sizes[size || theme.checkbox.defaultSize]};
     height: ${({ theme, size }) => theme.checkbox.sizes[size || theme.checkbox.defaultSize]};
     border-radius: 15%;
-    border: 1px solid ${({ theme, isActive }) => theme.checkbox.colors[isActive ? 'active' : 'default'].borderColor};
-    background-color: ${({ theme, isActive }) => theme.checkbox.colors[isActive ? 'active' : 'default'].bgColor};
 
-    ${CheckIcon.Style} {
-        * {
-            fill: ${({ theme, isActive }) => theme.checkbox.colors[isActive ? 'active' : 'default'].iconColor};
-        }
-    }
-
-    &:hover {
-        border: 1px solid
-            ${({ theme, disabled }) => {
-                return theme.checkbox.colors[disabled ? 'disabled' : 'hover'].borderColor;
-            }};
-        background-color: ${({ theme, isActive, disabled }) => {
-            if (disabled) {
-                return theme.checkbox.colors[isActive ? 'checkedDisabled' : 'disabled'].bgColor;
-            } else {
-                return theme.checkbox.colors[isActive ? 'hover' : 'default'].bgColor;
-            }
-        }};
-    }
-
-    /* TODO: elegant way to write these if else statements */
-    ${({ isActive, disabled, error, theme }) => {
-        const { checkedDisabled, checkedError, error: errorStyle, disabled: disabledStyle } = theme.checkbox.colors;
-
-        if (isActive && disabled) {
-            return getStyle(checkedDisabled);
-        }
-
-        if (isActive && error) {
-            return getStyle(checkedError);
-        }
-
-        if (error) {
-            return getStyle(errorStyle);
-        }
-
-        if (disabled) {
-            return getStyle(disabledStyle);
-        }
-    }}
-
+    ${({ isActive }) => (isActive ? activeStyle : nonActiveStyle)};
     ${centerAligned()}
 `;
 
@@ -73,14 +57,13 @@ Wrapper.defaultProps = {
 
 export const CheckboxWithLabelWrapper = styled(FieldWithLabel)<Props>`
     label {
-        color: ${({ theme, disabled }) => (disabled ? theme.colors.grey[500] : theme.colors.black)};
+        color: ${({ theme, disabled }) => theme.checkbox.colors[disabled ? 'disabled' : 'default'].labelColor};
     }
+
     &:hover {
         ${Wrapper} {
-            border: 1px solid
-                ${({ theme, disabled }) => {
-                    return theme.checkbox.colors[disabled ? 'disabled' : 'hover'].borderColor;
-                }};
+            border-color: ${({ disabled, error, theme }) =>
+                !disabled && theme.checkbox.colors[error ? 'error' : 'confirmation'].hoverBgColor};
         }
     }
 `;

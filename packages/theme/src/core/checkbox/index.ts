@@ -12,38 +12,23 @@ const checkbox: CheckboxTheme = {
     colors: {
         default: {
             borderColor: colors.black,
-            iconColor: colors.black,
-            bgColor: colors.white
+            labelColor: colors.black
         },
         disabled: {
-            borderColor: colors.grey[500],
+            bgColor: colors.grey[200],
+            labelColor: colors.grey[200],
             iconColor: colors.grey[500],
-            bgColor: colors.white
+            hoverBgColor: colors.grey[200]
         },
-        hover: {
-            borderColor: colors.communityBlue[400],
+        confirmation: {
+            bgColor: colors.communityBlue[500],
             iconColor: colors.white,
-            bgColor: colors.communityBlue[400]
-        },
-        checkedDisabled: {
-            borderColor: colors.grey[200],
-            iconColor: colors.grey[500],
-            bgColor: colors.grey[200]
-        },
-        active: {
-            borderColor: colors.communityBlue[500],
-            iconColor: colors.white,
-            bgColor: colors.communityBlue[500]
+            hoverBgColor: colors.communityBlue[400]
         },
         error: {
-            borderColor: colors.red[500],
+            bgColor: colors.red[500],
             iconColor: colors.white,
-            bgColor: colors.white
-        },
-        checkedError: {
-            borderColor: colors.red[500],
-            iconColor: colors.white,
-            bgColor: colors.red[500]
+            hoverBgColor: colors.red[400]
         }
     },
     defaultSize: 'S'

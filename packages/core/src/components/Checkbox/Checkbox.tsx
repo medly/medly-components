@@ -36,6 +36,7 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
                 id={`${label}-checkbox`}
                 fieldWithMaxContent
                 {...{ fullWidth, labelPosition }}
+                error={restProps.error}
                 disabled={restProps.disabled}
             >
                 {label && (
