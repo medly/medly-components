@@ -13,7 +13,7 @@ type InputProps = Omit<HTMLProps<HTMLInputElement>, 'size' | 'type'>;
 
 export interface CheckboxWrapperProps extends DivProps, WithThemeProp {
     isActive?: boolean;
-    error?: boolean;
+    hasError?: boolean;
     size?: CheckboxSizes;
 }
 
@@ -35,7 +35,7 @@ export interface Props extends InputProps, WithThemeProp {
     /** To be used if required in any form for example user needs to check 'I Agree' */
     required?: boolean;
     /** Error state for checkbox */
-    error?: boolean;
+    hasError?: boolean;
     /** Indeterminate state for checkbox */
     indeterminate?: boolean;
 }

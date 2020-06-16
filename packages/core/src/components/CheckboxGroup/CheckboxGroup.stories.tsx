@@ -50,7 +50,7 @@ export const WithError = () => {
                         { value: 'mahindra', label: 'Mahindra' }
                     ],
                     label: 'Tata',
-                    error: true,
+                    hasError: true,
                     columns: 2
                 }
             ]}

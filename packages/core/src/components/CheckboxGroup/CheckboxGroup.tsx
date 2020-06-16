@@ -76,7 +76,7 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                                 checked={areAllValuesSelected}
                                 onChange={handleSelectAllClick}
                                 indeterminate={true}
-                                error={error}
+                                hasError={error}
                             />
                         ) : (
                             `${label}`
@@ -106,7 +106,7 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                                 checked={values.includes(option.value)}
                                 onChange={handleOptionClick}
                                 disabled={disabled || option.disabled}
-                                error={error}
+                                hasError={error}
                             />
                         );
                     })}

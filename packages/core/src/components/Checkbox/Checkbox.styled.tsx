@@ -16,8 +16,8 @@ const getCheckIconStyle = (checkboxState: CheckboxState, theme: CoreTheme) => {
     `;
 };
 
-const activeStyle = ({ theme, error, disabled }: CheckboxWrapperProps) => {
-    const checkboxState: CheckboxState = disabled ? 'disabled' : error ? 'error' : 'confirmation';
+const activeStyle = ({ theme, hasError, disabled }: CheckboxWrapperProps) => {
+    const checkboxState: CheckboxState = disabled ? 'disabled' : hasError ? 'error' : 'confirmation';
     return css`
         border-color: ${theme.checkbox.colors[checkboxState].bgColor};
         background-color: ${theme.checkbox.colors[checkboxState].bgColor};
@@ -31,13 +31,13 @@ const activeStyle = ({ theme, error, disabled }: CheckboxWrapperProps) => {
     `;
 };
 
-const nonActiveStyle = ({ theme, error, disabled }: CheckboxWrapperProps) => {
+const nonActiveStyle = ({ theme, hasError, disabled }: CheckboxWrapperProps) => {
     const colors = theme.checkbox.colors,
-        color = error ? 'error' : 'confirmation';
+        color = hasError ? 'error' : 'confirmation';
 
     return css`
         background-color: transparent;
-        border-color: ${disabled ? colors.disabled.iconColor : error ? colors.error.bgColor : theme.checkbox.colors.default.borderColor};
+        border-color: ${disabled ? colors.disabled.iconColor : hasError ? colors.error.bgColor : theme.checkbox.colors.default.borderColor};
 
         &:hover {
             border-color: ${disabled ? colors.disabled.iconColor : colors[color].hoverBgColor};
@@ -67,8 +67,8 @@ export const CheckboxWithLabelWrapper = styled(FieldWithLabel)<Props>`
 
     &:hover {
         ${Wrapper} {
-            border-color: ${({ disabled, error, theme }) =>
-                !disabled && theme.checkbox.colors[error ? 'error' : 'confirmation'].hoverBgColor};
+            border-color: ${({ disabled, hasError, theme }) =>
+                !disabled && theme.checkbox.colors[hasError ? 'error' : 'confirmation'].hoverBgColor};
         }
     }
 `;

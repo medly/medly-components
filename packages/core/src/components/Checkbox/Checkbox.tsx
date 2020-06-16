@@ -36,7 +36,7 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
                 id={`${label}-checkbox`}
                 fieldWithMaxContent
                 {...{ fullWidth, labelPosition }}
-                error={restProps.error}
+                hasError={restProps.hasError}
                 disabled={restProps.disabled}
             >
                 {label && (
@@ -52,7 +52,7 @@ export const Checkbox: SFC<Props> & WithStyle = React.memo(
                     size={size}
                     disabled={restProps.disabled}
                     isActive={restProps.checked || restProps.defaultChecked}
-                    error={restProps.error}
+                    hasError={restProps.hasError}
                     data-testid="checkbox-wrapper"
                 >
                     <Styled.Checkbox ref={inputRef} id={id || label} required={required} onChange={changeHandler} {...restProps} />
