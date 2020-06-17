@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.2.0...@medly-components/core@1.2.1) (2020-06-17)
+
+
+### Bug Fixes
+
+* fix accordion header font-family issue ([26b0e8a](https://github.com/medly/medly-components/commit/26b0e8aa6fd49c2a5e8aba7b32c654e804dcf1bc))
+* fix textfield error message issue ([fe5929b](https://github.com/medly/medly-components/commit/fe5929ba3ea849fde82de138d81c5589a067c989))
+
+
+
+
+
 # [1.2.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.1.0...@medly-components/core@1.2.0) (2020-06-16)
 
 
