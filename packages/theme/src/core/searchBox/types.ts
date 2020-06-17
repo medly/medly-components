@@ -12,6 +12,9 @@ export type SearchBoxTheme = {
     placeholderTextColor: string;
     borderColor: string;
     iconColor: string;
+    iconBg: string;
+    iconActiveColor: string;
+    iconActiveBg: string;
     hover: {
         borderColor: string;
         boxShadow: string;
@@ -21,5 +24,8 @@ export type SearchBoxTheme = {
         boxShadow: string;
         placeholderTextColor: string;
         iconColor: string;
+    };
+    options: {
+        boxShadow: string;
     };
 };
