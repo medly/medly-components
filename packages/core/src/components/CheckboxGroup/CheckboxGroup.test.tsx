@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@test-utils';
+import { render, screen } from '@test-utils';
 import userEvent from '@testing-library/user-event';
 import React from 'react';
 import { CheckboxGroup } from './CheckboxGroup';
@@ -27,14 +27,14 @@ describe('CheckboxGroup component', () => {
     it('should select option when click on it', () => {
         const mockOnChange = jest.fn();
         render(<CheckboxGroup onChange={mockOnChange} label="Cars" options={options} />);
-        fireEvent.click(screen.getByText('Hyundai'));
+        userEvent.click(screen.getByText('Hyundai'));
         expect(mockOnChange).toHaveBeenCalledWith(['hyundai']);
     });
 
     it('should select all when clicked on the select all option', () => {
         const mockOnChange = jest.fn();
         render(<CheckboxGroup showSelectAll values={['hyundai']} onChange={mockOnChange} label="Cars" options={options} />);
-        fireEvent.click(screen.getByText('Cars'));
+        userEvent.click(screen.getByText('Cars'));
         expect(mockOnChange).toHaveBeenCalledWith(['hyundai', 'honda', 'jaguar', 'landRover']);
     });
 
@@ -57,7 +57,7 @@ describe('CheckboxGroup component', () => {
                 options={options}
             />
         );
-        fireEvent.click(screen.getByText('Cars'));
+        userEvent.click(screen.getByText('Cars'));
         expect(mockOnChange).toHaveBeenCalledWith([]);
     });
 
@@ -84,25 +84,35 @@ describe('CheckboxGroup component', () => {
         expect(container).toMatchSnapshot();
     });
 
+    it('should render properly with fullWidth', () => {
+        const { container } = render(
+            <CheckboxGroup fullWidth id="dummyId" values={['hyundai']} onChange={jest.fn()} label="Cars" options={options} />
+        );
+        expect(container).toMatchSnapshot();
+        expect(container.querySelector('#dummyId-wrapper')).toHaveStyle(`
+            display: flex;
+        `);
+    });
+
     describe('nested options', () => {
         it('should select option when click on it', () => {
             const mockOnChange = jest.fn();
             render(<CheckboxGroup onChange={mockOnChange} label="Cars" options={options} />);
-            fireEvent.click(screen.getByText('Jaguar'));
+            userEvent.click(screen.getByText('Jaguar'));
             expect(mockOnChange).toHaveBeenCalledWith(['jaguar']);
         });
 
         it('should select all nested options when clicked on the group label', () => {
             const mockOnChange = jest.fn();
             render(<CheckboxGroup showSelectAll onChange={mockOnChange} label="Cars" options={options} />);
-            fireEvent.click(screen.getByText('Tata'));
+            userEvent.click(screen.getByText('Tata'));
             expect(mockOnChange).toHaveBeenCalledWith(['jaguar', 'landRover']);
         });
 
         it('should unselect all when all the options are already selected', () => {
             const mockOnChange = jest.fn();
             render(<CheckboxGroup showSelectAll values={['jaguar', 'landRover']} onChange={mockOnChange} label="Cars" options={options} />);
-            fireEvent.click(screen.getByText('Tata'));
+            userEvent.click(screen.getByText('Tata'));
             expect(mockOnChange).toHaveBeenCalledWith([]);
         });
     });

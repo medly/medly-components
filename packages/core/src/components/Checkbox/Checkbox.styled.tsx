@@ -1,9 +1,9 @@
 import { CheckIcon, SvgIcon } from '@medly-components/icons';
 import { centerAligned, css, styled } from '@medly-components/utils';
 import Text from '../Text';
-import { CheckboxWrapperProps, Props } from './types';
+import { Props } from './types';
 
-const activeStyle = ({ theme, hasError, disabled }: CheckboxWrapperProps) => {
+const activeStyle = ({ theme, hasError, disabled }: Props) => {
     const checkboxState = disabled ? 'disabled' : hasError ? 'error' : 'active',
         colors = theme.checkbox.colors[checkboxState];
 
@@ -18,7 +18,7 @@ const activeStyle = ({ theme, hasError, disabled }: CheckboxWrapperProps) => {
     `;
 };
 
-const nonActiveStyle = ({ theme, hasError, disabled }: CheckboxWrapperProps) => {
+const nonActiveStyle = ({ theme, hasError, disabled }: Props) => {
     const colors = theme.checkbox.colors;
 
     return css`
@@ -27,10 +27,10 @@ const nonActiveStyle = ({ theme, hasError, disabled }: CheckboxWrapperProps) => 
     `;
 };
 
-export const Wrapper = styled.div<CheckboxWrapperProps>`
+export const Wrapper = styled.div<Props & { isActive?: boolean }>`
     margin: 0.3rem;
     position: relative;
-    border: 1.5px solid;
+    border: 0.15rem solid;
     box-sizing: border-box;
     width: ${({ theme, size }) => theme.checkbox.sizes[size || theme.checkbox.defaultSize]};
     height: ${({ theme, size }) => theme.checkbox.sizes[size || theme.checkbox.defaultSize]};
@@ -82,6 +82,7 @@ export const CheckboxWithLabelWrapper = styled('label')<Props & { isActive: bool
     ${getPositionStyle}
 
     ${Text.Style} {
+        user-select: none;
         color: ${({ theme, disabled }) => theme.checkbox.colors[disabled ? 'disabled' : 'default'].labelColor};
         padding: ${({ labelPosition }) => (labelPosition === 'top' || labelPosition === 'bottom' ? '1.6rem 0' : '0 1.6rem')};
     }
@@ -104,7 +105,7 @@ export const CheckboxWithLabelWrapper = styled('label')<Props & { isActive: bool
     }
 `;
 
-export const Checkbox = styled.input.attrs({ type: 'checkbox' })<Props>`
+export const Checkbox = styled.input.attrs({ type: 'checkbox' })`
     opacity: 0;
     margin: 0;
     width: 100%;

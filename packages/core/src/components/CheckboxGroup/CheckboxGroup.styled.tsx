@@ -1,15 +1,10 @@
 import { styled } from '@medly-components/utils';
 import Text from '../Text';
 import { HelperText } from '../TextField/Styled';
+import { CheckboxGroupWrapperProps } from './types';
 
-export const CheckboxGroupWrapper = styled('div')<{
-    hasError?: boolean;
-    showSelectAll?: boolean;
-    isIndented?: boolean;
-    disabled?: boolean;
-    hasHelperOrErrorText?: boolean;
-}>`
-    display: flex;
+export const CheckboxGroupWrapper = styled('div')<CheckboxGroupWrapperProps>`
+    display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
     flex-direction: column;
     align-items: flex-start;
 

@@ -29,7 +29,7 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
 .c4 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -71,6 +71,10 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
 }
 
 .c0 .c1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 1.6rem 0;
 }
@@ -158,7 +162,7 @@ exports[`Checkbox component should render correctly with checked false and activ
 .c2 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -204,6 +208,10 @@ exports[`Checkbox component should render correctly with checked false and activ
 }
 
 .c0 .sc-AxiKw {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
@@ -286,7 +294,7 @@ exports[`Checkbox component should render correctly with checked false and disab
 .c1 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -332,6 +340,10 @@ exports[`Checkbox component should render correctly with checked false and disab
 }
 
 .c0 .sc-AxiKw {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #98A7B7;
   padding: 0 1.6rem;
 }
@@ -413,7 +425,7 @@ exports[`Checkbox component should render correctly with checked false and hasEr
 .c2 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -459,6 +471,10 @@ exports[`Checkbox component should render correctly with checked false and hasEr
 }
 
 .c0 .sc-AxiKw {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
@@ -541,7 +557,7 @@ exports[`Checkbox component should render correctly with checked false and indet
 .c2 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -591,6 +607,10 @@ exports[`Checkbox component should render correctly with checked false and indet
 }
 
 .c0 .sc-AxiKw {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
@@ -675,7 +695,7 @@ exports[`Checkbox component should render correctly with checked true and active
 .c2 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -725,6 +745,10 @@ exports[`Checkbox component should render correctly with checked true and active
 }
 
 .c0 .sc-AxiKw {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
@@ -809,7 +833,7 @@ exports[`Checkbox component should render correctly with checked true and disabl
 .c1 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -859,6 +883,10 @@ exports[`Checkbox component should render correctly with checked true and disabl
 }
 
 .c0 .sc-AxiKw {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #98A7B7;
   padding: 0 1.6rem;
 }
@@ -941,7 +969,7 @@ exports[`Checkbox component should render correctly with checked true and hasErr
 .c2 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -991,6 +1019,10 @@ exports[`Checkbox component should render correctly with checked true and hasErr
 }
 
 .c0 .sc-AxiKw {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
@@ -1075,7 +1107,7 @@ exports[`Checkbox component should render correctly with checked true and indete
 .c2 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -1125,6 +1157,10 @@ exports[`Checkbox component should render correctly with checked true and indete
 }
 
 .c0 .sc-AxiKw {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
@@ -1222,7 +1258,7 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
 .c4 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -1268,6 +1304,10 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
 }
 
 .c0 .c1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
@@ -1367,7 +1407,7 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
 .c4 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -1413,6 +1453,10 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
 }
 
 .c0 .c1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
@@ -1512,7 +1556,7 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
 .c4 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -1554,6 +1598,10 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
 }
 
 .c0 .c1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 1.6rem 0;
 }

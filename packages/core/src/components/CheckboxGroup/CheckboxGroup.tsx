@@ -23,6 +23,7 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
             errorText,
             helperText,
             columns,
+            fullWidth,
             parentHasError
         } = props;
 
@@ -57,7 +58,7 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
             <Styled.CheckboxGroupWrapper
                 ref={ref}
                 id={`${checkboxGroupId}-wrapper`}
-                {...{ disabled, hasError, showSelectAll, hasHelperOrErrorText }}
+                {...{ fullWidth, disabled, hasError, showSelectAll, hasHelperOrErrorText }}
             >
                 {label &&
                     (showSelectAll ? (

@@ -337,7 +337,7 @@ exports[`Form should render properly with initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 2.0rem 0px 0px;
+  margin: 0px 0.8rem 0px 0px;
   cursor: default;
 }
 
@@ -355,7 +355,7 @@ exports[`Form should render properly with initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 2.0rem 0px 0px;
+  margin: 0px 0.8rem 0px 0px;
   cursor: default;
 }
 
@@ -368,7 +368,7 @@ exports[`Form should render properly with initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0px 0px 2.0rem;
+  margin: 0px 0px 0px 0.8rem;
   cursor: pointer;
 }
 
@@ -377,7 +377,7 @@ exports[`Form should render properly with initial state 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  display: inline-grid;
+  margin-left: 0px;
 }
 
 .c14 {
@@ -409,6 +409,10 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c12 .c33 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -430,6 +434,10 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c31 .c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -451,6 +459,10 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c35 .c33 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -467,12 +479,16 @@ exports[`Form should render properly with initial state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  grid-template-areas: 'label' 'description' 'field';
+  grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
 }
 
 .c42 .c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -485,7 +501,7 @@ exports[`Form should render properly with initial state 1`] = `
 .c25 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -513,7 +529,7 @@ exports[`Form should render properly with initial state 1`] = `
 .c30 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -684,10 +700,10 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c20 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -1105,7 +1121,7 @@ exports[`Form should render properly with initial state 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  display: inline-grid;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1758,24 +1774,27 @@ exports[`Form should render properly with initial state 1`] = `
     >
       <div
         class="c20"
-        id="Languages-checkboxGroup"
+        id="languages-wrapper"
       >
         <span
           class="c17 c21"
+          id="languages-label"
         >
           Languages
         </span>
         
         <div
           class="c22"
+          id="languages-field"
         >
           <label
             class="c23"
-            for="JAVA"
-            id="JAVA-wrapper"
+            for="languages-JAVA"
+            id="languages-JAVA-wrapper"
           >
             <span
               class="c17 c18"
+              id="languages-JAVA-label"
             >
               JAVA
             </span>
@@ -1785,7 +1804,7 @@ exports[`Form should render properly with initial state 1`] = `
               <input
                 checked=""
                 class="c26"
-                id="JAVA"
+                id="languages-JAVA"
                 name="java"
                 type="checkbox"
               />
@@ -1806,11 +1825,12 @@ exports[`Form should render properly with initial state 1`] = `
           </label>
           <label
             class="c29"
-            for="RUBY"
-            id="RUBY-wrapper"
+            for="languages-RUBY"
+            id="languages-RUBY-wrapper"
           >
             <span
               class="c17 c18"
+              id="languages-RUBY-label"
             >
               RUBY
             </span>
@@ -1819,7 +1839,7 @@ exports[`Form should render properly with initial state 1`] = `
             >
               <input
                 class="c26"
-                id="RUBY"
+                id="languages-RUBY"
                 name="ruby"
                 type="checkbox"
               />
@@ -2322,6 +2342,7 @@ exports[`Form should render properly with initial state 1`] = `
       >
         <span
           class="c17 c18"
+          id="agree-label"
         >
           Do you Agree
         </span>
@@ -2546,7 +2567,7 @@ exports[`Form should render properly without initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 2.0rem 0px 0px;
+  margin: 0px 0.8rem 0px 0px;
   cursor: default;
 }
 
@@ -2564,7 +2585,7 @@ exports[`Form should render properly without initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 2.0rem 0px 0px;
+  margin: 0px 0.8rem 0px 0px;
   cursor: default;
 }
 
@@ -2577,7 +2598,7 @@ exports[`Form should render properly without initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0px 0px 2.0rem;
+  margin: 0px 0px 0px 0.8rem;
   cursor: pointer;
 }
 
@@ -2586,7 +2607,7 @@ exports[`Form should render properly without initial state 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  display: inline-grid;
+  margin-left: 0px;
 }
 
 .c17 {
@@ -2618,6 +2639,10 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c15 .c33 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2639,6 +2664,10 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c31 .c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2660,6 +2689,10 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c35 .c33 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2676,12 +2709,16 @@ exports[`Form should render properly without initial state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  grid-template-areas: 'label' 'description' 'field';
+  grid-template-areas: 'label' 'field' 'description';
   grid-template-columns: auto;
   grid-template-areas: 'field' 'description';
 }
 
 .c42 .c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -2694,7 +2731,7 @@ exports[`Form should render properly without initial state 1`] = `
 .c27 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -2818,10 +2855,10 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c22 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -3193,7 +3230,7 @@ exports[`Form should render properly without initial state 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  display: inline-grid;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3852,24 +3889,27 @@ exports[`Form should render properly without initial state 1`] = `
     >
       <div
         class="c22"
-        id="Languages-checkboxGroup"
+        id="languages-wrapper"
       >
         <span
           class="c1 c23"
+          id="languages-label"
         >
           Languages
         </span>
         
         <div
           class="c24"
+          id="languages-field"
         >
           <label
             class="c25"
-            for="JAVA"
-            id="JAVA-wrapper"
+            for="languages-JAVA"
+            id="languages-JAVA-wrapper"
           >
             <span
               class="c1 c20"
+              id="languages-JAVA-label"
             >
               JAVA
             </span>
@@ -3878,7 +3918,7 @@ exports[`Form should render properly without initial state 1`] = `
             >
               <input
                 class="c28"
-                id="JAVA"
+                id="languages-JAVA"
                 name="java"
                 type="checkbox"
               />
@@ -3899,11 +3939,12 @@ exports[`Form should render properly without initial state 1`] = `
           </label>
           <label
             class="c25"
-            for="RUBY"
-            id="RUBY-wrapper"
+            for="languages-RUBY"
+            id="languages-RUBY-wrapper"
           >
             <span
               class="c1 c20"
+              id="languages-RUBY-label"
             >
               RUBY
             </span>
@@ -3912,7 +3953,7 @@ exports[`Form should render properly without initial state 1`] = `
             >
               <input
                 class="c28"
-                id="RUBY"
+                id="languages-RUBY"
                 name="ruby"
                 type="checkbox"
               />
@@ -4391,6 +4432,7 @@ exports[`Form should render properly without initial state 1`] = `
       >
         <span
           class="c1 c20"
+          id="agree-label"
         >
           Do you Agree
         </span>

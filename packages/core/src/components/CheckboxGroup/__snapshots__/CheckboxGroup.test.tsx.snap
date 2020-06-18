@@ -41,7 +41,7 @@ exports[`CheckboxGroup component should render error text when it is given 1`] =
 .c8 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -87,6 +87,10 @@ exports[`CheckboxGroup component should render error text when it is given 1`] =
 }
 
 .c5 .c1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
@@ -120,10 +124,10 @@ exports[`CheckboxGroup component should render error text when it is given 1`] =
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -148,10 +152,10 @@ exports[`CheckboxGroup component should render error text when it is given 1`] =
 }
 
 .c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -451,7 +455,7 @@ exports[`CheckboxGroup component should render helper text when it is given 1`] 
 .c8 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -497,6 +501,10 @@ exports[`CheckboxGroup component should render helper text when it is given 1`] 
 }
 
 .c5 .c1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
@@ -530,10 +538,10 @@ exports[`CheckboxGroup component should render helper text when it is given 1`] 
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -558,10 +566,10 @@ exports[`CheckboxGroup component should render helper text when it is given 1`] 
 }
 
 .c12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -862,7 +870,7 @@ exports[`CheckboxGroup component should render properly when it is disabled 1`] 
 .c6 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -908,6 +916,10 @@ exports[`CheckboxGroup component should render properly when it is disabled 1`] 
 }
 
 .c3 .c4 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #98A7B7;
   padding: 0 1.6rem;
 }
@@ -937,10 +949,10 @@ exports[`CheckboxGroup component should render properly when it is disabled 1`] 
 }
 
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -965,10 +977,10 @@ exports[`CheckboxGroup component should render properly when it is disabled 1`] 
 }
 
 .c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -1222,6 +1234,458 @@ exports[`CheckboxGroup component should render properly when it is disabled 1`] 
               />
               <svg
                 class="c8 c9"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                  fill="green"
+                />
+              </svg>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
+.c10 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
+}
+
+.c10 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c5 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c7 {
+  margin: 0.3rem;
+  position: relative;
+  border: 0.15rem solid;
+  box-sizing: border-box;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 22.2%;
+  background-color: transparent;
+  border-color: #13181D;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c12 {
+  margin: 0.3rem;
+  position: relative;
+  border: 0.15rem solid;
+  box-sizing: border-box;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 22.2%;
+  border-color: #005AEE;
+  background-color: #005AEE;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c12 .c9 * {
+  fill: #ffffff;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c4 * {
+  cursor: pointer;
+}
+
+.c4 .c1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #13181D;
+  padding: 0 1.6rem;
+}
+
+.c4 .c9 {
+  z-index: 1;
+  pointer-events: none;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.c4:hover .c6 {
+  border-color: #1A6BF0;
+}
+
+.c11 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c11 * {
+  cursor: pointer;
+}
+
+.c11 .c1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #13181D;
+  padding: 0 1.6rem;
+}
+
+.c11 .c9 {
+  z-index: 1;
+  pointer-events: none;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+.c11:hover .c6 {
+  border-color: #1A6BF0;
+  background-color: #1A6BF0;
+}
+
+.c8 {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.c8:focus {
+  outline: none;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c0 > :first-child {
+  margin-bottom: 0.9rem;
+}
+
+.c0 > .c1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: inherit;
+  color: #13181D;
+}
+
+.c0 .sc-fzoLsD {
+  color: #303C48;
+  margin: 0 0 1.2rem 0;
+}
+
+.c3 {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.c13 {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-left: 4rem;
+}
+
+<div>
+  <div
+    class="c0"
+    id="dummyId-wrapper"
+  >
+    <span
+      class="c1 c2"
+      id="dummyId-label"
+    >
+      Cars
+    </span>
+    
+    <div
+      class="c3"
+      id="dummyId-field"
+    >
+      <label
+        class="c4"
+        for="dummyId-Honda"
+        id="dummyId-Honda-wrapper"
+      >
+        <span
+          class="c1 c5"
+          id="dummyId-Honda-label"
+        >
+          Honda
+        </span>
+        <div
+          class="c6 c7"
+        >
+          <input
+            class="c8"
+            id="dummyId-Honda"
+            name="honda"
+            type="checkbox"
+          />
+          <svg
+            class="c9 c10"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+              fill="green"
+            />
+          </svg>
+        </div>
+      </label>
+      <label
+        class="c11"
+        for="dummyId-Hyundai"
+        id="dummyId-Hyundai-wrapper"
+      >
+        <span
+          class="c1 c5"
+          id="dummyId-Hyundai-label"
+        >
+          Hyundai
+        </span>
+        <div
+          class="c6 c12"
+        >
+          <input
+            checked=""
+            class="c8"
+            id="dummyId-Hyundai"
+            name="hyundai"
+            type="checkbox"
+          />
+          <svg
+            class="c9 c10"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+              fill="green"
+            />
+          </svg>
+        </div>
+      </label>
+      <div
+        class="c0"
+        id="dummyId-wrapper"
+      >
+        <label
+          class="c4"
+          for="dummyId-select-all"
+          id="dummyId-select-all-wrapper"
+        >
+          <span
+            class="c1 c2"
+            id="dummyId-select-all-label"
+          >
+            Tata
+          </span>
+          <div
+            class="c6 c7"
+          >
+            <input
+              aria-describedby="dummyId-helper-text"
+              class="c8"
+              id="dummyId-select-all"
+              type="checkbox"
+            />
+            <svg
+              class="c9 c10"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                fill="green"
+              />
+            </svg>
+          </div>
+        </label>
+        
+        <div
+          class="c13"
+          id="dummyId-field"
+        >
+          <label
+            class="c4"
+            for="dummyId-Jaguar"
+            id="dummyId-Jaguar-wrapper"
+          >
+            <span
+              class="c1 c5"
+              id="dummyId-Jaguar-label"
+            >
+              Jaguar
+            </span>
+            <div
+              class="c6 c7"
+            >
+              <input
+                class="c8"
+                id="dummyId-Jaguar"
+                name="jaguar"
+                type="checkbox"
+              />
+              <svg
+                class="c9 c10"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                  fill="green"
+                />
+              </svg>
+            </div>
+          </label>
+          <label
+            class="c4"
+            for="dummyId-Land Rover"
+            id="dummyId-Land Rover-wrapper"
+          >
+            <span
+              class="c1 c5"
+              id="dummyId-Land Rover-label"
+            >
+              Land Rover
+            </span>
+            <div
+              class="c6 c7"
+            >
+              <input
+                class="c8"
+                id="dummyId-Land Rover"
+                name="landRover"
+                type="checkbox"
+              />
+              <svg
+                class="c9 c10"
                 fill="none"
                 height="1em"
                 viewBox="0 0 24 24"

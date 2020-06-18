@@ -91,7 +91,7 @@ exports[`Cell should render checkbox properly 1`] = `
 .c5 {
   margin: 0.3rem;
   position: relative;
-  border: 1.5px solid;
+  border: 0.15rem solid;
   box-sizing: border-box;
   width: 1.8rem;
   height: 1.8rem;
@@ -137,6 +137,10 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c1 .c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
