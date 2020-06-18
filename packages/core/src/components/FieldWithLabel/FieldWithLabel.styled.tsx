@@ -8,12 +8,7 @@ import { FieldStyledProps, FieldWithLabelStyledProps, StaticProps } from './type
 export const FieldStyled = styled('div')<FieldStyledProps>`
     grid-area: field;
     flex-wrap: wrap;
-    display: ${({ columns }) => (columns > 1 ? 'grid' : 'inline-grid')};
-    ${({ columns }) =>
-        columns > 1 &&
-        css`
-            grid-template-columns: repeat(${columns}, 1fr);
-        `}
+    margin-left: ${({ isIndented }) => (isIndented ? '17px' : '0px')};
 `;
 
 export const LabelStyled = styled(Label)`
@@ -39,8 +34,8 @@ export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('di
         css`
             min-width: ${minWidth}px;
         `}
-
     ${FieldStyled} {
+        display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
         align-items: ${({ labelPosition }) => (labelPosition === 'top' || labelPosition === 'bottom' ? 'flex-start' : 'center')};
         flex-direction: ${({ labelPosition }) => {
             switch (labelPosition) {
@@ -56,15 +51,14 @@ export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('di
             }
         }};
     }
-
     ${({ labelPosition, fieldWithMaxContent }) => {
         switch (labelPosition) {
             case 'top':
                 return css`
                     grid-template-areas:
                         'label'
-                        'description'
-                        'field';
+                        'field'
+                        'description';
                 `;
             case 'bottom':
                 return css`
@@ -94,7 +88,6 @@ export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('di
                 `;
         }
     }};
-
     ${({ isLabelPresent }) =>
         !isLabelPresent &&
         css`
