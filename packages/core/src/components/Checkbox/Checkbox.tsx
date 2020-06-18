@@ -1,7 +1,8 @@
-import { CheckIcon } from '@medly-components/icons';
-import { WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback } from 'react';
+import { CheckIcon, MinimizeIcon } from '@medly-components/icons';
+import { useCombinedRefs, WithStyle } from '@medly-components/utils';
+import React, { FC, useCallback, useMemo } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
+import Text from '../Text';
 import * as Styled from './Checkbox.styled';
 import { Props } from './types';
 
@@ -10,17 +11,25 @@ export const Checkbox: FC<Props> & WithStyle = React.memo(
         const {
             id,
             size,
+            fullWidth,
             label,
-            required,
             labelPosition,
             labelVariant,
             labelWeight,
             labelColor,
-            fullWidth,
+            indeterminate,
             onChange,
+            hasError,
             ...restProps
         } = props;
 
+        const inputId = useMemo(() => id || label, [id, label]),
+            inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
+            isActive = useMemo(() => restProps.checked || restProps.defaultChecked || indeterminate, [
+                restProps.checked,
+                restProps.defaultChecked,
+                indeterminate
+            ]);
         const changeHandler = useCallback(
             (e: any) => {
                 e.stopPropagation();
@@ -30,21 +39,25 @@ export const Checkbox: FC<Props> & WithStyle = React.memo(
         );
 
         return (
-            <FieldWithLabel id={`${label}-checkbox`} fieldWithMaxContent {...{ fullWidth, labelPosition }}>
+            <Styled.CheckboxWithLabelWrapper
+                id={`${inputId}-wrapper`}
+                htmlFor={inputId}
+                fullWidth={fullWidth}
+                labelPosition={labelPosition}
+                isActive={isActive}
+                hasError={hasError}
+                disabled={restProps.disabled}
+            >
                 {label && (
-                    <FieldWithLabel.Label
-                        showPointer={!restProps.disabled}
-                        {...{ required, labelPosition, labelVariant, labelWeight, labelColor }}
-                        htmlFor={id || label}
-                    >
+                    <Text id={`${inputId}-label`} textVariant={labelVariant} textWeight={labelWeight} textColor={labelColor}>
                         {label}
-                    </FieldWithLabel.Label>
+                    </Text>
                 )}
-                <Styled.Wrapper size={size} disabled={restProps.disabled}>
-                    <Styled.Checkbox ref={ref} id={id || label} required={required} onChange={changeHandler} {...restProps} />
-                    <CheckIcon onClick={changeHandler} />
+                <Styled.Wrapper size={size} disabled={restProps.disabled} isActive={isActive} hasError={hasError}>
+                    <Styled.Checkbox ref={inputRef} id={inputId} onChange={changeHandler} indeterminate={indeterminate} {...restProps} />
+                    {indeterminate ? <MinimizeIcon /> : <CheckIcon />}
                 </Styled.Wrapper>
-            </FieldWithLabel>
+            </Styled.CheckboxWithLabelWrapper>
         );
     })
 );

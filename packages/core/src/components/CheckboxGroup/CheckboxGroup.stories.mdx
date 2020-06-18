@@ -2,11 +2,11 @@ import { CheckboxGroup } from './CheckboxGroup';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './CheckboxGroup.stories';
 
-<Meta title="Core" component={CheckboxGroup} />
+<Meta title="Core" component={CheckboxGroup} parameters={{ jest: ['CheckboxGroup.test.tsx'] }} />
 
 # CheckboxGroup
 
-### Displays group of checkboxes
+Set of checkbox component to let users to choose from multiple options.
 
 <Preview withToolbar>
     <Story name="CheckboxGroup">{stories.Basic()}</Story>
@@ -18,4 +18,4 @@ import * as stories from './CheckboxGroup.stories';
 
 ### Theme
 
-Checkbox theme will be used for checkbox group.
+Checkbox theme will be used for CheckboxGroup.

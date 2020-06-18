@@ -34,7 +34,6 @@ export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('di
         css`
             min-width: ${minWidth}px;
         `}
-
     ${FieldStyled} {
         display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
         align-items: ${({ labelPosition }) => (labelPosition === 'top' || labelPosition === 'bottom' ? 'flex-start' : 'center')};
@@ -52,7 +51,6 @@ export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('di
             }
         }};
     }
-
     ${({ labelPosition, fieldWithMaxContent }) => {
         switch (labelPosition) {
             case 'top':
@@ -90,7 +88,6 @@ export const FieldWithLabelStyled: AnyStyledComponent & StaticProps = styled('di
                 `;
         }
     }};
-
     ${({ isLabelPresent }) =>
         !isLabelPresent &&
         css`

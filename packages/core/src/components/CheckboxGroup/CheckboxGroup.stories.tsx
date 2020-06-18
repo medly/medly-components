@@ -1,9 +1,8 @@
-import { boolean, select, text } from '@storybook/addon-knobs';
+import { boolean, number, select, text } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
 import { CheckboxGroup } from './CheckboxGroup';
 import { Props } from './types';
 
-const labelPosition: Props['labelPosition'][] = ['left', 'right', 'top', 'bottom'];
 const size: Props['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
 
 export const Basic = () => {
@@ -29,7 +28,9 @@ export const Basic = () => {
             showSelectAll={boolean('Show Select All', false)}
             label={text('Label', 'Cars')}
             size={select('Size', size, 'S')}
-            labelPosition={select('Label Position', labelPosition, 'top')}
+            errorText={text('Error Text', '')}
+            helperText={text('Helper Text', 'Helper Text')}
+            columns={number('Columns', 1)}
         />
     );
 };
