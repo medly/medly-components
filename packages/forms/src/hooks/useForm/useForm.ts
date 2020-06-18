@@ -71,7 +71,7 @@ export const useForm = (initialState: object): UseFormResult => {
     );
 
     const handleValuesChange: Handlers['handleCheckboxGroupChange'] = useCallback(
-        memoize(name => values => setValues(val => ({ ...val, [name]: values }))),
+        memoize(name => updatedValues => setValues(val => ({ ...val, [name]: updatedValues }))),
         []
     );
 
