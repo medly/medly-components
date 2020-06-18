@@ -575,6 +575,10 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c23 .c17 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
@@ -621,6 +625,10 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c29 .c17 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
@@ -666,6 +674,10 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c70 .c17 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
@@ -2777,6 +2789,10 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c25 .c1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
@@ -2822,6 +2838,10 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c68 .c1 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #13181D;
   padding: 0 1.6rem;
 }
