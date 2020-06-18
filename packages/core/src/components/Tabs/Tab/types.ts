@@ -1,7 +1,10 @@
 import { HTMLProps } from '@medly-components/utils';
+import { TabSize } from '../types';
 
 export interface StyledProps extends HTMLProps<HTMLButtonElement> {
     active?: boolean;
+    hasIcon?: boolean;
+    tabSize?: TabSize;
 }
 
 export interface Props extends StyledProps {

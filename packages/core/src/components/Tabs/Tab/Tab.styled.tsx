@@ -1,12 +1,31 @@
 import { SvgIcon } from '@medly-components/icons';
 import { Theme } from '@medly-components/theme';
 import { css, styled } from '@medly-components/utils';
+import { TextStyled } from '../../Text/Text.styled';
+import { TabSize } from '../types';
 import { StyledProps } from './types';
+
+const getTabSpacing = (tabSize: TabSize, hasIcon = false) => {
+    const verticalSpacing = 15;
+    let spacing = verticalSpacing;
+
+    if (tabSize === 'M') {
+        spacing = verticalSpacing + 4;
+    }
+    if (tabSize === 'L') {
+        spacing = verticalSpacing + 12;
+    }
+
+    if (hasIcon) {
+        return spacing - 1;
+    }
+    return spacing;
+};
 
 const activeStyle = ({ tabs }: Theme) =>
     css`
         color: ${tabs.activeTabTextColor};
-        border-bottom: 2px solid ${tabs.activeTabTextColor};
+        border-bottom: 4px solid ${tabs.activeTabTextColor};
         ${SvgIcon} {
             * {
                 fill: ${tabs.activeTabTextColor};
@@ -14,16 +33,18 @@ const activeStyle = ({ tabs }: Theme) =>
         }
     `;
 
-export const Button = styled('button').attrs(({ theme: { tabs } }) => ({ tabs }))<StyledProps>`
+export const Button = styled.button<StyledProps>`
     background-color: transparent;
-    border: none;
-    padding: 8px 15px;
+    color: ${({ theme }) => theme.colors.grey[600]};
+    border: 0;
+    border-bottom: 4px solid transparent;
+    padding: ${({ tabSize, hasIcon }) => `${getTabSpacing(tabSize, hasIcon)}px ${16}px`};
     user-select: none;
     text-decoration: none;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
 
     &:hover {
         cursor: pointer;
@@ -37,9 +58,10 @@ export const Button = styled('button').attrs(({ theme: { tabs } }) => ({ tabs })
         cursor: not-allowed;
     }
 
-    ${SvgIcon} {
-        margin-bottom: 5px;
+    ${TextStyled} {
+        font-size: ${({ tabSize }) => (tabSize === 'S' ? '1.4rem' : '1.6rem')};
+        margin-left: ${({ hasIcon }) => (hasIcon ? '16px' : 0)};
     }
 
-    ${({ active, tabs }) => active && activeStyle({ tabs })}
+    ${({ active, theme: { tabs } }) => active && activeStyle({ tabs })}
 `;

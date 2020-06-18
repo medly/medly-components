@@ -1,15 +1,19 @@
 import { AddIcon, DeleteIcon, EditIcon } from '@medly-components/icons';
 import { defaultTheme, TabsTheme } from '@medly-components/theme';
+import { select } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
 import { Tabs } from './Tabs';
+import { Props } from './types';
 
 export const ThemeInterface: React.FC<TabsTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.tabs
 };
 
+const size: Props['tabSize'][] = ['S', 'M', 'L'];
+
 export const Basic = () => (
-    <Tabs aria-label="Basic Tabs">
+    <Tabs aria-label="Basic Tabs" tabSize={select('Tab Size', size, 'S')}>
         <Tabs.Tab id="tab1" label="Add" hide>
             Content for the add panel
         </Tabs.Tab>

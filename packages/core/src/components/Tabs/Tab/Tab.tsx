@@ -9,7 +9,7 @@ export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
 
     return (
         <Styled.Button
-            {...{ id, active, ...restProps }}
+            {...{ id, active, hasIcon: !!Icon, ...restProps }}
             type="button"
             role="tab"
             aria-selected={active ? 'true' : 'false'}
