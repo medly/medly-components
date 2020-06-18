@@ -18,8 +18,8 @@ export const Basic = () => {
     const [isChecked, setChecked] = useState(false);
 
     const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const isChecked = e.target.checked;
-        setChecked(isChecked);
+        const value = e.target.checked;
+        setChecked(value);
     };
 
     return (
