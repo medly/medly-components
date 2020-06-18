@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/medly/medly-components/compare/@medly-components/utils@1.0.1...@medly-components/utils@1.0.2) (2020-06-16)
+
+
+### Bug Fixes
+
+* use FC instead of SFC, as it is depricated ([8c00154](https://github.com/medly/medly-components/commit/8c0015452d494e2b292a8f88c1bf5c739aacbab8))
+
+
+
+
+
 ## [1.0.1](https://github.com/medly/medly-components/compare/@medly-components/utils@1.0.0-beta.26...@medly-components/utils@1.0.1) (2020-06-13)
 
 

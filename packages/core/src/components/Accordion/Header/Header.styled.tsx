@@ -6,6 +6,8 @@ export const Wrapper = styled('button')<{ isActive: boolean }>`
     position: relative;
     overflow: hidden;
     user-select: none;
+    font-family: inherit;
+    text-decoration: none;
     outline: none;
     border: 0;
     padding: 0;

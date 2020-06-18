@@ -33,8 +33,8 @@ export const TextField: FC<Props> & WithStyle = React.memo(
             (event: React.FormEvent<HTMLInputElement>, eventFunc: (e: React.FormEvent<HTMLInputElement>) => void) => {
                 event.preventDefault();
                 const element = event.target as HTMLInputElement,
-                    message = (validator && validator(element.value)) || element.validationMessage || '';
-                message.length && setErrorMessage(message);
+                    message = (validator && validator(element.value)) || element.validationMessage;
+                setErrorMessage(message);
                 eventFunc && eventFunc(event);
             },
             [validator]

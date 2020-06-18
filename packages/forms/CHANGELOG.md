@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.2...@medly-components/forms@1.0.3) (2020-06-17)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.0.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.1...@medly-components/forms@1.0.2) (2020-06-16)
+
+
+### Bug Fixes
+
+* fix form import ([#122](https://github.com/medly/medly-components/issues/122)) ([81ddf61](https://github.com/medly/medly-components/commit/81ddf61d8ea5323d065b667339d01f611a268b25))
+* use FC instead of SFC, as it is depricated ([8c00154](https://github.com/medly/medly-components/commit/8c0015452d494e2b292a8f88c1bf5c739aacbab8))
+
+
+
+
+
 ## [1.0.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.0-beta.5...@medly-components/forms@1.0.1) (2020-06-13)
 
 
