@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.2.1...@medly-components/core@1.3.0) (2020-06-18)
+
+
+### Bug Fixes
+
+* add error message style and error message in checkbox ([eb20995](https://github.com/medly/medly-components/commit/eb20995a1f6e3f419620c86c9c7d992d5ecd3c0a))
+* fix failing snapshots ([dbf0485](https://github.com/medly/medly-components/commit/dbf04855547eb4fc5b49950974403518d08ae28a))
+* fix indeterminate state ([7305560](https://github.com/medly/medly-components/commit/7305560085fc09e4269e97e75e6590c83b5f9d55))
+* fix labelColor issue ([a01a383](https://github.com/medly/medly-components/commit/a01a383a6a3d25933a27731d542e1352131358c5))
+* fix the broken build which was failing due to incorrect import for SFC ([491e7d8](https://github.com/medly/medly-components/commit/491e7d8c41f4ae9e61c858b487e6e88ba81eb058))
+* fix the linting ([dc623a3](https://github.com/medly/medly-components/commit/dc623a313935f5be6feb3a480bfcb8d90eeca1d2))
+* refactor the usage of error flag ([00c4965](https://github.com/medly/medly-components/commit/00c4965e396f8f6f379f025b5fdbed2d9b2f5250))
+
+
+### Features
+
+* add indeterminate state in checkbox ([cad7057](https://github.com/medly/medly-components/commit/cad705709cc9765520e116b210e2ce3905b8ffe1))
+* integrate with feedback provided ([edacc0b](https://github.com/medly/medly-components/commit/edacc0b093d77d92153b57b4917a2b9c45c17b4f))
+
+
+### Reverts
+
+* revert changes in FieldWithLabel and Label component done for checkbox ([aa90399](https://github.com/medly/medly-components/commit/aa9039940784b3ff52d27144bf3d3f3861f68208))
+
+
+
+
+
 ## [1.2.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.2.0...@medly-components/core@1.2.1) (2020-06-17)
 
 

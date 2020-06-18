@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/medly/medly-components/compare/@medly-components/utils@1.0.2...@medly-components/utils@1.0.3) (2020-06-18)
+
+
+### Bug Fixes
+
+* fix the linting ([dc623a3](https://github.com/medly/medly-components/commit/dc623a313935f5be6feb3a480bfcb8d90eeca1d2))
+
+
+
+
+
 ## [1.0.2](https://github.com/medly/medly-components/compare/@medly-components/utils@1.0.1...@medly-components/utils@1.0.2) (2020-06-16)
 
 
