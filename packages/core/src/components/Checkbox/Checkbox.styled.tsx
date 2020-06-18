@@ -34,7 +34,7 @@ export const Wrapper = styled.div<CheckboxWrapperProps>`
     box-sizing: border-box;
     width: ${({ theme, size }) => theme.checkbox.sizes[size || theme.checkbox.defaultSize]};
     height: ${({ theme, size }) => theme.checkbox.sizes[size || theme.checkbox.defaultSize]};
-    border-radius: 15%;
+    border-radius: 22.2%;
 
     ${({ isActive }) => (isActive ? activeStyle : nonActiveStyle)};
     ${centerAligned()}

@@ -7,7 +7,15 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChang
     /** This method will be called with checked values */
     onChange: (values: any[]) => void;
     /** Options */
-    options: { value: any; label: string; disabled?: boolean; errorText?: string; helperText?: string; columns?: number }[];
+    options: {
+        value: any;
+        label: string;
+        showSelectAll?: boolean;
+        disabled?: boolean;
+        errorText?: string;
+        helperText?: string;
+        columns?: number;
+    }[];
     /** Label */
     label?: string;
     /** Takes full width of the parent component */

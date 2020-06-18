@@ -20,6 +20,8 @@ export const Basic = () => {
                         { value: 'jaguar', label: 'Jaguar' },
                         { value: 'landRover', label: 'Land Rover' }
                     ],
+                    columns: 2,
+                    helperText: 'Helper Text',
                     label: 'Tata'
                 }
             ]}
@@ -30,34 +32,6 @@ export const Basic = () => {
             size={select('Size', size, 'S')}
             errorText={text('Error Text', '')}
             helperText={text('Helper Text', '')}
-        />
-    );
-};
-
-export const WithError = () => {
-    const [values, setValues] = useState(['honda']);
-
-    return (
-        <CheckboxGroup
-            values={values}
-            onChange={setValues}
-            options={[
-                { value: 'honda', label: 'Honda' },
-                { value: 'hyundai', label: 'Hyundai' },
-                {
-                    value: [
-                        { value: 'jaguar', label: 'Jaguar' },
-                        { value: 'mahindra', label: 'Mahindra' }
-                    ],
-                    label: 'Tata',
-                    columns: 2
-                }
-            ]}
-            disabled={boolean('Disabled', false)}
-            fullWidth={boolean('Full Width', false)}
-            showSelectAll={boolean('Show Select All', false)}
-            label={text('Label', 'Cars')}
-            size={select('Size', size, 'S')}
         />
     );
 };

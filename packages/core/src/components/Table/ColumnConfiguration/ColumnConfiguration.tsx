@@ -21,7 +21,6 @@ const ColumnConfiguration: React.FC<Props> = React.memo(({ columns, onChange }) 
                     showSelectAll
                     key={config.field}
                     label={config.title}
-                    labelPosition="top"
                     labelWeight="Strong"
                     values={createValues(config.children, config.field)}
                     onChange={handleCheckboxGroupClick(config.field)}

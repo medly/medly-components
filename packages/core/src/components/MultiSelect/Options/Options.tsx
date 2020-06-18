@@ -41,7 +41,6 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
                         <CheckboxGroup
                             values={selectedValues.filter(vl => op.value.map((nestedOp: Option) => nestedOp.value).includes(vl))}
                             showSelectAll
-                            labelPosition="top"
                             disabled={op.disabled}
                             label={op.label}
                             options={op.value}

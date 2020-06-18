@@ -8,7 +8,20 @@ import { Props } from './types';
 
 export const Checkbox: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { id, size, fullWidth, label, labelPosition, indeterminate, onChange, hasError, ...restProps } = props;
+        const {
+            id,
+            size,
+            fullWidth,
+            label,
+            labelPosition,
+            labelVariant,
+            labelWeight,
+            labelColor,
+            indeterminate,
+            onChange,
+            hasError,
+            ...restProps
+        } = props;
 
         const inputId = useMemo(() => id || label, [id]),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
@@ -35,7 +48,11 @@ export const Checkbox: FC<Props> & WithStyle = React.memo(
                 hasError={hasError}
                 disabled={restProps.disabled}
             >
-                {label && <Text>{label}</Text>}
+                {label && (
+                    <Text textVariant={labelVariant} textWeight={labelWeight} textColor={labelColor}>
+                        {label}
+                    </Text>
+                )}
                 <Styled.Wrapper
                     size={size}
                     disabled={restProps.disabled}
