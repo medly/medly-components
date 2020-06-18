@@ -5,7 +5,7 @@ import { Checkbox } from './Checkbox';
 import { Props } from './types';
 
 const labelPosition: Props['labelPosition'][] = ['left', 'right', 'top', 'bottom'];
-const size: Props['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
+const sizes: Props['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
 
 export const ThemeInterface: React.FC<CheckboxTheme> = () => null;
 ThemeInterface.defaultProps = {
@@ -25,7 +25,7 @@ export const Basic = () => {
     return (
         <Checkbox
             name="fruit"
-            size={select('Size', size, 'S')}
+            size={select('Size', sizes, 'S')}
             label={text('Label', 'Lorem Ipsum')}
             disabled={boolean('Disabled', false)}
             hasError={boolean('Error', false)}

@@ -18,12 +18,10 @@ export interface Props extends HTMLProps<HTMLDivElement>, Omit<WithThemeProp, 'a
 
 export interface FieldWithLabelStyledProps extends Props {
     isLabelPresent?: boolean;
-    columns?: number;
 }
 
 export interface FieldStyledProps {
     isIndented?: boolean;
-    columns?: number;
 }
 
 export interface StaticProps {

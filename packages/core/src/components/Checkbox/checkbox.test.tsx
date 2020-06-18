@@ -1,4 +1,5 @@
-import { fireEvent, render, screen } from '@test-utils';
+import { render, screen } from '@test-utils';
+import userEvent from '@testing-library/user-event';
 import React from 'react';
 import { LabelPositions } from '../Label/types';
 import { Checkbox } from './Checkbox';
@@ -27,7 +28,7 @@ describe('Checkbox component', () => {
     it('should call onChange handler on click on checkbox', () => {
         const mockOnChange = jest.fn();
         render(<Checkbox onChange={mockOnChange} label="Dummy" />);
-        fireEvent.click(screen.getByRole('checkbox'));
+        userEvent.click(screen.getByRole('checkbox'));
         expect(mockOnChange).toBeCalled();
     });
 });

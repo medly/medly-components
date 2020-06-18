@@ -1,6 +1,14 @@
 import { CheckboxSizes, FontVariants, FontWeights } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 
+export type CheckboxGroupWrapperProps = {
+    fullWidth?: boolean;
+    hasError?: boolean;
+    showSelectAll?: boolean;
+    disabled?: boolean;
+    hasHelperOrErrorText?: boolean;
+};
+
 export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChange'>, WithThemeProp {
     /** Array of selected values */
     values?: any[];
@@ -34,11 +42,11 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChang
     size?: CheckboxSizes;
     /** Show checkbox to select all options */
     showSelectAll?: boolean;
-    /** Error Text */
+    /** Error text for checkboxGroup */
     errorText?: string;
-    /** Helper Message below checkboxGroup */
+    /** Helper text for checkboxGroup */
     helperText?: string;
-    /** Display the options as vertical or horizontal */
+    /** Use this prop to render option in multiple columns */
     columns?: number;
     /** This will be handled internally */
     parentHasError?: boolean;

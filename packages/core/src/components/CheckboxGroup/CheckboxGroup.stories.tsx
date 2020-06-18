@@ -1,4 +1,4 @@
-import { boolean, select, text } from '@storybook/addon-knobs';
+import { boolean, number, select, text } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
 import { CheckboxGroup } from './CheckboxGroup';
 import { Props } from './types';
@@ -20,8 +20,6 @@ export const Basic = () => {
                         { value: 'jaguar', label: 'Jaguar' },
                         { value: 'landRover', label: 'Land Rover' }
                     ],
-                    columns: 2,
-                    helperText: 'Helper Text',
                     label: 'Tata'
                 }
             ]}
@@ -31,7 +29,8 @@ export const Basic = () => {
             label={text('Label', 'Cars')}
             size={select('Size', size, 'S')}
             errorText={text('Error Text', '')}
-            helperText={text('Helper Text', '')}
+            helperText={text('Helper Text', 'Helper Text')}
+            columns={number('Columns', 1)}
         />
     );
 };

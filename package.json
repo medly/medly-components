@@ -27,6 +27,7 @@
         "lint": "run-p -c lint:*",
         "prebuild": "yarn typecheck && rimraf packages/*/dist",
         "prestorybook:build": "yarn test:generate-output",
+        "prestorybook:deploy": "yarn test:generate-output",
         "prerelease": "yarn lint && yarn build && yarn test",
         "release": "cross-env HUSKY_BYPASS=true lerna publish",
         "storybook:build": "cross-env BABEL_ENV=storybook build-storybook -c .storybook -o .out",

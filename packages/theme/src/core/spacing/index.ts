@@ -5,7 +5,6 @@ const spacing: SpacingTheme = {
     S2: '0.8rem',
     S3: '1.2rem',
     S4: '1.6rem',
-    S5: '2.0rem',
     M1: '2.4rem',
     M2: '3.2rem',
     M3: '4.0rem',
