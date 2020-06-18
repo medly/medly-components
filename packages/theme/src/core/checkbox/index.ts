@@ -3,11 +3,11 @@ import { CheckboxTheme } from './types';
 
 const checkbox: CheckboxTheme = {
     sizes: {
-        XS: '14px',
-        S: '18px',
-        M: '22px',
-        L: '26px',
-        XL: '30px'
+        XS: '1.4rem',
+        S: '1.8rem',
+        M: '2.2rem',
+        L: '2.6rem',
+        XL: '3rem'
     },
     colors: {
         default: {
@@ -16,11 +16,10 @@ const checkbox: CheckboxTheme = {
         },
         disabled: {
             bgColor: colors.grey[200],
-            labelColor: colors.grey[200],
-            iconColor: colors.grey[500],
-            hoverBgColor: colors.grey[200]
+            labelColor: colors.grey[500],
+            iconColor: colors.grey[500]
         },
-        confirmation: {
+        active: {
             bgColor: colors.communityBlue[500],
             iconColor: colors.white,
             hoverBgColor: colors.communityBlue[400]

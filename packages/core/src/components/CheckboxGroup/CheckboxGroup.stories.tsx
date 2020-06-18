@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { CheckboxGroup } from './CheckboxGroup';
 import { Props } from './types';
 
-const labelPosition: Props['labelPosition'][] = ['left', 'right', 'top', 'bottom'];
 const size: Props['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
 
 export const Basic = () => {
@@ -29,7 +28,8 @@ export const Basic = () => {
             showSelectAll={boolean('Show Select All', false)}
             label={text('Label', 'Cars')}
             size={select('Size', size, 'S')}
-            labelPosition={select('Label Position', labelPosition, 'top')}
+            errorText={text('Error Text', '')}
+            helperText={text('Helper Text', '')}
         />
     );
 };
@@ -50,7 +50,6 @@ export const WithError = () => {
                         { value: 'mahindra', label: 'Mahindra' }
                     ],
                     label: 'Tata',
-                    hasError: true,
                     columns: 2
                 }
             ]}
@@ -59,7 +58,6 @@ export const WithError = () => {
             showSelectAll={boolean('Show Select All', false)}
             label={text('Label', 'Cars')}
             size={select('Size', size, 'S')}
-            labelPosition={select('Label Position', labelPosition, 'top')}
         />
     );
 };

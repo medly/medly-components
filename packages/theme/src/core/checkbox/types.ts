@@ -12,9 +12,8 @@ export interface CheckboxTheme {
             bgColor: string;
             labelColor: string;
             iconColor: string;
-            hoverBgColor: string;
         };
-        confirmation: {
+        active: {
             bgColor: string;
             iconColor: string;
             hoverBgColor: string;

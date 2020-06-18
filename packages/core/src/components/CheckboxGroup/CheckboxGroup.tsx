@@ -11,24 +11,24 @@ import { Props } from './types';
 export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
-            values,
-            onChange,
-            options,
-            size,
-            label,
-            labelPosition,
-            labelVariant,
-            labelWeight,
-            labelColor,
-            showSelectAll,
-            disabled,
-            fullWidth,
-            errorMessage,
-            error,
-            helperText,
-            columns,
-            isIndented
-        } = props;
+                values,
+                onChange,
+                options,
+                size,
+                label,
+                labelVariant,
+                labelWeight,
+                labelColor,
+                showSelectAll,
+                disabled,
+                fullWidth,
+                errorText,
+                helperText,
+                columns,
+                isIndented,
+                parentHasError
+            } = props,
+            hasError = !!errorText || parentHasError;
 
         const allChildValues = useMemo(() => getValuesFromOptions(options), [options]),
             areAllValuesSelected = useMemo(() => allChildValues.every(val => values.includes(val)), [options, values]);
@@ -57,16 +57,17 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                 id={`${label}-checkboxGroup`}
                 ref={ref}
                 fullWidth
-                {...{ fullWidth, labelPosition, error, showSelectAll, isIndented }}
+                labelPosition="top"
+                {...{ fullWidth, hasError, showSelectAll, isIndented }}
             >
                 {label && (
                     <FieldWithLabel.Label
+                        labelPosition="top"
                         {...{
-                            labelPosition,
                             labelVariant,
                             labelWeight,
                             labelColor,
-                            labelSpacing: error || showSelectAll ? '0' : theme.spacing.S2
+                            labelSpacing: hasError || showSelectAll ? '0' : theme.spacing.S2
                         }}
                     >
                         {showSelectAll ? (
@@ -76,27 +77,29 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                                 label={label}
                                 checked={areAllValuesSelected}
                                 onChange={handleSelectAllClick}
-                                indeterminate={!areAllValuesSelected && allChildValues.find(el => values.includes(el))}
-                                hasError={error}
+                                indeterminate={!areAllValuesSelected && allChildValues.some(el => values.includes(el))}
+                                hasError={hasError}
                             />
                         ) : (
                             `${label}`
                         )}
                     </FieldWithLabel.Label>
                 )}
-                {(error || helperText) && <HelperText id={`checkbox-helper-text`}>{errorMessage || helperText}</HelperText>}
+                {(errorText || helperText) && <HelperText id={`checkbox-helper-text`}>{errorText || helperText}</HelperText>}
                 <FieldWithLabel.Field columns={columns}>
                     {options.map(option => {
                         return Array.isArray(option.value) ? (
                             <CheckboxGroup
                                 key={option.label}
+                                parentHasError={hasError}
+                                isIndented
                                 {...{
                                     ...props,
                                     options: option.value,
                                     label: option.label,
-                                    error: option.hasError,
                                     columns: option.columns,
-                                    isIndented: labelPosition === 'top'
+                                    helperText: option.helperText,
+                                    errorText: option.errorText
                                 }}
                             />
                         ) : (
@@ -108,7 +111,7 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                                 checked={values.includes(option.value)}
                                 onChange={handleOptionClick}
                                 disabled={disabled || option.disabled}
-                                hasError={error}
+                                hasError={hasError}
                             />
                         );
                     })}
@@ -125,9 +128,9 @@ CheckboxGroup.defaultProps = {
     fullWidth: true,
     values: [],
     showSelectAll: false,
-    labelPosition: 'left',
-    errorMessage: 'Error text here',
+    errorText: '',
     helperText: '',
-    error: false,
-    columns: 1
+    columns: 1,
+    labelVariant: 'body1',
+    labelWeight: 'Medium'
 };

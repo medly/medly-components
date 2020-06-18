@@ -1,6 +1,5 @@
 import { CheckboxSizes, FontVariants, FontWeights } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
-import { LabelPositions } from '../Label/types';
 
 export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChange'>, WithThemeProp {
     /** Array of selected values */
@@ -8,15 +7,13 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChang
     /** This method will be called with checked values */
     onChange: (values: any[]) => void;
     /** Options */
-    options: { value: any; label: string; disabled?: boolean; hasError?: boolean; columns?: number }[];
+    options: { value: any; label: string; disabled?: boolean; errorText?: string; helperText?: string; columns?: number }[];
     /** Label */
     label?: string;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
     /** Disable all the checkboxes */
     disabled?: boolean;
-    /** Label position */
-    labelPosition?: LabelPositions;
     /** Label Variant */
     labelVariant?: FontVariants;
     /** Label weight */
@@ -29,14 +26,14 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChang
     size?: CheckboxSizes;
     /** Show checkbox to select all options */
     showSelectAll?: boolean;
-    /** Error Message */
-    errorMessage?: string;
+    /** Error Text */
+    errorText?: string;
     /** Helper Message below checkboxGroup */
     helperText?: string;
-    /** Error State */
-    error?: boolean;
     /** Display the options as vertical or horizontal */
     columns?: number;
-    /** Add Indentation to child nodes of checkboxGroup */
+    /** This will be handled internally */
     isIndented?: boolean;
+    /** This will be handled internally */
+    parentHasError?: boolean;
 }

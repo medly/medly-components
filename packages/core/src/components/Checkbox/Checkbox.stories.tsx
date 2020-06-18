@@ -1,5 +1,5 @@
 import { CheckboxTheme, defaultTheme } from '@medly-components/theme';
-import { boolean, select } from '@storybook/addon-knobs';
+import { boolean, select, text } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
 import { Checkbox } from './Checkbox';
 import { Props } from './types';
@@ -26,11 +26,11 @@ export const Basic = () => {
         <Checkbox
             name="fruit"
             size={select('Size', size, 'S')}
-            label="Orange"
-            fullWidth={boolean('Full Width', false)}
+            label={text('Label', 'Lorem Ipsum')}
             disabled={boolean('Disabled', false)}
             hasError={boolean('Error', false)}
-            indeterminate={boolean('indeterminate', false)}
+            fullWidth={boolean('Full Width', false)}
+            indeterminate={boolean('Indeterminate', false)}
             labelPosition={select('Label Position', labelPosition, 'right')}
             checked={isChecked}
             onChange={onChangeHandler}
