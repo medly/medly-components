@@ -41,7 +41,5 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChang
     /** Display the options as vertical or horizontal */
     columns?: number;
     /** This will be handled internally */
-    isIndented?: boolean;
-    /** This will be handled internally */
     parentHasError?: boolean;
 }

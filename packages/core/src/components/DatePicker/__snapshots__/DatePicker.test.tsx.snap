@@ -89,7 +89,6 @@ exports[`DatePicker component should render properly when value is of date type 
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: 0px;
   display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;
@@ -300,7 +299,6 @@ exports[`DatePicker component should render properly when value is of string typ
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: 0px;
   display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;

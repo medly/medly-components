@@ -23,7 +23,7 @@ export const Checkbox: FC<Props> & WithStyle = React.memo(
             ...restProps
         } = props;
 
-        const inputId = useMemo(() => id || label, [id]),
+        const inputId = useMemo(() => id || label, [id, label]),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
             isActive = useMemo(() => restProps.checked || restProps.defaultChecked || indeterminate, [
                 restProps.checked,
@@ -49,17 +49,11 @@ export const Checkbox: FC<Props> & WithStyle = React.memo(
                 disabled={restProps.disabled}
             >
                 {label && (
-                    <Text textVariant={labelVariant} textWeight={labelWeight} textColor={labelColor}>
+                    <Text id={`${inputId}-label`} textVariant={labelVariant} textWeight={labelWeight} textColor={labelColor}>
                         {label}
                     </Text>
                 )}
-                <Styled.Wrapper
-                    size={size}
-                    disabled={restProps.disabled}
-                    isActive={isActive}
-                    hasError={hasError}
-                    data-testid="checkbox-wrapper"
-                >
+                <Styled.Wrapper size={size} disabled={restProps.disabled} isActive={isActive} hasError={hasError}>
                     <Styled.Checkbox ref={inputRef} id={inputId} onChange={changeHandler} indeterminate={indeterminate} {...restProps} />
                     {indeterminate ? <MinimizeIcon /> : <CheckIcon />}
                 </Styled.Wrapper>

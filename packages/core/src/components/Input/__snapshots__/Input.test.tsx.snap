@@ -69,7 +69,6 @@ exports[`Input component should render correctly when fullWidth & required props
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: 0px;
   display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;
@@ -203,7 +202,6 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: 0px;
   display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;
@@ -329,7 +327,6 @@ exports[`Input component should render correctly when label and description are 
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: 0px;
   display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;
@@ -499,7 +496,6 @@ exports[`Input component should render correctly with all the props given 1`] = 
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: 0px;
   display: inline-grid;
   display: -webkit-box;
   display: -webkit-flex;

@@ -12,7 +12,6 @@ export const CheckboxGroupWrapper = styled('div')<{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: ${({ isIndented }) => isIndented && '4rem'};
 
     & > :first-child {
         margin-bottom: ${({ hasHelperOrErrorText }) => !hasHelperOrErrorText && '0.9rem'};

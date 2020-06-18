@@ -44,7 +44,7 @@ const getPositionStyle = ({ labelPosition, fullWidth }: Props) => {
     switch (labelPosition) {
         case 'top':
             return css`
-                padding: ${fullWidth ? '0.8rem 0' : '0.8rem 0.8rem'};
+                padding: ${fullWidth ? '0.8rem 0' : '0.8rem'};
                 flex-direction: column;
                 justify-content: center;
             `;

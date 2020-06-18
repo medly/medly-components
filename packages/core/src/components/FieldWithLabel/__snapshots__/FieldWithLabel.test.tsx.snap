@@ -18,7 +18,6 @@ exports[`FieldWithLabel component should render properly when lable is not prese
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: 17px;
   display: inline-grid;
 }
 
@@ -100,7 +99,6 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: 0px;
   display: inline-grid;
 }
 
@@ -196,7 +194,6 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: 0px;
   display: inline-grid;
 }
 
@@ -293,7 +290,6 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: 0px;
   display: inline-grid;
 }
 
@@ -390,7 +386,6 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: 0px;
   display: inline-grid;
 }
 
