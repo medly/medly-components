@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.3.0...@medly-components/core@1.4.0) (2020-06-19)
+
+
+### Features
+
+* add transition on hover in checkbox & checkboxGroup component ([c8bbe2c](https://github.com/medly/medly-components/commit/c8bbe2c2a24f0f8b2ef5ced7c8dc1a2e6771fa5c))
+
+
+
+
+
 # [1.3.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.2.1...@medly-components/core@1.3.0) (2020-06-18)
 
 
