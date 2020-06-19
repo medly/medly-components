@@ -146,11 +146,6 @@ exports[`CheckboxGroup component should render error text when it is given 1`] =
   color: #13181D;
 }
 
-.c0 .sc-fzoLsD {
-  color: #cc0000;
-  margin: 0 0 1.2rem 0;
-}
-
 .c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -176,11 +171,6 @@ exports[`CheckboxGroup component should render error text when it is given 1`] =
   user-select: none;
   cursor: inherit;
   color: #13181D;
-}
-
-.c12 .sc-fzoLsD {
-  color: #cc0000;
-  margin: 0 0 1.2rem 4rem;
 }
 
 .c4 {
@@ -560,11 +550,6 @@ exports[`CheckboxGroup component should render helper text when it is given 1`] 
   color: #13181D;
 }
 
-.c0 .sc-fzoLsD {
-  color: #303C48;
-  margin: 0 0 1.2rem 0;
-}
-
 .c12 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -590,11 +575,6 @@ exports[`CheckboxGroup component should render helper text when it is given 1`] 
   user-select: none;
   cursor: inherit;
   color: #13181D;
-}
-
-.c12 .sc-fzoLsD {
-  color: #303C48;
-  margin: 0 0 1.2rem 0;
 }
 
 .c4 {
@@ -971,11 +951,6 @@ exports[`CheckboxGroup component should render properly when it is disabled 1`] 
   color: #98A7B7;
 }
 
-.c0 .sc-fzoLsD {
-  color: #303C48;
-  margin: 0 0 1.2rem 0;
-}
-
 .c10 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1001,11 +976,6 @@ exports[`CheckboxGroup component should render properly when it is disabled 1`] 
   user-select: none;
   cursor: not-allowed;
   color: #98A7B7;
-}
-
-.c10 .sc-fzoLsD {
-  color: #303C48;
-  margin: 0 0 1.2rem 0;
 }
 
 .c2 {
@@ -1480,11 +1450,6 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   user-select: none;
   cursor: inherit;
   color: #13181D;
-}
-
-.c0 .sc-fzoLsD {
-  color: #303C48;
-  margin: 0 0 1.2rem 0;
 }
 
 .c3 {

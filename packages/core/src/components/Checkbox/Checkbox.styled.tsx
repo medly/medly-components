@@ -5,25 +5,25 @@ import { Props } from './types';
 
 const activeStyle = ({ theme, hasError, disabled }: Props) => {
     const checkboxState = disabled ? 'disabled' : hasError ? 'error' : 'active',
-        colors = theme.checkbox.colors[checkboxState];
+        bgColor = theme.checkbox.bgColor[checkboxState];
 
     return css`
-        border-color: ${colors.bgColor};
-        background-color: ${colors.bgColor};
+        border-color: ${bgColor};
+        background-color: ${bgColor};
         ${CheckIcon.Style} {
             * {
-                fill: ${colors.iconColor};
+                fill: ${theme.checkbox.iconColor[checkboxState]};
             }
         }
     `;
 };
 
 const nonActiveStyle = ({ theme, hasError, disabled }: Props) => {
-    const colors = theme.checkbox.colors;
+    const checkboxState = disabled ? 'disabled' : hasError ? 'error' : 'default';
 
     return css`
         background-color: transparent;
-        border-color: ${disabled ? colors.disabled.iconColor : hasError ? colors.error.bgColor : colors.default.borderColor};
+        border-color: ${theme.checkbox.borderColor[checkboxState]};
     `;
 };
 
@@ -83,7 +83,7 @@ export const CheckboxWithLabelWrapper = styled('label')<Props & { isActive: bool
 
     ${Text.Style} {
         user-select: none;
-        color: ${({ theme, disabled }) => theme.checkbox.colors[disabled ? 'disabled' : 'default'].labelColor};
+        color: ${({ theme, disabled }) => theme.checkbox.labelColor[disabled ? 'disabled' : 'default']};
         padding: ${({ labelPosition }) => (labelPosition === 'top' || labelPosition === 'bottom' ? '1.6rem 0' : '0 1.6rem')};
     }
 
@@ -97,10 +97,9 @@ export const CheckboxWithLabelWrapper = styled('label')<Props & { isActive: bool
 
     &:hover {
         ${Wrapper} {
-            border-color: ${({ disabled, hasError, theme }) =>
-                !disabled && theme.checkbox.colors[hasError ? 'error' : 'active'].hoverBgColor};
+            border-color: ${({ disabled, hasError, theme }) => !disabled && theme.checkbox.hoverBgColor[hasError ? 'error' : 'active']};
             background-color: ${({ isActive, disabled, hasError, theme }) =>
-                !disabled && isActive && theme.checkbox.colors[hasError ? 'error' : 'active'].hoverBgColor};
+                !disabled && isActive && theme.checkbox.hoverBgColor[hasError ? 'error' : 'active']};
         }
     }
 `;

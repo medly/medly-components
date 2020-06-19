@@ -738,11 +738,6 @@ exports[`Form should render properly with initial state 1`] = `
   color: #13181D;
 }
 
-.c20 .sc-fzoiQi {
-  color: #303C48;
-  margin: 0 0 1.2rem 0;
-}
-
 .c22 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
@@ -858,7 +853,7 @@ exports[`Form should render properly with initial state 1`] = `
   fill: #566c82;
 }
 
-.c4 ~ .sc-fzoiQi {
+.c4 ~ .sc-fzoNJl {
   color: #566c82;
 }
 
@@ -2901,11 +2896,6 @@ exports[`Form should render properly without initial state 1`] = `
   color: #13181D;
 }
 
-.c22 .sc-fzoiQi {
-  color: #303C48;
-  margin: 0 0 1.2rem 0;
-}
-
 .c24 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
@@ -2975,7 +2965,7 @@ exports[`Form should render properly without initial state 1`] = `
   fill: #566c82;
 }
 
-.c7 ~ .sc-fzoiQi {
+.c7 ~ .sc-fzoNJl {
   color: #566c82;
 }
 

@@ -1,6 +1,5 @@
 import { styled } from '@medly-components/utils';
 import Text from '../Text';
-import { HelperText } from '../TextField/Styled';
 import { CheckboxGroupWrapperProps } from './types';
 
 export const CheckboxGroupWrapper = styled('div')<CheckboxGroupWrapperProps>`
@@ -15,12 +14,7 @@ export const CheckboxGroupWrapper = styled('div')<CheckboxGroupWrapperProps>`
     & > ${Text.Style} {
         user-select: none;
         cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'inherit')};
-        color: ${({ theme, disabled }) => theme.checkbox.colors[disabled ? 'disabled' : 'default'].labelColor};
-    }
-
-    ${HelperText} {
-        color: ${({ hasError, theme }) => (hasError ? theme.colors.red[500] : theme.colors.grey[900])};
-        margin: ${({ hasError, showSelectAll }) => (hasError && showSelectAll ? '0 0 1.2rem 4rem' : '0 0 1.2rem 0')};
+        color: ${({ theme, disabled }) => theme.checkbox.labelColor[disabled ? 'disabled' : 'default']};
     }
 `;
 
@@ -37,6 +31,5 @@ export const CheckboxGroupHelperText = styled('span')<{ hasError: boolean; isInd
     margin-left: ${({ isIndented }) => isIndented && '4rem'};
     margin-top: ${({ hasError }) => !hasError && '0.3rem'};
     margin-bottom: ${({ hasError }) => (hasError ? '1.3rem' : '1.8rem')};
-    color: ${({ hasError, theme, disabled }) =>
-        disabled ? theme.checkbox.colors.disabled.labelColor : hasError ? theme.colors.red[500] : theme.checkbox.colors.default.labelColor};
+    color: ${({ hasError, theme, disabled }) => theme.checkbox.helperTextColor[disabled ? 'disabled' : hasError ? 'error' : 'default']};
 `;
