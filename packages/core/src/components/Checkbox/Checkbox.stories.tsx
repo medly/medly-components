@@ -17,10 +17,7 @@ export const Basic = () => {
     // https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html
     const [isChecked, setChecked] = useState(false);
 
-    const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const value = e.target.checked;
-        setChecked(value);
-    };
+    const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => setChecked(e.target.checked);
 
     return (
         <Checkbox

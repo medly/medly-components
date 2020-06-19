@@ -6,7 +6,14 @@ import * as stories from './Checkbox.stories';
 
 # Checkbox
 
-Simple checkbox component which allows users to select options from a set.
+Simple checkbox component which allows users to select options from a set. It's a controlled react component. So you have to have the handle state like below.
+
+```tsx
+const [isChecked, setChecked] = useState(false),
+    onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => setChecked(e.target.checked);
+
+return <Checkbox label="Lorem Ipsum" checked={isChecked} onChange={onChangeHandler} />;
+```
 
 <Preview withToolbar>
     <Story name="Checkbox">{stories.Basic()}</Story>

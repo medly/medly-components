@@ -6,7 +6,23 @@ import * as stories from './CheckboxGroup.stories';
 
 # CheckboxGroup
 
-Set of checkbox component to let users to choose from multiple options.
+Set of checkbox component to let users to choose from multiple options. It's a controlled react component. So you have to have the handle state like below.
+
+```tsx
+const [values, setValues] = useState(['hyundai']);
+
+return (
+    <CheckboxGroup
+        label="Cars"
+        values={values}
+        onChange={setValues}
+        options={[
+            { value: 'honda', label: 'Honda' },
+            { value: 'hyundai', label: 'Hyundai' }
+        ]}
+    />
+);
+```
 
 <Preview withToolbar>
     <Story name="CheckboxGroup">{stories.Basic()}</Story>
