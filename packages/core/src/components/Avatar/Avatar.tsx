@@ -26,3 +26,6 @@ export const Avatar: FC<Props> & WithStyle = React.memo(
 );
 Avatar.displayName = 'Avatar';
 Avatar.Style = AvatarStyled;
+Avatar.defaultProps = {
+    withHoverEffect: true
+};
