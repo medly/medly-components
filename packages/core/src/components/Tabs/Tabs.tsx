@@ -34,7 +34,7 @@ export const Tabs: React.FC<Props> & StaticProps & WithStyle = React.memo(
 
         return (
             <Styled.Tabs id={tabsId} ref={ref}>
-                <TabList {...restProps} id={`${tabsId}-list`} tabSize={props.tabSize} active={activeTab} onChange={handleTabChange}>
+                <TabList {...restProps} id={`${tabsId}-list`} active={activeTab} onChange={handleTabChange}>
                     {children}
                 </TabList>
                 <TabPanel id={`${tabsId}-panel`} active={activeTab}>
@@ -49,3 +49,6 @@ Tabs.Style = Styled.Tabs;
 Tabs.Tab = Tab;
 Tabs.TabList = TabList;
 Tabs.TabPanel = TabPanel;
+Tabs.defaultProps = {
+    tabSize: 'S'
+};

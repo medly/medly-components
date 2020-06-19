@@ -1,5 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
-import { Theme } from '@medly-components/theme';
+import { Theme } from '@medly-components/theme/src';
 import { css, styled } from '@medly-components/utils';
 import { TextStyled } from '../../Text/Text.styled';
 import { TabSize } from '../types';
@@ -9,11 +9,8 @@ const getTabSpacing = (tabSize: TabSize, hasIcon = false) => {
     const verticalSpacing = 15;
     let spacing = verticalSpacing;
 
-    if (tabSize === 'M') {
-        spacing = verticalSpacing + 4;
-    }
     if (tabSize === 'L') {
-        spacing = verticalSpacing + 12;
+        spacing = verticalSpacing + 8;
     }
 
     if (hasIcon) {
@@ -22,20 +19,48 @@ const getTabSpacing = (tabSize: TabSize, hasIcon = false) => {
     return spacing;
 };
 
-const activeStyle = ({ tabs }: Theme) =>
-    css`
-        color: ${tabs.activeTabTextColor};
-        border-bottom: 4px solid ${tabs.activeTabTextColor};
-        ${SvgIcon} {
-            * {
-                fill: ${tabs.activeTabTextColor};
+const activeStyle = ({ theme, active, tabSize, hasIcon }: any) => {
+    const { tabs } = theme;
+
+    if (tabs.backgroundTheme === 'WHITE' && tabs.tabStyle === 'CLOSED') {
+        return css``;
+    } else {
+        return css`
+            color: ${tabs.activeTextColor};
+            border-bottom: 4px solid ${tabs.activeTextColor};
+            ${SvgIcon} {
+                * {
+                    fill: ${active && tabSize !== 'S' ? '#fff' : tabs.activeTextColor};
+                }
+            }
+            &:hover {
+                background-color: ${({ theme }) => theme.colors.white};
+                ${TextStyled} {
+                    color: ${({ theme }) => theme.colors.communityBlue[500]};
+                }
+            }
+        `;
+    }
+};
+
+const disabledStyle = ({ disabled, theme }: any) => {
+    return css``;
+};
+
+const nonActiveStyle = (theme: Theme) => {
+    return css`
+        color: ${theme.tabs.nonActiveTextColor};
+        &:hover {
+            background-color: ${theme.colors.grey[50]};
+            ${TextStyled} {
+                color: ${({ theme }) => theme.colors.grey[800]};
             }
         }
     `;
+};
 
 export const Button = styled.button<StyledProps>`
     background-color: transparent;
-    color: ${({ theme }) => theme.colors.grey[600]};
     border: 0;
     border-bottom: 4px solid transparent;
     padding: ${({ tabSize, hasIcon }) => `${getTabSpacing(tabSize, hasIcon)}px ${16}px`};
@@ -45,6 +70,22 @@ export const Button = styled.button<StyledProps>`
     align-items: center;
     flex-direction: row;
     justify-content: flex-start;
+
+    ${({ hasIcon, tabSize, theme, active }) =>
+        hasIcon &&
+        tabSize !== 'S' &&
+        css`
+            svg {
+                border-radius: 50%;
+                border: 1px solid ${active ? theme.colors.communityBlue[500] : theme.colors.grey[100]};
+                background-color: ${active ? theme.colors.communityBlue[500] : theme.colors.grey[100]};
+                padding: 5px;
+                font-size: 2rem;
+                * {
+                    fill: ${active ? theme.colors.white : theme.colors.grey[600]};
+                }
+            }
+        `}
 
     &:hover {
         cursor: pointer;
@@ -63,5 +104,9 @@ export const Button = styled.button<StyledProps>`
         margin-left: ${({ hasIcon }) => (hasIcon ? '16px' : 0)};
     }
 
-    ${({ active, theme: { tabs } }) => active && activeStyle({ tabs })}
+    ${({ active, theme }) => !active && nonActiveStyle(theme)}
+
+    ${({ tabSize, active, theme, hasIcon }) => active && activeStyle({ theme, active, tabSize, hasIcon })}
+
+    ${({ disabled, theme }) => disabled && disabledStyle({ disabled, theme })}
 `;

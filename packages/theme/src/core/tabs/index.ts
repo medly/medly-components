@@ -2,10 +2,12 @@ import colors from '../colors';
 import { TabsTheme } from './types';
 
 const tabs: TabsTheme = {
-    shadowColor: 'rgba(0,0,0,0.2)',
     tablistBgColor: colors.white,
-    activeTabTextColor: colors.communityBlue[500],
-    disabledTabTextColor: colors.grey[500]
+    activeTextColor: colors.communityBlue[500],
+    nonActiveTextColor: colors.grey[600],
+    disabledTextColor: colors.grey[500],
+    backgroundTheme: 'WHITE',
+    tabStyle: 'OPEN'
 };
 
 export default tabs;

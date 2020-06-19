@@ -1,6 +1,12 @@
+export type BackgroundTheme = 'WHITE' | 'GREY';
+
+export type TabStyle = 'OPEN' | 'CLOSED';
+
 export interface TabsTheme {
-    shadowColor: string;
     tablistBgColor: string;
-    activeTabTextColor: string;
-    disabledTabTextColor: string;
+    activeTextColor: string;
+    nonActiveTextColor: string;
+    disabledTextColor: string;
+    backgroundTheme: BackgroundTheme;
+    tabStyle: TabStyle;
 }

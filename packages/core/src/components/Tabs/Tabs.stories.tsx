@@ -28,7 +28,7 @@ export const Basic = () => (
 
 export const WithIcon = () => {
     return (
-        <Tabs defaultActive="tab1" aria-label="WithIcon Tabs">
+        <Tabs defaultActive="tab1" aria-label="WithIcon Tabs" tabSize={select('Tab Size', size, 'S')}>
             <Tabs.Tab id="tab1" label="Add" icon={AddIcon}>
                 Content for the add panel
             </Tabs.Tab>
