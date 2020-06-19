@@ -19,42 +19,70 @@ const getTabSpacing = (tabSize: TabSize, hasIcon = false) => {
     return spacing;
 };
 
-const activeStyle = ({ theme, active, tabSize, hasIcon }: any) => {
-    const { tabs } = theme;
+const activeStyle = (theme: Theme, active: boolean, tabSize: TabSize) => {
+    const {
+        tabs: { textColor, backgroundColor, backgroundTheme, tabStyle }
+    } = theme;
 
-    if (tabs.backgroundTheme === 'WHITE' && tabs.tabStyle === 'CLOSED') {
+    if (backgroundTheme === 'WHITE' && tabStyle === 'CLOSED') {
         return css``;
     } else {
         return css`
-            color: ${tabs.activeTextColor};
-            border-bottom: 4px solid ${tabs.activeTextColor};
+            color: ${textColor.active};
+            border-bottom: 4px solid ${textColor.active};
             ${SvgIcon} {
                 * {
-                    fill: ${active && tabSize !== 'S' ? '#fff' : tabs.activeTextColor};
+                    fill: ${active && tabSize !== 'S' ? backgroundColor.nonActive : textColor.active};
                 }
             }
             &:hover {
-                background-color: ${({ theme }) => theme.colors.white};
+                background-color: ${backgroundColor.nonActive};
                 ${TextStyled} {
-                    color: ${({ theme }) => theme.colors.communityBlue[500]};
+                    color: ${textColor.active};
                 }
             }
         `;
     }
 };
 
-const disabledStyle = ({ disabled, theme }: any) => {
-    return css``;
+const disabledStyle = (theme: Theme) => {
+    return css`
+        opacity: 0.4;
+        &:hover {
+            background-color: transparent;
+            ${TextStyled} {
+                color: ${theme.tabs.textColor.nonActive};
+            }
+        }
+    `;
 };
 
 const nonActiveStyle = (theme: Theme) => {
+    const {
+        tabs: { textColor, backgroundColor }
+    } = theme;
     return css`
-        color: ${theme.tabs.nonActiveTextColor};
+        color: ${textColor.nonActive};
         &:hover {
-            background-color: ${theme.colors.grey[50]};
+            background-color: ${backgroundColor.hovered};
             ${TextStyled} {
-                color: ${({ theme }) => theme.colors.grey[800]};
+                color: ${textColor.hovered};
             }
+        }
+    `;
+};
+
+const svgStyles = (theme: Theme, active: boolean) => {
+    const {
+        tabs: { textColor }
+    } = theme;
+    return css`
+        ${SvgIcon} {
+            border-radius: 50%;
+            border: 1px solid ${active ? textColor.active : theme.colors.grey[100]};
+            background-color: ${active ? textColor.active : theme.colors.grey[100]};
+            padding: 5px;
+            font-size: 2rem;
         }
     `;
 };
@@ -71,21 +99,10 @@ export const Button = styled.button<StyledProps>`
     flex-direction: row;
     justify-content: flex-start;
 
-    ${({ hasIcon, tabSize, theme, active }) =>
-        hasIcon &&
-        tabSize !== 'S' &&
-        css`
-            svg {
-                border-radius: 50%;
-                border: 1px solid ${active ? theme.colors.communityBlue[500] : theme.colors.grey[100]};
-                background-color: ${active ? theme.colors.communityBlue[500] : theme.colors.grey[100]};
-                padding: 5px;
-                font-size: 2rem;
-                * {
-                    fill: ${active ? theme.colors.white : theme.colors.grey[600]};
-                }
-            }
-        `}
+    ${TextStyled} {
+        font-size: ${({ tabSize }) => (tabSize === 'S' ? '1.4rem' : '1.6rem')};
+        margin-left: ${({ hasIcon }) => (hasIcon ? '16px' : 0)};
+    }
 
     &:hover {
         cursor: pointer;
@@ -99,14 +116,11 @@ export const Button = styled.button<StyledProps>`
         cursor: not-allowed;
     }
 
-    ${TextStyled} {
-        font-size: ${({ tabSize }) => (tabSize === 'S' ? '1.4rem' : '1.6rem')};
-        margin-left: ${({ hasIcon }) => (hasIcon ? '16px' : 0)};
-    }
+    ${({ theme, active, tabSize, hasIcon }) => hasIcon && tabSize !== 'S' && svgStyles(theme, active)}
 
-    ${({ active, theme }) => !active && nonActiveStyle(theme)}
+    ${({ theme, active }) => !active && nonActiveStyle(theme)}
 
-    ${({ tabSize, active, theme, hasIcon }) => active && activeStyle({ theme, active, tabSize, hasIcon })}
+    ${({ theme, active, tabSize }) => active && activeStyle(theme, active, tabSize)}
 
-    ${({ disabled, theme }) => disabled && disabledStyle({ disabled, theme })}
+    ${({ theme, disabled }) => disabled && disabledStyle(theme)}
 `;

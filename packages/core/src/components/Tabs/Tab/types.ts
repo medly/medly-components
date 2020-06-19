@@ -16,4 +16,6 @@ export interface Props extends StyledProps {
     hide?: boolean;
     /** Icon to be shown */
     icon?: React.ElementType;
+    /** Disabled State */
+    disabled?: boolean;
 }

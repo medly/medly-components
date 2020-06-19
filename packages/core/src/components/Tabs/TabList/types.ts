@@ -4,5 +4,5 @@ import { TabSize } from '../types';
 export interface Props extends HTMLProps<HTMLDivElement> {
     active: any;
     onChange: (id: any) => void;
-    tabSize: TabSize;
+    tabSize?: TabSize;
 }

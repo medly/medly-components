@@ -35,7 +35,7 @@ export const WithIcon = () => {
             <Tabs.Tab id="tab2" label="Edit" icon={EditIcon}>
                 Content for the edit panel
             </Tabs.Tab>
-            <Tabs.Tab id="tab3" label="Delete" icon={DeleteIcon}>
+            <Tabs.Tab id="tab3" label="Delete" icon={DeleteIcon} disabled={true}>
                 Content for the delete panel
             </Tabs.Tab>
         </Tabs>
