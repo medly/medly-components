@@ -34,6 +34,8 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   background-color: transparent;
   border-color: #13181D;
   display: -webkit-inline-box;
@@ -167,6 +169,8 @@ exports[`Checkbox component should render correctly with checked false and activ
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   background-color: transparent;
   border-color: #13181D;
   display: -webkit-inline-box;
@@ -299,6 +303,8 @@ exports[`Checkbox component should render correctly with checked false and disab
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   background-color: transparent;
   border-color: #98A7B7;
   display: -webkit-inline-box;
@@ -430,6 +436,8 @@ exports[`Checkbox component should render correctly with checked false and hasEr
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   background-color: transparent;
   border-color: #cc0000;
   display: -webkit-inline-box;
@@ -562,6 +570,8 @@ exports[`Checkbox component should render correctly with checked false and indet
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   border-color: #005AEE;
   background-color: #005AEE;
   display: -webkit-inline-box;
@@ -700,6 +710,8 @@ exports[`Checkbox component should render correctly with checked true and active
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   border-color: #005AEE;
   background-color: #005AEE;
   display: -webkit-inline-box;
@@ -838,6 +850,8 @@ exports[`Checkbox component should render correctly with checked true and disabl
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   border-color: #dfe4e9;
   background-color: #dfe4e9;
   display: -webkit-inline-box;
@@ -974,6 +988,8 @@ exports[`Checkbox component should render correctly with checked true and hasErr
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   border-color: #cc0000;
   background-color: #cc0000;
   display: -webkit-inline-box;
@@ -1112,6 +1128,8 @@ exports[`Checkbox component should render correctly with checked true and indete
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   border-color: #005AEE;
   background-color: #005AEE;
   display: -webkit-inline-box;
@@ -1263,6 +1281,8 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   background-color: transparent;
   border-color: #13181D;
   display: -webkit-inline-box;
@@ -1412,6 +1432,8 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   background-color: transparent;
   border-color: #13181D;
   display: -webkit-inline-box;
@@ -1561,6 +1583,8 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   background-color: transparent;
   border-color: #13181D;
   display: -webkit-inline-box;

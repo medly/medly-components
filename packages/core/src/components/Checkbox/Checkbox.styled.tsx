@@ -35,6 +35,7 @@ export const Wrapper = styled.div<Props & { isActive?: boolean }>`
     width: ${({ theme, size }) => theme.checkbox.sizes[size || theme.checkbox.defaultSize]};
     height: ${({ theme, size }) => theme.checkbox.sizes[size || theme.checkbox.defaultSize]};
     border-radius: 22.2%;
+    transition: all 100ms ease-out;
 
     ${({ isActive }) => (isActive ? activeStyle : nonActiveStyle)};
     ${centerAligned()}

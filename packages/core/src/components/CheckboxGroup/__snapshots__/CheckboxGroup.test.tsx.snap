@@ -46,6 +46,8 @@ exports[`CheckboxGroup component should render error text when it is given 1`] =
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   background-color: transparent;
   border-color: #cc0000;
   display: -webkit-inline-box;
@@ -450,6 +452,8 @@ exports[`CheckboxGroup component should render helper text when it is given 1`] 
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   background-color: transparent;
   border-color: #13181D;
   display: -webkit-inline-box;
@@ -855,6 +859,8 @@ exports[`CheckboxGroup component should render properly when it is disabled 1`] 
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   background-color: transparent;
   border-color: #98A7B7;
   display: -webkit-inline-box;
@@ -1270,6 +1276,8 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   background-color: transparent;
   border-color: #13181D;
   display: -webkit-inline-box;
@@ -1294,6 +1302,8 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   border-color: #005AEE;
   background-color: #005AEE;
   display: -webkit-inline-box;

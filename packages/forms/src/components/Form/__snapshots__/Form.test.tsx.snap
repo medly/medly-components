@@ -506,6 +506,8 @@ exports[`Form should render properly with initial state 1`] = `
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   border-color: #005AEE;
   background-color: #005AEE;
   display: -webkit-inline-box;
@@ -534,6 +536,8 @@ exports[`Form should render properly with initial state 1`] = `
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   background-color: transparent;
   border-color: #13181D;
   display: -webkit-inline-box;
@@ -2743,6 +2747,8 @@ exports[`Form should render properly without initial state 1`] = `
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   background-color: transparent;
   border-color: #13181D;
   display: -webkit-inline-box;
