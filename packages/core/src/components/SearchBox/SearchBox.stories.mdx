@@ -1,6 +1,8 @@
-import { SearchBox } from './SearchBox.tsx';
+import { optionsArray, boxSize, ThemeInterface } from './SearchBox.stories.tsx';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './SearchBox.stories';
+import { select } from '@storybook/addon-knobs';
+import { SearchBox } from './SearchBox';
 
 <Meta title="Core" component={SearchBox} />
 
@@ -9,7 +11,14 @@ import * as stories from './SearchBox.stories';
 ### Add a auto suggest text box
 
 <Preview withToolbar>
-    <Story name="SearchBox">{stories.Basic()}</Story>
+    <Story name="SearchBox">{
+        () => {
+            const onGetOptions = () => optionsArray;
+        return (
+            <SearchBox placeholder="Search" getOptions={onGetOptions} boxSize={select('boxSize', boxSize, 'S')} />
+            )
+        }
+    }</Story>
 </Preview>
 
 
@@ -28,3 +37,7 @@ import * as stories from './SearchBox.stories';
 <Preview>
      <SearchBox boxSize='M' />
 </Preview>
+
+### SearchBox Theme
+
+<Props of={ThemeInterface} />

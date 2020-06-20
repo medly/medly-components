@@ -12,7 +12,7 @@ export const SearchBoxWrapper = styled('div')<Props>`
 
     hr {
         position: absolute;
-        border-top: 1px solid ${({ theme }) => theme.searchBox.borderColor};
+        border-top: 1px solid ${({ theme }) => theme.searchBox.default.borderColor};
         width: 21.6rem;
         top: 4.7rem;
         left: 2rem;
@@ -33,25 +33,25 @@ export const SearchBoxWrapper = styled('div')<Props>`
         cursor: pointer;
         z-index: 10001;
         font-size: 2rem;
-        background-color: ${({ theme }) => theme.searchBox.bgColor};
+        background-color: ${({ theme }) => theme.searchBox.default.bgColor};
         padding: 2px;
         border-radius: 50%;
 
         * {
-            fill: ${({ theme }) => theme.searchBox.iconColor};
+            fill: ${({ theme }) => theme.searchBox.default.iconColor};
         }
 
         &:hover {
-            background-color: ${({ theme }) => theme.searchBox.iconBg};
+            background-color: ${({ theme }) => theme.searchBox.default.iconBg};
         }
 
         &.active {
             path {
-                fill: ${({ theme }) => theme.searchBox.active.iconActiveColor};
+                fill: ${({ theme }) => theme.searchBox.active.iconColor};
             }
 
             &:hover {
-                background-color: ${({ theme }) => theme.searchBox.iconActiveBg};
+                background-color: ${({ theme }) => theme.searchBox.active.iconBg};
             }
         }
     }
@@ -80,14 +80,14 @@ export const SearchBoxWrapper = styled('div')<Props>`
 export const SearchBox = styled('input')<Props>`
     height: ${getSearchBoxSize};
     width: 100%;
-    background: ${({ theme }) => theme.searchBox.bgColor};
+    background: ${({ theme }) => theme.searchBox.default.bgColor};
     box-sizing: border-box;
-    border: 0.1rem solid ${({ theme }) => theme.searchBox.borderColor};
+    border: 0.1rem solid ${({ theme }) => theme.searchBox.default.borderColor};
     font-size: 1.4rem;
     padding-left: 2rem;
     border-radius: 2rem;
     outline: none;
-    color: ${({ theme }) => theme.searchBox.textColor};
+    color: ${({ theme }) => theme.searchBox.default.textColor};
 
     &.active {
         border-radius: 2rem 2rem 0 0;
@@ -103,7 +103,7 @@ export const SearchBox = styled('input')<Props>`
     }
 
     &::placeholder {
-        color: ${({ theme }) => theme.searchBox.placeholderTextColor};
+        color: ${({ theme }) => theme.searchBox.default.placeholderTextColor};
     }
 
     &:hover {

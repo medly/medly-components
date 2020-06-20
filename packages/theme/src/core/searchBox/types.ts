@@ -7,14 +7,14 @@ export type SearchBoxTheme = {
             iconPosition: string;
         };
     };
-    bgColor: string;
-    textColor: string;
-    placeholderTextColor: string;
-    borderColor: string;
-    iconColor: string;
-    iconBg: string;
-    iconActiveColor: string;
-    iconActiveBg: string;
+    default: {
+        bgColor: string;
+        textColor: string;
+        iconColor: string;
+        iconBg: string;
+        placeholderTextColor: string;
+        borderColor: string;
+    };
     hover: {
         borderColor: string;
         boxShadow: string;
@@ -24,6 +24,7 @@ export type SearchBoxTheme = {
         boxShadow: string;
         placeholderTextColor: string;
         iconColor: string;
+        iconBg: string;    
     };
     options: {
         boxShadow: string;

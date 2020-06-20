@@ -15,20 +15,20 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
             [active, setActive] = useState(false),
             [activeSearchIcon, setSearchIconActive] = useState(false);
 
-        const handleFocus = () => {
+        const handleFocus = useCallback(() => {
                 const canSearch = inputRef.current.value.length >= 3;
                 setCloseIconState(true);
                 setSearchIconActive(true);
                 setActive(canSearch);
                 setOptions(canSearch ? getOptions(inputRef.current.value) : []);
-            },
-            clearSearchText = () => {
+            }, [inputRef.current]),
+            clearSearchText = useCallback(() => {
                 inputRef.current.value = null;
                 setCloseIconState(false);
                 setActive(false);
                 setSearchIconActive(false);
                 setOptions([]);
-            },
+            }, []),
             handleOptionClick = useCallback(
                 (option: Option) => {
                     if (!option.disabled && !Array.isArray(option.value)) {

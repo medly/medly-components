@@ -6,6 +6,6 @@ export interface Props extends Omit<HTMLProps<HTMLButtonElement>, 'boxSize'>, Wi
     placeholder?: string;
     /** Search box sizes (optional) */
     boxSize?: SearchBoxSizes;
-    /** Function to be called on selecting any option */
+    /** Function to be called to populate search option */
     getOptions?: (value: string) => Array<object>;
 }
