@@ -1,49 +1,73 @@
-import { defaultTheme } from '@medly-components/theme';
-import { centerAligned, styled, WithThemeProp } from '@medly-components/utils';
-import { Props, RadioWrapperProps } from './types';
+import { asterisk, styled, WithThemeProp } from '@medly-components/utils';
+import { getSelectorLabelPositionStyle } from '../Checkbox/Checkbox.styled';
+import Text from '../Text';
+import { Props } from './types';
 
-export const RadioFillStyled = styled('div')<WithThemeProp>`
-    background-color: ${({ theme }) => theme.radio.fillColor};
-    width: 0;
-    height: 0;
+const getRadioSize = ({ theme, size }: Props & WithThemeProp) => theme.radio.sizes[size || theme.radio.defaultSize];
+
+export const StyledRadio = styled('div')`
+    transition: all 100ms ease-out;
+    box-sizing: border-box;
+    border: 1px solid;
+    width: 100%;
+    height: 100%;
     z-index: 1;
     border-radius: 100%;
-    ${centerAligned()}
 `;
-RadioFillStyled.defaultProps = {
-    theme: defaultTheme
-};
 
-export const RadioStyled = styled('input').attrs({ type: 'radio' })<Props>`
+export const HiddenRadio = styled('input').attrs(({ theme }) => ({ type: 'radio', ...theme.radio }))<Props>`
     opacity: 0;
-    z-index: 2;
     position: absolute;
     width: 100%;
     height: 100%;
     margin: 0;
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
 
-    &:checked ~ ${RadioFillStyled} {
-        width: calc(75%);
-        height: calc(75%);
-        transition: width 0.2s ease, height 0.2s ease;
+    & ~ ${StyledRadio} {
+        border-color: ${({ borderColor, hasError }) => borderColor[hasError ? 'error' : 'default']};
+    }
+
+    &:checked ~ ${StyledRadio} {
+        border-width: ${props => `calc(${getRadioSize(props)} / 3) `};
+    }
+
+    &:checked:disabled ~ ${StyledRadio} {
+        border-color: ${({ disabledBorderColor }) => disabledBorderColor.active};
+    }
+
+    &:not(:checked):disabled ~ ${StyledRadio} {
+        border-color: ${({ disabledBorderColor }) => disabledBorderColor.default};
+    }
+
+    &:not(:disabled):checked ~ ${StyledRadio} {
+        border-color: ${({ borderColor, hasError }) => borderColor[hasError ? 'error' : 'active']};
     }
 `;
 
-export const RadioWrapperStyled = styled('div')<RadioWrapperProps>`
-    width: ${({ theme, size }) => (size ? theme.radio.sizes[size] : theme.radio.defaultSize)};
-    height: ${({ theme, size }) => (size ? theme.radio.sizes[size] : theme.radio.defaultSize)};
+export const RadioWrapper = styled('div')<Props>`
+    margin: 0.3rem;
+    width: ${getRadioSize};
+    height: ${getRadioSize};
     position: relative;
     border-radius: 100%;
-    border: 1px solid ${({ theme }) => theme.radio.borderColor};
-    background-color: ${({ theme, disabled }) => (disabled ? theme.radio.disabledBgcolor : theme.radio.bgColor)};
+`;
 
-    &:focus-within {
-        box-shadow: 0 0 0 1pt ${({ theme }) => theme.radio.outlineColor};
+export const RadioWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...theme.radio }))<Props>`
+    display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
+    cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+
+    ${getSelectorLabelPositionStyle}
+
+    ${Text.Style} {
+        user-select: none;
+        ${({ required }) => required && asterisk}
+        color: ${({ disabled, labelColor }) => labelColor[disabled ? 'disabled' : 'default']};
+        padding: ${({ labelPosition }) => (labelPosition === 'top' || labelPosition === 'bottom' ? '1.6rem 0' : '0 1.6rem')};
     }
 
-    ${centerAligned()}
+    &:hover {
+        && ${StyledRadio} {
+            border-color: ${({ disabled, hasError, hoveredBorderColor }) => !disabled && hoveredBorderColor[hasError ? 'error' : 'active']}
+        }
+    }
 `;
-RadioWrapperStyled.defaultProps = {
-    theme: defaultTheme
-};

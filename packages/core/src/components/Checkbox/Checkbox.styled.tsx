@@ -1,5 +1,6 @@
 import { CheckIcon, SvgIcon } from '@medly-components/icons';
 import { centerAligned, css, styled } from '@medly-components/utils';
+import { LabelPositions } from '../Label/types';
 import Text from '../Text';
 import { Props } from './types';
 
@@ -41,7 +42,7 @@ export const Wrapper = styled.div<Props & { isActive?: boolean }>`
     ${centerAligned()}
 `;
 
-const getPositionStyle = ({ labelPosition, fullWidth }: Props) => {
+export const getSelectorLabelPositionStyle = ({ labelPosition, fullWidth }: { labelPosition?: LabelPositions; fullWidth?: boolean }) => {
     switch (labelPosition) {
         case 'top':
             return css`
@@ -80,7 +81,7 @@ export const CheckboxWithLabelWrapper = styled('label')<Props & { isActive: bool
         cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     }
 
-    ${getPositionStyle}
+    ${getSelectorLabelPositionStyle}
 
     ${Text.Style} {
         user-select: none;

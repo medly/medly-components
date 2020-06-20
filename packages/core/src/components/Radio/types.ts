@@ -2,30 +2,21 @@ import { FontVariants, FontWeights, RadioSizes } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 
-type DivProps = Omit<HTMLProps<HTMLInputElement>, 'size'>;
-type InputProps = Omit<HTMLProps<HTMLInputElement>, 'size' | 'type'>;
-
-export interface RadioWrapperProps extends DivProps, WithThemeProp {
-    size?: RadioSizes;
-}
+type InputProps = Omit<HTMLProps<HTMLInputElement>, 'size' | 'type' | 'sizes'>;
 
 export interface Props extends InputProps, WithThemeProp {
-    /** Value of the radio */
-    value: string;
+    /** Radio size */
+    size?: RadioSizes;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
+    /** Error state for checkbox */
+    hasError?: boolean;
+    /** Radio label */
+    label?: string;
     /** Label position */
     labelPosition?: LabelPositions;
     /** Label Variant */
     labelVariant?: FontVariants;
     /** Label weight */
     labelWeight?: FontWeights;
-    /** Label color */
-    labelColor?: string;
-    /** To be used when it is required in the form */
-    required?: boolean;
-    /** Radio label */
-    label?: string;
-    /** Radio size */
-    size?: RadioSizes;
 }

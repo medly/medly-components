@@ -20,6 +20,7 @@ export const Basic = () => (
         disabled={boolean('Disabled', false)}
         fullWidth={boolean('Full Width', false)}
         size={select('Size', size, 'S')}
+        hasError={boolean('Has Error', false)}
         labelPosition={select('Label Position', labelPosition, 'right')}
     />
 );
