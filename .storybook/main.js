@@ -14,7 +14,15 @@ module.exports = {
         '../docs/Colors/Colors.stories.mdx',
         '../packages/**/*.stories.(tsx|mdx)'
     ],
-    addons: ['@storybook/addon-docs', '@storybook/addon-jest', '@storybook/addon-knobs', 'storybook-addon-jsx', '@storybook/addon-actions'],
+    addons: [
+        '@storybook/addon-docs',
+        '@storybook/addon-jest',
+        '@storybook/addon-knobs',
+        'storybook-addon-jsx',
+        'storybook-addon-designs',
+        '@storybook/addon-viewport',
+        '@storybook/addon-actions'
+    ],
     webpack: async config => {
         config.module.rules.push({
             test: /\.(ts|tsx)$/,
@@ -25,7 +33,7 @@ module.exports = {
         config.module.rules.push({
             test: /\.(ts|tsx)$/,
             include: [packages, docs],
-            exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /dist/, /icons/],
+            exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /dist/, /icons\/src\/assets/, /icons\/src\/icons/],
             loader: 'react-docgen-typescript-loader',
             options: {
                 tsconfigPath,

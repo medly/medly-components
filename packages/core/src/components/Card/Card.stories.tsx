@@ -7,7 +7,7 @@ export const display: Props['display'][] = ['block', 'flex'];
 export const itemsPosition: Props['alignItems'][] = ['top', 'bottom', 'left', 'right', 'center'];
 export const flowDirection: Props['flowDirection'][] = ['vertical', 'horizontal'];
 
-export const ThemeInterface: React.SFC<CardTheme> = () => null;
+export const ThemeInterface: React.FC<CardTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.card
 };

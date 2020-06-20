@@ -5,7 +5,7 @@ import Text from '../../../Text';
 import { HeadCellStyled, ResizeHandlerStyled } from './HeadCell.styled';
 import { HeadCellProps } from './types';
 
-const HeadCell: React.SFC<HeadCellProps> & WithStyle = React.memo(props => {
+const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     let pageX: number;
     const { frozen, enableSorting, children, hide, field, sortField, onSortChange, onWidthChange, columnMaxSize } = props;
 

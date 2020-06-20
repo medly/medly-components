@@ -4,7 +4,7 @@ import Tab from '../Tab';
 import * as Styled from './TabList.styled';
 import { Props } from './types';
 
-export const TabList: React.SFC<Props> & WithStyle = React.memo(props => {
+export const TabList: React.FC<Props> & WithStyle = React.memo(props => {
     const { active, children, onChange, ...restProps } = props,
         leftPress = useKeyPress('ArrowLeft'),
         rightPress = useKeyPress('ArrowRight'),

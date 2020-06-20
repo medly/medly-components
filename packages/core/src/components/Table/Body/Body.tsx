@@ -8,7 +8,7 @@ import { NoResult } from '../Row/Row.styled';
 import { ColumnConfig } from '../types';
 import { Props } from './types';
 
-const Body: React.SFC<Props> = React.memo(props => {
+const Body: React.FC<Props> = React.memo(props => {
     const {
         data,
         columns,

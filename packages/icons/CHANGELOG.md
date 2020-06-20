@@ -3,6 +3,64 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.3...@medly-components/icons@1.0.4) (2020-06-19)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.0.3](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.2...@medly-components/icons@1.0.3) (2020-06-18)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+## [1.0.2](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.1...@medly-components/icons@1.0.2) (2020-06-16)
+
+
+### Bug Fixes
+
+* use FC instead of SFC, as it is depricated ([8c00154](https://github.com/medly/medly-components/commit/8c0015452d494e2b292a8f88c1bf5c739aacbab8))
+
+
+
+
+
+## [1.0.1](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.0-beta.30...@medly-components/icons@1.0.1) (2020-06-13)
+
+
+### Bug Fixes
+
+* remove semantic release ([#109](https://github.com/medly/medly-components/issues/109)) ([db2903d](https://github.com/medly/medly-components/commit/db2903d4b0e5b8dec576d3981b96775f8f4d6b28))
+* update check icon and fix toast size issue ([d8a3a9b](https://github.com/medly/medly-components/commit/d8a3a9b73e2a35ac23e8679008537e1214c71fbe))
+
+
+
+
+
+# [1.0.0-beta.30](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.0-beta.29...@medly-components/icons@1.0.0-beta.30) (2020-06-11)
+
+
+### Features
+
+* add solid and flat variant in icons ([0eaf69c](https://github.com/medly/medly-components/commit/0eaf69c159e81360cecb9fa126dd2d158289afb1))
+
+
+
+
+
+# [1.0.0-beta.29](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.0-beta.28...@medly-components/icons@1.0.0-beta.29) (2020-06-09)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
 # [1.0.0-beta.28](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.0-beta.27...@medly-components/icons@1.0.0-beta.28) (2020-06-05)
 
 **Note:** Version bump only for package @medly-components/icons

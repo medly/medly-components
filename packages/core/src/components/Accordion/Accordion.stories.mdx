@@ -1,34 +1,43 @@
-import Text from '../Text';
-import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import { withKnobs, color, select } from '@storybook/addon-knobs';
-import { SimpleAccordion, ThemeInterface } from './Accordion.stories';
+import { withKnobs } from '@storybook/addon-knobs';
+import { defaultTheme } from '@medly-components/theme';
 import { Accordion } from './Accordion';
-
+import Text from '../Text';
 
 <Meta title="Core" component={Accordion} parameters={{ jest: ['Accordion.test.tsx'] }} />
 
 # Accordion
 
-Accordion is a container that can either stand alone or be connected with other components.
+Simple accordion component with two children components `Accordion.Header` & `Accordion.Content`, which are just wrapper components. You can pass any component as children to `Accordion.Header` & `Accordion.Content`.
 
 <Preview withToolbar>
-    <Story name="Accordion" parameters={{ decorators: [withKnobs] }}>
-        <Accordion
-            title="Uploaded Files"
-            bgColor={color('Background color', defaultTheme.accordion.backgroundColor)}
-            titleColor={color('Title Color', defaultTheme.colors.black)}
-        >
-            <div>File 1</div>
+    <Story name="Accordion">
+        <Accordion>
+            <Accordion.Header>
+                <div style={{ backgroundColor: '#e6effd', padding: `1.8rem` }}>
+                    <Text>Header</Text>
+                </div>
+            </Accordion.Header>
+            <Accordion.Content>
+                <div style={{ backgroundColor: '#ecfbf9', padding: `1.8rem` }}>
+                    <Text>Content</Text>
+                </div>
+            </Accordion.Content>
         </Accordion>
     </Story>
 </Preview>
 
+We have also exposed `Accordion.Context`, so that you can find out the latest active state. Accordion context can be used like below:
 
-### Props
+```tsx
+const [isActive, setActiveState] = useContext(Accordion.Context);
+```
 
-<Props of={Accordion} />
+Type of Accordion Context is:
 
-#### Accordion Theme
-
-<Props of={ThemeInterface} />
+```tsx
+export type AccordionContextType = [
+    boolean /** Current active state */,
+    React.Dispatch<React.SetStateAction<boolean>> /** Function to be called to toggle the active state */
+];
+```

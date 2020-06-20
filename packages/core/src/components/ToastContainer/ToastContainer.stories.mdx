@@ -1,15 +1,105 @@
 import { ToastContainer } from './ToastContainer.component';
+import Button from '../Button';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './ToastContainer.stories';
+import { withKnobs, select } from '@storybook/addon-knobs';
+import { positions, ToastButtons, AddToast } from './ToastContainer.stories';
+import { addToast } from './ToastStore.ts';
+import { PersonAddIcon } from '@medly-components/icons';
 
-<Meta title="Core" component={ToastContainer} />
+<Meta
+    title="Core"
+    component={ToastContainer}
+    parameters={{
+        jest: ['ToastContainer.test.tsx'],
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=3672%3A0'
+        }
+    }}
+/>
 
 # ToastContainer
 
-### Shows all the toast at particular position on the page
+Raise a toast notification by triggering an action. You have to add `<ToastContainer/>` in your app at root level and then just use `addToast` function to raise the toast.
 
-<Story name="ToastContainer">{stories.Basic()}</Story>
+```tsx
+import { ToastContainer, addToast } from '@medly-components/core';
+
+export const App: React.FC = () => {
+    const handleClick = () => addToast({ variant: 'success', header: 'User Notification', message: 'User successfully added' });
+
+    return (
+        <>
+            <button onClick={handleClick}>Notify !</button>
+            <ToastContainer position="top" />
+        </>
+    );
+};
+```
+
+<Preview>
+    <Story name="ToastContainer" decorators={[withKnobs]}>
+        <>
+            <ToastContainer position={select('Position', positions, 'top')}></ToastContainer>
+            <Button
+                onClick={() => {
+                    addToast({
+                        variant: 'success',
+                        header: 'Success Notification',
+                        message: 'Lorem Ipsum is simply dummy text.'
+                    });
+                    addToast({
+                        variant: 'warning',
+                        header: 'Warning Notification',
+                        message: 'Lorem Ipsum is simply dummy text.'
+                    });
+                    addToast({
+                        variant: 'info',
+                        header: 'Info Notification',
+                        message: 'Lorem Ipsum is simply dummy text.'
+                    });
+                    addToast({
+                        variant: 'error',
+                        header: 'Error Notification',
+                        message: 'Lorem Ipsum is simply dummy text.'
+                    });
+                    addToast({
+                        variant: 'success',
+                        icon: PersonAddIcon,
+                        header: 'Custom Icon',
+                        action: { label: 'Take Action' },
+                        message: 'Lorem Ipsum is simply dummy text.'
+                    });
+                }}
+            >
+                Raise toast
+            </Button>
+        </>
+    </Story>
+</Preview>
 
 ### Props
 
 <Props of={ToastContainer} />
+
+## addToast
+
+Whenever you want to rasie a toast, you can just call this function with variant and message. There are other params are also avialble to customize your toast.
+
+#### Params
+
+<Props of={AddToast} />
+
+#### Custom Icon & Acion
+
+You can pass custom icon and action config to addToast function like below.
+
+```tsx
+addToast({
+    variant: 'success',
+    icon: PersonAddIcon,
+    header: 'Custom Icon',
+    action: { label: 'Take Action', onClick: even => {} },
+    message: 'Lorem Ipsum is simply dummy text.'
+});
+```

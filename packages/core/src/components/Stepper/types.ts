@@ -20,5 +20,5 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size'> {
 }
 
 export interface StepperStaticProps {
-    Step?: React.SFC<StepProps>;
+    Step?: React.FC<StepProps>;
 }

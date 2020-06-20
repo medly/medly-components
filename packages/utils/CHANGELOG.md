@@ -3,6 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/medly/medly-components/compare/@medly-components/utils@1.0.3...@medly-components/utils@1.0.4) (2020-06-19)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.0.3](https://github.com/medly/medly-components/compare/@medly-components/utils@1.0.2...@medly-components/utils@1.0.3) (2020-06-18)
+
+
+### Bug Fixes
+
+* fix the linting ([dc623a3](https://github.com/medly/medly-components/commit/dc623a313935f5be6feb3a480bfcb8d90eeca1d2))
+
+
+
+
+
+## [1.0.2](https://github.com/medly/medly-components/compare/@medly-components/utils@1.0.1...@medly-components/utils@1.0.2) (2020-06-16)
+
+
+### Bug Fixes
+
+* use FC instead of SFC, as it is depricated ([8c00154](https://github.com/medly/medly-components/commit/8c0015452d494e2b292a8f88c1bf5c739aacbab8))
+
+
+
+
+
+## [1.0.1](https://github.com/medly/medly-components/compare/@medly-components/utils@1.0.0-beta.26...@medly-components/utils@1.0.1) (2020-06-13)
+
+
+### Bug Fixes
+
+* remove semantic release ([#109](https://github.com/medly/medly-components/issues/109)) ([db2903d](https://github.com/medly/medly-components/commit/db2903d4b0e5b8dec576d3981b96775f8f4d6b28))
+
+
+
+
+
+# [1.0.0-beta.26](https://github.com/medly/medly-components/compare/@medly-components/utils@1.0.0-beta.25...@medly-components/utils@1.0.0-beta.26) (2020-06-11)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+# [1.0.0-beta.25](https://github.com/medly/medly-components/compare/@medly-components/utils@1.0.0-beta.24...@medly-components/utils@1.0.0-beta.25) (2020-06-09)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
 # [1.0.0-beta.24](https://github.com/medly/medly-components/compare/@medly-components/utils@1.0.0-beta.23...@medly-components/utils@1.0.0-beta.24) (2020-06-05)
 
 **Note:** Version bump only for package @medly-components/utils

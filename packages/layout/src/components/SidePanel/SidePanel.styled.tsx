@@ -15,7 +15,7 @@ export const SidePanelStyled = styled('aside')<SidePanelStyledProps>`
     background-color: ${({ theme }) => theme.sidePanel.bgColor};
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     transition: 0.2s;
     ${({ position }) => (position === 'left' ? leftPositioned() : rightPositioned())}

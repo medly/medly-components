@@ -1,14 +1,10 @@
-import { select } from '@storybook/addon-knobs';
-import React from 'react';
-import Toast from '../Toast';
-import { ToastContainer } from './ToastContainer.component';
+import { FC } from 'react';
+import { Toast } from './ToastStore';
 import { Props } from './types';
 
-const position: Props['position'][] = ['top-start', 'top', 'top-end', 'right', 'left', 'bottom-start', 'bottom', 'bottom-end'];
+export const positions: Props['position'][] = ['top-start', 'top', 'top-end', 'right', 'left', 'bottom-start', 'bottom', 'bottom-end'];
 
-export const Basic = () => (
-    <ToastContainer position={select('Position', position, 'bottom')}>
-        <Toast variant="success">Hello</Toast>
-        <Toast variant="success">Guest</Toast>
-    </ToastContainer>
-);
+export const AddToast: FC<Toast> = () => null;
+AddToast.defaultProps = {
+    timer: 5000
+};

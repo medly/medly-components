@@ -3,6 +3,77 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.4...@medly-components/forms@1.1.0) (2020-06-19)
+
+
+### Features
+
+* add transition on hover in checkbox & checkboxGroup component ([c8bbe2c](https://github.com/medly/medly-components/commit/c8bbe2c2a24f0f8b2ef5ced7c8dc1a2e6771fa5c))
+
+
+
+
+
+## [1.0.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.3...@medly-components/forms@1.0.4) (2020-06-18)
+
+
+### Bug Fixes
+
+* fix failing snapshots ([dbf0485](https://github.com/medly/medly-components/commit/dbf04855547eb4fc5b49950974403518d08ae28a))
+* fix sonar code smell in form component ([df65d57](https://github.com/medly/medly-components/commit/df65d576265d96b4985b627188d7a2a88f0eb65b))
+
+
+
+
+
+## [1.0.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.2...@medly-components/forms@1.0.3) (2020-06-17)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.0.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.1...@medly-components/forms@1.0.2) (2020-06-16)
+
+
+### Bug Fixes
+
+* fix form import ([#122](https://github.com/medly/medly-components/issues/122)) ([81ddf61](https://github.com/medly/medly-components/commit/81ddf61d8ea5323d065b667339d01f611a268b25))
+* use FC instead of SFC, as it is depricated ([8c00154](https://github.com/medly/medly-components/commit/8c0015452d494e2b292a8f88c1bf5c739aacbab8))
+
+
+
+
+
+## [1.0.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.0-beta.5...@medly-components/forms@1.0.1) (2020-06-13)
+
+
+### Bug Fixes
+
+* remove semantic release ([#109](https://github.com/medly/medly-components/issues/109)) ([db2903d](https://github.com/medly/medly-components/commit/db2903d4b0e5b8dec576d3981b96775f8f4d6b28))
+* update check icon and fix toast size issue ([d8a3a9b](https://github.com/medly/medly-components/commit/d8a3a9b73e2a35ac23e8679008537e1214c71fbe))
+
+
+
+
+
+# [1.0.0-beta.5](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.0-beta.4...@medly-components/forms@1.0.0-beta.5) (2020-06-11)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.0.0-beta.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.0-beta.3...@medly-components/forms@1.0.0-beta.4) (2020-06-09)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 # [1.0.0-beta.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.0-beta.2...@medly-components/forms@1.0.0-beta.3) (2020-06-05)
 
 

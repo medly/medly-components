@@ -1,11 +1,11 @@
-## PR Checklist
+### PR Checklist
 
 Please check if your PR fulfills the following requirements:
 
 -   [ ] Tests for the changes have been added (for bug fixes / features)
 -   [ ] Docs have been added / updated (for bug fixes / features)
 
-## PR Type
+### PR Type
 
 What kind of change does this PR introduce?
 
@@ -17,23 +17,26 @@ What kind of change does this PR introduce?
 -   [ ] Refactoring (no functional changes, no api changes)
 -   [ ] Build related changes
 -   [ ] CI related changes
+-   [ ] Performance improves
+-   [ ] Adding missing tests
 -   [ ] Documentation content changes
--   [ ] Application / infrastructure changes
 -   [ ] Other... Please describe:
 
-## What is the current behavior?
+### What is the current behavior?
 
 <!-- Please describe the current behavior that you are modifying, or link to a relevant issue. -->
 
-Issue Number: N/A
+## Fixes # (issue)
 
-## What is the new behavior?
+### What is the new behavior?
 
-## Does this PR introduce a breaking change?
+### Does this PR introduce a breaking change?
 
 -   [ ] Yes
 -   [ ] No
 
 <!-- If this PR contains a breaking change, please describe the impact and migration path for existing applications below. -->
 
-## Other information
+### Additional context
+
+Add any other context or screenshots about the feature pr here.

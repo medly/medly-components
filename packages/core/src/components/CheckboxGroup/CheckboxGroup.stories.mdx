@@ -2,11 +2,27 @@ import { CheckboxGroup } from './CheckboxGroup';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './CheckboxGroup.stories';
 
-<Meta title="Core" component={CheckboxGroup} />
+<Meta title="Core" component={CheckboxGroup} parameters={{ jest: ['CheckboxGroup.test.tsx'] }} />
 
 # CheckboxGroup
 
-### Displays group of checkboxes
+Set of checkbox component to let users to choose from multiple options. It's a controlled react component. So you have to have the handle state like below.
+
+```tsx
+const [values, setValues] = useState(['hyundai']);
+
+return (
+    <CheckboxGroup
+        label="Cars"
+        values={values}
+        onChange={setValues}
+        options={[
+            { value: 'honda', label: 'Honda' },
+            { value: 'hyundai', label: 'Hyundai' }
+        ]}
+    />
+);
+```
 
 <Preview withToolbar>
     <Story name="CheckboxGroup">{stories.Basic()}</Story>
@@ -18,4 +34,4 @@ import * as stories from './CheckboxGroup.stories';
 
 ### Theme
 
-Checkbox theme will be used for checkbox group.
+Checkbox theme will be used for CheckboxGroup.

@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/medly/medly-components/compare/@medly-components/theme@1.1.1...@medly-components/theme@1.1.2) (2020-06-19)
+
+**Note:** Version bump only for package @medly-components/theme
+
+
+
+
+
+## [1.1.1](https://github.com/medly/medly-components/compare/@medly-components/theme@1.1.0...@medly-components/theme@1.1.1) (2020-06-18)
+
+**Note:** Version bump only for package @medly-components/theme
+
+
+
+
+
+# [1.1.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.0.0-beta.23...@medly-components/theme@1.1.0) (2020-06-13)
+
+
+### Bug Fixes
+
+* remove semantic release ([#109](https://github.com/medly/medly-components/issues/109)) ([db2903d](https://github.com/medly/medly-components/commit/db2903d4b0e5b8dec576d3981b96775f8f4d6b28))
+
+
+### Features
+
+* add hover for close icon ([540c442](https://github.com/medly/medly-components/commit/540c442e3d0c97c93148e1da7d032c0937aa70bd))
+* style changes for toast components as per new design ([cfe8a23](https://github.com/medly/medly-components/commit/cfe8a23054e733e59b57d7648378b22be802964e))
+
+
+
+
+
+# [1.0.0-beta.23](https://github.com/medly/medly-components/compare/@medly-components/theme@1.0.0-beta.22...@medly-components/theme@1.0.0-beta.23) (2020-06-11)
+
+
+### Features
+
+* add solid and flat variant in icons ([0eaf69c](https://github.com/medly/medly-components/commit/0eaf69c159e81360cecb9fa126dd2d158289afb1))
+
+
+
+
+
+# [1.0.0-beta.22](https://github.com/medly/medly-components/compare/@medly-components/theme@1.0.0-beta.21...@medly-components/theme@1.0.0-beta.22) (2020-06-09)
+
+
+### Features
+
+* add gradient in button ([689a4af](https://github.com/medly/medly-components/commit/689a4af02c8659e86a56a48f837967c7daaacfc3))
+* **core:** accordion component with enhancements ([6bfdd38](https://github.com/medly/medly-components/commit/6bfdd3893b25920830c818d15584a80587bc8b25))
+
+
+
+
+
 # [1.0.0-beta.21](https://github.com/medly/medly-components/compare/@medly-components/theme@1.0.0-beta.20...@medly-components/theme@1.0.0-beta.21) (2020-06-05)
 
 

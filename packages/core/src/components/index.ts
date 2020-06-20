@@ -1,3 +1,4 @@
+export { default as Accordion } from './Accordion';
 export { default as Avatar } from './Avatar';
 export { default as BreadCrumbs } from './BreadCrumbs';
 export { default as Button } from './Button';
@@ -29,4 +30,6 @@ export { default as Text } from './Text';
 export { default as TextField } from './TextField';
 export { default as Toast } from './Toast';
 export { default as ToastContainer } from './ToastContainer';
+export { addToast } from './ToastContainer/ToastStore';
 export { default as Toggle } from './Toggle';
+

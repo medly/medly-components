@@ -6,7 +6,7 @@ import TabPanel from './TabPanel';
 import * as Styled from './Tabs.styled';
 import { Props, StaticProps } from './types';
 
-export const Tabs: React.SFC<Props> & StaticProps & WithStyle = React.memo(
+export const Tabs: React.FC<Props> & StaticProps & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { defaultActive, active, onChange, children, ...restProps } = props,
             tabsId = props.id || 'medly-tabs',

@@ -2,19 +2,19 @@ import { Text } from '@medly-components/core';
 import { DashboardIcon, DateRangeIcon, FolderOpenIcon, InsertChartIcon, SettingsIcon } from '@medly-components/icons';
 import { defaultTheme, SideNavTheme } from '@medly-components/theme';
 import { action } from '@storybook/addon-actions';
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 import Header from './MedlySidenavHeader';
 import { SideNav } from './SideNav';
 import { Context } from './SideNav.context';
 import { SideNavStaticProps } from './types';
 
-export const Theme: SFC<SideNavTheme> = () => null;
+export const Theme: FC<SideNavTheme> = () => null;
 Theme.defaultProps = {
     ...defaultTheme.sideNav
 };
 
-export const StaticProps: SFC<SideNavStaticProps> = () => null;
-export const SidenavContextTheme: SFC<Context> = () => null;
+export const StaticProps: FC<SideNavStaticProps> = () => null;
+export const SidenavContextTheme: FC<Context> = () => null;
 
 export const Basic = () => (
     <SideNav onChange={action('NavItem clicked')} defaultActive="/">

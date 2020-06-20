@@ -1,189 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component should render properly with "M" size 1`] = `
-.c2 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.6rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-}
-
-.c0 {
-  border: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
-  border-radius: 0.8rem;
-  color: #ffffff;
-  background: #005AEE;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c0:hover {
-  cursor: pointer;
-}
-
-.c0:focus {
-  outline: none;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-}
-
-.c0 .sc-AxjAm * {
-  fill: #ffffff;
-}
-
-.c0:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
-}
-
-.c0:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
-}
-
-.c0 .sc-AxjAm + .c1 {
-  margin-left: 0.8rem;
-}
-
-.c0 .c1 + .sc-AxjAm {
-  margin-left: 0.8rem;
-}
-
-<div>
-  <button
-    class="c0"
-    color="default"
-    type="button"
-  >
-    <span
-      class="c1 c2"
-    >
-      Flat Button
-    </span>
-  </button>
-</div>
-`;
-
-exports[`Button component should render properly with "S" size 1`] = `
-.c2 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-}
-
-.c0 {
-  border: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  padding: 0.8rem 2.4rem 1rem 2.4rem;
-  border-radius: 0.8rem;
-  color: #ffffff;
-  background: #005AEE;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c0:hover {
-  cursor: pointer;
-}
-
-.c0:focus {
-  outline: none;
-}
-
-.c0:disabled {
-  cursor: not-allowed;
-}
-
-.c0 .sc-AxjAm * {
-  fill: #ffffff;
-}
-
-.c0:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
-}
-
-.c0:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
-}
-
-.c0 .sc-AxjAm + .c1 {
-  margin-left: 0.8rem;
-}
-
-.c0 .c1 + .sc-AxjAm {
-  margin-left: 0.8rem;
-}
-
-<div>
-  <button
-    class="c0"
-    color="default"
-    type="button"
-  >
-    <span
-      class="c1 c2"
-    >
-      Flat Button
-    </span>
-  </button>
-</div>
-`;
-
 exports[`Button component should render properly with "circle" edges 1`] = `
 .c2 {
   margin: 0;
@@ -199,6 +15,7 @@ exports[`Button component should render properly with "circle" edges 1`] = `
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -206,12 +23,10 @@ exports[`Button component should render properly with "circle" edges 1`] = `
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1.6rem;
   border-radius: 50%;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -226,6 +41,11 @@ exports[`Button component should render properly with "circle" edges 1`] = `
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -238,19 +58,30 @@ exports[`Button component should render properly with "circle" edges 1`] = `
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
+.c0:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #dfe4e9;
+}
+
+.c0:not(:disabled) {
+  color: #ffffff;
+}
+
+.c0:not(:disabled) .sc-AxjAm * {
   fill: #ffffff;
 }
 
-.c0:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c0:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c0:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c0:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c0 .sc-AxjAm + .c1 {
@@ -291,6 +122,7 @@ exports[`Button component should render properly with "flat" variant and "confir
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -298,12 +130,11 @@ exports[`Button component should render properly with "flat" variant and "confir
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   background: transparent;
-  color: #008000;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -318,6 +149,11 @@ exports[`Button component should render properly with "flat" variant and "confir
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -330,20 +166,49 @@ exports[`Button component should render properly with "flat" variant and "confir
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
-  fill: #008000;
-}
-
-.c0:hover {
-  color: #1A8D1A;
-}
-
-.c0:hover .sc-AxjAm * {
-  fill: #1A8D1A;
+.c0::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  bottom: 1.05rem;
+  left: 50%;
+  background: #1A8D1A;
+  height: 0.15rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.15rem;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 .c0:disabled {
   color: #b0bcc8;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #b0bcc8;
+}
+
+.c0:not(:disabled):not(:hover) {
+  color: #008000;
+}
+
+.c0:not(:disabled):not(:hover) .sc-AxjAm * {
+  fill: #008000;
+}
+
+.c0:not(:disabled):hover {
+  color: #1A8D1A;
+}
+
+.c0:not(:disabled):hover .sc-AxjAm * {
+  fill: #1A8D1A;
+}
+
+.c0:not(:disabled):hover::after {
+  width: calc(100% - 4.8rem);
 }
 
 .c0 .sc-AxjAm + .c1 {
@@ -363,7 +228,7 @@ exports[`Button component should render properly with "flat" variant and "confir
     <span
       class="c1 c2"
     >
-      Flat Button
+      Button
     </span>
   </button>
 </div>
@@ -384,6 +249,7 @@ exports[`Button component should render properly with "flat" variant and "defaul
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -391,12 +257,11 @@ exports[`Button component should render properly with "flat" variant and "defaul
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   background: transparent;
-  color: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -411,6 +276,11 @@ exports[`Button component should render properly with "flat" variant and "defaul
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -423,20 +293,49 @@ exports[`Button component should render properly with "flat" variant and "defaul
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
-  fill: #005AEE;
-}
-
-.c0:hover {
-  color: #1A6BF0;
-}
-
-.c0:hover .sc-AxjAm * {
-  fill: #1A6BF0;
+.c0::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  bottom: 1.05rem;
+  left: 50%;
+  background: #1A6BF0;
+  height: 0.15rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.15rem;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 .c0:disabled {
   color: #b0bcc8;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #b0bcc8;
+}
+
+.c0:not(:disabled):not(:hover) {
+  color: #005AEE;
+}
+
+.c0:not(:disabled):not(:hover) .sc-AxjAm * {
+  fill: #005AEE;
+}
+
+.c0:not(:disabled):hover {
+  color: #1A6BF0;
+}
+
+.c0:not(:disabled):hover .sc-AxjAm * {
+  fill: #1A6BF0;
+}
+
+.c0:not(:disabled):hover::after {
+  width: calc(100% - 4.8rem);
 }
 
 .c0 .sc-AxjAm + .c1 {
@@ -456,7 +355,7 @@ exports[`Button component should render properly with "flat" variant and "defaul
     <span
       class="c1 c2"
     >
-      Flat Button
+      Button
     </span>
   </button>
 </div>
@@ -477,6 +376,7 @@ exports[`Button component should render properly with "flat" variant and "error"
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -484,12 +384,11 @@ exports[`Button component should render properly with "flat" variant and "error"
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
   background: transparent;
-  color: #cc0000;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -504,6 +403,11 @@ exports[`Button component should render properly with "flat" variant and "error"
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -516,20 +420,49 @@ exports[`Button component should render properly with "flat" variant and "error"
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
-  fill: #cc0000;
-}
-
-.c0:hover {
-  color: #D11A1A;
-}
-
-.c0:hover .sc-AxjAm * {
-  fill: #D11A1A;
+.c0::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  bottom: 1.05rem;
+  left: 50%;
+  background: #D11A1A;
+  height: 0.15rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.15rem;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 .c0:disabled {
   color: #b0bcc8;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #b0bcc8;
+}
+
+.c0:not(:disabled):not(:hover) {
+  color: #cc0000;
+}
+
+.c0:not(:disabled):not(:hover) .sc-AxjAm * {
+  fill: #cc0000;
+}
+
+.c0:not(:disabled):hover {
+  color: #D11A1A;
+}
+
+.c0:not(:disabled):hover .sc-AxjAm * {
+  fill: #D11A1A;
+}
+
+.c0:not(:disabled):hover::after {
+  width: calc(100% - 4.8rem);
 }
 
 .c0 .sc-AxjAm + .c1 {
@@ -549,7 +482,7 @@ exports[`Button component should render properly with "flat" variant and "error"
     <span
       class="c1 c2"
     >
-      Flat Button
+      Button
     </span>
   </button>
 </div>
@@ -570,6 +503,7 @@ exports[`Button component should render properly with "flat" variant should rend
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -577,12 +511,11 @@ exports[`Button component should render properly with "flat" variant should rend
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
-  color: #ffffff;
-  background: #005AEE;
+  background: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -597,6 +530,11 @@ exports[`Button component should render properly with "flat" variant should rend
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -609,19 +547,49 @@ exports[`Button component should render properly with "flat" variant should rend
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
-  fill: #ffffff;
-}
-
-.c0:hover {
+.c0::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  bottom: 1.05rem;
+  left: 50%;
   background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+  height: 0.15rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.15rem;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 .c0:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+  color: #b0bcc8;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #b0bcc8;
+}
+
+.c0:not(:disabled):not(:hover) {
+  color: #005AEE;
+}
+
+.c0:not(:disabled):not(:hover) .sc-AxjAm * {
+  fill: #005AEE;
+}
+
+.c0:not(:disabled):hover {
+  color: #1A6BF0;
+}
+
+.c0:not(:disabled):hover .sc-AxjAm * {
+  fill: #1A6BF0;
+}
+
+.c0:not(:disabled):hover::after {
+  width: calc(100% - 4.8rem);
 }
 
 .c0 .sc-AxjAm + .c1 {
@@ -642,7 +610,261 @@ exports[`Button component should render properly with "flat" variant should rend
     <span
       class="c1 c2"
     >
-      Solid Button
+      Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "flat" variant should render properly with "M" size 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  border-radius: 0.8rem;
+  background: transparent;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  bottom: 1.05rem;
+  left: 50%;
+  background: #1A6BF0;
+  height: 0.15rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.15rem;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.c0:disabled {
+  color: #b0bcc8;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #b0bcc8;
+}
+
+.c0:not(:disabled):not(:hover) {
+  color: #005AEE;
+}
+
+.c0:not(:disabled):not(:hover) .sc-AxjAm * {
+  fill: #005AEE;
+}
+
+.c0:not(:disabled):hover {
+  color: #1A6BF0;
+}
+
+.c0:not(:disabled):hover .sc-AxjAm * {
+  fill: #1A6BF0;
+}
+
+.c0:not(:disabled):hover::after {
+  width: calc(100% - 4.8rem);
+}
+
+.c0 .sc-AxjAm + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AxjAm {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="default"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "flat" variant should render properly with "S" size 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c0 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 0.8rem 2.4rem 1rem 2.4rem;
+  border-radius: 0.8rem;
+  background: transparent;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  bottom: 0.85rem;
+  left: 50%;
+  background: #1A6BF0;
+  height: 0.15rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.15rem;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.c0:disabled {
+  color: #b0bcc8;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #b0bcc8;
+}
+
+.c0:not(:disabled):not(:hover) {
+  color: #005AEE;
+}
+
+.c0:not(:disabled):not(:hover) .sc-AxjAm * {
+  fill: #005AEE;
+}
+
+.c0:not(:disabled):hover {
+  color: #1A6BF0;
+}
+
+.c0:not(:disabled):hover .sc-AxjAm * {
+  fill: #1A6BF0;
+}
+
+.c0:not(:disabled):hover::after {
+  width: calc(100% - 4.8rem);
+}
+
+.c0 .sc-AxjAm + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AxjAm {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="default"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Button
     </span>
   </button>
 </div>
@@ -663,6 +885,7 @@ exports[`Button component should render properly with "outlined" variant and "co
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -670,13 +893,11 @@ exports[`Button component should render properly with "outlined" variant and "co
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  padding: calc(1rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1.2rem - 0.2rem) calc(2.4rem - 0.2rem);
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1.2rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
-  border: 0.2rem solid;
-  color: #008000;
-  border-color: #008000;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -691,6 +912,11 @@ exports[`Button component should render properly with "outlined" variant and "co
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -703,28 +929,36 @@ exports[`Button component should render properly with "outlined" variant and "co
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
-  fill: #008000;
-}
-
-.c0:hover {
-  color: #1A8D1A;
-  border-color: #1A8D1A;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,128,0,0.35);
-}
-
-.c0:hover .sc-AxjAm * {
-  fill: #1A8D1A;
-}
-
 .c0:disabled {
-  box-shadow: none;
+  border: 0.1rem solid;
   color: #b0bcc8;
   border-color: #b0bcc8;
 }
 
 .c0:disabled .sc-AxjAm * {
   fill: #b0bcc8;
+}
+
+.c0:not(:disabled):not(:hover) {
+  border: 0.1rem solid;
+  color: #008000;
+  border-color: #008000;
+}
+
+.c0:not(:disabled):not(:hover) .sc-AxjAm * {
+  fill: #008000;
+}
+
+.c0:not(:disabled):hover {
+  border: 0.2rem solid;
+  color: #1A8D1A;
+  border-color: #1A8D1A;
+  padding: calc(1rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1.2rem - 0.2rem) calc(2.4rem - 0.2rem);
+  box-shadow: 0 0.4rem 0.8rem rgba(0,128,0,0.2);
+}
+
+.c0:not(:disabled):hover .sc-AxjAm * {
+  fill: #1A8D1A;
 }
 
 .c0 .sc-AxjAm + .c1 {
@@ -744,7 +978,7 @@ exports[`Button component should render properly with "outlined" variant and "co
     <span
       class="c1 c2"
     >
-      Flat Button
+      Button
     </span>
   </button>
 </div>
@@ -765,6 +999,7 @@ exports[`Button component should render properly with "outlined" variant and "de
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -772,13 +1007,11 @@ exports[`Button component should render properly with "outlined" variant and "de
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  padding: calc(1rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1.2rem - 0.2rem) calc(2.4rem - 0.2rem);
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1.2rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
-  border: 0.2rem solid;
-  color: #005AEE;
-  border-color: #005AEE;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -793,6 +1026,11 @@ exports[`Button component should render properly with "outlined" variant and "de
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -805,28 +1043,36 @@ exports[`Button component should render properly with "outlined" variant and "de
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
-  fill: #005AEE;
-}
-
-.c0:hover {
-  color: #1A6BF0;
-  border-color: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
-}
-
-.c0:hover .sc-AxjAm * {
-  fill: #1A6BF0;
-}
-
 .c0:disabled {
-  box-shadow: none;
+  border: 0.1rem solid;
   color: #b0bcc8;
   border-color: #b0bcc8;
 }
 
 .c0:disabled .sc-AxjAm * {
   fill: #b0bcc8;
+}
+
+.c0:not(:disabled):not(:hover) {
+  border: 0.1rem solid;
+  color: #005AEE;
+  border-color: #005AEE;
+}
+
+.c0:not(:disabled):not(:hover) .sc-AxjAm * {
+  fill: #005AEE;
+}
+
+.c0:not(:disabled):hover {
+  border: 0.2rem solid;
+  color: #1A6BF0;
+  border-color: #1A6BF0;
+  padding: calc(1rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1.2rem - 0.2rem) calc(2.4rem - 0.2rem);
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+}
+
+.c0:not(:disabled):hover .sc-AxjAm * {
+  fill: #1A6BF0;
 }
 
 .c0 .sc-AxjAm + .c1 {
@@ -846,7 +1092,7 @@ exports[`Button component should render properly with "outlined" variant and "de
     <span
       class="c1 c2"
     >
-      Flat Button
+      Button
     </span>
   </button>
 </div>
@@ -867,6 +1113,7 @@ exports[`Button component should render properly with "outlined" variant and "er
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -874,13 +1121,11 @@ exports[`Button component should render properly with "outlined" variant and "er
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  padding: calc(1rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1.2rem - 0.2rem) calc(2.4rem - 0.2rem);
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1.2rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
-  border: 0.2rem solid;
-  color: #cc0000;
-  border-color: #cc0000;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -895,6 +1140,11 @@ exports[`Button component should render properly with "outlined" variant and "er
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -907,28 +1157,36 @@ exports[`Button component should render properly with "outlined" variant and "er
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
-  fill: #cc0000;
-}
-
-.c0:hover {
-  color: #D11A1A;
-  border-color: #D11A1A;
-  box-shadow: 0 0.4rem 0.8rem rgba(204,0,0,0.35);
-}
-
-.c0:hover .sc-AxjAm * {
-  fill: #D11A1A;
-}
-
 .c0:disabled {
-  box-shadow: none;
+  border: 0.1rem solid;
   color: #b0bcc8;
   border-color: #b0bcc8;
 }
 
 .c0:disabled .sc-AxjAm * {
   fill: #b0bcc8;
+}
+
+.c0:not(:disabled):not(:hover) {
+  border: 0.1rem solid;
+  color: #cc0000;
+  border-color: #cc0000;
+}
+
+.c0:not(:disabled):not(:hover) .sc-AxjAm * {
+  fill: #cc0000;
+}
+
+.c0:not(:disabled):hover {
+  border: 0.2rem solid;
+  color: #D11A1A;
+  border-color: #D11A1A;
+  padding: calc(1rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1.2rem - 0.2rem) calc(2.4rem - 0.2rem);
+  box-shadow: 0 0.4rem 0.8rem rgba(204,0,0,0.2);
+}
+
+.c0:not(:disabled):hover .sc-AxjAm * {
+  fill: #D11A1A;
 }
 
 .c0 .sc-AxjAm + .c1 {
@@ -948,7 +1206,7 @@ exports[`Button component should render properly with "outlined" variant and "er
     <span
       class="c1 c2"
     >
-      Flat Button
+      Button
     </span>
   </button>
 </div>
@@ -969,6 +1227,7 @@ exports[`Button component should render properly with "outlined" variant should 
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -976,12 +1235,11 @@ exports[`Button component should render properly with "outlined" variant should 
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1.2rem - 0.1rem) calc(2.4rem - 0.1rem);
   border-radius: 0.8rem;
-  color: #ffffff;
-  background: #005AEE;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -996,6 +1254,11 @@ exports[`Button component should render properly with "outlined" variant should 
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -1008,19 +1271,36 @@ exports[`Button component should render properly with "outlined" variant should 
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
-  fill: #ffffff;
-}
-
-.c0:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
-}
-
 .c0:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+  border: 0.1rem solid;
+  color: #b0bcc8;
+  border-color: #b0bcc8;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #b0bcc8;
+}
+
+.c0:not(:disabled):not(:hover) {
+  border: 0.1rem solid;
+  color: #005AEE;
+  border-color: #005AEE;
+}
+
+.c0:not(:disabled):not(:hover) .sc-AxjAm * {
+  fill: #005AEE;
+}
+
+.c0:not(:disabled):hover {
+  border: 0.2rem solid;
+  color: #1A6BF0;
+  border-color: #1A6BF0;
+  padding: calc(1rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1.2rem - 0.2rem) calc(2.4rem - 0.2rem);
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+}
+
+.c0:not(:disabled):hover .sc-AxjAm * {
+  fill: #1A6BF0;
 }
 
 .c0 .sc-AxjAm + .c1 {
@@ -1041,7 +1321,235 @@ exports[`Button component should render properly with "outlined" variant should 
     <span
       class="c1 c2"
     >
-      Solid Button
+      Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "outlined" variant should render properly with "M" size 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: calc(1rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1.2rem - 0.1rem) calc(2.4rem - 0.1rem);
+  border-radius: 0.8rem;
+  background-color: transparent;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0:disabled {
+  border: 0.1rem solid;
+  color: #b0bcc8;
+  border-color: #b0bcc8;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #b0bcc8;
+}
+
+.c0:not(:disabled):not(:hover) {
+  border: 0.1rem solid;
+  color: #005AEE;
+  border-color: #005AEE;
+}
+
+.c0:not(:disabled):not(:hover) .sc-AxjAm * {
+  fill: #005AEE;
+}
+
+.c0:not(:disabled):hover {
+  border: 0.2rem solid;
+  color: #1A6BF0;
+  border-color: #1A6BF0;
+  padding: calc(1rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1.2rem - 0.2rem) calc(2.4rem - 0.2rem);
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+}
+
+.c0:not(:disabled):hover .sc-AxjAm * {
+  fill: #1A6BF0;
+}
+
+.c0 .sc-AxjAm + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AxjAm {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="default"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "outlined" variant should render properly with "S" size 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c0 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
+  border-radius: 0.8rem;
+  background-color: transparent;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0:disabled {
+  border: 0.1rem solid;
+  color: #b0bcc8;
+  border-color: #b0bcc8;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #b0bcc8;
+}
+
+.c0:not(:disabled):not(:hover) {
+  border: 0.1rem solid;
+  color: #005AEE;
+  border-color: #005AEE;
+}
+
+.c0:not(:disabled):not(:hover) .sc-AxjAm * {
+  fill: #005AEE;
+}
+
+.c0:not(:disabled):hover {
+  border: 0.2rem solid;
+  color: #1A6BF0;
+  border-color: #1A6BF0;
+  padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+}
+
+.c0:not(:disabled):hover .sc-AxjAm * {
+  fill: #1A6BF0;
+}
+
+.c0 .sc-AxjAm + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AxjAm {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="default"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Button
     </span>
   </button>
 </div>
@@ -1062,6 +1570,7 @@ exports[`Button component should render properly with "rounded" edges 1`] = `
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1069,12 +1578,10 @@ exports[`Button component should render properly with "rounded" edges 1`] = `
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 100rem;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1089,6 +1596,11 @@ exports[`Button component should render properly with "rounded" edges 1`] = `
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -1101,19 +1613,30 @@ exports[`Button component should render properly with "rounded" edges 1`] = `
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
+.c0:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #dfe4e9;
+}
+
+.c0:not(:disabled) {
+  color: #ffffff;
+}
+
+.c0:not(:disabled) .sc-AxjAm * {
   fill: #ffffff;
 }
 
-.c0:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c0:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c0:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c0:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c0 .sc-AxjAm + .c1 {
@@ -1154,6 +1677,7 @@ exports[`Button component should render properly with "solid" variant and "confi
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1161,12 +1685,10 @@ exports[`Button component should render properly with "solid" variant and "confi
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
-  color: #ffffff;
-  background: #008000;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1181,6 +1703,11 @@ exports[`Button component should render properly with "solid" variant and "confi
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -1193,19 +1720,30 @@ exports[`Button component should render properly with "solid" variant and "confi
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
+.c0:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #dfe4e9;
+}
+
+.c0:not(:disabled) {
+  color: #ffffff;
+}
+
+.c0:not(:disabled) .sc-AxjAm * {
   fill: #ffffff;
 }
 
-.c0:hover {
-  background: #1A8D1A;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,128,0,0.35);
+.c0:not(:disabled):not(:hover) {
+  background: #008000;
 }
 
-.c0:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c0:not(:disabled):hover {
+  background: #1A8D1A;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,128,0,0.2);
 }
 
 .c0 .sc-AxjAm + .c1 {
@@ -1225,7 +1763,7 @@ exports[`Button component should render properly with "solid" variant and "confi
     <span
       class="c1 c2"
     >
-      Flat Button
+      Button
     </span>
   </button>
 </div>
@@ -1246,6 +1784,7 @@ exports[`Button component should render properly with "solid" variant and "defau
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1253,12 +1792,10 @@ exports[`Button component should render properly with "solid" variant and "defau
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1273,6 +1810,11 @@ exports[`Button component should render properly with "solid" variant and "defau
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -1285,19 +1827,30 @@ exports[`Button component should render properly with "solid" variant and "defau
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
+.c0:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #dfe4e9;
+}
+
+.c0:not(:disabled) {
+  color: #ffffff;
+}
+
+.c0:not(:disabled) .sc-AxjAm * {
   fill: #ffffff;
 }
 
-.c0:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c0:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c0:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c0:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c0 .sc-AxjAm + .c1 {
@@ -1317,7 +1870,7 @@ exports[`Button component should render properly with "solid" variant and "defau
     <span
       class="c1 c2"
     >
-      Flat Button
+      Button
     </span>
   </button>
 </div>
@@ -1338,6 +1891,7 @@ exports[`Button component should render properly with "solid" variant and "error
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1345,12 +1899,10 @@ exports[`Button component should render properly with "solid" variant and "error
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
-  color: #ffffff;
-  background: #cc0000;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1365,6 +1917,11 @@ exports[`Button component should render properly with "solid" variant and "error
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -1377,19 +1934,30 @@ exports[`Button component should render properly with "solid" variant and "error
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
+.c0:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #dfe4e9;
+}
+
+.c0:not(:disabled) {
+  color: #ffffff;
+}
+
+.c0:not(:disabled) .sc-AxjAm * {
   fill: #ffffff;
 }
 
-.c0:hover {
-  background: #D11A1A;
-  box-shadow: 0 0.4rem 0.8rem rgba(204,0,0,0.35);
+.c0:not(:disabled):not(:hover) {
+  background: #cc0000;
 }
 
-.c0:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c0:not(:disabled):hover {
+  background: #D11A1A;
+  box-shadow: 0 0.4rem 0.8rem rgba(204,0,0,0.2);
 }
 
 .c0 .sc-AxjAm + .c1 {
@@ -1409,7 +1977,7 @@ exports[`Button component should render properly with "solid" variant and "error
     <span
       class="c1 c2"
     >
-      Flat Button
+      Button
     </span>
   </button>
 </div>
@@ -1430,6 +1998,7 @@ exports[`Button component should render properly with "solid" variant should ren
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1437,12 +2006,10 @@ exports[`Button component should render properly with "solid" variant should ren
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1457,6 +2024,11 @@ exports[`Button component should render properly with "solid" variant should ren
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -1469,19 +2041,30 @@ exports[`Button component should render properly with "solid" variant should ren
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
+.c0:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #dfe4e9;
+}
+
+.c0:not(:disabled) {
+  color: #ffffff;
+}
+
+.c0:not(:disabled) .sc-AxjAm * {
   fill: #ffffff;
 }
 
-.c0:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c0:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c0:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c0:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c0 .sc-AxjAm + .c1 {
@@ -1502,7 +2085,221 @@ exports[`Button component should render properly with "solid" variant should ren
     <span
       class="c1 c2"
     >
-      Solid Button
+      Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "solid" variant should render properly with "M" size 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  border-radius: 0.8rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #dfe4e9;
+}
+
+.c0:not(:disabled) {
+  color: #ffffff;
+}
+
+.c0:not(:disabled) .sc-AxjAm * {
+  fill: #ffffff;
+}
+
+.c0:not(:disabled):not(:hover) {
+  background: #005AEE;
+}
+
+.c0:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+}
+
+.c0 .sc-AxjAm + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AxjAm {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="default"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component should render properly with "solid" variant should render properly with "S" size 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c0 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 0.8rem 2.4rem 1rem 2.4rem;
+  border-radius: 0.8rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #dfe4e9;
+}
+
+.c0:not(:disabled) {
+  color: #ffffff;
+}
+
+.c0:not(:disabled) .sc-AxjAm * {
+  fill: #ffffff;
+}
+
+.c0:not(:disabled):not(:hover) {
+  background: #005AEE;
+}
+
+.c0:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+}
+
+.c0 .sc-AxjAm + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AxjAm {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="default"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Button
     </span>
   </button>
 </div>
@@ -1523,6 +2320,7 @@ exports[`Button component should render properly with "square" edges 1`] = `
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1530,12 +2328,10 @@ exports[`Button component should render properly with "square" edges 1`] = `
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1550,6 +2346,11 @@ exports[`Button component should render properly with "square" edges 1`] = `
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -1562,19 +2363,30 @@ exports[`Button component should render properly with "square" edges 1`] = `
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
+.c0:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #dfe4e9;
+}
+
+.c0:not(:disabled) {
+  color: #ffffff;
+}
+
+.c0:not(:disabled) .sc-AxjAm * {
   fill: #ffffff;
 }
 
-.c0:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c0:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c0:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c0:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c0 .sc-AxjAm + .c1 {
@@ -1602,10 +2414,11 @@ exports[`Button component should render properly with "square" edges 1`] = `
 
 exports[`Button component should render properly with any icon at the beginning of the text 1`] = `
 .c2 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c2 * {
@@ -1627,6 +2440,7 @@ exports[`Button component should render properly with any icon at the beginning 
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1634,12 +2448,10 @@ exports[`Button component should render properly with any icon at the beginning 
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1654,6 +2466,11 @@ exports[`Button component should render properly with any icon at the beginning 
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -1666,19 +2483,30 @@ exports[`Button component should render properly with any icon at the beginning 
   cursor: not-allowed;
 }
 
-.c0 .c1 * {
+.c0:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c0:disabled .c1 * {
+  fill: #dfe4e9;
+}
+
+.c0:not(:disabled) {
+  color: #ffffff;
+}
+
+.c0:not(:disabled) .c1 * {
   fill: #ffffff;
 }
 
-.c0:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c0:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c0:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c0:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c0 .c1 + .c3 {
@@ -1720,10 +2548,11 @@ exports[`Button component should render properly with any icon at the beginning 
 
 exports[`Button component should render properly with any icon at the end of the text 1`] = `
 .c2 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c2 * {
@@ -1745,6 +2574,7 @@ exports[`Button component should render properly with any icon at the end of the
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1752,12 +2582,10 @@ exports[`Button component should render properly with any icon at the end of the
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1772,6 +2600,11 @@ exports[`Button component should render properly with any icon at the end of the
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -1784,19 +2617,30 @@ exports[`Button component should render properly with any icon at the end of the
   cursor: not-allowed;
 }
 
-.c0 .c1 * {
+.c0:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c0:disabled .c1 * {
+  fill: #dfe4e9;
+}
+
+.c0:not(:disabled) {
+  color: #ffffff;
+}
+
+.c0:not(:disabled) .c1 * {
   fill: #ffffff;
 }
 
-.c0:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c0:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c0:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c0:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c0 .c1 + .c3 {
@@ -1836,6 +2680,113 @@ exports[`Button component should render properly with any icon at the end of the
 </div>
 `;
 
+exports[`Button component should render properly with gradient 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  border-radius: 0.8rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #dfe4e9;
+}
+
+.c0:not(:disabled) {
+  color: #ffffff;
+}
+
+.c0:not(:disabled) .sc-AxjAm * {
+  fill: #ffffff;
+}
+
+.c0:not(:disabled):not(:hover) {
+  background: linear-gradient(to right,#005AEE,#1E9BD7);
+}
+
+.c0:not(:disabled):hover {
+  background: linear-gradient(to right,#1A6BF0,#35A5DB);
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+}
+
+.c0 .sc-AxjAm + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AxjAm {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    color="default"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Gradient Button
+    </span>
+  </button>
+</div>
+`;
+
 exports[`Button component should wrap children into Text component when rendering string or number 1`] = `
 .c2 {
   margin: 0;
@@ -1851,6 +2802,7 @@ exports[`Button component should wrap children into Text component when renderin
 
 .c0 {
   border: none;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1858,12 +2810,10 @@ exports[`Button component should wrap children into Text component when renderin
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
-  color: #ffffff;
-  background: #005AEE;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1878,6 +2828,11 @@ exports[`Button component should wrap children into Text component when renderin
   align-items: center;
 }
 
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
 .c0:hover {
   cursor: pointer;
 }
@@ -1890,19 +2845,30 @@ exports[`Button component should wrap children into Text component when renderin
   cursor: not-allowed;
 }
 
-.c0 .sc-AxjAm * {
+.c0:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #dfe4e9;
+}
+
+.c0:not(:disabled) {
+  color: #ffffff;
+}
+
+.c0:not(:disabled) .sc-AxjAm * {
   fill: #ffffff;
 }
 
-.c0:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+.c0:not(:disabled):not(:hover) {
+  background: #005AEE;
 }
 
-.c0:disabled {
-  box-shadow: none;
-  color: #98A7B7;
-  background: #dfe4e9;
+.c0:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c0 .sc-AxjAm + .c1 {

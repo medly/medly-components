@@ -7,7 +7,7 @@ import { Popover, PopoverWrapper } from '../Popover';
 import * as Styled from './DatePicker.styled';
 import { Props } from './types';
 
-export const DatePicker: React.SFC<Props> & WithStyle = React.memo(props => {
+export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
     const {
             value,
             onChange,

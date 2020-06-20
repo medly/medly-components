@@ -6,7 +6,7 @@ import Options from '../Options';
 import { OptionStyled } from './Option.styled';
 import { OptionProps } from './types';
 
-const Option: React.SFC<OptionProps> & WithStyle = React.memo(props => {
+const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
     const ref = useRef(null),
         [areOptionsVisible, setOptionsVisibilityState] = useState(false),
         { value, label, disabled, selected, onClick } = props,

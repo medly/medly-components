@@ -1,9 +1,9 @@
 export const iconTemplate = (iconName: string, assetPath: string) => `import { WithStyle } from '@medly-components/utils';
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 import ${iconName}Svg from '${assetPath}';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
-const ${iconName}: SFC<SvgIconProps> & WithStyle = React.memo(props => {
+const ${iconName}: FC<SvgIconProps> & WithStyle = React.memo(props => {
     const { size, withHoverEffect, color, margin, ...restProps } = props;
     return (
         <SvgIcon {...{ size, withHoverEffect, color, margin, ...restProps }}>

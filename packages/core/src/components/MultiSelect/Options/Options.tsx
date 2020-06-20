@@ -7,7 +7,7 @@ import { Option } from '../types';
 import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
-const Options: React.SFC<OptionsProps> & WithStyle = React.memo(props => {
+const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
     const selectedValues = useMemo(() => props.values.map(op => op.value), [props.values]);
 
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
@@ -41,7 +41,6 @@ const Options: React.SFC<OptionsProps> & WithStyle = React.memo(props => {
                         <CheckboxGroup
                             values={selectedValues.filter(vl => op.value.map((nestedOp: Option) => nestedOp.value).includes(vl))}
                             showSelectAll
-                            labelPosition="top"
                             disabled={op.disabled}
                             label={op.label}
                             options={op.value}

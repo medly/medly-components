@@ -1949,10 +1949,11 @@ exports[`TextField with filled variant should render helper text properly 1`] = 
 
 exports[`TextField with filled variant should render properly with prefix 1`] = `
 .c2 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c2 * {
@@ -2210,10 +2211,8 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
-          stroke="#000"
-          stroke-linecap="round"
-          stroke-width="2"
+          d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+          fill="green"
         />
       </svg>
       <div
@@ -2241,10 +2240,11 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 
 exports[`TextField with filled variant should render properly with suffix 1`] = `
 .c6 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c6 * {
@@ -2519,10 +2519,8 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
-          stroke="#000"
-          stroke-linecap="round"
-          stroke-width="2"
+          d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+          fill="green"
         />
       </svg>
     </div>
@@ -3844,10 +3842,11 @@ exports[`TextField with outlined variant should render helper text properly 1`] 
 
 exports[`TextField with outlined variant should render properly with prefix 1`] = `
 .c2 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c2 * {
@@ -4093,10 +4092,8 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
-          stroke="#000"
-          stroke-linecap="round"
-          stroke-width="2"
+          d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+          fill="green"
         />
       </svg>
       <div
@@ -4124,10 +4121,11 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 
 exports[`TextField with outlined variant should render properly with suffix 1`] = `
 .c6 {
-  font-size: 2.4rem;
-  cursor: inherit;
+  overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
 }
 
 .c6 * {
@@ -4390,10 +4388,8 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M4.911 12.814l4.243 4.242M9.154 17.056l9.899-9.899"
-          stroke="#000"
-          stroke-linecap="round"
-          stroke-width="2"
+          d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+          fill="green"
         />
       </svg>
     </div>

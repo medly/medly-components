@@ -1,6 +1,7 @@
 import { DocsContainer, DocsPage } from '@storybook/addon-docs/blocks';
 import { withTests } from '@storybook/addon-jest';
 import { withKnobs } from '@storybook/addon-knobs';
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { addDecorator, addParameters } from '@storybook/react';
 import React from 'react';
 import { jsxDecorator } from 'storybook-addon-jsx';
@@ -41,6 +42,42 @@ addDecorator(
         results
     })
 );
+
+addParameters({
+    viewport: {
+        viewports: {
+            desktop: {
+                name: 'Desktop',
+                styles: {
+                    width: '1440px',
+                    height: '100%'
+                }
+            },
+            smallLaptop: {
+                name: 'Small Laptop',
+                styles: {
+                    width: '1280px',
+                    height: '100%'
+                }
+            },
+            tabletLandscape: {
+                name: 'Tablet Landscape',
+                styles: {
+                    width: '1024px',
+                    height: '100%'
+                }
+            },
+            tabletPortrait: {
+                name: 'Tablet Portrait',
+                styles: {
+                    width: '768px',
+                    height: '100%'
+                }
+            },
+            ...INITIAL_VIEWPORTS
+        }
+    }
+});
 
 addParameters({
     theme: {

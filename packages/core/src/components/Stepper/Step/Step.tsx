@@ -4,7 +4,7 @@ import Text from '../../Text';
 import { StepProps } from '../types';
 import { StepCounterStyled, StepStyled } from './Step.styled';
 
-const Step: React.SFC<StepProps> & WithStyle = React.memo(props => {
+const Step: React.FC<StepProps> & WithStyle = React.memo(props => {
     const { step, children, onClick, ...restProps } = props;
 
     return (

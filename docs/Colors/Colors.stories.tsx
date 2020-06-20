@@ -20,7 +20,7 @@ const Grid = styled.div`
     grid-template-columns: repeat(3, 1fr);
 `;
 
-const Color: React.SFC<{ hex: string }> = styled.div<{ hex: string }>`
+const Color: React.FC<{ hex: string }> = styled.div<{ hex: string }>`
     height: 40px;
     background-color: ${props => props.hex};
     padding: 0 20px;
@@ -30,7 +30,7 @@ const Color: React.SFC<{ hex: string }> = styled.div<{ hex: string }>`
     color: ${props => contrastingColor(props.hex)};
 `;
 
-const ColorLine: React.SFC<{ shade: number | string; hex: string }> = ({ shade, hex }) => (
+const ColorLine: React.FC<{ shade: number | string; hex: string }> = ({ shade, hex }) => (
     <Color hex={hex} key={hex}>
         <Text textVariant="body1">{shade}</Text>
         <Text textVariant="body1">

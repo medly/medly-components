@@ -2,11 +2,18 @@ import { Checkbox } from './Checkbox';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Checkbox.stories';
 
-<Meta title="Core" component={Checkbox} />
+<Meta title="Core" component={Checkbox} parameters={{ jest: ['Checkbox.test.tsx'] }} />
 
 # Checkbox
 
-### Basic checkbox
+Simple checkbox component which allows users to select options from a set. It's a controlled react component. So you have to have the handle state like below.
+
+```tsx
+const [isChecked, setChecked] = useState(false),
+    onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => setChecked(e.target.checked);
+
+return <Checkbox label="Lorem Ipsum" checked={isChecked} onChange={onChangeHandler} />;
+```
 
 <Preview withToolbar>
     <Story name="Checkbox">{stories.Basic()}</Story>

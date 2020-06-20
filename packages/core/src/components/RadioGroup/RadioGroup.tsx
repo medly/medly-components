@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback } from 'react';
+import React, { FC, useCallback } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import Radio from '../Radio';
 import { Props } from './types';
 
-export const RadioGroup: SFC<Props> & WithStyle = React.memo(
+export const RadioGroup: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
             size,

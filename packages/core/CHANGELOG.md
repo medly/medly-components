@@ -3,6 +3,126 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.3.0...@medly-components/core@1.4.0) (2020-06-19)
+
+
+### Features
+
+* add transition on hover in checkbox & checkboxGroup component ([c8bbe2c](https://github.com/medly/medly-components/commit/c8bbe2c2a24f0f8b2ef5ced7c8dc1a2e6771fa5c))
+
+
+
+
+
+# [1.3.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.2.1...@medly-components/core@1.3.0) (2020-06-18)
+
+
+### Bug Fixes
+
+* add error message style and error message in checkbox ([eb20995](https://github.com/medly/medly-components/commit/eb20995a1f6e3f419620c86c9c7d992d5ecd3c0a))
+* fix failing snapshots ([dbf0485](https://github.com/medly/medly-components/commit/dbf04855547eb4fc5b49950974403518d08ae28a))
+* fix indeterminate state ([7305560](https://github.com/medly/medly-components/commit/7305560085fc09e4269e97e75e6590c83b5f9d55))
+* fix labelColor issue ([a01a383](https://github.com/medly/medly-components/commit/a01a383a6a3d25933a27731d542e1352131358c5))
+* fix the broken build which was failing due to incorrect import for SFC ([491e7d8](https://github.com/medly/medly-components/commit/491e7d8c41f4ae9e61c858b487e6e88ba81eb058))
+* fix the linting ([dc623a3](https://github.com/medly/medly-components/commit/dc623a313935f5be6feb3a480bfcb8d90eeca1d2))
+* refactor the usage of error flag ([00c4965](https://github.com/medly/medly-components/commit/00c4965e396f8f6f379f025b5fdbed2d9b2f5250))
+
+
+### Features
+
+* add indeterminate state in checkbox ([cad7057](https://github.com/medly/medly-components/commit/cad705709cc9765520e116b210e2ce3905b8ffe1))
+* integrate with feedback provided ([edacc0b](https://github.com/medly/medly-components/commit/edacc0b093d77d92153b57b4917a2b9c45c17b4f))
+
+
+### Reverts
+
+* revert changes in FieldWithLabel and Label component done for checkbox ([aa90399](https://github.com/medly/medly-components/commit/aa9039940784b3ff52d27144bf3d3f3861f68208))
+
+
+
+
+
+## [1.2.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.2.0...@medly-components/core@1.2.1) (2020-06-17)
+
+
+### Bug Fixes
+
+* fix accordion header font-family issue ([26b0e8a](https://github.com/medly/medly-components/commit/26b0e8aa6fd49c2a5e8aba7b32c654e804dcf1bc))
+* fix textfield error message issue ([fe5929b](https://github.com/medly/medly-components/commit/fe5929ba3ea849fde82de138d81c5589a067c989))
+
+
+
+
+
+# [1.2.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.1.0...@medly-components/core@1.2.0) (2020-06-16)
+
+
+### Bug Fixes
+
+* fix background color issue of outlined button ([1c71d8d](https://github.com/medly/medly-components/commit/1c71d8df63439b1563e67c68ec4d53c608c7aab4))
+* use FC instead of SFC, as it is depricated ([8c00154](https://github.com/medly/medly-components/commit/8c0015452d494e2b292a8f88c1bf5c739aacbab8))
+
+
+### Features
+
+* add align-items property in Modal component ([53678f3](https://github.com/medly/medly-components/commit/53678f355c2ce0d2eb685e99de2b04a1278bb499))
+
+
+
+
+
+# [1.1.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.37...@medly-components/core@1.1.0) (2020-06-13)
+
+
+### Bug Fixes
+
+* add custom icon and auto closure functionality in toast ([1e196c1](https://github.com/medly/medly-components/commit/1e196c10d963b78c4421ce72ff9edd8727b4fa9c))
+* fix toast icons fill color issue ([ba868f8](https://github.com/medly/medly-components/commit/ba868f833401f129aaed621085c67a22681f00b5))
+* remove semantic release ([#109](https://github.com/medly/medly-components/issues/109)) ([db2903d](https://github.com/medly/medly-components/commit/db2903d4b0e5b8dec576d3981b96775f8f4d6b28))
+* update check icon and fix toast size issue ([d8a3a9b](https://github.com/medly/medly-components/commit/d8a3a9b73e2a35ac23e8679008537e1214c71fbe))
+
+
+### Features
+
+* add hover for close icon ([540c442](https://github.com/medly/medly-components/commit/540c442e3d0c97c93148e1da7d032c0937aa70bd))
+* style changes for toast components as per new design ([cfe8a23](https://github.com/medly/medly-components/commit/cfe8a23054e733e59b57d7648378b22be802964e))
+
+
+### Performance Improvements
+
+* change icon for success toast notification ([d8467cf](https://github.com/medly/medly-components/commit/d8467cf6f9293cc9aac5d73ae14ab14c6862670a))
+
+
+
+
+
+# [1.0.0-beta.37](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.36...@medly-components/core@1.0.0-beta.37) (2020-06-11)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+# [1.0.0-beta.36](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.35...@medly-components/core@1.0.0-beta.36) (2020-06-09)
+
+
+### Bug Fixes
+
+* remove defaultTheme from CSSBaseline component ([91a4b0f](https://github.com/medly/medly-components/commit/91a4b0ff955f18e3bd6d43e09aecc9835c472b0c))
+* show pointer cursor on avatar component when onClick prop is passed ([4a47566](https://github.com/medly/medly-components/commit/4a475668971ca1154349385461772009de91deb8))
+
+
+### Features
+
+* add gradient in button ([689a4af](https://github.com/medly/medly-components/commit/689a4af02c8659e86a56a48f837967c7daaacfc3))
+* change flat buttton underline color ([2ab4a6e](https://github.com/medly/medly-components/commit/2ab4a6eb1e2b541eda5fa535c50fe1d4f7c248b6))
+* **core:** accordion component with enhancements ([6bfdd38](https://github.com/medly/medly-components/commit/6bfdd3893b25920830c818d15584a80587bc8b25))
+
+
+
+
+
 # [1.0.0-beta.35](https://github.com/medly/medly-components/compare/@medly-components/core@1.0.0-beta.34...@medly-components/core@1.0.0-beta.35) (2020-06-05)
 
 

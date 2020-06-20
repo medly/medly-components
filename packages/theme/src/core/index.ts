@@ -1,5 +1,4 @@
 import avatar from './avatar';
-import accordion from './accordion';
 import breadCrumbs from './breadCrumbs';
 import button from './button';
 import card from './card';
@@ -27,7 +26,6 @@ import toggle from './toggle';
 
 export const coreDefaultTheme = {
     avatar,
-    accordion,
     breadCrumbs,
     button,
     card,

@@ -5,7 +5,7 @@ import { ColumnConfig } from '../types';
 import { createOptions, createValues, updateColumns, updateConfig } from './helpers';
 import { Props } from './types';
 
-const ColumnConfiguration: React.SFC<Props> = React.memo(({ columns, onChange }) => {
+const ColumnConfiguration: React.FC<Props> = React.memo(({ columns, onChange }) => {
     const handleCheckboxClick = (fieldName: string) => () => onChange(updateConfig(columns, fieldName)),
         handleCheckboxGroupClick = (fieldName: string) => (fields: string[]) => {
             const newColumns = [...columns],
@@ -21,7 +21,6 @@ const ColumnConfiguration: React.SFC<Props> = React.memo(({ columns, onChange })
                     showSelectAll
                     key={config.field}
                     label={config.title}
-                    labelPosition="top"
                     labelWeight="Strong"
                     values={createValues(config.children, config.field)}
                     onChange={handleCheckboxGroupClick(config.field)}

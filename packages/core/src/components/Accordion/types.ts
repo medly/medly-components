@@ -1,17 +1,10 @@
-import { WithThemeProp } from '@medly-components/utils';
+export type StaticProps = {
+    Header?: React.FC;
+    Content?: React.FC;
+    Context?: React.Context<AccordionContextType>;
+};
 
-export interface Props extends WithThemeProp{
-    /** Title of the accordion */
-    title: string;
-    /** Color for the Accordion title*/
-    titleColor?: string;
-    /** Background color for the Accordion section*/
-    bgColor?: string;
-
-}
-
-export interface StyleProps extends Omit<Props, 'title' | 'content'> {
-    isActive?: boolean;
-}
-
-
+export type AccordionContextType = [
+    boolean /** Current active state */,
+    React.Dispatch<React.SetStateAction<boolean>> /** Function to be called to toggle the active state */
+];
