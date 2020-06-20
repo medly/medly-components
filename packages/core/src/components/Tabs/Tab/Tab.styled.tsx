@@ -87,7 +87,7 @@ const svgStyles = (theme: Theme, active: boolean) => {
     `;
 };
 
-export const Button = styled.button<StyledProps>`
+export const TabWrapper = styled.button<StyledProps>`
     background-color: transparent;
     border: 0;
     border-bottom: 4px solid transparent;
@@ -101,7 +101,6 @@ export const Button = styled.button<StyledProps>`
 
     ${TextStyled} {
         font-size: ${({ tabSize }) => (tabSize === 'S' ? '1.4rem' : '1.6rem')};
-        margin-left: ${({ hasIcon }) => (hasIcon ? '16px' : 0)};
     }
 
     &:hover {
@@ -123,4 +122,22 @@ export const Button = styled.button<StyledProps>`
     ${({ theme, active, tabSize }) => active && activeStyle(theme, active, tabSize)}
 
     ${({ theme, disabled }) => disabled && disabledStyle(theme)}
+`;
+
+export const LabelWrapper = styled.span<StyledProps>`
+    display: ${({ tabSize }) => (tabSize === 'L' ? 'grid' : 'block')};
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        'label count'
+        'secondaryLabel secondaryLabel';
+    margin-left: ${({ hasIcon }) => (hasIcon ? '16px' : 0)};
+    p {
+        margin: 0;
+        grid-area: secondaryLabel;
+        text-align: left;
+    }
+    ${TextStyled} {
+        grid-area: label;
+    }
 `;

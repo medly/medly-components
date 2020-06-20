@@ -12,6 +12,10 @@ export interface Props extends StyledProps {
     id: any;
     /** Label of the tab */
     label: string;
+    /** Secondary Label for the tab */
+    secondaryLabel?: string;
+    /** To Display count in tab */
+    count?: number;
     /** To be used to hide the tab */
     hide?: boolean;
     /** Icon to be shown */

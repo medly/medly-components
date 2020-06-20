@@ -1,4 +1,4 @@
-import { AddIcon, DeleteIcon, EditIcon } from '@medly-components/icons';
+import { AddIcon, DashboardIcon, DateRangeIcon, DeleteIcon, EditIcon, ViewColumnIcon } from '@medly-components/icons';
 import { defaultTheme, TabsTheme } from '@medly-components/theme';
 import { select } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
@@ -36,6 +36,22 @@ export const WithIcon = () => {
                 Content for the edit panel
             </Tabs.Tab>
             <Tabs.Tab id="tab3" label="Delete" icon={DeleteIcon} disabled={true}>
+                Content for the delete panel
+            </Tabs.Tab>
+        </Tabs>
+    );
+};
+
+export const WithDescriptionAndCount = () => {
+    return (
+        <Tabs defaultActive="tab1" aria-label="WithDescriptionAndCount Tabs" tabSize={select('Tab Size', size, 'S')}>
+            <Tabs.Tab id="tab1" label="Add" secondaryLabel="Details" count={68} icon={DashboardIcon}>
+                Content for the add panel
+            </Tabs.Tab>
+            <Tabs.Tab id="tab2" label="Edit" secondaryLabel="Details" count={10} icon={DateRangeIcon}>
+                Content for the edit panel
+            </Tabs.Tab>
+            <Tabs.Tab id="tab3" label="Delete" secondaryLabel="Details" count={30} icon={ViewColumnIcon} disabled={true}>
                 Content for the delete panel
             </Tabs.Tab>
         </Tabs>

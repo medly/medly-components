@@ -5,11 +5,11 @@ import * as Styled from './Tab.styled';
 import { Props } from './types';
 
 export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
-    const { id, active, label, icon: Icon = null, ...restProps } = props;
+    const { id, active, label, icon: Icon = null, secondaryLabel, tabSize, ...restProps } = props;
 
     return (
-        <Styled.Button
-            {...{ id, active, hasIcon: !!Icon, ...restProps }}
+        <Styled.TabWrapper
+            {...{ id, active, hasIcon: !!Icon, tabSize, ...restProps }}
             type="button"
             role="tab"
             aria-selected={active ? 'true' : 'false'}
@@ -17,9 +17,12 @@ export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
             tabIndex={active ? 0 : -1}
         >
             {Icon && <Icon focusable={false} />}
-            <Text>{label}</Text>
-        </Styled.Button>
+            <Styled.LabelWrapper tabSize={tabSize} hasIcon={!!Icon}>
+                <Text>{label}</Text>
+                {secondaryLabel && tabSize === 'L' && <p>{secondaryLabel}</p>}
+            </Styled.LabelWrapper>
+        </Styled.TabWrapper>
     );
 });
 Tab.displayName = 'Tab';
-Tab.Style = Styled.Button;
+Tab.Style = Styled.TabWrapper;
