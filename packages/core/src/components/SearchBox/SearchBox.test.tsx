@@ -25,4 +25,12 @@ describe('SearchBox', () => {
         fireEvent.input(inputEl);
         expect(inputEl.value).toHaveLength(1);
     });
+
+    it('should render options when user search option specified', () => {
+        const { container } = render(
+            <SearchBox boxSize={'S'} placeholder="search me" searchOptions={[{ value: 'Dummy1 option', label: 'Dummy1 option' }]} />
+        );
+        expect(container.querySelector('ul')).toHaveLength(1);
+        expect(container).toMatchSnapshot(1);
+    });
 });

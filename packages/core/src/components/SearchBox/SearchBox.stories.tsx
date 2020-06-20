@@ -10,7 +10,4 @@ export const optionsArray = [
 
 export const boxSize: Props['boxSize'][] = ['S', 'M'];
 
-export const ThemeInterface: React.SFC<SearchBoxTheme> = () => null;
-ThemeInterface.defaultProps = {
-    ...defaultTheme.select
-};
+

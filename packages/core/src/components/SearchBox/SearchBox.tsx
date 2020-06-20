@@ -1,6 +1,6 @@
 import { CloseIcon, SearchIcon } from '@medly-components/icons';
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback, useState } from 'react';
+import React, { SFC, useCallback, useEffect, useState } from 'react';
 import Options from '../SingleSelect/Options';
 import { Option } from '../SingleSelect/types';
 import * as Styled from './SearchBox.styled';
@@ -8,25 +8,31 @@ import { Props } from './types';
 
 export const SearchBox: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { getOptions } = props;
+        const { getOptions, searchOptions } = props;
         const inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
             [showCloseIcon, setCloseIconState] = useState(false),
-            [options, setOptions] = useState([]),
-            [active, setActive] = useState(false),
-            [activeSearchIcon, setSearchIconActive] = useState(false);
+            [options, setOptions] = useState(searchOptions),
+            [isActive, setActive] = useState(false),
+            [isIconActive, setIconActive] = useState(false);
 
-        const handleFocus = useCallback(() => {
+        useEffect(() => {
+            setOptions(searchOptions);
+            searchOptions.length > 0 ? setActive(true) : setActive(false);
+        });
+
+        const handleChange = useCallback(() => {
                 const canSearch = inputRef.current.value.length >= 3;
                 setCloseIconState(true);
-                setSearchIconActive(true);
-                setActive(canSearch);
-                setOptions(canSearch ? getOptions(inputRef.current.value) : []);
+                setIconActive(true);
+                if (canSearch) {
+                    getOptions();
+                }
             }, [inputRef.current]),
             clearSearchText = useCallback(() => {
                 inputRef.current.value = null;
                 setCloseIconState(false);
                 setActive(false);
-                setSearchIconActive(false);
+                setIconActive(false);
                 setOptions([]);
             }, []),
             handleOptionClick = useCallback(
@@ -34,7 +40,7 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
                     if (!option.disabled && !Array.isArray(option.value)) {
                         inputRef.current.value = option.label;
                         setActive(false);
-                        setSearchIconActive(false);
+                        setIconActive(false);
                         setOptions([]);
                     }
                 },
@@ -42,18 +48,11 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
             );
 
         return (
-            <Styled.SearchBoxWrapper {...props}>
-                <Styled.SearchBox
-                    placeholder={props.placeholder}
-                    boxSize={'M'}
-                    onInput={handleFocus}
-                    ref={inputRef}
-                    className={active ? 'active' : ''}
-                />
-                <hr className={active ? 'active' : ''} />
-                <Options options={options} onOptionClick={handleOptionClick} className={active ? 'active' : ''}></Options>
+            <Styled.SearchBoxWrapper {...props} isActive={isActive}>
+                <Styled.SearchBox isActive={isActive} placeholder={props.placeholder} boxSize={'M'} onInput={handleChange} ref={inputRef} />
+                <Options options={options} onOptionClick={handleOptionClick}></Options>
                 <Styled.CloseIconWrapper>{showCloseIcon && <CloseIcon onClick={clearSearchText} />}</Styled.CloseIconWrapper>
-                <SearchIcon className={activeSearchIcon ? 'active' : ''} />
+                <Styled.SearchIconWrapper isIconActive={isIconActive}><SearchIcon /></Styled.SearchIconWrapper>
             </Styled.SearchBoxWrapper>
         );
     })
@@ -61,3 +60,6 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
 
 SearchBox.displayName = 'SearchBox';
 SearchBox.Style = Styled.SearchBox;
+SearchBox.defaultProps = {
+    searchOptions: []
+};
