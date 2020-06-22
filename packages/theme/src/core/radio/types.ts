@@ -7,6 +7,11 @@ export interface RadioTheme {
         default: string;
         disabled: string;
     };
+    helperTextColor: {
+        default: string;
+        disabled: string;
+        error: string;
+    };
     borderColor: {
         default: string;
         active: string;

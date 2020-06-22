@@ -37,6 +37,8 @@ export const testSchema: FormFieldSchema = {
     role: {
         type: 'radio-group',
         label: 'Role',
+        required: true,
+        columns: 3,
         options: [
             { value: 'front-end', label: 'Front End' },
             { value: 'back-end', label: 'Back End' },

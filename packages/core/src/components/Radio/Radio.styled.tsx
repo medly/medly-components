@@ -1,27 +1,25 @@
-import { asterisk, styled, WithThemeProp } from '@medly-components/utils';
-import { getSelectorLabelPositionStyle } from '../Checkbox/Checkbox.styled';
-import Text from '../Text';
-import { Props } from './types';
+import { RadioSizes } from '@medly-components/theme';
+import { styled, WithThemeProp } from '@medly-components/utils';
+import { getSelectorLabelPositionStyle } from '../Selectors';
+import { Props, WrapperProps } from './types';
 
-const getRadioSize = ({ theme, size }: Props & WithThemeProp) => theme.radio.sizes[size || theme.radio.defaultSize];
+const getRadioSize = ({ theme, size }: { size?: RadioSizes } & WithThemeProp) => theme.radio.sizes[size || theme.radio.defaultSize];
 
 export const StyledRadio = styled('div')`
     transition: all 100ms ease-out;
     box-sizing: border-box;
-    border: 1px solid;
+    border: 0.15rem solid;
     width: 100%;
     height: 100%;
-    z-index: 1;
     border-radius: 100%;
 `;
 
 export const HiddenRadio = styled('input').attrs(({ theme }) => ({ type: 'radio', ...theme.radio }))<Props>`
-    opacity: 0;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    opacity: 0;
+    width: 1%;
+    height: 1%;
     margin: 0;
-    cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
 
     & ~ ${StyledRadio} {
         border-color: ${({ borderColor, hasError }) => borderColor[hasError ? 'error' : 'default']};
@@ -39,12 +37,12 @@ export const HiddenRadio = styled('input').attrs(({ theme }) => ({ type: 'radio'
         border-color: ${({ disabledBorderColor }) => disabledBorderColor.default};
     }
 
-    &:not(:disabled):checked ~ ${StyledRadio} {
+    &:not(:disabled):checked ~ ${StyledRadio}, &:not(:disabled):focus ~ ${StyledRadio} {
         border-color: ${({ borderColor, hasError }) => borderColor[hasError ? 'error' : 'active']};
     }
 `;
 
-export const RadioWrapper = styled('div')<Props>`
+export const RadioWrapper = styled('div')<WrapperProps>`
     margin: 0.3rem;
     width: ${getRadioSize};
     height: ${getRadioSize};
@@ -52,22 +50,15 @@ export const RadioWrapper = styled('div')<Props>`
     border-radius: 100%;
 `;
 
-export const RadioWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...theme.radio }))<Props>`
+export const RadioWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...theme.radio }))<WrapperProps>`
     display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
 
     ${getSelectorLabelPositionStyle}
 
-    ${Text.Style} {
-        user-select: none;
-        ${({ required }) => required && asterisk}
-        color: ${({ disabled, labelColor }) => labelColor[disabled ? 'disabled' : 'default']};
-        padding: ${({ labelPosition }) => (labelPosition === 'top' || labelPosition === 'bottom' ? '1.6rem 0' : '0 1.6rem')};
-    }
-
     &:hover {
         && ${StyledRadio} {
-            border-color: ${({ disabled, hasError, hoveredBorderColor }) => !disabled && hoveredBorderColor[hasError ? 'error' : 'active']}
+            border-color: ${({ disabled, hasError, hoveredBorderColor }) => !disabled && hoveredBorderColor[hasError ? 'error' : 'active']};
         }
     }
 `;

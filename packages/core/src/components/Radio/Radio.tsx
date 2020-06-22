@@ -1,6 +1,6 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
 import React, { FC, useMemo } from 'react';
-import Text from '../Text';
+import { SelectorLabel } from '../Selectors';
 import * as Styled from './Radio.styled';
 import { Props } from './types';
 
@@ -18,9 +18,15 @@ export const Radio: FC<Props> & WithStyle = React.memo(
                 {...{ fullWidth, labelPosition, hasError }}
             >
                 {label && (
-                    <Text id={`${inputId}-label`} textVariant={labelVariant} textWeight={labelWeight}>
+                    <SelectorLabel
+                        id={`${inputId}-label`}
+                        type="radio"
+                        labelPosition={labelPosition}
+                        textVariant={labelVariant}
+                        textWeight={labelWeight}
+                    >
                         {label}
-                    </Text>
+                    </SelectorLabel>
                 )}
                 <Styled.RadioWrapper size={size}>
                     <Styled.HiddenRadio id={inputId} ref={inputRef} hasError={hasError} {...inputProps} />

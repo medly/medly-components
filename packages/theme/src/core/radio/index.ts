@@ -14,6 +14,11 @@ const radio: RadioTheme = {
         default: 'inherit',
         disabled: colors.grey[500]
     },
+    helperTextColor: {
+        default: colors.black,
+        disabled: colors.grey[500],
+        error: colors.red[500]
+    },
     borderColor: {
         default: colors.black,
         active: colors.communityBlue[500],

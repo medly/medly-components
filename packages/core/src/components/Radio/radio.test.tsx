@@ -17,7 +17,7 @@ describe('Radio component', () => {
     });
 
     test.each(['top', 'bottom'])('should render properly with fullWidth and %p labelPosition', (labelPosition: LabelPositions) => {
-        const { container } = render(<Radio id="dummy" fullWidth label="Dummy" labelPosition={labelPosition} />);
+        const { container } = render(<Radio id="dummy" fullWidth label="Dummy" value="female" labelPosition={labelPosition} />);
         expect(container.querySelector('#dummy-wrapper')).toHaveStyle(`
             display: flex;
             padding: 0.8rem 0
@@ -26,7 +26,7 @@ describe('Radio component', () => {
 
     it('should call onChange handler on click on checkbox', () => {
         const mockOnChange = jest.fn();
-        render(<Radio onChange={mockOnChange} label="Dummy" />);
+        render(<Radio onChange={mockOnChange} label="Dummy" value="female" />);
         userEvent.click(screen.getByRole('radio'));
         expect(mockOnChange).toBeCalled();
     });
