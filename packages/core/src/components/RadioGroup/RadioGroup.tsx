@@ -1,6 +1,5 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useMemo, useState } from 'react';
-import FieldWithLabel from '../FieldWithLabel';
 import Radio from '../Radio';
 import { SelectorGroup } from '../Selectors';
 import { Props } from './types';
@@ -9,6 +8,7 @@ export const RadioGroup: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
             id,
+            size,
             value,
             name,
             label,
@@ -54,7 +54,7 @@ export const RadioGroup: FC<Props> & WithStyle = React.memo(
                 ref={radioGroupRef}
                 type="radio"
                 aria-describedby={`${radioGroupId}-helper-text`}
-                {...{ ...wrapperProps, disabled, required, hasHelperOrErrorText }}
+                {...{ ...wrapperProps, hasHelperOrErrorText }}
             >
                 {label && (
                     <SelectorGroup.Label
@@ -79,6 +79,7 @@ export const RadioGroup: FC<Props> & WithStyle = React.memo(
                             id={`${option.label}-${radioGroupId}`}
                             key={option.value}
                             name={name}
+                            size={size}
                             required={required}
                             hasError={hasError}
                             onChange={handleOnChange}
@@ -94,10 +95,9 @@ export const RadioGroup: FC<Props> & WithStyle = React.memo(
 );
 
 RadioGroup.displayName = 'RadioGroup';
-RadioGroup.Style = FieldWithLabel.Style;
+RadioGroup.Style = SelectorGroup.Wrapper;
 RadioGroup.defaultProps = {
-    label: '',
-    name: '',
+    columns: 1,
     fullWidth: true,
     labelWeight: 'Medium',
     labelVariant: 'body1'

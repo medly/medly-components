@@ -1,8 +1,11 @@
-import { CheckIcon, SvgIcon } from '@medly-components/icons';
-import { centerAligned, css, styled } from '@medly-components/utils';
-import { LabelPositions } from '../Label/types';
-import Text from '../Text';
+import { SvgIcon } from '@medly-components/icons';
+import { CheckboxSizes } from '@medly-components/theme/src';
+import { centerAligned, css, styled, WithThemeProp } from '@medly-components/utils';
+import { getSelectorLabelPositionStyle } from '../Selectors';
 import { Props } from './types';
+
+const getCheckboxSize = ({ theme, size }: { size?: CheckboxSizes } & WithThemeProp) =>
+    theme.checkbox.sizes[size || theme.checkbox.defaultSize];
 
 const activeStyle = ({ theme, hasError, disabled }: Props) => {
     const checkboxState = disabled ? 'disabled' : hasError ? 'error' : 'active',
@@ -11,7 +14,8 @@ const activeStyle = ({ theme, hasError, disabled }: Props) => {
     return css`
         border-color: ${bgColor};
         background-color: ${bgColor};
-        ${CheckIcon.Style} {
+        ${SvgIcon} {
+            transform: scale(0.7);
             * {
                 fill: ${theme.checkbox.iconColor[checkboxState]};
             }
@@ -28,53 +32,53 @@ const nonActiveStyle = ({ theme, hasError, disabled }: Props) => {
     `;
 };
 
-export const Wrapper = styled.div<Props & { isActive?: boolean }>`
-    margin: 0.3rem;
-    position: relative;
+export const StyledCheckbox = styled.div`
     border: 0.15rem solid;
     box-sizing: border-box;
-    width: ${({ theme, size }) => theme.checkbox.sizes[size || theme.checkbox.defaultSize]};
-    height: ${({ theme, size }) => theme.checkbox.sizes[size || theme.checkbox.defaultSize]};
+    width: 100%;
+    height: 100%;
     border-radius: 22.2%;
     transition: all 100ms ease-out;
 
-    ${({ isActive }) => (isActive ? activeStyle : nonActiveStyle)};
     ${centerAligned()}
+
+    ${SvgIcon} {
+        z-index: 1;
+        position: absolute;
+        transition: transform 0.2s ease-in-out;
+        transform: scale(0);
+    }
 `;
 
-export const getSelectorLabelPositionStyle = ({ labelPosition, fullWidth }: { labelPosition?: LabelPositions; fullWidth?: boolean }) => {
-    switch (labelPosition) {
-        case 'top':
-            return css`
-                padding: ${fullWidth ? '0.8rem 0' : '0.8rem'};
-                flex-direction: column;
-                justify-content: center;
-            `;
-        case 'bottom':
-            return css`
-                padding: ${fullWidth ? '0.8rem 0' : '0.8rem'};
-                justify-content: center;
-                flex-direction: column-reverse;
-            `;
-        case 'left':
-            return css`
-                padding: 0.8rem 0;
-                justify-content: flex-start;
-                align-items: center;
-                flex-direction: row;
-            `;
-        case 'right':
-        default:
-            return css`
-                padding: 0.8rem 0;
-                align-items: center;
-                justify-content: flex-end;
-                flex-direction: row-reverse;
-            `;
-    }
-};
+export const HiddenCheckbox = styled.input.attrs({ type: 'checkbox' })<Props>`
+    opacity: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    position: absolute;
 
-export const CheckboxWithLabelWrapper = styled('label')<Props & { isActive: boolean }>`
+    &:checked {
+        & ~ ${StyledCheckbox} {
+            ${activeStyle};
+        }
+    }
+
+    &:not(:checked) {
+        & ~ ${StyledCheckbox} {
+            ${({ indeterminate }) => (indeterminate ? activeStyle : nonActiveStyle)}
+        }
+    }
+`;
+
+export const CheckboxWrapper = styled('div')`
+    margin: 0.3rem;
+    width: ${getCheckboxSize};
+    height: ${getCheckboxSize};
+    position: relative;
+`;
+
+export const CheckboxWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...theme.checkbox }))<Props & { isActive: boolean }>`
     display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     * {
@@ -83,37 +87,11 @@ export const CheckboxWithLabelWrapper = styled('label')<Props & { isActive: bool
 
     ${getSelectorLabelPositionStyle}
 
-    ${Text.Style} {
-        user-select: none;
-        color: ${({ theme, disabled }) => theme.checkbox.labelColor[disabled ? 'disabled' : 'default']};
-        padding: ${({ labelPosition }) => (labelPosition === 'top' || labelPosition === 'bottom' ? '1.6rem 0' : '0 1.6rem')};
-    }
-
-    ${SvgIcon} {
-        z-index: 1;
-        pointer-events: none;
-        position: absolute;
-        transition: transform 0.2s ease-in-out;
-        transform: ${({ isActive }) => (isActive ? 'scale(0.7)' : 'scale(0)')};
-    }
-
     &:hover {
-        ${Wrapper} {
-            border-color: ${({ disabled, hasError, theme }) => !disabled && theme.checkbox.hoverBgColor[hasError ? 'error' : 'active']};
-            background-color: ${({ isActive, disabled, hasError, theme }) =>
-                !disabled && isActive && theme.checkbox.hoverBgColor[hasError ? 'error' : 'active']};
+        ${StyledCheckbox} {
+            border-color: ${({ disabled, hasError, hoverBgColor }) => !disabled && hoverBgColor[hasError ? 'error' : 'active']};
+            background-color: ${({ disabled, hasError, hoverBgColor, isActive }) =>
+                !disabled && isActive && hoverBgColor[hasError ? 'error' : 'active']};
         }
-    }
-`;
-
-export const Checkbox = styled.input.attrs({ type: 'checkbox' })`
-    opacity: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-
-    &:focus {
-        outline: none;
     }
 `;

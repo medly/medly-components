@@ -13,8 +13,8 @@ export const Radio: FC<Props> & WithStyle = React.memo(
         return (
             <Styled.RadioWithLabelWrapper
                 id={`${inputId}-wrapper`}
+                htmlFor={inputId}
                 disabled={inputProps.disabled}
-                required={inputProps.required}
                 {...{ fullWidth, labelPosition, hasError }}
             >
                 {label && (

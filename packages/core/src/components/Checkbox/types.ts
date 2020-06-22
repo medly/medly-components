@@ -17,8 +17,6 @@ export interface Props extends InputProps, WithThemeProp {
     labelVariant?: FontVariants;
     /** Label Weight */
     labelWeight?: FontWeights;
-    /** Label color */
-    labelColor?: string;
     /** Error state for checkbox */
     hasError?: boolean;
     /** Indeterminate state for checkbox */

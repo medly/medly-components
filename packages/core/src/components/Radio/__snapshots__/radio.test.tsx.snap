@@ -93,6 +93,7 @@ exports[`Radio component should render correctly with bottom labelPosition 1`] =
 <div>
   <label
     class="c0 c1"
+    for="Dummy"
     id="Dummy-wrapper"
     sizes="[object Object]"
   >
@@ -196,6 +197,7 @@ exports[`Radio component should render correctly with checked false and checked 
 <div>
   <label
     class="c0 c1"
+    for=""
     id="-wrapper"
     sizes="[object Object]"
   >
@@ -290,6 +292,7 @@ exports[`Radio component should render correctly with checked false and disabled
   <label
     class="c0"
     disabled=""
+    for=""
     id="-wrapper"
     sizes="[object Object]"
   >
@@ -388,6 +391,7 @@ exports[`Radio component should render correctly with checked false and hasError
 <div>
   <label
     class="c0 c1"
+    for=""
     id="-wrapper"
     sizes="[object Object]"
   >
@@ -485,6 +489,7 @@ exports[`Radio component should render correctly with checked true and checked s
 <div>
   <label
     class="c0 c1"
+    for=""
     id="-wrapper"
     sizes="[object Object]"
   >
@@ -580,6 +585,7 @@ exports[`Radio component should render correctly with checked true and disabled 
   <label
     class="c0"
     disabled=""
+    for=""
     id="-wrapper"
     sizes="[object Object]"
   >
@@ -679,6 +685,7 @@ exports[`Radio component should render correctly with checked true and hasError 
 <div>
   <label
     class="c0 c1"
+    for=""
     id="-wrapper"
     sizes="[object Object]"
   >
@@ -799,6 +806,7 @@ exports[`Radio component should render correctly with left labelPosition 1`] = `
 <div>
   <label
     class="c0 c1"
+    for="Dummy"
     id="Dummy-wrapper"
     sizes="[object Object]"
   >
@@ -924,6 +932,7 @@ exports[`Radio component should render correctly with right labelPosition 1`] = 
 <div>
   <label
     class="c0 c1"
+    for="Dummy"
     id="Dummy-wrapper"
     sizes="[object Object]"
   >
@@ -1045,6 +1054,7 @@ exports[`Radio component should render correctly with top labelPosition 1`] = `
 <div>
   <label
     class="c0 c1"
+    for="Dummy"
     id="Dummy-wrapper"
     sizes="[object Object]"
   >

@@ -143,7 +143,6 @@ exports[`Radio Group should render disabled state properly 1`] = `
   <div
     aria-describedby="gender-helper-text"
     class="c0"
-    disabled=""
     id="gender-wrapper"
     type="radio"
   >
@@ -170,6 +169,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
       <label
         class="c5"
         disabled=""
+        for="Female-gender"
         id="Female-gender-wrapper"
         sizes="[object Object]"
       >
@@ -200,6 +200,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
       <label
         class="c5"
         disabled=""
+        for="Male-gender"
         id="Male-gender-wrapper"
         sizes="[object Object]"
       >
@@ -402,6 +403,7 @@ exports[`Radio Group should render properly 1`] = `
     >
       <label
         class="c5 c6"
+        for="Female-gender"
         id="Female-gender-wrapper"
         sizes="[object Object]"
       >
@@ -430,6 +432,7 @@ exports[`Radio Group should render properly 1`] = `
       </label>
       <label
         class="c5 c6"
+        for="Male-gender"
         id="Male-gender-wrapper"
         sizes="[object Object]"
       >

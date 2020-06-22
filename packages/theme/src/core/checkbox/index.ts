@@ -11,7 +11,7 @@ const checkbox: CheckboxTheme = {
     },
     defaultSize: 'S',
     labelColor: {
-        default: colors.black,
+        default: 'inherit',
         disabled: colors.grey[500]
     },
     helperTextColor: {

@@ -34,8 +34,6 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChang
     labelVariant?: FontVariants;
     /** Label weight */
     labelWeight?: FontWeights;
-    /** Label color */
-    labelColor?: string;
     /** Name attribute of all the checkboxes */
     name?: string;
     /** Checkbox size */
