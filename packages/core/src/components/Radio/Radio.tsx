@@ -22,6 +22,7 @@ export const Radio: FC<Props> & WithStyle = React.memo(
                         id={`${inputId}-label`}
                         type="radio"
                         hasError={hasError}
+                        disabled={inputProps.disabled}
                         labelPosition={labelPosition}
                         textVariant={labelVariant}
                         textWeight={labelWeight}
@@ -30,7 +31,7 @@ export const Radio: FC<Props> & WithStyle = React.memo(
                     </SelectorLabel>
                 )}
                 <Styled.RadioWrapper size={size}>
-                    <Styled.HiddenRadio id={inputId} ref={inputRef} hasError={hasError} {...inputProps} />
+                    <Styled.HiddenRadio id={inputId} size={size} ref={inputRef} hasError={hasError} {...inputProps} />
                     <Styled.StyledRadio />
                 </Styled.RadioWrapper>
             </Styled.RadioWithLabelWrapper>

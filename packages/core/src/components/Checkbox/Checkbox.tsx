@@ -65,6 +65,7 @@ export const Checkbox: FC<Props> & WithStyle = React.memo(
                         <SelectorLabel
                             id={`${inputId}-label`}
                             type="checkbox"
+                            disabled={inputProps.disabled}
                             hasError={isErrorPresent}
                             labelPosition={labelPosition}
                             textVariant={labelVariant}

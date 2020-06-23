@@ -53,8 +53,8 @@ exports[`Radio Group should render disabled state properly 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: inherit;
-  color: inherit;
+  cursor: not-allowed;
+  color: #98A7B7;
   padding: 0 1.6rem;
 }
 
@@ -179,6 +179,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
       >
         <span
           class="c6 c7"
+          disabled=""
           id="Female-gender-label"
           type="radio"
         >
@@ -210,6 +211,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
       >
         <span
           class="c6 c7"
+          disabled=""
           id="Male-gender-label"
           type="radio"
         >

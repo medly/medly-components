@@ -133,12 +133,13 @@ exports[`CheckboxGroup component should render properly 1`] = `
 
 .c11 .c12 {
   z-index: 1;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
+  width: 100%;
+  height: 100%;
 }
 
 .c9 {
@@ -156,9 +157,9 @@ exports[`CheckboxGroup component should render properly 1`] = `
 }
 
 .c9:checked ~ .c10 .c12 {
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .c9:checked ~ .c10 .c12 * {
@@ -584,8 +585,8 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: inherit;
-  color: inherit;
+  cursor: not-allowed;
+  color: #98A7B7;
   padding: 0 1.6rem;
 }
 
@@ -633,12 +634,13 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
 
 .c11 .c12 {
   z-index: 1;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
+  width: 100%;
+  height: 100%;
 }
 
 .c9 {
@@ -656,9 +658,9 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
 }
 
 .c9:checked ~ .c10 .c12 {
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .c9:checked ~ .c10 .c12 * {
@@ -747,6 +749,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
       >
         <span
           class="c6 c7"
+          disabled=""
           id="Honda-Cars-label"
           type="checkbox"
         >
@@ -792,6 +795,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
       >
         <span
           class="c6 c7"
+          disabled=""
           id="Hyundai-Cars-label"
           type="checkbox"
         >
@@ -844,6 +848,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
         >
           <span
             class="c1 c7"
+            disabled=""
             id="Tata-Cars-select-all-label"
             type="checkbox"
           >
@@ -892,6 +897,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
           >
             <span
               class="c6 c7"
+              disabled=""
               id="Jaguar-Tata-Cars-label"
               type="checkbox"
             >
@@ -937,6 +943,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
           >
             <span
               class="c6 c7"
+              disabled=""
               id="Land Rover-Tata-Cars-label"
               type="checkbox"
             >
@@ -1063,8 +1070,8 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: inherit;
-  color: inherit;
+  cursor: not-allowed;
+  color: #98A7B7;
   padding: 0 1.6rem;
 }
 
@@ -1112,12 +1119,13 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
 
 .c11 .c12 {
   z-index: 1;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
+  width: 100%;
+  height: 100%;
 }
 
 .c9 {
@@ -1135,9 +1143,9 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
 }
 
 .c9:checked ~ .c10 .c12 {
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .c9:checked ~ .c10 .c12 * {
@@ -1226,6 +1234,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
       >
         <span
           class="c6 c7"
+          disabled=""
           id="Honda-Cars-label"
           type="checkbox"
         >
@@ -1271,6 +1280,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
       >
         <span
           class="c6 c7"
+          disabled=""
           id="Hyundai-Cars-label"
           type="checkbox"
         >
@@ -1323,6 +1333,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
         >
           <span
             class="c1 c7"
+            disabled=""
             id="Tata-Cars-select-all-label"
             type="checkbox"
           >
@@ -1371,6 +1382,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
           >
             <span
               class="c6 c7"
+              disabled=""
               id="Jaguar-Tata-Cars-label"
               type="checkbox"
             >
@@ -1416,6 +1428,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
           >
             <span
               class="c6 c7"
+              disabled=""
               id="Land Rover-Tata-Cars-label"
               type="checkbox"
             >
@@ -1474,18 +1487,19 @@ exports[`CheckboxGroup component should show indeterminate state when any one op
 
 .c4 .c0 {
   z-index: 1;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
+  width: 100%;
+  height: 100%;
 }
 
 .c2:checked ~ .c3 .c0 {
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .c2:checked ~ .c3 .c0 * {

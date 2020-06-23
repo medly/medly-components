@@ -15,7 +15,7 @@ const activeStyle = ({ iconColor, hasError, disabled, bgColor }: Props & Checkbo
         border-color: ${bgColor[checkboxState]};
         background-color: ${bgColor[checkboxState]};
         ${SvgIcon} {
-            transform: scale(0.7);
+            transform: scale(1);
             * {
                 fill: ${iconColor[checkboxState]};
             }
@@ -44,8 +44,10 @@ export const StyledCheckbox = styled.div`
 
     ${SvgIcon} {
         z-index: 1;
-        transition: transform 0.2s ease-in-out;
+        transition: all 100ms ease-in-out;
         transform: scale(0);
+        width: 100%;
+        height: 100%;
     }
 `;
 
