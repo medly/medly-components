@@ -35,7 +35,7 @@ export const RadioGroup: FC<Props> & WithStyle = React.memo(
 
         const validate = useCallback(
             (element: HTMLInputElement) => {
-                const message = (validator && validator(value)) || element.validationMessage;
+                const message = (validator && validator(element.value)) || element.validationMessage;
                 setErrorMessage(message);
             },
             [validator, value]
@@ -79,6 +79,7 @@ export const RadioGroup: FC<Props> & WithStyle = React.memo(
                 {label && (
                     <SelectorGroup.Label
                         type="radio"
+                        hasError={hasError}
                         id={`${radioGroupId}-label`}
                         textVariant={labelVariant}
                         textWeight={labelWeight}

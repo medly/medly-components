@@ -52,19 +52,11 @@ describe('Radio Group', () => {
         expect(screen.getByText('Constraints not satisfied')).toBeInTheDocument();
     });
 
-    it('should call the validator function if provided on error', () => {
-        const mockOnInvalid = jest.fn();
-        renderer({ onInvalid: mockOnInvalid, validator: (val: string) => (!val ? 'Please select any one gender' : '') });
-        fireEvent.invalid(screen.getByRole('radio', { name: 'Female' }));
-        expect(screen.getByText('Please select any one gender')).toBeInTheDocument();
-        expect(mockOnInvalid).toBeCalled();
-    });
-
     it('should call validator function on blur', async () => {
         const mockOnBlur = jest.fn();
         renderer({
             onBlur: mockOnBlur,
-            validator: (val: string) => (!val ? 'Please select any one gender' : '')
+            validator: () => 'Please select any one gender'
         });
         fireEvent.blur(screen.getByRole('radio', { name: 'Female' }));
         await waitFor(() => expect(screen.getByText('Please select any one gender')).toBeInTheDocument());

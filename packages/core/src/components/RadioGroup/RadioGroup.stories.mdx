@@ -89,11 +89,18 @@ return (
 2. If you pass validator function then it will be called with latest selected value, so that if you want you can return the desired error message.
 
 ```tsx
-validator={val => (!val ? 'Please select any one gender' : '')}
+validator={val => (!val ? 'Please select any one company' : '')}
 ```
 
 <Preview withToolbar>
-    <FormWithRadioGroup validator={val => (!val ? 'Please select any one gender' : '')} />
+    <FormWithRadioGroup
+        label="Laptop"
+        options={[
+            { value: 'apple', label: 'Apple' },
+            { value: 'dell', label: 'Dell' }
+        ]}
+        validator={val => (!val ? 'Please select any one company' : '')}
+    />
 </Preview>
 
 ### Props
