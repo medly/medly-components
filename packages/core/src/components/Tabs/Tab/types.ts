@@ -5,6 +5,7 @@ export interface StyledProps extends HTMLProps<HTMLButtonElement> {
     active?: boolean;
     hasIcon?: boolean;
     tabSize?: TabSize;
+    secondaryLabel?: string;
 }
 
 export interface Props extends StyledProps {

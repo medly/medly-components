@@ -5,18 +5,13 @@ import { TextStyled } from '../../Text/Text.styled';
 import { TabSize } from '../types';
 import { StyledProps } from './types';
 
-const getTabSpacing = (tabSize: TabSize, hasIcon = false) => {
+const getTabSpacing = (hasIcon = false) => {
     const verticalSpacing = 15;
-    let spacing = verticalSpacing;
-
-    if (tabSize === 'L') {
-        spacing = verticalSpacing + 8;
-    }
 
     if (hasIcon) {
-        return spacing - 1;
+        return verticalSpacing - 1;
     }
-    return spacing;
+    return verticalSpacing;
 };
 
 const activeStyle = (theme: Theme, active: boolean, tabSize: TabSize) => {
@@ -72,7 +67,7 @@ const nonActiveStyle = (theme: Theme) => {
     `;
 };
 
-const svgStyles = (theme: Theme, active: boolean) => {
+const svgStyles = (theme: Theme, active: boolean, tabSize: TabSize) => {
     const {
         tabs: { textColor }
     } = theme;
@@ -82,7 +77,7 @@ const svgStyles = (theme: Theme, active: boolean) => {
             border: 1px solid ${active ? textColor.active : theme.colors.grey[100]};
             background-color: ${active ? textColor.active : theme.colors.grey[100]};
             padding: 5px;
-            font-size: 2rem;
+            font-size: ${tabSize === 'L' ? '2.8rem' : '2rem'};
         }
     `;
 };
@@ -91,7 +86,7 @@ export const TabWrapper = styled.button<StyledProps>`
     background-color: transparent;
     border: 0;
     border-bottom: 4px solid transparent;
-    padding: ${({ tabSize, hasIcon }) => `${getTabSpacing(tabSize, hasIcon)}px ${16}px`};
+    padding: ${({ hasIcon }) => `${getTabSpacing(hasIcon)}px ${16}px`};
     user-select: none;
     text-decoration: none;
     display: flex;
@@ -101,6 +96,12 @@ export const TabWrapper = styled.button<StyledProps>`
 
     ${TextStyled} {
         font-size: ${({ tabSize }) => (tabSize === 'S' ? '1.4rem' : '1.6rem')};
+        line-height: ${({ tabSize }) => (tabSize === 'S' ? '2.2rem' : '2.6rem')};
+    }
+
+    p {
+        line-height: 2.2rem;
+        font-size: 1.4rem;
     }
 
     &:hover {
@@ -115,7 +116,7 @@ export const TabWrapper = styled.button<StyledProps>`
         cursor: not-allowed;
     }
 
-    ${({ theme, active, tabSize, hasIcon }) => hasIcon && tabSize !== 'S' && svgStyles(theme, active)}
+    ${({ theme, active, tabSize, hasIcon }) => hasIcon && tabSize !== 'S' && svgStyles(theme, active, tabSize)}
 
     ${({ theme, active }) => !active && nonActiveStyle(theme)}
 
@@ -125,9 +126,8 @@ export const TabWrapper = styled.button<StyledProps>`
 `;
 
 export const LabelWrapper = styled.span<StyledProps>`
-    display: ${({ tabSize }) => (tabSize === 'L' ? 'grid' : 'block')};
+    display: ${({ tabSize, secondaryLabel }) => (secondaryLabel && tabSize === 'L' ? 'grid' : 'block')};
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-template-areas:
         'label count'
         'secondaryLabel secondaryLabel';

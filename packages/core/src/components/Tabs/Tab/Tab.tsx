@@ -17,7 +17,7 @@ export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
             tabIndex={active ? 0 : -1}
         >
             {Icon && <Icon focusable={false} />}
-            <Styled.LabelWrapper tabSize={tabSize} hasIcon={!!Icon}>
+            <Styled.LabelWrapper secondaryLabel={secondaryLabel} tabSize={tabSize} hasIcon={!!Icon}>
                 <Text>{label}</Text>
                 {secondaryLabel && tabSize === 'L' && <p>{secondaryLabel}</p>}
             </Styled.LabelWrapper>

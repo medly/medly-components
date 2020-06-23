@@ -1,9 +1,6 @@
 import { centerAligned, styled } from '@medly-components/utils';
 
-export const TabList = styled.div.attrs(({ backgroundTheme, tabStyle, tabSize, theme: { tabs } }) => ({
-    backgroundTheme,
-    tabStyle,
-    tabSize,
+export const TabList = styled.div.attrs(({ theme: { tabs } }) => ({
     tabs
 }))`
     width: 100%;
