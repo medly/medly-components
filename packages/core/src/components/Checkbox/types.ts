@@ -17,8 +17,12 @@ export interface Props extends InputProps, WithThemeProp {
     labelVariant?: FontVariants;
     /** Label Weight */
     labelWeight?: FontWeights;
-    /** Error state for checkbox */
-    hasError?: boolean;
     /** Indeterminate state for checkbox */
     indeterminate?: boolean;
+    /** Error Text */
+    errorText?: string;
+    /** Function will called with the input value on Blur, change and invalid event */
+    validator?: (checked: boolean) => string;
+    /** This will be used internally by Checkbox group */
+    hasError?: boolean;
 }

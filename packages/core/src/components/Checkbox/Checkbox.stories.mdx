@@ -1,12 +1,14 @@
 import { Checkbox } from './Checkbox';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './Checkbox.stories';
+import { labelPositions, sizes, ThemeInterface, FormWithCheckbox } from './Checkbox.stories';
+import { useState } from 'react';
+import { boolean, select, text } from '@storybook/addon-knobs';
 
 <Meta title="Core" component={Checkbox} parameters={{ jest: ['Checkbox.test.tsx'] }} />
 
 # Checkbox
 
-Simple checkbox component which allows users to select options from a set. It's a controlled react component. So you have to have the handle state like below.
+Simple checkbox component. It's a controlled react component. So you have to have the handle state like below.
 
 ```tsx
 const [isChecked, setChecked] = useState(false),
@@ -16,7 +18,63 @@ return <Checkbox label="Lorem Ipsum" checked={isChecked} onChange={onChangeHandl
 ```
 
 <Preview withToolbar>
-    <Story name="Checkbox">{stories.Basic()}</Story>
+    <Story name="Checkbox">
+        {() => {
+            const [isChecked, setChecked] = useState(false),
+                onChangeHandler = e => {
+                    const val = e.target.checked;
+                    setChecked(val);
+                };
+            return (
+                <Checkbox
+                    name="fruit"
+                    size={select('Size', sizes, 'S')}
+                    label={text('Label', 'Lorem Ipsum')}
+                    disabled={boolean('Disabled', false)}
+                    hasError={boolean('Error', false)}
+                    required={boolean('Required', false)}
+                    fullWidth={boolean('Full Width', false)}
+                    indeterminate={boolean('Indeterminate', false)}
+                    labelPosition={select('Label Position', labelPositions, 'right')}
+                    errorText={text('Error Text', '')}
+                    checked={isChecked}
+                    onChange={onChangeHandler}
+                />
+            );
+        }}
+    </Story>
+</Preview>
+
+### Validations
+
+1. This component will call the validator prop function with latest value on blur, invalid & change event. If you havn't passed the validator function then it will show default html5 error validation meessage if present.
+
+```tsx
+export const FormWithCheckbox: React.SFC = props => {
+    const [checked, setChecked] = useState<boolean>(),
+        onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => setChecked(e.target.checked),
+        handleSubmit = (e: React.FormEvent) => e.preventDefault();
+    return (
+        <form onSubmit={handleSubmit}>
+            <Checkbox required label="By clicking Submit, I agree lorem ipsum" checked={checked} onChange={onChangeHandler} {...props} />
+            <Button type="submit">Submit</Button>
+        </form>
+    );
+};
+```
+
+<Preview withToolbar>
+    <FormWithCheckbox />
+</Preview>
+
+2. If you pass validator function then it will be called with latest selected value, so that if you want you can return the desired error message.
+
+```tsx
+validator={val => (!val ? 'Please accept the terms & conditions to continue.' : '')}
+```
+
+<Preview withToolbar>
+    <FormWithCheckbox validator={val => (!val ? 'Please accept the terms & conditions to continue.' : '')} />
 </Preview>
 
 ### Props
@@ -25,4 +83,4 @@ return <Checkbox label="Lorem Ipsum" checked={isChecked} onChange={onChangeHandl
 
 ### CheckboxTheme
 
-<Props of={stories.ThemeInterface} />
+<Props of={ThemeInterface} />

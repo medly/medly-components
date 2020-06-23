@@ -469,6 +469,15 @@ exports[`Form should render properly with initial state 1`] = `
   border-color: #13181D;
 }
 
+.c27:not(:disabled):focus:not(:checked) ~ .c28 {
+  border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
+}
+
+.c27:not(:disabled):focus:checked ~ .c28 {
+  box-shadow: 0 0 0.8rem #005AEE;
+}
+
 .c26 {
   margin: 0.3rem;
   width: 1.8rem;
@@ -662,17 +671,17 @@ exports[`Form should render properly with initial state 1`] = `
   color: #566c82;
 }
 
-.c4 .sc-fzoyTs,
+.c4 .sc-fzoNJl,
 .c4 .c58 {
   color: #566c82;
 }
 
-.c4 .sc-fzoyTs *,
+.c4 .sc-fzoNJl *,
 .c4 .c58 * {
   fill: #566c82;
 }
 
-.c4 ~ .sc-fzqARJ {
+.c4 ~ .sc-fzqNqU {
   color: #566c82;
 }
 
@@ -709,15 +718,15 @@ exports[`Form should render properly with initial state 1`] = `
   color: #005AEE;
 }
 
-.c4:focus-within .sc-fzoyTs,
-.c4:focus-within:hover .sc-fzoyTs,
+.c4:focus-within .sc-fzoNJl,
+.c4:focus-within:hover .sc-fzoNJl,
 .c4:focus-within .c58,
 .c4:focus-within:hover .c58 {
   color: #005AEE;
 }
 
-.c4:focus-within .sc-fzoyTs *,
-.c4:focus-within:hover .sc-fzoyTs *,
+.c4:focus-within .sc-fzoNJl *,
+.c4:focus-within:hover .sc-fzoNJl *,
 .c4:focus-within .c58 *,
 .c4:focus-within:hover .c58 * {
   fill: #005AEE;
@@ -967,7 +976,7 @@ exports[`Form should render properly with initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c12 .sc-fzoxKX {
+.c12 .sc-fzoKki {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -993,7 +1002,7 @@ exports[`Form should render properly with initial state 1`] = `
   grid-template-areas: 'field' 'description';
 }
 
-.c44 .sc-fzoxKX {
+.c44 .sc-fzoKki {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1018,7 +1027,7 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: column-reverse;
 }
 
-.c43 .sc-fznzOf {
+.c43 .sc-fznMnq {
   top: calc(100% + 5px);
   left: 0%;
 }
@@ -1034,7 +1043,7 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: column-reverse;
 }
 
-.c60 .sc-fznzOf {
+.c60 .sc-fznMnq {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -1414,9 +1423,13 @@ exports[`Form should render properly with initial state 1`] = `
   border-color: #98A7B7;
 }
 
-.c39:not(:disabled):checked ~ .c40,
+.c39:not(:disabled):checked ~ .c40 {
+  border-color: #005AEE;
+}
+
 .c39:not(:disabled):focus ~ .c40 {
   border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
 }
 
 .c38 {
@@ -1723,6 +1736,7 @@ exports[`Form should render properly with initial state 1`] = `
           class="c23"
           id="languages-options"
         >
+          
           <label
             class="c24"
             for="JAVA-languages"
@@ -1744,6 +1758,7 @@ exports[`Form should render properly with initial state 1`] = `
                 class="c27"
                 id="JAVA-languages"
                 name="java"
+                sizes="[object Object]"
                 type="checkbox"
               />
               <div
@@ -1765,6 +1780,7 @@ exports[`Form should render properly with initial state 1`] = `
               </div>
             </div>
           </label>
+          
           <label
             class="c32"
             for="RUBY-languages"
@@ -1785,6 +1801,7 @@ exports[`Form should render properly with initial state 1`] = `
                 class="c27"
                 id="RUBY-languages"
                 name="ruby"
+                sizes="[object Object]"
                 type="checkbox"
               />
               <div
@@ -1946,7 +1963,7 @@ exports[`Form should render properly with initial state 1`] = `
           >
             
             <div
-              class="sc-fzoxKX c45"
+              class="sc-fzoKki c45"
             >
               <input
                 autocomplete="off"
@@ -1983,7 +2000,7 @@ exports[`Form should render properly with initial state 1`] = `
             class="c49"
           >
             <div
-              class="sc-fznLPX c50"
+              class="sc-fzoaKM c50"
               data-testid="DateRangeInputGrid"
             >
               <label
@@ -2155,7 +2172,7 @@ exports[`Form should render properly with initial state 1`] = `
             >
               
               <div
-                class="sc-fzoxKX c45"
+                class="sc-fzoKki c45"
               >
                 <input
                   autocomplete="off"
@@ -2303,6 +2320,7 @@ exports[`Form should render properly with initial state 1`] = `
     <div
       class="c10"
     >
+      
       <label
         class="c72"
         for="agree"
@@ -2324,6 +2342,7 @@ exports[`Form should render properly with initial state 1`] = `
             class="c27"
             id="agree"
             name="agree"
+            sizes="[object Object]"
             type="checkbox"
           />
           <div
@@ -2673,6 +2692,15 @@ exports[`Form should render properly without initial state 1`] = `
   border-color: #13181D;
 }
 
+.c29:not(:disabled):focus:not(:checked) ~ .c30 {
+  border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
+}
+
+.c29:not(:disabled):focus:checked ~ .c30 {
+  box-shadow: 0 0 0.8rem #005AEE;
+}
+
 .c28 {
   margin: 0.3rem;
   width: 1.8rem;
@@ -2790,17 +2818,17 @@ exports[`Form should render properly without initial state 1`] = `
   color: #566c82;
 }
 
-.c7 .sc-fzoyTs,
+.c7 .sc-fzoNJl,
 .c7 .c59 {
   color: #566c82;
 }
 
-.c7 .sc-fzoyTs *,
+.c7 .sc-fzoNJl *,
 .c7 .c59 * {
   fill: #566c82;
 }
 
-.c7 ~ .sc-fzqARJ {
+.c7 ~ .sc-fzqNqU {
   color: #566c82;
 }
 
@@ -2837,15 +2865,15 @@ exports[`Form should render properly without initial state 1`] = `
   color: #005AEE;
 }
 
-.c7:focus-within .sc-fzoyTs,
-.c7:focus-within:hover .sc-fzoyTs,
+.c7:focus-within .sc-fzoNJl,
+.c7:focus-within:hover .sc-fzoNJl,
 .c7:focus-within .c59,
 .c7:focus-within:hover .c59 {
   color: #005AEE;
 }
 
-.c7:focus-within .sc-fzoyTs *,
-.c7:focus-within:hover .sc-fzoyTs *,
+.c7:focus-within .sc-fzoNJl *,
+.c7:focus-within:hover .sc-fzoNJl *,
 .c7:focus-within .c59 *,
 .c7:focus-within:hover .c59 * {
   fill: #005AEE;
@@ -3095,7 +3123,7 @@ exports[`Form should render properly without initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c15 .sc-fzoxKX {
+.c15 .sc-fzoKki {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3121,7 +3149,7 @@ exports[`Form should render properly without initial state 1`] = `
   grid-template-areas: 'field' 'description';
 }
 
-.c45 .sc-fzoxKX {
+.c45 .sc-fzoKki {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3146,7 +3174,7 @@ exports[`Form should render properly without initial state 1`] = `
   flex-direction: column-reverse;
 }
 
-.c44 .sc-fznzOf {
+.c44 .sc-fznMnq {
   top: calc(100% + 5px);
   left: 0%;
 }
@@ -3162,7 +3190,7 @@ exports[`Form should render properly without initial state 1`] = `
   flex-direction: column-reverse;
 }
 
-.c61 .sc-fznzOf {
+.c61 .sc-fznMnq {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -3542,9 +3570,13 @@ exports[`Form should render properly without initial state 1`] = `
   border-color: #98A7B7;
 }
 
-.c40:not(:disabled):checked ~ .c41,
+.c40:not(:disabled):checked ~ .c41 {
+  border-color: #005AEE;
+}
+
 .c40:not(:disabled):focus ~ .c41 {
   border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
 }
 
 .c39 {
@@ -3857,6 +3889,7 @@ exports[`Form should render properly without initial state 1`] = `
           class="c25"
           id="languages-options"
         >
+          
           <label
             class="c26"
             for="JAVA-languages"
@@ -3877,6 +3910,7 @@ exports[`Form should render properly without initial state 1`] = `
                 class="c29"
                 id="JAVA-languages"
                 name="java"
+                sizes="[object Object]"
                 type="checkbox"
               />
               <div
@@ -3898,6 +3932,7 @@ exports[`Form should render properly without initial state 1`] = `
               </div>
             </div>
           </label>
+          
           <label
             class="c26"
             for="RUBY-languages"
@@ -3918,6 +3953,7 @@ exports[`Form should render properly without initial state 1`] = `
                 class="c29"
                 id="RUBY-languages"
                 name="ruby"
+                sizes="[object Object]"
                 type="checkbox"
               />
               <div
@@ -4078,7 +4114,7 @@ exports[`Form should render properly without initial state 1`] = `
           >
             
             <div
-              class="sc-fzoxKX c46"
+              class="sc-fzoKki c46"
             >
               <input
                 autocomplete="off"
@@ -4115,7 +4151,7 @@ exports[`Form should render properly without initial state 1`] = `
             class="c50"
           >
             <div
-              class="sc-fznLPX c51"
+              class="sc-fzoaKM c51"
               data-testid="DateRangeInputGrid"
             >
               <label
@@ -4264,7 +4300,7 @@ exports[`Form should render properly without initial state 1`] = `
             >
               
               <div
-                class="sc-fzoxKX c46"
+                class="sc-fzoKki c46"
               >
                 <input
                   autocomplete="off"
@@ -4412,6 +4448,7 @@ exports[`Form should render properly without initial state 1`] = `
     <div
       class="c13"
     >
+      
       <label
         class="c71"
         for="agree"
@@ -4432,6 +4469,7 @@ exports[`Form should render properly without initial state 1`] = `
             class="c29"
             id="agree"
             name="agree"
+            sizes="[object Object]"
             type="checkbox"
           />
           <div
