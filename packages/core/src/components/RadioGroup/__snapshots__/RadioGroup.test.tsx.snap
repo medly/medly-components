@@ -106,9 +106,13 @@ exports[`Radio Group should render disabled state properly 1`] = `
   border-color: #98A7B7;
 }
 
-.c9:not(:disabled):checked ~ .c10,
+.c9:not(:disabled):checked ~ .c10 {
+  border-color: #005AEE;
+}
+
 .c9:not(:disabled):focus ~ .c10 {
   border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
 }
 
 .c8 {
@@ -339,9 +343,13 @@ exports[`Radio Group should render properly 1`] = `
   border-color: #98A7B7;
 }
 
-.c10:not(:disabled):checked ~ .c11,
+.c10:not(:disabled):checked ~ .c11 {
+  border-color: #005AEE;
+}
+
 .c10:not(:disabled):focus ~ .c11 {
   border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
 }
 
 .c9 {

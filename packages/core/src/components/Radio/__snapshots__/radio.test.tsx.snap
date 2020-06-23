@@ -57,9 +57,13 @@ exports[`Radio component should render correctly with bottom labelPosition 1`] =
   border-color: #98A7B7;
 }
 
-.c5:not(:disabled):checked ~ .c6,
+.c5:not(:disabled):checked ~ .c6 {
+  border-color: #005AEE;
+}
+
 .c5:not(:disabled):focus ~ .c6 {
   border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
 }
 
 .c4 {
@@ -157,9 +161,13 @@ exports[`Radio component should render correctly with checked false and checked 
   border-color: #98A7B7;
 }
 
-.c3:not(:disabled):checked ~ .c4,
+.c3:not(:disabled):checked ~ .c4 {
+  border-color: #005AEE;
+}
+
 .c3:not(:disabled):focus ~ .c4 {
   border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
 }
 
 .c2 {
@@ -255,9 +263,13 @@ exports[`Radio component should render correctly with checked false and disabled
   border-color: #98A7B7;
 }
 
-.c2:not(:disabled):checked ~ .c3,
+.c2:not(:disabled):checked ~ .c3 {
+  border-color: #005AEE;
+}
+
 .c2:not(:disabled):focus ~ .c3 {
   border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
 }
 
 .c1 {
@@ -351,9 +363,13 @@ exports[`Radio component should render correctly with checked false and hasError
   border-color: #98A7B7;
 }
 
-.c3:not(:disabled):checked ~ .c4,
+.c3:not(:disabled):checked ~ .c4 {
+  border-color: #cc0000;
+}
+
 .c3:not(:disabled):focus ~ .c4 {
   border-color: #cc0000;
+  box-shadow: 0 0 0.8rem #cc0000;
 }
 
 .c2 {
@@ -449,9 +465,13 @@ exports[`Radio component should render correctly with checked true and checked s
   border-color: #98A7B7;
 }
 
-.c3:not(:disabled):checked ~ .c4,
+.c3:not(:disabled):checked ~ .c4 {
+  border-color: #005AEE;
+}
+
 .c3:not(:disabled):focus ~ .c4 {
   border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
 }
 
 .c2 {
@@ -548,9 +568,13 @@ exports[`Radio component should render correctly with checked true and disabled 
   border-color: #98A7B7;
 }
 
-.c2:not(:disabled):checked ~ .c3,
+.c2:not(:disabled):checked ~ .c3 {
+  border-color: #005AEE;
+}
+
 .c2:not(:disabled):focus ~ .c3 {
   border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
 }
 
 .c1 {
@@ -645,9 +669,13 @@ exports[`Radio component should render correctly with checked true and hasError 
   border-color: #98A7B7;
 }
 
-.c3:not(:disabled):checked ~ .c4,
+.c3:not(:disabled):checked ~ .c4 {
+  border-color: #cc0000;
+}
+
 .c3:not(:disabled):focus ~ .c4 {
   border-color: #cc0000;
+  box-shadow: 0 0 0.8rem #cc0000;
 }
 
 .c2 {
@@ -766,9 +794,13 @@ exports[`Radio component should render correctly with left labelPosition 1`] = `
   border-color: #98A7B7;
 }
 
-.c5:not(:disabled):checked ~ .c6,
+.c5:not(:disabled):checked ~ .c6 {
+  border-color: #005AEE;
+}
+
 .c5:not(:disabled):focus ~ .c6 {
   border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
 }
 
 .c4 {
@@ -892,9 +924,13 @@ exports[`Radio component should render correctly with right labelPosition 1`] = 
   border-color: #98A7B7;
 }
 
-.c5:not(:disabled):checked ~ .c6,
+.c5:not(:disabled):checked ~ .c6 {
+  border-color: #005AEE;
+}
+
 .c5:not(:disabled):focus ~ .c6 {
   border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
 }
 
 .c4 {
@@ -1018,9 +1054,13 @@ exports[`Radio component should render correctly with top labelPosition 1`] = `
   border-color: #98A7B7;
 }
 
-.c5:not(:disabled):checked ~ .c6,
+.c5:not(:disabled):checked ~ .c6 {
+  border-color: #005AEE;
+}
+
 .c5:not(:disabled):focus ~ .c6 {
   border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
 }
 
 .c4 {

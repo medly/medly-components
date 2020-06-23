@@ -37,8 +37,13 @@ export const HiddenRadio = styled('input').attrs(({ theme }) => ({ type: 'radio'
         border-color: ${({ disabledBorderColor }) => disabledBorderColor.default};
     }
 
-    &:not(:disabled):checked ~ ${StyledRadio}, &:not(:disabled):focus ~ ${StyledRadio} {
+    &:not(:disabled):checked ~ ${StyledRadio} {
         border-color: ${({ borderColor, hasError }) => borderColor[hasError ? 'error' : 'active']};
+    }
+
+    &:not(:disabled):focus ~ ${StyledRadio} {
+        border-color: ${({ borderColor, hasError }) => borderColor[hasError ? 'error' : 'active']};
+        box-shadow: ${({ borderColor, hasError }) => `0 0 0.8rem ${borderColor[hasError ? 'error' : 'active']}`};
     }
 `;
 

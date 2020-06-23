@@ -22,6 +22,7 @@ export const RadioGroup: FC<Props> & WithStyle = React.memo(
             columns,
             validator,
             onChange,
+            onBlur,
             onInvalid,
             ...wrapperProps
         } = props;
@@ -33,20 +34,38 @@ export const RadioGroup: FC<Props> & WithStyle = React.memo(
             hasError = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]),
             hasHelperOrErrorText = useMemo(() => !!(errorText || helperText), [errorText, helperText]);
 
+        const validate = useCallback(
+            (element: HTMLInputElement) => {
+                const message = (validator && validator(value)) || element.validationMessage;
+                setErrorMessage(message);
+            },
+            [validator, value]
+        );
+
         const handleOnInvalid = useCallback(
                 (event: React.FormEvent<HTMLInputElement>) => {
-                    event.preventDefault();
-                    const element = event.target as HTMLInputElement,
-                        message = (validator && validator(value)) || element.validationMessage;
-                    setErrorMessage(message);
+                    validate(event.target as HTMLInputElement);
                     onInvalid && onInvalid(event);
                 },
-                [value, validator, onInvalid]
+                [validate, onInvalid]
             ),
-            handleOnChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-                const value = event.target.value;
-                onChange && onChange(value);
-            }, []);
+            handleOnBlur = useCallback(
+                (event: React.FocusEvent<HTMLDivElement>) => {
+                    const currentTarget = event.currentTarget,
+                        target = event.target as HTMLInputElement;
+                    setTimeout(() => !currentTarget.contains(document.activeElement) && validate(target), 0);
+                    onBlur && onBlur(event);
+                },
+                [validate, onBlur]
+            ),
+            handleOnChange = useCallback(
+                (event: React.ChangeEvent<HTMLInputElement>) => {
+                    const value = event.target.value;
+                    validate(event.target as HTMLInputElement);
+                    onChange && onChange(value);
+                },
+                [validate]
+            );
 
         return (
             <SelectorGroup.Wrapper
@@ -54,22 +73,23 @@ export const RadioGroup: FC<Props> & WithStyle = React.memo(
                 ref={radioGroupRef}
                 type="radio"
                 aria-describedby={`${radioGroupId}-helper-text`}
+                onBlur={handleOnBlur}
+                onInvalid={handleOnInvalid}
                 {...{ ...wrapperProps, hasHelperOrErrorText }}
             >
                 {label && (
                     <SelectorGroup.Label
-                        id={`${radioGroupId}-label`}
                         type="radio"
-                        required={required}
-                        disabled={disabled}
+                        id={`${radioGroupId}-label`}
                         textVariant={labelVariant}
                         textWeight={labelWeight}
+                        {...{ required, disabled }}
                     >
                         {label}
                     </SelectorGroup.Label>
                 )}
                 {(hasError || helperText) && (
-                    <SelectorGroup.HelperText id={`${radioGroupId}-helper-text`} type="radio" disabled={disabled} hasError={hasError}>
+                    <SelectorGroup.HelperText id={`${radioGroupId}-helper-text`} type="radio" {...{ disabled, hasError }}>
                         {errorText || builtInErrorMessage || helperText}
                     </SelectorGroup.HelperText>
                 )}
@@ -78,14 +98,9 @@ export const RadioGroup: FC<Props> & WithStyle = React.memo(
                         <Radio
                             id={`${option.label}-${radioGroupId}`}
                             key={option.value}
-                            name={name}
-                            size={size}
-                            required={required}
-                            hasError={hasError}
                             onChange={handleOnChange}
-                            onInvalid={handleOnInvalid}
                             checked={option.value === value}
-                            {...{ ...option, disabled: disabled || option.disabled }}
+                            {...{ ...option, disabled: disabled || option.disabled, name, size, required, hasError }}
                         />
                     ))}
                 </SelectorGroup.Options>

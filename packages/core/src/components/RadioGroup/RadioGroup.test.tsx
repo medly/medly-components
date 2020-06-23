@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@test-utils';
+import { fireEvent, render, screen, waitFor } from '@test-utils';
 import userEvent from '@testing-library/user-event';
 import React from 'react';
 import { RadioGroup } from './RadioGroup';
@@ -12,12 +12,14 @@ const renderer = ({
     required = false,
     validator = undefined,
     onInvalid = jest.fn(),
+    onBlur = jest.fn(),
     disabled = false,
     options = [
         { value: 'female', label: 'Female' },
         { value: 'male', label: 'Male' }
     ]
-}) => render(<RadioGroup {...{ required, disabled, label, name, onInvalid, validator, helperText, options, errorText, onChange }} />);
+}) =>
+    render(<RadioGroup {...{ required, disabled, label, name, onInvalid, onBlur, validator, helperText, options, errorText, onChange }} />);
 
 describe('Radio Group', () => {
     it('should render properly', () => {
@@ -44,17 +46,27 @@ describe('Radio Group', () => {
         expect(mockOnChange).toBeCalledWith('male');
     });
 
-    it('should show the html5 form validation error', async () => {
+    it('should show the html5 form validation on error', () => {
         renderer({ required: true });
         fireEvent.invalid(screen.getByRole('radio', { name: 'Female' }));
         expect(screen.getByText('Constraints not satisfied')).toBeInTheDocument();
     });
 
-    it('should call the validator function if provided', async () => {
+    it('should call the validator function if provided on error', () => {
         const mockOnInvalid = jest.fn();
         renderer({ onInvalid: mockOnInvalid, validator: (val: string) => (!val ? 'Please select any one gender' : '') });
         fireEvent.invalid(screen.getByRole('radio', { name: 'Female' }));
         expect(screen.getByText('Please select any one gender')).toBeInTheDocument();
         expect(mockOnInvalid).toBeCalled();
+    });
+
+    it('should call validator function on blur', async () => {
+        const mockOnBlur = jest.fn();
+        renderer({
+            onBlur: mockOnBlur,
+            validator: (val: string) => (!val ? 'Please select any one gender' : '')
+        });
+        fireEvent.blur(screen.getByRole('radio', { name: 'Female' }));
+        await waitFor(() => expect(screen.getByText('Please select any one gender')).toBeInTheDocument());
     });
 });
