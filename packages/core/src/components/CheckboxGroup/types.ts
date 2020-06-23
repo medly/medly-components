@@ -46,6 +46,8 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChang
     helperText?: string;
     /** Use this prop to render option in multiple columns */
     columns?: number;
+    /** Function will called with the input value on blur and change event */
+    validator?: (values: any[]) => string;
     /** This will be handled internally */
     parentHasError?: boolean;
 }

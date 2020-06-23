@@ -5,7 +5,7 @@ import { Props } from './types';
 
 export const sizes: Props['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
 
-export const FormWithRadioGroup: React.SFC = props => {
+export const FormWithRadioGroup: React.FC = props => {
     const [value, setValue] = useState(),
         handleSubmit = (e: React.FormEvent) => e.preventDefault();
 

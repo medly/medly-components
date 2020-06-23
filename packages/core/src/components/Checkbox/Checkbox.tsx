@@ -18,15 +18,12 @@ export const Checkbox: FC<Props> & WithStyle = React.memo(
             validator,
             hasError,
             errorText,
-            onBlur,
-            onInvalid,
-            onChange,
             ...inputProps
         } = props;
 
-        const inputId = useMemo(() => id || label, [id, label]),
+        const [builtInErrorMessage, setErrorMessage] = useState(''),
+            inputId = useMemo(() => id || label, [id, label]),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
-            [builtInErrorMessage, setErrorMessage] = useState(''),
             isActive = useMemo(() => inputProps.checked || inputProps.defaultChecked || indeterminate, [
                 inputProps.checked,
                 inputProps.defaultChecked,
@@ -35,8 +32,7 @@ export const Checkbox: FC<Props> & WithStyle = React.memo(
             isErrorPresent = useMemo(() => !!errorText || hasError || !!builtInErrorMessage, [errorText, hasError, builtInErrorMessage]);
 
         const validate = useCallback(
-                (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void, preventDefault = true) => {
-                    preventDefault && event.preventDefault();
+                (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
                     const element = event.target as HTMLInputElement,
                         message = (validator && validator(element.checked)) || element.validationMessage;
                     setErrorMessage(message);
@@ -44,9 +40,9 @@ export const Checkbox: FC<Props> & WithStyle = React.memo(
                 },
                 [validator]
             ),
-            handleOnBlur = useCallback((event: FocusEvent<HTMLInputElement>) => validate(event, onBlur), [validate, onBlur]),
-            handleOnInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, onInvalid), [validate, onInvalid]),
-            handleOnChange = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, onChange, false), [validate, onChange]);
+            onBlur = useCallback((event: FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [validate, props.onBlur]),
+            onInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validate, props.onInvalid]),
+            onChange = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onChange), [validate, props.onChange]);
 
         return (
             <>
@@ -79,10 +75,7 @@ export const Checkbox: FC<Props> & WithStyle = React.memo(
                             id={inputId}
                             indeterminate={indeterminate}
                             hasError={isErrorPresent}
-                            onBlur={handleOnBlur}
-                            onInvalid={handleOnInvalid}
-                            onChange={handleOnChange}
-                            {...inputProps}
+                            {...{ ...inputProps, onBlur, onInvalid, onChange }}
                         />
                         <Styled.StyledCheckbox>{indeterminate ? <MinimizeIcon /> : <CheckIcon />}</Styled.StyledCheckbox>
                     </Styled.CheckboxWrapper>

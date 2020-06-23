@@ -50,7 +50,7 @@ return <Checkbox label="Lorem Ipsum" checked={isChecked} onChange={onChangeHandl
 1. This component will call the validator prop function with latest value on blur, invalid & change event. If you havn't passed the validator function then it will show default html5 error validation meessage if present.
 
 ```tsx
-export const FormWithCheckbox: React.SFC = props => {
+export const FormWithCheckbox: React.FC = props => {
     const [checked, setChecked] = useState<boolean>(),
         onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => setChecked(e.target.checked),
         handleSubmit = (e: React.FormEvent) => e.preventDefault();
@@ -74,7 +74,10 @@ validator={val => (!val ? 'Please accept the terms & conditions to continue.' : 
 ```
 
 <Preview withToolbar>
-    <FormWithCheckbox validator={val => (!val ? 'Please accept the terms & conditions to continue.' : '')} />
+    <FormWithCheckbox
+        label="By clicking Submit, I agree lorem"
+        validator={val => (!val ? 'Please accept the terms & conditions to continue.' : '')}
+    />
 </Preview>
 
 ### Props

@@ -27,9 +27,8 @@ export const RadioGroup: FC<Props> & WithStyle = React.memo(
             ...wrapperProps
         } = props;
 
-        const [builtInErrorMessage, setErrorMessage] = useState('');
-
-        const radioGroupId = useMemo(() => id || name, [id, name]),
+        const [builtInErrorMessage, setErrorMessage] = useState(''),
+            radioGroupId = useMemo(() => id || name, [id, name]),
             radioGroupRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
             hasError = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]),
             hasHelperOrErrorText = useMemo(() => !!(errorText || helperText), [errorText, helperText]);

@@ -11,7 +11,7 @@ export type SelectorGroupWrapperProps = HTMLProps<HTMLDivElement> & {
 
 export type SelectorGroupOptionsProps = HTMLProps<HTMLDivElement> & { columns?: number; isIndented?: boolean };
 
-export type SelectorGroupHelperTextProps = GetComponentProps<typeof Text> & {
+export type SelectorHelperTextProps = GetComponentProps<typeof Text> & {
     hasError?: boolean;
     isIndented?: boolean;
     disabled?: boolean;

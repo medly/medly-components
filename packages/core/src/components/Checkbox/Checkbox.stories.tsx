@@ -11,23 +11,19 @@ ThemeInterface.defaultProps = {
     ...defaultTheme.checkbox
 };
 
-export const FormWithCheckbox: React.SFC = props => {
+export const FormWithCheckbox: React.FC = props => {
     const [checked, setChecked] = useState<boolean>(),
         onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => setChecked(e.target.checked),
         handleSubmit = (e: React.FormEvent) => e.preventDefault();
     return (
         <form onSubmit={handleSubmit}>
-            <Checkbox
-                fullWidth
-                required
-                label="By clicking Submit, I agree lorem ipsum"
-                checked={checked}
-                onChange={onChangeHandler}
-                {...props}
-            />
+            <Checkbox fullWidth required checked={checked} onChange={onChangeHandler} {...props} />
             <Button size="S" type="submit">
                 Submit
             </Button>
         </form>
     );
+};
+FormWithCheckbox.defaultProps = {
+    label: 'By clicking Submit, I agree lorem ipsum'
 };

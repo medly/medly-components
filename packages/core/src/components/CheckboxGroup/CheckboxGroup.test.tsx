@@ -1,4 +1,4 @@
-import { render, screen } from '@test-utils';
+import { fireEvent, render, screen, waitFor } from '@test-utils';
 import userEvent from '@testing-library/user-event';
 import React from 'react';
 import { CheckboxGroup } from './CheckboxGroup';
@@ -11,7 +11,9 @@ const renderer = ({
     required = false,
     disabled = false,
     showSelectAll = false,
+    onBlur = jest.fn(),
     values = ['hyundai'],
+    validator = undefined,
     options = [
         { value: 'honda', label: 'Honda' },
         { value: 'hyundai', label: 'Hyundai' },
@@ -24,7 +26,12 @@ const renderer = ({
             label: 'Tata'
         }
     ]
-}) => render(<CheckboxGroup {...{ values, required, showSelectAll, disabled, label, helperText, options, errorText, onChange }} />);
+}) =>
+    render(
+        <CheckboxGroup
+            {...{ values, required, showSelectAll, validator, onBlur, disabled, label, helperText, options, errorText, onChange }}
+        />
+    );
 
 describe('CheckboxGroup component', () => {
     it('should render properly', () => {
@@ -81,6 +88,30 @@ describe('CheckboxGroup component', () => {
         const errorText = screen.getByText('Something went wrong');
         expect(errorText).toBeInTheDocument();
         expect(errorText).toHaveStyle(`color: rgb(204, 0, 0)`);
+    });
+
+    it('should call validator function on blur', async () => {
+        const mockOnBlur = jest.fn();
+        const { container } = renderer({
+            values: [],
+            onBlur: mockOnBlur,
+            validator: (val: string) => (val.length === 0 ? 'Please select at least one car' : '')
+        });
+        fireEvent.blur(container.querySelector('#Cars-wrapper'));
+        await waitFor(() => expect(screen.getByText('Please select at least one car')).toBeInTheDocument());
+        expect(mockOnBlur).toBeCalled();
+    });
+
+    it('should show default error message on blur when we pass required prop', async () => {
+        const mockOnBlur = jest.fn();
+        const { container } = renderer({
+            required: true,
+            values: [],
+            onBlur: mockOnBlur
+        });
+        fireEvent.blur(container.querySelector('#Cars-wrapper'));
+        await waitFor(() => expect(screen.getByText('Please select at least one option.')).toBeInTheDocument());
+        expect(mockOnBlur).toBeCalled();
     });
 
     describe('nested options', () => {

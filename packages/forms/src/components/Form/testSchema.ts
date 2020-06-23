@@ -27,6 +27,7 @@ export const testSchema: FormFieldSchema = {
         description: 'File size should be less than 5MB'
     },
     languages: {
+        required: true,
         type: 'checkbox-group',
         label: 'Languages',
         options: [
@@ -38,7 +39,6 @@ export const testSchema: FormFieldSchema = {
         type: 'radio-group',
         label: 'Role',
         required: true,
-        columns: 3,
         options: [
             { value: 'front-end', label: 'Front End' },
             { value: 'back-end', label: 'Back End' },

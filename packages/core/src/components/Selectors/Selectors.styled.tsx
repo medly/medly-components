@@ -1,9 +1,9 @@
 import { asterisk, css, styled } from '@medly-components/utils';
 import Text from '../Text';
 import {
-    SelectorGroupHelperTextProps,
     SelectorGroupOptionsProps,
     SelectorGroupWrapperProps,
+    SelectorHelperTextProps,
     SelectorLabelPositionStyleProps,
     SelectorLabelProps
 } from './types';
@@ -36,7 +36,7 @@ SelectorGroupOptions.defaultProps = {
     isIndented: false
 };
 
-export const SelectorGroupHelperText = styled('span')<SelectorGroupHelperTextProps>`
+export const SelectorHelperText = styled('span')<SelectorHelperTextProps>`
     white-space: initial;
     font-size: ${({ hasError }) => (hasError ? '1.2rem' : '1.4rem')};
     line-height: ${({ hasError }) => (hasError ? '1.6rem' : '2.2rem')};
@@ -81,6 +81,6 @@ export const getSelectorLabelPositionStyle = ({ labelPosition, fullWidth }: Sele
 export const SelectorGroup = {
     Wrapper: SelectorGroupWrapper,
     Label: SelectorLabel,
-    HelperText: SelectorGroupHelperText,
+    HelperText: SelectorHelperText,
     Options: SelectorGroupOptions
 };

@@ -21,7 +21,7 @@ export interface Props extends InputProps, WithThemeProp {
     indeterminate?: boolean;
     /** Error Text */
     errorText?: string;
-    /** Function will called with the input value on Blur, change and invalid event */
+    /** Function will called with the input value on blur, change and invalid event */
     validator?: (checked: boolean) => string;
     /** This will be used internally by Checkbox group */
     hasError?: boolean;
