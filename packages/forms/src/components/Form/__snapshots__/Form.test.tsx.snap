@@ -374,8 +374,9 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c22::after {
-  color: red;
   content: ' *';
+  color: default:inherit;
+  disabled: #98A7B7;
 }
 
 .c25 {
@@ -401,10 +402,10 @@ exports[`Form should render properly with initial state 1`] = `
   border-radius: 22.2%;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -417,7 +418,6 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c29 .c30 {
   z-index: 1;
-  position: absolute;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   -webkit-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
@@ -2584,8 +2584,9 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c24::after {
-  color: red;
   content: ' *';
+  color: default:inherit;
+  disabled: #98A7B7;
 }
 
 .c27 {
@@ -2611,10 +2612,10 @@ exports[`Form should render properly without initial state 1`] = `
   border-radius: 22.2%;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -2627,7 +2628,6 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c31 .c32 {
   z-index: 1;
-  position: absolute;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
   -webkit-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;

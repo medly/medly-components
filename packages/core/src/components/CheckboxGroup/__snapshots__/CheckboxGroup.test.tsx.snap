@@ -652,7 +652,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
 
 .c9:checked ~ .c10 {
   border-color: #dfe4e9;
-  background-color: #98A7B7;
+  background-color: #dfe4e9;
 }
 
 .c9:checked ~ .c10 .c12 {
@@ -1131,7 +1131,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
 
 .c9:checked ~ .c10 {
   border-color: #dfe4e9;
-  background-color: #98A7B7;
+  background-color: #dfe4e9;
 }
 
 .c9:checked ~ .c10 .c12 {

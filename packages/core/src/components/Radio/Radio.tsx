@@ -21,6 +21,7 @@ export const Radio: FC<Props> & WithStyle = React.memo(
                     <SelectorLabel
                         id={`${inputId}-label`}
                         type="radio"
+                        hasError={hasError}
                         labelPosition={labelPosition}
                         textVariant={labelVariant}
                         textWeight={labelWeight}

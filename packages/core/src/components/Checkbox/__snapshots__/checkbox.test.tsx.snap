@@ -435,7 +435,7 @@ exports[`Checkbox component should render correctly with checked false and disab
 
 .c4:checked ~ .c5 {
   border-color: #dfe4e9;
-  background-color: #98A7B7;
+  background-color: #dfe4e9;
 }
 
 .c4:checked ~ .c5 .c7 {
@@ -1180,7 +1180,7 @@ exports[`Checkbox component should render correctly with checked true and disabl
 
 .c4:checked ~ .c5 {
   border-color: #dfe4e9;
-  background-color: #98A7B7;
+  background-color: #dfe4e9;
 }
 
 .c4:checked ~ .c5 .c7 {

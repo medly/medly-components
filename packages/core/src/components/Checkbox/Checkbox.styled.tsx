@@ -8,12 +8,12 @@ import { Props } from './types';
 const getCheckboxSize = ({ theme, size }: { size?: CheckboxSizes } & WithThemeProp) =>
     theme.checkbox.sizes[size || theme.checkbox.defaultSize];
 
-const activeStyle = ({ iconColor, hasError, disabled, bgColor, borderColor }: Props & CheckboxTheme) => {
+const activeStyle = ({ iconColor, hasError, disabled, bgColor }: Props & CheckboxTheme) => {
     const checkboxState = disabled ? 'disabled' : hasError ? 'error' : 'active';
 
     return css`
         border-color: ${bgColor[checkboxState]};
-        background-color: ${borderColor[checkboxState]};
+        background-color: ${bgColor[checkboxState]};
         ${SvgIcon} {
             transform: scale(0.7);
             * {

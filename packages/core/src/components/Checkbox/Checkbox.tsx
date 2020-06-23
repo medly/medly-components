@@ -32,7 +32,8 @@ export const Checkbox: FC<Props> & WithStyle = React.memo(
             isErrorPresent = useMemo(() => !!errorText || hasError || !!builtInErrorMessage, [errorText, hasError, builtInErrorMessage]);
 
         const validate = useCallback(
-                (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
+                (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void, preventDefault = true) => {
+                    preventDefault && event.preventDefault();
                     const element = event.target as HTMLInputElement,
                         message = (validator && validator(element.checked)) || element.validationMessage;
                     setErrorMessage(message);
@@ -42,7 +43,10 @@ export const Checkbox: FC<Props> & WithStyle = React.memo(
             ),
             onBlur = useCallback((event: FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [validate, props.onBlur]),
             onInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validate, props.onInvalid]),
-            onChange = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onChange), [validate, props.onChange]);
+            onChange = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onChange, false), [
+                validate,
+                props.onChange
+            ]);
 
         return (
             <>
@@ -61,6 +65,7 @@ export const Checkbox: FC<Props> & WithStyle = React.memo(
                         <SelectorLabel
                             id={`${inputId}-label`}
                             type="checkbox"
+                            hasError={isErrorPresent}
                             labelPosition={labelPosition}
                             textVariant={labelVariant}
                             textWeight={labelWeight}

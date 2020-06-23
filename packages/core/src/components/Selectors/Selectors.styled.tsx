@@ -1,4 +1,4 @@
-import { asterisk, css, styled } from '@medly-components/utils';
+import { css, styled } from '@medly-components/utils';
 import Text from '../Text';
 import {
     SelectorGroupOptionsProps,
@@ -15,6 +15,13 @@ export const SelectorGroupWrapper = styled('div')<SelectorGroupWrapperProps>`
 
     & > :first-child {
         margin-bottom: ${({ hasHelperOrErrorText }) => !hasHelperOrErrorText && '0.9rem'};
+    }
+`;
+
+export const asterisk = ({ hasError, theme, type }: SelectorLabelProps) => css`
+    ::after {
+        content: ' *';
+        color: ${hasError ? theme[type].helperTextColor.error : theme[type].labelColor};
     }
 `;
 

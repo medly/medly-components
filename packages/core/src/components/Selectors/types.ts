@@ -21,6 +21,7 @@ export type SelectorHelperTextProps = GetComponentProps<typeof Text> & {
 export type SelectorLabelPositions = 'left' | 'right' | 'top' | 'bottom';
 
 export type SelectorLabelProps = GetComponentProps<typeof Text> & {
+    hasError?: boolean;
     type: 'radio' | 'checkbox';
     labelPosition?: SelectorLabelPositions;
 };

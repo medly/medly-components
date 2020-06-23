@@ -104,6 +104,7 @@ export const CheckboxGroup: FC<Props> & WithStyle = React.memo(
                         <SelectorGroup.Label
                             id={`${checkboxGroupId}-label`}
                             type="checkbox"
+                            hasError={hasError}
                             required={required}
                             disabled={disabled}
                             textVariant={labelVariant}
