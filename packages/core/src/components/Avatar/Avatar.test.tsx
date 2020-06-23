@@ -52,7 +52,6 @@ describe('Avatar component', () => {
                 size="M"
                 textColor={defaultTheme.colors.green[500]}
                 bgColor={defaultTheme.colors.green[100]}
-                withHoverEffect={false}
                 hoverBgColor={defaultTheme.colors.green[400]}
                 hoverTextColor={defaultTheme.colors.white}
                 hoverImgShadowColor="rgba(96, 120, 144, 0.35)"
