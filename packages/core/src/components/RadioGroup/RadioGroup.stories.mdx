@@ -4,7 +4,17 @@ import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { FormWithRadioGroup, sizes } from './RadioGroup.stories';
 import { useState } from 'react';
 
-<Meta title="Core" component={RadioGroup} parameters={{ jest: ['RadioGroup.test.tsx'] }} />
+<Meta
+    title="Core"
+    component={RadioGroup}
+    parameters={{
+        jest: ['RadioGroup.test.tsx'],
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=239%3A0'
+        }
+    }}
+/>
 
 # RadioGroup
 

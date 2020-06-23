@@ -4,7 +4,17 @@ import { sizes, FormWithCheckboxGroup } from './CheckboxGroup.stories';
 import { boolean, number, select, text } from '@storybook/addon-knobs';
 import { useState } from 'react';
 
-<Meta title="Core" component={CheckboxGroup} parameters={{ jest: ['CheckboxGroup.test.tsx'] }} />
+<Meta
+    title="Core"
+    component={CheckboxGroup}
+    parameters={{
+        jest: ['CheckboxGroup.test.tsx'],
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=239%3A0'
+        }
+    }}
+/>
 
 # CheckboxGroup
 

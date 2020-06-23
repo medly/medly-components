@@ -2,7 +2,17 @@ import { Radio } from './Radio';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Radio.stories';
 
-<Meta title="Core" component={Radio} parameters={{ jest: ['Radio.test.tsx'] }} />
+<Meta
+    title="Core"
+    component={Radio}
+    parameters={{
+        jest: ['Radio.test.tsx'],
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=239%3A0'
+        }
+    }}
+/>
 
 # Radio
 

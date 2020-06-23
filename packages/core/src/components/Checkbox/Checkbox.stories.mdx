@@ -4,7 +4,17 @@ import { labelPositions, sizes, ThemeInterface, FormWithCheckbox } from './Check
 import { useState } from 'react';
 import { boolean, select, text } from '@storybook/addon-knobs';
 
-<Meta title="Core" component={Checkbox} parameters={{ jest: ['Checkbox.test.tsx'] }} />
+<Meta
+    title="Core"
+    component={Checkbox}
+    parameters={{
+        jest: ['Checkbox.test.tsx'],
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=239%3A0'
+        }
+    }}
+/>
 
 # Checkbox
 
