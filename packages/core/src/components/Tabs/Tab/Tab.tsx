@@ -5,7 +5,7 @@ import * as Styled from './Tab.styled';
 import { Props } from './types';
 
 export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
-    const { id, active, label, icon: Icon = null, secondaryLabel, tabSize, ...restProps } = props;
+    const { id, active, label, icon: Icon = null, secondaryLabel, count, tabSize, ...restProps } = props;
 
     return (
         <Styled.TabWrapper
@@ -16,11 +16,16 @@ export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
             aria-controls={`panel-${id}`}
             tabIndex={active ? 0 : -1}
         >
-            {Icon && <Icon focusable={false} />}
-            <Styled.LabelWrapper secondaryLabel={secondaryLabel} tabSize={tabSize} hasIcon={!!Icon}>
-                <Text>{label}</Text>
-                {secondaryLabel && tabSize === 'L' && <p>{secondaryLabel}</p>}
-            </Styled.LabelWrapper>
+            <Styled.ClickableArea active={active} hasIcon={!!Icon} tabSize={tabSize} disabled={restProps.disabled}>
+                {Icon && <Icon focusable={false} />}
+                <Styled.LabelAndDetailsWrapper hasIcon={!!Icon}>
+                    <Styled.LabelWrapper secondaryLabel={secondaryLabel} tabSize={tabSize}>
+                        <Text>{label}</Text>
+                        {count && <Styled.Count tabSize={tabSize}>{count}</Styled.Count>}
+                    </Styled.LabelWrapper>
+                    {secondaryLabel && tabSize === 'L' && <Styled.SecondaryLabel>{secondaryLabel}</Styled.SecondaryLabel>}
+                </Styled.LabelAndDetailsWrapper>
+            </Styled.ClickableArea>
         </Styled.TabWrapper>
     );
 });

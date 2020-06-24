@@ -8,6 +8,13 @@ export interface StyledProps extends HTMLProps<HTMLButtonElement> {
     secondaryLabel?: string;
 }
 
+export interface WrapperProps extends HTMLProps<HTMLDivElement> {
+    active?: boolean;
+    hasIcon?: boolean;
+    tabSize?: TabSize;
+    secondaryLabel?: string;
+}
+
 export interface Props extends StyledProps {
     /** Id of tab */
     id: any;
