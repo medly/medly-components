@@ -24,5 +24,5 @@ export const Cell = styled('td')<StyledProps>`
 
 Cell.defaultProps = {
     align: 'left',
-    wrapText: false
+    wrapText: true
 };

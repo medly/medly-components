@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CardTable Cell should be able to "center" align  1`] = `
-.c1 {
+.c2 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -34,6 +34,12 @@ exports[`CardTable Cell should be able to "center" align  1`] = `
   overflow: hidden;
 }
 
+.c0 .c1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 <div>
   <table>
     <tbody>
@@ -42,7 +48,7 @@ exports[`CardTable Cell should be able to "center" align  1`] = `
           class="c0"
         >
           <span
-            class="c1"
+            class="c1 c2"
             title="text"
           >
             text
@@ -55,7 +61,7 @@ exports[`CardTable Cell should be able to "center" align  1`] = `
 `;
 
 exports[`CardTable Cell should be able to "left" align  1`] = `
-.c1 {
+.c2 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -88,6 +94,12 @@ exports[`CardTable Cell should be able to "left" align  1`] = `
   overflow: hidden;
 }
 
+.c0 .c1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 <div>
   <table>
     <tbody>
@@ -96,7 +108,7 @@ exports[`CardTable Cell should be able to "left" align  1`] = `
           class="c0"
         >
           <span
-            class="c1"
+            class="c1 c2"
             title="text"
           >
             text
@@ -109,7 +121,7 @@ exports[`CardTable Cell should be able to "left" align  1`] = `
 `;
 
 exports[`CardTable Cell should be able to "right" align  1`] = `
-.c1 {
+.c2 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -142,6 +154,12 @@ exports[`CardTable Cell should be able to "right" align  1`] = `
   overflow: hidden;
 }
 
+.c0 .c1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 <div>
   <table>
     <tbody>
@@ -150,7 +168,7 @@ exports[`CardTable Cell should be able to "right" align  1`] = `
           class="c0"
         >
           <span
-            class="c1"
+            class="c1 c2"
             title="text"
           >
             text
@@ -273,7 +291,7 @@ exports[`CardTable Cell should render cell with text component with wrap text as
 `;
 
 exports[`CardTable Cell should render cell with text properly 1`] = `
-.c1 {
+.c2 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -306,6 +324,12 @@ exports[`CardTable Cell should render cell with text properly 1`] = `
   overflow: hidden;
 }
 
+.c0 .c1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 <div>
   <table>
     <tbody>
@@ -314,7 +338,7 @@ exports[`CardTable Cell should render cell with text properly 1`] = `
           class="c0"
         >
           <span
-            class="c1"
+            class="c1 c2"
             title="text"
           >
             text

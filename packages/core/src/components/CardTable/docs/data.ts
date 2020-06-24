@@ -17,7 +17,7 @@ const data = [
     {
         id: 3,
         patientInfo: 'Christine Mary Bob Lobowski',
-        rxInfo: 'Lanoxin 125mg',
+        rxInfo: 'Lanoxin Carbinoxamine Metaformin 125mg',
         price: '89.49',
         status: 'Billed'
     },
