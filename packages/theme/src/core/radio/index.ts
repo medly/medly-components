@@ -3,18 +3,35 @@ import { RadioTheme } from './types';
 
 const radio: RadioTheme = {
     sizes: {
-        XS: '12px',
-        S: '16px',
-        M: '24px',
-        L: '36px',
-        XL: '48px'
+        XS: '1.4rem',
+        S: '1.8rem',
+        M: '2.2rem',
+        L: '2.6rem',
+        XL: '3rem'
     },
-    defaultSize: '16px',
-    bgColor: colors.white,
-    fillColor: colors.professionalNavy,
-    borderColor: colors.grey[300],
-    disabledBgcolor: colors.grey[300],
-    outlineColor: colors.professionalNavy
+    defaultSize: 'S',
+    labelColor: {
+        default: 'inherit',
+        disabled: colors.grey[500]
+    },
+    helperTextColor: {
+        default: colors.black,
+        disabled: colors.grey[500],
+        error: colors.red[500]
+    },
+    borderColor: {
+        default: colors.black,
+        active: colors.communityBlue[500],
+        error: colors.red[500]
+    },
+    disabledBorderColor: {
+        active: colors.grey[200],
+        default: colors.grey[500]
+    },
+    hoveredBorderColor: {
+        active: colors.communityBlue[400],
+        error: colors.red[400]
+    }
 };
 
 export default radio;

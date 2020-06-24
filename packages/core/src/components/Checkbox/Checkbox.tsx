@@ -1,11 +1,9 @@
 import { CheckIcon, MinimizeIcon } from '@medly-components/icons';
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useMemo } from 'react';
-import FieldWithLabel from '../FieldWithLabel';
-import Text from '../Text';
+import React, { FC, FocusEvent, FormEvent, useCallback, useMemo, useState } from 'react';
+import { SelectorLabel } from '../Selectors';
 import * as Styled from './Checkbox.styled';
 import { Props } from './types';
-
 export const Checkbox: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
@@ -16,56 +14,86 @@ export const Checkbox: FC<Props> & WithStyle = React.memo(
             labelPosition,
             labelVariant,
             labelWeight,
-            labelColor,
             indeterminate,
-            onChange,
+            validator,
             hasError,
-            ...restProps
+            errorText,
+            ...inputProps
         } = props;
 
-        const inputId = useMemo(() => id || label, [id, label]),
+        const [builtInErrorMessage, setErrorMessage] = useState(''),
+            inputId = useMemo(() => id || label, [id, label]),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
-            isActive = useMemo(() => restProps.checked || restProps.defaultChecked || indeterminate, [
-                restProps.checked,
-                restProps.defaultChecked,
+            isActive = useMemo(() => inputProps.checked || inputProps.defaultChecked || indeterminate, [
+                inputProps.checked,
+                inputProps.defaultChecked,
                 indeterminate
+            ]),
+            isErrorPresent = useMemo(() => !!errorText || hasError || !!builtInErrorMessage, [errorText, hasError, builtInErrorMessage]);
+
+        const validate = useCallback(
+                (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void, preventDefault = true) => {
+                    preventDefault && event.preventDefault();
+                    const element = event.target as HTMLInputElement,
+                        message = (validator && validator(element.checked)) || element.validationMessage;
+                    setErrorMessage(message);
+                    eventFunc && eventFunc(event);
+                },
+                [validator]
+            ),
+            onBlur = useCallback((event: FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [validate, props.onBlur]),
+            onInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validate, props.onInvalid]),
+            onChange = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onChange, false), [
+                validate,
+                props.onChange
             ]);
-        const changeHandler = useCallback(
-            (e: any) => {
-                e.stopPropagation();
-                onChange && onChange(e);
-            },
-            [onChange]
-        );
 
         return (
-            <Styled.CheckboxWithLabelWrapper
-                id={`${inputId}-wrapper`}
-                htmlFor={inputId}
-                fullWidth={fullWidth}
-                labelPosition={labelPosition}
-                isActive={isActive}
-                hasError={hasError}
-                disabled={restProps.disabled}
-            >
-                {label && (
-                    <Text id={`${inputId}-label`} textVariant={labelVariant} textWeight={labelWeight} textColor={labelColor}>
-                        {label}
-                    </Text>
+            <>
+                {(!!errorText || builtInErrorMessage) && (
+                    <Styled.ErrorText disabled={inputProps.disabled}>{errorText || builtInErrorMessage}</Styled.ErrorText>
                 )}
-                <Styled.Wrapper size={size} disabled={restProps.disabled} isActive={isActive} hasError={hasError}>
-                    <Styled.Checkbox ref={inputRef} id={inputId} onChange={changeHandler} indeterminate={indeterminate} {...restProps} />
-                    {indeterminate ? <MinimizeIcon /> : <CheckIcon />}
-                </Styled.Wrapper>
-            </Styled.CheckboxWithLabelWrapper>
+                <Styled.CheckboxWithLabelWrapper
+                    id={`${inputId}-wrapper`}
+                    htmlFor={inputId}
+                    isActive={isActive}
+                    hasError={isErrorPresent}
+                    disabled={inputProps.disabled}
+                    {...{ fullWidth, labelPosition }}
+                >
+                    {label && (
+                        <SelectorLabel
+                            id={`${inputId}-label`}
+                            type="checkbox"
+                            disabled={inputProps.disabled}
+                            hasError={isErrorPresent}
+                            labelPosition={labelPosition}
+                            textVariant={labelVariant}
+                            textWeight={labelWeight}
+                            required={inputProps.required}
+                        >
+                            {label}
+                        </SelectorLabel>
+                    )}
+                    <Styled.CheckboxWrapper size={size}>
+                        <Styled.HiddenCheckbox
+                            ref={inputRef}
+                            id={inputId}
+                            indeterminate={indeterminate}
+                            hasError={isErrorPresent}
+                            {...{ ...inputProps, onBlur, onInvalid, onChange }}
+                        />
+                        <Styled.StyledCheckbox>{indeterminate ? <MinimizeIcon /> : <CheckIcon />}</Styled.StyledCheckbox>
+                    </Styled.CheckboxWrapper>
+                </Styled.CheckboxWithLabelWrapper>
+            </>
         );
     })
 );
 
 Checkbox.displayName = 'Checkbox';
-Checkbox.Style = FieldWithLabel.Style;
+Checkbox.Style = Styled.CheckboxWithLabelWrapper;
 Checkbox.defaultProps = {
     label: '',
-    required: false,
     labelPosition: 'right'
 };

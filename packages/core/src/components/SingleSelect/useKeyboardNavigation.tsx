@@ -24,13 +24,13 @@ export const useKeyboardNavigation = (props: Props) => {
     const { isFocused, selectedOption, options, areOptionsVisible, selectOption, handleOptionClick, showOptions, optionsRef } = props;
 
     useEffect(() => {
-        if (isFocused && (downPress || upPress)) {
+        if (isFocused.current && (downPress || upPress)) {
             const nested = nestedOptions.current.slice(-1)[0]?.value,
                 selected = nested ? selectedOption : options.find(op => op.selected) || { value: '', label: '' },
                 nextValueGetter = downPress ? getNextOption : getPrevOption;
             areOptionsVisible ? selectOption(nextValueGetter(selected, nested || options)) : showOptions();
         }
-    }, [downPress, upPress, isFocused, areOptionsVisible]);
+    }, [downPress, upPress, isFocused.current, areOptionsVisible]);
 
     useEffect(() => {
         if (rightPress && areOptionsVisible && Array.isArray(selectedOption.value)) {

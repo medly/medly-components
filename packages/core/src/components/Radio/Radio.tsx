@@ -1,36 +1,47 @@
-import { WithStyle } from '@medly-components/utils';
-import React, { FC } from 'react';
-import FieldWithLabel from '../FieldWithLabel';
-import { RadioFillStyled, RadioStyled, RadioWrapperStyled } from './Radio.styled';
+import { useCombinedRefs, WithStyle } from '@medly-components/utils';
+import React, { FC, useMemo } from 'react';
+import { SelectorLabel } from '../Selectors';
+import * as Styled from './Radio.styled';
 import { Props } from './types';
 
 export const Radio: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { size, label, required, labelPosition, labelVariant, labelWeight, fullWidth, labelColor, ...restProps } = props;
+        const { id, size, label, labelPosition, fullWidth, hasError, labelVariant, labelWeight, ...inputProps } = props,
+            inputId = useMemo(() => id || label, [id, label]),
+            inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null));
+
         return (
-            <FieldWithLabel id={`${label}-radio`} fieldWithMaxContent {...{ fullWidth, labelPosition }}>
+            <Styled.RadioWithLabelWrapper
+                id={`${inputId}-wrapper`}
+                htmlFor={inputId}
+                disabled={inputProps.disabled}
+                {...{ fullWidth, labelPosition, hasError }}
+            >
                 {label && (
-                    <FieldWithLabel.Label
-                        showPointer={!restProps.disabled}
-                        {...{ labelPosition, labelVariant, labelWeight, labelColor }}
-                        htmlFor={label}
+                    <SelectorLabel
+                        id={`${inputId}-label`}
+                        type="radio"
+                        hasError={hasError}
+                        disabled={inputProps.disabled}
+                        labelPosition={labelPosition}
+                        textVariant={labelVariant}
+                        textWeight={labelWeight}
                     >
                         {label}
-                    </FieldWithLabel.Label>
+                    </SelectorLabel>
                 )}
-                <RadioWrapperStyled size={size} disabled={restProps.disabled}>
-                    <RadioStyled ref={ref} id={label} required={required} {...restProps} />
-                    <RadioFillStyled />
-                </RadioWrapperStyled>
-            </FieldWithLabel>
+                <Styled.RadioWrapper size={size}>
+                    <Styled.HiddenRadio id={inputId} size={size} ref={inputRef} hasError={hasError} {...inputProps} />
+                    <Styled.StyledRadio />
+                </Styled.RadioWrapper>
+            </Styled.RadioWithLabelWrapper>
         );
     })
 );
 
 Radio.displayName = 'Radio';
-Radio.Style = RadioWrapperStyled;
+Radio.Style = Styled.RadioWithLabelWrapper;
 Radio.defaultProps = {
     label: '',
-    required: false,
     labelPosition: 'right'
 };

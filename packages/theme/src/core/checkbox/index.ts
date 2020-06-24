@@ -9,28 +9,36 @@ const checkbox: CheckboxTheme = {
         L: '2.6rem',
         XL: '3rem'
     },
-    colors: {
-        default: {
-            borderColor: colors.black,
-            labelColor: colors.black
-        },
-        disabled: {
-            bgColor: colors.grey[200],
-            labelColor: colors.grey[500],
-            iconColor: colors.grey[500]
-        },
-        active: {
-            bgColor: colors.communityBlue[500],
-            iconColor: colors.white,
-            hoverBgColor: colors.communityBlue[400]
-        },
-        error: {
-            bgColor: colors.red[500],
-            iconColor: colors.white,
-            hoverBgColor: colors.red[400]
-        }
+    defaultSize: 'S',
+    labelColor: {
+        default: 'inherit',
+        disabled: colors.grey[500]
     },
-    defaultSize: 'S'
+    helperTextColor: {
+        default: colors.black,
+        disabled: colors.grey[500],
+        error: colors.red[500]
+    },
+    borderColor: {
+        error: colors.red[500],
+        active: colors.communityBlue[500],
+        default: colors.black,
+        disabled: colors.grey[500]
+    },
+    bgColor: {
+        disabled: colors.grey[200],
+        active: colors.communityBlue[500],
+        error: colors.red[500]
+    },
+    iconColor: {
+        disabled: colors.grey[500],
+        active: colors.white,
+        error: colors.white
+    },
+    hoverBgColor: {
+        active: colors.communityBlue[400],
+        error: colors.red[400]
+    }
 };
 
 export default checkbox;

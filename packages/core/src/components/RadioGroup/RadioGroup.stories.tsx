@@ -1,28 +1,25 @@
-import { boolean, select, text } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
+import Button from '../Button';
 import { RadioGroup } from './RadioGroup';
 import { Props } from './types';
 
-const labelPosition: Props['labelPosition'][] = ['left', 'right', 'top', 'bottom'];
-const size: Props['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
+export const sizes: Props['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
 
-export const Basic = () => {
-    const [value, setValue] = useState('female');
+export const FormWithRadioGroup: React.FC = (props: Props) => {
+    const [value, setValue] = useState(),
+        handleSubmit = (e: React.FormEvent) => e.preventDefault();
+
     return (
-        <RadioGroup
-            value={value}
-            onChange={setValue}
-            disabled={boolean('Disabled', false)}
-            required={boolean('Required', false)}
-            fullWidth={boolean('Full Width', false)}
-            label={text('Label', 'Gender')}
-            name={text('Name', 'gender')}
-            size={select('Size', size, 'S')}
-            labelPosition={select('Label Position', labelPosition, 'top')}
-            options={[
-                { value: 'female', label: 'Female' },
-                { value: 'male', label: 'Male' }
-            ]}
-        />
+        <form onSubmit={handleSubmit}>
+            <RadioGroup {...props} required name="gender" value={value} onChange={setValue} />
+            <Button type="submit">Submit</Button>
+        </form>
     );
+};
+FormWithRadioGroup.defaultProps = {
+    label: 'Bikes',
+    options: [
+        { value: 'bajaj', label: 'Bajaj' },
+        { value: 'apache', label: 'Apache' }
+    ]
 };

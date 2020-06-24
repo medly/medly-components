@@ -1,36 +1,26 @@
-import { boolean, number, select, text } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
+import Button from '../Button';
 import { CheckboxGroup } from './CheckboxGroup';
 import { Props } from './types';
 
-const size: Props['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
+export const sizes: Props['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
 
-export const Basic = () => {
-    const [values, setValues] = useState(['hyundai']);
-
+export const FormWithCheckboxGroup: React.FC = (props: Props) => {
+    const [bikes, setBikes] = useState([]),
+        handleSubmit = (e: React.FormEvent) => e.preventDefault();
     return (
-        <CheckboxGroup
-            values={values}
-            onChange={setValues}
-            options={[
-                { value: 'honda', label: 'Honda' },
-                { value: 'hyundai', label: 'Hyundai' },
-                {
-                    value: [
-                        { value: 'jaguar', label: 'Jaguar' },
-                        { value: 'landRover', label: 'Land Rover' }
-                    ],
-                    label: 'Tata'
-                }
-            ]}
-            disabled={boolean('Disabled', false)}
-            fullWidth={boolean('Full Width', false)}
-            showSelectAll={boolean('Show Select All', false)}
-            label={text('Label', 'Cars')}
-            size={select('Size', size, 'S')}
-            errorText={text('Error Text', '')}
-            helperText={text('Helper Text', 'Helper Text')}
-            columns={number('Columns', 1)}
-        />
+        <form onSubmit={handleSubmit}>
+            <CheckboxGroup fullWidth required values={bikes} onChange={setBikes} {...props} />
+            <Button size="S" type="submit">
+                Submit
+            </Button>
+        </form>
     );
+};
+FormWithCheckboxGroup.defaultProps = {
+    label: 'Cars',
+    options: [
+        { value: 'bajaj', label: 'Bajaj' },
+        { value: 'apache', label: 'Apache' }
+    ]
 };
