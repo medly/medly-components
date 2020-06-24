@@ -418,12 +418,13 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c29 .c30 {
   z-index: 1;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
+  width: 100%;
+  height: 100%;
 }
 
 .c27 {
@@ -441,9 +442,9 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c27:checked ~ .c28 .c30 {
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .c27:checked ~ .c28 .c30 * {
@@ -2628,12 +2629,13 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c31 .c32 {
   z-index: 1;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
+  width: 100%;
+  height: 100%;
 }
 
 .c29 {
@@ -2651,9 +2653,9 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c29:checked ~ .c30 .c32 {
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .c29:checked ~ .c30 .c32 * {
