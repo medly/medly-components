@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.4.0...@medly-components/core@1.5.0) (2020-06-24)
+
+
+### Bug Fixes
+
+* fix checkbox disbaled issue and asterisk color issue ([6a3ba01](https://github.com/medly/medly-components/commit/6a3ba01df71beb20ceff433b642f854e0fbf8858))
+* fix radioGroup error validation and docs issue ([88698d6](https://github.com/medly/medly-components/commit/88698d64cace798fa695d670f9708350c9860dd4))
+* fix scale issue of checked radio and checkbox component ([68e1a8b](https://github.com/medly/medly-components/commit/68e1a8b6b324c47cb81abf24968c1fc1185d77f4))
+
+
+### Features
+
+* add error validation and docs in checkboxGroup component ([fc0bb8d](https://github.com/medly/medly-components/commit/fc0bb8dd8d651b2684e6c27c34b2d11848a6191c))
+* add error validation and focus effect in radio component ([00aba4c](https://github.com/medly/medly-components/commit/00aba4c7e33f70a5f8701f322a40c3c317f1e397))
+* add error validation in checkbox component ([f21e688](https://github.com/medly/medly-components/commit/f21e68890ca009a7398c77c779fb8af918d19ab3))
+* update radio button style ([4c3125d](https://github.com/medly/medly-components/commit/4c3125defab3a7896222d2f7a589906c7d21dd14))
+* **core:** made Avatar Hover Effect Optional ([3c5085e](https://github.com/medly/medly-components/commit/3c5085e83a5b74330c01dea0d1fc7872c5330eae))
+
+
+
+
+
 # [1.4.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.3.0...@medly-components/core@1.4.0) (2020-06-19)
 
 
