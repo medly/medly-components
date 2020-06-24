@@ -47,12 +47,6 @@ exports[`CardTable should render properly with grey background 1`] = `
   overflow: hidden;
 }
 
-.c10 .c5 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
 .c9 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -319,12 +313,6 @@ exports[`CardTable should render properly with white background 1`] = `
   -ms-flex-pack: start;
   justify-content: flex-start;
   overflow: hidden;
-}
-
-.c10 .c5 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
 .c9 {

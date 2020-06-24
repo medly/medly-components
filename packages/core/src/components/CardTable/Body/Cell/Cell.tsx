@@ -6,13 +6,17 @@ import { Props } from './types';
 
 export const Cell: React.FC<Props> & WithStyle = React.memo(props => {
     const { data, rowId, column, isRowClickDisabled } = props,
-        { component: Component, align } = column;
+        { component: Component, align, wrapText } = column;
 
     const FormattedCell = useMemo(
         () => (Component ? <Component {...{ data, rowId, disabled: isRowClickDisabled }} /> : <Text title={data}>{data}</Text>),
         [data, rowId, isRowClickDisabled, Component]
     );
 
-    return <Style.Cell align={align}>{FormattedCell}</Style.Cell>;
+    return (
+        <Style.Cell wrapText={wrapText} align={align}>
+            {FormattedCell}
+        </Style.Cell>
+    );
 });
 Cell.displayName = 'Cell';

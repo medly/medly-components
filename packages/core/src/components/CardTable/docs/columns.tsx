@@ -25,9 +25,9 @@ const StyledDiv = styled('div')`
     };
 
 const columns: ColumnConfig[] = [
-    { title: 'Patient Info', field: 'patientInfo', sortable: true, component: StatusFormatter },
+    { title: 'Patient Info', field: 'patientInfo', sortable: true, wrapText: true },
     { title: 'RxInfo', field: 'rxInfo', sortable: true, align: 'center' },
-    { title: 'Price', field: 'price', sortable: true, component: StatusFormatter },
+    { title: 'Price', field: 'price', sortable: true },
     { title: 'Status', field: 'status', sortable: true, component: StatusFormatter }
 ];
 
