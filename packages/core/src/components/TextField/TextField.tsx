@@ -1,5 +1,5 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useMemo, useState } from 'react';
+import React, { FC, FocusEvent, FormEvent, useCallback, useMemo, useState } from 'react';
 import * as Styled from './Styled';
 import { Props } from './types';
 
@@ -30,7 +30,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
         const validate = useCallback(
-            (event: React.FormEvent<HTMLInputElement>, eventFunc: (e: React.FormEvent<HTMLInputElement>) => void) => {
+            (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
                 event.preventDefault();
                 const element = event.target as HTMLInputElement,
                     message = (validator && validator(element.value)) || element.validationMessage;
@@ -42,8 +42,8 @@ export const TextField: FC<Props> & WithStyle = React.memo(
 
         const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
             handleWrapperClick = useCallback(() => !disabled && inputRef.current.focus(), [inputRef, disabled]),
-            onBlur = useCallback((event: React.FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [validator]),
-            onInvalid = useCallback((event: React.FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validator]);
+            onBlur = useCallback((event: FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [validate, props.onBlur]),
+            onInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validate, props.onInvalid]);
 
         return (
             <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth}>

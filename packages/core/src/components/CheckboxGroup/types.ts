@@ -1,6 +1,13 @@
 import { CheckboxSizes, FontVariants, FontWeights } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
-import { LabelPositions } from '../Label/types';
+
+export type CheckboxGroupWrapperProps = {
+    fullWidth?: boolean;
+    hasError?: boolean;
+    showSelectAll?: boolean;
+    disabled?: boolean;
+    hasHelperOrErrorText?: boolean;
+};
 
 export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChange'>, WithThemeProp {
     /** Array of selected values */
@@ -8,25 +15,39 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChang
     /** This method will be called with checked values */
     onChange: (values: any[]) => void;
     /** Options */
-    options: { value: any; label: string; disabled?: boolean }[];
+    options: {
+        value: any;
+        label: string;
+        showSelectAll?: boolean;
+        disabled?: boolean;
+        errorText?: string;
+        helperText?: string;
+        columns?: number;
+    }[];
     /** Label */
     label?: string;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
     /** Disable all the checkboxes */
     disabled?: boolean;
-    /** Label position */
-    labelPosition?: LabelPositions;
     /** Label Variant */
     labelVariant?: FontVariants;
     /** Label weight */
     labelWeight?: FontWeights;
-    /** Label color */
-    labelColor?: string;
     /** Name attribute of all the checkboxes */
     name?: string;
     /** Checkbox size */
     size?: CheckboxSizes;
     /** Show checkbox to select all options */
     showSelectAll?: boolean;
+    /** Error text for checkboxGroup */
+    errorText?: string;
+    /** Helper text for checkboxGroup */
+    helperText?: string;
+    /** Use this prop to render option in multiple columns */
+    columns?: number;
+    /** Function will called with the input value on blur and change event */
+    validator?: (values: any[]) => string;
+    /** This will be handled internally */
+    parentHasError?: boolean;
 }

@@ -2,12 +2,7 @@ import { CheckboxSizes, FontVariants, FontWeights } from '@medly-components/them
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
 
-type DivProps = Omit<HTMLProps<HTMLInputElement>, 'size'>;
 type InputProps = Omit<HTMLProps<HTMLInputElement>, 'size' | 'type'>;
-
-export interface CheckboxWrapperProps extends DivProps, WithThemeProp {
-    size?: CheckboxSizes;
-}
 
 export interface Props extends InputProps, WithThemeProp {
     /** Checkbox label */
@@ -20,10 +15,14 @@ export interface Props extends InputProps, WithThemeProp {
     labelPosition?: LabelPositions;
     /** Label Variant */
     labelVariant?: FontVariants;
-    /** Label color */
-    labelColor?: string;
-    /** Label weight */
+    /** Label Weight */
     labelWeight?: FontWeights;
-    /** To be used if required in any form for example user needs to check 'I Agree' */
-    required?: boolean;
+    /** Indeterminate state for checkbox */
+    indeterminate?: boolean;
+    /** Error Text */
+    errorText?: string;
+    /** Function will called with the input value on blur, change and invalid event */
+    validator?: (checked: boolean) => string;
+    /** This will be used internally by Checkbox group */
+    hasError?: boolean;
 }

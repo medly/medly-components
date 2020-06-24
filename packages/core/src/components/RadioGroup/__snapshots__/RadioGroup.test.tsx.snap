@@ -1,26 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Radio Group should call onChange prop with selected option 1`] = `
+exports[`Radio Group should render disabled state properly 1`] = `
 .c1 {
-  color: #435465;
-  font-size: 1.4rem;
-  font-weight: 400;
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
-  margin: 0px 0px 0.8rem 0px;
-  cursor: default;
-}
-
-.c1::after {
-  color: red;
-  content: ' *';
+  line-height: 2.6rem;
 }
 
 .c6 {
-  color: #435465;
+  margin: 0;
+  color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -28,215 +23,238 @@ exports[`Radio Group should call onChange prop with selected option 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0px 0px 0.8rem;
-  cursor: pointer;
-}
-
-.c4 {
-  grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: 0px;
-}
-
-.c2 {
-  grid-area: label;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .c0 {
-  margin: 0.8rem 0;
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-areas: 'label' 'field' 'description';
-}
-
-.c0 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: not-allowed;
+  color: #98A7B7;
+}
+
+.c7 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: not-allowed;
+  color: #98A7B7;
+  padding: 0 1.6rem;
+}
+
+.c4 {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.c3 {
+  white-space: initial;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1.8rem;
+  color: #98A7B7;
+}
+
+.c11 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  box-sizing: border-box;
+  border: 0.15rem solid;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.c9 {
+  position: absolute;
+  opacity: 0;
+  width: 1%;
+  height: 1%;
+  margin: 0;
+}
+
+.c9 ~ .c10 {
+  border-color: #13181D;
+}
+
+.c9:checked ~ .c10 {
+  border-width: calc(1.8rem / 3);
+}
+
+.c9:checked:disabled ~ .c10 {
+  border-color: #dfe4e9;
+}
+
+.c9:not(:checked):disabled ~ .c10 {
+  border-color: #98A7B7;
+}
+
+.c9:not(:disabled):checked ~ .c10 {
+  border-color: #005AEE;
+}
+
+.c9:not(:disabled):focus ~ .c10 {
+  border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
+}
+
+.c8 {
+  margin: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+  border-radius: 100%;
 }
 
 .c5 {
-  margin: 0.8rem 0.8rem 0.8rem 0;
-  display: inline-grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: max-content minmax(max-content,25%);
-  grid-template-areas: 'field label' 'description random';
-}
-
-.c5 .c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: not-allowed;
+  padding: 0.8rem 0;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
-.c10 {
-  background-color: #012040;
-  width: 0;
-  height: 0;
-  z-index: 1;
-  border-radius: 100%;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  opacity: 0;
-  z-index: 2;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  cursor: pointer;
-}
-
-.c8:checked ~ .c9 {
-  width: calc(75%);
-  height: calc(75%);
-  -webkit-transition: width 0.2s ease,height 0.2s ease;
-  transition: width 0.2s ease,height 0.2s ease;
-}
-
-.c7 {
-  width: 24px;
-  height: 24px;
-  position: relative;
-  border-radius: 100%;
-  border: 1px solid #C7D0D8;
-  background-color: #ffffff;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c7:focus-within {
-  box-shadow: 0 0 0 1pt #012040;
-}
-
 <div>
   <div
+    aria-describedby="gender-helper-text"
     class="c0"
-    id="Gender-radioGroup"
+    id="gender-wrapper"
+    type="radio"
   >
-    <label
+    <span
       class="c1 c2"
-      required=""
+      disabled=""
+      id="gender-label"
+      type="radio"
     >
       Gender
-    </label>
-    <div
-      class="c3 c4"
+    </span>
+    <span
+      class="c3"
+      disabled=""
+      id="gender-helper-text"
+      type="radio"
     >
-      <div
+      Helper Text
+    </span>
+    <div
+      class="c4"
+      id="gender-options"
+    >
+      <label
         class="c5"
-        id="Female-radio"
+        disabled=""
+        for="Female-gender"
+        id="Female-gender-wrapper"
+        sizes="[object Object]"
       >
-        <label
-          class="c6 c2"
-          for="Female"
+        <span
+          class="c6 c7"
+          disabled=""
+          id="Female-gender-label"
+          type="radio"
         >
           Female
-        </label>
+        </span>
         <div
-          class="c7"
+          class="c8"
         >
           <input
-            checked=""
-            class="c8"
-            id="Female"
+            class="c9"
+            disabled=""
+            id="Female-gender"
             name="gender"
-            required=""
+            sizes="[object Object]"
             type="radio"
             value="female"
           />
           <div
-            class="c9 c10"
+            class="c10 c11"
           />
         </div>
-      </div>
-      <div
+      </label>
+      <label
         class="c5"
-        id="Male-radio"
+        disabled=""
+        for="Male-gender"
+        id="Male-gender-wrapper"
+        sizes="[object Object]"
       >
-        <label
-          class="c6 c2"
-          for="Male"
+        <span
+          class="c6 c7"
+          disabled=""
+          id="Male-gender-label"
+          type="radio"
         >
           Male
-        </label>
+        </span>
         <div
-          class="c7"
+          class="c8"
         >
           <input
-            class="c8"
-            id="Male"
+            class="c9"
+            disabled=""
+            id="Male-gender"
             name="gender"
-            required=""
+            sizes="[object Object]"
             type="radio"
             value="male"
           />
           <div
-            class="c9 c10"
+            class="c10 c11"
           />
         </div>
-      </div>
+      </label>
     </div>
   </div>
 </div>
 `;
 
-exports[`Radio Group should render correctly 1`] = `
+exports[`Radio Group should render properly 1`] = `
 .c1 {
-  color: #435465;
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c7 {
+  margin: 0;
+  color: inherit;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -244,222 +262,213 @@ exports[`Radio Group should render correctly 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
-  cursor: default;
-}
-
-.c6 {
-  color: #435465;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  margin: 0px 0px 0px 0.8rem;
-  cursor: not-allowed;
-}
-
-.c4 {
-  grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: 0px;
-}
-
-.c2 {
-  grid-area: label;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .c0 {
-  margin: 0.8rem 0;
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
-  grid-template-areas: 'label field' 'random description';
-}
-
-.c0 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
 }
 
-.c5 {
-  margin: 0.8rem 0.8rem 0.8rem 0;
-  display: inline-grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: max-content minmax(max-content,25%);
-  grid-template-areas: 'field label' 'description random';
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: inherit;
+  color: inherit;
 }
 
-.c5 .c3 {
+.c8 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: inherit;
+  color: inherit;
+  padding: 0 1.6rem;
+}
+
+.c4 {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.c3 {
+  white-space: initial;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1.8rem;
+  color: #13181D;
+}
+
+.c12 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  box-sizing: border-box;
+  border: 0.15rem solid;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.c10 {
+  position: absolute;
+  opacity: 0;
+  width: 1%;
+  height: 1%;
+  margin: 0;
+}
+
+.c10 ~ .c11 {
+  border-color: #13181D;
+}
+
+.c10:checked ~ .c11 {
+  border-width: calc(1.8rem / 3);
+}
+
+.c10:checked:disabled ~ .c11 {
+  border-color: #dfe4e9;
+}
+
+.c10:not(:checked):disabled ~ .c11 {
+  border-color: #98A7B7;
+}
+
+.c10:not(:disabled):checked ~ .c11 {
+  border-color: #005AEE;
+}
+
+.c10:not(:disabled):focus ~ .c11 {
+  border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
+}
+
+.c9 {
+  margin: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+  border-radius: 100%;
+}
+
+.c6 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
 
-.c10 {
-  background-color: #012040;
-  width: 0;
-  height: 0;
-  z-index: 1;
-  border-radius: 100%;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 {
-  opacity: 0;
-  z-index: 2;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  cursor: not-allowed;
-}
-
-.c8:checked ~ .c9 {
-  width: calc(75%);
-  height: calc(75%);
-  -webkit-transition: width 0.2s ease,height 0.2s ease;
-  transition: width 0.2s ease,height 0.2s ease;
-}
-
-.c7 {
-  width: 16px;
-  height: 16px;
-  position: relative;
-  border-radius: 100%;
-  border: 1px solid #C7D0D8;
-  background-color: #C7D0D8;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c7:focus-within {
-  box-shadow: 0 0 0 1pt #012040;
+.c6:hover.c5:hover .c11 {
+  border-color: #1A6BF0;
 }
 
 <div>
   <div
+    aria-describedby="gender-helper-text"
     class="c0"
-    id="Gender-radioGroup"
+    id="gender-wrapper"
+    type="radio"
   >
-    <label
+    <span
       class="c1 c2"
+      id="gender-label"
+      type="radio"
     >
       Gender
-    </label>
-    <div
-      class="c3 c4"
+    </span>
+    <span
+      class="c3"
+      id="gender-helper-text"
+      type="radio"
     >
-      <div
-        class="c5"
-        id="Female-radio"
+      Helper Text
+    </span>
+    <div
+      class="c4"
+      id="gender-options"
+    >
+      <label
+        class="c5 c6"
+        for="Female-gender"
+        id="Female-gender-wrapper"
+        sizes="[object Object]"
       >
-        <label
-          class="c6 c2"
-          for="Female"
+        <span
+          class="c7 c8"
+          id="Female-gender-label"
+          type="radio"
         >
           Female
-        </label>
+        </span>
         <div
-          class="c7"
-          disabled=""
+          class="c9"
         >
           <input
-            checked=""
-            class="c8"
-            disabled=""
-            id="Female"
+            class="c10"
+            id="Female-gender"
             name="gender"
+            sizes="[object Object]"
             type="radio"
             value="female"
           />
           <div
-            class="c9 c10"
+            class="c11 c12"
           />
         </div>
-      </div>
-      <div
-        class="c5"
-        id="Male-radio"
+      </label>
+      <label
+        class="c5 c6"
+        for="Male-gender"
+        id="Male-gender-wrapper"
+        sizes="[object Object]"
       >
-        <label
-          class="c6 c2"
-          for="Male"
+        <span
+          class="c7 c8"
+          id="Male-gender-label"
+          type="radio"
         >
           Male
-        </label>
+        </span>
         <div
-          class="c7"
-          disabled=""
+          class="c9"
         >
           <input
-            class="c8"
-            disabled=""
-            id="Male"
+            class="c10"
+            id="Male-gender"
             name="gender"
+            sizes="[object Object]"
             type="radio"
             value="male"
           />
           <div
-            class="c9 c10"
+            class="c11 c12"
           />
         </div>
-      </div>
+      </label>
     </div>
   </div>
 </div>

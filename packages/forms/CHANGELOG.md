@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.4...@medly-components/forms@1.1.0) (2020-06-19)
+
+
+### Features
+
+* add transition on hover in checkbox & checkboxGroup component ([c8bbe2c](https://github.com/medly/medly-components/commit/c8bbe2c2a24f0f8b2ef5ced7c8dc1a2e6771fa5c))
+
+
+
+
+
+## [1.0.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.3...@medly-components/forms@1.0.4) (2020-06-18)
+
+
+### Bug Fixes
+
+* fix failing snapshots ([dbf0485](https://github.com/medly/medly-components/commit/dbf04855547eb4fc5b49950974403518d08ae28a))
+* fix sonar code smell in form component ([df65d57](https://github.com/medly/medly-components/commit/df65d576265d96b4985b627188d7a2a88f0eb65b))
+
+
+
+
+
 ## [1.0.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.0.2...@medly-components/forms@1.0.3) (2020-06-17)
 
 **Note:** Version bump only for package @medly-components/forms

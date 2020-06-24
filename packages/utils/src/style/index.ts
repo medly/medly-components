@@ -1,3 +1,4 @@
+export * from './asterisk';
 export * from './centerAligned';
 export * from './clearMarginPadding';
 export * from './fullHeight';

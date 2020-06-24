@@ -1,5 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Avatar component should render avatar without hover 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-transform: uppercase;
+}
+
+.c0 {
+  display: inline-block;
+  text-align: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  color: #008000;
+  background: #E6F2E6;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0 .c1 {
+  line-height: 4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: Open Sans;
+}
+
+.c0 img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border: 0.1rem solid #dfe4e9;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <strong
+      class="c1 c2"
+    >
+      M
+    </strong>
+  </div>
+</div>
+`;
+
 exports[`Avatar component should render image avatar properly 1`] = `
 .c0 {
   display: inline-block;
@@ -31,15 +90,6 @@ exports[`Avatar component should render image avatar properly 1`] = `
   border: 0.1rem solid #dfe4e9;
   box-sizing: border-box;
   border-radius: 50%;
-}
-
-.c0:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(96,120,144,0.35);
-}
-
-.c0:hover .sc-AxjAm {
-  color: #ffffff;
 }
 
 <div>
@@ -167,15 +217,6 @@ exports[`Avatar component should render with default theme 1`] = `
   border-radius: 50%;
 }
 
-.c0:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
-}
-
-.c0:hover .c1 {
-  color: #ffffff;
-}
-
 <div>
   <div
     class="c0"
@@ -233,15 +274,6 @@ exports[`Avatar component should render with not-allowed cursor when it is disab
   border: 0.1rem solid #dfe4e9;
   box-sizing: border-box;
   border-radius: 50%;
-}
-
-.c0:hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
-}
-
-.c0:hover .c1 {
-  color: #ffffff;
 }
 
 <div>
