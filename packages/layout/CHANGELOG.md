@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.0.5...@medly-components/layout@1.1.0) (2020-06-24)
+
+
+### Features
+
+* add error validation in checkbox component ([f21e688](https://github.com/medly/medly-components/commit/f21e68890ca009a7398c77c779fb8af918d19ab3))
+* update radio button style ([4c3125d](https://github.com/medly/medly-components/commit/4c3125defab3a7896222d2f7a589906c7d21dd14))
+
+
+
+
+
 ## [1.0.5](https://github.com/medly/medly-components/compare/@medly-components/layout@1.0.4...@medly-components/layout@1.0.5) (2020-06-19)
 
 **Note:** Version bump only for package @medly-components/layout
