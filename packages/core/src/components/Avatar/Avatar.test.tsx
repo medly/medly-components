@@ -15,6 +15,7 @@ describe('Avatar component', () => {
                 size="M"
                 textColor={defaultTheme.colors.green[500]}
                 bgColor={defaultTheme.colors.green[100]}
+                withHoverEffect={true}
                 hoverBgColor={defaultTheme.colors.green[400]}
                 hoverTextColor={defaultTheme.colors.white}
                 hoverImgShadowColor="rgba(96, 120, 144, 0.35)"
@@ -40,6 +41,24 @@ describe('Avatar component', () => {
         const { container } = render(
             <Avatar size="L">
                 <img src="http://dummurl" />
+            </Avatar>
+        );
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render avatar without hover', () => {
+        const { container } = render(
+            <Avatar
+                size="M"
+                textColor={defaultTheme.colors.green[500]}
+                bgColor={defaultTheme.colors.green[100]}
+                hoverBgColor={defaultTheme.colors.green[400]}
+                hoverTextColor={defaultTheme.colors.white}
+                hoverImgShadowColor="rgba(96, 120, 144, 0.35)"
+                hoverTextShadowColor="rgba(0, 128, 0, 0.35)"
+                onClick={jest.fn()}
+            >
+                M
             </Avatar>
         );
         expect(container).toMatchSnapshot();

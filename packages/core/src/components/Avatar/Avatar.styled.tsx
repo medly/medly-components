@@ -13,6 +13,19 @@ const getShadowColor = ({ theme: { avatar }, hoverTextShadowColor, hoverImgShado
         : hoverTextShadowColor || avatar.defaults.hover.textShadowColor;
 };
 
+const hoverStyle = ({ theme, hoverBgColor, hoverTextColor }: StyledProps) => {
+    const { defaults } = theme.avatar;
+    return css`
+        &:hover {
+            background: ${hoverBgColor || defaults.hover.bgColor};
+            box-shadow: 0 0.4rem 0.8rem ${getShadowColor};
+            ${Text.Style} {
+                color: ${hoverTextColor || defaults.hover.textColor};
+            }
+        }
+    `;
+};
+
 const getTextStyle = ({ theme, ...props }: StyledProps) => {
     const { size, textColor, bgColor } = props,
         { defaults, sizes } = theme.avatar,
@@ -54,11 +67,5 @@ export const AvatarStyled = styled('div').attrs(({ theme: { avatar: { defaults }
         border-radius: 50%;
     }
 
-    &:hover {
-        background: ${({ defaults, hoverBgColor }) => hoverBgColor || defaults.hover.bgColor};
-        box-shadow: 0 0.4rem 0.8rem ${getShadowColor};
-        ${Text.Style} {
-            color: ${({ defaults, hoverTextColor }) => hoverTextColor || defaults.hover.textColor};
-        }
-    }
+    ${({ withHoverEffect }) => withHoverEffect && hoverStyle}
 `;

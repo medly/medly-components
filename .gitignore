@@ -4,3 +4,4 @@ coverage/
 packages/**/dist
 .DS_Store
 .out/
+.idea
