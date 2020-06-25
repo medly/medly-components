@@ -5,7 +5,7 @@ import * as Styled from './TabList.styled';
 import { Props } from './types';
 
 export const TabList: React.FC<Props> & WithStyle = React.memo(props => {
-    const { active, children, onChange, ...restProps } = props,
+    const { active, children, onChange, tabStyle, ...restProps } = props,
         leftPress = useKeyPress('ArrowLeft'),
         rightPress = useKeyPress('ArrowRight'),
         homePress = useKeyPress('Home'),
@@ -31,7 +31,7 @@ export const TabList: React.FC<Props> & WithStyle = React.memo(props => {
     const changeFocusState = useCallback(() => setFocusState(val => !val), []);
 
     return (
-        <Styled.TabList onFocus={changeFocusState} onBlur={changeFocusState} {...restProps}>
+        <Styled.TabList onFocus={changeFocusState} onBlur={changeFocusState} tabStyle={tabStyle} {...restProps}>
             {React.Children.toArray(props.children).reduce((acc: any[], child: any) => {
                 const { id, label, hide } = child.props;
                 !hide &&
@@ -42,6 +42,8 @@ export const TabList: React.FC<Props> & WithStyle = React.memo(props => {
                             label={label}
                             onClick={handleChange(id)}
                             tabSize={restProps.tabSize}
+                            tabStyle={tabStyle}
+                            tabBackground={restProps.tabBackground}
                             {...child.props}
                         />
                     );

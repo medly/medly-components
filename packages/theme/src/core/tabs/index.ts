@@ -12,9 +12,7 @@ const tabs: TabsTheme = {
         active: colors.communityBlue[100],
         nonActive: colors.white,
         hovered: colors.grey[50]
-    },
-    backgroundTheme: 'WHITE',
-    tabStyle: 'OPEN'
+    }
 };
 
 export default tabs;

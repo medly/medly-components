@@ -11,6 +11,8 @@ ThemeInterface.defaultProps = {
 };
 
 const size: Props['tabSize'][] = ['S', 'M', 'L'];
+const tabBg: Props['tabBackground'][] = ['WHITE', 'GREY'];
+const tabStyle: Props['tabStyle'][] = ['OPEN', 'CLOSED'];
 
 export const Basic = () => (
     <Tabs aria-label="Basic Tabs" tabSize={select('Tab Size', size, 'S')}>
@@ -44,7 +46,13 @@ export const WithIcon = () => {
 
 export const WithDescriptionAndCount = () => {
     return (
-        <Tabs defaultActive="tab1" aria-label="WithDescriptionAndCount Tabs" tabSize={select('Tab Size', size, 'S')}>
+        <Tabs
+            defaultActive="tab1"
+            aria-label="WithDescriptionAndCount Tabs"
+            tabSize={select('Tab Size', size, 'S')}
+            tabBackground={select('Tab Background', tabBg, 'WHITE')}
+            tabStyle={select('Tab Style', tabStyle, 'OPEN')}
+        >
             <Tabs.Tab id="tab1" label="Add" secondaryLabel="Details" count={68} icon={DashboardIcon}>
                 Content for the add panel
             </Tabs.Tab>

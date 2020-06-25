@@ -2,7 +2,7 @@ import { SvgIcon } from '@medly-components/icons';
 import { Theme } from '@medly-components/theme/src';
 import { css, styled } from '@medly-components/utils';
 import { TextStyled } from '../../Text/Text.styled';
-import { TabSize } from '../types';
+import { TabBackground, TabSize, TabStyle } from '../types';
 import { StyledProps, WrapperProps } from './types';
 
 const getTabSpacing = (hasIcon = false) => {
@@ -14,13 +14,13 @@ const getTabSpacing = (hasIcon = false) => {
     return verticalSpacing;
 };
 
-const activeStyle = (theme: Theme, active: boolean, tabSize: TabSize) => {
+const activeStyle = (theme: Theme, active: boolean, tabSize: TabSize, tabStyle: TabStyle, tabBackground: TabBackground) => {
     const {
-        tabs: { textColor, backgroundColor, tabStyle, backgroundTheme }
+        tabs: { textColor, backgroundColor }
     } = theme;
     return css`
         color: ${textColor.active};
-        background-color: ${tabStyle === 'CLOSED' && backgroundTheme === 'WHITE' ? backgroundColor.active : backgroundColor.nonActive};
+        background-color: ${tabStyle === 'CLOSED' && tabBackground === 'WHITE' ? backgroundColor.active : backgroundColor.nonActive};
         border-right: ${tabStyle === 'CLOSED' ? `1px solid ${theme.colors.grey[300]}` : '0 none'};
         ${SvgIcon} {
             * {
@@ -28,7 +28,7 @@ const activeStyle = (theme: Theme, active: boolean, tabSize: TabSize) => {
             }
         }
         &:hover {
-            background-color: ${tabStyle === 'CLOSED' && backgroundTheme === 'WHITE' ? backgroundColor.active : backgroundColor.nonActive};
+            background-color: ${tabStyle === 'CLOSED' && tabBackground === 'WHITE' ? backgroundColor.active : backgroundColor.nonActive};
             ${TextStyled} {
                 color: ${textColor.active};
             }
@@ -48,17 +48,20 @@ const disabledStyle = (theme: Theme) => {
     `;
 };
 
-const nonActiveStyle = (theme: Theme) => {
+const nonActiveStyle = (theme: Theme, tabStyle: TabStyle, tabBackground: TabBackground) => {
     const {
-        tabs: { textColor, backgroundColor, tabStyle, backgroundTheme }
+        tabs: { textColor, backgroundColor }
     } = theme;
     return css`
         color: ${textColor.nonActive};
         border-right: ${tabStyle === 'CLOSED' ? `1px solid ${theme.colors.grey[300]}` : '0 none'};
+        &:last-child {
+            border-right: 0 none;
+        }
         &:hover {
-            background-color: ${backgroundTheme === 'GREY' ? backgroundColor.nonActive : backgroundColor.hovered};
+            background-color: ${tabBackground === 'GREY' ? backgroundColor.nonActive : backgroundColor.hovered};
             ${TextStyled} {
-                color: ${backgroundTheme === 'GREY' ? textColor.nonActive : textColor.hovered};
+                color: ${tabBackground === 'GREY' ? textColor.nonActive : textColor.hovered};
             }
         }
     `;
@@ -96,10 +99,10 @@ export const TabWrapper = styled.button<StyledProps>`
     &:hover {
         cursor: pointer;
         &::after {
-            background-color: ${({ theme: { tabs }, active }) =>
+            background-color: ${({ theme: { tabs }, active, tabBackground }) =>
                 active
                     ? `${tabs.textColor.active}`
-                    : tabs.backgroundTheme === 'GREY'
+                    : tabBackground === 'GREY'
                     ? tabs.backgroundColor.nonActive
                     : `${tabs.backgroundColor.hovered}`};
         }
@@ -115,9 +118,9 @@ export const TabWrapper = styled.button<StyledProps>`
 
     ${({ theme, active, tabSize, hasIcon }) => hasIcon && tabSize !== 'S' && svgStyles(theme, active, tabSize)}
 
-    ${({ theme, active }) => !active && nonActiveStyle(theme)}
+    ${({ theme, active, tabStyle, tabBackground }) => !active && nonActiveStyle(theme, tabStyle, tabBackground)}
 
-    ${({ theme, active, tabSize }) => active && activeStyle(theme, active, tabSize)}
+    ${({ theme, active, tabSize, tabStyle, tabBackground }) => active && activeStyle(theme, active, tabSize, tabStyle, tabBackground)}
 
     ${({ theme, disabled }) => disabled && disabledStyle(theme)}
 `;
