@@ -34,33 +34,31 @@ export const RadioGroup: FC<Props> & WithStyle = React.memo(
             hasHelperOrErrorText = useMemo(() => !!(errorText || helperText), [errorText, helperText]);
 
         const validate = useCallback(
-            (element: HTMLInputElement) => {
-                const message = (validator && validator(element.value)) || element.validationMessage;
-                setErrorMessage(message);
-            },
-            [validator, value]
+            (selectedValue: string, validationMessage?: string) =>
+                setErrorMessage((validator && validator(selectedValue)) || validationMessage),
+            [validator]
         );
 
         const handleOnInvalid = useCallback(
                 (event: React.FormEvent<HTMLInputElement>) => {
-                    validate(event.target as HTMLInputElement);
+                    validate(value, (event.target as HTMLInputElement).validationMessage);
                     onInvalid && onInvalid(event);
                 },
-                [validate, onInvalid]
+                [validate, onInvalid, value]
             ),
             handleOnBlur = useCallback(
                 (event: React.FocusEvent<HTMLDivElement>) => {
                     const currentTarget = event.currentTarget,
                         target = event.target as HTMLInputElement;
-                    setTimeout(() => !currentTarget.contains(document.activeElement) && validate(target), 0);
+                    setTimeout(() => !currentTarget.contains(document.activeElement) && validate(value, target.validationMessage), 0);
                     onBlur && onBlur(event);
                 },
-                [validate, onBlur]
+                [validate, onBlur, value]
             ),
             handleOnChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     const value = event.target.value;
-                    validate(event.target as HTMLInputElement);
+                    validate(value);
                     onChange && onChange(value);
                 },
                 [validate]
