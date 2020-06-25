@@ -3,7 +3,7 @@
 exports[`Tabs should not render when there is no children 1`] = `<div />`;
 
 exports[`Tabs should render properly without any prop 1`] = `
-.c6 {
+.c5 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -16,23 +16,56 @@ exports[`Tabs should render properly without any prop 1`] = `
 }
 
 .c1 {
-  margin: 0;
-  padding: 0;
   border: 0;
-  outline: 0;
-  background: none;
+  background-color: transparent;
+  padding: 1.6rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  position: relative;
   color: #005AEE;
   background-color: #ffffff;
   border-right: 0 none;
+}
+
+.c1 .c4 {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.c1 p {
+  line-height: 2.2rem;
+  font-size: 1.4rem;
 }
 
 .c1::after {
   content: '';
   width: 100%;
   display: block;
-  height: 4px;
+  height: 0.4rem;
   background-color: #005AEE;
-  border-radius: 5px 5px 0 0;
+  border-radius: 0.5rem 5rem 0 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .c1:hover {
@@ -59,61 +92,14 @@ exports[`Tabs should render properly without any prop 1`] = `
   background-color: #ffffff;
 }
 
-.c1:hover .c5 {
+.c1:hover .c4 {
   color: #005AEE;
 }
 
-.c7 {
-  margin: 0;
-  padding: 0;
+.c6 {
   border: 0;
-  outline: 0;
-  background: none;
-  color: #607890;
-  border-right: 0 none;
-}
-
-.c7::after {
-  content: '';
-  width: 100%;
-  display: block;
-  height: 4px;
   background-color: transparent;
-  border-radius: 5px 5px 0 0;
-}
-
-.c7:hover {
-  cursor: pointer;
-}
-
-.c7:hover::after {
-  background-color: #F7F8F9;
-}
-
-.c7:focus {
-  outline: none;
-}
-
-.c7:disabled {
-  cursor: not-allowed;
-}
-
-.c7:last-child {
-  border-right: 0 none;
-}
-
-.c7:hover {
-  background-color: #F7F8F9;
-}
-
-.c7:hover .c5 {
-  color: #435465;
-}
-
-.c2 {
-  background-color: transparent;
-  border: 0;
-  padding: 15px 16px;
+  padding: 1.6rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -135,23 +121,66 @@ exports[`Tabs should render properly without any prop 1`] = `
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  position: relative;
+  color: #607890;
+  border-right: 0 none;
 }
 
-.c2 .c5 {
+.c6 .c4 {
   font-size: 1.4rem;
   line-height: 2.2rem;
 }
 
-.c2 p {
+.c6 p {
   line-height: 2.2rem;
   font-size: 1.4rem;
 }
 
-.c3 {
+.c6::after {
+  content: '';
+  width: 100%;
+  display: block;
+  height: 0.4rem;
+  background-color: transparent;
+  border-radius: 0.5rem 5rem 0 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.c6:hover {
+  cursor: pointer;
+}
+
+.c6:hover::after {
+  background-color: #F7F8F9;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+.c6:disabled {
+  cursor: not-allowed;
+}
+
+.c6:last-child {
+  border-right: 0 none;
+}
+
+.c6:hover {
+  background-color: #F7F8F9;
+}
+
+.c6:hover .c4 {
+  color: #435465;
+}
+
+.c2 {
   margin-left: 0;
 }
 
-.c4 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -162,7 +191,7 @@ exports[`Tabs should render properly without any prop 1`] = `
   align-items: center;
 }
 
-.c4 .c5 {
+.c3 .c4 {
   grid-area: label;
 }
 
@@ -192,12 +221,12 @@ exports[`Tabs should render properly without any prop 1`] = `
   justify-content: flex-start;
 }
 
-.c8 {
+.c7 {
   padding: 10px;
   height: 100%;
 }
 
-.c8:focus {
+.c7:focus {
   outline: none;
 }
 
@@ -225,22 +254,18 @@ exports[`Tabs should render properly without any prop 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
+            <span
+              class="c4 c5"
             >
-              <span
-                class="c5 c6"
-              >
-                Add
-              </span>
-            </div>
+              Add
+            </span>
           </div>
         </div>
       </button>
       <button
         aria-controls="panel-tab2"
         aria-selected="false"
-        class="c7"
+        class="c6"
         id="tab2"
         role="tab"
         tabindex="-1"
@@ -252,22 +277,18 @@ exports[`Tabs should render properly without any prop 1`] = `
           <div
             class="c3"
           >
-            <div
-              class="c4"
+            <span
+              class="c4 c5"
             >
-              <span
-                class="c5 c6"
-              >
-                Edit
-              </span>
-            </div>
+              Edit
+            </span>
           </div>
         </div>
       </button>
     </div>
     <div
       aria-labelledby="tab1"
-      class="c8"
+      class="c7"
       id="medly-tabs-panel-tab1"
       role="tabpanel"
       tabindex="0"

@@ -16,16 +16,14 @@ export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
             aria-controls={`panel-${id}`}
             tabIndex={active ? 0 : -1}
         >
-            <Styled.ClickableArea active={active} hasIcon={!!Icon} tabSize={tabSize} disabled={restProps.disabled}>
-                {Icon && <Icon focusable={false} />}
-                <Styled.LabelAndDetailsWrapper hasIcon={!!Icon}>
-                    <Styled.LabelWrapper secondaryLabel={secondaryLabel} tabSize={tabSize}>
-                        <Text>{label}</Text>
-                        {count && <Styled.Count tabSize={tabSize}>{count}</Styled.Count>}
-                    </Styled.LabelWrapper>
-                    {secondaryLabel && tabSize === 'L' && <Styled.SecondaryLabel>{secondaryLabel}</Styled.SecondaryLabel>}
-                </Styled.LabelAndDetailsWrapper>
-            </Styled.ClickableArea>
+            {Icon && <Icon focusable={false} />}
+            <Styled.LabelAndDetailsWrapper hasIcon={!!Icon}>
+                <Styled.LabelWrapper secondaryLabel={secondaryLabel} tabSize={tabSize}>
+                    <Text>{label}</Text>
+                    {count && <Styled.Count tabSize={tabSize}>{count}</Styled.Count>}
+                </Styled.LabelWrapper>
+                {secondaryLabel && tabSize === 'L' && <Styled.SecondaryLabel>{secondaryLabel}</Styled.SecondaryLabel>}
+            </Styled.LabelAndDetailsWrapper>
         </Styled.TabWrapper>
     );
 });

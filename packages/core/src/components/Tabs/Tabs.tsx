@@ -50,5 +50,7 @@ Tabs.Tab = Tab;
 Tabs.TabList = TabList;
 Tabs.TabPanel = TabPanel;
 Tabs.defaultProps = {
-    tabSize: 'S'
+    tabSize: 'S',
+    tabStyle: 'OPEN',
+    tabBackground: 'WHITE'
 };

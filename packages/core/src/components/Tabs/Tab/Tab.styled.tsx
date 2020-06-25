@@ -1,20 +1,10 @@
 import { SvgIcon } from '@medly-components/icons';
-import { Theme } from '@medly-components/theme/src';
-import { css, styled } from '@medly-components/utils';
+import { TabsTheme } from '@medly-components/theme/src';
+import { css, styled, WithThemeProp } from '@medly-components/utils';
 import { TextStyled } from '../../Text/Text.styled';
-import { TabBackground, TabSize, TabStyle } from '../types';
-import { StyledProps, WrapperProps } from './types';
+import { StyledProps } from './types';
 
-const getTabSpacing = (hasIcon = false) => {
-    const verticalSpacing = 15;
-
-    if (hasIcon) {
-        return verticalSpacing - 1;
-    }
-    return verticalSpacing;
-};
-
-const activeStyle = (theme: Theme, active: boolean, tabSize: TabSize, tabStyle: TabStyle, tabBackground: TabBackground) => {
+const activeStyle = ({ theme, active, tabSize, tabStyle, tabBackground }: StyledProps & WithThemeProp) => {
     const {
         tabs: { textColor, backgroundColor }
     } = theme;
@@ -36,19 +26,19 @@ const activeStyle = (theme: Theme, active: boolean, tabSize: TabSize, tabStyle: 
     `;
 };
 
-const disabledStyle = (theme: Theme) => {
+const disabledStyle = (tabs: TabsTheme) => {
     return css`
         opacity: 0.4;
         &:hover {
             background-color: transparent;
             ${TextStyled} {
-                color: ${theme.tabs.textColor.nonActive};
+                color: ${tabs.textColor.nonActive};
             }
         }
     `;
 };
 
-const nonActiveStyle = (theme: Theme, tabStyle: TabStyle, tabBackground: TabBackground) => {
+const nonActiveStyle = ({ theme, tabStyle, tabBackground }: StyledProps & WithThemeProp) => {
     const {
         tabs: { textColor, backgroundColor }
     } = theme;
@@ -67,7 +57,7 @@ const nonActiveStyle = (theme: Theme, tabStyle: TabStyle, tabBackground: TabBack
     `;
 };
 
-const svgStyles = (theme: Theme, active: boolean, tabSize: TabSize) => {
+const svgStyles = ({ theme, active, tabSize }: StyledProps & WithThemeProp) => {
     const {
         tabs: { textColor }
     } = theme;
@@ -76,26 +66,46 @@ const svgStyles = (theme: Theme, active: boolean, tabSize: TabSize) => {
             border-radius: 50%;
             border: 1px solid ${active ? textColor.active : theme.colors.grey[100]};
             background-color: ${active ? textColor.active : theme.colors.grey[100]};
-            padding: 5px;
+            padding: 0.5rem;
             font-size: ${tabSize === 'L' ? '2.8rem' : '2rem'};
         }
     `;
 };
 
 export const TabWrapper = styled.button<StyledProps>`
-    margin: 0;
-    padding: 0;
     border: 0;
-    outline: 0;
-    background: none;
+    background-color: transparent;
+    padding: 1.6rem;
+    user-select: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    position: relative;
+
+    ${TextStyled} {
+        font-size: ${({ tabSize }) => (tabSize === 'S' ? '1.4rem' : '1.6rem')};
+        line-height: ${({ tabSize }) => (tabSize === 'S' ? '2.2rem' : '2.6rem')};
+    }
+
+    p {
+        line-height: 2.2rem;
+        font-size: 1.4rem;
+    }
+
     &::after {
         content: '';
-        width: 100%;
+        width: 100%;    
         display: block;
-        height: 4px;
+        height: 0.4rem;
         background-color: ${({ theme: { tabs }, active }) => (active ? `${tabs.textColor.active}` : 'transparent')};
-        border-radius: 5px 5px 0 0;
+        border-radius: 0.5rem 5rem 0 0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
+
     &:hover {
         cursor: pointer;
         &::after {
@@ -116,61 +126,27 @@ export const TabWrapper = styled.button<StyledProps>`
         cursor: not-allowed;
     }
 
-    ${({ theme, active, tabSize, hasIcon }) => hasIcon && tabSize !== 'S' && svgStyles(theme, active, tabSize)}
+    ${({ tabSize, hasIcon }) => hasIcon && tabSize !== 'S' && svgStyles}
 
-    ${({ theme, active, tabStyle, tabBackground }) => !active && nonActiveStyle(theme, tabStyle, tabBackground)}
+    ${({ active }) => !active && nonActiveStyle}
 
-    ${({ theme, active, tabSize, tabStyle, tabBackground }) => active && activeStyle(theme, active, tabSize, tabStyle, tabBackground)}
+    ${({ active }) => active && activeStyle}
 
-    ${({ theme, disabled }) => disabled && disabledStyle(theme)}
-`;
-
-export const ClickableArea = styled.div<WrapperProps>`
-    background-color: transparent;
-    border: 0;
-    padding: ${({ hasIcon }) => `${getTabSpacing(hasIcon)}px ${16}px`};
-    user-select: none;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-flow: row wrap;
-
-    ${TextStyled} {
-        font-size: ${({ tabSize }) => (tabSize === 'S' ? '1.4rem' : '1.6rem')};
-        line-height: ${({ tabSize }) => (tabSize === 'S' ? '2.2rem' : '2.6rem')};
-    }
-
-    p {
-        line-height: 2.2rem;
-        font-size: 1.4rem;
-    }
+    ${({ theme: { tabs }, disabled }) => disabled && disabledStyle(tabs)}
 `;
 
 export const Count = styled.span<StyledProps>`
     color: ${({ theme }) => theme.colors.white};
     background-color: ${({ theme }) => theme.colors.grey[600]};
-    border-radius: 25px;
-    margin-left: 8px;
+    border-radius: 2.5rem;
+    margin-left: 0.8rem;
     line-height: 1.2rem;
-    padding: ${({ tabSize }) => {
-        if (tabSize === 'S') {
-            return '2px 5px';
-        } else {
-            return '4px 8px';
-        }
-    }};
-    font-size: ${({ tabSize }) => {
-        if (tabSize === 'S') {
-            return '1.1rem';
-        } else {
-            return '1.2rem';
-        }
-    }};
+    padding: ${({ tabSize }) => (tabSize === 'S' ? '0.2rem 0.5rem' : '0.4rem 0.8rem')};
+    font-size: ${({ tabSize }) => (tabSize === 'S' ? '1.1rem' : '1.2rem')};
 `;
 
 export const LabelAndDetailsWrapper = styled.div<StyledProps>`
-    margin-left: ${({ hasIcon }) => (hasIcon ? '16px' : 0)};
+    margin-left: ${({ hasIcon }) => (hasIcon ? '1.6rem' : 0)};
 `;
 
 export const SecondaryLabel = styled.p<StyledProps>`

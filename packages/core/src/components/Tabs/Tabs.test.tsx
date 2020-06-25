@@ -4,6 +4,7 @@ import Tab from './Tab';
 import { Tabs } from './Tabs';
 
 describe('Tabs', () => {
+    const mockOnchange = jest.fn();
     it('should render properly without any prop', () => {
         const { container } = render(
             <Tabs>
@@ -53,7 +54,6 @@ describe('Tabs', () => {
     });
 
     it('should call onChange prop with expected tab id', () => {
-        const mockOnchange = jest.fn();
         const { getByText } = render(
             <Tabs active="tab1" onChange={mockOnchange}>
                 <Tab id="tab1" label="Add">
@@ -66,5 +66,36 @@ describe('Tabs', () => {
         );
         fireEvent.click(getByText('Edit'));
         expect(mockOnchange).toBeCalledWith('tab2');
+    });
+
+    it('should render with count if count is passed', () => {
+        const { getByText, queryByText } = render(
+            <Tabs defaultActive="tab1" onChange={mockOnchange}>
+                <Tab id="tab1" label="Add" count={30} secondaryLabel="Details for tab1">
+                    Content for the add panel
+                </Tab>
+                <Tab id="tab2" label="Edit" count={40} secondaryLabel="Details for tab1">
+                    Content for the edit panel
+                </Tab>
+            </Tabs>
+        );
+
+        expect(getByText('30')).toBeInTheDocument();
+        expect(queryByText('Details for tab1')).toBeNull();
+    });
+
+    it('should render details only when tabSize is Large', () => {
+        const { getByText } = render(
+            <Tabs defaultActive="tab1" onChange={mockOnchange} tabSize="L">
+                <Tab id="tab1" label="Add" count={30} secondaryLabel="Details for tab1">
+                    Content for the add panel
+                </Tab>
+                <Tab id="tab2" label="Edit" count={40} secondaryLabel="Details for tab2">
+                    Content for the edit panel
+                </Tab>
+            </Tabs>
+        );
+        expect(getByText('30')).toBeInTheDocument();
+        expect(getByText('Details for tab1')).toBeInTheDocument();
     });
 });
