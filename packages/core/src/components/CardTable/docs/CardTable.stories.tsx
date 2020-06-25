@@ -30,6 +30,7 @@ export const WithGreyBackground = () => {
             <CardTable
                 defaultSortField="patientInfo"
                 defaultSortOrder="desc"
+                rowClickDisableKey="disabled"
                 data={cardTableData}
                 onSort={handleFilterData}
                 columns={columns}
@@ -50,6 +51,7 @@ export const WithWhiteBackground = () => {
         <CardTable
             defaultSortField="patientInfo"
             defaultSortOrder="desc"
+            rowClickDisableKey="disabled"
             data={cardTableData}
             onSort={handleFilterData}
             columns={columns}

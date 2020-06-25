@@ -21,13 +21,14 @@ export const Row = styled('tr').attrs(({ withWhiteBackground, theme: { cardTable
     }
 
     :nth-child(odd) {
-        background: ${({ bgTheme, cardTable }) => cardTable[bgTheme].oddRowBgColor};
+        background: ${({ bgTheme, cardTable, isRowClickDisabled }) =>
+            !isRowClickDisabled ? cardTable[bgTheme].oddRowBgColor : cardTable.disabledRowBgColor};
     }
     :nth-child(even) {
-        background: ${({ bgTheme, cardTable }) => cardTable[bgTheme].evenRowBgColor};
+        background: ${({ bgTheme, cardTable, isRowClickDisabled }) =>
+            !isRowClickDisabled ? cardTable[bgTheme].evenRowBgColor : cardTable.disabledRowBgColor};
     }
 `;
-
 
 export const NoResult = styled(Row)`
     display: flex;
