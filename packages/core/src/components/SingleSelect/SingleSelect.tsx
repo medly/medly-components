@@ -1,6 +1,6 @@
 import { ChevronDownIcon } from '@medly-components/icons';
 import { useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
+import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { TextField } from '../TextField/TextField';
 import { filterOptions, getDefaultSelectedOption, getOptionsWithSelected } from './helpers';
 import Options from './Options';
@@ -24,7 +24,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 isSearchable,
                 ...inputProps
             } = props,
-            selectId = id || 'medly-singleSelect',
+            selectId = useMemo(() => id || inputProps.label?.toLocaleLowerCase() || 'medly-singleSelect', [id, inputProps.label]),
             defaultSelectedOption = getDefaultSelectedOption(defaultOptions, value);
 
         const wrapperRef = useRef<HTMLDivElement>(null),
@@ -133,6 +133,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
 
         return (
             <Styled.Wrapper
+                id={`${selectId}-wrapper`}
                 {...{ variant, disabled, minWidth, fullWidth }}
                 ref={wrapperRef}
                 isSearchable={isSearchable}
@@ -145,7 +146,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                     variant={variant}
                     fullWidth
                     autoComplete="off"
-                    id={selectId}
+                    id={`${selectId}`}
                     onFocus={handleFocus}
                     onBlur={handleBlur}
                     disabled={disabled}

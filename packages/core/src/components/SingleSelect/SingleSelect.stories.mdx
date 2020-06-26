@@ -70,17 +70,9 @@ There are two variants available `filled` & `outlined`.
     </PreviewContent>
 </Preview>
 
-#### Error State
+#### Error validation
 
-As mentioned in TextField component there are two ways of handling form validation:
-
-##### 1. Html5 Built In form validation
-
-In this scenario just pass `withBuiltInValidation` prop as `true`.
-
-##### 2. Custom Form validation
-
-In this scenario you have to pass `errorText`.
+As mentioned in the `TextField` component, either you can pass `errorText` or `validator` prop to show the custom message. If you haven't pass any of these prop then default html5 error validation message will appear.
 
 <Preview>
     <PreviewContent>

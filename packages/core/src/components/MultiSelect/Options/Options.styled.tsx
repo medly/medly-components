@@ -5,6 +5,8 @@ import { OptionsStyledProps, OptionStyledProps } from './types';
 
 export const Options = styled('ul')<OptionsStyledProps>`
     list-style: none;
+    position: absolute;
+    top: 5.6rem;
     padding: 0;
     margin: 0;
     max-height: 200px;

@@ -18,6 +18,10 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   top: 0;
   left: 0;
   cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: absolute;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
@@ -293,6 +297,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 <div>
   <div
     class="c0"
+    id="medly-singleSelect-wrapper"
   >
     <div
       class="c1 c2"
@@ -355,6 +360,10 @@ exports[`SingleSelect component should render properly when isSearchable is true
   top: 0;
   left: 0;
   cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: absolute;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
@@ -633,6 +642,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
 <div>
   <div
     class="c0"
+    id="medly-singleSelect-wrapper"
   >
     <div
       class="c1 c2"
@@ -695,6 +705,10 @@ exports[`SingleSelect component with filled variant should render disabled state
   top: 0;
   left: 0;
   cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: absolute;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
@@ -950,6 +964,7 @@ exports[`SingleSelect component with filled variant should render disabled state
   <div
     class="c0"
     disabled=""
+    id="medly-singleSelect-wrapper"
   >
     <div
       class="c1 c2"
@@ -1272,6 +1287,10 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   top: 0;
   left: 0;
   cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: absolute;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
@@ -1547,6 +1566,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 <div>
   <div
     class="c0"
+    id="medly-singleSelect-wrapper"
   >
     <div
       class="c1 c2"
@@ -1609,6 +1629,10 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   top: 0;
   left: 0;
   cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: absolute;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
@@ -1852,6 +1876,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   <div
     class="c0"
     disabled=""
+    id="medly-singleSelect-wrapper"
   >
     <div
       class="c1 c2"
@@ -2174,6 +2199,10 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   top: 0;
   left: 0;
   cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: absolute;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
@@ -2437,6 +2466,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 <div>
   <div
     class="c0"
+    id="medly-singleSelect-wrapper"
   >
     <div
       class="c1 c2"

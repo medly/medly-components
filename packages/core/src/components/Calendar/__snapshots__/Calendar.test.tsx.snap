@@ -183,6 +183,10 @@ exports[`Calendar Component should render given date 1`] = `
   top: 0;
   left: 0;
   cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: absolute;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
@@ -656,6 +660,7 @@ exports[`Calendar Component should render given date 1`] = `
     >
       <div
         class="c7"
+        id="test-calendar-month-selector-wrapper"
       >
         <div
           class="c8 c9"
@@ -699,6 +704,7 @@ exports[`Calendar Component should render given date 1`] = `
       </div>
       <div
         class="c7"
+        id="test-calendar-year-selector-wrapper"
       >
         <div
           class="c8 c9"

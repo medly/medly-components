@@ -143,7 +143,6 @@ export const Fields: React.FC<Props> = React.memo(props => {
                                     case 'single-select':
                                         return (
                                             <SingleSelect
-                                                withBuiltInValidation
                                                 {...({
                                                     ...commonProps,
                                                     type: undefined,
