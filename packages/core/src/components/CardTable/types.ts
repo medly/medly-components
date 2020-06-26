@@ -15,6 +15,8 @@ export interface ColumnConfig {
     sortable?: boolean;
     /** Column content alignment */
     align?: 'left' | 'right' | 'center';
+    /** Column Text content wrapping */
+    wrapText?: boolean;
     /** Provide the fraction of the of the total width of the row */
     fraction?: number;
     /** Custom component */

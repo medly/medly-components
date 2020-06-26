@@ -27,6 +27,10 @@ describe('CardTable Row', () => {
         const { container } = renderer({ withWhiteBackground: true });
         expect(container).toMatchSnapshot();
     });
+    it('should render with grey background if row is disabled', () => {
+        const { container } = renderer({ isRowClickDisabled: true });
+        expect(container).toMatchSnapshot();
+    });
     it('should call onClick on click of the row', () => {
         const onClick = jest.fn();
         const { getByText } = renderer({ isRowClickDisabled: false, onClick });
