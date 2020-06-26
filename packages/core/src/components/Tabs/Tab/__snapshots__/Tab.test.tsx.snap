@@ -45,6 +45,7 @@ exports[`Tab should render properly 1`] = `
 
 .c0 .c3 {
   font-size: 1.6rem;
+  font-weight: 600;
   line-height: 2.6rem;
 }
 
@@ -59,7 +60,7 @@ exports[`Tab should render properly 1`] = `
   display: block;
   height: 0.4rem;
   background-color: transparent;
-  border-radius: 0.5rem 5rem 0 0;
+  border-radius: 0;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -81,6 +82,10 @@ exports[`Tab should render properly 1`] = `
   cursor: not-allowed;
 }
 
+.c0:disabled::after {
+  background-color: transparent;
+}
+
 .c0:last-child {
   border-right: 0 none;
 }
@@ -89,8 +94,22 @@ exports[`Tab should render properly 1`] = `
   background-color: #F7F8F9;
 }
 
-.c0:hover .c3 {
+.c0:hover .c3,
+.c0:hover .sc-AxhCb {
   color: #435465;
+}
+
+.c0:hover .sc-AxiKw {
+  background-color: #435465;
+}
+
+.c0:hover .sc-AxjAm {
+  background-color: #dfe4e9;
+  border-color: #dfe4e9;
+}
+
+.c0:hover .sc-AxjAm * {
+  fill: #435465;
 }
 
 .c1 {
@@ -197,6 +216,7 @@ exports[`Tab should render properly with icon 1`] = `
 
 .c0 .c5 {
   font-size: 1.6rem;
+  font-weight: 600;
   line-height: 2.6rem;
 }
 
@@ -211,7 +231,7 @@ exports[`Tab should render properly with icon 1`] = `
   display: block;
   height: 0.4rem;
   background-color: transparent;
-  border-radius: 0.5rem 5rem 0 0;
+  border-radius: 0;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -233,6 +253,10 @@ exports[`Tab should render properly with icon 1`] = `
   cursor: not-allowed;
 }
 
+.c0:disabled::after {
+  background-color: transparent;
+}
+
 .c0 .c1 {
   border-radius: 50%;
   border: 1px solid #eff2f4;
@@ -249,8 +273,22 @@ exports[`Tab should render properly with icon 1`] = `
   background-color: #F7F8F9;
 }
 
-.c0:hover .c5 {
+.c0:hover .c5,
+.c0:hover .sc-AxhCb {
   color: #435465;
+}
+
+.c0:hover .sc-AxiKw {
+  background-color: #435465;
+}
+
+.c0:hover .c1 {
+  background-color: #dfe4e9;
+  border-color: #dfe4e9;
+}
+
+.c0:hover .c1 * {
+  fill: #435465;
 }
 
 .c3 {

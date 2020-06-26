@@ -46,6 +46,7 @@ exports[`Tab should render properly 1`] = `
 
 .c1 .c4 {
   font-size: 1.6rem;
+  font-weight: 600;
   line-height: 2.6rem;
 }
 
@@ -60,7 +61,7 @@ exports[`Tab should render properly 1`] = `
   display: block;
   height: 0.4rem;
   background-color: #005AEE;
-  border-radius: 0.5rem 5rem 0 0;
+  border-radius: 0;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -80,6 +81,10 @@ exports[`Tab should render properly 1`] = `
 
 .c1:disabled {
   cursor: not-allowed;
+}
+
+.c1:disabled::after {
+  background-color: transparent;
 }
 
 .c1 .sc-AxirZ * {
@@ -126,6 +131,7 @@ exports[`Tab should render properly 1`] = `
 
 .c6 .c4 {
   font-size: 1.6rem;
+  font-weight: 600;
   line-height: 2.6rem;
 }
 
@@ -140,7 +146,7 @@ exports[`Tab should render properly 1`] = `
   display: block;
   height: 0.4rem;
   background-color: transparent;
-  border-radius: 0.5rem 5rem 0 0;
+  border-radius: 0;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -162,6 +168,10 @@ exports[`Tab should render properly 1`] = `
   cursor: not-allowed;
 }
 
+.c6:disabled::after {
+  background-color: transparent;
+}
+
 .c6:last-child {
   border-right: 0 none;
 }
@@ -170,8 +180,22 @@ exports[`Tab should render properly 1`] = `
   background-color: #F7F8F9;
 }
 
-.c6:hover .c4 {
+.c6:hover .c4,
+.c6:hover .sc-AxhCb {
   color: #435465;
+}
+
+.c6:hover .sc-AxiKw {
+  background-color: #435465;
+}
+
+.c6:hover .sc-AxirZ {
+  background-color: #dfe4e9;
+  border-color: #dfe4e9;
+}
+
+.c6:hover .sc-AxirZ * {
+  fill: #435465;
 }
 
 .c2 {
@@ -200,6 +224,7 @@ exports[`Tab should render properly 1`] = `
   flex-direction: row;
   overflow-x: auto;
   border: 0 none;
+  border-bottom: 1px solid #C7D0D8;
   border-radius: 0;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

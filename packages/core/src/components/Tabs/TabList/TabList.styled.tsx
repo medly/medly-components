@@ -6,6 +6,7 @@ export const TabList = styled.div<{ tabStyle?: TabStyle }>`
     flex-direction: row;
     overflow-x: auto;
     border: ${({ theme, tabStyle }) => (tabStyle === 'CLOSED' ? `1px solid ${theme.colors.grey[300]}` : '0 none')};
+    border-bottom: ${({ theme, tabStyle }) => `1px solid ${tabStyle === 'OPEN' ? theme.colors.grey[400] : theme.colors.grey[300]}`};
     border-radius: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? '8px 8px 0 0' : '0')};
 
     ${centerAligned()}
