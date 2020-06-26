@@ -5,7 +5,7 @@ import { Avatar } from './Avatar';
 
 describe('Avatar component', () => {
     it('should render with default theme', () => {
-        const { container } = render(<Avatar>M</Avatar>);
+        const { container } = render(<Avatar withHoverEffect={true}>M</Avatar>);
         expect(container).toMatchSnapshot();
     });
 
@@ -39,7 +39,7 @@ describe('Avatar component', () => {
 
     it('should render image avatar properly', () => {
         const { container } = render(
-            <Avatar size="L">
+            <Avatar size="L" withHoverEffect={true}>
                 <img src="http://dummurl" />
             </Avatar>
         );
