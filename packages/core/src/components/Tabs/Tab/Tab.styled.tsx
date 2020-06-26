@@ -59,7 +59,18 @@ const nonActiveStyle = ({ theme, tabStyle, tabBackground, tabSize, disabled }: S
         tabs: { textColor, backgroundColor }
     } = theme;
     const hoveredColor = disabled ? textColor.nonActive : textColor.hovered;
-    const svgHoveredColor = tabSize !== 'S' && !disabled ? theme.colors.grey[200] : disabled ? theme.colors.grey[100] : 'transparent';
+    const {
+        colors: { grey }
+    } = theme;
+    let svgHoveredColor = 'transparent';
+
+    if (tabSize !== 'S') {
+        if (disabled) {
+            svgHoveredColor = grey[100];
+        } else {
+            svgHoveredColor = grey[200];
+        }
+    }
 
     return css`
         color: ${textColor.nonActive};
