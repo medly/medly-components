@@ -1,4 +1,4 @@
-import { fireEvent, render } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import React from 'react';
 import Tab from '../Tab';
 import { TabList } from './TabList';
@@ -15,7 +15,7 @@ const renderer = (active = 'tab1', onChange = jest.fn()) =>
         </TabList>
     );
 
-describe('Tab', () => {
+describe('TabList', () => {
     it('should render properly', () => {
         const { container } = renderer();
         expect(container).toMatchSnapshot();
@@ -23,55 +23,55 @@ describe('Tab', () => {
 
     it('should call onChange prop on click on any tab', () => {
         const mockOnChange = jest.fn();
-        const { getByText } = renderer('tab1', mockOnChange);
-        fireEvent.click(getByText('Edit'));
+        renderer('tab1', mockOnChange);
+        fireEvent.click(screen.getByText('Edit'));
         expect(mockOnChange).toBeCalledWith('tab2');
     });
 
     it('should call onChange prop with expected data on pressing right arrow key', () => {
-        const mockOnChange = jest.fn();
-        const { container, getByText } = renderer('tab1', mockOnChange);
-        fireEvent.focus(getByText('Add'));
+        const mockOnChange = jest.fn(),
+            { container } = renderer('tab1', mockOnChange);
+        fireEvent.focus(screen.getByText('Add'));
         fireEvent.keyDown(container, { key: 'ArrowRight' });
         expect(mockOnChange).toBeCalledWith('tab2');
     });
 
     it('should call onChange prop with first tab id on pressing right arrow key and last tab is active', () => {
-        const mockOnChange = jest.fn();
-        const { container, getByText } = renderer('tab2', mockOnChange);
-        fireEvent.focus(getByText('Add'));
+        const mockOnChange = jest.fn(),
+            { container } = renderer('tab2', mockOnChange);
+        fireEvent.focus(screen.getByText('Add'));
         fireEvent.keyDown(container, { key: 'ArrowRight' });
         expect(mockOnChange).toBeCalledWith('tab1');
     });
 
     it('should call onChange prop with expected data on pressing left arrow key', () => {
-        const mockOnChange = jest.fn();
-        const { container, getByText } = renderer('tab2', mockOnChange);
-        fireEvent.focus(getByText('Add'));
+        const mockOnChange = jest.fn(),
+            { container } = renderer('tab2', mockOnChange);
+        fireEvent.focus(screen.getByText('Add'));
         fireEvent.keyDown(container, { key: 'ArrowLeft' });
         expect(mockOnChange).toBeCalledWith('tab1');
     });
 
     it('should call onChange prop with last tab id on pressing left arrow key and last tab is active', () => {
-        const mockOnChange = jest.fn();
-        const { container, getByText } = renderer('tab1', mockOnChange);
-        fireEvent.focus(getByText('Add'));
+        const mockOnChange = jest.fn(),
+            { container } = renderer('tab1', mockOnChange);
+        fireEvent.focus(screen.getByText('Add'));
         fireEvent.keyDown(container, { key: 'ArrowLeft' });
         expect(mockOnChange).toBeCalledWith('tab2');
     });
 
     it('should call onChange prop with expected data on pressing Home key', () => {
-        const mockOnChange = jest.fn();
-        const { container, getByText } = renderer('tab2', mockOnChange);
-        fireEvent.focus(getByText('Add'));
+        const mockOnChange = jest.fn(),
+            { container } = renderer('tab2', mockOnChange);
+        fireEvent.focus(screen.getByText('Add'));
         fireEvent.keyDown(container, { key: 'Home' });
         expect(mockOnChange).toBeCalledWith('tab1');
     });
 
     it('should call onChange prop with expected data on pressing End arrow key', () => {
-        const mockOnChange = jest.fn();
-        const { container, getByText } = renderer('tab1', mockOnChange);
-        fireEvent.focus(getByText('Add'));
+        const mockOnChange = jest.fn(),
+            { container } = renderer('tab1', mockOnChange);
+        fireEvent.focus(screen.getByText('Add'));
         fireEvent.keyDown(container, { key: 'End' });
         expect(mockOnChange).toBeCalledWith('tab2');
     });

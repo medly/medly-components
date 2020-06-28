@@ -1,8 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tabs should not render when there is no children 1`] = `<div />`;
-
-exports[`Tabs should render properly without any prop 1`] = `
+exports[`Tabs should render properly 1`] = `
 .c4 {
   margin: 0;
   color: inherit;
@@ -13,6 +11,15 @@ exports[`Tabs should render properly without any prop 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+}
+
+.c7 {
+  color: #ffffff;
+  border-radius: 2.5rem;
+  margin-left: 0.8rem;
+  line-height: 1.2rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.1rem;
 }
 
 .c1 {
@@ -42,12 +49,12 @@ exports[`Tabs should render properly without any prop 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  border-color: #b0bcc8;
-  border-width: 0 0 0.1rem 0;
+  border-color: #C7D0D8;
+  border-width: 0.1rem 0.1rem 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #e6effd;
-  background-color: #ffffff;
+  background-color: #e6effd;
 }
 
 .c1 * {
@@ -56,6 +63,7 @@ exports[`Tabs should render properly without any prop 1`] = `
 }
 
 .c1:first-child {
+  border-left-width: 0.1rem;
   border-top-left-radius: 0.8rem;
 }
 
@@ -69,10 +77,9 @@ exports[`Tabs should render properly without any prop 1`] = `
   display: block;
   height: 0.4rem;
   bottom: -0.1rem;
-  left: 0;
-  width: 100%;
+  left: -0.1rem;
+  width: calc(100% + 0.2rem);
   background-color: #005AEE;
-  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .c1:focus {
@@ -96,7 +103,7 @@ exports[`Tabs should render properly without any prop 1`] = `
   color: #b0bcc8;
 }
 
-.c1:disabled .sc-AxiKw {
+.c1:disabled .c6 {
   background-color: #b0bcc8;
 }
 
@@ -126,7 +133,7 @@ exports[`Tabs should render properly without any prop 1`] = `
   color: #607890;
 }
 
-.c1 .sc-AxiKw {
+.c1 .c6 {
   background-color: #005AEE;
 }
 
@@ -144,7 +151,7 @@ exports[`Tabs should render properly without any prop 1`] = `
   fill: #005AEE;
 }
 
-.c6 {
+.c8 {
   padding: 1.6rem;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -171,127 +178,127 @@ exports[`Tabs should render properly without any prop 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  border-color: #b0bcc8;
-  border-width: 0 0 0.1rem 0;
+  border-color: #C7D0D8;
+  border-width: 0.1rem 0.1rem 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
 }
 
-.c6 * {
+.c8 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c6:first-child {
+.c8:first-child {
+  border-left-width: 0.1rem;
   border-top-left-radius: 0.8rem;
 }
 
-.c6:last-child {
+.c8:last-child {
   border-top-right-radius: 0.8rem;
 }
 
-.c6::after {
+.c8::after {
   content: '';
   position: absolute;
   display: block;
   height: 0.4rem;
   bottom: -0.1rem;
-  left: 0;
-  width: 100%;
+  left: -0.1rem;
+  width: calc(100% + 0.2rem);
   background-color: transparent;
-  border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.c6:focus {
+.c8:focus {
   outline: none;
 }
 
-.c6:disabled {
+.c8:disabled {
   cursor: not-allowed;
   background-color: #ffffff;
 }
 
-.c6:disabled::after {
+.c8:disabled::after {
   background-color: transparent;
 }
 
-.c6:disabled .c5 {
+.c8:disabled .c5 {
   color: #b0bcc8;
 }
 
-.c6:disabled .sc-AxhUy {
+.c8:disabled .sc-AxhUy {
   color: #b0bcc8;
 }
 
-.c6:disabled .sc-AxiKw {
+.c8:disabled .c6 {
   background-color: #b0bcc8;
 }
 
-.c6:disabled .sc-AxjAm {
+.c8:disabled .sc-AxjAm {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c6:disabled .sc-AxjAm * {
+.c8:disabled .sc-AxjAm * {
   fill: #b0bcc8;
 }
 
-.c6:not(:disabled):hover {
+.c8:not(:disabled):hover {
   cursor: pointer;
 }
 
-.c6 .sc-AxjAm {
+.c8 .sc-AxjAm {
   margin-right: 1.6rem;
 }
 
-.c6 .c5 {
+.c8 .c5 {
   color: #607890;
 }
 
-.c6 .sc-AxhUy {
+.c8 .sc-AxhUy {
   color: #607890;
 }
 
-.c6 .sc-AxiKw {
+.c8 .c6 {
   background-color: #607890;
 }
 
-.c6 .sc-AxjAm {
+.c8 .sc-AxjAm {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c6 .sc-AxjAm * {
+.c8 .sc-AxjAm * {
   fill: #607890;
 }
 
-.c6:not(:disabled):hover {
+.c8:not(:disabled):hover {
   background-color: #F7F8F9;
   background-color: #F7F8F9;
 }
 
-.c6:not(:disabled):hover .c5 {
+.c8:not(:disabled):hover .c5 {
   color: #435465;
 }
 
-.c6:not(:disabled):hover .sc-AxhUy {
+.c8:not(:disabled):hover .sc-AxhUy {
   color: #435465;
 }
 
-.c6:not(:disabled):hover .sc-AxiKw {
+.c8:not(:disabled):hover .c6 {
   background-color: #435465;
 }
 
-.c6:not(:disabled):hover .sc-AxjAm {
+.c8:not(:disabled):hover .sc-AxjAm {
   font-size: 2.4rem;
   padding: 0;
   background-color: transparent;
 }
 
-.c6:not(:disabled):hover .sc-AxjAm * {
+.c8:not(:disabled):hover .sc-AxjAm * {
   fill: #435465;
 }
 
@@ -343,12 +350,13 @@ exports[`Tabs should render properly without any prop 1`] = `
   background-color: transparent;
 }
 
-.c7 {
+.c9 {
   padding: 10px;
   height: 100%;
+  width: 100%;
 }
 
-.c7:focus {
+.c9:focus {
   outline: none;
 }
 
@@ -378,8 +386,15 @@ exports[`Tabs should render properly without any prop 1`] = `
           >
             <span
               class="c4 c5 "
+              id="tab1-label"
             >
               Add
+            </span>
+            <span
+              class="c6 c7"
+              id="tab1-label"
+            >
+              30
             </span>
           </div>
         </div>
@@ -387,7 +402,7 @@ exports[`Tabs should render properly without any prop 1`] = `
       <button
         aria-controls="panel-tab2"
         aria-selected="false"
-        class="c6"
+        class="c8"
         id="tab2"
         role="tab"
         tabindex="-1"
@@ -401,8 +416,33 @@ exports[`Tabs should render properly without any prop 1`] = `
           >
             <span
               class="c4 c5 "
+              id="tab2-label"
             >
               Edit
+            </span>
+          </div>
+        </div>
+      </button>
+      <button
+        aria-controls="panel-tab4"
+        aria-selected="false"
+        class="c8"
+        id="tab4"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        <div
+          class="c2"
+        >
+          <div
+            class="c3"
+          >
+            <span
+              class="c4 c5 "
+              id="tab4-label"
+            >
+              Disabled
             </span>
           </div>
         </div>
@@ -410,7 +450,7 @@ exports[`Tabs should render properly without any prop 1`] = `
     </div>
     <div
       aria-labelledby="tab1"
-      class="c7"
+      class="c9"
       id="medly-tabs-panel-tab1"
       role="tabpanel"
       tabindex="0"

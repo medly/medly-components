@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tab should render properly 1`] = `
+exports[`TabList should render properly 1`] = `
 .c4 {
   margin: 0;
   color: inherit;
@@ -360,6 +360,7 @@ exports[`Tab should render properly 1`] = `
         >
           <span
             class="c4 c5 "
+            id="tab1-label"
           >
             Add
           </span>
@@ -383,6 +384,7 @@ exports[`Tab should render properly 1`] = `
         >
           <span
             class="c4 c5 "
+            id="tab2-label"
           >
             Edit
           </span>
