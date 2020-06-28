@@ -16,11 +16,11 @@ export interface Props extends HTMLProps<HTMLDivElement> {
     active?: any;
     /**  Function to be called on selecting any tab */
     onChange?: (id: any) => void;
-    /** Size for tab, default is S */
+    /** Size for tab */
     tabSize?: TabSize;
-    /** Tab can have tab style of OPEN and CLOSED */
+    /** Tab can have OPEN and CLOSED style */
     tabStyle?: TabStyle;
-    /**  Tab Background can be WHITE or GREY */
+    /** Background color of the Tabs wrapper */
     tabBackground?: TabBackground;
 }
 

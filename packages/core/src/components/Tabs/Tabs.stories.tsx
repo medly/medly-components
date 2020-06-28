@@ -16,13 +16,13 @@ const tabStyle: Props['tabStyle'][] = ['OPEN', 'CLOSED'];
 
 export const Basic = () => (
     <Tabs aria-label="Basic Tabs" tabSize={select('Tab Size', size, 'S')}>
-        <Tabs.Tab id="tab1" label="Add" hide>
+        <Tabs.Tab id="tab1" label="Add" hide helperText="Details">
             Content for the add panel
         </Tabs.Tab>
-        <Tabs.Tab id="tab2" label="Edit">
+        <Tabs.Tab id="tab2" label="Edit" helperText="Details">
             Content for the edit panel
         </Tabs.Tab>
-        <Tabs.Tab id="tab3" label="Delete">
+        <Tabs.Tab id="tab3" label="Delete" helperText="Details">
             Content for the delete panel
         </Tabs.Tab>
     </Tabs>
@@ -34,10 +34,10 @@ export const WithIcon = () => {
             <Tabs.Tab id="tab1" label="Add" icon={AddIcon}>
                 Content for the add panel
             </Tabs.Tab>
-            <Tabs.Tab id="tab2" label="Edit" icon={EditIcon}>
+            <Tabs.Tab id="tab2" label="Edit" icon={EditIcon} count={68}>
                 Content for the edit panel
             </Tabs.Tab>
-            <Tabs.Tab id="tab3" label="Delete" icon={DeleteIcon} disabled={true}>
+            <Tabs.Tab id="tab3" label="Delete" icon={DeleteIcon} disabled={true} count={10}>
                 Content for the delete panel
             </Tabs.Tab>
         </Tabs>
@@ -53,13 +53,13 @@ export const WithDescriptionAndCount = () => {
             tabBackground={select('Tab Background', tabBg, 'WHITE')}
             tabStyle={select('Tab Style', tabStyle, 'OPEN')}
         >
-            <Tabs.Tab id="tab1" label="Add" secondaryLabel="Details" count={68} icon={DashboardIcon}>
+            <Tabs.Tab id="tab1" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
                 Content for the add panel
             </Tabs.Tab>
-            <Tabs.Tab id="tab2" label="Edit" secondaryLabel="Details" count={10} icon={DateRangeIcon}>
+            <Tabs.Tab id="tab2" label="Edit" helperText="Details" count={10} icon={DateRangeIcon}>
                 Content for the edit panel
             </Tabs.Tab>
-            <Tabs.Tab id="tab3" label="Delete" secondaryLabel="Details" count={30} icon={ViewColumnIcon} disabled={true}>
+            <Tabs.Tab id="tab3" label="Delete" helperText="Details" count={30} icon={ViewColumnIcon} disabled={true}>
                 Content for the delete panel
             </Tabs.Tab>
         </Tabs>

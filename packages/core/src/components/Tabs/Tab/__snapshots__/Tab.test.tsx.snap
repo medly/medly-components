@@ -1,21 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tab should render properly 1`] = `
-.c4 {
+.c3 {
   margin: 0;
   color: inherit;
-  font-size: 1.4rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 600;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 2.6rem;
 }
 
 .c0 {
-  border: 0;
-  background-color: transparent;
   padding: 1.6rem;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -39,39 +37,38 @@ exports[`Tab should render properly 1`] = `
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: relative;
-  color: #607890;
-  border-right: 0 none;
+  border-style: solid;
+  box-sizing: border-box;
+  font-family: inherit;
+  border-color: #b0bcc8;
+  border-width: 0 0 0.1rem 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: #ffffff;
 }
 
-.c0 .c3 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 2.6rem;
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
 }
 
-.c0 p {
-  line-height: 2.2rem;
-  font-size: 1.4rem;
+.c0:first-child {
+  border-top-left-radius: 0.8rem;
+}
+
+.c0:last-child {
+  border-top-right-radius: 0.8rem;
 }
 
 .c0::after {
   content: '';
-  width: 100%;
+  position: absolute;
   display: block;
   height: 0.4rem;
-  background-color: transparent;
-  border-radius: 0;
-  position: absolute;
+  bottom: -0.1rem;
   left: 0;
-  bottom: 0;
-}
-
-.c0:hover {
-  cursor: pointer;
-}
-
-.c0:hover::after {
-  background-color: #F7F8F9;
+  width: 100%;
+  background-color: transparent;
 }
 
 .c0:focus {
@@ -80,40 +77,100 @@ exports[`Tab should render properly 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
+  background-color: #ffffff;
 }
 
 .c0:disabled::after {
   background-color: transparent;
 }
 
-.c0:last-child {
-  border-right: 0 none;
+.c0:disabled .c4 {
+  color: #b0bcc8;
 }
 
-.c0:hover {
+.c0:disabled .sc-AxhUy {
+  color: #b0bcc8;
+}
+
+.c0:disabled .sc-AxiKw {
+  background-color: #b0bcc8;
+}
+
+.c0:disabled .sc-AxjAm {
+  font-size: 2.4rem;
+  padding: 0;
   background-color: #F7F8F9;
 }
 
-.c0:hover .c3,
-.c0:hover .sc-AxhCb {
+.c0:disabled .sc-AxjAm * {
+  fill: #b0bcc8;
+}
+
+.c0:not(:disabled):hover {
+  cursor: pointer;
+}
+
+.c0 .sc-AxjAm {
+  margin-right: 1.6rem;
+}
+
+.c0 .c4 {
+  color: #607890;
+}
+
+.c0 .sc-AxhUy {
+  color: #607890;
+}
+
+.c0 .sc-AxiKw {
+  background-color: #607890;
+}
+
+.c0 .sc-AxjAm {
+  font-size: 2.4rem;
+  padding: 0;
+  background-color: #eff2f4;
+}
+
+.c0 .sc-AxjAm * {
+  fill: #607890;
+}
+
+.c0:not(:disabled):hover {
+  background-color: #F7F8F9;
+  background-color: #F7F8F9;
+}
+
+.c0:not(:disabled):hover .c4 {
   color: #435465;
 }
 
-.c0:hover .sc-AxiKw {
+.c0:not(:disabled):hover .sc-AxhUy {
+  color: #435465;
+}
+
+.c0:not(:disabled):hover .sc-AxiKw {
   background-color: #435465;
 }
 
-.c0:hover .sc-AxjAm {
+.c0:not(:disabled):hover .sc-AxjAm {
+  font-size: 2.4rem;
+  padding: 0;
   background-color: #dfe4e9;
-  border-color: #dfe4e9;
 }
 
-.c0:hover .sc-AxjAm * {
+.c0:not(:disabled):hover .sc-AxjAm * {
   fill: #435465;
 }
 
 .c1 {
-  margin-left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c2 {
@@ -121,14 +178,13 @@ exports[`Tab should render properly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c2 .c3 {
-  grid-area: label;
 }
 
 <div>
@@ -148,7 +204,7 @@ exports[`Tab should render properly 1`] = `
         class="c2"
       >
         <span
-          class="c3 c4"
+          class="c3 c4 "
         >
           Add
         </span>
@@ -165,6 +221,9 @@ exports[`Tab should render properly with icon 1`] = `
   transition: all 100ms linear;
   font-size: 2.4rem;
   cursor: inherit;
+  padding: 0.8rem;
+  border-radius: 50%;
+  background-color: #e6effd;
 }
 
 .c2 * {
@@ -172,21 +231,19 @@ exports[`Tab should render properly with icon 1`] = `
   fill: #607890;
 }
 
-.c6 {
+.c5 {
   margin: 0;
   color: inherit;
-  font-size: 1.4rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 600;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 2.6rem;
 }
 
 .c0 {
-  border: 0;
-  background-color: transparent;
   padding: 1.6rem;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -210,39 +267,38 @@ exports[`Tab should render properly with icon 1`] = `
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   position: relative;
-  color: #607890;
-  border-right: 0 none;
+  border-style: solid;
+  box-sizing: border-box;
+  font-family: inherit;
+  border-color: #b0bcc8;
+  border-width: 0 0 0.1rem 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: #ffffff;
 }
 
-.c0 .c5 {
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 2.6rem;
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
 }
 
-.c0 p {
-  line-height: 2.2rem;
-  font-size: 1.4rem;
+.c0:first-child {
+  border-top-left-radius: 0.8rem;
+}
+
+.c0:last-child {
+  border-top-right-radius: 0.8rem;
 }
 
 .c0::after {
   content: '';
-  width: 100%;
+  position: absolute;
   display: block;
   height: 0.4rem;
-  background-color: transparent;
-  border-radius: 0;
-  position: absolute;
+  bottom: -0.1rem;
   left: 0;
-  bottom: 0;
-}
-
-.c0:hover {
-  cursor: pointer;
-}
-
-.c0:hover::after {
-  background-color: #F7F8F9;
+  width: 100%;
+  background-color: transparent;
 }
 
 .c0:focus {
@@ -251,48 +307,100 @@ exports[`Tab should render properly with icon 1`] = `
 
 .c0:disabled {
   cursor: not-allowed;
+  background-color: #ffffff;
 }
 
 .c0:disabled::after {
   background-color: transparent;
 }
 
-.c0 .c1 {
-  border-radius: 50%;
-  border: 1px solid #eff2f4;
-  background-color: #eff2f4;
-  padding: 0.5rem;
-  font-size: 2rem;
+.c0:disabled .c6 {
+  color: #b0bcc8;
 }
 
-.c0:last-child {
-  border-right: 0 none;
+.c0:disabled .sc-AxhUy {
+  color: #b0bcc8;
 }
 
-.c0:hover {
+.c0:disabled .sc-AxiKw {
+  background-color: #b0bcc8;
+}
+
+.c0:disabled .c1 {
+  font-size: 2.4rem;
+  padding: 0;
   background-color: #F7F8F9;
 }
 
-.c0:hover .c5,
-.c0:hover .sc-AxhCb {
+.c0:disabled .c1 * {
+  fill: #b0bcc8;
+}
+
+.c0:not(:disabled):hover {
+  cursor: pointer;
+}
+
+.c0 .c1 {
+  margin-right: 1.6rem;
+}
+
+.c0 .c6 {
+  color: #607890;
+}
+
+.c0 .sc-AxhUy {
+  color: #607890;
+}
+
+.c0 .sc-AxiKw {
+  background-color: #607890;
+}
+
+.c0 .c1 {
+  font-size: 2.4rem;
+  padding: 0;
+  background-color: #eff2f4;
+}
+
+.c0 .c1 * {
+  fill: #607890;
+}
+
+.c0:not(:disabled):hover {
+  background-color: #F7F8F9;
+  background-color: #F7F8F9;
+}
+
+.c0:not(:disabled):hover .c6 {
   color: #435465;
 }
 
-.c0:hover .sc-AxiKw {
+.c0:not(:disabled):hover .sc-AxhUy {
+  color: #435465;
+}
+
+.c0:not(:disabled):hover .sc-AxiKw {
   background-color: #435465;
 }
 
-.c0:hover .c1 {
+.c0:not(:disabled):hover .c1 {
+  font-size: 2.4rem;
+  padding: 0;
   background-color: #dfe4e9;
-  border-color: #dfe4e9;
 }
 
-.c0:hover .c1 * {
+.c0:not(:disabled):hover .c1 * {
   fill: #435465;
 }
 
 .c3 {
-  margin-left: 1.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c4 {
@@ -300,14 +408,13 @@ exports[`Tab should render properly with icon 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c4 .c5 {
-  grid-area: label;
 }
 
 <div>
@@ -323,8 +430,8 @@ exports[`Tab should render properly with icon 1`] = `
     <svg
       class="c1 c2"
       fill="none"
-      focusable="false"
       height="1em"
+      variant="solid"
       viewBox="0 0 24 24"
       width="1em"
       xmlns="http://www.w3.org/2000/svg"
@@ -342,7 +449,7 @@ exports[`Tab should render properly with icon 1`] = `
         class="c4"
       >
         <span
-          class="c5 c6"
+          class="c5 c6 "
         >
           Add
         </span>
