@@ -1,34 +1,39 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import { Data } from './types';
 
-type Result = [
-    { value: number[]; setValue: React.Dispatch<React.SetStateAction<number[]>>; isAllSelected: boolean },
-    { value: number[]; setValue: React.Dispatch<React.SetStateAction<number[]>> },
-    (id: number) => void
-];
+type Result = {
+    isEachRowSelected: boolean;
+    isAnyRowSelected: boolean;
+    selectedIds: number[];
+    toggleId: (id: number) => void;
+};
 
-const useRowSelector = (initialIds: number[], initialSelectedIds: number[]): Result => {
-    const [ids, setIds] = useState<number[]>(initialIds),
-        [selectedIds, setSelectedIds] = useState(initialSelectedIds);
+const useRowSelector = (data: Data[], initialSelectedIds: number[], rowSelectionDisableKey: string, uniqueKeyName: string): Result => {
+    const ids = useMemo(() => data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[uniqueKeyName]), [
+            data,
+            rowSelectionDisableKey,
+            uniqueKeyName
+        ]),
+        [selectedIds, setSelectedIds] = useState(initialSelectedIds),
+        isEachRowSelected = useMemo(() => ids.length > 0 && ids.length === selectedIds.length, [ids, selectedIds]),
+        isAnyRowSelected = useMemo(() => selectedIds.length > 0 && !isEachRowSelected, [selectedIds, isEachRowSelected]);
 
     const toggleId = useCallback(
-        (id: number) => {
+        (id: number) =>
             setSelectedIds(sIds => {
                 if (id === -1) {
                     return sIds.length === ids.length ? [] : ids;
                 }
                 return sIds.indexOf(id) === -1 ? [...sIds, id] : sIds.filter(i => i !== id);
-            });
-        },
+            }),
         [ids]
     );
 
-    const idsHookValues = useMemo(
-            () => ({ value: ids, setValue: setIds, isAllSelected: ids.length > 0 && ids.length === selectedIds.length }),
-            [ids, selectedIds]
-        ),
-        selectedIdsHookValues = useMemo(() => ({ value: selectedIds, setValue: setSelectedIds }), [selectedIds]);
+    useEffect(() => {
+        setSelectedIds(initialSelectedIds);
+    }, [initialSelectedIds]);
 
-    return [idsHookValues, selectedIdsHookValues, toggleId];
+    return { isEachRowSelected, isAnyRowSelected, selectedIds, toggleId };
 };
 
 export default useRowSelector;

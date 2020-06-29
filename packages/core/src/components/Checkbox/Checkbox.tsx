@@ -31,6 +31,7 @@ export const Checkbox: FC<Props> & WithStyle = React.memo(
             ]),
             isErrorPresent = useMemo(() => !!errorText || hasError || !!builtInErrorMessage, [errorText, hasError, builtInErrorMessage]);
 
+        console.log('------->', inputProps.name, isActive, indeterminate);
         const validate = useCallback(
                 (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void, preventDefault = true) => {
                     preventDefault && event.preventDefault();

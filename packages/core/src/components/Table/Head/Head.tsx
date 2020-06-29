@@ -8,7 +8,16 @@ import HeadCell from './HeadCell';
 import { Props } from './types';
 
 const Head: React.FC<Props> = React.memo(props => {
-    const { columns, onSort, setColumns, isAllRowSelected, isSelectAllDisable, onSelectAllClick, maxColumnSizes } = props;
+    const {
+        columns,
+        onSort,
+        setColumns,
+        isAnyRowSelected,
+        isEachRowSelected,
+        isSelectAllDisable,
+        onSelectAllClick,
+        maxColumnSizes
+    } = props;
 
     const [sortField, setSortField] = useState('');
 
@@ -26,14 +35,15 @@ const Head: React.FC<Props> = React.memo(props => {
     const selectAllCheckBox = useMemo(
             () => (
                 <Checkbox
+                    indeterminate={isAnyRowSelected}
                     disabled={isSelectAllDisable}
-                    checked={isAllRowSelected}
+                    checked={isEachRowSelected}
                     onChange={handleSelectAllClick}
                     onClick={stopPropagation}
                     name="active"
                 />
             ),
-            [isSelectAllDisable, isAllRowSelected, handleSelectAllClick]
+            [isAnyRowSelected, isEachRowSelected, isSelectAllDisable, handleSelectAllClick]
         ),
         headCell = useCallback(
             (configs: ColumnConfig[], field = '') =>
@@ -53,7 +63,7 @@ const Head: React.FC<Props> = React.memo(props => {
                             sortField={sortField}
                             frozen={config.frozen}
                             hide={config.hide}
-                            enableSorting={config.sort}
+                            enableSorting={config.sortable}
                             key={index}
                             field={fieldName}
                             onSortChange={handleSortChange}
@@ -63,7 +73,7 @@ const Head: React.FC<Props> = React.memo(props => {
                         </HeadCell>
                     );
                 }),
-            [sortField, maxColumnSizes, isSelectAllDisable, isAllRowSelected, handleSelectAllClick]
+            [sortField, maxColumnSizes, selectAllCheckBox]
         );
 
     return <Row gridTemplateColumns={getGridTemplateColumns(columns)}>{headCell(columns)}</Row>;

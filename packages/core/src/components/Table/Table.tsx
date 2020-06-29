@@ -34,33 +34,22 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
             ...restProps
         } = props;
 
-        const [ids, selectedIds, toggleId] = useRowSelector(
-                data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[uniqueKeyName]),
-                selectedRows
-            ),
-            [isSelectAllDisable, setSelectAllDisableState] = useState(data.every(dt => dt[rowSelectionDisableKey])),
-            [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
-            [columns, setColumns] = useState(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns]));
+        const [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
+            [columns, setColumns] = useState(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns])),
+            addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]);
 
-        const addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]),
-            isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]);
+        const isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]),
+            isSelectAllDisable = useMemo(() => data.every(dt => dt[rowSelectionDisableKey]), [data, rowSelectionDisableKey]),
+            rowSelector = useRowSelector(data, selectedRows, rowSelectionDisableKey, uniqueKeyName),
+            { isAnyRowSelected, isEachRowSelected, selectedIds, toggleId } = rowSelector;
 
         useEffect(() => {
             setColumns(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns]));
         }, [props.columns, isSelectable]);
 
         useEffect(() => {
-            ids.setValue(data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[uniqueKeyName]));
-            setSelectAllDisableState(data.every(dt => dt[rowSelectionDisableKey]));
-        }, [data]);
-
-        useEffect(() => {
-            selectedIds.setValue(selectedRows);
-        }, [selectedRows]);
-
-        useEffect(() => {
-            onRowSelection && onRowSelection(selectedIds.value);
-        }, [selectedIds.value]);
+            onRowSelection && onRowSelection(selectedIds);
+        }, [selectedIds]);
 
         return (
             <TableStyled ref={ref} isRowClickable={isRowClickable} {...restProps}>
@@ -70,8 +59,9 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
                         columns,
                         setColumns,
                         maxColumnSizes,
+                        isEachRowSelected,
+                        isAnyRowSelected,
                         onSelectAllClick: toggleId,
-                        isAllRowSelected: ids.isAllSelected,
                         isSelectAllDisable: isLoading || isSelectAllDisable
                     }}
                 />
@@ -83,7 +73,7 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
                         rowClickDisableKey,
                         rowSelectionDisableKey,
                         addColumnMaxSize,
-                        selectedRows: selectedIds.value,
+                        selectedRows: selectedIds,
                         onRowSelection: toggleId,
                         data: isLoading ? loadingBodyData : data,
                         onRowClick: !isLoading && onRowClick
@@ -99,9 +89,7 @@ Table.defaultProps = {
     rowClickDisableKey: '',
     rowSelectionDisableKey: '',
     data: [],
-    selectedRows: [],
-    isSelectable: false,
-    isLoading: false
+    selectedRows: []
 };
 
 Table.displayName = 'Table';
