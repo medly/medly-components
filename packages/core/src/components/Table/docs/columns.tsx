@@ -23,25 +23,25 @@ const columns: ColumnConfig[] = [
                 title: 'Maths',
                 field: 'maths',
                 formatter: 'numeric',
-                sort: true,
+                sortable: true,
                 children: [
-                    { title: 'Algebra', field: 'algebra', formatter: 'numeric', sort: true },
-                    { title: 'Trigonometry', field: 'trigonometry', formatter: 'numeric', sort: true }
+                    { title: 'Algebra', field: 'algebra', formatter: 'numeric', sortable: true },
+                    { title: 'Trigonometry', field: 'trigonometry', formatter: 'numeric', sortable: true }
                 ]
             },
-            { title: 'Science', field: 'science', formatter: 'numeric', sort: true }
+            { title: 'Science', field: 'science', formatter: 'numeric', sortable: true }
         ]
     },
-    { title: 'Age', field: 'age', formatter: 'numeric', sort: true },
-    { title: 'Passed', field: 'isPassed', formatter: 'boolean', sort: true },
+    { title: 'Age', field: 'age', formatter: 'numeric', sortable: true },
+    { title: 'Passed', field: 'isPassed', formatter: 'boolean', sortable: true },
     {
         title: 'Favorite Color',
         field: 'color',
         formatter: 'react-component',
         component: FavoriteColor,
-        sort: true
+        sortable: true
     },
-    { title: 'Rating', field: 'rating', formatter: 'numeric', sort: true }
+    { title: 'Rating', field: 'rating', formatter: 'numeric', sortable: true }
 ];
 
 export default columns;

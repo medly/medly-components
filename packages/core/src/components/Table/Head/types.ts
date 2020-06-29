@@ -8,5 +8,7 @@ export interface Props {
     isSelectAllDisable?: boolean;
     onSelectAllClick?: (id: number) => void;
     maxColumnSizes: { [k: string]: number };
+    defaultSortField?: string;
+    defaultSortOrder?: SortOrder;
     onSort?: (field: string, order: SortOrder) => void;
 }

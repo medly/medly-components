@@ -7,10 +7,10 @@ import { HeadCellProps } from './types';
 
 const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     let pageX: number;
-    const { frozen, enableSorting, children, hide, field, sortField, onSortChange, onWidthChange, columnMaxSize } = props;
+    const { frozen, sortable, children, hide, field, sortField, onSortChange, defaultSortOrder, onWidthChange, columnMaxSize } = props;
 
     const cellEl = useRef(null),
-        [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>('none');
+        [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>(defaultSortOrder);
 
     useEffect(() => {
         if (sortField !== field) setSortState('none');
@@ -79,7 +79,7 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
                     c
                 );
             })}
-            {enableSorting && sortIcon}
+            {sortable && sortIcon}
             <ResizeHandlerStyled onMouseDown={initResize} onDoubleClick={handleDoubleClick} />
         </HeadCellStyled>
     );

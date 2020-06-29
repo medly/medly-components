@@ -18,28 +18,28 @@ export interface Data {
 }
 
 export interface ColumnConfig {
-    /** To freeze the component on the left */
-    frozen?: boolean;
-    /** To show sort icons */
-    sort?: boolean;
-    /** To hide the column */
-    hide?: boolean;
-    /** This will be handled by the component */
-    size?: string;
     /** Title of the column */
     title: string;
     /** Field name in the data */
     field: string;
-    /** Column will take max width to fit content */
-    fitContent?: boolean;
     /** Column content alignment */
     align?: 'left' | 'right' | 'center';
+    /** To freeze the component on the left */
+    frozen?: boolean;
+    /** To show sort icons */
+    sortable?: boolean;
+    /** To hide the column */
+    hide?: boolean;
+    /** Column will take max width to fit content */
+    fitContent?: boolean;
     /** Nested Column */
     children?: ColumnConfig[];
     /** Column formatter */
     formatter: keyof ColumnsWidth;
     /** Custom component */
     component?: React.FC<{ data: any; rowId?: any; disabled?: boolean }>;
+    /** This will be handled internally */
+    size?: string;
 }
 
 export interface GridTemplateProps {
@@ -53,14 +53,14 @@ export interface TableStyledProps {
 export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'> {
     /** Table data */
     data: Data[];
+    /** Column configuration */
+    columns: ColumnConfig[];
     /** Key name in data to be used as unique id */
     uniqueKeyName?: string;
     /** Key name to disable row selection */
     rowSelectionDisableKey?: string;
     /** Key name to disable row click */
     rowClickDisableKey?: string;
-    /** Column configuration */
-    columns: ColumnConfig[];
     /** Shows checkboxes to select rows */
     isSelectable?: boolean;
     /** Shows placeholder shimmer */
@@ -71,6 +71,10 @@ export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'
     onRowSelection?: (v: number[]) => void;
     /** Function to be called on row click */
     onRowClick?: (rowData: object) => void;
+    /** Default Sort Field*/
+    defaultSortField?: string;
+    /** Default Sort Order*/
+    defaultSortOrder?: SortOrder;
     /** Function to be called on click of sort icon */
     onSort?: (field: string, order: SortOrder) => void;
 }

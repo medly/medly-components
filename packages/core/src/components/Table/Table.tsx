@@ -31,6 +31,8 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
             selectedRows,
             onRowSelection,
             isLoading,
+            defaultSortField,
+            defaultSortOrder,
             ...restProps
         } = props;
 
@@ -61,6 +63,9 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
                         maxColumnSizes,
                         isEachRowSelected,
                         isAnyRowSelected,
+                        isLoading,
+                        defaultSortField,
+                        defaultSortOrder,
                         onSelectAllClick: toggleId,
                         isSelectAllDisable: isLoading || isSelectAllDisable
                     }}

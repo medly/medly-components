@@ -5,9 +5,10 @@ export interface HeadCellProps {
     frozen?: boolean;
     field?: string;
     columnMaxSize: number;
-    enableSorting?: boolean;
+    sortable?: boolean;
     fitContent?: boolean;
     sortField?: string;
+    defaultSortOrder?: SortOrder;
     onWidthChange?: (width: number, key: string) => void;
     onSortChange?: (field: string, order: SortOrder) => void;
 }

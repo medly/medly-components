@@ -16,10 +16,12 @@ const Head: React.FC<Props> = React.memo(props => {
         isEachRowSelected,
         isSelectAllDisable,
         onSelectAllClick,
-        maxColumnSizes
+        maxColumnSizes,
+        defaultSortOrder,
+        defaultSortField
     } = props;
 
-    const [sortField, setSortField] = useState('');
+    const [sortField, setSortField] = useState(defaultSortField);
 
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
         handleSelectAllClick = useCallback(() => onSelectAllClick(-1), [onSelectAllClick]),
@@ -63,9 +65,10 @@ const Head: React.FC<Props> = React.memo(props => {
                             sortField={sortField}
                             frozen={config.frozen}
                             hide={config.hide}
-                            enableSorting={config.sortable}
+                            sortable={config.sortable}
                             key={index}
                             field={fieldName}
+                            defaultSortOrder={defaultSortOrder}
                             onSortChange={handleSortChange}
                             onWidthChange={handleWidthChange}
                         >
