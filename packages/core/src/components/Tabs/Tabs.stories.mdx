@@ -7,7 +7,7 @@ import { sizes, tabBg, tabStyle, ThemeInterface, DarkBackground } from './Tabs.s
 import { DashboardIcon, DeleteIcon, EditIcon } from '@medly-components/icons';
 
 <Meta
-    title="Core/Tabs"
+    title="In Review/Tabs"
     component={Tabs}
     parameters={{
         jest: ['Tabs.test.tsx', 'TabList.test.tsx', 'TabPanel.test.tsx', 'Tab.test.tsx'],
@@ -38,27 +38,30 @@ Use `Tabs.Tab` to add tab in `Tabs` component.
 </Tabs>
 ```
 
-### Basic
+### Without Icon
 
 <Preview withToolbar>
-    <Story name="Basic">
-        <Tabs
-            defaultActive="tab1"
-            aria-label="Basic Tabs"
-            tabSize={select('Tab Size', sizes, 'S')}
-            tabBackground={select('Tab Background', tabBg, 'WHITE')}
-            tabStyle={select('Tab Style', tabStyle, 'OPEN')}
-        >
-            <Tabs.Tab id="tab1" label="Add" helperText="Details" count={68}>
-                Content for the add panel
-            </Tabs.Tab>
-            <Tabs.Tab id="tab2" label="Edit" helperText="Details" count={10}>
-                Content for the edit panel
-            </Tabs.Tab>
-            <Tabs.Tab id="tab3" label="Delete" helperText="Details" count={30} disabled={true}>
-                Content for the delete panel
-            </Tabs.Tab>
-        </Tabs>
+    <Story name="WithoutIcon">
+        <>
+            <DarkBackground withGreyBackground={select('Tab Background', tabBg, 'WHITE')} />
+            <Tabs
+                defaultActive="tab1"
+                aria-label="Basic Tabs"
+                tabSize={select('Tab Size', sizes, 'S')}
+                tabBackground={select('Tab Background', tabBg, 'WHITE')}
+                tabStyle={select('Tab Style', tabStyle, 'OPEN')}
+            >
+                <Tabs.Tab id="tab1" label="Add" helperText="Details" count={68}>
+                    Content for the add panel
+                </Tabs.Tab>
+                <Tabs.Tab id="tab2" label="Edit" helperText="Details" count={10}>
+                    Content for the edit panel
+                </Tabs.Tab>
+                <Tabs.Tab id="tab3" label="Delete" helperText="Details" count={30} disabled={true}>
+                    Content for the delete panel
+                </Tabs.Tab>
+            </Tabs>
+        </>
     </Story>
 </Preview>
 
@@ -68,81 +71,61 @@ We can also provide `icon` prop.
 
 <Preview withToolbar>
     <Story name="WithIcon">
-        <Tabs
-            defaultActive="tab1"
-            aria-label="WithIcon Tabs"
-            tabSize={select('Tab Size', sizes, 'S')}
-            tabBackground={select('Tab Background', tabBg, 'WHITE')}
-            tabStyle={select('Tab Style', tabStyle, 'OPEN')}
-        >
-            <Tabs.Tab id="tab1" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
-                Content for the add panel
-            </Tabs.Tab>
-            <Tabs.Tab id="tab2" label="Edit" helperText="Details" count={10} icon={EditIcon}>
-                Content for the edit panel
-            </Tabs.Tab>
-            <Tabs.Tab id="tab3" label="Delete" helperText="Details" count={30} icon={DeleteIcon} disabled={true}>
-                Content for the delete panel
-            </Tabs.Tab>
-        </Tabs>
-    </Story>
-</Preview>
-
-### WithCountAndHelperText
-
-You can also provide cont and helperText.
-
-> **Note**: HelperText will only be visible in the "L" tab size.
-
-<Preview withToolbar>
-    <Story name="WithCountAndHelperText">
-        <Tabs
-            tabSize="L"
-            defaultActive="tab1"
-            aria-label="WithCountAndHelperText Tabs"
-            tabBackground={select('Tab Background', tabBg, 'WHITE')}
-            tabStyle={select('Tab Style', tabStyle, 'OPEN')}
-        >
-            <Tabs.Tab id="tab1" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
-                Content for the add panel
-            </Tabs.Tab>
-            <Tabs.Tab id="tab2" label="Edit" helperText="Details" count={10} icon={EditIcon}>
-                Content for the edit panel
-            </Tabs.Tab>
-            <Tabs.Tab id="tab3" label="Delete" helperText="Details" count={30} icon={DeleteIcon} disabled={true}>
-                Content for the delete panel
-            </Tabs.Tab>
-        </Tabs>
-    </Story>
-</Preview>
-
-### WithGreyBackground
-
-You can pass `tabBackground="GREY"` to `Tabs` compnent to use it on grey background.
-
-<Preview withToolbar>
-    <Story name="WithGreyBackground">
         <>
-            <DarkBackground />
+            <DarkBackground withGreyBackground={select('Tab Background', tabBg, 'WHITE')} />
             <Tabs
-                tabBackground="GREY"
-                defaultActive="tab11"
-                aria-label="WithGreyBackground Tabs"
-                tabSize={select('Tab Size', sizes, 'L')}
+                defaultActive="tab1"
+                aria-label="WithIcon Tabs"
+                tabSize={select('Tab Size', sizes, 'S')}
+                tabBackground={select('Tab Background', tabBg, 'WHITE')}
                 tabStyle={select('Tab Style', tabStyle, 'OPEN')}
             >
-                <Tabs.Tab id="tab11" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
+                <Tabs.Tab id="tab1" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
                     Content for the add panel
                 </Tabs.Tab>
-                <Tabs.Tab id="tab12" label="Edit" helperText="Details" count={10} icon={EditIcon}>
+                <Tabs.Tab id="tab2" label="Edit" helperText="Details" count={10} icon={EditIcon}>
                     Content for the edit panel
                 </Tabs.Tab>
-                <Tabs.Tab id="tab13" label="Delete" helperText="Details" count={30} icon={DeleteIcon} disabled={true}>
+                <Tabs.Tab id="tab3" label="Delete" helperText="Details" count={30} icon={DeleteIcon} disabled={true}>
                     Content for the delete panel
                 </Tabs.Tab>
             </Tabs>
         </>
     </Story>
+</Preview>
+
+### Count and HelperText
+
+`count` and `helperText` are optional props of `Tabs.Tab` component. See `Show code` section.
+
+> **Note**: HelperText will only be visible in the "L" tab size.
+
+<Preview withToolbar>
+    <Tabs tabSize="L" defaultActive="tab1" aria-label="WithCountAndHelperText Tabs" tabBackground="WHITE" tabStyle="OPEN">
+        <Tabs.Tab id="tab1" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
+            Content for the add panel
+        </Tabs.Tab>
+        <Tabs.Tab id="tab2" label="Edit" helperText="Details" count={10} icon={EditIcon}>
+            Content for the edit panel
+        </Tabs.Tab>
+        <Tabs.Tab id="tab3" label="Delete" helperText="Details" count={30} icon={DeleteIcon} disabled={true}>
+            Content for the delete panel
+        </Tabs.Tab>
+    </Tabs>
+</Preview>
+
+<Preview withToolbar>
+    <Tabs tabSize="S" defaultActive="tab1" aria-label="WithCountAndHelperText Tabs" tabBackground="WHITE" tabStyle="OPEN">
+        <Tabs.Tab id="tab1" label="Add" icon={DashboardIcon}>
+            Content for the add panel
+        </Tabs.Tab>
+        <Tabs.Tab id="tab2" label="Edit" icon={EditIcon}>
+            Content for the edit panel
+        </Tabs.Tab>
+        <Tabs.Tab id="tab3" label="Delete" icon={DeleteIcon} disabled={true}>
+            Content for the delete panel
+        </Tabs.Tab>
+    </Tabs>
 </Preview>
 
 ### Tab Style
@@ -167,6 +150,58 @@ You can pass `tabBackground="GREY"` to `Tabs` compnent to use it on grey backgro
 
 <Preview withToolbar>
     <Tabs defaultActive="tab11" aria-label="Closed style tabs" tabSize="L" tabStyle="CLOSED">
+        <Tabs.Tab id="tab11" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
+            Content for the add panel
+        </Tabs.Tab>
+        <Tabs.Tab id="tab12" label="Edit" helperText="Details" count={10} icon={EditIcon}>
+            Content for the edit panel
+        </Tabs.Tab>
+        <Tabs.Tab id="tab13" label="Delete" helperText="Details" count={30} icon={DeleteIcon} disabled={true}>
+            Content for the delete panel
+        </Tabs.Tab>
+    </Tabs>
+</Preview>
+
+### Tab Sizes
+
+There are three szes available `S` | `M` | `L`.
+
+#### 1) `S` size
+
+<Preview withToolbar>
+    <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="S" tabStyle="OPEN">
+        <Tabs.Tab id="tab11" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
+            Content for the add panel
+        </Tabs.Tab>
+        <Tabs.Tab id="tab12" label="Edit" helperText="Details" count={10} icon={EditIcon}>
+            Content for the edit panel
+        </Tabs.Tab>
+        <Tabs.Tab id="tab13" label="Delete" helperText="Details" count={30} icon={DeleteIcon} disabled={true}>
+            Content for the delete panel
+        </Tabs.Tab>
+    </Tabs>
+</Preview>
+
+#### 1) `M` size
+
+<Preview withToolbar>
+    <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="M" tabStyle="OPEN">
+        <Tabs.Tab id="tab11" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
+            Content for the add panel
+        </Tabs.Tab>
+        <Tabs.Tab id="tab12" label="Edit" helperText="Details" count={10} icon={EditIcon}>
+            Content for the edit panel
+        </Tabs.Tab>
+        <Tabs.Tab id="tab13" label="Delete" helperText="Details" count={30} icon={DeleteIcon} disabled={true}>
+            Content for the delete panel
+        </Tabs.Tab>
+    </Tabs>
+</Preview>
+
+#### 1) `L` size
+
+<Preview withToolbar>
+    <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="L" tabStyle="OPEN">
         <Tabs.Tab id="tab11" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
             Content for the add panel
         </Tabs.Tab>
