@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.1.0...@medly-components/layout@1.2.0) (2020-06-29)
+
+
+### Features
+
+* update snapshots ([67e7b3b](https://github.com/medly/medly-components/commit/67e7b3b4961bcad0f7fec03c58b5a2576059d189))
+* update snapshots for tabs and add support for tabStyle and theme ([5e00465](https://github.com/medly/medly-components/commit/5e0046513de1e39541ac83274fd83d3d49825fe2))
+
+
+
+
+
 # [1.1.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.0.5...@medly-components/layout@1.1.0) (2020-06-24)
 
 

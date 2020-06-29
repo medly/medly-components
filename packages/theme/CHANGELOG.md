@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.2.0...@medly-components/theme@1.3.0) (2020-06-29)
+
+
+### Features
+
+* **theme:** added disabledRowBgColor Property in CardTable Theme ([62411df](https://github.com/medly/medly-components/commit/62411dfb68faa7a2e0d101184df41e059d89aa8f))
+* add support for size in tab ([20a835a](https://github.com/medly/medly-components/commit/20a835ac4db00373f4781b1fa739566d4d3d0649))
+* update snapshots for tabs and add support for tabStyle and theme ([5e00465](https://github.com/medly/medly-components/commit/5e0046513de1e39541ac83274fd83d3d49825fe2))
+
+
+
+
+
 # [1.2.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.1.2...@medly-components/theme@1.2.0) (2020-06-24)
 
 

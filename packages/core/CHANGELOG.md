@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.5.0...@medly-components/core@1.6.0) (2020-06-29)
+
+
+### Bug Fixes
+
+* fix radioGroup error validation issue ([a0d5e1c](https://github.com/medly/medly-components/commit/a0d5e1cec06d3c41d5831c67a4676e65e0813a47))
+* fix sonar duplicate line issue ([3f1b9d6](https://github.com/medly/medly-components/commit/3f1b9d63d471ee361e066a0b223499f5fcef7a97))
+
+
+### Features
+
+* add style for background ([9dfca2a](https://github.com/medly/medly-components/commit/9dfca2a18df5f0345cde631ffdf4512f7bd0c508))
+* add support for size in tab ([20a835a](https://github.com/medly/medly-components/commit/20a835ac4db00373f4781b1fa739566d4d3d0649))
+* fix design feedbacks ([0233729](https://github.com/medly/medly-components/commit/0233729b09bebd0dac354fa056373a43cb8dc720))
+* fix feedbacks changes ([9aabe27](https://github.com/medly/medly-components/commit/9aabe27e410d4f28e310af5f6b8e3199216b7a76))
+* fix tab background on disabled ([01e837e](https://github.com/medly/medly-components/commit/01e837e9fb9fbcdfb18522f981f3ea582b90185b))
+* update snapshots for tabs and add support for tabStyle and theme ([5e00465](https://github.com/medly/medly-components/commit/5e0046513de1e39541ac83274fd83d3d49825fe2))
+* **core:** made Text Component Content Wrapping Optional for Card Table Cell ([6ced51b](https://github.com/medly/medly-components/commit/6ced51be3ccbddce96ecd1610fa0e193871e682e))
+
+
+
+
+
 # [1.5.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.4.0...@medly-components/core@1.5.0) (2020-06-24)
 
 
