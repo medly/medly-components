@@ -3,7 +3,7 @@ import { ColumnConfig, Data } from '../types';
 export interface Props {
     data: Data[];
     columns: ColumnConfig[];
-    selectedRows?: number[];
+    selectedRowIds?: number[];
     uniqueKeyName: string;
     rowSelectionDisableKey?: string;
     rowClickDisableKey?: string;

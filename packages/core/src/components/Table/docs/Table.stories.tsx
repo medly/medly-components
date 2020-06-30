@@ -39,7 +39,7 @@ export const WithColumnHide = () => {
     const [modalState, setModalState] = useState(false);
     const [tableData, setTableData] = useState(data);
     const [columnConfig, setColumnConfig] = useState(columns);
-    const [selectedRows, setSelectedRows] = useState([2, 3]);
+    const [selectedRowIds, setSelectedRowIds] = useState([2, 3]);
 
     const handleFilterData = (dottedField: string, order: SortOrder) => {
         filterData(dottedField, order, tableData, setTableData);
@@ -62,8 +62,8 @@ export const WithColumnHide = () => {
                 isSelectable
                 isLoading={boolean('Loading', false)}
                 rowSelectionDisableKey="disabled"
-                selectedRows={selectedRows}
-                onRowSelection={setSelectedRows}
+                selectedRowIds={selectedRowIds}
+                onRowSelection={setSelectedRowIds}
                 onRowClick={action('Row Clicked')}
                 data={tableData}
                 onSort={handleFilterData}

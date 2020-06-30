@@ -66,7 +66,7 @@ export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'
     /** Shows placeholder shimmer */
     isLoading?: boolean;
     /** Ids of default selected rows */
-    selectedRows?: number[];
+    selectedRowIds?: number[];
     /** Function to be called on row selection */
     onRowSelection?: (v: number[]) => void;
     /** Function to be called on row click */

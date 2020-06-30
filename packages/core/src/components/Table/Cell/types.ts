@@ -14,7 +14,6 @@ export interface Props extends StyledProps, HTMLProps<HTMLDivElement> {
     config: ColumnConfig;
     dottedFieldName: string;
     isLoading?: boolean;
-    selectedRows?: number[];
     isRowSelected?: boolean;
     isRowClickDisabled?: boolean;
     isRowSelectionDisabled?: boolean;
