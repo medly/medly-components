@@ -14,7 +14,7 @@ const checkboxColumnConfig: ColumnConfig = {
     title: 'ch',
     field: 'medly-table-checkbox',
     formatter: 'checkbox',
-    hide: false,
+    hidden: false,
     frozen: true
 };
 

@@ -5,7 +5,7 @@ export const addSizeToColumnConfig = (columnConfigs: ColumnConfig[]): ColumnConf
     return columnConfigs.map(config => {
         return config.children
             ? { ...config, children: addSizeToColumnConfig(config.children) }
-            : { ...config, size: config.hide ? `minmax(0px, 0px)` : columnsWidth[config.formatter] };
+            : { ...config, size: config.hidden ? `minmax(0px, 0px)` : columnsWidth[config.formatter] };
     });
 };
 
@@ -21,12 +21,12 @@ const getCumulativeTemplate = (configs: ColumnConfig[]): string => {
             ),
         [0, 0]
     );
-    const visibleChildrenCount = configs.filter(({ hide }) => !hide).length;
+    const visibleChildrenCount = configs.filter(({ hidden }) => !hidden).length;
     return `minmax(${cumulativeSize[0]}px, ${visibleChildrenCount === 1 ? 1 : cumulativeSize[1]}fr)`;
 };
 
 export const getGridTemplateColumns = (configs: ColumnConfig[]) => {
-    const visibleChildren = configs.filter(({ hide }) => !hide),
+    const visibleChildren = configs.filter(({ hidden }) => !hidden),
         visibleChildrenCount = visibleChildren.length;
 
     const size = configs.reduce(

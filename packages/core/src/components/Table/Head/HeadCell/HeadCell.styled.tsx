@@ -18,7 +18,7 @@ export const ResizeHandlerStyled = styled('span')`
 `;
 
 export const HeadCellStyled = styled(Cell.Style)`
-    padding: ${({ hide }) => (hide ? '0' : '5px 0px 5px 10px')};
+    padding: ${({ hidden }) => (hidden ? '0' : '5px 0px 5px 10px')};
     text-overflow: initial;
     white-space: normal;
     height: 100%;

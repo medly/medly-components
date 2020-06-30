@@ -32,7 +32,7 @@ const Body: React.FC<Props> = React.memo(props => {
                 const fieldName = `${field && `${field}.`}${config.field}`;
 
                 return config.children ? (
-                    <GroupCell key={index} hide={config.hide} gridTemplateColumns={getGridTemplateColumns(config.children)}>
+                    <GroupCell key={index} hidden={config.hidden} gridTemplateColumns={getGridTemplateColumns(config.children)}>
                         {getRow(rowData[config.field], config.children, config.field)}
                     </GroupCell>
                 ) : (

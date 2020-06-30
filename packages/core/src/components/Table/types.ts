@@ -29,7 +29,7 @@ export interface ColumnConfig {
     /** To show sort icons */
     sortable?: boolean;
     /** To hide the column */
-    hide?: boolean;
+    hidden?: boolean;
     /** Column will take max width to fit content */
     fitContent?: boolean;
     /** Nested Column */

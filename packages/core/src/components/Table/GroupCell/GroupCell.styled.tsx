@@ -4,16 +4,16 @@ import Cell from '../Cell';
 import { getBorder } from '../Table.styled';
 import { Props } from './types';
 
-export const GroupCell = styled('div').attrs(({ gridTemplateColumns, showBorders }: Props) => ({
+export const GroupCell = styled('div').attrs(({ gridTemplateColumns }: Props) => ({
     style: {
         gridTemplateColumns
     }
 }))<Props>`
     display: grid;
     position: relative;
-    opacity: ${({ hide }) => (hide ? '0' : '1')};
-    width: ${({ hide }) => (hide ? '0px' : '100%')};
-    height: ${({ hide }) => (hide ? '0px' : '100%')};
+    opacity: ${({ hidden }) => (hidden ? '0' : '1')};
+    width: ${({ hidden }) => (hidden ? '0px' : '100%')};
+    height: ${({ hidden }) => (hidden ? '0px' : '100%')};
     & + &,
     & + ${Cell.Style} {
         &::before {

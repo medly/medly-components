@@ -66,7 +66,7 @@ const Cell: React.FC<Props> & WithStyle = React.memo(props => {
 
     return (
         <Styled.Cell
-            hide={config.hide}
+            hidden={config.hidden}
             frozen={config.frozen}
             align={textAlign}
             onClick={handleCellClick}

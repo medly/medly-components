@@ -27,7 +27,7 @@ const ColumnConfiguration: React.FC<Props> = React.memo(({ columns, onChange }) 
                     options={createOptions(config.children, config.field)}
                 />
             ) : (
-                <Checkbox key={config.field} label={config.title} checked={config.hide} onChange={handleCheckboxClick(config.field)} />
+                <Checkbox key={config.field} label={config.title} checked={config.hidden} onChange={handleCheckboxClick(config.field)} />
             )
         );
 

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Cell should not render text if hide property is given 1`] = `
+exports[`Cell should not render text if hidden property is given 1`] = `
 .c2 {
   margin: 0;
   color: inherit;
@@ -54,6 +54,7 @@ exports[`Cell should not render text if hide property is given 1`] = `
 <div>
   <div
     class="c0"
+    hidden=""
   >
     <span
       class="c1 c2"
@@ -207,8 +208,8 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c0 {
-  opacity: 0;
-  padding: 0;
+  opacity: 1;
+  padding: 5px 10px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;

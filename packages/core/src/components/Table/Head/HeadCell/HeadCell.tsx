@@ -7,7 +7,7 @@ import { HeadCellProps } from './types';
 
 const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     let pageX: number;
-    const { frozen, sortable, children, hide, field, sortField, onSortChange, defaultSortOrder, onWidthChange, columnMaxSize } = props;
+    const { frozen, sortable, children, hidden, field, sortField, onSortChange, defaultSortOrder, onWidthChange, columnMaxSize } = props;
 
     const cellEl = useRef(null),
         [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>(defaultSortOrder);
@@ -69,7 +69,7 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     );
 
     return (
-        <HeadCellStyled ref={cellEl} frozen={frozen} hide={hide}>
+        <HeadCellStyled ref={cellEl} frozen={frozen} hidden={hidden}>
             {React.Children.map(children, c => {
                 return isValidStringOrNumber(c) ? (
                     <Text textWeight="Strong" textVariant="h5">

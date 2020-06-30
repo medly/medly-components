@@ -12,9 +12,9 @@ import * as stories from './Table.stories';
     <Story name="WithoutColumnHide">{stories.Basic()}</Story>
 </Preview>
 
-### With column hide feature
+### With column hidden feature
 
-To use the column hide feature use `Table.SelectableColumns` component and save the column config in state variable and pass the same column config to `Table` and `Table.SelectableColumns` component.
+To use the column hidden feature use `Table.SelectableColumns` component and save the column config in state variable and pass the same column config to `Table` and `Table.SelectableColumns` component.
 
 ```tsx
 export const WithColumnHide = () => {
@@ -22,7 +22,7 @@ export const WithColumnHide = () => {
 
     return (
         <>
-            <Table.SelectableColumns columns={columnConfig} fieldToChange="hide" onChange={setColumnConfig} />
+            <Table.SelectableColumns columns={columnConfig} fieldToChange="hidden" onChange={setColumnConfig} />
             <Table data={data} columns={columnConfig} />
         </>
     );

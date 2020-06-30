@@ -34,8 +34,8 @@ export const LoadingDiv = styled('div')`
 `;
 
 export const Cell = styled('div')<StyledProps>`
-    opacity: ${({ hide }) => (hide ? 0 : 1)};
-    padding: ${({ hide }) => (hide ? '0' : '5px 10px')};
+    opacity: ${({ hidden }) => (hidden ? 0 : 1)};
+    padding: ${({ hidden }) => (hidden ? '0' : '5px 10px')};
     position: relative;
     display: flex;
     width: 100%;

@@ -52,7 +52,12 @@ const Head: React.FC<Props> = React.memo(props => {
                 configs.map((config, index) => {
                     const fieldName = field ? `${field}.${config.field}` : config.field;
                     return config.children ? (
-                        <GroupCell showBorders key={index} hide={config.hide} gridTemplateColumns={getGridTemplateColumns(config.children)}>
+                        <GroupCell
+                            showBorders
+                            key={index}
+                            hidden={config.hidden}
+                            gridTemplateColumns={getGridTemplateColumns(config.children)}
+                        >
                             <GroupCellTitle textVariant="h5" textWeight="Strong">
                                 {config.title}
                             </GroupCellTitle>
@@ -64,7 +69,7 @@ const Head: React.FC<Props> = React.memo(props => {
                             columnMaxSize={maxColumnSizes[fieldName]}
                             sortField={sortField}
                             frozen={config.frozen}
-                            hide={config.hide}
+                            hidden={config.hidden}
                             sortable={config.sortable}
                             key={index}
                             field={fieldName}

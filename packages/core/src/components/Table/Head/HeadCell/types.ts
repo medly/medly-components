@@ -1,7 +1,7 @@
 export type SortOrder = 'asc' | 'desc';
 
 export interface HeadCellProps {
-    hide?: boolean;
+    hidden?: boolean;
     frozen?: boolean;
     field?: string;
     columnMaxSize: number;
