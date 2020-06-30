@@ -24,7 +24,7 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
             data,
             onRowClick,
             onSort,
-            uniqueKeyName,
+            rowIdentifier,
             rowSelectionDisableKey,
             rowClickDisableKey,
             isSelectable,
@@ -42,7 +42,7 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
 
         const isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]),
             isSelectAllDisable = useMemo(() => data.every(dt => dt[rowSelectionDisableKey]), [data, rowSelectionDisableKey]),
-            rowSelector = useRowSelector(data, selectedRowIds, rowSelectionDisableKey, uniqueKeyName),
+            rowSelector = useRowSelector(data, selectedRowIds, rowSelectionDisableKey, rowIdentifier),
             { isAnyRowSelected, isEachRowSelected, selectedIds, toggleId } = rowSelector;
 
         useEffect(() => {
@@ -74,7 +74,7 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
                     {...{
                         isLoading,
                         columns,
-                        uniqueKeyName,
+                        rowIdentifier,
                         rowClickDisableKey,
                         rowSelectionDisableKey,
                         addColumnMaxSize,
@@ -90,7 +90,7 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
 );
 
 Table.defaultProps = {
-    uniqueKeyName: 'id',
+    rowIdentifier: 'id',
     rowClickDisableKey: '',
     rowSelectionDisableKey: '',
     data: [],

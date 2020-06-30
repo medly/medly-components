@@ -14,7 +14,7 @@ const Body: React.FC<Props> = React.memo(props => {
         columns,
         onRowClick,
         selectedRowIds,
-        uniqueKeyName,
+        rowIdentifier,
         rowClickDisableKey,
         rowSelectionDisableKey,
         onRowSelection,
@@ -42,14 +42,14 @@ const Body: React.FC<Props> = React.memo(props => {
                         isRowSelectionDisabled={rowData[rowSelectionDisableKey]}
                         key={index}
                         data={rowData[config.field]}
-                        rowId={rowData[uniqueKeyName]}
+                        rowId={rowData[rowIdentifier]}
                         dottedFieldName={fieldName}
-                        isRowSelected={selectedRowIds.includes(rowData[uniqueKeyName])}
+                        isRowSelected={selectedRowIds.includes(rowData[rowIdentifier])}
                         {...{ config, onRowSelection, addColumnMaxSize }}
                     />
                 );
             }),
-        [columns, isLoading, rowClickDisableKey, rowSelectionDisableKey, uniqueKeyName, selectedRowIds, onRowSelection, addColumnMaxSize]
+        [columns, isLoading, rowClickDisableKey, rowSelectionDisableKey, rowIdentifier, selectedRowIds, onRowSelection, addColumnMaxSize]
     );
 
     if (data.length === 0) {

@@ -8,11 +8,11 @@ type Result = {
     toggleId: (id: number) => void;
 };
 
-const useRowSelector = (data: Data[], initialSelectedIds: number[], rowSelectionDisableKey: string, uniqueKeyName: string): Result => {
-    const ids = useMemo(() => data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[uniqueKeyName]), [
+const useRowSelector = (data: Data[], initialSelectedIds: number[], rowSelectionDisableKey: string, rowIdentifier: string): Result => {
+    const ids = useMemo(() => data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[rowIdentifier]), [
             data,
             rowSelectionDisableKey,
-            uniqueKeyName
+            rowIdentifier
         ]),
         [selectedIds, setSelectedIds] = useState(initialSelectedIds),
         isEachRowSelected = useMemo(() => ids.length > 0 && ids.length === selectedIds.length, [ids, selectedIds]),

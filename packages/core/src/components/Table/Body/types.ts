@@ -4,7 +4,7 @@ export interface Props {
     data: Data[];
     columns: ColumnConfig[];
     selectedRowIds?: number[];
-    uniqueKeyName: string;
+    rowIdentifier: string;
     rowSelectionDisableKey?: string;
     rowClickDisableKey?: string;
     isLoading?: boolean;

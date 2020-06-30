@@ -56,7 +56,7 @@ export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'
     /** Column configuration */
     columns: ColumnConfig[];
     /** Key name in data to be used as unique id */
-    uniqueKeyName?: string;
+    rowIdentifier?: string;
     /** Key name to disable row selection */
     rowSelectionDisableKey?: string;
     /** Key name to disable row click */
