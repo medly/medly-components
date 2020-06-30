@@ -2,6 +2,8 @@ import { SvgIcon } from '@medly-components/icons';
 import { clearMarginPadding, css, styled } from '@medly-components/utils';
 import Text from '../../../Text';
 import Cell from '../../Cell';
+import { GroupCell } from '../../GroupCell';
+import { getBorder } from '../../Table.styled';
 
 const frozen = () => css`
     z-index: 4;
@@ -19,8 +21,6 @@ export const HeadCellStyled = styled(Cell.Style)`
     padding: ${({ hide }) => (hide ? '0' : '5px 0px 5px 10px')};
     text-overflow: initial;
     white-space: normal;
-    border-right: 1px solid ${({ theme }) => theme.table.borderColor};
-    border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
     height: 100%;
     align-items: flex-end;
 
@@ -38,4 +38,10 @@ export const HeadCellStyled = styled(Cell.Style)`
     }
 
     ${props => props.frozen && frozen()}
+
+    & + &, & + ${GroupCell} {
+        &::after {
+            ${getBorder('left')}
+        }
+    }
 `;

@@ -52,7 +52,7 @@ const Head: React.FC<Props> = React.memo(props => {
                 configs.map((config, index) => {
                     const fieldName = field ? `${field}.${config.field}` : config.field;
                     return config.children ? (
-                        <GroupCell key={index} hide={config.hide} gridTemplateColumns={getGridTemplateColumns(config.children)}>
+                        <GroupCell showBorders key={index} hide={config.hide} gridTemplateColumns={getGridTemplateColumns(config.children)}>
                             <GroupCellTitle textVariant="h5" textWeight="Strong">
                                 {config.title}
                             </GroupCellTitle>

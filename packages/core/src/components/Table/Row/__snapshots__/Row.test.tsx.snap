@@ -9,14 +9,21 @@ exports[`Row should render NoResult properly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 1px solid #ededed;
   cursor: inherit;
   text-align: center;
   line-height: 30px;
 }
 
-.c0 > * {
+.c0:nth-child(odd) > * {
   background-color: #ffffff;
+}
+
+.c0:nth-child(even) > * {
+  background-color: #F7F8F9;
+}
+
+.c0:not(:last-child) > * {
+  border-bottom: 1px solid #ededed;
 }
 
 <div>
@@ -37,12 +44,19 @@ exports[`Row should render row properly 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 1px solid #ededed;
   cursor: inherit;
 }
 
-.c0 > * {
+.c0:nth-child(odd) > * {
   background-color: #ffffff;
+}
+
+.c0:nth-child(even) > * {
+  background-color: #F7F8F9;
+}
+
+.c0:not(:last-child) > * {
+  border-bottom: 1px solid #ededed;
 }
 
 <div>

@@ -34,13 +34,6 @@ const columns: ColumnConfig[] = [
     },
     { title: 'Age', field: 'age', formatter: 'numeric', sortable: true },
     { title: 'Passed', field: 'isPassed', formatter: 'boolean', sortable: true },
-    {
-        title: 'Favorite Color',
-        field: 'color',
-        formatter: 'react-component',
-        component: FavoriteColor,
-        sortable: true
-    },
     { title: 'Rating', field: 'rating', formatter: 'numeric', sortable: true }
 ];
 

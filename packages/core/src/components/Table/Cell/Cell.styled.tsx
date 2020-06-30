@@ -38,10 +38,11 @@ export const Cell = styled('div')<StyledProps>`
     padding: ${({ hide }) => (hide ? '0' : '5px 10px')};
     position: relative;
     display: flex;
+    width: 100%;
+    height: 100%;
     justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : align === 'center' ? 'center' : 'flex-start')};
     align-items: center;
     overflow: hidden;
-    border-right: 1px solid ${({ theme }) => theme.table.borderColor};
     ${({ isRowSelectionCell }) =>
         isRowSelectionCell &&
         css`
@@ -52,6 +53,7 @@ export const Cell = styled('div')<StyledProps>`
     ${Checkbox.Style} {
         display: flex;
         margin: 0;
+        padding: 0;
         ${SvgIcon} {
             margin-right: 0;
         }
