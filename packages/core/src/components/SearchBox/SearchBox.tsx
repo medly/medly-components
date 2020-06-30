@@ -8,16 +8,15 @@ import { Props } from './types';
 
 export const SearchBox: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { getOptions, searchOptions } = props;
         const inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
             [showCloseIcon, setCloseIconState] = useState(false),
-            [options, setOptions] = useState(searchOptions),
-            [isActive, setActive] = useState(false),
+            [options, setOptions] = useState(props.options),
+            [isActive, setActive] = useState(true),
             [isIconActive, setIconActive] = useState(false);
 
         useEffect(() => {
-            setOptions(searchOptions);
-            searchOptions.length > 0 ? setActive(true) : setActive(false);
+            setOptions(props.options);
+            props.options.length > 0 ? setActive(true) : setActive(false);
         });
 
         const handleChange = useCallback(() => {
@@ -25,7 +24,7 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
                 setCloseIconState(true);
                 setIconActive(true);
                 if (canSearch) {
-                    getOptions();
+                    // getOptions();
                 }
             }, [inputRef.current]),
             clearSearchText = useCallback(() => {
@@ -49,10 +48,18 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
 
         return (
             <Styled.SearchBoxWrapper {...props} isActive={isActive}>
-                <Styled.SearchBox isActive={isActive} placeholder={props.placeholder} boxSize={'M'} onInput={handleChange} ref={inputRef} />
-                <Options options={options} onOptionClick={handleOptionClick}></Options>
+                <Styled.SearchBox
+                    isActive={isActive}
+                    placeholder={props.placeholder}
+                    searchBoxSize={'M'}
+                    onInput={handleChange}
+                    ref={inputRef}
+                />
+                <Options options={options} variant="filled" onOptionClick={handleOptionClick}></Options>
                 <Styled.CloseIconWrapper>{showCloseIcon && <CloseIcon onClick={clearSearchText} />}</Styled.CloseIconWrapper>
-                <Styled.SearchIconWrapper isIconActive={isIconActive}><SearchIcon /></Styled.SearchIconWrapper>
+                <Styled.SearchIconWrapper isIconActive={isIconActive}>
+                    <SearchIcon />
+                </Styled.SearchIconWrapper>
             </Styled.SearchBoxWrapper>
         );
     })
@@ -61,5 +68,5 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
 SearchBox.displayName = 'SearchBox';
 SearchBox.Style = Styled.SearchBox;
 SearchBox.defaultProps = {
-    searchOptions: []
+    options: []
 };

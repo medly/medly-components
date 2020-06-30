@@ -1,5 +1,3 @@
-import { defaultTheme, SearchBoxTheme } from '@medly-components/theme';
-import React from 'react';
 import { Props } from './types';
 
 export const optionsArray = [
@@ -8,6 +6,4 @@ export const optionsArray = [
     { value: 'Dummy3 option', label: 'Dummy3 option' }
 ];
 
-export const boxSize: Props['boxSize'][] = ['S', 'M'];
-
-
+export const boxSize: Props['searchBoxSize'][] = ['S', 'M'];
