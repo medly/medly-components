@@ -1,3 +1,1 @@
-import { TabPanel } from './TabPanel';
-
-export default TabPanel;
+export { TabPanel as default } from './TabPanel';

@@ -1,4 +1,4 @@
-import { render } from '@test-utils';
+import { render, screen } from '@test-utils';
 import React from 'react';
 import Tab from '../Tab';
 import { TabPanel } from './TabPanel';
@@ -16,5 +16,7 @@ describe('TabPanel', () => {
             </TabPanel>
         );
         expect(container).toMatchSnapshot();
+        expect(screen.getByText('Content for the add panel')).toBeInTheDocument();
+        expect(screen.queryByText(' Content for the edit panel')).toBeNull();
     });
 });
