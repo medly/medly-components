@@ -24,7 +24,7 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
                 setCloseIconState(true);
                 setIconActive(true);
                 if (canSearch) {
-                    // getOptions();
+                    props.getOptions();
                 }
             }, [inputRef.current]),
             clearSearchText = useCallback(() => {

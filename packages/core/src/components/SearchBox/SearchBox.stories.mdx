@@ -3,7 +3,7 @@ import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './SearchBox.stories';
 import { select } from '@storybook/addon-knobs';
 import { SearchBox } from './SearchBox';
-import { useState} from 'react'
+import { useState } from 'react';
 
 <Meta title="Core" component={SearchBox} />
 
@@ -12,19 +12,16 @@ import { useState} from 'react'
 ### Add a auto suggest text box
 
 <Preview withToolbar>
-    <Story name="SearchBox">{
-        () => {
-            const [options, setOptions] = useState([])
+    <Story name="SearchBox">
+        {() => {
+            const [options, setOptions] = useState([]);
             const onGetOptions = () => {
-                setOptions(optionsArray)
+                setOptions(optionsArray);
             };
-        return (
-            <SearchBox placeholder="Search" getOptions={onGetOptions} searchOptions={options} boxSize={select('boxSize', boxSize, 'S')} />
-            )
-        }
-    }</Story>
+            return <SearchBox placeholder="Search" getOptions={onGetOptions} options={options} boxSize={select('boxSize', boxSize, 'S')} />;
+        }}
+    </Story>
 </Preview>
-
 
 ### Props
 
@@ -33,11 +30,11 @@ import { useState} from 'react'
 ##### Small search text box
 
 <Preview>
-    <SearchBox boxSize='S' />
+    <SearchBox boxSize="S" />
 </Preview>
 
 ##### Medium search text box
 
 <Preview>
-     <SearchBox boxSize='M' />
+    <SearchBox boxSize="M" />
 </Preview>

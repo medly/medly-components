@@ -1,7 +1,7 @@
 import { SearchBoxSizes } from '@medly-components/theme';
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
-type Option = {
+export type Option = {
     label: string;
     value: any;
 };
@@ -15,4 +15,6 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'boxSize'>, Wit
     maxHeight?: string;
     /*** callback to be trigger on selecting the option */
     onOptionSelected?: (value: any) => void;
+
+    getOptions?: () => void;
 }
