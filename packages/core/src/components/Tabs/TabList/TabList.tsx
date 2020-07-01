@@ -11,7 +11,13 @@ export const TabList: React.FC<Props> & WithStyle = React.memo(props => {
         homePress = useKeyPress('Home'),
         endPress = useKeyPress('End'),
         [isFocused, setFocusState] = useState(false),
-        tabIds = useMemo(() => React.Children.map(children, (child: any) => child.props.id), [children]),
+        tabIds = useMemo(
+            () =>
+                React.Children.toArray(children)
+                    .filter((child: any) => !child.props.disabled)
+                    .map((child: any) => child.props.id),
+            [children]
+        ),
         { 0: first, [tabIds.length - 1]: last } = tabIds;
 
     useEffect(() => {
@@ -27,8 +33,8 @@ export const TabList: React.FC<Props> & WithStyle = React.memo(props => {
         endPress && isFocused && onChange(last);
     }, [endPress]);
 
-    const handleChange = (id: any) => () => onChange(id);
-    const changeFocusState = useCallback(() => setFocusState(val => !val), []);
+    const handleChange = (id: any) => () => onChange(id),
+        changeFocusState = useCallback(() => setFocusState(val => !val), []);
 
     return (
         <Styled.TabList onFocus={changeFocusState} onBlur={changeFocusState} {...restProps}>

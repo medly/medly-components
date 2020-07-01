@@ -174,7 +174,7 @@ exports[`Form should not render any field if component type is not matched 1`] =
 `;
 
 exports[`Form should render properly with initial state 1`] = `
-.c28 {
+.c31 {
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -182,7 +182,7 @@ exports[`Form should render properly with initial state 1`] = `
   cursor: inherit;
 }
 
-.c28 * {
+.c31 * {
   fill-opacity: 1;
   fill: #607890;
 }
@@ -299,7 +299,7 @@ exports[`Form should render properly with initial state 1`] = `
   background: #dfe4e9;
 }
 
-.c72:disabled .c27 * {
+.c72:disabled .c30 * {
   fill: #dfe4e9;
 }
 
@@ -307,7 +307,7 @@ exports[`Form should render properly with initial state 1`] = `
   color: #ffffff;
 }
 
-.c72:not(:disabled) .c27 * {
+.c72:not(:disabled) .c30 * {
   fill: #ffffff;
 }
 
@@ -320,241 +320,159 @@ exports[`Form should render properly with initial state 1`] = `
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
-.c72 .c27 + .c17 {
+.c72 .c30 + .c17 {
   margin-left: 0.8rem;
 }
 
-.c72 .c17 + .c27 {
+.c72 .c17 + .c30 {
   margin-left: 0.8rem;
 }
 
-.c13 {
-  color: #435465;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
-  cursor: default;
-}
-
-.c13::after {
-  color: red;
-  content: ' *';
-}
-
-.c32 {
-  color: #435465;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
-  cursor: default;
-}
-
-.c36 {
-  color: #435465;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  margin: 0px 0px 0px 0.8rem;
-  cursor: pointer;
-}
-
-.c34 {
-  grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: 0px;
-}
-
-.c14 {
-  grid-area: label;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c19 {
-  grid-area: description;
-  margin: 5px 0 0 2px;
-  color: #012040;
-}
-
-.c12 {
-  margin: 0.8rem 0.8rem 0.8rem 0;
-  display: inline-grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
-  grid-template-areas: 'label field' 'random description';
-}
-
-.c12 .c33 {
+.c20 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c31 {
-  margin: 0.8rem 0;
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
-  grid-template-areas: 'label field' 'random description';
-}
-
-.c31 .c33 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c35 {
-  margin: 0.8rem 0.8rem 0.8rem 0;
-  display: inline-grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: max-content minmax(max-content,25%);
-  grid-template-areas: 'field label' 'description random';
-}
-
-.c35 .c33 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.c42 {
-  margin: 0.8rem 0;
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-areas: 'label' 'field' 'description';
-  grid-template-columns: auto;
-  grid-template-areas: 'field' 'description';
-}
-
-.c42 .c33 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
+}
+
+.c20 > :first-child {
+  margin-bottom: 0.9rem;
+}
+
+.c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c33 > :first-child {
+  margin-bottom: 0.9rem;
+}
+
+.c22 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: inherit;
+  color: inherit;
+}
+
+.c22::after {
+  content: ' *';
+  color: default:inherit;
+  disabled: #98A7B7;
 }
 
 .c25 {
-  margin: 0.3rem;
-  position: relative;
-  border: 0.15rem solid;
-  box-sizing: border-box;
-  width: 1.8rem;
-  height: 1.8rem;
-  border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  border-color: #005AEE;
-  background-color: #005AEE;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c25 .c27 * {
-  fill: #ffffff;
-}
-
-.c30 {
-  margin: 0.3rem;
-  position: relative;
-  border: 0.15rem solid;
-  box-sizing: border-box;
-  width: 1.8rem;
-  height: 1.8rem;
-  border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  background-color: transparent;
-  border-color: #13181D;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: inherit;
+  color: inherit;
+  padding: 0 1.6rem;
 }
 
 .c23 {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.c29 {
+  border: 0.15rem solid;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c29 .c30 {
+  z-index: 1;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  width: 100%;
+  height: 100%;
+}
+
+.c27 {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  position: absolute;
+}
+
+.c27:checked ~ .c28 {
+  border-color: #005AEE;
+  background-color: #005AEE;
+}
+
+.c27:checked ~ .c28 .c30 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c27:checked ~ .c28 .c30 * {
+  fill: #ffffff;
+}
+
+.c27:not(:checked) ~ .c28 {
+  background-color: transparent;
+  border-color: #13181D;
+}
+
+.c27:not(:disabled):focus:not(:checked) ~ .c28 {
+  border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
+}
+
+.c27:not(:disabled):focus:checked ~ .c28 {
+  box-shadow: 0 0 0.8rem #005AEE;
+}
+
+.c26 {
+  margin: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+}
+
+.c24 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -574,37 +492,16 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: row-reverse;
 }
 
-.c23 * {
+.c24 * {
   cursor: pointer;
 }
 
-.c23 .c17 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #13181D;
-  padding: 0 1.6rem;
-}
-
-.c23 .c27 {
-  z-index: 1;
-  pointer-events: none;
-  position: absolute;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
-}
-
-.c23:hover .c24 {
+.c24:hover .c28 {
   border-color: #1A6BF0;
   background-color: #1A6BF0;
 }
 
-.c29 {
+.c32 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -624,32 +521,11 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: row-reverse;
 }
 
-.c29 * {
+.c32 * {
   cursor: pointer;
 }
 
-.c29 .c17 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #13181D;
-  padding: 0 1.6rem;
-}
-
-.c29 .c27 {
-  z-index: 1;
-  pointer-events: none;
-  position: absolute;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-}
-
-.c29:hover .c24 {
+.c32:hover .c28 {
   border-color: #1A6BF0;
 }
 
@@ -677,74 +553,9 @@ exports[`Form should render properly with initial state 1`] = `
   cursor: pointer;
 }
 
-.c70 .c17 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #13181D;
-  padding: 0 1.6rem;
-}
-
-.c70 .c27 {
-  z-index: 1;
-  pointer-events: none;
-  position: absolute;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
-}
-
-.c70:hover .c24 {
+.c70:hover .c28 {
   border-color: #1A6BF0;
   background-color: #1A6BF0;
-}
-
-.c26 {
-  opacity: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.c26:focus {
-  outline: none;
-}
-
-.c20 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c20 > :first-child {
-  margin-bottom: 0.9rem;
-}
-
-.c20 > .c17 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: inherit;
-  color: #13181D;
-}
-
-.c22 {
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
 }
 
 .c60 {
@@ -784,11 +595,11 @@ exports[`Form should render properly with initial state 1`] = `
   outline: none;
 }
 
-.c60 .c27 * {
+.c60 .c30 * {
   fill: #ffffff;
 }
 
-.c60 .c17 + .c27 {
+.c60 .c17 + .c30 {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -847,17 +658,17 @@ exports[`Form should render properly with initial state 1`] = `
   color: #566c82;
 }
 
-.c4 .sc-fzpmMD,
+.c4 .sc-fzoNJl,
 .c4 .c56 {
   color: #566c82;
 }
 
-.c4 .sc-fzpmMD *,
+.c4 .sc-fzoNJl *,
 .c4 .c56 * {
   fill: #566c82;
 }
 
-.c4 ~ .sc-fzoNJl {
+.c4 ~ .sc-fzqNqU {
   color: #566c82;
 }
 
@@ -894,15 +705,15 @@ exports[`Form should render properly with initial state 1`] = `
   color: #005AEE;
 }
 
-.c4:focus-within .sc-fzpmMD,
-.c4:focus-within:hover .sc-fzpmMD,
+.c4:focus-within .sc-fzoNJl,
+.c4:focus-within:hover .sc-fzoNJl,
 .c4:focus-within .c56,
 .c4:focus-within:hover .c56 {
   color: #005AEE;
 }
 
-.c4:focus-within .sc-fzpmMD *,
-.c4:focus-within:hover .sc-fzpmMD *,
+.c4:focus-within .sc-fzoNJl *,
+.c4:focus-within:hover .sc-fzoNJl *,
 .c4:focus-within .c56 *,
 .c4:focus-within:hover .c56 * {
   fill: #005AEE;
@@ -1093,6 +904,105 @@ exports[`Form should render properly with initial state 1`] = `
   fill: #13181D;
 }
 
+.c13 {
+  color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  margin: 0px 0.8rem 0px 0px;
+  cursor: default;
+}
+
+.c13::after {
+  color: red;
+  content: ' *';
+}
+
+.c40 {
+  color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  margin: 0px 0.8rem 0px 0px;
+  cursor: default;
+}
+
+.c14 {
+  grid-area: label;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c19 {
+  grid-area: description;
+  margin: 5px 0 0 2px;
+  color: #012040;
+}
+
+.c12 {
+  margin: 0.8rem 0.8rem 0.8rem 0;
+  display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
+  grid-template-areas: 'label field' 'random description';
+}
+
+.c12 .sc-fzoKki {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c42 {
+  margin: 0.8rem 0;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-areas: 'label' 'field' 'description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
+}
+
+.c42 .sc-fzoKki {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 .c41 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1104,7 +1014,7 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: column-reverse;
 }
 
-.c41 .sc-fzoYkl {
+.c41 .sc-fznMnq {
   top: calc(100% + 5px);
   left: 0%;
 }
@@ -1120,7 +1030,7 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: column-reverse;
 }
 
-.c58 .sc-fzoYkl {
+.c58 .sc-fznMnq {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -1466,66 +1376,79 @@ exports[`Form should render properly with initial state 1`] = `
   margin-right: 0.4rem;
 }
 
-.c40 {
-  background-color: #012040;
-  width: 0;
-  height: 0;
-  z-index: 1;
-  border-radius: 100%;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c38 {
-  opacity: 0;
-  z-index: 2;
-  position: absolute;
+.c39 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  box-sizing: border-box;
+  border: 0.15rem solid;
   width: 100%;
   height: 100%;
-  margin: 0;
-  cursor: pointer;
-}
-
-.c38:checked ~ .c39 {
-  width: calc(75%);
-  height: calc(75%);
-  -webkit-transition: width 0.2s ease,height 0.2s ease;
-  transition: width 0.2s ease,height 0.2s ease;
+  border-radius: 100%;
 }
 
 .c37 {
-  width: 16px;
-  height: 16px;
+  position: absolute;
+  opacity: 0;
+  width: 1%;
+  height: 1%;
+  margin: 0;
+}
+
+.c37 ~ .c38 {
+  border-color: #13181D;
+}
+
+.c37:checked ~ .c38 {
+  border-width: calc(1.8rem / 3);
+}
+
+.c37:checked:disabled ~ .c38 {
+  border-color: #dfe4e9;
+}
+
+.c37:not(:checked):disabled ~ .c38 {
+  border-color: #98A7B7;
+}
+
+.c37:not(:disabled):checked ~ .c38 {
+  border-color: #005AEE;
+}
+
+.c37:not(:disabled):focus ~ .c38 {
+  border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
+}
+
+.c36 {
+  margin: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
   position: relative;
   border-radius: 100%;
-  border: 1px solid #C7D0D8;
-  background-color: #ffffff;
+}
+
+.c35 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  cursor: pointer;
+  padding: 0.8rem 0;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
-.c37:focus-within {
-  box-shadow: 0 0 0 1pt #012040;
+.c35:hover.c34:hover .c38 {
+  border-color: #1A6BF0;
 }
 
 .c71 {
@@ -1784,89 +1707,108 @@ exports[`Form should render properly with initial state 1`] = `
       class="c10"
     >
       <div
+        aria-describedby="languages-helper-text"
         class="c20"
         id="languages-wrapper"
+        name="languages"
       >
         <span
-          class="c17 c21"
+          class="c17 c21 c22"
           id="languages-label"
+          required=""
+          type="checkbox"
         >
           Languages
         </span>
-        
         <div
-          class="c22"
-          id="languages-field"
+          class="c23"
+          id="languages-options"
         >
+          
           <label
-            class="c23"
-            for="languages-JAVA"
-            id="languages-JAVA-wrapper"
+            class="c24"
+            for="JAVA-languages"
+            id="JAVA-languages-wrapper"
+            sizes="[object Object]"
           >
             <span
-              class="c17 c18"
-              id="languages-JAVA-label"
+              class="c17 c18 c25"
+              id="JAVA-languages-label"
+              type="checkbox"
             >
               JAVA
             </span>
             <div
-              class="c24 c25"
+              class="c26"
             >
               <input
                 checked=""
-                class="c26"
-                id="languages-JAVA"
+                class="c27"
+                id="JAVA-languages"
                 name="java"
+                sizes="[object Object]"
                 type="checkbox"
               />
-              <svg
-                class="c27 c28"
-                fill="none"
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="c28 c29"
               >
-                <path
-                  d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-                  fill="green"
-                />
-              </svg>
+                <svg
+                  class="c30 c31"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                    fill="green"
+                  />
+                </svg>
+              </div>
             </div>
           </label>
+          
           <label
-            class="c29"
-            for="languages-RUBY"
-            id="languages-RUBY-wrapper"
+            class="c32"
+            for="RUBY-languages"
+            id="RUBY-languages-wrapper"
+            sizes="[object Object]"
           >
             <span
-              class="c17 c18"
-              id="languages-RUBY-label"
+              class="c17 c18 c25"
+              id="RUBY-languages-label"
+              type="checkbox"
             >
               RUBY
             </span>
             <div
-              class="c24 c30"
+              class="c26"
             >
               <input
-                class="c26"
-                id="languages-RUBY"
+                class="c27"
+                id="RUBY-languages"
                 name="ruby"
+                sizes="[object Object]"
                 type="checkbox"
               />
-              <svg
-                class="c27 c28"
-                fill="none"
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="c28 c29"
               >
-                <path
-                  d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-                  fill="green"
-                />
-              </svg>
+                <svg
+                  class="c30 c31"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                    fill="green"
+                  />
+                </svg>
+              </div>
             </div>
           </label>
         </div>
@@ -1876,93 +1818,113 @@ exports[`Form should render properly with initial state 1`] = `
       class="c10"
     >
       <div
-        class="c11 c31"
-        id="Role-radioGroup"
+        aria-describedby="role-helper-text"
+        class="c33"
+        id="role-wrapper"
       >
-        <label
-          class="c32 c14"
+        <span
+          class="c17 c21 c22"
+          id="role-label"
+          required=""
+          type="radio"
         >
           Role
-        </label>
+        </span>
         <div
-          class="c33 c34"
+          class="c23"
+          id="role-options"
         >
-          <div
-            class="c11 c35"
-            id="Front End-radio"
+          <label
+            class="c34 c35"
+            for="Front End-role"
+            id="Front End-role-wrapper"
+            sizes="[object Object]"
           >
-            <label
-              class="c36 c14"
-              for="Front End"
+            <span
+              class="c17 c18 c25"
+              id="Front End-role-label"
+              type="radio"
             >
               Front End
-            </label>
+            </span>
             <div
-              class="c37"
+              class="c36"
             >
               <input
                 checked=""
-                class="c38"
-                id="Front End"
+                class="c37"
+                id="Front End-role"
                 name="role"
+                required=""
+                sizes="[object Object]"
                 type="radio"
                 value="front-end"
               />
               <div
-                class="c39 c40"
+                class="c38 c39"
               />
             </div>
-          </div>
-          <div
-            class="c11 c35"
-            id="Back End-radio"
+          </label>
+          <label
+            class="c34 c35"
+            for="Back End-role"
+            id="Back End-role-wrapper"
+            sizes="[object Object]"
           >
-            <label
-              class="c36 c14"
-              for="Back End"
+            <span
+              class="c17 c18 c25"
+              id="Back End-role-label"
+              type="radio"
             >
               Back End
-            </label>
+            </span>
             <div
-              class="c37"
+              class="c36"
             >
               <input
-                class="c38"
-                id="Back End"
+                class="c37"
+                id="Back End-role"
                 name="role"
+                required=""
+                sizes="[object Object]"
                 type="radio"
                 value="back-end"
               />
               <div
-                class="c39 c40"
+                class="c38 c39"
               />
             </div>
-          </div>
-          <div
-            class="c11 c35"
-            id="Full Stack-radio"
+          </label>
+          <label
+            class="c34 c35"
+            for="Full Stack-role"
+            id="Full Stack-role-wrapper"
+            sizes="[object Object]"
           >
-            <label
-              class="c36 c14"
-              for="Full Stack"
+            <span
+              class="c17 c18 c25"
+              id="Full Stack-role-label"
+              type="radio"
             >
               Full Stack
-            </label>
+            </span>
             <div
-              class="c37"
+              class="c36"
             >
               <input
-                class="c38"
-                id="Full Stack"
+                class="c37"
+                id="Full Stack-role"
                 name="role"
+                required=""
+                sizes="[object Object]"
                 type="radio"
                 value="full-stack"
               />
               <div
-                class="c39 c40"
+                class="c38 c39"
               />
             </div>
-          </div>
+          </label>
         </div>
       </div>
     </div>
@@ -1974,7 +1936,7 @@ exports[`Form should render properly with initial state 1`] = `
         id="birthDate"
       >
         <label
-          class="c32 c14"
+          class="c40 c14"
           for="birthDate"
         >
           Birth Date
@@ -1989,7 +1951,7 @@ exports[`Form should render properly with initial state 1`] = `
           >
             
             <div
-              class="c33 c43"
+              class="sc-fzoKki c43"
             >
               <input
                 autocomplete="off"
@@ -2013,7 +1975,7 @@ exports[`Form should render properly with initial state 1`] = `
         class="c11 c12"
       >
         <label
-          class="c32 c14"
+          class="c40 c14"
           for="Experience"
         >
           Experience
@@ -2026,7 +1988,7 @@ exports[`Form should render properly with initial state 1`] = `
             class="c47"
           >
             <div
-              class="sc-fzpkqZ c48"
+              class="sc-fzoaKM c48"
               data-testid="DateRangeInputGrid"
             >
               <label
@@ -2131,7 +2093,7 @@ exports[`Form should render properly with initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c27 c28 c56 c57"
+              class="c30 c31 c56 c57"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -2156,7 +2118,7 @@ exports[`Form should render properly with initial state 1`] = `
         id="graduation-field"
       >
         <label
-          class="c32 c14"
+          class="c40 c14"
           for="graduation"
         >
           Graduation
@@ -2178,7 +2140,7 @@ exports[`Form should render properly with initial state 1`] = `
                 BTech
               </span>
               <svg
-                class="c27 c61"
+                class="c30 c61"
                 fill="none"
                 height="1em"
                 viewBox="0 0 24 24"
@@ -2198,7 +2160,7 @@ exports[`Form should render properly with initial state 1`] = `
             >
               
               <div
-                class="c33 c43"
+                class="sc-fzoKki c43"
               >
                 <input
                   autocomplete="off"
@@ -2212,7 +2174,7 @@ exports[`Form should render properly with initial state 1`] = `
               
             </div>
             <svg
-              class="c27 c62 c63"
+              class="c30 c62 c63"
               fill="none"
               height="1em"
               theme="[object Object]"
@@ -2346,40 +2308,48 @@ exports[`Form should render properly with initial state 1`] = `
     <div
       class="c10"
     >
+      
       <label
         class="c70"
         for="agree"
         id="agree-wrapper"
+        sizes="[object Object]"
       >
         <span
-          class="c17 c18"
+          class="c17 c18 c25"
           id="agree-label"
+          type="checkbox"
         >
           Do you Agree
         </span>
         <div
-          class="c24 c25"
+          class="c26"
         >
           <input
             checked=""
-            class="c26"
+            class="c27"
             id="agree"
             name="agree"
+            sizes="[object Object]"
             type="checkbox"
           />
-          <svg
-            class="c27 c28"
-            fill="none"
-            height="1em"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="c28 c29"
           >
-            <path
-              d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-              fill="green"
-            />
-          </svg>
+            <svg
+              class="c30 c31"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                fill="green"
+              />
+            </svg>
+          </div>
         </div>
       </label>
     </div>
@@ -2404,7 +2374,7 @@ exports[`Form should render properly with initial state 1`] = `
 `;
 
 exports[`Form should render properly without initial state 1`] = `
-.c30 {
+.c33 {
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -2412,12 +2382,12 @@ exports[`Form should render properly without initial state 1`] = `
   cursor: inherit;
 }
 
-.c30 * {
+.c33 * {
   fill-opacity: 1;
   fill: #607890;
 }
 
-.c60 {
+.c61 {
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -2425,7 +2395,7 @@ exports[`Form should render properly without initial state 1`] = `
   cursor: pointer;
 }
 
-.c60 * {
+.c61 * {
   fill-opacity: 1;
   fill: #607890;
 }
@@ -2478,7 +2448,7 @@ exports[`Form should render properly without initial state 1`] = `
   line-height: 2.6rem;
 }
 
-.c62 {
+.c63 {
   margin: 0;
   color: inherit;
   font-size: 1.8rem;
@@ -2490,7 +2460,7 @@ exports[`Form should render properly without initial state 1`] = `
   line-height: 2.4rem;
 }
 
-.c70 {
+.c71 {
   border: none;
   position: relative;
   -webkit-user-select: none;
@@ -2518,361 +2488,55 @@ exports[`Form should render properly without initial state 1`] = `
   align-items: center;
 }
 
-.c70 * {
+.c71 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c70:hover {
+.c71:hover {
   cursor: pointer;
 }
 
-.c70:focus {
+.c71:focus {
   outline: none;
 }
 
-.c70:disabled {
+.c71:disabled {
   cursor: not-allowed;
 }
 
-.c70:disabled {
+.c71:disabled {
   color: #98A7B7;
   background: #dfe4e9;
 }
 
-.c70:disabled .c29 * {
+.c71:disabled .c32 * {
   fill: #dfe4e9;
 }
 
-.c70:not(:disabled) {
+.c71:not(:disabled) {
   color: #ffffff;
 }
 
-.c70:not(:disabled) .c29 * {
+.c71:not(:disabled) .c32 * {
   fill: #ffffff;
 }
 
-.c70:not(:disabled):not(:hover) {
+.c71:not(:disabled):not(:hover) {
   background: #005AEE;
 }
 
-.c70:not(:disabled):hover {
+.c71:not(:disabled):hover {
   background: #1A6BF0;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
-.c70 .c29 + .c1 {
+.c71 .c32 + .c1 {
   margin-left: 0.8rem;
 }
 
-.c70 .c1 + .c29 {
+.c71 .c1 + .c32 {
   margin-left: 0.8rem;
-}
-
-.c16 {
-  color: #435465;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
-  cursor: default;
-}
-
-.c16::after {
-  color: red;
-  content: ' *';
-}
-
-.c32 {
-  color: #435465;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
-  cursor: default;
-}
-
-.c36 {
-  color: #435465;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  margin: 0px 0px 0px 0.8rem;
-  cursor: pointer;
-}
-
-.c34 {
-  grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: 0px;
-}
-
-.c17 {
-  grid-area: label;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c21 {
-  grid-area: description;
-  margin: 5px 0 0 2px;
-  color: #012040;
-}
-
-.c15 {
-  margin: 0.8rem 0.8rem 0.8rem 0;
-  display: inline-grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
-  grid-template-areas: 'label field' 'random description';
-}
-
-.c15 .c33 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c31 {
-  margin: 0.8rem 0;
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
-  grid-template-areas: 'label field' 'random description';
-}
-
-.c31 .c33 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c35 {
-  margin: 0.8rem 0.8rem 0.8rem 0;
-  display: inline-grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: max-content minmax(max-content,25%);
-  grid-template-areas: 'field label' 'description random';
-}
-
-.c35 .c33 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.c42 {
-  margin: 0.8rem 0;
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-areas: 'label' 'field' 'description';
-  grid-template-columns: auto;
-  grid-template-areas: 'field' 'description';
-}
-
-.c42 .c33 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c27 {
-  margin: 0.3rem;
-  position: relative;
-  border: 0.15rem solid;
-  box-sizing: border-box;
-  width: 1.8rem;
-  height: 1.8rem;
-  border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  background-color: transparent;
-  border-color: #13181D;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c25 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.c25 * {
-  cursor: pointer;
-}
-
-.c25 .c1 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #13181D;
-  padding: 0 1.6rem;
-}
-
-.c25 .c29 {
-  z-index: 1;
-  pointer-events: none;
-  position: absolute;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-}
-
-.c25:hover .c26 {
-  border-color: #1A6BF0;
-}
-
-.c68 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  padding: 0.8rem 0;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c68 * {
-  cursor: pointer;
-}
-
-.c68 .c1 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #13181D;
-  padding: 0 1.6rem;
-}
-
-.c68 .c29 {
-  z-index: 1;
-  pointer-events: none;
-  position: absolute;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  -webkit-transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-}
-
-.c68:hover .c26 {
-  border-color: #1A6BF0;
-}
-
-.c28 {
-  opacity: 0;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.c28:focus {
-  outline: none;
 }
 
 .c22 {
@@ -2893,18 +2557,186 @@ exports[`Form should render properly without initial state 1`] = `
   margin-bottom: 0.9rem;
 }
 
-.c22 > .c1 {
+.c34 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c34 > :first-child {
+  margin-bottom: 0.9rem;
+}
+
+.c24 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   cursor: inherit;
-  color: #13181D;
+  color: inherit;
 }
 
-.c24 {
+.c24::after {
+  content: ' *';
+  color: default:inherit;
+  disabled: #98A7B7;
+}
+
+.c27 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: inherit;
+  color: inherit;
+  padding: 0 1.6rem;
+}
+
+.c25 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
+}
+
+.c31 {
+  border: 0.15rem solid;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c31 .c32 {
+  z-index: 1;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  width: 100%;
+  height: 100%;
+}
+
+.c29 {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  position: absolute;
+}
+
+.c29:checked ~ .c30 {
+  border-color: #005AEE;
+  background-color: #005AEE;
+}
+
+.c29:checked ~ .c30 .c32 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c29:checked ~ .c30 .c32 * {
+  fill: #ffffff;
+}
+
+.c29:not(:checked) ~ .c30 {
+  background-color: transparent;
+  border-color: #13181D;
+}
+
+.c29:not(:disabled):focus:not(:checked) ~ .c30 {
+  border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
+}
+
+.c29:not(:disabled):focus:checked ~ .c30 {
+  box-shadow: 0 0 0.8rem #005AEE;
+}
+
+.c28 {
+  margin: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+}
+
+.c26 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c26 * {
+  cursor: pointer;
+}
+
+.c26:hover .c30 {
+  border-color: #1A6BF0;
+}
+
+.c69 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c69 * {
+  cursor: pointer;
+}
+
+.c69:hover .c30 {
+  border-color: #1A6BF0;
 }
 
 .c11 {
@@ -2929,7 +2761,7 @@ exports[`Form should render properly without initial state 1`] = `
   content: ' *';
 }
 
-.c57 {
+.c58 {
   pointer-events: none;
   margin-left: 1.6rem;
 }
@@ -2961,17 +2793,17 @@ exports[`Form should render properly without initial state 1`] = `
   color: #566c82;
 }
 
-.c7 .sc-fzpmMD,
-.c7 .c56 {
+.c7 .sc-fzoNJl,
+.c7 .c57 {
   color: #566c82;
 }
 
-.c7 .sc-fzpmMD *,
-.c7 .c56 * {
+.c7 .sc-fzoNJl *,
+.c7 .c57 * {
   fill: #566c82;
 }
 
-.c7 ~ .sc-fzoNJl {
+.c7 ~ .sc-fzqNqU {
   color: #566c82;
 }
 
@@ -3008,17 +2840,17 @@ exports[`Form should render properly without initial state 1`] = `
   color: #005AEE;
 }
 
-.c7:focus-within .sc-fzpmMD,
-.c7:focus-within:hover .sc-fzpmMD,
-.c7:focus-within .c56,
-.c7:focus-within:hover .c56 {
+.c7:focus-within .sc-fzoNJl,
+.c7:focus-within:hover .sc-fzoNJl,
+.c7:focus-within .c57,
+.c7:focus-within:hover .c57 {
   color: #005AEE;
 }
 
-.c7:focus-within .sc-fzpmMD *,
-.c7:focus-within:hover .sc-fzpmMD *,
-.c7:focus-within .c56 *,
-.c7:focus-within:hover .c56 * {
+.c7:focus-within .sc-fzoNJl *,
+.c7:focus-within:hover .sc-fzoNJl *,
+.c7:focus-within .c57 *,
+.c7:focus-within:hover .c57 * {
   fill: #005AEE;
 }
 
@@ -3075,7 +2907,7 @@ exports[`Form should render properly without initial state 1`] = `
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c55 {
+.c56 {
   position: relative;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -3159,7 +2991,7 @@ exports[`Form should render properly without initial state 1`] = `
   transform: translate3d(0,20%,0) scale(0.75);
 }
 
-.c54 {
+.c55 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3174,22 +3006,22 @@ exports[`Form should render properly without initial state 1`] = `
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c54 .c5 {
+.c55 .c5 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c54 .c5 label {
+.c55 .c5 label {
   pointer-events: none;
 }
 
-.c54 .c5 div,
-.c54 .c5 input,
-.c54 .c5 label {
+.c55 .c5 div,
+.c55 .c5 input,
+.c55 .c5 label {
   cursor: pointer;
 }
 
-.c54 .c5 .c56 {
+.c55 .c5 .c57 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -3198,16 +3030,115 @@ exports[`Form should render properly without initial state 1`] = `
   transform: rotate(0deg);
 }
 
-.c54 .c5 .c56 * {
+.c55 .c5 .c57 * {
   -webkit-transition: fill 100ms ease-out;
   transition: fill 100ms ease-out;
 }
 
-.c54 .c5:not(:focus-within):hover .c56 * {
+.c55 .c5:not(:focus-within):hover .c57 * {
   fill: #13181D;
 }
 
+.c16 {
+  color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  margin: 0px 0.8rem 0px 0px;
+  cursor: default;
+}
+
+.c16::after {
+  color: red;
+  content: ' *';
+}
+
 .c41 {
+  color: #435465;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  margin: 0px 0.8rem 0px 0px;
+  cursor: default;
+}
+
+.c17 {
+  grid-area: label;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c21 {
+  grid-area: description;
+  margin: 5px 0 0 2px;
+  color: #012040;
+}
+
+.c15 {
+  margin: 0.8rem 0.8rem 0.8rem 0;
+  display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
+  grid-template-areas: 'label field' 'random description';
+}
+
+.c15 .sc-fzoKki {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c43 {
+  margin: 0.8rem 0;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-areas: 'label' 'field' 'description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
+}
+
+.c43 .sc-fzoKki {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c42 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3218,12 +3149,12 @@ exports[`Form should render properly without initial state 1`] = `
   flex-direction: column-reverse;
 }
 
-.c41 .sc-fzoYkl {
+.c42 .sc-fznMnq {
   top: calc(100% + 5px);
   left: 0%;
 }
 
-.c58 {
+.c59 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3234,14 +3165,14 @@ exports[`Form should render properly without initial state 1`] = `
   flex-direction: column-reverse;
 }
 
-.c58 .sc-fzoYkl {
+.c59 .sc-fznMnq {
   top: calc(100% + 5px);
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.c43 {
+.c44 {
   grid-area: field;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
@@ -3262,7 +3193,7 @@ exports[`Form should render properly without initial state 1`] = `
   height: max-content;
 }
 
-.c43.c43.c43 {
+.c44.c44.c44 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -3272,11 +3203,11 @@ exports[`Form should render properly without initial state 1`] = `
   align-items: center;
 }
 
-.c43:focus-within {
+.c44:focus-within {
   border-color: #012040;
 }
 
-.c43 > * {
+.c44 > * {
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -3288,7 +3219,7 @@ exports[`Form should render properly without initial state 1`] = `
   color: #435465;
 }
 
-.c44 {
+.c45 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -3299,27 +3230,27 @@ exports[`Form should render properly without initial state 1`] = `
   background-color: #ffffff;
 }
 
-.c44::-webkit-input-placeholder {
+.c45::-webkit-input-placeholder {
   color: #98A7B7;
 }
 
-.c44::-moz-placeholder {
+.c45::-moz-placeholder {
   color: #98A7B7;
 }
 
-.c44:-ms-input-placeholder {
+.c45:-ms-input-placeholder {
   color: #98A7B7;
 }
 
-.c44::placeholder {
+.c45::placeholder {
   color: #98A7B7;
 }
 
-.c44::-webkit-file-upload-button {
+.c45::-webkit-file-upload-button {
   visibility: hidden;
 }
 
-.c45 {
+.c46 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3327,7 +3258,7 @@ exports[`Form should render properly without initial state 1`] = `
   cursor: inherit;
 }
 
-.c51 {
+.c52 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3342,7 +3273,7 @@ exports[`Form should render properly without initial state 1`] = `
   justify-content: center;
 }
 
-.c53 {
+.c54 {
   box-sizing: border-box;
   position: absolute;
   bottom: unset;
@@ -3351,7 +3282,7 @@ exports[`Form should render properly without initial state 1`] = `
   right: unset;
 }
 
-.c49 {
+.c50 {
   display: block;
   position: relative;
   border: 1px solid #BCBEC0;
@@ -3360,7 +3291,7 @@ exports[`Form should render properly without initial state 1`] = `
   margin: 0;
 }
 
-.c50 {
+.c51 {
   border: 0;
   padding: 0 44px;
   width: 100%;
@@ -3376,32 +3307,32 @@ exports[`Form should render properly without initial state 1`] = `
   outline: 0;
 }
 
-.c50::-webkit-input-placeholder {
+.c51::-webkit-input-placeholder {
   font-weight: 500;
   color: #929598;
 }
 
-.c50::-moz-placeholder {
+.c51::-moz-placeholder {
   font-weight: 500;
   color: #929598;
 }
 
-.c50:-moz-placeholder {
+.c51:-moz-placeholder {
   font-weight: 500;
   color: #929598;
 }
 
-.c47 {
+.c48 {
   box-sizing: border-box;
   position: relative;
 }
 
-.c52 {
+.c53 {
   color: #BCBEC0;
   opacity: 1;
 }
 
-.c48 {
+.c49 {
   display: grid;
   grid-template-columns: 194px 39px 194px;
   grid-template-rows: unset;
@@ -3410,11 +3341,11 @@ exports[`Form should render properly without initial state 1`] = `
   border-radius: 0;
 }
 
-.c46 > div:first-child div {
+.c47 > div:first-child div {
   z-index: 5;
 }
 
-.c46 > div:first-child > div:last-child {
+.c47 > div:first-child > div:last-child {
   top: unset;
   bottom: unset;
   left: unset;
@@ -3423,7 +3354,7 @@ exports[`Form should render properly without initial state 1`] = `
   left: 0%;
 }
 
-.c46 > div:first-child > div:first-child {
+.c47 > div:first-child > div:first-child {
   width: 100%;
   display: inline-grid;
   grid-template-columns: auto 30px auto;
@@ -3436,17 +3367,17 @@ exports[`Form should render properly without initial state 1`] = `
   cursor: pointer;
 }
 
-.c46 > div:first-child > div:first-child * {
+.c47 > div:first-child > div:first-child * {
   background-color: #ffffff;
   cursor: pointer;
 }
 
-.c46 > div:first-child > div:first-child label {
+.c47 > div:first-child > div:first-child label {
   text-align: center;
   border: 0;
 }
 
-.c46 > div:first-child > div:first-child label input {
+.c47 > div:first-child > div:first-child label input {
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -3463,32 +3394,32 @@ exports[`Form should render properly without initial state 1`] = `
   box-sizing: border-box;
 }
 
-.c46 > div:first-child > div:first-child label input:disabled {
+.c47 > div:first-child > div:first-child label input:disabled {
   cursor: not-allowed;
 }
 
-.c46 > div:first-child > div:first-child label input:focus {
+.c47 > div:first-child > div:first-child label input:focus {
   border-color: #012040;
   outline: 0;
 }
 
-.c46 > div:first-child > div:first-child label input::-webkit-input-placeholder {
+.c47 > div:first-child > div:first-child label input::-webkit-input-placeholder {
   color: #98A7B7;
 }
 
-.c46 > div:first-child > div:first-child label input::-moz-placeholder {
+.c47 > div:first-child > div:first-child label input::-moz-placeholder {
   color: #98A7B7;
 }
 
-.c46 > div:first-child > div:first-child label input:-ms-input-placeholder {
+.c47 > div:first-child > div:first-child label input:-ms-input-placeholder {
   color: #98A7B7;
 }
 
-.c46 > div:first-child > div:first-child label input::placeholder {
+.c47 > div:first-child > div:first-child label input::placeholder {
   color: #98A7B7;
 }
 
-.c46 > div:first-child > div:first-child label input::-webkit-file-upload-button {
+.c47 > div:first-child > div:first-child label input::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -3528,7 +3459,7 @@ exports[`Form should render properly without initial state 1`] = `
   outline: 0;
 }
 
-.c59 {
+.c60 {
   border: 1px solid #C7D0D8;
   background-color: #ffffff;
   cursor: pointer;
@@ -3554,95 +3485,108 @@ exports[`Form should render properly without initial state 1`] = `
   align-items: center;
 }
 
-.c59 * {
+.c60 * {
   cursor: pointer;
 }
 
-.c59 .c14 {
+.c60 .c14 {
   margin: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
 
-.c59 .c14 > * {
+.c60 .c14 > * {
   margin: 0;
   border: none;
   background-color: transparent;
 }
 
-.c59:focus-within {
+.c60:focus-within {
   border-color: #012040;
 }
 
-.c61 {
+.c62 {
   max-width: 24px;
   margin-right: 0.4rem;
 }
 
 .c40 {
-  background-color: #012040;
-  width: 0;
-  height: 0;
-  z-index: 1;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  box-sizing: border-box;
+  border: 0.15rem solid;
+  width: 100%;
+  height: 100%;
   border-radius: 100%;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c38 {
-  opacity: 0;
-  z-index: 2;
   position: absolute;
-  width: 100%;
-  height: 100%;
+  opacity: 0;
+  width: 1%;
+  height: 1%;
   margin: 0;
-  cursor: pointer;
+}
+
+.c38 ~ .c39 {
+  border-color: #13181D;
 }
 
 .c38:checked ~ .c39 {
-  width: calc(75%);
-  height: calc(75%);
-  -webkit-transition: width 0.2s ease,height 0.2s ease;
-  transition: width 0.2s ease,height 0.2s ease;
+  border-width: calc(1.8rem / 3);
+}
+
+.c38:checked:disabled ~ .c39 {
+  border-color: #dfe4e9;
+}
+
+.c38:not(:checked):disabled ~ .c39 {
+  border-color: #98A7B7;
+}
+
+.c38:not(:disabled):checked ~ .c39 {
+  border-color: #005AEE;
+}
+
+.c38:not(:disabled):focus ~ .c39 {
+  border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
 }
 
 .c37 {
-  width: 16px;
-  height: 16px;
+  margin: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
   position: relative;
   border-radius: 100%;
-  border: 1px solid #C7D0D8;
-  background-color: #ffffff;
+}
+
+.c36 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  cursor: pointer;
+  padding: 0.8rem 0;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
-.c37:focus-within {
-  box-shadow: 0 0 0 1pt #012040;
+.c36:hover.c35:hover .c39 {
+  border-color: #1A6BF0;
 }
 
-.c69 {
+.c70 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3658,7 +3602,7 @@ exports[`Form should render properly without initial state 1`] = `
   justify-content: flex-end;
 }
 
-.c69 > * + * {
+.c70 > * + * {
   margin-left: 1.6rem;
 }
 
@@ -3692,18 +3636,8 @@ exports[`Form should render properly without initial state 1`] = `
   min-width: auto;
 }
 
-.c65 {
-  grid-column: 1/5;
-}
-
-.c65 > * {
-  width: 100%;
-  margin: 0;
-  min-width: auto;
-}
-
 .c66 {
-  grid-column: 5/9;
+  grid-column: 1/5;
 }
 
 .c66 > * {
@@ -3713,7 +3647,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c67 {
-  grid-column: 9/-1;
+  grid-column: 5/9;
 }
 
 .c67 > * {
@@ -3722,12 +3656,22 @@ exports[`Form should render properly without initial state 1`] = `
   min-width: auto;
 }
 
-.c63 {
+.c68 {
+  grid-column: 9/-1;
+}
+
+.c68 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c64 {
   grid-column: 1/-1;
   margin-top: 2.6rem;
 }
 
-.c64 {
+.c65 {
   margin-bottom: 1rem;
 }
 
@@ -3904,88 +3848,107 @@ exports[`Form should render properly without initial state 1`] = `
       class="c13"
     >
       <div
+        aria-describedby="languages-helper-text"
         class="c22"
         id="languages-wrapper"
+        name="languages"
       >
         <span
-          class="c1 c23"
+          class="c1 c23 c24"
           id="languages-label"
+          required=""
+          type="checkbox"
         >
           Languages
         </span>
-        
         <div
-          class="c24"
-          id="languages-field"
+          class="c25"
+          id="languages-options"
         >
+          
           <label
-            class="c25"
-            for="languages-JAVA"
-            id="languages-JAVA-wrapper"
+            class="c26"
+            for="JAVA-languages"
+            id="JAVA-languages-wrapper"
+            sizes="[object Object]"
           >
             <span
-              class="c1 c20"
-              id="languages-JAVA-label"
+              class="c1 c20 c27"
+              id="JAVA-languages-label"
+              type="checkbox"
             >
               JAVA
             </span>
             <div
-              class="c26 c27"
+              class="c28"
             >
               <input
-                class="c28"
-                id="languages-JAVA"
+                class="c29"
+                id="JAVA-languages"
                 name="java"
+                sizes="[object Object]"
                 type="checkbox"
               />
-              <svg
-                class="c29 c30"
-                fill="none"
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="c30 c31"
               >
-                <path
-                  d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-                  fill="green"
-                />
-              </svg>
+                <svg
+                  class="c32 c33"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                    fill="green"
+                  />
+                </svg>
+              </div>
             </div>
           </label>
+          
           <label
-            class="c25"
-            for="languages-RUBY"
-            id="languages-RUBY-wrapper"
+            class="c26"
+            for="RUBY-languages"
+            id="RUBY-languages-wrapper"
+            sizes="[object Object]"
           >
             <span
-              class="c1 c20"
-              id="languages-RUBY-label"
+              class="c1 c20 c27"
+              id="RUBY-languages-label"
+              type="checkbox"
             >
               RUBY
             </span>
             <div
-              class="c26 c27"
+              class="c28"
             >
               <input
-                class="c28"
-                id="languages-RUBY"
+                class="c29"
+                id="RUBY-languages"
                 name="ruby"
+                sizes="[object Object]"
                 type="checkbox"
               />
-              <svg
-                class="c29 c30"
-                fill="none"
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                class="c30 c31"
               >
-                <path
-                  d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-                  fill="green"
-                />
-              </svg>
+                <svg
+                  class="c32 c33"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                    fill="green"
+                  />
+                </svg>
+              </div>
             </div>
           </label>
         </div>
@@ -3995,34 +3958,44 @@ exports[`Form should render properly without initial state 1`] = `
       class="c13"
     >
       <div
-        class="c14 c31"
-        id="Role-radioGroup"
+        aria-describedby="role-helper-text"
+        class="c34"
+        id="role-wrapper"
       >
-        <label
-          class="c32 c17"
+        <span
+          class="c1 c23 c24"
+          id="role-label"
+          required=""
+          type="radio"
         >
           Role
-        </label>
+        </span>
         <div
-          class="c33 c34"
+          class="c25"
+          id="role-options"
         >
-          <div
-            class="c14 c35"
-            id="Front End-radio"
+          <label
+            class="c35 c36"
+            for="Front End-role"
+            id="Front End-role-wrapper"
+            sizes="[object Object]"
           >
-            <label
-              class="c36 c17"
-              for="Front End"
+            <span
+              class="c1 c20 c27"
+              id="Front End-role-label"
+              type="radio"
             >
               Front End
-            </label>
+            </span>
             <div
               class="c37"
             >
               <input
                 class="c38"
-                id="Front End"
+                id="Front End-role"
                 name="role"
+                required=""
+                sizes="[object Object]"
                 type="radio"
                 value="front-end"
               />
@@ -4030,24 +4003,29 @@ exports[`Form should render properly without initial state 1`] = `
                 class="c39 c40"
               />
             </div>
-          </div>
-          <div
-            class="c14 c35"
-            id="Back End-radio"
+          </label>
+          <label
+            class="c35 c36"
+            for="Back End-role"
+            id="Back End-role-wrapper"
+            sizes="[object Object]"
           >
-            <label
-              class="c36 c17"
-              for="Back End"
+            <span
+              class="c1 c20 c27"
+              id="Back End-role-label"
+              type="radio"
             >
               Back End
-            </label>
+            </span>
             <div
               class="c37"
             >
               <input
                 class="c38"
-                id="Back End"
+                id="Back End-role"
                 name="role"
+                required=""
+                sizes="[object Object]"
                 type="radio"
                 value="back-end"
               />
@@ -4055,24 +4033,29 @@ exports[`Form should render properly without initial state 1`] = `
                 class="c39 c40"
               />
             </div>
-          </div>
-          <div
-            class="c14 c35"
-            id="Full Stack-radio"
+          </label>
+          <label
+            class="c35 c36"
+            for="Full Stack-role"
+            id="Full Stack-role-wrapper"
+            sizes="[object Object]"
           >
-            <label
-              class="c36 c17"
-              for="Full Stack"
+            <span
+              class="c1 c20 c27"
+              id="Full Stack-role-label"
+              type="radio"
             >
               Full Stack
-            </label>
+            </span>
             <div
               class="c37"
             >
               <input
                 class="c38"
-                id="Full Stack"
+                id="Full Stack-role"
                 name="role"
+                required=""
+                sizes="[object Object]"
                 type="radio"
                 value="full-stack"
               />
@@ -4080,7 +4063,7 @@ exports[`Form should render properly without initial state 1`] = `
                 class="c39 c40"
               />
             </div>
-          </div>
+          </label>
         </div>
       </div>
     </div>
@@ -4092,26 +4075,26 @@ exports[`Form should render properly without initial state 1`] = `
         id="birthDate"
       >
         <label
-          class="c32 c17"
+          class="c41 c17"
           for="birthDate"
         >
           Birth Date
         </label>
         <div
-          class="c41"
+          class="c42"
           id="medly-popover-wrapper"
         >
           <div
-            class="c14 c42"
+            class="c14 c43"
             id="birthDate-input-field"
           >
             
             <div
-              class="c33 c43"
+              class="sc-fzoKki c44"
             >
               <input
                 autocomplete="off"
-                class="c44 c45"
+                class="c45 c46"
                 id="birthDate-input"
                 name="birthDate"
                 placeholder="Birth Date"
@@ -4131,31 +4114,31 @@ exports[`Form should render properly without initial state 1`] = `
         class="c14 c15"
       >
         <label
-          class="c32 c17"
+          class="c41 c17"
           for="Experience"
         >
           Experience
         </label>
         <div
-          class="c46"
+          class="c47"
           data-testid="react-datepicker"
         >
           <div
-            class="c47"
+            class="c48"
           >
             <div
-              class="sc-fzpkqZ c48"
+              class="sc-fzoaKM c49"
               data-testid="DateRangeInputGrid"
             >
               <label
-                class="c49"
+                class="c50"
                 display="block"
                 for="startDate"
               >
                 <input
                   aria-label="Start date"
                   autocomplete="off"
-                  class="c50"
+                  class="c51"
                   color="#001217"
                   data-testid="DatepickerInput"
                   font-family="Montserrat, sans-serif"
@@ -4169,10 +4152,10 @@ exports[`Form should render properly without initial state 1`] = `
                 />
               </label>
               <div
-                class="c51"
+                class="c52"
               >
                 <svg
-                  class="c52"
+                  class="c53"
                   height="12px"
                   transform="rotate(90 0 0)"
                   viewBox="0 0 9 12"
@@ -4186,14 +4169,14 @@ exports[`Form should render properly without initial state 1`] = `
                 </svg>
               </div>
               <label
-                class="c49"
+                class="c50"
                 display="block"
                 for="endDate"
               >
                 <input
                   aria-label="End date"
                   autocomplete="off"
-                  class="c50"
+                  class="c51"
                   color="#001217"
                   data-testid="DatepickerInput"
                   font-family="Montserrat, sans-serif"
@@ -4208,7 +4191,7 @@ exports[`Form should render properly without initial state 1`] = `
               </label>
             </div>
             <div
-              class="c53"
+              class="c54"
             />
           </div>
         </div>
@@ -4218,10 +4201,10 @@ exports[`Form should render properly without initial state 1`] = `
       class="c13"
     >
       <div
-        class="c54"
+        class="c55"
       >
         <div
-          class="c5 c55"
+          class="c5 c56"
         >
           <div
             class="c7"
@@ -4249,7 +4232,7 @@ exports[`Form should render properly without initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c29 c30 c56 c57"
+              class="c32 c33 c57 c58"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -4274,30 +4257,30 @@ exports[`Form should render properly without initial state 1`] = `
         id="graduation-field"
       >
         <label
-          class="c32 c17"
+          class="c41 c17"
           for="graduation"
         >
           Graduation
         </label>
         <div
-          class="c58"
+          class="c59"
           id="medly-popover-wrapper"
         >
           <div
-            class="c59"
+            class="c60"
             id="graduation-container"
           >
             <div
-              class="c14 c42"
+              class="c14 c43"
               id="graduation-input-field"
             >
               
               <div
-                class="c33 c43"
+                class="sc-fzoKki c44"
               >
                 <input
                   autocomplete="off"
-                  class="c44"
+                  class="c45"
                   id="graduation-input"
                   placeholder="Please Select . . ."
                   type="text"
@@ -4307,7 +4290,7 @@ exports[`Form should render properly without initial state 1`] = `
               
             </div>
             <svg
-              class="c29 c60 c61"
+              class="c32 c61 c62"
               fill="none"
               height="1em"
               theme="[object Object]"
@@ -4327,17 +4310,17 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <h4
-      class="c1 c62 c63"
+      class="c1 c63 c64"
     >
       Marks
     </h4>
     <span
-      class="c1 c20 c64"
+      class="c1 c20 c65"
     >
       Marks Information
     </span>
     <div
-      class="c65"
+      class="c66"
     >
       <div
         class="c5 c6"
@@ -4371,7 +4354,7 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <div
-      class="c66"
+      class="c67"
     >
       <div
         class="c5 c6"
@@ -4405,7 +4388,7 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <div
-      class="c67"
+      class="c68"
     >
       <div
         class="c5 c6"
@@ -4441,47 +4424,55 @@ exports[`Form should render properly without initial state 1`] = `
     <div
       class="c13"
     >
+      
       <label
-        class="c68"
+        class="c69"
         for="agree"
         id="agree-wrapper"
+        sizes="[object Object]"
       >
         <span
-          class="c1 c20"
+          class="c1 c20 c27"
           id="agree-label"
+          type="checkbox"
         >
           Do you Agree
         </span>
         <div
-          class="c26 c27"
+          class="c28"
         >
           <input
-            class="c28"
+            class="c29"
             id="agree"
             name="agree"
+            sizes="[object Object]"
             type="checkbox"
           />
-          <svg
-            class="c29 c30"
-            fill="none"
-            height="1em"
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="c30 c31"
           >
-            <path
-              d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-              fill="green"
-            />
-          </svg>
+            <svg
+              class="c32 c33"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                fill="green"
+              />
+            </svg>
+          </div>
         </div>
       </label>
     </div>
     <div
-      class="c69"
+      class="c70"
     >
       <button
-        class="c70"
+        class="c71"
         color="default"
         form="medly-dynamic-form"
         type="submit"

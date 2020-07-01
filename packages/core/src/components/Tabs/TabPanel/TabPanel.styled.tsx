@@ -6,4 +6,5 @@ export const TabPanel = styled('div')`
     }
     padding: 10px;
     height: 100%;
+    width: 100%;
 `;

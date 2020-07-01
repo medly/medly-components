@@ -10,8 +10,7 @@ export const TabPanel: React.FC<Props> & WithStyle = React.memo(props => {
         <>
             {React.Children.map(children, (child: any) => {
                 const { id } = child.props;
-                if (id !== active) return undefined;
-                return (
+                return id !== active ? undefined : (
                     <Styled.TabPanel id={`${props.id}-${id}`} role="tabpanel" tabIndex={0} aria-labelledby={id}>
                         {child.props.children}
                     </Styled.TabPanel>

@@ -1,6 +1,14 @@
-import { styled } from '@medly-components/utils';
+import { css, styled } from '@medly-components/utils';
 import Text from '../../../Text';
 import { StyledProps } from './types';
+
+const wrapTextStyle = () => css`
+    ${Text.Style} {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+`;
 
 export const Cell = styled('td')<StyledProps>`
     padding: 0;
@@ -11,12 +19,10 @@ export const Cell = styled('td')<StyledProps>`
     justify-content: ${({ align }) => (align === 'left' ? 'flex-start' : align === 'right' ? 'flex-end' : 'center')};
     overflow: hidden;
 
-    ${Text.Style} {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-    }
+    ${({ wrapText }) => wrapText && wrapTextStyle()}
 `;
+
 Cell.defaultProps = {
-    align: 'left'
+    align: 'left',
+    wrapText: true
 };

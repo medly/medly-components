@@ -4,7 +4,7 @@ import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix'>, WithThemeProp {
     /** Input Variants */
     variant?: 'outlined' | 'filled';
-    /** Function will called with the input value on Blur event */
+    /** Function will called with the input value on blur and invalid event */
     validator?: (val: any) => string;
     /** Takes full width of the parent component */
     fullWidth?: boolean;

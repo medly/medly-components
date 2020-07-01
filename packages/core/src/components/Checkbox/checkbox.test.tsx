@@ -1,4 +1,4 @@
-import { render, screen } from '@test-utils';
+import { fireEvent, render, screen } from '@test-utils';
 import userEvent from '@testing-library/user-event';
 import React from 'react';
 import { LabelPositions } from '../Label/types';
@@ -7,7 +7,7 @@ import { Checkbox } from './Checkbox';
 describe('Checkbox component', () => {
     describe.each([true, false])('should render correctly with checked %p', (checked: boolean) => {
         test.each(['indeterminate', 'active', 'disabled', 'hasError'])('and %s state', state => {
-            const { container } = render(<Checkbox {...{ [state]: true }} checked={checked} />);
+            const { container } = render(<Checkbox {...{ [state]: true }} checked={checked} errorText="Something went wrong" />);
             expect(container).toMatchSnapshot();
         });
     });
@@ -30,5 +30,36 @@ describe('Checkbox component', () => {
         render(<Checkbox onChange={mockOnChange} label="Dummy" />);
         userEvent.click(screen.getByRole('checkbox'));
         expect(mockOnChange).toBeCalled();
+    });
+
+    it('should show error text if provided', () => {
+        const mockOnChange = jest.fn();
+        render(<Checkbox onChange={mockOnChange} label="Dummy" errorText="Something went wrong" />);
+        const errorText = screen.getByText('Something went wrong');
+        expect(errorText).toBeInTheDocument();
+        expect(errorText).toHaveStyle(`color: rgb(204, 0, 0)`);
+    });
+
+    it('should call validator function on blur event', () => {
+        const mockOnBlur = jest.fn();
+        render(
+            <Checkbox
+                required
+                onBlur={mockOnBlur}
+                label="Dummy"
+                validator={val => (!val ? 'Please accept the terms & conditions to continue.' : '')}
+            />
+        );
+        fireEvent.blur(screen.getByRole('checkbox'));
+        expect(screen.getByText('Please accept the terms & conditions to continue.')).toBeInTheDocument();
+        expect(mockOnBlur).toBeCalled();
+    });
+
+    it('should show the html5 error validation message on error', () => {
+        const mockOnInvalid = jest.fn();
+        render(<Checkbox required onInvalid={mockOnInvalid} label="Dummy" />);
+        fireEvent.invalid(screen.getByRole('checkbox'));
+        expect(screen.getByText('Constraints not satisfied')).toBeInTheDocument();
+        expect(mockOnInvalid).toBeCalled();
     });
 });

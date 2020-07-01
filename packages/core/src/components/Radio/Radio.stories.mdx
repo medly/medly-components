@@ -1,15 +1,37 @@
 import { Radio } from './Radio';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './Radio.stories';
+import { sizes, labelPositions, ThemeInterface } from './Radio.stories';
+import { boolean, select } from '@storybook/addon-knobs';
 
-<Meta title="Core" component={Radio} />
+<Meta
+    title="Core"
+    component={Radio}
+    parameters={{
+        jest: ['Radio.test.tsx'],
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=239%3A0'
+        }
+    }}
+/>
 
 # Radio
 
 ### Basic Radio
 
 <Preview withToolbar>
-    <Story name="Radio">{stories.Basic()}</Story>
+    <Story name="Radio">
+        <Radio
+            value="female"
+            name="gender"
+            label="Female"
+            disabled={boolean('Disabled', false)}
+            fullWidth={boolean('Full Width', false)}
+            size={select('Size', sizes, 'S')}
+            hasError={boolean('Has Error', false)}
+            labelPosition={select('Label Position', labelPositions, 'right')}
+        />
+    </Story>
 </Preview>
 
 ### Props
@@ -18,4 +40,4 @@ import * as stories from './Radio.stories';
 
 ### RadioTheme
 
-<Props of={stories.ThemeInterface} />
+<Props of={ThemeInterface} />

@@ -1,117 +1,137 @@
-import { render, screen } from '@test-utils';
+import { fireEvent, render, screen, waitFor } from '@test-utils';
 import userEvent from '@testing-library/user-event';
 import React from 'react';
 import { CheckboxGroup } from './CheckboxGroup';
 
-const options = [
-    { value: 'honda', label: 'Honda' },
-    { value: 'hyundai', label: 'Hyundai' },
-    {
-        value: [
-            { value: 'jaguar', label: 'Jaguar' },
-            { value: 'landRover', label: 'Land Rover' }
-        ],
-        columns: 2,
-        label: 'Tata'
-    }
-];
+const renderer = ({
+    label = 'Cars',
+    helperText = 'Helper Text',
+    errorText = undefined,
+    onChange = jest.fn(),
+    required = false,
+    disabled = false,
+    showSelectAll = false,
+    onBlur = jest.fn(),
+    values = ['hyundai'],
+    validator = undefined,
+    options = [
+        { value: 'honda', label: 'Honda' },
+        { value: 'hyundai', label: 'Hyundai' },
+        {
+            value: [
+                { value: 'jaguar', label: 'Jaguar' },
+                { value: 'landRover', label: 'Land Rover' }
+            ],
+            columns: 2,
+            label: 'Tata'
+        }
+    ]
+}) =>
+    render(
+        <CheckboxGroup
+            {...{ values, required, showSelectAll, validator, onBlur, disabled, label, helperText, options, errorText, onChange }}
+        />
+    );
 
 describe('CheckboxGroup component', () => {
+    it('should render properly', () => {
+        const { container } = renderer({});
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly with disabled state', () => {
+        const { container } = renderer({ disabled: true });
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly with fullWidth', () => {
+        const { container } = renderer({ disabled: true });
+        expect(container).toMatchSnapshot();
+    });
+
     it('should deselect option when it is already selected', () => {
         const mockOnChange = jest.fn();
-        render(<CheckboxGroup values={['hyundai']} onChange={mockOnChange} label="Cars" options={options} />);
+        renderer({ onChange: mockOnChange });
         userEvent.click(screen.getByText('Hyundai'));
         expect(mockOnChange).toHaveBeenCalledWith([]);
     });
 
     it('should select option when click on it', () => {
         const mockOnChange = jest.fn();
-        render(<CheckboxGroup onChange={mockOnChange} label="Cars" options={options} />);
+        renderer({ onChange: mockOnChange, values: [] });
         userEvent.click(screen.getByText('Hyundai'));
         expect(mockOnChange).toHaveBeenCalledWith(['hyundai']);
     });
 
     it('should select all when clicked on the select all option', () => {
         const mockOnChange = jest.fn();
-        render(<CheckboxGroup showSelectAll values={['hyundai']} onChange={mockOnChange} label="Cars" options={options} />);
+        renderer({ onChange: mockOnChange, showSelectAll: true });
         userEvent.click(screen.getByText('Cars'));
         expect(mockOnChange).toHaveBeenCalledWith(['hyundai', 'honda', 'jaguar', 'landRover']);
     });
 
     it('should show indeterminate state when any one option is selected but not all', () => {
         const mockOnChange = jest.fn(),
-            { container } = render(
-                <CheckboxGroup showSelectAll values={['hyundai']} onChange={mockOnChange} label="Cars" options={options} />
-            );
+            { container } = renderer({ onChange: mockOnChange });
         expect(container.querySelector('svg')).toMatchSnapshot();
     });
 
     it('should unselect all when all the options are already selected', () => {
         const mockOnChange = jest.fn();
-        render(
-            <CheckboxGroup
-                showSelectAll
-                values={['honda', 'hyundai', 'jaguar', 'landRover']}
-                onChange={mockOnChange}
-                label="Cars"
-                options={options}
-            />
-        );
+        renderer({ onChange: mockOnChange, values: ['honda', 'hyundai', 'jaguar', 'landRover'], showSelectAll: true });
         userEvent.click(screen.getByText('Cars'));
         expect(mockOnChange).toHaveBeenCalledWith([]);
     });
 
-    it('should render helper text when it is given', () => {
-        const { container } = render(
-            <CheckboxGroup values={[]} onChange={jest.fn()} label="Cars" helperText="Helper Text" options={options} />
-        );
-        expect(screen.getByText('Helper Text')).toBeInTheDocument();
-        expect(container).toMatchSnapshot();
-    });
-
     it('should render error text when it is given', () => {
-        const { container } = render(
-            <CheckboxGroup values={[]} onChange={jest.fn()} label="Cars" errorText="Helper Text" options={options} />
-        );
-        expect(screen.getByText('Helper Text')).toBeInTheDocument();
-        expect(container).toMatchSnapshot();
+        renderer({ errorText: 'Something went wrong' });
+        const errorText = screen.getByText('Something went wrong');
+        expect(errorText).toBeInTheDocument();
+        expect(errorText).toHaveStyle(`color: rgb(204, 0, 0)`);
     });
 
-    it('should render properly when it is disabled', () => {
-        const { container } = render(
-            <CheckboxGroup values={[]} showSelectAll onChange={jest.fn()} helperText="Helper Text" disabled options={options} />
-        );
-        expect(container).toMatchSnapshot();
+    it('should call validator function on blur', async () => {
+        const mockOnBlur = jest.fn();
+        const { container } = renderer({
+            values: [],
+            onBlur: mockOnBlur,
+            validator: (val: string) => (val.length === 0 ? 'Please select at least one car' : '')
+        });
+        fireEvent.blur(container.querySelector('#Cars-wrapper'));
+        await waitFor(() => expect(screen.getByText('Please select at least one car')).toBeInTheDocument());
+        expect(mockOnBlur).toBeCalled();
     });
 
-    it('should render properly with fullWidth', () => {
-        const { container } = render(
-            <CheckboxGroup fullWidth id="dummyId" values={['hyundai']} onChange={jest.fn()} label="Cars" options={options} />
-        );
-        expect(container).toMatchSnapshot();
-        expect(container.querySelector('#dummyId-wrapper')).toHaveStyle(`
-            display: flex;
-        `);
+    it('should show default error message on blur when we pass required prop', async () => {
+        const mockOnBlur = jest.fn();
+        const { container } = renderer({
+            required: true,
+            values: [],
+            onBlur: mockOnBlur
+        });
+        fireEvent.blur(container.querySelector('#Cars-wrapper'));
+        await waitFor(() => expect(screen.getByText('Please select at least one option.')).toBeInTheDocument());
+        expect(mockOnBlur).toBeCalled();
     });
 
     describe('nested options', () => {
         it('should select option when click on it', () => {
             const mockOnChange = jest.fn();
-            render(<CheckboxGroup onChange={mockOnChange} label="Cars" options={options} />);
+            renderer({ onChange: mockOnChange, values: [] });
             userEvent.click(screen.getByText('Jaguar'));
             expect(mockOnChange).toHaveBeenCalledWith(['jaguar']);
         });
 
         it('should select all nested options when clicked on the group label', () => {
             const mockOnChange = jest.fn();
-            render(<CheckboxGroup showSelectAll onChange={mockOnChange} label="Cars" options={options} />);
+            renderer({ onChange: mockOnChange, values: [] });
             userEvent.click(screen.getByText('Tata'));
             expect(mockOnChange).toHaveBeenCalledWith(['jaguar', 'landRover']);
         });
 
         it('should unselect all when all the options are already selected', () => {
             const mockOnChange = jest.fn();
-            render(<CheckboxGroup showSelectAll values={['jaguar', 'landRover']} onChange={mockOnChange} label="Cars" options={options} />);
+            renderer({ onChange: mockOnChange, values: ['jaguar', 'landRover'] });
             userEvent.click(screen.getByText('Tata'));
             expect(mockOnChange).toHaveBeenCalledWith([]);
         });

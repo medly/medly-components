@@ -1,8 +1,20 @@
 import { CheckboxGroup } from './CheckboxGroup';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './CheckboxGroup.stories';
+import { sizes, FormWithCheckboxGroup } from './CheckboxGroup.stories';
+import { boolean, number, select, text } from '@storybook/addon-knobs';
+import { useState } from 'react';
 
-<Meta title="Core" component={CheckboxGroup} parameters={{ jest: ['CheckboxGroup.test.tsx'] }} />
+<Meta
+    title="Core"
+    component={CheckboxGroup}
+    parameters={{
+        jest: ['CheckboxGroup.test.tsx'],
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=239%3A0'
+        }
+    }}
+/>
 
 # CheckboxGroup
 
@@ -25,7 +37,90 @@ return (
 ```
 
 <Preview withToolbar>
-    <Story name="CheckboxGroup">{stories.Basic()}</Story>
+    <Story name="CheckboxGroup">
+        {() => {
+            const [values, setValues] = useState(['hyundai']);
+            return (
+                <CheckboxGroup
+                    values={values}
+                    onChange={setValues}
+                    options={[
+                        { value: 'honda', label: 'Honda' },
+                        { value: 'hyundai', label: 'Hyundai' },
+                        {
+                            value: [
+                                { value: 'jaguar', label: 'Jaguar' },
+                                { value: 'landRover', label: 'Land Rover' }
+                            ],
+                            label: 'Tata'
+                        }
+                    ]}
+                    disabled={boolean('Disabled', false)}
+                    fullWidth={boolean('Full Width', false)}
+                    required={boolean('Required', false)}
+                    showSelectAll={boolean('Show Select All', false)}
+                    label={text('Label', 'Cars')}
+                    size={select('Size', sizes, 'S')}
+                    errorText={text('Error Text', '')}
+                    helperText={text('Helper Text', 'Helper Text')}
+                    columns={number('Columns', 1)}
+                />
+            );
+        }}
+    </Story>
+</Preview>
+
+### Validations
+
+1. For now `ChackboxGroup` will call the `validator` prop function with latest values on `blur` & `change` event. If you havn't passed the validator function then it will show default error message if you pass `required` prop.
+
+> **Note**: Right now validattion message will not apear on `submit` event. We are working on it.
+
+```tsx
+export const FormWithCheckboxGroup: React.FC = props => {
+    const [values, setValues] = useState([]),
+        handleSubmit = (e: React.FormEvent) => e.preventDefault();
+    return (
+        <form onSubmit={handleSubmit}>
+            <CheckboxGroup
+                fullWidth
+                required
+                label="Cars"
+                values={values}
+                onChange={setValues}
+                options={[
+                    { value: 'honda', label: 'Honda' },
+                    { value: 'hyundai', label: 'Hyundai' }
+                ]}
+                {...props}
+            />
+            <Button size="S" type="submit">
+                Submit
+            </Button>
+        </form>
+    );
+};
+```
+
+<Preview withToolbar>
+    <FormWithCheckboxGroup />
+</Preview>
+
+2. If you pass validator function then it will be called with latest selected value, so that if you want you can return the desired error message.
+
+```tsx
+validator={val => (!val.length == 0 ? 'Please select at least on company.' : '')}
+```
+
+<Preview withToolbar>
+    <FormWithCheckboxGroup
+        validator={val => (val.length == 0 ? 'Please select at least on company.' : '')}
+        label="Laptop"
+        options={[
+            { value: 'apple', label: 'Apple' },
+            { value: 'dell', label: 'Dell' }
+        ]}
+    />
 </Preview>
 
 ### Props

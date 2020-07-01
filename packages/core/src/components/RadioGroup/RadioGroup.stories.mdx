@@ -1,15 +1,115 @@
 import { RadioGroup } from './RadioGroup';
+import { boolean, number, select, text, withKnobs } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './RadioGroup.stories';
+import { FormWithRadioGroup, sizes } from './RadioGroup.stories';
+import { useState } from 'react';
 
-<Meta title="Core" component={RadioGroup} />
+<Meta
+    title="Core"
+    component={RadioGroup}
+    parameters={{
+        jest: ['RadioGroup.test.tsx'],
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=239%3A0'
+        }
+    }}
+/>
 
 # RadioGroup
 
-### Displays group of radio
+Set of radio button to let users to choose from multiple options. It's a controlled react component. So you have to have the handle state like below.
+
+```tsx
+const [value, setValue] = useState('female');
+
+return (
+    <RadioGroup
+        label="Gender"
+        name="gender"
+        value={value}
+        onChange={setValue}
+        options={[
+            { value: 'female', label: 'Female' },
+            { value: 'male', label: 'Male' }
+        ]}
+    />
+);
+```
 
 <Preview withToolbar>
-    <Story name="RadioGroup">{stories.Basic()}</Story>
+    <Story name="RadioGroup" decorators={[withKnobs]}>
+        {() => {
+            const [value, setValue] = useState('female');
+            return (
+                <RadioGroup
+                    id="gender"
+                    value={value}
+                    onChange={setValue}
+                    disabled={boolean('Disabled', false)}
+                    required={boolean('Required', false)}
+                    fullWidth={boolean('Full Width', false)}
+                    label={text('Label', 'Gender')}
+                    size={select('Size', sizes, 'S')}
+                    errorText={text('Error Text', '')}
+                    helperText={text('Helper Text', 'Helper Text')}
+                    columns={number('Columns', 1)}
+                    options={[
+                        { value: 'female', label: 'Female' },
+                        { value: 'male', label: 'Male' }
+                    ]}
+                />
+            );
+        }}
+    </Story>
+</Preview>
+
+### Validations
+
+1. For now, RadioGroup by default can only show error message on form submit when you pass required prop.
+
+```tsx
+() => {
+    const [value, setValue] = useState(),
+        handleSubmit = e => e.preventDefault();
+    return (
+        <form onSubmit={handleSubmit}>
+            <RadioGroup
+                required
+                label="Gender"
+                name="gender"
+                value={value}
+                onChange={setValue}
+                options={[
+                    { value: 'female', label: 'Female' },
+                    { value: 'male', label: 'Male' }
+                ]}
+            />
+            <Button type="submit">Submit</Button>
+        </form>
+    );
+};
+```
+
+<Preview withToolbar>
+    <FormWithRadioGroup />
+</Preview>
+
+2. If you pass validator function then it will be called with latest selected value, so that if you want you can return the desired error message.
+
+```tsx
+validator={val => (!val ? 'Please select any one company' : '')}
+```
+
+<Preview withToolbar>
+    <FormWithRadioGroup
+        label="Laptop"
+        options={[
+            { value: 'apple', label: 'Apple' },
+            { value: 'dell', label: 'Dell' }
+        ]}
+        validator={val => (!val ? 'Please select any one company' : '')}
+    />
 </Preview>
 
 ### Props

@@ -1,12 +1,11 @@
-import { WithStyle } from '@medly-components/utils';
-import React, { SFC, useCallback, useMemo } from 'react';
+import { useCombinedRefs, WithStyle } from '@medly-components/utils';
+import React, { FC, useCallback, useMemo, useState } from 'react';
 import Checkbox from '../Checkbox';
-import Text from '../Text';
-import * as Styled from './CheckboxGroup.styled';
+import { SelectorGroup } from '../Selectors';
 import getValuesFromOptions from './getValuesFromOptions';
 import { Props } from './types';
 
-export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
+export const CheckboxGroup: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
             id,
@@ -17,18 +16,25 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
             label,
             labelVariant,
             labelWeight,
-            labelColor,
             showSelectAll,
             disabled,
             errorText,
             helperText,
             columns,
-            fullWidth,
-            parentHasError
+            required,
+            validator,
+            parentHasError,
+            ...wrapperProps
         } = props;
 
-        const checkboxGroupId = useMemo(() => id || label, [id, label]),
-            hasError = useMemo(() => !!errorText || parentHasError, [errorText, parentHasError]),
+        const [builtInErrorMessage, setErrorMessage] = useState(''),
+            checkboxGroupId = useMemo(() => id || label, [id, label]),
+            checkboxGroupRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
+            hasError = useMemo(() => !!errorText || !!builtInErrorMessage || parentHasError, [
+                builtInErrorMessage,
+                errorText,
+                parentHasError
+            ]),
             hasHelperOrErrorText = useMemo(() => !!(errorText || helperText), [errorText, helperText]),
             allChildValues = useMemo(() => getValuesFromOptions(options), [options]),
             areAllValuesSelected = useMemo(() => allChildValues.every(val => values.includes(val)), [options, values]),
@@ -37,12 +43,32 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                 allChildValues
             ]);
 
+        const validate = useCallback(
+                selectedValues => {
+                    const message =
+                        (validator && validator(selectedValues)) ||
+                        (required && selectedValues.length === 0 && 'Please select at least one option.') ||
+                        '';
+                    setErrorMessage(message);
+                },
+                [validator]
+            ),
+            onBlur = useCallback(
+                (event: React.FocusEvent<HTMLDivElement>) => {
+                    const currentTarget = event.currentTarget;
+                    setTimeout(() => !currentTarget.contains(document.activeElement) && validate(values), 0);
+                    props.onBlur && props.onBlur(event);
+                },
+                [validate, values, props.onBlur]
+            );
+
         const handleOptionClick = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     event.stopPropagation();
                     const item = event.target.name,
                         isChecked = event.target.checked,
                         newValues = isChecked ? [...values, item] : values.filter(vl => vl !== item);
+                    validate(newValues);
                     onChange(newValues);
                 },
                 [values, onChange]
@@ -51,14 +77,17 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                 const newValues = areAllValuesSelected
                     ? values.filter(val => !allChildValues.includes(val))
                     : Array.from(new Set([...values, ...allChildValues]));
+                validate(newValues);
                 onChange(newValues);
             }, [options, values, onChange]);
 
         return (
-            <Styled.CheckboxGroupWrapper
-                ref={ref}
+            <SelectorGroup.Wrapper
+                ref={checkboxGroupRef}
+                type="checkbox"
                 id={`${checkboxGroupId}-wrapper`}
-                {...{ fullWidth, disabled, hasError, showSelectAll, hasHelperOrErrorText }}
+                aria-describedby={`${checkboxGroupId}-helper-text`}
+                {...{ ...wrapperProps, hasHelperOrErrorText, onBlur }}
             >
                 {label &&
                     (showSelectAll ? (
@@ -69,31 +98,39 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                             onChange={handleSelectAllClick}
                             indeterminate={indeterminate}
                             id={`${checkboxGroupId}-select-all`}
-                            aria-describedby={`${checkboxGroupId}-helper-text`}
-                            {...{ size, hasError, disabled, labelVariant, labelWeight, labelColor }}
+                            {...{ size, hasError, disabled, labelVariant, labelWeight }}
                         />
                     ) : (
-                        <Text id={`${checkboxGroupId}-label`} textVariant={labelVariant} textWeight={labelWeight} textColor={labelColor}>
+                        <SelectorGroup.Label
+                            id={`${checkboxGroupId}-label`}
+                            type="checkbox"
+                            hasError={hasError}
+                            required={required}
+                            disabled={disabled}
+                            textVariant={labelVariant}
+                            textWeight={labelWeight}
+                        >
                             {label}
-                        </Text>
+                        </SelectorGroup.Label>
                     ))}
-                {(errorText || helperText) && (
-                    <Styled.CheckboxGroupHelperText
+                {(errorText || builtInErrorMessage || helperText) && (
+                    <SelectorGroup.HelperText
                         id={`${checkboxGroupId}-helper-text`}
+                        type="checkbox"
                         disabled={disabled}
                         hasError={hasError}
                         isIndented={showSelectAll}
                     >
-                        {errorText || helperText}
-                    </Styled.CheckboxGroupHelperText>
+                        {errorText || builtInErrorMessage || helperText}
+                    </SelectorGroup.HelperText>
                 )}
-                <Styled.CheckboxGroupOptions id={`${checkboxGroupId}-field`} columns={columns} isIndented={showSelectAll}>
+                <SelectorGroup.Options id={`${checkboxGroupId}-options`} columns={columns} isIndented={showSelectAll}>
                     {options.map(option => {
                         return Array.isArray(option.value) ? (
                             <CheckboxGroup
                                 key={option.label}
                                 parentHasError={hasError}
-                                id={`${checkboxGroupId}-${option.label}`}
+                                id={`${option.label}-${checkboxGroupId}`}
                                 {...{
                                     ...props,
                                     showSelectAll: option.showSelectAll ?? true,
@@ -114,24 +151,20 @@ export const CheckboxGroup: SFC<Props> & WithStyle = React.memo(
                                 onChange={handleOptionClick}
                                 disabled={disabled || option.disabled}
                                 hasError={hasError}
-                                id={`${checkboxGroupId}-${option.label}`}
+                                id={`${option.label}-${checkboxGroupId}`}
                             />
                         );
                     })}
-                </Styled.CheckboxGroupOptions>
-            </Styled.CheckboxGroupWrapper>
+                </SelectorGroup.Options>
+            </SelectorGroup.Wrapper>
         );
     })
 );
 
 CheckboxGroup.displayName = 'CheckboxGroup';
-CheckboxGroup.Style = Styled.CheckboxGroupWrapper;
+CheckboxGroup.Style = SelectorGroup.Wrapper;
 CheckboxGroup.defaultProps = {
-    disabled: false,
     values: [],
-    showSelectAll: false,
-    errorText: '',
-    helperText: '',
     columns: 1,
     labelVariant: 'body1',
     labelWeight: 'Medium'
