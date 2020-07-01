@@ -11,7 +11,7 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
         const inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
             [showCloseIcon, setCloseIconState] = useState(false),
             [options, setOptions] = useState(props.options),
-            [isActive, setActive] = useState(true),
+            [isActive, setActive] = useState(false),
             [isIconActive, setIconActive] = useState(false);
 
         useEffect(() => {
@@ -56,7 +56,9 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
                     ref={inputRef}
                 />
                 <Options options={options} variant="filled" onOptionClick={handleOptionClick}></Options>
-                <Styled.CloseIconWrapper>{showCloseIcon && <CloseIcon onClick={clearSearchText} />}</Styled.CloseIconWrapper>
+                <Styled.CloseIconWrapper isIconActive={isIconActive}>
+                    {showCloseIcon && <CloseIcon onClick={clearSearchText} />}
+                </Styled.CloseIconWrapper>
                 <Styled.SearchIconWrapper isIconActive={isIconActive}>
                     <SearchIcon />
                 </Styled.SearchIconWrapper>

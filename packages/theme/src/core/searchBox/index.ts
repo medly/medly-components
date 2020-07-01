@@ -14,10 +14,10 @@ const SearchBox = {
     default: {
         bgColor: colors.white,
         textColor: colors.black,
-        placeholderTextColor: colors.grey[500],
+        placeholderTextColor: colors.grey[600],
         borderColor: colors.grey[500],
         iconBg: colors.grey[100],
-        iconColor: colors.grey[500]
+        iconColor: colors.grey[600]
     },
     hover: {
         borderColor: colors.grey[600],

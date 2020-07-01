@@ -21,106 +21,73 @@ const nonActiveOptionStyle = () => {
     `;
 };
 
-const activeSearchIcon = () => {
-    return css`
-        path {
-            fill: ${({ theme }) => theme.searchBox.active.iconColor};
-        }
-
-        &:hover {
-            background-color: ${({ theme }) => theme.searchBox.active.iconBg};
-        }
-    `;
-};
-
-const nonActiveSearchIcon = () => {
-    return css`
-        &:hover {
-            background-color: ${({ theme }) => theme.searchBox.default.iconBg};
-        }
-    `;
-};
-
 const activeSearchBoxStyle = () => {
     return css`
-        /* border-radius: 2rem 2rem 0 0; */
         position: absolute;
         z-index: 10000;
+    `;
+};
 
-        /* border: solid 0.1rem ${({ theme }) => theme.searchBox.active.borderColor}; */
-        border-bottom: 0;
+export const SearchIconWrapper = styled('span')<Props & { isIconActive?: boolean }>`
+    ${SvgIcon} {
+        &:hover {
+            background: ${({ theme, isIconActive }) => (isIconActive ? theme.searchBox.active.iconBg : 'transparent')};
+            border-radius: 2.5rem;
+        }
+    }
+`;
 
-        &:hover,
-        &:focus {
-            border-bottom: 0;
+const getSearchIconAndBorderStyle = (color: string) => {
+    return css`
+        border-color: ${color};
+        ${SearchIconWrapper} {
+            ${SvgIcon} {
+                * {
+                    fill: ${color};
+                }
+            }
         }
     `;
 };
 
-const nonActiveSearchBoxStyle = () => {
+const nonActiveSearchBoxStyle = ({ theme }: Props) => {
+    const {
+        searchBox: { hover, active }
+    } = theme;
+
     return css`
-        /* border-radius: 2.5rem; */
-        border: 0 none;
-
-        /* border: 0.1rem solid ${({ theme }) => theme.searchBox.default.borderColor}; */
-
-        &:hover {
-            /* border: solid 0.1rem ${({ theme }) => theme.searchBox.hover.borderColor}; */
-
-            /* box-shadow: ${({ theme }) => theme.searchBox.hover.boxShadow}; */
+        &:focus-within {
+            ${getSearchIconAndBorderStyle(active.borderColor)};
         }
-
-        &:focus {
-            /* border: solid 0.1rem ${({ theme }) => theme.searchBox.active.borderColor}; */
-
-            /* box-shadow: ${({ theme }) => theme.searchBox.active.boxShadow}; */
-
-            ${SvgIcon} {
-                * {
-                    fill: ${({ theme }) => theme.searchBox.active.borderColor};
-                }
-            }
-
-            &::placeholder {
-                color: ${({ theme }) => theme.searchBox.active.placeholderTextColor};
-            }
+        &:hover {
+            ${getSearchIconAndBorderStyle(hover.borderColor)};
+        }
+        &:focus-within:hover {
+            ${getSearchIconAndBorderStyle(active.borderColor)};
         }
     `;
 };
 
 export const SearchBoxWrapper = styled('div')<Props & { isActive?: boolean; isIconActive?: boolean }>`
-    position: relative;
     width: 25.6rem;
     border-radius: 2.5rem;
-    border: 0.1rem solid red;
+    border: 0.1rem solid ${({ theme }) => theme.searchBox.default.borderColor};
     display: flex;
     flex-direction: row;
-    align-items: center;
-
-    &::after {
-        content: '';
-        position: absolute;
-        border-top: 1px solid ${({ theme }) => theme.searchBox.default.borderColor};
-        width: 21.6rem;
-        top: 4.7rem;
-        left: 2rem;
-        padding: 0;
-        margin: 0;
-        z-index: 10000;
-        display: ${({ isActive }) => (isActive ? 'block' : 'none')};
-    }
+    outline: none;
 
     span {
-        width: 48px;
-        height: 48px;
-        text-align: center;
+        width: 4.8rem;
+        height: 4.8rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     ${SvgIcon} {
         cursor: pointer;
-        font-size: 2rem;
-        padding: 2px;
-        margin-top: 1.1rem;
+        font-size: 2.4rem;
+        padding: 0.4rem;
 
         * {
             fill: ${({ theme }) => theme.searchBox.default.iconColor};
@@ -140,33 +107,46 @@ export const SearchBoxWrapper = styled('div')<Props & { isActive?: boolean; isIc
             font-size: 1.4rem;
         }
     }
-`;
-
-export const SearchBox = styled('input')<Props & { isActive?: boolean }>`
-    height: ${getSearchBoxSize};
-    box-sizing: border-box;
-    background: transparent;
-    flex-grow: 1;
-    font-size: 1.4rem;
-    padding-left: 2rem;
-    outline: none;
-    color: ${({ theme }) => theme.searchBox.default.textColor};
-
-    &::placeholder {
-        color: ${({ theme }) => theme.searchBox.default.placeholderTextColor};
-    }
 
     ${({ isActive }) => (isActive ? activeSearchBoxStyle : nonActiveSearchBoxStyle)};
 `;
 
-export const CloseIconWrapper = styled('span')`
-    /* position: absolute;
-    right: 3.5rem; */
+export const SearchBox = styled('input')<Props & { isActive?: boolean }>`
+    background: transparent;
+    font-size: 1.4rem;
+    padding: 0;
+    padding-left: 2rem;
+    outline: none;
+    color: ${({ theme, isActive }) => (isActive ? theme.colors.black : theme.searchBox.default.textColor)};
+    border: 0 none;
+
+    &::placeholder {
+        color: ${({ theme }) => theme.searchBox.default.placeholderTextColor};
+    }
+    &:focus {
+        &::placeholder {
+            color: ${({ theme }) => theme.searchBox.active.placeholderTextColor};
+        }
+    }
 `;
 
-export const SearchIconWrapper = styled('span')<Props & { isIconActive?: boolean }>`
+export const CloseIconWrapper = styled('span')<{ isIconActive?: boolean }>`
     ${SvgIcon} {
-        ${({ isIconActive }) => (isIconActive ? activeSearchIcon : nonActiveSearchIcon)};
+        &:hover {
+            background: ${({ theme }) => theme.searchBox.default.iconBg};
+            border-radius: 2.5rem;
+            * {
+                fill: ${({ theme }) => theme.colors.black};
+            }
+        }
+    }
+    &::after {
+        content: '';
+        width: 1px;
+        height: 3.2rem;
+        background: ${({ theme }) => theme.colors.grey[200]};
+        display: ${({ isIconActive }) => (isIconActive ? 'block' : 'none')};
+        margin-left: 0.8rem;
     }
 `;
 
