@@ -15,6 +15,8 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'boxSize'>, Wit
     maxHeight?: string;
     /*** callback to be trigger on selecting the option */
     onOptionSelected?: (value: any) => void;
+    /*** callback for providing the input values */
+    onChange?: (event: any) => void;
 
-    getOptions?: () => void;
+    onClear?: () => void;
 }

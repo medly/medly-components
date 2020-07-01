@@ -2,7 +2,7 @@ import { SvgIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
 import { css, styled } from '@medly-components/utils';
 import Options from '../SingleSelect/Options';
-import { Option, Props } from './types';
+import { Props } from './types';
 
 const getSearchBoxSize = ({ theme, searchBoxSize }: Props) => theme.searchBox.sizes[searchBoxSize].height;
 
@@ -88,15 +88,16 @@ export const CloseIconWrapper = styled('span')<{ isIconActive?: boolean }>`
     }
 `;
 
-export const SearchBoxWrapper = styled('div')<Props & { isActive?: boolean; isIconActive?: boolean; options?: Option[] }>`
+export const SearchBoxWrapper = styled('div')<Props & { isActive?: boolean; isIconActive?: boolean; areOptionsVisible?: boolean }>`
     width: 25.6rem;
-    border-radius: ${({ options }) => (options.length > 0 ? '2.5rem 2.5rem 0 0' : '2.5rem')};
+    border-radius: ${({ areOptionsVisible }) => (areOptionsVisible ? '2.5rem 2.5rem 0 0' : '2.5rem')};
     border: 0.1rem solid ${({ theme }) => theme.searchBox.default.borderColor};
     display: flex;
     flex-direction: row;
     outline: none;
     box-sizing: border-box;
-    border-bottom: ${({ options, theme }) => (options.length > 0 ? '0 none' : `0.1rem solid ${theme.searchBox.default.borderColor}`)};
+    border-bottom: ${({ areOptionsVisible, theme }) =>
+        areOptionsVisible ? '0 none' : `0.1rem solid ${theme.searchBox.default.borderColor}`};
 
     ${CloseIconWrapper}, ${SearchIconWrapper} {
         width: 4.8rem;
@@ -117,7 +118,7 @@ export const SearchBoxWrapper = styled('div')<Props & { isActive?: boolean; isIc
     }
 
     ${Options.Style} {
-        top: 4.8rem;
+        top: 4.6rem;
         border-radius: 0 0 2.5rem 2.5rem;
         box-shadow: none;
         border: none;
@@ -128,7 +129,7 @@ export const SearchBoxWrapper = styled('div')<Props & { isActive?: boolean; isIc
 
         &::before {
             content: '';
-            display: ${({ options }) => (options.length > 0 ? 'block' : 'none')};
+            display: ${({ areOptionsVisible }) => (areOptionsVisible ? 'block' : 'none')};
             border-top: 1px solid ${({ theme }) => theme.colors.grey[200]};
             width: 90%;
             height: 1px;

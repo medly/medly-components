@@ -6,66 +6,69 @@ import { Option } from '../SingleSelect/types';
 import * as Styled from './SearchBox.styled';
 import { Props } from './types';
 
-export const SearchBox: SFC<Props> & WithStyle = React.memo(
-    React.forwardRef((props, ref) => {
-        const inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
-            [showCloseIcon, setCloseIconState] = useState(false),
-            [options, setOptions] = useState(props.options),
-            [isActive, setActive] = useState(false),
-            [isIconActive, setIconActive] = useState(false);
+export const SearchBox: SFC<Props> & WithStyle = React.forwardRef((props, ref) => {
+    const inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
+        [showCloseIcon, setCloseIconState] = useState(false),
+        [isActive, setActive] = useState(false),
+        [isIconActive, setIconActive] = useState(false),
+        [areOptionsVisible, setOptionsVisibilityState] = useState(false);
 
-        useEffect(() => {
-            setOptions(props.options);
-            props.options.length > 0 ? setActive(true) : setActive(false);
-        });
+    useEffect(() => {
+        props.options.length > 0 ? setActive(true) : setActive(false);
+    }, [props.options]);
 
-        const handleChange = useCallback(() => {
-                const canSearch = inputRef.current.value.length >= 3;
+    const clearSearchText = useCallback(() => {
+            inputRef.current.value = null;
+            setCloseIconState(false);
+            setActive(false);
+            setIconActive(false);
+            setOptionsVisibilityState(false);
+            props.onChange(null);
+        }, []),
+        handleChange = useCallback(
+            (event: any) => {
+                const canSearch = inputRef.current.value.length > 0;
                 setCloseIconState(true);
                 setIconActive(true);
                 if (canSearch) {
-                    props.getOptions();
+                    setOptionsVisibilityState(true);
+                    props.onChange(event.target.value);
+                } else {
+                    clearSearchText();
                 }
-            }, [inputRef.current]),
-            clearSearchText = useCallback(() => {
-                inputRef.current.value = null;
-                setCloseIconState(false);
-                setActive(false);
-                setIconActive(false);
-                setOptions([]);
-            }, []),
-            handleOptionClick = useCallback(
-                (option: Option) => {
-                    if (!option.disabled && !Array.isArray(option.value)) {
-                        inputRef.current.value = option.label;
-                        setActive(false);
-                        setIconActive(false);
-                        setOptions([]);
-                    }
-                },
-                [inputRef.current]
-            );
-
-        return (
-            <Styled.SearchBoxWrapper {...props} isActive={isActive}>
-                <Styled.SearchBox
-                    isActive={isActive}
-                    placeholder={props.placeholder}
-                    searchBoxSize={'M'}
-                    onInput={handleChange}
-                    ref={inputRef}
-                />
-                <Options options={options} variant="filled" onOptionClick={handleOptionClick}></Options>
-                <Styled.CloseIconWrapper isIconActive={isIconActive}>
-                    {showCloseIcon && <CloseIcon onClick={clearSearchText} />}
-                </Styled.CloseIconWrapper>
-                <Styled.SearchIconWrapper isIconActive={isIconActive}>
-                    <SearchIcon />
-                </Styled.SearchIconWrapper>
-            </Styled.SearchBoxWrapper>
+            },
+            [inputRef.current]
+        ),
+        handleOptionClick = useCallback(
+            (option: Option) => {
+                if (!option.disabled && !Array.isArray(option.value)) {
+                    inputRef.current.value = option.label;
+                    setActive(false);
+                    setIconActive(false);
+                }
+            },
+            [inputRef.current]
         );
-    })
-);
+
+    return (
+        <Styled.SearchBoxWrapper {...props} isActive={isActive} areOptionsVisible={areOptionsVisible}>
+            <Styled.SearchBox
+                isActive={isActive}
+                placeholder={props.placeholder}
+                searchBoxSize={'M'}
+                onInput={handleChange}
+                ref={inputRef}
+            />
+            <Options options={props.options} variant="filled" onOptionClick={handleOptionClick}></Options>
+            <Styled.CloseIconWrapper isIconActive={isIconActive}>
+                {showCloseIcon && <CloseIcon onClick={clearSearchText} />}
+            </Styled.CloseIconWrapper>
+            <Styled.SearchIconWrapper isIconActive={isIconActive}>
+                <SearchIcon />
+            </Styled.SearchIconWrapper>
+        </Styled.SearchBoxWrapper>
+    );
+});
 
 SearchBox.displayName = 'SearchBox';
 SearchBox.Style = Styled.SearchBox;

@@ -1,9 +1,9 @@
-import { optionsArray, boxSize } from './SearchBox.stories.tsx';
+import { useState, useEffect } from 'react';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import { optionsArray, boxSize } from './SearchBox.stories.tsx';
 import * as stories from './SearchBox.stories';
 import { select } from '@storybook/addon-knobs';
 import { SearchBox } from './SearchBox';
-import { useState } from 'react';
 
 <Meta title="Core" component={SearchBox} />
 
@@ -15,10 +15,39 @@ import { useState } from 'react';
     <Story name="SearchBox">
         {() => {
             const [options, setOptions] = useState([]);
-            const onGetOptions = () => {
-                setOptions(optionsArray);
+            const onGetOptions = value => {
+                if (value) {
+                    setOptions(state => {
+                        return [...optionsArray];
+                    });
+                } else {
+                    setOptions(state => {
+                        return new Array();
+                    });
+                }
             };
-            return <SearchBox placeholder="Search" getOptions={onGetOptions} options={options} boxSize={select('boxSize', boxSize, 'S')} />;
+            const onClear = () => {
+                setOptions([]);
+            };
+            return (
+                <SearchBox
+                    placeholder="Search"
+                    onClear={onClear}
+                    onChange={onGetOptions}
+                    options={options}
+                    boxSize={select('boxSize', boxSize, 'S')}
+                />
+            );
+        }}
+    </Story>
+</Preview>
+
+<Preview withToolbar>
+    <Story name="SearchBoxWithoutOnClear">
+        {() => {
+            const [value, setValue] = useState([]);
+            const onGetOptions = value => setValue(value ? [...optionsArray] : []);
+            return <SearchBox placeholder="Search" onChange={onGetOptions} options={value} boxSize={select('boxSize', boxSize, 'S')} />;
         }}
     </Story>
 </Preview>
