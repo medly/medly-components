@@ -23,9 +23,9 @@ export const HeadCellStyled = styled(Cell.Style)`
     align-items: flex-end;
 
     ${Text.Style} {
-        overflow: auto;
-        white-space: unset;
-        text-overflow: unset;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
         width: 100%;
         text-align: center;
     }

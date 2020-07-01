@@ -33,6 +33,30 @@ export const LoadingDiv = styled('div')`
     position: relative;
 `;
 
+const wrapTextStyle = () => css`
+    ${Text.Style} {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+`;
+
+const frozenStyle = () => css`
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background-color: inherit;
+
+    * {
+        z-index: 2;
+    }
+`;
+
+const rowSelectionCellStyle = () => css`
+    cursor: default;
+    user-select: none;
+`;
+
 export const Cell = styled('td')<StyledProps>`
     opacity: ${({ hidden }) => (hidden ? 0 : 1)};
     padding: ${({ hidden }) => (hidden ? '0' : '5px 10px')};
@@ -43,12 +67,6 @@ export const Cell = styled('td')<StyledProps>`
     justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : align === 'center' ? 'center' : 'flex-start')};
     align-items: center;
     overflow: hidden;
-    ${({ isRowSelectionCell }) =>
-        isRowSelectionCell &&
-        css`
-            cursor: default;
-            user-select: none;
-        `};
 
     ${Checkbox.Style} {
         display: flex;
@@ -64,16 +82,10 @@ export const Cell = styled('td')<StyledProps>`
         white-space: nowrap;
     }
 
-    ${props =>
-        props.frozen &&
-        css`
-            position: sticky;
-            left: 0;
-            z-index: 2;
-            background-color: inherit;
-
-            * {
-                z-index: 2;
-            }
-        `}
+    ${props => props.wrapText && wrapTextStyle}
+    ${props => props.isRowSelectionCell && rowSelectionCellStyle};
+    ${props => props.frozen && frozenStyle}
 `;
+Cell.defaultProps = {
+    wrapText: true
+};

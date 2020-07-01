@@ -6,6 +6,7 @@ export interface StyledProps {
     frozen?: boolean;
     align?: 'left' | 'right' | 'center';
     isRowSelectionCell?: boolean;
+    wrapText?: boolean;
 }
 
 export interface Props extends StyledProps, HTMLProps<HTMLTableCellElement> {

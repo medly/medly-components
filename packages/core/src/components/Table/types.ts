@@ -40,6 +40,8 @@ export interface ColumnConfig {
     component?: React.FC<{ data: any; rowId?: any; disabled?: boolean }>;
     /** This will be handled internally */
     size?: string;
+    /** Set it true to wrap column text */
+    wrapText?: boolean;
 }
 
 export interface GridTemplateProps {

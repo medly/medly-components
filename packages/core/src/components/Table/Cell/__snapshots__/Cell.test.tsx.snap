@@ -54,6 +54,12 @@ exports[`Cell should not render text if hidden property is given 1`] = `
   white-space: nowrap;
 }
 
+.c0 .c1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 <div>
   <td
     class="c0"
@@ -251,6 +257,12 @@ exports[`Cell should render checkbox properly 1`] = `
   white-space: nowrap;
 }
 
+.c0 .c3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 <div>
   <td
     class="c0"
@@ -360,6 +372,12 @@ exports[`Cell should render frozen text properly 1`] = `
   white-space: nowrap;
 }
 
+.c0 .c1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .c0 * {
   z-index: 2;
 }
@@ -428,6 +446,12 @@ exports[`Cell should render text properly 1`] = `
 }
 
 .c0 .c1 {
+  white-space: nowrap;
+}
+
+.c0 .c1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
 }
 
