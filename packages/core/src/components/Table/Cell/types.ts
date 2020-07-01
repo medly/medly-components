@@ -8,7 +8,7 @@ export interface StyledProps {
     isRowSelectionCell?: boolean;
 }
 
-export interface Props extends StyledProps, HTMLProps<HTMLDivElement> {
+export interface Props extends StyledProps, HTMLProps<HTMLTableCellElement> {
     data: any;
     rowId: any;
     config: ColumnConfig;
@@ -19,4 +19,5 @@ export interface Props extends StyledProps, HTMLProps<HTMLDivElement> {
     isRowSelectionDisabled?: boolean;
     onRowSelection?: (id: number) => void;
     addColumnMaxSize: (field: string, value: number) => void;
+    as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
 }

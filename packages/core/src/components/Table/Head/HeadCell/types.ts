@@ -11,4 +11,5 @@ export interface HeadCellProps {
     defaultSortOrder?: SortOrder;
     onWidthChange?: (width: number, key: string) => void;
     onSortChange?: (field: string, order: SortOrder) => void;
+    as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
 }

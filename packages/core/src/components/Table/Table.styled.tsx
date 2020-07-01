@@ -1,5 +1,4 @@
 import { css, styled } from '@medly-components/utils';
-import Row from './Row';
 import { TableStyledProps } from './types';
 
 export const getBorder = (align: 'left' | 'right' | 'top' | 'bottom') => css`
@@ -15,25 +14,16 @@ export const getBorder = (align: 'left' | 'right' | 'top' | 'bottom') => css`
     transform: ${align === 'left' || align === 'right' ? 'translateY(-50%)' : `translateX(-50%) `};
 `;
 
-export const TableStyled = styled('ol')<TableStyledProps>`
+export const TableStyled = styled('table')<TableStyledProps>`
     margin: 0;
     padding: 0;
     overflow: auto;
+    display: block;
     border: 1px solid ${({ theme }) => theme.table.borderColor};
     border-radius: 0.8rem;
 
     * {
         box-sizing: border-box;
-    }
-
-    ${Row} {
-        &:first-of-type {
-            user-select: none;
-            position: sticky;
-            top: 0;
-            z-index: 2;
-            align-items: end;
-        }
     }
 
     &::-webkit-scrollbar {

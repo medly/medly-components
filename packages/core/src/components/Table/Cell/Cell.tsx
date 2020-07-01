@@ -17,7 +17,8 @@ const Cell: React.FC<Props> & WithStyle = React.memo(props => {
             isRowSelectionDisabled,
             onRowSelection,
             dottedFieldName,
-            isLoading
+            isLoading,
+            ...restProps
         } = props,
         isRowSelectionCell = useMemo(() => config.field === 'medly-table-checkbox', [config.field]);
 
@@ -71,6 +72,7 @@ const Cell: React.FC<Props> & WithStyle = React.memo(props => {
             align={textAlign}
             onClick={handleCellClick}
             isRowSelectionCell={isRowSelectionCell}
+            {...restProps}
         >
             {isLoading ? <Styled.LoadingDiv ref={childRef} /> : isRowSelectionCell ? rowSelectionCheckbox : formattedCell()}
         </Styled.Cell>

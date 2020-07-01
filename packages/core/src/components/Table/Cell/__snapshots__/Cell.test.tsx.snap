@@ -39,6 +39,9 @@ exports[`Cell should not render text if hidden property is given 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin: 0;
   padding: 0;
 }
@@ -52,7 +55,7 @@ exports[`Cell should not render text if hidden property is given 1`] = `
 }
 
 <div>
-  <div
+  <td
     class="c0"
     hidden=""
   >
@@ -61,7 +64,7 @@ exports[`Cell should not render text if hidden property is given 1`] = `
     >
       Dummy
     </span>
-  </div>
+  </td>
 </div>
 `;
 
@@ -233,6 +236,9 @@ exports[`Cell should render checkbox properly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin: 0;
   padding: 0;
 }
@@ -246,7 +252,7 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 <div>
-  <div
+  <td
     class="c0"
   >
     
@@ -291,7 +297,7 @@ exports[`Cell should render checkbox properly 1`] = `
         </div>
       </div>
     </label>
-  </div>
+  </td>
 </div>
 `;
 
@@ -339,6 +345,9 @@ exports[`Cell should render frozen text properly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin: 0;
   padding: 0;
 }
@@ -356,7 +365,7 @@ exports[`Cell should render frozen text properly 1`] = `
 }
 
 <div>
-  <div
+  <td
     class="c0"
   >
     <span
@@ -364,7 +373,7 @@ exports[`Cell should render frozen text properly 1`] = `
     >
       Dummy
     </span>
-  </div>
+  </td>
 </div>
 `;
 
@@ -407,6 +416,9 @@ exports[`Cell should render text properly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin: 0;
   padding: 0;
 }
@@ -420,7 +432,7 @@ exports[`Cell should render text properly 1`] = `
 }
 
 <div>
-  <div
+  <td
     class="c0"
   >
     <span
@@ -428,6 +440,6 @@ exports[`Cell should render text properly 1`] = `
     >
       Dummy
     </span>
-  </div>
+  </td>
 </div>
 `;

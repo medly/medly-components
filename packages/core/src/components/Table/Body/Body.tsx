@@ -6,6 +6,7 @@ import { getGridTemplateColumns } from '../helpers';
 import Row from '../Row';
 import { NoResult } from '../Row/Row.styled';
 import { ColumnConfig } from '../types';
+import { TBody } from './Body.styled';
 import { Props } from './types';
 
 const Body: React.FC<Props> = React.memo(props => {
@@ -32,11 +33,17 @@ const Body: React.FC<Props> = React.memo(props => {
                 const fieldName = `${field && `${field}.`}${config.field}`;
 
                 return config.children ? (
-                    <GroupCell key={index} hidden={config.hidden} gridTemplateColumns={getGridTemplateColumns(config.children)}>
+                    <GroupCell
+                        as={field ? 'div' : 'td'}
+                        key={index}
+                        hidden={config.hidden}
+                        gridTemplateColumns={getGridTemplateColumns(config.children)}
+                    >
                         {getRow(rowData[config.field], config.children, config.field)}
                     </GroupCell>
                 ) : (
                     <Cell
+                        as={field ? 'div' : 'td'}
                         isLoading={isLoading}
                         isRowClickDisabled={rowData[rowClickDisableKey]}
                         isRowSelectionDisabled={rowData[rowSelectionDisableKey]}
@@ -61,7 +68,7 @@ const Body: React.FC<Props> = React.memo(props => {
     }
 
     return (
-        <>
+        <TBody>
             {data.map((row, index) => {
                 return (
                     <Row
@@ -74,7 +81,7 @@ const Body: React.FC<Props> = React.memo(props => {
                     </Row>
                 );
             })}
-        </>
+        </TBody>
     );
 });
 Body.displayName = 'Body';

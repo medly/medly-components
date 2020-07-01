@@ -2,14 +2,13 @@ import { styled } from '@medly-components/utils';
 import { GridTemplateProps } from '../types';
 import { Props } from './types';
 
-export const Row = styled('li').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({
+export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({
     style: {
         gridTemplateColumns
     }
 }))<Props>`
     display: grid;
     position: relative;
-    grid-template-rows: minmax(30px, auto);
     align-items: center;
     cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
 
@@ -27,7 +26,7 @@ export const Row = styled('li').attrs(({ gridTemplateColumns }: GridTemplateProp
 
     &:not(:last-child) {
         & > * {
-            border-bottom: 1px solid #ededed;
+            border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
         }
     }
 `;

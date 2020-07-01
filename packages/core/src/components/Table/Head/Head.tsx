@@ -4,6 +4,7 @@ import { GroupCell, GroupCellTitle } from '../GroupCell';
 import { changeSize, getGridTemplateColumns } from '../helpers';
 import Row from '../Row';
 import { ColumnConfig, SortOrder } from '../types';
+import { THead } from './Head.styled';
 import HeadCell from './HeadCell';
 import { Props } from './types';
 
@@ -53,6 +54,7 @@ const Head: React.FC<Props> = React.memo(props => {
                     const fieldName = field ? `${field}.${config.field}` : config.field;
                     return config.children ? (
                         <GroupCell
+                            as={field ? 'div' : 'th'}
                             showBorders
                             key={index}
                             hidden={config.hidden}
@@ -65,6 +67,7 @@ const Head: React.FC<Props> = React.memo(props => {
                         </GroupCell>
                     ) : (
                         <HeadCell
+                            as={field ? 'div' : 'th'}
                             fitContent={config.fitContent}
                             columnMaxSize={maxColumnSizes[fieldName]}
                             sortField={sortField}
@@ -84,7 +87,11 @@ const Head: React.FC<Props> = React.memo(props => {
             [sortField, maxColumnSizes, selectAllCheckBox]
         );
 
-    return <Row gridTemplateColumns={getGridTemplateColumns(columns)}>{headCell(columns)}</Row>;
+    return (
+        <THead>
+            <Row gridTemplateColumns={getGridTemplateColumns(columns)}>{headCell(columns)}</Row>
+        </THead>
+    );
 });
 Head.displayName = 'Head';
 export default Head;

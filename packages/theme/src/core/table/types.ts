@@ -13,6 +13,7 @@ export interface TableTheme {
         shadowColor: string;
     };
     header: {
+        bgColor: string;
         cell: {
             bgColor: {
                 default: string;

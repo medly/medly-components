@@ -50,7 +50,7 @@ export interface TableStyledProps {
     isRowClickable?: boolean;
 }
 
-export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'> {
+export interface Props extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type'> {
     /** Table data */
     data: Data[];
     /** Column configuration */

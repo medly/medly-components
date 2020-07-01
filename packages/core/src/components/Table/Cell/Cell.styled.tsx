@@ -33,7 +33,7 @@ export const LoadingDiv = styled('div')`
     position: relative;
 `;
 
-export const Cell = styled('div')<StyledProps>`
+export const Cell = styled('td')<StyledProps>`
     opacity: ${({ hidden }) => (hidden ? 0 : 1)};
     padding: ${({ hidden }) => (hidden ? '0' : '5px 10px')};
     position: relative;
@@ -52,6 +52,7 @@ export const Cell = styled('div')<StyledProps>`
 
     ${Checkbox.Style} {
         display: flex;
+        flex: 1;
         margin: 0;
         padding: 0;
         ${SvgIcon} {

@@ -9,13 +9,14 @@ const table: TableTheme = {
     scrollBarColor: colors.grey[400],
     row: {
         bgColor: {
-            odd: colors.white,
-            even: colors.grey[50],
+            odd: colors.grey[50],
+            even: colors.white,
             disabled: colors.grey[100]
         },
         shadowColor: 'rgba(96, 120, 144, 0.35)'
     },
     header: {
+        bgColor: colors.white,
         cell: {
             bgColor: {
                 default: colors.white,

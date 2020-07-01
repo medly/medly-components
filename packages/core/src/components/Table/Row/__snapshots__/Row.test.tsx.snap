@@ -4,7 +4,6 @@ exports[`Row should render NoResult properly 1`] = `
 .c0 {
   display: grid;
   position: relative;
-  grid-template-rows: minmax(30px,auto);
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -15,23 +14,23 @@ exports[`Row should render NoResult properly 1`] = `
 }
 
 .c0:nth-child(odd) > * {
-  background-color: #ffffff;
-}
-
-.c0:nth-child(even) > * {
   background-color: #F7F8F9;
 }
 
+.c0:nth-child(even) > * {
+  background-color: #ffffff;
+}
+
 .c0:not(:last-child) > * {
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #C7D0D8;
 }
 
 <div>
-  <li
+  <tr
     class="sc-AxjAm c0"
   >
     Dummy
-  </li>
+  </tr>
 </div>
 `;
 
@@ -39,7 +38,6 @@ exports[`Row should render row properly 1`] = `
 .c0 {
   display: grid;
   position: relative;
-  grid-template-rows: minmax(30px,auto);
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -48,22 +46,22 @@ exports[`Row should render row properly 1`] = `
 }
 
 .c0:nth-child(odd) > * {
-  background-color: #ffffff;
-}
-
-.c0:nth-child(even) > * {
   background-color: #F7F8F9;
 }
 
+.c0:nth-child(even) > * {
+  background-color: #ffffff;
+}
+
 .c0:not(:last-child) > * {
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #C7D0D8;
 }
 
 <div>
-  <li
+  <tr
     class="c0"
   >
     Dummy
-  </li>
+  </tr>
 </div>
 `;
