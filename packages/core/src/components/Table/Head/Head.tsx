@@ -50,13 +50,13 @@ const Head: React.FC<Props> = React.memo(props => {
         ),
         headCell = useCallback(
             (configs: ColumnConfig[], field = '') =>
-                configs.map((config, index) => {
+                configs.map(config => {
                     const fieldName = field ? `${field}.${config.field}` : config.field;
                     return config.children ? (
                         <GroupCell
-                            as={field ? 'div' : 'th'}
                             showBorders
-                            key={index}
+                            as={field ? 'div' : 'th'}
+                            key={config.field}
                             hidden={config.hidden}
                             gridTemplateColumns={getGridTemplateColumns(config.children)}
                         >
@@ -68,14 +68,14 @@ const Head: React.FC<Props> = React.memo(props => {
                     ) : (
                         <HeadCell
                             as={field ? 'div' : 'th'}
+                            key={fieldName}
+                            field={fieldName}
                             fitContent={config.fitContent}
                             columnMaxSize={maxColumnSizes[fieldName]}
                             sortField={sortField}
                             frozen={config.frozen}
                             hidden={config.hidden}
                             sortable={config.sortable}
-                            key={index}
-                            field={fieldName}
                             defaultSortOrder={defaultSortOrder}
                             onSortChange={handleSortChange}
                             onWidthChange={handleWidthChange}

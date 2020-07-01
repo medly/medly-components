@@ -23,10 +23,7 @@ const Cell: React.FC<Props> & WithStyle = React.memo(props => {
         isRowSelectionCell = useMemo(() => config.field === 'medly-table-checkbox', [config.field]);
 
     useEffect(() => {
-        if (childRef.current) {
-            const size = childRef.current.clientWidth;
-            !isLoading && addColumnMaxSize(dottedFieldName, size);
-        }
+        childRef.current && !isLoading && addColumnMaxSize(dottedFieldName, childRef.current.clientWidth);
     }, [childRef.current]);
 
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
@@ -61,9 +58,8 @@ const Cell: React.FC<Props> & WithStyle = React.memo(props => {
                 default:
                     return <Text ref={childRef}>{data}</Text>;
             }
-        }, [data, rowId, isLoading, isRowClickDisabled]);
-
-    const textAlign = useMemo(() => config.align || (config.formatter === 'numeric' ? 'right' : 'left'), []);
+        }, [data, rowId, isLoading, isRowClickDisabled]),
+        textAlign = useMemo(() => config.align || (config.formatter === 'numeric' ? 'right' : 'left'), []);
 
     return (
         <Styled.Cell

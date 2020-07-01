@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import Text from '../../Text';
 import Cell from '../Cell';
 import { GroupCell } from '../GroupCell';
@@ -23,19 +23,14 @@ const Body: React.FC<Props> = React.memo(props => {
         isLoading
     } = props;
 
-    const handleRowClick = (rowData: any) => {
-        return onRowClick && !rowData[rowClickDisableKey] ? () => onRowClick(rowData) : undefined;
-    };
-
-    const getRow = useCallback(
-        (rowData: any = {}, configs: ColumnConfig[] = columns, field = '') =>
-            configs.map((config, index) => {
+    const getRow = (rowData: any = {}, configs: ColumnConfig[] = columns, field = '') =>
+            configs.map(config => {
                 const fieldName = `${field && `${field}.`}${config.field}`;
 
                 return config.children ? (
                     <GroupCell
                         as={field ? 'div' : 'td'}
-                        key={index}
+                        key={config.field}
                         hidden={config.hidden}
                         gridTemplateColumns={getGridTemplateColumns(config.children)}
                     >
@@ -43,11 +38,11 @@ const Body: React.FC<Props> = React.memo(props => {
                     </GroupCell>
                 ) : (
                     <Cell
+                        key={fieldName}
                         as={field ? 'div' : 'td'}
                         isLoading={isLoading}
                         isRowClickDisabled={rowData[rowClickDisableKey]}
                         isRowSelectionDisabled={rowData[rowSelectionDisableKey]}
-                        key={index}
                         data={rowData[config.field]}
                         rowId={rowData[rowIdentifier]}
                         dottedFieldName={fieldName}
@@ -56,31 +51,25 @@ const Body: React.FC<Props> = React.memo(props => {
                     />
                 );
             }),
-        [columns, isLoading, rowClickDisableKey, rowSelectionDisableKey, rowIdentifier, selectedRowIds, onRowSelection, addColumnMaxSize]
-    );
+        handleRowClick = (rowData: any) => (onRowClick && !rowData[rowClickDisableKey] ? () => onRowClick(rowData) : undefined);
 
-    if (data.length === 0) {
-        return (
-            <NoResult>
-                <Text>No result</Text>
-            </NoResult>
-        );
-    }
-
-    return (
+    return data.length === 0 ? (
+        <NoResult>
+            <Text>No result</Text>
+        </NoResult>
+    ) : (
         <TBody>
-            {data.map((row, index) => {
-                return (
-                    <Row
-                        disabled={row[rowClickDisableKey]}
-                        key={row.id || index}
-                        onClick={handleRowClick(row)}
-                        gridTemplateColumns={getGridTemplateColumns(columns)}
-                    >
-                        {getRow(row)}
-                    </Row>
-                );
-            })}
+            {data.map((row, index) => (
+                <Row
+                    id={row[rowIdentifier] || index}
+                    key={row[rowIdentifier] || index}
+                    disabled={row[rowClickDisableKey]}
+                    onClick={handleRowClick(row)}
+                    gridTemplateColumns={getGridTemplateColumns(columns)}
+                >
+                    {getRow(row)}
+                </Row>
+            ))}
         </TBody>
     );
 });
