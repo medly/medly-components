@@ -10,10 +10,7 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { onSearchInputChange, options } = props;
         const inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
-            [showCloseIcon, setCloseIconState] = useState(false),
-            [isActive, setActive] = useState(false),
-            [isIconActive, setIconActive] = useState(false),
-            [areOptionsVisible, setOptionsVisibilityState] = useState(false);
+            [isActive, setActive] = useState(false);
 
         useEffect(() => {
             options.length > 0 ? setActive(true) : setActive(false);
@@ -21,24 +18,15 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
 
         const clearSearchText = useCallback(() => {
                 inputRef.current.value = null;
-                setCloseIconState(false);
                 setActive(false);
-                setIconActive(false);
-                setOptionsVisibilityState(false);
                 onSearchInputChange('');
             }, []),
             handleChange = useCallback(
                 (event: any) => {
-                    const canSearch = inputRef.current.value.length > 0;
-                    setCloseIconState(true);
-                    setIconActive(true);
+                    const canSearch = inputRef.current.value.length > 2;
                     if (canSearch) {
-                        setOptionsVisibilityState(true);
                         onSearchInputChange(event.target.value);
                     } else {
-                        setOptionsVisibilityState(false);
-                        setCloseIconState(false);
-                        setIconActive(false);
                         onSearchInputChange('');
                     }
                 },
@@ -49,14 +37,13 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
                     if (!option.disabled && !Array.isArray(option.value)) {
                         inputRef.current.value = option.label;
                         setActive(false);
-                        setIconActive(false);
                     }
                 },
                 [inputRef.current]
             );
 
         return (
-            <Styled.SearchBoxWrapper isActive={isActive} isIconActive={isIconActive} areOptionsVisible={areOptionsVisible}>
+            <Styled.SearchBoxWrapper isActive={isActive}>
                 <Styled.SearchBox
                     isActive={isActive}
                     placeholder={props.placeholder}
@@ -65,10 +52,8 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
                     ref={inputRef}
                 />
                 <Options options={options} variant="filled" onOptionClick={handleOptionClick}></Options>
-                <Styled.CloseIconWrapper isIconActive={isIconActive}>
-                    {showCloseIcon && <CloseIcon onClick={clearSearchText} />}
-                </Styled.CloseIconWrapper>
-                <Styled.SearchIconWrapper isIconActive={isIconActive}>
+                <Styled.CloseIconWrapper isActive={isActive}>{isActive && <CloseIcon onClick={clearSearchText} />}</Styled.CloseIconWrapper>
+                <Styled.SearchIconWrapper isActive={isActive}>
                     <SearchIcon />
                 </Styled.SearchIconWrapper>
             </Styled.SearchBoxWrapper>
@@ -79,5 +64,6 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
 SearchBox.displayName = 'SearchBox';
 SearchBox.Style = Styled.SearchBox;
 SearchBox.defaultProps = {
-    options: []
+    options: [],
+    placeholder: 'Search'
 };
