@@ -1,5 +1,5 @@
 import { styled } from '@medly-components/utils';
-import Row from '../Row';
+import Row from '../Body/Row';
 
 export const THead = styled('thead')`
     display: block;

@@ -1,7 +1,7 @@
 import { SvgIcon } from '@medly-components/icons';
 import { clearMarginPadding, css, styled } from '@medly-components/utils';
 import Text from '../../../Text';
-import Cell from '../../Cell';
+import Cell from '../../Body/Cell';
 import { getBorder } from '../../Table.styled';
 
 const frozen = () => css`

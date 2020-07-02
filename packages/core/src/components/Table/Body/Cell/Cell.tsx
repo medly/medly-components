@@ -1,7 +1,7 @@
 import { WithStyle } from '@medly-components/utils';
 import React, { useCallback, useEffect, useMemo, useRef } from 'react';
-import Checkbox from '../../Checkbox';
-import Text from '../../Text';
+import Checkbox from '../../../Checkbox';
+import Text from '../../../Text';
 import * as Styled from './Cell.styled';
 import { Props } from './types';
 

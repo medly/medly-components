@@ -2,10 +2,10 @@ import React, { useCallback, useMemo, useState } from 'react';
 import Checkbox from '../../Checkbox';
 import { GroupCell, GroupCellTitle } from '../GroupCell';
 import { changeSize, getGridTemplateColumns } from '../helpers';
-import Row from '../Row';
 import { ColumnConfig, SortOrder } from '../types';
 import { THead } from './Head.styled';
 import HeadCell from './HeadCell';
+import HeadRow from './HeadRow';
 import { Props } from './types';
 
 const Head: React.FC<Props> = React.memo(props => {
@@ -89,7 +89,7 @@ const Head: React.FC<Props> = React.memo(props => {
 
     return (
         <THead>
-            <Row gridTemplateColumns={getGridTemplateColumns(columns)}>{headCell(columns)}</Row>
+            <HeadRow gridTemplateColumns={getGridTemplateColumns(columns)}>{headCell(columns)}</HeadRow>
         </THead>
     );
 });

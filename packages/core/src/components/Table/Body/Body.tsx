@@ -1,12 +1,12 @@
 import React from 'react';
 import Text from '../../Text';
-import Cell from '../Cell';
 import { GroupCell } from '../GroupCell';
 import { getGridTemplateColumns } from '../helpers';
-import Row from '../Row';
-import { NoResult } from '../Row/Row.styled';
 import { ColumnConfig } from '../types';
 import { TBody } from './Body.styled';
+import Cell from './Cell';
+import Row from './Row';
+import { NoResult } from './Row/Row.styled';
 import { Props } from './types';
 
 const Body: React.FC<Props> = React.memo(props => {

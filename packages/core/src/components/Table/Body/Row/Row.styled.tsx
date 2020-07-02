@@ -1,5 +1,5 @@
 import { css, styled } from '@medly-components/utils';
-import { GridTemplateProps } from '../types';
+import { GridTemplateProps } from '../../types';
 import { Props } from './types';
 
 const selectedBorder = css`

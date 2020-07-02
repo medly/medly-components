@@ -1,7 +1,7 @@
 import { SvgIcon } from '@medly-components/icons';
 import { css, styled } from '@medly-components/utils';
-import Checkbox from '../../Checkbox';
-import Text from '../../Text';
+import Checkbox from '../../../Checkbox';
+import Text from '../../../Text';
 import { StyledProps } from './types';
 
 export const CustomComponentWrapper = styled('div')``;

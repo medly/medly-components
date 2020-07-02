@@ -1,5 +1,5 @@
 import { HTMLProps } from '@medly-components/utils';
-import { ColumnConfig } from '../types';
+import { ColumnConfig } from '../../types';
 
 export interface StyledProps {
     hidden?: boolean;
