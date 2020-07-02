@@ -4,7 +4,7 @@ export type SearchBoxTheme = {
     sizes: {
         [k in SearchBoxSizes]: {
             height: string;
-            iconPosition: string;
+            iconSize: string;
         };
     };
     default: {
@@ -24,7 +24,7 @@ export type SearchBoxTheme = {
         boxShadow: string;
         placeholderTextColor: string;
         iconColor: string;
-        iconBg: string;    
+        iconBg: string;
     };
     options: {
         boxShadow: string;

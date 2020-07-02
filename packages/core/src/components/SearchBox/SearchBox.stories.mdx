@@ -23,7 +23,7 @@ import { SearchBox } from './SearchBox';
                     placeholder="Search"
                     onSearchInputChange={onSearchInputChangeHandler}
                     options={options}
-                    boxSize={select('boxSize', boxSize, 'S')}
+                    searchBoxSize={select('boxSize', boxSize, 'M')}
                 />
             );
         }}
@@ -37,19 +37,19 @@ import { SearchBox } from './SearchBox';
 ##### Small search text box
 
 <Preview>
-    <SearchBox boxSize="S" />
+    <SearchBox searchBoxSize="S" />
 </Preview>
 
 ##### Medium search text box
 
 <Preview>
-    <SearchBox boxSize="M" />
+    <SearchBox searchBoxSize="M" />
 </Preview>
 
 #### Pending things in story
 
 -   [ ] maxHeight
--   [ ] boxShadow
+-   [x] boxShadow
 -   [ ] UI Styles
 -   [ ] keyboard selection
 -   [ ] onFocus and onBlur
@@ -60,3 +60,8 @@ import { SearchBox } from './SearchBox';
 -   [ ] unit tests
 -   [ ] remove any
 -   [ ] refactor
+
+#### Open question
+
+-   should we handle debounce?
+-   should we handle length for input text?

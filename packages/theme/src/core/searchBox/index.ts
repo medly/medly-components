@@ -4,11 +4,11 @@ const SearchBox = {
     sizes: {
         S: {
             height: '4rem',
-            iconPosition: '0.7rem'
+            iconSize: '2rem'
         },
         M: {
             height: '4.8rem',
-            iconPosition: '1.1rem'
+            iconSize: '2.4rem'
         }
     },
     default: {
@@ -21,17 +21,17 @@ const SearchBox = {
     },
     hover: {
         borderColor: colors.grey[600],
-        boxShadow: '0 0.125rem 0.5rem rgba(colors.grey[600], 0.25)'
+        boxShadow: '0px 2px 8px rgba(96, 120, 144, 0.25)'
     },
     active: {
         borderColor: colors.communityBlue[500],
-        boxShadow: '0 0.125rem 0.5rem rgba(colors.grey[600], 0.25)',
+        boxShadow: '0px 2px 16px rgba(96, 120, 144, 0.25)',
         placeholderTextColor: colors.grey[300],
         iconColor: colors.communityBlue[500],
         iconBg: colors.communityBlue[100]
     },
     options: {
-        boxShadow: '0 0.2rem 1.6rem rgba(colors.grey[600], 0.5)'
+        boxShadow: '0px 2px 16px rgba(96, 120, 144, 0.5)'
     }
 };
 

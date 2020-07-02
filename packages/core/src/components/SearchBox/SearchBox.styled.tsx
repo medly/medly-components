@@ -10,20 +10,20 @@ const activeOptionStyle = () => {
     return css`
         border: solid 0.1rem ${({ theme }) => theme.searchBox.active.borderColor};
         border-top: 0;
-        box-shadow: ${({ theme }) => theme.searchBox.options.boxShadow};
+        box-shadow: 0 8px 16px rgba(96, 120, 144, 0.25);
     `;
 };
 
 const nonActiveOptionStyle = () => {
     return css`
         border: none;
-        box-shadow: none;
     `;
 };
 
 const activeSearchBoxStyle = () => {
     return css`
-        position: absolute;
+        position: relative;
+        box-shadow: 0 -0.8rem 1.6rem rgba(96, 120, 144, 0.25);
     `;
 };
 
@@ -39,7 +39,7 @@ export const SearchIconWrapper = styled('span')<Props & { isActive?: boolean }>`
     }
 `;
 
-const getBorderStyle = ({ isActive, theme }: Props & { isActive?: boolean }) => {
+const getBorderStyle = ({ isActive, searchBoxSize, theme }: Props & { isActive?: boolean }) => {
     const {
         searchBox: { active, default: defaultStyle }
     } = theme;
@@ -47,7 +47,7 @@ const getBorderStyle = ({ isActive, theme }: Props & { isActive?: boolean }) => 
         border: 0.1rem solid;
         border-bottom: ${isActive ? '0 none' : `0.1rem solid `};
         border-color: ${isActive ? active.borderColor : defaultStyle.borderColor};
-        border-radius: ${isActive ? '2.5rem 2.5rem 0 0' : '2.5rem'};
+        border-radius: ${isActive ? (searchBoxSize === 'M' ? '2.5rem 2.5rem 0 0' : '2rem 2rem 0 0') : '4rem'};
     `;
 };
 
@@ -72,17 +72,20 @@ const nonActiveSearchBoxStyle = ({ theme }: Props) => {
     return css`
         &:focus-within {
             ${getSearchIconAndBorderStyle(active.borderColor)};
+            box-shadow: ${active.boxShadow};
         }
         &:hover {
             ${getSearchIconAndBorderStyle(hover.borderColor)};
+            box-shadow: ${hover.boxShadow};
         }
         &:focus-within:hover {
             ${getSearchIconAndBorderStyle(active.borderColor)};
+            box-shadow: ${active.boxShadow};
         }
     `;
 };
 
-export const CloseIconWrapper = styled('span')<{ isActive?: boolean }>`
+export const CloseIconWrapper = styled('span')<Props & { isActive?: boolean }>`
     ${SvgIcon} {
         &:hover {
             background: ${({ theme }) => theme.searchBox.default.iconBg};
@@ -95,7 +98,7 @@ export const CloseIconWrapper = styled('span')<{ isActive?: boolean }>`
     &::after {
         content: '';
         width: 1px;
-        height: 3.2rem;
+        height: ${({ searchBoxSize }) => (searchBoxSize === 'M' ? '3.2rem' : '2.4rem')};
         background: ${({ theme }) => theme.colors.grey[200]};
         display: ${({ isActive }) => (isActive ? 'block' : 'none')};
         margin-left: 0.8rem;
@@ -108,11 +111,12 @@ export const SearchBoxWrapper = styled('div')<Props & { isActive?: boolean }>`
     flex-direction: row;
     outline: none;
     box-sizing: border-box;
+    height: ${({ theme, searchBoxSize }) => theme.searchBox.sizes[searchBoxSize].height};
     ${getBorderStyle};
 
     ${CloseIconWrapper}, ${SearchIconWrapper} {
-        width: 4.8rem;
-        height: 4.8rem;
+        width: ${({ theme, searchBoxSize }) => theme.searchBox.sizes[searchBoxSize].height};
+        height: 100%;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -120,13 +124,13 @@ export const SearchBoxWrapper = styled('div')<Props & { isActive?: boolean }>`
 
     ${SvgIcon} {
         cursor: pointer;
-        font-size: 2.4rem;
-        padding: 0.4rem;
+        font-size: ${({ theme, searchBoxSize }) => theme.searchBox.sizes[searchBoxSize].iconSize};
+        padding: ${({ searchBoxSize }) => (searchBoxSize === 'M' ? '0.4rem' : '0.2rem')};
     }
 
     ${Options.Style} {
-        top: 4.6rem;
-        border-radius: 0 0 2.5rem 2.5rem;
+        top: ${({ searchBoxSize }) => (searchBoxSize === 'M' ? '4.6rem' : '3.8rem')};
+        border-radius: ${({ searchBoxSize }) => (searchBoxSize === 'M' ? '0 0 2.5rem 2.5rem' : '0 0 2rem 2rem')};
         box-shadow: none;
         border: none;
         padding-bottom: ${({ isActive }) => (isActive ? '1.2rem' : '0')};
@@ -145,8 +149,10 @@ export const SearchBoxWrapper = styled('div')<Props & { isActive?: boolean }>`
 
         li {
             padding: 0 2rem;
-            font-size: 1.4rem;
-            line-height: 2.2rem;
+            span {
+                font-size: ${({ searchBoxSize }) => (searchBoxSize === 'M' ? '1.6rem' : '1.4rem')};
+                line-height: ${({ searchBoxSize }) => (searchBoxSize === 'M' ? '2.6rem' : '2.2rem')};
+            }
             &:last-child {
                 border-radius: 0 0 1rem 1rem;
             }
@@ -158,12 +164,15 @@ export const SearchBoxWrapper = styled('div')<Props & { isActive?: boolean }>`
 
 export const SearchBox = styled('input')<Props & { isActive?: boolean }>`
     background: transparent;
-    font-size: 1.4rem;
+    font-size: ${({ searchBoxSize }) => (searchBoxSize === 'M' ? '1.6rem' : '1.4rem')};
+    line-height: ${({ searchBoxSize }) => (searchBoxSize === 'M' ? '2.6rem' : '2.2rem')};
+    color: ${({ theme, isActive }) => (isActive ? theme.colors.black : theme.searchBox.default.textColor)};
     padding: 0;
     padding-left: 2rem;
     outline: none;
-    color: ${({ theme, isActive }) => (isActive ? theme.colors.black : theme.searchBox.default.textColor)};
     border: 0 none;
+    width: 14rem;
+    flex-grow: 1;
 
     &::placeholder {
         color: ${({ theme }) => theme.searchBox.default.placeholderTextColor};
