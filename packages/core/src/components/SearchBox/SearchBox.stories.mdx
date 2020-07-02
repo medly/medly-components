@@ -15,39 +15,17 @@ import { SearchBox } from './SearchBox';
     <Story name="SearchBox">
         {() => {
             const [options, setOptions] = useState([]);
-            const onGetOptions = value => {
-                if (value) {
-                    setOptions(state => {
-                        return [...optionsArray];
-                    });
-                } else {
-                    setOptions(state => {
-                        return new Array();
-                    });
-                }
-            };
-            const onClear = () => {
-                setOptions([]);
+            const onSearchInputChangeHandler = value => {
+                setOptions(value ? [...optionsArray] : []);
             };
             return (
                 <SearchBox
                     placeholder="Search"
-                    onClear={onClear}
-                    onChange={onGetOptions}
+                    onSearchInputChange={onSearchInputChangeHandler}
                     options={options}
                     boxSize={select('boxSize', boxSize, 'S')}
                 />
             );
-        }}
-    </Story>
-</Preview>
-
-<Preview withToolbar>
-    <Story name="SearchBoxWithoutOnClear">
-        {() => {
-            const [value, setValue] = useState([]);
-            const onGetOptions = value => setValue(value ? [...optionsArray] : []);
-            return <SearchBox placeholder="Search" onChange={onGetOptions} options={value} boxSize={select('boxSize', boxSize, 'S')} />;
         }}
     </Story>
 </Preview>
@@ -67,3 +45,17 @@ import { SearchBox } from './SearchBox';
 <Preview>
     <SearchBox boxSize="M" />
 </Preview>
+
+#### Pending things in story
+
+-   [ ] maxHeight
+-   [ ] boxShadow
+-   [ ] UI Styles
+-   [ ] keyboard selection
+-   [ ] onFocus and onBlur
+-   [x] adding useMemo
+-   [ ] onOptionSelected
+-   [ ] introduce size in storybook
+-   [ ] publish in storybook for feedback
+-   [ ] unit tests
+-   [ ] remove any

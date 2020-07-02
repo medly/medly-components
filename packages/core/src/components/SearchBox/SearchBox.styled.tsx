@@ -90,14 +90,15 @@ export const CloseIconWrapper = styled('span')<{ isIconActive?: boolean }>`
 
 export const SearchBoxWrapper = styled('div')<Props & { isActive?: boolean; isIconActive?: boolean; areOptionsVisible?: boolean }>`
     width: 25.6rem;
-    border-radius: ${({ areOptionsVisible }) => (areOptionsVisible ? '2.5rem 2.5rem 0 0' : '2.5rem')};
-    border: 0.1rem solid ${({ theme }) => theme.searchBox.default.borderColor};
     display: flex;
     flex-direction: row;
     outline: none;
     box-sizing: border-box;
-    border-bottom: ${({ areOptionsVisible, theme }) =>
-        areOptionsVisible ? '0 none' : `0.1rem solid ${theme.searchBox.default.borderColor}`};
+    border: 0.1rem solid;
+    border-bottom: ${({ areOptionsVisible }) => (areOptionsVisible ? '0 none' : `0.1rem solid `)};
+    border-color: ${({ areOptionsVisible, theme }) =>
+        areOptionsVisible ? theme.searchBox.active.borderColor : theme.searchBox.default.borderColor};
+    border-radius: ${({ areOptionsVisible }) => (areOptionsVisible ? '2.5rem 2.5rem 0 0' : '2.5rem')};
 
     ${CloseIconWrapper}, ${SearchIconWrapper} {
         width: 4.8rem;
