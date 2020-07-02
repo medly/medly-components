@@ -11,8 +11,10 @@ const table: TableTheme = {
         bgColor: {
             odd: colors.grey[50],
             even: colors.white,
+            selected: colors.communityBlue[200],
             disabled: colors.grey[100]
         },
+        selectedBorderColor: colors.communityBlue[500],
         shadowColor: 'rgba(96, 120, 144, 0.35)'
     },
     header: {

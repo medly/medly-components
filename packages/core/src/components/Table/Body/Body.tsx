@@ -65,6 +65,7 @@ const Body: React.FC<Props> = React.memo(props => {
                     key={row[rowIdentifier] || index}
                     disabled={row[rowClickDisableKey]}
                     onClick={handleRowClick(row)}
+                    isSelected={!isLoading && selectedRowIds.includes(row[rowIdentifier])}
                     gridTemplateColumns={getGridTemplateColumns(columns)}
                 >
                     {getRow(row)}

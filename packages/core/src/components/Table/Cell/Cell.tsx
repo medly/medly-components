@@ -46,7 +46,11 @@ const Cell: React.FC<Props> & WithStyle = React.memo(props => {
         formattedCell = useCallback(() => {
             switch (config.formatter) {
                 case 'boolean':
-                    return <Text ref={childRef}>{data ? 'Yes' : 'No'}</Text>;
+                    return (
+                        <Text ref={childRef} textVariant="body2">
+                            {data ? 'Yes' : 'No'}
+                        </Text>
+                    );
                 case 'react-component': {
                     const Component = config.component;
                     return (
@@ -56,7 +60,11 @@ const Cell: React.FC<Props> & WithStyle = React.memo(props => {
                     );
                 }
                 default:
-                    return <Text ref={childRef}>{data}</Text>;
+                    return (
+                        <Text ref={childRef} textVariant="body2">
+                            {data}
+                        </Text>
+                    );
             }
         }, [data, rowId, isLoading, isRowClickDisabled]),
         textAlign = useMemo(() => config.align || (config.formatter === 'numeric' ? 'right' : 'left'), []);

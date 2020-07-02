@@ -9,7 +9,9 @@ export interface TableTheme {
             odd: string;
             even: string;
             disabled: string;
+            selected: string;
         };
+        selectedBorderColor: string;
         shadowColor: string;
     };
     header: {

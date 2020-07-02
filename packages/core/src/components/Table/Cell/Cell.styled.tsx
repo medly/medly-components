@@ -42,34 +42,27 @@ const wrapTextStyle = () => css`
 `;
 
 const frozenStyle = () => css`
-    position: sticky;
     left: 0;
     z-index: 2;
-    background-color: inherit;
 
     * {
         z-index: 2;
     }
 `;
 
-const rowSelectionCellStyle = () => css`
-    cursor: default;
-    user-select: none;
-`;
-
 export const Cell = styled('td')<StyledProps>`
-    opacity: ${({ hidden }) => (hidden ? 0 : 1)};
-    padding: ${({ hidden }) => (hidden ? '0' : '5px 10px')};
-    position: relative;
-    display: flex;
     width: 100%;
     height: 100%;
-    justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : align === 'center' ? 'center' : 'flex-start')};
-    align-items: center;
+    display: flex;
     overflow: hidden;
+    align-items: center;
+    opacity: ${({ hidden }) => (hidden ? 0 : 1)};
+    position: ${({ frozen }) => (frozen ? 'sticky' : 'relative')};
+    cursor: ${({ isRowSelectionCell }) => isRowSelectionCell && 'default'};
+    padding: ${({ hidden, isRowSelectionCell }) => (hidden ? '0' : isRowSelectionCell ? '1.2rem' : '1.3rem 1.6rem')};
+    justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : align === 'center' ? 'center' : 'flex-start')};
 
     ${Checkbox.Style} {
-        display: flex;
         flex: 1;
         margin: 0;
         padding: 0;
@@ -78,12 +71,7 @@ export const Cell = styled('td')<StyledProps>`
         }
     }
 
-    ${Text.Style} {
-        white-space: nowrap;
-    }
-
     ${props => props.wrapText && wrapTextStyle}
-    ${props => props.isRowSelectionCell && rowSelectionCellStyle};
     ${props => props.frozen && frozenStyle}
 `;
 Cell.defaultProps = {
