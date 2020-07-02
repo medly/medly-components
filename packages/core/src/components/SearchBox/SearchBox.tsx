@@ -34,7 +34,7 @@ export const SearchBox: SFC<Props> & WithStyle = React.forwardRef((props, ref) =
                     setOptionsVisibilityState(true);
                     props.onChange(event.target.value);
                 } else {
-                    clearSearchText();
+                    props.onChange(null);
                 }
             },
             [inputRef.current]
