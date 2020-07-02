@@ -53,7 +53,7 @@ export const SearchBox: SFC<Props> & WithStyle = React.memo(
                 <Styled.CloseIconWrapper isActive={isActive} searchBoxSize={searchBoxSize}>
                     {isActive && <CloseIcon onClick={clearSearchText} />}
                 </Styled.CloseIconWrapper>
-                <Styled.SearchIconWrapper isActive={isActive}>
+                <Styled.SearchIconWrapper isActive={isActive} searchBoxSize={searchBoxSize}>
                     <SearchIcon />
                 </Styled.SearchIconWrapper>
             </Styled.SearchBoxWrapper>
