@@ -18,6 +18,7 @@ const ColumnConfiguration: React.FC<Props> = React.memo(({ columns, onChange }) 
         configs.map(config =>
             config.children ? (
                 <CheckboxGroup
+                    fullWidth
                     showSelectAll
                     key={config.field}
                     label={config.title}
@@ -27,7 +28,13 @@ const ColumnConfiguration: React.FC<Props> = React.memo(({ columns, onChange }) 
                     options={createOptions(config.children, config.field)}
                 />
             ) : (
-                <Checkbox key={config.field} label={config.title} checked={config.hidden} onChange={handleCheckboxClick(config.field)} />
+                <Checkbox
+                    fullWidth
+                    key={config.field}
+                    label={config.title}
+                    checked={config.hidden}
+                    onChange={handleCheckboxClick(config.field)}
+                />
             )
         );
 

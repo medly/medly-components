@@ -2,6 +2,9 @@
 
 exports[`Row should render NoResult properly 1`] = `
 .c0 {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   display: grid;
   position: relative;
   -webkit-align-items: center;
@@ -13,6 +16,10 @@ exports[`Row should render NoResult properly 1`] = `
   line-height: 30px;
 }
 
+.c0:hover {
+  z-index: 2;
+}
+
 .c0:nth-child(odd) > * {
   background-color: #F7F8F9;
 }
@@ -21,7 +28,7 @@ exports[`Row should render NoResult properly 1`] = `
   background-color: #ffffff;
 }
 
-.c0:not(:last-child) > * {
+.c0:not(:last-child) {
   border-bottom: 1px solid #C7D0D8;
 }
 
@@ -36,6 +43,9 @@ exports[`Row should render NoResult properly 1`] = `
 
 exports[`Row should render row properly 1`] = `
 .c0 {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   display: grid;
   position: relative;
   -webkit-align-items: center;
@@ -43,6 +53,10 @@ exports[`Row should render row properly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: inherit;
+}
+
+.c0:hover {
+  z-index: 2;
 }
 
 .c0:nth-child(odd) > * {
@@ -53,7 +67,7 @@ exports[`Row should render row properly 1`] = `
   background-color: #ffffff;
 }
 
-.c0:not(:last-child) > * {
+.c0:not(:last-child) {
   border-bottom: 1px solid #C7D0D8;
 }
 

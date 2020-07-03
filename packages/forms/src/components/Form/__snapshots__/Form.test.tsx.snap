@@ -430,6 +430,8 @@ exports[`Form should render properly with initial state 1`] = `
 .c27 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;
@@ -2641,6 +2643,8 @@ exports[`Form should render properly without initial state 1`] = `
 .c29 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;

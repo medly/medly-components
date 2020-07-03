@@ -1,38 +1,29 @@
 import { SvgIcon } from '@medly-components/icons';
 import { clearMarginPadding, css, styled } from '@medly-components/utils';
+import Checkbox from '../../../Checkbox';
 import Text from '../../../Text';
-import Cell from '../../Body/Cell';
 import { getBorder } from '../../Table.styled';
 
 const frozen = () => css`
-    z-index: 4;
-`;
-
-export const ResizeHandlerStyled = styled('span')`
-    ${clearMarginPadding()};
-    width: 3px;
-    height: 100%;
-    min-height: 25px;
-    cursor: ew-resize;
-`;
-
-export const HeadCellStyled = styled(Cell.Style)`
-    padding: ${({ hidden }) => (hidden ? '0' : '5px 0px 5px 10px')};
-    text-overflow: initial;
-    white-space: normal;
-    align-items: flex-end;
-
-    ${Text.Style} {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        width: 100%;
-        text-align: center;
+    z-index: 3;
+    left: 0;
+    * {
+        z-index: 3;
     }
+`;
 
-    ${SvgIcon} {
-        cursor: pointer;
-        margin-right: 5px;
+export const HeadCellStyled = styled.th<{ hidden?: boolean; frozen?: boolean; align?: 'left' | 'right' | 'center' }>`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: flex-end;
+    padding: ${({ hidden }) => (hidden ? '0' : '0.8rem')};
+    opacity: ${({ hidden }) => (hidden ? 0 : 1)};
+    position: ${({ frozen }) => (frozen ? 'sticky' : 'relative')};
+
+    ${Checkbox.Style} {
+        margin: 0.4rem;
     }
 
     ${props => props.frozen && frozen()}
@@ -41,5 +32,55 @@ export const HeadCellStyled = styled(Cell.Style)`
         &::after {
             ${getBorder('right')}
         }
+    }
+`;
+
+export const ResizeHandler = styled('span')`
+    ${clearMarginPadding()};
+    width: 0.3rem;
+    height: 100%;
+    top: 0;
+    right: 0;
+    cursor: ew-resize;
+    position: absolute;
+`;
+const getStyle = (styleType: 'default' | 'hovered' | 'pressed' | 'selected') => css`
+    background-color: ${({ theme }) => theme.table.header.cell.bgColor[styleType]};
+    color: ${({ theme }) => theme.table.header.cell.textColor[styleType]};
+    ${SvgIcon} {
+        * {
+            fill: ${({ theme }) => theme.table.header.cell.textColor[styleType]};
+        }
+    }
+`;
+
+export const HeadCellButton = styled.button<{ withHoverEffect: boolean; isSelected: boolean }>`
+    border: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0.9rem 0.8rem 1.1rem;
+    outline: unset;
+    font-family: inherit;
+    border-radius: 0.8rem;
+    cursor: ${({ withHoverEffect }) => (withHoverEffect ? 'pointer' : 'default')};
+    ${({ isSelected }) => getStyle(isSelected ? 'selected' : 'default')}
+
+    &:hover {
+        ${({ isSelected, withHoverEffect }) => withHoverEffect && !isSelected && getStyle('hovered')}
+    }
+
+    &:active {
+        ${getStyle('pressed')}
+    }
+
+    ${Text.Style} {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        text-align: center;
+    }
+    ${SvgIcon} {
+        margin-left: 0.4rem;
     }
 `;

@@ -13,10 +13,7 @@ export const HeadRow = styled('tr').attrs(({ gridTemplateColumns }: GridTemplate
     display: grid;
     align-items: end;
     user-select: none;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-
+    
     & > * {
         background-color: ${({ theme }) => theme.table.headerColor};
         border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};

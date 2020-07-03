@@ -1,5 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
-import { css, styled } from '@medly-components/utils';
+import { clearMarginPadding, css, styled } from '@medly-components/utils';
 import Checkbox from '../../../Checkbox';
 import Text from '../../../Text';
 import { StyledProps } from './types';
@@ -43,10 +43,10 @@ const wrapTextStyle = () => css`
 
 const frozenStyle = () => css`
     left: 0;
-    z-index: 2;
+    z-index: 1;
 
     * {
-        z-index: 2;
+        z-index: 1;
     }
 `;
 
@@ -63,12 +63,10 @@ export const Cell = styled('td')<StyledProps>`
     justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : align === 'center' ? 'center' : 'flex-start')};
 
     ${Checkbox.Style} {
-        flex: 1;
-        margin: 0;
-        padding: 0;
         ${SvgIcon} {
             margin-right: 0;
         }
+        ${clearMarginPadding()};
     }
 
     ${props => props.wrapText && wrapTextStyle}

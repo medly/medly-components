@@ -8,6 +8,7 @@ export interface HeadCellProps {
     sortable?: boolean;
     fitContent?: boolean;
     sortField?: string;
+    isLoading?: boolean;
     defaultSortOrder?: SortOrder;
     onWidthChange?: (width: number, key: string) => void;
     onSortChange?: (field: string, order: SortOrder) => void;

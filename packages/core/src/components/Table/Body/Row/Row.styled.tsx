@@ -8,8 +8,8 @@ const selectedBorder = css`
             content: '';
             left: 0;
             top: -0.05rem;
-            z-index: 10;
-            height: 100%;
+            z-index: 2;
+            height: calc(100% + 0.1rem);
             width: 0.4rem;
             position: absolute;
             background-color: ${({ theme }) => theme.table.row.selectedBorderColor};
@@ -22,10 +22,16 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
         gridTemplateColumns
     }
 }))<Props>`
+    min-width: fit-content;
     display: grid;
     position: relative;
     align-items: center;
     cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
+
+    &:hover {
+        z-index: 2;
+        box-shadow: ${({ disabled, onClick, theme }) => !disabled && onClick && `0 0.2rem 0.4rem ${theme.table.row.shadowColor} `};
+    }
 
     &:nth-child(odd) {
         & > * {
@@ -42,9 +48,7 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
     }
 
     &:not(:last-child) {
-        & > * {
-            border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
-        }
+        border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
     }
 
     ${({ isSelected }) => isSelected && selectedBorder}

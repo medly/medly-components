@@ -50,7 +50,7 @@ export const changeSize = (width: number, dottedField: string, columnConfigs: Co
         const config = { ...newColumnConfigs[index] };
         if (config.children && nextField) {
             config.children = changeSize(width, nextField, config.children);
-        } else if (width < 75) {
+        } else if (width < 80) {
             config.size = columnsWidth[config.formatter];
         } else if (width > 900) {
             config.size = config.size.replace(/(.*\()(.*)(,.*)/, `$1700px$3`);

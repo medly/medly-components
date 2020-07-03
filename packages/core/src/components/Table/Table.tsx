@@ -67,7 +67,7 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
                         defaultSortField,
                         defaultSortOrder,
                         onSelectAllClick: toggleId,
-                        isSelectAllDisable: isLoading || isSelectAllDisable
+                        isSelectAllDisable: isSelectAllDisable
                     }}
                 />
                 <Body

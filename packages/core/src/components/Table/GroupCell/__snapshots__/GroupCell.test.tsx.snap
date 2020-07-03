@@ -17,8 +17,8 @@ exports[`GroupCell should not render hidden prop is given 1`] = `
   display: grid;
   position: relative;
   opacity: 0;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
 }
 
 <div>
@@ -59,7 +59,7 @@ exports[`GroupCell should render GroupCellTitle properly 1`] = `
   line-height: 2.2rem;
   position: relative;
   text-align: center;
-  padding: 5px 0 5px 10px;
+  padding: 0.9rem 1.6rem 1rem;
   grid-column: -1/1;
   text-overflow: initial;
   overflow: auto;
@@ -67,8 +67,9 @@ exports[`GroupCell should render GroupCellTitle properly 1`] = `
 }
 
 .c0::after {
-  position: absolute;
   content: '';
+  position: absolute;
+  pointer-events: none;
   background-color: #C7D0D8;
   height: 1px;
   width: calc(100% - 3.2rem);

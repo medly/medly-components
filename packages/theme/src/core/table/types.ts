@@ -21,6 +21,13 @@ export interface TableTheme {
                 default: string;
                 hovered: string;
                 selected: string;
+                pressed: string;
+            };
+            textColor: {
+                default: string;
+                hovered: string;
+                selected: string;
+                pressed: string;
             };
         };
     };

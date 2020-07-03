@@ -54,6 +54,8 @@ export const StyledCheckbox = styled.div`
 export const HiddenCheckbox = styled.input.attrs(({ theme }) => ({ type: 'checkbox', ...theme.checkbox }))<Props>`
     opacity: 0;
     margin: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     outline: none;

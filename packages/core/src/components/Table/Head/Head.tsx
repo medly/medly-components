@@ -12,6 +12,7 @@ const Head: React.FC<Props> = React.memo(props => {
     const {
         columns,
         onSort,
+        isLoading,
         setColumns,
         isAnyRowSelected,
         isEachRowSelected,
@@ -39,14 +40,14 @@ const Head: React.FC<Props> = React.memo(props => {
             () => (
                 <Checkbox
                     indeterminate={isAnyRowSelected}
-                    disabled={isSelectAllDisable}
+                    disabled={isLoading || isSelectAllDisable}
                     checked={isEachRowSelected}
                     onChange={handleSelectAllClick}
                     onClick={stopPropagation}
                     name="active"
                 />
             ),
-            [isAnyRowSelected, isEachRowSelected, isSelectAllDisable, handleSelectAllClick]
+            [isLoading, isAnyRowSelected, isEachRowSelected, isSelectAllDisable, handleSelectAllClick]
         ),
         headCell = useCallback(
             (configs: ColumnConfig[], field = '') =>
@@ -54,7 +55,6 @@ const Head: React.FC<Props> = React.memo(props => {
                     const fieldName = field ? `${field}.${config.field}` : config.field;
                     return config.children ? (
                         <GroupCell
-                            showBorders
                             as={field ? 'div' : 'th'}
                             key={config.field}
                             hidden={config.hidden}
@@ -70,6 +70,7 @@ const Head: React.FC<Props> = React.memo(props => {
                             as={field ? 'div' : 'th'}
                             key={fieldName}
                             field={fieldName}
+                            isLoading={isLoading}
                             fitContent={config.fitContent}
                             columnMaxSize={maxColumnSizes[fieldName]}
                             sortField={sortField}

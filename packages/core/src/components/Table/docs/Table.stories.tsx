@@ -1,7 +1,7 @@
 import { defaultTheme, TableTheme } from '@medly-components/theme';
 import { action } from '@storybook/addon-actions';
 import { boolean } from '@storybook/addon-knobs';
-import React, { FC, useState } from 'react';
+import React, { FC, useCallback, useState } from 'react';
 import Button from '../../Button';
 import Modal from '../../Modal';
 import { Table } from '../Table';
@@ -18,11 +18,11 @@ Theme.defaultProps = {
 export const ColumnConfigInterface: FC<ColumnConfig> = () => null;
 
 export const Basic = () => {
-    const [tableData, setTableData] = useState(data);
+    const [tableData, setTableData] = useState(filterData('name', 'asc', data));
 
-    const handleFilterData = (dottedField: string, order: SortOrder) => {
-        filterData(dottedField, order, tableData, setTableData);
-    };
+    const handleFilterData = useCallback((dottedField: string, order: SortOrder) => {
+        setTableData(filterData(dottedField, order, tableData));
+    }, []);
 
     return (
         <Table
@@ -31,23 +31,25 @@ export const Basic = () => {
             data={tableData}
             onSort={handleFilterData}
             columns={columns}
+            defaultSortField="name"
+            defaultSortOrder="asc"
         />
     );
 };
 
 export const WithColumnHide = () => {
     const [modalState, setModalState] = useState(false);
-    const [tableData, setTableData] = useState(data);
+    const [tableData, setTableData] = useState(filterData('name', 'asc', data));
     const [columnConfig, setColumnConfig] = useState(columns);
     const [selectedRowIds, setSelectedRowIds] = useState([2, 3]);
 
-    const handleFilterData = (dottedField: string, order: SortOrder) => {
-        filterData(dottedField, order, tableData, setTableData);
-    };
+    const handleFilterData = useCallback((dottedField: string, order: SortOrder) => {
+        setTableData(filterData(dottedField, order, tableData));
+    }, []);
 
-    const handleModalState = () => {
+    const handleModalState = useCallback(() => {
         setModalState(!modalState);
-    };
+    }, []);
 
     return (
         <>
@@ -65,6 +67,8 @@ export const WithColumnHide = () => {
                 selectedRowIds={selectedRowIds}
                 onRowSelection={setSelectedRowIds}
                 onRowClick={action('Row Clicked')}
+                defaultSortField="name"
+                defaultSortOrder="asc"
                 data={tableData}
                 onSort={handleFilterData}
                 columns={columnConfig}

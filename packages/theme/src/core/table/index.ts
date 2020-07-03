@@ -22,8 +22,15 @@ const table: TableTheme = {
         cell: {
             bgColor: {
                 default: colors.white,
-                hovered: colors.grey[100],
+                hovered: colors.grey[50],
+                pressed: colors.grey[100],
                 selected: colors.communityBlue[100]
+            },
+            textColor: {
+                default: colors.black,
+                hovered: colors.black,
+                pressed: colors.black,
+                selected: colors.communityBlue[500]
             }
         }
     }

@@ -18,7 +18,7 @@ export const GroupCell = styled('div').attrs(({ gridTemplateColumns }: Props) =>
 export const GroupCellTitle = styled(Text.Style)`
     position: relative;
     text-align: center;
-    padding: 5px 0 5px 10px;
+    padding: 0.9rem 1.6rem 1rem;
     grid-column: -1/1;
     text-overflow: initial;
     overflow: auto;

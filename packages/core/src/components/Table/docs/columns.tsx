@@ -13,7 +13,7 @@ const StyledDiv = styled('div')`
     };
 
 const columns: ColumnConfig[] = [
-    { title: 'Name', field: 'name', formatter: 'text-short', frozen: true, fitContent: true },
+    { title: 'Name', field: 'name', formatter: 'text-short', sortable: true, frozen: true, fitContent: true },
     {
         title: 'Marks',
         field: 'marks',

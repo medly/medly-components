@@ -1,9 +1,10 @@
-import { css, styled } from '@medly-components/utils';
+import { clearMarginPadding, css, styled } from '@medly-components/utils';
 import { TableStyledProps } from './types';
 
 export const getBorder = (align: 'left' | 'right' | 'top' | 'bottom') => css`
-    position: absolute;
     content: '';
+    position: absolute;
+    pointer-events: none;
     background-color: ${({ theme }) => theme.table.borderColor};
     height: ${align === 'left' || align === 'right' ? 'calc(100% - 3.2rem)' : `1px`};
     width: ${align === 'top' || align === 'bottom' ? 'calc(100% - 3.2rem)' : `1px`};
@@ -15,12 +16,13 @@ export const getBorder = (align: 'left' | 'right' | 'top' | 'bottom') => css`
 `;
 
 export const TableStyled = styled('table')<TableStyledProps>`
-    margin: 0;
-    padding: 0;
     overflow: auto;
     display: block;
     border: 1px solid ${({ theme }) => theme.table.borderColor};
     border-radius: 0.8rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    ${clearMarginPadding}
 
     * {
         box-sizing: border-box;
@@ -28,10 +30,11 @@ export const TableStyled = styled('table')<TableStyledProps>`
 
     &::-webkit-scrollbar {
         height: 0.5rem;
+        width: 0.5rem;
     }
     &::-webkit-scrollbar-track {
         background-color: transparent;
-        margin: 0 0.4rem;
+        margin: 0.8rem;
     }
     &::-webkit-scrollbar-thumb {
         border-radius: 1rem;
