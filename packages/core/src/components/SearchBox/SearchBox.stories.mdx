@@ -14,9 +14,9 @@ import { SearchBox } from './SearchBox';
 <Preview withToolbar>
     <Story name="SearchBox">
         {() => {
-            const [options, setOptions] = useState([]);
+            const [options, setOptions] = useState(optionsArray);
             const onSearchInputChangeHandler = value => {
-                setOptions(value ? [...optionsArray] : []);
+                setOptions([...optionsArray, { label: 'Test', value: 'Test' }]);
             };
             return (
                 <SearchBox
