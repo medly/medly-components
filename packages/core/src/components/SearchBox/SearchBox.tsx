@@ -20,7 +20,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 updateIsTyping(false);
             }, []),
             handleChange = useCallback(
-                (event: React.FormEvent<HTMLInputElement>) => {
+                (event: React.ChangeEvent<HTMLInputElement>) => {
                     const value = inputRef.current.value; // TODO: should we accept length as a prop?
                     updateIsTyping(true);
                     if (value.length === 0) {
@@ -60,7 +60,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                     {isTyping && <CloseIcon onClick={clearSearchText} />}
                 </Styled.CloseIconWrapper>
                 <Styled.SearchIconWrapper isActive={isActive} isTyping={isTyping} searchBoxSize={searchBoxSize}>
-                    <SearchIcon />
+                    <SearchIcon data-testid="search-icon" />
                 </Styled.SearchIconWrapper>
             </Styled.SearchBoxWrapper>
         );
@@ -71,5 +71,6 @@ SearchBox.displayName = 'SearchBox';
 SearchBox.Style = Styled.SearchBox;
 SearchBox.defaultProps = {
     options: [],
-    placeholder: 'Search'
+    placeholder: 'Search',
+    searchBoxSize: 'S'
 };
