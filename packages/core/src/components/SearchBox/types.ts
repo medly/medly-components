@@ -3,7 +3,7 @@ import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
 export type Option = {
     label: string;
-    value: any;
+    value: string | number;
 };
 
 export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'boxSize'>, WithThemeProp {
@@ -14,7 +14,7 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'boxSize'>, Wit
     /** Option for search results, in form of label and value */
     options?: Option[];
     /*** callback to be trigger on selecting the option */
-    onOptionSelected?: (value: any) => void;
+    onOptionSelected?: (value: Option) => void;
     /*** callback for providing the input values */
     onSearchInputChange?: (value: string) => void;
 }
