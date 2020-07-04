@@ -14,9 +14,13 @@ import { SearchBox } from './SearchBox';
 <Preview withToolbar>
     <Story name="SearchBox">
         {() => {
-            const [options, setOptions] = useState(optionsArray);
+            const [options, setOptions] = useState([]);
             const onSearchInputChangeHandler = value => {
-                setOptions([...optionsArray, { label: 'Test', value: 'Test' }]);
+                if (value.length > 2) {
+                    setOptions([...optionsArray, { label: 'Test', value: 'Test' }]);
+                } else {
+                    setOptions([]);
+                }
             };
             return (
                 <SearchBox

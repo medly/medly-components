@@ -1,6 +1,7 @@
 import { CloseIcon, SearchIcon } from '@medly-components/icons';
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useRef, useState } from 'react';
+import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
+import { getOptionsWithSelected } from '../SingleSelect/helpers';
 import Options from '../SingleSelect/Options';
 import { Option } from '../SingleSelect/types';
 import { useKeyboardNavigation } from '../SingleSelect/useKeyboardNavigation';
@@ -9,43 +10,47 @@ import { Props } from './types';
 
 export const SearchBox: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { options, searchBoxSize, placeholder, onSearchInputChange, onOptionSelected } = props;
+        const { options: defaultOptions, searchBoxSize, placeholder, onSearchInputChange, onOptionSelected } = props;
         const inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
             isFocused = useRef(false),
             optionsRef = useRef<HTMLUListElement>(null),
             [isActive, setActive] = useState(false),
             [isTyping, updateIsTyping] = useState(false),
-            [areOptionsVisible, showOptions] = useState(false);
+            [areOptionsVisible, showOptions] = useState(false),
+            [options, setOptions] = useState(defaultOptions),
+            [selectedOption, setSelectedOption] = useState(options[0]);
 
-        const selectedOption = options[0];
+        useEffect(() => {
+            setOptions(props.options);
+            if (props.options.length > 0) {
+                setActive(true);
+                showOptions(true);
+                isFocused.current = true;
+            } else {
+                showOptions(false);
+                setActive(false);
+            }
+        }, [props.options]);
 
         const clearSearchText = useCallback(() => {
-                inputRef.current.value = null;
+                inputRef.current.value = '';
+                inputRef.current.focus();
                 setActive(false);
                 showOptions(false);
                 updateIsTyping(false);
             }, []),
             handleChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
-                    const value = inputRef.current.value; // TODO: should we accept length as a prop?
+                    const value = inputRef.current.value;
                     updateIsTyping(true);
+                    onSearchInputChange(event.target.value);
                     if (value.length === 0) {
                         updateIsTyping(false);
-                    }
-                    if (value.length > 2) {
-                        setActive(true);
-                        showOptions(true);
-                        onSearchInputChange(event.target.value);
-                    } else {
-                        showOptions(false);
-                        setActive(false);
+                        isFocused.current = false;
                     }
                 },
-                [inputRef.current]
+                [inputRef.current, options]
             ),
-            handleFocus = useCallback(() => {
-                isFocused.current = true;
-            }, []),
             handleOptionClick = useCallback(
                 (option: Option) => {
                     if (!option.disabled && !Array.isArray(option.value)) {
@@ -61,7 +66,8 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             ),
             selectOption = useCallback(
                 (option: Option) => {
-                    console.log(option);
+                    setOptions(getOptionsWithSelected(options, option));
+                    setSelectedOption(option);
                 },
                 [options]
             ),
@@ -70,7 +76,17 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 // @ts-ignore
                 inputRef.current.setSelectionRange(inputRef.length, inputRef.length);
                 inputRef.current.focus();
-            }, [inputRef]);
+            }, [inputRef]),
+            handleKeyUp = () => {
+                if (inputRef.current.value.length === 0) {
+                    isFocused.current = false;
+                }
+            },
+            handleKeyDown = () => {
+                if (inputRef.current.value.length === 0) {
+                    isFocused.current = false;
+                }
+            };
 
         useKeyboardNavigation({
             isFocused,
@@ -90,7 +106,8 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                     placeholder={placeholder}
                     searchBoxSize={searchBoxSize}
                     onChange={handleChange}
-                    onFocus={handleFocus}
+                    onKeyDown={handleKeyDown}
+                    onKeyUp={handleKeyUp}
                     ref={inputRef}
                 />
                 {areOptionsVisible && (

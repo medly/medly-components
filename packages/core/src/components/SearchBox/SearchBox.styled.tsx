@@ -58,6 +58,7 @@ const getMediumOptionStyle = () => {
         ${Options.Style} {
             top: 4.6rem;
             border-radius: 0 0 2.5rem 2.5rem;
+            overflow: hidden;
             li {
                 padding: 0 2.4rem;
                 span {
@@ -161,10 +162,9 @@ const activeSearchBoxStyle = ({ theme }: Props) => {
         searchBox: { active }
     } = theme;
     return css`
-        position: relative;
         box-shadow: 0 -0.8rem 1.6rem rgba(96, 120, 144, 0.25);
-        border-bottom: 0 none;
         border-color: ${active.borderColor};
+        border-bottom-color: transparent;
     `;
 };
 
@@ -177,6 +177,7 @@ const nonActiveSearchBoxStyle = ({ theme }: Props) => {
         border-bottom: 0.1rem solid;
         border-color: ${defaultStyle.borderColor};
         border-radius: 4rem;
+        transition: border-color 100ms, box-shadow 100ms;
         &:focus-within {
             ${getBorderAndBoxShadow(active.borderColor, active.boxShadow)};
             ${SearchIconWrapper} {
@@ -204,6 +205,7 @@ export const SearchBoxWrapper = styled.div<Props & { isActive?: boolean }>`
     box-sizing: border-box;
     height: ${getSearchBoxSize};
     border: 0.1rem solid;
+    position: relative;
 
     ${Options.Style} {
         box-shadow: none;
@@ -213,8 +215,8 @@ export const SearchBoxWrapper = styled.div<Props & { isActive?: boolean }>`
         ${({ isActive }) => (isActive ? activeOptionStyle : nonActiveOptionStyle)};
 
         li {
-            &:last-child {
-                border-radius: 0 0 1rem 1rem;
+            &:hover {
+                background-color: ${({ theme }) => theme.colors.grey[50]};
             }
         }
     }
