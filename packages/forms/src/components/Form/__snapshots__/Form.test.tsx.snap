@@ -417,6 +417,7 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c29 .c30 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -2630,6 +2631,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c31 .c32 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;

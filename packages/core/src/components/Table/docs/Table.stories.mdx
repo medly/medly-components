@@ -1,38 +1,43 @@
 import { Table } from '../Table';
+import { useState, useCallback } from 'react';
+import { action } from '@storybook/addon-actions';
+import { boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Table.stories';
+import { filterData } from './filterData';
+import columns from './columns';
+import data from './data';
 
-<Meta title="Core/Table" component={Table} />
+<Meta title="Core" component={Table} />
 
 # Table
 
-### Table to show set of data
+Table to show set of data
 
 <Preview withToolbar>
-    <Story name="WithoutColumnHide">{stories.Basic()}</Story>
-</Preview>
-
-### With column hidden feature
-
-To use the column hidden feature use `Table.SelectableColumns` component and save the column config in state variable and pass the same column config to `Table` and `Table.SelectableColumns` component.
-
-```tsx
-export const WithColumnHide = () => {
-    const [columnConfig, setColumnConfig] = useState(columns);
-
-    return (
-        <>
-            <Table.SelectableColumns columns={columnConfig} fieldToChange="hidden" onChange={setColumnConfig} />
-            <Table data={data} columns={columnConfig} />
-        </>
-    );
-};
-```
-
-You can also show `Table.SelectableColumns` in Modal to look better. Like below . . .
-
-<Preview withToolbar>
-    <Story name="WithColumnHide">{stories.WithColumnHide()}</Story>
+    <Story name="Table">
+        {() => {
+            const [selectedRowIds, setSelectedRowIds] = useState([2, 3]);
+            const handleFilterData = useCallback((dottedField, order) => {
+                setTableData(filterData(dottedField, order, tableData));
+            }, []);
+            return (
+                <Table
+                    isSelectable={boolean('Is selectable', true)}
+                    isLoading={boolean('Loading', false)}
+                    rowSelectionDisableKey="disabled"
+                    selectedRowIds={selectedRowIds}
+                    onRowSelection={setSelectedRowIds}
+                    onRowClick={action('Row Clicked')}
+                    defaultSortField="name"
+                    defaultSortOrder="asc"
+                    data={data}
+                    onSort={handleFilterData}
+                    columns={columns}
+                />
+            );
+        }}
+    </Story>
 </Preview>
 
 ### Props

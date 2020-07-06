@@ -8,7 +8,13 @@ type Result = {
     toggleId: (id: number) => void;
 };
 
-const useRowSelector = (data: Data[], initialSelectedIds: number[], rowSelectionDisableKey: string, rowIdentifier: string): Result => {
+const useRowSelector = (
+    data: Data[],
+    initialSelectedIds: number[],
+    rowSelectionDisableKey: string,
+    rowIdentifier: string,
+    isSelectable: boolean
+): Result => {
     const ids = useMemo(() => data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[rowIdentifier]), [
             data,
             rowSelectionDisableKey,
@@ -30,8 +36,8 @@ const useRowSelector = (data: Data[], initialSelectedIds: number[], rowSelection
     );
 
     useEffect(() => {
-        setSelectedIds(initialSelectedIds);
-    }, [initialSelectedIds]);
+        setSelectedIds(isSelectable ? initialSelectedIds : []);
+    }, [initialSelectedIds, isSelectable]);
 
     return { isEachRowSelected, isAnyRowSelected, selectedIds, toggleId };
 };

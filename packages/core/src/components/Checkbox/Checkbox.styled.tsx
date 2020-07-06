@@ -43,6 +43,7 @@ export const StyledCheckbox = styled.div`
     ${centerAligned('flex')}
 
     ${SvgIcon} {
+        pointer-events: none;
         z-index: 1;
         transition: all 100ms ease-in-out;
         transform: scale(0);

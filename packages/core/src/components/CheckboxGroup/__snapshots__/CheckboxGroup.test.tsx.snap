@@ -132,6 +132,7 @@ exports[`CheckboxGroup component should render properly 1`] = `
 }
 
 .c11 .c12 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -635,6 +636,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
 }
 
 .c11 .c12 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -1122,6 +1124,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
 }
 
 .c11 .c12 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -1492,6 +1495,7 @@ exports[`CheckboxGroup component should show indeterminate state when any one op
 }
 
 .c4 .c0 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;

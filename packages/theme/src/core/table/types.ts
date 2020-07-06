@@ -4,6 +4,7 @@ export interface TableTheme {
     headerColor: string;
     borderColor: string;
     scrollBarColor: string;
+    shadowColor: string;
     row: {
         bgColor: {
             odd: string;
@@ -12,7 +13,6 @@ export interface TableTheme {
             selected: string;
         };
         selectedBorderColor: string;
-        shadowColor: string;
     };
     header: {
         bgColor: string;

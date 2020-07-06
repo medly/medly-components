@@ -10,7 +10,7 @@ import { ColumnConfig, Props, StaticProps } from './types';
 import useRowSelector from './useRowSelector';
 import { useScrollState } from './useScrollState';
 
-const loadingBodyData = [{ id: 0 }, { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }];
+const loadingBodyData = [{ id: 'loading1' }, { id: 'loading2' }, { id: 'loading3' }, { id: 'loading4' }, { id: 'loading5' }];
 const checkboxColumnConfig: ColumnConfig = {
     title: 'ch',
     field: 'medly-table-checkbox',
@@ -44,7 +44,7 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
 
         const isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]),
             isSelectAllDisable = useMemo(() => data.every(dt => dt[rowSelectionDisableKey]), [data, rowSelectionDisableKey]),
-            rowSelector = useRowSelector(data, selectedRowIds, rowSelectionDisableKey, rowIdentifier),
+            rowSelector = useRowSelector(data, selectedRowIds, rowSelectionDisableKey, rowIdentifier, isSelectable),
             { isAnyRowSelected, isEachRowSelected, selectedIds, toggleId } = rowSelector;
 
         useEffect(() => {

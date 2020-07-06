@@ -7,6 +7,7 @@ const table: TableTheme = {
     headerColor: colors.white,
     borderColor: colors.grey[300],
     scrollBarColor: colors.grey[400],
+    shadowColor: colors.grey[600],
     row: {
         bgColor: {
             odd: colors.grey[50],
@@ -14,8 +15,7 @@ const table: TableTheme = {
             selected: colors.communityBlue[200],
             disabled: colors.grey[100]
         },
-        selectedBorderColor: colors.communityBlue[500],
-        shadowColor: 'rgba(96, 120, 144, 0.35)'
+        selectedBorderColor: colors.communityBlue[500]
     },
     header: {
         bgColor: colors.white,

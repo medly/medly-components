@@ -1,5 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
 import { clearMarginPadding, css, styled } from '@medly-components/utils';
+import { rgba } from 'polished';
 import Checkbox from '../../../Checkbox';
 import Text from '../../../Text';
 import { getBorder } from '../../Table.styled';
@@ -21,7 +22,8 @@ const frozenStyle = css`
                 height: 100%;
                 width: 1.2rem;
                 position: absolute;
-                background: linear-gradient(to right, rgba(96, 120, 144, 0.15), rgba(19, 24, 29, 0));
+                background: ${({ theme }) =>
+                    `linear-gradient(to right, ${rgba(theme.table.shadowColor, 0.15)}, ${rgba(theme.table.shadowColor, 0)}) `};
             }
         }
     `;
