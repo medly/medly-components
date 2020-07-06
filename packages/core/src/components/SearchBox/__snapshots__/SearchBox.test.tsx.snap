@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SearchBox should render options when user search option specified 1`] = `
-.c12 {
+.c13 {
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -9,12 +9,12 @@ exports[`SearchBox should render options when user search option specified 1`] =
   cursor: inherit;
 }
 
-.c12 * {
+.c13 * {
   fill-opacity: 1;
   fill: #607890;
 }
 
-.c9 {
+.c10 {
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -22,12 +22,12 @@ exports[`SearchBox should render options when user search option specified 1`] =
   cursor: pointer;
 }
 
-.c9 * {
+.c10 * {
   fill-opacity: 1;
   fill: #607890;
 }
 
-.c6 {
+.c7 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -39,7 +39,7 @@ exports[`SearchBox should render options when user search option specified 1`] =
   line-height: 2.2rem;
 }
 
-.c4 {
+.c5 {
   cursor: pointer;
   padding: 0 1.6rem;
   min-height: 4rem;
@@ -56,11 +56,11 @@ exports[`SearchBox should render options when user search option specified 1`] =
   background-color: #ffffff;
 }
 
-.c4:hover {
+.c5:hover {
   background-color: #eff2f4;
 }
 
-.c4 .c5 {
+.c5 .c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -73,11 +73,11 @@ exports[`SearchBox should render options when user search option specified 1`] =
   text-overflow: ellipsis;
 }
 
-.c4 .c8 {
+.c5 .c9 {
   margin-left: 1.6rem;
 }
 
-.c4 .c8 * {
+.c5 .c9 * {
   fill: #13181D;
 }
 
@@ -103,73 +103,23 @@ exports[`SearchBox should render options when user search option specified 1`] =
   border-radius: 0 0 0.4rem 0.4rem;
 }
 
-.c15 .c8 {
+.c16 .c9 {
   cursor: pointer;
   font-size: 2rem;
 }
 
-.c15 .c8 * {
+.c16 .c9 * {
   fill: #607890;
 }
 
-.c15 .c8:hover {
+.c16 .c9:hover {
   background: transparent;
   border-radius: 2.5rem;
 }
 
-.c11 {
+.c12 {
   width: 4rem;
-  height: 100%;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: 0.2rem;
-}
-
-.c11 .c8 {
-  cursor: pointer;
-  font-size: 2rem;
-}
-
-.c11 .c8 * {
-  fill: #005AEE;
-}
-
-.c11 .c8:hover {
-  background: #e6effd;
-  border-radius: 2.5rem;
-}
-
-.c14 .c8 {
-  cursor: pointer;
-  font-size: 2rem;
-}
-
-.c14 .c8 * {
-  fill: #607890;
-}
-
-.c14 .c8:hover {
-  background: #eff2f4;
-  border-radius: 2.5rem;
-}
-
-.c14 .c8:hover * {
-  fill: #303C48;
-}
-
-.c7 {
-  width: 4rem;
-  height: 100%;
+  height: auto;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -184,73 +134,117 @@ exports[`SearchBox should render options when user search option specified 1`] =
   justify-content: center;
 }
 
-.c7 .c8 {
+.c12 .c9 {
   cursor: pointer;
   font-size: 2rem;
 }
 
-.c7 .c8 * {
+.c12 .c9 * {
+  fill: #005AEE;
+}
+
+.c12 .c9:hover {
+  background: #e6effd;
+  border-radius: 2.5rem;
+}
+
+.c15 .c9 {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.c15 .c9 * {
   fill: #607890;
 }
 
-.c7 .c8:hover {
+.c15 .c9:hover {
   background: #eff2f4;
   border-radius: 2.5rem;
 }
 
-.c7 .c8:hover * {
+.c15 .c9:hover * {
   fill: #303C48;
 }
 
-.c7::after {
-  content: '';
-  width: 1px;
-  height: 2.4rem;
-  background: #dfe4e9;
-  display: block;
-  margin-left: 0.5rem;
+.c8 {
+  width: 4rem;
+  height: auto;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-right: 0.1rem solid #dfe4e9;
+  margin: 0.6rem 0;
 }
 
-.c13 .c2 {
+.c8 .c9 {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.c8 .c9 * {
+  fill: #607890;
+}
+
+.c8 .c9:hover {
+  background: #eff2f4;
+  border-radius: 2.5rem;
+}
+
+.c8 .c9:hover * {
+  fill: #303C48;
+}
+
+.c14 .c2 {
   box-shadow: none;
   border: none;
   box-sizing: content-box;
-  left: -1px;
+  left: -2px;
+  overflow: hidden;
   border: none;
   padding-bottom: 0;
 }
 
-.c13 .c2::before {
+.c14 .c2::before {
   display: none;
 }
 
-.c13 .c2 li:last-child {
-  border-radius: 0 0 1rem 1rem;
+.c14 .c2 .c4:hover {
+  background-color: #F7F8F9;
 }
 
-.c13 .c2 {
-  top: 3.8rem;
+.c14 .c2 {
+  top: 3.6rem;
   border-radius: 0 0 2rem 2rem;
 }
 
-.c13 .c2 li {
+.c14 .c2 li {
   padding: 0 2rem;
 }
 
-.c13 .c2 li span {
+.c14 .c2 li span,
+.c14 .c2 li strong {
   font-size: 1.4rem;
   line-height: 2.2rem;
 }
 
-.c13 .c2::before {
+.c14 .c2::before {
   width: 82%;
 }
 
-.c13 .c8 {
+.c14 .c9 {
   padding: 0.2rem;
 }
 
-.c13:focus-within .c10 .c8 * {
+.c14:focus-within .c11 .c9 * {
   fill: #005AEE;
 }
 
@@ -267,34 +261,36 @@ exports[`SearchBox should render options when user search option specified 1`] =
   box-sizing: border-box;
   height: 4rem;
   border: 0.1rem solid;
-  border-radius: 2rem 2rem 0 0;
   position: relative;
-  box-shadow: 0 -0.8rem 1.6rem rgba(96,120,144,0.25);
-  border-bottom: 0 none;
+  border-radius: 2rem 2rem 0 0;
+  box-shadow: 0px 2px 16px rgba(96,120,144,0.25);
   border-color: #005AEE;
+  border-bottom-color: transparent;
+  border-width: 0.15rem;
 }
 
 .c0 .c2 {
   box-shadow: none;
   border: none;
   box-sizing: content-box;
-  left: -1px;
-  border: solid 0.1rem #005AEE;
+  left: -2px;
+  overflow: hidden;
+  border: solid 0.15rem #005AEE;
   border-top: 0;
-  box-shadow: 0 8px 16px rgba(96,120,144,0.25);
+  box-shadow: 0px 2px 16px rgba(96,120,144,0.5);
   padding-bottom: 1.2rem;
 }
 
 .c0 .c2::before {
   display: block;
   content: '';
-  border-top: 1px solid #dfe4e9;
-  height: 1px;
-  margin: 0 auto 8px;
+  border-top: 0.1rem solid #dfe4e9;
+  height: 0.1rem;
+  margin: 0 auto 0.8rem;
 }
 
-.c0 .c2 li:last-child {
-  border-radius: 0 0 1rem 1rem;
+.c0 .c2 .c4:hover {
+  background-color: #F7F8F9;
 }
 
 .c0 input {
@@ -304,7 +300,7 @@ exports[`SearchBox should render options when user search option specified 1`] =
 }
 
 .c0 .c2 {
-  top: 3.8rem;
+  top: 3.6rem;
   border-radius: 0 0 2rem 2rem;
 }
 
@@ -312,7 +308,8 @@ exports[`SearchBox should render options when user search option specified 1`] =
   padding: 0 2rem;
 }
 
-.c0 .c2 li span {
+.c0 .c2 li span,
+.c0 .c2 li strong {
   font-size: 1.4rem;
   line-height: 2.2rem;
 }
@@ -321,7 +318,7 @@ exports[`SearchBox should render options when user search option specified 1`] =
   width: 82%;
 }
 
-.c0 .c8 {
+.c0 .c9 {
   padding: 0.2rem;
 }
 
@@ -336,6 +333,7 @@ exports[`SearchBox should render options when user search option specified 1`] =
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  font-family: inherit;
 }
 
 .c1::-webkit-input-placeholder {
@@ -382,31 +380,31 @@ exports[`SearchBox should render options when user search option specified 1`] =
       class="c2 c3"
     >
       <li
-        class="c4"
+        class="c4 c5"
         id="Dummy1-option"
       >
         <span
-          class="c5 c6"
+          class="c6 c7"
         >
           Dummy1 option
         </span>
       </li>
       <li
-        class="c4"
+        class="c4 c5"
         id="Dummy2-option"
       >
         <span
-          class="c5 c6"
+          class="c6 c7"
         >
           Dummy2 option
         </span>
       </li>
     </ul>
     <span
-      class="c7"
+      class="c8"
     >
       <svg
-        class="c8 c9"
+        class="c9 c10"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -421,10 +419,10 @@ exports[`SearchBox should render options when user search option specified 1`] =
       </svg>
     </span>
     <span
-      class="c10 c11"
+      class="c11 c12"
     >
       <svg
-        class="c8 c12"
+        class="c9 c13"
         data-testid="search-icon"
         fill="none"
         height="1em"
@@ -461,7 +459,7 @@ exports[`SearchBox should render text box of specified size 1`] = `
 
 .c4 {
   width: 4rem;
-  height: 100%;
+  height: auto;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -470,11 +468,10 @@ exports[`SearchBox should render text box of specified size 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  margin-left: 0.2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c4 .c5 {
@@ -493,7 +490,7 @@ exports[`SearchBox should render text box of specified size 1`] = `
 
 .c2 {
   width: 4rem;
-  height: 100%;
+  height: auto;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -506,6 +503,8 @@ exports[`SearchBox should render text box of specified size 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  border-right: 0 none;
+  margin: 0.6rem 0;
 }
 
 .c2 .c5 {
@@ -526,15 +525,6 @@ exports[`SearchBox should render text box of specified size 1`] = `
   fill: #303C48;
 }
 
-.c2::after {
-  content: '';
-  width: 1px;
-  height: 2.4rem;
-  background: #dfe4e9;
-  display: none;
-  margin-left: 0.5rem;
-}
-
 .c0 {
   width: 25.6rem;
   display: -webkit-box;
@@ -548,17 +538,21 @@ exports[`SearchBox should render text box of specified size 1`] = `
   box-sizing: border-box;
   height: 4rem;
   border: 0.1rem solid;
+  position: relative;
   border-radius: 2rem 2rem 0 0;
   border-bottom: 0.1rem solid;
   border-color: #98A7B7;
   border-radius: 4rem;
+  -webkit-transition: border-color 100ms,box-shadow 100ms;
+  transition: border-color 100ms,box-shadow 100ms;
 }
 
 .c0 .sc-AxhCb {
   box-shadow: none;
   border: none;
   box-sizing: content-box;
-  left: -1px;
+  left: -2px;
+  overflow: hidden;
   border: none;
   padding-bottom: 0;
 }
@@ -567,8 +561,8 @@ exports[`SearchBox should render text box of specified size 1`] = `
   display: none;
 }
 
-.c0 .sc-AxhCb li:last-child {
-  border-radius: 0 0 1rem 1rem;
+.c0 .sc-AxhCb .sc-AxiKw:hover {
+  background-color: #F7F8F9;
 }
 
 .c0 input {
@@ -578,7 +572,7 @@ exports[`SearchBox should render text box of specified size 1`] = `
 }
 
 .c0 .sc-AxhCb {
-  top: 3.8rem;
+  top: 3.6rem;
   border-radius: 0 0 2rem 2rem;
 }
 
@@ -586,7 +580,8 @@ exports[`SearchBox should render text box of specified size 1`] = `
   padding: 0 2rem;
 }
 
-.c0 .sc-AxhCb li span {
+.c0 .sc-AxhCb li span,
+.c0 .sc-AxhCb li strong {
   font-size: 1.4rem;
   line-height: 2.2rem;
 }
@@ -611,6 +606,7 @@ exports[`SearchBox should render text box of specified size 1`] = `
 .c0:hover {
   border-color: #607890;
   box-shadow: 0px 2px 8px rgba(96,120,144,0.25);
+  border-width: 0.15rem;
 }
 
 .c0:focus-within:hover {
@@ -629,6 +625,7 @@ exports[`SearchBox should render text box of specified size 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  font-family: inherit;
 }
 
 .c1::-webkit-input-placeholder {

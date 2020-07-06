@@ -21,17 +21,17 @@ const SearchBox = {
     },
     hover: {
         borderColor: colors.grey[600],
-        boxShadow: '0px 2px 8px rgba(96, 120, 144, 0.25)'
+        boxShadow: '0 0.2rem 0.8rem rgba(96, 120, 144, 0.2)'
     },
     active: {
         borderColor: colors.communityBlue[500],
-        boxShadow: '0px 2px 16px rgba(96, 120, 144, 0.25)',
+        boxShadow: '0 -0.4rem 0.8rem rgba(18, 106, 250, 0.2)',
         placeholderTextColor: colors.grey[300],
         iconColor: colors.communityBlue[500],
         iconBg: colors.communityBlue[100]
     },
     options: {
-        boxShadow: '0px 2px 16px rgba(96, 120, 144, 0.5)'
+        boxShadow: '0 0.2rem 0.8rem rgba(18, 106, 250, 0.2)'
     }
 };
 

@@ -20,7 +20,7 @@ describe('SearchBox', () => {
     });
 
     it('should render close icon when user starts typing', () => {
-        const { container } = render(<SearchBox placeholder="search me" />),
+        const { container } = render(<SearchBox placeholder="search me" onSearchInputChange={jest.fn()} />),
             inputEl = getByPlaceholderText(container, 'search me') as HTMLInputElement;
         fireEvent.change(inputEl, { target: { value: 'R' } });
         expect(inputEl.value).toHaveLength(1);
