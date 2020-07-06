@@ -6,12 +6,12 @@ import Head from './Head';
 import { addSizeToColumnConfig } from './helpers';
 import { maxColumnSizeReducer } from './maxColumnSizeReducer';
 import { TableStyled } from './Table.styled';
-import { ColumnConfig, Props, StaticProps } from './types';
+import { Props, StaticProps, TableColumnConfig } from './types';
 import useRowSelector from './useRowSelector';
 import { useScrollState } from './useScrollState';
 
 const loadingBodyData = [{ id: 'loading1' }, { id: 'loading2' }, { id: 'loading3' }, { id: 'loading4' }, { id: 'loading5' }];
-const checkboxColumnConfig: ColumnConfig = {
+const checkboxColumnConfig: TableColumnConfig = {
     title: 'ch',
     field: 'medly-table-checkbox',
     formatter: 'checkbox',

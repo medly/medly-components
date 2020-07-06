@@ -1,9 +1,9 @@
-import { ColumnConfig, SortOrder } from '../types';
+import { SortOrder, TableColumnConfig } from '../types';
 
 export interface Props {
     isLoading: boolean;
-    columns: ColumnConfig[];
-    setColumns: React.Dispatch<React.SetStateAction<ColumnConfig[]>>;
+    columns: TableColumnConfig[];
+    setColumns: React.Dispatch<React.SetStateAction<TableColumnConfig[]>>;
     isEachRowSelected?: boolean;
     isAnyRowSelected?: boolean;
     isSelectAllDisable?: boolean;

@@ -13,35 +13,35 @@ export interface ColumnsWidth {
     'react-component': string;
 }
 
-export interface Data {
+export type Data = {
     [key: string]: any;
-}
+}[];
 
-export interface ColumnConfig {
+export interface TableColumnConfig {
     /** Title of the column */
     title: string;
     /** Field name in the data */
     field: string;
     /** Column content alignment */
     align?: 'left' | 'right' | 'center';
-    /** To freeze the component on the left */
+    /** WIP | Set it true to freeze the component on the left side*/
     frozen?: boolean;
-    /** To show sort icons */
+    /** Set it true to show sort icons */
     sortable?: boolean;
-    /** To hide the column */
+    /** Set it true to hide the column */
     hidden?: boolean;
-    /** Column will take max width to fit content */
+    /** Set it true to set column width according to size of the biggest content */
     fitContent?: boolean;
-    /** Nested Column */
-    children?: ColumnConfig[];
+    /** Use this to include nested column */
+    children?: TableColumnConfig[];
     /** Column formatter */
     formatter: keyof ColumnsWidth;
+    /** Set it true to wrap column text */
+    wrapText?: boolean;
     /** Custom component */
     component?: React.FC<{ data: any; rowId?: any; disabled?: boolean }>;
     /** This will be handled internally */
     size?: string;
-    /** Set it true to wrap column text */
-    wrapText?: boolean;
 }
 
 export interface GridTemplateProps {
@@ -54,29 +54,29 @@ export interface TableStyledProps {
 
 export interface Props extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type'> {
     /** Table data */
-    data: Data[];
+    data: Data;
     /** Column configuration */
-    columns: ColumnConfig[];
+    columns: TableColumnConfig[];
     /** Key name in data to be used as unique id */
     rowIdentifier?: string;
     /** Key name to disable row selection */
     rowSelectionDisableKey?: string;
     /** Key name to disable row click */
     rowClickDisableKey?: string;
-    /** Shows checkboxes to select rows */
+    /** Set it true to shows checkboxes to select rows */
     isSelectable?: boolean;
-    /** Shows placeholder shimmer */
+    /** Set it true to shows placeholder shimmer */
     isLoading?: boolean;
+    /** Default Sort Field*/
+    defaultSortField?: string;
+    /** Default Sort Order*/
+    defaultSortOrder?: SortOrder;
     /** Ids of default selected rows */
     selectedRowIds?: number[];
     /** Function to be called on row selection */
     onRowSelection?: (v: number[]) => void;
     /** Function to be called on row click */
     onRowClick?: (rowData: object) => void;
-    /** Default Sort Field*/
-    defaultSortField?: string;
-    /** Default Sort Order*/
-    defaultSortOrder?: SortOrder;
     /** Function to be called on click of sort icon */
     onSort?: (field: string, order: SortOrder) => void;
 }

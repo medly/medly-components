@@ -1,7 +1,7 @@
 import React from 'react';
 import Checkbox from '../../Checkbox';
 import CheckboxGroup from '../../CheckboxGroup';
-import { ColumnConfig } from '../types';
+import { TableColumnConfig } from '../types';
 import { createOptions, createValues, updateColumns, updateConfig } from './helpers';
 import { Props } from './types';
 
@@ -14,7 +14,7 @@ const ColumnConfiguration: React.FC<Props> = React.memo(({ columns, onChange }) 
             onChange(newColumns);
         };
 
-    const checkBoxes = (configs: ColumnConfig[]) =>
+    const checkBoxes = (configs: TableColumnConfig[]) =>
         configs.map(config =>
             config.children ? (
                 <CheckboxGroup

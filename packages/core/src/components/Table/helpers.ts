@@ -1,7 +1,7 @@
 import { columnsWidth } from './columnsWidth';
-import { ColumnConfig } from './types';
+import { TableColumnConfig } from './types';
 
-export const addSizeToColumnConfig = (columnConfigs: ColumnConfig[]): ColumnConfig[] => {
+export const addSizeToColumnConfig = (columnConfigs: TableColumnConfig[]): TableColumnConfig[] => {
     return columnConfigs.map(config => {
         return config.children
             ? { ...config, children: addSizeToColumnConfig(config.children) }
@@ -9,7 +9,7 @@ export const addSizeToColumnConfig = (columnConfigs: ColumnConfig[]): ColumnConf
     });
 };
 
-const getCumulativeTemplate = (configs: ColumnConfig[]): string => {
+const getCumulativeTemplate = (configs: TableColumnConfig[]): string => {
     const cumulativeSize = configs.reduce(
         (acc, curr) =>
             acc.map(
@@ -25,7 +25,7 @@ const getCumulativeTemplate = (configs: ColumnConfig[]): string => {
     return `minmax(${cumulativeSize[0]}px, ${visibleChildrenCount === 1 ? 1 : cumulativeSize[1]}fr)`;
 };
 
-export const getGridTemplateColumns = (configs: ColumnConfig[]) => {
+export const getGridTemplateColumns = (configs: TableColumnConfig[]) => {
     const visibleChildren = configs.filter(({ hidden }) => !hidden),
         visibleChildrenCount = visibleChildren.length;
 
@@ -41,7 +41,7 @@ export const getGridTemplateColumns = (configs: ColumnConfig[]) => {
     return size;
 };
 
-export const changeSize = (width: number, dottedField: string, columnConfigs: ColumnConfig[]) => {
+export const changeSize = (width: number, dottedField: string, columnConfigs: TableColumnConfig[]) => {
     const newColumnConfigs = [...columnConfigs],
         [currField, nextField] = dottedField.split(/\.(.+)/),
         index = columnConfigs.findIndex(config => config.field === currField);

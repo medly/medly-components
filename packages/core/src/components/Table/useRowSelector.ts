@@ -9,7 +9,7 @@ type Result = {
 };
 
 const useRowSelector = (
-    data: Data[],
+    data: Data,
     initialSelectedIds: number[],
     rowSelectionDisableKey: string,
     rowIdentifier: string,

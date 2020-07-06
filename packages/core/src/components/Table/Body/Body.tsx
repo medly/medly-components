@@ -2,7 +2,7 @@ import React from 'react';
 import Text from '../../Text';
 import { GroupCell } from '../GroupCell';
 import { getGridTemplateColumns } from '../helpers';
-import { ColumnConfig } from '../types';
+import { TableColumnConfig } from '../types';
 import { TBody } from './Body.styled';
 import Cell from './Cell';
 import Row from './Row';
@@ -24,7 +24,7 @@ const Body: React.FC<Props> = React.memo(props => {
         showShadowAfterFrozenElement
     } = props;
 
-    const getRow = (rowData: any = {}, configs: ColumnConfig[] = columns, field = '') =>
+    const getRow = (rowData: any = {}, configs: TableColumnConfig[] = columns, field = '') =>
             configs.map(config => {
                 const fieldName = `${field && `${field}.`}${config.field}`;
 

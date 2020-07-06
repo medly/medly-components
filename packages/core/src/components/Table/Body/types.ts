@@ -1,8 +1,8 @@
-import { ColumnConfig, Data } from '../types';
+import { Data, TableColumnConfig } from '../types';
 
 export interface Props {
-    data: Data[];
-    columns: ColumnConfig[];
+    data: Data;
+    columns: TableColumnConfig[];
     selectedRowIds?: number[];
     rowIdentifier: string;
     rowSelectionDisableKey?: string;

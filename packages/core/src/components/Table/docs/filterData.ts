@@ -3,7 +3,7 @@ import { Data, SortOrder } from '../types';
 // @ts-ignore
 const getNestedValue = (obj: {}, dottedKey: string) => dottedKey.split('.').reduce((acc, curr) => acc[curr], obj);
 
-export const filterData = (dottedField: string, order: SortOrder, tableData: Data[]) => {
+export const filterData = (dottedField: string, order: SortOrder, tableData: Data) => {
     const newArray = [...tableData];
     newArray.sort((first, second) => {
         const firstField = getNestedValue(first, dottedField);

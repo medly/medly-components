@@ -1,18 +1,18 @@
 import { styled } from '@medly-components/utils';
 import React from 'react';
 import Chip from '../../Chip';
-import { ColumnConfig } from '../types';
+import { TableColumnConfig } from '../types';
 
 const StyledDiv = styled('div')`
         display: flex;
         flex-direction: column;
     `,
-    FavoriteColor: ColumnConfig['component'] = ({ data: colors, disabled }) => {
+    FavoriteColor: TableColumnConfig['component'] = ({ data: colors, disabled }) => {
         const chips = colors.split(',').map((color: string) => <Chip key={color} label={color} disabled={disabled} />);
         return <StyledDiv>{chips}</StyledDiv>;
     };
 
-const columns: ColumnConfig[] = [
+const columns: TableColumnConfig[] = [
     { title: 'Name', field: 'name', formatter: 'text-short', sortable: true, fitContent: true },
     {
         title: 'Marks',

@@ -2,7 +2,7 @@ import React, { useCallback, useMemo, useState } from 'react';
 import Checkbox from '../../Checkbox';
 import { GroupCell, GroupCellTitle } from '../GroupCell';
 import { changeSize, getGridTemplateColumns } from '../helpers';
-import { ColumnConfig, SortOrder } from '../types';
+import { SortOrder, TableColumnConfig } from '../types';
 import { THead } from './Head.styled';
 import HeadCell from './HeadCell';
 import HeadRow from './HeadRow';
@@ -52,7 +52,7 @@ const Head: React.FC<Props> = React.memo(props => {
             [isLoading, isAnyRowSelected, isEachRowSelected, isSelectAllDisable, handleSelectAllClick]
         ),
         headCell = useCallback(
-            (configs: ColumnConfig[], field = '') =>
+            (configs: TableColumnConfig[], field = '') =>
                 configs.map(config => {
                     const fieldName = field ? `${field}.${config.field}` : config.field;
                     return config.children ? (

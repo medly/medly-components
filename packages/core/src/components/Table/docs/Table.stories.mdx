@@ -8,11 +8,11 @@ import { filterData } from './filterData';
 import columns from './columns';
 import data from './data';
 
-<Meta title="Core" component={Table} />
+<Meta title="In Review" component={Table} />
 
 # Table
 
-Table to show set of data
+Simple `Table` component to show set of data.
 
 <Preview withToolbar>
     <Story name="Table">
@@ -46,22 +46,17 @@ Table to show set of data
 
 ### Table Prop Types
 
-You can use Table Prop types like below to typesafe your column config.
+You can import `TableColumnConfig` to typesafe your column config.
 
 ```ts
-import { GetComponentProps } from '@medly-components/utils';
-import { Table } from '@medly-components/core';
+import { TableColumnConfig } from '@medly-components/utils';
 
-type TableProps = GetComponentProps<typeof Table>;
-
-type ColumnConfig = TableProps['columns'];
+const columns: TableColumnConfig[] = [{}, {}];
 ```
 
 #### Column config type
 
 <Props of={stories.ColumnConfigInterface} />
-
-There is one more field `children` you can provide with the same array of column config.
 
 #### TableTheme
 
