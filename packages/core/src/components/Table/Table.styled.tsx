@@ -28,16 +28,27 @@ export const TableStyled = styled('table')<TableStyledProps>`
         box-sizing: border-box;
     }
 
+    &::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: ${({ theme }) => theme.table.scrollBarColor};
+    }
+
+    &::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+
     &::-webkit-scrollbar {
         height: 0.5rem;
         width: 0.5rem;
     }
-    &::-webkit-scrollbar-track {
+
+    &::-webkit-scrollbar-track:horizontal {
+        margin: 0 0.4rem;
         background-color: transparent;
-        margin: 0.8rem;
     }
-    &::-webkit-scrollbar-thumb {
-        border-radius: 1rem;
-        background-color: ${({ theme }) => theme.table.scrollBarColor};
+
+    &::-webkit-scrollbar-track:vertical {
+        margin: 0.4rem 0;
+        background-color: transparent;
     }
 `;

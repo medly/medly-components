@@ -3,9 +3,9 @@ import React, { useCallback, useEffect, useMemo, useRef } from 'react';
 import Checkbox from '../../../Checkbox';
 import Text from '../../../Text';
 import * as Styled from './Cell.styled';
-import { Props } from './types';
+import { TableCellProps } from './types';
 
-const Cell: React.FC<Props> & WithStyle = React.memo(props => {
+const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
     const childRef = useRef(null),
         {
             addColumnMaxSize,
@@ -18,6 +18,7 @@ const Cell: React.FC<Props> & WithStyle = React.memo(props => {
             onRowSelection,
             dottedFieldName,
             isLoading,
+            showShadowAtRight,
             ...restProps
         } = props,
         isRowSelectionCell = useMemo(() => config.field === 'medly-table-checkbox', [config.field]);
@@ -76,6 +77,8 @@ const Cell: React.FC<Props> & WithStyle = React.memo(props => {
             align={textAlign}
             onClick={handleCellClick}
             isRowSelectionCell={isRowSelectionCell}
+            showShadowAtRight={isRowSelectionCell && showShadowAtRight}
+            showSelectedRowBorder={isRowSelectionCell && isRowSelected}
             {...restProps}
         >
             {isLoading ? <Styled.LoadingDiv ref={childRef} /> : isRowSelectionCell ? rowSelectionCheckbox : formattedCell()}

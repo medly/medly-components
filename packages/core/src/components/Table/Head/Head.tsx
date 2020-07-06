@@ -20,7 +20,9 @@ const Head: React.FC<Props> = React.memo(props => {
         onSelectAllClick,
         maxColumnSizes,
         defaultSortOrder,
-        defaultSortField
+        defaultSortField,
+        showShadowAtBottom,
+        showShadowAfterFrozenElement
     } = props;
 
     const [sortField, setSortField] = useState(defaultSortField);
@@ -80,16 +82,17 @@ const Head: React.FC<Props> = React.memo(props => {
                             defaultSortOrder={defaultSortOrder}
                             onSortChange={handleSortChange}
                             onWidthChange={handleWidthChange}
+                            showShadowAtRight={config.field === 'medly-table-checkbox' && showShadowAfterFrozenElement}
                         >
                             {config.field === 'medly-table-checkbox' ? selectAllCheckBox : config.title}
                         </HeadCell>
                     );
                 }),
-            [sortField, maxColumnSizes, selectAllCheckBox]
+            [sortField, maxColumnSizes, selectAllCheckBox, showShadowAfterFrozenElement]
         );
 
     return (
-        <THead>
+        <THead showShadowAtBottom={showShadowAtBottom}>
             <HeadRow gridTemplateColumns={getGridTemplateColumns(columns)}>{headCell(columns)}</HeadRow>
         </THead>
     );

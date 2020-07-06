@@ -3,16 +3,30 @@ import { clearMarginPadding, css, styled } from '@medly-components/utils';
 import Checkbox from '../../../Checkbox';
 import Text from '../../../Text';
 import { getBorder } from '../../Table.styled';
+import { HeadCellStyledProps } from './types';
 
-const frozen = () => css`
-    z-index: 3;
-    left: 0;
-    * {
+const frozenStyle = css`
         z-index: 3;
-    }
-`;
+        left: 0;
+        * {
+            z-index: 3;
+        }
+    `,
+    shadowStyle = css`
+        &&& {
+            overflow: visible;
+            &::after {
+                content: '';
+                right: -1.2rem;
+                height: 100%;
+                width: 1.2rem;
+                position: absolute;
+                background: linear-gradient(to right, rgba(96, 120, 144, 0.15), rgba(19, 24, 29, 0));
+            }
+        }
+    `;
 
-export const HeadCellStyled = styled.th<{ hidden?: boolean; frozen?: boolean; align?: 'left' | 'right' | 'center' }>`
+export const HeadCellStyled = styled.th<HeadCellStyledProps>`
     width: 100%;
     height: 100%;
     display: flex;
@@ -22,17 +36,18 @@ export const HeadCellStyled = styled.th<{ hidden?: boolean; frozen?: boolean; al
     opacity: ${({ hidden }) => (hidden ? 0 : 1)};
     position: ${({ frozen }) => (frozen ? 'sticky' : 'relative')};
 
-    ${Checkbox.Style} {
-        margin: 0.4rem;
-    }
-
-    ${props => props.frozen && frozen()}
-
     &:not(:last-child) {
         &::after {
             ${getBorder('right')}
         }
     }
+
+    ${Checkbox.Style} {
+        margin: 0.4rem;
+    }
+
+    ${props => props.frozen && frozenStyle}
+    ${props => props.showShadowAtRight && shadowStyle}
 `;
 
 export const ResizeHandler = styled('span')`

@@ -2,7 +2,7 @@ import { SvgIcon } from '@medly-components/icons';
 import { clearMarginPadding, css, styled } from '@medly-components/utils';
 import Checkbox from '../../../Checkbox';
 import Text from '../../../Text';
-import { StyledProps } from './types';
+import { TableCellStyledProps } from './types';
 
 export const CustomComponentWrapper = styled('div')``;
 
@@ -33,24 +33,48 @@ export const LoadingDiv = styled('div')`
     position: relative;
 `;
 
-const wrapTextStyle = () => css`
-    ${Text.Style} {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-`;
-
-const frozenStyle = () => css`
-    left: 0;
-    z-index: 1;
-
-    * {
+const wrapTextStyle = css`
+        ${Text.Style} {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    `,
+    frozenStyle = css`
+        left: 0;
         z-index: 1;
-    }
-`;
 
-export const Cell = styled('td')<StyledProps>`
+        * {
+            z-index: 1;
+        }
+    `,
+    selectedBorderStyle = css`
+        &&& {
+            &::before {
+                content: '';
+                left: 0;
+                top: -0.05rem;
+                z-index: 2;
+                height: calc(100% + 0.1rem);
+                width: 0.4rem;
+                position: absolute;
+                background-color: ${({ theme }) => theme.table.row.selectedBorderColor};
+            }
+        }
+    `,
+    shadowStyle = css`
+        overflow: visible;
+        &::after {
+            content: '';
+            right: -1.2rem;
+            height: 100%;
+            width: 1.2rem;
+            position: absolute;
+            background: linear-gradient(to right, rgba(96, 120, 144, 0.15), rgba(19, 24, 29, 0));
+        }
+    `;
+
+export const Cell = styled('td')<TableCellStyledProps>`
     width: 100%;
     height: 100%;
     display: flex;
@@ -63,14 +87,16 @@ export const Cell = styled('td')<StyledProps>`
     justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : align === 'center' ? 'center' : 'flex-start')};
 
     ${Checkbox.Style} {
-        ${SvgIcon} {
+        ${SvgIcon} { 
             margin-right: 0;
         }
         ${clearMarginPadding()};
     }
 
-    ${props => props.wrapText && wrapTextStyle}
     ${props => props.frozen && frozenStyle}
+    ${props => props.wrapText && wrapTextStyle}
+    ${props => props.showShadowAtRight && shadowStyle};
+    ${props => props.showSelectedRowBorder && selectedBorderStyle}
 `;
 Cell.defaultProps = {
     wrapText: true

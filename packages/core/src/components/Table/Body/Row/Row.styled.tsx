@@ -1,21 +1,6 @@
-import { css, styled } from '@medly-components/utils';
+import { styled } from '@medly-components/utils';
 import { GridTemplateProps } from '../../types';
 import { Props } from './types';
-
-const selectedBorder = css`
-    &&& {
-        &::before {
-            content: '';
-            left: 0;
-            top: -0.05rem;
-            z-index: 2;
-            height: calc(100% + 0.1rem);
-            width: 0.4rem;
-            position: absolute;
-            background-color: ${({ theme }) => theme.table.row.selectedBorderColor};
-        }
-    }
-`;
 
 export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({
     style: {
@@ -24,7 +9,6 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
 }))<Props>`
     min-width: fit-content;
     display: grid;
-    position: relative;
     align-items: center;
     cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
 
@@ -50,8 +34,6 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
     &:not(:last-child) {
         border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
     }
-
-    ${({ isSelected }) => isSelected && selectedBorder}
 `;
 
 export const NoResult = styled(Row)`

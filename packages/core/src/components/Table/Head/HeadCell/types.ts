@@ -1,6 +1,13 @@
 export type SortOrder = 'asc' | 'desc';
 
-export interface HeadCellProps {
+export type HeadCellStyledProps = {
+    hidden?: boolean;
+    frozen?: boolean;
+    align?: 'left' | 'right' | 'center';
+    showShadowAtRight?: boolean;
+};
+
+export type HeadCellProps = {
     hidden?: boolean;
     frozen?: boolean;
     field?: string;
@@ -10,7 +17,8 @@ export interface HeadCellProps {
     sortField?: string;
     isLoading?: boolean;
     defaultSortOrder?: SortOrder;
+    showShadowAtRight?: boolean;
     onWidthChange?: (width: number, key: string) => void;
     onSortChange?: (field: string, order: SortOrder) => void;
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
-}
+};

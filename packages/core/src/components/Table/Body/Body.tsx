@@ -20,7 +20,8 @@ const Body: React.FC<Props> = React.memo(props => {
         rowSelectionDisableKey,
         onRowSelection,
         addColumnMaxSize,
-        isLoading
+        isLoading,
+        showShadowAfterFrozenElement
     } = props;
 
     const getRow = (rowData: any = {}, configs: ColumnConfig[] = columns, field = '') =>
@@ -46,6 +47,7 @@ const Body: React.FC<Props> = React.memo(props => {
                         data={rowData[config.field]}
                         rowId={rowData[rowIdentifier]}
                         dottedFieldName={fieldName}
+                        showShadowAtRight={showShadowAfterFrozenElement}
                         isRowSelected={selectedRowIds.includes(rowData[rowIdentifier])}
                         {...{ config, onRowSelection, addColumnMaxSize }}
                     />

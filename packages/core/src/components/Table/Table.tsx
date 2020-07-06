@@ -8,6 +8,7 @@ import { maxColumnSizeReducer } from './maxColumnSizeReducer';
 import { TableStyled } from './Table.styled';
 import { ColumnConfig, Props, StaticProps } from './types';
 import useRowSelector from './useRowSelector';
+import { useScrollState } from './useScrollState';
 
 const loadingBodyData = [{ id: 0 }, { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }];
 const checkboxColumnConfig: ColumnConfig = {
@@ -38,7 +39,8 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
 
         const [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
             [columns, setColumns] = useState(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns])),
-            addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]);
+            addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]),
+            [scrollState, handleScroll] = useScrollState();
 
         const isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]),
             isSelectAllDisable = useMemo(() => data.every(dt => dt[rowSelectionDisableKey]), [data, rowSelectionDisableKey]),
@@ -54,7 +56,7 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
         }, [selectedIds]);
 
         return (
-            <TableStyled ref={ref} isRowClickable={isRowClickable} {...restProps}>
+            <TableStyled ref={ref} {...restProps} onScroll={handleScroll} isRowClickable={isRowClickable}>
                 <Head
                     {...{
                         onSort,
@@ -67,7 +69,9 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
                         defaultSortField,
                         defaultSortOrder,
                         onSelectAllClick: toggleId,
-                        isSelectAllDisable: isSelectAllDisable
+                        isSelectAllDisable: isSelectAllDisable,
+                        showShadowAtBottom: !scrollState.isScrolledToTop,
+                        showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
                     }}
                 />
                 <Body
@@ -81,7 +85,8 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
                         selectedRowIds: selectedIds,
                         onRowSelection: toggleId,
                         data: isLoading ? loadingBodyData : data,
-                        onRowClick: !isLoading && onRowClick
+                        onRowClick: !isLoading && onRowClick,
+                        showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
                     }}
                 />
             </TableStyled>

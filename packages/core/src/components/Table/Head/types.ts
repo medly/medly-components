@@ -11,5 +11,7 @@ export interface Props {
     maxColumnSizes: { [k: string]: number };
     defaultSortField?: string;
     defaultSortOrder?: SortOrder;
+    showShadowAtBottom: boolean;
+    showShadowAfterFrozenElement?: boolean;
     onSort?: (field: string, order: SortOrder) => void;
 }
