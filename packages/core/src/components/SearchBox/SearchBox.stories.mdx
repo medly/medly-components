@@ -22,10 +22,14 @@ import { SearchBox } from './SearchBox';
                     setOptions([]);
                 }
             };
+            const onOptionSelectedHandler = option => {
+                console.log('option', option);
+            };
             return (
                 <SearchBox
                     placeholder="Search"
                     onSearchInputChange={onSearchInputChangeHandler}
+                    onOptionSelected={onOptionSelectedHandler}
                     options={options}
                     searchBoxSize={select('boxSize', boxSize, 'M')}
                 />
@@ -52,13 +56,13 @@ import { SearchBox } from './SearchBox';
 
 #### Pending things in story
 
--   [ ] onOptionSelected
--   [ ] deploy in storybook for feedback
 -   [ ] unit tests
 -   [ ] maxHeight
 -   [ ] onFocus and onBlur
 -   [ ] rgba fix
 -   [ ] refactor
+-   [x] deploy in storybook for feedback
+-   [x] onOptionSelected
 -   [x] keyboard selection
 -   [x] UI Styles
 -   [x] re-add useMemo

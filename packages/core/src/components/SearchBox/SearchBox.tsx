@@ -57,7 +57,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                         inputRef.current.value = option.label;
                         setActive(false);
                         showOptions(false);
-                        // onOptionSelected(option);
+                        onOptionSelected(option);
                     } else {
                         inputRef.current.focus();
                     }
