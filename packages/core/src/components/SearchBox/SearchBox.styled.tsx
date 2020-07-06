@@ -81,7 +81,7 @@ const getMediumOptionStyle = () => {
 
 const activeOptionStyle = ({ theme }: Props) => {
     return css`
-        border: solid 0.15rem ${theme.searchBox.active.borderColor};
+        border: 0.15rem solid ${theme.searchBox.active.borderColor};
         border-top: 0;
         box-shadow: ${theme.searchBox.options.boxShadow};
         padding-bottom: 1.2rem;
@@ -169,7 +169,7 @@ const nonActiveSearchBoxStyle = ({ theme }: Props) => {
     } = theme;
 
     return css`
-        border-bottom: 0.1rem solid;
+        border-bottom: 0.15rem solid;
         border-color: ${defaultStyle.borderColor};
         border-radius: 4rem;
         transition: border-color 100ms, box-shadow 100ms;
@@ -185,7 +185,6 @@ const nonActiveSearchBoxStyle = ({ theme }: Props) => {
         }
         &:hover {
             ${getBorderAndBoxShadow(hover.borderColor, hover.boxShadow)};
-            border-width: 0.15rem;
         }
         &:focus-within:hover {
             ${getBorderAndBoxShadow(active.borderColor, active.boxShadow)};
@@ -200,7 +199,7 @@ export const SearchBoxWrapper = styled.div<Props & { isActive?: boolean }>`
     outline: none;
     box-sizing: border-box;
     height: ${getSearchBoxSize};
-    border: 0.1rem solid;
+    border: 0.15rem solid;
     position: relative;
 
     ${Options.Style} {
@@ -209,6 +208,7 @@ export const SearchBoxWrapper = styled.div<Props & { isActive?: boolean }>`
         box-sizing: content-box;
         left: -1.1px;
         overflow: hidden;
+        background-color: ${({ theme }) => theme.colors.white};
         ${({ isActive }) => (isActive ? activeOptionStyle : nonActiveOptionStyle)};
 
         ${OptionStyled} {

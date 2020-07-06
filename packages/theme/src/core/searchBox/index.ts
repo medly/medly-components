@@ -25,13 +25,13 @@ const SearchBox = {
     },
     active: {
         borderColor: colors.communityBlue[500],
-        boxShadow: '0 -0.4rem 0.8rem rgba(18, 106, 250, 0.2)',
+        boxShadow: '0 0.2rem 0.8rem rgba(18, 106, 250, 0.2)',
         placeholderTextColor: colors.grey[300],
         iconColor: colors.communityBlue[500],
         iconBg: colors.communityBlue[100]
     },
     options: {
-        boxShadow: '0 0.2rem 0.8rem rgba(18, 106, 250, 0.2)'
+        boxShadow: '0 0.6rem 0.8rem rgba(18, 106, 250, 0.2)'
     }
 };
 
