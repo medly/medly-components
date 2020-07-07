@@ -2,7 +2,7 @@
 
 exports[`Input component should render correctly when fullWidth & required props are falsy 1`] = `
 .c1 {
-  color: #435465;
+  color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -437,7 +437,7 @@ exports[`Input component should render correctly when label and description are 
 
 exports[`Input component should render correctly with all the props given 1`] = `
 .c1 {
-  color: #435465;
+  color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;

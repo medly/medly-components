@@ -98,7 +98,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c2 {
-  color: #435465;
+  color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -785,7 +785,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c2 {
-  color: #435465;
+  color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;

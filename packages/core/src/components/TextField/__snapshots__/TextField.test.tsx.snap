@@ -47,21 +47,21 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 }
 
 .c1 .c4 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb,
 .c1 .sc-AxhUy {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb *,
 .c1 .sc-AxhUy * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1::after {
@@ -71,7 +71,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -292,7 +292,7 @@ exports[`TextField should render asterisk if we pass required prop as true 1`] =
 }
 
 .c2 .c0 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c2:focus-within .c0,
@@ -359,21 +359,21 @@ exports[`TextField should render properly with default props 1`] = `
 }
 
 .c1 .c4 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb,
 .c1 .sc-AxhUy {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb *,
 .c1 .sc-AxhUy * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1::after {
@@ -383,7 +383,7 @@ exports[`TextField should render properly with default props 1`] = `
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -619,21 +619,21 @@ exports[`TextField with filled variant and with label should render default stat
 }
 
 .c1 .c4 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb,
 .c1 .sc-AxhUy {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb *,
 .c1 .sc-AxhUy * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1::after {
@@ -643,7 +643,7 @@ exports[`TextField with filled variant and with label should render default stat
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -873,21 +873,21 @@ exports[`TextField with filled variant and with label should render focus state 
 }
 
 .c1 .c4 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb,
 .c1 .sc-AxhUy {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb *,
 .c1 .sc-AxhUy * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1::after {
@@ -897,7 +897,7 @@ exports[`TextField with filled variant and with label should render focus state 
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1127,21 +1127,21 @@ exports[`TextField with filled variant and without label should render default s
 }
 
 .c1 .c4 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb,
 .c1 .sc-AxhUy {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb *,
 .c1 .sc-AxhUy * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1::after {
@@ -1151,7 +1151,7 @@ exports[`TextField with filled variant and without label should render default s
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1381,21 +1381,21 @@ exports[`TextField with filled variant and without label should render focus sta
 }
 
 .c1 .c4 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb,
 .c1 .sc-AxhUy {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb *,
 .c1 .sc-AxhUy * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1::after {
@@ -1405,7 +1405,7 @@ exports[`TextField with filled variant and without label should render focus sta
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1642,21 +1642,21 @@ exports[`TextField with filled variant should render error state properly  1`] =
 }
 
 .c1 .c4 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb,
 .c1 .sc-AxhUy {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb *,
 .c1 .sc-AxhUy * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c1 ~ .c6 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1::after {
@@ -1666,7 +1666,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1909,7 +1909,7 @@ exports[`TextField with filled variant should render error text properly 1`] = `
 }
 
 .c2 ~ .c0 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c2 ~ .c0,
@@ -1936,7 +1936,7 @@ exports[`TextField with filled variant should render helper text properly 1`] = 
 }
 
 .c2 ~ .c0 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 <span
@@ -2008,21 +2008,21 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 }
 
 .c1 .c7 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .c3,
 .c1 .sc-AxhUy {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .c3 *,
 .c1 .sc-AxhUy * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1::after {
@@ -2032,7 +2032,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -2299,21 +2299,21 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 }
 
 .c1 .c4 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb,
 .c1 .c7 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb *,
 .c1 .c7 * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1::after {
@@ -2323,7 +2323,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -2587,7 +2587,7 @@ exports[`TextField with outlined variant and with label should render default st
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1:hover {
@@ -2829,7 +2829,7 @@ exports[`TextField with outlined variant and with label should render focus stat
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1:hover {
@@ -3071,7 +3071,7 @@ exports[`TextField with outlined variant and without label should render default
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1:hover {
@@ -3313,7 +3313,7 @@ exports[`TextField with outlined variant and without label should render focus s
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1:hover {
@@ -3562,7 +3562,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
 }
 
 .c1 ~ .c6 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1:hover {
@@ -3802,7 +3802,7 @@ exports[`TextField with outlined variant should render error text properly 1`] =
 }
 
 .c2 ~ .c0 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c2 ~ .c0,
@@ -3829,7 +3829,7 @@ exports[`TextField with outlined variant should render helper text properly 1`] 
 }
 
 .c2 ~ .c0 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 <span
@@ -3916,7 +3916,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1:hover {
@@ -4195,7 +4195,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1:hover {
@@ -4441,21 +4441,21 @@ exports[`TextField without label should render default state properly 1`] = `
 }
 
 .c1 .c4 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb,
 .c1 .sc-AxhUy {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb *,
 .c1 .sc-AxhUy * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1::after {
@@ -4465,7 +4465,7 @@ exports[`TextField without label should render default state properly 1`] = `
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -4695,21 +4695,21 @@ exports[`TextField without label should render focus state properly  1`] = `
 }
 
 .c1 .c4 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb,
 .c1 .sc-AxhUy {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1 .sc-AxhCb *,
 .c1 .sc-AxhUy * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c1 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c1::after {
@@ -4719,7 +4719,7 @@ exports[`TextField without label should render focus state properly  1`] = `
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }

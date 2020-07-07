@@ -74,7 +74,7 @@ exports[`FieldWithLabel component should render properly when lable is not prese
 
 exports[`FieldWithLabel component should render properly with props labelPosition: bottom, fullWidth: false, fieldWithMaxContent: false 1`] = `
 .c1 {
-  color: #435465;
+  color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -173,7 +173,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 
 exports[`FieldWithLabel component should render properly with props labelPosition: left, fullWidth: true, fieldWithMaxContent: true 1`] = `
 .c1 {
-  color: #435465;
+  color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -273,7 +273,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 
 exports[`FieldWithLabel component should render properly with props labelPosition: right, fullWidth: true, fieldWithMaxContent: false 1`] = `
 .c1 {
-  color: #435465;
+  color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -373,7 +373,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
 
 exports[`FieldWithLabel component should render properly with props labelPosition: top, fullWidth: false, fieldWithMaxContent: true 1`] = `
 .c1 {
-  color: #435465;
+  color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
