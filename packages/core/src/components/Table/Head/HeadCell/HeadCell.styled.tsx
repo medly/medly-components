@@ -34,9 +34,10 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
     display: flex;
     overflow: hidden;
     align-items: flex-end;
-    padding: ${({ hidden }) => (hidden ? '0' : '0.8rem')};
     opacity: ${({ hidden }) => (hidden ? 0 : 1)};
     position: ${({ frozen }) => (frozen ? 'sticky' : 'relative')};
+    cursor: ${({ isRowSelectionCell }) => isRowSelectionCell && 'default'};
+    padding: ${({ hidden, isRowSelectionCell }) => (hidden ? '0' : isRowSelectionCell ? '1.2rem' : '0.8rem')};
 
     &:not(:last-child) {
         &::after {
@@ -45,7 +46,7 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
     }
 
     ${Checkbox.Style} {
-        margin: 0.4rem;
+        ${clearMarginPadding()};
     }
 
     ${props => props.frozen && frozenStyle}
@@ -99,5 +100,6 @@ export const HeadCellButton = styled.button<{ withHoverEffect: boolean; isSelect
     }
     ${SvgIcon} {
         margin-left: 0.4rem;
+        flex-shrink: 0;
     }
 `;

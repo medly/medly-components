@@ -1,4 +1,3 @@
-import { SvgIcon } from '@medly-components/icons';
 import { clearMarginPadding, css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Checkbox from '../../../Checkbox';
@@ -84,14 +83,11 @@ export const Cell = styled('td')<TableCellStyledProps>`
     opacity: ${({ hidden }) => (hidden ? 0 : 1)};
     position: ${({ frozen }) => (frozen ? 'sticky' : 'relative')};
     cursor: ${({ isRowSelectionCell }) => isRowSelectionCell && 'default'};
-    padding: ${({ hidden, isRowSelectionCell }) => (hidden ? '0' : isRowSelectionCell ? '1.2rem' : '1.3rem 1.6rem')};
+    padding: ${({ hidden, isRowSelectionCell }) => (hidden ? '0' : isRowSelectionCell ? '1.2rem' : '1.2rem 1.6rem')};
     justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : align === 'center' ? 'center' : 'flex-start')};
 
     ${Checkbox.Style} {
-        ${SvgIcon} { 
-            margin-right: 0;
-        }
-        ${clearMarginPadding()};
+       ${clearMarginPadding()};
     }
 
     ${props => props.frozen && frozenStyle}

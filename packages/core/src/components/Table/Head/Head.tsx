@@ -82,6 +82,7 @@ const Head: React.FC<Props> = React.memo(props => {
                             defaultSortOrder={defaultSortOrder}
                             onSortChange={handleSortChange}
                             onWidthChange={handleWidthChange}
+                            isRowSelectionCell={config.field === 'medly-table-checkbox'}
                             showShadowAtRight={config.field === 'medly-table-checkbox' && showShadowAfterFrozenElement}
                         >
                             {config.field === 'medly-table-checkbox' ? selectAllCheckBox : config.title}

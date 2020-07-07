@@ -70,7 +70,14 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     );
 
     const sortIcon = useMemo(
-        () => (sortField !== field ? <DropdownIcon /> : sortState === 'desc' ? <ArrowDropDownIcon /> : <ArrowDropUpIcon />),
+        () =>
+            sortField !== field ? (
+                <DropdownIcon size="S" />
+            ) : sortState === 'desc' ? (
+                <ArrowDropDownIcon size="S" />
+            ) : (
+                <ArrowDropUpIcon size="S" />
+            ),
         [sortField, field, sortState]
     );
 
@@ -79,7 +86,9 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
             {React.Children.map(children, c => {
                 return isValidStringOrNumber(c) ? (
                     <HeadCellButton onClick={handleSortIconClick} isSelected={sortField === field && !isLoading} withHoverEffect={sortable}>
-                        <Text textVariant="h5">{c}</Text>
+                        <Text textVariant="h5" uppercase>
+                            {c}
+                        </Text>
                         {sortable && sortIcon}
                     </HeadCellButton>
                 ) : (

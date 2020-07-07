@@ -49,6 +49,7 @@ export const StyledCheckbox = styled.div`
         transform: scale(0);
         width: 100%;
         height: 100%;
+        margin-right: 0.05rem;
     }
 `;
 
