@@ -264,7 +264,7 @@ exports[`SearchBox should render options when user search option specified 1`] =
   border: 0.15rem solid;
   position: relative;
   border-radius: 2rem 2rem 0 0;
-  box-shadow: 0 -0.4rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
   border-color: #005AEE;
   border-bottom-color: transparent;
   border-width: 0.15rem;
@@ -279,7 +279,7 @@ exports[`SearchBox should render options when user search option specified 1`] =
   background-color: #ffffff;
   border: 0.15rem solid #005AEE;
   border-top: 0;
-  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.6rem 0.8rem rgba(18,106,250,0.2);
   padding-bottom: 1.2rem;
 }
 
@@ -599,7 +599,7 @@ exports[`SearchBox should render text box of specified size 1`] = `
 
 .c0:focus-within {
   border-color: #005AEE;
-  box-shadow: 0 -0.4rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c0:focus-within .c3 .c5 * {
@@ -613,7 +613,7 @@ exports[`SearchBox should render text box of specified size 1`] = `
 
 .c0:focus-within:hover {
   border-color: #005AEE;
-  box-shadow: 0 -0.4rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c1 {

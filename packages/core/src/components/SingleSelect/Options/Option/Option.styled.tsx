@@ -11,7 +11,8 @@ export const OptionStyled = styled('li').attrs(({ theme: { select } }) => ({ ...
     align-items: center;
     position: relative;
     color: ${({ disabled, textColor, disableTextColor }) => (disabled ? disableTextColor : textColor)};
-    background-color: ${({ bgColor }) => bgColor};
+    background-color: ${({ bgColor, highlightSelected, selected, hoverBgColor }) =>
+        selected && highlightSelected ? hoverBgColor : bgColor};
 
     &:hover {
         background-color: ${({ disabled, hoverBgColor, bgColor }) => (disabled ? bgColor : hoverBgColor)};

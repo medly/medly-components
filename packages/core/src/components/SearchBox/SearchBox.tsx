@@ -111,7 +111,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                     ref={inputRef}
                 />
                 {areOptionsVisible && (
-                    <Options ref={optionsRef} options={options} variant="filled" onOptionClick={handleOptionClick}></Options>
+                    <Options ref={optionsRef} options={options} highlightSelected={true} variant="filled" onOptionClick={handleOptionClick}></Options>
                 )}
                 <Styled.CloseIconWrapper isTyping={isTyping} searchBoxSize={searchBoxSize}>
                     {isTyping && <CloseIcon onClick={clearSearchText} />}

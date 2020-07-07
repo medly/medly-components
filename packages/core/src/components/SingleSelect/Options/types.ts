@@ -6,6 +6,7 @@ export interface OptionsProps extends HTMLProps<HTMLUListElement> {
     options: Option[];
     variant: 'outlined' | 'filled';
     isNested?: boolean;
+    highlightSelected?: boolean;
     onOptionClick: (option: Option | React.MouseEvent<HTMLLIElement>) => void;
 }
 

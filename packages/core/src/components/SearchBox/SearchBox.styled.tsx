@@ -211,6 +211,14 @@ export const SearchBoxWrapper = styled.div<Props & { isActive?: boolean }>`
         background-color: ${({ theme }) => theme.colors.white};
         ${({ isActive }) => (isActive ? activeOptionStyle : nonActiveOptionStyle)};
 
+        svg {
+            display: none;
+        }
+
+        strong {
+            font-weight: normal;
+        }
+
         ${OptionStyled} {
             &:hover {
                 background-color: ${({ theme }) => theme.colors.grey[50]};
