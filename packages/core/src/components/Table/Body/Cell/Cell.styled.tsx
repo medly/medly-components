@@ -53,9 +53,9 @@ const wrapTextStyle = css`
             &::before {
                 content: '';
                 left: 0;
-                top: -0.05rem;
+                top: 0;
                 z-index: 2;
-                height: calc(100% + 0.1rem);
+                height: 100%;
                 width: 0.4rem;
                 position: absolute;
                 background-color: ${({ theme }) => theme.table.row.selectedBorderColor};
