@@ -20,14 +20,22 @@ export interface TableTheme {
             bgColor: {
                 default: string;
                 hovered: string;
-                selected: string;
                 pressed: string;
+                selected: {
+                    default: string;
+                    hovered: string;
+                    pressed: string;
+                };
             };
             textColor: {
                 default: string;
                 hovered: string;
-                selected: string;
                 pressed: string;
+                selected: {
+                    default: string;
+                    hovered: string;
+                    pressed: string;
+                };
             };
         };
     };

@@ -24,13 +24,21 @@ const table: TableTheme = {
                 default: colors.white,
                 hovered: colors.grey[50],
                 pressed: colors.grey[100],
-                selected: colors.communityBlue[100]
+                selected: {
+                    default: colors.communityBlue[100],
+                    hovered: colors.communityBlue[100],
+                    pressed: colors.communityBlue[200]
+                }
             },
             textColor: {
-                default: colors.black,
-                hovered: colors.black,
+                default: colors.grey[800],
+                hovered: colors.grey[900],
                 pressed: colors.black,
-                selected: colors.communityBlue[500]
+                selected: {
+                    default: colors.communityBlue[500],
+                    hovered: colors.communityBlue[500],
+                    pressed: colors.communityBlue[500]
+                }
             }
         }
     }

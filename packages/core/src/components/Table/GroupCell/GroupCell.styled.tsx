@@ -23,6 +23,7 @@ export const GroupCellTitle = styled(Text.Style)`
     text-overflow: initial;
     overflow: auto;
     white-space: normal;
+    color: ${({ theme }) => theme.table.header.cell.textColor.default};
     &::after {
         ${getBorder('bottom')}
     }

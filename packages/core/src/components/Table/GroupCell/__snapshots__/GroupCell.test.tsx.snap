@@ -64,6 +64,7 @@ exports[`GroupCell should render GroupCellTitle properly 1`] = `
   text-overflow: initial;
   overflow: auto;
   white-space: normal;
+  color: #435465;
 }
 
 .c0::after {

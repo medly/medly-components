@@ -1,4 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
+import { Theme } from '@medly-components/theme/src';
 import { clearMarginPadding, css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Checkbox from '../../../Checkbox';
@@ -62,15 +63,20 @@ export const ResizeHandler = styled('span')`
     cursor: ew-resize;
     position: absolute;
 `;
-const getStyle = (styleType: 'default' | 'hovered' | 'pressed' | 'selected') => css`
-    background-color: ${({ theme }) => theme.table.header.cell.bgColor[styleType]};
-    color: ${({ theme }) => theme.table.header.cell.textColor[styleType]};
-    ${SvgIcon} {
-        * {
-            fill: ${({ theme }) => theme.table.header.cell.textColor[styleType]};
+const getStyle = (theme: Theme, styleType: 'default' | 'hovered' | 'pressed', isSelected = false) => {
+    const cellColors = theme.table.header.cell,
+        bgColor = isSelected ? cellColors.bgColor.selected[styleType] : cellColors.bgColor[styleType],
+        textColor = isSelected ? cellColors.textColor.selected[styleType] : cellColors.textColor[styleType];
+    return css`
+        background-color: ${bgColor};
+        color: ${textColor};
+        ${SvgIcon} {
+            * {
+                fill: ${textColor};
+            }
         }
-    }
-`;
+    `;
+};
 
 export const HeadCellButton = styled.button<{ withHoverEffect: boolean; isSelected: boolean }>`
     border: 0;
@@ -82,14 +88,14 @@ export const HeadCellButton = styled.button<{ withHoverEffect: boolean; isSelect
     font-family: inherit;
     border-radius: 0.8rem;
     cursor: ${({ withHoverEffect }) => (withHoverEffect ? 'pointer' : 'default')};
-    ${({ isSelected }) => getStyle(isSelected ? 'selected' : 'default')}
+    ${({ isSelected, theme }) => getStyle(theme, 'default', isSelected)}
 
     &:hover {
-        ${({ isSelected, withHoverEffect }) => withHoverEffect && !isSelected && getStyle('hovered')}
+        ${({ isSelected, withHoverEffect, theme }) => withHoverEffect && getStyle(theme, 'hovered', isSelected)}
     }
 
     &:active {
-        ${getStyle('pressed')}
+        ${({ isSelected, theme }) => getStyle(theme, 'pressed', isSelected)}
     }
 
     ${Text.Style} {
