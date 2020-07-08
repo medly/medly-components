@@ -206,7 +206,7 @@ export const SearchBoxWrapper = styled.div<Props & { isActive?: boolean; areOpti
         box-shadow: none;
         border: none;
         box-sizing: content-box;
-        left: -1px;
+        left: -1.5px;
         overflow: hidden;
         background-color: ${({ theme }) => theme.colors.white};
         ${({ isActive }) => (isActive ? activeOptionStyle : nonActiveOptionStyle)};
