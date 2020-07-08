@@ -207,7 +207,7 @@ exports[`SearchBox should render options when user search option specified 1`] =
   box-shadow: none;
   border: none;
   box-sizing: content-box;
-  left: -1.1px;
+  left: -1px;
   overflow: hidden;
   background-color: #ffffff;
   border: none;
@@ -216,6 +216,14 @@ exports[`SearchBox should render options when user search option specified 1`] =
 
 .c14 .c2::before {
   display: none;
+}
+
+.c14 .c2 svg {
+  display: none;
+}
+
+.c14 .c2 strong {
+  font-weight: normal;
 }
 
 .c14 .c2 .c4:hover {
@@ -261,23 +269,22 @@ exports[`SearchBox should render options when user search option specified 1`] =
   outline: none;
   box-sizing: border-box;
   height: 4rem;
-  border: 0.15rem solid;
+  border: 1.5px solid;
   position: relative;
   border-radius: 2rem 2rem 0 0;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
   border-color: #005AEE;
-  border-bottom-color: transparent;
-  border-width: 0.15rem;
+  border-width: 1.5px;
 }
 
 .c0 .c2 {
   box-shadow: none;
   border: none;
   box-sizing: content-box;
-  left: -1.1px;
+  left: -1px;
   overflow: hidden;
   background-color: #ffffff;
-  border: 0.15rem solid #005AEE;
+  border: 1.5px solid #005AEE;
   border-top: 0;
   box-shadow: 0 0.6rem 0.8rem rgba(18,106,250,0.2);
   padding-bottom: 1.2rem;
@@ -289,6 +296,14 @@ exports[`SearchBox should render options when user search option specified 1`] =
   border-top: 0.1rem solid #dfe4e9;
   height: 0.1rem;
   margin: 0 auto 0.8rem;
+}
+
+.c0 .c2 svg {
+  display: none;
+}
+
+.c0 .c2 strong {
+  font-weight: normal;
 }
 
 .c0 .c2 .c4:hover {
@@ -539,10 +554,10 @@ exports[`SearchBox should render text box of specified size 1`] = `
   outline: none;
   box-sizing: border-box;
   height: 4rem;
-  border: 0.15rem solid;
+  border: 1.5px solid;
   position: relative;
-  border-radius: 2rem 2rem 0 0;
-  border-bottom: 0.15rem solid;
+  border-radius: 4rem;
+  border-bottom: 1.5px solid;
   border-color: #98A7B7;
   border-radius: 4rem;
   -webkit-transition: border-color 100ms,box-shadow 100ms;
@@ -553,7 +568,7 @@ exports[`SearchBox should render text box of specified size 1`] = `
   box-shadow: none;
   border: none;
   box-sizing: content-box;
-  left: -1.1px;
+  left: -1px;
   overflow: hidden;
   background-color: #ffffff;
   border: none;
@@ -562,6 +577,14 @@ exports[`SearchBox should render text box of specified size 1`] = `
 
 .c0 .sc-AxhCb::before {
   display: none;
+}
+
+.c0 .sc-AxhCb svg {
+  display: none;
+}
+
+.c0 .sc-AxhCb strong {
+  font-weight: normal;
 }
 
 .c0 .sc-AxhCb .sc-AxiKw:hover {

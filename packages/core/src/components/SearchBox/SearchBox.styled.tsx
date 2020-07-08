@@ -21,9 +21,9 @@ const getIconWrapperStyle = ({ theme, searchBoxSize }: Props) => {
     `;
 };
 
-const getSmallOptionStyle = () => {
+const getSmallOptionStyle = ({ areOptionsVisible }: { areOptionsVisible?: boolean }) => {
     return css`
-        border-radius: 2rem 2rem 0 0;
+        border-radius: ${areOptionsVisible ? '2rem 2rem 0 0' : '4rem'};
         input {
             font-size: 1.4rem;
             line-height: 2.2rem;
@@ -50,9 +50,9 @@ const getSmallOptionStyle = () => {
     `;
 };
 
-const getMediumOptionStyle = () => {
+const getMediumOptionStyle = ({ areOptionsVisible }: { areOptionsVisible?: boolean }) => {
     return css`
-        border-radius: 2.5rem 2.5rem 0 0;
+        border-radius: ${areOptionsVisible ? '2.5rem 2.5rem 0 0' : '4rem'};
         input {
             font-size: 1.6rem;
             line-height: 2.6rem;
@@ -73,15 +73,12 @@ const getMediumOptionStyle = () => {
                 width: 82%;
             }
         }
-        ${SvgIcon} {
-            padding: 0.4rem;
-        }
     `;
 };
 
 const activeOptionStyle = ({ theme }: Props) => {
     return css`
-        border: 0.15rem solid ${theme.searchBox.active.borderColor};
+        border: 1.5px solid ${theme.searchBox.active.borderColor};
         border-top: 0;
         box-shadow: ${theme.searchBox.options.boxShadow};
         padding-bottom: 1.2rem;
@@ -158,8 +155,7 @@ const activeSearchBoxStyle = ({ theme }: Props) => {
     return css`
         box-shadow: ${theme.searchBox.active.boxShadow};
         border-color: ${active.borderColor};
-        border-bottom-color: transparent;
-        border-width: 0.15rem;
+        border-width: 1.5px;
     `;
 };
 
@@ -169,7 +165,7 @@ const nonActiveSearchBoxStyle = ({ theme }: Props) => {
     } = theme;
 
     return css`
-        border-bottom: 0.15rem solid;
+        border-bottom: 1.5px solid;
         border-color: ${defaultStyle.borderColor};
         border-radius: 4rem;
         transition: border-color 100ms, box-shadow 100ms;
@@ -192,21 +188,21 @@ const nonActiveSearchBoxStyle = ({ theme }: Props) => {
     `;
 };
 
-export const SearchBoxWrapper = styled.div<Props & { isActive?: boolean }>`
+export const SearchBoxWrapper = styled.div<Props & { isActive?: boolean; areOptionsVisible?: boolean }>`
     width: 25.6rem;
     display: flex;
     flex-direction: row;
     outline: none;
     box-sizing: border-box;
     height: ${getSearchBoxSize};
-    border: 0.15rem solid;
+    border: 1.5px solid;
     position: relative;
 
     ${Options.Style} {
         box-shadow: none;
         border: none;
         box-sizing: content-box;
-        left: -1.1px;
+        left: -1px;
         overflow: hidden;
         background-color: ${({ theme }) => theme.colors.white};
         ${({ isActive }) => (isActive ? activeOptionStyle : nonActiveOptionStyle)};

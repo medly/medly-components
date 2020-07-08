@@ -55,12 +55,10 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 (option: Option) => {
                     if (!option.disabled && !Array.isArray(option.value)) {
                         inputRef.current.value = option.label;
-                        setActive(false);
                         showOptions(false);
                         onOptionSelected(option);
-                    } else {
-                        inputRef.current.focus();
                     }
+                    inputRef.current.focus();
                 },
                 [inputRef.current]
             ),
@@ -77,16 +75,16 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 inputRef.current.setSelectionRange(inputRef.length, inputRef.length);
                 inputRef.current.focus();
             }, [inputRef]),
-            handleKeyUp = () => {
+            handleKeyUp = useCallback(() => {
                 if (inputRef.current.value.length === 0) {
                     isFocused.current = false;
                 }
-            },
-            handleKeyDown = () => {
+            }, []),
+            handleKeyDown = useCallback(() => {
                 if (inputRef.current.value.length === 0) {
                     isFocused.current = false;
                 }
-            };
+            }, []);
 
         useKeyboardNavigation({
             isFocused,
@@ -100,7 +98,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
         });
 
         return (
-            <Styled.SearchBoxWrapper isActive={isActive} searchBoxSize={searchBoxSize}>
+            <Styled.SearchBoxWrapper isActive={isActive} areOptionsVisible={areOptionsVisible} searchBoxSize={searchBoxSize}>
                 <Styled.SearchBox
                     isActive={isActive}
                     placeholder={placeholder}
@@ -111,7 +109,13 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                     ref={inputRef}
                 />
                 {areOptionsVisible && (
-                    <Options ref={optionsRef} options={options} highlightSelected={true} variant="filled" onOptionClick={handleOptionClick}></Options>
+                    <Options
+                        ref={optionsRef}
+                        options={options}
+                        highlightSelected={true}
+                        variant="filled"
+                        onOptionClick={handleOptionClick}
+                    ></Options>
                 )}
                 <Styled.CloseIconWrapper isTyping={isTyping} searchBoxSize={searchBoxSize}>
                     {isTyping && <CloseIcon onClick={clearSearchText} />}
