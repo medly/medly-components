@@ -119,6 +119,7 @@ exports[`SearchBox should render options when user search option specified 1`] =
 
 .c12 {
   width: 4rem;
+  min-width: 4rem;
   height: auto;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -168,6 +169,7 @@ exports[`SearchBox should render options when user search option specified 1`] =
 
 .c8 {
   width: 4rem;
+  min-width: 4rem;
   height: auto;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -345,7 +347,7 @@ exports[`SearchBox should render options when user search option specified 1`] =
   padding: 0;
   outline: none;
   border: 0 none;
-  width: 13.6rem;
+  width: 13rem;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -476,6 +478,7 @@ exports[`SearchBox should render text box of specified size 1`] = `
 
 .c4 {
   width: 4rem;
+  min-width: 4rem;
   height: auto;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -507,6 +510,7 @@ exports[`SearchBox should render text box of specified size 1`] = `
 
 .c2 {
   width: 4rem;
+  min-width: 4rem;
   height: auto;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -645,7 +649,7 @@ exports[`SearchBox should render text box of specified size 1`] = `
   padding: 0;
   outline: none;
   border: 0 none;
-  width: 13.6rem;
+  width: 13rem;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;

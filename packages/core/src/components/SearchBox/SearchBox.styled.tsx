@@ -10,6 +10,7 @@ const getSearchBoxSize = ({ theme, searchBoxSize }: Props) => theme.searchBox.si
 const getIconWrapperStyle = ({ theme, searchBoxSize }: Props) => {
     return css`
         width: ${getSearchBoxSize};
+        min-width: ${getSearchBoxSize};
         height: auto;
         display: inline-flex;
         align-items: center;
@@ -72,6 +73,9 @@ const getMediumOptionStyle = ({ areOptionsVisible }: { areOptionsVisible?: boole
             &::before {
                 width: 82%;
             }
+        }
+        ${SvgIcon} {
+            padding: 0.4rem;
         }
     `;
 };
@@ -232,7 +236,7 @@ export const SearchBox = styled.input<Props & { isActive?: boolean }>`
     padding: 0;
     outline: none;
     border: 0 none;
-    width: 13.6rem;
+    width: 13rem;
     flex-grow: 1;
     font-family: inherit;
 
