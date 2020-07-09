@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.6.0...@medly-components/core@1.7.0) (2020-07-09)
+
+
+### Bug Fixes
+
+* change height of border of the selected row in table component ([7b3f740](https://github.com/medly/medly-components/commit/7b3f7404ded3919c30ec8eb9068b2c006dd4cf93))
+* fix padding related issue in Table and Checkbox component ([71e192a](https://github.com/medly/medly-components/commit/71e192a905cd2846777bbc15d948c713309ffb70))
+* row selection and shadow issue in Table component ([c3fdb26](https://github.com/medly/medly-components/commit/c3fdb26f0daae342c8f2b02ab59406273057c428))
+
+
+### Features
+
+* add defaultSortFeild and defaultSortOrder prop to Table component ([009c553](https://github.com/medly/medly-components/commit/009c5535b21489c98939f9588f0c6f393d23fa14))
+* add different background and text colors in table header cell ([af8d304](https://github.com/medly/medly-components/commit/af8d3047d291e596df77be9de6412783edf8dc8c))
+* add indeterminate state in the selectAll checkbox in table component ([8328d20](https://github.com/medly/medly-components/commit/8328d20c3988f82890f66a62ca7d0ffe92f3778c))
+* add new styles in the table component header ([5d66a5f](https://github.com/medly/medly-components/commit/5d66a5f027ea254d0ec586ce3294aa13e7d2bda9))
+* add row selection style in table component ([79fc5db](https://github.com/medly/medly-components/commit/79fc5db8c6a3c63e57736bd16c53a059efd81237))
+* add shadow and scrollbar in the table component ([dc08949](https://github.com/medly/medly-components/commit/dc08949295c5aa20b222ad9012d6258f3078cd05))
+* add wrap text functionality in table cell component ([ca5694e](https://github.com/medly/medly-components/commit/ca5694e28fec7552dd3095992ddf87e44a65eff3))
+* update the table head cell border style ([9f866d3](https://github.com/medly/medly-components/commit/9f866d30c32921fe47e1d378a6470fc3ac1e3df0))
+
+
+
+
+
 # [1.6.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.5.0...@medly-components/core@1.6.0) (2020-06-29)
 
 
