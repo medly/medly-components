@@ -22,7 +22,7 @@ const getIconWrapperStyle = ({ theme, searchBoxSize }: Props) => {
     `;
 };
 
-const getSmallOptionStyle = ({ areOptionsVisible }: { areOptionsVisible?: boolean }) => {
+const getSmallSearchBoxStyle = ({ areOptionsVisible }: { areOptionsVisible?: boolean }) => {
     return css`
         border-radius: ${areOptionsVisible ? '2rem 2rem 0 0' : '4rem'};
         input {
@@ -51,9 +51,10 @@ const getSmallOptionStyle = ({ areOptionsVisible }: { areOptionsVisible?: boolea
     `;
 };
 
-const getMediumOptionStyle = ({ areOptionsVisible }: { areOptionsVisible?: boolean }) => {
+const getMediumSearchBoxStyle = ({ areOptionsVisible }: { areOptionsVisible?: boolean }) => {
     return css`
         border-radius: ${areOptionsVisible ? '2.5rem 2.5rem 0 0' : '4rem'};
+        padding-right: 3px;
         input {
             font-size: 1.6rem;
             line-height: 2.6rem;
@@ -226,7 +227,7 @@ export const SearchBoxWrapper = styled.div<Props & { isActive?: boolean; areOpti
         }
     }
 
-    ${({ searchBoxSize }) => (searchBoxSize === 'M' ? getMediumOptionStyle : getSmallOptionStyle)};
+    ${({ searchBoxSize }) => (searchBoxSize === 'M' ? getMediumSearchBoxStyle : getSmallSearchBoxStyle)};
     ${({ isActive }) => (isActive ? activeSearchBoxStyle : nonActiveSearchBoxStyle)};
 `;
 
@@ -239,6 +240,7 @@ export const SearchBox = styled.input<Props & { isActive?: boolean }>`
     width: 13rem;
     flex-grow: 1;
     font-family: inherit;
+    font-weight: 600;
 
     &::placeholder {
         color: ${({ theme }) => theme.searchBox.default.placeholderTextColor};

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SearchBox should render options when user search option specified 1`] = `
+exports[`SearchBox options should render options when user search option specified 1`] = `
 .c13 {
   overflow: visible;
   -webkit-transition: all 100ms linear;
@@ -114,6 +114,20 @@ exports[`SearchBox should render options when user search option specified 1`] =
 
 .c16 .c9:hover {
   background: transparent;
+  border-radius: 2.5rem;
+}
+
+.c17 .c9 {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.c17 .c9 * {
+  fill: #607890;
+}
+
+.c17 .c9:hover {
+  background: #e6effd;
   border-radius: 2.5rem;
 }
 
@@ -353,6 +367,7 @@ exports[`SearchBox should render options when user search option specified 1`] =
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-family: inherit;
+  font-weight: 600;
 }
 
 .c1::-webkit-input-placeholder {
@@ -400,22 +415,22 @@ exports[`SearchBox should render options when user search option specified 1`] =
     >
       <li
         class="c4 c5"
-        id="Dummy1-option"
+        id="Dummy-1"
       >
         <span
           class="c6 c7"
         >
-          Dummy1 option
+          Dummy 1
         </span>
       </li>
       <li
         class="c4 c5"
-        id="Dummy2-option"
+        id="Dummy-2"
       >
         <span
           class="c6 c7"
         >
-          Dummy2 option
+          Dummy 2
         </span>
       </li>
     </ul>
@@ -426,6 +441,7 @@ exports[`SearchBox should render options when user search option specified 1`] =
         class="c9 c10"
         fill="none"
         height="1em"
+        title="close icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -442,9 +458,9 @@ exports[`SearchBox should render options when user search option specified 1`] =
     >
       <svg
         class="c9 c13"
-        data-testid="search-icon"
         fill="none"
         height="1em"
+        title="search icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"
@@ -655,6 +671,7 @@ exports[`SearchBox should render text box of specified size 1`] = `
   -ms-flex-positive: 1;
   flex-grow: 1;
   font-family: inherit;
+  font-weight: 600;
 }
 
 .c1::-webkit-input-placeholder {
@@ -705,9 +722,9 @@ exports[`SearchBox should render text box of specified size 1`] = `
     >
       <svg
         class="c5 c6"
-        data-testid="search-icon"
         fill="none"
         height="1em"
+        title="search icon"
         viewBox="0 0 24 24"
         width="1em"
         xmlns="http://www.w3.org/2000/svg"

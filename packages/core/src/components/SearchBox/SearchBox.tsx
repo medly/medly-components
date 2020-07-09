@@ -18,11 +18,14 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             [isTyping, updateIsTyping] = useState(false),
             [areOptionsVisible, showOptions] = useState(false),
             [options, setOptions] = useState(defaultOptions),
-            [selectedOption, setSelectedOption] = useState(options[0]);
+            [selectedOption, setSelectedOption] = useState({
+                value: '',
+                label: ''
+            });
 
         useEffect(() => {
             setOptions(props.options);
-            if (props.options.length > 0) {
+            if (isTyping && props.options.length > 0) {
                 setActive(true);
                 showOptions(true);
                 isFocused.current = true;
@@ -30,7 +33,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 showOptions(false);
                 setActive(false);
             }
-        }, [props.options]);
+        }, [props.options, isTyping]);
 
         const clearSearchText = useCallback(() => {
                 inputRef.current.value = '';
@@ -75,12 +78,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 inputRef.current.setSelectionRange(inputRef.length, inputRef.length);
                 inputRef.current.focus();
             }, [inputRef]),
-            handleKeyUp = useCallback(() => {
-                if (inputRef.current.value.length === 0) {
-                    isFocused.current = false;
-                }
-            }, []),
-            handleKeyDown = useCallback(() => {
+            hideOptions = useCallback(() => {
                 if (inputRef.current.value.length === 0) {
                     isFocused.current = false;
                 }
@@ -104,8 +102,8 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                     placeholder={placeholder}
                     searchBoxSize={searchBoxSize}
                     onChange={handleChange}
-                    onKeyDown={handleKeyDown}
-                    onKeyUp={handleKeyUp}
+                    onKeyDown={hideOptions}
+                    onKeyUp={hideOptions}
                     ref={inputRef}
                 />
                 {areOptionsVisible && (
@@ -118,10 +116,10 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                     ></Options>
                 )}
                 <Styled.CloseIconWrapper isTyping={isTyping} searchBoxSize={searchBoxSize}>
-                    {isTyping && <CloseIcon onClick={clearSearchText} />}
+                    {isTyping && <CloseIcon title="close icon" onClick={clearSearchText} />}
                 </Styled.CloseIconWrapper>
                 <Styled.SearchIconWrapper isActive={isActive} isTyping={isTyping} searchBoxSize={searchBoxSize}>
-                    <SearchIcon data-testid="search-icon" />
+                    <SearchIcon title="search icon" />
                 </Styled.SearchIconWrapper>
             </Styled.SearchBoxWrapper>
         );
