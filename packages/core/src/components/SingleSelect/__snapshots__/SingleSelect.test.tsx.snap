@@ -61,21 +61,21 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 }
 
 .c3 .c6 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb,
 .c3 .c9 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb *,
 .c3 .c9 * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c3 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3::after {
@@ -85,7 +85,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -398,21 +398,21 @@ exports[`SingleSelect component should render properly when isSearchable is true
 }
 
 .c3 .c6 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb,
 .c3 .c9 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb *,
 .c3 .c9 * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c3 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3::after {
@@ -422,7 +422,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -741,21 +741,21 @@ exports[`SingleSelect component with filled variant should render disabled state
 }
 
 .c3 .c6 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb,
 .c3 .c9 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb *,
 .c3 .c9 * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c3 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3::after {
@@ -765,7 +765,7 @@ exports[`SingleSelect component with filled variant should render disabled state
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1005,7 +1005,7 @@ exports[`SingleSelect component with filled variant should render error text pro
 }
 
 .c2 ~ .c0 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c2 ~ .c0,
@@ -1044,12 +1044,12 @@ exports[`SingleSelect component with filled variant should render error text pro
 
 .c5 .sc-AxhCb,
 .c5 .c1 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c5 .sc-AxhCb *,
 .c5 .c1 * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c5 .sc-AxhCb,
@@ -1315,21 +1315,21 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 }
 
 .c3 .c6 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb,
 .c3 .c9 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb *,
 .c3 .c9 * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c3 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3::after {
@@ -1339,7 +1339,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1670,7 +1670,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 }
 
 .c3 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3:hover {
@@ -1907,7 +1907,7 @@ exports[`SingleSelect component with outlined variant should render error text p
 }
 
 .c2 ~ .c0 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c2 ~ .c0,
@@ -2232,7 +2232,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 }
 
 .c3 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3:hover {

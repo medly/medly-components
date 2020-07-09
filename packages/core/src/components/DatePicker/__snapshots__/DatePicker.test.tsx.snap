@@ -2,7 +2,7 @@
 
 exports[`DatePicker component should render properly when value is of date type 1`] = `
 .c1 {
-  color: #435465;
+  color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -220,7 +220,7 @@ exports[`DatePicker component should render properly when value is of date type 
 
 exports[`DatePicker component should render properly when value is of string type 1`] = `
 .c1 {
-  color: #435465;
+  color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;

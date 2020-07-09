@@ -1,6 +1,6 @@
-import { ColumnConfig } from '../types';
+import { TableColumnConfig } from '../types';
 
 export interface Props {
-    columns: ColumnConfig[];
-    onChange: (columns: ColumnConfig[]) => void;
+    columns: TableColumnConfig[];
+    onChange: (columns: TableColumnConfig[]) => void;
 }

@@ -43,17 +43,21 @@ export const StyledCheckbox = styled.div`
     ${centerAligned('flex')}
 
     ${SvgIcon} {
+        pointer-events: none;
         z-index: 1;
         transition: all 100ms ease-in-out;
         transform: scale(0);
         width: 100%;
         height: 100%;
+        margin-right: 0.05rem;
     }
 `;
 
 export const HiddenCheckbox = styled.input.attrs(({ theme }) => ({ type: 'checkbox', ...theme.checkbox }))<Props>`
     opacity: 0;
     margin: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     outline: none;

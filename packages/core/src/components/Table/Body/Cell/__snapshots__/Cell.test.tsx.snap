@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Cell should not render text if hide property is given 1`] = `
+exports[`Cell should not render text if hidden property is given 1`] = `
 .c2 {
   margin: 0;
   color: inherit;
@@ -14,51 +14,48 @@ exports[`Cell should not render text if hide property is given 1`] = `
 }
 
 .c0 {
-  opacity: 0;
-  padding: 0;
-  position: relative;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  overflow: hidden;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  overflow: hidden;
-  border-right: 1px solid #C7D0D8;
+  opacity: 0;
+  position: relative;
+  padding: 0;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c0 .sc-fzoLsD {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
-}
-
-.c0 .sc-fzoLsD .sc-AxjAm {
-  margin-right: 0;
+  padding: 0;
 }
 
 .c0 .c1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
 }
 
 <div>
-  <div
+  <td
     class="c0"
+    hidden=""
   >
     <span
       class="c1 c2"
     >
       Dummy
     </span>
-  </div>
+  </td>
 </div>
 `;
 
@@ -121,6 +118,7 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c9 .c10 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -129,11 +127,14 @@ exports[`Cell should render checkbox properly 1`] = `
   transform: scale(0);
   width: 100%;
   height: 100%;
+  margin-right: 0.05rem;
 }
 
 .c7 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;
@@ -205,43 +206,39 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c0 {
-  opacity: 0;
-  padding: 0;
-  position: relative;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  overflow: hidden;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  overflow: hidden;
-  border-right: 1px solid #C7D0D8;
+  opacity: 1;
+  position: relative;
+  padding: 1.2rem 1.6rem;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c0 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
-}
-
-.c0 .c1 .c10 {
-  margin-right: 0;
+  padding: 0;
 }
 
 .c0 .c3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
 }
 
 <div>
-  <div
+  <td
     class="c0"
   >
     
@@ -286,7 +283,7 @@ exports[`Cell should render checkbox properly 1`] = `
         </div>
       </div>
     </label>
-  </div>
+  </td>
 </div>
 `;
 
@@ -304,52 +301,46 @@ exports[`Cell should render frozen text properly 1`] = `
 }
 
 .c0 {
-  opacity: 1;
-  padding: 5px 10px;
-  position: relative;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  overflow: hidden;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  overflow: hidden;
-  border-right: 1px solid #C7D0D8;
+  opacity: 1;
   position: -webkit-sticky;
   position: sticky;
+  padding: 1.2rem 1.6rem;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   left: 0;
-  z-index: 2;
-  background-color: inherit;
+  z-index: 1;
 }
 
 .c0 .sc-fzoLsD {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
-}
-
-.c0 .sc-fzoLsD .sc-AxjAm {
-  margin-right: 0;
-}
-
-.c0 .c1 {
-  white-space: nowrap;
+  padding: 0;
 }
 
 .c0 * {
-  z-index: 2;
+  z-index: 1;
+}
+
+.c0 .c1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 <div>
-  <div
+  <td
     class="c0"
   >
     <span
@@ -357,7 +348,7 @@ exports[`Cell should render frozen text properly 1`] = `
     >
       Dummy
     </span>
-  </div>
+  </td>
 </div>
 `;
 
@@ -375,43 +366,39 @@ exports[`Cell should render text properly 1`] = `
 }
 
 .c0 {
-  opacity: 1;
-  padding: 5px 10px;
-  position: relative;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  overflow: hidden;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  overflow: hidden;
-  border-right: 1px solid #C7D0D8;
+  opacity: 1;
+  position: relative;
+  padding: 1.2rem 1.6rem;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .c0 .sc-fzoLsD {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
-}
-
-.c0 .sc-fzoLsD .sc-AxjAm {
-  margin-right: 0;
+  padding: 0;
 }
 
 .c0 .c1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
 }
 
 <div>
-  <div
+  <td
     class="c0"
   >
     <span
@@ -419,6 +406,6 @@ exports[`Cell should render text properly 1`] = `
     >
       Dummy
     </span>
-  </div>
+  </td>
 </div>
 `;

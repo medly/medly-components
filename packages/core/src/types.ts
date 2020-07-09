@@ -1,3 +1,3 @@
-import * as TableTheme from './components/Table/types';
+import { TableColumnConfig } from './components/Table/types';
 
-export { TableTheme };
+export { TableColumnConfig };

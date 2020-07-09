@@ -1,11 +1,11 @@
 import { WithStyle } from '@medly-components/utils';
 import React, { useCallback, useEffect, useMemo, useRef } from 'react';
-import Checkbox from '../../Checkbox';
-import Text from '../../Text';
+import Checkbox from '../../../Checkbox';
+import Text from '../../../Text';
 import * as Styled from './Cell.styled';
-import { Props } from './types';
+import { TableCellProps } from './types';
 
-const Cell: React.FC<Props> & WithStyle = React.memo(props => {
+const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
     const childRef = useRef(null),
         {
             addColumnMaxSize,
@@ -17,15 +17,14 @@ const Cell: React.FC<Props> & WithStyle = React.memo(props => {
             isRowSelectionDisabled,
             onRowSelection,
             dottedFieldName,
-            isLoading
+            isLoading,
+            showShadowAtRight,
+            ...restProps
         } = props,
         isRowSelectionCell = useMemo(() => config.field === 'medly-table-checkbox', [config.field]);
 
     useEffect(() => {
-        if (childRef.current) {
-            const size = childRef.current.clientWidth;
-            !isLoading && addColumnMaxSize(dottedFieldName, size);
-        }
+        childRef.current && !isLoading && addColumnMaxSize(dottedFieldName, childRef.current.clientWidth);
     }, [childRef.current]);
 
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
@@ -48,7 +47,11 @@ const Cell: React.FC<Props> & WithStyle = React.memo(props => {
         formattedCell = useCallback(() => {
             switch (config.formatter) {
                 case 'boolean':
-                    return <Text ref={childRef}>{data ? 'Yes' : 'No'}</Text>;
+                    return (
+                        <Text ref={childRef} textVariant="body2">
+                            {data ? 'Yes' : 'No'}
+                        </Text>
+                    );
                 case 'react-component': {
                     const Component = config.component;
                     return (
@@ -58,19 +61,25 @@ const Cell: React.FC<Props> & WithStyle = React.memo(props => {
                     );
                 }
                 default:
-                    return <Text ref={childRef}>{data}</Text>;
+                    return (
+                        <Text ref={childRef} textVariant="body2">
+                            {data}
+                        </Text>
+                    );
             }
-        }, [data, rowId, isLoading, isRowClickDisabled]);
-
-    const textAlign = useMemo(() => config.align || (config.formatter === 'numeric' ? 'right' : 'left'), []);
+        }, [data, rowId, isLoading, isRowClickDisabled]),
+        textAlign = useMemo(() => config.align || (config.formatter === 'numeric' ? 'right' : 'left'), []);
 
     return (
         <Styled.Cell
-            hide={config.hide}
+            hidden={config.hidden}
             frozen={config.frozen}
             align={textAlign}
             onClick={handleCellClick}
             isRowSelectionCell={isRowSelectionCell}
+            showShadowAtRight={isRowSelectionCell && showShadowAtRight}
+            showSelectedRowBorder={isRowSelectionCell && isRowSelected}
+            {...restProps}
         >
             {isLoading ? <Styled.LoadingDiv ref={childRef} /> : isRowSelectionCell ? rowSelectionCheckbox : formattedCell()}
         </Styled.Cell>

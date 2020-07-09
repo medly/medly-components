@@ -1,15 +1,15 @@
 import { columnsWidth } from './columnsWidth';
-import { ColumnConfig } from './types';
+import { TableColumnConfig } from './types';
 
-export const addSizeToColumnConfig = (columnConfigs: ColumnConfig[]): ColumnConfig[] => {
+export const addSizeToColumnConfig = (columnConfigs: TableColumnConfig[]): TableColumnConfig[] => {
     return columnConfigs.map(config => {
         return config.children
             ? { ...config, children: addSizeToColumnConfig(config.children) }
-            : { ...config, size: config.hide ? `minmax(0px, 0px)` : columnsWidth[config.formatter] };
+            : { ...config, size: config.hidden ? `minmax(0px, 0px)` : columnsWidth[config.formatter] };
     });
 };
 
-const getCumulativeTemplate = (configs: ColumnConfig[]): string => {
+const getCumulativeTemplate = (configs: TableColumnConfig[]): string => {
     const cumulativeSize = configs.reduce(
         (acc, curr) =>
             acc.map(
@@ -21,12 +21,12 @@ const getCumulativeTemplate = (configs: ColumnConfig[]): string => {
             ),
         [0, 0]
     );
-    const visibleChildrenCount = configs.filter(({ hide }) => !hide).length;
+    const visibleChildrenCount = configs.filter(({ hidden }) => !hidden).length;
     return `minmax(${cumulativeSize[0]}px, ${visibleChildrenCount === 1 ? 1 : cumulativeSize[1]}fr)`;
 };
 
-export const getGridTemplateColumns = (configs: ColumnConfig[]) => {
-    const visibleChildren = configs.filter(({ hide }) => !hide),
+export const getGridTemplateColumns = (configs: TableColumnConfig[]) => {
+    const visibleChildren = configs.filter(({ hidden }) => !hidden),
         visibleChildrenCount = visibleChildren.length;
 
     const size = configs.reduce(
@@ -41,7 +41,7 @@ export const getGridTemplateColumns = (configs: ColumnConfig[]) => {
     return size;
 };
 
-export const changeSize = (width: number, dottedField: string, columnConfigs: ColumnConfig[]) => {
+export const changeSize = (width: number, dottedField: string, columnConfigs: TableColumnConfig[]) => {
     const newColumnConfigs = [...columnConfigs],
         [currField, nextField] = dottedField.split(/\.(.+)/),
         index = columnConfigs.findIndex(config => config.field === currField);
@@ -50,7 +50,7 @@ export const changeSize = (width: number, dottedField: string, columnConfigs: Co
         const config = { ...newColumnConfigs[index] };
         if (config.children && nextField) {
             config.children = changeSize(width, nextField, config.children);
-        } else if (width < 75) {
+        } else if (width < 80) {
             config.size = columnsWidth[config.formatter];
         } else if (width > 900) {
             config.size = config.size.replace(/(.*\()(.*)(,.*)/, `$1700px$3`);
