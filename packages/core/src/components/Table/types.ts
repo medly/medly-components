@@ -22,6 +22,8 @@ export interface TableColumnConfig {
     title: string;
     /** Field name in the data */
     field: string;
+    /** Column formatter */
+    formatter: keyof ColumnsWidth;
     /** Column content alignment */
     align?: 'left' | 'right' | 'center';
     /** WIP | Set it true to freeze the component on the left side*/
@@ -34,8 +36,6 @@ export interface TableColumnConfig {
     fitContent?: boolean;
     /** Use this to include nested column */
     children?: TableColumnConfig[];
-    /** Column formatter */
-    formatter: keyof ColumnsWidth;
     /** Set it true to wrap column text */
     wrapText?: boolean;
     /** Custom component */
@@ -53,11 +53,13 @@ export interface TableStyledProps {
 }
 
 export interface Props extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type'> {
-    /** Table data */
-    data: Data;
+    /** Array of your table data */
+    data: {
+        [key: string]: any;
+    }[];
     /** Column configuration */
     columns: TableColumnConfig[];
-    /** Key name in data to be used as unique id */
+    /** Key name in data to be used as unique id for rows */
     rowIdentifier?: string;
     /** Key name to disable row selection */
     rowSelectionDisableKey?: string;

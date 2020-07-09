@@ -95,11 +95,11 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
 );
 
 Table.defaultProps = {
+    selectedRowIds: [],
     rowIdentifier: 'id',
+    defaultSortOrder: 'asc',
     rowClickDisableKey: '',
-    rowSelectionDisableKey: '',
-    data: [],
-    selectedRowIds: []
+    rowSelectionDisableKey: ''
 };
 
 Table.displayName = 'Table';

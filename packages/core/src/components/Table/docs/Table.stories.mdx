@@ -8,7 +8,16 @@ import { filterData } from './filterData';
 import columns from './columns';
 import data from './data';
 
-<Meta title="In Review" component={Table} />
+<Meta
+    title="Core"
+    component={Table}
+    parameters={{
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=4542%3A0'
+        }
+    }}
+/>
 
 # Table
 
@@ -17,23 +26,22 @@ Simple `Table` component to show set of data.
 <Preview withToolbar>
     <Story name="Table">
         {() => {
-            const [selectedRowIds, setSelectedRowIds] = useState([2, 3]);
-            const handleFilterData = useCallback((dottedField, order) => {
-                setTableData(filterData(dottedField, order, tableData));
-            }, []);
+            const [selectedRowIds, setSelectedRowIds] = useState([2, 3]),
+                [tableData, setTableData] = useState(data),
+                handleFilterData = useCallback((dottedField, order) => setTableData(filterData(dottedField, order, tableData)), [
+                    tableData
+                ]);
             return (
                 <Table
-                    isSelectable={boolean('Is selectable', true)}
-                    isLoading={boolean('Loading', false)}
-                    rowSelectionDisableKey="disabled"
+                    data={tableData}
+                    columns={columns}
+                    onSort={handleFilterData}
                     selectedRowIds={selectedRowIds}
                     onRowSelection={setSelectedRowIds}
                     onRowClick={action('Row Clicked')}
-                    defaultSortField="name"
-                    defaultSortOrder="asc"
-                    data={data}
-                    onSort={handleFilterData}
-                    columns={columns}
+                    isLoading={boolean('Loading', false)}
+                    isSelectable={boolean('Is selectable', true)}
+                    rowSelectionDisableKey="disabled"
                 />
             );
         }}
@@ -41,6 +49,8 @@ Simple `Table` component to show set of data.
 </Preview>
 
 ### Props
+
+There are only two required props `data` & `columns`. It would be really great if you provide `rowIdentifier`. `rowIdentifier` is used as key name in data to be used as unique id for rows.
 
 <Props of={Table} />
 

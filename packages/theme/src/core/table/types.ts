@@ -1,7 +1,4 @@
 export interface TableTheme {
-    rowDisabledColor: string;
-    rowBackgroundColor: string;
-    headerColor: string;
     borderColor: string;
     scrollBarColor: string;
     shadowColor: string;

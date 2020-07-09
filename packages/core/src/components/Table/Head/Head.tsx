@@ -62,7 +62,7 @@ const Head: React.FC<Props> = React.memo(props => {
                             hidden={config.hidden}
                             gridTemplateColumns={getGridTemplateColumns(config.children)}
                         >
-                            <GroupCellTitle textVariant="h5" textWeight="Strong">
+                            <GroupCellTitle textVariant="h5" textWeight="Strong" uppercase>
                                 {config.title}
                             </GroupCellTitle>
                             {headCell(config.children, fieldName)}

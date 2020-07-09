@@ -43,12 +43,12 @@ export const TableStyled = styled('table')<TableStyledProps>`
     }
 
     &::-webkit-scrollbar-track:horizontal {
-        margin: 0 0.4rem;
         background-color: transparent;
+        border-top: 0.1rem solid ${({ theme }) => theme.table.borderColor};
     }
 
     &::-webkit-scrollbar-track:vertical {
-        margin: 0.4rem 0;
         background-color: transparent;
+        border-left: 0.1rem solid ${({ theme }) => theme.table.borderColor};
     }
 `;

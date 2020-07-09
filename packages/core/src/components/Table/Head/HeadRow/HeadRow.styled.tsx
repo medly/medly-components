@@ -15,7 +15,7 @@ export const HeadRow = styled('tr').attrs(({ gridTemplateColumns }: GridTemplate
     user-select: none;
     
     & > * {
-        background-color: ${({ theme }) => theme.table.headerColor};
+        background-color: ${({ theme }) => theme.table.header.bgColor};
         border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
     }
 
