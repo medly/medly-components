@@ -51,7 +51,7 @@ const getSmallSearchBoxStyle = ({ areOptionsVisible }: { areOptionsVisible?: boo
     `;
 };
 
-const getMediumSearchBoxStyle = ({ areOptionsVisible }: { areOptionsVisible?: boolean }) => {
+const getMediumSearchBoxStyle = ({ theme, areOptionsVisible }: Props & { areOptionsVisible?: boolean }) => {
     return css`
         border-radius: ${areOptionsVisible ? '2.5rem 2.5rem 0 0' : '4rem'};
         padding-right: 3px;
@@ -208,9 +208,11 @@ export const SearchBoxWrapper = styled.div<Props & { isActive?: boolean; areOpti
         border: none;
         box-sizing: content-box;
         left: -1.5px;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
         background-color: ${({ theme }) => theme.colors.white};
         ${({ isActive }) => (isActive ? activeOptionStyle : nonActiveOptionStyle)};
+        max-height: ${({ theme, searchBoxSize }) => theme.searchBox.sizes[searchBoxSize].maxHeight};
 
         svg {
             display: none;

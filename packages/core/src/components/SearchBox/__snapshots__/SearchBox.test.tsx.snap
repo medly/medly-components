@@ -224,7 +224,8 @@ exports[`SearchBox options should render options when user search option specifi
   border: none;
   box-sizing: content-box;
   left: -1.5px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: #ffffff;
   border: none;
   padding-bottom: 0;
@@ -298,7 +299,8 @@ exports[`SearchBox options should render options when user search option specifi
   border: none;
   box-sizing: content-box;
   left: -1.5px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: #ffffff;
   border: 1.5px solid #005AEE;
   border-top: 0;
@@ -589,7 +591,8 @@ exports[`SearchBox should render text box of specified size 1`] = `
   border: none;
   box-sizing: content-box;
   left: -1.5px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: #ffffff;
   border: none;
   padding-bottom: 0;

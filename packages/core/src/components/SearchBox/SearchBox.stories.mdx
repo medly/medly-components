@@ -12,7 +12,17 @@ import { SearchBox } from './SearchBox';
 ### Add a auto suggest text box
 
 <Preview withToolbar>
-    <Story name="SearchBox">
+    <Story name="Default SearchBox">
+        <SearchBox
+            options={optionsArray}
+            searchBoxSize={select('boxSize', boxSize, 'M')}
+            onSearchInputChange={value => console.log(value)}
+        />
+    </Story>
+</Preview>
+
+<Preview withToolbar>
+    <Story name="SearchBox With All Handlers">
         {() => {
             const [options, setOptions] = useState([]);
             const onSearchInputChangeHandler = value => {
@@ -56,10 +66,10 @@ import { SearchBox } from './SearchBox';
 
 #### Pending things in story
 
--   [ ] maxHeight
 -   [ ] onFocus and onBlur
 -   [ ] rgba fix
 -   [ ] refactor
+-   [x] maxHeight
 -   [x] unit tests
 -   [x] deploy in storybook for feedback
 -   [x] onOptionSelected

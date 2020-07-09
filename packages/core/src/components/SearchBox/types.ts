@@ -10,8 +10,6 @@ export type Option = {
 export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'boxSize'>, WithThemeProp {
     /** Size for search box, can be 'S' | 'M' */
     searchBoxSize?: SearchBoxSizes;
-    /*** maximum height for search results container */
-    maxHeight?: string;
     /** Option for search results, in form of label and value */
     options?: Option[];
     /*** callback to be trigger on selecting the option */

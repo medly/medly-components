@@ -5,6 +5,7 @@ export type SearchBoxTheme = {
         [k in SearchBoxSizes]: {
             height: string;
             iconSize: string;
+            maxHeight: string;
         };
     };
     default: {

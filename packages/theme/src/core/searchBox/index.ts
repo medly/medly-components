@@ -4,11 +4,13 @@ const SearchBox = {
     sizes: {
         S: {
             height: '4rem',
-            iconSize: '2rem'
+            iconSize: '2rem',
+            maxHeight: '20rem'
         },
         M: {
             height: '4.8rem',
-            iconSize: '2.4rem'
+            iconSize: '2.4rem',
+            maxHeight: '21rem'
         }
     },
     default: {
