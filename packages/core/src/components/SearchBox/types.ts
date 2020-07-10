@@ -1,4 +1,4 @@
-import { SearchBoxSizes } from '@medly-components/theme';
+import { Size } from '@medly-components/theme/src/core/searchBox/types';
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
 export type Option = {
@@ -7,13 +7,13 @@ export type Option = {
     selected?: boolean;
 };
 
-export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'boxSize'>, WithThemeProp {
+export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'size'>, WithThemeProp {
     /** Size for search box, can be 'S' | 'M' */
-    searchBoxSize?: SearchBoxSizes;
+    size?: Size;
     /** Option for search results, in form of label and value */
     options?: Option[];
     /*** callback to be trigger on selecting the option */
     onOptionSelected?: (value: Option) => void;
     /*** callback for providing the input values */
-    onSearchInputChange?: (value: string) => void;
+    onInputChange?: (value: string) => void;
 }

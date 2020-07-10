@@ -5,9 +5,9 @@ import Options from '../SingleSelect/Options';
 import { OptionStyled } from '../SingleSelect/Options/Option/Option.styled';
 import { Props } from './types';
 
-const getSearchBoxSize = ({ theme, searchBoxSize }: Props) => theme.searchBox.sizes[searchBoxSize].height;
+const getSearchBoxSize = ({ theme, size }: Props) => theme.searchBox.sizes[size].height;
 
-const getIconWrapperStyle = ({ theme, searchBoxSize }: Props) => {
+const getIconWrapperStyle = ({ theme, size }: Props) => {
     return css`
         width: ${getSearchBoxSize};
         min-width: ${getSearchBoxSize};
@@ -17,7 +17,7 @@ const getIconWrapperStyle = ({ theme, searchBoxSize }: Props) => {
         justify-content: center;
         ${SvgIcon} {
             cursor: pointer;
-            font-size: ${theme.searchBox.sizes[searchBoxSize].iconSize};
+            font-size: ${theme.searchBox.sizes[size].iconSize};
         }
     `;
 };
@@ -51,7 +51,7 @@ const getSmallSearchBoxStyle = ({ areOptionsVisible }: { areOptionsVisible?: boo
     `;
 };
 
-const getMediumSearchBoxStyle = ({ theme, areOptionsVisible }: Props & { areOptionsVisible?: boolean }) => {
+const getMediumSearchBoxStyle = ({ areOptionsVisible }: Props & { areOptionsVisible?: boolean }) => {
     return css`
         border-radius: ${areOptionsVisible ? '2.5rem 2.5rem 0 0' : '4rem'};
         padding-right: 3px;
@@ -212,7 +212,7 @@ export const SearchBoxWrapper = styled.div<Props & { isActive?: boolean; areOpti
         overflow-y: auto;
         background-color: ${({ theme }) => theme.colors.white};
         ${({ isActive }) => (isActive ? activeOptionStyle : nonActiveOptionStyle)};
-        max-height: ${({ theme, searchBoxSize }) => theme.searchBox.sizes[searchBoxSize].maxHeight};
+        max-height: ${({ theme, size }) => theme.searchBox.sizes[size].maxHeight};
 
         svg {
             display: none;
@@ -229,7 +229,7 @@ export const SearchBoxWrapper = styled.div<Props & { isActive?: boolean; areOpti
         }
     }
 
-    ${({ searchBoxSize }) => (searchBoxSize === 'M' ? getMediumSearchBoxStyle : getSmallSearchBoxStyle)};
+    ${({ size }) => (size === 'M' ? getMediumSearchBoxStyle : getSmallSearchBoxStyle)};
     ${({ isActive }) => (isActive ? activeSearchBoxStyle : nonActiveSearchBoxStyle)};
 `;
 

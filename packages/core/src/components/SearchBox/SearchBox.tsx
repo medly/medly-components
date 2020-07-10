@@ -10,7 +10,7 @@ import { Props } from './types';
 
 export const SearchBox: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { options: defaultOptions, searchBoxSize, placeholder, onSearchInputChange, onOptionSelected } = props;
+        const { options: defaultOptions, size, placeholder, onInputChange, onOptionSelected } = props;
         const inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
             isFocused = useRef(false),
             optionsRef = useRef<HTMLUListElement>(null),
@@ -46,7 +46,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     const value = inputRef.current.value;
                     updateIsTyping(true);
-                    onSearchInputChange(event.target.value);
+                    onInputChange(event.target.value);
                     if (value.length === 0) {
                         updateIsTyping(false);
                         isFocused.current = false;
@@ -96,11 +96,10 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
         });
 
         return (
-            <Styled.SearchBoxWrapper isActive={isActive} areOptionsVisible={areOptionsVisible} searchBoxSize={searchBoxSize}>
+            <Styled.SearchBoxWrapper isActive={isActive} areOptionsVisible={areOptionsVisible} size={size}>
                 <Styled.SearchBox
                     isActive={isActive}
                     placeholder={placeholder}
-                    searchBoxSize={searchBoxSize}
                     onChange={handleChange}
                     onKeyDown={hideOptions}
                     onKeyUp={hideOptions}
@@ -115,10 +114,10 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                         onOptionClick={handleOptionClick}
                     ></Options>
                 )}
-                <Styled.CloseIconWrapper isTyping={isTyping} searchBoxSize={searchBoxSize}>
+                <Styled.CloseIconWrapper isTyping={isTyping} size={size}>
                     {isTyping && <CloseIcon title="close icon" onClick={clearSearchText} />}
                 </Styled.CloseIconWrapper>
-                <Styled.SearchIconWrapper isActive={isActive} isTyping={isTyping} searchBoxSize={searchBoxSize}>
+                <Styled.SearchIconWrapper isActive={isActive} isTyping={isTyping} size={size}>
                     <SearchIcon title="search icon" />
                 </Styled.SearchIconWrapper>
             </Styled.SearchBoxWrapper>
@@ -131,5 +130,5 @@ SearchBox.Style = Styled.SearchBox;
 SearchBox.defaultProps = {
     options: [],
     placeholder: 'Search',
-    searchBoxSize: 'S'
+    size: 'S'
 };

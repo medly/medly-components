@@ -1,3 +1,4 @@
+import { defaultTheme, SearchBoxTheme } from '@medly-components/theme/src';
 import { Props } from './types';
 
 export const optionsArray = [
@@ -10,4 +11,9 @@ export const optionsArray = [
     { value: 'Dummy7 option', label: 'Dummy7 option' }
 ];
 
-export const boxSize: Props['searchBoxSize'][] = ['S', 'M'];
+export const size: Props['size'][] = ['S', 'M'];
+
+export const ThemeInterface: React.FC<SearchBoxTheme> = () => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.searchBox
+};

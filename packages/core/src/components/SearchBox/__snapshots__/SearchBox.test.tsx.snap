@@ -229,6 +229,7 @@ exports[`SearchBox options should render options when user search option specifi
   background-color: #ffffff;
   border: none;
   padding-bottom: 0;
+  max-height: 20rem;
 }
 
 .c14 .c2::before {
@@ -306,6 +307,7 @@ exports[`SearchBox options should render options when user search option specifi
   border-top: 0;
   box-shadow: 0 0.6rem 0.8rem rgba(18,106,250,0.2);
   padding-bottom: 1.2rem;
+  max-height: 20rem;
 }
 
 .c0 .c2::before {
@@ -596,6 +598,7 @@ exports[`SearchBox should render text box of specified size 1`] = `
   background-color: #ffffff;
   border: none;
   padding-bottom: 0;
+  max-height: 20rem;
 }
 
 .c0 .sc-AxhCb::before {

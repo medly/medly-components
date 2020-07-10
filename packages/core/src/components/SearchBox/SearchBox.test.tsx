@@ -22,7 +22,7 @@ describe('SearchBox', () => {
     describe('close icon', () => {
         const props = {
             placeholder: 'search me',
-            onSearchInputChange: jest.fn()
+            onInputChange: jest.fn()
         };
 
         it('should render close icon when user starts typing', () => {
@@ -55,7 +55,7 @@ describe('SearchBox', () => {
         const defaultReturnObj = { target: { value: 'Dummy' } };
         const props = {
             placeholder: 'search me',
-            onSearchInputChange: jest.fn(),
+            onInputChange: jest.fn(),
             options: [
                 { label: 'Dummy 1', value: 'Dummy 1' },
                 { label: 'Dummy 2', value: 'Dummy 2' }

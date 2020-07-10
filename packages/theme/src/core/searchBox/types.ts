@@ -1,8 +1,8 @@
-export type SearchBoxSizes = 'S' | 'M';
+export type Size = 'S' | 'M';
 
 export type SearchBoxTheme = {
     sizes: {
-        [k in SearchBoxSizes]: {
+        [k in Size]: {
             height: string;
             iconSize: string;
             maxHeight: string;

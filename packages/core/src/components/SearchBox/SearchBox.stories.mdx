@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import { optionsArray, boxSize } from './SearchBox.stories.tsx';
+import { optionsArray, size, ThemeInterface } from './SearchBox.stories.tsx';
 import * as stories from './SearchBox.stories';
 import { select } from '@storybook/addon-knobs';
 import { SearchBox } from './SearchBox';
@@ -12,20 +12,16 @@ import { SearchBox } from './SearchBox';
 ### Add a auto suggest text box
 
 <Preview withToolbar>
-    <Story name="Default SearchBox">
-        <SearchBox
-            options={optionsArray}
-            searchBoxSize={select('boxSize', boxSize, 'M')}
-            onSearchInputChange={value => console.log(value)}
-        />
+    <Story name="Minimal SearchBox">
+        <SearchBox options={optionsArray} onInputChange={value => console.log(value)} />
     </Story>
 </Preview>
 
 <Preview withToolbar>
-    <Story name="SearchBox With All Handlers">
+    <Story name="SearchBox With All Props">
         {() => {
             const [options, setOptions] = useState([]);
-            const onSearchInputChangeHandler = value => {
+            const onInputChangeHandler = value => {
                 if (value.length > 2) {
                     setOptions([...optionsArray, { label: 'Test', value: 'Test' }]);
                 } else {
@@ -38,10 +34,10 @@ import { SearchBox } from './SearchBox';
             return (
                 <SearchBox
                     placeholder="Search"
-                    onSearchInputChange={onSearchInputChangeHandler}
+                    onInputChange={onInputChangeHandler}
                     onOptionSelected={onOptionSelectedHandler}
                     options={options}
-                    searchBoxSize={select('boxSize', boxSize, 'M')}
+                    size={select('Size', size, 'M')}
                 />
             );
         }}
@@ -55,32 +51,27 @@ import { SearchBox } from './SearchBox';
 ##### Small search text box
 
 <Preview>
-    <SearchBox searchBoxSize="S" />
+    <SearchBox size="S" />
 </Preview>
 
 ##### Medium search text box
 
 <Preview>
-    <SearchBox searchBoxSize="M" />
+    <SearchBox size="M" />
 </Preview>
 
-#### Pending things in story
+### Keyboard Support
 
--   [ ] onFocus and onBlur
--   [ ] rgba fix
--   [ ] refactor
--   [x] maxHeight
--   [x] unit tests
--   [x] deploy in storybook for feedback
--   [x] onOptionSelected
--   [x] keyboard selection
--   [x] UI Styles
--   [x] re-add useMemo
--   [x] remove any
--   [x] boxShadow
--   [x] introduce size in storybook
+It also supports keyboard navigation when it is in focus
 
-#### Open question
+| Key        | Function                           |
+| ---------- | ---------------------------------- |
+| Down Arrow | Moves focus to the next option     |
+| Up Arrow   | Moves focus to the previous option |
+| Enter      | Select the focused option          |
 
--   should we handle debounce?
--   should we handle length for input text?
+### SearchBoxTheme
+
+Followint is the searchBoxTheme and searchResult style comes from SingleSelectTheme
+
+<Props of={ThemeInterface} />
