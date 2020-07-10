@@ -2,15 +2,28 @@ import { ArrowDropDownIcon, ArrowDropUpIcon, DropdownIcon } from '@medly-compone
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Text from '../../../Text';
-import { HeadCellStyled, ResizeHandlerStyled } from './HeadCell.styled';
+import { HeadCellButton, HeadCellStyled, ResizeHandler } from './HeadCell.styled';
 import { HeadCellProps } from './types';
 
 const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     let pageX: number;
-    const { frozen, enableSorting, children, hide, field, sortField, onSortChange, onWidthChange, columnMaxSize } = props;
+    const {
+        frozen,
+        sortable,
+        children,
+        hidden,
+        field,
+        isLoading,
+        sortField,
+        onSortChange,
+        defaultSortOrder,
+        onWidthChange,
+        columnMaxSize,
+        ...restProps
+    } = props;
 
     const cellEl = useRef(null),
-        [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>('none');
+        [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>(defaultSortOrder);
 
     useEffect(() => {
         if (sortField !== field) setSortState('none');
@@ -59,28 +72,30 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     const sortIcon = useMemo(
         () =>
             sortField !== field ? (
-                <DropdownIcon size="XS" onClick={handleSortIconClick} />
+                <DropdownIcon size="S" />
             ) : sortState === 'desc' ? (
-                <ArrowDropDownIcon size="M" onClick={handleSortIconClick} />
+                <ArrowDropDownIcon size="S" />
             ) : (
-                <ArrowDropUpIcon size="M" onClick={handleSortIconClick} />
+                <ArrowDropUpIcon size="S" />
             ),
-        [handleSortIconClick, sortField, field, sortState]
+        [sortField, field, sortState]
     );
 
     return (
-        <HeadCellStyled ref={cellEl} frozen={frozen} hide={hide}>
+        <HeadCellStyled as="th" ref={cellEl} frozen={frozen} hidden={hidden} {...restProps}>
             {React.Children.map(children, c => {
                 return isValidStringOrNumber(c) ? (
-                    <Text textWeight="Strong" textVariant="h5">
-                        {c}
-                    </Text>
+                    <HeadCellButton onClick={handleSortIconClick} isSelected={sortField === field && !isLoading} withHoverEffect={sortable}>
+                        <Text textVariant="h5" uppercase>
+                            {c}
+                        </Text>
+                        {sortable && sortIcon}
+                    </HeadCellButton>
                 ) : (
                     c
                 );
             })}
-            {enableSorting && sortIcon}
-            <ResizeHandlerStyled onMouseDown={initResize} onDoubleClick={handleDoubleClick} />
+            <ResizeHandler onMouseDown={initResize} onDoubleClick={handleDoubleClick} />
         </HeadCellStyled>
     );
 });

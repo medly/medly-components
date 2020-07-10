@@ -2,7 +2,7 @@
 
 exports[`FileInput component should render properly with all props 1`] = `
 .c1 {
-  color: #435465;
+  color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;

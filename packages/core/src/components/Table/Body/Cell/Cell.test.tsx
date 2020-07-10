@@ -1,7 +1,7 @@
 import { render } from '@test-utils';
 import React from 'react';
-import Checkbox from '../../Checkbox';
-import Text from '../../Text';
+import Checkbox from '../../../Checkbox';
+import Text from '../../../Text';
 import { Cell } from './Cell.styled';
 
 describe('Cell', () => {
@@ -23,9 +23,9 @@ describe('Cell', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('should not render text if hide property is given', () => {
+    it('should not render text if hidden property is given', () => {
         const { container } = render(
-            <Cell hide>
+            <Cell hidden>
                 <Text>Dummy</Text>
             </Cell>
         );
@@ -34,7 +34,7 @@ describe('Cell', () => {
 
     it('should render checkbox properly', () => {
         const { container } = render(
-            <Cell hide>
+            <Cell>
                 <Checkbox label="Dummy" />
             </Cell>
         );

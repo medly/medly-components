@@ -6,16 +6,16 @@ import { GroupCell, GroupCellTitle } from './GroupCell.styled';
 describe('GroupCell', () => {
     it('should render properly', () => {
         const { container } = render(
-            <GroupCell hide={false}>
+            <GroupCell hidden={false}>
                 <Text>Dummy</Text>
             </GroupCell>
         );
         expect(container).toMatchSnapshot();
     });
 
-    it('should not render hide prop is given', () => {
+    it('should not render hidden prop is given', () => {
         const { container } = render(
-            <GroupCell hide>
+            <GroupCell hidden>
                 <Text>Dummy</Text>
             </GroupCell>
         );

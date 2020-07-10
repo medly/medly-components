@@ -1,62 +1,72 @@
 import { Table } from '../Table';
+import { useState, useCallback } from 'react';
+import { action } from '@storybook/addon-actions';
+import { boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Table.stories';
+import { filterData } from './filterData';
+import columns from './columns';
+import data from './data';
 
-<Meta title="Core/Table" component={Table} />
+<Meta
+    title="Core"
+    component={Table}
+    parameters={{
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=4542%3A0'
+        }
+    }}
+/>
 
 # Table
 
-### Table to show set of data
+Simple `Table` component to show set of data.
 
 <Preview withToolbar>
-    <Story name="WithoutColumnHide">{stories.Basic()}</Story>
-</Preview>
-
-### With column hide feature
-
-To use the column hide feature use `Table.SelectableColumns` component and save the column config in state variable and pass the same column config to `Table` and `Table.SelectableColumns` component.
-
-```tsx
-export const WithColumnHide = () => {
-    const [columnConfig, setColumnConfig] = useState(columns);
-
-    return (
-        <>
-            <Table.SelectableColumns columns={columnConfig} fieldToChange="hide" onChange={setColumnConfig} />
-            <Table data={data} columns={columnConfig} />
-        </>
-    );
-};
-```
-
-You can also show `Table.SelectableColumns` in Modal to look better. Like below . . .
-
-<Preview withToolbar>
-    <Story name="WithColumnHide">{stories.WithColumnHide()}</Story>
+    <Story name="Table">
+        {() => {
+            const [selectedRowIds, setSelectedRowIds] = useState([2, 3]),
+                [tableData, setTableData] = useState(data),
+                handleFilterData = useCallback((dottedField, order) => setTableData(filterData(dottedField, order, tableData)), [
+                    tableData
+                ]);
+            return (
+                <Table
+                    data={tableData}
+                    columns={columns}
+                    onSort={handleFilterData}
+                    selectedRowIds={selectedRowIds}
+                    onRowSelection={setSelectedRowIds}
+                    onRowClick={action('Row Clicked')}
+                    isLoading={boolean('Loading', false)}
+                    isSelectable={boolean('Is selectable', true)}
+                    rowSelectionDisableKey="disabled"
+                />
+            );
+        }}
+    </Story>
 </Preview>
 
 ### Props
+
+There are only two required props `data` & `columns`. It would be really great if you provide `rowIdentifier`. `rowIdentifier` is used as key name in data to be used as unique id for rows.
 
 <Props of={Table} />
 
 ### Table Prop Types
 
-You can use Table Prop types like below to typesafe your column config.
+You can import `TableColumnConfig` to typesafe your column config.
 
 ```ts
-import { GetComponentProps } from '@medly-components/utils';
-import { Table } from '@medly-components/core';
+import { TableColumnConfig } from '@medly-components/utils';
 
-type TableProps = GetComponentProps<typeof Table>;
-
-type ColumnConfig = TableProps['columns'];
+const columns: TableColumnConfig[] = [{}, {}];
 ```
 
 #### Column config type
 
 <Props of={stories.ColumnConfigInterface} />
-
-There is one more field `children` you can provide with the same array of column config.
 
 #### TableTheme
 

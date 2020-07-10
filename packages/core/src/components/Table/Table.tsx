@@ -6,15 +6,16 @@ import Head from './Head';
 import { addSizeToColumnConfig } from './helpers';
 import { maxColumnSizeReducer } from './maxColumnSizeReducer';
 import { TableStyled } from './Table.styled';
-import { ColumnConfig, Props, StaticProps } from './types';
+import { Props, StaticProps, TableColumnConfig } from './types';
 import useRowSelector from './useRowSelector';
+import { useScrollState } from './useScrollState';
 
-const loadingBodyData = [{ id: 0 }, { id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }];
-const checkboxColumnConfig: ColumnConfig = {
+const loadingBodyData = [{ id: 'loading1' }, { id: 'loading2' }, { id: 'loading3' }, { id: 'loading4' }, { id: 'loading5' }];
+const checkboxColumnConfig: TableColumnConfig = {
     title: 'ch',
     field: 'medly-table-checkbox',
     formatter: 'checkbox',
-    hide: false,
+    hidden: false,
     frozen: true
 };
 
@@ -24,69 +25,68 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
             data,
             onRowClick,
             onSort,
-            uniqueKeyName,
+            rowIdentifier,
             rowSelectionDisableKey,
             rowClickDisableKey,
             isSelectable,
-            selectedRows,
+            selectedRowIds,
             onRowSelection,
             isLoading,
+            defaultSortField,
+            defaultSortOrder,
             ...restProps
         } = props;
 
-        const [ids, selectedIds, toggleId] = useRowSelector(
-                data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[uniqueKeyName]),
-                selectedRows
-            ),
-            [isSelectAllDisable, setSelectAllDisableState] = useState(data.every(dt => dt[rowSelectionDisableKey])),
-            [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
-            [columns, setColumns] = useState(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns]));
+        const [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
+            [columns, setColumns] = useState(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns])),
+            addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]),
+            [scrollState, handleScroll] = useScrollState();
 
-        const addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]),
-            isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]);
+        const isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]),
+            isSelectAllDisable = useMemo(() => data.every(dt => dt[rowSelectionDisableKey]), [data, rowSelectionDisableKey]),
+            rowSelector = useRowSelector(data, selectedRowIds, rowSelectionDisableKey, rowIdentifier, isSelectable),
+            { isAnyRowSelected, isEachRowSelected, selectedIds, toggleId } = rowSelector;
 
         useEffect(() => {
             setColumns(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns]));
         }, [props.columns, isSelectable]);
 
         useEffect(() => {
-            ids.setValue(data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[uniqueKeyName]));
-            setSelectAllDisableState(data.every(dt => dt[rowSelectionDisableKey]));
-        }, [data]);
-
-        useEffect(() => {
-            selectedIds.setValue(selectedRows);
-        }, [selectedRows]);
-
-        useEffect(() => {
-            onRowSelection && onRowSelection(selectedIds.value);
-        }, [selectedIds.value]);
+            onRowSelection && onRowSelection(selectedIds);
+        }, [selectedIds]);
 
         return (
-            <TableStyled ref={ref} isRowClickable={isRowClickable} {...restProps}>
+            <TableStyled ref={ref} {...restProps} onScroll={handleScroll} isRowClickable={isRowClickable}>
                 <Head
                     {...{
                         onSort,
                         columns,
                         setColumns,
                         maxColumnSizes,
+                        isEachRowSelected,
+                        isAnyRowSelected,
+                        isLoading,
+                        defaultSortField,
+                        defaultSortOrder,
                         onSelectAllClick: toggleId,
-                        isAllRowSelected: ids.isAllSelected,
-                        isSelectAllDisable: isLoading || isSelectAllDisable
+                        isSelectAllDisable: isSelectAllDisable,
+                        showShadowAtBottom: !scrollState.isScrolledToTop,
+                        showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
                     }}
                 />
                 <Body
                     {...{
                         isLoading,
                         columns,
-                        uniqueKeyName,
+                        rowIdentifier,
                         rowClickDisableKey,
                         rowSelectionDisableKey,
                         addColumnMaxSize,
-                        selectedRows: selectedIds.value,
+                        selectedRowIds: selectedIds,
                         onRowSelection: toggleId,
                         data: isLoading ? loadingBodyData : data,
-                        onRowClick: !isLoading && onRowClick
+                        onRowClick: !isLoading && onRowClick,
+                        showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
                     }}
                 />
             </TableStyled>
@@ -95,13 +95,11 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
 );
 
 Table.defaultProps = {
-    uniqueKeyName: 'id',
+    selectedRowIds: [],
+    rowIdentifier: 'id',
+    defaultSortOrder: 'asc',
     rowClickDisableKey: '',
-    rowSelectionDisableKey: '',
-    data: [],
-    selectedRows: [],
-    isSelectable: false,
-    isLoading: false
+    rowSelectionDisableKey: ''
 };
 
 Table.displayName = 'Table';

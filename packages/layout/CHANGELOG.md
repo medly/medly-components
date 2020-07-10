@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.2.0...@medly-components/layout@1.3.0) (2020-07-09)
+
+
+### Features
+
+* add new styles in the table component header ([5d66a5f](https://github.com/medly/medly-components/commit/5d66a5f027ea254d0ec586ce3294aa13e7d2bda9))
+
+
+
+
+
 # [1.2.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.1.0...@medly-components/layout@1.2.0) (2020-06-29)
 
 

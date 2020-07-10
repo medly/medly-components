@@ -1,5 +1,6 @@
-import { styled, WithThemeProp } from '@medly-components/utils';
+import { styled } from '@medly-components/utils';
 import Text from '../../Text';
+import { getBorder } from '../Table.styled';
 import { Props } from './types';
 
 export const GroupCell = styled('div').attrs(({ gridTemplateColumns }: Props) => ({
@@ -8,18 +9,22 @@ export const GroupCell = styled('div').attrs(({ gridTemplateColumns }: Props) =>
     }
 }))<Props>`
     display: grid;
-    opacity: ${({ hide }) => (hide ? '0' : '1')};
-    width: ${({ hide }) => (hide ? '0px' : '100%')};
-    height: ${({ hide }) => (hide ? '0px' : '100%')};
+    position: relative;
+    opacity: ${({ hidden }) => (hidden ? '0' : '1')};
+    width: ${({ hidden }) => (hidden ? '0' : '100%')};
+    height: ${({ hidden }) => (hidden ? '0' : '100%')};
 `;
 
-export const GroupCellTitle = styled(Text.Style)<WithThemeProp>`
+export const GroupCellTitle = styled(Text.Style)`
+    position: relative;
     text-align: center;
-    padding: 5px 0 5px 10px;
+    padding: 0.9rem 1.6rem 1rem;
     grid-column: -1/1;
     text-overflow: initial;
     overflow: auto;
     white-space: normal;
-    border-right: 1px solid ${({ theme }) => theme.table.borderColor};
-    border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
+    color: ${({ theme }) => theme.table.header.cell.textColor.default};
+    &::after {
+        ${getBorder('bottom')}
+    }
 `;

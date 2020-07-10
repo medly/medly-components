@@ -1,11 +1,17 @@
-import { ColumnConfig, SortOrder } from '../types';
+import { SortOrder, TableColumnConfig } from '../types';
 
 export interface Props {
-    columns: ColumnConfig[];
-    setColumns: React.Dispatch<React.SetStateAction<ColumnConfig[]>>;
-    isAllRowSelected?: boolean;
+    isLoading: boolean;
+    columns: TableColumnConfig[];
+    setColumns: React.Dispatch<React.SetStateAction<TableColumnConfig[]>>;
+    isEachRowSelected?: boolean;
+    isAnyRowSelected?: boolean;
     isSelectAllDisable?: boolean;
-    maxColumnSizes: { [k: string]: number };
     onSelectAllClick?: (id: number) => void;
+    maxColumnSizes: { [k: string]: number };
+    defaultSortField?: string;
+    defaultSortOrder?: SortOrder;
+    showShadowAtBottom: boolean;
+    showShadowAfterFrozenElement?: boolean;
     onSort?: (field: string, order: SortOrder) => void;
 }
