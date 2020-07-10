@@ -6,6 +6,8 @@ import Options from '../SingleSelect/Options';
 import { Option } from '../SingleSelect/types';
 import { useKeyboardNavigation } from '../SingleSelect/useKeyboardNavigation';
 import * as Styled from './SearchBox.styled';
+import { CloseIconWrapper, SearchIconWrapper } from './styles/icons';
+import { SearchInput } from './styles/input';
 import { Props } from './types';
 
 export const SearchBox: FC<Props> & WithStyle = React.memo(
@@ -97,7 +99,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
 
         return (
             <Styled.SearchBoxWrapper isActive={isActive} areOptionsVisible={areOptionsVisible} size={size}>
-                <Styled.SearchBox
+                <SearchInput
                     isActive={isActive}
                     placeholder={placeholder}
                     onChange={handleChange}
@@ -114,19 +116,19 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                         onOptionClick={handleOptionClick}
                     ></Options>
                 )}
-                <Styled.CloseIconWrapper isTyping={isTyping} size={size}>
+                <CloseIconWrapper isTyping={isTyping} size={size}>
                     {isTyping && <CloseIcon title="close icon" onClick={clearSearchText} />}
-                </Styled.CloseIconWrapper>
-                <Styled.SearchIconWrapper isActive={isActive} isTyping={isTyping} size={size}>
+                </CloseIconWrapper>
+                <SearchIconWrapper isActive={isActive} isTyping={isTyping} size={size}>
                     <SearchIcon title="search icon" />
-                </Styled.SearchIconWrapper>
+                </SearchIconWrapper>
             </Styled.SearchBoxWrapper>
         );
     })
 );
 
 SearchBox.displayName = 'SearchBox';
-SearchBox.Style = Styled.SearchBox;
+SearchBox.Style = Styled.SearchBoxWrapper;
 SearchBox.defaultProps = {
     options: [],
     placeholder: 'Search',
