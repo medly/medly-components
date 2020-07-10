@@ -37,7 +37,7 @@ export const StyledCheckbox = styled.div`
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    border-radius: 22.2%;
+    border-radius: ${({ theme }) => theme.checkbox.borderRadius};
     transition: all 100ms ease-out;
 
     ${centerAligned('flex')}

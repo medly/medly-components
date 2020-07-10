@@ -10,6 +10,7 @@ const checkbox: CheckboxTheme = {
         XL: '3rem'
     },
     defaultSize: 'S',
+    borderRadius: '22.2%',
     labelColor: {
         default: 'inherit',
         disabled: colors.grey[500]
