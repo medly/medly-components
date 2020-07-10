@@ -11,13 +11,15 @@ const textField: TextFieldTheme = {
             helperTextColor: colors.grey[700]
         },
         hover: {
-            borderColor: colors.grey[600]
+            borderColor: colors.grey[600],
+            shadowColor: colors.grey[600]
         },
         disabled: { labelColor: colors.grey[400], textColor: colors.grey[800], borderColor: colors.grey[300] },
         active: {
             placeholderColor: colors.grey[300],
             borderColor: colors.blue[500],
-            labelColor: colors.blue[500]
+            labelColor: colors.blue[500],
+            shadowColor: colors.blue[500]
         },
         error: {
             caretColor: colors.red[500],
@@ -25,7 +27,8 @@ const textField: TextFieldTheme = {
             cursorColor: colors.red[500],
             borderColor: colors.red[500],
             labelColor: colors.red[500],
-            helperTextColor: colors.red[500]
+            helperTextColor: colors.red[500],
+            shadowColor: colors.red[500]
         }
     },
     filled: {

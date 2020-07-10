@@ -246,29 +246,29 @@ exports[`Calendar Component should render given date 1`] = `
 .c10::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c10:hover::after,
 .c10:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c10:focus-within,
 .c10:focus-within:hover {
-  border-color: #126AFA;
   background-color: #E7F0FF;
 }
 
 .c10:focus-within::after,
 .c10:focus-within:hover::after {
-  background-color: #126AFA;
+  border-color: #126AFA;
 }
 
 .c10:focus-within .c13,

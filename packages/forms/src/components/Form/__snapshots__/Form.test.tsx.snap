@@ -679,29 +679,29 @@ exports[`Form should render properly with initial state 1`] = `
 .c4::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c4:hover::after,
 .c4:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c4:focus-within,
 .c4:focus-within:hover {
-  border-color: #126AFA;
   background-color: #E7F0FF;
 }
 
 .c4:focus-within::after,
 .c4:focus-within:hover::after {
-  background-color: #126AFA;
+  border-color: #126AFA;
 }
 
 .c4:focus-within .c7,
@@ -2818,29 +2818,29 @@ exports[`Form should render properly without initial state 1`] = `
 .c7::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c7:hover::after,
 .c7:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c7:focus-within,
 .c7:focus-within:hover {
-  border-color: #126AFA;
   background-color: #E7F0FF;
 }
 
 .c7:focus-within::after,
 .c7:focus-within:hover::after {
-  background-color: #126AFA;
+  border-color: #126AFA;
 }
 
 .c7:focus-within .c10,

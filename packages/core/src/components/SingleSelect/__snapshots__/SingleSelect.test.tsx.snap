@@ -81,29 +81,29 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 .c3::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:hover::after,
 .c3:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  border-color: #126AFA;
   background-color: #E7F0FF;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  background-color: #126AFA;
+  border-color: #126AFA;
 }
 
 .c3:focus-within .c6,
@@ -418,29 +418,29 @@ exports[`SingleSelect component should render properly when isSearchable is true
 .c3::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:hover::after,
 .c3:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  border-color: #126AFA;
   background-color: #E7F0FF;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  background-color: #126AFA;
+  border-color: #126AFA;
 }
 
 .c3:focus-within .c6,
@@ -737,7 +737,6 @@ exports[`SingleSelect component with filled variant should render disabled state
   background-color: #eff2f4;
   cursor: not-allowed;
   background-color: #F7F8F9;
-  border-color: #C7D0D8;
 }
 
 .c3 .c6 {
@@ -761,28 +760,20 @@ exports[`SingleSelect component with filled variant should render disabled state
 .c3::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c3:hover::after,
-.c3:focus-within::after {
-  height: 0.2rem;
-}
-
-.c3:hover {
-  border-color: #C7D0D8;
-}
-
 .c3::after,
 .c3:hover::after {
-  height: 0.1rem;
-  background-color: #C7D0D8;
+  border-width: 0.1rem;
+  border-color: #C7D0D8;
 }
 
 .c3 input {
@@ -1335,29 +1326,29 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 .c3::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c3:hover::after,
 .c3:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  border-color: #126AFA;
   background-color: #E7F0FF;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  background-color: #126AFA;
+  border-color: #126AFA;
 }
 
 .c3:focus-within .c6,
@@ -1648,11 +1639,8 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   cursor: text;
   padding: 0 1.5rem;
   background-color: transparent;
-  border-radius: 0.4rem;
-  border: 1px solid #98A7B7;
   cursor: not-allowed;
   background-color: transparent;
-  border-color: #C7D0D8;
 }
 
 .c3 .c6 {
@@ -1673,18 +1661,27 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   color: #546A7F;
 }
 
-.c3:hover {
-  border-color: #607890;
-}
-
-.c3:hover {
-  border-color: #C7D0D8;
+.c3::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #98A7B7;
 }
 
 .c3::after,
 .c3:hover::after {
-  height: 0.1rem;
-  background-color: #C7D0D8;
+  border-width: 0.1rem;
+  border-color: #C7D0D8;
 }
 
 .c3 input {
@@ -2213,8 +2210,6 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   cursor: text;
   padding: 0 1.5rem;
   background-color: transparent;
-  border-radius: 0.4rem;
-  border: 1px solid #98A7B7;
 }
 
 .c3 .c6 {
@@ -2235,19 +2230,45 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   color: #546A7F;
 }
 
+.c3::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #98A7B7;
+}
+
 .c3:hover {
+  box-shadow: 0px 2px 8px rgba(96,120,144,0.2);
+}
+
+.c3:focus-within {
+  box-shadow: 0px 2px 8px rgba(18,106,250,0.2);
+}
+
+.c3:hover::after,
+.c3:focus-within::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  border-color: #126AFA;
   background-color: transparent;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  background-color: #126AFA;
+  border-color: #126AFA;
 }
 
 .c3:focus-within .c6,
