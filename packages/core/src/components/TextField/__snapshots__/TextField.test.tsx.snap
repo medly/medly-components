@@ -83,32 +83,32 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -297,7 +297,7 @@ exports[`TextField should render asterisk if we pass required prop as true 1`] =
 
 .c2:focus-within .c0,
 .c2:focus-within:hover .c0 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c3:not(:placeholder-shown) + .c0,
@@ -395,32 +395,32 @@ exports[`TextField should render properly with default props 1`] = `
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -655,32 +655,32 @@ exports[`TextField with filled variant and with label should render default stat
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -909,32 +909,32 @@ exports[`TextField with filled variant and with label should render focus state 
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -1163,32 +1163,32 @@ exports[`TextField with filled variant and without label should render default s
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -1417,32 +1417,32 @@ exports[`TextField with filled variant and without label should render focus sta
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -2044,32 +2044,32 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .c3,
 .c1:focus-within:hover .c3,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .c3 *,
 .c1:focus-within:hover .c3 *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -2335,32 +2335,32 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .c7 *,
 .c1:focus-within:hover .c7 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -2596,32 +2596,32 @@ exports[`TextField with outlined variant and with label should render default st
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
+  border-color: #126AFA;
   background-color: transparent;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -2838,32 +2838,32 @@ exports[`TextField with outlined variant and with label should render focus stat
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
+  border-color: #126AFA;
   background-color: transparent;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -3080,32 +3080,32 @@ exports[`TextField with outlined variant and without label should render default
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
+  border-color: #126AFA;
   background-color: transparent;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -3322,32 +3322,32 @@ exports[`TextField with outlined variant and without label should render focus s
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
+  border-color: #126AFA;
   background-color: transparent;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -3925,32 +3925,32 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
+  border-color: #126AFA;
   background-color: transparent;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .c3,
 .c1:focus-within:hover .c3,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .c3 *,
 .c1:focus-within:hover .c3 *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -4204,32 +4204,32 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
+  border-color: #126AFA;
   background-color: transparent;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .c7 *,
 .c1:focus-within:hover .c7 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -4477,32 +4477,32 @@ exports[`TextField without label should render default state properly 1`] = `
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -4731,32 +4731,32 @@ exports[`TextField without label should render focus state properly  1`] = `
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,

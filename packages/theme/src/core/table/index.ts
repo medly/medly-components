@@ -9,10 +9,10 @@ const table: TableTheme = {
         bgColor: {
             odd: colors.grey[50],
             even: colors.white,
-            selected: colors.communityBlue[200],
+            selected: colors.blue[200],
             disabled: colors.grey[100]
         },
-        selectedBorderColor: colors.communityBlue[500]
+        selectedBorderColor: colors.blue[500]
     },
     header: {
         bgColor: colors.white,
@@ -22,9 +22,9 @@ const table: TableTheme = {
                 hovered: colors.grey[50],
                 pressed: colors.grey[100],
                 selected: {
-                    default: colors.communityBlue[100],
-                    hovered: colors.communityBlue[100],
-                    pressed: colors.communityBlue[200]
+                    default: colors.blue[100],
+                    hovered: colors.blue[100],
+                    pressed: colors.blue[200]
                 }
             },
             textColor: {
@@ -32,9 +32,9 @@ const table: TableTheme = {
                 hovered: colors.grey[900],
                 pressed: colors.black,
                 selected: {
-                    default: colors.communityBlue[500],
-                    hovered: colors.communityBlue[500],
-                    pressed: colors.communityBlue[500]
+                    default: colors.blue[500],
+                    hovered: colors.blue[600],
+                    pressed: colors.blue[700]
                 }
             }
         }

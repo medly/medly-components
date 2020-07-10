@@ -71,24 +71,24 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
 
 .c1:not(:disabled):not(:hover) {
   border: 0.1rem solid;
-  color: #005AEE;
-  border-color: #005AEE;
+  color: #126AFA;
+  border-color: #126AFA;
 }
 
 .c1:not(:disabled):not(:hover) .sc-AxirZ * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:not(:disabled):hover {
   border: 0.2rem solid;
-  color: #1A6BF0;
-  border-color: #1A6BF0;
+  color: #70ADE9;
+  border-color: #70ADE9;
   padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c1:not(:disabled):hover .sc-AxirZ * {
-  fill: #1A6BF0;
+  fill: #70ADE9;
 }
 
 .c1 .sc-AxirZ + .c2 {
@@ -259,24 +259,24 @@ exports[`Pagination component should render correctly with all the default props
 
 .c1:not(:disabled):not(:hover) {
   border: 0.1rem solid;
-  color: #005AEE;
-  border-color: #005AEE;
+  color: #126AFA;
+  border-color: #126AFA;
 }
 
 .c1:not(:disabled):not(:hover) .sc-AxirZ * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:not(:disabled):hover {
   border: 0.2rem solid;
-  color: #1A6BF0;
-  border-color: #1A6BF0;
+  color: #70ADE9;
+  border-color: #70ADE9;
   padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c1:not(:disabled):hover .sc-AxirZ * {
-  fill: #1A6BF0;
+  fill: #70ADE9;
 }
 
 .c1 .sc-AxirZ + .c2 {
@@ -350,11 +350,11 @@ exports[`Pagination component should render correctly with all the default props
 }
 
 .c4:not(:disabled):not(:hover) {
-  background: #005AEE;
+  background: #126AFA;
 }
 
 .c4:not(:disabled):hover {
-  background: #1A6BF0;
+  background: #70ADE9;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
@@ -594,11 +594,11 @@ exports[`Pagination component should render correctly with all the props given 1
 }
 
 .c1:not(:disabled):not(:hover) {
-  background: #005AEE;
+  background: #126AFA;
 }
 
 .c1:not(:disabled):hover {
-  background: #1A6BF0;
+  background: #70ADE9;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
@@ -668,24 +668,24 @@ exports[`Pagination component should render correctly with all the props given 1
 
 .c4:not(:disabled):not(:hover) {
   border: 0.1rem solid;
-  color: #005AEE;
-  border-color: #005AEE;
+  color: #126AFA;
+  border-color: #126AFA;
 }
 
 .c4:not(:disabled):not(:hover) .sc-AxirZ * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c4:not(:disabled):hover {
   border: 0.2rem solid;
-  color: #1A6BF0;
-  border-color: #1A6BF0;
+  color: #70ADE9;
+  border-color: #70ADE9;
   padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
 .c4:not(:disabled):hover .sc-AxirZ * {
-  fill: #1A6BF0;
+  fill: #70ADE9;
 }
 
 .c4 .sc-AxirZ + .c2 {

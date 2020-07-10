@@ -103,7 +103,7 @@ exports[`Calendar Component should render given date 1`] = `
   width: 0;
   bottom: 1.05rem;
   left: 50%;
-  background: #1A6BF0;
+  background: #70ADE9;
   height: 0.15rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -122,19 +122,19 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c2:not(:disabled):not(:hover) {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c2:not(:disabled):not(:hover) .c15 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c2:not(:disabled):hover {
-  color: #1A6BF0;
+  color: #70ADE9;
 }
 
 .c2:not(:disabled):hover .c15 * {
-  fill: #1A6BF0;
+  fill: #70ADE9;
 }
 
 .c2:not(:disabled):hover::after {
@@ -262,32 +262,32 @@ exports[`Calendar Component should render given date 1`] = `
 
 .c10:focus-within,
 .c10:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c10:focus-within::after,
 .c10:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c10:focus-within .c13,
 .c10:focus-within:hover .c13 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c10:focus-within .sc-AxheI,
 .c10:focus-within:hover .sc-AxheI,
 .c10:focus-within .c17,
 .c10:focus-within:hover .c17 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c10:focus-within .sc-AxheI *,
 .c10:focus-within:hover .sc-AxheI *,
 .c10:focus-within .c17 *,
 .c10:focus-within:hover .c17 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c10:focus-within input::-webkit-input-placeholder,

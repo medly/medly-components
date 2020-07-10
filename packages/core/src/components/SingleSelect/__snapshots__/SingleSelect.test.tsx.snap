@@ -97,32 +97,32 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c3:focus-within .sc-AxhCb,
 .c3:focus-within:hover .sc-AxhCb,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c3:focus-within .sc-AxhCb *,
 .c3:focus-within:hover .sc-AxhCb *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -434,32 +434,32 @@ exports[`SingleSelect component should render properly when isSearchable is true
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c3:focus-within .sc-AxhCb,
 .c3:focus-within:hover .sc-AxhCb,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c3:focus-within .sc-AxhCb *,
 .c3:focus-within:hover .sc-AxhCb *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -1351,32 +1351,32 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c3:focus-within .sc-AxhCb,
 .c3:focus-within:hover .sc-AxhCb,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c3:focus-within .sc-AxhCb *,
 .c3:focus-within:hover .sc-AxhCb *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -2241,32 +2241,32 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  border-color: #005AEE;
+  border-color: #126AFA;
   background-color: transparent;
 }
 
 .c3:focus-within::after,
 .c3:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c3:focus-within .c6,
 .c3:focus-within:hover .c6 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c3:focus-within .sc-AxhCb,
 .c3:focus-within:hover .sc-AxhCb,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c3:focus-within .sc-AxhCb *,
 .c3:focus-within:hover .sc-AxhCb *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,

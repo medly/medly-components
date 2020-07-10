@@ -1,6 +1,6 @@
 import black from './black';
+import blue from './blue';
 import blushedPink from './blushedPink';
-import communityBlue from './communityBlue';
 import green from './green';
 import grey from './grey';
 import marigoldOrange from './marigoldOrange';
@@ -15,7 +15,7 @@ import white from './white';
 const colors: ColorPallet = {
     black,
     blushedPink,
-    communityBlue,
+    blue,
     green,
     grey,
     marigoldOrange,

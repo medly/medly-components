@@ -50,7 +50,7 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 .c3:hover {
-  background-color: #1A6BF0;
+  background-color: #70ADE9;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);

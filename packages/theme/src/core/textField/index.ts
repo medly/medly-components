@@ -16,8 +16,8 @@ const textField: TextFieldTheme = {
         disabled: { labelColor: colors.grey[400], textColor: colors.grey[800], borderColor: colors.grey[300] },
         active: {
             placeholderColor: colors.grey[300],
-            borderColor: colors.communityBlue[500],
-            labelColor: colors.communityBlue[500]
+            borderColor: colors.blue[500],
+            labelColor: colors.blue[500]
         },
         error: {
             caretColor: colors.red[500],
@@ -43,9 +43,9 @@ const textField: TextFieldTheme = {
         disabled: { bgColor: colors.grey[50], labelColor: colors.grey[400], textColor: colors.grey[800], borderColor: colors.grey[300] },
         active: {
             placeholderColor: 'rgba(0, 90, 238, .2)',
-            bgColor: colors.communityBlue[100],
-            borderColor: colors.communityBlue[500],
-            labelColor: colors.communityBlue[500]
+            bgColor: colors.blue[100],
+            borderColor: colors.blue[500],
+            labelColor: colors.blue[500]
         },
         error: {
             caretColor: colors.red[500],

@@ -76,11 +76,11 @@ exports[`Form should not render any field if component type is not matched 1`] =
 }
 
 .c3:not(:disabled):not(:hover) {
-  background: #005AEE;
+  background: #126AFA;
 }
 
 .c3:not(:disabled):hover {
-  background: #1A6BF0;
+  background: #70ADE9;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
@@ -312,11 +312,11 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c72:not(:disabled):not(:hover) {
-  background: #005AEE;
+  background: #126AFA;
 }
 
 .c72:not(:disabled):hover {
-  background: #1A6BF0;
+  background: #70ADE9;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
@@ -441,8 +441,8 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c27:checked ~ .c28 {
-  border-color: #005AEE;
-  background-color: #005AEE;
+  border-color: #126AFA;
+  background-color: #126AFA;
 }
 
 .c27:checked ~ .c28 .c30 {
@@ -461,12 +461,12 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c27:not(:disabled):focus:not(:checked) ~ .c28 {
-  border-color: #005AEE;
-  box-shadow: 0 0 0.8rem #005AEE;
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem #126AFA;
 }
 
 .c27:not(:disabled):focus:checked ~ .c28 {
-  box-shadow: 0 0 0.8rem #005AEE;
+  box-shadow: 0 0 0.8rem #126AFA;
 }
 
 .c26 {
@@ -501,8 +501,8 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c24:hover .c28 {
-  border-color: #1A6BF0;
-  background-color: #1A6BF0;
+  border-color: #70ADE9;
+  background-color: #70ADE9;
 }
 
 .c32 {
@@ -530,7 +530,7 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c32:hover .c28 {
-  border-color: #1A6BF0;
+  border-color: #70ADE9;
 }
 
 .c70 {
@@ -558,8 +558,8 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c70:hover .c28 {
-  border-color: #1A6BF0;
-  background-color: #1A6BF0;
+  border-color: #70ADE9;
+  background-color: #70ADE9;
 }
 
 .c60 {
@@ -695,32 +695,32 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c4:focus-within,
 .c4:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c4:focus-within::after,
 .c4:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c4:focus-within .c7,
 .c4:focus-within:hover .c7 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c4:focus-within .sc-fzoNJl,
 .c4:focus-within:hover .sc-fzoNJl,
 .c4:focus-within .c56,
 .c4:focus-within:hover .c56 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c4:focus-within .sc-fzoNJl *,
 .c4:focus-within:hover .sc-fzoNJl *,
 .c4:focus-within .c56 *,
 .c4:focus-within:hover .c56 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c4:focus-within input::-webkit-input-placeholder,
@@ -1415,12 +1415,12 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c37:not(:disabled):checked ~ .c38 {
-  border-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c37:not(:disabled):focus ~ .c38 {
-  border-color: #005AEE;
-  box-shadow: 0 0 0.8rem #005AEE;
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem #126AFA;
 }
 
 .c36 {
@@ -1452,7 +1452,7 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c35:hover.c34:hover .c38 {
-  border-color: #1A6BF0;
+  border-color: #70ADE9;
 }
 
 .c71 {
@@ -2527,11 +2527,11 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c71:not(:disabled):not(:hover) {
-  background: #005AEE;
+  background: #126AFA;
 }
 
 .c71:not(:disabled):hover {
-  background: #1A6BF0;
+  background: #70ADE9;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
@@ -2656,8 +2656,8 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c29:checked ~ .c30 {
-  border-color: #005AEE;
-  background-color: #005AEE;
+  border-color: #126AFA;
+  background-color: #126AFA;
 }
 
 .c29:checked ~ .c30 .c32 {
@@ -2676,12 +2676,12 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c29:not(:disabled):focus:not(:checked) ~ .c30 {
-  border-color: #005AEE;
-  box-shadow: 0 0 0.8rem #005AEE;
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem #126AFA;
 }
 
 .c29:not(:disabled):focus:checked ~ .c30 {
-  box-shadow: 0 0 0.8rem #005AEE;
+  box-shadow: 0 0 0.8rem #126AFA;
 }
 
 .c28 {
@@ -2716,7 +2716,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c26:hover .c30 {
-  border-color: #1A6BF0;
+  border-color: #70ADE9;
 }
 
 .c69 {
@@ -2744,7 +2744,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c69:hover .c30 {
-  border-color: #1A6BF0;
+  border-color: #70ADE9;
 }
 
 .c11 {
@@ -2834,32 +2834,32 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c7:focus-within,
 .c7:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  border-color: #126AFA;
+  background-color: #E7F0FF;
 }
 
 .c7:focus-within::after,
 .c7:focus-within:hover::after {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c7:focus-within .c10,
 .c7:focus-within:hover .c10 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c7:focus-within .sc-fzoNJl,
 .c7:focus-within:hover .sc-fzoNJl,
 .c7:focus-within .c57,
 .c7:focus-within:hover .c57 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c7:focus-within .sc-fzoNJl *,
 .c7:focus-within:hover .sc-fzoNJl *,
 .c7:focus-within .c57 *,
 .c7:focus-within:hover .c57 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c7:focus-within input::-webkit-input-placeholder,
@@ -3554,12 +3554,12 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c38:not(:disabled):checked ~ .c39 {
-  border-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c38:not(:disabled):focus ~ .c39 {
-  border-color: #005AEE;
-  box-shadow: 0 0 0.8rem #005AEE;
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem #126AFA;
 }
 
 .c37 {
@@ -3591,7 +3591,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c36:hover.c35:hover .c39 {
-  border-color: #1A6BF0;
+  border-color: #70ADE9;
 }
 
 .c70 {

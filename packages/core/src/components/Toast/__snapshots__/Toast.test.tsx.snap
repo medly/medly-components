@@ -22,7 +22,7 @@ exports[`Toast should render action button 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c10 * {
@@ -95,7 +95,7 @@ exports[`Toast should render action button 1`] = `
   width: 0;
   bottom: 0.85rem;
   left: 50%;
-  background: #1A6BF0;
+  background: #70ADE9;
   height: 0.15rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -114,19 +114,19 @@ exports[`Toast should render action button 1`] = `
 }
 
 .c7:not(:disabled):not(:hover) {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c7:not(:disabled):not(:hover) .c2 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c7:not(:disabled):hover {
-  color: #1A6BF0;
+  color: #70ADE9;
 }
 
 .c7:not(:disabled):hover .c2 * {
-  fill: #1A6BF0;
+  fill: #70ADE9;
 }
 
 .c7:not(:disabled):hover::after {
@@ -304,7 +304,7 @@ exports[`Toast should render custom icons 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c6 * {
@@ -464,7 +464,7 @@ exports[`Toast should render header and message text 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c8 * {
@@ -658,7 +658,7 @@ exports[`Toast should render properly with error variant 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c6 * {
@@ -820,7 +820,7 @@ exports[`Toast should render properly with info variant 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c6 * {
@@ -844,7 +844,7 @@ exports[`Toast should render properly with info variant 1`] = `
   min-width: 25rem;
   box-shadow: 0 0.8rem 3.2rem #b0bcc8;
   border-radius: 0.4rem;
-  border-left: 0.4rem solid #005AEE;
+  border-left: 0.4rem solid #126AFA;
 }
 
 .c1 {
@@ -852,7 +852,7 @@ exports[`Toast should render properly with info variant 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c1 .c2 {
@@ -860,7 +860,7 @@ exports[`Toast should render properly with info variant 1`] = `
 }
 
 .c1 .c2 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c4 {
@@ -982,7 +982,7 @@ exports[`Toast should render properly with success variant 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c6 * {
@@ -1141,7 +1141,7 @@ exports[`Toast should render properly with warning variant 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c6 * {

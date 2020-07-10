@@ -21,13 +21,13 @@ const checkbox: CheckboxTheme = {
     },
     borderColor: {
         error: colors.red[500],
-        active: colors.communityBlue[500],
+        active: colors.blue[500],
         default: colors.black,
         disabled: colors.grey[500]
     },
     bgColor: {
         disabled: colors.grey[200],
-        active: colors.communityBlue[500],
+        active: colors.blue[500],
         error: colors.red[500]
     },
     iconColor: {
@@ -36,7 +36,7 @@ const checkbox: CheckboxTheme = {
         error: colors.white
     },
     hoverBgColor: {
-        active: colors.communityBlue[400],
+        active: colors.blue[400],
         error: colors.red[400]
     }
 };

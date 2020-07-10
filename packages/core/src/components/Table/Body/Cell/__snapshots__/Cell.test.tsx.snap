@@ -142,8 +142,8 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c7:checked ~ .c8 {
-  border-color: #005AEE;
-  background-color: #005AEE;
+  border-color: #126AFA;
+  background-color: #126AFA;
 }
 
 .c7:checked ~ .c8 .c10 {
@@ -162,12 +162,12 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c7:not(:disabled):focus:not(:checked) ~ .c8 {
-  border-color: #005AEE;
-  box-shadow: 0 0 0.8rem #005AEE;
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem #126AFA;
 }
 
 .c7:not(:disabled):focus:checked ~ .c8 {
-  box-shadow: 0 0 0.8rem #005AEE;
+  box-shadow: 0 0 0.8rem #126AFA;
 }
 
 .c6 {
@@ -202,7 +202,7 @@ exports[`Cell should render checkbox properly 1`] = `
 }
 
 .c2:hover .c8 {
-  border-color: #1A6BF0;
+  border-color: #70ADE9;
 }
 
 .c0 {

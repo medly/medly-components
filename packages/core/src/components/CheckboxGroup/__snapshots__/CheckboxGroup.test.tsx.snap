@@ -156,8 +156,8 @@ exports[`CheckboxGroup component should render properly 1`] = `
 }
 
 .c9:checked ~ .c10 {
-  border-color: #005AEE;
-  background-color: #005AEE;
+  border-color: #126AFA;
+  background-color: #126AFA;
 }
 
 .c9:checked ~ .c10 .c12 {
@@ -176,12 +176,12 @@ exports[`CheckboxGroup component should render properly 1`] = `
 }
 
 .c9:not(:disabled):focus:not(:checked) ~ .c10 {
-  border-color: #005AEE;
-  box-shadow: 0 0 0.8rem #005AEE;
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem #126AFA;
 }
 
 .c9:not(:disabled):focus:checked ~ .c10 {
-  box-shadow: 0 0 0.8rem #005AEE;
+  box-shadow: 0 0 0.8rem #126AFA;
 }
 
 .c8 {
@@ -216,7 +216,7 @@ exports[`CheckboxGroup component should render properly 1`] = `
 }
 
 .c5:hover .c10 {
-  border-color: #1A6BF0;
+  border-color: #70ADE9;
 }
 
 .c14 {
@@ -244,8 +244,8 @@ exports[`CheckboxGroup component should render properly 1`] = `
 }
 
 .c14:hover .c10 {
-  border-color: #1A6BF0;
-  background-color: #1A6BF0;
+  border-color: #70ADE9;
+  background-color: #70ADE9;
 }
 
 <div>
@@ -681,12 +681,12 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
 }
 
 .c9:not(:disabled):focus:not(:checked) ~ .c10 {
-  border-color: #005AEE;
-  box-shadow: 0 0 0.8rem #005AEE;
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem #126AFA;
 }
 
 .c9:not(:disabled):focus:checked ~ .c10 {
-  box-shadow: 0 0 0.8rem #005AEE;
+  box-shadow: 0 0 0.8rem #126AFA;
 }
 
 .c8 {
@@ -1170,12 +1170,12 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
 }
 
 .c9:not(:disabled):focus:not(:checked) ~ .c10 {
-  border-color: #005AEE;
-  box-shadow: 0 0 0.8rem #005AEE;
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem #126AFA;
 }
 
 .c9:not(:disabled):focus:checked ~ .c10 {
-  box-shadow: 0 0 0.8rem #005AEE;
+  box-shadow: 0 0 0.8rem #126AFA;
 }
 
 .c8 {
