@@ -8,9 +8,8 @@ import { Suffix } from './Suffix.styled';
 
 const outlineStyle = ({ theme, outlined, disabled, isErrorPresent }: InnerWrapperProps) => {
     return css`
-        padding: 0 1.5rem;
+        border-radius: ${theme.spacing.S1};
         background-color: transparent;
-
         &::after {
             content: '';
             box-sizing: border-box;
@@ -43,10 +42,8 @@ const outlineStyle = ({ theme, outlined, disabled, isErrorPresent }: InnerWrappe
 
 const filledStyle = ({ theme, filled, disabled }: InnerWrapperProps) => {
     return css`
-        padding: 0 1.6rem;
         border-radius: ${theme.spacing.S1} ${theme.spacing.S1} 0 0;
         background-color: ${filled.default.bgColor};
-
         &::after {
             content: '';
             width: 100%;
@@ -152,6 +149,7 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
     flex-direction: row;
     box-sizing: border-box;
     height: 5.6rem;
+    padding: 0 1.6rem;
     transition: all 100ms ease-out;
     cursor: text;
 

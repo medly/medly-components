@@ -217,10 +217,10 @@ exports[`Calendar Component should render given date 1`] = `
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }

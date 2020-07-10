@@ -10,7 +10,7 @@ export const Label = styled('label')<{ required: boolean; variant: 'outlined' | 
     line-height: 2.6rem;
     transform-origin: 0 0;
     touch-action: manipulation;
-    transform: ${({ variant }) => (variant === 'outlined' ? `translate3d(0, 52%, 0) ` : `translate3d(0, 58%, 0) `)};
+    transform: ${({ variant }) => (variant === 'outlined' ? `translate3d(0, 55%, 0) ` : `translate3d(0, 58%, 0) `)};
 
     ${({ required }) =>
         required &&

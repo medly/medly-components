@@ -52,10 +52,10 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -389,10 +389,10 @@ exports[`SingleSelect component should render properly when isSearchable is true
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -729,10 +729,10 @@ exports[`SingleSelect component with filled variant should render disabled state
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   cursor: not-allowed;
@@ -1297,10 +1297,10 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -1609,9 +1609,9 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,52%,0);
-  -ms-transform: translate3d(0,52%,0);
-  transform: translate3d(0,52%,0);
+  -webkit-transform: translate3d(0,55%,0);
+  -ms-transform: translate3d(0,55%,0);
+  transform: translate3d(0,55%,0);
 }
 
 .c10 {
@@ -1634,10 +1634,11 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.5rem;
+  border-radius: 0.4rem;
   background-color: transparent;
   cursor: not-allowed;
   background-color: transparent;
@@ -2180,9 +2181,9 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,52%,0);
-  -ms-transform: translate3d(0,52%,0);
-  transform: translate3d(0,52%,0);
+  -webkit-transform: translate3d(0,55%,0);
+  -ms-transform: translate3d(0,55%,0);
+  transform: translate3d(0,55%,0);
 }
 
 .c10 {
@@ -2205,10 +2206,11 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.5rem;
+  border-radius: 0.4rem;
   background-color: transparent;
 }
 
@@ -2248,11 +2250,11 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 }
 
 .c3:hover {
-  box-shadow: 0px 2px 8px rgba(96,120,144,0.2);
+  box-shadow: 0px 0.2rem 0.8rem rgba(96,120,144,0.2);
 }
 
 .c3:focus-within {
-  box-shadow: 0px 2px 8px rgba(18,106,250,0.2);
+  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c3:hover::after,
