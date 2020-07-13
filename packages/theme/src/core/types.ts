@@ -13,6 +13,7 @@ export * from './label/types';
 export * from './link/types';
 export * from './modal/types';
 export * from './radio/types';
+export * from './searchBox/types';
 export * from './select/types';
 export * from './spacing/types';
 export * from './stepper/types';

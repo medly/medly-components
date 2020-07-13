@@ -13,5 +13,6 @@ export interface SelectTheme {
         textColor: string;
         disableTextColor: string;
         hoverBgColor: string;
+        highlightedBgColor: string;
     };
 }

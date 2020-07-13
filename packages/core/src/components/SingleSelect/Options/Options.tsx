@@ -9,7 +9,7 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(
         return (
             <Styled.Options {...restProps} ref={ref}>
                 {options.map(option => (
-                    <Option key={option.value} {...option} onClick={onOptionClick} />
+                    <Option key={option.value} {...option} highlightSelected={restProps.highlightSelected} onClick={onOptionClick} />
                 ))}
             </Styled.Options>
         );
