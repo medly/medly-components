@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.4.0...@medly-components/theme@1.5.0) (2020-07-13)
+
+
+### Bug Fixes
+
+* add callback for all function for search box ([0ca83c5](https://github.com/medly/medly-components/commit/0ca83c57457a715b7a28c8ee6738a56e9d82ccd0))
+* add support for max height in search results ([46d46b3](https://github.com/medly/medly-components/commit/46d46b35654df410406a5394ed036d4161c144b8))
+* rename variable prop names ([33c0069](https://github.com/medly/medly-components/commit/33c006973455bed251b0730fa03334f541533290))
+
+
+### Features
+
+* add search box component ([08bd1d0](https://github.com/medly/medly-components/commit/08bd1d08c4a4d5a486cecb473b497df99f518a2d))
+
+
+
+
+
 # [1.4.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.3.0...@medly-components/theme@1.4.0) (2020-07-09)
 
 
