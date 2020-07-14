@@ -64,24 +64,35 @@ exports[`Form Actions should render center aligned actions defined in action sch
 }
 
 .c1:disabled .sc-AxiKw * {
-  fill: #dfe4e9;
-}
-
-.c1:not(:disabled) {
-  color: #ffffff;
-}
-
-.c1:not(:disabled) .sc-AxiKw * {
-  fill: #ffffff;
+  fill: #98A7B7;
 }
 
 .c1:not(:disabled):not(:hover) {
+  color: #ffffff;
   background: #126AFA;
 }
 
-.c1:not(:disabled):hover {
-  background: #70ADE9;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+.c1:not(:disabled):not(:hover) .sc-AxiKw * {
+  fill: #ffffff;
+}
+
+.c1:not(:disabled):active {
+  color: #ffffff;
+  background: #0D4AAF;
+}
+
+.c1:not(:disabled):active .sc-AxiKw * {
+  fill: #ffffff;
+}
+
+.c1:not(:disabled):not(:active):hover {
+  color: #ffffff;
+  background: #0F5AD5;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+}
+
+.c1:not(:disabled):not(:active):hover .sc-AxiKw * {
+  fill: #ffffff;
 }
 
 .c1 .sc-AxiKw + .c2 {
@@ -118,7 +129,6 @@ exports[`Form Actions should render center aligned actions defined in action sch
   >
     <button
       class="c1"
-      color="default"
       disabled=""
       form="dummy"
       type="submit"
@@ -197,24 +207,35 @@ exports[`Form Actions should render default action button 1`] = `
 }
 
 .c1:disabled .sc-AxiKw * {
-  fill: #dfe4e9;
-}
-
-.c1:not(:disabled) {
-  color: #ffffff;
-}
-
-.c1:not(:disabled) .sc-AxiKw * {
-  fill: #ffffff;
+  fill: #98A7B7;
 }
 
 .c1:not(:disabled):not(:hover) {
+  color: #ffffff;
   background: #126AFA;
 }
 
-.c1:not(:disabled):hover {
-  background: #70ADE9;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+.c1:not(:disabled):not(:hover) .sc-AxiKw * {
+  fill: #ffffff;
+}
+
+.c1:not(:disabled):active {
+  color: #ffffff;
+  background: #0D4AAF;
+}
+
+.c1:not(:disabled):active .sc-AxiKw * {
+  fill: #ffffff;
+}
+
+.c1:not(:disabled):not(:active):hover {
+  color: #ffffff;
+  background: #0F5AD5;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+}
+
+.c1:not(:disabled):not(:active):hover .sc-AxiKw * {
+  fill: #ffffff;
 }
 
 .c1 .sc-AxiKw + .c2 {
@@ -251,7 +272,6 @@ exports[`Form Actions should render default action button 1`] = `
   >
     <button
       class="c1"
-      color="default"
       disabled=""
       form="dummy"
       type="submit"
@@ -330,24 +350,35 @@ exports[`Form Actions should render left aligned actions defined in action schem
 }
 
 .c1:disabled .sc-AxiKw * {
-  fill: #dfe4e9;
-}
-
-.c1:not(:disabled) {
-  color: #ffffff;
-}
-
-.c1:not(:disabled) .sc-AxiKw * {
-  fill: #ffffff;
+  fill: #98A7B7;
 }
 
 .c1:not(:disabled):not(:hover) {
+  color: #ffffff;
   background: #126AFA;
 }
 
-.c1:not(:disabled):hover {
-  background: #70ADE9;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+.c1:not(:disabled):not(:hover) .sc-AxiKw * {
+  fill: #ffffff;
+}
+
+.c1:not(:disabled):active {
+  color: #ffffff;
+  background: #0D4AAF;
+}
+
+.c1:not(:disabled):active .sc-AxiKw * {
+  fill: #ffffff;
+}
+
+.c1:not(:disabled):not(:active):hover {
+  color: #ffffff;
+  background: #0F5AD5;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+}
+
+.c1:not(:disabled):not(:active):hover .sc-AxiKw * {
+  fill: #ffffff;
 }
 
 .c1 .sc-AxiKw + .c2 {
@@ -384,7 +415,6 @@ exports[`Form Actions should render left aligned actions defined in action schem
   >
     <button
       class="c1"
-      color="default"
       disabled=""
       form="dummy"
       type="submit"

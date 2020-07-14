@@ -1,6 +1,8 @@
-import { HTMLProps } from '@medly-components/utils';
+import { HTMLProps, updateNestedValue } from '@medly-components/utils';
 import { SendIcon } from '@medly-components/icons';
+import { defaultTheme } from '@medly-components/theme';
 import { Button } from './Button.tsx';
+import { ThemeProvider } from 'styled-components';
 import { withKnobs, color, select, boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { sizes, edges, variants, colors, ThemeInterface } from './Button.stories';
@@ -21,8 +23,6 @@ You can play with the props in canvas tab.
             edges={select('Edges', edges, 'square')}
             variant={select('Variant', variants, 'solid')}
             disabled={boolean('Disabled', false)}
-            withGradient={boolean('Witth Gradient', false)}
-            color={select('Color', colors, 'default')}
         >
             Button Text
         </Button>
@@ -65,16 +65,6 @@ Use variant prop to change the style of the button.
     <Button variant="solid">Solid Button</Button>
     <Button variant="outlined">Outlined Button</Button>
     <Button variant="flat">Flat Button</Button>
-</Preview>
-
-### Colors
-
-There are three different color option available.
-
-<Preview>
-    <Button color="default">Default Button</Button>
-    <Button color="confirmation">Confirmation Button</Button>
-    <Button color="error">Error Button</Button>
 </Preview>
 
 ### Disabled
@@ -122,20 +112,61 @@ import { Button } from '@medly-components/icons';
     </Button>
 </Preview>
 
-### Gradient Buttton
+### Custom Colors
 
-Only `Solid` variant can also be shown with gradient, just set `witthGradient` prop true.
+To use custom colors for button component you can provide the custom `theme` to button component. We have `updateNestedValue` function avalaible in `@medly-components/utils` to update the nested value in the object. Check out the `Theme` section to find out which all properties are mandatory in different vaiants.
+
+```tsx
+import { updateNestedValue } from '@medly-components/utils';
+import { defaultTheme } from '@medly-components/theme';
+import { Button } from './Button.tsx';
+import { ThemeProvider } from 'styled-components';
+
+<ThemeProvider
+    theme={updateNestedValue(defaultTheme, 'button.solid.bgColor', {
+        default: defaultTheme.colors.red[500],
+        hovered: defaultTheme.colors.red[600],
+        pressed: defaultTheme.colors.red[700],
+        disabled: defaultTheme.colors.grey[200]
+    })}
+>
+    <Button variant="solid" size="S">
+        Button Text
+    </Button>
+</ThemeProvider>;
+```
 
 <Preview>
-    <Button variant="solid" withGradient>
-        Gradient Button
-    </Button>
+    <ThemeProvider
+        theme={updateNestedValue(defaultTheme, 'button.solid.bgColor', {
+            default: defaultTheme.colors.red[500],
+            hovered: defaultTheme.colors.red[600],
+            pressed: defaultTheme.colors.red[700],
+            disabled: defaultTheme.colors.grey[200]
+        })}
+    >
+        <Button variant="solid" size="S">
+            Red Button
+        </Button>
+    </ThemeProvider>
+    <ThemeProvider
+        theme={updateNestedValue(defaultTheme, 'button.solid.bgColor', {
+            default: defaultTheme.colors.green[500],
+            hovered: defaultTheme.colors.green[600],
+            pressed: defaultTheme.colors.green[700],
+            disabled: defaultTheme.colors.grey[200]
+        })}
+    >
+        <Button variant="solid" size="S">
+            Green Button
+        </Button>
+    </ThemeProvider>
 </Preview>
 
 ### Props
 
 <Props of={Button} />
 
-### ButtonTheme
+### Theme
 
 <Props of={ThemeInterface} />

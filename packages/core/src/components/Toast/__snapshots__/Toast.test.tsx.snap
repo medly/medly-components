@@ -56,7 +56,7 @@ exports[`Toast should render action button 1`] = `
   transition: all 100ms ease-out;
   padding: 0.8rem 2.4rem 1rem 2.4rem;
   border-radius: 0.8rem;
-  background: transparent;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -95,7 +95,6 @@ exports[`Toast should render action button 1`] = `
   width: 0;
   bottom: 0.85rem;
   left: 50%;
-  background: #70ADE9;
   height: 0.15rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -106,30 +105,58 @@ exports[`Toast should render action button 1`] = `
 }
 
 .c7:disabled {
-  color: #b0bcc8;
+  color: #98A7B7;
+}
+
+.c7:disabled::after {
+  background-color: #98A7B7;
 }
 
 .c7:disabled .c2 * {
-  fill: #b0bcc8;
+  fill: #98A7B7;
 }
 
 .c7:not(:disabled):not(:hover) {
   color: #126AFA;
 }
 
+.c7:not(:disabled):not(:hover)::after {
+  background-color: #126AFA;
+}
+
 .c7:not(:disabled):not(:hover) .c2 * {
   fill: #126AFA;
 }
 
-.c7:not(:disabled):hover {
-  color: #70ADE9;
+.c7:not(:disabled):active {
+  color: #0D4AAF;
 }
 
-.c7:not(:disabled):hover .c2 * {
-  fill: #70ADE9;
+.c7:not(:disabled):active::after {
+  background-color: #0D4AAF;
 }
 
-.c7:not(:disabled):hover::after {
+.c7:not(:disabled):active .c2 * {
+  fill: #0D4AAF;
+}
+
+.c7:not(:disabled):active::after {
+  width: calc(100% - 4.8rem);
+}
+
+.c7:not(:disabled):not(:active):hover {
+  color: #0F5AD5;
+}
+
+.c7:not(:disabled):not(:active):hover::after {
+  background-color: #0F5AD5;
+}
+
+.c7:not(:disabled):not(:active):hover .c2 * {
+  fill: #0F5AD5;
+}
+
+.c7:not(:disabled):not(:active):hover::after {
   width: calc(100% - 4.8rem);
 }
 
@@ -252,7 +279,6 @@ exports[`Toast should render action button 1`] = `
     >
       <button
         class="c6 c7"
-        color="default"
         label="Action 1"
         type="button"
       >

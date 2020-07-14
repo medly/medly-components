@@ -2,11 +2,22 @@ import { SvgIcon } from '@medly-components/icons';
 import { css } from '@medly-components/utils';
 import { Props } from '../types';
 
-export const flatButton = ({ theme, color, size }: Props) => {
-    const { colors } = theme.button;
-    return css`
-        background: transparent;
+const getStyle = (color: string) => css`
+    color: ${color};
+    &::after {
+        background-color: ${color};
+    }
+    ${SvgIcon} {
+        * {
+            fill: ${color};
+        }
+    }
+`;
 
+export const flatButton = ({ theme, size }: Props) => {
+    const { textColor } = theme.button.flat;
+    return css`
+        background-color: transparent;
         &::after {
             content: '';
             display: block;
@@ -14,39 +25,27 @@ export const flatButton = ({ theme, color, size }: Props) => {
             width: 0;
             bottom: ${size === 'M' ? `1.05rem` : `0.85rem`};
             left: 50%;
-            background: ${colors[color].hoverBgColor};
             height: 0.15rem;
             transition: all 100ms ease-out;
             border-radius: 0.15rem;
             transform: translate(-50%);
         }
-
         &:disabled {
-            color: ${colors.flat.disabledTextColor};
-            ${SvgIcon} {
-                * {
-                    fill: ${colors.flat.disabledTextColor};
-                }
-            }
+            ${getStyle(textColor.disabled)}
         }
 
         &:not(:disabled) {
             &:not(:hover) {
-                color: ${colors[color].bgColor};
-                ${SvgIcon} {
-                    * {
-                        fill: ${colors[color].bgColor};
-                    }
+                ${getStyle(textColor.default)}
+            }
+            &:active {
+                ${getStyle(textColor.pressed)}
+                &::after {
+                    width: calc(100% - 4.8rem);
                 }
             }
-            &:hover {
-                color: ${colors[color].hoverBgColor};
-                ${SvgIcon} {
-                    * {
-                        fill: ${colors[color].hoverBgColor};
-                    }
-                }
-
+            &:not(:active):hover {
+                ${getStyle(textColor.hovered)}
                 &::after {
                     width: calc(100% - 4.8rem);
                 }

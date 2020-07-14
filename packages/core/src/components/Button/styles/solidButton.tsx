@@ -1,33 +1,35 @@
 import { SvgIcon } from '@medly-components/icons';
 import { css } from '@medly-components/utils';
+import { rgba } from 'polished';
 import { Props } from '../types';
 
-export const solidButton = ({ theme, color, withGradient }: Props) => {
-    const { colors } = theme.button;
+const getStyle = (textColor: string, bgColor: string) => css`
+    color: ${textColor};
+    background: ${bgColor};
+    ${SvgIcon} {
+        * {
+            fill: ${textColor};
+        }
+    }
+`;
+
+export const solidButton = ({ theme }: Props) => {
+    const { textColor, bgColor } = theme.button.solid;
     return css`
         &:disabled {
-            color: ${colors.solid.disabledTextColor};
-            background: ${colors.solid.disabledBgColor};
-            ${SvgIcon} {
-                * {
-                    fill: ${colors.solid.disabledBgColor};
-                }
-            }
+            ${getStyle(textColor.disabled, bgColor.disabled)}
         }
 
         &:not(:disabled) {
-            color: ${colors.solid.textColor};
-            ${SvgIcon} {
-                * {
-                    fill: ${colors.solid.textColor};
-                }
-            }
             &:not(:hover) {
-                background: ${colors[withGradient ? 'gradient' : color].bgColor};
+                ${getStyle(textColor.default, bgColor.default)}
             }
-            &:hover {
-                background: ${colors[withGradient ? 'gradient' : color].hoverBgColor};
-                box-shadow: ${colors[withGradient ? 'gradient' : color].shadowColor};
+            &:active {
+                ${getStyle(textColor.pressed, bgColor.pressed)}
+            }
+            &:not(:active):hover {
+                ${getStyle(textColor.hovered, bgColor.hovered)}
+                box-shadow: 0 0.2rem 0.8rem ${rgba(bgColor.hovered, 0.35)};
             }
         }
     `;

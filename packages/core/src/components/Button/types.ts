@@ -14,12 +14,8 @@ export interface Props extends Omit<HTMLProps<HTMLButtonElement>, 'size'>, WithT
     variant?: 'solid' | 'flat' | 'outlined';
     /** Button edges */
     edges?: 'square' | 'rounded' | 'circle';
-    /** Button colors */
-    color?: 'default' | 'confirmation' | 'error';
     /** To be used to disable button */
     disabled?: boolean;
-    /** Set it true to show gradient in the solid button */
-    withGradient?: boolean;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
 }
