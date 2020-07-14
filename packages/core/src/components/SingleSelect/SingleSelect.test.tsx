@@ -24,19 +24,22 @@ describe('SingleSelect component', () => {
 
     describe.each(['outlined', 'filled'])('with %s variant', (variant: SelectProps['variant']) => {
         it('should render properly', () => {
-            const { container } = render(<SingleSelect options={options} variant={variant} value="dummy" />);
+            const { container } = render(<SingleSelect options={options} variant={variant} value="Dummy1" />);
             expect(container).toMatchSnapshot();
         });
 
         it('should render disabled state properly ', () => {
-            const { container } = render(<SingleSelect disabled options={options} variant={variant} value="dummy" />);
+            const { container } = render(<SingleSelect disabled options={options} variant={variant} value="Dummy1" />);
             expect(container).toMatchSnapshot();
         });
 
         it('should render error text properly', () => {
-            const { container } = render(
-                <SingleSelect errorText="Something went wrong" options={options} variant={variant} value="dummy" />
-            );
+            const { container, getByText } = render(
+                <SingleSelect errorText="Something went wrong" options={options} variant={variant} value="Dummy1" />
+            ),
+            inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
+            fireEvent.click(inputEl);
+            expect(getByText('Dummy1')).toHaveStyle(`color: rgb(204, 0, 0)`)
             expect(container.querySelector('span')).toMatchSnapshot();
             expect(container.querySelector('svg')).toMatchSnapshot();
         });

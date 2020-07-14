@@ -162,6 +162,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                         variant={variant}
                         id={`${selectId}-options`}
                         options={options}
+                        hasError={!!props.errorText}
                         onOptionClick={handleOptionClick}
                     />
                 )}
