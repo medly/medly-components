@@ -1,6 +1,7 @@
 import { SvgIcon } from '@medly-components/icons';
 import { CheckboxSizes, CheckboxTheme } from '@medly-components/theme';
 import { centerAligned, css, styled, WithThemeProp } from '@medly-components/utils';
+import { rgba } from 'polished';
 import { getSelectorLabelPositionStyle } from '../Selectors';
 import Text from '../Text';
 import { Props } from './types';
@@ -45,7 +46,7 @@ export const StyledCheckbox = styled.div`
     ${SvgIcon} {
         pointer-events: none;
         z-index: 1;
-        transition: all 100ms ease-in-out;
+        transition: all 200ms ease-in-out;
         transform: scale(0);
         width: 100%;
         height: 100%;
@@ -63,27 +64,22 @@ export const HiddenCheckbox = styled.input.attrs(({ theme }) => ({ type: 'checkb
     outline: none;
     position: absolute;
 
-    &:checked {
-        & ~ ${StyledCheckbox} {
-            ${activeStyle};
-        }
+    &:checked ~ ${StyledCheckbox} {
+        ${activeStyle};
     }
 
-    &:not(:checked) {
-        & ~ ${StyledCheckbox} {
-            ${({ indeterminate }) => (indeterminate ? activeStyle : nonActiveStyle)}
-        }
+    &:not(:checked) ~ ${StyledCheckbox} {
+        ${({ indeterminate }) => (indeterminate ? activeStyle : nonActiveStyle)}
     }
 
     &:not(:disabled) {
         &:focus {
-            &:not(:checked) ~ ${StyledCheckbox} {
-                border-color: ${({ hasError, borderColor }) => borderColor[hasError ? 'error' : 'active']};
-                box-shadow: ${({ hasError, borderColor }) => `0 0 0.8rem ${borderColor[hasError ? 'error' : 'active']}`};
+            & ~ ${StyledCheckbox} {
+                box-shadow: ${({ hasError, borderColor }) => `0 0 0.8rem ${rgba(borderColor[hasError ? 'error' : 'active'], 0.35)}`};
             }
 
-            &:checked ~ ${StyledCheckbox} {
-                box-shadow: ${({ hasError, borderColor }) => `0 0 0.8rem ${borderColor[hasError ? 'error' : 'active']}`};
+            &:not(:checked) ~ ${StyledCheckbox} {
+                border-color: ${({ hasError, borderColor, indeterminate }) => !indeterminate && borderColor[hasError ? 'error' : 'active']};
             }
         }
     }
@@ -115,9 +111,12 @@ export const CheckboxWithLabelWrapper = styled('label').attrs(({ theme }) => ({ 
 
     &:hover {
         ${StyledCheckbox} {
-            border-color: ${({ disabled, hasError, hoverBgColor }) => !disabled && hoverBgColor[hasError ? 'error' : 'active']};
-            background-color: ${({ disabled, hasError, hoverBgColor, isActive }) =>
-                !disabled && isActive && hoverBgColor[hasError ? 'error' : 'active']};
+            box-shadow: ${({ disabled, hasError, borderColor }) =>
+                !disabled && `0 0 0.8rem ${rgba(borderColor[hasError ? 'error' : 'active'], 0.35)}`};
+            border-color: ${({ disabled, hasError, borderColor, isActive, bgColor }) =>
+                !disabled && (isActive ? bgColor.hovered[hasError ? 'error' : 'active'] : borderColor[hasError ? 'error' : 'active'])};
+            background-color: ${({ disabled, hasError, bgColor, isActive }) =>
+                !disabled && isActive && bgColor.hovered[hasError ? 'error' : 'active']};
         }
     }
 `;

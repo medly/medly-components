@@ -440,8 +440,8 @@ exports[`Form should render properly with initial state 1`] = `
 .c29 .c30 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -481,13 +481,12 @@ exports[`Form should render properly with initial state 1`] = `
   border-color: #13181D;
 }
 
-.c27:not(:disabled):focus:not(:checked) ~ .c28 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem #126AFA;
+.c27:not(:disabled):focus ~ .c28 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
 }
 
-.c27:not(:disabled):focus:checked ~ .c28 {
-  box-shadow: 0 0 0.8rem #126AFA;
+.c27:not(:disabled):focus:not(:checked) ~ .c28 {
+  border-color: #126AFA;
 }
 
 .c26 {
@@ -522,8 +521,9 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c24:hover .c28 {
-  border-color: #70ADE9;
-  background-color: #70ADE9;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #0F5AD5;
+  background-color: #0F5AD5;
 }
 
 .c32 {
@@ -551,7 +551,8 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c32:hover .c28 {
-  border-color: #70ADE9;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #126AFA;
 }
 
 .c70 {
@@ -579,8 +580,9 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c70:hover .c28 {
-  border-color: #70ADE9;
-  background-color: #70ADE9;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #0F5AD5;
+  background-color: #0F5AD5;
 }
 
 .c60 {
@@ -2665,8 +2667,8 @@ exports[`Form should render properly without initial state 1`] = `
 .c31 .c32 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -2706,13 +2708,12 @@ exports[`Form should render properly without initial state 1`] = `
   border-color: #13181D;
 }
 
-.c29:not(:disabled):focus:not(:checked) ~ .c30 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem #126AFA;
+.c29:not(:disabled):focus ~ .c30 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
 }
 
-.c29:not(:disabled):focus:checked ~ .c30 {
-  box-shadow: 0 0 0.8rem #126AFA;
+.c29:not(:disabled):focus:not(:checked) ~ .c30 {
+  border-color: #126AFA;
 }
 
 .c28 {
@@ -2747,7 +2748,8 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c26:hover .c30 {
-  border-color: #70ADE9;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #126AFA;
 }
 
 .c69 {
@@ -2775,7 +2777,8 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c69:hover .c30 {
-  border-color: #70ADE9;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #126AFA;
 }
 
 .c11 {

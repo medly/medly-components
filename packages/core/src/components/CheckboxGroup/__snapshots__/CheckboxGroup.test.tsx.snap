@@ -134,8 +134,8 @@ exports[`CheckboxGroup component should render properly 1`] = `
 .c11 .c12 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -175,13 +175,12 @@ exports[`CheckboxGroup component should render properly 1`] = `
   border-color: #13181D;
 }
 
-.c9:not(:disabled):focus:not(:checked) ~ .c10 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem #126AFA;
+.c9:not(:disabled):focus ~ .c10 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
 }
 
-.c9:not(:disabled):focus:checked ~ .c10 {
-  box-shadow: 0 0 0.8rem #126AFA;
+.c9:not(:disabled):focus:not(:checked) ~ .c10 {
+  border-color: #126AFA;
 }
 
 .c8 {
@@ -216,7 +215,8 @@ exports[`CheckboxGroup component should render properly 1`] = `
 }
 
 .c5:hover .c10 {
-  border-color: #70ADE9;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #126AFA;
 }
 
 .c14 {
@@ -244,8 +244,9 @@ exports[`CheckboxGroup component should render properly 1`] = `
 }
 
 .c14:hover .c10 {
-  border-color: #70ADE9;
-  background-color: #70ADE9;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #0F5AD5;
+  background-color: #0F5AD5;
 }
 
 <div>
@@ -639,8 +640,8 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
 .c11 .c12 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -680,13 +681,12 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
   border-color: #98A7B7;
 }
 
-.c9:not(:disabled):focus:not(:checked) ~ .c10 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem #126AFA;
+.c9:not(:disabled):focus ~ .c10 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
 }
 
-.c9:not(:disabled):focus:checked ~ .c10 {
-  box-shadow: 0 0 0.8rem #126AFA;
+.c9:not(:disabled):focus:not(:checked) ~ .c10 {
+  border-color: #126AFA;
 }
 
 .c8 {
@@ -1128,8 +1128,8 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
 .c11 .c12 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -1169,13 +1169,12 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   border-color: #98A7B7;
 }
 
-.c9:not(:disabled):focus:not(:checked) ~ .c10 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem #126AFA;
+.c9:not(:disabled):focus ~ .c10 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
 }
 
-.c9:not(:disabled):focus:checked ~ .c10 {
-  box-shadow: 0 0 0.8rem #126AFA;
+.c9:not(:disabled):focus:not(:checked) ~ .c10 {
+  border-color: #126AFA;
 }
 
 .c8 {
@@ -1500,8 +1499,8 @@ exports[`CheckboxGroup component should show indeterminate state when any one op
 .c4 .c0 {
   pointer-events: none;
   z-index: 1;
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);

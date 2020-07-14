@@ -23,13 +23,13 @@ export interface CheckboxTheme {
         disabled: string;
         active: string;
         error: string;
+        hovered: {
+            error: string;
+            active: string;
+        };
     };
     iconColor: {
         disabled: string;
-        active: string;
-        error: string;
-    };
-    hoverBgColor: {
         active: string;
         error: string;
     };
