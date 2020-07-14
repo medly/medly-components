@@ -26,10 +26,10 @@ export const OptionStyled = styled('li').attrs(({ theme: { select } }) => ({ ...
         color: ${({ disabled, selected, hasError, textColor }) => textColor[disabled ? 'disabled' : selected ? (hasError ? 'error' : 'selected') : 'default']};
     }
 
-    ${SvgIcon} {
+    & > ${SvgIcon} {
         margin-left: 1.6rem;
         * {
-            fill: ${({ disabled, textColor }) => textColor[disabled ? 'disabled' : 'default']};
+            fill: ${({ disabled, selected, hasError, textColor }) => textColor[disabled ? 'disabled' : selected ? (hasError ? 'error' : 'selected') : 'default']};
         }
     }
 `;

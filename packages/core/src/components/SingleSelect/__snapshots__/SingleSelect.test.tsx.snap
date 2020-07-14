@@ -1065,20 +1065,20 @@ exports[`SingleSelect component with filled variant should render error text pro
   fill: #cc0000;
 }
 
-.c8 .c0 {
+.c8 > .c0 {
   margin-left: 1.6rem;
 }
 
-.c8 .c0 * {
+.c8 > .c0 * {
   fill: #13181D;
 }
 
-.c9 .c0 {
+.c9 > .c0 {
   margin-left: 1.6rem;
 }
 
-.c9 .c0 * {
-  fill: #13181D;
+.c9 > .c0 * {
+  fill: #cc0000;
 }
 
 .c4 .c6 .c2 {
@@ -1184,11 +1184,11 @@ exports[`SingleSelect component with filled variant should render options correc
   color: #13181D;
 }
 
-.c1 .c4 {
+.c1 > .c4 {
   margin-left: 1.6rem;
 }
 
-.c1 .c4 * {
+.c1 > .c4 * {
   fill: #13181D;
 }
 
@@ -2004,20 +2004,20 @@ exports[`SingleSelect component with outlined variant should render error text p
   fill: #cc0000;
 }
 
-.c8 .c0 {
+.c8 > .c0 {
   margin-left: 1.6rem;
 }
 
-.c8 .c0 * {
+.c8 > .c0 * {
   fill: #13181D;
 }
 
-.c9 .c0 {
+.c9 > .c0 {
   margin-left: 1.6rem;
 }
 
-.c9 .c0 * {
-  fill: #13181D;
+.c9 > .c0 * {
+  fill: #cc0000;
 }
 
 .c4 .c6 .c2 {
@@ -2123,11 +2123,11 @@ exports[`SingleSelect component with outlined variant should render options corr
   color: #13181D;
 }
 
-.c1 .c4 {
+.c1 > .c4 {
   margin-left: 1.6rem;
 }
 
-.c1 .c4 * {
+.c1 > .c4 * {
   fill: #13181D;
 }
 
