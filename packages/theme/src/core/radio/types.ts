@@ -12,17 +12,14 @@ export interface RadioTheme {
         disabled: string;
         error: string;
     };
-    borderColor: {
+    fillColor: {
         default: string;
         active: string;
         error: string;
-    };
-    disabledBorderColor: {
-        default: string;
-        active: string;
-    };
-    hoveredBorderColor: {
-        active: string;
-        error: string;
+        hovered: {
+            default: string;
+            error: string;
+        };
+        disabled: string;
     };
 }
