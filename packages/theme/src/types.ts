@@ -20,6 +20,7 @@ export interface CoreTheme {
     modal?: CoreThemes.ModalTheme;
     radio?: CoreThemes.RadioTheme;
     select?: CoreThemes.SelectTheme;
+    searchBox?: CoreThemes.SearchBoxTheme;
     spacing?: CoreThemes.SpacingTheme;
     stepper?: CoreThemes.StepperTheme;
     table?: CoreThemes.TableTheme;
@@ -43,3 +44,4 @@ export * from './core/types';
 export * from './icon/types';
 export * from './layout/types';
 export * from './loader/types';
+

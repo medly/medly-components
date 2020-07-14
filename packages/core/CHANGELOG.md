@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.7.0...@medly-components/core@1.8.0) (2020-07-13)
+
+
+### Bug Fixes
+
+* add callback for all function for search box ([0ca83c5](https://github.com/medly/medly-components/commit/0ca83c57457a715b7a28c8ee6738a56e9d82ccd0))
+* add support for max height in search results ([46d46b3](https://github.com/medly/medly-components/commit/46d46b35654df410406a5394ed036d4161c144b8))
+* alignment for search options ([bf2b7a2](https://github.com/medly/medly-components/commit/bf2b7a2302baab6375ed6df8150c6950c3b4e810))
+* fix new feedbacks and deploy for review ([0e07540](https://github.com/medly/medly-components/commit/0e075402a35996466a2861588c8d1d174515c6c5))
+* refactor css and extract to a folder ([b6811c5](https://github.com/medly/medly-components/commit/b6811c5468d9e73d08b211c1d0eff6ebc00f91a6))
+* remove all unwanted props related to setting icon ([73274a5](https://github.com/medly/medly-components/commit/73274a59f95b25d1ff33844d11b48924cbcb2a52))
+* rename variable prop names ([33c0069](https://github.com/medly/medly-components/commit/33c006973455bed251b0730fa03334f541533290))
+* update tests and fix feedbacks ([1141b68](https://github.com/medly/medly-components/commit/1141b68de5066cb7d5b0867edc159f647253f48a))
+
+
+### Features
+
+* add search box component ([08bd1d0](https://github.com/medly/medly-components/commit/08bd1d08c4a4d5a486cecb473b497df99f518a2d))
+
+
+
+
+
 # [1.7.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.6.0...@medly-components/core@1.7.0) (2020-07-09)
 
 
