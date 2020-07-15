@@ -7,13 +7,13 @@ const toast: ToastTheme = {
     bgColor: {
         success: colors.green[100],
         info: colors.blue[100],
-        warning: colors.sunshineYellow[200],
+        warning: colors.yellow[200],
         error: colors.red[100]
     },
     fillColor: {
         success: colors.green[500],
         info: colors.blue[500],
-        warning: colors.sunshineYellow[500],
+        warning: colors.yellow[500],
         error: colors.red[500]
     }
 };

@@ -586,7 +586,7 @@ exports[`Calendar Component should render given date 1`] = `
   text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
-  background-color: #F38037;
+  background-color: #126AFA;
   color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

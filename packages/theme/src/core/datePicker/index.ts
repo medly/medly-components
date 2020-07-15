@@ -2,7 +2,7 @@ import colors from '../colors';
 import { DatePickerTheme } from './types';
 
 const datePicker: DatePickerTheme = {
-    selectedDateBgColor: colors.marigoldOrange[400],
+    selectedDateBgColor: colors.blue[500],
     selectedDateColor: colors.white,
     nonActiveMonthDateColor: colors.grey[400]
 };

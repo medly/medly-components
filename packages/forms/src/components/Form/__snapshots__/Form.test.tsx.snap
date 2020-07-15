@@ -601,8 +601,8 @@ exports[`Form should render properly with initial state 1`] = `
   max-width: -moz-max-content;
   max-width: max-content;
   cursor: default;
-  border: 1px solid #F38037;
-  background-color: #F38037;
+  border: 1px solid #126AFA;
+  background-color: #126AFA;
   color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

@@ -31,8 +31,8 @@ export interface ColorPallet {
     blue: Color;
     green: Color;
     red: Color;
-    springTeal: Color;
-    sunshineYellow: Color;
-    marigoldOrange: Color;
-    blushedPink: Color;
+    periwinkle: Color;
+    yellow: Color;
+    blush: Color;
+    heartbeat: Color;
 }

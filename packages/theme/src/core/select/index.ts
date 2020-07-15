@@ -8,7 +8,7 @@ const select: SelectTheme = {
     borderColor: colors.grey[300],
     descriptionColor: colors.professionalNavy,
     placeHolderColor: colors.grey[500],
-    selectedBgColor: colors.marigoldOrange[400],
+    selectedBgColor: colors.blue[400],
     selectedTextColor: colors.white,
     shadowColor: '#B0BCC8',
     option: {
