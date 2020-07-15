@@ -406,7 +406,7 @@ exports[`SearchBox options should render options when user search option specifi
   >
     <input
       class="c1"
-      placeholder="search me"
+      placeholder="search"
     />
     <ul
       class="c2 c3"
