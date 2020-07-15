@@ -20,6 +20,7 @@ const outlineStyle = ({ theme, outlined, disabled, isErrorPresent }: InnerWrappe
             right: 0;
             bottom: 0;
             left: 0;
+            pointer-events: none;
             background-color: transparent;
             transition: all 100ms ease-out;
             border-radius: ${theme.spacing.S1};

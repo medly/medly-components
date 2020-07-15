@@ -1702,6 +1702,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   right: 0;
   bottom: 0;
   left: 0;
+  pointer-events: none;
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -2302,6 +2303,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   right: 0;
   bottom: 0;
   left: 0;
+  pointer-events: none;
   background-color: transparent;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
