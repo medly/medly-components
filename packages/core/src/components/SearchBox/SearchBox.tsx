@@ -51,14 +51,13 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                     onInputChange(event.target.value);
                     if (value.length === 0) {
                         updateIsTyping(false);
-                        isFocused.current = false;
                     }
                 },
                 [inputRef.current, options]
             ),
             handleOptionClick = useCallback(
                 (option: Option) => {
-                    if (!option.disabled && !Array.isArray(option.value) && onOptionSelected) {
+                    if (!Array.isArray(option.value) && onOptionSelected) {
                         inputRef.current.value = option.label;
                         showOptions(false);
                         onOptionSelected(option);
