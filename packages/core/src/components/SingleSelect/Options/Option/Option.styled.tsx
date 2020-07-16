@@ -10,8 +10,8 @@ export const OptionStyled = styled('li').attrs(({ theme: { select } }) => ({ ...
     display: flex;
     align-items: center;
     position: relative;
-    background-color: ${({ disabled, selected, hasError, bgColor }) =>
-        bgColor[!disabled && selected ? (hasError ? 'error' : 'selected') : 'default']};
+    background-color: ${({ disabled, selected, hovered, hasError, bgColor }) =>
+        bgColor[!disabled && selected ? (hasError ? 'error' : 'selected') : hovered ? 'hovered' : 'default']};
 
     &:hover {
         background-color: ${({ disabled, selected, bgColor }) => !disabled && !selected && bgColor.hovered};
@@ -23,13 +23,15 @@ export const OptionStyled = styled('li').attrs(({ theme: { select } }) => ({ ...
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        color: ${({ disabled, selected, hasError, textColor }) => textColor[disabled ? 'disabled' : selected ? (hasError ? 'error' : 'selected') : 'default']};
+        color: ${({ disabled, selected, hasError, textColor }) =>
+            textColor[disabled ? 'disabled' : selected ? (hasError ? 'error' : 'selected') : 'default']};
     }
 
     & > ${SvgIcon} {
         margin-left: 1.6rem;
         * {
-            fill: ${({ disabled, selected, hasError, textColor }) => textColor[disabled ? 'disabled' : selected ? (hasError ? 'error' : 'selected') : 'default']};
+            fill: ${({ disabled, selected, hasError, textColor }) =>
+                textColor[disabled ? 'disabled' : selected ? (hasError ? 'error' : 'selected') : 'default']};
         }
     }
 `;

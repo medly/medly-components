@@ -14,19 +14,23 @@ export const getDefaultSelectedOption = (options: Option[], defaultSelected: any
     };
 };
 
-export const getOptionsWithSelected = (options: Option[], selected: DefaultSelected | Option): Option[] =>
+export const getUpdatedOptions = (
+    options: Option[],
+    selected: DefaultSelected | Option,
+    key: 'selected' | 'hovered' = 'selected'
+): Option[] =>
     options.map(option => {
         if (Array.isArray(option.value)) {
-            const value = getOptionsWithSelected(option.value, selected);
+            const value = getUpdatedOptions(option.value, selected, key);
             return {
                 ...option,
                 value,
-                selected: option.label === selected.label || value.some(op => op.selected)
+                [key]: option.label === selected.label || value.some(op => op[key])
             };
         }
         return {
             ...option,
-            selected: (Array.isArray(selected.value) && selected.label === option.label) || selected.value === option.value
+            [key]: (Array.isArray(selected.value) && selected.label === option.label) || selected.value === option.value
         };
     });
 

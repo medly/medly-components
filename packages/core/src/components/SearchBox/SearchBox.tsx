@@ -1,7 +1,6 @@
 import { CloseIcon, SearchIcon } from '@medly-components/icons';
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
-import { getOptionsWithSelected } from '../SingleSelect/helpers';
 import Options from '../SingleSelect/Options';
 import { Option } from '../SingleSelect/types';
 import { useKeyboardNavigation } from '../SingleSelect/useKeyboardNavigation';
@@ -19,11 +18,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             [isActive, setActive] = useState(false),
             [isTyping, updateIsTyping] = useState(false),
             [areOptionsVisible, showOptions] = useState(false),
-            [options, setOptions] = useState(defaultOptions),
-            [selectedOption, setSelectedOption] = useState({
-                value: '',
-                label: ''
-            });
+            [options, setOptions] = useState(defaultOptions);
 
         useEffect(() => {
             setOptions(props.options);
@@ -66,13 +61,6 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 },
                 [inputRef.current]
             ),
-            selectOption = useCallback(
-                (option: Option) => {
-                    setOptions(getOptionsWithSelected(options, option));
-                    setSelectedOption(option);
-                },
-                [options]
-            ),
             showOptionsCB = useCallback(() => {
                 showOptions(true);
                 // @ts-ignore
@@ -87,10 +75,9 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
 
         useKeyboardNavigation({
             isFocused,
-            selectedOption,
             options,
             areOptionsVisible,
-            selectOption,
+            setOptions,
             handleOptionClick,
             showOptions: showOptionsCB,
             optionsRef
@@ -107,12 +94,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                     ref={inputRef}
                 />
                 {areOptionsVisible && (
-                    <Options
-                        ref={optionsRef}
-                        options={options}
-                        variant="filled"
-                        onOptionClick={handleOptionClick}
-                    ></Options>
+                    <Options ref={optionsRef} options={options} variant="filled" onOptionClick={handleOptionClick}></Options>
                 )}
                 <CloseIconWrapper isTyping={isTyping} size={size}>
                     {isTyping && <CloseIcon title="close icon" onClick={clearSearchText} />}

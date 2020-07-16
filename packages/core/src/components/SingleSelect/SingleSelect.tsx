@@ -2,7 +2,7 @@ import { ChevronDownIcon } from '@medly-components/icons';
 import { useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
 import { TextField } from '../TextField/TextField';
-import { filterOptions, getDefaultSelectedOption, getOptionsWithSelected } from './helpers';
+import { filterOptions, getDefaultSelectedOption, getUpdatedOptions } from './helpers';
 import Options from './Options';
 import * as Styled from './SingleSelect.styled';
 import { Option, SelectProps } from './types';
@@ -34,9 +34,9 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [inputValue, setInputValue] = useState(defaultSelectedOption.label),
             [selectedOption, setSelectedOption] = useState(defaultSelectedOption),
-            [options, setOptions] = useState(getOptionsWithSelected(defaultOptions, defaultSelectedOption));
+            [options, setOptions] = useState(getUpdatedOptions(defaultOptions, defaultSelectedOption));
 
-        const updateToDefaultOptions = useCallback(() => setOptions(getOptionsWithSelected(defaultOptions, selectedOption)), [
+        const updateToDefaultOptions = useCallback(() => setOptions(getUpdatedOptions(defaultOptions, selectedOption)), [
             defaultOptions,
             selectedOption
         ]);
@@ -58,7 +58,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             handleInputChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     const target = event.target as HTMLInputElement,
-                        newOptions = filterOptions(getOptionsWithSelected(defaultOptions, selectedOption), target.value);
+                        newOptions = filterOptions(getUpdatedOptions(defaultOptions, selectedOption), target.value);
                     setInputValue(target.value);
                     newOptions.length && target.value ? setOptions(newOptions) : updateToDefaultOptions();
                     !areOptionsVisible && showOptions();
@@ -68,7 +68,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             selectOption = useCallback(
                 (option: Option) => {
                     setSelectedOption(option);
-                    setOptions(getOptionsWithSelected(options, option));
+                    setOptions(getUpdatedOptions(options, option));
                 },
                 [options]
             ),
@@ -113,7 +113,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             const selected = getDefaultSelectedOption(defaultOptions, value);
             setInputValue(selected.label);
             setSelectedOption(selected);
-            setOptions(getOptionsWithSelected(defaultOptions, selected));
+            setOptions(getUpdatedOptions(defaultOptions, selected));
         }, [defaultOptions, value]);
 
         useKeyboardNavigation({
@@ -121,7 +121,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             selectedOption,
             options,
             areOptionsVisible,
-            selectOption,
+            setOptions,
             handleOptionClick,
             showOptions,
             optionsRef
