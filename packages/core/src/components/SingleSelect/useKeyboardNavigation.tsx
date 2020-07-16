@@ -56,10 +56,10 @@ export const useKeyboardNavigation = (props: Props) => {
                 nextValueGetter = downPress ? getNextOption : getPrevOption;
             areOptionsVisible ? hoverOption(nextValueGetter(hovered, nested || options)) : showOptions();
         }
-    }, [downPress, upPress, isFocused.current, areOptionsVisible]);
+    }, [downPress, upPress, areOptionsVisible]);
 
     useEffect(() => {
-        if (rightPress && areOptionsVisible && Array.isArray(hoveredOption.value)) {
+        if (isFocused.current && rightPress && areOptionsVisible && Array.isArray(hoveredOption.value)) {
             nestedOptions.current.push(hoveredOption);
             (!hoveredOption.value.some(op => op.hovered) || !hoveredOption.value.some(op => op.selected)) &&
                 hoverOption(hoveredOption.value[0]);
@@ -67,11 +67,11 @@ export const useKeyboardNavigation = (props: Props) => {
     }, [rightPress, areOptionsVisible, hoveredOption]);
 
     useEffect(() => {
-        leftPress && areOptionsVisible && nestedOptions.current.length && hoverOption(nestedOptions.current.pop());
+        isFocused.current && leftPress && areOptionsVisible && nestedOptions.current.length && hoverOption(nestedOptions.current.pop());
     }, [leftPress, areOptionsVisible]);
 
     useEffect(() => {
-        if (enterPress && optionsRef.current) {
+        if (isFocused.current && enterPress && optionsRef.current) {
             options.length > 0 && !Array.isArray(hoveredOption.value) && handleOptionClick(hoveredOption);
         }
     }, [enterPress]);

@@ -35,11 +35,11 @@ describe('SingleSelect component', () => {
 
         it('should render error text properly', () => {
             const { container, getByText } = render(
-                <SingleSelect errorText="Something went wrong" options={options} variant={variant} value="Dummy1" />
-            ),
-            inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
+                    <SingleSelect errorText="Something went wrong" options={options} variant={variant} value="Dummy1" />
+                ),
+                inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
             fireEvent.click(inputEl);
-            expect(getByText('Dummy1')).toHaveStyle(`color: rgb(204, 0, 0)`)
+            expect(getByText('Dummy1')).toHaveStyle(`color: rgb(204, 0, 0)`);
             expect(container.querySelector('span')).toMatchSnapshot();
             expect(container.querySelector('svg')).toMatchSnapshot();
         });
