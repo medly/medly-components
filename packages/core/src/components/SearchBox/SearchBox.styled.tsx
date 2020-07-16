@@ -76,7 +76,7 @@ const nonActiveSearchBoxStyle = ({ theme }: Props) => {
     `;
 };
 
-export const SearchBoxWrapper = styled.div<Props & { isActive?: boolean; areOptionsVisible?: boolean }>`
+export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean }>`
     width: 25.6rem;
     display: flex;
     flex-direction: row;
@@ -90,7 +90,7 @@ export const SearchBoxWrapper = styled.div<Props & { isActive?: boolean; areOpti
         ${getOptionsStyles};
     }
     ${({ size }) => (size === 'M' ? getMediumSearchBoxStyle : getSmallSearchBoxStyle)};
-    ${({ isActive }) => (isActive ? activeSearchBoxStyle : nonActiveSearchBoxStyle)};
+    ${({ areOptionsVisible }) => (areOptionsVisible ? activeSearchBoxStyle : nonActiveSearchBoxStyle)};
 `;
 
 SearchBoxWrapper.defaultProps = {

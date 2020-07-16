@@ -3,6 +3,7 @@ export type CheckboxSizes = 'XS' | 'S' | 'M' | 'L' | 'XL';
 export interface CheckboxTheme {
     sizes: { [k in CheckboxSizes]: string };
     defaultSize: CheckboxSizes;
+    borderRadius: string;
     labelColor: {
         default: string;
         disabled: string;
@@ -22,13 +23,13 @@ export interface CheckboxTheme {
         disabled: string;
         active: string;
         error: string;
+        hovered: {
+            error: string;
+            active: string;
+        };
     };
     iconColor: {
         disabled: string;
-        active: string;
-        error: string;
-    };
-    hoverBgColor: {
         active: string;
         error: string;
     };

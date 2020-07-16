@@ -9,7 +9,7 @@ import { OptionProps } from './types';
 const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
     const ref = useRef(null),
         [areOptionsVisible, setOptionsVisibilityState] = useState(false),
-        { value, label, disabled, selected, highlightSelected, onClick } = props,
+        { value, label, disabled, selected, onClick, hasError, hovered } = props,
         id = label.replace(/ /g, '-'),
         enterPress = useKeyPress('Enter'),
         leftPress = useKeyPress('ArrowLeft'),
@@ -28,19 +28,19 @@ const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
         );
 
     useEffect(() => {
-        selected &&
+        (selected || hovered) &&
             ref.current.scrollIntoView({
                 behavior: 'smooth',
                 block: 'nearest'
             });
-    }, [selected]);
+    }, [selected, hovered]);
 
     useEffect(() => {
-        if (!disabled && isNested && selected) {
+        if (!disabled && isNested && hovered) {
             (rightPress || enterPress) && showNestedOptions();
-            leftPress && !value.find((op: OptionProps) => op.selected && Array.isArray(op.value)) && hideNestedOptions();
+            leftPress && !value.find((op: OptionProps) => op.hovered && Array.isArray(op.value)) && hideNestedOptions();
         }
-    }, [value, disabled, isNested, selected, leftPress, rightPress, enterPress]);
+    }, [value, disabled, isNested, hovered, leftPress, rightPress, enterPress]);
 
     useOuterClickNotifier(() => hideNestedOptions(), ref);
 
@@ -50,7 +50,8 @@ const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
             ref={ref}
             disabled={disabled}
             selected={selected}
-            highlightSelected={highlightSelected}
+            hasError={hasError}
+            hovered={hovered}
             onClick={handleOnClick}
             onMouseEnter={showNestedOptions}
             onMouseLeave={hideNestedOptions}
@@ -58,7 +59,7 @@ const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
             <Text textWeight={selected ? 'Strong' : 'Regular'}>{label}</Text>
             {isNested ? <ArrowRightIcon /> : selected && <CheckIcon />}
             {areOptionsVisible && isNested && (
-                <Options isNested id={`${id}-options`} options={value} variant="outlined" onOptionClick={onClick} />
+                <Options isNested id={`${id}-options`} options={value} variant="outlined" onOptionClick={onClick} hasError={hasError} />
             )}
         </OptionStyled>
     );

@@ -53,8 +53,8 @@ exports[`Tabs should render properly 1`] = `
   border-width: 0.1rem 0.1rem 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background-color: #e6effd;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
+  background-color: #E7F0FF;
 }
 
 .c1 * {
@@ -79,7 +79,7 @@ exports[`Tabs should render properly 1`] = `
   bottom: -0.1rem;
   left: -0.1rem;
   width: calc(100% + 0.2rem);
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus {
@@ -126,7 +126,7 @@ exports[`Tabs should render properly 1`] = `
 }
 
 .c1 .c5 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1 .sc-AxhUy {
@@ -134,7 +134,7 @@ exports[`Tabs should render properly 1`] = `
 }
 
 .c1 .c6 {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1 .sc-AxjAm {
@@ -144,11 +144,11 @@ exports[`Tabs should render properly 1`] = `
 }
 
 .c1 .sc-AxjAm * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1 .sc-AxjAm * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c8 {
@@ -327,10 +327,10 @@ exports[`Tabs should render properly 1`] = `
 }
 
 .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;

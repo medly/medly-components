@@ -19,18 +19,15 @@ const radio: RadioTheme = {
         disabled: colors.grey[500],
         error: colors.red[500]
     },
-    borderColor: {
+    fillColor: {
         default: colors.black,
-        active: colors.communityBlue[500],
-        error: colors.red[500]
-    },
-    disabledBorderColor: {
-        active: colors.grey[200],
-        default: colors.grey[500]
-    },
-    hoveredBorderColor: {
-        active: colors.communityBlue[400],
-        error: colors.red[400]
+        active: colors.blue[500],
+        error: colors.red[500],
+        hovered: {
+            default: colors.blue[500],
+            error: colors.red[600]
+        },
+        disabled: colors.grey[500]
     }
 };
 

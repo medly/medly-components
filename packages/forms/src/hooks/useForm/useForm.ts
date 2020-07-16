@@ -35,7 +35,7 @@ export const useForm = (initialState: object): UseFormResult => {
             event.preventDefault();
             onSubmit(createObjectFromDottedKeys(values));
         }),
-        [values]
+        [values, errorMessages]
     );
 
     const handleFormReset: Handlers['handleFormReset'] = useCallback(

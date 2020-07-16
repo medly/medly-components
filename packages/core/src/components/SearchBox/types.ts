@@ -7,6 +7,12 @@ export type Option = {
     selected?: boolean;
 };
 
+export type WrapperProps = {
+    size?: Size;
+    isActive?: boolean;
+    areOptionsVisible?: boolean;
+};
+
 export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'size'>, WithThemeProp {
     /** Size for search box, can be 'S' | 'M' */
     size?: Size;

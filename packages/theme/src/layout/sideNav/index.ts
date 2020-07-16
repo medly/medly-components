@@ -12,7 +12,7 @@ const sideNav: SideNavTheme = {
     separatorColor: colors.grey[200],
     navItemColors: {
         active: {
-            textColor: colors.communityBlue[500],
+            textColor: colors.blue[500],
             bgColor: 'rgba(0, 90, 238, 0.1)'
         },
         hover: {

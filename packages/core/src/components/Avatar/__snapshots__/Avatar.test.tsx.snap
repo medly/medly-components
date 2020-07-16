@@ -68,8 +68,8 @@ exports[`Avatar component should render image avatar properly 1`] = `
   border-radius: 50%;
   overflow: hidden;
   cursor: inherit;
-  color: #005AEE;
-  background: #e6effd;
+  color: #126AFA;
+  background: #E7F0FF;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -93,7 +93,7 @@ exports[`Avatar component should render image avatar properly 1`] = `
 }
 
 .c0:hover {
-  background: #1A6BF0;
+  background: #70ADE9;
   box-shadow: 0 0.4rem 0.8rem rgba(96,120,144,0.35);
 }
 
@@ -159,7 +159,7 @@ exports[`Avatar component should render with all the props given 1`] = `
 }
 
 .c0:hover {
-  background: #1A8D1A;
+  background: #269326;
   box-shadow: 0 0.4rem 0.8rem rgba(0,128,0,0.35);
 }
 
@@ -202,8 +202,8 @@ exports[`Avatar component should render with default theme 1`] = `
   border-radius: 50%;
   overflow: hidden;
   cursor: inherit;
-  color: #005AEE;
-  background: #e6effd;
+  color: #126AFA;
+  background: #E7F0FF;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -227,7 +227,7 @@ exports[`Avatar component should render with default theme 1`] = `
 }
 
 .c0:hover {
-  background: #1A6BF0;
+  background: #70ADE9;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
 }
 
@@ -270,8 +270,8 @@ exports[`Avatar component should render with not-allowed cursor when it is disab
   border-radius: 50%;
   overflow: hidden;
   cursor: not-allowed;
-  color: #005AEE;
-  background: #e6effd;
+  color: #126AFA;
+  background: #E7F0FF;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

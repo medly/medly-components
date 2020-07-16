@@ -1,9 +1,12 @@
 export interface Color {
-    100?: string;
+    100: string;
     200: string;
     300: string;
     400: string;
     500: string;
+    600?: string;
+    700?: string;
+    800?: string;
 }
 
 export interface GreyScale {
@@ -25,11 +28,11 @@ export interface ColorPallet {
     professionalNavy: string;
     grey: GreyScale;
     medlyGreen: Color;
-    communityBlue: Color;
+    blue: Color;
     green: Color;
     red: Color;
-    springTeal: Color;
-    sunshineYellow: Color;
-    marigoldOrange: Color;
-    blushedPink: Color;
+    periwinkle: Color;
+    yellow: Color;
+    blush: Color;
+    heartbeat: Color;
 }

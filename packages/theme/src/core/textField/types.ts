@@ -10,6 +10,7 @@ export interface TextFieldTheme {
         };
         hover: {
             borderColor: string;
+            shadowColor: string;
         };
         disabled: {
             labelColor: string;
@@ -20,6 +21,7 @@ export interface TextFieldTheme {
             placeholderColor: string;
             borderColor: string;
             labelColor: string;
+            shadowColor: string;
         };
         error: {
             caretColor: string;
@@ -28,6 +30,7 @@ export interface TextFieldTheme {
             borderColor: string;
             labelColor: string;
             helperTextColor: string;
+            shadowColor: string;
         };
     };
     /** Filled variant theme */

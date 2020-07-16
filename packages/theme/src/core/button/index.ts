@@ -1,39 +1,18 @@
 import colors from '../colors';
+import { ButtonTheme } from './types';
 
-const button = {
-    colors: {
-        solid: {
-            textColor: colors.white,
-            disabledBgColor: colors.grey[200],
-            disabledTextColor: colors.grey[500]
-        },
-        outlined: {
-            disabledBgColor: colors.grey[400],
-            disabledTextColor: colors.grey[400]
-        },
-        flat: {
-            disabledTextColor: colors.grey[400]
-        },
-        default: {
-            bgColor: colors.communityBlue[500],
-            hoverBgColor: colors.communityBlue[400],
-            shadowColor: '0 0.4rem 0.8rem rgba(0, 90, 238, 0.2)'
-        },
-        gradient: {
-            bgColor: `linear-gradient(to right, ${colors.communityBlue[500]}, ${colors.springTeal[500]})`,
-            hoverBgColor: `linear-gradient(to right, ${colors.communityBlue[400]}, ${colors.springTeal[400]})`,
-            shadowColor: '0 0.4rem 0.8rem rgba(0, 90, 238, 0.2)'
-        },
-        confirmation: {
-            bgColor: colors.green[500],
-            hoverBgColor: colors.green[400],
-            shadowColor: '0 0.4rem 0.8rem rgba(0,128,0, 0.2)'
-        },
-        error: {
-            bgColor: colors.red[500],
-            hoverBgColor: colors.red[400],
-            shadowColor: '0 0.4rem 0.8rem rgba(204,0,0, 0.2)'
-        }
+const button: ButtonTheme = {
+    solid: {
+        textColor: { default: colors.white, hovered: colors.white, pressed: colors.white, disabled: colors.grey[500] },
+        bgColor: { default: colors.blue[500], hovered: colors.blue[600], pressed: colors.blue[700], disabled: colors.grey[200] }
+    },
+    outlined: {
+        textColor: { default: colors.blue[500], hovered: colors.blue[600], pressed: colors.blue[700], disabled: colors.grey[500] },
+        borderColor: { default: colors.blue[500], hovered: colors.blue[600], pressed: colors.blue[700], disabled: colors.grey[500] },
+        bgColor: { default: 'transparent', hovered: 'transparent', pressed: colors.blue[100], disabled: 'transparent' }
+    },
+    flat: {
+        textColor: { default: colors.blue[500], hovered: colors.blue[600], pressed: colors.blue[700], disabled: colors.grey[500] }
     },
     borderRadius: {
         square: '0.8rem',

@@ -1,72 +1,55 @@
 import { SvgIcon } from '@medly-components/icons';
 import { css } from '@medly-components/utils';
+import { rgba } from 'polished';
 import { Props } from '../types';
 
-export const getPaddings = ({ size, variant, edges, isHovered }: Props & { isHovered?: boolean }) => {
-    const paddings = {
-        S: {
-            top: '0.8rem',
-            right: '2.4rem',
-            bottom: '1rem',
-            left: '2.4rem'
-        },
-        M: {
-            top: '1rem',
-            right: '2.4rem',
-            bottom: '1.2rem',
-            left: '2.4rem'
+const getStyle = (textColor: string, bgColor = 'transparent', borderColor: string, borderWidth = '0.1rem') => css`
+    color: ${textColor};
+    background-color: ${bgColor};
+    &::after {
+        border-width: ${borderWidth};
+        border-color: ${borderColor || textColor};
+    }
+    ${SvgIcon} {
+        * {
+            fill: ${textColor};
         }
-    };
-    if (variant === 'outlined') {
-        Object.keys(paddings[size]).forEach((key: 'top' | 'right' | 'bottom' | 'left') => {
-            paddings[size][key] = `calc(${paddings[size][key]} - ${isHovered ? '0.2rem' : '0.1rem'}) `;
-        });
     }
+`;
 
-    if (edges === 'circle') {
-        return size === 'S' ? `1.4rem` : `1.6rem`;
-    } else {
-        return `${paddings[size].top} ${paddings[size].right} ${paddings[size].bottom} ${paddings[size].left}`;
-    }
-};
+export const outlinedButton = ({ theme, edges }: Props) => {
+    const { textColor, bgColor, borderColor } = theme.button.outlined;
 
-export const outlinedButton = ({ theme, color }: Props) => {
-    const { colors } = theme.button;
     return css`
         background-color: transparent;
-        &:disabled {
-            border: 0.1rem solid;
-            color: ${colors.outlined.disabledTextColor};
-            border-color: ${colors.outlined.disabledBgColor};
-            ${SvgIcon} {
-                * {
-                    fill: ${colors.outlined.disabledTextColor};
-                }
-            }
+        &::after {
+            content: '';
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: transparent;
+            transition: all 100ms ease-out;
+            border-radius: ${theme.button.borderRadius[edges]};
+            border-style: solid;
         }
-
+        &:disabled { 
+            ${getStyle(textColor.disabled, bgColor?.disabled, borderColor?.disabled)}
+        }
         &:not(:disabled) {
             &:not(:hover) {
-                border: 0.1rem solid;
-                color: ${colors[color].bgColor};
-                border-color: ${colors[color].bgColor};
-                ${SvgIcon} {
-                    * {
-                        fill: ${colors[color].bgColor};
-                    }
-                }
+                ${getStyle(textColor.default, bgColor?.default, borderColor?.default)}
             }
-            &:hover {
-                border: 0.2rem solid;
-                color: ${colors[color].hoverBgColor};
-                border-color: ${colors[color].hoverBgColor};
-                padding: ${props => getPaddings({ ...props, isHovered: true })};
-                box-shadow: ${colors[color].shadowColor};
-                ${SvgIcon} {
-                    * {
-                        fill: ${colors[color].hoverBgColor};
-                    }
-                }
+            &:active {
+                ${getStyle(textColor.pressed, bgColor?.pressed, borderColor?.pressed, '0.2rem')}
+            }
+            &:not(:active):hover {
+                ${getStyle(textColor.hovered, bgColor?.hovered, borderColor?.hovered, '0.2rem')}
+                box-shadow: 0 0.2rem 0.8rem ${rgba(borderColor?.hovered || textColor.hovered, 0.35)};
             }
         }
     `;

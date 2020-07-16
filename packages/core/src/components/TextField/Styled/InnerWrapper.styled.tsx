@@ -1,65 +1,64 @@
 import { css, styled } from '@medly-components/utils';
+import { rgba } from 'polished';
 import { InnerWrapperProps } from '../types';
 import { HelperText } from './HelperText.styled';
 import { Label } from './Label.styled';
 import { Prefix } from './Prefix.styled';
 import { Suffix } from './Suffix.styled';
 
-const activeStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
-    &:focus-within,
-    &:focus-within:hover {
-        border-color: ${textField[variant].active.borderColor};
-        background-color: ${variant === 'filled' ? textField.filled.active.bgColor : 'transparent'};
-        &::after {
-            background-color: ${textField[variant].active.borderColor};
-        }
-        ${Label} {
-            color: ${textField[variant].active.labelColor};
-        }
-        ${Prefix}, ${Suffix} {
-            color: ${textField[variant].active.labelColor};
-            * {
-                fill: ${textField[variant].active.labelColor};
-            }
-        }
-        input::placeholder {
-            color: ${textField[variant].active.placeholderColor};
-        }
-    }
-`;
-
-const outlineStyle = ({ theme, outlined }: InnerWrapperProps) => {
+const outlineStyle = ({ theme, outlined, disabled, isErrorPresent }: InnerWrapperProps) => {
     return css`
-        padding: 0 1.5rem;
-        background-color: transparent;
         border-radius: ${theme.spacing.S1};
-        border: 1px solid ${outlined.default.borderColor};
-
+        background-color: transparent;
+        &::after {
+            content: '';
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            pointer-events: none;
+            background-color: transparent;
+            transition: all 100ms ease-out;
+            border-radius: ${theme.spacing.S1};
+            border: 0.1rem solid ${outlined.default.borderColor};
+        }
         &:hover {
-            border-color: ${outlined.hover.borderColor};
+            box-shadow: ${!disabled && `0px 0.2rem 0.8rem ${rgba(outlined.hover.shadowColor, 0.2)}`};
+        }
+        &:focus-within {
+            box-shadow: ${!disabled && `0px 0.2rem 0.8rem ${rgba(outlined[isErrorPresent ? 'error' : 'active'].shadowColor, 0.2)}`};
+        }
+
+        &:hover::after,
+        &:focus-within::after {
+            border-width: ${!disabled && `0.15rem`};
+            border-color: ${!disabled && outlined.hover.borderColor};
         }
     `;
 };
 
-const filledStyle = ({ theme, filled }: InnerWrapperProps) => {
+const filledStyle = ({ theme, filled, disabled }: InnerWrapperProps) => {
     return css`
-        padding: 0 1.6rem;
         border-radius: ${theme.spacing.S1} ${theme.spacing.S1} 0 0;
         background-color: ${filled.default.bgColor};
-
         &::after {
             content: '';
             width: 100%;
-            height: 0.1rem;
+            height: 0;
             position: absolute;
             bottom: 0;
             left: 0;
-            background-color: ${filled.default.borderColor};
+            box-sizing: border-box;
+            border-top: 0.1rem solid ${filled.default.borderColor};
             transition: all 100ms ease-out;
         }
         &:hover::after,
         &:focus-within::after {
-            height: 0.2rem;
+            border-width: ${!disabled && `0.2rem`};
         }
     `;
 };
@@ -67,14 +66,10 @@ const filledStyle = ({ theme, filled }: InnerWrapperProps) => {
 const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
     cursor: not-allowed;
     background-color: ${variant === 'filled' ? textField.filled.disabled.bgColor : 'transparent'};
-    border-color: ${textField[variant].disabled.borderColor};
-    &:hover {
-        border-color: ${textField[variant].disabled.borderColor};
-    }
     &::after,
     &:hover::after {
-        height: 0.1rem;
-        background-color: ${textField[variant].disabled.borderColor};
+        border-width: 0.1rem;
+        border-color: ${textField[variant].disabled.borderColor};
     }
     input {
         color: ${textField[variant].disabled.textColor};
@@ -96,13 +91,37 @@ const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => 
     }
 `;
 
+const activeStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
+    &:focus-within,
+    &:focus-within:hover {
+        background-color: ${variant === 'filled' ? textField.filled.active.bgColor : 'transparent'};
+        &::after {
+            border-color: ${textField[variant].active.borderColor};
+        }
+        ${Label} {
+            color: ${textField[variant].active.labelColor};
+        }
+        ${Prefix}, ${Suffix} {
+            color: ${textField[variant].active.labelColor};
+            * {
+                fill: ${textField[variant].active.labelColor};
+            }
+        }
+        input::placeholder {
+            color: ${textField[variant].active.placeholderColor};
+        }
+    }
+`;
+
 const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
     &,
     &:hover,
     &:focus-within,
     &:focus-within:hover {
-        border-color: ${textField[variant].error.borderColor};
         background-color: ${variant === 'filled' ? textField.filled.error.bgColor : 'transparent'};
+        &::after {
+            border-color: ${textField[variant].error.borderColor};
+        }
         ${Label} {
             color: ${textField[variant].error.labelColor};
         }
@@ -111,9 +130,6 @@ const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css
             * {
                 fill: ${textField[variant].error.labelColor};
             }
-        }
-        &::after {
-            background-color: ${textField[variant].error.borderColor};
         }
         & ~ ${HelperText} {
             color: ${textField[variant].error.helperTextColor};
@@ -134,6 +150,7 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
     flex-direction: row;
     box-sizing: border-box;
     height: 5.6rem;
+    padding: 0 1.6rem;
     transition: all 100ms ease-out;
     cursor: text;
 

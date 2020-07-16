@@ -44,7 +44,7 @@ exports[`TabList should render properly 1`] = `
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
   background-color: #ffffff;
 }
 
@@ -69,7 +69,7 @@ exports[`TabList should render properly 1`] = `
   bottom: -0.1rem;
   left: 0;
   width: 100%;
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1:focus {
@@ -116,7 +116,7 @@ exports[`TabList should render properly 1`] = `
 }
 
 .c1 .c5 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1 .sc-AxhUy {
@@ -124,17 +124,17 @@ exports[`TabList should render properly 1`] = `
 }
 
 .c1 .sc-AxiKw {
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1 .sc-AxjAm {
   font-size: 2.4rem;
   padding: 0;
-  background-color: #005AEE;
+  background-color: #126AFA;
 }
 
 .c1 .sc-AxjAm * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1 .sc-AxjAm * {
@@ -316,10 +316,10 @@ exports[`TabList should render properly 1`] = `
 }
 
 .c0 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;

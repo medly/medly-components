@@ -14,14 +14,14 @@ function renderComponent(props: Props) {
 }
 
 describe('SearchBox', () => {
+    test.each(['S', 'M'])('should render properly with %p size', (size: Props['size']) => {
+        const { container } = render(<SearchBox size={size} />);
+        expect(container).toMatchSnapshot();
+    });
+
     it('should render placeholder text when specified', () => {
         const { inputEl } = renderComponent({ placeholder: 'search' });
         expect(inputEl).toBeInTheDocument();
-    });
-
-    it('should render text box of specified size', () => {
-        const { container } = render(<SearchBox />);
-        expect(container).toMatchSnapshot();
     });
 
     it('should render search icon', () => {
@@ -79,16 +79,42 @@ describe('SearchBox', () => {
 
         it('should not show options initially', () => {
             const { container } = renderComponent(props);
+            expect(container.querySelector('ul')).toBeNull();
+        });
 
+        it('should hide options when clicked outside', () => {
+            const { container, getByPlaceholderText, getByText } = render(
+                    <>
+                        <SearchBox {...props} />
+                        <span>Outside span</span>
+                    </>
+                ),
+                inputEl = getByPlaceholderText('search') as HTMLInputElement;
+            fireEvent.change(inputEl, defaultReturnObj);
+            expect(container.querySelector('ul').children).toHaveLength(2);
+            fireEvent.click(getByText('Outside span'));
             expect(container.querySelector('ul')).toBeNull();
         });
 
         it('should render options when user search option specified', () => {
-            const { container, inputEl } = renderComponent(props);
-
+            const { container, inputEl } = renderComponent({ ...props, size: 'S' });
             fireEvent.change(inputEl, defaultReturnObj);
             expect(container.querySelector('ul').children).toHaveLength(2);
             expect(container).toMatchSnapshot();
+        });
+
+        it('should render options on arrow keys when input is in focus', () => {
+            const { container, inputEl } = renderComponent({ ...props, size: 'M' });
+            fireEvent.focus(inputEl, defaultReturnObj);
+            fireEvent.keyDown(inputEl, { key: 'ArrowDown', code: 40 });
+            expect(container.querySelector('ul').children).toHaveLength(2);
+        });
+
+        it('should not render options on arrow keys when input is not in focus', () => {
+            const { container, inputEl } = renderComponent(props);
+            fireEvent.blur(inputEl, defaultReturnObj);
+            fireEvent.keyDown(inputEl, { key: 'ArrowDown', code: 40 });
+            expect(container.querySelector('ul')).toBeNull();
         });
 
         it('should not call on OptionSelected when onOptionSelected is not passed', () => {
@@ -113,19 +139,10 @@ describe('SearchBox', () => {
 
             it('should update the searchbox value to selected option', () => {
                 const { container, inputEl } = renderComponent(withOptionCB);
-                fireEvent.change(inputEl, { target: { value: 'R' } });
+                fireEvent.focus(inputEl);
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });
                 expect(inputEl).toHaveValue('Dummy 1');
-            });
-
-            it('should not show options when input value is empty', () => {
-                const { container, inputEl, getByTitle } = renderComponent(withOptionCB);
-                fireEvent.change(inputEl, { target: { value: 'R' } });
-                fireEvent.click(getByTitle('close icon'));
-                fireEvent.keyDown(inputEl, { key: 'ArrowDown', code: 40 });
-                fireEvent.keyDown(inputEl, { key: 'ArrowUp', code: 38 });
-                expect(container.querySelector('ul')).toBeNull();
             });
         });
     });

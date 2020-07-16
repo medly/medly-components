@@ -10,6 +10,7 @@ const checkbox: CheckboxTheme = {
         XL: '3rem'
     },
     defaultSize: 'S',
+    borderRadius: '22.2%',
     labelColor: {
         default: 'inherit',
         disabled: colors.grey[500]
@@ -20,24 +21,24 @@ const checkbox: CheckboxTheme = {
         error: colors.red[500]
     },
     borderColor: {
-        error: colors.red[500],
-        active: colors.communityBlue[500],
         default: colors.black,
+        error: colors.red[500],
+        active: colors.blue[500],
         disabled: colors.grey[500]
     },
     bgColor: {
         disabled: colors.grey[200],
-        active: colors.communityBlue[500],
-        error: colors.red[500]
+        active: colors.blue[500],
+        error: colors.red[500],
+        hovered: {
+            active: colors.blue[600],
+            error: colors.red[600]
+        }
     },
     iconColor: {
         disabled: colors.grey[500],
         active: colors.white,
         error: colors.white
-    },
-    hoverBgColor: {
-        active: colors.communityBlue[400],
-        error: colors.red[400]
     }
 };
 
