@@ -1,12 +1,12 @@
-import { ColumnConfig } from '../types';
+import { TableColumnConfig } from '../types';
 
-export const createValues = (columns: ColumnConfig[], field = ''): string[] =>
+export const createValues = (columns: TableColumnConfig[], field = ''): string[] =>
     columns.reduce((acc, curr) => {
         const dottedField = field ? `${field}.${curr.field}` : curr.field;
-        return [...acc, ...(curr.children ? createValues(curr.children, dottedField) : curr.hide ? [dottedField] : [])];
+        return [...acc, ...(curr.children ? createValues(curr.children, dottedField) : curr.hidden ? [dottedField] : [])];
     }, []);
 
-export const createOptions = (columns: ColumnConfig[], field = ''): any =>
+export const createOptions = (columns: TableColumnConfig[], field = ''): any =>
     columns.map(config => {
         const dottedField = field ? `${field}.${config.field}` : config.field;
         return {
@@ -15,20 +15,20 @@ export const createOptions = (columns: ColumnConfig[], field = ''): any =>
         };
     });
 
-export const updateConfig = (configs: ColumnConfig[], field: string) =>
-    configs.map(config => ({ ...config, hide: config.field === field ? !config.hide : config.hide }));
+export const updateConfig = (configs: TableColumnConfig[], field: string) =>
+    configs.map(config => ({ ...config, hidden: config.field === field ? !config.hidden : config.hidden }));
 
-export const updateColumns = (columns: ColumnConfig[], selectedValues: string[], field = ''): any =>
+export const updateColumns = (columns: TableColumnConfig[], selectedValues: string[], field = ''): any =>
     columns.reduce((acc, curr) => {
         const dottedField = field ? `${field}.${curr.field}` : curr.field,
             children = curr.children ? updateColumns(curr.children, selectedValues, dottedField) : undefined,
-            hide = children ? children.every((child: ColumnConfig) => child.hide) : selectedValues.includes(dottedField);
+            hidden = children ? children.every((child: TableColumnConfig) => child.hidden) : selectedValues.includes(dottedField);
 
         return [
             ...acc,
             {
                 ...curr,
-                hide,
+                hidden,
                 children
             }
         ];

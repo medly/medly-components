@@ -1,74 +1,10 @@
 import { defaultTheme, TableTheme } from '@medly-components/theme';
-import { action } from '@storybook/addon-actions';
-import { boolean } from '@storybook/addon-knobs';
-import React, { FC, useState } from 'react';
-import Button from '../../Button';
-import Modal from '../../Modal';
-import { Table } from '../Table';
-import { ColumnConfig, SortOrder } from '../types';
-import columns from './columns';
-import data from './data';
-import { filterData } from './filterData';
+import { FC } from 'react';
+import { TableColumnConfig } from '../types';
 
 export const Theme: FC<TableTheme> = () => null;
 Theme.defaultProps = {
     ...defaultTheme.table
 };
 
-export const ColumnConfigInterface: FC<ColumnConfig> = () => null;
-
-export const Basic = () => {
-    const [tableData, setTableData] = useState(data);
-
-    const handleFilterData = (dottedField: string, order: SortOrder) => {
-        filterData(dottedField, order, tableData, setTableData);
-    };
-
-    return (
-        <Table
-            isLoading={boolean('Loading', false)}
-            onRowClick={action('Row Clicked')}
-            data={tableData}
-            onSort={handleFilterData}
-            columns={columns}
-        />
-    );
-};
-
-export const WithColumnHide = () => {
-    const [modalState, setModalState] = useState(false);
-    const [tableData, setTableData] = useState(data);
-    const [columnConfig, setColumnConfig] = useState(columns);
-    const [selectedRows, setSelectedRows] = useState([2, 3]);
-
-    const handleFilterData = (dottedField: string, order: SortOrder) => {
-        filterData(dottedField, order, tableData, setTableData);
-    };
-
-    const handleModalState = () => {
-        setModalState(!modalState);
-    };
-
-    return (
-        <>
-            <Modal open={modalState} onCloseModal={handleModalState}>
-                <Modal.Header>Hide Columns</Modal.Header>
-                <Modal.Content>
-                    <Table.ColumnConfiguration columns={columnConfig} onChange={setColumnConfig} />
-                </Modal.Content>
-            </Modal>
-            <Button onClick={handleModalState}>Hide Columns</Button>
-            <Table
-                isSelectable
-                isLoading={boolean('Loading', false)}
-                rowSelectionDisableKey="disabled"
-                selectedRows={selectedRows}
-                onRowSelection={setSelectedRows}
-                onRowClick={action('Row Clicked')}
-                data={tableData}
-                onSort={handleFilterData}
-                columns={columnConfig}
-            />
-        </>
-    );
-};
+export const ColumnConfigInterface: FC<TableColumnConfig> = () => null;

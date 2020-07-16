@@ -3,6 +3,56 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.4.0...@medly-components/theme@1.5.0) (2020-07-13)
+
+
+### Bug Fixes
+
+* add callback for all function for search box ([0ca83c5](https://github.com/medly/medly-components/commit/0ca83c57457a715b7a28c8ee6738a56e9d82ccd0))
+* add support for max height in search results ([46d46b3](https://github.com/medly/medly-components/commit/46d46b35654df410406a5394ed036d4161c144b8))
+* rename variable prop names ([33c0069](https://github.com/medly/medly-components/commit/33c006973455bed251b0730fa03334f541533290))
+
+
+### Features
+
+* add search box component ([08bd1d0](https://github.com/medly/medly-components/commit/08bd1d08c4a4d5a486cecb473b497df99f518a2d))
+
+
+
+
+
+# [1.4.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.3.0...@medly-components/theme@1.4.0) (2020-07-09)
+
+
+### Bug Fixes
+
+* row selection and shadow issue in Table component ([c3fdb26](https://github.com/medly/medly-components/commit/c3fdb26f0daae342c8f2b02ab59406273057c428))
+
+
+### Features
+
+* add different background and text colors in table header cell ([af8d304](https://github.com/medly/medly-components/commit/af8d3047d291e596df77be9de6412783edf8dc8c))
+* add new styles in the table component header ([5d66a5f](https://github.com/medly/medly-components/commit/5d66a5f027ea254d0ec586ce3294aa13e7d2bda9))
+* add row selection style in table component ([79fc5db](https://github.com/medly/medly-components/commit/79fc5db8c6a3c63e57736bd16c53a059efd81237))
+* update the table head cell border style ([9f866d3](https://github.com/medly/medly-components/commit/9f866d30c32921fe47e1d378a6470fc3ac1e3df0))
+
+
+
+
+
+# [1.3.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.2.0...@medly-components/theme@1.3.0) (2020-06-29)
+
+
+### Features
+
+* **theme:** added disabledRowBgColor Property in CardTable Theme ([62411df](https://github.com/medly/medly-components/commit/62411dfb68faa7a2e0d101184df41e059d89aa8f))
+* add support for size in tab ([20a835a](https://github.com/medly/medly-components/commit/20a835ac4db00373f4781b1fa739566d4d3d0649))
+* update snapshots for tabs and add support for tabStyle and theme ([5e00465](https://github.com/medly/medly-components/commit/5e0046513de1e39541ac83274fd83d3d49825fe2))
+
+
+
+
+
 # [1.2.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.1.2...@medly-components/theme@1.2.0) (2020-06-24)
 
 

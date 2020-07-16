@@ -1,11 +1,12 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import Text from '../../Text';
-import Cell from '../Cell';
 import { GroupCell } from '../GroupCell';
 import { getGridTemplateColumns } from '../helpers';
-import Row from '../Row';
-import { NoResult } from '../Row/Row.styled';
-import { ColumnConfig } from '../types';
+import { TableColumnConfig } from '../types';
+import { TBody } from './Body.styled';
+import Cell from './Cell';
+import Row from './Row';
+import { NoResult } from './Row/Row.styled';
 import { Props } from './types';
 
 const Body: React.FC<Props> = React.memo(props => {
@@ -13,68 +14,66 @@ const Body: React.FC<Props> = React.memo(props => {
         data,
         columns,
         onRowClick,
-        selectedRows,
-        uniqueKeyName,
+        selectedRowIds,
+        rowIdentifier,
         rowClickDisableKey,
         rowSelectionDisableKey,
         onRowSelection,
         addColumnMaxSize,
-        isLoading
+        isLoading,
+        showShadowAfterFrozenElement
     } = props;
 
-    const handleRowClick = (rowData: any) => {
-        return onRowClick && !rowData[rowClickDisableKey] ? () => onRowClick(rowData) : undefined;
-    };
-
-    const getRow = useCallback(
-        (rowData: any = {}, configs: ColumnConfig[] = columns, field = '') =>
-            configs.map((config, index) => {
+    const getRow = (rowData: any = {}, configs: TableColumnConfig[] = columns, field = '') =>
+            configs.map(config => {
                 const fieldName = `${field && `${field}.`}${config.field}`;
 
                 return config.children ? (
-                    <GroupCell key={index} hide={config.hide} gridTemplateColumns={getGridTemplateColumns(config.children)}>
+                    <GroupCell
+                        as={field ? 'div' : 'td'}
+                        key={config.field}
+                        hidden={config.hidden}
+                        gridTemplateColumns={getGridTemplateColumns(config.children)}
+                    >
                         {getRow(rowData[config.field], config.children, config.field)}
                     </GroupCell>
                 ) : (
                     <Cell
+                        key={fieldName}
+                        as={field ? 'div' : 'td'}
                         isLoading={isLoading}
                         isRowClickDisabled={rowData[rowClickDisableKey]}
                         isRowSelectionDisabled={rowData[rowSelectionDisableKey]}
-                        key={index}
                         data={rowData[config.field]}
-                        rowId={rowData[uniqueKeyName]}
+                        rowId={rowData[rowIdentifier]}
                         dottedFieldName={fieldName}
-                        isRowSelected={selectedRows.includes(rowData[uniqueKeyName])}
+                        showShadowAtRight={showShadowAfterFrozenElement}
+                        isRowSelected={selectedRowIds.includes(rowData[rowIdentifier])}
                         {...{ config, onRowSelection, addColumnMaxSize }}
                     />
                 );
             }),
-        [columns, isLoading, rowClickDisableKey, rowSelectionDisableKey, uniqueKeyName, selectedRows, onRowSelection, addColumnMaxSize]
-    );
+        handleRowClick = (rowData: any) => (onRowClick && !rowData[rowClickDisableKey] ? () => onRowClick(rowData) : undefined);
 
-    if (data.length === 0) {
-        return (
-            <NoResult>
-                <Text>No result</Text>
-            </NoResult>
-        );
-    }
-
-    return (
-        <>
-            {data.map((row, index) => {
-                return (
-                    <Row
-                        disabled={row[rowClickDisableKey]}
-                        key={row.id || index}
-                        onClick={handleRowClick(row)}
-                        gridTemplateColumns={getGridTemplateColumns(columns)}
-                    >
-                        {getRow(row)}
-                    </Row>
-                );
-            })}
-        </>
+    return data.length === 0 ? (
+        <NoResult>
+            <Text>No result</Text>
+        </NoResult>
+    ) : (
+        <TBody>
+            {data.map((row, index) => (
+                <Row
+                    id={row[rowIdentifier] || index}
+                    key={row[rowIdentifier] || index}
+                    disabled={row[rowClickDisableKey]}
+                    onClick={handleRowClick(row)}
+                    isSelected={!isLoading && selectedRowIds.includes(row[rowIdentifier])}
+                    gridTemplateColumns={getGridTemplateColumns(columns)}
+                >
+                    {getRow(row)}
+                </Row>
+            ))}
+        </TBody>
     );
 });
 Body.displayName = 'Body';

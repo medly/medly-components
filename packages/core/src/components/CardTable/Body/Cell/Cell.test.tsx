@@ -24,8 +24,9 @@ describe('CardTable Cell', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('should render cell with component properly', () => {
+    test.each([false, true])('should render cell with text component with wrap text as %s', wrapText => {
         const config: ColumnConfig = {
+                wrapText,
                 title: 'Column 1',
                 field: 'column1',
                 component: Text

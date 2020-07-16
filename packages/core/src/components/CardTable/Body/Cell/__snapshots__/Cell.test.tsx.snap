@@ -180,7 +180,59 @@ exports[`CardTable Cell should be able to "right" align  1`] = `
 </div>
 `;
 
-exports[`CardTable Cell should render cell with component properly 1`] = `
+exports[`CardTable Cell should render cell with text component with wrap text as false 1`] = `
+.c1 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c0 {
+  padding: 0;
+  padding: 1.5rem 2.4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+<div>
+  <table>
+    <tbody>
+      <tr>
+        <td
+          class="c0"
+        >
+          <span
+            class="c1"
+            data="text"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`CardTable Cell should render cell with text component with wrap text as true 1`] = `
 .c2 {
   margin: 0;
   color: inherit;

@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/medly/medly-components/compare/@medly-components/icons@1.1.0...@medly-components/icons@1.1.1) (2020-07-13)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
+# [1.1.0](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.6...@medly-components/icons@1.1.0) (2020-07-09)
+
+
+### Features
+
+* add new styles in the table component header ([5d66a5f](https://github.com/medly/medly-components/commit/5d66a5f027ea254d0ec586ce3294aa13e7d2bda9))
+
+
+
+
+
+## [1.0.6](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.5...@medly-components/icons@1.0.6) (2020-06-29)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
 ## [1.0.5](https://github.com/medly/medly-components/compare/@medly-components/icons@1.0.4...@medly-components/icons@1.0.5) (2020-06-24)
 
 **Note:** Version bump only for package @medly-components/icons

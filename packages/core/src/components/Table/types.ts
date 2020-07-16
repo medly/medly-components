@@ -13,33 +13,35 @@ export interface ColumnsWidth {
     'react-component': string;
 }
 
-export interface Data {
+export type Data = {
     [key: string]: any;
-}
+}[];
 
-export interface ColumnConfig {
-    /** To freeze the component on the left */
-    frozen?: boolean;
-    /** To show sort icons */
-    sort?: boolean;
-    /** To hide the column */
-    hide?: boolean;
-    /** This will be handled by the component */
-    size?: string;
+export interface TableColumnConfig {
     /** Title of the column */
     title: string;
     /** Field name in the data */
     field: string;
-    /** Column will take max width to fit content */
-    fitContent?: boolean;
-    /** Column content alignment */
-    align?: 'left' | 'right' | 'center';
-    /** Nested Column */
-    children?: ColumnConfig[];
     /** Column formatter */
     formatter: keyof ColumnsWidth;
+    /** Column content alignment */
+    align?: 'left' | 'right' | 'center';
+    /** WIP | Set it true to freeze the component on the left side*/
+    frozen?: boolean;
+    /** Set it true to show sort icons */
+    sortable?: boolean;
+    /** Set it true to hide the column */
+    hidden?: boolean;
+    /** Set it true to set column width according to size of the biggest content */
+    fitContent?: boolean;
+    /** Use this to include nested column */
+    children?: TableColumnConfig[];
+    /** Set it true to wrap column text */
+    wrapText?: boolean;
     /** Custom component */
     component?: React.FC<{ data: any; rowId?: any; disabled?: boolean }>;
+    /** This will be handled internally */
+    size?: string;
 }
 
 export interface GridTemplateProps {
@@ -50,23 +52,29 @@ export interface TableStyledProps {
     isRowClickable?: boolean;
 }
 
-export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'> {
-    /** Table data */
-    data: Data[];
-    /** Key name in data to be used as unique id */
-    uniqueKeyName?: string;
+export interface Props extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type'> {
+    /** Array of your table data */
+    data: {
+        [key: string]: any;
+    }[];
+    /** Column configuration */
+    columns: TableColumnConfig[];
+    /** Key name in data to be used as unique id for rows */
+    rowIdentifier?: string;
     /** Key name to disable row selection */
     rowSelectionDisableKey?: string;
     /** Key name to disable row click */
     rowClickDisableKey?: string;
-    /** Column configuration */
-    columns: ColumnConfig[];
-    /** Shows checkboxes to select rows */
+    /** Set it true to shows checkboxes to select rows */
     isSelectable?: boolean;
-    /** Shows placeholder shimmer */
+    /** Set it true to shows placeholder shimmer */
     isLoading?: boolean;
+    /** Default Sort Field*/
+    defaultSortField?: string;
+    /** Default Sort Order*/
+    defaultSortOrder?: SortOrder;
     /** Ids of default selected rows */
-    selectedRows?: number[];
+    selectedRowIds?: number[];
     /** Function to be called on row selection */
     onRowSelection?: (v: number[]) => void;
     /** Function to be called on row click */

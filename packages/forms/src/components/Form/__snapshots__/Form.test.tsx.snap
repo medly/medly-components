@@ -417,6 +417,7 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c29 .c30 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -425,11 +426,14 @@ exports[`Form should render properly with initial state 1`] = `
   transform: scale(0);
   width: 100%;
   height: 100%;
+  margin-right: 0.05rem;
 }
 
 .c27 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;
@@ -655,21 +659,21 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c4 .c7 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c4 .sc-fzoNJl,
 .c4 .c56 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c4 .sc-fzoNJl *,
 .c4 .c56 * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c4 ~ .sc-fzqNqU {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c4::after {
@@ -679,7 +683,7 @@ exports[`Form should render properly with initial state 1`] = `
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -905,7 +909,7 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c13 {
-  color: #435465;
+  color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -923,7 +927,7 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c40 {
-  color: #435465;
+  color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -2628,6 +2632,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c31 .c32 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -2636,11 +2641,14 @@ exports[`Form should render properly without initial state 1`] = `
   transform: scale(0);
   width: 100%;
   height: 100%;
+  margin-right: 0.05rem;
 }
 
 .c29 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;
@@ -2790,21 +2798,21 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c7 .c10 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c7 .sc-fzoNJl,
 .c7 .c57 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c7 .sc-fzoNJl *,
 .c7 .c57 * {
-  fill: #566c82;
+  fill: #546A7F;
 }
 
 .c7 ~ .sc-fzqNqU {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c7::after {
@@ -2814,7 +2822,7 @@ exports[`Form should render properly without initial state 1`] = `
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -3040,7 +3048,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c16 {
-  color: #435465;
+  color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -3058,7 +3066,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c41 {
-  color: #435465;
+  color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;

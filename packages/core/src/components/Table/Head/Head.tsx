@@ -2,15 +2,30 @@ import React, { useCallback, useMemo, useState } from 'react';
 import Checkbox from '../../Checkbox';
 import { GroupCell, GroupCellTitle } from '../GroupCell';
 import { changeSize, getGridTemplateColumns } from '../helpers';
-import Row from '../Row';
-import { ColumnConfig, SortOrder } from '../types';
+import { SortOrder, TableColumnConfig } from '../types';
+import { THead } from './Head.styled';
 import HeadCell from './HeadCell';
+import HeadRow from './HeadRow';
 import { Props } from './types';
 
 const Head: React.FC<Props> = React.memo(props => {
-    const { columns, onSort, setColumns, isAllRowSelected, isSelectAllDisable, onSelectAllClick, maxColumnSizes } = props;
+    const {
+        columns,
+        onSort,
+        isLoading,
+        setColumns,
+        isAnyRowSelected,
+        isEachRowSelected,
+        isSelectAllDisable,
+        onSelectAllClick,
+        maxColumnSizes,
+        defaultSortOrder,
+        defaultSortField,
+        showShadowAtBottom,
+        showShadowAfterFrozenElement
+    } = props;
 
-    const [sortField, setSortField] = useState('');
+    const [sortField, setSortField] = useState(defaultSortField);
 
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
         handleSelectAllClick = useCallback(() => onSelectAllClick(-1), [onSelectAllClick]),
@@ -26,47 +41,62 @@ const Head: React.FC<Props> = React.memo(props => {
     const selectAllCheckBox = useMemo(
             () => (
                 <Checkbox
-                    disabled={isSelectAllDisable}
-                    checked={isAllRowSelected}
+                    indeterminate={isAnyRowSelected}
+                    disabled={isLoading || isSelectAllDisable}
+                    checked={isEachRowSelected}
                     onChange={handleSelectAllClick}
                     onClick={stopPropagation}
                     name="active"
                 />
             ),
-            [isSelectAllDisable, isAllRowSelected, handleSelectAllClick]
+            [isLoading, isAnyRowSelected, isEachRowSelected, isSelectAllDisable, handleSelectAllClick]
         ),
         headCell = useCallback(
-            (configs: ColumnConfig[], field = '') =>
-                configs.map((config, index) => {
+            (configs: TableColumnConfig[], field = '') =>
+                configs.map(config => {
                     const fieldName = field ? `${field}.${config.field}` : config.field;
                     return config.children ? (
-                        <GroupCell key={index} hide={config.hide} gridTemplateColumns={getGridTemplateColumns(config.children)}>
-                            <GroupCellTitle textVariant="h5" textWeight="Strong">
+                        <GroupCell
+                            as={field ? 'div' : 'th'}
+                            key={config.field}
+                            hidden={config.hidden}
+                            gridTemplateColumns={getGridTemplateColumns(config.children)}
+                        >
+                            <GroupCellTitle textVariant="h5" textWeight="Strong" uppercase>
                                 {config.title}
                             </GroupCellTitle>
                             {headCell(config.children, fieldName)}
                         </GroupCell>
                     ) : (
                         <HeadCell
+                            as={field ? 'div' : 'th'}
+                            key={fieldName}
+                            field={fieldName}
+                            isLoading={isLoading}
                             fitContent={config.fitContent}
                             columnMaxSize={maxColumnSizes[fieldName]}
                             sortField={sortField}
                             frozen={config.frozen}
-                            hide={config.hide}
-                            enableSorting={config.sort}
-                            key={index}
-                            field={fieldName}
+                            hidden={config.hidden}
+                            sortable={config.sortable}
+                            defaultSortOrder={defaultSortOrder}
                             onSortChange={handleSortChange}
                             onWidthChange={handleWidthChange}
+                            isRowSelectionCell={config.field === 'medly-table-checkbox'}
+                            showShadowAtRight={config.field === 'medly-table-checkbox' && showShadowAfterFrozenElement}
                         >
                             {config.field === 'medly-table-checkbox' ? selectAllCheckBox : config.title}
                         </HeadCell>
                     );
                 }),
-            [sortField, maxColumnSizes, isSelectAllDisable, isAllRowSelected, handleSelectAllClick]
+            [sortField, maxColumnSizes, selectAllCheckBox, showShadowAfterFrozenElement]
         );
 
-    return <Row gridTemplateColumns={getGridTemplateColumns(columns)}>{headCell(columns)}</Row>;
+    return (
+        <THead showShadowAtBottom={showShadowAtBottom}>
+            <HeadRow gridTemplateColumns={getGridTemplateColumns(columns)}>{headCell(columns)}</HeadRow>
+        </THead>
+    );
 });
 Head.displayName = 'Head';
 export default Head;

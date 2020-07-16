@@ -1,0 +1,740 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBox options should render options when user search option specified 1`] = `
+.c13 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
+}
+
+.c13 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c10 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+
+.c10 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c7 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c5 {
+  cursor: pointer;
+  padding: 0 1.6rem;
+  min-height: 4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  color: #13181D;
+  background-color: #ffffff;
+}
+
+.c5:hover {
+  background-color: #eff2f4;
+}
+
+.c5 .c6 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c5 .c9 {
+  margin-left: 1.6rem;
+}
+
+.c5 .c9 * {
+  fill: #13181D;
+}
+
+.c3 {
+  z-index: 1000;
+  position: absolute;
+  top: 5.6rem;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px #B0BCC8;
+  border-radius: 0 0 0.4rem 0.4rem;
+}
+
+.c3 li:first-child {
+  border-radius: 0;
+}
+
+.c3 li:last-child {
+  border-radius: 0 0 0.4rem 0.4rem;
+}
+
+.c15 .c9 {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.c15 .c9 * {
+  fill: #607890;
+}
+
+.c15 .c9:hover {
+  background: #eff2f4;
+  border-radius: 2.5rem;
+}
+
+.c15 .c9:hover * {
+  fill: #303C48;
+}
+
+.c8 {
+  width: 4rem;
+  min-width: 4rem;
+  height: auto;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-right: 0.1rem solid #dfe4e9;
+  margin: 0.6rem 0;
+}
+
+.c8 .c9 {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.c8 .c9 * {
+  fill: #607890;
+}
+
+.c8 .c9:hover {
+  background: #eff2f4;
+  border-radius: 2.5rem;
+}
+
+.c8 .c9:hover * {
+  fill: #303C48;
+}
+
+.c16 .c9 {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.c16 .c9 * {
+  fill: #607890;
+}
+
+.c16 .c9:hover {
+  background: transparent;
+  border-radius: 2.5rem;
+}
+
+.c17 .c9 {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.c17 .c9 * {
+  fill: #607890;
+}
+
+.c17 .c9:hover {
+  background: #e6effd;
+  border-radius: 2.5rem;
+}
+
+.c12 {
+  width: 4rem;
+  min-width: 4rem;
+  height: auto;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c12 .c9 {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.c12 .c9 * {
+  fill: #005AEE;
+}
+
+.c12 .c9:hover {
+  background: #e6effd;
+  border-radius: 2.5rem;
+}
+
+.c14 .c2 {
+  box-shadow: none;
+  border: none;
+  box-sizing: content-box;
+  left: -1.5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border: none;
+  padding-bottom: 0;
+  max-height: 20rem;
+  top: 3.6rem;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.c14 .c2::before {
+  display: none;
+}
+
+.c14 .c2 svg {
+  display: none;
+}
+
+.c14 .c2 strong {
+  font-weight: normal;
+}
+
+.c14 .c2 .c4:hover {
+  background-color: #F7F8F9;
+}
+
+.c14 .c2::before {
+  width: 82%;
+}
+
+.c14 .c2 li {
+  padding: 0 2rem;
+}
+
+.c14 .c2 li span,
+.c14 .c2 li strong {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.c14 .c9 {
+  padding: 0.2rem;
+}
+
+.c14:focus-within .c11 .c9 * {
+  fill: #005AEE;
+}
+
+.c0 {
+  width: 25.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  outline: none;
+  box-sizing: border-box;
+  height: 4rem;
+  border: 1.5px solid;
+  position: relative;
+  border-radius: 2rem 2rem 0 0;
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+  border-color: #005AEE;
+  border-width: 1.5px;
+}
+
+.c0 .c2 {
+  box-shadow: none;
+  border: none;
+  box-sizing: content-box;
+  left: -1.5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border: 1.5px solid #005AEE;
+  border-top: 0;
+  box-shadow: 0 0.6rem 0.8rem rgba(18,106,250,0.2);
+  padding-bottom: 1.2rem;
+  max-height: 20rem;
+  top: 3.6rem;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.c0 .c2::before {
+  display: block;
+  content: '';
+  border-top: 0.1rem solid #dfe4e9;
+  height: 0.1rem;
+  margin: 0 auto 0.8rem;
+}
+
+.c0 .c2 svg {
+  display: none;
+}
+
+.c0 .c2 strong {
+  font-weight: normal;
+}
+
+.c0 .c2 .c4:hover {
+  background-color: #F7F8F9;
+}
+
+.c0 .c2::before {
+  width: 82%;
+}
+
+.c0 .c2 li {
+  padding: 0 2rem;
+}
+
+.c0 .c2 li span,
+.c0 .c2 li strong {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.c0 input {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  padding-left: 2rem;
+}
+
+.c0 .c9 {
+  padding: 0.2rem;
+}
+
+.c1 {
+  background: transparent;
+  color: #13181D;
+  padding: 0;
+  outline: none;
+  border: 0 none;
+  min-width: 12.9rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #607890;
+}
+
+.c1::-moz-placeholder {
+  color: #607890;
+}
+
+.c1:-ms-input-placeholder {
+  color: #607890;
+}
+
+.c1::placeholder {
+  color: #607890;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus::placeholder {
+  color: #C7D0D8;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      class="c1"
+      placeholder="search"
+    />
+    <ul
+      class="c2 c3"
+    >
+      <li
+        class="c4 c5"
+        id="Dummy-1"
+      >
+        <span
+          class="c6 c7"
+        >
+          Dummy 1
+        </span>
+      </li>
+      <li
+        class="c4 c5"
+        id="Dummy-2"
+      >
+        <span
+          class="c6 c7"
+        >
+          Dummy 2
+        </span>
+      </li>
+    </ul>
+    <span
+      class="c8"
+    >
+      <svg
+        class="c9 c10"
+        fill="none"
+        height="1em"
+        title="close icon"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+          fill="#000"
+          fill-opacity=".54"
+        />
+      </svg>
+    </span>
+    <span
+      class="c11 c12"
+    >
+      <svg
+        class="c9 c13"
+        fill="none"
+        height="1em"
+        title="search icon"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M15.187 14.472h.79l4.24 4.26c.41.41.41 1.08 0 1.49-.41.41-1.08.41-1.49 0l-4.25-4.25v-.79l-.27-.28a6.5 6.5 0 0 1-5.34 1.48c-2.78-.47-5-2.79-5.34-5.59a6.505 6.505 0 0 1 7.27-7.27c2.8.34 5.12 2.56 5.59 5.34a6.5 6.5 0 0 1-1.48 5.34l.28.27zm-9.71-4.5c0 2.49 2.01 4.5 4.5 4.5s4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5-4.5 2.01-4.5 4.5z"
+          fill="#000"
+          fill-opacity=".54"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`SearchBox should render text box of specified size 1`] = `
+.c6 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c2 {
+  width: 4rem;
+  min-width: 4rem;
+  height: auto;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-right: 0 none;
+  margin: 0.6rem 0;
+}
+
+.c2 .c5 {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.c2 .c5 * {
+  fill: #607890;
+}
+
+.c2 .c5:hover {
+  background: #eff2f4;
+  border-radius: 2.5rem;
+}
+
+.c2 .c5:hover * {
+  fill: #303C48;
+}
+
+.c4 {
+  width: 4rem;
+  min-width: 4rem;
+  height: auto;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c4 .c5 {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.c4 .c5 * {
+  fill: #607890;
+}
+
+.c4 .c5:hover {
+  background: transparent;
+  border-radius: 2.5rem;
+}
+
+.c0 {
+  width: 25.6rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  outline: none;
+  box-sizing: border-box;
+  height: 4rem;
+  border: 1.5px solid;
+  position: relative;
+  border-radius: 4rem;
+  border-bottom: 1.5px solid;
+  border-color: #98A7B7;
+  border-radius: 4rem;
+  -webkit-transition: border-color 100ms,box-shadow 100ms;
+  transition: border-color 100ms,box-shadow 100ms;
+}
+
+.c0 .sc-AxhCb {
+  box-shadow: none;
+  border: none;
+  box-sizing: content-box;
+  left: -1.5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border: none;
+  padding-bottom: 0;
+  max-height: 20rem;
+  top: 3.6rem;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.c0 .sc-AxhCb::before {
+  display: none;
+}
+
+.c0 .sc-AxhCb svg {
+  display: none;
+}
+
+.c0 .sc-AxhCb strong {
+  font-weight: normal;
+}
+
+.c0 .sc-AxhCb .sc-AxiKw:hover {
+  background-color: #F7F8F9;
+}
+
+.c0 .sc-AxhCb::before {
+  width: 82%;
+}
+
+.c0 .sc-AxhCb li {
+  padding: 0 2rem;
+}
+
+.c0 .sc-AxhCb li span,
+.c0 .sc-AxhCb li strong {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.c0 input {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  padding-left: 2rem;
+}
+
+.c0 .c5 {
+  padding: 0.2rem;
+}
+
+.c0:focus-within {
+  border-color: #005AEE;
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+}
+
+.c0:focus-within .c3 .c5 * {
+  fill: #005AEE;
+}
+
+.c0:hover {
+  border-color: #607890;
+  box-shadow: 0 0.2rem 0.8rem rgba(96,120,144,0.2);
+}
+
+.c0:focus-within:hover {
+  border-color: #005AEE;
+  box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
+}
+
+.c1 {
+  background: transparent;
+  color: #13181D;
+  padding: 0;
+  outline: none;
+  border: 0 none;
+  min-width: 12.9rem;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-family: inherit;
+  font-weight: 600;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #607890;
+}
+
+.c1::-moz-placeholder {
+  color: #607890;
+}
+
+.c1:-ms-input-placeholder {
+  color: #607890;
+}
+
+.c1::placeholder {
+  color: #607890;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c1:focus::placeholder {
+  color: #C7D0D8;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      class="c1"
+      placeholder="Search"
+    />
+    <span
+      class="c2"
+    />
+    <span
+      class="c3 c4"
+    >
+      <svg
+        class="c5 c6"
+        fill="none"
+        height="1em"
+        title="search icon"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M15.187 14.472h.79l4.24 4.26c.41.41.41 1.08 0 1.49-.41.41-1.08.41-1.49 0l-4.25-4.25v-.79l-.27-.28a6.5 6.5 0 0 1-5.34 1.48c-2.78-.47-5-2.79-5.34-5.59a6.505 6.505 0 0 1 7.27-7.27c2.8.34 5.12 2.56 5.59 5.34a6.5 6.5 0 0 1-1.48 5.34l.28.27zm-9.71-4.5c0 2.49 2.01 4.5 4.5 4.5s4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5-4.5 2.01-4.5 4.5z"
+          fill="#000"
+          fill-opacity=".54"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </span>
+  </div>
+</div>
+`;

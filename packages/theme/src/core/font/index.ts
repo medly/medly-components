@@ -9,7 +9,7 @@ const font: FontTheme = {
     weights,
     faces,
     defaults: {
-        color: colors.grey[800],
+        color: colors.black,
         variant: 'body2',
         fontFamily: 'Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif'
     }

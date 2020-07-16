@@ -1,4 +1,6 @@
 export interface CardTableTheme {
+    /** Background color for disabled row */
+    disabledRowBgColor: string;
     /** Theme for table with light background */
     lightBackground: {
         headerColor: string;

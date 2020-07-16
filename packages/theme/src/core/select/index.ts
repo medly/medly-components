@@ -15,7 +15,8 @@ const select: SelectTheme = {
         bgColor: colors.white,
         textColor: colors.black,
         disableTextColor: colors.grey[500],
-        hoverBgColor: colors.grey[100]
+        hoverBgColor: colors.grey[100],
+        highlightedBgColor: colors.grey[50]
     }
 };
 

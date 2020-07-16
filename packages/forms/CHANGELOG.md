@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.3.0...@medly-components/forms@1.3.1) (2020-07-13)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.3.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.2.1...@medly-components/forms@1.3.0) (2020-07-09)
+
+
+### Bug Fixes
+
+* row selection and shadow issue in Table component ([c3fdb26](https://github.com/medly/medly-components/commit/c3fdb26f0daae342c8f2b02ab59406273057c428))
+
+
+### Features
+
+* add different background and text colors in table header cell ([af8d304](https://github.com/medly/medly-components/commit/af8d3047d291e596df77be9de6412783edf8dc8c))
+* add new styles in the table component header ([5d66a5f](https://github.com/medly/medly-components/commit/5d66a5f027ea254d0ec586ce3294aa13e7d2bda9))
+
+
+
+
+
+## [1.2.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.2.0...@medly-components/forms@1.2.1) (2020-06-29)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 # [1.2.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.1.0...@medly-components/forms@1.2.0) (2020-06-24)
 
 

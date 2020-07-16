@@ -1,0 +1,77 @@
+import { useState, useEffect } from 'react';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import { optionsArray, size, ThemeInterface } from './SearchBox.stories.tsx';
+import * as stories from './SearchBox.stories';
+import { select } from '@storybook/addon-knobs';
+import { SearchBox } from './SearchBox';
+
+<Meta title="In-review" component={SearchBox} />
+
+# SearchBox
+
+### Add a auto suggest text box
+
+<Preview withToolbar>
+    <Story name="Minimal SearchBox">
+        <SearchBox options={optionsArray} onInputChange={value => console.log(value)} />
+    </Story>
+</Preview>
+
+<Preview withToolbar>
+    <Story name="SearchBox With All Props">
+        {() => {
+            const [options, setOptions] = useState([]);
+            const onInputChangeHandler = value => {
+                if (value.length > 2) {
+                    setOptions([...optionsArray, { label: 'Test', value: 'Test' }]);
+                } else {
+                    setOptions([]);
+                }
+            };
+            const onOptionSelectedHandler = option => {
+                console.log('option', option);
+            };
+            return (
+                <SearchBox
+                    placeholder="Search"
+                    onInputChange={onInputChangeHandler}
+                    onOptionSelected={onOptionSelectedHandler}
+                    options={options}
+                    size={select('Size', size, 'M')}
+                />
+            );
+        }}
+    </Story>
+</Preview>
+
+### Props
+
+<Props of={SearchBox} />
+
+##### Small search text box
+
+<Preview>
+    <SearchBox size="S" />
+</Preview>
+
+##### Medium search text box
+
+<Preview>
+    <SearchBox size="M" />
+</Preview>
+
+### Keyboard Support
+
+It also supports keyboard navigation when it is in focus
+
+| Key        | Function                           |
+| ---------- | ---------------------------------- |
+| Down Arrow | Moves focus to the next option     |
+| Up Arrow   | Moves focus to the previous option |
+| Enter      | Select the focused option          |
+
+### SearchBoxTheme
+
+Followint is the searchBoxTheme and searchResult style comes from SingleSelectTheme
+
+<Props of={ThemeInterface} />

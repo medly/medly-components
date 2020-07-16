@@ -59,6 +59,7 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
 }
 
 .c6 .c7 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -67,11 +68,14 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
   transform: scale(0);
   width: 100%;
   height: 100%;
+  margin-right: 0.05rem;
 }
 
 .c4 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;
@@ -233,6 +237,7 @@ exports[`Checkbox component should render correctly with checked false and activ
 }
 
 .c6 .c7 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -241,11 +246,14 @@ exports[`Checkbox component should render correctly with checked false and activ
   transform: scale(0);
   width: 100%;
   height: 100%;
+  margin-right: 0.05rem;
 }
 
 .c4 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;
@@ -417,6 +425,7 @@ exports[`Checkbox component should render correctly with checked false and disab
 }
 
 .c6 .c7 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -425,11 +434,14 @@ exports[`Checkbox component should render correctly with checked false and disab
   transform: scale(0);
   width: 100%;
   height: 100%;
+  margin-right: 0.05rem;
 }
 
 .c4 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;
@@ -600,6 +612,7 @@ exports[`Checkbox component should render correctly with checked false and hasEr
 }
 
 .c6 .c7 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -608,11 +621,14 @@ exports[`Checkbox component should render correctly with checked false and hasEr
   transform: scale(0);
   width: 100%;
   height: 100%;
+  margin-right: 0.05rem;
 }
 
 .c4 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;
@@ -784,6 +800,7 @@ exports[`Checkbox component should render correctly with checked false and indet
 }
 
 .c6 .c7 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -792,11 +809,14 @@ exports[`Checkbox component should render correctly with checked false and indet
   transform: scale(0);
   width: 100%;
   height: 100%;
+  margin-right: 0.05rem;
 }
 
 .c4 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;
@@ -980,6 +1000,7 @@ exports[`Checkbox component should render correctly with checked true and active
 }
 
 .c6 .c7 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -988,11 +1009,14 @@ exports[`Checkbox component should render correctly with checked true and active
   transform: scale(0);
   width: 100%;
   height: 100%;
+  margin-right: 0.05rem;
 }
 
 .c4 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;
@@ -1166,6 +1190,7 @@ exports[`Checkbox component should render correctly with checked true and disabl
 }
 
 .c6 .c7 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -1174,11 +1199,14 @@ exports[`Checkbox component should render correctly with checked true and disabl
   transform: scale(0);
   width: 100%;
   height: 100%;
+  margin-right: 0.05rem;
 }
 
 .c4 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;
@@ -1350,6 +1378,7 @@ exports[`Checkbox component should render correctly with checked true and hasErr
 }
 
 .c6 .c7 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -1358,11 +1387,14 @@ exports[`Checkbox component should render correctly with checked true and hasErr
   transform: scale(0);
   width: 100%;
   height: 100%;
+  margin-right: 0.05rem;
 }
 
 .c4 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;
@@ -1536,6 +1568,7 @@ exports[`Checkbox component should render correctly with checked true and indete
 }
 
 .c6 .c7 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -1544,11 +1577,14 @@ exports[`Checkbox component should render correctly with checked true and indete
   transform: scale(0);
   width: 100%;
   height: 100%;
+  margin-right: 0.05rem;
 }
 
 .c4 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;
@@ -1743,6 +1779,7 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
 }
 
 .c6 .c7 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -1751,11 +1788,14 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
   transform: scale(0);
   width: 100%;
   height: 100%;
+  margin-right: 0.05rem;
 }
 
 .c4 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;
@@ -1931,6 +1971,7 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
 }
 
 .c6 .c7 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -1939,11 +1980,14 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
   transform: scale(0);
   width: 100%;
   height: 100%;
+  margin-right: 0.05rem;
 }
 
 .c4 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;
@@ -2119,6 +2163,7 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
 }
 
 .c6 .c7 {
+  pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
@@ -2127,11 +2172,14 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
   transform: scale(0);
   width: 100%;
   height: 100%;
+  margin-right: 0.05rem;
 }
 
 .c4 {
   opacity: 0;
   margin: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   outline: none;

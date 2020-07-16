@@ -3,12 +3,13 @@ import React, { useCallback, useMemo, useState } from 'react';
 import Tab from './Tab';
 import TabList from './TabList';
 import TabPanel from './TabPanel';
+import { TabsContext } from './Tabs.context';
 import * as Styled from './Tabs.styled';
 import { Props, StaticProps } from './types';
 
 export const Tabs: React.FC<Props> & StaticProps & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { defaultActive, active, onChange, children, ...restProps } = props,
+        const { defaultActive, active, onChange, children, tabSize, tabStyle, tabBackground, ...restProps } = props,
             tabsId = props.id || 'medly-tabs',
             tabIds = useMemo(
                 () =>
@@ -16,11 +17,12 @@ export const Tabs: React.FC<Props> & StaticProps & WithStyle = React.memo(
                         ? React.Children.toArray(children)
                               .filter((child: any) => !child.props.hide)
                               .map((child: any) => child.props.id)
-                        : [undefined],
+                        : [],
                 [children]
             ),
             [key, setKey] = useState(defaultActive || tabIds[0]),
-            activeTab = useMemo(() => active || key, [active, key]);
+            activeTab = useMemo(() => active || key, [active, key]),
+            tabsContext = useMemo(() => ({ tabSize, tabStyle, tabBackground }), [tabSize, tabStyle, tabBackground]);
 
         const handleTabChange = useCallback(
             (id: any) => {
@@ -30,16 +32,18 @@ export const Tabs: React.FC<Props> & StaticProps & WithStyle = React.memo(
             [active, onChange]
         );
 
-        if (React.Children.count(children) === 0) return null;
+        if (tabIds.length === 0) return null;
 
         return (
-            <Styled.Tabs id={tabsId} ref={ref}>
-                <TabList {...restProps} id={`${tabsId}-list`} active={activeTab} onChange={handleTabChange}>
-                    {children}
-                </TabList>
-                <TabPanel id={`${tabsId}-panel`} active={activeTab}>
-                    {children}
-                </TabPanel>
+            <Styled.Tabs id={tabsId} ref={ref} {...restProps}>
+                <TabsContext.Provider value={tabsContext}>
+                    <TabList id={`${tabsId}-list`} active={activeTab} onChange={handleTabChange}>
+                        {children}
+                    </TabList>
+                    <TabPanel id={`${tabsId}-panel`} active={activeTab}>
+                        {children}
+                    </TabPanel>
+                </TabsContext.Provider>
             </Styled.Tabs>
         );
     })
@@ -49,3 +53,8 @@ Tabs.Style = Styled.Tabs;
 Tabs.Tab = Tab;
 Tabs.TabList = TabList;
 Tabs.TabPanel = TabPanel;
+Tabs.defaultProps = {
+    tabSize: 'S',
+    tabStyle: 'OPEN',
+    tabBackground: 'WHITE'
+};

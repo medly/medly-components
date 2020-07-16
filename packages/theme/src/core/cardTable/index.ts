@@ -2,6 +2,7 @@ import colors from '../colors';
 import { CardTableTheme } from './types';
 
 const cardTable: CardTableTheme = {
+    disabledRowBgColor: colors.grey[100],
     lightBackground: {
         headerColor: colors.grey[600],
         headerActiveColor: colors.communityBlue[500],

@@ -319,7 +319,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
           />
         </svg>
       </div>
-      
+
     </div>
   </div>
 </div>
@@ -664,7 +664,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
           />
         </svg>
       </div>
-      
+
     </div>
   </div>
 </div>
@@ -989,7 +989,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
           />
         </svg>
       </div>
-      
+
     </div>
   </div>
 </div>
@@ -1334,7 +1334,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
           />
         </svg>
       </div>
-      
+
     </div>
   </div>
 </div>

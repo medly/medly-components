@@ -3,6 +3,77 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.7.0...@medly-components/core@1.8.0) (2020-07-13)
+
+
+### Bug Fixes
+
+* add callback for all function for search box ([0ca83c5](https://github.com/medly/medly-components/commit/0ca83c57457a715b7a28c8ee6738a56e9d82ccd0))
+* add support for max height in search results ([46d46b3](https://github.com/medly/medly-components/commit/46d46b35654df410406a5394ed036d4161c144b8))
+* alignment for search options ([bf2b7a2](https://github.com/medly/medly-components/commit/bf2b7a2302baab6375ed6df8150c6950c3b4e810))
+* fix new feedbacks and deploy for review ([0e07540](https://github.com/medly/medly-components/commit/0e075402a35996466a2861588c8d1d174515c6c5))
+* refactor css and extract to a folder ([b6811c5](https://github.com/medly/medly-components/commit/b6811c5468d9e73d08b211c1d0eff6ebc00f91a6))
+* remove all unwanted props related to setting icon ([73274a5](https://github.com/medly/medly-components/commit/73274a59f95b25d1ff33844d11b48924cbcb2a52))
+* rename variable prop names ([33c0069](https://github.com/medly/medly-components/commit/33c006973455bed251b0730fa03334f541533290))
+* update tests and fix feedbacks ([1141b68](https://github.com/medly/medly-components/commit/1141b68de5066cb7d5b0867edc159f647253f48a))
+
+
+### Features
+
+* add search box component ([08bd1d0](https://github.com/medly/medly-components/commit/08bd1d08c4a4d5a486cecb473b497df99f518a2d))
+
+
+
+
+
+# [1.7.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.6.0...@medly-components/core@1.7.0) (2020-07-09)
+
+
+### Bug Fixes
+
+* change height of border of the selected row in table component ([7b3f740](https://github.com/medly/medly-components/commit/7b3f7404ded3919c30ec8eb9068b2c006dd4cf93))
+* fix padding related issue in Table and Checkbox component ([71e192a](https://github.com/medly/medly-components/commit/71e192a905cd2846777bbc15d948c713309ffb70))
+* row selection and shadow issue in Table component ([c3fdb26](https://github.com/medly/medly-components/commit/c3fdb26f0daae342c8f2b02ab59406273057c428))
+
+
+### Features
+
+* add defaultSortFeild and defaultSortOrder prop to Table component ([009c553](https://github.com/medly/medly-components/commit/009c5535b21489c98939f9588f0c6f393d23fa14))
+* add different background and text colors in table header cell ([af8d304](https://github.com/medly/medly-components/commit/af8d3047d291e596df77be9de6412783edf8dc8c))
+* add indeterminate state in the selectAll checkbox in table component ([8328d20](https://github.com/medly/medly-components/commit/8328d20c3988f82890f66a62ca7d0ffe92f3778c))
+* add new styles in the table component header ([5d66a5f](https://github.com/medly/medly-components/commit/5d66a5f027ea254d0ec586ce3294aa13e7d2bda9))
+* add row selection style in table component ([79fc5db](https://github.com/medly/medly-components/commit/79fc5db8c6a3c63e57736bd16c53a059efd81237))
+* add shadow and scrollbar in the table component ([dc08949](https://github.com/medly/medly-components/commit/dc08949295c5aa20b222ad9012d6258f3078cd05))
+* add wrap text functionality in table cell component ([ca5694e](https://github.com/medly/medly-components/commit/ca5694e28fec7552dd3095992ddf87e44a65eff3))
+* update the table head cell border style ([9f866d3](https://github.com/medly/medly-components/commit/9f866d30c32921fe47e1d378a6470fc3ac1e3df0))
+
+
+
+
+
+# [1.6.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.5.0...@medly-components/core@1.6.0) (2020-06-29)
+
+
+### Bug Fixes
+
+* fix radioGroup error validation issue ([a0d5e1c](https://github.com/medly/medly-components/commit/a0d5e1cec06d3c41d5831c67a4676e65e0813a47))
+* fix sonar duplicate line issue ([3f1b9d6](https://github.com/medly/medly-components/commit/3f1b9d63d471ee361e066a0b223499f5fcef7a97))
+
+
+### Features
+
+* add style for background ([9dfca2a](https://github.com/medly/medly-components/commit/9dfca2a18df5f0345cde631ffdf4512f7bd0c508))
+* add support for size in tab ([20a835a](https://github.com/medly/medly-components/commit/20a835ac4db00373f4781b1fa739566d4d3d0649))
+* fix design feedbacks ([0233729](https://github.com/medly/medly-components/commit/0233729b09bebd0dac354fa056373a43cb8dc720))
+* fix feedbacks changes ([9aabe27](https://github.com/medly/medly-components/commit/9aabe27e410d4f28e310af5f6b8e3199216b7a76))
+* fix tab background on disabled ([01e837e](https://github.com/medly/medly-components/commit/01e837e9fb9fbcdfb18522f981f3ea582b90185b))
+* update snapshots for tabs and add support for tabStyle and theme ([5e00465](https://github.com/medly/medly-components/commit/5e0046513de1e39541ac83274fd83d3d49825fe2))
+* **core:** made Text Component Content Wrapping Optional for Card Table Cell ([6ced51b](https://github.com/medly/medly-components/commit/6ced51be3ccbddce96ecd1610fa0e193871e682e))
+
+
+
+
+
 # [1.5.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.4.0...@medly-components/core@1.5.0) (2020-06-24)
 
 
