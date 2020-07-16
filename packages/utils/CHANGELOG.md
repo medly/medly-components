@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.1.3...@medly-components/utils@1.2.0) (2020-07-16)
+
+
+### Features
+
+* update button component to match new designs ([1c0dded](https://github.com/medly/medly-components/commit/1c0dded07aefa716fe3a3cac9c64dc770dd7f81a))
+
+
+
+
+
 ## [1.1.3](https://github.com/medly/medly-components/compare/@medly-components/utils@1.1.2...@medly-components/utils@1.1.3) (2020-07-13)
 
 **Note:** Version bump only for package @medly-components/utils
