@@ -9,7 +9,7 @@ const renderer = (columnConfig: ColumnConfig) =>
         <table>
             <tbody>
                 <tr>
-                    <Cell column={columnConfig} data="text" rowId="1" />
+                    <Cell column={columnConfig} data="text" rowId="1" rowData={{}} />
                 </tr>
             </tbody>
         </table>
@@ -26,11 +26,11 @@ describe('CardTable Cell', () => {
 
     test.each([false, true])('should render cell with text component with wrap text as %s', wrapText => {
         const config: ColumnConfig = {
-                wrapText,
-                title: 'Column 1',
-                field: 'column1',
-                component: Text
-            },
+            wrapText,
+            title: 'Column 1',
+            field: 'column1',
+            component: Text
+        },
             { container } = renderer(config);
         expect(container).toMatchSnapshot();
     });
