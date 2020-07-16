@@ -2,6 +2,7 @@ import { ChevronDownIcon } from '@medly-components/icons';
 import { useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import TextField from '../TextField';
+import { Chip } from './Chip/Chip';
 import { filterOptions, getDefaultSelectedOptions } from './helpers';
 import { Wrapper } from './MultiSelect.styled';
 import Options from './Options';
@@ -84,6 +85,15 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             handleOuterClick();
         }, wrapperRef);
 
+        const chipEl = () => {
+            return (
+                <div>
+                    <Chip label="2" onClear={() => {}} />
+                    <ChevronDownIcon />
+                </div>
+            );
+        };
+
         return (
             <Wrapper
                 id={`${selectId}-wrapper`}
@@ -103,7 +113,7 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                     value={inputValue}
                     ref={inputRef}
                     placeholder={placeholder}
-                    suffix={ChevronDownIcon}
+                    suffix={chipEl}
                     onKeyPress={handleKeyPress}
                     onChange={handleInputChange}
                     {...inputProps}
