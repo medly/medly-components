@@ -18,6 +18,7 @@ export interface CoreTheme {
     label?: CoreThemes.LabelTheme;
     link?: CoreThemes.LinkTheme;
     modal?: CoreThemes.ModalTheme;
+    multiSelect?: CoreThemes.MultiSelectTheme;
     radio?: CoreThemes.RadioTheme;
     select?: CoreThemes.SelectTheme;
     searchBox?: CoreThemes.SearchBoxTheme;
@@ -44,4 +45,3 @@ export * from './core/types';
 export * from './icon/types';
 export * from './layout/types';
 export * from './loader/types';
-

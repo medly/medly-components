@@ -174,7 +174,7 @@ exports[`Form should not render any field if component type is not matched 1`] =
 `;
 
 exports[`Form should render properly with initial state 1`] = `
-.c31 {
+.c30 {
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -182,12 +182,12 @@ exports[`Form should render properly with initial state 1`] = `
   cursor: inherit;
 }
 
-.c31 * {
+.c30 * {
   fill-opacity: 1;
   fill: #607890;
 }
 
-.c61 {
+.c60 {
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -195,25 +195,12 @@ exports[`Form should render properly with initial state 1`] = `
   cursor: pointer;
 }
 
-.c61 * {
+.c60 * {
   fill-opacity: 1;
   fill: #607890;
 }
 
-.c62 {
-  overflow: visible;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  font-size: 2.4rem;
-  cursor: pointer;
-}
-
-.c62 * {
-  fill-opacity: 1;
-  fill: #607890;
-}
-
-.c18 {
+.c17 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -225,7 +212,7 @@ exports[`Form should render properly with initial state 1`] = `
   line-height: 2.2rem;
 }
 
-.c21 {
+.c20 {
   margin: 0;
   color: inherit;
   font-size: 1.6rem;
@@ -237,7 +224,7 @@ exports[`Form should render properly with initial state 1`] = `
   line-height: 2.6rem;
 }
 
-.c64 {
+.c61 {
   margin: 0;
   color: inherit;
   font-size: 1.8rem;
@@ -249,7 +236,7 @@ exports[`Form should render properly with initial state 1`] = `
   line-height: 2.4rem;
 }
 
-.c72 {
+.c69 {
   border: none;
   position: relative;
   -webkit-user-select: none;
@@ -277,58 +264,58 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: center;
 }
 
-.c72 * {
+.c69 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c72:hover {
+.c69:hover {
   cursor: pointer;
 }
 
-.c72:focus {
+.c69:focus {
   outline: none;
 }
 
-.c72:disabled {
+.c69:disabled {
   cursor: not-allowed;
 }
 
-.c72:disabled {
+.c69:disabled {
   color: #98A7B7;
   background: #dfe4e9;
 }
 
-.c72:disabled .c30 * {
+.c69:disabled .c29 * {
   fill: #dfe4e9;
 }
 
-.c72:not(:disabled) {
+.c69:not(:disabled) {
   color: #ffffff;
 }
 
-.c72:not(:disabled) .c30 * {
+.c69:not(:disabled) .c29 * {
   fill: #ffffff;
 }
 
-.c72:not(:disabled):not(:hover) {
+.c69:not(:disabled):not(:hover) {
   background: #005AEE;
 }
 
-.c72:not(:disabled):hover {
+.c69:not(:disabled):hover {
   background: #1A6BF0;
   box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
 }
 
-.c72 .c30 + .c17 {
+.c69 .c29 + .c16 {
   margin-left: 0.8rem;
 }
 
-.c72 .c17 + .c30 {
+.c69 .c16 + .c29 {
   margin-left: 0.8rem;
 }
 
-.c20 {
+.c19 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -342,11 +329,11 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: flex-start;
 }
 
-.c20 > :first-child {
+.c19 > :first-child {
   margin-bottom: 0.9rem;
 }
 
-.c33 {
+.c32 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -360,11 +347,11 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: flex-start;
 }
 
-.c33 > :first-child {
+.c32 > :first-child {
   margin-bottom: 0.9rem;
 }
 
-.c22 {
+.c21 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -373,13 +360,13 @@ exports[`Form should render properly with initial state 1`] = `
   color: inherit;
 }
 
-.c22::after {
+.c21::after {
   content: ' *';
   color: default:inherit;
   disabled: #98A7B7;
 }
 
-.c25 {
+.c24 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -389,12 +376,12 @@ exports[`Form should render properly with initial state 1`] = `
   padding: 0 1.6rem;
 }
 
-.c23 {
+.c22 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
 }
 
-.c29 {
+.c28 {
   border: 0.15rem solid;
   box-sizing: border-box;
   width: 100%;
@@ -416,7 +403,7 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: center;
 }
 
-.c29 .c30 {
+.c28 .c29 {
   pointer-events: none;
   z-index: 1;
   -webkit-transition: all 100ms ease-in-out;
@@ -429,7 +416,7 @@ exports[`Form should render properly with initial state 1`] = `
   margin-right: 0.05rem;
 }
 
-.c27 {
+.c26 {
   opacity: 0;
   margin: 0;
   top: 0;
@@ -440,43 +427,43 @@ exports[`Form should render properly with initial state 1`] = `
   position: absolute;
 }
 
-.c27:checked ~ .c28 {
+.c26:checked ~ .c27 {
   border-color: #005AEE;
   background-color: #005AEE;
 }
 
-.c27:checked ~ .c28 .c30 {
+.c26:checked ~ .c27 .c29 {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
 
-.c27:checked ~ .c28 .c30 * {
+.c26:checked ~ .c27 .c29 * {
   fill: #ffffff;
 }
 
-.c27:not(:checked) ~ .c28 {
+.c26:not(:checked) ~ .c27 {
   background-color: transparent;
   border-color: #13181D;
 }
 
-.c27:not(:disabled):focus:not(:checked) ~ .c28 {
+.c26:not(:disabled):focus:not(:checked) ~ .c27 {
   border-color: #005AEE;
   box-shadow: 0 0 0.8rem #005AEE;
 }
 
-.c27:not(:disabled):focus:checked ~ .c28 {
+.c26:not(:disabled):focus:checked ~ .c27 {
   box-shadow: 0 0 0.8rem #005AEE;
 }
 
-.c26 {
+.c25 {
   margin: 0.3rem;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
 }
 
-.c24 {
+.c23 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -496,16 +483,16 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: row-reverse;
 }
 
-.c24 * {
+.c23 * {
   cursor: pointer;
 }
 
-.c24:hover .c28 {
+.c23:hover .c27 {
   border-color: #1A6BF0;
   background-color: #1A6BF0;
 }
 
-.c32 {
+.c31 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -525,15 +512,15 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: row-reverse;
 }
 
-.c32 * {
+.c31 * {
   cursor: pointer;
 }
 
-.c32:hover .c28 {
+.c31:hover .c27 {
   border-color: #1A6BF0;
 }
 
-.c70 {
+.c67 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -553,65 +540,23 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: row;
 }
 
-.c70 * {
+.c67 * {
   cursor: pointer;
 }
 
-.c70:hover .c28 {
+.c67:hover .c27 {
   border-color: #1A6BF0;
   background-color: #1A6BF0;
-}
-
-.c60 {
-  background-color: transparent;
-  border: none;
-  border-radius: 20px;
-  padding: 3px 10px;
-  margin: 2px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
-  cursor: default;
-  border: 1px solid #F38037;
-  background-color: #F38037;
-  color: #ffffff;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c60:focus {
-  outline: none;
-}
-
-.c60 .c30 * {
-  fill: #ffffff;
-}
-
-.c60 .c17 + .c30 {
-  cursor: pointer;
-  margin-left: 10px;
 }
 
 .c8 {
   top: 0;
   left: 0;
   cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   position: absolute;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
@@ -630,7 +575,29 @@ exports[`Form should render properly with initial state 1`] = `
   content: ' *';
 }
 
-.c57 {
+.c58 {
+  top: 0;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
+}
+
+.c56 {
   pointer-events: none;
   margin-left: 1.6rem;
 }
@@ -663,12 +630,12 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c4 .sc-fzoNJl,
-.c4 .c56 {
+.c4 .c55 {
   color: #546A7F;
 }
 
 .c4 .sc-fzoNJl *,
-.c4 .c56 * {
+.c4 .c55 * {
   fill: #546A7F;
 }
 
@@ -711,15 +678,15 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c4:focus-within .sc-fzoNJl,
 .c4:focus-within:hover .sc-fzoNJl,
-.c4:focus-within .c56,
-.c4:focus-within:hover .c56 {
+.c4:focus-within .c55,
+.c4:focus-within:hover .c55 {
   color: #005AEE;
 }
 
 .c4:focus-within .sc-fzoNJl *,
 .c4:focus-within:hover .sc-fzoNJl *,
-.c4:focus-within .c56 *,
-.c4:focus-within:hover .c56 * {
+.c4:focus-within .c55 *,
+.c4:focus-within:hover .c55 * {
   fill: #005AEE;
 }
 
@@ -776,7 +743,7 @@ exports[`Form should render properly with initial state 1`] = `
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c55 {
+.c54 {
   position: relative;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -860,6 +827,2194 @@ exports[`Form should render properly with initial state 1`] = `
   transform: translate3d(0,20%,0) scale(0.75);
 }
 
+.c53 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c53 .c2 {
+  margin: 0;
+  caret-color: transparent;
+}
+
+.c53 .c2 label {
+  pointer-events: none;
+}
+
+.c53 .c2 div,
+.c53 .c2 input,
+.c53 .c2 label {
+  cursor: pointer;
+}
+
+.c53 .c2 .c55 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c53 .c2 .c55 * {
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
+}
+
+.c53 .c2:not(:focus-within):hover .c55 * {
+  fill: #13181D;
+}
+
+.c12 {
+  color: #13181D;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  margin: 0px 0.8rem 0px 0px;
+  cursor: default;
+}
+
+.c12::after {
+  color: red;
+  content: ' *';
+}
+
+.c39 {
+  color: #13181D;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  margin: 0px 0.8rem 0px 0px;
+  cursor: default;
+}
+
+.c13 {
+  grid-area: label;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c18 {
+  grid-area: description;
+  margin: 5px 0 0 2px;
+  color: #012040;
+}
+
+.c11 {
+  margin: 0.8rem 0.8rem 0.8rem 0;
+  display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
+  grid-template-areas: 'label field' 'random description';
+}
+
+.c11 .sc-fzoKki {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c41 {
+  margin: 0.8rem 0;
+  display: grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-areas: 'label' 'field' 'description';
+  grid-template-columns: auto;
+  grid-template-areas: 'field' 'description';
+}
+
+.c41 .sc-fzoKki {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c40 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.c40 .sc-fznMnq {
+  top: calc(100% + 5px);
+  left: 0%;
+}
+
+.c42 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-clip: padding-box;
+  box-sizing: border-box;
+  border: 1px solid #b0bcc8;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.c42.c42.c42 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c42:focus-within {
+  border-color: #012040;
+}
+
+.c42 > * {
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  padding: 0.8rem;
+  color: #435465;
+}
+
+.c43 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  outline: 0;
+  border: 0;
+  width: calc(100% - 16px);
+  cursor: inherit;
+  background-color: #ffffff;
+}
+
+.c43::-webkit-input-placeholder {
+  color: #98A7B7;
+}
+
+.c43::-moz-placeholder {
+  color: #98A7B7;
+}
+
+.c43:-ms-input-placeholder {
+  color: #98A7B7;
+}
+
+.c43::placeholder {
+  color: #98A7B7;
+}
+
+.c43::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.c44 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: inherit;
+}
+
+.c50 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c52 {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: unset;
+  left: 0;
+  top: unset;
+  right: unset;
+}
+
+.c48 {
+  display: block;
+  position: relative;
+  border: 1px solid #BCBEC0;
+  background: #ffffff;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.c49 {
+  border: 0;
+  padding: 0 44px;
+  width: 100%;
+  min-height: 46px;
+  background: #ffffff;
+  font-family: Montserrat,sans-serif;
+  color: #001217;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.c49::-webkit-input-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c49::-moz-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c49:-moz-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c46 {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c51 {
+  color: #BCBEC0;
+  opacity: 1;
+}
+
+.c47 {
+  display: grid;
+  grid-template-columns: 194px 39px 194px;
+  grid-template-rows: unset;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+.c45 > div:first-child div {
+  z-index: 5;
+}
+
+.c45 > div:first-child > div:last-child {
+  top: unset;
+  bottom: unset;
+  left: unset;
+  right: unset;
+  top: calc(100% + 5px);
+  left: 0%;
+}
+
+.c45 > div:first-child > div:first-child {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: auto 30px auto;
+  border: 1px solid #b0bcc8;
+  border-radius: 5px;
+  padding: 0.8rem;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.c45 > div:first-child > div:first-child * {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.c45 > div:first-child > div:first-child label {
+  text-align: center;
+  border: 0;
+}
+
+.c45 > div:first-child > div:first-child label input {
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: center;
+  max-width: 90px;
+  min-height: unset;
+  padding: 0;
+  color: #435465;
+  background-clip: padding-box;
+  box-sizing: border-box;
+}
+
+.c45 > div:first-child > div:first-child label input:disabled {
+  cursor: not-allowed;
+}
+
+.c45 > div:first-child > div:first-child label input:focus {
+  border-color: #012040;
+  outline: 0;
+}
+
+.c45 > div:first-child > div:first-child label input::-webkit-input-placeholder {
+  color: #98A7B7;
+}
+
+.c45 > div:first-child > div:first-child label input::-moz-placeholder {
+  color: #98A7B7;
+}
+
+.c45 > div:first-child > div:first-child label input:-ms-input-placeholder {
+  color: #98A7B7;
+}
+
+.c45 > div:first-child > div:first-child label input::placeholder {
+  color: #98A7B7;
+}
+
+.c45 > div:first-child > div:first-child label input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.c15 {
+  width: 1px;
+  opacity: 0;
+}
+
+.c14 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  padding: 0.8rem;
+  color: #435465;
+  background-clip: padding-box;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #b0bcc8;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c14:focus {
+  border-color: #012040;
+  outline: 0;
+}
+
+.c59 {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  cursor: default;
+  border: 1px solid #607890;
+  background-color: #607890;
+  color: #ffffff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c59:focus {
+  outline: none;
+}
+
+.c59 .c29 * {
+  fill: #ffffff;
+}
+
+.c59 .c16 + .c29 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.c57 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c57 .c2 {
+  margin: 0;
+}
+
+.c57 .c2 label {
+  pointer-events: none;
+}
+
+.c57 .c2 div,
+.c57 .c2 input,
+.c57 .c2 label {
+  cursor: pointer;
+}
+
+.c57 .c2:focus-within input {
+  cursor: text;
+}
+
+.c57 .c2 .c55 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c57 .c2 .c55 * {
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
+}
+
+.c57 .c2:not(:focus-within):hover .c55 * {
+  fill: #13181D;
+}
+
+.c38 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  box-sizing: border-box;
+  border: 0.15rem solid;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.c36 {
+  position: absolute;
+  opacity: 0;
+  width: 1%;
+  height: 1%;
+  margin: 0;
+}
+
+.c36 ~ .c37 {
+  border-color: #13181D;
+}
+
+.c36:checked ~ .c37 {
+  border-width: calc(1.8rem / 3);
+}
+
+.c36:checked:disabled ~ .c37 {
+  border-color: #dfe4e9;
+}
+
+.c36:not(:checked):disabled ~ .c37 {
+  border-color: #98A7B7;
+}
+
+.c36:not(:disabled):checked ~ .c37 {
+  border-color: #005AEE;
+}
+
+.c36:not(:disabled):focus ~ .c37 {
+  border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
+}
+
+.c35 {
+  margin: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+  border-radius: 100%;
+}
+
+.c34 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c34:hover.c33:hover .c37 {
+  border-color: #1A6BF0;
+}
+
+.c68 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 1/-1;
+  margin-top: 1.6rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c68 > * + * {
+  margin-left: 1.6rem;
+}
+
+.c1 {
+  grid-column: 1/7;
+}
+
+.c1 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c9 {
+  grid-column: 7/-1;
+}
+
+.c9 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c10 {
+  grid-column: 1/-1;
+}
+
+.c10 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c64 {
+  grid-column: 1/5;
+}
+
+.c64 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c65 {
+  grid-column: 5/9;
+}
+
+.c65 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c66 {
+  grid-column: 9/-1;
+}
+
+.c66 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c62 {
+  grid-column: 1/-1;
+  margin-top: 2.6rem;
+}
+
+.c63 {
+  margin-bottom: 1rem;
+}
+
+.c0 {
+  grid-template-rows: auto;
+  grid-template-columns: repeat(12,1fr);
+  grid-gap: 1.6rem;
+  display: inline-grid;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.c0 > h2 {
+  grid-column: 1/-1;
+  margin-bottom: 0.8rem;
+}
+
+.c0 > span {
+  grid-column: 1/-1;
+  margin-bottom: 1rem;
+}
+
+<div>
+  <form
+    class="c0"
+    id="medly-dynamic-form"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2 c3"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            class="c5"
+          >
+            <input
+              aria-describedby="firstName-helper-text"
+              class="c6"
+              id="firstName-input"
+              name="firstName"
+              placeholder=" "
+              required=""
+              type="text"
+              value="first name"
+            />
+            <label
+              class="c7 c8"
+              for="firstName-input"
+              required=""
+            >
+              First Name
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c9"
+    >
+      <div
+        class="c2 c3"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            class="c5"
+          >
+            <input
+              aria-describedby="lastName-helper-text"
+              class="c6"
+              id="lastName-input"
+              name="lastName"
+              placeholder=" "
+              required=""
+              type="text"
+              value="last name"
+            />
+            <label
+              class="c7 c8"
+              for="lastName-input"
+              required=""
+            >
+              Last Name
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      <div
+        class="c2 c3"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            class="c5"
+          >
+            <input
+              aria-describedby="email-helper-text"
+              class="c6"
+              id="email-input"
+              name="email"
+              placeholder=" "
+              required=""
+              type="email"
+              value="email@email.com"
+            />
+            <label
+              class="c7 c8"
+              for="email-input"
+              required=""
+            >
+              Email
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      <div
+        class="c11"
+        id="resume-field"
+      >
+        <label
+          class="c12 c13"
+          required=""
+        >
+          Resume
+        </label>
+        <label
+          class="c14"
+          id="resume-label"
+        >
+          Click to choose file
+          <input
+            class="c15"
+            id="resume"
+            name="resume"
+            required=""
+            type="file"
+          />
+        </label>
+        <span
+          class="c16 c17 c18"
+        >
+          File size should be less than 5MB
+        </span>
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      <div
+        aria-describedby="languages-helper-text"
+        class="c19"
+        id="languages-wrapper"
+        name="languages"
+      >
+        <span
+          class="c16 c20 c21"
+          id="languages-label"
+          required=""
+          type="checkbox"
+        >
+          Languages
+        </span>
+        <div
+          class="c22"
+          id="languages-options"
+        >
+          
+          <label
+            class="c23"
+            for="JAVA-languages"
+            id="JAVA-languages-wrapper"
+            sizes="[object Object]"
+          >
+            <span
+              class="c16 c17 c24"
+              id="JAVA-languages-label"
+              type="checkbox"
+            >
+              JAVA
+            </span>
+            <div
+              class="c25"
+            >
+              <input
+                checked=""
+                class="c26"
+                id="JAVA-languages"
+                name="java"
+                sizes="[object Object]"
+                type="checkbox"
+              />
+              <div
+                class="c27 c28"
+              >
+                <svg
+                  class="c29 c30"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                    fill="green"
+                  />
+                </svg>
+              </div>
+            </div>
+          </label>
+          
+          <label
+            class="c31"
+            for="RUBY-languages"
+            id="RUBY-languages-wrapper"
+            sizes="[object Object]"
+          >
+            <span
+              class="c16 c17 c24"
+              id="RUBY-languages-label"
+              type="checkbox"
+            >
+              RUBY
+            </span>
+            <div
+              class="c25"
+            >
+              <input
+                class="c26"
+                id="RUBY-languages"
+                name="ruby"
+                sizes="[object Object]"
+                type="checkbox"
+              />
+              <div
+                class="c27 c28"
+              >
+                <svg
+                  class="c29 c30"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                    fill="green"
+                  />
+                </svg>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      <div
+        aria-describedby="role-helper-text"
+        class="c32"
+        id="role-wrapper"
+      >
+        <span
+          class="c16 c20 c21"
+          id="role-label"
+          required=""
+          type="radio"
+        >
+          Role
+        </span>
+        <div
+          class="c22"
+          id="role-options"
+        >
+          <label
+            class="c33 c34"
+            for="Front End-role"
+            id="Front End-role-wrapper"
+            sizes="[object Object]"
+          >
+            <span
+              class="c16 c17 c24"
+              id="Front End-role-label"
+              type="radio"
+            >
+              Front End
+            </span>
+            <div
+              class="c35"
+            >
+              <input
+                checked=""
+                class="c36"
+                id="Front End-role"
+                name="role"
+                required=""
+                sizes="[object Object]"
+                type="radio"
+                value="front-end"
+              />
+              <div
+                class="c37 c38"
+              />
+            </div>
+          </label>
+          <label
+            class="c33 c34"
+            for="Back End-role"
+            id="Back End-role-wrapper"
+            sizes="[object Object]"
+          >
+            <span
+              class="c16 c17 c24"
+              id="Back End-role-label"
+              type="radio"
+            >
+              Back End
+            </span>
+            <div
+              class="c35"
+            >
+              <input
+                class="c36"
+                id="Back End-role"
+                name="role"
+                required=""
+                sizes="[object Object]"
+                type="radio"
+                value="back-end"
+              />
+              <div
+                class="c37 c38"
+              />
+            </div>
+          </label>
+          <label
+            class="c33 c34"
+            for="Full Stack-role"
+            id="Full Stack-role-wrapper"
+            sizes="[object Object]"
+          >
+            <span
+              class="c16 c17 c24"
+              id="Full Stack-role-label"
+              type="radio"
+            >
+              Full Stack
+            </span>
+            <div
+              class="c35"
+            >
+              <input
+                class="c36"
+                id="Full Stack-role"
+                name="role"
+                required=""
+                sizes="[object Object]"
+                type="radio"
+                value="full-stack"
+              />
+              <div
+                class="c37 c38"
+              />
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      <div
+        class="c11"
+        id="birthDate"
+      >
+        <label
+          class="c39 c13"
+          for="birthDate"
+        >
+          Birth Date
+        </label>
+        <div
+          class="c40"
+          id="medly-popover-wrapper"
+        >
+          <div
+            class="c41"
+            id="birthDate-input-field"
+          >
+            
+            <div
+              class="sc-fzoKki c42"
+            >
+              <input
+                autocomplete="off"
+                class="c43 c44"
+                id="birthDate-input"
+                name="birthDate"
+                placeholder="Birth Date"
+                type="text"
+                value="01/01/2019"
+              />
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      <div
+        class="c11"
+      >
+        <label
+          class="c39 c13"
+          for="Experience"
+        >
+          Experience
+        </label>
+        <div
+          class="c45"
+          data-testid="react-datepicker"
+        >
+          <div
+            class="c46"
+          >
+            <div
+              class="sc-fzoaKM c47"
+              data-testid="DateRangeInputGrid"
+            >
+              <label
+                class="c48"
+                display="block"
+                for="startDate"
+              >
+                <input
+                  aria-label="Start date"
+                  autocomplete="off"
+                  class="c49"
+                  color="#001217"
+                  data-testid="DatepickerInput"
+                  font-family="Montserrat, sans-serif"
+                  font-size="14px"
+                  font-weight="600"
+                  id="startDate"
+                  placeholder="Start date"
+                  tabindex="0"
+                  value="01/01/2019"
+                  width="100%"
+                />
+              </label>
+              <div
+                class="c50"
+              >
+                <svg
+                  class="c51"
+                  height="12px"
+                  transform="rotate(90 0 0)"
+                  viewBox="0 0 9 12"
+                  width="15px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.46.001a.538.538 0 0 0-.358.174L.156 4.48a.538.538 0 1 0 .796.724l3.01-3.285v13.689a.563.563 0 0 0 .538.55.563.563 0 0 0 .538-.55V1.918l3.01 3.286a.538.538 0 1 0 .796-.724L4.898.175a.538.538 0 0 0-.437-.174z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <label
+                class="c48"
+                display="block"
+                for="endDate"
+              >
+                <input
+                  aria-label="End date"
+                  autocomplete="off"
+                  class="c49"
+                  color="#001217"
+                  data-testid="DatepickerInput"
+                  font-family="Montserrat, sans-serif"
+                  font-size="14px"
+                  font-weight="600"
+                  id="endDate"
+                  placeholder="End date"
+                  tabindex="0"
+                  value="01/02/2019"
+                  width="100%"
+                />
+              </label>
+            </div>
+            <div
+              class="c52"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      <div
+        class="c53"
+        id="country-wrapper"
+      >
+        <div
+          class="c2 c54"
+        >
+          <div
+            class="c4"
+          >
+            <div
+              class="c5"
+            >
+              <input
+                aria-describedby="country-helper-text"
+                autocomplete="off"
+                class="c6"
+                id="country-input"
+                name="country"
+                placeholder="Please Select . . ."
+                required=""
+                type="text"
+                value="India"
+              />
+              <label
+                class="c7 c8"
+                for="country-input"
+                required=""
+              >
+                Country
+              </label>
+            </div>
+            <svg
+              class="c29 c30 c55 c56"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                fill="#000"
+              />
+            </svg>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      <div
+        class="c57"
+        id="graduation-wrapper"
+      >
+        <div
+          class="c2 c54"
+        >
+          <div
+            class="c4"
+          >
+            <div
+              class="c5"
+            >
+              <input
+                aria-describedby="graduation-helper-text"
+                autocomplete="off"
+                class="c6"
+                id="graduation-input"
+                name="graduation"
+                placeholder="Please Select . . ."
+                type="text"
+                value=""
+              />
+              <label
+                class="c7 c58"
+                for="graduation-input"
+              >
+                Graduation
+              </label>
+            </div>
+            <div>
+              <button
+                class="c59"
+              >
+                <span
+                  class="c16 c17"
+                >
+                  <strong>
+                    2
+                  </strong>
+                </span>
+                <svg
+                  class="c29 c60"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+                    fill="#000"
+                    fill-opacity=".54"
+                  />
+                </svg>
+              </button>
+              <svg
+                class="c29 c30"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                  fill="#000"
+                />
+              </svg>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <h4
+      class="c16 c61 c62"
+    >
+      Marks
+    </h4>
+    <span
+      class="c16 c17 c63"
+    >
+      Marks Information
+    </span>
+    <div
+      class="c64"
+    >
+      <div
+        class="c2 c3"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            class="c5"
+          >
+            <input
+              aria-describedby="marks.database-helper-text"
+              class="c6"
+              id="marks.database-input"
+              name="marks.database"
+              placeholder="Database"
+              required=""
+              type="number"
+              value="10"
+            />
+            <label
+              class="c7 c8"
+              for="marks.database-input"
+              required=""
+            >
+              Database
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c65"
+    >
+      <div
+        class="c2 c3"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            class="c5"
+          >
+            <input
+              aria-describedby="marks.algorithms-helper-text"
+              class="c6"
+              id="marks.algorithms-input"
+              name="marks.algorithms"
+              placeholder="Algorithms"
+              required=""
+              type="number"
+              value="10"
+            />
+            <label
+              class="c7 c8"
+              for="marks.algorithms-input"
+              required=""
+            >
+              Algorithms
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c66"
+    >
+      <div
+        class="c2 c3"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            class="c5"
+          >
+            <input
+              aria-describedby="marks.maths-helper-text"
+              class="c6"
+              id="marks.maths-input"
+              name="marks.maths"
+              placeholder="Maths"
+              required=""
+              type="number"
+              value="10"
+            />
+            <label
+              class="c7 c8"
+              for="marks.maths-input"
+              required=""
+            >
+              Maths
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      
+      <label
+        class="c67"
+        for="agree"
+        id="agree-wrapper"
+        sizes="[object Object]"
+      >
+        <span
+          class="c16 c17 c24"
+          id="agree-label"
+          type="checkbox"
+        >
+          Do you Agree
+        </span>
+        <div
+          class="c25"
+        >
+          <input
+            checked=""
+            class="c26"
+            id="agree"
+            name="agree"
+            sizes="[object Object]"
+            type="checkbox"
+          />
+          <div
+            class="c27 c28"
+          >
+            <svg
+              class="c29 c30"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                fill="green"
+              />
+            </svg>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div
+      class="c68"
+    >
+      <button
+        class="c69"
+        color="default"
+        form="medly-dynamic-form"
+        type="submit"
+      >
+        <span
+          class="c16 c20"
+        >
+          Submit
+        </span>
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Form should render properly without initial state 1`] = `
+.c32 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
+}
+
+.c32 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c61 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.0rem;
+  cursor: pointer;
+}
+
+.c61 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 3.2rem;
+  font-weight: 600;
+  -webkit-letter-spacing: -0.04rem;
+  -moz-letter-spacing: -0.04rem;
+  -ms-letter-spacing: -0.04rem;
+  letter-spacing: -0.04rem;
+  line-height: 4.0rem;
+}
+
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c19 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c22 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c62 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.8rem;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.02rem;
+  -moz-letter-spacing: -0.02rem;
+  -ms-letter-spacing: -0.02rem;
+  letter-spacing: -0.02rem;
+  line-height: 2.4rem;
+}
+
+.c70 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  border-radius: 100rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c70 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c70:hover {
+  cursor: pointer;
+}
+
+.c70:focus {
+  outline: none;
+}
+
+.c70:disabled {
+  cursor: not-allowed;
+}
+
+.c70:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c70:disabled .c31 * {
+  fill: #dfe4e9;
+}
+
+.c70:not(:disabled) {
+  color: #ffffff;
+}
+
+.c70:not(:disabled) .c31 * {
+  fill: #ffffff;
+}
+
+.c70:not(:disabled):not(:hover) {
+  background: #005AEE;
+}
+
+.c70:not(:disabled):hover {
+  background: #1A6BF0;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+}
+
+.c70 .c31 + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c70 .c1 + .c31 {
+  margin-left: 0.8rem;
+}
+
+.c21 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c21 > :first-child {
+  margin-bottom: 0.9rem;
+}
+
+.c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c33 > :first-child {
+  margin-bottom: 0.9rem;
+}
+
+.c23 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: inherit;
+  color: inherit;
+}
+
+.c23::after {
+  content: ' *';
+  color: default:inherit;
+  disabled: #98A7B7;
+}
+
+.c26 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: inherit;
+  color: inherit;
+  padding: 0 1.6rem;
+}
+
+.c24 {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.c30 {
+  border: 0.15rem solid;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c30 .c31 {
+  pointer-events: none;
+  z-index: 1;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  width: 100%;
+  height: 100%;
+  margin-right: 0.05rem;
+}
+
+.c28 {
+  opacity: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  position: absolute;
+}
+
+.c28:checked ~ .c29 {
+  border-color: #005AEE;
+  background-color: #005AEE;
+}
+
+.c28:checked ~ .c29 .c31 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c28:checked ~ .c29 .c31 * {
+  fill: #ffffff;
+}
+
+.c28:not(:checked) ~ .c29 {
+  background-color: transparent;
+  border-color: #13181D;
+}
+
+.c28:not(:disabled):focus:not(:checked) ~ .c29 {
+  border-color: #005AEE;
+  box-shadow: 0 0 0.8rem #005AEE;
+}
+
+.c28:not(:disabled):focus:checked ~ .c29 {
+  box-shadow: 0 0 0.8rem #005AEE;
+}
+
+.c27 {
+  margin: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+}
+
+.c25 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c25 * {
+  cursor: pointer;
+}
+
+.c25:hover .c29 {
+  border-color: #1A6BF0;
+}
+
+.c68 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c68 * {
+  cursor: pointer;
+}
+
+.c68:hover .c29 {
+  border-color: #1A6BF0;
+}
+
+.c11 {
+  top: 0;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
+}
+
+.c11::after {
+  content: ' *';
+}
+
+.c59 {
+  top: 0;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
+}
+
+.c57 {
+  pointer-events: none;
+  margin-left: 1.6rem;
+}
+
+.c7 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  padding: 0 1.6rem;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
+}
+
+.c7 .c10 {
+  color: #546A7F;
+}
+
+.c7 .sc-fzoNJl,
+.c7 .c56 {
+  color: #546A7F;
+}
+
+.c7 .sc-fzoNJl *,
+.c7 .c56 * {
+  fill: #546A7F;
+}
+
+.c7 ~ .sc-fzqNqU {
+  color: #546A7F;
+}
+
+.c7::after {
+  content: '';
+  width: 100%;
+  height: 0.1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #546A7F;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c7:hover::after,
+.c7:focus-within::after {
+  height: 0.2rem;
+}
+
+.c7:focus-within,
+.c7:focus-within:hover {
+  border-color: #005AEE;
+  background-color: #e6effd;
+}
+
+.c7:focus-within::after,
+.c7:focus-within:hover::after {
+  background-color: #005AEE;
+}
+
+.c7:focus-within .c10,
+.c7:focus-within:hover .c10 {
+  color: #005AEE;
+}
+
+.c7:focus-within .sc-fzoNJl,
+.c7:focus-within:hover .sc-fzoNJl,
+.c7:focus-within .c56,
+.c7:focus-within:hover .c56 {
+  color: #005AEE;
+}
+
+.c7:focus-within .sc-fzoNJl *,
+.c7:focus-within:hover .sc-fzoNJl *,
+.c7:focus-within .c56 *,
+.c7:focus-within:hover .c56 * {
+  fill: #005AEE;
+}
+
+.c7:focus-within input::-webkit-input-placeholder,
+.c7:focus-within:hover input::-webkit-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c7:focus-within input::-moz-placeholder,
+.c7:focus-within:hover input::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c7:focus-within input:-ms-input-placeholder,
+.c7:focus-within:hover input:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c7:focus-within input::placeholder,
+.c7:focus-within:hover input::placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c6 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c55 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: 20rem;
+  margin: 0.8rem 0;
+}
+
+.c9 {
+  color: #13181D;
+  font-size: 1.6rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 2.6rem;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  padding-bottom: 0.7rem;
+}
+
+.c9:focus {
+  outline: none;
+}
+
+.c9:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c9:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c9:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c9:focus::placeholder {
+  opacity: 1;
+}
+
+.c9::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c9::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c9:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c9::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c9:not(:placeholder-shown) + .c10,
+.c9:focus + .c10 {
+  -webkit-transform: translate3d(0,20%,0) scale(0.75);
+  -ms-transform: translate3d(0,20%,0) scale(0.75);
+  transform: translate3d(0,20%,0) scale(0.75);
+}
+
 .c54 {
   position: relative;
   display: -webkit-inline-box;
@@ -875,22 +3030,22 @@ exports[`Form should render properly with initial state 1`] = `
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c54 .c2 {
+.c54 .c5 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c54 .c2 label {
+.c54 .c5 label {
   pointer-events: none;
 }
 
-.c54 .c2 div,
-.c54 .c2 input,
-.c54 .c2 label {
+.c54 .c5 div,
+.c54 .c5 input,
+.c54 .c5 label {
   cursor: pointer;
 }
 
-.c54 .c2 .c56 {
+.c54 .c5 .c56 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -899,16 +3054,16 @@ exports[`Form should render properly with initial state 1`] = `
   transform: rotate(0deg);
 }
 
-.c54 .c2 .c56 * {
+.c54 .c5 .c56 * {
   -webkit-transition: fill 100ms ease-out;
   transition: fill 100ms ease-out;
 }
 
-.c54 .c2:not(:focus-within):hover .c56 * {
+.c54 .c5:not(:focus-within):hover .c56 * {
   fill: #13181D;
 }
 
-.c13 {
+.c15 {
   color: #13181D;
   font-size: 1.4rem;
   font-weight: 400;
@@ -921,7 +3076,7 @@ exports[`Form should render properly with initial state 1`] = `
   cursor: default;
 }
 
-.c13::after {
+.c15::after {
   color: red;
   content: ' *';
 }
@@ -939,7 +3094,7 @@ exports[`Form should render properly with initial state 1`] = `
   cursor: default;
 }
 
-.c14 {
+.c16 {
   grid-area: label;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -950,13 +3105,13 @@ exports[`Form should render properly with initial state 1`] = `
   user-select: none;
 }
 
-.c19 {
+.c20 {
   grid-area: description;
   margin: 5px 0 0 2px;
   color: #012040;
 }
 
-.c12 {
+.c14 {
   margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
   -webkit-align-items: center;
@@ -967,7 +3122,7 @@ exports[`Form should render properly with initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c12 .sc-fzoKki {
+.c14 .sc-fzoKki {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1021,24 +3176,6 @@ exports[`Form should render properly with initial state 1`] = `
 .c41 .sc-fznMnq {
   top: calc(100% + 5px);
   left: 0%;
-}
-
-.c58 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: relative;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-}
-
-.c58 .sc-fznMnq {
-  top: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
 }
 
 .c43 {
@@ -1292,12 +3429,12 @@ exports[`Form should render properly with initial state 1`] = `
   visibility: hidden;
 }
 
-.c16 {
+.c18 {
   width: 1px;
   opacity: 0;
 }
 
-.c15 {
+.c17 {
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -1323,61 +3460,106 @@ exports[`Form should render properly with initial state 1`] = `
   user-select: none;
 }
 
-.c15:focus {
+.c17:focus {
   border-color: #012040;
   outline: 0;
 }
 
-.c59 {
-  border: 1px solid #C7D0D8;
-  background-color: #ffffff;
-  cursor: pointer;
-  border-radius: 4px;
-  box-sizing: border-box;
-  overflow: hidden;
-  min-width: 150px;
+.c60 {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  cursor: default;
+  border: 1px solid #607890;
+  background-color: #607890;
+  color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  height: auto;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.c59 * {
+.c60:focus {
+  outline: none;
+}
+
+.c60 .c31 * {
+  fill: #ffffff;
+}
+
+.c60 .c1 + .c31 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.c58 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c58 .c5 {
+  margin: 0;
+}
+
+.c58 .c5 label {
+  pointer-events: none;
+}
+
+.c58 .c5 div,
+.c58 .c5 input,
+.c58 .c5 label {
   cursor: pointer;
 }
 
-.c59 .c11 {
-  margin: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+.c58 .c5:focus-within input {
+  cursor: text;
 }
 
-.c59 .c11 > * {
-  margin: 0;
-  border: none;
-  background-color: transparent;
+.c58 .c5 .c56 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
-.c59:focus-within {
-  border-color: #012040;
+.c58 .c5 .c56 * {
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
 }
 
-.c63 {
-  max-width: 24px;
-  margin-right: 0.4rem;
+.c58 .c5:not(:focus-within):hover .c56 * {
+  fill: #13181D;
 }
 
 .c39 {
@@ -1455,7 +3637,7 @@ exports[`Form should render properly with initial state 1`] = `
   border-color: #1A6BF0;
 }
 
-.c71 {
+.c69 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1471,2146 +3653,7 @@ exports[`Form should render properly with initial state 1`] = `
   justify-content: flex-end;
 }
 
-.c71 > * + * {
-  margin-left: 1.6rem;
-}
-
-.c1 {
-  grid-column: 1/7;
-}
-
-.c1 > * {
-  width: 100%;
-  margin: 0;
-  min-width: auto;
-}
-
-.c9 {
-  grid-column: 7/-1;
-}
-
-.c9 > * {
-  width: 100%;
-  margin: 0;
-  min-width: auto;
-}
-
-.c10 {
-  grid-column: 1/-1;
-}
-
-.c10 > * {
-  width: 100%;
-  margin: 0;
-  min-width: auto;
-}
-
-.c67 {
-  grid-column: 1/5;
-}
-
-.c67 > * {
-  width: 100%;
-  margin: 0;
-  min-width: auto;
-}
-
-.c68 {
-  grid-column: 5/9;
-}
-
-.c68 > * {
-  width: 100%;
-  margin: 0;
-  min-width: auto;
-}
-
-.c69 {
-  grid-column: 9/-1;
-}
-
-.c69 > * {
-  width: 100%;
-  margin: 0;
-  min-width: auto;
-}
-
-.c65 {
-  grid-column: 1/-1;
-  margin-top: 2.6rem;
-}
-
-.c66 {
-  margin-bottom: 1rem;
-}
-
-.c0 {
-  grid-template-rows: auto;
-  grid-template-columns: repeat(12,1fr);
-  grid-gap: 1.6rem;
-  display: inline-grid;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-}
-
-.c0 > h2 {
-  grid-column: 1/-1;
-  margin-bottom: 0.8rem;
-}
-
-.c0 > span {
-  grid-column: 1/-1;
-  margin-bottom: 1rem;
-}
-
-<div>
-  <form
-    class="c0"
-    id="medly-dynamic-form"
-  >
-    <div
-      class="c1"
-    >
-      <div
-        class="c2 c3"
-      >
-        <div
-          class="c4"
-        >
-          <div
-            class="c5"
-          >
-            <input
-              aria-describedby="firstName-helper-text"
-              class="c6"
-              id="firstName-input"
-              name="firstName"
-              placeholder=" "
-              required=""
-              type="text"
-              value="first name"
-            />
-            <label
-              class="c7 c8"
-              for="firstName-input"
-              required=""
-            >
-              First Name
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <div
-      class="c9"
-    >
-      <div
-        class="c2 c3"
-      >
-        <div
-          class="c4"
-        >
-          <div
-            class="c5"
-          >
-            <input
-              aria-describedby="lastName-helper-text"
-              class="c6"
-              id="lastName-input"
-              name="lastName"
-              placeholder=" "
-              required=""
-              type="text"
-              value="last name"
-            />
-            <label
-              class="c7 c8"
-              for="lastName-input"
-              required=""
-            >
-              Last Name
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <div
-      class="c10"
-    >
-      <div
-        class="c2 c3"
-      >
-        <div
-          class="c4"
-        >
-          <div
-            class="c5"
-          >
-            <input
-              aria-describedby="email-helper-text"
-              class="c6"
-              id="email-input"
-              name="email"
-              placeholder=" "
-              required=""
-              type="email"
-              value="email@email.com"
-            />
-            <label
-              class="c7 c8"
-              for="email-input"
-              required=""
-            >
-              Email
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <div
-      class="c10"
-    >
-      <div
-        class="c11 c12"
-        id="resume-field"
-      >
-        <label
-          class="c13 c14"
-          required=""
-        >
-          Resume
-        </label>
-        <label
-          class="c15"
-          id="resume-label"
-        >
-          Click to choose file
-          <input
-            class="c16"
-            id="resume"
-            name="resume"
-            required=""
-            type="file"
-          />
-        </label>
-        <span
-          class="c17 c18 c19"
-        >
-          File size should be less than 5MB
-        </span>
-      </div>
-    </div>
-    <div
-      class="c10"
-    >
-      <div
-        aria-describedby="languages-helper-text"
-        class="c20"
-        id="languages-wrapper"
-        name="languages"
-      >
-        <span
-          class="c17 c21 c22"
-          id="languages-label"
-          required=""
-          type="checkbox"
-        >
-          Languages
-        </span>
-        <div
-          class="c23"
-          id="languages-options"
-        >
-          
-          <label
-            class="c24"
-            for="JAVA-languages"
-            id="JAVA-languages-wrapper"
-            sizes="[object Object]"
-          >
-            <span
-              class="c17 c18 c25"
-              id="JAVA-languages-label"
-              type="checkbox"
-            >
-              JAVA
-            </span>
-            <div
-              class="c26"
-            >
-              <input
-                checked=""
-                class="c27"
-                id="JAVA-languages"
-                name="java"
-                sizes="[object Object]"
-                type="checkbox"
-              />
-              <div
-                class="c28 c29"
-              >
-                <svg
-                  class="c30 c31"
-                  fill="none"
-                  height="1em"
-                  viewBox="0 0 24 24"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-                    fill="green"
-                  />
-                </svg>
-              </div>
-            </div>
-          </label>
-          
-          <label
-            class="c32"
-            for="RUBY-languages"
-            id="RUBY-languages-wrapper"
-            sizes="[object Object]"
-          >
-            <span
-              class="c17 c18 c25"
-              id="RUBY-languages-label"
-              type="checkbox"
-            >
-              RUBY
-            </span>
-            <div
-              class="c26"
-            >
-              <input
-                class="c27"
-                id="RUBY-languages"
-                name="ruby"
-                sizes="[object Object]"
-                type="checkbox"
-              />
-              <div
-                class="c28 c29"
-              >
-                <svg
-                  class="c30 c31"
-                  fill="none"
-                  height="1em"
-                  viewBox="0 0 24 24"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-                    fill="green"
-                  />
-                </svg>
-              </div>
-            </div>
-          </label>
-        </div>
-      </div>
-    </div>
-    <div
-      class="c10"
-    >
-      <div
-        aria-describedby="role-helper-text"
-        class="c33"
-        id="role-wrapper"
-      >
-        <span
-          class="c17 c21 c22"
-          id="role-label"
-          required=""
-          type="radio"
-        >
-          Role
-        </span>
-        <div
-          class="c23"
-          id="role-options"
-        >
-          <label
-            class="c34 c35"
-            for="Front End-role"
-            id="Front End-role-wrapper"
-            sizes="[object Object]"
-          >
-            <span
-              class="c17 c18 c25"
-              id="Front End-role-label"
-              type="radio"
-            >
-              Front End
-            </span>
-            <div
-              class="c36"
-            >
-              <input
-                checked=""
-                class="c37"
-                id="Front End-role"
-                name="role"
-                required=""
-                sizes="[object Object]"
-                type="radio"
-                value="front-end"
-              />
-              <div
-                class="c38 c39"
-              />
-            </div>
-          </label>
-          <label
-            class="c34 c35"
-            for="Back End-role"
-            id="Back End-role-wrapper"
-            sizes="[object Object]"
-          >
-            <span
-              class="c17 c18 c25"
-              id="Back End-role-label"
-              type="radio"
-            >
-              Back End
-            </span>
-            <div
-              class="c36"
-            >
-              <input
-                class="c37"
-                id="Back End-role"
-                name="role"
-                required=""
-                sizes="[object Object]"
-                type="radio"
-                value="back-end"
-              />
-              <div
-                class="c38 c39"
-              />
-            </div>
-          </label>
-          <label
-            class="c34 c35"
-            for="Full Stack-role"
-            id="Full Stack-role-wrapper"
-            sizes="[object Object]"
-          >
-            <span
-              class="c17 c18 c25"
-              id="Full Stack-role-label"
-              type="radio"
-            >
-              Full Stack
-            </span>
-            <div
-              class="c36"
-            >
-              <input
-                class="c37"
-                id="Full Stack-role"
-                name="role"
-                required=""
-                sizes="[object Object]"
-                type="radio"
-                value="full-stack"
-              />
-              <div
-                class="c38 c39"
-              />
-            </div>
-          </label>
-        </div>
-      </div>
-    </div>
-    <div
-      class="c10"
-    >
-      <div
-        class="c11 c12"
-        id="birthDate"
-      >
-        <label
-          class="c40 c14"
-          for="birthDate"
-        >
-          Birth Date
-        </label>
-        <div
-          class="c41"
-          id="medly-popover-wrapper"
-        >
-          <div
-            class="c11 c42"
-            id="birthDate-input-field"
-          >
-            
-            <div
-              class="sc-fzoKki c43"
-            >
-              <input
-                autocomplete="off"
-                class="c44 c45"
-                id="birthDate-input"
-                name="birthDate"
-                placeholder="Birth Date"
-                type="text"
-                value="01/01/2019"
-              />
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="c10"
-    >
-      <div
-        class="c11 c12"
-      >
-        <label
-          class="c40 c14"
-          for="Experience"
-        >
-          Experience
-        </label>
-        <div
-          class="c46"
-          data-testid="react-datepicker"
-        >
-          <div
-            class="c47"
-          >
-            <div
-              class="sc-fzoaKM c48"
-              data-testid="DateRangeInputGrid"
-            >
-              <label
-                class="c49"
-                display="block"
-                for="startDate"
-              >
-                <input
-                  aria-label="Start date"
-                  autocomplete="off"
-                  class="c50"
-                  color="#001217"
-                  data-testid="DatepickerInput"
-                  font-family="Montserrat, sans-serif"
-                  font-size="14px"
-                  font-weight="600"
-                  id="startDate"
-                  placeholder="Start date"
-                  tabindex="0"
-                  value="01/01/2019"
-                  width="100%"
-                />
-              </label>
-              <div
-                class="c51"
-              >
-                <svg
-                  class="c52"
-                  height="12px"
-                  transform="rotate(90 0 0)"
-                  viewBox="0 0 9 12"
-                  width="15px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M4.46.001a.538.538 0 0 0-.358.174L.156 4.48a.538.538 0 1 0 .796.724l3.01-3.285v13.689a.563.563 0 0 0 .538.55.563.563 0 0 0 .538-.55V1.918l3.01 3.286a.538.538 0 1 0 .796-.724L4.898.175a.538.538 0 0 0-.437-.174z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
-              <label
-                class="c49"
-                display="block"
-                for="endDate"
-              >
-                <input
-                  aria-label="End date"
-                  autocomplete="off"
-                  class="c50"
-                  color="#001217"
-                  data-testid="DatepickerInput"
-                  font-family="Montserrat, sans-serif"
-                  font-size="14px"
-                  font-weight="600"
-                  id="endDate"
-                  placeholder="End date"
-                  tabindex="0"
-                  value="01/02/2019"
-                  width="100%"
-                />
-              </label>
-            </div>
-            <div
-              class="c53"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="c10"
-    >
-      <div
-        class="c54"
-      >
-        <div
-          class="c2 c55"
-        >
-          <div
-            class="c4"
-          >
-            <div
-              class="c5"
-            >
-              <input
-                aria-describedby="country-helper-text"
-                autocomplete="off"
-                class="c6"
-                id="country-input"
-                name="country"
-                placeholder="Please Select . . ."
-                required=""
-                type="text"
-                value="India"
-              />
-              <label
-                class="c7 c8"
-                for="country-input"
-                required=""
-              >
-                Country
-              </label>
-            </div>
-            <svg
-              class="c30 c31 c56 c57"
-              fill="none"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
-                fill="#000"
-              />
-            </svg>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-    <div
-      class="c10"
-    >
-      <div
-        class="c11 c12"
-        id="graduation-field"
-      >
-        <label
-          class="c40 c14"
-          for="graduation"
-        >
-          Graduation
-        </label>
-        <div
-          class="c58"
-          id="medly-popover-wrapper"
-        >
-          <div
-            class="c59"
-            id="graduation-container"
-          >
-            <button
-              class="c60"
-            >
-              <span
-                class="c17 c18"
-              >
-                BTech
-              </span>
-              <svg
-                class="c30 c61"
-                fill="none"
-                height="1em"
-                viewBox="0 0 24 24"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
-                  fill="#000"
-                  fill-opacity=".54"
-                />
-              </svg>
-            </button>
-            <div
-              class="c11 c42"
-              id="graduation-input-field"
-            >
-              
-              <div
-                class="sc-fzoKki c43"
-              >
-                <input
-                  autocomplete="off"
-                  class="c44"
-                  id="graduation-input"
-                  placeholder="1 options selected"
-                  type="text"
-                  value=""
-                />
-              </div>
-              
-            </div>
-            <svg
-              class="c30 c62 c63"
-              fill="none"
-              height="1em"
-              theme="[object Object]"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M15.875 9l-3.88 3.88L8.115 9a.996.996 0 1 0-1.41 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
-                fill="#000"
-                fill-opacity=".54"
-              />
-            </svg>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <h4
-      class="c17 c64 c65"
-    >
-      Marks
-    </h4>
-    <span
-      class="c17 c18 c66"
-    >
-      Marks Information
-    </span>
-    <div
-      class="c67"
-    >
-      <div
-        class="c2 c3"
-      >
-        <div
-          class="c4"
-        >
-          <div
-            class="c5"
-          >
-            <input
-              aria-describedby="marks.database-helper-text"
-              class="c6"
-              id="marks.database-input"
-              name="marks.database"
-              placeholder="Database"
-              required=""
-              type="number"
-              value="10"
-            />
-            <label
-              class="c7 c8"
-              for="marks.database-input"
-              required=""
-            >
-              Database
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <div
-      class="c68"
-    >
-      <div
-        class="c2 c3"
-      >
-        <div
-          class="c4"
-        >
-          <div
-            class="c5"
-          >
-            <input
-              aria-describedby="marks.algorithms-helper-text"
-              class="c6"
-              id="marks.algorithms-input"
-              name="marks.algorithms"
-              placeholder="Algorithms"
-              required=""
-              type="number"
-              value="10"
-            />
-            <label
-              class="c7 c8"
-              for="marks.algorithms-input"
-              required=""
-            >
-              Algorithms
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <div
-      class="c69"
-    >
-      <div
-        class="c2 c3"
-      >
-        <div
-          class="c4"
-        >
-          <div
-            class="c5"
-          >
-            <input
-              aria-describedby="marks.maths-helper-text"
-              class="c6"
-              id="marks.maths-input"
-              name="marks.maths"
-              placeholder="Maths"
-              required=""
-              type="number"
-              value="10"
-            />
-            <label
-              class="c7 c8"
-              for="marks.maths-input"
-              required=""
-            >
-              Maths
-            </label>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    <div
-      class="c10"
-    >
-      
-      <label
-        class="c70"
-        for="agree"
-        id="agree-wrapper"
-        sizes="[object Object]"
-      >
-        <span
-          class="c17 c18 c25"
-          id="agree-label"
-          type="checkbox"
-        >
-          Do you Agree
-        </span>
-        <div
-          class="c26"
-        >
-          <input
-            checked=""
-            class="c27"
-            id="agree"
-            name="agree"
-            sizes="[object Object]"
-            type="checkbox"
-          />
-          <div
-            class="c28 c29"
-          >
-            <svg
-              class="c30 c31"
-              fill="none"
-              height="1em"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
-                fill="green"
-              />
-            </svg>
-          </div>
-        </div>
-      </label>
-    </div>
-    <div
-      class="c71"
-    >
-      <button
-        class="c72"
-        color="default"
-        form="medly-dynamic-form"
-        type="submit"
-      >
-        <span
-          class="c17 c21"
-        >
-          Submit
-        </span>
-      </button>
-    </div>
-  </form>
-</div>
-`;
-
-exports[`Form should render properly without initial state 1`] = `
-.c33 {
-  overflow: visible;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  font-size: 2.4rem;
-  cursor: inherit;
-}
-
-.c33 * {
-  fill-opacity: 1;
-  fill: #607890;
-}
-
-.c61 {
-  overflow: visible;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  font-size: 2.4rem;
-  cursor: pointer;
-}
-
-.c61 * {
-  fill-opacity: 1;
-  fill: #607890;
-}
-
-.c2 {
-  margin: 0;
-  color: inherit;
-  font-size: 3.2rem;
-  font-weight: 600;
-  -webkit-letter-spacing: -0.04rem;
-  -moz-letter-spacing: -0.04rem;
-  -ms-letter-spacing: -0.04rem;
-  letter-spacing: -0.04rem;
-  line-height: 4.0rem;
-}
-
-.c3 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-}
-
-.c20 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-}
-
-.c23 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.6rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-}
-
-.c63 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.8rem;
-  font-weight: 700;
-  -webkit-letter-spacing: -0.02rem;
-  -moz-letter-spacing: -0.02rem;
-  -ms-letter-spacing: -0.02rem;
-  letter-spacing: -0.02rem;
-  line-height: 2.4rem;
-}
-
-.c71 {
-  border: none;
-  position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
-  border-radius: 100rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c71 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c71:hover {
-  cursor: pointer;
-}
-
-.c71:focus {
-  outline: none;
-}
-
-.c71:disabled {
-  cursor: not-allowed;
-}
-
-.c71:disabled {
-  color: #98A7B7;
-  background: #dfe4e9;
-}
-
-.c71:disabled .c32 * {
-  fill: #dfe4e9;
-}
-
-.c71:not(:disabled) {
-  color: #ffffff;
-}
-
-.c71:not(:disabled) .c32 * {
-  fill: #ffffff;
-}
-
-.c71:not(:disabled):not(:hover) {
-  background: #005AEE;
-}
-
-.c71:not(:disabled):hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
-}
-
-.c71 .c32 + .c1 {
-  margin-left: 0.8rem;
-}
-
-.c71 .c1 + .c32 {
-  margin-left: 0.8rem;
-}
-
-.c22 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c22 > :first-child {
-  margin-bottom: 0.9rem;
-}
-
-.c34 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-}
-
-.c34 > :first-child {
-  margin-bottom: 0.9rem;
-}
-
-.c24 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: inherit;
-  color: inherit;
-}
-
-.c24::after {
-  content: ' *';
-  color: default:inherit;
-  disabled: #98A7B7;
-}
-
-.c27 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: inherit;
-  color: inherit;
-  padding: 0 1.6rem;
-}
-
-.c25 {
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-}
-
-.c31 {
-  border: 0.15rem solid;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  border-radius: 22.2%;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c31 .c32 {
-  pointer-events: none;
-  z-index: 1;
-  -webkit-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  width: 100%;
-  height: 100%;
-  margin-right: 0.05rem;
-}
-
-.c29 {
-  opacity: 0;
-  margin: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  outline: none;
-  position: absolute;
-}
-
-.c29:checked ~ .c30 {
-  border-color: #005AEE;
-  background-color: #005AEE;
-}
-
-.c29:checked ~ .c30 .c32 {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-.c29:checked ~ .c30 .c32 * {
-  fill: #ffffff;
-}
-
-.c29:not(:checked) ~ .c30 {
-  background-color: transparent;
-  border-color: #13181D;
-}
-
-.c29:not(:disabled):focus:not(:checked) ~ .c30 {
-  border-color: #005AEE;
-  box-shadow: 0 0 0.8rem #005AEE;
-}
-
-.c29:not(:disabled):focus:checked ~ .c30 {
-  box-shadow: 0 0 0.8rem #005AEE;
-}
-
-.c28 {
-  margin: 0.3rem;
-  width: 1.8rem;
-  height: 1.8rem;
-  position: relative;
-}
-
-.c26 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.c26 * {
-  cursor: pointer;
-}
-
-.c26:hover .c30 {
-  border-color: #1A6BF0;
-}
-
-.c69 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  padding: 0.8rem 0;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c69 * {
-  cursor: pointer;
-}
-
-.c69:hover .c30 {
-  border-color: #1A6BF0;
-}
-
-.c11 {
-  top: 0;
-  left: 0;
-  cursor: text;
-  position: absolute;
-  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  touch-action: manipulation;
-  -webkit-transform: translate3d(0,58%,0);
-  -ms-transform: translate3d(0,58%,0);
-  transform: translate3d(0,58%,0);
-}
-
-.c11::after {
-  content: ' *';
-}
-
-.c58 {
-  pointer-events: none;
-  margin-left: 1.6rem;
-}
-
-.c7 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  box-sizing: border-box;
-  height: 5.6rem;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  cursor: text;
-  padding: 0 1.6rem;
-  border-radius: 0.4rem 0.4rem 0 0;
-  background-color: #eff2f4;
-}
-
-.c7 .c10 {
-  color: #546A7F;
-}
-
-.c7 .sc-fzoNJl,
-.c7 .c57 {
-  color: #546A7F;
-}
-
-.c7 .sc-fzoNJl *,
-.c7 .c57 * {
-  fill: #546A7F;
-}
-
-.c7 ~ .sc-fzqNqU {
-  color: #546A7F;
-}
-
-.c7::after {
-  content: '';
-  width: 100%;
-  height: 0.1rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #546A7F;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c7:hover::after,
-.c7:focus-within::after {
-  height: 0.2rem;
-}
-
-.c7:focus-within,
-.c7:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
-}
-
-.c7:focus-within::after,
-.c7:focus-within:hover::after {
-  background-color: #005AEE;
-}
-
-.c7:focus-within .c10,
-.c7:focus-within:hover .c10 {
-  color: #005AEE;
-}
-
-.c7:focus-within .sc-fzoNJl,
-.c7:focus-within:hover .sc-fzoNJl,
-.c7:focus-within .c57,
-.c7:focus-within:hover .c57 {
-  color: #005AEE;
-}
-
-.c7:focus-within .sc-fzoNJl *,
-.c7:focus-within:hover .sc-fzoNJl *,
-.c7:focus-within .c57 *,
-.c7:focus-within:hover .c57 * {
-  fill: #005AEE;
-}
-
-.c7:focus-within input::-webkit-input-placeholder,
-.c7:focus-within:hover input::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c7:focus-within input::-moz-placeholder,
-.c7:focus-within:hover input::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c7:focus-within input:-ms-input-placeholder,
-.c7:focus-within:hover input:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c7:focus-within input::placeholder,
-.c7:focus-within:hover input::placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  background-color: transparent;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  height: 100%;
-}
-
-.c6 {
-  position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  min-width: 20rem;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c56 {
-  position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  min-width: 20rem;
-  margin: 0.8rem 0;
-}
-
-.c9 {
-  color: #13181D;
-  font-size: 1.6rem;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  line-height: 2.6rem;
-  box-sizing: border-box;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  background: transparent;
-  border: none;
-  text-overflow: ellipsis;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  padding-bottom: 0.7rem;
-}
-
-.c9:focus {
-  outline: none;
-}
-
-.c9:focus::-webkit-input-placeholder {
-  opacity: 1;
-}
-
-.c9:focus::-moz-placeholder {
-  opacity: 1;
-}
-
-.c9:focus:-ms-input-placeholder {
-  opacity: 1;
-}
-
-.c9:focus::placeholder {
-  opacity: 1;
-}
-
-.c9::-webkit-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c9::-moz-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c9:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c9::placeholder {
-  opacity: 0;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c9:not(:placeholder-shown) + .c10,
-.c9:focus + .c10 {
-  -webkit-transform: translate3d(0,20%,0) scale(0.75);
-  -ms-transform: translate3d(0,20%,0) scale(0.75);
-  transform: translate3d(0,20%,0) scale(0.75);
-}
-
-.c55 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c55 .c5 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c55 .c5 label {
-  pointer-events: none;
-}
-
-.c55 .c5 div,
-.c55 .c5 input,
-.c55 .c5 label {
-  cursor: pointer;
-}
-
-.c55 .c5 .c57 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c55 .c5 .c57 * {
-  -webkit-transition: fill 100ms ease-out;
-  transition: fill 100ms ease-out;
-}
-
-.c55 .c5:not(:focus-within):hover .c57 * {
-  fill: #13181D;
-}
-
-.c16 {
-  color: #13181D;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
-  cursor: default;
-}
-
-.c16::after {
-  color: red;
-  content: ' *';
-}
-
-.c41 {
-  color: #13181D;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
-  cursor: default;
-}
-
-.c17 {
-  grid-area: label;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c21 {
-  grid-area: description;
-  margin: 5px 0 0 2px;
-  color: #012040;
-}
-
-.c15 {
-  margin: 0.8rem 0.8rem 0.8rem 0;
-  display: inline-grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
-  grid-template-areas: 'label field' 'random description';
-}
-
-.c15 .sc-fzoKki {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c43 {
-  margin: 0.8rem 0;
-  display: grid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  grid-template-areas: 'label' 'field' 'description';
-  grid-template-columns: auto;
-  grid-template-areas: 'field' 'description';
-}
-
-.c43 .sc-fzoKki {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
-  align-items: flex-start;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c42 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: relative;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-}
-
-.c42 .sc-fznMnq {
-  top: calc(100% + 5px);
-  left: 0%;
-}
-
-.c59 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: relative;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-}
-
-.c59 .sc-fznMnq {
-  top: calc(100% + 5px);
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-}
-
-.c44 {
-  grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: 0px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-clip: padding-box;
-  box-sizing: border-box;
-  border: 1px solid #b0bcc8;
-  border-radius: 5px;
-  overflow: hidden;
-  width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.c44.c44.c44 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c44:focus-within {
-  border-color: #012040;
-}
-
-.c44 > * {
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  padding: 0.8rem;
-  color: #435465;
-}
-
-.c45 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  outline: 0;
-  border: 0;
-  width: calc(100% - 16px);
-  cursor: inherit;
-  background-color: #ffffff;
-}
-
-.c45::-webkit-input-placeholder {
-  color: #98A7B7;
-}
-
-.c45::-moz-placeholder {
-  color: #98A7B7;
-}
-
-.c45:-ms-input-placeholder {
-  color: #98A7B7;
-}
-
-.c45::placeholder {
-  color: #98A7B7;
-}
-
-.c45::-webkit-file-upload-button {
-  visibility: hidden;
-}
-
-.c46 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: inherit;
-}
-
-.c52 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c54 {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: unset;
-  left: 0;
-  top: unset;
-  right: unset;
-}
-
-.c50 {
-  display: block;
-  position: relative;
-  border: 1px solid #BCBEC0;
-  background: #ffffff;
-  border-radius: 2px;
-  margin: 0;
-}
-
-.c51 {
-  border: 0;
-  padding: 0 44px;
-  width: 100%;
-  min-height: 46px;
-  background: #ffffff;
-  font-family: Montserrat,sans-serif;
-  color: #001217;
-  font-size: 14px;
-  font-weight: 600;
-  box-shadow: none;
-  cursor: pointer;
-  box-sizing: border-box;
-  outline: 0;
-}
-
-.c51::-webkit-input-placeholder {
-  font-weight: 500;
-  color: #929598;
-}
-
-.c51::-moz-placeholder {
-  font-weight: 500;
-  color: #929598;
-}
-
-.c51:-moz-placeholder {
-  font-weight: 500;
-  color: #929598;
-}
-
-.c48 {
-  box-sizing: border-box;
-  position: relative;
-}
-
-.c53 {
-  color: #BCBEC0;
-  opacity: 1;
-}
-
-.c49 {
-  display: grid;
-  grid-template-columns: 194px 39px 194px;
-  grid-template-rows: unset;
-  background: transparent;
-  border: 0;
-  border-radius: 0;
-}
-
-.c47 > div:first-child div {
-  z-index: 5;
-}
-
-.c47 > div:first-child > div:last-child {
-  top: unset;
-  bottom: unset;
-  left: unset;
-  right: unset;
-  top: calc(100% + 5px);
-  left: 0%;
-}
-
-.c47 > div:first-child > div:first-child {
-  width: 100%;
-  display: inline-grid;
-  grid-template-columns: auto 30px auto;
-  border: 1px solid #b0bcc8;
-  border-radius: 5px;
-  padding: 0.8rem;
-  box-sizing: border-box;
-  text-align: center;
-  background-color: #ffffff;
-  cursor: pointer;
-}
-
-.c47 > div:first-child > div:first-child * {
-  background-color: #ffffff;
-  cursor: pointer;
-}
-
-.c47 > div:first-child > div:first-child label {
-  text-align: center;
-  border: 0;
-}
-
-.c47 > div:first-child > div:first-child label input {
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: center;
-  max-width: 90px;
-  min-height: unset;
-  padding: 0;
-  color: #435465;
-  background-clip: padding-box;
-  box-sizing: border-box;
-}
-
-.c47 > div:first-child > div:first-child label input:disabled {
-  cursor: not-allowed;
-}
-
-.c47 > div:first-child > div:first-child label input:focus {
-  border-color: #012040;
-  outline: 0;
-}
-
-.c47 > div:first-child > div:first-child label input::-webkit-input-placeholder {
-  color: #98A7B7;
-}
-
-.c47 > div:first-child > div:first-child label input::-moz-placeholder {
-  color: #98A7B7;
-}
-
-.c47 > div:first-child > div:first-child label input:-ms-input-placeholder {
-  color: #98A7B7;
-}
-
-.c47 > div:first-child > div:first-child label input::placeholder {
-  color: #98A7B7;
-}
-
-.c47 > div:first-child > div:first-child label input::-webkit-file-upload-button {
-  visibility: hidden;
-}
-
-.c19 {
-  width: 1px;
-  opacity: 0;
-}
-
-.c18 {
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  padding: 0.8rem;
-  color: #435465;
-  background-clip: padding-box;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  border: 1px solid #b0bcc8;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.c18:focus {
-  border-color: #012040;
-  outline: 0;
-}
-
-.c60 {
-  border: 1px solid #C7D0D8;
-  background-color: #ffffff;
-  cursor: pointer;
-  border-radius: 4px;
-  box-sizing: border-box;
-  overflow: hidden;
-  min-width: 150px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  height: auto;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c60 * {
-  cursor: pointer;
-}
-
-.c60 .c14 {
-  margin: 0;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c60 .c14 > * {
-  margin: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.c60:focus-within {
-  border-color: #012040;
-}
-
-.c62 {
-  max-width: 24px;
-  margin-right: 0.4rem;
-}
-
-.c40 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  box-sizing: border-box;
-  border: 0.15rem solid;
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-}
-
-.c38 {
-  position: absolute;
-  opacity: 0;
-  width: 1%;
-  height: 1%;
-  margin: 0;
-}
-
-.c38 ~ .c39 {
-  border-color: #13181D;
-}
-
-.c38:checked ~ .c39 {
-  border-width: calc(1.8rem / 3);
-}
-
-.c38:checked:disabled ~ .c39 {
-  border-color: #dfe4e9;
-}
-
-.c38:not(:checked):disabled ~ .c39 {
-  border-color: #98A7B7;
-}
-
-.c38:not(:disabled):checked ~ .c39 {
-  border-color: #005AEE;
-}
-
-.c38:not(:disabled):focus ~ .c39 {
-  border-color: #005AEE;
-  box-shadow: 0 0 0.8rem #005AEE;
-}
-
-.c37 {
-  margin: 0.3rem;
-  width: 1.8rem;
-  height: 1.8rem;
-  position: relative;
-  border-radius: 100%;
-}
-
-.c36 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  cursor: pointer;
-  padding: 0.8rem 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.c36:hover.c35:hover .c39 {
-  border-color: #1A6BF0;
-}
-
-.c70 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  grid-column: 1/-1;
-  margin-top: 1.6rem;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.c70 > * + * {
+.c69 > * + * {
   margin-left: 1.6rem;
 }
 
@@ -3644,8 +3687,18 @@ exports[`Form should render properly without initial state 1`] = `
   min-width: auto;
 }
 
-.c66 {
+.c65 {
   grid-column: 1/5;
+}
+
+.c65 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c66 {
+  grid-column: 5/9;
 }
 
 .c66 > * {
@@ -3655,7 +3708,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c67 {
-  grid-column: 5/9;
+  grid-column: 9/-1;
 }
 
 .c67 > * {
@@ -3664,22 +3717,12 @@ exports[`Form should render properly without initial state 1`] = `
   min-width: auto;
 }
 
-.c68 {
-  grid-column: 9/-1;
-}
-
-.c68 > * {
-  width: 100%;
-  margin: 0;
-  min-width: auto;
-}
-
-.c64 {
+.c63 {
   grid-column: 1/-1;
   margin-top: 2.6rem;
 }
 
-.c65 {
+.c64 {
   margin-bottom: 1rem;
 }
 
@@ -3823,22 +3866,22 @@ exports[`Form should render properly without initial state 1`] = `
       class="c13"
     >
       <div
-        class="c14 c15"
+        class="c14"
         id="resume-field"
       >
         <label
-          class="c16 c17"
+          class="c15 c16"
           required=""
         >
           Resume
         </label>
         <label
-          class="c18"
+          class="c17"
           id="resume-label"
         >
           Click to choose file
           <input
-            class="c19"
+            class="c18"
             id="resume"
             name="resume"
             required=""
@@ -3846,7 +3889,7 @@ exports[`Form should render properly without initial state 1`] = `
           />
         </label>
         <span
-          class="c1 c20 c21"
+          class="c1 c19 c20"
         >
           File size should be less than 5MB
         </span>
@@ -3857,12 +3900,12 @@ exports[`Form should render properly without initial state 1`] = `
     >
       <div
         aria-describedby="languages-helper-text"
-        class="c22"
+        class="c21"
         id="languages-wrapper"
         name="languages"
       >
         <span
-          class="c1 c23 c24"
+          class="c1 c22 c23"
           id="languages-label"
           required=""
           type="checkbox"
@@ -3870,38 +3913,38 @@ exports[`Form should render properly without initial state 1`] = `
           Languages
         </span>
         <div
-          class="c25"
+          class="c24"
           id="languages-options"
         >
           
           <label
-            class="c26"
+            class="c25"
             for="JAVA-languages"
             id="JAVA-languages-wrapper"
             sizes="[object Object]"
           >
             <span
-              class="c1 c20 c27"
+              class="c1 c19 c26"
               id="JAVA-languages-label"
               type="checkbox"
             >
               JAVA
             </span>
             <div
-              class="c28"
+              class="c27"
             >
               <input
-                class="c29"
+                class="c28"
                 id="JAVA-languages"
                 name="java"
                 sizes="[object Object]"
                 type="checkbox"
               />
               <div
-                class="c30 c31"
+                class="c29 c30"
               >
                 <svg
-                  class="c32 c33"
+                  class="c31 c32"
                   fill="none"
                   height="1em"
                   viewBox="0 0 24 24"
@@ -3918,33 +3961,33 @@ exports[`Form should render properly without initial state 1`] = `
           </label>
           
           <label
-            class="c26"
+            class="c25"
             for="RUBY-languages"
             id="RUBY-languages-wrapper"
             sizes="[object Object]"
           >
             <span
-              class="c1 c20 c27"
+              class="c1 c19 c26"
               id="RUBY-languages-label"
               type="checkbox"
             >
               RUBY
             </span>
             <div
-              class="c28"
+              class="c27"
             >
               <input
-                class="c29"
+                class="c28"
                 id="RUBY-languages"
                 name="ruby"
                 sizes="[object Object]"
                 type="checkbox"
               />
               <div
-                class="c30 c31"
+                class="c29 c30"
               >
                 <svg
-                  class="c32 c33"
+                  class="c31 c32"
                   fill="none"
                   height="1em"
                   viewBox="0 0 24 24"
@@ -3967,11 +4010,11 @@ exports[`Form should render properly without initial state 1`] = `
     >
       <div
         aria-describedby="role-helper-text"
-        class="c34"
+        class="c33"
         id="role-wrapper"
       >
         <span
-          class="c1 c23 c24"
+          class="c1 c22 c23"
           id="role-label"
           required=""
           type="radio"
@@ -3979,27 +4022,27 @@ exports[`Form should render properly without initial state 1`] = `
           Role
         </span>
         <div
-          class="c25"
+          class="c24"
           id="role-options"
         >
           <label
-            class="c35 c36"
+            class="c34 c35"
             for="Front End-role"
             id="Front End-role-wrapper"
             sizes="[object Object]"
           >
             <span
-              class="c1 c20 c27"
+              class="c1 c19 c26"
               id="Front End-role-label"
               type="radio"
             >
               Front End
             </span>
             <div
-              class="c37"
+              class="c36"
             >
               <input
-                class="c38"
+                class="c37"
                 id="Front End-role"
                 name="role"
                 required=""
@@ -4008,28 +4051,28 @@ exports[`Form should render properly without initial state 1`] = `
                 value="front-end"
               />
               <div
-                class="c39 c40"
+                class="c38 c39"
               />
             </div>
           </label>
           <label
-            class="c35 c36"
+            class="c34 c35"
             for="Back End-role"
             id="Back End-role-wrapper"
             sizes="[object Object]"
           >
             <span
-              class="c1 c20 c27"
+              class="c1 c19 c26"
               id="Back End-role-label"
               type="radio"
             >
               Back End
             </span>
             <div
-              class="c37"
+              class="c36"
             >
               <input
-                class="c38"
+                class="c37"
                 id="Back End-role"
                 name="role"
                 required=""
@@ -4038,28 +4081,28 @@ exports[`Form should render properly without initial state 1`] = `
                 value="back-end"
               />
               <div
-                class="c39 c40"
+                class="c38 c39"
               />
             </div>
           </label>
           <label
-            class="c35 c36"
+            class="c34 c35"
             for="Full Stack-role"
             id="Full Stack-role-wrapper"
             sizes="[object Object]"
           >
             <span
-              class="c1 c20 c27"
+              class="c1 c19 c26"
               id="Full Stack-role-label"
               type="radio"
             >
               Full Stack
             </span>
             <div
-              class="c37"
+              class="c36"
             >
               <input
-                class="c38"
+                class="c37"
                 id="Full Stack-role"
                 name="role"
                 required=""
@@ -4068,7 +4111,7 @@ exports[`Form should render properly without initial state 1`] = `
                 value="full-stack"
               />
               <div
-                class="c39 c40"
+                class="c38 c39"
               />
             </div>
           </label>
@@ -4079,30 +4122,30 @@ exports[`Form should render properly without initial state 1`] = `
       class="c13"
     >
       <div
-        class="c14 c15"
+        class="c14"
         id="birthDate"
       >
         <label
-          class="c41 c17"
+          class="c40 c16"
           for="birthDate"
         >
           Birth Date
         </label>
         <div
-          class="c42"
+          class="c41"
           id="medly-popover-wrapper"
         >
           <div
-            class="c14 c43"
+            class="c42"
             id="birthDate-input-field"
           >
             
             <div
-              class="sc-fzoKki c44"
+              class="sc-fzoKki c43"
             >
               <input
                 autocomplete="off"
-                class="c45 c46"
+                class="c44 c45"
                 id="birthDate-input"
                 name="birthDate"
                 placeholder="Birth Date"
@@ -4119,34 +4162,34 @@ exports[`Form should render properly without initial state 1`] = `
       class="c13"
     >
       <div
-        class="c14 c15"
+        class="c14"
       >
         <label
-          class="c41 c17"
+          class="c40 c16"
           for="Experience"
         >
           Experience
         </label>
         <div
-          class="c47"
+          class="c46"
           data-testid="react-datepicker"
         >
           <div
-            class="c48"
+            class="c47"
           >
             <div
-              class="sc-fzoaKM c49"
+              class="sc-fzoaKM c48"
               data-testid="DateRangeInputGrid"
             >
               <label
-                class="c50"
+                class="c49"
                 display="block"
                 for="startDate"
               >
                 <input
                   aria-label="Start date"
                   autocomplete="off"
-                  class="c51"
+                  class="c50"
                   color="#001217"
                   data-testid="DatepickerInput"
                   font-family="Montserrat, sans-serif"
@@ -4160,10 +4203,10 @@ exports[`Form should render properly without initial state 1`] = `
                 />
               </label>
               <div
-                class="c52"
+                class="c51"
               >
                 <svg
-                  class="c53"
+                  class="c52"
                   height="12px"
                   transform="rotate(90 0 0)"
                   viewBox="0 0 9 12"
@@ -4177,14 +4220,14 @@ exports[`Form should render properly without initial state 1`] = `
                 </svg>
               </div>
               <label
-                class="c50"
+                class="c49"
                 display="block"
                 for="endDate"
               >
                 <input
                   aria-label="End date"
                   autocomplete="off"
-                  class="c51"
+                  class="c50"
                   color="#001217"
                   data-testid="DatepickerInput"
                   font-family="Montserrat, sans-serif"
@@ -4199,7 +4242,7 @@ exports[`Form should render properly without initial state 1`] = `
               </label>
             </div>
             <div
-              class="c54"
+              class="c53"
             />
           </div>
         </div>
@@ -4209,10 +4252,11 @@ exports[`Form should render properly without initial state 1`] = `
       class="c13"
     >
       <div
-        class="c55"
+        class="c54"
+        id="country-wrapper"
       >
         <div
-          class="c5 c56"
+          class="c5 c55"
         >
           <div
             class="c7"
@@ -4240,7 +4284,7 @@ exports[`Form should render properly without initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c32 c33 c57 c58"
+              class="c31 c32 c56 c57"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -4261,74 +4305,92 @@ exports[`Form should render properly without initial state 1`] = `
       class="c13"
     >
       <div
-        class="c14 c15"
-        id="graduation-field"
+        class="c58"
+        id="graduation-wrapper"
       >
-        <label
-          class="c41 c17"
-          for="graduation"
-        >
-          Graduation
-        </label>
         <div
-          class="c59"
-          id="medly-popover-wrapper"
+          class="c5 c55"
         >
           <div
-            class="c60"
-            id="graduation-container"
+            class="c7"
           >
             <div
-              class="c14 c43"
-              id="graduation-input-field"
+              class="c8"
             >
-              
-              <div
-                class="sc-fzoKki c44"
-              >
-                <input
-                  autocomplete="off"
-                  class="c45"
-                  id="graduation-input"
-                  placeholder="Please Select . . ."
-                  type="text"
-                  value=""
-                />
-              </div>
-              
-            </div>
-            <svg
-              class="c32 c61 c62"
-              fill="none"
-              height="1em"
-              theme="[object Object]"
-              viewBox="0 0 24 24"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M15.875 9l-3.88 3.88L8.115 9a.996.996 0 1 0-1.41 1.41l4.59 4.59c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41c-.39-.38-1.03-.39-1.42 0z"
-                fill="#000"
-                fill-opacity=".54"
+              <input
+                aria-describedby="graduation-helper-text"
+                autocomplete="off"
+                class="c9"
+                id="graduation-input"
+                name="graduation"
+                placeholder="Please Select . . ."
+                type="text"
+                value=""
               />
-            </svg>
+              <label
+                class="c10 c59"
+                for="graduation-input"
+              >
+                Graduation
+              </label>
+            </div>
+            <div>
+              <button
+                class="c60"
+              >
+                <span
+                  class="c1 c19"
+                >
+                  <strong>
+                    2
+                  </strong>
+                </span>
+                <svg
+                  class="c31 c61"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+                    fill="#000"
+                    fill-opacity=".54"
+                  />
+                </svg>
+              </button>
+              <svg
+                class="c31 c32"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                  fill="#000"
+                />
+              </svg>
+            </div>
           </div>
+          
         </div>
-        
       </div>
     </div>
     <h4
-      class="c1 c63 c64"
+      class="c1 c62 c63"
     >
       Marks
     </h4>
     <span
-      class="c1 c20 c65"
+      class="c1 c19 c64"
     >
       Marks Information
     </span>
     <div
-      class="c66"
+      class="c65"
     >
       <div
         class="c5 c6"
@@ -4362,7 +4424,7 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <div
-      class="c67"
+      class="c66"
     >
       <div
         class="c5 c6"
@@ -4396,7 +4458,7 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <div
-      class="c68"
+      class="c67"
     >
       <div
         class="c5 c6"
@@ -4434,33 +4496,33 @@ exports[`Form should render properly without initial state 1`] = `
     >
       
       <label
-        class="c69"
+        class="c68"
         for="agree"
         id="agree-wrapper"
         sizes="[object Object]"
       >
         <span
-          class="c1 c20 c27"
+          class="c1 c19 c26"
           id="agree-label"
           type="checkbox"
         >
           Do you Agree
         </span>
         <div
-          class="c28"
+          class="c27"
         >
           <input
-            class="c29"
+            class="c28"
             id="agree"
             name="agree"
             sizes="[object Object]"
             type="checkbox"
           />
           <div
-            class="c30 c31"
+            class="c29 c30"
           >
             <svg
-              class="c32 c33"
+              class="c31 c32"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -4477,16 +4539,16 @@ exports[`Form should render properly without initial state 1`] = `
       </label>
     </div>
     <div
-      class="c70"
+      class="c69"
     >
       <button
-        class="c71"
+        class="c70"
         color="default"
         form="medly-dynamic-form"
         type="submit"
       >
         <span
-          class="c1 c23"
+          class="c1 c22"
         >
           Upload
         </span>

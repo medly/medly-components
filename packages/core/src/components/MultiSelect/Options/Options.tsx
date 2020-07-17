@@ -3,6 +3,7 @@ import React, { useCallback, useMemo } from 'react';
 import Checkbox from '../../Checkbox';
 import CheckboxGroup from '../../CheckboxGroup';
 import Text from '../../Text';
+import { Chip } from '../Chip/Chip';
 import { Option } from '../types';
 import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
@@ -32,6 +33,11 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
 
     return (
         <Styled.Options onClick={stopPropagation}>
+            <Styled.ChipArea>
+                {selectedValues.map((value, index) => {
+                    return <Chip key={index} label={value} />;
+                })}
+            </Styled.ChipArea>
             {props.options.map((op, index) => (
                 <React.Fragment key={index}>
                     {props.showCheckbox && !Array.isArray(op.value) && (

@@ -4,7 +4,7 @@ import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 're
 import TextField from '../TextField';
 import { Chip } from './Chip/Chip';
 import { filterOptions, getDefaultSelectedOptions } from './helpers';
-import { Wrapper } from './MultiSelect.styled';
+import { SuffixWrap, Wrapper } from './MultiSelect.styled';
 import Options from './Options';
 import { SelectProps } from './types';
 
@@ -70,7 +70,19 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                     updateToDefaultOptions();
                 }
             }, [areOptionsVisible]),
-            handleKeyPress = useCallback((event: React.KeyboardEvent) => !isSearchable && event.preventDefault(), [isSearchable]);
+            handleKeyPress = useCallback((event: React.KeyboardEvent) => !isSearchable && event.preventDefault(), [isSearchable]),
+            getState = useCallback(() => {
+                if (props.disabled) {
+                    return 'disabled';
+                }
+                if (props.errorText) {
+                    return 'error';
+                }
+                if (areOptionsVisible) {
+                    return 'active';
+                }
+                return 'default';
+            }, [areOptionsVisible, props.errorText, props.disabled]);
 
         useEffect(() => {
             setSelectedOptions(getDefaultSelectedOptions(defaultOptions, values));
@@ -87,10 +99,10 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
 
         const chipEl = () => {
             return (
-                <div>
-                    <Chip label="2" onClear={() => {}} />
+                <SuffixWrap>
+                    <Chip label="2" state={getState()} variant={variant} onClear={() => {}} />
                     <ChevronDownIcon />
-                </div>
+                </SuffixWrap>
             );
         };
 
@@ -137,7 +149,7 @@ MultiSelect.displayName = 'MultiSelect';
 MultiSelect.Style = Wrapper;
 MultiSelect.defaultProps = {
     values: [],
-    variant: 'filled',
+    variant: 'outlined',
     showChips: true,
     showCheckbox: true,
     isSearchable: true,

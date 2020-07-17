@@ -12,6 +12,7 @@ import input from './input';
 import label from './label';
 import link from './link';
 import modal from './modal';
+import multiSelect from './multiSelect';
 import radio from './radio';
 import reactDatepicker from './reactDatepicker';
 import searchBox from './searchBox';
@@ -39,6 +40,7 @@ export const coreDefaultTheme = {
     label,
     link,
     modal,
+    multiSelect,
     radio,
     reactDatepicker,
     searchBox,

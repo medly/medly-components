@@ -1,9 +1,42 @@
-import { styled } from '@medly-components/utils';
+import { ChevronDownIcon } from '@medly-components/icons/src';
+import { css, styled } from '@medly-components/utils';
 import TextField from '../TextField';
 import { Suffix } from '../TextField/Styled';
 import { SelectWrapperProps } from './types';
 
-export const Wrapper = styled('div')<SelectWrapperProps>`
+const getDefaultStyle = ({ theme }: SelectWrapperProps) => {
+    return css`
+        ${TextField.Style} {
+            input {
+                &:focus {
+                    &::placeholder {
+                        color: ${theme.colors.black};
+                    }
+                }
+            }
+        }
+        ${ChevronDownIcon.Style} {
+            * {
+                fill: ${theme.colors.black};
+            }
+        }
+    `;
+};
+
+// const getActiveStyle = () => {};
+
+const getErrorStyle = ({ theme }: SelectWrapperProps) => {
+    return css``;
+};
+
+// const getDisabledStyle = () => {};
+
+export const SuffixWrap = styled.div`
+    display: flex;
+    align-items: center;
+`;
+
+export const Wrapper = styled.div<SelectWrapperProps>`
     position: relative;
     display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
     min-width: ${({ minWidth }) => minWidth || 'max-content'};
@@ -45,4 +78,7 @@ export const Wrapper = styled('div')<SelectWrapperProps>`
             }
         }
     }
+
+    ${getDefaultStyle};
+    ${({ isErrorPresent }) => isErrorPresent && getErrorStyle};
 `;

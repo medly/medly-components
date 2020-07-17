@@ -1,7 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MultiSelect component with checkbox false should render correctly with all the props given 1`] = `
-.c8 {
+.c12 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.0rem;
+  cursor: pointer;
+}
+
+.c12 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c13 {
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -9,7 +22,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   cursor: inherit;
 }
 
-.c8 * {
+.c13 * {
   fill-opacity: 1;
   fill: #607890;
 }
@@ -34,11 +47,6 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -webkit-transform: translate3d(0,58%,0);
   -ms-transform: translate3d(0,58%,0);
   transform: translate3d(0,58%,0);
-}
-
-.c10 {
-  pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c3 {
@@ -68,21 +76,21 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c3 .c6 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb,
-.c3 .c9 {
-  color: #566c82;
+.c3 .c14 {
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb *,
-.c3 .c9 * {
-  fill: #566c82;
+.c3 .c14 * {
+  fill: #546A7F;
 }
 
 .c3 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3::after {
@@ -92,7 +100,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -121,12 +129,12 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c3 .sc-AxhCb,
-.c3 .c9 {
+.c3 .c14 {
   color: #b0bcc8;
 }
 
 .c3 .sc-AxhCb *,
-.c3 .c9 * {
+.c3 .c14 * {
   fill: #b0bcc8;
 }
 
@@ -239,6 +247,64 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   transform: translate3d(0,20%,0) scale(0.75);
 }
 
+.c10 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c8 {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  cursor: default;
+  border: 1px solid #607890;
+  background-color: #607890;
+  color: #ffffff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8:focus {
+  outline: none;
+}
+
+.c8 .c11 * {
+  fill: #ffffff;
+}
+
+.c8 .c9 + .c11 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
 .c0 {
   position: relative;
   display: -webkit-box;
@@ -258,7 +324,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   pointer-events: none;
 }
 
-.c0 .c1 .c9 {
+.c0 .c1 .c14 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -267,7 +333,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   transform: rotate(0deg);
 }
 
-.c0 .c1 .c9 * {
+.c0 .c1 .c14 * {
   -webkit-transition: fill 100ms ease-out;
   transition: fill 100ms ease-out;
 }
@@ -305,28 +371,68 @@ exports[`MultiSelect component with checkbox false should render correctly with 
             Pharmacy
           </label>
         </div>
-        <svg
-          class="c8 c9 c10"
-          fill="none"
-          height="1em"
-          viewBox="0 0 24 24"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
-            fill="#000"
-          />
-        </svg>
+        <div>
+          <button
+            class="c8"
+          >
+            <span
+              class="c9 c10"
+            >
+              <strong>
+                2
+              </strong>
+            </span>
+            <svg
+              class="c11 c12"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+                fill="#000"
+                fill-opacity=".54"
+              />
+            </svg>
+          </button>
+          <svg
+            class="c11 c13"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
+        </div>
       </div>
-
+      
     </div>
   </div>
 </div>
 `;
 
 exports[`MultiSelect component with checkbox false should render correctly with default props 1`] = `
-.c8 {
+.c12 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.0rem;
+  cursor: pointer;
+}
+
+.c12 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c13 {
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -334,7 +440,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   cursor: inherit;
 }
 
-.c8 * {
+.c13 * {
   fill-opacity: 1;
   fill: #607890;
 }
@@ -361,11 +467,6 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   transform: translate3d(0,58%,0);
 }
 
-.c10 {
-  pointer-events: none;
-  margin-left: 1.6rem;
-}
-
 .c3 {
   position: relative;
   display: -webkit-box;
@@ -390,21 +491,21 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c3 .c6 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb,
-.c3 .c9 {
-  color: #566c82;
+.c3 .c14 {
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb *,
-.c3 .c9 * {
-  fill: #566c82;
+.c3 .c14 * {
+  fill: #546A7F;
 }
 
 .c3 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3::after {
@@ -414,7 +515,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -442,15 +543,15 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 .c3:focus-within .sc-AxhCb,
 .c3:focus-within:hover .sc-AxhCb,
-.c3:focus-within .c9,
-.c3:focus-within:hover .c9 {
+.c3:focus-within .c14,
+.c3:focus-within:hover .c14 {
   color: #005AEE;
 }
 
 .c3:focus-within .sc-AxhCb *,
 .c3:focus-within:hover .sc-AxhCb *,
-.c3:focus-within .c9 *,
-.c3:focus-within:hover .c9 * {
+.c3:focus-within .c14 *,
+.c3:focus-within:hover .c14 * {
   fill: #005AEE;
 }
 
@@ -571,6 +672,64 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   transform: translate3d(0,20%,0) scale(0.75);
 }
 
+.c10 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c8 {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  cursor: default;
+  border: 1px solid #607890;
+  background-color: #607890;
+  color: #ffffff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8:focus {
+  outline: none;
+}
+
+.c8 .c11 * {
+  fill: #ffffff;
+}
+
+.c8 .c9 + .c11 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
 .c0 {
   position: relative;
   display: -webkit-inline-box;
@@ -604,7 +763,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   cursor: text;
 }
 
-.c0 .c1 .c9 {
+.c0 .c1 .c14 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -613,12 +772,12 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   transform: rotate(0deg);
 }
 
-.c0 .c1 .c9 * {
+.c0 .c1 .c14 * {
   -webkit-transition: fill 100ms ease-out;
   transition: fill 100ms ease-out;
 }
 
-.c0 .c1:not(:focus-within):hover .c9 * {
+.c0 .c1:not(:focus-within):hover .c14 * {
   fill: #13181D;
 }
 
@@ -650,28 +809,68 @@ exports[`MultiSelect component with checkbox false should render correctly with 
             for="medly-multiSelect-input"
           />
         </div>
-        <svg
-          class="c8 c9 c10"
-          fill="none"
-          height="1em"
-          viewBox="0 0 24 24"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
-            fill="#000"
-          />
-        </svg>
+        <div>
+          <button
+            class="c8"
+          >
+            <span
+              class="c9 c10"
+            >
+              <strong>
+                2
+              </strong>
+            </span>
+            <svg
+              class="c11 c12"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+                fill="#000"
+                fill-opacity=".54"
+              />
+            </svg>
+          </button>
+          <svg
+            class="c11 c13"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
+        </div>
       </div>
-
+      
     </div>
   </div>
 </div>
 `;
 
 exports[`MultiSelect component with checkbox true should render correctly with all the props given 1`] = `
-.c8 {
+.c12 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.0rem;
+  cursor: pointer;
+}
+
+.c12 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c13 {
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -679,7 +878,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   cursor: inherit;
 }
 
-.c8 * {
+.c13 * {
   fill-opacity: 1;
   fill: #607890;
 }
@@ -704,11 +903,6 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   -webkit-transform: translate3d(0,58%,0);
   -ms-transform: translate3d(0,58%,0);
   transform: translate3d(0,58%,0);
-}
-
-.c10 {
-  pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c3 {
@@ -738,21 +932,21 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c3 .c6 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb,
-.c3 .c9 {
-  color: #566c82;
+.c3 .c14 {
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb *,
-.c3 .c9 * {
-  fill: #566c82;
+.c3 .c14 * {
+  fill: #546A7F;
 }
 
 .c3 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3::after {
@@ -762,7 +956,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -791,12 +985,12 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 }
 
 .c3 .sc-AxhCb,
-.c3 .c9 {
+.c3 .c14 {
   color: #b0bcc8;
 }
 
 .c3 .sc-AxhCb *,
-.c3 .c9 * {
+.c3 .c14 * {
   fill: #b0bcc8;
 }
 
@@ -909,6 +1103,64 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   transform: translate3d(0,20%,0) scale(0.75);
 }
 
+.c10 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c8 {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  cursor: default;
+  border: 1px solid #607890;
+  background-color: #607890;
+  color: #ffffff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8:focus {
+  outline: none;
+}
+
+.c8 .c11 * {
+  fill: #ffffff;
+}
+
+.c8 .c9 + .c11 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
 .c0 {
   position: relative;
   display: -webkit-box;
@@ -928,7 +1180,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   pointer-events: none;
 }
 
-.c0 .c1 .c9 {
+.c0 .c1 .c14 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -937,7 +1189,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   transform: rotate(0deg);
 }
 
-.c0 .c1 .c9 * {
+.c0 .c1 .c14 * {
   -webkit-transition: fill 100ms ease-out;
   transition: fill 100ms ease-out;
 }
@@ -975,28 +1227,68 @@ exports[`MultiSelect component with checkbox true should render correctly with a
             Pharmacy
           </label>
         </div>
-        <svg
-          class="c8 c9 c10"
-          fill="none"
-          height="1em"
-          viewBox="0 0 24 24"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
-            fill="#000"
-          />
-        </svg>
+        <div>
+          <button
+            class="c8"
+          >
+            <span
+              class="c9 c10"
+            >
+              <strong>
+                2
+              </strong>
+            </span>
+            <svg
+              class="c11 c12"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+                fill="#000"
+                fill-opacity=".54"
+              />
+            </svg>
+          </button>
+          <svg
+            class="c11 c13"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
+        </div>
       </div>
-
+      
     </div>
   </div>
 </div>
 `;
 
 exports[`MultiSelect component with checkbox true should render correctly with default props 1`] = `
-.c8 {
+.c12 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.0rem;
+  cursor: pointer;
+}
+
+.c12 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c13 {
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -1004,7 +1296,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   cursor: inherit;
 }
 
-.c8 * {
+.c13 * {
   fill-opacity: 1;
   fill: #607890;
 }
@@ -1031,11 +1323,6 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   transform: translate3d(0,58%,0);
 }
 
-.c10 {
-  pointer-events: none;
-  margin-left: 1.6rem;
-}
-
 .c3 {
   position: relative;
   display: -webkit-box;
@@ -1060,21 +1347,21 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c3 .c6 {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb,
-.c3 .c9 {
-  color: #566c82;
+.c3 .c14 {
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb *,
-.c3 .c9 * {
-  fill: #566c82;
+.c3 .c14 * {
+  fill: #546A7F;
 }
 
 .c3 ~ .sc-AxirZ {
-  color: #566c82;
+  color: #546A7F;
 }
 
 .c3::after {
@@ -1084,7 +1371,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #566c82;
+  background-color: #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1112,15 +1399,15 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 
 .c3:focus-within .sc-AxhCb,
 .c3:focus-within:hover .sc-AxhCb,
-.c3:focus-within .c9,
-.c3:focus-within:hover .c9 {
+.c3:focus-within .c14,
+.c3:focus-within:hover .c14 {
   color: #005AEE;
 }
 
 .c3:focus-within .sc-AxhCb *,
 .c3:focus-within:hover .sc-AxhCb *,
-.c3:focus-within .c9 *,
-.c3:focus-within:hover .c9 * {
+.c3:focus-within .c14 *,
+.c3:focus-within:hover .c14 * {
   fill: #005AEE;
 }
 
@@ -1241,6 +1528,64 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   transform: translate3d(0,20%,0) scale(0.75);
 }
 
+.c10 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c8 {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  cursor: default;
+  border: 1px solid #607890;
+  background-color: #607890;
+  color: #ffffff;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8:focus {
+  outline: none;
+}
+
+.c8 .c11 * {
+  fill: #ffffff;
+}
+
+.c8 .c9 + .c11 {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
 .c0 {
   position: relative;
   display: -webkit-inline-box;
@@ -1274,7 +1619,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   cursor: text;
 }
 
-.c0 .c1 .c9 {
+.c0 .c1 .c14 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -1283,12 +1628,12 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   transform: rotate(0deg);
 }
 
-.c0 .c1 .c9 * {
+.c0 .c1 .c14 * {
   -webkit-transition: fill 100ms ease-out;
   transition: fill 100ms ease-out;
 }
 
-.c0 .c1:not(:focus-within):hover .c9 * {
+.c0 .c1:not(:focus-within):hover .c14 * {
   fill: #13181D;
 }
 
@@ -1320,21 +1665,48 @@ exports[`MultiSelect component with checkbox true should render correctly with d
             for="medly-multiSelect-input"
           />
         </div>
-        <svg
-          class="c8 c9 c10"
-          fill="none"
-          height="1em"
-          viewBox="0 0 24 24"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
-            fill="#000"
-          />
-        </svg>
+        <div>
+          <button
+            class="c8"
+          >
+            <span
+              class="c9 c10"
+            >
+              <strong>
+                2
+              </strong>
+            </span>
+            <svg
+              class="c11 c12"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+                fill="#000"
+                fill-opacity=".54"
+              />
+            </svg>
+          </button>
+          <svg
+            class="c11 c13"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+              fill="#000"
+            />
+          </svg>
+        </div>
       </div>
-
+      
     </div>
   </div>
 </div>

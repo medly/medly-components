@@ -19,10 +19,8 @@ export const Chip: SFC<Props> & WithStyle = React.memo(
 
         return (
             <Styled.Chip ref={ref} {...restProps}>
-                <Text>
-                    <strong>{label}</strong>
-                </Text>
-                {onClear && <ClearIcon size="S" onClick={onClearHandler} />}
+                <Text>{label}</Text>
+                <ClearIcon size="S" onClick={onClearHandler} />
             </Styled.Chip>
         );
     })
@@ -30,3 +28,7 @@ export const Chip: SFC<Props> & WithStyle = React.memo(
 
 Chip.displayName = 'Chip';
 Chip.Style = Styled.Chip;
+Chip.defaultProps = {
+    variant: 'outlined',
+    state: 'default'
+};
