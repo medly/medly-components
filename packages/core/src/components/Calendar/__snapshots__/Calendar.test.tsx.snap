@@ -64,7 +64,7 @@ exports[`Calendar Component should render given date 1`] = `
   transition: all 100ms ease-out;
   padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 0.8rem;
-  background: transparent;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -103,7 +103,6 @@ exports[`Calendar Component should render given date 1`] = `
   width: 0;
   bottom: 1.05rem;
   left: 50%;
-  background: #1A6BF0;
   height: 0.15rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -114,30 +113,58 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c2:disabled {
-  color: #b0bcc8;
+  color: #98A7B7;
+}
+
+.c2:disabled::after {
+  background-color: #98A7B7;
 }
 
 .c2:disabled .c15 * {
-  fill: #b0bcc8;
+  fill: #98A7B7;
 }
 
 .c2:not(:disabled):not(:hover) {
-  color: #005AEE;
+  color: #126AFA;
+}
+
+.c2:not(:disabled):not(:hover)::after {
+  background-color: #126AFA;
 }
 
 .c2:not(:disabled):not(:hover) .c15 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
-.c2:not(:disabled):hover {
-  color: #1A6BF0;
+.c2:not(:disabled):active {
+  color: #0D4AAF;
 }
 
-.c2:not(:disabled):hover .c15 * {
-  fill: #1A6BF0;
+.c2:not(:disabled):active::after {
+  background-color: #0D4AAF;
 }
 
-.c2:not(:disabled):hover::after {
+.c2:not(:disabled):active .c15 * {
+  fill: #0D4AAF;
+}
+
+.c2:not(:disabled):active::after {
+  width: calc(100% - 4.8rem);
+}
+
+.c2:not(:disabled):not(:active):hover {
+  color: #0F5AD5;
+}
+
+.c2:not(:disabled):not(:active):hover::after {
+  background-color: #0F5AD5;
+}
+
+.c2:not(:disabled):not(:active):hover .c15 * {
+  fill: #0F5AD5;
+}
+
+.c2:not(:disabled):not(:active):hover::after {
   width: calc(100% - 4.8rem);
 }
 
@@ -221,10 +248,10 @@ exports[`Calendar Component should render given date 1`] = `
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -250,48 +277,48 @@ exports[`Calendar Component should render given date 1`] = `
 .c10::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c10:hover::after,
 .c10:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c10:focus-within,
 .c10:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c10:focus-within::after,
 .c10:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c10:focus-within .c13,
 .c10:focus-within:hover .c13 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c10:focus-within .sc-AxheI,
 .c10:focus-within:hover .sc-AxheI,
 .c10:focus-within .c17,
 .c10:focus-within:hover .c17 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c10:focus-within .sc-AxheI *,
 .c10:focus-within:hover .sc-AxheI *,
 .c10:focus-within .c17 *,
 .c10:focus-within:hover .c17 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c10:focus-within input::-webkit-input-placeholder,
@@ -563,7 +590,7 @@ exports[`Calendar Component should render given date 1`] = `
   text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
-  background-color: #F38037;
+  background-color: #126AFA;
   color: #ffffff;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -629,7 +656,6 @@ exports[`Calendar Component should render given date 1`] = `
     >
       <button
         class="c2"
-        color="default"
         type="button"
       >
         <span
@@ -645,7 +671,6 @@ exports[`Calendar Component should render given date 1`] = `
       </h3>
       <button
         class="c2"
-        color="default"
         type="button"
       >
         <span

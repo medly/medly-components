@@ -5,8 +5,8 @@ const cardTable: CardTableTheme = {
     disabledRowBgColor: colors.grey[100],
     lightBackground: {
         headerColor: colors.grey[600],
-        headerActiveColor: colors.communityBlue[500],
-        headerHoverColor: colors.communityBlue[400],
+        headerActiveColor: colors.blue[500],
+        headerHoverColor: colors.blue[400],
         evenRowBgColor: colors.white,
         oddRowBgColor: colors.grey[50],
         borderColor: colors.grey[200],
@@ -15,8 +15,8 @@ const cardTable: CardTableTheme = {
     },
     darkBackground: {
         headerColor: colors.grey[800],
-        headerActiveColor: colors.communityBlue[500],
-        headerHoverColor: colors.communityBlue[400],
+        headerActiveColor: colors.blue[500],
+        headerHoverColor: colors.blue[400],
         evenRowBgColor: colors.white,
         oddRowBgColor: colors.white,
         borderColor: colors.white,

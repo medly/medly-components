@@ -1,10 +1,10 @@
 import { WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useMemo } from 'react';
+import Text from '../../Text';
 import Cell from './Cell';
 import Row from './Row';
-import { Props } from './types';
 import { NoResult } from './Row/Row.styled';
-import Text from '../../Text';
+import { Props } from './types';
 
 
 export const Body: FC<Props> & WithStyle = React.memo(props => {
@@ -43,6 +43,7 @@ export const Body: FC<Props> & WithStyle = React.memo(props => {
                             data={row[column.field]}
                             column={column}
                             rowId={row[uniqueKeyName]}
+                            rowData={row}
                         />
                     ))}
                 </Row>

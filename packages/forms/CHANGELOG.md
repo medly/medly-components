@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.3.1...@medly-components/forms@1.4.0) (2020-07-16)
+
+
+### Bug Fixes
+
+* fix form submission issue when validator prop is provided to TextField component ([0d395b1](https://github.com/medly/medly-components/commit/0d395b14c6860c3c195e6b12abef2ae02b87f16e))
+
+
+### Features
+
+* update button component to match new designs ([1c0dded](https://github.com/medly/medly-components/commit/1c0dded07aefa716fe3a3cac9c64dc770dd7f81a))
+* update checkbox component design ([fe391f2](https://github.com/medly/medly-components/commit/fe391f24d42638fbde72dbd33cd9854ba6be2737))
+* update colors as per new design ([f719066](https://github.com/medly/medly-components/commit/f71906608e8c9b3f4b35ef295816779ace39f7a0))
+* update colors based on new design ([883b4ad](https://github.com/medly/medly-components/commit/883b4ad0ef2a90d35e88a002017cad9a099d34d9))
+* update radio component designs ([f680e9e](https://github.com/medly/medly-components/commit/f680e9e40fc382a2fbee969d97e6d177edb821c6))
+* update textField style based on new design ([234094c](https://github.com/medly/medly-components/commit/234094c5ff7294c58aaba7d79b227ab364ecb792))
+
+
+
+
+
 ## [1.3.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.3.0...@medly-components/forms@1.3.1) (2020-07-13)
 
 **Note:** Version bump only for package @medly-components/forms

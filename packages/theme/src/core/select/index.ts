@@ -8,15 +8,22 @@ const select: SelectTheme = {
     borderColor: colors.grey[300],
     descriptionColor: colors.professionalNavy,
     placeHolderColor: colors.grey[500],
-    selectedBgColor: colors.marigoldOrange[400],
+    selectedBgColor: colors.blue[400],
     selectedTextColor: colors.white,
-    options: {
-        shadowColor: '#B0BCC8',
-        bgColor: colors.white,
-        textColor: colors.black,
-        disableTextColor: colors.grey[500],
-        hoverBgColor: colors.grey[100],
-        highlightedBgColor: colors.grey[50]
+    shadowColor: '#B0BCC8',
+    option: {
+        bgColor: {
+            default: colors.white,
+            hovered: colors.grey[50],
+            selected: colors.blue[100],
+            error: colors.grey[100],
+        },
+        textColor: {
+            default: colors.black,
+            selected: colors.black,
+            error: colors.red[500],
+            disabled: colors.grey[500]
+        }
     }
 };
 

@@ -1,9 +1,8 @@
 import { styled } from '@medly-components/utils';
-import { Props } from '../types';
 
-export const SearchInput = styled.input<Props & { isActive?: boolean }>`
+export const SearchInput = styled.input`
     background: transparent;
-    color: ${({ theme, isActive }) => (isActive ? theme.colors.black : theme.searchBox.default.textColor)};
+    color: ${({ theme }) => theme.searchBox.default.textColor};
     padding: 0;
     outline: none;
     border: 0 none;

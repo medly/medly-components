@@ -22,7 +22,6 @@ export const Button: FC<Props> & WithStyle = React.memo(
 Button.defaultProps = {
     type: 'button',
     variant: 'solid',
-    color: 'default',
     disabled: false,
     edges: 'square',
     size: 'M'

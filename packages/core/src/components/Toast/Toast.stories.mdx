@@ -1,8 +1,9 @@
 import { Toast } from './Toast';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { variants, ThemeInterface, Div } from './Toast.stories';
-import { withKnobs, select, text } from '@storybook/addon-knobs';
+import { withKnobs, select, text, boolean } from '@storybook/addon-knobs';
 import { PersonAddIcon } from '@medly-components/icons';
+import { action } from '@storybook/addon-actions';
 
 <Meta
     title="Core"
@@ -51,7 +52,8 @@ Yuo can play with this toast in canvas tab.
             variant={select('Variant', variants, 'success')}
             header={text('Header', 'Default Notification')}
             message={text('Message', 'Lorem Ipsum is simply dummy text.')}
-            action={{ label: 'Take Action', onClick: () => {} }}
+            action={{ label: 'Take Action', onClick: action('Submitted') }}
+            fullWidth={boolean('Full Width', false)}
         ></Toast>
     </Story>
 </Preview>

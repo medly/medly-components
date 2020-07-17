@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.8.0...@medly-components/core@1.9.0) (2020-07-16)
+
+
+### Bug Fixes
+
+* add more tests for searchBox ([defb7df](https://github.com/medly/medly-components/commit/defb7dfb58c8d29f5923584ffa1213f6e84e2c20))
+* fix form submission issue when validator prop is provided to TextField component ([0d395b1](https://github.com/medly/medly-components/commit/0d395b14c6860c3c195e6b12abef2ae02b87f16e))
+* fix tabList fullwidth isssue ([1af667b](https://github.com/medly/medly-components/commit/1af667ba51de0d8c3b137cb942edfbaa70155c78))
+* fix text selection issue in the outlined textField component ([e1e629d](https://github.com/medly/medly-components/commit/e1e629d65cc3a2b9a668ab7490cc959f23c14396))
+* keyboard navigation issue in SingleSelect component ([61c10f0](https://github.com/medly/medly-components/commit/61c10f0bc3299f4f34748e1b1f8ed6e15f2ac0b8))
+
+
+### Features
+
+* add fullWidth and max-width in toast component ([37a3f7f](https://github.com/medly/medly-components/commit/37a3f7fe395a91412cca319de363b4dfd430f149))
+* move checkbox border radius to theme ([da46102](https://github.com/medly/medly-components/commit/da461020ee6eba4b980b50cfacc682771f8d41d5))
+* update border radius and label position in TextField component ([6d002bd](https://github.com/medly/medly-components/commit/6d002bd9564443e8b4e9df44e7562f69b2b4493e))
+* update button component to match new designs ([1c0dded](https://github.com/medly/medly-components/commit/1c0dded07aefa716fe3a3cac9c64dc770dd7f81a))
+* update checkbox component design ([fe391f2](https://github.com/medly/medly-components/commit/fe391f24d42638fbde72dbd33cd9854ba6be2737))
+* update color of selected option in singleSelect component with error text ([28137d9](https://github.com/medly/medly-components/commit/28137d9c9e6c90c21e905df4cef79ff6e2a14f0f))
+* update colors as per new design ([f719066](https://github.com/medly/medly-components/commit/f71906608e8c9b3f4b35ef295816779ace39f7a0))
+* update colors based on new design ([883b4ad](https://github.com/medly/medly-components/commit/883b4ad0ef2a90d35e88a002017cad9a099d34d9))
+* update radio component designs ([f680e9e](https://github.com/medly/medly-components/commit/f680e9e40fc382a2fbee969d97e6d177edb821c6))
+* update SingleSelect component design ([705ec1b](https://github.com/medly/medly-components/commit/705ec1be24c46c99fa668dc5d3d3c4d0334b3ffe))
+* update textField style based on new design ([234094c](https://github.com/medly/medly-components/commit/234094c5ff7294c58aaba7d79b227ab364ecb792))
+
+
+
+
+
 # [1.8.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.7.0...@medly-components/core@1.8.0) (2020-07-13)
 
 

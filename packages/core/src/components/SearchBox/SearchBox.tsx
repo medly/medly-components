@@ -1,7 +1,6 @@
 import { CloseIcon, SearchIcon } from '@medly-components/icons';
-import { useCombinedRefs, WithStyle } from '@medly-components/utils';
+import { useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
-import { getOptionsWithSelected } from '../SingleSelect/helpers';
 import Options from '../SingleSelect/Options';
 import { Option } from '../SingleSelect/types';
 import { useKeyboardNavigation } from '../SingleSelect/useKeyboardNavigation';
@@ -13,114 +12,81 @@ import { Props } from './types';
 export const SearchBox: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { options: defaultOptions, size, placeholder, onInputChange, onOptionSelected } = props;
-        const inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
+        const wrapperRef = useRef<any>(null),
+            inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
             isFocused = useRef(false),
             optionsRef = useRef<HTMLUListElement>(null),
-            [isActive, setActive] = useState(false),
             [isTyping, updateIsTyping] = useState(false),
-            [areOptionsVisible, showOptions] = useState(false),
-            [options, setOptions] = useState(defaultOptions),
-            [selectedOption, setSelectedOption] = useState({
-                value: '',
-                label: ''
-            });
+            [areOptionsVisible, setOptionsVisibilityState] = useState(false),
+            [options, setOptions] = useState(defaultOptions);
 
         useEffect(() => {
             setOptions(props.options);
-            if (isTyping && props.options.length > 0) {
-                setActive(true);
-                showOptions(true);
-                isFocused.current = true;
-            } else {
-                showOptions(false);
-                setActive(false);
-            }
+            setOptionsVisibilityState(isTyping && props.options.length > 0);
         }, [props.options, isTyping]);
 
-        const clearSearchText = useCallback(() => {
-                inputRef.current.value = '';
+        const showOptions = useCallback(() => {
+                setOptionsVisibilityState(true);
                 inputRef.current.focus();
-                setActive(false);
-                showOptions(false);
+            }, []),
+            hideOptions = useCallback(() => {
+                setOptionsVisibilityState(false);
+                inputRef.current.blur();
                 updateIsTyping(false);
             }, []),
-            handleChange = useCallback(
-                (event: React.ChangeEvent<HTMLInputElement>) => {
-                    const value = inputRef.current.value;
-                    updateIsTyping(true);
-                    onInputChange(event.target.value);
-                    if (value.length === 0) {
-                        updateIsTyping(false);
-                    }
-                },
-                [inputRef.current, options]
-            ),
-            handleOptionClick = useCallback(
-                (option: Option) => {
-                    if (!Array.isArray(option.value) && onOptionSelected) {
-                        inputRef.current.value = option.label;
-                        showOptions(false);
-                        onOptionSelected(option);
-                    }
-                    inputRef.current.focus();
-                },
-                [inputRef.current]
-            ),
-            selectOption = useCallback(
-                (option: Option) => {
-                    setOptions(getOptionsWithSelected(options, option));
-                    setSelectedOption(option);
-                },
-                [options]
-            ),
-            showOptionsCB = useCallback(() => {
-                showOptions(true);
-                // @ts-ignore
-                inputRef.current.setSelectionRange(inputRef.length, inputRef.length);
+            clearSearchText = useCallback(() => {
+                inputRef.current.value = '';
                 inputRef.current.focus();
-            }, [inputRef]),
-            hideOptions = useCallback(() => {
-                if (inputRef.current.value.length === 0) {
-                    isFocused.current = false;
-                }
+                setOptionsVisibilityState(false);
+                updateIsTyping(false);
+            }, []),
+            handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
+                const value = event.target.value;
+                updateIsTyping(value.length !== 0);
+                onInputChange(value);
+            }, []),
+            handleOptionClick = useCallback((option: Option) => {
+                inputRef.current.value = option.label;
+                inputRef.current.focus();
+                setOptionsVisibilityState(false);
+                onOptionSelected && onOptionSelected(option);
+            }, []),
+            handleFocus = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
+                updateIsTyping(event.target.value.length > 0);
+                isFocused.current = true;
+            }, []),
+            handleBlur = useCallback(() => {
+                isFocused.current = false;
             }, []);
 
         useKeyboardNavigation({
             isFocused,
-            selectedOption,
             options,
             areOptionsVisible,
-            selectOption,
+            setOptions,
             handleOptionClick,
-            showOptions: showOptionsCB,
+            showOptions,
             optionsRef
         });
 
+        useOuterClickNotifier(() => {
+            hideOptions();
+        }, wrapperRef);
+
         return (
-            <Styled.SearchBoxWrapper isActive={isActive} areOptionsVisible={areOptionsVisible} size={size}>
-                <SearchInput
-                    isActive={isActive}
-                    placeholder={placeholder}
-                    onChange={handleChange}
-                    onKeyDown={hideOptions}
-                    onKeyUp={hideOptions}
-                    ref={inputRef}
-                />
-                {areOptionsVisible && (
-                    <Options
-                        ref={optionsRef}
-                        options={options}
-                        highlightSelected={true}
-                        variant="filled"
-                        onOptionClick={handleOptionClick}
-                    ></Options>
+            <Styled.SearchBoxWrapper ref={wrapperRef} areOptionsVisible={areOptionsVisible} size={size}>
+                <SearchInput placeholder={placeholder} onChange={handleChange} ref={inputRef} onFocus={handleFocus} onBlur={handleBlur} />
+                {isTyping && (
+                    <CloseIconWrapper isTyping={isTyping} size={size}>
+                        <CloseIcon title="close icon" onClick={clearSearchText} />
+                    </CloseIconWrapper>
                 )}
-                <CloseIconWrapper isTyping={isTyping} size={size}>
-                    {isTyping && <CloseIcon title="close icon" onClick={clearSearchText} />}
-                </CloseIconWrapper>
-                <SearchIconWrapper isActive={isActive} isTyping={isTyping} size={size}>
+                <SearchIconWrapper areOptionsVisible={areOptionsVisible} isTyping={isTyping} size={size}>
                     <SearchIcon title="search icon" />
                 </SearchIconWrapper>
+                {areOptionsVisible && (
+                    <Options ref={optionsRef} options={options} variant="filled" onOptionClick={handleOptionClick}></Options>
+                )}
             </Styled.SearchBoxWrapper>
         );
     })

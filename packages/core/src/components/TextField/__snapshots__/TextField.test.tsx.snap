@@ -42,10 +42,10 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -71,48 +71,48 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 .c1::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c1:hover::after,
 .c1:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -305,7 +305,7 @@ exports[`TextField should render asterisk if we pass required prop as true 1`] =
 
 .c2:focus-within .c0,
 .c2:focus-within:hover .c0 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c3:not(:placeholder-shown) + .c0,
@@ -362,10 +362,10 @@ exports[`TextField should render properly with default props 1`] = `
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -391,48 +391,48 @@ exports[`TextField should render properly with default props 1`] = `
 .c1::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c1:hover::after,
 .c1:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -626,10 +626,10 @@ exports[`TextField with filled variant and with label should render default stat
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -655,48 +655,48 @@ exports[`TextField with filled variant and with label should render default stat
 .c1::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c1:hover::after,
 .c1:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -884,10 +884,10 @@ exports[`TextField with filled variant and with label should render focus state 
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -913,48 +913,48 @@ exports[`TextField with filled variant and with label should render focus state 
 .c1::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c1:hover::after,
 .c1:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -1142,10 +1142,10 @@ exports[`TextField with filled variant and without label should render default s
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -1171,48 +1171,48 @@ exports[`TextField with filled variant and without label should render default s
 .c1::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c1:hover::after,
 .c1:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -1400,10 +1400,10 @@ exports[`TextField with filled variant and without label should render focus sta
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -1429,48 +1429,48 @@ exports[`TextField with filled variant and without label should render focus sta
 .c1::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c1:hover::after,
 .c1:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -1665,10 +1665,10 @@ exports[`TextField with filled variant should render error state properly  1`] =
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -1694,26 +1694,33 @@ exports[`TextField with filled variant should render error state properly  1`] =
 .c1::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c1:hover::after,
 .c1:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c1,
 .c1:hover,
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #cc0000;
   background-color: #FAE6E6;
+}
+
+.c1::after,
+.c1:hover::after,
+.c1:focus-within::after,
+.c1:focus-within:hover::after {
+  border-color: #cc0000;
 }
 
 .c1 .c4,
@@ -1743,13 +1750,6 @@ exports[`TextField with filled variant should render error state properly  1`] =
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #cc0000;
-}
-
-.c1::after,
-.c1:hover::after,
-.c1:focus-within::after,
-.c1:focus-within:hover::after {
-  background-color: #cc0000;
 }
 
 .c1 ~ .c6,
@@ -2035,10 +2035,10 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -2064,48 +2064,48 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 .c1::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c1:hover::after,
 .c1:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .c3,
 .c1:focus-within:hover .c3,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .c3 *,
 .c1:focus-within:hover .c3 *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -2330,10 +2330,10 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -2359,48 +2359,48 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 .c1::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c1:hover::after,
 .c1:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .c7 *,
 .c1:focus-within:hover .c7 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -2587,9 +2587,9 @@ exports[`TextField with outlined variant and with label should render default st
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,52%,0);
-  -ms-transform: translate3d(0,52%,0);
-  transform: translate3d(0,52%,0);
+  -webkit-transform: translate3d(0,55%,0);
+  -ms-transform: translate3d(0,55%,0);
+  transform: translate3d(0,55%,0);
 }
 
 .c1 {
@@ -2607,13 +2607,12 @@ exports[`TextField with outlined variant and with label should render default st
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.5rem;
-  background-color: transparent;
   border-radius: 0.4rem;
-  border: 1px solid #98A7B7;
+  background-color: transparent;
 }
 
 .c1 .c4 {
@@ -2634,38 +2633,65 @@ exports[`TextField with outlined variant and with label should render default st
   color: #546A7F;
 }
 
+.c1::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #98A7B7;
+}
+
 .c1:hover {
+  box-shadow: 0px 0.2rem 0.8rem rgba(96,120,144,0.2);
+}
+
+.c1:focus-within {
+  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+}
+
+.c1:hover::after,
+.c1:focus-within::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
   background-color: transparent;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -2833,9 +2859,9 @@ exports[`TextField with outlined variant and with label should render focus stat
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,52%,0);
-  -ms-transform: translate3d(0,52%,0);
-  transform: translate3d(0,52%,0);
+  -webkit-transform: translate3d(0,55%,0);
+  -ms-transform: translate3d(0,55%,0);
+  transform: translate3d(0,55%,0);
 }
 
 .c1 {
@@ -2853,13 +2879,12 @@ exports[`TextField with outlined variant and with label should render focus stat
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.5rem;
-  background-color: transparent;
   border-radius: 0.4rem;
-  border: 1px solid #98A7B7;
+  background-color: transparent;
 }
 
 .c1 .c4 {
@@ -2880,38 +2905,65 @@ exports[`TextField with outlined variant and with label should render focus stat
   color: #546A7F;
 }
 
+.c1::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #98A7B7;
+}
+
 .c1:hover {
+  box-shadow: 0px 0.2rem 0.8rem rgba(96,120,144,0.2);
+}
+
+.c1:focus-within {
+  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+}
+
+.c1:hover::after,
+.c1:focus-within::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
   background-color: transparent;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -3079,9 +3131,9 @@ exports[`TextField with outlined variant and without label should render default
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,52%,0);
-  -ms-transform: translate3d(0,52%,0);
-  transform: translate3d(0,52%,0);
+  -webkit-transform: translate3d(0,55%,0);
+  -ms-transform: translate3d(0,55%,0);
+  transform: translate3d(0,55%,0);
 }
 
 .c1 {
@@ -3099,13 +3151,12 @@ exports[`TextField with outlined variant and without label should render default
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.5rem;
-  background-color: transparent;
   border-radius: 0.4rem;
-  border: 1px solid #98A7B7;
+  background-color: transparent;
 }
 
 .c1 .c4 {
@@ -3126,38 +3177,65 @@ exports[`TextField with outlined variant and without label should render default
   color: #546A7F;
 }
 
+.c1::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #98A7B7;
+}
+
 .c1:hover {
+  box-shadow: 0px 0.2rem 0.8rem rgba(96,120,144,0.2);
+}
+
+.c1:focus-within {
+  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+}
+
+.c1:hover::after,
+.c1:focus-within::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
   background-color: transparent;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -3325,9 +3403,9 @@ exports[`TextField with outlined variant and without label should render focus s
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,52%,0);
-  -ms-transform: translate3d(0,52%,0);
-  transform: translate3d(0,52%,0);
+  -webkit-transform: translate3d(0,55%,0);
+  -ms-transform: translate3d(0,55%,0);
+  transform: translate3d(0,55%,0);
 }
 
 .c1 {
@@ -3345,13 +3423,12 @@ exports[`TextField with outlined variant and without label should render focus s
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.5rem;
-  background-color: transparent;
   border-radius: 0.4rem;
-  border: 1px solid #98A7B7;
+  background-color: transparent;
 }
 
 .c1 .c4 {
@@ -3372,38 +3449,65 @@ exports[`TextField with outlined variant and without label should render focus s
   color: #546A7F;
 }
 
+.c1::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #98A7B7;
+}
+
 .c1:hover {
+  box-shadow: 0px 0.2rem 0.8rem rgba(96,120,144,0.2);
+}
+
+.c1:focus-within {
+  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+}
+
+.c1:hover::after,
+.c1:focus-within::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
   background-color: transparent;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -3578,9 +3682,9 @@ exports[`TextField with outlined variant should render error state properly  1`]
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,52%,0);
-  -ms-transform: translate3d(0,52%,0);
-  transform: translate3d(0,52%,0);
+  -webkit-transform: translate3d(0,55%,0);
+  -ms-transform: translate3d(0,55%,0);
+  transform: translate3d(0,55%,0);
 }
 
 .c1 {
@@ -3598,13 +3702,12 @@ exports[`TextField with outlined variant should render error state properly  1`]
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.5rem;
-  background-color: transparent;
   border-radius: 0.4rem;
-  border: 1px solid #98A7B7;
+  background-color: transparent;
 }
 
 .c1 .c4 {
@@ -3625,7 +3728,35 @@ exports[`TextField with outlined variant should render error state properly  1`]
   color: #546A7F;
 }
 
+.c1::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #98A7B7;
+}
+
 .c1:hover {
+  box-shadow: 0px 0.2rem 0.8rem rgba(96,120,144,0.2);
+}
+
+.c1:focus-within {
+  box-shadow: 0px 0.2rem 0.8rem rgba(204,0,0,0.2);
+}
+
+.c1:hover::after,
+.c1:focus-within::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
@@ -3633,8 +3764,14 @@ exports[`TextField with outlined variant should render error state properly  1`]
 .c1:hover,
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #cc0000;
   background-color: transparent;
+}
+
+.c1::after,
+.c1:hover::after,
+.c1:focus-within::after,
+.c1:focus-within:hover::after {
+  border-color: #cc0000;
 }
 
 .c1 .c4,
@@ -3664,13 +3801,6 @@ exports[`TextField with outlined variant should render error state properly  1`]
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #cc0000;
-}
-
-.c1::after,
-.c1:hover::after,
-.c1:focus-within::after,
-.c1:focus-within:hover::after {
-  background-color: #cc0000;
 }
 
 .c1 ~ .c6,
@@ -3931,9 +4061,9 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,52%,0);
-  -ms-transform: translate3d(0,52%,0);
-  transform: translate3d(0,52%,0);
+  -webkit-transform: translate3d(0,55%,0);
+  -ms-transform: translate3d(0,55%,0);
+  transform: translate3d(0,55%,0);
 }
 
 .c4 {
@@ -3956,13 +4086,12 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.5rem;
-  background-color: transparent;
   border-radius: 0.4rem;
-  border: 1px solid #98A7B7;
+  background-color: transparent;
 }
 
 .c1 .c7 {
@@ -3983,38 +4112,65 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   color: #546A7F;
 }
 
+.c1::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #98A7B7;
+}
+
 .c1:hover {
+  box-shadow: 0px 0.2rem 0.8rem rgba(96,120,144,0.2);
+}
+
+.c1:focus-within {
+  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+}
+
+.c1:hover::after,
+.c1:focus-within::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
   background-color: transparent;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .c3,
 .c1:focus-within:hover .c3,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .c3 *,
 .c1:focus-within:hover .c3 *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -4214,9 +4370,9 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,52%,0);
-  -ms-transform: translate3d(0,52%,0);
-  transform: translate3d(0,52%,0);
+  -webkit-transform: translate3d(0,55%,0);
+  -ms-transform: translate3d(0,55%,0);
+  transform: translate3d(0,55%,0);
 }
 
 .c8 {
@@ -4239,13 +4395,12 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.5rem;
-  background-color: transparent;
   border-radius: 0.4rem;
-  border: 1px solid #98A7B7;
+  background-color: transparent;
 }
 
 .c1 .c4 {
@@ -4266,38 +4421,65 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   color: #546A7F;
 }
 
+.c1::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #98A7B7;
+}
+
 .c1:hover {
+  box-shadow: 0px 0.2rem 0.8rem rgba(96,120,144,0.2);
+}
+
+.c1:focus-within {
+  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+}
+
+.c1:hover::after,
+.c1:focus-within::after {
+  border-width: 0.15rem;
   border-color: #607890;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
   background-color: transparent;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .c7 *,
 .c1:focus-within:hover .c7 * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -4504,10 +4686,10 @@ exports[`TextField without label should render default state properly 1`] = `
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -4533,48 +4715,48 @@ exports[`TextField without label should render default state properly 1`] = `
 .c1::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c1:hover::after,
 .c1:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -4762,10 +4944,10 @@ exports[`TextField without label should render focus state properly  1`] = `
   flex-direction: row;
   box-sizing: border-box;
   height: 5.6rem;
+  padding: 0 1.6rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  padding: 0 1.6rem;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -4791,48 +4973,48 @@ exports[`TextField without label should render focus state properly  1`] = `
 .c1::after {
   content: '';
   width: 100%;
-  height: 0.1rem;
+  height: 0;
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #546A7F;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
 .c1:hover::after,
 .c1:focus-within::after {
-  height: 0.2rem;
+  border-width: 0.2rem;
 }
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  border-color: #005AEE;
-  background-color: #e6effd;
+  background-color: #E7F0FF;
 }
 
 .c1:focus-within::after,
 .c1:focus-within:hover::after {
-  background-color: #005AEE;
+  border-color: #126AFA;
 }
 
 .c1:focus-within .c4,
 .c1:focus-within:hover .c4 {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb,
 .c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy {
-  color: #005AEE;
+  color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhCb *,
 .c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,

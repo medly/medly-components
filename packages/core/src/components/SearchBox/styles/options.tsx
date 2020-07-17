@@ -58,7 +58,7 @@ const getSmallOptionStyle = () => {
     `;
 };
 
-export const getOptionsStyles = ({ theme, isActive, size }: Props & { isActive?: boolean; areOptionsVisible?: boolean }) => {
+export const getOptionsStyles = ({ theme, size, areOptionsVisible }: Props & { areOptionsVisible?: boolean }) => {
     return css`
         box-shadow: none;
         border: none;
@@ -67,7 +67,7 @@ export const getOptionsStyles = ({ theme, isActive, size }: Props & { isActive?:
         overflow-x: hidden;
         overflow-y: auto;
         background-color: ${theme.colors.white};
-        ${isActive ? activeOptionStyle : nonActiveOptionStyle};
+        ${areOptionsVisible ? activeOptionStyle : nonActiveOptionStyle};
         max-height: ${theme.searchBox.sizes[size].maxHeight};
 
         svg {

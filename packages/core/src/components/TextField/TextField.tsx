@@ -33,11 +33,12 @@ export const TextField: FC<Props> & WithStyle = React.memo(
             (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
                 event.preventDefault();
                 const element = event.target as HTMLInputElement,
-                    message = (validator && validator(element.value)) || element.validationMessage;
+                    message = validator ? validator(element.value) : element.validationMessage;
                 setErrorMessage(message);
+                validator && inputRef.current.setCustomValidity(validator(element.value));
                 eventFunc && eventFunc(event);
             },
-            [validator]
+            [validator, builtInErrorMessage]
         );
 
         const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),

@@ -8,14 +8,15 @@ export const Radio: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { id, size, label, labelPosition, fullWidth, hasError, labelVariant, labelWeight, ...inputProps } = props,
             inputId = useMemo(() => id || label, [id, label]),
-            inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null));
+            inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
+            isActive = useMemo(() => inputProps.checked || inputProps.defaultChecked, [inputProps.checked, inputProps.defaultChecked]);
 
         return (
             <Styled.RadioWithLabelWrapper
                 id={`${inputId}-wrapper`}
                 htmlFor={inputId}
                 disabled={inputProps.disabled}
-                {...{ fullWidth, labelPosition, hasError }}
+                {...{ fullWidth, labelPosition, hasError, isActive }}
             >
                 {label && (
                     <SelectorLabel

@@ -5,11 +5,11 @@ import * as Style from './Cell.styled';
 import { Props } from './types';
 
 export const Cell: React.FC<Props> & WithStyle = React.memo(props => {
-    const { data, rowId, column, isRowClickDisabled } = props,
+    const { data, rowId, column, isRowClickDisabled, rowData } = props,
         { component: Component, align, wrapText } = column;
 
     const FormattedCell = useMemo(
-        () => (Component ? <Component {...{ data, rowId, disabled: isRowClickDisabled }} /> : <Text title={data}>{data}</Text>),
+        () => (Component ? <Component {...{ data, rowId, rowData, disabled: isRowClickDisabled }} /> : <Text title={data}>{data}</Text>),
         [data, rowId, isRowClickDisabled, Component]
     );
 

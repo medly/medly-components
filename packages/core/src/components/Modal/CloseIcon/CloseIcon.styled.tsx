@@ -15,7 +15,7 @@ export const CloseIcon = styled(ClearIcon)`
     }
 
     &:hover {
-        background-color: ${({ theme }) => theme.colors.communityBlue[400]};
+        background-color: ${({ theme }) => theme.colors.blue[400]};
         transform: rotate(90deg);
 
         * {

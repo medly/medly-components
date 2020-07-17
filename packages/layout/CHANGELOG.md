@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.3.1...@medly-components/layout@1.4.0) (2020-07-16)
+
+
+### Features
+
+* update colors based on new design ([883b4ad](https://github.com/medly/medly-components/commit/883b4ad0ef2a90d35e88a002017cad9a099d34d9))
+
+
+
+
+
 ## [1.3.1](https://github.com/medly/medly-components/compare/@medly-components/layout@1.3.0...@medly-components/layout@1.3.1) (2020-07-13)
 
 **Note:** Version bump only for package @medly-components/layout

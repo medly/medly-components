@@ -1,22 +1,30 @@
 import { SvgIcon } from '@medly-components/icons';
-import { styled } from '@medly-components/utils';
+import { styled, WithThemeProp } from '@medly-components/utils';
 import Button from '../Button';
-import { StyledProps } from './types';
+import { ToastProps } from './types';
 
-const fillColor = ({ theme, variant }: StyledProps) => theme.toast.fillColor[variant];
+const fillColor = ({ theme, variant }: ToastProps & WithThemeProp) => theme.toast.fillColor[variant];
 
-export const Toast = styled('div')<StyledProps>`
+export const Toast = styled('div')<ToastProps>`
     display: flex;
     flex-direction: row;
     position: relative;
     align-items: stretch;
-    min-width: 25rem;
     box-shadow: 0 0.8rem 3.2rem ${({ theme }) => theme.toast.boxShadow};
     border-radius: 0.4rem;
     border-left: 0.4rem solid ${fillColor};
+    min-width: ${({ fullWidth }) => (fullWidth ? '100%' : '25rem')};
+
+    @media (min-width: 768px) and (max-width: 1439px) {
+        max-width: ${({ fullWidth }) => (fullWidth ? '100%' : '72%')};
+    }
+
+    @media (min-width: 1440px) {
+        max-width: ${({ fullWidth }) => (fullWidth ? '100%' : '103.6rem')};
+    }
 `;
 
-export const IconWrapper = styled('div')<StyledProps>`
+export const IconWrapper = styled('div')<ToastProps>`
     display: flex;
     background-color: ${({ theme, variant }) => theme.toast.bgColor[variant]};
 

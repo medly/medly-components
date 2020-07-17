@@ -25,7 +25,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
+  padding: 0.8rem 2.4rem 1rem 2.4rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -59,36 +59,78 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   cursor: not-allowed;
 }
 
+.c1::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.8rem;
+  border-style: solid;
+}
+
 .c1:disabled {
-  border: 0.1rem solid;
-  color: #b0bcc8;
-  border-color: #b0bcc8;
+  color: #98A7B7;
+  background-color: transparent;
+}
+
+.c1:disabled::after {
+  border-width: 0.1rem;
+  border-color: #98A7B7;
 }
 
 .c1:disabled .sc-AxirZ * {
-  fill: #b0bcc8;
+  fill: #98A7B7;
 }
 
 .c1:not(:disabled):not(:hover) {
-  border: 0.1rem solid;
-  color: #005AEE;
-  border-color: #005AEE;
+  color: #126AFA;
+  background-color: transparent;
+}
+
+.c1:not(:disabled):not(:hover)::after {
+  border-width: 0.1rem;
+  border-color: #126AFA;
 }
 
 .c1:not(:disabled):not(:hover) .sc-AxirZ * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
-.c1:not(:disabled):hover {
-  border: 0.2rem solid;
-  color: #1A6BF0;
-  border-color: #1A6BF0;
-  padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+.c1:not(:disabled):active {
+  color: #0D4AAF;
+  background-color: #E7F0FF;
 }
 
-.c1:not(:disabled):hover .sc-AxirZ * {
-  fill: #1A6BF0;
+.c1:not(:disabled):active::after {
+  border-width: 0.2rem;
+  border-color: #0D4AAF;
+}
+
+.c1:not(:disabled):active .sc-AxirZ * {
+  fill: #0D4AAF;
+}
+
+.c1:not(:disabled):not(:active):hover {
+  color: #0F5AD5;
+  background-color: transparent;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+}
+
+.c1:not(:disabled):not(:active):hover::after {
+  border-width: 0.2rem;
+  border-color: #0F5AD5;
+}
+
+.c1:not(:disabled):not(:active):hover .sc-AxirZ * {
+  fill: #0F5AD5;
 }
 
 .c1 .sc-AxirZ + .c2 {
@@ -131,7 +173,6 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
     <li>
       <button
         class="c1"
-        color="default"
         disabled=""
         type="button"
       >
@@ -145,7 +186,6 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
     <li>
       <button
         class="c1"
-        color="default"
         disabled=""
         type="button"
       >
@@ -159,7 +199,6 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
     <li>
       <button
         class="c1"
-        color="default"
         disabled=""
         type="button"
       >
@@ -173,7 +212,6 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
     <li>
       <button
         class="c1"
-        color="default"
         disabled=""
         type="button"
       >
@@ -213,7 +251,7 @@ exports[`Pagination component should render correctly with all the default props
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
+  padding: 0.8rem 2.4rem 1rem 2.4rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -247,36 +285,78 @@ exports[`Pagination component should render correctly with all the default props
   cursor: not-allowed;
 }
 
+.c1::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.8rem;
+  border-style: solid;
+}
+
 .c1:disabled {
-  border: 0.1rem solid;
-  color: #b0bcc8;
-  border-color: #b0bcc8;
+  color: #98A7B7;
+  background-color: transparent;
+}
+
+.c1:disabled::after {
+  border-width: 0.1rem;
+  border-color: #98A7B7;
 }
 
 .c1:disabled .sc-AxirZ * {
-  fill: #b0bcc8;
+  fill: #98A7B7;
 }
 
 .c1:not(:disabled):not(:hover) {
-  border: 0.1rem solid;
-  color: #005AEE;
-  border-color: #005AEE;
+  color: #126AFA;
+  background-color: transparent;
+}
+
+.c1:not(:disabled):not(:hover)::after {
+  border-width: 0.1rem;
+  border-color: #126AFA;
 }
 
 .c1:not(:disabled):not(:hover) .sc-AxirZ * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
-.c1:not(:disabled):hover {
-  border: 0.2rem solid;
-  color: #1A6BF0;
-  border-color: #1A6BF0;
-  padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+.c1:not(:disabled):active {
+  color: #0D4AAF;
+  background-color: #E7F0FF;
 }
 
-.c1:not(:disabled):hover .sc-AxirZ * {
-  fill: #1A6BF0;
+.c1:not(:disabled):active::after {
+  border-width: 0.2rem;
+  border-color: #0D4AAF;
+}
+
+.c1:not(:disabled):active .sc-AxirZ * {
+  fill: #0D4AAF;
+}
+
+.c1:not(:disabled):not(:active):hover {
+  color: #0F5AD5;
+  background-color: transparent;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+}
+
+.c1:not(:disabled):not(:active):hover::after {
+  border-width: 0.2rem;
+  border-color: #0F5AD5;
+}
+
+.c1:not(:disabled):not(:active):hover .sc-AxirZ * {
+  fill: #0F5AD5;
 }
 
 .c1 .sc-AxirZ + .c2 {
@@ -338,24 +418,35 @@ exports[`Pagination component should render correctly with all the default props
 }
 
 .c4:disabled .sc-AxirZ * {
-  fill: #dfe4e9;
-}
-
-.c4:not(:disabled) {
-  color: #ffffff;
-}
-
-.c4:not(:disabled) .sc-AxirZ * {
-  fill: #ffffff;
+  fill: #98A7B7;
 }
 
 .c4:not(:disabled):not(:hover) {
-  background: #005AEE;
+  color: #ffffff;
+  background: #126AFA;
 }
 
-.c4:not(:disabled):hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+.c4:not(:disabled):not(:hover) .sc-AxirZ * {
+  fill: #ffffff;
+}
+
+.c4:not(:disabled):active {
+  color: #ffffff;
+  background: #0D4AAF;
+}
+
+.c4:not(:disabled):active .sc-AxirZ * {
+  fill: #ffffff;
+}
+
+.c4:not(:disabled):not(:active):hover {
+  color: #ffffff;
+  background: #0F5AD5;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+}
+
+.c4:not(:disabled):not(:active):hover .sc-AxirZ * {
+  fill: #ffffff;
 }
 
 .c4 .sc-AxirZ + .c2 {
@@ -398,7 +489,6 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="c1"
-        color="default"
         disabled=""
         type="button"
       >
@@ -412,7 +502,6 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="c1"
-        color="default"
         disabled=""
         type="button"
       >
@@ -426,7 +515,6 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="c4"
-        color="default"
         type="button"
       >
         <span
@@ -439,7 +527,6 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="c1"
-        color="default"
         type="button"
       >
         <span
@@ -452,7 +539,6 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="c1"
-        color="default"
         type="button"
       >
         <span
@@ -465,7 +551,6 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="c1"
-        color="default"
         type="button"
       >
         <span
@@ -478,7 +563,6 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="c1"
-        color="default"
         type="button"
       >
         <span
@@ -491,7 +575,6 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="c1"
-        color="default"
         type="button"
       >
         <span
@@ -504,7 +587,6 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="c1"
-        color="default"
         type="button"
       >
         <span
@@ -582,24 +664,35 @@ exports[`Pagination component should render correctly with all the props given 1
 }
 
 .c1:disabled .sc-AxirZ * {
-  fill: #dfe4e9;
-}
-
-.c1:not(:disabled) {
-  color: #ffffff;
-}
-
-.c1:not(:disabled) .sc-AxirZ * {
-  fill: #ffffff;
+  fill: #98A7B7;
 }
 
 .c1:not(:disabled):not(:hover) {
-  background: #005AEE;
+  color: #ffffff;
+  background: #126AFA;
 }
 
-.c1:not(:disabled):hover {
-  background: #1A6BF0;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+.c1:not(:disabled):not(:hover) .sc-AxirZ * {
+  fill: #ffffff;
+}
+
+.c1:not(:disabled):active {
+  color: #ffffff;
+  background: #0D4AAF;
+}
+
+.c1:not(:disabled):active .sc-AxirZ * {
+  fill: #ffffff;
+}
+
+.c1:not(:disabled):not(:active):hover {
+  color: #ffffff;
+  background: #0F5AD5;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+}
+
+.c1:not(:disabled):not(:active):hover .sc-AxirZ * {
+  fill: #ffffff;
 }
 
 .c1 .sc-AxirZ + .c2 {
@@ -622,7 +715,7 @@ exports[`Pagination component should render correctly with all the props given 1
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: calc(0.8rem - 0.1rem) calc(2.4rem - 0.1rem) calc(1rem - 0.1rem) calc(2.4rem - 0.1rem);
+  padding: 0.8rem 2.4rem 1rem 2.4rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -656,36 +749,78 @@ exports[`Pagination component should render correctly with all the props given 1
   cursor: not-allowed;
 }
 
+.c4::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.8rem;
+  border-style: solid;
+}
+
 .c4:disabled {
-  border: 0.1rem solid;
-  color: #b0bcc8;
-  border-color: #b0bcc8;
+  color: #98A7B7;
+  background-color: transparent;
+}
+
+.c4:disabled::after {
+  border-width: 0.1rem;
+  border-color: #98A7B7;
 }
 
 .c4:disabled .sc-AxirZ * {
-  fill: #b0bcc8;
+  fill: #98A7B7;
 }
 
 .c4:not(:disabled):not(:hover) {
-  border: 0.1rem solid;
-  color: #005AEE;
-  border-color: #005AEE;
+  color: #126AFA;
+  background-color: transparent;
+}
+
+.c4:not(:disabled):not(:hover)::after {
+  border-width: 0.1rem;
+  border-color: #126AFA;
 }
 
 .c4:not(:disabled):not(:hover) .sc-AxirZ * {
-  fill: #005AEE;
+  fill: #126AFA;
 }
 
-.c4:not(:disabled):hover {
-  border: 0.2rem solid;
-  color: #1A6BF0;
-  border-color: #1A6BF0;
-  padding: calc(0.8rem - 0.2rem) calc(2.4rem - 0.2rem) calc(1rem - 0.2rem) calc(2.4rem - 0.2rem);
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.2);
+.c4:not(:disabled):active {
+  color: #0D4AAF;
+  background-color: #E7F0FF;
 }
 
-.c4:not(:disabled):hover .sc-AxirZ * {
-  fill: #1A6BF0;
+.c4:not(:disabled):active::after {
+  border-width: 0.2rem;
+  border-color: #0D4AAF;
+}
+
+.c4:not(:disabled):active .sc-AxirZ * {
+  fill: #0D4AAF;
+}
+
+.c4:not(:disabled):not(:active):hover {
+  color: #0F5AD5;
+  background-color: transparent;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+}
+
+.c4:not(:disabled):not(:active):hover::after {
+  border-width: 0.2rem;
+  border-color: #0F5AD5;
+}
+
+.c4:not(:disabled):not(:active):hover .sc-AxirZ * {
+  fill: #0F5AD5;
 }
 
 .c4 .sc-AxirZ + .c2 {
@@ -728,7 +863,6 @@ exports[`Pagination component should render correctly with all the props given 1
     <li>
       <button
         class="c1"
-        color="default"
         type="button"
       >
         <span
@@ -741,7 +875,6 @@ exports[`Pagination component should render correctly with all the props given 1
     <li>
       <button
         class="c4"
-        color="default"
         type="button"
       >
         <span
@@ -754,7 +887,6 @@ exports[`Pagination component should render correctly with all the props given 1
     <li>
       <button
         class="c4"
-        color="default"
         type="button"
       >
         <span
@@ -767,7 +899,6 @@ exports[`Pagination component should render correctly with all the props given 1
     <li>
       <button
         class="c4"
-        color="default"
         type="button"
       >
         <span

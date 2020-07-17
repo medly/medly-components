@@ -4,38 +4,24 @@ import { optionsArray, size, ThemeInterface } from './SearchBox.stories.tsx';
 import * as stories from './SearchBox.stories';
 import { select } from '@storybook/addon-knobs';
 import { SearchBox } from './SearchBox';
+import { action } from '@storybook/addon-actions';
 
-<Meta title="In-review" component={SearchBox} />
+<Meta title="Core" component={SearchBox} />
 
 # SearchBox
 
 ### Add a auto suggest text box
 
 <Preview withToolbar>
-    <Story name="Minimal SearchBox">
-        <SearchBox options={optionsArray} onInputChange={value => console.log(value)} />
-    </Story>
-</Preview>
-
-<Preview withToolbar>
-    <Story name="SearchBox With All Props">
+    <Story name="SearchBox">
         {() => {
-            const [options, setOptions] = useState([]);
-            const onInputChangeHandler = value => {
-                if (value.length > 2) {
-                    setOptions([...optionsArray, { label: 'Test', value: 'Test' }]);
-                } else {
-                    setOptions([]);
-                }
-            };
-            const onOptionSelectedHandler = option => {
-                console.log('option', option);
-            };
+            const [options, setOptions] = useState([]),
+                onInputChangeHandler = value => value.length > 2 && setOptions([...optionsArray, { label: 'Test', value: 'Test' }]);
             return (
                 <SearchBox
                     placeholder="Search"
                     onInputChange={onInputChangeHandler}
-                    onOptionSelected={onOptionSelectedHandler}
+                    onOptionSelected={action('Selected')}
                     options={options}
                     size={select('Size', size, 'M')}
                 />

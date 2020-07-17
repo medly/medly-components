@@ -5,7 +5,7 @@ import { getIconWrapperStyle } from './utils';
 
 export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean }>`
     ${getIconWrapperStyle};
-    border-right: ${({ theme, isTyping }) => (isTyping ? `0.1rem solid ${theme.colors.grey[200]}` : '0 none')};
+    border-right: ${({ theme, isTyping }) => isTyping && `0.1rem solid ${theme.colors.grey[200]}`};
     margin: 0.6rem 0;
     ${SvgIcon} {
         * {
@@ -29,14 +29,15 @@ export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean }>`
     }
 `;
 
-export const SearchIconWrapper = styled.span<Props & { isActive?: boolean; isTyping?: boolean }>`
+export const SearchIconWrapper = styled.span<Props & { areOptionsVisible?: boolean; isTyping?: boolean }>`
     ${getIconWrapperStyle};
     ${SvgIcon} {
         * {
-            fill: ${({ theme: { searchBox }, isActive }) => (isActive ? searchBox.active.iconColor : searchBox.default.iconColor)};
+            fill: ${({ theme: { searchBox }, areOptionsVisible }) =>
+                areOptionsVisible ? searchBox.active.iconColor : searchBox.default.iconColor};
         }
         &:hover {
-            background: ${({ theme, isActive, isTyping }) => (isActive || isTyping ? theme.searchBox.active.iconBg : 'transparent')};
+            background: ${({ theme, isTyping }) => (isTyping ? theme.searchBox.active.iconBg : 'transparent')};
             border-radius: 2.5rem;
         }
     }

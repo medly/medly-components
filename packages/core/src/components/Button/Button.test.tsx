@@ -1,17 +1,16 @@
 import { AddIcon } from '@medly-components/icons';
+import { defaultTheme } from '@medly-components/theme';
+import { updateNestedValue } from '@medly-components/utils';
 import { render } from '@test-utils';
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import { Button } from './Button';
 import { Props } from './types';
 
 describe('Button component', () => {
-    describe.each(['solid', 'outlined', 'flat'])('should render properly with %p variant', (variant: Props['variant']) => {
-        test.each(['default', 'confirmation', 'error'])('and %p color ', (color: Props['color']) => {
-            const { container } = render(
-                <Button variant={variant} color={color}>
-                    Button
-                </Button>
-            );
+    describe.each(['solid', 'outlined', 'flat'])('with %p variant', (variant: Props['variant']) => {
+        test('should render properly', () => {
+            const { container } = render(<Button variant={variant}>Button</Button>);
             expect(container).toMatchSnapshot();
         });
 
@@ -36,15 +35,6 @@ describe('Button component', () => {
 
     test.each(['square', 'rounded', 'circle'])('should render properly with %p edges', (edges: Props['edges']) => {
         const { container } = render(<Button edges={edges}>Flat Button</Button>);
-        expect(container).toMatchSnapshot();
-    });
-
-    it('should render properly with gradient', () => {
-        const { container } = render(
-            <Button variant="solid" withGradient>
-                Gradient Button
-            </Button>
-        );
         expect(container).toMatchSnapshot();
     });
 
@@ -97,5 +87,23 @@ describe('Button component', () => {
             </Button>
         );
         expect(container.querySelector('button')).toHaveStyle(`width: 100%`);
+    });
+
+    it("should render properly with outlined and theme doesn't have bgColor", () => {
+        const { container } = render(
+            <ThemeProvider
+                theme={updateNestedValue(defaultTheme, 'button.outlined', {
+                    textColor: {
+                        default: defaultTheme.colors.red[500],
+                        hovered: defaultTheme.colors.red[600],
+                        pressed: defaultTheme.colors.red[700],
+                        disabled: defaultTheme.colors.grey[200]
+                    }
+                })}
+            >
+                <Button variant="outlined">Red Button</Button>
+            </ThemeProvider>
+        );
+        expect(container).toMatchSnapshot();
     });
 });

@@ -10,9 +10,9 @@ const icon: IconTheme = {
         XL: '4.0rem'
     },
     colors: {
-        default: { iconColor: colors.grey[600], bgColor: colors.communityBlue[100] },
+        default: { iconColor: colors.grey[600], bgColor: colors.blue[100] },
         disabled: { iconColor: colors.grey[300], bgColor: 'transparent' },
-        hovered: { iconColor: colors.white, bgColor: colors.communityBlue[400] }
+        hovered: { iconColor: colors.white, bgColor: colors.blue[400] }
     }
 };
 

@@ -9,6 +9,8 @@ export interface Option {
     selected?: boolean;
     /** Set it true if this option is disabled */
     disabled?: boolean;
+    /** This will be handled by component itself */
+    hovered?: boolean;
 }
 
 export interface DefaultSelected {

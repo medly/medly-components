@@ -7,12 +7,19 @@ export interface SelectTheme {
     placeHolderColor: string;
     selectedBgColor: string;
     selectedTextColor: string;
-    options: {
-        shadowColor: string;
-        bgColor: string;
-        textColor: string;
-        disableTextColor: string;
-        hoverBgColor: string;
-        highlightedBgColor: string;
+    shadowColor: string;
+    option: {
+        bgColor: {
+            default: string;
+            hovered: string;
+            selected: string;
+            error: string;
+        };
+        textColor: {
+            default: string;
+            selected: string;
+            error: string;
+            disabled: string;
+        };
     };
 }

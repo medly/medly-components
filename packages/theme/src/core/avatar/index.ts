@@ -18,8 +18,8 @@ const avatar: AvatarTheme = {
     },
     defaults: {
         size: 'M',
-        textColor: colors.communityBlue[500],
-        bgColor: colors.communityBlue[100],
+        textColor: colors.blue[500],
+        bgColor: colors.blue[100],
         fontWeight: 'Regular',
         fontFamily: 'Open Sans',
         borderColor: colors.grey[200],
@@ -27,7 +27,7 @@ const avatar: AvatarTheme = {
             textShadowColor: 'rgba(0, 90, 238, 0.35)',
             imgShadowColor: 'rgba(96, 120, 144, 0.35)',
             textColor: colors.white,
-            bgColor: colors.communityBlue[400]
+            bgColor: colors.blue[400]
         }
     }
 };

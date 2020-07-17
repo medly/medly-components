@@ -23,4 +23,7 @@ export interface Props extends InputProps, WithThemeProp {
     labelWeight?: FontWeights;
 }
 
-export type WrapperProps = Omit<HTMLProps<HTMLDivElement>, 'size'> & Omit<Props, 'value'>;
+export type WrapperProps = Omit<HTMLProps<HTMLDivElement>, 'size'> &
+    Omit<Props, 'value'> & {
+        isActive?: boolean;
+    };

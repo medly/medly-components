@@ -11,7 +11,7 @@ export const Options = styled('ul')<StyledOptionsProps & WithThemeProp>`
     width: ${({ isNested }) => (isNested ? 'max-content' : '100%')};
     list-style: none;
     box-sizing: border-box;
-    box-shadow: 0 2px 8px ${({ theme }) => theme.select.options.shadowColor};
+    box-shadow: 0 0.2rem 0.8rem ${({ theme }) => theme.select.shadowColor};
     border-radius: ${({ variant }) => (variant === 'outlined' ? `0.4rem` : `0 0 0.4rem 0.4rem `)};
 
     li:first-child {
