@@ -3,62 +3,48 @@ import { centerAligned, css, styled } from '@medly-components/utils';
 import Text from '../../Text';
 import { Props } from './types';
 
-const defaultStyle = ({ theme, variant }: Props) => {
-    const { multiSelect } = theme;
-    const {
-        chip: { default: defaultChipStyle },
-        icon: { default: defaultIconStyle }
-    } = multiSelect[variant];
+const common = () => {
     return css`
-        border: 1px solid ${defaultChipStyle.border};
-        background-color: ${defaultChipStyle.background};
+        border: 1px solid;
         padding: 4px 6px 4px 10px;
         ${SvgIcon} {
             font-size: 1.2rem;
-            background-color: ${defaultIconStyle.background};
             padding: 4px;
             border-radius: 50%;
             font-weight: 600;
-            * {
-                fill: ${defaultIconStyle.color};
-            }
-            &:hover {
-                background-color: ${defaultIconStyle.hoverBackground};
-                * {
-                    fill: ${defaultIconStyle.hoverColor};
-                }
-            }
         }
         ${Text.Style} {
             font-weight: 600;
-            color: ${defaultChipStyle.color};
-        }
-        &:hover {
-            border-color: ${defaultChipStyle.hoverBorder};
         }
     `;
 };
 
-const errorStyle = ({ theme, variant }: Props) => {
+const getStylesForChipAndIcon = ({ theme, variant, state }: Props) => {
     const { multiSelect } = theme;
     const {
-        chip: { error: chipError },
-        icon: { error: iconError }
+        chip: { [state]: chipStyle },
+        icon: { [state]: iconStyle }
     } = multiSelect[variant];
     return css`
-        border-color: ${chipError.border};
-        background-color: ${chipError.background};
+        border-color: ${chipStyle.border};
+        background-color: ${chipStyle.background};
         ${SvgIcon} {
-            background-color: ${iconError.background};
+            background-color: ${iconStyle.background};
             * {
-                fill: ${iconError.color};
+                fill: ${iconStyle.color};
             }
             &:hover {
-                background-color: ${iconError.hoverBackground};
+                background-color: ${iconStyle.hoverBackground};
+                * {
+                    fill: ${iconStyle.hoverColor};
+                }
             }
         }
         &:hover {
-            border-color: ${chipError.hoverBorder};
+            border-color: ${chipStyle.hoverBorder};
+        }
+        ${Text.Style} {
+            color: ${chipStyle.color};
         }
     `;
 };
@@ -76,9 +62,12 @@ export const Chip = styled('button')<Props>`
         outline: none;
     }
 
-    ${defaultStyle};
+    ${common};
 
-    ${({ state }) => state === 'error' && errorStyle}
+    ${props => props.state === 'default' && getStylesForChipAndIcon};
+    ${props => props.state === 'active' && getStylesForChipAndIcon};
+    ${props => props.state === 'error' && getStylesForChipAndIcon};
+    ${props => props.state === 'disabled' && getStylesForChipAndIcon};
 
     ${Text.Style} + ${SvgIcon}{
         cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};

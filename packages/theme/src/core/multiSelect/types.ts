@@ -20,18 +20,14 @@ interface ChipTheme {
     hoverBorder: string;
 }
 
+export type State = 'default' | 'active' | 'error' | 'disabled';
+
 interface MultiSelectComp {
     icon: {
-        default: IconTheme;
-        active: IconTheme;
-        error: IconTheme;
-        disabled: IconTheme;
+        [k in State]: IconTheme;
     };
     chip: {
-        default: ChipTheme;
-        active: ChipTheme;
-        error: ChipTheme;
-        disabled: ChipTheme;
+        [k in State]: ChipTheme;
     };
 }
 

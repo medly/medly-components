@@ -1,4 +1,3 @@
-import { ChevronDownIcon } from '@medly-components/icons/src';
 import { css, styled } from '@medly-components/utils';
 import TextField from '../TextField';
 import { Suffix } from '../TextField/Styled';
@@ -10,20 +9,27 @@ const getDefaultStyle = ({ theme }: SelectWrapperProps) => {
             input {
                 &:focus {
                     &::placeholder {
-                        color: ${theme.colors.black};
+                        color: ${theme.colors.grey[300]};
                     }
                 }
-            }
-        }
-        ${ChevronDownIcon.Style} {
-            * {
-                fill: ${theme.colors.black};
             }
         }
     `;
 };
 
-// const getActiveStyle = () => {};
+const getActiveStyle = ({ theme }: SelectWrapperProps) => {
+    return css`
+        ${TextField.Style} {
+            input {
+                &:focus {
+                    &::placeholder {
+                        color: ${theme.colors.grey[300]};
+                    }
+                }
+            }
+        }
+    `;
+};
 
 const getErrorStyle = ({ theme }: SelectWrapperProps) => {
     return css``;

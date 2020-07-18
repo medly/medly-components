@@ -5,6 +5,7 @@ const grey = colors.grey;
 const black = colors.black;
 const white = colors.white;
 const red = colors.red;
+const blue = colors.blue;
 
 const multiSelectTheme: MultiSelectTheme = {
     outlined: {
@@ -16,22 +17,22 @@ const multiSelectTheme: MultiSelectTheme = {
                 hoverColor: black
             },
             active: {
-                background: '',
-                hoverBackground: '',
-                color: '',
-                hoverColor: ''
+                background: blue[500],
+                hoverBackground: blue[600],
+                color: white,
+                hoverColor: white
             },
             error: {
                 background: red[500],
-                hoverBackground: red[400],
+                hoverBackground: red[600],
                 color: white,
                 hoverColor: white
             },
             disabled: {
-                background: '',
-                hoverBackground: '',
-                color: '',
-                hoverColor: ''
+                background: grey[100],
+                hoverBackground: grey[100],
+                color: grey[400],
+                hoverColor: grey[400]
             }
         },
         chip: {
@@ -42,21 +43,21 @@ const multiSelectTheme: MultiSelectTheme = {
                 color: grey[900]
             },
             active: {
-                background: '',
-                border: '',
-                hoverBorder: '',
+                background: blue[100],
+                border: blue[500],
+                hoverBorder: blue[600],
                 color: grey[900]
             },
             error: {
                 background: red[100],
                 border: red[500],
-                hoverBorder: red[400],
+                hoverBorder: red[600],
                 color: grey[900]
             },
             disabled: {
-                background: '',
-                border: '',
-                hoverBorder: '',
+                background: white,
+                border: grey[300],
+                hoverBorder: grey[300],
                 color: grey[800]
             }
         }
