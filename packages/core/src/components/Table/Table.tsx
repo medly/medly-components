@@ -53,7 +53,7 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
         }, [selectedIds, onRowSelection]);
 
         return (
-            <TablePropsContext.Provider value={{ ...props, columns }}>
+            <TablePropsContext.Provider value={{ ...props, columns, data: isLoading ? loadingBodyData : data }}>
                 <TableStyled ref={ref} {...restProps} onScroll={handleScroll} isRowClickable={isRowClickable}>
                     <Head
                         {...{
@@ -72,8 +72,6 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
                             addColumnMaxSize,
                             selectedRowIds: selectedIds,
                             onRowSelection: toggleId,
-                            data: isLoading ? loadingBodyData : data,
-                            onRowClick: !isLoading && onRowClick,
                             showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
                         }}
                     />

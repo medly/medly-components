@@ -1,13 +1,13 @@
 import { styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import { GridTemplateProps } from '../../types';
-import { Props } from './types';
+import { StyledProps } from './types';
 
 export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({
     style: {
         gridTemplateColumns
     }
-}))<Props>`
+}))<StyledProps>`
     min-width: fit-content;
     display: grid;
     align-items: center;
