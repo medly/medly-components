@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Text from '../../Text';
 import { GroupCell } from '../GroupCell';
 import { getGridTemplateColumns } from '../helpers';
+import { TablePropsContext } from '../TableProps.context';
 import { TableColumnConfig } from '../types';
 import { TBody } from './Body.styled';
 import Cell from './Cell';
@@ -10,19 +11,8 @@ import { NoResult } from './Row/Row.styled';
 import { Props } from './types';
 
 const Body: React.FC<Props> = React.memo(props => {
-    const {
-        data,
-        columns,
-        onRowClick,
-        selectedRowIds,
-        rowIdentifier,
-        rowClickDisableKey,
-        rowSelectionDisableKey,
-        onRowSelection,
-        addColumnMaxSize,
-        isLoading,
-        showShadowAfterFrozenElement
-    } = props;
+    const { data, columns, isLoading, rowIdentifier, rowClickDisableKey, rowSelectionDisableKey } = useContext(TablePropsContext),
+        { onRowClick, selectedRowIds, onRowSelection, addColumnMaxSize, showShadowAfterFrozenElement } = props;
 
     const getRow = (rowData: any = {}, configs: TableColumnConfig[] = columns, field = '') =>
             configs.map(config => {
