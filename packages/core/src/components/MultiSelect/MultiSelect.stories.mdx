@@ -26,10 +26,10 @@ Basic MultiSelect component
                     required={boolean('Required', false)}
                     label={text('Label', 'Pharmacy')}
                     placeholder="Select Pharmacy"
-                    isSearchable={boolean('Is Searchable', false)}
+                    isSearchable={boolean('Is Searchable', true)}
                     helperText={text('Helper Text', 'We will show reports based on Pharmacy')}
                     errorText={text('Error Text', '')}
-                    variant={select('Variant', variants, 'outlined')}
+                    variant={select('Variant', variants, 'filled')}
                 />
             );
         }}

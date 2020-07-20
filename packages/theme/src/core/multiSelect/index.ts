@@ -65,28 +65,28 @@ const multiSelectTheme: MultiSelectTheme = {
     filled: {
         icon: {
             default: {
-                background: '',
-                hoverBackground: '',
-                color: '',
-                hoverColor: ''
+                background: grey[400],
+                hoverBackground: grey[500],
+                color: grey[900],
+                hoverColor: black
             },
             active: {
-                background: '',
-                hoverBackground: '',
-                color: '',
-                hoverColor: ''
+                background: blue[500],
+                hoverBackground: blue[600],
+                color: white,
+                hoverColor: white
             },
             error: {
-                background: '',
-                hoverBackground: '',
-                color: '',
-                hoverColor: ''
+                background: red[500],
+                hoverBackground: red[600],
+                color: white,
+                hoverColor: white
             },
             disabled: {
-                background: '',
-                hoverBackground: '',
-                color: '',
-                hoverColor: ''
+                background: grey[100],
+                hoverBackground: grey[100],
+                color: grey[400],
+                hoverColor: grey[400]
             }
         },
         chip: {
@@ -97,21 +97,21 @@ const multiSelectTheme: MultiSelectTheme = {
                 color: grey[900]
             },
             active: {
-                background: '',
-                border: '',
-                hoverBorder: '',
+                background: 'rgba(0, 90, 238, 0.2)',
+                border: blue[500],
+                hoverBorder: blue[600],
                 color: grey[900]
             },
             error: {
-                background: '',
-                border: '',
-                hoverBorder: '',
+                background: 'rgba(204, 0, 0, 0.2)',
+                border: red[500],
+                hoverBorder: red[600],
                 color: grey[900]
             },
             disabled: {
-                background: '',
-                border: '',
-                hoverBorder: '',
+                background: 'transparent',
+                border: grey[300],
+                hoverBorder: grey[300],
                 color: grey[800]
             }
         }

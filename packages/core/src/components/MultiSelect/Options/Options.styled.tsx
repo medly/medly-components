@@ -12,7 +12,8 @@ export const ChipArea = styled.div<OptionsStyledProps>`
         border: 1px solid ${({ theme }) => theme.colors.grey[300]};
         background-color: ${({ theme }) => theme.colors.grey[100]};
         color: ${({ theme }) => theme.colors.grey[900]};
-        padding: 0 6px 0 10px;
+        padding: 0 0.6rem 0 1rem;
+        margin: 0.2rem;
         ${SvgIcon} {
             background-color: transparent;
             padding: 0;

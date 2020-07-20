@@ -1,16 +1,44 @@
+import ChevronDownIcon from '@medly-components/icons/src/icons/Custom/ChevronDownIcon';
 import { css, styled } from '@medly-components/utils';
 import TextField from '../TextField';
-import { Suffix } from '../TextField/Styled';
 import { SelectWrapperProps } from './types';
 
-const getDefaultStyle = ({ theme }: SelectWrapperProps) => {
+export const SuffixWrap = styled.div`
+    display: flex;
+    align-items: center;
+`;
+
+const getDefaultStyle = ({ theme, areOptionsVisible, disabled, isSearchable }: SelectWrapperProps) => {
     return css`
         ${TextField.Style} {
-            input {
-                &:focus {
-                    &::placeholder {
-                        color: ${theme.colors.grey[300]};
-                    }
+            margin: 0;
+            caret-color: ${!isSearchable && 'transparent'};
+            max-width: 25.6rem;
+
+            label {
+                pointer-events: none;
+            }
+
+            div,
+            input,
+            label {
+                cursor: ${!disabled && 'pointer'};
+            }
+            &:focus-within {
+                input {
+                    cursor: ${!disabled && isSearchable && 'text'};
+                    padding-right: 5px;
+                }
+            }
+        }
+        ${SuffixWrap} {
+            > ${ChevronDownIcon.Style} {
+                transition: all 100ms ease-out;
+                transform: ${areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)'};
+                margin-left: 0.8rem;
+                * {
+                    transition: fill 100ms ease-out;
+                    fill: ${theme.colors.black};
                 }
             }
         }
@@ -19,12 +47,10 @@ const getDefaultStyle = ({ theme }: SelectWrapperProps) => {
 
 const getActiveStyle = ({ theme }: SelectWrapperProps) => {
     return css`
-        ${TextField.Style} {
-            input {
-                &:focus {
-                    &::placeholder {
-                        color: ${theme.colors.grey[300]};
-                    }
+        ${SuffixWrap} {
+            > ${ChevronDownIcon.Style} {
+                * {
+                    fill: ${theme.colors.blue[500]};
                 }
             }
         }
@@ -32,15 +58,28 @@ const getActiveStyle = ({ theme }: SelectWrapperProps) => {
 };
 
 const getErrorStyle = ({ theme }: SelectWrapperProps) => {
-    return css``;
+    return css`
+        ${SuffixWrap} {
+            > ${ChevronDownIcon.Style} {
+                * {
+                    fill: ${theme.colors.red[500]};
+                }
+            }
+        }
+    `;
 };
 
-// const getDisabledStyle = () => {};
-
-export const SuffixWrap = styled.div`
-    display: flex;
-    align-items: center;
-`;
+const getDisabledStyle = ({ theme }: SelectWrapperProps) => {
+    return css`
+        ${SuffixWrap} {
+            > ${ChevronDownIcon.Style} {
+                * {
+                    fill: ${theme.colors.grey[400]};
+                }
+            }
+        }
+    `;
+};
 
 export const Wrapper = styled.div<SelectWrapperProps>`
     position: relative;
@@ -50,41 +89,8 @@ export const Wrapper = styled.div<SelectWrapperProps>`
     margin: ${({ theme, fullWidth }) =>
         fullWidth ? `${theme.spacing.S2} 0` : `${theme.spacing.S2} ${theme.spacing.S2} ${theme.spacing.S2} 0`};
 
-    ${TextField.Style} {
-        margin: 0;
-        caret-color: ${({ isSearchable }) => !isSearchable && 'transparent'};
-
-        label {
-            pointer-events: none;
-        }
-
-        div,
-        input,
-        label {
-            cursor: ${({ disabled }) => !disabled && 'pointer'};
-        }
-        &:focus-within {
-            input {
-                cursor: ${({ disabled, isSearchable }) => !disabled && isSearchable && 'text'};
-            }
-        }
-        ${Suffix} {
-            transition: transform 200ms ease-out;
-            transform: ${({ areOptionsVisible }) => (areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)')};
-            * {
-                transition: fill 100ms ease-out;
-            }
-        }
-        &:not(:focus-within):hover {
-            ${Suffix} {
-                * {
-                    fill: ${({ theme, variant, disabled, isErrorPresent }) =>
-                        !disabled && !isErrorPresent && theme.textField[variant].default.textColor};
-                }
-            }
-        }
-    }
-
     ${getDefaultStyle};
+    ${({ areOptionsVisible }) => areOptionsVisible && getActiveStyle};
     ${({ isErrorPresent }) => isErrorPresent && getErrorStyle};
+    ${({ disabled }) => disabled && getDisabledStyle};
 `;

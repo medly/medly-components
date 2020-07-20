@@ -20,6 +20,12 @@ interface ChipTheme {
     hoverBorder: string;
 }
 
+interface TextFieldTheme {
+    borderColor: string;
+    labelColor: string;
+    inputColor: string;
+}
+
 export type State = 'default' | 'active' | 'error' | 'disabled';
 
 interface MultiSelectComp {

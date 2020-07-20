@@ -27,10 +27,10 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
         const wrapperRef = useRef<HTMLDivElement>(null),
             optionsRef = useRef<HTMLUListElement>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
-            [inputValue, setInputValue] = useState(''),
             [options, setOptions] = useState(defaultOptions),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(defaultOptions, values)),
+            [inputValue, setInputValue] = useState(values.toString()),
             [placeholder, setPlaceholder] = useState(values.length > 0 ? `${values.length} options selected` : props.placeholder);
 
         const updateToDefaultOptions = useCallback(() => setOptions(defaultOptions), [defaultOptions]),
@@ -57,8 +57,8 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             ),
             handleOptionClick = useCallback(
                 (latestValues: any[]) => {
-                    setInputValue('');
                     setSelectedOptions(getDefaultSelectedOptions(options, latestValues));
+                    setInputValue(latestValues.toString());
                     onChange && onChange(latestValues);
                 },
                 [options, onChange]
@@ -66,7 +66,6 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             handleOuterClick = useCallback(() => {
                 if (areOptionsVisible) {
                     hideOptions();
-                    setInputValue('');
                     updateToDefaultOptions();
                 }
             }, [areOptionsVisible]),
@@ -82,7 +81,11 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                     return 'active';
                 }
                 return 'default';
-            }, [areOptionsVisible, props.errorText, props.disabled]);
+            }, [areOptionsVisible, props.errorText, props.disabled]),
+            onClearHandler = useCallback(() => {
+                setSelectedOptions([]);
+                setInputValue('');
+            }, []);
 
         useEffect(() => {
             setSelectedOptions(getDefaultSelectedOptions(defaultOptions, values));
@@ -100,7 +103,9 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
         const chipEl = () => {
             return (
                 <SuffixWrap>
-                    <Chip label="2" state={getState()} variant={variant} onClear={() => {}} />
+                    {selectedOptions.length > 0 && (
+                        <Chip label={selectedOptions.length} state={getState()} variant={variant} onClear={onClearHandler} />
+                    )}
                     <ChevronDownIcon />
                 </SuffixWrap>
             );

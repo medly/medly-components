@@ -6,10 +6,10 @@ import { Props } from './types';
 const common = () => {
     return css`
         border: 1px solid;
-        padding: 4px 6px 4px 10px;
+        padding: 0.4rem 0.6rem 0.4rem 1rem;
         ${SvgIcon} {
             font-size: 1.2rem;
-            padding: 4px;
+            padding: 0.4rem;
             border-radius: 50%;
             font-weight: 600;
         }
@@ -52,8 +52,7 @@ const getStylesForChipAndIcon = ({ theme, variant, state }: Props) => {
 export const Chip = styled('button')<Props>`
     background-color: transparent;
     border: none;
-    border-radius: 20px;
-    margin: 2px;
+    border-radius: 2rem;
     user-select: none;
     max-width: max-content;
     cursor: ${({ onClick, disabled }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'default')};
@@ -71,7 +70,7 @@ export const Chip = styled('button')<Props>`
 
     ${Text.Style} + ${SvgIcon}{
         cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-        margin-left: 5px;
+        margin-left: 0.6rem;
     }
 
     ${centerAligned()}
