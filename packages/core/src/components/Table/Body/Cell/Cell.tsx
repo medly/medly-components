@@ -1,3 +1,4 @@
+import { ExpandMoreIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
 import React, { useCallback, useEffect, useMemo, useRef } from 'react';
 import Checkbox from '../../../Checkbox';
@@ -13,11 +14,13 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
             data,
             rowId,
             isRowSelected,
+            isExpanded,
             isRowClickDisabled,
             isRowSelectionDisabled,
             onRowSelection,
             dottedFieldName,
             isLoading,
+            onExpansionIconClick,
             showShadowAtRight,
             ...restProps
         } = props,
@@ -31,20 +34,7 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
         handleCellClick = useCallback((e: React.MouseEvent) => isRowSelectionCell && e.stopPropagation(), []),
         handleRowSelection = (id: number) => () => onRowSelection(id);
 
-    const rowSelectionCheckbox = useMemo(
-            () => (
-                <Checkbox
-                    disabled={isRowSelectionDisabled}
-                    ref={childRef}
-                    checked={isRowSelected}
-                    onChange={handleRowSelection(rowId)}
-                    onClick={stopPropagation}
-                    name="active"
-                />
-            ),
-            [rowId, isRowSelectionDisabled, isRowSelected]
-        ),
-        formattedCell = useCallback(() => {
+    const formattedCell = useCallback(() => {
             switch (config.formatter) {
                 case 'boolean':
                     return (
@@ -76,12 +66,28 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
             frozen={config.frozen}
             align={textAlign}
             onClick={handleCellClick}
+            isExpanded={isExpanded}
             isRowSelectionCell={isRowSelectionCell}
             showShadowAtRight={isRowSelectionCell && showShadowAtRight}
             showSelectedRowBorder={isRowSelectionCell && isRowSelected}
             {...restProps}
         >
-            {isLoading ? <Styled.LoadingDiv ref={childRef} /> : isRowSelectionCell ? rowSelectionCheckbox : formattedCell()}
+            {isLoading ? (
+                <Styled.LoadingDiv ref={childRef} />
+            ) : config.field === 'medly-table-checkbox' ? (
+                <Checkbox
+                    disabled={isRowSelectionDisabled}
+                    ref={childRef}
+                    checked={isRowSelected}
+                    onChange={handleRowSelection(rowId)}
+                    onClick={stopPropagation}
+                    name="active"
+                />
+            ) : config.field === 'medly-row-expansion' ? (
+                <ExpandMoreIcon onClick={onExpansionIconClick} />
+            ) : (
+                formattedCell()
+            )}
         </Styled.Cell>
     );
 });

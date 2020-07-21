@@ -34,9 +34,15 @@ exports[`Cell should not render text if hidden property is given 1`] = `
   justify-content: flex-start;
 }
 
-.c0 .sc-fzoLsD {
+.c0 > .sc-fzoLsD {
   margin: 0;
   padding: 0;
+}
+
+.c0 > .sc-fzpans {
+  -webkit-transition: -webkit-transform 100ms ease-out;
+  -webkit-transition: transform 100ms ease-out;
+  transition: transform 100ms ease-out;
 }
 
 .c0 .c1 {
@@ -226,9 +232,15 @@ exports[`Cell should render checkbox properly 1`] = `
   justify-content: flex-start;
 }
 
-.c0 .c1 {
+.c0 > .c1 {
   margin: 0;
   padding: 0;
+}
+
+.c0 > .sc-fzpans {
+  -webkit-transition: -webkit-transform 100ms ease-out;
+  -webkit-transition: transform 100ms ease-out;
+  transition: transform 100ms ease-out;
 }
 
 .c0 .c3 {
@@ -324,9 +336,15 @@ exports[`Cell should render frozen text properly 1`] = `
   z-index: 1;
 }
 
-.c0 .sc-fzoLsD {
+.c0 > .sc-fzoLsD {
   margin: 0;
   padding: 0;
+}
+
+.c0 > .sc-fzpans {
+  -webkit-transition: -webkit-transform 100ms ease-out;
+  -webkit-transition: transform 100ms ease-out;
+  transition: transform 100ms ease-out;
 }
 
 .c0 * {
@@ -386,9 +404,15 @@ exports[`Cell should render text properly 1`] = `
   justify-content: flex-start;
 }
 
-.c0 .sc-fzoLsD {
+.c0 > .sc-fzoLsD {
   margin: 0;
   padding: 0;
+}
+
+.c0 > .sc-fzpans {
+  -webkit-transition: -webkit-transform 100ms ease-out;
+  -webkit-transition: transform 100ms ease-out;
+  transition: transform 100ms ease-out;
 }
 
 .c0 .c1 {

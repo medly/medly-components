@@ -1,37 +1,9 @@
+import { SvgIconStyled } from '@medly-components/icons/src/SvgIcon/SvgIcon.styled';
 import { clearMarginPadding, css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Checkbox from '../../../Checkbox';
 import Text from '../../../Text';
 import { TableCellStyledProps } from './types';
-
-export const CustomComponentWrapper = styled('div')``;
-
-export const LoadingDiv = styled('div')`
-    @keyframes placeHolderShimmer {
-        0% {
-            background-position: -468px 0;
-        }
-        100% {
-            background-position: 468px 0;
-        }
-    }
-    width: 100%;
-    height: 2.2rem;
-    animation-duration: 1.25s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-name: placeHolderShimmer;
-    animation-timing-function: linear;
-    background: ${({ theme }) => theme.colors.grey[100]};
-    background: linear-gradient(
-        to right,
-        ${({ theme }) => theme.colors.grey[100]} 8%,
-        ${({ theme }) => theme.colors.grey[200]} 18%,
-        ${({ theme }) => theme.colors.grey[100]} 33%
-    );
-    background-size: 800px 104px;
-    position: relative;
-`;
 
 const wrapTextStyle = css`
         ${Text.Style} {
@@ -86,15 +58,55 @@ export const Cell = styled('td')<TableCellStyledProps>`
     padding: ${({ hidden, isRowSelectionCell }) => (hidden ? '0' : isRowSelectionCell ? '1.2rem' : '1.2rem 1.6rem')};
     justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : align === 'center' ? 'center' : 'flex-start')};
 
-    ${Checkbox.Style} {
+    & > ${Checkbox.Style} {
        ${clearMarginPadding()};
+    }
+
+    & > ${SvgIconStyled} {
+        transition: transform 100ms ease-out;
+        transform: ${props => props.isExpanded && `rotate(180deg) `} 
     }
 
     ${props => props.frozen && frozenStyle}
     ${props => props.wrapText && wrapTextStyle}
     ${props => props.showShadowAtRight && shadowStyle};
     ${props => props.showSelectedRowBorder && selectedBorderStyle}
+    
 `;
 Cell.defaultProps = {
     wrapText: true
 };
+
+export const ExpandedCell = styled('td')`
+    grid-column: 1/-1;
+    cursor: default;
+`;
+
+export const CustomComponentWrapper = styled('div')``;
+
+export const LoadingDiv = styled('div')`
+    @keyframes placeHolderShimmer {
+        0% {
+            background-position: -468px 0;
+        }
+        100% {
+            background-position: 468px 0;
+        }
+    }
+    width: 100%;
+    height: 2.2rem;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: ${({ theme }) => theme.colors.grey[100]};
+    background: linear-gradient(
+        to right,
+        ${({ theme }) => theme.colors.grey[100]} 8%,
+        ${({ theme }) => theme.colors.grey[200]} 18%,
+        ${({ theme }) => theme.colors.grey[100]} 33%
+    );
+    background-size: 800px 104px;
+    position: relative;
+`;

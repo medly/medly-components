@@ -11,6 +11,7 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
     min-width: fit-content;
     display: grid;
     align-items: center;
+    position: relative;
     cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
 
     &:hover {
