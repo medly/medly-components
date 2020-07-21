@@ -3,7 +3,7 @@ import { useState, useCallback } from 'react';
 import { action } from '@storybook/addon-actions';
 import { boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './Table.stories';
+import { ThemeInterface, ColumnConfigInterface, ExpandedRowComponent } from './Table.stories';
 import { filterData } from './filterData';
 import columns from './columns';
 import data from './data';
@@ -43,6 +43,7 @@ Simple `Table` component to show set of data.
                     isSelectable={boolean('Is selectable', true)}
                     isExpandable={boolean('Is Expandable', true)}
                     rowSelectionDisableKey="disabled"
+                    expandedRowComponent={ExpandedRowComponent}
                 />
             );
         }}
@@ -60,15 +61,15 @@ There are only two required props `data` & `columns`. It would be really great i
 You can import `TableColumnConfig` to typesafe your column config.
 
 ```ts
-import { TableColumnConfig } from '@medly-components/utils';
+import { TableColumnConfig } from '@medly-components/core';
 
 const columns: TableColumnConfig[] = [{}, {}];
 ```
 
 #### Column config type
 
-<Props of={stories.ColumnConfigInterface} />
+<Props of={ColumnConfigInterface} />
 
 #### TableTheme
 
-<Props of={stories.Theme} />
+<Props of={ThemeInterface} />

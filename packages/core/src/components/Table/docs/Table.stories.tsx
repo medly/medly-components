@@ -1,10 +1,13 @@
 import { defaultTheme, TableTheme } from '@medly-components/theme';
-import { FC } from 'react';
-import { TableColumnConfig } from '../types';
+import React, { FC } from 'react';
+import Text from '../../Text';
+import { TableColumnConfig, TableProps } from '../types';
 
-export const Theme: FC<TableTheme> = () => null;
-Theme.defaultProps = {
+export const ThemeInterface: FC<TableTheme> = () => null;
+ThemeInterface.defaultProps = {
     ...defaultTheme.table
 };
+
+export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ data }) => <Text> Hello {`${data.name}`}</Text>;
 
 export const ColumnConfigInterface: FC<TableColumnConfig> = () => null;

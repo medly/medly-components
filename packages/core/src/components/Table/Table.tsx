@@ -8,11 +8,11 @@ import { getUpdatedColumns } from './helpers';
 import { maxColumnSizeReducer } from './maxColumnSizeReducer';
 import { TableStyled } from './Table.styled';
 import { TablePropsContext } from './TableProps.context';
-import { Props, StaticProps } from './types';
+import { StaticProps, TableProps } from './types';
 import useRowSelector from './useRowSelector';
 import { useScrollState } from './useScrollState';
 
-export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
+export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const {
             data,

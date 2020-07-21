@@ -1,4 +1,4 @@
 import { createContext } from 'react';
-import { Props } from './types';
+import { TableProps } from './types';
 
-export const TablePropsContext = createContext<Props | null>(null);
+export const TablePropsContext = createContext<TableProps | null>(null);

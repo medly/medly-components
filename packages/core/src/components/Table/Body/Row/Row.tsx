@@ -13,9 +13,16 @@ import { Props } from './types';
 export const Row: React.FC<Props> = React.memo(props => {
     const [isExpanded, setExpansionState] = useState(false),
         { id, data, showShadowAfterFrozenElement, selectedRowIds, onRowSelection, addColumnMaxSize, ...restProps } = props,
-        { columns, isLoading, onRowClick, rowClickDisableKey, rowSelectionDisableKey, isSelectable, isExpandable } = useContext(
-            TablePropsContext
-        );
+        {
+            columns,
+            isLoading,
+            onRowClick,
+            rowClickDisableKey,
+            rowSelectionDisableKey,
+            isSelectable,
+            isExpandable,
+            expandedRowComponent: ExpandedRowComponent
+        } = useContext(TablePropsContext);
 
     const isRowSelected = !isLoading && selectedRowIds.includes(id),
         handleRowSelection = useCallback(() => onRowSelection(id), [id]),
@@ -96,7 +103,9 @@ export const Row: React.FC<Props> = React.memo(props => {
                             showSelectedRowBorder={isRowSelected}
                             showShadowAtRight={showShadowAfterFrozenElement}
                         />
-                        <ExtendedRowCell onClick={stopPropagation}>Something</ExtendedRowCell>
+                        <ExtendedRowCell onClick={stopPropagation}>
+                            <ExpandedRowComponent data={data} disabled={data[rowClickDisableKey]} rowId={id} />
+                        </ExtendedRowCell>
                     </>
                 )}
             </Styled.Row>
