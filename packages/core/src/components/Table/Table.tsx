@@ -2,9 +2,9 @@ import { WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useMemo, useReducer, useState } from 'react';
 import Body from './Body';
 import ColumnConfiguration from './ColumnConfiguration';
-import { checkboxColumnConfig, expansionIconColumnConfig, loadingBodyData } from './constants';
+import { loadingBodyData } from './constants';
 import Head from './Head';
-import { addSizeToColumnConfig } from './helpers';
+import { getUpdatedColumns } from './helpers';
 import { maxColumnSizeReducer } from './maxColumnSizeReducer';
 import { TableStyled } from './Table.styled';
 import { TablePropsContext } from './TableProps.context';
@@ -20,6 +20,7 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
             rowIdentifier,
             rowSelectionDisableKey,
             isSelectable,
+            isExpandable,
             selectedRowIds,
             onRowSelection,
             isLoading,
@@ -27,9 +28,7 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
         } = props;
 
         const [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
-            [columns, setColumns] = useState(
-                addSizeToColumnConfig([...(isSelectable ? [expansionIconColumnConfig, checkboxColumnConfig] : []), ...props.columns])
-            ),
+            [columns, setColumns] = useState(getUpdatedColumns(props.columns, isSelectable, isExpandable)),
             addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]),
             [scrollState, handleScroll] = useScrollState();
 
@@ -39,10 +38,8 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
             { isAnyRowSelected, isEachRowSelected, selectedIds, toggleId } = rowSelector;
 
         useEffect(() => {
-            setColumns(
-                addSizeToColumnConfig([...(isSelectable ? [expansionIconColumnConfig, checkboxColumnConfig] : []), ...props.columns])
-            );
-        }, [props.columns, isSelectable]);
+            setColumns(getUpdatedColumns(props.columns, isSelectable, isExpandable));
+        }, [props.columns, isSelectable, isExpandable]);
 
         useEffect(() => {
             onRowSelection && onRowSelection(selectedIds);

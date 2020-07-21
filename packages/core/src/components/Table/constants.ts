@@ -1,19 +1,11 @@
 import { TableColumnConfig } from './types';
 
-export const expansionIconColumnConfig: TableColumnConfig = {
+export const rowActionsColumnConfig: TableColumnConfig = {
     title: '',
-    field: 'medly-row-expansion',
-    formatter: 'checkbox',
+    field: 'row-actions',
+    formatter: 'row-actions',
     hidden: false,
-    frozen: false
-};
-
-export const checkboxColumnConfig: TableColumnConfig = {
-    title: 'ch',
-    field: 'medly-table-checkbox',
-    formatter: 'checkbox',
-    hidden: false,
-    frozen: false
+    frozen: true
 };
 
 export const loadingBodyData = [{ id: 'loading1' }, { id: 'loading2' }, { id: 'loading3' }, { id: 'loading4' }, { id: 'loading5' }];

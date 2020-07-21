@@ -10,7 +10,7 @@ import HeadRow from './HeadRow';
 import { Props } from './types';
 
 const Head: React.FC<Props> = React.memo(props => {
-    const { columns, isLoading, onSort, defaultSortOrder, defaultSortField } = useContext(TablePropsContext),
+    const { columns, isLoading, isExpandable, isSelectable, onSort, defaultSortOrder, defaultSortField } = useContext(TablePropsContext),
         {
             setColumns,
             isAnyRowSelected,
@@ -79,14 +79,15 @@ const Head: React.FC<Props> = React.memo(props => {
                             defaultSortOrder={defaultSortOrder}
                             onSortChange={handleSortChange}
                             onWidthChange={handleWidthChange}
-                            isRowSelectionCell={config.field === 'medly-table-checkbox'}
-                            showShadowAtRight={config.field === 'medly-table-checkbox' && showShadowAfterFrozenElement}
+                            isRowExpandable={isExpandable}
+                            isRowActionCell={config.field === 'row-actions'}
+                            showShadowAtRight={config.field === 'row-actions' && showShadowAfterFrozenElement}
                         >
-                            {config.field === 'medly-table-checkbox' ? selectAllCheckBox : config.title}
+                            {config.field === 'row-actions' && isSelectable ? selectAllCheckBox : config.title}
                         </HeadCell>
                     );
                 }),
-            [sortField, maxColumnSizes, selectAllCheckBox, showShadowAfterFrozenElement]
+            [isExpandable, isSelectable, sortField, maxColumnSizes, selectAllCheckBox, showShadowAfterFrozenElement]
         );
 
     return (
