@@ -2,7 +2,7 @@ import { render } from '@test-utils';
 import React from 'react';
 import Checkbox from '../../../Checkbox';
 import Text from '../../../Text';
-import { Cell } from './Cell.styled';
+import { Cell } from './Styled/Cell.styled';
 
 describe('Cell', () => {
     it('should render text properly', () => {

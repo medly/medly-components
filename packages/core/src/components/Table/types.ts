@@ -6,8 +6,8 @@ export type SortOrder = 'asc' | 'desc';
 export interface ColumnsWidth {
     numeric: string;
     group: string;
-    checkbox: string;
     boolean: string;
+    'row-actions': string;
     'text-short': string;
     'text-long': string;
     'react-component': string;
@@ -52,7 +52,7 @@ export interface TableStyledProps {
     isRowClickable?: boolean;
 }
 
-export interface Props extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type'> {
+export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type'> {
     /** Array of your table data */
     data: {
         [key: string]: any;
@@ -67,6 +67,8 @@ export interface Props extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type'
     rowClickDisableKey?: string;
     /** Set it true to shows checkboxes to select rows */
     isSelectable?: boolean;
+    /** Set it true to expand rows to show extra info */
+    isExpandable?: boolean;
     /** Set it true to shows placeholder shimmer */
     isLoading?: boolean;
     /** Default Sort Field*/
@@ -81,6 +83,8 @@ export interface Props extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type'
     onRowClick?: (rowData: object) => void;
     /** Function to be called on click of sort icon */
     onSort?: (field: string, order: SortOrder) => void;
+    /** Component to show when row is expanded */
+    expandedRowComponent?: React.FC<{ rowData: any; rowId?: any; disabled?: boolean }>;
 }
 
 export interface StaticProps {

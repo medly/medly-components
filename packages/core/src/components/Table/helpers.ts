@@ -1,4 +1,5 @@
 import { columnsWidth } from './columnsWidth';
+import { rowActionsColumnConfig } from './constants';
 import { TableColumnConfig } from './types';
 
 export const addSizeToColumnConfig = (columnConfigs: TableColumnConfig[]): TableColumnConfig[] => {
@@ -8,6 +9,22 @@ export const addSizeToColumnConfig = (columnConfigs: TableColumnConfig[]): Table
             : { ...config, size: config.hidden ? `minmax(0px, 0px)` : columnsWidth[config.formatter] };
     });
 };
+
+export const getUpdatedColumns = (
+    columnConfigs: TableColumnConfig[],
+    isSelectable?: boolean,
+    isExpandable?: boolean
+): TableColumnConfig[] => [
+    ...(isSelectable || isExpandable
+        ? [
+              {
+                  ...rowActionsColumnConfig,
+                  size: isSelectable && isExpandable ? `minmax(84px, 0.1fr)` : `minmax(48px, 0.1fr)`
+              }
+          ]
+        : []),
+    ...addSizeToColumnConfig(columnConfigs)
+];
 
 const getCumulativeTemplate = (configs: TableColumnConfig[]): string => {
     const cumulativeSize = configs.reduce(

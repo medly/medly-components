@@ -16,7 +16,7 @@ export const Wrapper = styled('button')<{ isActive: boolean }>`
     border-top-right-radius: 0.8rem;
     border-bottom-left-radius: ${({ isActive }) => !isActive && '0.8rem'};
     border-bottom-right-radius: ${({ isActive }) => !isActive && '0.8rem'};
-    transition: border 200ms ease-out;
+    transition: all 200ms ease-out;
 
     ${SvgIcon} {
         position: absolute;

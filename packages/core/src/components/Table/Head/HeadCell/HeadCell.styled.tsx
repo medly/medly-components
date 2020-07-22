@@ -1,5 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
-import { Theme } from '@medly-components/theme/src';
+import { Theme } from '@medly-components/theme';
 import { clearMarginPadding, css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Checkbox from '../../../Checkbox';
@@ -19,6 +19,7 @@ const frozenStyle = css`
             overflow: visible;
             &::after {
                 content: '';
+                top: 0;
                 right: -1.2rem;
                 height: 100%;
                 width: 1.2rem;
@@ -37,17 +38,18 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
     align-items: flex-end;
     opacity: ${({ hidden }) => (hidden ? 0 : 1)};
     position: ${({ frozen }) => (frozen ? 'sticky' : 'relative')};
-    cursor: ${({ isRowSelectionCell }) => isRowSelectionCell && 'default'};
-    padding: ${({ hidden, isRowSelectionCell }) => (hidden ? '0' : isRowSelectionCell ? '1.2rem' : '0.8rem')};
+    cursor: ${({ isRowActionCell }) => isRowActionCell && 'default'};
+    padding: ${({ hidden, isRowActionCell }) => (hidden ? '0' : isRowActionCell ? `1.2rem` : '0.8rem')};
 
     &:not(:last-child) {
         &::after {
-            ${getBorder('right')}
+            ${({ children }) => children && getBorder('right')}
         }
     }
 
     ${Checkbox.Style} {
-        ${clearMarginPadding()};
+        padding: 0;
+        margin-left: ${({ isRowExpandable }) => isRowExpandable && '3.4rem'};
     }
 
     ${props => props.frozen && frozenStyle}

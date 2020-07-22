@@ -36,8 +36,12 @@ const useRowSelector = (
     );
 
     useEffect(() => {
-        setSelectedIds(isSelectable ? initialSelectedIds : []);
-    }, [initialSelectedIds, isSelectable]);
+        !isSelectable && setSelectedIds([]);
+    }, [isSelectable]);
+
+    useEffect(() => {
+        setSelectedIds(initialSelectedIds);
+    }, [initialSelectedIds]);
 
     return { isEachRowSelected, isAnyRowSelected, selectedIds, toggleId };
 };
