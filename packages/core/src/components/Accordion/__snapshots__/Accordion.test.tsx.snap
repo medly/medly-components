@@ -53,8 +53,8 @@ exports[`Accordion component should render properly 1`] = `
   border-top-right-radius: 0.8rem;
   border-bottom-left-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
-  -webkit-transition: border 200ms ease-out;
-  transition: border 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
 }
 
 .c1 .c2 {

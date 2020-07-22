@@ -11,6 +11,17 @@ export interface TableTheme {
         };
         selectedBorderColor: string;
     };
+    accordionIcon: {
+        color: string;
+        bgColor: {
+            hover: string;
+            pressed: string;
+            selected: {
+                hover: string;
+                pressed: string;
+            };
+        };
+    };
     header: {
         bgColor: string;
         cell: {

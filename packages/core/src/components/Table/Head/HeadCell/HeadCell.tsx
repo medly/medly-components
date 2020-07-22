@@ -83,19 +83,27 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
 
     return (
         <HeadCellStyled as="th" ref={cellEl} frozen={frozen} hidden={hidden} {...restProps}>
-            {React.Children.map(children, c => {
-                return isValidStringOrNumber(c) ? (
-                    <HeadCellButton onClick={handleSortIconClick} isSelected={sortField === field && !isLoading} withHoverEffect={sortable}>
-                        <Text textVariant="h5" uppercase>
-                            {c}
-                        </Text>
-                        {sortable && sortIcon}
-                    </HeadCellButton>
-                ) : (
-                    c
-                );
-            })}
-            <ResizeHandler onMouseDown={initResize} onDoubleClick={handleDoubleClick} />
+            {children && (
+                <>
+                    {React.Children.map(children, c => {
+                        return isValidStringOrNumber(c) ? (
+                            <HeadCellButton
+                                onClick={handleSortIconClick}
+                                isSelected={sortField === field && !isLoading}
+                                withHoverEffect={sortable}
+                            >
+                                <Text textVariant="h5" uppercase>
+                                    {c}
+                                </Text>
+                                {sortable && sortIcon}
+                            </HeadCellButton>
+                        ) : (
+                            c
+                        );
+                    })}
+                    <ResizeHandler onMouseDown={initResize} onDoubleClick={handleDoubleClick} />
+                </>
+            )}
         </HeadCellStyled>
     );
 });

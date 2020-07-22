@@ -14,6 +14,17 @@ const table: TableTheme = {
         },
         selectedBorderColor: colors.blue[500]
     },
+    accordionIcon: {
+        color: colors.black,
+        bgColor: {
+            hover: 'rgba(96, 120, 144, 0.1)',
+            pressed: 'rgba(96, 120, 144, 0.2)',
+            selected: {
+                hover: `rgba(18, 106, 250, 0.15)`,
+                pressed: `rgba(18, 106, 250, 0.3)`
+            }
+        }
+    },
     header: {
         bgColor: colors.white,
         cell: {

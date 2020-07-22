@@ -1,4 +1,4 @@
-import { defaultTheme, SearchBoxTheme } from '@medly-components/theme/src';
+import { defaultTheme, SearchBoxTheme } from '@medly-components/theme';
 import { Props } from './types';
 
 export const optionsArray = [
