@@ -55,6 +55,7 @@ export const Row: React.FC<Props> = React.memo(props => {
                       ) : (
                           <Cell
                               rowId={id}
+                              key={fieldName}
                               config={config}
                               as={field ? 'div' : 'td'}
                               isLoading={isLoading}
