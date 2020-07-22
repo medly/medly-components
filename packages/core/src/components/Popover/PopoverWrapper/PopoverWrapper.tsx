@@ -15,7 +15,13 @@ export const PopoverWrapper: FC<Props> & WithStyle = React.memo(props => {
     const childrenCount = useMemo(() => React.Children.count(children), [children]),
         childrenArray = useMemo(() => React.Children.toArray(props.children), [children]),
         restChildren = useMemo(() => childrenArray.slice(0, childrenCount - 1), [children]),
-        popover = useMemo(() => childrenArray[childrenCount - 1], [children]);
+        popover = useMemo(
+            () =>
+                React.cloneElement(childrenArray[childrenCount - 1] as any, {
+                    placement: props.placement
+                }),
+            [children]
+        );
 
     return (
         <PopoverWrapperStyled {...restProps} ref={wrapperRef} id={id}>

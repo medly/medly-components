@@ -1,4 +1,4 @@
-import { Size } from '@medly-components/theme/src/core/searchBox/types';
+import { Size } from '@medly-components/theme';
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
 export type Option = {

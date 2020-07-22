@@ -1,7 +1,8 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useContext, useMemo, useState } from 'react';
 import Checkbox from '../../Checkbox';
 import { GroupCell, GroupCellTitle } from '../GroupCell';
 import { changeSize, getGridTemplateColumns } from '../helpers';
+import { TablePropsContext } from '../TableProps.context';
 import { SortOrder, TableColumnConfig } from '../types';
 import { THead } from './Head.styled';
 import HeadCell from './HeadCell';
@@ -9,21 +10,17 @@ import HeadRow from './HeadRow';
 import { Props } from './types';
 
 const Head: React.FC<Props> = React.memo(props => {
-    const {
-        columns,
-        onSort,
-        isLoading,
-        setColumns,
-        isAnyRowSelected,
-        isEachRowSelected,
-        isSelectAllDisable,
-        onSelectAllClick,
-        maxColumnSizes,
-        defaultSortOrder,
-        defaultSortField,
-        showShadowAtBottom,
-        showShadowAfterFrozenElement
-    } = props;
+    const { columns, isLoading, isExpandable, isSelectable, onSort, defaultSortOrder, defaultSortField } = useContext(TablePropsContext),
+        {
+            setColumns,
+            isAnyRowSelected,
+            isEachRowSelected,
+            isSelectAllDisable,
+            onSelectAllClick,
+            maxColumnSizes,
+            showShadowAtBottom,
+            showShadowAfterFrozenElement
+        } = props;
 
     const [sortField, setSortField] = useState(defaultSortField);
 
@@ -82,14 +79,15 @@ const Head: React.FC<Props> = React.memo(props => {
                             defaultSortOrder={defaultSortOrder}
                             onSortChange={handleSortChange}
                             onWidthChange={handleWidthChange}
-                            isRowSelectionCell={config.field === 'medly-table-checkbox'}
-                            showShadowAtRight={config.field === 'medly-table-checkbox' && showShadowAfterFrozenElement}
+                            isRowExpandable={isExpandable}
+                            isRowActionCell={config.field === 'row-actions'}
+                            showShadowAtRight={config.field === 'row-actions' && showShadowAfterFrozenElement}
                         >
-                            {config.field === 'medly-table-checkbox' ? selectAllCheckBox : config.title}
+                            {config.field === 'row-actions' && isSelectable ? selectAllCheckBox : config.title}
                         </HeadCell>
                     );
                 }),
-            [sortField, maxColumnSizes, selectAllCheckBox, showShadowAfterFrozenElement]
+            [isExpandable, isSelectable, sortField, maxColumnSizes, selectAllCheckBox, showShadowAfterFrozenElement]
         );
 
     return (

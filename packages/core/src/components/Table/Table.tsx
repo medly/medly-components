@@ -2,43 +2,33 @@ import { WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useMemo, useReducer, useState } from 'react';
 import Body from './Body';
 import ColumnConfiguration from './ColumnConfiguration';
+import { loadingBodyData } from './constants';
 import Head from './Head';
-import { addSizeToColumnConfig } from './helpers';
+import { getUpdatedColumns } from './helpers';
 import { maxColumnSizeReducer } from './maxColumnSizeReducer';
 import { TableStyled } from './Table.styled';
-import { Props, StaticProps, TableColumnConfig } from './types';
+import { TablePropsContext } from './TableProps.context';
+import { StaticProps, TableProps } from './types';
 import useRowSelector from './useRowSelector';
 import { useScrollState } from './useScrollState';
 
-const loadingBodyData = [{ id: 'loading1' }, { id: 'loading2' }, { id: 'loading3' }, { id: 'loading4' }, { id: 'loading5' }];
-const checkboxColumnConfig: TableColumnConfig = {
-    title: 'ch',
-    field: 'medly-table-checkbox',
-    formatter: 'checkbox',
-    hidden: false,
-    frozen: true
-};
-
-export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
+export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const {
             data,
             onRowClick,
-            onSort,
             rowIdentifier,
             rowSelectionDisableKey,
-            rowClickDisableKey,
             isSelectable,
+            isExpandable,
             selectedRowIds,
             onRowSelection,
             isLoading,
-            defaultSortField,
-            defaultSortOrder,
             ...restProps
         } = props;
 
         const [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
-            [columns, setColumns] = useState(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns])),
+            [columns, setColumns] = useState(getUpdatedColumns(props.columns, isSelectable, isExpandable)),
             addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]),
             [scrollState, handleScroll] = useScrollState();
 
@@ -48,48 +38,38 @@ export const Table: FC<Props> & WithStyle & StaticProps = React.memo(
             { isAnyRowSelected, isEachRowSelected, selectedIds, toggleId } = rowSelector;
 
         useEffect(() => {
-            setColumns(addSizeToColumnConfig([...(isSelectable ? [checkboxColumnConfig] : []), ...props.columns]));
-        }, [props.columns, isSelectable]);
+            setColumns(getUpdatedColumns(props.columns, isSelectable, isExpandable));
+        }, [props.columns, isSelectable, isExpandable]);
 
         useEffect(() => {
             onRowSelection && onRowSelection(selectedIds);
-        }, [selectedIds]);
+        }, [selectedIds, onRowSelection]);
 
         return (
-            <TableStyled ref={ref} {...restProps} onScroll={handleScroll} isRowClickable={isRowClickable}>
-                <Head
-                    {...{
-                        onSort,
-                        columns,
-                        setColumns,
-                        maxColumnSizes,
-                        isEachRowSelected,
-                        isAnyRowSelected,
-                        isLoading,
-                        defaultSortField,
-                        defaultSortOrder,
-                        onSelectAllClick: toggleId,
-                        isSelectAllDisable: isSelectAllDisable,
-                        showShadowAtBottom: !scrollState.isScrolledToTop,
-                        showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
-                    }}
-                />
-                <Body
-                    {...{
-                        isLoading,
-                        columns,
-                        rowIdentifier,
-                        rowClickDisableKey,
-                        rowSelectionDisableKey,
-                        addColumnMaxSize,
-                        selectedRowIds: selectedIds,
-                        onRowSelection: toggleId,
-                        data: isLoading ? loadingBodyData : data,
-                        onRowClick: !isLoading && onRowClick,
-                        showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
-                    }}
-                />
-            </TableStyled>
+            <TablePropsContext.Provider value={{ ...props, columns, data: isLoading ? loadingBodyData : data }}>
+                <TableStyled ref={ref} {...restProps} onScroll={handleScroll} isRowClickable={isRowClickable}>
+                    <Head
+                        {...{
+                            setColumns,
+                            maxColumnSizes,
+                            isEachRowSelected,
+                            isAnyRowSelected,
+                            onSelectAllClick: toggleId,
+                            isSelectAllDisable: isSelectAllDisable,
+                            showShadowAtBottom: !scrollState.isScrolledToTop,
+                            showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
+                        }}
+                    />
+                    <Body
+                        {...{
+                            addColumnMaxSize,
+                            selectedRowIds: selectedIds,
+                            onRowSelection: toggleId,
+                            showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
+                        }}
+                    />
+                </TableStyled>
+            </TablePropsContext.Provider>
         );
     })
 );

@@ -1,3 +1,3 @@
-import { TableColumnConfig } from './components/Table/types';
+import { TableColumnConfig, TableProps } from './components/Table/types';
 
-export { TableColumnConfig };
+export { TableColumnConfig, TableProps };
