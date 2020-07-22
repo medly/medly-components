@@ -19,7 +19,7 @@ export const getUpdatedColumns = (
         ? [
               {
                   ...rowActionsColumnConfig,
-                  size: isSelectable && isExpandable ? `minmax(82px, 0.1fr)` : `minmax(48px, 0.1fr)`
+                  size: isSelectable && isExpandable ? `minmax(84px, 0.1fr)` : `minmax(48px, 0.1fr)`
               }
           ]
         : []),

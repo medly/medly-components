@@ -50,6 +50,17 @@ Simple `Table` component to show set of data.
     </Story>
 </Preview>
 
+### Row Accordion
+
+To show row acordion you have to pass two props `isExpandable` as `true` and pass react component as `expandedRowComponent` to show details in the expanded area. Type of `expandedRowComponent?: React.FC<{ rowData: any; rowId?: any; disabled?: boolean }>`; We are passing row data, id & disabled state to the component.
+
+You can write your component like below:
+
+```tsx
+import { TableProps } from '@medly-components/core';
+export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ rowData }) => <Text> Hello {`${rowData.name}`}</Text>;
+```
+
 ### Props
 
 There are only two required props `data` & `columns`. It would be really great if you provide `rowIdentifier`. `rowIdentifier` is used as key name in data to be used as unique id for rows.

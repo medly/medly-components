@@ -84,7 +84,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Function to be called on click of sort icon */
     onSort?: (field: string, order: SortOrder) => void;
     /** Component to show when row is expanded */
-    expandedRowComponent?: React.FC<{ data: any; rowId?: any; disabled?: boolean }>;
+    expandedRowComponent?: React.FC<{ rowData: any; rowId?: any; disabled?: boolean }>;
 }
 
 export interface StaticProps {

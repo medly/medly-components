@@ -8,6 +8,6 @@ ThemeInterface.defaultProps = {
     ...defaultTheme.table
 };
 
-export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ data }) => <Text> Hello {`${data.name}`}</Text>;
+export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ rowData }) => <Text> Hello {`${rowData.name}`}</Text>;
 
 export const ColumnConfigInterface: FC<TableColumnConfig> = () => null;

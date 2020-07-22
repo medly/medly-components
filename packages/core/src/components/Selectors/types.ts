@@ -1,4 +1,4 @@
-import { GetComponentProps, HTMLProps } from '@medly-components/utils/src';
+import { GetComponentProps, HTMLProps } from '@medly-components/utils';
 import Text from '../Text';
 
 export type SelectorGroupWrapperProps = HTMLProps<HTMLDivElement> & {

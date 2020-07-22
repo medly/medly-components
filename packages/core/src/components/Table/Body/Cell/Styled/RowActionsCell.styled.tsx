@@ -3,6 +3,15 @@ import { css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Checkbox from '../../../../Checkbox';
 
+type RowActionProps = {
+    isExpanded?: boolean;
+    isExpandable?: boolean;
+    isRowSelected?: boolean;
+    isSelectable?: boolean;
+    showShadowAtRight?: boolean;
+    showSelectedRowBorder: boolean;
+};
+
 const selectedBorderStyle = css`
         &&& {
             &::before {
@@ -29,11 +38,7 @@ const selectedBorderStyle = css`
         }
     `;
 
-export const RowActionsCell = styled('td')<{
-    isExpanded?: boolean;
-    showShadowAtRight?: boolean;
-    showSelectedRowBorder: boolean;
-}>`
+export const RowActionsCell = styled('td')<RowActionProps>`
     width: 100%;
     height: 100%;
     display: flex;
@@ -41,7 +46,7 @@ export const RowActionsCell = styled('td')<{
     align-items: center;
     overflow: visible;
     cursor: default;
-    padding: 1.2rem;
+    padding: ${props => (props.isExpandable ? (props.isSelectable ? `1.2rem 1.2rem 1.2rem 0.8rem ` : `1.2rem 0.8rem `) : '1.2rem')};
     position: sticky;
     left: 0;
     z-index: 1;
@@ -54,15 +59,27 @@ export const RowActionsCell = styled('td')<{
     }
 
     & > ${SvgIcon} {
+        padding: 0.6rem;
+        border-radius: 50%;
         * {
             fill: ${({ theme }) => theme.colors.black};
         }
         transition: transform 100ms ease-out;
         transform: ${props => props.isExpanded && `rotate(180deg) `};
+
+        &:hover {
+            background-color: ${({ theme, isRowSelected }) =>
+                isRowSelected ? theme.table.accordionIcon.bgColor.selected.hover : theme.table.accordionIcon.bgColor.hover};
+        }
+
+        &:active {
+            background-color: ${({ theme, isRowSelected }) =>
+                isRowSelected ? theme.table.accordionIcon.bgColor.selected.pressed : theme.table.accordionIcon.bgColor.pressed};
+        }
     }
 
     & > ${SvgIcon} + ${Checkbox.Style} {
-        margin-left: 1.4rem;
+        margin-left: 0.8rem;
     }
 
     ${props => props.showShadowAtRight && shadowStyle};

@@ -1,4 +1,4 @@
-import { ExpandMoreIcon } from '@medly-components/icons/src';
+import { ExpandMoreIcon } from '@medly-components/icons';
 import React, { useCallback, useContext, useState } from 'react';
 import Checkbox from '../../../Checkbox';
 import { GroupCell } from '../../GroupCell';
@@ -28,7 +28,12 @@ export const Row: React.FC<Props> = React.memo(props => {
         handleRowSelection = useCallback(() => onRowSelection(id), [id]),
         stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
         handleExpansionIconClick = useCallback(() => setExpansionState(val => !val), []),
-        handleRowClick = !isLoading && onRowClick && !data[rowClickDisableKey] ? () => onRowClick(data) : undefined;
+        handleRowClick =
+            !isLoading && onRowClick && !data[rowClickDisableKey]
+                ? () => onRowClick(data)
+                : isExpandable
+                ? handleExpansionIconClick
+                : undefined;
 
     const getCells = (rowData: any = {}, configs: TableColumnConfig[] = columns, field = '') =>
         configs.reduce((cells, config) => {
@@ -75,6 +80,9 @@ export const Row: React.FC<Props> = React.memo(props => {
                     <RowActionsCell
                         onClick={stopPropagation}
                         isExpanded={isExpanded}
+                        isExpandable={isExpandable}
+                        isRowSelected={isRowSelected}
+                        isSelectable={isSelectable}
                         showSelectedRowBorder={isRowSelected}
                         showShadowAtRight={showShadowAfterFrozenElement}
                     >
@@ -82,7 +90,7 @@ export const Row: React.FC<Props> = React.memo(props => {
                             <LoadingDiv />
                         ) : (
                             <>
-                                {isExpandable && <ExpandMoreIcon size="S" onClick={handleExpansionIconClick} />}
+                                {isExpandable && <ExpandMoreIcon size="L" onClick={handleExpansionIconClick} />}
                                 {isSelectable && (
                                     <Checkbox
                                         disabled={data[rowSelectionDisableKey]}
@@ -104,7 +112,7 @@ export const Row: React.FC<Props> = React.memo(props => {
                             showShadowAtRight={showShadowAfterFrozenElement}
                         />
                         <ExtendedRowCell onClick={stopPropagation}>
-                            <ExpandedRowComponent data={data} disabled={data[rowClickDisableKey]} rowId={id} />
+                            <ExpandedRowComponent rowId={id} rowData={data} disabled={data[rowClickDisableKey]} />
                         </ExtendedRowCell>
                     </>
                 )}

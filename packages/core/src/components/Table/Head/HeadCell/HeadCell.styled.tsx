@@ -1,5 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
-import { Theme } from '@medly-components/theme/src';
+import { Theme } from '@medly-components/theme';
 import { clearMarginPadding, css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Checkbox from '../../../Checkbox';
