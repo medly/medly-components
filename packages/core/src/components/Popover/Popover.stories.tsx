@@ -1,7 +1,7 @@
 import { centerAligned, styled } from '@medly-components/utils';
 import { boolean, select } from '@storybook/addon-knobs';
 import React, { useCallback, useState } from 'react';
-import Popover from './Popover';
+import PopoverWithBackground from './PopoverWithBackground';
 import PopoverWrapper from './PopoverWrapper';
 import { Placement } from './PopoverWrapper/types';
 
@@ -25,10 +25,8 @@ const DummyDiv = styled('div')`
     width: 200px;
     height: 100px;
     background-color: steelblue;
-    border: 1px solid grey;
     display: inline-block;
     font-size: 20px;
-    border-radius: 5px;
     ${centerAligned()};
 `;
 
@@ -39,10 +37,7 @@ const DummyWrapper = styled('div')`
 `;
 
 const DummyPopover = styled('div')`
-    padding: 10px;
     color: black;
-    border-radius: 5px;
-    border: 1px solid grey;
     ${centerAligned()};
 `;
 
@@ -56,12 +51,12 @@ export const WithClickInteraction = () => {
                 showPopover={isPopoverVisible}
                 onClick={changePopoverState}
                 onOuterClick={changePopoverState}
-                placement={select('Placement', placement, 'bottom')}
+                placement={select('Placement', placement, 'top')}
             >
                 <DummyDiv>Hello</DummyDiv>
-                <Popover fullWidth={boolean('Popover Full Width', false)} fullHeight={boolean('Popover Full Height', false)}>
+                <PopoverWithBackground fullWidth={boolean('Popover Full Width', false)} fullHeight={boolean('Popover Full Height', false)}>
                     <DummyPopover>This is Popover</DummyPopover>
-                </Popover>
+                </PopoverWithBackground>
             </PopoverWrapper>
         </DummyWrapper>
     );
@@ -77,12 +72,12 @@ export const WithHoverInteraction = () => {
                 showPopover={isPopoverVisible}
                 onMouseEnter={changePopoverState}
                 onMouseLeave={changePopoverState}
-                placement={select('Placement', placement, 'bottom')}
+                placement={select('Placement', placement, 'top')}
             >
                 <DummyDiv>Hello</DummyDiv>
-                <Popover fullWidth={boolean('Popover Full Width', false)} fullHeight={boolean('Popover Full Height', false)}>
+                <PopoverWithBackground fullWidth={boolean('Popover Full Width', false)} fullHeight={boolean('Popover Full Height', false)}>
                     <DummyPopover>This is Popover</DummyPopover>
-                </Popover>
+                </PopoverWithBackground>
             </PopoverWrapper>
         </DummyWrapper>
     );
