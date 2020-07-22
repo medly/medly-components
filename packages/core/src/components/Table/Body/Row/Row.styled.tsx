@@ -13,6 +13,7 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
     align-items: center;
     position: relative;
     cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
+    transition: box-shadow 100ms ease-out;
 
     &:hover {
         z-index: 2;

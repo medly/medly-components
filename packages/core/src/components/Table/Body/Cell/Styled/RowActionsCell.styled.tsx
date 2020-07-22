@@ -46,7 +46,7 @@ export const RowActionsCell = styled('td')<RowActionProps>`
     align-items: center;
     overflow: visible;
     cursor: default;
-    padding: ${props => (props.isExpandable ? (props.isSelectable ? `1.2rem 1.2rem 1.2rem 0.8rem ` : `1.2rem 0.8rem `) : '1.2rem')};
+    padding: ${props => (props.isExpandable ? (props.isSelectable ? `0.8rem 1.2rem 0.8rem 0.8rem ` : `0.8rem `) : '1.2rem')};
     position: sticky;
     left: 0;
     z-index: 1;
@@ -64,7 +64,7 @@ export const RowActionsCell = styled('td')<RowActionProps>`
         * {
             fill: ${({ theme }) => theme.colors.black};
         }
-        transition: transform 100ms ease-out;
+        transition: all 100ms ease-out;
         transform: ${props => props.isExpanded && `rotate(180deg) `};
 
         &:hover {
