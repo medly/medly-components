@@ -33,15 +33,23 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             [inputValue, setInputValue] = useState(values.toString()),
             [placeholder, setPlaceholder] = useState(values.length > 0 ? `${values.length} options selected` : props.placeholder);
 
+        useEffect(() => {
+            if (areOptionsVisible) {
+                inputRef.current && inputRef.current.focus();
+            } else {
+                inputRef.current && inputRef.current.blur();
+            }
+        }, [areOptionsVisible]);
+
         const updateToDefaultOptions = useCallback(() => setOptions(defaultOptions), [defaultOptions]),
             hideOptions = useCallback(() => {
                 setOptionsVisibilityState(false);
                 inputRef.current && inputRef.current.blur();
-            }, []),
+            }, [areOptionsVisible]),
             showOptions = useCallback(() => {
                 setOptionsVisibilityState(true);
                 inputRef.current && inputRef.current.focus();
-            }, []),
+            }, [areOptionsVisible]),
             toggleOptions = useCallback(() => !disabled && (areOptionsVisible ? hideOptions() : showOptions()), [
                 disabled,
                 areOptionsVisible
@@ -68,6 +76,7 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                     hideOptions();
                     updateToDefaultOptions();
                 }
+                inputRef.current && inputRef.current.blur();
             }, [areOptionsVisible]),
             handleKeyPress = useCallback((event: React.KeyboardEvent) => !isSearchable && event.preventDefault(), [isSearchable]),
             getState = useCallback(() => {
@@ -85,7 +94,14 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             onClearHandler = useCallback(() => {
                 setSelectedOptions([]);
                 setInputValue('');
-            }, []);
+            }, []),
+            handleOnBlur = useCallback(() => {
+                if (areOptionsVisible) {
+                    inputRef.current && inputRef.current.focus();
+                } else {
+                    inputRef.current && inputRef.current.blur();
+                }
+            }, [areOptionsVisible]);
 
         useEffect(() => {
             setSelectedOptions(getDefaultSelectedOptions(defaultOptions, values));
@@ -133,6 +149,7 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                     suffix={chipEl}
                     onKeyPress={handleKeyPress}
                     onChange={handleInputChange}
+                    onBlur={handleOnBlur}
                     {...inputProps}
                 />
                 {!disabled && areOptionsVisible && (

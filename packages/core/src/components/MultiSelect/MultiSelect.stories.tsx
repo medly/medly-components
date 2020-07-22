@@ -5,7 +5,6 @@ import { SelectProps } from './types';
 export const variants: SelectProps['variant'][] = ['outlined', 'filled'];
 
 export const options = [
-    { value: 'all', label: 'All' },
     { value: 'medly pharmacy', label: 'Medly Pharmacy' },
     { value: 'kala pharmacy', label: 'Kala Pharmacy' },
     {

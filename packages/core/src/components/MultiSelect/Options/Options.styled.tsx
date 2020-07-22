@@ -27,35 +27,38 @@ export const ChipArea = styled.div<OptionsStyledProps>`
     }
 `;
 
-export const Options = styled.ul<OptionsStyledProps>`
-    list-style: none;
+export const OptionsWrapper = styled.div<OptionsStyledProps>`
     position: absolute;
     top: 5.6rem;
-    padding: 0;
-    margin: 0;
-    max-height: 200px;
-    overflow: auto;
     border: 1px solid ${({ theme }) => theme.select.borderColor};
     background-color: ${({ theme }) => theme.select.bgColor};
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 0.4rem;
+`;
+
+export const Options = styled.ul<OptionsStyledProps>`
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    overflow: auto;
 
     ${Checkbox.Style} {
         width: calc(100% - 10px);
         margin: 0;
-        padding: 5px;
+        padding: 0.5rem;
     }
 
     ${FieldWithLabel.Label} {
         margin-bottom: 0;
         ${Checkbox.Style} {
-            padding: 0 5px 5px 0;
+            padding: 0 0.5rem 0.5rem 0;
         }
     }
 
     ${FieldWithLabel.Field} {
         ${Checkbox.Style} {
-            padding: 5px 5px 5px 0;
+            padding: 0.5rem 0.5rem 0.5rem 0;
         }
     }
 `;
