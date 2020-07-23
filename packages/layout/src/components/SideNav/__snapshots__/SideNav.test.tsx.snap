@@ -239,7 +239,7 @@ exports[`SideNav should render properly 1`] = `
 
 <div>
   <aside
-    class="sc-pciEQ c0"
+    class="sc-pscky c0"
     id="medly-sidenav"
   >
     <nav

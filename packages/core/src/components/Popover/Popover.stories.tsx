@@ -13,7 +13,7 @@ export const placement: Placement[] = [
     'right',
     'right-end',
     'bottom-start',
-    'bottom',
+    'bottom',   
     'bottom-end',
     'left-end',
     'left',
