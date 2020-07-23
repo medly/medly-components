@@ -9,8 +9,10 @@ export interface Props extends ButtonProps, WithThemeProp {
     variant?: 'outlined' | 'filled';
     /** Different States for chip */
     state?: 'default' | 'active' | 'error' | 'disabled';
+    /** Test ID */
+    testId?: string;
     /** On click function */
     onClick?: () => void;
     /** On delete function */
-    onClear?: () => void;
+    onClear?: (label?: string) => void;
 }

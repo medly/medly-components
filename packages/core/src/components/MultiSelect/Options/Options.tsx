@@ -29,13 +29,20 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
                 props.onOptionClick(newValues);
             },
             [selectedValues, props.onOptionClick]
+        ),
+        handleClearHandler = useCallback(
+            value => {
+                const newValues = selectedValues.filter(vl => vl !== value);
+                props.onOptionClick(newValues);
+            },
+            [selectedValues, props.onOptionClick]
         );
 
     return (
         <Styled.OptionsWrapper>
             <Styled.ChipArea>
                 {selectedValues.map((value, index) => {
-                    return <Chip key={index} label={value} />;
+                    return <Chip key={index} label={value} onClear={handleClearHandler} />;
                 })}
             </Styled.ChipArea>
             <Styled.Options onClick={stopPropagation}>

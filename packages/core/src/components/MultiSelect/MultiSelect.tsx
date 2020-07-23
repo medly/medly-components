@@ -33,14 +33,6 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             [inputValue, setInputValue] = useState(values.toString()),
             [placeholder, setPlaceholder] = useState(values.length > 0 ? `${values.length} options selected` : props.placeholder);
 
-        useEffect(() => {
-            if (areOptionsVisible) {
-                inputRef.current && inputRef.current.focus();
-            } else {
-                inputRef.current && inputRef.current.blur();
-            }
-        }, [areOptionsVisible]);
-
         const updateToDefaultOptions = useCallback(() => setOptions(defaultOptions), [defaultOptions]),
             hideOptions = useCallback(() => {
                 setOptionsVisibilityState(false);
@@ -60,6 +52,7 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                     const newOptions = filterOptions(options, value);
                     newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
                     !areOptionsVisible && showOptions();
+                    onChange && onChange(newOptions);
                 },
                 [areOptionsVisible, options, updateToDefaultOptions]
             ),
@@ -112,6 +105,14 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             setPlaceholder(selectedOptions.length > 0 ? `${selectedOptions.length} options selected` : props.placeholder);
         }, [selectedOptions]);
 
+        useEffect(() => {
+            if (areOptionsVisible) {
+                inputRef.current && inputRef.current.focus();
+            } else {
+                inputRef.current && inputRef.current.blur();
+            }
+        }, [areOptionsVisible]);
+
         useOuterClickNotifier(() => {
             handleOuterClick();
         }, wrapperRef);
@@ -120,7 +121,13 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             return (
                 <SuffixWrap>
                     {selectedOptions.length > 0 && (
-                        <Chip label={selectedOptions.length} state={getState()} variant={variant} onClear={onClearHandler} />
+                        <Chip
+                            testId="cancel-chip"
+                            label={selectedOptions.length}
+                            state={getState()}
+                            variant={variant}
+                            onClear={onClearHandler}
+                        />
                     )}
                     <ChevronDownIcon />
                 </SuffixWrap>

@@ -429,6 +429,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
             </span>
             <svg
               class="c13 c14"
+              data-testid="cancel-chip"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -1260,6 +1261,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
             </span>
             <svg
               class="c13 c14"
+              data-testid="cancel-chip"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
