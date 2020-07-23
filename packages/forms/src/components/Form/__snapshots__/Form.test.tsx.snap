@@ -2287,7 +2287,7 @@ exports[`Form should render properly with initial state 1`] = `
             class="c47"
           >
             <div
-              class="sc-fzoaKM c48"
+              class="sc-fzqAui c48"
               data-testid="DateRangeInputGrid"
             >
               <label
@@ -4661,7 +4661,7 @@ exports[`Form should render properly without initial state 1`] = `
             class="c47"
           >
             <div
-              class="sc-fzoaKM c48"
+              class="sc-fzqAui c48"
               data-testid="DateRangeInputGrid"
             >
               <label

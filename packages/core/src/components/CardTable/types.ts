@@ -20,7 +20,7 @@ export interface ColumnConfig {
     /** Provide the fraction of the of the total width of the row */
     fraction?: number;
     /** Custom component */
-    component?: React.FC<{ data: any; rowId?: any; disabled?: boolean; rowData: Data }>;
+    component?: React.FC<{ data: any; rowId?: any; disabled?: boolean; rowData?: Data }>;
 }
 export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'> {
     /** Table data */

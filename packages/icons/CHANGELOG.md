@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/medly/medly-components/compare/@medly-components/icons@1.1.2...@medly-components/icons@1.1.3) (2020-07-23)
+
+
+### Bug Fixes
+
+* row action cell padding issue and build issue ([f8f0d7b](https://github.com/medly/medly-components/commit/f8f0d7bb80a72021ef782edfa10b7816c5843bf4))
+
+
+
+
+
 ## [1.1.2](https://github.com/medly/medly-components/compare/@medly-components/icons@1.1.1...@medly-components/icons@1.1.2) (2020-07-16)
 
 **Note:** Version bump only for package @medly-components/icons

@@ -10,7 +10,7 @@ import * as stories from './Popover.stories';
 You have to use both `Popover` & `PopoverWrapper` component.
 
 ```typescript
-import { PopoverWithBackground, PopoverWrapper } from '@medly-components/core';
+import { Popover, PopoverWrapper } from '@medly-components/core';
 
 export const WithClickInteraction = () => {
     const [isPopoverVisible, setPopoverVisibilityState] = useState(false);
@@ -27,9 +27,9 @@ export const WithClickInteraction = () => {
                 placement={select('Placement', placement, 'top')}
             >
                 <DummyDiv>Hello</DummyDiv>
-                <PopoverWithBackground fullWidth={boolean('Popover Full Width', false)} fullHeight={boolean('Popover Full Height', false)}>
+                <Popover fullWidth={boolean('Popover Full Width', false)} fullHeight={boolean('Popover Full Height', false)}>
                     <DummyPopoverContent>This is Popover</DummyPopoverContent>
-                </PopoverWithBackground>
+                </Popover>
             </PopoverWrapper>
         </DummyWrapper>
     );

@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.10.0...@medly-components/core@1.10.1) (2020-07-23)
+
+
+### Bug Fixes
+
+* fix rowData type issue in cardTable ([b6a30b4](https://github.com/medly/medly-components/commit/b6a30b463d690f33c2116b3cdbb05827249753c6))
+
+
+
+
+
+# [1.10.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.9.0...@medly-components/core@1.10.0) (2020-07-23)
+
+
+### Bug Fixes
+
+* row action cell padding issue and build issue ([f8f0d7b](https://github.com/medly/medly-components/commit/f8f0d7bb80a72021ef782edfa10b7816c5843bf4))
+
+
+### Features
+
+* add 100ms transition in row expansion icon and box shadow ([13a9ec9](https://github.com/medly/medly-components/commit/13a9ec9fcf89bb07490fa580100ee3cb40fb1fbe))
+* add expansion icon in table row ([fe2bd0a](https://github.com/medly/medly-components/commit/fe2bd0aaeb700d23f0b5221997167d8c86d79556))
+* add table props context ([df97de2](https://github.com/medly/medly-components/commit/df97de21b66d7d47a25b2cc9977749d773b86880))
+* add unique to each cell in the table component ([f8f66b5](https://github.com/medly/medly-components/commit/f8f66b50978744bcaa64fc608c876758f26c7a71))
+* extract out row component from body component ([bd29701](https://github.com/medly/medly-components/commit/bd29701ee231f678c9c45e074066c69f4603de03))
+* improve transition in accordion component ([85343cf](https://github.com/medly/medly-components/commit/85343cfa45e1b649cc30de348fb799aaa485de9b))
+* update table component docs and add expandedRowComponent prop ([d9f1c87](https://github.com/medly/medly-components/commit/d9f1c87f7b525aa30987f6fb3168fc941eb78cc9))
+* **core:** added popover with background ([953b2a3](https://github.com/medly/medly-components/commit/953b2a3e2336720fd7b93ecf634bfebd62c60b6f))
+
+
+
+
+
 # [1.9.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.8.0...@medly-components/core@1.9.0) (2020-07-16)
 
 

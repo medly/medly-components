@@ -1,6 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Popover with background component bottom, should render properly 1`] = `
+.c2 {
+  background-color: white;
+  border-radius: 0.8rem;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.c2::after {
+  width: 0;
+  height: 0;
+  z-index: 10;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid #fff;
+  content: '';
+}
+
 .c0 {
   position: absolute;
   z-index: 1000;
@@ -11,43 +29,19 @@ exports[`Popover with background component bottom, should render properly 1`] = 
   align-self: center;
   width: calc(100% - 0px);
   height: calc(100% - 0px);
-  top: calc(100% + 15px);
+  top: calc(100% + 1.5rem);
 }
 
-.c1 {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
-  background-color: white;
-  border-radius: 8px;
+.c0 .c1 {
   box-shadow: 0 -0.4rem 1.6rem rgba(176,188,200,0.5);
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
-.c2::after {
-  width: 0;
-  height: 0;
-  z-index: 10;
-  position: absolute;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 10px solid #fff;
+.c0 .c1::after {
   -webkit-transform: translateX(-50%) rotate(180deg);
   -ms-transform: translateX(-50%) rotate(180deg);
   transform: translateX(-50%) rotate(180deg);
   left: 50%;
   bottom: 100%;
-  content: '';
-}
-
-.c3 {
-  padding: 15px 20px 15px 20px;
 }
 
 <div>
@@ -56,14 +50,7 @@ exports[`Popover with background component bottom, should render properly 1`] = 
     id="medly-popover"
   >
     <div
-      class="c1"
-    >
-      <div
-        class="c2"
-      />
-    </div>
-    <div
-      class="c3"
+      class="c1 c2"
     >
       Dummy popover
     </div>
@@ -72,6 +59,24 @@ exports[`Popover with background component bottom, should render properly 1`] = 
 `;
 
 exports[`Popover with background component bottom-end, should render properly 1`] = `
+.c2 {
+  background-color: white;
+  border-radius: 0.8rem;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.c2::after {
+  width: 0;
+  height: 0;
+  z-index: 10;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid #fff;
+  content: '';
+}
+
 .c0 {
   position: absolute;
   z-index: 1000;
@@ -82,43 +87,19 @@ exports[`Popover with background component bottom-end, should render properly 1`
   align-self: center;
   width: calc(100% - 0px);
   height: calc(100% - 0px);
-  top: calc(100% + 15px);
+  top: calc(100% + 1.5rem);
 }
 
-.c1 {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
-  background-color: white;
-  border-radius: 8px;
+.c0 .c1 {
   box-shadow: 0 -0.4rem 1.6rem rgba(176,188,200,0.5);
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
-.c2::after {
-  width: 0;
-  height: 0;
-  z-index: 10;
-  position: absolute;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 10px solid #fff;
+.c0 .c1::after {
   -webkit-transform: translateX(-50%) rotate(180deg);
   -ms-transform: translateX(-50%) rotate(180deg);
   transform: translateX(-50%) rotate(180deg);
   left: 50%;
   bottom: 100%;
-  content: '';
-}
-
-.c3 {
-  padding: 15px 20px 15px 20px;
 }
 
 <div>
@@ -127,14 +108,7 @@ exports[`Popover with background component bottom-end, should render properly 1`
     id="medly-popover"
   >
     <div
-      class="c1"
-    >
-      <div
-        class="c2"
-      />
-    </div>
-    <div
-      class="c3"
+      class="c1 c2"
     >
       Dummy popover
     </div>
@@ -143,6 +117,24 @@ exports[`Popover with background component bottom-end, should render properly 1`
 `;
 
 exports[`Popover with background component bottom-start, should render properly 1`] = `
+.c2 {
+  background-color: white;
+  border-radius: 0.8rem;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.c2::after {
+  width: 0;
+  height: 0;
+  z-index: 10;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid #fff;
+  content: '';
+}
+
 .c0 {
   position: absolute;
   z-index: 1000;
@@ -153,43 +145,19 @@ exports[`Popover with background component bottom-start, should render properly 
   align-self: center;
   width: calc(100% - 0px);
   height: calc(100% - 0px);
-  top: calc(100% + 15px);
+  top: calc(100% + 1.5rem);
 }
 
-.c1 {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
-  background-color: white;
-  border-radius: 8px;
+.c0 .c1 {
   box-shadow: 0 -0.4rem 1.6rem rgba(176,188,200,0.5);
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
-.c2::after {
-  width: 0;
-  height: 0;
-  z-index: 10;
-  position: absolute;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 10px solid #fff;
+.c0 .c1::after {
   -webkit-transform: translateX(-50%) rotate(180deg);
   -ms-transform: translateX(-50%) rotate(180deg);
   transform: translateX(-50%) rotate(180deg);
   left: 50%;
   bottom: 100%;
-  content: '';
-}
-
-.c3 {
-  padding: 15px 20px 15px 20px;
 }
 
 <div>
@@ -198,14 +166,7 @@ exports[`Popover with background component bottom-start, should render properly 
     id="medly-popover"
   >
     <div
-      class="c1"
-    >
-      <div
-        class="c2"
-      />
-    </div>
-    <div
-      class="c3"
+      class="c1 c2"
     >
       Dummy popover
     </div>
@@ -214,6 +175,24 @@ exports[`Popover with background component bottom-start, should render properly 
 `;
 
 exports[`Popover with background component left, should render properly 1`] = `
+.c2 {
+  background-color: white;
+  border-radius: 0.8rem;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.c2::after {
+  width: 0;
+  height: 0;
+  z-index: 10;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid #fff;
+  content: '';
+}
+
 .c0 {
   position: absolute;
   z-index: 1000;
@@ -224,43 +203,19 @@ exports[`Popover with background component left, should render properly 1`] = `
   align-self: center;
   width: calc(100% - 0px);
   height: calc(100% - 0px);
-  right: calc(100% + 15px);
+  right: calc(100% + 1.5rem);
 }
 
-.c1 {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
-  background-color: white;
-  border-radius: 8px;
+.c0 .c1 {
   box-shadow: 0.4rem 0 1.6rem rgba(176,188,200,0.5);
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
-.c2::after {
-  width: 0;
-  height: 0;
-  z-index: 10;
-  position: absolute;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 10px solid #fff;
+.c0 .c1::after {
   -webkit-transform: translateY(-50%) rotate(270deg);
   -ms-transform: translateY(-50%) rotate(270deg);
   transform: translateY(-50%) rotate(270deg);
   top: 50%;
-  left: calc(100% - 3px);
-  content: '';
-}
-
-.c3 {
-  padding: 15px 20px 15px 20px;
+  left: calc(100% - 0.3rem);
 }
 
 <div>
@@ -269,14 +224,7 @@ exports[`Popover with background component left, should render properly 1`] = `
     id="medly-popover"
   >
     <div
-      class="c1"
-    >
-      <div
-        class="c2"
-      />
-    </div>
-    <div
-      class="c3"
+      class="c1 c2"
     >
       Dummy popover
     </div>
@@ -285,6 +233,24 @@ exports[`Popover with background component left, should render properly 1`] = `
 `;
 
 exports[`Popover with background component left-end, should render properly 1`] = `
+.c2 {
+  background-color: white;
+  border-radius: 0.8rem;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.c2::after {
+  width: 0;
+  height: 0;
+  z-index: 10;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid #fff;
+  content: '';
+}
+
 .c0 {
   position: absolute;
   z-index: 1000;
@@ -295,43 +261,19 @@ exports[`Popover with background component left-end, should render properly 1`] 
   align-self: center;
   width: calc(100% - 0px);
   height: calc(100% - 0px);
-  right: calc(100% + 15px);
+  right: calc(100% + 1.5rem);
 }
 
-.c1 {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
-  background-color: white;
-  border-radius: 8px;
+.c0 .c1 {
   box-shadow: 0.4rem 0 1.6rem rgba(176,188,200,0.5);
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
-.c2::after {
-  width: 0;
-  height: 0;
-  z-index: 10;
-  position: absolute;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 10px solid #fff;
+.c0 .c1::after {
   -webkit-transform: translateY(-50%) rotate(270deg);
   -ms-transform: translateY(-50%) rotate(270deg);
   transform: translateY(-50%) rotate(270deg);
   top: 50%;
-  left: calc(100% - 3px);
-  content: '';
-}
-
-.c3 {
-  padding: 15px 20px 15px 20px;
+  left: calc(100% - 0.3rem);
 }
 
 <div>
@@ -340,14 +282,7 @@ exports[`Popover with background component left-end, should render properly 1`] 
     id="medly-popover"
   >
     <div
-      class="c1"
-    >
-      <div
-        class="c2"
-      />
-    </div>
-    <div
-      class="c3"
+      class="c1 c2"
     >
       Dummy popover
     </div>
@@ -356,6 +291,24 @@ exports[`Popover with background component left-end, should render properly 1`] 
 `;
 
 exports[`Popover with background component left-start, should render properly 1`] = `
+.c2 {
+  background-color: white;
+  border-radius: 0.8rem;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.c2::after {
+  width: 0;
+  height: 0;
+  z-index: 10;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid #fff;
+  content: '';
+}
+
 .c0 {
   position: absolute;
   z-index: 1000;
@@ -366,43 +319,19 @@ exports[`Popover with background component left-start, should render properly 1`
   align-self: center;
   width: calc(100% - 0px);
   height: calc(100% - 0px);
-  right: calc(100% + 15px);
+  right: calc(100% + 1.5rem);
 }
 
-.c1 {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
-  background-color: white;
-  border-radius: 8px;
+.c0 .c1 {
   box-shadow: 0.4rem 0 1.6rem rgba(176,188,200,0.5);
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
-.c2::after {
-  width: 0;
-  height: 0;
-  z-index: 10;
-  position: absolute;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 10px solid #fff;
+.c0 .c1::after {
   -webkit-transform: translateY(-50%) rotate(270deg);
   -ms-transform: translateY(-50%) rotate(270deg);
   transform: translateY(-50%) rotate(270deg);
   top: 50%;
-  left: calc(100% - 3px);
-  content: '';
-}
-
-.c3 {
-  padding: 15px 20px 15px 20px;
+  left: calc(100% - 0.3rem);
 }
 
 <div>
@@ -411,14 +340,7 @@ exports[`Popover with background component left-start, should render properly 1`
     id="medly-popover"
   >
     <div
-      class="c1"
-    >
-      <div
-        class="c2"
-      />
-    </div>
-    <div
-      class="c3"
+      class="c1 c2"
     >
       Dummy popover
     </div>
@@ -427,6 +349,24 @@ exports[`Popover with background component left-start, should render properly 1`
 `;
 
 exports[`Popover with background component right, should render properly 1`] = `
+.c2 {
+  background-color: white;
+  border-radius: 0.8rem;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.c2::after {
+  width: 0;
+  height: 0;
+  z-index: 10;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid #fff;
+  content: '';
+}
+
 .c0 {
   position: absolute;
   z-index: 1000;
@@ -437,43 +377,19 @@ exports[`Popover with background component right, should render properly 1`] = `
   align-self: center;
   width: calc(100% - 0px);
   height: calc(100% - 0px);
-  left: calc(100% + 15px);
+  left: calc(100% + 1.5rem);
 }
 
-.c1 {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
-  background-color: white;
-  border-radius: 8px;
+.c0 .c1 {
   box-shadow: -0.4rem 0 1.6rem rgba(176,188,200,0.5);
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
-.c2::after {
-  width: 0;
-  height: 0;
-  z-index: 10;
-  position: absolute;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 10px solid #fff;
+.c0 .c1::after {
   -webkit-transform: translateY(-50%) rotate(90deg);
   -ms-transform: translateY(-50%) rotate(90deg);
   transform: translateY(-50%) rotate(90deg);
   top: 50%;
-  right: calc(100% - 3px);
-  content: '';
-}
-
-.c3 {
-  padding: 15px 20px 15px 20px;
+  right: calc(100% - 0.3rem);
 }
 
 <div>
@@ -482,14 +398,7 @@ exports[`Popover with background component right, should render properly 1`] = `
     id="medly-popover"
   >
     <div
-      class="c1"
-    >
-      <div
-        class="c2"
-      />
-    </div>
-    <div
-      class="c3"
+      class="c1 c2"
     >
       Dummy popover
     </div>
@@ -498,6 +407,24 @@ exports[`Popover with background component right, should render properly 1`] = `
 `;
 
 exports[`Popover with background component right-end, should render properly 1`] = `
+.c2 {
+  background-color: white;
+  border-radius: 0.8rem;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.c2::after {
+  width: 0;
+  height: 0;
+  z-index: 10;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid #fff;
+  content: '';
+}
+
 .c0 {
   position: absolute;
   z-index: 1000;
@@ -508,43 +435,19 @@ exports[`Popover with background component right-end, should render properly 1`]
   align-self: center;
   width: calc(100% - 0px);
   height: calc(100% - 0px);
-  left: calc(100% + 15px);
+  left: calc(100% + 1.5rem);
 }
 
-.c1 {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
-  background-color: white;
-  border-radius: 8px;
+.c0 .c1 {
   box-shadow: -0.4rem 0 1.6rem rgba(176,188,200,0.5);
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
-.c2::after {
-  width: 0;
-  height: 0;
-  z-index: 10;
-  position: absolute;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 10px solid #fff;
+.c0 .c1::after {
   -webkit-transform: translateY(-50%) rotate(90deg);
   -ms-transform: translateY(-50%) rotate(90deg);
   transform: translateY(-50%) rotate(90deg);
   top: 50%;
-  right: calc(100% - 3px);
-  content: '';
-}
-
-.c3 {
-  padding: 15px 20px 15px 20px;
+  right: calc(100% - 0.3rem);
 }
 
 <div>
@@ -553,14 +456,7 @@ exports[`Popover with background component right-end, should render properly 1`]
     id="medly-popover"
   >
     <div
-      class="c1"
-    >
-      <div
-        class="c2"
-      />
-    </div>
-    <div
-      class="c3"
+      class="c1 c2"
     >
       Dummy popover
     </div>
@@ -569,6 +465,24 @@ exports[`Popover with background component right-end, should render properly 1`]
 `;
 
 exports[`Popover with background component right-start, should render properly 1`] = `
+.c2 {
+  background-color: white;
+  border-radius: 0.8rem;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.c2::after {
+  width: 0;
+  height: 0;
+  z-index: 10;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid #fff;
+  content: '';
+}
+
 .c0 {
   position: absolute;
   z-index: 1000;
@@ -579,43 +493,19 @@ exports[`Popover with background component right-start, should render properly 1
   align-self: center;
   width: calc(100% - 0px);
   height: calc(100% - 0px);
-  left: calc(100% + 15px);
+  left: calc(100% + 1.5rem);
 }
 
-.c1 {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
-  background-color: white;
-  border-radius: 8px;
+.c0 .c1 {
   box-shadow: -0.4rem 0 1.6rem rgba(176,188,200,0.5);
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
-.c2::after {
-  width: 0;
-  height: 0;
-  z-index: 10;
-  position: absolute;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 10px solid #fff;
+.c0 .c1::after {
   -webkit-transform: translateY(-50%) rotate(90deg);
   -ms-transform: translateY(-50%) rotate(90deg);
   transform: translateY(-50%) rotate(90deg);
   top: 50%;
-  right: calc(100% - 3px);
-  content: '';
-}
-
-.c3 {
-  padding: 15px 20px 15px 20px;
+  right: calc(100% - 0.3rem);
 }
 
 <div>
@@ -624,14 +514,7 @@ exports[`Popover with background component right-start, should render properly 1
     id="medly-popover"
   >
     <div
-      class="c1"
-    >
-      <div
-        class="c2"
-      />
-    </div>
-    <div
-      class="c3"
+      class="c1 c2"
     >
       Dummy popover
     </div>
@@ -640,6 +523,24 @@ exports[`Popover with background component right-start, should render properly 1
 `;
 
 exports[`Popover with background component top, should render properly 1`] = `
+.c2 {
+  background-color: white;
+  border-radius: 0.8rem;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.c2::after {
+  width: 0;
+  height: 0;
+  z-index: 10;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid #fff;
+  content: '';
+}
+
 .c0 {
   position: absolute;
   z-index: 1000;
@@ -650,43 +551,19 @@ exports[`Popover with background component top, should render properly 1`] = `
   align-self: center;
   width: calc(100% - 0px);
   height: calc(100% - 0px);
-  bottom: calc(100% + 15px);
+  bottom: calc(100% + 1.5rem);
 }
 
-.c1 {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
-  background-color: white;
-  border-radius: 8px;
+.c0 .c1 {
   box-shadow: 0 0.4rem 1.6rem rgba(176,188,200,0.5);
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
-.c2::after {
-  width: 0;
-  height: 0;
-  z-index: 10;
-  position: absolute;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 10px solid #fff;
+.c0 .c1::after {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   top: 100%;
   left: 50%;
-  content: '';
-}
-
-.c3 {
-  padding: 15px 20px 15px 20px;
 }
 
 <div>
@@ -695,14 +572,7 @@ exports[`Popover with background component top, should render properly 1`] = `
     id="medly-popover"
   >
     <div
-      class="c1"
-    >
-      <div
-        class="c2"
-      />
-    </div>
-    <div
-      class="c3"
+      class="c1 c2"
     >
       Dummy popover
     </div>
@@ -711,6 +581,24 @@ exports[`Popover with background component top, should render properly 1`] = `
 `;
 
 exports[`Popover with background component top-end, should render properly 1`] = `
+.c2 {
+  background-color: white;
+  border-radius: 0.8rem;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.c2::after {
+  width: 0;
+  height: 0;
+  z-index: 10;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid #fff;
+  content: '';
+}
+
 .c0 {
   position: absolute;
   z-index: 1000;
@@ -721,43 +609,19 @@ exports[`Popover with background component top-end, should render properly 1`] =
   align-self: center;
   width: calc(100% - 0px);
   height: calc(100% - 0px);
-  bottom: calc(100% + 15px);
+  bottom: calc(100% + 1.5rem);
 }
 
-.c1 {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
-  background-color: white;
-  border-radius: 8px;
+.c0 .c1 {
   box-shadow: 0 0.4rem 1.6rem rgba(176,188,200,0.5);
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
-.c2::after {
-  width: 0;
-  height: 0;
-  z-index: 10;
-  position: absolute;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 10px solid #fff;
+.c0 .c1::after {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   top: 100%;
   left: 50%;
-  content: '';
-}
-
-.c3 {
-  padding: 15px 20px 15px 20px;
 }
 
 <div>
@@ -766,14 +630,7 @@ exports[`Popover with background component top-end, should render properly 1`] =
     id="medly-popover"
   >
     <div
-      class="c1"
-    >
-      <div
-        class="c2"
-      />
-    </div>
-    <div
-      class="c3"
+      class="c1 c2"
     >
       Dummy popover
     </div>
@@ -782,6 +639,24 @@ exports[`Popover with background component top-end, should render properly 1`] =
 `;
 
 exports[`Popover with background component top-start, should render properly 1`] = `
+.c2 {
+  background-color: white;
+  border-radius: 0.8rem;
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+
+.c2::after {
+  width: 0;
+  height: 0;
+  z-index: 10;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid #fff;
+  content: '';
+}
+
 .c0 {
   position: absolute;
   z-index: 1000;
@@ -792,43 +667,19 @@ exports[`Popover with background component top-start, should render properly 1`]
   align-self: center;
   width: calc(100% - 0px);
   height: calc(100% - 0px);
-  bottom: calc(100% + 15px);
+  bottom: calc(100% + 1.5rem);
 }
 
-.c1 {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.c2 {
-  background-color: white;
-  border-radius: 8px;
+.c0 .c1 {
   box-shadow: 0 0.4rem 1.6rem rgba(176,188,200,0.5);
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
-.c2::after {
-  width: 0;
-  height: 0;
-  z-index: 10;
-  position: absolute;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 10px solid #fff;
+.c0 .c1::after {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   top: 100%;
   left: 50%;
-  content: '';
-}
-
-.c3 {
-  padding: 15px 20px 15px 20px;
 }
 
 <div>
@@ -837,14 +688,7 @@ exports[`Popover with background component top-start, should render properly 1`]
     id="medly-popover"
   >
     <div
-      class="c1"
-    >
-      <div
-        class="c2"
-      />
-    </div>
-    <div
-      class="c3"
+      class="c1 c2"
     >
       Dummy popover
     </div>

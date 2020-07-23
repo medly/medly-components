@@ -19,7 +19,7 @@ export { default as List } from './List';
 export { default as Modal } from './Modal';
 export { default as MultiSelect } from './MultiSelect';
 export { default as Pagination } from './Pagination';
-export { Popover, PopoverWrapper } from './Popover';
+export { Popover, PopoverWithBackground, PopoverWrapper } from './Popover';
 export { default as Radio } from './Radio';
 export { default as RadioGroup } from './RadioGroup';
 export { default as SingleSelect } from './SingleSelect';
@@ -32,4 +32,3 @@ export { default as Toast } from './Toast';
 export { default as ToastContainer } from './ToastContainer';
 export { addToast } from './ToastContainer/ToastStore';
 export { default as Toggle } from './Toggle';
-
