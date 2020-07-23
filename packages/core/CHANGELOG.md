@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.10.0...@medly-components/core@1.10.1) (2020-07-23)
+
+
+### Bug Fixes
+
+* fix rowData type issue in cardTable ([b6a30b4](https://github.com/medly/medly-components/commit/b6a30b463d690f33c2116b3cdbb05827249753c6))
+
+
+
+
+
 # [1.10.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.9.0...@medly-components/core@1.10.0) (2020-07-23)
 
 
