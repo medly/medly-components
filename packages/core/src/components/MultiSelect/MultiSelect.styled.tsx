@@ -1,4 +1,4 @@
-import ChevronDownIcon from '@medly-components/icons/src/icons/Custom/ChevronDownIcon';
+import { ChevronDownIcon } from '@medly-components/icons';
 import { css, styled } from '@medly-components/utils';
 import TextField from '../TextField';
 import { SelectWrapperProps } from './types';

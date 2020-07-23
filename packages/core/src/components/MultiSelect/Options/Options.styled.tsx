@@ -1,4 +1,4 @@
-import { SvgIcon } from '@medly-components/icons/src';
+import { SvgIcon } from '@medly-components/icons';
 import { styled } from '@medly-components/utils';
 import Checkbox from '../../Checkbox';
 import FieldWithLabel from '../../FieldWithLabel';
