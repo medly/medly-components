@@ -12,6 +12,8 @@ exports[`Row should render NoResult properly 1`] = `
   align-items: center;
   position: relative;
   cursor: inherit;
+  -webkit-transition: box-shadow 100ms ease-out;
+  transition: box-shadow 100ms ease-out;
   text-align: center;
   line-height: 30px;
 }
@@ -53,6 +55,8 @@ exports[`Row should render row properly 1`] = `
   align-items: center;
   position: relative;
   cursor: inherit;
+  -webkit-transition: box-shadow 100ms ease-out;
+  transition: box-shadow 100ms ease-out;
 }
 
 .c0:hover {
