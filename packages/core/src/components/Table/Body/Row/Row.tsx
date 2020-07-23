@@ -21,6 +21,7 @@ export const Row: React.FC<Props> = React.memo(props => {
             rowSelectionDisableKey,
             isSelectable,
             isExpandable,
+            size: tableSize,
             expandedRowComponent: ExpandedRowComponent
         } = useContext(TablePropsContext);
 
@@ -63,6 +64,7 @@ export const Row: React.FC<Props> = React.memo(props => {
                               addColumnMaxSize={addColumnMaxSize}
                               isRowClickDisabled={rowData[rowClickDisableKey]}
                               dottedFieldName={fieldName}
+                              tableSize={tableSize}
                           />
                       )
                   ];
@@ -84,6 +86,7 @@ export const Row: React.FC<Props> = React.memo(props => {
                         isExpandable={isExpandable}
                         isRowSelected={isRowSelected}
                         isSelectable={isSelectable}
+                        tableSize={tableSize}
                         showSelectedRowBorder={isRowSelected}
                         showShadowAtRight={showShadowAfterFrozenElement}
                     >
@@ -112,7 +115,7 @@ export const Row: React.FC<Props> = React.memo(props => {
                             showSelectedRowBorder={isRowSelected}
                             showShadowAtRight={showShadowAfterFrozenElement}
                         />
-                        <ExtendedRowCell onClick={stopPropagation}>
+                        <ExtendedRowCell onClick={stopPropagation} tableSize={tableSize}>
                             <ExpandedRowComponent rowId={id} rowData={data} disabled={data[rowClickDisableKey]} />
                         </ExtendedRowCell>
                     </>

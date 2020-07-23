@@ -52,7 +52,7 @@ export interface TableStyledProps {
     isRowClickable?: boolean;
 }
 
-export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type'> {
+export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type' | 'size'> {
     /** Array of your table data */
     data: {
         [key: string]: any;
@@ -61,6 +61,8 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     columns: TableColumnConfig[];
     /** Key name in data to be used as unique id for rows */
     rowIdentifier?: string;
+    /** Size of the table */
+    size?: 'S' | 'M' | 'L';
     /** Key name to disable row selection */
     rowSelectionDisableKey?: string;
     /** Key name to disable row click */

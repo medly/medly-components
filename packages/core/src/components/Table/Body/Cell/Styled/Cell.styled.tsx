@@ -2,6 +2,12 @@ import { css, styled } from '@medly-components/utils';
 import Text from '../../../../Text';
 import { TableCellStyledProps } from '../types';
 
+const paddings = {
+    S: '0.8rem 1.6rem',
+    M: '1.2rem 1.6rem',
+    L: '1.6rem 2.4rem'
+};
+
 const wrapTextStyle = css`
         ${Text.Style} {
             text-overflow: ellipsis;
@@ -26,7 +32,7 @@ export const Cell = styled('td')<TableCellStyledProps>`
     overflow: hidden;
     align-items: center;
     opacity: ${({ hidden }) => (hidden ? 0 : 1)};
-    padding: ${({ hidden }) => (hidden ? '0' : '1.2rem 1.6rem')};
+    padding: ${({ hidden, tableSize }) => (hidden ? '0' : paddings[tableSize])};
     justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : align === 'center' ? 'center' : 'flex-start')};
 
     ${props => props.frozen && frozenStyle}

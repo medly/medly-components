@@ -15,6 +15,7 @@ import { useScrollState } from './useScrollState';
 export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const {
+            size,
             data,
             onRowClick,
             rowIdentifier,
@@ -28,7 +29,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
         } = props;
 
         const [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
-            [columns, setColumns] = useState(getUpdatedColumns(props.columns, isSelectable, isExpandable)),
+            [columns, setColumns] = useState(getUpdatedColumns(props.columns, isSelectable, isExpandable, size)),
             addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]),
             [scrollState, handleScroll] = useScrollState();
 
@@ -38,8 +39,8 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
             { isAnyRowSelected, isEachRowSelected, selectedIds, toggleId } = rowSelector;
 
         useEffect(() => {
-            setColumns(getUpdatedColumns(props.columns, isSelectable, isExpandable));
-        }, [props.columns, isSelectable, isExpandable]);
+            setColumns(getUpdatedColumns(props.columns, isSelectable, isExpandable, size));
+        }, [props.columns, isSelectable, isExpandable, size]);
 
         useEffect(() => {
             onRowSelection && onRowSelection(selectedIds);
