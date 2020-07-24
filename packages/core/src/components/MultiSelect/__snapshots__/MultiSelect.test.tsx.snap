@@ -298,6 +298,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 .c10 .c11 {
   font-weight: 600;
+  font-size: 1.6rem;
 }
 
 .c10 .c13 {
@@ -360,8 +361,8 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   pointer-events: none;
 }
 
-.c0 .c1:focus-within input {
-  padding-right: 5px;
+.c0 .c1 input {
+  padding-right: 1.6rem;
 }
 
 .c0 .c8 > .c13 {
@@ -762,7 +763,10 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 .c0 .c1:focus-within input {
   cursor: text;
-  padding-right: 5px;
+}
+
+.c0 .c1 input {
+  padding-right: 1.6rem;
 }
 
 .c0 .c8 > .c10 {
@@ -1130,6 +1134,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 
 .c10 .c11 {
   font-weight: 600;
+  font-size: 1.6rem;
 }
 
 .c10 .c13 {
@@ -1192,8 +1197,8 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   pointer-events: none;
 }
 
-.c0 .c1:focus-within input {
-  padding-right: 5px;
+.c0 .c1 input {
+  padding-right: 1.6rem;
 }
 
 .c0 .c8 > .c13 {
@@ -1594,7 +1599,10 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 
 .c0 .c1:focus-within input {
   cursor: text;
-  padding-right: 5px;
+}
+
+.c0 .c1 input {
+  padding-right: 1.6rem;
 }
 
 .c0 .c8 > .c10 {

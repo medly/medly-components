@@ -39,6 +39,10 @@ exports[`Radio Group should render disabled state properly 1`] = `
   align-items: flex-start;
 }
 
+.c0 > :first-child {
+  width: 100%;
+}
+
 .c2 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -61,6 +65,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
 .c4 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
+  width: 100%;
 }
 
 .c3 {
@@ -305,6 +310,10 @@ exports[`Radio Group should render properly 1`] = `
   align-items: flex-start;
 }
 
+.c0 > :first-child {
+  width: 100%;
+}
+
 .c2 {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -327,6 +336,7 @@ exports[`Radio Group should render properly 1`] = `
 .c4 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
+  width: 100%;
 }
 
 .c3 {

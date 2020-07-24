@@ -14,5 +14,5 @@ export interface Props extends ButtonProps, WithThemeProp {
     /** On click function */
     onClick?: () => void;
     /** On delete function */
-    onClear?: (label?: string) => void;
+    onClear?: (label?: number) => void;
 }

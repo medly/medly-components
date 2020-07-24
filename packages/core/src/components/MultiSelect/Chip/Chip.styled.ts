@@ -3,7 +3,7 @@ import { centerAligned, css, styled } from '@medly-components/utils';
 import Text from '../../Text';
 import { Props } from './types';
 
-const common = () => {
+const common = ({ theme }: Props) => {
     return css`
         border: 1px solid;
         padding: 0.4rem 0.6rem 0.4rem 1rem;
@@ -15,6 +15,7 @@ const common = () => {
         }
         ${Text.Style} {
             font-weight: 600;
+            font-size: ${theme.font.variants.body1.fontSize};
         }
     `;
 };

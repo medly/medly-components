@@ -27,8 +27,10 @@ const getDefaultStyle = ({ theme, areOptionsVisible, disabled, isSearchable }: S
             &:focus-within {
                 input {
                     cursor: ${!disabled && isSearchable && 'text'};
-                    padding-right: 5px;
                 }
+            }
+            input {
+                padding-right: 1.6rem;
             }
         }
         ${SuffixWrap} {

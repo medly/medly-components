@@ -41,6 +41,7 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
     return (
         <Styled.OptionsWrapper>
             <Styled.ChipArea>
+                {selectedValues.length === 0 && <p>-</p>}
                 {selectedValues.map((value, index) => {
                     return <Chip key={index} label={value} onClear={handleClearHandler} />;
                 })}

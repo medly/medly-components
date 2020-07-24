@@ -2,18 +2,22 @@ import { SvgIcon } from '@medly-components/icons';
 import { styled } from '@medly-components/utils';
 import Checkbox from '../../Checkbox';
 import FieldWithLabel from '../../FieldWithLabel';
+import { SelectorGroup } from '../../Selectors';
 import { Chip } from '../Chip/Chip';
 import { OptionsStyledProps, OptionStyledProps } from './types';
 
 export const ChipArea = styled.div<OptionsStyledProps>`
     border-bottom: 1px solid ${({ theme }) => theme.colors.grey[200]};
-    padding: 8px;
+    padding: 0.5rem 1.3rem;
     ${Chip.Style} {
         border: 1px solid ${({ theme }) => theme.colors.grey[300]};
         background-color: ${({ theme }) => theme.colors.grey[100]};
         color: ${({ theme }) => theme.colors.grey[900]};
         padding: 0 0.6rem 0 1rem;
         margin: 0.2rem;
+        span {
+            font-size: 1.4rem;
+        }
         ${SvgIcon} {
             background-color: transparent;
             padding: 0;
@@ -25,12 +29,15 @@ export const ChipArea = styled.div<OptionsStyledProps>`
             }
         }
     }
+    > p {
+        margin: 0.3rem;
+    }
 `;
 
 export const OptionsWrapper = styled.div<OptionsStyledProps>`
     position: absolute;
     top: 5.6rem;
-    border: 1px solid ${({ theme }) => theme.select.borderColor};
+    box-shadow: ${({ theme }) => `0px 2px 8px ${theme.colors.grey[400]}`};
     background-color: ${({ theme }) => theme.select.bgColor};
     box-sizing: border-box;
     border-radius: 0.4rem;
@@ -44,9 +51,35 @@ export const Options = styled.ul<OptionsStyledProps>`
     overflow: auto;
 
     ${Checkbox.Style} {
-        width: calc(100% - 10px);
+        width: 100%;
         margin: 0;
-        padding: 0.5rem;
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        box-sizing: border-box;
+        span {
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+        }
+        &:hover {
+            background-color: ${({ theme }) => theme.colors.grey[50]};
+        }
+    }
+
+    > ${Checkbox.Style} {
+        padding: 0.7rem 1.6rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    > div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    ${SelectorGroup.Wrapper} {
+        > label {
+            padding-left: 1.6rem;
+        }
     }
 
     ${FieldWithLabel.Label} {

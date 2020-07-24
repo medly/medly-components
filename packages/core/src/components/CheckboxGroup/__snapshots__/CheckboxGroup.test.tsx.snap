@@ -52,6 +52,10 @@ exports[`CheckboxGroup component should render properly 1`] = `
   align-items: flex-start;
 }
 
+.c0 > :first-child {
+  width: 100%;
+}
+
 .c15 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -68,6 +72,7 @@ exports[`CheckboxGroup component should render properly 1`] = `
 
 .c15 > :first-child {
   margin-bottom: 0.9rem;
+  width: 100%;
 }
 
 .c2 {
@@ -92,12 +97,17 @@ exports[`CheckboxGroup component should render properly 1`] = `
 .c4 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
+  width: 100%;
 }
 
 .c16 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  margin-left: 4rem;
+  width: 100%;
+}
+
+.c16 > label {
+  padding-left: 4rem;
 }
 
 .c3 {
@@ -558,6 +568,10 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
   align-items: flex-start;
 }
 
+.c0 > :first-child {
+  width: 100%;
+}
+
 .c14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -574,6 +588,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
 
 .c14 > :first-child {
   margin-bottom: 0.9rem;
+  width: 100%;
 }
 
 .c2 {
@@ -598,12 +613,17 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
 .c4 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
+  width: 100%;
 }
 
 .c15 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  margin-left: 4rem;
+  width: 100%;
+}
+
+.c15 > label {
+  padding-left: 4rem;
 }
 
 .c3 {
@@ -1046,6 +1066,10 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   align-items: flex-start;
 }
 
+.c0 > :first-child {
+  width: 100%;
+}
+
 .c14 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1062,6 +1086,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
 
 .c14 > :first-child {
   margin-bottom: 0.9rem;
+  width: 100%;
 }
 
 .c2 {
@@ -1086,12 +1111,17 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
 .c4 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
+  width: 100%;
 }
 
 .c15 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  margin-left: 4rem;
+  width: 100%;
+}
+
+.c15 > label {
+  padding-left: 4rem;
 }
 
 .c3 {
