@@ -25,6 +25,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
             selectedRowIds,
             onRowSelection,
             isLoading,
+            showRowWithCardStyle,
             ...restProps
         } = props;
 
@@ -47,8 +48,16 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
         }, [selectedIds, onRowSelection]);
 
         return (
-            <TablePropsContext.Provider value={{ ...props, columns, data: isLoading ? loadingBodyData : data }}>
-                <TableStyled ref={ref} {...restProps} onScroll={handleScroll} isRowClickable={isRowClickable}>
+            <TablePropsContext.Provider
+                value={{ ...props, columns, size: showRowWithCardStyle ? 'L' : size, data: isLoading ? loadingBodyData : data }}
+            >
+                <TableStyled
+                    ref={ref}
+                    {...restProps}
+                    onScroll={handleScroll}
+                    isRowClickable={isRowClickable}
+                    showRowWithCardStyle={showRowWithCardStyle}
+                >
                     <Head
                         {...{
                             setColumns,

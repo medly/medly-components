@@ -21,6 +21,7 @@ export const Row: React.FC<Props> = React.memo(props => {
             rowSelectionDisableKey,
             isSelectable,
             isExpandable,
+            showRowWithCardStyle,
             size: tableSize,
             expandedRowComponent: ExpandedRowComponent
         } = useContext(TablePropsContext);
@@ -77,6 +78,8 @@ export const Row: React.FC<Props> = React.memo(props => {
                 disabled={data[rowClickDisableKey]}
                 onClick={handleRowClick}
                 isSelected={isRowSelected}
+                isExpanded={isExpanded}
+                showRowWithCardStyle={showRowWithCardStyle}
                 gridTemplateColumns={getGridTemplateColumns(columns)}
             >
                 {(isSelectable || isExpandable) && (

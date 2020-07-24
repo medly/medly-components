@@ -14,7 +14,7 @@ type RowActionProps = {
     tableSize?: TableProps['size'];
 };
 
-const selectedBorderStyle = css`
+const selectedBorderStyle = css<RowActionProps>`
         &&& {
             &::before {
                 content: '';
@@ -28,7 +28,7 @@ const selectedBorderStyle = css`
             }
         }
     `,
-    shadowStyle = css`
+    shadowStyle = css<RowActionProps>`
         &::after {
             content: '';
             right: -1.2rem;

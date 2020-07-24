@@ -3,7 +3,7 @@ import { useState, useCallback } from 'react';
 import { action } from '@storybook/addon-actions';
 import { boolean, select } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import { ThemeInterface, ColumnConfigInterface, ExpandedRowComponent } from './Table.stories';
+import { ThemeInterface, ColumnConfigInterface, ExpandedRowComponent, DarkBackground } from './Table.stories';
 import { filterData } from './filterData';
 import columns from './columns';
 import data from './data';
@@ -32,20 +32,24 @@ Simple `Table` component to show set of data.
                     tableData
                 ]);
             return (
-                <Table
-                    data={tableData}
-                    columns={columns}
-                    onSort={handleFilterData}
-                    selectedRowIds={selectedRowIds}
-                    onRowSelection={setSelectedRowIds}
-                    onRowClick={action('Row Clicked')}
-                    isLoading={boolean('Loading', false)}
-                    isSelectable={boolean('Is selectable', true)}
-                    isExpandable={boolean('Is Expandable', true)}
-                    rowSelectionDisableKey="disabled"
-                    size={select('Size', ['S', 'M', 'L'], 'M')}
-                    expandedRowComponent={ExpandedRowComponent}
-                />
+                <>
+                    <DarkBackground showRowWithCardStyle={boolean('Show Row With Card Style', true)} />
+                    <Table
+                        data={tableData}
+                        columns={columns}
+                        onSort={handleFilterData}
+                        selectedRowIds={selectedRowIds}
+                        onRowSelection={setSelectedRowIds}
+                        onRowClick={action('Row Clicked')}
+                        isLoading={boolean('Loading', false)}
+                        isSelectable={boolean('Is selectable', true)}
+                        isExpandable={boolean('Is Expandable', true)}
+                        rowSelectionDisableKey="disabled"
+                        size={select('Size', ['S', 'M', 'L'], 'L')}
+                        showRowWithCardStyle={boolean('Show Row With Card Style', true)}
+                        expandedRowComponent={ExpandedRowComponent}
+                    />
+                </>
             );
         }}
     </Story>

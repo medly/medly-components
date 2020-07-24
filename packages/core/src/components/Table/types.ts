@@ -50,6 +50,7 @@ export interface GridTemplateProps {
 
 export interface TableStyledProps {
     isRowClickable?: boolean;
+    showRowWithCardStyle?: boolean;
 }
 
 export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type' | 'size'> {
@@ -63,6 +64,8 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     rowIdentifier?: string;
     /** Size of the table */
     size?: 'S' | 'M' | 'L';
+    /** Set it true to show row with card style */
+    showRowWithCardStyle?: boolean;
     /** Key name to disable row selection */
     rowSelectionDisableKey?: string;
     /** Key name to disable row click */
