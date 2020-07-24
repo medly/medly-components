@@ -268,7 +268,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   max-width: max-content;
   cursor: default;
   border: 1px solid;
-  padding: 0.4rem 0.6rem 0.4rem 1rem;
+  padding: 0.2rem 0.6rem 0.2rem 1rem;
   border-color: #C7D0D8;
   background-color: #ffffff;
   display: -webkit-inline-box;
@@ -299,6 +299,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 .c10 .c11 {
   font-weight: 600;
   font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 
 .c10 .c13 {
@@ -1104,7 +1105,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   max-width: max-content;
   cursor: default;
   border: 1px solid;
-  padding: 0.4rem 0.6rem 0.4rem 1rem;
+  padding: 0.2rem 0.6rem 0.2rem 1rem;
   border-color: #C7D0D8;
   background-color: #ffffff;
   display: -webkit-inline-box;
@@ -1135,6 +1136,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 .c10 .c11 {
   font-weight: 600;
   font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 
 .c10 .c13 {

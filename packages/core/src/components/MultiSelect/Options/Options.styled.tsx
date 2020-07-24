@@ -13,20 +13,28 @@ export const ChipArea = styled.div<OptionsStyledProps>`
         border: 1px solid ${({ theme }) => theme.colors.grey[300]};
         background-color: ${({ theme }) => theme.colors.grey[100]};
         color: ${({ theme }) => theme.colors.grey[900]};
-        padding: 0 0.6rem 0 1rem;
+        padding: 0 0.3rem 0 1rem;
         margin: 0.2rem;
         span {
             font-size: 1.4rem;
+            line-height: 2.2rem;
         }
         ${SvgIcon} {
             background-color: transparent;
-            padding: 0;
+            padding: 0.2rem;
             * {
                 fill: ${({ theme }) => theme.colors.grey[800]};
             }
             &:hover {
-                background-color: transparent;
+                border-radius: 50%;
+                background-color: ${({ theme }) => theme.colors.grey[400]};
+                * {
+                    fill: ${({ theme }) => theme.colors.black};
+                }
             }
+        }
+        &:hover {
+            border-color: ${({ theme }) => theme.colors.grey[400]};
         }
     }
     > p {
@@ -66,7 +74,7 @@ export const Options = styled.ul<OptionsStyledProps>`
     }
 
     > ${Checkbox.Style} {
-        padding: 0.7rem 1.6rem;
+        padding: 0.7rem 0 0.7rem 1.3rem;
         width: 100%;
         box-sizing: border-box;
     }
@@ -78,7 +86,7 @@ export const Options = styled.ul<OptionsStyledProps>`
 
     ${SelectorGroup.Wrapper} {
         > label {
-            padding-left: 1.6rem;
+            padding-left: 1.3rem;
         }
     }
 

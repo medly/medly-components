@@ -6,7 +6,7 @@ import { Props } from './types';
 const common = ({ theme }: Props) => {
     return css`
         border: 1px solid;
-        padding: 0.4rem 0.6rem 0.4rem 1rem;
+        padding: 0.2rem 0.6rem 0.2rem 1rem;
         ${SvgIcon} {
             font-size: 1.2rem;
             padding: 0.4rem;
@@ -16,6 +16,7 @@ const common = ({ theme }: Props) => {
         ${Text.Style} {
             font-weight: 600;
             font-size: ${theme.font.variants.body1.fontSize};
+            line-height: 2.6rem;
         }
     `;
 };
