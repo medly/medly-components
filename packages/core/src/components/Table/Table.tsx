@@ -29,10 +29,10 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
             ...restProps
         } = props;
 
-        const [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
+        const [scrollState, handleScroll] = useScrollState(),
+            [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
             [columns, setColumns] = useState(getUpdatedColumns(props.columns, isSelectable, isExpandable, size)),
-            addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]),
-            [scrollState, handleScroll] = useScrollState();
+            addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]);
 
         const isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]),
             isSelectAllDisable = useMemo(() => data.every(dt => dt[rowSelectionDisableKey]), [data, rowSelectionDisableKey]),

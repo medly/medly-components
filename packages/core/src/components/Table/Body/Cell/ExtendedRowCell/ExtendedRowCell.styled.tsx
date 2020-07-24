@@ -1,7 +1,7 @@
 import { styled } from '@medly-components/utils';
 import { TableProps } from '../../../types';
 
-export const ExtendedRowCell = styled('td')<{ tableSize: TableProps['size'] }>`
+export const ExtendedRowCellStyled = styled('td')<{ tableSize: TableProps['size'] }>`
     grid-column: 2/-1;
     cursor: default;
     padding: 1.2rem ${({ tableSize }) => (tableSize === 'L' ? '2.4rem' : '1.6rem')};

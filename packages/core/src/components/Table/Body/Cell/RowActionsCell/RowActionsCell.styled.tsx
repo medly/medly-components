@@ -2,17 +2,7 @@ import { SvgIcon } from '@medly-components/icons';
 import { css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Checkbox from '../../../../Checkbox';
-import { TableProps } from '../../../types';
-
-type RowActionProps = {
-    isExpanded?: boolean;
-    isExpandable?: boolean;
-    isRowSelected?: boolean;
-    isSelectable?: boolean;
-    showShadowAtRight?: boolean;
-    showSelectedRowBorder: boolean;
-    tableSize?: TableProps['size'];
-};
+import { RowActionProps } from './types';
 
 const selectedBorderStyle = css<RowActionProps>`
         &&& {
@@ -40,7 +30,7 @@ const selectedBorderStyle = css<RowActionProps>`
         }
     `;
 
-export const RowActionsCell = styled('td')<RowActionProps>`
+export const RowActionsCellStyled = styled('td')<RowActionProps>`
     width: 100%;
     height: 100%;
     display: flex;
@@ -68,7 +58,7 @@ export const RowActionsCell = styled('td')<RowActionProps>`
             fill: ${({ theme }) => theme.colors.black};
         }
         transition: all 100ms ease-out;
-        transform: ${props => props.isExpanded && `rotate(180deg) `};
+        transform: ${props => props.isRowExpanded && `rotate(180deg) `};
 
         &:hover {
             background-color: ${({ theme, isRowSelected }) =>
@@ -86,5 +76,5 @@ export const RowActionsCell = styled('td')<RowActionProps>`
     }
 
     ${props => props.showShadowAtRight && shadowStyle};
-    ${props => props.showSelectedRowBorder && selectedBorderStyle}
+    ${props => props.isRowSelected && selectedBorderStyle}
 `;
