@@ -54,6 +54,10 @@ export interface TableStyledProps {
 }
 
 export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type' | 'size'> {
+    /** Set it true to shows placeholder shimmer */
+    isLoading?: boolean;
+    /** Size of the table */
+    size?: 'S' | 'M' | 'L';
     /** Array of your table data */
     data: {
         [key: string]: any;
@@ -62,8 +66,8 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     columns: TableColumnConfig[];
     /** Key name in data to be used as unique id for rows */
     rowIdentifier?: string;
-    /** Size of the table */
-    size?: 'S' | 'M' | 'L';
+    /** Ids of default selected rows */
+    selectedRowIds?: number[];
     /** Set it true to show row with card style */
     showRowWithCardStyle?: boolean;
     /** Key name to disable row selection */
@@ -71,21 +75,17 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Key name to disable row click */
     rowClickDisableKey?: string;
     /** Set it true to shows checkboxes to select rows */
-    isSelectable?: boolean;
+    isRowSelectable?: boolean;
     /** Set it true to expand rows to show extra info */
-    isExpandable?: boolean;
-    /** Set it true to shows placeholder shimmer */
-    isLoading?: boolean;
-    /** Default Sort Field*/
-    defaultSortField?: string;
-    /** Default Sort Order*/
-    defaultSortOrder?: SortOrder;
-    /** Ids of default selected rows */
-    selectedRowIds?: number[];
+    isRowExpandable?: boolean;
     /** Function to be called on row selection */
     onRowSelection?: (v: number[]) => void;
     /** Function to be called on row click */
     onRowClick?: (rowData: object) => void;
+    /** Default Sort Field*/
+    defaultSortField?: string;
+    /** Default Sort Order*/
+    defaultSortOrder?: SortOrder;
     /** Function to be called on click of sort icon */
     onSort?: (field: string, order: SortOrder) => void;
     /** Component to show when row is expanded */

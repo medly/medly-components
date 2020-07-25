@@ -18,8 +18,8 @@ export const Row: React.FC<Props> = React.memo(props => {
             onRowClick,
             rowClickDisableKey,
             rowSelectionDisableKey,
-            isSelectable,
-            isExpandable,
+            isRowSelectable,
+            isRowExpandable,
             showRowWithCardStyle,
             size: tableSize,
             expandedRowComponent
@@ -34,10 +34,10 @@ export const Row: React.FC<Props> = React.memo(props => {
             () =>
                 !isLoading && onRowClick && !isRowClickDisabled
                     ? () => onRowClick(data)
-                    : isExpandable
+                    : isRowExpandable
                     ? handleExpansionIconClick
                     : undefined,
-            [isLoading, onRowClick, isRowClickDisabled, isExpandable, handleExpansionIconClick]
+            [isLoading, onRowClick, isRowClickDisabled, isRowExpandable, handleExpansionIconClick]
         );
 
     const getCells = useCallback(
@@ -88,13 +88,13 @@ export const Row: React.FC<Props> = React.memo(props => {
                 showRowWithCardStyle={showRowWithCardStyle}
                 gridTemplateColumns={getGridTemplateColumns(columns)}
             >
-                {(isSelectable || isExpandable) && (
+                {(isRowSelectable || isRowExpandable) && (
                     <RowActionsCell
                         tableSize={tableSize}
                         isRowExpanded={isExpanded}
-                        isRowExpandable={isExpandable}
+                        isRowExpandable={isRowExpandable}
                         isRowSelected={isRowSelected}
-                        isRowSelectable={isSelectable}
+                        isRowSelectable={isRowSelectable}
                         isRowSelectionDisabled={isRowSelectionDisabled}
                         onRowSelection={handleRowSelection}
                         onRowExpansionIconClick={handleExpansionIconClick}

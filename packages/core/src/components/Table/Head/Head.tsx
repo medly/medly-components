@@ -13,8 +13,8 @@ const Head: React.FC<Props> = React.memo(props => {
     const {
             columns,
             isLoading,
-            isExpandable,
-            isSelectable,
+            isRowExpandable,
+            isRowSelectable,
             onSort,
             defaultSortOrder,
             defaultSortField,
@@ -89,16 +89,16 @@ const Head: React.FC<Props> = React.memo(props => {
                             defaultSortOrder={defaultSortOrder}
                             onSortChange={handleSortChange}
                             onWidthChange={handleWidthChange}
-                            isRowExpandable={isExpandable}
+                            isRowExpandable={isRowExpandable}
                             tableSize={tableSize}
                             isRowActionCell={config.field === 'row-actions'}
                             showShadowAtRight={config.field === 'row-actions' && showShadowAfterFrozenElement}
                         >
-                            {config.field === 'row-actions' && isSelectable ? selectAllCheckBox : config.title}
+                            {config.field === 'row-actions' && isRowSelectable ? selectAllCheckBox : config.title}
                         </HeadCell>
                     );
                 }),
-            [tableSize, isExpandable, isSelectable, sortField, maxColumnSizes, selectAllCheckBox, showShadowAfterFrozenElement]
+            [tableSize, isRowExpandable, isRowSelectable, sortField, maxColumnSizes, selectAllCheckBox, showShadowAfterFrozenElement]
         );
 
     return (

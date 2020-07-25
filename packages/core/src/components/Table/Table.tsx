@@ -20,8 +20,8 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
             onRowClick,
             rowIdentifier,
             rowSelectionDisableKey,
-            isSelectable,
-            isExpandable,
+            isRowSelectable,
+            isRowExpandable,
             selectedRowIds,
             onRowSelection,
             isLoading,
@@ -31,17 +31,17 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
 
         const [scrollState, handleScroll] = useScrollState(),
             [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
-            [columns, setColumns] = useState(getUpdatedColumns(props.columns, isSelectable, isExpandable, size)),
+            [columns, setColumns] = useState(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size)),
             addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]);
 
         const isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]),
             isSelectAllDisable = useMemo(() => data.every(dt => dt[rowSelectionDisableKey]), [data, rowSelectionDisableKey]),
-            rowSelector = useRowSelector(data, selectedRowIds, rowSelectionDisableKey, rowIdentifier, isSelectable),
+            rowSelector = useRowSelector(data, selectedRowIds, rowSelectionDisableKey, rowIdentifier, isRowSelectable),
             { isAnyRowSelected, isEachRowSelected, selectedIds, toggleId } = rowSelector;
 
         useEffect(() => {
-            setColumns(getUpdatedColumns(props.columns, isSelectable, isExpandable, size));
-        }, [props.columns, isSelectable, isExpandable, size]);
+            setColumns(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size));
+        }, [props.columns, isRowSelectable, isRowExpandable, size]);
 
         useEffect(() => {
             onRowSelection && onRowSelection(selectedIds);

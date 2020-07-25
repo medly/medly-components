@@ -12,16 +12,16 @@ export const addSizeToColumnConfig = (columnConfigs: TableColumnConfig[]): Table
 
 export const getUpdatedColumns = (
     columnConfigs: TableColumnConfig[],
-    isSelectable?: boolean,
-    isExpandable?: boolean,
+    isRowSelectable?: boolean,
+    isRowExpandable?: boolean,
     size?: TableProps['size']
 ): TableColumnConfig[] => [
-    ...(isSelectable || isExpandable
+    ...(isRowSelectable || isRowExpandable
         ? [
               {
                   ...rowActionsColumnConfig,
                   size:
-                      isSelectable && isExpandable
+                      isRowSelectable && isRowExpandable
                           ? `minmax(${size === 'L' ? '11.6rem' : '84px'}, 0.1fr)`
                           : `minmax(${size === 'L' ? '6.4rem' : '48px'}, 0.1fr)`
               }
