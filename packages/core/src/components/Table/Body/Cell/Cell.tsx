@@ -6,11 +6,11 @@ import { TableCellProps } from './types';
 
 const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
     const childRef = useRef(null),
-        { addColumnMaxSize, config, data, rowId, isRowClickDisabled, dottedFieldName, isLoading, ...restProps } = props;
+        { addColumnMaxSize, config, data, rowId, isRowClickDisabled, dottedFieldName, tableSize, isLoading, ...restProps } = props;
 
     useEffect(() => {
-        childRef.current && !isLoading && addColumnMaxSize(dottedFieldName, childRef.current.clientWidth);
-    }, [childRef.current]);
+        childRef.current && !isLoading && addColumnMaxSize(dottedFieldName, childRef.current.clientWidth + (tableSize === 'L' ? 48 : 32));
+    }, [childRef.current, tableSize]);
 
     const formattedCell = useCallback(() => {
             switch (config.formatter) {
@@ -39,7 +39,7 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
         textAlign = useMemo(() => config.align || (config.formatter === 'numeric' ? 'right' : 'left'), []);
 
     return (
-        <StyledCell hidden={config.hidden} frozen={config.frozen} align={textAlign} {...restProps}>
+        <StyledCell hidden={config.hidden} frozen={config.frozen} tableSize={tableSize} align={textAlign} {...restProps}>
             {isLoading ? <LoadingDiv ref={childRef} /> : formattedCell()}
         </StyledCell>
     );
