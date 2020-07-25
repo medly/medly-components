@@ -352,6 +352,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c19 > :first-child {
   margin-bottom: 0.9rem;
+  width: 100%;
 }
 
 .c32 {
@@ -370,6 +371,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c32 > :first-child {
   margin-bottom: 0.9rem;
+  width: 100%;
 }
 
 .c21 {
@@ -400,6 +402,7 @@ exports[`Form should render properly with initial state 1`] = `
 .c22 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
+  width: 100%;
 }
 
 .c28 {
@@ -1505,7 +1508,7 @@ exports[`Form should render properly with initial state 1`] = `
   max-width: max-content;
   cursor: default;
   border: 1px solid;
-  padding: 0.4rem 0.6rem 0.4rem 1rem;
+  padding: 0.2rem 0.6rem 0.2rem 1rem;
   border-color: #b0bcc8;
   background-color: #eff2f4;
   display: -webkit-inline-box;
@@ -1535,6 +1538,8 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c64 .c16 {
   font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 
 .c64 .c29 {
@@ -1609,7 +1614,10 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c58 .c2:focus-within input {
   cursor: text;
-  padding-right: 5px;
+}
+
+.c58 .c2 input {
+  padding-right: 1.6rem;
 }
 
 .c58 .c62 > .c29 {
@@ -2287,7 +2295,7 @@ exports[`Form should render properly with initial state 1`] = `
             class="c47"
           >
             <div
-              class="sc-fzoaKM c48"
+              class="sc-fzqAui c48"
               data-testid="DateRangeInputGrid"
             >
               <label
@@ -2456,6 +2464,7 @@ exports[`Form should render properly with initial state 1`] = `
                 </span>
                 <svg
                   class="c29 c65"
+                  data-testid="cancel-chip"
                   fill="none"
                   height="1em"
                   viewBox="0 0 24 24"
@@ -2847,6 +2856,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c21 > :first-child {
   margin-bottom: 0.9rem;
+  width: 100%;
 }
 
 .c33 {
@@ -2865,6 +2875,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c33 > :first-child {
   margin-bottom: 0.9rem;
+  width: 100%;
 }
 
 .c23 {
@@ -2895,6 +2906,7 @@ exports[`Form should render properly without initial state 1`] = `
 .c24 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
+  width: 100%;
 }
 
 .c30 {
@@ -3999,7 +4011,10 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c58 .c5:focus-within input {
   cursor: text;
-  padding-right: 5px;
+}
+
+.c58 .c5 input {
+  padding-right: 1.6rem;
 }
 
 .c58 .c62 > .c31 {
@@ -4661,7 +4676,7 @@ exports[`Form should render properly without initial state 1`] = `
             class="c47"
           >
             <div
-              class="sc-fzoaKM c48"
+              class="sc-fzqAui c48"
               data-testid="DateRangeInputGrid"
             >
               <label
