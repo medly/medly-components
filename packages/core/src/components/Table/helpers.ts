@@ -1,4 +1,3 @@
-import { columnsWidth } from './columnsWidth';
 import { rowActionsColumnConfig } from './constants';
 import { TableColumnConfig, TableProps } from './types';
 
@@ -6,7 +5,7 @@ export const addSizeToColumnConfig = (columnConfigs: TableColumnConfig[]): Table
     return columnConfigs.map(config => {
         return config.children
             ? { ...config, children: addSizeToColumnConfig(config.children) }
-            : { ...config, size: config.hidden ? `minmax(0px, 0px)` : columnsWidth[config.formatter] };
+            : { ...config, size: config.hidden ? `minmax(0px, 0px)` : `minmax(100px, ${config.fraction || 1}fr)` };
     });
 };
 
@@ -72,7 +71,7 @@ export const changeSize = (width: number, dottedField: string, columnConfigs: Ta
         if (config.children && nextField) {
             config.children = changeSize(width, nextField, config.children);
         } else if (width < 84) {
-            config.size = columnsWidth[config.formatter];
+            config.size = `minmax(84px, ${config.fraction || 1}fr)`;
         } else if (width > 900) {
             config.size = config.size.replace(/(.*\()(.*)(,.*)/, `$1700px$3`);
         } else {

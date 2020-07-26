@@ -6,28 +6,28 @@ import { TableCellProps } from './types';
 
 const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
     const childRef = useRef(null),
-        { addColumnMaxSize, config, data, rowId, isRowClickDisabled, dottedFieldName, tableSize, isLoading, ...restProps } = props;
+        { addColumnMaxSize, config, data, rowId, isRowClickDisabled, dottedFieldName, tableSize, isLoading, ...restProps } = props,
+        { align, hidden, frozen, formatter, component: CustomComponent } = config;
 
     useEffect(() => {
         childRef.current && !isLoading && addColumnMaxSize(dottedFieldName, childRef.current.clientWidth + (tableSize === 'L' ? 48 : 32));
     }, [childRef.current, tableSize]);
 
     const formattedCell = useCallback(() => {
-            switch (config.formatter) {
+            if (CustomComponent) {
+                return (
+                    <CustomComponentWrapper ref={childRef}>
+                        <CustomComponent {...{ data, rowId, disabled: isRowClickDisabled }} />
+                    </CustomComponentWrapper>
+                );
+            }
+            switch (formatter) {
                 case 'boolean':
                     return (
                         <Text ref={childRef} textVariant="body2">
                             {data ? 'Yes' : 'No'}
                         </Text>
                     );
-                case 'react-component': {
-                    const Component = config.component;
-                    return (
-                        <CustomComponentWrapper ref={childRef}>
-                            <Component {...{ data, rowId, disabled: isRowClickDisabled }} />
-                        </CustomComponentWrapper>
-                    );
-                }
                 default:
                     return (
                         <Text ref={childRef} textVariant="body2">
@@ -35,11 +35,11 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
                         </Text>
                     );
             }
-        }, [data, rowId, isLoading, isRowClickDisabled]),
-        textAlign = useMemo(() => config.align || (config.formatter === 'numeric' ? 'right' : 'left'), []);
+        }, [data, formatter, rowId, isRowClickDisabled, CustomComponent]),
+        textAlign = useMemo(() => align || (formatter === 'numeric' ? 'right' : 'left'), [align, formatter]);
 
     return (
-        <StyledCell hidden={config.hidden} frozen={config.frozen} tableSize={tableSize} align={textAlign} {...restProps}>
+        <StyledCell hidden={hidden} frozen={frozen} tableSize={tableSize} align={textAlign} {...restProps}>
             {isLoading ? <LoadingDiv ref={childRef} /> : formattedCell()}
         </StyledCell>
     );

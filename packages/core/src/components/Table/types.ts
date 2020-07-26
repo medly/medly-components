@@ -5,12 +5,7 @@ export type SortOrder = 'asc' | 'desc';
 
 export interface ColumnsWidth {
     numeric: string;
-    group: string;
     boolean: string;
-    'row-actions': string;
-    'text-short': string;
-    'text-long': string;
-    'react-component': string;
 }
 
 export type Data = {
@@ -22,8 +17,8 @@ export interface TableColumnConfig {
     title: string;
     /** Field name in the data */
     field: string;
-    /** Column formatter */
-    formatter: keyof ColumnsWidth;
+    /** Provide the fraction of the of the total width of the row */
+    fraction?: number;
     /** Column content alignment */
     align?: 'left' | 'right' | 'center';
     /** WIP | Set it true to freeze the component on the left side*/
@@ -38,6 +33,8 @@ export interface TableColumnConfig {
     children?: TableColumnConfig[];
     /** Set it true to wrap column text */
     wrapText?: boolean;
+    /** Column formatter */
+    formatter?: keyof ColumnsWidth;
     /** Custom component */
     component?: React.FC<{ data: any; rowId?: any; disabled?: boolean }>;
     /** This will be handled internally */

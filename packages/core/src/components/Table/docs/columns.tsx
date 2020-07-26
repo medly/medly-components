@@ -1,40 +1,27 @@
-import { styled } from '@medly-components/utils';
-import React from 'react';
-import Chip from '../../Chip';
 import { TableColumnConfig } from '../types';
 
-const StyledDiv = styled('div')`
-        display: flex;
-        flex-direction: column;
-    `,
-    FavoriteColor: TableColumnConfig['component'] = ({ data: colors, disabled }) => {
-        const chips = colors.split(',').map((color: string) => <Chip key={color} label={color} disabled={disabled} />);
-        return <StyledDiv>{chips}</StyledDiv>;
-    };
-
 const columns: TableColumnConfig[] = [
-    { title: 'Name', field: 'name', formatter: 'text-short', sortable: true, fitContent: true },
+    { title: 'Name', field: 'name', fraction: 2, sortable: true, fitContent: true },
     {
         title: 'Marks',
         field: 'marks',
-        formatter: 'group',
         children: [
             {
                 title: 'Maths',
                 field: 'maths',
-                formatter: 'numeric',
+                align: 'right',
                 sortable: true,
                 children: [
-                    { title: 'Algebra', field: 'algebra', formatter: 'numeric', sortable: true },
-                    { title: 'Trigonometry', field: 'trigonometry', formatter: 'numeric', sortable: true }
+                    { title: 'Algebra', field: 'algebra', align: 'right', sortable: true },
+                    { title: 'Trigonometry', field: 'trigonometry', align: 'right', sortable: true }
                 ]
             },
-            { title: 'Science', field: 'science', formatter: 'numeric', sortable: true }
+            { title: 'Science', field: 'science', align: 'right', sortable: true }
         ]
     },
-    { title: 'Age', field: 'age', formatter: 'numeric', sortable: true },
+    { title: 'Age', field: 'age', align: 'right', sortable: true },
     { title: 'Passed', field: 'isPassed', formatter: 'boolean', sortable: true },
-    { title: 'Rating', field: 'rating', formatter: 'numeric', sortable: true }
+    { title: 'Rating', field: 'rating', align: 'right', sortable: true }
 ];
 
 export default columns;
