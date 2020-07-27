@@ -37,7 +37,10 @@ export const RowActionsCellStyled = styled('td')<RowActionProps>`
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-right: ${({ tableSize }) => (tableSize === 'L' ? '2rem' : '1.2rem')};
+    padding-left: ${({ isLoading, tableSize }) => isLoading && (tableSize === 'L' ? '2rem' : '1.2rem')};
     overflow: visible;
     cursor: default;
     position: sticky;
@@ -57,7 +60,7 @@ export const RowActionsCellStyled = styled('td')<RowActionProps>`
         * {
             fill: ${({ theme }) => theme.colors.black};
         }
-        transition: all 100ms ease-out;
+        transition: transform 200ms ease-out, background-color 100ms ease-out;
         transform: ${props => props.isRowExpanded && `rotate(180deg) `};
 
         &:hover {

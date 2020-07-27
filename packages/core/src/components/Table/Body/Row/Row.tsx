@@ -32,11 +32,8 @@ export const Row: React.FC<Props> = React.memo(props => {
         handleExpansionIconClick = useCallback(() => setExpansionState(val => !val), []),
         handleRowClick = useMemo(
             () =>
-                !isLoading && onRowClick && !isRowClickDisabled
-                    ? () => onRowClick(data)
-                    : isRowExpandable
-                    ? handleExpansionIconClick
-                    : undefined,
+                !isLoading &&
+                (onRowClick && !isRowClickDisabled ? () => onRowClick(data) : isRowExpandable ? handleExpansionIconClick : undefined),
             [isLoading, onRowClick, isRowClickDisabled, isRowExpandable, handleExpansionIconClick]
         );
 
@@ -85,12 +82,14 @@ export const Row: React.FC<Props> = React.memo(props => {
                 onClick={handleRowClick}
                 isSelected={isRowSelected}
                 isExpanded={isExpanded}
+                isExpandable={isRowExpandable}
                 showRowWithCardStyle={showRowWithCardStyle}
                 gridTemplateColumns={getGridTemplateColumns(columns)}
             >
                 {(isRowSelectable || isRowExpandable) && (
                     <RowActionsCell
                         tableSize={tableSize}
+                        isLoading={isLoading}
                         isRowExpanded={isExpanded}
                         isRowExpandable={isRowExpandable}
                         isRowSelected={isRowSelected}
@@ -102,11 +101,12 @@ export const Row: React.FC<Props> = React.memo(props => {
                     />
                 )}
                 {getCells(data)}
-                {isExpanded && (
+                {isRowExpandable && expandedRowComponent && (
                     <ExtendedRowCell
                         rowId={id}
                         rowData={data}
                         tableSize={tableSize}
+                        isRowExpanded={isExpanded}
                         isRowSelected={isRowSelected}
                         expandedRowComponent={expandedRowComponent}
                         isRowClickDisabled={isRowClickDisabled}

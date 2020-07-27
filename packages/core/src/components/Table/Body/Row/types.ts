@@ -6,6 +6,7 @@ export type StyledProps = GridTemplateProps &
     WithThemeProp & {
         isSelected?: boolean;
         isExpanded?: boolean;
+        isExpandable?: boolean;
         showRowWithCardStyle?: boolean;
     };
 export type Props = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {

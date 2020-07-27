@@ -9,6 +9,7 @@ const cardStyle = css<StyledProps>`
     margin-left: 0.8rem;
     margin-right: 0.8rem;
     box-shadow: ${({ theme }) => `0 0.2rem 0.8rem ${rgba(theme.table.shadowColor, 0.2)} `};
+    &,
     & > * {
         background-color: ${({ theme, isSelected, disabled }) =>
             theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
@@ -16,23 +17,27 @@ const cardStyle = css<StyledProps>`
 
     &&& > * {
         &:first-child {
-            border-radius: ${props => (props.isExpanded ? '0.8rem 0 0  0' : '0.8rem 0 0 0.8rem')};
+            &,
+            &::before {
+                transition: ${props => !props.isExpanded && 'border-radius 200ms ease-in'};
+                border-radius: ${props => (props.isExpanded ? '0.8rem 0 0 0' : '0.8rem 0 0 0.8rem')};
+            }
+
             &::before {
                 width: 0.8rem;
-                border-radius: ${props => (props.isExpanded ? '0.8rem 0 0  0' : '0.8rem 0 0 0.8rem')};
             }
         }
         &:last-child {
-            border-radius: ${props => (props.isExpanded ? '0 0 0.8rem 0' : '0 0.8rem 0.8rem 0')};
+            border-radius: ${props => (props.isExpandable ? '0 0 0.8rem 0' : '0 0.8rem 0.8rem 0')};
         }
         &:nth-last-child(3) {
-            border-radius: ${props => props.isExpanded && '0 0.8rem 0 0'};
+            border-radius: ${props => props.isExpandable && (props.isExpanded ? '0 0.8rem 0 0' : '0 0.8rem 0.8rem 0')};
         }
         &:nth-last-child(2) {
-            border-radius: ${props => props.isExpanded && ' 0 0 0 0.8rem'};
+            border-radius: ${props => props.isExpandable && '0 0 0 0.8rem'};
             &::before {
                 width: 0.8rem;
-                border-radius: ${props => props.isExpanded && ' 0 0 0 0.8rem'};
+                border-radius: 0 0 0 0.8rem;
             }
         }
     }
@@ -53,6 +58,7 @@ const normalStyle = css<StyledProps>`
     }
 
     &:nth-child(odd) {
+        &,
         & > * {
             background-color: ${({ theme, isSelected, disabled }) =>
                 theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'odd']};
@@ -60,6 +66,7 @@ const normalStyle = css<StyledProps>`
     }
 
     &:nth-child(even) {
+        &,
         & > * {
             background-color: ${({ theme, isSelected, disabled }) =>
                 theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
@@ -80,7 +87,6 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
     position: relative;
     align-items: center;
     min-width: fit-content;
-    transition: box-shadow 100ms ease-out;
     cursor: ${({ disabled, onClick }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
     ${({ showRowWithCardStyle }) => (showRowWithCardStyle ? cardStyle : normalStyle)}
 `;

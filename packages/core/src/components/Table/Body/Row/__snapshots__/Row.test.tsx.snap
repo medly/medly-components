@@ -11,8 +11,6 @@ exports[`Row should render NoResult properly 1`] = `
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  -webkit-transition: box-shadow 100ms ease-out;
-  transition: box-shadow 100ms ease-out;
   cursor: inherit;
   text-align: center;
   line-height: 30px;
@@ -22,10 +20,12 @@ exports[`Row should render NoResult properly 1`] = `
   z-index: 2;
 }
 
+.c0:nth-child(odd),
 .c0:nth-child(odd) > * {
   background-color: #F7F8F9;
 }
 
+.c0:nth-child(even),
 .c0:nth-child(even) > * {
   background-color: #ffffff;
 }
@@ -54,8 +54,6 @@ exports[`Row should render row properly 1`] = `
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
-  -webkit-transition: box-shadow 100ms ease-out;
-  transition: box-shadow 100ms ease-out;
   cursor: inherit;
 }
 
@@ -63,10 +61,12 @@ exports[`Row should render row properly 1`] = `
   z-index: 2;
 }
 
+.c0:nth-child(odd),
 .c0:nth-child(odd) > * {
   background-color: #F7F8F9;
 }
 
+.c0:nth-child(even),
 .c0:nth-child(even) > * {
   background-color: #ffffff;
 }

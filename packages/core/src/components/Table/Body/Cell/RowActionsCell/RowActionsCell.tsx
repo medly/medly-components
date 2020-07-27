@@ -12,6 +12,7 @@ export const RowActionsCell: React.FC<RowActionProps> & WithStyle = React.memo(p
     return (
         <RowActionsCellStyled
             onClick={stopPropagation}
+            isLoading={props.isLoading}
             isRowExpanded={props.isRowExpanded}
             isRowSelected={props.isRowSelected}
             tableSize={props.tableSize}

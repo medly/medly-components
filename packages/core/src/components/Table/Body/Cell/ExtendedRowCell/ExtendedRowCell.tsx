@@ -1,7 +1,7 @@
 import { WithStyle } from '@medly-components/utils/src';
 import React, { useCallback } from 'react';
 import { RowActionsCellStyled } from '../RowActionsCell/RowActionsCell.styled';
-import { ExtendedRowCellStyled } from './ExtendedRowCell.styled';
+import { ExtendedRowCellStyled, Wrapper } from './ExtendedRowCell.styled';
 import { ExtendedRowCellProps } from './types';
 
 export const ExtendedRowCell: React.FC<ExtendedRowCellProps> & WithStyle = React.memo(props => {
@@ -10,6 +10,7 @@ export const ExtendedRowCell: React.FC<ExtendedRowCellProps> & WithStyle = React
         rowData,
         tableSize,
         isRowSelected,
+        isRowExpanded,
         isRowClickDisabled,
         showShadowAtRight,
         expandedRowComponent: ExpandedRowComponent
@@ -19,8 +20,11 @@ export const ExtendedRowCell: React.FC<ExtendedRowCellProps> & WithStyle = React
     return (
         <>
             <RowActionsCellStyled onClick={stopPropagation} isRowSelected={isRowSelected} showShadowAtRight={showShadowAtRight} />
-            <ExtendedRowCellStyled onClick={stopPropagation} tableSize={tableSize}>
-                <ExpandedRowComponent rowId={rowId} rowData={rowData} disabled={isRowClickDisabled} />
+
+            <ExtendedRowCellStyled onClick={stopPropagation} tableSize={tableSize} isRowExpanded={isRowExpanded}>
+                <Wrapper tableSize={tableSize}>
+                    <ExpandedRowComponent rowId={rowId} rowData={rowData} disabled={isRowClickDisabled} />
+                </Wrapper>
             </ExtendedRowCellStyled>
         </>
     );
