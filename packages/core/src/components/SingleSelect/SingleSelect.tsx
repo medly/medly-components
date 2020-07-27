@@ -21,6 +21,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 disabled,
                 onFocus,
                 onBlur,
+                className,
                 isSearchable,
                 ...inputProps
             } = props,
@@ -135,6 +136,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             <Styled.Wrapper
                 {...{ variant, disabled, minWidth, fullWidth }}
                 ref={wrapperRef}
+                className={className}
                 isSearchable={isSearchable}
                 isErrorPresent={!!props.errorText}
                 onClick={toggleOptions}
