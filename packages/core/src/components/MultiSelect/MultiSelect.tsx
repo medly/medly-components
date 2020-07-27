@@ -71,7 +71,6 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                 }
                 inputRef.current && inputRef.current.blur();
             }, [areOptionsVisible]),
-            handleKeyPress = useCallback((event: React.KeyboardEvent) => !isSearchable && event.preventDefault(), [isSearchable]),
             getState = useCallback(() => {
                 if (props.disabled) {
                     return 'disabled';
@@ -91,8 +90,6 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             handleOnBlur = useCallback(() => {
                 if (areOptionsVisible) {
                     inputRef.current && inputRef.current.focus();
-                } else {
-                    inputRef.current && inputRef.current.blur();
                 }
             }, [areOptionsVisible]);
 
@@ -154,7 +151,6 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                     ref={inputRef}
                     placeholder={placeholder}
                     suffix={chipEl}
-                    onKeyPress={handleKeyPress}
                     onChange={handleInputChange}
                     onBlur={handleOnBlur}
                     {...inputProps}

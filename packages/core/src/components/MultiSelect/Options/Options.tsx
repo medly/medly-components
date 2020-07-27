@@ -43,10 +43,10 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
             <Styled.ChipArea>
                 {selectedValues.length === 0 && <p>-</p>}
                 {selectedValues.map((value, index) => {
-                    return <Chip key={index} label={value} onClear={handleClearHandler} />;
+                    return <Chip key={index} label={value} testId={`${value}`} onClear={handleClearHandler} />;
                 })}
             </Styled.ChipArea>
-            <Styled.Options onClick={stopPropagation}>
+            <Styled.Options id={props.id} onClick={stopPropagation}>
                 {props.options.map((op, index) => (
                     <React.Fragment key={index}>
                         {props.showCheckbox && !Array.isArray(op.value) && (

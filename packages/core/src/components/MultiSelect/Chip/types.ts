@@ -11,8 +11,6 @@ export interface Props extends ButtonProps, WithThemeProp {
     state?: 'default' | 'active' | 'error' | 'disabled';
     /** Test ID */
     testId?: string;
-    /** On click function */
-    onClick?: () => void;
     /** On delete function */
     onClear?: (label?: number) => void;
 }

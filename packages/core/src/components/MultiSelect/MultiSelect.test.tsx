@@ -135,7 +135,7 @@ describe('MultiSelect component', () => {
 
         it('should close options when clicked outside', async () => {
             const mockOnChange = jest.fn(),
-                { container, getByText } = render(
+                { getByText } = render(
                     <>
                         <p>Outer</p>
                         <MultiSelect showCheckbox={showCheckbox} options={options} onChange={mockOnChange} />
@@ -154,5 +154,29 @@ describe('MultiSelect component', () => {
         );
         fireEvent.click(queryByTestId('cancel-chip'));
         expect(screen.queryByRole('list')).toBeNull();
+    });
+
+    it('should show options on input change', () => {
+        render(<MultiSelect options={options} />);
+        const input = document.getElementById('medly-multiSelect-input');
+        fireEvent.change(input, { target: { value: 'Dummy2' } });
+        expect(screen.queryByRole('list')).toBeVisible();
+    });
+
+    it('should not show options if options are hidden', () => {
+        render(<MultiSelect id="multiSelect" options={options} disabled={false} />);
+        const wrapper = document.getElementById('multiSelect-wrapper');
+        const input = document.getElementById('multiSelect-input');
+        fireEvent.change(input, { target: { value: 'Dummy2' } });
+        fireEvent.click(wrapper);
+        expect(screen.queryByRole('list')).toBeNull();
+    });
+
+    it('should maintain focus even on blur of input', async () => {
+        render(<MultiSelect options={options} showCheckbox={true} />);
+        const input = document.getElementById('medly-multiSelect-input');
+        fireEvent.change(input, { target: { value: 'Dummy' } });
+        fireEvent.click(document.getElementById('Dummy1-wrapper'));
+        expect(input).toBe(document.activeElement);
     });
 });
