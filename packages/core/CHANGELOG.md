@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.11.0...@medly-components/core@1.11.1) (2020-07-27)
+
+
+### Bug Fixes
+
+* fix textfield's validator issue ([b39f8d0](https://github.com/medly/medly-components/commit/b39f8d0834638236cff0701e26387e14fdadcd57))
+
+
+
+
+
 # [1.11.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.10.1...@medly-components/core@1.11.0) (2020-07-27)
 
 
