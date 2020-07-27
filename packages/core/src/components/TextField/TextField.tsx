@@ -49,6 +49,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
         return (
             <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth}>
                 <Styled.InnerWrapper
+                    id={`${inputId}-wrapper`}
                     onClick={handleWrapperClick}
                     variant={props.variant}
                     disabled={disabled}

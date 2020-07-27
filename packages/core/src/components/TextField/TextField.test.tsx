@@ -27,6 +27,12 @@ describe('TextField', () => {
         `);
     });
 
+    it('should focus on input when clicked on the wrapper', () => {
+        const { container } = render(<TextField label="Name" minWidth="30rem" id="dummy" />);
+        fireEvent.click(container.querySelector('#dummy-wrapper'));
+        expect(container.querySelector('input')).toHaveFocus();
+    });
+
     describe('without label', () => {
         it('should render default state properly', () => {
             const { container } = render(<TextField type="email" />);
@@ -86,6 +92,7 @@ describe('TextField', () => {
             fireEvent.blur(input);
             const message = await findByText('Email should be more then 3 characters');
             expect(message).toBeInTheDocument();
+            expect(input.validationMessage).toEqual('Email should be more then 3 characters');
             expect(mockOnBlur).toHaveBeenCalled();
         });
     });
@@ -93,11 +100,16 @@ describe('TextField', () => {
     describe.each(['outlined', 'filled'])('with %s variant', (variant: Props['variant']) => {
         describe.each(['with label', 'without label'])('and %s', (labelCnd: string) => {
             it('should render default state properly', () => {
-                const { container } = render(<TextField variant={variant} label={labelCnd === 'with labe' ? 'Name' : ''} />);
+                const { container } = render(<TextField variant={variant} label={labelCnd === 'with label' ? 'Name' : ''} />);
                 expect(container).toMatchSnapshot();
             });
             it('should render focus state properly', () => {
-                const { container } = render(<TextField variant={variant} label={labelCnd === 'with labe' ? 'Name' : ''} />);
+                const { container } = render(<TextField variant={variant} label={labelCnd === 'with label' ? 'Name' : ''} />);
+                fireEvent.focusIn(container.querySelector('input'));
+                expect(container).toMatchSnapshot();
+            });
+            it('should render disabled state properly', () => {
+                const { container } = render(<TextField variant={variant} disabled label={labelCnd === 'with label' ? 'Name' : ''} />);
                 fireEvent.focusIn(container.querySelector('input'));
                 expect(container).toMatchSnapshot();
             });

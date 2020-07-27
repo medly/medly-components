@@ -687,6 +687,7 @@ exports[`Calendar Component should render given date 1`] = `
         >
           <div
             class="c10"
+            id="test-calendar-month-selector-wrapper"
           >
             <div
               class="c11"
@@ -730,6 +731,7 @@ exports[`Calendar Component should render given date 1`] = `
         >
           <div
             class="c10"
+            id="test-calendar-year-selector-wrapper"
           >
             <div
               class="c11"
