@@ -44,10 +44,12 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     };
 
     const handleSortIconClick = useCallback(() => {
-        const order = sortState === 'asc' ? 'desc' : 'asc';
-        setSortState(order);
-        onSortChange(field, order);
-    }, [sortState, onSortChange, field]);
+        if (sortable) {
+            const order = sortState === 'asc' ? 'desc' : 'asc';
+            setSortState(order);
+            onSortChange(field, order);
+        }
+    }, [sortable, sortState, onSortChange, field]);
 
     const onMouseUp = () => {
         window.removeEventListener('mousemove', onMouseMove);

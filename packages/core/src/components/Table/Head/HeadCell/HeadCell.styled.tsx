@@ -98,7 +98,7 @@ export const HeadCellButton = styled.button<{ withHoverEffect: boolean; isSelect
     }
 
     &:active {
-        ${({ isSelected, theme }) => getStyle(theme, 'pressed', isSelected)}
+        ${({ isSelected, withHoverEffect, theme }) => withHoverEffect && getStyle(theme, 'pressed', isSelected)}
     }
 
     ${Text.Style} {
