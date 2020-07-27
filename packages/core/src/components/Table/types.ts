@@ -3,11 +3,6 @@ import ColumnConfiguration from './ColumnConfiguration';
 
 export type SortOrder = 'asc' | 'desc';
 
-export interface ColumnsWidth {
-    numeric: string;
-    boolean: string;
-}
-
 export type Data = {
     [key: string]: any;
 }[];
@@ -33,8 +28,8 @@ export interface TableColumnConfig {
     children?: TableColumnConfig[];
     /** Set it true to wrap column text */
     wrapText?: boolean;
-    /** Column formatter */
-    formatter?: keyof ColumnsWidth;
+    /** Pass any function to format the column data */
+    formatter?: (data: any) => any;
     /** Custom component */
     component?: React.FC<{ data: any; rowId?: any; disabled?: boolean }>;
     /** This will be handled internally */

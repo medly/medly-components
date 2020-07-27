@@ -20,7 +20,7 @@ const columns: TableColumnConfig[] = [
         ]
     },
     { title: 'Age', field: 'age', align: 'right', sortable: true },
-    { title: 'Passed', field: 'isPassed', formatter: 'boolean', sortable: true },
+    { title: 'Passed', field: 'isPassed', formatter: (data: boolean) => (data ? 'Yes' : 'No'), sortable: true },
     { title: 'Rating', field: 'rating', align: 'right', sortable: true }
 ];
 
