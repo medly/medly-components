@@ -1,4 +1,4 @@
-import { clearMarginPadding, css, styled } from '@medly-components/utils';
+import { css, styled } from '@medly-components/utils';
 import { TableStyledProps } from './types';
 
 export const getBorder = (align: 'left' | 'right' | 'top' | 'bottom') => css`
@@ -18,11 +18,12 @@ export const getBorder = (align: 'left' | 'right' | 'top' | 'bottom') => css`
 export const TableStyled = styled('table')<TableStyledProps>`
     overflow: auto;
     display: block;
-    border: 1px solid ${({ theme }) => theme.table.borderColor};
+    border: ${({ showRowWithCardStyle, theme }) => !showRowWithCardStyle && `1px solid ${theme.table.borderColor}`};
+    padding: ${({ showRowWithCardStyle }) => (showRowWithCardStyle ? '0 0 0.8rem 0' : 0)};
     border-radius: 0.8rem;
     border-collapse: separate;
     border-spacing: 0;
-    ${clearMarginPadding}
+    margin: 0;
 
     * {
         box-sizing: border-box;
@@ -44,11 +45,11 @@ export const TableStyled = styled('table')<TableStyledProps>`
 
     &::-webkit-scrollbar-track:horizontal {
         background-color: transparent;
-        border-top: 0.1rem solid ${({ theme }) => theme.table.borderColor};
+        border-top: ${({ showRowWithCardStyle, theme }) => !showRowWithCardStyle && `0.1rem solid ${theme.table.borderColor}`};
     }
 
     &::-webkit-scrollbar-track:vertical {
         background-color: transparent;
-        border-left: 0.1rem solid ${({ theme }) => theme.table.borderColor};
+        border-left: ${({ showRowWithCardStyle, theme }) => !showRowWithCardStyle && `0.1rem solid ${theme.table.borderColor}`};
     }
 `;

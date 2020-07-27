@@ -5,6 +5,7 @@ import { rgba } from 'polished';
 import Checkbox from '../../../Checkbox';
 import Text from '../../../Text';
 import { getBorder } from '../../Table.styled';
+import { TableProps } from '../../types';
 import { HeadCellStyledProps } from './types';
 
 const frozenStyle = css`
@@ -19,7 +20,6 @@ const frozenStyle = css`
             overflow: visible;
             &::after {
                 content: '';
-                top: 0;
                 right: -1.2rem;
                 height: 100%;
                 width: 1.2rem;
@@ -36,10 +36,12 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
     display: flex;
     overflow: hidden;
     align-items: flex-end;
+    justify-content: ${({ isRowActionCell }) => (isRowActionCell ? 'flex-end' : 'flex-start')};
     opacity: ${({ hidden }) => (hidden ? 0 : 1)};
     position: ${({ frozen }) => (frozen ? 'sticky' : 'relative')};
     cursor: ${({ isRowActionCell }) => isRowActionCell && 'default'};
-    padding: ${({ hidden, isRowActionCell }) => (hidden ? '0' : isRowActionCell ? `1.2rem` : '0.8rem')};
+    padding: ${({ hidden, isRowActionCell, tableSize }) =>
+        hidden ? '0' : isRowActionCell ? `1.6rem ${tableSize === 'L' ? '2rem' : '1.2rem'} ` : '0.8rem'};
 
     &:not(:last-child) {
         &::after {
@@ -49,7 +51,6 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
 
     ${Checkbox.Style} {
         padding: 0;
-        margin-left: ${({ isRowExpandable }) => isRowExpandable && '3.4rem'};
     }
 
     ${props => props.frozen && frozenStyle}
@@ -80,12 +81,12 @@ const getStyle = (theme: Theme, styleType: 'default' | 'hovered' | 'pressed', is
     `;
 };
 
-export const HeadCellButton = styled.button<{ withHoverEffect: boolean; isSelected: boolean }>`
+export const HeadCellButton = styled.button<{ withHoverEffect: boolean; isSelected: boolean; tableSize?: TableProps['size'] }>`
     border: 0;
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 0.9rem 0.8rem 1.1rem;
+    padding: ${({ tableSize }) => (tableSize === 'L' ? '0.9rem 1.6rem 1.1rem' : '0.9rem 0.8rem 1.1rem')};
     outline: unset;
     font-family: inherit;
     border-radius: 0.8rem;
@@ -97,7 +98,7 @@ export const HeadCellButton = styled.button<{ withHoverEffect: boolean; isSelect
     }
 
     &:active {
-        ${({ isSelected, theme }) => getStyle(theme, 'pressed', isSelected)}
+        ${({ isSelected, withHoverEffect, theme }) => withHoverEffect && getStyle(theme, 'pressed', isSelected)}
     }
 
     ${Text.Style} {

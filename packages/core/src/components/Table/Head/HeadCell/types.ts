@@ -1,3 +1,5 @@
+import { TableProps } from '../../types';
+
 export type SortOrder = 'asc' | 'desc';
 
 export type HeadCellStyledProps = {
@@ -7,6 +9,7 @@ export type HeadCellStyledProps = {
     showShadowAtRight?: boolean;
     isRowActionCell?: boolean;
     isRowExpandable?: boolean;
+    tableSize?: TableProps['size'];
 };
 
 export type HeadCellProps = HeadCellStyledProps & {
@@ -17,6 +20,7 @@ export type HeadCellProps = HeadCellStyledProps & {
     sortField?: string;
     isLoading?: boolean;
     defaultSortOrder?: SortOrder;
+    tableSize?: TableProps['size'];
     onWidthChange?: (width: number, key: string) => void;
     onSortChange?: (field: string, order: SortOrder) => void;
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;

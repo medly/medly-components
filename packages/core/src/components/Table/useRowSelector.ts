@@ -13,7 +13,7 @@ const useRowSelector = (
     initialSelectedIds: number[],
     rowSelectionDisableKey: string,
     rowIdentifier: string,
-    isSelectable: boolean
+    isRowSelectable: boolean
 ): Result => {
     const ids = useMemo(() => data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[rowIdentifier]), [
             data,
@@ -36,8 +36,8 @@ const useRowSelector = (
     );
 
     useEffect(() => {
-        !isSelectable && setSelectedIds([]);
-    }, [isSelectable]);
+        !isRowSelectable && setSelectedIds([]);
+    }, [isRowSelectable]);
 
     useEffect(() => {
         setSelectedIds(initialSelectedIds);

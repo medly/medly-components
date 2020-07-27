@@ -15,39 +15,47 @@ import { useScrollState } from './useScrollState';
 export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const {
-            data,
-            onRowClick,
-            rowIdentifier,
-            rowSelectionDisableKey,
-            isSelectable,
-            isExpandable,
-            selectedRowIds,
-            onRowSelection,
-            isLoading,
-            ...restProps
-        } = props;
+                data,
+                onRowClick,
+                rowIdentifier,
+                rowSelectionDisableKey,
+                isRowSelectable,
+                isRowExpandable,
+                selectedRowIds,
+                onRowSelection,
+                isLoading,
+                showRowWithCardStyle,
+                ...restProps
+            } = props,
+            size = showRowWithCardStyle ? 'L' : restProps.size;
 
-        const [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
-            [columns, setColumns] = useState(getUpdatedColumns(props.columns, isSelectable, isExpandable)),
-            addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]),
-            [scrollState, handleScroll] = useScrollState();
+        const [scrollState, handleScroll] = useScrollState(),
+            [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
+            [columns, setColumns] = useState(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size)),
+            addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]);
 
         const isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]),
             isSelectAllDisable = useMemo(() => data.every(dt => dt[rowSelectionDisableKey]), [data, rowSelectionDisableKey]),
-            rowSelector = useRowSelector(data, selectedRowIds, rowSelectionDisableKey, rowIdentifier, isSelectable),
+            rowSelector = useRowSelector(data, selectedRowIds, rowSelectionDisableKey, rowIdentifier, isRowSelectable),
             { isAnyRowSelected, isEachRowSelected, selectedIds, toggleId } = rowSelector;
 
         useEffect(() => {
-            setColumns(getUpdatedColumns(props.columns, isSelectable, isExpandable));
-        }, [props.columns, isSelectable, isExpandable]);
+            setColumns(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size));
+        }, [props.columns, isRowSelectable, isRowExpandable, size]);
 
         useEffect(() => {
             onRowSelection && onRowSelection(selectedIds);
         }, [selectedIds, onRowSelection]);
 
         return (
-            <TablePropsContext.Provider value={{ ...props, columns, data: isLoading ? loadingBodyData : data }}>
-                <TableStyled ref={ref} {...restProps} onScroll={handleScroll} isRowClickable={isRowClickable}>
+            <TablePropsContext.Provider value={{ ...props, columns, size, data: isLoading ? loadingBodyData : data }}>
+                <TableStyled
+                    ref={ref}
+                    {...restProps}
+                    onScroll={handleScroll}
+                    isRowClickable={isRowClickable}
+                    showRowWithCardStyle={showRowWithCardStyle}
+                >
                     <Head
                         {...{
                             setColumns,

@@ -2,18 +2,16 @@
 
 exports[`Row should render NoResult properly 1`] = `
 .c0 {
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   display: grid;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   cursor: inherit;
-  -webkit-transition: box-shadow 100ms ease-out;
-  transition: box-shadow 100ms ease-out;
   text-align: center;
   line-height: 30px;
 }
@@ -22,10 +20,12 @@ exports[`Row should render NoResult properly 1`] = `
   z-index: 2;
 }
 
+.c0:nth-child(odd),
 .c0:nth-child(odd) > * {
   background-color: #F7F8F9;
 }
 
+.c0:nth-child(even),
 .c0:nth-child(even) > * {
   background-color: #ffffff;
 }
@@ -45,28 +45,28 @@ exports[`Row should render NoResult properly 1`] = `
 
 exports[`Row should render row properly 1`] = `
 .c0 {
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   display: grid;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   cursor: inherit;
-  -webkit-transition: box-shadow 100ms ease-out;
-  transition: box-shadow 100ms ease-out;
 }
 
 .c0:hover {
   z-index: 2;
 }
 
+.c0:nth-child(odd),
 .c0:nth-child(odd) > * {
   background-color: #F7F8F9;
 }
 
+.c0:nth-child(even),
 .c0:nth-child(even) > * {
   background-color: #ffffff;
 }

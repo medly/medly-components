@@ -3,8 +3,6 @@ import { TableColumnConfig } from './types';
 export const rowActionsColumnConfig: TableColumnConfig = {
     title: '',
     field: 'row-actions',
-    formatter: 'row-actions',
-    hidden: false,
     frozen: true
 };
 

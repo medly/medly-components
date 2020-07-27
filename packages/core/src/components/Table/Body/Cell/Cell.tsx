@@ -1,46 +1,31 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useCallback, useEffect, useMemo, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Text from '../../../Text';
 import { Cell as StyledCell, CustomComponentWrapper, LoadingDiv } from './Styled';
 import { TableCellProps } from './types';
 
 const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
     const childRef = useRef(null),
-        { addColumnMaxSize, config, data, rowId, isRowClickDisabled, dottedFieldName, isLoading, ...restProps } = props;
+        { addColumnMaxSize, config, data, rowId, isRowClickDisabled, dottedFieldName, tableSize, isLoading, ...restProps } = props,
+        { align, hidden, frozen, formatter, component: CustomComponent } = config;
 
     useEffect(() => {
-        childRef.current && !isLoading && addColumnMaxSize(dottedFieldName, childRef.current.clientWidth);
-    }, [childRef.current]);
-
-    const formattedCell = useCallback(() => {
-            switch (config.formatter) {
-                case 'boolean':
-                    return (
-                        <Text ref={childRef} textVariant="body2">
-                            {data ? 'Yes' : 'No'}
-                        </Text>
-                    );
-                case 'react-component': {
-                    const Component = config.component;
-                    return (
-                        <CustomComponentWrapper ref={childRef}>
-                            <Component {...{ data, rowId, disabled: isRowClickDisabled }} />
-                        </CustomComponentWrapper>
-                    );
-                }
-                default:
-                    return (
-                        <Text ref={childRef} textVariant="body2">
-                            {data}
-                        </Text>
-                    );
-            }
-        }, [data, rowId, isLoading, isRowClickDisabled]),
-        textAlign = useMemo(() => config.align || (config.formatter === 'numeric' ? 'right' : 'left'), []);
+        childRef.current && !isLoading && addColumnMaxSize(dottedFieldName, childRef.current.clientWidth + (tableSize === 'L' ? 48 : 32));
+    }, [childRef.current, tableSize]);
 
     return (
-        <StyledCell hidden={config.hidden} frozen={config.frozen} align={textAlign} {...restProps}>
-            {isLoading ? <LoadingDiv ref={childRef} /> : formattedCell()}
+        <StyledCell hidden={hidden} frozen={frozen} tableSize={tableSize} align={align} {...restProps}>
+            {isLoading ? (
+                <LoadingDiv ref={childRef} />
+            ) : CustomComponent ? (
+                <CustomComponentWrapper ref={childRef}>
+                    <CustomComponent {...{ data, rowId, disabled: isRowClickDisabled }} />
+                </CustomComponentWrapper>
+            ) : (
+                <Text ref={childRef} textVariant="body2">
+                    {formatter ? formatter(data) : data}
+                </Text>
+            )}
         </StyledCell>
     );
 });

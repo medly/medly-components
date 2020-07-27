@@ -1,9 +1,9 @@
 import { Table } from '../Table';
 import { useState, useCallback } from 'react';
 import { action } from '@storybook/addon-actions';
-import { boolean } from '@storybook/addon-knobs';
+import { boolean, select } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import { ThemeInterface, ColumnConfigInterface, ExpandedRowComponent } from './Table.stories';
+import { ThemeInterface, ColumnConfigInterface, ExpandedRowComponent, DarkBackground } from './Table.stories';
 import { filterData } from './filterData';
 import columns from './columns';
 import data from './data';
@@ -32,19 +32,24 @@ Simple `Table` component to show set of data.
                     tableData
                 ]);
             return (
-                <Table
-                    data={tableData}
-                    columns={columns}
-                    onSort={handleFilterData}
-                    selectedRowIds={selectedRowIds}
-                    onRowSelection={setSelectedRowIds}
-                    onRowClick={action('Row Clicked')}
-                    isLoading={boolean('Loading', false)}
-                    isSelectable={boolean('Is selectable', true)}
-                    isExpandable={boolean('Is Expandable', true)}
-                    rowSelectionDisableKey="disabled"
-                    expandedRowComponent={ExpandedRowComponent}
-                />
+                <>
+                    <DarkBackground showRowWithCardStyle={boolean('Show Row With Card Style', true)} />
+                    <Table
+                        data={tableData}
+                        columns={columns}
+                        onSort={handleFilterData}
+                        selectedRowIds={selectedRowIds}
+                        onRowSelection={setSelectedRowIds}
+                        onRowClick={action('Row Clicked')}
+                        isLoading={boolean('Loading', false)}
+                        isRowSelectable={boolean('Is row selectable', true)}
+                        isRowExpandable={boolean('Is row expandable', true)}
+                        rowSelectionDisableKey="disabled"
+                        size={select('Size', ['S', 'M', 'L'], 'L')}
+                        showRowWithCardStyle={boolean('Show Row With Card Style', true)}
+                        expandedRowComponent={ExpandedRowComponent}
+                    />
+                </>
             );
         }}
     </Story>
@@ -52,7 +57,7 @@ Simple `Table` component to show set of data.
 
 ### Row Accordion
 
-To show row acordion you have to pass two props `isExpandable` as `true` and pass react component as `expandedRowComponent` to show details in the expanded area. Type of `expandedRowComponent?: React.FC<{ rowData: any; rowId?: any; disabled?: boolean }>`; We are passing row data, id & disabled state to the component.
+To show row acordion you have to pass two props `isRowExpandable` as `true` and pass react component as `expandedRowComponent` to show details in the expanded area. Type of `expandedRowComponent?: React.FC<{ rowData: any; rowId?: any; disabled?: boolean }>`; We are passing row data, id & disabled state to the component.
 
 You can write your component like below:
 
@@ -60,6 +65,10 @@ You can write your component like below:
 import { TableProps } from '@medly-components/core';
 export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ rowData }) => <Text> Hello {`${rowData.name}`}</Text>;
 ```
+
+### Row as Card style
+
+Rows can be shown with card style when you set `showRowWithCardStyle` as true, and the size of the table will automatically be set as 'L'.
 
 ### Props
 
@@ -78,6 +87,8 @@ const columns: TableColumnConfig[] = [{}, {}];
 ```
 
 #### Column config type
+
+You can checkout the sample column config in the `JSX` section.
 
 <Props of={ColumnConfigInterface} />
 
