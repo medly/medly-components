@@ -66,6 +66,10 @@ import { TableProps } from '@medly-components/core';
 export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ rowData }) => <Text> Hello {`${rowData.name}`}</Text>;
 ```
 
+### Row as Card style
+
+Rows can be shown with card style when you set `showRowWithCardStyle` as true, and the size of the table will automatically be set as 'L'.
+
 ### Props
 
 There are only two required props `data` & `columns`. It would be really great if you provide `rowIdentifier`. `rowIdentifier` is used as key name in data to be used as unique id for rows.
@@ -83,6 +87,8 @@ const columns: TableColumnConfig[] = [{}, {}];
 ```
 
 #### Column config type
+
+You can checkout the sample column config in the `JSX` section.
 
 <Props of={ColumnConfigInterface} />
 

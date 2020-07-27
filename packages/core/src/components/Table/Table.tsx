@@ -15,19 +15,19 @@ import { useScrollState } from './useScrollState';
 export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const {
-            size,
-            data,
-            onRowClick,
-            rowIdentifier,
-            rowSelectionDisableKey,
-            isRowSelectable,
-            isRowExpandable,
-            selectedRowIds,
-            onRowSelection,
-            isLoading,
-            showRowWithCardStyle,
-            ...restProps
-        } = props;
+                data,
+                onRowClick,
+                rowIdentifier,
+                rowSelectionDisableKey,
+                isRowSelectable,
+                isRowExpandable,
+                selectedRowIds,
+                onRowSelection,
+                isLoading,
+                showRowWithCardStyle,
+                ...restProps
+            } = props,
+            size = showRowWithCardStyle ? 'L' : restProps.size;
 
         const [scrollState, handleScroll] = useScrollState(),
             [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
@@ -48,9 +48,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
         }, [selectedIds, onRowSelection]);
 
         return (
-            <TablePropsContext.Provider
-                value={{ ...props, columns, size: showRowWithCardStyle ? 'L' : size, data: isLoading ? loadingBodyData : data }}
-            >
+            <TablePropsContext.Provider value={{ ...props, columns, size, data: isLoading ? loadingBodyData : data }}>
                 <TableStyled
                     ref={ref}
                     {...restProps}
