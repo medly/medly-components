@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.6.1...@medly-components/theme@1.7.0) (2020-07-27)
+
+
+### Features
+
+* add card style to table's row component ([829318d](https://github.com/medly/medly-components/commit/829318d0de9e979a0fd39a7edd8eace7d3256499))
+
+
+
+
+
 ## [1.6.1](https://github.com/medly/medly-components/compare/@medly-components/theme@1.6.0...@medly-components/theme@1.6.1) (2020-07-23)
 
 

@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.10.1...@medly-components/core@1.11.0) (2020-07-27)
+
+
+### Bug Fixes
+
+* fix modal close issue when it is not open ([3c3d1ec](https://github.com/medly/medly-components/commit/3c3d1ecfbd9c21286739fb10418eab238d15b55b))
+* fix single select classname issue ([c5746eb](https://github.com/medly/medly-components/commit/c5746eb79bb0142b47e95235d9e9194cbbfd29b6))
+* fix sorting issue in table component when sorting is disabled ([dd37712](https://github.com/medly/medly-components/commit/dd377124b4ed6c30899c252f672c0f41ed7f9280))
+* fix table width issue ([b9dae7c](https://github.com/medly/medly-components/commit/b9dae7caa2c85048a8715675326deaec2535c3eb))
+
+
+### Features
+
+* add card style to table's row component ([829318d](https://github.com/medly/medly-components/commit/829318d0de9e979a0fd39a7edd8eace7d3256499))
+* add fraction prop in tab component ([2351d00](https://github.com/medly/medly-components/commit/2351d004cf0ad8c59c537aebd56b1ce36109fcf4))
+* add size prop in table component ([e229dc6](https://github.com/medly/medly-components/commit/e229dc6f3acd48d6c71e648ade9488e2da6dee1c))
+* add transition effect in opening the extended row cell in table ([c527cb9](https://github.com/medly/medly-components/commit/c527cb97c0b60d1ac868e567fd1d4e7351784908))
+
+
+
+
+
 ## [1.10.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.10.0...@medly-components/core@1.10.1) (2020-07-23)
 
 
