@@ -1,7 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
 import { styled } from '@medly-components/utils';
 import Checkbox from '../../Checkbox';
-import FieldWithLabel from '../../FieldWithLabel';
 import { SelectorGroup } from '../../Selectors';
 import { Chip } from '../Chip/Chip';
 import { OptionsStyledProps, OptionStyledProps } from './types';
@@ -87,19 +86,6 @@ export const Options = styled.ul<OptionsStyledProps>`
     ${SelectorGroup.Wrapper} {
         > label {
             padding-left: 1.3rem;
-        }
-    }
-
-    ${FieldWithLabel.Label} {
-        margin-bottom: 0;
-        ${Checkbox.Style} {
-            padding: 0 0.5rem 0.5rem 0;
-        }
-    }
-
-    ${FieldWithLabel.Field} {
-        ${Checkbox.Style} {
-            padding: 0.5rem 0.5rem 0.5rem 0;
         }
     }
 `;

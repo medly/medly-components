@@ -175,7 +175,6 @@ MultiSelect.Style = Wrapper;
 MultiSelect.defaultProps = {
     values: [],
     variant: 'outlined',
-    showChips: true,
     showCheckbox: true,
     isSearchable: true,
     placeholder: 'Please Select . . .'

@@ -302,6 +302,11 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   line-height: 2.6rem;
 }
 
+.c10 .c11 + .c13 {
+  cursor: pointer;
+  margin-left: 0.6rem;
+}
+
 .c10 .c13 {
   background-color: #eff2f4;
 }
@@ -324,11 +329,6 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 .c10 .c11 {
   color: #435465;
-}
-
-.c10 .c11 + .c13 {
-  cursor: pointer;
-  margin-left: 0.6rem;
 }
 
 .c9 {
@@ -397,6 +397,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
       <div
         class="c3"
         disabled=""
+        id="pharmacy-wrapper"
       >
         <div
           class="c4"
@@ -795,6 +796,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
     >
       <div
         class="c3"
+        id="medly-multiSelect-wrapper"
       >
         <div
           class="c4"
@@ -1139,6 +1141,11 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   line-height: 2.6rem;
 }
 
+.c10 .c11 + .c13 {
+  cursor: pointer;
+  margin-left: 0.6rem;
+}
+
 .c10 .c13 {
   background-color: #eff2f4;
 }
@@ -1161,11 +1168,6 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 
 .c10 .c11 {
   color: #435465;
-}
-
-.c10 .c11 + .c13 {
-  cursor: pointer;
-  margin-left: 0.6rem;
 }
 
 .c9 {
@@ -1234,6 +1236,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
       <div
         class="c3"
         disabled=""
+        id="pharmacy-wrapper"
       >
         <div
           class="c4"
@@ -1632,6 +1635,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
     >
       <div
         class="c3"
+        id="medly-multiSelect-wrapper"
       >
         <div
           class="c4"

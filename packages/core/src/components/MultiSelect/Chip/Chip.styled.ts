@@ -3,7 +3,15 @@ import { centerAligned, css, styled } from '@medly-components/utils';
 import Text from '../../Text';
 import { Props } from './types';
 
-const common = ({ theme }: Props) => {
+const common = ({
+    theme: {
+        font: {
+            weights,
+            variants: { body1 }
+        }
+    },
+    disabled
+}: Props) => {
     return css`
         border: 1px solid;
         padding: 0.2rem 0.6rem 0.2rem 1rem;
@@ -11,12 +19,16 @@ const common = ({ theme }: Props) => {
             font-size: 1.2rem;
             padding: 0.4rem;
             border-radius: 50%;
-            font-weight: 600;
+            font-weight: ${weights.Medium};
         }
         ${Text.Style} {
-            font-weight: 600;
-            font-size: ${theme.font.variants.body1.fontSize};
-            line-height: 2.6rem;
+            font-weight: ${weights.Medium};
+            font-size: ${body1.fontSize};
+            line-height: ${body1.lineHeight};
+        }
+        ${Text.Style} + ${SvgIcon}{
+            cursor: ${disabled ? 'not-allowed' : 'pointer'};
+            margin-left: 0.6rem;
         }
     `;
 };
@@ -64,16 +76,6 @@ export const Chip = styled('button')<Props>`
     }
 
     ${common};
-
-    ${props => props.state === 'default' && getStylesForChipAndIcon};
-    ${props => props.state === 'active' && getStylesForChipAndIcon};
-    ${props => props.state === 'error' && getStylesForChipAndIcon};
-    ${props => props.state === 'disabled' && getStylesForChipAndIcon};
-
-    ${Text.Style} + ${SvgIcon}{
-        cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-        margin-left: 0.6rem;
-    }
-
+    ${getStylesForChipAndIcon};
     ${centerAligned()}
 `;

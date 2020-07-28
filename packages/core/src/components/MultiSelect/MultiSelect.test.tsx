@@ -33,7 +33,6 @@ describe('MultiSelect component', () => {
                         minWidth={300}
                         options={options}
                         onChange={mockOnChange}
-                        showChips
                         showCheckbox={showCheckbox}
                         values={['all']}
                         fullWidth

@@ -1542,6 +1542,11 @@ exports[`Form should render properly with initial state 1`] = `
   line-height: 2.6rem;
 }
 
+.c64 .c16 + .c29 {
+  cursor: pointer;
+  margin-left: 0.6rem;
+}
+
 .c64 .c29 {
   background-color: #C7D0D8;
 }
@@ -1564,11 +1569,6 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c64 .c16 {
   color: #303C48;
-}
-
-.c64 .c16 + .c29 {
-  cursor: pointer;
-  margin-left: 0.6rem;
 }
 
 .c63 {
@@ -2434,6 +2434,7 @@ exports[`Form should render properly with initial state 1`] = `
         >
           <div
             class="c59"
+            id="graduation-wrapper"
           >
             <div
               class="c5"
@@ -4822,6 +4823,7 @@ exports[`Form should render properly without initial state 1`] = `
         >
           <div
             class="c59"
+            id="graduation-wrapper"
           >
             <div
               class="c8"

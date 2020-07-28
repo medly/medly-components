@@ -31,8 +31,6 @@ export interface SelectProps extends InputProps, WithThemeProp {
     disabled?: boolean;
     /** Set it true when it is required in any form */
     required?: boolean;
-    /** Shows selected options as chip */
-    showChips?: boolean;
     /** Shows checkboxes for all the options */
     showCheckbox?: boolean;
     /** Min width */
