@@ -1,25 +1,28 @@
-import { columnsWidth } from './columnsWidth';
 import { rowActionsColumnConfig } from './constants';
-import { TableColumnConfig } from './types';
+import { TableColumnConfig, TableProps } from './types';
 
 export const addSizeToColumnConfig = (columnConfigs: TableColumnConfig[]): TableColumnConfig[] => {
     return columnConfigs.map(config => {
         return config.children
             ? { ...config, children: addSizeToColumnConfig(config.children) }
-            : { ...config, size: config.hidden ? `minmax(0px, 0px)` : columnsWidth[config.formatter] };
+            : { ...config, size: config.hidden ? `minmax(0px, 0px)` : `minmax(100px, ${config.fraction || 1}fr)` };
     });
 };
 
 export const getUpdatedColumns = (
     columnConfigs: TableColumnConfig[],
-    isSelectable?: boolean,
-    isExpandable?: boolean
+    isRowSelectable?: boolean,
+    isRowExpandable?: boolean,
+    size?: TableProps['size']
 ): TableColumnConfig[] => [
-    ...(isSelectable || isExpandable
+    ...(isRowSelectable || isRowExpandable
         ? [
               {
                   ...rowActionsColumnConfig,
-                  size: isSelectable && isExpandable ? `minmax(84px, 0.1fr)` : `minmax(48px, 0.1fr)`
+                  size:
+                      isRowSelectable && isRowExpandable
+                          ? `minmax(${size === 'L' ? '11.6rem' : '84px'}, 0.1fr)`
+                          : `minmax(${size === 'L' ? '6.4rem' : '48px'}, 0.1fr)`
               }
           ]
         : []),
@@ -67,8 +70,8 @@ export const changeSize = (width: number, dottedField: string, columnConfigs: Ta
         const config = { ...newColumnConfigs[index] };
         if (config.children && nextField) {
             config.children = changeSize(width, nextField, config.children);
-        } else if (width < 80) {
-            config.size = columnsWidth[config.formatter];
+        } else if (width < 84) {
+            config.size = `minmax(84px, ${config.fraction || 1}fr)`;
         } else if (width > 900) {
             config.size = config.size.replace(/(.*\()(.*)(,.*)/, `$1700px$3`);
         } else {

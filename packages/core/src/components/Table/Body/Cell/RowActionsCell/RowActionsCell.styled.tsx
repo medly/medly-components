@@ -2,17 +2,9 @@ import { SvgIcon } from '@medly-components/icons';
 import { css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Checkbox from '../../../../Checkbox';
+import { RowActionProps } from './types';
 
-type RowActionProps = {
-    isExpanded?: boolean;
-    isExpandable?: boolean;
-    isRowSelected?: boolean;
-    isSelectable?: boolean;
-    showShadowAtRight?: boolean;
-    showSelectedRowBorder: boolean;
-};
-
-const selectedBorderStyle = css`
+const selectedBorderStyle = css<RowActionProps>`
         &&& {
             &::before {
                 content: '';
@@ -26,7 +18,7 @@ const selectedBorderStyle = css`
             }
         }
     `,
-    shadowStyle = css`
+    shadowStyle = css<RowActionProps>`
         &::after {
             content: '';
             right: -1.2rem;
@@ -38,15 +30,19 @@ const selectedBorderStyle = css`
         }
     `;
 
-export const RowActionsCell = styled('td')<RowActionProps>`
+export const RowActionsCellStyled = styled('td')<RowActionProps>`
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: ${({ tableSize }) => (tableSize === 'L' ? '2rem' : '1.2rem')};
+    padding-left: ${({ isLoading, tableSize }) => isLoading && (tableSize === 'L' ? '2rem' : '1.2rem')};
     overflow: visible;
     cursor: default;
-    padding: ${props => (props.isExpandable ? (props.isSelectable ? `0.8rem 1.2rem 0.8rem 0.8rem ` : `0.8rem `) : '1.2rem')};
     position: sticky;
     left: 0;
     z-index: 1;
@@ -64,8 +60,8 @@ export const RowActionsCell = styled('td')<RowActionProps>`
         * {
             fill: ${({ theme }) => theme.colors.black};
         }
-        transition: all 100ms ease-out;
-        transform: ${props => props.isExpanded && `rotate(180deg) `};
+        transition: transform 200ms ease-out, background-color 100ms ease-out;
+        transform: ${props => props.isRowExpanded && `rotate(180deg) `};
 
         &:hover {
             background-color: ${({ theme, isRowSelected }) =>
@@ -79,9 +75,9 @@ export const RowActionsCell = styled('td')<RowActionProps>`
     }
 
     & > ${SvgIcon} + ${Checkbox.Style} {
-        margin-left: 0.8rem;
+        margin-left: ${({ tableSize }) => (tableSize === 'L' ? '1.8rem' : '0.8rem')};
     }
 
     ${props => props.showShadowAtRight && shadowStyle};
-    ${props => props.showSelectedRowBorder && selectedBorderStyle}
+    ${props => props.isRowSelected && selectedBorderStyle}
 `;

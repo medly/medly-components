@@ -13,13 +13,13 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const { open, onCloseModal, children, minWidth, minHeight, ...restProps } = props,
             id = restProps.id || 'medly-modal',
-            enterPress = useKeyPress('Escape'),
+            isEscPressed = useKeyPress('Escape'),
             modalRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
             [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false });
 
         useEffect(() => {
-            enterPress && onCloseModal();
-        }, [enterPress]);
+            open && isEscPressed && onCloseModal();
+        }, [open, isEscPressed]);
 
         return (
             open && (

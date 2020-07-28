@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.4](https://github.com/medly/medly-components/compare/@medly-components/layout@1.4.3...@medly-components/layout@1.4.4) (2020-07-27)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.4.3](https://github.com/medly/medly-components/compare/@medly-components/layout@1.4.2...@medly-components/layout@1.4.3) (2020-07-27)
+
+
+### Bug Fixes
+
+* fix sorting issue in table component when sorting is disabled ([dd37712](https://github.com/medly/medly-components/commit/dd377124b4ed6c30899c252f672c0f41ed7f9280))
+
+
+
+
+
 ## [1.4.2](https://github.com/medly/medly-components/compare/@medly-components/layout@1.4.1...@medly-components/layout@1.4.2) (2020-07-23)
 
 **Note:** Version bump only for package @medly-components/layout

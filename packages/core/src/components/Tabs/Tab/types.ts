@@ -9,6 +9,7 @@ export type StyledProps = HTMLProps<HTMLButtonElement> &
         active?: boolean;
         tabSize?: TabSize;
         tabStyle?: TabStyle;
+        fraction?: any;
         tabBackground?: TabBackground;
     };
 
@@ -29,4 +30,6 @@ export interface Props extends HTMLProps<HTMLButtonElement> {
     disable?: boolean;
     /** This will be handled internally */
     active?: boolean;
+    /** Provide the fraction of the of the total width of the parent */
+    fraction?: boolean;
 }

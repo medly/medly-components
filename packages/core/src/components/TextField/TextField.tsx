@@ -33,9 +33,10 @@ export const TextField: FC<Props> & WithStyle = React.memo(
             (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
                 event.preventDefault();
                 const element = event.target as HTMLInputElement,
-                    message = validator ? validator(element.value) : element.validationMessage;
+                    validatorMessage = (validator && validator(element.value)) || '',
+                    message = validator ? validatorMessage : element.validationMessage;
                 setErrorMessage(message);
-                validator && inputRef.current.setCustomValidity(validator(element.value));
+                validator && inputRef.current.setCustomValidity(validatorMessage);
                 eventFunc && eventFunc(event);
             },
             [validator, builtInErrorMessage]
@@ -49,6 +50,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
         return (
             <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth}>
                 <Styled.InnerWrapper
+                    id={`${inputId}-wrapper`}
                     onClick={handleWrapperClick}
                     variant={props.variant}
                     disabled={disabled}

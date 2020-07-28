@@ -1,12 +1,11 @@
-import { ExpandMoreIcon } from '@medly-components/icons';
-import React, { useCallback, useContext, useState } from 'react';
-import Checkbox from '../../../Checkbox';
+import React, { useCallback, useContext, useMemo, useState } from 'react';
 import { GroupCell } from '../../GroupCell';
 import { getGridTemplateColumns } from '../../helpers';
 import { TablePropsContext } from '../../TableProps.context';
 import { TableColumnConfig } from '../../types';
 import Cell from '../Cell';
-import { ExtendedRowCell, LoadingDiv, RowActionsCell } from '../Cell/Styled';
+import ExtendedRowCell from '../Cell/ExtendedRowCell';
+import RowActionsCell from '../Cell/RowActionsCell';
 import * as Styled from './Row.styled';
 import { Props } from './types';
 
@@ -19,103 +18,100 @@ export const Row: React.FC<Props> = React.memo(props => {
             onRowClick,
             rowClickDisableKey,
             rowSelectionDisableKey,
-            isSelectable,
-            isExpandable,
-            expandedRowComponent: ExpandedRowComponent
+            isRowSelectable,
+            isRowExpandable,
+            showRowWithCardStyle,
+            size: tableSize,
+            expandedRowComponent
         } = useContext(TablePropsContext);
 
-    const isRowSelected = !isLoading && selectedRowIds.includes(id),
+    const isRowSelected = useMemo(() => !isLoading && selectedRowIds.includes(id), [id, isLoading, selectedRowIds]),
+        isRowClickDisabled = useMemo(() => data[rowClickDisableKey], [data, rowClickDisableKey]),
+        isRowSelectionDisabled = useMemo(() => data[rowSelectionDisableKey], [data, rowSelectionDisableKey]),
         handleRowSelection = useCallback(() => onRowSelection(id), [id]),
-        stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
         handleExpansionIconClick = useCallback(() => setExpansionState(val => !val), []),
-        handleRowClick =
-            !isLoading && onRowClick && !data[rowClickDisableKey]
-                ? () => onRowClick(data)
-                : isExpandable
-                ? handleExpansionIconClick
-                : undefined;
+        handleRowClick = useMemo(
+            () =>
+                !isLoading &&
+                (onRowClick && !isRowClickDisabled ? () => onRowClick(data) : isRowExpandable ? handleExpansionIconClick : undefined),
+            [isLoading, onRowClick, isRowClickDisabled, isRowExpandable, handleExpansionIconClick]
+        );
 
-    const getCells = (rowData: any = {}, configs: TableColumnConfig[] = columns, field = '') =>
-        configs.reduce((cells, config) => {
-            const fieldName = `${field && `${field}.`}${config.field}`;
+    const getCells = useCallback(
+        (rowData: any = {}, configs: TableColumnConfig[] = columns, field = '') =>
+            configs.reduce((cells, config) => {
+                const fieldName = `${field && `${field}.`}${config.field}`;
 
-            return config.field === 'row-actions'
-                ? cells
-                : [
-                      ...cells,
-                      config.children ? (
-                          <GroupCell
-                              as={field ? 'div' : 'td'}
-                              key={config.field}
-                              hidden={config.hidden}
-                              gridTemplateColumns={getGridTemplateColumns(config.children)}
-                          >
-                              {getCells(rowData[config.field], config.children, config.field)}
-                          </GroupCell>
-                      ) : (
-                          <Cell
-                              rowId={id}
-                              key={fieldName}
-                              config={config}
-                              as={field ? 'div' : 'td'}
-                              isLoading={isLoading}
-                              data={rowData[config.field]}
-                              addColumnMaxSize={addColumnMaxSize}
-                              isRowClickDisabled={rowData[rowClickDisableKey]}
-                              dottedFieldName={fieldName}
-                          />
-                      )
-                  ];
-        }, []);
+                return config.field === 'row-actions'
+                    ? cells
+                    : [
+                          ...cells,
+                          config.children ? (
+                              <GroupCell
+                                  as={field ? 'div' : 'td'}
+                                  key={config.field}
+                                  hidden={config.hidden}
+                                  gridTemplateColumns={getGridTemplateColumns(config.children)}
+                              >
+                                  {getCells(rowData[config.field], config.children, config.field)}
+                              </GroupCell>
+                          ) : (
+                              <Cell
+                                  rowId={id}
+                                  key={fieldName}
+                                  config={config}
+                                  as={field ? 'div' : 'td'}
+                                  isLoading={isLoading}
+                                  data={rowData[config.field]}
+                                  addColumnMaxSize={addColumnMaxSize}
+                                  isRowClickDisabled={isRowClickDisabled}
+                                  dottedFieldName={fieldName}
+                                  tableSize={tableSize}
+                              />
+                          )
+                      ];
+            }, []),
+        [id, isLoading, columns, addColumnMaxSize, isRowClickDisabled, tableSize]
+    );
 
     return (
         <>
             <Styled.Row
                 {...restProps}
-                disabled={data[rowClickDisableKey]}
+                disabled={isRowClickDisabled}
                 onClick={handleRowClick}
                 isSelected={isRowSelected}
+                isExpanded={isExpanded}
+                isExpandable={isRowExpandable}
+                showRowWithCardStyle={showRowWithCardStyle}
                 gridTemplateColumns={getGridTemplateColumns(columns)}
             >
-                {(isSelectable || isExpandable) && (
+                {(isRowSelectable || isRowExpandable) && (
                     <RowActionsCell
-                        onClick={stopPropagation}
-                        isExpanded={isExpanded}
-                        isExpandable={isExpandable}
+                        tableSize={tableSize}
+                        isLoading={isLoading}
+                        isRowExpanded={isExpanded}
+                        isRowExpandable={isRowExpandable}
                         isRowSelected={isRowSelected}
-                        isSelectable={isSelectable}
-                        showSelectedRowBorder={isRowSelected}
+                        isRowSelectable={isRowSelectable}
+                        isRowSelectionDisabled={isRowSelectionDisabled}
+                        onRowSelection={handleRowSelection}
+                        onRowExpansionIconClick={handleExpansionIconClick}
                         showShadowAtRight={showShadowAfterFrozenElement}
-                    >
-                        {isLoading ? (
-                            <LoadingDiv />
-                        ) : (
-                            <>
-                                {isExpandable && <ExpandMoreIcon size="L" onClick={handleExpansionIconClick} />}
-                                {isSelectable && (
-                                    <Checkbox
-                                        disabled={data[rowSelectionDisableKey]}
-                                        checked={isRowSelected}
-                                        onChange={handleRowSelection}
-                                        onClick={stopPropagation}
-                                    />
-                                )}
-                            </>
-                        )}
-                    </RowActionsCell>
+                    />
                 )}
                 {getCells(data)}
-                {isExpanded && (
-                    <>
-                        <RowActionsCell
-                            onClick={stopPropagation}
-                            showSelectedRowBorder={isRowSelected}
-                            showShadowAtRight={showShadowAfterFrozenElement}
-                        />
-                        <ExtendedRowCell onClick={stopPropagation}>
-                            <ExpandedRowComponent rowId={id} rowData={data} disabled={data[rowClickDisableKey]} />
-                        </ExtendedRowCell>
-                    </>
+                {isRowExpandable && expandedRowComponent && (
+                    <ExtendedRowCell
+                        rowId={id}
+                        rowData={data}
+                        tableSize={tableSize}
+                        isRowExpanded={isExpanded}
+                        isRowSelected={isRowSelected}
+                        expandedRowComponent={expandedRowComponent}
+                        isRowClickDisabled={isRowClickDisabled}
+                        showShadowAtRight={showShadowAfterFrozenElement}
+                    />
                 )}
             </Styled.Row>
         </>

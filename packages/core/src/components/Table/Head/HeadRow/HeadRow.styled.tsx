@@ -13,10 +13,18 @@ export const HeadRow = styled('tr').attrs(({ gridTemplateColumns }: GridTemplate
     display: grid;
     align-items: end;
     user-select: none;
+    margin: ${({ showRowWithCardStyle }) => showRowWithCardStyle && '0 0.8rem 1.6rem'};
     
     & > * {
         background-color: ${({ theme }) => theme.table.header.bgColor};
-        border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
+        border-bottom: ${({ showRowWithCardStyle, theme }) => !showRowWithCardStyle && `1px solid ${theme.table.borderColor}`};
+
+        &:first-child{
+            border-radius: ${({ showRowWithCardStyle }) => showRowWithCardStyle && '0.8rem 0 0 0.8rem'};
+        }
+        &:last-child{
+            border-radius: ${({ showRowWithCardStyle }) => showRowWithCardStyle && '0 0.8rem 0.8rem 0'};
+        }
     }
 
 

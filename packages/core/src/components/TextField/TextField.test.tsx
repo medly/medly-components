@@ -27,6 +27,12 @@ describe('TextField', () => {
         `);
     });
 
+    it('should focus on input when clicked on the wrapper', () => {
+        const { container } = render(<TextField label="Name" minWidth="30rem" id="dummy" />);
+        fireEvent.click(container.querySelector('#dummy-wrapper'));
+        expect(container.querySelector('input')).toHaveFocus();
+    });
+
     describe('without label', () => {
         it('should render default state properly', () => {
             const { container } = render(<TextField type="email" />);
@@ -75,29 +81,44 @@ describe('TextField', () => {
             expect(mockOnBlur).toHaveBeenCalled();
         });
 
-        it('should render custom error message if validator function is provided', async () => {
+        it('should render custom error message if validator function is returning error message', async () => {
             const mockOnBlur = jest.fn(),
-                validator = (val: string) => (val.length < 3 ? 'Email should be more then 3 characters' : ''),
-                { container, findByText } = render(
-                    <TextField label="Name" required type="email" value="a" onBlur={mockOnBlur} validator={validator} />
+                validator = (val: string) => val.length < 3 && 'Email should be more then 3 characters',
+                { container, getByText } = render(
+                    <TextField label="Name" required type="email" value="du" onBlur={mockOnBlur} validator={validator} />
                 ),
                 input = container.querySelector('input');
-            fireEvent.change(input, { target: { value: 'Du' } });
             fireEvent.blur(input);
-            const message = await findByText('Email should be more then 3 characters');
-            expect(message).toBeInTheDocument();
-            expect(mockOnBlur).toHaveBeenCalled();
+            expect(getByText('Email should be more then 3 characters')).toBeInTheDocument();
+            expect(input.validationMessage).toEqual('Email should be more then 3 characters');
+            expect(mockOnBlur).toBeCalled();
+        });
+
+        it('should not return error message if it is not returning any message', async () => {
+            const validator = (val: string) => val.length < 3 && 'Email should be more then 3 characters',
+                { container, queryByText } = render(
+                    <TextField label="Name" required value="dummy" onBlur={jest.fn} validator={validator} />
+                ),
+                input = container.querySelector('input');
+            fireEvent.blur(input);
+            expect(input.validationMessage).toEqual('');
+            expect(queryByText('Email should be more then 3 characters')).toBeNull();
         });
     });
 
     describe.each(['outlined', 'filled'])('with %s variant', (variant: Props['variant']) => {
         describe.each(['with label', 'without label'])('and %s', (labelCnd: string) => {
             it('should render default state properly', () => {
-                const { container } = render(<TextField variant={variant} label={labelCnd === 'with labe' ? 'Name' : ''} />);
+                const { container } = render(<TextField variant={variant} label={labelCnd === 'with label' ? 'Name' : ''} />);
                 expect(container).toMatchSnapshot();
             });
             it('should render focus state properly', () => {
-                const { container } = render(<TextField variant={variant} label={labelCnd === 'with labe' ? 'Name' : ''} />);
+                const { container } = render(<TextField variant={variant} label={labelCnd === 'with label' ? 'Name' : ''} />);
+                fireEvent.focusIn(container.querySelector('input'));
+                expect(container).toMatchSnapshot();
+            });
+            it('should render disabled state properly', () => {
+                const { container } = render(<TextField variant={variant} disabled label={labelCnd === 'with label' ? 'Name' : ''} />);
                 fireEvent.focusIn(container.querySelector('input'));
                 expect(container).toMatchSnapshot();
             });

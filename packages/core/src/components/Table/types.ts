@@ -3,16 +3,6 @@ import ColumnConfiguration from './ColumnConfiguration';
 
 export type SortOrder = 'asc' | 'desc';
 
-export interface ColumnsWidth {
-    numeric: string;
-    group: string;
-    boolean: string;
-    'row-actions': string;
-    'text-short': string;
-    'text-long': string;
-    'react-component': string;
-}
-
 export type Data = {
     [key: string]: any;
 }[];
@@ -22,8 +12,8 @@ export interface TableColumnConfig {
     title: string;
     /** Field name in the data */
     field: string;
-    /** Column formatter */
-    formatter: keyof ColumnsWidth;
+    /** Provide the fraction of the of the total width of the row */
+    fraction?: number;
     /** Column content alignment */
     align?: 'left' | 'right' | 'center';
     /** WIP | Set it true to freeze the component on the left side*/
@@ -38,6 +28,8 @@ export interface TableColumnConfig {
     children?: TableColumnConfig[];
     /** Set it true to wrap column text */
     wrapText?: boolean;
+    /** Pass any function to format the column data */
+    formatter?: (data: any) => any;
     /** Custom component */
     component?: React.FC<{ data: any; rowId?: any; disabled?: boolean }>;
     /** This will be handled internally */
@@ -50,9 +42,14 @@ export interface GridTemplateProps {
 
 export interface TableStyledProps {
     isRowClickable?: boolean;
+    showRowWithCardStyle?: boolean;
 }
 
-export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type'> {
+export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | 'type' | 'size'> {
+    /** Set it true to shows placeholder shimmer */
+    isLoading?: boolean;
+    /** Size of the table */
+    size?: 'S' | 'M' | 'L';
     /** Array of your table data */
     data: {
         [key: string]: any;
@@ -61,26 +58,26 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     columns: TableColumnConfig[];
     /** Key name in data to be used as unique id for rows */
     rowIdentifier?: string;
+    /** Ids of default selected rows */
+    selectedRowIds?: number[];
+    /** Set it true to show row with card style */
+    showRowWithCardStyle?: boolean;
     /** Key name to disable row selection */
     rowSelectionDisableKey?: string;
     /** Key name to disable row click */
     rowClickDisableKey?: string;
     /** Set it true to shows checkboxes to select rows */
-    isSelectable?: boolean;
+    isRowSelectable?: boolean;
     /** Set it true to expand rows to show extra info */
-    isExpandable?: boolean;
-    /** Set it true to shows placeholder shimmer */
-    isLoading?: boolean;
-    /** Default Sort Field*/
-    defaultSortField?: string;
-    /** Default Sort Order*/
-    defaultSortOrder?: SortOrder;
-    /** Ids of default selected rows */
-    selectedRowIds?: number[];
+    isRowExpandable?: boolean;
     /** Function to be called on row selection */
     onRowSelection?: (v: number[]) => void;
     /** Function to be called on row click */
     onRowClick?: (rowData: object) => void;
+    /** Default Sort Field*/
+    defaultSortField?: string;
+    /** Default Sort Order*/
+    defaultSortOrder?: SortOrder;
     /** Function to be called on click of sort icon */
     onSort?: (field: string, order: SortOrder) => void;
     /** Component to show when row is expanded */

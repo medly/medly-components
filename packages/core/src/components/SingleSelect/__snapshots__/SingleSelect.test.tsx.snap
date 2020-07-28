@@ -304,6 +304,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
     >
       <div
         class="c3"
+        id="medly-singleSelect-wrapper"
       >
         <div
           class="c4"
@@ -649,6 +650,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
     >
       <div
         class="c3"
+        id="medly-singleSelect-wrapper"
       >
         <div
           class="c4"
@@ -963,6 +965,7 @@ exports[`SingleSelect component with filled variant should render disabled state
       <div
         class="c3"
         disabled=""
+        id="medly-singleSelect-wrapper"
       >
         <div
           class="c4"
@@ -1594,6 +1597,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
     >
       <div
         class="c3"
+        id="medly-singleSelect-wrapper"
       >
         <div
           class="c4"
@@ -1913,6 +1917,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
       <div
         class="c3"
         disabled=""
+        id="medly-singleSelect-wrapper"
       >
         <div
           class="c4"
@@ -2558,6 +2563,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
     >
       <div
         class="c3"
+        id="medly-singleSelect-wrapper"
       >
         <div
           class="c4"

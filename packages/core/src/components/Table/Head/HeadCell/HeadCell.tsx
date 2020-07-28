@@ -19,6 +19,7 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
         defaultSortOrder,
         onWidthChange,
         columnMaxSize,
+        tableSize,
         ...restProps
     } = props;
 
@@ -43,10 +44,12 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     };
 
     const handleSortIconClick = useCallback(() => {
-        const order = sortState === 'asc' ? 'desc' : 'asc';
-        setSortState(order);
-        onSortChange(field, order);
-    }, [sortState, onSortChange, field]);
+        if (sortable) {
+            const order = sortState === 'asc' ? 'desc' : 'asc';
+            setSortState(order);
+            onSortChange(field, order);
+        }
+    }, [sortable, sortState, onSortChange, field]);
 
     const onMouseUp = () => {
         window.removeEventListener('mousemove', onMouseMove);
@@ -80,14 +83,14 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
             ),
         [sortField, field, sortState]
     );
-
     return (
-        <HeadCellStyled as="th" ref={cellEl} frozen={frozen} hidden={hidden} {...restProps}>
+        <HeadCellStyled as="th" ref={cellEl} frozen={frozen} hidden={hidden} {...restProps} tableSize={tableSize}>
             {children && (
                 <>
                     {React.Children.map(children, c => {
                         return isValidStringOrNumber(c) ? (
                             <HeadCellButton
+                                tableSize={tableSize}
                                 onClick={handleSortIconClick}
                                 isSelected={sortField === field && !isLoading}
                                 withHoverEffect={sortable}

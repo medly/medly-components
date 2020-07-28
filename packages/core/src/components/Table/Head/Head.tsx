@@ -10,7 +10,17 @@ import HeadRow from './HeadRow';
 import { Props } from './types';
 
 const Head: React.FC<Props> = React.memo(props => {
-    const { columns, isLoading, isExpandable, isSelectable, onSort, defaultSortOrder, defaultSortField } = useContext(TablePropsContext),
+    const {
+            columns,
+            isLoading,
+            isRowExpandable,
+            isRowSelectable,
+            onSort,
+            defaultSortOrder,
+            defaultSortField,
+            size: tableSize,
+            showRowWithCardStyle
+        } = useContext(TablePropsContext),
         {
             setColumns,
             isAnyRowSelected,
@@ -79,20 +89,23 @@ const Head: React.FC<Props> = React.memo(props => {
                             defaultSortOrder={defaultSortOrder}
                             onSortChange={handleSortChange}
                             onWidthChange={handleWidthChange}
-                            isRowExpandable={isExpandable}
+                            isRowExpandable={isRowExpandable}
+                            tableSize={tableSize}
                             isRowActionCell={config.field === 'row-actions'}
                             showShadowAtRight={config.field === 'row-actions' && showShadowAfterFrozenElement}
                         >
-                            {config.field === 'row-actions' && isSelectable ? selectAllCheckBox : config.title}
+                            {config.field === 'row-actions' && isRowSelectable ? selectAllCheckBox : config.title}
                         </HeadCell>
                     );
                 }),
-            [isExpandable, isSelectable, sortField, maxColumnSizes, selectAllCheckBox, showShadowAfterFrozenElement]
+            [tableSize, isRowExpandable, isRowSelectable, sortField, maxColumnSizes, selectAllCheckBox, showShadowAfterFrozenElement]
         );
 
     return (
         <THead showShadowAtBottom={showShadowAtBottom}>
-            <HeadRow gridTemplateColumns={getGridTemplateColumns(columns)}>{headCell(columns)}</HeadRow>
+            <HeadRow gridTemplateColumns={getGridTemplateColumns(columns)} showRowWithCardStyle={showRowWithCardStyle}>
+                {headCell(columns)}
+            </HeadRow>
         </THead>
     );
 });
