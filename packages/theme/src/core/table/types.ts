@@ -11,6 +11,12 @@ export interface TableTheme {
         };
         selectedBorderColor: string;
     };
+    titleRow: {
+        bgColor: {
+            default: string;
+            selected: string;
+        };
+    };
     accordionIcon: {
         color: string;
         bgColor: {

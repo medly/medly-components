@@ -14,6 +14,12 @@ const table: TableTheme = {
         },
         selectedBorderColor: colors.blue[500]
     },
+    titleRow: {
+        bgColor: {
+            default: colors.grey[200],
+            selected: colors.blue[100]
+        }
+    },
     accordionIcon: {
         color: colors.black,
         bgColor: {

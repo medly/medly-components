@@ -7,9 +7,10 @@ import { ThemeInterface, ColumnConfigInterface, ExpandedRowComponent, DarkBackgr
 import { filterData } from './filterData';
 import columns from './columns';
 import data from './data';
+import groupedData from './groupedData';
 
 <Meta
-    title="Core"
+    title="Core/Table"
     component={Table}
     parameters={{
         design: {
@@ -24,7 +25,7 @@ import data from './data';
 Simple `Table` component to show set of data.
 
 <Preview withToolbar>
-    <Story name="Table">
+    <Story name="Simple Table">
         {() => {
             const [selectedRowIds, setSelectedRowIds] = useState([2, 3]),
                 [tableData, setTableData] = useState(data),
@@ -46,6 +47,40 @@ Simple `Table` component to show set of data.
                         isRowExpandable={boolean('Is row expandable', true)}
                         rowSelectionDisableKey="disabled"
                         size={select('Size', ['S', 'M', 'L'], 'M')}
+                        showRowWithCardStyle={boolean('Show Row With Card Style', false)}
+                        expandedRowComponent={ExpandedRowComponent}
+                    />
+                </>
+            );
+        }}
+    </Story>
+</Preview>
+
+<Preview withToolbar>
+    <Story name="Table with Grouping">
+        {() => {
+            const [selectedRowIds, setSelectedRowIds] = useState([2, 3]),
+                [tableData, setTableData] = useState(data),
+                handleFilterData = useCallback((dottedField, order) => setTableData(filterData(dottedField, order, tableData)), [
+                    tableData
+                ]);
+            return (
+                <>
+                    <DarkBackground showRowWithCardStyle={boolean('Show Row With Card Style', false)} />
+                    <Table
+                        data={
+                            groupedData[select('Group By', ['name', 'marks.maths', 'marks.science', 'age', 'isPassed', 'rating'], 'name')]
+                        }
+                        columns={columns}
+                        selectedRowIds={selectedRowIds}
+                        onRowSelection={setSelectedRowIds}
+                        onRowClick={action('Row Clicked')}
+                        isLoading={boolean('Loading', false)}
+                        isRowSelectable={boolean('Is row selectable', true)}
+                        isRowExpandable={boolean('Is row expandable', true)}
+                        rowSelectionDisableKey="disabled"
+                        size={select('Size', ['S', 'M', 'L'], 'M')}
+                        groupBy={select('Group By', ['name', 'marks.maths', 'marks.science', 'age', 'isPassed', 'rating'], 'name')}
                         showRowWithCardStyle={boolean('Show Row With Card Style', false)}
                         expandedRowComponent={ExpandedRowComponent}
                     />

@@ -27,11 +27,12 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                 showRowWithCardStyle,
                 ...restProps
             } = props,
+            isGroupedTable = !!restProps.groupBy,
             size = showRowWithCardStyle ? 'L' : restProps.size;
 
         const [scrollState, handleScroll] = useScrollState(),
             [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
-            [columns, setColumns] = useState(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size)),
+            [columns, setColumns] = useState(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable)),
             addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]);
 
         const isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]),
@@ -40,8 +41,8 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
             { isAnyRowSelected, isEachRowSelected, selectedIds, toggleId } = rowSelector;
 
         useEffect(() => {
-            setColumns(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size));
-        }, [props.columns, isRowSelectable, isRowExpandable, size]);
+            setColumns(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable));
+        }, [props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable]);
 
         useEffect(() => {
             onRowSelection && onRowSelection(selectedIds);
@@ -83,8 +84,9 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
 );
 
 Table.defaultProps = {
-    selectedRowIds: [],
+    size: 'M',
     rowIdentifier: 'id',
+    selectedRowIds: [],
     defaultSortOrder: 'asc',
     rowClickDisableKey: '',
     rowSelectionDisableKey: ''

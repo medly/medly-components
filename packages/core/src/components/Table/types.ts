@@ -82,6 +82,16 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     onSort?: (field: string, order: SortOrder) => void;
     /** Component to show when row is expanded */
     expandedRowComponent?: React.FC<{ rowData: any; rowId?: any; disabled?: boolean }>;
+    /** Name of the key in data on which grouping is applied */
+    groupBy?: 'string';
+    /** Name of the key in data on which grouping is applied */
+    getGroupedData?: (
+        key: string,
+        offset: number,
+        limit: number
+    ) => {
+        [key: string]: any;
+    }[];
 }
 
 export interface StaticProps {

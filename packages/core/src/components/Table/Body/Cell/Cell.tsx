@@ -10,7 +10,10 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
         { align, hidden, frozen, formatter, component: CustomComponent } = config;
 
     useEffect(() => {
-        childRef.current && !isLoading && addColumnMaxSize(dottedFieldName, childRef.current.clientWidth + (tableSize === 'L' ? 48 : 32));
+        childRef.current &&
+            !isLoading &&
+            addColumnMaxSize &&
+            addColumnMaxSize(dottedFieldName, childRef.current.clientWidth + (tableSize === 'L' ? 48 : 32));
     }, [childRef.current, tableSize]);
 
     return (

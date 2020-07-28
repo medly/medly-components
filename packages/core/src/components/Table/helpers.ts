@@ -11,10 +11,12 @@ export const addSizeToColumnConfig = (columnConfigs: TableColumnConfig[]): Table
 
 export const getUpdatedColumns = (
     columnConfigs: TableColumnConfig[],
-    isRowSelectable?: boolean,
-    isRowExpandable?: boolean,
-    size?: TableProps['size']
+    isRowSelectable: boolean,
+    isRowExpandable: boolean,
+    size: TableProps['size'],
+    isGroupedTable: boolean
 ): TableColumnConfig[] => [
+    ...(isGroupedTable ? [{ ...rowActionsColumnConfig, size: `minmax(${size === 'L' ? '6.4rem' : '48px'}, 0.1fr)` }] : []),
     ...(isRowSelectable || isRowExpandable
         ? [
               {

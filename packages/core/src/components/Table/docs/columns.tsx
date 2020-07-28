@@ -10,11 +10,7 @@ const columns: TableColumnConfig[] = [
                 title: 'Maths',
                 field: 'maths',
                 align: 'right',
-                sortable: true,
-                children: [
-                    { title: 'Algebra', field: 'algebra', align: 'right', sortable: true },
-                    { title: 'Trigonometry', field: 'trigonometry', align: 'right', sortable: true }
-                ]
+                sortable: true
             },
             { title: 'Science', field: 'science', align: 'right', sortable: true }
         ]
