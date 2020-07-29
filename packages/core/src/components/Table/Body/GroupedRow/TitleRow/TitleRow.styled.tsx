@@ -1,7 +1,7 @@
 import { css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
-import { GridTemplateProps, TableProps } from '../../types';
-import { tableCellPaddings } from '../Cell/Styled';
+import { GridTemplateProps, TableProps } from '../../../types';
+import { tableCellPaddings } from '../../Cell/Styled';
 import { StyledProps } from './types';
 
 const normalStyle = css<StyledProps>`
@@ -38,12 +38,4 @@ export const TitleCell = styled('td')<{ tableSize?: TableProps['size'] }>`
     height: 100%;
     grid-column: 3/-1;
     padding: ${({ hidden, tableSize }) => (hidden ? '0' : tableCellPaddings[tableSize])};
-`;
-
-export const BlankCell = styled('td')`
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    background-color: white;
-    border-right: 1px solid ${({ theme }) => theme.table.borderColor};
 `;

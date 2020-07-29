@@ -1,18 +1,16 @@
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
-import { GridTemplateProps } from '../../types';
+import { GridTemplateProps } from '../../../types';
 
 export type StyledProps = GridTemplateProps &
     HTMLProps<HTMLTableRowElement> &
     WithThemeProp & {
-        isSelected?: boolean;
-        isExpanded?: boolean;
-        isExpandable?: boolean;
-        showRowWithCardStyle?: boolean;
+        isRowExpanded?: boolean;
     };
 export type Props = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
+    isRowExpanded?: boolean;
     data: { [key: string]: any };
     selectedRowIds?: Array<any>;
-    addColumnMaxSize: (field: string, value: number) => void;
     onRowSelection?: (id: any) => void;
     showShadowAfterFrozenElement?: boolean;
+    addColumnMaxSize: (field: string, value: number) => void;
 };

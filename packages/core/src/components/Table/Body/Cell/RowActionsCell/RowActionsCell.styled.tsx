@@ -36,10 +36,10 @@ export const RowActionsCellStyled = styled('td')<RowActionProps>`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
     padding-top: 0;
     padding-bottom: 0;
-    padding-right: ${({ tableSize }) => (tableSize === 'L' ? '2rem' : '1.2rem')};
+    justify-content: ${({ isRowExpandable, isRowSelectable }) => (isRowExpandable && !isRowSelectable ? 'center' : 'flex-end')};
+    padding-right: ${({ tableSize, isRowSelectable }) => isRowSelectable && (tableSize === 'L' ? '2rem' : '1.2rem')};
     padding-left: ${({ isLoading, tableSize }) => isLoading && (tableSize === 'L' ? '2rem' : '1.2rem')};
     overflow: visible;
     cursor: default;

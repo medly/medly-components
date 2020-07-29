@@ -11,5 +11,5 @@ export type RowActionProps = HTMLProps<HTMLTableCellElement> & {
     showShadowAtRight?: boolean;
     tableSize?: TableProps['size'];
     onRowSelection?: () => void;
-    onRowExpansionIconClick?: () => void;
+    onRowExpansionIconClick?: (event: any) => void;
 };
