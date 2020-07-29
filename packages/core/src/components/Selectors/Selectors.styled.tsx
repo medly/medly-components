@@ -15,7 +15,6 @@ export const SelectorGroupWrapper = styled('div')<SelectorGroupWrapperProps>`
 
     & > :first-child {
         margin-bottom: ${({ hasHelperOrErrorText }) => !hasHelperOrErrorText && '0.9rem'};
-        width: 100%;
     }
 `;
 
@@ -39,7 +38,7 @@ export const SelectorGroupOptions = styled('div')<SelectorGroupOptionsProps>`
     grid-template-columns: ${({ columns }) => `repeat(${columns}, 1fr) `};
     width: 100%;
     > label {
-        padding-left: ${({ isIndented }) => isIndented && '4rem'};
+        padding-left: ${({ isIndented }) => isIndented && '5rem'};
     }
 `;
 SelectorGroupOptions.defaultProps = {

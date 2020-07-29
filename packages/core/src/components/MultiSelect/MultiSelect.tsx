@@ -41,6 +41,7 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             showOptions = useCallback(() => {
                 setOptionsVisibilityState(true);
                 inputRef.current && inputRef.current.focus();
+                setInputValue('');
             }, [areOptionsVisible]),
             toggleOptions = useCallback(() => !disabled && (areOptionsVisible ? hideOptions() : showOptions()), [
                 disabled,
@@ -52,14 +53,12 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                     const newOptions = filterOptions(options, value);
                     newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
                     !areOptionsVisible && showOptions();
-                    onChange && onChange(newOptions);
                 },
                 [areOptionsVisible, options, updateToDefaultOptions]
             ),
             handleOptionClick = useCallback(
                 (latestValues: any[]) => {
                     setSelectedOptions(getDefaultSelectedOptions(options, latestValues));
-                    setInputValue(latestValues.toString());
                     onChange && onChange(latestValues);
                 },
                 [options, onChange]
@@ -107,8 +106,9 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                 inputRef.current && inputRef.current.focus();
             } else {
                 inputRef.current && inputRef.current.blur();
+                setInputValue(selectedOptions.map(obj => obj.value).toString());
             }
-        }, [areOptionsVisible]);
+        }, [selectedOptions, areOptionsVisible]);
 
         useOuterClickNotifier(() => {
             handleOuterClick();

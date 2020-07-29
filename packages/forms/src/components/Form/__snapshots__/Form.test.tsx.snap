@@ -352,7 +352,6 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c19 > :first-child {
   margin-bottom: 0.9rem;
-  width: 100%;
 }
 
 .c32 {
@@ -371,7 +370,6 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c32 > :first-child {
   margin-bottom: 0.9rem;
-  width: 100%;
 }
 
 .c21 {
@@ -2864,7 +2862,6 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c21 > :first-child {
   margin-bottom: 0.9rem;
-  width: 100%;
 }
 
 .c33 {
@@ -2883,7 +2880,6 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c33 > :first-child {
   margin-bottom: 0.9rem;
-  width: 100%;
 }
 
 .c23 {
