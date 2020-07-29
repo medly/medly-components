@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
+import Text from '../../../../Text';
 import { getGridTemplateColumns } from '../../../helpers';
 import { TablePropsContext } from '../../../TableProps.context';
 import RowActionsCell from '../../Cell/RowActionsCell';
-import { Row, TitleCell } from './TitleRow.styled';
+import { CountChip, Row, SecondaryContent, TitleCell } from './TitleRow.styled';
 import { Props } from './types';
 
 export const TitleRow: React.FC<Props> = React.memo(props => {
@@ -28,7 +29,15 @@ export const TitleRow: React.FC<Props> = React.memo(props => {
             {(isRowSelectable || isRowExpandable) && (
                 <RowActionsCell isRowSelectable={isRowSelectable} tableSize={tableSize} isLoading={isLoading} />
             )}
-            <TitleCell tableSize={tableSize}>{`${data[groupBy]} ${data.count}`}</TitleCell>
+            <TitleCell tableSize={tableSize}>
+                <Text textVariant="body2" textWeight="Medium">
+                    {data[groupBy]}
+                </Text>
+                <CountChip>{data.count}</CountChip>
+                <SecondaryContent textVariant="body2" textWeight="Medium">
+                    {data.secondaryContent}
+                </SecondaryContent>
+            </TitleCell>
         </Row>
     );
 });

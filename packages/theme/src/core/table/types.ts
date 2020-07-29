@@ -16,6 +16,16 @@ export interface TableTheme {
             default: string;
             selected: string;
         };
+        countChip: {
+            textColor: string;
+            bgColor: {
+                default: string;
+                selected: string;
+            };
+        };
+        secondaryContent: {
+            textColor: string;
+        };
     };
     accordionIcon: {
         color: string;

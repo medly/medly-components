@@ -18,6 +18,16 @@ const table: TableTheme = {
         bgColor: {
             default: colors.grey[200],
             selected: colors.blue[100]
+        },
+        countChip: {
+            textColor: colors.white,
+            bgColor: {
+                default: colors.grey[800],
+                selected: colors.blue[500]
+            }
+        },
+        secondaryContent: {
+            textColor: colors.grey[800]
         }
     },
     accordionIcon: {
