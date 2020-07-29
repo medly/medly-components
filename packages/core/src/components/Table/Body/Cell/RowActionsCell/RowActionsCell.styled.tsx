@@ -65,12 +65,12 @@ export const RowActionsCellStyled = styled('td')<RowActionProps>`
 
         &:hover {
             background-color: ${({ theme, isRowSelected }) =>
-                isRowSelected ? theme.table.accordionIcon.bgColor.selected.hover : theme.table.accordionIcon.bgColor.hover};
+                theme.table.accordionIcon.bgColor.hover[isRowSelected ? 'selected' : 'default']};
         }
 
         &:active {
             background-color: ${({ theme, isRowSelected }) =>
-                isRowSelected ? theme.table.accordionIcon.bgColor.selected.pressed : theme.table.accordionIcon.bgColor.pressed};
+                theme.table.accordionIcon.bgColor.pressed[isRowSelected ? 'selected' : 'default']};
         }
     }
 

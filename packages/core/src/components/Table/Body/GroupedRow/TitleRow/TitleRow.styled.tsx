@@ -1,25 +1,10 @@
-import { css, styled } from '@medly-components/utils';
+import { SvgIcon } from '@medly-components/icons';
+import { centerAligned, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Text from '../../../../Text';
 import { GridTemplateProps, TableProps } from '../../../types';
 import { tableCellPaddings } from '../../Cell/Styled';
 import { StyledProps } from './types';
-
-const normalStyle = css<StyledProps>`
-    &,
-    & > * {
-        background-color: ${({ theme, isSelected }) => theme.table.titleRow.bgColor[isSelected ? 'selected' : 'default']};
-    }
-
-    &:hover {
-        z-index: 2;
-        box-shadow: ${({ disabled, onClick, theme }) => !disabled && onClick && `0 0.2rem 0.4rem ${rgba(theme.table.shadowColor, 0.2)} `};
-    }
-
-    &:not(:last-child) {
-        border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
-    }
-`;
 
 export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({
     style: {
@@ -31,20 +16,33 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
     align-items: center;
     min-width: fit-content;
     cursor: pointer;
-    ${normalStyle}
+
+    &,
+    & > * {
+        background-color: ${({ theme, isSelected, isRowExpanded }) =>
+            theme.table.titleRow.bgColor[isSelected ? 'selected' : isRowExpanded ? 'expanded' : 'default']};
+    }
+
+    &:hover {
+        z-index: 2;
+        box-shadow: ${({ disabled, onClick, theme }) => !disabled && onClick && `0 0.2rem 0.4rem ${rgba(theme.table.shadowColor, 0.2)} `};
+    }
+
+    &:not(:last-child) {
+        border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
+    }
 
     & > td:nth-child(2) {
         border-left: 1px solid ${({ theme }) => theme.table.borderColor};
     }
 `;
 
-export const TitleCell = styled('td')<{ tableSize?: TableProps['size'] }>`
-    width: 100%;
+export const TitleCell = styled('td')<{ tableSize?: TableProps['size']; isRowExpandable?: boolean; isRowSelectable?: boolean }>`
     height: 100%;
-    grid-column: 3/-1;
     display: flex;
     align-items: center;
     padding: ${({ hidden, tableSize }) => (hidden ? '0' : tableCellPaddings[tableSize])};
+    grid-column: ${({ isRowExpandable, isRowSelectable }) => (isRowExpandable || isRowSelectable ? '3/-1' : '2/-1')};
 `;
 
 export const CountChip = styled('span')<{ isRowSelected?: boolean }>`
@@ -63,4 +61,29 @@ export const SecondaryContent = styled(Text)`
     flex: 1;
     text-align: end;
     color: ${({ theme }) => theme.table.titleRow.secondaryContent.textColor};
+`;
+
+export const ExpansionCell = styled('td')<{ isRowExpanded?: boolean; isRowSelected?: boolean }>`
+    height: 100%;
+    ${centerAligned()}
+    & > ${SvgIcon} {
+        padding: 0.6rem;
+        border-radius: 50%;
+        * {
+            fill: ${({ theme, isRowExpanded, isRowSelected }) =>
+                theme.table.titleRow.accordionIcon.color[isRowExpanded || isRowSelected ? 'expanded' : 'default']};
+        }
+        transition: transform 200ms ease-out, background-color 100ms ease-out;
+        transform: ${props => props.isRowExpanded && `rotate(180deg) `};
+
+        &:hover {
+            background-color: ${({ theme, isRowSelected, isRowExpanded }) =>
+                theme.table.titleRow.accordionIcon.bgColor.hover[isRowSelected ? 'selected' : isRowExpanded ? 'expanded' : 'default']};
+        }
+
+        &:active {
+            background-color: ${({ theme, isRowSelected, isRowExpanded }) =>
+                theme.table.titleRow.accordionIcon.bgColor.pressed[isRowSelected ? 'selected' : isRowExpanded ? 'expanded' : 'default']};
+        }
+    }
 `;

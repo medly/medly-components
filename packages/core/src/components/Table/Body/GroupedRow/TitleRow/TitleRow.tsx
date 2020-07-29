@@ -1,9 +1,10 @@
+import { ExpandMoreIcon } from '@medly-components/icons/src';
 import React, { useContext } from 'react';
 import Text from '../../../../Text';
 import { getGridTemplateColumns } from '../../../helpers';
 import { TablePropsContext } from '../../../TableProps.context';
 import RowActionsCell from '../../Cell/RowActionsCell';
-import { CountChip, Row, SecondaryContent, TitleCell } from './TitleRow.styled';
+import { CountChip, ExpansionCell, Row, SecondaryContent, TitleCell } from './TitleRow.styled';
 import { Props } from './types';
 
 export const TitleRow: React.FC<Props> = React.memo(props => {
@@ -16,26 +17,23 @@ export const TitleRow: React.FC<Props> = React.memo(props => {
         <Row
             {...restProps}
             onClick={onClick}
+            isRowExpanded={isRowExpanded}
             showRowWithCardStyle={showRowWithCardStyle}
             gridTemplateColumns={getGridTemplateColumns(columns)}
         >
-            <RowActionsCell
-                isRowExpandable
-                tableSize={tableSize}
-                isLoading={isLoading}
-                isRowExpanded={isRowExpanded}
-                onRowExpansionIconClick={onClick}
-            />
+            <ExpansionCell isRowExpanded={isRowExpanded}>
+                <ExpandMoreIcon size="L" />
+            </ExpansionCell>
             {(isRowSelectable || isRowExpandable) && (
                 <RowActionsCell isRowSelectable={isRowSelectable} tableSize={tableSize} isLoading={isLoading} />
             )}
-            <TitleCell tableSize={tableSize}>
+            <TitleCell tableSize={tableSize} isRowSelectable={isRowSelectable} isRowExpandable={isRowExpandable}>
                 <Text textVariant="body2" textWeight="Medium">
                     {data[groupBy]}
                 </Text>
                 <CountChip>{data.count}</CountChip>
                 <SecondaryContent textVariant="body2" textWeight="Medium">
-                    {data.secondaryContent}
+                    {data[groupBy]}
                 </SecondaryContent>
             </TitleCell>
         </Row>

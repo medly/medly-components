@@ -17,6 +17,7 @@ const table: TableTheme = {
     titleRow: {
         bgColor: {
             default: colors.grey[200],
+            expanded: colors.blue[100],
             selected: colors.blue[100]
         },
         countChip: {
@@ -28,17 +29,20 @@ const table: TableTheme = {
         },
         secondaryContent: {
             textColor: colors.grey[800]
+        },
+        accordionIcon: {
+            color: { default: colors.black, expanded: colors.blue[500], selected: colors.blue[500] },
+            bgColor: {
+                hover: { default: 'rgba(96, 120, 144, 0.15)', expanded: 'rgba(18, 106, 250, 0.1)', selected: 'rgba(18, 106, 250, 0.15)' },
+                pressed: { default: 'rgba(96, 120, 144, 0.3)', expanded: 'rgba(18, 106, 250, 0.2)', selected: 'rgba(18, 106, 250, 0.3)' }
+            }
         }
     },
     accordionIcon: {
         color: colors.black,
         bgColor: {
-            hover: 'rgba(96, 120, 144, 0.1)',
-            pressed: 'rgba(96, 120, 144, 0.2)',
-            selected: {
-                hover: `rgba(18, 106, 250, 0.15)`,
-                pressed: `rgba(18, 106, 250, 0.3)`
-            }
+            hover: { default: 'rgba(96, 120, 144, 0.1)', selected: 'rgba(18, 106, 250, 0.15)' },
+            pressed: { default: 'rgba(96, 120, 144, 0.2)', selected: 'rgba(18, 106, 250, 0.3)' }
         }
     },
     header: {
