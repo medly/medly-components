@@ -2,20 +2,19 @@ import { SvgIcon } from '@medly-components/icons';
 import { centerAligned, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Text from '../../../../Text';
-import { GridTemplateProps, TableProps } from '../../../types';
+import { TableProps } from '../../../types';
 import { tableCellPaddings } from '../../Cell/Styled';
 import { StyledProps } from './types';
 
-export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({
-    style: {
-        gridTemplateColumns
-    }
-}))<StyledProps>`
+export const Row = styled('tr')<StyledProps>`
     display: grid;
-    position: relative;
+    grid-template-columns: 4.8rem 8.4rem auto;
+    position: sticky;
+    left: 0;
     align-items: center;
     min-width: fit-content;
     cursor: pointer;
+    max-width: 100vw;
 
     &,
     & > * {
@@ -65,6 +64,8 @@ export const SecondaryContent = styled(Text)`
 
 export const ExpansionCell = styled('td')<{ isRowExpanded?: boolean; isRowSelected?: boolean }>`
     height: 100%;
+    position: sticky;
+    left: 0;
     ${centerAligned()}
     & > ${SvgIcon} {
         padding: 0.6rem;

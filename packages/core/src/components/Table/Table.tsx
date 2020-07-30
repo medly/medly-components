@@ -1,4 +1,4 @@
-import { WithStyle } from '@medly-components/utils';
+import { useCombinedRefs, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useMemo, useReducer, useState } from 'react';
 import Body from './Body';
 import ColumnConfiguration from './ColumnConfiguration';
@@ -31,6 +31,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
             size = showRowWithCardStyle ? 'L' : restProps.size;
 
         const [scrollState, handleScroll] = useScrollState(),
+            tableRef = useCombinedRefs<HTMLTableElement>(ref, React.useRef(null)),
             [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
             [columns, setColumns] = useState(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable)),
             addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]);
@@ -51,7 +52,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
         return (
             <TablePropsContext.Provider value={{ ...props, columns, size, data: isLoading ? loadingBodyData : data }}>
                 <TableStyled
-                    ref={ref}
+                    ref={tableRef}
                     {...restProps}
                     onScroll={handleScroll}
                     isRowClickable={isRowClickable}
