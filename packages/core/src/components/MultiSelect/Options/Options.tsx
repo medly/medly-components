@@ -11,10 +11,6 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
     const selectedValues = useMemo(() => props.values.map(op => op.value), [props.values]);
 
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
-        handleTextClick = (value: any) => () => {
-            const newValues = selectedValues.includes(value) ? selectedValues.filter(vl => vl !== value) : [...selectedValues, value];
-            props.onOptionClick(newValues);
-        },
         handleGroupClick = (options: Option[]) => (values: any[]) => {
             const newValues = new Set(selectedValues);
             options.forEach(op => (values.includes(op.value) ? newValues.add(op.value) : newValues.delete(op.value)));
