@@ -13,7 +13,7 @@ const renderer = ({
     count = 2,
     hide = false,
     icon = AddIcon,
-    disable = false,
+    disabled = false,
     active = false,
     tabSize = 'S',
     tabStyle = 'CLOSED',
@@ -21,7 +21,7 @@ const renderer = ({
 }: Partial<Props> & { tabSize?: TabSize; tabStyle?: TabStyle; tabBackground?: TabBackground }) =>
     render(
         <TabsContext.Provider value={{ tabStyle, tabSize, tabBackground }}>
-            <Tab {...{ id, label, helperText, count, hide, icon, disable, active }}>Content for the add panel</Tab>
+            <Tab {...{ id, label, helperText, count, hide, icon, disabled, active }}>Content for the add panel</Tab>
         </TabsContext.Provider>
     );
 

@@ -23,7 +23,7 @@ const renderer = ({
             <Tab id="tab2" label="Delete" hide>
                 Content for the delete panel
             </Tab>
-            <Tab id="tab4" label="Disabled" disable>
+            <Tab id="tab4" label="Disabled" disabled>
                 Content for the disabled panel
             </Tab>
         </Tabs>

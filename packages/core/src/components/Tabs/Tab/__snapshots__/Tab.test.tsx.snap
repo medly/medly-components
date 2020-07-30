@@ -452,6 +452,7 @@ exports[`Tab should render disabled state properly 1`] = `
     aria-controls="panel-dummy"
     aria-selected="false"
     class="c0"
+    disabled=""
     id="dummy"
     role="tab"
     tabindex="-1"
