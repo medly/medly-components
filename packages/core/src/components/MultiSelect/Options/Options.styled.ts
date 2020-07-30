@@ -54,7 +54,7 @@ export const Options = styled.ul<OptionsStyledProps>`
     list-style: none;
     padding: 0;
     margin: 0;
-    max-height: 150px;
+    max-height: 200px;
     overflow: auto;
 
     ${Checkbox.Style} {

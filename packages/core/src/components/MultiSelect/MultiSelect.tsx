@@ -107,6 +107,7 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             } else {
                 inputRef.current && inputRef.current.blur();
                 setInputValue(selectedOptions.map(obj => obj.value).toString());
+                setOptions(defaultOptions);
             }
         }, [selectedOptions, areOptionsVisible]);
 
