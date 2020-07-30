@@ -50,7 +50,9 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
         }, [selectedIds, onRowSelection]);
 
         return (
-            <TablePropsContext.Provider value={{ ...props, columns, size, data: isLoading ? loadingBodyData : data, isGroupedTable }}>
+            <TablePropsContext.Provider
+                value={{ ...props, columns, size, data: isLoading ? loadingBodyData : data, isGroupedTable, tableRef }}
+            >
                 <TableStyled
                     ref={tableRef}
                     {...restProps}

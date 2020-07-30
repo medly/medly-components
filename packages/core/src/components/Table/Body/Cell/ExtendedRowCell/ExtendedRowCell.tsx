@@ -11,6 +11,7 @@ export const ExtendedRowCell: React.FC<ExtendedRowCellProps> & WithStyle = React
         tableSize,
         isRowSelected,
         isRowExpanded,
+        isGroupedTable,
         isRowClickDisabled,
         showShadowAtRight,
         expandedRowComponent: ExpandedRowComponent
@@ -19,7 +20,12 @@ export const ExtendedRowCell: React.FC<ExtendedRowCellProps> & WithStyle = React
 
     return (
         <>
-            <RowActionsCellStyled onClick={stopPropagation} isRowSelected={isRowSelected} showShadowAtRight={showShadowAtRight} />
+            <RowActionsCellStyled
+                onClick={stopPropagation}
+                isRowSelected={isRowSelected}
+                isGroupedTable={isGroupedTable}
+                showShadowAtRight={showShadowAtRight}
+            />
 
             <ExtendedRowCellStyled onClick={stopPropagation} tableSize={tableSize} isRowExpanded={isRowExpanded}>
                 <Wrapper tableSize={tableSize}>

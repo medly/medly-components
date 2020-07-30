@@ -1,5 +1,5 @@
 import { ExpandMoreIcon } from '@medly-components/icons/src';
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import Text from '../../../../Text';
 import { getGridTemplateColumns } from '../../../helpers';
 import { TablePropsContext } from '../../../TableProps.context';
@@ -8,8 +8,10 @@ import { CountChip, ExpansionCell, Row, SecondaryContent, TitleCell } from './Ti
 import { Props } from './types';
 
 export const TitleRow: React.FC<Props> = React.memo(props => {
-    const { data, isRowExpanded, onClick, showShadowAfterFrozenElement, ...restProps } = props,
+    const [tableWidth, setTableWidth] = useState(),
+        { data, isRowExpanded, onClick, ...restProps } = props,
         {
+            tableRef,
             columns,
             groupBy,
             isLoading,
@@ -20,10 +22,21 @@ export const TitleRow: React.FC<Props> = React.memo(props => {
             size: tableSize
         } = useContext(TablePropsContext);
 
+    // @ts-ignore
+    const observer = useRef(new ResizeObserver(entries => setTableWidth(entries[0].contentRect.width)));
+
+    useEffect(() => {
+        if (tableRef.current) {
+            observer.current.observe(tableRef.current);
+            return () => observer.current && observer.current.unobserve(tableRef.current);
+        }
+    }, [tableRef, observer]);
+
     return (
         <Row
             {...restProps}
             onClick={onClick}
+            tableWidth={tableWidth}
             isRowExpanded={isRowExpanded}
             showRowWithCardStyle={showRowWithCardStyle}
             gridTemplateColumns={getGridTemplateColumns(columns)}
@@ -37,7 +50,6 @@ export const TitleRow: React.FC<Props> = React.memo(props => {
                     isGroupedTable={isGroupedTable}
                     tableSize={tableSize}
                     isLoading={isLoading}
-                    showShadowAtRight={showShadowAfterFrozenElement}
                 />
             )}
             <TitleCell tableSize={tableSize} isRowSelectable={isRowSelectable} isRowExpandable={isRowExpandable}>

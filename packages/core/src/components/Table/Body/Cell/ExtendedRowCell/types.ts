@@ -9,5 +9,6 @@ export type ExtendedRowCellProps = HTMLProps<HTMLTableCellElement> & {
     isRowClickDisabled: boolean;
     showShadowAtRight: boolean;
     tableSize: TableProps['size'];
+    isGroupedTable: boolean;
     expandedRowComponent: TableProps['expandedRowComponent'];
 };

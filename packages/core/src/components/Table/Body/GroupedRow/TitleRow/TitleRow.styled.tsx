@@ -14,7 +14,7 @@ export const Row = styled('tr')<StyledProps>`
     align-items: center;
     min-width: fit-content;
     cursor: pointer;
-    max-width: 100vw;
+    max-width: ${({ tableWidth }) => `${tableWidth}px` || '100vw'};
 
     &,
     & > * {

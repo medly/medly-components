@@ -4,6 +4,7 @@ import { GridTemplateProps } from '../../../types';
 export type StyledProps = GridTemplateProps &
     HTMLProps<HTMLTableRowElement> &
     WithThemeProp & {
+        tableWidth?: number;
         isSelected?: boolean;
         isRowExpanded?: boolean;
         showRowWithCardStyle?: boolean;
