@@ -160,7 +160,6 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                     <Options
                         id={`${selectId}-options`}
                         ref={optionsRef}
-                        showCheckbox={props.showCheckbox}
                         values={selectedOptions}
                         options={options}
                         onOptionClick={handleOptionClick}

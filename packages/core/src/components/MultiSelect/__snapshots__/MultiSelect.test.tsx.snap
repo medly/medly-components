@@ -270,7 +270,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   border: 1px solid;
   padding: 0.2rem 0.6rem 0.2rem 1rem;
   border-color: #C7D0D8;
-  background-color: #ffffff;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1109,7 +1109,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   border: 1px solid;
   padding: 0.2rem 0.6rem 0.2rem 1rem;
   border-color: #C7D0D8;
-  background-color: #ffffff;
+  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;

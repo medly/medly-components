@@ -2,7 +2,6 @@ import { WithStyle } from '@medly-components/utils';
 import React, { useCallback, useMemo } from 'react';
 import Checkbox from '../../Checkbox';
 import CheckboxGroup from '../../CheckboxGroup';
-import Text from '../../Text';
 import { Chip } from '../Chip/Chip';
 import { Option } from '../types';
 import * as Styled from './Options.styled';
@@ -49,10 +48,10 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
             <Styled.Options id={props.id} onClick={stopPropagation}>
                 {props.options.map((op, index) => (
                     <React.Fragment key={index}>
-                        {props.showCheckbox && !Array.isArray(op.value) && (
+                        {!Array.isArray(op.value) && (
                             <Checkbox {...op} checked={selectedValues.includes(op.value)} name={op.value} onChange={handleCheckboxClick} />
                         )}
-                        {props.showCheckbox && Array.isArray(op.value) && (
+                        {Array.isArray(op.value) && (
                             <CheckboxGroup
                                 values={selectedValues.filter(vl => op.value.map((nestedOp: Option) => nestedOp.value).includes(vl))}
                                 showSelectAll
@@ -61,29 +60,6 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
                                 options={op.value}
                                 onChange={handleGroupClick(op.value)}
                             />
-                        )}
-                        {!props.showCheckbox && !Array.isArray(op.value) && (
-                            <Styled.Option {...op} selected={selectedValues.includes(op.value)} onClick={handleTextClick(op.value)}>
-                                <Text>{op.label}</Text>
-                            </Styled.Option>
-                        )}
-                        {!props.showCheckbox && Array.isArray(op.value) && (
-                            <>
-                                <Styled.Option {...op}>
-                                    <Text textWeight="Strong">{op.label}</Text>
-                                </Styled.Option>
-                                {op.value.map((nestedOp, i) => (
-                                    <Styled.Option
-                                        key={i}
-                                        isChild
-                                        {...nestedOp}
-                                        selected={selectedValues.includes(nestedOp.value)}
-                                        onClick={handleTextClick(nestedOp.value)}
-                                    >
-                                        <Text>{nestedOp.label}</Text>
-                                    </Styled.Option>
-                                ))}
-                            </>
                         )}
                     </React.Fragment>
                 ))}

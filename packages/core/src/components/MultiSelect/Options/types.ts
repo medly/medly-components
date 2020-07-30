@@ -5,11 +5,6 @@ export interface OptionsProps extends HTMLProps<HTMLUListElement>, WithThemeProp
     options: Option[];
     values: any[];
     onOptionClick: (options: any[]) => void;
-    showCheckbox?: boolean;
-}
-
-export interface OptionsStyledProps extends WithThemeProp {
-    showCheckbox?: boolean;
 }
 
 export interface OptionStyledProps extends HTMLProps<HTMLLIElement>, WithThemeProp {

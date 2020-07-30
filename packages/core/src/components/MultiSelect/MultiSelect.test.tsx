@@ -104,9 +104,7 @@ describe('MultiSelect component', () => {
             fireEvent.click(screen.getByRole('textbox'));
             fireEvent.click(getByText('Nested Options'));
             expect(getAllByText('Dummy2').length).toEqual(2);
-            expect(getAllByText('Dummy3').length).toEqual(showCheckbox ? 2 : 1);
             fireEvent.click(getByText('Nested Options'));
-            expect(getAllByText('Dummy2').length).toEqual(showCheckbox ? 1 : 2);
             expect(getAllByText('Dummy3').length).toEqual(1);
         });
 
