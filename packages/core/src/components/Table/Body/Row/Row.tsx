@@ -20,6 +20,7 @@ export const Row: React.FC<Props> = React.memo(props => {
             rowSelectionDisableKey,
             isRowSelectable,
             isRowExpandable,
+            isGroupedTable,
             showRowWithCardStyle,
             size: tableSize,
             expandedRowComponent
@@ -91,6 +92,7 @@ export const Row: React.FC<Props> = React.memo(props => {
                         tableSize={tableSize}
                         isLoading={isLoading}
                         isRowExpanded={isExpanded}
+                        isGroupedTable={isGroupedTable}
                         isRowExpandable={isRowExpandable}
                         isRowSelected={isRowSelected}
                         isRowSelectable={isRowSelectable}

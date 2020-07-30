@@ -30,10 +30,6 @@ export const Row = styled('tr')<StyledProps>`
     &:not(:last-child) {
         border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
     }
-
-    & > td:nth-child(2) {
-        border-left: 1px solid ${({ theme }) => theme.table.borderColor};
-    }
 `;
 
 export const TitleCell = styled('td')<{ tableSize?: TableProps['size']; isRowExpandable?: boolean; isRowSelectable?: boolean }>`
@@ -67,6 +63,7 @@ export const ExpansionCell = styled('td')<{ isRowExpanded?: boolean; isRowSelect
     position: sticky;
     left: 0;
     ${centerAligned()}
+    border-right: 1px solid ${({ theme }) => theme.table.borderColor};
     & > ${SvgIcon} {
         padding: 0.6rem;
         border-radius: 50%;

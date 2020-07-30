@@ -3,6 +3,7 @@ import { TableProps } from '../../../types';
 
 export type RowActionProps = HTMLProps<HTMLTableCellElement> & {
     isLoading?: boolean;
+    isGroupedTable?: boolean;
     isRowExpandable?: boolean;
     isRowSelectable?: boolean;
     isRowExpanded?: boolean;

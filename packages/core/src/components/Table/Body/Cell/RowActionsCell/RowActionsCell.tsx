@@ -18,6 +18,7 @@ export const RowActionsCell: React.FC<RowActionProps> & WithStyle = React.memo(p
             isRowSelectable={props.isRowSelectable}
             isRowSelected={props.isRowSelected}
             tableSize={props.tableSize}
+            isGroupedTable={props.isGroupedTable}
             showShadowAtRight={props.showShadowAtRight}
         >
             {props.isLoading ? (

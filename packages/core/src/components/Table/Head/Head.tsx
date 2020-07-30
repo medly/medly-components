@@ -19,6 +19,7 @@ const Head: React.FC<Props> = React.memo(props => {
             defaultSortOrder,
             defaultSortField,
             size: tableSize,
+            isGroupedTable,
             showRowWithCardStyle
         } = useContext(TablePropsContext),
         {
@@ -91,6 +92,7 @@ const Head: React.FC<Props> = React.memo(props => {
                             onWidthChange={handleWidthChange}
                             isRowExpandable={isRowExpandable}
                             tableSize={tableSize}
+                            isGroupedTable={isGroupedTable}
                             isRowActionCell={config.field === 'row-actions'}
                             showShadowAtRight={config.field === 'row-actions' && showShadowAfterFrozenElement}
                         >

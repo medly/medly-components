@@ -44,7 +44,7 @@ export const RowActionsCellStyled = styled('td')<RowActionProps>`
     overflow: visible;
     cursor: default;
     position: sticky;
-    left: 0;
+    left: ${({ isGroupedTable }) => (isGroupedTable ? '4.8rem' : '0')};
     z-index: 1;
     * {
         z-index: 1;

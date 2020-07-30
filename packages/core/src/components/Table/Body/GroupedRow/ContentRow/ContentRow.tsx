@@ -2,7 +2,7 @@ import React, { useCallback, useContext } from 'react';
 import { getGridTemplateColumns } from '../../../helpers';
 import { TablePropsContext } from '../../../TableProps.context';
 import Row from '../../Row';
-import { ContentRowStyled, DataCell } from './ContentRow.styled';
+import { BlankCell, ContentRowStyled, DataCell } from './ContentRow.styled';
 import { Props } from './types';
 
 export const ContentRow: React.FC<Props> = React.memo(props => {
@@ -15,6 +15,7 @@ export const ContentRow: React.FC<Props> = React.memo(props => {
     return (
         <>
             <ContentRowStyled {...restProps} onClick={stopPropagation} gridTemplateColumns={getGridTemplateColumns(columns)}>
+                <BlankCell isRowExpanded={restProps.isRowExpanded} />
                 <DataCell>
                     <TablePropsContext.Provider value={{ ...tableProps, columns: columns.slice(1) }}>
                         {data.children.map((row: { [k: string]: any }, index: number) => {

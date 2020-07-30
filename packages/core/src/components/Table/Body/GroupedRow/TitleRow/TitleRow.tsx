@@ -8,10 +8,17 @@ import { CountChip, ExpansionCell, Row, SecondaryContent, TitleCell } from './Ti
 import { Props } from './types';
 
 export const TitleRow: React.FC<Props> = React.memo(props => {
-    const { data, isRowExpanded, onClick, ...restProps } = props,
-        { columns, groupBy, isLoading, isRowSelectable, isRowExpandable, showRowWithCardStyle, size: tableSize } = useContext(
-            TablePropsContext
-        );
+    const { data, isRowExpanded, onClick, showShadowAfterFrozenElement, ...restProps } = props,
+        {
+            columns,
+            groupBy,
+            isLoading,
+            isRowSelectable,
+            isGroupedTable,
+            isRowExpandable,
+            showRowWithCardStyle,
+            size: tableSize
+        } = useContext(TablePropsContext);
 
     return (
         <Row
@@ -25,7 +32,13 @@ export const TitleRow: React.FC<Props> = React.memo(props => {
                 <ExpandMoreIcon size="L" />
             </ExpansionCell>
             {(isRowSelectable || isRowExpandable) && (
-                <RowActionsCell isRowSelectable={isRowSelectable} tableSize={tableSize} isLoading={isLoading} />
+                <RowActionsCell
+                    isRowSelectable={isRowSelectable}
+                    isGroupedTable={isGroupedTable}
+                    tableSize={tableSize}
+                    isLoading={isLoading}
+                    showShadowAtRight={showShadowAfterFrozenElement}
+                />
             )}
             <TitleCell tableSize={tableSize} isRowSelectable={isRowSelectable} isRowExpandable={isRowExpandable}>
                 <Text textVariant="body2" textWeight="Medium">
