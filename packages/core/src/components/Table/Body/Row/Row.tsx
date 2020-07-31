@@ -33,8 +33,13 @@ export const Row: React.FC<Props> = React.memo(props => {
         handleExpansionIconClick = useCallback(() => setExpansionState(val => !val), []),
         handleRowClick = useMemo(
             () =>
-                !isLoading &&
-                (onRowClick && !isRowClickDisabled ? () => onRowClick(data) : isRowExpandable ? handleExpansionIconClick : undefined),
+                !isLoading
+                    ? onRowClick && !isRowClickDisabled
+                        ? () => onRowClick(data)
+                        : isRowExpandable
+                        ? handleExpansionIconClick
+                        : undefined
+                    : undefined,
             [isLoading, onRowClick, isRowClickDisabled, isRowExpandable, handleExpansionIconClick]
         );
 

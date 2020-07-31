@@ -7,7 +7,7 @@ import { ThemeInterface, ColumnConfigInterface, ExpandedRowComponent, DarkBackgr
 import { filterData } from './filterData';
 import columns from './columns';
 import data from './data';
-import groupedData from './groupedData';
+import { groupedData, getGroupedData } from './groupedData';
 
 <Meta
     title="Core/Table"
@@ -72,6 +72,9 @@ Simple `Table` component to show set of data.
                             groupedData[select('Group By', ['name', 'marks.maths', 'marks.science', 'age', 'isPassed', 'rating'], 'name')]
                         }
                         columns={columns}
+                        getGroupedData={getGroupedData(
+                            select('Group By', ['name', 'marks.maths', 'marks.science', 'age', 'isPassed', 'rating'], 'name')
+                        )}
                         selectedRowIds={selectedRowIds}
                         onRowSelection={setSelectedRowIds}
                         onRowClick={action('Row Clicked')}

@@ -1,4 +1,4 @@
-const groupedData = {
+export const groupedData = {
     name: [
         {
             name: 'Oli Bob',
@@ -827,4 +827,7 @@ const groupedData = {
     ]
 };
 
-export default groupedData;
+export const getGroupedData = (groupBy: string) => async (value: string) => {
+    // @ts-ignore
+    return Promise.resolve(groupedData[groupBy].find(obj => obj[groupBy] === value).children);
+};

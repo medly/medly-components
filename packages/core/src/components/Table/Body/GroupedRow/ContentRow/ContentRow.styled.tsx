@@ -1,13 +1,9 @@
 import { styled } from '@medly-components/utils';
-import { GridTemplateProps } from '../../../types';
 import { StyledProps } from './types';
 
-export const ContentRowStyled = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({
-    style: {
-        gridTemplateColumns
-    }
-}))<StyledProps>`
+export const ContentRowStyled = styled('tr')<StyledProps>`
     display: grid;
+    grid-template-columns: 4.8rem auto;
     position: relative;
     align-items: center;
     min-width: fit-content;

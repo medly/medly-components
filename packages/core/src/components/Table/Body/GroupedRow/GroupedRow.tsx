@@ -1,13 +1,26 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useContext, useState } from 'react';
+import { loadingBodyData } from '../../constants';
+import { TablePropsContext } from '../../TableProps.context';
+import { Data } from '../../types';
 import ContentRow from './ContentRow';
 import TitleRow from './TitleRow';
 import { Props } from './types';
 
 export const GroupedRow: React.FC<Props> = React.memo(props => {
     const [isRowExpanded, setExpansionState] = useState(false),
+        [isLoading, setLoadingState] = useState(true),
+        [groupedData, setGroupedData] = useState<Data>(loadingBodyData),
+        tableProps = useContext(TablePropsContext),
+        { columns, groupBy, getGroupedData } = tableProps,
         { id, data, selectedRowIds, onRowSelection, showShadowAfterFrozenElement } = props;
 
-    const handleExpansion = useCallback(() => setExpansionState(val => !val), []);
+    const handleExpansion = useCallback(async () => {
+        setLoadingState(true);
+        setExpansionState(val => !val);
+        const dt = await getGroupedData(data[groupBy], 0, 1000);
+        setLoadingState(false);
+        setGroupedData(dt);
+    }, [groupBy, isRowExpanded]);
 
     return (
         <>
@@ -20,7 +33,9 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
                 onClick={handleExpansion}
                 showShadowAfterFrozenElement={showShadowAfterFrozenElement}
             />
-            <ContentRow isRowExpanded={isRowExpanded} {...{ ...props, id: `${id}-content-row` }} />
+            <TablePropsContext.Provider value={{ ...tableProps, columns: columns.slice(1), isLoading }}>
+                <ContentRow isRowExpanded={isRowExpanded} {...{ ...props, id: `${id}-content-row`, data: groupedData }} />
+            </TablePropsContext.Provider>
         </>
     );
 });

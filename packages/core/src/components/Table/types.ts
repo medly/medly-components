@@ -85,13 +85,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Name of the key in data on which grouping is applied */
     groupBy?: 'string';
     /** Name of the key in data on which grouping is applied */
-    getGroupedData?: (
-        key: string,
-        offset: number,
-        limit: number
-    ) => {
-        [key: string]: any;
-    }[];
+    getGroupedData?: (key: string, offset: number, limit: number) => Promise<object[]>;
 }
 
 export interface StaticProps {
