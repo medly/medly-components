@@ -45,7 +45,7 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
 
     &:not(:last-child) {
         &::after {
-            ${({ children }) => children && getBorder('right')}
+            ${({ isRowActionCell, children }) => (isRowActionCell ? children && getBorder('right') : getBorder('right'))}
         }
     }
 

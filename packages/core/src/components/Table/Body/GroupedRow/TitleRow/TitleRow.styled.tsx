@@ -8,7 +8,8 @@ import { StyledProps } from './types';
 
 export const Row = styled('tr')<StyledProps>`
     display: grid;
-    grid-template-columns: 4.8rem 8.4rem auto;
+    grid-template-columns: 4.8rem ${({ isRowExpandable, isRowSelectable }) =>
+            isRowExpandable && isRowSelectable ? '8.4rem' : (isRowExpandable || isRowSelectable) && '4.8rem'} auto;
     position: sticky;
     left: 0;
     align-items: center;

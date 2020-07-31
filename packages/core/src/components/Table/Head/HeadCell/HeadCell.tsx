@@ -104,7 +104,7 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
                             c
                         );
                     })}
-                    <ResizeHandler onMouseDown={initResize} onDoubleClick={handleDoubleClick} />
+                    {!restProps.isRowActionCell && <ResizeHandler onMouseDown={initResize} onDoubleClick={handleDoubleClick} />}
                 </>
             )}
         </HeadCellStyled>

@@ -38,6 +38,8 @@ export const TitleRow: React.FC<Props> = React.memo(props => {
             onClick={onClick}
             tableWidth={tableWidth}
             isRowExpanded={isRowExpanded}
+            isRowSelectable={isRowSelectable}
+            isRowExpandable={isRowExpandable}
             showRowWithCardStyle={showRowWithCardStyle}
             gridTemplateColumns={getGridTemplateColumns(columns)}
         >
