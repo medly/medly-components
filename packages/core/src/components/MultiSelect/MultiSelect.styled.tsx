@@ -13,7 +13,6 @@ const getDefaultStyle = ({ theme, areOptionsVisible, disabled, isSearchable }: S
         ${TextField.Style} {
             margin: 0;
             caret-color: ${!isSearchable && 'transparent'};
-            max-width: 25.6rem;
 
             label {
                 pointer-events: none;
@@ -90,6 +89,10 @@ export const Wrapper = styled.div<SelectWrapperProps>`
     width: ${({ fullWidth }) => (fullWidth ? '100%' : 'max-content')};
     margin: ${({ theme, fullWidth }) =>
         fullWidth ? `${theme.spacing.S2} 0` : `${theme.spacing.S2} ${theme.spacing.S2} ${theme.spacing.S2} 0`};
+
+    ${TextField.Style} {
+        ${({ fullWidth }) => !fullWidth && `max-width: 25.6rem;`}
+    }
 
     ${getDefaultStyle};
     ${({ areOptionsVisible }) => areOptionsVisible && getActiveStyle};

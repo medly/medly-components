@@ -355,7 +355,6 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 .c0 .c1 {
   margin: 0;
-  max-width: 25.6rem;
 }
 
 .c0 .c1 label {
@@ -749,8 +748,11 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 }
 
 .c0 .c1 {
-  margin: 0;
   max-width: 25.6rem;
+}
+
+.c0 .c1 {
+  margin: 0;
 }
 
 .c0 .c1 label {
@@ -1194,7 +1196,6 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 
 .c0 .c1 {
   margin: 0;
-  max-width: 25.6rem;
 }
 
 .c0 .c1 label {
@@ -1588,8 +1589,11 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 }
 
 .c0 .c1 {
-  margin: 0;
   max-width: 25.6rem;
+}
+
+.c0 .c1 {
+  margin: 0;
 }
 
 .c0 .c1 label {
