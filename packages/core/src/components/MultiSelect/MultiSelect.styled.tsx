@@ -46,36 +46,12 @@ const getDefaultStyle = ({ theme, areOptionsVisible, disabled, isSearchable }: S
     `;
 };
 
-const getActiveStyle = ({ theme }: SelectWrapperProps) => {
+const getChipStyle = (color: string) => {
     return css`
         ${SuffixWrap} {
             > ${ChevronDownIcon.Style} {
                 * {
-                    fill: ${theme.colors.blue[500]};
-                }
-            }
-        }
-    `;
-};
-
-const getErrorStyle = ({ theme }: SelectWrapperProps) => {
-    return css`
-        ${SuffixWrap} {
-            > ${ChevronDownIcon.Style} {
-                * {
-                    fill: ${theme.colors.red[500]};
-                }
-            }
-        }
-    `;
-};
-
-const getDisabledStyle = ({ theme }: SelectWrapperProps) => {
-    return css`
-        ${SuffixWrap} {
-            > ${ChevronDownIcon.Style} {
-                * {
-                    fill: ${theme.colors.grey[400]};
+                    fill: ${color};
                 }
             }
         }
@@ -95,7 +71,7 @@ export const Wrapper = styled.div<SelectWrapperProps>`
     }
 
     ${getDefaultStyle};
-    ${({ areOptionsVisible }) => areOptionsVisible && getActiveStyle};
-    ${({ isErrorPresent }) => isErrorPresent && getErrorStyle};
-    ${({ disabled }) => disabled && getDisabledStyle};
+    ${({ areOptionsVisible, isErrorPresent, theme }) => areOptionsVisible && !isErrorPresent && getChipStyle(theme.colors.blue[500])};
+    ${({ isErrorPresent, theme }) => isErrorPresent && getChipStyle(theme.colors.red[500])};
+    ${({ disabled, theme }) => disabled && getChipStyle(theme.colors.grey[400])};
 `;

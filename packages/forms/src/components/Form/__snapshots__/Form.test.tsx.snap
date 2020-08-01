@@ -1596,8 +1596,11 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c58 .c2 {
-  margin: 0;
   max-width: 25.6rem;
+}
+
+.c58 .c2 {
+  margin: 0;
 }
 
 .c58 .c2 label {
@@ -3999,8 +4002,11 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c58 .c5 {
-  margin: 0;
   max-width: 25.6rem;
+}
+
+.c58 .c5 {
+  margin: 0;
 }
 
 .c58 .c5 label {

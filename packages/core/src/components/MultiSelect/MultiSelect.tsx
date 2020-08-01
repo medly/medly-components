@@ -41,7 +41,6 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             showOptions = useCallback(() => {
                 setOptionsVisibilityState(true);
                 inputRef.current && inputRef.current.focus();
-                setInputValue('');
             }, [areOptionsVisible]),
             toggleOptions = useCallback(() => !disabled && (areOptionsVisible ? hideOptions() : showOptions()), [
                 disabled,
@@ -65,10 +64,9 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             ),
             handleOuterClick = useCallback(() => {
                 if (areOptionsVisible) {
-                    hideOptions();
                     updateToDefaultOptions();
                 }
-                inputRef.current && inputRef.current.blur();
+                hideOptions();
             }, [areOptionsVisible]),
             getState = useCallback(() => {
                 if (props.disabled) {
@@ -104,10 +102,11 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
         useEffect(() => {
             if (areOptionsVisible) {
                 inputRef.current && inputRef.current.focus();
+                setInputValue('');
             } else {
-                inputRef.current && inputRef.current.blur();
                 setInputValue(selectedOptions.map(obj => obj.value).toString());
                 setOptions(defaultOptions);
+                setTimeout(() => hideOptions(), 0);
             }
         }, [selectedOptions, areOptionsVisible]);
 
@@ -138,7 +137,7 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                 ref={wrapperRef}
                 isSearchable={isSearchable}
                 onClick={toggleOptions}
-                isErrorPresent={!!props.errorText}
+                isErrorPresent={!!props.errorText || (inputProps.required && selectedOptions.length === 0)}
                 areOptionsVisible={areOptionsVisible}
                 {...{ variant, disabled, minWidth, fullWidth }}
             >
