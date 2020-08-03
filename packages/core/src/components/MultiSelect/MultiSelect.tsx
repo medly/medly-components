@@ -153,6 +153,7 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                     suffix={chipEl}
                     onChange={handleInputChange}
                     onBlur={handleOnBlur}
+                    readOnly={!isSearchable && !inputProps.required}
                     {...inputProps}
                 />
                 {!disabled && areOptionsVisible && (

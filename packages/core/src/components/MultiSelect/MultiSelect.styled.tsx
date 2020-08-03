@@ -12,7 +12,6 @@ const getDefaultStyle = ({ theme, areOptionsVisible, disabled, isSearchable }: S
     return css`
         ${TextField.Style} {
             margin: 0;
-            caret-color: ${!isSearchable && 'transparent'};
 
             label {
                 pointer-events: none;

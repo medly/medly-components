@@ -192,4 +192,11 @@ describe('MultiSelect component', () => {
         const message = await findByText('some error');
         expect(message).toBeInTheDocument();
     });
+
+    it('should make input read-only when required is false along with isSearchable', () => {
+        const { container } = render(<MultiSelect options={options} isSearchable={false} required={false} />);
+        const input = container.querySelector('input');
+        fireEvent.focus(input);
+        expect(input).not.toBe(document.activeElement);
+    });
 });
