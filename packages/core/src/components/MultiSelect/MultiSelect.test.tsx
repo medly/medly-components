@@ -146,9 +146,7 @@ describe('MultiSelect component', () => {
     });
 
     it('should clear options on click onClear function', () => {
-        const { queryByTestId } = render(
-            <MultiSelect errorText="Some Error" values={['Dummy1', 'Dummy2']} showCheckbox={true} options={options} onChange={jest.fn()} />
-        );
+        const { queryByTestId } = render(<MultiSelect values={['Dummy1', 'Dummy2']} options={options} onChange={jest.fn()} />);
         fireEvent.click(queryByTestId('cancel-chip'));
         expect(screen.queryByRole('list')).toBeNull();
     });
@@ -170,10 +168,28 @@ describe('MultiSelect component', () => {
     });
 
     it('should maintain focus even on blur of input', async () => {
-        render(<MultiSelect options={options} showCheckbox={true} />);
+        render(<MultiSelect options={options} />);
         const input = document.getElementById('medly-multiSelect-input');
         fireEvent.change(input, { target: { value: 'Dummy' } });
         fireEvent.click(document.getElementById('Dummy1-wrapper'));
         expect(input).toBe(document.activeElement);
+    });
+
+    it('should make input required if options.length is zero and multiSelect is required', async () => {
+        const { container, findByText } = render(
+            <MultiSelect id="pharmacy" values={[]} options={options} onChange={jest.fn()} required={true} />
+        );
+        fireEvent.invalid(container.querySelector('input'));
+        const message = await findByText('Constraints not satisfied');
+        expect(message).toBeInTheDocument();
+    });
+
+    it('should render with passed error text', async () => {
+        const { container, findByText } = render(
+            <MultiSelect options={options} values={['Dummy1']} onChange={jest.fn()} errorText="some error" />
+        );
+        fireEvent.invalid(container.querySelector('input'));
+        const message = await findByText('some error');
+        expect(message).toBeInTheDocument();
     });
 });

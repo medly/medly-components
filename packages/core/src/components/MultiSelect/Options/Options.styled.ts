@@ -3,7 +3,6 @@ import { styled, WithThemeProp } from '@medly-components/utils';
 import Checkbox from '../../Checkbox';
 import { SelectorGroup } from '../../Selectors';
 import { Chip } from '../Chip/Chip';
-import { OptionStyledProps } from './types';
 
 export const ChipArea = styled.div<WithThemeProp>`
     border-bottom: 1px solid ${({ theme }) => theme.colors.grey[200]};
@@ -88,22 +87,5 @@ export const Options = styled.ul<WithThemeProp>`
         > label {
             padding-left: 1.3rem;
         }
-    }
-`;
-
-export const Option = styled.li.attrs(({ theme: { select } }) => ({ ...select }))<OptionStyledProps>`
-    cursor: pointer;
-    padding: ${({ isChild }) => (isChild ? '5px 5px 5px 15px' : '5px')};
-    color: ${({ selected, selectedTextColor }) => (selected ? selectedTextColor : 'inherit')};
-    background-color: ${({ selected, selectedBgColor, bgColor }) => (selected ? selectedBgColor : bgColor)};
-
-    :last-child {
-        border-bottom-left-radius: 3px;
-        border-bottom-right-radius: 3px;
-    }
-
-    :first-child {
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
     }
 `;
