@@ -14,7 +14,7 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
             !isLoading &&
             addColumnMaxSize &&
             addColumnMaxSize(dottedFieldName, childRef.current.clientWidth + (tableSize === 'L' ? 48 : 32));
-    }, [childRef.current, tableSize]);
+    }, [childRef, tableSize]);
 
     return (
         <StyledCell hidden={hidden} frozen={frozen} tableSize={tableSize} align={align} {...restProps}>

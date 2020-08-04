@@ -1,4 +1,4 @@
-import { useCombinedRefs, WithStyle } from '@medly-components/utils';
+import { useCombinedRefs, useUpdateEffect, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useMemo, useReducer, useState } from 'react';
 import Body from './Body';
 import ColumnConfiguration from './ColumnConfiguration';
@@ -9,6 +9,7 @@ import { maxColumnSizeReducer } from './maxColumnSizeReducer';
 import { TableStyled } from './Table.styled';
 import { TablePropsContext } from './TableProps.context';
 import { StaticProps, TableProps } from './types';
+import useGroupedRowSelector from './useGroupedRowSelector';
 import useRowSelector from './useRowSelector';
 import { useScrollState } from './useScrollState';
 
@@ -21,7 +22,6 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                 rowSelectionDisableKey,
                 isRowSelectable,
                 isRowExpandable,
-                selectedRowIds,
                 onRowSelection,
                 isLoading,
                 showRowWithCardStyle,
@@ -31,23 +31,36 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
             size = showRowWithCardStyle ? 'L' : restProps.size;
 
         const [scrollState, handleScroll] = useScrollState(),
+            [isSelectAllDisable, setSelectAllDisableState] = useState(true),
             tableRef = useCombinedRefs<HTMLTableElement>(ref, React.useRef(null)),
             [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
             [columns, setColumns] = useState(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable)),
             addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]);
 
         const isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]),
-            isSelectAllDisable = useMemo(() => data.every(dt => dt[rowSelectionDisableKey]), [data, rowSelectionDisableKey]),
-            rowSelector = useRowSelector(data, selectedRowIds, rowSelectionDisableKey, rowIdentifier, isRowSelectable),
-            { isAnyRowSelected, isEachRowSelected, selectedIds, toggleId } = rowSelector;
+            rowSelector = useRowSelector({
+                data,
+                rowSelectionDisableKey,
+                rowIdentifier: restProps.groupBy || rowIdentifier
+            }),
+            { isAnyRowSelected, areAllRowsSelected, selectedIds, toggleId } = rowSelector,
+            groupedRowSelector = useGroupedRowSelector();
 
         useEffect(() => {
             setColumns(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable));
         }, [props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable]);
 
         useEffect(() => {
-            onRowSelection && onRowSelection(selectedIds);
-        }, [selectedIds, onRowSelection]);
+            setSelectAllDisableState(isGroupedTable ? true : data.every(dt => dt[rowSelectionDisableKey]));
+        }, [data, isGroupedTable, rowSelectionDisableKey]);
+
+        useUpdateEffect(() => {
+            !isGroupedTable && onRowSelection(selectedIds);
+        }, [selectedIds]);
+
+        useUpdateEffect(() => {
+            isGroupedTable && onRowSelection(groupedRowSelector.selectedIds);
+        }, [groupedRowSelector.selectedIds]);
 
         return (
             <TablePropsContext.Provider
@@ -64,7 +77,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                         {...{
                             setColumns,
                             maxColumnSizes,
-                            isEachRowSelected,
+                            areAllRowsSelected,
                             isAnyRowSelected,
                             onSelectAllClick: toggleId,
                             isSelectAllDisable: isSelectAllDisable,
@@ -75,8 +88,10 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                     <Body
                         {...{
                             addColumnMaxSize,
+                            setSelectAllDisableState,
                             selectedRowIds: selectedIds,
                             onRowSelection: toggleId,
+                            onGroupedRowSelection: groupedRowSelector.toggleIds,
                             showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
                         }}
                     />
@@ -89,7 +104,6 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
 Table.defaultProps = {
     size: 'M',
     rowIdentifier: 'id',
-    selectedRowIds: [],
     defaultSortOrder: 'asc',
     rowClickDisableKey: '',
     rowSelectionDisableKey: ''

@@ -8,9 +8,10 @@ export type RowActionProps = HTMLProps<HTMLTableCellElement> & {
     isRowSelectable?: boolean;
     isRowExpanded?: boolean;
     isRowSelected?: boolean;
+    isRowIndeterminate?: boolean;
     isRowSelectionDisabled?: boolean;
     showShadowAtRight?: boolean;
     tableSize?: TableProps['size'];
-    onRowSelection?: () => void;
+    onRowSelection?: (id: any) => void;
     onRowExpansionIconClick?: (event: any) => void;
 };

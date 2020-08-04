@@ -1,49 +1,44 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { Dispatch, SetStateAction, useCallback, useMemo, useState } from 'react';
 import { Data } from './types';
 
 type Result = {
-    isEachRowSelected: boolean;
+    uniqueIds?: (string | number)[];
+    areAllRowsSelected: boolean;
     isAnyRowSelected: boolean;
-    selectedIds: number[];
-    toggleId: (id: number) => void;
+    selectedIds: (string | number)[];
+    toggleId: (id: number | string) => void;
+    setSelectedIds: Dispatch<SetStateAction<(string | number)[]>>;
+};
+type Params = {
+    data: Data;
+    rowSelectionDisableKey: string;
+    rowIdentifier: string;
 };
 
-const useRowSelector = (
-    data: Data,
-    initialSelectedIds: number[],
-    rowSelectionDisableKey: string,
-    rowIdentifier: string,
-    isRowSelectable: boolean
-): Result => {
-    const ids = useMemo(() => data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[rowIdentifier]), [
+const useRowSelector = ({ data, rowSelectionDisableKey, rowIdentifier }: Params): Result => {
+    const [selectedIds, setSelectedIds] = useState<(string | number)[]>([]),
+        uniqueIds = useMemo(() => data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[rowIdentifier]), [
             data,
             rowSelectionDisableKey,
             rowIdentifier
         ]),
-        [selectedIds, setSelectedIds] = useState(initialSelectedIds),
-        isEachRowSelected = useMemo(() => ids.length > 0 && ids.length === selectedIds.length, [ids, selectedIds]),
-        isAnyRowSelected = useMemo(() => selectedIds.length > 0 && !isEachRowSelected, [selectedIds, isEachRowSelected]);
+        areAllRowsSelected = useMemo(() => {
+            return uniqueIds.length > 0 && uniqueIds.length === selectedIds.length;
+        }, [uniqueIds, selectedIds]),
+        isAnyRowSelected = useMemo(() => selectedIds.length > 0 && !areAllRowsSelected, [selectedIds, areAllRowsSelected]);
 
     const toggleId = useCallback(
-        (id: number) =>
+        (id: number | string) =>
             setSelectedIds(sIds => {
                 if (id === -1) {
-                    return sIds.length === ids.length ? [] : ids;
+                    return sIds.length === uniqueIds.length ? [] : uniqueIds;
                 }
                 return sIds.indexOf(id) === -1 ? [...sIds, id] : sIds.filter(i => i !== id);
             }),
-        [ids]
+        [uniqueIds, setSelectedIds]
     );
 
-    useEffect(() => {
-        !isRowSelectable && setSelectedIds([]);
-    }, [isRowSelectable]);
-
-    useEffect(() => {
-        setSelectedIds(initialSelectedIds);
-    }, [initialSelectedIds]);
-
-    return { isEachRowSelected, isAnyRowSelected, selectedIds, toggleId };
+    return { areAllRowsSelected, isAnyRowSelected, selectedIds, uniqueIds, toggleId, setSelectedIds };
 };
 
 export default useRowSelector;

@@ -1,4 +1,5 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
+import { Dispatch, SetStateAction } from 'react';
 import ColumnConfiguration from './ColumnConfiguration';
 
 export type SortOrder = 'asc' | 'desc';
@@ -58,8 +59,6 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     columns: TableColumnConfig[];
     /** Key name in data to be used as unique id for rows */
     rowIdentifier?: string;
-    /** Ids of default selected rows */
-    selectedRowIds?: number[];
     /** Set it true to show row with card style */
     showRowWithCardStyle?: boolean;
     /** Key name to disable row selection */
@@ -71,7 +70,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Set it true to expand rows to show extra info */
     isRowExpandable?: boolean;
     /** Function to be called on row selection */
-    onRowSelection?: (v: number[]) => void;
+    onRowSelection?: Dispatch<SetStateAction<(string | number)[]>>;
     /** Function to be called on row click */
     onRowClick?: (rowData: object) => void;
     /** Default Sort Field*/
@@ -85,7 +84,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Name of the key in data on which grouping is applied */
     groupBy?: 'string';
     /** Name of the key in data on which grouping is applied */
-    getGroupedData?: (key: string, offset: number, limit: number) => Promise<object[]>;
+    getGroupedData?: (title: string, offset: number, limit: number) => Promise<object[]>;
 }
 
 export interface StaticProps {

@@ -1,40 +1,92 @@
-import React, { useCallback, useContext, useState } from 'react';
+import { useUpdateEffect } from '@medly-components/utils';
+import React, { useCallback, useContext, useMemo, useState } from 'react';
 import { loadingBodyData } from '../../constants';
 import { TablePropsContext } from '../../TableProps.context';
 import { Data } from '../../types';
+import useRowSelector from '../../useRowSelector';
 import ContentRow from './ContentRow';
 import TitleRow from './TitleRow';
 import { Props } from './types';
 
 export const GroupedRow: React.FC<Props> = React.memo(props => {
+    const tableProps = useContext(TablePropsContext),
+        { columns, groupBy, rowIdentifier, getGroupedData, rowSelectionDisableKey } = tableProps,
+        {
+            id,
+            titleRowData,
+            selectedTitleRowIds,
+            onTitleRowSelection,
+            showShadowAfterFrozenElement,
+            onGroupedRowSelection,
+            setSelectAllDisableState
+        } = props;
+
     const [isRowExpanded, setExpansionState] = useState(false),
         [isLoading, setLoadingState] = useState(true),
-        [groupedData, setGroupedData] = useState<Data>(loadingBodyData),
-        tableProps = useContext(TablePropsContext),
-        { columns, groupBy, getGroupedData } = tableProps,
-        { id, data, selectedRowIds, onRowSelection, showShadowAfterFrozenElement } = props;
+        [groupedRows, setGroupedRows] = useState<Data>(loadingBodyData);
 
-    const handleExpansion = useCallback(async () => {
-        setLoadingState(true);
-        setExpansionState(val => !val);
-        const dt = await getGroupedData(data[groupBy], 0, 1000);
-        setLoadingState(false);
-        setGroupedData(dt);
-    }, [groupBy, isRowExpanded]);
+    const isTitleRowSelected = useMemo(() => !isLoading && selectedTitleRowIds.includes(id), [id, isLoading, selectedTitleRowIds]),
+        isTitleRowSelectionDisable = useMemo(() => {
+            const isDisabled = groupedRows.every(dt => dt[rowSelectionDisableKey]);
+            !isDisabled && setSelectAllDisableState(false);
+            return isDisabled;
+        }, [groupedRows, rowSelectionDisableKey]),
+        rowSelector = useRowSelector({ data: groupedRows, rowSelectionDisableKey, rowIdentifier }),
+        { uniqueIds, isAnyRowSelected, areAllRowsSelected, selectedIds, toggleId, setSelectedIds } = rowSelector;
+
+    const handleExpansion = useCallback(() => setExpansionState(val => !val), []),
+        handleSelectAllClick = useCallback(() => {
+            toggleId(-1);
+        }, [toggleId]);
+
+    useUpdateEffect(async () => {
+        if (isRowExpanded && groupedRows === loadingBodyData) {
+            setLoadingState(true);
+            const dt = await getGroupedData(titleRowData[groupBy], 0, 1000);
+            setLoadingState(false);
+            setGroupedRows(dt);
+        }
+    }, [isRowExpanded]);
+
+    useUpdateEffect(() => {
+        isTitleRowSelected !== areAllRowsSelected && onTitleRowSelection(id);
+    }, [areAllRowsSelected]);
+
+    useUpdateEffect(() => {
+        if (isTitleRowSelected !== areAllRowsSelected) {
+            isTitleRowSelected ? setSelectedIds(uniqueIds) : selectedIds.length > 0 && setSelectedIds([]);
+        }
+    }, [isTitleRowSelected]);
+
+    useUpdateEffect(() => {
+        // @ts-ignore
+        onGroupedRowSelection(selectedIds);
+    }, [selectedIds]);
 
     return (
         <>
             <TitleRow
                 id={`${id}-title-row`}
-                data={data}
+                data={titleRowData}
+                isRowSelected={!isTitleRowSelectionDisable && isTitleRowSelected}
+                isRowIndeterminate={isAnyRowSelected}
                 isRowExpanded={isRowExpanded}
-                onRowSelection={onRowSelection}
-                selectedRowIds={selectedRowIds}
+                onRowSelection={handleSelectAllClick}
                 onClick={handleExpansion}
+                isRowSelectionDisabled={isLoading || isTitleRowSelectionDisable}
                 showShadowAfterFrozenElement={showShadowAfterFrozenElement}
             />
             <TablePropsContext.Provider value={{ ...tableProps, columns: columns.slice(1), isLoading }}>
-                <ContentRow isRowExpanded={isRowExpanded} {...{ ...props, id: `${id}-content-row`, data: groupedData }} />
+                <ContentRow
+                    isRowExpanded={isRowExpanded}
+                    {...{
+                        ...props,
+                        id: `${id}-content-row`,
+                        data: groupedRows,
+                        selectedRowIds: selectedIds,
+                        onRowSelection: toggleId
+                    }}
+                />
             </TablePropsContext.Provider>
         </>
     );

@@ -1,4 +1,4 @@
-import { ExpandMoreIcon } from '@medly-components/icons/src';
+import { ExpandMoreIcon } from '@medly-components/icons';
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import Text from '../../../../Text';
 import { getGridTemplateColumns } from '../../../helpers';
@@ -9,7 +9,7 @@ import { Props } from './types';
 
 export const TitleRow: React.FC<Props> = React.memo(props => {
     const [tableWidth, setTableWidth] = useState(),
-        { data, isRowExpanded, onClick, ...restProps } = props,
+        { data, isRowExpanded, onClick, onRowSelection, isRowIndeterminate, ...restProps } = props,
         {
             tableRef,
             columns,
@@ -48,10 +48,14 @@ export const TitleRow: React.FC<Props> = React.memo(props => {
             </ExpansionCell>
             {(isRowSelectable || isRowExpandable) && (
                 <RowActionsCell
+                    isRowSelected={restProps.isRowSelected}
                     isRowSelectable={isRowSelectable}
                     isGroupedTable={isGroupedTable}
                     tableSize={tableSize}
                     isLoading={isLoading}
+                    isRowIndeterminate={isRowIndeterminate}
+                    onRowSelection={onRowSelection}
+                    isRowSelectionDisabled={props.isRowSelectionDisabled}
                 />
             )}
             <TitleCell tableSize={tableSize} isRowSelectable={isRowSelectable} isRowExpandable={isRowExpandable}>
@@ -60,7 +64,7 @@ export const TitleRow: React.FC<Props> = React.memo(props => {
                 </Text>
                 <CountChip>{data.count}</CountChip>
                 <SecondaryContent textVariant="body2" textWeight="Medium">
-                    {data[groupBy]}
+                    {data.secondaryContent}
                 </SecondaryContent>
             </TitleCell>
         </Row>

@@ -1,9 +1,11 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
 
 export type Props = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
-    data: { [key: string]: any };
-    selectedRowIds?: Array<any>;
+    titleRowData: { [key: string]: any };
+    selectedTitleRowIds: Array<any>;
     addColumnMaxSize: (field: string, value: number) => void;
-    onRowSelection?: (id: any) => void;
-    showShadowAfterFrozenElement?: boolean;
+    onTitleRowSelection: (id: any) => void;
+    onGroupedRowSelection: (id: number[] | string[]) => void;
+    showShadowAfterFrozenElement: boolean;
+    setSelectAllDisableState: React.Dispatch<React.SetStateAction<boolean>>;
 };

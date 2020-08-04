@@ -25,7 +25,7 @@ const Head: React.FC<Props> = React.memo(props => {
         {
             setColumns,
             isAnyRowSelected,
-            isEachRowSelected,
+            areAllRowsSelected,
             isSelectAllDisable,
             onSelectAllClick,
             maxColumnSizes,
@@ -51,13 +51,13 @@ const Head: React.FC<Props> = React.memo(props => {
                 <Checkbox
                     indeterminate={isAnyRowSelected}
                     disabled={isLoading || isSelectAllDisable}
-                    checked={isEachRowSelected}
+                    checked={areAllRowsSelected}
                     onChange={handleSelectAllClick}
                     onClick={stopPropagation}
                     name="active"
                 />
             ),
-            [isLoading, isAnyRowSelected, isEachRowSelected, isSelectAllDisable, handleSelectAllClick]
+            [isLoading, isAnyRowSelected, areAllRowsSelected, isSelectAllDisable, handleSelectAllClick]
         ),
         headCell = useCallback(
             (configs: TableColumnConfig[], field = '') =>

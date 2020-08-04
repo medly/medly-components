@@ -18,7 +18,7 @@ const table: TableTheme = {
         bgColor: {
             default: colors.grey[200],
             expanded: colors.blue[100],
-            selected: colors.blue[100]
+            selected: colors.blue[200]
         },
         countChip: {
             textColor: colors.white,

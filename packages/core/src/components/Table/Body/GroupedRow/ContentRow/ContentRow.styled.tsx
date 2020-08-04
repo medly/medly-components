@@ -12,6 +12,7 @@ export const ContentRowStyled = styled('tr')<StyledProps>`
     overflow: ${({ isRowExpanded }) => !isRowExpanded && 'hidden'};
     transition: max-height 200ms ${({ isRowExpanded }) => (isRowExpanded ? 'ease-in' : 'ease-out')};
     max-height: ${({ isRowExpanded }) => (isRowExpanded ? '100vh' : 0)};
+    border-bottom: ${({ isRowExpanded, theme }) => isRowExpanded && `1px solid ${theme.table.borderColor}`};
 `;
 export const BlankCell = styled('td')<{ isRowExpanded: boolean }>`
     width: 100%;

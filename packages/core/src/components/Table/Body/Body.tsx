@@ -8,7 +8,8 @@ import { NoResult } from './Row/Row.styled';
 import { Props } from './types';
 
 const Body: React.FC<Props> = React.memo(props => {
-    const { data, groupBy, rowIdentifier } = useContext(TablePropsContext);
+    const { data, groupBy, rowIdentifier } = useContext(TablePropsContext),
+        { selectedRowIds, onRowSelection, onGroupedRowSelection, ...restProps } = props;
 
     return (
         <TBody>
@@ -20,9 +21,16 @@ const Body: React.FC<Props> = React.memo(props => {
             {data.map((row, index) => {
                 const identifier = (groupBy ? row[groupBy] : row[rowIdentifier]) || index;
                 return groupBy ? (
-                    <GroupedRow id={identifier} key={identifier} data={row} {...props} />
+                    <GroupedRow
+                        id={identifier}
+                        key={identifier}
+                        titleRowData={row}
+                        selectedTitleRowIds={selectedRowIds}
+                        onTitleRowSelection={onRowSelection}
+                        {...{ ...restProps, onGroupedRowSelection }}
+                    />
                 ) : (
-                    <Row id={identifier} key={identifier} data={row} {...props} />
+                    <Row id={identifier} key={identifier} data={row} {...{ ...restProps, selectedRowIds, onRowSelection }} />
                 );
             })}
         </TBody>

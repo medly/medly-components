@@ -5,7 +5,7 @@ export type StyledProps = GridTemplateProps &
     HTMLProps<HTMLTableRowElement> &
     WithThemeProp & {
         tableWidth?: number;
-        isSelected?: boolean;
+        isRowSelected?: boolean;
         isRowExpanded: boolean;
         isRowExpandable: boolean;
         isRowSelectable: boolean;
@@ -13,8 +13,10 @@ export type StyledProps = GridTemplateProps &
     };
 export type Props = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
     isRowExpanded?: boolean;
+    isRowSelected?: boolean;
     data: { [key: string]: any };
-    selectedRowIds?: Array<any>;
+    isRowIndeterminate?: boolean;
     onRowSelection?: (id: any) => void;
+    isRowSelectionDisabled?: boolean;
     showShadowAfterFrozenElement: boolean;
 };

@@ -1,4 +1,4 @@
-import { WithStyle } from '@medly-components/utils/src';
+import { WithStyle } from '@medly-components/utils';
 import React, { useCallback } from 'react';
 import { RowActionsCellStyled } from '../RowActionsCell/RowActionsCell.styled';
 import { ExtendedRowCellStyled, Wrapper } from './ExtendedRowCell.styled';

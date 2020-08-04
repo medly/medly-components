@@ -19,8 +19,8 @@ export const Row = styled('tr')<StyledProps>`
 
     &,
     & > * {
-        background-color: ${({ theme, isSelected, isRowExpanded }) =>
-            theme.table.titleRow.bgColor[isSelected ? 'selected' : isRowExpanded ? 'expanded' : 'default']};
+        background-color: ${({ theme, isRowSelected, isRowExpanded }) =>
+            theme.table.titleRow.bgColor[isRowSelected ? 'selected' : isRowExpanded ? 'expanded' : 'default']};
     }
 
     &:hover {
