@@ -174,7 +174,7 @@ MultiSelect.displayName = 'MultiSelect';
 MultiSelect.Style = Wrapper;
 MultiSelect.defaultProps = {
     values: [],
-    variant: 'outlined',
+    variant: 'filled',
     isSearchable: true,
     placeholder: 'Please Select . . .'
 };

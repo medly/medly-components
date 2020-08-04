@@ -1,4 +1,4 @@
-export interface SelectTheme {
+export interface SingleSelectTheme {
     bgColor: string;
     disabledBgColor: string;
     outlineColor: string;

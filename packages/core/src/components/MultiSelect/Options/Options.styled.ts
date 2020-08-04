@@ -44,7 +44,7 @@ export const OptionsWrapper = styled.div<WithThemeProp>`
     position: absolute;
     top: 5.6rem;
     box-shadow: ${({ theme }) => `0px 2px 8px ${theme.colors.grey[400]}`};
-    background-color: ${({ theme }) => theme.select.bgColor};
+    background-color: ${({ theme }) => theme.singleSelect.bgColor};
     box-sizing: border-box;
     border-radius: 0.4rem;
     width: 100%;

@@ -16,7 +16,7 @@ import multiSelect from './multiSelect';
 import radio from './radio';
 import reactDatepicker from './reactDatepicker';
 import searchBox from './searchBox';
-import select from './select';
+import singleSelect from './singleSelect';
 import spacing from './spacing';
 import stepper from './stepper';
 import table from './table';
@@ -44,7 +44,7 @@ export const coreDefaultTheme = {
     radio,
     reactDatepicker,
     searchBox,
-    select,
+    singleSelect,
     spacing,
     stepper,
     table,

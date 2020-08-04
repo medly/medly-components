@@ -1,4 +1,4 @@
-import { defaultTheme, SelectTheme } from '@medly-components/theme';
+import { defaultTheme, SingleSelectTheme } from '@medly-components/theme';
 import React from 'react';
 import { Option, SelectProps } from './types';
 
@@ -26,9 +26,9 @@ export const options = [
     { value: 'Dummy6 option', label: 'Dummy6 option' }
 ];
 
-export const ThemeInterface: React.FC<SelectTheme> = () => null;
+export const ThemeInterface: React.FC<SingleSelectTheme> = () => null;
 ThemeInterface.defaultProps = {
-    ...defaultTheme.select
+    ...defaultTheme.singleSelect
 };
 
 export const OptionProps: React.FC<Option> = () => null;

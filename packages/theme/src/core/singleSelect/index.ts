@@ -1,7 +1,7 @@
 import colors from '../colors';
-import { SelectTheme } from './types';
+import { SingleSelectTheme } from './types';
 
-const select: SelectTheme = {
+const select: SingleSelectTheme = {
     bgColor: colors.white,
     disabledBgColor: colors.grey[200],
     outlineColor: colors.professionalNavy,
@@ -16,7 +16,7 @@ const select: SelectTheme = {
             default: colors.white,
             hovered: colors.grey[50],
             selected: colors.blue[100],
-            error: colors.grey[100],
+            error: colors.grey[100]
         },
         textColor: {
             default: colors.black,

@@ -15,7 +15,7 @@ export * from './modal/types';
 export * from './multiSelect/types';
 export * from './radio/types';
 export * from './searchBox/types';
-export * from './select/types';
+export * from './singleSelect/types';
 export * from './spacing/types';
 export * from './stepper/types';
 export * from './table/types';
@@ -23,4 +23,3 @@ export * from './tabs/types';
 export * from './textField/types';
 export * from './toast/types';
 export * from './toggle/types';
-

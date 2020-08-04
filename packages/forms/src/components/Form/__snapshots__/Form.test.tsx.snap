@@ -621,6 +621,10 @@ exports[`Form should render properly with initial state 1`] = `
   transform: translate3d(0,55%,0);
 }
 
+.c61::after {
+  content: ' *';
+}
+
 .c57 {
   pointer-events: none;
   margin-left: 1.6rem;
@@ -2447,12 +2451,14 @@ exports[`Form should render properly with initial state 1`] = `
                 id="graduation-input"
                 name="graduation"
                 placeholder="Please Select . . ."
+                required=""
                 type="text"
                 value="b-tech"
               />
               <label
                 class="c7 c61"
                 for="graduation-input"
+                required=""
               >
                 Graduation
               </label>
@@ -3101,6 +3107,10 @@ exports[`Form should render properly without initial state 1`] = `
   -webkit-transform: translate3d(0,55%,0);
   -ms-transform: translate3d(0,55%,0);
   transform: translate3d(0,55%,0);
+}
+
+.c61::after {
+  content: ' *';
 }
 
 .c57 {
@@ -4042,6 +4052,10 @@ exports[`Form should render properly without initial state 1`] = `
   fill: #13181D;
 }
 
+.c58 .c62 > .c31 * {
+  fill: #cc0000;
+}
+
 .c39 {
   position: relative;
   -webkit-transition: all 100ms ease-out;
@@ -4837,12 +4851,14 @@ exports[`Form should render properly without initial state 1`] = `
                 id="graduation-input"
                 name="graduation"
                 placeholder="Please Select . . ."
+                required=""
                 type="text"
                 value=""
               />
               <label
                 class="c10 c61"
                 for="graduation-input"
+                required=""
               >
                 Graduation
               </label>

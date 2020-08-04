@@ -44,9 +44,9 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,55%,0);
-  -ms-transform: translate3d(0,55%,0);
-  transform: translate3d(0,55%,0);
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
 }
 
 .c3 {
@@ -68,24 +68,24 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  border-radius: 0.4rem;
-  background-color: transparent;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
   cursor: not-allowed;
-  background-color: transparent;
+  background-color: #F7F8F9;
 }
 
 .c3 .c6 {
-  color: #607890;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb,
 .c3 .sc-AxhUy {
-  color: #607890;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb *,
 .c3 .sc-AxhUy * {
-  fill: #607890;
+  fill: #546A7F;
 }
 
 .c3 ~ .sc-AxirZ {
@@ -94,20 +94,15 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 .c3::after {
   content: '';
-  box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  height: 0;
   position: absolute;
-  top: 0;
-  right: 0;
   bottom: 0;
   left: 0;
-  pointer-events: none;
-  background-color: transparent;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 0.4rem;
-  border: 0.1rem solid #98A7B7;
 }
 
 .c3::after,
@@ -189,7 +184,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.7rem;
 }
 
 .c5:focus {
@@ -497,9 +492,9 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,55%,0);
-  -ms-transform: translate3d(0,55%,0);
-  transform: translate3d(0,55%,0);
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
 }
 
 .c3 {
@@ -521,22 +516,22 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  border-radius: 0.4rem;
-  background-color: transparent;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
 }
 
 .c3 .c6 {
-  color: #607890;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb,
 .c3 .sc-AxhUy {
-  color: #607890;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb *,
 .c3 .sc-AxhUy * {
-  fill: #607890;
+  fill: #546A7F;
 }
 
 .c3 ~ .sc-AxirZ {
@@ -545,39 +540,25 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 .c3::after {
   content: '';
-  box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  height: 0;
   position: absolute;
-  top: 0;
-  right: 0;
   bottom: 0;
   left: 0;
-  pointer-events: none;
-  background-color: transparent;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 0.4rem;
-  border: 0.1rem solid #98A7B7;
-}
-
-.c3:hover {
-  box-shadow: 0px 0.2rem 0.8rem rgba(96,120,144,0.2);
-}
-
-.c3:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c3:hover::after,
 .c3:focus-within::after {
-  border-width: 0.15rem;
-  border-color: #607890;
+  border-width: 0.2rem;
 }
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  background-color: transparent;
+  background-color: #E7F0FF;
 }
 
 .c3:focus-within::after,
@@ -606,22 +587,22 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 
 .c3:focus-within input::-webkit-input-placeholder,
 .c3:focus-within:hover input::-webkit-input-placeholder {
-  color: #C7D0D8;
+  color: rgba(0,90,238,.2);
 }
 
 .c3:focus-within input::-moz-placeholder,
 .c3:focus-within:hover input::-moz-placeholder {
-  color: #C7D0D8;
+  color: rgba(0,90,238,.2);
 }
 
 .c3:focus-within input:-ms-input-placeholder,
 .c3:focus-within:hover input:-ms-input-placeholder {
-  color: #C7D0D8;
+  color: rgba(0,90,238,.2);
 }
 
 .c3:focus-within input::placeholder,
 .c3:focus-within:hover input::placeholder {
-  color: #C7D0D8;
+  color: rgba(0,90,238,.2);
 }
 
 .c4 {
@@ -885,9 +866,9 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,55%,0);
-  -ms-transform: translate3d(0,55%,0);
-  transform: translate3d(0,55%,0);
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
 }
 
 .c3 {
@@ -909,24 +890,24 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  border-radius: 0.4rem;
-  background-color: transparent;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
   cursor: not-allowed;
-  background-color: transparent;
+  background-color: #F7F8F9;
 }
 
 .c3 .c6 {
-  color: #607890;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb,
 .c3 .sc-AxhUy {
-  color: #607890;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb *,
 .c3 .sc-AxhUy * {
-  fill: #607890;
+  fill: #546A7F;
 }
 
 .c3 ~ .sc-AxirZ {
@@ -935,20 +916,15 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 
 .c3::after {
   content: '';
-  box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  height: 0;
   position: absolute;
-  top: 0;
-  right: 0;
   bottom: 0;
   left: 0;
-  pointer-events: none;
-  background-color: transparent;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 0.4rem;
-  border: 0.1rem solid #98A7B7;
 }
 
 .c3::after,
@@ -1030,7 +1006,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.7rem;
 }
 
 .c5:focus {
@@ -1338,9 +1314,9 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,55%,0);
-  -ms-transform: translate3d(0,55%,0);
-  transform: translate3d(0,55%,0);
+  -webkit-transform: translate3d(0,58%,0);
+  -ms-transform: translate3d(0,58%,0);
+  transform: translate3d(0,58%,0);
 }
 
 .c3 {
@@ -1362,22 +1338,22 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  border-radius: 0.4rem;
-  background-color: transparent;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
 }
 
 .c3 .c6 {
-  color: #607890;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb,
 .c3 .sc-AxhUy {
-  color: #607890;
+  color: #546A7F;
 }
 
 .c3 .sc-AxhCb *,
 .c3 .sc-AxhUy * {
-  fill: #607890;
+  fill: #546A7F;
 }
 
 .c3 ~ .sc-AxirZ {
@@ -1386,39 +1362,25 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 
 .c3::after {
   content: '';
-  box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  height: 0;
   position: absolute;
-  top: 0;
-  right: 0;
   bottom: 0;
   left: 0;
-  pointer-events: none;
-  background-color: transparent;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  border-radius: 0.4rem;
-  border: 0.1rem solid #98A7B7;
-}
-
-.c3:hover {
-  box-shadow: 0px 0.2rem 0.8rem rgba(96,120,144,0.2);
-}
-
-.c3:focus-within {
-  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
 }
 
 .c3:hover::after,
 .c3:focus-within::after {
-  border-width: 0.15rem;
-  border-color: #607890;
+  border-width: 0.2rem;
 }
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  background-color: transparent;
+  background-color: #E7F0FF;
 }
 
 .c3:focus-within::after,
@@ -1447,22 +1409,22 @@ exports[`MultiSelect component with checkbox true should render correctly with d
 
 .c3:focus-within input::-webkit-input-placeholder,
 .c3:focus-within:hover input::-webkit-input-placeholder {
-  color: #C7D0D8;
+  color: rgba(0,90,238,.2);
 }
 
 .c3:focus-within input::-moz-placeholder,
 .c3:focus-within:hover input::-moz-placeholder {
-  color: #C7D0D8;
+  color: rgba(0,90,238,.2);
 }
 
 .c3:focus-within input:-ms-input-placeholder,
 .c3:focus-within:hover input:-ms-input-placeholder {
-  color: #C7D0D8;
+  color: rgba(0,90,238,.2);
 }
 
 .c3:focus-within input::placeholder,
 .c3:focus-within:hover input::placeholder {
-  color: #C7D0D8;
+  color: rgba(0,90,238,.2);
 }
 
 .c4 {

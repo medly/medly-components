@@ -1,4 +1,4 @@
-import { defaultTheme, SelectTheme } from '@medly-components/theme';
+import { defaultTheme, MultiSelectTheme } from '@medly-components/theme';
 import React from 'react';
 import { SelectProps } from './types';
 
@@ -18,7 +18,7 @@ export const options = [
     }
 ];
 
-export const ThemeInterface: React.FC<SelectTheme> = () => null;
+export const ThemeInterface: React.FC<MultiSelectTheme> = () => null;
 ThemeInterface.defaultProps = {
-    ...defaultTheme.select
+    ...defaultTheme.multiSelect
 };

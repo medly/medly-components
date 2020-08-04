@@ -66,6 +66,7 @@ export const testSchema: FormFieldSchema = {
         ]
     },
     graduation: {
+        required: true,
         type: 'multi-select',
         label: 'Graduation',
         options: [
