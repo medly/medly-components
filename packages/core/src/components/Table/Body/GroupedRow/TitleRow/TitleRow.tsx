@@ -4,6 +4,7 @@ import Text from '../../../../Text';
 import { getGridTemplateColumns } from '../../../helpers';
 import { TablePropsContext } from '../../../TableProps.context';
 import RowActionsCell from '../../Cell/RowActionsCell';
+import { LoadingDiv } from '../../Cell/Styled';
 import { CountChip, ExpansionCell, Row, SecondaryContent, TitleCell } from './TitleRow.styled';
 import { Props } from './types';
 
@@ -36,16 +37,17 @@ export const TitleRow: React.FC<Props> = React.memo(props => {
     return (
         <Row
             {...restProps}
-            onClick={onClick}
+            onClick={isLoading ? undefined : onClick}
             tableWidth={tableWidth}
+            isLoading={isLoading}
             isRowExpanded={isRowExpanded}
             isRowSelectable={isRowSelectable}
             isRowExpandable={isRowExpandable}
             showRowWithCardStyle={showRowWithCardStyle}
             gridTemplateColumns={getGridTemplateColumns(columns)}
         >
-            <ExpansionCell isRowExpanded={isRowExpanded}>
-                <ExpandMoreIcon size="L" />
+            <ExpansionCell isRowExpanded={isRowExpanded} showPadding={isLoading} tableSize={tableSize}>
+                {isLoading ? <LoadingDiv /> : <ExpandMoreIcon size="L" />}
             </ExpansionCell>
             {(isRowSelectable || isRowExpandable) && (
                 <RowActionsCell
@@ -60,13 +62,19 @@ export const TitleRow: React.FC<Props> = React.memo(props => {
                 />
             )}
             <TitleCell tableSize={tableSize} isRowSelectable={isRowSelectable} isRowExpandable={isRowExpandable}>
-                <Text textVariant="body2" textWeight="Medium">
-                    {data[groupBy]}
-                </Text>
-                <CountChip>{data.count}</CountChip>
-                <SecondaryContent textVariant="body2" textWeight="Medium">
-                    {data.secondaryContent}
-                </SecondaryContent>
+                {isLoading ? (
+                    <LoadingDiv />
+                ) : (
+                    <>
+                        <Text textVariant="body2" textWeight="Medium">
+                            {data[groupBy]}
+                        </Text>
+                        <CountChip>{data.count}</CountChip>
+                        <SecondaryContent textVariant="body2" textWeight="Medium">
+                            {data.secondaryContent}
+                        </SecondaryContent>
+                    </>
+                )}
             </TitleCell>
         </Row>
     );

@@ -14,7 +14,7 @@ export const Row = styled('tr')<StyledProps>`
     left: 0;
     align-items: center;
     min-width: fit-content;
-    cursor: pointer;
+    cursor: ${({ isLoading }) => (isLoading ? 'default' : 'pointer')};
     max-width: ${({ tableWidth }) => `${tableWidth}px` || '100vw'};
 
     &,
@@ -59,10 +59,16 @@ export const SecondaryContent = styled(Text)`
     color: ${({ theme }) => theme.table.titleRow.secondaryContent.textColor};
 `;
 
-export const ExpansionCell = styled('td')<{ isRowExpanded?: boolean; isRowSelected?: boolean }>`
+export const ExpansionCell = styled('td')<{
+    isRowExpanded?: boolean;
+    isRowSelected?: boolean;
+    showPadding?: boolean;
+    tableSize?: TableProps['size'];
+}>`
     height: 100%;
     position: sticky;
     left: 0;
+    padding: ${({ showPadding, tableSize }) => showPadding && tableCellPaddings[tableSize]};
     ${centerAligned()}
     border-right: 1px solid ${({ theme }) => theme.table.borderColor};
     & > ${SvgIcon} {
@@ -72,7 +78,8 @@ export const ExpansionCell = styled('td')<{ isRowExpanded?: boolean; isRowSelect
             fill: ${({ theme, isRowExpanded, isRowSelected }) =>
                 theme.table.titleRow.accordionIcon.color[isRowExpanded || isRowSelected ? 'expanded' : 'default']};
         }
-        transition: transform 200ms ease-out, background-color 100ms ease-out;
+        transition: ${({ isRowExpanded }) =>
+            `transform 200ms ${isRowExpanded ? 'ease-in' : 'ease-out'}, background-color 100ms ${isRowExpanded ? 'ease-in' : 'ease-out'}`} ;
         transform: ${props => props.isRowExpanded && `rotate(180deg) `};
 
         &:hover {
