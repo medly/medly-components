@@ -722,14 +722,8 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 25.6rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c0 .c1 {
-  max-width: 25.6rem;
 }
 
 .c0 .c1 {
@@ -1544,14 +1538,8 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 25.6rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c0 .c1 {
-  max-width: 25.6rem;
 }
 
 .c0 .c1 {

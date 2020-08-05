@@ -24,6 +24,8 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             } = props,
             selectId = useMemo(() => id || inputProps.label?.toLocaleLowerCase() || 'medly-multiSelect', [id, inputProps.label]);
 
+        const defaultErrorMsg = 'Please fill in this field';
+
         const wrapperRef = useRef<HTMLDivElement>(null),
             optionsRef = useRef<HTMLUListElement>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
@@ -31,7 +33,8 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(defaultOptions, values)),
             [inputValue, setInputValue] = useState(values.toString()),
-            [placeholder, setPlaceholder] = useState(values.length > 0 ? `${values.length} options selected` : props.placeholder);
+            [placeholder, setPlaceholder] = useState(values.length > 0 ? `${values.length} options selected` : props.placeholder),
+            [errorMsg, setError] = useState('');
 
         const updateToDefaultOptions = useCallback(() => setOptions(defaultOptions), [defaultOptions]),
             hideOptions = useCallback(() => {
@@ -40,6 +43,7 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             }, [areOptionsVisible]),
             showOptions = useCallback(() => {
                 setOptionsVisibilityState(true);
+                setInputValue('');
                 inputRef.current && inputRef.current.focus();
             }, [areOptionsVisible]),
             toggleOptions = useCallback(() => !disabled && (areOptionsVisible ? hideOptions() : showOptions()), [
@@ -102,7 +106,6 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
         useEffect(() => {
             if (areOptionsVisible) {
                 inputRef.current && inputRef.current.focus();
-                setInputValue('');
             } else {
                 setInputValue(selectedOptions.map(obj => obj.value).toString());
                 setOptions(defaultOptions);
@@ -137,7 +140,7 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                 ref={wrapperRef}
                 isSearchable={isSearchable}
                 onClick={toggleOptions}
-                isErrorPresent={!!props.errorText || (inputProps.required && selectedOptions.length === 0)}
+                isErrorPresent={!!errorMsg}
                 areOptionsVisible={areOptionsVisible}
                 {...{ variant, disabled, minWidth, fullWidth }}
             >
@@ -154,6 +157,16 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                     onChange={handleInputChange}
                     onBlur={handleOnBlur}
                     readOnly={!isSearchable && !inputProps.required}
+                    errorText={errorMsg}
+                    validator={(value, eventType) => {
+                        if (eventType === 'invalid' && value.length === 0) {
+                            setError(defaultErrorMsg);
+                            return defaultErrorMsg;
+                        } else {
+                            setError('');
+                            return '';
+                        }
+                    }}
                     {...inputProps}
                 />
                 {!disabled && areOptionsVisible && (

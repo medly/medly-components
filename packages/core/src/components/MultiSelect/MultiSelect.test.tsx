@@ -180,7 +180,7 @@ describe('MultiSelect component', () => {
             <MultiSelect id="pharmacy" values={[]} options={options} onChange={jest.fn()} required={true} />
         );
         fireEvent.invalid(container.querySelector('input'));
-        const message = await findByText('Constraints not satisfied');
+        const message = await findByText('Please fill in this field');
         expect(message).toBeInTheDocument();
     });
 
