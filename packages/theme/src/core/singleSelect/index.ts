@@ -1,15 +1,7 @@
 import colors from '../colors';
 import { SingleSelectTheme } from './types';
 
-const select: SingleSelectTheme = {
-    bgColor: colors.white,
-    disabledBgColor: colors.grey[200],
-    outlineColor: colors.professionalNavy,
-    borderColor: colors.grey[300],
-    descriptionColor: colors.professionalNavy,
-    placeHolderColor: colors.grey[500],
-    selectedBgColor: colors.blue[400],
-    selectedTextColor: colors.white,
+const singleSelect: SingleSelectTheme = {
     shadowColor: '#B0BCC8',
     option: {
         bgColor: {
@@ -27,4 +19,4 @@ const select: SingleSelectTheme = {
     }
 };
 
-export default select;
+export default singleSelect;

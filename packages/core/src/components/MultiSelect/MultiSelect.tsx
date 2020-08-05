@@ -88,11 +88,15 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                 setSelectedOptions([]);
                 setInputValue('');
             }, []),
-            handleOnBlur = useCallback(() => {
-                if (areOptionsVisible) {
-                    inputRef.current && inputRef.current.focus();
+            handleOnBlur = useCallback(() => areOptionsVisible && inputRef.current.focus(), [areOptionsVisible]),
+            validate = useCallback((value: string, eventType: string) => {
+                if (eventType === 'invalid' && value.length === 0) {
+                    setError(defaultErrorMsg);
+                    return defaultErrorMsg;
+                } else {
+                    setError('');
                 }
-            }, [areOptionsVisible]);
+            }, []);
 
         useEffect(() => {
             setSelectedOptions(getDefaultSelectedOptions(defaultOptions, values));
@@ -158,15 +162,7 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                     onBlur={handleOnBlur}
                     readOnly={!isSearchable && !inputProps.required}
                     errorText={errorMsg}
-                    validator={(value, eventType) => {
-                        if (eventType === 'invalid' && value.length === 0) {
-                            setError(defaultErrorMsg);
-                            return defaultErrorMsg;
-                        } else {
-                            setError('');
-                            return '';
-                        }
-                    }}
+                    validator={validate}
                     {...inputProps}
                 />
                 {!disabled && areOptionsVisible && (
