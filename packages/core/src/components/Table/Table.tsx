@@ -17,6 +17,8 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 data,
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
+                onSort,
                 onRowClick,
                 rowIdentifier,
                 rowSelectionDisableKey,

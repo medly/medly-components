@@ -28,9 +28,10 @@ export const TitleRow: React.FC<Props> = React.memo(props => {
     useEffect(() => {
         if (tableRef.current) {
             observer.current.observe(tableRef.current);
-            return () => observer.current && observer.current.unobserve(tableRef.current);
+            // @ts-ignore
+            return observer.disconnect;
         }
-    }, [tableRef, observer]);
+    }, []);
 
     return (
         <Row

@@ -7,10 +7,10 @@ export type StyledProps = GridTemplateProps &
         isRowExpanded?: boolean;
     };
 export type Props = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
-    isRowExpanded?: boolean;
+    isRowExpanded: boolean;
     data: { [key: string]: any };
-    selectedRowIds?: Array<any>;
-    onRowSelection?: (id: any) => void;
+    selectedRowIds: Array<any>;
+    onRowSelection: (id: any) => void;
     showShadowAfterFrozenElement?: boolean;
     addColumnMaxSize: (field: string, value: number) => void;
 };

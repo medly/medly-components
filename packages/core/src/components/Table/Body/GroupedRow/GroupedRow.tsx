@@ -14,6 +14,7 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
         {
             id,
             titleRowData,
+            addColumnMaxSize,
             selectedTitleRowIds,
             onTitleRowSelection,
             showShadowAfterFrozenElement,
@@ -42,7 +43,7 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
     useUpdateEffect(async () => {
         if (isRowExpanded && groupedRows === loadingBodyData) {
             setLoadingState(true);
-            const dt = await getGroupedData(titleRowData[groupBy], 0, 1000);
+            const dt = await getGroupedData(titleRowData[groupBy]);
             setLoadingState(false);
             setGroupedRows(dt);
         }
@@ -78,11 +79,12 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
             />
             <TablePropsContext.Provider value={{ ...tableProps, columns: columns.slice(1), isLoading }}>
                 <ContentRow
-                    isRowExpanded={isRowExpanded}
                     {...{
-                        ...props,
-                        id: `${id}-content-row`,
+                        isRowExpanded,
+                        addColumnMaxSize,
+                        showShadowAfterFrozenElement,
                         data: groupedRows,
+                        id: `${id}-content-row`,
                         selectedRowIds: selectedIds,
                         onRowSelection: toggleId
                     }}

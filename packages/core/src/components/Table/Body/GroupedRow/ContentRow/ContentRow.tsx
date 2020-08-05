@@ -11,7 +11,7 @@ export const ContentRow: React.FC<Props> = React.memo(props => {
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
 
     return (
-        <ContentRowStyled {...restProps} onClick={stopPropagation}>
+        <ContentRowStyled isRowExpanded={restProps.isRowExpanded} onClick={stopPropagation}>
             <BlankCell isRowExpanded={restProps.isRowExpanded} />
             <DataCell>
                 {data.map((row: { [k: string]: any }, index: number) => {
