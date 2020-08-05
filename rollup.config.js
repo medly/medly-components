@@ -38,7 +38,7 @@ export default ['es', 'cjs'].map(format => ({
             baseUrl: PACKAGE_ROOT_PATH,
             declaration: true,
             outDir: `dist/${format}`,
-            exclude: ['**/test-utils.tsx', '**/*.test.tsx', '**/*.test.ts', '**/*.stories.tsx', '**/*.stories.mdx'],
+            exclude: ['**/test-utils.tsx', '**/*.test.tsx', '**/*.test.ts', '**/*.stories.tsx', '**/*.stories.mdx', '**/docs/**'],
             include: ['src/**/*', 'module.d.ts']
         }),
         terser(),
