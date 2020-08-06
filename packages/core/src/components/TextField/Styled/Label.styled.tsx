@@ -4,6 +4,7 @@ export const Label = styled('label')<{ required: boolean; variant: 'outlined' | 
     top: 0;
     left: 0;
     cursor: text;
+    user-select: none;
     position: absolute;
     transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 1.6rem;

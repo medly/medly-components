@@ -1,128 +1,189 @@
-import { WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useEffect, useState } from 'react';
-import Chip from '../Chip';
-import FieldWithLabel from '../FieldWithLabel';
-import Input from '../Input';
-import { Popover, PopoverWrapper } from '../Popover';
+import { ChevronDownIcon } from '@medly-components/icons';
+import { useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
+import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import TextField from '../TextField';
+import { Chip } from './Chip/Chip';
 import { filterOptions, getDefaultSelectedOptions } from './helpers';
-import { SelectIconStyled, SelectWrapperStyled } from './MultiSelect.styled';
+import { SuffixWrap, Wrapper } from './MultiSelect.styled';
 import Options from './Options';
 import { SelectProps } from './types';
 
 export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { description, descriptionColor, label, labelPosition, required, fullWidth, disabled, minWidth } = props,
-            id = props.id || 'medly-multiSelect';
+        const {
+                id,
+                disabled,
+                values,
+                onChange,
+                options: defaultOptions,
+                variant,
+                fullWidth,
+                minWidth,
+                isSearchable,
+                ...inputProps
+            } = props,
+            selectId = useMemo(() => id || inputProps.label?.toLocaleLowerCase() || 'medly-multiSelect', [id, inputProps.label]);
 
-        const [inputValue, setInputValue] = useState(''),
-            [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(props.options, props.values)),
+        const defaultErrorMsg = 'Please fill in this field';
+
+        const wrapperRef = useRef<HTMLDivElement>(null),
+            optionsRef = useRef<HTMLUListElement>(null),
+            inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
+            [options, setOptions] = useState(defaultOptions),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
-            [options, setOptions] = useState(props.options),
-            [placeholder, setPlaceholder] = useState(
-                props.values.length > 0 ? `${props.values.length} options selected` : props.placeholder
-            );
+            [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(defaultOptions, values)),
+            [inputValue, setInputValue] = useState(values.toString()),
+            [placeholder, setPlaceholder] = useState(values.length > 0 ? `${values.length} options selected` : props.placeholder),
+            [errorMsg, setError] = useState('');
 
-        useEffect(() => {
-            setSelectedOptions(getDefaultSelectedOptions(props.options, props.values));
-            setOptions(props.options);
-        }, [props.options, props.values]);
-
-        useEffect(() => {
-            setPlaceholder(selectedOptions.length > 0 ? `${selectedOptions.length} options selected` : props.placeholder);
-        }, [selectedOptions]);
-
-        const showOptions = useCallback(() => setOptionsVisibilityState(true), []),
-            hideOptions = useCallback(() => setOptionsVisibilityState(false), []),
-            updateToDefaultOptions = useCallback(() => setOptions(props.options), [props.options]),
-            handleWrapperClick = useCallback(() => {
-                showOptions();
+        const updateToDefaultOptions = useCallback(() => setOptions(defaultOptions), [defaultOptions]),
+            hideOptions = useCallback(() => {
+                setOptionsVisibilityState(false);
+                inputRef.current && inputRef.current.blur();
+            }, [areOptionsVisible]),
+            showOptions = useCallback(() => {
+                setOptionsVisibilityState(true);
                 setInputValue('');
-                updateToDefaultOptions();
-            }, [updateToDefaultOptions]),
+                inputRef.current && inputRef.current.focus();
+            }, [areOptionsVisible]),
+            toggleOptions = useCallback(() => !disabled && (areOptionsVisible ? hideOptions() : showOptions()), [
+                disabled,
+                areOptionsVisible
+            ]),
             handleInputChange = useCallback(
                 ({ target: { value } }: React.ChangeEvent<HTMLInputElement>) => {
                     setInputValue(value);
                     const newOptions = filterOptions(options, value);
                     newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
+                    !areOptionsVisible && showOptions();
                 },
-                [options, updateToDefaultOptions]
+                [areOptionsVisible, options, updateToDefaultOptions]
             ),
             handleOptionClick = useCallback(
-                (values: any[]) => {
-                    setInputValue('');
-                    setSelectedOptions(getDefaultSelectedOptions(options, values));
-                    props.onChange && props.onChange(values);
+                (latestValues: any[]) => {
+                    setSelectedOptions(getDefaultSelectedOptions(options, latestValues));
+                    onChange && onChange(latestValues);
                 },
-                [options, props.onChange]
+                [options, onChange]
             ),
             handleOuterClick = useCallback(() => {
                 if (areOptionsVisible) {
-                    hideOptions();
-                    setInputValue('');
                     updateToDefaultOptions();
                 }
+                hideOptions();
             }, [areOptionsVisible]),
-            handleChipDelete = (value: any) => () => {
+            getState = useCallback(() => {
+                if (props.disabled) {
+                    return 'disabled';
+                }
+                if (props.errorText) {
+                    return 'error';
+                }
+                if (areOptionsVisible) {
+                    return 'active';
+                }
+                return 'default';
+            }, [areOptionsVisible, props.errorText, props.disabled]),
+            onClearHandler = useCallback(() => {
+                setSelectedOptions([]);
                 setInputValue('');
-                const newSelectedOptions = selectedOptions.filter(so => so.value !== value).map(op => op.value);
-                setSelectedOptions(getDefaultSelectedOptions(options, newSelectedOptions));
-                props.onChange && props.onChange(newSelectedOptions);
-            };
+            }, []),
+            handleOnBlur = useCallback(() => areOptionsVisible && inputRef.current.focus(), [areOptionsVisible]),
+            validate = useCallback((value: string, eventType: string) => {
+                if (eventType === 'invalid' && value.length === 0) {
+                    setError(defaultErrorMsg);
+                    return defaultErrorMsg;
+                } else {
+                    setError('');
+                }
+            }, []);
+
+        useEffect(() => {
+            setSelectedOptions(getDefaultSelectedOptions(defaultOptions, values));
+            setOptions(defaultOptions);
+        }, [defaultOptions, values]);
+
+        useEffect(() => {
+            setPlaceholder(selectedOptions.length > 0 ? `${selectedOptions.length} options selected` : props.placeholder);
+        }, [selectedOptions]);
+
+        useEffect(() => {
+            if (areOptionsVisible) {
+                inputRef.current && inputRef.current.focus();
+            } else {
+                setInputValue(selectedOptions.map(obj => obj.value).toString());
+                setOptions(defaultOptions);
+                setTimeout(() => hideOptions(), 0);
+            }
+        }, [selectedOptions, areOptionsVisible]);
+
+        useOuterClickNotifier(() => {
+            handleOuterClick();
+        }, wrapperRef);
+
+        const chipEl = () => {
+            return (
+                <SuffixWrap>
+                    {selectedOptions.length > 0 && (
+                        <Chip
+                            testId="cancel-chip"
+                            label={selectedOptions.length}
+                            state={getState()}
+                            variant={variant}
+                            onClear={onClearHandler}
+                        />
+                    )}
+                    <ChevronDownIcon />
+                </SuffixWrap>
+            );
+        };
 
         return (
-            <FieldWithLabel id={`${id}-field`} {...{ fullWidth, labelPosition, minWidth }}>
-                {label && (
-                    <FieldWithLabel.Label {...{ required, labelPosition }} htmlFor={id}>
-                        {label}
-                    </FieldWithLabel.Label>
+            <Wrapper
+                id={`${selectId}-wrapper`}
+                ref={wrapperRef}
+                isSearchable={isSearchable}
+                onClick={toggleOptions}
+                isErrorPresent={!!errorMsg}
+                areOptionsVisible={areOptionsVisible}
+                {...{ variant, disabled, minWidth, fullWidth }}
+            >
+                <TextField
+                    fullWidth
+                    id={`${selectId}`}
+                    autoComplete="off"
+                    variant={variant}
+                    disabled={disabled}
+                    value={inputValue}
+                    ref={inputRef}
+                    placeholder={placeholder}
+                    suffix={chipEl}
+                    onChange={handleInputChange}
+                    onBlur={handleOnBlur}
+                    readOnly={!isSearchable && !inputProps.required}
+                    errorText={errorMsg}
+                    validator={validate}
+                    {...inputProps}
+                />
+                {!disabled && areOptionsVisible && (
+                    <Options
+                        id={`${selectId}-options`}
+                        ref={optionsRef}
+                        values={selectedOptions}
+                        options={options}
+                        onOptionClick={handleOptionClick}
+                    />
                 )}
-                <PopoverWrapper onOuterClick={handleOuterClick} showPopover={areOptionsVisible}>
-                    <SelectWrapperStyled {...{ description, labelPosition, disabled }} id={`${id}-container`}>
-                        {props.showChips &&
-                            selectedOptions.map(op => (
-                                <Chip key={op.value} disabled={disabled} label={op.label} onDelete={handleChipDelete(op.value)} />
-                            ))}
-                        <Input
-                            fullWidth
-                            onClick={handleWrapperClick}
-                            autoComplete="off"
-                            id={`${id}-input`}
-                            disabled={disabled}
-                            required={required}
-                            placeholder={placeholder}
-                            value={inputValue}
-                            ref={ref}
-                            onChange={handleInputChange}
-                        />
-                        <SelectIconStyled onClick={handleWrapperClick} />
-                    </SelectWrapperStyled>
-                    <Popover fullWidth id={`${id}-popover`}>
-                        {!disabled && (
-                            <Options
-                                showCheckbox={props.showCheckbox}
-                                values={selectedOptions}
-                                options={options}
-                                onOptionClick={handleOptionClick}
-                            />
-                        )}
-                    </Popover>
-                </PopoverWrapper>
-                {description && <FieldWithLabel.Description textColor={descriptionColor}>{description}</FieldWithLabel.Description>}
-            </FieldWithLabel>
+            </Wrapper>
         );
     })
 );
 
 MultiSelect.displayName = 'MultiSelect';
-MultiSelect.Style = SelectWrapperStyled;
+MultiSelect.Style = Wrapper;
 MultiSelect.defaultProps = {
-    labelPosition: 'left',
     values: [],
-    showChips: true,
-    showCheckbox: true,
-    fullWidth: false,
-    required: false,
-    label: '',
-    description: '',
+    variant: 'filled',
+    isSearchable: true,
     placeholder: 'Please Select . . .'
 };

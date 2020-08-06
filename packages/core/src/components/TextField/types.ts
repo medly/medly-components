@@ -5,7 +5,7 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix'>, With
     /** Input Variants */
     variant?: 'outlined' | 'filled';
     /** Function will called with the input value on blur and invalid event */
-    validator?: (val: any) => string;
+    validator?: (val: any, eventType?: string) => string;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
     /** Leading icon */

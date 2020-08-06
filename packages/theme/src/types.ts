@@ -18,8 +18,9 @@ export interface CoreTheme {
     label?: CoreThemes.LabelTheme;
     link?: CoreThemes.LinkTheme;
     modal?: CoreThemes.ModalTheme;
+    multiSelect?: CoreThemes.MultiSelectTheme;
     radio?: CoreThemes.RadioTheme;
-    select?: CoreThemes.SelectTheme;
+    singleSelect?: CoreThemes.SingleSelectTheme;
     searchBox?: CoreThemes.SearchBoxTheme;
     spacing?: CoreThemes.SpacingTheme;
     stepper?: CoreThemes.StepperTheme;

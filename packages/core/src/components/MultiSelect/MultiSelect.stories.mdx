@@ -1,23 +1,49 @@
 import { MultiSelect } from './MultiSelect';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './MultiSelect.stories';
+import { boolean, select, text } from '@storybook/addon-knobs';
+import { useState } from 'react';
+import { variants, options, ThemeInterface } from './MultiSelect.stories';
 
 <Meta title="Core" component={MultiSelect} />
 
 # MultiSelect
 
-### Basic MultiSelect component
+Basic MultiSelect component
 
 <Preview withToolbar>
-    <Story name="MultiSelect">{stories.Basic()}</Story>
+    <Story name="MultiSelect">
+        {() => {
+            const [values, setValues] = useState(['medly pharmacy', 'a pharmacy']);
+            return (
+                <MultiSelect
+                    options={options}
+                    values={values}
+                    onChange={setValues}
+                    disabled={boolean('Disabled', false)}
+                    fullWidth={boolean('Full Width', false)}
+                    required={boolean('Required', false)}
+                    label={text('Label', 'Pharmacy')}
+                    placeholder="Search Pharmacy"
+                    isSearchable={boolean('Is Searchable', true)}
+                    helperText={text('Helper Text', 'We will show reports based on Pharmacy')}
+                    errorText={text('Error Text', '')}
+                    variant={select('Variant', variants, 'filled')}
+                />
+            );
+        }}
+    </Story>
 </Preview>
+
+### Validations
+
+> **Note**: Right now validation message will not appear on `blur` event, although it works on `submit` event. We are working on enabling it for both events.
 
 ### Props
 
 <Props of={MultiSelect} />
 
-### SelectTheme
+### MultiSelectTheme
 
 This theme is shared between single select and multi select.
 
-<Props of={stories.ThemeInterface} />
+<Props of={ThemeInterface} />

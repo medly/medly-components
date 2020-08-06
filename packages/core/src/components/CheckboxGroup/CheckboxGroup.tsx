@@ -24,6 +24,7 @@ export const CheckboxGroup: FC<Props> & WithStyle = React.memo(
             required,
             validator,
             parentHasError,
+            fullWidthOptions,
             ...wrapperProps
         } = props;
 
@@ -124,7 +125,12 @@ export const CheckboxGroup: FC<Props> & WithStyle = React.memo(
                         {errorText || builtInErrorMessage || helperText}
                     </SelectorGroup.HelperText>
                 )}
-                <SelectorGroup.Options id={`${checkboxGroupId}-options`} columns={columns} isIndented={showSelectAll}>
+                <SelectorGroup.Options
+                    id={`${checkboxGroupId}-options`}
+                    columns={columns}
+                    isIndented={showSelectAll}
+                    fullWidthOptions={fullWidthOptions}
+                >
                     {options.map(option => {
                         return Array.isArray(option.value) ? (
                             <CheckboxGroup
@@ -166,6 +172,7 @@ CheckboxGroup.Style = SelectorGroup.Wrapper;
 CheckboxGroup.defaultProps = {
     values: [],
     columns: 1,
+    fullWidthOptions: false,
     labelVariant: 'body1',
     labelWeight: 'Medium'
 };

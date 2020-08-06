@@ -12,10 +12,11 @@ import input from './input';
 import label from './label';
 import link from './link';
 import modal from './modal';
+import multiSelect from './multiSelect';
 import radio from './radio';
 import reactDatepicker from './reactDatepicker';
 import searchBox from './searchBox';
-import select from './select';
+import singleSelect from './singleSelect';
 import spacing from './spacing';
 import stepper from './stepper';
 import table from './table';
@@ -39,10 +40,11 @@ export const coreDefaultTheme = {
     label,
     link,
     modal,
+    multiSelect,
     radio,
     reactDatepicker,
     searchBox,
-    select,
+    singleSelect,
     spacing,
     stepper,
     table,
