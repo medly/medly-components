@@ -1,130 +1,54 @@
+import data from './data.ts';
+
 export const groupedData = {
     name: [
         {
             name: 'Oli Bob',
             count: 1,
             children: [
-                {
-                    id: 1,
-                    name: 'Oli Bob',
-                    age: '12',
-                    color: 'red,green',
-                    rating: 5,
-                    isPassed: true,
-                    disabled: true,
-                    marks: {
-                        maths: 6,
-                        science: 4
-                    }
-                }
+                data[0]
             ]
         },
         {
             name: 'Mary May',
             count: 1,
             children: [
-                {
-                    id: 2,
-                    name: 'Mary May',
-                    age: '1',
-                    color: 'green',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 4,
-                        science: 7
-                    }
-                }
+                data[1]
             ]
         },
         {
             name: 'Christine Lobowski',
             count: 1,
             children: [
-                {
-                    id: 3,
-                    name: 'Christine Lobowski',
-                    age: '42',
-                    color: 'green',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 4,
-                        science: 7
-                    }
-                }
+                data[2]
             ]
         },
         {
             name: 'Brendon Philips',
             count: 1,
             children: [
-                {
-                    id: 4,
-                    name: 'Brendon Philips',
-                    age: '125',
-                    color: 'red',
-                    isPassed: true,
-                    rating: 4.5,
-                    marks: {
-                        maths: 10,
-                        science: 2
-                    }
-                }
+                data[3]
             ]
         },
         {
             name: 'Margret Marmajuke',
             count: 1,
             children: [
-                {
-                    id: 5,
-                    name: 'Margret Marmajuke',
-                    age: '16',
-                    color: 'yellow',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 7,
-                        science: 5
-                    }
-                }
+                data[4]
             ]
         },
         {
             name: 'Van Ng',
             count: 1,
             children: [
-                {
-                    id: 6,
-                    name: 'Van Ng',
-                    age: '37',
-                    color: 'green',
-                    isPassed: false,
-                    rating: 4,
-                    marks: {
-                        maths: 9,
-                        science: 2
-                    }
-                }
+                data[5]
             ]
         },
         {
             name: 'Duc Ng',
             count: 1,
             children: [
-                {
-                    id: 7,
-                    name: 'Duc Ng',
-                    age: '37',
-                    color: 'yellow',
-                    isPassed: false,
-                    rating: 4,
-                    marks: {
-                        maths: 10,
-                        science: 3
-                    }
-                }
+                data[6]
             ]
         }
     ],
@@ -133,121 +57,43 @@ export const groupedData = {
             age: '12',
             count: 1,
             children: [
-                {
-                    id: 1,
-                    name: 'Oli Bob',
-                    age: '12',
-                    color: 'red,green',
-                    rating: 5,
-                    isPassed: true,
-                    disabled: true,
-                    marks: {
-                        maths: 6,
-                        science: 4
-                    }
-                }
+                data[0]
             ]
         },
         {
             age: '1',
             count: 1,
             children: [
-                {
-                    id: 2,
-                    name: 'Mary May',
-                    age: '1',
-                    color: 'green',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 4,
-                        science: 7
-                    }
-                }
+                data[1]
             ]
         },
         {
             age: '42',
             count: 1,
             children: [
-                {
-                    id: 3,
-                    name: 'Christine Lobowski',
-                    age: '42',
-                    color: 'green',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 4,
-                        science: 7
-                    }
-                }
+                data[2]
             ]
         },
         {
             age: '125',
             count: 1,
             children: [
-                {
-                    id: 4,
-                    name: 'Brendon Philips',
-                    age: '125',
-                    color: 'red',
-                    isPassed: true,
-                    rating: 4.5,
-                    marks: {
-                        maths: 10,
-                        science: 2
-                    }
-                }
+                data[3]
             ]
         },
         {
             age: '16',
             count: 1,
             children: [
-                {
-                    id: 5,
-                    name: 'Margret Marmajuke',
-                    age: '16',
-                    color: 'yellow',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 7,
-                        science: 5
-                    }
-                }
+                data[4]
             ]
         },
         {
             age: '37',
             count: 2,
             children: [
-                {
-                    id: 6,
-                    name: 'Van Ng',
-                    age: '37',
-                    color: 'green',
-                    isPassed: false,
-                    rating: 4,
-                    marks: {
-                        maths: 9,
-                        science: 2
-                    }
-                },
-                {
-                    id: 7,
-                    name: 'Duc Ng',
-                    age: '37',
-                    color: 'yellow',
-                    isPassed: false,
-                    rating: 4,
-                    marks: {
-                        maths: 10,
-                        science: 3
-                    }
-                }
+                data[5],
+                data[6]
             ]
         }
     ],
@@ -256,109 +102,31 @@ export const groupedData = {
             color: 'red,green',
             count: 1,
             children: [
-                {
-                    id: 1,
-                    name: 'Oli Bob',
-                    age: '12',
-                    color: 'red,green',
-                    rating: 5,
-                    isPassed: true,
-                    disabled: true,
-                    marks: {
-                        maths: 6,
-                        science: 4
-                    }
-                }
+                data[0]
             ]
         },
         {
             color: 'green',
             count: 3,
             children: [
-                {
-                    id: 2,
-                    name: 'Mary May',
-                    age: '1',
-                    color: 'green',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 4,
-                        science: 7
-                    }
-                },
-                {
-                    id: 3,
-                    name: 'Christine Lobowski',
-                    age: '42',
-                    color: 'green',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 4,
-                        science: 7
-                    }
-                },
-                {
-                    id: 6,
-                    name: 'Van Ng',
-                    age: '37',
-                    color: 'green',
-                    isPassed: false,
-                    rating: 4,
-                    marks: {
-                        maths: 9,
-                        science: 2
-                    }
-                }
+                data[1],
+                data[2],
+                data[5]
             ]
         },
         {
             color: 'red',
             count: 1,
             children: [
-                {
-                    id: 4,
-                    name: 'Brendon Philips',
-                    age: '125',
-                    color: 'red',
-                    isPassed: true,
-                    rating: 4.5,
-                    marks: {
-                        maths: 10,
-                        science: 2
-                    }
-                }
+                data[3]
             ]
         },
         {
             color: 'yellow',
             count: 2,
             children: [
-                {
-                    id: 5,
-                    name: 'Margret Marmajuke',
-                    age: '16',
-                    color: 'yellow',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 7,
-                        science: 5
-                    }
-                },
-                {
-                    id: 7,
-                    name: 'Duc Ng',
-                    age: '37',
-                    color: 'yellow',
-                    isPassed: false,
-                    rating: 4,
-                    marks: {
-                        maths: 10,
-                        science: 3
-                    }
-                }
+                data[4],
+                data[6]
             ]
         }
     ],
@@ -367,103 +135,25 @@ export const groupedData = {
             rating: 5,
             count: 1,
             children: [
-                {
-                    id: 1,
-                    name: 'Oli Bob',
-                    age: '12',
-                    color: 'red,green',
-                    rating: 5,
-                    isPassed: true,
-                    disabled: true,
-                    marks: {
-                        maths: 6,
-                        science: 4
-                    }
-                }
+                data[0]
             ]
         },
         {
             rating: 4,
             count: 5,
             children: [
-                {
-                    id: 2,
-                    name: 'Mary May',
-                    age: '1',
-                    color: 'green',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 4,
-                        science: 7
-                    }
-                },
-                {
-                    id: 3,
-                    name: 'Christine Lobowski',
-                    age: '42',
-                    color: 'green',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 4,
-                        science: 7
-                    }
-                },
-                {
-                    id: 5,
-                    name: 'Margret Marmajuke',
-                    age: '16',
-                    color: 'yellow',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 7,
-                        science: 5
-                    }
-                },
-                {
-                    id: 6,
-                    name: 'Van Ng',
-                    age: '37',
-                    color: 'green',
-                    isPassed: false,
-                    rating: 4,
-                    marks: {
-                        maths: 9,
-                        science: 2
-                    }
-                },
-                {
-                    id: 7,
-                    name: 'Duc Ng',
-                    age: '37',
-                    color: 'yellow',
-                    isPassed: false,
-                    rating: 4,
-                    marks: {
-                        maths: 10,
-                        science: 3
-                    }
-                }
+                data[1],
+                data[2],
+                data[4],
+                data[5],
+                data[6]
             ]
         },
         {
             rating: 4.5,
             count: 1,
             children: [
-                {
-                    id: 4,
-                    name: 'Brendon Philips',
-                    age: '125',
-                    color: 'red',
-                    isPassed: true,
-                    rating: 4.5,
-                    marks: {
-                        maths: 10,
-                        science: 2
-                    }
-                }
+                data[3]
             ]
         }
     ],
@@ -472,97 +162,19 @@ export const groupedData = {
             isPassed: true,
             count: 5,
             children: [
-                {
-                    id: 1,
-                    name: 'Oli Bob',
-                    age: '12',
-                    color: 'red,green',
-                    rating: 5,
-                    isPassed: true,
-                    disabled: true,
-                    marks: {
-                        maths: 6,
-                        science: 4
-                    }
-                },
-                {
-                    id: 2,
-                    name: 'Mary May',
-                    age: '1',
-                    color: 'green',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 4,
-                        science: 7
-                    }
-                },
-                {
-                    id: 3,
-                    name: 'Christine Lobowski',
-                    age: '42',
-                    color: 'green',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 4,
-                        science: 7
-                    }
-                },
-                {
-                    id: 4,
-                    name: 'Brendon Philips',
-                    age: '125',
-                    color: 'red',
-                    isPassed: true,
-                    rating: 4.5,
-                    marks: {
-                        maths: 10,
-                        science: 2
-                    }
-                },
-                {
-                    id: 5,
-                    name: 'Margret Marmajuke',
-                    age: '16',
-                    color: 'yellow',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 7,
-                        science: 5
-                    }
-                }
+                data[0],
+                data[1],
+                data[2],
+                data[3],
+                data[4]
             ]
         },
         {
             isPassed: false,
             count: 2,
             children: [
-                {
-                    id: 6,
-                    name: 'Van Ng',
-                    age: '37',
-                    color: 'green',
-                    isPassed: false,
-                    rating: 4,
-                    marks: {
-                        maths: 9,
-                        science: 2
-                    }
-                },
-                {
-                    id: 7,
-                    name: 'Duc Ng',
-                    age: '37',
-                    color: 'yellow',
-                    isPassed: false,
-                    rating: 4,
-                    marks: {
-                        maths: 10,
-                        science: 3
-                    }
-                }
+                data[5],
+                data[6]
             ]
         }
     ],
@@ -571,19 +183,7 @@ export const groupedData = {
             disabled: true,
             count: 1,
             children: [
-                {
-                    id: 1,
-                    name: 'Oli Bob',
-                    age: '12',
-                    color: 'red,green',
-                    rating: 5,
-                    isPassed: true,
-                    disabled: true,
-                    marks: {
-                        maths: 6,
-                        science: 4
-                    }
-                }
+                data[0]
             ]
         }
     ],
@@ -596,115 +196,37 @@ export const groupedData = {
             'marks.maths': 6,
             count: 1,
             children: [
-                {
-                    id: 1,
-                    name: 'Oli Bob',
-                    age: '12',
-                    color: 'red,green',
-                    rating: 5,
-                    isPassed: true,
-                    disabled: true,
-                    marks: {
-                        maths: 6,
-                        science: 4
-                    }
-                }
+                data[0]
             ]
         },
         {
             'marks.maths': 4,
             count: 2,
             children: [
-                {
-                    id: 2,
-                    name: 'Mary May',
-                    age: '1',
-                    color: 'green',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 4,
-                        science: 7
-                    }
-                },
-                {
-                    id: 3,
-                    name: 'Christine Lobowski',
-                    age: '42',
-                    color: 'green',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 4,
-                        science: 7
-                    }
-                }
+                data[1],
+                data[2]
             ]
         },
         {
             'marks.maths': 10,
             count: 2,
             children: [
-                {
-                    id: 4,
-                    name: 'Brendon Philips',
-                    age: '125',
-                    color: 'red',
-                    isPassed: true,
-                    rating: 4.5,
-                    marks: {
-                        maths: 10,
-                        science: 2
-                    }
-                },
-                {
-                    id: 7,
-                    name: 'Duc Ng',
-                    age: '37',
-                    color: 'yellow',
-                    isPassed: false,
-                    rating: 4,
-                    marks: {
-                        maths: 10,
-                        science: 3
-                    }
-                }
+                data[3],
+                data[6]
             ]
         },
         {
             'marks.maths': 7,
             count: 1,
             children: [
-                {
-                    id: 5,
-                    name: 'Margret Marmajuke',
-                    age: '16',
-                    color: 'yellow',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 7,
-                        science: 5
-                    }
-                }
+                data[4]
             ]
         },
         {
             'marks.maths': 9,
             count: 1,
             children: [
-                {
-                    id: 6,
-                    name: 'Van Ng',
-                    age: '37',
-                    color: 'green',
-                    isPassed: false,
-                    rating: 4,
-                    marks: {
-                        maths: 9,
-                        science: 2
-                    }
-                }
+                data[5]
             ]
         }
     ],
@@ -713,115 +235,37 @@ export const groupedData = {
             'marks.science': 4,
             count: 1,
             children: [
-                {
-                    id: 1,
-                    name: 'Oli Bob',
-                    age: '12',
-                    color: 'red,green',
-                    rating: 5,
-                    isPassed: true,
-                    disabled: true,
-                    marks: {
-                        maths: 6,
-                        science: 4
-                    }
-                }
+                data[0]
             ]
         },
         {
             'marks.science': 7,
             count: 2,
             children: [
-                {
-                    id: 2,
-                    name: 'Mary May',
-                    age: '1',
-                    color: 'green',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 4,
-                        science: 7
-                    }
-                },
-                {
-                    id: 3,
-                    name: 'Christine Lobowski',
-                    age: '42',
-                    color: 'green',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 4,
-                        science: 7
-                    }
-                }
+                data[1],
+                data[2]
             ]
         },
         {
             'marks.science': 2,
             count: 2,
             children: [
-                {
-                    id: 4,
-                    name: 'Brendon Philips',
-                    age: '125',
-                    color: 'red',
-                    isPassed: true,
-                    rating: 4.5,
-                    marks: {
-                        maths: 10,
-                        science: 2
-                    }
-                },
-                {
-                    id: 6,
-                    name: 'Van Ng',
-                    age: '37',
-                    color: 'green',
-                    isPassed: false,
-                    rating: 4,
-                    marks: {
-                        maths: 9,
-                        science: 2
-                    }
-                }
+                data[3],
+                data[5]
             ]
         },
         {
             'marks.science': 5,
             count: 1,
             children: [
-                {
-                    id: 5,
-                    name: 'Margret Marmajuke',
-                    age: '16',
-                    color: 'yellow',
-                    isPassed: true,
-                    rating: 4,
-                    marks: {
-                        maths: 7,
-                        science: 5
-                    }
-                }
+                data[4]
             ]
         },
         {
             'marks.science': 3,
             count: 1,
             children: [
-                {
-                    id: 7,
-                    name: 'Duc Ng',
-                    age: '37',
-                    color: 'yellow',
-                    isPassed: false,
-                    rating: 4,
-                    marks: {
-                        maths: 10,
-                        science: 3
-                    }
-                }
+                data[6]
             ]
         }
     ]

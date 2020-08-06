@@ -45,7 +45,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                 rowSelectionDisableKey,
                 rowIdentifier: restProps.groupBy || rowIdentifier
             }),
-            { isAnyRowSelected, areAllRowsSelected, selectedIds, toggleId, uniqueIds, setUniqueIds } = rowSelector,
+            { isAnyRowSelected, areAllRowsSelected, selectedIds, toggleId, setUniqueIds } = rowSelector,
             groupedRowSelector = useGroupedRowSelector();
 
         useEffect(() => {
