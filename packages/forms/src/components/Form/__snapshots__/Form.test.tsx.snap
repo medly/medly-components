@@ -400,7 +400,6 @@ exports[`Form should render properly with initial state 1`] = `
 .c22 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
-  width: 100%;
 }
 
 .c28 {
@@ -2695,7 +2694,6 @@ exports[`Form should render properly without initial state 1`] = `
 .c24 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
-  width: 100%;
 }
 
 .c30 {
