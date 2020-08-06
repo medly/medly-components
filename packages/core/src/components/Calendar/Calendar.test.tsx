@@ -89,7 +89,7 @@ describe('Calendar Component', () => {
 
     it('should disable dates which are are out of range ', () => {
         const date = new Date(2020, 11, 15),
-            { getByTitle, getByText } = render(
+            { getByTitle, getByText, getByRole } = render(
                 <Calendar
                     id="test-calendar"
                     date={date}
@@ -101,8 +101,8 @@ describe('Calendar Component', () => {
 
         expect(getByTitle('Wed Dec 09 2020')).toBeDisabled();
         expect(getByTitle('Mon Dec 21 2020')).toBeDisabled();
-        expect(getByText('<')).toBeDisabled();
-        expect(getByText('>')).toBeDisabled();
+        expect(getByRole('button', { name: '<' })).toBeDisabled();
+        expect(getByRole('button', { name: '>' })).toBeDisabled();
         expect(getByTitle('Tue Dec 15 2020')).not.toBeDisabled();
     });
 
