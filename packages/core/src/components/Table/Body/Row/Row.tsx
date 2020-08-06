@@ -20,6 +20,7 @@ export const Row: React.FC<Props> = React.memo(props => {
             rowSelectionDisableKey,
             isRowSelectable,
             isRowExpandable,
+            isGroupedTable,
             showRowWithCardStyle,
             size: tableSize,
             expandedRowComponent
@@ -32,8 +33,13 @@ export const Row: React.FC<Props> = React.memo(props => {
         handleExpansionIconClick = useCallback(() => setExpansionState(val => !val), []),
         handleRowClick = useMemo(
             () =>
-                !isLoading &&
-                (onRowClick && !isRowClickDisabled ? () => onRowClick(data) : isRowExpandable ? handleExpansionIconClick : undefined),
+                !isLoading
+                    ? onRowClick && !isRowClickDisabled
+                        ? () => onRowClick(data)
+                        : isRowExpandable
+                        ? handleExpansionIconClick
+                        : undefined
+                    : undefined,
             [isLoading, onRowClick, isRowClickDisabled, isRowExpandable, handleExpansionIconClick]
         );
 
@@ -91,6 +97,7 @@ export const Row: React.FC<Props> = React.memo(props => {
                         tableSize={tableSize}
                         isLoading={isLoading}
                         isRowExpanded={isExpanded}
+                        isGroupedTable={isGroupedTable}
                         isRowExpandable={isRowExpandable}
                         isRowSelected={isRowSelected}
                         isRowSelectable={isRowSelectable}
@@ -108,6 +115,7 @@ export const Row: React.FC<Props> = React.memo(props => {
                         tableSize={tableSize}
                         isRowExpanded={isExpanded}
                         isRowSelected={isRowSelected}
+                        isGroupedTable={isGroupedTable}
                         expandedRowComponent={expandedRowComponent}
                         isRowClickDisabled={isRowClickDisabled}
                         showShadowAtRight={showShadowAfterFrozenElement}

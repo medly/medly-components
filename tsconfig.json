@@ -16,6 +16,6 @@
             "@test-utils": ["packages/utils/src/test-utils"]
         }
     },
-    "include": ["packages", "docs", "types"],
+    "include": ["./packages", "./docs", "./types"],
     "exclude": ["node_modules", "packages/**/dist", ".storybook"]
 }

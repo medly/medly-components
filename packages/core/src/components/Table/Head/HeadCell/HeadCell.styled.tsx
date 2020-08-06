@@ -8,9 +8,9 @@ import { getBorder } from '../../Table.styled';
 import { TableProps } from '../../types';
 import { HeadCellStyledProps } from './types';
 
-const frozenStyle = css`
+const frozenStyle = css<HeadCellStyledProps>`
         z-index: 3;
-        left: 0;
+        left: ${({ isGroupedTable, isRowActionCell }) => (isGroupedTable && isRowActionCell ? '4.8rem' : 0)};
         * {
             z-index: 3;
         }
@@ -45,7 +45,7 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
 
     &:not(:last-child) {
         &::after {
-            ${({ children }) => children && getBorder('right')}
+            ${({ isRowActionCell, children }) => (isRowActionCell ? children && getBorder('right') : getBorder('right'))}
         }
     }
 

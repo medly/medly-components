@@ -11,14 +11,52 @@ export interface TableTheme {
         };
         selectedBorderColor: string;
     };
+    titleRow: {
+        bgColor: {
+            default: string;
+            expanded: string;
+            selected: string;
+        };
+        countChip: {
+            textColor: string;
+            bgColor: {
+                default: string;
+                selected: string;
+            };
+        };
+        secondaryContent: {
+            textColor: string;
+        };
+        accordionIcon: {
+            color: {
+                default: string;
+                expanded: string;
+                selected: string;
+            };
+            bgColor: {
+                hover: {
+                    default: string;
+                    expanded: string;
+                    selected: string;
+                };
+                pressed: {
+                    default: string;
+                    expanded: string;
+                    selected: string;
+                };
+            };
+        };
+    };
     accordionIcon: {
         color: string;
         bgColor: {
-            hover: string;
-            pressed: string;
-            selected: {
-                hover: string;
-                pressed: string;
+            hover: {
+                default: string;
+                selected: string;
+            };
+            pressed: {
+                default: string;
+                selected: string;
             };
         };
     };

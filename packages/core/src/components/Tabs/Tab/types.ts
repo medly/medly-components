@@ -27,9 +27,9 @@ export interface Props extends HTMLProps<HTMLButtonElement> {
     /** Icon to be shown */
     icon?: React.FC<SvgIconProps>;
     /** Disabled State */
-    disable?: boolean;
+    disabled?: boolean;
     /** This will be handled internally */
     active?: boolean;
     /** Provide the fraction of the of the total width of the parent */
-    fraction?: boolean;
+    fraction?: number;
 }

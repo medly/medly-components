@@ -9,7 +9,6 @@
     "cSpell.words": ["Medly"],
     "files.exclude": {
         ".yarnrc": true,
-        ".yarn/": true,
         ".jest-test-results.json": true,
         "commitlint.config.js": true,
         "coverage": true,

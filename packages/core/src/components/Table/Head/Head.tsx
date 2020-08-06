@@ -19,12 +19,13 @@ const Head: React.FC<Props> = React.memo(props => {
             defaultSortOrder,
             defaultSortField,
             size: tableSize,
+            isGroupedTable,
             showRowWithCardStyle
         } = useContext(TablePropsContext),
         {
             setColumns,
             isAnyRowSelected,
-            isEachRowSelected,
+            areAllRowsSelected,
             isSelectAllDisable,
             onSelectAllClick,
             maxColumnSizes,
@@ -50,13 +51,13 @@ const Head: React.FC<Props> = React.memo(props => {
                 <Checkbox
                     indeterminate={isAnyRowSelected}
                     disabled={isLoading || isSelectAllDisable}
-                    checked={isEachRowSelected}
+                    checked={areAllRowsSelected}
                     onChange={handleSelectAllClick}
                     onClick={stopPropagation}
                     name="active"
                 />
             ),
-            [isLoading, isAnyRowSelected, isEachRowSelected, isSelectAllDisable, handleSelectAllClick]
+            [isLoading, isAnyRowSelected, areAllRowsSelected, isSelectAllDisable, handleSelectAllClick]
         ),
         headCell = useCallback(
             (configs: TableColumnConfig[], field = '') =>
@@ -91,6 +92,7 @@ const Head: React.FC<Props> = React.memo(props => {
                             onWidthChange={handleWidthChange}
                             isRowExpandable={isRowExpandable}
                             tableSize={tableSize}
+                            isGroupedTable={isGroupedTable}
                             isRowActionCell={config.field === 'row-actions'}
                             showShadowAtRight={config.field === 'row-actions' && showShadowAfterFrozenElement}
                         >

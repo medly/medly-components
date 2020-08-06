@@ -427,6 +427,7 @@ exports[`Tabs should render properly 1`] = `
         aria-controls="panel-tab4"
         aria-selected="false"
         class="c8"
+        disabled=""
         id="tab4"
         role="tab"
         tabindex="-1"

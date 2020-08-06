@@ -7,9 +7,10 @@ import { ThemeInterface, ColumnConfigInterface, ExpandedRowComponent, DarkBackgr
 import { filterData } from './filterData';
 import columns from './columns';
 import data from './data';
+import { groupedData, getGroupedData } from './groupedData';
 
 <Meta
-    title="Core"
+    title="Core/Table"
     component={Table}
     parameters={{
         design: {
@@ -24,9 +25,9 @@ import data from './data';
 Simple `Table` component to show set of data.
 
 <Preview withToolbar>
-    <Story name="Table">
+    <Story name="Simple Table">
         {() => {
-            const [selectedRowIds, setSelectedRowIds] = useState([2, 3]),
+            const [selectedRowIds, setSelectedRowIds] = useState(),
                 [tableData, setTableData] = useState(data),
                 handleFilterData = useCallback((dottedField, order) => setTableData(filterData(dottedField, order, tableData)), [
                     tableData
@@ -38,7 +39,6 @@ Simple `Table` component to show set of data.
                         data={tableData}
                         columns={columns}
                         onSort={handleFilterData}
-                        selectedRowIds={selectedRowIds}
                         onRowSelection={setSelectedRowIds}
                         onRowClick={action('Row Clicked')}
                         isLoading={boolean('Loading', false)}
@@ -55,7 +55,7 @@ Simple `Table` component to show set of data.
     </Story>
 </Preview>
 
-### Row Accordion
+## Row Accordion
 
 To show row acordion you have to pass two props `isRowExpandable` as `true` and pass react component as `expandedRowComponent` to show details in the expanded area. Type of `expandedRowComponent?: React.FC<{ rowData: any; rowId?: any; disabled?: boolean }>`; We are passing row data, id & disabled state to the component.
 
@@ -66,9 +66,61 @@ import { TableProps } from '@medly-components/core';
 export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ rowData }) => <Text> Hello {`${rowData.name}`}</Text>;
 ```
 
-### Row as Card style
+## Row as Card style
 
 Rows can be shown with card style when you set `showRowWithCardStyle` as true, and the size of the table will automatically be set as 'L'.
+
+## Row Grouping
+
+To show the row grouping you have to set `groupBy` prop with key name you want to group your data. And your `data` should be in the format
+
+```tsx
+type Data = [{ [your_groupBy_keyname]: string | number; count: number; secondaryContent?: string | number }];
+```
+
+For Example if your data is `[{name: "A", role: "doctor"}, {name: "B", role: "engineer"}]` and if you want to group by role then you have to set `groupBy` prop to `role` and your `data` should be `[{role: 'doctor', count: 1}, {role: 'engineer', 1}]`
+
+And once the user expands any row `getGroupedData` function will be called with the group title. For example in above scenario if users expands row with `doctor` title then `getGroupedData("doctor")` will be called and you have to return a promise with grouped data according to column config.
+
+<Preview withToolbar>
+    <Story name="Table with Grouping">
+        {() => {
+            const [selectedRowIds, setSelectedRowIds] = useState(),
+                [tableData, setTableData] = useState(data),
+                handleFilterData = useCallback((dottedField, order) => setTableData(filterData(dottedField, order, tableData)), [
+                    tableData
+                ]);
+            return (
+                <>
+                    <DarkBackground showRowWithCardStyle={boolean('Show Row With Card Style', false)} />
+                    <Table
+                        data={
+                            groupedData[select('Group By', ['name', 'marks.maths', 'marks.science', 'age', 'isPassed', 'rating'], 'name')]
+                        }
+                        columns={columns}
+                        getGroupedData={getGroupedData(
+                            select('Group By', ['name', 'marks.maths', 'marks.science', 'age', 'isPassed', 'rating'], 'name')
+                        )}
+                        onRowSelection={setSelectedRowIds}
+                        onRowClick={action('Row Clicked')}
+                        isLoading={boolean('Loading', false)}
+                        isRowSelectable={boolean('Is row selectable', true)}
+                        isRowExpandable={boolean('Is row expandable', true)}
+                        rowSelectionDisableKey="disabled"
+                        size={select('Size', ['S', 'M', 'L'], 'M')}
+                        groupBy={select('Group By', ['name', 'marks.maths', 'marks.science', 'age', 'isPassed', 'rating'], 'name')}
+                        showRowWithCardStyle={boolean('Show Row With Card Style', false)}
+                        expandedRowComponent={ExpandedRowComponent}
+                    />
+                </>
+            );
+        }}
+    </Story>
+</Preview>
+
+## Row Selection
+
+Just pass the `onRowSelection` callback function as prop and table component will call this function with updted row id. For the unique ids you have to provide `rowIdentifier` prop.
 
 ### Props
 

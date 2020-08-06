@@ -5,6 +5,7 @@ export type SortOrder = 'asc' | 'desc';
 export type HeadCellStyledProps = {
     hidden?: boolean;
     frozen?: boolean;
+    isGroupedTable: boolean;
     align?: 'left' | 'right' | 'center';
     showShadowAtRight?: boolean;
     isRowActionCell?: boolean;
@@ -19,6 +20,7 @@ export type HeadCellProps = HeadCellStyledProps & {
     fitContent?: boolean;
     sortField?: string;
     isLoading?: boolean;
+    isGroupedTable: boolean;
     defaultSortOrder?: SortOrder;
     tableSize?: TableProps['size'];
     onWidthChange?: (width: number, key: string) => void;

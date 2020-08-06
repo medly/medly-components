@@ -2,7 +2,7 @@ import { TableColumnConfig } from '../types';
 
 export interface Props {
     setColumns: React.Dispatch<React.SetStateAction<TableColumnConfig[]>>;
-    isEachRowSelected?: boolean;
+    areAllRowsSelected?: boolean;
     isAnyRowSelected?: boolean;
     isSelectAllDisable?: boolean;
     onSelectAllClick?: (id: number) => void;

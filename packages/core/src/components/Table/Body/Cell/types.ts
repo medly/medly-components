@@ -14,10 +14,10 @@ export type TableCellProps = TableCellStyledProps &
         data: any;
         rowId: any;
         config: TableColumnConfig;
-        dottedFieldName: string;
+        dottedFieldName?: string;
         isLoading?: boolean;
         isRowClickDisabled?: boolean;
         tableSize?: TableProps['size'];
-        addColumnMaxSize: (field: string, value: number) => void;
+        addColumnMaxSize?: (field: string, value: number) => void;
         as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
     };

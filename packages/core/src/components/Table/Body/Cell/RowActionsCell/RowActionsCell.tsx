@@ -1,5 +1,5 @@
 import { ExpandMoreIcon } from '@medly-components/icons';
-import { WithStyle } from '@medly-components/utils/src';
+import { WithStyle } from '@medly-components/utils';
 import React, { useCallback } from 'react';
 import Checkbox from '../../../../Checkbox';
 import { LoadingDiv } from '../Styled';
@@ -14,8 +14,11 @@ export const RowActionsCell: React.FC<RowActionProps> & WithStyle = React.memo(p
             onClick={stopPropagation}
             isLoading={props.isLoading}
             isRowExpanded={props.isRowExpanded}
+            isRowExpandable={props.isRowExpandable}
+            isRowSelectable={props.isRowSelectable}
             isRowSelected={props.isRowSelected}
             tableSize={props.tableSize}
+            isGroupedTable={props.isGroupedTable}
             showShadowAtRight={props.showShadowAtRight}
         >
             {props.isLoading ? (
@@ -25,6 +28,7 @@ export const RowActionsCell: React.FC<RowActionProps> & WithStyle = React.memo(p
                     {props.isRowExpandable && <ExpandMoreIcon size="L" onClick={props.onRowExpansionIconClick} />}
                     {props.isRowSelectable && (
                         <Checkbox
+                            indeterminate={props.isRowIndeterminate}
                             disabled={props.isRowSelectionDisabled}
                             checked={props.isRowSelected}
                             onChange={props.onRowSelection}

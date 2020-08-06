@@ -44,12 +44,12 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     };
 
     const handleSortIconClick = useCallback(() => {
-        if (sortable) {
+        if (sortable && !isLoading) {
             const order = sortState === 'asc' ? 'desc' : 'asc';
             setSortState(order);
             onSortChange(field, order);
         }
-    }, [sortable, sortState, onSortChange, field]);
+    }, [isLoading, sortable, sortState, onSortChange, field]);
 
     const onMouseUp = () => {
         window.removeEventListener('mousemove', onMouseMove);
@@ -93,7 +93,7 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
                                 tableSize={tableSize}
                                 onClick={handleSortIconClick}
                                 isSelected={sortField === field && !isLoading}
-                                withHoverEffect={sortable}
+                                withHoverEffect={sortable && !isLoading}
                             >
                                 <Text textVariant="h5" uppercase>
                                     {c}
@@ -104,7 +104,7 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
                             c
                         );
                     })}
-                    <ResizeHandler onMouseDown={initResize} onDoubleClick={handleDoubleClick} />
+                    {!restProps.isRowActionCell && <ResizeHandler onMouseDown={initResize} onDoubleClick={handleDoubleClick} />}
                 </>
             )}
         </HeadCellStyled>

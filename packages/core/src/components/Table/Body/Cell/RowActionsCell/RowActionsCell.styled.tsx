@@ -36,15 +36,15 @@ export const RowActionsCellStyled = styled('td')<RowActionProps>`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
     padding-top: 0;
     padding-bottom: 0;
-    padding-right: ${({ tableSize }) => (tableSize === 'L' ? '2rem' : '1.2rem')};
+    justify-content: ${({ isRowExpandable, isRowSelectable }) => (isRowExpandable && !isRowSelectable ? 'center' : 'flex-end')};
+    padding-right: ${({ tableSize, isRowSelectable }) => isRowSelectable && (tableSize === 'L' ? '2rem' : '1.2rem')};
     padding-left: ${({ isLoading, tableSize }) => isLoading && (tableSize === 'L' ? '2rem' : '1.2rem')};
     overflow: visible;
     cursor: default;
     position: sticky;
-    left: 0;
+    left: ${({ isGroupedTable }) => (isGroupedTable ? '4.8rem' : '0')};
     z-index: 1;
     * {
         z-index: 1;
@@ -65,12 +65,12 @@ export const RowActionsCellStyled = styled('td')<RowActionProps>`
 
         &:hover {
             background-color: ${({ theme, isRowSelected }) =>
-                isRowSelected ? theme.table.accordionIcon.bgColor.selected.hover : theme.table.accordionIcon.bgColor.hover};
+                theme.table.accordionIcon.bgColor.hover[isRowSelected ? 'selected' : 'default']};
         }
 
         &:active {
             background-color: ${({ theme, isRowSelected }) =>
-                isRowSelected ? theme.table.accordionIcon.bgColor.selected.pressed : theme.table.accordionIcon.bgColor.pressed};
+                theme.table.accordionIcon.bgColor.pressed[isRowSelected ? 'selected' : 'default']};
         }
     }
 
