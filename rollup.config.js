@@ -46,6 +46,7 @@ export default ['es', 'cjs'].map(format => ({
     ],
     output: {
         format,
+        exports: "auto",
         dir: `dist/${format}`
     }
 }));
