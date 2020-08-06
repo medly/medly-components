@@ -1,4 +1,4 @@
-import data from './data.ts';
+import data from './data';
 
 export const groupedData = {
     name: [
