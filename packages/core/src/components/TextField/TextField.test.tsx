@@ -81,19 +81,28 @@ describe('TextField', () => {
             expect(mockOnBlur).toHaveBeenCalled();
         });
 
-        it('should render custom error message if validator function is provided', async () => {
+        it('should render custom error message if validator function is returning error message', async () => {
             const mockOnBlur = jest.fn(),
-                validator = (val: string) => (val.length < 3 ? 'Email should be more then 3 characters' : ''),
-                { container, findByText } = render(
-                    <TextField label="Name" required type="email" value="a" onBlur={mockOnBlur} validator={validator} />
+                validator = (val: string) => val.length < 3 && 'Email should be more then 3 characters',
+                { container, getByText } = render(
+                    <TextField label="Name" required type="email" value="du" onBlur={mockOnBlur} validator={validator} />
                 ),
                 input = container.querySelector('input');
-            fireEvent.change(input, { target: { value: 'Du' } });
             fireEvent.blur(input);
-            const message = await findByText('Email should be more then 3 characters');
-            expect(message).toBeInTheDocument();
+            expect(getByText('Email should be more then 3 characters')).toBeInTheDocument();
             expect(input.validationMessage).toEqual('Email should be more then 3 characters');
-            expect(mockOnBlur).toHaveBeenCalled();
+            expect(mockOnBlur).toBeCalled();
+        });
+
+        it('should not return error message if it is not returning any message', async () => {
+            const validator = (val: string) => val.length < 3 && 'Email should be more then 3 characters',
+                { container, queryByText } = render(
+                    <TextField label="Name" required value="dummy" onBlur={jest.fn} validator={validator} />
+                ),
+                input = container.querySelector('input');
+            fireEvent.blur(input);
+            expect(input.validationMessage).toEqual('');
+            expect(queryByText('Email should be more then 3 characters')).toBeNull();
         });
     });
 
