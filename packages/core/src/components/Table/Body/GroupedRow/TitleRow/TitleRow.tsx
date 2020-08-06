@@ -40,6 +40,7 @@ export const TitleRow: React.FC<Props> = React.memo(props => {
             onClick={isLoading ? undefined : onClick}
             tableWidth={tableWidth}
             isLoading={isLoading}
+            tableSize={tableSize}
             isRowExpanded={isRowExpanded}
             isRowSelectable={isRowSelectable}
             isRowExpandable={isRowExpandable}

@@ -17,7 +17,7 @@ export const getUpdatedColumns = (
     isGroupedTable: boolean
 ): TableColumnConfig[] => [
     ...(isGroupedTable
-        ? [{ ...rowActionsColumnConfig, field: 'group-expansion', size: `minmax(${size === 'L' ? '6.4rem' : '48px'}, 0.1fr)` }]
+        ? [{ ...rowActionsColumnConfig, field: 'group-expansion', size: `minmax(${size === 'L' ? '6.4rem' : '4.8rem'}, 0.1fr)` }]
         : []),
     ...(isRowSelectable || isRowExpandable
         ? [
@@ -25,8 +25,8 @@ export const getUpdatedColumns = (
                   ...rowActionsColumnConfig,
                   size:
                       isRowSelectable && isRowExpandable
-                          ? `minmax(${size === 'L' ? '11.6rem' : '84px'}, 0.1fr)`
-                          : `minmax(${size === 'L' ? '6.4rem' : '48px'}, 0.1fr)`
+                          ? `minmax(${size === 'L' ? '11.6rem' : '8.4rem'}, 0.1fr)`
+                          : `minmax(${size === 'L' ? '6.4rem' : '4.8rem'}, 0.1fr)`
               }
           ]
         : []),

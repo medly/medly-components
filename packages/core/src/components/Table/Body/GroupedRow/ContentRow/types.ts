@@ -1,10 +1,11 @@
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
-import { GridTemplateProps } from '../../../types';
+import { GridTemplateProps, TableProps } from '../../../types';
 
 export type StyledProps = GridTemplateProps &
     HTMLProps<HTMLTableRowElement> &
     WithThemeProp & {
         isRowExpanded?: boolean;
+        tableSize: TableProps['size'];
     };
 export type Props = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
     isRowExpanded: boolean;

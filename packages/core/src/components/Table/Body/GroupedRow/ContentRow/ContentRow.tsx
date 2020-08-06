@@ -6,12 +6,12 @@ import { Props } from './types';
 
 export const ContentRow: React.FC<Props> = React.memo(props => {
     const { data, ...restProps } = props,
-        { rowIdentifier } = useContext(TablePropsContext);
+        { rowIdentifier, size } = useContext(TablePropsContext);
 
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
 
     return (
-        <ContentRowStyled isRowExpanded={restProps.isRowExpanded} onClick={stopPropagation}>
+        <ContentRowStyled tableSize={size} isRowExpanded={restProps.isRowExpanded} onClick={stopPropagation}>
             <BlankCell isRowExpanded={restProps.isRowExpanded} />
             <DataCell>
                 {data.map((row: { [k: string]: any }, index: number) => {
