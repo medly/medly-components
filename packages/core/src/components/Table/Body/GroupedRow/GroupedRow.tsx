@@ -13,6 +13,7 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
         { columns, groupBy, rowIdentifier, getGroupedData, rowSelectionDisableKey } = tableProps,
         {
             id,
+            setUniqueIds,
             titleRowData,
             addColumnMaxSize,
             selectedTitleRowIds,
@@ -38,7 +39,12 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
     const handleExpansion = useCallback(() => setExpansionState(val => !val), []),
         handleSelectAllClick = useCallback(() => {
             toggleId(-1);
-        }, [toggleId]);
+            selectedIds.length > 0 ? onGroupedRowSelection(selectedIds) : onGroupedRowSelection(uniqueIds);
+        }, [toggleId]),
+        handleContentRowSelection = (rowId: number | string) => {
+            onGroupedRowSelection([rowId]);
+            toggleId(rowId);
+        };
 
     useUpdateEffect(async () => {
         if (isRowExpanded && groupedRows === loadingBodyData) {
@@ -46,23 +52,27 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
             const dt = await getGroupedData(titleRowData[groupBy]);
             setLoadingState(false);
             setGroupedRows(dt);
+            setUniqueIds(array => Array.from(new Set(array.concat(titleRowData[groupBy]))));
         }
     }, [isRowExpanded]);
 
     useUpdateEffect(() => {
-        isTitleRowSelected !== areAllRowsSelected && onTitleRowSelection(id);
+        if (isTitleRowSelected !== areAllRowsSelected) {
+            onTitleRowSelection(id);
+        }
     }, [areAllRowsSelected]);
 
     useUpdateEffect(() => {
         if (isTitleRowSelected !== areAllRowsSelected) {
-            isTitleRowSelected ? setSelectedIds(uniqueIds) : selectedIds.length > 0 && setSelectedIds([]);
+            if (isTitleRowSelected) {
+                setSelectedIds(uniqueIds);
+                onGroupedRowSelection(uniqueIds.filter(i => !selectedIds.includes(i)));
+            } else if (selectedIds.length > 0) {
+                setSelectedIds([]);
+                onGroupedRowSelection(selectedIds);
+            }
         }
     }, [isTitleRowSelected]);
-
-    useUpdateEffect(() => {
-        // @ts-ignore
-        onGroupedRowSelection(selectedIds);
-    }, [selectedIds]);
 
     return (
         <>
@@ -86,7 +96,7 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
                         data: groupedRows,
                         id: `${id}-content-row`,
                         selectedRowIds: selectedIds,
-                        onRowSelection: toggleId
+                        onRowSelection: handleContentRowSelection
                     }}
                 />
             </TablePropsContext.Provider>

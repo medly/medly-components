@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 
 type Result = {
     selectedIds: (string | number)[];
-    toggleIds: (id: number[] | string[]) => void;
+    toggleIds: (ids: any[]) => void;
 };
 const useGroupedRowSelector = (): Result => {
     const [selectedIds, setSelectedIds] = useState<(string | number)[]>([]);

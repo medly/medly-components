@@ -45,8 +45,12 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                 rowSelectionDisableKey,
                 rowIdentifier: restProps.groupBy || rowIdentifier
             }),
-            { isAnyRowSelected, areAllRowsSelected, selectedIds, toggleId } = rowSelector,
+            { isAnyRowSelected, areAllRowsSelected, selectedIds, toggleId, uniqueIds, setUniqueIds } = rowSelector,
             groupedRowSelector = useGroupedRowSelector();
+
+        useEffect(() => {
+            isGroupedTable && setUniqueIds([]);
+        }, [data]);
 
         useEffect(() => {
             setColumns(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable));
@@ -80,16 +84,18 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                             setColumns,
                             maxColumnSizes,
                             areAllRowsSelected,
-                            isAnyRowSelected,
                             onSelectAllClick: toggleId,
                             isSelectAllDisable: isSelectAllDisable,
                             showShadowAtBottom: !scrollState.isScrolledToTop,
-                            showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
+                            showShadowAfterFrozenElement: !scrollState.isScrolledToLeft,
+                            isAnyRowSelected:
+                                !areAllRowsSelected && (isGroupedTable ? groupedRowSelector.selectedIds.length > 0 : isAnyRowSelected)
                         }}
                     />
                     <Body
                         {...{
                             addColumnMaxSize,
+                            setUniqueIds,
                             setSelectAllDisableState,
                             selectedRowIds: selectedIds,
                             onRowSelection: toggleId,

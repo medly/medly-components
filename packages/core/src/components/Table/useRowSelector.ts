@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useCallback, useMemo, useState } from 'react';
+import { Dispatch, SetStateAction, useCallback, useEffect, useMemo, useState } from 'react';
 import { Data } from './types';
 
 type Result = {
@@ -7,6 +7,7 @@ type Result = {
     isAnyRowSelected: boolean;
     selectedIds: (string | number)[];
     toggleId: (id: number | string) => void;
+    setUniqueIds: Dispatch<SetStateAction<any[]>>;
     setSelectedIds: Dispatch<SetStateAction<(string | number)[]>>;
 };
 type Params = {
@@ -16,12 +17,8 @@ type Params = {
 };
 
 const useRowSelector = ({ data, rowSelectionDisableKey, rowIdentifier }: Params): Result => {
-    const [selectedIds, setSelectedIds] = useState<(string | number)[]>([]),
-        uniqueIds = useMemo(() => data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[rowIdentifier]), [
-            data,
-            rowSelectionDisableKey,
-            rowIdentifier
-        ]),
+    const [uniqueIds, setUniqueIds] = useState([]),
+        [selectedIds, setSelectedIds] = useState<(string | number)[]>([]),
         areAllRowsSelected = useMemo(() => {
             return uniqueIds.length > 0 && uniqueIds.length === selectedIds.length;
         }, [uniqueIds, selectedIds]),
@@ -38,7 +35,11 @@ const useRowSelector = ({ data, rowSelectionDisableKey, rowIdentifier }: Params)
         [uniqueIds, setSelectedIds]
     );
 
-    return { areAllRowsSelected, isAnyRowSelected, selectedIds, uniqueIds, toggleId, setSelectedIds };
+    useEffect(() => {
+        setUniqueIds(data.filter(dt => !dt[rowSelectionDisableKey]).map(dt => dt[rowIdentifier]));
+    }, [data, rowSelectionDisableKey, rowIdentifier]);
+
+    return { areAllRowsSelected, isAnyRowSelected, selectedIds, uniqueIds, toggleId, setSelectedIds, setUniqueIds };
 };
 
 export default useRowSelector;

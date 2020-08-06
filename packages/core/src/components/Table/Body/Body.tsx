@@ -9,7 +9,7 @@ import { Props } from './types';
 
 const Body: React.FC<Props> = React.memo(props => {
     const { data, groupBy, rowIdentifier } = useContext(TablePropsContext),
-        { selectedRowIds, onRowSelection, onGroupedRowSelection, ...restProps } = props;
+        { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, ...restProps } = props;
 
     return (
         <TBody>
@@ -25,6 +25,7 @@ const Body: React.FC<Props> = React.memo(props => {
                         id={identifier}
                         key={identifier}
                         titleRowData={row}
+                        setUniqueIds={setUniqueIds}
                         selectedTitleRowIds={selectedRowIds}
                         onTitleRowSelection={onRowSelection}
                         {...{ ...restProps, onGroupedRowSelection }}
