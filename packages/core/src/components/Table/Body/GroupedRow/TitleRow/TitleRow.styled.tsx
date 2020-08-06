@@ -14,7 +14,11 @@ export const Row = styled('tr')<StyledProps>`
                 ? tableSize === 'L'
                     ? '11.6rem'
                     : '8.4rem'
-                : (isRowExpandable || isRowSelectable) && (tableSize === 'L' ? '6.4rem' : '4.8rem')
+                : isRowExpandable || isRowSelectable
+                ? tableSize === 'L'
+                    ? '6.4rem'
+                    : '4.8rem'
+                : ''
         } auto`};
     position: sticky;
     left: 0;

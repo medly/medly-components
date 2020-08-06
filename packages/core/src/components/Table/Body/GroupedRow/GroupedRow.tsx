@@ -10,7 +10,7 @@ import { Props } from './types';
 
 export const GroupedRow: React.FC<Props> = React.memo(props => {
     const tableProps = useContext(TablePropsContext),
-        { columns, groupBy, rowIdentifier, getGroupedData, rowSelectionDisableKey } = tableProps,
+        { columns, groupBy, rowIdentifier, getGroupedData, rowSelectionDisableKey, isLoading: isTableLoading } = tableProps,
         {
             id,
             setUniqueIds,
@@ -81,7 +81,7 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
                 data={titleRowData}
                 isRowSelected={!isTitleRowSelectionDisable && isTitleRowSelected}
                 isRowIndeterminate={isAnyRowSelected}
-                isRowExpanded={isRowExpanded}
+                isRowExpanded={!isTableLoading && isRowExpanded}
                 onRowSelection={handleSelectAllClick}
                 onClick={handleExpansion}
                 isRowSelectionDisabled={isLoading || isTitleRowSelectionDisable}
@@ -90,13 +90,13 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
             <TablePropsContext.Provider value={{ ...tableProps, columns: columns.slice(1), isLoading }}>
                 <ContentRow
                     {...{
-                        isRowExpanded,
                         addColumnMaxSize,
                         showShadowAfterFrozenElement,
                         data: groupedRows,
                         id: `${id}-content-row`,
                         selectedRowIds: selectedIds,
-                        onRowSelection: handleContentRowSelection
+                        onRowSelection: handleContentRowSelection,
+                        isRowExpanded: !isTableLoading && isRowExpanded
                     }}
                 />
             </TablePropsContext.Provider>
