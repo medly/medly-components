@@ -92,17 +92,12 @@ exports[`CheckboxGroup component should render properly 1`] = `
 .c4 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
-  width: 100%;
 }
 
 .c16 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  width: 100%;
-}
-
-.c16 > label {
-  padding-left: 5rem;
+  margin-left: 4rem;
 }
 
 .c3 {
@@ -603,17 +598,12 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
 .c4 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
-  width: 100%;
 }
 
 .c15 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  width: 100%;
-}
-
-.c15 > label {
-  padding-left: 5rem;
+  margin-left: 4rem;
 }
 
 .c3 {
@@ -1096,17 +1086,12 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
 .c4 {
   display: grid;
   grid-template-columns: repeat(1,1fr);
-  width: 100%;
 }
 
 .c15 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  width: 100%;
-}
-
-.c15 > label {
-  padding-left: 5rem;
+  margin-left: 4rem;
 }
 
 .c3 {

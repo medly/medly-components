@@ -28,6 +28,8 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChang
     label?: string;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
+    /** Makes the whole option row area clickable */
+    fullWidthOptions?: boolean;
     /** Disable all the checkboxes */
     disabled?: boolean;
     /** Label Variant */

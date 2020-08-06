@@ -55,6 +55,7 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
                                 label={op.label}
                                 options={op.value}
                                 onChange={handleGroupClick(op.value)}
+                                fullWidthOptions={true}
                             />
                         )}
                     </React.Fragment>
