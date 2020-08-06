@@ -3,7 +3,7 @@ import { styled } from '@medly-components/utils';
 import Text from '../../../Text';
 import { OptionStyledProps } from './types';
 
-export const OptionStyled = styled('li').attrs(({ theme: { select } }) => ({ ...select.option }))<OptionStyledProps>`
+export const OptionStyled = styled('li').attrs(({ theme: { singleSelect } }) => ({ ...singleSelect.option }))<OptionStyledProps>`
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     padding: 0 1.6rem;
     min-height: 4rem;

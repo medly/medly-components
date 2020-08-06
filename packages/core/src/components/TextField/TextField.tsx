@@ -33,7 +33,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
             (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
                 event.preventDefault();
                 const element = event.target as HTMLInputElement,
-                    validatorMessage = (validator && validator(element.value)) || '',
+                    validatorMessage = (validator && validator(element.value, event.type)) || '',
                     message = validator ? validatorMessage : element.validationMessage;
                 setErrorMessage(message);
                 validator && inputRef.current.setCustomValidity(validatorMessage);

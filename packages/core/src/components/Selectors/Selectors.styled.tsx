@@ -37,6 +37,16 @@ export const SelectorGroupOptions = styled('div')<SelectorGroupOptionsProps>`
     display: grid;
     grid-template-columns: ${({ columns }) => `repeat(${columns}, 1fr) `};
     margin-left: ${({ isIndented }) => isIndented && '4rem'};
+
+    ${({ fullWidthOptions, isIndented }) =>
+        fullWidthOptions &&
+        css`
+            width: 100%;
+            margin-left: 0;
+            > label {
+                padding-left: ${isIndented && '5rem'};
+            }
+        `};
 `;
 SelectorGroupOptions.defaultProps = {
     columns: 1,

@@ -1,52 +1,72 @@
-import { ExpandMoreIcon } from '@medly-components/icons';
-import { defaultTheme } from '@medly-components/theme';
-import { styled, WithThemeProp } from '@medly-components/utils';
-import FieldWithLabel from '../FieldWithLabel';
+import { ChevronDownIcon } from '@medly-components/icons';
+import { css, styled } from '@medly-components/utils';
+import TextField from '../TextField';
 import { SelectWrapperProps } from './types';
 
-export const SelectWrapperStyled = styled('div')<SelectWrapperProps>`
-    border: 1px solid ${({ theme }) => theme.select.borderColor};
-    background-color: ${({ disabled, theme }) => (disabled ? theme.select.disabledBgColor : theme.select.bgColor)};
-    cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-    border-radius: 4px;
-    box-sizing: border-box;
-    overflow: hidden;
-    min-width: 150px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    height: auto;
-    justify-content: flex-start;
+export const SuffixWrap = styled.div`
+    display: flex;
     align-items: center;
+`;
 
-    * {
-        cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-    }
-
-    ${FieldWithLabel.Style} {
-        margin: 0;
-        flex: 1;
-
-        & > * {
+const getDefaultStyle = ({ theme, areOptionsVisible, disabled, isSearchable }: SelectWrapperProps) => {
+    return css`
+        ${TextField.Style} {
             margin: 0;
-            border: none;
-            background-color: transparent;
+
+            label {
+                pointer-events: none;
+            }
+
+            div,
+            input,
+            label {
+                cursor: ${!disabled && 'pointer'};
+            }
+            &:focus-within {
+                input {
+                    cursor: ${!disabled && isSearchable && 'text'};
+                }
+            }
+            input {
+                padding-right: 1.6rem;
+            }
         }
-    }
-
-    &:focus-within {
-        border-color: ${({ theme }) => theme.select.outlineColor};
-    }
-`;
-
-SelectWrapperStyled.defaultProps = {
-    theme: defaultTheme
+        ${SuffixWrap} {
+            > ${ChevronDownIcon.Style} {
+                transition: all 100ms ease-out;
+                transform: ${areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)'};
+                margin-left: 0.8rem;
+                * {
+                    transition: fill 100ms ease-out;
+                    fill: ${theme.colors.black};
+                }
+            }
+        }
+    `;
 };
 
-export const SelectIconStyled = styled(ExpandMoreIcon)<WithThemeProp>`
-    max-width: 24px;
-    margin-right: ${({ theme }) => theme.spacing.S1};
-`;
-
-SelectIconStyled.defaultProps = {
-    theme: defaultTheme
+const getChipStyle = (color: string) => {
+    return css`
+        ${SuffixWrap} {
+            > ${ChevronDownIcon.Style} {
+                * {
+                    fill: ${color};
+                }
+            }
+        }
+    `;
 };
+
+export const Wrapper = styled.div<SelectWrapperProps>`
+    position: relative;
+    display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
+    min-width: ${({ minWidth }) => minWidth || 'max-content'};
+    width: ${({ fullWidth }) => (fullWidth ? '100%' : '25.6rem')};
+    margin: ${({ theme, fullWidth }) =>
+        fullWidth ? `${theme.spacing.S2} 0` : `${theme.spacing.S2} ${theme.spacing.S2} ${theme.spacing.S2} 0`};
+
+    ${getDefaultStyle};
+    ${({ areOptionsVisible, isErrorPresent, theme }) => areOptionsVisible && !isErrorPresent && getChipStyle(theme.colors.blue[500])};
+    ${({ isErrorPresent, theme }) => isErrorPresent && getChipStyle(theme.colors.red[500])};
+    ${({ disabled, theme }) => disabled && getChipStyle(theme.colors.grey[400])};
+`;

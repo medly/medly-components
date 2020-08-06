@@ -9,7 +9,7 @@ export type SelectorGroupWrapperProps = HTMLProps<HTMLDivElement> & {
     type: 'radio' | 'checkbox';
 };
 
-export type SelectorGroupOptionsProps = HTMLProps<HTMLDivElement> & { columns?: number; isIndented?: boolean };
+export type SelectorGroupOptionsProps = HTMLProps<HTMLDivElement> & { columns?: number; isIndented?: boolean; fullWidthOptions?: boolean };
 
 export type SelectorHelperTextProps = GetComponentProps<typeof Text> & {
     hasError?: boolean;
