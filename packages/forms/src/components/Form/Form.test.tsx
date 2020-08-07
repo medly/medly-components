@@ -115,7 +115,7 @@ describe('Form', () => {
             expect(mockOnSubmit).toHaveBeenCalledWith(initialState);
         });
 
-        it('with expected data', async () => {
+        it('with expected data', async (done: any) => {
             const fooFile = new File(['foo'], 'foo.txt', {
                     type: 'text/plain'
                 }),
@@ -200,7 +200,8 @@ describe('Form', () => {
             fireEvent.submit(container.querySelector('form'));
             expect(mockOnSubmit).toHaveBeenCalledWith(formData);
             expect(mockOnChange.mock.calls[mockOnChange.mock.calls.length - 1][0]).toEqual(formData);
-        });
+            done();
+        }, 30000);
     });
 
     it('should call onFocus on focusing on the input', () => {
