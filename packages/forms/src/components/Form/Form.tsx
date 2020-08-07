@@ -1,6 +1,7 @@
 import { Text } from '@medly-components/core';
 import { WithStyle } from '@medly-components/utils';
 import React, { useEffect, useMemo } from 'react';
+import { createObjectFromDottedKeys } from '../../helpers';
 import useForm from '../../hooks/useForm';
 import Actions from '../Actions';
 import Fields from '../Fields';
@@ -22,6 +23,7 @@ export const Form: React.FC<Props> & WithStyle = React.memo(
                 onSubmit,
                 onReset,
                 id,
+                onChange,
                 fieldSchema,
                 ...restProps
             },
@@ -33,6 +35,10 @@ export const Form: React.FC<Props> & WithStyle = React.memo(
             useEffect(() => {
                 apiErrorMessages && Object.keys(apiErrorMessages).length && setErrorMessages(apiErrorMessages);
             }, [apiErrorMessages]);
+
+            useEffect(() => {
+                onChange && onChange(createObjectFromDottedKeys(values));
+            }, [values]);
 
             return (
                 <Styled.Form

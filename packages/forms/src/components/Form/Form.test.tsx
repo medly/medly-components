@@ -126,6 +126,7 @@ describe('Form', () => {
                         endDate: '01/02/2019'
                     }
                 },
+                mockOnChange = jest.fn(),
                 mockOnSubmit = jest.fn(),
                 formData = {
                     firstName: 'first name',
@@ -149,7 +150,7 @@ describe('Form', () => {
                     resume: [fooFile]
                 },
                 renderComp = (state: object = dateStringInitialState) => (
-                    <Form fieldSchema={testSchema} onSubmit={mockOnSubmit} initialState={state} />
+                    <Form fieldSchema={testSchema} onSubmit={mockOnSubmit} initialState={state} onChange={mockOnChange} />
                 ),
                 { container, getByText, findByText, getByPlaceholderText, getByTitle, getByLabelText } = render(renderComp());
             const fileInput = container.querySelector('#resume');
@@ -198,6 +199,7 @@ describe('Form', () => {
 
             fireEvent.submit(container.querySelector('form'));
             expect(mockOnSubmit).toHaveBeenCalledWith(formData);
+            expect(mockOnChange.mock.calls[mockOnChange.mock.calls.length - 1][0]).toEqual(formData);
         });
     });
 
