@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.2.2...@medly-components/utils@1.3.0) (2020-08-07)
+
+
+### Features
+
+* add group data selection feature in table component ([fe96a7e](https://github.com/medly/medly-components/commit/fe96a7e954869715e6ba9e91849ad056992ca3be))
+
+
+
+
+
 ## [1.2.2](https://github.com/medly/medly-components/compare/@medly-components/utils@1.2.1...@medly-components/utils@1.2.2) (2020-07-27)
 
 **Note:** Version bump only for package @medly-components/utils
