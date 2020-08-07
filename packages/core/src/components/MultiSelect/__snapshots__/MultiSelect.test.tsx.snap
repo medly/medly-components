@@ -387,11 +387,11 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   >
     <div
       class="c1 c2"
+      id="pharmacy-input-wrapper"
     >
       <div
         class="c3"
         disabled=""
-        id="pharmacy-wrapper"
       >
         <div
           class="c4"
@@ -415,6 +415,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
         </div>
         <div
           class="c8 c9"
+          id="pharmacy-count"
         >
           <button
             class="c10"
@@ -770,10 +771,10 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   >
     <div
       class="c1 c2"
+      id="medly-multiSelect-input-wrapper"
     >
       <div
         class="c3"
-        id="medly-multiSelect-wrapper"
       >
         <div
           class="c4"
@@ -794,6 +795,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
         </div>
         <div
           class="c8 c9"
+          id="medly-multiSelect-count"
         >
           <svg
             class="c10 c11"
@@ -1203,11 +1205,11 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   >
     <div
       class="c1 c2"
+      id="pharmacy-input-wrapper"
     >
       <div
         class="c3"
         disabled=""
-        id="pharmacy-wrapper"
       >
         <div
           class="c4"
@@ -1231,6 +1233,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
         </div>
         <div
           class="c8 c9"
+          id="pharmacy-count"
         >
           <button
             class="c10"
@@ -1586,10 +1589,10 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   >
     <div
       class="c1 c2"
+      id="medly-multiSelect-input-wrapper"
     >
       <div
         class="c3"
-        id="medly-multiSelect-wrapper"
       >
         <div
           class="c4"
@@ -1610,6 +1613,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
         </div>
         <div
           class="c8 c9"
+          id="medly-multiSelect-count"
         >
           <svg
             class="c10 c11"

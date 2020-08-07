@@ -1660,10 +1660,10 @@ exports[`Form should render properly with initial state 1`] = `
     >
       <div
         class="c2 c3"
+        id="firstName-input-wrapper"
       >
         <div
           class="c4"
-          id="firstName-wrapper"
         >
           <div
             class="c5"
@@ -1695,10 +1695,10 @@ exports[`Form should render properly with initial state 1`] = `
     >
       <div
         class="c2 c3"
+        id="lastName-input-wrapper"
       >
         <div
           class="c4"
-          id="lastName-wrapper"
         >
           <div
             class="c5"
@@ -1730,10 +1730,10 @@ exports[`Form should render properly with initial state 1`] = `
     >
       <div
         class="c2 c3"
+        id="email-input-wrapper"
       >
         <div
           class="c4"
-          id="email-wrapper"
         >
           <div
             class="c5"
@@ -2157,10 +2157,10 @@ exports[`Form should render properly with initial state 1`] = `
       >
         <div
           class="c2 c55"
+          id="country-input-wrapper"
         >
           <div
             class="c4"
-            id="country-wrapper"
           >
             <div
               class="c5"
@@ -2211,10 +2211,10 @@ exports[`Form should render properly with initial state 1`] = `
       >
         <div
           class="c2 c55"
+          id="graduation-input-wrapper"
         >
           <div
             class="c4"
-            id="graduation-wrapper"
           >
             <div
               class="c5"
@@ -2240,6 +2240,7 @@ exports[`Form should render properly with initial state 1`] = `
             </div>
             <div
               class="c59 c60"
+              id="graduation-count"
             >
               <button
                 class="c61"
@@ -2299,10 +2300,10 @@ exports[`Form should render properly with initial state 1`] = `
     >
       <div
         class="c2 c3"
+        id="marks.database-input-wrapper"
       >
         <div
           class="c4"
-          id="marks.database-wrapper"
         >
           <div
             class="c5"
@@ -2334,10 +2335,10 @@ exports[`Form should render properly with initial state 1`] = `
     >
       <div
         class="c2 c3"
+        id="marks.algorithms-input-wrapper"
       >
         <div
           class="c4"
-          id="marks.algorithms-wrapper"
         >
           <div
             class="c5"
@@ -2369,10 +2370,10 @@ exports[`Form should render properly with initial state 1`] = `
     >
       <div
         class="c2 c3"
+        id="marks.maths-input-wrapper"
       >
         <div
           class="c4"
-          id="marks.maths-wrapper"
         >
           <div
             class="c5"
@@ -3833,10 +3834,10 @@ exports[`Form should render properly without initial state 1`] = `
     >
       <div
         class="c5 c6"
+        id="firstName-input-wrapper"
       >
         <div
           class="c7"
-          id="firstName-wrapper"
         >
           <div
             class="c8"
@@ -3868,10 +3869,10 @@ exports[`Form should render properly without initial state 1`] = `
     >
       <div
         class="c5 c6"
+        id="lastName-input-wrapper"
       >
         <div
           class="c7"
-          id="lastName-wrapper"
         >
           <div
             class="c8"
@@ -3903,10 +3904,10 @@ exports[`Form should render properly without initial state 1`] = `
     >
       <div
         class="c5 c6"
+        id="email-input-wrapper"
       >
         <div
           class="c7"
-          id="email-wrapper"
         >
           <div
             class="c8"
@@ -4328,10 +4329,10 @@ exports[`Form should render properly without initial state 1`] = `
       >
         <div
           class="c5 c55"
+          id="country-input-wrapper"
         >
           <div
             class="c7"
-            id="country-wrapper"
           >
             <div
               class="c8"
@@ -4382,10 +4383,10 @@ exports[`Form should render properly without initial state 1`] = `
       >
         <div
           class="c5 c55"
+          id="graduation-input-wrapper"
         >
           <div
             class="c7"
-            id="graduation-wrapper"
           >
             <div
               class="c8"
@@ -4411,6 +4412,7 @@ exports[`Form should render properly without initial state 1`] = `
             </div>
             <div
               class="c59 c60"
+              id="graduation-count"
             >
               <svg
                 class="c31 c32"
@@ -4446,10 +4448,10 @@ exports[`Form should render properly without initial state 1`] = `
     >
       <div
         class="c5 c6"
+        id="marks.database-input-wrapper"
       >
         <div
           class="c7"
-          id="marks.database-wrapper"
         >
           <div
             class="c8"
@@ -4481,10 +4483,10 @@ exports[`Form should render properly without initial state 1`] = `
     >
       <div
         class="c5 c6"
+        id="marks.algorithms-input-wrapper"
       >
         <div
           class="c7"
-          id="marks.algorithms-wrapper"
         >
           <div
             class="c8"
@@ -4516,10 +4518,10 @@ exports[`Form should render properly without initial state 1`] = `
     >
       <div
         class="c5 c6"
+        id="marks.maths-input-wrapper"
       >
         <div
           class="c7"
-          id="marks.maths-wrapper"
         >
           <div
             class="c8"

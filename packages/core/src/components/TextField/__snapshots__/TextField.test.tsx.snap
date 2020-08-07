@@ -242,10 +242,10 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   <div>
     <div
       class="c0"
+      id="medly-textField-input-wrapper"
     >
       <div
         class="c1"
-        id="medly-textField-wrapper"
       >
         <div
           class="c2"
@@ -562,10 +562,10 @@ exports[`TextField should render properly with default props 1`] = `
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -827,10 +827,10 @@ exports[`TextField with filled variant and with label should render default stat
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -1072,11 +1072,11 @@ exports[`TextField with filled variant and with label should render disabled sta
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
       disabled=""
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -1339,10 +1339,10 @@ exports[`TextField with filled variant and with label should render focus state 
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -1600,10 +1600,10 @@ exports[`TextField with filled variant and without label should render default s
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -1839,11 +1839,11 @@ exports[`TextField with filled variant and without label should render disabled 
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
       disabled=""
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -2100,10 +2100,10 @@ exports[`TextField with filled variant and without label should render focus sta
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -2406,10 +2406,10 @@ exports[`TextField with filled variant should render error state properly  1`] =
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -2741,10 +2741,10 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <svg
         class="c2 c3 c4"
@@ -3037,10 +3037,10 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -3329,10 +3329,10 @@ exports[`TextField with outlined variant and with label should render default st
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -3579,11 +3579,11 @@ exports[`TextField with outlined variant and with label should render disabled s
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
       disabled=""
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -3860,10 +3860,10 @@ exports[`TextField with outlined variant and with label should render focus stat
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -4135,10 +4135,10 @@ exports[`TextField with outlined variant and without label should render default
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -4379,11 +4379,11 @@ exports[`TextField with outlined variant and without label should render disable
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
       disabled=""
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -4654,10 +4654,10 @@ exports[`TextField with outlined variant and without label should render focus s
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -4974,10 +4974,10 @@ exports[`TextField with outlined variant should render error state properly  1`]
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -5323,10 +5323,10 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <svg
         class="c2 c3 c4"
@@ -5633,10 +5633,10 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -5907,10 +5907,10 @@ exports[`TextField without label should render default state properly 1`] = `
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"
@@ -6170,10 +6170,10 @@ exports[`TextField without label should render focus state properly  1`] = `
 <div>
   <div
     class="c0"
+    id="medly-textField-input-wrapper"
   >
     <div
       class="c1"
-      id="medly-textField-wrapper"
     >
       <div
         class="c2"

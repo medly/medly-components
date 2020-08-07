@@ -67,19 +67,15 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                 [options, onChange]
             ),
             handleOuterClick = useCallback(() => {
-                if (areOptionsVisible) {
-                    updateToDefaultOptions();
-                }
+                areOptionsVisible && updateToDefaultOptions();
                 hideOptions();
             }, [areOptionsVisible]),
             getState = useCallback(() => {
                 if (props.disabled) {
                     return 'disabled';
-                }
-                if (props.errorText) {
+                } else if (props.errorText) {
                     return 'error';
-                }
-                if (areOptionsVisible) {
+                } else if (areOptionsVisible) {
                     return 'active';
                 }
                 return 'default';
@@ -123,7 +119,7 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
 
         const chipEl = () => {
             return (
-                <SuffixWrap>
+                <SuffixWrap id={`${selectId}-count`}>
                     {selectedOptions.length > 0 && (
                         <Chip
                             testId="cancel-chip"

@@ -48,9 +48,8 @@ export const TextField: FC<Props> & WithStyle = React.memo(
             onInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validate, props.onInvalid]);
 
         return (
-            <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth}>
+            <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth} id={`${inputId}-input-wrapper`}>
                 <Styled.InnerWrapper
-                    id={`${inputId}-wrapper`}
                     onClick={handleWrapperClick}
                     variant={props.variant}
                     disabled={disabled}

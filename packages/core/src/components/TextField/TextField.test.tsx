@@ -29,7 +29,7 @@ describe('TextField', () => {
 
     it('should focus on input when clicked on the wrapper', () => {
         const { container } = render(<TextField label="Name" minWidth="30rem" id="dummy" />);
-        fireEvent.click(container.querySelector('#dummy-wrapper'));
+        fireEvent.click(container.querySelector('#dummy-input-wrapper > div'));
         expect(container.querySelector('input')).toHaveFocus();
     });
 
