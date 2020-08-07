@@ -89,7 +89,7 @@ describe('Calendar Component', () => {
 
     it('should disable dates which are are out of range ', () => {
         const date = new Date(2020, 11, 15),
-            { getByTitle, getByText, getByRole } = render(
+            { getByTitle, getByRole } = render(
                 <Calendar
                     id="test-calendar"
                     date={date}
