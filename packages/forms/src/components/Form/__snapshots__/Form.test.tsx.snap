@@ -2208,6 +2208,8 @@ exports[`Form should render properly with initial state 1`] = `
       <div
         class="c58"
         id="graduation-wrapper"
+        name="graduation"
+        placeholder="Please Select . . ."
       >
         <div
           class="c2 c55"
@@ -2224,8 +2226,7 @@ exports[`Form should render properly with initial state 1`] = `
                 autocomplete="off"
                 class="c6"
                 id="graduation-input"
-                name="graduation"
-                placeholder="Please Select . . ."
+                placeholder="1 options selected"
                 required=""
                 type="text"
                 value="b-tech"
@@ -4380,6 +4381,8 @@ exports[`Form should render properly without initial state 1`] = `
       <div
         class="c58"
         id="graduation-wrapper"
+        name="graduation"
+        placeholder="Please Select . . ."
       >
         <div
           class="c5 c55"
@@ -4396,7 +4399,6 @@ exports[`Form should render properly without initial state 1`] = `
                 autocomplete="off"
                 class="c9"
                 id="graduation-input"
-                name="graduation"
                 placeholder="Please Select . . ."
                 required=""
                 type="text"
