@@ -1,8 +1,8 @@
 import { defaultTheme, MultiSelectTheme } from '@medly-components/theme';
 import React from 'react';
-import { SelectProps } from './types';
+import { MultiSelectProps } from './types';
 
-export const variants: SelectProps['variant'][] = ['outlined', 'filled'];
+export const variants: MultiSelectProps['variant'][] = ['outlined', 'filled'];
 
 export const options = [
     { value: 'medly pharmacy', label: 'Medly Pharmacy' },

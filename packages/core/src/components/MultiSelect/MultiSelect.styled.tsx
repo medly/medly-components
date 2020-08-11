@@ -1,12 +1,8 @@
 import { ChevronDownIcon } from '@medly-components/icons';
 import { css, styled } from '@medly-components/utils';
 import TextField from '../TextField';
+import { InputSuffixStyled } from './InputSuffix/InputSuffix.styled';
 import { SelectWrapperProps } from './types';
-
-export const SuffixWrap = styled.div`
-    display: flex;
-    align-items: center;
-`;
 
 const getDefaultStyle = ({ theme, areOptionsVisible, disabled, isSearchable }: SelectWrapperProps) => {
     return css`
@@ -31,7 +27,7 @@ const getDefaultStyle = ({ theme, areOptionsVisible, disabled, isSearchable }: S
                 padding-right: 1.6rem;
             }
         }
-        ${SuffixWrap} {
+        ${InputSuffixStyled} {
             > ${ChevronDownIcon.Style} {
                 transition: all 100ms ease-out;
                 transform: ${areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)'};
@@ -47,7 +43,7 @@ const getDefaultStyle = ({ theme, areOptionsVisible, disabled, isSearchable }: S
 
 const getChipStyle = (color: string) => {
     return css`
-        ${SuffixWrap} {
+        ${InputSuffixStyled} {
             > ${ChevronDownIcon.Style} {
                 * {
                     fill: ${color};

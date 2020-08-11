@@ -1,32 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MultiSelect component with checkbox false should render correctly with all the props given 1`] = `
-.c14 {
-  overflow: visible;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  font-size: 2.0rem;
-  cursor: pointer;
-}
-
-.c14 * {
-  fill-opacity: 1;
-  fill: #607890;
-}
-
-.c15 {
-  overflow: visible;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  font-size: 2.4rem;
-  cursor: inherit;
-}
-
-.c15 * {
-  fill-opacity: 1;
-  fill: #607890;
-}
-
 .c7 {
   top: 0;
   left: 0;
@@ -78,17 +52,17 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb,
-.c3 .sc-AxhUy {
+.c3 .sc-AxiKw,
+.c3 .sc-AxhCb {
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb *,
-.c3 .sc-AxhUy * {
+.c3 .sc-AxiKw *,
+.c3 .sc-AxhCb * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-AxirZ {
+.c3 ~ .sc-AxjAm {
   color: #546A7F;
 }
 
@@ -119,17 +93,17 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   color: #b0bcc8;
 }
 
-.c3 .sc-AxhCb,
-.c3 .sc-AxhUy {
+.c3 .sc-AxiKw,
+.c3 .sc-AxhCb {
   color: #b0bcc8;
 }
 
-.c3 .sc-AxhCb *,
-.c3 .sc-AxhUy * {
+.c3 .sc-AxiKw *,
+.c3 .sc-AxhCb * {
   fill: #b0bcc8;
 }
 
-.c3 ~ .sc-AxirZ {
+.c3 ~ .sc-AxjAm {
   color: #b0bcc8;
 }
 
@@ -236,6 +210,32 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   -webkit-transform: translate3d(0,20%,0) scale(0.75);
   -ms-transform: translate3d(0,20%,0) scale(0.75);
   transform: translate3d(0,20%,0) scale(0.75);
+}
+
+.c14 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.0rem;
+  cursor: pointer;
+}
+
+.c14 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c15 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
+}
+
+.c15 * {
+  fill-opacity: 1;
+  fill: #607890;
 }
 
 .c12 {
@@ -384,6 +384,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
     class="c0"
     disabled=""
     id="pharmacy-wrapper"
+    placeholder="Please Select"
   >
     <div
       class="c1 c2"
@@ -402,7 +403,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
             class="c5"
             disabled=""
             id="pharmacy-input"
-            placeholder="Please Select"
+            placeholder="1 options selected"
             type="text"
             value="all"
           />
@@ -463,19 +464,6 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 `;
 
 exports[`MultiSelect component with checkbox false should render correctly with default props 1`] = `
-.c11 {
-  overflow: visible;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  font-size: 2.4rem;
-  cursor: inherit;
-}
-
-.c11 * {
-  fill-opacity: 1;
-  fill: #607890;
-}
-
 .c7 {
   top: 0;
   left: 0;
@@ -525,17 +513,17 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb,
-.c3 .sc-AxhUy {
+.c3 .sc-AxiKw,
+.c3 .sc-AxhCb {
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb *,
-.c3 .sc-AxhUy * {
+.c3 .sc-AxiKw *,
+.c3 .sc-AxhCb * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-AxirZ {
+.c3 ~ .sc-AxjAm {
   color: #546A7F;
 }
 
@@ -572,17 +560,17 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   color: #126AFA;
 }
 
+.c3:focus-within .sc-AxiKw,
+.c3:focus-within:hover .sc-AxiKw,
 .c3:focus-within .sc-AxhCb,
-.c3:focus-within:hover .sc-AxhCb,
-.c3:focus-within .sc-AxhUy,
-.c3:focus-within:hover .sc-AxhUy {
+.c3:focus-within:hover .sc-AxhCb {
   color: #126AFA;
 }
 
+.c3:focus-within .sc-AxiKw *,
+.c3:focus-within:hover .sc-AxiKw *,
 .c3:focus-within .sc-AxhCb *,
-.c3:focus-within:hover .sc-AxhCb *,
-.c3:focus-within .sc-AxhUy *,
-.c3:focus-within:hover .sc-AxhUy * {
+.c3:focus-within:hover .sc-AxhCb * {
   fill: #126AFA;
 }
 
@@ -703,6 +691,19 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   transform: translate3d(0,20%,0) scale(0.75);
 }
 
+.c11 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
+}
+
+.c11 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -768,6 +769,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   <div
     class="c0"
     id="medly-multiSelect-wrapper"
+    placeholder="Please Select . . ."
   >
     <div
       class="c1 c2"
@@ -819,32 +821,6 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 `;
 
 exports[`MultiSelect component with checkbox true should render correctly with all the props given 1`] = `
-.c14 {
-  overflow: visible;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  font-size: 2.0rem;
-  cursor: pointer;
-}
-
-.c14 * {
-  fill-opacity: 1;
-  fill: #607890;
-}
-
-.c15 {
-  overflow: visible;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  font-size: 2.4rem;
-  cursor: inherit;
-}
-
-.c15 * {
-  fill-opacity: 1;
-  fill: #607890;
-}
-
 .c7 {
   top: 0;
   left: 0;
@@ -896,17 +872,17 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb,
-.c3 .sc-AxhUy {
+.c3 .sc-AxiKw,
+.c3 .sc-AxhCb {
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb *,
-.c3 .sc-AxhUy * {
+.c3 .sc-AxiKw *,
+.c3 .sc-AxhCb * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-AxirZ {
+.c3 ~ .sc-AxjAm {
   color: #546A7F;
 }
 
@@ -937,17 +913,17 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   color: #b0bcc8;
 }
 
-.c3 .sc-AxhCb,
-.c3 .sc-AxhUy {
+.c3 .sc-AxiKw,
+.c3 .sc-AxhCb {
   color: #b0bcc8;
 }
 
-.c3 .sc-AxhCb *,
-.c3 .sc-AxhUy * {
+.c3 .sc-AxiKw *,
+.c3 .sc-AxhCb * {
   fill: #b0bcc8;
 }
 
-.c3 ~ .sc-AxirZ {
+.c3 ~ .sc-AxjAm {
   color: #b0bcc8;
 }
 
@@ -1054,6 +1030,32 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   -webkit-transform: translate3d(0,20%,0) scale(0.75);
   -ms-transform: translate3d(0,20%,0) scale(0.75);
   transform: translate3d(0,20%,0) scale(0.75);
+}
+
+.c14 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.0rem;
+  cursor: pointer;
+}
+
+.c14 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c15 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
+}
+
+.c15 * {
+  fill-opacity: 1;
+  fill: #607890;
 }
 
 .c12 {
@@ -1202,6 +1204,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
     class="c0"
     disabled=""
     id="pharmacy-wrapper"
+    placeholder="Please Select"
   >
     <div
       class="c1 c2"
@@ -1220,7 +1223,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
             class="c5"
             disabled=""
             id="pharmacy-input"
-            placeholder="Please Select"
+            placeholder="1 options selected"
             type="text"
             value="all"
           />
@@ -1281,19 +1284,6 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 `;
 
 exports[`MultiSelect component with checkbox true should render correctly with default props 1`] = `
-.c11 {
-  overflow: visible;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  font-size: 2.4rem;
-  cursor: inherit;
-}
-
-.c11 * {
-  fill-opacity: 1;
-  fill: #607890;
-}
-
 .c7 {
   top: 0;
   left: 0;
@@ -1343,17 +1333,17 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb,
-.c3 .sc-AxhUy {
+.c3 .sc-AxiKw,
+.c3 .sc-AxhCb {
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb *,
-.c3 .sc-AxhUy * {
+.c3 .sc-AxiKw *,
+.c3 .sc-AxhCb * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-AxirZ {
+.c3 ~ .sc-AxjAm {
   color: #546A7F;
 }
 
@@ -1390,17 +1380,17 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   color: #126AFA;
 }
 
+.c3:focus-within .sc-AxiKw,
+.c3:focus-within:hover .sc-AxiKw,
 .c3:focus-within .sc-AxhCb,
-.c3:focus-within:hover .sc-AxhCb,
-.c3:focus-within .sc-AxhUy,
-.c3:focus-within:hover .sc-AxhUy {
+.c3:focus-within:hover .sc-AxhCb {
   color: #126AFA;
 }
 
+.c3:focus-within .sc-AxiKw *,
+.c3:focus-within:hover .sc-AxiKw *,
 .c3:focus-within .sc-AxhCb *,
-.c3:focus-within:hover .sc-AxhCb *,
-.c3:focus-within .sc-AxhUy *,
-.c3:focus-within:hover .sc-AxhUy * {
+.c3:focus-within:hover .sc-AxhCb * {
   fill: #126AFA;
 }
 
@@ -1521,6 +1511,19 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   transform: translate3d(0,20%,0) scale(0.75);
 }
 
+.c11 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
+}
+
+.c11 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
 .c9 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1586,6 +1589,7 @@ exports[`MultiSelect component with checkbox true should render correctly with d
   <div
     class="c0"
     id="medly-multiSelect-wrapper"
+    placeholder="Please Select . . ."
   >
     <div
       class="c1 c2"

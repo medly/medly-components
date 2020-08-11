@@ -12,9 +12,7 @@ export interface DefaultSelected {
     label: string;
 }
 
-type InputProps = Omit<HTMLProps<HTMLInputElement>, 'onChange' | 'defaultValue' | 'prefix'>;
-
-export interface SelectProps extends InputProps, WithThemeProp {
+export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onChange'>, WithThemeProp {
     /** Array of selected values */
     values?: any[];
     /** This method will be called with selected values */
@@ -41,9 +39,11 @@ export interface SelectProps extends InputProps, WithThemeProp {
     helperText?: string;
     /** Error Text */
     errorText?: string;
+    /** Function will called with the input value on Blur event */
+    validator?: (val: any[]) => string;
 }
 
-export interface SelectWrapperProps extends Omit<SelectProps, 'ref' | 'options'> {
+export interface SelectWrapperProps extends Omit<MultiSelectProps, 'ref' | 'options'> {
     isErrorPresent?: boolean;
     areOptionsVisible?: boolean;
 }

@@ -180,7 +180,7 @@ describe('MultiSelect component', () => {
             <MultiSelect id="pharmacy" values={[]} options={options} onChange={jest.fn()} required={true} />
         );
         fireEvent.invalid(container.querySelector('input'));
-        const message = await findByText('Please fill in this field');
+        const message = await findByText('Please select at least one option.');
         expect(message).toBeInTheDocument();
     });
 
@@ -198,5 +198,23 @@ describe('MultiSelect component', () => {
         const input = container.querySelector('input');
         fireEvent.focus(input);
         expect(input).not.toBe(document.activeElement);
+    });
+
+    it('should call validator with error message', async () => {
+        const validatorMock = (val: any[]) => (val.length === 0 ? 'error' : '');
+        const { container, findByText } = render(<MultiSelect options={options} validator={validatorMock} />);
+        const input = container.querySelector('input');
+        fireEvent.focus(input);
+        fireEvent.blur(document.getElementById('medly-multiSelect-wrapper'));
+        const message = await findByText('error');
+        expect(message).toBeInTheDocument();
+    });
+
+    it('should call validator on option click if validator is passed', () => {
+        const validatorMock = jest.fn();
+        const { getByText, getByRole } = render(<MultiSelect options={options} validator={validatorMock} />);
+        fireEvent.click(getByRole('textbox'));
+        fireEvent.click(getByText('Dummy1'));
+        expect(validatorMock).toHaveBeenCalledWith(['Dummy1']);
     });
 });

@@ -1,17 +1,17 @@
-import { ChevronDownIcon } from '@medly-components/icons';
 import { useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import TextField from '../TextField';
-import { Chip } from './Chip/Chip';
 import { filterOptions, getDefaultSelectedOptions } from './helpers';
-import { SuffixWrap, Wrapper } from './MultiSelect.styled';
+import InputSuffix from './InputSuffix';
+import { Wrapper } from './MultiSelect.styled';
 import Options from './Options';
-import { SelectProps } from './types';
+import { MultiSelectProps } from './types';
 
-export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
+export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 id,
+                label,
                 disabled,
                 values,
                 onChange,
@@ -19,22 +19,24 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                 variant,
                 fullWidth,
                 minWidth,
+                errorText,
+                required,
                 isSearchable,
-                ...inputProps
+                validator,
+                ...restProps
             } = props,
-            selectId = useMemo(() => id || inputProps.label?.toLocaleLowerCase() || 'medly-multiSelect', [id, inputProps.label]);
-
-        const defaultErrorMsg = 'Please fill in this field';
+            selectId = useMemo(() => id || label?.toLocaleLowerCase() || 'medly-multiSelect', [id, label]);
 
         const wrapperRef = useRef<HTMLDivElement>(null),
             optionsRef = useRef<HTMLUListElement>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
             [options, setOptions] = useState(defaultOptions),
+            [builtInErrorMessage, setErrorMessage] = useState(''),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(defaultOptions, values)),
             [inputValue, setInputValue] = useState(values.toString()),
             [placeholder, setPlaceholder] = useState(values.length > 0 ? `${values.length} options selected` : props.placeholder),
-            [errorMsg, setError] = useState('');
+            hasError = useMemo(() => !!errorText || !!builtInErrorMessage, [builtInErrorMessage, errorText]);
 
         const updateToDefaultOptions = useCallback(() => setOptions(defaultOptions), [defaultOptions]),
             hideOptions = useCallback(() => {
@@ -62,6 +64,7 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             handleOptionClick = useCallback(
                 (latestValues: any[]) => {
                     setSelectedOptions(getDefaultSelectedOptions(options, latestValues));
+                    setErrorMessage((validator && validator(latestValues)) || '');
                     onChange && onChange(latestValues);
                 },
                 [options, onChange]
@@ -70,29 +73,12 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                 areOptionsVisible && updateToDefaultOptions();
                 hideOptions();
             }, [areOptionsVisible]),
-            getState = useCallback(() => {
-                if (props.disabled) {
-                    return 'disabled';
-                } else if (props.errorText) {
-                    return 'error';
-                } else if (areOptionsVisible) {
-                    return 'active';
-                }
-                return 'default';
-            }, [areOptionsVisible, props.errorText, props.disabled]),
             onClearHandler = useCallback(() => {
                 setSelectedOptions([]);
                 setInputValue('');
             }, []),
-            handleOnBlur = useCallback(() => areOptionsVisible && inputRef.current.focus(), [areOptionsVisible]),
-            validate = useCallback((value: string, eventType: string) => {
-                if (eventType === 'invalid' && value.length === 0) {
-                    setError(defaultErrorMsg);
-                    return defaultErrorMsg;
-                } else {
-                    setError('');
-                }
-            }, []);
+            handleInputOnBlur = useCallback(() => areOptionsVisible && inputRef.current.focus(), [areOptionsVisible]),
+            inputValidator = useCallback(() => undefined, []);
 
         useEffect(() => {
             setSelectedOptions(getDefaultSelectedOptions(defaultOptions, values));
@@ -100,12 +86,9 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
         }, [defaultOptions, values]);
 
         useEffect(() => {
-            setPlaceholder(selectedOptions.length > 0 ? `${selectedOptions.length} options selected` : props.placeholder);
-        }, [selectedOptions]);
-
-        useEffect(() => {
             if (areOptionsVisible) {
                 inputRef.current && inputRef.current.focus();
+                setPlaceholder(selectedOptions.length > 0 ? `${selectedOptions.length} options selected` : props.placeholder);
             } else {
                 setInputValue(selectedOptions.map(obj => obj.value).toString());
                 setOptions(defaultOptions);
@@ -113,26 +96,36 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
             }
         }, [selectedOptions, areOptionsVisible]);
 
+        const validate = useCallback(() => {
+                const message =
+                    (validator && validator(selectedOptions)) ||
+                    (required && selectedOptions.length === 0 && 'Please select at least one option.') ||
+                    '';
+                setErrorMessage(message);
+            }, [selectedOptions, validator]),
+            handleWrapperOnBlur = useCallback(
+                (event: React.FocusEvent<HTMLDivElement>) => {
+                    const currentTarget = event.currentTarget;
+                    setTimeout(() => !currentTarget.contains(document.activeElement) && validate(), 0);
+                },
+                [validate]
+            );
+
         useOuterClickNotifier(() => {
             handleOuterClick();
         }, wrapperRef);
 
-        const chipEl = () => {
-            return (
-                <SuffixWrap id={`${selectId}-count`}>
-                    {selectedOptions.length > 0 && (
-                        <Chip
-                            testId="cancel-chip"
-                            label={selectedOptions.length}
-                            state={getState()}
-                            variant={variant}
-                            onClear={onClearHandler}
-                        />
-                    )}
-                    <ChevronDownIcon />
-                </SuffixWrap>
-            );
-        };
+        const ChipEl = () => (
+            <InputSuffix
+                id={`${selectId}-count`}
+                disabled={disabled}
+                variant={variant}
+                hasError={hasError}
+                onClear={onClearHandler}
+                isActive={areOptionsVisible}
+                optionsCount={selectedOptions.length}
+            />
+        );
 
         return (
             <Wrapper
@@ -140,12 +133,14 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                 ref={wrapperRef}
                 isSearchable={isSearchable}
                 onClick={toggleOptions}
-                isErrorPresent={!!errorMsg}
+                isErrorPresent={hasError}
+                onBlur={handleWrapperOnBlur}
                 areOptionsVisible={areOptionsVisible}
-                {...{ variant, disabled, minWidth, fullWidth }}
+                {...{ ...restProps, variant, disabled, minWidth, fullWidth }}
             >
                 <TextField
                     fullWidth
+                    required={required}
                     id={`${selectId}`}
                     autoComplete="off"
                     variant={variant}
@@ -153,13 +148,14 @@ export const MultiSelect: FC<SelectProps> & WithStyle = React.memo(
                     value={inputValue}
                     ref={inputRef}
                     placeholder={placeholder}
-                    suffix={chipEl}
+                    suffix={ChipEl}
+                    label={label}
+                    onInvalid={validate}
                     onChange={handleInputChange}
-                    onBlur={handleOnBlur}
-                    readOnly={!isSearchable && !inputProps.required}
-                    errorText={errorMsg}
-                    validator={validate}
-                    {...inputProps}
+                    onBlur={handleInputOnBlur}
+                    readOnly={!isSearchable && !required}
+                    errorText={errorText || builtInErrorMessage}
+                    validator={inputValidator}
                 />
                 {!disabled && areOptionsVisible && (
                     <Options
