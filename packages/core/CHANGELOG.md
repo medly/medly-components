@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.11.1...@medly-components/core@1.12.0) (2020-08-07)
+
+
+### Bug Fixes
+
+* add tests for multiSelect ([c1e7a12](https://github.com/medly/medly-components/commit/c1e7a1233f36bdab89b37587bc5d2165035692ce))
+* broken test cases and PR feedback ([0bd4a96](https://github.com/medly/medly-components/commit/0bd4a964dae367b4b0b82fc74358708735e3c54a))
+* bug related to required prop ([15cbe78](https://github.com/medly/medly-components/commit/15cbe78374fa94813bd6b8f9ba39d6ec8bb54938))
+* design feedback ([583fcd0](https://github.com/medly/medly-components/commit/583fcd0ac7b519ae1453664f4ff296cc257dd96d))
+* design feedbacks ([f8d2d92](https://github.com/medly/medly-components/commit/f8d2d9227bf3136f18c93b64e804139bc412a59f))
+* failing build ([59ebd5a](https://github.com/medly/medly-components/commit/59ebd5af2cd47221c76e0269815dd473fe89e0b9))
+* failing snapshots ([268cf04](https://github.com/medly/medly-components/commit/268cf04d9f93c86e76543bb00ac1f137e3a6b602))
+* fix failing tests ([9d6415e](https://github.com/medly/medly-components/commit/9d6415e4b01c048a542c488595dbfd06d4644f9c))
+* fix full width issue in multiSelect ([2d2098f](https://github.com/medly/medly-components/commit/2d2098f56e9e34cf76d1b47a9297c2781827eb0e))
+* fix grouped row selection issue in the table component ([11ab852](https://github.com/medly/medly-components/commit/11ab852640b7dc517f955293032bdb54cff9f142))
+* fix height and placeholder ([dc75769](https://github.com/medly/medly-components/commit/dc7576941316a6ce9af6fb069a56bc7820d328c2))
+* fix lint issues ([d7e4a4c](https://github.com/medly/medly-components/commit/d7e4a4cbbc978f506aac3b34af8a88d809b374cd))
+* fix loading state issue in table component ([09482b0](https://github.com/medly/medly-components/commit/09482b02763b0a4aef1b3e43ec4dbe29d2aca518))
+* fix loading state padding issue in grouped table ([b2a5006](https://github.com/medly/medly-components/commit/b2a5006b42c4741245c4d2efcee532a00c1f974d))
+* fix onBlur when required is true ([19784fa](https://github.com/medly/medly-components/commit/19784fa4602a7ff2e9d1807dd7dd671f151da962))
+* fix padding issue in L size table ([2f37d26](https://github.com/medly/medly-components/commit/2f37d26b635c972f594f92e03e8a8f1fa2cfbb8e))
+* fix snapshot ([598fddc](https://github.com/medly/medly-components/commit/598fddc59ddebee229bdc33a01cc3c0070efaefb))
+* fix sonar issues ([fa8fd52](https://github.com/medly/medly-components/commit/fa8fd526b9a96677e7f53d97c25c9531902ec545))
+* fix tab component prop types ([d111360](https://github.com/medly/medly-components/commit/d111360f20d48a0b7d7fbbdce2af50991eb026b8))
+* fix title row width issue in table component ([3b965eb](https://github.com/medly/medly-components/commit/3b965eb74f4fbcbe1538a13258feef6096b1bfcb))
+* fix warnings in table component ([09716b2](https://github.com/medly/medly-components/commit/09716b24d64519a8e73bb669c1a42ce3eab8d211))
+* increase test coverage ([79f0331](https://github.com/medly/medly-components/commit/79f0331a1d18be31e9f14b76e0158472b94b94aa))
+* make the options of checkbox full width ([4ddf1bd](https://github.com/medly/medly-components/commit/4ddf1bdeae9413a0255aa2cc985332eecc6c4380))
+* remove unused code ([e1e124b](https://github.com/medly/medly-components/commit/e1e124b0f1116b04d7e2edabace69c1f34108045))
+* required issue in multiSelect ([7af250a](https://github.com/medly/medly-components/commit/7af250ad9f6691a1778199a0c21d9a016235552b))
+* test case and feedback ([888a835](https://github.com/medly/medly-components/commit/888a835b89d542bed9ce057337f3b64cab4360ed))
+* update ids in textfield component ([6812536](https://github.com/medly/medly-components/commit/68125366e4b256b87cf37edbdff1660db2f61213))
+* update the styles for filled variant ([2a5b69b](https://github.com/medly/medly-components/commit/2a5b69bd639705f04da04a802a60c025eca18980))
+* update the tests and fix the issue of clearing the chip ([798d4b4](https://github.com/medly/medly-components/commit/798d4b4c82c045ed800ba21db68db8d023e5bbba))
+
+
+### Features
+
+* add column seperator if table is showing grouped data ([37af953](https://github.com/medly/medly-components/commit/37af953859eb6aed6ef9cf7f93d0a2c2e960ce39))
+* add count chip and secondary content in grouped title row in table component ([a514e89](https://github.com/medly/medly-components/commit/a514e893e874c9a4235b02ce09b184d2e55dffab))
+* add expanded and selected state in title row in table component ([229f8b4](https://github.com/medly/medly-components/commit/229f8b462c5928421863dc248e84c1a4f17531b5))
+* add function to get the grouped data ([a3d1b34](https://github.com/medly/medly-components/commit/a3d1b34725f2d0bc762637de988fd6eb973cb0f5))
+* add group data selection feature in table component ([fe96a7e](https://github.com/medly/medly-components/commit/fe96a7e954869715e6ba9e91849ad056992ca3be))
+* add scoll effect in grouped table component ([1fcaed8](https://github.com/medly/medly-components/commit/1fcaed8a390b4caa6ad9555f79887044366589da))
+
+
+
+
+
 ## [1.11.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.11.0...@medly-components/core@1.11.1) (2020-07-27)
 
 

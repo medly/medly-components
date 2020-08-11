@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.4.4...@medly-components/forms@1.5.0) (2020-08-07)
+
+
+### Bug Fixes
+
+* broken test cases and PR feedback ([0bd4a96](https://github.com/medly/medly-components/commit/0bd4a964dae367b4b0b82fc74358708735e3c54a))
+* bug related to required prop ([15cbe78](https://github.com/medly/medly-components/commit/15cbe78374fa94813bd6b8f9ba39d6ec8bb54938))
+* fix failing tests ([9d6415e](https://github.com/medly/medly-components/commit/9d6415e4b01c048a542c488595dbfd06d4644f9c))
+* make the options of checkbox full width ([4ddf1bd](https://github.com/medly/medly-components/commit/4ddf1bdeae9413a0255aa2cc985332eecc6c4380))
+* test case and feedback ([888a835](https://github.com/medly/medly-components/commit/888a835b89d542bed9ce057337f3b64cab4360ed))
+* update ids in textfield component ([6812536](https://github.com/medly/medly-components/commit/68125366e4b256b87cf37edbdff1660db2f61213))
+* update snapshots ([d0add25](https://github.com/medly/medly-components/commit/d0add25a8cedb1e6b309509d5b2ee7206b32b6bc))
+* update snapshots ([6775c03](https://github.com/medly/medly-components/commit/6775c03175bb1e8234a6db1bd84c7a0984e70db6))
+
+
+### Features
+
+* add onChange handler in form component ([58991a5](https://github.com/medly/medly-components/commit/58991a54f8ab941444e10b9c9c5d418c3c57ab72))
+
+
+
+
+
 ## [1.4.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.4.3...@medly-components/forms@1.4.4) (2020-07-27)
 
 **Note:** Version bump only for package @medly-components/forms

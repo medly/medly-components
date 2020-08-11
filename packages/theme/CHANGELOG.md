@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.7.0...@medly-components/theme@1.8.0) (2020-08-07)
+
+
+### Bug Fixes
+
+* fix onBlur when required is true ([19784fa](https://github.com/medly/medly-components/commit/19784fa4602a7ff2e9d1807dd7dd671f151da962))
+* fix sonarCloud issue ([fef6cf7](https://github.com/medly/medly-components/commit/fef6cf701049a002dd3de79b389ad78dc3db12ec))
+* update the styles for filled variant ([2a5b69b](https://github.com/medly/medly-components/commit/2a5b69bd639705f04da04a802a60c025eca18980))
+
+
+### Features
+
+* add count chip and secondary content in grouped title row in table component ([a514e89](https://github.com/medly/medly-components/commit/a514e893e874c9a4235b02ce09b184d2e55dffab))
+* add expanded and selected state in title row in table component ([229f8b4](https://github.com/medly/medly-components/commit/229f8b462c5928421863dc248e84c1a4f17531b5))
+* add group data selection feature in table component ([fe96a7e](https://github.com/medly/medly-components/commit/fe96a7e954869715e6ba9e91849ad056992ca3be))
+
+
+
+
+
 # [1.7.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.6.1...@medly-components/theme@1.7.0) (2020-07-27)
 
 

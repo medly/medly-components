@@ -9,27 +9,29 @@ export interface FormFieldSchema {
 }
 
 export interface Props extends FormProps {
-    // Field Schema
-    fieldSchema: FormFieldSchema;
+    /** Field Schema */
 
-    // Action Schema
+    fieldSchema: FormFieldSchema;
+    /** Action Schema */
     actionSchema?: FormActionSchema;
-    // Function to be called on submit
+    /** Function to be called on submit */
     onSubmit: (data: { [key: string]: any }) => void;
-    // Label for default action
+    /** Label for default action */
     actionLabel?: string;
-    // Form header
+    /** Form header */
     header?: string;
-    // Form Helper text
+    /** Form Helper text */
     helperText?: string;
-    // Api failure error messages (key should be aligned with the field key)
+    /** Api failure error messages (key should be aligned with the field key) */
     apiErrorMessages?: { [key: string]: any };
-    // Set it to true to hide the actions
+    /** Set it to true to hide the actions */
     hideActions?: boolean;
-    // Initial state of the form
+    /** Initial state of the form */
     initialState?: { [key: string]: any };
-    // Set it true to take the full width of the parent
+    /** Set it true to take the full width of the parent */
     fullWidth?: boolean;
-    // This key is to set the min width in px/rem/% (1rem = 10px)*/
+    /** This key is to set the min width in px/rem/% (1rem = 10px) */
     minWidth?: string;
+    /** Function to be called on values updating */
+    onChange?: (values: { [key: string]: any }) => void;
 }
