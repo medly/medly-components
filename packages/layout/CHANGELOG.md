@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.5.0...@medly-components/layout@1.6.0) (2020-08-12)
+
+
+### Bug Fixes
+
+* sidenav context issue ([97e3d47](https://github.com/medly/medly-components/commit/97e3d47eb20280bce5fd5d5bc12cfc7cb8a43593))
+
+
+### Features
+
+* export Sidenav context ([99b7a11](https://github.com/medly/medly-components/commit/99b7a113ef78af8be40cc19592709c509b816633))
+
+
+
+
+
 # [1.5.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.4.4...@medly-components/layout@1.5.0) (2020-08-07)
 
 

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.13.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.12.0...@medly-components/core@1.13.0) (2020-08-12)
+
+
+### Bug Fixes
+
+* add test cases to validator function used in multiselect component ([0fae89b](https://github.com/medly/medly-components/commit/0fae89b21a152ed7bea7f3cafcb8d507b7f0e311))
+* column width in grouped table ([9eef920](https://github.com/medly/medly-components/commit/9eef92083602a27a0e4719a7053ef9f644141d65))
+
+
+### Features
+
+* add validation on blur event in multiselect component ([80dc4e3](https://github.com/medly/medly-components/commit/80dc4e3b7f16191f3ff95784e05f25af626d1abd))
+
+
+
+
+
 # [1.12.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.11.1...@medly-components/core@1.12.0) (2020-08-07)
 
 
