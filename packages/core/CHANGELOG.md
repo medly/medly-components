@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.13.0...@medly-components/core@1.13.1) (2020-08-12)
+
+
+### Bug Fixes
+
+* failing table component on rerendering ([0e7cf06](https://github.com/medly/medly-components/commit/0e7cf06996f27ee7a1ce87f5b3c701bb94ca98d8))
+* grouped row content column width issue ([72d8c24](https://github.com/medly/medly-components/commit/72d8c243cf58bc6420a9e234ea2f63b6079c627d))
+
+
+
+
+
 # [1.13.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.12.0...@medly-components/core@1.13.0) (2020-08-12)
 
 
