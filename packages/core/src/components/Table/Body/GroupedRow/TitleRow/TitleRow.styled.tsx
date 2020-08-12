@@ -9,7 +9,7 @@ import { StyledProps } from './types';
 export const Row = styled('tr')<StyledProps>`
     display: grid;
     grid-template-columns: ${({ tableSize, isRowExpandable, isRowSelectable }) =>
-        `${tableSize === 'L' ? '6.4rem' : '4.8rem'} ${
+        `${tableSize === 'L' ? '5.5rem' : '4.8rem'} ${
             isRowExpandable && isRowSelectable
                 ? tableSize === 'L'
                     ? '11.6rem'
@@ -78,6 +78,7 @@ export const ExpansionCell = styled('td')<{
     height: 100%;
     position: sticky;
     left: 0;
+    padding: 0;
     padding: ${({ showPadding, tableSize }) => showPadding && tableCellPaddings[tableSize]};
     ${centerAligned()}
     border-right: 1px solid ${({ theme }) => theme.table.borderColor};
