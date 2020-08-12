@@ -45,6 +45,6 @@ export const SideNav: FC<SideNavProps> & WithStyle & SideNavStaticProps = props 
 
 SideNav.List = NavList;
 SideNav.Nav = NavItem;
-
+SideNav.Context = SideNavContext;
 SideNav.displayName = 'SideNav';
 SideNav.Style = Styled.Aside;
