@@ -19,7 +19,7 @@ export { default as List } from './List';
 export { default as Modal } from './Modal';
 export { default as MultiSelect } from './MultiSelect';
 export { default as Pagination } from './Pagination';
-export { Popover, PopoverWithBackground, PopoverWrapper } from './Popover';
+export { default as Popover } from './Popover';
 export { default as Radio } from './Radio';
 export { default as RadioGroup } from './RadioGroup';
 export { default as SingleSelect } from './SingleSelect';

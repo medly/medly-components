@@ -77,19 +77,11 @@ exports[`DatePicker component should render properly when value is of date type 
 }
 
 .c3 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-}
-
-.c3 .sc-fznJRM {
-  top: calc(100% + 5px);
-  left: 0%;
 }
 
 .c5 {
@@ -295,19 +287,11 @@ exports[`DatePicker component should render properly when value is of string typ
 }
 
 .c3 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-}
-
-.c3 .sc-fznJRM {
-  top: calc(100% + 5px);
-  left: 0%;
 }
 
 .c5 {

@@ -1,6 +1,6 @@
 import { cleanup, render } from '@test-utils';
 import React from 'react';
-import { Placement } from '../PopoverWrapper/types';
+import { Placement } from '../types';
 import { PopoverWithBackground } from './PopoverWithBackground';
 import { Props } from './types';
 

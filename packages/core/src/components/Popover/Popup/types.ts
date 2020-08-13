@@ -1,8 +1,11 @@
 import { HTMLProps } from '@medly-components/utils';
+import { Placement } from '../types';
 
-export interface Props extends HTMLProps<HTMLDivElement> {
+export interface PopupProps extends HTMLProps<HTMLDivElement> {
     /** Takes full width of the parent component */
     fullWidth?: boolean;
     /** Takes full height of the parent component */
     fullHeight?: boolean;
+    /** Placement of the popup */
+    placement?: Placement;
 }

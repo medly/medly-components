@@ -1,5 +1,5 @@
 import { css, fullHeight, fullWidth, styled } from '@medly-components/utils';
-import { Placement } from '../PopoverWrapper/types';
+import { Placement } from '../types';
 import { Props } from './types';
 
 export const PopoverContent = styled('div')<Props>`

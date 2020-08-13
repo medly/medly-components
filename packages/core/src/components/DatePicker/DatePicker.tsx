@@ -3,7 +3,7 @@ import { format } from 'date-fns';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import Calendar from '../Calendar';
 import FieldWithLabel from '../FieldWithLabel';
-import { Popover, PopoverWrapper } from '../Popover';
+import Popover from '../Popover';
 import * as Styled from './DatePicker.styled';
 import { Props } from './types';
 
@@ -28,19 +28,13 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             [value, displayFormat]
         );
 
-    const [isCalendarVisible, setCalendarVisibilityState] = useState(false),
-        [formattedDate, setFormattedDate] = useState('');
+    const [formattedDate, setFormattedDate] = useState('');
 
     useEffect(() => {
         setFormattedDate(date ? format(date, displayFormat) : '');
-        setCalendarVisibilityState(false);
     }, [date]);
 
-    const hideCalendar = useCallback(() => setCalendarVisibilityState(false), []),
-        showCalendar = useCallback(() => !restProps.disabled && setCalendarVisibilityState(true), [restProps.disabled]),
-        handleInputOnChange = useCallback(() => {
-            return;
-        }, []);
+    const handleInputOnChange = useCallback(() => null, []);
 
     return (
         <FieldWithLabel id={`${id}`} {...{ labelPosition, fullWidth, minWidth }}>
@@ -49,7 +43,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                     {label}
                 </FieldWithLabel.Label>
             )}
-            <PopoverWrapper placement={popoverPlacement} showPopover={isCalendarVisible} onClick={showCalendar} onOuterClick={hideCalendar}>
+            <Popover interactionType="click">
                 <Styled.Input
                     fullWidth
                     {...restProps}
@@ -59,7 +53,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                     autoComplete="off"
                     onChange={handleInputOnChange}
                 />
-                <Popover id={`${id}-popover`}>
+                <Popover.Popup id={`${id}-popover`} placement={popoverPlacement}>
                     <Calendar
                         id={`${id}-calendar`}
                         date={date}
@@ -67,8 +61,8 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                         minSelectableDate={minSelectableDate ?? undefined}
                         maxSelectableDate={maxSelectableDate ?? undefined}
                     />
-                </Popover>
-            </PopoverWrapper>
+                </Popover.Popup>
+            </Popover>
         </FieldWithLabel>
     );
 });
@@ -85,4 +79,4 @@ DatePicker.defaultProps = {
     popoverPlacement: 'bottom-start'
 };
 DatePicker.displayName = 'DatePicker';
-DatePicker.Style = PopoverWrapper.Style;
+DatePicker.Style = Popover.Style;

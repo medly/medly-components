@@ -1,9 +1,8 @@
-import { css, styled } from '@medly-components/utils';
-import Popover from '../Popover';
-import { Placement, Props } from './types';
+import { css, fullHeight, fullWidth, styled } from '@medly-components/utils';
+import { PopupProps } from './types';
 
-export const getPosition = (position: Placement) => {
-    switch (position) {
+export const getPosition = ({ placement }: Partial<PopupProps>) => {
+    switch (placement) {
         case 'top-start':
             return css`
                 bottom: calc(100% + 5px);
@@ -12,7 +11,8 @@ export const getPosition = (position: Placement) => {
         case 'top':
             return css`
                 bottom: calc(100% + 5px);
-                align-self: center;
+                left: 50%;
+                transform: translateX(-50%);
             `;
         case 'top-end':
             return css`
@@ -27,7 +27,8 @@ export const getPosition = (position: Placement) => {
         case 'right':
             return css`
                 left: calc(100% + 5px);
-                align-self: center;
+                top: 50%;
+                transform: translateY(-50%);
             `;
         case 'right-end':
             return css`
@@ -42,7 +43,8 @@ export const getPosition = (position: Placement) => {
         case 'bottom':
             return css`
                 top: calc(100% + 5px);
-                align-self: center;
+                left: 50%;
+                transform: translateX(-50%);
             `;
         case 'bottom-end':
             return css`
@@ -57,7 +59,8 @@ export const getPosition = (position: Placement) => {
         case 'left':
             return css`
                 right: calc(100% + 5px);
-                align-self: center;
+                top: 50%;
+                transform: translateY(-50%);
             `;
         case 'left-end':
             return css`
@@ -67,42 +70,11 @@ export const getPosition = (position: Placement) => {
     }
 };
 
-const getFlexDirection = (position: Placement) => {
-    switch (position) {
-        case 'top-start':
-        case 'top':
-        case 'top-end':
-            return css`
-                flex-direction: column;
-            `;
-        case 'right-start':
-        case 'right':
-        case 'right-end':
-            return css`
-                flex-direction: row;
-            `;
-        case 'bottom-start':
-        case 'bottom':
-        case 'bottom-end':
-            return css`
-                flex-direction: column-reverse;
-            `;
-        case 'left-start':
-        case 'left':
-        case 'left-end':
-            return css`
-                flex-direction: row-reverse;
-            `;
-    }
-};
+export const PopupStyled = styled('div')<PopupProps>`
+    position: absolute;
+    z-index: 1000;
 
-export const PopoverWrapperStyled = styled('div')<Props>`
-    display: inline-flex;
-    position: relative;
-
-    ${({ placement }) => getFlexDirection(placement)}
-
-    ${Popover.Style} {
-        ${({ placement }) => getPosition(placement)}
-    }
+    ${getPosition}
+    ${props => props.fullWidth && fullWidth()};
+    ${props => props.fullHeight && fullHeight()};
 `;

@@ -1,5 +1,5 @@
 import { HTMLProps } from '@medly-components/utils';
-import { Placement } from '../PopoverWrapper/types';
+import { Placement } from '../types';
 
 export interface Props extends HTMLProps<HTMLDivElement> {
     /** Takes full width of the parent component */

@@ -1,6 +1,6 @@
 import { boolean, number, select, text } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
-import { Placement } from '../Popover/PopoverWrapper/types';
+import { Placement } from '../Popover/types';
 import { DateRangePicker } from './DateRangePicker';
 import { Props } from './types';
 
@@ -27,7 +27,7 @@ export const Basic = () => {
         <DateRangePicker
             value={dates}
             onChange={setDates}
-            placement={select('Placement', placement, 'bottom')}
+            placement={select('Placement', placement, 'bottom-start')}
             fullWidth={boolean('Full Width', false)}
             minWidth={number('Min Width', 300)}
             disabled={boolean('Disabled', false)}

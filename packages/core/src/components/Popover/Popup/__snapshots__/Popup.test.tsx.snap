@@ -1,0 +1,229 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popover component should render properly with placement bottom 1`] = `
+.c0 {
+  position: absolute;
+  z-index: 1000;
+  top: calc(100% + 5px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component should render properly with placement bottom-end 1`] = `
+.c0 {
+  position: absolute;
+  z-index: 1000;
+  top: calc(100% + 5px);
+  right: 0%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component should render properly with placement bottom-start 1`] = `
+.c0 {
+  position: absolute;
+  z-index: 1000;
+  top: calc(100% + 5px);
+  left: 0%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component should render properly with placement left 1`] = `
+.c0 {
+  position: absolute;
+  z-index: 1000;
+  right: calc(100% + 5px);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component should render properly with placement left-end 1`] = `
+.c0 {
+  position: absolute;
+  z-index: 1000;
+  right: calc(100% + 5px);
+  bottom: 0%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component should render properly with placement left-start 1`] = `
+.c0 {
+  position: absolute;
+  z-index: 1000;
+  right: calc(100% + 5px);
+  top: 0%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component should render properly with placement right 1`] = `
+.c0 {
+  position: absolute;
+  z-index: 1000;
+  left: calc(100% + 5px);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component should render properly with placement right-end 1`] = `
+.c0 {
+  position: absolute;
+  z-index: 1000;
+  bottom: 0;
+  left: calc(100% + 5px);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component should render properly with placement right-start 1`] = `
+.c0 {
+  position: absolute;
+  z-index: 1000;
+  top: 0%;
+  left: calc(100% + 5px);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component should render properly with placement top 1`] = `
+.c0 {
+  position: absolute;
+  z-index: 1000;
+  bottom: calc(100% + 5px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component should render properly with placement top-end 1`] = `
+.c0 {
+  position: absolute;
+  z-index: 1000;
+  bottom: calc(100% + 5px);
+  right: 0%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component should render properly with placement top-start 1`] = `
+.c0 {
+  position: absolute;
+  z-index: 1000;
+  bottom: calc(100% + 5px);
+  left: 0%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;

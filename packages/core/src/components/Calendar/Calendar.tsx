@@ -1,6 +1,7 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import Button from '../Button';
 import Card from '../Card';
+import { PopoverContext } from '../Popover/Popover.context';
 import SingleSelect from '../SingleSelect';
 import Text from '../Text';
 import * as Styled from './Calendar.styled';
@@ -10,11 +11,18 @@ import { Props } from './types';
 
 export const Calendar: React.FC<Props> = React.memo(({ date, onChange, minSelectableDate, maxSelectableDate, ...restProps }) => {
     const today = new Date(),
+        [, setCalenderVisibility] = useContext(PopoverContext),
         [{ month, year }, setMonthAndYear] = useState(getMonthAndYearFromDate(date || today)),
         { month: minMonth, year: minYear } = getMonthAndYearFromDate(minSelectableDate),
         { month: maxMonth, year: maxYear } = getMonthAndYearFromDate(maxSelectableDate);
 
-    const handleDateChange = useCallback((newDate: Date) => () => onChange(newDate), [onChange]),
+    const handleDateChange = useCallback(
+            (newDate: Date) => () => {
+                setCalenderVisibility(false);
+                onChange(newDate);
+            },
+            [onChange]
+        ),
         handleNextBtnClick = useCallback(() => setMonthAndYear(getNextMonthAndYear(month, year)), [month, year]),
         handlePreviousBtnClick = useCallback(() => setMonthAndYear(getPreviousMonthAndYear(month, year)), [month, year]),
         handleMonthChange = useCallback((value: number) => setMonthAndYear(prev => ({ year: prev.year, month: value })), []),
