@@ -1,10 +1,10 @@
+import { DateRangeIcon } from '@medly-components/icons';
 import { parseToDate, WithStyle } from '@medly-components/utils';
 import { format } from 'date-fns';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import Calendar from '../Calendar';
-import FieldWithLabel from '../FieldWithLabel';
 import { Popover, PopoverWrapper } from '../Popover';
-import * as Styled from './DatePicker.styled';
+import TextField from '../TextField';
 import { Props } from './types';
 
 export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
@@ -20,6 +20,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             popoverPlacement,
             minSelectableDate,
             maxSelectableDate,
+            placeholder,
             ...restProps
         } = props,
         id = props.id || 'medly-datepicker',
@@ -43,21 +44,17 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
         }, []);
 
     return (
-        <FieldWithLabel id={`${id}`} {...{ labelPosition, fullWidth, minWidth }}>
-            {label && (
-                <FieldWithLabel.Label {...{ required, labelPosition }} htmlFor={id}>
-                    {label}
-                </FieldWithLabel.Label>
-            )}
+        <div>
             <PopoverWrapper placement={popoverPlacement} showPopover={isCalendarVisible} onClick={showCalendar} onOuterClick={hideCalendar}>
-                <Styled.Input
-                    fullWidth
-                    {...restProps}
-                    required={required}
+                <TextField
                     id={`${id}-input`}
                     value={formattedDate}
-                    autoComplete="off"
-                    onChange={handleInputOnChange}
+                    required={required}
+                    suffix={DateRangeIcon}
+                    placeholder={placeholder}
+                    label={label}
+                    variant={restProps.variant}
+                    fullWidth
                 />
                 <Popover id={`${id}-popover`}>
                     <Calendar
@@ -69,13 +66,14 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                     />
                 </Popover>
             </PopoverWrapper>
-        </FieldWithLabel>
+        </div>
     );
 });
 
 DatePicker.defaultProps = {
     value: null,
-    placeholder: 'Select Date',
+    placeholder: 'Date of Birth',
+    variant: 'filled',
     displayFormat: 'MM/dd/yyyy',
     disabled: false,
     required: false,

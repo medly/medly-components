@@ -45,4 +45,6 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     maxSelectableDate?: Date;
     /** Popover placement */
     popoverPlacement?: Placement;
+    /** Input variants for DatePicker */
+    variant?: 'outlined' | 'filled';
 }

@@ -6,6 +6,8 @@ import { Props } from './types';
 
 const labelPosition: Props['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
 
+const variants: Props['variant'][] = ['outlined', 'filled'];
+
 export const Basic = () => {
     const [date, setDate] = useState(null);
 
@@ -16,8 +18,9 @@ export const Basic = () => {
             fullWidth={boolean('Full Width', false)}
             displayFormat={text('Display Format', 'MM/dd/yyyy') as Props['displayFormat']}
             disabled={boolean('Disabled', false)}
-            placeholder={text('Placeholder', 'Start Date')}
-            label={text('Label', 'Start Date')}
+            placeholder={text('Placeholder', 'MM / DD / YYYY')}
+            label={text('Label', 'Date of Birth')}
+            variant={select('variant', variants, 'outlined')}
             labelPosition={select('Label Position', labelPosition, 'left')}
             popoverPlacement={select('Popover Placement', placement, 'bottom-start')}
             required={boolean('Required', false)}
