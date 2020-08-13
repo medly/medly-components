@@ -32,7 +32,7 @@ export interface TableColumnConfig {
     /** Pass any function to format the column data */
     formatter?: (data: any) => any;
     /** Custom component */
-    component?: React.FC<{ data: any; rowId?: any; disabled?: boolean }>;
+    component?: React.FC<{ data: any; rowId: any; disabled: boolean; rowData: Data }>;
     /** This will be handled internally */
     size?: string;
 }

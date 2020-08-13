@@ -1,5 +1,5 @@
 import { HTMLProps } from '@medly-components/utils';
-import { TableColumnConfig, TableProps } from '../../types';
+import { Data, TableColumnConfig, TableProps } from '../../types';
 
 export type TableCellStyledProps = {
     hidden?: boolean;
@@ -13,6 +13,7 @@ export type TableCellProps = TableCellStyledProps &
     HTMLProps<HTMLTableCellElement> & {
         data: any;
         rowId: any;
+        rowData: Data;
         config: TableColumnConfig;
         dottedFieldName?: string;
         isLoading?: boolean;
