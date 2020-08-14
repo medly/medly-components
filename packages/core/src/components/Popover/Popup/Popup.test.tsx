@@ -15,22 +15,24 @@ const renderer = (props: PopupProps) =>
 describe('Popover component', () => {
     afterEach(cleanup);
 
-    test.each([
-        'top-start',
-        'top',
-        'top-end',
-        'right-start',
-        'right',
-        'right-end',
-        'bottom-end',
-        'bottom',
-        'bottom-start',
-        'left-end',
-        'left',
-        'left-start'
-    ])('should render properly with placement %s', (placement: Placement) => {
-        const { container } = renderer({ placement });
-        expect(container).toMatchSnapshot();
+    describe.each(['with arrow', 'without arrow'])('%s', str => {
+        test.each([
+            'top-start',
+            'top',
+            'top-end',
+            'right-start',
+            'right',
+            'right-end',
+            'bottom-end',
+            'bottom',
+            'bottom-start',
+            'left-end',
+            'left',
+            'left-start'
+        ])('and placement %s, should render properly', (placement: Placement) => {
+            const { container } = renderer({ placement, withArrow: str === 'with arrow' });
+            expect(container).toMatchSnapshot();
+        });
     });
 
     it('should render popover with full width and height if fullWidth and fullHeight are given', () => {

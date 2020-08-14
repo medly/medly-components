@@ -1,7 +1,7 @@
 import { WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useContext } from 'react';
 import { PopoverContext } from '../Popover.context';
-import { PopupStyled } from './Popup.styled';
+import { PopupStyled } from './styled/Popup.styled';
 import { PopupProps } from './types';
 
 export const Popup: FC<PopupProps> & WithStyle = React.memo(
@@ -15,7 +15,10 @@ export const Popup: FC<PopupProps> & WithStyle = React.memo(
 Popup.displayName = 'Popup';
 Popup.Style = PopupStyled;
 Popup.defaultProps = {
+    bgColor: 'white',
+    distance: '0px',
     placement: 'bottom',
+    withArrow: false,
     fullWidth: false,
     fullHeight: false
 };

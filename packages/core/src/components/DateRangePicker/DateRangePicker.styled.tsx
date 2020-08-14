@@ -1,5 +1,5 @@
 import { getFontStyle, styled } from '@medly-components/utils';
-import { getPosition } from '../Popover/Popup/Popup.styled';
+import { getPosition } from '../Popover/Popup/styled/Popup.styled';
 import { StyledProps } from './types';
 
 export const DateRangePickerStyled = styled('div').attrs(({ theme: { input, font } }) => ({ input, font }))<StyledProps>`

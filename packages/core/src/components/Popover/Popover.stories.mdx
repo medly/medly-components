@@ -1,6 +1,6 @@
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { Popover } from './Popover.tsx';
-import { withKnobs, boolean, select } from '@storybook/addon-knobs';
+import { withKnobs, boolean, select, color } from '@storybook/addon-knobs';
 import { DummyDiv, DummyWrapper, DummyPopover, interactionTypes, placements } from './Popover.stories.tsx';
 
 <Meta title="Core" component={Popover} />
@@ -27,6 +27,8 @@ Simple popover component which will show popup on hovering/clicking on the conte
                     placement={select('Placement', placements, 'bottom')}
                     fullWidth={boolean('Full Width', false)}
                     fullHeight={boolean('Full Height', false)}
+                    withArrow={boolean('With Arrow', false)}
+                    bgColor={color('Background color', 'white')}
                     distance="0.5rem"
                 >
                     <DummyPopover>This is Popover</DummyPopover>
@@ -35,6 +37,10 @@ Simple popover component which will show popup on hovering/clicking on the conte
         </DummyWrapper>
     </Story>
 </Preview>
+
+### With Arrow
+
+if you want to use your popup as tooltip, you can set `withArrow` prop as true. Also you can change the background color using `bgColor` prop.
 
 ### Note
 
