@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.6.1...@medly-components/layout@1.7.0) (2020-08-14)
+
+
+### Features
+
+* add with arrow style in popover component ([ab1860c](https://github.com/medly/medly-components/commit/ab1860cb2b9ecffa36bea340e5ac30f451cf3cc7))
+
+
+
+
+
 ## [1.6.1](https://github.com/medly/medly-components/compare/@medly-components/layout@1.6.0...@medly-components/layout@1.6.1) (2020-08-12)
 
 **Note:** Version bump only for package @medly-components/layout

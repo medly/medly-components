@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.13.1...@medly-components/core@1.14.0) (2020-08-14)
+
+
+### Bug Fixes
+
+* lint issues ([eaab9e1](https://github.com/medly/medly-components/commit/eaab9e1e899a22d44acc418e7237733a5488c1ea))
+
+
+### Features
+
+* add distance prop in the popover component ([8f36bb0](https://github.com/medly/medly-components/commit/8f36bb04bd214783eb019029bdee61dd24463b2c))
+* add rowData in custom column component ([83128d5](https://github.com/medly/medly-components/commit/83128d5de43da1d66e8a86ac6e5eaa8ba6004d43))
+* add with arrow style in popover component ([ab1860c](https://github.com/medly/medly-components/commit/ab1860cb2b9ecffa36bea340e5ac30f451cf3cc7))
+
+
+
+
+
 ## [1.13.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.13.0...@medly-components/core@1.13.1) (2020-08-12)
 
 

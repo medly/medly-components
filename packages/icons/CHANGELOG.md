@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.6](https://github.com/medly/medly-components/compare/@medly-components/icons@1.1.5...@medly-components/icons@1.1.6) (2020-08-14)
+
+
+### Bug Fixes
+
+* icon name overlapping issue ([4b71ce6](https://github.com/medly/medly-components/commit/4b71ce620d2a3bdd2a2518a9f10acb6db2c64396))
+
+
+
+
+
 ## [1.1.5](https://github.com/medly/medly-components/compare/@medly-components/icons@1.1.4...@medly-components/icons@1.1.5) (2020-08-07)
 
 **Note:** Version bump only for package @medly-components/icons
