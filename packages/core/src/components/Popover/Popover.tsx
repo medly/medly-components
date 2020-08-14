@@ -11,7 +11,7 @@ export const Popover: FC<Props> & WithStyle & StaticProps = React.memo(({ id, in
         wrapperRef = useRef(null),
         wrapperId = id || 'medly-popover-wrapper';
 
-    const handleMouseEnter = useCallback(() => interactionType === 'hover' && setOpenState(true), [interactionType]),
+    const handleMouseOver = useCallback(() => interactionType === 'hover' && setOpenState(true), [interactionType]),
         handleMouseLeave = useCallback(() => interactionType === 'hover' && setOpenState(false), [interactionType]),
         handleMouseClick = useCallback(() => interactionType === 'click' && setOpenState(val => !val), [interactionType]);
 
@@ -23,7 +23,7 @@ export const Popover: FC<Props> & WithStyle & StaticProps = React.memo(({ id, in
                 {...restProps}
                 ref={wrapperRef}
                 id={wrapperId}
-                onMouseEnter={handleMouseEnter}
+                onMouseOver={handleMouseOver}
                 onMouseLeave={handleMouseLeave}
                 onClick={handleMouseClick}
             />
