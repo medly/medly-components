@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.14.0...@medly-components/core@1.14.1) (2020-08-14)
+
+
+### Bug Fixes
+
+* popover style type issue ([aec5435](https://github.com/medly/medly-components/commit/aec5435d5452f9bed31bd9e9388c94b76f25b41a))
+
+
+
+
+
 # [1.14.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.13.1...@medly-components/core@1.14.0) (2020-08-14)
 
 
