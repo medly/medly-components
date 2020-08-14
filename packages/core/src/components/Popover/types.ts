@@ -1,5 +1,5 @@
 import { HTMLProps } from '@medly-components/utils';
-import { PopupProps } from './Popup/types';
+import Popup from './Popup';
 
 export type Placement =
     | 'top-start'
@@ -23,7 +23,7 @@ export type PopoverContextType = [
 ];
 
 export type StaticProps = {
-    Popup?: React.FC<PopupProps>;
+    Popup?: typeof Popup;
     Context?: React.Context<PopoverContextType>;
 };
 
