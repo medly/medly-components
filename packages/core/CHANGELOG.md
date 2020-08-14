@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.14.1...@medly-components/core@1.14.2) (2020-08-14)
+
+
+### Bug Fixes
+
+* mouse over issue in popover component ([58e6602](https://github.com/medly/medly-components/commit/58e66021852a0ff2b763e3272e3e0e5bd4b26f72))
+
+
+
+
+
 ## [1.14.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.14.0...@medly-components/core@1.14.1) (2020-08-14)
 
 
