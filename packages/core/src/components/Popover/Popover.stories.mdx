@@ -1,61 +1,69 @@
-import Popover from './Popover';
-import PopoverWrapper from './PopoverWrapper';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './Popover.stories';
+import { Popover } from './Popover.tsx';
+import { withKnobs, boolean, select, color } from '@storybook/addon-knobs';
+import { DummyDiv, DummyWrapper, DummyPopover, interactionTypes, placements } from './Popover.stories.tsx';
 
-<Meta title="Core/Popover" component={Popover} />
+<Meta title="Core" component={Popover} />
 
 # Popover
 
-You have to use both `Popover` & `PopoverWrapper` component.
+Simple popover component which will show popup on hovering/clicking on the content. The basic structure would be like below:
 
-```typescript
-import { Popover, PopoverWrapper } from '@medly-components/core';
-
-export const WithClickInteraction = () => {
-    const [isPopoverVisible, setPopoverVisibilityState] = useState(false);
-
-    const showPopover = () => setPopoverVisibilityState(true),
-        hidePopover = () => setPopoverVisibilityState(false);
-
-    return (
-        <DummyWrapper>
-            <PopoverWrapper
-                showPopover={isPopoverVisible}
-                onClick={showPopover}
-                onOuterClick={hidePopover}
-                placement={select('Placement', placement, 'top')}
-            >
-                <DummyDiv>Hello</DummyDiv>
-                <Popover fullWidth={boolean('Popover Full Width', false)} fullHeight={boolean('Popover Full Height', false)}>
-                    <DummyPopoverContent>This is Popover</DummyPopoverContent>
-                </Popover>
-            </PopoverWrapper>
-        </DummyWrapper>
-    );
-};
+```tsx
+<Popover interactionType="hover">
+    <YourContent>Hello</YourContent>
+    <Popover.Popup placement="bottom">
+        <YourPopoverContent>This is Popover</YourPopoverContent>
+    </Popover.Popup>
+</Popover>
 ```
 
-### Popover with click interaction
-
-We have to use `onClick` and `onOuterclick` functions to set popover state.
-
 <Preview withToolbar>
-    <Story name="WithClickInteraction">{stories.WithClickInteraction()}</Story>
+    <Story name="Popover" decorators={[withKnobs]}>
+        <DummyWrapper>
+            <Popover interactionType={select('Interaction Type', interactionTypes, 'hover')}>
+                <DummyDiv>Hello</DummyDiv>
+                <Popover.Popup
+                    placement={select('Placement', placements, 'bottom')}
+                    fullWidth={boolean('Full Width', false)}
+                    fullHeight={boolean('Full Height', false)}
+                    withArrow={boolean('With Arrow', false)}
+                    bgColor={color('Background color', 'white')}
+                >
+                    <DummyPopover>This is Popover</DummyPopover>
+                </Popover.Popup>
+            </Popover>
+        </DummyWrapper>
+    </Story>
 </Preview>
 
-### Popover with hover interaction
+### With Arrow
 
-We have to use `onMouseEnter` and `onMouseLeave` functions to set popover state.
+if you want to use your popup as tooltip, you can set `withArrow` prop as true. Also you can change the background color using `bgColor` prop.
 
-<Preview withToolbar>
-    <Story name="WithHoverInteraction">{stories.WithHoverInteraction()}</Story>
-</Preview>
+### Note
 
-### PopoverWrapper Props
+> You can also override the style of `Popover.Style` & `Popover.Popup.Style`
 
-<Props of={PopoverWrapper} />
+We have also exposed `Popover.Context`, so that you can find out the latest open state. Popover context can be used like below:
+
+```tsx
+const [isOpen, setOpenState] = useContext(Popover.Context);
+```
+
+Type of Popover Context is:
+
+```tsx
+export type PopoverContextType = [
+    boolean /** Current open state */,
+    React.Dispatch<React.SetStateAction<boolean>> /** Function to be called to toggle the open state */
+];
+```
 
 ### Popover Props
 
 <Props of={Popover} />
+
+### Popover.Popup Props
+
+<Props of={Popover.Popup} />

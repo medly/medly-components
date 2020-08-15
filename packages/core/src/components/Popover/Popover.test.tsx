@@ -1,80 +1,54 @@
 import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
-import Popover from './Popover';
-import PopoverWrapper from './PopoverWrapper';
-import { Placement, Props } from './PopoverWrapper/types';
+import { Popover } from './Popover';
+import { InteractionType } from './types';
 
-const renderer = ({ showPopover = false, placement = 'left', onOuterClick = jest.fn() }: Props) =>
-    render(
-        <PopoverWrapper {...{ showPopover, placement, onOuterClick }}>
-            <div>Dummy Div</div>
-            <Popover>Dummy popover</Popover>
-        </PopoverWrapper>
+const renderer = (interactionType: InteractionType = 'hover') => {
+    const utils = render(
+        <>
+            <span>outside span</span>
+            <Popover interactionType={interactionType}>
+                <div>Dummy Div</div>
+                <Popover.Popup>Dummy popover</Popover.Popup>
+            </Popover>
+        </>
     );
+    return { ...utils, wrapper: utils.container.querySelector('#medly-popover-wrapper') };
+};
 
 describe('Popover component', () => {
     afterEach(cleanup);
 
-    describe('with placement', () => {
-        afterEach(cleanup);
-
-        test.each([
-            'top-start',
-            'top',
-            'top-end',
-            'right-start',
-            'right',
-            'right-end',
-            'bottom-end',
-            'bottom',
-            'bottom-start',
-            'left-end',
-            'left',
-            'left-start'
-        ])('%s, should render properly', (placement: Placement) => {
-            const { container } = renderer({ placement, showPopover: true });
-            fireEvent.mouseOver(container.querySelector('#medly-popover-wrapper'));
-            expect(container).toMatchSnapshot();
-        });
+    it('should render popover on hovering when interactionType prop is set to hover', () => {
+        const { container, wrapper } = renderer();
+        fireEvent.mouseOver(wrapper);
+        expect(container.querySelector('#medly-popover-popup')).toBeVisible();
+        fireEvent.mouseLeave(wrapper);
+        expect(container.querySelector('#medly-popover-popup')).toBeNull();
     });
 
-    it('should render popover when showPopover is given', () => {
-        const { container } = renderer({ showPopover: true });
-        expect(container.querySelector('#medly-popover')).toBeVisible();
+    it('should render popover on clicking when interactionType prop is set to click', () => {
+        const { container, wrapper } = renderer('click');
+        fireEvent.click(wrapper);
+        expect(container.querySelector('#medly-popover-popup')).toBeVisible();
+        fireEvent.click(wrapper);
+        expect(container.querySelector('#medly-popover-popup')).toBeNull();
     });
 
-    it('should not render popover when showPopover is not given', () => {
-        const { container } = renderer({});
-        expect(container.querySelector('#medly-popover')).toBeNull();
+    it('should hide popover on clicking outside when interactionType prop is set to click', () => {
+        const { container, getByText, wrapper } = renderer('click');
+        fireEvent.click(wrapper);
+        expect(container.querySelector('#medly-popover-popup')).toBeVisible();
+        fireEvent.click(getByText('outside span'));
+        expect(container.querySelector('#medly-popover-popup')).toBeNull();
     });
 
-    it('should call onOuterClick fn on click on outside', () => {
-        const mockOnOuterClick = jest.fn();
-        const { container } = render(
-            <div>
-                <div id="sibling">Sibling</div>
-                <PopoverWrapper onOuterClick={mockOnOuterClick}>
-                    <div>Dummy Div</div>
-                    <Popover>Dummy popover</Popover>
-                </PopoverWrapper>
-            </div>
-        );
-        fireEvent.click(container.querySelector('#sibling'));
-        expect(mockOnOuterClick).toBeCalled();
-    });
+    it('should not hide popover on clicking on popup when interactionType prop is set to click', () => {
+        const { container, wrapper } = renderer('click');
+        fireEvent.click(wrapper);
 
-    it('should render popover with full width and height if fullWidth and fullHeight are given', () => {
-        const { container } = render(
-            <PopoverWrapper showPopover>
-                <div>Dummy Div</div>
-                <Popover fullWidth fullHeight>
-                    Dummy popover
-                </Popover>
-            </PopoverWrapper>
-        );
-        expect(container.querySelector('#medly-popover')).toHaveStyle(`
-            width: calc(100% - 0px);
-            height: calc(100% - 0px);
-      `);
+        const popup = container.querySelector('#medly-popover-popup');
+        fireEvent.click(popup);
+        expect(popup).toBeVisible();
     });
 });

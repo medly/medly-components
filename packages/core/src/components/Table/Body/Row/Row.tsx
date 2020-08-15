@@ -68,6 +68,7 @@ export const Row: React.FC<Props> = React.memo(props => {
                                   config={config}
                                   as={field ? 'div' : 'td'}
                                   isLoading={isLoading}
+                                  rowData={rowData}
                                   data={rowData[config.field]}
                                   addColumnMaxSize={addColumnMaxSize}
                                   isRowClickDisabled={isRowClickDisabled}
@@ -77,7 +78,7 @@ export const Row: React.FC<Props> = React.memo(props => {
                           )
                       ];
             }, []),
-        [id, isLoading, columns, addColumnMaxSize, isRowClickDisabled, tableSize]
+        [id, data, isLoading, columns, addColumnMaxSize, isRowClickDisabled, tableSize]
     );
 
     return (

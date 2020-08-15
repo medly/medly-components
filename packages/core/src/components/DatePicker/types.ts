@@ -1,6 +1,6 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
 import { LabelPositions } from '../Label/types';
-import { Placement } from '../Popover/PopoverWrapper/types';
+import { Placement } from '../Popover/types';
 
 export type DisplayFormat =
     | 'dd/MM/yyyy'

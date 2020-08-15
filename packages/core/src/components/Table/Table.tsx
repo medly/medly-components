@@ -61,11 +61,11 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
         }, [data, isGroupedTable, rowSelectionDisableKey]);
 
         useUpdateEffect(() => {
-            !isGroupedTable && onRowSelection(selectedIds);
+            !isGroupedTable && onRowSelection && onRowSelection(selectedIds);
         }, [selectedIds]);
 
         useUpdateEffect(() => {
-            isGroupedTable && onRowSelection(groupedRowSelector.selectedIds);
+            isGroupedTable && onRowSelection && onRowSelection(groupedRowSelector.selectedIds);
         }, [groupedRowSelector.selectedIds]);
 
         return (

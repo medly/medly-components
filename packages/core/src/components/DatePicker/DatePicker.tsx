@@ -3,7 +3,7 @@ import { parseToDate, WithStyle } from '@medly-components/utils';
 import { format } from 'date-fns';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import Calendar from '../Calendar';
-import { Popover, PopoverWrapper } from '../Popover';
+import Popover from '../Popover';
 import TextField from '../TextField';
 import { Props } from './types';
 
@@ -29,20 +29,13 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             [value, displayFormat]
         );
 
-    const [isCalendarVisible, setCalendarVisibilityState] = useState(false),
-        [formattedDate, setFormattedDate] = useState('');
+    const [formattedDate, setFormattedDate] = useState('');
 
     useEffect(() => {
         setFormattedDate(date ? format(date, displayFormat) : '');
-        setCalendarVisibilityState(false);
     }, [date]);
 
-    const hideCalendar = useCallback(() => setCalendarVisibilityState(false), []),
-        showCalendar = useCallback(() => !restProps.disabled && setCalendarVisibilityState(true), [restProps.disabled]),
-        handleInputOnChange = useCallback(() => {
-            return;
-        }, []),
-        checkValue = useCallback((str: string, max: number) => {
+    const checkValue = useCallback((str: string, max: number) => {
             if (str.charAt(0) !== '0' || str === '00') {
                 var num = parseInt(str);
                 if (isNaN(num) || num <= 0 || num > max) num = 1;
@@ -73,32 +66,30 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
         }, []);
 
     return (
-        <div>
-            <PopoverWrapper placement={popoverPlacement} showPopover={isCalendarVisible} onClick={showCalendar} onOuterClick={hideCalendar}>
-                <TextField
-                    id={`${id}-input`}
-                    value={formattedDate}
-                    required={required}
-                    suffix={DateRangeIcon}
-                    placeholder={placeholder}
-                    label={label}
-                    variant={restProps.variant}
-                    readOnly={false}
-                    onKeyPress={onKeyPress}
-                    onInput={onInputHandler}
-                    fullWidth
+        <Popover interactionType="click">
+            <TextField
+                id={`${id}-input`}
+                value={formattedDate}
+                required={required}
+                suffix={DateRangeIcon}
+                placeholder={placeholder}
+                label={label}
+                variant={restProps.variant}
+                readOnly={false}
+                onKeyPress={onKeyPress}
+                onInput={onInputHandler}
+                fullWidth
+            />
+            <Popover.Popup id={`${id}-popover`} placement={popoverPlacement}>
+                <Calendar
+                    id={`${id}-calendar`}
+                    date={date}
+                    onChange={onChange}
+                    minSelectableDate={minSelectableDate ?? undefined}
+                    maxSelectableDate={maxSelectableDate ?? undefined}
                 />
-                <Popover id={`${id}-popover`}>
-                    <Calendar
-                        id={`${id}-calendar`}
-                        date={date}
-                        onChange={onChange}
-                        minSelectableDate={minSelectableDate ?? undefined}
-                        maxSelectableDate={maxSelectableDate ?? undefined}
-                    />
-                </Popover>
-            </PopoverWrapper>
-        </div>
+            </Popover.Popup>
+        </Popover>
     );
 });
 
@@ -115,4 +106,4 @@ DatePicker.defaultProps = {
     popoverPlacement: 'bottom-start'
 };
 DatePicker.displayName = 'DatePicker';
-DatePicker.Style = PopoverWrapper.Style;
+DatePicker.Style = Popover.Style;

@@ -3,7 +3,7 @@ import { StyledProps } from './types';
 
 export const ContentRowStyled = styled('tr')<StyledProps>`
     display: grid;
-    grid-template-columns: ${({ tableSize }) => (tableSize === 'L' ? '6.4rem' : '4.8rem')} auto;
+    grid-template-columns: ${({ tableSize }) => (tableSize === 'L' ? '5.5rem' : '4.8rem')} auto;
     position: relative;
     align-items: center;
     min-width: fit-content;

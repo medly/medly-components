@@ -976,19 +976,11 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c41 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-}
-
-.c41 .sc-fznMnq {
-  top: calc(100% + 5px);
-  left: 0%;
 }
 
 .c43 {
@@ -1169,7 +1161,7 @@ exports[`Form should render properly with initial state 1`] = `
   bottom: unset;
   left: unset;
   right: unset;
-  top: calc(100% + 5px);
+  top: calc(100% + 0px);
   left: 0%;
 }
 
@@ -2078,7 +2070,7 @@ exports[`Form should render properly with initial state 1`] = `
             class="c47"
           >
             <div
-              class="sc-fzqAui c48"
+              class="sc-fzoaKM c48"
               data-testid="DateRangeInputGrid"
             >
               <label
@@ -3241,19 +3233,11 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c41 {
+  position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
-  -webkit-flex-direction: column-reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
-}
-
-.c41 .sc-fznMnq {
-  top: calc(100% + 5px);
-  left: 0%;
 }
 
 .c43 {
@@ -3434,7 +3418,7 @@ exports[`Form should render properly without initial state 1`] = `
   bottom: unset;
   left: unset;
   right: unset;
-  top: calc(100% + 5px);
+  top: calc(100% + 0px);
   left: 0%;
 }
 
@@ -4251,7 +4235,7 @@ exports[`Form should render properly without initial state 1`] = `
             class="c47"
           >
             <div
-              class="sc-fzqAui c48"
+              class="sc-fzoaKM c48"
               data-testid="DateRangeInputGrid"
             >
               <label

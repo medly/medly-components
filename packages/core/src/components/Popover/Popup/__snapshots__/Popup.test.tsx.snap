@@ -1,0 +1,739 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popover component with arrow and placement bottom, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  top: calc(100% + 1.5rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 0.8rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 -0.4rem 1.6rem rgba(176,188,200,0.5);
+}
+
+.c0::after {
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 1000;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid white;
+}
+
+.c0::after {
+  -webkit-transform: translateX(-50%) rotate(180deg);
+  -ms-transform: translateX(-50%) rotate(180deg);
+  transform: translateX(-50%) rotate(180deg);
+  left: 50%;
+  bottom: 100%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component with arrow and placement bottom-end, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  top: calc(100% + 1.5rem);
+  right: 0%;
+  border-radius: 0.8rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 -0.4rem 1.6rem rgba(176,188,200,0.5);
+}
+
+.c0::after {
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 1000;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid white;
+}
+
+.c0::after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  right: 2rem;
+  bottom: 100%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component with arrow and placement bottom-start, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  top: calc(100% + 1.5rem);
+  left: 0%;
+  border-radius: 0.8rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 -0.4rem 1.6rem rgba(176,188,200,0.5);
+}
+
+.c0::after {
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 1000;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid white;
+}
+
+.c0::after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  left: 2rem;
+  bottom: 100%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component with arrow and placement left, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  right: calc(100% + 1.5rem);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 0.8rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0.4rem 0 1.6rem rgba(176,188,200,0.5);
+}
+
+.c0::after {
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 1000;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid white;
+}
+
+.c0::after {
+  -webkit-transform: translateY(-50%) rotate(270deg);
+  -ms-transform: translateY(-50%) rotate(270deg);
+  transform: translateY(-50%) rotate(270deg);
+  top: 50%;
+  left: calc(100% - 0.3rem);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component with arrow and placement left-end, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  right: calc(100% + 1.5rem);
+  bottom: 0%;
+  border-radius: 0.8rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0.4rem 0 1.6rem rgba(176,188,200,0.5);
+}
+
+.c0::after {
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 1000;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid white;
+}
+
+.c0::after {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  bottom: 2rem;
+  left: calc(100% - 0.3rem);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component with arrow and placement left-start, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  right: calc(100% + 1.5rem);
+  top: 0%;
+  border-radius: 0.8rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0.4rem 0 1.6rem rgba(176,188,200,0.5);
+}
+
+.c0::after {
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 1000;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid white;
+}
+
+.c0::after {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  top: 2rem;
+  left: calc(100% - 0.3rem);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component with arrow and placement right, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  left: calc(100% + 1.5rem);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 0.8rem;
+  padding: 1.5rem 2rem;
+  box-shadow: -0.4rem 0 1.6rem rgba(176,188,200,0.5);
+}
+
+.c0::after {
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 1000;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid white;
+}
+
+.c0::after {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+  top: 50%;
+  right: calc(100% - 0.3rem);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component with arrow and placement right-end, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  left: calc(100% + 1.5rem);
+  border-radius: 0.8rem;
+  padding: 1.5rem 2rem;
+  box-shadow: -0.4rem 0 1.6rem rgba(176,188,200,0.5);
+}
+
+.c0::after {
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 1000;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid white;
+}
+
+.c0::after {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 2rem;
+  right: calc(100% - 0.3rem);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component with arrow and placement right-start, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  top: 0%;
+  left: calc(100% + 1.5rem);
+  border-radius: 0.8rem;
+  padding: 1.5rem 2rem;
+  box-shadow: -0.4rem 0 1.6rem rgba(176,188,200,0.5);
+}
+
+.c0::after {
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 1000;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid white;
+}
+
+.c0::after {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 2rem;
+  right: calc(100% - 0.3rem);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component with arrow and placement top, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  bottom: calc(100% + 1.5rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 0.8rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0.4rem 1.6rem rgba(176,188,200,0.5);
+}
+
+.c0::after {
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 1000;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid white;
+}
+
+.c0::after {
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 100%;
+  left: 50%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component with arrow and placement top-end, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  bottom: calc(100% + 1.5rem);
+  right: 0%;
+  border-radius: 0.8rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0.4rem 1.6rem rgba(176,188,200,0.5);
+}
+
+.c0::after {
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 1000;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid white;
+}
+
+.c0::after {
+  top: 100%;
+  right: 2rem;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component with arrow and placement top-start, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  bottom: calc(100% + 1.5rem);
+  left: 0%;
+  border-radius: 0.8rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0.4rem 1.6rem rgba(176,188,200,0.5);
+}
+
+.c0::after {
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 1000;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid white;
+}
+
+.c0::after {
+  top: 100%;
+  left: 2rem;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component without arrow and placement bottom, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  top: calc(100% + 0px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component without arrow and placement bottom-end, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  top: calc(100% + 0px);
+  right: 0%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component without arrow and placement bottom-start, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  top: calc(100% + 0px);
+  left: 0%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component without arrow and placement left, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  right: calc(100% + 0px);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component without arrow and placement left-end, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  right: calc(100% + 0px);
+  bottom: 0%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component without arrow and placement left-start, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  right: calc(100% + 0px);
+  top: 0%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component without arrow and placement right, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  left: calc(100% + 0px);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component without arrow and placement right-end, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  left: calc(100% + 0px);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component without arrow and placement right-start, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  top: 0%;
+  left: calc(100% + 0px);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component without arrow and placement top, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  bottom: calc(100% + 0px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component without arrow and placement top-end, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  bottom: calc(100% + 0px);
+  right: 0%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;
+
+exports[`Popover component without arrow and placement top-start, should render properly 1`] = `
+.c0 {
+  z-index: 1000;
+  position: absolute;
+  background-color: white;
+  bottom: calc(100% + 0px);
+  left: 0%;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-popup"
+  >
+    Dummy popover
+  </div>
+</div>
+`;

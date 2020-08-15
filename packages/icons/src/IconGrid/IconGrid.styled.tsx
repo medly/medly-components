@@ -14,9 +14,11 @@ export const Item = styled('div')`
     min-width: 140px;
     padding: 0 7.5px 20px;
     word-wrap: break-word;
+    overflow: hidden;
 
     & > span:last-of-type {
         margin-top: 8px;
         font-size: 14px;
+        word-break: break-word;
     }
 `;

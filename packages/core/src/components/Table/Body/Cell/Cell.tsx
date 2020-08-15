@@ -6,7 +6,7 @@ import { TableCellProps } from './types';
 
 const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
     const childRef = useRef(null),
-        { addColumnMaxSize, config, data, rowId, isRowClickDisabled, dottedFieldName, tableSize, isLoading, ...restProps } = props,
+        { addColumnMaxSize, config, data, rowId, rowData, isRowClickDisabled, dottedFieldName, tableSize, isLoading, ...restProps } = props,
         { align, hidden, frozen, formatter, component: CustomComponent } = config;
 
     useEffect(() => {
@@ -22,7 +22,7 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
                 <LoadingDiv ref={childRef} />
             ) : CustomComponent ? (
                 <CustomComponentWrapper ref={childRef}>
-                    <CustomComponent {...{ data, rowId, disabled: isRowClickDisabled }} />
+                    <CustomComponent {...{ data, rowId, disabled: isRowClickDisabled, rowData }} />
                 </CustomComponentWrapper>
             ) : (
                 <Text ref={childRef} textVariant="body2">
