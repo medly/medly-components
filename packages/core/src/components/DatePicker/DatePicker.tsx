@@ -41,6 +41,35 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
         showCalendar = useCallback(() => !restProps.disabled && setCalendarVisibilityState(true), [restProps.disabled]),
         handleInputOnChange = useCallback(() => {
             return;
+        }, []),
+        checkValue = useCallback((str: string, max: number) => {
+            if (str.charAt(0) !== '0' || str === '00') {
+                var num = parseInt(str);
+                if (isNaN(num) || num <= 0 || num > max) num = 1;
+                str = num > parseInt(max.toString().charAt(0)) && num.toString().length == 1 ? '0' + num : num.toString();
+            }
+            return str;
+        }, []),
+        onKeyPress = useCallback(event => {
+            if (event.which < 47 || event.which > 57) {
+                event.preventDefault();
+            }
+        }, []),
+        onInputHandler = useCallback(event => {
+            let inputValue = event.target.value;
+
+            if (/\D\/$/.test(inputValue)) {
+                inputValue = inputValue.substr(0, inputValue.length - 3);
+            }
+            var values = inputValue.split('/').map((val: string) => val.trim());
+
+            if (values[0]) values[0] = checkValue(values[0], 12);
+            if (values[1]) values[1] = checkValue(values[1], 31);
+            const updatedValue = values
+                .map((val: string, index: number) => (val.length === 2 && index < 2 ? val + ' / ' : val))
+                .join('')
+                .substr(0, 14);
+            setFormattedDate(updatedValue);
         }, []);
 
     return (
@@ -54,6 +83,9 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                     placeholder={placeholder}
                     label={label}
                     variant={restProps.variant}
+                    readOnly={false}
+                    onKeyPress={onKeyPress}
+                    onInput={onInputHandler}
                     fullWidth
                 />
                 <Popover id={`${id}-popover`}>
