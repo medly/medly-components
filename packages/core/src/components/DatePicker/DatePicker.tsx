@@ -37,32 +37,44 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
 
     const checkValue = useCallback((str: string, max: number) => {
             if (str.charAt(0) !== '0' || str === '00') {
-                var num = parseInt(str);
-                if (isNaN(num) || num <= 0 || num > max) num = 1;
-                str = num > parseInt(max.toString().charAt(0)) && num.toString().length == 1 ? '0' + num : num.toString();
+                let num = parseInt(str);
+                if (isNaN(num) || num <= 0) num = 1;
+                if (num > max) num = parseInt(num.toString().charAt(0));
+                return num > parseInt(max.toString().charAt(0)) && num.toString().length === 1 ? '0' + num : num.toString();
             }
             return str;
         }, []),
-        onKeyPress = useCallback(event => {
+        getNoOfDays = useCallback((num: string): number => {
+            // TODO: Improve this logic
+            return new Date(new Date().getFullYear(), parseInt(num), 0).getDate();
+        }, []),
+        onKeyPress = useCallback((event: React.KeyboardEvent<HTMLInputElement>) => {
             if (event.which < 47 || event.which > 57) {
                 event.preventDefault();
             }
         }, []),
-        onInputHandler = useCallback(event => {
-            let inputValue = event.target.value;
+        onInputHandler = useCallback((event: React.SyntheticEvent<HTMLInputElement>) => {
+            const regexForSlash = /\D\/$/;
+            const inputValue = event.currentTarget.value;
+            const value = regexForSlash.test(inputValue) ? inputValue.substr(0, inputValue.length - 3) : inputValue;
+            const values = value.split('/').map((val: string) => val.trim());
 
-            if (/\D\/$/.test(inputValue)) {
-                inputValue = inputValue.substr(0, inputValue.length - 3);
-            }
-            var values = inputValue.split('/').map((val: string) => val.trim());
-
+            // TODO: remove this mutation, find a better way to do this
             if (values[0]) values[0] = checkValue(values[0], 12);
-            if (values[1]) values[1] = checkValue(values[1], 31);
+            if (values[1]) values[1] = checkValue(values[1], getNoOfDays(values[0]));
+            // TODO: don't allow user to enter invalid date i.e. non-leap year
             const updatedValue = values
                 .map((val: string, index: number) => (val.length === 2 && index < 2 ? val + ' / ' : val))
                 .join('')
                 .substr(0, 14);
             setFormattedDate(updatedValue);
+        }, []),
+        onBlurHandler = useCallback((event: React.SyntheticEvent<HTMLInputElement>) => {
+            const inputValue = event.currentTarget.value;
+            const values = inputValue.split('/').map((val: string) => val.trim());
+            if (values.length !== 3) {
+                setFormattedDate('');
+            }
         }, []);
 
     return (
@@ -78,6 +90,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                 readOnly={false}
                 onKeyPress={onKeyPress}
                 onInput={onInputHandler}
+                onBlur={onBlurHandler}
                 fullWidth
             />
             <Popover.Popup id={`${id}-popover`} placement={popoverPlacement}>
