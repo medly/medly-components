@@ -81,11 +81,17 @@ const getStyle = (theme: Theme, styleType: 'default' | 'hovered' | 'pressed', is
     `;
 };
 
-export const HeadCellButton = styled.button<{ withHoverEffect: boolean; isSelected: boolean; tableSize?: TableProps['size'] }>`
+export const HeadCellButton = styled.button<{
+    withHoverEffect: boolean;
+    isSelected: boolean;
+    tableSize?: TableProps['size'];
+    align: string;
+}>`
     border: 0;
     display: flex;
     width: 100%;
     align-items: center;
+    justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : align === 'center' ? 'center' : 'flex-start')};
     padding: ${({ tableSize }) => (tableSize === 'L' ? '0.9rem 1.6rem 1.1rem' : '0.9rem 0.8rem 1.1rem')};
     outline: unset;
     font-family: inherit;
