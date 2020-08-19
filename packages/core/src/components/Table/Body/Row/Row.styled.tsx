@@ -91,7 +91,18 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
     ${({ showRowWithCardStyle }) => (showRowWithCardStyle ? cardStyle : normalStyle)}
 `;
 
-export const NoResult = styled(Row)`
-    text-align: center;
-    line-height: 30px;
+const noResultCardStyle = () => {
+    return css`
+        padding: 1.5rem 0;
+    `;
+};
+
+export const NoResultRow = styled(Row)`
+    justify-content: center;
+    align-items: center;
+    ${({ showRowWithCardStyle }) => showRowWithCardStyle && noResultCardStyle}
+`;
+
+export const NoResultCell = styled('td')`
+    grid-column: 1/-1;
 `;

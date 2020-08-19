@@ -1,6 +1,6 @@
 import { render } from '@test-utils';
 import React from 'react';
-import { NoResult, Row } from './Row.styled';
+import { NoResultRow, NoResultCell, Row } from './Row.styled';
 
 describe('Row', () => {
     it('should render row properly', () => {
@@ -9,7 +9,20 @@ describe('Row', () => {
     });
 
     it('should render NoResult properly', () => {
-        const { container } = render(<NoResult>Dummy</NoResult>);
+        const { container } = render(
+            <NoResultRow>
+                <NoResultCell>Dummy</NoResultCell>
+            </NoResultRow>
+        );
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render NoResult with Card design also', () => {
+        const { container } = render(
+            <NoResultRow showRowWithCardStyle>
+                <NoResultCell>Dummy</NoResultCell>
+            </NoResultRow>
+        );
         expect(container).toMatchSnapshot();
     });
 });
