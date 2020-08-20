@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.14.2...@medly-components/core@1.14.3) (2020-08-20)
+
+
+### Bug Fixes
+
+* added logic to align header according to column config ([d70ba90](https://github.com/medly/medly-components/commit/d70ba90c7d76c219780eb272c7addb45422e8163))
+* make props as optional in table component's custom column component ([244de71](https://github.com/medly/medly-components/commit/244de7120296991f229eedf2beed321b420b5afd))
+
+
+
+
+
 ## [1.14.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.14.1...@medly-components/core@1.14.2) (2020-08-14)
 
 
