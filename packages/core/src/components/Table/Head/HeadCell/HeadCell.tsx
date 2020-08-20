@@ -8,6 +8,7 @@ import { HeadCellProps } from './types';
 const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     let pageX: number;
     const {
+        align,
         frozen,
         sortable,
         children,
@@ -90,6 +91,7 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
                     {React.Children.map(children, c => {
                         return isValidStringOrNumber(c) ? (
                             <HeadCellButton
+                                align={align}
                                 tableSize={tableSize}
                                 onClick={handleSortIconClick}
                                 isSelected={sortField === field && !isLoading}
