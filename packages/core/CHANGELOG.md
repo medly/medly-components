@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.15.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.14.3...@medly-components/core@1.15.0) (2020-08-20)
+
+
+### Features
+
+* export toast variant types ([2d3c6f7](https://github.com/medly/medly-components/commit/2d3c6f7b7339292604731ced5be152c515e21556))
+
+
+
+
+
 ## [1.14.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.14.2...@medly-components/core@1.14.3) (2020-08-20)
 
 
