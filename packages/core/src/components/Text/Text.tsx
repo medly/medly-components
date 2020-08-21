@@ -6,12 +6,17 @@ import { Props } from './types';
 export const Text: FC<Props> & WithStyle = React.memo(
     React.forwardRef(({ as, textVariant, textWeight, children, ...restProps }, ref) => {
         const componentType = useMemo(() => {
-            let type: keyof JSX.IntrinsicElements | React.ComponentType<any> = 'span';
+            let type: keyof JSX.IntrinsicElements | React.ComponentType<any> = (textVariant as keyof JSX.IntrinsicElements) || 'span';
 
-            if (!textVariant || textVariant === 'body1' || textVariant == 'body2') {
+            if (
+                !textVariant ||
+                textVariant === 'body1' ||
+                textVariant == 'body2' ||
+                textVariant == 'body3' ||
+                textVariant == 'button1' ||
+                textVariant == 'button2'
+            ) {
                 type = textWeight === 'Strong' || textWeight === 'ExtraStrong' ? 'strong' : 'span';
-            } else {
-                type = textVariant;
             }
 
             return type;
