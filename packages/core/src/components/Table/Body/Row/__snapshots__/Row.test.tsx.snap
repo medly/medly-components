@@ -12,8 +12,14 @@ exports[`Row should render NoResult properly 1`] = `
   min-width: -moz-fit-content;
   min-width: fit-content;
   cursor: inherit;
-  text-align: center;
-  line-height: 30px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0:hover {
@@ -34,11 +40,97 @@ exports[`Row should render NoResult properly 1`] = `
   border-bottom: 1px solid #C7D0D8;
 }
 
+.c1 {
+  grid-column: 1/-1;
+}
+
 <div>
   <tr
     class="sc-AxjAm c0"
   >
-    Dummy
+    <td
+      class="c1"
+    >
+      Dummy
+    </td>
+  </tr>
+</div>
+`;
+
+exports[`Row should render NoResult with Card design also 1`] = `
+.c0 {
+  display: grid;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  cursor: inherit;
+  border: none;
+  border-radius: 0.8rem;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(96,120,144,0.2);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.c0,
+.c0 > * {
+  background-color: #ffffff;
+}
+
+.c0.c0.c0 > *:first-child,
+.c0.c0.c0 > *:first-child::before {
+  -webkit-transition: border-radius 200ms ease-in;
+  transition: border-radius 200ms ease-in;
+  border-radius: 0.8rem 0 0 0.8rem;
+}
+
+.c0.c0.c0 > *:first-child::before {
+  width: 0.8rem;
+}
+
+.c0.c0.c0 > *:last-child {
+  border-radius: 0 0.8rem 0.8rem 0;
+}
+
+.c0.c0.c0 > *:nth-last-child(2)::before {
+  width: 0.8rem;
+  border-radius: 0 0 0 0.8rem;
+}
+
+.c0:hover {
+  box-shadow: 0 0.2rem 0.8rem rgba(96,120,144,0.35);
+}
+
+.c0:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+.c1 {
+  grid-column: 1/-1;
+}
+
+<div>
+  <tr
+    class="sc-AxjAm c0"
+  >
+    <td
+      class="c1"
+    >
+      Dummy
+    </td>
   </tr>
 </div>
 `;
