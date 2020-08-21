@@ -23,6 +23,7 @@ const avatar: AvatarTheme = {
         fontWeight: 'Regular',
         fontFamily: 'Open Sans',
         borderColor: colors.grey[200],
+        borderRadius: '50%',
         hover: {
             textShadowColor: 'rgba(0, 90, 238, 0.35)',
             imgShadowColor: 'rgba(96, 120, 144, 0.35)',

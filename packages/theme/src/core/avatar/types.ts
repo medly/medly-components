@@ -18,6 +18,7 @@ export interface AvatarTheme {
         fontWeight: FontWeights;
         fontFamily: string;
         borderColor: string;
+        borderRadius: string;
         hover: {
             bgColor: string;
             textColor: string;
