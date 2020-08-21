@@ -3,12 +3,28 @@ import { IconTheme } from './types';
 
 const icon: IconTheme = {
     sizes: {
-        XS: '1.6rem',
-        S: '2.0rem',
-        M: '2.4rem',
-        L: '3.2rem',
-        XL: '4.0rem'
+        XS: {
+            iconSize: '1.6rem',
+            padding: '0.8rem'
+        },
+        S: {
+            iconSize: '2rem',
+            padding: '1rem'
+        },
+        M: {
+            iconSize: '2.4rem',
+            padding: '0.8rem'
+        },
+        L: {
+            iconSize: '3.2rem',
+            padding: '0.8rem'
+        },
+        XL: {
+            iconSize: '4rem',
+            padding: '0.8rem'
+        }
     },
+    borderRadius: '50%',
     colors: {
         default: { iconColor: colors.grey[600], bgColor: colors.blue[100] },
         disabled: { iconColor: colors.grey[300], bgColor: 'transparent' },

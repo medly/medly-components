@@ -759,7 +759,7 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.0rem;
+  font-size: 2rem;
   cursor: inherit;
 }
 
@@ -902,7 +902,7 @@ exports[`Card Table HeadCell should render properly with light background and dr
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.0rem;
+  font-size: 2rem;
   cursor: inherit;
 }
 
