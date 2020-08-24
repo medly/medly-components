@@ -1,4 +1,3 @@
-import { defaultTheme } from '@medly-components/theme';
 import { css, InjectClassName, styled } from '@medly-components/utils';
 import { SvgIconProps } from './types';
 
@@ -39,6 +38,5 @@ export const SvgIconStyled = styled(InjectClassName).attrs(({ theme: { icon: { c
 SvgIconStyled.displayName = 'SvgIcon';
 
 SvgIconStyled.defaultProps = {
-    size: 'M',
-    theme: defaultTheme
+    size: 'M'
 };

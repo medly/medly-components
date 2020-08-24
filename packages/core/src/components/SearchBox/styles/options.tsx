@@ -4,7 +4,7 @@ import { Props } from '../types';
 
 const activeOptionStyle = ({ theme }: Props) => {
     return css`
-        border: 1.5px solid ${theme.searchBox.active.borderColor};
+        border: 1.5px solid ${theme.searchBox.borderColor.active};
         border-top: 0;
         box-shadow: ${theme.searchBox.options.boxShadow};
         padding-bottom: 1.2rem;
@@ -28,10 +28,11 @@ const nonActiveOptionStyle = () => {
     `;
 };
 
-const getMediumOptionStyle = () => {
+const getMediumOptionStyle = ({ theme }: Props) => {
+    const border = theme.searchBox.borderRadius.M.active;
     return css`
         top: 4.4rem;
-        border-radius: 0 0 2.5rem 2.5rem;
+        border-radius: 0 0 ${border} ${border};
         li {
             padding: 0 2.4rem;
             span,
@@ -43,10 +44,11 @@ const getMediumOptionStyle = () => {
     `;
 };
 
-const getSmallOptionStyle = () => {
+const getSmallOptionStyle = ({ theme }: Props) => {
+    const border = theme.searchBox.borderRadius.S.active;
     return css`
         top: 3.6rem;
-        border-radius: 0 0 2rem 2rem;
+        border-radius: 0 0 ${border} ${border};
         li {
             padding: 0 2rem;
             span,
@@ -58,34 +60,32 @@ const getSmallOptionStyle = () => {
     `;
 };
 
-export const getOptionsStyles = ({ theme, size, areOptionsVisible }: Props & { areOptionsVisible?: boolean }) => {
-    return css`
-        box-shadow: none;
-        border: none;
-        box-sizing: content-box;
-        left: -1.5px;
-        overflow-x: hidden;
-        overflow-y: auto;
-        background-color: ${theme.colors.white};
-        ${areOptionsVisible ? activeOptionStyle : nonActiveOptionStyle};
-        max-height: ${theme.searchBox.sizes[size].maxHeight};
+export const getOptionsStyles = ({ theme, size, areOptionsVisible }: Props & { areOptionsVisible?: boolean }) => css`
+    box-shadow: none;
+    border: none;
+    box-sizing: content-box;
+    left: -1.5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: ${theme.colors.white};
+    ${areOptionsVisible ? activeOptionStyle : nonActiveOptionStyle};
+    max-height: 21rem;
 
-        svg {
-            display: none;
-        }
+    svg {
+        display: none;
+    }
 
-        strong {
-            font-weight: normal;
-        }
+    strong {
+        font-weight: normal;
+    }
 
-        ${OptionStyled} {
-            &:hover {
-                background-color: ${theme.colors.grey[50]};
-            }
+    ${OptionStyled} {
+        &:hover {
+            background-color: ${theme.colors.grey[50]};
         }
-        &::before {
-            width: 82%;
-        }
-        ${({ size }) => (size === 'M' ? getMediumOptionStyle : getSmallOptionStyle)};
-    `;
-};
+    }
+    &::before {
+        width: 82%;
+    }
+    ${size === 'M' ? getMediumOptionStyle : getSmallOptionStyle};
+`;

@@ -1,36 +1,58 @@
 import colors from '../colors';
 
 const SearchBox = {
-    sizes: {
+    height: {
+        S: '4rem',
+        M: '4.8rem'
+    },
+    textColor: colors.black,
+    borderRadius: {
         S: {
-            height: '4rem',
-            iconSize: '2rem',
-            maxHeight: '20rem'
+            default: '4rem',
+            active: '2rem'
         },
         M: {
-            height: '4.8rem',
-            iconSize: '2.4rem',
-            maxHeight: '21rem'
+            default: '4.8rem',
+            active: '2.4rem'
         }
     },
-    default: {
-        bgColor: colors.white,
-        textColor: colors.black,
-        placeholderTextColor: colors.grey[600],
-        borderColor: colors.grey[500],
-        iconBg: colors.grey[100],
-        iconColor: colors.grey[600]
+    bgColor: {
+        default: colors.white,
+        hovered: colors.white,
+        active: colors.white
     },
-    hover: {
-        borderColor: colors.grey[600],
-        boxShadow: '0 0.2rem 0.8rem rgba(96, 120, 144, 0.2)'
+    borderColor: {
+        default: colors.grey[500],
+        hovered: colors.grey[600],
+        active: colors.blue[500]
     },
-    active: {
-        borderColor: colors.blue[500],
-        boxShadow: '0 0.2rem 0.8rem rgba(18, 106, 250, 0.2)',
-        placeholderTextColor: colors.grey[300],
-        iconColor: colors.blue[500],
-        iconBg: colors.blue[100]
+    placeholderTextColor: {
+        default: colors.grey[600],
+        active: colors.grey[300]
+    },
+    closeIcon: {
+        borderRadius: '2.5rem',
+        color: {
+            default: colors.grey[600],
+            hovered: colors.grey[900]
+        },
+        bgColor: {
+            hovered: colors.blue[100]
+        }
+    },
+    searchIcon: {
+        borderRadius: '2.5rem',
+        color: {
+            default: colors.grey[600],
+            active: colors.blue[500]
+        },
+        bgColor: {
+            hovered: colors.blue[100]
+        }
+    },
+    boxShadow: {
+        active: '0 0.2rem 0.8rem rgba(18, 106, 250, 0.2)',
+        hovered: '0 0.2rem 0.8rem rgba(96, 120, 144, 0.2)'
     },
     options: {
         boxShadow: '0 0.6rem 0.8rem rgba(18, 106, 250, 0.2)'

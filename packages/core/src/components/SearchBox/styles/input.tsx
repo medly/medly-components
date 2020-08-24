@@ -2,7 +2,7 @@ import { styled } from '@medly-components/utils';
 
 export const SearchInput = styled.input`
     background: transparent;
-    color: ${({ theme }) => theme.searchBox.default.textColor};
+    color: ${({ theme }) => theme.searchBox.textColor};
     padding: 0;
     outline: none;
     border: 0 none;
@@ -12,11 +12,11 @@ export const SearchInput = styled.input`
     font-weight: ${({ theme }) => theme.font.weights.Medium};
 
     &::placeholder {
-        color: ${({ theme }) => theme.searchBox.default.placeholderTextColor};
+        color: ${({ theme }) => theme.searchBox.placeholderTextColor.default};
     }
     &:focus {
         &::placeholder {
-            color: ${({ theme }) => theme.searchBox.active.placeholderTextColor};
+            color: ${({ theme }) => theme.searchBox.placeholderTextColor.active};
         }
     }
 `;

@@ -1,31 +1,53 @@
 export type Size = 'S' | 'M';
 
 export type SearchBoxTheme = {
-    sizes: {
+    height: {
+        [k in Size]: string;
+    };
+    textColor: string;
+    borderRadius: {
         [k in Size]: {
-            height: string;
-            iconSize: string;
-            maxHeight: string;
+            default: string;
+            active: string;
         };
     };
-    default: {
-        bgColor: string;
-        textColor: string;
-        iconColor: string;
-        iconBg: string;
-        placeholderTextColor: string;
-        borderColor: string;
+    bgColor: {
+        default: string;
+        hovered: string;
+        active: string;
     };
-    hover: {
-        borderColor: string;
-        boxShadow: string;
+    borderColor: {
+        default: string;
+        hovered: string;
+        active: string;
     };
-    active: {
-        borderColor: string;
-        boxShadow: string;
-        placeholderTextColor: string;
-        iconColor: string;
-        iconBg: string;
+    placeholderTextColor: {
+        default: string;
+        active: string;
+    };
+    closeIcon: {
+        borderRadius: string;
+        color: {
+            default: string;
+            hovered: string;
+        };
+        bgColor: {
+            hovered: string;
+        };
+    };
+    searchIcon: {
+        borderRadius: string;
+        color: {
+            active: string;
+            default: string;
+        };
+        bgColor: {
+            hovered: string;
+        };
+    };
+    boxShadow: {
+        active: string;
+        hovered: string;
     };
     options: {
         boxShadow: string;
