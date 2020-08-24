@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.8.0...@medly-components/theme@1.9.0) (2020-08-24)
+
+
+### Features
+
+* add body3, button1, button2 text variant ([71d0c1e](https://github.com/medly/medly-components/commit/71d0c1ef3ff781bde0d44bc5ad9d422be5b6c108))
+* make avatar border radius themabale ([c85b982](https://github.com/medly/medly-components/commit/c85b98286aad58bbac12cb9365fcec5ea725d665))
+* move icon size and padding to theme level ([7f63eaf](https://github.com/medly/medly-components/commit/7f63eaf71f533790d9f9f13e176b247213e446d2))
+* move modal close icon style to theme ([9dee031](https://github.com/medly/medly-components/commit/9dee03185ac3aa60d9ea4f26a16eda7f2ed80cbc))
+* move most of the design of searchbox to theme level ([f2da4b2](https://github.com/medly/medly-components/commit/f2da4b213271d26d673f60a8deb25657916c1622))
+
+
+
+
+
 # [1.8.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.7.0...@medly-components/theme@1.8.0) (2020-08-07)
 
 

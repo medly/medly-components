@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.6.4...@medly-components/forms@1.7.0) (2020-08-24)
+
+
+### Features
+
+* move icon size and padding to theme level ([7f63eaf](https://github.com/medly/medly-components/commit/7f63eaf71f533790d9f9f13e176b247213e446d2))
+
+
+
+
+
 ## [1.6.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.6.3...@medly-components/forms@1.6.4) (2020-08-20)
 
 **Note:** Version bump only for package @medly-components/forms

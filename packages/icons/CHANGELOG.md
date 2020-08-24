@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/medly/medly-components/compare/@medly-components/icons@1.1.6...@medly-components/icons@1.2.0) (2020-08-24)
+
+
+### Features
+
+* move icon size and padding to theme level ([7f63eaf](https://github.com/medly/medly-components/commit/7f63eaf71f533790d9f9f13e176b247213e446d2))
+* move most of the design of searchbox to theme level ([f2da4b2](https://github.com/medly/medly-components/commit/f2da4b213271d26d673f60a8deb25657916c1622))
+
+
+
+
+
 ## [1.1.6](https://github.com/medly/medly-components/compare/@medly-components/icons@1.1.5...@medly-components/icons@1.1.6) (2020-08-14)
 
 
