@@ -1,24 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SearchBox options should render options when user search option specified 1`] = `
-.c7 {
-  overflow: visible;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  font-size: 2.4rem;
-  cursor: inherit;
-}
-
-.c7 * {
-  fill-opacity: 1;
-  fill: #607890;
-}
-
 .c4 {
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 
@@ -27,7 +14,7 @@ exports[`SearchBox options should render options when user search option specifi
   fill: #607890;
 }
 
-.c13 {
+.c12 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -39,7 +26,7 @@ exports[`SearchBox options should render options when user search option specifi
   line-height: 2.2rem;
 }
 
-.c11 {
+.c10 {
   cursor: pointer;
   padding: 0 1.6rem;
   min-height: 4rem;
@@ -55,11 +42,11 @@ exports[`SearchBox options should render options when user search option specifi
   background-color: #ffffff;
 }
 
-.c11:hover {
+.c10:hover {
   background-color: #F7F8F9;
 }
 
-.c11 > .c12 {
+.c10 > .c11 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -73,15 +60,15 @@ exports[`SearchBox options should render options when user search option specifi
   color: #13181D;
 }
 
-.c11 > .c3 {
+.c10 > .c3 {
   margin-left: 1.6rem;
 }
 
-.c11 > .c3 * {
+.c10 > .c3 * {
   fill: #13181D;
 }
 
-.c9 {
+.c8 {
   z-index: 1000;
   position: absolute;
   top: 5.6rem;
@@ -95,11 +82,11 @@ exports[`SearchBox options should render options when user search option specifi
   border-radius: 0 0 0.4rem 0.4rem;
 }
 
-.c9 li:first-child {
+.c8 li:first-child {
   border-radius: 0;
 }
 
-.c9 li:last-child {
+.c8 li:last-child {
   border-radius: 0 0 0.4rem 0.4rem;
 }
 
@@ -123,17 +110,12 @@ exports[`SearchBox options should render options when user search option specifi
   margin: 0.6rem 0;
 }
 
-.c2 .c3 {
-  cursor: pointer;
-  font-size: 2rem;
-}
-
 .c2 .c3 * {
   fill: #607890;
 }
 
 .c2 .c3:hover {
-  background: #eff2f4;
+  background: #E7F0FF;
   border-radius: 2.5rem;
 }
 
@@ -141,9 +123,13 @@ exports[`SearchBox options should render options when user search option specifi
   fill: #303C48;
 }
 
-.c15 .c3 {
-  cursor: pointer;
-  font-size: 2rem;
+.c14 .c3 * {
+  fill: #607890;
+}
+
+.c14 .c3:hover {
+  background: transparent;
+  border-radius: 2.5rem;
 }
 
 .c15 .c3 * {
@@ -151,20 +137,6 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c15 .c3:hover {
-  background: transparent;
-  border-radius: 2.5rem;
-}
-
-.c16 .c3 {
-  cursor: pointer;
-  font-size: 2rem;
-}
-
-.c16 .c3 * {
-  fill: #607890;
-}
-
-.c16 .c3:hover {
   background: #E7F0FF;
   border-radius: 2.5rem;
 }
@@ -187,11 +159,6 @@ exports[`SearchBox options should render options when user search option specifi
   justify-content: center;
 }
 
-.c6 .c3 {
-  cursor: pointer;
-  font-size: 2rem;
-}
-
 .c6 .c3 * {
   fill: #126AFA;
 }
@@ -201,7 +168,7 @@ exports[`SearchBox options should render options when user search option specifi
   border-radius: 2.5rem;
 }
 
-.c14 .c8 {
+.c13 .c7 {
   box-shadow: none;
   border: none;
   box-sizing: content-box;
@@ -211,46 +178,46 @@ exports[`SearchBox options should render options when user search option specifi
   background-color: #ffffff;
   border: none;
   padding-bottom: 0;
-  max-height: 20rem;
+  max-height: 21rem;
   top: 3.6rem;
   border-radius: 0 0 2rem 2rem;
 }
 
-.c14 .c8::before {
+.c13 .c7::before {
   display: none;
 }
 
-.c14 .c8 svg {
+.c13 .c7 svg {
   display: none;
 }
 
-.c14 .c8 strong {
+.c13 .c7 strong {
   font-weight: normal;
 }
 
-.c14 .c8 .c10:hover {
+.c13 .c7 .c9:hover {
   background-color: #F7F8F9;
 }
 
-.c14 .c8::before {
+.c13 .c7::before {
   width: 82%;
 }
 
-.c14 .c8 li {
+.c13 .c7 li {
   padding: 0 2rem;
 }
 
-.c14 .c8 li span,
-.c14 .c8 li strong {
+.c13 .c7 li span,
+.c13 .c7 li strong {
   font-size: 1.4rem;
   line-height: 2.2rem;
 }
 
-.c14 .c3 {
+.c13 .c3 {
   padding: 0.2rem;
 }
 
-.c14:focus-within .c5 .c3 * {
+.c13:focus-within .c5 .c3 * {
   fill: #126AFA;
 }
 
@@ -268,13 +235,14 @@ exports[`SearchBox options should render options when user search option specifi
   height: 4rem;
   border: 1.5px solid;
   position: relative;
+  background-color: #ffffff;
   border-radius: 2rem 2rem 0 0;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
   border-color: #126AFA;
   border-width: 1.5px;
 }
 
-.c0 .c8 {
+.c0 .c7 {
   box-shadow: none;
   border: none;
   box-sizing: content-box;
@@ -286,12 +254,12 @@ exports[`SearchBox options should render options when user search option specifi
   border-top: 0;
   box-shadow: 0 0.6rem 0.8rem rgba(18,106,250,0.2);
   padding-bottom: 1.2rem;
-  max-height: 20rem;
+  max-height: 21rem;
   top: 3.6rem;
   border-radius: 0 0 2rem 2rem;
 }
 
-.c0 .c8::before {
+.c0 .c7::before {
   display: block;
   content: '';
   border-top: 0.1rem solid #dfe4e9;
@@ -299,28 +267,28 @@ exports[`SearchBox options should render options when user search option specifi
   margin: 0 auto 0.8rem;
 }
 
-.c0 .c8 svg {
+.c0 .c7 svg {
   display: none;
 }
 
-.c0 .c8 strong {
+.c0 .c7 strong {
   font-weight: normal;
 }
 
-.c0 .c8 .c10:hover {
+.c0 .c7 .c9:hover {
   background-color: #F7F8F9;
 }
 
-.c0 .c8::before {
+.c0 .c7::before {
   width: 82%;
 }
 
-.c0 .c8 li {
+.c0 .c7 li {
   padding: 0 2rem;
 }
 
-.c0 .c8 li span,
-.c0 .c8 li strong {
+.c0 .c7 li span,
+.c0 .c7 li strong {
   font-size: 1.4rem;
   line-height: 2.2rem;
 }
@@ -413,7 +381,7 @@ exports[`SearchBox options should render options when user search option specifi
       class="c5 c6"
     >
       <svg
-        class="c3 c7"
+        class="c3 c4"
         fill="none"
         height="1em"
         title="search icon"
@@ -431,24 +399,24 @@ exports[`SearchBox options should render options when user search option specifi
       </svg>
     </span>
     <ul
-      class="c8 c9"
+      class="c7 c8"
     >
       <li
-        class="c10 c11"
+        class="c9 c10"
         id="Dummy-1"
       >
         <span
-          class="c12 c13"
+          class="c11 c12"
         >
           Dummy 1
         </span>
       </li>
       <li
-        class="c10 c11"
+        class="c9 c10"
         id="Dummy-2"
       >
         <span
-          class="c12 c13"
+          class="c11 c12"
         >
           Dummy 2
         </span>
@@ -464,7 +432,7 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   font-size: 2.4rem;
-  cursor: inherit;
+  cursor: pointer;
 }
 
 .c5 * {
@@ -490,11 +458,6 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   justify-content: center;
 }
 
-.c3 .c4 {
-  cursor: pointer;
-  font-size: 2.4rem;
-}
-
 .c3 .c4 * {
   fill: #607890;
 }
@@ -518,13 +481,18 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   height: 4.8rem;
   border: 1.5px solid;
   position: relative;
+  background-color: #ffffff;
   border-radius: 4rem;
-  padding-right: 3px;
+  padding-right: 0.3rem;
   border-bottom: 1.5px solid;
   border-color: #98A7B7;
   border-radius: 4rem;
   -webkit-transition: border-color 100ms,box-shadow 100ms;
   transition: border-color 100ms,box-shadow 100ms;
+}
+
+.c0:hover {
+  background-color: #ffffff;
 }
 
 .c0 .sc-AxhCb {
@@ -539,7 +507,7 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   padding-bottom: 0;
   max-height: 21rem;
   top: 4.4rem;
-  border-radius: 0 0 2.5rem 2.5rem;
+  border-radius: 0 0 2.4rem 2.4rem;
 }
 
 .c0 .sc-AxhCb::before {
@@ -686,8 +654,8 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
-  cursor: inherit;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .c5 * {
@@ -713,11 +681,6 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   justify-content: center;
 }
 
-.c3 .c4 {
-  cursor: pointer;
-  font-size: 2rem;
-}
-
 .c3 .c4 * {
   fill: #607890;
 }
@@ -741,12 +704,17 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   height: 4rem;
   border: 1.5px solid;
   position: relative;
+  background-color: #ffffff;
   border-radius: 4rem;
   border-bottom: 1.5px solid;
   border-color: #98A7B7;
   border-radius: 4rem;
   -webkit-transition: border-color 100ms,box-shadow 100ms;
   transition: border-color 100ms,box-shadow 100ms;
+}
+
+.c0:hover {
+  background-color: #ffffff;
 }
 
 .c0 .sc-AxhCb {
@@ -759,7 +727,7 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   background-color: #ffffff;
   border: none;
   padding-bottom: 0;
-  max-height: 20rem;
+  max-height: 21rem;
   top: 3.6rem;
   border-radius: 0 0 2rem 2rem;
 }

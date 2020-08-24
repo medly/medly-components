@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.16.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.15.0...@medly-components/core@1.16.0) (2020-08-24)
+
+
+### Bug Fixes
+
+* updated no result row design for card type ([fe6f5e5](https://github.com/medly/medly-components/commit/fe6f5e522bf2400af4b0387bb6f5036db7e0639f))
+
+
+### Features
+
+* add body3, button1, button2 text variant ([71d0c1e](https://github.com/medly/medly-components/commit/71d0c1ef3ff781bde0d44bc5ad9d422be5b6c108))
+* make avatar border radius themabale ([c85b982](https://github.com/medly/medly-components/commit/c85b98286aad58bbac12cb9365fcec5ea725d665))
+* move icon size and padding to theme level ([7f63eaf](https://github.com/medly/medly-components/commit/7f63eaf71f533790d9f9f13e176b247213e446d2))
+* move modal close icon style to theme ([9dee031](https://github.com/medly/medly-components/commit/9dee03185ac3aa60d9ea4f26a16eda7f2ed80cbc))
+* move most of the design of searchbox to theme level ([f2da4b2](https://github.com/medly/medly-components/commit/f2da4b213271d26d673f60a8deb25657916c1622))
+
+
+
+
+
+# [1.15.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.14.3...@medly-components/core@1.15.0) (2020-08-20)
+
+
+### Features
+
+* export toast variant types ([2d3c6f7](https://github.com/medly/medly-components/commit/2d3c6f7b7339292604731ced5be152c515e21556))
+
+
+
+
+
+## [1.14.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.14.2...@medly-components/core@1.14.3) (2020-08-20)
+
+
+### Bug Fixes
+
+* added logic to align header according to column config ([d70ba90](https://github.com/medly/medly-components/commit/d70ba90c7d76c219780eb272c7addb45422e8163))
+* make props as optional in table component's custom column component ([244de71](https://github.com/medly/medly-components/commit/244de7120296991f229eedf2beed321b420b5afd))
+
+
+
+
+
 ## [1.14.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.14.1...@medly-components/core@1.14.2) (2020-08-14)
 
 

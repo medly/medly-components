@@ -40,9 +40,13 @@ exports[`Modal component should render properly when it is open 1`] = `
   right: 1.2rem;
   border-radius: 50%;
   padding: 4px;
+  background-color: #eff2f4;
+}
+
+.c3,
+.c3 > * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background-color: #eff2f4;
 }
 
 .c3 * {
@@ -50,13 +54,18 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 .c3:hover {
-  background-color: #70ADE9;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+  background-color: #0F5AD5;
 }
 
 .c3:hover * {
+  fill: #ffffff;
+}
+
+.c3:active {
+  background-color: #0D4AAF;
+}
+
+.c3:active * {
   fill: #ffffff;
 }
 

@@ -6,7 +6,20 @@ const modal: ModalTheme = {
     shadowColor: 'rgba(67, 84, 101, 0.5)',
     headerColor: colors.black,
     backgroundColor: colors.white,
-    scrollbarThumbColor: colors.grey[400]
+    scrollbarThumbColor: colors.grey[400],
+    closeIcon: {
+        borderRadius: '50%',
+        color: {
+            default: colors.black,
+            hovered: colors.white,
+            pressed: colors.white
+        },
+        bgColor: {
+            default: colors.grey[100],
+            hovered: colors.blue[600],
+            pressed: colors.blue[700]
+        }
+    }
 };
 
 export default modal;

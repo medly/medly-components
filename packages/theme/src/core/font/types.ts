@@ -1,4 +1,4 @@
-export type FontVariants = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'body1' | 'body2';
+export type FontVariants = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'body1' | 'body2' | 'body3' | 'button1' | 'button2';
 export type FontVariantTheme = {
     [k in FontVariants]: {
         fontSize: string;

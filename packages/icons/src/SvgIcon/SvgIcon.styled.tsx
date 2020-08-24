@@ -1,4 +1,3 @@
-import { defaultTheme } from '@medly-components/theme';
 import { css, InjectClassName, styled } from '@medly-components/utils';
 import { SvgIconProps } from './types';
 
@@ -11,9 +10,9 @@ const hoverStyle = ({ theme, hoverBgColor, hoverIconColor }: SvgIconProps) => cs
     }
 `;
 
-const solidStyle = ({ theme, disabled, bgColor, withHoverEffect }: SvgIconProps) => css`
-    padding: ${theme.spacing.S2};
-    border-radius: 50%;
+const solidStyle = ({ size, theme, disabled, bgColor, withHoverEffect }: SvgIconProps) => css`
+    padding: ${theme.icon.sizes[size].padding};
+    border-radius: ${theme.icon.borderRadius};
     background-color: ${disabled ? theme.icon.colors.disabled.bgColor : bgColor || theme.icon.colors.default.bgColor};
 
     ${!disabled && withHoverEffect && hoverStyle}
@@ -25,7 +24,7 @@ export const SvgIconStyled = styled(InjectClassName).attrs(({ theme: { icon: { c
 }))<SvgIconProps>`
     overflow: visible;
     transition: all 100ms linear;
-    font-size: ${({ sizes, size }) => sizes[size]};
+    font-size: ${({ sizes, size }) => sizes[size].iconSize};
     margin: ${({ margin }) => margin};
     cursor: ${({ onClick, disabled }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
     * {
@@ -39,6 +38,5 @@ export const SvgIconStyled = styled(InjectClassName).attrs(({ theme: { icon: { c
 SvgIconStyled.displayName = 'SvgIcon';
 
 SvgIconStyled.defaultProps = {
-    size: 'M',
-    theme: defaultTheme
+    size: 'M'
 };

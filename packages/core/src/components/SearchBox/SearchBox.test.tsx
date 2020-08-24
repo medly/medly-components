@@ -29,6 +29,14 @@ describe('SearchBox', () => {
         expect(getByTitle('search icon')).toBeInTheDocument();
     });
 
+    it('should call onInputChange on clicking on search icon with input value', () => {
+        const onInputChange = jest.fn();
+        const { inputEl, getByTitle } = renderComponent({ onInputChange, placeholder: 'search' });
+        fireEvent.change(inputEl, { target: { value: 'R' } });
+        fireEvent.click(getByTitle('search icon'));
+        expect(onInputChange).toHaveBeenCalledWith('R');
+    });
+
     describe('close icon', () => {
         const props = {
             placeholder: 'search',

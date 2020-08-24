@@ -36,7 +36,7 @@ const openNavStyle = ({ isActive, bgColor, navItemColors, navItemMinHeight }: Na
 const closeNavStyle = ({ isActive, bgColor, navItemColors, iconSize, theme, navItemMinHeight }: NavItemStyledProps) => css`
     border-color: ${bgColor};
     ${SvgIcon} {
-        padding: ${`calc((${navItemMinHeight} - ${theme.icon.sizes[iconSize]}) / 2) `};
+        padding: ${`calc((${navItemMinHeight} - ${theme.icon.sizes[iconSize].iconSize}) / 2) `};
         border-radius: 50%;
         ${isActive
             ? css`
@@ -74,7 +74,7 @@ export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ .
 
     ${SvgIcon} {
         overflow: visible;
-        font-size: ${({ theme, iconSize }) => theme.icon.sizes[iconSize]};
+        font-size: ${({ theme, iconSize }) => theme.icon.sizes[iconSize].iconSize};
     }
 
     ${Text.Style} {

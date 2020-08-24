@@ -1,25 +1,31 @@
 import { ClearIcon } from '@medly-components/icons';
-import { styled } from '@medly-components/utils';
+import { css, styled } from '@medly-components/utils';
+
+const getStyle = ({ styleType }: { styleType: 'default' | 'hovered' | 'pressed' }) => css`
+    background-color: ${({ theme }) => theme.modal.closeIcon.bgColor[styleType]};
+    * {
+        fill: ${({ theme }) => theme.modal.closeIcon.color[styleType]};
+    }
+`;
 
 export const CloseIcon = styled(ClearIcon)`
     position: absolute;
     top: 1.2rem;
     right: 1.2rem;
-    border-radius: 50%;
+    border-radius: ${({ theme }) => theme.modal.closeIcon.borderRadius};
     padding: 4px;
-    transition: all 100ms ease-out;
-    background-color: ${({ theme }) => theme.colors.grey[100]};
-
-    * {
-        fill: ${({ theme }) => theme.colors.black};
+    &,
+    & > * {
+        transition: all 100ms ease-out;
     }
 
-    &:hover {
-        background-color: ${({ theme }) => theme.colors.blue[400]};
-        transform: rotate(90deg);
+    ${props => getStyle({ ...props, styleType: 'default' })}
 
-        * {
-            fill: ${({ theme }) => theme.colors.white};
-        }
+    &:hover {
+        ${props => getStyle({ ...props, styleType: 'hovered' })}
+    }
+
+    &:active {
+        ${props => getStyle({ ...props, styleType: 'pressed' })}
     }
 `;

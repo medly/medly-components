@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.7.4...@medly-components/layout@1.8.0) (2020-08-24)
+
+
+### Bug Fixes
+
+* updated no result row design for card type ([fe6f5e5](https://github.com/medly/medly-components/commit/fe6f5e522bf2400af4b0387bb6f5036db7e0639f))
+
+
+### Features
+
+* move icon size and padding to theme level ([7f63eaf](https://github.com/medly/medly-components/commit/7f63eaf71f533790d9f9f13e176b247213e446d2))
+
+
+
+
+
+## [1.7.4](https://github.com/medly/medly-components/compare/@medly-components/layout@1.7.3...@medly-components/layout@1.7.4) (2020-08-20)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.7.3](https://github.com/medly/medly-components/compare/@medly-components/layout@1.7.2...@medly-components/layout@1.7.3) (2020-08-20)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 ## [1.7.2](https://github.com/medly/medly-components/compare/@medly-components/layout@1.7.1...@medly-components/layout@1.7.2) (2020-08-14)
 
 **Note:** Version bump only for package @medly-components/layout

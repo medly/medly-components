@@ -4,4 +4,17 @@ export interface ModalTheme {
     headerColor: string;
     backgroundColor: string;
     scrollbarThumbColor: string;
+    closeIcon: {
+        borderRadius: string;
+        color: {
+            default: string;
+            hovered: string;
+            pressed: string;
+        };
+        bgColor: {
+            default: string;
+            hovered: string;
+            pressed: string;
+        };
+    };
 }

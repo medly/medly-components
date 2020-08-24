@@ -57,7 +57,8 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             }, []),
             handleBlur = useCallback(() => {
                 isFocused.current = false;
-            }, []);
+            }, []),
+            handleSearchIconClick = useCallback(() => onInputChange(inputRef.current.value), [onInputChange]);
 
         useKeyboardNavigation({
             isFocused,
@@ -78,11 +79,11 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 <SearchInput placeholder={placeholder} onChange={handleChange} ref={inputRef} onFocus={handleFocus} onBlur={handleBlur} />
                 {isTyping && (
                     <CloseIconWrapper isTyping={isTyping} size={size}>
-                        <CloseIcon title="close icon" onClick={clearSearchText} />
+                        <CloseIcon title="close icon" onClick={clearSearchText} size={size} />
                     </CloseIconWrapper>
                 )}
                 <SearchIconWrapper areOptionsVisible={areOptionsVisible} isTyping={isTyping} size={size}>
-                    <SearchIcon title="search icon" />
+                    <SearchIcon title="search icon" size={size} onClick={handleSearchIconClick} />
                 </SearchIconWrapper>
                 {areOptionsVisible && (
                     <Options ref={optionsRef} options={options} variant="filled" onOptionClick={handleOptionClick}></Options>

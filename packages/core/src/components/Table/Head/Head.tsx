@@ -84,6 +84,7 @@ const Head: React.FC<Props> = React.memo(props => {
                             fitContent={config.fitContent}
                             columnMaxSize={maxColumnSizes[fieldName]}
                             sortField={sortField}
+                            align={config.align}
                             frozen={config.frozen}
                             hidden={config.hidden}
                             sortable={config.sortable}

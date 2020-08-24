@@ -42,6 +42,24 @@ const variants: FontVariantTheme = {
         fontWeight: 'Regular',
         lineHeight: '2.2rem',
         letterSpacing: '0rem'
+    },
+    body3: {
+        fontSize: '1.2rem',
+        fontWeight: 'Regular',
+        lineHeight: '1.6rem',
+        letterSpacing: '0rem'
+    },
+    button1: {
+        fontSize: '1.4rem',
+        fontWeight: 'Medium',
+        lineHeight: '2.0rem',
+        letterSpacing: '0rem'
+    },
+    button2: {
+        fontSize: '1.2rem',
+        fontWeight: 'Medium',
+        lineHeight: '1.6rem',
+        letterSpacing: '0rem'
     }
 };
 

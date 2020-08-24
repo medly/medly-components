@@ -2,7 +2,13 @@ export type IconSizes = 'XS' | 'S' | 'M' | 'L' | 'XL';
 
 export interface IconTheme {
     /** Icon sizes */
-    sizes: { [k in IconSizes]: string };
+    sizes: {
+        [k in IconSizes]: {
+            iconSize: string;
+            padding: string;
+        };
+    };
+    borderRadius: string;
     colors: {
         default: {
             /** Default icon color */

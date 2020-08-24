@@ -52,7 +52,7 @@ export const AvatarStyled = styled('div').attrs(({ theme: { avatar: { defaults }
     text-align: center;
     width: ${getAvatarSize};
     height: ${getAvatarSize};
-    border-radius: 50%;
+    border-radius: ${({ defaults }) => defaults.borderRadius};
     overflow: hidden;
     cursor: ${({ onClick, disabled }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
 
@@ -64,7 +64,7 @@ export const AvatarStyled = styled('div').attrs(({ theme: { avatar: { defaults }
         object-fit: cover;
         border: 0.1rem solid ${({ defaults }) => defaults.borderColor};
         box-sizing: border-box;
-        border-radius: 50%;
+        border-radius: ${({ defaults }) => defaults.borderRadius};
     }
 
     ${({ withHoverEffect }) => withHoverEffect && hoverStyle}

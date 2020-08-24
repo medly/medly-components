@@ -9,21 +9,13 @@ export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean }>`
     margin: 0.6rem 0;
     ${SvgIcon} {
         * {
-            fill: ${({
-                theme: {
-                    searchBox: { default: defaultTheme }
-                }
-            }) => defaultTheme.iconColor};
+            fill: ${({ theme }) => theme.searchBox.closeIcon.color.default};
         }
         &:hover {
-            background: ${({
-                theme: {
-                    searchBox: { default: defaultTheme }
-                }
-            }) => defaultTheme.iconBg};
-            border-radius: 2.5rem;
+            background: ${({ theme }) => theme.searchBox.closeIcon.bgColor.hovered};
+            border-radius: ${({ theme }) => theme.searchBox.searchIcon.borderRadius};
             * {
-                fill: ${({ theme }) => theme.colors.grey[900]};
+                fill: ${({ theme }) => theme.searchBox.closeIcon.color.hovered};
             }
         }
     }
@@ -33,12 +25,11 @@ export const SearchIconWrapper = styled.span<Props & { areOptionsVisible?: boole
     ${getIconWrapperStyle};
     ${SvgIcon} {
         * {
-            fill: ${({ theme: { searchBox }, areOptionsVisible }) =>
-                areOptionsVisible ? searchBox.active.iconColor : searchBox.default.iconColor};
+            fill: ${({ theme: { searchBox }, areOptionsVisible }) => searchBox.searchIcon.color[areOptionsVisible ? 'active' : 'default']};
         }
         &:hover {
-            background: ${({ theme, isTyping }) => (isTyping ? theme.searchBox.active.iconBg : 'transparent')};
-            border-radius: 2.5rem;
+            background: ${({ theme: { searchBox }, isTyping }) => (isTyping ? searchBox.searchIcon.bgColor.hovered : 'transparent')};
+            border-radius: ${({ theme }) => theme.searchBox.searchIcon.borderRadius};
         }
     }
 `;
