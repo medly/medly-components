@@ -1,10 +1,4 @@
-interface TextFieldTheme {
-    background: string;
-    labelColor: string;
-    textColor: string;
-    triangleColor: string;
-    borderColor: string;
-}
+import { State } from '../common/types';
 
 interface IconTheme {
     background: string;
@@ -20,15 +14,7 @@ interface ChipTheme {
     hoverBorder: string;
 }
 
-interface TextFieldTheme {
-    borderColor: string;
-    labelColor: string;
-    inputColor: string;
-}
-
-export type State = 'default' | 'active' | 'error' | 'disabled';
-
-interface MultiSelectComp {
+interface MultiSelectVariant {
     icon: {
         [k in State]: IconTheme;
     };
@@ -38,6 +24,6 @@ interface MultiSelectComp {
 }
 
 export interface MultiSelectTheme {
-    filled: MultiSelectComp;
-    outlined: MultiSelectComp;
+    filled: MultiSelectVariant;
+    outlined: MultiSelectVariant;
 }

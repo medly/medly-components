@@ -6,6 +6,7 @@ import InputMask from 'react-input-mask';
 import Calendar from '../Calendar';
 import Popover from '../Popover';
 import TextField from '../TextField';
+import { Wrapper } from './DatePicker.styled';
 import { Props } from './types';
 
 export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
@@ -32,6 +33,8 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
 
     const [formattedDate, setFormattedDate] = useState('');
     const [errorText, setErrorText] = useState('');
+    const [showCalendar, toggleCalendar] = useState(false);
+    const [active, setActive] = useState(false);
 
     useEffect(() => {
         setFormattedDate(date ? format(date, displayFormat) : '');
@@ -46,7 +49,6 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             const values = event.target.value.split('/');
             const month = values[0];
             const day = values[1];
-            const year = values[2];
             if (parseInt(month) > 12) {
                 setErrorText('Enter valid Month');
             } else if (parseInt(day) > validateDay(parseInt(month))) {
@@ -55,31 +57,41 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                 setErrorText('');
             }
             setFormattedDate(event.target.value);
-        }, []);
+        }, []),
+        iconClickHandler = useCallback(() => toggleCalendar(true), []),
+        onBlurHandler = useCallback(() => {
+            setActive(false);
+            toggleCalendar(false);
+        }, []),
+        onFocusHandler = useCallback(() => setActive(true), []);
+
+    const suffixEl = () => <DateRangeIcon onClick={iconClickHandler}></DateRangeIcon>;
 
     return (
-        <Popover interactionType="click">
+        <Wrapper variant={restProps.variant} errorText={errorText} active={active}>
             <InputMask
                 mask="99 / 99 / 9999"
+                // @ts-ignore
                 maskPlaceholder={'MM / DD / YYYY'}
                 placeholder={placeholder}
                 value={formattedDate}
                 onChange={onChangeHandler}
+                onBlur={onBlurHandler}
+                onFocus={onFocusHandler}
                 readOnly={false}
                 disabled={false}
             >
                 <TextField
                     errorText={errorText}
                     id={id}
-                    value={formattedDate}
                     required={required}
-                    suffix={DateRangeIcon}
+                    suffix={suffixEl}
                     label={label}
                     variant={restProps.variant}
                     fullWidth
                 />
             </InputMask>
-            <Popover.Popup id={`${id}-popover`} placement={popoverPlacement}>
+            {showCalendar && (
                 <Calendar
                     id={`${id}-calendar`}
                     date={date}
@@ -87,8 +99,8 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                     minSelectableDate={minSelectableDate ?? undefined}
                     maxSelectableDate={maxSelectableDate ?? undefined}
                 />
-            </Popover.Popup>
-        </Popover>
+            )}
+        </Wrapper>
     );
 });
 

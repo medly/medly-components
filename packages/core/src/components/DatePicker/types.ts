@@ -48,3 +48,8 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     /** Input variants for DatePicker */
     variant?: 'outlined' | 'filled';
 }
+
+export interface WrapperProps extends Pick<Props, 'variant' | 'fullWidth' | 'disabled'> {
+    errorText?: string;
+    active?: boolean;
+}
