@@ -1,17 +1,22 @@
-import { DateRangeIcon } from '@medly-components/icons/src';
+import { SvgIcon } from '@medly-components/icons';
 import { css, styled, WithThemeProp } from '@medly-components/utils';
 import { State } from 'packages/theme/src/core/common/types';
-import { WrapperProps } from './types';
+import { OuterWrapper } from '../TextField/Styled';
+import { InnerWrapper } from '../TextField/Styled/InnerWrapper.styled';
+import { StyleProps } from './types';
 
-const getStyleForIcon = ({ theme, variant }: WrapperProps & WithThemeProp, state: State) => {
+const getStyleForIcon = ({ theme, variant }: StyleProps & WithThemeProp, state: State) => {
     const { datePicker } = theme;
     const {
         icon: { [state]: iconStyle }
     } = datePicker[variant];
     return css`
-        ${DateRangeIcon.Style} {
+        ${SvgIcon} {
             border-radius: 50%;
             padding: 0.8rem;
+            * {
+                fill: ${iconStyle.color};
+            }
             &:hover {
                 background-color: ${iconStyle.backgroundColor};
                 * {
@@ -22,9 +27,19 @@ const getStyleForIcon = ({ theme, variant }: WrapperProps & WithThemeProp, state
     `;
 };
 
-export const Wrapper = styled.div<WrapperProps>`
+export const DateIcon = styled.span<StyleProps>`
+    height: 4rem;
     ${props => getStyleForIcon(props, 'default')};
     ${props => props.active && getStyleForIcon(props, 'active')};
     ${props => props.errorText && getStyleForIcon(props, 'error')};
     ${props => props.disabled && getStyleForIcon(props, 'disabled')};
+`;
+
+export const Wrapper = styled.div<StyleProps>`
+    ${InnerWrapper} {
+        padding: 0 0.8rem 0 1.6rem;
+    }
+    ${OuterWrapper} {
+        width: 25.6rem;
+    }
 `;

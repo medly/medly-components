@@ -1,6 +1,7 @@
 import { State } from '../common/types';
 interface IconTheme {
     backgroundColor: string;
+    color: string;
     hoverColor: string;
 }
 

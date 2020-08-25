@@ -49,7 +49,7 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     variant?: 'outlined' | 'filled';
 }
 
-export interface WrapperProps extends Pick<Props, 'variant' | 'fullWidth' | 'disabled'> {
+export interface StyleProps extends Pick<Props, 'variant' | 'fullWidth' | 'disabled'> {
     errorText?: string;
     active?: boolean;
 }

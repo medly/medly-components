@@ -6,7 +6,7 @@ import InputMask from 'react-input-mask';
 import Calendar from '../Calendar';
 import Popover from '../Popover';
 import TextField from '../TextField';
-import { Wrapper } from './DatePicker.styled';
+import { DateIcon, Wrapper } from './DatePicker.styled';
 import { Props } from './types';
 
 export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
@@ -58,17 +58,24 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             }
             setFormattedDate(event.target.value);
         }, []),
-        iconClickHandler = useCallback(() => toggleCalendar(true), []),
+        iconClickHandler = useCallback(event => {
+            event.preventDefault();
+            toggleCalendar(true);
+        }, []),
         onBlurHandler = useCallback(() => {
             setActive(false);
             toggleCalendar(false);
         }, []),
         onFocusHandler = useCallback(() => setActive(true), []);
 
-    const suffixEl = () => <DateRangeIcon onClick={iconClickHandler}></DateRangeIcon>;
+    const suffixEl = () => (
+        <DateIcon variant={restProps.variant} errorText={errorText} active={active}>
+            <DateRangeIcon onClick={iconClickHandler}></DateRangeIcon>
+        </DateIcon>
+    );
 
     return (
-        <Wrapper variant={restProps.variant} errorText={errorText} active={active}>
+        <Wrapper>
             <InputMask
                 mask="99 / 99 / 9999"
                 // @ts-ignore

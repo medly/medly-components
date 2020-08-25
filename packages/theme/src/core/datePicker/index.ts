@@ -7,18 +7,22 @@ const blue = colors.blue;
 
 const iconStyles = {
     default: {
+        color: grey[600],
         hoverColor: grey[800],
         backgroundColor: grey[100]
     },
     active: {
+        color: blue[500],
         hoverColor: blue[500],
         backgroundColor: blue[100]
     },
     error: {
+        color: red[500],
         hoverColor: red[500],
         backgroundColor: red[100]
     },
     disabled: {
+        color: grey[400],
         hoverColor: grey[400],
         backgroundColor: grey[100]
     }
