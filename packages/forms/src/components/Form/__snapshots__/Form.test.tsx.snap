@@ -1273,7 +1273,6 @@ exports[`Form should render properly with initial state 1`] = `
 .c61 {
   background-color: transparent;
   border: none;
-  border-radius: 2rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1285,6 +1284,7 @@ exports[`Form should render properly with initial state 1`] = `
   border: 1px solid;
   padding: 0.2rem 0.6rem 0.2rem 1rem;
   border-color: #607890;
+  border-radius: 2rem;
   background-color: #dfe4e9;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
