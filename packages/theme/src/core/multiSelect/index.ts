@@ -35,6 +35,7 @@ const iconStyles = {
 };
 
 const chipStyles = {
+    borderRadius: '2rem',
     default: {
         background: grey[100],
         border: grey[400],

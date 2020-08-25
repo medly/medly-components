@@ -1,6 +1,7 @@
 import colors from '../colors';
+import { SearchBoxTheme } from './types';
 
-const SearchBox = {
+const SearchBox: SearchBoxTheme = {
     height: {
         S: '4rem',
         M: '4.8rem'
@@ -37,7 +38,7 @@ const SearchBox = {
             hovered: colors.grey[900]
         },
         bgColor: {
-            hovered: colors.blue[100]
+            hovered: colors.grey[100]
         }
     },
     searchIcon: {

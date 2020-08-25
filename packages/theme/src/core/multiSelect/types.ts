@@ -1,11 +1,3 @@
-interface TextFieldTheme {
-    background: string;
-    labelColor: string;
-    textColor: string;
-    triangleColor: string;
-    borderColor: string;
-}
-
 interface IconTheme {
     background: string;
     hoverBackground: string;
@@ -20,12 +12,6 @@ interface ChipTheme {
     hoverBorder: string;
 }
 
-interface TextFieldTheme {
-    borderColor: string;
-    labelColor: string;
-    inputColor: string;
-}
-
 export type State = 'default' | 'active' | 'error' | 'disabled';
 
 interface MultiSelectComp {
@@ -34,7 +20,7 @@ interface MultiSelectComp {
     };
     chip: {
         [k in State]: ChipTheme;
-    };
+    } & { borderRadius: string };
 }
 
 export interface MultiSelectTheme {

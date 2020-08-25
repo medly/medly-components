@@ -253,7 +253,6 @@ exports[`MultiSelect component with checkbox false should render correctly with 
 .c10 {
   background-color: transparent;
   border: none;
-  border-radius: 2rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -265,6 +264,7 @@ exports[`MultiSelect component with checkbox false should render correctly with 
   border: 1px solid;
   padding: 0.2rem 0.6rem 0.2rem 1rem;
   border-color: #C7D0D8;
+  border-radius: 2rem;
   background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1073,7 +1073,6 @@ exports[`MultiSelect component with checkbox true should render correctly with a
 .c10 {
   background-color: transparent;
   border: none;
-  border-radius: 2rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1085,6 +1084,7 @@ exports[`MultiSelect component with checkbox true should render correctly with a
   border: 1px solid;
   padding: 0.2rem 0.6rem 0.2rem 1rem;
   border-color: #C7D0D8;
+  border-radius: 2rem;
   background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

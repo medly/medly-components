@@ -115,7 +115,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c2 .c3:hover {
-  background: #E7F0FF;
+  background: #eff2f4;
   border-radius: 2.5rem;
 }
 
