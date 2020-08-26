@@ -1,6 +1,4 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
-import { LabelPositions } from '../Label/types';
-import { Placement } from '../Popover/types';
 
 export type DisplayFormat =
     | 'dd/MM/yyyy'
@@ -33,8 +31,6 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     required?: boolean;
     /** Date picker label */
     label?: string;
-    /** Label Position */
-    labelPosition?: LabelPositions;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
     /** Min width of the component */
@@ -43,8 +39,6 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     minSelectableDate?: Date;
     /** Maximum selectable Date */
     maxSelectableDate?: Date;
-    /** Popover placement */
-    popoverPlacement?: Placement;
     /** Input variants for DatePicker */
     variant?: 'outlined' | 'filled';
 }

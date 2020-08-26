@@ -72,4 +72,10 @@ describe('DatePicker component', () => {
         fireEvent.click(getByTitle(dateToSelect.toDateString()));
         expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
     });
+
+    describe('error messages', () => {
+        it('should return error message for incorrect month', () => {});
+        it('should return error message for incorrect day', () => {});
+        it('should not return error message for valid input', () => {});
+    });
 });

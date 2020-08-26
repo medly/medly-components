@@ -15,7 +15,6 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             onChange,
             displayFormat,
             label,
-            labelPosition,
             fullWidth,
             minWidth,
             required,
@@ -71,13 +70,13 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
         onFocusHandler = useCallback(() => setActive(true), []);
 
     const suffixEl = () => (
-        <DateIcon variant={restProps.variant} errorText={errorText} active={active}>
+        <DateIcon variant={restProps.variant} errorText={errorText} active={active} disabled={disabled}>
             <DateRangeIcon onClick={iconClickHandler}></DateRangeIcon>
         </DateIcon>
     );
 
     return (
-        <Wrapper>
+        <Wrapper fullWidth={fullWidth}>
             <InputMask
                 mask="99/99/9999"
                 // @ts-ignore
@@ -88,7 +87,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                 onBlur={onBlurHandler}
                 onFocus={onFocusHandler}
                 readOnly={false}
-                disabled={false}
+                disabled={disabled}
             >
                 <TextField
                     errorText={errorText}
@@ -97,7 +96,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                     suffix={suffixEl}
                     label={label}
                     variant={restProps.variant}
-                    fullWidth
+                    disabled={disabled}
                 />
             </InputMask>
             {showCalendar && (
@@ -121,9 +120,7 @@ DatePicker.defaultProps = {
     disabled: false,
     required: false,
     label: '',
-    labelPosition: 'left',
-    fullWidth: false,
-    popoverPlacement: 'bottom-start'
+    fullWidth: false
 };
 DatePicker.displayName = 'DatePicker';
 DatePicker.Style = Popover.Style;

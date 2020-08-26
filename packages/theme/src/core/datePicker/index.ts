@@ -22,8 +22,8 @@ const iconStyles = {
         backgroundColor: red[100]
     },
     disabled: {
-        color: grey[400],
-        hoverColor: grey[400],
+        color: grey[300],
+        hoverColor: grey[300],
         backgroundColor: grey[100]
     }
 };

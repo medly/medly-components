@@ -57,6 +57,8 @@ exports[`DatePicker component should render properly when value is of date type 
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
+  cursor: not-allowed;
+  background-color: #F7F8F9;
 }
 
 .c4 .c7 {
@@ -90,58 +92,36 @@ exports[`DatePicker component should render properly when value is of date type 
   transition: all 100ms ease-out;
 }
 
-.c4:hover::after,
-.c4:focus-within::after {
-  border-width: 0.2rem;
+.c4::after,
+.c4:hover::after {
+  border-width: 0.1rem;
+  border-color: #C7D0D8;
 }
 
-.c4:focus-within,
-.c4:focus-within:hover {
-  background-color: #E7F0FF;
+.c4 input {
+  color: #435465;
 }
 
-.c4:focus-within::after,
-.c4:focus-within:hover::after {
-  border-color: #126AFA;
+.c4 .c7 {
+  color: #b0bcc8;
 }
 
-.c4:focus-within .c7,
-.c4:focus-within:hover .c7 {
-  color: #126AFA;
+.c4 .sc-AxheI,
+.c4 .sc-Axmtr {
+  color: #b0bcc8;
 }
 
-.c4:focus-within .sc-AxheI,
-.c4:focus-within:hover .sc-AxheI,
-.c4:focus-within .sc-Axmtr,
-.c4:focus-within:hover .sc-Axmtr {
-  color: #126AFA;
+.c4 .sc-AxheI *,
+.c4 .sc-Axmtr * {
+  fill: #b0bcc8;
 }
 
-.c4:focus-within .sc-AxheI *,
-.c4:focus-within:hover .sc-AxheI *,
-.c4:focus-within .sc-Axmtr *,
-.c4:focus-within:hover .sc-Axmtr * {
-  fill: #126AFA;
+.c4 ~ .sc-AxhUy {
+  color: #b0bcc8;
 }
 
-.c4:focus-within input::-webkit-input-placeholder,
-.c4:focus-within:hover input::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c4:focus-within input::-moz-placeholder,
-.c4:focus-within:hover input::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c4:focus-within input:-ms-input-placeholder,
-.c4:focus-within:hover input:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c4:focus-within input::placeholder,
-.c4:focus-within:hover input::placeholder {
-  color: rgba(0,90,238,.2);
+.c4 * {
+  cursor: not-allowed;
 }
 
 .c5 {
@@ -166,13 +146,15 @@ exports[`DatePicker component should render properly when value is of date type 
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   min-width: 20rem;
-  margin: 0.8rem 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
 .c6 {
@@ -266,11 +248,29 @@ exports[`DatePicker component should render properly when value is of date type 
   fill: #303C48;
 }
 
+.c9 .c10 {
+  border-radius: 50%;
+  padding: 0.8rem;
+}
+
+.c9 .c10 * {
+  fill: #C7D0D8;
+}
+
+.c9 .c10:hover {
+  background-color: #eff2f4;
+}
+
+.c9 .c10:hover * {
+  fill: #C7D0D8;
+}
+
 .c0 .c3 {
   padding: 0 0.8rem 0 1.6rem;
 }
 
 .c0 .c1 {
+  display: block;
   width: 25.6rem;
 }
 
@@ -284,6 +284,7 @@ exports[`DatePicker component should render properly when value is of date type 
     >
       <div
         class="c3 c4"
+        disabled=""
       >
         <div
           class="c5"
@@ -291,6 +292,7 @@ exports[`DatePicker component should render properly when value is of date type 
           <input
             aria-describedby="medly-datepicker-helper-text"
             class="c6"
+            disabled=""
             id="medly-datepicker-input"
             placeholder="Date of Birth"
             type="text"
@@ -305,6 +307,7 @@ exports[`DatePicker component should render properly when value is of date type 
         </div>
         <span
           class="c9"
+          disabled=""
         >
           <svg
             class="c10 c11"
@@ -387,6 +390,8 @@ exports[`DatePicker component should render properly when value is of string typ
   cursor: text;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
+  cursor: not-allowed;
+  background-color: #F7F8F9;
 }
 
 .c4 .c7 {
@@ -420,58 +425,36 @@ exports[`DatePicker component should render properly when value is of string typ
   transition: all 100ms ease-out;
 }
 
-.c4:hover::after,
-.c4:focus-within::after {
-  border-width: 0.2rem;
+.c4::after,
+.c4:hover::after {
+  border-width: 0.1rem;
+  border-color: #C7D0D8;
 }
 
-.c4:focus-within,
-.c4:focus-within:hover {
-  background-color: #E7F0FF;
+.c4 input {
+  color: #435465;
 }
 
-.c4:focus-within::after,
-.c4:focus-within:hover::after {
-  border-color: #126AFA;
+.c4 .c7 {
+  color: #b0bcc8;
 }
 
-.c4:focus-within .c7,
-.c4:focus-within:hover .c7 {
-  color: #126AFA;
+.c4 .sc-AxheI,
+.c4 .sc-Axmtr {
+  color: #b0bcc8;
 }
 
-.c4:focus-within .sc-AxheI,
-.c4:focus-within:hover .sc-AxheI,
-.c4:focus-within .sc-Axmtr,
-.c4:focus-within:hover .sc-Axmtr {
-  color: #126AFA;
+.c4 .sc-AxheI *,
+.c4 .sc-Axmtr * {
+  fill: #b0bcc8;
 }
 
-.c4:focus-within .sc-AxheI *,
-.c4:focus-within:hover .sc-AxheI *,
-.c4:focus-within .sc-Axmtr *,
-.c4:focus-within:hover .sc-Axmtr * {
-  fill: #126AFA;
+.c4 ~ .sc-AxhUy {
+  color: #b0bcc8;
 }
 
-.c4:focus-within input::-webkit-input-placeholder,
-.c4:focus-within:hover input::-webkit-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c4:focus-within input::-moz-placeholder,
-.c4:focus-within:hover input::-moz-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c4:focus-within input:-ms-input-placeholder,
-.c4:focus-within:hover input:-ms-input-placeholder {
-  color: rgba(0,90,238,.2);
-}
-
-.c4:focus-within input::placeholder,
-.c4:focus-within:hover input::placeholder {
-  color: rgba(0,90,238,.2);
+.c4 * {
+  cursor: not-allowed;
 }
 
 .c5 {
@@ -496,13 +479,15 @@ exports[`DatePicker component should render properly when value is of string typ
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   min-width: 20rem;
-  margin: 0.8rem 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
 .c6 {
@@ -596,11 +581,29 @@ exports[`DatePicker component should render properly when value is of string typ
   fill: #303C48;
 }
 
+.c9 .c10 {
+  border-radius: 50%;
+  padding: 0.8rem;
+}
+
+.c9 .c10 * {
+  fill: #C7D0D8;
+}
+
+.c9 .c10:hover {
+  background-color: #eff2f4;
+}
+
+.c9 .c10:hover * {
+  fill: #C7D0D8;
+}
+
 .c0 .c3 {
   padding: 0 0.8rem 0 1.6rem;
 }
 
 .c0 .c1 {
+  display: block;
   width: 25.6rem;
 }
 
@@ -614,6 +617,7 @@ exports[`DatePicker component should render properly when value is of string typ
     >
       <div
         class="c3 c4"
+        disabled=""
       >
         <div
           class="c5"
@@ -621,6 +625,7 @@ exports[`DatePicker component should render properly when value is of string typ
           <input
             aria-describedby="medly-datepicker-helper-text"
             class="c6"
+            disabled=""
             id="medly-datepicker-input"
             placeholder="Date of Birth"
             type="text"
@@ -635,6 +640,7 @@ exports[`DatePicker component should render properly when value is of string typ
         </div>
         <span
           class="c9"
+          disabled=""
         >
           <svg
             class="c10 c11"

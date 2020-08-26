@@ -41,6 +41,7 @@ export const Wrapper = styled.div<StyleProps>`
         padding: 0 0.8rem 0 1.6rem;
     }
     ${OuterWrapper} {
-        width: 25.6rem;
+        display: block;
+        width: ${({ fullWidth }) => (fullWidth ? '100%' : '25.6rem')};
     }
 `;

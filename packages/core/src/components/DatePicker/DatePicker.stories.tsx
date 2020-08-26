@@ -1,10 +1,7 @@
 import { boolean, select, text } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
-import { placements } from '../Popover/Popover.stories';
 import { DatePicker } from './DatePicker';
 import { Props } from './types';
-
-const labelPosition: Props['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
 
 const variants: Props['variant'][] = ['outlined', 'filled'];
 
@@ -21,8 +18,6 @@ export const Basic = () => {
             placeholder={text('Placeholder', 'MM / DD / YYYY')}
             label={text('Label', 'Date of Birth')}
             variant={select('variant', variants, 'outlined')}
-            labelPosition={select('Label Position', labelPosition, 'left')}
-            popoverPlacement={select('Popover Placement', placements, 'bottom-start')}
             required={boolean('Required', false)}
             minSelectableDate={new Date(2020, 11, 1)}
             maxSelectableDate={new Date(2021, 11, 30)}
