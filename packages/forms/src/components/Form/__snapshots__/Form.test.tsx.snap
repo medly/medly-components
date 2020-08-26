@@ -1976,7 +1976,7 @@ exports[`Form should render properly with initial state 1`] = `
                 id="birthDate-input"
                 placeholder="Birth Date"
                 type="text"
-                value="01 / 01 / 2019"
+                value="01/01/2019"
               />
               <label
                 class="c8 c43"
