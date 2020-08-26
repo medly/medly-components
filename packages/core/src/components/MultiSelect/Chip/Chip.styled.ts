@@ -36,11 +36,12 @@ const common = ({
 const getStylesForChipAndIcon = ({ theme, variant, state }: Props) => {
     const { multiSelect } = theme;
     const {
-        chip: { [state]: chipStyle },
+        chip: { [state]: chipStyle, borderRadius },
         icon: { [state]: iconStyle }
     } = multiSelect[variant];
     return css`
         border-color: ${chipStyle.border};
+        border-radius: ${borderRadius};
         background-color: ${chipStyle.background};
         ${SvgIcon} {
             background-color: ${iconStyle.background};
@@ -66,7 +67,6 @@ const getStylesForChipAndIcon = ({ theme, variant, state }: Props) => {
 export const Chip = styled('button')<Props>`
     background-color: transparent;
     border: none;
-    border-radius: 2rem;
     user-select: none;
     max-width: max-content;
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'default')};

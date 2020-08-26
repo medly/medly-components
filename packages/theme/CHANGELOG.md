@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.9.0...@medly-components/theme@1.10.0) (2020-08-25)
+
+
+### Features
+
+* change few colors in multiselct, modal and searchbox ([d331997](https://github.com/medly/medly-components/commit/d33199789d2bcc538eb0266c5e1aec46abcbebdf))
+
+
+
+
+
 # [1.9.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.8.0...@medly-components/theme@1.9.0) (2020-08-24)
 
 

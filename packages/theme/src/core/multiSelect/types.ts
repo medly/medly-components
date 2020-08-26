@@ -20,7 +20,7 @@ interface MultiSelectVariant {
     };
     chip: {
         [k in State]: ChipTheme;
-    };
+    } & { borderRadius: string };
 }
 
 export interface MultiSelectTheme {
