@@ -43,28 +43,23 @@ describe('DatePicker component', () => {
         const { container } = render(
             <DatePicker disabled label="Start Date" value="01/01/2020" displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
         );
-        const inputEl = container.querySelector('#medly-datepicker-input') as HTMLInputElement;
+        const inputEl = container.querySelector('input') as HTMLInputElement;
         fireEvent.change(inputEl, { target: { value: 'Dummy' } });
         expect(inputEl.value).toEqual('01/01/2020');
     });
 
-    it('should show calendar on click on input', () => {
+    it('should show calendar on click on icon', () => {
         const { container } = render(<DatePicker value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />);
-        fireEvent.click(container.querySelector('input'));
-        expect(container.querySelector('#medly-datepicker-popover')).toBeVisible();
+        fireEvent.click(container.querySelector('svg'));
+        expect(container.querySelector('#medly-datepicker-calendar')).toBeVisible();
     });
 
     it('should hide calendar on click outside of the component', async () => {
-        const { container, getByText } = render(
-            <>
-                <div>sibling</div>
-                <DatePicker value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
-            </>
-        );
-        fireEvent.click(container.querySelector('input'));
-        expect(container.querySelector('#medly-datepicker-popover')).toBeVisible();
-        fireEvent.click(getByText('sibling'));
-        expect(container.querySelector('#medly-datepicker-popover')).toBeNull();
+        const { container } = render(<DatePicker value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />);
+        fireEvent.click(container.querySelector('svg'));
+        expect(container.querySelector('#medly-datepicker-calendar')).toBeVisible();
+        fireEvent.blur(container.querySelector('input'));
+        expect(container.querySelector('#medly-datepicker-calendar')).toBeNull();
     });
 
     it('should call onChange on selecting date', async () => {
@@ -73,7 +68,7 @@ describe('DatePicker component', () => {
             { container, getByTitle } = render(
                 <DatePicker value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />
             );
-        fireEvent.click(container.querySelector('input'));
+        fireEvent.click(container.querySelector('svg'));
         fireEvent.click(getByTitle(dateToSelect.toDateString()));
         expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
     });

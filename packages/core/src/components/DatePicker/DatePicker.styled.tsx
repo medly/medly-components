@@ -1,9 +1,10 @@
 import { SvgIcon } from '@medly-components/icons';
 import { css, styled, WithThemeProp } from '@medly-components/utils';
-import { State } from 'packages/theme/src/core/common/types';
 import { OuterWrapper } from '../TextField/Styled';
 import { InnerWrapper } from '../TextField/Styled/InnerWrapper.styled';
 import { StyleProps } from './types';
+
+type State = 'default' | 'active' | 'error' | 'disabled';
 
 const getStyleForIcon = ({ theme, variant }: StyleProps & WithThemeProp, state: State) => {
     const { datePicker } = theme;

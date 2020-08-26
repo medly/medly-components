@@ -173,7 +173,7 @@ describe('Form', () => {
             const country = await findByText('India');
             fireEvent.click(country);
 
-            fireEvent.click(container.querySelector('#birthDate-input'));
+            fireEvent.click(container.querySelector('#birthDate-input-wrapper').querySelector('svg'));
             fireEvent.click(getByTitle(new Date(2020, 0, 2).toDateString()));
 
             fireEvent.focus(container.querySelector('#startDate'));
@@ -252,7 +252,7 @@ describe('Form', () => {
                         initialState={datesInitialState}
                     />
                 );
-            fireEvent.click(container.querySelector('#birthDate-input'));
+            fireEvent.click(container.querySelector('#birthDate-input-wrapper').querySelector('svg'));
             fireEvent.click(getByTitle(new Date(2020, 0, 2).toDateString()));
 
             fireEvent.focus(container.querySelector('#startDate'));
@@ -291,7 +291,7 @@ describe('Form', () => {
                         initialState={datesInitialState}
                     />
                 );
-            fireEvent.click(container.querySelector('#birthDate-input'));
+            fireEvent.click(container.querySelector('#birthDate-input-wrapper').querySelector('svg'));
             fireEvent.click(getByTitle(new Date(2020, 0, 2).toDateString()));
 
             fireEvent.focus(container.querySelector('#startDate'));

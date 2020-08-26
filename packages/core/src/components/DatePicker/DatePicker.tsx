@@ -19,7 +19,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             fullWidth,
             minWidth,
             required,
-            popoverPlacement,
+            disabled,
             minSelectableDate,
             maxSelectableDate,
             placeholder,
@@ -56,7 +56,9 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             } else {
                 setErrorText('');
             }
-            setFormattedDate(event.target.value);
+            if (!disabled) {
+                setFormattedDate(event.target.value);
+            }
         }, []),
         iconClickHandler = useCallback(event => {
             event.preventDefault();
@@ -77,9 +79,9 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
     return (
         <Wrapper>
             <InputMask
-                mask="99 / 99 / 9999"
+                mask="99/99/9999"
                 // @ts-ignore
-                maskPlaceholder={'MM / DD / YYYY'}
+                maskPlaceholder={displayFormat}
                 placeholder={placeholder}
                 value={formattedDate}
                 onChange={onChangeHandler}
