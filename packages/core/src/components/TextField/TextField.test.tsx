@@ -10,6 +10,11 @@ describe('TextField', () => {
         expect(container).toMatchSnapshot();
     });
 
+    test.each(['S', 'M'])('should render properly with %s size', (size: 'S' | 'M') => {
+        const { container } = render(<TextField label="Name" size={size} />);
+        expect(container).toMatchSnapshot();
+    });
+
     it('should take parents width if we pass fullWidth prop as true', () => {
         const { container } = render(<TextField label="Name" fullWidth />);
         expect(container.querySelector('div')).toHaveStyle(`

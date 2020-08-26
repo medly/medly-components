@@ -1,4 +1,9 @@
 export interface TextFieldTheme {
+    /**  */
+    height: {
+        S: string;
+        M: string;
+    };
     /** Outline variant theme */
     outlined: {
         default: {

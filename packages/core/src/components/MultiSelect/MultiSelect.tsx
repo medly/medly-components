@@ -11,6 +11,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 id,
+                size,
                 label,
                 disabled,
                 values,
@@ -142,6 +143,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                     fullWidth
                     required={required}
                     id={`${selectId}`}
+                    size={size}
                     autoComplete="off"
                     variant={variant}
                     disabled={disabled}
@@ -160,6 +162,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                 {!disabled && areOptionsVisible && (
                     <Options
                         id={`${selectId}-options`}
+                        size={size}
                         ref={optionsRef}
                         values={selectedOptions}
                         options={options}
@@ -174,6 +177,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
 MultiSelect.displayName = 'MultiSelect';
 MultiSelect.Style = Wrapper;
 MultiSelect.defaultProps = {
+    size: 'M',
     values: [],
     variant: 'filled',
     isSearchable: true,

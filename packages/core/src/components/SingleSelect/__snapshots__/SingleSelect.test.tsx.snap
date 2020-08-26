@@ -15,7 +15,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 }
 
 .c7 {
-  top: 0;
+  top: 50%;
   left: 0;
   cursor: text;
   -webkit-user-select: none;
@@ -31,9 +31,10 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,58%,0);
-  -ms-transform: translate3d(0,58%,0);
-  transform: translate3d(0,58%,0);
+  -webkit-transform: translateY(-52%);
+  -ms-transform: translateY(-52%);
+  transform: translateY(-52%);
+  opacity: 1;
 }
 
 .c10 {
@@ -241,9 +242,9 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 
 .c5:not(:placeholder-shown) + .c6,
 .c5:focus + .c6 {
-  -webkit-transform: translate3d(0,20%,0) scale(0.75);
-  -ms-transform: translate3d(0,20%,0) scale(0.75);
-  transform: translate3d(0,20%,0) scale(0.75);
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
 }
 
 .c0 {
@@ -358,7 +359,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
 }
 
 .c7 {
-  top: 0;
+  top: 50%;
   left: 0;
   cursor: text;
   -webkit-user-select: none;
@@ -374,9 +375,10 @@ exports[`SingleSelect component should render properly when isSearchable is true
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,58%,0);
-  -ms-transform: translate3d(0,58%,0);
-  transform: translate3d(0,58%,0);
+  -webkit-transform: translateY(-52%);
+  -ms-transform: translateY(-52%);
+  transform: translateY(-52%);
+  opacity: 1;
 }
 
 .c10 {
@@ -584,9 +586,9 @@ exports[`SingleSelect component should render properly when isSearchable is true
 
 .c5:not(:placeholder-shown) + .c6,
 .c5:focus + .c6 {
-  -webkit-transform: translate3d(0,20%,0) scale(0.75);
-  -ms-transform: translate3d(0,20%,0) scale(0.75);
-  transform: translate3d(0,20%,0) scale(0.75);
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
 }
 
 .c0 {
@@ -704,7 +706,7 @@ exports[`SingleSelect component with filled variant should render disabled state
 }
 
 .c7 {
-  top: 0;
+  top: 50%;
   left: 0;
   cursor: text;
   -webkit-user-select: none;
@@ -720,9 +722,10 @@ exports[`SingleSelect component with filled variant should render disabled state
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,58%,0);
-  -ms-transform: translate3d(0,58%,0);
-  transform: translate3d(0,58%,0);
+  -webkit-transform: translateY(-52%);
+  -ms-transform: translateY(-52%);
+  transform: translateY(-52%);
+  opacity: 1;
 }
 
 .c10 {
@@ -910,9 +913,9 @@ exports[`SingleSelect component with filled variant should render disabled state
 
 .c5:not(:placeholder-shown) + .c6,
 .c5:focus + .c6 {
-  -webkit-transform: translate3d(0,20%,0) scale(0.75);
-  -ms-transform: translate3d(0,20%,0) scale(0.75);
-  transform: translate3d(0,20%,0) scale(0.75);
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
 }
 
 .c0 {
@@ -1308,7 +1311,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 }
 
 .c7 {
-  top: 0;
+  top: 50%;
   left: 0;
   cursor: text;
   -webkit-user-select: none;
@@ -1324,9 +1327,10 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,58%,0);
-  -ms-transform: translate3d(0,58%,0);
-  transform: translate3d(0,58%,0);
+  -webkit-transform: translateY(-52%);
+  -ms-transform: translateY(-52%);
+  transform: translateY(-52%);
+  opacity: 1;
 }
 
 .c10 {
@@ -1534,9 +1538,9 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 
 .c5:not(:placeholder-shown) + .c6,
 .c5:focus + .c6 {
-  -webkit-transform: translate3d(0,20%,0) scale(0.75);
-  -ms-transform: translate3d(0,20%,0) scale(0.75);
-  transform: translate3d(0,20%,0) scale(0.75);
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
 }
 
 .c0 {
@@ -1651,7 +1655,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 }
 
 .c7 {
-  top: 0;
+  top: 50%;
   left: 0;
   cursor: text;
   -webkit-user-select: none;
@@ -1667,9 +1671,10 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,55%,0);
-  -ms-transform: translate3d(0,55%,0);
-  transform: translate3d(0,55%,0);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
 }
 
 .c10 {
@@ -1862,9 +1867,9 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 
 .c5:not(:placeholder-shown) + .c6,
 .c5:focus + .c6 {
-  -webkit-transform: translate3d(0,20%,0) scale(0.75);
-  -ms-transform: translate3d(0,20%,0) scale(0.75);
-  transform: translate3d(0,20%,0) scale(0.75);
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
 }
 
 .c0 {
@@ -2260,7 +2265,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 }
 
 .c7 {
-  top: 0;
+  top: 50%;
   left: 0;
   cursor: text;
   -webkit-user-select: none;
@@ -2276,9 +2281,10 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,55%,0);
-  -ms-transform: translate3d(0,55%,0);
-  transform: translate3d(0,55%,0);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
 }
 
 .c10 {
@@ -2500,9 +2506,9 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 
 .c5:not(:placeholder-shown) + .c6,
 .c5:focus + .c6 {
-  -webkit-transform: translate3d(0,20%,0) scale(0.75);
-  -ms-transform: translate3d(0,20%,0) scale(0.75);
-  transform: translate3d(0,20%,0) scale(0.75);
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
 }
 
 .c0 {

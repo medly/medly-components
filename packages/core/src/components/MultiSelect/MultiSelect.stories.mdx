@@ -2,7 +2,7 @@ import { MultiSelect } from './MultiSelect';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { boolean, select, text } from '@storybook/addon-knobs';
 import { useState } from 'react';
-import { variants, options, ThemeInterface } from './MultiSelect.stories';
+import { variants, sizes, options, ThemeInterface } from './MultiSelect.stories';
 
 <Meta title="Core" component={MultiSelect} />
 
@@ -19,6 +19,7 @@ Basic MultiSelect component
                     options={options}
                     values={values}
                     onChange={setValues}
+                    size={select('Size', sizes, 'M')}
                     disabled={boolean('Disabled', false)}
                     fullWidth={boolean('Full Width', false)}
                     required={boolean('Required', false)}

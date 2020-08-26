@@ -1,7 +1,8 @@
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 import { Option } from '../types';
 
-export interface OptionsProps extends HTMLProps<HTMLUListElement>, WithThemeProp {
+export interface OptionsProps extends Omit<HTMLProps<HTMLUListElement>, 'size'>, WithThemeProp {
+    size?: 'S' | 'M';
     options: Option[];
     values: any[];
     onOptionClick: (options: any[]) => void;

@@ -9,8 +9,8 @@ const styleWithLabel = ({ variant }: StyledProps) => {
     `;
 };
 
-export const Input = styled('input').attrs(({ theme: { textField } }) => ({ ...textField, textField }))<StyledProps>`
-    color: ${({ variant, textField }) => textField[variant].default.textColor};
+export const Input = styled('input')<StyledProps>`
+    color: ${({ variant, theme }) => theme.textField[variant].default.textColor};
     font-size: 1.6rem;
     width: 100%;
     margin: 0;
@@ -37,6 +37,7 @@ export const Input = styled('input').attrs(({ theme: { textField } }) => ({ ...t
     }
 
     &:not(:placeholder-shown) + ${Label}, &:focus + ${Label} {
-        transform: translate3d(0, 20%, 0) scale(0.75);
+        opacity: ${({ size }) => size === 'S' && '0'};
+        transform: ${({ size }) => size === 'M' && 'translateY(-87%) scale(0.75)'};
     }
 `;

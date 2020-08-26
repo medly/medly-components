@@ -207,7 +207,7 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c14 {
-  top: 0;
+  top: 50%;
   left: 0;
   cursor: text;
   -webkit-user-select: none;
@@ -223,9 +223,10 @@ exports[`Calendar Component should render given date 1`] = `
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,58%,0);
-  -ms-transform: translate3d(0,58%,0);
-  transform: translate3d(0,58%,0);
+  -webkit-transform: translateY(-52%);
+  -ms-transform: translateY(-52%);
+  transform: translateY(-52%);
+  opacity: 1;
 }
 
 .c18 {
@@ -433,9 +434,9 @@ exports[`Calendar Component should render given date 1`] = `
 
 .c12:not(:placeholder-shown) + .c13,
 .c12:focus + .c13 {
-  -webkit-transform: translate3d(0,20%,0) scale(0.75);
-  -ms-transform: translate3d(0,20%,0) scale(0.75);
-  transform: translate3d(0,20%,0) scale(0.75);
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
 }
 
 .c7 {
