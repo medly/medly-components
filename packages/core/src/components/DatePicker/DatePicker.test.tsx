@@ -1,4 +1,5 @@
 import { cleanup, fireEvent, render } from '@test-utils';
+import { DatePickerProps } from 'packages/forms/src/components/Fields/types';
 import React from 'react';
 import TestUtils from 'react-dom/test-utils';
 import { DatePicker } from './DatePicker';
@@ -81,26 +82,48 @@ describe('DatePicker component', () => {
     });
 
     describe('error messages', () => {
-        it('should return error message for incorrect month', () => {
-            const mockOnChange = jest.fn();
-            const { container, getByText } = render(<DatePicker value={null} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />);
+        const mockOnChange = jest.fn();
+
+        const props: DatePickerProps = {
+            value: null,
+            displayFormat: 'MM/dd/yyyy',
+            type: 'date',
+            onChange: mockOnChange
+        };
+
+        const renderComponent = () => {
+            const { container, getByText } = render(<DatePicker {...props} />);
             const inputEl = container.querySelector('input');
+            return {
+                inputEl,
+                getByText
+            };
+        };
+
+        it('should return error message for incorrect month', () => {
+            const { inputEl, getByText } = renderComponent();
             changeInputMaskValue(inputEl, '13');
             expect(inputEl.value).toEqual('13/dd/yyyy');
             expect(getByText('Enter valid Month')).toBeInTheDocument();
         });
         it('should return error message for incorrect day', () => {
-            const mockOnChange = jest.fn();
-            const { container, getByText } = render(<DatePicker value={null} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />);
-            const inputEl = container.querySelector('input');
+            const { inputEl, getByText } = renderComponent();
             changeInputMaskValue(inputEl, '12/33');
             expect(inputEl.value).toEqual('12/33/yyyy');
             expect(getByText('Enter valid Day')).toBeInTheDocument();
         });
+        it('should return error message for incorrect day if month is February and day is greater than 28', () => {
+            const { inputEl, getByText } = renderComponent();
+            changeInputMaskValue(inputEl, '02/29');
+            expect(getByText('Enter valid Day')).toBeInTheDocument();
+        });
+        it('should return error message for incorrect day if month has 30 days and day is greater than 30', () => {
+            const { inputEl, getByText } = renderComponent();
+            changeInputMaskValue(inputEl, '04/31');
+            expect(getByText('Enter valid Day')).toBeInTheDocument();
+        });
         it('should not return error message for valid input', () => {
-            const mockOnChange = jest.fn();
-            const { container } = render(<DatePicker value={null} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />);
-            const inputEl = container.querySelector('input');
+            const { inputEl } = renderComponent();
             changeInputMaskValue(inputEl, '12/31/2020');
             expect(inputEl.value).toEqual('12/31/2020');
             expect(document.getElementById('medly-datepicker-helper-text')).toBeNull();
