@@ -585,7 +585,7 @@ exports[`Form should render properly with initial state 1`] = `
   background-color: #0F5AD5;
 }
 
-.c8 {
+.c9 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -613,7 +613,7 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c42 {
-  top: 0;
+  top: 50%;
   left: 0;
   cursor: text;
   -webkit-user-select: none;
@@ -629,9 +629,10 @@ exports[`Form should render properly with initial state 1`] = `
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,58%,0);
-  -ms-transform: translate3d(0,58%,0);
-  transform: translate3d(0,58%,0);
+  -webkit-transform: translateY(-52%);
+  -ms-transform: translateY(-52%);
+  transform: translateY(-52%);
+  opacity: 1;
 }
 
 .c57 {
@@ -857,8 +858,8 @@ exports[`Form should render properly with initial state 1`] = `
   transition: all 100ms ease-out;
 }
 
-.c6:not(:placeholder-shown) + .c7,
-.c6:focus + .c7 {
+.c7:not(:placeholder-shown) + .c8,
+.c7:focus + .c8 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -938,6 +939,7 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c41 .c2 {
+  display: block;
   width: 25.6rem;
 }
 
@@ -1624,7 +1626,7 @@ exports[`Form should render properly with initial state 1`] = `
             </label>
           </div>
         </div>
-
+        
       </div>
     </div>
     <div
@@ -1659,7 +1661,7 @@ exports[`Form should render properly with initial state 1`] = `
             </label>
           </div>
         </div>
-
+        
       </div>
     </div>
     <div
@@ -1694,7 +1696,7 @@ exports[`Form should render properly with initial state 1`] = `
             </label>
           </div>
         </div>
-
+        
       </div>
     </div>
     <div
@@ -1751,7 +1753,7 @@ exports[`Form should render properly with initial state 1`] = `
           class="c23"
           id="languages-options"
         >
-
+          
           <label
             class="c24"
             for="JAVA-languages"
@@ -1795,7 +1797,7 @@ exports[`Form should render properly with initial state 1`] = `
               </div>
             </div>
           </label>
-
+          
           <label
             class="c32"
             for="RUBY-languages"
@@ -2007,7 +2009,7 @@ exports[`Form should render properly with initial state 1`] = `
               </svg>
             </span>
           </div>
-
+          
         </div>
       </div>
     </div>
@@ -2151,7 +2153,7 @@ exports[`Form should render properly with initial state 1`] = `
               />
             </svg>
           </div>
-
+          
         </div>
       </div>
     </div>
@@ -2235,7 +2237,7 @@ exports[`Form should render properly with initial state 1`] = `
               </svg>
             </div>
           </div>
-
+          
         </div>
       </div>
     </div>
@@ -2281,7 +2283,7 @@ exports[`Form should render properly with initial state 1`] = `
             </label>
           </div>
         </div>
-
+        
       </div>
     </div>
     <div
@@ -2316,7 +2318,7 @@ exports[`Form should render properly with initial state 1`] = `
             </label>
           </div>
         </div>
-
+        
       </div>
     </div>
     <div
@@ -2351,13 +2353,13 @@ exports[`Form should render properly with initial state 1`] = `
             </label>
           </div>
         </div>
-
+        
       </div>
     </div>
     <div
       class="c11"
     >
-
+      
       <label
         class="c69"
         for="agree"
@@ -2803,7 +2805,7 @@ exports[`Form should render properly without initial state 1`] = `
   border-color: #126AFA;
 }
 
-.c11 {
+.c12 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -2831,7 +2833,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c42 {
-  top: 0;
+  top: 50%;
   left: 0;
   cursor: text;
   -webkit-user-select: none;
@@ -2847,9 +2849,10 @@ exports[`Form should render properly without initial state 1`] = `
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translate3d(0,58%,0);
-  -ms-transform: translate3d(0,58%,0);
-  transform: translate3d(0,58%,0);
+  -webkit-transform: translateY(-52%);
+  -ms-transform: translateY(-52%);
+  transform: translateY(-52%);
+  opacity: 1;
 }
 
 .c57 {
@@ -3075,8 +3078,8 @@ exports[`Form should render properly without initial state 1`] = `
   transition: all 100ms ease-out;
 }
 
-.c9:not(:placeholder-shown) + .c10,
-.c9:focus + .c10 {
+.c10:not(:placeholder-shown) + .c11,
+.c10:focus + .c11 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -3156,6 +3159,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c41 .c5 {
+  display: block;
   width: 25.6rem;
 }
 
@@ -3752,7 +3756,7 @@ exports[`Form should render properly without initial state 1`] = `
             </label>
           </div>
         </div>
-
+        
       </div>
     </div>
     <div
@@ -3787,7 +3791,7 @@ exports[`Form should render properly without initial state 1`] = `
             </label>
           </div>
         </div>
-
+        
       </div>
     </div>
     <div
@@ -3822,7 +3826,7 @@ exports[`Form should render properly without initial state 1`] = `
             </label>
           </div>
         </div>
-
+        
       </div>
     </div>
     <div
@@ -3879,7 +3883,7 @@ exports[`Form should render properly without initial state 1`] = `
           class="c25"
           id="languages-options"
         >
-
+          
           <label
             class="c26"
             for="JAVA-languages"
@@ -3922,7 +3926,7 @@ exports[`Form should render properly without initial state 1`] = `
               </div>
             </div>
           </label>
-
+          
           <label
             class="c26"
             for="RUBY-languages"
@@ -4133,7 +4137,7 @@ exports[`Form should render properly without initial state 1`] = `
               </svg>
             </span>
           </div>
-
+          
         </div>
       </div>
     </div>
@@ -4277,7 +4281,7 @@ exports[`Form should render properly without initial state 1`] = `
               />
             </svg>
           </div>
-
+          
         </div>
       </div>
     </div>
@@ -4337,7 +4341,7 @@ exports[`Form should render properly without initial state 1`] = `
               </svg>
             </div>
           </div>
-
+          
         </div>
       </div>
     </div>
@@ -4383,7 +4387,7 @@ exports[`Form should render properly without initial state 1`] = `
             </label>
           </div>
         </div>
-
+        
       </div>
     </div>
     <div
@@ -4418,7 +4422,7 @@ exports[`Form should render properly without initial state 1`] = `
             </label>
           </div>
         </div>
-
+        
       </div>
     </div>
     <div
@@ -4453,13 +4457,13 @@ exports[`Form should render properly without initial state 1`] = `
             </label>
           </div>
         </div>
-
+        
       </div>
     </div>
     <div
       class="c14"
     >
-
+      
       <label
         class="c67"
         for="agree"
