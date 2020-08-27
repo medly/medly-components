@@ -37,6 +37,16 @@ describe('SearchBox', () => {
         expect(onInputChange).toHaveBeenCalledWith('R');
     });
 
+    it('should call onOptionSelected on pressing enter key with the input value', () => {
+        const onOptionSelectedMock = jest.fn(),
+            withOptionCB = { placeholder: 'search', onInputChange: jest.fn(), onOptionSelected: onOptionSelectedMock };
+
+        const { container, inputEl } = renderComponent(withOptionCB);
+        fireEvent.change(inputEl, { target: { value: 'Dummy' } });
+        fireEvent.keyDown(container, { key: 'Enter', code: 13 });
+        expect(onOptionSelectedMock).toHaveBeenCalledWith({ value: 'Dummy', label: '' });
+    });
+
     describe('close icon', () => {
         const props = {
             placeholder: 'search',
