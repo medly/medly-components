@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.2](https://github.com/medly/medly-components/compare/@medly-components/layout@1.8.1...@medly-components/layout@1.8.2) (2020-08-27)
+
+
+### Bug Fixes
+
+* fix searchBox export and enter keypress issue ([561e454](https://github.com/medly/medly-components/commit/561e4549dcca3d8433b8eb855fd2c2d1101aedb5))
+
+
+
+
+
 ## [1.8.1](https://github.com/medly/medly-components/compare/@medly-components/layout@1.8.0...@medly-components/layout@1.8.1) (2020-08-25)
 
 **Note:** Version bump only for package @medly-components/layout
