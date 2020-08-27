@@ -29,22 +29,32 @@ describe('SearchBox', () => {
         expect(getByTitle('search icon')).toBeInTheDocument();
     });
 
-    it('should call onInputChange on clicking on search icon with input value', () => {
-        const onInputChange = jest.fn();
-        const { inputEl, getByTitle } = renderComponent({ onInputChange, placeholder: 'search' });
+    it('should call onSearch on clicking on search icon with input value', () => {
+        const onSearch = jest.fn();
+        const { inputEl, getByTitle } = renderComponent({ onSearch, onInputChange: jest.fn(), placeholder: 'search' });
         fireEvent.change(inputEl, { target: { value: 'R' } });
         fireEvent.click(getByTitle('search icon'));
-        expect(onInputChange).toHaveBeenCalledWith('R');
+        expect(onSearch).toHaveBeenCalledWith('R');
     });
 
-    it('should call onOptionSelected on pressing enter key with the input value', () => {
-        const onOptionSelectedMock = jest.fn(),
-            withOptionCB = { placeholder: 'search', onInputChange: jest.fn(), onOptionSelected: onOptionSelectedMock };
+    it('should call onSearch on pressing enter key with the input value', () => {
+        const onSearch = jest.fn(),
+            withOptionCB = { placeholder: 'search', onInputChange: jest.fn(), onSearch };
 
         const { container, inputEl } = renderComponent(withOptionCB);
         fireEvent.change(inputEl, { target: { value: 'Dummy' } });
         fireEvent.keyDown(container, { key: 'Enter', code: 13 });
-        expect(onOptionSelectedMock).toHaveBeenCalledWith({ value: 'Dummy', label: '' });
+        expect(onSearch).toHaveBeenCalledWith('Dummy');
+    });
+
+    it('should call onClear on clicking on clear icon', () => {
+        const onClear = jest.fn(),
+            { container, inputEl, queryByTitle } = renderComponent({ placeholder: 'search', onInputChange: jest.fn(), onClear });
+        fireEvent.change(inputEl, { target: { value: 'Dummy' } });
+        fireEvent.keyDown(container, { key: 'Enter', code: 13 });
+        fireEvent.click(queryByTitle('close icon'));
+        expect(onClear).toHaveBeenCalledWith();
+        expect(inputEl.value).toEqual('');
     });
 
     describe('close icon', () => {

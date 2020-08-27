@@ -11,7 +11,7 @@ import { Props } from './types';
 
 export const SearchBox: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { options: defaultOptions, size, placeholder, onInputChange, onOptionSelected, ...restProps } = props;
+        const { options: defaultOptions, size, placeholder, onInputChange, onOptionSelected, onClear, onSearch, ...restProps } = props;
         const wrapperRef = useRef<any>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
             isFocused = useRef(false),
@@ -40,6 +40,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 inputRef.current.focus();
                 setOptionsVisibilityState(false);
                 updateIsTyping(false);
+                onClear && onClear();
             }, []),
             handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
                 const value = event.target.value;
@@ -59,7 +60,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             handleBlur = useCallback(() => {
                 isFocused.current = false;
             }, []),
-            handleSearchIconClick = useCallback(() => onInputChange(inputRef.current.value), [onInputChange]);
+            handleSearchIconClick = useCallback(() => onSearch && onSearch(inputRef.current.value), [onSearch]);
 
         useKeyboardNavigation({
             isFocused,
@@ -76,8 +77,8 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
         }, wrapperRef);
 
         useEffect(() => {
-            enterPress && !areOptionsVisible && onOptionSelected({ label: '', value: inputRef.current.value });
-        }, [enterPress]);
+            enterPress && !areOptionsVisible && onSearch && onSearch(inputRef.current.value);
+        }, [enterPress, areOptionsVisible]);
 
         return (
             <Styled.SearchBoxWrapper ref={wrapperRef} areOptionsVisible={areOptionsVisible} size={size}>
