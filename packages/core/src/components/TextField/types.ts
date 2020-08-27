@@ -1,9 +1,11 @@
 import { TextFieldTheme } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 
-export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix'>, WithThemeProp {
+export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height'>, WithThemeProp {
     /** Input Variants */
     variant?: 'outlined' | 'filled';
+    /** Input Size */
+    size?: 'S' | 'M';
     /** Function will called with the input value on blur and invalid event */
     validator?: (val: any, eventType?: string) => string;
     /** Set it true if you do not want to validate on blur event*/
@@ -34,9 +36,10 @@ export interface StyledProps extends Props, TextFieldTheme {
     isLabelPresent: boolean;
 }
 
-export interface InnerWrapperProps extends HTMLProps<HTMLDivElement>, TextFieldTheme, WithThemeProp {
+export interface InnerWrapperProps extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'height'>, TextFieldTheme, WithThemeProp {
     variant?: 'outlined' | 'filled';
     disabled?: boolean;
+    size?: 'S' | 'M';
     isLabelPresent?: boolean;
     isErrorPresent?: boolean;
 }

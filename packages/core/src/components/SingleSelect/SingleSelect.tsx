@@ -161,6 +161,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 />
                 {!disabled && areOptionsVisible && (
                     <Options
+                        size={inputProps.size}
                         ref={optionsRef}
                         variant={variant}
                         id={`${selectId}-options`}
@@ -178,10 +179,11 @@ SingleSelect.displayName = 'SingleSelect';
 SingleSelect.Style = Styled.Wrapper;
 SingleSelect.defaultProps = {
     value: '',
+    size: 'M',
+    label: '',
     variant: 'filled',
     fullWidth: false,
     required: false,
-    label: '',
     isSearchable: false,
     placeholder: 'Please Select . . .'
 };

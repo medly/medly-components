@@ -51,6 +51,15 @@ describe('SingleSelect component', () => {
         });
     });
 
+    test.each(['S', 'M'])('should render properly with %s size', (size: 'S' | 'M') => {
+        const { container } = render(<SingleSelect options={options} variant="filled" value="Dummy1" size={size} />);
+        fireEvent.click(container.querySelector('svg'));
+        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        expect(screen.getByRole('list')).toHaveStyle(`
+        top: ${size === 'S' ? '4rem' : '5.6rem'}
+    `);
+    });
+
     it('should not change input on pressing any key if isSearchable key is falsy', async () => {
         render(<SingleSelect value="Dummy1" options={options} />);
         const input = screen.getByRole('textbox');

@@ -2,6 +2,10 @@ import colors from '../colors';
 import { TextFieldTheme } from './types';
 
 const textField: TextFieldTheme = {
+    height: {
+        S: '4rem',
+        M: '5.6rem'
+    },
     outlined: {
         default: {
             borderColor: colors.grey[500],

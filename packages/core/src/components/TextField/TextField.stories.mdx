@@ -3,7 +3,7 @@ import Text from '../Text';
 import { AddCircleOutlineIcon, AddCircleIcon, CheckCircleIcon } from '@medly-components/icons';
 import { withKnobs, text, color, select, boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import { ThemeInterface, variants, Custom } from './TextField.stories.tsx';
+import { ThemeInterface, variants, sizes, Custom } from './TextField.stories.tsx';
 
 <Meta title="Core" component={TextField} parameters={{ jest: ['TextField.test.tsx'] }} />
 
@@ -15,7 +15,7 @@ Basic TextField component with lot of customization
     <Story name="TextField" decorators={[withKnobs]}>
         <TextField
             id="storybook-input"
-            type="email"
+            size={select('Size', sizes, 'M')}
             minWidth={text('Min Width', '20rem')}
             variant={select('Variant', variants, 'filled')}
             fullWidth={boolean('Full Width', false)}

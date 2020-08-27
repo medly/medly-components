@@ -3,6 +3,7 @@ import React from 'react';
 import { Option, SelectProps } from './types';
 
 export const variants: SelectProps['variant'][] = ['outlined', 'filled'];
+export const sizes: SelectProps['size'][] = ['S', 'M'];
 
 export const options = [
     { value: 'all', label: 'All' },

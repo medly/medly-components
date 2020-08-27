@@ -32,3 +32,4 @@ export { default as Toast } from './Toast';
 export { default as ToastContainer } from './ToastContainer';
 export { addToast } from './ToastContainer/ToastStore';
 export { default as Toggle } from './Toggle';
+export {default as SearchBox} from './SearchBox'

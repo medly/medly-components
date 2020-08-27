@@ -18,7 +18,7 @@ export interface DefaultSelected {
     label: string;
 }
 
-type InputProps = Omit<HTMLProps<HTMLInputElement>, 'onChange' | 'prefix'>;
+type InputProps = Omit<HTMLProps<HTMLInputElement>, 'onChange' | 'prefix' | 'size'>;
 
 export interface SelectProps extends InputProps, WithThemeProp {
     /** Selected Value */
@@ -29,6 +29,8 @@ export interface SelectProps extends InputProps, WithThemeProp {
     options: Option[];
     /** Variants */
     variant?: 'outlined' | 'filled';
+    /** Sizes */
+    size?: 'S' | 'M';
     /** Set it it true to enable search functionality */
     isSearchable?: boolean;
     /** Min width in px/rem/% (1rem = 10px)*/

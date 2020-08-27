@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.10.0...@medly-components/theme@1.11.0) (2020-08-27)
+
+
+### Features
+
+* add small size for textfield, singleselect, multiselect component ([7da9d6b](https://github.com/medly/medly-components/commit/7da9d6b89e1038dfbcf58a0e2332184305b0dc51))
+
+
+
+
+
 # [1.10.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.9.0...@medly-components/theme@1.10.0) (2020-08-25)
 
 

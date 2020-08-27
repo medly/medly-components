@@ -1,5 +1,5 @@
 import { CloseIcon, SearchIcon } from '@medly-components/icons';
-import { useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
+import { useCombinedRefs, useKeyPress, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
 import Options from '../SingleSelect/Options';
 import { Option } from '../SingleSelect/types';
@@ -11,10 +11,11 @@ import { Props } from './types';
 
 export const SearchBox: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { options: defaultOptions, size, placeholder, onInputChange, onOptionSelected } = props;
+        const { options: defaultOptions, size, placeholder, onInputChange, onOptionSelected, onClear, onSearch, ...restProps } = props;
         const wrapperRef = useRef<any>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
             isFocused = useRef(false),
+            enterPress = useKeyPress('Enter'),
             optionsRef = useRef<HTMLUListElement>(null),
             [isTyping, updateIsTyping] = useState(false),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
@@ -39,6 +40,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 inputRef.current.focus();
                 setOptionsVisibilityState(false);
                 updateIsTyping(false);
+                onClear && onClear();
             }, []),
             handleChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
                 const value = event.target.value;
@@ -58,7 +60,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             handleBlur = useCallback(() => {
                 isFocused.current = false;
             }, []),
-            handleSearchIconClick = useCallback(() => onInputChange(inputRef.current.value), [onInputChange]);
+            handleSearchIconClick = useCallback(() => onSearch && onSearch(inputRef.current.value), [onSearch]);
 
         useKeyboardNavigation({
             isFocused,
@@ -74,9 +76,20 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             hideOptions();
         }, wrapperRef);
 
+        useEffect(() => {
+            enterPress && !areOptionsVisible && onSearch && onSearch(inputRef.current.value);
+        }, [enterPress, areOptionsVisible]);
+
         return (
             <Styled.SearchBoxWrapper ref={wrapperRef} areOptionsVisible={areOptionsVisible} size={size}>
-                <SearchInput placeholder={placeholder} onChange={handleChange} ref={inputRef} onFocus={handleFocus} onBlur={handleBlur} />
+                <SearchInput
+                    placeholder={placeholder}
+                    onChange={handleChange}
+                    ref={inputRef}
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
+                    {...restProps}
+                />
                 {isTyping && (
                     <CloseIconWrapper isTyping={isTyping} size={size}>
                         <CloseIcon title="close icon" onClick={clearSearchText} size={size} />

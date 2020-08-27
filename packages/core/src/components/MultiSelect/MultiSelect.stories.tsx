@@ -3,6 +3,7 @@ import React from 'react';
 import { MultiSelectProps } from './types';
 
 export const variants: MultiSelectProps['variant'][] = ['outlined', 'filled'];
+export const sizes: MultiSelectProps['size'][] = ['S', 'M'];
 
 export const options = [
     { value: 'medly pharmacy', label: 'Medly Pharmacy' },

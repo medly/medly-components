@@ -4,7 +4,7 @@ import { StarIcon } from '@medly-components/icons';
 import { SingleSelect } from './SingleSelect';
 import { boolean, select, text } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import { variants, options, ThemeInterface, OptionProps } from './SingleSelect.stories.tsx';
+import { variants, options, sizes, ThemeInterface, OptionProps } from './SingleSelect.stories.tsx';
 
 <Meta title="Core" component={SingleSelect} parameters={{ jest: ['SingleSelect.test.tsx'] }} />
 
@@ -21,6 +21,7 @@ Basic single select component.
                     options={options}
                     value={value}
                     onChange={setValue}
+                    size={select('Size', sizes, 'M')}
                     isSearchable={boolean('Is Searchable', false)}
                     variant={select('Variant', variants, 'filled')}
                     disabled={boolean('Disabled', false)}

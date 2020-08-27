@@ -18,8 +18,12 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'size'>, WithTh
     size?: Size;
     /** Option for search results, in form of label and value */
     options?: Option[];
-    /*** callback to be trigger on selecting the option */
+    /** Function to be called on clear icon click */
+    onClear?: () => void;
+    /*** Function to be called on search icon click */
+    onSearch?: (value: string) => void;
+    /*** Function to be called on  selecting the option */
     onOptionSelected?: (value: Option) => void;
-    /*** callback for providing the input values */
+    /*** Function to be called on input value changes */
     onInputChange?: (value: string) => void;
 }

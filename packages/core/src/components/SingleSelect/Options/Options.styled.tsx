@@ -4,7 +4,7 @@ import { StyledOptionsProps } from './types';
 export const Options = styled('ul')<StyledOptionsProps & WithThemeProp>`
     z-index: 1000;
     position: absolute;
-    top: ${({ isNested }) => (isNested ? 0 : '5.6rem')};
+    top: ${({ size, isNested }) => (isNested ? 0 : size === 'S' ? '4rem' : '5.6rem')};
     left: ${({ isNested }) => (isNested ? `calc(100% - 0.4rem) ` : 0)};
     margin: 0;
     padding: 0;

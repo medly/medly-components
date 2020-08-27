@@ -53,6 +53,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                     onClick={handleWrapperClick}
                     variant={props.variant}
                     disabled={disabled}
+                    size={restProps.size}
                     isErrorPresent={isErrorPresent}
                     isLabelPresent={isLabelPresent}
                 >
@@ -97,6 +98,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
 TextField.displayName = 'TextField';
 TextField.Style = Styled.OuterWrapper;
 TextField.defaultProps = {
+    size: 'M',
     type: 'text',
     variant: 'filled',
     fullWidth: false,

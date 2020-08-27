@@ -12,7 +12,7 @@ export interface DefaultSelected {
     label: string;
 }
 
-export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onChange'>, WithThemeProp {
+export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onChange' | 'size'>, WithThemeProp {
     /** Array of selected values */
     values?: any[];
     /** This method will be called with selected values */
@@ -21,6 +21,8 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     options: Option[];
     /** Variants */
     variant?: 'outlined' | 'filled';
+    /** Sizes */
+    size?: 'S' | 'M';
     /** Label */
     label?: string;
     /** Set it it true to enable search functionality */
@@ -29,8 +31,6 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     disabled?: boolean;
     /** Set it true when it is required in any form */
     required?: boolean;
-    /** Shows checkboxes for all the options */
-    showCheckbox?: boolean;
     /** Min width */
     minWidth?: number;
     /** Takes full width of the parent component */

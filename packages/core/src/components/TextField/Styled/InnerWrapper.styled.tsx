@@ -143,13 +143,15 @@ const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css
     }
 `;
 
-export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({ ...textField, textField }))<InnerWrapperProps>`
+export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({ ...textField, textField, height: undefined }))<
+    InnerWrapperProps
+>`
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: row;
     box-sizing: border-box;
-    height: 5.6rem;
+    height: ${({ size, theme }) => theme.textField.height[size]};
     padding: 0 1.6rem;
     transition: all 100ms ease-out;
     cursor: text;
@@ -172,3 +174,6 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
     ${({ variant }) => (variant === 'filled' ? filledStyle : outlineStyle)}
     ${({ disabled, isErrorPresent }) => (disabled ? disabledStyle : isErrorPresent ? errorStyle : activeStyle)}
 `;
+InnerWrapper.defaultProps = {
+    size: 'M'
+};

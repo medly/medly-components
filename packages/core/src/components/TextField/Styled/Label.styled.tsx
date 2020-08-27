@@ -1,7 +1,7 @@
 import { css, styled } from '@medly-components/utils';
 
 export const Label = styled('label')<{ required: boolean; variant: 'outlined' | 'filled' }>`
-    top: 0;
+    top: 50%;
     left: 0;
     cursor: text;
     user-select: none;
@@ -11,7 +11,8 @@ export const Label = styled('label')<{ required: boolean; variant: 'outlined' | 
     line-height: 2.6rem;
     transform-origin: 0 0;
     touch-action: manipulation;
-    transform: ${({ variant }) => (variant === 'outlined' ? `translate3d(0, 55%, 0) ` : `translate3d(0, 58%, 0) `)};
+    transform: ${({ variant }) => (variant === 'outlined' ? 'translateY(-50%) ' : 'translateY(-52%) ')};
+    opacity: 1;
 
     ${({ required }) =>
         required &&
