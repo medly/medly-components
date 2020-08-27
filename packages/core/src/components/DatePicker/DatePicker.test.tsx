@@ -1,6 +1,13 @@
 import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
+import TestUtils from 'react-dom/test-utils';
 import { DatePicker } from './DatePicker';
+
+const changeInputMaskValue = (element: any, value: string) => {
+    element.value = value;
+    element.selectionStart = element.selectionEnd = value.length;
+    TestUtils.Simulate.change(element);
+};
 
 describe('DatePicker component', () => {
     afterEach(cleanup);
@@ -74,8 +81,29 @@ describe('DatePicker component', () => {
     });
 
     describe('error messages', () => {
-        it('should return error message for incorrect month', () => {});
-        it('should return error message for incorrect day', () => {});
-        it('should not return error message for valid input', () => {});
+        it('should return error message for incorrect month', () => {
+            const mockOnChange = jest.fn();
+            const { container, getByText } = render(<DatePicker value={null} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />);
+            const inputEl = container.querySelector('input');
+            changeInputMaskValue(inputEl, '13');
+            expect(inputEl.value).toEqual('13/dd/yyyy');
+            expect(getByText('Enter valid Month')).toBeInTheDocument();
+        });
+        it('should return error message for incorrect day', () => {
+            const mockOnChange = jest.fn();
+            const { container, getByText } = render(<DatePicker value={null} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />);
+            const inputEl = container.querySelector('input');
+            changeInputMaskValue(inputEl, '12/33');
+            expect(inputEl.value).toEqual('12/33/yyyy');
+            expect(getByText('Enter valid Day')).toBeInTheDocument();
+        });
+        it('should not return error message for valid input', () => {
+            const mockOnChange = jest.fn();
+            const { container } = render(<DatePicker value={null} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />);
+            const inputEl = container.querySelector('input');
+            changeInputMaskValue(inputEl, '12/31/2020');
+            expect(inputEl.value).toEqual('12/31/2020');
+            expect(document.getElementById('medly-datepicker-helper-text')).toBeNull();
+        });
     });
 });
