@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.19.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.18.0...@medly-components/core@1.19.0) (2020-08-27)
+
+
+### Features
+
+* add onClear and onSearch prop in Searchbox component ([64b315d](https://github.com/medly/medly-components/commit/64b315d8d43094a8868af764b830e36b0434c9b3))
+
+
+
+
+
 # [1.18.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.17.0...@medly-components/core@1.18.0) (2020-08-27)
 
 
