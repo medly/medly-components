@@ -45,7 +45,8 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             return 31;
         }, []),
         onChangeHandler = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-            const values = event.target.value.split('/');
+            const value = event.target.value;
+            const values = value.split('/');
             const month = values[0];
             const day = values[1];
             if (parseInt(month) > 12) {
@@ -56,18 +57,28 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                 setErrorText('');
             }
             if (!disabled) {
-                setFormattedDate(event.target.value);
+                setFormattedDate(value);
             }
         }, []),
         iconClickHandler = useCallback(event => {
             event.preventDefault();
             toggleCalendar(true);
         }, []),
-        onBlurHandler = useCallback(() => {
+        onBlurHandler = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
+            const value = event.target.value;
             setActive(false);
             toggleCalendar(false);
+            if (parseToDate(value, displayFormat).toString() === 'Invalid Date') {
+                setErrorText('Enter valid date');
+            }
         }, []),
-        onFocusHandler = useCallback(() => setActive(true), []);
+        onFocusHandler = useCallback(() => setActive(true), []),
+        onCalendarMouseDown = useCallback((event: React.MouseEvent<HTMLDivElement>) => event.preventDefault(), []),
+        validate = useCallback((event: React.InvalidEvent<HTMLInputElement>) => {
+            if (event.target.value === '' && required) {
+                setErrorText('Please fill in this field.');
+            }
+        }, []);
 
     const suffixEl = () => (
         <DateIcon variant={restProps.variant} errorText={errorText} active={active} disabled={disabled}>
@@ -86,6 +97,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                 onChange={onChangeHandler}
                 onBlur={onBlurHandler}
                 onFocus={onFocusHandler}
+                onInvalid={validate}
                 readOnly={false}
                 disabled={disabled}
             >
@@ -104,6 +116,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                     id={`${id}-calendar`}
                     date={date}
                     onChange={onChange}
+                    onMouseDown={onCalendarMouseDown}
                     minSelectableDate={minSelectableDate ?? undefined}
                     maxSelectableDate={maxSelectableDate ?? undefined}
                 />

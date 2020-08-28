@@ -91,8 +91,8 @@ describe('DatePicker component', () => {
             onChange: mockOnChange
         };
 
-        const renderComponent = () => {
-            const { container, getByText } = render(<DatePicker {...props} />);
+        const renderComponent = (required?: boolean) => {
+            const { container, getByText } = render(<DatePicker {...props} required={required} />);
             const inputEl = container.querySelector('input');
             return {
                 inputEl,
@@ -121,6 +121,17 @@ describe('DatePicker component', () => {
             const { inputEl, getByText } = renderComponent();
             changeInputMaskValue(inputEl, '04/31');
             expect(getByText('Enter valid Day')).toBeInTheDocument();
+        });
+        it('should return error when value is empty and field is required', () => {
+            const { inputEl, getByText } = renderComponent(true);
+            fireEvent.invalid(inputEl);
+            expect(getByText('Please fill in this field.')).toBeInTheDocument();
+        });
+        it('should return error message with enter valid date if date entered is incomplete', () => {
+            const { inputEl, getByText } = renderComponent();
+            changeInputMaskValue(inputEl, '04/31');
+            TestUtils.Simulate.blur(inputEl);
+            expect(getByText('Enter valid date')).toBeInTheDocument();
         });
         it('should not return error message for valid input', () => {
             const { inputEl } = renderComponent();
