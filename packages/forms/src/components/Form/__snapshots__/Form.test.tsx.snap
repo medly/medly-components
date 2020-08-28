@@ -590,6 +590,7 @@ exports[`Form should render properly with initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
@@ -781,6 +782,7 @@ exports[`Form should render properly with initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c6:focus {
@@ -1032,6 +1034,7 @@ exports[`Form should render properly with initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   padding: 0.8rem;
   color: #435465;
 }
@@ -1202,6 +1205,7 @@ exports[`Form should render properly with initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   text-align: center;
   max-width: 90px;
   min-height: unset;
@@ -1253,6 +1257,7 @@ exports[`Form should render properly with initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   padding: 0.8rem;
   color: #435465;
   background-clip: padding-box;
@@ -2842,6 +2847,7 @@ exports[`Form should render properly without initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
@@ -3033,6 +3039,7 @@ exports[`Form should render properly without initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c9:focus {
@@ -3284,6 +3291,7 @@ exports[`Form should render properly without initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   padding: 0.8rem;
   color: #435465;
 }
@@ -3454,6 +3462,7 @@ exports[`Form should render properly without initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   text-align: center;
   max-width: 90px;
   min-height: unset;
@@ -3505,6 +3514,7 @@ exports[`Form should render properly without initial state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   padding: 0.8rem;
   color: #435465;
   background-clip: padding-box;

@@ -127,6 +127,7 @@ exports[`DatePicker component should render properly when value is of date type 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   padding: 0.8rem;
   color: #435465;
 }
@@ -337,6 +338,7 @@ exports[`DatePicker component should render properly when value is of string typ
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   padding: 0.8rem;
   color: #435465;
 }
