@@ -26,14 +26,19 @@ exports[`DatePicker component should render properly when value is of date type 
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -160,11 +165,9 @@ exports[`DatePicker component should render properly when value is of date type 
 
 .c6 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -175,6 +178,13 @@ exports[`DatePicker component should render properly when value is of date type 
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c6:focus {
@@ -360,14 +370,19 @@ exports[`DatePicker component should render properly when value is of string typ
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -494,11 +509,9 @@ exports[`DatePicker component should render properly when value is of string typ
 
 .c6 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -509,6 +522,13 @@ exports[`DatePicker component should render properly when value is of string typ
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c6:focus {
