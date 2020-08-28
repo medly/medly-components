@@ -4,6 +4,10 @@ import { SingleSelectTheme } from './types';
 const singleSelect: SingleSelectTheme = {
     shadowColor: '#B0BCC8',
     option: {
+        textVariant: {
+            S: 'body2',
+            M: 'body1'
+        },
         bgColor: {
             default: colors.white,
             hovered: colors.grey[50],

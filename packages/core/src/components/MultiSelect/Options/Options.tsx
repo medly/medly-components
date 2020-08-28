@@ -2,7 +2,7 @@ import { WithStyle } from '@medly-components/utils';
 import React, { useCallback, useMemo } from 'react';
 import Checkbox from '../../Checkbox';
 import CheckboxGroup from '../../CheckboxGroup';
-import { Chip } from '../Chip/Chip';
+import Chip from '../Chip';
 import { Option } from '../types';
 import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
@@ -35,20 +35,27 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
         );
 
     return (
-        <Styled.OptionsWrapper size={size} id={`${id}-wrapper`}>
-            <Styled.ChipArea>
-                {selectedValues.length === 0 && <p>-</p>}
-                {selectedValues.map((value, index) => {
-                    return <Chip key={index} label={value} testId={`${value}`} onClear={handleClearHandler} />;
-                })}
+        <Styled.OptionsWrapper size={size} id={`${id}-options-wrapper`}>
+            <Styled.ChipArea id={`${id}-selected-chips`}>
+                {selectedValues.length === 0 ? (
+                    <p>-</p>
+                ) : (
+                    selectedValues.map(value => (
+                        <Chip
+                            id={`${id}-${value}-chip`}
+                            variant="outlined"
+                            size="S"
+                            key={value}
+                            label={value}
+                            onClear={handleClearHandler}
+                        />
+                    ))
+                )}
             </Styled.ChipArea>
-            <Styled.Options id={id} onClick={stopPropagation}>
+            <Styled.Options id={`${id}-options`} onClick={stopPropagation} size={size}>
                 {options.map((op, index) => (
                     <React.Fragment key={index}>
-                        {!Array.isArray(op.value) && (
-                            <Checkbox {...op} checked={selectedValues.includes(op.value)} name={op.value} onChange={handleCheckboxClick} />
-                        )}
-                        {Array.isArray(op.value) && (
+                        {Array.isArray(op.value) ? (
                             <CheckboxGroup
                                 values={selectedValues.filter(vl => op.value.map((nestedOp: Option) => nestedOp.value).includes(vl))}
                                 showSelectAll
@@ -58,6 +65,8 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
                                 onChange={handleGroupClick(op.value)}
                                 fullWidthOptions={true}
                             />
+                        ) : (
+                            <Checkbox {...op} checked={selectedValues.includes(op.value)} name={op.value} onChange={handleCheckboxClick} />
                         )}
                     </React.Fragment>
                 ))}

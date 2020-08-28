@@ -7,7 +7,8 @@ export interface OptionStyledProps extends HTMLProps<HTMLLIElement>, WithThemePr
     hovered?: boolean;
 }
 
-export interface OptionProps extends Option, Omit<HTMLProps<HTMLLIElement>, 'onClick' | 'value' | 'label'> {
+export interface OptionProps extends Option, Omit<HTMLProps<HTMLLIElement>, 'onClick' | 'value' | 'label' | 'size'>, WithThemeProp {
+    size?: 'S' | 'M';
     onClick: (op: Option) => void;
     hasError?: boolean;
 }

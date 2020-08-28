@@ -21,12 +21,13 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                 fullWidth,
                 minWidth,
                 errorText,
+                helperText,
                 required,
                 isSearchable,
                 validator,
                 ...restProps
             } = props,
-            selectId = useMemo(() => id || label?.toLocaleLowerCase() || 'medly-multiSelect', [id, label]);
+            selectId = useMemo(() => id || label?.toLocaleLowerCase().replace(' ', '') || 'medly-multiSelect', [id, label]);
 
         const wrapperRef = useRef<HTMLDivElement>(null),
             optionsRef = useRef<HTMLUListElement>(null),
@@ -119,6 +120,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
         const ChipEl = () => (
             <InputSuffix
                 id={`${selectId}-count`}
+                size={size}
                 disabled={disabled}
                 variant={variant}
                 hasError={hasError}
@@ -156,12 +158,13 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                     onChange={handleInputChange}
                     onBlur={handleInputOnBlur}
                     readOnly={!isSearchable && !required}
+                    helperText={helperText}
                     errorText={errorText || builtInErrorMessage}
                     validator={inputValidator}
                 />
                 {!disabled && areOptionsVisible && (
                     <Options
-                        id={`${selectId}-options`}
+                        id={`${selectId}`}
                         size={size}
                         ref={optionsRef}
                         values={selectedOptions}

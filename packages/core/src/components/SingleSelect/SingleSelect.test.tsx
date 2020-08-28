@@ -56,8 +56,9 @@ describe('SingleSelect component', () => {
         fireEvent.click(container.querySelector('svg'));
         waitFor(() => expect(screen.getByRole('list')).toBeVisible());
         expect(screen.getByRole('list')).toHaveStyle(`
-        top: ${size === 'S' ? '4rem' : '5.6rem'}
-    `);
+            top: ${size === 'S' ? '4rem' : '5.6rem'}
+        `);
+        expect(screen.getAllByRole('listitem')[0]).toMatchSnapshot();
     });
 
     it('should not change input on pressing any key if isSearchable key is falsy', async () => {

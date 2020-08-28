@@ -1,4 +1,4 @@
-import { css, styled } from '@medly-components/utils';
+import { css, getFontStyle, styled } from '@medly-components/utils';
 import { StyledProps } from '../types';
 import { Label } from './Label.styled';
 
@@ -11,18 +11,17 @@ const styleWithLabel = ({ variant }: StyledProps) => {
 
 export const Input = styled('input')<StyledProps>`
     color: ${({ variant, theme }) => theme.textField[variant].default.textColor};
-    font-size: 1.6rem;
     width: 100%;
     margin: 0;
     padding: 0;
-    line-height: 2.6rem;
     box-sizing: border-box;
     transition: all 100ms ease-out;
     background: transparent;
     border: none;
     text-overflow: ellipsis;
 
-    ${({ isLabelPresent }) => isLabelPresent && styleWithLabel};
+    ${({ isLabelPresent, size }) => isLabelPresent && size !== 'S' && styleWithLabel};
+    ${({ theme, size }) => getFontStyle({ theme, fontVariant: theme.textField.textVariant[size] })}
 
     &:focus {
         outline: none;

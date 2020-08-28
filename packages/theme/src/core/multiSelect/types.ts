@@ -1,4 +1,5 @@
 import { State } from '../common/types';
+import { FontVariants } from '../font/types';
 
 interface IconTheme {
     background: string;
@@ -26,4 +27,10 @@ interface MultiSelectVariant {
 export interface MultiSelectTheme {
     filled: MultiSelectVariant;
     outlined: MultiSelectVariant;
+    options: {
+        textVariant: {
+            S: FontVariants;
+            M: FontVariants;
+        };
+    };
 }

@@ -11,7 +11,7 @@ describe('TextField', () => {
     });
 
     test.each(['S', 'M'])('should render properly with %s size', (size: 'S' | 'M') => {
-        const { container } = render(<TextField label="Name" size={size} />);
+        const { container } = render(<TextField label="Name" size={size} helperText="helper text" />);
         expect(container).toMatchSnapshot();
     });
 

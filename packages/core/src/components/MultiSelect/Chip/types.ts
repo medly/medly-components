@@ -2,15 +2,10 @@ import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 
 type ButtonProps = Omit<HTMLProps<HTMLButtonElement>, 'type' | 'label'>;
 
-export interface Props extends ButtonProps, WithThemeProp {
-    /** Chip label */
-    label: number;
-    /** Variant Types */
+export interface Props extends Omit<ButtonProps, 'size'>, WithThemeProp {
+    size: 'S' | 'M';
+    label: number | string;
     variant?: 'outlined' | 'filled';
-    /** Different States for chip */
     state?: 'default' | 'active' | 'error' | 'disabled';
-    /** Test ID */
-    testId?: string;
-    /** On delete function */
-    onClear?: (label?: number) => void;
+    onClear?: (label?: number | string) => void;
 }

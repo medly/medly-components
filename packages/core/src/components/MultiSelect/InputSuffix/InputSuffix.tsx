@@ -5,13 +5,13 @@ import { InputSuffixStyled } from './InputSuffix.styled';
 import { InputSuffixProps } from './types';
 
 export const InputSuffix: FC<InputSuffixProps> = React.memo(props => {
-    const { id, variant, disabled, isActive, hasError, onClear, optionsCount } = props;
-    const state = disabled ? 'disabled' : hasError ? 'error' : isActive ? 'active' : 'default';
+    const { id, size, variant, disabled, isActive, hasError, onClear, optionsCount } = props,
+        state = disabled ? 'disabled' : hasError ? 'error' : isActive ? 'active' : 'default';
 
     return (
-        <InputSuffixStyled id={id}>
-            {optionsCount > 0 && <Chip testId="cancel-chip" label={optionsCount} state={state} variant={variant} onClear={onClear} />}
-            <ChevronDownIcon />
+        <InputSuffixStyled id={id} size={size}>
+            {optionsCount > 0 && <Chip label={optionsCount} state={state} size={size} variant={variant} onClear={onClear} />}
+            <ChevronDownIcon size={size} />
         </InputSuffixStyled>
     );
 });

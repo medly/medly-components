@@ -9,7 +9,7 @@ import { Suffix } from './Suffix.styled';
 const outlineStyle = ({ theme, outlined, disabled, isErrorPresent }: InnerWrapperProps) => {
     return css`
         border-radius: ${theme.spacing.S1};
-        background-color: transparent;
+        background-color: ${outlined.default.bgColor};
         &::after {
             content: '';
             box-sizing: border-box;
@@ -152,7 +152,7 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
     flex-direction: row;
     box-sizing: border-box;
     height: ${({ size, theme }) => theme.textField.height[size]};
-    padding: 0 1.6rem;
+    padding: 0 ${({ size }) => (size === 'S' ? '1.2rem' : '1.6rem')};
     transition: all 100ms ease-out;
     cursor: text;
 

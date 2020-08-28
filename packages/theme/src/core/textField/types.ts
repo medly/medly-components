@@ -1,12 +1,19 @@
+import { FontVariants } from '../font/types';
+
 export interface TextFieldTheme {
     /**  */
     height: {
         S: string;
         M: string;
     };
+    textVariant: {
+        S: FontVariants;
+        M: FontVariants;
+    };
     /** Outline variant theme */
     outlined: {
         default: {
+            bgColor: string;
             borderColor: string;
             iconColor: string;
             textColor: string;

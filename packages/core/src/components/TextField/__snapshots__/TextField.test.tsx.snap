@@ -13,14 +13,19 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -171,11 +176,9 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -186,6 +189,13 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -287,14 +297,19 @@ exports[`TextField should render asterisk if we pass required prop as true 1`] =
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -328,6 +343,13 @@ exports[`TextField should render asterisk if we pass required prop as true 1`] =
 `;
 
 exports[`TextField should render properly with M size 1`] = `
+.c7 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -340,14 +362,19 @@ exports[`TextField should render properly with M size 1`] = `
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -388,7 +415,7 @@ exports[`TextField should render properly with M size 1`] = `
   fill: #546A7F;
 }
 
-.c1 ~ .sc-AxirZ {
+.c1 ~ .c6 {
   color: #546A7F;
 }
 
@@ -494,11 +521,9 @@ exports[`TextField should render properly with M size 1`] = `
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -509,6 +534,13 @@ exports[`TextField should render properly with M size 1`] = `
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -588,12 +620,24 @@ exports[`TextField should render properly with M size 1`] = `
         </label>
       </div>
     </div>
-    
+    <span
+      class="c6 c7"
+      id="medly-textField-helper-text"
+    >
+      helper text
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField should render properly with S size 1`] = `
+.c7 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.2rem 0;
+  white-space: initial;
+}
+
 .c5 {
   top: 50%;
   left: 0;
@@ -605,15 +649,20 @@ exports[`TextField should render properly with S size 1`] = `
   position: absolute;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
-  font-size: 1.6rem;
-  line-height: 2.6rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -632,7 +681,7 @@ exports[`TextField should render properly with S size 1`] = `
   flex-direction: row;
   box-sizing: border-box;
   height: 4rem;
-  padding: 0 1.6rem;
+  padding: 0 1.2rem;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
@@ -654,7 +703,7 @@ exports[`TextField should render properly with S size 1`] = `
   fill: #546A7F;
 }
 
-.c1 ~ .sc-AxirZ {
+.c1 ~ .c6 {
   color: #546A7F;
 }
 
@@ -760,21 +809,22 @@ exports[`TextField should render properly with S size 1`] = `
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
   text-overflow: ellipsis;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  padding-bottom: 0.7rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
 }
 
 .c3:focus {
@@ -852,7 +902,12 @@ exports[`TextField should render properly with S size 1`] = `
         </label>
       </div>
     </div>
-    
+    <span
+      class="c6 c7"
+      id="medly-textField-helper-text"
+    >
+      helper text
+    </span>
   </div>
 </div>
 `;
@@ -870,14 +925,19 @@ exports[`TextField should render properly with default props 1`] = `
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -1024,11 +1084,9 @@ exports[`TextField should render properly with default props 1`] = `
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -1039,6 +1097,13 @@ exports[`TextField should render properly with default props 1`] = `
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -1136,14 +1201,19 @@ exports[`TextField with filled variant and with label should render default stat
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -1290,11 +1360,9 @@ exports[`TextField with filled variant and with label should render default stat
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -1305,6 +1373,13 @@ exports[`TextField with filled variant and with label should render default stat
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -1402,14 +1477,19 @@ exports[`TextField with filled variant and with label should render disabled sta
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -1536,11 +1616,9 @@ exports[`TextField with filled variant and with label should render disabled sta
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -1551,6 +1629,13 @@ exports[`TextField with filled variant and with label should render disabled sta
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -1650,14 +1735,19 @@ exports[`TextField with filled variant and with label should render focus state 
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -1804,11 +1894,9 @@ exports[`TextField with filled variant and with label should render focus state 
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -1819,6 +1907,13 @@ exports[`TextField with filled variant and with label should render focus state 
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -1916,14 +2011,19 @@ exports[`TextField with filled variant and without label should render default s
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -2070,17 +2170,22 @@ exports[`TextField with filled variant and without label should render default s
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -2176,14 +2281,19 @@ exports[`TextField with filled variant and without label should render disabled 
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -2310,17 +2420,22 @@ exports[`TextField with filled variant and without label should render disabled 
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -2418,14 +2533,19 @@ exports[`TextField with filled variant and without label should render focus sta
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -2572,17 +2692,22 @@ exports[`TextField with filled variant and without label should render focus sta
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -2685,14 +2810,19 @@ exports[`TextField with filled variant should render error state properly  1`] =
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -2875,11 +3005,9 @@ exports[`TextField with filled variant should render error state properly  1`] =
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -2890,6 +3018,13 @@ exports[`TextField with filled variant should render error state properly  1`] =
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -3052,14 +3187,19 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -3211,11 +3351,9 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 
 .c6 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -3226,6 +3364,13 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c6:focus {
@@ -3349,14 +3494,19 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -3508,11 +3658,9 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -3523,6 +3671,13 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -3633,6 +3788,11 @@ exports[`TextField with outlined variant and with label should render default st
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
@@ -3801,11 +3961,9 @@ exports[`TextField with outlined variant and with label should render default st
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -3816,6 +3974,13 @@ exports[`TextField with outlined variant and with label should render default st
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -3913,6 +4078,11 @@ exports[`TextField with outlined variant and with label should render disabled s
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
@@ -4052,11 +4222,9 @@ exports[`TextField with outlined variant and with label should render disabled s
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -4067,6 +4235,13 @@ exports[`TextField with outlined variant and with label should render disabled s
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -4166,6 +4341,11 @@ exports[`TextField with outlined variant and with label should render focus stat
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
@@ -4334,11 +4514,9 @@ exports[`TextField with outlined variant and with label should render focus stat
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -4349,6 +4527,13 @@ exports[`TextField with outlined variant and with label should render focus stat
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -4446,6 +4631,11 @@ exports[`TextField with outlined variant and without label should render default
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
@@ -4614,17 +4804,22 @@ exports[`TextField with outlined variant and without label should render default
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -4720,6 +4915,11 @@ exports[`TextField with outlined variant and without label should render disable
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
@@ -4859,17 +5059,22 @@ exports[`TextField with outlined variant and without label should render disable
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -4967,6 +5172,11 @@ exports[`TextField with outlined variant and without label should render focus s
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
@@ -5135,17 +5345,22 @@ exports[`TextField with outlined variant and without label should render focus s
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -5248,6 +5463,11 @@ exports[`TextField with outlined variant should render error state properly  1`]
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
@@ -5452,11 +5672,9 @@ exports[`TextField with outlined variant should render error state properly  1`]
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -5467,6 +5685,13 @@ exports[`TextField with outlined variant should render error state properly  1`]
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -5629,6 +5854,11 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
@@ -5802,11 +6032,9 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 
 .c6 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -5817,6 +6045,13 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c6:focus {
@@ -5940,6 +6175,11 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
@@ -6113,11 +6353,9 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -6128,6 +6366,13 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -6238,14 +6483,19 @@ exports[`TextField without label should render default state properly 1`] = `
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -6392,17 +6642,22 @@ exports[`TextField without label should render default state properly 1`] = `
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
@@ -6498,14 +6753,19 @@ exports[`TextField without label should render focus state properly  1`] = `
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -6652,11 +6912,9 @@ exports[`TextField without label should render focus state properly  1`] = `
 
 .c3 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -6667,6 +6925,13 @@ exports[`TextField without label should render focus state properly  1`] = `
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c3:focus {
