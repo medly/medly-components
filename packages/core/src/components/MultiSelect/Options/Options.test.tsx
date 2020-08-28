@@ -10,10 +10,10 @@ describe('MultiSelect Options', () => {
 
     it('should un-check one of the option when clear of chip is clicked', () => {
         const opOptionClickMock = jest.fn();
-        const { getByTestId } = render(
-            <Options options={options} values={[{ label: 'option1', value: 'option 1' }]} onOptionClick={opOptionClickMock} />
+        const { container } = render(
+            <Options id="dummy" options={options} values={[{ label: 'option 1', value: 'option1' }]} onOptionClick={opOptionClickMock} />
         );
-        fireEvent.click(getByTestId('option 1'));
+        fireEvent.click(container.querySelector('#dummy-option1-chip-clear'));
         expect(opOptionClickMock).toHaveBeenCalledWith([]);
     });
 });

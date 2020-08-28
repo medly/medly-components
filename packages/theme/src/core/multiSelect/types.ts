@@ -1,3 +1,5 @@
+import { FontVariants } from '../font/types';
+
 interface IconTheme {
     background: string;
     hoverBackground: string;
@@ -26,4 +28,10 @@ interface MultiSelectComp {
 export interface MultiSelectTheme {
     filled: MultiSelectComp;
     outlined: MultiSelectComp;
+    options: {
+        textVariant: {
+            S: FontVariants;
+            M: FontVariants;
+        };
+    };
 }

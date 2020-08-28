@@ -76,18 +76,18 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                             errorText={errorText || builtInErrorMessage}
                             {...{ ...restProps, onBlur, onInvalid }}
                         />
-                        <Styled.Label htmlFor={`${inputId}-input`} required={required} variant={props.variant}>
+                        <Styled.Label htmlFor={`${inputId}-input`} size={restProps.size} required={required} variant={props.variant}>
                             {label}
                         </Styled.Label>
                     </Styled.InputWrapper>
                     {isSuffixPresent && (
-                        <Styled.Suffix>
+                        <Styled.Suffix size={restProps.size}>
                             <Suffix />
                         </Styled.Suffix>
                     )}
                 </Styled.InnerWrapper>
                 {(isErrorPresent || helperText) && (
-                    <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation}>
+                    <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation} size={restProps.size}>
                         {errorText || builtInErrorMessage || helperText}
                     </Styled.HelperText>
                 )}

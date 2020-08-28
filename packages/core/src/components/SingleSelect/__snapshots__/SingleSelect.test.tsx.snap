@@ -26,20 +26,20 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
-}
-
-.c10 {
-  pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c3 {
@@ -183,17 +183,22 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 
 .c5 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c5:focus {
@@ -325,7 +330,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
           />
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -370,20 +375,20 @@ exports[`SingleSelect component should render properly when isSearchable is true
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
-}
-
-.c10 {
-  pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c3 {
@@ -527,17 +532,22 @@ exports[`SingleSelect component should render properly when isSearchable is true
 
 .c5 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c5:focus {
@@ -672,7 +682,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
           />
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -689,6 +699,168 @@ exports[`SingleSelect component should render properly when isSearchable is true
     </div>
   </div>
 </div>
+`;
+
+exports[`SingleSelect component should render properly with M size 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c0 {
+  cursor: pointer;
+  padding: 0 1.6rem;
+  min-height: 4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.c0:hover {
+  background-color: #F7F8F9;
+}
+
+.c0 > .c1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #13181D;
+}
+
+.c0 > .c3 {
+  margin-left: 1.6rem;
+}
+
+.c0 > .c3 * {
+  fill: #13181D;
+}
+
+.c4 > .c1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #13181D;
+}
+
+<li
+  class="c0"
+  id="All"
+>
+  <span
+    class="c1 c2"
+  >
+    All
+  </span>
+</li>
+`;
+
+exports[`SingleSelect component should render properly with S size 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c0 {
+  cursor: pointer;
+  padding: 0 1.6rem;
+  min-height: 4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.c0:hover {
+  background-color: #F7F8F9;
+}
+
+.c0 > .c1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #13181D;
+}
+
+.c0 > .c3 {
+  margin-left: 1.6rem;
+}
+
+.c0 > .c3 * {
+  fill: #13181D;
+}
+
+.c4 > .c1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #13181D;
+}
+
+<li
+  class="c0"
+  id="All"
+>
+  <span
+    class="c1 c2"
+  >
+    All
+  </span>
+</li>
 `;
 
 exports[`SingleSelect component with filled variant should render disabled state properly  1`] = `
@@ -717,20 +889,20 @@ exports[`SingleSelect component with filled variant should render disabled state
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
-}
-
-.c10 {
-  pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c3 {
@@ -854,17 +1026,22 @@ exports[`SingleSelect component with filled variant should render disabled state
 
 .c5 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c5:focus {
@@ -989,7 +1166,7 @@ exports[`SingleSelect component with filled variant should render disabled state
           />
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -1049,89 +1226,24 @@ exports[`SingleSelect component with filled variant should render error text pro
   fill: #607890;
 }
 
-.c3 {
-  pointer-events: none;
+.c2 > .c0 {
   margin-left: 1.6rem;
 }
 
-.c7 .sc-AxhCb,
-.c7 .c2 {
-  color: #546A7F;
-}
-
-.c7 .sc-AxhCb *,
-.c7 .c2 * {
-  fill: #546A7F;
-}
-
-.c7 .sc-AxhCb,
-.c7:hover .sc-AxhCb,
-.c7:focus-within .sc-AxhCb,
-.c7:focus-within:hover .sc-AxhCb,
-.c7 .c2,
-.c7:hover .c2,
-.c7:focus-within .c2,
-.c7:focus-within:hover .c2 {
-  color: #cc0000;
-}
-
-.c7 .sc-AxhCb *,
-.c7:hover .sc-AxhCb *,
-.c7:focus-within .sc-AxhCb *,
-.c7:focus-within:hover .sc-AxhCb *,
-.c7 .c2 *,
-.c7:hover .c2 *,
-.c7:focus-within .c2 *,
-.c7:focus-within:hover .c2 * {
-  fill: #cc0000;
-}
-
-.c8 > .c0 {
-  margin-left: 1.6rem;
-}
-
-.c8 > .c0 * {
+.c2 > .c0 * {
   fill: #13181D;
 }
 
-.c9 > .c0 {
+.c3 > .c0 {
   margin-left: 1.6rem;
 }
 
-.c9 > .c0 * {
+.c3 > .c0 * {
   fill: #cc0000;
 }
 
-.c4 .c6 .c2 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c4 .c6 .c2 * {
-  -webkit-transition: fill 100ms ease-out;
-  transition: fill 100ms ease-out;
-}
-
-.c5 .c6 .c2 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.c5 .c6 .c2 * {
-  -webkit-transition: fill 100ms ease-out;
-  transition: fill 100ms ease-out;
-}
-
 <svg
-  class="c0 c1 c2 c3"
+  class="c0 c1"
   fill="none"
   height="1em"
   viewBox="0 0 24 24"
@@ -1162,13 +1274,13 @@ exports[`SingleSelect component with filled variant should render options correc
 .c3 {
   margin: 0;
   color: inherit;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 2.6rem;
 }
 
 .c1 {
@@ -1322,20 +1434,20 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
-}
-
-.c10 {
-  pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c3 {
@@ -1479,17 +1591,22 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 
 .c5 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c5:focus {
@@ -1621,7 +1738,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
           />
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -1666,6 +1783,11 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
@@ -1675,11 +1797,6 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
-}
-
-.c10 {
-  pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c3 {
@@ -1808,17 +1925,22 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 
 .c5 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c5:focus {
@@ -1943,7 +2065,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
           />
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -2003,89 +2125,24 @@ exports[`SingleSelect component with outlined variant should render error text p
   fill: #607890;
 }
 
-.c3 {
-  pointer-events: none;
+.c2 > .c0 {
   margin-left: 1.6rem;
 }
 
-.c7 .sc-AxhCb,
-.c7 .c2 {
-  color: #607890;
-}
-
-.c7 .sc-AxhCb *,
-.c7 .c2 * {
-  fill: #607890;
-}
-
-.c7 .sc-AxhCb,
-.c7:hover .sc-AxhCb,
-.c7:focus-within .sc-AxhCb,
-.c7:focus-within:hover .sc-AxhCb,
-.c7 .c2,
-.c7:hover .c2,
-.c7:focus-within .c2,
-.c7:focus-within:hover .c2 {
-  color: #cc0000;
-}
-
-.c7 .sc-AxhCb *,
-.c7:hover .sc-AxhCb *,
-.c7:focus-within .sc-AxhCb *,
-.c7:focus-within:hover .sc-AxhCb *,
-.c7 .c2 *,
-.c7:hover .c2 *,
-.c7:focus-within .c2 *,
-.c7:focus-within:hover .c2 * {
-  fill: #cc0000;
-}
-
-.c8 > .c0 {
-  margin-left: 1.6rem;
-}
-
-.c8 > .c0 * {
+.c2 > .c0 * {
   fill: #13181D;
 }
 
-.c9 > .c0 {
+.c3 > .c0 {
   margin-left: 1.6rem;
 }
 
-.c9 > .c0 * {
+.c3 > .c0 * {
   fill: #cc0000;
 }
 
-.c4 .c6 .c2 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c4 .c6 .c2 * {
-  -webkit-transition: fill 100ms ease-out;
-  transition: fill 100ms ease-out;
-}
-
-.c5 .c6 .c2 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.c5 .c6 .c2 * {
-  -webkit-transition: fill 100ms ease-out;
-  transition: fill 100ms ease-out;
-}
-
 <svg
-  class="c0 c1 c2 c3"
+  class="c0 c1"
   fill="none"
   height="1em"
   viewBox="0 0 24 24"
@@ -2116,13 +2173,13 @@ exports[`SingleSelect component with outlined variant should render options corr
 .c3 {
   margin: 0;
   color: inherit;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 2.6rem;
 }
 
 .c1 {
@@ -2276,6 +2333,11 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
@@ -2285,11 +2347,6 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
-}
-
-.c10 {
-  pointer-events: none;
-  margin-left: 1.6rem;
 }
 
 .c3 {
@@ -2447,17 +2504,22 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 
 .c5 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c5:focus {
@@ -2589,7 +2651,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
           />
         </div>
         <svg
-          class="c8 c9 c10"
+          class="c8"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"

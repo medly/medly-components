@@ -13,14 +13,19 @@ exports[`MultiSelect component should render correctly with all the props given 
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -145,11 +150,9 @@ exports[`MultiSelect component should render correctly with all the props given 
 
 .c5 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -160,6 +163,13 @@ exports[`MultiSelect component should render correctly with all the props given 
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c5:focus {
@@ -213,7 +223,7 @@ exports[`MultiSelect component should render correctly with all the props given 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c14 {
+.c13 {
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -221,12 +231,12 @@ exports[`MultiSelect component should render correctly with all the props given 
   cursor: pointer;
 }
 
-.c14 * {
+.c13 * {
   fill-opacity: 1;
   fill: #607890;
 }
 
-.c15 {
+.c14 {
   overflow: visible;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -234,38 +244,37 @@ exports[`MultiSelect component should render correctly with all the props given 
   cursor: inherit;
 }
 
-.c15 * {
+.c14 * {
   fill-opacity: 1;
   fill: #607890;
 }
 
-.c12 {
+.c11 {
   margin: 0;
   color: inherit;
-  font-size: 1.4rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 600;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 2.6rem;
 }
 
 .c10 {
-  background-color: transparent;
-  border: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  border: 1px solid;
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
   cursor: default;
-  border: 1px solid;
-  padding: 0.2rem 0.6rem 0.2rem 1rem;
-  border-color: #C7D0D8;
   border-radius: 2rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.9rem;
+  color: #435465;
+  border-color: #C7D0D8;
   background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -285,46 +294,32 @@ exports[`MultiSelect component should render correctly with all the props given 
   outline: none;
 }
 
-.c10 .c13 {
+.c10 .c12 {
   font-size: 1.2rem;
-  padding: 0.4rem;
   border-radius: 50%;
-  font-weight: 600;
-}
-
-.c10 .c11 {
-  font-weight: 600;
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-}
-
-.c10 .c11 + .c13 {
   cursor: pointer;
   margin-left: 0.6rem;
 }
 
-.c10 .c13 {
+.c10 .c12 {
+  padding: 0.4rem;
   background-color: #eff2f4;
 }
 
-.c10 .c13 * {
+.c10 .c12 * {
   fill: #b0bcc8;
 }
 
-.c10 .c13:hover {
+.c10 .c12:hover {
   background-color: #eff2f4;
 }
 
-.c10 .c13:hover * {
+.c10 .c12:hover * {
   fill: #b0bcc8;
 }
 
 .c10:hover {
   border-color: #C7D0D8;
-}
-
-.c10 .c11 {
-  color: #435465;
 }
 
 .c9 {
@@ -336,6 +331,10 @@ exports[`MultiSelect component should render correctly with all the props given 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.c9 button {
+  margin-right: 0.8rem;
 }
 
 .c0 {
@@ -361,22 +360,21 @@ exports[`MultiSelect component should render correctly with all the props given 
   padding-right: 1.6rem;
 }
 
-.c0 .c8 > .c13 {
+.c0 .c8 > .c12 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
-  margin-left: 0.8rem;
 }
 
-.c0 .c8 > .c13 * {
+.c0 .c8 > .c12 * {
   -webkit-transition: fill 100ms ease-out;
   transition: fill 100ms ease-out;
   fill: #13181D;
 }
 
-.c0 .c8 > .c13 * {
+.c0 .c8 > .c12 * {
   fill: #b0bcc8;
 }
 
@@ -421,17 +419,18 @@ exports[`MultiSelect component should render correctly with all the props given 
         >
           <button
             class="c10"
+            id="medly-options-chip"
           >
             <span
-              class="c11 c12"
+              class="c11"
             >
               1
             </span>
             <svg
-              class="c13 c14"
-              data-testid="cancel-chip"
+              class="c12 c13"
               fill="none"
               height="1em"
+              id="medly-options-chip-clear"
               viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -444,7 +443,7 @@ exports[`MultiSelect component should render correctly with all the props given 
             </svg>
           </button>
           <svg
-            class="c13 c15"
+            class="c12 c14"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -477,14 +476,19 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   touch-action: manipulation;
-  -webkit-transform: translateY(-52%);
-  -ms-transform: translateY(-52%);
-  transform: translateY(-52%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
 }
 
@@ -629,17 +633,22 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 
 .c5 {
   color: #13181D;
-  font-size: 1.6rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 2.6rem;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
 }
 
 .c5:focus {
@@ -717,6 +726,10 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   align-items: center;
 }
 
+.c9 button {
+  margin-right: 0.8rem;
+}
+
 .c0 {
   position: relative;
   display: -webkit-inline-box;
@@ -758,7 +771,6 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
-  margin-left: 0.8rem;
 }
 
 .c0 .c8 > .c10 * {
@@ -819,5 +831,1091 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
       
     </div>
   </div>
+</div>
+`;
+
+exports[`MultiSelect component should render properly with M size 1`] = `
+.c12 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
+}
+
+.c12 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c5 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c15 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c17 .c19 > .c11 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c17 .c19 > .c11 * {
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
+  fill: #13181D;
+}
+
+.c18 .c19 > .c11 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c18 .c19 > .c11 * {
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
+  fill: #13181D;
+}
+
+.c18 .c19 > .c11 * {
+  fill: #126AFA;
+}
+
+.c14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c14 > :first-child {
+  margin-bottom: 0.9rem;
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: inherit;
+  color: inherit;
+  padding: 0 1.6rem;
+}
+
+.c16 {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  margin-left: 4rem;
+  width: 100%;
+  margin-left: 0;
+}
+
+.c16 > label {
+  padding-left: 5rem;
+}
+
+.c10 {
+  border: 0.15rem solid;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 .c11 {
+  pointer-events: none;
+  z-index: 1;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  width: 100%;
+  height: 100%;
+  margin-right: 0.05rem;
+}
+
+.c8 {
+  opacity: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  position: absolute;
+}
+
+.c8:checked ~ .c9 {
+  border-color: #126AFA;
+  background-color: #126AFA;
+}
+
+.c8:checked ~ .c9 .c11 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c8:checked ~ .c9 .c11 * {
+  fill: #ffffff;
+}
+
+.c8:not(:checked) ~ .c9 {
+  background-color: transparent;
+  border-color: #13181D;
+}
+
+.c8:not(:disabled):focus ~ .c9 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+}
+
+.c8:not(:disabled):focus:not(:checked) ~ .c9 {
+  border-color: #126AFA;
+}
+
+.c7 {
+  margin: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c4 * {
+  cursor: pointer;
+}
+
+.c4:hover .c9 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #126AFA;
+}
+
+.c1 {
+  border-bottom: 1px solid #dfe4e9;
+  padding: 0.5rem 1.3rem;
+}
+
+.c1 .sc-fzoLsD {
+  padding: 0 0.3rem 0 0.9rem;
+  margin: 0.2rem;
+}
+
+.c1 .sc-fzoLsD .c11 {
+  background-color: transparent;
+  padding: 0.2rem;
+}
+
+.c1 > p {
+  margin: 0.3rem;
+}
+
+.c0 {
+  position: absolute;
+  top: 5.6rem;
+  box-shadow: 0px 2px 8px #b0bcc8;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+  width: 100%;
+  z-index: 1;
+}
+
+.c2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow: auto;
+}
+
+.c2 .c3 {
+  width: 100%;
+  margin: 0;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  box-sizing: border-box;
+}
+
+.c2 .c3 span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c2 .c3:hover {
+  background-color: #F7F8F9;
+}
+
+.c2 > .c3 {
+  padding: 0.7rem 0 0.7rem 1.3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 > div {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 .c13 > label {
+  padding-left: 1.3rem;
+}
+
+<div
+  class="c0"
+  id="pharmacy-options-wrapper"
+>
+  <div
+    class="c1"
+    id="pharmacy-selected-chips"
+  >
+    <p>
+      -
+    </p>
+  </div>
+  <ul
+    class="c2"
+    id="pharmacy-options"
+  >
+    
+    <label
+      class="c3 c4"
+      for="All"
+      id="All-wrapper"
+      sizes="[object Object]"
+    >
+      <span
+        class="c5 c6"
+        id="All-label"
+        type="checkbox"
+      >
+        All
+      </span>
+      <div
+        class="c7"
+      >
+        <input
+          class="c8"
+          id="All"
+          name="all"
+          sizes="[object Object]"
+          type="checkbox"
+          value="all"
+        />
+        <div
+          class="c9 c10"
+        >
+          <svg
+            class="c11 c12"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+              fill="green"
+            />
+          </svg>
+        </div>
+      </div>
+    </label>
+    
+    <label
+      class="c3 c4"
+      for="Dummy1"
+      id="Dummy1-wrapper"
+      sizes="[object Object]"
+    >
+      <span
+        class="c5 c6"
+        id="Dummy1-label"
+        type="checkbox"
+      >
+        Dummy1
+      </span>
+      <div
+        class="c7"
+      >
+        <input
+          class="c8"
+          id="Dummy1"
+          name="Dummy1"
+          sizes="[object Object]"
+          type="checkbox"
+          value="Dummy1"
+        />
+        <div
+          class="c9 c10"
+        >
+          <svg
+            class="c11 c12"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+              fill="green"
+            />
+          </svg>
+        </div>
+      </div>
+    </label>
+    <div
+      aria-describedby="Nested Options-helper-text"
+      class="c13 c14"
+      id="Nested Options-wrapper"
+      type="checkbox"
+    >
+      
+      <label
+        class="c3 c4"
+        for="Nested Options-select-all"
+        id="Nested Options-select-all-wrapper"
+        sizes="[object Object]"
+      >
+        <span
+          class="c15 c6"
+          id="Nested Options-select-all-label"
+          type="checkbox"
+        >
+          Nested Options
+        </span>
+        <div
+          class="c7"
+        >
+          <input
+            class="c8"
+            id="Nested Options-select-all"
+            sizes="[object Object]"
+            type="checkbox"
+          />
+          <div
+            class="c9 c10"
+          >
+            <svg
+              class="c11 c12"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                fill="green"
+              />
+            </svg>
+          </div>
+        </div>
+      </label>
+      <div
+        class="c16"
+        id="Nested Options-options"
+      >
+        
+        <label
+          class="c3 c4"
+          for="Dummy2-Nested Options"
+          id="Dummy2-Nested Options-wrapper"
+          sizes="[object Object]"
+        >
+          <span
+            class="c5 c6"
+            id="Dummy2-Nested Options-label"
+            type="checkbox"
+          >
+            Dummy2
+          </span>
+          <div
+            class="c7"
+          >
+            <input
+              class="c8"
+              id="Dummy2-Nested Options"
+              name="Dummy2"
+              sizes="[object Object]"
+              type="checkbox"
+            />
+            <div
+              class="c9 c10"
+            >
+              <svg
+                class="c11 c12"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                  fill="green"
+                />
+              </svg>
+            </div>
+          </div>
+        </label>
+        
+        <label
+          class="c3 c4"
+          for="Dummy3-Nested Options"
+          id="Dummy3-Nested Options-wrapper"
+          sizes="[object Object]"
+        >
+          <span
+            class="c5 c6"
+            id="Dummy3-Nested Options-label"
+            type="checkbox"
+          >
+            Dummy3
+          </span>
+          <div
+            class="c7"
+          >
+            <input
+              class="c8"
+              id="Dummy3-Nested Options"
+              name="Dummy3"
+              sizes="[object Object]"
+              type="checkbox"
+            />
+            <div
+              class="c9 c10"
+            >
+              <svg
+                class="c11 c12"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                  fill="green"
+                />
+              </svg>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </ul>
+</div>
+`;
+
+exports[`MultiSelect component should render properly with S size 1`] = `
+.c12 {
+  overflow: visible;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  font-size: 2.4rem;
+  cursor: inherit;
+}
+
+.c12 * {
+  fill-opacity: 1;
+  fill: #607890;
+}
+
+.c5 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c15 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+}
+
+.c17 .c19 > .c11 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c17 .c19 > .c11 * {
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
+  fill: #13181D;
+}
+
+.c18 .c19 > .c11 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.c18 .c19 > .c11 * {
+  -webkit-transition: fill 100ms ease-out;
+  transition: fill 100ms ease-out;
+  fill: #13181D;
+}
+
+.c18 .c19 > .c11 * {
+  fill: #126AFA;
+}
+
+.c14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c14 > :first-child {
+  margin-bottom: 0.9rem;
+}
+
+.c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: inherit;
+  color: inherit;
+  padding: 0 1.6rem;
+}
+
+.c16 {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  margin-left: 4rem;
+  width: 100%;
+  margin-left: 0;
+}
+
+.c16 > label {
+  padding-left: 5rem;
+}
+
+.c10 {
+  border: 0.15rem solid;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 .c11 {
+  pointer-events: none;
+  z-index: 1;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  width: 100%;
+  height: 100%;
+  margin-right: 0.05rem;
+}
+
+.c8 {
+  opacity: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  position: absolute;
+}
+
+.c8:checked ~ .c9 {
+  border-color: #126AFA;
+  background-color: #126AFA;
+}
+
+.c8:checked ~ .c9 .c11 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c8:checked ~ .c9 .c11 * {
+  fill: #ffffff;
+}
+
+.c8:not(:checked) ~ .c9 {
+  background-color: transparent;
+  border-color: #13181D;
+}
+
+.c8:not(:disabled):focus ~ .c9 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+}
+
+.c8:not(:disabled):focus:not(:checked) ~ .c9 {
+  border-color: #126AFA;
+}
+
+.c7 {
+  margin: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c4 * {
+  cursor: pointer;
+}
+
+.c4:hover .c9 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #126AFA;
+}
+
+.c1 {
+  border-bottom: 1px solid #dfe4e9;
+  padding: 0.5rem 1.3rem;
+}
+
+.c1 .sc-fzoLsD {
+  padding: 0 0.3rem 0 0.9rem;
+  margin: 0.2rem;
+}
+
+.c1 .sc-fzoLsD .c11 {
+  background-color: transparent;
+  padding: 0.2rem;
+}
+
+.c1 > p {
+  margin: 0.3rem;
+}
+
+.c0 {
+  position: absolute;
+  top: 4rem;
+  box-shadow: 0px 2px 8px #b0bcc8;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 0.4rem;
+  width: 100%;
+  z-index: 1;
+}
+
+.c2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow: auto;
+}
+
+.c2 .c3 {
+  width: 100%;
+  margin: 0;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  box-sizing: border-box;
+}
+
+.c2 .c3 span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+}
+
+.c2 .c3:hover {
+  background-color: #F7F8F9;
+}
+
+.c2 > .c3 {
+  padding: 0.7rem 0 0.7rem 1.3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 > div {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 .c13 > label {
+  padding-left: 1.3rem;
+}
+
+<div
+  class="c0"
+  id="pharmacy-options-wrapper"
+>
+  <div
+    class="c1"
+    id="pharmacy-selected-chips"
+  >
+    <p>
+      -
+    </p>
+  </div>
+  <ul
+    class="c2"
+    id="pharmacy-options"
+  >
+    
+    <label
+      class="c3 c4"
+      for="All"
+      id="All-wrapper"
+      sizes="[object Object]"
+    >
+      <span
+        class="c5 c6"
+        id="All-label"
+        type="checkbox"
+      >
+        All
+      </span>
+      <div
+        class="c7"
+      >
+        <input
+          class="c8"
+          id="All"
+          name="all"
+          sizes="[object Object]"
+          type="checkbox"
+          value="all"
+        />
+        <div
+          class="c9 c10"
+        >
+          <svg
+            class="c11 c12"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+              fill="green"
+            />
+          </svg>
+        </div>
+      </div>
+    </label>
+    
+    <label
+      class="c3 c4"
+      for="Dummy1"
+      id="Dummy1-wrapper"
+      sizes="[object Object]"
+    >
+      <span
+        class="c5 c6"
+        id="Dummy1-label"
+        type="checkbox"
+      >
+        Dummy1
+      </span>
+      <div
+        class="c7"
+      >
+        <input
+          class="c8"
+          id="Dummy1"
+          name="Dummy1"
+          sizes="[object Object]"
+          type="checkbox"
+          value="Dummy1"
+        />
+        <div
+          class="c9 c10"
+        >
+          <svg
+            class="c11 c12"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+              fill="green"
+            />
+          </svg>
+        </div>
+      </div>
+    </label>
+    <div
+      aria-describedby="Nested Options-helper-text"
+      class="c13 c14"
+      id="Nested Options-wrapper"
+      type="checkbox"
+    >
+      
+      <label
+        class="c3 c4"
+        for="Nested Options-select-all"
+        id="Nested Options-select-all-wrapper"
+        sizes="[object Object]"
+      >
+        <span
+          class="c15 c6"
+          id="Nested Options-select-all-label"
+          type="checkbox"
+        >
+          Nested Options
+        </span>
+        <div
+          class="c7"
+        >
+          <input
+            class="c8"
+            id="Nested Options-select-all"
+            sizes="[object Object]"
+            type="checkbox"
+          />
+          <div
+            class="c9 c10"
+          >
+            <svg
+              class="c11 c12"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                fill="green"
+              />
+            </svg>
+          </div>
+        </div>
+      </label>
+      <div
+        class="c16"
+        id="Nested Options-options"
+      >
+        
+        <label
+          class="c3 c4"
+          for="Dummy2-Nested Options"
+          id="Dummy2-Nested Options-wrapper"
+          sizes="[object Object]"
+        >
+          <span
+            class="c5 c6"
+            id="Dummy2-Nested Options-label"
+            type="checkbox"
+          >
+            Dummy2
+          </span>
+          <div
+            class="c7"
+          >
+            <input
+              class="c8"
+              id="Dummy2-Nested Options"
+              name="Dummy2"
+              sizes="[object Object]"
+              type="checkbox"
+            />
+            <div
+              class="c9 c10"
+            >
+              <svg
+                class="c11 c12"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                  fill="green"
+                />
+              </svg>
+            </div>
+          </div>
+        </label>
+        
+        <label
+          class="c3 c4"
+          for="Dummy3-Nested Options"
+          id="Dummy3-Nested Options-wrapper"
+          sizes="[object Object]"
+        >
+          <span
+            class="c5 c6"
+            id="Dummy3-Nested Options-label"
+            type="checkbox"
+          >
+            Dummy3
+          </span>
+          <div
+            class="c7"
+          >
+            <input
+              class="c8"
+              id="Dummy3-Nested Options"
+              name="Dummy3"
+              sizes="[object Object]"
+              type="checkbox"
+            />
+            <div
+              class="c9 c10"
+            >
+              <svg
+                class="c11 c12"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                  fill="green"
+                />
+              </svg>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </ul>
 </div>
 `;

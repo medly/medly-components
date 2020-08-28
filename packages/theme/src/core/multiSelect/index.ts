@@ -93,6 +93,12 @@ const multiSelectTheme: MultiSelectTheme = {
                 background: 'rgba(204, 0, 0, 0.2)'
             }
         }
+    },
+    options: {
+        textVariant: {
+            S: 'body2',
+            M: 'body1'
+        }
     }
 };
 

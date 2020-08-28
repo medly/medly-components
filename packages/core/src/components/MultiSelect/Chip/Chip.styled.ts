@@ -1,49 +1,19 @@
 import { SvgIcon } from '@medly-components/icons';
 import { centerAligned, css, styled } from '@medly-components/utils';
-import Text from '../../Text';
 import { Props } from './types';
 
-const common = ({
-    theme: {
-        font: {
-            weights,
-            variants: { body1 }
-        }
-    },
-    disabled
-}: Props) => {
-    return css`
-        border: 1px solid;
-        padding: 0.2rem 0.6rem 0.2rem 1rem;
-        ${SvgIcon} {
-            font-size: 1.2rem;
-            padding: 0.4rem;
-            border-radius: 50%;
-            font-weight: ${weights.Medium};
-        }
-        ${Text.Style} {
-            font-weight: ${weights.Medium};
-            font-size: ${body1.fontSize};
-            line-height: ${body1.lineHeight};
-        }
-        ${Text.Style} + ${SvgIcon}{
-            cursor: ${disabled ? 'not-allowed' : 'pointer'};
-            margin-left: 0.6rem;
-        }
-    `;
-};
-
-const getStylesForChipAndIcon = ({ theme, variant, state }: Props) => {
+const getStyle = ({ theme, variant, state }: Props) => {
     const { multiSelect } = theme;
     const {
-        chip: { [state]: chipStyle, borderRadius },
+        chip: { [state]: chipStyle },
         icon: { [state]: iconStyle }
     } = multiSelect[variant];
     return css`
+        color: ${chipStyle.color};
         border-color: ${chipStyle.border};
-        border-radius: ${borderRadius};
         background-color: ${chipStyle.background};
         ${SvgIcon} {
+            padding: 0.4rem;
             background-color: ${iconStyle.background};
             * {
                 fill: ${iconStyle.color};
@@ -58,24 +28,27 @@ const getStylesForChipAndIcon = ({ theme, variant, state }: Props) => {
         &:hover {
             border-color: ${chipStyle.hoverBorder};
         }
-        ${Text.Style} {
-            color: ${chipStyle.color};
-        }
     `;
 };
 
 export const Chip = styled('button')<Props>`
-    background-color: transparent;
-    border: none;
     user-select: none;
+    border: 1px solid;
     max-width: max-content;
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'default')};
+    border-radius: ${({ theme, variant }) => theme.multiSelect[variant].chip.borderRadius};
+    padding: ${({ size }) => (size === 'S' ? '0.2rem 0.3rem 0.2rem 0.7rem' : '0.2rem 0.5rem 0.2rem 0.9rem')};
 
     &:focus {
         outline: none;
     }
 
-    ${common};
-    ${getStylesForChipAndIcon};
+    ${SvgIcon} {
+        font-size: 1.2rem;
+        border-radius: 50%;
+        cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+        margin-left: ${({ size }) => (size === 'S' ? '0.4rem' : '0.6rem')};
+    }
+    ${getStyle};
     ${centerAligned()}
 `;

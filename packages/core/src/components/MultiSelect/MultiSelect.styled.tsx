@@ -31,7 +31,6 @@ const getDefaultStyle = ({ theme, areOptionsVisible, disabled, isSearchable }: S
             > ${ChevronDownIcon.Style} {
                 transition: all 100ms ease-out;
                 transform: ${areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)'};
-                margin-left: 0.8rem;
                 * {
                     transition: fill 100ms ease-out;
                     fill: ${theme.colors.black};

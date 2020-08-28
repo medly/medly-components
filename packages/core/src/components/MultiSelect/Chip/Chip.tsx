@@ -7,7 +7,8 @@ import { Props } from './types';
 
 export const Chip: SFC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { label, onClear, testId, ...restProps } = props;
+        const { id, label, onClear, ...restProps } = props,
+            chipId = id ? id.replace(' ', '') : 'medly-options-chip';
 
         const onClearHandler = useCallback(
             (e: React.MouseEvent<HTMLOrSVGElement>) => {
@@ -18,9 +19,11 @@ export const Chip: SFC<Props> & WithStyle = React.memo(
         );
 
         return (
-            <Styled.Chip ref={ref} {...restProps}>
-                <Text>{label}</Text>
-                <ClearIcon size="S" data-testid={testId} onClick={onClearHandler} />
+            <Styled.Chip ref={ref} id={chipId} {...restProps}>
+                <Text textWeight="Medium" textVariant={restProps.size === 'S' ? 'body2' : 'body1'}>
+                    {label}
+                </Text>
+                <ClearIcon id={`${chipId}-clear`} size="S" onClick={onClearHandler} />
             </Styled.Chip>
         );
     })
@@ -29,7 +32,6 @@ export const Chip: SFC<Props> & WithStyle = React.memo(
 Chip.displayName = 'Chip';
 Chip.Style = Styled.Chip;
 Chip.defaultProps = {
-    variant: 'outlined',
     state: 'default',
-    testId: 'selected-chip'
+    variant: 'outlined'
 };

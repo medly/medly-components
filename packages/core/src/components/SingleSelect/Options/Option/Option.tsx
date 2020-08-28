@@ -1,5 +1,5 @@
 import { ArrowRightIcon, CheckIcon } from '@medly-components/icons';
-import { useKeyPress, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
+import { useKeyPress, useOuterClickNotifier, WithStyle, withTheme } from '@medly-components/utils';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import Text from '../../../Text';
 import Options from '../Options';
@@ -9,7 +9,7 @@ import { OptionProps } from './types';
 const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
     const ref = useRef(null),
         [areOptionsVisible, setOptionsVisibilityState] = useState(false),
-        { value, label, disabled, selected, onClick, hasError, hovered } = props,
+        { value, theme, label, disabled, selected, onClick, hasError, hovered, size } = props,
         id = label.replace(/ /g, '-'),
         enterPress = useKeyPress('Enter'),
         leftPress = useKeyPress('ArrowLeft'),
@@ -56,10 +56,20 @@ const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
             onMouseEnter={showNestedOptions}
             onMouseLeave={hideNestedOptions}
         >
-            <Text textWeight={selected ? 'Strong' : 'Regular'}>{label}</Text>
+            <Text textWeight={selected ? 'Medium' : 'Regular'} textVariant={theme.singleSelect.option.textVariant[size]}>
+                {label}
+            </Text>
             {isNested ? <ArrowRightIcon /> : selected && <CheckIcon />}
             {areOptionsVisible && isNested && (
-                <Options isNested id={`${id}-options`} options={value} variant="outlined" onOptionClick={onClick} hasError={hasError} />
+                <Options
+                    isNested
+                    size={size}
+                    id={`${id}-options`}
+                    options={value}
+                    variant="outlined"
+                    onOptionClick={onClick}
+                    hasError={hasError}
+                />
             )}
         </OptionStyled>
     );
@@ -67,4 +77,4 @@ const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
 Option.displayName = 'Option';
 Option.Style = OptionStyled;
 
-export default Option;
+export default withTheme(Option);

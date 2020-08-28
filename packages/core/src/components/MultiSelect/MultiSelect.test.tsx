@@ -43,9 +43,7 @@ describe('MultiSelect component', () => {
         const { container } = render(<MultiSelect options={options} variant="filled" size={size} label="Pharmacy" />);
         fireEvent.click(screen.getByRole('textbox'));
         waitFor(() => expect(screen.getByRole('list')).toBeVisible());
-        expect(container.querySelector('#pharmacy-options-wrapper')).toHaveStyle(`
-                top: ${size === 'S' ? '4rem' : '5.6rem'}
-            `);
+        expect(container.querySelector('#pharmacy-options-wrapper')).toMatchSnapshot();
     });
 
     it('should show options on click on input', async () => {
@@ -148,8 +146,8 @@ describe('MultiSelect component', () => {
     });
 
     it('should clear options on click onClear function', () => {
-        const { queryByTestId } = render(<MultiSelect values={['Dummy1', 'Dummy2']} options={options} onChange={jest.fn()} />);
-        fireEvent.click(queryByTestId('cancel-chip'));
+        const { container } = render(<MultiSelect values={['Dummy1', 'Dummy2']} options={options} onChange={jest.fn()} />);
+        fireEvent.click(container.querySelector('#medly-options-chip-clear'));
         expect(screen.queryByRole('list')).toBeNull();
     });
 

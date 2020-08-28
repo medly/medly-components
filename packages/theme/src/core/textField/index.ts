@@ -6,8 +6,13 @@ const textField: TextFieldTheme = {
         S: '4rem',
         M: '5.6rem'
     },
+    textVariant: {
+        S: 'body2',
+        M: 'body1'
+    },
     outlined: {
         default: {
+            bgColor: 'transparent',
             borderColor: colors.grey[500],
             iconColor: colors.grey[600],
             textColor: colors.black,
