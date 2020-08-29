@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.20.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.19.0...@medly-components/core@1.20.0) (2020-08-29)
+
+
+### Bug Fixes
+
+* fix font family issue in textfield component ([1b651b3](https://github.com/medly/medly-components/commit/1b651b3450268b302999304e210240b6136d85a9))
+* icons size issue ([63eb0ba](https://github.com/medly/medly-components/commit/63eb0ba4f89fd2abb441dc87a7ded3de676a99b2))
+
+
+### Features
+
+* add small styles for textfield, singleSelect & multiselect component ([d4658fc](https://github.com/medly/medly-components/commit/d4658fc39b42a01d54aee6002db2733642a0eb77))
+
+
+
+
+
 # [1.19.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.18.0...@medly-components/core@1.19.0) (2020-08-27)
 
 
