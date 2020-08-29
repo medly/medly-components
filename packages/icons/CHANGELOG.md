@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.4](https://github.com/medly/medly-components/compare/@medly-components/icons@1.2.3...@medly-components/icons@1.2.4) (2020-08-29)
+
+
+### Bug Fixes
+
+* fix icon size issue in textField, singleSelect, multiSelect, table component ([1ef741e](https://github.com/medly/medly-components/commit/1ef741e9c0e077c71630d92ddcb6381c82d00064))
+
+
+
+
+
 ## [1.2.3](https://github.com/medly/medly-components/compare/@medly-components/icons@1.2.2...@medly-components/icons@1.2.3) (2020-08-29)
 
 
