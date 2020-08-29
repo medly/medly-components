@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.21.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.20.1...@medly-components/core@1.21.0) (2020-08-29)
+
+
+### Features
+
+* move searchbox text variant to theme ([245a0ea](https://github.com/medly/medly-components/commit/245a0eaba62416ba02c410a4388136924e94993b))
+
+
+
+
+
 ## [1.20.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.20.0...@medly-components/core@1.20.1) (2020-08-29)
 
 
