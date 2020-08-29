@@ -3,15 +3,16 @@
 exports[`CheckboxGroup component should render properly 1`] = `
 .c13 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c13 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -510,15 +511,16 @@ exports[`CheckboxGroup component should render properly 1`] = `
 exports[`CheckboxGroup component should render properly with disabled state 1`] = `
 .c13 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c13 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -999,15 +1001,16 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
 exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
 .c13 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c13 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -1488,15 +1491,16 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
 exports[`CheckboxGroup component should show indeterminate state when any one option is selected but not all 1`] = `
 .c1 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c1 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 

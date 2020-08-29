@@ -351,6 +351,10 @@ exports[`TextField should render properly with M size 1`] = `
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
   white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c5 {
@@ -641,6 +645,10 @@ exports[`TextField should render properly with S size 1`] = `
   line-height: 1.6rem;
   margin: 0.5rem 1.2rem 0;
   white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c5 {
@@ -2817,6 +2825,10 @@ exports[`TextField with filled variant should render error state properly  1`] =
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
   white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c5 {
@@ -3143,6 +3155,10 @@ exports[`TextField with filled variant should render error text properly 1`] = `
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
   white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c2 ~ .c0 {
@@ -3170,6 +3186,10 @@ exports[`TextField with filled variant should render helper text properly 1`] = 
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
   white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c2 ~ .c0 {
@@ -3187,15 +3207,16 @@ exports[`TextField with filled variant should render helper text properly 1`] = 
 exports[`TextField with filled variant should render properly with prefix 1`] = `
 .c2 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c2 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -3497,15 +3518,16 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 exports[`TextField with filled variant should render properly with suffix 1`] = `
 .c6 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c6 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -5490,6 +5512,10 @@ exports[`TextField with outlined variant should render error state properly  1`]
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
   white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c5 {
@@ -5830,6 +5856,10 @@ exports[`TextField with outlined variant should render error text properly 1`] =
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
   white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c2 ~ .c0 {
@@ -5857,6 +5887,10 @@ exports[`TextField with outlined variant should render helper text properly 1`] 
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
   white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c2 ~ .c0 {
@@ -5874,15 +5908,16 @@ exports[`TextField with outlined variant should render helper text properly 1`] 
 exports[`TextField with outlined variant should render properly with prefix 1`] = `
 .c2 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c2 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -6198,15 +6233,16 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 exports[`TextField with outlined variant should render properly with suffix 1`] = `
 .c6 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c6 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 

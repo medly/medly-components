@@ -25,7 +25,9 @@ export const RowActionsCell: React.FC<RowActionProps> & WithStyle = React.memo(p
                 <LoadingDiv />
             ) : (
                 <>
-                    {props.isRowExpandable && <ExpandMoreIcon size="L" onClick={props.onRowExpansionIconClick} />}
+                    {props.isRowExpandable && (
+                        <ExpandMoreIcon size={props.tableSize === 'L' ? 'M' : 'S'} onClick={props.onRowExpansionIconClick} />
+                    )}
                     {props.isRowSelectable && (
                         <Checkbox
                             indeterminate={props.isRowIndeterminate}

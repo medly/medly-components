@@ -354,15 +354,16 @@ exports[`Button component should render properly with "square" edges 1`] = `
 exports[`Button component should render properly with any icon at the beginning of the text 1`] = `
 .c2 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c2 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -499,15 +500,16 @@ exports[`Button component should render properly with any icon at the beginning 
 exports[`Button component should render properly with any icon at the end of the text 1`] = `
 .c2 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c2 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 

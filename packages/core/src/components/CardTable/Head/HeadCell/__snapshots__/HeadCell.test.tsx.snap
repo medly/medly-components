@@ -354,15 +354,16 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
 exports[`Card Table HeadCell should call onSortChange with asc order when clicked on sorting icon 1`] = `
 .c6 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c6 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -498,15 +499,16 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
 exports[`Card Table HeadCell should call onSortChange with desc order when clicked on sorting icon 1`] = `
 .c6 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c6 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -759,15 +761,16 @@ exports[`Card Table HeadCell should render properly with dark background and dro
 exports[`Card Table HeadCell should render properly with hover state 1`] = `
 .c6 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2rem;
 }
 
 .c6 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -903,15 +906,16 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
 exports[`Card Table HeadCell should render properly with light background and dropdown icon by default 1`] = `
 .c6 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2rem;
 }
 
 .c6 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 

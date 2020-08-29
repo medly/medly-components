@@ -32,9 +32,6 @@ export const Wrapper = styled('div')<SelectWrapperProps>`
         ${Suffix} {
             transition: transform 200ms ease-out;
             transform: ${({ areOptionsVisible }) => (areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)')};
-            * {
-                transition: fill 100ms ease-out;
-            }
         }
         &:not(:focus-within):hover {
             ${Suffix} {

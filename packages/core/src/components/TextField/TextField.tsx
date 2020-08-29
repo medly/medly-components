@@ -10,6 +10,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
 
         const {
                 id,
+                size,
                 label,
                 minWidth,
                 fullWidth,
@@ -50,16 +51,16 @@ export const TextField: FC<Props> & WithStyle = React.memo(
         return (
             <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth} id={`${inputId}-input-wrapper`}>
                 <Styled.InnerWrapper
+                    size={size}
                     onClick={handleWrapperClick}
                     variant={props.variant}
                     disabled={disabled}
-                    size={restProps.size}
                     isErrorPresent={isErrorPresent}
                     isLabelPresent={isLabelPresent}
                 >
                     {isPrefixPresent && (
-                        <Styled.Prefix>
-                            <Prefix />
+                        <Styled.Prefix size={size}>
+                            <Prefix size={size} />
                         </Styled.Prefix>
                     )}
                     <Styled.InputWrapper>
@@ -74,20 +75,20 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                             isSuffixPresent={isSuffixPresent}
                             isLabelPresent={isLabelPresent}
                             errorText={errorText || builtInErrorMessage}
-                            {...{ ...restProps, onBlur, onInvalid }}
+                            {...{ ...restProps, size, onBlur, onInvalid }}
                         />
-                        <Styled.Label htmlFor={`${inputId}-input`} size={restProps.size} required={required} variant={props.variant}>
+                        <Styled.Label htmlFor={`${inputId}-input`} size={size} required={required} variant={props.variant}>
                             {label}
                         </Styled.Label>
                     </Styled.InputWrapper>
                     {isSuffixPresent && (
-                        <Styled.Suffix size={restProps.size}>
-                            <Suffix />
+                        <Styled.Suffix size={size}>
+                            <Suffix size={size} />
                         </Styled.Suffix>
                     )}
                 </Styled.InnerWrapper>
                 {(isErrorPresent || helperText) && (
-                    <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation} size={restProps.size}>
+                    <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation} size={size}>
                         {errorText || builtInErrorMessage || helperText}
                     </Styled.HelperText>
                 )}

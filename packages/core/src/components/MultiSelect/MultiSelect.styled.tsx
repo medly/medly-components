@@ -4,8 +4,7 @@ import TextField from '../TextField';
 import { InputSuffixStyled } from './InputSuffix/InputSuffix.styled';
 import { SelectWrapperProps } from './types';
 
-const getDefaultStyle = ({ theme, areOptionsVisible, disabled, isSearchable }: SelectWrapperProps) => {
-    return css`
+const getDefaultStyle = ({ theme, areOptionsVisible, disabled, isSearchable }: SelectWrapperProps) => css`
         ${TextField.Style} {
             margin: 0;
 
@@ -27,30 +26,21 @@ const getDefaultStyle = ({ theme, areOptionsVisible, disabled, isSearchable }: S
                 padding-right: 1.6rem;
             }
         }
-        ${InputSuffixStyled} {
-            > ${ChevronDownIcon.Style} {
-                transition: all 100ms ease-out;
-                transform: ${areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)'};
-                * {
-                    transition: fill 100ms ease-out;
-                    fill: ${theme.colors.black};
-                }
+        ${InputSuffixStyled} > ${ChevronDownIcon.Style} {
+            transform: ${areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)'};
+            * {
+                fill: ${theme.colors.black};
             }
         }
     `;
-};
 
-const getChipStyle = (color: string) => {
-    return css`
-        ${InputSuffixStyled} {
-            > ${ChevronDownIcon.Style} {
-                * {
-                    fill: ${color};
-                }
+const getChipStyle = (color: string) => css`
+        ${InputSuffixStyled} > ${ChevronDownIcon.Style} {
+            * {
+                fill: ${color};
             }
         }
     `;
-};
 
 export const Wrapper = styled.div<SelectWrapperProps>`
     position: relative;

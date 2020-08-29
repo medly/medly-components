@@ -227,29 +227,31 @@ exports[`MultiSelect component should render correctly with all the props given 
 
 .c13 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
-  font-size: 2rem;
 }
 
 .c13 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
 .c14 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c14 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -365,16 +367,12 @@ exports[`MultiSelect component should render correctly with all the props given 
 }
 
 .c0 .c8 > .c12 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
 .c0 .c8 > .c12 * {
-  -webkit-transition: fill 100ms ease-out;
-  transition: fill 100ms ease-out;
   fill: #13181D;
 }
 
@@ -710,15 +708,16 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 
 .c11 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c11 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -773,16 +772,12 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 }
 
 .c0 .c8 > .c10 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
 .c0 .c8 > .c10 * {
-  -webkit-transition: fill 100ms ease-out;
-  transition: fill 100ms ease-out;
   fill: #13181D;
 }
 
@@ -844,15 +839,16 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 exports[`MultiSelect component should render properly with M size 1`] = `
 .c12 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c12 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -881,30 +877,22 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c17 .c19 > .c11 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
 .c17 .c19 > .c11 * {
-  -webkit-transition: fill 100ms ease-out;
-  transition: fill 100ms ease-out;
   fill: #13181D;
 }
 
 .c18 .c19 > .c11 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .c18 .c19 > .c11 * {
-  -webkit-transition: fill 100ms ease-out;
-  transition: fill 100ms ease-out;
   fill: #13181D;
 }
 
@@ -1389,15 +1377,16 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 exports[`MultiSelect component should render properly with S size 1`] = `
 .c12 {
   overflow: visible;
-  box-sizing: border-box;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: inherit;
-  font-size: 2.4rem;
 }
 
 .c12 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -1426,30 +1415,22 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c17 .c19 > .c11 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
 .c17 .c19 > .c11 * {
-  -webkit-transition: fill 100ms ease-out;
-  transition: fill 100ms ease-out;
   fill: #13181D;
 }
 
 .c18 .c19 > .c11 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .c18 .c19 > .c11 * {
-  -webkit-transition: fill 100ms ease-out;
-  transition: fill 100ms ease-out;
   fill: #13181D;
 }
 
