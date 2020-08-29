@@ -6,6 +6,10 @@ const SearchBox: SearchBoxTheme = {
         S: '4rem',
         M: '4.8rem'
     },
+    textVariant: {
+        S: 'body2',
+        M: 'body1'
+    },
     textColor: colors.black,
     borderRadius: {
         S: {

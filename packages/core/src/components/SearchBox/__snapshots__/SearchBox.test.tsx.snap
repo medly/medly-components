@@ -297,7 +297,13 @@ exports[`SearchBox options should render options when user search option specifi
 
 .c0 input {
   font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   padding-left: 2rem;
 }
 
@@ -490,7 +496,6 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   padding-right: 0.3rem;
   border-bottom: 1.5px solid;
   border-color: #98A7B7;
-  border-radius: 4rem;
   -webkit-transition: border-color 100ms,box-shadow 100ms;
   transition: border-color 100ms,box-shadow 100ms;
 }
@@ -546,7 +551,13 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 
 .c0 input {
   font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   padding-left: 2.4rem;
 }
 
@@ -714,7 +725,6 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   border-radius: 4rem;
   border-bottom: 1.5px solid;
   border-color: #98A7B7;
-  border-radius: 4rem;
   -webkit-transition: border-color 100ms,box-shadow 100ms;
   transition: border-color 100ms,box-shadow 100ms;
 }
@@ -770,7 +780,13 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 
 .c0 input {
   font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
   line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   padding-left: 2rem;
 }
 

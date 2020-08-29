@@ -1,3 +1,5 @@
+import { FontVariants } from '../font/types';
+
 export type Size = 'S' | 'M';
 
 export type SearchBoxTheme = {
@@ -10,6 +12,9 @@ export type SearchBoxTheme = {
             default: string;
             active: string;
         };
+    };
+    textVariant: {
+        [k in Size]: FontVariants;
     };
     bgColor: {
         default: string;
