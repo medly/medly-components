@@ -3,10 +3,11 @@
 exports[`Checkbox component should render correctly with bottom labelPosition 1`] = `
 .c8 {
   overflow: visible;
+  box-sizing: border-box;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
   cursor: inherit;
+  font-size: 2.4rem;
 }
 
 .c8 * {
@@ -191,10 +192,11 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
 exports[`Checkbox component should render correctly with checked false and active state 1`] = `
 .c8 {
   overflow: visible;
+  box-sizing: border-box;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
   cursor: inherit;
+  font-size: 2.4rem;
 }
 
 .c8 * {
@@ -379,10 +381,11 @@ exports[`Checkbox component should render correctly with checked false and activ
 exports[`Checkbox component should render correctly with checked false and disabled state 1`] = `
 .c8 {
   overflow: visible;
+  box-sizing: border-box;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
   cursor: inherit;
+  font-size: 2.4rem;
 }
 
 .c8 * {
@@ -565,10 +568,11 @@ exports[`Checkbox component should render correctly with checked false and disab
 exports[`Checkbox component should render correctly with checked false and hasError state 1`] = `
 .c8 {
   overflow: visible;
+  box-sizing: border-box;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
   cursor: inherit;
+  font-size: 2.4rem;
 }
 
 .c8 * {
@@ -753,10 +757,11 @@ exports[`Checkbox component should render correctly with checked false and hasEr
 exports[`Checkbox component should render correctly with checked false and indeterminate state 1`] = `
 .c8 {
   overflow: visible;
+  box-sizing: border-box;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
   cursor: inherit;
+  font-size: 2.4rem;
 }
 
 .c8 * {
@@ -949,10 +954,11 @@ exports[`Checkbox component should render correctly with checked false and indet
 exports[`Checkbox component should render correctly with checked true and active state 1`] = `
 .c8 {
   overflow: visible;
+  box-sizing: border-box;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
   cursor: inherit;
+  font-size: 2.4rem;
 }
 
 .c8 * {
@@ -1139,10 +1145,11 @@ exports[`Checkbox component should render correctly with checked true and active
 exports[`Checkbox component should render correctly with checked true and disabled state 1`] = `
 .c8 {
   overflow: visible;
+  box-sizing: border-box;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
   cursor: inherit;
+  font-size: 2.4rem;
 }
 
 .c8 * {
@@ -1326,10 +1333,11 @@ exports[`Checkbox component should render correctly with checked true and disabl
 exports[`Checkbox component should render correctly with checked true and hasError state 1`] = `
 .c8 {
   overflow: visible;
+  box-sizing: border-box;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
   cursor: inherit;
+  font-size: 2.4rem;
 }
 
 .c8 * {
@@ -1516,10 +1524,11 @@ exports[`Checkbox component should render correctly with checked true and hasErr
 exports[`Checkbox component should render correctly with checked true and indeterminate state 1`] = `
 .c8 {
   overflow: visible;
+  box-sizing: border-box;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
   cursor: inherit;
+  font-size: 2.4rem;
 }
 
 .c8 * {
@@ -1713,10 +1722,11 @@ exports[`Checkbox component should render correctly with checked true and indete
 exports[`Checkbox component should render correctly with left labelPosition 1`] = `
 .c8 {
   overflow: visible;
+  box-sizing: border-box;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
   cursor: inherit;
+  font-size: 2.4rem;
 }
 
 .c8 * {
@@ -1905,10 +1915,11 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
 exports[`Checkbox component should render correctly with right labelPosition 1`] = `
 .c8 {
   overflow: visible;
+  box-sizing: border-box;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
   cursor: inherit;
+  font-size: 2.4rem;
 }
 
 .c8 * {
@@ -2097,10 +2108,11 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
 exports[`Checkbox component should render correctly with top labelPosition 1`] = `
 .c8 {
   overflow: visible;
+  box-sizing: border-box;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
   cursor: inherit;
+  font-size: 2.4rem;
 }
 
 .c8 * {

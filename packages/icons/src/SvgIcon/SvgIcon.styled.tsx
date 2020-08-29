@@ -11,6 +11,7 @@ const hoverStyle = ({ theme, hoverBgColor, hoverIconColor }: SvgIconProps) => cs
 `;
 
 const solidStyle = ({ size, theme, disabled, bgColor, withHoverEffect }: SvgIconProps) => css`
+    font-size: calc(${theme.icon.sizes[size].iconSize} + (2 * ${theme.icon.sizes[size].padding}));
     padding: ${theme.icon.sizes[size].padding};
     border-radius: ${theme.icon.borderRadius};
     background-color: ${disabled ? theme.icon.colors.disabled.bgColor : bgColor || theme.icon.colors.default.bgColor};
@@ -18,13 +19,17 @@ const solidStyle = ({ size, theme, disabled, bgColor, withHoverEffect }: SvgIcon
     ${!disabled && withHoverEffect && hoverStyle}
 `;
 
+const flatStyle = ({ size, theme }: SvgIconProps) => css`
+    font-size: ${theme.icon.sizes[size].iconSize};
+`;
+
 export const SvgIconStyled = styled(InjectClassName).attrs(({ theme: { icon: { colors, sizes } } }) => ({
     colors,
     sizes
 }))<SvgIconProps>`
     overflow: visible;
+    box-sizing: border-box;
     transition: all 100ms linear;
-    font-size: ${({ sizes, size }) => sizes[size].iconSize};
     margin: ${({ margin }) => margin};
     cursor: ${({ onClick, disabled }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
     * {
@@ -32,7 +37,7 @@ export const SvgIconStyled = styled(InjectClassName).attrs(({ theme: { icon: { c
         fill: ${({ disabled, colors, iconColor }) => (disabled ? colors.disabled.iconColor : iconColor || colors.default.iconColor)};
     }
 
-    ${({ variant }) => variant === 'solid' && solidStyle}
+    ${({ variant }) => (variant === 'solid' ? solidStyle : flatStyle)}
 `;
 
 SvgIconStyled.displayName = 'SvgIcon';
