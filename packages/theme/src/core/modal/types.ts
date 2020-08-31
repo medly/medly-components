@@ -3,6 +3,7 @@ export interface ModalTheme {
     shadowColor: string;
     headerColor: string;
     backgroundColor: string;
+    borderRadius: string;
     scrollbarThumbColor: string;
     closeIcon: {
         borderRadius: string;

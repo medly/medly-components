@@ -4,7 +4,7 @@ import { Props } from './types';
 export const Popup = styled('div')<Props>`
     background: ${({ theme }) => theme.modal.backgroundColor};
     padding: ${({ theme }) => `${theme.spacing.L1} ${theme.spacing.M2}`};
-    border-radius: ${({ theme }) => theme.spacing.M1};
+    border-radius: ${({ theme }) => theme.modal.borderRadius};
     overflow: hidden;
     overflow-y: none;
     display: flex;
