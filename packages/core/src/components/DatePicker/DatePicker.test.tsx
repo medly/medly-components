@@ -128,7 +128,7 @@ describe('DatePicker component', () => {
             expect(getByText('Please fill in this field.')).toBeInTheDocument();
         });
         it('should return error message with enter valid date if date entered is incomplete', () => {
-            const { inputEl, getByText } = renderComponent();
+            const { inputEl, getByText } = renderComponent(true);
             changeInputMaskValue(inputEl, '04/31');
             TestUtils.Simulate.blur(inputEl);
             expect(getByText('Enter valid date')).toBeInTheDocument();

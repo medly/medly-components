@@ -68,7 +68,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             const value = event.target.value;
             setActive(false);
             toggleCalendar(false);
-            if (parseToDate(value, displayFormat).toString() === 'Invalid Date') {
+            if (parseToDate(value, displayFormat).toString() === 'Invalid Date' && required) {
                 setErrorText('Enter valid date');
             }
         }, []),
