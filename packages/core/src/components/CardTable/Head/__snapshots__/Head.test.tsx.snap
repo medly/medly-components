@@ -9,14 +9,16 @@ exports[`Card Table Head should render properly with dark background 1`] = `
 
 .c7 {
   overflow: visible;
+  font-size: 2rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2rem;
   cursor: inherit;
 }
 
 .c7 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -186,14 +188,16 @@ exports[`Card Table Head should render properly with light background 1`] = `
 
 .c7 {
   overflow: visible;
+  font-size: 2rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2rem;
   cursor: inherit;
 }
 
 .c7 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 

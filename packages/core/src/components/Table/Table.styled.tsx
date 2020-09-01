@@ -25,7 +25,7 @@ export const TableStyled = styled('table')<TableStyledProps>`
     border-spacing: 0;
     margin: 0;
 
-    * {
+    *:not(svg) {
         box-sizing: border-box;
     }
 

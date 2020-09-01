@@ -23,12 +23,13 @@ export const SvgIconStyled = styled(InjectClassName).attrs(({ theme: { icon: { c
     sizes
 }))<SvgIconProps>`
     overflow: visible;
+    font-size: ${({ theme, size }) => theme.icon.sizes[size].iconSize};
     transition: all 100ms linear;
-    font-size: ${({ sizes, size }) => sizes[size].iconSize};
     margin: ${({ margin }) => margin};
     cursor: ${({ onClick, disabled }) => (disabled ? 'not-allowed' : onClick ? 'pointer' : 'inherit')};
     * {
         fill-opacity: 1;
+        transition: all 100ms linear;
         fill: ${({ disabled, colors, iconColor }) => (disabled ? colors.disabled.iconColor : iconColor || colors.default.iconColor)};
     }
 

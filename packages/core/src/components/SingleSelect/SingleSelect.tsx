@@ -132,8 +132,6 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             handleOuterClick();
         }, wrapperRef);
 
-        const Suffix = useCallback(() => <ChevronDownIcon size={inputProps.size} />, [inputProps.size]);
-
         return (
             <Styled.Wrapper
                 id={`${selectId}-wrapper`}
@@ -157,7 +155,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                     value={inputValue}
                     ref={inputRef}
                     onChange={handleInputChange}
-                    suffix={Suffix}
+                    suffix={ChevronDownIcon}
                     onKeyPress={handleKeyPress}
                     {...inputProps}
                 />

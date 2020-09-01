@@ -48,7 +48,7 @@ export const TitleRow: React.FC<Props> = React.memo(props => {
             gridTemplateColumns={getGridTemplateColumns(columns)}
         >
             <ExpansionCell isRowExpanded={isRowExpanded} showPadding={isLoading} tableSize={tableSize}>
-                {isLoading ? <LoadingDiv /> : <ExpandMoreIcon size="L" />}
+                {isLoading ? <LoadingDiv /> : <ExpandMoreIcon size={tableSize === 'L' ? 'M' : 'S'} />}
             </ExpansionCell>
             {(isRowSelectable || isRowExpandable) && (
                 <RowActionsCell

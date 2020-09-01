@@ -91,14 +91,16 @@ exports[`CardTable should render properly with grey background 1`] = `
 
 .c8 {
   overflow: visible;
+  font-size: 2rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2rem;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -365,14 +367,16 @@ exports[`CardTable should render properly with white background 1`] = `
 
 .c8 {
   overflow: visible;
+  font-size: 2rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2rem;
   cursor: inherit;
 }
 
 .c8 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 

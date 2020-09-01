@@ -85,6 +85,7 @@ exports[`FileInput component should render properly with all props 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   padding: 0.8rem;
   color: #435465;
   background-clip: padding-box;
@@ -182,6 +183,7 @@ exports[`FileInput component should render properly with default props 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   padding: 0.8rem;
   color: #435465;
   background-clip: padding-box;

@@ -3,14 +3,16 @@
 exports[`SideNav should render properly 1`] = `
 .c5 {
   overflow: visible;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
   cursor: inherit;
 }
 
 .c5 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 

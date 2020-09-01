@@ -1,5 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
-import { css, styled } from '@medly-components/utils';
+import { css, getFontStyle, styled } from '@medly-components/utils';
 import Options from '../SingleSelect/Options';
 import { SearchIconWrapper } from './styles/icons';
 import { getOptionsStyles } from './styles/options';
@@ -11,8 +11,7 @@ const getSmallSearchBoxStyle = ({ theme, areOptionsVisible }: Props & { areOptio
     return css`
         border-radius: ${areOptionsVisible ? `${border} ${border} 0 0` : border};
         input {
-            font-size: 1.4rem;
-            line-height: 2.2rem;
+            ${getFontStyle({ theme, fontVariant: theme.searchBox.textVariant.S })}
             padding-left: 2rem;
         }
         ${SvgIcon} {
@@ -27,8 +26,7 @@ const getMediumSearchBoxStyle = ({ theme, areOptionsVisible }: Props & { areOpti
         border-radius: ${areOptionsVisible ? `${border} ${border} 0 0` : border};
         padding-right: 0.3rem;
         input {
-            font-size: 1.6rem;
-            line-height: 2.6rem;
+            ${getFontStyle({ theme, fontVariant: theme.searchBox.textVariant.M })}
             padding-left: 2.4rem;
         }
         ${SvgIcon} {
@@ -46,7 +44,6 @@ const activeSearchBoxStyle = ({ theme: { searchBox } }: Props) => css`
 const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: Props) => css`
     border-bottom: 1.5px solid;
     border-color: ${searchBox.borderColor.default};
-    border-radius: 4rem;
     transition: border-color 100ms, box-shadow 100ms;
     &:focus-within {
         ${getBorderAndBoxShadow(searchBox.borderColor.active, searchBox.boxShadow.active)};

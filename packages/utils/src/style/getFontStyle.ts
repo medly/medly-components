@@ -10,5 +10,6 @@ export const getFontStyle = ({ fontVariant, theme }: { theme: Theme; fontVariant
         font-weight: ${weights[fontWeight]};
         letter-spacing: ${letterSpacing};
         line-height: ${lineHeight};
+        font-family: ${defaults.fontFamily};
     `;
 };

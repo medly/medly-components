@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.5](https://github.com/medly/medly-components/compare/@medly-components/utils@1.3.4...@medly-components/utils@1.3.5) (2020-08-29)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.3.4](https://github.com/medly/medly-components/compare/@medly-components/utils@1.3.3...@medly-components/utils@1.3.4) (2020-08-29)
+
+
+### Bug Fixes
+
+* fix font family issue in textfield component ([1b651b3](https://github.com/medly/medly-components/commit/1b651b3450268b302999304e210240b6136d85a9))
+
+
+
+
+
 ## [1.3.3](https://github.com/medly/medly-components/compare/@medly-components/utils@1.3.2...@medly-components/utils@1.3.3) (2020-08-27)
 
 **Note:** Version bump only for package @medly-components/utils
