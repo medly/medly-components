@@ -4,13 +4,22 @@ import { Calendar } from './Calendar';
 import { CALENDAR_MONTHS } from './constants';
 import { getMonthAndYearFromDate } from './helper';
 
+const getDateValues = (container: HTMLElement) => {
+    const inputEl = container.getElementsByTagName('input');
+    const month = inputEl[0].value;
+    const year = inputEl[1].value;
+    return {
+        month,
+        year
+    };
+};
+
 describe('Calendar Component', () => {
     afterAll(cleanup);
     it('should render given date', () => {
         const date = new Date(2020, 0, 1),
             { container } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
 
-        expect(container).toHaveTextContent('Jan 2020');
         expect(container).toMatchSnapshot();
     });
 
@@ -41,12 +50,14 @@ describe('Calendar Component', () => {
         expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
     });
 
-    it('should render previous month on clicking left arrow when current month is other than Jan', () => {
+    it.only('should render previous month on clicking left arrow when current month is other than Jan', () => {
         const date = new Date(2020, 1, 1),
             { container, getByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
 
         fireEvent.click(getByText('<'));
-        expect(container).toHaveTextContent(`Jan 2020`);
+        const { month, year } = getDateValues(container);
+        expect(month).toEqual('Jan');
+        expect(year).toEqual('2020');
     });
 
     it('should render dec month on clicking left arrow when current month is Jan', () => {
@@ -54,7 +65,9 @@ describe('Calendar Component', () => {
             { container, getByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
 
         fireEvent.click(getByText('<'));
-        expect(container).toHaveTextContent(`Dec 2019`);
+        const { month, year } = getDateValues(container);
+        expect(month).toEqual('Dec');
+        expect(year).toEqual('2019');
     });
 
     it('should render next month on clicking right arrow when current month is other than Dec', () => {
@@ -62,7 +75,9 @@ describe('Calendar Component', () => {
             { container, getByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
 
         fireEvent.click(getByText('>'));
-        expect(container).toHaveTextContent(`Mar 2020`);
+        const { month, year } = getDateValues(container);
+        expect(month).toEqual('Mar');
+        expect(year).toEqual('2020');
     });
 
     it('should render Jan month on clicking right arrow when current month is Dec', () => {
@@ -70,7 +85,9 @@ describe('Calendar Component', () => {
             { container, getByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
 
         fireEvent.click(getByText('>'));
-        expect(container).toHaveTextContent(`Jan 2021`);
+        const { month, year } = getDateValues(container);
+        expect(month).toEqual('Jan');
+        expect(year).toEqual('2021');
     });
 
     it('should render 29 days in feb month in leap year', () => {

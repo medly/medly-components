@@ -3,14 +3,16 @@
 exports[`DatePicker component should render properly when value is of date type 1`] = `
 .c11 {
   overflow: visible;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
   cursor: pointer;
 }
 
 .c11 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -32,6 +34,7 @@ exports[`DatePicker component should render properly when value is of date type 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
@@ -184,10 +187,8 @@ exports[`DatePicker component should render properly when value is of date type 
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  padding: 0.8rem;
-  color: #435465;
 }
 
 .c6:focus {
@@ -341,7 +342,7 @@ exports[`DatePicker component should render properly when value is of date type 
           </svg>
         </span>
       </div>
-
+      
     </div>
   </div>
 </div>
@@ -350,14 +351,16 @@ exports[`DatePicker component should render properly when value is of date type 
 exports[`DatePicker component should render properly when value is of string type 1`] = `
 .c11 {
   overflow: visible;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  font-size: 2.4rem;
   cursor: pointer;
 }
 
 .c11 * {
   fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
   fill: #607890;
 }
 
@@ -379,6 +382,7 @@ exports[`DatePicker component should render properly when value is of string typ
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
@@ -531,10 +535,8 @@ exports[`DatePicker component should render properly when value is of string typ
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.2rem;
+  line-height: 2.6rem;
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  padding: 0.8rem;
-  color: #435465;
 }
 
 .c6:focus {
@@ -688,7 +690,7 @@ exports[`DatePicker component should render properly when value is of string typ
           </svg>
         </span>
       </div>
-
+      
     </div>
   </div>
 </div>

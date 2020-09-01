@@ -14,6 +14,7 @@ interface DatePickerVariant {
 export interface DatePickerTheme {
     selectedDateBgColor: string;
     selectedDateColor: string;
+    hoveredDateColor: string;
     nonActiveMonthDateColor: string;
     filled: DatePickerVariant;
     outlined: DatePickerVariant;

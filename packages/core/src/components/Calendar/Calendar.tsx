@@ -68,27 +68,27 @@ export const Calendar: React.FC<Props> = React.memo(({ date, onChange, minSelect
     return (
         <Card variant="solid" {...restProps}>
             <Styled.Header>
+                <Styled.MonthAndYearSelection>
+                    <SingleSelect
+                        id={`${restProps.id}-month-selector`}
+                        value={month}
+                        options={monthOptions}
+                        onChange={handleMonthChange}
+                        placeholder="Month"
+                        variant="outlined"
+                    />
+                    <SingleSelect
+                        id={`${restProps.id}-year-selector`}
+                        value={year}
+                        options={yearOptions}
+                        onChange={handleYearChange}
+                        placeholder="Year"
+                        variant="outlined"
+                    />
+                </Styled.MonthAndYearSelection>
                 <Button variant="flat" disabled={isPrevBtnDisabled} onClick={handlePreviousBtnClick}>{`<`}</Button>
-                <Text textVariant="h3">{`${CALENDAR_MONTHS[month]} ${year}`}</Text>
                 <Button variant="flat" disabled={isNextBtnDisabled} onClick={handleNextBtnClick}>{`>`}</Button>
             </Styled.Header>
-            <Styled.MonthAndYearSelection>
-                <SingleSelect
-                    id={`${restProps.id}-month-selector`}
-                    value={month}
-                    options={monthOptions}
-                    onChange={handleMonthChange}
-                    placeholder="Month"
-                />
-                <SingleSelect
-                    id={`${restProps.id}-year-selector`}
-                    value={year}
-                    options={yearOptions}
-                    onChange={handleYearChange}
-                    placeholder="Year"
-                />
-            </Styled.MonthAndYearSelection>
-
             <Styled.CalendarGrid>
                 {weekDays}
                 {getCalendarDates(month, year).map((dateArray, index) => {

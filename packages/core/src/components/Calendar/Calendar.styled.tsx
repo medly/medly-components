@@ -1,4 +1,5 @@
 import { centerAligned, css, styled } from '@medly-components/utils';
+import { ButtonStyled } from '../Button/Button.styled';
 import TextField from '../TextField';
 import { DateProps } from './types';
 
@@ -7,6 +8,9 @@ export const Header = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    ${ButtonStyled} {
+        padding: 1rem;
+    }
 `;
 
 export const MonthAndYearSelection = styled.div`
@@ -37,7 +41,11 @@ export const MonthAndYearSelection = styled.div`
 
 export const CalendarGrid = styled.div`
     display: grid;
-    grid-template: repeat(7, auto) / repeat(7, auto);
+    grid-template: repeat(7, 4rem) / repeat(7, 4rem);
+
+    span {
+        text-align: center;
+    }
 
     & > * {
         user-select: none;
@@ -59,6 +67,8 @@ export const Date = styled('button').attrs({ type: 'button' })<DateProps>`
     text-decoration: none;
     cursor: pointer;
     border-radius: 5px;
+    padding: 0;
+    margin: 6px;
 
     &:focus {
         outline: none;
@@ -67,6 +77,11 @@ export const Date = styled('button').attrs({ type: 'button' })<DateProps>`
     &:disabled {
         cursor: not-allowed;
         color: ${({ theme }) => theme.datePicker.nonActiveMonthDateColor};
+    }
+
+    &:hover {
+        background-color: ${({ theme }) => theme.datePicker.hoveredDateColor};
+        border-radius: 50%;
     }
 
     ${props => props.isSelected && activeDate()};

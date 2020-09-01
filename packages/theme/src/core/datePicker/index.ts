@@ -31,6 +31,7 @@ const iconStyles = {
 const datePicker: DatePickerTheme = {
     selectedDateBgColor: colors.blue[500],
     selectedDateColor: colors.white,
+    hoveredDateColor: colors.grey[100],
     nonActiveMonthDateColor: colors.grey[400],
     outlined: {
         icon: iconStyles
