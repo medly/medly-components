@@ -7,6 +7,7 @@ const variants: Props['variant'][] = ['outlined', 'filled'];
 
 export const Basic = () => {
     const [date, setDate] = useState(null);
+    const minDate = new Date();
 
     return (
         <DatePicker
@@ -19,7 +20,7 @@ export const Basic = () => {
             label={text('Label', 'Date of Birth')}
             variant={select('variant', variants, 'outlined')}
             required={boolean('Required', false)}
-            minSelectableDate={new Date(2020, 11, 1)}
+            minSelectableDate={new Date(minDate.getFullYear(), minDate.getMonth(), minDate.getDate())}
             maxSelectableDate={new Date(2021, 11, 30)}
         />
     );

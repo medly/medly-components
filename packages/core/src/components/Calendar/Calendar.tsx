@@ -94,7 +94,8 @@ export const Calendar: React.FC<Props> = React.memo(({ date, onChange, minSelect
                 {getCalendarDates(month, year).map((dateArray, index) => {
                     const _date = new Date(dateArray[0], dateArray[1], dateArray[2]),
                         isSelected = isSameDay(_date, date),
-                        isInActiveMonth = isSameMonth(_date, new Date(year, month, 1));
+                        isInActiveMonth = isSameMonth(_date, new Date(year, month, 1)),
+                        isCurrentDate = isSameDay(_date, minSelectableDate);
 
                     return (
                         <Styled.Date
@@ -102,6 +103,7 @@ export const Calendar: React.FC<Props> = React.memo(({ date, onChange, minSelect
                             title={_date.toDateString()}
                             isInActiveMonth={isInActiveMonth}
                             isSelected={isSelected}
+                            isCurrentDate={isCurrentDate}
                             disabled={_date > maxSelectableDate || _date < minSelectableDate}
                             onClick={handleDateChange(_date)}
                         >

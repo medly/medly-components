@@ -33,6 +33,8 @@ const datePicker: DatePickerTheme = {
     selectedDateColor: colors.white,
     hoveredDateColor: colors.grey[100],
     nonActiveMonthDateColor: colors.grey[400],
+    currentDateBorderColor: colors.grey[300],
+    borderRadius: '50%',
     outlined: {
         icon: iconStyles
     },

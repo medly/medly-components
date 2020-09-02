@@ -56,6 +56,13 @@ export const CalendarGrid = styled.div`
 const activeDate = () => css`
     background-color: ${({ theme }) => theme.datePicker.selectedDateBgColor};
     color: ${({ theme }) => theme.datePicker.selectedDateColor};
+    &:hover {
+        background-color: ${({ theme }) => theme.datePicker.selectedDateBgColor};
+        color: ${({ theme }) => theme.datePicker.selectedDateColor};
+    }
+`;
+const currentDate = () => css`
+    border-color: ${({ theme }) => theme.datePicker.currentDateBorderColor};
 `;
 const nonActiveMonthDate = () => css`
     color: ${({ theme }) => theme.datePicker.nonActiveMonthDateColor};
@@ -63,12 +70,15 @@ const nonActiveMonthDate = () => css`
 
 export const Date = styled('button').attrs({ type: 'button' })<DateProps>`
     background-color: transparent;
-    border: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: ${({ theme }) => theme.datePicker.borderRadius};
     padding: 0;
-    margin: 6px;
+    margin: 4px;
+    text-align: center;
 
     &:focus {
         outline: none;
@@ -81,11 +91,11 @@ export const Date = styled('button').attrs({ type: 'button' })<DateProps>`
 
     &:hover {
         background-color: ${({ theme }) => theme.datePicker.hoveredDateColor};
-        border-radius: 50%;
     }
 
-    ${props => props.isSelected && activeDate()};
-    ${props => !props.isInActiveMonth && nonActiveMonthDate()};
+    ${({ isSelected }) => isSelected && activeDate()};
+    ${({ isCurrentDate }) => isCurrentDate && currentDate()};
+    ${({ isInActiveMonth }) => !isInActiveMonth && nonActiveMonthDate()};
 
     ${centerAligned()}
 `;
