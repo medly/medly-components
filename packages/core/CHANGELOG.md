@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.22.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.21.0...@medly-components/core@1.22.0) (2020-09-02)
+
+
+### Bug Fixes
+
+* full width in text field component ([936f0c2](https://github.com/medly/medly-components/commit/936f0c251ca969dd1cdf71f678e67aa147574630))
+
+
+### Features
+
+* move modal border radius to theme ([9c74ab1](https://github.com/medly/medly-components/commit/9c74ab13a44a07059063dc6e14ebc42f7d79e8ab))
+
+
+
+
+
 # [1.21.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.20.1...@medly-components/core@1.21.0) (2020-08-29)
 
 

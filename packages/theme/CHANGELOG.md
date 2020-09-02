@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.13.0...@medly-components/theme@1.14.0) (2020-09-02)
+
+
+### Features
+
+* move modal border radius to theme ([9c74ab1](https://github.com/medly/medly-components/commit/9c74ab13a44a07059063dc6e14ebc42f7d79e8ab))
+
+
+
+
+
 # [1.13.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.12.0...@medly-components/theme@1.13.0) (2020-08-29)
 
 
