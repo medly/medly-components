@@ -53,9 +53,6 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -408,9 +405,6 @@ exports[`TextField should render properly with M size 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -705,9 +699,6 @@ exports[`TextField should render properly with S size 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -985,9 +976,6 @@ exports[`TextField should render properly with default props 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -1266,9 +1254,6 @@ exports[`TextField with filled variant and with label should render default stat
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -1547,9 +1532,6 @@ exports[`TextField with filled variant and with label should render disabled sta
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   cursor: not-allowed;
@@ -1810,9 +1792,6 @@ exports[`TextField with filled variant and with label should render focus state 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -2091,9 +2070,6 @@ exports[`TextField with filled variant and without label should render default s
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -2366,9 +2342,6 @@ exports[`TextField with filled variant and without label should render disabled 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   cursor: not-allowed;
@@ -2623,9 +2596,6 @@ exports[`TextField with filled variant and without label should render focus sta
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -2909,9 +2879,6 @@ exports[`TextField with filled variant should render error state properly  1`] =
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -3306,9 +3273,6 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -3620,9 +3584,6 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -3914,9 +3875,6 @@ exports[`TextField with outlined variant and with label should render default st
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem;
   background-color: transparent;
 }
@@ -4209,9 +4167,6 @@ exports[`TextField with outlined variant and with label should render disabled s
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem;
   background-color: transparent;
   cursor: not-allowed;
@@ -4477,9 +4432,6 @@ exports[`TextField with outlined variant and with label should render focus stat
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem;
   background-color: transparent;
 }
@@ -4772,9 +4724,6 @@ exports[`TextField with outlined variant and without label should render default
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem;
   background-color: transparent;
 }
@@ -5061,9 +5010,6 @@ exports[`TextField with outlined variant and without label should render disable
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem;
   background-color: transparent;
   cursor: not-allowed;
@@ -5323,9 +5269,6 @@ exports[`TextField with outlined variant and without label should render focus s
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem;
   background-color: transparent;
 }
@@ -5623,9 +5566,6 @@ exports[`TextField with outlined variant should render error state properly  1`]
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem;
   background-color: transparent;
 }
@@ -6034,9 +5974,6 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem;
   background-color: transparent;
 }
@@ -6362,9 +6299,6 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem;
   background-color: transparent;
 }
@@ -6670,9 +6604,6 @@ exports[`TextField without label should render default state properly 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -6945,9 +6876,6 @@ exports[`TextField without label should render focus state properly  1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }

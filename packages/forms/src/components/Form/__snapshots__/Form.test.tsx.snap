@@ -638,9 +638,6 @@ exports[`Form should render properly with initial state 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -2934,9 +2931,6 @@ exports[`Form should render properly without initial state 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
