@@ -15,7 +15,7 @@ interface IconInfo {
 const getIcons = (DIR: string): IconInfo[] =>
     readdirSync(ASSETS_DIR + DIR).map(filenameWithExt => ({
         filenameWithExt,
-        iconName: `${filenameWithExt.split('_24')[0].split('.')[0].split('_').map(capitalize).join('')}Icon`
+        iconName: `${filenameWithExt.split('_24px')[0].split('.')[0].split('_').map(capitalize).join('')}Icon`
     }));
 
 const getDirectories = () => readdirSync(ASSETS_DIR).map(DIR => DIR + '/'),
