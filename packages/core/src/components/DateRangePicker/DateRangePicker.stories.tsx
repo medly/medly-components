@@ -1,10 +1,8 @@
-import { boolean, number, select, text } from '@storybook/addon-knobs';
+import { boolean, select } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
 import { Placement } from '../Popover/types';
 import { DateRangePicker } from './DateRangePicker';
-import { Props } from './types';
 
-const labelPosition: Props['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
 const placement: Placement[] = [
     'top-start',
     'top',
@@ -27,13 +25,11 @@ export const Basic = () => {
         <DateRangePicker
             value={dates}
             onChange={setDates}
+            size={select('Size', ['S', 'M'], 'S')}
             placement={select('Placement', placement, 'bottom-start')}
+            variant={select('Variant', ['filled', 'outlined'], 'filled')}
             fullWidth={boolean('Full Width', false)}
-            minWidth={number('Min Width', 300)}
             disabled={boolean('Disabled', false)}
-            label={text('Label', 'Period')}
-            labelPosition={select('Label Position', labelPosition, 'left')}
-            required={boolean('Required', false)}
             minSelectableDate={new Date(2020, 1, 1)}
             maxSelectableDate={new Date(2022, 2, 15)}
         />

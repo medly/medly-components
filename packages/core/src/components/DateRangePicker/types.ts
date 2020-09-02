@@ -1,6 +1,5 @@
 import { DateRangeInput } from '@datepicker-react/styled';
-import { GetComponentProps, Omit } from '@medly-components/utils';
-import { LabelPositions } from '../Label/types';
+import { GetComponentProps, HTMLProps, Omit } from '@medly-components/utils';
 import { Placement } from '../Popover/types';
 
 type PickerProps = Omit<
@@ -9,32 +8,18 @@ type PickerProps = Omit<
 >;
 
 export interface Props extends PickerProps {
-    /** Label Position
-     * @default left
-     */
-    labelPosition?: LabelPositions;
-    /** Takes full width of the parent component
-     * @default false
-     */
+    /** Variants */
+    variant?: 'outlined' | 'filled';
+    /** Size */
+    size?: 'S' | 'M';
+    /** Takes full width of the parent component */
     fullWidth?: boolean;
-    /** Disable date selection
-     * @default false
-     */
+    /** Disable date selection */
     disabled?: boolean;
-    /** To be used when it is required in any form
-     * @default false
-     */
-    required?: boolean;
-    /** Date picker label
-     * @default
-     */
-    label?: string;
-    /** Min width of the component */
-    minWidth?: number;
-    /** Placeholder for input
-     * @default bottom-start
-     */
+    /** Placeholder for input */
     placement?: Placement;
+    /** Min width in px/rem/% (1rem = 10px)*/
+    minWidth?: string;
     /** Selected date range */
     value: { startDate: Date | null; endDate: Date | null };
     /** Minimum selectable Date */
@@ -59,8 +44,9 @@ export interface Props extends PickerProps {
         | 'yyyy-MM-dd';
 }
 
-export interface StyledProps {
-    placement?: Placement;
+export interface StyledProps extends Omit<HTMLProps<HTMLDivElement>, 'size'> {
+    size?: 'S' | 'M';
+    placement: Placement;
     fullWidth?: boolean;
     disabled?: boolean;
 }

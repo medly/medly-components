@@ -49,6 +49,9 @@ exports[`MultiSelect component should render correctly with all the props given 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   cursor: not-allowed;
@@ -514,6 +517,9 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }

@@ -155,6 +155,7 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
     padding: 0 ${({ size }) => (size === 'S' ? '1.2rem' : '1.6rem')};
     transition: all 100ms ease-out;
     cursor: text;
+    max-width: max-content;
 
     ${Label} {
         color: ${({ variant, textField }) => textField[variant].default.labelColor};

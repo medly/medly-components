@@ -69,6 +69,9 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -422,6 +425,9 @@ exports[`SingleSelect component should render properly when isSearchable is true
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -940,6 +946,9 @@ exports[`SingleSelect component with filled variant should render disabled state
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
   cursor: not-allowed;
@@ -1552,6 +1561,9 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   border-radius: 0.4rem 0.4rem 0 0;
   background-color: #eff2f4;
 }
@@ -1905,6 +1917,9 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   border-radius: 0.4rem;
   background-color: transparent;
   cursor: not-allowed;
@@ -2522,6 +2537,9 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   cursor: text;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   border-radius: 0.4rem;
   background-color: transparent;
 }

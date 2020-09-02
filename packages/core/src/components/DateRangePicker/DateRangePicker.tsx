@@ -1,26 +1,26 @@
 import { DateRangeInput, OnDatesChangeProps } from '@datepicker-react/styled';
+import { DateRangeIcon } from '@medly-components/icons';
 import { format } from 'date-fns';
 import React, { FC, useCallback, useMemo, useState } from 'react';
-import FieldWithLabel from '../FieldWithLabel';
+import * as Styled from '../TextField/Styled';
 import { DateRangePickerStyled } from './DateRangePicker.styled';
 import { Props } from './types';
 
 export const DateRangePicker: FC<Props> = React.memo(props => {
     const {
-        label,
-        labelPosition,
+        size,
+        variant,
         fullWidth,
         value,
         onChange,
-        required,
         disabled,
-        minWidth,
         placement,
         minSelectableDate,
         maxSelectableDate,
         displayFormat,
         ...restProps
     } = props;
+    const minWidth = props.minWidth || size === 'S' ? '25rem' : '29rem';
 
     const [showDatepicker, setShowDatepicker] = useState(null),
         dates = useMemo(() => ({ startDate: value.startDate || null, endDate: value.endDate || null }), [value.startDate, value.endDate]);
@@ -39,28 +39,34 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
         formatFn = useCallback((date: Date) => format(date, displayFormat), [displayFormat]);
 
     return (
-        <FieldWithLabel {...{ labelPosition, fullWidth, minWidth }}>
-            {label && (
-                <FieldWithLabel.Label {...{ required, labelPosition }} htmlFor={label}>
-                    {label}
-                </FieldWithLabel.Label>
-            )}
-            <DateRangePickerStyled placement={placement} data-testid="react-datepicker" disabled={disabled} onClick={handleClick}>
-                <DateRangeInput
-                    {...dates}
-                    {...restProps}
-                    displayFormat={formatFn}
-                    onDatesChange={handleDateChange}
-                    showClose={false}
-                    onFocusChange={setShowDatepicker}
-                    focusedInput={showDatepicker}
-                    showStartDateCalendarIcon={false}
-                    showEndDateCalendarIcon={false}
-                    minBookingDate={minSelectableDate}
-                    maxBookingDate={maxSelectableDate}
-                />
-            </DateRangePickerStyled>
-        </FieldWithLabel>
+        <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth}>
+            <Styled.InnerWrapper size={size} disabled={disabled} variant={variant}>
+                <DateRangePickerStyled
+                    size={size}
+                    placement={placement}
+                    data-testid="react-datepicker"
+                    disabled={disabled}
+                    onClick={handleClick}
+                >
+                    <Styled.Prefix size={size}>
+                        <DateRangeIcon size={size} />
+                    </Styled.Prefix>
+                    <DateRangeInput
+                        {...dates}
+                        {...restProps}
+                        displayFormat={formatFn}
+                        onDatesChange={handleDateChange}
+                        showClose={false}
+                        onFocusChange={setShowDatepicker}
+                        focusedInput={showDatepicker}
+                        showStartDateCalendarIcon={false}
+                        showEndDateCalendarIcon={false}
+                        minBookingDate={minSelectableDate}
+                        maxBookingDate={maxSelectableDate}
+                    />
+                </DateRangePickerStyled>
+            </Styled.InnerWrapper>
+        </Styled.OuterWrapper>
     );
 });
 
@@ -68,9 +74,8 @@ DateRangePicker.displayName = 'DateRangePicker';
 DateRangePicker.defaultProps = {
     displayFormat: 'MM/dd/yyyy',
     placement: 'bottom-start',
-    labelPosition: 'left',
     fullWidth: false,
-    required: false,
     disabled: false,
-    label: ''
+    size: 'M',
+    variant: 'filled'
 };
