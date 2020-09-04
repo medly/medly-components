@@ -1,6 +1,7 @@
 export * from './avatar/types';
 export * from './breadCrumbs/types';
 export * from './button/types';
+export * from './calendar/types';
 export * from './card/types';
 export * from './cardTable/types';
 export * from './checkbox/types';

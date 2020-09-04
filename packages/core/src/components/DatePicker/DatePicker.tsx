@@ -13,6 +13,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
     const {
             value,
             onChange,
+            size,
             displayFormat,
             label,
             fullWidth,
@@ -45,10 +46,10 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             return 31;
         }, []),
         onChangeHandler = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-            const value = event.target.value;
-            const values = value.split('/');
-            const month = values[0];
-            const day = values[1];
+            const value = event.target.value,
+                values = value.split('/'),
+                month = values[0],
+                day = values[1];
             if (parseInt(month) > 12) {
                 setErrorText('Enter valid Month');
             } else if (parseInt(day) > validateDay(parseInt(month))) {
@@ -81,13 +82,13 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
         }, []);
 
     const suffixEl = () => (
-        <DateIcon variant={restProps.variant} errorText={errorText} active={active} disabled={disabled}>
-            <DateRangeIcon onClick={iconClickHandler}></DateRangeIcon>
+        <DateIcon variant={restProps.variant} errorText={errorText} active={active} disabled={disabled} size={size}>
+            <DateRangeIcon onClick={iconClickHandler} size={size}></DateRangeIcon>
         </DateIcon>
     );
 
     return (
-        <Wrapper fullWidth={fullWidth}>
+        <Wrapper fullWidth={fullWidth} minWidth={minWidth} size={size}>
             <InputMask
                 mask="99/99/9999"
                 // @ts-ignore
@@ -107,6 +108,8 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                     required={required}
                     suffix={suffixEl}
                     label={label}
+                    fullWidth
+                    size={size}
                     variant={restProps.variant}
                     disabled={disabled}
                 />

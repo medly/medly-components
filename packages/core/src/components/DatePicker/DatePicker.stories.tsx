@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import { DatePicker } from './DatePicker';
 import { Props } from './types';
 
-const variants: Props['variant'][] = ['outlined', 'filled'];
+const variants: Props['variant'][] = ['outlined', 'filled'],
+    sizes: Props['size'][] = ['S', 'M'];
 
 export const Basic = () => {
     const [date, setDate] = useState(null);
@@ -14,6 +15,7 @@ export const Basic = () => {
             value={date}
             onChange={setDate}
             fullWidth={boolean('Full Width', false)}
+            size={select('Size', sizes, 'M')}
             displayFormat={text('Display Format', 'MM/dd/yyyy') as Props['displayFormat']}
             disabled={boolean('Disabled', false)}
             placeholder={text('Placeholder', 'MM / DD / YYYY')}

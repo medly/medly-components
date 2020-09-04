@@ -1,7 +1,17 @@
 import { centerAligned, css, styled } from '@medly-components/utils';
 import { ButtonStyled } from '../Button/Button.styled';
+import SingleSelect from '../SingleSelect';
 import TextField from '../TextField';
 import { DateProps } from './types';
+
+export const Calendar = styled('div')`
+    padding: 1.6rem;
+    background: ${({ theme }) => theme.calendar.bgColor};
+    box-shadow: 0 0.2rem 0.8rem ${({ theme }) => theme.calendar.shadowColor};
+    border-radius: ${({ theme }) => theme.calendar.borderRadius};
+    width: max-content;
+    height: max-content;
+`;
 
 export const Header = styled.div`
     width: 100%;
@@ -16,22 +26,24 @@ export const Header = styled.div`
 export const MonthAndYearSelection = styled.div`
     width: 100%;
     display: flex;
-    margin: 5px 0;
+    margin: 0.5rem 0;
     align-items: center;
     justify-content: space-around;
-
-    ul {
-        top: 3.5rem;
-        max-height: 200px;
-        overflow: scroll;
-        li {
-            padding: 0 1rem;
+    ${SingleSelect.Style} {
+        margin: 0;
+        ul {
+            top: 3.5rem;
+            max-height: 20rem;
+            overflow: auto;
+            li {
+                padding: 0 1rem;
+            }
         }
     }
 
     ${TextField.Style} {
         min-width: unset;
-        max-width: 10rem;
+        max-width: 10.8rem;
         & > div {
             height: 3.5rem;
             padding: 0 1rem;
@@ -43,19 +55,15 @@ export const CalendarGrid = styled.div`
     display: grid;
     grid-template: repeat(7, 4rem) / repeat(7, 4rem);
 
-    span {
-        text-align: center;
-    }
-
-    & > * {
+    & > span {
         user-select: none;
-        padding: 8px 10px;
+        text-align: center;
+        padding: 0.8rem 1rem;
     }
 `;
 
 const activeDate = () => css`
-    background-color: ${({ theme }) => theme.datePicker.selectedDateBgColor};
-    color: ${({ theme }) => theme.datePicker.selectedDateColor};
+    &,
     &:hover {
         background-color: ${({ theme }) => theme.datePicker.selectedDateBgColor};
         color: ${({ theme }) => theme.datePicker.selectedDateColor};
@@ -70,15 +78,14 @@ const nonActiveMonthDate = () => css`
 
 export const Date = styled('button').attrs({ type: 'button' })<DateProps>`
     background-color: transparent;
-    border-style: solid;
-    border-width: 2px;
+    border: 0.2rem solid;
     border-color: transparent;
     text-decoration: none;
     cursor: pointer;
+    user-select: none;
     border-radius: ${({ theme }) => theme.datePicker.borderRadius};
     padding: 0;
-    margin: 4px;
-    text-align: center;
+    margin: 0.4rem;
 
     &:focus {
         outline: none;

@@ -14,13 +14,15 @@ export type DisplayFormat =
     | 'yyyy-dd-MM'
     | 'yyyy-MM-dd';
 
-export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onChange'> {
+export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onChange' | 'size'> {
     /** Id for the date component */
     id?: string;
     /** Current Date */
     value: Date | string | null;
     /** Function to be called on changing the date */
     onChange: (date: Date) => void;
+    /** Input Size */
+    size?: 'S' | 'M';
     /** Placeholder for the input */
     placeholder?: string;
     /** Date display format */
@@ -34,7 +36,7 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     /** Takes full width of the parent component */
     fullWidth?: boolean;
     /** Min width of the component */
-    minWidth?: number;
+    minWidth?: string;
     /** Minimum selectable Date */
     minSelectableDate?: Date;
     /** Maximum selectable Date */
@@ -43,7 +45,7 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     variant?: 'outlined' | 'filled';
 }
 
-export interface StyleProps extends Pick<Props, 'variant' | 'fullWidth' | 'disabled'> {
+export interface StyleProps extends Pick<Props, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size'> {
     errorText?: string;
     active?: boolean;
 }
