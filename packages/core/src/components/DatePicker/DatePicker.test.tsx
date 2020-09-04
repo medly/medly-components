@@ -63,10 +63,15 @@ describe('DatePicker component', () => {
     });
 
     it('should hide calendar on click outside of the component', async () => {
-        const { container } = render(<DatePicker value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />);
+        const { container, getByText } = render(
+            <>
+                <p>Click Here</p>
+                <DatePicker value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
+            </>
+        );
         fireEvent.click(container.querySelector('svg'));
         expect(container.querySelector('#medly-datepicker-calendar')).toBeVisible();
-        fireEvent.blur(container.querySelector('input'));
+        fireEvent.click(getByText('Click Here'));
         expect(container.querySelector('#medly-datepicker-calendar')).toBeNull();
     });
 

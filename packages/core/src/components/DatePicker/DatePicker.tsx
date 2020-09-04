@@ -1,7 +1,7 @@
 import { DateRangeIcon } from '@medly-components/icons';
-import { parseToDate, WithStyle } from '@medly-components/utils';
+import { parseToDate, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import { format } from 'date-fns';
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import InputMask from 'react-input-mask';
 import Calendar from '../Calendar';
 import Popover from '../Popover';
@@ -31,6 +31,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             [value, displayFormat]
         );
 
+    const wrapperRef = useRef<HTMLDivElement>(null);
     const [formattedDate, setFormattedDate] = useState('');
     const [errorText, setErrorText] = useState('');
     const [showCalendar, toggleCalendar] = useState(false);
@@ -68,18 +69,32 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
         onBlurHandler = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
             const value = event.target.value;
             setActive(false);
-            toggleCalendar(false);
             if (parseToDate(value, displayFormat).toString() === 'Invalid Date' && required) {
                 setErrorText('Enter valid date');
             }
+            restProps.onBlur && restProps.onBlur(event);
         }, []),
-        onFocusHandler = useCallback(() => setActive(true), []),
-        onCalendarMouseDown = useCallback((event: React.MouseEvent<HTMLDivElement>) => event.preventDefault(), []),
+        onFocusHandler = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
+            setActive(true);
+            restProps.onFocus && restProps.onFocus(event);
+        }, []),
         validate = useCallback((event: React.InvalidEvent<HTMLInputElement>) => {
             if (event.target.value === '' && required) {
                 setErrorText('Please fill in this field.');
             }
+            restProps.onInvalid && restProps.onInvalid(event);
+        }, []),
+        inputValidator = useCallback((value: any) => {
+            if (value.match(/\d+/) && parseToDate(value, displayFormat).toString() === 'Invalid Date') {
+                return 'Enter valid date';
+            }
+            return '';
         }, []);
+
+    useOuterClickNotifier(() => {
+        setActive(false);
+        toggleCalendar(false);
+    }, wrapperRef);
 
     const suffixEl = () => (
         <DateIcon variant={restProps.variant} errorText={errorText} active={active} disabled={disabled} size={size}>
@@ -88,7 +103,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
     );
 
     return (
-        <Wrapper fullWidth={fullWidth} minWidth={minWidth} size={size}>
+        <Wrapper ref={wrapperRef} fullWidth={fullWidth} minWidth={minWidth} size={size}>
             <InputMask
                 mask="99/99/9999"
                 // @ts-ignore
@@ -112,6 +127,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                     size={size}
                     variant={restProps.variant}
                     disabled={disabled}
+                    validator={inputValidator}
                 />
             </InputMask>
             {showCalendar && (
@@ -119,7 +135,6 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                     id={`${id}-calendar`}
                     date={date}
                     onChange={onChange}
-                    onMouseDown={onCalendarMouseDown}
                     minSelectableDate={minSelectableDate ?? undefined}
                     maxSelectableDate={maxSelectableDate ?? undefined}
                 />

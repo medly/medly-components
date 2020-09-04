@@ -12,7 +12,7 @@ const getStyleForIcon = ({ theme, variant, size }: StyleProps & WithThemeProp, s
         icon: { [state]: iconStyle }
     } = datePicker[variant];
     return css`
-        border-radius: 50%;
+        border-radius: ${datePicker.borderRadius};
         padding: ${size === 'S' ? '0.6rem' : '0.8rem'};
         * {
             fill: ${iconStyle.color};
