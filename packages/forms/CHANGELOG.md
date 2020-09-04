@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.9.2...@medly-components/forms@1.9.3) (2020-09-02)
+
+
+### Bug Fixes
+
+* full width in text field component ([936f0c2](https://github.com/medly/medly-components/commit/936f0c251ca969dd1cdf71f678e67aa147574630))
+
+
+
+
+
 ## [1.9.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.9.1...@medly-components/forms@1.9.2) (2020-08-29)
 
 **Note:** Version bump only for package @medly-components/forms

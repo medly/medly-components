@@ -7,6 +7,7 @@ const modal: ModalTheme = {
     headerColor: colors.black,
     backgroundColor: colors.white,
     scrollbarThumbColor: colors.grey[400],
+    borderRadius: '2.4rem',
     closeIcon: {
         borderRadius: '50%',
         color: {

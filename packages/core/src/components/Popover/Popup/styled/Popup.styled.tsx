@@ -1,8 +1,9 @@
 import { css, fullHeight, fullWidth, styled } from '@medly-components/utils';
+import { Placement } from '../../types';
 import { PopupProps } from '../types';
 import { getStyleWithArrow } from './WithArrow';
 
-export const getPosition = ({ placement, distance = '0px' }: Partial<PopupProps>) => {
+export const getPosition = ({ placement, distance = '0px' }: { placement: Placement; distance?: string }) => {
     switch (placement) {
         case 'top-start':
             return css`
@@ -79,6 +80,6 @@ export const PopupStyled = styled('div')<PopupProps>`
     ${props => props.fullWidth && fullWidth()};
     ${props => props.fullHeight && fullHeight()};
 
-    ${props => getPosition({ ...props, distance: props.withArrow ? '1.5rem' : props.distance })}
+    ${props => getPosition({ placement: props.placement, distance: props.withArrow ? '1.5rem' : props.distance })}
     ${({ withArrow }) => withArrow && getStyleWithArrow}
 `;

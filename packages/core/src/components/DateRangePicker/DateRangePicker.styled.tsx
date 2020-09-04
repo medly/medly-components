@@ -2,11 +2,18 @@ import { getFontStyle, styled } from '@medly-components/utils';
 import { getPosition } from '../Popover/Popup/styled/Popup.styled';
 import { StyledProps } from './types';
 
-export const DateRangePickerStyled = styled('div').attrs(({ theme: { input, font } }) => ({ input, font }))<StyledProps>`
-    & > div:first-child {
+export const DateRangePickerStyled = styled('div')<StyledProps>`
+    display: flex;
+    align-items: center;
+
+    & > div {
+        display: inline-block;
+        position: unset;
+
         div {
             z-index: 5;
         }
+
         & > div:last-child {
             top: unset;
             bottom: unset;
@@ -18,42 +25,43 @@ export const DateRangePickerStyled = styled('div').attrs(({ theme: { input, font
             width: 100%;
             display: ${({ fullWidth }) => (fullWidth ? 'grid' : 'inline-grid')};
             grid-template-columns: auto 30px auto;
-            border: 1px solid ${props => props.input.borderColor};
-            border-radius: 5px;
             padding: ${({ theme }) => theme.spacing.S2};
             box-sizing: border-box;
             text-align: center;
-            background-color: ${({ disabled, input }) => (disabled ? input.disabledBgcolor : input.bgColor)};
             cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-            * {
-                background-color: ${({ disabled, input }) => (disabled ? input.disabledBgcolor : input.bgColor)};
-                cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+
+            div {
+                ::before {
+                    content: '';
+                    width: 1px;
+                    height: 100%;
+                    background-color: grey;
+                }
+                svg {
+                    display: none;
+                }
             }
 
             label {
                 text-align: center;
                 border: 0;
+                background: transparent;
                 input {
-                    ${getFontStyle}
-                    text-align: center;
+                    ${({ theme, size }) => getFontStyle({ theme, fontVariant: theme.textField.textVariant[size as 'S' | 'M'] })}
                     max-width: 90px;
                     min-height: unset;
                     padding: 0;
-                    color: ${props => props.input.color};
-                    background-clip: padding-box;
                     box-sizing: border-box;
+                    box-shadow: none;
+                    background: transparent;
+                    background-clip: padding-box;
 
                     &:disabled {
                         cursor: not-allowed;
                     }
 
                     &:focus {
-                        border-color: ${props => props.input.focusedBorderColor};
                         outline: 0;
-                    }
-
-                    &::placeholder {
-                        color: ${props => props.input.placeHolderColor};
                     }
 
                     ::-webkit-file-upload-button {
