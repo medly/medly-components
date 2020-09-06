@@ -1,18 +1,49 @@
 import { DatePicker } from './DatePicker';
 import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './DatePicker.stories';
+import { boolean, select, text } from '@storybook/addon-knobs';
+import { useState } from 'react';
+import { variants, sizes } from './DatePicker.stories';
 
-<Meta title="Core" component={DatePicker} />
+<Meta
+    title="Core"
+    component={DatePicker}
+    parameters={{
+        jest: ['DatePicker.test.tsx'],
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library---B2B-%2F-Internal?node-id=7803%3A533'
+        }
+    }}
+/>
 
-# DatePicker
+# DatePicker component
 
-### Simple DatePicker component
-
-To open the calendar click on the input component and to close the calendar select any date or click outside of the component.
+To open the calendar click on the icon inside the datepicker component and to close the calendar select any date or click outside of the component.
 
 <Preview withToolbar>
-    <Story name="DatePicker">{stories.Basic()}</Story>
+    <Story name="DatePicker">
+        {() => {
+            const [date, setDate] = useState(null);
+            const minDate = new Date();
+            return (
+                <DatePicker
+                    value={date}
+                    onChange={setDate}
+                    fullWidth={boolean('Full Width', false)}
+                    size={select('Size', sizes, 'M')}
+                    displayFormat={text('Display Format', 'MM/dd/yyyy')}
+                    disabled={boolean('Disabled', false)}
+                    placeholder={text('Placeholder', 'MM / DD / YYYY')}
+                    label={text('Label', 'Date of Birth')}
+                    variant={select('variant', variants, 'outlined')}
+                    required={boolean('Required', false)}
+                    minSelectableDate={new Date(minDate.getFullYear(), minDate.getMonth(), minDate.getDate())}
+                    maxSelectableDate={new Date(2021, 11, 30)}
+                />
+            );
+        }}
+    </Story>
 </Preview>
 
 ### DatePicker Props

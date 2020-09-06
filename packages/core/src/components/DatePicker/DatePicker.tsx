@@ -89,6 +89,10 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                 return 'Enter valid date';
             }
             return '';
+        }, []),
+        onDateChange = useCallback((date: Date) => {
+            onChange(date);
+            toggleCalendar(false);
         }, []);
 
     useOuterClickNotifier(() => {
@@ -134,7 +138,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                 <Calendar
                     id={`${id}-calendar`}
                     date={date}
-                    onChange={onChange}
+                    onChange={onDateChange}
                     minSelectableDate={minSelectableDate ?? undefined}
                     maxSelectableDate={maxSelectableDate ?? undefined}
                 />
