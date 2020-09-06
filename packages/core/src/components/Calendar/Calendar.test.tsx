@@ -26,7 +26,9 @@ describe('Calendar Component', () => {
     it('should render current month if date is null', () => {
         const { container } = render(<Calendar id="test-calendar" date={null} onChange={jest.fn()} />),
             { month, year } = getMonthAndYearFromDate(new Date());
-        expect(container).toHaveTextContent(`${CALENDAR_MONTHS[month]} ${year}`);
+        const { month: monthInDOM, year: yearInDOM } = getDateValues(container);
+        expect(monthInDOM).toEqual(`${CALENDAR_MONTHS[month]}`);
+        expect(yearInDOM).toEqual(year.toString());
     });
 
     it('should call onChange with expected date', () => {
@@ -50,7 +52,7 @@ describe('Calendar Component', () => {
         expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
     });
 
-    it.only('should render previous month on clicking left arrow when current month is other than Jan', () => {
+    it('should render previous month on clicking left arrow when current month is other than Jan', () => {
         const date = new Date(2020, 1, 1),
             { container, getByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
 
@@ -137,7 +139,9 @@ describe('Calendar Component', () => {
 
         fireEvent.click(container.querySelector('#test-calendar-year-selector-input'));
         fireEvent.click(getByText('2021'));
-        expect(container).toHaveTextContent(`Jan 2021`);
+        const { month, year } = getDateValues(container);
+        expect(month).toEqual('Jan');
+        expect(year).toEqual('2021');
     });
 
     it('should non change month on changing year if that month is non disable in the newly selected year', () => {
@@ -154,6 +158,8 @@ describe('Calendar Component', () => {
 
         fireEvent.click(container.querySelector('#test-calendar-year-selector-input'));
         fireEvent.click(getByText('2021'));
-        expect(container).toHaveTextContent(`Dec 2021`);
+        const { month, year } = getDateValues(container);
+        expect(month).toEqual('Dec');
+        expect(year).toEqual('2021');
     });
 });

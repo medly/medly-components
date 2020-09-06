@@ -145,4 +145,53 @@ describe('DatePicker component', () => {
             expect(document.getElementById('medly-datepicker-helper-text')).toBeNull();
         });
     });
+
+    describe('Handlers', () => {
+        it('should call focus and blur handlers if passed', () => {
+            const mockOnFocus = jest.fn(),
+                mockOnChange = jest.fn(),
+                mockOnBlur = jest.fn(),
+                { container } = render(
+                    <DatePicker
+                        value={new Date(2020, 0, 1)}
+                        displayFormat="MM/dd/yyyy"
+                        onChange={mockOnChange}
+                        onFocus={mockOnFocus}
+                        onBlur={mockOnBlur}
+                    />
+                ),
+                inputEl = container.querySelector('#medly-datepicker-input') as HTMLInputElement;
+            fireEvent.click(container.querySelector('svg'));
+            expect(mockOnFocus).toHaveBeenCalled();
+            fireEvent.blur(inputEl);
+            expect(mockOnBlur).toHaveBeenCalled();
+        });
+
+        it('should call invalid handler if passed', () => {
+            const mockOnInvalid = jest.fn(),
+                mockOnChange = jest.fn(),
+                { container } = render(
+                    <DatePicker value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={mockOnChange} onInvalid={mockOnInvalid} />
+                ),
+                inputEl = container.querySelector('#medly-datepicker-input') as HTMLInputElement;
+            fireEvent.click(container.querySelector('svg'));
+            fireEvent.invalid(inputEl);
+            expect(mockOnInvalid).toHaveBeenCalled();
+        });
+    });
+
+    describe('Styles', () => {
+        it('should change the margin and width if full-width is passed as prop', () => {
+            const { container } = render(<DatePicker value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} fullWidth={true} />);
+            expect(container.querySelector('#medly-datepicker-input-wrapper')).toHaveStyle(`width: 100%`);
+        });
+
+        it('should change the size of datepicker based on size prop', () => {
+            const { container } = render(
+                <DatePicker value={null} displayFormat="MM/dd/yyyy" onChange={jest.fn()} id={'picker'} size={'S'} />
+            );
+            fireEvent.click(container.querySelector('svg'));
+            expect(container.querySelector('#picker-calendar')).toHaveStyle(`top: 4rem`);
+        });
+    });
 });
