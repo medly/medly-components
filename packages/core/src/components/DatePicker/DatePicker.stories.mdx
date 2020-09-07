@@ -3,7 +3,7 @@ import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { boolean, select, text } from '@storybook/addon-knobs';
 import { useState } from 'react';
-import { variants, sizes } from './DatePicker.stories';
+import { variants, sizes, ThemeInterface, FormWithDatePicker } from './DatePicker.stories';
 
 <Meta
     title="Core"
@@ -18,6 +18,14 @@ import { variants, sizes } from './DatePicker.stories';
 />
 
 # DatePicker component
+
+It's a controlled component. So we have to handle the state.
+
+```tsx
+const [date, setDate] = useState(null);
+
+return <DatePicker label="Select Date" value={date} onChange={setDate} />;
+```
 
 To open the calendar click on the icon inside the datepicker component and to close the calendar select any date or click outside of the component.
 
@@ -46,6 +54,45 @@ To open the calendar click on the icon inside the datepicker component and to cl
     </Story>
 </Preview>
 
-### DatePicker Props
+### Validations
+
+1. Validations would happen on invalid, and blur event with required Prop.
+
+```tsx
+const FormWithDatePicker: React.FC = () => {
+    const [date, setDate] = useState(null),
+        handleSubmit = (e: React.FormEvent) => e.preventDefault();
+    return (
+        <form onSubmit={handleSubmit}>
+            <div>
+                <DatePicker value={date} onChange={setDate} label="Select Date" required />
+            </div>
+            <Button type="submit">Submit</Button>
+        </form>
+    );
+};
+```
+
+<Preview withToolbar>
+    <FormWithDatePicker />
+</Preview>
+
+2. Validations would also happen just on blur event if we type an incorrect value and focus out of the component.
+
+```tsx
+const DatePicker: React.FC = () => {
+    return <DatePicker value={null} onChange={() => {}} label="Select Date" />;
+};
+```
+
+<Preview withToolbar>
+    <DatePicker id="without-required" value={null} onChange={() => {}} label="Select Date" />
+</Preview>
+
+### Props
 
 <Props of={DatePicker} />
+
+### DatePickerTheme
+
+<Props of={ThemeInterface} />

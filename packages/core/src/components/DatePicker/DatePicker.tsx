@@ -93,6 +93,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
         onDateChange = useCallback((date: Date) => {
             onChange(date);
             toggleCalendar(false);
+            setErrorText('');
         }, []);
 
     useOuterClickNotifier(() => {
