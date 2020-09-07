@@ -29,14 +29,14 @@ exports[`NavItem should call onClick when we click on it 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  border-left: 0.4rem solid;
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: calc(7.2rem - 0.8rem) calc(25.6rem - 7.2rem - 1.6rem);
-  justify-items: center;
+  margin-left: 1.2rem;
+  border-radius: 0.4rem;
+  grid-template-columns: calc(7.2rem - 1.2rem) calc(25.6rem - 7.2rem - 1.2rem);
+  justify-items: flex-start;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -47,40 +47,59 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   -ms-user-select: none;
   user-select: none;
   min-height: 4.8rem;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   cursor: pointer;
-  border-radius: 0 calc(4.8rem / 2) calc(4.8rem / 2) 0;
-  border-color: #ffffff;
+  background-color: transparent;
 }
 
 .c1 .c2 {
   overflow: visible;
-  font-size: 2.4rem;
+  border-radius: 0.4rem;
+  padding: calc((4.8rem - 2rem) / 2);
+  font-size: 2rem;
 }
 
 .c1 .c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
+  transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
   font-weight: 600;
+}
+
+.c1 .c2 * {
+  fill: #607890;
+}
+
+.c1 .c4 {
   color: #607890;
 }
 
 .c1:hover {
-  border-color: #eff2f4;
   background-color: #eff2f4;
 }
 
-.c1:hover .c4 {
-  color: #435465;
+.c1:hover .c2 * {
+  fill: #303C48;
 }
 
-.c1:hover .c2 * {
-  fill: #435465;
+.c1:hover .c4 {
+  color: #303C48;
+}
+
+.c1:active {
+  background-color: #dfe4e9;
+}
+
+.c1:active .c2 * {
+  fill: #13181D;
+}
+
+.c1:active .c4 {
+  color: #13181D;
 }
 
 .c0 {
@@ -139,7 +158,6 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   >
     <li
       class="c1"
-      font-variant="body1"
     >
       <svg
         class="c2 c3"
@@ -194,14 +212,14 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  border-left: 0.4rem solid;
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: calc(7.2rem - 0.8rem) calc(25.6rem - 7.2rem - 1.6rem);
-  justify-items: center;
+  margin-left: 1.2rem;
+  border-radius: 0.4rem;
+  grid-template-columns: calc(7.2rem - 1.2rem) calc(25.6rem - 7.2rem - 1.2rem);
+  justify-items: flex-start;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -212,40 +230,59 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   -ms-user-select: none;
   user-select: none;
   min-height: 4.8rem;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   cursor: pointer;
-  border-radius: 0 calc(4.8rem / 2) calc(4.8rem / 2) 0;
-  border-color: #ffffff;
+  background-color: transparent;
 }
 
 .c1 .c2 {
   overflow: visible;
-  font-size: 2.4rem;
+  border-radius: 0.4rem;
+  padding: calc((4.8rem - 2rem) / 2);
+  font-size: 2rem;
 }
 
 .c1 .c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
+  transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
   font-weight: 600;
+}
+
+.c1 .c2 * {
+  fill: #607890;
+}
+
+.c1 .c4 {
   color: #607890;
 }
 
 .c1:hover {
-  border-color: #eff2f4;
   background-color: #eff2f4;
 }
 
-.c1:hover .c4 {
-  color: #435465;
+.c1:hover .c2 * {
+  fill: #303C48;
 }
 
-.c1:hover .c2 * {
-  fill: #435465;
+.c1:hover .c4 {
+  color: #303C48;
+}
+
+.c1:active {
+  background-color: #dfe4e9;
+}
+
+.c1:active .c2 * {
+  fill: #13181D;
+}
+
+.c1:active .c4 {
+  color: #13181D;
 }
 
 .c0 {
@@ -304,7 +341,6 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   >
     <li
       class="c1"
-      font-variant="body1"
     >
       <svg
         class="c2 c3"
@@ -359,14 +395,14 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
 }
 
 .c1 {
-  width: 100%;
-  border-left: 0.4rem solid;
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: calc(7.2rem - 0.8rem) calc(25.6rem - 7.2rem - 1.6rem);
-  justify-items: center;
+  margin-left: 1.2rem;
+  border-radius: 0.4rem;
+  grid-template-columns: calc(7.2rem - 1.2rem) calc(25.6rem - 7.2rem - 1.2rem);
+  justify-items: flex-start;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -377,40 +413,59 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   -ms-user-select: none;
   user-select: none;
   min-height: 4.8rem;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   cursor: pointer;
-  border-radius: 0 calc(4.8rem / 2) calc(4.8rem / 2) 0;
-  border-color: #ffffff;
+  background-color: transparent;
 }
 
 .c1 .c2 {
   overflow: visible;
-  font-size: 2.4rem;
+  border-radius: 0.4rem;
+  padding: calc((4.8rem - 2rem) / 2);
+  font-size: 2rem;
 }
 
 .c1 .c4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
+  transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
   font-weight: 600;
+}
+
+.c1 .c2 * {
+  fill: #607890;
+}
+
+.c1 .c4 {
   color: #607890;
 }
 
 .c1:hover {
-  border-color: #eff2f4;
   background-color: #eff2f4;
 }
 
-.c1:hover .c4 {
-  color: #435465;
+.c1:hover .c2 * {
+  fill: #303C48;
 }
 
-.c1:hover .c2 * {
-  fill: #435465;
+.c1:hover .c4 {
+  color: #303C48;
+}
+
+.c1:active {
+  background-color: #dfe4e9;
+}
+
+.c1:active .c2 * {
+  fill: #13181D;
+}
+
+.c1:active .c4 {
+  color: #13181D;
 }
 
 .c0 {
@@ -469,7 +524,6 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   >
     <li
       class="c1"
-      font-variant="body1"
     >
       <svg
         class="c2 c3"

@@ -21,23 +21,23 @@ export const Basic = () => (
         <Header />
         <SideNav.List>
             <SideNav.Nav path="/">
-                <DashboardIcon />
+                <DashboardIcon size="S" />
                 <Text>Dashboard</Text>
             </SideNav.Nav>
             <SideNav.Nav path="/reports">
-                <InsertChartIcon />
+                <InsertChartIcon size="S" />
                 <Text>Reports</Text>
             </SideNav.Nav>
             <SideNav.Nav path="/statements">
-                <FolderOpenIcon />
+                <FolderOpenIcon size="S" />
                 <Text>Statements</Text>
             </SideNav.Nav>
             <SideNav.Nav path="/transactions">
-                <DateRangeIcon />
+                <DateRangeIcon size="S" />
                 <Text>Transactions</Text>
             </SideNav.Nav>
             <SideNav.Nav path="/settings">
-                <SettingsIcon />
+                <SettingsIcon size="S" />
                 <Text>Settings</Text>
             </SideNav.Nav>
         </SideNav.List>

@@ -29,14 +29,14 @@ exports[`SideNav should render properly 1`] = `
 }
 
 .c3 {
-  width: 100%;
-  border-left: 0.4rem solid;
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: calc(7.2rem - 0.8rem) calc(25.6rem - 7.2rem - 1.6rem);
-  justify-items: center;
+  margin-left: 1.2rem;
+  border-radius: 0.4rem;
+  grid-template-columns: calc(7.2rem - 1.2rem) calc(25.6rem - 7.2rem - 1.2rem);
+  justify-items: flex-start;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -47,47 +47,49 @@ exports[`SideNav should render properly 1`] = `
   -ms-user-select: none;
   user-select: none;
   min-height: 4.8rem;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   cursor: pointer;
-  border-color: #ffffff;
 }
 
 .c3 .c4 {
   overflow: visible;
-  font-size: 2.4rem;
+  border-radius: 0.4rem;
+  padding: calc((4.8rem - 2rem) / 2);
+  font-size: 2rem;
 }
 
 .c3 .c6 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
+  transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
   font-weight: 600;
-  color: #126AFA;
 }
 
 .c3 .c4 {
-  padding: calc((4.8rem - 2.4rem) / 2);
-  border-radius: 50%;
-  background-color: rgba(0,90,238,0.1);
+  background-color: #E7F0FF;
 }
 
 .c3 .c4 * {
   fill: #126AFA;
 }
 
+.c3 .c6 {
+  color: #126AFA;
+}
+
 .c8 {
-  width: 100%;
-  border-left: 0.4rem solid;
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: calc(7.2rem - 0.8rem) calc(25.6rem - 7.2rem - 1.6rem);
-  justify-items: center;
+  margin-left: 1.2rem;
+  border-radius: 0.4rem;
+  grid-template-columns: calc(7.2rem - 1.2rem) calc(25.6rem - 7.2rem - 1.2rem);
+  justify-items: flex-start;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -98,39 +100,62 @@ exports[`SideNav should render properly 1`] = `
   -ms-user-select: none;
   user-select: none;
   min-height: 4.8rem;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
   cursor: pointer;
-  border-color: #ffffff;
 }
 
 .c8 .c4 {
   overflow: visible;
-  font-size: 2.4rem;
+  border-radius: 0.4rem;
+  padding: calc((4.8rem - 2rem) / 2);
+  font-size: 2rem;
 }
 
 .c8 .c6 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
+  transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
   font-weight: 600;
-  color: #607890;
 }
 
 .c8 .c4 {
-  padding: calc((4.8rem - 2.4rem) / 2);
-  border-radius: 50%;
+  background-color: transparent;
 }
 
-.c8 .c4:hover {
+.c8 .c4 * {
+  fill: #607890;
+}
+
+.c8 .c6 {
+  color: #607890;
+}
+
+.c8:hover .c4 {
   background-color: #eff2f4;
 }
 
-.c8 .c4:hover * {
-  fill: #435465;
+.c8:hover .c4 * {
+  fill: #303C48;
+}
+
+.c8:hover .c6 {
+  color: #303C48;
+}
+
+.c8:active .c4 {
+  background-color: #dfe4e9;
+}
+
+.c8:active .c4 * {
+  fill: #13181D;
+}
+
+.c8:active .c6 {
+  color: #13181D;
 }
 
 .c2 {
@@ -181,8 +206,8 @@ exports[`SideNav should render properly 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-transition: width 200ms ease-out,box-shadow 200ms ease-out;
-  transition: width 200ms ease-out,box-shadow 200ms ease-out;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
   background-color: #ffffff;
   padding-right: 0;
   width: 7.2rem;
@@ -252,7 +277,6 @@ exports[`SideNav should render properly 1`] = `
       >
         <li
           class="c3"
-          font-variant="body1"
         >
           <svg
             class="c4 c5"
@@ -276,7 +300,6 @@ exports[`SideNav should render properly 1`] = `
         </li>
         <li
           class="c8"
-          font-variant="body1"
         >
           <svg
             class="c4 c5"
@@ -306,7 +329,6 @@ exports[`SideNav should render properly 1`] = `
       >
         <li
           class="c8"
-          font-variant="body1"
         >
           <svg
             class="c4 c5"
