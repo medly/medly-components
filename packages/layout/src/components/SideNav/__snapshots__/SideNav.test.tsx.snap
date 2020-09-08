@@ -65,7 +65,6 @@ exports[`SideNav should render properly 1`] = `
 }
 
 .c9 {
-  margin-top: 3rem;
   position: relative;
 }
 
@@ -92,7 +91,15 @@ exports[`SideNav should render properly 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c9::before {
+.c9:first-child {
+  margin-top: 1.5rem;
+}
+
+.c9:not(:first-child) {
+  margin-top: 3rem;
+}
+
+.c9:not(:first-child)::before {
   content: '';
   width: calc(100% - 3.2rem);
   margin: 0 auto;
