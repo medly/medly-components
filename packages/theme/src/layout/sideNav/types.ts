@@ -7,6 +7,12 @@ export interface SideNavTheme {
     bgColor: string;
     separatorColor: string;
     scrollBarColor: string;
+    group: {
+        title: {
+            color: string;
+            textVariant: FontVariants;
+        };
+    };
     navItem: {
         icon: {
             size: IconSizes;
@@ -18,7 +24,7 @@ export interface SideNavTheme {
             };
         };
         text: {
-            fontVariant: FontVariants;
+            textVariant: FontVariants;
             color: {
                 default: string;
                 hovered: string;

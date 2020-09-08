@@ -32,14 +32,16 @@ export const Basic = () => (
                 <FolderOpenIcon size="S" />
                 <Text>Statements</Text>
             </SideNav.Nav>
-            <SideNav.Nav path="/transactions">
-                <DateRangeIcon size="S" />
-                <Text>Transactions</Text>
-            </SideNav.Nav>
-            <SideNav.Nav path="/settings">
-                <SettingsIcon size="S" />
-                <Text>Settings</Text>
-            </SideNav.Nav>
+            <SideNav.Group title="Group">
+                <SideNav.Nav path="/transactions">
+                    <DateRangeIcon size="S" />
+                    <Text>Transactions</Text>
+                </SideNav.Nav>
+                <SideNav.Nav path="/settings">
+                    <SettingsIcon size="S" />
+                    <Text>Settings</Text>
+                </SideNav.Nav>
+            </SideNav.Group>
         </SideNav.List>
     </SideNav>
 );

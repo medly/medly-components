@@ -1,7 +1,7 @@
 import { Text } from '@medly-components/core';
 import { SvgIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
-import { css, styled } from '@medly-components/utils';
+import { css, getFontStyle, styled } from '@medly-components/utils';
 import { NavItemStyledProps } from './types';
 
 const getStyle = ({
@@ -49,7 +49,7 @@ export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ .
         justify-self: left;
         transition: opacity 200ms ease-out, color 100ms ease-out;
         opacity: ${({ isHovered, isExpanded }) => (isHovered || isExpanded ? 1 : 0)};
-        font-weight: ${({ theme }) => theme.font.weights.Medium};
+        ${({ theme }) => getFontStyle({ theme, fontVariant: theme.sideNav.navItem.text.textVariant, fontWeight: 'Medium' })}
     }
 
     ${props => getStyle({ ...props, state: props.isActive ? 'active' : 'default' })};

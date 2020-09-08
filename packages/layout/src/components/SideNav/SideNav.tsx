@@ -1,5 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useRef, useState } from 'react';
+import NavGroup from './NavGroup';
 import NavItem from './NavItem';
 import NavList from './NavList';
 import SideNavContext from './SideNav.context';
@@ -45,6 +46,7 @@ export const SideNav: FC<SideNavProps> & WithStyle & SideNavStaticProps = props 
 
 SideNav.List = NavList;
 SideNav.Nav = NavItem;
+SideNav.Group = NavGroup;
 SideNav.Context = SideNavContext;
 SideNav.displayName = 'SideNav';
 SideNav.Style = Styled.Aside;

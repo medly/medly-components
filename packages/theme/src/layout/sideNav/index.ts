@@ -7,6 +7,12 @@ const sideNav: SideNavTheme = {
     bgColor: colors.white,
     scrollBarColor: colors.grey[500],
     separatorColor: colors.grey[200],
+    group: {
+        title: {
+            color: colors.grey[500],
+            textVariant: 'h5'
+        }
+    },
     navItem: {
         minHeight: '4.8rem',
         borderRadius: '0.4rem',
@@ -26,7 +32,7 @@ const sideNav: SideNavTheme = {
             }
         },
         text: {
-            fontVariant: 'body1',
+            textVariant: 'body2',
             color: {
                 default: colors.grey[600],
                 hovered: colors.grey[900],
