@@ -4,24 +4,41 @@ import { IconSizes } from '../../icon/types';
 export interface SideNavTheme {
     closeSize: string;
     openSize: string;
-    navItemMinHeight: string;
-    fontVariant: FontVariants;
     bgColor: string;
-    iconSize: IconSizes;
     separatorColor: string;
     scrollBarColor: string;
-    navItemColors: {
-        active: {
-            textColor: string;
-            bgColor: string;
+    group: {
+        title: {
+            color: string;
+            textVariant: FontVariants;
         };
-        hover: {
-            textColor: string;
-            bgColor: string;
+    };
+    navItem: {
+        icon: {
+            size: IconSizes;
+            color: {
+                default: string;
+                hovered: string;
+                pressed: string;
+                active: string;
+            };
         };
-        default: {
-            textColor: string;
-            bgColor: string;
+        text: {
+            textVariant: FontVariants;
+            color: {
+                default: string;
+                hovered: string;
+                pressed: string;
+                active: string;
+            };
         };
+        bgColor: {
+            default: string;
+            hovered: string;
+            pressed: string;
+            active: string;
+        };
+        minHeight: string;
+        borderRadius: string;
     };
 }

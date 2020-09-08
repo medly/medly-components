@@ -1,13 +1,21 @@
-import { FontVariants, Theme } from '@medly-components/theme';
+import { FontVariants, FontWeights, Theme } from '@medly-components/theme';
 import { css } from '../styled';
 
-export const getFontStyle = ({ fontVariant, theme }: { theme: Theme; fontVariant?: FontVariants }) => {
+export const getFontStyle = ({
+    fontVariant,
+    fontWeight,
+    theme
+}: {
+    theme: Theme;
+    fontVariant?: FontVariants;
+    fontWeight?: FontWeights;
+}) => {
     const { variants, weights, defaults } = theme.font,
-        { fontSize, fontWeight, letterSpacing, lineHeight } = variants[fontVariant || defaults.variant];
+        { fontSize, fontWeight: defaultFontWeight, letterSpacing, lineHeight } = variants[fontVariant || defaults.variant];
 
     return css`
         font-size: ${fontSize};
-        font-weight: ${weights[fontWeight]};
+        font-weight: ${weights[fontWeight || defaultFontWeight]};
         letter-spacing: ${letterSpacing};
         line-height: ${lineHeight};
         font-family: ${defaults.fontFamily};

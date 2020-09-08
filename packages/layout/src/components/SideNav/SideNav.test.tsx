@@ -1,5 +1,5 @@
 import { Text } from '@medly-components/core';
-import { HomeIcon, SearchIcon } from '@medly-components/icons';
+import { DateRangeIcon, HomeIcon, SearchIcon, SettingsIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
 import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
@@ -17,6 +17,16 @@ const renderer = (active: string, mockOnChange = jest.fn()) =>
                     <SearchIcon />
                     <Text>Search</Text>
                 </SideNav.Nav>
+                <SideNav.Group title="Group">
+                    <SideNav.Nav path="/transactions">
+                        <DateRangeIcon size="S" />
+                        <Text>Transactions</Text>
+                    </SideNav.Nav>
+                    <SideNav.Nav path="/settings">
+                        <SettingsIcon size="S" />
+                        <Text>Settings</Text>
+                    </SideNav.Nav>
+                </SideNav.Group>
             </SideNav.List>
         </SideNav>
     );

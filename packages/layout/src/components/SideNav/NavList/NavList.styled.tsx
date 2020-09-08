@@ -4,7 +4,7 @@ import { styled } from '@medly-components/utils';
 export const NavList = styled('ul')`
     flex: 1;
     padding: 0;
-    margin: 2rem 0 0 0;
+    margin: 1.6rem 0 0 0;
     list-style-type: none;
     overflow-x: hidden;
     overflow-y: auto;

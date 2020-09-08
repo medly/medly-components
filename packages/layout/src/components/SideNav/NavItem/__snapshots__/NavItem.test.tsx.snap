@@ -17,10 +17,20 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
+  transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
+  font-size: 1.4rem;
   font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c2 .c0 {
   color: #126AFA;
 }
 
@@ -28,11 +38,29 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
+  transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
+  font-size: 1.4rem;
   font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c3 .c0 {
   color: #607890;
+}
+
+.c3:hover .c0 {
+  color: #303C48;
+}
+
+.c3:active .c0 {
+  color: #13181D;
 }
 
 <span
@@ -59,10 +87,20 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
+  transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
+  font-size: 1.4rem;
   font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c2 .c0 {
   color: #126AFA;
 }
 
@@ -70,21 +108,49 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
+  transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
+  font-size: 1.4rem;
   font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c3 .c0 {
   color: #607890;
+}
+
+.c3:hover .c0 {
+  color: #303C48;
+}
+
+.c3:active .c0 {
+  color: #13181D;
 }
 
 .c4 .c0 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
+  transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
+  font-size: 1.4rem;
   font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c4 .c0 {
   color: #126AFA;
 }
 
@@ -92,15 +158,29 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
+  transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
+  font-size: 1.4rem;
   font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c5 .c0 {
   color: #607890;
 }
 
 .c5:hover .c0 {
-  color: #435465;
+  color: #303C48;
+}
+
+.c5:active .c0 {
+  color: #13181D;
 }
 
 <span
@@ -127,10 +207,20 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
+  transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
+  font-size: 1.4rem;
   font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c2 .c0 {
   color: #126AFA;
 }
 
@@ -138,21 +228,49 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
+  transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
+  font-size: 1.4rem;
   font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c3 .c0 {
   color: #607890;
+}
+
+.c3:hover .c0 {
+  color: #303C48;
+}
+
+.c3:active .c0 {
+  color: #13181D;
 }
 
 .c4 .c0 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
+  transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
+  font-size: 1.4rem;
   font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c4 .c0 {
   color: #126AFA;
 }
 
@@ -160,15 +278,29 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
-  -webkit-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
+  -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
+  transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
+  font-size: 1.4rem;
   font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c5 .c0 {
   color: #607890;
 }
 
 .c5:hover .c0 {
-  color: #435465;
+  color: #303C48;
+}
+
+.c5:active .c0 {
+  color: #13181D;
 }
 
 <span

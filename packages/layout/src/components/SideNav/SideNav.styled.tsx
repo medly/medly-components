@@ -14,9 +14,9 @@ export const Nav = styled('nav')<SideNavStyledProps>`
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
-    transition: width 200ms ease-out, box-shadow 200ms ease-out;
+    transition: all 200ms ease-out;
     background-color: ${({ theme }) => theme.sideNav.bgColor};
-    padding-right: ${({ isHovered, isExpanded, theme }) => (isHovered || isExpanded ? theme.spacing.S4 : 0)};
+    padding-right: ${({ isHovered, isExpanded, theme }) => (isHovered || isExpanded ? theme.spacing.S3 : 0)};
     width: ${({ isHovered, isExpanded, theme }) => (isHovered || isExpanded ? theme.sideNav.openSize : theme.sideNav.closeSize)};
     box-shadow: ${({ isExpanded, isHovered }) => (!isExpanded && isHovered ? `0.2rem 0 1.6rem #B0BCC8` : 'none')};
 `;

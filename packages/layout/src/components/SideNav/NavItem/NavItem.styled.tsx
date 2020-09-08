@@ -1,93 +1,64 @@
 import { Text } from '@medly-components/core';
 import { SvgIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
-import { css, styled } from '@medly-components/utils';
+import { css, getFontStyle, styled } from '@medly-components/utils';
 import { NavItemStyledProps } from './types';
 
-const openNavStyle = ({ isActive, bgColor, navItemColors, navItemMinHeight }: NavItemStyledProps) => css`
-    border-radius: ${`0 calc(${navItemMinHeight} / 2) calc(${navItemMinHeight} / 2) 0`};
-    ${isActive
-        ? css`
-              border-color: ${navItemColors.active.textColor};
-              background-color: ${navItemColors.active.bgColor};
-              ${SvgIcon} {
-                  * {
-                      fill: ${navItemColors.active.textColor};
-                  }
-              }
-          `
-        : css`
-              border-color: ${bgColor};
-              &:hover {
-                  border-color: ${navItemColors.hover.bgColor};
-                  background-color: ${navItemColors.hover.bgColor};
-                  ${Text.Style} {
-                      color: ${navItemColors.hover.textColor};
-                  }
-                  ${SvgIcon} {
-                      * {
-                          fill: ${navItemColors.hover.textColor};
-                      }
-                  }
-              }
-          `};
-`;
-
-const closeNavStyle = ({ isActive, bgColor, navItemColors, iconSize, theme, navItemMinHeight }: NavItemStyledProps) => css`
-    border-color: ${bgColor};
+const getStyle = ({
+    navItem,
+    state,
+    isExpanded,
+    isHovered
+}: NavItemStyledProps & { state: 'default' | 'hovered' | 'pressed' | 'active' }) => css`
+    background-color: ${(isExpanded || isHovered) && navItem.bgColor[state]};
     ${SvgIcon} {
-        padding: ${`calc((${navItemMinHeight} - ${theme.icon.sizes[iconSize].iconSize}) / 2) `};
-        border-radius: 50%;
-        ${isActive
-            ? css`
-                  background-color: ${navItemColors.active.bgColor};
-                  * {
-                      fill: ${navItemColors.active.textColor};
-                  }
-              `
-            : css`
-                  &:hover {
-                      background-color: ${navItemColors.hover.bgColor};
-                      * {
-                          fill: ${navItemColors.hover.textColor};
-                      }
-                  }
-              `}
+        background-color: ${!isExpanded && !isHovered && navItem.bgColor[state]};
+        * {
+            fill: ${navItem.icon.color[state]};
+        }
+    }
+    ${Text.Style} {
+        color: ${navItem.text.color[state]};
     }
 `;
-
 export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ ...sideNav }))<NavItemStyledProps>`
-    width: 100%;
-    border-left: ${({ theme }) => theme.spacing.S1} solid;
     text-decoration: none;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: ${({ openSize, closeSize, theme }) =>
-        `calc(${closeSize} - ${theme.spacing.S2}) calc(${openSize} - ${closeSize} - ${theme.spacing.S4}) `};
-    justify-items: center;
+    margin-left: 1.2rem;
+    border-radius: ${({ navItem }) => navItem.borderRadius};
+    grid-template-columns: ${({ openSize, closeSize }) => `calc(${closeSize} - 1.2rem) calc(${openSize} - ${closeSize} - 1.2rem) `};
+    justify-items: flex-start;
     align-items: center;
     overflow: hidden;
     user-select: none;
-    min-height: ${({ navItemMinHeight }) => navItemMinHeight};
-    transition: all 200ms ease-out;
+    min-height: ${({ navItem }) => navItem.minHeight};
+    transition: all 100ms ease-out;
     cursor: pointer;
 
     ${SvgIcon} {
         overflow: visible;
-        font-size: ${({ theme, iconSize }) => theme.icon.sizes[iconSize].iconSize};
+        border-radius: ${({ navItem }) => navItem.borderRadius};
+        padding: ${({ navItem, theme }) => `calc((${navItem.minHeight} - ${theme.icon.sizes[navItem.icon.size].iconSize}) / 2) `};
+        font-size: ${({ theme, navItem }) => theme.icon.sizes[navItem.icon.size].iconSize};
     }
 
     ${Text.Style} {
         text-overflow: ellipsis;
         white-space: nowrap;
         justify-self: left;
-        transition: all 200ms ease-out;
+        transition: opacity 200ms ease-out, color 100ms ease-out;
         opacity: ${({ isHovered, isExpanded }) => (isHovered || isExpanded ? 1 : 0)};
-        font-weight: ${({ theme }) => theme.font.weights.Medium};
-        color: ${({ isActive, navItemColors }) => (isActive ? navItemColors.active.textColor : navItemColors.default.textColor)};
+        ${({ theme }) => getFontStyle({ theme, fontVariant: theme.sideNav.navItem.text.textVariant, fontWeight: 'Medium' })}
     }
 
-    ${props => (props.isHovered || props.isExpanded ? openNavStyle(props) : closeNavStyle(props))};
+    ${props => getStyle({ ...props, state: props.isActive ? 'active' : 'default' })};
+    &:hover {
+        ${props => !props.isActive && getStyle({ ...props, state: 'hovered' })};
+    }
+    &:active {
+        ${props => !props.isActive && getStyle({ ...props, state: 'pressed' })};
+    }
 `;
 
 NavItemStyled.defaultProps = {

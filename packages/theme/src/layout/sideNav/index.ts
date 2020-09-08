@@ -4,24 +4,41 @@ import { SideNavTheme } from './types';
 const sideNav: SideNavTheme = {
     closeSize: '7.2rem',
     openSize: '25.6rem',
-    iconSize: 'M',
-    fontVariant: 'body1',
-    navItemMinHeight: '4.8rem',
     bgColor: colors.white,
     scrollBarColor: colors.grey[500],
     separatorColor: colors.grey[200],
-    navItemColors: {
-        active: {
-            textColor: colors.blue[500],
-            bgColor: 'rgba(0, 90, 238, 0.1)'
+    group: {
+        title: {
+            color: colors.grey[500],
+            textVariant: 'h5'
+        }
+    },
+    navItem: {
+        minHeight: '4.8rem',
+        borderRadius: '0.4rem',
+        bgColor: {
+            default: 'transparent',
+            hovered: colors.grey[100],
+            pressed: colors.grey[200],
+            active: colors.blue[100]
         },
-        hover: {
-            textColor: colors.grey[800],
-            bgColor: colors.grey[100]
+        icon: {
+            size: 'S',
+            color: {
+                default: colors.grey[600],
+                hovered: colors.grey[900],
+                pressed: colors.black,
+                active: colors.blue[500]
+            }
         },
-        default: {
-            textColor: colors.grey[600],
-            bgColor: colors.white
+        text: {
+            textVariant: 'body2',
+            color: {
+                default: colors.grey[600],
+                hovered: colors.grey[900],
+                pressed: colors.black,
+                active: colors.blue[500]
+            }
         }
     }
 };
