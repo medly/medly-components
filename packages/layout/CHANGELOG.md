@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.1](https://github.com/medly/medly-components/compare/@medly-components/layout@1.9.0...@medly-components/layout@1.9.1) (2020-09-08)
+
+
+### Bug Fixes
+
+* separator issue in sidenav component ([972cc24](https://github.com/medly/medly-components/commit/972cc2427f8c9b45fc00787e859fd9f5938ab5d5))
+
+
+
+
+
 # [1.9.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.8.7...@medly-components/layout@1.9.0) (2020-09-08)
 
 
