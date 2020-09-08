@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.3.6...@medly-components/utils@1.4.0) (2020-09-08)
+
+
+### Features
+
+* add grouping feature in sidenav component ([19b4954](https://github.com/medly/medly-components/commit/19b4954839ed52d09f7016fb44fe6e40186f14ac))
+
+
+
+
+
 ## [1.3.6](https://github.com/medly/medly-components/compare/@medly-components/utils@1.3.5...@medly-components/utils@1.3.6) (2020-09-02)
 
 **Note:** Version bump only for package @medly-components/utils
