@@ -68,7 +68,7 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 600;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
@@ -258,7 +258,7 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 600;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
@@ -448,7 +448,7 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
   font-size: 1.4rem;
-  font-weight: 400;
+  font-weight: 600;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
