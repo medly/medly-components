@@ -132,6 +132,21 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             handleOuterClick();
         }, wrapperRef);
 
+        const commonProps = {
+            id: `${selectId}`,
+            fullWidth: true,
+            ref: inputRef,
+            value: inputValue,
+            label: inputProps.label,
+            helperText: inputProps.helperText,
+            errorText: inputProps.errorText,
+            onFocus: handleFocus,
+            onBlur: handleBlur,
+            onKeyPress: handleKeyPress,
+            disabled,
+            areOptionsVisible
+        };
+
         return (
             <Styled.Wrapper
                 id={`${selectId}-wrapper`}
@@ -144,35 +159,15 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 areOptionsVisible={areOptionsVisible}
             >
                 {variant == 'flat' ? (
-                    <FlatVariant
-                        fullWidth
-                        disabled={disabled}
-                        id={`${selectId}`}
-                        ref={inputRef}
-                        value={inputValue}
-                        label={inputProps.label}
-                        helperText={inputProps.helperText}
-                        errorText={inputProps.errorText}
-                        onFocus={handleFocus}
-                        onBlur={handleBlur}
-                        onKeyPress={handleKeyPress}
-                        areOptionsVisible={areOptionsVisible}
-                    />
+                    <FlatVariant {...commonProps} />
                 ) : (
                     <TextField
                         key={selectedOption.value}
                         variant={variant}
-                        fullWidth
                         autoComplete="off"
-                        id={`${selectId}`}
-                        onFocus={handleFocus}
-                        onBlur={handleBlur}
-                        disabled={disabled}
-                        value={inputValue}
-                        ref={inputRef}
                         onChange={handleInputChange}
                         suffix={ChevronDownIcon}
-                        onKeyPress={handleKeyPress}
+                        {...commonProps}
                         {...inputProps}
                     />
                 )}

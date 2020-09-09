@@ -4,78 +4,42 @@ import { rgba } from 'polished';
 import Label from '../../Label';
 import { FlatVariantProps } from './types';
 
-const getButtonStyle = (
-    valueColor: string,
-    labelColor: string,
-    errorColor: string,
-    activatedColor: string,
-    bgColor: string,
-    areOptionsVisible: boolean,
-    errorText: string
-) => css`
-    color: ${errorText ? errorColor : valueColor};
-    background: ${areOptionsVisible ? activatedColor : bgColor};
-    * {
-        fill: ${errorText ? errorColor : valueColor};
-    }
-    ${Label.Style} {
-        color: ${labelColor};
-    }
-`;
-
-const buttonStyle = ({ theme, areOptionsVisible, errorText }: FlatVariantProps) => {
-    const { bgColor, labelColor, valueColor } = theme.singleSelect.variant.flat;
+const getButtonStyle = ({
+    theme,
+    areOptionsVisible,
+    errorText,
+    state
+}: FlatVariantProps & { state: 'default' | 'hovered' | 'pressed' | 'disabled' }) => {
+    const { flat } = theme.singleSelect.variant;
     return css`
-        &:disabled {
-            ${getButtonStyle(
-                valueColor.disabled,
-                labelColor.disabled,
-                valueColor.error,
-                bgColor.activated,
-                bgColor.disabled,
-                areOptionsVisible,
-                errorText
-            )}
+        color: ${errorText && state !== 'disabled' ? flat.valueColor['error'] : flat.valueColor[state]};
+        background: ${areOptionsVisible ? flat.bgColor['activated'] : flat.bgColor[state]};
+        * {
+            fill: ${errorText && state !== 'disabled' ? flat.valueColor['error'] : flat.valueColor[state]};
         }
-
-        &:not(:disabled) {
-            &:not(:hover) {
-                ${getButtonStyle(
-                    valueColor.default,
-                    labelColor.default,
-                    valueColor.error,
-                    bgColor.activated,
-                    bgColor.default,
-                    areOptionsVisible,
-                    errorText
-                )}
-            }
-            &:active {
-                ${getButtonStyle(
-                    valueColor.pressed,
-                    labelColor.pressed,
-                    valueColor.error,
-                    bgColor.activated,
-                    bgColor.pressed,
-                    areOptionsVisible,
-                    errorText
-                )}
-            }
-            &:not(:active):hover {
-                ${getButtonStyle(
-                    valueColor.hovered,
-                    labelColor.hovered,
-                    valueColor.error,
-                    bgColor.activated,
-                    bgColor.hovered,
-                    areOptionsVisible,
-                    errorText
-                )}
-                box-shadow: 0 0.2rem 0.8rem ${rgba(bgColor.hovered, 0.35)};
-            }
+        ${Label.Style} {
+            color: ${flat.labelColor[state]};
         }
     `;
 };
+
+const buttonStyle = (props: FlatVariantProps) => css`
+    &:disabled {
+        ${getButtonStyle({ ...props, state: 'disabled' })}
+    }
+    &:not(:disabled) {
+        &:not(:hover) {
+            ${getButtonStyle({ ...props, state: 'default' })}
+        }
+        &:active {
+            ${getButtonStyle({ ...props, state: 'pressed' })}
+        }
+        &:not(:active):hover {
+            ${getButtonStyle({ ...props, state: 'hovered' })}
+            box-shadow: 0 0.2rem 0.8rem ${rgba(props.theme.singleSelect.variant.flat.bgColor.hovered, 0.35)};
+        }
+    }
+`;
 
 export const OuterWrapper = styled('div')<{ fullWidth: boolean }>`
     position: relative;
@@ -84,8 +48,13 @@ export const OuterWrapper = styled('div')<{ fullWidth: boolean }>`
     width: ${({ fullWidth }) => (fullWidth ? '100%' : 'min-content')};
 `;
 
-export const HelperText = styled('span')<{ isError: boolean; textColor: string }>`
-    color: ${({ textColor }) => textColor};
+export const HelperText = styled('span')<{ isError: boolean; disabled: boolean }>`
+    color: ${({ isError, disabled, theme: { singleSelect } }) =>
+        disabled
+            ? singleSelect.variant.flat.labelColor.disabled
+            : isError
+            ? singleSelect.variant.flat.labelColor.error
+            : singleSelect.variant.flat.labelColor.default};
     font-size: 1rem;
     line-height: 1.6rem;
     margin-left: 0.8rem;

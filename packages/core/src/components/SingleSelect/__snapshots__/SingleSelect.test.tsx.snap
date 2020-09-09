@@ -2337,6 +2337,7 @@ exports[`SingleSelect component with flat variant should render disabled state p
       </button>
       <span
         class="c6"
+        disabled=""
         id="medly-singleSelect-helper-text"
       >
         Helper Text
