@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.2](https://github.com/medly/medly-components/compare/@medly-components/layout@1.9.1...@medly-components/layout@1.9.2) (2020-09-09)
+
+
+### Bug Fixes
+
+* padding issues in sidenav component ([ee98ede](https://github.com/medly/medly-components/commit/ee98ede1cb3f34f77a1296223516d3163ec70df4))
+
+
+
+
+
 ## [1.9.1](https://github.com/medly/medly-components/compare/@medly-components/layout@1.9.0...@medly-components/layout@1.9.1) (2020-09-08)
 
 
