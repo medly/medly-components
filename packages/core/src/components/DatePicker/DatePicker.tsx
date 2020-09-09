@@ -42,7 +42,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
     }, [date]);
 
     const validateDay = useCallback((month: number) => {
-            if (month === 2) return 28;
+            if (month === 2) return 28; // TODO:- Put logic for Leap Year
             if (month === 4 || month === 6 || month === 9 || month === 11) return 30;
             return 31;
         }, []),
@@ -50,13 +50,20 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             const value = event.target.value,
                 values = value.split('/'),
                 month = values[0],
-                day = values[1];
+                day = values[1],
+                year = values[2],
+                parsedDate = parseToDate(value, displayFormat);
             if (parseInt(month) > 12) {
                 setErrorText('Enter valid Month');
             } else if (parseInt(day) > validateDay(parseInt(month))) {
                 setErrorText('Enter valid Day');
+            } else if (parseInt(year) < parseInt(`${new Date().getFullYear()}`) - 200 ) {
+                setErrorText('Enter valid Year');
             } else {
                 setErrorText('');
+            }
+            if(parsedDate.toString() !== 'Invalid Date') {
+                onChange(parsedDate);
             }
             if (!disabled) {
                 setFormattedDate(value);
