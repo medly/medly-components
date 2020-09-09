@@ -10,15 +10,16 @@ const getButtonStyle = ({
     errorText,
     state
 }: FlatVariantProps & { state: 'default' | 'hovered' | 'pressed' | 'disabled' }) => {
-    const { flat } = theme.singleSelect.variant;
+    const { valueColor, labelColor, bgColor } = theme.singleSelect.variant.flat;
+    const disabled = state === 'disabled';
     return css`
-        color: ${errorText && state !== 'disabled' ? flat.valueColor['error'] : flat.valueColor[state]};
-        background: ${areOptionsVisible ? flat.bgColor['activated'] : flat.bgColor[state]};
+        color: ${valueColor[disabled ? 'disabled' : errorText ? 'error' : state]};
+        background: ${bgColor[areOptionsVisible ? 'activated' : state]};
         * {
-            fill: ${errorText && state !== 'disabled' ? flat.valueColor['error'] : flat.valueColor[state]};
+            fill: ${valueColor[disabled ? 'disabled' : errorText ? 'error' : state]};
         }
         ${Label.Style} {
-            color: ${flat.labelColor[state]};
+            color: ${labelColor[state]};
         }
     `;
 };
@@ -49,12 +50,8 @@ export const OuterWrapper = styled('div')<{ fullWidth: boolean }>`
 `;
 
 export const HelperText = styled('span')<{ isError: boolean; disabled: boolean }>`
-    color: ${({ isError, disabled, theme: { singleSelect } }) =>
-        disabled
-            ? singleSelect.variant.flat.labelColor.disabled
-            : isError
-            ? singleSelect.variant.flat.labelColor.error
-            : singleSelect.variant.flat.labelColor.default};
+    color: ${({ isError, disabled, theme }) =>
+        theme.singleSelect.variant.flat.labelColor[disabled ? 'disabled' : isError ? 'error' : 'default']};
     font-size: 1rem;
     line-height: 1.6rem;
     margin-left: 0.8rem;
