@@ -12,7 +12,9 @@ export const NavGroup: FC<NavGroupProps> & WithStyle = props => {
 
     return (
         <NavGroupStyled {...restProps} showTitle={isHovered || isExpanded}>
-            <Text>{title}</Text>
+            <Text textVariant="h5" uppercase>
+                {title}
+            </Text>
             <NavList>{children}</NavList>
         </NavGroupStyled>
     );

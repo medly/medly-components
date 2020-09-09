@@ -1,5 +1,5 @@
 import { Text } from '@medly-components/core';
-import { getFontStyle, styled } from '@medly-components/utils';
+import { styled } from '@medly-components/utils';
 
 export const NavGroupStyled = styled.li<{ showTitle: boolean }>`
     position: relative;
@@ -7,28 +7,25 @@ export const NavGroupStyled = styled.li<{ showTitle: boolean }>`
         text-overflow: ellipsis;
         white-space: nowrap;
         justify-self: left;
-        margin-left: 2.4rem;
+        margin: 3.1rem 2.4rem 1.4rem;
         user-select: none;
+        display: block;
         transition: opacity 200ms ease-out, color 100ms ease-out;
         opacity: ${({ showTitle }) => (showTitle ? 1 : 0)};
         color: ${({ theme }) => theme.sideNav.group.title.color};
-        ${({ theme }) => getFontStyle({ theme, fontVariant: theme.sideNav.navItem.text.textVariant, fontWeight: 'Medium' })}
-    }
-    &:first-child {
-        margin-top: 1.5rem;
     }
     &:not(:first-child) {
-        margin-top: 3rem;
         &::before {
             content: '';
-            width: calc(100% - ${({ theme }) => theme.spacing.M2});
+            width: ${({ showTitle }) => (showTitle ? 0 : `calc(100% - 3.2rem) `)};
+            transition: width 200ms ease-out;
             margin: 0 auto;
             display: block;
             position: absolute;
             border-style: solid;
             border-color: ${({ theme }) => theme.sideNav.separatorColor};
             border-width: ${({ showTitle }) => (showTitle ? 0 : '1px')};
-            top: 0;
+            top: ${({ theme }) => theme.font.variants.h5.lineHeight};
             left: 0;
             right: 0;
         }

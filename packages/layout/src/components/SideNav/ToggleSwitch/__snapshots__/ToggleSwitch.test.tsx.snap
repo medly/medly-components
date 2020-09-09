@@ -114,7 +114,7 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   -ms-flex: 1;
   flex: 1;
   padding: 0;
-  margin: 1.6rem 0 0 0;
+  margin: 0;
   list-style-type: none;
   overflow-x: hidden;
   overflow-y: auto;
@@ -135,6 +135,7 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   align-self: end;
   position: relative;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .c0::-webkit-scrollbar {
@@ -304,7 +305,7 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   -ms-flex: 1;
   flex: 1;
   padding: 0;
-  margin: 1.6rem 0 0 0;
+  margin: 0;
   list-style-type: none;
   overflow-x: hidden;
   overflow-y: auto;
@@ -325,6 +326,7 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   align-self: end;
   position: relative;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .c0::-webkit-scrollbar {
@@ -494,7 +496,7 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   -ms-flex: 1;
   flex: 1;
   padding: 0;
-  margin: 1.6rem 0 0 0;
+  margin: 0;
   list-style-type: none;
   overflow-x: hidden;
   overflow-y: auto;
@@ -515,6 +517,7 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   align-self: end;
   position: relative;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .c0::-webkit-scrollbar {
