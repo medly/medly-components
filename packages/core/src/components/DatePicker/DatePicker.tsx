@@ -25,7 +25,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             placeholder,
             ...restProps
         } = props,
-        id = props.id || 'medly-datepicker',
+        id = props.id || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
         date: Date | null = useMemo(
             () => (value instanceof Date ? value : typeof value === 'string' ? parseToDate(value, displayFormat) : null),
             [value, displayFormat]
@@ -75,6 +75,8 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             restProps.onBlur && restProps.onBlur(event);
         }, []),
         onFocusHandler = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
+            event.preventDefault();
+            toggleCalendar(true);
             setActive(true);
             restProps.onFocus && restProps.onFocus(event);
         }, []),
