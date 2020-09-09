@@ -36,7 +36,7 @@ exports[`DatePicker component should render properly when value is of date type 
   grid-template-areas: 'label field' 'random description';
 }
 
-.c0 .sc-fzoLag {
+.c0 .sc-fznJRM {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -62,7 +62,7 @@ exports[`DatePicker component should render properly when value is of date type 
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .sc-fzoLag {
+.c4 .sc-fznJRM {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -192,7 +192,7 @@ exports[`DatePicker component should render properly when value is of date type 
       >
         
         <div
-          class="sc-fzoLag c5"
+          class="sc-fznJRM c5"
         >
           <input
             autocomplete="off"
@@ -247,7 +247,7 @@ exports[`DatePicker component should render properly when value is of string typ
   grid-template-areas: 'label field' 'random description';
 }
 
-.c0 .sc-fzoLag {
+.c0 .sc-fznJRM {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -273,7 +273,7 @@ exports[`DatePicker component should render properly when value is of string typ
   grid-template-areas: 'field' 'description';
 }
 
-.c4 .sc-fzoLag {
+.c4 .sc-fznJRM {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -403,7 +403,7 @@ exports[`DatePicker component should render properly when value is of string typ
       >
         
         <div
-          class="sc-fzoLag c5"
+          class="sc-fznJRM c5"
         >
           <input
             autocomplete="off"

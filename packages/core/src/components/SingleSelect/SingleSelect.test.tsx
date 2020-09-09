@@ -22,31 +22,43 @@ describe('SingleSelect component', () => {
         }
     ];
 
-    describe.each(['outlined', 'filled'])('with %s variant', (variant: SelectProps['variant']) => {
+    describe.each(['outlined', 'filled', 'flat'])('with %s variant', (variant: SelectProps['variant']) => {
         it('should render properly', () => {
             const { container } = render(<SingleSelect options={options} variant={variant} value="Dummy1" />);
             expect(container).toMatchSnapshot();
         });
 
-        it('should render disabled state properly ', () => {
-            const { container } = render(<SingleSelect disabled options={options} variant={variant} value="Dummy1" />);
+        it('should render with label properly', () => {
+            const { container } = render(
+                <SingleSelect label="Label" helperText="Helper Text" options={options} variant={variant} value="Dummy1" />
+            );
             expect(container).toMatchSnapshot();
         });
 
+        it('should render disabled state properly ', () => {
+            const { container } = render(
+                <SingleSelect disabled helperText="Helper Text" options={options} variant={variant} value="Dummy1" />
+            );
+            expect(container).toMatchSnapshot();
+        });
+
+        it('should render helper text properly', () => {
+            const { getByText } = render(<SingleSelect helperText="Helper Text" options={options} variant={variant} value="Dummy1" />);
+            expect(getByText('Helper Text')).toBeInTheDocument();
+        });
+
         it('should render error text properly', () => {
-            const { container, getByText } = render(
-                    <SingleSelect errorText="Something went wrong" options={options} variant={variant} value="Dummy1" />
-                ),
-                inputEl = container.querySelector('#medly-singleSelect-input') as HTMLInputElement;
-            fireEvent.click(inputEl);
-            expect(getByText('Dummy1')).toHaveStyle(`color: rgb(204, 0, 0)`);
-            expect(container.querySelector('span')).toMatchSnapshot();
-            expect(container.querySelector('svg')).toMatchSnapshot();
+            const { getByText } = render(
+                <SingleSelect errorText="Something went wrong" options={options} variant={variant} value="Dummy1" />
+            );
+            fireEvent.click(getByText('Something went wrong'));
+            expect(getByText('Something went wrong')).toHaveStyle(`color: rgb(204, 0, 0)`);
         });
 
         it('should render options correctly on click on the input', () => {
             render(<SingleSelect options={options} variant={variant} />);
-            fireEvent.click(screen.getByRole('textbox'));
+            const role = variant === 'flat' ? 'button' : 'textbox';
+            fireEvent.click(screen.getByRole(role));
             expect(screen.getByRole('list')).toMatchSnapshot();
         });
     });

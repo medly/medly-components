@@ -866,6 +866,37 @@ exports[`Form should render properly with initial state 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
+.c12 {
+  color: #13181D;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  margin: 0px 0.8rem 0px 0px;
+  cursor: default;
+}
+
+.c12::after {
+  color: red;
+  content: ' *';
+}
+
+.c40 {
+  color: #13181D;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  margin: 0px 0.8rem 0px 0px;
+  cursor: default;
+}
+
 .c57 {
   position: relative;
   display: -webkit-inline-box;
@@ -909,37 +940,6 @@ exports[`Form should render properly with initial state 1`] = `
   fill: #13181D;
 }
 
-.c12 {
-  color: #13181D;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
-  cursor: default;
-}
-
-.c12::after {
-  color: red;
-  content: ' *';
-}
-
-.c40 {
-  color: #13181D;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
-  cursor: default;
-}
-
 .c13 {
   grid-area: label;
   -webkit-align-self: center;
@@ -968,7 +968,7 @@ exports[`Form should render properly with initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c11 .sc-fzoKki {
+.c11 .sc-fznMnq {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -994,7 +994,7 @@ exports[`Form should render properly with initial state 1`] = `
   grid-template-areas: 'field' 'description';
 }
 
-.c42 .sc-fzoKki {
+.c42 .sc-fznMnq {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2056,7 +2056,7 @@ exports[`Form should render properly with initial state 1`] = `
           >
             
             <div
-              class="sc-fzoKki c43"
+              class="sc-fznMnq c43"
             >
               <input
                 autocomplete="off"
@@ -2106,7 +2106,7 @@ exports[`Form should render properly with initial state 1`] = `
               class="c50"
             >
               <div
-                class="sc-fzoaKM c51"
+                class="sc-fzowVh c51"
                 data-testid="DateRangeInputGrid"
               >
                 <label
@@ -3159,6 +3159,37 @@ exports[`Form should render properly without initial state 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
+.c15 {
+  color: #13181D;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  margin: 0px 0.8rem 0px 0px;
+  cursor: default;
+}
+
+.c15::after {
+  color: red;
+  content: ' *';
+}
+
+.c40 {
+  color: #13181D;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  margin: 0px 0.8rem 0px 0px;
+  cursor: default;
+}
+
 .c57 {
   position: relative;
   display: -webkit-inline-box;
@@ -3202,37 +3233,6 @@ exports[`Form should render properly without initial state 1`] = `
   fill: #13181D;
 }
 
-.c15 {
-  color: #13181D;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
-  cursor: default;
-}
-
-.c15::after {
-  color: red;
-  content: ' *';
-}
-
-.c40 {
-  color: #13181D;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  margin: 0px 0.8rem 0px 0px;
-  cursor: default;
-}
-
 .c16 {
   grid-area: label;
   -webkit-align-self: center;
@@ -3261,7 +3261,7 @@ exports[`Form should render properly without initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c14 .sc-fzoKki {
+.c14 .sc-fznMnq {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3287,7 +3287,7 @@ exports[`Form should render properly without initial state 1`] = `
   grid-template-areas: 'field' 'description';
 }
 
-.c42 .sc-fzoKki {
+.c42 .sc-fznMnq {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4272,7 +4272,7 @@ exports[`Form should render properly without initial state 1`] = `
           >
             
             <div
-              class="sc-fzoKki c43"
+              class="sc-fznMnq c43"
             >
               <input
                 autocomplete="off"
@@ -4322,7 +4322,7 @@ exports[`Form should render properly without initial state 1`] = `
               class="c50"
             >
               <div
-                class="sc-fzoaKM c51"
+                class="sc-fzowVh c51"
                 data-testid="DateRangeInputGrid"
               >
                 <label
