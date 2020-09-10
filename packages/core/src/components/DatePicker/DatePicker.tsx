@@ -25,7 +25,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             placeholder,
             ...restProps
         } = props,
-        id = props.id || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
+        id = props.id || props.label || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
         date: Date | null = useMemo(
             () => (value instanceof Date ? value : typeof value === 'string' ? parseToDate(value, displayFormat) : null),
             [value, displayFormat]
@@ -112,7 +112,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
 
     const suffixEl = () => (
         <DateIcon variant={restProps.variant} errorText={errorText} active={active} disabled={disabled} size={size}>
-            <DateRangeIcon onClick={iconClickHandler} size={size}></DateRangeIcon>
+            <DateRangeIcon onClick={iconClickHandler} size={size}/>
         </DateIcon>
     );
 

@@ -1,6 +1,6 @@
 import { WithStyle } from '@medly-components/utils/src';
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react';
-import Button from '../Button';
+import { KeyboardArrowRightIcon, KeyboardArrowLeftIcon } from '@medly-components/icons';
 import { PopoverContext } from '../Popover/Popover.context';
 import SingleSelect from '../SingleSelect';
 import Text from '../Text';
@@ -31,7 +31,7 @@ export const Calendar: React.FC<Props> & WithStyle = React.memo(
             isPrevBtnDisabled = useMemo(() => year === minYear && month === minMonth, [month, year, minMonth, minYear]),
             isNextBtnDisabled = useMemo(() => year === maxYear && month === maxMonth, [month, year, maxMonth, maxYear]);
 
-        const weekDays = useMemo(() => WEEK_DAYS.map(label => <Text key={label}>{label}</Text>), []),
+        const weekDays = useMemo(() => WEEK_DAYS.map((label, index) => <Text key={`${label}_${index}`}>{label}</Text>), []),
             monthOptions = useMemo(
                 () =>
                     CALENDAR_MONTHS.reduce((acc, curr, index) => {
@@ -91,8 +91,12 @@ export const Calendar: React.FC<Props> & WithStyle = React.memo(
                             variant="outlined"
                         />
                     </Styled.MonthAndYearSelection>
-                    <Button variant="flat" disabled={isPrevBtnDisabled} onClick={handlePreviousBtnClick}>{`<`}</Button>
-                    <Button variant="flat" disabled={isNextBtnDisabled} onClick={handleNextBtnClick}>{`>`}</Button>
+                    <Styled.MonthNavigation disabled={isPrevBtnDisabled} onClick={handlePreviousBtnClick}>
+                        <KeyboardArrowLeftIcon />
+                    </Styled.MonthNavigation>
+                    <Styled.MonthNavigation disabled={isNextBtnDisabled} onClick={handleNextBtnClick}>
+                        <KeyboardArrowRightIcon />
+                    </Styled.MonthNavigation>
                 </Styled.Header>
                 <Styled.CalendarGrid>
                     {weekDays}

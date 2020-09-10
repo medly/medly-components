@@ -1,5 +1,4 @@
 import { centerAligned, css, styled } from '@medly-components/utils';
-import { ButtonStyled } from '../Button/Button.styled';
 import SingleSelect from '../SingleSelect';
 import TextField from '../TextField';
 import { DateProps } from './types';
@@ -12,19 +11,30 @@ export const Calendar = styled('div')`
     width: max-content;
     height: max-content;
 `;
-
+export const MonthNavigation = styled.button<{ disabled: boolean }>`
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0.5rem;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: ${({ theme, disabled }) => theme.colors.grey[disabled ? '400' : '800']};
+  svg {
+    fill: ${({ theme, disabled }) => theme.colors.grey[disabled ? '400' : '800']};
+  }
+`;
 export const Header = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    ${ButtonStyled} {
-        padding: 1rem;
-    }
 `;
 
 export const MonthAndYearSelection = styled.div`
-    width: 100%;
     display: flex;
     margin: 0.5rem 0;
     align-items: center;
@@ -43,10 +53,13 @@ export const MonthAndYearSelection = styled.div`
 
     ${TextField.Style} {
         min-width: unset;
-        max-width: 10.8rem;
+        max-width: 9.5rem;
         & > div {
             height: 3.5rem;
-            padding: 0 1rem;
+            padding: 0 0.5rem;
+            &::after {
+              border: none;
+            }
         }
     }
 `;
