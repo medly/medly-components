@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.24.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.23.0...@medly-components/core@1.24.0) (2020-09-10)
+
+
+### Bug Fixes
+
+* cursor issue in the singleselect flat variant ([d2acfb5](https://github.com/medly/medly-components/commit/d2acfb5ecb9a4f6fe6cedb5fee963b6bae16a5c9))
+
+
+### Features
+
+* make whole dateRangePIcker clickable ([1fb75e1](https://github.com/medly/medly-components/commit/1fb75e15e67f304f1c7cb2e8ee95b771407206e6))
+* use button font variant in button ([81e96e5](https://github.com/medly/medly-components/commit/81e96e57385a1d36117aba343d32bf41a5420e27))
+
+
+
+
+
 # [1.23.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.22.1...@medly-components/core@1.23.0) (2020-09-10)
 
 

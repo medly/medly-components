@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.10.0...@medly-components/layout@1.11.0) (2020-09-10)
+
+
+### Bug Fixes
+
+* padding issue in the sidenav component ([fa5c4c8](https://github.com/medly/medly-components/commit/fa5c4c8e524560fdde06f8ebe756a7fdba5fd2f8))
+
+
+### Features
+
+* add shadow around selected nav item in sidenav component ([c0c1ec9](https://github.com/medly/medly-components/commit/c0c1ec9176b08d46f3d7386a6e1bd3014a1a92cb))
+
+
+
+
+
 # [1.10.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.9.2...@medly-components/layout@1.10.0) (2020-09-10)
 
 
