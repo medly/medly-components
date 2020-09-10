@@ -1,6 +1,13 @@
-import { getFontStyle, styled } from '@medly-components/utils';
+import { getFontStyle, InjectClassName, styled } from '@medly-components/utils';
 import { getPosition } from '../Popover/Popup/styled/Popup.styled';
 import { StyledProps } from './types';
+
+export const Wrapper = styled(InjectClassName)`
+    &,
+    * {
+        cursor: pointer;
+    }
+`;
 
 export const DateRangePickerStyled = styled('div')<StyledProps>`
     display: flex;
@@ -35,7 +42,7 @@ export const DateRangePickerStyled = styled('div')<StyledProps>`
                     content: '';
                     width: 1px;
                     height: 100%;
-                    background-color: grey;
+                    background-color: ${({ theme }) => theme.colors.grey[300]};
                 }
                 svg {
                     display: none;
@@ -54,6 +61,7 @@ export const DateRangePickerStyled = styled('div')<StyledProps>`
                     box-sizing: border-box;
                     box-shadow: none;
                     background: transparent;
+                    user-select: none;
                     background-clip: padding-box;
 
                     &:disabled {
