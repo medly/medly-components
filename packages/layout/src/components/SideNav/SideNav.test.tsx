@@ -5,9 +5,9 @@ import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { SideNav } from './SideNav';
 
-const renderer = (active: string, mockOnChange = jest.fn()) =>
+const renderer = (active: string, mockOnChange = jest.fn(), hideShadow = false) =>
     render(
-        <SideNav active={active} onChange={mockOnChange}>
+        <SideNav active={active} onChange={mockOnChange} hideShadow={hideShadow}>
             <SideNav.List>
                 <SideNav.Nav path="/home">
                     <HomeIcon />
@@ -33,8 +33,13 @@ const renderer = (active: string, mockOnChange = jest.fn()) =>
 describe('SideNav', () => {
     afterEach(cleanup);
 
-    it('should render properly', () => {
+    it('should render properly with shadow', () => {
         const { container } = renderer('/home');
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly without shadow', () => {
+        const { container } = renderer('/home', jest.fn(), true);
         expect(container).toMatchSnapshot();
     });
 

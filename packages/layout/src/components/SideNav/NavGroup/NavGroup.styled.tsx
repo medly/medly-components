@@ -17,7 +17,7 @@ export const NavGroupStyled = styled.li<{ showTitle: boolean }>`
     &:not(:first-child) {
         &::before {
             content: '';
-            width: ${({ showTitle }) => (showTitle ? 0 : `calc(100% - 3.2rem) `)};
+            width: ${({ showTitle }) => (showTitle ? 0 : `calc(100% - 4rem) `)};
             transition: width 200ms ease-out;
             margin: 0 auto;
             display: block;

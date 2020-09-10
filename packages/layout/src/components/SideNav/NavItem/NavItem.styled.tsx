@@ -49,7 +49,8 @@ export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ .
         justify-self: left;
         transition: opacity 200ms ease-out, color 100ms ease-out;
         opacity: ${({ isHovered, isExpanded }) => (isHovered || isExpanded ? 1 : 0)};
-        ${({ theme }) => getFontStyle({ theme, fontVariant: theme.sideNav.navItem.text.textVariant, fontWeight: 'Medium' })}
+        ${({ theme, isActive }) =>
+            getFontStyle({ theme, fontVariant: theme.sideNav.navItem.text.textVariant, fontWeight: isActive ? 'Medium' : 'Regular' })}
     }
 
     ${props => getStyle({ ...props, state: props.isActive ? 'active' : 'default' })};
