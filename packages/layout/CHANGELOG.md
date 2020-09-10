@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.9.2...@medly-components/layout@1.10.0) (2020-09-10)
+
+
+### Features
+
+* added flat variant for single-select and improved options design ([982130e](https://github.com/medly/medly-components/commit/982130e7167132c3c1dfb24a23016130ab7b9cff))
+* make shadow configurable in the sidenav ([0f3c9e1](https://github.com/medly/medly-components/commit/0f3c9e1a719d878fb56eb1dcbf9fb979687c53b5))
+
+
+
+
+
 ## [1.9.2](https://github.com/medly/medly-components/compare/@medly-components/layout@1.9.1...@medly-components/layout@1.9.2) (2020-09-09)
 
 

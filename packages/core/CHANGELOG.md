@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.23.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.22.1...@medly-components/core@1.23.0) (2020-09-10)
+
+
+### Bug Fixes
+
+* updated styling of flat variant and options according to feedback ([feb02ea](https://github.com/medly/medly-components/commit/feb02eaa06053d71b86f1b565d7afc1edacd550e))
+
+
+### Features
+
+* added flat variant for single-select and improved options design ([982130e](https://github.com/medly/medly-components/commit/982130e7167132c3c1dfb24a23016130ab7b9cff))
+
+
+
+
+
 ## [1.22.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.22.0...@medly-components/core@1.22.1) (2020-09-08)
 
 **Note:** Version bump only for package @medly-components/core

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.16.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.15.0...@medly-components/theme@1.16.0) (2020-09-10)
+
+
+### Features
+
+* added flat variant for single-select and improved options design ([982130e](https://github.com/medly/medly-components/commit/982130e7167132c3c1dfb24a23016130ab7b9cff))
+
+
+
+
+
 # [1.15.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.14.0...@medly-components/theme@1.15.0) (2020-09-08)
 
 
