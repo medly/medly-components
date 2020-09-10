@@ -17,4 +17,6 @@ export interface Props extends Common {
     textVariant?: FontVariants;
     /** Text weight */
     textWeight?: FontWeights;
+    /** Text alignment */
+    textAlign?: string;
 }

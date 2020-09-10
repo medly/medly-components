@@ -31,7 +31,7 @@ export const Calendar: React.FC<Props> & WithStyle = React.memo(
             isPrevBtnDisabled = useMemo(() => year === minYear && month === minMonth, [month, year, minMonth, minYear]),
             isNextBtnDisabled = useMemo(() => year === maxYear && month === maxMonth, [month, year, maxMonth, maxYear]);
 
-        const weekDays = useMemo(() => WEEK_DAYS.map((label, index) => <Text key={`${label}_${index}`}>{label}</Text>), []),
+        const weekDays = useMemo(() => WEEK_DAYS.map((label, index) => <Text textAlign="center" as="span" textWeight="Strong" key={`${label}_${index}`}>{label}</Text>), []),
             monthOptions = useMemo(
                 () =>
                     CALENDAR_MONTHS.reduce((acc, curr, index) => {

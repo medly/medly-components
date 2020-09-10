@@ -80,6 +80,10 @@ const activeDate = () => css`
     &:hover {
         background-color: ${({ theme }) => theme.datePicker.selectedDateBgColor};
         color: ${({ theme }) => theme.datePicker.selectedDateColor};
+        > span {
+          font-weight: bold;
+        }
+
     }
 `;
 const currentDate = () => css`
@@ -91,8 +95,7 @@ const nonActiveMonthDate = () => css`
 
 export const Date = styled('button').attrs({ type: 'button' })<DateProps>`
     background-color: transparent;
-    border: 0.2rem solid;
-    border-color: transparent;
+    border: 0.2rem solid transparent;
     text-decoration: none;
     cursor: pointer;
     user-select: none;
