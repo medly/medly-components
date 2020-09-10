@@ -41,29 +41,12 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
         setFormattedDate(date ? format(date, displayFormat) : '');
     }, [date]);
 
-    const validateDay = useCallback((month: number) => {
-            if (month === 2) return 28; // TODO:- Put logic for Leap Year
-            if (month === 4 || month === 6 || month === 9 || month === 11) return 30;
-            return 31;
-        }, []),
-        onChangeHandler = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-            const value = event.target.value,
-                values = value.split('/'),
-                month = values[0],
-                day = values[1],
-                year = values[2],
+    const onChangeHandler = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
+            const value = event.target.value.replace(/\s/g, ''),
                 parsedDate = parseToDate(value, displayFormat);
-            if (parseInt(month) > 12) {
-                setErrorText('Enter valid Month');
-            } else if (parseInt(day) > validateDay(parseInt(month))) {
-                setErrorText('Enter valid Day');
-            } else if (parseInt(year) < parseInt(`${new Date().getFullYear()}`) - 200 ) {
-                setErrorText('Enter valid Year');
-            } else {
-                setErrorText('');
-            }
             if(parsedDate.toString() !== 'Invalid Date') {
                 onChange(parsedDate);
+                setErrorText('');
             }
             if (!disabled) {
                 setFormattedDate(value);
@@ -74,7 +57,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             toggleCalendar(true);
         }, []),
         onBlurHandler = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
-            const value = event.target.value;
+            const value = event.target.value.replace(/\s/g, '');
             setActive(false);
             if (parseToDate(value, displayFormat).toString() === 'Invalid Date' && required) {
                 setErrorText('Enter valid date');
@@ -88,7 +71,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             restProps.onFocus && restProps.onFocus(event);
         }, []),
         validate = useCallback((event: React.InvalidEvent<HTMLInputElement>) => {
-            if (event.target.value === '' && required) {
+            if (event.target.value.replace(/\s/g, '') === '' && required) {
                 setErrorText('Please fill in this field.');
             }
             restProps.onInvalid && restProps.onInvalid(event);
@@ -119,7 +102,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
     return (
         <Wrapper ref={wrapperRef} fullWidth={fullWidth} minWidth={minWidth} size={size}>
             <InputMask
-                mask="99/99/9999"
+                mask="99 / 99 / 9999"
                 // @ts-ignore
                 maskPlaceholder={displayFormat}
                 placeholder={placeholder}

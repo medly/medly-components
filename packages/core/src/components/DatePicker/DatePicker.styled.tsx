@@ -43,6 +43,10 @@ export const Wrapper = styled.div<StyleProps>`
 
     ${TextField.Style} {
         margin: 0;
+        input {
+          text-transform: uppercase;
+        }
+
     }
     ${InnerWrapper} {
         padding: 0 0.8rem 0 1.6rem;
