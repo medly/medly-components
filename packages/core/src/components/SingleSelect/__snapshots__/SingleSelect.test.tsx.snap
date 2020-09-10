@@ -1307,7 +1307,7 @@ exports[`SingleSelect component with filled variant should render options correc
   top: 5.6rem;
   left: 0;
   margin: 0;
-  padding: 1.2rem 0.8rem;
+  padding: 0.8rem;
   width: 100%;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
@@ -2184,7 +2184,7 @@ exports[`SingleSelect component with flat variant should render disabled state p
   color: #b0bcc8;
   font-size: 1rem;
   line-height: 1.6rem;
-  margin-left: 0.8rem;
+  margin: 0.5rem 0.8rem 0;
   white-space: initial;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2214,6 +2214,7 @@ exports[`SingleSelect component with flat variant should render disabled state p
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  height: 3.2rem;
   padding: 0.7rem 0.4rem 0.9rem 0.8rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
@@ -2431,7 +2432,7 @@ exports[`SingleSelect component with flat variant should render options correctl
   top: 3.6rem;
   left: 0;
   margin: 0;
-  padding: 1.2rem 0.8rem;
+  padding: 0.8rem;
   width: 100%;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
@@ -2604,6 +2605,7 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  height: 3.2rem;
   padding: 0.7rem 0.4rem 0.9rem 0.8rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
@@ -2824,7 +2826,7 @@ exports[`SingleSelect component with flat variant should render with label prope
   color: #303C48;
   font-size: 1rem;
   line-height: 1.6rem;
-  margin-left: 0.8rem;
+  margin: 0.5rem 0.8rem 0;
   white-space: initial;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2854,6 +2856,7 @@ exports[`SingleSelect component with flat variant should render with label prope
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
+  height: 3.2rem;
   padding: 0.7rem 0.4rem 0.9rem 0.8rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
@@ -3420,7 +3423,7 @@ exports[`SingleSelect component with outlined variant should render options corr
   top: 5.6rem;
   left: 0;
   margin: 0;
-  padding: 1.2rem 0.8rem;
+  padding: 0.8rem;
   width: 100%;
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;

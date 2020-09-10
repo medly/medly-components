@@ -8,7 +8,7 @@ export const Options = styled('ul')<StyledOptionsProps & WithThemeProp>`
     top: ${({ size, isNested, variant }) => (isNested ? 0 : variant === 'flat' ? '3.6rem' : size === 'S' ? '4rem' : '5.6rem')};
     left: ${({ isNested }) => (isNested ? `calc(100% - 0.4rem) ` : 0)};
     margin: 0;
-    padding: 1.2rem 0.8rem;
+    padding: 0.8rem;
     width: ${({ isNested }) => (isNested ? 'max-content' : '100%')};
     min-width: fit-content;
     list-style: none;

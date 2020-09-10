@@ -54,7 +54,7 @@ export const HelperText = styled('span')<{ isError: boolean; disabled: boolean }
         theme.singleSelect.variant.flat.labelColor[disabled ? 'disabled' : isError ? 'error' : 'default']};
     font-size: 1rem;
     line-height: 1.6rem;
-    margin-left: 0.8rem;
+    margin: 0.5rem 0.8rem 0;
     white-space: initial;
     user-select: none;
 `;
@@ -72,6 +72,7 @@ export const FlatVariantStyled = styled('button')<FlatVariantProps>`
     font-family: inherit;
     text-decoration: none;
     transition: all 100ms ease-out;
+    height: 3.2rem;
     padding: 0.7rem 0.4rem 0.9rem 0.8rem;
     width: ${({ fullWidth }) => fullWidth && '100%'};
     border-radius: 0.8rem;
