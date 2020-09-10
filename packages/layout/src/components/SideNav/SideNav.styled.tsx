@@ -20,7 +20,6 @@ export const Nav = styled('nav')<SideNavStyledProps>`
     flex-direction: column;
     transition: all 200ms ease-out;
     background-color: ${({ theme }) => theme.sideNav.bgColor};
-    padding-right: ${({ isHovered, isExpanded, theme }) => (isHovered || isExpanded ? theme.spacing.S3 : 0)};
     width: ${({ isHovered, isExpanded, theme }) => (isHovered || isExpanded ? theme.sideNav.openSize : theme.sideNav.closeSize)};
     box-shadow: ${({ isExpanded, isHovered, hideShadow }) =>
         !isExpanded && isHovered && !hideShadow ? `0.2rem 0 1.6rem #B0BCC8` : 'none'};

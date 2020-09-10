@@ -25,7 +25,7 @@ export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ .
     text-decoration: none;
     box-sizing: border-box;
     display: grid;
-    margin-left: 1.2rem;
+    margin: 0 1.2rem;
     border-radius: ${({ navItem }) => navItem.borderRadius};
     grid-template-columns: ${({ openSize, closeSize }) => `calc(${closeSize} - 1.2rem) calc(${openSize} - ${closeSize} - 1.2rem) `};
     justify-items: flex-start;

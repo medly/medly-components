@@ -33,7 +33,7 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   text-decoration: none;
   box-sizing: border-box;
   display: grid;
-  margin-left: 1.2rem;
+  margin: 0 1.2rem;
   border-radius: 0.4rem;
   grid-template-columns: calc(7.2rem - 1.2rem) calc(25.6rem - 7.2rem - 1.2rem);
   justify-items: flex-start;
@@ -224,7 +224,7 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   text-decoration: none;
   box-sizing: border-box;
   display: grid;
-  margin-left: 1.2rem;
+  margin: 0 1.2rem;
   border-radius: 0.4rem;
   grid-template-columns: calc(7.2rem - 1.2rem) calc(25.6rem - 7.2rem - 1.2rem);
   justify-items: flex-start;
@@ -415,7 +415,7 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   text-decoration: none;
   box-sizing: border-box;
   display: grid;
-  margin-left: 1.2rem;
+  margin: 0 1.2rem;
   border-radius: 0.4rem;
   grid-template-columns: calc(7.2rem - 1.2rem) calc(25.6rem - 7.2rem - 1.2rem);
   justify-items: flex-start;

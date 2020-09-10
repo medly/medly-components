@@ -22,9 +22,7 @@ export const NavGroupStyled = styled.li<{ showTitle: boolean }>`
             margin: 0 auto;
             display: block;
             position: absolute;
-            border-style: solid;
-            border-color: ${({ theme }) => theme.sideNav.separatorColor};
-            border-width: ${({ showTitle }) => (showTitle ? 0 : '1px')};
+            border-top: ${({ showTitle }) => (showTitle ? 0 : '1px')} solid ${({ theme }) => theme.sideNav.separatorColor};
             top: ${({ theme }) => theme.font.variants.h5.lineHeight};
             left: 0;
             right: 0;
