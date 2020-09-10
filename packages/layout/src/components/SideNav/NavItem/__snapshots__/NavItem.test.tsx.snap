@@ -65,7 +65,7 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   color: #13181D;
 }
 
-.c2 > .c3:first-of-type > .sc-oUoif:first-of-type > .c0 {
+.c2 > .c3:first-of-type > .sc-pcJja:first-of-type > .c0 {
   margin-top: 0.6rem;
 }
 
@@ -193,11 +193,11 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   color: #13181D;
 }
 
-.c2 > .c4:first-of-type > .sc-oUoif:first-of-type > .c0 {
+.c2 > .c4:first-of-type > .sc-pcJja:first-of-type > .c0 {
   margin-top: 0.6rem;
 }
 
-.c3 > .c4:first-of-type > .sc-oUoif:first-of-type > .c0 {
+.c3 > .c4:first-of-type > .sc-pcJja:first-of-type > .c0 {
   margin-top: 0.6rem;
 }
 
@@ -325,11 +325,11 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   color: #13181D;
 }
 
-.c2 > .c4:first-of-type > .sc-oUoif:first-of-type > .c0 {
+.c2 > .c4:first-of-type > .sc-pcJja:first-of-type > .c0 {
   margin-top: 0.6rem;
 }
 
-.c3 > .c4:first-of-type > .sc-oUoif:first-of-type > .c0 {
+.c3 > .c4:first-of-type > .sc-pcJja:first-of-type > .c0 {
   margin-top: 0.6rem;
 }
 
