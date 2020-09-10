@@ -2231,13 +2231,11 @@ exports[`SingleSelect component with flat variant should render disabled state p
   align-items: center;
 }
 
+.c2,
 .c2 * {
+  cursor: pointer;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-}
-
-.c2:hover {
-  cursor: pointer;
 }
 
 .c2:focus {
@@ -2246,6 +2244,10 @@ exports[`SingleSelect component with flat variant should render disabled state p
 
 .c2:disabled {
   cursor: not-allowed;
+}
+
+.c2:disabled * {
+  cursor: pointer;
 }
 
 .c2:disabled {
@@ -2622,13 +2624,11 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   align-items: center;
 }
 
+.c2,
 .c2 * {
+  cursor: pointer;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-}
-
-.c2:hover {
-  cursor: pointer;
 }
 
 .c2:focus {
@@ -2637,6 +2637,10 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
 
 .c2:disabled {
   cursor: not-allowed;
+}
+
+.c2:disabled * {
+  cursor: pointer;
 }
 
 .c2:disabled {
@@ -2873,13 +2877,11 @@ exports[`SingleSelect component with flat variant should render with label prope
   align-items: center;
 }
 
+.c2,
 .c2 * {
+  cursor: pointer;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-}
-
-.c2:hover {
-  cursor: pointer;
 }
 
 .c2:focus {
@@ -2888,6 +2890,10 @@ exports[`SingleSelect component with flat variant should render with label prope
 
 .c2:disabled {
   cursor: not-allowed;
+}
+
+.c2:disabled * {
+  cursor: pointer;
 }
 
 .c2:disabled {

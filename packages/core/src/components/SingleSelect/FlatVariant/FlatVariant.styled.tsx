@@ -1,5 +1,4 @@
-import { centerAligned, InjectClassName, styled } from '@medly-components/utils';
-import { css } from '@medly-components/utils';
+import { centerAligned, css, InjectClassName, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Label from '../../Label';
 import { FlatVariantProps } from './types';
@@ -77,12 +76,10 @@ export const FlatVariantStyled = styled('button')<FlatVariantProps>`
     width: ${({ fullWidth }) => fullWidth && '100%'};
     border-radius: 0.8rem;
 
+    &,
     * {
-        transition: all 100ms ease-out;
-    }
-
-    &:hover {
         cursor: pointer;
+        transition: all 100ms ease-out;
     }
 
     &:focus {
@@ -91,6 +88,9 @@ export const FlatVariantStyled = styled('button')<FlatVariantProps>`
 
     &:disabled {
         cursor: not-allowed;
+        * {
+            cursor: pointer;
+        }
     }
 
     ${buttonStyle};
