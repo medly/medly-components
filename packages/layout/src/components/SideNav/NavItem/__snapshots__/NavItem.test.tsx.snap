@@ -17,6 +17,7 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
@@ -38,6 +39,7 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
@@ -91,6 +93,7 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
@@ -112,6 +115,7 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
@@ -141,6 +145,7 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
@@ -162,6 +167,7 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
@@ -219,6 +225,7 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
@@ -240,6 +247,7 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
@@ -269,6 +277,7 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
@@ -290,6 +299,7 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;

@@ -41,7 +41,6 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  overflow: hidden;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -64,6 +63,7 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
@@ -232,7 +232,6 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  overflow: hidden;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -255,6 +254,7 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
@@ -423,7 +423,6 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  overflow: hidden;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -446,6 +445,7 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;

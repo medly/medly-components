@@ -1,5 +1,6 @@
 import { Text } from '@medly-components/core';
 import { styled } from '@medly-components/utils';
+import NavList from '../NavList';
 
 export const NavGroupStyled = styled.li<{ showTitle: boolean }>`
     position: relative;
@@ -13,6 +14,9 @@ export const NavGroupStyled = styled.li<{ showTitle: boolean }>`
         transition: opacity 200ms ease-out, color 100ms ease-out;
         opacity: ${({ showTitle }) => (showTitle ? 1 : 0)};
         color: ${({ theme }) => theme.sideNav.group.title.color};
+    }
+    ${NavList} {
+        overflow: visible;
     }
     &:not(:first-child) {
         &::before {

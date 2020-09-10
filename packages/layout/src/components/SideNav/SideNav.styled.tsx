@@ -18,6 +18,7 @@ export const Nav = styled('nav')<SideNavStyledProps>`
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
+    overflow: hidden;
     transition: all 200ms ease-out;
     background-color: ${({ theme }) => theme.sideNav.bgColor};
     width: ${({ isHovered, isExpanded, theme }) => (isHovered || isExpanded ? theme.sideNav.openSize : theme.sideNav.closeSize)};
@@ -25,7 +26,7 @@ export const Nav = styled('nav')<SideNavStyledProps>`
         !isExpanded && isHovered && !hideShadow ? `0.2rem 0 1.6rem #B0BCC8` : 'none'};
 
     & > ${NavList}:first-of-type {
-        margin-top: 3.7rem;
+        padding-top: 3.7rem;
         & > ${NavGroupStyled}:first-of-type > ${Text.Style} {
             margin-top: 0.6rem;
         }

@@ -4,15 +4,9 @@ import { defaultTheme } from '@medly-components/theme';
 import { css, getFontStyle, styled } from '@medly-components/utils';
 import { NavItemStyledProps } from './types';
 
-const getStyle = ({
-    navItem,
-    state,
-    isExpanded,
-    isHovered
-}: NavItemStyledProps & { state: 'default' | 'hovered' | 'pressed' | 'active' }) => css`
-    background-color: ${(isExpanded || isHovered) && navItem.bgColor[state]};
+const getStyle = ({ navItem, state }: NavItemStyledProps & { state: 'default' | 'hovered' | 'pressed' | 'active' }) => css`
+    background-color: ${navItem.bgColor[state]};
     ${SvgIcon} {
-        background-color: ${!isExpanded && !isHovered && navItem.bgColor[state]};
         * {
             fill: ${navItem.icon.color[state]};
         }
@@ -27,10 +21,10 @@ export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ .
     display: grid;
     margin: 0 1.2rem;
     border-radius: ${({ navItem }) => navItem.borderRadius};
+    box-shadow: ${({ theme, isActive }) => isActive && `0 0 2.4rem ${theme.colors.grey[100]}`};
     grid-template-columns: ${({ openSize, closeSize }) => `calc(${closeSize} - 1.2rem) calc(${openSize} - ${closeSize} - 1.2rem) `};
     justify-items: flex-start;
     align-items: center;
-    overflow: hidden;
     user-select: none;
     min-height: ${({ navItem }) => navItem.minHeight};
     transition: all 100ms ease-out;
@@ -47,6 +41,7 @@ export const NavItemStyled = styled('li').attrs(({ theme: { sideNav } }) => ({ .
         text-overflow: ellipsis;
         white-space: nowrap;
         justify-self: left;
+        overflow: hidden;
         transition: opacity 200ms ease-out, color 100ms ease-out;
         opacity: ${({ isHovered, isExpanded }) => (isHovered || isExpanded ? 1 : 0)};
         ${({ theme, isActive }) =>
