@@ -98,9 +98,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 <SearchIconWrapper areOptionsVisible={areOptionsVisible} isTyping={isTyping} size={size}>
                     <SearchIcon title="search icon" size={size} onClick={handleSearchIconClick} />
                 </SearchIconWrapper>
-                {areOptionsVisible && (
-                    <Options ref={optionsRef} options={options} variant="filled" onOptionClick={handleOptionClick}></Options>
-                )}
+                {areOptionsVisible && <Options ref={optionsRef} options={options} variant="filled" onOptionClick={handleOptionClick} />}
             </Styled.SearchBoxWrapper>
         );
     })

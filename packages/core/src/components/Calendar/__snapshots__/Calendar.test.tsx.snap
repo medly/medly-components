@@ -536,7 +536,7 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c6 ul li {
-  padding: 0 1rem;
+  padding: 0 0 0 1rem;
 }
 
 .c6 .c8 {
@@ -546,7 +546,7 @@ exports[`Calendar Component should render given date 1`] = `
 
 .c6 .c8 > div {
   height: 3.5rem;
-  padding: 0 1rem;
+  padding: 0 0 0 1rem;
 }
 
 .c19 {

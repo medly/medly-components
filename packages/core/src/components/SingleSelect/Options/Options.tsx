@@ -8,7 +8,14 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(
     React.forwardRef(({ options, onOptionClick, hasError, ...restProps }, ref) => (
         <Styled.Options {...restProps} ref={ref}>
             {options.map(option => (
-                <Option key={option.value} {...option} onClick={onOptionClick} hasError={hasError} size={restProps.size} />
+                <Option
+                    key={option.value}
+                    {...option}
+                    variant={restProps.variant}
+                    onClick={onOptionClick}
+                    hasError={hasError}
+                    size={restProps.size}
+                />
             ))}
         </Styled.Options>
     ))

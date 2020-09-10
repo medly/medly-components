@@ -63,6 +63,7 @@ const getSmallOptionStyle = ({ theme }: Props) => {
 export const getOptionsStyles = ({ theme, size, areOptionsVisible }: Props & { areOptionsVisible?: boolean }) => css`
     box-shadow: none;
     border: none;
+    padding: 0;
     box-sizing: content-box;
     left: -1.5px;
     overflow-x: hidden;

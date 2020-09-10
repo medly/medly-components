@@ -21,7 +21,7 @@ export const MonthAndYearSelection = styled.div`
         max-height: 200px;
         overflow: scroll;
         li {
-            padding: 0 1rem;
+            padding: 0 0 0 1rem;
         }
     }
 
@@ -30,7 +30,7 @@ export const MonthAndYearSelection = styled.div`
         max-width: 10rem;
         & > div {
             height: 3.5rem;
-            padding: 0 1rem;
+            padding: 0 0 0 1rem;
         }
     }
 `;

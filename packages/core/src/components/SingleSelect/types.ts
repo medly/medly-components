@@ -28,7 +28,7 @@ export interface SelectProps extends InputProps, WithThemeProp {
     /** Options */
     options: Option[];
     /** Variants */
-    variant?: 'outlined' | 'filled';
+    variant?: 'outlined' | 'filled' | 'flat';
     /** Sizes */
     size?: 'S' | 'M';
     /** Set it it true to enable search functionality */

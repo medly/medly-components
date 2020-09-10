@@ -37,7 +37,7 @@ export const Wrapper = styled('div')<SelectWrapperProps>`
             ${Suffix} {
                 * {
                     fill: ${({ theme, variant, disabled, isErrorPresent }) =>
-                        !disabled && !isErrorPresent && theme.textField[variant].default.textColor};
+                        !disabled && !isErrorPresent && variant !== 'flat' && theme.textField[variant].default.textColor};
                 }
             }
         }
