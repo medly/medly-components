@@ -4,7 +4,9 @@ import { SingleSelectTheme } from './types';
 const singleSelect: SingleSelectTheme = {
     shadowColor: '#B0BCC8',
     variant: {
+        // outlined & filled variant theme is coming from textField
         flat: {
+            height: '3.2rem',
             bgColor: {
                 default: colors.white,
                 hovered: colors.grey[50],
@@ -28,6 +30,13 @@ const singleSelect: SingleSelectTheme = {
                 disabled: colors.grey[400],
                 error: colors.red[500]
             }
+        }
+    },
+    options: {
+        borderRadius: {
+            flat: '0.8rem',
+            filled: '0 0 0.4rem 0.4rem',
+            outlined: '0.4rem'
         }
     },
     option: {

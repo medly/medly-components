@@ -2431,7 +2431,7 @@ exports[`SingleSelect component with flat variant should render options correctl
   z-index: 1000;
   position: absolute;
   background: #ffffff;
-  top: 3.6rem;
+  top: 3.2rem;
   left: 0;
   margin: 0;
   padding: 0.8rem;
@@ -3437,7 +3437,7 @@ exports[`SingleSelect component with outlined variant should render options corr
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
-  border-radius: 0 0 0.4rem 0.4rem;
+  border-radius: 0.4rem;
 }
 
 <ul

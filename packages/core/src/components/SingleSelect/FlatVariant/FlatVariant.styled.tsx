@@ -71,11 +71,10 @@ export const FlatVariantStyled = styled('button')<FlatVariantProps>`
     font-family: inherit;
     text-decoration: none;
     transition: all 100ms ease-out;
-    height: 3.2rem;
+    height: ${({ theme }) => theme.singleSelect.variant.flat.height};
     padding: 0.7rem 0.4rem 0.9rem 0.8rem;
     width: ${({ fullWidth }) => fullWidth && '100%'};
-    border-radius: 0.8rem;
-
+    border-radius: ${({ theme }) => theme.singleSelect.options.borderRadius.flat};
     &,
     * {
         cursor: pointer;

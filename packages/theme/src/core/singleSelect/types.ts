@@ -4,6 +4,7 @@ export interface SingleSelectTheme {
     shadowColor: string;
     variant: {
         flat: {
+            height: string;
             bgColor: {
                 default: string;
                 hovered: string;
@@ -27,6 +28,13 @@ export interface SingleSelectTheme {
                 disabled: string;
                 error: string;
             };
+        };
+    };
+    options: {
+        borderRadius: {
+            flat: string;
+            filled: string;
+            outlined: string;
         };
     };
     option: {
