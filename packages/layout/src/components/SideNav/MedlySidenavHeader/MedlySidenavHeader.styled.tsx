@@ -24,7 +24,7 @@ export const SidenavHeader = styled('div')<HeaderStyledProps>`
 
     &::after {
         content: '';
-        width: calc(100% - ${({ theme }) => theme.spacing.M2});
+        width: calc(100% - ${({ theme }) => theme.spacing.M3});
         display: block;
         position: absolute;
         border-top: 1px solid ${({ theme }) => theme.sideNav.separatorColor};

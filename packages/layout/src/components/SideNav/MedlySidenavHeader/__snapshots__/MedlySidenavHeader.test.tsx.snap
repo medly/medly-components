@@ -27,7 +27,7 @@ exports[`Medly sidenav header should render properly when it is hovered 1`] = `
 
 .c0::after {
   content: '';
-  width: calc(100% - 3.2rem);
+  width: calc(100% - 4.0rem);
   display: block;
   position: absolute;
   border-top: 1px solid #dfe4e9;
@@ -162,7 +162,7 @@ exports[`Medly sidenav header should render properly when it is not hovered 1`] 
 
 .c0::after {
   content: '';
-  width: calc(100% - 3.2rem);
+  width: calc(100% - 4.0rem);
   display: block;
   position: absolute;
   border-top: 1px solid #dfe4e9;

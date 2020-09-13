@@ -13,10 +13,11 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   line-height: 2.2rem;
 }
 
-.c2 .c0 {
+.c4 .c0 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
@@ -30,19 +31,20 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c2 .c0 {
+.c4 .c0 {
   color: #126AFA;
 }
 
-.c3 .c0 {
+.c5 .c0 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 400;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
@@ -51,16 +53,20 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3 .c0 {
+.c5 .c0 {
   color: #607890;
 }
 
-.c3:hover .c0 {
+.c5:hover .c0 {
   color: #303C48;
 }
 
-.c3:active .c0 {
+.c5:active .c0 {
   color: #13181D;
+}
+
+.c2 > .c3:first-of-type > .sc-pcJja:first-of-type > .c0 {
+  margin-top: 0.6rem;
 }
 
 <span
@@ -83,10 +89,11 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   line-height: 2.2rem;
 }
 
-.c2 .c0 {
+.c5 .c0 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
@@ -100,19 +107,20 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c2 .c0 {
+.c5 .c0 {
   color: #126AFA;
 }
 
-.c3 .c0 {
+.c6 .c0 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 400;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
@@ -121,22 +129,23 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3 .c0 {
+.c6 .c0 {
   color: #607890;
 }
 
-.c3:hover .c0 {
+.c6:hover .c0 {
   color: #303C48;
 }
 
-.c3:active .c0 {
+.c6:active .c0 {
   color: #13181D;
 }
 
-.c4 .c0 {
+.c7 .c0 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
@@ -150,19 +159,20 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c4 .c0 {
+.c7 .c0 {
   color: #126AFA;
 }
 
-.c5 .c0 {
+.c8 .c0 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 400;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
@@ -171,16 +181,24 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c5 .c0 {
+.c8 .c0 {
   color: #607890;
 }
 
-.c5:hover .c0 {
+.c8:hover .c0 {
   color: #303C48;
 }
 
-.c5:active .c0 {
+.c8:active .c0 {
   color: #13181D;
+}
+
+.c2 > .c4:first-of-type > .sc-pcJja:first-of-type > .c0 {
+  margin-top: 0.6rem;
+}
+
+.c3 > .c4:first-of-type > .sc-pcJja:first-of-type > .c0 {
+  margin-top: 0.6rem;
 }
 
 <span
@@ -203,10 +221,11 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   line-height: 2.2rem;
 }
 
-.c2 .c0 {
+.c5 .c0 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
@@ -220,19 +239,20 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c2 .c0 {
+.c5 .c0 {
   color: #126AFA;
 }
 
-.c3 .c0 {
+.c6 .c0 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 0;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 400;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
@@ -241,22 +261,23 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3 .c0 {
+.c6 .c0 {
   color: #607890;
 }
 
-.c3:hover .c0 {
+.c6:hover .c0 {
   color: #303C48;
 }
 
-.c3:active .c0 {
+.c6:active .c0 {
   color: #13181D;
 }
 
-.c4 .c0 {
+.c7 .c0 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
@@ -270,19 +291,20 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c4 .c0 {
+.c7 .c0 {
   color: #126AFA;
 }
 
-.c5 .c0 {
+.c8 .c0 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
+  overflow: hidden;
   -webkit-transition: opacity 200ms ease-out,color 100ms ease-out;
   transition: opacity 200ms ease-out,color 100ms ease-out;
   opacity: 1;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 400;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
@@ -291,16 +313,24 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c5 .c0 {
+.c8 .c0 {
   color: #607890;
 }
 
-.c5:hover .c0 {
+.c8:hover .c0 {
   color: #303C48;
 }
 
-.c5:active .c0 {
+.c8:active .c0 {
   color: #13181D;
+}
+
+.c2 > .c4:first-of-type > .sc-pcJja:first-of-type > .c0 {
+  margin-top: 0.6rem;
+}
+
+.c3 > .c4:first-of-type > .sc-pcJja:first-of-type > .c0 {
+  margin-top: 0.6rem;
 }
 
 <span

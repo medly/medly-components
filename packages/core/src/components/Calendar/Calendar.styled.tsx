@@ -1,5 +1,4 @@
 import { centerAligned, css, styled } from '@medly-components/utils';
-import SingleSelect from '../SingleSelect';
 import TextField from '../TextField';
 import { DateProps } from './types';
 
@@ -12,20 +11,20 @@ export const Calendar = styled('div')`
     height: max-content;
 `;
 export const MonthNavigation = styled.button<{ disabled: boolean }>`
-  border: none;
-  background-color: transparent;
-  border-radius: 50%;
-  padding: 0.5rem;
-  outline: none;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  cursor: pointer;
-  color: ${({ theme, disabled }) => theme.colors.grey[disabled ? '400' : '800']};
-  svg {
-    fill: ${({ theme, disabled }) => theme.colors.grey[disabled ? '400' : '800']};
-  }
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 0.5rem;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: ${({ theme, disabled }) => theme.colors.grey[disabled ? '400' : '800']};
+    svg {
+        fill: ${({ theme, disabled }) => theme.colors.grey[disabled ? '400' : '800']};
+    }
 `;
 export const Header = styled.div`
     width: 100%;
@@ -39,15 +38,13 @@ export const MonthAndYearSelection = styled.div`
     margin: 0.5rem 0;
     align-items: center;
     justify-content: space-around;
-    ${SingleSelect.Style} {
-        margin: 0;
-        ul {
-            top: 3.5rem;
-            max-height: 20rem;
-            overflow: auto;
-            li {
-                padding: 0 1rem;
-            }
+
+    ul {
+        top: 3.5rem;
+        max-height: 200px;
+        overflow: scroll;
+        li {
+            padding: 0 0 0 1rem;
         }
     }
 
@@ -56,10 +53,7 @@ export const MonthAndYearSelection = styled.div`
         max-width: 9.5rem;
         & > div {
             height: 3.5rem;
-            padding: 0 0.5rem;
-            &::after {
-              border: none;
-            }
+            padding: 0 0 0 1rem;
         }
     }
 `;
@@ -81,9 +75,8 @@ const activeDate = () => css`
         background-color: ${({ theme }) => theme.datePicker.selectedDateBgColor};
         color: ${({ theme }) => theme.datePicker.selectedDateColor};
         > span {
-          font-weight: bold;
+            font-weight: bold;
         }
-
     }
 `;
 const currentDate = () => css`

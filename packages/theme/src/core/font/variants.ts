@@ -50,15 +50,15 @@ const variants: FontVariantTheme = {
         letterSpacing: '0rem'
     },
     button1: {
-        fontSize: '1.4rem',
+        fontSize: '1.6rem',
         fontWeight: 'Medium',
-        lineHeight: '2.0rem',
+        lineHeight: '2.6rem',
         letterSpacing: '0rem'
     },
     button2: {
-        fontSize: '1.2rem',
+        fontSize: '1.4rem',
         fontWeight: 'Medium',
-        lineHeight: '1.6rem',
+        lineHeight: '2.2rem',
         letterSpacing: '0rem'
     }
 };

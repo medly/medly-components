@@ -22,7 +22,7 @@ export const ChipArea = styled.div<WithThemeProp>`
 
 export const OptionsWrapper = styled.div<WithThemeProp & { size: 'S' | 'M' }>`
     position: absolute;
-    top: ${({ size }) => (size === 'S' ? '4rem' : '5.6rem')};
+    top: ${({ theme, size }) => theme.textField.height[size]};
     box-shadow: ${({ theme }) => `0px 2px 8px ${theme.colors.grey[400]}`};
     background-color: ${({ theme }) => theme.colors.white};
     box-sizing: border-box;

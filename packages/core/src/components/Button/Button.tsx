@@ -8,13 +8,7 @@ export const Button: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => (
         <ButtonStyled ref={ref} {...props}>
             {React.Children.map(props.children, c => {
-                return isValidStringOrNumber(c) ? (
-                    <Text textVariant={props.size === 'M' ? 'body1' : 'body2'} textWeight="Medium">
-                        {c}
-                    </Text>
-                ) : (
-                    c
-                );
+                return isValidStringOrNumber(c) ? <Text textVariant={props.size === 'M' ? 'button1' : 'button2'}>{c}</Text> : c;
             })}
         </ButtonStyled>
     ))

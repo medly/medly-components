@@ -9,7 +9,7 @@ import { OptionProps } from './types';
 const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
     const ref = useRef(null),
         [areOptionsVisible, setOptionsVisibilityState] = useState(false),
-        { value, theme, label, disabled, selected, onClick, hasError, hovered, size } = props,
+        { value, theme, label, disabled, selected, onClick, hasError, hovered, size, variant } = props,
         id = label.replace(/ /g, '-'),
         enterPress = useKeyPress('Enter'),
         leftPress = useKeyPress('ArrowLeft'),
@@ -50,23 +50,27 @@ const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
             ref={ref}
             disabled={disabled}
             selected={selected}
+            variant={variant}
             hasError={hasError}
             hovered={hovered}
             onClick={handleOnClick}
             onMouseEnter={showNestedOptions}
             onMouseLeave={hideNestedOptions}
         >
-            <Text textWeight={selected ? 'Medium' : 'Regular'} textVariant={theme.singleSelect.option.textVariant[size]}>
+            <Text
+                textWeight={selected ? 'Medium' : 'Regular'}
+                textVariant={variant === 'flat' ? 'body3' : theme.singleSelect.option.textVariant[size]}
+            >
                 {label}
             </Text>
-            {isNested ? <ArrowRightIcon /> : selected && <CheckIcon />}
+            {isNested ? <ArrowRightIcon size={variant === 'flat' ? 'S' : 'M'} /> : selected && variant !== 'flat' && <CheckIcon />}
             {areOptionsVisible && isNested && (
                 <Options
                     isNested
                     size={size}
                     id={`${id}-options`}
                     options={value}
-                    variant="outlined"
+                    variant={variant}
                     onOptionClick={onClick}
                     hasError={hasError}
                 />

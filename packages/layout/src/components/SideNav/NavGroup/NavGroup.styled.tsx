@@ -1,31 +1,35 @@
 import { Text } from '@medly-components/core';
-import { getFontStyle, styled } from '@medly-components/utils';
+import { styled } from '@medly-components/utils';
+import NavList from '../NavList';
 
 export const NavGroupStyled = styled.li<{ showTitle: boolean }>`
-    margin-top: 3rem;
     position: relative;
     & > ${Text.Style} {
         text-overflow: ellipsis;
         white-space: nowrap;
         justify-self: left;
-        margin-left: 2.4rem;
+        margin: 3.1rem 2.4rem 1.4rem;
         user-select: none;
+        display: block;
         transition: opacity 200ms ease-out, color 100ms ease-out;
         opacity: ${({ showTitle }) => (showTitle ? 1 : 0)};
         color: ${({ theme }) => theme.sideNav.group.title.color};
-        ${({ theme }) => getFontStyle({ theme, fontVariant: theme.sideNav.navItem.text.textVariant, fontWeight: 'Medium' })}
     }
-    &::before {
-        content: '';
-        width: calc(100% - ${({ theme }) => theme.spacing.M2});
-        margin: 0 auto;
-        display: block;
-        position: absolute;
-        border-style: solid;
-        border-color: ${({ theme }) => theme.sideNav.separatorColor};
-        border-width: ${({ showTitle }) => (showTitle ? 0 : '1px')};
-        top: 0;
-        left: 0;
-        right: 0;
+    ${NavList} {
+        overflow: visible;
+    }
+    &:not(:first-child) {
+        &::before {
+            content: '';
+            width: ${({ showTitle }) => (showTitle ? 0 : `calc(100% - 4rem) `)};
+            transition: width 200ms ease-out;
+            margin: 0 auto;
+            display: block;
+            position: absolute;
+            border-top: ${({ showTitle }) => (showTitle ? 0 : '1px')} solid ${({ theme }) => theme.sideNav.separatorColor};
+            top: ${({ theme }) => theme.font.variants.h5.lineHeight};
+            left: 0;
+            right: 0;
+        }
     }
 `;

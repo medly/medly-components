@@ -9,10 +9,11 @@ export const ToggleContainer = styled(NavList)`
     align-self: end;
     position: relative;
     width: 100%;
+    margin-top: 2rem;
 
     &::before {
         content: '';
-        width: calc(100% - ${({ theme }) => theme.spacing.M2});
+        width: calc(100% - ${({ theme }) => theme.spacing.M3});
         margin: 0 auto;
         display: block;
         position: absolute;

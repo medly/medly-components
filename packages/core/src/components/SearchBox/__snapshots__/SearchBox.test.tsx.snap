@@ -30,8 +30,13 @@ exports[`SearchBox options should render options when user search option specifi
 
 .c10 {
   cursor: pointer;
-  padding: 0 1.6rem;
+  padding: 0 0.8rem;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
   min-height: 4rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -48,6 +53,10 @@ exports[`SearchBox options should render options when user search option specifi
   background-color: #F7F8F9;
 }
 
+.c10:active {
+  background-color: #eff2f4;
+}
+
 .c10 > .c11 {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -57,8 +66,6 @@ exports[`SearchBox options should render options when user search option specifi
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   color: #13181D;
 }
 
@@ -73,22 +80,17 @@ exports[`SearchBox options should render options when user search option specifi
 .c8 {
   z-index: 1000;
   position: absolute;
-  top: 5.6rem;
+  background: #ffffff;
   left: 0;
   margin: 0;
-  padding: 0;
+  padding: 0.8rem;
   width: 100%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   list-style: none;
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
-  border-radius: 0 0 0.4rem 0.4rem;
-}
-
-.c8 li:first-child {
-  border-radius: 0;
-}
-
-.c8 li:last-child {
   border-radius: 0 0 0.4rem 0.4rem;
 }
 
@@ -173,6 +175,7 @@ exports[`SearchBox options should render options when user search option specifi
 .c13 .c7 {
   box-shadow: none;
   border: none;
+  padding: 0;
   box-sizing: content-box;
   left: -1.5px;
   overflow-x: hidden;
@@ -247,6 +250,7 @@ exports[`SearchBox options should render options when user search option specifi
 .c0 .c7 {
   box-shadow: none;
   border: none;
+  padding: 0;
   box-sizing: content-box;
   left: -1.5px;
   overflow-x: hidden;
@@ -507,6 +511,7 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 .c0 .sc-AxhCb {
   box-shadow: none;
   border: none;
+  padding: 0;
   box-sizing: content-box;
   left: -1.5px;
   overflow-x: hidden;
@@ -736,6 +741,7 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 .c0 .sc-AxhCb {
   box-shadow: none;
   border: none;
+  padding: 0;
   box-sizing: content-box;
   left: -1.5px;
   overflow-x: hidden;

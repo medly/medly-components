@@ -1,12 +1,13 @@
 import { ChevronDownIcon } from '@medly-components/icons';
 import { useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { TextField } from '../TextField/TextField';
+import TextField from '../TextField';
 import { filterOptions, getDefaultSelectedOption, getUpdatedOptions } from './helpers';
 import Options from './Options';
 import * as Styled from './SingleSelect.styled';
 import { Option, SelectProps } from './types';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
+import FlatVariant from './FlatVariant';
 
 export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
@@ -44,8 +45,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
 
         const showOptions = useCallback(() => {
                 setOptionsVisibilityState(true);
-                // @ts-ignore
-                inputRef.current.setSelectionRange(inputValue.length, inputValue.length);
+                inputRef.current.setSelectionRange && inputRef.current.setSelectionRange(inputValue.length, inputValue.length);
                 inputRef.current.focus();
             }, [inputValue]),
             hideOptions = useCallback(() => {
@@ -132,6 +132,21 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             handleOuterClick();
         }, wrapperRef);
 
+        const commonProps = {
+            id: `${selectId}`,
+            fullWidth: true,
+            ref: inputRef,
+            value: inputValue,
+            label: inputProps.label,
+            helperText: inputProps.helperText,
+            errorText: inputProps.errorText,
+            onFocus: handleFocus,
+            onBlur: handleBlur,
+            onKeyPress: handleKeyPress,
+            disabled,
+            areOptionsVisible
+        };
+
         return (
             <Styled.Wrapper
                 id={`${selectId}-wrapper`}
@@ -143,25 +158,22 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 onClick={toggleOptions}
                 areOptionsVisible={areOptionsVisible}
             >
-                <TextField
-                    key={selectedOption.value}
-                    variant={variant}
-                    fullWidth
-                    autoComplete="off"
-                    id={`${selectId}`}
-                    onFocus={handleFocus}
-                    onBlur={handleBlur}
-                    disabled={disabled}
-                    value={inputValue}
-                    ref={inputRef}
-                    onChange={handleInputChange}
-                    suffix={ChevronDownIcon}
-                    onKeyPress={handleKeyPress}
-                    {...inputProps}
-                />
+                {variant == 'flat' ? (
+                    <FlatVariant {...commonProps} />
+                ) : (
+                    <TextField
+                        key={selectedOption.value}
+                        variant={variant}
+                        autoComplete="off"
+                        onChange={handleInputChange}
+                        suffix={ChevronDownIcon}
+                        {...commonProps}
+                        {...inputProps}
+                    />
+                )}
                 {!disabled && areOptionsVisible && (
                     <Options
-                        size={inputProps.size}
+                        size={variant === 'flat' ? 'S' : inputProps.size}
                         ref={optionsRef}
                         variant={variant}
                         id={`${selectId}-options`}

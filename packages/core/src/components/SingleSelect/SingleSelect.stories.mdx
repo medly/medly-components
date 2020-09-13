@@ -40,17 +40,21 @@ Basic single select component.
 
 #### Variants
 
-There are two variants available `filled` & `outlined`.
+There are three variants available `filled`, `outlined` & `flat`.
+
+> **Note**: `flat` variant does not support `size`, `required` and `isSearchable` props. Also, its not advised to use `helperText` and `errorText` props in `flat` variant.
 
 <Preview>
     <PreviewContent>
         {() => {
             const [filledValue, setFilledValue] = useState('Dummy4 option'),
-                [outlinedValue, setOutlinedValue] = useState('Dummy4 option');
+                [outlinedValue, setOutlinedValue] = useState('Dummy4 option'),
+                [flatValue, setFlatValue] = useState('Dummy4 option');
             return (
                 <>
                     <SingleSelect
                         variant="filled"
+                        size="S"
                         options={options}
                         value={filledValue}
                         onChange={setFilledValue}
@@ -59,11 +63,20 @@ There are two variants available `filled` & `outlined`.
                     />
                     <SingleSelect
                         variant="outlined"
+                        size="S"
                         options={options}
                         value={outlinedValue}
                         onChange={setOutlinedValue}
                         label="Pharmacy"
                         helperText="Outlined Variant"
+                    />
+                    <SingleSelect
+                        variant="flat"
+                        options={options}
+                        value={flatValue}
+                        onChange={setFlatValue}
+                        label="Pharmacy"
+                        helperText="Flat Variant"
                     />
                 </>
             );
@@ -79,11 +92,13 @@ As mentioned in the `TextField` component, either you can pass `errorText` or `v
     <PreviewContent>
         {() => {
             const [filledValue, setFilledValue] = useState('Dummy4 option'),
-                [outlinedValue, setOutlinedValue] = useState('Dummy4 option');
+                [outlinedValue, setOutlinedValue] = useState('Dummy4 option'),
+                [flatValue, setFlatValue] = useState('Dummy4 option');
             return (
                 <>
                     <SingleSelect
                         variant="filled"
+                        size="S"
                         errorText="Something wrong"
                         options={options}
                         value={filledValue}
@@ -92,11 +107,21 @@ As mentioned in the `TextField` component, either you can pass `errorText` or `v
                     />
                     <SingleSelect
                         variant="outlined"
+                        size="S"
                         errorText="Something wrong"
                         options={options}
                         value={outlinedValue}
                         onChange={setOutlinedValue}
                         label="Pharmacy"
+                    />
+                    <SingleSelect
+                        variant="flat"
+                        errorText="Something wrong"
+                        options={options}
+                        value={flatValue}
+                        onChange={setFlatValue}
+                        label="Pharmacy"
+                        helperText="Flat Variant"
                     />
                 </>
             );
@@ -106,7 +131,7 @@ As mentioned in the `TextField` component, either you can pass `errorText` or `v
 
 ##### With Icons
 
-You can also provode prefix icon, which will always take the label color.
+You can also provide prefix icon, which will always take the label color.
 
 <Preview>
     <PreviewContent>

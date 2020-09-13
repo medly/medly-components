@@ -9,6 +9,7 @@ import { Context } from './SideNav.context';
 export interface SideNavStyledProps extends WithThemeProp {
     isHovered?: boolean;
     isExpanded?: boolean;
+    hideShadow?: boolean;
 }
 
 export interface SideNavProps {
@@ -20,6 +21,8 @@ export interface SideNavProps {
     defaultActive?: string;
     /** This func will be called on the item click */
     onChange?: (key: string) => void;
+    /** Set it true to hide the shadow */
+    hideShadow?: boolean;
 }
 
 export interface SideNavStaticProps {
