@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.24.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.24.1...@medly-components/core@1.24.2) (2020-09-14)
+
+
+### Bug Fixes
+
+* removed use of none from head cell sort ([9e14a70](https://github.com/medly/medly-components/commit/9e14a703abbb7343d9b0e72c643d8e2549dc051f))
+
+
+
+
+
 ## [1.24.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.24.0...@medly-components/core@1.24.1) (2020-09-14)
 
 
