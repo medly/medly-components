@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.17.1](https://github.com/medly/medly-components/compare/@medly-components/theme@1.17.0...@medly-components/theme@1.17.1) (2020-09-14)
+
+
+### Bug Fixes
+
+* fix height issues in the singleselect component ([79c47b9](https://github.com/medly/medly-components/commit/79c47b9f4f74fc8d7dc56945a8e003d7f2bcdd5c))
+
+
+
+
+
 # [1.17.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.16.0...@medly-components/theme@1.17.0) (2020-09-10)
 
 
