@@ -112,7 +112,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
 Table.defaultProps = {
     size: 'M',
     rowIdentifier: 'id',
-    defaultSortOrder: 'asc',
+    defaultSortOrder: 'desc',
     rowClickDisableKey: '',
     rowSelectionDisableKey: ''
 };

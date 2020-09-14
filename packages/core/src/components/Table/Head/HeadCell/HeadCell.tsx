@@ -46,7 +46,7 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
 
     const handleSortIconClick = useCallback(() => {
         if (sortable && !isLoading) {
-            const order = sortState === 'asc' ? 'desc' : 'asc';
+            const order = sortState === 'none' ? defaultSortOrder : sortState === 'asc' ? 'desc' : 'asc';
             setSortState(order);
             onSortChange(field, order);
         }
