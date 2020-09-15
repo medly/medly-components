@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.24.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.24.2...@medly-components/core@1.24.3) (2020-09-15)
+
+
+### Bug Fixes
+
+* row selection issue in table component ([8916ef4](https://github.com/medly/medly-components/commit/8916ef485cf69b6171eec896746d5a8730ab0dd9))
+* transition effect in singleselect flat variant ([42f2825](https://github.com/medly/medly-components/commit/42f2825a1961ac782b29944fd79b6c78b58e802b))
+
+
+
+
+
 ## [1.24.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.24.1...@medly-components/core@1.24.2) (2020-09-14)
 
 
