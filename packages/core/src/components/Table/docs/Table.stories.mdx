@@ -27,7 +27,7 @@ Simple `Table` component to show set of data.
 <Preview withToolbar>
     <Story name="Simple Table">
         {() => {
-            const [selectedRowIds, setSelectedRowIds] = useState(),
+            const [selectedRowIds, setSelectedRowIds] = useState([2, 3]),
                 [tableData, setTableData] = useState(data),
                 handleFilterData = useCallback((dottedField, order) => setTableData(filterData(dottedField, order, tableData)), [
                     tableData
@@ -39,6 +39,7 @@ Simple `Table` component to show set of data.
                         data={tableData}
                         columns={columns}
                         onSort={handleFilterData}
+                        selectedRowIds={selectedRowIds}
                         onRowSelection={setSelectedRowIds}
                         onRowClick={action('Row Clicked')}
                         isLoading={boolean('Loading', false)}
@@ -85,7 +86,7 @@ And once the user expands any row `getGroupedData` function will be called with 
 <Preview withToolbar>
     <Story name="Table with Grouping">
         {() => {
-            const [selectedRowIds, setSelectedRowIds] = useState(),
+            const [selectedRowIds, setSelectedRowIds] = useState([]),
                 [tableData, setTableData] = useState(data),
                 handleFilterData = useCallback((dottedField, order) => setTableData(filterData(dottedField, order, tableData)), [
                     tableData
@@ -101,6 +102,7 @@ And once the user expands any row `getGroupedData` function will be called with 
                         getGroupedData={getGroupedData(
                             select('Group By', ['name', 'marks.maths', 'marks.science', 'age', 'isPassed', 'rating'], 'name')
                         )}
+                        selectedRowIds={selectedRowIds}
                         onRowSelection={setSelectedRowIds}
                         onRowClick={action('Row Clicked')}
                         isLoading={boolean('Loading', false)}

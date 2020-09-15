@@ -25,6 +25,7 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
 
     const [isRowExpanded, setExpansionState] = useState(false),
         [isLoading, setLoadingState] = useState(true),
+        [selectedIds, setSelectedIds] = useState([]),
         [groupedRows, setGroupedRows] = useState<Data>(loadingBodyData);
 
     const isTitleRowSelected = useMemo(() => !isLoading && selectedTitleRowIds.includes(id), [id, isLoading, selectedTitleRowIds]),
@@ -33,8 +34,14 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
             !isDisabled && setSelectAllDisableState(false);
             return isDisabled;
         }, [groupedRows, rowSelectionDisableKey]),
-        rowSelector = useRowSelector({ data: groupedRows, rowSelectionDisableKey, rowIdentifier }),
-        { uniqueIds, isAnyRowSelected, areAllRowsSelected, selectedIds, toggleId, setSelectedIds } = rowSelector;
+        rowSelector = useRowSelector({
+            data: groupedRows,
+            rowSelectionDisableKey,
+            rowIdentifier,
+            selectedIds,
+            setSelectedIds
+        }),
+        { uniqueIds, isAnyRowSelected, areAllRowsSelected, toggleId } = rowSelector;
 
     const handleExpansion = useCallback(() => setExpansionState(val => !val), []),
         handleSelectAllClick = useCallback(() => {
