@@ -1,9 +1,7 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
 
-export type DisplayFormat =
-    | 'dd/MM/yyyy'
-    | 'dd/yyyy/MM'
-    | 'MM/dd/yyyy'
+export type DisplayFormat = 'dd/MM/yyyy' | 'MM/dd/yyyy';
+/* | 'dd/yyyy/MM' // TODO:- Add support in future development
     | 'MM/yyyy/dd'
     | 'yyyy/dd/MM'
     | 'yyyy/MM/dd'
@@ -12,7 +10,7 @@ export type DisplayFormat =
     | 'MM-dd-yyyy'
     | 'MM-yyyy-dd'
     | 'yyyy-dd-MM'
-    | 'yyyy-MM-dd';
+    | 'yyyy-MM-dd' */
 
 export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onChange' | 'size'> {
     /** Id for the date component */
