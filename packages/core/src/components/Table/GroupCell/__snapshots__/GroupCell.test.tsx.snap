@@ -11,6 +11,7 @@ exports[`GroupCell should not render hidden prop is given 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -46,6 +47,7 @@ exports[`GroupCell should render GroupCellTitle properly 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -105,6 +107,7 @@ exports[`GroupCell should render properly 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {

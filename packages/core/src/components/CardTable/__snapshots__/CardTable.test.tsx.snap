@@ -11,6 +11,7 @@ exports[`CardTable should render properly with grey background 1`] = `
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -24,6 +25,7 @@ exports[`CardTable should render properly with grey background 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c10 {
@@ -287,6 +289,7 @@ exports[`CardTable should render properly with white background 1`] = `
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -300,6 +303,7 @@ exports[`CardTable should render properly with white background 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c10 {

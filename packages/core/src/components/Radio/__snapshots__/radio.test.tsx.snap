@@ -11,6 +11,7 @@ exports[`Radio component should render correctly with bottom labelPosition 1`] =
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c3 {
@@ -932,6 +933,7 @@ exports[`Radio component should render correctly with left labelPosition 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c3 {
@@ -1090,6 +1092,7 @@ exports[`Radio component should render correctly with right labelPosition 1`] = 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c3 {
@@ -1248,6 +1251,7 @@ exports[`Radio component should render correctly with top labelPosition 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c3 {

@@ -4,20 +4,32 @@ import { Calendar } from './Calendar';
 import { CALENDAR_MONTHS } from './constants';
 import { getMonthAndYearFromDate } from './helper';
 
+const getDateValues = (container: HTMLElement) => {
+    const inputEl = container.getElementsByTagName('input');
+    const month = inputEl[0].value;
+    const year = inputEl[1].value;
+    return {
+        month,
+        year
+    };
+};
+
 describe('Calendar Component', () => {
     afterAll(cleanup);
+
     it('should render given date', () => {
         const date = new Date(2020, 0, 1),
             { container } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
 
-        expect(container).toHaveTextContent('Jan 2020');
         expect(container).toMatchSnapshot();
     });
 
     it('should render current month if date is null', () => {
         const { container } = render(<Calendar id="test-calendar" date={null} onChange={jest.fn()} />),
             { month, year } = getMonthAndYearFromDate(new Date());
-        expect(container).toHaveTextContent(`${CALENDAR_MONTHS[month]} ${year}`);
+        const { month: monthInDOM, year: yearInDOM } = getDateValues(container);
+        expect(monthInDOM).toEqual(`${CALENDAR_MONTHS[month]}`);
+        expect(yearInDOM).toEqual(year.toString());
     });
 
     it('should call onChange with expected date', () => {
@@ -43,34 +55,38 @@ describe('Calendar Component', () => {
 
     it('should render previous month on clicking left arrow when current month is other than Jan', () => {
         const date = new Date(2020, 1, 1),
-            { container, getByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
-
-        fireEvent.click(getByText('<'));
-        expect(container).toHaveTextContent(`Jan 2020`);
+            { container } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
+        fireEvent.click(container.querySelector('.calendar-month-navigation-go-back'));
+        const { month, year } = getDateValues(container);
+        expect(month).toEqual('Jan');
+        expect(year).toEqual('2020');
     });
 
     it('should render dec month on clicking left arrow when current month is Jan', () => {
         const date = new Date(2020, 0, 1),
-            { container, getByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
-
-        fireEvent.click(getByText('<'));
-        expect(container).toHaveTextContent(`Dec 2019`);
+            { container } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
+        fireEvent.click(container.querySelector('.calendar-month-navigation-go-back'));
+        const { month, year } = getDateValues(container);
+        expect(month).toEqual('Dec');
+        expect(year).toEqual('2019');
     });
 
     it('should render next month on clicking right arrow when current month is other than Dec', () => {
         const date = new Date(2020, 1, 1),
-            { container, getByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
-
-        fireEvent.click(getByText('>'));
-        expect(container).toHaveTextContent(`Mar 2020`);
+            { container } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
+        fireEvent.click(container.querySelector('.calendar-month-navigation-go-forward'));
+        const { month, year } = getDateValues(container);
+        expect(month).toEqual('Mar');
+        expect(year).toEqual('2020');
     });
 
     it('should render Jan month on clicking right arrow when current month is Dec', () => {
         const date = new Date(2020, 11, 1),
-            { container, getByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
-
-        fireEvent.click(getByText('>'));
-        expect(container).toHaveTextContent(`Jan 2021`);
+            { container } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
+        fireEvent.click(container.querySelector('.calendar-month-navigation-go-forward'));
+        const { month, year } = getDateValues(container);
+        expect(month).toEqual('Jan');
+        expect(year).toEqual('2021');
     });
 
     it('should render 29 days in feb month in leap year', () => {
@@ -89,7 +105,7 @@ describe('Calendar Component', () => {
 
     it('should disable dates which are are out of range ', () => {
         const date = new Date(2020, 11, 15),
-            { getByTitle, getByRole } = render(
+            { getByTitle, container } = render(
                 <Calendar
                     id="test-calendar"
                     date={date}
@@ -101,8 +117,8 @@ describe('Calendar Component', () => {
 
         expect(getByTitle('Wed Dec 09 2020')).toBeDisabled();
         expect(getByTitle('Mon Dec 21 2020')).toBeDisabled();
-        expect(getByRole('button', { name: '<' })).toBeDisabled();
-        expect(getByRole('button', { name: '>' })).toBeDisabled();
+        expect(container.querySelector('.calendar-month-navigation-go-back')).toBeDisabled();
+        expect(container.querySelector('.calendar-month-navigation-go-forward')).toBeDisabled();
         expect(getByTitle('Tue Dec 15 2020')).not.toBeDisabled();
     });
 
@@ -120,7 +136,9 @@ describe('Calendar Component', () => {
 
         fireEvent.click(container.querySelector('#test-calendar-year-selector-input'));
         fireEvent.click(getByText('2021'));
-        expect(container).toHaveTextContent(`Jan 2021`);
+        const { month, year } = getDateValues(container);
+        expect(month).toEqual('Jan');
+        expect(year).toEqual('2021');
     });
 
     it('should non change month on changing year if that month is non disable in the newly selected year', () => {
@@ -137,6 +155,8 @@ describe('Calendar Component', () => {
 
         fireEvent.click(container.querySelector('#test-calendar-year-selector-input'));
         fireEvent.click(getByText('2021'));
-        expect(container).toHaveTextContent(`Dec 2021`);
+        const { month, year } = getDateValues(container);
+        expect(month).toEqual('Dec');
+        expect(year).toEqual('2021');
     });
 });

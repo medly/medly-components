@@ -11,6 +11,7 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c4 .c0 {
@@ -65,7 +66,7 @@ exports[`NavItem should render properly when it is in active state 1`] = `
   color: #13181D;
 }
 
-.c2 > .c3:first-of-type > .sc-pcJja:first-of-type > .c0 {
+.c2 > .c3:first-of-type > .sc-qPwPv:first-of-type > .c0 {
   margin-top: 0.6rem;
 }
 
@@ -87,6 +88,7 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c5 .c0 {
@@ -193,11 +195,11 @@ exports[`NavItem should render properly when it is in default state 1`] = `
   color: #13181D;
 }
 
-.c2 > .c4:first-of-type > .sc-pcJja:first-of-type > .c0 {
+.c2 > .c4:first-of-type > .sc-qPwPv:first-of-type > .c0 {
   margin-top: 0.6rem;
 }
 
-.c3 > .c4:first-of-type > .sc-pcJja:first-of-type > .c0 {
+.c3 > .c4:first-of-type > .sc-qPwPv:first-of-type > .c0 {
   margin-top: 0.6rem;
 }
 
@@ -219,6 +221,7 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c5 .c0 {
@@ -325,11 +328,11 @@ exports[`NavItem should render properly when it is in hovered state 1`] = `
   color: #13181D;
 }
 
-.c2 > .c4:first-of-type > .sc-pcJja:first-of-type > .c0 {
+.c2 > .c4:first-of-type > .sc-qPwPv:first-of-type > .c0 {
   margin-top: 0.6rem;
 }
 
-.c3 > .c4:first-of-type > .sc-pcJja:first-of-type > .c0 {
+.c3 > .c4:first-of-type > .sc-qPwPv:first-of-type > .c0 {
   margin-top: 0.6rem;
 }
 

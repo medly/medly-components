@@ -26,6 +26,7 @@ exports[`CheckboxGroup component should render properly 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c6 {
@@ -38,6 +39,7 @@ exports[`CheckboxGroup component should render properly 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -534,6 +536,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c6 {
@@ -546,6 +549,7 @@ exports[`CheckboxGroup component should render properly with disabled state 1`] 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -1024,6 +1028,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c6 {
@@ -1036,6 +1041,7 @@ exports[`CheckboxGroup component should render properly with fullWidth 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {

@@ -1,20 +1,95 @@
 import { DatePicker } from './DatePicker';
 import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './DatePicker.stories';
+import { boolean, select, text } from '@storybook/addon-knobs';
+import { useState } from 'react';
+import { variants, sizes, ThemeInterface, FormWithDatePicker } from './DatePicker.stories';
 
-<Meta title="Core" component={DatePicker} />
+<Meta
+    title="In-Review"
+    component={DatePicker}
+    parameters={{
+        jest: ['DatePicker.test.tsx'],
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library---B2B-%2F-Internal?node-id=7803%3A533'
+        }
+    }}
+/>
 
-# DatePicker
+# DatePicker component
 
-### Simple DatePicker component
+It's a controlled component. So we have to handle the state.
 
-To open the calendar click on the input component and to close the calendar select any date or click outside of the component.
+```tsx
+const [date, setDate] = useState(null);
+return <DatePicker label="Select Date" value={date} onChange={setDate} />;
+```
+
+To open the calendar click on the icon inside the datepicker component and to close the calendar select any date or click outside of the component.
 
 <Preview withToolbar>
-    <Story name="DatePicker">{stories.Basic()}</Story>
+    <Story name="DatePicker">
+        {() => {
+            const [date, setDate] = useState(null);
+            return (
+                <DatePicker
+                    id="dob"
+                    value={date}
+                    onChange={setDate}
+                    fullWidth={boolean('Full Width', false)}
+                    size={select('Size', sizes, 'M')}
+                    displayFormat={text('Display Format', 'MM/dd/yyyy')}
+                    disabled={boolean('Disabled', false)}
+                    placeholder={text('Placeholder', 'MM/DD/YYYY')}
+                    label={text('Label', 'Date of Birth')}
+                    variant={select('variant', variants, 'outlined')}
+                    required={boolean('Required', false)}
+                />
+            );
+        }}
+    </Story>
 </Preview>
 
-### DatePicker Props
+### Validations
+
+1. Validations would happen on invalid, and blur event with required Prop.
+
+```tsx
+const FormWithDatePicker: React.FC = () => {
+    const [date, setDate] = useState(null),
+        handleSubmit = (e: React.FormEvent) => e.preventDefault();
+    return (
+        <form onSubmit={handleSubmit}>
+            <div>
+                <DatePicker value={date} onChange={setDate} label="Select Date" required />
+            </div>
+            <Button type="submit">Submit</Button>
+        </form>
+    );
+};
+```
+
+<Preview withToolbar>
+    <FormWithDatePicker />
+</Preview>
+
+2. Validations would also happen just on blur event if we type an incorrect value and focus out of the component.
+
+```tsx
+const DatePicker: React.FC = () => {
+    return <DatePicker value={null} onChange={() => {}} label="Select Date" />;
+};
+```
+
+<Preview withToolbar>
+    <DatePicker id="without-required" value={null} onChange={() => {}} label="Select Date" />
+</Preview>
+
+### Props
 
 <Props of={DatePicker} />
+
+### DatePickerTheme
+
+<Props of={ThemeInterface} />

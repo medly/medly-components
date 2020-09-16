@@ -2,6 +2,30 @@ import { centerAligned, css, styled } from '@medly-components/utils';
 import TextField from '../TextField';
 import { DateProps } from './types';
 
+export const Calendar = styled('div')`
+    padding: 1.6rem;
+    background: ${({ theme }) => theme.calendar.bgColor};
+    box-shadow: 0 0.2rem 0.8rem ${({ theme }) => theme.calendar.shadowColor};
+    border-radius: ${({ theme }) => theme.calendar.borderRadius};
+    width: max-content;
+    height: max-content;
+`;
+export const MonthNavigation = styled.button<{ disabled: boolean }>`
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 0.5rem;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: ${({ theme, disabled }) => theme.colors.grey[disabled ? '400' : '800']};
+    svg {
+        fill: ${({ theme, disabled }) => theme.colors.grey[disabled ? '400' : '800']};
+    }
+`;
 export const Header = styled.div`
     width: 100%;
     display: flex;
@@ -10,9 +34,8 @@ export const Header = styled.div`
 `;
 
 export const MonthAndYearSelection = styled.div`
-    width: 100%;
     display: flex;
-    margin: 5px 0;
+    margin: 0.5rem 0;
     align-items: center;
     justify-content: space-around;
 
@@ -27,7 +50,7 @@ export const MonthAndYearSelection = styled.div`
 
     ${TextField.Style} {
         min-width: unset;
-        max-width: 10rem;
+        max-width: 9.5rem;
         & > div {
             height: 3.5rem;
             padding: 0 0 0 1rem;
@@ -37,17 +60,27 @@ export const MonthAndYearSelection = styled.div`
 
 export const CalendarGrid = styled.div`
     display: grid;
-    grid-template: repeat(7, auto) / repeat(7, auto);
+    grid-template: repeat(7, 4rem) / repeat(7, 4rem);
 
-    & > * {
+    & > span {
         user-select: none;
-        padding: 8px 10px;
+        text-align: center;
+        padding: 0.8rem 1rem;
     }
 `;
 
 const activeDate = () => css`
-    background-color: ${({ theme }) => theme.datePicker.selectedDateBgColor};
-    color: ${({ theme }) => theme.datePicker.selectedDateColor};
+    &,
+    &:hover {
+        background-color: ${({ theme }) => theme.datePicker.selectedDateBgColor};
+        color: ${({ theme }) => theme.datePicker.selectedDateColor};
+        > span {
+            font-weight: bold;
+        }
+    }
+`;
+const currentDate = () => css`
+    border-color: ${({ theme }) => theme.datePicker.currentDateBorderColor};
 `;
 const nonActiveMonthDate = () => css`
     color: ${({ theme }) => theme.datePicker.nonActiveMonthDateColor};
@@ -55,10 +88,13 @@ const nonActiveMonthDate = () => css`
 
 export const Date = styled('button').attrs({ type: 'button' })<DateProps>`
     background-color: transparent;
-    border: none;
+    border: 0.2rem solid transparent;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 5px;
+    user-select: none;
+    border-radius: ${({ theme }) => theme.datePicker.borderRadius};
+    padding: 0;
+    margin: 0.4rem;
 
     &:focus {
         outline: none;
@@ -69,8 +105,13 @@ export const Date = styled('button').attrs({ type: 'button' })<DateProps>`
         color: ${({ theme }) => theme.datePicker.nonActiveMonthDateColor};
     }
 
-    ${props => props.isSelected && activeDate()};
-    ${props => !props.isInActiveMonth && nonActiveMonthDate()};
+    &:hover {
+        background-color: ${({ theme }) => theme.datePicker.hoveredDateColor};
+    }
+
+    ${({ isSelected }) => isSelected && activeDate()};
+    ${({ isCurrentDate }) => isCurrentDate && currentDate()};
+    ${({ isInActiveMonth }) => !isInActiveMonth && nonActiveMonthDate()};
 
     ${centerAligned()}
 `;

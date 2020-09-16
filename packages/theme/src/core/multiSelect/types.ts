@@ -1,3 +1,4 @@
+import { State } from '../common/types';
 import { FontVariants } from '../font/types';
 
 interface IconTheme {
@@ -14,9 +15,7 @@ interface ChipTheme {
     hoverBorder: string;
 }
 
-export type State = 'default' | 'active' | 'error' | 'disabled';
-
-interface MultiSelectComp {
+interface MultiSelectVariant {
     icon: {
         [k in State]: IconTheme;
     };
@@ -26,8 +25,8 @@ interface MultiSelectComp {
 }
 
 export interface MultiSelectTheme {
-    filled: MultiSelectComp;
-    outlined: MultiSelectComp;
+    filled: MultiSelectVariant;
+    outlined: MultiSelectVariant;
     options: {
         textVariant: {
             S: FontVariants;

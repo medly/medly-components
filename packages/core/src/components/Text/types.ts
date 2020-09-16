@@ -17,4 +17,17 @@ export interface Props extends Common {
     textVariant?: FontVariants;
     /** Text weight */
     textWeight?: FontWeights;
+    /** Text alignment */
+    textAlign?:
+        | 'left'
+        | 'right'
+        | 'center'
+        | 'justify'
+        | 'justify-all'
+        | 'start'
+        | 'end'
+        | 'match-parent'
+        | 'inherit'
+        | 'initial'
+        | 'unset';
 }

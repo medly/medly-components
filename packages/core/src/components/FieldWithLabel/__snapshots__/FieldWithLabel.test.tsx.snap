@@ -11,6 +11,7 @@ exports[`FieldWithLabel component should render properly when lable is not prese
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c2 {
@@ -96,6 +97,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c4 {
@@ -195,6 +197,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c4 {
@@ -295,6 +298,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c4 {
@@ -395,6 +399,7 @@ exports[`FieldWithLabel component should render properly with props labelPositio
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c4 {

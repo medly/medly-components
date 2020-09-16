@@ -8,6 +8,7 @@ export interface CoreTheme {
     breadCrumbs?: CoreThemes.BreadCrumbsTheme;
     button?: CoreThemes.ButtonTheme;
     card?: CoreThemes.CardTheme;
+    calendar?: CoreThemes.CalendarTheme;
     cardTable?: CoreThemes.CardTableTheme;
     checkbox?: CoreThemes.CheckboxTheme;
     chip?: CoreThemes.ChipTheme;

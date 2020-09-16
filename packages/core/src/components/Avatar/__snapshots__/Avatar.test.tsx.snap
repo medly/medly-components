@@ -11,6 +11,7 @@ exports[`Avatar component should render avatar without hover 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -123,6 +124,7 @@ exports[`Avatar component should render with all the props given 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -191,6 +193,7 @@ exports[`Avatar component should render with default theme 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -259,6 +262,7 @@ exports[`Avatar component should render with not-allowed cursor when it is disab
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 

@@ -32,6 +32,7 @@ exports[`Card Table Head should render properly with dark background 1`] = `
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -211,6 +212,7 @@ exports[`Card Table Head should render properly with light background 1`] = `
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 

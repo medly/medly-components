@@ -41,6 +41,7 @@ exports[`SideNav should render properly with shadow 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c12 {
@@ -53,6 +54,7 @@ exports[`SideNav should render properly with shadow 1`] = `
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -350,7 +352,7 @@ exports[`SideNav should render properly with shadow 1`] = `
 
 <div>
   <aside
-    class="sc-ptDSg c0"
+    class="sc-pAncQ c0"
     id="medly-sidenav"
   >
     <nav
@@ -544,6 +546,7 @@ exports[`SideNav should render properly without shadow 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c12 {
@@ -556,6 +559,7 @@ exports[`SideNav should render properly without shadow 1`] = `
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -853,7 +857,7 @@ exports[`SideNav should render properly without shadow 1`] = `
 
 <div>
   <aside
-    class="sc-ptDSg c0"
+    class="sc-pAncQ c0"
     id="medly-sidenav"
   >
     <nav

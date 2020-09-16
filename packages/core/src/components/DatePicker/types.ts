@@ -1,11 +1,7 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
-import { LabelPositions } from '../Label/types';
-import { Placement } from '../Popover/types';
 
-export type DisplayFormat =
-    | 'dd/MM/yyyy'
-    | 'dd/yyyy/MM'
-    | 'MM/dd/yyyy'
+export type DisplayFormat = 'dd/MM/yyyy' | 'MM/dd/yyyy';
+/* | 'dd/yyyy/MM' // TODO:- Add support in future development
     | 'MM/yyyy/dd'
     | 'yyyy/dd/MM'
     | 'yyyy/MM/dd'
@@ -14,15 +10,17 @@ export type DisplayFormat =
     | 'MM-dd-yyyy'
     | 'MM-yyyy-dd'
     | 'yyyy-dd-MM'
-    | 'yyyy-MM-dd';
+    | 'yyyy-MM-dd' */
 
-export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onChange'> {
+export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onChange' | 'size'> {
     /** Id for the date component */
     id?: string;
     /** Current Date */
     value: Date | string | null;
     /** Function to be called on changing the date */
     onChange: (date: Date) => void;
+    /** Input Size */
+    size?: 'S' | 'M';
     /** Placeholder for the input */
     placeholder?: string;
     /** Date display format */
@@ -33,16 +31,19 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     required?: boolean;
     /** Date picker label */
     label?: string;
-    /** Label Position */
-    labelPosition?: LabelPositions;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
     /** Min width of the component */
-    minWidth?: number;
+    minWidth?: string;
     /** Minimum selectable Date */
     minSelectableDate?: Date;
     /** Maximum selectable Date */
     maxSelectableDate?: Date;
-    /** Popover placement */
-    popoverPlacement?: Placement;
+    /** Input variants for DatePicker */
+    variant?: 'outlined' | 'filled';
+}
+
+export interface StyleProps extends Pick<Props, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size'> {
+    errorText?: string;
+    active?: boolean;
 }
