@@ -18,5 +18,16 @@ export interface Props extends Common {
     /** Text weight */
     textWeight?: FontWeights;
     /** Text alignment */
-    textAlign?: string;
+    textAlign?:
+        | 'left'
+        | 'right'
+        | 'center'
+        | 'justify'
+        | 'justify-all'
+        | 'start'
+        | 'end'
+        | 'match-parent'
+        | 'inherit'
+        | 'initial'
+        | 'unset';
 }
