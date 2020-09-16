@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.24.4](https://github.com/medly/medly-components/compare/@medly-components/core@1.24.3...@medly-components/core@1.24.4) (2020-09-16)
+
+
+### Bug Fixes
+
+* **core:** fix toggle selection caching issue ([1ef7291](https://github.com/medly/medly-components/commit/1ef7291e12cbde8632c539599d647dd7f399f315))
+* add classname to navigation icon and fix tests ([8d91b88](https://github.com/medly/medly-components/commit/8d91b88552b8dd6d08001f5f2b2422d07d349b6b))
+* add types for textAlign prop in TextField component ([ddb7d69](https://github.com/medly/medly-components/commit/ddb7d69584b380cbe325cd323178d2e7fccd5ff5))
+* broken test cases and snapshots ([b7bdc88](https://github.com/medly/medly-components/commit/b7bdc88d9d4279ffa97d30d5cb2742036cbab68c))
+* fix style issues in the datepicker component ([b3222ac](https://github.com/medly/medly-components/commit/b3222acfd5776ca7537f569817d800c86eda3b73))
+* fix the validation for datepicker component ([8cbe2ac](https://github.com/medly/medly-components/commit/8cbe2ac373713ee2aa5e59627cc566dfc342c73a))
+* move default textAlign value to component default props ([3ad3e8a](https://github.com/medly/medly-components/commit/3ad3e8a68804f9d1bdde4ba8467cd66bc41154be))
+* remove non supported displayformat from types ([ccfc084](https://github.com/medly/medly-components/commit/ccfc084a9e523022fd5c6145cf8b6f5af1f411c9))
+* remove spaces from the placeholder and add label as default id if not passed in datepicker comp ([12837eb](https://github.com/medly/medly-components/commit/12837eb03c557d517a2a5732b1a39cdd7fa6858b))
+* remove unused props and test fillers ([57ff994](https://github.com/medly/medly-components/commit/57ff994399f8f925a4558b5dde64b21b75abbd2d))
+* the calendar styles and color and also the test ([a21a0be](https://github.com/medly/medly-components/commit/a21a0be8bcbc72c415db9113f5b905385e7b21ab))
+
+
+
+
+
 ## [1.24.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.24.2...@medly-components/core@1.24.3) (2020-09-15)
 
 

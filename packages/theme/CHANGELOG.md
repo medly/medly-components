@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.17.2](https://github.com/medly/medly-components/compare/@medly-components/theme@1.17.1...@medly-components/theme@1.17.2) (2020-09-16)
+
+
+### Bug Fixes
+
+* fix style issues in the datepicker component ([b3222ac](https://github.com/medly/medly-components/commit/b3222acfd5776ca7537f569817d800c86eda3b73))
+* remove unused props and test fillers ([57ff994](https://github.com/medly/medly-components/commit/57ff994399f8f925a4558b5dde64b21b75abbd2d))
+* the calendar styles and color and also the test ([a21a0be](https://github.com/medly/medly-components/commit/a21a0be8bcbc72c415db9113f5b905385e7b21ab))
+
+
+
+
+
 ## [1.17.1](https://github.com/medly/medly-components/compare/@medly-components/theme@1.17.0...@medly-components/theme@1.17.1) (2020-09-14)
 
 

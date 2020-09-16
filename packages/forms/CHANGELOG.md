@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.5](https://github.com/medly/medly-components/compare/@medly-components/forms@1.10.4...@medly-components/forms@1.10.5) (2020-09-16)
+
+
+### Bug Fixes
+
+* broken test cases and snapshots ([b7bdc88](https://github.com/medly/medly-components/commit/b7bdc88d9d4279ffa97d30d5cb2742036cbab68c))
+* remove unused props and test fillers ([57ff994](https://github.com/medly/medly-components/commit/57ff994399f8f925a4558b5dde64b21b75abbd2d))
+* the calendar styles and color and also the test ([a21a0be](https://github.com/medly/medly-components/commit/a21a0be8bcbc72c415db9113f5b905385e7b21ab))
+* update snapshots ([1b66d2b](https://github.com/medly/medly-components/commit/1b66d2bf98bbc0daadf888d9590b6d6c699803a7))
+
+
+
+
+
 ## [1.10.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.10.3...@medly-components/forms@1.10.4) (2020-09-15)
 
 **Note:** Version bump only for package @medly-components/forms
