@@ -21,7 +21,7 @@ const getTextStyle = ({ theme, ...props }: Props) => {
         font-weight: ${weights[textWeight || fontWeight]};
         letter-spacing: ${letterSpacing};
         line-height: ${lineHeight};
-        text-align: ${textAlign || 'initial'};
+        text-align: ${textAlign};
     `;
 };
 

@@ -33,7 +33,8 @@ Text.defaultProps = {
     lineThrough: false,
     uppercase: false,
     fullWidth: false,
-    textColor: 'inherit'
+    textColor: 'inherit',
+    textAlign: 'initial'
 };
 Text.displayName = 'Text';
 Text.Style = TextStyled;
