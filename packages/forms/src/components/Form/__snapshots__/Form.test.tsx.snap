@@ -2011,7 +2011,7 @@ exports[`Form should render properly with initial state 1`] = `
     >
       <div
         class="c41"
-        id="birthDate-datepicker-wrapper"
+        id="birthDate-wrapper"
       >
         <div
           class="c2 c42"
@@ -4214,7 +4214,7 @@ exports[`Form should render properly without initial state 1`] = `
     >
       <div
         class="c41"
-        id="birthDate-datepicker-wrapper"
+        id="birthDate-wrapper"
       >
         <div
           class="c5 c42"

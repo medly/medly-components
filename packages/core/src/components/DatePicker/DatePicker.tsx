@@ -52,10 +52,15 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
                 setFormattedDate(value);
             }
         }, []),
-        iconClickHandler = useCallback(event => {
-            event.preventDefault();
-            toggleCalendar(true);
-        }, []),
+        iconClickHandler = useCallback(
+            event => {
+                event.preventDefault();
+                if (!disabled) {
+                    toggleCalendar(true);
+                }
+            },
+            [disabled]
+        ),
         onBlurHandler = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
             setActive(false);
             const value = event.target.value;
