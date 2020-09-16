@@ -10,4 +10,5 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'onChange'> {
 export interface DateProps extends HTMLProps<HTMLButtonElement>, WithThemeProp {
     isSelected: boolean;
     isInActiveMonth: boolean;
+    isCurrentDate: boolean;
 }

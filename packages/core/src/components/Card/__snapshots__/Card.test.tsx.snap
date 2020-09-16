@@ -11,6 +11,7 @@ exports[`Card component should render correctly with all the default props 1`] =
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -68,6 +69,7 @@ exports[`Card component should render properly when flow direction is horizontal
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -310,6 +312,7 @@ exports[`Card component should render properly when fullWidth and fullHeight is 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -369,6 +372,7 @@ exports[`Card component should render properly when it is clickable  1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -430,6 +434,7 @@ exports[`Card component should render properly when separator is set true flow d
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -637,6 +642,7 @@ exports[`Card component should render properly with "flat" variant 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -692,6 +698,7 @@ exports[`Card component should render properly with "solid" variant 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -749,6 +756,7 @@ exports[`Card component should render properly with display "block" 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -806,6 +814,7 @@ exports[`Card component should render properly with display "flex" 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {

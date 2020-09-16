@@ -11,6 +11,7 @@ exports[`Button component should render properly with "circle" edges 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -128,6 +129,7 @@ exports[`Button component should render properly with "rounded" edges 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -245,6 +247,7 @@ exports[`Button component should render properly with "square" edges 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -377,6 +380,7 @@ exports[`Button component should render properly with any icon at the beginning 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -523,6 +527,7 @@ exports[`Button component should render properly with any icon at the end of the
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -654,6 +659,7 @@ exports[`Button component should render properly with outlined and theme doesn't
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -809,6 +815,7 @@ exports[`Button component should wrap children into Text component when renderin
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -932,6 +939,7 @@ exports[`Button component with "flat" variant should render properly 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -1085,6 +1093,7 @@ exports[`Button component with "flat" variant should render properly when it is 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -1239,6 +1248,7 @@ exports[`Button component with "flat" variant should render properly with "M" si
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -1392,6 +1402,7 @@ exports[`Button component with "flat" variant should render properly with "S" si
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -1545,6 +1556,7 @@ exports[`Button component with "outlined" variant should render properly 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -1700,6 +1712,7 @@ exports[`Button component with "outlined" variant should render properly when it
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -1856,6 +1869,7 @@ exports[`Button component with "outlined" variant should render properly with "M
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -2011,6 +2025,7 @@ exports[`Button component with "outlined" variant should render properly with "S
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -2166,6 +2181,7 @@ exports[`Button component with "solid" variant should render properly 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -2283,6 +2299,7 @@ exports[`Button component with "solid" variant should render properly when it is
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -2401,6 +2418,7 @@ exports[`Button component with "solid" variant should render properly with "M" s
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -2518,6 +2536,7 @@ exports[`Button component with "solid" variant should render properly with "S" s
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {

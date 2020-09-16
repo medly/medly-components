@@ -1,28 +1,26 @@
-import { boolean, select, text } from '@storybook/addon-knobs';
+import { DatePickerTheme, defaultTheme } from '@medly-components/theme';
 import React, { useState } from 'react';
-import { placements } from '../Popover/Popover.stories';
+import Button from '../Button';
 import { DatePicker } from './DatePicker';
 import { Props } from './types';
 
-const labelPosition: Props['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
+export const variants: Props['variant'][] = ['outlined', 'filled'];
+export const sizes: Props['size'][] = ['S', 'M'];
 
-export const Basic = () => {
-    const [date, setDate] = useState(null);
+export const ThemeInterface: React.FC<DatePickerTheme> = () => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.datePicker
+};
 
+export const FormWithDatePicker: React.FC = () => {
+    const [date, setDate] = useState(null),
+        handleSubmit = (e: React.FormEvent) => e.preventDefault();
     return (
-        <DatePicker
-            value={date}
-            onChange={setDate}
-            fullWidth={boolean('Full Width', false)}
-            displayFormat={text('Display Format', 'MM/dd/yyyy') as Props['displayFormat']}
-            disabled={boolean('Disabled', false)}
-            placeholder={text('Placeholder', 'Start Date')}
-            label={text('Label', 'Start Date')}
-            labelPosition={select('Label Position', labelPosition, 'left')}
-            popoverPlacement={select('Popover Placement', placements, 'bottom-start')}
-            required={boolean('Required', false)}
-            minSelectableDate={new Date(2020, 11, 1)}
-            maxSelectableDate={new Date(2021, 11, 30)}
-        />
+        <form onSubmit={handleSubmit}>
+            <div>
+                <DatePicker id="with-form" value={date} onChange={setDate} label="Select Date" required />
+            </div>
+            <Button type="submit">Submit</Button>
+        </form>
     );
 };

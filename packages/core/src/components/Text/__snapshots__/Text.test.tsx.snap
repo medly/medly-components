@@ -11,6 +11,7 @@ exports[`Text Component should render span element by default 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 <div>
@@ -31,6 +32,7 @@ exports[`Text Component should render strong html tag for textWeight ExtraStrong
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 <div>
@@ -51,6 +53,7 @@ exports[`Text Component should render strong html tag for textWeight Strong 1`] 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 <div>
@@ -71,6 +74,7 @@ exports[`Text Component should render with all the props 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
   display: block;
   margin: 0.8rem 0;
   text-transform: uppercase;

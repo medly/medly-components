@@ -720,6 +720,7 @@ exports[`SingleSelect component should render properly with M size 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -806,6 +807,7 @@ exports[`SingleSelect component should render properly with S size 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -1249,6 +1251,7 @@ exports[`SingleSelect component with filled variant should render options correc
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c1 {
@@ -2133,6 +2136,7 @@ exports[`SingleSelect component with flat variant should render disabled state p
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 1.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -2375,6 +2379,7 @@ exports[`SingleSelect component with flat variant should render options correctl
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 1.6rem;
+  text-align: initial;
 }
 
 .c1 {
@@ -2531,6 +2536,7 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 1.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -2758,6 +2764,7 @@ exports[`SingleSelect component with flat variant should render with label prope
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 1.6rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -3368,6 +3375,7 @@ exports[`SingleSelect component with outlined variant should render options corr
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c1 {

@@ -26,6 +26,7 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c1 {
@@ -162,7 +163,7 @@ exports[`NavItem should call onClick when we click on it 1`] = `
 
 <div>
   <ul
-    class="sc-pcJja c0"
+    class="sc-qPwPv c0"
   >
     <li
       class="c1"
@@ -217,6 +218,7 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c1 {
@@ -353,7 +355,7 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
 
 <div>
   <ul
-    class="sc-pcJja c0"
+    class="sc-qPwPv c0"
   >
     <li
       class="c1"
@@ -408,6 +410,7 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c1 {
@@ -544,7 +547,7 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
 
 <div>
   <ul
-    class="sc-pcJja c0"
+    class="sc-qPwPv c0"
   >
     <li
       class="c1"
