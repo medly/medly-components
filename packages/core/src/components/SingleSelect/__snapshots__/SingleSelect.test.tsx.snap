@@ -2216,8 +2216,6 @@ exports[`SingleSelect component with flat variant should render disabled state p
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
   height: 3.2rem;
   padding: 0.7rem 0.4rem 0.9rem 0.8rem;
   border-radius: 0.8rem;
@@ -2238,6 +2236,10 @@ exports[`SingleSelect component with flat variant should render disabled state p
 .c2,
 .c2 * {
   cursor: pointer;
+}
+
+.c2,
+.c2 .sc-fznyAO {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -2246,12 +2248,9 @@ exports[`SingleSelect component with flat variant should render disabled state p
   outline: none;
 }
 
-.c2:disabled {
-  cursor: not-allowed;
-}
-
+.c2:disabled,
 .c2:disabled * {
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .c2:disabled {
@@ -2611,8 +2610,6 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
   height: 3.2rem;
   padding: 0.7rem 0.4rem 0.9rem 0.8rem;
   border-radius: 0.8rem;
@@ -2633,6 +2630,10 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
 .c2,
 .c2 * {
   cursor: pointer;
+}
+
+.c2,
+.c2 .sc-fznyAO {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -2641,12 +2642,9 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   outline: none;
 }
 
-.c2:disabled {
-  cursor: not-allowed;
-}
-
+.c2:disabled,
 .c2:disabled * {
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .c2:disabled {
@@ -2865,8 +2863,6 @@ exports[`SingleSelect component with flat variant should render with label prope
   font-family: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
   height: 3.2rem;
   padding: 0.7rem 0.4rem 0.9rem 0.8rem;
   border-radius: 0.8rem;
@@ -2887,6 +2883,10 @@ exports[`SingleSelect component with flat variant should render with label prope
 .c2,
 .c2 * {
   cursor: pointer;
+}
+
+.c2,
+.c2 .c3 {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -2895,12 +2895,9 @@ exports[`SingleSelect component with flat variant should render with label prope
   outline: none;
 }
 
-.c2:disabled {
-  cursor: not-allowed;
-}
-
+.c2:disabled,
 .c2:disabled * {
-  cursor: pointer;
+  cursor: not-allowed;
 }
 
 .c2:disabled {

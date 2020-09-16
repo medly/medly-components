@@ -26,6 +26,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                 isRowExpandable,
                 onRowSelection,
                 isLoading,
+                selectedRowIds,
                 showRowWithCardStyle,
                 ...restProps
             } = props,
@@ -33,6 +34,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
             size = showRowWithCardStyle ? 'L' : restProps.size;
 
         const [scrollState, handleScroll] = useScrollState(),
+            [selectedGroupIds, setSelectedGroupIds] = useState([]),
             [isSelectAllDisable, setSelectAllDisableState] = useState(true),
             tableRef = useCombinedRefs<HTMLTableElement>(ref, React.useRef(null)),
             [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
@@ -43,10 +45,12 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
             rowSelector = useRowSelector({
                 data,
                 rowSelectionDisableKey,
+                setSelectedIds: isGroupedTable ? setSelectedGroupIds : onRowSelection,
+                selectedIds: isGroupedTable ? selectedGroupIds : selectedRowIds,
                 rowIdentifier: restProps.groupBy || rowIdentifier
             }),
-            { isAnyRowSelected, areAllRowsSelected, selectedIds, toggleId, setUniqueIds } = rowSelector,
-            groupedRowSelector = useGroupedRowSelector();
+            { isAnyRowSelected, areAllRowsSelected, toggleId, setUniqueIds } = rowSelector,
+            groupedRowSelector = useGroupedRowSelector({ setSelectedIds: onRowSelection, selectedIds: selectedRowIds });
 
         useEffect(() => {
             isGroupedTable && setUniqueIds([]);
@@ -59,10 +63,6 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
         useEffect(() => {
             setSelectAllDisableState(isGroupedTable ? true : data.every(dt => dt[rowSelectionDisableKey]));
         }, [data, isGroupedTable, rowSelectionDisableKey]);
-
-        useUpdateEffect(() => {
-            !isGroupedTable && onRowSelection && onRowSelection(selectedIds);
-        }, [selectedIds]);
 
         useUpdateEffect(() => {
             isGroupedTable && onRowSelection && onRowSelection(groupedRowSelector.selectedIds);
@@ -97,7 +97,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                             addColumnMaxSize,
                             setUniqueIds,
                             setSelectAllDisableState,
-                            selectedRowIds: selectedIds,
+                            selectedRowIds: isGroupedTable ? selectedGroupIds : selectedRowIds,
                             onRowSelection: toggleId,
                             onGroupedRowSelection: groupedRowSelector.toggleIds,
                             showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
@@ -111,8 +111,9 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
 
 Table.defaultProps = {
     size: 'M',
+    selectedRowIds: [],
     rowIdentifier: 'id',
-    defaultSortOrder: 'asc',
+    defaultSortOrder: 'desc',
     rowClickDisableKey: '',
     rowSelectionDisableKey: ''
 };

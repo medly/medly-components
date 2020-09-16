@@ -69,6 +69,8 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     isRowSelectable?: boolean;
     /** Set it true to expand rows to show extra info */
     isRowExpandable?: boolean;
+    /** Selected Row ids */
+    selectedRowIds?: Array<string | number>;
     /** Function to be called on row selection */
     onRowSelection?: Dispatch<SetStateAction<(string | number)[]>>;
     /** Function to be called on row click */

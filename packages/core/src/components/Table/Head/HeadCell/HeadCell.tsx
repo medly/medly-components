@@ -25,10 +25,10 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     } = props;
 
     const cellEl = useRef(null),
-        [sortState, setSortState] = useState<'none' | 'asc' | 'desc'>(defaultSortOrder);
+        [sortState, setSortState] = useState<'asc' | 'desc'>(defaultSortOrder);
 
     useEffect(() => {
-        if (sortField !== field) setSortState('none');
+        if (sortField !== field) setSortState('desc');
     }, [sortField]);
 
     useEffect(() => {

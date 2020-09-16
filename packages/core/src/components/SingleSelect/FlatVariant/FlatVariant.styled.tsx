@@ -70,7 +70,6 @@ export const FlatVariantStyled = styled('button')<FlatVariantProps>`
     user-select: none;
     font-family: inherit;
     text-decoration: none;
-    transition: all 100ms ease-out;
     height: ${({ theme }) => theme.singleSelect.variant.flat.height};
     padding: 0.7rem 0.4rem 0.9rem 0.8rem;
     width: ${({ fullWidth }) => fullWidth && '100%'};
@@ -78,6 +77,9 @@ export const FlatVariantStyled = styled('button')<FlatVariantProps>`
     &,
     * {
         cursor: pointer;
+    }
+    &,
+    ${Label.Style} {
         transition: all 100ms ease-out;
     }
 
@@ -86,9 +88,9 @@ export const FlatVariantStyled = styled('button')<FlatVariantProps>`
     }
 
     &:disabled {
-        cursor: not-allowed;
+        &,
         * {
-            cursor: pointer;
+            cursor: not-allowed;
         }
     }
 

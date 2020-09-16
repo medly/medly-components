@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.24.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.24.2...@medly-components/core@1.24.3) (2020-09-15)
+
+
+### Bug Fixes
+
+* row selection issue in table component ([8916ef4](https://github.com/medly/medly-components/commit/8916ef485cf69b6171eec896746d5a8730ab0dd9))
+* transition effect in singleselect flat variant ([42f2825](https://github.com/medly/medly-components/commit/42f2825a1961ac782b29944fd79b6c78b58e802b))
+
+
+
+
+
+## [1.24.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.24.1...@medly-components/core@1.24.2) (2020-09-14)
+
+
+### Bug Fixes
+
+* removed use of none from head cell sort ([9e14a70](https://github.com/medly/medly-components/commit/9e14a703abbb7343d9b0e72c643d8e2549dc051f))
+
+
+
+
+
+## [1.24.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.24.0...@medly-components/core@1.24.1) (2020-09-14)
+
+
+### Bug Fixes
+
+* corrected logic to pick defaultSortOrder when old sortState is none ([84150be](https://github.com/medly/medly-components/commit/84150be9a645a1257efd9036a68bd12c2d737f4f))
+* fix height issues in the singleselect component ([79c47b9](https://github.com/medly/medly-components/commit/79c47b9f4f74fc8d7dc56945a8e003d7f2bcdd5c))
+
+
+
+
+
 # [1.24.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.23.0...@medly-components/core@1.24.0) (2020-09-10)
 
 
