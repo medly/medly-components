@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.24.5](https://github.com/medly/medly-components/compare/@medly-components/core@1.24.4...@medly-components/core@1.24.5) (2020-09-16)
+
+
+### Bug Fixes
+
+* **core:** fix table onRowSelection context caching issue ([13d25ff](https://github.com/medly/medly-components/commit/13d25ffee85e85b11538981f87fc5f0d994443b4))
+
+
+
+
+
 ## [1.24.4](https://github.com/medly/medly-components/compare/@medly-components/core@1.24.3...@medly-components/core@1.24.4) (2020-09-16)
 
 
