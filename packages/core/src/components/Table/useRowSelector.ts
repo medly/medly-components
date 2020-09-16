@@ -29,7 +29,7 @@ const useRowSelector = ({ data, rowSelectionDisableKey, rowIdentifier, selectedI
                 }
                 return sIds.indexOf(id) === -1 ? [...sIds, id] : sIds.filter(i => i !== id);
             }),
-        [uniqueIds]
+        [uniqueIds, setSelectedIds]
     );
 
     useEffect(() => {
