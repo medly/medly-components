@@ -23,7 +23,6 @@ It's a controlled component. So we have to handle the state.
 
 ```tsx
 const [date, setDate] = useState(null);
-
 return <DatePicker label="Select Date" value={date} onChange={setDate} />;
 ```
 
@@ -35,13 +34,14 @@ To open the calendar click on the icon inside the datepicker component and to cl
             const [date, setDate] = useState(null);
             return (
                 <DatePicker
+                    id="dob"
                     value={date}
                     onChange={setDate}
                     fullWidth={boolean('Full Width', false)}
                     size={select('Size', sizes, 'M')}
-                    displayFormat={text('Display Format', 'MM / dd / yyyy')}
+                    displayFormat={text('Display Format', 'MM/dd/yyyy')}
                     disabled={boolean('Disabled', false)}
-                    placeholder={text('Placeholder', 'MM / DD / YYYY')}
+                    placeholder={text('Placeholder', 'MM/DD/YYYY')}
                     label={text('Label', 'Date of Birth')}
                     variant={select('variant', variants, 'outlined')}
                     required={boolean('Required', false)}

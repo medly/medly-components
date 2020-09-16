@@ -25,26 +25,26 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             placeholder,
             ...restProps
         } = props,
-        id = props.id || props.label || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
+        id = props.id || props.label.toLowerCase().replace(/\s/g, '') || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
         date: Date | null = useMemo(
             () => (value instanceof Date ? value : typeof value === 'string' ? parseToDate(value, displayFormat) : null),
             [value, displayFormat]
         );
 
-    const wrapperRef = useRef<HTMLDivElement>(null);
-    const [formattedDate, setFormattedDate] = useState('');
-    const [errorText, setErrorText] = useState('');
-    const [showCalendar, toggleCalendar] = useState(false);
-    const [active, setActive] = useState(false);
+    const wrapperRef = useRef<HTMLDivElement>(null),
+        [formattedDate, setFormattedDate] = useState(''),
+        [errorText, setErrorText] = useState(''),
+        [showCalendar, toggleCalendar] = useState(false),
+        [active, setActive] = useState(false);
 
     useEffect(() => {
         setFormattedDate(date ? format(date, displayFormat) : '');
     }, [date]);
 
     const onChangeHandler = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-            const value = event.target.value.replace(/\s/g, ''),
+            const value = event.target.value,
                 parsedDate = parseToDate(value, displayFormat);
-            if(parsedDate.toString() !== 'Invalid Date') {
+            if (parsedDate.toString() !== 'Invalid Date') {
                 onChange(parsedDate);
                 setErrorText('');
             }
@@ -57,8 +57,8 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             toggleCalendar(true);
         }, []),
         onBlurHandler = useCallback((event: React.FocusEvent<HTMLInputElement>) => {
-            const value = event.target.value.replace(/\s/g, '');
             setActive(false);
+            const value = event.target.value;
             if (parseToDate(value, displayFormat).toString() === 'Invalid Date' && required) {
                 setErrorText('Enter valid date');
             }
@@ -71,7 +71,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
             restProps.onFocus && restProps.onFocus(event);
         }, []),
         validate = useCallback((event: React.InvalidEvent<HTMLInputElement>) => {
-            if (event.target.value.replace(/\s/g, '') === '' && required) {
+            if (event.target.value === '' && required) {
                 setErrorText('Please fill in this field.');
             }
             restProps.onInvalid && restProps.onInvalid(event);
@@ -95,14 +95,14 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
 
     const suffixEl = () => (
         <DateIcon variant={restProps.variant} errorText={errorText} active={active} disabled={disabled} size={size}>
-            <DateRangeIcon onClick={iconClickHandler} size={size}/>
+            <DateRangeIcon onClick={iconClickHandler} size={size} />
         </DateIcon>
     );
 
     return (
-        <Wrapper ref={wrapperRef} fullWidth={fullWidth} minWidth={minWidth} size={size}>
+        <Wrapper id={`${id}-datepicker-wrapper`} ref={wrapperRef} fullWidth={fullWidth} minWidth={minWidth} size={size}>
             <InputMask
-                mask="99 / 99 / 9999"
+                mask="99/99/9999"
                 // @ts-ignore
                 maskPlaceholder={displayFormat}
                 placeholder={placeholder}
@@ -139,7 +139,6 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(props => {
         </Wrapper>
     );
 });
-
 DatePicker.defaultProps = {
     value: null,
     placeholder: 'Date of Birth',
