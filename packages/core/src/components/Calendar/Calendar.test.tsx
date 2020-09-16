@@ -16,6 +16,7 @@ const getDateValues = (container: HTMLElement) => {
 
 describe('Calendar Component', () => {
     afterAll(cleanup);
+
     it('should render given date', () => {
         const date = new Date(2020, 0, 1),
             { container } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
@@ -54,9 +55,8 @@ describe('Calendar Component', () => {
 
     it('should render previous month on clicking left arrow when current month is other than Jan', () => {
         const date = new Date(2020, 1, 1),
-            { container, getByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
-
-        fireEvent.click(getByText('<'));
+            { container } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
+        fireEvent.click(container.querySelector('.calendar-month-navigation-go-back'));
         const { month, year } = getDateValues(container);
         expect(month).toEqual('Jan');
         expect(year).toEqual('2020');
@@ -64,9 +64,8 @@ describe('Calendar Component', () => {
 
     it('should render dec month on clicking left arrow when current month is Jan', () => {
         const date = new Date(2020, 0, 1),
-            { container, getByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
-
-        fireEvent.click(getByText('<'));
+            { container } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
+        fireEvent.click(container.querySelector('.calendar-month-navigation-go-back'));
         const { month, year } = getDateValues(container);
         expect(month).toEqual('Dec');
         expect(year).toEqual('2019');
@@ -74,9 +73,8 @@ describe('Calendar Component', () => {
 
     it('should render next month on clicking right arrow when current month is other than Dec', () => {
         const date = new Date(2020, 1, 1),
-            { container, getByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
-
-        fireEvent.click(getByText('>'));
+            { container } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
+        fireEvent.click(container.querySelector('.calendar-month-navigation-go-forward'));
         const { month, year } = getDateValues(container);
         expect(month).toEqual('Mar');
         expect(year).toEqual('2020');
@@ -84,9 +82,8 @@ describe('Calendar Component', () => {
 
     it('should render Jan month on clicking right arrow when current month is Dec', () => {
         const date = new Date(2020, 11, 1),
-            { container, getByText } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
-
-        fireEvent.click(getByText('>'));
+            { container } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} />);
+        fireEvent.click(container.querySelector('.calendar-month-navigation-go-forward'));
         const { month, year } = getDateValues(container);
         expect(month).toEqual('Jan');
         expect(year).toEqual('2021');
@@ -108,7 +105,7 @@ describe('Calendar Component', () => {
 
     it('should disable dates which are are out of range ', () => {
         const date = new Date(2020, 11, 15),
-            { getByTitle, getByRole } = render(
+            { getByTitle, container } = render(
                 <Calendar
                     id="test-calendar"
                     date={date}
@@ -120,8 +117,8 @@ describe('Calendar Component', () => {
 
         expect(getByTitle('Wed Dec 09 2020')).toBeDisabled();
         expect(getByTitle('Mon Dec 21 2020')).toBeDisabled();
-        expect(getByRole('button', { name: '<' })).toBeDisabled();
-        expect(getByRole('button', { name: '>' })).toBeDisabled();
+        expect(container.querySelector('.calendar-month-navigation-go-back')).toBeDisabled();
+        expect(container.querySelector('.calendar-month-navigation-go-forward')).toBeDisabled();
         expect(getByTitle('Tue Dec 15 2020')).not.toBeDisabled();
     });
 

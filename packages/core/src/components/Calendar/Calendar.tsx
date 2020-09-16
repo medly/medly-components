@@ -1,6 +1,6 @@
+import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils/src';
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react';
-import { KeyboardArrowRightIcon, KeyboardArrowLeftIcon } from '@medly-components/icons';
 import { PopoverContext } from '../Popover/Popover.context';
 import SingleSelect from '../SingleSelect';
 import Text from '../Text';
@@ -31,7 +31,15 @@ export const Calendar: React.FC<Props> & WithStyle = React.memo(
             isPrevBtnDisabled = useMemo(() => year === minYear && month === minMonth, [month, year, minMonth, minYear]),
             isNextBtnDisabled = useMemo(() => year === maxYear && month === maxMonth, [month, year, maxMonth, maxYear]);
 
-        const weekDays = useMemo(() => WEEK_DAYS.map((label, index) => <Text textAlign="center" as="span" textWeight="Strong" key={`${label}_${index}`}>{label}</Text>), []),
+        const weekDays = useMemo(
+                () =>
+                    WEEK_DAYS.map((label, index) => (
+                        <Text textAlign="center" as="span" textWeight="Strong" key={`${label}_${index}`}>
+                            {label}
+                        </Text>
+                    )),
+                []
+            ),
             monthOptions = useMemo(
                 () =>
                     CALENDAR_MONTHS.reduce((acc, curr, index) => {
@@ -91,10 +99,18 @@ export const Calendar: React.FC<Props> & WithStyle = React.memo(
                             variant="outlined"
                         />
                     </Styled.MonthAndYearSelection>
-                    <Styled.MonthNavigation disabled={isPrevBtnDisabled} onClick={handlePreviousBtnClick}>
+                    <Styled.MonthNavigation
+                        className="calendar-month-navigation-go-back"
+                        disabled={isPrevBtnDisabled}
+                        onClick={handlePreviousBtnClick}
+                    >
                         <KeyboardArrowLeftIcon />
                     </Styled.MonthNavigation>
-                    <Styled.MonthNavigation disabled={isNextBtnDisabled} onClick={handleNextBtnClick}>
+                    <Styled.MonthNavigation
+                        className="calendar-month-navigation-go-forward"
+                        disabled={isNextBtnDisabled}
+                        onClick={handleNextBtnClick}
+                    >
                         <KeyboardArrowRightIcon />
                     </Styled.MonthNavigation>
                 </Styled.Header>
