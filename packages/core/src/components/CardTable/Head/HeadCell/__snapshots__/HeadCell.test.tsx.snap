@@ -11,6 +11,7 @@ exports[`Card Table HeadCell should be able to "center" align  1`] = `
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -128,6 +129,7 @@ exports[`Card Table HeadCell should be able to "left" align  1`] = `
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -245,6 +247,7 @@ exports[`Card Table HeadCell should be able to "right" align  1`] = `
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -377,6 +380,7 @@ exports[`Card Table HeadCell should call onSortChange with asc order when clicke
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -522,6 +526,7 @@ exports[`Card Table HeadCell should call onSortChange with desc order when click
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -652,6 +657,7 @@ exports[`Card Table HeadCell should render properly with dark background and dro
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -784,6 +790,7 @@ exports[`Card Table HeadCell should render properly with hover state 1`] = `
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -929,6 +936,7 @@ exports[`Card Table HeadCell should render properly with light background and dr
   -ms-letter-spacing: 0.12rem;
   letter-spacing: 0.12rem;
   line-height: 2.0rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 

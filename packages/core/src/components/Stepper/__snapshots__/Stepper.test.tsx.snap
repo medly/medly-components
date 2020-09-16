@@ -11,6 +11,7 @@ exports[`Stepper component should change active step when click on any step 1`] 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -24,6 +25,7 @@ exports[`Stepper component should change active step when click on any step 1`] 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c3 {
@@ -188,6 +190,7 @@ exports[`Stepper component should render correctly with all the default props 1`
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -201,6 +204,7 @@ exports[`Stepper component should render correctly with all the default props 1`
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c3 {
@@ -361,6 +365,7 @@ exports[`Stepper component should render correctly with all the props given 1`] 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
   text-transform: uppercase;
 }
 
@@ -374,6 +379,7 @@ exports[`Stepper component should render correctly with all the props given 1`] 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c3 {

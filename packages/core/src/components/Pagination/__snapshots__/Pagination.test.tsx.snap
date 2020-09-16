@@ -11,6 +11,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c1 {
@@ -237,6 +238,7 @@ exports[`Pagination component should render correctly with all the default props
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c1 {
@@ -611,6 +613,7 @@ exports[`Pagination component should render correctly with all the props given 1
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c1 {

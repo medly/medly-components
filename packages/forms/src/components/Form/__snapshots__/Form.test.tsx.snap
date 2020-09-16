@@ -1,0 +1,4662 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form should not render any field if component type is not matched 1`] = `
+.c5 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  text-align: initial;
+}
+
+.c3 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  border-radius: 100rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c3 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:hover {
+  cursor: pointer;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3:disabled {
+  cursor: not-allowed;
+}
+
+.c3:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c3:disabled .sc-AxiKw * {
+  fill: #98A7B7;
+}
+
+.c3:not(:disabled):not(:hover) {
+  color: #ffffff;
+  background: #126AFA;
+}
+
+.c3:not(:disabled):not(:hover) .sc-AxiKw * {
+  fill: #ffffff;
+}
+
+.c3:not(:disabled):active {
+  color: #ffffff;
+  background: #0D4AAF;
+}
+
+.c3:not(:disabled):active .sc-AxiKw * {
+  fill: #ffffff;
+}
+
+.c3:not(:disabled):not(:active):hover {
+  color: #ffffff;
+  background: #0F5AD5;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+}
+
+.c3:not(:disabled):not(:active):hover .sc-AxiKw * {
+  fill: #ffffff;
+}
+
+.c3 .sc-AxiKw + .c4 {
+  margin-left: 0.8rem;
+}
+
+.c3 .c4 + .sc-AxiKw {
+  margin-left: 0.8rem;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 1/-1;
+  margin-top: 1.6rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c2 > * + * {
+  margin-left: 1.6rem;
+}
+
+.c1 {
+  grid-column: 1/-1;
+}
+
+.c1 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c0 {
+  grid-template-rows: auto;
+  grid-template-columns: repeat(12,1fr);
+  grid-gap: 1.6rem;
+  display: inline-grid;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.c0 > h2 {
+  grid-column: 1/-1;
+  margin-bottom: 0.8rem;
+}
+
+.c0 > span {
+  grid-column: 1/-1;
+  margin-bottom: 1rem;
+}
+
+<div>
+  <form
+    class="c0"
+    id="medly-dynamic-form"
+  >
+    <div
+      class="c1"
+    />
+    <div
+      class="c2"
+    >
+      <button
+        class="c3"
+        form="medly-dynamic-form"
+        type="submit"
+      >
+        <span
+          class="c4 c5"
+        >
+          Submit
+        </span>
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Form should render properly with initial state 1`] = `
+.c31 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c31 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c44 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: pointer;
+}
+
+.c44 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c65 {
+  overflow: visible;
+  font-size: 2rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: pointer;
+}
+
+.c65 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c18 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c21 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  text-align: initial;
+}
+
+.c66 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.8rem;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.02rem;
+  -moz-letter-spacing: -0.02rem;
+  -ms-letter-spacing: -0.02rem;
+  letter-spacing: -0.02rem;
+  line-height: 2.4rem;
+  text-align: initial;
+}
+
+.c74 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  border-radius: 100rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c74 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c74:hover {
+  cursor: pointer;
+}
+
+.c74:focus {
+  outline: none;
+}
+
+.c74:disabled {
+  cursor: not-allowed;
+}
+
+.c74:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c74:disabled .c30 * {
+  fill: #98A7B7;
+}
+
+.c74:not(:disabled):not(:hover) {
+  color: #ffffff;
+  background: #126AFA;
+}
+
+.c74:not(:disabled):not(:hover) .c30 * {
+  fill: #ffffff;
+}
+
+.c74:not(:disabled):active {
+  color: #ffffff;
+  background: #0D4AAF;
+}
+
+.c74:not(:disabled):active .c30 * {
+  fill: #ffffff;
+}
+
+.c74:not(:disabled):not(:active):hover {
+  color: #ffffff;
+  background: #0F5AD5;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+}
+
+.c74:not(:disabled):not(:active):hover .c30 * {
+  fill: #ffffff;
+}
+
+.c74 .c30 + .c17 {
+  margin-left: 0.8rem;
+}
+
+.c74 .c17 + .c30 {
+  margin-left: 0.8rem;
+}
+
+.c20 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c20 > :first-child {
+  margin-bottom: 0.9rem;
+}
+
+.c33 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c33 > :first-child {
+  margin-bottom: 0.9rem;
+}
+
+.c22 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: inherit;
+  color: inherit;
+}
+
+.c22::after {
+  content: ' *';
+  color: default:inherit;
+  disabled: #98A7B7;
+}
+
+.c25 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: inherit;
+  color: inherit;
+  padding: 0 1.6rem;
+}
+
+.c23 {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.c29 {
+  border: 0.15rem solid;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c29 .c30 {
+  pointer-events: none;
+  z-index: 1;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  width: 100%;
+  height: 100%;
+  margin-right: 0.05rem;
+}
+
+.c27 {
+  opacity: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  position: absolute;
+}
+
+.c27:checked ~ .c28 {
+  border-color: #126AFA;
+  background-color: #126AFA;
+}
+
+.c27:checked ~ .c28 .c30 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c27:checked ~ .c28 .c30 * {
+  fill: #ffffff;
+}
+
+.c27:not(:checked) ~ .c28 {
+  background-color: transparent;
+  border-color: #13181D;
+}
+
+.c27:not(:disabled):focus ~ .c28 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+}
+
+.c27:not(:disabled):focus:not(:checked) ~ .c28 {
+  border-color: #126AFA;
+}
+
+.c26 {
+  margin: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+}
+
+.c24 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c24 * {
+  cursor: pointer;
+}
+
+.c24:hover .c28 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #0F5AD5;
+  background-color: #0F5AD5;
+}
+
+.c32 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c32 * {
+  cursor: pointer;
+}
+
+.c32:hover .c28 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #126AFA;
+}
+
+.c72 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c72 * {
+  cursor: pointer;
+}
+
+.c72:hover .c28 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #0F5AD5;
+  background-color: #0F5AD5;
+}
+
+.c9 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.c9::after {
+  content: ' *';
+}
+
+.c43 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.c49 {
+  pointer-events: none;
+  margin-right: 1.6rem;
+}
+
+.c60 {
+  pointer-events: none;
+  margin-left: 1.6rem;
+}
+
+.c5 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
+}
+
+.c5 .c8 {
+  color: #546A7F;
+}
+
+.c5 .c48,
+.c5 .c59 {
+  color: #546A7F;
+}
+
+.c5 .c48 *,
+.c5 .c59 * {
+  fill: #546A7F;
+}
+
+.c5 ~ .sc-fzqNqU {
+  color: #546A7F;
+}
+
+.c5::after {
+  content: '';
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:hover::after,
+.c5:focus-within::after {
+  border-width: 0.2rem;
+}
+
+.c5:focus-within,
+.c5:focus-within:hover {
+  background-color: #E7F0FF;
+}
+
+.c5:focus-within::after,
+.c5:focus-within:hover::after {
+  border-color: #126AFA;
+}
+
+.c5:focus-within .c8,
+.c5:focus-within:hover .c8 {
+  color: #126AFA;
+}
+
+.c5:focus-within .c48,
+.c5:focus-within:hover .c48,
+.c5:focus-within .c59,
+.c5:focus-within:hover .c59 {
+  color: #126AFA;
+}
+
+.c5:focus-within .c48 *,
+.c5:focus-within:hover .c48 *,
+.c5:focus-within .c59 *,
+.c5:focus-within:hover .c59 * {
+  fill: #126AFA;
+}
+
+.c5:focus-within input::-webkit-input-placeholder,
+.c5:focus-within:hover input::-webkit-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c5:focus-within input::-moz-placeholder,
+.c5:focus-within:hover input::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c5:focus-within input:-ms-input-placeholder,
+.c5:focus-within:hover input:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c5:focus-within input::placeholder,
+.c5:focus-within:hover input::placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c3 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c42 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: 20rem;
+  margin: 0.8rem 0;
+}
+
+.c46 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 29rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c7 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c7:focus {
+  outline: none;
+}
+
+.c7:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c7:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c7:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c7:focus::placeholder {
+  opacity: 1;
+}
+
+.c7::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c7::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c7:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c7::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c7:not(:placeholder-shown) + .c8,
+.c7:focus + .c8 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c13 {
+  color: #13181D;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  margin: 0px 0.8rem 0px 0px;
+  cursor: default;
+}
+
+.c13::after {
+  color: red;
+  content: ' *';
+}
+
+.c58 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c58 .c2 {
+  margin: 0;
+  caret-color: transparent;
+}
+
+.c58 .c2 label {
+  pointer-events: none;
+}
+
+.c58 .c2 div,
+.c58 .c2 input,
+.c58 .c2 label {
+  cursor: pointer;
+}
+
+.c58 .c2 .c59 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c58 .c2:not(:focus-within):hover .c59 * {
+  fill: #13181D;
+}
+
+.c45 {
+  border-radius: 50%;
+  padding: 0.8rem;
+}
+
+.c45 * {
+  fill: #607890;
+}
+
+.c45:hover {
+  background-color: #dfe4e9;
+}
+
+.c45:hover * {
+  fill: #303C48;
+}
+
+.c41 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c41 .c2 {
+  margin: 0;
+}
+
+.c41 .c2 input {
+  text-transform: uppercase;
+}
+
+.c41 .c4 {
+  padding: 0 0.8rem 0 1.6rem;
+}
+
+.c41 .sc-fzomME {
+  z-index: 1000;
+  position: absolute;
+  top: 5.6rem;
+}
+
+.c55 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c57 {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: unset;
+  left: 0;
+  top: unset;
+  right: unset;
+}
+
+.c53 {
+  display: block;
+  position: relative;
+  border: 1px solid #BCBEC0;
+  background: #ffffff;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.c54 {
+  border: 0;
+  padding: 0 44px;
+  width: 100%;
+  min-height: 46px;
+  background: #ffffff;
+  font-family: Montserrat,sans-serif;
+  color: #001217;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.c54::-webkit-input-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c54::-moz-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c54:-moz-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c51 {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c56 {
+  color: #BCBEC0;
+  opacity: 1;
+}
+
+.c52 {
+  display: grid;
+  grid-template-columns: 194px 39px 194px;
+  grid-template-rows: unset;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+.c47,
+.c47 * {
+  cursor: pointer;
+}
+
+.c50 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c50 > div {
+  display: inline-block;
+  position: unset;
+}
+
+.c50 > div div {
+  z-index: 5;
+}
+
+.c50 > div > div:last-child {
+  top: unset;
+  bottom: unset;
+  left: unset;
+  right: unset;
+  top: calc(100% + 0px);
+  left: 0%;
+}
+
+.c50 > div > div:first-child {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: auto 30px auto;
+  padding: 0.8rem;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+}
+
+.c50 > div > div:first-child div::before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: #C7D0D8;
+}
+
+.c50 > div > div:first-child div svg {
+  display: none;
+}
+
+.c50 > div > div:first-child label {
+  text-align: center;
+  border: 0;
+  background: transparent;
+}
+
+.c50 > div > div:first-child label input {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  max-width: 90px;
+  min-height: unset;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: none;
+  background: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-clip: padding-box;
+}
+
+.c50 > div > div:first-child label input:disabled {
+  cursor: not-allowed;
+}
+
+.c50 > div > div:first-child label input:focus {
+  outline: 0;
+}
+
+.c50 > div > div:first-child label input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.c14 {
+  grid-area: label;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c19 {
+  grid-area: description;
+  margin: 5px 0 0 2px;
+  color: #012040;
+}
+
+.c12 {
+  margin: 0.8rem 0.8rem 0.8rem 0;
+  display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
+  grid-template-areas: 'label field' 'random description';
+}
+
+.c12 .sc-fzoPby {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c16 {
+  width: 1px;
+  opacity: 0;
+}
+
+.c15 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  padding: 0.8rem;
+  color: #435465;
+  background-clip: padding-box;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #b0bcc8;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c15:focus {
+  border-color: #012040;
+  outline: 0;
+}
+
+.c64 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  cursor: default;
+  border-radius: 2rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.9rem;
+  color: #303C48;
+  border-color: #607890;
+  background-color: #dfe4e9;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c64:focus {
+  outline: none;
+}
+
+.c64 .c30 {
+  font-size: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 0.6rem;
+}
+
+.c64 .c30 {
+  padding: 0.4rem;
+  background-color: #b0bcc8;
+}
+
+.c64 .c30 * {
+  fill: #303C48;
+}
+
+.c64 .c30:hover {
+  background-color: #98A7B7;
+}
+
+.c64 .c30:hover * {
+  fill: #13181D;
+}
+
+.c64:hover {
+  border-color: #435465;
+}
+
+.c63 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c63 button {
+  margin-right: 0.8rem;
+}
+
+.c61 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: 25.6rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c61 .c2 {
+  margin: 0;
+}
+
+.c61 .c2 label {
+  pointer-events: none;
+}
+
+.c61 .c2 div,
+.c61 .c2 input,
+.c61 .c2 label {
+  cursor: pointer;
+}
+
+.c61 .c2:focus-within input {
+  cursor: text;
+}
+
+.c61 .c2 input {
+  padding-right: 1.6rem;
+}
+
+.c61 .c62 > .c30 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c61 .c62 > .c30 * {
+  fill: #13181D;
+}
+
+.c39 {
+  position: relative;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  box-sizing: border-box;
+  border: 0.15rem solid;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.c39::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 67%;
+  height: 67%;
+  -webkit-transform: translate(-50%,-50%) scale(0);
+  -ms-transform: translate(-50%,-50%) scale(0);
+  transform: translate(-50%,-50%) scale(0);
+  border-radius: 100%;
+  -webkit-transition: -webkit-transform 100ms ease-out;
+  -webkit-transition: transform 100ms ease-out;
+  transition: transform 100ms ease-out;
+}
+
+.c37 {
+  position: absolute;
+  opacity: 0;
+  width: 1%;
+  height: 1%;
+  margin: 0;
+}
+
+.c37 ~ .c38 {
+  border-color: #13181D;
+}
+
+.c37 ~ .c38::after {
+  background-color: #13181D;
+}
+
+.c37:checked ~ .c38::after {
+  -webkit-transform: translate(-50%,-50%) scale(1);
+  -ms-transform: translate(-50%,-50%) scale(1);
+  transform: translate(-50%,-50%) scale(1);
+}
+
+.c37:disabled ~ .c38 {
+  border-color: #98A7B7;
+}
+
+.c37:disabled ~ .c38::after {
+  background-color: #98A7B7;
+}
+
+.c37:not(:disabled):checked ~ .c38 {
+  border-color: #126AFA;
+}
+
+.c37:not(:disabled):checked ~ .c38::after {
+  background-color: #126AFA;
+}
+
+.c37:not(:disabled):focus ~ .c38 {
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+}
+
+.c36 {
+  margin: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+  border-radius: 100%;
+}
+
+.c35 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c40 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c40:hover.c34:hover .c38 {
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+}
+
+.c73 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 1/-1;
+  margin-top: 1.6rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c73 > * + * {
+  margin-left: 1.6rem;
+}
+
+.c1 {
+  grid-column: 1/7;
+}
+
+.c1 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c10 {
+  grid-column: 7/-1;
+}
+
+.c10 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c11 {
+  grid-column: 1/-1;
+}
+
+.c11 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c69 {
+  grid-column: 1/5;
+}
+
+.c69 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c70 {
+  grid-column: 5/9;
+}
+
+.c70 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c71 {
+  grid-column: 9/-1;
+}
+
+.c71 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c67 {
+  grid-column: 1/-1;
+  margin-top: 2.6rem;
+}
+
+.c68 {
+  margin-bottom: 1rem;
+}
+
+.c0 {
+  grid-template-rows: auto;
+  grid-template-columns: repeat(12,1fr);
+  grid-gap: 1.6rem;
+  display: inline-grid;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.c0 > h2 {
+  grid-column: 1/-1;
+  margin-bottom: 0.8rem;
+}
+
+.c0 > span {
+  grid-column: 1/-1;
+  margin-bottom: 1rem;
+}
+
+<div>
+  <form
+    class="c0"
+    id="medly-dynamic-form"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2 c3"
+        id="firstName-input-wrapper"
+      >
+        <div
+          class="c4 c5"
+        >
+          <div
+            class="c6"
+          >
+            <input
+              aria-describedby="firstName-helper-text"
+              class="c7"
+              id="firstName-input"
+              name="firstName"
+              placeholder=" "
+              required=""
+              type="text"
+              value="first name"
+            />
+            <label
+              class="c8 c9"
+              for="firstName-input"
+              required=""
+            >
+              First Name
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c10"
+    >
+      <div
+        class="c2 c3"
+        id="lastName-input-wrapper"
+      >
+        <div
+          class="c4 c5"
+        >
+          <div
+            class="c6"
+          >
+            <input
+              aria-describedby="lastName-helper-text"
+              class="c7"
+              id="lastName-input"
+              name="lastName"
+              placeholder=" "
+              required=""
+              type="text"
+              value="last name"
+            />
+            <label
+              class="c8 c9"
+              for="lastName-input"
+              required=""
+            >
+              Last Name
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c11"
+    >
+      <div
+        class="c2 c3"
+        id="email-input-wrapper"
+      >
+        <div
+          class="c4 c5"
+        >
+          <div
+            class="c6"
+          >
+            <input
+              aria-describedby="email-helper-text"
+              class="c7"
+              id="email-input"
+              name="email"
+              placeholder=" "
+              required=""
+              type="email"
+              value="email@email.com"
+            />
+            <label
+              class="c8 c9"
+              for="email-input"
+              required=""
+            >
+              Email
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c11"
+    >
+      <div
+        class="c12"
+        id="resume-field"
+      >
+        <label
+          class="c13 c14"
+          required=""
+        >
+          Resume
+        </label>
+        <label
+          class="c15"
+          id="resume-label"
+        >
+          Click to choose file
+          <input
+            class="c16"
+            id="resume"
+            name="resume"
+            required=""
+            type="file"
+          />
+        </label>
+        <span
+          class="c17 c18 c19"
+        >
+          File size should be less than 5MB
+        </span>
+      </div>
+    </div>
+    <div
+      class="c11"
+    >
+      <div
+        aria-describedby="languages-helper-text"
+        class="c20"
+        id="languages-wrapper"
+        name="languages"
+      >
+        <span
+          class="c17 c21 c22"
+          id="languages-label"
+          required=""
+          type="checkbox"
+        >
+          Languages
+        </span>
+        <div
+          class="c23"
+          id="languages-options"
+        >
+          
+          <label
+            class="c24"
+            for="JAVA-languages"
+            id="JAVA-languages-wrapper"
+            sizes="[object Object]"
+          >
+            <span
+              class="c17 c18 c25"
+              id="JAVA-languages-label"
+              type="checkbox"
+            >
+              JAVA
+            </span>
+            <div
+              class="c26"
+            >
+              <input
+                checked=""
+                class="c27"
+                id="JAVA-languages"
+                name="java"
+                sizes="[object Object]"
+                type="checkbox"
+              />
+              <div
+                class="c28 c29"
+              >
+                <svg
+                  class="c30 c31"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                    fill="green"
+                  />
+                </svg>
+              </div>
+            </div>
+          </label>
+          
+          <label
+            class="c32"
+            for="RUBY-languages"
+            id="RUBY-languages-wrapper"
+            sizes="[object Object]"
+          >
+            <span
+              class="c17 c18 c25"
+              id="RUBY-languages-label"
+              type="checkbox"
+            >
+              RUBY
+            </span>
+            <div
+              class="c26"
+            >
+              <input
+                class="c27"
+                id="RUBY-languages"
+                name="ruby"
+                sizes="[object Object]"
+                type="checkbox"
+              />
+              <div
+                class="c28 c29"
+              >
+                <svg
+                  class="c30 c31"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                    fill="green"
+                  />
+                </svg>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c11"
+    >
+      <div
+        aria-describedby="role-helper-text"
+        class="c33"
+        id="role-wrapper"
+      >
+        <span
+          class="c17 c21 c22"
+          id="role-label"
+          required=""
+          type="radio"
+        >
+          Role
+        </span>
+        <div
+          class="c23"
+          id="role-options"
+        >
+          <label
+            class="c34 c35"
+            for="Front End-role"
+            id="Front End-role-wrapper"
+            sizes="[object Object]"
+          >
+            <span
+              class="c17 c18 c25"
+              id="Front End-role-label"
+              type="radio"
+            >
+              Front End
+            </span>
+            <div
+              class="c36"
+            >
+              <input
+                checked=""
+                class="c37"
+                id="Front End-role"
+                name="role"
+                required=""
+                sizes="[object Object]"
+                type="radio"
+                value="front-end"
+              />
+              <div
+                class="c38 c39"
+              />
+            </div>
+          </label>
+          <label
+            class="c34 c40"
+            for="Back End-role"
+            id="Back End-role-wrapper"
+            sizes="[object Object]"
+          >
+            <span
+              class="c17 c18 c25"
+              id="Back End-role-label"
+              type="radio"
+            >
+              Back End
+            </span>
+            <div
+              class="c36"
+            >
+              <input
+                class="c37"
+                id="Back End-role"
+                name="role"
+                required=""
+                sizes="[object Object]"
+                type="radio"
+                value="back-end"
+              />
+              <div
+                class="c38 c39"
+              />
+            </div>
+          </label>
+          <label
+            class="c34 c40"
+            for="Full Stack-role"
+            id="Full Stack-role-wrapper"
+            sizes="[object Object]"
+          >
+            <span
+              class="c17 c18 c25"
+              id="Full Stack-role-label"
+              type="radio"
+            >
+              Full Stack
+            </span>
+            <div
+              class="c36"
+            >
+              <input
+                class="c37"
+                id="Full Stack-role"
+                name="role"
+                required=""
+                sizes="[object Object]"
+                type="radio"
+                value="full-stack"
+              />
+              <div
+                class="c38 c39"
+              />
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c11"
+    >
+      <div
+        class="c41"
+        id="birthDate-datepicker-wrapper"
+      >
+        <div
+          class="c2 c42"
+          id="birthDate-input-wrapper"
+        >
+          <div
+            class="c4 c5"
+          >
+            <div
+              class="c6"
+            >
+              <input
+                aria-describedby="birthDate-helper-text"
+                class="c7"
+                id="birthDate-input"
+                placeholder="Birth Date"
+                type="text"
+                value="01/01/2019"
+              />
+              <label
+                class="c8 c43"
+                for="birthDate-input"
+              >
+                Birth Date
+              </label>
+            </div>
+            <svg
+              class="c30 c44 c45"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M19 4h-1V3c0-.55-.45-1-1-1s-1 .45-1 1v1H8V3c0-.55-.45-1-1-1s-1 .45-1 1v1H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1V9h14v10zM9 13v-2H7v2h2zm2-2h2v2h-2v-2zm6 2v-2h-2v2h2z"
+                fill="#000"
+                fill-opacity=".54"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="c11"
+    >
+      <div
+        class="c2 c46 c47"
+      >
+        <div
+          class="c4 c5"
+        >
+          <svg
+            class="c30 c31 c48 c49"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M19 4h-1V3c0-.55-.45-1-1-1s-1 .45-1 1v1H8V3c0-.55-.45-1-1-1s-1 .45-1 1v1H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1V9h14v10zM9 13v-2H7v2h2zm2-2h2v2h-2v-2zm6 2v-2h-2v2h2z"
+              fill="#000"
+              fill-opacity=".54"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <div
+            class="c50"
+            data-testid="react-datepicker"
+          >
+            <div
+              class="c51"
+            >
+              <div
+                class="sc-fznLPX c52"
+                data-testid="DateRangeInputGrid"
+              >
+                <label
+                  class="c53"
+                  display="block"
+                  for="startDate"
+                >
+                  <input
+                    aria-label="Start date"
+                    autocomplete="off"
+                    class="c54"
+                    color="#001217"
+                    data-testid="DatepickerInput"
+                    font-family="Montserrat, sans-serif"
+                    font-size="14px"
+                    font-weight="600"
+                    id="startDate"
+                    placeholder="Start date"
+                    tabindex="0"
+                    value="01/01/2019"
+                    width="100%"
+                  />
+                </label>
+                <div
+                  class="c55"
+                >
+                  <svg
+                    class="c56"
+                    height="12px"
+                    transform="rotate(90 0 0)"
+                    viewBox="0 0 9 12"
+                    width="15px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.46.001a.538.538 0 0 0-.358.174L.156 4.48a.538.538 0 1 0 .796.724l3.01-3.285v13.689a.563.563 0 0 0 .538.55.563.563 0 0 0 .538-.55V1.918l3.01 3.286a.538.538 0 1 0 .796-.724L4.898.175a.538.538 0 0 0-.437-.174z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <label
+                  class="c53"
+                  display="block"
+                  for="endDate"
+                >
+                  <input
+                    aria-label="End date"
+                    autocomplete="off"
+                    class="c54"
+                    color="#001217"
+                    data-testid="DatepickerInput"
+                    font-family="Montserrat, sans-serif"
+                    font-size="14px"
+                    font-weight="600"
+                    id="endDate"
+                    placeholder="End date"
+                    tabindex="0"
+                    value="01/02/2019"
+                    width="100%"
+                  />
+                </label>
+              </div>
+              <div
+                class="c57"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c11"
+    >
+      <div
+        class="c58"
+        id="country-wrapper"
+      >
+        <div
+          class="c2 c42"
+          id="country-input-wrapper"
+        >
+          <div
+            class="c4 c5"
+          >
+            <div
+              class="c6"
+            >
+              <input
+                aria-describedby="country-helper-text"
+                autocomplete="off"
+                class="c7"
+                id="country-input"
+                name="country"
+                placeholder="Please Select . . ."
+                required=""
+                type="text"
+                value="India"
+              />
+              <label
+                class="c8 c9"
+                for="country-input"
+                required=""
+              >
+                Country
+              </label>
+            </div>
+            <svg
+              class="c30 c31 c59 c60"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                fill="#000"
+              />
+            </svg>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="c11"
+    >
+      <div
+        class="c61"
+        id="graduation-wrapper"
+        name="graduation"
+        placeholder="Please Select . . ."
+      >
+        <div
+          class="c2 c42"
+          id="graduation-input-wrapper"
+        >
+          <div
+            class="c4 c5"
+          >
+            <div
+              class="c6"
+            >
+              <input
+                aria-describedby="graduation-helper-text"
+                autocomplete="off"
+                class="c7"
+                id="graduation-input"
+                placeholder="1 options selected"
+                required=""
+                type="text"
+                value="b-tech"
+              />
+              <label
+                class="c8 c9"
+                for="graduation-input"
+                required=""
+              >
+                Graduation
+              </label>
+            </div>
+            <div
+              class="c62 c63"
+              id="graduation-count"
+            >
+              <button
+                class="c64"
+                id="medly-options-chip"
+              >
+                <span
+                  class="c17 c21"
+                >
+                  1
+                </span>
+                <svg
+                  class="c30 c65"
+                  fill="none"
+                  height="1em"
+                  id="medly-options-chip-clear"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59 7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12 5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"
+                    fill="#000"
+                    fill-opacity=".54"
+                  />
+                </svg>
+              </button>
+              <svg
+                class="c30 c31"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                  fill="#000"
+                />
+              </svg>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <h4
+      class="c17 c66 c67"
+    >
+      Marks
+    </h4>
+    <span
+      class="c17 c18 c68"
+    >
+      Marks Information
+    </span>
+    <div
+      class="c69"
+    >
+      <div
+        class="c2 c3"
+        id="marks.database-input-wrapper"
+      >
+        <div
+          class="c4 c5"
+        >
+          <div
+            class="c6"
+          >
+            <input
+              aria-describedby="marks.database-helper-text"
+              class="c7"
+              id="marks.database-input"
+              name="marks.database"
+              placeholder="Database"
+              required=""
+              type="number"
+              value="10"
+            />
+            <label
+              class="c8 c9"
+              for="marks.database-input"
+              required=""
+            >
+              Database
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c70"
+    >
+      <div
+        class="c2 c3"
+        id="marks.algorithms-input-wrapper"
+      >
+        <div
+          class="c4 c5"
+        >
+          <div
+            class="c6"
+          >
+            <input
+              aria-describedby="marks.algorithms-helper-text"
+              class="c7"
+              id="marks.algorithms-input"
+              name="marks.algorithms"
+              placeholder="Algorithms"
+              required=""
+              type="number"
+              value="10"
+            />
+            <label
+              class="c8 c9"
+              for="marks.algorithms-input"
+              required=""
+            >
+              Algorithms
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c71"
+    >
+      <div
+        class="c2 c3"
+        id="marks.maths-input-wrapper"
+      >
+        <div
+          class="c4 c5"
+        >
+          <div
+            class="c6"
+          >
+            <input
+              aria-describedby="marks.maths-helper-text"
+              class="c7"
+              id="marks.maths-input"
+              name="marks.maths"
+              placeholder="Maths"
+              required=""
+              type="number"
+              value="10"
+            />
+            <label
+              class="c8 c9"
+              for="marks.maths-input"
+              required=""
+            >
+              Maths
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c11"
+    >
+      
+      <label
+        class="c72"
+        for="agree"
+        id="agree-wrapper"
+        sizes="[object Object]"
+      >
+        <span
+          class="c17 c18 c25"
+          id="agree-label"
+          type="checkbox"
+        >
+          Do you Agree
+        </span>
+        <div
+          class="c26"
+        >
+          <input
+            checked=""
+            class="c27"
+            id="agree"
+            name="agree"
+            sizes="[object Object]"
+            type="checkbox"
+          />
+          <div
+            class="c28 c29"
+          >
+            <svg
+              class="c30 c31"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                fill="green"
+              />
+            </svg>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div
+      class="c73"
+    >
+      <button
+        class="c74"
+        form="medly-dynamic-form"
+        type="submit"
+      >
+        <span
+          class="c17 c21"
+        >
+          Submit
+        </span>
+      </button>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Form should render properly without initial state 1`] = `
+.c33 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c33 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c44 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: pointer;
+}
+
+.c44 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 3.2rem;
+  font-weight: 600;
+  -webkit-letter-spacing: -0.04rem;
+  -moz-letter-spacing: -0.04rem;
+  -ms-letter-spacing: -0.04rem;
+  letter-spacing: -0.04rem;
+  line-height: 4.0rem;
+  text-align: initial;
+}
+
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  text-align: initial;
+}
+
+.c20 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c23 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  text-align: initial;
+}
+
+.c64 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.8rem;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.02rem;
+  -moz-letter-spacing: -0.02rem;
+  -ms-letter-spacing: -0.02rem;
+  letter-spacing: -0.02rem;
+  line-height: 2.4rem;
+  text-align: initial;
+}
+
+.c72 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  border-radius: 100rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c72 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c72:hover {
+  cursor: pointer;
+}
+
+.c72:focus {
+  outline: none;
+}
+
+.c72:disabled {
+  cursor: not-allowed;
+}
+
+.c72:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c72:disabled .c32 * {
+  fill: #98A7B7;
+}
+
+.c72:not(:disabled):not(:hover) {
+  color: #ffffff;
+  background: #126AFA;
+}
+
+.c72:not(:disabled):not(:hover) .c32 * {
+  fill: #ffffff;
+}
+
+.c72:not(:disabled):active {
+  color: #ffffff;
+  background: #0D4AAF;
+}
+
+.c72:not(:disabled):active .c32 * {
+  fill: #ffffff;
+}
+
+.c72:not(:disabled):not(:active):hover {
+  color: #ffffff;
+  background: #0F5AD5;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+}
+
+.c72:not(:disabled):not(:active):hover .c32 * {
+  fill: #ffffff;
+}
+
+.c72 .c32 + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c72 .c1 + .c32 {
+  margin-left: 0.8rem;
+}
+
+.c22 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c22 > :first-child {
+  margin-bottom: 0.9rem;
+}
+
+.c34 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c34 > :first-child {
+  margin-bottom: 0.9rem;
+}
+
+.c24 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: inherit;
+  color: inherit;
+}
+
+.c24::after {
+  content: ' *';
+  color: default:inherit;
+  disabled: #98A7B7;
+}
+
+.c27 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: inherit;
+  color: inherit;
+  padding: 0 1.6rem;
+}
+
+.c25 {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+
+.c31 {
+  border: 0.15rem solid;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 22.2%;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c31 .c32 {
+  pointer-events: none;
+  z-index: 1;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  width: 100%;
+  height: 100%;
+  margin-right: 0.05rem;
+}
+
+.c29 {
+  opacity: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  position: absolute;
+}
+
+.c29:checked ~ .c30 {
+  border-color: #126AFA;
+  background-color: #126AFA;
+}
+
+.c29:checked ~ .c30 .c32 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.c29:checked ~ .c30 .c32 * {
+  fill: #ffffff;
+}
+
+.c29:not(:checked) ~ .c30 {
+  background-color: transparent;
+  border-color: #13181D;
+}
+
+.c29:not(:disabled):focus ~ .c30 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+}
+
+.c29:not(:disabled):focus:not(:checked) ~ .c30 {
+  border-color: #126AFA;
+}
+
+.c28 {
+  margin: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+}
+
+.c26 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c26 * {
+  cursor: pointer;
+}
+
+.c26:hover .c30 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #126AFA;
+}
+
+.c70 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c70 * {
+  cursor: pointer;
+}
+
+.c70:hover .c30 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #126AFA;
+}
+
+.c12 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.c12::after {
+  content: ' *';
+}
+
+.c43 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.c49 {
+  pointer-events: none;
+  margin-right: 1.6rem;
+}
+
+.c60 {
+  pointer-events: none;
+  margin-left: 1.6rem;
+}
+
+.c8 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
+}
+
+.c8 .c11 {
+  color: #546A7F;
+}
+
+.c8 .c48,
+.c8 .c59 {
+  color: #546A7F;
+}
+
+.c8 .c48 *,
+.c8 .c59 * {
+  fill: #546A7F;
+}
+
+.c8 ~ .sc-fzqNqU {
+  color: #546A7F;
+}
+
+.c8::after {
+  content: '';
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c8:hover::after,
+.c8:focus-within::after {
+  border-width: 0.2rem;
+}
+
+.c8:focus-within,
+.c8:focus-within:hover {
+  background-color: #E7F0FF;
+}
+
+.c8:focus-within::after,
+.c8:focus-within:hover::after {
+  border-color: #126AFA;
+}
+
+.c8:focus-within .c11,
+.c8:focus-within:hover .c11 {
+  color: #126AFA;
+}
+
+.c8:focus-within .c48,
+.c8:focus-within:hover .c48,
+.c8:focus-within .c59,
+.c8:focus-within:hover .c59 {
+  color: #126AFA;
+}
+
+.c8:focus-within .c48 *,
+.c8:focus-within:hover .c48 *,
+.c8:focus-within .c59 *,
+.c8:focus-within:hover .c59 * {
+  fill: #126AFA;
+}
+
+.c8:focus-within input::-webkit-input-placeholder,
+.c8:focus-within:hover input::-webkit-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c8:focus-within input::-moz-placeholder,
+.c8:focus-within:hover input::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c8:focus-within input:-ms-input-placeholder,
+.c8:focus-within:hover input:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c8:focus-within input::placeholder,
+.c8:focus-within:hover input::placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c6 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 20rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c42 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: 20rem;
+  margin: 0.8rem 0;
+}
+
+.c46 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  min-width: 29rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c10 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  padding-bottom: 0.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c10:focus {
+  outline: none;
+}
+
+.c10:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c10:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c10:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c10:focus::placeholder {
+  opacity: 1;
+}
+
+.c10::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c10::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c10:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c10::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c10:not(:placeholder-shown) + .c11,
+.c10:focus + .c11 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c16 {
+  color: #13181D;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  margin: 0px 0.8rem 0px 0px;
+  cursor: default;
+}
+
+.c16::after {
+  color: red;
+  content: ' *';
+}
+
+.c58 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c58 .c5 {
+  margin: 0;
+  caret-color: transparent;
+}
+
+.c58 .c5 label {
+  pointer-events: none;
+}
+
+.c58 .c5 div,
+.c58 .c5 input,
+.c58 .c5 label {
+  cursor: pointer;
+}
+
+.c58 .c5 .c59 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c58 .c5:not(:focus-within):hover .c59 * {
+  fill: #13181D;
+}
+
+.c45 {
+  border-radius: 50%;
+  padding: 0.8rem;
+}
+
+.c45 * {
+  fill: #607890;
+}
+
+.c45:hover {
+  background-color: #dfe4e9;
+}
+
+.c45:hover * {
+  fill: #303C48;
+}
+
+.c41 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c41 .c5 {
+  margin: 0;
+}
+
+.c41 .c5 input {
+  text-transform: uppercase;
+}
+
+.c41 .c7 {
+  padding: 0 0.8rem 0 1.6rem;
+}
+
+.c41 .sc-fzomME {
+  z-index: 1000;
+  position: absolute;
+  top: 5.6rem;
+}
+
+.c55 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c57 {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: unset;
+  left: 0;
+  top: unset;
+  right: unset;
+}
+
+.c53 {
+  display: block;
+  position: relative;
+  border: 1px solid #BCBEC0;
+  background: #ffffff;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.c54 {
+  border: 0;
+  padding: 0 44px;
+  width: 100%;
+  min-height: 46px;
+  background: #ffffff;
+  font-family: Montserrat,sans-serif;
+  color: #001217;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.c54::-webkit-input-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c54::-moz-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c54:-moz-placeholder {
+  font-weight: 500;
+  color: #929598;
+}
+
+.c51 {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c56 {
+  color: #BCBEC0;
+  opacity: 1;
+}
+
+.c52 {
+  display: grid;
+  grid-template-columns: 194px 39px 194px;
+  grid-template-rows: unset;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+
+.c47,
+.c47 * {
+  cursor: pointer;
+}
+
+.c50 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c50 > div {
+  display: inline-block;
+  position: unset;
+}
+
+.c50 > div div {
+  z-index: 5;
+}
+
+.c50 > div > div:last-child {
+  top: unset;
+  bottom: unset;
+  left: unset;
+  right: unset;
+  top: calc(100% + 0px);
+  left: 0%;
+}
+
+.c50 > div > div:first-child {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: auto 30px auto;
+  padding: 0.8rem;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+}
+
+.c50 > div > div:first-child div::before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: #C7D0D8;
+}
+
+.c50 > div > div:first-child div svg {
+  display: none;
+}
+
+.c50 > div > div:first-child label {
+  text-align: center;
+  border: 0;
+  background: transparent;
+}
+
+.c50 > div > div:first-child label input {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  max-width: 90px;
+  min-height: unset;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: none;
+  background: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-clip: padding-box;
+}
+
+.c50 > div > div:first-child label input:disabled {
+  cursor: not-allowed;
+}
+
+.c50 > div > div:first-child label input:focus {
+  outline: 0;
+}
+
+.c50 > div > div:first-child label input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.c17 {
+  grid-area: label;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c21 {
+  grid-area: description;
+  margin: 5px 0 0 2px;
+  color: #012040;
+}
+
+.c15 {
+  margin: 0.8rem 0.8rem 0.8rem 0;
+  display: inline-grid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: minmax(max-content,25%) minmax(auto,80%);
+  grid-template-areas: 'label field' 'random description';
+}
+
+.c15 .sc-fzoPby {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c19 {
+  width: 1px;
+  opacity: 0;
+}
+
+.c18 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  padding: 0.8rem;
+  color: #435465;
+  background-clip: padding-box;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #b0bcc8;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c18:focus {
+  border-color: #012040;
+  outline: 0;
+}
+
+.c63 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c63 button {
+  margin-right: 0.8rem;
+}
+
+.c61 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: 25.6rem;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c61 .c5 {
+  margin: 0;
+}
+
+.c61 .c5 label {
+  pointer-events: none;
+}
+
+.c61 .c5 div,
+.c61 .c5 input,
+.c61 .c5 label {
+  cursor: pointer;
+}
+
+.c61 .c5:focus-within input {
+  cursor: text;
+}
+
+.c61 .c5 input {
+  padding-right: 1.6rem;
+}
+
+.c61 .c62 > .c32 {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c61 .c62 > .c32 * {
+  fill: #13181D;
+}
+
+.c40 {
+  position: relative;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  box-sizing: border-box;
+  border: 0.15rem solid;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.c40::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 67%;
+  height: 67%;
+  -webkit-transform: translate(-50%,-50%) scale(0);
+  -ms-transform: translate(-50%,-50%) scale(0);
+  transform: translate(-50%,-50%) scale(0);
+  border-radius: 100%;
+  -webkit-transition: -webkit-transform 100ms ease-out;
+  -webkit-transition: transform 100ms ease-out;
+  transition: transform 100ms ease-out;
+}
+
+.c38 {
+  position: absolute;
+  opacity: 0;
+  width: 1%;
+  height: 1%;
+  margin: 0;
+}
+
+.c38 ~ .c39 {
+  border-color: #13181D;
+}
+
+.c38 ~ .c39::after {
+  background-color: #13181D;
+}
+
+.c38:checked ~ .c39::after {
+  -webkit-transform: translate(-50%,-50%) scale(1);
+  -ms-transform: translate(-50%,-50%) scale(1);
+  transform: translate(-50%,-50%) scale(1);
+}
+
+.c38:disabled ~ .c39 {
+  border-color: #98A7B7;
+}
+
+.c38:disabled ~ .c39::after {
+  background-color: #98A7B7;
+}
+
+.c38:not(:disabled):checked ~ .c39 {
+  border-color: #126AFA;
+}
+
+.c38:not(:disabled):checked ~ .c39::after {
+  background-color: #126AFA;
+}
+
+.c38:not(:disabled):focus ~ .c39 {
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+}
+
+.c37 {
+  margin: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  position: relative;
+  border-radius: 100%;
+}
+
+.c36 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.8rem 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.c36:hover.c35:hover .c39 {
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+}
+
+.c71 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 1/-1;
+  margin-top: 1.6rem;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c71 > * + * {
+  margin-left: 1.6rem;
+}
+
+.c4 {
+  grid-column: 1/7;
+}
+
+.c4 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c13 {
+  grid-column: 7/-1;
+}
+
+.c13 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c14 {
+  grid-column: 1/-1;
+}
+
+.c14 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c67 {
+  grid-column: 1/5;
+}
+
+.c67 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c68 {
+  grid-column: 5/9;
+}
+
+.c68 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c69 {
+  grid-column: 9/-1;
+}
+
+.c69 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c65 {
+  grid-column: 1/-1;
+  margin-top: 2.6rem;
+}
+
+.c66 {
+  margin-bottom: 1rem;
+}
+
+.c0 {
+  grid-template-rows: auto;
+  grid-template-columns: repeat(12,1fr);
+  grid-gap: 1.6rem;
+  display: grid;
+  width: 100%;
+  min-width: 300px;
+}
+
+.c0 > h2 {
+  grid-column: 1/-1;
+  margin-bottom: 0.8rem;
+}
+
+.c0 > span {
+  grid-column: 1/-1;
+  margin-bottom: 1rem;
+}
+
+<div>
+  <form
+    class="c0"
+    id="medly-dynamic-form"
+  >
+    <h2
+      class="c1 c2"
+    >
+      Dummy Form
+    </h2>
+    <span
+      class="c1 c3"
+    >
+      Dummy Description
+    </span>
+    <div
+      class="c4"
+    >
+      <div
+        class="c5 c6"
+        id="firstName-input-wrapper"
+      >
+        <div
+          class="c7 c8"
+        >
+          <div
+            class="c9"
+          >
+            <input
+              aria-describedby="firstName-helper-text"
+              class="c10"
+              id="firstName-input"
+              name="firstName"
+              placeholder=" "
+              required=""
+              type="text"
+              value=""
+            />
+            <label
+              class="c11 c12"
+              for="firstName-input"
+              required=""
+            >
+              First Name
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c13"
+    >
+      <div
+        class="c5 c6"
+        id="lastName-input-wrapper"
+      >
+        <div
+          class="c7 c8"
+        >
+          <div
+            class="c9"
+          >
+            <input
+              aria-describedby="lastName-helper-text"
+              class="c10"
+              id="lastName-input"
+              name="lastName"
+              placeholder=" "
+              required=""
+              type="text"
+              value=""
+            />
+            <label
+              class="c11 c12"
+              for="lastName-input"
+              required=""
+            >
+              Last Name
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c14"
+    >
+      <div
+        class="c5 c6"
+        id="email-input-wrapper"
+      >
+        <div
+          class="c7 c8"
+        >
+          <div
+            class="c9"
+          >
+            <input
+              aria-describedby="email-helper-text"
+              class="c10"
+              id="email-input"
+              name="email"
+              placeholder=" "
+              required=""
+              type="email"
+              value=""
+            />
+            <label
+              class="c11 c12"
+              for="email-input"
+              required=""
+            >
+              Email
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c14"
+    >
+      <div
+        class="c15"
+        id="resume-field"
+      >
+        <label
+          class="c16 c17"
+          required=""
+        >
+          Resume
+        </label>
+        <label
+          class="c18"
+          id="resume-label"
+        >
+          Click to choose file
+          <input
+            class="c19"
+            id="resume"
+            name="resume"
+            required=""
+            type="file"
+          />
+        </label>
+        <span
+          class="c1 c20 c21"
+        >
+          File size should be less than 5MB
+        </span>
+      </div>
+    </div>
+    <div
+      class="c14"
+    >
+      <div
+        aria-describedby="languages-helper-text"
+        class="c22"
+        id="languages-wrapper"
+        name="languages"
+      >
+        <span
+          class="c1 c23 c24"
+          id="languages-label"
+          required=""
+          type="checkbox"
+        >
+          Languages
+        </span>
+        <div
+          class="c25"
+          id="languages-options"
+        >
+          
+          <label
+            class="c26"
+            for="JAVA-languages"
+            id="JAVA-languages-wrapper"
+            sizes="[object Object]"
+          >
+            <span
+              class="c1 c20 c27"
+              id="JAVA-languages-label"
+              type="checkbox"
+            >
+              JAVA
+            </span>
+            <div
+              class="c28"
+            >
+              <input
+                class="c29"
+                id="JAVA-languages"
+                name="java"
+                sizes="[object Object]"
+                type="checkbox"
+              />
+              <div
+                class="c30 c31"
+              >
+                <svg
+                  class="c32 c33"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                    fill="green"
+                  />
+                </svg>
+              </div>
+            </div>
+          </label>
+          
+          <label
+            class="c26"
+            for="RUBY-languages"
+            id="RUBY-languages-wrapper"
+            sizes="[object Object]"
+          >
+            <span
+              class="c1 c20 c27"
+              id="RUBY-languages-label"
+              type="checkbox"
+            >
+              RUBY
+            </span>
+            <div
+              class="c28"
+            >
+              <input
+                class="c29"
+                id="RUBY-languages"
+                name="ruby"
+                sizes="[object Object]"
+                type="checkbox"
+              />
+              <div
+                class="c30 c31"
+              >
+                <svg
+                  class="c32 c33"
+                  fill="none"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                    fill="green"
+                  />
+                </svg>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c14"
+    >
+      <div
+        aria-describedby="role-helper-text"
+        class="c34"
+        id="role-wrapper"
+      >
+        <span
+          class="c1 c23 c24"
+          id="role-label"
+          required=""
+          type="radio"
+        >
+          Role
+        </span>
+        <div
+          class="c25"
+          id="role-options"
+        >
+          <label
+            class="c35 c36"
+            for="Front End-role"
+            id="Front End-role-wrapper"
+            sizes="[object Object]"
+          >
+            <span
+              class="c1 c20 c27"
+              id="Front End-role-label"
+              type="radio"
+            >
+              Front End
+            </span>
+            <div
+              class="c37"
+            >
+              <input
+                class="c38"
+                id="Front End-role"
+                name="role"
+                required=""
+                sizes="[object Object]"
+                type="radio"
+                value="front-end"
+              />
+              <div
+                class="c39 c40"
+              />
+            </div>
+          </label>
+          <label
+            class="c35 c36"
+            for="Back End-role"
+            id="Back End-role-wrapper"
+            sizes="[object Object]"
+          >
+            <span
+              class="c1 c20 c27"
+              id="Back End-role-label"
+              type="radio"
+            >
+              Back End
+            </span>
+            <div
+              class="c37"
+            >
+              <input
+                class="c38"
+                id="Back End-role"
+                name="role"
+                required=""
+                sizes="[object Object]"
+                type="radio"
+                value="back-end"
+              />
+              <div
+                class="c39 c40"
+              />
+            </div>
+          </label>
+          <label
+            class="c35 c36"
+            for="Full Stack-role"
+            id="Full Stack-role-wrapper"
+            sizes="[object Object]"
+          >
+            <span
+              class="c1 c20 c27"
+              id="Full Stack-role-label"
+              type="radio"
+            >
+              Full Stack
+            </span>
+            <div
+              class="c37"
+            >
+              <input
+                class="c38"
+                id="Full Stack-role"
+                name="role"
+                required=""
+                sizes="[object Object]"
+                type="radio"
+                value="full-stack"
+              />
+              <div
+                class="c39 c40"
+              />
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c14"
+    >
+      <div
+        class="c41"
+        id="birthDate-datepicker-wrapper"
+      >
+        <div
+          class="c5 c42"
+          id="birthDate-input-wrapper"
+        >
+          <div
+            class="c7 c8"
+          >
+            <div
+              class="c9"
+            >
+              <input
+                aria-describedby="birthDate-helper-text"
+                class="c10"
+                id="birthDate-input"
+                placeholder="Birth Date"
+                type="text"
+                value=""
+              />
+              <label
+                class="c11 c43"
+                for="birthDate-input"
+              >
+                Birth Date
+              </label>
+            </div>
+            <svg
+              class="c32 c44 c45"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M19 4h-1V3c0-.55-.45-1-1-1s-1 .45-1 1v1H8V3c0-.55-.45-1-1-1s-1 .45-1 1v1H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1V9h14v10zM9 13v-2H7v2h2zm2-2h2v2h-2v-2zm6 2v-2h-2v2h2z"
+                fill="#000"
+                fill-opacity=".54"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="c14"
+    >
+      <div
+        class="c5 c46 c47"
+      >
+        <div
+          class="c7 c8"
+        >
+          <svg
+            class="c32 c33 c48 c49"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M19 4h-1V3c0-.55-.45-1-1-1s-1 .45-1 1v1H8V3c0-.55-.45-1-1-1s-1 .45-1 1v1H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1V9h14v10zM9 13v-2H7v2h2zm2-2h2v2h-2v-2zm6 2v-2h-2v2h2z"
+              fill="#000"
+              fill-opacity=".54"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <div
+            class="c50"
+            data-testid="react-datepicker"
+          >
+            <div
+              class="c51"
+            >
+              <div
+                class="sc-fznLPX c52"
+                data-testid="DateRangeInputGrid"
+              >
+                <label
+                  class="c53"
+                  display="block"
+                  for="startDate"
+                >
+                  <input
+                    aria-label="Start date"
+                    autocomplete="off"
+                    class="c54"
+                    color="#001217"
+                    data-testid="DatepickerInput"
+                    font-family="Montserrat, sans-serif"
+                    font-size="14px"
+                    font-weight="600"
+                    id="startDate"
+                    placeholder="Start date"
+                    tabindex="0"
+                    value=""
+                    width="100%"
+                  />
+                </label>
+                <div
+                  class="c55"
+                >
+                  <svg
+                    class="c56"
+                    height="12px"
+                    transform="rotate(90 0 0)"
+                    viewBox="0 0 9 12"
+                    width="15px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.46.001a.538.538 0 0 0-.358.174L.156 4.48a.538.538 0 1 0 .796.724l3.01-3.285v13.689a.563.563 0 0 0 .538.55.563.563 0 0 0 .538-.55V1.918l3.01 3.286a.538.538 0 1 0 .796-.724L4.898.175a.538.538 0 0 0-.437-.174z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <label
+                  class="c53"
+                  display="block"
+                  for="endDate"
+                >
+                  <input
+                    aria-label="End date"
+                    autocomplete="off"
+                    class="c54"
+                    color="#001217"
+                    data-testid="DatepickerInput"
+                    font-family="Montserrat, sans-serif"
+                    font-size="14px"
+                    font-weight="600"
+                    id="endDate"
+                    placeholder="End date"
+                    tabindex="0"
+                    value=""
+                    width="100%"
+                  />
+                </label>
+              </div>
+              <div
+                class="c57"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c14"
+    >
+      <div
+        class="c58"
+        id="country-wrapper"
+      >
+        <div
+          class="c5 c42"
+          id="country-input-wrapper"
+        >
+          <div
+            class="c7 c8"
+          >
+            <div
+              class="c9"
+            >
+              <input
+                aria-describedby="country-helper-text"
+                autocomplete="off"
+                class="c10"
+                id="country-input"
+                name="country"
+                placeholder="Please Select . . ."
+                required=""
+                type="text"
+                value=""
+              />
+              <label
+                class="c11 c12"
+                for="country-input"
+                required=""
+              >
+                Country
+              </label>
+            </div>
+            <svg
+              class="c32 c33 c59 c60"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                fill="#000"
+              />
+            </svg>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div
+      class="c14"
+    >
+      <div
+        class="c61"
+        id="graduation-wrapper"
+        name="graduation"
+        placeholder="Please Select . . ."
+      >
+        <div
+          class="c5 c42"
+          id="graduation-input-wrapper"
+        >
+          <div
+            class="c7 c8"
+          >
+            <div
+              class="c9"
+            >
+              <input
+                aria-describedby="graduation-helper-text"
+                autocomplete="off"
+                class="c10"
+                id="graduation-input"
+                placeholder="Please Select . . ."
+                required=""
+                type="text"
+                value=""
+              />
+              <label
+                class="c11 c12"
+                for="graduation-input"
+                required=""
+              >
+                Graduation
+              </label>
+            </div>
+            <div
+              class="c62 c63"
+              id="graduation-count"
+            >
+              <svg
+                class="c32 c33"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                  fill="#000"
+                />
+              </svg>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <h4
+      class="c1 c64 c65"
+    >
+      Marks
+    </h4>
+    <span
+      class="c1 c20 c66"
+    >
+      Marks Information
+    </span>
+    <div
+      class="c67"
+    >
+      <div
+        class="c5 c6"
+        id="marks.database-input-wrapper"
+      >
+        <div
+          class="c7 c8"
+        >
+          <div
+            class="c9"
+          >
+            <input
+              aria-describedby="marks.database-helper-text"
+              class="c10"
+              id="marks.database-input"
+              name="marks.database"
+              placeholder="Database"
+              required=""
+              type="number"
+              value=""
+            />
+            <label
+              class="c11 c12"
+              for="marks.database-input"
+              required=""
+            >
+              Database
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c68"
+    >
+      <div
+        class="c5 c6"
+        id="marks.algorithms-input-wrapper"
+      >
+        <div
+          class="c7 c8"
+        >
+          <div
+            class="c9"
+          >
+            <input
+              aria-describedby="marks.algorithms-helper-text"
+              class="c10"
+              id="marks.algorithms-input"
+              name="marks.algorithms"
+              placeholder="Algorithms"
+              required=""
+              type="number"
+              value=""
+            />
+            <label
+              class="c11 c12"
+              for="marks.algorithms-input"
+              required=""
+            >
+              Algorithms
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c69"
+    >
+      <div
+        class="c5 c6"
+        id="marks.maths-input-wrapper"
+      >
+        <div
+          class="c7 c8"
+        >
+          <div
+            class="c9"
+          >
+            <input
+              aria-describedby="marks.maths-helper-text"
+              class="c10"
+              id="marks.maths-input"
+              name="marks.maths"
+              placeholder="Maths"
+              required=""
+              type="number"
+              value=""
+            />
+            <label
+              class="c11 c12"
+              for="marks.maths-input"
+              required=""
+            >
+              Maths
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c14"
+    >
+      
+      <label
+        class="c70"
+        for="agree"
+        id="agree-wrapper"
+        sizes="[object Object]"
+      >
+        <span
+          class="c1 c20 c27"
+          id="agree-label"
+          type="checkbox"
+        >
+          Do you Agree
+        </span>
+        <div
+          class="c28"
+        >
+          <input
+            class="c29"
+            id="agree"
+            name="agree"
+            sizes="[object Object]"
+            type="checkbox"
+          />
+          <div
+            class="c30 c31"
+          >
+            <svg
+              class="c32 c33"
+              fill="none"
+              height="1em"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.795 15.875l-3.47-3.47a.996.996 0 0 0-1.41 0 .996.996 0 0 0 0 1.41l4.18 4.18c.39.39 1.02.39 1.41 0l10.58-10.58a.996.996 0 1 0-1.41-1.41l-9.88 9.87z"
+                fill="green"
+              />
+            </svg>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div
+      class="c71"
+    >
+      <button
+        class="c72"
+        form="medly-dynamic-form"
+        type="submit"
+      >
+        <span
+          class="c1 c23"
+        >
+          Upload
+        </span>
+      </button>
+    </div>
+  </form>
+</div>
+`;

@@ -11,6 +11,7 @@ exports[`Form Actions should render center aligned actions defined in action sch
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c1 {
@@ -154,6 +155,7 @@ exports[`Form Actions should render default action button 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c1 {
@@ -297,6 +299,7 @@ exports[`Form Actions should render left aligned actions defined in action schem
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c1 {

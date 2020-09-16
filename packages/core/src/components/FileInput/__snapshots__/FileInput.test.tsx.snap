@@ -29,6 +29,7 @@ exports[`FileInput component should render properly with all props 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c2 {

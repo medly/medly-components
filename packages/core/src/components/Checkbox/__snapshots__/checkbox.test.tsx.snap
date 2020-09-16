@@ -26,6 +26,7 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c2 {
@@ -216,6 +217,7 @@ exports[`Checkbox component should render correctly with checked false and activ
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c6 {
@@ -406,6 +408,7 @@ exports[`Checkbox component should render correctly with checked false and disab
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c6 {
@@ -594,6 +597,7 @@ exports[`Checkbox component should render correctly with checked false and hasEr
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c6 {
@@ -784,6 +788,7 @@ exports[`Checkbox component should render correctly with checked false and indet
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c6 {
@@ -982,6 +987,7 @@ exports[`Checkbox component should render correctly with checked true and active
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c6 {
@@ -1174,6 +1180,7 @@ exports[`Checkbox component should render correctly with checked true and disabl
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c6 {
@@ -1363,6 +1370,7 @@ exports[`Checkbox component should render correctly with checked true and hasErr
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c6 {
@@ -1555,6 +1563,7 @@ exports[`Checkbox component should render correctly with checked true and indete
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c6 {
@@ -1754,6 +1763,7 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c2 {
@@ -1948,6 +1958,7 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c2 {
@@ -2142,6 +2153,7 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c2 {

@@ -11,6 +11,7 @@ exports[`TabList should render properly 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.6rem;
+  text-align: initial;
 }
 
 .c1 {

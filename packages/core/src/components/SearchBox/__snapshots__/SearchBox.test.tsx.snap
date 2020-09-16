@@ -26,6 +26,7 @@ exports[`SearchBox options should render options when user search option specifi
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c10 {

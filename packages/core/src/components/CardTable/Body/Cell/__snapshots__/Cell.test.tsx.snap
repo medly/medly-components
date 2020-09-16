@@ -11,6 +11,7 @@ exports[`CardTable Cell should be able to "center" align  1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -71,6 +72,7 @@ exports[`CardTable Cell should be able to "left" align  1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -131,6 +133,7 @@ exports[`CardTable Cell should be able to "right" align  1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -191,6 +194,7 @@ exports[`CardTable Cell should render cell with text component with wrap text as
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -243,6 +247,7 @@ exports[`CardTable Cell should render cell with text component with wrap text as
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
@@ -301,6 +306,7 @@ exports[`CardTable Cell should render cell with text properly 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c0 {
