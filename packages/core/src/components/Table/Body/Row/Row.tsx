@@ -29,7 +29,7 @@ export const Row: React.FC<Props> = React.memo(props => {
     const isRowSelected = useMemo(() => !isLoading && selectedRowIds.includes(id), [id, isLoading, selectedRowIds]),
         isRowClickDisabled = useMemo(() => data[rowClickDisableKey], [data, rowClickDisableKey]),
         isRowSelectionDisabled = useMemo(() => data[rowSelectionDisableKey], [data, rowSelectionDisableKey]),
-        handleRowSelection = useCallback(() => onRowSelection(id), [id]),
+        handleRowSelection = useCallback(() => onRowSelection(id), [id, onRowSelection]),
         handleExpansionIconClick = useCallback(() => setExpansionState(val => !val), []),
         handleRowClick = useMemo(
             () =>
