@@ -13,6 +13,8 @@ const cardStyle = css<StyledProps>`
     & > * {
         background-color: ${({ theme, isSelected, disabled }) =>
             theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
+        color: ${({ theme, isSelected, disabled }) =>
+            theme.table.row.textColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};;
     }
 
     &&& > * {
@@ -62,6 +64,8 @@ const normalStyle = css<StyledProps>`
         & > * {
             background-color: ${({ theme, isSelected, disabled }) =>
                 theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'odd']};
+            color: ${({ theme, isSelected, disabled }) =>
+                theme.table.row.textColor[disabled ? 'disabled' : isSelected ? 'selected' : 'odd']};;
         }
     }
 
@@ -70,6 +74,8 @@ const normalStyle = css<StyledProps>`
         & > * {
             background-color: ${({ theme, isSelected, disabled }) =>
                 theme.table.row.bgColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};
+            color: ${({ theme, isSelected, disabled }) =>
+                theme.table.row.textColor[disabled ? 'disabled' : isSelected ? 'selected' : 'even']};;
         }
     }
 
