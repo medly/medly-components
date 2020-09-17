@@ -235,6 +235,11 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   opacity: 1;
 }
 
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c5::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -595,6 +600,11 @@ exports[`SingleSelect component should render properly when isSearchable is true
 
 .c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
 }
 
 .c5::-webkit-input-placeholder {
@@ -1127,6 +1137,11 @@ exports[`SingleSelect component with filled variant should render disabled state
   opacity: 1;
 }
 
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c5::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -1644,6 +1659,11 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   opacity: 1;
 }
 
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c5::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -2019,6 +2039,11 @@ exports[`SingleSelect component with filled variant should render with label pro
 
 .c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
 }
 
 .c5::-webkit-input-placeholder {
@@ -3278,6 +3303,11 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   opacity: 1;
 }
 
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c5::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -3809,6 +3839,11 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   opacity: 1;
 }
 
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c5::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -4198,6 +4233,11 @@ exports[`SingleSelect component with outlined variant should render with label p
 
 .c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
 }
 
 .c5::-webkit-input-placeholder {

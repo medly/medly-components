@@ -225,6 +225,11 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   opacity: 1;
 }
 
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c3::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -338,6 +343,11 @@ exports[`TextField should render asterisk if we pass required prop as true 1`] =
 .c2:focus-within .c0,
 .c2:focus-within:hover .c0 {
   color: #126AFA;
+}
+
+.c3:disabled ~ .c0,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
 }
 
 .c3:not(:placeholder-shown) ~ .c0,
@@ -586,6 +596,11 @@ exports[`TextField should render properly with M size 1`] = `
 
 .c3:focus::placeholder {
   opacity: 1;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
@@ -888,6 +903,11 @@ exports[`TextField should render properly with S size 1`] = `
   opacity: 1;
 }
 
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c3::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -1179,6 +1199,11 @@ exports[`TextField should render properly with default props 1`] = `
   opacity: 1;
 }
 
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c3::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -1467,6 +1492,11 @@ exports[`TextField with filled variant and with label should render default stat
   opacity: 1;
 }
 
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c3::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -1733,6 +1763,11 @@ exports[`TextField with filled variant and with label should render disabled sta
 
 .c3:focus::placeholder {
   opacity: 1;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
@@ -2025,6 +2060,11 @@ exports[`TextField with filled variant and with label should render focus state 
   opacity: 1;
 }
 
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c3::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -2309,6 +2349,11 @@ exports[`TextField with filled variant and without label should render default s
   opacity: 1;
 }
 
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c3::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -2569,6 +2614,11 @@ exports[`TextField with filled variant and without label should render disabled 
 
 .c3:focus::placeholder {
   opacity: 1;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
@@ -2853,6 +2903,11 @@ exports[`TextField with filled variant and without label should render focus sta
 
 .c3:focus::placeholder {
   opacity: 1;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
@@ -3186,6 +3241,11 @@ exports[`TextField with filled variant should render error state properly  1`] =
 
 .c3:focus::placeholder {
   opacity: 1;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
@@ -3556,6 +3616,11 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   opacity: 1;
 }
 
+.c6:disabled ~ .c7,
+.c6:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c6::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -3877,6 +3942,11 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   opacity: 1;
 }
 
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c3::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -4192,6 +4262,11 @@ exports[`TextField with outlined variant and with label should render default st
   opacity: 1;
 }
 
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c3::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -4463,6 +4538,11 @@ exports[`TextField with outlined variant and with label should render disabled s
 
 .c3:focus::placeholder {
   opacity: 1;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
@@ -4769,6 +4849,11 @@ exports[`TextField with outlined variant and with label should render focus stat
   opacity: 1;
 }
 
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c3::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -5067,6 +5152,11 @@ exports[`TextField with outlined variant and without label should render default
   opacity: 1;
 }
 
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c3::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -5332,6 +5422,11 @@ exports[`TextField with outlined variant and without label should render disable
 
 .c3:focus::placeholder {
   opacity: 1;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
@@ -5630,6 +5725,11 @@ exports[`TextField with outlined variant and without label should render focus s
 
 .c3:focus::placeholder {
   opacity: 1;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
@@ -5977,6 +6077,11 @@ exports[`TextField with outlined variant should render error state properly  1`]
 
 .c3:focus::placeholder {
   opacity: 1;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {
@@ -6361,6 +6466,11 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   opacity: 1;
 }
 
+.c6:disabled ~ .c7,
+.c6:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c6::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -6696,6 +6806,11 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   opacity: 1;
 }
 
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c3::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -6993,6 +7108,11 @@ exports[`TextField without label should render default state properly 1`] = `
   opacity: 1;
 }
 
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
+}
+
 .c3::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -7277,6 +7397,11 @@ exports[`TextField without label should render focus state properly  1`] = `
 
 .c3:focus::placeholder {
   opacity: 1;
+}
+
+.c3:disabled ~ .c4,
+.c3:disabled ~ .sc-Axmtr {
+  cursor: not-allowed;
 }
 
 .c3::-webkit-input-placeholder {

@@ -902,6 +902,11 @@ exports[`Form should render properly with initial state 1`] = `
   opacity: 1;
 }
 
+.c7:disabled ~ .c8,
+.c7:disabled ~ .c43 {
+  cursor: not-allowed;
+}
+
 .c7::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -3207,6 +3212,11 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c10:focus::placeholder {
   opacity: 1;
+}
+
+.c10:disabled ~ .c11,
+.c10:disabled ~ .c43 {
+  cursor: not-allowed;
 }
 
 .c10::-webkit-input-placeholder {

@@ -199,6 +199,11 @@ exports[`MultiSelect component should render correctly with all the props given 
   opacity: 1;
 }
 
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-AxheI {
+  cursor: not-allowed;
+}
+
 .c5::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -688,6 +693,11 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 
 .c5:focus::placeholder {
   opacity: 1;
+}
+
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-AxheI {
+  cursor: not-allowed;
 }
 
 .c5::-webkit-input-placeholder {

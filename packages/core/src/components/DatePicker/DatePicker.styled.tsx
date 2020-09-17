@@ -5,7 +5,7 @@ import { StyleProps } from './types';
 
 type State = 'default' | 'active' | 'error' | 'disabled';
 
-const getStyleForIcon = ({ theme, variant }: StyleProps & WithThemeProp, state: State) => {
+const getStyleForIcon = ({ theme, variant, disabled }: StyleProps & WithThemeProp, state: State) => {
     const {
         icon: { [state]: iconStyle }
     } = theme.datePicker[variant];
@@ -14,9 +14,9 @@ const getStyleForIcon = ({ theme, variant }: StyleProps & WithThemeProp, state: 
             fill: ${iconStyle.color};
         }
         &:hover {
-            background-color: ${iconStyle.backgroundColor};
+            background-color: ${!disabled && iconStyle.backgroundColor};
             * {
-                fill: ${iconStyle.hoverColor};
+                fill: ${!disabled && iconStyle.hoverColor};
             }
         }
     `;

@@ -227,6 +227,11 @@ exports[`DatePicker component should render properly when value is of date type 
   opacity: 1;
 }
 
+.c6:disabled ~ .c9,
+.c6:disabled ~ .c7 {
+  cursor: not-allowed;
+}
+
 .c6::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -272,23 +277,7 @@ exports[`DatePicker component should render properly when value is of date type 
   fill: #607890;
 }
 
-.c12:hover {
-  background-color: #dfe4e9;
-}
-
-.c12:hover * {
-  fill: #303C48;
-}
-
 .c12 * {
-  fill: #C7D0D8;
-}
-
-.c12:hover {
-  background-color: #eff2f4;
-}
-
-.c12:hover * {
   fill: #C7D0D8;
 }
 
@@ -609,6 +598,11 @@ exports[`DatePicker component should render properly when value is of string typ
   opacity: 1;
 }
 
+.c6:disabled ~ .c9,
+.c6:disabled ~ .c7 {
+  cursor: not-allowed;
+}
+
 .c6::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: all 100ms ease-out;
@@ -654,23 +648,7 @@ exports[`DatePicker component should render properly when value is of string typ
   fill: #607890;
 }
 
-.c12:hover {
-  background-color: #dfe4e9;
-}
-
-.c12:hover * {
-  fill: #303C48;
-}
-
 .c12 * {
-  fill: #C7D0D8;
-}
-
-.c12:hover {
-  background-color: #eff2f4;
-}
-
-.c12:hover * {
   fill: #C7D0D8;
 }
 

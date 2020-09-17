@@ -9,7 +9,11 @@ const center = css`
         bottom: ${({ variant }) => (variant === 'filled' ? '0.7rem' : '0.6rem')};
     `;
 
-export const MaskPlaceholder = styled('span')<{ isLabelPresent?: boolean; variant?: Props['variant']; size?: Props['size'] }>`
+export const MaskPlaceholder = styled('span')<{
+    isLabelPresent?: boolean;
+    variant?: Props['variant'];
+    size?: Props['size'];
+}>`
     position: absolute;
     left: 0;
     opacity: 0;

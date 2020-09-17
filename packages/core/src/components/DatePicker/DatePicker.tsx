@@ -59,12 +59,17 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 },
                 [displayFormat]
             ),
-            onIconClick = useCallback(event => {
-                event.stopPropagation();
-                toggleCalendar(val => !val);
-                setActive(true);
-                inputRef.current.focus();
-            }, []),
+            onIconClick = useCallback(
+                event => {
+                    event.stopPropagation();
+                    if (!disabled) {
+                        toggleCalendar(val => !val);
+                        setActive(true);
+                        inputRef.current.focus();
+                    }
+                },
+                [disabled]
+            ),
             onBlur = useCallback(
                 (event: React.FocusEvent<HTMLInputElement>) => {
                     parseToDate(event.target.value, displayFormat).toString() === 'Invalid Date' && setErrorMessage('Enter valid date');

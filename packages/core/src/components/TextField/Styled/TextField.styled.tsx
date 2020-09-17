@@ -34,6 +34,12 @@ export const Input = styled('input')<StyledProps>`
         }
     }
 
+    &:disabled {
+        & ~ ${Label},& ~ ${MaskPlaceholder} {
+            cursor: not-allowed;
+        }
+    }
+
     ::placeholder {
         opacity: 0;
         transition: all 100ms ease-out;
