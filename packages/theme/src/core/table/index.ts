@@ -12,7 +12,13 @@ const table: TableTheme = {
             selected: colors.blue[200],
             disabled: colors.grey[100]
         },
-        selectedBorderColor: colors.blue[500]
+        selectedBorderColor: colors.blue[500],
+        textColor: {
+            odd: colors.black,
+            even: colors.black,
+            selected: colors.black,
+            disabled: colors.black
+        }
     },
     titleRow: {
         bgColor: {
