@@ -10,7 +10,7 @@ import { getCalendarDates, getMonthAndYearFromDate, getNextMonthAndYear, getPrev
 import { Props } from './types';
 
 export const Calendar: React.FC<Props> & WithStyle = React.memo(
-    ({ date, onChange, minSelectableDate, maxSelectableDate, ...restProps }) => {
+    ({ date, onChange, minSelectableDate, maxSelectableDate, isErrorPresent, ...restProps }) => {
         const today = new Date(),
             [, setCalenderVisibility] = useContext(PopoverContext),
             [{ month, year }, setMonthAndYear] = useState(getMonthAndYearFromDate(date || today)),
@@ -34,7 +34,7 @@ export const Calendar: React.FC<Props> & WithStyle = React.memo(
         const weekDays = useMemo(
                 () =>
                     WEEK_DAYS.map((label, index) => (
-                        <Text textAlign="center" as="span" textWeight="Strong" key={`${label}_${index}`}>
+                        <Text textAlign="center" textWeight="Strong" key={`${label}_${index}`}>
                             {label}
                         </Text>
                     )),
@@ -73,7 +73,7 @@ export const Calendar: React.FC<Props> & WithStyle = React.memo(
         useEffect(() => {
             // If selected month is not allowed in the newly selected year then change month to first option in the months option
             const nonDisabledMonths = monthOptions.filter(option => !option.disabled).map(options => options.value);
-            !nonDisabledMonths.includes(month) && setMonthAndYear({ year, month: nonDisabledMonths[0] });
+            !nonDisabledMonths.includes(month) && setMonthAndYear({ year, month: nonDisabledMonths[0] || 0 });
         }, [year]);
 
         return (
@@ -87,7 +87,9 @@ export const Calendar: React.FC<Props> & WithStyle = React.memo(
                             options={monthOptions}
                             onChange={handleMonthChange}
                             placeholder="Month"
-                            variant="outlined"
+                            variant="flat"
+                            minWidth="7rem"
+                            errorText={isErrorPresent ? ' ' : ''}
                         />
                         <SingleSelect
                             id={`${restProps.id}-year-selector`}
@@ -96,7 +98,9 @@ export const Calendar: React.FC<Props> & WithStyle = React.memo(
                             options={yearOptions}
                             onChange={handleYearChange}
                             placeholder="Year"
-                            variant="outlined"
+                            variant="flat"
+                            minWidth="8rem"
+                            errorText={isErrorPresent ? ' ' : ''}
                         />
                     </Styled.MonthAndYearSelection>
                     <Styled.MonthNavigation

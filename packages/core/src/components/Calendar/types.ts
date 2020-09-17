@@ -5,6 +5,7 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'onChange'> {
     onChange: (date: Date) => void;
     minSelectableDate?: Date;
     maxSelectableDate?: Date;
+    isErrorPresent?: boolean;
 }
 
 export interface DateProps extends HTMLProps<HTMLButtonElement>, WithThemeProp {

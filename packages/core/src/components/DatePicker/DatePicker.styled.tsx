@@ -1,19 +1,15 @@
 import { css, InjectClassName, styled, WithThemeProp } from '@medly-components/utils';
 import Calendar from '../Calendar';
-import TextField from '../TextField';
-import { InnerWrapper } from '../TextField/Styled/InnerWrapper.styled';
+import { InnerWrapper, OuterWrapper } from '../TextField/Styled';
 import { StyleProps } from './types';
 
 type State = 'default' | 'active' | 'error' | 'disabled';
 
-const getStyleForIcon = ({ theme, variant, size }: StyleProps & WithThemeProp, state: State) => {
-    const { datePicker } = theme;
+const getStyleForIcon = ({ theme, variant }: StyleProps & WithThemeProp, state: State) => {
     const {
         icon: { [state]: iconStyle }
-    } = datePicker[variant];
+    } = theme.datePicker[variant];
     return css`
-        border-radius: ${datePicker.borderRadius};
-        padding: ${size === 'S' ? '0.6rem' : '0.8rem'};
         * {
             fill: ${iconStyle.color};
         }
@@ -27,30 +23,24 @@ const getStyleForIcon = ({ theme, variant, size }: StyleProps & WithThemeProp, s
 };
 
 export const DateIcon = styled(InjectClassName)<StyleProps>`
+    cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+    border-radius: ${({ theme }) => theme.datePicker.borderRadius};
+    padding: ${({ size }) => (size === 'S' ? '0.6rem' : '0.8rem')};
+
     ${props => getStyleForIcon(props, 'default')};
-    ${props => props.active && getStyleForIcon(props, 'active')};
-    ${props => props.errorText && getStyleForIcon(props, 'error')};
+    ${props => props.isActive && getStyleForIcon(props, 'active')};
+    ${props => props.isErrorPresent && getStyleForIcon(props, 'error')};
     ${props => props.disabled && getStyleForIcon(props, 'disabled')};
 `;
 
-export const Wrapper = styled.div<StyleProps>`
-    position: relative;
-    display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
-    min-width: ${({ minWidth }) => minWidth || 'max-content'};
-    width: ${({ fullWidth }) => (fullWidth ? '100%' : 'max-content')};
-    margin: ${({ theme, fullWidth }) =>
-        fullWidth ? `${theme.spacing.S2} 0` : `${theme.spacing.S2} ${theme.spacing.S2} ${theme.spacing.S2} 0`};
-
-    ${TextField.Style} {
+export const Wrapper = styled(OuterWrapper)<StyleProps>`
+    & > ${OuterWrapper} {
         margin: 0;
-        input {
-          text-transform: uppercase;
+        & > ${InnerWrapper} {
+            padding-right: 0.8rem;
         }
+    }
 
-    }
-    ${InnerWrapper} {
-        padding: 0 0.8rem 0 1.6rem;
-    }
     ${Calendar.Style} {
         z-index: 1000;
         position: absolute;

@@ -1,10 +1,10 @@
-import { WithStyle } from '@medly-components/utils';
 import { ChevronDownIcon } from '@medly-components/icons';
+import { WithStyle } from '@medly-components/utils';
 import React, { useCallback } from 'react';
-import Text from '../../Text';
 import Label from '../../Label';
-import { FlatVariantProps } from './types';
+import Text from '../../Text';
 import { FlatVariantStyled, HelperText, OuterWrapper, Suffix } from './FlatVariant.styled';
+import { FlatVariantProps } from './types';
 
 export const FlatVariant: React.FC<FlatVariantProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
@@ -28,7 +28,7 @@ export const FlatVariant: React.FC<FlatVariantProps> & WithStyle = React.memo(
                         <ChevronDownIcon size="S" />
                     </Suffix>
                 </FlatVariantStyled>
-                {(errorText || helperText) && (
+                {(errorText || helperText)?.trim() && (
                     <HelperText id={`${id}-helper-text`} onClick={stopPropagation} disabled={disabled} isError={!!errorText}>
                         {errorText || helperText}
                     </HelperText>

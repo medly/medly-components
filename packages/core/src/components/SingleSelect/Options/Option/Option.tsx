@@ -30,7 +30,6 @@ const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
     useEffect(() => {
         (selected || hovered) &&
             ref.current.scrollIntoView({
-                behavior: 'smooth',
                 block: 'nearest'
             });
     }, [selected, hovered]);

@@ -1,14 +1,8 @@
-import { cleanup, fireEvent, render } from '@test-utils';
+import { cleanup, fireEvent, render, waitFor } from '@test-utils';
 import { DatePickerProps } from 'packages/forms/src/components/Fields/types';
 import React from 'react';
-import TestUtils from 'react-dom/test-utils';
 import { DatePicker } from './DatePicker';
 
-const changeInputMaskValue = (element: any, value: string) => {
-    element.value = value;
-    element.selectionStart = element.selectionEnd = value.length;
-    TestUtils.Simulate.change(element);
-};
 describe('DatePicker component', () => {
     afterEach(cleanup);
 
@@ -32,7 +26,7 @@ describe('DatePicker component', () => {
                 />
             ),
             inputEl = container.querySelector('#dob-input') as HTMLInputElement;
-        expect(inputEl.value).toEqual('01/01/2020');
+        expect(inputEl.value).toEqual('01 / 01 / 2020');
         expect(container).toMatchSnapshot();
     });
 
@@ -50,17 +44,8 @@ describe('DatePicker component', () => {
                 />
             ),
             inputEl = container.querySelector('#dob-input') as HTMLInputElement;
-        expect(inputEl.value).toEqual('01/01/2020');
+        expect(inputEl.value).toEqual('01 / 01 / 2020');
         expect(container).toMatchSnapshot();
-    });
-
-    it('should render input as read only', () => {
-        const { container } = render(
-            <DatePicker id="dob" disabled label="Start Date" value="01/01/2020" displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
-        );
-        const inputEl = container.querySelector('input') as HTMLInputElement;
-        fireEvent.change(inputEl, { target: { value: 'Dummy' } });
-        expect(inputEl.value).toEqual('01/01/2020');
     });
 
     it('should show calendar on click on icon', () => {
@@ -93,12 +78,11 @@ describe('DatePicker component', () => {
         expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
     });
     describe('error messages', () => {
-        const mockOnChange = jest.fn();
         const props: DatePickerProps = {
             value: null,
             displayFormat: 'MM/dd/yyyy',
             type: 'date',
-            onChange: mockOnChange
+            onChange: jest.fn()
         };
         const renderComponent = (required?: boolean) => {
             const { container, getByText } = render(<DatePicker id="dob" {...props} required={required} />);
@@ -109,24 +93,17 @@ describe('DatePicker component', () => {
             };
         };
 
-        it('should return error when value is empty and field is required', () => {
+        it('should return error when value is empty and field is required', async () => {
             const { inputEl, getByText } = renderComponent(true);
             fireEvent.invalid(inputEl);
-            expect(getByText('Please fill in this field.')).toBeInTheDocument();
+            await waitFor(() => expect(getByText('Constraints not satisfied')).toBeInTheDocument());
         });
 
-        it('should return error message with enter valid date if date entered is incomplete', () => {
+        it('should return error message if date entered is incomplete', () => {
             const { inputEl, getByText } = renderComponent(true);
-            changeInputMaskValue(inputEl, '04/31');
-            TestUtils.Simulate.blur(inputEl);
+            fireEvent.change(inputEl, { target: { value: '04/31' } });
+            fireEvent.blur(inputEl);
             expect(getByText('Enter valid date')).toBeInTheDocument();
-        });
-
-        it('should not return error message for valid input', () => {
-            const { inputEl } = renderComponent();
-            changeInputMaskValue(inputEl, '12/31/2020');
-            expect(inputEl.value).toEqual('12/31/2020');
-            expect(document.getElementById('medly-datepicker-helper-text')).toBeNull();
         });
     });
 

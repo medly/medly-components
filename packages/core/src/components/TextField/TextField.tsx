@@ -112,7 +112,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                 </Styled.InnerWrapper>
                 {(isErrorPresent || helperText) && (
                     <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation} size={size}>
-                        {errorText || builtInErrorMessage || helperText}
+                        {(errorText || builtInErrorMessage || helperText).trim()}
                     </Styled.HelperText>
                 )}
             </Styled.OuterWrapper>
