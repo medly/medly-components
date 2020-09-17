@@ -11,7 +11,7 @@ describe('TextField', () => {
     });
 
     test.each(['S', 'M'])('should render properly with %s size', (size: 'S' | 'M') => {
-        const { container } = render(<TextField label="Name" size={size} helperText="helper text" />);
+        const { container } = render(<TextField label="Name" size={size} helperText="helper text" prefix={CheckIcon} suffix={CheckIcon} />);
         expect(container).toMatchSnapshot();
     });
 
@@ -66,6 +66,13 @@ describe('TextField', () => {
         expect(container.querySelector('label')).toMatchSnapshot();
     });
 
+    it('should call onChange prop on changing the value', () => {
+        const mockOnChange = jest.fn(),
+            { container } = render(<TextField value="11" label="Name" required onChange={mockOnChange} />);
+        fireEvent.change(container.querySelector('input'), { target: { value: '11 / 11 / 1111' } });
+        expect(mockOnChange).toHaveBeenCalled();
+    });
+
     describe('masking', () => {
         it('should render mask if provided with outlined variant', () => {
             const { getByText } = render(<TextField label="Date" minWidth="30rem" id="dummy" variant="outlined" mask="DD / MM / YYYY" />);
@@ -77,8 +84,18 @@ describe('TextField', () => {
             expect(getByText('DD / MM / YYYY')).toBeInTheDocument();
         });
 
-        it('should change the mask value on change of the input value', async () => {
-            const { getByText } = render(<TextField minWidth="30rem" id="dummy" value="11 / 11 / 1111" mask="DD / MM / YYYY" />);
+        it('should on change on changing the value', async () => {
+            const mockOnChange = jest.fn();
+            const { container } = render(<TextField minWidth="30rem" id="dummy" mask="DD / MM / YYYY" onChange={mockOnChange} />);
+            fireEvent.change(container.querySelector('input'), { target: { value: '11 / 11 / 1111', selectionStart: 14 } });
+            expect(mockOnChange).toHaveBeenCalled();
+        });
+
+        it('should update mask label if mask and input value are same', async () => {
+            const mockOnChange = jest.fn();
+            const { getByText } = render(
+                <TextField minWidth="30rem" id="dummy" value="11 / 11 / 1111" mask="DD / MM / YYYY" onChange={mockOnChange} />
+            );
             await waitFor(() => expect(getByText('11 / 11 / 1111')).toBeInTheDocument());
         });
     });
