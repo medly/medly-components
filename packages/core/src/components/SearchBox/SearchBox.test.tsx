@@ -42,6 +42,7 @@ describe('SearchBox', () => {
             withOptionCB = { placeholder: 'search', onInputChange: jest.fn(), onSearch };
 
         const { container, inputEl } = renderComponent(withOptionCB);
+        inputEl.focus();
         fireEvent.change(inputEl, { target: { value: 'Dummy' } });
         fireEvent.keyDown(container, { key: 'Enter', code: 13 });
         expect(onSearch).toHaveBeenCalledWith('Dummy');
