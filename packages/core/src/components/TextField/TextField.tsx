@@ -1,5 +1,6 @@
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { FC, FocusEvent, FormEvent, useCallback, useMemo, useState } from 'react';
+import React, { FC, FocusEvent, FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
+import getMaskedValue from './getMaskedValue';
 import * as Styled from './Styled';
 import { Props } from './types';
 
@@ -10,6 +11,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
 
         const {
                 id,
+                value,
                 size,
                 label,
                 minWidth,
@@ -20,6 +22,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                 suffix: Suffix,
                 required,
                 disabled,
+                mask,
                 placeholder,
                 validator,
                 ...restProps
@@ -28,7 +31,8 @@ export const TextField: FC<Props> & WithStyle = React.memo(
             isLabelPresent = useMemo(() => !!label, [label]),
             isPrefixPresent = useMemo(() => !!Prefix, [Prefix]),
             isSuffixPresent = useMemo(() => !!Suffix, [Suffix]),
-            isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
+            isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]),
+            [maskLabel, setMaskLabel] = useState(mask);
 
         const validate = useCallback(
             (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
@@ -46,7 +50,20 @@ export const TextField: FC<Props> & WithStyle = React.memo(
         const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
             handleWrapperClick = useCallback(() => !disabled && inputRef.current.focus(), [inputRef, disabled]),
             onBlur = useCallback((event: FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [validate, props.onBlur]),
-            onInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validate, props.onInvalid]);
+            onInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validate, props.onInvalid]),
+            onChange = useCallback(
+                (e: React.ChangeEvent<HTMLInputElement>) => {
+                    const maskedValue = getMaskedValue(e, mask);
+                    e.target.value = maskedValue;
+                    setMaskLabel(`${maskedValue}${mask.substr(maskedValue.length)}`);
+                    props.onChange && props.onChange(e);
+                },
+                [mask]
+            );
+
+        useEffect(() => {
+            mask && value && value.toString().length === mask.length && setMaskLabel(value.toString());
+        }, [value, mask]);
 
         return (
             <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth} id={`${inputId}-input-wrapper`}>
@@ -66,17 +83,23 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                     <Styled.InputWrapper>
                         <Styled.Input
                             ref={inputRef}
+                            value={value}
                             id={`${inputId}-input`}
                             aria-describedby={`${inputId}-helper-text`}
                             required={required}
                             disabled={disabled}
-                            placeholder={placeholder || ' '}
+                            placeholder={mask || placeholder || ' '}
                             isPrefixPresent={isPrefixPresent}
                             isSuffixPresent={isSuffixPresent}
                             isLabelPresent={isLabelPresent}
                             errorText={errorText || builtInErrorMessage}
-                            {...{ ...restProps, size, onBlur, onInvalid }}
+                            {...{ ...restProps, size, onBlur, onInvalid, onChange }}
                         />
+                        {maskLabel && (
+                            <Styled.MaskPlaceholder size={size} isLabelPresent={isLabelPresent} variant={props.variant}>
+                                {maskLabel}
+                            </Styled.MaskPlaceholder>
+                        )}
                         <Styled.Label htmlFor={`${inputId}-input`} size={size} required={required} variant={props.variant}>
                             {label}
                         </Styled.Label>

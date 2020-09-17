@@ -8,6 +8,8 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'siz
     size?: 'S' | 'M';
     /** Function will called with the input value on blur and invalid event */
     validator?: (val: any, eventType?: string) => string;
+    /** Mask format eg. DD / MM / YYYY */
+    mask?: string;
     /** Set it true if you do not want to validate on blur event*/
     doNotValidateOnBlur?: boolean;
     /** Takes full width of the parent component */

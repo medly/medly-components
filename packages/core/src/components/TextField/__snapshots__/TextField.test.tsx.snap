@@ -10,6 +10,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -190,6 +191,10 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -244,11 +249,15 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -270,6 +279,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
             placeholder=" "
             required=""
             type="email"
+            value=""
           />
           <label
             class="c4 c5"
@@ -296,6 +306,7 @@ exports[`TextField should render asterisk if we pass required prop as true 1`] =
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -329,8 +340,8 @@ exports[`TextField should render asterisk if we pass required prop as true 1`] =
   color: #126AFA;
 }
 
-.c3:not(:placeholder-shown) + .c0,
-.c3:focus + .c0 {
+.c3:not(:placeholder-shown) ~ .c0,
+.c3:focus ~ .c0 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -366,6 +377,7 @@ exports[`TextField should render properly with M size 1`] = `
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -542,6 +554,10 @@ exports[`TextField should render properly with M size 1`] = `
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -596,11 +612,15 @@ exports[`TextField should render properly with M size 1`] = `
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -620,6 +640,7 @@ exports[`TextField should render properly with M size 1`] = `
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -660,6 +681,7 @@ exports[`TextField should render properly with S size 1`] = `
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.4rem;
@@ -832,6 +854,10 @@ exports[`TextField should render properly with S size 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -886,9 +912,13 @@ exports[`TextField should render properly with S size 1`] = `
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   opacity: 0;
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -908,6 +938,7 @@ exports[`TextField should render properly with S size 1`] = `
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -937,6 +968,7 @@ exports[`TextField should render properly with default props 1`] = `
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -1113,6 +1145,10 @@ exports[`TextField should render properly with default props 1`] = `
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -1167,11 +1203,15 @@ exports[`TextField should render properly with default props 1`] = `
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -1191,6 +1231,7 @@ exports[`TextField should render properly with default props 1`] = `
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -1215,6 +1256,7 @@ exports[`TextField with filled variant and with label should render default stat
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -1391,6 +1433,10 @@ exports[`TextField with filled variant and with label should render default stat
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -1445,11 +1491,15 @@ exports[`TextField with filled variant and with label should render default stat
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -1469,6 +1519,7 @@ exports[`TextField with filled variant and with label should render default stat
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -1493,6 +1544,7 @@ exports[`TextField with filled variant and with label should render disabled sta
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -1649,6 +1701,10 @@ exports[`TextField with filled variant and with label should render disabled sta
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -1703,11 +1759,15 @@ exports[`TextField with filled variant and with label should render disabled sta
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -1729,6 +1789,7 @@ exports[`TextField with filled variant and with label should render disabled sta
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -1753,6 +1814,7 @@ exports[`TextField with filled variant and with label should render focus state 
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -1929,6 +1991,10 @@ exports[`TextField with filled variant and with label should render focus state 
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -1983,11 +2049,15 @@ exports[`TextField with filled variant and with label should render focus state 
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -2007,6 +2077,7 @@ exports[`TextField with filled variant and with label should render focus state 
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -2031,6 +2102,7 @@ exports[`TextField with filled variant and without label should render default s
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -2203,6 +2275,10 @@ exports[`TextField with filled variant and without label should render default s
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -2257,11 +2333,15 @@ exports[`TextField with filled variant and without label should render default s
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -2281,6 +2361,7 @@ exports[`TextField with filled variant and without label should render default s
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -2303,6 +2384,7 @@ exports[`TextField with filled variant and without label should render disabled 
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -2455,6 +2537,10 @@ exports[`TextField with filled variant and without label should render disabled 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -2509,11 +2595,15 @@ exports[`TextField with filled variant and without label should render disabled 
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -2535,6 +2625,7 @@ exports[`TextField with filled variant and without label should render disabled 
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -2557,6 +2648,7 @@ exports[`TextField with filled variant and without label should render focus sta
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -2729,6 +2821,10 @@ exports[`TextField with filled variant and without label should render focus sta
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -2783,11 +2879,15 @@ exports[`TextField with filled variant and without label should render focus sta
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -2807,6 +2907,7 @@ exports[`TextField with filled variant and without label should render focus sta
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -2840,6 +2941,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -3052,6 +3154,10 @@ exports[`TextField with filled variant should render error state properly  1`] =
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -3106,11 +3212,15 @@ exports[`TextField with filled variant should render error state properly  1`] =
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -3130,6 +3240,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -3229,6 +3340,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -3410,6 +3522,10 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+}
+
+.c6,
+.c6 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -3464,11 +3580,15 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   transition: all 100ms ease-out;
 }
 
-.c6:not(:placeholder-shown) + .c7,
-.c6:focus + .c7 {
+.c6:not(:placeholder-shown) ~ .c7,
+.c6:focus ~ .c7 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c6:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -3501,6 +3621,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c7 c8"
@@ -3540,6 +3661,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -3721,6 +3843,10 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -3775,11 +3901,15 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -3799,6 +3929,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -3836,6 +3967,7 @@ exports[`TextField with outlined variant and with label should render default st
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -4026,6 +4158,10 @@ exports[`TextField with outlined variant and with label should render default st
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.6rem;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -4080,11 +4216,15 @@ exports[`TextField with outlined variant and with label should render default st
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -4104,6 +4244,7 @@ exports[`TextField with outlined variant and with label should render default st
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -4128,6 +4269,7 @@ exports[`TextField with outlined variant and with label should render disabled s
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -4289,6 +4431,10 @@ exports[`TextField with outlined variant and with label should render disabled s
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.6rem;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -4343,11 +4489,15 @@ exports[`TextField with outlined variant and with label should render disabled s
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -4369,6 +4519,7 @@ exports[`TextField with outlined variant and with label should render disabled s
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -4393,6 +4544,7 @@ exports[`TextField with outlined variant and with label should render focus stat
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -4583,6 +4735,10 @@ exports[`TextField with outlined variant and with label should render focus stat
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.6rem;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -4637,11 +4793,15 @@ exports[`TextField with outlined variant and with label should render focus stat
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -4661,6 +4821,7 @@ exports[`TextField with outlined variant and with label should render focus stat
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -4685,6 +4846,7 @@ exports[`TextField with outlined variant and without label should render default
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -4871,6 +5033,10 @@ exports[`TextField with outlined variant and without label should render default
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -4925,11 +5091,15 @@ exports[`TextField with outlined variant and without label should render default
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -4949,6 +5119,7 @@ exports[`TextField with outlined variant and without label should render default
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -4971,6 +5142,7 @@ exports[`TextField with outlined variant and without label should render disable
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -5128,6 +5300,10 @@ exports[`TextField with outlined variant and without label should render disable
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -5182,11 +5358,15 @@ exports[`TextField with outlined variant and without label should render disable
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -5208,6 +5388,7 @@ exports[`TextField with outlined variant and without label should render disable
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -5230,6 +5411,7 @@ exports[`TextField with outlined variant and without label should render focus s
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -5416,6 +5598,10 @@ exports[`TextField with outlined variant and without label should render focus s
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -5470,11 +5656,15 @@ exports[`TextField with outlined variant and without label should render focus s
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -5494,6 +5684,7 @@ exports[`TextField with outlined variant and without label should render focus s
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -5527,6 +5718,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -5753,6 +5945,10 @@ exports[`TextField with outlined variant should render error state properly  1`]
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.6rem;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -5807,11 +6003,15 @@ exports[`TextField with outlined variant should render error state properly  1`]
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -5831,6 +6031,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -5930,6 +6131,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -6125,6 +6327,10 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.6rem;
+}
+
+.c6,
+.c6 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -6179,11 +6385,15 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   transition: all 100ms ease-out;
 }
 
-.c6:not(:placeholder-shown) + .c7,
-.c6:focus + .c7 {
+.c6:not(:placeholder-shown) ~ .c7,
+.c6:focus ~ .c7 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c6:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -6216,6 +6426,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c7 c8"
@@ -6255,6 +6466,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -6450,6 +6662,10 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.6rem;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -6504,11 +6720,15 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -6528,6 +6748,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"
@@ -6565,6 +6786,7 @@ exports[`TextField without label should render default state properly 1`] = `
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -6737,6 +6959,10 @@ exports[`TextField without label should render default state properly 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -6791,11 +7017,15 @@ exports[`TextField without label should render default state properly 1`] = `
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -6815,6 +7045,7 @@ exports[`TextField without label should render default state properly 1`] = `
           id="medly-textField-input"
           placeholder=" "
           type="email"
+          value=""
         />
         <label
           class="c4 c5"
@@ -6837,6 +7068,7 @@ exports[`TextField without label should render focus state properly  1`] = `
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -7013,6 +7245,10 @@ exports[`TextField without label should render focus state properly  1`] = `
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+}
+
+.c3,
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -7067,11 +7303,15 @@ exports[`TextField without label should render focus state properly  1`] = `
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) + .c4,
-.c3:focus + .c4 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
+  opacity: 1;
 }
 
 <div>
@@ -7091,6 +7331,7 @@ exports[`TextField without label should render focus state properly  1`] = `
           id="medly-textField-input"
           placeholder=" "
           type="text"
+          value=""
         />
         <label
           class="c4 c5"

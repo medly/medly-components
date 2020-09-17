@@ -1,5 +1,5 @@
 import { CheckIcon } from '@medly-components/icons';
-import { fireEvent, render } from '@test-utils';
+import { fireEvent, render, waitFor } from '@test-utils';
 import React from 'react';
 import { TextField } from './TextField';
 import { Props } from './types';
@@ -64,6 +64,23 @@ describe('TextField', () => {
     it('should render asterisk if we pass required prop as true', () => {
         const { container } = render(<TextField label="Name" required />);
         expect(container.querySelector('label')).toMatchSnapshot();
+    });
+
+    describe('masking', () => {
+        it('should render mask if provided with outlined variant', () => {
+            const { getByText } = render(<TextField label="Date" minWidth="30rem" id="dummy" variant="outlined" mask="DD / MM / YYYY" />);
+            expect(getByText('DD / MM / YYYY')).toBeInTheDocument();
+        });
+
+        it('should render mask if provided with filled variant', () => {
+            const { getByText } = render(<TextField label="Date" minWidth="30rem" id="dummy" variant="filled" mask="DD / MM / YYYY" />);
+            expect(getByText('DD / MM / YYYY')).toBeInTheDocument();
+        });
+
+        it('should change the mask value on change of the input value', async () => {
+            const { getByText } = render(<TextField minWidth="30rem" id="dummy" value="11 / 11 / 1111" mask="DD / MM / YYYY" />);
+            await waitFor(() => expect(getByText('11 / 11 / 1111')).toBeInTheDocument());
+        });
     });
 
     describe('error Validation', () => {

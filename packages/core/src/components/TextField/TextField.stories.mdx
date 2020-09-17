@@ -4,6 +4,7 @@ import { AddCircleOutlineIcon, AddCircleIcon, CheckCircleIcon } from '@medly-com
 import { withKnobs, text, color, select, boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { ThemeInterface, variants, sizes, Custom } from './TextField.stories.tsx';
+import { useState, useCallback } from 'react';
 
 <Meta title="Core" component={TextField} parameters={{ jest: ['TextField.test.tsx'] }} />
 
@@ -13,20 +14,36 @@ Basic TextField component with lot of customization
 
 <Preview withToolbar>
     <Story name="TextField" decorators={[withKnobs]}>
-        <TextField
-            id="storybook-input"
-            size={select('Size', sizes, 'M')}
-            minWidth={text('Min Width', '20rem')}
-            variant={select('Variant', variants, 'filled')}
-            fullWidth={boolean('Full Width', false)}
-            disabled={boolean('Disabled', false)}
-            label={text('Label', 'First Name')}
-            required={boolean('Required', false)}
-            placeholder={text('Placeholder', 'Enter First Name')}
-            helperText={text('Helper Text', 'Helper Text')}
-            errorText={text('Error Text', '')}
-        />
+        {() => {
+            const [value, setValue] = useState(''),
+                handleChange = useCallback(e => setValue(e.target.value), []);
+            return (
+                <TextField
+                    id="storybook-input"
+                    value={value}
+                    onChange={handleChange}
+                    size={select('Size', sizes, 'M')}
+                    minWidth={text('Min Width', '20rem')}
+                    variant={select('Variant', variants, 'filled')}
+                    fullWidth={boolean('Full Width', false)}
+                    disabled={boolean('Disabled', false)}
+                    label={text('Label', 'First Name')}
+                    required={boolean('Required', false)}
+                    placeholder={text('Placeholder', 'Enter First Name')}
+                    helperText={text('Helper Text', 'Helper Text')}
+                    errorText={text('Error Text', '')}
+                />
+            );
+        }}
     </Story>
+</Preview>
+
+#### Masking (beta-version)
+
+To add the masking feature you need to provide `mask` prop. For now this feature only supports numbers so user is only allowed to type numbers.
+
+<Preview withToolbar>
+    <TextField id="date" type="Name" variant="filled" label="Date" mask="DD / MM / YYYY" />
 </Preview>
 
 ##### Variants
