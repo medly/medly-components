@@ -10,6 +10,7 @@ exports[`MultiSelect component should render correctly with all the props given 
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -164,6 +165,10 @@ exports[`MultiSelect component should render correctly with all the props given 
   -ms-flex-item-align: end;
   align-self: flex-end;
   padding-bottom: 0.7rem;
+}
+
+.c5,
+.c5 ~ .sc-AxheI {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -218,11 +223,15 @@ exports[`MultiSelect component should render correctly with all the props given 
   transition: all 100ms ease-out;
 }
 
-.c5:not(:placeholder-shown) + .c6,
-.c5:focus + .c6 {
+.c5:not(:placeholder-shown) ~ .c6,
+.c5:focus ~ .c6 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c5:not(:placeholder-shown) ~ .sc-AxheI {
+  opacity: 1;
 }
 
 .c13 {
@@ -476,6 +485,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   -ms-user-select: none;
   user-select: none;
   position: absolute;
+  pointer-events: none;
   -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   transition: all 150ms cubic-bezier(0.4,0,0.2,1);
   font-size: 1.6rem;
@@ -646,6 +656,10 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+}
+
+.c5,
+.c5 ~ .sc-AxheI {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -700,11 +714,15 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   transition: all 100ms ease-out;
 }
 
-.c5:not(:placeholder-shown) + .c6,
-.c5:focus + .c6 {
+.c5:not(:placeholder-shown) ~ .c6,
+.c5:focus ~ .c6 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
+}
+
+.c5:not(:placeholder-shown) ~ .sc-AxheI {
+  opacity: 1;
 }
 
 .c11 {
@@ -1058,12 +1076,12 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   padding: 0.5rem 1.3rem;
 }
 
-.c1 .sc-fzoLsD {
+.c1 .sc-fzpans {
   padding: 0 0.3rem 0 0.9rem;
   margin: 0.2rem;
 }
 
-.c1 .sc-fzoLsD .c11 {
+.c1 .sc-fzpans .c11 {
   background-color: transparent;
   padding: 0.2rem;
 }
@@ -1598,12 +1616,12 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   padding: 0.5rem 1.3rem;
 }
 
-.c1 .sc-fzoLsD {
+.c1 .sc-fzpans {
   padding: 0 0.3rem 0 0.9rem;
   margin: 0.2rem;
 }
 
-.c1 .sc-fzoLsD .c11 {
+.c1 .sc-fzpans .c11 {
   background-color: transparent;
   padding: 0.2rem;
 }

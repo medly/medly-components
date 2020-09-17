@@ -53,9 +53,11 @@ export const TextField: FC<Props> & WithStyle = React.memo(
             onInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validate, props.onInvalid]),
             onChange = useCallback(
                 (e: React.ChangeEvent<HTMLInputElement>) => {
-                    const maskedValue = getMaskedValue(e, mask);
-                    e.target.value = maskedValue;
-                    setMaskLabel(`${maskedValue}${mask.substr(maskedValue.length)}`);
+                    if (mask) {
+                        const maskedValue = getMaskedValue(e, mask);
+                        e.target.value = maskedValue;
+                        setMaskLabel(`${maskedValue}${mask.substr(maskedValue.length)}`);
+                    }
                     props.onChange && props.onChange(e);
                 },
                 [mask]
