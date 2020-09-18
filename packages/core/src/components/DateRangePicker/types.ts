@@ -8,6 +8,8 @@ type PickerProps = Omit<
 >;
 
 export interface Props extends PickerProps {
+    /** ID */
+    id: string;
     /** Variants */
     variant?: 'outlined' | 'filled';
     /** Size */
