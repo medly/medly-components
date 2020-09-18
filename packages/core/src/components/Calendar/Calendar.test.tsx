@@ -23,6 +23,13 @@ describe('Calendar Component', () => {
         expect(container).toMatchSnapshot();
     });
 
+    it('should render properly with with error state', () => {
+        const date = new Date(2020, 0, 1),
+            { container } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} isErrorPresent />);
+
+        expect(container).toMatchSnapshot();
+    });
+
     it('should render current month if date is null', () => {
         const { container } = render(<Calendar id="test-calendar" date={null} onChange={jest.fn()} />),
             { month, year } = getMonthAndYearFromDate(new Date());

@@ -1059,3 +1059,1065 @@ exports[`Calendar Component should render given date 1`] = `
   </div>
 </div>
 `;
+
+exports[`Calendar Component should render properly with with error state 1`] = `
+.c8 {
+  overflow: visible;
+  font-size: 2rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c8 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c12 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c12 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c7 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 1.6rem;
+  text-align: initial;
+}
+
+.c14 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: center;
+}
+
+.c16 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c3 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 7rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c3 .sc-AxmLO {
+  margin: 0;
+  caret-color: transparent;
+}
+
+.c3 .sc-AxmLO label {
+  pointer-events: none;
+}
+
+.c3 .sc-AxmLO div,
+.c3 .sc-AxmLO input,
+.c3 .sc-AxmLO label {
+  cursor: pointer;
+}
+
+.c3 .sc-AxmLO .sc-AxhUy {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c10 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  min-width: 8rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c10 .sc-AxmLO {
+  margin: 0;
+  caret-color: transparent;
+}
+
+.c10 .sc-AxmLO label {
+  pointer-events: none;
+}
+
+.c10 .sc-AxmLO div,
+.c10 .sc-AxmLO input,
+.c10 .sc-AxmLO label {
+  cursor: pointer;
+}
+
+.c10 .sc-AxmLO .sc-AxhUy {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c4 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.c9 {
+  pointer-events: none;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c5 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  height: 3.2rem;
+  padding: 0.7rem 0.4rem 0.9rem 0.8rem;
+  border-radius: 0.8rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5,
+.c5 * {
+  cursor: pointer;
+}
+
+.c5,
+.c5 .sc-fznKkj {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:focus {
+  outline: none;
+}
+
+.c5:disabled,
+.c5:disabled * {
+  cursor: not-allowed;
+}
+
+.c5:disabled {
+  color: #b0bcc8;
+  background: #ffffff;
+}
+
+.c5:disabled * {
+  fill: #b0bcc8;
+}
+
+.c5:disabled .sc-fznKkj {
+  color: #b0bcc8;
+}
+
+.c5:not(:disabled):not(:hover) {
+  color: #cc0000;
+  background: #ffffff;
+}
+
+.c5:not(:disabled):not(:hover) * {
+  fill: #cc0000;
+}
+
+.c5:not(:disabled):not(:hover) .sc-fznKkj {
+  color: #303C48;
+}
+
+.c5:not(:disabled):active {
+  color: #cc0000;
+  background: #eff2f4;
+}
+
+.c5:not(:disabled):active * {
+  fill: #cc0000;
+}
+
+.c5:not(:disabled):active .sc-fznKkj {
+  color: #13181D;
+}
+
+.c5:not(:disabled):not(:active):hover {
+  color: #cc0000;
+  background: #F7F8F9;
+  box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
+}
+
+.c5:not(:disabled):not(:active):hover * {
+  fill: #cc0000;
+}
+
+.c5:not(:disabled):not(:active):hover .sc-fznKkj {
+  color: #303C48;
+}
+
+.c0 {
+  padding: 1.6rem;
+  background: #ffffff;
+  box-shadow: 0 0.2rem 0.8rem #b0bcc8;
+  border-radius: 0.4rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.c11 {
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 0.8rem;
+  outline: none;
+  cursor: pointer;
+  color: #435465;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 svg {
+  fill: #435465;
+}
+
+.c11:not(:disabled):hover {
+  background-color: #F7F8F9;
+}
+
+.c11:not(:disabled):active {
+  background-color: #eff2f4;
+}
+
+.c1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+}
+
+.c2 ul {
+  max-height: 20rem;
+  overflow: auto;
+}
+
+.c2 .sc-AxmLO {
+  min-width: unset;
+  max-width: 9.5rem;
+}
+
+.c2 .sc-AxmLO > div {
+  height: 3.5rem;
+  padding: 0 0 0 1rem;
+}
+
+.c13 {
+  display: grid;
+  grid-template-columns: repeat(7,4rem);
+  grid-auto-rows: auto;
+}
+
+.c13 > .c6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.c15 {
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0.4rem;
+  box-sizing: border-box;
+  height: 3.2rem;
+  color: #b0bcc8;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c15:focus {
+  outline: none;
+}
+
+.c15:disabled {
+  cursor: not-allowed;
+  color: #b0bcc8;
+}
+
+.c15:hover {
+  background-color: #eff2f4;
+}
+
+.c17 {
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0.4rem;
+  box-sizing: border-box;
+  height: 3.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17:focus {
+  outline: none;
+}
+
+.c17:disabled {
+  cursor: not-allowed;
+  color: #b0bcc8;
+}
+
+.c17:hover {
+  background-color: #eff2f4;
+}
+
+.c17 span {
+  font-weight: bold;
+}
+
+.c17,
+.c17:hover {
+  background-color: #126AFA;
+  color: #ffffff;
+}
+
+.c18 {
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0.4rem;
+  box-sizing: border-box;
+  height: 3.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c18:focus {
+  outline: none;
+}
+
+.c18:disabled {
+  cursor: not-allowed;
+  color: #b0bcc8;
+}
+
+.c18:hover {
+  background-color: #eff2f4;
+}
+
+<div>
+  <div
+    class="c0"
+    id="test-calendar"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+          id="test-calendar-month-selector-wrapper"
+        >
+          <div
+            class="c4"
+            id="test-calendar-month-selector-button-wrapper"
+          >
+            <button
+              class="c5"
+              id="test-calendar-month-selector-button"
+            >
+              
+              <span
+                class="c6 c7"
+              >
+                Jan
+              </span>
+              <svg
+                class="c8 c9"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                  fill="#000"
+                />
+              </svg>
+            </button>
+            
+          </div>
+        </div>
+        <div
+          class="c10"
+          id="test-calendar-year-selector-wrapper"
+        >
+          <div
+            class="c4"
+            id="test-calendar-year-selector-button-wrapper"
+          >
+            <button
+              class="c5"
+              id="test-calendar-year-selector-button"
+            >
+              
+              <span
+                class="c6 c7"
+              >
+                2020
+              </span>
+              <svg
+                class="c8 c9"
+                fill="none"
+                height="1em"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+                  fill="#000"
+                />
+              </svg>
+            </button>
+            
+          </div>
+        </div>
+      </div>
+      <button
+        class="c11 calendar-month-navigation-go-back"
+      >
+        <svg
+          class="c12"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15 15.875l-3.88-3.88L15 8.115a.996.996 0 1 0-1.41-1.41L9 11.295a.996.996 0 0 0 0 1.41l4.59 4.59c.39.39 1.02.39 1.41 0 .38-.39.39-1.03 0-1.42z"
+            fill="#000"
+            fill-opacity=".54"
+          />
+        </svg>
+      </button>
+      <button
+        class="c11 calendar-month-navigation-go-forward"
+      >
+        <svg
+          class="c12"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9 15.875l3.88-3.88L9 8.115a.996.996 0 1 1 1.41-1.41l4.59 4.59c.39.39.39 1.02 0 1.41l-4.59 4.59a.996.996 0 0 1-1.41 0c-.38-.39-.39-1.03 0-1.42z"
+            fill="#000"
+            fill-opacity=".54"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="c13"
+    >
+      <strong
+        class="c6 c14"
+      >
+        S
+      </strong>
+      <strong
+        class="c6 c14"
+      >
+        M
+      </strong>
+      <strong
+        class="c6 c14"
+      >
+        T
+      </strong>
+      <strong
+        class="c6 c14"
+      >
+        W
+      </strong>
+      <strong
+        class="c6 c14"
+      >
+        T
+      </strong>
+      <strong
+        class="c6 c14"
+      >
+        F
+      </strong>
+      <strong
+        class="c6 c14"
+      >
+        S
+      </strong>
+      <button
+        class="c15"
+        title="Sun Dec 29 2019"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          29
+        </span>
+      </button>
+      <button
+        class="c15"
+        title="Mon Dec 30 2019"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          30
+        </span>
+      </button>
+      <button
+        class="c15"
+        title="Tue Dec 31 2019"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          31
+        </span>
+      </button>
+      <button
+        class="c17"
+        title="Wed Jan 01 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          1
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Thu Jan 02 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          2
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Fri Jan 03 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          3
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Sat Jan 04 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          4
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Sun Jan 05 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          5
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Mon Jan 06 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          6
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Tue Jan 07 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          7
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Wed Jan 08 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          8
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Thu Jan 09 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          9
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Fri Jan 10 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          10
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Sat Jan 11 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          11
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Sun Jan 12 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          12
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Mon Jan 13 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          13
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Tue Jan 14 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          14
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Wed Jan 15 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          15
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Thu Jan 16 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          16
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Fri Jan 17 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          17
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Sat Jan 18 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          18
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Sun Jan 19 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          19
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Mon Jan 20 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          20
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Tue Jan 21 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          21
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Wed Jan 22 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          22
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Thu Jan 23 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          23
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Fri Jan 24 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          24
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Sat Jan 25 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          25
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Sun Jan 26 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          26
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Mon Jan 27 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          27
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Tue Jan 28 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          28
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Wed Jan 29 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          29
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Thu Jan 30 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          30
+        </span>
+      </button>
+      <button
+        class="c18"
+        title="Fri Jan 31 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          31
+        </span>
+      </button>
+      <button
+        class="c15"
+        title="Sat Feb 01 2020"
+        type="button"
+      >
+        <span
+          class="c6 c16"
+        >
+          1
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
