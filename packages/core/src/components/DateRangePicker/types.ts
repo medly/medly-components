@@ -1,5 +1,5 @@
 import { DateRangeInput } from '@datepicker-react/styled';
-import { GetComponentProps, HTMLProps, Omit } from '@medly-components/utils';
+import { GetComponentProps, HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 import { Placement } from '../Popover/types';
 
 type PickerProps = Omit<
@@ -7,9 +7,13 @@ type PickerProps = Omit<
     'onFocusChange' | 'onDatesChange' | 'startDate' | 'endDate' | 'focusedInput' | 'placement' | 'displayFormat'
 >;
 
-export interface Props extends PickerProps {
+export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height' | 'value' | 'onChange'>, WithThemeProp {
     /** ID */
     id: string;
+    /** From Label */
+    fromLabel: string;
+    /** To Label */
+    toLabel: string;
     /** Variants */
     variant?: 'outlined' | 'filled';
     /** Size */
