@@ -19,13 +19,16 @@ const placement: Placement[] = [
 ];
 
 export const Basic = () => {
-    const [dates, setDates] = useState({ startDate: null, endDate: null });
+    const [dates, setDates] = useState({ startDate: '', endDate: '' });
 
     return (
         <DateRangePicker
+            fromLabel="From"
+            toLabel="To"
+            id="date-range-picker"
             value={dates}
             onChange={setDates}
-            size={select('Size', ['S', 'M'], 'S')}
+            size={select('Size', ['S', 'M'], 'M')}
             placement={select('Placement', placement, 'bottom-start')}
             variant={select('Variant', ['filled', 'outlined'], 'filled')}
             fullWidth={boolean('Full Width', false)}
