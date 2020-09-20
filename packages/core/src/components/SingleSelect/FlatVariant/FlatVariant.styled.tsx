@@ -1,4 +1,4 @@
-import { centerAligned, css, InjectClassName, styled } from '@medly-components/utils';
+import { css, InjectClassName, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Label from '../../Label';
 import { FlatVariantProps } from './types';
@@ -41,11 +41,11 @@ const buttonStyle = (props: FlatVariantProps) => css`
     }
 `;
 
-export const OuterWrapper = styled('div')<{ fullWidth: boolean }>`
+export const OuterWrapper = styled('div')`
+    display: flex;
     position: relative;
     flex-direction: column;
-    display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
-    width: ${({ fullWidth }) => (fullWidth ? '100%' : 'min-content')};
+    width: 100%;
 `;
 
 export const HelperText = styled('span')<{ isError: boolean; disabled: boolean }>`
@@ -72,7 +72,7 @@ export const FlatVariantStyled = styled('button')<FlatVariantProps>`
     text-decoration: none;
     height: ${({ theme }) => theme.singleSelect.variant.flat.height};
     padding: 0.7rem 0.4rem 0.9rem 0.8rem;
-    width: ${({ fullWidth }) => fullWidth && '100%'};
+    width: '100%';
     border-radius: ${({ theme }) => theme.singleSelect.options.borderRadius.flat};
     &,
     * {
@@ -95,6 +95,7 @@ export const FlatVariantStyled = styled('button')<FlatVariantProps>`
     }
 
     ${buttonStyle};
-
-    ${centerAligned()}
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 `;

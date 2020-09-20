@@ -35,9 +35,6 @@ exports[`SearchBox options should render options when user search option specifi
   border-radius: 0.4rem;
   box-sizing: border-box;
   min-height: 4rem;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -48,6 +45,9 @@ exports[`SearchBox options should render options when user search option specifi
   align-items: center;
   position: relative;
   background-color: #ffffff;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 .c10:hover {

@@ -8,10 +8,10 @@ import { FlatVariantProps } from './types';
 
 export const FlatVariant: React.FC<FlatVariantProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { label, value, id, fullWidth, areOptionsVisible, errorText, helperText, disabled, ...restProps } = props;
+        const { label, value, id, areOptionsVisible, errorText, helperText, disabled, ...restProps } = props;
         const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []);
         return (
-            <OuterWrapper fullWidth={fullWidth} id={`${id}-button-wrapper`}>
+            <OuterWrapper id={`${id}-button-wrapper`}>
                 <FlatVariantStyled
                     ref={ref}
                     id={`${id}-button`}

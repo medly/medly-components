@@ -15,6 +15,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                 size,
                 label,
                 minWidth,
+                maxWidth,
                 fullWidth,
                 errorText,
                 helperText,
@@ -68,7 +69,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
         }, [value, mask]);
 
         return (
-            <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth} id={`${inputId}-input-wrapper`}>
+            <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth} maxWidth={maxWidth} id={`${inputId}-input-wrapper`}>
                 <Styled.InnerWrapper
                     size={size}
                     onClick={handleWrapperClick}
@@ -127,6 +128,7 @@ TextField.defaultProps = {
     size: 'M',
     type: 'text',
     variant: 'filled',
+    minWidth: '20rem',
     fullWidth: false,
     disabled: false,
     required: false,

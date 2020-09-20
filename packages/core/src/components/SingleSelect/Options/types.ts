@@ -8,11 +8,13 @@ export interface OptionsProps extends Omit<HTMLProps<HTMLUListElement>, 'size'> 
     variant: 'outlined' | 'filled' | 'flat';
     isNested?: boolean;
     hasError?: boolean;
+    maxWidth?: string;
     onOptionClick: (option: Option | React.MouseEvent<HTMLLIElement>) => void;
 }
 
 export interface StyledOptionsProps extends WithThemeProp {
     size?: 'S' | 'M';
     isNested?: boolean;
+    maxWidth?: string;
     variant: 'outlined' | 'filled' | 'flat';
 }

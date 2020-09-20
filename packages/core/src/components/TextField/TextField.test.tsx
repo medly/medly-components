@@ -32,6 +32,13 @@ describe('TextField', () => {
         `);
     });
 
+    it('should take passed max width', () => {
+        const { container } = render(<TextField label="Name" maxWidth="30rem" />);
+        expect(container.querySelector('div')).toHaveStyle(`
+            max-width: 30rem;
+        `);
+    });
+
     it('should focus on input when clicked on the wrapper', () => {
         const { container } = render(<TextField label="Name" minWidth="30rem" id="dummy" />);
         fireEvent.click(container.querySelector('#dummy-input-wrapper > div'));

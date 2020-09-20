@@ -30,6 +30,8 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'siz
     errorText?: string;
     /** Min width in px/rem/% (1rem = 10px)*/
     minWidth?: string;
+    /** Max width in px/rem/% (1rem = 10px)*/
+    maxWidth?: string;
 }
 
 export interface StyledProps extends Props, TextFieldTheme {
