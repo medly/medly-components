@@ -7,7 +7,7 @@ const getMaskedValue = (event: React.ChangeEvent<HTMLInputElement>, mask: string
         length = value.length,
         lastChar = value[length - 1];
 
-    let newValue = value;
+    let newValue;
 
     // if user deletes some char from middle
     if (event.target.selectionStart && event.target.selectionStart < length) {

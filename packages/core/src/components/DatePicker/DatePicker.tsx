@@ -85,8 +85,8 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 [props.onFocus]
             ),
             onDateChange = useCallback(
-                (date: Date) => {
-                    onChange(date);
+                (dt: Date) => {
+                    onChange(dt);
                     toggleCalendar(false);
                     setErrorMessage('');
                     setActive(false);
