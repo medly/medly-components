@@ -134,8 +134,8 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                         date={date}
                         isErrorPresent={isErrorPresent}
                         onChange={onDateChange}
-                        minSelectableDate={minSelectableDate ?? undefined}
-                        maxSelectableDate={maxSelectableDate ?? undefined}
+                        minSelectableDate={minSelectableDate}
+                        maxSelectableDate={maxSelectableDate}
                     />
                 )}
             </Wrapper>

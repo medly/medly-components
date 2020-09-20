@@ -314,11 +314,11 @@ exports[`DatePicker component should render properly when value is of date type 
 <div>
   <div
     class="c0 c1"
-    id="dob-datepicker-wrapper"
+    id="startdate-datepicker-wrapper"
   >
     <div
       class="c0 c2"
-      id="dob-input-wrapper"
+      id="startdate-input-wrapper"
     >
       <div
         class="c3 c4"
@@ -328,10 +328,10 @@ exports[`DatePicker component should render properly when value is of date type 
           class="c5"
         >
           <input
-            aria-describedby="dob-helper-text"
+            aria-describedby="startdate-helper-text"
             class="c6"
             disabled=""
-            id="dob-input"
+            id="startdate-input"
             placeholder="MM / DD / YYYY"
             type="text"
             value="01 / 01 / 2020"
@@ -343,7 +343,7 @@ exports[`DatePicker component should render properly when value is of date type 
           </span>
           <label
             class="c9 c10"
-            for="dob-input"
+            for="startdate-input"
           >
             Start Date
           </label>
@@ -532,7 +532,10 @@ exports[`DatePicker component should render properly when value is of string typ
   -ms-user-select: none;
   user-select: none;
   color: rgba(0,90,238,.2);
-  bottom: 0.7rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .c2 {
@@ -560,10 +563,6 @@ exports[`DatePicker component should render properly when value is of string typ
   background: transparent;
   border: none;
   text-overflow: ellipsis;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  padding-bottom: 0.7rem;
 }
 
 .c6,
@@ -685,11 +684,11 @@ exports[`DatePicker component should render properly when value is of string typ
 <div>
   <div
     class="c0 c1"
-    id="dob-datepicker-wrapper"
+    id="medly-datepicker-datepicker-wrapper"
   >
     <div
       class="c0 c2"
-      id="dob-input-wrapper"
+      id="medly-datepicker-input-wrapper"
     >
       <div
         class="c3 c4"
@@ -699,10 +698,10 @@ exports[`DatePicker component should render properly when value is of string typ
           class="c5"
         >
           <input
-            aria-describedby="dob-helper-text"
+            aria-describedby="medly-datepicker-helper-text"
             class="c6"
             disabled=""
-            id="dob-input"
+            id="medly-datepicker-input"
             placeholder="MM / DD / YYYY"
             type="text"
             value="01 / 01 / 2020"
@@ -714,10 +713,8 @@ exports[`DatePicker component should render properly when value is of string typ
           </span>
           <label
             class="c9 c10"
-            for="dob-input"
-          >
-            Start Date
-          </label>
+            for="medly-datepicker-input"
+          />
         </div>
         <svg
           class="c11 c12"
