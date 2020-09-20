@@ -1,7 +1,7 @@
 import { cleanup, fireEvent, render, waitFor } from '@test-utils';
-import { DatePickerProps } from 'packages/forms/src/components/Fields/types';
 import React from 'react';
 import { DatePicker } from './DatePicker';
+import { Props } from './types';
 
 describe('DatePicker component', () => {
     afterEach(cleanup);
@@ -104,7 +104,7 @@ describe('DatePicker component', () => {
     });
 
     describe('error messages', () => {
-        const props: DatePickerProps = {
+        const props: Props = {
             value: null,
             displayFormat: 'MM/dd/yyyy',
             type: 'date',

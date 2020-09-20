@@ -1,5 +1,5 @@
 import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
-import { useUpdateEffect, WithStyle } from '@medly-components/utils/src';
+import { useUpdateEffect, WithStyle } from '@medly-components/utils';
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { PopoverContext } from '../Popover/Popover.context';
 import SingleSelect from '../SingleSelect';
