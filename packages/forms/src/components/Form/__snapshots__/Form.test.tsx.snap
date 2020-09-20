@@ -966,9 +966,6 @@ exports[`Form should render properly with initial state 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -3278,9 +3275,6 @@ exports[`Form should render properly without initial state 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
