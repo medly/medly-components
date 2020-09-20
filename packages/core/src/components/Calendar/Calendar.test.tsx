@@ -38,6 +38,22 @@ describe('Calendar Component', () => {
         expect(yearInDOM).toEqual(year.toString());
     });
 
+    it('should render min selectable date if current month is greater than max date and date is null', async () => {
+        const { container } = render(
+                <Calendar
+                    id="test-calendar"
+                    date={null}
+                    onChange={jest.fn()}
+                    maxSelectableDate={new Date(1902, 11, 31)}
+                    minSelectableDate={new Date(1901, 0, 1)}
+                />
+            ),
+            { month, year } = getMonthAndYearFromDate(new Date(1901, 0, 1));
+        const { month: monthInDOM, year: yearInDOM } = getDateValues(container);
+        expect(monthInDOM).toEqual(`${CALENDAR_MONTHS[month]}`);
+        expect(yearInDOM).toEqual(year.toString());
+    });
+
     it('should call onChange with expected date', () => {
         const mockOnChange = jest.fn(),
             dateToSelect = new Date(2021, 1, 1),

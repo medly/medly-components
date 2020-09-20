@@ -1,5 +1,5 @@
 import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
-import { WithStyle } from '@medly-components/utils/src';
+import { useUpdateEffect, WithStyle } from '@medly-components/utils/src';
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { PopoverContext } from '../Popover/Popover.context';
 import SingleSelect from '../SingleSelect';
@@ -70,7 +70,7 @@ export const Calendar: React.FC<Props> & WithStyle = React.memo(
             );
         }, [date, minSelectableDate, maxSelectableDate]);
 
-        useEffect(() => {
+        useUpdateEffect(() => {
             // If selected month is not allowed in the newly selected year then change month to first option in the months option
             const nonDisabledMonths = monthOptions.filter(option => !option.disabled).map(options => options.value);
             !nonDisabledMonths.includes(month) && setMonthAndYear({ year, month: nonDisabledMonths[0] || 0 });
