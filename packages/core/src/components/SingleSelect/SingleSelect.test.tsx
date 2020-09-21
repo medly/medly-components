@@ -24,7 +24,7 @@ describe('SingleSelect component', () => {
 
     describe.each(['outlined', 'filled', 'flat'])('with %s variant', (variant: SelectProps['variant']) => {
         it('should render properly', () => {
-            const { container } = render(<SingleSelect options={options} variant={variant} value="Dummy1" />);
+            const { container } = render(<SingleSelect options={options} variant={variant} value="Dummy1" fullWidth />);
             expect(container).toMatchSnapshot();
         });
 
@@ -47,11 +47,13 @@ describe('SingleSelect component', () => {
             expect(getByText('Helper Text')).toBeInTheDocument();
         });
 
-        it('should render error text properly', () => {
-            const { getByText } = render(
+        it('should render error text properly', async () => {
+            const { container, getByText } = render(
                 <SingleSelect errorText="Something went wrong" options={options} variant={variant} value="Dummy1" />
             );
             fireEvent.click(getByText('Something went wrong'));
+            fireEvent.click(container.querySelector('svg'));
+            await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
             expect(getByText('Something went wrong')).toHaveStyle(`color: rgb(204, 0, 0)`);
         });
 
@@ -63,10 +65,10 @@ describe('SingleSelect component', () => {
         });
     });
 
-    test.each(['S', 'M'])('should render properly with %s size', (size: 'S' | 'M') => {
+    test.each(['S', 'M'])('should render properly with %s size', async (size: 'S' | 'M') => {
         const { container } = render(<SingleSelect options={options} variant="filled" value="Dummy1" size={size} />);
         fireEvent.click(container.querySelector('svg'));
-        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
         expect(screen.getByRole('list')).toHaveStyle(`
             top: ${size === 'S' ? '4rem' : '5.6rem'}
         `);
@@ -96,6 +98,13 @@ describe('SingleSelect component', () => {
         expect(container.querySelector('div')).toHaveStyle(`
             min-width: 30rem;
         `);
+    });
+
+    it('should take passed max width', () => {
+        const { container } = render(<SingleSelect options={options} value="dummy" maxWidth="30rem" />);
+        fireEvent.click(container.querySelector('svg'));
+        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        expect(container).toMatchSnapshot();
     });
 
     it('should show options on click on drop icon', async () => {

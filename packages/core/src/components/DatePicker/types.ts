@@ -1,7 +1,9 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
 
-export type DisplayFormat = 'dd/MM/yyyy' | 'MM/dd/yyyy';
-/* | 'dd/yyyy/MM' // TODO:- Add support in future development
+export type DisplayFormat =
+    | 'dd/MM/yyyy'
+    | 'MM/dd/yyyy'
+    | 'dd/yyyy/MM'
     | 'MM/yyyy/dd'
     | 'yyyy/dd/MM'
     | 'yyyy/MM/dd'
@@ -10,19 +12,17 @@ export type DisplayFormat = 'dd/MM/yyyy' | 'MM/dd/yyyy';
     | 'MM-dd-yyyy'
     | 'MM-yyyy-dd'
     | 'yyyy-dd-MM'
-    | 'yyyy-MM-dd' */
+    | 'yyyy-MM-dd';
 
-export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onChange' | 'size'> {
-    /** Id for the date component */
-    id?: string;
+export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onChange' | 'size' | 'prefix'> {
     /** Current Date */
     value: Date | string | null;
     /** Function to be called on changing the date */
     onChange: (date: Date) => void;
+    /** Input variants for DatePicker */
+    variant?: 'outlined' | 'filled';
     /** Input Size */
     size?: 'S' | 'M';
-    /** Placeholder for the input */
-    placeholder?: string;
     /** Date display format */
     displayFormat?: DisplayFormat;
     /** Disable date selection */
@@ -39,11 +39,15 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     minSelectableDate?: Date;
     /** Maximum selectable Date */
     maxSelectableDate?: Date;
-    /** Input variants for DatePicker */
-    variant?: 'outlined' | 'filled';
+    /** Helper Text */
+    helperText?: string;
+    /** Error Text */
+    errorText?: string;
+    /** Function will called with the input value on Blur event*/
+    validator?: (val: any) => string;
 }
 
 export interface StyleProps extends Pick<Props, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size'> {
-    errorText?: string;
-    active?: boolean;
+    isErrorPresent?: boolean;
+    isActive?: boolean;
 }

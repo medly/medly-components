@@ -5,8 +5,8 @@ import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
 const Options: React.FC<OptionsProps> & WithStyle = React.memo(
-    React.forwardRef(({ options, onOptionClick, hasError, ...restProps }, ref) => (
-        <Styled.Options {...restProps} ref={ref}>
+    React.forwardRef(({ options, onOptionClick, hasError, maxWidth, ...restProps }, ref) => (
+        <Styled.Options {...restProps} ref={ref} maxWidth={maxWidth}>
             {options.map(option => (
                 <Option
                     key={option.value}
@@ -15,6 +15,7 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(
                     onClick={onOptionClick}
                     hasError={hasError}
                     size={restProps.size}
+                    maxWidth={maxWidth}
                 />
             ))}
         </Styled.Options>

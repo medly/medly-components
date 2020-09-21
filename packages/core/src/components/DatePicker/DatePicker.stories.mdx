@@ -39,9 +39,25 @@ To open the calendar click on the icon inside the datepicker component and to cl
                     onChange={setDate}
                     fullWidth={boolean('Full Width', false)}
                     size={select('Size', sizes, 'M')}
-                    displayFormat={text('Display Format', 'MM/dd/yyyy')}
+                    displayFormat={select(
+                        'Display Format',
+                        [
+                            'dd/MM/yyyy',
+                            'MM/dd/yyyy',
+                            'dd/yyyy/MM',
+                            'MM/yyyy/dd',
+                            'yyyy/dd/MM',
+                            'yyyy/MM/dd',
+                            'dd-MM-yyyy',
+                            'dd-yyyy-MM',
+                            'MM-dd-yyyy',
+                            'MM-yyyy-dd',
+                            'yyyy-dd-MM',
+                            'yyyy-MM-dd'
+                        ],
+                        'MM/dd/yyyy'
+                    )}
                     disabled={boolean('Disabled', false)}
-                    placeholder={text('Placeholder', 'MM/DD/YYYY')}
                     label={text('Label', 'Date of Birth')}
                     variant={select('variant', variants, 'outlined')}
                     required={boolean('Required', false)}

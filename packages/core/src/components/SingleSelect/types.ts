@@ -35,6 +35,8 @@ export interface SelectProps extends InputProps, WithThemeProp {
     isSearchable?: boolean;
     /** Min width in px/rem/% (1rem = 10px)*/
     minWidth?: string;
+    /** Max width in px/rem/% (1rem = 10px)*/
+    maxWidth?: string;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
     /** Set it true to disable the select action */

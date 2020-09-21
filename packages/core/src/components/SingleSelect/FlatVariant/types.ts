@@ -9,8 +9,6 @@ export interface FlatVariantProps extends Omit<HTMLProps<HTMLButtonElement>, 'si
     errorText?: string;
     /** Helper Text */
     helperText?: string;
-    /** Takes full width of the parent component */
-    fullWidth?: boolean;
     /** Set it true to disable the select action */
     disabled?: boolean;
     /** Set it true to when options are visible */

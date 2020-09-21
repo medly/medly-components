@@ -14,6 +14,7 @@ export const Options = styled('ul')<StyledOptionsProps & WithThemeProp>`
     min-width: fit-content;
     list-style: none;
     box-sizing: border-box;
+    max-width: ${({ maxWidth }) => maxWidth};
     box-shadow: 0 0.2rem 0.8rem ${({ theme }) => theme.singleSelect.shadowColor};
     border-radius: ${({ theme, variant }) => theme.singleSelect.options.borderRadius[variant]};
 `;

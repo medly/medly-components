@@ -10,6 +10,12 @@ export interface TableTheme {
             selected: string;
         };
         selectedBorderColor: string;
+        textColor: {
+            odd: string;
+            even: string;
+            disabled: string;
+            selected: string;
+        };
     };
     titleRow: {
         bgColor: {

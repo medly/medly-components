@@ -1,1 +1,12 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4px;}</style></defs><g id="_8" data-name="8"><path class="cls-1" d="M9.68,12.32s25.86,40,40,40,40-40,40-40"/><line class="cls-1" x1="49.51" y1="52.89" x2="49.51" y2="92.32"/><circle cx="49.68" cy="21.93" r="3.65"/></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<g id="_8">
+	<path d="M90.8,10.6c-0.9-0.6-2.2-0.3-2.8,0.6c-0.1,0.1-6.5,10-14.6,19.8C59.6,47.8,52.6,50.3,49.7,50.3
+		c-10.7,0-31.3-28.2-38.3-39.1c-0.6-0.9-1.8-1.2-2.8-0.6c-0.9,0.6-1.2,1.8-0.6,2.8c0.1,0.1,6.6,10.2,14.8,20.2
+		c10.1,12.3,18.4,19.1,24.7,20.5v38.3c0,1.1,0.9,2,2,2s2-0.9,2-2V54.1c6.3-1.1,14.7-8,25-20.5c8.2-10,14.8-20.1,14.8-20.2
+		C92,12.5,91.7,11.2,90.8,10.6z"/>
+	<circle cx="49.7" cy="21.9" r="3.7"/>
+</g>
+</svg>

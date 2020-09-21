@@ -28,7 +28,7 @@ export const getCalendarDates = (month: number, year: number, calendarWeeks = 6)
         currMonthFirstDay = getFirstDayOfMonth(month, year);
 
     const daysFromPrevMonthToDisplay = currMonthFirstDay - 1,
-        daysFromNextMonthToDisplay = calendarWeeks * 7 - (daysFromPrevMonthToDisplay + currMonthDays);
+        daysFromNextMonthToDisplay = (calendarWeeks * 7 - (daysFromPrevMonthToDisplay + currMonthDays)) % 7;
 
     const { month: prevMonth, year: prevMonthYear } = getPreviousMonthAndYear(month, year),
         { month: nextMonth, year: nextMonthYear } = getNextMonthAndYear(month, year);
