@@ -1,4 +1,5 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
+import { Placement } from '../Popover/types';
 
 export type DisplayFormat =
     | 'dd/MM/yyyy'
@@ -45,9 +46,12 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     errorText?: string;
     /** Function will called with the input value on Blur event*/
     validator?: (val: any) => string;
+    /** Popover placement */
+    popoverPlacement?: Placement;
 }
 
 export interface StyleProps extends Pick<Props, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size'> {
     isErrorPresent?: boolean;
     isActive?: boolean;
+    placement: Placement;
 }

@@ -6,6 +6,20 @@ import { Props } from './types';
 
 export const variants: Props['variant'][] = ['outlined', 'filled'];
 export const sizes: Props['size'][] = ['S', 'M'];
+export const displayFormats: Props['displayFormat'][] = [
+    'dd/MM/yyyy',
+    'MM/dd/yyyy',
+    'dd/yyyy/MM',
+    'MM/yyyy/dd',
+    'yyyy/dd/MM',
+    'yyyy/MM/dd',
+    'dd-MM-yyyy',
+    'dd-yyyy-MM',
+    'MM-dd-yyyy',
+    'MM-yyyy-dd',
+    'yyyy-dd-MM',
+    'yyyy-MM-dd'
+];
 
 export const ThemeInterface: React.FC<DatePickerTheme> = () => null;
 ThemeInterface.defaultProps = {
