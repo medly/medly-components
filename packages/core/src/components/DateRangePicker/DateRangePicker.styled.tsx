@@ -2,6 +2,8 @@ import { centerAligned, styled } from '@medly-components/utils';
 import TextField from '../TextField';
 import * as TextFieldStyled from '../TextField/Styled';
 
+export const MainWrapperComponent = styled.div``;
+
 export const Wrapper = styled.div`
     cursor: pointer;
     border: 1px solid #98a7b7;
@@ -43,4 +45,9 @@ export const Input = styled(TextFieldStyled.Input)`
 
 export const Label = styled(TextFieldStyled.Label)`
     padding-left: 16px;
+`;
+
+export const CalendarWrapper = styled.div`
+    display: flex;
+    ${centerAligned()}
 `;
