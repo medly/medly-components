@@ -77,7 +77,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
         }, wrapperRef);
 
         useEffect(() => {
-            enterPress && !areOptionsVisible && onSearch && onSearch(inputRef.current.value);
+            enterPress && isFocused.current && !areOptionsVisible && onSearch && onSearch(inputRef.current.value);
         }, [enterPress, areOptionsVisible]);
 
         return (
