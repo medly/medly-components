@@ -1,6 +1,7 @@
 import { css, getFontStyle, styled } from '@medly-components/utils';
 import { StyledProps } from '../types';
 import { Label } from './Label.styled';
+import { MaskPlaceholder } from './MaskPlaceholder.styled';
 
 const styleWithLabel = ({ variant }: StyledProps) => {
     return css`
@@ -21,7 +22,10 @@ export const Input = styled('input')<StyledProps>`
     text-overflow: ellipsis;
 
     ${({ isLabelPresent, size }) => isLabelPresent && size !== 'S' && styleWithLabel};
-    ${({ theme, size }) => getFontStyle({ theme, fontVariant: theme.textField.textVariant[size] })}
+    &,
+    & ~ ${MaskPlaceholder} {
+        ${({ theme, size }) => getFontStyle({ theme, fontVariant: theme.textField.textVariant[size] })}
+    }
 
     &:focus {
         outline: none;
@@ -30,13 +34,23 @@ export const Input = styled('input')<StyledProps>`
         }
     }
 
+    &:disabled {
+        & ~ ${Label},& ~ ${MaskPlaceholder} {
+            cursor: not-allowed;
+        }
+    }
+
     ::placeholder {
         opacity: 0;
         transition: all 100ms ease-out;
     }
 
-    &:not(:placeholder-shown) + ${Label}, &:focus + ${Label} {
+    &:not(:placeholder-shown) ~ ${Label}, &:focus ~ ${Label} {
         opacity: ${({ size }) => size === 'S' && '0'};
         transform: ${({ size }) => size === 'M' && 'translateY(-87%) scale(0.75)'};
+    }
+
+    &:not(:placeholder-shown) ~ ${MaskPlaceholder} {
+        opacity: 1;
     }
 `;

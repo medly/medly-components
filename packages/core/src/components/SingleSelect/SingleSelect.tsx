@@ -2,12 +2,12 @@ import { ChevronDownIcon } from '@medly-components/icons';
 import { useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import TextField from '../TextField';
+import FlatVariant from './FlatVariant';
 import { filterOptions, getDefaultSelectedOption, getUpdatedOptions } from './helpers';
 import Options from './Options';
 import * as Styled from './SingleSelect.styled';
 import { Option, SelectProps } from './types';
 import { useKeyboardNavigation } from './useKeyboardNavigation';
-import FlatVariant from './FlatVariant';
 
 export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
@@ -18,6 +18,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 options: defaultOptions,
                 variant,
                 minWidth,
+                maxWidth,
                 fullWidth,
                 disabled,
                 onFocus,
@@ -134,7 +135,6 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
 
         const commonProps = {
             id: `${selectId}`,
-            fullWidth: true,
             ref: inputRef,
             value: inputValue,
             label: inputProps.label,
@@ -150,7 +150,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
         return (
             <Styled.Wrapper
                 id={`${selectId}-wrapper`}
-                {...{ variant, disabled, minWidth, fullWidth }}
+                {...{ variant, disabled, minWidth, maxWidth, fullWidth }}
                 ref={wrapperRef}
                 className={className}
                 isSearchable={isSearchable}
@@ -162,6 +162,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                     <FlatVariant {...commonProps} />
                 ) : (
                     <TextField
+                        fullWidth
                         key={selectedOption.value}
                         variant={variant}
                         autoComplete="off"
@@ -169,6 +170,8 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                         suffix={ChevronDownIcon}
                         {...commonProps}
                         {...inputProps}
+                        minWidth={minWidth}
+                        maxWidth={maxWidth}
                     />
                 )}
                 {!disabled && areOptionsVisible && (
@@ -180,6 +183,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                         options={options}
                         hasError={!!props.errorText}
                         onOptionClick={handleOptionClick}
+                        maxWidth={maxWidth}
                     />
                 )}
             </Styled.Wrapper>

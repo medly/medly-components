@@ -6,7 +6,8 @@ import { SelectWrapperProps } from './types';
 export const Wrapper = styled('div')<SelectWrapperProps>`
     position: relative;
     display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
-    min-width: ${({ minWidth }) => minWidth || 'max-content'};
+    min-width: ${({ minWidth }) => minWidth};
+    max-width: ${({ maxWidth }) => maxWidth};
     width: ${({ fullWidth }) => (fullWidth ? '100%' : 'max-content')};
     margin: ${({ theme, fullWidth }) =>
         fullWidth ? `${theme.spacing.S2} 0` : `${theme.spacing.S2} ${theme.spacing.S2} ${theme.spacing.S2} 0`};

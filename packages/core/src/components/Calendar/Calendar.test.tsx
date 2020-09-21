@@ -5,9 +5,8 @@ import { CALENDAR_MONTHS } from './constants';
 import { getMonthAndYearFromDate } from './helper';
 
 const getDateValues = (container: HTMLElement) => {
-    const inputEl = container.getElementsByTagName('input');
-    const month = inputEl[0].value;
-    const year = inputEl[1].value;
+    const month = container.querySelector('#test-calendar-month-selector-button span').innerHTML;
+    const year = container.querySelector('#test-calendar-year-selector-button span').innerHTML;
     return {
         month,
         year
@@ -24,6 +23,13 @@ describe('Calendar Component', () => {
         expect(container).toMatchSnapshot();
     });
 
+    it('should render properly with with error state', () => {
+        const date = new Date(2020, 0, 1),
+            { container } = render(<Calendar id="test-calendar" date={date} onChange={jest.fn()} isErrorPresent />);
+
+        expect(container).toMatchSnapshot();
+    });
+
     it('should render current month if date is null', () => {
         const { container } = render(<Calendar id="test-calendar" date={null} onChange={jest.fn()} />),
             { month, year } = getMonthAndYearFromDate(new Date());
@@ -32,23 +38,39 @@ describe('Calendar Component', () => {
         expect(yearInDOM).toEqual(year.toString());
     });
 
+    it('should render min selectable date if current month is greater than max date and date is null', async () => {
+        const { container } = render(
+                <Calendar
+                    id="test-calendar"
+                    date={null}
+                    onChange={jest.fn()}
+                    maxSelectableDate={new Date(1902, 11, 31)}
+                    minSelectableDate={new Date(1901, 0, 1)}
+                />
+            ),
+            { month, year } = getMonthAndYearFromDate(new Date(1901, 0, 1));
+        const { month: monthInDOM, year: yearInDOM } = getDateValues(container);
+        expect(monthInDOM).toEqual(`${CALENDAR_MONTHS[month]}`);
+        expect(yearInDOM).toEqual(year.toString());
+    });
+
     it('should call onChange with expected date', () => {
         const mockOnChange = jest.fn(),
-            dateToSelect = new Date(2020, 1, 1),
+            dateToSelect = new Date(2021, 1, 1),
             { container, getByText, getByTitle } = render(
                 <Calendar
                     id="test-calendar"
                     date={null}
                     onChange={mockOnChange}
                     minSelectableDate={new Date(2020, 0, 1)}
-                    maxSelectableDate={new Date(2020, 2, 1)}
+                    maxSelectableDate={new Date(2022, 2, 1)}
                 />
             );
 
-        fireEvent.click(container.querySelector('#test-calendar-month-selector-input'));
+        fireEvent.click(container.querySelector('#test-calendar-month-selector-button'));
         fireEvent.click(getByText('Feb'));
-        fireEvent.click(container.querySelector('#test-calendar-year-selector-input'));
-        fireEvent.click(getByText('2020'));
+        fireEvent.click(container.querySelector('#test-calendar-year-selector-button'));
+        fireEvent.click(getByText('2021'));
         fireEvent.click(getByTitle(dateToSelect.toDateString()));
         expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
     });
@@ -133,8 +155,7 @@ describe('Calendar Component', () => {
                     maxSelectableDate={new Date(2021, 3, 20)}
                 />
             );
-
-        fireEvent.click(container.querySelector('#test-calendar-year-selector-input'));
+        fireEvent.click(container.querySelector('#test-calendar-year-selector-button'));
         fireEvent.click(getByText('2021'));
         const { month, year } = getDateValues(container);
         expect(month).toEqual('Jan');
@@ -153,7 +174,7 @@ describe('Calendar Component', () => {
                 />
             );
 
-        fireEvent.click(container.querySelector('#test-calendar-year-selector-input'));
+        fireEvent.click(container.querySelector('#test-calendar-year-selector-button'));
         fireEvent.click(getByText('2021'));
         const { month, year } = getDateValues(container);
         expect(month).toEqual('Dec');

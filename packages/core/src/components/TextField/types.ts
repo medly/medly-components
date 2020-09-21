@@ -8,6 +8,8 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'siz
     size?: 'S' | 'M';
     /** Function will called with the input value on blur and invalid event */
     validator?: (val: any, eventType?: string) => string;
+    /** Mask format eg. DD / MM / YYYY */
+    mask?: string;
     /** Set it true if you do not want to validate on blur event*/
     doNotValidateOnBlur?: boolean;
     /** Takes full width of the parent component */
@@ -28,6 +30,8 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'siz
     errorText?: string;
     /** Min width in px/rem/% (1rem = 10px)*/
     minWidth?: string;
+    /** Max width in px/rem/% (1rem = 10px)*/
+    maxWidth?: string;
 }
 
 export interface StyledProps extends Props, TextFieldTheme {

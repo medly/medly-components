@@ -1,7 +1,19 @@
 import { SvgIcon } from '@medly-components/icons';
-import { styled } from '@medly-components/utils';
+import { css, styled } from '@medly-components/utils';
 import Text from '../../../Text';
 import { OptionStyledProps } from './types';
+
+const maxWidthStyle = css<OptionStyledProps>`
+        max-width: ${({ maxWidth }) => maxWidth};
+        ${Text.Style} {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    `,
+    minWidthStyle = css<OptionStyledProps>`
+        min-width: fit-content;
+    `;
 
 export const OptionStyled = styled('li').attrs(({ theme: { singleSelect } }) => ({ ...singleSelect.option }))<OptionStyledProps>`
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
@@ -9,7 +21,6 @@ export const OptionStyled = styled('li').attrs(({ theme: { singleSelect } }) => 
     border-radius: 0.4rem;
     box-sizing: border-box;
     min-height: ${({ variant, minHeight }) => minHeight[variant]};
-    min-width: fit-content;
     display: flex;
     align-items: center;
     position: relative;
@@ -39,4 +50,6 @@ export const OptionStyled = styled('li').attrs(({ theme: { singleSelect } }) => 
                 textColor[disabled ? 'disabled' : selected ? (hasError ? 'error' : 'selected') : 'default']};
         }
     }
+
+    ${({ maxWidth }) => (maxWidth ? maxWidthStyle : minWidthStyle)}
 `;

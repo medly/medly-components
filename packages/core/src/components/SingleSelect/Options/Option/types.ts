@@ -6,6 +6,7 @@ export interface OptionStyledProps extends HTMLProps<HTMLLIElement>, WithThemePr
     variant: 'outlined' | 'filled' | 'flat';
     hasError?: boolean;
     hovered?: boolean;
+    maxWidth?: string;
 }
 
 export interface OptionProps extends Option, Omit<HTMLProps<HTMLLIElement>, 'onClick' | 'value' | 'label' | 'size'>, WithThemeProp {
@@ -13,4 +14,5 @@ export interface OptionProps extends Option, Omit<HTMLProps<HTMLLIElement>, 'onC
     variant: 'outlined' | 'filled' | 'flat';
     onClick: (op: Option) => void;
     hasError?: boolean;
+    maxWidth?: string;
 }

@@ -6,6 +6,7 @@ export const Label = styled('label')<{ required: boolean; variant: 'outlined' | 
     cursor: text;
     user-select: none;
     position: absolute;
+    pointer-events: none;
     transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
     ${({ theme, size }) => getFontStyle({ theme, fontVariant: theme.textField.textVariant[size] })}
     transform-origin: 0 0;

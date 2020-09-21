@@ -1,5 +1,5 @@
 import { CheckIcon } from '@medly-components/icons';
-import { fireEvent, render } from '@test-utils';
+import { fireEvent, render, waitFor } from '@test-utils';
 import React from 'react';
 import { TextField } from './TextField';
 import { Props } from './types';
@@ -11,7 +11,7 @@ describe('TextField', () => {
     });
 
     test.each(['S', 'M'])('should render properly with %s size', (size: 'S' | 'M') => {
-        const { container } = render(<TextField label="Name" size={size} helperText="helper text" />);
+        const { container } = render(<TextField label="Name" size={size} helperText="helper text" prefix={CheckIcon} suffix={CheckIcon} />);
         expect(container).toMatchSnapshot();
     });
 
@@ -29,6 +29,13 @@ describe('TextField', () => {
         const { container } = render(<TextField label="Name" minWidth="30rem" />);
         expect(container.querySelector('div')).toHaveStyle(`
             min-width: 30rem;
+        `);
+    });
+
+    it('should take passed max width', () => {
+        const { container } = render(<TextField label="Name" maxWidth="30rem" />);
+        expect(container.querySelector('div')).toHaveStyle(`
+            max-width: 30rem;
         `);
     });
 
@@ -64,6 +71,40 @@ describe('TextField', () => {
     it('should render asterisk if we pass required prop as true', () => {
         const { container } = render(<TextField label="Name" required />);
         expect(container.querySelector('label')).toMatchSnapshot();
+    });
+
+    it('should call onChange prop on changing the value', () => {
+        const mockOnChange = jest.fn(),
+            { container } = render(<TextField value="11" label="Name" required onChange={mockOnChange} />);
+        fireEvent.change(container.querySelector('input'), { target: { value: '11 / 11 / 1111' } });
+        expect(mockOnChange).toHaveBeenCalled();
+    });
+
+    describe('masking', () => {
+        it('should render mask if provided with outlined variant', () => {
+            const { getByText } = render(<TextField label="Date" minWidth="30rem" id="dummy" variant="outlined" mask="DD / MM / YYYY" />);
+            expect(getByText('DD / MM / YYYY')).toBeInTheDocument();
+        });
+
+        it('should render mask if provided with filled variant', () => {
+            const { getByText } = render(<TextField label="Date" minWidth="30rem" id="dummy" variant="filled" mask="DD / MM / YYYY" />);
+            expect(getByText('DD / MM / YYYY')).toBeInTheDocument();
+        });
+
+        it('should on change on changing the value', async () => {
+            const mockOnChange = jest.fn();
+            const { container } = render(<TextField minWidth="30rem" id="dummy" mask="DD / MM / YYYY" onChange={mockOnChange} />);
+            fireEvent.change(container.querySelector('input'), { target: { value: '11 / 11 / 1111', selectionStart: 14 } });
+            expect(mockOnChange).toHaveBeenCalled();
+        });
+
+        it('should update mask label if mask and input value are same', async () => {
+            const mockOnChange = jest.fn();
+            const { getByText } = render(
+                <TextField minWidth="30rem" id="dummy" value="11 / 11 / 1111" mask="DD / MM / YYYY" onChange={mockOnChange} />
+            );
+            await waitFor(() => expect(getByText('11 / 11 / 1111')).toBeInTheDocument());
+        });
     });
 
     describe('error Validation', () => {
