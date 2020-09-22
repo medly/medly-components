@@ -62,6 +62,7 @@ export const Fields: React.FC<Props> = React.memo(props => {
                                     disabled={disabled}
                                     handlers={handlers}
                                     fields={(componentProps as NestedProps).fields}
+                                    errorMessages={errorMessages}
                                     addErrorMessage={addErrorMessage}
                                     parentName={name}
                                 />
