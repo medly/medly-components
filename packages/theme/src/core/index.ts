@@ -12,6 +12,7 @@ import font from './font';
 import input from './input';
 import label from './label';
 import link from './link';
+import mobileTabs from './mobileTabs';
 import modal from './modal';
 import multiSelect from './multiSelect';
 import radio from './radio';
@@ -41,6 +42,7 @@ export const coreDefaultTheme = {
     input,
     label,
     link,
+    mobileTabs,
     modal,
     multiSelect,
     radio,

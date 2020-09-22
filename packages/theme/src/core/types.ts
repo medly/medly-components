@@ -12,6 +12,7 @@ export * from './font/types';
 export * from './input/types';
 export * from './label/types';
 export * from './link/types';
+export * from './mobileTabs/types';
 export * from './modal/types';
 export * from './multiSelect/types';
 export * from './radio/types';

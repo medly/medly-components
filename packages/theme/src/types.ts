@@ -18,6 +18,7 @@ export interface CoreTheme {
     input?: CoreThemes.InputTheme;
     label?: CoreThemes.LabelTheme;
     link?: CoreThemes.LinkTheme;
+    mobileTabs?: CoreThemes.MobileTabsTheme;
     modal?: CoreThemes.ModalTheme;
     multiSelect?: CoreThemes.MultiSelectTheme;
     radio?: CoreThemes.RadioTheme;
