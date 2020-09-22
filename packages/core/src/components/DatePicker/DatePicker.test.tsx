@@ -1,5 +1,6 @@
 import { cleanup, fireEvent, render, waitFor } from '@test-utils';
 import React from 'react';
+import { placements } from '../Popover/Popover.stories';
 import { DatePicker } from './DatePicker';
 import { Props } from './types';
 
@@ -37,6 +38,23 @@ describe('DatePicker component', () => {
             inputEl = container.querySelector('input') as HTMLInputElement;
         expect(inputEl.value).toEqual('01 / 01 / 2020');
         expect(container).toMatchSnapshot();
+    });
+
+    describe('popover placement', () => {
+        test.each(placements)('should render properly with %p position', (popoverPlacement: Props['popoverPlacement']) => {
+            const { container } = render(
+                <DatePicker
+                    id="dob"
+                    value={new Date(2020, 0, 1)}
+                    displayFormat="MM/dd/yyyy"
+                    onChange={jest.fn()}
+                    popoverPlacement={popoverPlacement}
+                />
+            );
+            fireEvent.click(container.querySelector('svg'));
+            expect(container.querySelector('#dob-calendar')).toBeVisible();
+            expect(container.querySelector('#dob-calendar')).toMatchSnapshot();
+        });
     });
 
     describe('calendar', () => {

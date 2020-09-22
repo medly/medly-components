@@ -21,6 +21,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 disabled,
                 errorText,
                 className,
+                popoverPlacement,
                 minSelectableDate,
                 maxSelectableDate,
                 ...restProps
@@ -113,6 +114,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 minWidth={minWidth}
                 size={size}
                 className={className}
+                placement={popoverPlacement}
             >
                 <TextField
                     errorText={errorText || builtInErrorMessage}
@@ -151,7 +153,8 @@ DatePicker.defaultProps = {
     required: false,
     fullWidth: false,
     minSelectableDate: new Date(1901, 0, 1),
-    maxSelectableDate: new Date(2100, 11, 1)
+    maxSelectableDate: new Date(2100, 11, 1),
+    popoverPlacement: 'bottom-start'
 };
 DatePicker.displayName = 'DatePicker';
 DatePicker.Style = Popover.Style;

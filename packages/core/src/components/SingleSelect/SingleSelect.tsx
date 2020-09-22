@@ -19,6 +19,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 variant,
                 minWidth,
                 maxWidth,
+                maxHeight,
                 fullWidth,
                 disabled,
                 onFocus,
@@ -184,6 +185,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                         hasError={!!props.errorText}
                         onOptionClick={handleOptionClick}
                         maxWidth={maxWidth}
+                        maxHeight={maxHeight}
                     />
                 )}
             </Styled.Wrapper>

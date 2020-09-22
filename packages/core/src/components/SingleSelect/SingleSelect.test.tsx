@@ -93,6 +93,16 @@ describe('SingleSelect component', () => {
         `);
     });
 
+    it('should take passed max height', () => {
+        const { container } = render(<SingleSelect options={options} value="dummy" maxHeight="30rem" />);
+        fireEvent.click(container.querySelector('svg'));
+        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        expect(screen.getByRole('list')).toHaveStyle(`
+            overflow: auto;
+            max-height: 30rem;
+        `);
+    });
+
     it('should take passed min width', () => {
         const { container } = render(<SingleSelect options={options} value="dummy" minWidth="30rem" />);
         expect(container.querySelector('div')).toHaveStyle(`

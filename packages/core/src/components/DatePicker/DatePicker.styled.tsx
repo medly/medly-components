@@ -1,11 +1,13 @@
-import { css, InjectClassName, styled, WithThemeProp } from '@medly-components/utils';
+/* stylelint-disable  property-no-unknown */
+import { css, InjectClassName, Omit, styled, WithThemeProp } from '@medly-components/utils';
 import Calendar from '../Calendar';
+import { getPosition } from '../Popover/Popup/styled/Popup.styled';
 import { InnerWrapper, OuterWrapper } from '../TextField/Styled';
 import { StyleProps } from './types';
 
 type State = 'default' | 'active' | 'error' | 'disabled';
 
-const getStyleForIcon = ({ theme, variant, disabled }: StyleProps & WithThemeProp, state: State) => {
+const getStyleForIcon = ({ theme, variant, disabled }: Omit<StyleProps, 'placement'> & WithThemeProp, state: State) => {
     const {
         icon: { [state]: iconStyle }
     } = theme.datePicker[variant];
@@ -22,7 +24,7 @@ const getStyleForIcon = ({ theme, variant, disabled }: StyleProps & WithThemePro
     `;
 };
 
-export const DateIcon = styled(InjectClassName)<StyleProps>`
+export const DateIcon = styled(InjectClassName)<Omit<StyleProps, 'placement'>>`
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     border-radius: ${({ theme }) => theme.datePicker.borderRadius};
     padding: ${({ size }) => (size === 'S' ? '0.6rem' : '0.8rem')};
@@ -44,6 +46,8 @@ export const Wrapper = styled(OuterWrapper)<StyleProps>`
     ${Calendar.Style} {
         z-index: 1000;
         position: absolute;
-        top: ${({ size }) => (size === 'S' ? '4rem' : '5.6rem')};
+        ${getPosition}
+        top: ${({ size, placement }) =>
+            (placement === 'bottom' || placement === 'bottom-start' || placement === 'bottom-end') && (size === 'S' ? '4rem' : '5.6rem')};
     }
 `;
