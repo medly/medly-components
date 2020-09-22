@@ -56,3 +56,8 @@ export interface StyledProps extends Omit<HTMLProps<HTMLDivElement>, 'size'> {
     fullWidth?: boolean;
     disabled?: boolean;
 }
+
+export interface StyleProps extends Pick<Props, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size'> {
+    isErrorPresent?: boolean;
+    isActive?: boolean;
+}
