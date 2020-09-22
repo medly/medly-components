@@ -1045,6 +1045,8 @@ exports[`Form should render properly with initial state 1`] = `
 .c41 .sc-fzqAbL {
   z-index: 1000;
   position: absolute;
+  top: calc(100% + 0px);
+  left: 0%;
   top: 5.6rem;
 }
 
@@ -3354,6 +3356,8 @@ exports[`Form should render properly without initial state 1`] = `
 .c41 .sc-fzqAbL {
   z-index: 1000;
   position: absolute;
+  top: calc(100% + 0px);
+  left: 0%;
   top: 5.6rem;
 }
 
