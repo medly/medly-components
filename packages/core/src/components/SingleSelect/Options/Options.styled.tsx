@@ -1,5 +1,10 @@
-import { styled, WithThemeProp } from '@medly-components/utils';
+import { css, styled, WithThemeProp } from '@medly-components/utils';
 import { StyledOptionsProps } from './types';
+
+const withScroll = css<StyledOptionsProps & WithThemeProp>`
+    overflow: auto;
+    max-height: ${({ maxHeight }) => maxHeight};
+`;
 
 export const Options = styled('ul')<StyledOptionsProps & WithThemeProp>`
     z-index: 1000;
@@ -17,4 +22,5 @@ export const Options = styled('ul')<StyledOptionsProps & WithThemeProp>`
     max-width: ${({ maxWidth }) => maxWidth};
     box-shadow: 0 0.2rem 0.8rem ${({ theme }) => theme.singleSelect.shadowColor};
     border-radius: ${({ theme, variant }) => theme.singleSelect.options.borderRadius[variant]};
+    ${({ maxHeight }) => maxHeight && withScroll}
 `;
