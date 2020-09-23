@@ -39,6 +39,7 @@ export const TabList: React.FC<Props> & WithStyle = React.memo(props => {
     return (
         <Styled.TabListWrapper>
             <Styled.TabList onFocus={changeFocusState} onBlur={changeFocusState} {...restProps}>
+                <Styled.Slider active={active} id="slider id" />
                 {React.Children.toArray(props.children).reduce((acc: any[], child: any) => {
                     const { id, label, hide } = child.props;
                     !hide && acc.push(<Tab key={id} active={id === active} label={label} onClick={handleChange(id)} {...child.props} />);

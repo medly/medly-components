@@ -10,4 +10,16 @@ export const TabList = styled.div`
     border-radius: 2rem;
 `;
 
+export const Slider = styled.div`
+    background-color: ${({ theme }) => theme.mobileTabs.bgColor.active};
+    width: 16.5rem;
+    height: 3.7rem;
+    position: absolute;
+    border-radius: 2rem;
+    margin: 0 0.25rem;
+    box-shadow: 0 0.1rem 0.4rem rgba(96, 120, 144, 0.1);
+    transition: transform 0.3s ease-out;
+    transform: translateX(50px);
+`;
+
 export const TabListWrapper = styled.div``;

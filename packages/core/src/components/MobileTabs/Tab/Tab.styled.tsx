@@ -15,7 +15,7 @@ export const DisabledLabel = styled(Text)`
 `;
 
 const getStyle = ({ styleType, labelColor, bgColor }: StyledProps & { styleType: 'active' | 'default' | 'hovered' | 'disabled' }) => css`
-    background-color: ${bgColor[styleType]};
+    /* background-color: ${bgColor[styleType]}; */
     ${Label} {
         color: ${labelColor[styleType]};
         line-height: ${styleType === 'disabled' && '1.6rem'};
@@ -24,8 +24,6 @@ const getStyle = ({ styleType, labelColor, bgColor }: StyledProps & { styleType:
 
 const activeStyle = ({ bgColor }: StyledProps) => css<StyledProps>`
     ${props => getStyle({ ...props, styleType: 'active' })}
-    background-color: ${bgColor.active};
-    box-shadow: 0 0.1rem 0.4rem rgba(96, 120, 144, 0.1);
 `;
 
 const nonActiveStyle = ({ bgColor }: StyledProps) => css<StyledProps>`
@@ -57,6 +55,7 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.mobi
     border-radius: 2rem;
     text-align: center;
     flex: ${({ fraction }) => fraction};
+    background: transparent;
     transition: all 100ms ease-out;
     * {
         transition: all 100ms ease-out;
