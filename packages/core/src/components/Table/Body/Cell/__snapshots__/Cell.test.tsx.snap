@@ -169,6 +169,9 @@ exports[`Cell should render checkbox properly 1`] = `
 
 .c5 {
   margin: 0.3rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;

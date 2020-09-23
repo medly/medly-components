@@ -115,6 +115,9 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
 
 .c3 {
   margin: 0.3rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
@@ -296,6 +299,9 @@ exports[`Checkbox component should render correctly with checked false and activ
 
 .c3 {
   margin: 0.3rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
@@ -487,6 +493,9 @@ exports[`Checkbox component should render correctly with checked false and disab
 
 .c3 {
   margin: 0.3rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
@@ -676,6 +685,9 @@ exports[`Checkbox component should render correctly with checked false and hasEr
 
 .c3 {
   margin: 0.3rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
@@ -873,6 +885,9 @@ exports[`Checkbox component should render correctly with checked false and indet
 
 .c3 {
   margin: 0.3rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
@@ -1066,6 +1081,9 @@ exports[`Checkbox component should render correctly with checked true and active
 
 .c3 {
   margin: 0.3rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
@@ -1259,6 +1277,9 @@ exports[`Checkbox component should render correctly with checked true and disabl
 
 .c3 {
   margin: 0.3rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
@@ -1449,6 +1470,9 @@ exports[`Checkbox component should render correctly with checked true and hasErr
 
 .c3 {
   margin: 0.3rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
@@ -1648,6 +1672,9 @@ exports[`Checkbox component should render correctly with checked true and indete
 
 .c3 {
   margin: 0.3rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
@@ -1852,6 +1879,9 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
 
 .c3 {
   margin: 0.3rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
@@ -2047,6 +2077,9 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
 
 .c3 {
   margin: 0.3rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
@@ -2242,6 +2275,9 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
 
 .c3 {
   margin: 0.3rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
