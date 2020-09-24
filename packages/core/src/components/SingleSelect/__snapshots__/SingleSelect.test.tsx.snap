@@ -2913,6 +2913,7 @@ exports[`SingleSelect component with flat variant should render disabled state p
         class="c2"
         disabled=""
         id="medly-singleSelect-button"
+        type="button"
       >
         
         <span
@@ -3303,6 +3304,7 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
       <button
         class="c2"
         id="medly-singleSelect-button"
+        type="button"
       >
         
         <span
@@ -3554,6 +3556,7 @@ exports[`SingleSelect component with flat variant should render with label prope
       <button
         class="c2"
         id="label-button"
+        type="button"
       >
         <label
           class="c3 c4"

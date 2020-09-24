@@ -10,7 +10,7 @@ export const Aside = styled(SidePanel)<SideNavStyledProps>`
     transition: width 200ms ease-out;
     width: ${({ isExpanded, theme }) => (isExpanded ? theme.sideNav.openSize : theme.sideNav.closeSize)};
     box-shadow: ${({ isHovered, isExpanded, hideShadow }) =>
-        isHovered && !hideShadow && !isExpanded ? 'none' : `0.2rem 0 8px rgba(96, 120, 144, 0.2) `};
+        !isExpanded && isHovered ? 'none' : !hideShadow && `0.2rem 0 8px rgba(96, 120, 144, 0.2) `};
 `;
 
 export const Nav = styled('nav')<SideNavStyledProps>`

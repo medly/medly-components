@@ -500,6 +500,7 @@ exports[`Calendar Component should render given date 1`] = `
             <button
               class="c5"
               id="test-calendar-month-selector-button"
+              type="button"
             >
               
               <span
@@ -534,6 +535,7 @@ exports[`Calendar Component should render given date 1`] = `
             <button
               class="c5"
               id="test-calendar-year-selector-button"
+              type="button"
             >
               
               <span
@@ -1523,6 +1525,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
             <button
               class="c5"
               id="test-calendar-month-selector-button"
+              type="button"
             >
               
               <span
@@ -1558,6 +1561,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
             <button
               class="c5"
               id="test-calendar-year-selector-button"
+              type="button"
             >
               
               <span

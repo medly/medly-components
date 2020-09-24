@@ -775,7 +775,6 @@ exports[`SideNav should render properly without shadow 1`] = `
   -webkit-transition: width 200ms ease-out;
   transition: width 200ms ease-out;
   width: 7.2rem;
-  box-shadow: 0.2rem 0 8px rgba(96,120,144,0.2);
 }
 
 .c1 {

@@ -510,6 +510,7 @@ exports[`DatePicker component popover placement should render properly with "bot
           <button
             class="c6"
             id="dob-calendar-month-selector-button"
+            type="button"
           >
             
             <span
@@ -544,6 +545,7 @@ exports[`DatePicker component popover placement should render properly with "bot
           <button
             class="c6"
             id="dob-calendar-year-selector-button"
+            type="button"
           >
             
             <span
@@ -1539,6 +1541,7 @@ exports[`DatePicker component popover placement should render properly with "bot
           <button
             class="c6"
             id="dob-calendar-month-selector-button"
+            type="button"
           >
             
             <span
@@ -1573,6 +1576,7 @@ exports[`DatePicker component popover placement should render properly with "bot
           <button
             class="c6"
             id="dob-calendar-year-selector-button"
+            type="button"
           >
             
             <span
@@ -2568,6 +2572,7 @@ exports[`DatePicker component popover placement should render properly with "bot
           <button
             class="c6"
             id="dob-calendar-month-selector-button"
+            type="button"
           >
             
             <span
@@ -2602,6 +2607,7 @@ exports[`DatePicker component popover placement should render properly with "bot
           <button
             class="c6"
             id="dob-calendar-year-selector-button"
+            type="button"
           >
             
             <span
@@ -3599,6 +3605,7 @@ exports[`DatePicker component popover placement should render properly with "lef
           <button
             class="c6"
             id="dob-calendar-month-selector-button"
+            type="button"
           >
             
             <span
@@ -3633,6 +3640,7 @@ exports[`DatePicker component popover placement should render properly with "lef
           <button
             class="c6"
             id="dob-calendar-year-selector-button"
+            type="button"
           >
             
             <span
@@ -4627,6 +4635,7 @@ exports[`DatePicker component popover placement should render properly with "lef
           <button
             class="c6"
             id="dob-calendar-month-selector-button"
+            type="button"
           >
             
             <span
@@ -4661,6 +4670,7 @@ exports[`DatePicker component popover placement should render properly with "lef
           <button
             class="c6"
             id="dob-calendar-year-selector-button"
+            type="button"
           >
             
             <span
@@ -5655,6 +5665,7 @@ exports[`DatePicker component popover placement should render properly with "lef
           <button
             class="c6"
             id="dob-calendar-month-selector-button"
+            type="button"
           >
             
             <span
@@ -5689,6 +5700,7 @@ exports[`DatePicker component popover placement should render properly with "lef
           <button
             class="c6"
             id="dob-calendar-year-selector-button"
+            type="button"
           >
             
             <span
@@ -6686,6 +6698,7 @@ exports[`DatePicker component popover placement should render properly with "rig
           <button
             class="c6"
             id="dob-calendar-month-selector-button"
+            type="button"
           >
             
             <span
@@ -6720,6 +6733,7 @@ exports[`DatePicker component popover placement should render properly with "rig
           <button
             class="c6"
             id="dob-calendar-year-selector-button"
+            type="button"
           >
             
             <span
@@ -7714,6 +7728,7 @@ exports[`DatePicker component popover placement should render properly with "rig
           <button
             class="c6"
             id="dob-calendar-month-selector-button"
+            type="button"
           >
             
             <span
@@ -7748,6 +7763,7 @@ exports[`DatePicker component popover placement should render properly with "rig
           <button
             class="c6"
             id="dob-calendar-year-selector-button"
+            type="button"
           >
             
             <span
@@ -8742,6 +8758,7 @@ exports[`DatePicker component popover placement should render properly with "rig
           <button
             class="c6"
             id="dob-calendar-month-selector-button"
+            type="button"
           >
             
             <span
@@ -8776,6 +8793,7 @@ exports[`DatePicker component popover placement should render properly with "rig
           <button
             class="c6"
             id="dob-calendar-year-selector-button"
+            type="button"
           >
             
             <span
@@ -9773,6 +9791,7 @@ exports[`DatePicker component popover placement should render properly with "top
           <button
             class="c6"
             id="dob-calendar-month-selector-button"
+            type="button"
           >
             
             <span
@@ -9807,6 +9826,7 @@ exports[`DatePicker component popover placement should render properly with "top
           <button
             class="c6"
             id="dob-calendar-year-selector-button"
+            type="button"
           >
             
             <span
@@ -10801,6 +10821,7 @@ exports[`DatePicker component popover placement should render properly with "top
           <button
             class="c6"
             id="dob-calendar-month-selector-button"
+            type="button"
           >
             
             <span
@@ -10835,6 +10856,7 @@ exports[`DatePicker component popover placement should render properly with "top
           <button
             class="c6"
             id="dob-calendar-year-selector-button"
+            type="button"
           >
             
             <span
@@ -11829,6 +11851,7 @@ exports[`DatePicker component popover placement should render properly with "top
           <button
             class="c6"
             id="dob-calendar-month-selector-button"
+            type="button"
           >
             
             <span
@@ -11863,6 +11886,7 @@ exports[`DatePicker component popover placement should render properly with "top
           <button
             class="c6"
             id="dob-calendar-year-selector-button"
+            type="button"
           >
             
             <span

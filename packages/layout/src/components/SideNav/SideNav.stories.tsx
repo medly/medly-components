@@ -2,6 +2,7 @@ import { Text } from '@medly-components/core';
 import { DashboardIcon, DateRangeIcon, FolderOpenIcon, InsertChartIcon, SettingsIcon } from '@medly-components/icons';
 import { defaultTheme, SideNavTheme } from '@medly-components/theme';
 import { action } from '@storybook/addon-actions';
+import { boolean } from '@storybook/addon-knobs';
 import React, { FC } from 'react';
 import Header from './MedlySidenavHeader';
 import { SideNav } from './SideNav';
@@ -17,7 +18,7 @@ export const StaticProps: FC<SideNavStaticProps> = () => null;
 export const SidenavContextTheme: FC<Context> = () => null;
 
 export const Basic = () => (
-    <SideNav onChange={action('NavItem clicked')} defaultActive="/">
+    <SideNav onChange={action('NavItem clicked')} defaultActive="/" hideShadow={boolean('Hide Shadow', false)}>
         <Header />
         <SideNav.List>
             <SideNav.Nav path="/">
