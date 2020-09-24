@@ -1,7 +1,7 @@
 import { boolean, select } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
+import DateRangePicker from '.';
 import { Placement } from '../Popover/types';
-import { DateRangePicker } from './DateRangePicker';
 
 const placement: Placement[] = [
     'top-start',
@@ -18,11 +18,28 @@ const placement: Placement[] = [
     'left-start'
 ];
 
+const displayFormats: Props['displayFormat'][] = [
+    'dd/MM/yyyy',
+    'MM/dd/yyyy',
+    'dd/yyyy/MM',
+    'MM/yyyy/dd',
+    'yyyy/dd/MM',
+    'yyyy/MM/dd',
+    'dd-MM-yyyy',
+    'dd-yyyy-MM',
+    'MM-dd-yyyy',
+    'MM-yyyy-dd',
+    'yyyy-dd-MM',
+    'yyyy-MM-dd'
+];
+
 export const Basic = () => {
     const [dates, setDates] = useState({ startDate: '', endDate: '' });
 
     return (
         <DateRangePicker
+            displayFormat={select('Display Format', displayFormats, 'MM/dd/yyyy')}
+            required={boolean('Required', false)}
             fromLabel="From"
             toLabel="To"
             id="date-range-picker"
