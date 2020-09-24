@@ -93,16 +93,6 @@ describe('SingleSelect component', () => {
         `);
     });
 
-    it('should take passed max height', () => {
-        const { container } = render(<SingleSelect options={options} value="dummy" maxHeight="30rem" />);
-        fireEvent.click(container.querySelector('svg'));
-        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
-        expect(screen.getByRole('list')).toHaveStyle(`
-            overflow: auto;
-            max-height: 30rem;
-        `);
-    });
-
     it('should take passed min width', () => {
         const { container } = render(<SingleSelect options={options} value="dummy" minWidth="30rem" />);
         expect(container.querySelector('div')).toHaveStyle(`
@@ -171,7 +161,7 @@ describe('SingleSelect component', () => {
 
     it('should show the nested options on click on the option with nested option', () => {
         const mockOnChange = jest.fn(),
-            { container } = render(<SingleSelect options={options} onChange={mockOnChange} />);
+            { container } = render(<SingleSelect options={options} onChange={mockOnChange} includesNestedOptions />);
 
         fireEvent.click(screen.getByRole('textbox'));
         fireEvent.click(screen.getByText('Dummy2'));
@@ -396,7 +386,7 @@ describe('SingleSelect component', () => {
         describe('right arrow', () => {
             it('should open nested options', async () => {
                 const mockOnChange = jest.fn(),
-                    { container } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} />);
+                    { container } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} includesNestedOptions />);
                 fireEvent.click(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'ArrowRight', code: 39 });
@@ -409,7 +399,7 @@ describe('SingleSelect component', () => {
         describe('left arrow', () => {
             it('should close nested options', async () => {
                 const mockOnChange = jest.fn(),
-                    { container } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} />);
+                    { container } = render(<SingleSelect value="Dummy1" options={options} onChange={mockOnChange} includesNestedOptions />);
                 fireEvent.click(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'ArrowRight', code: 39 });

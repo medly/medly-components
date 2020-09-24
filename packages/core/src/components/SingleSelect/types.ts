@@ -37,8 +37,8 @@ export interface SelectProps extends InputProps, WithThemeProp {
     minWidth?: string;
     /** Max width in px/rem/% (1rem = 10px)*/
     maxWidth?: string;
-    /** Max height in px/rem/% (1rem = 10px)*/
-    maxHeight?: string;
+    /** Set it true if it includes nested options */
+    includesNestedOptions?: boolean;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
     /** Set it true to disable the select action */

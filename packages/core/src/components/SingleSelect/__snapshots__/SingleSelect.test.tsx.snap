@@ -1264,6 +1264,8 @@ exports[`SingleSelect component should take passed max width 1`] = `
   max-width: 30rem;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
   border-radius: 0 0 0.4rem 0.4rem;
+  overflow: auto;
+  max-height: 20rem;
 }
 
 .c16 .c1 {
@@ -1890,6 +1892,8 @@ exports[`SingleSelect component with filled variant should render options correc
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
   border-radius: 0 0 0.4rem 0.4rem;
+  overflow: auto;
+  max-height: 20rem;
 }
 
 <ul
@@ -3036,6 +3040,8 @@ exports[`SingleSelect component with flat variant should render options correctl
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
   border-radius: 0.8rem;
+  overflow: auto;
+  max-height: 20rem;
 }
 
 <ul
@@ -4037,6 +4043,8 @@ exports[`SingleSelect component with outlined variant should render options corr
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
   border-radius: 0.4rem;
+  overflow: auto;
+  max-height: 20rem;
 }
 
 <ul

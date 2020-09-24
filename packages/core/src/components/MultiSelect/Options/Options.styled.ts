@@ -35,7 +35,7 @@ export const Options = styled.ul<WithThemeProp & { size: 'S' | 'M' }>`
     list-style: none;
     padding: 0;
     margin: 0;
-    max-height: 200px;
+    max-height: 20rem;
     overflow: auto;
 
     ${Checkbox.Style} {
