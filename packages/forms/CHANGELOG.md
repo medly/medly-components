@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.7](https://github.com/medly/medly-components/compare/@medly-components/forms@1.10.6...@medly-components/forms@1.10.7) (2020-09-24)
+
+
+### Bug Fixes
+
+* checkbox style issue in multiselect comopnent ([96af50d](https://github.com/medly/medly-components/commit/96af50d51939c8e1e15249e390704ebc58cb7b91))
+* diabled state issue in textField and datepicker component ([c4a4cc3](https://github.com/medly/medly-components/commit/c4a4cc3f25ab6ef0a8ea37d77331c2ef417adf3e))
+* fixed snapshot test ([84b6e27](https://github.com/medly/medly-components/commit/84b6e27f970771de74a6e4e9e48b1f0607534f33))
+
+
+
+
+
 ## [1.10.6](https://github.com/medly/medly-components/compare/@medly-components/forms@1.10.5...@medly-components/forms@1.10.6) (2020-09-16)
 
 **Note:** Version bump only for package @medly-components/forms

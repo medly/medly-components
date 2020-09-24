@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/medly/medly-components/compare/@medly-components/icons@1.3.4...@medly-components/icons@1.4.0) (2020-09-24)
+
+
+### Features
+
+* add 100-200 gsdd icons ([864d5eb](https://github.com/medly/medly-components/commit/864d5ebc3eabc5691a92f85a8ed3664527716c19))
+* add side effect GSDD icons ([a8bbdce](https://github.com/medly/medly-components/commit/a8bbdce084985a18133275fe3d8512424fa75812))
+* add top 100 gsdd icons ([b7c2caf](https://github.com/medly/medly-components/commit/b7c2cafbc6cccc93b0baa59e833625ba3fdafeb3))
+
+
+
+
+
 ## [1.3.4](https://github.com/medly/medly-components/compare/@medly-components/icons@1.3.3...@medly-components/icons@1.3.4) (2020-09-16)
 
 **Note:** Version bump only for package @medly-components/icons
