@@ -19,6 +19,8 @@ export const TabList: React.FC<Props> & WithStyle = React.memo(props => {
             [children]
         ),
         { 0: first, [tabIds.length - 1]: last } = tabIds;
+    const activeTabIdx = tabIds.indexOf(active);
+    const totalTabs = React.Children.toArray(children).length;
 
     useEffect(() => {
         rightPress && isFocused && (active === last ? onChange(first) : onChange(tabIds[tabIds.indexOf(active) + 1]));
@@ -39,10 +41,20 @@ export const TabList: React.FC<Props> & WithStyle = React.memo(props => {
     return (
         <Styled.TabListWrapper>
             <Styled.TabList onFocus={changeFocusState} onBlur={changeFocusState} {...restProps}>
-                <Styled.Slider active={active} id="slider id" />
+                <Styled.Slider active={activeTabIdx} totalTabs={totalTabs} />
                 {React.Children.toArray(props.children).reduce((acc: any[], child: any) => {
                     const { id, label, hide } = child.props;
-                    !hide && acc.push(<Tab key={id} active={id === active} label={label} onClick={handleChange(id)} {...child.props} />);
+                    !hide &&
+                        acc.push(
+                            <Tab
+                                totalTabs={totalTabs}
+                                key={id}
+                                active={id === active}
+                                label={label}
+                                onClick={handleChange(id)}
+                                {...child.props}
+                            />
+                        );
                     return acc;
                 }, [])}
             </Styled.TabList>

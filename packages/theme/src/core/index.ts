@@ -12,7 +12,6 @@ import font from './font';
 import input from './input';
 import label from './label';
 import link from './link';
-import mobileTabs from './mobileTabs';
 import modal from './modal';
 import multiSelect from './multiSelect';
 import radio from './radio';
@@ -23,6 +22,7 @@ import spacing from './spacing';
 import stepper from './stepper';
 import table from './table';
 import tabs from './tabs';
+import tabsSlider from './tabsSlider';
 import textField from './textField';
 import toast from './toast';
 import toggle from './toggle';
@@ -42,7 +42,6 @@ export const coreDefaultTheme = {
     input,
     label,
     link,
-    mobileTabs,
     modal,
     multiSelect,
     radio,
@@ -53,6 +52,7 @@ export const coreDefaultTheme = {
     stepper,
     table,
     tabs,
+    tabsSlider,
     textField,
     toast,
     toggle

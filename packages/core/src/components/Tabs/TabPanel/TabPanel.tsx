@@ -6,6 +6,7 @@ import { Props } from './types';
 export const TabPanel: React.FC<Props> & WithStyle = React.memo(props => {
     const { active, children } = props;
 
+    console.log(React.Children.toArray(children) === children);
     return (
         <>
             {React.Children.map(children, (child: any) => {

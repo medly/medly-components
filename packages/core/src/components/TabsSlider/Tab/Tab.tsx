@@ -1,18 +1,16 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useContext } from 'react';
-import { TabsContext } from '../Tabs.context';
+import React from 'react';
 import * as Styled from './Tab.styled';
 import { Props } from './types';
 
 const disabledLabel = 'Not available';
 
 export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
-    const { id, active, disabled, label, ...restProps } = props,
-        { tabSize, tabStyle, tabBackground } = useContext(TabsContext);
+    const { id, active, disabled, label, ...restProps } = props;
 
     return (
         <Styled.TabWrapper
-            {...{ id, active, disabled, tabSize, tabStyle, tabBackground, ...restProps }}
+            {...{ id, active, disabled, ...restProps }}
             type="button"
             role="tab"
             aria-selected={active ? 'true' : 'false'}

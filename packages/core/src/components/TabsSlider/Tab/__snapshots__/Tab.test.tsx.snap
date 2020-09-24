@@ -1,0 +1,297 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tab should render active state properly 1`] = `
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c5 {
+  line-height: normal;
+  text-align: center;
+}
+
+.c0 {
+  width: calc(NaN% - NaNrem);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  position: relative;
+  border: none;
+  box-sizing: border-box;
+  font-family: inherit;
+  border-radius: 0.8rem;
+  text-align: center;
+  padding: 0.8rem 0;
+  background: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  min-height: 100%;
+}
+
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  padding: 0 4rem;
+}
+
+.c0:disabled::after {
+  background-color: transparent;
+}
+
+.c0:disabled .c4 {
+  color: #b0bcc8;
+  line-height: 1.6rem;
+}
+
+.c0 .c4 {
+  color: #126AFA;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div>
+  <button
+    aria-controls="panel-dummy"
+    aria-selected="true"
+    class="c0"
+    id="dummy"
+    role="tab"
+    tabindex="0"
+    type="button"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <span
+          class="c3 c4 c5"
+          id="dummy-label"
+        >
+          Add
+        </span>
+      </div>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`Tab should render disabled state properly 1`] = `
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c5 {
+  line-height: normal;
+  text-align: center;
+}
+
+.c6 {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  -webkit-letter-spacing: -0.04rem;
+  -moz-letter-spacing: -0.04rem;
+  -ms-letter-spacing: -0.04rem;
+  letter-spacing: -0.04rem;
+  color: #b0bcc8;
+  font-weight: 400;
+  text-align: center;
+}
+
+.c0 {
+  width: calc(NaN% - NaNrem);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  position: relative;
+  border: none;
+  box-sizing: border-box;
+  font-family: inherit;
+  border-radius: 0.8rem;
+  text-align: center;
+  padding: 0.8rem 0;
+  background: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  min-height: 100%;
+}
+
+.c0 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  padding: 0 4rem;
+}
+
+.c0:disabled::after {
+  background-color: transparent;
+}
+
+.c0:disabled .c4 {
+  color: #b0bcc8;
+  line-height: 1.6rem;
+}
+
+.c0 .c4 {
+  color: #607890;
+}
+
+.c0:not(:disabled):hover {
+  background-color: #dfe4e9;
+  cursor: pointer;
+}
+
+.c0:not(:disabled):hover .c4 {
+  color: #546A7F;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+<div>
+  <button
+    aria-controls="panel-dummy"
+    aria-selected="false"
+    class="c0"
+    disabled=""
+    id="dummy"
+    role="tab"
+    tabindex="-1"
+    type="button"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <span
+          class="c3 c4 c5"
+          id="dummy-label"
+        >
+          Add
+        </span>
+        <span
+          class="c3 c6"
+          id="dummy-disabledLabel"
+        >
+          Not available
+        </span>
+      </div>
+    </div>
+  </button>
+</div>
+`;

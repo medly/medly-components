@@ -1,18 +1,12 @@
 import colors from '../colors';
-import { MobileTabsTheme } from './types';
+import { TabsSliderTheme } from './types';
 
-const mobileTabs: MobileTabsTheme = {
+const tabsSlider: TabsSliderTheme = {
     labelColor: {
         active: colors.blue[500],
         default: colors.grey[600],
         hovered: colors.grey[700],
         disabled: colors.grey[400]
-    },
-    borderColor: {
-        active: colors.blue[500],
-        closed: colors.grey[300],
-        open: colors.grey[400],
-        hovered: colors.grey[800]
     },
     bgColor: {
         active: colors.white,
@@ -22,4 +16,4 @@ const mobileTabs: MobileTabsTheme = {
     }
 };
 
-export default mobileTabs;
+export default tabsSlider;

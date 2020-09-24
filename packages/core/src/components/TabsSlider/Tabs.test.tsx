@@ -4,16 +4,9 @@ import Tab from './Tab';
 import { Tabs } from './Tabs';
 import { Props } from './types';
 
-const renderer = ({
-    defaultActive = 'tab1',
-    active = undefined,
-    onChange = jest.fn(),
-    tabSize = 'S',
-    tabStyle = 'CLOSED',
-    tabBackground = 'WHITE'
-}: Props) =>
+const renderer = ({ defaultActive = 'tab1', active = undefined, onChange = jest.fn() }: Props) =>
     render(
-        <Tabs {...{ defaultActive, active, onChange, tabSize, tabStyle, tabBackground }}>
+        <Tabs {...{ defaultActive, active, onChange }}>
             <Tab id="tab1" label="Add">
                 Content for the add panel
             </Tab>
@@ -23,7 +16,7 @@ const renderer = ({
             <Tab id="tab2" label="Delete" hide>
                 Content for the delete panel
             </Tab>
-            <Tab id="tab4" label="Disabled" disabledLabel="Not available" disabled>
+            <Tab id="tab4" label="Disabled" disabled>
                 Content for the disabled panel
             </Tab>
         </Tabs>

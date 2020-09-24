@@ -18,7 +18,6 @@ export interface CoreTheme {
     input?: CoreThemes.InputTheme;
     label?: CoreThemes.LabelTheme;
     link?: CoreThemes.LinkTheme;
-    mobileTabs?: CoreThemes.MobileTabsTheme;
     modal?: CoreThemes.ModalTheme;
     multiSelect?: CoreThemes.MultiSelectTheme;
     radio?: CoreThemes.RadioTheme;
@@ -29,6 +28,7 @@ export interface CoreTheme {
     table?: CoreThemes.TableTheme;
     toggle?: CoreThemes.ToggleTheme;
     tabs?: CoreThemes.TabsTheme;
+    tabsSlider?: CoreThemes.TabsSliderTheme;
     textField?: CoreThemes.TextFieldTheme;
     toast?: CoreThemes.ToastTheme;
 }

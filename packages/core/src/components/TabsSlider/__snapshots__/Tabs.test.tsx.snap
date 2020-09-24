@@ -1,0 +1,360 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs should render properly 1`] = `
+.c5 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c7 {
+  line-height: normal;
+  text-align: center;
+}
+
+.c9 {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  -webkit-letter-spacing: -0.04rem;
+  -moz-letter-spacing: -0.04rem;
+  -ms-letter-spacing: -0.04rem;
+  letter-spacing: -0.04rem;
+  color: #b0bcc8;
+  font-weight: 400;
+  text-align: center;
+}
+
+.c2 {
+  width: calc(25% - 0.5333333333333333rem);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  position: relative;
+  border: none;
+  box-sizing: border-box;
+  font-family: inherit;
+  border-radius: 0.8rem;
+  text-align: center;
+  padding: 0.8rem 0;
+  background: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  min-height: 100%;
+}
+
+.c2 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c2:focus {
+  outline: none;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+  padding: 0 4rem;
+}
+
+.c2:disabled::after {
+  background-color: transparent;
+}
+
+.c2:disabled .c6 {
+  color: #b0bcc8;
+  line-height: 1.6rem;
+}
+
+.c2 .c6 {
+  color: #126AFA;
+}
+
+.c8 {
+  width: calc(25% - 0.5333333333333333rem);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  position: relative;
+  border: none;
+  box-sizing: border-box;
+  font-family: inherit;
+  border-radius: 0.8rem;
+  text-align: center;
+  padding: 0.8rem 0;
+  background: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  min-height: 100%;
+}
+
+.c8 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c8:focus {
+  outline: none;
+}
+
+.c8:disabled {
+  cursor: not-allowed;
+  padding: 0 4rem;
+}
+
+.c8:disabled::after {
+  background-color: transparent;
+}
+
+.c8:disabled .c6 {
+  color: #b0bcc8;
+  line-height: 1.6rem;
+}
+
+.c8 .c6 {
+  color: #607890;
+}
+
+.c8:not(:disabled):hover {
+  background-color: #dfe4e9;
+  cursor: pointer;
+}
+
+.c8:not(:disabled):hover .c6 {
+  color: #546A7F;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  overflow-x: auto;
+  background-color: #eff2f4;
+  padding: 0.4rem;
+  box-sizing: border-box;
+  border-radius: 1.2rem;
+  position: relative;
+}
+
+.c1 {
+  background-color: #ffffff;
+  width: calc(25% - 0.5333333333333333rem);
+  height: calc(100% - 0.8rem);
+  position: absolute;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.1rem 0.4rem rgba(96,120,144,0.1);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -webkit-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  -webkit-transform-box: content-box;
+  -ms-transform-box: content-box;
+  transform-box: content-box;
+  -webkit-transform: translateX(calc(0% + 0rem));
+  -ms-transform: translateX(calc(0% + 0rem));
+  transform: translateX(calc(0% + 0rem));
+}
+
+.c10 {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.c10:focus {
+  outline: none;
+}
+
+<div>
+  <div
+    class=""
+    id="medly-tabs"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="c0"
+        id="medly-tabs-list"
+      >
+        <div
+          class="c1"
+        />
+        <button
+          aria-controls="panel-tab1"
+          aria-selected="true"
+          class="c2"
+          id="tab1"
+          role="tab"
+          tabindex="0"
+          type="button"
+        >
+          <div
+            class="c3"
+          >
+            <div
+              class="c4"
+            >
+              <span
+                class="c5 c6 c7"
+                id="tab1-label"
+              >
+                Add
+              </span>
+            </div>
+          </div>
+        </button>
+        <button
+          aria-controls="panel-tab2"
+          aria-selected="false"
+          class="c8"
+          id="tab2"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="c3"
+          >
+            <div
+              class="c4"
+            >
+              <span
+                class="c5 c6 c7"
+                id="tab2-label"
+              >
+                Edit
+              </span>
+            </div>
+          </div>
+        </button>
+        <button
+          aria-controls="panel-tab4"
+          aria-selected="false"
+          class="c8"
+          disabled=""
+          id="tab4"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          <div
+            class="c3"
+          >
+            <div
+              class="c4"
+            >
+              <span
+                class="c5 c6 c7"
+                id="tab4-label"
+              >
+                Disabled
+              </span>
+              <span
+                class="c5 c9"
+                id="tab4-disabledLabel"
+              >
+                Not available
+              </span>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      aria-labelledby="tab1"
+      class="c10"
+      id="medly-tabs-panel-tab1"
+      role="tabpanel"
+      tabindex="0"
+    >
+      Content for the add panel
+    </div>
+  </div>
+</div>
+`;

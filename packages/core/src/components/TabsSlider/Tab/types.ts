@@ -1,18 +1,17 @@
-import { MobileTabsTheme } from '@medly-components/theme';
+import { TabsSliderTheme } from '@medly-components/theme';
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
-import { TabBackground, TabSize, TabStyle } from '../types';
 
 export type StyledProps = HTMLProps<HTMLButtonElement> &
     WithThemeProp &
-    MobileTabsTheme & {
+    TabsSliderTheme & {
         active?: boolean;
-        tabSize?: TabSize;
-        tabStyle?: TabStyle;
         fraction?: any;
-        tabBackground?: TabBackground;
+        totalTabs?: number;
     };
 
 export interface Props extends HTMLProps<HTMLButtonElement> {
+    /** Ids of all tabs */
+    totalTabs?: number;
     /** Id of tab */
     id: any;
     /** Label of the tab */
