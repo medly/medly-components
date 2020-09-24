@@ -1,7 +1,7 @@
 import { DateRangeIcon } from '@medly-components/icons';
 import { parseToDate, useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import { format } from 'date-fns';
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { FormEvent, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Calendar from '../Calendar';
 import Popover from '../Popover';
 import TextField from '../TextField';
@@ -41,14 +41,14 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
         useEffect(() => {
-            setTextValue(date ? format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), ' $& ') : '');
+            date && setTextValue(format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), ' $& '));
         }, [date, displayFormat]);
 
         const onTextChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
-                    const value = event.target.value,
-                        parsedDate = parseToDate(value, displayFormat);
-                    setTextValue(value);
+                    const inputValue = event.target.value,
+                        parsedDate = parseToDate(inputValue, displayFormat);
+                    setTextValue(inputValue);
                     if (parsedDate.toString() !== 'Invalid Date') {
                         if (parsedDate < minSelectableDate || parsedDate > maxSelectableDate) {
                             setErrorMessage('Please select date from allowed range');
@@ -56,6 +56,8 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                             onChange(parsedDate);
                             setErrorMessage('');
                         }
+                    } else {
+                        onChange(null);
                     }
                 },
                 [displayFormat]
@@ -71,13 +73,24 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 },
                 [disabled]
             ),
-            onBlur = useCallback(
-                (event: React.FocusEvent<HTMLInputElement>) => {
-                    parseToDate(event.target.value, displayFormat).toString() === 'Invalid Date' && setErrorMessage('Enter valid date');
-                    props.onBlur && props.onBlur(event);
+            validate = useCallback(
+                (event: React.FocusEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
+                    event.target.value &&
+                        parseToDate(event.target.value, displayFormat).toString() === 'Invalid Date' &&
+                        setTimeout(() => setErrorMessage('Enter valid date'), 0);
+                    props.required && !event.target.value && setTimeout(() => setErrorMessage('Please fill in this field'), 0);
+                    eventFunc && eventFunc(event);
                 },
-                [props.onBlur, displayFormat]
+                [props.required, displayFormat]
             ),
+            onBlur = useCallback((event: React.FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [
+                props.onBlur,
+                displayFormat
+            ]),
+            onInvalid = useCallback((event: React.FocusEvent<HTMLInputElement>) => validate(event, props.onInvalid), [
+                props.onInvalid,
+                displayFormat
+            ]),
             onFocus = useCallback(
                 (event: React.FocusEvent<HTMLInputElement>) => {
                     setActive(true);
@@ -128,7 +141,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                     disabled={disabled}
                     value={textValue}
                     onChange={onTextChange}
-                    {...{ ...restProps, onBlur, onFocus }}
+                    {...{ ...restProps, onBlur, onFocus, onInvalid }}
                 />
                 {showCalendar && (
                     <Calendar

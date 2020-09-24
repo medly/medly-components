@@ -16,7 +16,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   fill: #607890;
 }
 
-.c13 {
+.c12 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -24,7 +24,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   cursor: inherit;
 }
 
-.c13 * {
+.c12 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -44,7 +44,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   text-align: initial;
 }
 
-.c15 {
+.c14 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -57,7 +57,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   text-align: center;
 }
 
-.c17 {
+.c16 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -199,66 +199,28 @@ exports[`DatePicker component popover placement should render properly with "bot
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 7rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c4 .c21 {
+.c4 .c20 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c4 .c21 label {
+.c4 .c20 label {
   pointer-events: none;
 }
 
-.c4 .c21 div,
-.c4 .c21 input,
-.c4 .c21 label {
+.c4 .c20 div,
+.c4 .c20 input,
+.c4 .c20 label {
   cursor: pointer;
 }
 
-.c4 .c21 .c22 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c11 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 8rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c11 .c21 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c11 .c21 label {
-  pointer-events: none;
-}
-
-.c11 .c21 div,
-.c11 .c21 input,
-.c11 .c21 label {
-  cursor: pointer;
-}
-
-.c11 .c21 .c22 {
+.c4 .c20 .c21 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -280,7 +242,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   height: max-content;
 }
 
-.c12 {
+.c11 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -304,15 +266,15 @@ exports[`DatePicker component popover placement should render properly with "bot
   align-items: center;
 }
 
-.c12 svg {
+.c11 svg {
   fill: #435465;
 }
 
-.c12:not(:disabled):hover {
+.c11:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c12:not(:disabled):active {
+.c11:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -353,23 +315,23 @@ exports[`DatePicker component popover placement should render properly with "bot
   overflow: auto;
 }
 
-.c3 .c21 {
+.c3 .c20 {
   min-width: unset;
   max-width: 9.5rem;
 }
 
-.c3 .c21 > div {
+.c3 .c20 > div {
   height: 3.5rem;
   padding: 0 0 0 1rem;
 }
 
-.c14 {
+.c13 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
 }
 
-.c14 > .c7 {
+.c13 > .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -379,7 +341,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   margin-bottom: 0.8rem;
 }
 
-.c16 {
+.c15 {
   background-color: transparent;
   border: 0.2rem solid transparent;
   -webkit-text-decoration: none;
@@ -409,17 +371,69 @@ exports[`DatePicker component popover placement should render properly with "bot
   align-items: center;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
 }
 
-.c16:disabled {
+.c15:disabled {
   cursor: not-allowed;
   color: #b0bcc8;
 }
 
-.c16:hover {
+.c15:hover {
   background-color: #eff2f4;
+}
+
+.c17 {
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0.4rem;
+  box-sizing: border-box;
+  height: 3.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17:focus {
+  outline: none;
+}
+
+.c17:disabled {
+  cursor: not-allowed;
+  color: #b0bcc8;
+}
+
+.c17:hover {
+  background-color: #eff2f4;
+}
+
+.c17 span {
+  font-weight: bold;
+}
+
+.c17,
+.c17:hover {
+  background-color: #126AFA;
+  color: #ffffff;
 }
 
 .c18 {
@@ -464,59 +478,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   background-color: #eff2f4;
 }
 
-.c18 span {
-  font-weight: bold;
-}
-
-.c18,
-.c18:hover {
-  background-color: #126AFA;
-  color: #ffffff;
-}
-
-.c19 {
-  background-color: transparent;
-  border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0.4rem;
-  box-sizing: border-box;
-  height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c19:focus {
-  outline: none;
-}
-
-.c19:disabled {
-  cursor: not-allowed;
-  color: #b0bcc8;
-}
-
-.c19:hover {
-  background-color: #eff2f4;
-}
-
-.c20 .c0 {
+.c19 .c0 {
   z-index: 1000;
   position: absolute;
   top: calc(100% + 0px);
@@ -572,7 +534,7 @@ exports[`DatePicker component popover placement should render properly with "bot
         </div>
       </div>
       <div
-        class="c11"
+        class="c4"
         id="dob-calendar-year-selector-wrapper"
       >
         <div
@@ -607,10 +569,10 @@ exports[`DatePicker component popover placement should render properly with "bot
       </div>
     </div>
     <button
-      class="c12 calendar-month-navigation-go-back"
+      class="c11 calendar-month-navigation-go-back"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -625,10 +587,10 @@ exports[`DatePicker component popover placement should render properly with "bot
       </svg>
     </button>
     <button
-      class="c12 calendar-month-navigation-go-forward"
+      class="c11 calendar-month-navigation-go-forward"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -644,424 +606,424 @@ exports[`DatePicker component popover placement should render properly with "bot
     </button>
   </div>
   <div
-    class="c14"
+    class="c13"
   >
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <button
-      class="c16"
+      class="c15"
       title="Sun Dec 29 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Mon Dec 30 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Tue Dec 31 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c18"
+      class="c17"
       title="Wed Jan 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 02 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         2
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 03 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         3
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 04 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         4
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 05 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         5
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 06 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         6
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 07 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         7
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 08 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         8
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 09 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         9
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 10 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         10
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 11 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         11
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 12 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         12
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 13 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         13
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 14 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         14
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 15 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         15
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 16 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         16
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 17 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         17
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 18 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         18
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 19 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         19
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 20 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         20
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 21 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         21
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 22 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         22
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 23 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         23
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 24 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         24
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 25 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         25
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 26 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         26
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 27 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         27
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 28 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         28
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 29 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 30 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 31 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Sat Feb 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
@@ -1086,7 +1048,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   fill: #607890;
 }
 
-.c13 {
+.c12 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -1094,7 +1056,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   cursor: inherit;
 }
 
-.c13 * {
+.c12 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -1114,7 +1076,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   text-align: initial;
 }
 
-.c15 {
+.c14 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -1127,7 +1089,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   text-align: center;
 }
 
-.c17 {
+.c16 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -1269,66 +1231,28 @@ exports[`DatePicker component popover placement should render properly with "bot
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 7rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c4 .c21 {
+.c4 .c20 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c4 .c21 label {
+.c4 .c20 label {
   pointer-events: none;
 }
 
-.c4 .c21 div,
-.c4 .c21 input,
-.c4 .c21 label {
+.c4 .c20 div,
+.c4 .c20 input,
+.c4 .c20 label {
   cursor: pointer;
 }
 
-.c4 .c21 .c22 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c11 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 8rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c11 .c21 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c11 .c21 label {
-  pointer-events: none;
-}
-
-.c11 .c21 div,
-.c11 .c21 input,
-.c11 .c21 label {
-  cursor: pointer;
-}
-
-.c11 .c21 .c22 {
+.c4 .c20 .c21 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -1350,7 +1274,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   height: max-content;
 }
 
-.c12 {
+.c11 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -1374,15 +1298,15 @@ exports[`DatePicker component popover placement should render properly with "bot
   align-items: center;
 }
 
-.c12 svg {
+.c11 svg {
   fill: #435465;
 }
 
-.c12:not(:disabled):hover {
+.c11:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c12:not(:disabled):active {
+.c11:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -1423,23 +1347,23 @@ exports[`DatePicker component popover placement should render properly with "bot
   overflow: auto;
 }
 
-.c3 .c21 {
+.c3 .c20 {
   min-width: unset;
   max-width: 9.5rem;
 }
 
-.c3 .c21 > div {
+.c3 .c20 > div {
   height: 3.5rem;
   padding: 0 0 0 1rem;
 }
 
-.c14 {
+.c13 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
 }
 
-.c14 > .c7 {
+.c13 > .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1449,7 +1373,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   margin-bottom: 0.8rem;
 }
 
-.c16 {
+.c15 {
   background-color: transparent;
   border: 0.2rem solid transparent;
   -webkit-text-decoration: none;
@@ -1479,17 +1403,69 @@ exports[`DatePicker component popover placement should render properly with "bot
   align-items: center;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
 }
 
-.c16:disabled {
+.c15:disabled {
   cursor: not-allowed;
   color: #b0bcc8;
 }
 
-.c16:hover {
+.c15:hover {
   background-color: #eff2f4;
+}
+
+.c17 {
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0.4rem;
+  box-sizing: border-box;
+  height: 3.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17:focus {
+  outline: none;
+}
+
+.c17:disabled {
+  cursor: not-allowed;
+  color: #b0bcc8;
+}
+
+.c17:hover {
+  background-color: #eff2f4;
+}
+
+.c17 span {
+  font-weight: bold;
+}
+
+.c17,
+.c17:hover {
+  background-color: #126AFA;
+  color: #ffffff;
 }
 
 .c18 {
@@ -1534,59 +1510,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   background-color: #eff2f4;
 }
 
-.c18 span {
-  font-weight: bold;
-}
-
-.c18,
-.c18:hover {
-  background-color: #126AFA;
-  color: #ffffff;
-}
-
-.c19 {
-  background-color: transparent;
-  border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0.4rem;
-  box-sizing: border-box;
-  height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c19:focus {
-  outline: none;
-}
-
-.c19:disabled {
-  cursor: not-allowed;
-  color: #b0bcc8;
-}
-
-.c19:hover {
-  background-color: #eff2f4;
-}
-
-.c20 .c0 {
+.c19 .c0 {
   z-index: 1000;
   position: absolute;
   top: calc(100% + 0px);
@@ -1639,7 +1563,7 @@ exports[`DatePicker component popover placement should render properly with "bot
         </div>
       </div>
       <div
-        class="c11"
+        class="c4"
         id="dob-calendar-year-selector-wrapper"
       >
         <div
@@ -1674,10 +1598,10 @@ exports[`DatePicker component popover placement should render properly with "bot
       </div>
     </div>
     <button
-      class="c12 calendar-month-navigation-go-back"
+      class="c11 calendar-month-navigation-go-back"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -1692,10 +1616,10 @@ exports[`DatePicker component popover placement should render properly with "bot
       </svg>
     </button>
     <button
-      class="c12 calendar-month-navigation-go-forward"
+      class="c11 calendar-month-navigation-go-forward"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -1711,424 +1635,424 @@ exports[`DatePicker component popover placement should render properly with "bot
     </button>
   </div>
   <div
-    class="c14"
+    class="c13"
   >
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <button
-      class="c16"
+      class="c15"
       title="Sun Dec 29 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Mon Dec 30 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Tue Dec 31 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c18"
+      class="c17"
       title="Wed Jan 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 02 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         2
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 03 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         3
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 04 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         4
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 05 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         5
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 06 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         6
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 07 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         7
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 08 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         8
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 09 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         9
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 10 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         10
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 11 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         11
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 12 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         12
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 13 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         13
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 14 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         14
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 15 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         15
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 16 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         16
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 17 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         17
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 18 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         18
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 19 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         19
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 20 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         20
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 21 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         21
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 22 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         22
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 23 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         23
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 24 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         24
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 25 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         25
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 26 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         26
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 27 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         27
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 28 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         28
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 29 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 30 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 31 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Sat Feb 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
@@ -2153,7 +2077,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   fill: #607890;
 }
 
-.c13 {
+.c12 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -2161,7 +2085,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   cursor: inherit;
 }
 
-.c13 * {
+.c12 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -2181,7 +2105,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   text-align: initial;
 }
 
-.c15 {
+.c14 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -2194,7 +2118,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   text-align: center;
 }
 
-.c17 {
+.c16 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -2336,66 +2260,28 @@ exports[`DatePicker component popover placement should render properly with "bot
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 7rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c4 .c21 {
+.c4 .c20 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c4 .c21 label {
+.c4 .c20 label {
   pointer-events: none;
 }
 
-.c4 .c21 div,
-.c4 .c21 input,
-.c4 .c21 label {
+.c4 .c20 div,
+.c4 .c20 input,
+.c4 .c20 label {
   cursor: pointer;
 }
 
-.c4 .c21 .c22 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c11 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 8rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c11 .c21 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c11 .c21 label {
-  pointer-events: none;
-}
-
-.c11 .c21 div,
-.c11 .c21 input,
-.c11 .c21 label {
-  cursor: pointer;
-}
-
-.c11 .c21 .c22 {
+.c4 .c20 .c21 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -2417,7 +2303,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   height: max-content;
 }
 
-.c12 {
+.c11 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -2441,15 +2327,15 @@ exports[`DatePicker component popover placement should render properly with "bot
   align-items: center;
 }
 
-.c12 svg {
+.c11 svg {
   fill: #435465;
 }
 
-.c12:not(:disabled):hover {
+.c11:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c12:not(:disabled):active {
+.c11:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -2490,23 +2376,23 @@ exports[`DatePicker component popover placement should render properly with "bot
   overflow: auto;
 }
 
-.c3 .c21 {
+.c3 .c20 {
   min-width: unset;
   max-width: 9.5rem;
 }
 
-.c3 .c21 > div {
+.c3 .c20 > div {
   height: 3.5rem;
   padding: 0 0 0 1rem;
 }
 
-.c14 {
+.c13 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
 }
 
-.c14 > .c7 {
+.c13 > .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2516,7 +2402,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   margin-bottom: 0.8rem;
 }
 
-.c16 {
+.c15 {
   background-color: transparent;
   border: 0.2rem solid transparent;
   -webkit-text-decoration: none;
@@ -2546,17 +2432,69 @@ exports[`DatePicker component popover placement should render properly with "bot
   align-items: center;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
 }
 
-.c16:disabled {
+.c15:disabled {
   cursor: not-allowed;
   color: #b0bcc8;
 }
 
-.c16:hover {
+.c15:hover {
   background-color: #eff2f4;
+}
+
+.c17 {
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0.4rem;
+  box-sizing: border-box;
+  height: 3.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17:focus {
+  outline: none;
+}
+
+.c17:disabled {
+  cursor: not-allowed;
+  color: #b0bcc8;
+}
+
+.c17:hover {
+  background-color: #eff2f4;
+}
+
+.c17 span {
+  font-weight: bold;
+}
+
+.c17,
+.c17:hover {
+  background-color: #126AFA;
+  color: #ffffff;
 }
 
 .c18 {
@@ -2601,59 +2539,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   background-color: #eff2f4;
 }
 
-.c18 span {
-  font-weight: bold;
-}
-
-.c18,
-.c18:hover {
-  background-color: #126AFA;
-  color: #ffffff;
-}
-
-.c19 {
-  background-color: transparent;
-  border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0.4rem;
-  box-sizing: border-box;
-  height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c19:focus {
-  outline: none;
-}
-
-.c19:disabled {
-  cursor: not-allowed;
-  color: #b0bcc8;
-}
-
-.c19:hover {
-  background-color: #eff2f4;
-}
-
-.c20 .c0 {
+.c19 .c0 {
   z-index: 1000;
   position: absolute;
   top: calc(100% + 0px);
@@ -2706,7 +2592,7 @@ exports[`DatePicker component popover placement should render properly with "bot
         </div>
       </div>
       <div
-        class="c11"
+        class="c4"
         id="dob-calendar-year-selector-wrapper"
       >
         <div
@@ -2741,10 +2627,10 @@ exports[`DatePicker component popover placement should render properly with "bot
       </div>
     </div>
     <button
-      class="c12 calendar-month-navigation-go-back"
+      class="c11 calendar-month-navigation-go-back"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -2759,10 +2645,10 @@ exports[`DatePicker component popover placement should render properly with "bot
       </svg>
     </button>
     <button
-      class="c12 calendar-month-navigation-go-forward"
+      class="c11 calendar-month-navigation-go-forward"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -2778,424 +2664,424 @@ exports[`DatePicker component popover placement should render properly with "bot
     </button>
   </div>
   <div
-    class="c14"
+    class="c13"
   >
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <button
-      class="c16"
+      class="c15"
       title="Sun Dec 29 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Mon Dec 30 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Tue Dec 31 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c18"
+      class="c17"
       title="Wed Jan 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 02 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         2
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 03 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         3
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 04 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         4
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 05 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         5
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 06 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         6
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 07 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         7
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 08 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         8
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 09 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         9
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 10 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         10
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 11 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         11
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 12 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         12
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 13 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         13
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 14 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         14
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 15 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         15
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 16 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         16
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 17 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         17
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 18 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         18
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 19 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         19
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 20 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         20
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 21 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         21
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 22 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         22
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 23 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         23
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 24 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         24
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 25 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         25
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 26 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         26
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 27 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         27
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 28 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         28
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 29 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 30 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 31 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Sat Feb 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
@@ -3220,7 +3106,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   fill: #607890;
 }
 
-.c13 {
+.c12 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -3228,7 +3114,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   cursor: inherit;
 }
 
-.c13 * {
+.c12 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -3248,7 +3134,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   text-align: initial;
 }
 
-.c15 {
+.c14 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -3261,7 +3147,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   text-align: center;
 }
 
-.c17 {
+.c16 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -3403,66 +3289,28 @@ exports[`DatePicker component popover placement should render properly with "lef
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 7rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c4 .c21 {
+.c4 .c20 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c4 .c21 label {
+.c4 .c20 label {
   pointer-events: none;
 }
 
-.c4 .c21 div,
-.c4 .c21 input,
-.c4 .c21 label {
+.c4 .c20 div,
+.c4 .c20 input,
+.c4 .c20 label {
   cursor: pointer;
 }
 
-.c4 .c21 .c22 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c11 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 8rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c11 .c21 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c11 .c21 label {
-  pointer-events: none;
-}
-
-.c11 .c21 div,
-.c11 .c21 input,
-.c11 .c21 label {
-  cursor: pointer;
-}
-
-.c11 .c21 .c22 {
+.c4 .c20 .c21 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -3484,7 +3332,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   height: max-content;
 }
 
-.c12 {
+.c11 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -3508,15 +3356,15 @@ exports[`DatePicker component popover placement should render properly with "lef
   align-items: center;
 }
 
-.c12 svg {
+.c11 svg {
   fill: #435465;
 }
 
-.c12:not(:disabled):hover {
+.c11:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c12:not(:disabled):active {
+.c11:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -3557,23 +3405,23 @@ exports[`DatePicker component popover placement should render properly with "lef
   overflow: auto;
 }
 
-.c3 .c21 {
+.c3 .c20 {
   min-width: unset;
   max-width: 9.5rem;
 }
 
-.c3 .c21 > div {
+.c3 .c20 > div {
   height: 3.5rem;
   padding: 0 0 0 1rem;
 }
 
-.c14 {
+.c13 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
 }
 
-.c14 > .c7 {
+.c13 > .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -3583,7 +3431,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   margin-bottom: 0.8rem;
 }
 
-.c16 {
+.c15 {
   background-color: transparent;
   border: 0.2rem solid transparent;
   -webkit-text-decoration: none;
@@ -3613,17 +3461,69 @@ exports[`DatePicker component popover placement should render properly with "lef
   align-items: center;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
 }
 
-.c16:disabled {
+.c15:disabled {
   cursor: not-allowed;
   color: #b0bcc8;
 }
 
-.c16:hover {
+.c15:hover {
   background-color: #eff2f4;
+}
+
+.c17 {
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0.4rem;
+  box-sizing: border-box;
+  height: 3.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17:focus {
+  outline: none;
+}
+
+.c17:disabled {
+  cursor: not-allowed;
+  color: #b0bcc8;
+}
+
+.c17:hover {
+  background-color: #eff2f4;
+}
+
+.c17 span {
+  font-weight: bold;
+}
+
+.c17,
+.c17:hover {
+  background-color: #126AFA;
+  color: #ffffff;
 }
 
 .c18 {
@@ -3668,59 +3568,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   background-color: #eff2f4;
 }
 
-.c18 span {
-  font-weight: bold;
-}
-
-.c18,
-.c18:hover {
-  background-color: #126AFA;
-  color: #ffffff;
-}
-
-.c19 {
-  background-color: transparent;
-  border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0.4rem;
-  box-sizing: border-box;
-  height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c19:focus {
-  outline: none;
-}
-
-.c19:disabled {
-  cursor: not-allowed;
-  color: #b0bcc8;
-}
-
-.c19:hover {
-  background-color: #eff2f4;
-}
-
-.c20 .c0 {
+.c19 .c0 {
   z-index: 1000;
   position: absolute;
   right: calc(100% + 0px);
@@ -3775,7 +3623,7 @@ exports[`DatePicker component popover placement should render properly with "lef
         </div>
       </div>
       <div
-        class="c11"
+        class="c4"
         id="dob-calendar-year-selector-wrapper"
       >
         <div
@@ -3810,10 +3658,10 @@ exports[`DatePicker component popover placement should render properly with "lef
       </div>
     </div>
     <button
-      class="c12 calendar-month-navigation-go-back"
+      class="c11 calendar-month-navigation-go-back"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -3828,10 +3676,10 @@ exports[`DatePicker component popover placement should render properly with "lef
       </svg>
     </button>
     <button
-      class="c12 calendar-month-navigation-go-forward"
+      class="c11 calendar-month-navigation-go-forward"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -3847,424 +3695,424 @@ exports[`DatePicker component popover placement should render properly with "lef
     </button>
   </div>
   <div
-    class="c14"
+    class="c13"
   >
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <button
-      class="c16"
+      class="c15"
       title="Sun Dec 29 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Mon Dec 30 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Tue Dec 31 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c18"
+      class="c17"
       title="Wed Jan 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 02 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         2
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 03 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         3
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 04 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         4
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 05 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         5
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 06 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         6
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 07 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         7
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 08 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         8
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 09 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         9
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 10 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         10
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 11 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         11
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 12 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         12
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 13 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         13
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 14 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         14
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 15 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         15
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 16 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         16
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 17 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         17
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 18 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         18
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 19 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         19
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 20 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         20
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 21 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         21
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 22 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         22
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 23 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         23
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 24 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         24
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 25 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         25
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 26 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         26
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 27 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         27
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 28 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         28
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 29 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 30 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 31 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Sat Feb 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
@@ -4289,7 +4137,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   fill: #607890;
 }
 
-.c13 {
+.c12 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -4297,7 +4145,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   cursor: inherit;
 }
 
-.c13 * {
+.c12 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -4317,7 +4165,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   text-align: initial;
 }
 
-.c15 {
+.c14 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -4330,7 +4178,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   text-align: center;
 }
 
-.c17 {
+.c16 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -4472,66 +4320,28 @@ exports[`DatePicker component popover placement should render properly with "lef
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 7rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c4 .c21 {
+.c4 .c20 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c4 .c21 label {
+.c4 .c20 label {
   pointer-events: none;
 }
 
-.c4 .c21 div,
-.c4 .c21 input,
-.c4 .c21 label {
+.c4 .c20 div,
+.c4 .c20 input,
+.c4 .c20 label {
   cursor: pointer;
 }
 
-.c4 .c21 .c22 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c11 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 8rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c11 .c21 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c11 .c21 label {
-  pointer-events: none;
-}
-
-.c11 .c21 div,
-.c11 .c21 input,
-.c11 .c21 label {
-  cursor: pointer;
-}
-
-.c11 .c21 .c22 {
+.c4 .c20 .c21 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -4553,7 +4363,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   height: max-content;
 }
 
-.c12 {
+.c11 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -4577,15 +4387,15 @@ exports[`DatePicker component popover placement should render properly with "lef
   align-items: center;
 }
 
-.c12 svg {
+.c11 svg {
   fill: #435465;
 }
 
-.c12:not(:disabled):hover {
+.c11:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c12:not(:disabled):active {
+.c11:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -4626,23 +4436,23 @@ exports[`DatePicker component popover placement should render properly with "lef
   overflow: auto;
 }
 
-.c3 .c21 {
+.c3 .c20 {
   min-width: unset;
   max-width: 9.5rem;
 }
 
-.c3 .c21 > div {
+.c3 .c20 > div {
   height: 3.5rem;
   padding: 0 0 0 1rem;
 }
 
-.c14 {
+.c13 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
 }
 
-.c14 > .c7 {
+.c13 > .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -4652,7 +4462,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   margin-bottom: 0.8rem;
 }
 
-.c16 {
+.c15 {
   background-color: transparent;
   border: 0.2rem solid transparent;
   -webkit-text-decoration: none;
@@ -4682,17 +4492,69 @@ exports[`DatePicker component popover placement should render properly with "lef
   align-items: center;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
 }
 
-.c16:disabled {
+.c15:disabled {
   cursor: not-allowed;
   color: #b0bcc8;
 }
 
-.c16:hover {
+.c15:hover {
   background-color: #eff2f4;
+}
+
+.c17 {
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0.4rem;
+  box-sizing: border-box;
+  height: 3.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17:focus {
+  outline: none;
+}
+
+.c17:disabled {
+  cursor: not-allowed;
+  color: #b0bcc8;
+}
+
+.c17:hover {
+  background-color: #eff2f4;
+}
+
+.c17 span {
+  font-weight: bold;
+}
+
+.c17,
+.c17:hover {
+  background-color: #126AFA;
+  color: #ffffff;
 }
 
 .c18 {
@@ -4737,59 +4599,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   background-color: #eff2f4;
 }
 
-.c18 span {
-  font-weight: bold;
-}
-
-.c18,
-.c18:hover {
-  background-color: #126AFA;
-  color: #ffffff;
-}
-
-.c19 {
-  background-color: transparent;
-  border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0.4rem;
-  box-sizing: border-box;
-  height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c19:focus {
-  outline: none;
-}
-
-.c19:disabled {
-  cursor: not-allowed;
-  color: #b0bcc8;
-}
-
-.c19:hover {
-  background-color: #eff2f4;
-}
-
-.c20 .c0 {
+.c19 .c0 {
   z-index: 1000;
   position: absolute;
   right: calc(100% + 0px);
@@ -4841,7 +4651,7 @@ exports[`DatePicker component popover placement should render properly with "lef
         </div>
       </div>
       <div
-        class="c11"
+        class="c4"
         id="dob-calendar-year-selector-wrapper"
       >
         <div
@@ -4876,10 +4686,10 @@ exports[`DatePicker component popover placement should render properly with "lef
       </div>
     </div>
     <button
-      class="c12 calendar-month-navigation-go-back"
+      class="c11 calendar-month-navigation-go-back"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -4894,10 +4704,10 @@ exports[`DatePicker component popover placement should render properly with "lef
       </svg>
     </button>
     <button
-      class="c12 calendar-month-navigation-go-forward"
+      class="c11 calendar-month-navigation-go-forward"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -4913,424 +4723,424 @@ exports[`DatePicker component popover placement should render properly with "lef
     </button>
   </div>
   <div
-    class="c14"
+    class="c13"
   >
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <button
-      class="c16"
+      class="c15"
       title="Sun Dec 29 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Mon Dec 30 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Tue Dec 31 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c18"
+      class="c17"
       title="Wed Jan 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 02 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         2
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 03 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         3
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 04 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         4
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 05 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         5
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 06 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         6
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 07 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         7
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 08 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         8
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 09 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         9
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 10 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         10
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 11 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         11
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 12 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         12
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 13 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         13
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 14 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         14
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 15 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         15
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 16 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         16
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 17 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         17
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 18 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         18
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 19 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         19
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 20 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         20
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 21 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         21
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 22 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         22
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 23 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         23
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 24 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         24
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 25 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         25
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 26 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         26
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 27 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         27
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 28 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         28
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 29 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 30 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 31 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Sat Feb 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
@@ -5355,7 +5165,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   fill: #607890;
 }
 
-.c13 {
+.c12 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -5363,7 +5173,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   cursor: inherit;
 }
 
-.c13 * {
+.c12 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -5383,7 +5193,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   text-align: initial;
 }
 
-.c15 {
+.c14 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -5396,7 +5206,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   text-align: center;
 }
 
-.c17 {
+.c16 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -5538,66 +5348,28 @@ exports[`DatePicker component popover placement should render properly with "lef
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 7rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c4 .c21 {
+.c4 .c20 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c4 .c21 label {
+.c4 .c20 label {
   pointer-events: none;
 }
 
-.c4 .c21 div,
-.c4 .c21 input,
-.c4 .c21 label {
+.c4 .c20 div,
+.c4 .c20 input,
+.c4 .c20 label {
   cursor: pointer;
 }
 
-.c4 .c21 .c22 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c11 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 8rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c11 .c21 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c11 .c21 label {
-  pointer-events: none;
-}
-
-.c11 .c21 div,
-.c11 .c21 input,
-.c11 .c21 label {
-  cursor: pointer;
-}
-
-.c11 .c21 .c22 {
+.c4 .c20 .c21 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -5619,7 +5391,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   height: max-content;
 }
 
-.c12 {
+.c11 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -5643,15 +5415,15 @@ exports[`DatePicker component popover placement should render properly with "lef
   align-items: center;
 }
 
-.c12 svg {
+.c11 svg {
   fill: #435465;
 }
 
-.c12:not(:disabled):hover {
+.c11:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c12:not(:disabled):active {
+.c11:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -5692,23 +5464,23 @@ exports[`DatePicker component popover placement should render properly with "lef
   overflow: auto;
 }
 
-.c3 .c21 {
+.c3 .c20 {
   min-width: unset;
   max-width: 9.5rem;
 }
 
-.c3 .c21 > div {
+.c3 .c20 > div {
   height: 3.5rem;
   padding: 0 0 0 1rem;
 }
 
-.c14 {
+.c13 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
 }
 
-.c14 > .c7 {
+.c13 > .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5718,7 +5490,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   margin-bottom: 0.8rem;
 }
 
-.c16 {
+.c15 {
   background-color: transparent;
   border: 0.2rem solid transparent;
   -webkit-text-decoration: none;
@@ -5748,17 +5520,69 @@ exports[`DatePicker component popover placement should render properly with "lef
   align-items: center;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
 }
 
-.c16:disabled {
+.c15:disabled {
   cursor: not-allowed;
   color: #b0bcc8;
 }
 
-.c16:hover {
+.c15:hover {
   background-color: #eff2f4;
+}
+
+.c17 {
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0.4rem;
+  box-sizing: border-box;
+  height: 3.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17:focus {
+  outline: none;
+}
+
+.c17:disabled {
+  cursor: not-allowed;
+  color: #b0bcc8;
+}
+
+.c17:hover {
+  background-color: #eff2f4;
+}
+
+.c17 span {
+  font-weight: bold;
+}
+
+.c17,
+.c17:hover {
+  background-color: #126AFA;
+  color: #ffffff;
 }
 
 .c18 {
@@ -5803,59 +5627,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   background-color: #eff2f4;
 }
 
-.c18 span {
-  font-weight: bold;
-}
-
-.c18,
-.c18:hover {
-  background-color: #126AFA;
-  color: #ffffff;
-}
-
-.c19 {
-  background-color: transparent;
-  border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0.4rem;
-  box-sizing: border-box;
-  height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c19:focus {
-  outline: none;
-}
-
-.c19:disabled {
-  cursor: not-allowed;
-  color: #b0bcc8;
-}
-
-.c19:hover {
-  background-color: #eff2f4;
-}
-
-.c20 .c0 {
+.c19 .c0 {
   z-index: 1000;
   position: absolute;
   right: calc(100% + 0px);
@@ -5907,7 +5679,7 @@ exports[`DatePicker component popover placement should render properly with "lef
         </div>
       </div>
       <div
-        class="c11"
+        class="c4"
         id="dob-calendar-year-selector-wrapper"
       >
         <div
@@ -5942,10 +5714,10 @@ exports[`DatePicker component popover placement should render properly with "lef
       </div>
     </div>
     <button
-      class="c12 calendar-month-navigation-go-back"
+      class="c11 calendar-month-navigation-go-back"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -5960,10 +5732,10 @@ exports[`DatePicker component popover placement should render properly with "lef
       </svg>
     </button>
     <button
-      class="c12 calendar-month-navigation-go-forward"
+      class="c11 calendar-month-navigation-go-forward"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -5979,424 +5751,424 @@ exports[`DatePicker component popover placement should render properly with "lef
     </button>
   </div>
   <div
-    class="c14"
+    class="c13"
   >
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <button
-      class="c16"
+      class="c15"
       title="Sun Dec 29 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Mon Dec 30 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Tue Dec 31 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c18"
+      class="c17"
       title="Wed Jan 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 02 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         2
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 03 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         3
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 04 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         4
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 05 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         5
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 06 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         6
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 07 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         7
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 08 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         8
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 09 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         9
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 10 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         10
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 11 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         11
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 12 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         12
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 13 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         13
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 14 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         14
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 15 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         15
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 16 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         16
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 17 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         17
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 18 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         18
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 19 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         19
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 20 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         20
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 21 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         21
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 22 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         22
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 23 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         23
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 24 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         24
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 25 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         25
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 26 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         26
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 27 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         27
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 28 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         28
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 29 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 30 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 31 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Sat Feb 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
@@ -6421,7 +6193,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   fill: #607890;
 }
 
-.c13 {
+.c12 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -6429,7 +6201,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   cursor: inherit;
 }
 
-.c13 * {
+.c12 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -6449,7 +6221,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   text-align: initial;
 }
 
-.c15 {
+.c14 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -6462,7 +6234,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   text-align: center;
 }
 
-.c17 {
+.c16 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -6604,66 +6376,28 @@ exports[`DatePicker component popover placement should render properly with "rig
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 7rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c4 .c21 {
+.c4 .c20 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c4 .c21 label {
+.c4 .c20 label {
   pointer-events: none;
 }
 
-.c4 .c21 div,
-.c4 .c21 input,
-.c4 .c21 label {
+.c4 .c20 div,
+.c4 .c20 input,
+.c4 .c20 label {
   cursor: pointer;
 }
 
-.c4 .c21 .c22 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c11 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 8rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c11 .c21 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c11 .c21 label {
-  pointer-events: none;
-}
-
-.c11 .c21 div,
-.c11 .c21 input,
-.c11 .c21 label {
-  cursor: pointer;
-}
-
-.c11 .c21 .c22 {
+.c4 .c20 .c21 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -6685,7 +6419,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   height: max-content;
 }
 
-.c12 {
+.c11 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -6709,15 +6443,15 @@ exports[`DatePicker component popover placement should render properly with "rig
   align-items: center;
 }
 
-.c12 svg {
+.c11 svg {
   fill: #435465;
 }
 
-.c12:not(:disabled):hover {
+.c11:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c12:not(:disabled):active {
+.c11:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -6758,23 +6492,23 @@ exports[`DatePicker component popover placement should render properly with "rig
   overflow: auto;
 }
 
-.c3 .c21 {
+.c3 .c20 {
   min-width: unset;
   max-width: 9.5rem;
 }
 
-.c3 .c21 > div {
+.c3 .c20 > div {
   height: 3.5rem;
   padding: 0 0 0 1rem;
 }
 
-.c14 {
+.c13 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
 }
 
-.c14 > .c7 {
+.c13 > .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -6784,7 +6518,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   margin-bottom: 0.8rem;
 }
 
-.c16 {
+.c15 {
   background-color: transparent;
   border: 0.2rem solid transparent;
   -webkit-text-decoration: none;
@@ -6814,17 +6548,69 @@ exports[`DatePicker component popover placement should render properly with "rig
   align-items: center;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
 }
 
-.c16:disabled {
+.c15:disabled {
   cursor: not-allowed;
   color: #b0bcc8;
 }
 
-.c16:hover {
+.c15:hover {
   background-color: #eff2f4;
+}
+
+.c17 {
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0.4rem;
+  box-sizing: border-box;
+  height: 3.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17:focus {
+  outline: none;
+}
+
+.c17:disabled {
+  cursor: not-allowed;
+  color: #b0bcc8;
+}
+
+.c17:hover {
+  background-color: #eff2f4;
+}
+
+.c17 span {
+  font-weight: bold;
+}
+
+.c17,
+.c17:hover {
+  background-color: #126AFA;
+  color: #ffffff;
 }
 
 .c18 {
@@ -6869,59 +6655,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   background-color: #eff2f4;
 }
 
-.c18 span {
-  font-weight: bold;
-}
-
-.c18,
-.c18:hover {
-  background-color: #126AFA;
-  color: #ffffff;
-}
-
-.c19 {
-  background-color: transparent;
-  border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0.4rem;
-  box-sizing: border-box;
-  height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c19:focus {
-  outline: none;
-}
-
-.c19:disabled {
-  cursor: not-allowed;
-  color: #b0bcc8;
-}
-
-.c19:hover {
-  background-color: #eff2f4;
-}
-
-.c20 .c0 {
+.c19 .c0 {
   z-index: 1000;
   position: absolute;
   left: calc(100% + 0px);
@@ -6976,7 +6710,7 @@ exports[`DatePicker component popover placement should render properly with "rig
         </div>
       </div>
       <div
-        class="c11"
+        class="c4"
         id="dob-calendar-year-selector-wrapper"
       >
         <div
@@ -7011,10 +6745,10 @@ exports[`DatePicker component popover placement should render properly with "rig
       </div>
     </div>
     <button
-      class="c12 calendar-month-navigation-go-back"
+      class="c11 calendar-month-navigation-go-back"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -7029,10 +6763,10 @@ exports[`DatePicker component popover placement should render properly with "rig
       </svg>
     </button>
     <button
-      class="c12 calendar-month-navigation-go-forward"
+      class="c11 calendar-month-navigation-go-forward"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -7048,424 +6782,424 @@ exports[`DatePicker component popover placement should render properly with "rig
     </button>
   </div>
   <div
-    class="c14"
+    class="c13"
   >
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <button
-      class="c16"
+      class="c15"
       title="Sun Dec 29 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Mon Dec 30 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Tue Dec 31 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c18"
+      class="c17"
       title="Wed Jan 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 02 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         2
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 03 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         3
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 04 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         4
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 05 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         5
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 06 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         6
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 07 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         7
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 08 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         8
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 09 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         9
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 10 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         10
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 11 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         11
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 12 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         12
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 13 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         13
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 14 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         14
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 15 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         15
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 16 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         16
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 17 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         17
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 18 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         18
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 19 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         19
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 20 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         20
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 21 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         21
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 22 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         22
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 23 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         23
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 24 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         24
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 25 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         25
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 26 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         26
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 27 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         27
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 28 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         28
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 29 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 30 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 31 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Sat Feb 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
@@ -7490,7 +7224,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   fill: #607890;
 }
 
-.c13 {
+.c12 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -7498,7 +7232,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   cursor: inherit;
 }
 
-.c13 * {
+.c12 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -7518,7 +7252,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   text-align: initial;
 }
 
-.c15 {
+.c14 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -7531,7 +7265,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   text-align: center;
 }
 
-.c17 {
+.c16 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -7673,66 +7407,28 @@ exports[`DatePicker component popover placement should render properly with "rig
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 7rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c4 .c21 {
+.c4 .c20 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c4 .c21 label {
+.c4 .c20 label {
   pointer-events: none;
 }
 
-.c4 .c21 div,
-.c4 .c21 input,
-.c4 .c21 label {
+.c4 .c20 div,
+.c4 .c20 input,
+.c4 .c20 label {
   cursor: pointer;
 }
 
-.c4 .c21 .c22 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c11 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 8rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c11 .c21 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c11 .c21 label {
-  pointer-events: none;
-}
-
-.c11 .c21 div,
-.c11 .c21 input,
-.c11 .c21 label {
-  cursor: pointer;
-}
-
-.c11 .c21 .c22 {
+.c4 .c20 .c21 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -7754,7 +7450,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   height: max-content;
 }
 
-.c12 {
+.c11 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -7778,15 +7474,15 @@ exports[`DatePicker component popover placement should render properly with "rig
   align-items: center;
 }
 
-.c12 svg {
+.c11 svg {
   fill: #435465;
 }
 
-.c12:not(:disabled):hover {
+.c11:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c12:not(:disabled):active {
+.c11:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -7827,23 +7523,23 @@ exports[`DatePicker component popover placement should render properly with "rig
   overflow: auto;
 }
 
-.c3 .c21 {
+.c3 .c20 {
   min-width: unset;
   max-width: 9.5rem;
 }
 
-.c3 .c21 > div {
+.c3 .c20 > div {
   height: 3.5rem;
   padding: 0 0 0 1rem;
 }
 
-.c14 {
+.c13 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
 }
 
-.c14 > .c7 {
+.c13 > .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -7853,7 +7549,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   margin-bottom: 0.8rem;
 }
 
-.c16 {
+.c15 {
   background-color: transparent;
   border: 0.2rem solid transparent;
   -webkit-text-decoration: none;
@@ -7883,17 +7579,69 @@ exports[`DatePicker component popover placement should render properly with "rig
   align-items: center;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
 }
 
-.c16:disabled {
+.c15:disabled {
   cursor: not-allowed;
   color: #b0bcc8;
 }
 
-.c16:hover {
+.c15:hover {
   background-color: #eff2f4;
+}
+
+.c17 {
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0.4rem;
+  box-sizing: border-box;
+  height: 3.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17:focus {
+  outline: none;
+}
+
+.c17:disabled {
+  cursor: not-allowed;
+  color: #b0bcc8;
+}
+
+.c17:hover {
+  background-color: #eff2f4;
+}
+
+.c17 span {
+  font-weight: bold;
+}
+
+.c17,
+.c17:hover {
+  background-color: #126AFA;
+  color: #ffffff;
 }
 
 .c18 {
@@ -7938,59 +7686,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   background-color: #eff2f4;
 }
 
-.c18 span {
-  font-weight: bold;
-}
-
-.c18,
-.c18:hover {
-  background-color: #126AFA;
-  color: #ffffff;
-}
-
-.c19 {
-  background-color: transparent;
-  border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0.4rem;
-  box-sizing: border-box;
-  height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c19:focus {
-  outline: none;
-}
-
-.c19:disabled {
-  cursor: not-allowed;
-  color: #b0bcc8;
-}
-
-.c19:hover {
-  background-color: #eff2f4;
-}
-
-.c20 .c0 {
+.c19 .c0 {
   z-index: 1000;
   position: absolute;
   bottom: 0;
@@ -8042,7 +7738,7 @@ exports[`DatePicker component popover placement should render properly with "rig
         </div>
       </div>
       <div
-        class="c11"
+        class="c4"
         id="dob-calendar-year-selector-wrapper"
       >
         <div
@@ -8077,10 +7773,10 @@ exports[`DatePicker component popover placement should render properly with "rig
       </div>
     </div>
     <button
-      class="c12 calendar-month-navigation-go-back"
+      class="c11 calendar-month-navigation-go-back"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -8095,10 +7791,10 @@ exports[`DatePicker component popover placement should render properly with "rig
       </svg>
     </button>
     <button
-      class="c12 calendar-month-navigation-go-forward"
+      class="c11 calendar-month-navigation-go-forward"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -8114,424 +7810,424 @@ exports[`DatePicker component popover placement should render properly with "rig
     </button>
   </div>
   <div
-    class="c14"
+    class="c13"
   >
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <button
-      class="c16"
+      class="c15"
       title="Sun Dec 29 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Mon Dec 30 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Tue Dec 31 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c18"
+      class="c17"
       title="Wed Jan 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 02 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         2
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 03 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         3
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 04 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         4
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 05 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         5
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 06 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         6
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 07 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         7
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 08 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         8
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 09 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         9
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 10 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         10
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 11 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         11
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 12 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         12
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 13 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         13
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 14 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         14
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 15 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         15
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 16 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         16
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 17 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         17
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 18 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         18
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 19 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         19
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 20 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         20
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 21 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         21
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 22 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         22
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 23 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         23
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 24 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         24
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 25 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         25
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 26 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         26
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 27 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         27
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 28 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         28
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 29 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 30 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 31 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Sat Feb 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
@@ -8556,7 +8252,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   fill: #607890;
 }
 
-.c13 {
+.c12 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -8564,7 +8260,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   cursor: inherit;
 }
 
-.c13 * {
+.c12 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -8584,7 +8280,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   text-align: initial;
 }
 
-.c15 {
+.c14 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -8597,7 +8293,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   text-align: center;
 }
 
-.c17 {
+.c16 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -8739,66 +8435,28 @@ exports[`DatePicker component popover placement should render properly with "rig
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 7rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c4 .c21 {
+.c4 .c20 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c4 .c21 label {
+.c4 .c20 label {
   pointer-events: none;
 }
 
-.c4 .c21 div,
-.c4 .c21 input,
-.c4 .c21 label {
+.c4 .c20 div,
+.c4 .c20 input,
+.c4 .c20 label {
   cursor: pointer;
 }
 
-.c4 .c21 .c22 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c11 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 8rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c11 .c21 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c11 .c21 label {
-  pointer-events: none;
-}
-
-.c11 .c21 div,
-.c11 .c21 input,
-.c11 .c21 label {
-  cursor: pointer;
-}
-
-.c11 .c21 .c22 {
+.c4 .c20 .c21 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -8820,7 +8478,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   height: max-content;
 }
 
-.c12 {
+.c11 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -8844,15 +8502,15 @@ exports[`DatePicker component popover placement should render properly with "rig
   align-items: center;
 }
 
-.c12 svg {
+.c11 svg {
   fill: #435465;
 }
 
-.c12:not(:disabled):hover {
+.c11:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c12:not(:disabled):active {
+.c11:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -8893,23 +8551,23 @@ exports[`DatePicker component popover placement should render properly with "rig
   overflow: auto;
 }
 
-.c3 .c21 {
+.c3 .c20 {
   min-width: unset;
   max-width: 9.5rem;
 }
 
-.c3 .c21 > div {
+.c3 .c20 > div {
   height: 3.5rem;
   padding: 0 0 0 1rem;
 }
 
-.c14 {
+.c13 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
 }
 
-.c14 > .c7 {
+.c13 > .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -8919,7 +8577,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   margin-bottom: 0.8rem;
 }
 
-.c16 {
+.c15 {
   background-color: transparent;
   border: 0.2rem solid transparent;
   -webkit-text-decoration: none;
@@ -8949,17 +8607,69 @@ exports[`DatePicker component popover placement should render properly with "rig
   align-items: center;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
 }
 
-.c16:disabled {
+.c15:disabled {
   cursor: not-allowed;
   color: #b0bcc8;
 }
 
-.c16:hover {
+.c15:hover {
   background-color: #eff2f4;
+}
+
+.c17 {
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0.4rem;
+  box-sizing: border-box;
+  height: 3.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17:focus {
+  outline: none;
+}
+
+.c17:disabled {
+  cursor: not-allowed;
+  color: #b0bcc8;
+}
+
+.c17:hover {
+  background-color: #eff2f4;
+}
+
+.c17 span {
+  font-weight: bold;
+}
+
+.c17,
+.c17:hover {
+  background-color: #126AFA;
+  color: #ffffff;
 }
 
 .c18 {
@@ -9004,59 +8714,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   background-color: #eff2f4;
 }
 
-.c18 span {
-  font-weight: bold;
-}
-
-.c18,
-.c18:hover {
-  background-color: #126AFA;
-  color: #ffffff;
-}
-
-.c19 {
-  background-color: transparent;
-  border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0.4rem;
-  box-sizing: border-box;
-  height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c19:focus {
-  outline: none;
-}
-
-.c19:disabled {
-  cursor: not-allowed;
-  color: #b0bcc8;
-}
-
-.c19:hover {
-  background-color: #eff2f4;
-}
-
-.c20 .c0 {
+.c19 .c0 {
   z-index: 1000;
   position: absolute;
   top: 0%;
@@ -9108,7 +8766,7 @@ exports[`DatePicker component popover placement should render properly with "rig
         </div>
       </div>
       <div
-        class="c11"
+        class="c4"
         id="dob-calendar-year-selector-wrapper"
       >
         <div
@@ -9143,10 +8801,10 @@ exports[`DatePicker component popover placement should render properly with "rig
       </div>
     </div>
     <button
-      class="c12 calendar-month-navigation-go-back"
+      class="c11 calendar-month-navigation-go-back"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -9161,10 +8819,10 @@ exports[`DatePicker component popover placement should render properly with "rig
       </svg>
     </button>
     <button
-      class="c12 calendar-month-navigation-go-forward"
+      class="c11 calendar-month-navigation-go-forward"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -9180,424 +8838,424 @@ exports[`DatePicker component popover placement should render properly with "rig
     </button>
   </div>
   <div
-    class="c14"
+    class="c13"
   >
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <button
-      class="c16"
+      class="c15"
       title="Sun Dec 29 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Mon Dec 30 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Tue Dec 31 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c18"
+      class="c17"
       title="Wed Jan 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 02 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         2
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 03 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         3
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 04 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         4
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 05 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         5
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 06 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         6
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 07 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         7
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 08 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         8
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 09 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         9
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 10 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         10
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 11 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         11
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 12 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         12
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 13 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         13
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 14 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         14
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 15 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         15
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 16 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         16
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 17 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         17
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 18 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         18
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 19 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         19
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 20 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         20
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 21 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         21
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 22 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         22
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 23 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         23
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 24 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         24
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 25 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         25
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 26 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         26
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 27 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         27
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 28 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         28
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 29 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 30 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 31 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Sat Feb 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
@@ -9622,7 +9280,7 @@ exports[`DatePicker component popover placement should render properly with "top
   fill: #607890;
 }
 
-.c13 {
+.c12 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -9630,7 +9288,7 @@ exports[`DatePicker component popover placement should render properly with "top
   cursor: inherit;
 }
 
-.c13 * {
+.c12 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -9650,7 +9308,7 @@ exports[`DatePicker component popover placement should render properly with "top
   text-align: initial;
 }
 
-.c15 {
+.c14 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -9663,7 +9321,7 @@ exports[`DatePicker component popover placement should render properly with "top
   text-align: center;
 }
 
-.c17 {
+.c16 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -9805,66 +9463,28 @@ exports[`DatePicker component popover placement should render properly with "top
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 7rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c4 .c21 {
+.c4 .c20 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c4 .c21 label {
+.c4 .c20 label {
   pointer-events: none;
 }
 
-.c4 .c21 div,
-.c4 .c21 input,
-.c4 .c21 label {
+.c4 .c20 div,
+.c4 .c20 input,
+.c4 .c20 label {
   cursor: pointer;
 }
 
-.c4 .c21 .c22 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c11 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 8rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c11 .c21 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c11 .c21 label {
-  pointer-events: none;
-}
-
-.c11 .c21 div,
-.c11 .c21 input,
-.c11 .c21 label {
-  cursor: pointer;
-}
-
-.c11 .c21 .c22 {
+.c4 .c20 .c21 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -9886,7 +9506,7 @@ exports[`DatePicker component popover placement should render properly with "top
   height: max-content;
 }
 
-.c12 {
+.c11 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -9910,15 +9530,15 @@ exports[`DatePicker component popover placement should render properly with "top
   align-items: center;
 }
 
-.c12 svg {
+.c11 svg {
   fill: #435465;
 }
 
-.c12:not(:disabled):hover {
+.c11:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c12:not(:disabled):active {
+.c11:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -9959,23 +9579,23 @@ exports[`DatePicker component popover placement should render properly with "top
   overflow: auto;
 }
 
-.c3 .c21 {
+.c3 .c20 {
   min-width: unset;
   max-width: 9.5rem;
 }
 
-.c3 .c21 > div {
+.c3 .c20 > div {
   height: 3.5rem;
   padding: 0 0 0 1rem;
 }
 
-.c14 {
+.c13 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
 }
 
-.c14 > .c7 {
+.c13 > .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -9985,7 +9605,7 @@ exports[`DatePicker component popover placement should render properly with "top
   margin-bottom: 0.8rem;
 }
 
-.c16 {
+.c15 {
   background-color: transparent;
   border: 0.2rem solid transparent;
   -webkit-text-decoration: none;
@@ -10015,17 +9635,69 @@ exports[`DatePicker component popover placement should render properly with "top
   align-items: center;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
 }
 
-.c16:disabled {
+.c15:disabled {
   cursor: not-allowed;
   color: #b0bcc8;
 }
 
-.c16:hover {
+.c15:hover {
   background-color: #eff2f4;
+}
+
+.c17 {
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0.4rem;
+  box-sizing: border-box;
+  height: 3.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17:focus {
+  outline: none;
+}
+
+.c17:disabled {
+  cursor: not-allowed;
+  color: #b0bcc8;
+}
+
+.c17:hover {
+  background-color: #eff2f4;
+}
+
+.c17 span {
+  font-weight: bold;
+}
+
+.c17,
+.c17:hover {
+  background-color: #126AFA;
+  color: #ffffff;
 }
 
 .c18 {
@@ -10070,59 +9742,7 @@ exports[`DatePicker component popover placement should render properly with "top
   background-color: #eff2f4;
 }
 
-.c18 span {
-  font-weight: bold;
-}
-
-.c18,
-.c18:hover {
-  background-color: #126AFA;
-  color: #ffffff;
-}
-
-.c19 {
-  background-color: transparent;
-  border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0.4rem;
-  box-sizing: border-box;
-  height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c19:focus {
-  outline: none;
-}
-
-.c19:disabled {
-  cursor: not-allowed;
-  color: #b0bcc8;
-}
-
-.c19:hover {
-  background-color: #eff2f4;
-}
-
-.c20 .c0 {
+.c19 .c0 {
   z-index: 1000;
   position: absolute;
   bottom: calc(100% + 0px);
@@ -10177,7 +9797,7 @@ exports[`DatePicker component popover placement should render properly with "top
         </div>
       </div>
       <div
-        class="c11"
+        class="c4"
         id="dob-calendar-year-selector-wrapper"
       >
         <div
@@ -10212,10 +9832,10 @@ exports[`DatePicker component popover placement should render properly with "top
       </div>
     </div>
     <button
-      class="c12 calendar-month-navigation-go-back"
+      class="c11 calendar-month-navigation-go-back"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -10230,10 +9850,10 @@ exports[`DatePicker component popover placement should render properly with "top
       </svg>
     </button>
     <button
-      class="c12 calendar-month-navigation-go-forward"
+      class="c11 calendar-month-navigation-go-forward"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -10249,424 +9869,424 @@ exports[`DatePicker component popover placement should render properly with "top
     </button>
   </div>
   <div
-    class="c14"
+    class="c13"
   >
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <button
-      class="c16"
+      class="c15"
       title="Sun Dec 29 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Mon Dec 30 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Tue Dec 31 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c18"
+      class="c17"
       title="Wed Jan 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 02 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         2
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 03 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         3
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 04 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         4
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 05 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         5
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 06 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         6
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 07 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         7
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 08 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         8
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 09 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         9
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 10 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         10
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 11 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         11
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 12 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         12
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 13 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         13
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 14 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         14
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 15 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         15
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 16 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         16
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 17 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         17
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 18 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         18
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 19 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         19
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 20 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         20
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 21 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         21
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 22 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         22
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 23 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         23
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 24 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         24
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 25 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         25
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 26 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         26
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 27 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         27
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 28 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         28
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 29 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 30 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 31 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Sat Feb 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
@@ -10691,7 +10311,7 @@ exports[`DatePicker component popover placement should render properly with "top
   fill: #607890;
 }
 
-.c13 {
+.c12 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -10699,7 +10319,7 @@ exports[`DatePicker component popover placement should render properly with "top
   cursor: inherit;
 }
 
-.c13 * {
+.c12 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -10719,7 +10339,7 @@ exports[`DatePicker component popover placement should render properly with "top
   text-align: initial;
 }
 
-.c15 {
+.c14 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -10732,7 +10352,7 @@ exports[`DatePicker component popover placement should render properly with "top
   text-align: center;
 }
 
-.c17 {
+.c16 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -10874,66 +10494,28 @@ exports[`DatePicker component popover placement should render properly with "top
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 7rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c4 .c21 {
+.c4 .c20 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c4 .c21 label {
+.c4 .c20 label {
   pointer-events: none;
 }
 
-.c4 .c21 div,
-.c4 .c21 input,
-.c4 .c21 label {
+.c4 .c20 div,
+.c4 .c20 input,
+.c4 .c20 label {
   cursor: pointer;
 }
 
-.c4 .c21 .c22 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c11 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 8rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c11 .c21 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c11 .c21 label {
-  pointer-events: none;
-}
-
-.c11 .c21 div,
-.c11 .c21 input,
-.c11 .c21 label {
-  cursor: pointer;
-}
-
-.c11 .c21 .c22 {
+.c4 .c20 .c21 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -10955,7 +10537,7 @@ exports[`DatePicker component popover placement should render properly with "top
   height: max-content;
 }
 
-.c12 {
+.c11 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -10979,15 +10561,15 @@ exports[`DatePicker component popover placement should render properly with "top
   align-items: center;
 }
 
-.c12 svg {
+.c11 svg {
   fill: #435465;
 }
 
-.c12:not(:disabled):hover {
+.c11:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c12:not(:disabled):active {
+.c11:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -11028,23 +10610,23 @@ exports[`DatePicker component popover placement should render properly with "top
   overflow: auto;
 }
 
-.c3 .c21 {
+.c3 .c20 {
   min-width: unset;
   max-width: 9.5rem;
 }
 
-.c3 .c21 > div {
+.c3 .c20 > div {
   height: 3.5rem;
   padding: 0 0 0 1rem;
 }
 
-.c14 {
+.c13 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
 }
 
-.c14 > .c7 {
+.c13 > .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -11054,7 +10636,7 @@ exports[`DatePicker component popover placement should render properly with "top
   margin-bottom: 0.8rem;
 }
 
-.c16 {
+.c15 {
   background-color: transparent;
   border: 0.2rem solid transparent;
   -webkit-text-decoration: none;
@@ -11084,17 +10666,69 @@ exports[`DatePicker component popover placement should render properly with "top
   align-items: center;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
 }
 
-.c16:disabled {
+.c15:disabled {
   cursor: not-allowed;
   color: #b0bcc8;
 }
 
-.c16:hover {
+.c15:hover {
   background-color: #eff2f4;
+}
+
+.c17 {
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0.4rem;
+  box-sizing: border-box;
+  height: 3.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17:focus {
+  outline: none;
+}
+
+.c17:disabled {
+  cursor: not-allowed;
+  color: #b0bcc8;
+}
+
+.c17:hover {
+  background-color: #eff2f4;
+}
+
+.c17 span {
+  font-weight: bold;
+}
+
+.c17,
+.c17:hover {
+  background-color: #126AFA;
+  color: #ffffff;
 }
 
 .c18 {
@@ -11139,59 +10773,7 @@ exports[`DatePicker component popover placement should render properly with "top
   background-color: #eff2f4;
 }
 
-.c18 span {
-  font-weight: bold;
-}
-
-.c18,
-.c18:hover {
-  background-color: #126AFA;
-  color: #ffffff;
-}
-
-.c19 {
-  background-color: transparent;
-  border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0.4rem;
-  box-sizing: border-box;
-  height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c19:focus {
-  outline: none;
-}
-
-.c19:disabled {
-  cursor: not-allowed;
-  color: #b0bcc8;
-}
-
-.c19:hover {
-  background-color: #eff2f4;
-}
-
-.c20 .c0 {
+.c19 .c0 {
   z-index: 1000;
   position: absolute;
   bottom: calc(100% + 0px);
@@ -11243,7 +10825,7 @@ exports[`DatePicker component popover placement should render properly with "top
         </div>
       </div>
       <div
-        class="c11"
+        class="c4"
         id="dob-calendar-year-selector-wrapper"
       >
         <div
@@ -11278,10 +10860,10 @@ exports[`DatePicker component popover placement should render properly with "top
       </div>
     </div>
     <button
-      class="c12 calendar-month-navigation-go-back"
+      class="c11 calendar-month-navigation-go-back"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -11296,10 +10878,10 @@ exports[`DatePicker component popover placement should render properly with "top
       </svg>
     </button>
     <button
-      class="c12 calendar-month-navigation-go-forward"
+      class="c11 calendar-month-navigation-go-forward"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -11315,424 +10897,424 @@ exports[`DatePicker component popover placement should render properly with "top
     </button>
   </div>
   <div
-    class="c14"
+    class="c13"
   >
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <button
-      class="c16"
+      class="c15"
       title="Sun Dec 29 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Mon Dec 30 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Tue Dec 31 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c18"
+      class="c17"
       title="Wed Jan 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 02 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         2
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 03 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         3
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 04 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         4
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 05 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         5
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 06 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         6
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 07 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         7
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 08 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         8
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 09 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         9
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 10 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         10
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 11 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         11
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 12 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         12
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 13 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         13
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 14 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         14
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 15 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         15
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 16 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         16
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 17 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         17
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 18 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         18
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 19 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         19
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 20 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         20
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 21 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         21
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 22 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         22
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 23 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         23
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 24 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         24
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 25 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         25
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 26 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         26
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 27 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         27
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 28 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         28
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 29 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 30 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 31 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Sat Feb 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
@@ -11757,7 +11339,7 @@ exports[`DatePicker component popover placement should render properly with "top
   fill: #607890;
 }
 
-.c13 {
+.c12 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -11765,7 +11347,7 @@ exports[`DatePicker component popover placement should render properly with "top
   cursor: inherit;
 }
 
-.c13 * {
+.c12 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
@@ -11785,7 +11367,7 @@ exports[`DatePicker component popover placement should render properly with "top
   text-align: initial;
 }
 
-.c15 {
+.c14 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -11798,7 +11380,7 @@ exports[`DatePicker component popover placement should render properly with "top
   text-align: center;
 }
 
-.c17 {
+.c16 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -11940,66 +11522,28 @@ exports[`DatePicker component popover placement should render properly with "top
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 7rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c4 .c21 {
+.c4 .c20 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c4 .c21 label {
+.c4 .c20 label {
   pointer-events: none;
 }
 
-.c4 .c21 div,
-.c4 .c21 input,
-.c4 .c21 label {
+.c4 .c20 div,
+.c4 .c20 input,
+.c4 .c20 label {
   cursor: pointer;
 }
 
-.c4 .c21 .c22 {
-  -webkit-transition: -webkit-transform 200ms ease-out;
-  -webkit-transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-.c11 {
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  min-width: 8rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0.8rem 0.8rem 0.8rem 0;
-}
-
-.c11 .c21 {
-  margin: 0;
-  caret-color: transparent;
-}
-
-.c11 .c21 label {
-  pointer-events: none;
-}
-
-.c11 .c21 div,
-.c11 .c21 input,
-.c11 .c21 label {
-  cursor: pointer;
-}
-
-.c11 .c21 .c22 {
+.c4 .c20 .c21 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -12021,7 +11565,7 @@ exports[`DatePicker component popover placement should render properly with "top
   height: max-content;
 }
 
-.c12 {
+.c11 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -12045,15 +11589,15 @@ exports[`DatePicker component popover placement should render properly with "top
   align-items: center;
 }
 
-.c12 svg {
+.c11 svg {
   fill: #435465;
 }
 
-.c12:not(:disabled):hover {
+.c11:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c12:not(:disabled):active {
+.c11:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -12094,23 +11638,23 @@ exports[`DatePicker component popover placement should render properly with "top
   overflow: auto;
 }
 
-.c3 .c21 {
+.c3 .c20 {
   min-width: unset;
   max-width: 9.5rem;
 }
 
-.c3 .c21 > div {
+.c3 .c20 > div {
   height: 3.5rem;
   padding: 0 0 0 1rem;
 }
 
-.c14 {
+.c13 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
 }
 
-.c14 > .c7 {
+.c13 > .c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -12120,7 +11664,7 @@ exports[`DatePicker component popover placement should render properly with "top
   margin-bottom: 0.8rem;
 }
 
-.c16 {
+.c15 {
   background-color: transparent;
   border: 0.2rem solid transparent;
   -webkit-text-decoration: none;
@@ -12150,17 +11694,69 @@ exports[`DatePicker component popover placement should render properly with "top
   align-items: center;
 }
 
-.c16:focus {
+.c15:focus {
   outline: none;
 }
 
-.c16:disabled {
+.c15:disabled {
   cursor: not-allowed;
   color: #b0bcc8;
 }
 
-.c16:hover {
+.c15:hover {
   background-color: #eff2f4;
+}
+
+.c17 {
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0.4rem;
+  box-sizing: border-box;
+  height: 3.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c17:focus {
+  outline: none;
+}
+
+.c17:disabled {
+  cursor: not-allowed;
+  color: #b0bcc8;
+}
+
+.c17:hover {
+  background-color: #eff2f4;
+}
+
+.c17 span {
+  font-weight: bold;
+}
+
+.c17,
+.c17:hover {
+  background-color: #126AFA;
+  color: #ffffff;
 }
 
 .c18 {
@@ -12205,59 +11801,7 @@ exports[`DatePicker component popover placement should render properly with "top
   background-color: #eff2f4;
 }
 
-.c18 span {
-  font-weight: bold;
-}
-
-.c18,
-.c18:hover {
-  background-color: #126AFA;
-  color: #ffffff;
-}
-
-.c19 {
-  background-color: transparent;
-  border: 0.2rem solid transparent;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0.4rem;
-  box-sizing: border-box;
-  height: 3.2rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c19:focus {
-  outline: none;
-}
-
-.c19:disabled {
-  cursor: not-allowed;
-  color: #b0bcc8;
-}
-
-.c19:hover {
-  background-color: #eff2f4;
-}
-
-.c20 .c0 {
+.c19 .c0 {
   z-index: 1000;
   position: absolute;
   bottom: calc(100% + 0px);
@@ -12309,7 +11853,7 @@ exports[`DatePicker component popover placement should render properly with "top
         </div>
       </div>
       <div
-        class="c11"
+        class="c4"
         id="dob-calendar-year-selector-wrapper"
       >
         <div
@@ -12344,10 +11888,10 @@ exports[`DatePicker component popover placement should render properly with "top
       </div>
     </div>
     <button
-      class="c12 calendar-month-navigation-go-back"
+      class="c11 calendar-month-navigation-go-back"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -12362,10 +11906,10 @@ exports[`DatePicker component popover placement should render properly with "top
       </svg>
     </button>
     <button
-      class="c12 calendar-month-navigation-go-forward"
+      class="c11 calendar-month-navigation-go-forward"
     >
       <svg
-        class="c13"
+        class="c12"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -12381,424 +11925,424 @@ exports[`DatePicker component popover placement should render properly with "top
     </button>
   </div>
   <div
-    class="c14"
+    class="c13"
   >
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c15"
+      class="c7 c14"
     >
       S
     </strong>
     <button
-      class="c16"
+      class="c15"
       title="Sun Dec 29 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Mon Dec 30 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Tue Dec 31 2019"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c18"
+      class="c17"
       title="Wed Jan 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 02 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         2
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 03 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         3
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 04 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         4
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 05 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         5
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 06 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         6
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 07 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         7
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 08 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         8
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 09 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         9
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 10 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         10
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 11 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         11
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 12 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         12
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 13 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         13
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 14 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         14
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 15 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         15
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 16 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         16
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 17 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         17
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 18 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         18
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 19 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         19
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 20 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         20
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 21 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         21
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 22 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         22
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 23 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         23
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 24 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         24
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sat Jan 25 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         25
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Sun Jan 26 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         26
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Mon Jan 27 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         27
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Tue Jan 28 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         28
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Wed Jan 29 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         29
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Thu Jan 30 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         30
       </span>
     </button>
     <button
-      class="c19"
+      class="c18"
       title="Fri Jan 31 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         31
       </span>
     </button>
     <button
-      class="c16"
+      class="c15"
       title="Sat Feb 01 2020"
       type="button"
     >
       <span
-        class="c7 c17"
+        class="c7 c16"
       >
         1
       </span>

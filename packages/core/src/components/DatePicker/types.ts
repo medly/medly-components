@@ -19,7 +19,7 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     /** Current Date */
     value: Date | string | null;
     /** Function to be called on changing the date */
-    onChange: (date: Date) => void;
+    onChange: (date: Date | null) => void;
     /** Input variants for DatePicker */
     variant?: 'outlined' | 'filled';
     /** Input Size */
@@ -44,8 +44,6 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     helperText?: string;
     /** Error Text */
     errorText?: string;
-    /** Function will called with the input value on Blur event*/
-    validator?: (val: any) => string;
     /** Popover placement */
     popoverPlacement?: Placement;
 }
