@@ -14,8 +14,16 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'siz
     fromLabel: string;
     /** To Label */
     toLabel: string;
+    /** From Placeholder */
+    fromPlaceholder?: string;
+    /** To Placeholder */
+    toPlaceholder?: string;
+    /** Placeholder */
+    placeholder?: string;
     /** Variants */
     variant?: 'outlined' | 'filled';
+    /** error text */
+    errorText?: string;
     /** Size */
     size?: 'S' | 'M';
     /** Takes full width of the parent component */
