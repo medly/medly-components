@@ -1,11 +1,19 @@
-import { centerAligned, css, InjectClassName, styled, WithThemeProp } from '@medly-components/utils';
+import { centerAligned, styled } from '@medly-components/utils';
 import * as CalendarStyled from '../Calendar/Calendar.styled';
+import * as DatePickerStyled from '../DatePicker/DatePicker.styled';
 import TextField from '../TextField';
 import * as TextFieldStyled from '../TextField/Styled';
-import { StyleProps } from './types';
 
-export const MainWrapperComponent = styled.div`
+type MainWrapperComponentProps = {
+    fullWidth?: boolean;
+    minWidth?: number;
+};
+
+export const MainWrapperComponent = styled.div<MainWrapperComponentProps>`
     position: relative;
+    width: ${props => (props.fullWidth ? '100%' : 'auto')};
+    min-width: ${props => (props.minWidth && props.minWidth > 338 ? props.minWidth : '338px')}px;
+    display: inline-block;
 `;
 
 export const Wrapper = styled.div`
@@ -99,33 +107,9 @@ export const DateRangeNavText = styled.span`
     flex: 1;
 `;
 
-type State = 'default' | 'active' | 'error' | 'disabled';
-const getStyleForIcon = ({ theme, variant, disabled }: StyleProps & WithThemeProp, state: State) => {
-    const {
-        icon: { [state]: iconStyle }
-    } = theme.datePicker[variant];
-    return css`
-        * {
-            fill: ${iconStyle.color};
-        }
-        &:hover {
-            background-color: ${!disabled && iconStyle.backgroundColor};
-            * {
-                fill: ${!disabled && iconStyle.hoverColor};
-            }
-        }
-    `;
-};
-
-export const DateIcon = styled(InjectClassName)<StyleProps>`
-    cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-    border-radius: ${({ theme }) => theme.datePicker.borderRadius};
+export const DateIcon = styled(DatePickerStyled.DateIcon)`
     padding: 0;
     margin-left: 16px;
-    ${props => getStyleForIcon(props, 'default')};
-    ${props => props.isActive && getStyleForIcon(props, 'active')};
-    ${props => props.isErrorPresent && getStyleForIcon(props, 'error')};
-    ${props => props.disabled && getStyleForIcon(props, 'disabled')};
     &:hover {
         background-color: transparent;
     }
