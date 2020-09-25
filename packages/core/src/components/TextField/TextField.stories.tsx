@@ -5,7 +5,7 @@ import Button from '../Button';
 import { TextField } from './TextField';
 import { Props } from './types';
 
-export const variants: Props['variant'][] = ['filled', 'outlined'];
+export const variants: Props['variant'][] = ['filled', 'outlined', 'b2cField'];
 export const sizes: Props['size'][] = ['S', 'M'];
 
 export const ThemeInterface: React.FC<TextFieldTheme> = () => null;

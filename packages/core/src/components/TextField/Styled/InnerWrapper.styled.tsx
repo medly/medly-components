@@ -41,6 +41,35 @@ const outlineStyle = ({ theme, outlined, disabled, isErrorPresent }: InnerWrappe
     `;
 };
 
+const b2cFieldStyle = ({ theme, outlined, disabled }: InnerWrapperProps) => {
+    return css`
+        border-radius: 1.2rem;
+        background-color: ${outlined.default.bgColor};
+        &::after {
+            content: '';
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            pointer-events: none;
+            background-color: transparent;
+            transition: all 100ms ease-out;
+            border-radius: 1.2rem;
+            border: 0.1rem solid ${outlined.default.borderColor};
+        }
+
+        &:hover::after,
+        &:focus-within::after {
+            border-width: ${!disabled && `0.15rem`};
+            border-color: ${!disabled && outlined.hover.borderColor};
+        }
+    `;
+};
+
 const filledStyle = ({ theme, filled, disabled }: InnerWrapperProps) => {
     return css`
         border-radius: ${theme.spacing.S1} ${theme.spacing.S1} 0 0;
@@ -171,7 +200,7 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
         color: ${({ variant, textField }) => textField[variant].default.helperTextColor};
     }
 
-    ${({ variant }) => (variant === 'filled' ? filledStyle : outlineStyle)}
+    ${({ variant }) => (variant === 'filled' ? filledStyle : variant === 'outlined' ? outlineStyle : b2cFieldStyle)}
     ${({ disabled, isErrorPresent }) => (disabled ? disabledStyle : isErrorPresent ? errorStyle : activeStyle)}
 `;
 InnerWrapper.defaultProps = {

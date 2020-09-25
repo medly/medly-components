@@ -80,4 +80,39 @@ export interface TextFieldTheme {
             helperTextColor: string;
         };
     };
+    /** b2cField variant theme */
+    b2cField: {
+        default: {
+            borderColor: string;
+            bgColor: string;
+            iconColor: string;
+            textColor: string;
+            labelColor: string;
+            helperTextColor: string;
+        };
+        hover: {
+            borderColor: string;
+        };
+        disabled: {
+            bgColor: string;
+            labelColor: string;
+            textColor: string;
+            borderColor: string;
+        };
+        active: {
+            placeholderColor: string;
+            bgColor: string;
+            borderColor: string;
+            labelColor: string;
+        };
+        error: {
+            placeholderColor: string;
+            bgColor: string;
+            caretColor: string;
+            cursorColor: string;
+            borderColor: string;
+            labelColor: string;
+            helperTextColor: string;
+        };
+    };
 }
