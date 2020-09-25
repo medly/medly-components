@@ -1,6 +1,6 @@
 import { DateRangeIcon, KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
 import { parseToDate, useOuterClickNotifier } from '@medly-components/utils';
-import { format } from 'date-fns';
+import { add, format } from 'date-fns';
 import React, { FC } from 'react';
 import Calendar from '../Calendar';
 import * as CalendarStyled from '../Calendar/Calendar.styled';
@@ -64,12 +64,39 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
                 : null,
         [value.endDate, displayFormat]
     );
+    const startMonth: string = React.useMemo(
+        () =>
+            value.startDate instanceof Date
+                ? format(value.startDate, 'MMMM yyyy')
+                : typeof value.startDate === 'string' && value.startDate !== ''
+                ? format(parseToDate(value.startDate, displayFormat), 'MMMM yyyy')
+                : format(new Date(), 'MMMM yyyy'),
+        [value.startDate, displayFormat]
+    );
+    const endMonth: string = React.useMemo(
+        () =>
+            value.endDate instanceof Date
+                ? format(value.endDate, 'MMMM yyyy')
+                : typeof value.endDate === 'string' && value.endDate !== ''
+                ? format(parseToDate(value.endDate, displayFormat), 'MMMM yyyy')
+                : format(add(new Date(), { months: 1 }), 'MMMM yyyy'),
+        [value.endDate, displayFormat]
+    );
     React.useEffect(() => {
         setStartDateText(startDate ? format(startDate, displayFormat).replace(new RegExp('\\/|\\-', 'g'), ' $& ') : '');
     }, [startDate, displayFormat]);
     React.useEffect(() => {
         setEndDateText(endDate ? format(endDate, displayFormat).replace(new RegExp('\\/|\\-', 'g'), ' $& ') : '');
     }, [endDate, displayFormat]);
+    React.useEffect(() => {
+        onChangeHandler &&
+            !(parseToDate(startDateText, displayFormat).toString() === 'Invalid Date') &&
+            !(parseToDate(endDateText, displayFormat).toString() === 'Invalid Date') &&
+            onChangeHandler({
+                startDate: parseToDate(startDateText, displayFormat),
+                endDate: parseToDate(endDateText, displayFormat)
+            });
+    }, [startDateText, endDateText]);
 
     const onIconClick = React.useCallback(
         event => {
@@ -105,12 +132,6 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
         } else if (name === 'endDate') {
             setEndDateText(maskedValue);
         }
-        onChangeHandler &&
-            !(parseToDate(maskedValue, displayFormat).toString() === 'Invalid Date') &&
-            onChangeHandler({
-                startDate: name === 'startDate' ? parseToDate(maskedValue, displayFormat) : value.startDate,
-                endDate: name === 'endDate' ? parseToDate(maskedValue, displayFormat) : value.endDate
-            });
     }, []);
 
     useOuterClickNotifier(() => {
@@ -200,7 +221,7 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
                             <CalendarStyled.MonthNavigation className="navigation-go-back" disabled={false} /* onClick={() => {}} */>
                                 <KeyboardArrowLeftIcon />
                             </CalendarStyled.MonthNavigation>
-                            <Styled.DateRangeNavText>September 2020</Styled.DateRangeNavText>
+                            <Styled.DateRangeNavText>{startMonth}</Styled.DateRangeNavText>
                         </Styled.DateRangeNav>
                         <Calendar
                             id={`${inputId}-from-calendar`}
@@ -214,7 +235,7 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
                     </Styled.DateRangeNavContainer>
                     <Styled.DateRangeNavContainer>
                         <Styled.DateRangeNav>
-                            <Styled.DateRangeNavText>October 2020</Styled.DateRangeNavText>
+                            <Styled.DateRangeNavText>{endMonth}</Styled.DateRangeNavText>
                             <CalendarStyled.MonthNavigation className="navigation-go-forward" disabled={false} /* onClick={() => {}} */>
                                 <KeyboardArrowRightIcon />
                             </CalendarStyled.MonthNavigation>
