@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.9](https://github.com/medly/medly-components/compare/@medly-components/forms@1.10.8...@medly-components/forms@1.10.9) (2020-09-28)
+
+
+### Bug Fixes
+
+* **forms:** fixed Failing snapshot for Form component with date picker icon id ([c72519b](https://github.com/medly/medly-components/commit/c72519bf255048d3aef0665027e0b7ffed432762))
+
+
+
+
+
 ## [1.10.8](https://github.com/medly/medly-components/compare/@medly-components/forms@1.10.7...@medly-components/forms@1.10.8) (2020-09-24)
 
 **Note:** Version bump only for package @medly-components/forms
