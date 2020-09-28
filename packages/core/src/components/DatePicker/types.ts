@@ -49,7 +49,6 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
 }
 
 export interface StyleProps extends Pick<Props, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size'> {
-    id: string;
     isErrorPresent?: boolean;
     isActive?: boolean;
     placement: Placement;
