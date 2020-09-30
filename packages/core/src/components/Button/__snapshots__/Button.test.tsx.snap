@@ -144,7 +144,7 @@ exports[`Button component should render properly with "rounded" edges 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 100rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -262,7 +262,7 @@ exports[`Button component should render properly with "square" edges 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -395,7 +395,7 @@ exports[`Button component should render properly with any icon at the beginning 
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -542,7 +542,7 @@ exports[`Button component should render properly with any icon at the end of the
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -674,7 +674,7 @@ exports[`Button component should render properly with outlined and theme doesn't
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -830,7 +830,7 @@ exports[`Button component should wrap children into Text component when renderin
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -954,7 +954,7 @@ exports[`Button component with "flat" variant should render properly 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -1108,7 +1108,7 @@ exports[`Button component with "flat" variant should render properly when it is 
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -1263,7 +1263,7 @@ exports[`Button component with "flat" variant should render properly with "M" si
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -1417,7 +1417,7 @@ exports[`Button component with "flat" variant should render properly with "S" si
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 0.8rem 2.4rem 1rem 2.4rem;
+  padding: 0.8rem 2.4rem 1rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -1571,7 +1571,7 @@ exports[`Button component with "outlined" variant should render properly 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -1727,7 +1727,7 @@ exports[`Button component with "outlined" variant should render properly when it
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -1884,7 +1884,7 @@ exports[`Button component with "outlined" variant should render properly with "M
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -2040,7 +2040,7 @@ exports[`Button component with "outlined" variant should render properly with "S
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 0.8rem 2.4rem 1rem 2.4rem;
+  padding: 0.8rem 2.4rem 1rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -2196,7 +2196,7 @@ exports[`Button component with "solid" variant should render properly 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2314,7 +2314,7 @@ exports[`Button component with "solid" variant should render properly when it is
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2433,7 +2433,7 @@ exports[`Button component with "solid" variant should render properly with "M" s
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2551,7 +2551,7 @@ exports[`Button component with "solid" variant should render properly with "S" s
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 0.8rem 2.4rem 1rem 2.4rem;
+  padding: 0.8rem 2.4rem 1rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

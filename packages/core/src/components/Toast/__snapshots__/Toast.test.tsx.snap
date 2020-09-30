@@ -59,7 +59,7 @@ exports[`Toast should render action button 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 0.8rem 2.4rem 1rem 2.4rem;
+  padding: 0.8rem 2.4rem 1rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
