@@ -10,6 +10,10 @@ const SearchBox: SearchBoxTheme = {
         S: 'body2',
         M: 'body1'
     },
+    padding: {
+        S: '0 0 0 2rem',
+        M: '0 0.3rem 0 2.4rem'
+    },
     textColor: colors.black,
     borderRadius: {
         S: {
@@ -36,6 +40,10 @@ const SearchBox: SearchBoxTheme = {
         active: colors.grey[300]
     },
     closeIcon: {
+        padding: {
+            S: '0.2rem',
+            M: '0.4rem'
+        },
         borderRadius: '2.5rem',
         color: {
             default: colors.grey[600],
@@ -46,6 +54,10 @@ const SearchBox: SearchBoxTheme = {
         }
     },
     searchIcon: {
+        padding: {
+            S: '0.2rem',
+            M: '0.4rem'
+        },
         borderRadius: '2.5rem',
         color: {
             default: colors.grey[600],
