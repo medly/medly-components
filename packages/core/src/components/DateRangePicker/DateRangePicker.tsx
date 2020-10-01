@@ -1,12 +1,13 @@
 import { DateRangeIcon, KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
-import { parseToDate, useOuterClickNotifier } from '@medly-components/utils';
+import { parseToDate, useOuterClickNotifier, useUpdateEffect } from '@medly-components/utils';
 import { add, format } from 'date-fns';
-import React, { FC } from 'react';
+import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Calendar from '../Calendar';
 import * as CalendarStyled from '../Calendar/Calendar.styled';
 import getMaskedValue from '../TextField/getMaskedValue';
 import * as TextFieldStyled from '../TextField/Styled';
 import * as Styled from './DateRangePicker.styled';
+import { getFormattedDate, getValidDate } from './helpers';
 import { Props } from './types';
 
 export const DateRangePicker: FC<Props> = React.memo(props => {
@@ -19,84 +20,37 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
         fromLabel,
         toLabel,
         errorText,
+        helperText,
         variant,
         disabled,
         size,
         required,
-        fromPlaceholder,
-        toPlaceholder,
-        placeholder,
         minSelectableDate,
         maxSelectableDate,
-        onChange: onChangeHandler,
+        onChange,
         ...restProps
     } = props;
-    const inputId =
-        id || fromLabel.toLowerCase().replace(/\s/g, '') || toLabel.toLowerCase().replace(/\s/g, '') || 'medly-date-range-picker';
-    const isFromLabelPresent = React.useMemo(() => !!fromLabel, [fromLabel]);
-    const isToLabelPresent = React.useMemo(() => !!toLabel, [toLabel]);
-    const [active, setActive] = React.useState(false);
-    const [builtInErrorMessage, setErrorMessage] = React.useState('');
-    const [showCalendar, toggleCalendar] = React.useState(false);
-    const [startDateText, setStartDateText] = React.useState('');
-    const [endDateText, setEndDateText] = React.useState('');
-    const isErrorPresent = React.useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
-    const inputRef = React.useRef<HTMLInputElement>(null);
-    const wrapperRef = React.useRef<HTMLDivElement>(null);
-    const mask = displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase();
-    const [maskLabel, setMaskLabel] = React.useState(mask);
+    const inputId = id || 'medly-date-range-picker',
+        [active, setActive] = useState(false),
+        [builtInErrorMessage, setErrorMessage] = useState(''),
+        [showCalendar, toggleCalendar] = useState(false),
+        [startDateText, setStartDateText] = useState(''),
+        [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE'),
+        [endDateText, setEndDateText] = useState(''),
+        [startDate, setStartDate] = useState<Date | null>(null),
+        [endDate, setEndDate] = useState<Date | null>(null),
+        isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]),
+        startDateRef = useRef<HTMLInputElement>(null),
+        endDateRef = useRef<HTMLInputElement>(null),
+        wrapperRef = useRef<HTMLDivElement>(null),
+        mask = displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase(),
+        [startDateMaskLabel, setStartDateMaskLabel] = useState(mask),
+        [endDateMaskLabel, setEndDateMaskLabel] = useState(mask);
 
-    const startDate: Date | null = React.useMemo(
-        () =>
-            value.startDate instanceof Date
-                ? value.startDate
-                : typeof value.startDate === 'string' && value.startDate !== ''
-                ? parseToDate(value.startDate, displayFormat)
-                : null,
-        [value.startDate, displayFormat]
-    );
-    const endDate: Date | null = React.useMemo(
-        () =>
-            value.endDate instanceof Date
-                ? value.endDate
-                : typeof value.endDate === 'string' && value.endDate !== ''
-                ? parseToDate(value.endDate, displayFormat)
-                : null,
-        [value.endDate, displayFormat]
-    );
-    const startMonth: string = React.useMemo(
-        () =>
-            value.startDate instanceof Date
-                ? format(value.startDate, 'MMMM yyyy')
-                : typeof value.startDate === 'string' && value.startDate !== ''
-                ? format(parseToDate(value.startDate, displayFormat), 'MMMM yyyy')
-                : format(new Date(), 'MMMM yyyy'),
-        [value.startDate, displayFormat]
-    );
-    const endMonth: string = React.useMemo(
-        () =>
-            value.endDate instanceof Date
-                ? format(value.endDate, 'MMMM yyyy')
-                : typeof value.endDate === 'string' && value.endDate !== ''
-                ? format(parseToDate(value.endDate, displayFormat), 'MMMM yyyy')
-                : format(add(new Date(), { months: 1 }), 'MMMM yyyy'),
-        [value.endDate, displayFormat]
-    );
-    React.useEffect(() => {
-        setStartDateText(startDate ? format(startDate, displayFormat).replace(new RegExp('\\/|\\-', 'g'), ' $& ') : '');
-    }, [startDate, displayFormat]);
-    React.useEffect(() => {
-        setEndDateText(endDate ? format(endDate, displayFormat).replace(new RegExp('\\/|\\-', 'g'), ' $& ') : '');
-    }, [endDate, displayFormat]);
-    React.useEffect(() => {
-        onChangeHandler &&
-            !(parseToDate(startDateText, displayFormat).toString() === 'Invalid Date') &&
-            !(parseToDate(endDateText, displayFormat).toString() === 'Invalid Date') &&
-            onChangeHandler({
-                startDate: parseToDate(startDateText, displayFormat),
-                endDate: parseToDate(endDateText, displayFormat)
-            });
-    }, [startDateText, endDateText]);
+    const startMonth: string = useMemo(() => (startDate ? format(startDate, 'MMMM yyyy') : format(new Date(), 'MMMM yyyy')), [startDate]);
+    const endMonth: string = useMemo(() => (endDate ? format(endDate, 'MMMM yyyy') : format(add(new Date(), { months: 1 }), 'MMMM yyyy')), [
+        endDate
+    ]);
 
     const onIconClick = React.useCallback(
         event => {
@@ -104,81 +58,122 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
             if (!disabled) {
                 toggleCalendar(val => !val);
                 setActive(true);
-                inputRef.current.focus();
+                startDateRef.current.focus();
             }
         },
         [disabled]
     );
-    const onBlur = React.useCallback(
-        (event: React.FocusEvent<HTMLInputElement>) => {
-            parseToDate(event.target.value, displayFormat).toString() === 'Invalid Date' && setErrorMessage('Enter valid date');
-            props.onBlur && props.onBlur(event);
-        },
-        [props.onBlur, displayFormat]
-    );
-    const onFocus = React.useCallback(
-        (event: React.FocusEvent<HTMLInputElement>) => {
-            setActive(true);
-            toggleCalendar(true);
-            props.onFocus && props.onFocus(event);
-        },
-        [props.onFocus]
-    );
-    const onChange = React.useCallback((e: React.ChangeEvent<HTMLInputElement>, name: string) => {
-        const maskedValue = getMaskedValue(e, mask);
-        setMaskLabel(`${maskedValue}${mask.substr(maskedValue.length)}`);
-        if (name === 'startDate') {
-            setStartDateText(maskedValue);
-        } else if (name === 'endDate') {
-            setEndDateText(maskedValue);
-        }
-    }, []);
+
+    const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
+        onFocus = React.useCallback(
+            (event: React.FocusEvent<HTMLInputElement>) => {
+                setActive(true);
+                setFocusedElement(event.target.name as `START_DATE` | `END_DATE`);
+                event.target.setSelectionRange(event.target.value.length, event.target.value.length);
+                props.onFocus && props.onFocus(event);
+            },
+            [props.onFocus]
+        ),
+        onBlur = React.useCallback(
+            (event: React.FocusEvent<HTMLInputElement>) => {
+                parseToDate(event.target.value, displayFormat).toString() === 'Invalid Date' && setErrorMessage('Enter valid date');
+                props.onBlur && props.onBlur(event);
+            },
+            [props.onBlur, displayFormat]
+        ),
+        handleTextChange = React.useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+            const maskedValue = getMaskedValue(e, mask),
+                parsedDate = parseToDate(e.target.value, displayFormat),
+                maskedLabel = `${maskedValue}${mask.substr(maskedValue.length)}`;
+            if (e.target.name === 'START_DATE') {
+                setStartDateText(maskedValue);
+                setStartDateMaskLabel(maskedLabel);
+                parsedDate.toString() !== 'Invalid Date' && setStartDate(parsedDate);
+            } else if (e.target.name === 'END_DATE') {
+                setEndDateText(maskedValue);
+                setEndDateMaskLabel(maskedLabel);
+                parsedDate.toString() !== 'Invalid Date' && setEndDate(parsedDate);
+            }
+        }, []),
+        handleDateChange = useCallback(
+            (date: Date) => {
+                const formattedDate = getFormattedDate(date, displayFormat);
+                if (focusedElement === `START_DATE`) {
+                    setStartDate(date);
+                    setStartDateText(formattedDate);
+                    setFocusedElement('END_DATE');
+                } else {
+                    setEndDate(date);
+                    setEndDateText(formattedDate);
+                    setFocusedElement('START_DATE');
+                }
+            },
+            [focusedElement]
+        );
 
     useOuterClickNotifier(() => {
         setActive(false);
         toggleCalendar(false);
     }, wrapperRef);
 
+    useEffect(() => {
+        setStartDate(getValidDate(value.startDate, displayFormat));
+        setEndDate(getValidDate(value.endDate, displayFormat));
+        setStartDateText(value.startDate ? getFormattedDate(startDate, displayFormat) : '');
+        setEndDateText(value.endDate ? getFormattedDate(endDate, displayFormat) : '');
+    }, [value, displayFormat]);
+
+    useUpdateEffect(() => {
+        focusedElement === 'START_DATE' ? toggleCalendar(false) : endDateRef.current.focus();
+    }, [focusedElement]);
+
     const Prefix = () => (
         <Styled.DateIcon variant={variant} isErrorPresent={isErrorPresent} isActive={active} disabled={disabled} size={size}>
             <DateRangeIcon onClick={onIconClick} size={size} />
         </Styled.DateIcon>
     );
+    const commonTextProps = {
+            variant,
+            size,
+            onBlur,
+            onFocus,
+            required,
+            disabled,
+            placeholder: mask,
+            isLabelPresent: true,
+            onChange: handleTextChange,
+            isSuffixPresent: false,
+            errorText: errorText || builtInErrorMessage,
+            ...restProps
+        },
+        commonCalendarProps = {
+            disableHeader: true,
+            onChange: handleDateChange,
+            isErrorPresent: isErrorPresent,
+            minSelectableDate: minSelectableDate,
+            maxSelectableDate: maxSelectableDate
+        };
+
     return (
         <Styled.MainWrapperComponent ref={wrapperRef} fullWidth={fullWidth} minWidth={minWidth}>
             <Styled.OuterWrapper id={`${inputId}-input-wrapper`} fullWidth={fullWidth} minWidth={minWidth}>
-                <Styled.InnerWrapper
-                    size={size}
-                    // onClick={() => {}}
-                    variant={variant}
-                    disabled={disabled}
-                    isErrorPresent={isErrorPresent}
-                    isLabelPresent={isToLabelPresent || isFromLabelPresent}
-                >
+                <Styled.InnerWrapper size={size} variant={variant} disabled={disabled} isErrorPresent={isErrorPresent} isLabelPresent>
                     <TextFieldStyled.Prefix size={size}>
                         <Prefix />
                     </TextFieldStyled.Prefix>
                     <TextFieldStyled.InputWrapper>
                         <TextFieldStyled.Input
-                            ref={inputRef}
+                            ref={startDateRef}
                             id={`${inputId}-from-input`}
                             aria-describedby={`${inputId}-from-helper-text`}
-                            required={required}
-                            disabled={disabled}
-                            placeholder={mask || fromPlaceholder || placeholder || ' '}
-                            isLabelPresent={isFromLabelPresent}
                             value={startDateText}
-                            onChange={e => onChange(e, 'startDate')}
+                            name="START_DATE"
                             isPrefixPresent
-                            isSuffixPresent={false}
-                            errorText={errorText || builtInErrorMessage}
-                            {...{ ...restProps, variant, size, onBlur, onFocus /* onInvalid, */ }}
+                            {...commonTextProps}
                         />
-                        {/* {maskLabel && (
-                            <TextFieldStyled.MaskPlaceholder size={size} isLabelPresent={isFromLabelPresent} variant={variant}>
-                                {maskLabel}
-                            </TextFieldStyled.MaskPlaceholder>
-                        )} */}
+                        <TextFieldStyled.MaskPlaceholder size={size} isLabelPresent variant={variant}>
+                            {startDateMaskLabel}
+                        </TextFieldStyled.MaskPlaceholder>
                         <TextFieldStyled.Label htmlFor={`${inputId}-from-input`} size={size} variant={variant} required={required}>
                             {fromLabel}
                         </TextFieldStyled.Label>
@@ -187,32 +182,23 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
                     <TextFieldStyled.InputWrapper>
                         <TextFieldStyled.Input
                             id={`${inputId}-to-input`}
+                            ref={endDateRef}
                             aria-describedby={`${inputId}-to-helper-text`}
-                            required={required}
-                            disabled={disabled}
-                            placeholder={mask || toPlaceholder || placeholder || ' '}
-                            isLabelPresent={isToLabelPresent}
                             value={endDateText}
-                            isSuffixPresent={false}
-                            onChange={e => onChange(e, 'endDate')}
-                            errorText={errorText || builtInErrorMessage}
-                            {...{ ...restProps, variant, size, onBlur, onFocus /* onInvalid, */ }}
+                            name="END_DATE"
+                            {...commonTextProps}
                         />
-                        {/* {maskLabel && (
-                            <TextFieldStyled.MaskPlaceholder size={size} isLabelPresent={isToLabelPresent} variant={variant}>
-                                {maskLabel}
-                            </TextFieldStyled.MaskPlaceholder>
-                        )} */}
+                        <TextFieldStyled.MaskPlaceholder size={size} isLabelPresent variant={variant}>
+                            {endDateMaskLabel}
+                        </TextFieldStyled.MaskPlaceholder>
                         <TextFieldStyled.Label htmlFor={`${inputId}-to-input`} size={size} variant={variant} required={required}>
                             {toLabel}
                         </TextFieldStyled.Label>
                     </TextFieldStyled.InputWrapper>
                 </Styled.InnerWrapper>
-                {/* {(isErrorPresent || helperText) && (
                 <TextFieldStyled.HelperText id={`${id}-helper-text`} onClick={stopPropagation} size={size}>
                     {errorText || builtInErrorMessage || helperText}
                 </TextFieldStyled.HelperText>
-            )} */}
             </Styled.OuterWrapper>
             {showCalendar && (
                 <Styled.CalendarWrapper size={size}>
@@ -223,15 +209,7 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
                             </CalendarStyled.MonthNavigation>
                             <Styled.DateRangeNavText>{startMonth}</Styled.DateRangeNavText>
                         </Styled.DateRangeNav>
-                        <Calendar
-                            id={`${inputId}-from-calendar`}
-                            disableHeader={true}
-                            date={startDate}
-                            onChange={() => {}}
-                            isErrorPresent={isErrorPresent}
-                            minSelectableDate={minSelectableDate}
-                            maxSelectableDate={maxSelectableDate}
-                        />
+                        <Calendar id={`${inputId}-from-calendar`} date={startDate} {...commonCalendarProps} />
                     </Styled.DateRangeNavContainer>
                     <Styled.DateRangeNavContainer>
                         <Styled.DateRangeNav>
@@ -240,15 +218,7 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
                                 <KeyboardArrowRightIcon />
                             </CalendarStyled.MonthNavigation>
                         </Styled.DateRangeNav>
-                        <Calendar
-                            id={`${inputId}-to-calendar`}
-                            disableHeader={true}
-                            date={endDate}
-                            onChange={() => {}}
-                            isErrorPresent={isErrorPresent}
-                            minSelectableDate={minSelectableDate}
-                            maxSelectableDate={maxSelectableDate}
-                        />
+                        <Calendar id={`${inputId}-to-calendar`} date={endDate} {...commonCalendarProps} />
                     </Styled.DateRangeNavContainer>
                 </Styled.CalendarWrapper>
             )}
