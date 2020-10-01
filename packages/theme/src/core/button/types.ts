@@ -1,4 +1,6 @@
-export type ButtonSizes = 'S' | 'M';
+import { FontVariants } from '../font/types';
+
+export type ButtonSizes = 'S' | 'M' | 'L';
 
 type Colors = {
     default: string;
@@ -28,5 +30,13 @@ export interface ButtonTheme {
         square: string;
         rounded: string;
         circle: string;
+    };
+    /** Padding for different sizes */
+    padding: {
+        [k in ButtonSizes]: string;
+    };
+    /** Text variant for different sizes */
+    textVariant: {
+        [k in ButtonSizes]: FontVariants;
     };
 }

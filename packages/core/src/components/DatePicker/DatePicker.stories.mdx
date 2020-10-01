@@ -7,13 +7,13 @@ import { variants, sizes, displayFormats, ThemeInterface, FormWithDatePicker } f
 import { placements } from '../Popover/Popover.stories.tsx';
 
 <Meta
-    title="In-Review"
+    title="Core"
     component={DatePicker}
     parameters={{
         jest: ['DatePicker.test.tsx'],
         design: {
             type: 'figma',
-            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library---B2B-%2F-Internal?node-id=7803%3A533'
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=10346%3A771'
         }
     }}
 />
@@ -23,11 +23,11 @@ import { placements } from '../Popover/Popover.stories.tsx';
 It's a controlled component. So we have to handle the state.
 
 ```tsx
-const [date, setDate] = useState(null);
+const [date, setDate] = useState<Date | null>(null);
 return <DatePicker label="Select Date" value={date} onChange={setDate} />;
 ```
 
-To open the calendar click on the icon inside the datepicker component and to close the calendar select any date or click outside of the component.
+To open the calendar click on the icon inside the datepicker component and to close the calendar select any date or click outside of the component. You can also type in the date.
 
 <Preview withToolbar>
     <Story name="DatePicker">
@@ -54,11 +54,11 @@ To open the calendar click on the icon inside the datepicker component and to cl
 
 ### Validations
 
-1. Validations would happen on invalid, and blur event with required Prop.
+1. Validations would happen on invalid, and blur event.
 
 ```tsx
 const FormWithDatePicker: React.FC = () => {
-    const [date, setDate] = useState(null),
+    const [date, setDate] = useState<Date | null>(null),
         handleSubmit = (e: React.FormEvent) => e.preventDefault();
     return (
         <form onSubmit={handleSubmit}>

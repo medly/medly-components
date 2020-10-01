@@ -64,7 +64,7 @@ export const Suffix = styled(InjectClassName)<{ areOptionsVisible: boolean }>`
     transform: ${({ areOptionsVisible }) => (areOptionsVisible ? 'rotate(180deg)' : 'rotate(0deg)')};
 `;
 
-export const FlatVariantStyled = styled('button')<FlatVariantProps>`
+export const FlatVariantStyled = styled('button').attrs({ type: 'button' })<FlatVariantProps>`
     border: none;
     position: relative;
     user-select: none;

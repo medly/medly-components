@@ -15,4 +15,5 @@ export interface OptionProps extends Option, Omit<HTMLProps<HTMLLIElement>, 'onC
     onClick: (op: Option) => void;
     hasError?: boolean;
     maxWidth?: string;
+    includesNestedOptions?: boolean;
 }

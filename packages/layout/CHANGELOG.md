@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.9](https://github.com/medly/medly-components/compare/@medly-components/layout@1.11.8...@medly-components/layout@1.11.9) (2020-10-01)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.11.8](https://github.com/medly/medly-components/compare/@medly-components/layout@1.11.7...@medly-components/layout@1.11.8) (2020-09-28)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.11.7](https://github.com/medly/medly-components/compare/@medly-components/layout@1.11.6...@medly-components/layout@1.11.7) (2020-09-24)
+
+
+### Bug Fixes
+
+* button issue in calendar and hideShadow in the sidenav component ([660b10f](https://github.com/medly/medly-components/commit/660b10f6d765ec090442153f9024695885ccda93))
+
+
+
+
+
+## [1.11.6](https://github.com/medly/medly-components/compare/@medly-components/layout@1.11.5...@medly-components/layout@1.11.6) (2020-09-24)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 ## [1.11.5](https://github.com/medly/medly-components/compare/@medly-components/layout@1.11.4...@medly-components/layout@1.11.5) (2020-09-16)
 
 **Note:** Version bump only for package @medly-components/layout

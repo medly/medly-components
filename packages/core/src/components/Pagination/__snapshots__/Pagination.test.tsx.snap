@@ -26,7 +26,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 0.8rem 2.4rem 1rem 2.4rem;
+  padding: 0.8rem 2.4rem 1rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -253,7 +253,7 @@ exports[`Pagination component should render correctly with all the default props
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 0.8rem 2.4rem 1rem 2.4rem;
+  padding: 0.8rem 2.4rem 1rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -381,7 +381,7 @@ exports[`Pagination component should render correctly with all the default props
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 0.8rem 2.4rem 1rem 2.4rem;
+  padding: 0.8rem 2.4rem 1rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -628,7 +628,7 @@ exports[`Pagination component should render correctly with all the props given 1
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 0.8rem 2.4rem 1rem 2.4rem;
+  padding: 0.8rem 2.4rem 1rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -718,7 +718,7 @@ exports[`Pagination component should render correctly with all the props given 1
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 0.8rem 2.4rem 1rem 2.4rem;
+  padding: 0.8rem 2.4rem 1rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;

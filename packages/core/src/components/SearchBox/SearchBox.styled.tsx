@@ -6,32 +6,10 @@ import { getOptionsStyles } from './styles/options';
 import { getBorderAndBoxShadow, getSearchBoxSize } from './styles/utils';
 import { Props } from './types';
 
-const getSmallSearchBoxStyle = ({ theme, areOptionsVisible }: Props & { areOptionsVisible?: boolean }) => {
-    const border = theme.searchBox.borderRadius.S[areOptionsVisible ? 'active' : 'default'];
+const getBorderRadius = ({ theme, areOptionsVisible, size }: Props & { areOptionsVisible?: boolean }) => {
+    const border = theme.searchBox.borderRadius[size][areOptionsVisible ? 'active' : 'default'];
     return css`
         border-radius: ${areOptionsVisible ? `${border} ${border} 0 0` : border};
-        input {
-            ${getFontStyle({ theme, fontVariant: theme.searchBox.textVariant.S })}
-            padding-left: 2rem;
-        }
-        ${SvgIcon} {
-            padding: 0.2rem;
-        }
-    `;
-};
-
-const getMediumSearchBoxStyle = ({ theme, areOptionsVisible }: Props & { areOptionsVisible?: boolean }) => {
-    const border = theme.searchBox.borderRadius.S[areOptionsVisible ? 'active' : 'default'];
-    return css`
-        border-radius: ${areOptionsVisible ? `${border} ${border} 0 0` : border};
-        padding-right: 0.3rem;
-        input {
-            ${getFontStyle({ theme, fontVariant: theme.searchBox.textVariant.M })}
-            padding-left: 2.4rem;
-        }
-        ${SvgIcon} {
-            padding: 0.4rem;
-        }
     `;
 };
 
@@ -72,7 +50,12 @@ export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean
     height: ${getSearchBoxSize};
     border: 1.5px solid;
     position: relative;
+    padding: ${({ theme, size }) => theme.searchBox.padding[size]};
     background-color: ${({ theme, areOptionsVisible }) => theme.searchBox.bgColor[areOptionsVisible ? 'active' : 'default']};
+
+    input {
+        ${({ theme, size }) => getFontStyle({ theme, fontVariant: theme.searchBox.textVariant[size] })}
+    }
 
     &:hover {
         background-color: ${({ theme, areOptionsVisible }) => !areOptionsVisible && theme.searchBox.bgColor.hovered};
@@ -81,6 +64,6 @@ export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean
     ${Options.Style} {
         ${getOptionsStyles};
     }
-    ${({ size }) => (size === 'M' ? getMediumSearchBoxStyle : getSmallSearchBoxStyle)};
+    ${getBorderRadius};
     ${({ areOptionsVisible }) => (areOptionsVisible ? activeSearchBoxStyle : nonActiveSearchBoxStyle)};
 `;

@@ -3,7 +3,7 @@ import { StyledOptionsProps } from './types';
 
 const withScroll = css<StyledOptionsProps & WithThemeProp>`
     overflow: auto;
-    max-height: ${({ maxHeight }) => maxHeight};
+    max-height: 20rem;
 `;
 
 export const Options = styled('ul')<StyledOptionsProps & WithThemeProp>`
@@ -22,5 +22,8 @@ export const Options = styled('ul')<StyledOptionsProps & WithThemeProp>`
     max-width: ${({ maxWidth }) => maxWidth};
     box-shadow: 0 0.2rem 0.8rem ${({ theme }) => theme.singleSelect.shadowColor};
     border-radius: ${({ theme, variant }) => theme.singleSelect.options.borderRadius[variant]};
-    ${({ maxHeight }) => maxHeight && withScroll}
+    ${({ includesNestedOptions }) => !includesNestedOptions && withScroll};
 `;
+Options.defaultProps = {
+    includesNestedOptions: false
+};

@@ -93,6 +93,8 @@ exports[`SearchBox options should render options when user search option specifi
   box-sizing: border-box;
   box-shadow: 0 0.2rem 0.8rem #B0BCC8;
   border-radius: 0 0 0.4rem 0.4rem;
+  overflow: auto;
+  max-height: 20rem;
 }
 
 .c2 {
@@ -115,6 +117,10 @@ exports[`SearchBox options should render options when user search option specifi
   margin: 0.6rem 0;
 }
 
+.c2 .c3 {
+  padding: 0.2rem;
+}
+
 .c2 .c3 * {
   fill: #607890;
 }
@@ -128,6 +134,10 @@ exports[`SearchBox options should render options when user search option specifi
   fill: #303C48;
 }
 
+.c14 .c3 {
+  padding: 0.2rem;
+}
+
 .c14 .c3 * {
   fill: #607890;
 }
@@ -135,6 +145,10 @@ exports[`SearchBox options should render options when user search option specifi
 .c14 .c3:hover {
   background: transparent;
   border-radius: 2.5rem;
+}
+
+.c15 .c3 {
+  padding: 0.2rem;
 }
 
 .c15 .c3 * {
@@ -162,6 +176,10 @@ exports[`SearchBox options should render options when user search option specifi
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.c6 .c3 {
+  padding: 0.2rem;
 }
 
 .c6 .c3 * {
@@ -219,10 +237,6 @@ exports[`SearchBox options should render options when user search option specifi
   line-height: 2.2rem;
 }
 
-.c13 .c3 {
-  padding: 0.2rem;
-}
-
 .c13:focus-within .c5 .c3 * {
   fill: #126AFA;
 }
@@ -241,11 +255,23 @@ exports[`SearchBox options should render options when user search option specifi
   height: 4rem;
   border: 1.5px solid;
   position: relative;
+  padding: 0 0 0 2rem;
   background-color: #ffffff;
   border-radius: 2rem 2rem 0 0;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
   border-color: #126AFA;
   border-width: 1.5px;
+}
+
+.c0 input {
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c0 .c7 {
@@ -298,22 +324,6 @@ exports[`SearchBox options should render options when user search option specifi
 .c0 .c7 li strong {
   font-size: 1.4rem;
   line-height: 2.2rem;
-}
-
-.c0 input {
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  padding-left: 2rem;
-}
-
-.c0 .c3 {
-  padding: 0.2rem;
 }
 
 .c1 {
@@ -473,6 +483,10 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   justify-content: center;
 }
 
+.c3 .c4 {
+  padding: 0.4rem;
+}
+
 .c3 .c4 * {
   fill: #607890;
 }
@@ -496,13 +510,24 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   height: 4.8rem;
   border: 1.5px solid;
   position: relative;
+  padding: 0 0.3rem 0 2.4rem;
   background-color: #ffffff;
-  border-radius: 4rem;
-  padding-right: 0.3rem;
+  border-radius: 4.8rem;
   border-bottom: 1.5px solid;
   border-color: #98A7B7;
   -webkit-transition: border-color 100ms,box-shadow 100ms;
   transition: border-color 100ms,box-shadow 100ms;
+}
+
+.c0 input {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c0:hover {
@@ -553,22 +578,6 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 .c0 .sc-AxhCb li strong {
   font-size: 1.6rem;
   line-height: 2.6rem;
-}
-
-.c0 input {
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  padding-left: 2.4rem;
-}
-
-.c0 .c4 {
-  padding: 0.4rem;
 }
 
 .c0:focus-within {
@@ -704,6 +713,10 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   justify-content: center;
 }
 
+.c3 .c4 {
+  padding: 0.2rem;
+}
+
 .c3 .c4 * {
   fill: #607890;
 }
@@ -727,12 +740,24 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   height: 4rem;
   border: 1.5px solid;
   position: relative;
+  padding: 0 0 0 2rem;
   background-color: #ffffff;
   border-radius: 4rem;
   border-bottom: 1.5px solid;
   border-color: #98A7B7;
   -webkit-transition: border-color 100ms,box-shadow 100ms;
   transition: border-color 100ms,box-shadow 100ms;
+}
+
+.c0 input {
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c0:hover {
@@ -783,22 +808,6 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 .c0 .sc-AxhCb li strong {
   font-size: 1.4rem;
   line-height: 2.2rem;
-}
-
-.c0 input {
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  padding-left: 2rem;
-}
-
-.c0 .c4 {
-  padding: 0.2rem;
 }
 
 .c0:focus-within {

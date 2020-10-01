@@ -8,6 +8,7 @@ export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean }>`
     border-right: ${({ theme, isTyping }) => isTyping && `0.1rem solid ${theme.colors.grey[200]}`};
     margin: 0.6rem 0;
     ${SvgIcon} {
+        padding: ${({ theme, size }) => theme.searchBox.closeIcon.padding[size]};
         * {
             fill: ${({ theme }) => theme.searchBox.closeIcon.color.default};
         }
@@ -24,6 +25,7 @@ export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean }>`
 export const SearchIconWrapper = styled.span<Props & { areOptionsVisible?: boolean; isTyping?: boolean }>`
     ${getIconWrapperStyle};
     ${SvgIcon} {
+        padding: ${({ theme, size }) => theme.searchBox.searchIcon.padding[size]};
         * {
             fill: ${({ theme: { searchBox }, areOptionsVisible }) => searchBox.searchIcon.color[areOptionsVisible ? 'active' : 'default']};
         }

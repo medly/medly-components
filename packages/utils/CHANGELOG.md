@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.4.5...@medly-components/utils@1.5.0) (2020-10-01)
+
+
+### Features
+
+* move padding and textVariant to theme in button component ([dac8672](https://github.com/medly/medly-components/commit/dac86720945cca51b35f1815fb0a664f69dcc447))
+
+
+
+
+
+## [1.4.5](https://github.com/medly/medly-components/compare/@medly-components/utils@1.4.4...@medly-components/utils@1.4.5) (2020-09-24)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
 ## [1.4.4](https://github.com/medly/medly-components/compare/@medly-components/utils@1.4.3...@medly-components/utils@1.4.4) (2020-09-16)
 
 **Note:** Version bump only for package @medly-components/utils

@@ -1,20 +1,11 @@
 import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { Modal } from './Modal';
+import { Props } from './types';
 
-const renderer = ({
-    open = false,
-    onCloseModal = jest.fn(),
-    minWidth,
-    minHeight
-}: {
-    minWidth?: string;
-    minHeight?: string;
-    open?: boolean;
-    onCloseModal?: () => void;
-}) =>
+const renderer = ({ open = false, onCloseModal = jest.fn(), minWidth, minHeight, shouldCloseOnOutsideClick = false }: Props) =>
     render(
-        <Modal {...{ open, onCloseModal, minHeight, minWidth }}>
+        <Modal {...{ open, onCloseModal, minHeight, minWidth, shouldCloseOnOutsideClick }}>
             <Modal.Header>
                 <p>Demo Header</p>
             </Modal.Header>
@@ -67,6 +58,13 @@ describe('Modal component', () => {
         const mockOnCloseModal = jest.fn();
         const { container } = renderer({ open: true, onCloseModal: mockOnCloseModal });
         fireEvent.keyDown(container, { key: 'Escape', code: 27 });
+        expect(mockOnCloseModal).toBeCalled();
+    });
+
+    it('should call onCloseModal on click on overlay background', () => {
+        const mockOnCloseModal = jest.fn();
+        const { container } = renderer({ open: true, onCloseModal: mockOnCloseModal, shouldCloseOnOutsideClick: true });
+        fireEvent.click(container.querySelector('#medly-modal'));
         expect(mockOnCloseModal).toBeCalled();
     });
 

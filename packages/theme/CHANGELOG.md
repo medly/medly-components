@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.19.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.18.0...@medly-components/theme@1.19.0) (2020-10-01)
+
+
+### Features
+
+* move padding and textVariant to theme in button component ([dac8672](https://github.com/medly/medly-components/commit/dac86720945cca51b35f1815fb0a664f69dcc447))
+* move padding to theme in searchbox component ([c13128b](https://github.com/medly/medly-components/commit/c13128bcb5dc24e7e669ad235da6087e7f233f8f))
+
+
+
+
+
+# [1.18.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.17.2...@medly-components/theme@1.18.0) (2020-09-24)
+
+
+### Features
+
+* **theme:** added textcolor options in table.row theme ([f89ab4b](https://github.com/medly/medly-components/commit/f89ab4b981d91873ea9d5f58869970e483cb0a25)), closes [#157](https://github.com/medly/medly-components/issues/157)
+
+
+
+
+
 ## [1.17.2](https://github.com/medly/medly-components/compare/@medly-components/theme@1.17.1...@medly-components/theme@1.17.2) (2020-09-16)
 
 

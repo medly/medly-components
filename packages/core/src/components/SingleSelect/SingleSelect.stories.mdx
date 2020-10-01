@@ -34,6 +34,7 @@ Basic single select component.
                     minWidth={text('Min Width', '')}
                     maxWidth={text('Max Width', '')}
                     maxHeight={text('Max Height', '')}
+                    includesNestedOptions={boolean('Includes nested option', true)}
                 />
             );
         }}
@@ -62,6 +63,7 @@ There are three variants available `filled`, `outlined` & `flat`.
                         onChange={setFilledValue}
                         label="Pharmacy"
                         helperText="Filled Variant"
+                        includesNestedOptions
                     />
                     <SingleSelect
                         variant="outlined"
@@ -71,6 +73,7 @@ There are three variants available `filled`, `outlined` & `flat`.
                         onChange={setOutlinedValue}
                         label="Pharmacy"
                         helperText="Outlined Variant"
+                        includesNestedOptions
                     />
                     <SingleSelect
                         variant="flat"
@@ -79,6 +82,7 @@ There are three variants available `filled`, `outlined` & `flat`.
                         onChange={setFlatValue}
                         label="Pharmacy"
                         helperText="Flat Variant"
+                        includesNestedOptions
                     />
                 </>
             );
@@ -106,6 +110,7 @@ As mentioned in the `TextField` component, either you can pass `errorText` or `v
                         value={filledValue}
                         onChange={setFilledValue}
                         label="Pharmacy"
+                        includesNestedOptions
                     />
                     <SingleSelect
                         variant="outlined"
@@ -115,6 +120,7 @@ As mentioned in the `TextField` component, either you can pass `errorText` or `v
                         value={outlinedValue}
                         onChange={setOutlinedValue}
                         label="Pharmacy"
+                        includesNestedOptions
                     />
                     <SingleSelect
                         variant="flat"
@@ -124,6 +130,7 @@ As mentioned in the `TextField` component, either you can pass `errorText` or `v
                         onChange={setFlatValue}
                         label="Pharmacy"
                         helperText="Flat Variant"
+                        includesNestedOptions
                     />
                 </>
             );
@@ -149,6 +156,7 @@ You can also provide prefix icon, which will always take the label color.
                         value={filledValue}
                         onChange={setFilledValue}
                         label="Pharmacy"
+                        includesNestedOptions
                     />
                     <SingleSelect
                         prefix={StarIcon}
@@ -157,6 +165,7 @@ You can also provide prefix icon, which will always take the label color.
                         value={outlinedValue}
                         onChange={setOutlinedValue}
                         label="Pharmacy"
+                        includesNestedOptions
                     />
                 </>
             );
@@ -178,7 +187,7 @@ It also supports keyboard navigation when it is in focus
 
 ##### Nested Options
 
-If you want to use nested options then you can directly pass nested array of `{label:'' , value:''}` in option list like below.
+If you want to use nested options then set `includesNestedOptions` prop to true and pass nested array of `{label:'' , value:''}` in option list like below.
 
 ```tsx
 const options = [

@@ -14,6 +14,16 @@ const button: ButtonTheme = {
     flat: {
         textColor: { default: colors.blue[500], hovered: colors.blue[600], pressed: colors.blue[700], disabled: colors.grey[500] }
     },
+    padding: {
+        S: '0.8rem 2.4rem 1rem',
+        M: '1rem 2.4rem 1.2rem',
+        L: '1.2rem 2.4rem 1.4rem'
+    },
+    textVariant: {
+        S: 'button2',
+        M: 'button1',
+        L: 'button1'
+    },
     borderRadius: {
         square: '0.8rem',
         rounded: '100rem',

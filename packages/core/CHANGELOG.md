@@ -3,6 +3,64 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.26.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.25.2...@medly-components/core@1.26.0) (2020-10-01)
+
+
+### Features
+
+* add shouldCloseOnOutsideClick prop in modal component ([4adf0c7](https://github.com/medly/medly-components/commit/4adf0c7fdfd2f14fc1e2844dac85626b143a8e81))
+* move padding and textVariant to theme in button component ([dac8672](https://github.com/medly/medly-components/commit/dac86720945cca51b35f1815fb0a664f69dcc447))
+* move padding to theme in searchbox component ([c13128b](https://github.com/medly/medly-components/commit/c13128bcb5dc24e7e669ad235da6087e7f233f8f))
+
+
+
+
+
+## [1.25.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.25.1...@medly-components/core@1.25.2) (2020-09-28)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [1.25.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.25.0...@medly-components/core@1.25.1) (2020-09-24)
+
+
+### Bug Fixes
+
+* button issue in calendar and hideShadow in the sidenav component ([660b10f](https://github.com/medly/medly-components/commit/660b10f6d765ec090442153f9024695885ccda93))
+
+
+
+
+
+# [1.25.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.24.5...@medly-components/core@1.25.0) (2020-09-24)
+
+
+### Bug Fixes
+
+* checkbox style issue in multiselect comopnent ([96af50d](https://github.com/medly/medly-components/commit/96af50d51939c8e1e15249e390704ebc58cb7b91))
+* diabled state issue in textField and datepicker component ([c4a4cc3](https://github.com/medly/medly-components/commit/c4a4cc3f25ab6ef0a8ea37d77331c2ef417adf3e))
+* import issues ([55f64d6](https://github.com/medly/medly-components/commit/55f64d6b7ae298c6e73eaad5f70ae09159867a99))
+* invalid date issue in the datepicker component ([cf493f5](https://github.com/medly/medly-components/commit/cf493f59b5e4d9d9e9357f2a38e9dc7b3d888b62))
+* sonar issues ([248f158](https://github.com/medly/medly-components/commit/248f158d2196c90edfd57981da814adb061c4a37))
+* **core:** fix SearchBox onEnter search trigger issue ([6081ec5](https://github.com/medly/medly-components/commit/6081ec51f8bf66b24d56b74bb016a1bc726199fe))
+
+
+### Features
+
+* add includesNestedOptions prop in singleselect component to handle overflow issue ([236d7c5](https://github.com/medly/medly-components/commit/236d7c59a8fa94834383a2d5e4f47bab3017ac1a))
+* add masking feature in textfield component ([f5ec7ab](https://github.com/medly/medly-components/commit/f5ec7ab693366fc34237366ca8fad983519f9de7))
+* add max height prop in single select component ([6e6a931](https://github.com/medly/medly-components/commit/6e6a9316f9c258aef3ae9e9510cceed6d667e493))
+* add maxWidth prop in textfield and singleselect component ([cf460e2](https://github.com/medly/medly-components/commit/cf460e21135e16b27b0b2efcbc583d3d458848c7))
+* add popover placement prop in datepicker component ([969b95e](https://github.com/medly/medly-components/commit/969b95e9a04c6e113917bfe0722b6121a431bf0d))
+* **theme:** added textcolor options in table.row theme ([f89ab4b](https://github.com/medly/medly-components/commit/f89ab4b981d91873ea9d5f58869970e483cb0a25)), closes [#157](https://github.com/medly/medly-components/issues/157)
+
+
+
+
+
 ## [1.24.5](https://github.com/medly/medly-components/compare/@medly-components/core@1.24.4...@medly-components/core@1.24.5) (2020-09-16)
 
 

@@ -9,12 +9,12 @@ import ToggleSwitch from './ToggleSwitch';
 import { SideNavProps, SideNavStaticProps } from './types';
 
 export const SideNav: FC<SideNavProps> & WithStyle & SideNavStaticProps = props => {
-    const { active, children, defaultActive, onChange, hideShadow } = props,
+    const { active, children, defaultActive, onChange, hideShadow, defaultOpen } = props,
         id = props.id || 'medly-sidenav';
 
     const ref = useRef(null),
         [isHovered, setHoveredState] = useState(false),
-        [isExpanded, setExpandedState] = useState(false),
+        [isExpanded, setExpandedState] = useState(defaultOpen),
         [activeItem, setActiveItem] = useState(defaultActive || '');
 
     const openSidenav = useCallback(() => !isExpanded && setHoveredState(true), [isExpanded]),
@@ -57,5 +57,6 @@ SideNav.Context = SideNavContext;
 SideNav.displayName = 'SideNav';
 SideNav.Style = Styled.Aside;
 SideNav.defaultProps = {
-    hideShadow: false
+    hideShadow: false,
+    defaultOpen: false
 };

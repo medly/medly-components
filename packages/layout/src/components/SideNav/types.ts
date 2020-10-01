@@ -23,6 +23,8 @@ export interface SideNavProps {
     onChange?: (key: string) => void;
     /** Set it true to hide the shadow */
     hideShadow?: boolean;
+    /** Set it true to open the sidenav on first render */
+    defaultOpen?: boolean;
 }
 
 export interface SideNavStaticProps {

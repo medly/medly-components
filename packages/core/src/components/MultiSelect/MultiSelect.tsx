@@ -77,6 +77,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
             }, [areOptionsVisible]),
             onClearHandler = useCallback(() => {
                 setSelectedOptions([]);
+                onChange && onChange([]);
                 setInputValue('');
             }, []),
             handleInputOnBlur = useCallback(() => areOptionsVisible && inputRef.current.focus(), [areOptionsVisible]),

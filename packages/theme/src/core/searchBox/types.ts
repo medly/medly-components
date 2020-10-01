@@ -16,6 +16,9 @@ export type SearchBoxTheme = {
     textVariant: {
         [k in Size]: FontVariants;
     };
+    padding: {
+        [k in Size]: string;
+    };
     bgColor: {
         default: string;
         hovered: string;
@@ -31,6 +34,9 @@ export type SearchBoxTheme = {
         active: string;
     };
     closeIcon: {
+        padding: {
+            [k in Size]: string;
+        };
         borderRadius: string;
         color: {
             default: string;
@@ -41,6 +47,9 @@ export type SearchBoxTheme = {
         };
     };
     searchIcon: {
+        padding: {
+            [k in Size]: string;
+        };
         borderRadius: string;
         color: {
             active: string;

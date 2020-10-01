@@ -89,7 +89,6 @@ export const Calendar: React.FC<Props> & WithStyle = React.memo(
                                 onChange={handleMonthChange}
                                 placeholder="Month"
                                 variant="flat"
-                                minWidth="7rem"
                                 errorText={isErrorPresent ? ' ' : ''}
                             />
                             <SingleSelect
@@ -100,7 +99,6 @@ export const Calendar: React.FC<Props> & WithStyle = React.memo(
                                 onChange={handleYearChange}
                                 placeholder="Year"
                                 variant="flat"
-                                minWidth="8rem"
                                 errorText={isErrorPresent ? ' ' : ''}
                             />
                         </Styled.MonthAndYearSelection>

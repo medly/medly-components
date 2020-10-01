@@ -113,11 +113,11 @@ describe('DatePicker component', () => {
             expect(message).toBeInTheDocument();
         });
 
-        it('should not call onChange if typed date is invalid', async () => {
+        it('should call onChange with null if typed date is invalid', async () => {
             const mockOnChange = jest.fn(),
                 { container } = render(<DatePicker id="dob" value={null} displayFormat="MM/dd/yyyy" onChange={mockOnChange} />);
             fireEvent.change(container.querySelector('input'), { target: { value: '01 / 02' } });
-            expect(mockOnChange).not.toHaveBeenCalled();
+            expect(mockOnChange).toHaveBeenCalledWith(null);
         });
     });
 
@@ -125,10 +125,9 @@ describe('DatePicker component', () => {
         const props: Props = {
             value: null,
             displayFormat: 'MM/dd/yyyy',
-            type: 'date',
             onChange: jest.fn()
         };
-        const renderComponent = (required?: boolean) => {
+        const renderComponent = (required = false) => {
             const { container, getByText } = render(<DatePicker id="dob" {...props} required={required} />);
             const inputEl = container.querySelector('input');
             return {
@@ -140,14 +139,14 @@ describe('DatePicker component', () => {
         it('should return error when value is empty and field is required', async () => {
             const { inputEl, getByText } = renderComponent(true);
             fireEvent.invalid(inputEl);
-            await waitFor(() => expect(getByText('Constraints not satisfied')).toBeInTheDocument());
+            await waitFor(() => expect(getByText('Please fill in this field')).toBeInTheDocument());
         });
 
-        it('should return error message if date entered is incomplete', () => {
-            const { inputEl, getByText } = renderComponent(true);
+        it('should return error message if date entered is incomplete', async () => {
+            const { inputEl, getByText } = renderComponent();
             fireEvent.change(inputEl, { target: { value: '04/31' } });
             fireEvent.blur(inputEl);
-            expect(getByText('Enter valid date')).toBeInTheDocument();
+            await waitFor(() => expect(getByText('Enter valid date')).toBeInTheDocument());
         });
     });
 

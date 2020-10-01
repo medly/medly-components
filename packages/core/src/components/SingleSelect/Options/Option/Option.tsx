@@ -9,7 +9,7 @@ import { OptionProps } from './types';
 const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
     const ref = useRef(null),
         [areOptionsVisible, setOptionsVisibilityState] = useState(false),
-        { value, theme, label, disabled, selected, onClick, hasError, hovered, size, variant, maxWidth } = props,
+        { value, theme, label, disabled, selected, onClick, hasError, hovered, size, variant, maxWidth, includesNestedOptions } = props,
         id = label.replace(/ /g, '-'),
         enterPress = useKeyPress('Enter'),
         leftPress = useKeyPress('ArrowLeft'),
@@ -74,6 +74,7 @@ const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
                     onOptionClick={onClick}
                     hasError={hasError}
                     maxWidth={maxWidth}
+                    includesNestedOptions={includesNestedOptions}
                 />
             )}
         </OptionStyled>

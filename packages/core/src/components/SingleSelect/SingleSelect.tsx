@@ -19,7 +19,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 variant,
                 minWidth,
                 maxWidth,
-                maxHeight,
+                includesNestedOptions,
                 fullWidth,
                 disabled,
                 onFocus,
@@ -185,7 +185,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                         hasError={!!props.errorText}
                         onOptionClick={handleOptionClick}
                         maxWidth={maxWidth}
-                        maxHeight={maxHeight}
+                        includesNestedOptions={includesNestedOptions}
                     />
                 )}
             </Styled.Wrapper>
@@ -203,5 +203,6 @@ SingleSelect.defaultProps = {
     fullWidth: false,
     required: false,
     isSearchable: false,
+    includesNestedOptions: false,
     placeholder: 'Please Select . . .'
 };
