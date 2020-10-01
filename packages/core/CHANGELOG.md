@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.26.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.25.2...@medly-components/core@1.26.0) (2020-10-01)
+
+
+### Features
+
+* add shouldCloseOnOutsideClick prop in modal component ([4adf0c7](https://github.com/medly/medly-components/commit/4adf0c7fdfd2f14fc1e2844dac85626b143a8e81))
+* move padding and textVariant to theme in button component ([dac8672](https://github.com/medly/medly-components/commit/dac86720945cca51b35f1815fb0a664f69dcc447))
+* move padding to theme in searchbox component ([c13128b](https://github.com/medly/medly-components/commit/c13128bcb5dc24e7e669ad235da6087e7f233f8f))
+
+
+
+
+
 ## [1.25.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.25.1...@medly-components/core@1.25.2) (2020-09-28)
 
 **Note:** Version bump only for package @medly-components/core
