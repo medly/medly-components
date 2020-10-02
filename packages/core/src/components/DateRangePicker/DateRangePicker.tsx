@@ -1,11 +1,11 @@
-import { DateRangeIcon, KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
+import { DateRangeIcon } from '@medly-components/icons';
 import { parseToDate, useOuterClickNotifier, useUpdateEffect } from '@medly-components/utils';
 import { add, format } from 'date-fns';
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import Calendar from '../Calendar';
-import * as CalendarStyled from '../Calendar/Calendar.styled';
 import getMaskedValue from '../TextField/getMaskedValue';
 import * as TextFieldStyled from '../TextField/Styled';
+import { DateRangeCalendar } from './DateRangeCalendar';
+import { DateRangeInput } from './DateRangeInput';
 import * as Styled from './DateRangePicker.styled';
 import { getFormattedDate, getValidDate } from './helpers';
 import { Props } from './types';
@@ -161,66 +161,52 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
                     <TextFieldStyled.Prefix size={size}>
                         <Prefix />
                     </TextFieldStyled.Prefix>
-                    <TextFieldStyled.InputWrapper>
-                        <TextFieldStyled.Input
-                            ref={startDateRef}
-                            id={`${inputId}-from-input`}
-                            aria-describedby={`${inputId}-from-helper-text`}
-                            value={startDateText}
-                            name="START_DATE"
-                            isPrefixPresent
-                            {...commonTextProps}
-                        />
-                        <TextFieldStyled.MaskPlaceholder size={size} isLabelPresent variant={variant}>
-                            {startDateMaskLabel}
-                        </TextFieldStyled.MaskPlaceholder>
-                        <TextFieldStyled.Label htmlFor={`${inputId}-from-input`} size={size} variant={variant} required={required}>
-                            {fromLabel}
-                        </TextFieldStyled.Label>
-                    </TextFieldStyled.InputWrapper>
+                    <DateRangeInput
+                        inputRef={startDateRef}
+                        id={`${inputId}-from-input`}
+                        aria={`${inputId}-from-helper-text`}
+                        value={startDateText}
+                        name="START_DATE"
+                        isPrefixPresent
+                        commonTextProps={commonTextProps}
+                        size={size}
+                        isLabelPresent
+                        variant={variant}
+                        dateMaskLabel={startDateMaskLabel}
+                        required={required}
+                        label={fromLabel}
+                    />
+
                     <Styled.InputSeparator />
-                    <TextFieldStyled.InputWrapper>
-                        <TextFieldStyled.Input
-                            id={`${inputId}-to-input`}
-                            ref={endDateRef}
-                            aria-describedby={`${inputId}-to-helper-text`}
-                            value={endDateText}
-                            name="END_DATE"
-                            {...commonTextProps}
-                        />
-                        <TextFieldStyled.MaskPlaceholder size={size} isLabelPresent variant={variant}>
-                            {endDateMaskLabel}
-                        </TextFieldStyled.MaskPlaceholder>
-                        <TextFieldStyled.Label htmlFor={`${inputId}-to-input`} size={size} variant={variant} required={required}>
-                            {toLabel}
-                        </TextFieldStyled.Label>
-                    </TextFieldStyled.InputWrapper>
+                    <DateRangeInput
+                        inputRef={endDateRef}
+                        id={`${inputId}-to-input`}
+                        aria={`${inputId}-to-helper-text`}
+                        value={endDateText}
+                        name="END_DATE"
+                        commonTextProps={commonTextProps}
+                        size={size}
+                        isLabelPresent
+                        variant={variant}
+                        dateMaskLabel={endDateMaskLabel}
+                        required={required}
+                        label={toLabel}
+                    />
                 </Styled.InnerWrapper>
                 <TextFieldStyled.HelperText id={`${id}-helper-text`} onClick={stopPropagation} size={size}>
                     {errorText || builtInErrorMessage || helperText}
                 </TextFieldStyled.HelperText>
             </Styled.OuterWrapper>
             {showCalendar && (
-                <Styled.CalendarWrapper size={size}>
-                    <Styled.DateRangeNavContainer>
-                        <Styled.DateRangeNav>
-                            <CalendarStyled.MonthNavigation className="navigation-go-back" disabled={false} /* onClick={() => {}} */>
-                                <KeyboardArrowLeftIcon />
-                            </CalendarStyled.MonthNavigation>
-                            <Styled.DateRangeNavText>{startMonth}</Styled.DateRangeNavText>
-                        </Styled.DateRangeNav>
-                        <Calendar id={`${inputId}-from-calendar`} date={startDate} {...commonCalendarProps} />
-                    </Styled.DateRangeNavContainer>
-                    <Styled.DateRangeNavContainer>
-                        <Styled.DateRangeNav>
-                            <Styled.DateRangeNavText>{endMonth}</Styled.DateRangeNavText>
-                            <CalendarStyled.MonthNavigation className="navigation-go-forward" disabled={false} /* onClick={() => {}} */>
-                                <KeyboardArrowRightIcon />
-                            </CalendarStyled.MonthNavigation>
-                        </Styled.DateRangeNav>
-                        <Calendar id={`${inputId}-to-calendar`} date={endDate} {...commonCalendarProps} />
-                    </Styled.DateRangeNavContainer>
-                </Styled.CalendarWrapper>
+                <DateRangeCalendar
+                    size={size}
+                    startMonth={startMonth}
+                    endMonth={endMonth}
+                    inputId={inputId}
+                    startDate={startDate}
+                    endDate={endDate}
+                    commonCalendarProps={commonCalendarProps}
+                />
             )}
         </Styled.MainWrapperComponent>
     );
