@@ -38,6 +38,7 @@ export interface StyledProps extends Props, TextFieldTheme {
     isPrefixPresent: boolean;
     isSuffixPresent: boolean;
     isLabelPresent: boolean;
+    variant: 'filled' | 'outlined' | 'b2cField';
 }
 
 export interface InnerWrapperProps extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'height'>, TextFieldTheme, WithThemeProp {

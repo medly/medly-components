@@ -41,7 +41,7 @@ const outlineStyle = ({ theme, outlined, disabled, isErrorPresent }: InnerWrappe
     `;
 };
 
-const b2cFieldStyle = ({ theme, outlined, disabled }: InnerWrapperProps) => {
+const b2cFieldStyle = ({ outlined, disabled }: InnerWrapperProps) => {
     return css`
         border-radius: 1.2rem;
         background-color: ${outlined.default.bgColor};
@@ -142,7 +142,10 @@ const activeStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => cs
     }
 `;
 
+// TODO: fix error background color for b2c
 const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
+    background-color: ${variant === 'b2cField' ? textField.b2cField.error.bgColor : 'transparent'};
+
     &,
     &:hover,
     &:focus-within,

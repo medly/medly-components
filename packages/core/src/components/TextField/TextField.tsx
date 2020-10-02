@@ -96,6 +96,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                             isSuffixPresent={isSuffixPresent}
                             isLabelPresent={isLabelPresent}
                             errorText={errorText || builtInErrorMessage}
+                            variant={props.variant}
                             {...{ ...restProps, size, onBlur, onInvalid, onChange }}
                         />
                         {maskLabel && (

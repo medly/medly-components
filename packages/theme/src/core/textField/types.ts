@@ -85,12 +85,12 @@ export interface TextFieldTheme {
         default: {
             borderColor: string;
             bgColor: string;
-            iconColor: string;
             textColor: string;
             labelColor: string;
             helperTextColor: string;
         };
         hover: {
+            bgColor: string;
             borderColor: string;
         };
         disabled: {

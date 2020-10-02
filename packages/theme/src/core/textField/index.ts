@@ -62,7 +62,7 @@ const textField: TextFieldTheme = {
         error: {
             caretColor: colors.red[500],
             placeholderColor: 'rgba(204, 0, 0, .2)',
-            bgColor: colors.red[100],
+            bgColor: colors.red[500],
             cursorColor: colors.red[500],
             borderColor: colors.red[500],
             labelColor: colors.red[500],
@@ -71,27 +71,27 @@ const textField: TextFieldTheme = {
     },
     b2cField: {
         default: {
-            borderColor: colors.grey[700],
-            bgColor: colors.grey[100],
-            iconColor: colors.grey[700],
+            borderColor: colors.grey[400],
+            bgColor: colors.grey[50],
             textColor: colors.black,
             labelColor: colors.grey[700],
             helperTextColor: colors.grey[700]
         },
         hover: {
-            borderColor: colors.grey[700]
+            bgColor: colors.grey[50],
+            borderColor: colors.grey[600]
         },
-        disabled: { bgColor: colors.grey[50], labelColor: colors.grey[400], textColor: colors.grey[800], borderColor: colors.grey[300] },
+        disabled: { bgColor: colors.white, labelColor: colors.grey[400], textColor: colors.grey[700], borderColor: colors.grey[300] },
         active: {
             placeholderColor: 'rgba(0, 90, 238, .2)',
-            bgColor: colors.blue[100],
+            bgColor: colors.white,
             borderColor: colors.blue[500],
             labelColor: colors.blue[500]
         },
         error: {
             caretColor: colors.red[500],
             placeholderColor: 'rgba(204, 0, 0, .2)',
-            bgColor: colors.red[100],
+            bgColor: '#FCF2F2',
             cursorColor: colors.red[500],
             borderColor: colors.red[500],
             labelColor: colors.red[500],
