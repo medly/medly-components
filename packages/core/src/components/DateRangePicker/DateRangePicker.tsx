@@ -8,9 +8,9 @@ import DateRangeCalendar from './DateRangeCalendar';
 import DateRangeInput from './DateRangeInput';
 import * as Styled from './DateRangePicker.styled';
 import { getFormattedDate, getValidDate } from './helpers';
-import { Props } from './types';
+import { DateRangeProps } from './types';
 
-export const DateRangePicker: FC<Props> = React.memo(props => {
+export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
     const {
         id,
         value,
@@ -24,9 +24,9 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
         variant,
         disabled,
         size,
-        required,
         minSelectableDate,
         maxSelectableDate,
+        popoverPlacement,
         onChange,
         ...restProps
     } = props;
@@ -34,8 +34,8 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
         [active, setActive] = useState(false),
         [builtInErrorMessage, setErrorMessage] = useState(''),
         [showCalendar, toggleCalendar] = useState(false),
-        [startDateText, setStartDateText] = useState(''),
         [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE'),
+        [startDateText, setStartDateText] = useState(''),
         [endDateText, setEndDateText] = useState(''),
         [startDate, setStartDate] = useState<Date | null>(null),
         [endDate, setEndDate] = useState<Date | null>(null),
@@ -47,24 +47,21 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
         [startDateMaskLabel, setStartDateMaskLabel] = useState(mask),
         [endDateMaskLabel, setEndDateMaskLabel] = useState(mask);
 
-    const startMonth: string = useMemo(() => (startDate ? format(startDate, 'MMMM yyyy') : format(new Date(), 'MMMM yyyy')), [startDate]);
-    const endMonth: string = useMemo(() => (endDate ? format(endDate, 'MMMM yyyy') : format(add(new Date(), { months: 1 }), 'MMMM yyyy')), [
-        endDate
-    ]);
-
-    const onIconClick = React.useCallback(
-        event => {
-            event.stopPropagation();
-            if (!disabled) {
-                toggleCalendar(val => !val);
-                setActive(true);
-                startDateRef.current.focus();
-            }
-        },
-        [disabled]
-    );
+    const startMonth: string = useMemo(() => format(startDate || new Date(), 'MMMM yyyy'), [startDate]),
+        endMonth: string = useMemo(() => format(endDate || add(new Date(), { months: 1 }), 'MMMM yyyy'), [endDate]);
 
     const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
+        onIconClick = React.useCallback(
+            event => {
+                event.stopPropagation();
+                if (!disabled) {
+                    toggleCalendar(val => !val);
+                    setActive(true);
+                    startDateRef.current.focus();
+                }
+            },
+            [disabled]
+        ),
         onFocus = React.useCallback(
             (event: React.FocusEvent<HTMLInputElement>) => {
                 setActive(true);
@@ -137,7 +134,6 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
         size,
         onBlur,
         onFocus,
-        required,
         disabled,
         placeholder: mask,
         onChange: handleTextChange,
@@ -191,4 +187,6 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
 });
 
 DateRangePicker.displayName = 'DateRangePicker';
-DateRangePicker.defaultProps = {};
+DateRangePicker.defaultProps = {
+    variant: 'filled'
+};

@@ -2,7 +2,7 @@ import { boolean, select } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
 import DateRangePicker from '.';
 import { Placement } from '../Popover/types';
-import { Props } from './types';
+import { DateRangeProps } from './types';
 
 const placement: Placement[] = [
     'top-start',
@@ -19,7 +19,7 @@ const placement: Placement[] = [
     'left-start'
 ];
 
-const displayFormats: Props['displayFormat'][] = [
+const displayFormats: DateRangeProps['displayFormat'][] = [
     'dd/MM/yyyy',
     'MM/dd/yyyy',
     'dd/yyyy/MM',
@@ -47,7 +47,7 @@ export const Basic = () => {
             value={dates}
             onChange={setDates}
             size={select('Size', ['S', 'M'], 'M')}
-            placement={select('Placement', placement, 'bottom-start')}
+            popoverPlacement={select('Placement', placement, 'bottom-start')}
             variant={select('Variant', ['filled', 'outlined'], 'filled')}
             fullWidth={boolean('Full Width', false)}
             disabled={boolean('Disabled', false)}

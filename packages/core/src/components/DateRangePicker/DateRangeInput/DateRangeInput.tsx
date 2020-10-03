@@ -7,7 +7,15 @@ export const DateRangeInput: FC<Props> = React.memo(
         const { id, value, name, isPrefixPresent, size, variant, dateMaskLabel, required, label, ...restProps } = props;
         return (
             <TextFieldStyled.InputWrapper>
-                <TextFieldStyled.Input ref={ref} id={id} value={value} name={name} isPrefixPresent={isPrefixPresent} {...restProps} />
+                <TextFieldStyled.Input
+                    ref={ref}
+                    id={id}
+                    value={value}
+                    variant={variant}
+                    name={name}
+                    isPrefixPresent={isPrefixPresent}
+                    {...restProps}
+                />
                 <TextFieldStyled.MaskPlaceholder size={size} isLabelPresent variant={variant}>
                     {dateMaskLabel}
                 </TextFieldStyled.MaskPlaceholder>
