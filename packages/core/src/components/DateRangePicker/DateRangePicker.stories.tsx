@@ -2,6 +2,7 @@ import { boolean, select } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
 import DateRangePicker from '.';
 import { Placement } from '../Popover/types';
+import { Props } from './types';
 
 const placement: Placement[] = [
     'top-start',
@@ -34,7 +35,7 @@ const displayFormats: Props['displayFormat'][] = [
 ];
 
 export const Basic = () => {
-    const [dates, setDates] = useState({ startDate: '', endDate: '' });
+    const [dates, setDates] = useState({ startDate: null, endDate: null });
 
     return (
         <DateRangePicker

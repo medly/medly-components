@@ -1,9 +1,9 @@
 import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
 import React, { FC } from 'react';
-import Calendar from '../Calendar';
-import * as CalendarStyled from '../Calendar/Calendar.styled';
-import { Props } from './DateRangeCalendarTypes';
-import * as Styled from './DateRangePicker.styled';
+import Calendar from '../../Calendar';
+import * as CalendarStyled from '../../Calendar/Calendar.styled';
+import * as Styled from '../DateRangePicker.styled';
+import { Props } from './types';
 
 export const DateRangeCalendar: FC<Props> = React.memo(props => {
     const { size, startMonth, endMonth, inputId, startDate, endDate, commonCalendarProps } = props;
@@ -30,3 +30,4 @@ export const DateRangeCalendar: FC<Props> = React.memo(props => {
         </Styled.CalendarWrapper>
     );
 });
+DateRangeCalendar.displayName = 'DateRangeCalendar';

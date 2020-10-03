@@ -5,14 +5,14 @@ import TextField from '../TextField';
 import * as TextFieldStyled from '../TextField/Styled';
 
 type MainWrapperComponentProps = {
-    fullWidth?: boolean;
-    minWidth?: number;
+    fullWidth: boolean;
+    minWidth?: string;
 };
 
 export const MainWrapperComponent = styled.div<MainWrapperComponentProps>`
     position: relative;
     width: ${props => (props.fullWidth ? '100%' : 'auto')};
-    min-width: ${props => (props.minWidth && props.minWidth > 338 ? props.minWidth : '338px')}px;
+    min-width: ${({ minWidth }) => minWidth || '33.8rem'};
     display: inline-block;
 `;
 

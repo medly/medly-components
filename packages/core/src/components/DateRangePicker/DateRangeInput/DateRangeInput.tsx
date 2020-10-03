@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import * as TextFieldStyled from '../TextField/Styled';
-import { Props } from './DateRangeInputTypes';
+import * as TextFieldStyled from '../../TextField/Styled';
+import { Props } from './types';
 
 export const DateRangeInput: FC<Props> = React.memo(props => {
     const {
@@ -38,3 +38,4 @@ export const DateRangeInput: FC<Props> = React.memo(props => {
         </TextFieldStyled.InputWrapper>
     );
 });
+DateRangeInput.displayName = 'DateRangeInput';
