@@ -133,24 +133,17 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
         </Styled.DateIcon>
     );
     const commonTextProps = {
-            variant,
-            size,
-            onBlur,
-            onFocus,
-            required,
-            disabled,
-            placeholder: mask,
-            onChange: handleTextChange,
-            errorText: errorText || builtInErrorMessage,
-            ...restProps
-        },
-        commonCalendarProps = {
-            disableHeader: true,
-            onChange: handleDateChange,
-            isErrorPresent: isErrorPresent,
-            minSelectableDate: minSelectableDate,
-            maxSelectableDate: maxSelectableDate
-        };
+        variant,
+        size,
+        onBlur,
+        onFocus,
+        required,
+        disabled,
+        placeholder: mask,
+        onChange: handleTextChange,
+        errorText: errorText || builtInErrorMessage,
+        ...restProps
+    };
 
     return (
         <Styled.MainWrapperComponent ref={wrapperRef} fullWidth={fullWidth} minWidth={minWidth}>
@@ -186,13 +179,11 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
             </Styled.OuterWrapper>
             {showCalendar && (
                 <DateRangeCalendar
-                    size={size}
-                    startMonth={startMonth}
-                    endMonth={endMonth}
-                    inputId={inputId}
-                    startDate={startDate}
-                    endDate={endDate}
-                    commonCalendarProps={commonCalendarProps}
+                    id={inputId}
+                    disableHeader
+                    onChange={handleDateChange}
+                    isErrorPresent={isErrorPresent}
+                    {...{ size, startDate, endDate, startMonth, endMonth, isErrorPresent, minSelectableDate, maxSelectableDate }}
                 />
             )}
         </Styled.MainWrapperComponent>

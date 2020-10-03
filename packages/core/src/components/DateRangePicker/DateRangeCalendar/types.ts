@@ -1,11 +1,11 @@
-import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
+import { Omit } from '@medly-components/utils/src';
+import { CalendarProps } from '../../Calendar/types';
 
-export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height' | 'value' | 'onChange'>, WithThemeProp {
-    size?: any;
-    startMonth?: any;
-    endMonth?: any;
-    inputId?: any;
-    startDate?: any;
-    endDate?: any;
-    commonCalendarProps?: any;
-}
+export type Props = Omit<CalendarProps, 'size' | 'date'> & {
+    size?: 'S' | 'M';
+    startMonth?: string;
+    endMonth?: string;
+    id?: any;
+    startDate?: Date;
+    endDate?: Date;
+};

@@ -6,7 +6,7 @@ import * as Styled from '../DateRangePicker.styled';
 import { Props } from './types';
 
 export const DateRangeCalendar: FC<Props> = React.memo(props => {
-    const { size, startMonth, endMonth, inputId, startDate, endDate, commonCalendarProps } = props;
+    const { size, startMonth, endMonth, id, startDate, endDate, ...restProps } = props;
     return (
         <Styled.CalendarWrapper size={size}>
             <Styled.DateRangeNavContainer>
@@ -16,7 +16,7 @@ export const DateRangeCalendar: FC<Props> = React.memo(props => {
                     </CalendarStyled.MonthNavigation>
                     <Styled.DateRangeNavText>{startMonth}</Styled.DateRangeNavText>
                 </Styled.DateRangeNav>
-                <Calendar id={`${inputId}-from-calendar`} date={startDate} {...commonCalendarProps} />
+                <Calendar id={`${id}-from-calendar`} date={startDate} {...restProps} />
             </Styled.DateRangeNavContainer>
             <Styled.DateRangeNavContainer>
                 <Styled.DateRangeNav>
@@ -25,7 +25,7 @@ export const DateRangeCalendar: FC<Props> = React.memo(props => {
                         <KeyboardArrowRightIcon />
                     </CalendarStyled.MonthNavigation>
                 </Styled.DateRangeNav>
-                <Calendar id={`${inputId}-to-calendar`} date={endDate} {...commonCalendarProps} />
+                <Calendar id={`${id}-to-calendar`} date={endDate} {...restProps} />
             </Styled.DateRangeNavContainer>
         </Styled.CalendarWrapper>
     );

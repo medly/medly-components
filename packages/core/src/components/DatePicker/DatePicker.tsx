@@ -6,9 +6,9 @@ import Calendar from '../Calendar';
 import Popover from '../Popover';
 import TextField from '../TextField';
 import { DateIcon, Wrapper } from './DatePicker.styled';
-import { Props } from './types';
+import { DatePickerProps } from './types';
 
-export const DatePicker: React.FC<Props> & WithStyle = React.memo(
+export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 value,

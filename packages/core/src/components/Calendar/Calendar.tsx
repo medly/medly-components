@@ -7,9 +7,9 @@ import Text from '../Text';
 import * as Styled from './Calendar.styled';
 import { CALENDAR_MONTHS, WEEK_DAYS } from './constants';
 import { getCalendarDates, getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear, isSameDay, isSameMonth } from './helper';
-import { Props } from './types';
+import { CalendarProps } from './types';
 
-export const Calendar: React.FC<Props> & WithStyle = React.memo(
+export const Calendar: React.FC<CalendarProps> & WithStyle = React.memo(
     ({ date, onChange, minSelectableDate, maxSelectableDate, isErrorPresent, disableHeader, ...restProps }) => {
         const today = new Date(),
             [, setCalenderVisibility] = useContext(PopoverContext),
