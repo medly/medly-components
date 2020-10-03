@@ -100,10 +100,12 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                 if (focusedElement === `START_DATE`) {
                     setStartDate(date);
                     setStartDateText(formattedDate);
+                    setStartDateMaskLabel(formattedDate);
                     setFocusedElement('END_DATE');
                 } else {
                     setEndDate(date);
                     setEndDateText(formattedDate);
+                    setEndDateMaskLabel(formattedDate);
                     setFocusedElement('START_DATE');
                 }
             },
@@ -116,10 +118,15 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
     }, wrapperRef);
 
     useEffect(() => {
+        const formattedStartDate = value.startDate ? getFormattedDate(startDate, displayFormat) : '',
+            formattedEndDate = value.endDate ? getFormattedDate(endDate, displayFormat) : '';
+
         setStartDate(getValidDate(value.startDate, displayFormat));
         setEndDate(getValidDate(value.endDate, displayFormat));
-        setStartDateText(value.startDate ? getFormattedDate(startDate, displayFormat) : '');
-        setEndDateText(value.endDate ? getFormattedDate(endDate, displayFormat) : '');
+        setStartDateText(formattedStartDate);
+        setEndDateText(formattedEndDate);
+        setStartDateMaskLabel(formattedStartDate || mask);
+        setEndDateMaskLabel(formattedEndDate || mask);
     }, [value, displayFormat]);
 
     useUpdateEffect(() => {
@@ -185,6 +192,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                 <DateRangeCalendar
                     id={inputId}
                     disableHeader
+                    placement={popoverPlacement}
                     onChange={handleDateChange}
                     isErrorPresent={isErrorPresent}
                     {...{ size, startDate, endDate, startMonth, endMonth, isErrorPresent, minSelectableDate, maxSelectableDate }}

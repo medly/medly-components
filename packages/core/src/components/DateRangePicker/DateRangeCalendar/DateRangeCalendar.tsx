@@ -1,33 +1,32 @@
 import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
 import React, { FC } from 'react';
 import Calendar from '../../Calendar';
-import * as CalendarStyled from '../../Calendar/Calendar.styled';
-import * as Styled from '../DateRangePicker.styled';
+import * as Styled from './DateRangeCalendar.styled';
 import { Props } from './types';
 
 export const DateRangeCalendar: FC<Props> = React.memo(props => {
-    const { size, startMonth, endMonth, id, startDate, endDate, ...restProps } = props;
+    const { size, startMonth, endMonth, id, startDate, endDate, placement, ...restProps } = props;
     return (
-        <Styled.CalendarWrapper size={size}>
-            <Styled.DateRangeNavContainer>
-                <Styled.DateRangeNav>
-                    <CalendarStyled.MonthNavigation className="navigation-go-back" disabled={false} /* onClick={() => {}} */>
-                        <KeyboardArrowLeftIcon />
-                    </CalendarStyled.MonthNavigation>
-                    <Styled.DateRangeNavText>{startMonth}</Styled.DateRangeNavText>
-                </Styled.DateRangeNav>
+        <Styled.DateRangePopup size={size} placement={placement}>
+            <Styled.CalendarWrapper>
+                <Styled.NavigatorIcon align="left">
+                    <KeyboardArrowLeftIcon />
+                </Styled.NavigatorIcon>
+                <Styled.MonthText textVariant="button1" textAlign="center">
+                    {startMonth}
+                </Styled.MonthText>
                 <Calendar id={`${id}-from-calendar`} date={startDate} {...restProps} />
-            </Styled.DateRangeNavContainer>
-            <Styled.DateRangeNavContainer>
-                <Styled.DateRangeNav>
-                    <Styled.DateRangeNavText>{endMonth}</Styled.DateRangeNavText>
-                    <CalendarStyled.MonthNavigation className="navigation-go-forward" disabled={false} /* onClick={() => {}} */>
-                        <KeyboardArrowRightIcon />
-                    </CalendarStyled.MonthNavigation>
-                </Styled.DateRangeNav>
+            </Styled.CalendarWrapper>
+            <Styled.CalendarWrapper>
+                <Styled.MonthText textVariant="button1" textAlign="center">
+                    {endMonth}
+                </Styled.MonthText>
+                <Styled.NavigatorIcon align="right">
+                    <KeyboardArrowRightIcon />
+                </Styled.NavigatorIcon>
                 <Calendar id={`${id}-to-calendar`} date={endDate} {...restProps} />
-            </Styled.DateRangeNavContainer>
-        </Styled.CalendarWrapper>
+            </Styled.CalendarWrapper>
+        </Styled.DateRangePopup>
     );
 });
 DateRangeCalendar.displayName = 'DateRangeCalendar';
