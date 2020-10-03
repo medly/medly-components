@@ -2,10 +2,10 @@ import { useCombinedRefs, WithStyle } from '@medly-components/utils';
 import React, { FC, FocusEvent, FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import getMaskedValue from './getMaskedValue';
 import * as Styled from './Styled';
-import { Props } from './types';
+import { TextFieldProps } from './types';
 
-export const TextField: FC<Props> & WithStyle = React.memo(
-    React.forwardRef((props: Props, ref) => {
+export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
+    React.forwardRef((props: TextFieldProps, ref) => {
         const [builtInErrorMessage, setErrorMessage] = useState(''),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null));
 

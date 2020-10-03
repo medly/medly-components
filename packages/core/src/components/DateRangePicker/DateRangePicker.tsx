@@ -140,9 +140,7 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
             required,
             disabled,
             placeholder: mask,
-            isLabelPresent: true,
             onChange: handleTextChange,
-            isSuffixPresent: false,
             errorText: errorText || builtInErrorMessage,
             ...restProps
         },
@@ -162,35 +160,24 @@ export const DateRangePicker: FC<Props> = React.memo(props => {
                         <Prefix />
                     </TextFieldStyled.Prefix>
                     <DateRangeInput
-                        inputRef={startDateRef}
+                        ref={startDateRef}
                         id={`${inputId}-from-input`}
-                        aria={`${inputId}-from-helper-text`}
                         value={startDateText}
                         name="START_DATE"
                         isPrefixPresent
-                        commonTextProps={commonTextProps}
-                        size={size}
-                        isLabelPresent
-                        variant={variant}
                         dateMaskLabel={startDateMaskLabel}
-                        required={required}
                         label={fromLabel}
+                        {...commonTextProps}
                     />
-
                     <Styled.InputSeparator />
                     <DateRangeInput
-                        inputRef={endDateRef}
+                        ref={endDateRef}
                         id={`${inputId}-to-input`}
-                        aria={`${inputId}-to-helper-text`}
                         value={endDateText}
                         name="END_DATE"
-                        commonTextProps={commonTextProps}
-                        size={size}
-                        isLabelPresent
-                        variant={variant}
                         dateMaskLabel={endDateMaskLabel}
-                        required={required}
                         label={toLabel}
+                        {...commonTextProps}
                     />
                 </Styled.InnerWrapper>
                 <TextFieldStyled.HelperText id={`${id}-helper-text`} onClick={stopPropagation} size={size}>

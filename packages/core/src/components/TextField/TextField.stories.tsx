@@ -3,10 +3,10 @@ import { styled } from '@medly-components/utils';
 import React, { useCallback, useState } from 'react';
 import Button from '../Button';
 import { TextField } from './TextField';
-import { Props } from './types';
+import { TextFieldProps } from './types';
 
-export const variants: Props['variant'][] = ['filled', 'outlined'];
-export const sizes: Props['size'][] = ['S', 'M'];
+export const variants: TextFieldProps['variant'][] = ['filled', 'outlined'];
+export const sizes: TextFieldProps['size'][] = ['S', 'M'];
 
 export const ThemeInterface: React.FC<TextFieldTheme> = () => null;
 ThemeInterface.defaultProps = {
