@@ -4,18 +4,10 @@ import { Props } from './types';
 
 export const DateRangeInput: FC<Props> = React.memo(
     React.forwardRef((props: Props, ref) => {
-        const { id, value, name, isPrefixPresent, size, variant, dateMaskLabel, required, label, ...restProps } = props;
+        const { id, size, variant, dateMaskLabel, required, label, ...restProps } = props;
         return (
             <TextFieldStyled.InputWrapper>
-                <TextFieldStyled.Input
-                    ref={ref}
-                    id={id}
-                    value={value}
-                    variant={variant}
-                    name={name}
-                    isPrefixPresent={isPrefixPresent}
-                    {...restProps}
-                />
+                <TextFieldStyled.Input id={id} isLabelPresent ref={ref} size={size} variant={variant} required={required} {...restProps} />
                 <TextFieldStyled.MaskPlaceholder size={size} isLabelPresent variant={variant}>
                     {dateMaskLabel}
                 </TextFieldStyled.MaskPlaceholder>

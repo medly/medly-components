@@ -2,12 +2,14 @@ import { DateRangeIcon } from '@medly-components/icons';
 import { parseToDate, useOuterClickNotifier, useUpdateEffect } from '@medly-components/utils';
 import { add, format } from 'date-fns';
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { DateIconWrapper } from '../DatePicker/DatePicker.styled';
 import getMaskedValue from '../TextField/getMaskedValue';
 import * as TextFieldStyled from '../TextField/Styled';
 import DateRangeCalendar from './DateRangeCalendar';
 import DateRangeInput from './DateRangeInput';
 import * as Styled from './DateRangePicker.styled';
 import { getFormattedDate, getValidDate } from './helpers';
+import InputSeparator from './InputSeparator';
 import { DateRangeProps } from './types';
 
 export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
@@ -39,7 +41,6 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         [endDateText, setEndDateText] = useState(''),
         [startDate, setStartDate] = useState<Date | null>(null),
         [endDate, setEndDate] = useState<Date | null>(null),
-        isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]),
         startDateRef = useRef<HTMLInputElement>(null),
         endDateRef = useRef<HTMLInputElement>(null),
         wrapperRef = useRef<HTMLDivElement>(null),
@@ -47,8 +48,9 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         [startDateMaskLabel, setStartDateMaskLabel] = useState(mask),
         [endDateMaskLabel, setEndDateMaskLabel] = useState(mask);
 
-    const startMonth: string = useMemo(() => format(startDate || new Date(), 'MMMM yyyy'), [startDate]),
-        endMonth: string = useMemo(() => format(endDate || add(new Date(), { months: 1 }), 'MMMM yyyy'), [endDate]);
+    const startMonth = useMemo(() => format(startDate || new Date(), 'MMMM yyyy'), [startDate]),
+        endMonth = useMemo(() => format(endDate || add(new Date(), { months: 1 }), 'MMMM yyyy'), [endDate]),
+        isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
     const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
         onIconClick = React.useCallback(
@@ -124,55 +126,61 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         focusedElement === 'START_DATE' ? toggleCalendar(false) : endDateRef.current.focus();
     }, [focusedElement]);
 
+    const textProps = {
+            variant,
+            size,
+            onBlur,
+            onFocus,
+            disabled,
+            placeholder: mask,
+            onChange: handleTextChange,
+            errorText: errorText || builtInErrorMessage,
+            ...restProps
+        },
+        iconProps = {
+            variant,
+            isErrorPresent,
+            disabled,
+            size,
+            isActive: active
+        };
+
     const Prefix = () => (
-        <Styled.DateIcon variant={variant} isErrorPresent={isErrorPresent} isActive={active} disabled={disabled} size={size}>
+        <DateIconWrapper {...iconProps}>
             <DateRangeIcon onClick={onIconClick} size={size} />
-        </Styled.DateIcon>
+        </DateIconWrapper>
     );
-    const commonTextProps = {
-        variant,
-        size,
-        onBlur,
-        onFocus,
-        disabled,
-        placeholder: mask,
-        onChange: handleTextChange,
-        errorText: errorText || builtInErrorMessage,
-        ...restProps
-    };
 
     return (
-        <Styled.MainWrapperComponent ref={wrapperRef} fullWidth={fullWidth} minWidth={minWidth}>
-            <Styled.OuterWrapper id={`${inputId}-input-wrapper`} fullWidth={fullWidth} minWidth={minWidth}>
-                <Styled.InnerWrapper size={size} variant={variant} disabled={disabled} isErrorPresent={isErrorPresent} isLabelPresent>
-                    <TextFieldStyled.Prefix size={size}>
-                        <Prefix />
-                    </TextFieldStyled.Prefix>
-                    <DateRangeInput
-                        ref={startDateRef}
-                        id={`${inputId}-from-input`}
-                        value={startDateText}
-                        name="START_DATE"
-                        isPrefixPresent
-                        dateMaskLabel={startDateMaskLabel}
-                        label={fromLabel}
-                        {...commonTextProps}
-                    />
-                    <Styled.InputSeparator />
-                    <DateRangeInput
-                        ref={endDateRef}
-                        id={`${inputId}-to-input`}
-                        value={endDateText}
-                        name="END_DATE"
-                        dateMaskLabel={endDateMaskLabel}
-                        label={toLabel}
-                        {...commonTextProps}
-                    />
-                </Styled.InnerWrapper>
-                <TextFieldStyled.HelperText id={`${id}-helper-text`} onClick={stopPropagation} size={size}>
-                    {errorText || builtInErrorMessage || helperText}
-                </TextFieldStyled.HelperText>
-            </Styled.OuterWrapper>
+        <TextFieldStyled.OuterWrapper id={`${inputId}-input-wrapper`} ref={wrapperRef} fullWidth={fullWidth} minWidth={minWidth}>
+            <Styled.InnerWrapper size={size} variant={variant} disabled={disabled} isErrorPresent={isErrorPresent} isLabelPresent>
+                <TextFieldStyled.Prefix size={size}>
+                    <Prefix />
+                </TextFieldStyled.Prefix>
+                <DateRangeInput
+                    ref={startDateRef}
+                    id={`${inputId}-from-input`}
+                    value={startDateText}
+                    name="START_DATE"
+                    isPrefixPresent
+                    dateMaskLabel={startDateMaskLabel}
+                    label={fromLabel}
+                    {...textProps}
+                />
+                <InputSeparator {...iconProps} />
+                <DateRangeInput
+                    ref={endDateRef}
+                    id={`${inputId}-to-input`}
+                    value={endDateText}
+                    name="END_DATE"
+                    dateMaskLabel={endDateMaskLabel}
+                    label={toLabel}
+                    {...textProps}
+                />
+            </Styled.InnerWrapper>
+            <TextFieldStyled.HelperText id={`${id}-helper-text`} onClick={stopPropagation} size={size}>
+                {errorText || builtInErrorMessage || helperText}
+            </TextFieldStyled.HelperText>
             {showCalendar && (
                 <DateRangeCalendar
                     id={inputId}
@@ -182,11 +190,12 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                     {...{ size, startDate, endDate, startMonth, endMonth, isErrorPresent, minSelectableDate, maxSelectableDate }}
                 />
             )}
-        </Styled.MainWrapperComponent>
+        </TextFieldStyled.OuterWrapper>
     );
 });
 
 DateRangePicker.displayName = 'DateRangePicker';
 DateRangePicker.defaultProps = {
-    variant: 'filled'
+    variant: 'filled',
+    minWidth: '33.8rem'
 };

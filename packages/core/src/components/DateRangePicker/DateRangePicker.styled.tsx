@@ -1,61 +1,12 @@
-import { centerAligned, styled } from '@medly-components/utils';
+import { SvgIcon } from '@medly-components/icons';
+import { styled } from '@medly-components/utils';
 import * as CalendarStyled from '../Calendar/Calendar.styled';
-import * as DatePickerStyled from '../DatePicker/DatePicker.styled';
-import TextField from '../TextField';
 import * as TextFieldStyled from '../TextField/Styled';
 
-type MainWrapperComponentProps = {
-    fullWidth: boolean;
-    minWidth?: string;
-};
-
-export const MainWrapperComponent = styled.div<MainWrapperComponentProps>`
-    position: relative;
-    width: ${props => (props.fullWidth ? '100%' : 'auto')};
-    min-width: ${({ minWidth }) => minWidth || '33.8rem'};
-    display: inline-block;
-`;
-
-export const Wrapper = styled.div`
-    cursor: pointer;
-    border: 1px solid #98a7b7;
-    border-radius: 4px;
-    overflow: hidden;
-`;
-
-export const InputWrapperContainer = styled.div`
-    display: flex;
-    ${centerAligned('flex')}
-    flex-direction: row;
-`;
-
-export const InputSeparator = styled.i`
-    border-right: 1px solid #c7d0d8;
-    height: 45%;
-    width: 1px;
-`;
-
-export const OuterWrapper = styled(TextFieldStyled.OuterWrapper)`
-    min-width: 338px;
-`;
-
 export const InnerWrapper = styled(TextFieldStyled.InnerWrapper)`
-    padding: 0;
-    ${TextField.Style} {
-        ${TextFieldStyled.InnerWrapper} {
-            background-color: transparent;
-        }
-    }
-    ${TextFieldStyled.InputWrapper} {
-        ${TextFieldStyled.Input} {
-            padding: 0 16px 8px 16px;
-            &:not(:placeholder-shown) + ${TextFieldStyled.Label}, &:focus + ${TextFieldStyled.Label} {
-                padding-left: 22px;
-            }
-        }
-        ${TextFieldStyled.Label} {
-            padding-left: 16px;
-        }
+    padding-left: 0.8rem;
+    ${SvgIcon} {
+        margin-right: 0.8rem;
     }
 `;
 
@@ -105,12 +56,4 @@ export const DateRangeNavText = styled.span`
     text-align: center;
     color: #13181d;
     flex: 1;
-`;
-
-export const DateIcon = styled(DatePickerStyled.DateIcon)`
-    padding: 0;
-    margin-left: 16px;
-    &:hover {
-        background-color: transparent;
-    }
 `;

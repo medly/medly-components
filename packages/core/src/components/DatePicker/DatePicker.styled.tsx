@@ -24,7 +24,7 @@ const getStyleForIcon = ({ theme, variant, disabled }: Omit<StyleProps, 'placeme
     `;
 };
 
-export const DateIcon = styled(InjectClassName)<Omit<StyleProps, 'placement'>>`
+export const DateIconWrapper = styled(InjectClassName)<Omit<StyleProps, 'placement'>>`
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     border-radius: ${({ theme }) => theme.datePicker.borderRadius};
     padding: ${({ size }) => (size === 'S' ? '0.6rem' : '0.8rem')};

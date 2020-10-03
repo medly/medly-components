@@ -5,7 +5,7 @@ import React, { FormEvent, useCallback, useEffect, useMemo, useRef, useState } f
 import Calendar from '../Calendar';
 import Popover from '../Popover';
 import TextField from '../TextField';
-import { DateIcon, Wrapper } from './DatePicker.styled';
+import { DateIconWrapper, Wrapper } from './DatePicker.styled';
 import { DatePickerProps } from './types';
 
 export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
@@ -114,9 +114,9 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
         }, wrapperRef);
 
         const suffixEl = () => (
-            <DateIcon variant={restProps.variant} isErrorPresent={isErrorPresent} isActive={active} disabled={disabled} size={size}>
+            <DateIconWrapper variant={restProps.variant} isErrorPresent={isErrorPresent} isActive={active} disabled={disabled} size={size}>
                 <DateRangeIcon id={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
-            </DateIcon>
+            </DateIconWrapper>
         );
 
         return (
