@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
-import * as TextFieldStyled from '../../TextField/Styled';
+import * as TextFieldStyled from '../../../TextField/Styled';
 import { Props } from './types';
 
-export const DateRangeInput: FC<Props> = React.memo(
+export const DateRangeTextField: FC<Props> = React.memo(
     React.forwardRef((props: Props, ref) => {
         const { id, size, variant, dateMaskLabel, required, label, ...restProps } = props;
         return (
-            <TextFieldStyled.InputWrapper>
+            <TextFieldStyled.InputWrapper id={`${id}-wrapper`}>
                 <TextFieldStyled.Input id={id} isLabelPresent ref={ref} size={size} variant={variant} required={required} {...restProps} />
                 <TextFieldStyled.MaskPlaceholder size={size} isLabelPresent variant={variant}>
                     {dateMaskLabel}
@@ -18,4 +18,4 @@ export const DateRangeInput: FC<Props> = React.memo(
         );
     })
 );
-DateRangeInput.displayName = 'DateRangeInput';
+DateRangeTextField.displayName = 'DateRangeTextField';

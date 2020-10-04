@@ -39,11 +39,11 @@ export const Basic = () => {
 
     return (
         <DateRangePicker
+            id="contract"
             displayFormat={select('Display Format', displayFormats, 'MM/dd/yyyy')}
             required={boolean('Required', false)}
             fromLabel="From"
             toLabel="To"
-            id="date-range-picker"
             value={dates}
             onChange={setDates}
             size={select('Size', ['S', 'M'], 'M')}

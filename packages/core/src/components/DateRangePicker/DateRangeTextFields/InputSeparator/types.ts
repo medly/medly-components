@@ -1,4 +1,4 @@
-import { DateRangeProps } from '../types';
+import { DateRangeProps } from '../../types';
 
 export type InputSeparatorProps = {
     size: 'S' | 'M';

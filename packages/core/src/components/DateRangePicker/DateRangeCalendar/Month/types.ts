@@ -2,7 +2,7 @@ import { Omit } from '@medly-components/utils/src';
 import { CalendarProps } from '../../../Calendar/types';
 
 export type Props = Omit<CalendarProps, 'size' | 'date'> & {
-    id?: string;
+    id: string;
     startDate: Date;
     endDate: Date;
     onChange: (date: Date) => void;

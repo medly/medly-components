@@ -8,7 +8,7 @@ import * as Styled from './Month.styled';
 import { Props } from './types';
 
 export const Month: React.FC<Props> = React.memo(
-    ({ startDate, endDate, month, year, onChange, minSelectableDate, maxSelectableDate, ...restProps }) => {
+    ({ id, startDate, endDate, month, year, onChange, minSelectableDate, maxSelectableDate, ...restProps }) => {
         const today = new Date(),
             [hoveredDate, setHoveredDate] = useState<Date | null>(null);
 
@@ -16,11 +16,11 @@ export const Month: React.FC<Props> = React.memo(
             handleMouseOver = useCallback((dt: Date) => () => setHoveredDate(dt), []);
 
         return (
-            <Styled.Wrapper {...restProps}>
-                <Styled.MonthText textVariant="button1" textAlign="center">
+            <Styled.Wrapper id={id} {...restProps}>
+                <Styled.MonthText id={`${id}-text`} textVariant="button1" textAlign="center">
                     {`${LONG_CALENDAR_MONTHS[month]} ${year}`}
                 </Styled.MonthText>
-                <CalendarStyled.CalendarGrid>
+                <CalendarStyled.CalendarGrid id={`${id}-grid`}>
                     <WeekDays />
                     {getCalendarDates(month, year).map((dateArray, index) => {
                         const _date = new Date(dateArray[0], dateArray[1], dateArray[2]),

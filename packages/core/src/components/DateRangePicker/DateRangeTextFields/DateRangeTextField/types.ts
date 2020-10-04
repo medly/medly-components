@@ -1,4 +1,4 @@
-import { TextFieldProps } from '../../TextField/types';
+import { TextFieldProps } from '../../../TextField/types';
 
 export type Props = TextFieldProps & {
     isPrefixPresent?: boolean;

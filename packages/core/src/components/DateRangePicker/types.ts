@@ -1,4 +1,5 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
+import { DisplayFormat } from '../DatePicker/types';
 import { Placement } from '../Popover/types';
 
 export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height' | 'value' | 'onChange'> & {
@@ -31,17 +32,5 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     /** Maximum selectable Date */
     maxSelectableDate?: Date;
     /** Date display format */
-    displayFormat?:
-        | 'dd/MM/yyyy'
-        | 'dd/yyyy/MM'
-        | 'MM/dd/yyyy'
-        | 'MM/yyyy/dd'
-        | 'yyyy/dd/MM'
-        | 'yyyy/MM/dd'
-        | 'dd-MM-yyyy'
-        | 'dd-yyyy-MM'
-        | 'MM-dd-yyyy'
-        | 'MM-yyyy-dd'
-        | 'yyyy-dd-MM'
-        | 'yyyy-MM-dd';
+    displayFormat?: DisplayFormat;
 };
