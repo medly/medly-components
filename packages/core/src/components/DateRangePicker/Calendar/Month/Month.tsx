@@ -1,13 +1,13 @@
 import React, { useCallback, useState } from 'react';
-import * as CalendarStyled from '../../Calendar/Calendar.styled';
-import { LONG_CALENDAR_MONTHS } from '../../Calendar/constants';
-import { getCalendarDates, isSameDay, isSameMonth } from '../../Calendar/helper';
-import WeekDays from '../../Calendar/WeekDays';
-import Text from '../../Text';
-import * as Styled from './DateRangeCalendar.styled';
+import * as CalendarStyled from '../../../Calendar/Calendar.styled';
+import { LONG_CALENDAR_MONTHS } from '../../../Calendar/constants';
+import { getCalendarDates, isSameDay, isSameMonth } from '../../../Calendar/helper';
+import WeekDays from '../../../Calendar/WeekDays';
+import Text from '../../../Text';
+import * as Styled from './Month.styled';
 import { Props } from './types';
 
-export const DateRangeCalendar: React.FC<Props> = React.memo(
+export const Month: React.FC<Props> = React.memo(
     ({ startDate, endDate, month, year, onChange, minSelectableDate, maxSelectableDate, ...restProps }) => {
         const today = new Date(),
             [hoveredDate, setHoveredDate] = useState<Date | null>(null);
@@ -40,7 +40,7 @@ export const DateRangeCalendar: React.FC<Props> = React.memo(
                                 isCurrentDate={isCurrentDate}
                                 isInDateRange={isInDateRange}
                                 onMouseOver={handleMouseOver(_date)}
-                                disabled={_date > maxSelectableDate || _date < minSelectableDate}
+                                disabled={_date > maxSelectableDate || _date < minSelectableDate || _date < startDate}
                                 onClick={handleDateChange(_date)}
                             >
                                 <Text>{_date.getDate()}</Text>
@@ -52,8 +52,8 @@ export const DateRangeCalendar: React.FC<Props> = React.memo(
         );
     }
 );
-DateRangeCalendar.displayName = 'DateRangeCalendar';
-DateRangeCalendar.defaultProps = {
+Month.displayName = 'Month';
+Month.defaultProps = {
     minSelectableDate: new Date(1901, 0, 1),
     maxSelectableDate: new Date(2100, 11, 1)
 };

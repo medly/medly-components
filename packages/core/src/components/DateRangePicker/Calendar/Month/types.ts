@@ -1,5 +1,5 @@
 import { Omit } from '@medly-components/utils/src';
-import { CalendarProps } from '../../Calendar/types';
+import { CalendarProps } from '../../../Calendar/types';
 
 export type Props = Omit<CalendarProps, 'size' | 'date'> & {
     id?: string;

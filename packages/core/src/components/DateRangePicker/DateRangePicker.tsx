@@ -4,7 +4,7 @@ import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 're
 import { DateIconWrapper } from '../DatePicker/DatePicker.styled';
 import getMaskedValue from '../TextField/getMaskedValue';
 import * as TextFieldStyled from '../TextField/Styled';
-import DateRangeCalendar from './DateRangeCalendar';
+import Month from './Calendar/Month';
 import DateRangeInput from './DateRangeInput';
 import * as Styled from './DateRangePicker.styled';
 import { getFormattedDate, getValidDate } from './helpers';
@@ -194,8 +194,8 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
             </TextFieldStyled.HelperText>
             {showCalendar && (
                 <Styled.DateRangePopup size={size} placement={popoverPlacement}>
-                    <DateRangeCalendar startDate={startDate} endDate={endDate} month={month} year={year} onChange={handleDateChange} />
-                    <DateRangeCalendar startDate={startDate} endDate={endDate} month={month + 1} year={year} onChange={handleDateChange} />
+                    <Month startDate={startDate} endDate={endDate} month={month} year={year} onChange={handleDateChange} />
+                    <Month startDate={startDate} endDate={endDate} month={month + 1} year={year} onChange={handleDateChange} />
                 </Styled.DateRangePopup>
             )}
         </TextFieldStyled.OuterWrapper>

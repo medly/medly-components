@@ -1,6 +1,6 @@
 import { css, styled } from '@medly-components/utils';
-import * as CalendarStyled from '../../Calendar/Calendar.styled';
-import Text from '../../Text';
+import * as CalendarStyled from '../../../Calendar/Calendar.styled';
+import Text from '../../../Text';
 
 const hideDateStyle = css`
         opacity: 0;
