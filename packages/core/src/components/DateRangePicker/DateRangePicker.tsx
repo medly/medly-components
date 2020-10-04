@@ -4,7 +4,7 @@ import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 're
 import { DateIconWrapper } from '../DatePicker/DatePicker.styled';
 import getMaskedValue from '../TextField/getMaskedValue';
 import * as TextFieldStyled from '../TextField/Styled';
-import Month from './Calendar/Month';
+import DateRangeCalendar from './DateRangeCalendar';
 import DateRangeInput from './DateRangeInput';
 import * as Styled from './DateRangePicker.styled';
 import { getFormattedDate, getValidDate } from './helpers';
@@ -47,9 +47,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         [startDateMaskLabel, setStartDateMaskLabel] = useState(mask),
         [endDateMaskLabel, setEndDateMaskLabel] = useState(mask);
 
-    const month = useMemo(() => (startDate || new Date()).getMonth(), [startDate]),
-        year = useMemo(() => (startDate || new Date()).getFullYear(), [startDate]),
-        isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
+    const isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
     const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
         onIconClick = React.useCallback(
@@ -95,7 +93,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                 parsedDate.toString() !== 'Invalid Date' && setEndDate(parsedDate);
             }
         }, []),
-        handleDateChange = useCallback(
+        handleDateSelection = useCallback(
             (date: Date) => {
                 const formattedDate = getFormattedDate(date, displayFormat);
                 if (focusedElement === `START_DATE`) {
@@ -193,10 +191,13 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                 {errorText || builtInErrorMessage || helperText}
             </TextFieldStyled.HelperText>
             {showCalendar && (
-                <Styled.DateRangePopup size={size} placement={popoverPlacement}>
-                    <Month startDate={startDate} endDate={endDate} month={month} year={year} onChange={handleDateChange} />
-                    <Month startDate={startDate} endDate={endDate} month={month + 1} year={year} onChange={handleDateChange} />
-                </Styled.DateRangePopup>
+                <DateRangeCalendar
+                    size={size}
+                    placement={popoverPlacement}
+                    startDate={startDate}
+                    endDate={endDate}
+                    onDateSelection={handleDateSelection}
+                />
             )}
         </TextFieldStyled.OuterWrapper>
     );
