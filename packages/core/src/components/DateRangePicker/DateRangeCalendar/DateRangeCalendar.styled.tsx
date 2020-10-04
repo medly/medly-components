@@ -1,27 +1,28 @@
-import { styled } from '@medly-components/utils';
+import { css, styled } from '@medly-components/utils';
 import * as CalendarStyled from '../../Calendar/Calendar.styled';
-import { getPosition } from '../../Popover/Popup/styled/Popup.styled';
-import { Placement } from '../../Popover/types';
 import Text from '../../Text';
 
-export const DateRangePopup = styled(CalendarStyled.Calendar)<{ size: 'S' | 'M'; placement: Placement }>`
-    display: flex;
-    flex-direction: row;
-    z-index: 10;
-    position: absolute;
-    padding: 0;
-    ${getPosition};
-    top: ${({ size, placement }) =>
-        (placement === 'bottom' || placement === 'bottom-start' || placement === 'bottom-end') && (size === 'S' ? '4rem' : '5.6rem')};
+const hideDateStyle = css`
+        opacity: 0;
+        cursor: default;
+        pointer-events: none;
+    `,
+    dateBetweenRangeStyle = css`
+        background-color: ${({ theme }) => theme.colors.blue[100]};
+        border-radius: 0;
+        margin: 0.4rem 0;
+    `;
+
+export const Date = styled(CalendarStyled.Date)<{ isInDateRange?: boolean }>`
+    ${({ isInActiveMonth }) => !isInActiveMonth && hideDateStyle};
+    ${({ isInDateRange }) => isInDateRange && dateBetweenRangeStyle};
 `;
 
-export const CalendarWrapper = styled.div`
+export const Wrapper = styled.div`
     position: relative;
     padding-top: 2.3rem;
-    ${CalendarStyled.Calendar} {
-        box-shadow: none;
-        background-color: transparent;
-        border-radius: 0;
+    ${CalendarStyled.CalendarGrid} {
+        padding: 1.6rem;
     }
     &:last-child {
         border-left: 1px solid #dfe4e9;

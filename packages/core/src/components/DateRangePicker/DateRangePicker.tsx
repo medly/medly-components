@@ -1,6 +1,5 @@
 import { DateRangeIcon } from '@medly-components/icons';
 import { parseToDate, useOuterClickNotifier, useUpdateEffect } from '@medly-components/utils';
-import { add, format } from 'date-fns';
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { DateIconWrapper } from '../DatePicker/DatePicker.styled';
 import getMaskedValue from '../TextField/getMaskedValue';
@@ -48,8 +47,8 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         [startDateMaskLabel, setStartDateMaskLabel] = useState(mask),
         [endDateMaskLabel, setEndDateMaskLabel] = useState(mask);
 
-    const startMonth = useMemo(() => format(startDate || new Date(), 'MMMM yyyy'), [startDate]),
-        endMonth = useMemo(() => format(endDate || add(new Date(), { months: 1 }), 'MMMM yyyy'), [endDate]),
+    const month = useMemo(() => (startDate || new Date()).getMonth(), [startDate]),
+        year = useMemo(() => (startDate || new Date()).getFullYear(), [startDate]),
         isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
     const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
@@ -75,7 +74,9 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         ),
         onBlur = React.useCallback(
             (event: React.FocusEvent<HTMLInputElement>) => {
-                parseToDate(event.target.value, displayFormat).toString() === 'Invalid Date' && setErrorMessage('Enter valid date');
+                event.target.value &&
+                    parseToDate(event.target.value, displayFormat).toString() === 'Invalid Date' &&
+                    setErrorMessage('Enter valid date');
                 props.onBlur && props.onBlur(event);
             },
             [props.onBlur, displayFormat]
@@ -130,7 +131,10 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
     }, [value, displayFormat]);
 
     useUpdateEffect(() => {
-        focusedElement === 'START_DATE' ? toggleCalendar(false) : endDateRef.current.focus();
+        if (focusedElement === 'START_DATE') {
+            toggleCalendar(false);
+            setActive(false);
+        } else endDateRef.current.focus();
     }, [focusedElement]);
 
     const textProps = {
@@ -189,14 +193,10 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                 {errorText || builtInErrorMessage || helperText}
             </TextFieldStyled.HelperText>
             {showCalendar && (
-                <DateRangeCalendar
-                    id={inputId}
-                    disableHeader
-                    placement={popoverPlacement}
-                    onChange={handleDateChange}
-                    isErrorPresent={isErrorPresent}
-                    {...{ size, startDate, endDate, startMonth, endMonth, isErrorPresent, minSelectableDate, maxSelectableDate }}
-                />
+                <Styled.DateRangePopup size={size} placement={popoverPlacement}>
+                    <DateRangeCalendar startDate={startDate} endDate={endDate} month={month} year={year} onChange={handleDateChange} />
+                    <DateRangeCalendar startDate={startDate} endDate={endDate} month={month + 1} year={year} onChange={handleDateChange} />
+                </Styled.DateRangePopup>
             )}
         </TextFieldStyled.OuterWrapper>
     );

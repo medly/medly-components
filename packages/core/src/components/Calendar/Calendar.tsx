@@ -5,9 +5,10 @@ import { PopoverContext } from '../Popover/Popover.context';
 import SingleSelect from '../SingleSelect';
 import Text from '../Text';
 import * as Styled from './Calendar.styled';
-import { CALENDAR_MONTHS, WEEK_DAYS } from './constants';
+import { SHORT_CALENDAR_MONTHS } from './constants';
 import { getCalendarDates, getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear, isSameDay, isSameMonth } from './helper';
 import { CalendarProps } from './types';
+import WeekDays from './WeekDays';
 
 export const Calendar: React.FC<CalendarProps> & WithStyle = React.memo(
     ({ date, onChange, minSelectableDate, maxSelectableDate, isErrorPresent, disableHeader, ...restProps }) => {
@@ -31,18 +32,9 @@ export const Calendar: React.FC<CalendarProps> & WithStyle = React.memo(
             isPrevBtnDisabled = useMemo(() => year === minYear && month === minMonth, [month, year, minMonth, minYear]),
             isNextBtnDisabled = useMemo(() => year === maxYear && month === maxMonth, [month, year, maxMonth, maxYear]);
 
-        const weekDays = useMemo(
+        const monthOptions = useMemo(
                 () =>
-                    WEEK_DAYS.map((label, index) => (
-                        <Text textAlign="center" textWeight="Strong" key={`${label}_${index}`}>
-                            {label}
-                        </Text>
-                    )),
-                []
-            ),
-            monthOptions = useMemo(
-                () =>
-                    CALENDAR_MONTHS.reduce((acc, curr, index) => {
+                    SHORT_CALENDAR_MONTHS.reduce((acc, curr, index) => {
                         const isDisabled = new Date(year, index, 1) > maxSelectableDate || new Date(year, index + 1, 0) < minSelectableDate;
                         return [...acc, { label: curr, value: index, disabled: isDisabled }];
                     }, []),
@@ -119,7 +111,7 @@ export const Calendar: React.FC<CalendarProps> & WithStyle = React.memo(
                     </Styled.Header>
                 )}
                 <Styled.CalendarGrid>
-                    {weekDays}
+                    <WeekDays />
                     {getCalendarDates(month, year).map((dateArray, index) => {
                         const _date = new Date(dateArray[0], dateArray[1], dateArray[2]),
                             isSelected = isSameDay(_date, date),

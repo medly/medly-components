@@ -1,32 +1,59 @@
-import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
-import React, { FC } from 'react';
-import Calendar from '../../Calendar';
+import React, { useCallback, useState } from 'react';
+import * as CalendarStyled from '../../Calendar/Calendar.styled';
+import { LONG_CALENDAR_MONTHS } from '../../Calendar/constants';
+import { getCalendarDates, isSameDay, isSameMonth } from '../../Calendar/helper';
+import WeekDays from '../../Calendar/WeekDays';
+import Text from '../../Text';
 import * as Styled from './DateRangeCalendar.styled';
 import { Props } from './types';
 
-export const DateRangeCalendar: FC<Props> = React.memo(props => {
-    const { size, startMonth, endMonth, id, startDate, endDate, placement, ...restProps } = props;
-    return (
-        <Styled.DateRangePopup size={size} placement={placement}>
-            <Styled.CalendarWrapper>
-                <Styled.NavigatorIcon align="left">
-                    <KeyboardArrowLeftIcon />
-                </Styled.NavigatorIcon>
+export const DateRangeCalendar: React.FC<Props> = React.memo(
+    ({ startDate, endDate, month, year, onChange, minSelectableDate, maxSelectableDate, ...restProps }) => {
+        const today = new Date(),
+            [hoveredDate, setHoveredDate] = useState<Date | null>(null);
+
+        const handleDateChange = useCallback((newDate: Date) => () => onChange(newDate), [onChange]),
+            handleMouseOver = useCallback((dt: Date) => () => setHoveredDate(dt), []);
+
+        return (
+            <Styled.Wrapper {...restProps}>
                 <Styled.MonthText textVariant="button1" textAlign="center">
-                    {startMonth}
+                    {`${LONG_CALENDAR_MONTHS[month]} ${year}`}
                 </Styled.MonthText>
-                <Calendar id={`${id}-from-calendar`} date={startDate} {...restProps} />
-            </Styled.CalendarWrapper>
-            <Styled.CalendarWrapper>
-                <Styled.MonthText textVariant="button1" textAlign="center">
-                    {endMonth}
-                </Styled.MonthText>
-                <Styled.NavigatorIcon align="right">
-                    <KeyboardArrowRightIcon />
-                </Styled.NavigatorIcon>
-                <Calendar id={`${id}-to-calendar`} date={endDate} {...restProps} />
-            </Styled.CalendarWrapper>
-        </Styled.DateRangePopup>
-    );
-});
+                <CalendarStyled.CalendarGrid>
+                    <WeekDays />
+                    {getCalendarDates(month, year).map((dateArray, index) => {
+                        const _date = new Date(dateArray[0], dateArray[1], dateArray[2]),
+                            isSelected = isSameDay(_date, startDate) || isSameDay(_date, endDate),
+                            isInDateRange =
+                                (startDate && endDate && _date < endDate && _date > startDate) ||
+                                (startDate && !endDate && _date > startDate && _date < hoveredDate),
+                            isInActiveMonth = isSameMonth(_date, new Date(year, month, 1)),
+                            isCurrentDate = isSameDay(_date, today);
+
+                        return (
+                            <Styled.Date
+                                key={index}
+                                title={_date.toDateString()}
+                                isInActiveMonth={isInActiveMonth}
+                                isSelected={isSelected}
+                                isCurrentDate={isCurrentDate}
+                                isInDateRange={isInDateRange}
+                                onMouseOver={handleMouseOver(_date)}
+                                disabled={_date > maxSelectableDate || _date < minSelectableDate}
+                                onClick={handleDateChange(_date)}
+                            >
+                                <Text>{_date.getDate()}</Text>
+                            </Styled.Date>
+                        );
+                    })}
+                </CalendarStyled.CalendarGrid>
+            </Styled.Wrapper>
+        );
+    }
+);
 DateRangeCalendar.displayName = 'DateRangeCalendar';
+DateRangeCalendar.defaultProps = {
+    minSelectableDate: new Date(1901, 0, 1),
+    maxSelectableDate: new Date(2100, 11, 1)
+};
