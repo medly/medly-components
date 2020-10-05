@@ -14,6 +14,7 @@ import label from './label';
 import link from './link';
 import modal from './modal';
 import multiSelect from './multiSelect';
+import pagination from './pagination';
 import radio from './radio';
 import reactDatepicker from './reactDatepicker';
 import searchBox from './searchBox';
@@ -53,5 +54,6 @@ export const coreDefaultTheme = {
     tabs,
     textField,
     toast,
-    toggle
+    toggle,
+    pagination
 };

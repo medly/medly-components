@@ -9,10 +9,6 @@ export interface PaginationProps extends HTMLProps<HTMLUListElement> {
     onPageClick: (page: number) => void;
     /** Items count per page */
     itemsPerPage?: number;
-    /** Hide first and last named button */
-    hideFirstLastLinks?: boolean;
     /** Hide Next and Prev named button */
     hidePrevNextLinks?: boolean;
-    /** Number of page link to be dislayed */
-    pageRangeDisplayed?: number;
 }

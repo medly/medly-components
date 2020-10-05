@@ -1,145 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Pagination component should render correctly when total items is 0 1`] = `
-.c3 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: initial;
+.c4 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
 }
 
-.c1 {
-  border: none;
-  position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  padding: 0.8rem 2.4rem 1rem;
-  border-radius: 0.8rem;
-  background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c1:hover {
-  cursor: pointer;
-}
-
-.c1:focus {
-  outline: none;
-}
-
-.c1:disabled {
-  cursor: not-allowed;
-}
-
-.c1::after {
-  content: '';
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  border-radius: 0.8rem;
-  border-style: solid;
-}
-
-.c1:disabled {
-  color: #98A7B7;
-  background-color: transparent;
-}
-
-.c1:disabled::after {
-  border-width: 0.1rem;
-  border-color: #98A7B7;
-}
-
-.c1:disabled .sc-AxirZ * {
-  fill: #98A7B7;
-}
-
-.c1:not(:disabled):not(:hover) {
-  color: #126AFA;
-  background-color: transparent;
-}
-
-.c1:not(:disabled):not(:hover)::after {
-  border-width: 0.1rem;
-  border-color: #126AFA;
-}
-
-.c1:not(:disabled):not(:hover) .sc-AxirZ * {
-  fill: #126AFA;
-}
-
-.c1:not(:disabled):active {
-  color: #0D4AAF;
-  background-color: #E7F0FF;
-}
-
-.c1:not(:disabled):active::after {
-  border-width: 0.2rem;
-  border-color: #0D4AAF;
-}
-
-.c1:not(:disabled):active .sc-AxirZ * {
-  fill: #0D4AAF;
-}
-
-.c1:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
-  background-color: transparent;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
-}
-
-.c1:not(:disabled):not(:active):hover::after {
-  border-width: 0.2rem;
-  border-color: #0F5AD5;
-}
-
-.c1:not(:disabled):not(:active):hover .sc-AxirZ * {
-  fill: #0F5AD5;
-}
-
-.c1 .sc-AxirZ + .c2 {
-  margin-left: 0.8rem;
-}
-
-.c1 .c2 + .sc-AxirZ {
-  margin-left: 0.8rem;
+.c4 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
 }
 
 .c0 {
@@ -167,60 +41,105 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   margin-left: 0.8rem;
 }
 
+.c1 > li {
+  margin: 0;
+}
+
+.c2 {
+  height: 4rem;
+  width: 4rem;
+  display: block;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  color: #435465;
+  background: #ffffff;
+  background: #ffffff;
+  background: #ffffff;
+}
+
+.c2:hover {
+  cursor: pointer;
+}
+
+.c2:focus {
+  outline: none;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c2 > .c3,
+.c2 .c3 {
+  margin: 4px;
+  padding: 4px;
+}
+
+.c2 > .c3 > path,
+.c2 .c3 > path {
+  fill: #435465;
+}
+
+.c2 > .c3 > path,
+.c2 .c3 > path {
+  fill: #C7D0D8;
+}
+
 <div>
   <ul
-    class="c0"
+    class="c0 c1"
   >
     <li>
       <button
-        class="c1"
+        class="sc-AxgMl c2"
         disabled=""
-        type="button"
       >
-        <span
-          class="c2 c3"
+        <svg
+          class="c3 c4"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          First
-        </span>
+          <path
+            d="M15 6.705a.996.996 0 0 0-1.41 0L9 11.295a.996.996 0 0 0 0 1.41l4.59 4.59a.996.996 0 1 0 1.41-1.41l-3.88-3.89L15 8.115c.39-.39.38-1.03 0-1.41z"
+            fill="#000"
+            fill-opacity=".54"
+          />
+        </svg>
       </button>
     </li>
     <li>
       <button
-        class="c1"
+        class="sc-AxgMl c2"
         disabled=""
-        type="button"
       >
-        <span
-          class="c2 c3"
+        <svg
+          class="c3 c4"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          Prev
-        </span>
-      </button>
-    </li>
-    <li>
-      <button
-        class="c1"
-        disabled=""
-        type="button"
-      >
-        <span
-          class="c2 c3"
-        >
-          Next
-        </span>
-      </button>
-    </li>
-    <li>
-      <button
-        class="c1"
-        disabled=""
-        type="button"
-      >
-        <span
-          class="c2 c3"
-        >
-          Last
-        </span>
+          <path
+            d="M9 6.71a.996.996 0 0 0 0 1.41L12.88 12 9 15.88a.996.996 0 1 0 1.41 1.41L15 12.7a.996.996 0 0 0 0-1.41L10.41 6.7c-.38-.38-1.02-.38-1.41.01z"
+            fill="#000"
+            fill-opacity=".54"
+          />
+        </svg>
       </button>
     </li>
   </ul>
@@ -228,235 +147,27 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
 `;
 
 exports[`Pagination component should render correctly with all the default props 1`] = `
-.c3 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: initial;
-}
-
-.c1 {
-  border: none;
-  position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  padding: 0.8rem 2.4rem 1rem;
-  border-radius: 0.8rem;
-  background-color: transparent;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c1:hover {
-  cursor: pointer;
-}
-
-.c1:focus {
-  outline: none;
-}
-
-.c1:disabled {
-  cursor: not-allowed;
-}
-
-.c1::after {
-  content: '';
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  border-radius: 0.8rem;
-  border-style: solid;
-}
-
-.c1:disabled {
-  color: #98A7B7;
-  background-color: transparent;
-}
-
-.c1:disabled::after {
-  border-width: 0.1rem;
-  border-color: #98A7B7;
-}
-
-.c1:disabled .sc-AxirZ * {
-  fill: #98A7B7;
-}
-
-.c1:not(:disabled):not(:hover) {
-  color: #126AFA;
-  background-color: transparent;
-}
-
-.c1:not(:disabled):not(:hover)::after {
-  border-width: 0.1rem;
-  border-color: #126AFA;
-}
-
-.c1:not(:disabled):not(:hover) .sc-AxirZ * {
-  fill: #126AFA;
-}
-
-.c1:not(:disabled):active {
-  color: #0D4AAF;
-  background-color: #E7F0FF;
-}
-
-.c1:not(:disabled):active::after {
-  border-width: 0.2rem;
-  border-color: #0D4AAF;
-}
-
-.c1:not(:disabled):active .sc-AxirZ * {
-  fill: #0D4AAF;
-}
-
-.c1:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
-  background-color: transparent;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
-}
-
-.c1:not(:disabled):not(:active):hover::after {
-  border-width: 0.2rem;
-  border-color: #0F5AD5;
-}
-
-.c1:not(:disabled):not(:active):hover .sc-AxirZ * {
-  fill: #0F5AD5;
-}
-
-.c1 .sc-AxirZ + .c2 {
-  margin-left: 0.8rem;
-}
-
-.c1 .c2 + .sc-AxirZ {
-  margin-left: 0.8rem;
-}
-
 .c4 {
-  border: none;
-  position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  padding: 0.8rem 2.4rem 1rem;
-  border-radius: 0.8rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
 }
 
 .c4 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
 }
 
-.c4:hover {
-  cursor: pointer;
-}
-
-.c4:focus {
-  outline: none;
-}
-
-.c4:disabled {
-  cursor: not-allowed;
-}
-
-.c4:disabled {
-  color: #98A7B7;
-  background: #dfe4e9;
-}
-
-.c4:disabled .sc-AxirZ * {
-  fill: #98A7B7;
-}
-
-.c4:not(:disabled):not(:hover) {
-  color: #ffffff;
-  background: #126AFA;
-}
-
-.c4:not(:disabled):not(:hover) .sc-AxirZ * {
-  fill: #ffffff;
-}
-
-.c4:not(:disabled):active {
-  color: #ffffff;
-  background: #0D4AAF;
-}
-
-.c4:not(:disabled):active .sc-AxirZ * {
-  fill: #ffffff;
-}
-
-.c4:not(:disabled):not(:active):hover {
-  color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
-}
-
-.c4:not(:disabled):not(:active):hover .sc-AxirZ * {
-  fill: #ffffff;
-}
-
-.c4 .sc-AxirZ + .c2 {
-  margin-left: 0.8rem;
-}
-
-.c4 .c2 + .sc-AxirZ {
-  margin-left: 0.8rem;
+.c7 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .c0 {
@@ -484,118 +195,307 @@ exports[`Pagination component should render correctly with all the default props
   margin-left: 0.8rem;
 }
 
+.c1 > li {
+  margin: 0;
+}
+
+.c5 {
+  height: 4rem;
+  width: 4rem;
+  display: block;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  color: #435465;
+  background: #ffffff;
+  margin: 4px;
+  height: 3.2rem;
+  width: 3.2rem;
+  font-weight: bold;
+  color: #126AFA;
+  background: #E7F0FF;
+}
+
+.c5:hover {
+  cursor: pointer;
+}
+
+.c5:focus {
+  outline: none;
+}
+
+.c5:disabled {
+  cursor: not-allowed;
+}
+
+.c5:hover {
+  color: #126AFA;
+  background: #E7F0FF;
+}
+
+.c5:active {
+  color: #13181D;
+  background: #eff2f4;
+  font-weight: bold;
+}
+
+.c6 {
+  height: 4rem;
+  width: 4rem;
+  display: block;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  color: #435465;
+  background: #ffffff;
+  margin: 4px;
+  height: 3.2rem;
+  width: 3.2rem;
+  font-weight: 600;
+  color: #435465;
+  background: #ffffff;
+}
+
+.c6:hover {
+  cursor: pointer;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+.c6:disabled {
+  cursor: not-allowed;
+}
+
+.c6:hover {
+  color: #303C48;
+  background: #F7F8F9;
+}
+
+.c6:active {
+  color: #13181D;
+  background: #eff2f4;
+  font-weight: bold;
+}
+
+.c2 {
+  height: 4rem;
+  width: 4rem;
+  display: block;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  color: #435465;
+  background: #ffffff;
+  background: #ffffff;
+  background: #ffffff;
+}
+
+.c2:hover {
+  cursor: pointer;
+}
+
+.c2:focus {
+  outline: none;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c2 > .c3,
+.c2 .c3 {
+  margin: 4px;
+  padding: 4px;
+}
+
+.c2 > .c3 > path,
+.c2 .c3 > path {
+  fill: #435465;
+}
+
+.c2 > .c3 > path,
+.c2 .c3 > path {
+  fill: #C7D0D8;
+}
+
+.c8 {
+  height: 4rem;
+  width: 4rem;
+  display: block;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  color: #435465;
+  background: #ffffff;
+  background: #ffffff;
+}
+
+.c8:hover {
+  cursor: pointer;
+}
+
+.c8:focus {
+  outline: none;
+}
+
+.c8:disabled {
+  cursor: not-allowed;
+}
+
+.c8 > .c3,
+.c8 .c3 {
+  margin: 4px;
+  padding: 4px;
+}
+
+.c8 > .c3 > path,
+.c8 .c3 > path {
+  fill: #435465;
+}
+
+.c8:hover {
+  background: #F7F8F9;
+}
+
+.c8:hover > .c3 > path,
+.c8:hover .c3 > path {
+  fill: #303C48;
+}
+
+.c8:active {
+  background: #eff2f4;
+}
+
+.c8:active > .c3 > path,
+.c8:active .c3 > path {
+  fill: #13181D;
+}
+
 <div>
   <ul
-    class="c0"
+    class="c0 c1"
   >
     <li>
       <button
-        class="c1"
+        class="sc-AxgMl c2"
         disabled=""
-        type="button"
       >
-        <span
-          class="c2 c3"
+        <svg
+          class="c3 c4"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          First
-        </span>
+          <path
+            d="M15 6.705a.996.996 0 0 0-1.41 0L9 11.295a.996.996 0 0 0 0 1.41l4.59 4.59a.996.996 0 1 0 1.41-1.41l-3.88-3.89L15 8.115c.39-.39.38-1.03 0-1.41z"
+            fill="#000"
+            fill-opacity=".54"
+          />
+        </svg>
       </button>
     </li>
     <li>
       <button
-        class="c1"
-        disabled=""
-        type="button"
+        class="sc-AxgMl c5"
       >
-        <span
-          class="c2 c3"
-        >
-          Prev
-        </span>
+        1
       </button>
     </li>
     <li>
       <button
-        class="c4"
-        type="button"
+        class="sc-AxgMl c6"
       >
-        <span
-          class="c2 c3"
-        >
-          1
-        </span>
+        2
       </button>
     </li>
     <li>
       <button
-        class="c1"
-        type="button"
+        class="sc-AxgMl c6"
       >
-        <span
-          class="c2 c3"
+        3
+      </button>
+    </li>
+    <li>
+      <div
+        class="c7"
+        id="medly-popover-wrapper"
+      >
+        <button
+          class="sc-AxgMl c6"
         >
-          2
-        </span>
+          ...
+        </button>
+      </div>
+    </li>
+    <li>
+      <button
+        class="sc-AxgMl c6"
+      >
+        8
       </button>
     </li>
     <li>
       <button
-        class="c1"
-        type="button"
+        class="sc-AxgMl c8"
       >
-        <span
-          class="c2 c3"
+        <svg
+          class="c3 c4"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          3
-        </span>
-      </button>
-    </li>
-    <li>
-      <button
-        class="c1"
-        type="button"
-      >
-        <span
-          class="c2 c3"
-        >
-          4
-        </span>
-      </button>
-    </li>
-    <li>
-      <button
-        class="c1"
-        type="button"
-      >
-        <span
-          class="c2 c3"
-        >
-          5
-        </span>
-      </button>
-    </li>
-    <li>
-      <button
-        class="c1"
-        type="button"
-      >
-        <span
-          class="c2 c3"
-        >
-          Next
-        </span>
-      </button>
-    </li>
-    <li>
-      <button
-        class="c1"
-        type="button"
-      >
-        <span
-          class="c2 c3"
-        >
-          Last
-        </span>
+          <path
+            d="M9 6.71a.996.996 0 0 0 0 1.41L12.88 12 9 15.88a.996.996 0 1 0 1.41 1.41L15 12.7a.996.996 0 0 0 0-1.41L10.41 6.7c-.38-.38-1.02-.38-1.41.01z"
+            fill="#000"
+            fill-opacity=".54"
+          />
+        </svg>
       </button>
     </li>
   </ul>
@@ -603,235 +503,12 @@ exports[`Pagination component should render correctly with all the default props
 `;
 
 exports[`Pagination component should render correctly with all the props given 1`] = `
-.c3 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: initial;
-}
-
-.c1 {
-  border: none;
-  position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  padding: 0.8rem 2.4rem 1rem;
-  border-radius: 0.8rem;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c1:hover {
-  cursor: pointer;
-}
-
-.c1:focus {
-  outline: none;
-}
-
-.c1:disabled {
-  cursor: not-allowed;
-}
-
-.c1:disabled {
-  color: #98A7B7;
-  background: #dfe4e9;
-}
-
-.c1:disabled .sc-AxirZ * {
-  fill: #98A7B7;
-}
-
-.c1:not(:disabled):not(:hover) {
-  color: #ffffff;
-  background: #126AFA;
-}
-
-.c1:not(:disabled):not(:hover) .sc-AxirZ * {
-  fill: #ffffff;
-}
-
-.c1:not(:disabled):active {
-  color: #ffffff;
-  background: #0D4AAF;
-}
-
-.c1:not(:disabled):active .sc-AxirZ * {
-  fill: #ffffff;
-}
-
-.c1:not(:disabled):not(:active):hover {
-  color: #ffffff;
-  background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
-}
-
-.c1:not(:disabled):not(:active):hover .sc-AxirZ * {
-  fill: #ffffff;
-}
-
-.c1 .sc-AxirZ + .c2 {
-  margin-left: 0.8rem;
-}
-
-.c1 .c2 + .sc-AxirZ {
-  margin-left: 0.8rem;
-}
-
 .c4 {
-  border: none;
   position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  font-family: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  padding: 0.8rem 2.4rem 1rem;
-  border-radius: 0.8rem;
-  background-color: transparent;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
-.c4:hover {
-  cursor: pointer;
-}
-
-.c4:focus {
-  outline: none;
-}
-
-.c4:disabled {
-  cursor: not-allowed;
-}
-
-.c4::after {
-  content: '';
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: transparent;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  border-radius: 0.8rem;
-  border-style: solid;
-}
-
-.c4:disabled {
-  color: #98A7B7;
-  background-color: transparent;
-}
-
-.c4:disabled::after {
-  border-width: 0.1rem;
-  border-color: #98A7B7;
-}
-
-.c4:disabled .sc-AxirZ * {
-  fill: #98A7B7;
-}
-
-.c4:not(:disabled):not(:hover) {
-  color: #126AFA;
-  background-color: transparent;
-}
-
-.c4:not(:disabled):not(:hover)::after {
-  border-width: 0.1rem;
-  border-color: #126AFA;
-}
-
-.c4:not(:disabled):not(:hover) .sc-AxirZ * {
-  fill: #126AFA;
-}
-
-.c4:not(:disabled):active {
-  color: #0D4AAF;
-  background-color: #E7F0FF;
-}
-
-.c4:not(:disabled):active::after {
-  border-width: 0.2rem;
-  border-color: #0D4AAF;
-}
-
-.c4:not(:disabled):active .sc-AxirZ * {
-  fill: #0D4AAF;
-}
-
-.c4:not(:disabled):not(:active):hover {
-  color: #0F5AD5;
-  background-color: transparent;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
-}
-
-.c4:not(:disabled):not(:active):hover::after {
-  border-width: 0.2rem;
-  border-color: #0F5AD5;
-}
-
-.c4:not(:disabled):not(:active):hover .sc-AxirZ * {
-  fill: #0F5AD5;
-}
-
-.c4 .sc-AxirZ + .c2 {
-  margin-left: 0.8rem;
-}
-
-.c4 .c2 + .sc-AxirZ {
-  margin-left: 0.8rem;
 }
 
 .c0 {
@@ -859,56 +536,152 @@ exports[`Pagination component should render correctly with all the props given 1
   margin-left: 0.8rem;
 }
 
+.c1 > li {
+  margin: 0;
+}
+
+.c2 {
+  height: 4rem;
+  width: 4rem;
+  display: block;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  color: #435465;
+  background: #ffffff;
+  margin: 4px;
+  height: 3.2rem;
+  width: 3.2rem;
+  font-weight: bold;
+  color: #126AFA;
+  background: #E7F0FF;
+}
+
+.c2:hover {
+  cursor: pointer;
+}
+
+.c2:focus {
+  outline: none;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c2:hover {
+  color: #126AFA;
+  background: #E7F0FF;
+}
+
+.c2:active {
+  color: #13181D;
+  background: #eff2f4;
+  font-weight: bold;
+}
+
+.c3 {
+  height: 4rem;
+  width: 4rem;
+  display: block;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  color: #435465;
+  background: #ffffff;
+  margin: 4px;
+  height: 3.2rem;
+  width: 3.2rem;
+  font-weight: 600;
+  color: #435465;
+  background: #ffffff;
+}
+
+.c3:hover {
+  cursor: pointer;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3:disabled {
+  cursor: not-allowed;
+}
+
+.c3:hover {
+  color: #303C48;
+  background: #F7F8F9;
+}
+
+.c3:active {
+  color: #13181D;
+  background: #eff2f4;
+  font-weight: bold;
+}
+
 <div>
   <ul
-    class="c0"
+    class="c0 c1"
   >
     <li>
       <button
-        class="c1"
-        type="button"
+        class="sc-AxgMl c2"
       >
-        <span
-          class="c2 c3"
-        >
-          1
-        </span>
+        1
       </button>
     </li>
     <li>
       <button
-        class="c4"
-        type="button"
+        class="sc-AxgMl c3"
       >
-        <span
-          class="c2 c3"
-        >
-          2
-        </span>
+        2
       </button>
     </li>
     <li>
       <button
-        class="c4"
-        type="button"
+        class="sc-AxgMl c3"
       >
-        <span
-          class="c2 c3"
-        >
-          3
-        </span>
+        3
       </button>
     </li>
     <li>
-      <button
+      <div
         class="c4"
-        type="button"
+        id="medly-popover-wrapper"
       >
-        <span
-          class="c2 c3"
+        <button
+          class="sc-AxgMl c3"
         >
-          4
-        </span>
+          ...
+        </button>
+      </div>
+    </li>
+    <li>
+      <button
+        class="sc-AxgMl c3"
+      >
+        15
       </button>
     </li>
   </ul>

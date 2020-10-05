@@ -1,80 +1,73 @@
+import { defaultTheme } from '@medly-components/theme';
 import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import { Pagination } from './Pagination';
 
 describe('Pagination component', () => {
+    const renderer = (props: any = { totalItems: 0 }) => {
+        const mockOnPageClick = jest.fn();
+        return {
+            mockOnPageClick,
+            ...render(
+                <ThemeProvider theme={defaultTheme}>
+                    <Pagination {...props} onPageClick={mockOnPageClick} />
+                </ThemeProvider>
+            )
+        };
+    };
+
     afterEach(cleanup);
 
     it('should render correctly with all the default props', () => {
-        const mockOnPageClick = jest.fn();
-        const { container } = render(<Pagination totalItems={150} onPageClick={mockOnPageClick} />);
+        const { container } = renderer({ totalItems: 150 });
         expect(container).toMatchSnapshot();
     });
 
     it('should render correctly when total items is 0', () => {
-        const mockOnPageClick = jest.fn();
-        const { container } = render(<Pagination totalItems={0} onPageClick={mockOnPageClick} />);
+        const { container } = renderer();
         expect(container).toMatchSnapshot();
     });
 
     it('should render correctly with all the props given', () => {
-        const mockOnPageClick = jest.fn();
-        const { container } = render(
-            <Pagination
-                totalItems={150}
-                activePage={1}
-                itemsPerPage={10}
-                pageRangeDisplayed={4}
-                hideFirstLastLinks
-                hidePrevNextLinks
-                onPageClick={mockOnPageClick}
-            />
-        );
+        const { container } = renderer({ totalItems: 150, activePage: 1, itemsPerPage: 10, hidePrevNextLinks: true });
         expect(container).toMatchSnapshot();
     });
 
     it('should call onClick handler with correct page number when any page link is clicked', () => {
-        const mockOnPageClick = jest.fn();
-        const { getByText } = render(<Pagination activePage={3} totalItems={150} onPageClick={mockOnPageClick} />);
-
+        const { getByText, mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
         fireEvent.click(getByText('4').closest('button'));
-
         expect(mockOnPageClick).toBeCalledWith(4);
     });
 
-    it('should call onClick handler with first page when first link is clicked', () => {
-        const mockOnPageClick = jest.fn();
-        const { getByText } = render(<Pagination activePage={3} totalItems={150} onPageClick={mockOnPageClick} />);
-
-        fireEvent.click(getByText('First').closest('button'));
-
+    it('should call onClick handler with first page when first page is clicked', () => {
+        const { getByText, mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByText('1').closest('button'));
         expect(mockOnPageClick).toBeCalledWith(1);
     });
 
-    it('should call onClick handler with last page when last link is clicked', () => {
-        const mockOnPageClick = jest.fn();
-        const { getByText } = render(<Pagination activePage={3} totalItems={150} onPageClick={mockOnPageClick} />);
-
-        fireEvent.click(getByText('Last').closest('button'));
-
-        expect(mockOnPageClick).toBeCalledWith(8);
+    it('should call onClick handler with last page when last page is clicked', () => {
+        const { getByText, mockOnPageClick } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByText('15').closest('button'));
+        expect(mockOnPageClick).toBeCalledWith(15);
     });
 
     it('should call onClick handler with prev page when prev link is clicked', () => {
-        const mockOnPageClick = jest.fn();
-        const { getByText } = render(<Pagination activePage={3} totalItems={150} onPageClick={mockOnPageClick} />);
-
-        fireEvent.click(getByText('Prev').closest('button'));
-
+        const { mockOnPageClick, container } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(container.querySelectorAll('svg')[0].closest('button'));
         expect(mockOnPageClick).toBeCalledWith(2);
     });
 
     it('should call onClick handler with next page when next link is clicked', () => {
-        const mockOnPageClick = jest.fn();
-        const { getByText } = render(<Pagination activePage={3} totalItems={150} onPageClick={mockOnPageClick} />);
-
-        fireEvent.click(getByText('Next').closest('button'));
-
+        const { mockOnPageClick, container } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(container.querySelectorAll('svg')[1].closest('button'));
         expect(mockOnPageClick).toBeCalledWith(4);
+    });
+
+    it('should call onClick handler with expected page when selected from ellipsis popover', () => {
+        const { mockOnPageClick, getByText } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByText('...').closest('button'));
+        fireEvent.click(getByText('7').closest('button'));
+        expect(mockOnPageClick).toBeCalledWith(7);
     });
 });

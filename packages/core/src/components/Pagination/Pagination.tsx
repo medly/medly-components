@@ -1,100 +1,70 @@
+import { ChevronLeftIcon, ChevronRightIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
 import React, { FC, useMemo } from 'react';
-import Button from '../Button';
-import List from '../List';
+import Popover from '../Popover';
 import { paginator } from './helper';
+import { ListWrapper, PageNavButton, PageNumberButton } from './Pagination.styled';
+import PaginationPopup from './PaginationPopup';
 import { PaginationProps } from './types';
 
 export const Pagination: FC<PaginationProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const links = [],
-            {
-                hideFirstLastLinks,
-                hidePrevNextLinks,
-                activePage,
-                itemsPerPage,
-                totalItems,
-                pageRangeDisplayed,
-                onPageClick,
-                ...restProps
-            } = props,
-            pagesConfig = useMemo(() => paginator(totalItems, activePage, itemsPerPage, pageRangeDisplayed), [
+            { hidePrevNextLinks, activePage, itemsPerPage, totalItems, onPageClick, ...restProps } = props,
+            { currentPage, linkItems, totalPages } = useMemo(() => paginator(totalItems, activePage, itemsPerPage), [
                 totalItems,
                 activePage,
-                itemsPerPage,
-                pageRangeDisplayed
+                itemsPerPage
             ]);
 
-        const onClickHandler = (page: number) => () => {
-            onPageClick(page);
+        const onClickHandler = (page: any) => () => {
+            page !== '...' && onPageClick(page);
         };
 
-        for (let i = pagesConfig.startPage; i <= pagesConfig.endPage; i++) {
-            links.push(
-                <Button size="S" key={i} onClick={onClickHandler(i)} variant={i === pagesConfig.currentPage ? 'solid' : 'outlined'}>
-                    {i}
-                </Button>
-            );
+        for (let i = 0; i < linkItems.length; i++) {
+            if (linkItems[i] === '...')
+                links.push(
+                    <Popover interactionType="click">
+                        <PaginationPopup
+                            prevPageNumber={linkItems[i - 1]}
+                            nextPageNumber={linkItems[i + 1]}
+                            onClickHandler={onPageClick}
+                        ></PaginationPopup>
+                    </Popover>
+                );
+            else
+                links.push(
+                    <PageNumberButton key={i} onClick={onClickHandler(linkItems[i])} isActive={linkItems[i] === currentPage}>
+                        {linkItems[i]}
+                    </PageNumberButton>
+                );
         }
 
         if (!hidePrevNextLinks) {
             links.unshift(
-                <Button
-                    size="S"
-                    key="prev"
-                    disabled={pagesConfig.currentPage < 2}
-                    onClick={onClickHandler(pagesConfig.currentPage - 1)}
-                    variant="outlined"
-                >
-                    Prev
-                </Button>
+                <PageNavButton key="first" disabled={currentPage < 2} onClick={onClickHandler(currentPage - 1)}>
+                    <ChevronLeftIcon size="M" />
+                </PageNavButton>
             );
             links.push(
-                <Button
-                    size="S"
-                    key="next"
-                    disabled={pagesConfig.currentPage === pagesConfig.totalPages}
-                    onClick={onClickHandler(pagesConfig.currentPage + 1)}
-                    variant="outlined"
-                >
-                    Next
-                </Button>
-            );
-        }
-
-        if (!hideFirstLastLinks) {
-            links.unshift(
-                <Button size="S" key="first" disabled={pagesConfig.currentPage < 2} onClick={onClickHandler(1)} variant="outlined">
-                    First
-                </Button>
-            );
-            links.push(
-                <Button
-                    size="S"
-                    key="last"
-                    disabled={pagesConfig.currentPage === pagesConfig.totalPages}
-                    onClick={onClickHandler(pagesConfig.totalPages)}
-                    variant="outlined"
-                >
-                    Last
-                </Button>
+                <PageNavButton key="last" disabled={currentPage === totalPages} onClick={onClickHandler(currentPage + 1)}>
+                    <ChevronRightIcon size="M" />
+                </PageNavButton>
             );
         }
 
         return (
-            <List ref={ref} variant="horizontal" {...restProps}>
+            <ListWrapper ref={ref} variant="horizontal" {...restProps}>
                 {links}
-            </List>
+            </ListWrapper>
         );
     })
 );
 
 Pagination.displayName = 'Pagination';
-Pagination.Style = List.Style;
+Pagination.Style = ListWrapper.Style;
 Pagination.defaultProps = {
     activePage: 1,
     itemsPerPage: 20,
-    pageRangeDisplayed: 5,
-    hideFirstLastLinks: false,
     hidePrevNextLinks: false
 };
