@@ -1,6 +1,7 @@
+import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons/src';
 import { useUpdateEffect, WithStyle } from '@medly-components/utils/src';
-import React, { useCallback, useState } from 'react';
-import { getMonthAndYearFromDate } from '../../Calendar/helper';
+import React, { useCallback, useMemo, useState } from 'react';
+import { getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear } from '../../Calendar/helper';
 import * as Styled from './DateRangeCalendar.styled';
 import Month from './Month';
 import { Props } from './types';
@@ -20,9 +21,10 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
         { startDate, endDate } = selectedDates;
 
     const [{ month, year }, setMonthAndYear] = useState(getMonthAndYearFromDate(startDate || new Date())),
+        { month: nextMonth, year: nextYear } = useMemo(() => getNextMonthAndYear(month, year), [month, year]),
         handleDateSelection = useCallback(
             (date: Date) => {
-                if (focusedElement === `START_DATE`) {
+                if (focusedElement === `START_DATE` || date < selectedDates.startDate) {
                     onDateSelection({ ...selectedDates, startDate: date });
                     setFocusedElement('END_DATE');
                 } else {
@@ -31,7 +33,9 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
                 }
             },
             [selectedDates, focusedElement]
-        );
+        ),
+        handleNextIconClick = useCallback(() => setMonthAndYear(val => getNextMonthAndYear(val.month, val.year)), []),
+        handlePrevIconClick = useCallback(() => setMonthAndYear(val => getPreviousMonthAndYear(val.month, val.year)), []);
 
     useUpdateEffect(() => {
         startDate && setMonthAndYear(getMonthAndYearFromDate(startDate));
@@ -47,8 +51,14 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
 
     return (
         <Styled.DateRangeCalendar id={id} size={size} placement={placement}>
+            <Styled.NavigatorIcon id={`${id}-navigation-backward`} align="left" onClick={handlePrevIconClick}>
+                <KeyboardArrowLeftIcon />
+            </Styled.NavigatorIcon>
+            <Styled.NavigatorIcon id={`${id}-navigation-forward`} align="right" onClick={handleNextIconClick}>
+                <KeyboardArrowRightIcon />
+            </Styled.NavigatorIcon>
             <Month id={`${id}-${month}-month`} month={month} year={year} {...commonProps} />
-            <Month id={`${id}-${month + 1}-month`} month={month + 1} year={year} {...commonProps} />
+            <Month id={`${id}-${nextMonth}-month`} month={nextMonth} year={nextYear} {...commonProps} />
         </Styled.DateRangeCalendar>
     );
 });

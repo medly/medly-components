@@ -29,13 +29,6 @@ export const Wrapper = styled.div`
     }
 `;
 
-export const NavigatorIcon = styled(CalendarStyled.MonthNavigation)<{ align: 'left' | 'right' }>`
-    position: absolute;
-    top: 1.6rem;
-    left: ${({ align }) => align === 'left' && `1.6rem`};
-    right: ${({ align }) => align === 'right' && `1.6rem`};
-`;
-
 export const MonthText = styled(Text)`
     display: block;
     width: 100%;

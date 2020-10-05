@@ -12,7 +12,7 @@ export const Month: React.FC<Props> = React.memo(
         const today = new Date(),
             [hoveredDate, setHoveredDate] = useState<Date | null>(null);
 
-        const handleDateChange = useCallback((newDate: Date) => () => onChange(newDate), [onChange]),
+        const handleDateChange = useCallback((dt: Date) => () => onChange(dt), [onChange]),
             handleMouseOver = useCallback((dt: Date) => () => setHoveredDate(dt), []);
 
         return (
@@ -40,7 +40,7 @@ export const Month: React.FC<Props> = React.memo(
                                 isCurrentDate={isCurrentDate}
                                 isInDateRange={isInDateRange}
                                 onMouseOver={handleMouseOver(_date)}
-                                disabled={_date > maxSelectableDate || _date < minSelectableDate || _date < startDate}
+                                disabled={_date > maxSelectableDate || _date < minSelectableDate}
                                 onClick={handleDateChange(_date)}
                             >
                                 <Text>{_date.getDate()}</Text>

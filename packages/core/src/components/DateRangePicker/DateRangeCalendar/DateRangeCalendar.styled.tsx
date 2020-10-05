@@ -3,6 +3,14 @@ import * as DatePickerStyled from '../../Calendar/Calendar.styled';
 import { getPosition } from '../../Popover/Popup/styled/Popup.styled';
 import { Placement } from '../../Popover/types';
 
+export const NavigatorIcon = styled(DatePickerStyled.MonthNavigation)<{ align: 'left' | 'right' }>`
+    z-index: 1;
+    top: 1.6rem;
+    position: absolute;
+    left: ${({ align }) => align === 'left' && `1.6rem`};
+    right: ${({ align }) => align === 'right' && `1.6rem`};
+`;
+
 export const DateRangeCalendar = styled(DatePickerStyled.Calendar)<{ size: 'S' | 'M'; placement: Placement }>`
     display: flex;
     flex-direction: row;
