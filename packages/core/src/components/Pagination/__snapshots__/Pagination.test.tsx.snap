@@ -56,9 +56,6 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   user-select: none;
   border: none;
   padding: 0;
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 2rem;
   text-align: center;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -86,13 +83,11 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   padding: 4px;
 }
 
-.c2 > .c3 > path,
-.c2 .c3 > path {
+.c2 .c3 * {
   fill: #435465;
 }
 
-.c2 > .c3 > path,
-.c2 .c3 > path {
+.c2 .c3 * {
   fill: #C7D0D8;
 }
 
@@ -102,7 +97,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   >
     <li>
       <button
-        class="sc-AxgMl c2"
+        class="sc-AxheI c2"
         disabled=""
       >
         <svg
@@ -123,7 +118,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
     </li>
     <li>
       <button
-        class="sc-AxgMl c2"
+        class="sc-AxheI c2"
         disabled=""
       >
         <svg
@@ -162,12 +157,38 @@ exports[`Pagination component should render correctly with all the default props
   fill: #607890;
 }
 
-.c7 {
+.c9 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.c6 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  text-align: center;
+}
+
+.c8 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  text-align: center;
 }
 
 .c0 {
@@ -210,9 +231,6 @@ exports[`Pagination component should render correctly with all the default props
   user-select: none;
   border: none;
   padding: 0;
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 2rem;
   text-align: center;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -221,7 +239,6 @@ exports[`Pagination component should render correctly with all the default props
   margin: 4px;
   height: 3.2rem;
   width: 3.2rem;
-  font-weight: bold;
   color: #126AFA;
   background: #E7F0FF;
 }
@@ -238,18 +255,13 @@ exports[`Pagination component should render correctly with all the default props
   cursor: not-allowed;
 }
 
-.c5:hover {
-  color: #126AFA;
-  background: #E7F0FF;
-}
-
 .c5:active {
+  font-weight: 700;
   color: #13181D;
   background: #eff2f4;
-  font-weight: bold;
 }
 
-.c6 {
+.c7 {
   height: 4rem;
   width: 4rem;
   display: block;
@@ -260,9 +272,6 @@ exports[`Pagination component should render correctly with all the default props
   user-select: none;
   border: none;
   padding: 0;
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 2rem;
   text-align: center;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -271,32 +280,31 @@ exports[`Pagination component should render correctly with all the default props
   margin: 4px;
   height: 3.2rem;
   width: 3.2rem;
-  font-weight: 600;
   color: #435465;
   background: #ffffff;
 }
 
-.c6:hover {
+.c7:hover {
   cursor: pointer;
 }
 
-.c6:focus {
+.c7:focus {
   outline: none;
 }
 
-.c6:disabled {
+.c7:disabled {
   cursor: not-allowed;
 }
 
-.c6:hover {
+.c7:hover {
   color: #303C48;
   background: #F7F8F9;
 }
 
-.c6:active {
+.c7:active {
+  font-weight: 700;
   color: #13181D;
   background: #eff2f4;
-  font-weight: bold;
 }
 
 .c2 {
@@ -310,9 +318,6 @@ exports[`Pagination component should render correctly with all the default props
   user-select: none;
   border: none;
   padding: 0;
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 2rem;
   text-align: center;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -340,17 +345,15 @@ exports[`Pagination component should render correctly with all the default props
   padding: 4px;
 }
 
-.c2 > .c3 > path,
-.c2 .c3 > path {
+.c2 .c3 * {
   fill: #435465;
 }
 
-.c2 > .c3 > path,
-.c2 .c3 > path {
+.c2 .c3 * {
   fill: #C7D0D8;
 }
 
-.c8 {
+.c10 {
   height: 4rem;
   width: 4rem;
   display: block;
@@ -361,9 +364,6 @@ exports[`Pagination component should render correctly with all the default props
   user-select: none;
   border: none;
   padding: 0;
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 2rem;
   text-align: center;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -372,44 +372,41 @@ exports[`Pagination component should render correctly with all the default props
   background: #ffffff;
 }
 
-.c8:hover {
+.c10:hover {
   cursor: pointer;
 }
 
-.c8:focus {
+.c10:focus {
   outline: none;
 }
 
-.c8:disabled {
+.c10:disabled {
   cursor: not-allowed;
 }
 
-.c8 > .c3,
-.c8 .c3 {
+.c10 > .c3,
+.c10 .c3 {
   margin: 4px;
   padding: 4px;
 }
 
-.c8 > .c3 > path,
-.c8 .c3 > path {
+.c10 .c3 * {
   fill: #435465;
 }
 
-.c8:hover {
+.c10:hover {
   background: #F7F8F9;
 }
 
-.c8:hover > .c3 > path,
-.c8:hover .c3 > path {
+.c10:hover .c3 * {
   fill: #303C48;
 }
 
-.c8:active {
+.c10:active {
   background: #eff2f4;
 }
 
-.c8:active > .c3 > path,
-.c8:active .c3 > path {
+.c10:active .c3 * {
   fill: #13181D;
 }
 
@@ -419,7 +416,7 @@ exports[`Pagination component should render correctly with all the default props
   >
     <li>
       <button
-        class="sc-AxgMl c2"
+        class="sc-AxheI c2"
         disabled=""
       >
         <svg
@@ -440,47 +437,67 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="sc-AxgMl c5"
+        class="sc-AxheI c5"
       >
-        1
+        <h5
+          class="c6"
+        >
+          1
+        </h5>
       </button>
     </li>
     <li>
       <button
-        class="sc-AxgMl c6"
+        class="sc-AxheI c7"
       >
-        2
+        <h5
+          class="c8"
+        >
+          2
+        </h5>
       </button>
     </li>
     <li>
       <button
-        class="sc-AxgMl c6"
+        class="sc-AxheI c7"
       >
-        3
+        <h5
+          class="c8"
+        >
+          3
+        </h5>
       </button>
     </li>
     <li>
       <div
-        class="c7"
+        class="c9"
         id="medly-popover-wrapper"
       >
         <button
-          class="sc-AxgMl c6"
+          class="sc-AxheI c7"
         >
-          ...
+          <h5
+            class="c8"
+          >
+            ...
+          </h5>
         </button>
       </div>
     </li>
     <li>
       <button
-        class="sc-AxgMl c6"
+        class="sc-AxheI c7"
       >
-        8
+        <h5
+          class="c8"
+        >
+          8
+        </h5>
       </button>
     </li>
     <li>
       <button
-        class="sc-AxgMl c8"
+        class="sc-AxheI c10"
       >
         <svg
           class="c3 c4"
@@ -503,12 +520,38 @@ exports[`Pagination component should render correctly with all the default props
 `;
 
 exports[`Pagination component should render correctly with all the props given 1`] = `
-.c4 {
+.c6 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  text-align: center;
+}
+
+.c5 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  text-align: center;
 }
 
 .c0 {
@@ -551,9 +594,6 @@ exports[`Pagination component should render correctly with all the props given 1
   user-select: none;
   border: none;
   padding: 0;
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 2rem;
   text-align: center;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -562,7 +602,6 @@ exports[`Pagination component should render correctly with all the props given 1
   margin: 4px;
   height: 3.2rem;
   width: 3.2rem;
-  font-weight: bold;
   color: #126AFA;
   background: #E7F0FF;
 }
@@ -579,18 +618,13 @@ exports[`Pagination component should render correctly with all the props given 1
   cursor: not-allowed;
 }
 
-.c2:hover {
-  color: #126AFA;
-  background: #E7F0FF;
-}
-
 .c2:active {
+  font-weight: 700;
   color: #13181D;
   background: #eff2f4;
-  font-weight: bold;
 }
 
-.c3 {
+.c4 {
   height: 4rem;
   width: 4rem;
   display: block;
@@ -601,9 +635,6 @@ exports[`Pagination component should render correctly with all the props given 1
   user-select: none;
   border: none;
   padding: 0;
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 2rem;
   text-align: center;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -612,32 +643,31 @@ exports[`Pagination component should render correctly with all the props given 1
   margin: 4px;
   height: 3.2rem;
   width: 3.2rem;
-  font-weight: 600;
   color: #435465;
   background: #ffffff;
 }
 
-.c3:hover {
+.c4:hover {
   cursor: pointer;
 }
 
-.c3:focus {
+.c4:focus {
   outline: none;
 }
 
-.c3:disabled {
+.c4:disabled {
   cursor: not-allowed;
 }
 
-.c3:hover {
+.c4:hover {
   color: #303C48;
   background: #F7F8F9;
 }
 
-.c3:active {
+.c4:active {
+  font-weight: 700;
   color: #13181D;
   background: #eff2f4;
-  font-weight: bold;
 }
 
 <div>
@@ -646,42 +676,62 @@ exports[`Pagination component should render correctly with all the props given 1
   >
     <li>
       <button
-        class="sc-AxgMl c2"
+        class="sc-AxheI c2"
       >
-        1
+        <h5
+          class="c3"
+        >
+          1
+        </h5>
       </button>
     </li>
     <li>
       <button
-        class="sc-AxgMl c3"
+        class="sc-AxheI c4"
       >
-        2
+        <h5
+          class="c5"
+        >
+          2
+        </h5>
       </button>
     </li>
     <li>
       <button
-        class="sc-AxgMl c3"
+        class="sc-AxheI c4"
       >
-        3
+        <h5
+          class="c5"
+        >
+          3
+        </h5>
       </button>
     </li>
     <li>
       <div
-        class="c4"
+        class="c6"
         id="medly-popover-wrapper"
       >
         <button
-          class="sc-AxgMl c3"
+          class="sc-AxheI c4"
         >
-          ...
+          <h5
+            class="c5"
+          >
+            ...
+          </h5>
         </button>
       </div>
     </li>
     <li>
       <button
-        class="sc-AxgMl c3"
+        class="sc-AxheI c4"
       >
-        15
+        <h5
+          class="c5"
+        >
+          15
+        </h5>
       </button>
     </li>
   </ul>

@@ -1,4 +1,5 @@
 import { centerAligned, styled } from '@medly-components/utils';
+import Text from '../../Text';
 import { getPageNumberButtonStyleByState, PageNumberButton } from '../Pagination.styled';
 
 export const PaginationBackgroundStyled = styled('div')`
@@ -18,18 +19,21 @@ export const PageEllipsisOverlay = styled('div')`
     align-items: center;
     flex-direction: column;
     overflow: auto;
-    background: #fff;
-    box-shadow: 0 2px 8px #b0bcc8;
-    border-radius: 4px;
+    background: ${({ theme }) => theme.colors.white};
+    box-shadow: 0 0.2rem 0.8rem ${({ theme }) => theme.colors.grey[400]};
+    border-radius: 0.4rem;
 
     & > ${PageNumberButton} {
         display: block;
-        line-height: 3.2rem;
         border-radius: 0;
         margin: 0;
         height: 4rem;
         width: 4rem;
         padding: 0.4rem;
+
+        & > ${Text.Style} {
+            line-height: 3.2rem;
+        }
 
         &:hover {
             ${getPageNumberButtonStyleByState('overlayPageNumber', 'hovered')}

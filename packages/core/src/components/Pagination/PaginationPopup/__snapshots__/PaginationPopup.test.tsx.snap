@@ -9,6 +9,19 @@ exports[`Pagination popup component should render correctly with all the default
   display: inline-flex;
 }
 
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  text-align: center;
+}
+
 .c1 {
   height: 4rem;
   width: 4rem;
@@ -20,9 +33,6 @@ exports[`Pagination popup component should render correctly with all the default
   user-select: none;
   border: none;
   padding: 0;
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 2rem;
   text-align: center;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -31,7 +41,6 @@ exports[`Pagination popup component should render correctly with all the default
   margin: 4px;
   height: 3.2rem;
   width: 3.2rem;
-  font-weight: 600;
   color: #435465;
   background: #ffffff;
 }
@@ -54,9 +63,9 @@ exports[`Pagination popup component should render correctly with all the default
 }
 
 .c1:active {
+  font-weight: 700;
   color: #13181D;
   background: #eff2f4;
-  font-weight: bold;
 }
 
 <div>
@@ -65,9 +74,13 @@ exports[`Pagination popup component should render correctly with all the default
     id="medly-popover-wrapper"
   >
     <button
-      class="sc-AxgMl c1"
+      class="sc-AxheI c1"
     >
-      ...
+      <h5
+        class="c2"
+      >
+        ...
+      </h5>
     </button>
   </div>
 </div>

@@ -2,6 +2,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
 import React, { FC, useMemo } from 'react';
 import Popover from '../Popover';
+import Text from '../Text';
 import { paginator } from './helper';
 import { ListWrapper, PageNavButton, PageNumberButton } from './Pagination.styled';
 import PaginationPopup from './PaginationPopup';
@@ -17,17 +18,15 @@ export const Pagination: FC<PaginationProps> & WithStyle = React.memo(
                 itemsPerPage
             ]);
 
-        const onClickHandler = (page: any) => () => {
-            page !== '...' && onPageClick(page);
-        };
+        const onClickHandler = (page: number | '...') => () => page !== '...' && onPageClick(page);
 
         for (let i = 0; i < linkItems.length; i++) {
             if (linkItems[i] === '...')
                 links.push(
                     <Popover interactionType="click">
                         <PaginationPopup
-                            prevPageNumber={linkItems[i - 1]}
-                            nextPageNumber={linkItems[i + 1]}
+                            prevPageNumber={linkItems[i - 1] as number}
+                            nextPageNumber={linkItems[i + 1] as number}
                             onClickHandler={onPageClick}
                         ></PaginationPopup>
                     </Popover>
@@ -35,7 +34,9 @@ export const Pagination: FC<PaginationProps> & WithStyle = React.memo(
             else
                 links.push(
                     <PageNumberButton key={i} onClick={onClickHandler(linkItems[i])} isActive={linkItems[i] === currentPage}>
-                        {linkItems[i]}
+                        <Text textVariant="h5" textAlign="center" textWeight={linkItems[i] === currentPage ? 'Strong' : 'Medium'}>
+                            {linkItems[i]}
+                        </Text>
                     </PageNumberButton>
                 );
         }

@@ -1,4 +1,4 @@
-import { ChevronLeftIcon, ChevronRightIcon } from '@medly-components/icons';
+import { ChevronLeftIcon, ChevronRightIcon, SvgIcon } from '@medly-components/icons';
 import { css, styled } from '@medly-components/utils';
 import List from '../List';
 
@@ -11,33 +11,27 @@ export const ListWrapper = styled(List)`
 export const getPageNumberButtonStyleByState = (
     itemKey: 'pageNumber' | 'overlayPageNumber',
     state: 'default' | 'active' | 'pressed' | 'hovered'
-) => css<{
-    itemKey?: string;
-    state?: string;
-}>`
+) => css`
     color: ${({ theme: { pagination } }) => pagination[itemKey].color[state]};
     background: ${({ theme: { pagination } }) => pagination[itemKey].bgColor[state]};
 `;
 
-const getPageNavButtonStyleByState = (itemKey: 'pageNav', state: 'default' | 'pressed' | 'hovered' | 'disabled') => css<{
-    itemKey?: string;
-    state?: string;
-}>`
-    background: ${({ theme: { pagination } }) => pagination[itemKey].bgColor[state]};
-    & > ${ChevronLeftIcon.Style}, ${ChevronRightIcon.Style} {
-        & > path {
-            fill: ${({ theme: { pagination } }) => pagination[itemKey].color[state]};
+const getPageNavButtonStyleByState = (state: 'default' | 'pressed' | 'hovered' | 'disabled') => css`
+    background: ${({ theme: { pagination } }) => pagination.pageNav.bgColor[state]};
+    ${SvgIcon} {
+        * {
+            fill: ${({ theme: { pagination } }) => pagination.pageNav.color[state]};
         }
     }
 `;
 
 const pageNavButtonState = css`
     &:hover {
-        ${getPageNavButtonStyleByState('pageNav', 'hovered')}
+        ${getPageNavButtonStyleByState('hovered')}
     }
 
     &:active {
-        ${getPageNavButtonStyleByState('pageNav', 'pressed')}
+        ${getPageNavButtonStyleByState('pressed')}
     }
 `;
 
@@ -49,9 +43,6 @@ export const BaseButton = styled.button`
     user-select: none;
     border: none;
     padding: 0;
-    font-weight: 600;
-    font-size: 1.2rem;
-    line-height: 2rem;
     text-align: center;
     transition: all 100ms ease-out;
     ${getPageNumberButtonStyleByState('pageNumber', 'default')}
@@ -72,21 +63,14 @@ export const PageNumberButton = styled(BaseButton)<{ isActive?: boolean }>`
     margin: 4px;
     height: 3.2rem;
     width: 3.2rem;
-    font-weight: ${props => (props.isActive ? 'bold' : '600')};
-    ${props =>
-        props.isActive
-            ? getPageNumberButtonStyleByState('pageNumber', 'active')
-            : getPageNumberButtonStyleByState('pageNumber', 'default')};
+    ${props => getPageNumberButtonStyleByState('pageNumber', props.isActive ? 'active' : 'default')};
 
     &:hover {
-        ${props =>
-            props.isActive
-                ? getPageNumberButtonStyleByState('pageNumber', 'active')
-                : getPageNumberButtonStyleByState('pageNumber', 'hovered')};
+        ${props => !props.isActive && getPageNumberButtonStyleByState('pageNumber', 'hovered')};
     }
     &:active {
+        font-weight: ${({ theme }) => theme.font.weights.Strong};
         ${getPageNumberButtonStyleByState('pageNumber', 'pressed')}
-        font-weight: bold;
     }
 `;
 
@@ -96,9 +80,7 @@ export const PageNavButton = styled(BaseButton)<{ disabled: boolean }>`
         padding: 4px;
     }
 
-    ${getPageNavButtonStyleByState('pageNav', 'default')}
+    ${getPageNavButtonStyleByState('default')}
 
-    ${props => !props.disabled && pageNavButtonState};
-
-    ${props => props.disabled && getPageNavButtonStyleByState('pageNav', 'disabled')};
+    ${props => (props.disabled ? getPageNavButtonStyleByState('disabled') : pageNavButtonState)};
 `;

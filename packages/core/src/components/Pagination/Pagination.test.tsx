@@ -1,7 +1,5 @@
-import { defaultTheme } from '@medly-components/theme';
 import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
 import { Pagination } from './Pagination';
 
 describe('Pagination component', () => {
@@ -9,11 +7,7 @@ describe('Pagination component', () => {
         const mockOnPageClick = jest.fn();
         return {
             mockOnPageClick,
-            ...render(
-                <ThemeProvider theme={defaultTheme}>
-                    <Pagination {...props} onPageClick={mockOnPageClick} />
-                </ThemeProvider>
-            )
+            ...render(<Pagination {...props} onPageClick={mockOnPageClick} />)
         };
     };
 

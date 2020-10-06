@@ -1,7 +1,5 @@
-import { defaultTheme } from '@medly-components/theme';
 import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
 import PaginationPopup from '.';
 import Popover from '../../Popover';
 
@@ -11,11 +9,9 @@ describe('Pagination popup component', () => {
         return {
             mockOnPageClick,
             ...render(
-                <ThemeProvider theme={defaultTheme}>
-                    <Popover interactionType="click">
-                        <PaginationPopup {...props} onClickHandler={mockOnPageClick} />
-                    </Popover>
-                </ThemeProvider>
+                <Popover interactionType="click">
+                    <PaginationPopup {...props} onClickHandler={mockOnPageClick} />
+                </Popover>
             )
         };
     };

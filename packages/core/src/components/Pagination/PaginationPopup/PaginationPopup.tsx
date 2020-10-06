@@ -1,5 +1,6 @@
 import React, { FC, useContext } from 'react';
 import Popover from '../../Popover';
+import Text from '../../Text';
 import { addPageItems } from '../helper';
 import { PageNumberButton } from '../Pagination.styled';
 import { PageEllipsisOverlay, PaginationBackgroundStyled } from './PaginationPopup.styled';
@@ -13,14 +14,20 @@ export const PaginationPopup: FC<Props> = React.memo(({ prevPageNumber, nextPage
         };
     return (
         <>
-            <PageNumberButton key={prevPageNumber + '...'}>...</PageNumberButton>
+            <PageNumberButton key={prevPageNumber + '...'}>
+                <Text textVariant="h5" textAlign="center" textWeight="Medium">
+                    ...
+                </Text>
+            </PageNumberButton>
             {isPopoverVisible && <PaginationBackgroundStyled />}
             <Popover.Popup>
                 <PageEllipsisOverlay>
                     {addPageItems(prevPageNumber + 1, nextPageNumber - 1, []).map(item => {
                         return (
                             <PageNumberButton key={item} onClick={onClickHandlerWrapper(item)}>
-                                {item}
+                                <Text textVariant="h5" textAlign="center" textWeight="Medium">
+                                    {item}
+                                </Text>
                             </PageNumberButton>
                         );
                     })}
@@ -29,3 +36,4 @@ export const PaginationPopup: FC<Props> = React.memo(({ prevPageNumber, nextPage
         </>
     );
 });
+PaginationPopup.displayName = 'PaginationPopup';
