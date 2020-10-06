@@ -70,27 +70,27 @@ const roundedStyle = ({ rounded, disabled, inputContainsText }: InnerWrapperProp
     `;
 };
 
-const b2cErrorStyle = ({ theme: { textField }, variant, inputContainsText }: InnerWrapperProps) => css`
+const roundedErrorStyle = ({ theme: { textField }, inputContainsText }: InnerWrapperProps) => css`
     &,
     &:hover {
-        color: ${textField[variant].error.defaultTextColor};
-        background-color: ${textField[variant].error.bgColor};
+        color: ${textField.rounded.error.defaultTextColor};
+        background-color: ${textField.rounded.error.bgColor};
         ${Label} {
-            color: ${textField[variant].error.labelColor};
+            color: ${textField.rounded.error.labelColor};
         }
         ${Prefix}, ${Suffix} {
-            color: ${textField[variant].error.labelColor};
+            color: ${textField.rounded.error.labelColor};
             * {
-                fill: ${textField[variant].error.labelColor};
+                fill: ${textField.rounded.error.labelColor};
             }
         }
         & ~ ${HelperText} {
-            color: ${textField[variant].error.helperTextColor};
+            color: ${textField.rounded.error.helperTextColor};
         }
         input {
-            caret-color: ${textField[variant].error.caretColor};
+            caret-color: ${textField.rounded.error.caretColor};
             &::placeholder {
-                color: ${textField[variant].error.placeholderColor};
+                color: ${textField.rounded.error.placeholderColor};
             }
         }
     }
@@ -102,19 +102,19 @@ const b2cErrorStyle = ({ theme: { textField }, variant, inputContainsText }: Inn
     &:focus-within,
     &:focus-within:hover {
         background-color: transparent;
-        color: ${textField[variant].error.activeTextColor};
+        color: ${textField.rounded.error.activeTextColor};
     }
 
     ${inputContainsText &&
     css`
         && {
             background-color: transparent;
-            color: ${textField[variant].error.activeTextColor};
+            color: ${textField.rounded.error.activeTextColor};
         }
     `}
 
     &&::after {
-        border-color: ${textField[variant].error.borderColor};
+        border-color: ${textField.rounded.error.borderColor};
     }
 `;
 
@@ -192,7 +192,7 @@ const activeStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => cs
 
 const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) =>
     variant === 'rounded'
-        ? b2cErrorStyle
+        ? roundedErrorStyle
         : css`
               &,
               &:hover,

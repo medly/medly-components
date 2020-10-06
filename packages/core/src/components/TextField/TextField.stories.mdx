@@ -25,7 +25,7 @@ Basic TextField component with lot of customization
                     size={select('Size', sizes, 'M')}
                     minWidth={text('Min Width', '20rem')}
                     maxWidth={text('Max Width', '')}
-                    variant={select('Variant', variants, 'b2cField')}
+                    variant={select('Variant', variants, 'filled')}
                     fullWidth={boolean('Full Width', false)}
                     disabled={boolean('Disabled', false)}
                     label={text('Label', 'First Name')}
@@ -52,7 +52,7 @@ To add the masking feature you need to provide `mask` prop. For now this feature
 <Preview withToolbar>
     <TextField id="outline" type="Name" variant="outlined" label="Address" defaultValue="Demo" helperText="Outlined" />
     <TextField id="filled" type="Name" variant="filled" label="Address" defaultValue="Demo" helperText="Filled" />
-    <TextField id="rounded" type="Name" variant="rounded" label="Address" defaultValue="Demo" helperText="B2C" />
+    <TextField id="rounded" type="Name" variant="rounded" label="Address" defaultValue="Demo" helperText="rounded" />
 </Preview>
 
 ##### Error State
