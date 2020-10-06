@@ -4,7 +4,7 @@ import { Label } from './Label.styled';
 import { MaskPlaceholder } from './MaskPlaceholder.styled';
 
 const transformLabel = (variant: string) => {
-    if (variant === 'b2cField') {
+    if (variant === 'rounded') {
         return css`
             transform: translateY(-140%) scale(0.67);
             background-color: white;
@@ -18,7 +18,7 @@ const transformLabel = (variant: string) => {
 const styleWithLabel = ({ variant }: StyledProps) => {
     return css`
         align-self: flex-end;
-        padding-bottom: ${variant === 'filled' ? '0.7rem' : variant === 'b2cField' ? '1.4rem' : '0.6rem'};
+        padding-bottom: ${variant === 'filled' ? '0.7rem' : variant === 'rounded' ? '1.4rem' : '0.6rem'};
     `;
 };
 
@@ -32,6 +32,7 @@ export const Input = styled('input')<StyledProps>`
     background: transparent;
     border: none;
     text-overflow: ellipsis;
+    z-index: 1;
 
     ${({ isLabelPresent, size }) => isLabelPresent && size !== 'S' && styleWithLabel};
     &,

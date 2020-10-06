@@ -69,7 +69,7 @@ const textField: TextFieldTheme = {
             helperTextColor: colors.red[500]
         }
     },
-    b2cField: {
+    rounded: {
         default: {
             borderColor: colors.grey[400],
             bgColor: colors.grey[50],
@@ -83,19 +83,21 @@ const textField: TextFieldTheme = {
         },
         disabled: { bgColor: colors.white, labelColor: colors.grey[400], textColor: colors.grey[700], borderColor: colors.grey[300] },
         active: {
-            placeholderColor: 'rgba(0, 90, 238, .2)',
+            placeholderColor: colors.grey[300],
             bgColor: colors.white,
             borderColor: colors.blue[500],
             labelColor: colors.blue[500]
         },
         error: {
-            caretColor: colors.red[500],
-            placeholderColor: 'rgba(204, 0, 0, .2)',
+            caretColor: colors.black,
+            placeholderColor: colors.grey[300],
             bgColor: '#FCF2F2',
             cursorColor: colors.red[500],
             borderColor: colors.red[500],
             labelColor: colors.red[500],
-            helperTextColor: colors.red[500]
+            helperTextColor: colors.red[500],
+            defaultTextColor: colors.red[500],
+            activeTextColor: colors.black
         }
     }
 };

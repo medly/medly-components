@@ -80,8 +80,8 @@ export interface TextFieldTheme {
             helperTextColor: string;
         };
     };
-    /** b2cField variant theme */
-    b2cField: {
+    /** rounded variant theme */
+    rounded: {
         default: {
             borderColor: string;
             bgColor: string;
@@ -113,6 +113,8 @@ export interface TextFieldTheme {
             borderColor: string;
             labelColor: string;
             helperTextColor: string;
+            defaultTextColor: string;
+            activeTextColor: string;
         };
     };
 }

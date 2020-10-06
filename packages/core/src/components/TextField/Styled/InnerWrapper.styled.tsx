@@ -41,10 +41,10 @@ const outlineStyle = ({ theme, outlined, disabled, isErrorPresent }: InnerWrappe
     `;
 };
 
-const b2cFieldStyle = ({ outlined, disabled }: InnerWrapperProps) => {
+const roundedStyle = ({ rounded, disabled, inputContainsText }: InnerWrapperProps) => {
     return css`
         border-radius: 1.2rem;
-        background-color: ${outlined.default.bgColor};
+        background-color: ${inputContainsText ? 'transparent' : rounded.default.bgColor};
         &::after {
             content: '';
             box-sizing: border-box;
@@ -59,16 +59,64 @@ const b2cFieldStyle = ({ outlined, disabled }: InnerWrapperProps) => {
             background-color: transparent;
             transition: all 100ms ease-out;
             border-radius: 1.2rem;
-            border: 0.1rem solid ${outlined.default.borderColor};
+            border: 0.1rem solid ${rounded.default.borderColor};
         }
 
         &:hover::after,
         &:focus-within::after {
             border-width: ${!disabled && `0.15rem`};
-            border-color: ${!disabled && outlined.hover.borderColor};
+            border-color: ${!disabled && rounded.hover.borderColor};
         }
     `;
 };
+
+const b2cErrorStyle = ({ theme: { textField }, variant, inputContainsText }: InnerWrapperProps) => css`
+    &,
+    &:hover {
+        color: ${textField[variant].error.defaultTextColor};
+        background-color: ${textField[variant].error.bgColor};
+        ${Label} {
+            color: ${textField[variant].error.labelColor};
+        }
+        ${Prefix}, ${Suffix} {
+            color: ${textField[variant].error.labelColor};
+            * {
+                fill: ${textField[variant].error.labelColor};
+            }
+        }
+        & ~ ${HelperText} {
+            color: ${textField[variant].error.helperTextColor};
+        }
+        input {
+            caret-color: ${textField[variant].error.caretColor};
+            &::placeholder {
+                color: ${textField[variant].error.placeholderColor};
+            }
+        }
+    }
+    ,
+    &:hover::after {
+        border-width: 0.15rem;
+    }
+
+    &:focus-within,
+    &:focus-within:hover {
+        background-color: transparent;
+        color: ${textField[variant].error.activeTextColor};
+    }
+
+    ${inputContainsText &&
+    css`
+        && {
+            background-color: transparent;
+            color: ${textField[variant].error.activeTextColor};
+        }
+    `}
+
+    &&::after {
+        border-color: ${textField[variant].error.borderColor};
+    }
+`;
 
 const filledStyle = ({ theme, filled, disabled }: InnerWrapperProps) => {
     return css`
@@ -142,38 +190,38 @@ const activeStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => cs
     }
 `;
 
-// TODO: fix error background color for b2c
-const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
-    background-color: ${variant === 'b2cField' ? textField.b2cField.error.bgColor : 'transparent'};
-
-    &,
-    &:hover,
-    &:focus-within,
-    &:focus-within:hover {
-        background-color: ${variant === 'filled' ? textField.filled.error.bgColor : 'transparent'};
-        &::after {
-            border-color: ${textField[variant].error.borderColor};
-        }
-        ${Label} {
-            color: ${textField[variant].error.labelColor};
-        }
-        ${Prefix}, ${Suffix} {
-            color: ${textField[variant].error.labelColor};
-            * {
-                fill: ${textField[variant].error.labelColor};
-            }
-        }
-        & ~ ${HelperText} {
-            color: ${textField[variant].error.helperTextColor};
-        }
-        input {
-            caret-color: ${textField[variant].error.caretColor};
-            &::placeholder {
-                color: ${textField[variant].error.placeholderColor};
-            }
-        }
-    }
-`;
+const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) =>
+    variant === 'rounded'
+        ? b2cErrorStyle
+        : css`
+              &,
+              &:hover,
+              &:focus-within,
+              &:focus-within:hover {
+                  background-color: ${variant === 'filled' ? textField.filled.error.bgColor : 'transparent'};
+                  &::after {
+                      border-color: ${textField[variant].error.borderColor};
+                  }
+                  ${Label} {
+                      color: ${textField[variant].error.labelColor};
+                  }
+                  ${Prefix}, ${Suffix} {
+                      color: ${textField[variant].error.labelColor};
+                      * {
+                          fill: ${textField[variant].error.labelColor};
+                      }
+                  }
+                  & ~ ${HelperText} {
+                      color: ${textField[variant].error.helperTextColor};
+                  }
+                  input {
+                      caret-color: ${textField[variant].error.caretColor};
+                      &::placeholder {
+                          color: ${textField[variant].error.placeholderColor};
+                      }
+                  }
+              }
+          `;
 
 export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({ ...textField, textField, height: undefined }))<
     InnerWrapperProps
@@ -203,7 +251,7 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
         color: ${({ variant, textField }) => textField[variant].default.helperTextColor};
     }
 
-    ${({ variant }) => (variant === 'filled' ? filledStyle : variant === 'outlined' ? outlineStyle : b2cFieldStyle)}
+    ${({ variant }) => (variant === 'filled' ? filledStyle : variant === 'outlined' ? outlineStyle : roundedStyle)}
     ${({ disabled, isErrorPresent }) => (disabled ? disabledStyle : isErrorPresent ? errorStyle : activeStyle)}
 `;
 InnerWrapper.defaultProps = {
