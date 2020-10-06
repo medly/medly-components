@@ -47,9 +47,9 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
 
         const showOptions = useCallback(() => {
                 setOptionsVisibilityState(true);
-                inputRef.current.setSelectionRange && inputRef.current.setSelectionRange(inputValue.length, inputValue.length);
+                isSearchable && setInputValue('');
                 inputRef.current.focus();
-            }, [inputValue]),
+            }, [isSearchable, inputValue]),
             hideOptions = useCallback(() => {
                 setOptionsVisibilityState(false);
                 inputRef.current && inputRef.current.blur();
@@ -64,7 +64,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                         newOptions = filterOptions(getUpdatedOptions(defaultOptions, selectedOption), target.value);
                     setInputValue(target.value);
                     newOptions.length && target.value ? setOptions(newOptions) : updateToDefaultOptions();
-                    !areOptionsVisible && showOptions();
+                    !areOptionsVisible && setOptionsVisibilityState(true);
                 },
                 [areOptionsVisible, defaultOptions, selectedOption, updateToDefaultOptions]
             ),
