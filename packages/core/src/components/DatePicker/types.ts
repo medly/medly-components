@@ -21,7 +21,7 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     /** Function to be called on changing the date */
     onChange: (date: Date | null) => void;
     /** Input variants for DatePicker */
-    variant?: 'outlined' | 'filled';
+    variant?: 'outlined' | 'filled' | 'rounded';
     /** Input Size */
     size?: 'S' | 'M';
     /** Date display format */

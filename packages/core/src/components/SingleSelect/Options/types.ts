@@ -5,7 +5,7 @@ export interface OptionsProps extends Omit<HTMLProps<HTMLUListElement>, 'size'> 
     id?: string;
     size?: 'S' | 'M';
     options: Option[];
-    variant: 'outlined' | 'filled' | 'flat';
+    variant: 'outlined' | 'filled' | 'flat' | 'rounded';
     isNested?: boolean;
     hasError?: boolean;
     maxWidth?: string;

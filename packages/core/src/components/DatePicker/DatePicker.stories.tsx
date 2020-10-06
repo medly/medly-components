@@ -4,7 +4,7 @@ import Button from '../Button';
 import { DatePicker } from './DatePicker';
 import { Props } from './types';
 
-export const variants: Props['variant'][] = ['outlined', 'filled'];
+export const variants: Props['variant'][] = ['outlined', 'filled', 'rounded'];
 export const sizes: Props['size'][] = ['S', 'M'];
 export const displayFormats: Props['displayFormat'][] = [
     'dd/MM/yyyy',
