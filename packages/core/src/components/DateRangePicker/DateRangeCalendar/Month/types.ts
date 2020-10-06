@@ -5,9 +5,11 @@ export type Props = Omit<CalendarProps, 'size' | 'date'> & {
     id: string;
     startDate: Date;
     endDate: Date;
-    onChange: (date: Date) => void;
     month: number;
     year: number;
     minSelectableDate?: Date;
     maxSelectableDate?: Date;
+    hoveredDate?: Date;
+    onChange: (date: Date) => void;
+    setHoveredDate?: (date: Date) => void;
 };
