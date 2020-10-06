@@ -7,8 +7,8 @@ export const NavigatorIcon = styled(DatePickerStyled.MonthNavigation)<{ align: '
     z-index: 1;
     top: 1.6rem;
     position: absolute;
-    left: ${({ align }) => align === 'left' && `1.6rem`};
-    right: ${({ align }) => align === 'right' && `1.6rem`};
+    left: ${({ align }) => align === 'left' && `3.2rem`};
+    right: ${({ align }) => align === 'right' && `3.2rem`};
 `;
 
 export const DateRangeCalendar = styled(DatePickerStyled.Calendar)<{ size: 'S' | 'M'; placement: Placement }>`

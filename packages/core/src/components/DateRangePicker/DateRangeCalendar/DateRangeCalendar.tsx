@@ -35,8 +35,8 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
             [selectedDates, focusedElement]
         ),
         handleNextIconClick = useCallback(() => setMonthAndYear(val => getNextMonthAndYear(val.month, val.year)), []),
-        handlePrevIconClick = useCallback(() => setMonthAndYear(val => getPreviousMonthAndYear(val.month, val.year)), []);
-
+        handlePrevIconClick = useCallback(() => setMonthAndYear(val => getPreviousMonthAndYear(val.month, val.year)), []),
+        [hoveredDate, setHoveredDate] = useState<Date | null>(null);
     useUpdateEffect(() => {
         startDate && setMonthAndYear(getMonthAndYearFromDate(startDate));
     }, [startDate]);
@@ -44,9 +44,11 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
     const commonProps = {
         startDate,
         endDate,
-        onChange: handleDateSelection,
         minSelectableDate,
-        maxSelectableDate
+        maxSelectableDate,
+        hoveredDate,
+        setHoveredDate,
+        onChange: handleDateSelection
     };
 
     return (
