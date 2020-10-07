@@ -43,7 +43,7 @@ const outlineStyle = ({ theme, outlined, disabled, isErrorPresent }: InnerWrappe
 
 const roundedStyle = ({ rounded, disabled, inputContainsText }: InnerWrapperProps) => {
     return css`
-        border-radius: 1.2rem;
+        border-radius: 1rem;
         background-color: ${inputContainsText ? 'transparent' : rounded.default.bgColor};
         &::after {
             content: '';
@@ -58,7 +58,7 @@ const roundedStyle = ({ rounded, disabled, inputContainsText }: InnerWrapperProp
             pointer-events: none;
             background-color: transparent;
             transition: all 100ms ease-out;
-            border-radius: 1.2rem;
+            border-radius: 1rem;
             border: 0.1rem solid ${rounded.default.borderColor};
         }
 

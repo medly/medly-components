@@ -12419,6 +12419,7 @@ exports[`DatePicker component should render properly when value is of date type 
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c4 {
@@ -12564,6 +12565,7 @@ exports[`DatePicker component should render properly when value is of date type 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -12792,6 +12794,7 @@ exports[`DatePicker component should render properly when value is of string typ
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c4 {
@@ -12940,6 +12943,7 @@ exports[`DatePicker component should render properly when value is of string typ
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
 }
 
 .c6,

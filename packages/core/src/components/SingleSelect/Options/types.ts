@@ -18,5 +18,5 @@ export interface StyledOptionsProps extends WithThemeProp {
     isNested?: boolean;
     maxWidth?: string;
     includesNestedOptions?: boolean;
-    variant: 'outlined' | 'filled' | 'flat';
+    variant: 'outlined' | 'filled' | 'flat' | 'rounded';
 }

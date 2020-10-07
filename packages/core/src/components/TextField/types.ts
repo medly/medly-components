@@ -47,5 +47,5 @@ export interface InnerWrapperProps extends Omit<HTMLProps<HTMLDivElement>, 'size
     size?: 'S' | 'M';
     isLabelPresent?: boolean;
     isErrorPresent?: boolean;
-    inputContainsText: boolean;
+    inputContainsText?: boolean;
 }

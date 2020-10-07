@@ -29,6 +29,7 @@ exports[`MultiSelect component should render correctly with all the props given 
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c3 {
@@ -161,6 +162,7 @@ exports[`MultiSelect component should render correctly with all the props given 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -509,6 +511,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c3 {
@@ -661,6 +664,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
 }
 
 .c5,

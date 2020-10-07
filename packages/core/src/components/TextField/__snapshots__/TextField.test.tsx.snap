@@ -29,6 +29,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c5::after {
@@ -187,6 +188,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -330,6 +332,7 @@ exports[`TextField should render asterisk if we pass required prop as true 1`] =
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1::after {
@@ -421,6 +424,7 @@ exports[`TextField should render properly with M size 1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c4 {
@@ -585,6 +589,7 @@ exports[`TextField should render properly with M size 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -781,6 +786,7 @@ exports[`TextField should render properly with S size 1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c4 {
@@ -945,6 +951,7 @@ exports[`TextField should render properly with S size 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
 }
 
 .c6,
@@ -1109,6 +1116,7 @@ exports[`TextField should render properly with default props 1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -1263,6 +1271,7 @@ exports[`TextField should render properly with default props 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -1402,6 +1411,7 @@ exports[`TextField with filled variant and with label should render default stat
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -1556,6 +1566,7 @@ exports[`TextField with filled variant and with label should render default stat
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -1695,6 +1706,7 @@ exports[`TextField with filled variant and with label should render disabled sta
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -1829,6 +1841,7 @@ exports[`TextField with filled variant and with label should render disabled sta
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -1970,6 +1983,7 @@ exports[`TextField with filled variant and with label should render focus state 
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -2124,6 +2138,7 @@ exports[`TextField with filled variant and with label should render focus state 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -2263,6 +2278,7 @@ exports[`TextField with filled variant and without label should render default s
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -2417,6 +2433,7 @@ exports[`TextField with filled variant and without label should render default s
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
 }
 
 .c3,
@@ -2550,6 +2567,7 @@ exports[`TextField with filled variant and without label should render disabled 
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -2684,6 +2702,7 @@ exports[`TextField with filled variant and without label should render disabled 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
 }
 
 .c3,
@@ -2819,6 +2838,7 @@ exports[`TextField with filled variant and without label should render focus sta
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -2973,6 +2993,7 @@ exports[`TextField with filled variant and without label should render focus sta
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
 }
 
 .c3,
@@ -3117,6 +3138,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -3182,7 +3204,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
 .c1:hover,
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #FAE6E6;
+  background-color: #cc0000;
 }
 
 .c1::after,
@@ -3307,6 +3329,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -3521,6 +3544,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c4 {
@@ -3680,6 +3704,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -3847,6 +3872,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c8 {
@@ -4006,6 +4032,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -4158,6 +4185,7 @@ exports[`TextField with outlined variant and with label should render default st
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -4326,6 +4354,7 @@ exports[`TextField with outlined variant and with label should render default st
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -4465,6 +4494,7 @@ exports[`TextField with outlined variant and with label should render disabled s
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -4604,6 +4634,7 @@ exports[`TextField with outlined variant and with label should render disabled s
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -4745,6 +4776,7 @@ exports[`TextField with outlined variant and with label should render focus stat
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -4913,6 +4945,7 @@ exports[`TextField with outlined variant and with label should render focus stat
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -5052,6 +5085,7 @@ exports[`TextField with outlined variant and without label should render default
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -5220,6 +5254,7 @@ exports[`TextField with outlined variant and without label should render default
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
 }
 
 .c3,
@@ -5353,6 +5388,7 @@ exports[`TextField with outlined variant and without label should render disable
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -5492,6 +5528,7 @@ exports[`TextField with outlined variant and without label should render disable
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
 }
 
 .c3,
@@ -5627,6 +5664,7 @@ exports[`TextField with outlined variant and without label should render focus s
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -5795,6 +5833,7 @@ exports[`TextField with outlined variant and without label should render focus s
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
 }
 
 .c3,
@@ -5939,6 +5978,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -6143,6 +6183,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -6357,6 +6398,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c4 {
@@ -6530,6 +6572,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -6697,6 +6740,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c8 {
@@ -6870,6 +6914,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -7022,6 +7067,7 @@ exports[`TextField without label should render default state properly 1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -7176,6 +7222,7 @@ exports[`TextField without label should render default state properly 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
 }
 
 .c3,
@@ -7309,6 +7356,7 @@ exports[`TextField without label should render focus state properly  1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c1 {
@@ -7463,6 +7511,7 @@ exports[`TextField without label should render focus state properly  1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;

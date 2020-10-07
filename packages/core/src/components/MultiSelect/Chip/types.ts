@@ -5,7 +5,7 @@ type ButtonProps = Omit<HTMLProps<HTMLButtonElement>, 'type' | 'label'>;
 export interface Props extends Omit<ButtonProps, 'size'>, WithThemeProp {
     size: 'S' | 'M';
     label: number | string;
-    variant?: 'outlined' | 'filled';
+    variant?: 'outlined' | 'filled' | 'rounded';
     state?: 'default' | 'active' | 'error' | 'disabled';
     onClear?: (label?: number | string) => void;
 }

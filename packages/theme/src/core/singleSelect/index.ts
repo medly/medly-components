@@ -36,7 +36,8 @@ const singleSelect: SingleSelectTheme = {
         borderRadius: {
             flat: '0.8rem',
             filled: '0 0 0.4rem 0.4rem',
-            outlined: '0.4rem'
+            outlined: '0.4rem',
+            rounded: '1.0rem'
         }
     },
     option: {
@@ -47,7 +48,8 @@ const singleSelect: SingleSelectTheme = {
         minHeight: {
             flat: '3.2rem',
             filled: '4rem',
-            outlined: '4rem'
+            outlined: '4rem',
+            rounded: '4rem'
         },
         bgColor: {
             default: colors.white,
