@@ -25,6 +25,9 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
         handleDateSelection = useCallback(
             (date: Date) => {
                 if (focusedElement === `START_DATE` || date < selectedDates.startDate) {
+                    if ('endDate' in selectedDates && date >= selectedDates.endDate) {
+                        delete selectedDates.endDate;
+                    }
                     onDateSelection({ ...selectedDates, startDate: date });
                     setFocusedElement('END_DATE');
                 } else {
