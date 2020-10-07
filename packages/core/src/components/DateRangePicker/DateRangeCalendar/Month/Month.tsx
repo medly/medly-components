@@ -4,6 +4,7 @@ import { LONG_CALENDAR_MONTHS } from '../../../Calendar/constants';
 import { getCalendarDates, isSameDay, isSameMonth } from '../../../Calendar/helper';
 import WeekDays from '../../../Calendar/WeekDays';
 import Text from '../../../Text';
+import * as DateStyled from '../Date.styled';
 import * as Styled from './Month.styled';
 import { Props } from './types';
 
@@ -23,32 +24,14 @@ export const Month: React.FC<Props> = React.memo(
     }) => {
         const today = new Date(),
             handleDateChange = useCallback((dt: Date) => () => onChange(dt), [onChange]),
-            handleMouseOver = useCallback((dt: Date) => () => setHoveredDate(dt), []),
-            getClassNames = useCallback(
-                (
-                    isInActiveMonth: boolean,
-                    isInDateRange: boolean,
-                    isInDateRangeHover: boolean,
-                    isFirstDate: boolean,
-                    isLastDate: boolean,
-                    isSelectedStartDate: boolean,
-                    isSelectedEndDate: boolean
-                ) => {
-                    return isInActiveMonth
-                        ? `${isSelectedStartDate ? 'selectedStartDate' : ''} ${isSelectedEndDate ? 'selectedEndDate' : ''} ${
-                              isInDateRange ? 'active' : ''
-                          } ${isInDateRangeHover ? 'hoverActive' : ''} ${isFirstDate ? 'start' : ''} ${isLastDate ? 'end' : ''}`.trim()
-                        : 'hide';
-                },
-                []
-            );
+            handleMouseOver = useCallback((dt: Date) => () => setHoveredDate(dt), []);
 
         return (
             <Styled.Wrapper id={id} {...restProps}>
                 <Styled.MonthText id={`${id}-text`} textVariant="button1" textAlign="center">
                     {`${LONG_CALENDAR_MONTHS[month]} ${year}`}
                 </Styled.MonthText>
-                <Styled.CalendarGrid id={`${id}-grid`}>
+                <CalendarStyled.CalendarGrid id={`${id}-grid`}>
                     <WeekDays />
                     {getCalendarDates(month, year).map((dateArray, index) => {
                         const _date = new Date(dateArray[0], dateArray[1], dateArray[2]),
@@ -57,24 +40,23 @@ export const Month: React.FC<Props> = React.memo(
                             isSelectedEndDate = isSameDay(_date, endDate),
                             isInDateRange = startDate && endDate && _date < endDate && _date > startDate,
                             isInDateRangeHover = startDate && !endDate && _date > startDate && _date < hoveredDate,
+                            isHoverBetweenDates = startDate && !endDate && _date > startDate && _date <= hoveredDate,
                             isInActiveMonth = isSameMonth(_date, new Date(year, month, 1)),
                             isCurrentDate = isSameDay(_date, today),
-                            isFirstDate = new Date(year, month, 1).getDate() === _date.getDate(),
-                            isLastDate = new Date(year, month + 1, 0).getDate() === _date.getDate();
+                            isMonthFirstDate = new Date(year, month, 1).getDate() === _date.getDate(),
+                            isMonthLastDate = new Date(year, month + 1, 0).getDate() === _date.getDate();
                         return (
-                            <CalendarStyled.Date
+                            <DateStyled.Date
                                 key={index}
-                                className={getClassNames(
-                                    isInActiveMonth,
-                                    isInDateRange,
-                                    isInDateRangeHover,
-                                    isFirstDate,
-                                    isLastDate,
-                                    isSelectedStartDate,
-                                    isSelectedEndDate
-                                )}
                                 title={_date.toDateString()}
+                                isHoverBetweenDates={isHoverBetweenDates}
                                 isInActiveMonth={isInActiveMonth}
+                                isInDateRange={isInDateRange}
+                                isInDateRangeHover={isInDateRangeHover}
+                                isMonthFirstDate={isMonthFirstDate}
+                                isMonthLastDate={isMonthLastDate}
+                                isSelectedStartDate={isSelectedStartDate}
+                                isSelectedEndDate={isSelectedEndDate}
                                 isSelected={isSelected}
                                 isCurrentDate={isCurrentDate}
                                 onMouseOver={handleMouseOver(_date)}
@@ -82,10 +64,10 @@ export const Month: React.FC<Props> = React.memo(
                                 onClick={handleDateChange(_date)}
                             >
                                 <Text>{_date.getDate()}</Text>
-                            </CalendarStyled.Date>
+                            </DateStyled.Date>
                         );
                     })}
-                </Styled.CalendarGrid>
+                </CalendarStyled.CalendarGrid>
             </Styled.Wrapper>
         );
     }
