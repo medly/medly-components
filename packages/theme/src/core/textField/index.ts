@@ -62,7 +62,7 @@ const textField: TextFieldTheme = {
         error: {
             caretColor: colors.red[500],
             placeholderColor: 'rgba(204, 0, 0, .2)',
-            bgColor: colors.red[500],
+            bgColor: colors.red[100],
             cursorColor: colors.red[500],
             borderColor: colors.red[500],
             labelColor: colors.red[500],

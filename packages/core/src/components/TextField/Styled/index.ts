@@ -1,5 +1,5 @@
 export * from './HelperText.styled';
-export * from './InnerWrapper.styled';
+export * from './InnerWrapper';
 export * from './InputWrapper.styled';
 export * from './Label.styled';
 export * from './MaskPlaceholder.styled';
