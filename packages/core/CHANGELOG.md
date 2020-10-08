@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.27.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.27.0...@medly-components/core@1.27.1) (2020-10-08)
+
+
+### Bug Fixes
+
+* memoized onChange method issue in textField component ([9f8301e](https://github.com/medly/medly-components/commit/9f8301eabe3032b7715e68952b687ef362b46899))
+
+
+
+
+
 # [1.27.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.26.0...@medly-components/core@1.27.0) (2020-10-08)
 
 
