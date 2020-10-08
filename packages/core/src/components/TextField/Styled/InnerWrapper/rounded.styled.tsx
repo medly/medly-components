@@ -5,10 +5,10 @@ import { Label } from '../Label.styled';
 import { Prefix } from '../Prefix.styled';
 import { Suffix } from '../Suffix.styled';
 
-export const roundedStyle = ({ rounded, disabled, inputContainsText }: InnerWrapperProps) => {
+export const roundedStyle = ({ rounded, disabled, isTextPresent }: InnerWrapperProps) => {
     return css`
         border-radius: 1rem;
-        background-color: ${inputContainsText ? 'transparent' : rounded.default.bgColor};
+        background-color: ${isTextPresent ? 'transparent' : rounded.default.bgColor};
         &::after {
             content: '';
             box-sizing: border-box;
@@ -34,7 +34,7 @@ export const roundedStyle = ({ rounded, disabled, inputContainsText }: InnerWrap
     `;
 };
 
-export const roundedErrorStyle = ({ theme: { textField }, inputContainsText }: InnerWrapperProps) => css`
+export const roundedErrorStyle = ({ theme: { textField }, isTextPresent }: InnerWrapperProps) => css`
     &,
     &:hover {
         color: ${textField.rounded.error.defaultTextColor};
@@ -69,7 +69,7 @@ export const roundedErrorStyle = ({ theme: { textField }, inputContainsText }: I
         color: ${textField.rounded.error.activeTextColor};
     }
 
-    ${inputContainsText &&
+    ${isTextPresent &&
     css`
         && {
             background-color: transparent;
