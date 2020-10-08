@@ -1,5 +1,5 @@
 import { Omit } from '@medly-components/utils/src';
-import { CalendarProps } from '../../../Calendar/types';
+import { CalendarProps, DateProps } from '../../../Calendar/types';
 
 export type Props = Omit<CalendarProps, 'size' | 'date'> & {
     id: string;
@@ -12,4 +12,17 @@ export type Props = Omit<CalendarProps, 'size' | 'date'> & {
     hoveredDate?: Date;
     onChange: (date: Date) => void;
     setHoveredDate?: (date: Date) => void;
+};
+
+export type ExtendedDateProps = DateProps & {
+    startDate?: Date;
+    endDate?: Date;
+    isInActiveMonth?: boolean;
+    isInDateRange?: boolean;
+    isInDateRangeHover?: boolean;
+    isMonthFirstDate?: boolean;
+    isMonthLastDate?: boolean;
+    isSelectedStartDate?: boolean;
+    isSelectedEndDate?: boolean;
+    isHoverBetweenDates?: boolean;
 };

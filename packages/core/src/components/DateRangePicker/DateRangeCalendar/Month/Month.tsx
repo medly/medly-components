@@ -4,8 +4,7 @@ import { LONG_CALENDAR_MONTHS } from '../../../Calendar/constants';
 import { getCalendarDates, isSameDay, isSameMonth } from '../../../Calendar/helper';
 import WeekDays from '../../../Calendar/WeekDays';
 import Text from '../../../Text';
-import * as DateStyled from '../Date.styled';
-import * as Styled from './Month.styled';
+import * as Styled from './Styled';
 import { Props } from './types';
 
 export const Month: React.FC<Props> = React.memo(
@@ -46,9 +45,11 @@ export const Month: React.FC<Props> = React.memo(
                             isMonthFirstDate = new Date(year, month, 1).getDate() === _date.getDate(),
                             isMonthLastDate = new Date(year, month + 1, 0).getDate() === _date.getDate();
                         return (
-                            <DateStyled.Date
+                            <Styled.Date
                                 key={index}
                                 title={_date.toDateString()}
+                                startDate={startDate}
+                                endDate={endDate}
                                 isHoverBetweenDates={isHoverBetweenDates}
                                 isInActiveMonth={isInActiveMonth}
                                 isInDateRange={isInDateRange}
@@ -64,7 +65,7 @@ export const Month: React.FC<Props> = React.memo(
                                 onClick={handleDateChange(_date)}
                             >
                                 <Text>{_date.getDate()}</Text>
-                            </DateStyled.Date>
+                            </Styled.Date>
                         );
                     })}
                 </CalendarStyled.CalendarGrid>
