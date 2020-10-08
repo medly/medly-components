@@ -1,4 +1,4 @@
-import { useOuterClickNotifier, useUpdateEffect } from '@medly-components/utils';
+import { useOuterClickNotifier } from '@medly-components/utils';
 import React, { FC, useRef, useState } from 'react';
 import * as TextFieldStyled from '../TextField/Styled';
 import DateRangeCalendar from './DateRangeCalendar';
@@ -38,12 +38,12 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         toggleCalendar(false);
     }, wrapperRef);
 
-    useUpdateEffect(() => {
+    /* useUpdateEffect(() => {
         if (focusedElement === 'START_DATE') {
             toggleCalendar(false);
             setActive(false);
         } else endDateRef.current.focus();
-    }, [focusedElement]);
+    }, [focusedElement]); */
 
     return (
         <TextFieldStyled.OuterWrapper id={`${pickerId}-wrapper`} ref={wrapperRef} fullWidth={fullWidth} minWidth={minWidth} {...restProps}>
