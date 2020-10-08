@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination popup component should render correctly with all the default props 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  text-align: center;
+}
+
+.c1 {
+  height: 4rem;
+  width: 4rem;
+  display: block;
+  border-radius: 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  padding: 0;
+  text-align: center;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  color: #435465;
+  background: #ffffff;
+  margin: 4px;
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #435465;
+  background: #ffffff;
+}
+
+.c1:hover {
+  cursor: pointer;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+}
+
+.c1:hover {
+  color: #303C48;
+  background: #F7F8F9;
+}
+
+.c1:active {
+  font-weight: 700;
+  color: #13181D;
+  background: #eff2f4;
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-popover-wrapper"
+  >
+    <button
+      class="sc-AxheI c1"
+    >
+      <h5
+        class="c2"
+      >
+        ...
+      </h5>
+    </button>
+  </div>
+</div>
+`;
