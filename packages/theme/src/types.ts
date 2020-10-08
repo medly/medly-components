@@ -31,6 +31,7 @@ export interface CoreTheme {
     tabs?: CoreThemes.TabsTheme;
     textField?: CoreThemes.TextFieldTheme;
     toast?: CoreThemes.ToastTheme;
+    pagination?: CoreThemes.PaginationTheme;
 }
 
 export interface LayoutTheme {

@@ -59,7 +59,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                     setInputValue(value);
                     const newOptions = filterOptions(options, value);
                     newOptions.length && value ? setOptions(newOptions) : updateToDefaultOptions();
-                    !areOptionsVisible && showOptions();
+                    !areOptionsVisible && setOptionsVisibilityState(true);
                 },
                 [areOptionsVisible, options, updateToDefaultOptions]
             ),
