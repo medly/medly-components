@@ -7,7 +7,7 @@ import SideNavContext from './SideNav.context';
 import MedlySidenavHeader from './MedlySidenavHeader';
 import * as stories from './SideNav.stories';
 
-<Meta title="Layout" component={SideNav} parameters={{ jest: ['SideNav.test.tsx', 'NavList.test.tsx', 'NavItem.test.tsx'] }} />
+<Meta title="Layout/SideNav" component={SideNav} parameters={{ jest: ['SideNav.test.tsx', 'NavList.test.tsx', 'NavItem.test.tsx'] }} />
 
 # SideNav
 
@@ -25,12 +25,10 @@ import React, { useCallback } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 
 export const SideNav: React.FC = React.memo(() => {
-    // If you are using react-router for managing your routes
     const { pathname } = useLocation(),
         history = useHistory(),
         handlePathChange = useCallback((page: string) => history.push(page), [history]);
 
-    // You can design your own header instead of MedlySidenavHeader
     return (
         <MedlySideNav onChange={handlePathChange} active={pathname} defaultActive="/home">
             <MedlySidenavHeader />

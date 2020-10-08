@@ -12,7 +12,7 @@ module.exports = {
         '../docs/Introduction.stories.mdx',
         '../docs/Typography/Typography.stories.mdx',
         '../docs/Colors/Colors.stories.mdx',
-        '../packages/**/*.stories.(tsx|mdx)'
+        '../packages/**/*.stories.@(tsx|mdx)'
     ],
     addons: [
         '@storybook/addon-docs',
@@ -21,7 +21,8 @@ module.exports = {
         'storybook-addon-jsx',
         'storybook-addon-designs',
         '@storybook/addon-viewport',
-        '@storybook/addon-actions'
+        '@storybook/addon-actions',
+        '@storybook/addon-essentials'
     ],
     webpack: async config => {
         config.module.rules.push({
@@ -29,27 +30,6 @@ module.exports = {
             include: [packages, docs],
             loader: 'babel-loader',
             exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /dist/]
-        });
-        config.module.rules.push({
-            test: /\.(ts|tsx)$/,
-            include: [packages, docs],
-            exclude: [/node_modules/, /\.test.tsx?$/, /__snapshots__/, /__tests__/, /dist/, /icons\/src\/assets/, /icons\/src\/icons/],
-            loader: 'react-docgen-typescript-loader',
-            options: {
-                tsconfigPath,
-                shouldExtractLiteralValuesFromEnum: true,
-                propFilter(prop) {
-                    if (prop.parent) {
-                        return (
-                            !prop.parent.fileName.includes('node_modules') &&
-                            !prop.parent.fileName.includes('HTMLProps') &&
-                            !prop.parent.fileName.includes('WithThemeProp')
-                        );
-                    }
-
-                    return true;
-                }
-            }
         });
         config.module.rules.push({
             test: /\.tsx$/,
