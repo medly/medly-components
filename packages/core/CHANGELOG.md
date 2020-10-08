@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.27.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.26.0...@medly-components/core@1.27.0) (2020-10-08)
+
+
+### Bug Fixes
+
+* seacrh issue in SingleSelect and MultiSelect componenet ([2e396bb](https://github.com/medly/medly-components/commit/2e396bbb4e1bd03742a60f197e5991f4e1313581))
+
+
+### Features
+
+* **core:** update pagination component as per new design ([cda1364](https://github.com/medly/medly-components/commit/cda1364a82cc11c0f6ecd3b9be9cef39ea530f0e))
+
+
+
+
+
 # [1.26.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.25.2...@medly-components/core@1.26.0) (2020-10-01)
 
 

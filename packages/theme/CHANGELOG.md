@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.20.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.19.0...@medly-components/theme@1.20.0) (2020-10-08)
+
+
+### Features
+
+* **core:** update pagination component as per new design ([cda1364](https://github.com/medly/medly-components/commit/cda1364a82cc11c0f6ecd3b9be9cef39ea530f0e))
+
+
+
+
+
 # [1.19.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.18.0...@medly-components/theme@1.19.0) (2020-10-01)
 
 
