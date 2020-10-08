@@ -1,12 +1,12 @@
 import { styled } from '@medly-components/utils';
-import * as CalendarStyled from '../../../Calendar/Calendar.styled';
-import Text from '../../../Text';
+import * as CalendarStyled from '../../../../Calendar/Calendar.styled';
+import Text from '../../../../Text';
 
 export const Wrapper = styled.div`
     position: relative;
-    padding-top: 2.3rem;
+    padding-top: 3.2rem;
     ${CalendarStyled.CalendarGrid} {
-        padding: 1.6rem 3.2rem;
+        padding: 1.6rem 3.2rem 3.2rem;
     }
     &:last-child {
         border-left: 1px solid #dfe4e9;

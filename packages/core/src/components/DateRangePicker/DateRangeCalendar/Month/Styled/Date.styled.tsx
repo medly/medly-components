@@ -1,6 +1,6 @@
 import { css, styled } from '@medly-components/utils';
-import * as CalendarStyled from '../../Calendar/Calendar.styled';
-import { ExtendedDateProps } from './types';
+import * as CalendarStyled from '../../../../Calendar/Calendar.styled';
+import { ExtendedDateProps } from '../types';
 
 const hideDateStyle = css`
         opacity: 0;
@@ -98,5 +98,5 @@ export const Date = styled(CalendarStyled.Date)<ExtendedDateProps>`
     ${({ isMonthFirstDate, isMonthLastDate, isInDateRange }) =>
         (isMonthFirstDate || isMonthLastDate) && isInDateRange && selectStartDateStyle};
 
-    ${({ isSelectedEndDate }) => isSelectedEndDate && lastActiveDateStyle};
+    ${({ startDate, isSelectedEndDate }) => startDate && isSelectedEndDate && lastActiveDateStyle};
 `;
