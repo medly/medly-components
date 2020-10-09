@@ -86,25 +86,25 @@ exports[`TabList should render properly 1`] = `
   background-color: transparent;
 }
 
-.c1:disabled .c5 {
+.c1:disabled .{
   color: #b0bcc8;
 }
 
-.c1:disabled .sc-AxhUy {
+.c1:disabled .sc-eCApGN {
   color: #b0bcc8;
 }
 
-.c1:disabled .sc-AxiKw {
+.c1:disabled .sc-dlnjPT {
   background-color: #b0bcc8;
 }
 
-.c1:disabled .sc-AxjAm {
+.c1:disabled .sc-bdnylx {
   font-size: 2.4rem;
   padding: 0;
   background-color: #F7F8F9;
 }
 
-.c1:disabled .sc-AxjAm * {
+.c1:disabled .sc-bdnylx * {
   fill: #b0bcc8;
 }
 
@@ -112,37 +112,37 @@ exports[`TabList should render properly 1`] = `
   cursor: pointer;
 }
 
-.c1 .sc-AxjAm {
+.c1 .sc-bdnylx {
   margin-right: 1.6rem;
 }
 
-.c1 .c5 {
+.c1 .{
   color: #126AFA;
 }
 
-.c1 .sc-AxhUy {
+.c1 .sc-eCApGN {
   color: #607890;
 }
 
-.c1 .sc-AxiKw {
+.c1 .sc-dlnjPT {
   background-color: #126AFA;
 }
 
-.c1 .sc-AxjAm {
+.c1 .sc-bdnylx {
   font-size: 2.4rem;
   padding: 0;
   background-color: #126AFA;
 }
 
-.c1 .sc-AxjAm * {
+.c1 .sc-bdnylx * {
   fill: #126AFA;
 }
 
-.c1 .sc-AxjAm * {
+.c1 .sc-bdnylx * {
   fill: #ffffff;
 }
 
-.c6 {
+.c5 {
   padding: 1.6rem;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -176,20 +176,20 @@ exports[`TabList should render properly 1`] = `
   background-color: #ffffff;
 }
 
-.c6 * {
+.c5 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c6:first-child {
+.c5:first-child {
   border-top-left-radius: 0.8rem;
 }
 
-.c6:last-child {
+.c5:last-child {
   border-top-right-radius: 0.8rem;
 }
 
-.c6::after {
+.c5::after {
   content: '';
   position: absolute;
   display: block;
@@ -200,95 +200,95 @@ exports[`TabList should render properly 1`] = `
   background-color: transparent;
 }
 
-.c6:focus {
+.c5:focus {
   outline: none;
 }
 
-.c6:disabled {
+.c5:disabled {
   cursor: not-allowed;
   background-color: #ffffff;
 }
 
-.c6:disabled::after {
+.c5:disabled::after {
   background-color: transparent;
 }
 
-.c6:disabled .c5 {
+.c5:disabled .{
   color: #b0bcc8;
 }
 
-.c6:disabled .sc-AxhUy {
+.c5:disabled .sc-eCApGN {
   color: #b0bcc8;
 }
 
-.c6:disabled .sc-AxiKw {
+.c5:disabled .sc-dlnjPT {
   background-color: #b0bcc8;
 }
 
-.c6:disabled .sc-AxjAm {
+.c5:disabled .sc-bdnylx {
   font-size: 2.4rem;
   padding: 0;
   background-color: #F7F8F9;
 }
 
-.c6:disabled .sc-AxjAm * {
+.c5:disabled .sc-bdnylx * {
   fill: #b0bcc8;
 }
 
-.c6:not(:disabled):hover {
+.c5:not(:disabled):hover {
   cursor: pointer;
 }
 
-.c6 .sc-AxjAm {
+.c5 .sc-bdnylx {
   margin-right: 1.6rem;
 }
 
-.c6 .c5 {
+.c5 .{
   color: #607890;
 }
 
-.c6 .sc-AxhUy {
+.c5 .sc-eCApGN {
   color: #607890;
 }
 
-.c6 .sc-AxiKw {
+.c5 .sc-dlnjPT {
   background-color: #607890;
 }
 
-.c6 .sc-AxjAm {
+.c5 .sc-bdnylx {
   font-size: 2.4rem;
   padding: 0;
   background-color: #eff2f4;
 }
 
-.c6 .sc-AxjAm * {
+.c5 .sc-bdnylx * {
   fill: #607890;
 }
 
-.c6:not(:disabled):hover {
+.c5:not(:disabled):hover {
   background-color: #F7F8F9;
   background-color: #F7F8F9;
 }
 
-.c6:not(:disabled):hover .c5 {
+.c5:not(:disabled):hover .{
   color: #435465;
 }
 
-.c6:not(:disabled):hover .sc-AxhUy {
+.c5:not(:disabled):hover .sc-eCApGN {
   color: #435465;
 }
 
-.c6:not(:disabled):hover .sc-AxiKw {
+.c5:not(:disabled):hover .sc-dlnjPT {
   background-color: #435465;
 }
 
-.c6:not(:disabled):hover .sc-AxjAm {
+.c5:not(:disabled):hover .sc-bdnylx {
   font-size: 2.4rem;
   padding: 0;
   background-color: #dfe4e9;
 }
 
-.c6:not(:disabled):hover .sc-AxjAm * {
+.c5:not(:disabled):hover .sc-bdnylx * {
   fill: #435465;
 }
 
@@ -360,7 +360,7 @@ exports[`TabList should render properly 1`] = `
           class="c3"
         >
           <span
-            class="c4 c5 "
+            class="c4 "
             id="tab1-label"
           >
             Add
@@ -371,7 +371,7 @@ exports[`TabList should render properly 1`] = `
     <button
       aria-controls="panel-tab2"
       aria-selected="false"
-      class="c6"
+      class="c5"
       id="tab2"
       role="tab"
       tabindex="-1"
@@ -384,7 +384,7 @@ exports[`TabList should render properly 1`] = `
           class="c3"
         >
           <span
-            class="c4 c5 "
+            class="c4 "
             id="tab2-label"
           >
             Edit

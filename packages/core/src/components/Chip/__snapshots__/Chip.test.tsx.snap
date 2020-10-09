@@ -51,11 +51,11 @@ exports[`Chip component should render properly when it is disabled 1`] = `
   outline: none;
 }
 
-.c0 .sc-AxjAm * {
+.c0 .sc-bdnylx * {
   fill: #ffffff;
 }
 
-.c0 .c1 + .sc-AxjAm {
+.c0 .c1 + .sc-bdnylx {
   cursor: not-allowed;
   margin-left: 10px;
 }
@@ -123,11 +123,11 @@ exports[`Chip component should render properly with flat variant 1`] = `
   outline: none;
 }
 
-.c0 .sc-AxjAm * {
+.c0 .sc-bdnylx * {
   fill: yellow;
 }
 
-.c0 .c1 + .sc-AxjAm {
+.c0 .c1 + .sc-bdnylx {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -196,11 +196,11 @@ exports[`Chip component should render properly with outlined variant 1`] = `
   outline: none;
 }
 
-.c0 .sc-AxjAm * {
+.c0 .sc-bdnylx * {
   fill: secondary;
 }
 
-.c0 .c1 + .sc-AxjAm {
+.c0 .c1 + .sc-bdnylx {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -270,11 +270,11 @@ exports[`Chip component should render properly with solid variant 1`] = `
   outline: none;
 }
 
-.c0 .sc-AxjAm * {
+.c0 .sc-bdnylx * {
   fill: #ffffff;
 }
 
-.c0 .c1 + .sc-AxjAm {
+.c0 .c1 + .sc-bdnylx {
   cursor: pointer;
   margin-left: 10px;
 }

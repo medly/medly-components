@@ -29,7 +29,7 @@ exports[`Tab should render active state properly 1`] = `
   text-align: initial;
 }
 
-.c8 {
+.c7 {
   color: #ffffff;
   border-radius: 2.5rem;
   margin-left: 0.8rem;
@@ -111,15 +111,15 @@ exports[`Tab should render active state properly 1`] = `
   background-color: transparent;
 }
 
+.c0:disabled .{
+  color: #b0bcc8;
+}
+
+.c0:disabled .sc-eCApGN {
+  color: #b0bcc8;
+}
+
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-AxhUy {
-  color: #b0bcc8;
-}
-
-.c0:disabled .c7 {
   background-color: #b0bcc8;
 }
 
@@ -141,15 +141,15 @@ exports[`Tab should render active state properly 1`] = `
   margin-right: 1.6rem;
 }
 
-.c0 .c6 {
+.c0 .{
   color: #126AFA;
 }
 
-.c0 .sc-AxhUy {
+.c0 .sc-eCApGN {
   color: #607890;
 }
 
-.c0 .c7 {
+.c0 .c6 {
   background-color: #126AFA;
 }
 
@@ -223,13 +223,13 @@ exports[`Tab should render active state properly 1`] = `
         class="c4"
       >
         <span
-          class="c5 c6 "
+          class="c5 "
           id="dummy-label"
         >
           Add
         </span>
         <span
-          class="c7 c8"
+          class="c6 c7"
           id="dummy-label"
         >
           2
@@ -269,7 +269,7 @@ exports[`Tab should render disabled state properly 1`] = `
   text-align: initial;
 }
 
-.c8 {
+.c7 {
   color: #ffffff;
   border-radius: 2.5rem;
   margin-left: 0.8rem;
@@ -350,15 +350,15 @@ exports[`Tab should render disabled state properly 1`] = `
   background-color: transparent;
 }
 
+.c0:disabled .{
+  color: #b0bcc8;
+}
+
+.c0:disabled .sc-eCApGN {
+  color: #b0bcc8;
+}
+
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-AxhUy {
-  color: #b0bcc8;
-}
-
-.c0:disabled .c7 {
   background-color: #b0bcc8;
 }
 
@@ -380,15 +380,15 @@ exports[`Tab should render disabled state properly 1`] = `
   margin-right: 1.6rem;
 }
 
+.c0 .{
+  color: #607890;
+}
+
+.c0 .sc-eCApGN {
+  color: #607890;
+}
+
 .c0 .c6 {
-  color: #607890;
-}
-
-.c0 .sc-AxhUy {
-  color: #607890;
-}
-
-.c0 .c7 {
   background-color: #607890;
 }
 
@@ -407,15 +407,15 @@ exports[`Tab should render disabled state properly 1`] = `
   background-color: #F7F8F9;
 }
 
+.c0:not(:disabled):hover .{
+  color: #435465;
+}
+
+.c0:not(:disabled):hover .sc-eCApGN {
+  color: #435465;
+}
+
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-AxhUy {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .c7 {
   background-color: #435465;
 }
 
@@ -486,13 +486,13 @@ exports[`Tab should render disabled state properly 1`] = `
         class="c4"
       >
         <span
-          class="c5 c6 "
+          class="c5 "
           id="dummy-label"
         >
           Add
         </span>
         <span
-          class="c7 c8"
+          class="c6 c7"
           id="dummy-label"
         >
           2
@@ -532,7 +532,7 @@ exports[`Tab should render properly with CLOSED tab style 1`] = `
   text-align: initial;
 }
 
-.c8 {
+.c7 {
   color: #ffffff;
   border-radius: 2.5rem;
   margin-left: 0.8rem;
@@ -613,15 +613,15 @@ exports[`Tab should render properly with CLOSED tab style 1`] = `
   background-color: transparent;
 }
 
+.c0:disabled .{
+  color: #b0bcc8;
+}
+
+.c0:disabled .sc-eCApGN {
+  color: #b0bcc8;
+}
+
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-AxhUy {
-  color: #b0bcc8;
-}
-
-.c0:disabled .c7 {
   background-color: #b0bcc8;
 }
 
@@ -643,15 +643,15 @@ exports[`Tab should render properly with CLOSED tab style 1`] = `
   margin-right: 1.6rem;
 }
 
+.c0 .{
+  color: #607890;
+}
+
+.c0 .sc-eCApGN {
+  color: #607890;
+}
+
 .c0 .c6 {
-  color: #607890;
-}
-
-.c0 .sc-AxhUy {
-  color: #607890;
-}
-
-.c0 .c7 {
   background-color: #607890;
 }
 
@@ -670,15 +670,15 @@ exports[`Tab should render properly with CLOSED tab style 1`] = `
   background-color: #F7F8F9;
 }
 
+.c0:not(:disabled):hover .{
+  color: #435465;
+}
+
+.c0:not(:disabled):hover .sc-eCApGN {
+  color: #435465;
+}
+
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-AxhUy {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .c7 {
   background-color: #435465;
 }
 
@@ -748,13 +748,13 @@ exports[`Tab should render properly with CLOSED tab style 1`] = `
         class="c4"
       >
         <span
-          class="c5 c6 "
+          class="c5 "
           id="dummy-label"
         >
           Add
         </span>
         <span
-          class="c7 c8"
+          class="c6 c7"
           id="dummy-label"
         >
           2
@@ -794,7 +794,7 @@ exports[`Tab should render properly with GREY tab background 1`] = `
   text-align: initial;
 }
 
-.c8 {
+.c7 {
   color: #ffffff;
   border-radius: 2.5rem;
   margin-left: 0.8rem;
@@ -875,15 +875,15 @@ exports[`Tab should render properly with GREY tab background 1`] = `
   background-color: transparent;
 }
 
+.c0:disabled .{
+  color: #b0bcc8;
+}
+
+.c0:disabled .sc-eCApGN {
+  color: #b0bcc8;
+}
+
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-AxhUy {
-  color: #b0bcc8;
-}
-
-.c0:disabled .c7 {
   background-color: #b0bcc8;
 }
 
@@ -909,15 +909,15 @@ exports[`Tab should render properly with GREY tab background 1`] = `
   margin-right: 1.6rem;
 }
 
+.c0 .{
+  color: #607890;
+}
+
+.c0 .sc-eCApGN {
+  color: #607890;
+}
+
 .c0 .c6 {
-  color: #607890;
-}
-
-.c0 .sc-AxhUy {
-  color: #607890;
-}
-
-.c0 .c7 {
   background-color: #607890;
 }
 
@@ -936,15 +936,15 @@ exports[`Tab should render properly with GREY tab background 1`] = `
   background-color: #ffffff;
 }
 
+.c0:not(:disabled):hover .{
+  color: #435465;
+}
+
+.c0:not(:disabled):hover .sc-eCApGN {
+  color: #435465;
+}
+
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-AxhUy {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .c7 {
   background-color: #435465;
 }
 
@@ -1014,13 +1014,13 @@ exports[`Tab should render properly with GREY tab background 1`] = `
         class="c4"
       >
         <span
-          class="c5 c6 "
+          class="c5 "
           id="dummy-label"
         >
           Add
         </span>
         <span
-          class="c7 c8"
+          class="c6 c7"
           id="dummy-label"
         >
           2
@@ -1063,7 +1063,7 @@ exports[`Tab should render properly with L tab size 1`] = `
   text-align: initial;
 }
 
-.c9 {
+.c8 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -1076,7 +1076,7 @@ exports[`Tab should render properly with L tab size 1`] = `
   text-align: initial;
 }
 
-.c8 {
+.c7 {
   color: #ffffff;
   border-radius: 2.5rem;
   margin-left: 0.8rem;
@@ -1085,7 +1085,7 @@ exports[`Tab should render properly with L tab size 1`] = `
   font-size: 1.2rem;
 }
 
-.c11 {
+.c10 {
   text-align: left;
   color: #607890;
 }
@@ -1162,15 +1162,15 @@ exports[`Tab should render properly with L tab size 1`] = `
   background-color: transparent;
 }
 
+.c0:disabled .{
+  color: #b0bcc8;
+}
+
+.c0:disabled .c9 {
+  color: #b0bcc8;
+}
+
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .c10 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .c7 {
   background-color: #b0bcc8;
 }
 
@@ -1192,15 +1192,15 @@ exports[`Tab should render properly with L tab size 1`] = `
   margin-right: 1.6rem;
 }
 
+.c0 .{
+  color: #607890;
+}
+
+.c0 .c9 {
+  color: #607890;
+}
+
 .c0 .c6 {
-  color: #607890;
-}
-
-.c0 .c10 {
-  color: #607890;
-}
-
-.c0 .c7 {
   background-color: #607890;
 }
 
@@ -1219,15 +1219,15 @@ exports[`Tab should render properly with L tab size 1`] = `
   background-color: #F7F8F9;
 }
 
+.c0:not(:disabled):hover .{
+  color: #435465;
+}
+
+.c0:not(:disabled):hover .c9 {
+  color: #435465;
+}
+
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .c10 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .c7 {
   background-color: #435465;
 }
 
@@ -1297,20 +1297,20 @@ exports[`Tab should render properly with L tab size 1`] = `
         class="c4"
       >
         <span
-          class="c5 c6 "
+          class="c5 "
           id="dummy-label"
         >
           Add
         </span>
         <span
-          class="c7 c8"
+          class="c6 c7"
           id="dummy-label"
         >
           2
         </span>
       </div>
       <span
-        class="c9 c10 c11"
+        class="c8 c9 c10"
         id="dummy-helperText"
       >
         Details for tab1
@@ -1352,7 +1352,7 @@ exports[`Tab should render properly with L tab size 2`] = `
   text-align: initial;
 }
 
-.c9 {
+.c8 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -1365,7 +1365,7 @@ exports[`Tab should render properly with L tab size 2`] = `
   text-align: initial;
 }
 
-.c8 {
+.c7 {
   color: #ffffff;
   border-radius: 2.5rem;
   margin-left: 0.8rem;
@@ -1374,7 +1374,7 @@ exports[`Tab should render properly with L tab size 2`] = `
   font-size: 1.2rem;
 }
 
-.c11 {
+.c10 {
   text-align: left;
   color: #607890;
 }
@@ -1451,15 +1451,15 @@ exports[`Tab should render properly with L tab size 2`] = `
   background-color: transparent;
 }
 
+.c0:disabled .{
+  color: #b0bcc8;
+}
+
+.c0:disabled .c9 {
+  color: #b0bcc8;
+}
+
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .c10 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .c7 {
   background-color: #b0bcc8;
 }
 
@@ -1481,15 +1481,15 @@ exports[`Tab should render properly with L tab size 2`] = `
   margin-right: 1.6rem;
 }
 
+.c0 .{
+  color: #607890;
+}
+
+.c0 .c9 {
+  color: #607890;
+}
+
 .c0 .c6 {
-  color: #607890;
-}
-
-.c0 .c10 {
-  color: #607890;
-}
-
-.c0 .c7 {
   background-color: #607890;
 }
 
@@ -1508,15 +1508,15 @@ exports[`Tab should render properly with L tab size 2`] = `
   background-color: #F7F8F9;
 }
 
+.c0:not(:disabled):hover .{
+  color: #435465;
+}
+
+.c0:not(:disabled):hover .c9 {
+  color: #435465;
+}
+
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .c10 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .c7 {
   background-color: #435465;
 }
 
@@ -1586,20 +1586,20 @@ exports[`Tab should render properly with L tab size 2`] = `
         class="c4"
       >
         <span
-          class="c5 c6 "
+          class="c5 "
           id="dummy-label"
         >
           Add
         </span>
         <span
-          class="c7 c8"
+          class="c6 c7"
           id="dummy-label"
         >
           2
         </span>
       </div>
       <span
-        class="c9 c10 c11"
+        class="c8 c9 c10"
         id="dummy-helperText"
       >
         Details for tab1
@@ -1641,7 +1641,7 @@ exports[`Tab should render properly with M tab size 1`] = `
   text-align: initial;
 }
 
-.c8 {
+.c7 {
   color: #ffffff;
   border-radius: 2.5rem;
   margin-left: 0.8rem;
@@ -1722,15 +1722,15 @@ exports[`Tab should render properly with M tab size 1`] = `
   background-color: transparent;
 }
 
+.c0:disabled .{
+  color: #b0bcc8;
+}
+
+.c0:disabled .sc-eCApGN {
+  color: #b0bcc8;
+}
+
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-AxhUy {
-  color: #b0bcc8;
-}
-
-.c0:disabled .c7 {
   background-color: #b0bcc8;
 }
 
@@ -1752,15 +1752,15 @@ exports[`Tab should render properly with M tab size 1`] = `
   margin-right: 1.6rem;
 }
 
+.c0 .{
+  color: #607890;
+}
+
+.c0 .sc-eCApGN {
+  color: #607890;
+}
+
 .c0 .c6 {
-  color: #607890;
-}
-
-.c0 .sc-AxhUy {
-  color: #607890;
-}
-
-.c0 .c7 {
   background-color: #607890;
 }
 
@@ -1779,15 +1779,15 @@ exports[`Tab should render properly with M tab size 1`] = `
   background-color: #F7F8F9;
 }
 
+.c0:not(:disabled):hover .{
+  color: #435465;
+}
+
+.c0:not(:disabled):hover .sc-eCApGN {
+  color: #435465;
+}
+
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-AxhUy {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .c7 {
   background-color: #435465;
 }
 
@@ -1857,13 +1857,13 @@ exports[`Tab should render properly with M tab size 1`] = `
         class="c4"
       >
         <span
-          class="c5 c6 "
+          class="c5 "
           id="dummy-label"
         >
           Add
         </span>
         <span
-          class="c7 c8"
+          class="c6 c7"
           id="dummy-label"
         >
           2
@@ -1906,7 +1906,7 @@ exports[`Tab should render properly with M tab size 2`] = `
   text-align: initial;
 }
 
-.c8 {
+.c7 {
   color: #ffffff;
   border-radius: 2.5rem;
   margin-left: 0.8rem;
@@ -1987,15 +1987,15 @@ exports[`Tab should render properly with M tab size 2`] = `
   background-color: transparent;
 }
 
+.c0:disabled .{
+  color: #b0bcc8;
+}
+
+.c0:disabled .sc-eCApGN {
+  color: #b0bcc8;
+}
+
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-AxhUy {
-  color: #b0bcc8;
-}
-
-.c0:disabled .c7 {
   background-color: #b0bcc8;
 }
 
@@ -2017,15 +2017,15 @@ exports[`Tab should render properly with M tab size 2`] = `
   margin-right: 1.6rem;
 }
 
+.c0 .{
+  color: #607890;
+}
+
+.c0 .sc-eCApGN {
+  color: #607890;
+}
+
 .c0 .c6 {
-  color: #607890;
-}
-
-.c0 .sc-AxhUy {
-  color: #607890;
-}
-
-.c0 .c7 {
   background-color: #607890;
 }
 
@@ -2044,15 +2044,15 @@ exports[`Tab should render properly with M tab size 2`] = `
   background-color: #F7F8F9;
 }
 
+.c0:not(:disabled):hover .{
+  color: #435465;
+}
+
+.c0:not(:disabled):hover .sc-eCApGN {
+  color: #435465;
+}
+
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-AxhUy {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .c7 {
   background-color: #435465;
 }
 
@@ -2122,13 +2122,13 @@ exports[`Tab should render properly with M tab size 2`] = `
         class="c4"
       >
         <span
-          class="c5 c6 "
+          class="c5 "
           id="dummy-label"
         >
           Add
         </span>
         <span
-          class="c7 c8"
+          class="c6 c7"
           id="dummy-label"
         >
           2
@@ -2168,7 +2168,7 @@ exports[`Tab should render properly with OPEN tab style 1`] = `
   text-align: initial;
 }
 
-.c8 {
+.c7 {
   color: #ffffff;
   border-radius: 2.5rem;
   margin-left: 0.8rem;
@@ -2249,15 +2249,15 @@ exports[`Tab should render properly with OPEN tab style 1`] = `
   background-color: transparent;
 }
 
+.c0:disabled .{
+  color: #b0bcc8;
+}
+
+.c0:disabled .sc-eCApGN {
+  color: #b0bcc8;
+}
+
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-AxhUy {
-  color: #b0bcc8;
-}
-
-.c0:disabled .c7 {
   background-color: #b0bcc8;
 }
 
@@ -2279,15 +2279,15 @@ exports[`Tab should render properly with OPEN tab style 1`] = `
   margin-right: 1.6rem;
 }
 
+.c0 .{
+  color: #607890;
+}
+
+.c0 .sc-eCApGN {
+  color: #607890;
+}
+
 .c0 .c6 {
-  color: #607890;
-}
-
-.c0 .sc-AxhUy {
-  color: #607890;
-}
-
-.c0 .c7 {
   background-color: #607890;
 }
 
@@ -2306,15 +2306,15 @@ exports[`Tab should render properly with OPEN tab style 1`] = `
   background-color: #F7F8F9;
 }
 
+.c0:not(:disabled):hover .{
+  color: #435465;
+}
+
+.c0:not(:disabled):hover .sc-eCApGN {
+  color: #435465;
+}
+
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-AxhUy {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .c7 {
   background-color: #435465;
 }
 
@@ -2384,13 +2384,13 @@ exports[`Tab should render properly with OPEN tab style 1`] = `
         class="c4"
       >
         <span
-          class="c5 c6 "
+          class="c5 "
           id="dummy-label"
         >
           Add
         </span>
         <span
-          class="c7 c8"
+          class="c6 c7"
           id="dummy-label"
         >
           2
@@ -2430,7 +2430,7 @@ exports[`Tab should render properly with S tab size 1`] = `
   text-align: initial;
 }
 
-.c8 {
+.c7 {
   color: #ffffff;
   border-radius: 2.5rem;
   margin-left: 0.8rem;
@@ -2511,15 +2511,15 @@ exports[`Tab should render properly with S tab size 1`] = `
   background-color: transparent;
 }
 
+.c0:disabled .{
+  color: #b0bcc8;
+}
+
+.c0:disabled .sc-eCApGN {
+  color: #b0bcc8;
+}
+
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-AxhUy {
-  color: #b0bcc8;
-}
-
-.c0:disabled .c7 {
   background-color: #b0bcc8;
 }
 
@@ -2541,15 +2541,15 @@ exports[`Tab should render properly with S tab size 1`] = `
   margin-right: 1.6rem;
 }
 
+.c0 .{
+  color: #607890;
+}
+
+.c0 .sc-eCApGN {
+  color: #607890;
+}
+
 .c0 .c6 {
-  color: #607890;
-}
-
-.c0 .sc-AxhUy {
-  color: #607890;
-}
-
-.c0 .c7 {
   background-color: #607890;
 }
 
@@ -2568,15 +2568,15 @@ exports[`Tab should render properly with S tab size 1`] = `
   background-color: #F7F8F9;
 }
 
+.c0:not(:disabled):hover .{
+  color: #435465;
+}
+
+.c0:not(:disabled):hover .sc-eCApGN {
+  color: #435465;
+}
+
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-AxhUy {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .c7 {
   background-color: #435465;
 }
 
@@ -2646,13 +2646,13 @@ exports[`Tab should render properly with S tab size 1`] = `
         class="c4"
       >
         <span
-          class="c5 c6 "
+          class="c5 "
           id="dummy-label"
         >
           Add
         </span>
         <span
-          class="c7 c8"
+          class="c6 c7"
           id="dummy-label"
         >
           2
@@ -2692,7 +2692,7 @@ exports[`Tab should render properly with S tab size 2`] = `
   text-align: initial;
 }
 
-.c8 {
+.c7 {
   color: #ffffff;
   border-radius: 2.5rem;
   margin-left: 0.8rem;
@@ -2773,15 +2773,15 @@ exports[`Tab should render properly with S tab size 2`] = `
   background-color: transparent;
 }
 
+.c0:disabled .{
+  color: #b0bcc8;
+}
+
+.c0:disabled .sc-eCApGN {
+  color: #b0bcc8;
+}
+
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-AxhUy {
-  color: #b0bcc8;
-}
-
-.c0:disabled .c7 {
   background-color: #b0bcc8;
 }
 
@@ -2803,15 +2803,15 @@ exports[`Tab should render properly with S tab size 2`] = `
   margin-right: 1.6rem;
 }
 
+.c0 .{
+  color: #607890;
+}
+
+.c0 .sc-eCApGN {
+  color: #607890;
+}
+
 .c0 .c6 {
-  color: #607890;
-}
-
-.c0 .sc-AxhUy {
-  color: #607890;
-}
-
-.c0 .c7 {
   background-color: #607890;
 }
 
@@ -2830,15 +2830,15 @@ exports[`Tab should render properly with S tab size 2`] = `
   background-color: #F7F8F9;
 }
 
+.c0:not(:disabled):hover .{
+  color: #435465;
+}
+
+.c0:not(:disabled):hover .sc-eCApGN {
+  color: #435465;
+}
+
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-AxhUy {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .c7 {
   background-color: #435465;
 }
 
@@ -2908,13 +2908,13 @@ exports[`Tab should render properly with S tab size 2`] = `
         class="c4"
       >
         <span
-          class="c5 c6 "
+          class="c5 "
           id="dummy-label"
         >
           Add
         </span>
         <span
-          class="c7 c8"
+          class="c6 c7"
           id="dummy-label"
         >
           2
@@ -2954,7 +2954,7 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
   text-align: initial;
 }
 
-.c8 {
+.c7 {
   color: #ffffff;
   border-radius: 2.5rem;
   margin-left: 0.8rem;
@@ -3035,15 +3035,15 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
   background-color: transparent;
 }
 
+.c0:disabled .{
+  color: #b0bcc8;
+}
+
+.c0:disabled .sc-eCApGN {
+  color: #b0bcc8;
+}
+
 .c0:disabled .c6 {
-  color: #b0bcc8;
-}
-
-.c0:disabled .sc-AxhUy {
-  color: #b0bcc8;
-}
-
-.c0:disabled .c7 {
   background-color: #b0bcc8;
 }
 
@@ -3065,15 +3065,15 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
   margin-right: 1.6rem;
 }
 
+.c0 .{
+  color: #607890;
+}
+
+.c0 .sc-eCApGN {
+  color: #607890;
+}
+
 .c0 .c6 {
-  color: #607890;
-}
-
-.c0 .sc-AxhUy {
-  color: #607890;
-}
-
-.c0 .c7 {
   background-color: #607890;
 }
 
@@ -3092,15 +3092,15 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
   background-color: #F7F8F9;
 }
 
+.c0:not(:disabled):hover .{
+  color: #435465;
+}
+
+.c0:not(:disabled):hover .sc-eCApGN {
+  color: #435465;
+}
+
 .c0:not(:disabled):hover .c6 {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .sc-AxhUy {
-  color: #435465;
-}
-
-.c0:not(:disabled):hover .c7 {
   background-color: #435465;
 }
 
@@ -3170,13 +3170,13 @@ exports[`Tab should render properly with WHITE tab background 1`] = `
         class="c4"
       >
         <span
-          class="c5 c6 "
+          class="c5 "
           id="dummy-label"
         >
           Add
         </span>
         <span
-          class="c7 c8"
+          class="c6 c7"
           id="dummy-label"
         >
           2

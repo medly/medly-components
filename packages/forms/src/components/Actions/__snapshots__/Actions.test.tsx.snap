@@ -64,7 +64,7 @@ exports[`Form Actions should render center aligned actions defined in action sch
   background: #dfe4e9;
 }
 
-.c1:disabled .sc-AxiKw * {
+.c1:disabled .sc-dlnjPT * {
   fill: #98A7B7;
 }
 
@@ -73,7 +73,7 @@ exports[`Form Actions should render center aligned actions defined in action sch
   background: #126AFA;
 }
 
-.c1:not(:disabled):not(:hover) .sc-AxiKw * {
+.c1:not(:disabled):not(:hover) .sc-dlnjPT * {
   fill: #ffffff;
 }
 
@@ -82,7 +82,7 @@ exports[`Form Actions should render center aligned actions defined in action sch
   background: #0D4AAF;
 }
 
-.c1:not(:disabled):active .sc-AxiKw * {
+.c1:not(:disabled):active .sc-dlnjPT * {
   fill: #ffffff;
 }
 
@@ -92,15 +92,15 @@ exports[`Form Actions should render center aligned actions defined in action sch
   box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
-.c1:not(:disabled):not(:active):hover .sc-AxiKw * {
+.c1:not(:disabled):not(:active):hover .sc-dlnjPT * {
   fill: #ffffff;
 }
 
-.c1 .sc-AxiKw + .c2 {
+.c1 .sc-dlnjPT + .c2 {
   margin-left: 0.8rem;
 }
 
-.c1 .c2 + .sc-AxiKw {
+.c1 .c2 + .sc-dlnjPT {
   margin-left: 0.8rem;
 }
 
@@ -208,7 +208,7 @@ exports[`Form Actions should render default action button 1`] = `
   background: #dfe4e9;
 }
 
-.c1:disabled .sc-AxiKw * {
+.c1:disabled .sc-dlnjPT * {
   fill: #98A7B7;
 }
 
@@ -217,7 +217,7 @@ exports[`Form Actions should render default action button 1`] = `
   background: #126AFA;
 }
 
-.c1:not(:disabled):not(:hover) .sc-AxiKw * {
+.c1:not(:disabled):not(:hover) .sc-dlnjPT * {
   fill: #ffffff;
 }
 
@@ -226,7 +226,7 @@ exports[`Form Actions should render default action button 1`] = `
   background: #0D4AAF;
 }
 
-.c1:not(:disabled):active .sc-AxiKw * {
+.c1:not(:disabled):active .sc-dlnjPT * {
   fill: #ffffff;
 }
 
@@ -236,15 +236,15 @@ exports[`Form Actions should render default action button 1`] = `
   box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
-.c1:not(:disabled):not(:active):hover .sc-AxiKw * {
+.c1:not(:disabled):not(:active):hover .sc-dlnjPT * {
   fill: #ffffff;
 }
 
-.c1 .sc-AxiKw + .c2 {
+.c1 .sc-dlnjPT + .c2 {
   margin-left: 0.8rem;
 }
 
-.c1 .c2 + .sc-AxiKw {
+.c1 .c2 + .sc-dlnjPT {
   margin-left: 0.8rem;
 }
 
@@ -352,7 +352,7 @@ exports[`Form Actions should render left aligned actions defined in action schem
   background: #dfe4e9;
 }
 
-.c1:disabled .sc-AxiKw * {
+.c1:disabled .sc-dlnjPT * {
   fill: #98A7B7;
 }
 
@@ -361,7 +361,7 @@ exports[`Form Actions should render left aligned actions defined in action schem
   background: #126AFA;
 }
 
-.c1:not(:disabled):not(:hover) .sc-AxiKw * {
+.c1:not(:disabled):not(:hover) .sc-dlnjPT * {
   fill: #ffffff;
 }
 
@@ -370,7 +370,7 @@ exports[`Form Actions should render left aligned actions defined in action schem
   background: #0D4AAF;
 }
 
-.c1:not(:disabled):active .sc-AxiKw * {
+.c1:not(:disabled):active .sc-dlnjPT * {
   fill: #ffffff;
 }
 
@@ -380,15 +380,15 @@ exports[`Form Actions should render left aligned actions defined in action schem
   box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
-.c1:not(:disabled):not(:active):hover .sc-AxiKw * {
+.c1:not(:disabled):not(:active):hover .sc-dlnjPT * {
   fill: #ffffff;
 }
 
-.c1 .sc-AxiKw + .c2 {
+.c1 .sc-dlnjPT + .c2 {
   margin-left: 0.8rem;
 }
 
-.c1 .c2 + .sc-AxiKw {
+.c1 .c2 + .sc-dlnjPT {
   margin-left: 0.8rem;
 }
 

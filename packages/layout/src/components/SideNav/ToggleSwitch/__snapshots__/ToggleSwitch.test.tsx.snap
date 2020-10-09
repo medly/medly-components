@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavItem should call onClick when we click on it 1`] = `
-.c3 {
+.c4 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -9,14 +9,14 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   cursor: inherit;
 }
 
-.c3 * {
+.c4 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -29,7 +29,7 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   text-align: initial;
 }
 
-.c1 {
+.c2 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -53,14 +53,14 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   background-color: transparent;
 }
 
-.c1 .c2 {
+.c2 .c3 {
   overflow: visible;
   border-radius: 0.4rem;
   padding: calc((4.8rem - 2rem) / 2);
   font-size: 2rem;
 }
 
-.c1 .c4 {
+.c2 .c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
@@ -78,35 +78,35 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c1 .c2 * {
+.c2 .c3 * {
   fill: #607890;
 }
 
-.c1 .c4 {
+.c2 .c5 {
   color: #607890;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #eff2f4;
 }
 
-.c1:hover .c2 * {
+.c2:hover .c3 * {
   fill: #303C48;
 }
 
-.c1:hover .c4 {
+.c2:hover .c5 {
   color: #303C48;
 }
 
-.c1:active {
+.c2:active {
   background-color: #dfe4e9;
 }
 
-.c1:active .c2 * {
+.c2:active .c3 * {
   fill: #13181D;
 }
 
-.c1:active .c4 {
+.c2:active .c5 {
   color: #13181D;
 }
 
@@ -119,6 +119,19 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   list-style-type: none;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.c0::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #ffffff;
+}
+
+.c0::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #98A7B7;
+}
+
+.c1 {
   min-height: 7.2rem;
   -webkit-flex: unset;
   -ms-flex: unset;
@@ -139,17 +152,7 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   margin-top: 2rem;
 }
 
-.c0::-webkit-scrollbar {
-  width: 0.5rem;
-  background-color: #ffffff;
-}
-
-.c0::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  background-color: #98A7B7;
-}
-
-.c0::before {
+.c1::before {
   content: '';
   width: calc(100% - 4.0rem);
   margin: 0 auto;
@@ -163,13 +166,13 @@ exports[`NavItem should call onClick when we click on it 1`] = `
 
 <div>
   <ul
-    class="sc-pczax c0"
+    class="c0 c1"
   >
     <li
-      class="c1"
+      class="c2"
     >
       <svg
-        class="c2 c3"
+        class="c3 c4"
         fill="none"
         height="1em"
         id="dummy-hide"
@@ -183,7 +186,7 @@ exports[`NavItem should call onClick when we click on it 1`] = `
         />
       </svg>
       <span
-        class="c4 c5"
+        class="c5 c6"
       >
         Hide Menu
       </span>
@@ -193,7 +196,7 @@ exports[`NavItem should call onClick when we click on it 1`] = `
 `;
 
 exports[`NavItem should render properly when it is showing hide option 1`] = `
-.c3 {
+.c4 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -201,14 +204,14 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   cursor: inherit;
 }
 
-.c3 * {
+.c4 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -221,7 +224,7 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   text-align: initial;
 }
 
-.c1 {
+.c2 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -245,14 +248,14 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   background-color: transparent;
 }
 
-.c1 .c2 {
+.c2 .c3 {
   overflow: visible;
   border-radius: 0.4rem;
   padding: calc((4.8rem - 2rem) / 2);
   font-size: 2rem;
 }
 
-.c1 .c4 {
+.c2 .c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
@@ -270,35 +273,35 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c1 .c2 * {
+.c2 .c3 * {
   fill: #607890;
 }
 
-.c1 .c4 {
+.c2 .c5 {
   color: #607890;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #eff2f4;
 }
 
-.c1:hover .c2 * {
+.c2:hover .c3 * {
   fill: #303C48;
 }
 
-.c1:hover .c4 {
+.c2:hover .c5 {
   color: #303C48;
 }
 
-.c1:active {
+.c2:active {
   background-color: #dfe4e9;
 }
 
-.c1:active .c2 * {
+.c2:active .c3 * {
   fill: #13181D;
 }
 
-.c1:active .c4 {
+.c2:active .c5 {
   color: #13181D;
 }
 
@@ -311,6 +314,19 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   list-style-type: none;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.c0::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #ffffff;
+}
+
+.c0::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #98A7B7;
+}
+
+.c1 {
   min-height: 7.2rem;
   -webkit-flex: unset;
   -ms-flex: unset;
@@ -331,17 +347,7 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   margin-top: 2rem;
 }
 
-.c0::-webkit-scrollbar {
-  width: 0.5rem;
-  background-color: #ffffff;
-}
-
-.c0::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  background-color: #98A7B7;
-}
-
-.c0::before {
+.c1::before {
   content: '';
   width: calc(100% - 4.0rem);
   margin: 0 auto;
@@ -355,13 +361,13 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
 
 <div>
   <ul
-    class="sc-pczax c0"
+    class="c0 c1"
   >
     <li
-      class="c1"
+      class="c2"
     >
       <svg
-        class="c2 c3"
+        class="c3 c4"
         fill="none"
         height="1em"
         id="dummy-hide"
@@ -375,7 +381,7 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
         />
       </svg>
       <span
-        class="c4 c5"
+        class="c5 c6"
       >
         Hide Menu
       </span>
@@ -385,7 +391,7 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
 `;
 
 exports[`NavItem should render properly when it is showing open option 1`] = `
-.c3 {
+.c4 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -393,14 +399,14 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   cursor: inherit;
 }
 
-.c3 * {
+.c4 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -413,7 +419,7 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   text-align: initial;
 }
 
-.c1 {
+.c2 {
   -webkit-text-decoration: none;
   text-decoration: none;
   box-sizing: border-box;
@@ -437,14 +443,14 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   background-color: transparent;
 }
 
-.c1 .c2 {
+.c2 .c3 {
   overflow: visible;
   border-radius: 0.4rem;
   padding: calc((4.8rem - 2rem) / 2);
   font-size: 2rem;
 }
 
-.c1 .c4 {
+.c2 .c5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-self: left;
@@ -462,35 +468,35 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c1 .c2 * {
+.c2 .c3 * {
   fill: #607890;
 }
 
-.c1 .c4 {
+.c2 .c5 {
   color: #607890;
 }
 
-.c1:hover {
+.c2:hover {
   background-color: #eff2f4;
 }
 
-.c1:hover .c2 * {
+.c2:hover .c3 * {
   fill: #303C48;
 }
 
-.c1:hover .c4 {
+.c2:hover .c5 {
   color: #303C48;
 }
 
-.c1:active {
+.c2:active {
   background-color: #dfe4e9;
 }
 
-.c1:active .c2 * {
+.c2:active .c3 * {
   fill: #13181D;
 }
 
-.c1:active .c4 {
+.c2:active .c5 {
   color: #13181D;
 }
 
@@ -503,6 +509,19 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   list-style-type: none;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.c0::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #ffffff;
+}
+
+.c0::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #98A7B7;
+}
+
+.c1 {
   min-height: 7.2rem;
   -webkit-flex: unset;
   -ms-flex: unset;
@@ -523,17 +542,7 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   margin-top: 2rem;
 }
 
-.c0::-webkit-scrollbar {
-  width: 0.5rem;
-  background-color: #ffffff;
-}
-
-.c0::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  background-color: #98A7B7;
-}
-
-.c0::before {
+.c1::before {
   content: '';
   width: calc(100% - 4.0rem);
   margin: 0 auto;
@@ -547,13 +556,13 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
 
 <div>
   <ul
-    class="sc-pczax c0"
+    class="c0 c1"
   >
     <li
-      class="c1"
+      class="c2"
     >
       <svg
-        class="c2 c3"
+        class="c3 c4"
         fill="none"
         height="1em"
         id="dummy-expand"
@@ -567,7 +576,7 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
         />
       </svg>
       <span
-        class="c4 c5"
+        class="c5 c6"
       >
         Open Menu
       </span>
