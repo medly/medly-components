@@ -5,7 +5,7 @@ export interface OptionsProps extends Omit<HTMLProps<HTMLUListElement>, 'size'> 
     id?: string;
     size?: 'S' | 'M';
     options: Option[];
-    variant: 'outlined' | 'filled' | 'flat' | 'rounded';
+    variant: 'outlined' | 'filled' | 'flat' | 'outlinedRounded';
     isNested?: boolean;
     hasError?: boolean;
     maxWidth?: string;
@@ -18,5 +18,5 @@ export interface StyledOptionsProps extends WithThemeProp {
     isNested?: boolean;
     maxWidth?: string;
     includesNestedOptions?: boolean;
-    variant: 'outlined' | 'filled' | 'flat' | 'rounded';
+    variant: 'outlined' | 'filled' | 'flat' | 'outlinedRounded';
 }

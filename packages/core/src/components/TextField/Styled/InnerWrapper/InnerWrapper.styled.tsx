@@ -6,7 +6,7 @@ import { Prefix } from '../Prefix.styled';
 import { Suffix } from '../Suffix.styled';
 import { filledStyle } from './filled.styled';
 import { outlinedStyle } from './outlined.styled';
-import { roundedErrorStyle, roundedStyle } from './rounded.styled';
+import { roundedOutlinedErrorStyle, roundedOutlinedStyle } from './outlinedRounded.styled';
 
 const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
     cursor: not-allowed;
@@ -59,8 +59,8 @@ const activeStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => cs
 `;
 
 const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) =>
-    variant === 'rounded'
-        ? roundedErrorStyle
+    variant === 'outlinedRounded'
+        ? roundedOutlinedErrorStyle
         : css`
               &,
               &:hover,
@@ -121,7 +121,7 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
 
     ${({ variant }) => variant === 'filled' && filledStyle}
     ${({ variant }) => variant === 'outlined' && outlinedStyle}
-    ${({ variant }) => variant === 'rounded' && roundedStyle}
+    ${({ variant }) => variant === 'outlinedRounded' && roundedOutlinedStyle}
     ${({ disabled, isErrorPresent }) => (disabled ? disabledStyle : isErrorPresent ? errorStyle : activeStyle)}
 `;
 InnerWrapper.defaultProps = {

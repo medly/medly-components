@@ -69,7 +69,7 @@ const textField: TextFieldTheme = {
             helperTextColor: colors.red[500]
         }
     },
-    rounded: {
+    outlinedRounded: {
         default: {
             borderColor: colors.grey[400],
             bgColor: colors.grey[50],

@@ -20,7 +20,7 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     /** Options */
     options: Option[];
     /** Variants */
-    variant?: 'outlined' | 'filled' | 'rounded';
+    variant?: 'outlined' | 'filled' | 'outlinedRounded';
     /** Sizes */
     size?: 'S' | 'M';
     /** Label */

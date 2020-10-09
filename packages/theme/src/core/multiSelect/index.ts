@@ -67,7 +67,7 @@ const multiSelectTheme: MultiSelectTheme = {
         icon: iconStyles,
         chip: chipStyles
     },
-    rounded: {
+    outlinedRounded: {
         icon: iconStyles,
         chip: chipStyles
     },

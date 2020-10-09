@@ -3,7 +3,7 @@ import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 
 export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height'>, WithThemeProp {
     /** Input Variants */
-    variant?: 'outlined' | 'filled' | 'rounded';
+    variant?: 'outlined' | 'filled' | 'outlinedRounded';
     /** Input Size */
     size?: 'S' | 'M';
     /** Function will called with the input value on blur and invalid event */
@@ -38,11 +38,11 @@ export interface StyledProps extends Props, TextFieldTheme {
     isPrefixPresent: boolean;
     isSuffixPresent: boolean;
     isLabelPresent: boolean;
-    variant: 'filled' | 'outlined' | 'rounded';
+    variant: 'filled' | 'outlined' | 'outlinedRounded';
 }
 
 export interface InnerWrapperProps extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'height'>, TextFieldTheme, WithThemeProp {
-    variant?: 'outlined' | 'filled' | 'rounded';
+    variant?: 'outlined' | 'filled' | 'outlinedRounded';
     disabled?: boolean;
     size?: 'S' | 'M';
     isLabelPresent?: boolean;

@@ -5,10 +5,10 @@ import { Label } from '../Label.styled';
 import { Prefix } from '../Prefix.styled';
 import { Suffix } from '../Suffix.styled';
 
-export const roundedStyle = ({ rounded, disabled, isTextPresent }: InnerWrapperProps) => {
+export const roundedOutlinedStyle = ({ outlinedRounded, disabled, isTextPresent }: InnerWrapperProps) => {
     return css`
         border-radius: 1rem;
-        background-color: ${isTextPresent ? 'transparent' : rounded.default.bgColor};
+        background-color: ${isTextPresent ? 'transparent' : outlinedRounded.default.bgColor};
         &::after {
             content: '';
             box-sizing: border-box;
@@ -23,38 +23,38 @@ export const roundedStyle = ({ rounded, disabled, isTextPresent }: InnerWrapperP
             background-color: transparent;
             transition: all 100ms ease-out;
             border-radius: 1rem;
-            border: 0.1rem solid ${rounded.default.borderColor};
+            border: 0.1rem solid ${outlinedRounded.default.borderColor};
         }
 
         &:hover::after,
         &:focus-within::after {
             border-width: ${!disabled && `0.15rem`};
-            border-color: ${!disabled && rounded.hover.borderColor};
+            border-color: ${!disabled && outlinedRounded.hover.borderColor};
         }
     `;
 };
 
-export const roundedErrorStyle = ({ theme: { textField }, isTextPresent }: InnerWrapperProps) => css`
+export const roundedOutlinedErrorStyle = ({ theme: { textField }, isTextPresent }: InnerWrapperProps) => css`
     &,
     &:hover {
-        color: ${textField.rounded.error.defaultTextColor};
-        background-color: ${textField.rounded.error.bgColor};
+        color: ${textField.outlinedRounded.error.defaultTextColor};
+        background-color: ${textField.outlinedRounded.error.bgColor};
         ${Label} {
-            color: ${textField.rounded.error.labelColor};
+            color: ${textField.outlinedRounded.error.labelColor};
         }
         ${Prefix}, ${Suffix} {
-            color: ${textField.rounded.error.labelColor};
+            color: ${textField.outlinedRounded.error.labelColor};
             * {
-                fill: ${textField.rounded.error.labelColor};
+                fill: ${textField.outlinedRounded.error.labelColor};
             }
         }
         & ~ ${HelperText} {
-            color: ${textField.rounded.error.helperTextColor};
+            color: ${textField.outlinedRounded.error.helperTextColor};
         }
         input {
-            caret-color: ${textField.rounded.error.caretColor};
+            caret-color: ${textField.outlinedRounded.error.caretColor};
             &::placeholder {
-                color: ${textField.rounded.error.placeholderColor};
+                color: ${textField.outlinedRounded.error.placeholderColor};
             }
         }
     }
@@ -66,18 +66,18 @@ export const roundedErrorStyle = ({ theme: { textField }, isTextPresent }: Inner
     &:focus-within,
     &:focus-within:hover {
         background-color: transparent;
-        color: ${textField.rounded.error.activeTextColor};
+        color: ${textField.outlinedRounded.error.activeTextColor};
     }
 
     ${isTextPresent &&
     css`
         && {
             background-color: transparent;
-            color: ${textField.rounded.error.activeTextColor};
+            color: ${textField.outlinedRounded.error.activeTextColor};
         }
     `}
 
     &&::after {
-        border-color: ${textField.rounded.error.borderColor};
+        border-color: ${textField.outlinedRounded.error.borderColor};
     }
 `;

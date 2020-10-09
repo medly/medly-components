@@ -2,7 +2,7 @@ import { defaultTheme, MultiSelectTheme } from '@medly-components/theme';
 import React from 'react';
 import { MultiSelectProps } from './types';
 
-export const variants: MultiSelectProps['variant'][] = ['outlined', 'filled', 'rounded'];
+export const variants: MultiSelectProps['variant'][] = ['outlined', 'filled', 'outlinedRounded'];
 export const sizes: MultiSelectProps['size'][] = ['S', 'M'];
 
 export const options = [

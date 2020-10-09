@@ -1,13 +1,13 @@
 import { css, getFontStyle, styled } from '@medly-components/utils';
 
-const getStyle = (required: boolean, variant: 'outlined' | 'filled' | 'rounded') => {
-    if (required && variant !== 'rounded') {
+const getStyle = (required: boolean, variant: 'outlined' | 'filled' | 'outlinedRounded') => {
+    if (required && variant !== 'outlinedRounded') {
         return css`
             ::after {
                 content: ' *';
             }
         `;
-    } else if (!required && variant === 'rounded') {
+    } else if (!required && variant === 'outlinedRounded') {
         return css`
             ::after {
                 content: ' (Optional)';
@@ -16,7 +16,7 @@ const getStyle = (required: boolean, variant: 'outlined' | 'filled' | 'rounded')
     }
 };
 
-export const Label = styled('label')<{ required: boolean; variant: 'outlined' | 'filled' | 'rounded'; size: 'S' | 'M' }>`
+export const Label = styled('label')<{ required: boolean; variant: 'outlined' | 'filled' | 'outlinedRounded'; size: 'S' | 'M' }>`
     top: 50%;
     left: 0;
     cursor: text;

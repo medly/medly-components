@@ -26,7 +26,7 @@ interface MultiSelectVariant {
 
 export interface MultiSelectTheme {
     filled: MultiSelectVariant;
-    rounded: MultiSelectVariant;
+    outlinedRounded: MultiSelectVariant;
     outlined: MultiSelectVariant;
     options: {
         textVariant: {
