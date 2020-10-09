@@ -3204,7 +3204,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
 .c1:hover,
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: #cc0000;
+  background-color: #FAE6E6;
 }
 
 .c1::after,
