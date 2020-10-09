@@ -66,7 +66,7 @@ export const CalendarGrid = styled.div`
     grid-template-columns: repeat(7, 4rem);
     grid-auto-rows: auto;
 
-    & > ${Text.Style} {
+    button > ${Text.Style} {
         user-select: none;
         text-align: center;
         padding: 0.8rem 1rem;

@@ -11,6 +11,11 @@ export const Wrapper = styled.div`
     &:last-child {
         border-left: 1px solid #dfe4e9;
     }
+    > div > strong {
+        &${Text.Style} {
+            margin-bottom: 1.6rem;
+        }
+    }
 `;
 
 export const MonthText = styled(Text)`

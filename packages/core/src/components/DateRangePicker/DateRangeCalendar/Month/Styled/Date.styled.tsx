@@ -1,102 +1,110 @@
 import { css, styled } from '@medly-components/utils';
-import * as CalendarStyled from '../../../../Calendar/Calendar.styled';
+import Text from '../../../../Text';
 import { ExtendedDateProps } from '../types';
 
-const hideDateStyle = css`
-        opacity: 0;
-        cursor: default;
-        pointer-events: none;
-    `,
-    dateBetweenRangeStyle = css`
-        background-color: ${({ theme }) => theme.colors.blue[100]};
-        border: none;
-        position: relative;
-        &::before {
-            position: absolute;
-            content: '';
-            z-index: -1;
-            left: -2.5rem;
-            top: 0;
-            width: 4.2rem;
-            height: 100%;
-            background-color: inherit;
-        }
-        &:nth-child(7n + 1)::before {
-            display: none;
-        }
-        &:nth-child(7n) {
-            /* background-color: green; */
-        }
-    `,
-    dateBetweenRangeHoverStyle = css`
-        ${dateBetweenRangeStyle};
-        background-color: ${({ theme }) => theme.colors.grey[100]};
-    `,
-    commonDateBGFadeStyle = css`
-        position: relative;
-        border-radius: 0;
+const monthStartEndDateAfterStyle = css<ExtendedDateProps>`
         &::after {
-            position: absolute;
-            content: '';
-            z-index: 1;
-            right: -2.4rem;
-            top: 0;
+            left: 0.4rem;
+            width: 3.2rem;
+            border-radius: ${({ isMonthFirstDate, isMonthLastDate }) => !isMonthFirstDate && !isMonthLastDate && '50%'};
+        }
+    `,
+    monthStartEndDateBeforeStyle = css<ExtendedDateProps>`
+        ${monthStartEndDateAfterStyle}
+        &::after {
+            border-top-right-radius: ${({ isMonthFirstDate }) => isMonthFirstDate && '50%'};
+            border-bottom-right-radius: ${({ isMonthFirstDate }) => isMonthFirstDate && '50%'};
+            border-top-left-radius: ${({ isMonthLastDate }) => isMonthLastDate && '50%'};
+            border-bottom-left-radius: ${({ isMonthLastDate }) => isMonthLastDate && '50%'};
+        }
+        &::before {
+            opacity: 1;
             width: 2.4rem;
-            height: 100%;
-            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, ${({ theme }) => theme.colors.grey[100]} 100%);
-            transform: rotate(-180deg);
-        }
-    `,
-    hoverAndSelectStartDateStyle = css`
-        ${commonDateBGFadeStyle};
-        &::after {
-            transform: rotate(0deg);
-            left: -2.4rem;
-            right: unset;
-        }
-        &::before {
-            display: none;
-        }
-    `,
-    selectStartDateStyle = css`
-        &::after {
-            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, ${({ theme }) => theme.colors.blue[100]} 100%);
-        }
-    `,
-    isInDateRangeHoverBeforeStyle = css`
-        ${dateBetweenRangeHoverStyle}
-        background-color: ${({ theme }) => theme.colors.grey[200]};
-        &::before {
-            background-color: ${({ theme }) => theme.colors.grey[100]};
-        }
-    `,
-    lastActiveDateStyle = css`
-        ${dateBetweenRangeStyle}
-        &::before {
-            background-color: ${({ theme }) => theme.colors.blue[100]};
+            right: ${({ isMonthLastDate }) => (isMonthLastDate ? '-2rem' : 'unset')};
+            left: ${({ isMonthFirstDate }) => (isMonthFirstDate ? '-2rem' : 'unset')};
+            background: linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0) 0%,
+                ${({ theme, isInDateRange }) => (isInDateRange ? theme.colors.blue[100] : theme.colors.grey[100])} 100%
+            );
+            transform: ${({ isMonthLastDate }) => isMonthLastDate && 'rotate(-180deg)'};
         }
     `;
 
-export const Date = styled(CalendarStyled.Date)<ExtendedDateProps>`
-    &:hover {
-        ${({ isHoverBetweenDates, isMonthFirstDate, isSelectedEndDate }) =>
-            isHoverBetweenDates && !isMonthFirstDate && !isSelectedEndDate && isInDateRangeHoverBeforeStyle};
-        background-color: ${({ isInDateRange, theme }) => isInDateRange && theme.colors.blue[100]};
+export const DateContainer = styled.div<ExtendedDateProps>`
+    text-align: center;
+    margin-bottom: 0.8rem;
+    padding: 0.4rem;
+    position: relative;
+    cursor: ${({ disabled, isInActiveMonth }) => (!isInActiveMonth ? 'default' : disabled ? 'not-allowed' : 'pointer')};
+    opacity: ${({ isInActiveMonth }) => !isInActiveMonth && 0};
+    pointer-events: ${({ isInActiveMonth }) => !isInActiveMonth && 'none'};
+
+    &::after,
+    &::before {
+        position: absolute;
+        content: '';
+        z-index: -1;
+        left: -0.4rem;
+        top: 0.4rem;
+        height: 3.2rem;
+        width: 4.8rem;
+        background-color: ${({ theme, isInDateRange, isInDateRangeHover }) =>
+            (isInDateRangeHover && theme.colors.grey[100]) || (isInDateRange && theme.colors.blue[100])};
     }
-    ${({ isInActiveMonth }) => !isInActiveMonth && hideDateStyle};
+    &::before {
+        right: -1.8rem;
+        width: 7.2rem;
+        left: unset;
+    }
+    ${({ isMonthFirstDate, isMonthLastDate, isInDateRange, isInDateRangeHover }) =>
+        (isMonthFirstDate || isMonthLastDate) && (isInDateRange || isInDateRangeHover) && monthStartEndDateBeforeStyle};
 
-    ${({ isInDateRange }) => isInDateRange && dateBetweenRangeStyle};
+    &:nth-child(7n + 1),
+    &:nth-child(7n) {
+        ${monthStartEndDateAfterStyle}
+        &::before {
+            width: ${({ isMonthFirstDate, isMonthLastDate }) => !isMonthFirstDate && !isMonthLastDate && '3.4rem'};
+        }
+    }
+    &:nth-child(7n)::before {
+        right: ${({ isMonthFirstDate, isMonthLastDate }) => !isMonthFirstDate && !isMonthLastDate && '2.2rem'};
+    }
 
-    ${({ isInDateRangeHover }) => isInDateRangeHover && dateBetweenRangeHoverStyle};
+    > button {
+        background-color: ${({ theme, isSelected }) => (isSelected ? theme.datePicker.selectedDateBgColor : 'transparent')};
+        border-color: ${({ theme, isCurrentDate, isSelected }) => !isSelected && isCurrentDate && theme.datePicker.currentDateBorderColor};
+        > ${Text.Style} {
+            padding: 0;
+            margin: 0;
+            font-weight: ${({ isSelected }) => isSelected && 'bold'};
+            color: ${({ theme, isSelected }) => isSelected && theme.datePicker.selectedDateColor};
+        }
+    }
+    &:hover {
+        > button {
+            border-color: ${({ theme, disabled, isInRangeAfterDateSelection }) =>
+                !disabled && !isInRangeAfterDateSelection && theme.datePicker.selectedDateBgColor};
+            background-color: ${({ isInRangeAfterDateSelection, theme }) => isInRangeAfterDateSelection && theme.colors.grey[200]};
+        }
+    }
+`;
 
-    ${({ isMonthFirstDate, isInDateRangeHover, isInDateRange }) =>
-        isMonthFirstDate && (isInDateRangeHover || isInDateRange) && hoverAndSelectStartDateStyle};
-
-    ${({ isMonthLastDate, isInDateRangeHover, isInDateRange }) =>
-        isMonthLastDate && (isInDateRangeHover || isInDateRange) && commonDateBGFadeStyle};
-
-    ${({ isMonthFirstDate, isMonthLastDate, isInDateRange }) =>
-        (isMonthFirstDate || isMonthLastDate) && isInDateRange && selectStartDateStyle};
-
-    ${({ startDate, isSelectedEndDate }) => startDate && isSelectedEndDate && lastActiveDateStyle};
+export const Date = styled('button').attrs({ type: 'button' })<ExtendedDateProps>`
+    border: 0.2rem solid transparent;
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    &:focus {
+        outline: none;
+    }
+    &:disabled {
+        cursor: not-allowed;
+        color: ${({ theme }) => theme.datePicker.nonActiveMonthDateColor};
+    }
 `;

@@ -38,34 +38,39 @@ export const Month: React.FC<Props> = React.memo(
                             isSelectedStartDate = isSameDay(_date, startDate),
                             isSelectedEndDate = isSameDay(_date, endDate),
                             isInDateRange = startDate && endDate && _date < endDate && _date > startDate,
-                            isInDateRangeHover = startDate && !endDate && _date > startDate && _date < hoveredDate,
-                            isHoverBetweenDates = startDate && !endDate && _date > startDate && _date <= hoveredDate,
+                            isInDateRangeHover =
+                                (startDate && !endDate && _date > startDate && _date < hoveredDate) ||
+                                (!startDate && endDate && _date < endDate && _date > hoveredDate),
                             isInActiveMonth = isSameMonth(_date, new Date(year, month, 1)),
                             isCurrentDate = isSameDay(_date, today),
                             isMonthFirstDate = new Date(year, month, 1).getDate() === _date.getDate(),
-                            isMonthLastDate = new Date(year, month + 1, 0).getDate() === _date.getDate();
+                            isMonthLastDate = new Date(year, month + 1, 0).getDate() === _date.getDate(),
+                            isInRangeAfterDateSelection =
+                                (startDate && !endDate && startDate < _date) || (!startDate && endDate && endDate > _date),
+                            disabled = _date > maxSelectableDate || _date < minSelectableDate;
                         return (
-                            <Styled.Date
+                            <Styled.DateContainer
                                 key={index}
-                                title={_date.toDateString()}
-                                startDate={startDate}
-                                endDate={endDate}
-                                isHoverBetweenDates={isHoverBetweenDates}
                                 isInActiveMonth={isInActiveMonth}
-                                isInDateRange={isInDateRange}
+                                disabled={disabled}
+                                isCurrentDate={isCurrentDate}
+                                isSelected={isSelected}
+                                isStartDateNotSelected={!startDate}
+                                isEndDateNotSelected={!endDate}
                                 isInDateRangeHover={isInDateRangeHover}
-                                isMonthFirstDate={isMonthFirstDate}
-                                isMonthLastDate={isMonthLastDate}
+                                isInDateRange={isInDateRange}
                                 isSelectedStartDate={isSelectedStartDate}
                                 isSelectedEndDate={isSelectedEndDate}
-                                isSelected={isSelected}
-                                isCurrentDate={isCurrentDate}
-                                onMouseOver={handleMouseOver(_date)}
-                                disabled={_date > maxSelectableDate || _date < minSelectableDate}
+                                isInRangeAfterDateSelection={isInRangeAfterDateSelection}
+                                isMonthFirstDate={isMonthFirstDate}
+                                isMonthLastDate={isMonthLastDate}
                                 onClick={handleDateChange(_date)}
+                                onMouseOver={handleMouseOver(_date)}
                             >
-                                <Text>{_date.getDate()}</Text>
-                            </Styled.Date>
+                                <Styled.Date key={index} title={_date.toDateString()} disabled={disabled}>
+                                    <Text>{_date.getDate()}</Text>
+                                </Styled.Date>
+                            </Styled.DateContainer>
                         );
                     })}
                 </CalendarStyled.CalendarGrid>

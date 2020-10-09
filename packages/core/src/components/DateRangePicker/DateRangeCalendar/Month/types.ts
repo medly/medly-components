@@ -15,8 +15,8 @@ export type Props = Omit<CalendarProps, 'size' | 'date'> & {
 };
 
 export type ExtendedDateProps = DateProps & {
-    startDate?: Date;
-    endDate?: Date;
+    isStartDateNotSelected?: boolean;
+    isEndDateNotSelected?: boolean;
     isInActiveMonth?: boolean;
     isInDateRange?: boolean;
     isInDateRangeHover?: boolean;
@@ -25,4 +25,5 @@ export type ExtendedDateProps = DateProps & {
     isSelectedStartDate?: boolean;
     isSelectedEndDate?: boolean;
     isHoverBetweenDates?: boolean;
+    isInRangeAfterDateSelection?: boolean;
 };
