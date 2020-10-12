@@ -10,9 +10,26 @@ const styleWithLabel = ({ variant }: StyledProps) => {
     `;
 };
 
+const setFontStyle = ({ theme, size, multiline }: StyledProps) => {
+    if (multiline === true) {
+        return `font-size: 1.4rem;
+            font-weight: 400;
+            letter-spacing: -0.04rem;
+            line-height: 2rem;
+            font-family: Open Sans`;
+    }
+    return getFontStyle({ theme, fontVariant: theme.textField.textVariant[size] });
+};
+
+const setHeight = ({ multiline }: StyledProps) => {
+    console.log(multiline);
+    return multiline === true && `height: 100%`;
+};
+
 export const Input = styled('input')<StyledProps>`
     color: ${({ variant, theme }) => theme.textField[variant].default.textColor};
     width: 100%;
+    ${setHeight};
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,11 +37,12 @@ export const Input = styled('input')<StyledProps>`
     background: transparent;
     border: none;
     text-overflow: ellipsis;
+    resize: none;
 
     ${({ isLabelPresent, size }) => isLabelPresent && size !== 'S' && styleWithLabel};
     &,
     & ~ ${MaskPlaceholder} {
-        ${({ theme, size }) => getFontStyle({ theme, fontVariant: theme.textField.textVariant[size] })}
+        ${setFontStyle}
     }
 
     &:focus {
@@ -41,7 +59,7 @@ export const Input = styled('input')<StyledProps>`
     }
 
     ::placeholder {
-        opacity: 0;
+        opacity: ${({ multiline }) => (multiline === true ? 1 : 0)};
         transition: all 100ms ease-out;
     }
 
@@ -54,3 +72,5 @@ export const Input = styled('input')<StyledProps>`
         opacity: 1;
     }
 `;
+
+// opacity: ${({ multiline }) => (multiline === true ? 1 : 0)};

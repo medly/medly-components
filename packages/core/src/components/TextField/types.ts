@@ -32,12 +32,17 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'siz
     minWidth?: string;
     /** Max width in px/rem/% (1rem = 10px)*/
     maxWidth?: string;
+    /** To use a text area, set multiline to true. When false, this component will be a text field */
+    multiline?: boolean;
+    /** USe minRows only when mutliline is true. Number of rows in text area */
+    minRows?: number;
 }
 
 export interface StyledProps extends Props, TextFieldTheme {
     isPrefixPresent: boolean;
     isSuffixPresent: boolean;
     isLabelPresent: boolean;
+    multiline?: boolean;
 }
 
 export interface InnerWrapperProps extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'height'>, TextFieldTheme, WithThemeProp {
@@ -46,4 +51,6 @@ export interface InnerWrapperProps extends Omit<HTMLProps<HTMLDivElement>, 'size
     size?: 'S' | 'M';
     isLabelPresent?: boolean;
     isErrorPresent?: boolean;
+    multiline?: boolean;
+    minRows?: number;
 }

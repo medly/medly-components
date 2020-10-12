@@ -25,6 +25,8 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                 disabled,
                 mask,
                 placeholder,
+                multiline,
+                minRows,
                 validator,
                 ...restProps
             } = props,
@@ -77,13 +79,15 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                     disabled={disabled}
                     isErrorPresent={isErrorPresent}
                     isLabelPresent={isLabelPresent}
+                    minRows={minRows}
+                    multiline={multiline}
                 >
                     {isPrefixPresent && (
                         <Styled.Prefix size={size}>
                             <Prefix size={size} />
                         </Styled.Prefix>
                     )}
-                    <Styled.InputWrapper>
+                    <Styled.InputWrapper multiline={multiline}>
                         <Styled.Input
                             ref={inputRef}
                             value={value}
@@ -96,6 +100,8 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                             isSuffixPresent={isSuffixPresent}
                             isLabelPresent={isLabelPresent}
                             errorText={errorText || builtInErrorMessage}
+                            as={multiline ? 'textarea' : 'input'}
+                            multiline={multiline}
                             {...{ ...restProps, size, onBlur, onInvalid, onChange }}
                         />
                         {maskLabel && (

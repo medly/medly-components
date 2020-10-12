@@ -143,6 +143,16 @@ const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css
     }
 `;
 
+const getHeight = ({ size, theme, minRows, multiline }: InnerWrapperProps) => {
+    const baseHeight = theme.textField.height[size];
+    const baseHeightNumber = parseFloat(baseHeight.replace(/[^\d.-]/g, ''));
+    return multiline ? 2 * minRows + 2.2 : baseHeightNumber;
+};
+
+const getPadding = ({ size, multiline }: InnerWrapperProps) => {
+    return multiline ? `1.1rem 1.2rem` : size === 'S' ? `0 1.2rem` : `0 1.6rem`;
+};
+
 export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({ ...textField, textField, height: undefined }))<
     InnerWrapperProps
 >`
@@ -151,8 +161,8 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
     align-items: center;
     flex-direction: row;
     box-sizing: border-box;
-    height: ${({ size, theme }) => theme.textField.height[size]};
-    padding: 0 ${({ size }) => (size === 'S' ? '1.2rem' : '1.6rem')};
+    height: ${getHeight}rem;
+    padding: ${getPadding};
     transition: all 100ms ease-out;
     cursor: text;
 
@@ -177,3 +187,8 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
 InnerWrapper.defaultProps = {
     size: 'M'
 };
+
+// height: ${getHeight}rem;
+// padding: ${({ size, multiline }: InnerWrapperProps) => (multiline ? '1.1rem 1.2rem' : size === 'S' ? '1.2rem' : '1.6rem')};
+
+// height: ${({ size, theme }) => theme.textField.height[size]};
