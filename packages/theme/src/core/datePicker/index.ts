@@ -35,7 +35,7 @@ const datePicker: DatePickerTheme = {
     nonActiveMonthDateColor: colors.grey[400],
     currentDateBorderColor: colors.grey[300],
     borderRadius: '50%',
-    outlinedRounded: {
+    fusion: {
         icon: iconStyles
     },
     outlined: {

@@ -80,8 +80,8 @@ export interface TextFieldTheme {
             helperTextColor: string;
         };
     };
-    /** outlinedRounded variant theme */
-    outlinedRounded: {
+    /** fusion variant theme */
+    fusion: {
         default: {
             borderColor: string;
             bgColor: string;

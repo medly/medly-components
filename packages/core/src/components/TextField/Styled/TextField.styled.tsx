@@ -4,7 +4,7 @@ import { Label } from './Label.styled';
 import { MaskPlaceholder } from './MaskPlaceholder.styled';
 
 const transformLabel = (variant: string) => {
-    if (variant === 'outlinedRounded') {
+    if (variant === 'fusion') {
         return css`
             transform: translateY(-140%) scale(0.67);
             background-color: white;
@@ -18,7 +18,7 @@ const transformLabel = (variant: string) => {
 const styleWithLabel = ({ variant }: StyledProps) => {
     return css`
         align-self: flex-end;
-        padding-bottom: ${variant === 'filled' ? '0.7rem' : variant === 'outlinedRounded' ? '1.4rem' : '0.6rem'};
+        padding-bottom: ${variant === 'filled' ? '0.7rem' : variant === 'fusion' ? '1.4rem' : '0.6rem'};
     `;
 };
 
