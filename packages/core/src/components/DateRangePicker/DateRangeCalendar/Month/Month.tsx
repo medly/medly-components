@@ -66,6 +66,7 @@ export const Month: React.FC<Props> = React.memo(
                                 isMonthLastDate={isMonthLastDate}
                                 onClick={handleDateChange(_date)}
                                 onMouseOver={handleMouseOver(_date)}
+                                onMouseOut={handleMouseOver(null)}
                             >
                                 <Styled.Date key={index} title={_date.toDateString()} disabled={disabled}>
                                     <Text>{_date.getDate()}</Text>

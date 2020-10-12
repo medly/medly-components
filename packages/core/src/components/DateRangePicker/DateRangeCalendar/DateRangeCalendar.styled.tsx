@@ -5,7 +5,7 @@ import { Placement } from '../../Popover/types';
 
 export const NavigatorIcon = styled(DatePickerStyled.MonthNavigation)<{ align: 'left' | 'right' }>`
     z-index: 1;
-    top: 1.6rem;
+    top: 2.5rem;
     position: absolute;
     left: ${({ align }) => align === 'left' && `3.2rem`};
     right: ${({ align }) => align === 'right' && `3.2rem`};

@@ -2,15 +2,15 @@ import { css, styled } from '@medly-components/utils';
 import Text from '../../../../Text';
 import { ExtendedDateProps } from '../types';
 
-const monthStartEndDateAfterStyle = css<ExtendedDateProps>`
+const monthStartAndEndDateAfterStyle = css<ExtendedDateProps>`
         &::after {
             left: 0.4rem;
             width: 3.2rem;
             border-radius: ${({ isMonthFirstDate, isMonthLastDate }) => !isMonthFirstDate && !isMonthLastDate && '50%'};
         }
     `,
-    monthStartEndDateBeforeStyle = css<ExtendedDateProps>`
-        ${monthStartEndDateAfterStyle}
+    monthStartAndEndDateBeforeStyle = css<ExtendedDateProps>`
+        ${monthStartAndEndDateAfterStyle}
         &::after {
             border-top-right-radius: ${({ isMonthFirstDate }) => isMonthFirstDate && '50%'};
             border-bottom-right-radius: ${({ isMonthFirstDate }) => isMonthFirstDate && '50%'};
@@ -58,11 +58,11 @@ export const DateContainer = styled.div<ExtendedDateProps>`
         left: unset;
     }
     ${({ isMonthFirstDate, isMonthLastDate, isInDateRange, isInDateRangeHover }) =>
-        (isMonthFirstDate || isMonthLastDate) && (isInDateRange || isInDateRangeHover) && monthStartEndDateBeforeStyle};
+        (isMonthFirstDate || isMonthLastDate) && (isInDateRange || isInDateRangeHover) && monthStartAndEndDateBeforeStyle};
 
     &:nth-child(7n + 1),
     &:nth-child(7n) {
-        ${monthStartEndDateAfterStyle}
+        ${monthStartAndEndDateAfterStyle}
         &::before {
             width: ${({ isMonthFirstDate, isMonthLastDate }) => !isMonthFirstDate && !isMonthLastDate && '3.4rem'};
         }
