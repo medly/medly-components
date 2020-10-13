@@ -35,6 +35,7 @@ export interface SingleSelectTheme {
             flat: string;
             filled: string;
             outlined: string;
+            fusion: string;
         };
     };
     option: {
@@ -46,6 +47,7 @@ export interface SingleSelectTheme {
             flat: string;
             filled: string;
             outlined: string;
+            fusion: string;
         };
         bgColor: {
             default: string;

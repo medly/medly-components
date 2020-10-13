@@ -4,7 +4,7 @@ import { SingleSelectTheme } from './types';
 const singleSelect: SingleSelectTheme = {
     shadowColor: '#B0BCC8',
     variant: {
-        // outlined & filled variant theme is coming from textField
+        // outlined, filled, & fusion variant theme is coming from textField
         flat: {
             height: '3.2rem',
             bgColor: {
@@ -36,7 +36,8 @@ const singleSelect: SingleSelectTheme = {
         borderRadius: {
             flat: '0.8rem',
             filled: '0 0 0.4rem 0.4rem',
-            outlined: '0.4rem'
+            outlined: '0.4rem',
+            fusion: '1.0rem'
         }
     },
     option: {
@@ -47,7 +48,8 @@ const singleSelect: SingleSelectTheme = {
         minHeight: {
             flat: '3.2rem',
             filled: '4rem',
-            outlined: '4rem'
+            outlined: '4rem',
+            fusion: '4rem'
         },
         bgColor: {
             default: colors.white,

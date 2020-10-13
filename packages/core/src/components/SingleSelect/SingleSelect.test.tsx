@@ -241,7 +241,7 @@ describe('SingleSelect component', () => {
 
             it('should change input', async () => {
                 const mockOnChange = jest.fn(),
-                    { container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} />);
+                    { container } = render(<SingleSelect value="all" options={options} onChange={mockOnChange} isSearchable />);
                 fireEvent.click(screen.getByRole('textbox'));
                 fireEvent.keyDown(container, { key: 'ArrowDown', code: 40 });
                 fireEvent.keyDown(container, { key: 'Enter', code: 13 });

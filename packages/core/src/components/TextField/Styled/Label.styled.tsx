@@ -1,6 +1,22 @@
 import { css, getFontStyle, styled } from '@medly-components/utils';
 
-export const Label = styled('label')<{ required: boolean; variant: 'outlined' | 'filled'; size: 'S' | 'M'; multiline: boolean }>`
+const getStyle = (required: boolean, variant: 'outlined' | 'filled' | 'fusion') => {
+    if (required && variant !== 'fusion') {
+        return css`
+            ::after {
+                content: ' *';
+            }
+        `;
+    } else if (!required && variant === 'fusion') {
+        return css`
+            ::after {
+                content: ' (Optional)';
+            }
+        `;
+    }
+};
+
+export const Label = styled('label')<{ required: boolean; variant: 'outlined' | 'filled' | 'fusion'; size: 'S' | 'M'; multiline: boolean }>`
     top: ${({ multiline, size }) => (multiline && size === 'M' ? '25%' : multiline && size === 'S' ? '19%' : '50%')};
     left: 0;
     cursor: text;
@@ -13,12 +29,7 @@ export const Label = styled('label')<{ required: boolean; variant: 'outlined' | 
     touch-action: manipulation;
     transform: translateY(-50%);
     opacity: 1;
+    z-index: 1;
 
-    ${({ required }) =>
-        required &&
-        css`
-            ::after {
-                content: ' *';
-            }
-        `}
+    ${({ required, variant }) => getStyle(required, variant)}
 `;

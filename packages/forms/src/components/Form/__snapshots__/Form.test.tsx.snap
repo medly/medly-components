@@ -626,6 +626,7 @@ exports[`Form should render properly with initial state 1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c9::after {
@@ -660,6 +661,7 @@ exports[`Form should render properly with initial state 1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c51 {
@@ -867,6 +869,7 @@ exports[`Form should render properly with initial state 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -2941,6 +2944,7 @@ exports[`Form should render properly without initial state 1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c12::after {
@@ -2975,6 +2979,7 @@ exports[`Form should render properly without initial state 1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c51 {
@@ -3182,6 +3187,7 @@ exports[`Form should render properly without initial state 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
