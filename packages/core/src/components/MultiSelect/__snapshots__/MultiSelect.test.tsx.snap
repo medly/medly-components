@@ -61,17 +61,17 @@ exports[`MultiSelect component should render correctly with all the props given 
   color: #546A7F;
 }
 
-.c3 .sc-dlnjPT,
-.c3 .sc-hKFyIo {
+.c3 .sc-AxiKw,
+.c3 .sc-AxhCb {
   color: #546A7F;
 }
 
-.c3 .sc-dlnjPT *,
-.c3 .sc-hKFyIo * {
+.c3 .sc-AxiKw *,
+.c3 .sc-AxhCb * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-bdnylx {
+.c3 ~ .sc-AxjAm {
   color: #546A7F;
 }
 
@@ -102,17 +102,17 @@ exports[`MultiSelect component should render correctly with all the props given 
   color: #b0bcc8;
 }
 
-.c3 .sc-dlnjPT,
-.c3 .sc-hKFyIo {
+.c3 .sc-AxiKw,
+.c3 .sc-AxhCb {
   color: #b0bcc8;
 }
 
-.c3 .sc-dlnjPT *,
-.c3 .sc-hKFyIo * {
+.c3 .sc-AxiKw *,
+.c3 .sc-AxhCb * {
   fill: #b0bcc8;
 }
 
-.c3 ~ .sc-bdnylx {
+.c3 ~ .sc-AxjAm {
   color: #b0bcc8;
 }
 
@@ -170,7 +170,7 @@ exports[`MultiSelect component should render correctly with all the props given 
 }
 
 .c5,
-.c5 ~ .sc-gKAblj {
+.c5 ~ .sc-AxheI {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -202,7 +202,7 @@ exports[`MultiSelect component should render correctly with all the props given 
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-gKAblj {
+.c5:disabled ~ .sc-AxheI {
   cursor: not-allowed;
 }
 
@@ -237,7 +237,7 @@ exports[`MultiSelect component should render correctly with all the props given 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-gKAblj {
+.c5:not(:placeholder-shown) ~ .sc-AxheI {
   opacity: 1;
 }
 
@@ -541,17 +541,17 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   color: #546A7F;
 }
 
-.c3 .sc-dlnjPT,
-.c3 .sc-hKFyIo {
+.c3 .sc-AxiKw,
+.c3 .sc-AxhCb {
   color: #546A7F;
 }
 
-.c3 .sc-dlnjPT *,
-.c3 .sc-hKFyIo * {
+.c3 .sc-AxiKw *,
+.c3 .sc-AxhCb * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-bdnylx {
+.c3 ~ .sc-AxjAm {
   color: #546A7F;
 }
 
@@ -588,17 +588,17 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   color: #126AFA;
 }
 
-.c3:focus-within .sc-dlnjPT,
-.c3:focus-within:hover .sc-dlnjPT,
-.c3:focus-within .sc-hKFyIo,
-.c3:focus-within:hover .sc-hKFyIo {
+.c3:focus-within .sc-AxiKw,
+.c3:focus-within:hover .sc-AxiKw,
+.c3:focus-within .sc-AxhCb,
+.c3:focus-within:hover .sc-AxhCb {
   color: #126AFA;
 }
 
-.c3:focus-within .sc-dlnjPT *,
-.c3:focus-within:hover .sc-dlnjPT *,
-.c3:focus-within .sc-hKFyIo *,
-.c3:focus-within:hover .sc-hKFyIo * {
+.c3:focus-within .sc-AxiKw *,
+.c3:focus-within:hover .sc-AxiKw *,
+.c3:focus-within .sc-AxhCb *,
+.c3:focus-within:hover .sc-AxhCb * {
   fill: #126AFA;
 }
 
@@ -668,7 +668,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 }
 
 .c5,
-.c5 ~ .sc-gKAblj {
+.c5 ~ .sc-AxheI {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -700,7 +700,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-gKAblj {
+.c5:disabled ~ .sc-AxheI {
   cursor: not-allowed;
 }
 
@@ -735,7 +735,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-gKAblj {
+.c5:not(:placeholder-shown) ~ .sc-AxheI {
   opacity: 1;
 }
 
@@ -1093,12 +1093,12 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   padding: 0.5rem 1.3rem;
 }
 
-.c1 .sc-kEqYlL {
+.c1 .sc-fzpans {
   padding: 0 0.3rem 0 0.9rem;
   margin: 0.2rem;
 }
 
-.c1 .sc-kEqYlL .c11 {
+.c1 .sc-fzpans .c11 {
   background-color: transparent;
   padding: 0.2rem;
 }
@@ -1636,12 +1636,12 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   padding: 0.5rem 1.3rem;
 }
 
-.c1 .sc-kEqYlL {
+.c1 .sc-fzpans {
   padding: 0 0.3rem 0 0.9rem;
   margin: 0.2rem;
 }
 
-.c1 .sc-kEqYlL .c11 {
+.c1 .sc-fzpans .c11 {
   background-color: transparent;
   padding: 0.2rem;
 }

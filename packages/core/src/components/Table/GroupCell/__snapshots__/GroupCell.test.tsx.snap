@@ -37,18 +37,7 @@ exports[`GroupCell should not render hidden prop is given 1`] = `
 `;
 
 exports[`GroupCell should render GroupCellTitle properly 1`] = `
-.c0 {
-  margin: 0;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-}
-
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -61,7 +50,15 @@ exports[`GroupCell should render GroupCellTitle properly 1`] = `
   text-align: initial;
 }
 
-.c1 {
+.c0 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   position: relative;
   text-align: center;
   padding: 0.9rem 1.6rem 1rem;
@@ -72,7 +69,7 @@ exports[`GroupCell should render GroupCellTitle properly 1`] = `
   color: #435465;
 }
 
-.c1::after {
+.c0::after {
   content: '';
   position: absolute;
   pointer-events: none;
@@ -88,10 +85,10 @@ exports[`GroupCell should render GroupCellTitle properly 1`] = `
 
 <div>
   <span
-    class="c0 c1"
+    class="c0"
   >
     <span
-      class="c2"
+      class="c1"
     >
       Dummy
     </span>

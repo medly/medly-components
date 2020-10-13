@@ -534,7 +534,7 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   background-color: #ffffff;
 }
 
-.c0 .sc-hKFyIo {
+.c0 .sc-AxhCb {
   box-shadow: none;
   border: none;
   padding: 0;
@@ -550,32 +550,32 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   border-radius: 0 0 2.4rem 2.4rem;
 }
 
-.c0 .sc-hKFyIo::before {
+.c0 .sc-AxhCb::before {
   display: none;
 }
 
-.c0 .sc-hKFyIo svg {
+.c0 .sc-AxhCb svg {
   display: none;
 }
 
-.c0 .sc-hKFyIo strong {
+.c0 .sc-AxhCb strong {
   font-weight: normal;
 }
 
-.c0 .sc-hKFyIo .sc-dlnjPT:hover {
+.c0 .sc-AxhCb .sc-AxiKw:hover {
   background-color: #F7F8F9;
 }
 
-.c0 .sc-hKFyIo::before {
+.c0 .sc-AxhCb::before {
   width: 82%;
 }
 
-.c0 .sc-hKFyIo li {
+.c0 .sc-AxhCb li {
   padding: 0 2.4rem;
 }
 
-.c0 .sc-hKFyIo li span,
-.c0 .sc-hKFyIo li strong {
+.c0 .sc-AxhCb li span,
+.c0 .sc-AxhCb li strong {
   font-size: 1.6rem;
   line-height: 2.6rem;
 }
@@ -764,7 +764,7 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   background-color: #ffffff;
 }
 
-.c0 .sc-hKFyIo {
+.c0 .sc-AxhCb {
   box-shadow: none;
   border: none;
   padding: 0;
@@ -780,32 +780,32 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   border-radius: 0 0 2rem 2rem;
 }
 
-.c0 .sc-hKFyIo::before {
+.c0 .sc-AxhCb::before {
   display: none;
 }
 
-.c0 .sc-hKFyIo svg {
+.c0 .sc-AxhCb svg {
   display: none;
 }
 
-.c0 .sc-hKFyIo strong {
+.c0 .sc-AxhCb strong {
   font-weight: normal;
 }
 
-.c0 .sc-hKFyIo .sc-dlnjPT:hover {
+.c0 .sc-AxhCb .sc-AxiKw:hover {
   background-color: #F7F8F9;
 }
 
-.c0 .sc-hKFyIo::before {
+.c0 .sc-AxhCb::before {
   width: 82%;
 }
 
-.c0 .sc-hKFyIo li {
+.c0 .sc-AxhCb li {
   padding: 0 2rem;
 }
 
-.c0 .sc-hKFyIo li span,
-.c0 .sc-hKFyIo li strong {
+.c0 .sc-AxhCb li span,
+.c0 .sc-AxhCb li strong {
   font-size: 1.4rem;
   line-height: 2.2rem;
 }

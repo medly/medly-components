@@ -77,7 +77,7 @@ exports[`Avatar component should render image avatar properly 1`] = `
   user-select: none;
 }
 
-.c0 .sc-bdnylx {
+.c0 .sc-AxjAm {
   line-height: 4.8rem;
   font-size: 2rem;
   font-weight: 400;
@@ -98,7 +98,7 @@ exports[`Avatar component should render image avatar properly 1`] = `
   box-shadow: 0 0.4rem 0.8rem rgba(96,120,144,0.35);
 }
 
-.c0:hover .sc-bdnylx {
+.c0:hover .sc-AxjAm {
   color: #ffffff;
 }
 

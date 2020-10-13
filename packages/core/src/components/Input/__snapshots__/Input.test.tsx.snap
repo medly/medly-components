@@ -14,7 +14,7 @@ exports[`Input component should render correctly when fullWidth & required props
   cursor: default;
 }
 
-.c7 {
+.c5 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -25,14 +25,6 @@ exports[`Input component should render correctly when fullWidth & required props
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
-}
-
-.c4 {
-  grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: 0px;
 }
 
 .c2 {
@@ -46,7 +38,7 @@ exports[`Input component should render correctly when fullWidth & required props
   user-select: none;
 }
 
-.c8 {
+.c6 {
   grid-area: description;
   margin: 5px 0 0 2px;
   color: #012040;
@@ -63,7 +55,7 @@ exports[`Input component should render correctly when fullWidth & required props
   grid-template-areas: 'label field' 'random description';
 }
 
-.c0 .c3 {
+.c0 .sc-AxiKw {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -77,7 +69,12 @@ exports[`Input component should render correctly when fullWidth & required props
   flex-direction: row;
 }
 
-.c5 {
+.c3 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -95,7 +92,7 @@ exports[`Input component should render correctly when fullWidth & required props
   height: max-content;
 }
 
-.c5.c5.c5 {
+.c3.c3.c3 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -105,11 +102,11 @@ exports[`Input component should render correctly when fullWidth & required props
   align-items: center;
 }
 
-.c5:focus-within {
+.c3:focus-within {
   border-color: #012040;
 }
 
-.c5 > * {
+.c3 > * {
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -122,7 +119,7 @@ exports[`Input component should render correctly when fullWidth & required props
   color: #435465;
 }
 
-.c6 {
+.c4 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -133,23 +130,23 @@ exports[`Input component should render correctly when fullWidth & required props
   background-color: #ffffff;
 }
 
-.c6::-webkit-input-placeholder {
+.c4::-webkit-input-placeholder {
   color: #98A7B7;
 }
 
-.c6::-moz-placeholder {
+.c4::-moz-placeholder {
   color: #98A7B7;
 }
 
-.c6:-ms-input-placeholder {
+.c4:-ms-input-placeholder {
   color: #98A7B7;
 }
 
-.c6::placeholder {
+.c4::placeholder {
   color: #98A7B7;
 }
 
-.c6::-webkit-file-upload-button {
+.c4::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -165,17 +162,17 @@ exports[`Input component should render correctly when fullWidth & required props
       Email Address
     </label>
     <div
-      class="c3 c4 c5"
+      class="sc-AxiKw c3"
     >
       <input
-        class="c6"
+        class="c4"
         id="medly-input"
         placeholder="Enter Email Address"
         type="email"
       />
     </div>
     <span
-      class="c7 c8"
+      class="c5 c6"
     >
       We will never share your email with anyone
     </span>
@@ -184,14 +181,6 @@ exports[`Input component should render correctly when fullWidth & required props
 `;
 
 exports[`Input component should render correctly when it is disabled 1`] = `
-.c2 {
-  grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: 0px;
-}
-
 .c0 {
   margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
@@ -204,7 +193,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   grid-template-areas: 'field' 'description';
 }
 
-.c0 .c1 {
+.c0 .sc-AxiKw {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -218,7 +207,12 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   flex-direction: column;
 }
 
-.c3 {
+.c1 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -236,7 +230,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   height: max-content;
 }
 
-.c3.c3.c3 {
+.c1.c1.c1 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -246,11 +240,11 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   align-items: center;
 }
 
-.c3:focus-within {
+.c1:focus-within {
   border-color: #012040;
 }
 
-.c3 > * {
+.c1 > * {
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -263,7 +257,7 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   color: #435465;
 }
 
-.c4 {
+.c2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -274,23 +268,23 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   background-color: #C7D0D8;
 }
 
-.c4::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder {
   color: #98A7B7;
 }
 
-.c4::-moz-placeholder {
+.c2::-moz-placeholder {
   color: #98A7B7;
 }
 
-.c4:-ms-input-placeholder {
+.c2:-ms-input-placeholder {
   color: #98A7B7;
 }
 
-.c4::placeholder {
+.c2::placeholder {
   color: #98A7B7;
 }
 
-.c4::-webkit-file-upload-button {
+.c2::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -301,10 +295,10 @@ exports[`Input component should render correctly when it is disabled 1`] = `
   >
     
     <div
-      class="c1 c2 c3"
+      class="sc-AxiKw c1"
     >
       <input
-        class="c4"
+        class="c2"
         disabled=""
         id="email-input"
         placeholder="Enter Email Address"
@@ -317,14 +311,6 @@ exports[`Input component should render correctly when it is disabled 1`] = `
 `;
 
 exports[`Input component should render correctly when label and description are not given 1`] = `
-.c2 {
-  grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: 0px;
-}
-
 .c0 {
   margin: 0.8rem 0.8rem 0.8rem 0;
   display: inline-grid;
@@ -337,7 +323,7 @@ exports[`Input component should render correctly when label and description are 
   grid-template-areas: 'field' 'description';
 }
 
-.c0 .c1 {
+.c0 .sc-AxiKw {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -351,7 +337,12 @@ exports[`Input component should render correctly when label and description are 
   flex-direction: column;
 }
 
-.c3 {
+.c1 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -369,7 +360,7 @@ exports[`Input component should render correctly when label and description are 
   height: max-content;
 }
 
-.c3.c3.c3 {
+.c1.c1.c1 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -379,11 +370,11 @@ exports[`Input component should render correctly when label and description are 
   align-items: center;
 }
 
-.c3:focus-within {
+.c1:focus-within {
   border-color: #012040;
 }
 
-.c3 > * {
+.c1 > * {
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -396,7 +387,7 @@ exports[`Input component should render correctly when label and description are 
   color: #435465;
 }
 
-.c4 {
+.c2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -407,23 +398,23 @@ exports[`Input component should render correctly when label and description are 
   background-color: #ffffff;
 }
 
-.c4::-webkit-input-placeholder {
+.c2::-webkit-input-placeholder {
   color: #98A7B7;
 }
 
-.c4::-moz-placeholder {
+.c2::-moz-placeholder {
   color: #98A7B7;
 }
 
-.c4:-ms-input-placeholder {
+.c2:-ms-input-placeholder {
   color: #98A7B7;
 }
 
-.c4::placeholder {
+.c2::placeholder {
   color: #98A7B7;
 }
 
-.c4::-webkit-file-upload-button {
+.c2::-webkit-file-upload-button {
   visibility: hidden;
 }
 
@@ -434,10 +425,10 @@ exports[`Input component should render correctly when label and description are 
   >
     
     <div
-      class="c1 c2 c3"
+      class="sc-AxiKw c1"
     >
       <input
-        class="c4"
+        class="c2"
         id="email-input"
         placeholder="Enter Email Address"
         type="email"
@@ -467,7 +458,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   content: ' *';
 }
 
-.c9 {
+.c7 {
   margin: 0;
   color: grey;
   font-size: 1.4rem;
@@ -478,14 +469,6 @@ exports[`Input component should render correctly with all the props given 1`] = 
   letter-spacing: 0rem;
   line-height: 2.2rem;
   text-align: initial;
-}
-
-.c4 {
-  grid-area: field;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-left: 0px;
 }
 
 .c2 {
@@ -499,7 +482,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   user-select: none;
 }
 
-.c10 {
+.c8 {
   grid-area: description;
   margin: 5px 0 0 2px;
   color: grey;
@@ -515,7 +498,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   grid-template-areas: 'label' 'field' 'description';
 }
 
-.c0 .c3 {
+.c0 .sc-AxiKw {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -529,7 +512,12 @@ exports[`Input component should render correctly with all the props given 1`] = 
   flex-direction: column;
 }
 
-.c5 {
+.c3 {
+  grid-area: field;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -545,7 +533,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   height: max-content;
 }
 
-.c5.c5.c5 {
+.c3.c3.c3 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -555,11 +543,11 @@ exports[`Input component should render correctly with all the props given 1`] = 
   align-items: center;
 }
 
-.c5:focus-within {
+.c3:focus-within {
   border-color: #012040;
 }
 
-.c5 > * {
+.c3 > * {
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -572,7 +560,7 @@ exports[`Input component should render correctly with all the props given 1`] = 
   color: #435465;
 }
 
-.c7 {
+.c5 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -583,31 +571,31 @@ exports[`Input component should render correctly with all the props given 1`] = 
   background-color: #ffffff;
 }
 
-.c7::-webkit-input-placeholder {
+.c5::-webkit-input-placeholder {
   color: #98A7B7;
 }
 
-.c7::-moz-placeholder {
+.c5::-moz-placeholder {
   color: #98A7B7;
 }
 
-.c7:-ms-input-placeholder {
+.c5:-ms-input-placeholder {
   color: #98A7B7;
 }
 
-.c7::placeholder {
+.c5::placeholder {
   color: #98A7B7;
 }
 
-.c7::-webkit-file-upload-button {
+.c5::-webkit-file-upload-button {
   visibility: hidden;
 }
 
-.c6 {
+.c4 {
   background-color: #eff2f4;
 }
 
-.c8 {
+.c6 {
   background-color: #eff2f4;
 }
 
@@ -624,28 +612,28 @@ exports[`Input component should render correctly with all the props given 1`] = 
       Email Address
     </label>
     <div
-      class="c3 c4 c5"
+      class="sc-AxiKw c3"
     >
       <span
-        class="c6"
+        class="c4"
       >
         www.
       </span>
       <input
-        class="c7"
+        class="c5"
         id="email-input"
         placeholder="Enter Email Address"
         required=""
         type="email"
       />
       <span
-        class="c8"
+        class="c6"
       >
         .com
       </span>
     </div>
     <span
-      class="c9 c10"
+      class="c7 c8"
     >
       We will never share your email with anyone
     </span>

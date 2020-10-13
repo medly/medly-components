@@ -100,7 +100,7 @@ exports[`CardTable Body should render card table body properly 1`] = `
 `;
 
 exports[`CardTable Body should render no result row when there is no data 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -125,21 +125,6 @@ exports[`CardTable Body should render no result row when there is no data 1`] = 
   transition: box-shadow 100ms ease-out;
   border: 0.1rem solid #ffffff;
   box-shadow: 0 0.2rem 0.8rem rgba(176,188,200,0.2);
-}
-
-.c0:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
-}
-
-.c0:nth-child(odd) {
-  background: #ffffff;
-}
-
-.c0:nth-child(even) {
-  background: #ffffff;
-}
-
-.c1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -155,12 +140,24 @@ exports[`CardTable Body should render no result row when there is no data 1`] = 
   padding: 1.5rem 0;
 }
 
+.c0:hover {
+  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
+}
+
+.c0:nth-child(odd) {
+  background: #ffffff;
+}
+
+.c0:nth-child(even) {
+  background: #ffffff;
+}
+
 <div>
   <tr
-    class="c0 c1"
+    class="sc-AxiKw c0"
   >
     <strong
-      class="c2"
+      class="c1"
     >
        No Result 
     </strong>
