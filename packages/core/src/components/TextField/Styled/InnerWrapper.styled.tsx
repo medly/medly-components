@@ -144,9 +144,16 @@ const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css
 `;
 
 const getHeight = ({ size, theme, minRows, multiline }: InnerWrapperProps) => {
+    const lineHeight = 2;
+    const smallMultilinePadding = 1.1 * 2;
+    const medMultilinePadding = 1.1 * 2 + 1.5;
     const baseHeight = theme.textField.height[size];
     const baseHeightNumber = parseFloat(baseHeight.replace(/[^\d.-]/g, ''));
-    return multiline ? 2 * minRows + 2.2 : baseHeightNumber;
+    return multiline && size === 'S'
+        ? lineHeight * minRows + smallMultilinePadding
+        : multiline && size === 'M'
+        ? lineHeight * minRows + medMultilinePadding
+        : baseHeightNumber;
 };
 
 const getPadding = ({ size, multiline }: InnerWrapperProps) => {
@@ -187,8 +194,3 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
 InnerWrapper.defaultProps = {
     size: 'M'
 };
-
-// height: ${getHeight}rem;
-// padding: ${({ size, multiline }: InnerWrapperProps) => (multiline ? '1.1rem 1.2rem' : size === 'S' ? '1.2rem' : '1.6rem')};
-
-// height: ${({ size, theme }) => theme.textField.height[size]};
