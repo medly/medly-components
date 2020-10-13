@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.21.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.20.0...@medly-components/theme@1.21.0) (2020-10-13)
+
+
+### Features
+
+* add new input variant to theme, add optional text and remove shadow for new variant ([980fd03](https://github.com/medly/medly-components/commit/980fd03965b423672e0512c6b1ff383954e873d8))
+* change name of new variant from rounded to outlinedRounded ([d04f844](https://github.com/medly/medly-components/commit/d04f844c2b55c94f146fdc3dd5e553160ffb16e3))
+* change new variant name from outlinedRounded to fusion ([1db2ad2](https://github.com/medly/medly-components/commit/1db2ad29a9b31bea061165a527706afd6c62535a))
+* fix failing tests, update snapshots ([01452e3](https://github.com/medly/medly-components/commit/01452e373306bdad78e2c3c2644cc8c1ea161bfa))
+* reorganize inner wrapper styles, fix error style bug on filled variant ([9beac01](https://github.com/medly/medly-components/commit/9beac0121086b5ca1b151b6cfbedd1440904caf6))
+
+
+
+
+
 # [1.20.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.19.0...@medly-components/theme@1.20.0) (2020-10-08)
 
 
