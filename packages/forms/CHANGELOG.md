@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.11.1...@medly-components/forms@1.11.2) (2020-10-08)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.11.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.11.0...@medly-components/forms@1.11.1) (2020-10-08)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.11.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.10.9...@medly-components/forms@1.11.0) (2020-10-01)
+
+
+### Features
+
+* move padding and textVariant to theme in button component ([dac8672](https://github.com/medly/medly-components/commit/dac86720945cca51b35f1815fb0a664f69dcc447))
+
+
+
+
+
+## [1.10.9](https://github.com/medly/medly-components/compare/@medly-components/forms@1.10.8...@medly-components/forms@1.10.9) (2020-09-28)
+
+
+### Bug Fixes
+
+* **forms:** fixed Failing snapshot for Form component with date picker icon id ([c72519b](https://github.com/medly/medly-components/commit/c72519bf255048d3aef0665027e0b7ffed432762))
+
+
+
+
+
 ## [1.10.8](https://github.com/medly/medly-components/compare/@medly-components/forms@1.10.7...@medly-components/forms@1.10.8) (2020-09-24)
 
 **Note:** Version bump only for package @medly-components/forms

@@ -46,7 +46,14 @@
         "test:watch": "run-s \"typecheck -- -w\" \"test:jest -- --watch\"",
         "test": "run-s typecheck test:jest",
         "typecheck": "tsc -p tsconfig.json",
-        "watch": "lerna exec --no-sort -- rollup -w -c=../../rollup.config.js"
+        "watch": "lerna exec --no-sort -- rollup -w -c=../../rollup.config.js",
+        "watch:core": "lerna exec --scope @medly-components/core -- rollup -w -c=../../rollup.config.js",
+        "watch:layout": "lerna exec --scope @medly-components/layout -- rollup -w -c=../../rollup.config.js",
+        "watch:utils": "lerna exec --scope @medly-components/utils -- rollup -w -c=../../rollup.config.js",
+        "watch:loaders": "lerna exec --scope @medly-components/loaders -- rollup -w -c=../../rollup.config.js",
+        "watch:icons": "lerna exec --scope @medly-components/icons -- rollup -w -c=../../rollup.config.js",
+        "watch:forms": "lerna exec --scope @medly-components/forms -- rollup -w -c=../../rollup.config.js",
+        "watch:theme": "lerna exec --scope @medly-components/theme -- rollup -w -c=../../rollup.config.js"
     },
     "repository": {
         "type": "git",

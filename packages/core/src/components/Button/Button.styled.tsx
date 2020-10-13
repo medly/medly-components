@@ -5,26 +5,11 @@ import Text from '../Text';
 import { flatButton, outlinedButton, solidButton } from './styles';
 import { Props } from './types';
 
-const getPaddings = ({ size, edges }: Props & { isHovered?: boolean }) => {
-    const paddings = {
-        S: {
-            top: '0.8rem',
-            right: '2.4rem',
-            bottom: '1rem',
-            left: '2.4rem'
-        },
-        M: {
-            top: '1rem',
-            right: '2.4rem',
-            bottom: '1.2rem',
-            left: '2.4rem'
-        }
-    };
-
+const getPaddings = ({ size, edges, theme }: Props & { isHovered?: boolean }) => {
     if (edges === 'circle') {
         return size === 'S' ? `1.4rem` : `1.6rem`;
     } else {
-        return `${paddings[size].top} ${paddings[size].right} ${paddings[size].bottom} ${paddings[size].left}`;
+        return theme.button.padding[size];
     }
 };
 

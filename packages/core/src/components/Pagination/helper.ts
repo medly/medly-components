@@ -1,31 +1,38 @@
-export const paginator = (totalItems: number, activePage = 1, itemsPerPage = 20, pageRangeDisplayed = 5) => {
+export const addPageItems = (from: number, to: number, result: (number | '...')[]) => {
+    for (let i = from; i <= to; i++) result.push(i);
+    return result;
+};
+
+export const paginator = (totalItems: number, activePage = 1, itemsPerPage = 20) => {
     const totalPages = Math.ceil(totalItems / itemsPerPage);
     const currentPage = activePage < 1 ? 1 : activePage > totalPages ? totalPages : activePage;
+    let result: (number | '...')[] = [];
 
-    let startPage: number, endPage: number;
-
-    if (totalPages <= pageRangeDisplayed) {
-        startPage = 1;
-        endPage = totalPages;
-    } else {
-        const maxPagesBeforeCurrentPage = Math.floor(pageRangeDisplayed / 2);
-        const maxPagesAfterCurrentPage = Math.ceil(pageRangeDisplayed / 2) - 1;
-        if (currentPage <= maxPagesBeforeCurrentPage) {
-            startPage = 1;
-            endPage = pageRangeDisplayed;
-        } else if (currentPage + maxPagesAfterCurrentPage >= totalPages) {
-            startPage = totalPages - pageRangeDisplayed + 1;
-            endPage = totalPages;
+    /* If totalPages is less than 8 then add all the page numbers*/
+    if (totalPages < 8) {
+        result = addPageItems(1, totalPages, result);
+    } else if (currentPage === 1 || currentPage === totalPages) {
+        /* In case of first and last page, six items should be displayed */
+        if (currentPage === 1) {
+            result.push(1, 2, 3, '...', totalPages);
         } else {
-            startPage = currentPage - maxPagesBeforeCurrentPage;
-            endPage = currentPage + maxPagesAfterCurrentPage;
+            result.push(1, '...', totalPages - 2, totalPages - 1, totalPages);
+        }
+    } else {
+        /* Left side of active Page */
+        if (currentPage > 4) {
+            result.push(1, '...', currentPage - 1);
+        } else {
+            addPageItems(1, currentPage - 1, result);
+        }
+
+        /* Right side of active Page */
+        if (totalPages - currentPage >= 4) {
+            result.push(currentPage, currentPage + 1, '...', totalPages);
+        } else {
+            addPageItems(currentPage, totalPages, result);
         }
     }
 
-    return {
-        currentPage,
-        startPage,
-        endPage,
-        totalPages
-    };
+    return { currentPage, linkItems: result, totalPages };
 };

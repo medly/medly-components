@@ -115,7 +115,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
 
         const suffixEl = () => (
             <DateIcon variant={restProps.variant} isErrorPresent={isErrorPresent} isActive={active} disabled={disabled} size={size}>
-                <DateRangeIcon onClick={onIconClick} size={size} />
+                <DateRangeIcon id={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
             </DateIcon>
         );
 

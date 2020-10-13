@@ -63,7 +63,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                     setIsTextPresent(!!e.target.value);
                     props.onChange && props.onChange(e);
                 },
-                [mask]
+                [mask, props.onChange]
             );
 
         useEffect(() => {

@@ -14,6 +14,7 @@ export * from './label/types';
 export * from './link/types';
 export * from './modal/types';
 export * from './multiSelect/types';
+export * from './pagination/types';
 export * from './radio/types';
 export * from './searchBox/types';
 export * from './singleSelect/types';

@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.1](https://github.com/medly/medly-components/compare/@medly-components/layout@1.12.0...@medly-components/layout@1.12.1) (2020-10-08)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+# [1.12.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.11.9...@medly-components/layout@1.12.0) (2020-10-08)
+
+
+### Features
+
+* **core:** update pagination component as per new design ([cda1364](https://github.com/medly/medly-components/commit/cda1364a82cc11c0f6ecd3b9be9cef39ea530f0e))
+
+
+
+
+
+## [1.11.9](https://github.com/medly/medly-components/compare/@medly-components/layout@1.11.8...@medly-components/layout@1.11.9) (2020-10-01)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.11.8](https://github.com/medly/medly-components/compare/@medly-components/layout@1.11.7...@medly-components/layout@1.11.8) (2020-09-28)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 ## [1.11.7](https://github.com/medly/medly-components/compare/@medly-components/layout@1.11.6...@medly-components/layout@1.11.7) (2020-09-24)
 
 

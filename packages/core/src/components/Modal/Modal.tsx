@@ -1,5 +1,5 @@
 import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
-import React, { FC, useEffect, useReducer } from 'react';
+import React, { FC, useCallback, useEffect, useReducer } from 'react';
 import Actions from './Actions';
 import CloseIcon from './CloseIcon';
 import Content from './Content';
@@ -11,11 +11,15 @@ import { ModalStaticProps, Props } from './types';
 
 export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
     React.forwardRef((props, ref) => {
-        const { open, onCloseModal, children, minWidth, minHeight, ...restProps } = props,
+        const { open, onCloseModal, children, minWidth, shouldCloseOnOutsideClick, minHeight, ...restProps } = props,
             id = restProps.id || 'medly-modal',
             isEscPressed = useKeyPress('Escape'),
             modalRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
             [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false });
+
+        const handleBackgroundClick = useCallback(() => {
+            shouldCloseOnOutsideClick && onCloseModal();
+        }, [shouldCloseOnOutsideClick, onCloseModal]);
 
         useEffect(() => {
             open && isEscPressed && onCloseModal();
@@ -23,7 +27,7 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
 
         return (
             open && (
-                <ModalBackgroundStyled {...{ ...restProps, id }} onClick={onCloseModal}>
+                <ModalBackgroundStyled {...{ ...restProps, id }} onClick={handleBackgroundClick}>
                     <Popup ref={modalRef} id={`${id}-popup`} {...{ minWidth, minHeight }}>
                         <CloseIcon id={`${id}-close-button`} onClick={onCloseModal} />
                         {React.Children.map(children, (child: any) =>
@@ -41,7 +45,8 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
 );
 
 Modal.defaultProps = {
-    open: false
+    open: false,
+    shouldCloseOnOutsideClick: false
 };
 Modal.displayName = 'Modal';
 Modal.Style = ModalBackgroundStyled;
