@@ -68,6 +68,37 @@ const textField: TextFieldTheme = {
             labelColor: colors.red[500],
             helperTextColor: colors.red[500]
         }
+    },
+    fusion: {
+        default: {
+            borderColor: colors.grey[400],
+            bgColor: colors.grey[50],
+            textColor: colors.black,
+            labelColor: colors.grey[700],
+            helperTextColor: colors.grey[700]
+        },
+        hover: {
+            bgColor: colors.grey[50],
+            borderColor: colors.grey[600]
+        },
+        disabled: { bgColor: colors.white, labelColor: colors.grey[400], textColor: colors.grey[700], borderColor: colors.grey[300] },
+        active: {
+            placeholderColor: colors.grey[300],
+            bgColor: colors.white,
+            borderColor: colors.blue[500],
+            labelColor: colors.blue[500]
+        },
+        error: {
+            caretColor: colors.black,
+            placeholderColor: colors.grey[300],
+            bgColor: '#FCF2F2',
+            cursorColor: colors.red[500],
+            borderColor: colors.red[500],
+            labelColor: colors.red[500],
+            helperTextColor: colors.red[500],
+            defaultTextColor: colors.red[500],
+            activeTextColor: colors.black
+        }
     }
 };
 

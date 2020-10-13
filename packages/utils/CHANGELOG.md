@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.2](https://github.com/medly/medly-components/compare/@medly-components/utils@1.5.1...@medly-components/utils@1.5.2) (2020-10-13)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
 ## [1.5.1](https://github.com/medly/medly-components/compare/@medly-components/utils@1.5.0...@medly-components/utils@1.5.1) (2020-10-08)
 
 **Note:** Version bump only for package @medly-components/utils
