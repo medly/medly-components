@@ -99,9 +99,8 @@ const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperPro
             return 2 * minRows + 2.2;
         }
         if (variant === 'fusion') {
-            return 2 * minRows + 3.5;
+            return 2 * minRows + 3.4;
         } else {
-            console.log('multiline & M & variant not fusion');
             return 2 * minRows + 5;
         }
     }

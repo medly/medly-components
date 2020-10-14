@@ -35,6 +35,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
             isPrefixPresent = useMemo(() => !!Prefix, [Prefix]),
             isSuffixPresent = useMemo(() => !!Suffix, [Suffix]),
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]),
+            [isTextPresent, setIsTextPresent] = useState(!!value || !!restProps.defaultValue),
             [maskLabel, setMaskLabel] = useState(mask);
 
         const validate = useCallback(
@@ -61,9 +62,10 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                         e.target.value = maskedValue;
                         setMaskLabel(`${maskedValue}${mask.substr(maskedValue.length)}`);
                     }
+                    setIsTextPresent(!!e.target.value);
                     props.onChange && props.onChange(e);
                 },
-                [mask]
+                [mask, props.onChange]
             );
 
         useEffect(() => {
@@ -79,6 +81,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                     disabled={disabled}
                     isErrorPresent={isErrorPresent}
                     isLabelPresent={isLabelPresent}
+                    isTextPresent={isTextPresent}
                     minRows={minRows}
                     multiline={multiline}
                 >
@@ -100,6 +103,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                             isSuffixPresent={isSuffixPresent}
                             isLabelPresent={isLabelPresent}
                             errorText={errorText || builtInErrorMessage}
+                            variant={props.variant}
                             as={multiline ? 'textarea' : 'input'}
                             multiline={multiline}
                             {...{ ...restProps, size, onBlur, onInvalid, onChange }}
