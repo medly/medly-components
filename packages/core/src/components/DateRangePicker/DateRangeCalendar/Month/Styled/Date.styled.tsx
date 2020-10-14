@@ -5,18 +5,15 @@ import { ExtendedDateProps } from '../types';
 const monthStartAndEndDateAfterStyle = css<ExtendedDateProps>`
         &::after {
             left: 0.4rem;
-            width: 3.2rem;
-            border-radius: ${({ isMonthFirstDate, isMonthLastDate }) => !isMonthFirstDate && !isMonthLastDate && '50%'};
+            width: ${({ isWeekFirstDate, isWeekLastDate, isMonthFirstDate, isMonthLastDate }) => isWeekFirstDate && !isWeekLastDate && isMonthFirstDate && !isMonthLastDate ? '5.2rem' : '3.2rem'};
+            border-top-right-radius: ${({ isWeekLastDate, isMonthLastDate }) => !isMonthLastDate && isWeekLastDate ? '50%' : 0};
+            border-bottom-right-radius: ${({ isWeekLastDate, isMonthLastDate }) => !isMonthLastDate && isWeekLastDate ? '50%' : 0};
+            border-top-left-radius: ${({ isWeekFirstDate, isMonthFirstDate }) => !isMonthFirstDate && isWeekFirstDate ? '50%' : 0};
+            border-bottom-left-radius: ${({ isWeekFirstDate, isMonthFirstDate }) => !isMonthFirstDate && isWeekFirstDate ? '50%' : 0};
         }
     `,
     monthStartAndEndDateBeforeStyle = css<ExtendedDateProps>`
         ${monthStartAndEndDateAfterStyle}
-        &::after {
-            border-top-right-radius: ${({ isMonthFirstDate }) => isMonthFirstDate && '50%'};
-            border-bottom-right-radius: ${({ isMonthFirstDate }) => isMonthFirstDate && '50%'};
-            border-top-left-radius: ${({ isMonthLastDate }) => isMonthLastDate && '50%'};
-            border-bottom-left-radius: ${({ isMonthLastDate }) => isMonthLastDate && '50%'};
-        }
         &::before {
             opacity: 1;
             width: 2.4rem;
@@ -30,8 +27,24 @@ const monthStartAndEndDateAfterStyle = css<ExtendedDateProps>`
             transform: ${({ isMonthLastDate }) => isMonthLastDate && 'rotate(-180deg)'};
         }
     `,
-    dateAfterAndBeforeStyle= css<ExtendedDateProps>`
-        &::after,
+    weekStartAndEndDateStyle = css<ExtendedDateProps>`
+        ${monthStartAndEndDateAfterStyle};
+        &::before {
+            width: ${({ isMonthFirstDate, isMonthLastDate }) => !isMonthFirstDate && !isMonthLastDate && '3.4rem'};
+            right: ${({ isMonthFirstDate, isMonthLastDate, isWeekLastDate }) => !isMonthFirstDate && !isMonthLastDate &&  isWeekLastDate && '2.2rem'};
+        }
+    `;
+
+export const DateContainer = styled.div<ExtendedDateProps>`
+    text-align: center;
+    margin-bottom: 0.4rem;
+    padding: 0.4rem;
+    position: relative;
+    cursor: ${({ disabled, isInActiveMonth }) => (!isInActiveMonth ? 'default' : disabled ? 'not-allowed' : 'pointer')};
+    opacity: ${({ isInActiveMonth }) => !isInActiveMonth && 0};
+    pointer-events: ${({ isInActiveMonth }) => !isInActiveMonth && 'none'};
+
+    &::after,
         &::before {
             position: absolute;
             content: '';
@@ -48,34 +61,16 @@ const monthStartAndEndDateAfterStyle = css<ExtendedDateProps>`
             width: 7.2rem;
             left: unset;
         }
-    `;
 
-export const DateContainer = styled.div<ExtendedDateProps>`
-    text-align: center;
-    margin-bottom: 0.4rem;
-    padding: 0.4rem;
-    position: relative;
-    cursor: ${({ disabled, isInActiveMonth }) => (!isInActiveMonth ? 'default' : disabled ? 'not-allowed' : 'pointer')};
-    opacity: ${({ isInActiveMonth }) => !isInActiveMonth && 0};
-    pointer-events: ${({ isInActiveMonth }) => !isInActiveMonth && 'none'};
-
-    ${dateAfterAndBeforeStyle};
     ${({ isMonthFirstDate, isMonthLastDate, isInDateRange, isInDateRangeHover }) =>
         (isMonthFirstDate || isMonthLastDate) && (isInDateRange || isInDateRangeHover) && monthStartAndEndDateBeforeStyle};
-    &:nth-child(7n + 1),
-    &:nth-child(7n) {
-        ${monthStartAndEndDateAfterStyle}
-        &::before {
-            width: ${({ isMonthFirstDate, isMonthLastDate }) => !isMonthFirstDate && !isMonthLastDate && '3.4rem'};
-        }
-    }
-    &:nth-child(7n)::before {
-        right: ${({ isMonthFirstDate, isMonthLastDate }) => !isMonthFirstDate && !isMonthLastDate && '2.2rem'};
-    }
+    
+    ${({ isWeekFirstDate, isWeekLastDate }) =>  (isWeekFirstDate || isWeekLastDate) && weekStartAndEndDateStyle};
+    
 
     > button {
         background-color: ${({ theme, isSelected }) => (isSelected ? theme.datePicker.selectedDateBgColor : 'transparent')};
-        border-color: ${({ theme, isCurrentDate, isSelected }) => !isSelected && isCurrentDate && theme.datePicker.currentDateBorderColor};
+        border-color: ${({ theme, isCurrentDate, isSelected, isInDateRange, isInDateRangeHover }) => !isSelected && !(isInDateRange || isInDateRangeHover) && isCurrentDate && theme.datePicker.currentDateBorderColor};
         > ${Text.Style} {
             padding: 0;
             margin: 0;

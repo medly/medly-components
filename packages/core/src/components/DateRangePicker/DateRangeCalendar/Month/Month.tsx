@@ -1,3 +1,5 @@
+import endOfWeek from 'date-fns/endOfWeek';
+import startOfWeek from 'date-fns/startOfWeek';
 import React, { useCallback } from 'react';
 import * as CalendarStyled from '../../../Calendar/Calendar.styled';
 import { LONG_CALENDAR_MONTHS } from '../../../Calendar/constants';
@@ -6,6 +8,7 @@ import WeekDays from '../../../Calendar/WeekDays';
 import Text from '../../../Text';
 import * as Styled from './Styled';
 import { Props } from './types';
+
 
 export const Month: React.FC<Props> = React.memo(
     ({
@@ -45,9 +48,12 @@ export const Month: React.FC<Props> = React.memo(
                             isCurrentDate = isSameDay(_date, today),
                             isMonthFirstDate = new Date(year, month, 1).getDate() === _date.getDate(),
                             isMonthLastDate = new Date(year, month + 1, 0).getDate() === _date.getDate(),
+                            isWeekFirstDate = isSameDay(_date, startOfWeek(_date)),
+                            isWeekLastDate = isSameDay(_date, endOfWeek(_date)),
                             isInRangeAfterDateSelection =
                                 (startDate && !endDate && startDate < _date) || (!startDate && endDate && endDate > _date),
                             disabled = _date > maxSelectableDate || _date < minSelectableDate;
+                            
                         return (
                             <Styled.DateContainer
                                 key={index}
@@ -64,11 +70,13 @@ export const Month: React.FC<Props> = React.memo(
                                 isInRangeAfterDateSelection={isInRangeAfterDateSelection}
                                 isMonthFirstDate={isMonthFirstDate}
                                 isMonthLastDate={isMonthLastDate}
+                                isWeekFirstDate={isWeekFirstDate}
+                                isWeekLastDate={isWeekLastDate}
                                 onClick={handleDateChange(_date)}
                                 onMouseOver={handleMouseOver(_date)}
                                 onMouseOut={handleMouseOver(null)}
                             >
-                                <Styled.Date type="button" key={index} title={_date.toDateString()} disabled={disabled}>
+                                <Styled.Date key={index} title={_date.toDateString()} disabled={disabled}>
                                     <Text>{_date.getDate()}</Text>
                                 </Styled.Date>
                             </Styled.DateContainer>

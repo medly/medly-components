@@ -1,4 +1,4 @@
-import { parseToDate } from '@medly-components/utils/src';
+import { parseToDate } from '@medly-components/utils';
 import { DisplayFormat } from '../../DatePicker/types';
 
 export const getValidDate = (date: Date | null | string, displayFormat: DisplayFormat): Date | null =>

@@ -1,5 +1,5 @@
-import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons/src';
-import { useUpdateEffect, WithStyle } from '@medly-components/utils/src';
+import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
+import { useUpdateEffect, WithStyle } from '@medly-components/utils';
 import React, { useCallback, useMemo, useState } from 'react';
 import { getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear } from '../../Calendar/helper';
 import * as Styled from './DateRangeCalendar.styled';
@@ -7,7 +7,7 @@ import Month from './Month';
 import { Props } from './types';
 
 export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props => {
-    const {
+    const { 
             id,
             size,
             placement,

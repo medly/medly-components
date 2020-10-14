@@ -1,5 +1,5 @@
 import { DateRangeIcon } from '@medly-components/icons';
-import { parseToDate } from '@medly-components/utils/src';
+import { parseToDate } from '@medly-components/utils';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { DateIconWrapper } from '../../DatePicker/DatePicker.styled';
 import getMaskedValue from '../../TextField/getMaskedValue';

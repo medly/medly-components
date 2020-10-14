@@ -15,4 +15,4 @@ const AccessibilityIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
 AccessibilityIcon.Style = SvgIcon;
 AccessibilityIcon.displayName = 'AccessibilityIcon';
 
-export default AccessibilityIcon
+export default AccessibilityIcon;
