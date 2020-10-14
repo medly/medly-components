@@ -26,7 +26,7 @@ exports[`Form should not render any field if component type is not matched 1`] =
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 100rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -281,7 +281,7 @@ exports[`Form should render properly with initial state 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 100rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2079,7 +2079,6 @@ exports[`Form should render properly with initial state 1`] = `
               class="c30 c46 c47"
               fill="none"
               height="1em"
-              id="birthDate-calendar-icon"
               viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -2630,7 +2629,7 @@ exports[`Form should render properly without initial state 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem;
+  padding: 1rem 2.4rem 1.2rem 2.4rem;
   border-radius: 100rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -4320,7 +4319,6 @@ exports[`Form should render properly without initial state 1`] = `
               class="c32 c46 c47"
               fill="none"
               height="1em"
-              id="birthDate-calendar-icon"
               viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
