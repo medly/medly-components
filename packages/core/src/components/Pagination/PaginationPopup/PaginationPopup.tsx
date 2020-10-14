@@ -6,7 +6,7 @@ import { PageNumberButton } from '../Pagination.styled';
 import { PageEllipsisOverlay, PaginationBackgroundStyled } from './PaginationPopup.styled';
 import { Props } from './types';
 
-export const PaginationPopup: FC<Props> = React.memo(({ prevPageNumber, nextPageNumber, onClickHandler }) => {
+export const PaginationPopup: FC<Props> = React.memo(({ prevPageNumber, nextPageNumber, pageSelectorPopupPlacement, onClickHandler }) => {
     const [isPopoverVisible, setPopoverVisibility] = useContext(Popover.Context),
         onClickHandlerWrapper = (pageNumber: any) => () => {
             setPopoverVisibility(false);
@@ -20,7 +20,7 @@ export const PaginationPopup: FC<Props> = React.memo(({ prevPageNumber, nextPage
                 </Text>
             </PageNumberButton>
             {isPopoverVisible && <PaginationBackgroundStyled />}
-            <Popover.Popup>
+            <Popover.Popup placement={pageSelectorPopupPlacement}>
                 <PageEllipsisOverlay>
                     {addPageItems(prevPageNumber + 1, nextPageNumber - 1, []).map(item => {
                         return (

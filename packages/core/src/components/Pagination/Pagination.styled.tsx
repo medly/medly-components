@@ -35,7 +35,7 @@ const pageNavButtonState = css`
     }
 `;
 
-export const BaseButton = styled.button`
+export const BaseButton = styled.button.attrs({ type: 'button' })`
     height: 4rem;
     width: 4rem;
     display: block;

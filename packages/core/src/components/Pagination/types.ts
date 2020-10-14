@@ -11,4 +11,6 @@ export interface PaginationProps extends HTMLProps<HTMLUListElement> {
     itemsPerPage?: number;
     /** Hide Next and Prev named button */
     hidePrevNextLinks?: boolean;
+    /** Page selector popup placement */
+    pageSelectorPopupPlacement?: 'top' | 'bottom';
 }

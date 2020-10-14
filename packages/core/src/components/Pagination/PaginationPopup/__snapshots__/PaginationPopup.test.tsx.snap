@@ -75,6 +75,7 @@ exports[`Pagination popup component should render correctly with all the default
   >
     <button
       class="sc-AxheI c1"
+      type="button"
     >
       <h5
         class="c2"

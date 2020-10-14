@@ -24,7 +24,13 @@ describe('Pagination component', () => {
     });
 
     it('should render correctly with all the props given', () => {
-        const { container } = renderer({ totalItems: 150, activePage: 1, itemsPerPage: 10, hidePrevNextLinks: true });
+        const { container } = renderer({
+            totalItems: 150,
+            activePage: 1,
+            itemsPerPage: 10,
+            hidePrevNextLinks: true,
+            pageSelectorPopupPlacement: 'top'
+        });
         expect(container).toMatchSnapshot();
     });
 
@@ -63,5 +69,11 @@ describe('Pagination component', () => {
         fireEvent.click(getByText('...').closest('button'));
         fireEvent.click(getByText('7').closest('button'));
         expect(mockOnPageClick).toBeCalledWith(7);
+    });
+
+    it('should not call onClick handler when clicked on active page', () => {
+        const { mockOnPageClick, getByText } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByText('3').closest('button'));
+        expect(mockOnPageClick).not.toBeCalled();
     });
 });

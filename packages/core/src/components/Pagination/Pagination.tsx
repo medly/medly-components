@@ -11,14 +11,14 @@ import { PaginationProps } from './types';
 export const Pagination: FC<PaginationProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const links = [],
-            { hidePrevNextLinks, activePage, itemsPerPage, totalItems, onPageClick, ...restProps } = props,
+            { hidePrevNextLinks, activePage, itemsPerPage, totalItems, onPageClick, pageSelectorPopupPlacement, ...restProps } = props,
             { currentPage, linkItems, totalPages } = useMemo(() => paginator(totalItems, activePage, itemsPerPage), [
                 totalItems,
                 activePage,
                 itemsPerPage
             ]);
 
-        const onClickHandler = (page: number | '...') => () => page !== '...' && onPageClick(page);
+        const onClickHandler = (page: number | '...') => () => page !== '...' && page !== currentPage && onPageClick(page);
 
         for (let i = 0; i < linkItems.length; i++) {
             if (linkItems[i] === '...')
@@ -28,6 +28,7 @@ export const Pagination: FC<PaginationProps> & WithStyle = React.memo(
                             prevPageNumber={linkItems[i - 1] as number}
                             nextPageNumber={linkItems[i + 1] as number}
                             onClickHandler={onPageClick}
+                            pageSelectorPopupPlacement={pageSelectorPopupPlacement}
                         ></PaginationPopup>
                     </Popover>
                 );
@@ -67,5 +68,6 @@ Pagination.Style = ListWrapper.Style;
 Pagination.defaultProps = {
     activePage: 1,
     itemsPerPage: 20,
-    hidePrevNextLinks: false
+    hidePrevNextLinks: false,
+    pageSelectorPopupPlacement: 'bottom'
 };

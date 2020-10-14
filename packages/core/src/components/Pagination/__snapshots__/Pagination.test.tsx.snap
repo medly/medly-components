@@ -99,6 +99,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
       <button
         class="sc-AxheI c2"
         disabled=""
+        type="button"
       >
         <svg
           class="c3 c4"
@@ -120,6 +121,7 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
       <button
         class="sc-AxheI c2"
         disabled=""
+        type="button"
       >
         <svg
           class="c3 c4"
@@ -418,6 +420,7 @@ exports[`Pagination component should render correctly with all the default props
       <button
         class="sc-AxheI c2"
         disabled=""
+        type="button"
       >
         <svg
           class="c3 c4"
@@ -438,6 +441,7 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="sc-AxheI c5"
+        type="button"
       >
         <h5
           class="c6"
@@ -449,6 +453,7 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="sc-AxheI c7"
+        type="button"
       >
         <h5
           class="c8"
@@ -460,6 +465,7 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="sc-AxheI c7"
+        type="button"
       >
         <h5
           class="c8"
@@ -475,6 +481,7 @@ exports[`Pagination component should render correctly with all the default props
       >
         <button
           class="sc-AxheI c7"
+          type="button"
         >
           <h5
             class="c8"
@@ -487,6 +494,7 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="sc-AxheI c7"
+        type="button"
       >
         <h5
           class="c8"
@@ -498,6 +506,7 @@ exports[`Pagination component should render correctly with all the default props
     <li>
       <button
         class="sc-AxheI c10"
+        type="button"
       >
         <svg
           class="c3 c4"
@@ -677,6 +686,7 @@ exports[`Pagination component should render correctly with all the props given 1
     <li>
       <button
         class="sc-AxheI c2"
+        type="button"
       >
         <h5
           class="c3"
@@ -688,6 +698,7 @@ exports[`Pagination component should render correctly with all the props given 1
     <li>
       <button
         class="sc-AxheI c4"
+        type="button"
       >
         <h5
           class="c5"
@@ -699,6 +710,7 @@ exports[`Pagination component should render correctly with all the props given 1
     <li>
       <button
         class="sc-AxheI c4"
+        type="button"
       >
         <h5
           class="c5"
@@ -714,6 +726,7 @@ exports[`Pagination component should render correctly with all the props given 1
       >
         <button
           class="sc-AxheI c4"
+          type="button"
         >
           <h5
             class="c5"
@@ -726,6 +739,7 @@ exports[`Pagination component should render correctly with all the props given 1
     <li>
       <button
         class="sc-AxheI c4"
+        type="button"
       >
         <h5
           class="c5"
