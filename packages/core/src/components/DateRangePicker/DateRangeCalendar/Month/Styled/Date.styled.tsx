@@ -29,37 +29,39 @@ const monthStartAndEndDateAfterStyle = css<ExtendedDateProps>`
             );
             transform: ${({ isMonthLastDate }) => isMonthLastDate && 'rotate(-180deg)'};
         }
+    `,
+    dateAfterAndBeforeStyle= css<ExtendedDateProps>`
+        &::after,
+        &::before {
+            position: absolute;
+            content: '';
+            z-index: -1;
+            left: -0.4rem;
+            top: 0.4rem;
+            height: 3.2rem;
+            width: 4.8rem;
+            background-color: ${({ theme, isInDateRange, isInDateRangeHover }) =>
+                (isInDateRangeHover && theme.colors.grey[100]) || (isInDateRange && theme.colors.blue[100])};
+        }
+        &::before {
+            right: -1.8rem;
+            width: 7.2rem;
+            left: unset;
+        }
     `;
 
 export const DateContainer = styled.div<ExtendedDateProps>`
     text-align: center;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.4rem;
     padding: 0.4rem;
     position: relative;
     cursor: ${({ disabled, isInActiveMonth }) => (!isInActiveMonth ? 'default' : disabled ? 'not-allowed' : 'pointer')};
     opacity: ${({ isInActiveMonth }) => !isInActiveMonth && 0};
     pointer-events: ${({ isInActiveMonth }) => !isInActiveMonth && 'none'};
 
-    &::after,
-    &::before {
-        position: absolute;
-        content: '';
-        z-index: -1;
-        left: -0.4rem;
-        top: 0.4rem;
-        height: 3.2rem;
-        width: 4.8rem;
-        background-color: ${({ theme, isInDateRange, isInDateRangeHover }) =>
-            (isInDateRangeHover && theme.colors.grey[100]) || (isInDateRange && theme.colors.blue[100])};
-    }
-    &::before {
-        right: -1.8rem;
-        width: 7.2rem;
-        left: unset;
-    }
+    ${dateAfterAndBeforeStyle};
     ${({ isMonthFirstDate, isMonthLastDate, isInDateRange, isInDateRangeHover }) =>
         (isMonthFirstDate || isMonthLastDate) && (isInDateRange || isInDateRangeHover) && monthStartAndEndDateBeforeStyle};
-
     &:nth-child(7n + 1),
     &:nth-child(7n) {
         ${monthStartAndEndDateAfterStyle}

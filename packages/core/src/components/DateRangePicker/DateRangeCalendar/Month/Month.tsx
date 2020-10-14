@@ -68,7 +68,7 @@ export const Month: React.FC<Props> = React.memo(
                                 onMouseOver={handleMouseOver(_date)}
                                 onMouseOut={handleMouseOver(null)}
                             >
-                                <Styled.Date key={index} title={_date.toDateString()} disabled={disabled}>
+                                <Styled.Date type="button" key={index} title={_date.toDateString()} disabled={disabled}>
                                     <Text>{_date.getDate()}</Text>
                                 </Styled.Date>
                             </Styled.DateContainer>

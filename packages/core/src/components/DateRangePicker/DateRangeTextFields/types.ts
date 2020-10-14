@@ -1,18 +1,18 @@
-import { DateRangePickerProps } from 'packages/forms/src/components/Fields/types';
+import { DateRangeProps } from '../types';
 
 export type Props = {
     id: string;
-    size: DateRangePickerProps['size'];
-    variant: DateRangePickerProps['variant'];
+    size: DateRangeProps['size'];
+    variant: DateRangeProps['variant'];
     errorText: string;
     helperText: string;
     disabled: boolean;
     isActive: boolean;
     fromLabel: string;
     toLabel: string;
-    selectedDates: DateRangePickerProps['value'];
-    onDateChange: DateRangePickerProps['onChange'];
-    displayFormat: DateRangePickerProps['displayFormat'];
+    selectedDates: DateRangeProps['value'];
+    onDateChange: DateRangeProps['onChange'];
+    displayFormat: DateRangeProps['displayFormat'];
     toggleCalendar: React.Dispatch<React.SetStateAction<boolean>>;
     setActive: React.Dispatch<React.SetStateAction<boolean>>;
     setFocusedElement: React.Dispatch<React.SetStateAction<'START_DATE' | 'END_DATE'>>;
