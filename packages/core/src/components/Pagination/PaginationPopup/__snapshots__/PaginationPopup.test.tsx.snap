@@ -23,8 +23,9 @@ exports[`Pagination popup component should render correctly with all the default
 }
 
 .c1 {
-  height: 4rem;
-  width: 4rem;
+  margin: 0.4rem;
+  height: 3.2rem;
+  width: 3.2rem;
   display: block;
   border-radius: 50%;
   -webkit-user-select: none;
@@ -38,9 +39,6 @@ exports[`Pagination popup component should render correctly with all the default
   transition: all 100ms ease-out;
   color: #435465;
   background: #ffffff;
-  margin: 4px;
-  height: 3.2rem;
-  width: 3.2rem;
   color: #435465;
   background: #ffffff;
 }
@@ -75,6 +73,7 @@ exports[`Pagination popup component should render correctly with all the default
   >
     <button
       class="sc-AxheI c1"
+      type="button"
     >
       <h5
         class="c2"
