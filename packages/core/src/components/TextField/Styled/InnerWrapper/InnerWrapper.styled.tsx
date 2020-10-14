@@ -91,17 +91,21 @@ const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) =>
               }
           `;
 
-const getHeight = ({ size, theme, minRows, multiline }: InnerWrapperProps) => {
-    const lineHeight = 2;
-    const smallMultilinePadding = 1.1 * 2;
-    const medMultilinePadding = 1.1 * 2 + 1.5;
+const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperProps) => {
     const baseHeight = theme.textField.height[size];
     const baseHeightNumber = parseFloat(baseHeight.replace(/[^\d.-]/g, ''));
-    return multiline && size === 'S'
-        ? lineHeight * minRows + smallMultilinePadding
-        : multiline && size === 'M'
-        ? lineHeight * minRows + medMultilinePadding
-        : baseHeightNumber;
+    if (multiline) {
+        if (size === 'S') {
+            return 2 * minRows + 2.2;
+        }
+        if (variant === 'fusion') {
+            return 2 * minRows + 3.5;
+        } else {
+            console.log('multiline & M & variant not fusion');
+            return 2 * minRows + 5;
+        }
+    }
+    return baseHeightNumber;
 };
 
 const getPadding = ({ size, multiline }: InnerWrapperProps) => {

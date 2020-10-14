@@ -87,7 +87,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                             <Prefix size={size} />
                         </Styled.Prefix>
                     )}
-                    <Styled.InputWrapper multiline={multiline} size={size}>
+                    <Styled.InputWrapper multiline={multiline} size={size} variant={props.variant}>
                         <Styled.Input
                             ref={inputRef}
                             value={value}

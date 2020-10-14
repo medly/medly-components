@@ -34,7 +34,7 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'siz
     maxWidth?: string;
     /** To use a text area, set multiline to true. When false, this component will be a text field */
     multiline?: boolean;
-    /** USe minRows only when mutliline is true. Number of rows in text area */
+    /** Use minRows when multiline is true; minRows is the number of rows in text area */
     minRows?: number;
 }
 

@@ -15,9 +15,6 @@ const transformLabel = (variant: string) => {
     return 'transform: translateY(-87%) scale(0.75)';
 };
 
-// To DO add multiline to transform label func:  transform: ${({ size, multiline }) =>
-// multiline && size === 'M' ? 'translateY(-50%) scale(0.75)' : size === 'M' && !multiline && 'translateY(-87%) scale(0.75)'};
-
 const styleWithLabel = ({ variant }: StyledProps) => {
     return css`
         align-self: flex-end;
@@ -43,7 +40,7 @@ export const Input = styled('input')<StyledProps>`
     width: 100%;
     ${setHeight};
     margin: 0;
-    padding: 0;
+    padding: ${({ multiline, variant, size }) => (multiline && variant !== 'fusion' && size === 'M' ? '1.6rem 0 0 0' : 0)};
     box-sizing: border-box;
     transition: all 100ms ease-out;
     background: transparent;
