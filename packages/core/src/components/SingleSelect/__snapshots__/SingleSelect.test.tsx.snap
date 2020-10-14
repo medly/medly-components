@@ -165,11 +165,11 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -202,7 +202,12 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -531,11 +536,11 @@ exports[`SingleSelect component should render properly when isSearchable is true
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -568,7 +573,12 @@ exports[`SingleSelect component should render properly when isSearchable is true
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -1074,11 +1084,11 @@ exports[`SingleSelect component should take passed max width 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1112,7 +1122,12 @@ exports[`SingleSelect component should take passed max width 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -1607,11 +1622,11 @@ exports[`SingleSelect component with filled variant should render disabled state
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1644,7 +1659,12 @@ exports[`SingleSelect component with filled variant should render disabled state
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -2130,11 +2150,11 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2167,7 +2187,12 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -2505,11 +2530,11 @@ exports[`SingleSelect component with filled variant should render with label pro
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2542,7 +2567,12 @@ exports[`SingleSelect component with filled variant should render with label pro
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -3767,11 +3797,11 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -3804,7 +3834,12 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -4304,11 +4339,11 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -4341,7 +4376,12 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -4693,11 +4733,11 @@ exports[`SingleSelect component with outlined variant should render with label p
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -4730,7 +4770,12 @@ exports[`SingleSelect component with outlined variant should render with label p
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;

@@ -1,3 +1,4 @@
+import variants from '@medly-components/theme/src/core/font/variants';
 import { css, styled } from '@medly-components/utils';
 import { InnerWrapperProps } from '../../types';
 import { HelperText } from '../HelperText.styled';
@@ -94,14 +95,18 @@ const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) =>
 const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperProps) => {
     const baseHeight = theme.textField.height[size];
     const baseHeightNumber = parseFloat(baseHeight.replace(/[^\d.-]/g, ''));
+
+    const lineHeight = variants[theme.textField.textVariant[size]].lineHeight;
+    const lineHeightNumber = parseFloat(lineHeight.replace(/[^\d.-]/g, ''));
+
+    const smallPadding = 1.1 * 2;
+    const medPadding = 1.6 * 2;
+
     if (multiline) {
-        if (size === 'S') {
-            return 2 * minRows + 2.2;
-        }
-        if (variant === 'fusion') {
-            return 2 * minRows + 3.4;
+        if (size === 'S' || variant === 'fusion') {
+            return lineHeightNumber * minRows + smallPadding;
         } else {
-            return 2 * minRows + 5;
+            return lineHeightNumber * minRows + medPadding;
         }
     }
     return baseHeightNumber;

@@ -149,11 +149,11 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -188,7 +188,12 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -550,11 +555,11 @@ exports[`TextField should render properly with M size 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -589,7 +594,12 @@ exports[`TextField should render properly with M size 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -912,11 +922,11 @@ exports[`TextField should render properly with S size 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -951,7 +961,12 @@ exports[`TextField should render properly with S size 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
 }
 
 .c6,
@@ -1232,11 +1247,11 @@ exports[`TextField should render properly with default props 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1271,7 +1286,12 @@ exports[`TextField should render properly with default props 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -1527,11 +1547,11 @@ exports[`TextField with filled variant and with label should render default stat
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1566,7 +1586,12 @@ exports[`TextField with filled variant and with label should render default stat
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -1802,11 +1827,11 @@ exports[`TextField with filled variant and with label should render disabled sta
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1841,7 +1866,12 @@ exports[`TextField with filled variant and with label should render disabled sta
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -2099,11 +2129,11 @@ exports[`TextField with filled variant and with label should render focus state 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2138,7 +2168,12 @@ exports[`TextField with filled variant and with label should render focus state 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -2394,11 +2429,11 @@ exports[`TextField with filled variant and without label should render default s
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2433,7 +2468,12 @@ exports[`TextField with filled variant and without label should render default s
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
 }
 
 .c3,
@@ -2663,11 +2703,11 @@ exports[`TextField with filled variant and without label should render disabled 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2702,7 +2742,12 @@ exports[`TextField with filled variant and without label should render disabled 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
 }
 
 .c3,
@@ -2954,11 +2999,11 @@ exports[`TextField with filled variant and without label should render focus sta
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -2993,7 +3038,12 @@ exports[`TextField with filled variant and without label should render focus sta
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
 }
 
 .c3,
@@ -3290,11 +3340,11 @@ exports[`TextField with filled variant should render error state properly  1`] =
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -3329,7 +3379,12 @@ exports[`TextField with filled variant should render error state properly  1`] =
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -3665,11 +3720,11 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -3704,7 +3759,12 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -3993,11 +4053,11 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -4032,7 +4092,12 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -4315,11 +4380,11 @@ exports[`TextField with outlined variant and with label should render default st
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -4354,7 +4419,12 @@ exports[`TextField with outlined variant and with label should render default st
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -4595,11 +4665,11 @@ exports[`TextField with outlined variant and with label should render disabled s
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -4634,7 +4704,12 @@ exports[`TextField with outlined variant and with label should render disabled s
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -4906,11 +4981,11 @@ exports[`TextField with outlined variant and with label should render focus stat
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -4945,7 +5020,12 @@ exports[`TextField with outlined variant and with label should render focus stat
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -5215,11 +5295,11 @@ exports[`TextField with outlined variant and without label should render default
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -5254,7 +5334,12 @@ exports[`TextField with outlined variant and without label should render default
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
 }
 
 .c3,
@@ -5489,11 +5574,11 @@ exports[`TextField with outlined variant and without label should render disable
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -5528,7 +5613,12 @@ exports[`TextField with outlined variant and without label should render disable
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
 }
 
 .c3,
@@ -5794,11 +5884,11 @@ exports[`TextField with outlined variant and without label should render focus s
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -5833,7 +5923,12 @@ exports[`TextField with outlined variant and without label should render focus s
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
 }
 
 .c3,
@@ -6144,11 +6239,11 @@ exports[`TextField with outlined variant should render error state properly  1`]
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -6183,7 +6278,12 @@ exports[`TextField with outlined variant should render error state properly  1`]
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -6533,11 +6633,11 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -6572,7 +6672,12 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -6875,11 +6980,11 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -6914,7 +7019,12 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -7183,11 +7293,11 @@ exports[`TextField without label should render default state properly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -7222,7 +7332,12 @@ exports[`TextField without label should render default state properly 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
 }
 
 .c3,
@@ -7472,11 +7587,11 @@ exports[`TextField without label should render focus state properly  1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -7511,7 +7626,12 @@ exports[`TextField without label should render focus state properly  1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
   z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;

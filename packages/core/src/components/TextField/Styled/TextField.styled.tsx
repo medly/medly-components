@@ -3,13 +3,24 @@ import { StyledProps } from '../types';
 import { Label } from './Label.styled';
 import { MaskPlaceholder } from './MaskPlaceholder.styled';
 
-const transformLabel = (variant: string) => {
+const transformLabel = ({ variant, multiline }: StyledProps) => {
+    const fusionLabelStyle = `            
+        background-color: white;
+        padding: 0 0.4rem;
+        z-index: 1;`;
+    if (multiline && variant === 'fusion') {
+        return css`
+            transform: translateY(-120%) scale(0.67);
+            ${fusionLabelStyle};
+        `;
+    }
+    if (multiline && variant !== 'fusion') {
+        return 'transform: translateY(-50%) scale(0.75)';
+    }
     if (variant === 'fusion') {
         return css`
             transform: translateY(-140%) scale(0.67);
-            background-color: white;
-            padding: 0 0.4rem;
-            z-index: 1;
+            ${fusionLabelStyle};
         `;
     }
     return 'transform: translateY(-87%) scale(0.75)';
@@ -24,11 +35,7 @@ const styleWithLabel = ({ variant }: StyledProps) => {
 
 const setFontStyle = ({ theme, size, multiline }: StyledProps) => {
     if (multiline) {
-        return `font-size: 1.4rem;
-            font-weight: 400;
-            letter-spacing: -0.04rem;
-            line-height: 2rem;
-            font-family: Open Sans`;
+        return getFontStyle({ theme, fontVariant: 'body2' });
     }
     return getFontStyle({ theme, fontVariant: theme.textField.textVariant[size] });
 };
@@ -48,6 +55,7 @@ export const Input = styled('input')<StyledProps>`
     text-overflow: ellipsis;
     resize: none;
     z-index: 1;
+    scroll-padding-top: 10px;
 
     ${({ isLabelPresent, size }) => isLabelPresent && size !== 'S' && styleWithLabel};
     &,
@@ -75,7 +83,7 @@ export const Input = styled('input')<StyledProps>`
 
     &:not(:placeholder-shown) ~ ${Label}, &:focus ~ ${Label} {
         opacity: ${({ size }) => size === 'S' && '0'};
-        ${({ size, variant }) => size === 'M' && transformLabel(variant)};
+        ${({ size }) => size === 'M' && transformLabel};
     }
 
     &:not(:placeholder-shown) ~ ${MaskPlaceholder} {
