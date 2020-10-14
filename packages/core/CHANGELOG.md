@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.28.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.28.0...@medly-components/core@1.28.1) (2020-10-14)
+
+
+### Bug Fixes
+
+* button type issue in calendar component ([2a2f657](https://github.com/medly/medly-components/commit/2a2f657dca2b2186a023c41674dc33f8e764d5ef))
+
+
+
+
+
 # [1.28.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.27.1...@medly-components/core@1.28.0) (2020-10-13)
 
 
