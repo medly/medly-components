@@ -20,7 +20,7 @@ export const PaginationPopup: FC<Props> = React.memo(({ prevPageNumber, nextPage
                 </Text>
             </PageNumberButton>
             {isPopoverVisible && <PaginationBackgroundStyled />}
-            <Popover.Popup>
+            <Popover.Popup placement="top">
                 <PageEllipsisOverlay>
                     {addPageItems(prevPageNumber + 1, nextPageNumber - 1, []).map(item => {
                         return (

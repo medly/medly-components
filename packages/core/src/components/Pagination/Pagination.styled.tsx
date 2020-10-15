@@ -35,9 +35,10 @@ const pageNavButtonState = css`
     }
 `;
 
-export const BaseButton = styled.button`
-    height: 4rem;
-    width: 4rem;
+export const BaseButton = styled.button.attrs({ type: 'button' })`
+    margin: 0.4rem;
+    height: 3.2rem;
+    width: 3.2rem;
     display: block;
     border-radius: 50%;
     user-select: none;
@@ -60,9 +61,6 @@ export const BaseButton = styled.button`
     }
 `;
 export const PageNumberButton = styled(BaseButton)<{ isActive?: boolean }>`
-    margin: 4px;
-    height: 3.2rem;
-    width: 3.2rem;
     ${props => getPageNumberButtonStyleByState('pageNumber', props.isActive ? 'active' : 'default')};
 
     &:hover {
@@ -76,8 +74,7 @@ export const PageNumberButton = styled(BaseButton)<{ isActive?: boolean }>`
 
 export const PageNavButton = styled(BaseButton)<{ disabled: boolean }>`
     & > ${ChevronLeftIcon.Style}, ${ChevronRightIcon.Style} {
-        margin: 4px;
-        padding: 4px;
+        padding: 0.4rem;
     }
 
     ${getPageNavButtonStyleByState('default')}
