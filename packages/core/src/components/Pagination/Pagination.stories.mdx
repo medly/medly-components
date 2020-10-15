@@ -2,8 +2,9 @@ import { Pagination } from './Pagination';
 import { defaultTheme } from '@medly-components/theme';
 import { boolean, number } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import { ThemeInterface } from './Pagination.stories';
+import { ThemeInterface, DummyWrapper } from './Pagination.stories';
 import { useState } from 'react';
+import { Placement } from '../Popover/types';
 
 <Meta title="Core" component={Pagination} />
 
@@ -16,13 +17,15 @@ import { useState } from 'react';
         {() => {
             const [activePage, setActivePage] = useState(1);
             return (
-                <Pagination
-                    activePage={activePage}
-                    totalItems={number('Total Items', 1000)}
-                    itemsPerPage={number('Items per page', 20)}
-                    hidePrevNextLinks={boolean('Hide Prev Next Links', false)}
-                    onPageClick={setActivePage}
-                />
+                <DummyWrapper>
+                    <Pagination
+                        activePage={activePage}
+                        totalItems={number('Total Items', 1000)}
+                        itemsPerPage={number('Items per page', 20)}
+                        hidePrevNextLinks={boolean('Hide Prev Next Links', false)}
+                        onPageClick={setActivePage}
+                    />
+                </DummyWrapper>
             );
         }}
     </Story>

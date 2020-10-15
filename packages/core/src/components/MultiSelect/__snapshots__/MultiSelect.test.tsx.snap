@@ -30,6 +30,10 @@ exports[`MultiSelect component should render correctly with all the props given 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3 {
@@ -517,6 +521,10 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c3 {

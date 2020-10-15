@@ -11,7 +11,7 @@ export const Calendar = styled('div')`
     width: max-content;
     height: max-content;
 `;
-export const MonthNavigation = styled.button<{ disabled: boolean }>`
+export const MonthNavigation = styled.button.attrs({ type: 'button' })<{ disabled: boolean }>`
     border: none;
     background-color: transparent;
     border-radius: 50%;

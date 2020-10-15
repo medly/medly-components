@@ -64,4 +64,10 @@ describe('Pagination component', () => {
         fireEvent.click(getByText('7').closest('button'));
         expect(mockOnPageClick).toBeCalledWith(7);
     });
+
+    it('should not call onClick handler when clicked on active page', () => {
+        const { mockOnPageClick, getByText } = renderer({ totalItems: 150, activePage: 3, itemsPerPage: 10 });
+        fireEvent.click(getByText('3').closest('button'));
+        expect(mockOnPageClick).not.toBeCalled();
+    });
 });
