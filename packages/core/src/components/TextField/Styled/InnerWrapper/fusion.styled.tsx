@@ -5,7 +5,7 @@ import { Label } from '../Label.styled';
 import { Prefix } from '../Prefix.styled';
 import { Suffix } from '../Suffix.styled';
 
-export const roundedOutlinedStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperProps) => {
+export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperProps) => {
     return css`
         border-radius: 1rem;
         background-color: ${isTextPresent ? 'transparent' : fusion.default.bgColor};
@@ -34,7 +34,7 @@ export const roundedOutlinedStyle = ({ fusion, disabled, isTextPresent }: InnerW
     `;
 };
 
-export const roundedOutlinedErrorStyle = ({ theme: { textField }, isTextPresent }: InnerWrapperProps) => css`
+export const fusionErrorStyle = ({ theme: { textField }, isTextPresent }: InnerWrapperProps) => css`
     &,
     &:hover {
         color: ${textField.fusion.error.defaultTextColor};

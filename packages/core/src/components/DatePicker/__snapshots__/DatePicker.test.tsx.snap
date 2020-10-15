@@ -12444,6 +12444,10 @@ exports[`DatePicker component should render properly when value is of date type 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c4 {
@@ -12820,6 +12824,10 @@ exports[`DatePicker component should render properly when value is of string typ
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .c4 {
