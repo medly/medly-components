@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.1...@medly-components/forms@1.12.2) (2020-10-14)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.12.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.0...@medly-components/forms@1.12.1) (2020-10-14)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.12.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.11.2...@medly-components/forms@1.12.0) (2020-10-13)
+
+
+### Features
+
+* fix failing tests, update snapshots ([01452e3](https://github.com/medly/medly-components/commit/01452e373306bdad78e2c3c2644cc8c1ea161bfa))
+
+
+
+
+
+## [1.11.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.11.1...@medly-components/forms@1.11.2) (2020-10-08)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 ## [1.11.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.11.0...@medly-components/forms@1.11.1) (2020-10-08)
 
 **Note:** Version bump only for package @medly-components/forms

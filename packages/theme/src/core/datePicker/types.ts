@@ -20,4 +20,5 @@ export interface DatePickerTheme {
     borderRadius: string;
     filled: DatePickerVariant;
     outlined: DatePickerVariant;
+    fusion: DatePickerVariant;
 }

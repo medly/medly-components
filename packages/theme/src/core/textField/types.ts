@@ -80,4 +80,41 @@ export interface TextFieldTheme {
             helperTextColor: string;
         };
     };
+    /** fusion variant theme */
+    fusion: {
+        default: {
+            borderColor: string;
+            bgColor: string;
+            textColor: string;
+            labelColor: string;
+            helperTextColor: string;
+        };
+        hover: {
+            bgColor: string;
+            borderColor: string;
+        };
+        disabled: {
+            bgColor: string;
+            labelColor: string;
+            textColor: string;
+            borderColor: string;
+        };
+        active: {
+            placeholderColor: string;
+            bgColor: string;
+            borderColor: string;
+            labelColor: string;
+        };
+        error: {
+            placeholderColor: string;
+            bgColor: string;
+            caretColor: string;
+            cursorColor: string;
+            borderColor: string;
+            labelColor: string;
+            helperTextColor: string;
+            defaultTextColor: string;
+            activeTextColor: string;
+        };
+    };
 }

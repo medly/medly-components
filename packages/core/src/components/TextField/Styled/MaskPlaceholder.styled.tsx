@@ -1,18 +1,18 @@
 import { css, styled } from '@medly-components/utils';
-import { TextFieldProps } from '../types';
+import { TextFieldProps as Props } from '../types';
 
 const center = css`
         top: 50%;
         transform: translateY(-50%);
     `,
-    bottom = css<{ variant?: TextFieldProps['variant'] }>`
-        bottom: ${({ variant }) => (variant === 'filled' ? '0.7rem' : '0.6rem')};
+    bottom = css<{ variant?: Props['variant'] }>`
+        bottom: ${({ variant }) => (variant === 'filled' ? '0.7rem' : variant === 'fusion' ? '1.4rem' : '0.6rem')};
     `;
 
 export const MaskPlaceholder = styled('span')<{
     isLabelPresent?: boolean;
-    variant?: TextFieldProps['variant'];
-    size?: TextFieldProps['size'];
+    variant?: Props['variant'];
+    size?: Props['size'];
 }>`
     position: absolute;
     left: 0;

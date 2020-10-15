@@ -2,11 +2,11 @@ import { DatePickerTheme, defaultTheme } from '@medly-components/theme';
 import React, { useState } from 'react';
 import Button from '../Button';
 import { DatePicker } from './DatePicker';
-import { DatePickerProps } from './types';
+import { DatePickerProps as Props } from './types';
 
-export const variants: DatePickerProps['variant'][] = ['outlined', 'filled'];
-export const sizes: DatePickerProps['size'][] = ['S', 'M'];
-export const displayFormats: DatePickerProps['displayFormat'][] = [
+export const variants: Props['variant'][] = ['outlined', 'filled', 'fusion'];
+export const sizes: Props['size'][] = ['S', 'M'];
+export const displayFormats: Props['displayFormat'][] = [
     'dd/MM/yyyy',
     'MM/dd/yyyy',
     'dd/yyyy/MM',

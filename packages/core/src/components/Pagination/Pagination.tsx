@@ -18,7 +18,7 @@ export const Pagination: FC<PaginationProps> & WithStyle = React.memo(
                 itemsPerPage
             ]);
 
-        const onClickHandler = (page: number | '...') => () => page !== '...' && onPageClick(page);
+        const onClickHandler = (page: number | '...') => () => page !== '...' && page !== currentPage && onPageClick(page);
 
         for (let i = 0; i < linkItems.length; i++) {
             if (linkItems[i] === '...')

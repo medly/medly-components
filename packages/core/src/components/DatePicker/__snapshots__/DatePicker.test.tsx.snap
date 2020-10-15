@@ -572,6 +572,7 @@ exports[`DatePicker component popover placement should render properly with "bot
     </div>
     <button
       class="c11 calendar-month-navigation-go-back"
+      type="button"
     >
       <svg
         class="c12"
@@ -590,6 +591,7 @@ exports[`DatePicker component popover placement should render properly with "bot
     </button>
     <button
       class="c11 calendar-month-navigation-go-forward"
+      type="button"
     >
       <svg
         class="c12"
@@ -1603,6 +1605,7 @@ exports[`DatePicker component popover placement should render properly with "bot
     </div>
     <button
       class="c11 calendar-month-navigation-go-back"
+      type="button"
     >
       <svg
         class="c12"
@@ -1621,6 +1624,7 @@ exports[`DatePicker component popover placement should render properly with "bot
     </button>
     <button
       class="c11 calendar-month-navigation-go-forward"
+      type="button"
     >
       <svg
         class="c12"
@@ -2634,6 +2638,7 @@ exports[`DatePicker component popover placement should render properly with "bot
     </div>
     <button
       class="c11 calendar-month-navigation-go-back"
+      type="button"
     >
       <svg
         class="c12"
@@ -2652,6 +2657,7 @@ exports[`DatePicker component popover placement should render properly with "bot
     </button>
     <button
       class="c11 calendar-month-navigation-go-forward"
+      type="button"
     >
       <svg
         class="c12"
@@ -3667,6 +3673,7 @@ exports[`DatePicker component popover placement should render properly with "lef
     </div>
     <button
       class="c11 calendar-month-navigation-go-back"
+      type="button"
     >
       <svg
         class="c12"
@@ -3685,6 +3692,7 @@ exports[`DatePicker component popover placement should render properly with "lef
     </button>
     <button
       class="c11 calendar-month-navigation-go-forward"
+      type="button"
     >
       <svg
         class="c12"
@@ -4697,6 +4705,7 @@ exports[`DatePicker component popover placement should render properly with "lef
     </div>
     <button
       class="c11 calendar-month-navigation-go-back"
+      type="button"
     >
       <svg
         class="c12"
@@ -4715,6 +4724,7 @@ exports[`DatePicker component popover placement should render properly with "lef
     </button>
     <button
       class="c11 calendar-month-navigation-go-forward"
+      type="button"
     >
       <svg
         class="c12"
@@ -5727,6 +5737,7 @@ exports[`DatePicker component popover placement should render properly with "lef
     </div>
     <button
       class="c11 calendar-month-navigation-go-back"
+      type="button"
     >
       <svg
         class="c12"
@@ -5745,6 +5756,7 @@ exports[`DatePicker component popover placement should render properly with "lef
     </button>
     <button
       class="c11 calendar-month-navigation-go-forward"
+      type="button"
     >
       <svg
         class="c12"
@@ -6760,6 +6772,7 @@ exports[`DatePicker component popover placement should render properly with "rig
     </div>
     <button
       class="c11 calendar-month-navigation-go-back"
+      type="button"
     >
       <svg
         class="c12"
@@ -6778,6 +6791,7 @@ exports[`DatePicker component popover placement should render properly with "rig
     </button>
     <button
       class="c11 calendar-month-navigation-go-forward"
+      type="button"
     >
       <svg
         class="c12"
@@ -7790,6 +7804,7 @@ exports[`DatePicker component popover placement should render properly with "rig
     </div>
     <button
       class="c11 calendar-month-navigation-go-back"
+      type="button"
     >
       <svg
         class="c12"
@@ -7808,6 +7823,7 @@ exports[`DatePicker component popover placement should render properly with "rig
     </button>
     <button
       class="c11 calendar-month-navigation-go-forward"
+      type="button"
     >
       <svg
         class="c12"
@@ -8820,6 +8836,7 @@ exports[`DatePicker component popover placement should render properly with "rig
     </div>
     <button
       class="c11 calendar-month-navigation-go-back"
+      type="button"
     >
       <svg
         class="c12"
@@ -8838,6 +8855,7 @@ exports[`DatePicker component popover placement should render properly with "rig
     </button>
     <button
       class="c11 calendar-month-navigation-go-forward"
+      type="button"
     >
       <svg
         class="c12"
@@ -9853,6 +9871,7 @@ exports[`DatePicker component popover placement should render properly with "top
     </div>
     <button
       class="c11 calendar-month-navigation-go-back"
+      type="button"
     >
       <svg
         class="c12"
@@ -9871,6 +9890,7 @@ exports[`DatePicker component popover placement should render properly with "top
     </button>
     <button
       class="c11 calendar-month-navigation-go-forward"
+      type="button"
     >
       <svg
         class="c12"
@@ -10883,6 +10903,7 @@ exports[`DatePicker component popover placement should render properly with "top
     </div>
     <button
       class="c11 calendar-month-navigation-go-back"
+      type="button"
     >
       <svg
         class="c12"
@@ -10901,6 +10922,7 @@ exports[`DatePicker component popover placement should render properly with "top
     </button>
     <button
       class="c11 calendar-month-navigation-go-forward"
+      type="button"
     >
       <svg
         class="c12"
@@ -11913,6 +11935,7 @@ exports[`DatePicker component popover placement should render properly with "top
     </div>
     <button
       class="c11 calendar-month-navigation-go-back"
+      type="button"
     >
       <svg
         class="c12"
@@ -11931,6 +11954,7 @@ exports[`DatePicker component popover placement should render properly with "top
     </button>
     <button
       class="c11 calendar-month-navigation-go-forward"
+      type="button"
     >
       <svg
         class="c12"
@@ -12419,6 +12443,7 @@ exports[`DatePicker component should render properly when value is of date type 
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c4 {
@@ -12564,6 +12589,7 @@ exports[`DatePicker component should render properly when value is of date type 
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -12793,6 +12819,7 @@ exports[`DatePicker component should render properly when value is of string typ
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c4 {
@@ -12941,6 +12968,7 @@ exports[`DatePicker component should render properly when value is of string typ
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  z-index: 1;
 }
 
 .c6,

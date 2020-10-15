@@ -33,6 +33,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
             isPrefixPresent = useMemo(() => !!Prefix, [Prefix]),
             isSuffixPresent = useMemo(() => !!Suffix, [Suffix]),
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]),
+            [isTextPresent, setIsTextPresent] = useState(!!value || !!restProps.defaultValue),
             [maskLabel, setMaskLabel] = useState(mask);
 
         const validate = useCallback(
@@ -59,9 +60,10 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                         e.target.value = maskedValue;
                         setMaskLabel(`${maskedValue}${mask.substr(maskedValue.length)}`);
                     }
+                    setIsTextPresent(!!e.target.value);
                     props.onChange && props.onChange(e);
                 },
-                [mask]
+                [mask, props.onChange]
             );
 
         useEffect(() => {
@@ -77,6 +79,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                     disabled={disabled}
                     isErrorPresent={isErrorPresent}
                     isLabelPresent={isLabelPresent}
+                    isTextPresent={isTextPresent}
                 >
                     {isPrefixPresent && (
                         <Styled.Prefix size={size}>
@@ -96,6 +99,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                             isSuffixPresent={isSuffixPresent}
                             isLabelPresent={isLabelPresent}
                             errorText={errorText || builtInErrorMessage}
+                            variant={props.variant}
                             {...{ ...restProps, size, onBlur, onInvalid, onChange }}
                         />
                         {maskLabel && (

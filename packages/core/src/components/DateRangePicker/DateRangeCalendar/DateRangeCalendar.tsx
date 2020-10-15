@@ -56,10 +56,10 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
 
     return (
         <Styled.DateRangeCalendar id={id} size={size} placement={placement}>
-            <Styled.NavigatorIcon type="button" id={`${id}-navigation-backward`} align="left" onClick={handlePrevIconClick}>
+            <Styled.NavigatorIcon id={`${id}-navigation-backward`} align="left" onClick={handlePrevIconClick}>
                 <KeyboardArrowLeftIcon />
             </Styled.NavigatorIcon>
-            <Styled.NavigatorIcon type="button" id={`${id}-navigation-forward`} align="right" onClick={handleNextIconClick}>
+            <Styled.NavigatorIcon id={`${id}-navigation-forward`} align="right" onClick={handleNextIconClick}>
                 <KeyboardArrowRightIcon />
             </Styled.NavigatorIcon>
             <Month id={`${id}-${month}-month`} month={month} year={year} {...commonProps} />
