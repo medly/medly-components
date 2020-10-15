@@ -1,5 +1,7 @@
 import { HTMLProps, WithStyle, WithThemeProp } from '@medly-components/utils';
 import { ModalActionUserProps } from './Actions/types';
+import { Props as ModalContentProps } from './Content/types';
+import { Props as ModalHeaderProps } from './Header/types';
 import { Props as ModalPopupProps } from './Popup/types';
 
 export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
@@ -17,7 +19,7 @@ export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
 
 export interface ModalStaticProps {
     Popup?: React.FC<ModalPopupProps> & WithStyle;
-    Header?: React.FC;
-    Content?: React.FC;
-    Actions?: React.FC<ModalActionUserProps>;
+    Header?: React.FC<ModalHeaderProps> & WithStyle;
+    Content?: React.FC<ModalContentProps> & WithStyle;
+    Actions?: React.FC<ModalActionUserProps> & WithStyle;
 }
