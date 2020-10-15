@@ -58,7 +58,7 @@ export const fusionErrorStyle = ({ theme: { textField }, isTextPresent }: InnerW
             }
         }
     }
-    ,
+
     &:hover::after {
         border-width: 0.15rem;
     }

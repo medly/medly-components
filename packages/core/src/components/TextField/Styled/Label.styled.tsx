@@ -16,8 +16,8 @@ const getStyle = (required: boolean, variant: 'outlined' | 'filled' | 'fusion') 
     }
 };
 
-export const Label = styled('label')<{ required: boolean; variant: 'outlined' | 'filled' | 'fusion'; size: 'S' | 'M' }>`
-    top: 50%;
+export const Label = styled('label')<{ required: boolean; variant: 'outlined' | 'filled' | 'fusion'; size: 'S' | 'M'; multiline: boolean }>`
+    top: ${({ multiline }) => (multiline ? '1.1rem' : '50%')};
     left: 0;
     cursor: text;
     user-select: none;
