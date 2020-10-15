@@ -26,7 +26,7 @@ exports[`Form Actions should render center aligned actions defined in action sch
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -170,7 +170,7 @@ exports[`Form Actions should render default action button 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 100rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -314,7 +314,7 @@ exports[`Form Actions should render left aligned actions defined in action schem
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

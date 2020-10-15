@@ -1,4 +1,3 @@
-import variants from '@medly-components/theme/src/core/font/variants';
 import { css, styled } from '@medly-components/utils';
 import { InnerWrapperProps } from '../../types';
 import { HelperText } from '../HelperText.styled';
@@ -96,7 +95,7 @@ const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperPro
     const baseHeight = theme.textField.height[size];
     const baseHeightNumber = parseFloat(baseHeight.replace(/[^\d.-]/g, ''));
 
-    const lineHeight = variants[theme.textField.textVariant[size]].lineHeight;
+    const lineHeight = theme.font.variants[theme.textField.textVariant[size]].lineHeight;
     const lineHeightNumber = parseFloat(lineHeight.replace(/[^\d.-]/g, ''));
 
     const smallPadding = 1.1 * 2;

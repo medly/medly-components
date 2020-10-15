@@ -1,4 +1,4 @@
-import { defaultTheme, PaginationTheme } from '@medly-components/theme/src';
+import { defaultTheme, PaginationTheme } from '@medly-components/theme';
 import React from 'react';
 
 export const ThemeInterface: React.FC<PaginationTheme> = () => null;

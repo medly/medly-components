@@ -33,19 +33,10 @@ const styleWithLabel = ({ variant }: StyledProps) => {
     `;
 };
 
-const setFontStyle = ({ theme, size, multiline }: StyledProps) => {
-    if (multiline) {
-        return getFontStyle({ theme, fontVariant: 'body2' });
-    }
-    return getFontStyle({ theme, fontVariant: theme.textField.textVariant[size] });
-};
-
-const setHeight = ({ multiline }: StyledProps) => multiline && `height: 100%`;
-
 export const Input = styled('input')<StyledProps>`
     color: ${({ variant, theme }) => theme.textField[variant].default.textColor};
     width: 100%;
-    ${setHeight};
+    height: ${({ multiline }) => multiline && '100%'};
     margin: 0;
     padding: ${({ multiline, variant, size }) => (multiline && variant !== 'fusion' && size === 'M' ? '1.6rem 0 0 0' : 0)};
     box-sizing: border-box;
@@ -60,7 +51,7 @@ export const Input = styled('input')<StyledProps>`
     ${({ isLabelPresent, size }) => isLabelPresent && size !== 'S' && styleWithLabel};
     &,
     & ~ ${MaskPlaceholder} {
-        ${setFontStyle}
+        ${({ theme, size, multiline }) => getFontStyle({ theme, fontVariant: multiline ? 'body2' : theme.textField.textVariant[size] })}
     }
 
     &:focus {

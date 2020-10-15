@@ -26,7 +26,7 @@ exports[`Form should not render any field if component type is not matched 1`] =
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 100rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -281,7 +281,7 @@ exports[`Form should render properly with initial state 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 100rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -501,6 +501,9 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c26 {
   margin: 0.3rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
@@ -623,6 +626,7 @@ exports[`Form should render properly with initial state 1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c9::after {
@@ -657,6 +661,7 @@ exports[`Form should render properly with initial state 1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c51 {
@@ -782,11 +787,11 @@ exports[`Form should render properly with initial state 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -864,6 +869,12 @@ exports[`Form should render properly with initial state 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -2073,6 +2084,7 @@ exports[`Form should render properly with initial state 1`] = `
               class="c30 c46 c47"
               fill="none"
               height="1em"
+              id="birthDate-calendar-icon"
               viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
@@ -2623,7 +2635,7 @@ exports[`Form should render properly without initial state 1`] = `
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 1rem 2.4rem 1.2rem 2.4rem;
+  padding: 1rem 2.4rem 1.2rem;
   border-radius: 100rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2843,6 +2855,9 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c28 {
   margin: 0.3rem;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 1.8rem;
   height: 1.8rem;
   position: relative;
@@ -2934,6 +2949,7 @@ exports[`Form should render properly without initial state 1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c12::after {
@@ -2968,6 +2984,7 @@ exports[`Form should render properly without initial state 1`] = `
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 1;
+  z-index: 1;
 }
 
 .c51 {
@@ -3093,11 +3110,11 @@ exports[`Form should render properly without initial state 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -3175,6 +3192,12 @@ exports[`Form should render properly without initial state 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+  -webkit-scroll-padding-top: 10px;
+  -moz-scroll-padding-top: 10px;
+  -ms-scroll-padding-top: 10px;
+  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -4307,6 +4330,7 @@ exports[`Form should render properly without initial state 1`] = `
               class="c32 c46 c47"
               fill="none"
               height="1em"
+              id="birthDate-calendar-icon"
               viewBox="0 0 24 24"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
