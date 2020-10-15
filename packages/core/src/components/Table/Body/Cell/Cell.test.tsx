@@ -3,6 +3,7 @@ import React from 'react';
 import Checkbox from '../../../Checkbox';
 import Text from '../../../Text';
 import { Cell } from './Styled/Cell.styled';
+import TableCell from './Cell';
 
 describe('Cell', () => {
     it('should render text properly', () => {
@@ -37,6 +38,13 @@ describe('Cell', () => {
             <Cell>
                 <Checkbox label="Dummy" />
             </Cell>
+        );
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render tooltip properly', () => {
+        const { container } = render(
+            <TableCell data='hello' rowId='1' rowData={[{}]} config={ {title: 'Hello', field: 'hello'} }/>
         );
         expect(container).toMatchSnapshot();
     });
