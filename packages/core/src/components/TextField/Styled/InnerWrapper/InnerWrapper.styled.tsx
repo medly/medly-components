@@ -101,7 +101,7 @@ const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperPro
     const smallPadding = 1.1 * 2;
     const medPadding = 1.6 * 2;
 
-    minRows = minRows || 1;
+    minRows = minRows || 1; // eslint-disable-line no-param-reassign
 
     if (multiline) {
         if (size === 'S' || variant === 'fusion') {
