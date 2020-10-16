@@ -101,26 +101,27 @@ const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperPro
     const smallPadding = 1.1 * 2;
     const medPadding = 1.6 * 2;
 
-    minRows = minRows || 1; // eslint-disable-line no-param-reassign
+    const rows = minRows || 1;
 
     if (multiline) {
         if (size === 'S' || variant === 'fusion') {
-            return lineHeightNumber * minRows + smallPadding;
+            return lineHeightNumber * rows + smallPadding;
         } else {
-            return lineHeightNumber * minRows + medPadding;
+            return lineHeightNumber * rows + medPadding;
         }
     }
     return baseHeightNumber;
 };
 
 const getPadding = ({ size, multiline }: InnerWrapperProps) => {
-    return multiline && size === 'S'
-        ? `1.1rem 1.2rem`
-        : multiline && size === 'M'
-        ? '1.1rem 1.6rem'
-        : size === 'S'
-        ? `0 1.2rem`
-        : `0 1.6rem`;
+    switch (size) {
+        case 'S':
+            return multiline ? '1.1rem 1.2rem' : '0 1.2rem';
+        case 'M':
+            return multiline ? '1.1rem 1.6rem' : '0 1.6rem';
+        default:
+            return '0 1.6rem';
+    }
 };
 
 export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({ ...textField, textField, height: undefined }))<
