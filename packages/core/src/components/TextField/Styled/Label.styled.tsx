@@ -30,7 +30,8 @@ export const Label = styled('label')<{ required: boolean; variant: 'outlined' | 
     transform: translateY(-50%);
     opacity: 1;
     z-index: 1;
-    width: 100%;
+
+    /* width: 100%; */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

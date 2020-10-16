@@ -48,10 +48,11 @@ export const Input = styled('input')<StyledProps>`
     z-index: 1;
     scroll-padding-top: 10px;
 
-    ${({ isLabelPresent, size }) => isLabelPresent && size !== 'S' && styleWithLabel};
+    ${({ isLabelPresent, size, multiline }) => isLabelPresent && size !== 'S' && !multiline && styleWithLabel};
     &,
     & ~ ${MaskPlaceholder} {
-        ${({ theme, size, multiline }) => getFontStyle({ theme, fontVariant: multiline ? 'body2' : theme.textField.textVariant[size] })}
+        ${({ theme, size, multiline }) =>
+            getFontStyle({ theme, fontVariant: multiline && size === 'S' ? 'body2' : theme.textField.textVariant[size] })}
     }
 
     &:focus {

@@ -101,6 +101,8 @@ const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperPro
     const smallPadding = 1.1 * 2;
     const medPadding = 1.6 * 2;
 
+    minRows = minRows === undefined ? 1 : minRows;
+
     if (multiline) {
         if (size === 'S' || variant === 'fusion') {
             return lineHeightNumber * minRows + smallPadding;
@@ -112,7 +114,13 @@ const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperPro
 };
 
 const getPadding = ({ size, multiline }: InnerWrapperProps) => {
-    return multiline ? `1.1rem 1.2rem` : size === 'S' ? `0 1.2rem` : `0 1.6rem`;
+    return multiline && size === 'S'
+        ? `1.1rem 1.2rem`
+        : multiline && size === 'M'
+        ? '1.1rem 1.6rem'
+        : size === 'S'
+        ? `0 1.2rem`
+        : `0 1.6rem`;
 };
 
 export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({ ...textField, textField, height: undefined }))<
