@@ -126,7 +126,7 @@ exports[`Calendar Component should render given date 1`] = `
 }
 
 .c5,
-.c5 .sc-fzoLsD {
+.c5 .sc-fzpans {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -149,7 +149,7 @@ exports[`Calendar Component should render given date 1`] = `
   fill: #b0bcc8;
 }
 
-.c5:disabled .sc-fzoLsD {
+.c5:disabled .sc-fzpans {
   color: #b0bcc8;
 }
 
@@ -162,7 +162,7 @@ exports[`Calendar Component should render given date 1`] = `
   fill: #126AFA;
 }
 
-.c5:not(:disabled):not(:hover) .sc-fzoLsD {
+.c5:not(:disabled):not(:hover) .sc-fzpans {
   color: #303C48;
 }
 
@@ -175,7 +175,7 @@ exports[`Calendar Component should render given date 1`] = `
   fill: #0D4AAF;
 }
 
-.c5:not(:disabled):active .sc-fzoLsD {
+.c5:not(:disabled):active .sc-fzpans {
   color: #13181D;
 }
 
@@ -189,7 +189,7 @@ exports[`Calendar Component should render given date 1`] = `
   fill: #0F5AD5;
 }
 
-.c5:not(:disabled):not(:active):hover .sc-fzoLsD {
+.c5:not(:disabled):not(:active):hover .sc-fzpans {
   color: #303C48;
 }
 
@@ -205,22 +205,22 @@ exports[`Calendar Component should render given date 1`] = `
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c3 .sc-AxmLO {
+.c3 .sc-fzozJi {
   margin: 0;
   caret-color: transparent;
 }
 
-.c3 .sc-AxmLO label {
+.c3 .sc-fzozJi label {
   pointer-events: none;
 }
 
-.c3 .sc-AxmLO div,
-.c3 .sc-AxmLO input,
-.c3 .sc-AxmLO label {
+.c3 .sc-fzozJi div,
+.c3 .sc-fzozJi input,
+.c3 .sc-fzozJi label {
   cursor: pointer;
 }
 
-.c3 .sc-AxmLO .sc-AxhUy {
+.c3 .sc-fzozJi .sc-AxgMl {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -315,12 +315,12 @@ exports[`Calendar Component should render given date 1`] = `
   overflow: auto;
 }
 
-.c2 .sc-AxmLO {
+.c2 .sc-fzozJi {
   min-width: unset;
   max-width: 9.5rem;
 }
 
-.c2 .sc-AxmLO > div {
+.c2 .sc-fzozJi > div {
   height: 3.5rem;
   padding: 0 0 0 1rem;
 }
@@ -1153,7 +1153,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
 }
 
 .c5,
-.c5 .sc-fzoLsD {
+.c5 .sc-fzpans {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1176,7 +1176,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   fill: #b0bcc8;
 }
 
-.c5:disabled .sc-fzoLsD {
+.c5:disabled .sc-fzpans {
   color: #b0bcc8;
 }
 
@@ -1189,7 +1189,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   fill: #cc0000;
 }
 
-.c5:not(:disabled):not(:hover) .sc-fzoLsD {
+.c5:not(:disabled):not(:hover) .sc-fzpans {
   color: #303C48;
 }
 
@@ -1202,7 +1202,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   fill: #cc0000;
 }
 
-.c5:not(:disabled):active .sc-fzoLsD {
+.c5:not(:disabled):active .sc-fzpans {
   color: #13181D;
 }
 
@@ -1216,7 +1216,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   fill: #cc0000;
 }
 
-.c5:not(:disabled):not(:active):hover .sc-fzoLsD {
+.c5:not(:disabled):not(:active):hover .sc-fzpans {
   color: #303C48;
 }
 
@@ -1232,22 +1232,22 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c3 .sc-AxmLO {
+.c3 .sc-fzozJi {
   margin: 0;
   caret-color: transparent;
 }
 
-.c3 .sc-AxmLO label {
+.c3 .sc-fzozJi label {
   pointer-events: none;
 }
 
-.c3 .sc-AxmLO div,
-.c3 .sc-AxmLO input,
-.c3 .sc-AxmLO label {
+.c3 .sc-fzozJi div,
+.c3 .sc-fzozJi input,
+.c3 .sc-fzozJi label {
   cursor: pointer;
 }
 
-.c3 .sc-AxmLO .sc-AxhUy {
+.c3 .sc-fzozJi .sc-AxgMl {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -1342,12 +1342,12 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   overflow: auto;
 }
 
-.c2 .sc-AxmLO {
+.c2 .sc-fzozJi {
   min-width: unset;
   max-width: 9.5rem;
 }
 
-.c2 .sc-AxmLO > div {
+.c2 .sc-fzozJi > div {
   height: 3.5rem;
   padding: 0 0 0 1rem;
 }
