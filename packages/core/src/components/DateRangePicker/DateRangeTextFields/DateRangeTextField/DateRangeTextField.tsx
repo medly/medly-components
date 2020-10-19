@@ -6,7 +6,7 @@ export const DateRangeTextField: FC<Props> = React.memo(
     React.forwardRef((props: Props, ref) => {
         const { id, size, variant, dateMaskLabel, required, label, ...restProps } = props;
         return (
-            <TextFieldStyled.InputWrapper id={`${id}-wrapper`}>
+            <TextFieldStyled.InputWrapper id={`${id}-wrapper`} size={size} variant={variant}>
                 <TextFieldStyled.Input id={id} isLabelPresent ref={ref} size={size} variant={variant} required={required} {...restProps} />
                 <TextFieldStyled.MaskPlaceholder size={size} isLabelPresent variant={variant}>
                     {dateMaskLabel}

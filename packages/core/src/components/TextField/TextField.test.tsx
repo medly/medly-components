@@ -2,6 +2,7 @@ import { CheckIcon } from '@medly-components/icons';
 import { fireEvent, render, waitFor } from '@test-utils';
 import React from 'react';
 import { TextField } from './TextField';
+import { TextFieldProps } from './types';
 
 describe('TextField', () => {
     it('should render properly with default props', () => {
@@ -156,7 +157,7 @@ describe('TextField', () => {
         });
     });
 
-    describe.each(['outlined', 'filled', 'fusion'])('with %s variant', (variant: Props['variant']) => {
+    describe.each(['outlined', 'filled', 'fusion'])('with %s variant', (variant: TextFieldProps['variant']) => {
         describe.each(['with label', 'without label'])('and %s', (labelCnd: string) => {
             it('should render default state properly', () => {
                 const { container } = render(<TextField variant={variant} label={labelCnd === 'with label' ? 'Name' : ''} />);
