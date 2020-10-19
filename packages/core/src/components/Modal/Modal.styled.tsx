@@ -19,6 +19,7 @@ export const ModalBackgroundStyled = styled('div')`
 
 export const HeaderContentStyled = styled.div`
     overflow-y: auto;
+    overflow-x: hidden;
 
     &::-webkit-scrollbar {
         width: 0.5rem;

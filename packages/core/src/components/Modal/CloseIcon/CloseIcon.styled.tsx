@@ -10,6 +10,7 @@ const getStyle = ({ styleType }: { styleType: 'default' | 'hovered' | 'pressed' 
 `;
 
 export const CloseIcon = styled(ClearIcon)`
+    z-index: 20;
     position: absolute;
     top: 1.2rem;
     right: 1.2rem;
