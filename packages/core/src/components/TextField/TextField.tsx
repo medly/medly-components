@@ -80,8 +80,8 @@ export const TextField: FC<Props> & WithStyle = React.memo(
             setLabelWidth(labelWidth);
 
             const inputWidth = inputRef.current.offsetWidth;
-            setInputWidth(inputWidth), [];
-        });
+            setInputWidth(inputWidth);
+        }, [label]);
 
         return (
             <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth} maxWidth={maxWidth} id={`${inputId}-input-wrapper`}>
