@@ -5,5 +5,6 @@ export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
     scrollState: {
         scrolledToTop: boolean;
         scrolledToBottom: boolean;
+        scrollPosition: number;
     };
 }

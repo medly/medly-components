@@ -3,9 +3,10 @@ export interface Props {
     scrollState: {
         scrolledToTop: boolean;
         scrolledToBottom: boolean;
+        scrollPosition: number;
     };
     dispatch: React.Dispatch<{
-        type: 'scrolledToTop' | 'scrolledToBottom';
-        value: boolean;
+        type: 'scrolledToTop' | 'scrolledToBottom' | 'scrollPosition';
+        value: boolean | number;
     }>;
 }
