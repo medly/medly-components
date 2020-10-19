@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.22.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.21.0...@medly-components/theme@1.22.0) (2020-10-15)
+
+
+### Features
+
+* move border radius and padding to them of card component ([c0b209c](https://github.com/medly/medly-components/commit/c0b209c2957bc07b50537d38684bd15885838163))
+
+
+
+
+
 # [1.21.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.20.0...@medly-components/theme@1.21.0) (2020-10-13)
 
 

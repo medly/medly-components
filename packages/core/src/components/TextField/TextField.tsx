@@ -25,6 +25,8 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                 disabled,
                 mask,
                 placeholder,
+                multiline,
+                minRows,
                 validator,
                 ...restProps
             } = props,
@@ -80,13 +82,15 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                     isErrorPresent={isErrorPresent}
                     isLabelPresent={isLabelPresent}
                     isTextPresent={isTextPresent}
+                    minRows={minRows}
+                    multiline={multiline}
                 >
                     {isPrefixPresent && (
                         <Styled.Prefix size={size}>
                             <Prefix size={size} />
                         </Styled.Prefix>
                     )}
-                    <Styled.InputWrapper>
+                    <Styled.InputWrapper multiline={multiline} size={size} variant={props.variant}>
                         <Styled.Input
                             ref={inputRef}
                             value={value}
@@ -100,6 +104,8 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                             isLabelPresent={isLabelPresent}
                             errorText={errorText || builtInErrorMessage}
                             variant={props.variant}
+                            as={multiline ? 'textarea' : 'input'}
+                            multiline={multiline}
                             {...{ ...restProps, size, onBlur, onInvalid, onChange }}
                         />
                         {maskLabel && (
@@ -107,7 +113,13 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                                 {maskLabel}
                             </Styled.MaskPlaceholder>
                         )}
-                        <Styled.Label htmlFor={`${inputId}-input`} size={size} required={required} variant={props.variant}>
+                        <Styled.Label
+                            htmlFor={`${inputId}-input`}
+                            size={size}
+                            required={required}
+                            variant={props.variant}
+                            multiline={multiline}
+                        >
                             {label}
                         </Styled.Label>
                     </Styled.InputWrapper>

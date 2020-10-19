@@ -2,7 +2,6 @@ import { CheckIcon } from '@medly-components/icons';
 import { fireEvent, render, waitFor } from '@test-utils';
 import React from 'react';
 import { TextField } from './TextField';
-import { TextFieldProps } from './types';
 
 describe('TextField', () => {
     it('should render properly with default props', () => {
@@ -91,6 +90,11 @@ describe('TextField', () => {
             expect(getByText('DD / MM / YYYY')).toBeInTheDocument();
         });
 
+        it('should render mask if provided with fusion variant', () => {
+            const { getByText } = render(<TextField label="Date" minWidth="30rem" id="dummy" variant="fusion" mask="DD / MM / YYYY" />);
+            expect(getByText('DD / MM / YYYY')).toBeInTheDocument();
+        });
+
         it('should on change on changing the value', async () => {
             const mockOnChange = jest.fn();
             const { container } = render(<TextField minWidth="30rem" id="dummy" mask="DD / MM / YYYY" onChange={mockOnChange} />);
@@ -152,7 +156,7 @@ describe('TextField', () => {
         });
     });
 
-    describe.each(['outlined', 'filled'])('with %s variant', (variant: TextFieldProps['variant']) => {
+    describe.each(['outlined', 'filled', 'fusion'])('with %s variant', (variant: Props['variant']) => {
         describe.each(['with label', 'without label'])('and %s', (labelCnd: string) => {
             it('should render default state properly', () => {
                 const { container } = render(<TextField variant={variant} label={labelCnd === 'with label' ? 'Name' : ''} />);
@@ -175,6 +179,13 @@ describe('TextField', () => {
             expect(container).toMatchSnapshot();
         });
 
+        it('should render error state properly with a value', () => {
+            const { container } = render(
+                <TextField variant={variant} label="Name" errorText="Something wen wrong" value="Example value" />
+            );
+            expect(container).toMatchSnapshot();
+        });
+
         it('should render helper text properly', () => {
             const { container } = render(<TextField variant={variant} label="Name" helperText="Some text" />);
             expect(container.querySelector('span')).toMatchSnapshot();
@@ -183,6 +194,11 @@ describe('TextField', () => {
         it('should render error text properly', () => {
             const { container } = render(<TextField variant={variant} label="Name" errorText="Some text" />);
             expect(container.querySelector('span')).toMatchSnapshot();
+        });
+
+        it('should render properly with multiline', () => {
+            const { container } = render(<TextField variant={variant} label="Name" multiline={true} />);
+            expect(container).toMatchSnapshot();
         });
 
         it('should render properly with prefix', () => {
