@@ -24,17 +24,17 @@ describe('ActionBar component', () => {
 
     it('should render correctly with all the default props', () => {
         const { container, getByText } = renderer();
-        expect(getByText('Lorem'));
-        expect(getByText('1 Rows Selected'));
         expect(container).toMatchSnapshot();
+        expect(getByText('Lorem')).toBeInTheDocument();
+        expect(getByText('1 Rows Selected')).toBeInTheDocument();
     });
 
     it('should not render Action bar with passed parameters', () => {
         const actionElements = [getButtonElement('Test1'), getButtonElement('Test2')];
         const { container, getByText } = renderer({ actions: actionElements, selectedRowIds: [1, 2] });
-        expect(getByText('Test1'));
-        expect(getByText('Test2'));
-        expect(getByText('2 Rows Selected'));
+        expect(getByText('Test1')).toBeInTheDocument();
+        expect(getByText('Test2')).toBeInTheDocument();
+        expect(getByText('2 Rows Selected')).toBeInTheDocument();
         expect(container).toMatchSnapshot();
     });
 });

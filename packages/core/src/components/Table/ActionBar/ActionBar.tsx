@@ -14,3 +14,4 @@ export const ActionBar: React.FC = React.memo(() => {
         </PopoverWrapper>
     );
 });
+ActionBar.displayName = 'ActionBar';

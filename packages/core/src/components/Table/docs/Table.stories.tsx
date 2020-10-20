@@ -27,11 +27,11 @@ const StyledButton = styled(Button)`
 `;
 
 export const Actions = [
-    <StyledButton size="S" variant="solid">
+    <StyledButton size="S" variant="solid" key="key1">
         <RemoveCircleIcon size="S" />
         Lorem
     </StyledButton>,
-    <StyledButton size="S" variant="solid">
+    <StyledButton size="S" variant="solid" key="key2">
         <RemoveCircleIcon size="S" />
         Lorem ipsum
     </StyledButton>
