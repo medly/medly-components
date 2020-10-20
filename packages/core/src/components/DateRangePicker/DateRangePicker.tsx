@@ -89,5 +89,6 @@ DateRangePicker.defaultProps = {
     variant: 'filled',
     minWidth: '33.8rem',
     fromLabel: 'From',
-    toLabel: 'To'
+    toLabel: 'To',
+    displayFormat: 'MM-dd-yyyy'
 };

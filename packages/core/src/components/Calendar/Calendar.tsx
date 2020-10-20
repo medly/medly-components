@@ -11,7 +11,7 @@ import { CalendarProps } from './types';
 import WeekDays from './WeekDays';
 
 export const Calendar: React.FC<CalendarProps> & WithStyle = React.memo(
-    ({ date, onChange, minSelectableDate, maxSelectableDate, isErrorPresent, disableHeader, ...restProps }) => {
+    ({ date, onChange, minSelectableDate, maxSelectableDate, isErrorPresent, ...restProps }) => {
         const today = new Date(),
             [, setCalenderVisibility] = useContext(PopoverContext),
             [{ month, year }, setMonthAndYear] = useState(getMonthAndYearFromDate(date || today)),
@@ -70,48 +70,46 @@ export const Calendar: React.FC<CalendarProps> & WithStyle = React.memo(
 
         return (
             <Styled.Calendar {...restProps}>
-                {!disableHeader && (
-                    <Styled.Header>
-                        <Styled.MonthAndYearSelection>
-                            <SingleSelect
-                                id={`${restProps.id}-month-selector`}
-                                size="S"
-                                value={month}
-                                options={monthOptions}
-                                onChange={handleMonthChange}
-                                placeholder="Month"
-                                variant="flat"
-                                errorText={isErrorPresent ? ' ' : ''}
-                            />
-                            <SingleSelect
-                                id={`${restProps.id}-year-selector`}
-                                size="S"
-                                value={year}
-                                options={yearOptions}
-                                onChange={handleYearChange}
-                                placeholder="Year"
-                                variant="flat"
-                                errorText={isErrorPresent ? ' ' : ''}
-                            />
-                        </Styled.MonthAndYearSelection>
-                        <Styled.MonthNavigation
-                            className="calendar-month-navigation-go-back"
-                            type="button"
-                            disabled={isPrevBtnDisabled}
-                            onClick={handlePreviousBtnClick}
-                        >
-                            <KeyboardArrowLeftIcon />
-                        </Styled.MonthNavigation>
-                        <Styled.MonthNavigation
-                            className="calendar-month-navigation-go-forward"
-                            type="button"
-                            disabled={isNextBtnDisabled}
-                            onClick={handleNextBtnClick}
-                        >
-                            <KeyboardArrowRightIcon />
-                        </Styled.MonthNavigation>
-                    </Styled.Header>
-                )}
+                <Styled.Header>
+                    <Styled.MonthAndYearSelection>
+                        <SingleSelect
+                            id={`${restProps.id}-month-selector`}
+                            size="S"
+                            value={month}
+                            options={monthOptions}
+                            onChange={handleMonthChange}
+                            placeholder="Month"
+                            variant="flat"
+                            errorText={isErrorPresent ? ' ' : ''}
+                        />
+                        <SingleSelect
+                            id={`${restProps.id}-year-selector`}
+                            size="S"
+                            value={year}
+                            options={yearOptions}
+                            onChange={handleYearChange}
+                            placeholder="Year"
+                            variant="flat"
+                            errorText={isErrorPresent ? ' ' : ''}
+                        />
+                    </Styled.MonthAndYearSelection>
+                    <Styled.MonthNavigation
+                        className="calendar-month-navigation-go-back"
+                        type="button"
+                        disabled={isPrevBtnDisabled}
+                        onClick={handlePreviousBtnClick}
+                    >
+                        <KeyboardArrowLeftIcon />
+                    </Styled.MonthNavigation>
+                    <Styled.MonthNavigation
+                        className="calendar-month-navigation-go-forward"
+                        type="button"
+                        disabled={isNextBtnDisabled}
+                        onClick={handleNextBtnClick}
+                    >
+                        <KeyboardArrowRightIcon />
+                    </Styled.MonthNavigation>
+                </Styled.Header>
                 <Styled.CalendarGrid>
                     <WeekDays />
                     {getCalendarDates(month, year).map((dateArray, index) => {
@@ -144,7 +142,6 @@ Calendar.displayName = 'Calendar';
 Calendar.Style = Styled.Calendar;
 Calendar.defaultProps = {
     date: null,
-    disableHeader: false,
     minSelectableDate: new Date(1901, 0, 1),
     maxSelectableDate: new Date(2100, 11, 1)
 };

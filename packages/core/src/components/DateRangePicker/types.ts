@@ -8,9 +8,9 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     /** Function to be called on change of the dates */
     onChange: (value: { startDate: Date | null; endDate: Date | null }) => void;
     /** From Label */
-    fromLabel: string;
+    fromLabel?: string;
     /** To Label */
-    toLabel: string;
+    toLabel?: string;
     /** Variants */
     variant?: 'outlined' | 'filled';
     /** Helper Text */

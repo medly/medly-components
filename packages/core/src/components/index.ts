@@ -22,6 +22,7 @@ export { default as Pagination } from './Pagination';
 export { default as Popover } from './Popover';
 export { default as Radio } from './Radio';
 export { default as RadioGroup } from './RadioGroup';
+export { default as SearchBox } from './SearchBox';
 export { default as SingleSelect } from './SingleSelect';
 export { default as Stepper } from './Stepper';
 export { default as Table } from './Table';
@@ -32,4 +33,3 @@ export { default as Toast } from './Toast';
 export { default as ToastContainer } from './ToastContainer';
 export { addToast } from './ToastContainer/ToastStore';
 export { default as Toggle } from './Toggle';
-export {default as SearchBox} from './SearchBox'
