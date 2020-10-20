@@ -75,6 +75,13 @@ const table: TableTheme = {
                 }
             }
         }
+    },
+    actionBar: {
+        bgColor: colors.blue[500],
+        shadowColor: colors.blue[600],
+        separatorColor: colors.grey[200],
+        color: colors.white,
+        button: { borderColor: colors.white }
     }
 };
 

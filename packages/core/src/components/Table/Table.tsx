@@ -1,5 +1,6 @@
 import { useCombinedRefs, useUpdateEffect, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useMemo, useReducer, useState } from 'react';
+import ActionBar from './ActionBar';
 import Body from './Body';
 import ColumnConfiguration from './ColumnConfiguration';
 import { loadingBodyData } from './constants';
@@ -28,6 +29,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                 isLoading,
                 selectedRowIds,
                 showRowWithCardStyle,
+                enableActionBar,
                 ...restProps
             } = props,
             isGroupedTable = !!restProps.groupBy,
@@ -72,6 +74,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
             <TablePropsContext.Provider
                 value={{ ...props, columns, size, data: isLoading ? loadingBodyData : data, isGroupedTable, tableRef }}
             >
+                {enableActionBar && selectedRowIds.length > 0 && <ActionBar />}
                 <TableStyled
                     ref={tableRef}
                     {...restProps}
@@ -115,7 +118,8 @@ Table.defaultProps = {
     rowIdentifier: 'id',
     defaultSortOrder: 'desc',
     rowClickDisableKey: '',
-    rowSelectionDisableKey: ''
+    rowSelectionDisableKey: '',
+    enableActionBar: false
 };
 
 Table.displayName = 'Table';

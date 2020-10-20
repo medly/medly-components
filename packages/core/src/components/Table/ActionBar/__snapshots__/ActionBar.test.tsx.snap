@@ -1,0 +1,597 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionBar component should not render Action bar with passed parameters 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c8 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c9 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 1.6rem;
+  text-align: initial;
+}
+
+.c4 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 0.8rem 2.4rem 1rem;
+  border-radius: 0.8rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c4:hover {
+  cursor: pointer;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c4:disabled {
+  cursor: not-allowed;
+}
+
+.c4:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c4:disabled .c5 * {
+  fill: #98A7B7;
+}
+
+.c4:not(:disabled):not(:hover) {
+  color: #ffffff;
+  background: #126AFA;
+}
+
+.c4:not(:disabled):not(:hover) .c5 * {
+  fill: #ffffff;
+}
+
+.c4:not(:disabled):active {
+  color: #ffffff;
+  background: #0D4AAF;
+}
+
+.c4:not(:disabled):active .c5 * {
+  fill: #ffffff;
+}
+
+.c4:not(:disabled):not(:active):hover {
+  color: #ffffff;
+  background: #0F5AD5;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+}
+
+.c4:not(:disabled):not(:active):hover .c5 * {
+  fill: #ffffff;
+}
+
+.c4 .c5 + .c7 {
+  margin-left: 0.8rem;
+}
+
+.c4 .c7 + .c5 {
+  margin-left: 0.8rem;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.c1 {
+  z-index: 1000;
+  position: absolute;
+  bottom: calc(100% + 1.5rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 0.8rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0.4rem 1.6rem rgba(176,188,200,0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #126AFA;
+  width: 100%;
+  height: max-height;
+  padding: 0;
+  bottom: 0.6rem;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  left: auto;
+  box-shadow: 0 0.4rem 1.6rem rgba(15,90,213,0.2);
+}
+
+.c1::after {
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 1000;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid;
+}
+
+.c1::after {
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 100%;
+  left: 50%;
+}
+
+.c1::after {
+  left: 2.4rem;
+  border-top-color: #126AFA;
+}
+
+.c1 > .c7 {
+  margin-right: 1.6rem;
+  color: #ffffff;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  width: 80%;
+}
+
+.c2 > .c3 {
+  margin: 0.8rem 1.6rem 0.8rem 0.8rem;
+  border: 0.1rem solid #ffffff;
+  height: 3.2rem;
+}
+
+.c2 > .c3:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: calc(100% + 0.8rem);
+  width: 0.1rem;
+  height: 2.4rem;
+  background: #dfe4e9;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.c2 >:not(:first-child) {
+  margin-left: 0;
+}
+
+<div>
+  <div
+    class="sc-fzoYHE c0"
+  >
+    <div
+      class="sc-fzpkqZ c1"
+    >
+      <div
+        class="c2"
+      >
+        <button
+          class="c3 c4"
+          type="button"
+        >
+          <svg
+            class="c5 c6"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm5 0c0 .55.45 1 1 1h8c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1z"
+              fill="#000"
+              fill-opacity=".54"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <span
+            class="c7 c8"
+          >
+            Test1
+          </span>
+        </button>
+        <button
+          class="c3 c4"
+          type="button"
+        >
+          <svg
+            class="c5 c6"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm5 0c0 .55.45 1 1 1h8c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1z"
+              fill="#000"
+              fill-opacity=".54"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <span
+            class="c7 c8"
+          >
+            Test2
+          </span>
+        </button>
+      </div>
+      <span
+        class="c7 c9"
+      >
+        2 Rows Selected
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ActionBar component should render correctly with all the default props 1`] = `
+.c6 {
+  overflow: visible;
+  font-size: 2rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c8 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c9 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 1.6rem;
+  text-align: initial;
+}
+
+.c4 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 0.8rem 2.4rem 1rem;
+  border-radius: 0.8rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c4 * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c4:hover {
+  cursor: pointer;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c4:disabled {
+  cursor: not-allowed;
+}
+
+.c4:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c4:disabled .c5 * {
+  fill: #98A7B7;
+}
+
+.c4:not(:disabled):not(:hover) {
+  color: #ffffff;
+  background: #126AFA;
+}
+
+.c4:not(:disabled):not(:hover) .c5 * {
+  fill: #ffffff;
+}
+
+.c4:not(:disabled):active {
+  color: #ffffff;
+  background: #0D4AAF;
+}
+
+.c4:not(:disabled):active .c5 * {
+  fill: #ffffff;
+}
+
+.c4:not(:disabled):not(:active):hover {
+  color: #ffffff;
+  background: #0F5AD5;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+}
+
+.c4:not(:disabled):not(:active):hover .c5 * {
+  fill: #ffffff;
+}
+
+.c4 .c5 + .c7 {
+  margin-left: 0.8rem;
+}
+
+.c4 .c7 + .c5 {
+  margin-left: 0.8rem;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.c1 {
+  z-index: 1000;
+  position: absolute;
+  bottom: calc(100% + 1.5rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 0.8rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0.4rem 1.6rem rgba(176,188,200,0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #126AFA;
+  width: 100%;
+  height: max-height;
+  padding: 0;
+  bottom: 0.6rem;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  left: auto;
+  box-shadow: 0 0.4rem 1.6rem rgba(15,90,213,0.2);
+}
+
+.c1::after {
+  content: '';
+  width: 0;
+  height: 0;
+  z-index: 1000;
+  position: absolute;
+  border-left: 0.8rem solid transparent;
+  border-right: 0.8rem solid transparent;
+  border-top: 1rem solid;
+}
+
+.c1::after {
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 100%;
+  left: 50%;
+}
+
+.c1::after {
+  left: 2.4rem;
+  border-top-color: #126AFA;
+}
+
+.c1 > .c7 {
+  margin-right: 1.6rem;
+  color: #ffffff;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  width: 80%;
+}
+
+.c2 > .c3 {
+  margin: 0.8rem 1.6rem 0.8rem 0.8rem;
+  border: 0.1rem solid #ffffff;
+  height: 3.2rem;
+}
+
+.c2 > .c3:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: calc(100% + 0.8rem);
+  width: 0.1rem;
+  height: 2.4rem;
+  background: #dfe4e9;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.c2 >:not(:first-child) {
+  margin-left: 0;
+}
+
+<div>
+  <div
+    class="sc-fzoYHE c0"
+  >
+    <div
+      class="sc-fzpkqZ c1"
+    >
+      <div
+        class="c2"
+      >
+        <button
+          class="c3 c4"
+          type="button"
+        >
+          <svg
+            class="c5 c6"
+            fill="none"
+            height="1em"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm5 0c0 .55.45 1 1 1h8c.55 0 1-.45 1-1s-.45-1-1-1H8c-.55 0-1 .45-1 1z"
+              fill="#000"
+              fill-opacity=".54"
+              fill-rule="evenodd"
+            />
+          </svg>
+          <span
+            class="c7 c8"
+          >
+            Lorem
+          </span>
+        </button>
+      </div>
+      <span
+        class="c7 c9"
+      >
+        1 Rows Selected
+      </span>
+    </div>
+  </div>
+</div>
+`;
