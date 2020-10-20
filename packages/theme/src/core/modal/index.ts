@@ -10,6 +10,11 @@ const modal: ModalTheme = {
     borderRadius: '2.4rem',
     closeIcon: {
         borderRadius: '50%',
+        borderColor: {
+            default: colors.black,
+            hovered: colors.white,
+            pressed: colors.white
+        },
         color: {
             default: colors.black,
             hovered: colors.white,

@@ -1,4 +1,5 @@
 import { HTMLProps, WithStyle, WithThemeProp } from '@medly-components/utils';
+import { MutableRefObject } from 'react';
 import { ModalActionUserProps } from './Actions/types';
 import { Props as ModalPopupProps } from './Popup/types';
 
@@ -20,4 +21,22 @@ export interface ModalStaticProps {
     Header?: React.FC;
     Content?: React.FC;
     Actions?: React.FC<ModalActionUserProps>;
+}
+
+export interface ContentHeaderProps {
+    /** height of the header component */
+    headerHeight: number;
+}
+
+export interface UseScrollStateProps {
+    scrollState: {
+        scrolledToTop: boolean;
+        scrolledToBottom: boolean;
+        scrollPosition: number;
+    };
+    ref: MutableRefObject<HTMLDivElement>;
+    dispatch: React.Dispatch<{
+        type: 'scrolledToTop' | 'scrolledToBottom' | 'scrollPosition';
+        value: boolean | number;
+    }>;
 }

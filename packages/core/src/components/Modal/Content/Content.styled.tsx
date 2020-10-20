@@ -1,17 +1,43 @@
 import { css, styled } from '@medly-components/utils';
+import { getRemFromPx } from '../helpers';
 import { Props } from './types';
+
+const getPadding = ({ scrollState, headerHeight }: Props) => {
+    const { scrollPosition } = scrollState;
+    // divide pixel values by 10 for REM values
+    const scrollPositionRem = getRemFromPx(scrollPosition);
+    const headerHeightRem = getRemFromPx(headerHeight);
+
+    // As the header/content area is scrolled, the top padding of the header component decreases from 6.6rem to 1.9rem.
+    // When the top padding of the header component hits 1.9rem, the header becomes fixed. In order to keep the content
+    // component positioned correctly, we add top padding to the content component equal to height of the (now fixed) header.
+    return css`
+        padding: ${({ theme }) => `0 ${theme.spacing.S4}`};
+        padding-top: ${6.6 - scrollPositionRem > 1.9 ? '0' : `${headerHeightRem}rem `};
+
+        @media (min-width: 768px) {
+            padding-top: 0;
+        }
+    `;
+};
 
 export const Content = styled('div')`
     flex: 1;
-    overflow: hidden;
-    padding: ${({ theme }) => `0 ${theme.spacing.S4}`};
+    box-sizing: border-box;
+    ${getPadding}
 
-    ${({ scrollState }: Props) => {
-        const { scrollPosition } = scrollState;
-        const scrollPositionRem = scrollPosition ? scrollPosition / 10 : 0;
+    @media (min-width: 768px) {
+        overflow: auto;
 
-        return css`
-            padding-top: ${6.6 - scrollPositionRem > 1.9 ? '0' : '12.5rem'};
-        `;
-    }}
+        &::-webkit-scrollbar {
+            width: 0.5rem;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 1rem;
+            background-color: ${({ theme }) => theme.modal.scrollbarThumbColor};
+        }
+    }
 `;

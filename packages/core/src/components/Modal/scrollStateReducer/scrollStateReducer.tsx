@@ -1,6 +1,8 @@
+import { ScrollActionTypes } from './types';
+
 export const reducer = (
     state: { scrolledToTop: boolean; scrolledToBottom: boolean; scrollPosition: number },
-    action: { type: 'scrolledToTop' | 'scrolledToBottom' | 'scrollPosition'; value: boolean | number }
+    action: ScrollActionTypes
 ) => {
     switch (action.type) {
         case 'scrolledToTop':

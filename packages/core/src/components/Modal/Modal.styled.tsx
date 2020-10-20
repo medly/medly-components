@@ -1,4 +1,5 @@
 import { styled } from '@medly-components/utils';
+import { ContentHeaderProps } from './types';
 
 export const ModalBackgroundStyled = styled('div')`
     display: flex;
@@ -17,7 +18,9 @@ export const ModalBackgroundStyled = styled('div')`
     }
 `;
 
-export const HeaderContentStyled = styled.div`
+export const ContentHeaderStyled = styled.div<ContentHeaderProps>`
+    display: flex;
+    flex-direction: column;
     overflow-y: auto;
     overflow-x: hidden;
 
@@ -26,9 +29,18 @@ export const HeaderContentStyled = styled.div`
     }
     &::-webkit-scrollbar-track {
         background-color: transparent;
+        margin-top: ${({ headerHeight }) => headerHeight / 10}rem;
     }
     &::-webkit-scrollbar-thumb {
         border-radius: 1rem;
         background-color: ${({ theme }) => theme.modal.scrollbarThumbColor};
+    }
+
+    @media (min-width: 768px) {
+        overflow: hidden;
+
+        &::-webkit-scrollbar-track {
+            margin-top: 0;
+        }
     }
 `;

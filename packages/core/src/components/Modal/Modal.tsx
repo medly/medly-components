@@ -1,12 +1,13 @@
 import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useEffect, useReducer, useRef } from 'react';
+import React, { FC, useCallback, useEffect, useReducer, useRef, useState } from 'react';
 import Actions from './Actions';
 import CloseIcon from './CloseIcon';
 import Content from './Content';
 import Header from './Header';
-import { HeaderContentStyled, ModalBackgroundStyled } from './Modal.styled';
+import { useScrollState } from './helpers';
+import { ContentHeaderStyled, ModalBackgroundStyled } from './Modal.styled';
 import Popup from './Popup';
-import { reducer } from './scrollStateReducer';
+import { reducer } from './scrollStateReducer/scrollStateReducer';
 import { ModalStaticProps, Props } from './types';
 
 export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
@@ -15,8 +16,10 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
             id = restProps.id || 'medly-modal',
             isEscPressed = useKeyPress('Escape'),
             modalRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
-            headerContentRef = useRef(),
-            [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 });
+            contentHeaderRef = useRef(),
+            [headerHeight, setHeaderHeight] = useState(0),
+            [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 }),
+            handleScroll = useScrollState({ ref: contentHeaderRef, scrollState, dispatch });
 
         const ContentHeaderChildren = React.Children.toArray(children).filter((child: any) => {
             return child.type.displayName === 'Header' || child.type.displayName === 'Content';
@@ -31,22 +34,6 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
         }, [shouldCloseOnOutsideClick, onCloseModal]);
 
         useEffect(() => {
-            const element = headerContentRef.current as HTMLElement;
-            headerContentRef.current && dispatch({ type: 'scrolledToBottom', value: element.clientHeight === element.scrollHeight });
-        }, [headerContentRef.current]);
-
-        const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
-            e.stopPropagation();
-            const element = e.target as HTMLElement,
-                isScrolledToTop = element.scrollTop === 0,
-                isScrolledToBottom = Math.ceil(element.scrollTop + element.clientHeight) === element.scrollHeight;
-
-            scrollState.scrolledToTop !== isScrolledToTop && dispatch({ type: 'scrolledToTop', value: isScrolledToTop });
-            scrollState.scrolledToBottom !== isScrolledToBottom && dispatch({ type: 'scrolledToBottom', value: isScrolledToBottom });
-            dispatch({ type: 'scrollPosition', value: element.scrollTop });
-        };
-
-        useEffect(() => {
             open && isEscPressed && onCloseModal();
         }, [open, isEscPressed]);
 
@@ -55,15 +42,22 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
                 <ModalBackgroundStyled {...{ ...restProps, id }} onClick={handleBackgroundClick}>
                     <Popup ref={modalRef} id={`${id}-popup`} {...{ minWidth, minHeight }}>
                         <CloseIcon id={`${id}-close-button`} onClick={onCloseModal} />
-                        <HeaderContentStyled ref={headerContentRef} onScroll={handleScroll}>
+                        <ContentHeaderStyled
+                            id={`${id}-content-header`}
+                            ref={contentHeaderRef}
+                            onScroll={handleScroll}
+                            headerHeight={headerHeight}
+                        >
                             {ContentHeaderChildren.map((child: any) =>
                                 React.cloneElement(child as any, {
+                                    headerHeight,
+                                    setHeaderHeight,
                                     scrollState,
                                     dispatch,
                                     id
                                 })
                             )}
-                        </HeaderContentStyled>
+                        </ContentHeaderStyled>
                         {ActionsChild[0] &&
                             React.cloneElement(ActionsChild[0] as any, {
                                 scrollState,
