@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.23.1](https://github.com/medly/medly-components/compare/@medly-components/theme@1.23.0...@medly-components/theme@1.23.1) (2020-10-20)
+
+
+### Bug Fixes
+
+* increase max screen size of XL breakpoint ([55b4640](https://github.com/medly/medly-components/commit/55b4640f180f9859135d6f4233932498bc2f9d40))
+
+
+
+
+
 # [1.23.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.22.0...@medly-components/theme@1.23.0) (2020-10-20)
 
 
