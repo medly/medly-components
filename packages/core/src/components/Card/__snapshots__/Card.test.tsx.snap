@@ -39,10 +39,6 @@ exports[`Card component should render correctly with all the default props 1`] =
   align-items: center;
 }
 
-.c0:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
-}
-
 @media (min-width:0px) and (max-width:767px) {
   .c0 {
     padding: 2.4rem;
@@ -120,10 +116,6 @@ exports[`Card component should render properly when flow direction is horizontal
   justify-content: center;
 }
 
-.c0:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
-}
-
 .c0 > div + div {
   border-left: 1px solid #98A7B7;
 }
@@ -151,10 +143,6 @@ exports[`Card component should render properly when flow direction is horizontal
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-}
-
-.c1:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
 }
 
 .c1 > div + div {
@@ -186,10 +174,6 @@ exports[`Card component should render properly when flow direction is horizontal
   justify-content: flex-end;
 }
 
-.c3:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
-}
-
 .c3 > div + div {
   border-left: 1px solid #98A7B7;
 }
@@ -219,10 +203,6 @@ exports[`Card component should render properly when flow direction is horizontal
   justify-content: center;
 }
 
-.c4:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
-}
-
 .c4 > div + div {
   border-left: 1px solid #98A7B7;
 }
@@ -250,10 +230,6 @@ exports[`Card component should render properly when flow direction is horizontal
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.c5:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
 }
 
 .c5 > div + div {
@@ -480,10 +456,6 @@ exports[`Card component should render properly when fullWidth and fullHeight is 
   align-items: center;
 }
 
-.c0:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
-}
-
 @media (min-width:0px) and (max-width:767px) {
   .c0 {
     padding: 2.4rem;
@@ -644,10 +616,6 @@ exports[`Card component should render properly when separator is set true flow d
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
   align-items: flex-start;
-}
-
-.c0:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
 }
 
 .c0 > div + div {
@@ -1025,10 +993,6 @@ exports[`Card component should render properly with "solid" variant 1`] = `
   align-items: center;
 }
 
-.c0:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
-}
-
 @media (min-width:0px) and (max-width:767px) {
   .c0 {
     padding: 2.4rem;
@@ -1104,10 +1068,6 @@ exports[`Card component should render properly with display "block" 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c0:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
 }
 
 @media (min-width:0px) and (max-width:767px) {
@@ -1188,10 +1148,6 @@ exports[`Card component should render properly with display "flex" 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c0:hover {
-  box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
 }
 
 @media (min-width:0px) and (max-width:767px) {

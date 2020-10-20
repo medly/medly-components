@@ -3,7 +3,7 @@ import { useState, useCallback } from 'react';
 import { action } from '@storybook/addon-actions';
 import { boolean, select } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import { ThemeInterface, ColumnConfigInterface, ExpandedRowComponent, DarkBackground } from './Table.stories';
+import { ThemeInterface, ColumnConfigInterface, ExpandedRowComponent, DarkBackground, Actions, DummyWrapper } from './Table.stories';
 import { filterData } from './filterData';
 import columns from './columns';
 import data from './data';
@@ -33,7 +33,7 @@ Simple `Table` component to show set of data.
                     tableData
                 ]);
             return (
-                <>
+                <DummyWrapper>
                     <DarkBackground showRowWithCardStyle={boolean('Show Row With Card Style', false)} />
                     <Table
                         data={tableData}
@@ -50,8 +50,10 @@ Simple `Table` component to show set of data.
                         size={select('Size', ['S', 'M', 'L'], 'M')}
                         showRowWithCardStyle={boolean('Show Row With Card Style', false)}
                         expandedRowComponent={ExpandedRowComponent}
+                        enableActionBar={boolean('Enable action bar', true)}
+                        actions={Actions}
                     />
-                </>
+                </DummyWrapper>
             );
         }}
     </Story>
@@ -124,6 +126,25 @@ And once the user expands any row `getGroupedData` function will be called with 
 ## Row Selection
 
 Just pass the `onRowSelection` callback function as prop and table component will call this function with updted row id. For the unique ids you have to provide `rowIdentifier` prop.
+
+## Actions
+
+To show action bar you have to pass `enableActionBar` as `true` and pass `actions` in below format
+
+```tsx
+export const Actions = [
+    <Button size="S" variant="solid">
+        <RemoveCircleIcon size="S" />
+        Lorem
+    </Button>,
+    <Button size="S" variant="solid">
+        <RemoveCircleIcon size="S" />
+        Lorem ipsum
+    </Button>
+];
+```
+
+> Note: For now this feature is not available for group table
 
 ### Props
 

@@ -87,6 +87,10 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     groupBy?: 'string';
     /** Name of the key in data on which grouping is applied */
     getGroupedData?: (title: string) => Promise<object[]>;
+    /** Actions bar items */
+    actions?: Array<JSX.Element>;
+    /** Enable action bar */
+    enableActionBar?: boolean;
 }
 
 export interface StaticProps {
