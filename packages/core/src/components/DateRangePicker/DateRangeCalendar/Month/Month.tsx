@@ -86,7 +86,3 @@ export const Month: React.FC<Props> = React.memo(
     }
 );
 Month.displayName = 'Month';
-Month.defaultProps = {
-    minSelectableDate: new Date(1901, 0, 1),
-    maxSelectableDate: new Date(2100, 11, 1)
-};

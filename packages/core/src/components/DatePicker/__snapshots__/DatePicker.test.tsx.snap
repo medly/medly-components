@@ -12564,6 +12564,7 @@ exports[`DatePicker component should render properly when value is of date type 
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  pointer-events: none;
   color: rgba(0,90,238,.2);
   bottom: 0.7rem;
 }
@@ -12949,6 +12950,7 @@ exports[`DatePicker component should render properly when value is of string typ
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  pointer-events: none;
   color: rgba(0,90,238,.2);
   top: 50%;
   -webkit-transform: translateY(-50%);

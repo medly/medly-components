@@ -90,5 +90,7 @@ DateRangePicker.defaultProps = {
     minWidth: '33.8rem',
     fromLabel: 'From',
     toLabel: 'To',
-    displayFormat: 'MM-dd-yyyy'
+    displayFormat: 'MM-dd-yyyy',
+    minSelectableDate: new Date(1901, 0, 1),
+    maxSelectableDate: new Date(2100, 11, 1)
 };
