@@ -627,10 +627,6 @@ exports[`Form should render properly with initial state 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .c9::after {
@@ -666,10 +662,6 @@ exports[`Form should render properly with initial state 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .c51 {
@@ -795,11 +787,11 @@ exports[`Form should render properly with initial state 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -877,12 +869,7 @@ exports[`Form should render properly with initial state 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
-  resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -2958,10 +2945,6 @@ exports[`Form should render properly without initial state 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .c12::after {
@@ -2997,10 +2980,6 @@ exports[`Form should render properly without initial state 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .c51 {
@@ -3126,11 +3105,11 @@ exports[`Form should render properly without initial state 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
   background-color: transparent;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -3208,12 +3187,7 @@ exports[`Form should render properly without initial state 1`] = `
   background: transparent;
   border: none;
   text-overflow: ellipsis;
-  resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
