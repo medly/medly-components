@@ -4,6 +4,7 @@ import { Card } from './Card.tsx';
 import Text from '../Text';
 import { withKnobs, text, color, select, boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import { action } from '@storybook/addon-actions';
 import { variants, display, itemsPosition, flowDirection, ThemeInterface } from './Card.stories';
 
 <Meta title="Core" component={Card} parameters={{ jest: ['Card.test.tsx'] }} />
@@ -25,7 +26,7 @@ Simple card component with lot of customization. Hover effect will only work whe
             fullHeight={boolean('Full Height', false)}
             minWidth={text('Min Width', '')}
             minHeight={text('Min Height', '')}
-            onClick={() => console.log('Clicked')}
+            onClick={action('Clicked')}
         >
             <Card variant="flat" display="flex" alignItems="center">
                 <Text textWeight="Strong" textVariant="h2">
@@ -34,13 +35,15 @@ Simple card component with lot of customization. Hover effect will only work whe
                 <Text>Marks</Text>
             </Card>
             <Card variant="flat" display="flex" flex={6} alignItems="left">
-                <Text>1760712004</Text>
-                <Text textVariant="h3">Stevens, Hilary</Text>
-                <Text>4 Atno Avenue, Morristown, NJ, 07960</Text>
+                <Text>17607124</Text>
+                <Text textVariant="h3">John, Snow</Text>
+                <Text>Son of Lyanna Stark and Rhaegar Targaryen, the late Prince of Dragonstone</Text>
             </Card>
         </Card>
     </Story>
 </Preview>
+
+> Note: Shadow on hovering will only apear if you pass `onClick` prop to it.
 
 ### Variants
 
