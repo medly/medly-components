@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.23.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.22.0...@medly-components/theme@1.23.0) (2020-10-20)
+
+
+### Features
+
+* **core:** add action bar component ([6ab733a](https://github.com/medly/medly-components/commit/6ab733a6606147af26ad21cc309e2d27c47f325c))
+
+
+
+
+
 # [1.22.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.21.0...@medly-components/theme@1.22.0) (2020-10-15)
 
 
