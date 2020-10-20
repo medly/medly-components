@@ -124,9 +124,6 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                                 {maskLabel}
                             </Styled.MaskPlaceholder>
                         )}
-                        <Styled.HiddenLabelContainer ref={hiddenLabelRef} size={size}>
-                            {label}
-                        </Styled.HiddenLabelContainer>
                         <Styled.Label
                             inputWidth={inputWidth}
                             labelWidth={labelWidth}
@@ -150,6 +147,9 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                         {(errorText || builtInErrorMessage || helperText).trim()}
                     </Styled.HelperText>
                 )}
+                <Styled.HiddenLabelContainer ref={hiddenLabelRef} size={size}>
+                    {label}
+                </Styled.HiddenLabelContainer>
             </Styled.OuterWrapper>
         );
     })

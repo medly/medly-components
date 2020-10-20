@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextField should not call onClick function on click on helper text 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -36,11 +36,11 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   text-overflow: ellipsis;
 }
 
-.c6::after {
+.c5::after {
   content: ' *';
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -78,7 +78,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   background-color: #eff2f4;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -124,8 +124,8 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -251,7 +251,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -280,8 +280,8 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -312,13 +312,8 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
             type="email"
             value=""
           />
-          <span
-            class="c4"
-          >
-            Name
-          </span>
           <label
-            class="c5 c6"
+            class="c4 c5"
             for="medly-textField-input"
             required=""
           >
@@ -327,6 +322,11 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
         </div>
       </div>
       
+      <span
+        class="c6"
+      >
+        Name
+      </span>
     </div>
   </div>
 </div>
@@ -418,7 +418,7 @@ exports[`TextField should render properly with M size 1`] = `
   fill: #607890;
 }
 
-.c13 {
+.c12 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -429,7 +429,7 @@ exports[`TextField should render properly with M size 1`] = `
   user-select: none;
 }
 
-.c9 {
+.c8 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -464,7 +464,7 @@ exports[`TextField should render properly with M size 1`] = `
   text-overflow: ellipsis;
 }
 
-.c7 {
+.c13 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -484,7 +484,7 @@ exports[`TextField should render properly with M size 1`] = `
   margin-right: 1.6rem;
 }
 
-.c11 {
+.c10 {
   pointer-events: none;
   margin-left: 1.6rem;
 }
@@ -512,21 +512,21 @@ exports[`TextField should render properly with M size 1`] = `
   background-color: #eff2f4;
 }
 
-.c1 .c8 {
+.c1 .c7 {
   color: #546A7F;
 }
 
 .c1 .c3,
-.c1 .c10 {
+.c1 .c9 {
   color: #546A7F;
 }
 
 .c1 .c3 *,
-.c1 .c10 * {
+.c1 .c9 * {
   fill: #546A7F;
 }
 
-.c1 ~ .c12 {
+.c1 ~ .c11 {
   color: #546A7F;
 }
 
@@ -558,22 +558,22 @@ exports[`TextField should render properly with M size 1`] = `
   border-color: #126AFA;
 }
 
-.c1:focus-within .c8,
-.c1:focus-within:hover .c8 {
+.c1:focus-within .c7,
+.c1:focus-within:hover .c7 {
   color: #126AFA;
 }
 
 .c1:focus-within .c3,
 .c1:focus-within:hover .c3,
-.c1:focus-within .c10,
-.c1:focus-within:hover .c10 {
+.c1:focus-within .c9,
+.c1:focus-within:hover .c9 {
   color: #126AFA;
 }
 
 .c1:focus-within .c3 *,
 .c1:focus-within:hover .c3 *,
-.c1:focus-within .c10 *,
-.c1:focus-within:hover .c10 * {
+.c1:focus-within .c9 *,
+.c1:focus-within:hover .c9 * {
   fill: #126AFA;
 }
 
@@ -685,7 +685,7 @@ exports[`TextField should render properly with M size 1`] = `
   opacity: 1;
 }
 
-.c6:disabled ~ .c8,
+.c6:disabled ~ .c7,
 .c6:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -714,8 +714,8 @@ exports[`TextField should render properly with M size 1`] = `
   transition: all 100ms ease-out;
 }
 
-.c6:not(:placeholder-shown) ~ .c8,
-.c6:focus ~ .c8 {
+.c6:not(:placeholder-shown) ~ .c7,
+.c6:focus ~ .c7 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -757,20 +757,15 @@ exports[`TextField should render properly with M size 1`] = `
           type="text"
           value=""
         />
-        <span
-          class="c7"
-        >
-          Name
-        </span>
         <label
-          class="c8 c9"
+          class="c7 c8"
           for="medly-textField-input"
         >
           Name
         </label>
       </div>
       <svg
-        class="c2 c10 c11"
+        class="c2 c9 c10"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -784,10 +779,15 @@ exports[`TextField should render properly with M size 1`] = `
       </svg>
     </div>
     <span
-      class="c12 c13"
+      class="c11 c12"
       id="medly-textField-helper-text"
     >
       helper text
+    </span>
+    <span
+      class="c13"
+    >
+      Name
     </span>
   </div>
 </div>
@@ -809,7 +809,7 @@ exports[`TextField should render properly with S size 1`] = `
   fill: #607890;
 }
 
-.c13 {
+.c12 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.2rem 0;
@@ -820,7 +820,7 @@ exports[`TextField should render properly with S size 1`] = `
   user-select: none;
 }
 
-.c9 {
+.c8 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -855,7 +855,7 @@ exports[`TextField should render properly with S size 1`] = `
   text-overflow: ellipsis;
 }
 
-.c7 {
+.c13 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -875,7 +875,7 @@ exports[`TextField should render properly with S size 1`] = `
   margin-right: 1.2rem;
 }
 
-.c11 {
+.c10 {
   pointer-events: none;
   margin-left: 1.2rem;
 }
@@ -903,21 +903,21 @@ exports[`TextField should render properly with S size 1`] = `
   background-color: #eff2f4;
 }
 
-.c1 .c8 {
+.c1 .c7 {
   color: #546A7F;
 }
 
 .c1 .c3,
-.c1 .c10 {
+.c1 .c9 {
   color: #546A7F;
 }
 
 .c1 .c3 *,
-.c1 .c10 * {
+.c1 .c9 * {
   fill: #546A7F;
 }
 
-.c1 ~ .c12 {
+.c1 ~ .c11 {
   color: #546A7F;
 }
 
@@ -949,22 +949,22 @@ exports[`TextField should render properly with S size 1`] = `
   border-color: #126AFA;
 }
 
-.c1:focus-within .c8,
-.c1:focus-within:hover .c8 {
+.c1:focus-within .c7,
+.c1:focus-within:hover .c7 {
   color: #126AFA;
 }
 
 .c1:focus-within .c3,
 .c1:focus-within:hover .c3,
-.c1:focus-within .c10,
-.c1:focus-within:hover .c10 {
+.c1:focus-within .c9,
+.c1:focus-within:hover .c9 {
   color: #126AFA;
 }
 
 .c1:focus-within .c3 *,
 .c1:focus-within:hover .c3 *,
-.c1:focus-within .c10 *,
-.c1:focus-within:hover .c10 * {
+.c1:focus-within .c9 *,
+.c1:focus-within:hover .c9 * {
   fill: #126AFA;
 }
 
@@ -1072,7 +1072,7 @@ exports[`TextField should render properly with S size 1`] = `
   opacity: 1;
 }
 
-.c6:disabled ~ .c8,
+.c6:disabled ~ .c7,
 .c6:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -1101,8 +1101,8 @@ exports[`TextField should render properly with S size 1`] = `
   transition: all 100ms ease-out;
 }
 
-.c6:not(:placeholder-shown) ~ .c8,
-.c6:focus ~ .c8 {
+.c6:not(:placeholder-shown) ~ .c7,
+.c6:focus ~ .c7 {
   opacity: 0;
 }
 
@@ -1142,20 +1142,15 @@ exports[`TextField should render properly with S size 1`] = `
           type="text"
           value=""
         />
-        <span
-          class="c7"
-        >
-          Name
-        </span>
         <label
-          class="c8 c9"
+          class="c7 c8"
           for="medly-textField-input"
         >
           Name
         </label>
       </div>
       <svg
-        class="c2 c10 c11"
+        class="c2 c9 c10"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -1169,17 +1164,22 @@ exports[`TextField should render properly with S size 1`] = `
       </svg>
     </div>
     <span
-      class="c12 c13"
+      class="c11 c12"
       id="medly-textField-helper-text"
     >
       helper text
+    </span>
+    <span
+      class="c13"
+    >
+      Name
     </span>
   </div>
 </div>
 `;
 
 exports[`TextField should render properly with default props 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -1214,7 +1214,7 @@ exports[`TextField should render properly with default props 1`] = `
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -1252,7 +1252,7 @@ exports[`TextField should render properly with default props 1`] = `
   background-color: #eff2f4;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -1298,8 +1298,8 @@ exports[`TextField should render properly with default props 1`] = `
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -1425,7 +1425,7 @@ exports[`TextField should render properly with default props 1`] = `
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -1454,8 +1454,8 @@ exports[`TextField should render properly with default props 1`] = `
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -1484,13 +1484,8 @@ exports[`TextField should render properly with default props 1`] = `
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -1498,12 +1493,17 @@ exports[`TextField should render properly with default props 1`] = `
       </div>
     </div>
     
+    <span
+      class="c6"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField with filled variant and with label should render default state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -1538,7 +1538,7 @@ exports[`TextField with filled variant and with label should render default stat
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -1576,7 +1576,7 @@ exports[`TextField with filled variant and with label should render default stat
   background-color: #eff2f4;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -1622,8 +1622,8 @@ exports[`TextField with filled variant and with label should render default stat
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -1749,7 +1749,7 @@ exports[`TextField with filled variant and with label should render default stat
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -1778,8 +1778,8 @@ exports[`TextField with filled variant and with label should render default stat
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -1808,13 +1808,8 @@ exports[`TextField with filled variant and with label should render default stat
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -1822,12 +1817,17 @@ exports[`TextField with filled variant and with label should render default stat
       </div>
     </div>
     
+    <span
+      class="c6"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField with filled variant and with label should render disabled state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -1862,7 +1862,7 @@ exports[`TextField with filled variant and with label should render disabled sta
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -1902,7 +1902,7 @@ exports[`TextField with filled variant and with label should render disabled sta
   background-color: #F7F8F9;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -1943,7 +1943,7 @@ exports[`TextField with filled variant and with label should render disabled sta
   color: #435465;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #b0bcc8;
 }
 
@@ -2053,7 +2053,7 @@ exports[`TextField with filled variant and with label should render disabled sta
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -2082,8 +2082,8 @@ exports[`TextField with filled variant and with label should render disabled sta
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -2114,13 +2114,8 @@ exports[`TextField with filled variant and with label should render disabled sta
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -2128,12 +2123,17 @@ exports[`TextField with filled variant and with label should render disabled sta
       </div>
     </div>
     
+    <span
+      class="c6"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField with filled variant and with label should render focus state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -2168,7 +2168,7 @@ exports[`TextField with filled variant and with label should render focus state 
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -2206,7 +2206,7 @@ exports[`TextField with filled variant and with label should render focus state 
   background-color: #eff2f4;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -2252,8 +2252,8 @@ exports[`TextField with filled variant and with label should render focus state 
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -2379,7 +2379,7 @@ exports[`TextField with filled variant and with label should render focus state 
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -2408,8 +2408,8 @@ exports[`TextField with filled variant and with label should render focus state 
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -2438,13 +2438,8 @@ exports[`TextField with filled variant and with label should render focus state 
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -2452,12 +2447,17 @@ exports[`TextField with filled variant and with label should render focus state 
       </div>
     </div>
     
+    <span
+      class="c6"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField with filled variant and without label should render default state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -2492,7 +2492,7 @@ exports[`TextField with filled variant and without label should render default s
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -2530,7 +2530,7 @@ exports[`TextField with filled variant and without label should render default s
   background-color: #eff2f4;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -2576,8 +2576,8 @@ exports[`TextField with filled variant and without label should render default s
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -2699,7 +2699,7 @@ exports[`TextField with filled variant and without label should render default s
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -2728,8 +2728,8 @@ exports[`TextField with filled variant and without label should render default s
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -2758,22 +2758,22 @@ exports[`TextField with filled variant and without label should render default s
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        />
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         />
       </div>
     </div>
     
+    <span
+      class="c6"
+    />
   </div>
 </div>
 `;
 
 exports[`TextField with filled variant and without label should render disabled state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -2808,7 +2808,7 @@ exports[`TextField with filled variant and without label should render disabled 
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -2848,7 +2848,7 @@ exports[`TextField with filled variant and without label should render disabled 
   background-color: #F7F8F9;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -2889,7 +2889,7 @@ exports[`TextField with filled variant and without label should render disabled 
   color: #435465;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #b0bcc8;
 }
 
@@ -2995,7 +2995,7 @@ exports[`TextField with filled variant and without label should render disabled 
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -3024,8 +3024,8 @@ exports[`TextField with filled variant and without label should render disabled 
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -3056,22 +3056,22 @@ exports[`TextField with filled variant and without label should render disabled 
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        />
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         />
       </div>
     </div>
     
+    <span
+      class="c6"
+    />
   </div>
 </div>
 `;
 
 exports[`TextField with filled variant and without label should render focus state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -3106,7 +3106,7 @@ exports[`TextField with filled variant and without label should render focus sta
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -3144,7 +3144,7 @@ exports[`TextField with filled variant and without label should render focus sta
   background-color: #eff2f4;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -3190,8 +3190,8 @@ exports[`TextField with filled variant and without label should render focus sta
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -3313,7 +3313,7 @@ exports[`TextField with filled variant and without label should render focus sta
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -3342,8 +3342,8 @@ exports[`TextField with filled variant and without label should render focus sta
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -3372,22 +3372,22 @@ exports[`TextField with filled variant and without label should render focus sta
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        />
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         />
       </div>
     </div>
     
+    <span
+      class="c6"
+    />
   </div>
 </div>
 `;
 
 exports[`TextField with filled variant should render error state properly  1`] = `
-.c8 {
+.c7 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -3398,7 +3398,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
   user-select: none;
 }
 
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -3433,7 +3433,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c8 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -3471,7 +3471,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
   background-color: #eff2f4;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -3485,7 +3485,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
   fill: #546A7F;
 }
 
-.c1 ~ .c7 {
+.c1 ~ .c6 {
   color: #546A7F;
 }
 
@@ -3521,10 +3521,10 @@ exports[`TextField with filled variant should render error state properly  1`] =
   border-color: #cc0000;
 }
 
-.c1 .c5,
-.c1:hover .c5,
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1 .c4,
+.c1:hover .c4,
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #cc0000;
 }
 
@@ -3550,10 +3550,10 @@ exports[`TextField with filled variant should render error state properly  1`] =
   fill: #cc0000;
 }
 
-.c1 ~ .c7,
-.c1:hover ~ .c7,
-.c1:focus-within ~ .c7,
-.c1:focus-within:hover ~ .c7 {
+.c1 ~ .c6,
+.c1:hover ~ .c6,
+.c1:focus-within ~ .c6,
+.c1:focus-within:hover ~ .c6 {
   color: #cc0000;
 }
 
@@ -3680,7 +3680,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -3709,8 +3709,8 @@ exports[`TextField with filled variant should render error state properly  1`] =
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -3739,13 +3739,8 @@ exports[`TextField with filled variant should render error state properly  1`] =
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -3753,17 +3748,22 @@ exports[`TextField with filled variant should render error state properly  1`] =
       </div>
     </div>
     <span
-      class="c7 c8"
+      class="c6 c7"
       id="medly-textField-helper-text"
     >
       Something wen wrong
+    </span>
+    <span
+      class="c8"
+    >
+      Name
     </span>
   </div>
 </div>
 `;
 
 exports[`TextField with filled variant should render error state properly with a value 1`] = `
-.c8 {
+.c7 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -3774,7 +3774,7 @@ exports[`TextField with filled variant should render error state properly with a
   user-select: none;
 }
 
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -3809,7 +3809,7 @@ exports[`TextField with filled variant should render error state properly with a
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c8 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -3847,7 +3847,7 @@ exports[`TextField with filled variant should render error state properly with a
   background-color: #eff2f4;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -3861,7 +3861,7 @@ exports[`TextField with filled variant should render error state properly with a
   fill: #546A7F;
 }
 
-.c1 ~ .c7 {
+.c1 ~ .c6 {
   color: #546A7F;
 }
 
@@ -3897,10 +3897,10 @@ exports[`TextField with filled variant should render error state properly with a
   border-color: #cc0000;
 }
 
-.c1 .c5,
-.c1:hover .c5,
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1 .c4,
+.c1:hover .c4,
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #cc0000;
 }
 
@@ -3926,10 +3926,10 @@ exports[`TextField with filled variant should render error state properly with a
   fill: #cc0000;
 }
 
-.c1 ~ .c7,
-.c1:hover ~ .c7,
-.c1:focus-within ~ .c7,
-.c1:focus-within:hover ~ .c7 {
+.c1 ~ .c6,
+.c1:hover ~ .c6,
+.c1:focus-within ~ .c6,
+.c1:focus-within:hover ~ .c6 {
   color: #cc0000;
 }
 
@@ -4056,7 +4056,7 @@ exports[`TextField with filled variant should render error state properly with a
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -4085,8 +4085,8 @@ exports[`TextField with filled variant should render error state properly with a
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -4115,13 +4115,8 @@ exports[`TextField with filled variant should render error state properly with a
           type="text"
           value="Example value"
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -4129,63 +4124,77 @@ exports[`TextField with filled variant should render error state properly with a
       </div>
     </div>
     <span
-      class="c7 c8"
+      class="c6 c7"
       id="medly-textField-helper-text"
     >
       Something wen wrong
+    </span>
+    <span
+      class="c8"
+    >
+      Name
     </span>
   </div>
 </div>
 `;
 
 exports[`TextField with filled variant should render error text properly 1`] = `
-.c0 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+.c1 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 ~ .c0 {
+  color: #546A7F;
+}
+
+.c2 ~ .c0,
+.c2:hover ~ .c0,
+.c2:focus-within ~ .c0,
+.c2:focus-within:hover ~ .c0 {
+  color: #cc0000;
 }
 
 <span
-  class="c0"
+  class="c0 c1"
+  id="medly-textField-helper-text"
 >
-  Name
+  Some text
 </span>
 `;
 
 exports[`TextField with filled variant should render helper text properly 1`] = `
-.c0 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+.c1 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 ~ .c0 {
+  color: #546A7F;
 }
 
 <span
-  class="c0"
+  class="c0 c1"
+  id="medly-textField-helper-text"
 >
-  Name
+  Some text
 </span>
 `;
 
 exports[`TextField with filled variant should render properly with multiline 1`] = `
-.c6 {
+.c5 {
   top: 1.1rem;
   left: 0;
   cursor: text;
@@ -4220,7 +4229,7 @@ exports[`TextField with filled variant should render properly with multiline 1`]
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -4258,7 +4267,7 @@ exports[`TextField with filled variant should render properly with multiline 1`]
   background-color: #eff2f4;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -4304,8 +4313,8 @@ exports[`TextField with filled variant should render properly with multiline 1`]
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -4428,7 +4437,7 @@ exports[`TextField with filled variant should render properly with multiline 1`]
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -4457,8 +4466,8 @@ exports[`TextField with filled variant should render properly with multiline 1`]
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-50%) scale(0.75);
   -ms-transform: translateY(-50%) scale(0.75);
   transform: translateY(-50%) scale(0.75);
@@ -4486,13 +4495,8 @@ exports[`TextField with filled variant should render properly with multiline 1`]
           placeholder=" "
           type="text"
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -4500,6 +4504,11 @@ exports[`TextField with filled variant should render properly with multiline 1`]
       </div>
     </div>
     
+    <span
+      class="c6"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
@@ -4520,7 +4529,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   fill: #607890;
 }
 
-.c9 {
+.c8 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -4555,7 +4564,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   text-overflow: ellipsis;
 }
 
-.c7 {
+.c9 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -4598,7 +4607,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   background-color: #eff2f4;
 }
 
-.c1 .c8 {
+.c1 .c7 {
   color: #546A7F;
 }
 
@@ -4644,8 +4653,8 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   border-color: #126AFA;
 }
 
-.c1:focus-within .c8,
-.c1:focus-within:hover .c8 {
+.c1:focus-within .c7,
+.c1:focus-within:hover .c7 {
   color: #126AFA;
 }
 
@@ -4771,7 +4780,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   opacity: 1;
 }
 
-.c6:disabled ~ .c8,
+.c6:disabled ~ .c7,
 .c6:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -4800,8 +4809,8 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   transition: all 100ms ease-out;
 }
 
-.c6:not(:placeholder-shown) ~ .c8,
-.c6:focus ~ .c8 {
+.c6:not(:placeholder-shown) ~ .c7,
+.c6:focus ~ .c7 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -4843,13 +4852,8 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
           type="text"
           value=""
         />
-        <span
-          class="c7"
-        >
-          Name
-        </span>
         <label
-          class="c8 c9"
+          class="c7 c8"
           for="medly-textField-input"
         >
           Name
@@ -4857,12 +4861,17 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
       </div>
     </div>
     
+    <span
+      class="c9"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField with filled variant should render properly with suffix 1`] = `
-.c7 {
+.c6 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -4870,14 +4879,14 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   cursor: inherit;
 }
 
-.c7 * {
+.c6 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -4912,7 +4921,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c9 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -4927,7 +4936,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c9 {
+.c8 {
   pointer-events: none;
   margin-left: 1.6rem;
 }
@@ -4955,17 +4964,17 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   background-color: #eff2f4;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
 .c1 .sc-AxhUy,
-.c1 .c8 {
+.c1 .c7 {
   color: #546A7F;
 }
 
 .c1 .sc-AxhUy *,
-.c1 .c8 * {
+.c1 .c7 * {
   fill: #546A7F;
 }
 
@@ -5001,22 +5010,22 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .c8,
-.c1:focus-within:hover .c8 {
+.c1:focus-within .c7,
+.c1:focus-within:hover .c7 {
   color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .c8 *,
-.c1:focus-within:hover .c8 * {
+.c1:focus-within .c7 *,
+.c1:focus-within:hover .c7 * {
   fill: #126AFA;
 }
 
@@ -5128,7 +5137,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -5157,8 +5166,8 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -5187,20 +5196,15 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
         </label>
       </div>
       <svg
-        class="c7 c8 c9"
+        class="c6 c7 c8"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -5214,12 +5218,17 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
       </svg>
     </div>
     
+    <span
+      class="c9"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField with fusion variant and with label should render default state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -5254,11 +5263,11 @@ exports[`TextField with fusion variant and with label should render default stat
   text-overflow: ellipsis;
 }
 
-.c6::after {
+.c5::after {
   content: ' (Optional)';
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -5296,7 +5305,7 @@ exports[`TextField with fusion variant and with label should render default stat
   background-color: #F7F8F9;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -5348,8 +5357,8 @@ exports[`TextField with fusion variant and with label should render default stat
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -5475,7 +5484,7 @@ exports[`TextField with fusion variant and with label should render default stat
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -5504,8 +5513,8 @@ exports[`TextField with fusion variant and with label should render default stat
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-140%) scale(0.67);
   -ms-transform: translateY(-140%) scale(0.67);
   transform: translateY(-140%) scale(0.67);
@@ -5537,13 +5546,8 @@ exports[`TextField with fusion variant and with label should render default stat
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -5551,12 +5555,17 @@ exports[`TextField with fusion variant and with label should render default stat
       </div>
     </div>
     
+    <span
+      class="c6"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField with fusion variant and with label should render disabled state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -5591,11 +5600,11 @@ exports[`TextField with fusion variant and with label should render disabled sta
   text-overflow: ellipsis;
 }
 
-.c6::after {
+.c5::after {
   content: ' (Optional)';
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -5635,7 +5644,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
   background-color: transparent;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -5681,7 +5690,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
   color: #546A7F;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #b0bcc8;
 }
 
@@ -5791,7 +5800,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -5820,8 +5829,8 @@ exports[`TextField with fusion variant and with label should render disabled sta
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-140%) scale(0.67);
   -ms-transform: translateY(-140%) scale(0.67);
   transform: translateY(-140%) scale(0.67);
@@ -5855,13 +5864,8 @@ exports[`TextField with fusion variant and with label should render disabled sta
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -5869,12 +5873,17 @@ exports[`TextField with fusion variant and with label should render disabled sta
       </div>
     </div>
     
+    <span
+      class="c6"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField with fusion variant and with label should render focus state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -5909,11 +5918,11 @@ exports[`TextField with fusion variant and with label should render focus state 
   text-overflow: ellipsis;
 }
 
-.c6::after {
+.c5::after {
   content: ' (Optional)';
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -5951,7 +5960,7 @@ exports[`TextField with fusion variant and with label should render focus state 
   background-color: #F7F8F9;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -6003,8 +6012,8 @@ exports[`TextField with fusion variant and with label should render focus state 
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -6130,7 +6139,7 @@ exports[`TextField with fusion variant and with label should render focus state 
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -6159,8 +6168,8 @@ exports[`TextField with fusion variant and with label should render focus state 
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-140%) scale(0.67);
   -ms-transform: translateY(-140%) scale(0.67);
   transform: translateY(-140%) scale(0.67);
@@ -6192,13 +6201,8 @@ exports[`TextField with fusion variant and with label should render focus state 
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -6206,12 +6210,17 @@ exports[`TextField with fusion variant and with label should render focus state 
       </div>
     </div>
     
+    <span
+      class="c6"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField with fusion variant and without label should render default state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -6246,11 +6255,11 @@ exports[`TextField with fusion variant and without label should render default s
   text-overflow: ellipsis;
 }
 
-.c6::after {
+.c5::after {
   content: ' (Optional)';
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -6288,7 +6297,7 @@ exports[`TextField with fusion variant and without label should render default s
   background-color: #F7F8F9;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -6340,8 +6349,8 @@ exports[`TextField with fusion variant and without label should render default s
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -6463,7 +6472,7 @@ exports[`TextField with fusion variant and without label should render default s
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -6492,8 +6501,8 @@ exports[`TextField with fusion variant and without label should render default s
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-140%) scale(0.67);
   -ms-transform: translateY(-140%) scale(0.67);
   transform: translateY(-140%) scale(0.67);
@@ -6525,22 +6534,22 @@ exports[`TextField with fusion variant and without label should render default s
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        />
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         />
       </div>
     </div>
     
+    <span
+      class="c6"
+    />
   </div>
 </div>
 `;
 
 exports[`TextField with fusion variant and without label should render disabled state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -6575,11 +6584,11 @@ exports[`TextField with fusion variant and without label should render disabled 
   text-overflow: ellipsis;
 }
 
-.c6::after {
+.c5::after {
   content: ' (Optional)';
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -6619,7 +6628,7 @@ exports[`TextField with fusion variant and without label should render disabled 
   background-color: transparent;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -6665,7 +6674,7 @@ exports[`TextField with fusion variant and without label should render disabled 
   color: #546A7F;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #b0bcc8;
 }
 
@@ -6771,7 +6780,7 @@ exports[`TextField with fusion variant and without label should render disabled 
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -6800,8 +6809,8 @@ exports[`TextField with fusion variant and without label should render disabled 
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-140%) scale(0.67);
   -ms-transform: translateY(-140%) scale(0.67);
   transform: translateY(-140%) scale(0.67);
@@ -6835,22 +6844,22 @@ exports[`TextField with fusion variant and without label should render disabled 
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        />
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         />
       </div>
     </div>
     
+    <span
+      class="c6"
+    />
   </div>
 </div>
 `;
 
 exports[`TextField with fusion variant and without label should render focus state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -6885,11 +6894,11 @@ exports[`TextField with fusion variant and without label should render focus sta
   text-overflow: ellipsis;
 }
 
-.c6::after {
+.c5::after {
   content: ' (Optional)';
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -6927,7 +6936,7 @@ exports[`TextField with fusion variant and without label should render focus sta
   background-color: #F7F8F9;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -6979,8 +6988,8 @@ exports[`TextField with fusion variant and without label should render focus sta
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -7102,7 +7111,7 @@ exports[`TextField with fusion variant and without label should render focus sta
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -7131,8 +7140,8 @@ exports[`TextField with fusion variant and without label should render focus sta
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-140%) scale(0.67);
   -ms-transform: translateY(-140%) scale(0.67);
   transform: translateY(-140%) scale(0.67);
@@ -7164,22 +7173,22 @@ exports[`TextField with fusion variant and without label should render focus sta
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        />
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         />
       </div>
     </div>
     
+    <span
+      class="c6"
+    />
   </div>
 </div>
 `;
 
 exports[`TextField with fusion variant should render error state properly  1`] = `
-.c8 {
+.c7 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -7190,7 +7199,7 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   user-select: none;
 }
 
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -7225,11 +7234,11 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   text-overflow: ellipsis;
 }
 
-.c6::after {
+.c5::after {
   content: ' (Optional)';
 }
 
-.c4 {
+.c8 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -7267,7 +7276,7 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   background-color: #F7F8F9;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -7281,7 +7290,7 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   fill: #546A7F;
 }
 
-.c1 ~ .c7 {
+.c1 ~ .c6 {
   color: #546A7F;
 }
 
@@ -7315,8 +7324,8 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   background-color: #FCF2F2;
 }
 
-.c1 .c5,
-.c1:hover .c5 {
+.c1 .c4,
+.c1:hover .c4 {
   color: #cc0000;
 }
 
@@ -7334,8 +7343,8 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   fill: #cc0000;
 }
 
-.c1 ~ .c7,
-.c1:hover ~ .c7 {
+.c1 ~ .c6,
+.c1:hover ~ .c6 {
   color: #cc0000;
 }
 
@@ -7466,7 +7475,7 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -7495,8 +7504,8 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-140%) scale(0.67);
   -ms-transform: translateY(-140%) scale(0.67);
   transform: translateY(-140%) scale(0.67);
@@ -7528,13 +7537,8 @@ exports[`TextField with fusion variant should render error state properly  1`] =
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -7542,17 +7546,22 @@ exports[`TextField with fusion variant should render error state properly  1`] =
       </div>
     </div>
     <span
-      class="c7 c8"
+      class="c6 c7"
       id="medly-textField-helper-text"
     >
       Something wen wrong
+    </span>
+    <span
+      class="c8"
+    >
+      Name
     </span>
   </div>
 </div>
 `;
 
 exports[`TextField with fusion variant should render error state properly with a value 1`] = `
-.c8 {
+.c7 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -7563,7 +7572,7 @@ exports[`TextField with fusion variant should render error state properly with a
   user-select: none;
 }
 
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -7598,11 +7607,11 @@ exports[`TextField with fusion variant should render error state properly with a
   text-overflow: ellipsis;
 }
 
-.c6::after {
+.c5::after {
   content: ' (Optional)';
 }
 
-.c4 {
+.c8 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -7640,7 +7649,7 @@ exports[`TextField with fusion variant should render error state properly with a
   background-color: transparent;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -7654,7 +7663,7 @@ exports[`TextField with fusion variant should render error state properly with a
   fill: #546A7F;
 }
 
-.c1 ~ .c7 {
+.c1 ~ .c6 {
   color: #546A7F;
 }
 
@@ -7688,8 +7697,8 @@ exports[`TextField with fusion variant should render error state properly with a
   background-color: #FCF2F2;
 }
 
-.c1 .c5,
-.c1:hover .c5 {
+.c1 .c4,
+.c1:hover .c4 {
   color: #cc0000;
 }
 
@@ -7707,8 +7716,8 @@ exports[`TextField with fusion variant should render error state properly with a
   fill: #cc0000;
 }
 
-.c1 ~ .c7,
-.c1:hover ~ .c7 {
+.c1 ~ .c6,
+.c1:hover ~ .c6 {
   color: #cc0000;
 }
 
@@ -7844,7 +7853,7 @@ exports[`TextField with fusion variant should render error state properly with a
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -7873,8 +7882,8 @@ exports[`TextField with fusion variant should render error state properly with a
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-140%) scale(0.67);
   -ms-transform: translateY(-140%) scale(0.67);
   transform: translateY(-140%) scale(0.67);
@@ -7906,13 +7915,8 @@ exports[`TextField with fusion variant should render error state properly with a
           type="text"
           value="Example value"
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -7920,63 +7924,75 @@ exports[`TextField with fusion variant should render error state properly with a
       </div>
     </div>
     <span
-      class="c7 c8"
+      class="c6 c7"
       id="medly-textField-helper-text"
     >
       Something wen wrong
+    </span>
+    <span
+      class="c8"
+    >
+      Name
     </span>
   </div>
 </div>
 `;
 
 exports[`TextField with fusion variant should render error text properly 1`] = `
-.c0 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+.c1 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 ~ .c0 {
+  color: #546A7F;
+}
+
+.c2 ~ .c0,
+.c2:hover ~ .c0 {
+  color: #cc0000;
 }
 
 <span
-  class="c0"
+  class="c0 c1"
+  id="medly-textField-helper-text"
 >
-  Name
+  Some text
 </span>
 `;
 
 exports[`TextField with fusion variant should render helper text properly 1`] = `
-.c0 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+.c1 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 ~ .c0 {
+  color: #546A7F;
 }
 
 <span
-  class="c0"
+  class="c0 c1"
+  id="medly-textField-helper-text"
 >
-  Name
+  Some text
 </span>
 `;
 
 exports[`TextField with fusion variant should render properly with multiline 1`] = `
-.c6 {
+.c5 {
   top: 1.1rem;
   left: 0;
   cursor: text;
@@ -8011,11 +8027,11 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   text-overflow: ellipsis;
 }
 
-.c6::after {
+.c5::after {
   content: ' (Optional)';
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -8053,7 +8069,7 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   background-color: #F7F8F9;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -8105,8 +8121,8 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -8229,7 +8245,7 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -8258,8 +8274,8 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-120%) scale(0.67);
   -ms-transform: translateY(-120%) scale(0.67);
   transform: translateY(-120%) scale(0.67);
@@ -8290,13 +8306,8 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
           placeholder=" "
           type="text"
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -8304,6 +8315,11 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
       </div>
     </div>
     
+    <span
+      class="c6"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
@@ -8324,7 +8340,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   fill: #607890;
 }
 
-.c9 {
+.c8 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -8359,11 +8375,11 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   text-overflow: ellipsis;
 }
 
-.c9::after {
+.c8::after {
   content: ' (Optional)';
 }
 
-.c7 {
+.c9 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -8406,7 +8422,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   background-color: #F7F8F9;
 }
 
-.c1 .c8 {
+.c1 .c7 {
   color: #546A7F;
 }
 
@@ -8458,8 +8474,8 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   border-color: #126AFA;
 }
 
-.c1:focus-within .c8,
-.c1:focus-within:hover .c8 {
+.c1:focus-within .c7,
+.c1:focus-within:hover .c7 {
   color: #126AFA;
 }
 
@@ -8585,7 +8601,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   opacity: 1;
 }
 
-.c6:disabled ~ .c8,
+.c6:disabled ~ .c7,
 .c6:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -8614,8 +8630,8 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   transition: all 100ms ease-out;
 }
 
-.c6:not(:placeholder-shown) ~ .c8,
-.c6:focus ~ .c8 {
+.c6:not(:placeholder-shown) ~ .c7,
+.c6:focus ~ .c7 {
   -webkit-transform: translateY(-140%) scale(0.67);
   -ms-transform: translateY(-140%) scale(0.67);
   transform: translateY(-140%) scale(0.67);
@@ -8660,13 +8676,8 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
           type="text"
           value=""
         />
-        <span
-          class="c7"
-        >
-          Name
-        </span>
         <label
-          class="c8 c9"
+          class="c7 c8"
           for="medly-textField-input"
         >
           Name
@@ -8674,12 +8685,17 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
       </div>
     </div>
     
+    <span
+      class="c9"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField with fusion variant should render properly with suffix 1`] = `
-.c7 {
+.c6 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -8687,14 +8703,14 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   cursor: inherit;
 }
 
-.c7 * {
+.c6 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -8729,11 +8745,11 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   text-overflow: ellipsis;
 }
 
-.c6::after {
+.c5::after {
   content: ' (Optional)';
 }
 
-.c4 {
+.c9 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -8748,7 +8764,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c9 {
+.c8 {
   pointer-events: none;
   margin-left: 1.6rem;
 }
@@ -8776,17 +8792,17 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   background-color: #F7F8F9;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
 .c1 .sc-AxhUy,
-.c1 .c8 {
+.c1 .c7 {
   color: #546A7F;
 }
 
 .c1 .sc-AxhUy *,
-.c1 .c8 * {
+.c1 .c7 * {
   fill: #546A7F;
 }
 
@@ -8828,22 +8844,22 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .c8,
-.c1:focus-within:hover .c8 {
+.c1:focus-within .c7,
+.c1:focus-within:hover .c7 {
   color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .c8 *,
-.c1:focus-within:hover .c8 * {
+.c1:focus-within .c7 *,
+.c1:focus-within:hover .c7 * {
   fill: #126AFA;
 }
 
@@ -8955,7 +8971,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -8984,8 +9000,8 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-140%) scale(0.67);
   -ms-transform: translateY(-140%) scale(0.67);
   transform: translateY(-140%) scale(0.67);
@@ -9017,20 +9033,15 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
         </label>
       </div>
       <svg
-        class="c7 c8 c9"
+        class="c6 c7 c8"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -9044,12 +9055,17 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
       </svg>
     </div>
     
+    <span
+      class="c9"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField with outlined variant and with label should render default state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -9084,7 +9100,7 @@ exports[`TextField with outlined variant and with label should render default st
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -9122,7 +9138,7 @@ exports[`TextField with outlined variant and with label should render default st
   background-color: transparent;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #607890;
 }
 
@@ -9182,8 +9198,8 @@ exports[`TextField with outlined variant and with label should render default st
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -9309,7 +9325,7 @@ exports[`TextField with outlined variant and with label should render default st
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -9338,8 +9354,8 @@ exports[`TextField with outlined variant and with label should render default st
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -9368,13 +9384,8 @@ exports[`TextField with outlined variant and with label should render default st
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -9382,12 +9393,17 @@ exports[`TextField with outlined variant and with label should render default st
       </div>
     </div>
     
+    <span
+      class="c6"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField with outlined variant and with label should render disabled state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -9422,7 +9438,7 @@ exports[`TextField with outlined variant and with label should render disabled s
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -9462,7 +9478,7 @@ exports[`TextField with outlined variant and with label should render disabled s
   background-color: transparent;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #607890;
 }
 
@@ -9508,7 +9524,7 @@ exports[`TextField with outlined variant and with label should render disabled s
   color: #435465;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #b0bcc8;
 }
 
@@ -9618,7 +9634,7 @@ exports[`TextField with outlined variant and with label should render disabled s
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -9647,8 +9663,8 @@ exports[`TextField with outlined variant and with label should render disabled s
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -9679,13 +9695,8 @@ exports[`TextField with outlined variant and with label should render disabled s
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -9693,12 +9704,17 @@ exports[`TextField with outlined variant and with label should render disabled s
       </div>
     </div>
     
+    <span
+      class="c6"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField with outlined variant and with label should render focus state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -9733,7 +9749,7 @@ exports[`TextField with outlined variant and with label should render focus stat
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -9771,7 +9787,7 @@ exports[`TextField with outlined variant and with label should render focus stat
   background-color: transparent;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #607890;
 }
 
@@ -9831,8 +9847,8 @@ exports[`TextField with outlined variant and with label should render focus stat
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -9958,7 +9974,7 @@ exports[`TextField with outlined variant and with label should render focus stat
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -9987,8 +10003,8 @@ exports[`TextField with outlined variant and with label should render focus stat
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -10017,13 +10033,8 @@ exports[`TextField with outlined variant and with label should render focus stat
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -10031,12 +10042,17 @@ exports[`TextField with outlined variant and with label should render focus stat
       </div>
     </div>
     
+    <span
+      class="c6"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField with outlined variant and without label should render default state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -10071,7 +10087,7 @@ exports[`TextField with outlined variant and without label should render default
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -10109,7 +10125,7 @@ exports[`TextField with outlined variant and without label should render default
   background-color: transparent;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #607890;
 }
 
@@ -10169,8 +10185,8 @@ exports[`TextField with outlined variant and without label should render default
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -10292,7 +10308,7 @@ exports[`TextField with outlined variant and without label should render default
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -10321,8 +10337,8 @@ exports[`TextField with outlined variant and without label should render default
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -10351,22 +10367,22 @@ exports[`TextField with outlined variant and without label should render default
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        />
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         />
       </div>
     </div>
     
+    <span
+      class="c6"
+    />
   </div>
 </div>
 `;
 
 exports[`TextField with outlined variant and without label should render disabled state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -10401,7 +10417,7 @@ exports[`TextField with outlined variant and without label should render disable
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -10441,7 +10457,7 @@ exports[`TextField with outlined variant and without label should render disable
   background-color: transparent;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #607890;
 }
 
@@ -10487,7 +10503,7 @@ exports[`TextField with outlined variant and without label should render disable
   color: #435465;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #b0bcc8;
 }
 
@@ -10593,7 +10609,7 @@ exports[`TextField with outlined variant and without label should render disable
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -10622,8 +10638,8 @@ exports[`TextField with outlined variant and without label should render disable
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -10654,22 +10670,22 @@ exports[`TextField with outlined variant and without label should render disable
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        />
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         />
       </div>
     </div>
     
+    <span
+      class="c6"
+    />
   </div>
 </div>
 `;
 
 exports[`TextField with outlined variant and without label should render focus state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -10704,7 +10720,7 @@ exports[`TextField with outlined variant and without label should render focus s
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -10742,7 +10758,7 @@ exports[`TextField with outlined variant and without label should render focus s
   background-color: transparent;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #607890;
 }
 
@@ -10802,8 +10818,8 @@ exports[`TextField with outlined variant and without label should render focus s
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -10925,7 +10941,7 @@ exports[`TextField with outlined variant and without label should render focus s
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -10954,8 +10970,8 @@ exports[`TextField with outlined variant and without label should render focus s
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -10984,22 +11000,22 @@ exports[`TextField with outlined variant and without label should render focus s
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        />
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         />
       </div>
     </div>
     
+    <span
+      class="c6"
+    />
   </div>
 </div>
 `;
 
 exports[`TextField with outlined variant should render error state properly  1`] = `
-.c8 {
+.c7 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -11010,7 +11026,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   user-select: none;
 }
 
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -11045,7 +11061,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c8 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -11083,7 +11099,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   background-color: transparent;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #607890;
 }
 
@@ -11097,7 +11113,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   fill: #607890;
 }
 
-.c1 ~ .c7 {
+.c1 ~ .c6 {
   color: #546A7F;
 }
 
@@ -11147,10 +11163,10 @@ exports[`TextField with outlined variant should render error state properly  1`]
   border-color: #cc0000;
 }
 
-.c1 .c5,
-.c1:hover .c5,
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1 .c4,
+.c1:hover .c4,
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #cc0000;
 }
 
@@ -11176,10 +11192,10 @@ exports[`TextField with outlined variant should render error state properly  1`]
   fill: #cc0000;
 }
 
-.c1 ~ .c7,
-.c1:hover ~ .c7,
-.c1:focus-within ~ .c7,
-.c1:focus-within:hover ~ .c7 {
+.c1 ~ .c6,
+.c1:hover ~ .c6,
+.c1:focus-within ~ .c6,
+.c1:focus-within:hover ~ .c6 {
   color: #cc0000;
 }
 
@@ -11306,7 +11322,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -11335,8 +11351,8 @@ exports[`TextField with outlined variant should render error state properly  1`]
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -11365,13 +11381,8 @@ exports[`TextField with outlined variant should render error state properly  1`]
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -11379,17 +11390,22 @@ exports[`TextField with outlined variant should render error state properly  1`]
       </div>
     </div>
     <span
-      class="c7 c8"
+      class="c6 c7"
       id="medly-textField-helper-text"
     >
       Something wen wrong
+    </span>
+    <span
+      class="c8"
+    >
+      Name
     </span>
   </div>
 </div>
 `;
 
 exports[`TextField with outlined variant should render error state properly with a value 1`] = `
-.c8 {
+.c7 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -11400,7 +11416,7 @@ exports[`TextField with outlined variant should render error state properly with
   user-select: none;
 }
 
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -11435,7 +11451,7 @@ exports[`TextField with outlined variant should render error state properly with
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c8 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -11473,7 +11489,7 @@ exports[`TextField with outlined variant should render error state properly with
   background-color: transparent;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #607890;
 }
 
@@ -11487,7 +11503,7 @@ exports[`TextField with outlined variant should render error state properly with
   fill: #607890;
 }
 
-.c1 ~ .c7 {
+.c1 ~ .c6 {
   color: #546A7F;
 }
 
@@ -11537,10 +11553,10 @@ exports[`TextField with outlined variant should render error state properly with
   border-color: #cc0000;
 }
 
-.c1 .c5,
-.c1:hover .c5,
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1 .c4,
+.c1:hover .c4,
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #cc0000;
 }
 
@@ -11566,10 +11582,10 @@ exports[`TextField with outlined variant should render error state properly with
   fill: #cc0000;
 }
 
-.c1 ~ .c7,
-.c1:hover ~ .c7,
-.c1:focus-within ~ .c7,
-.c1:focus-within:hover ~ .c7 {
+.c1 ~ .c6,
+.c1:hover ~ .c6,
+.c1:focus-within ~ .c6,
+.c1:focus-within:hover ~ .c6 {
   color: #cc0000;
 }
 
@@ -11696,7 +11712,7 @@ exports[`TextField with outlined variant should render error state properly with
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -11725,8 +11741,8 @@ exports[`TextField with outlined variant should render error state properly with
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -11755,13 +11771,8 @@ exports[`TextField with outlined variant should render error state properly with
           type="text"
           value="Example value"
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -11769,63 +11780,77 @@ exports[`TextField with outlined variant should render error state properly with
       </div>
     </div>
     <span
-      class="c7 c8"
+      class="c6 c7"
       id="medly-textField-helper-text"
     >
       Something wen wrong
+    </span>
+    <span
+      class="c8"
+    >
+      Name
     </span>
   </div>
 </div>
 `;
 
 exports[`TextField with outlined variant should render error text properly 1`] = `
-.c0 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+.c1 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 ~ .c0 {
+  color: #546A7F;
+}
+
+.c2 ~ .c0,
+.c2:hover ~ .c0,
+.c2:focus-within ~ .c0,
+.c2:focus-within:hover ~ .c0 {
+  color: #cc0000;
 }
 
 <span
-  class="c0"
+  class="c0 c1"
+  id="medly-textField-helper-text"
 >
-  Name
+  Some text
 </span>
 `;
 
 exports[`TextField with outlined variant should render helper text properly 1`] = `
-.c0 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+.c1 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c2 ~ .c0 {
+  color: #546A7F;
 }
 
 <span
-  class="c0"
+  class="c0 c1"
+  id="medly-textField-helper-text"
 >
-  Name
+  Some text
 </span>
 `;
 
 exports[`TextField with outlined variant should render properly with multiline 1`] = `
-.c6 {
+.c5 {
   top: 1.1rem;
   left: 0;
   cursor: text;
@@ -11860,7 +11885,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -11898,7 +11923,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
   background-color: transparent;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #607890;
 }
 
@@ -11958,8 +11983,8 @@ exports[`TextField with outlined variant should render properly with multiline 1
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -12082,7 +12107,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -12111,8 +12136,8 @@ exports[`TextField with outlined variant should render properly with multiline 1
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-50%) scale(0.75);
   -ms-transform: translateY(-50%) scale(0.75);
   transform: translateY(-50%) scale(0.75);
@@ -12140,13 +12165,8 @@ exports[`TextField with outlined variant should render properly with multiline 1
           placeholder=" "
           type="text"
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -12154,6 +12174,11 @@ exports[`TextField with outlined variant should render properly with multiline 1
       </div>
     </div>
     
+    <span
+      class="c6"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
@@ -12174,7 +12199,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   fill: #607890;
 }
 
-.c9 {
+.c8 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -12209,7 +12234,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   text-overflow: ellipsis;
 }
 
-.c7 {
+.c9 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -12252,7 +12277,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   background-color: transparent;
 }
 
-.c1 .c8 {
+.c1 .c7 {
   color: #607890;
 }
 
@@ -12312,8 +12337,8 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   border-color: #126AFA;
 }
 
-.c1:focus-within .c8,
-.c1:focus-within:hover .c8 {
+.c1:focus-within .c7,
+.c1:focus-within:hover .c7 {
   color: #126AFA;
 }
 
@@ -12439,7 +12464,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   opacity: 1;
 }
 
-.c6:disabled ~ .c8,
+.c6:disabled ~ .c7,
 .c6:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -12468,8 +12493,8 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   transition: all 100ms ease-out;
 }
 
-.c6:not(:placeholder-shown) ~ .c8,
-.c6:focus ~ .c8 {
+.c6:not(:placeholder-shown) ~ .c7,
+.c6:focus ~ .c7 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -12511,13 +12536,8 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
           type="text"
           value=""
         />
-        <span
-          class="c7"
-        >
-          Name
-        </span>
         <label
-          class="c8 c9"
+          class="c7 c8"
           for="medly-textField-input"
         >
           Name
@@ -12525,12 +12545,17 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
       </div>
     </div>
     
+    <span
+      class="c9"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField with outlined variant should render properly with suffix 1`] = `
-.c7 {
+.c6 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -12538,14 +12563,14 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   cursor: inherit;
 }
 
-.c7 * {
+.c6 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -12580,7 +12605,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c9 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -12595,7 +12620,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c9 {
+.c8 {
   pointer-events: none;
   margin-left: 1.6rem;
 }
@@ -12623,17 +12648,17 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   background-color: transparent;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #607890;
 }
 
 .c1 .sc-AxhUy,
-.c1 .c8 {
+.c1 .c7 {
   color: #607890;
 }
 
 .c1 .sc-AxhUy *,
-.c1 .c8 * {
+.c1 .c7 * {
   fill: #607890;
 }
 
@@ -12683,22 +12708,22 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhUy,
 .c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .c8,
-.c1:focus-within:hover .c8 {
+.c1:focus-within .c7,
+.c1:focus-within:hover .c7 {
   color: #126AFA;
 }
 
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .c8 *,
-.c1:focus-within:hover .c8 * {
+.c1:focus-within .c7 *,
+.c1:focus-within:hover .c7 * {
   fill: #126AFA;
 }
 
@@ -12810,7 +12835,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -12839,8 +12864,8 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -12869,20 +12894,15 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
         </label>
       </div>
       <svg
-        class="c7 c8 c9"
+        class="c6 c7 c8"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -12896,12 +12916,17 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
       </svg>
     </div>
     
+    <span
+      class="c9"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
 
 exports[`TextField without label should render default state properly 1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -12936,7 +12961,7 @@ exports[`TextField without label should render default state properly 1`] = `
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -12974,7 +12999,7 @@ exports[`TextField without label should render default state properly 1`] = `
   background-color: #eff2f4;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -13020,8 +13045,8 @@ exports[`TextField without label should render default state properly 1`] = `
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -13143,7 +13168,7 @@ exports[`TextField without label should render default state properly 1`] = `
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -13172,8 +13197,8 @@ exports[`TextField without label should render default state properly 1`] = `
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -13202,22 +13227,22 @@ exports[`TextField without label should render default state properly 1`] = `
           type="email"
           value=""
         />
-        <span
-          class="c4"
-        />
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         />
       </div>
     </div>
     
+    <span
+      class="c6"
+    />
   </div>
 </div>
 `;
 
 exports[`TextField without label should render focus state properly  1`] = `
-.c6 {
+.c5 {
   top: 50%;
   left: 0;
   cursor: text;
@@ -13252,7 +13277,7 @@ exports[`TextField without label should render focus state properly  1`] = `
   text-overflow: ellipsis;
 }
 
-.c4 {
+.c6 {
   width: auto;
   display: inline-block;
   position: absolute;
@@ -13290,7 +13315,7 @@ exports[`TextField without label should render focus state properly  1`] = `
   background-color: #eff2f4;
 }
 
-.c1 .c5 {
+.c1 .c4 {
   color: #546A7F;
 }
 
@@ -13336,8 +13361,8 @@ exports[`TextField without label should render focus state properly  1`] = `
   border-color: #126AFA;
 }
 
-.c1:focus-within .c5,
-.c1:focus-within:hover .c5 {
+.c1:focus-within .c4,
+.c1:focus-within:hover .c4 {
   color: #126AFA;
 }
 
@@ -13463,7 +13488,7 @@ exports[`TextField without label should render focus state properly  1`] = `
   opacity: 1;
 }
 
-.c3:disabled ~ .c5,
+.c3:disabled ~ .c4,
 .c3:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
@@ -13492,8 +13517,8 @@ exports[`TextField without label should render focus state properly  1`] = `
   transition: all 100ms ease-out;
 }
 
-.c3:not(:placeholder-shown) ~ .c5,
-.c3:focus ~ .c5 {
+.c3:not(:placeholder-shown) ~ .c4,
+.c3:focus ~ .c4 {
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
@@ -13522,13 +13547,8 @@ exports[`TextField without label should render focus state properly  1`] = `
           type="text"
           value=""
         />
-        <span
-          class="c4"
-        >
-          Name
-        </span>
         <label
-          class="c5 c6"
+          class="c4 c5"
           for="medly-textField-input"
         >
           Name
@@ -13536,6 +13556,11 @@ exports[`TextField without label should render focus state properly  1`] = `
       </div>
     </div>
     
+    <span
+      class="c6"
+    >
+      Name
+    </span>
   </div>
 </div>
 `;
