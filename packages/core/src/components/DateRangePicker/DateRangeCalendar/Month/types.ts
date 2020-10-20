@@ -11,7 +11,7 @@ export type Props = Omit<CalendarProps, 'size' | 'date'> & {
     maxSelectableDate?: Date;
     hoveredDate?: Date;
     onChange: (date: Date) => void;
-    setHoveredDate?: (date: Date) => void;
+    setHoveredDate?: (date: Date | null) => void;
 };
 
 export type ExtendedDateProps = {

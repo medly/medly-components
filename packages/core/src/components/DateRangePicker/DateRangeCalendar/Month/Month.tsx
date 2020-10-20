@@ -1,5 +1,4 @@
-import endOfWeek from 'date-fns/endOfWeek';
-import startOfWeek from 'date-fns/startOfWeek';
+import { endOfWeek, startOfWeek } from 'date-fns';
 import React, { useCallback } from 'react';
 import * as CalendarStyled from '../../../Calendar/Calendar.styled';
 import { LONG_CALENDAR_MONTHS } from '../../../Calendar/constants';
@@ -8,7 +7,6 @@ import WeekDays from '../../../Calendar/WeekDays';
 import Text from '../../../Text';
 import * as Styled from './Styled';
 import { Props } from './types';
-
 
 export const Month: React.FC<Props> = React.memo(
     ({
@@ -26,7 +24,7 @@ export const Month: React.FC<Props> = React.memo(
     }) => {
         const today = new Date(),
             handleDateChange = useCallback((dt: Date) => () => onChange(dt), [onChange]),
-            handleMouseOver = useCallback((dt: Date) => () => setHoveredDate(dt), []);
+            handleMouseOver = useCallback((dt: Date | null) => () => setHoveredDate(dt), []);
 
         return (
             <Styled.Wrapper id={id} {...restProps}>
@@ -53,7 +51,7 @@ export const Month: React.FC<Props> = React.memo(
                             isInRangeAfterDateSelection =
                                 (startDate && !endDate && startDate < _date) || (!startDate && endDate && endDate > _date),
                             disabled = _date > maxSelectableDate || _date < minSelectableDate;
-                            
+
                         return (
                             <Styled.DateContainer
                                 key={index}

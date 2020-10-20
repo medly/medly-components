@@ -7,7 +7,7 @@ import Month from './Month';
 import { Props } from './types';
 
 export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props => {
-    const { 
+    const {
             id,
             size,
             placement,
@@ -20,8 +20,11 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
         } = props,
         { startDate, endDate } = selectedDates;
 
-    const [{ month, year }, setMonthAndYear] = useState(getMonthAndYearFromDate(startDate || new Date())),
+    const [hoveredDate, setHoveredDate] = useState<Date | null>(null),
+        [{ month, year }, setMonthAndYear] = useState(getMonthAndYearFromDate(startDate || new Date())),
         { month: nextMonth, year: nextYear } = useMemo(() => getNextMonthAndYear(month, year), [month, year]),
+        handleNextIconClick = useCallback(() => setMonthAndYear(val => getNextMonthAndYear(val.month, val.year)), []),
+        handlePrevIconClick = useCallback(() => setMonthAndYear(val => getPreviousMonthAndYear(val.month, val.year)), []),
         handleDateSelection = useCallback(
             (date: Date) => {
                 if (focusedElement === `START_DATE`) {
@@ -36,10 +39,8 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
                 }
             },
             [selectedDates, focusedElement]
-        ),
-        handleNextIconClick = useCallback(() => setMonthAndYear(val => getNextMonthAndYear(val.month, val.year)), []),
-        handlePrevIconClick = useCallback(() => setMonthAndYear(val => getPreviousMonthAndYear(val.month, val.year)), []),
-        [hoveredDate, setHoveredDate] = useState<Date | null>(null);
+        );
+
     useUpdateEffect(() => {
         startDate && setMonthAndYear(getMonthAndYearFromDate(startDate));
     }, [startDate]);
