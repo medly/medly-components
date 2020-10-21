@@ -1,4 +1,4 @@
-import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
+import { isValidStringOrNumber, useWindowSize, WithStyle } from '@medly-components/utils';
 import React, { useEffect, useRef } from 'react';
 import Text from '../../Text';
 import * as Styled from './Header.styled';
@@ -6,6 +6,7 @@ import { Props } from './types';
 
 export const Header: React.FC<Props> & WithStyle = React.memo(({ id, setHeaderHeight, children, ...restProps }) => {
     const headerRef = useRef();
+    const { width: windowWidth } = useWindowSize();
 
     useEffect(() => {
         if (headerRef.current) {
@@ -16,7 +17,7 @@ export const Header: React.FC<Props> & WithStyle = React.memo(({ id, setHeaderHe
     return (
         <Styled.Header ref={headerRef} {...{ ...restProps, id: `${id}-header` }}>
             {React.Children.map(children, c => {
-                return isValidStringOrNumber(c) ? <Text textVariant="h2">{c}</Text> : c;
+                return isValidStringOrNumber(c) ? <Text textVariant={windowWidth < 768 ? 'h3' : 'h2'}>{c}</Text> : c;
             })}
         </Styled.Header>
     );

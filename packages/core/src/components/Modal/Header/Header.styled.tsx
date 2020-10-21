@@ -8,8 +8,8 @@ const getPosition = ({ scrollState }: Props) => {
     const scrollPositionRem = getRemFromPx(scrollPosition);
 
     return css`
-        position: ${6.6 - scrollPositionRem > 1.9 ? 'relative' : 'fixed'};
-        padding: ${6.6 - scrollPositionRem > 1.9 ? '6.6rem' : '1.9rem'} 1.6rem 1.9rem 1.6rem;
+        position: ${6.6 - scrollPositionRem > 2.1 ? 'relative' : 'fixed'};
+        padding: ${6.6 - scrollPositionRem > 2.1 ? '6.6rem' : '2.1rem'} 1.6rem 1.9rem 1.6rem;
     `;
 };
 
@@ -18,7 +18,7 @@ const getBoxShadow = ({ scrollState, theme }: Props) => {
     const scrollPositionRem = getRemFromPx(scrollPosition);
 
     return css`
-        box-shadow: ${6.6 - scrollPositionRem < 1.9 && `0 1.8rem 1.6rem -1.6rem ${rgba(theme.colors.grey[400], 0.6)}`};
+        box-shadow: ${6.6 - scrollPositionRem < 2.1 && `0 1.8rem 1.6rem -1.6rem ${rgba(theme.colors.grey[400], 0.6)}`};
     `;
 };
 

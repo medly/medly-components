@@ -4,11 +4,11 @@ import Actions from './Actions';
 import CloseIcon from './CloseIcon';
 import Content from './Content';
 import Header from './Header';
-import { useScrollState } from './helpers';
 import { ContentHeaderStyled, ModalBackgroundStyled } from './Modal.styled';
 import Popup from './Popup';
 import { reducer } from './scrollStateReducer/scrollStateReducer';
 import { ModalStaticProps, Props } from './types';
+import { useScrollState } from './useScrollState';
 
 export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
     React.forwardRef((props, ref) => {

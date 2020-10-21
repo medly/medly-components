@@ -1,6 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
 import React, { useRef } from 'react';
-import { useScrollState } from '../helpers';
+import { useScrollState } from '../useScrollState';
 import * as Styled from './Content.styled';
 import { Props } from './types';
 

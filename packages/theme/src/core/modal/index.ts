@@ -11,9 +11,9 @@ const modal: ModalTheme = {
     closeIcon: {
         borderRadius: '50%',
         borderColor: {
-            default: colors.black,
-            hovered: colors.white,
-            pressed: colors.white
+            default: colors.grey[100],
+            hovered: colors.blue[600],
+            pressed: colors.blue[700]
         },
         color: {
             default: colors.black,

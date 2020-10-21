@@ -8,12 +8,12 @@ const getPadding = ({ scrollState, headerHeight }: Props) => {
     const scrollPositionRem = getRemFromPx(scrollPosition);
     const headerHeightRem = getRemFromPx(headerHeight);
 
-    // As the header/content area is scrolled, the top padding of the header component decreases from 6.6rem to 1.9rem.
-    // When the top padding of the header component hits 1.9rem, the header becomes fixed. In order to keep the content
+    // As the header/content area is scrolled, the top padding of the header component decreases from 6.6rem to 2.1rem.
+    // When the top padding of the header component hits 2.1rem, the header becomes fixed. In order to keep the content
     // component positioned correctly, we add top padding to the content component equal to height of the (now fixed) header.
     return css`
         padding: ${({ theme }) => `0 ${theme.spacing.S4}`};
-        padding-top: ${6.6 - scrollPositionRem > 1.9 ? '0' : `${headerHeightRem}rem `};
+        padding-top: ${6.6 - scrollPositionRem > 2.1 ? '0' : `${headerHeightRem}rem `};
 
         @media (min-width: 768px) {
             padding-top: 0;
