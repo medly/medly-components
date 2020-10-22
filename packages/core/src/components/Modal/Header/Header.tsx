@@ -1,10 +1,12 @@
 import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
-import React, { useEffect, useRef } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import Text from '../../Text';
+import { ModalContext } from '../Modal.context';
 import { HeaderProps } from '../types';
 import * as Styled from './Header.styled';
 
-export const Header: React.FC<HeaderProps> & WithStyle = React.memo(({ id, setHeaderHeight, children, isSmallScreen, ...restProps }) => {
+export const Header: React.FC<HeaderProps> & WithStyle = React.memo(({ children }) => {
+    const { id, setHeaderHeight, isSmallScreen, scrollState } = useContext(ModalContext);
     const headerRef = useRef<HTMLDivElement>();
 
     useEffect(() => {
@@ -14,7 +16,7 @@ export const Header: React.FC<HeaderProps> & WithStyle = React.memo(({ id, setHe
     }, [headerRef.current]);
 
     return (
-        <Styled.Header ref={headerRef} {...{ ...restProps, id: `${id}-header` }}>
+        <Styled.Header ref={headerRef} {...{ scrollState, id: `${id}-header` }}>
             {React.Children.map(children, c => {
                 return isValidStringOrNumber(c) ? <Text textVariant={isSmallScreen ? 'h3' : 'h2'}>{c}</Text> : c;
             })}

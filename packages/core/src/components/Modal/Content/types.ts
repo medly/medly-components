@@ -6,8 +6,4 @@ export interface Props {
         scrolledToBottom: boolean;
         scrollPosition: number;
     };
-    dispatch: React.Dispatch<{
-        type: 'scrolledToTop' | 'scrolledToBottom' | 'scrollPosition';
-        value: boolean | number;
-    }>;
 }

@@ -4,6 +4,7 @@ import Actions from './Actions';
 import CloseIcon from './CloseIcon';
 import Content from './Content';
 import Header from './Header';
+import { ModalContext } from './Modal.context';
 import { ContentHeaderStyled, ModalBackgroundStyled } from './Modal.styled';
 import Popup from './Popup';
 import { reducer } from './scrollStateReducer/scrollStateReducer';
@@ -25,6 +26,7 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
             isSmallScreen = windowWidth < 768,
             handleScroll = useScrollState({ ref: contentHeaderRef, scrollState, dispatch });
 
+        // TODO: REMOVE
         const ContentHeaderChildren = React.Children.toArray(children).filter((child: any) => {
             return child.type.displayName === 'Header' || child.type.displayName === 'Content';
         });
@@ -59,30 +61,34 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
                         onAnimationEnd={handleAnimationEnd}
                         {...{ minWidth, minHeight, isSmallScreen, open }}
                     >
-                        <CloseIcon id={`${id}-close-button`} onClick={onCloseModal} />
-                        <ContentHeaderStyled
-                            id={`${id}-content-header`}
-                            ref={contentHeaderRef}
-                            onScroll={handleScroll}
-                            headerHeight={headerHeight}
-                        >
-                            {ContentHeaderChildren.map((child: any) =>
-                                React.cloneElement(child as any, {
-                                    headerHeight,
-                                    setHeaderHeight,
+                        <ModalContext.Provider value={{ headerHeight, setHeaderHeight, scrollState, dispatch, id, isSmallScreen }}>
+                            <CloseIcon id={`${id}-close-button`} onClick={onCloseModal} />
+                            <ContentHeaderStyled
+                                id={`${id}-content-header`}
+                                ref={contentHeaderRef}
+                                onScroll={handleScroll}
+                                headerHeight={headerHeight}
+                            >
+                                {children}
+                                {/* {ContentHeaderChildren.map((child: any) =>
+                                    React.cloneElement(child as any, {
+                                        headerHeight,
+                                        setHeaderHeight,
+                                        scrollState,
+                                        dispatch,
+                                        id,
+                                        isSmallScreen
+                                    })
+                                )} */}
+                            </ContentHeaderStyled>
+                            {children}
+                            {/* {ActionsChild[0] &&
+                                React.cloneElement(ActionsChild[0] as any, {
                                     scrollState,
                                     dispatch,
-                                    id,
-                                    isSmallScreen
-                                })
-                            )}
-                        </ContentHeaderStyled>
-                        {ActionsChild[0] &&
-                            React.cloneElement(ActionsChild[0] as any, {
-                                scrollState,
-                                dispatch,
-                                id
-                            })}
+                                    id
+                                })} */}
+                        </ModalContext.Provider>
                     </Popup>
                 </ModalBackgroundStyled>
             )

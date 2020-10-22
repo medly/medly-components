@@ -18,6 +18,7 @@ export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
 
 export interface ModalBackgroundProps {
     open?: boolean;
+    isSmallScreen: boolean;
 }
 
 export interface HeaderProps extends Props {
@@ -48,4 +49,20 @@ export interface UseScrollStateProps {
         type: 'scrolledToTop' | 'scrolledToBottom' | 'scrollPosition';
         value: boolean | number;
     }>;
+}
+
+export interface ModalContextType {
+    headerHeight?: number;
+    setHeaderHeight?: (height: number) => void;
+    scrollState?: {
+        scrolledToTop: boolean;
+        scrolledToBottom: boolean;
+        scrollPosition: number;
+    };
+    dispatch?: React.Dispatch<{
+        type: 'scrolledToTop' | 'scrolledToBottom' | 'scrollPosition';
+        value: boolean | number;
+    }>;
+    id?: string;
+    isSmallScreen?: boolean;
 }
