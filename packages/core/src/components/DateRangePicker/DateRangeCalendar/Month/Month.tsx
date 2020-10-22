@@ -70,11 +70,14 @@ export const Month: React.FC<Props> = React.memo(
                                 isMonthLastDate={isMonthLastDate}
                                 isWeekFirstDate={isWeekFirstDate}
                                 isWeekLastDate={isWeekLastDate}
-                                onClick={handleDateChange(_date)}
-                                onMouseOver={handleMouseOver(_date)}
+                                onClick={!disabled && handleDateChange(_date)}
+                                onMouseOver={!disabled && handleMouseOver(_date)}
                                 onMouseOut={handleMouseOver(null)}
                             >
-                                <Styled.Date key={index} title={_date.toDateString()} disabled={disabled}>
+                                <Styled.Date
+                                    key={index}
+                                    title={_date.toDateString()}
+                                    disabled={disabled}>
                                     <Text>{_date.getDate()}</Text>
                                 </Styled.Date>
                             </Styled.DateContainer>

@@ -1669,7 +1669,7 @@ exports[`Form should handle dates with initial dates as null 1`] = `
                 </button>
               </div>
               <div
-                class="c34"
+                class="c31"
               >
                 <button
                   class="c28"
@@ -1714,7 +1714,7 @@ exports[`Form should handle dates with initial dates as null 1`] = `
                 </button>
               </div>
               <div
-                class="c31"
+                class="c34"
               >
                 <button
                   class="c28"
