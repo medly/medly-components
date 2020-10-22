@@ -40,8 +40,8 @@ export const CloseIcon = styled(ClearIcon)`
     @media (min-width: 768px) {
         top: 1.2rem;
         right: 1.2rem;
-        height: 2.4rem;
-        width: 2.4rem;
+        height: 3.2rem;
+        width: 3.2rem;
         padding: 0.4rem;
     }
 `;

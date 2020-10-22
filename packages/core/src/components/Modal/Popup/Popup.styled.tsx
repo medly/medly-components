@@ -15,6 +15,25 @@ export const Popup = styled('div')<Props>`
     box-sizing: border-box;
     border-top-left-radius: 1.6rem;
     border-top-right-radius: 1.6rem;
+    animation: ${({ open, isSmallScreen }) =>
+        isSmallScreen && `${open && isSmallScreen ? 'slideIn' : 'slideOut'} 0.5s cubic-bezier(0, 0, 0.33, 1) `};
+    @keyframes slideIn {
+        0% {
+            transform: translateY(100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideOut {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(100%);
+        }
+    }
 
     @media (min-width: 768px) and (max-width: 1439px) {
         padding: ${({ theme }) => `${theme.spacing.L1} ${theme.spacing.M2}`};

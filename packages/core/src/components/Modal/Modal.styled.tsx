@@ -1,7 +1,7 @@
 import { styled } from '@medly-components/utils';
-import { ContentHeaderProps } from './types';
+import { ContentHeaderProps, ModalBackgroundProps } from './types';
 
-export const ModalBackgroundStyled = styled('div')`
+export const ModalBackgroundStyled = styled.div<ModalBackgroundProps>`
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -12,6 +12,24 @@ export const ModalBackgroundStyled = styled('div')`
     height: 100%;
     background: ${({ theme }) => theme.modal.overlayColor};
     z-index: 1000;
+    animation: ${({ open, isSmallScreen }) => isSmallScreen && `${open ? 'fadeIn' : 'fadeOut'} 0.5s cubic-bezier(0, 0, 0.33, 1) `};
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 100;
+        }
+    }
+
+    @keyframes fadeOut {
+        0% {
+            opacity: 100;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
 
     @media (min-width: 768px) {
         align-items: center;

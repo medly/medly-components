@@ -8,15 +8,14 @@ export const useWindowSize = () => {
     });
 
     useEffect(() => {
-        const handleResize = () => {
-            debounce(
+        const handleResize = debounce(
+            () =>
                 setWindowSize({
                     width: window.innerWidth,
                     height: window.innerHeight
                 }),
-                250
-            );
-        };
+            25
+        );
 
         window.addEventListener('resize', handleResize);
 

@@ -16,6 +16,15 @@ export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
     shouldCloseOnOutsideClick?: boolean;
 }
 
+export interface ModalBackgroundProps {
+    open?: boolean;
+}
+
+export interface HeaderProps extends Props {
+    setHeaderHeight: (height: number) => void;
+    isSmallScreen: boolean;
+}
+
 export interface ModalStaticProps {
     Popup?: React.FC<ModalPopupProps> & WithStyle;
     Header?: React.FC;
