@@ -91,4 +91,13 @@ export interface TableTheme {
             };
         };
     };
+    actionBar?: {
+        bgColor: string;
+        shadowColor: string;
+        separatorColor: string;
+        color: string;
+        button: {
+            borderColor: string;
+        };
+    };
 }

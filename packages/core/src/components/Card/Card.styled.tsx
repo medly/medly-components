@@ -26,12 +26,12 @@ const borderTop = (separatorColor: string) => css`
         }
     `;
 
-const solid = ({ backgroundColor, shadowColor }: Partial<CardTheme>) => css`
+const solid = ({ backgroundColor, shadowColor, onClick }: Partial<CardTheme> & Props) => css`
         background-color: ${backgroundColor};
         border-radius: ${({ theme }) => theme.card.borderRadius};
         box-shadow: 0 0.2rem 0.8rem ${rgba(shadowColor, 0.2)};
         &:hover {
-            box-shadow: 0 0.4rem 0.8rem ${rgba(shadowColor, 0.6)};
+            box-shadow: ${onClick && `0 0.4rem 0.8rem ${rgba(shadowColor, 0.6)}`};
         }
     `,
     flat = () => css`

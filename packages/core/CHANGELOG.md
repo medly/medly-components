@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.30.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.30.0...@medly-components/core@1.30.1) (2020-10-20)
+
+
+### Bug Fixes
+
+* increase max screen size of XL breakpoint ([55b4640](https://github.com/medly/medly-components/commit/55b4640f180f9859135d6f4233932498bc2f9d40))
+
+
+
+
+
+# [1.30.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.29.0...@medly-components/core@1.30.0) (2020-10-20)
+
+
+### Bug Fixes
+
+* add required tests for text field updates ([2fb86f7](https://github.com/medly/medly-components/commit/2fb86f78e4ecc6c07fd1e4bd35a440201b5d929b))
+* hover shadow in card component ([af56034](https://github.com/medly/medly-components/commit/af560343a80e298e64fc4d3201cf90a65d7b7645))
+* lint issues in the actionbar component ([d2e5de6](https://github.com/medly/medly-components/commit/d2e5de605cfbc7a48a44234f0a7e55f63795a6be))
+* **core:** add props and WithStyle type to Modal Header and Content ([7954cd7](https://github.com/medly/medly-components/commit/7954cd76c214cefdaf58ee29fd8e09480e643581))
+* **core:** remove props from header and content type definitions ([b997968](https://github.com/medly/medly-components/commit/b99796806c3e29b2d507752534e8d2ed4dedf6a5))
+
+
+### Features
+
+* **core:** add action bar component ([6ab733a](https://github.com/medly/medly-components/commit/6ab733a6606147af26ad21cc309e2d27c47f325c))
+
+
+
+
+
 # [1.29.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.28.2...@medly-components/core@1.29.0) (2020-10-15)
 
 
