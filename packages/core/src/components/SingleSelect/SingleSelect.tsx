@@ -106,7 +106,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 (event: React.FocusEvent<HTMLInputElement>) => {
                     isFocused.current = false;
                     onBlur && onBlur(event);
-                    setTimeout(() => !isFocused.current && hideOptions(), 150);
+                    setTimeout(() => !isFocused.current && hideOptions(), 250);
                 },
                 [onBlur]
             ),
