@@ -44,7 +44,6 @@ export interface StyledProps extends Props, TextFieldTheme {
     isLabelPresent: boolean;
     multiline?: boolean;
     variant: 'filled' | 'outlined' | 'fusion';
-    labelWidth?: number;
     inputWidth: number;
 }
 

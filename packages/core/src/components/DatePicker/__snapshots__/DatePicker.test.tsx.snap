@@ -12444,25 +12444,13 @@ exports[`DatePicker component should render properly when value is of date type 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.c13 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c4 {
@@ -12794,11 +12782,6 @@ exports[`DatePicker component should render properly when value is of date type 
         </svg>
       </div>
       
-      <span
-        class="c13"
-      >
-        Start Date
-      </span>
     </div>
   </div>
 </div>
@@ -12849,25 +12832,13 @@ exports[`DatePicker component should render properly when value is of string typ
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.c13 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c4 {
@@ -13196,9 +13167,6 @@ exports[`DatePicker component should render properly when value is of string typ
         </svg>
       </div>
       
-      <span
-        class="c13"
-      />
     </div>
   </div>
 </div>

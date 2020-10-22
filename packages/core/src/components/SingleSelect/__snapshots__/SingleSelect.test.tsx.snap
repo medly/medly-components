@@ -45,25 +45,13 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.c11 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c10 {
@@ -385,9 +373,6 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
         </svg>
       </div>
       
-      <span
-        class="c11"
-      />
     </div>
   </div>
 </div>
@@ -438,25 +423,13 @@ exports[`SingleSelect component should render properly when isSearchable is true
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.c11 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c10 {
@@ -781,9 +754,6 @@ exports[`SingleSelect component should render properly when isSearchable is true
         </svg>
       </div>
       
-      <span
-        class="c11"
-      />
     </div>
   </div>
 </div>
@@ -1008,25 +978,13 @@ exports[`SingleSelect component should take passed max width 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.c12 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c11 {
@@ -1265,7 +1223,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
   opacity: 1;
 }
 
-.c16 {
+.c15 {
   margin: 0;
   color: inherit;
   font-size: 1.6rem;
@@ -1278,7 +1236,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
   text-align: initial;
 }
 
-.c14 {
+.c13 {
   cursor: pointer;
   padding: 0 0.8rem;
   border-radius: 0.4rem;
@@ -1297,15 +1255,15 @@ exports[`SingleSelect component should take passed max width 1`] = `
   max-width: 30rem;
 }
 
-.c14:hover {
+.c13:hover {
   background-color: #F7F8F9;
 }
 
-.c14:active {
+.c13:active {
   background-color: #eff2f4;
 }
 
-.c14 > .c15 {
+.c13 > .c14 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -1317,21 +1275,21 @@ exports[`SingleSelect component should take passed max width 1`] = `
   color: #13181D;
 }
 
-.c14 > .c8 {
+.c13 > .c8 {
   margin-left: 1.6rem;
 }
 
-.c14 > .c8 * {
+.c13 > .c8 * {
   fill: #13181D;
 }
 
-.c14 .c15 {
+.c13 .c14 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.c13 {
+.c12 {
   z-index: 1000;
   position: absolute;
   background: #ffffff;
@@ -1352,22 +1310,22 @@ exports[`SingleSelect component should take passed max width 1`] = `
   max-height: 20rem;
 }
 
-.c17 .c1 {
+.c16 .c1 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c17 .c1 label {
+.c16 .c1 label {
   pointer-events: none;
 }
 
-.c17 .c1 div,
-.c17 .c1 input,
-.c17 .c1 label {
+.c16 .c1 div,
+.c16 .c1 input,
+.c16 .c1 label {
   cursor: pointer;
 }
 
-.c17 .c1 .c10 {
+.c16 .c1 .c10 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -1376,7 +1334,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
   transform: rotate(0deg);
 }
 
-.c17 .c1:not(:focus-within):hover .c10 * {
+.c16 .c1:not(:focus-within):hover .c10 * {
   fill: #13181D;
 }
 
@@ -1465,40 +1423,37 @@ exports[`SingleSelect component should take passed max width 1`] = `
         </svg>
       </div>
       
-      <span
-        class="c12"
-      />
     </div>
     <ul
-      class="c13"
+      class="c12"
       id="medly-singleSelect-options"
     >
       <li
-        class="c14"
+        class="c13"
         id="All"
       >
         <span
-          class="c15 c16"
+          class="c14 c15"
         >
           All
         </span>
       </li>
       <li
-        class="c14"
+        class="c13"
         id="Dummy1"
       >
         <span
-          class="c15 c16"
+          class="c14 c15"
         >
           Dummy1
         </span>
       </li>
       <li
-        class="c14"
+        class="c13"
         id="Dummy2"
       >
         <span
-          class="c15 c16"
+          class="c14 c15"
         >
           Dummy2
         </span>
@@ -1518,11 +1473,11 @@ exports[`SingleSelect component should take passed max width 1`] = `
         </svg>
       </li>
       <li
-        class="c14"
+        class="c13"
         id="Dummy3"
       >
         <span
-          class="c15 c16"
+          class="c14 c15"
         >
           Dummy3
         </span>
@@ -1588,25 +1543,13 @@ exports[`SingleSelect component with filled variant should render disabled state
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.c13 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c10 {
@@ -1906,9 +1849,6 @@ exports[`SingleSelect component with filled variant should render disabled state
       >
         Helper Text
       </span>
-      <span
-        class="c13"
-      />
     </div>
   </div>
 </div>
@@ -2118,25 +2058,13 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.c11 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c10 {
@@ -2456,9 +2384,6 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
         </svg>
       </div>
       
-      <span
-        class="c11"
-      />
     </div>
   </div>
 </div>
@@ -2520,25 +2445,13 @@ exports[`SingleSelect component with filled variant should render with label pro
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.c13 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c10 {
@@ -2870,11 +2783,6 @@ exports[`SingleSelect component with filled variant should render with label pro
         id="label-helper-text"
       >
         Helper Text
-      </span>
-      <span
-        class="c13"
-      >
-        Label
       </span>
     </div>
   </div>
@@ -3826,25 +3734,13 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.c13 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c10 {
@@ -4149,9 +4045,6 @@ exports[`SingleSelect component with outlined variant should render disabled sta
       >
         Helper Text
       </span>
-      <span
-        class="c13"
-      />
     </div>
   </div>
 </div>
@@ -4361,25 +4254,13 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.c11 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c10 {
@@ -4713,9 +4594,6 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
         </svg>
       </div>
       
-      <span
-        class="c11"
-      />
     </div>
   </div>
 </div>
@@ -4777,25 +4655,13 @@ exports[`SingleSelect component with outlined variant should render with label p
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.c13 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c10 {
@@ -5141,11 +5007,6 @@ exports[`SingleSelect component with outlined variant should render with label p
         id="label-helper-text"
       >
         Helper Text
-      </span>
-      <span
-        class="c13"
-      >
-        Label
       </span>
     </div>
   </div>

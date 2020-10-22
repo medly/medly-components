@@ -30,25 +30,13 @@ exports[`MultiSelect component should render correctly with all the props given 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.c15 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c3 {
@@ -501,11 +489,6 @@ exports[`MultiSelect component should render correctly with all the props given 
         </div>
       </div>
       
-      <span
-        class="c15"
-      >
-        Pharmacy
-      </span>
     </div>
   </div>
 </div>
@@ -541,25 +524,13 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.c12 {
-  width: auto;
-  display: inline-block;
-  position: absolute;
-  visibility: hidden;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c3 {
@@ -917,9 +888,6 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
         </div>
       </div>
       
-      <span
-        class="c12"
-      />
     </div>
   </div>
 </div>

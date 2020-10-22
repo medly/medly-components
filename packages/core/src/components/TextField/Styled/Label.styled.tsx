@@ -21,7 +21,6 @@ export const Label = styled('label')<{
     variant: 'outlined' | 'filled' | 'fusion';
     size: 'S' | 'M';
     multiline: boolean;
-    labelWidth: number;
     inputWidth: number;
 }>`
     top: ${({ multiline }) => (multiline ? '1.1rem' : '50%')};
@@ -37,7 +36,8 @@ export const Label = styled('label')<{
     transform: translateY(-50%);
     opacity: 1;
     z-index: 1;
-    width: ${({ labelWidth, inputWidth }) => (labelWidth >= inputWidth ? '100%' : labelWidth)};
+    width: ${({ inputWidth }) => `calc(${inputWidth}px - 2rem) `};
+    max-width: min-content;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -50,5 +50,7 @@ export const HiddenLabelContainer = styled('span')<{ size: 'S' | 'M' }>`
     display: inline-block;
     position: absolute;
     visibility: hidden;
+    pointer-events: none;
+    z-index: -1;
     ${({ theme, size }) => getFontStyle({ theme, fontVariant: theme.textField.textVariant[size] })}
 `;

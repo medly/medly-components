@@ -7,8 +7,7 @@ import { Props } from './types';
 export const TextField: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props: Props, ref) => {
         const [builtInErrorMessage, setErrorMessage] = useState(''),
-            inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
-            hiddenLabelRef = useCombinedRefs<HTMLSpanElement>(ref, React.useRef(null));
+            inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null));
 
         const {
                 id,
@@ -38,7 +37,6 @@ export const TextField: FC<Props> & WithStyle = React.memo(
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]),
             [isTextPresent, setIsTextPresent] = useState(!!value || !!restProps.defaultValue),
             [maskLabel, setMaskLabel] = useState(mask),
-            [labelWidth, setLabelWidth] = useState(0),
             [inputWidth, setInputWidth] = useState(0);
 
         const validate = useCallback(
@@ -76,12 +74,9 @@ export const TextField: FC<Props> & WithStyle = React.memo(
         }, [value, mask]);
 
         useEffect(() => {
-            const labelWidth = hiddenLabelRef.current.offsetWidth;
-            setLabelWidth(labelWidth);
-
             const inputWidth = inputRef.current.offsetWidth;
             setInputWidth(inputWidth);
-        }, [label]);
+        }, []);
 
         return (
             <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth} maxWidth={maxWidth} id={`${inputId}-input-wrapper`}>
@@ -126,7 +121,6 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                         )}
                         <Styled.Label
                             inputWidth={inputWidth}
-                            labelWidth={labelWidth}
                             htmlFor={`${inputId}-input`}
                             size={size}
                             required={required}
@@ -147,9 +141,6 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                         {(errorText || builtInErrorMessage || helperText).trim()}
                     </Styled.HelperText>
                 )}
-                <Styled.HiddenLabelContainer ref={hiddenLabelRef} size={size}>
-                    {label}
-                </Styled.HiddenLabelContainer>
             </Styled.OuterWrapper>
         );
     })
