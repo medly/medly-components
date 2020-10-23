@@ -57,7 +57,7 @@ exports[`Card component should render correctly with all the default props 1`] =
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c0 {
     padding: 2.4rem;
   }
@@ -254,7 +254,7 @@ exports[`Card component should render properly when flow direction is horizontal
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c0 {
     padding: 2.4rem;
   }
@@ -278,7 +278,7 @@ exports[`Card component should render properly when flow direction is horizontal
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c1 {
     padding: 2.4rem;
   }
@@ -302,7 +302,7 @@ exports[`Card component should render properly when flow direction is horizontal
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c3 {
     padding: 2.4rem;
   }
@@ -326,7 +326,7 @@ exports[`Card component should render properly when flow direction is horizontal
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c4 {
     padding: 2.4rem;
   }
@@ -350,7 +350,7 @@ exports[`Card component should render properly when flow direction is horizontal
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c5 {
     padding: 2.4rem;
   }
@@ -474,7 +474,7 @@ exports[`Card component should render properly when fullWidth and fullHeight is 
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c0 {
     padding: 2.4rem;
   }
@@ -559,7 +559,7 @@ exports[`Card component should render properly when it is clickable  1`] = `
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c0 {
     padding: 2.4rem;
   }
@@ -748,7 +748,7 @@ exports[`Card component should render properly when separator is set true flow d
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c1 {
     padding: 2.4rem;
   }
@@ -772,7 +772,7 @@ exports[`Card component should render properly when separator is set true flow d
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c3 {
     padding: 2.4rem;
   }
@@ -796,7 +796,7 @@ exports[`Card component should render properly when separator is set true flow d
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c4 {
     padding: 2.4rem;
   }
@@ -820,7 +820,7 @@ exports[`Card component should render properly when separator is set true flow d
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c5 {
     padding: 2.4rem;
   }
@@ -934,7 +934,7 @@ exports[`Card component should render properly with "flat" variant 1`] = `
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c0 {
     padding: 2.4rem;
   }
@@ -1011,7 +1011,7 @@ exports[`Card component should render properly with "solid" variant 1`] = `
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c0 {
     padding: 2.4rem;
   }
@@ -1088,7 +1088,7 @@ exports[`Card component should render properly with display "block" 1`] = `
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c0 {
     padding: 2.4rem;
   }
@@ -1168,7 +1168,7 @@ exports[`Card component should render properly with display "flex" 1`] = `
   }
 }
 
-@media (min-width:1280px) and (max-width:1600px) {
+@media (min-width:1280px) and (max-width:2400px) {
   .c0 {
     padding: 2.4rem;
   }
