@@ -9,11 +9,7 @@ describe('Modal action component', () => {
         ['center', 'center'],
         ['right', 'flex-end']
     ])('should align actions properly when align-items props is %s', (alignItems: ModalActionUserProps['alignItems'], flexValue) => {
-        const { container } = render(
-            <Actions id="dummy" scrollState={{ scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 }} alignItems={alignItems}>
-                Demo Actions
-            </Actions>
-        );
-        expect(container.querySelector('#dummy-actions')).toHaveStyle(`justify-content: ${flexValue}`);
+        const { container } = render(<Actions alignItems={alignItems}>Demo Actions</Actions>);
+        expect(container.querySelector('#default-id-actions')).toHaveStyle(`justify-content: ${flexValue}`);
     });
 });

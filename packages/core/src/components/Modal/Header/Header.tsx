@@ -3,9 +3,8 @@ import React, { useContext, useEffect, useRef } from 'react';
 import Text from '../../Text';
 import { ModalContext } from '../Modal.context';
 import * as Styled from './Header.styled';
-import { Props } from './types';
 
-export const Header: React.FC<Props> & WithStyle = React.memo(({ children }) => {
+export const Header: React.FC & WithStyle = React.memo(({ children }) => {
     const { id, setHeaderHeight, isSmallScreen, scrollState } = useContext(ModalContext);
     const headerRef = useRef<HTMLDivElement>();
 

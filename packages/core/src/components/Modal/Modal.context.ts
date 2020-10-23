@@ -1,4 +1,18 @@
 import { createContext } from 'react';
 import { ModalContextType } from './types';
 
-export const ModalContext = createContext<ModalContextType>(null);
+// default values are for testing purposes
+const defaultValues = {
+    headerHeight: 120,
+    setHeaderHeight: (): void => null,
+    scrollState: {
+        scrolledToTop: true,
+        scrolledToBottom: false,
+        scrollPosition: 120
+    },
+    dispatch: (): void => null,
+    id: 'default-id',
+    isSmallScreen: false
+};
+
+export const ModalContext = createContext<ModalContextType>(defaultValues);

@@ -1,9 +1,10 @@
 import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { Modal } from './Modal';
-import { Props } from './types';
+import { ModalBackgroundStyled } from './Modal.styled';
+import { ModalBackgroundProps, Props } from './types';
 
-const renderer = ({ open = false, onCloseModal = jest.fn(), minWidth, minHeight, shouldCloseOnOutsideClick = false }: Props) =>
+const modalRenderer = ({ open = false, onCloseModal = jest.fn(), minWidth, minHeight, shouldCloseOnOutsideClick = false }: Props) =>
     render(
         <Modal {...{ open, onCloseModal, minHeight, minWidth, shouldCloseOnOutsideClick }}>
             <Modal.Header>
@@ -38,32 +39,32 @@ describe('Modal component', () => {
     afterEach(cleanup);
 
     it('should render properly when it is open', () => {
-        const { container } = renderer({ open: true, minWidth: '200px', minHeight: '200px' });
+        const { container } = modalRenderer({ open: true, minWidth: '200px', minHeight: '200px' });
         expect(container).toMatchSnapshot();
     });
 
     it('should not render when open prop is falsy', () => {
-        const { container } = renderer({});
+        const { container } = modalRenderer({});
         expect(container).toBeEmptyDOMElement();
     });
 
     it('should call onCloseModal on click on close icon', () => {
         const mockOnCloseModal = jest.fn();
-        const { container } = renderer({ open: true, onCloseModal: mockOnCloseModal });
+        const { container } = modalRenderer({ open: true, onCloseModal: mockOnCloseModal });
         fireEvent.click(container.querySelector('#medly-modal-close-button'));
         expect(mockOnCloseModal).toBeCalled();
     });
 
     it('should call onCloseModal on pressing escape key', () => {
         const mockOnCloseModal = jest.fn();
-        const { container } = renderer({ open: true, onCloseModal: mockOnCloseModal });
+        const { container } = modalRenderer({ open: true, onCloseModal: mockOnCloseModal });
         fireEvent.keyDown(container, { key: 'Escape', code: 27 });
         expect(mockOnCloseModal).toBeCalled();
     });
 
     it('should call onCloseModal on click on overlay background', () => {
         const mockOnCloseModal = jest.fn();
-        const { container } = renderer({ open: true, onCloseModal: mockOnCloseModal, shouldCloseOnOutsideClick: true });
+        const { container } = modalRenderer({ open: true, onCloseModal: mockOnCloseModal, shouldCloseOnOutsideClick: true });
         fireEvent.click(container.querySelector('#medly-modal'));
         expect(mockOnCloseModal).toBeCalled();
     });
@@ -83,7 +84,7 @@ describe('Modal component', () => {
     });
 
     it('should hide shadow of header on scroll to top', () => {
-        const { container } = renderer({ open: true });
+        const { container } = modalRenderer({ open: true });
         Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
         Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
         Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 0 });
@@ -92,7 +93,7 @@ describe('Modal component', () => {
         expect(container.querySelector('#medly-modal-actions')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
     });
     it('should hide shadow of actions on scroll to bottom', () => {
-        const { container } = renderer({ open: true });
+        const { container } = modalRenderer({ open: true });
         Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
         Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
         Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 300 });
@@ -104,12 +105,29 @@ describe('Modal component', () => {
     });
 
     it('should show shadow of header and actions on scroll', () => {
-        const { container } = renderer({ open: true });
+        const { container } = modalRenderer({ open: true });
         Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
         Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
         Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 100 });
         fireEvent.scroll(container.querySelector('#medly-modal-content'), { target: { scrollY: 100 } });
         expect(container.querySelector('#medly-modal-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
         expect(container.querySelector('#medly-modal-actions')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
+    });
+});
+
+const ModalBackgroundRenderer = ({ open = true, isSmallScreen = true }: ModalBackgroundProps) => {
+    const mockOnClick = jest.fn();
+    return render(<ModalBackgroundStyled onClick={mockOnClick} {...{ open, isSmallScreen }} />);
+};
+
+describe('Modal component background at small screen size', () => {
+    it('should render properly when it is open', () => {
+        const { container } = ModalBackgroundRenderer({ open: true, isSmallScreen: true });
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly when it is closed', () => {
+        const { container } = ModalBackgroundRenderer({ open: false, isSmallScreen: true });
+        expect(container).toMatchSnapshot();
     });
 });

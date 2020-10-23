@@ -51,17 +51,17 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
                         onAnimationEnd={handleAnimationEnd}
                         {...{ minWidth, minHeight, isSmallScreen, open }}
                     >
-                        <ModalContext.Provider value={{ headerHeight, setHeaderHeight, scrollState, dispatch, id, isSmallScreen }}>
-                            <CloseIcon id={`${id}-close-button`} onClick={onCloseModal} />
-                            <ContentHeaderStyled
-                                id={`${id}-content-header`}
-                                ref={contentHeaderRef}
-                                onScroll={handleScroll}
-                                headerHeight={headerHeight}
-                            >
+                        <CloseIcon id={`${id}-close-button`} onClick={onCloseModal} />
+                        <ContentHeaderStyled
+                            id={`${id}-content-header`}
+                            ref={contentHeaderRef}
+                            onScroll={handleScroll}
+                            headerHeight={headerHeight}
+                        >
+                            <ModalContext.Provider value={{ headerHeight, setHeaderHeight, scrollState, dispatch, id, isSmallScreen }}>
                                 {children}
-                            </ContentHeaderStyled>
-                        </ModalContext.Provider>
+                            </ModalContext.Provider>
+                        </ContentHeaderStyled>
                     </Popup>
                 </ModalBackgroundStyled>
             )

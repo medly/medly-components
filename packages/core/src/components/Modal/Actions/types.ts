@@ -5,11 +5,7 @@ export type ModalActionUserProps = {
     alignItems?: 'left' | 'center' | 'right';
 };
 
-export type Props = ModalActionUserProps & {
-    id: string;
-    scrollState: ScrollState;
-};
-
 export interface StyledProps extends ModalActionUserProps {
     isSmallScreen: boolean;
+    scrollState: ScrollState;
 }
