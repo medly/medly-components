@@ -23,6 +23,7 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
             [shouldRender, setShouldRender] = useState(open),
             windowSize = useWindowSize(),
             { width: windowWidth } = windowSize,
+            // TODO: move 768 to constants
             isSmallScreen = windowWidth < 768,
             handleScroll = useScrollState({ ref: contentHeaderRef, scrollState, dispatch });
 
