@@ -1,8 +1,8 @@
 import { css, styled } from '@medly-components/utils';
 import { getRemFromPx } from '../helpers';
-import { Props } from './types';
+import { StyledProps } from './types';
 
-const getPadding = ({ scrollState, headerHeight }: Props) => {
+const getPadding = ({ scrollState, headerHeight }: StyledProps) => {
     const { scrollPosition } = scrollState;
     // divide pixel values by 10 for REM values
     const scrollPositionRem = getRemFromPx(scrollPosition);

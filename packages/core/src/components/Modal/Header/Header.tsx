@@ -2,10 +2,10 @@ import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
 import React, { useContext, useEffect, useRef } from 'react';
 import Text from '../../Text';
 import { ModalContext } from '../Modal.context';
-import { HeaderProps } from '../types';
 import * as Styled from './Header.styled';
+import { Props } from './types';
 
-export const Header: React.FC<HeaderProps> & WithStyle = React.memo(({ children }) => {
+export const Header: React.FC<Props> & WithStyle = React.memo(({ children }) => {
     const { id, setHeaderHeight, isSmallScreen, scrollState } = useContext(ModalContext);
     const headerRef = useRef<HTMLDivElement>();
 
@@ -13,7 +13,7 @@ export const Header: React.FC<HeaderProps> & WithStyle = React.memo(({ children 
         if (headerRef.current) {
             setHeaderHeight(headerRef.current.offsetHeight);
         }
-    }, [headerRef.current]);
+    }, [headerRef.current, isSmallScreen]);
 
     return (
         <Styled.Header ref={headerRef} {...{ scrollState, id: `${id}-header` }}>

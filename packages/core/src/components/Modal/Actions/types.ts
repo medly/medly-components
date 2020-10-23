@@ -1,3 +1,5 @@
+import { ScrollState } from '../types';
+
 export type ModalActionUserProps = {
     /** Use this to align actions horizontally */
     alignItems?: 'left' | 'center' | 'right';
@@ -5,9 +7,9 @@ export type ModalActionUserProps = {
 
 export type Props = ModalActionUserProps & {
     id: string;
-    scrollState: {
-        scrolledToTop: boolean;
-        scrolledToBottom: boolean;
-    };
-    isSmallScreen: boolean;
+    scrollState: ScrollState;
 };
+
+export interface StyledProps extends ModalActionUserProps {
+    isSmallScreen: boolean;
+}

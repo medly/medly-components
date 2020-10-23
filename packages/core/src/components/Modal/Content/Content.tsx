@@ -3,9 +3,8 @@ import React, { useContext, useRef } from 'react';
 import { ModalContext } from '../Modal.context';
 import { useScrollState } from '../useScrollState';
 import * as Styled from './Content.styled';
-import { Props } from './types';
 
-export const Content: React.FC<Props> & WithStyle = React.memo(({ children }) => {
+export const Content: React.FC & WithStyle = React.memo(({ children }) => {
     const { id, dispatch, scrollState, headerHeight } = useContext(ModalContext),
         contentRef = useRef(),
         handleScroll = useScrollState({ ref: contentRef, scrollState, dispatch });

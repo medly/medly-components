@@ -21,12 +21,6 @@ export interface ModalBackgroundProps {
     isSmallScreen: boolean;
 }
 
-export interface HeaderProps extends Props {
-    // TODO: do these need to be optional?
-    setHeaderHeight?: (height: number) => void;
-    isSmallScreen?: boolean;
-}
-
 export interface ModalStaticProps {
     Popup?: React.FC<ModalPopupProps> & WithStyle;
     Header?: React.FC;
@@ -39,14 +33,8 @@ export interface ContentHeaderProps {
     headerHeight: number;
 }
 
-// TODO: can these be cleaned up?
-
 export interface UseScrollStateProps {
-    scrollState: {
-        scrolledToTop: boolean;
-        scrolledToBottom: boolean;
-        scrollPosition: number;
-    };
+    scrollState: ScrollState;
     ref: MutableRefObject<HTMLDivElement>;
     dispatch: React.Dispatch<{
         type: 'scrolledToTop' | 'scrolledToBottom' | 'scrollPosition';
@@ -57,15 +45,17 @@ export interface UseScrollStateProps {
 export interface ModalContextType {
     headerHeight?: number;
     setHeaderHeight?: (height: number) => void;
-    scrollState?: {
-        scrolledToTop: boolean;
-        scrolledToBottom: boolean;
-        scrollPosition: number;
-    };
+    scrollState?: ScrollState;
     dispatch?: React.Dispatch<{
         type: 'scrolledToTop' | 'scrolledToBottom' | 'scrollPosition';
         value: boolean | number;
     }>;
     id?: string;
     isSmallScreen?: boolean;
+}
+
+export interface ScrollState {
+    scrolledToTop: boolean;
+    scrolledToBottom: boolean;
+    scrollPosition: number;
 }

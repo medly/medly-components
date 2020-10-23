@@ -10,8 +10,7 @@ describe('Modal action component', () => {
         ['right', 'flex-end']
     ])('should align actions properly when align-items props is %s', (alignItems: ModalActionUserProps['alignItems'], flexValue) => {
         const { container } = render(
-            // TODO: fix types
-            <Actions id="dummy" scrollState={{ scrolledToTop: true, scrolledToBottom: false }} alignItems={alignItems}>
+            <Actions id="dummy" scrollState={{ scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 }} alignItems={alignItems}>
                 Demo Actions
             </Actions>
         );

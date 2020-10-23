@@ -21,9 +21,7 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
             [headerHeight, setHeaderHeight] = useState(0),
             [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 }),
             [shouldRender, setShouldRender] = useState(open),
-            windowSize = useWindowSize(),
-            { width: windowWidth } = windowSize,
-            // TODO: move 768 to constants
+            { width: windowWidth } = useWindowSize(),
             isSmallScreen = windowWidth < 768,
             handleScroll = useScrollState({ ref: contentHeaderRef, scrollState, dispatch });
 

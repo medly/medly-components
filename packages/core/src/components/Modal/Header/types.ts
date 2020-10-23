@@ -1,10 +1,7 @@
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import { ScrollState } from '../types';
 
 export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
     id: string;
-    scrollState: {
-        scrolledToTop: boolean;
-        scrolledToBottom: boolean;
-        scrollPosition: number;
-    };
+    scrollState: ScrollState;
 }
