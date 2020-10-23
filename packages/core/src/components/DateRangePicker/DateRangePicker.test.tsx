@@ -131,13 +131,40 @@ describe('DateRangePicker', () => {
     describe('Handlers', () => {
         it('should call onChange on selecting date', async () => {
             const mockOnChange = jest.fn(),
-                dateToSelect = { startDate: new Date(2020, 10, 25) },
+                currentYear = new Date().getFullYear(),
+                currentMonth = new Date().getMonth(),
+                currentDay = new Date().getDay(),
+                dateToSelect = { startDate: new Date(currentYear, currentMonth, currentDay), endDate: new Date(currentYear, currentMonth + 1, currentDay) },
                 { container, getByTitle } = renderComponent({
                     onChange: mockOnChange
                 });
             fireEvent.click(container.querySelector('svg'));
             fireEvent.click(getByTitle(dateToSelect.startDate.toDateString()));
-            expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
+            fireEvent.click(getByTitle(dateToSelect.endDate.toDateString()));
+            expect(mockOnChange).toHaveBeenCalledTimes(2);
+        });
+
+        it('should match value on selecting date', async () => {
+            const selectedDates: any = { startDate: null, endDate: null };
+            const mockOnChange = (dates: any) => {
+                if ('startDate' in dates && dates.startDate) {
+                    selectedDates.startDate = dates.startDate;
+                } else if ('endDate' in dates && dates.endDate) {
+                    selectedDates.endDate = dates.endDate;
+                }
+
+            },
+                currentYear = new Date().getFullYear(),
+                currentMonth = new Date().getMonth(),
+                currentDay = new Date().getDay(),
+                dateToSelect = { startDate: new Date(currentYear, currentMonth, currentDay), endDate: new Date(currentYear, currentMonth + 1, currentDay) },
+                { container, getByTitle } = renderComponent({
+                    onChange: mockOnChange
+                });
+            fireEvent.click(container.querySelector('svg'));
+            fireEvent.click(getByTitle(dateToSelect.startDate.toDateString()));
+            fireEvent.click(getByTitle(dateToSelect.endDate.toDateString()));
+            expect(selectedDates).toMatchObject(dateToSelect);
         });
 
         it('should call focus and blur handlers if passed', () => {
@@ -157,6 +184,7 @@ describe('DateRangePicker', () => {
             fireEvent.blur(inputElFrom);
             expect(mockOnBlur).toHaveBeenCalled();
             fireEvent.change(inputElFrom, { target: { value: '10 / 14 / 2020' } });
+            fireEvent.change(inputElFrom, { target: { value: '10 / 18 / 2020' } });
             expect(mockOnChange).toHaveBeenCalled();
             fireEvent.focus(inputElFrom);
             expect(mockOnFocus).toHaveBeenCalled();
@@ -165,6 +193,7 @@ describe('DateRangePicker', () => {
             fireEvent.blur(inputElTo);
             expect(mockOnBlur).toHaveBeenCalled();
             fireEvent.change(inputElTo, { target: { value: '10 / 18 / 2020' } });
+            fireEvent.change(inputElTo, { target: { value: '10 / 28 / 2020' } });
             expect(mockOnChange).toHaveBeenCalled();
         });
 
