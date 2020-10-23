@@ -1,7 +1,7 @@
 import { TextField } from './TextField.tsx';
 import Text from '../Text';
 import { AddCircleOutlineIcon, AddCircleIcon, CheckCircleIcon } from '@medly-components/icons';
-import { withKnobs, text, color, select, boolean } from '@storybook/addon-knobs';
+import { withKnobs, text, color, select, boolean, number } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { ThemeInterface, variants, sizes, Custom } from './TextField.stories.tsx';
 import { useState, useCallback } from 'react';
@@ -25,18 +25,29 @@ Basic TextField component with lot of customization
                     size={select('Size', sizes, 'M')}
                     minWidth={text('Min Width', '20rem')}
                     maxWidth={text('Max Width', '')}
-                    variant={select('Variant', variants, 'filled')}
+                    variant={select('Variant', variants, 'outlined')}
                     fullWidth={boolean('Full Width', false)}
                     disabled={boolean('Disabled', false)}
-                    label={text('Label', 'First Name')}
+                    label={text('Label', 'Name')}
                     required={boolean('Required', false)}
                     placeholder={text('Placeholder', 'Enter First Name')}
                     helperText={text('Helper Text', 'Helper Text')}
                     errorText={text('Error Text', '')}
+                    multiline={boolean('Multiline', true)}
+                    minRows={number('Rows', 3)}
                 />
             );
         }}
     </Story>
+</Preview>
+
+#### Multiline
+
+To use a text area element instead of an input element, you must provide the `multiline` and `minRows` prop. Rows should be set to the number of rows you want the text area to default to.
+
+<Preview withToolbar>
+    <TextField id="textarea" type="Name" variant="filled" multiline minRows={3} placeholder="Add Notes" />
+    <TextField id="textarea" type="Name" variant="outlined" multiline minRows={3} placeholder="Add Notes" />
 </Preview>
 
 #### Masking (beta-version)

@@ -25,7 +25,7 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
                     <CustomComponent {...{ data, rowId, disabled: isRowClickDisabled, rowData }} />
                 </CustomComponentWrapper>
             ) : (
-                <Text ref={childRef} textVariant="body2">
+                <Text ref={childRef} textVariant="body2" title={data}>
                     {formatter ? formatter(data) : data}
                 </Text>
             )}

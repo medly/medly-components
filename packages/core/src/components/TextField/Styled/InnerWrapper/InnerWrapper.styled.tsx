@@ -5,8 +5,8 @@ import { Label } from '../Label.styled';
 import { Prefix } from '../Prefix.styled';
 import { Suffix } from '../Suffix.styled';
 import { filledStyle } from './filled.styled';
+import { fusionErrorStyle, fusionStyle } from './fusion.styled';
 import { outlinedStyle } from './outlined.styled';
-import { roundedOutlinedErrorStyle, roundedOutlinedStyle } from './fusion.styled';
 
 const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
     cursor: not-allowed;
@@ -60,7 +60,7 @@ const activeStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => cs
 
 const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) =>
     variant === 'fusion'
-        ? roundedOutlinedErrorStyle
+        ? fusionErrorStyle
         : css`
               &,
               &:hover,
@@ -91,6 +91,30 @@ const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) =>
               }
           `;
 
+const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperProps) => {
+    const baseHeight = theme.textField.height[size];
+    const baseHeightNumber = parseFloat(baseHeight.replace(/[^\d.-]/g, ''));
+
+    const lineHeight = theme.font.variants[theme.textField.textVariant[size]].lineHeight;
+    const lineHeightNumber = parseFloat(lineHeight.replace(/[^\d.-]/g, ''));
+
+    const smallPadding = 1.1 * 2;
+    const medPadding = 1.6 * 2;
+
+    if (multiline) {
+        if (size === 'S' || variant === 'fusion') {
+            return lineHeightNumber * minRows + smallPadding;
+        } else {
+            return lineHeightNumber * minRows + medPadding;
+        }
+    }
+    return baseHeightNumber;
+};
+
+const getPadding = ({ size, multiline }: InnerWrapperProps) => {
+    return multiline ? `1.1rem 1.2rem` : size === 'S' ? `0 1.2rem` : `0 1.6rem`;
+};
+
 export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({ ...textField, textField, height: undefined }))<
     InnerWrapperProps
 >`
@@ -99,8 +123,8 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
     align-items: center;
     flex-direction: row;
     box-sizing: border-box;
-    height: ${({ size, theme }) => theme.textField.height[size]};
-    padding: 0 ${({ size }) => (size === 'S' ? '1.2rem' : '1.6rem')};
+    height: ${getHeight}rem;
+    padding: ${getPadding};
     transition: all 100ms ease-out;
     cursor: text;
 
@@ -121,7 +145,7 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
 
     ${({ variant }) => variant === 'filled' && filledStyle}
     ${({ variant }) => variant === 'outlined' && outlinedStyle}
-    ${({ variant }) => variant === 'fusion' && roundedOutlinedStyle}
+    ${({ variant }) => variant === 'fusion' && fusionStyle}
     ${({ disabled, isErrorPresent }) => (disabled ? disabledStyle : isErrorPresent ? errorStyle : activeStyle)}
 `;
 InnerWrapper.defaultProps = {

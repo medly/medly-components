@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.30.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.30.0...@medly-components/core@1.30.1) (2020-10-20)
+
+
+### Bug Fixes
+
+* increase max screen size of XL breakpoint ([55b4640](https://github.com/medly/medly-components/commit/55b4640f180f9859135d6f4233932498bc2f9d40))
+
+
+
+
+
+# [1.30.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.29.0...@medly-components/core@1.30.0) (2020-10-20)
+
+
+### Bug Fixes
+
+* add required tests for text field updates ([2fb86f7](https://github.com/medly/medly-components/commit/2fb86f78e4ecc6c07fd1e4bd35a440201b5d929b))
+* hover shadow in card component ([af56034](https://github.com/medly/medly-components/commit/af560343a80e298e64fc4d3201cf90a65d7b7645))
+* lint issues in the actionbar component ([d2e5de6](https://github.com/medly/medly-components/commit/d2e5de605cfbc7a48a44234f0a7e55f63795a6be))
+* **core:** add props and WithStyle type to Modal Header and Content ([7954cd7](https://github.com/medly/medly-components/commit/7954cd76c214cefdaf58ee29fd8e09480e643581))
+* **core:** remove props from header and content type definitions ([b997968](https://github.com/medly/medly-components/commit/b99796806c3e29b2d507752534e8d2ed4dedf6a5))
+
+
+### Features
+
+* **core:** add action bar component ([6ab733a](https://github.com/medly/medly-components/commit/6ab733a6606147af26ad21cc309e2d27c47f325c))
+
+
+
+
+
+# [1.29.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.28.2...@medly-components/core@1.29.0) (2020-10-15)
+
+
+### Bug Fixes
+
+* **core:** show tooltip on hover of ellipses ([27a8dc4](https://github.com/medly/medly-components/commit/27a8dc4673c80caf130f5acd87eafc11656a9ea2)), closes [#176](https://github.com/medly/medly-components/issues/176)
+* update styling function names, update snapshots ([0d09439](https://github.com/medly/medly-components/commit/0d09439ebd0000e23669507d5135740ba47e9d99))
+
+
+### Features
+
+* move border radius and padding to them of card component ([c0b209c](https://github.com/medly/medly-components/commit/c0b209c2957bc07b50537d38684bd15885838163))
+* **core:** adjusted height and padding of label and input for medium sized text area ([3b10b63](https://github.com/medly/medly-components/commit/3b10b63b63b247f185cc7fe0b8fda1d0a98e35f4))
+* remove text wrapping on text field labels and add ellipsis to handle long labels ([6b3b43f](https://github.com/medly/medly-components/commit/6b3b43f494137908452a5f6d08af1c7f826e2bf5))
+* **core:** add text area functionality to existing text field component ([dff5add](https://github.com/medly/medly-components/commit/dff5addb9890b2a047d0754f33e21bae2936957c))
+
+
+
+
+
 ## [1.28.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.28.1...@medly-components/core@1.28.2) (2020-10-14)
 
 
