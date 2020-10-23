@@ -26,15 +26,6 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
             isSmallScreen = windowWidth < 768,
             handleScroll = useScrollState({ ref: contentHeaderRef, scrollState, dispatch });
 
-        // TODO: REMOVE
-        const ContentHeaderChildren = React.Children.toArray(children).filter((child: any) => {
-            return child.type.displayName === 'Header' || child.type.displayName === 'Content';
-        });
-
-        const ActionsChild = React.Children.toArray(children).filter((child: any) => {
-            return child.type.displayName === 'Actions';
-        });
-
         const handleBackgroundClick = useCallback(() => {
             shouldCloseOnOutsideClick && onCloseModal();
         }, [shouldCloseOnOutsideClick, onCloseModal]);
@@ -70,24 +61,7 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
                                 headerHeight={headerHeight}
                             >
                                 {children}
-                                {/* {ContentHeaderChildren.map((child: any) =>
-                                    React.cloneElement(child as any, {
-                                        headerHeight,
-                                        setHeaderHeight,
-                                        scrollState,
-                                        dispatch,
-                                        id,
-                                        isSmallScreen
-                                    })
-                                )} */}
                             </ContentHeaderStyled>
-                            {children}
-                            {/* {ActionsChild[0] &&
-                                React.cloneElement(ActionsChild[0] as any, {
-                                    scrollState,
-                                    dispatch,
-                                    id
-                                })} */}
                         </ModalContext.Provider>
                     </Popup>
                 </ModalBackgroundStyled>

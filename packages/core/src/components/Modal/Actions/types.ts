@@ -9,4 +9,5 @@ export type Props = ModalActionUserProps & {
         scrolledToTop: boolean;
         scrolledToBottom: boolean;
     };
+    isSmallScreen: boolean;
 };

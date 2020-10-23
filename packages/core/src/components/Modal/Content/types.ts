@@ -1,7 +1,8 @@
 export interface Props {
-    id: string;
-    headerHeight: number;
-    scrollState: {
+    //TODO: do these need to be optional?
+    id?: string;
+    headerHeight?: number;
+    scrollState?: {
         scrolledToTop: boolean;
         scrolledToBottom: boolean;
         scrollPosition: number;

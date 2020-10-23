@@ -22,8 +22,9 @@ export interface ModalBackgroundProps {
 }
 
 export interface HeaderProps extends Props {
-    setHeaderHeight: (height: number) => void;
-    isSmallScreen: boolean;
+    // TODO: do these need to be optional?
+    setHeaderHeight?: (height: number) => void;
+    isSmallScreen?: boolean;
 }
 
 export interface ModalStaticProps {
@@ -37,6 +38,8 @@ export interface ContentHeaderProps {
     /** height of the header component */
     headerHeight: number;
 }
+
+// TODO: can these be cleaned up?
 
 export interface UseScrollStateProps {
     scrollState: {
