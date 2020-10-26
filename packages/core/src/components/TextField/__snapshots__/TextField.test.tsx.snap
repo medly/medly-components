@@ -70,13 +70,13 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -117,17 +117,17 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -208,7 +208,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -240,7 +240,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -275,7 +275,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -368,7 +368,7 @@ exports[`TextField should render asterisk if we pass required prop as true 1`] =
 }
 
 .c3:disabled ~ .c0,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -628,7 +628,7 @@ exports[`TextField should render properly with M size 1`] = `
 }
 
 .c6,
-.c6 ~ .sc-AxmLO {
+.c6 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -660,7 +660,7 @@ exports[`TextField should render properly with M size 1`] = `
 }
 
 .c6:disabled ~ .c7,
-.c6:disabled ~ .sc-AxmLO {
+.c6:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -695,7 +695,7 @@ exports[`TextField should render properly with M size 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c6:not(:placeholder-shown) ~ .sc-AxmLO {
+.c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -998,7 +998,7 @@ exports[`TextField should render properly with S size 1`] = `
 }
 
 .c6,
-.c6 ~ .sc-AxmLO {
+.c6 ~ .sc-Axmtr {
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -1030,7 +1030,7 @@ exports[`TextField should render properly with S size 1`] = `
 }
 
 .c6:disabled ~ .c7,
-.c6:disabled ~ .sc-AxmLO {
+.c6:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -1063,7 +1063,7 @@ exports[`TextField should render properly with S size 1`] = `
   opacity: 0;
 }
 
-.c6:not(:placeholder-shown) ~ .sc-AxmLO {
+.c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -1196,13 +1196,13 @@ exports[`TextField should render properly with default props 1`] = `
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -1243,17 +1243,17 @@ exports[`TextField should render properly with default props 1`] = `
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -1334,7 +1334,7 @@ exports[`TextField should render properly with default props 1`] = `
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -1366,7 +1366,7 @@ exports[`TextField should render properly with default props 1`] = `
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -1401,7 +1401,7 @@ exports[`TextField should render properly with default props 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -1503,13 +1503,13 @@ exports[`TextField with filled variant and with label should render default stat
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -1550,17 +1550,17 @@ exports[`TextField with filled variant and with label should render default stat
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -1641,7 +1641,7 @@ exports[`TextField with filled variant and with label should render default stat
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -1673,7 +1673,7 @@ exports[`TextField with filled variant and with label should render default stat
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -1708,7 +1708,7 @@ exports[`TextField with filled variant and with label should render default stat
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -1812,13 +1812,13 @@ exports[`TextField with filled variant and with label should render disabled sta
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -1853,13 +1853,13 @@ exports[`TextField with filled variant and with label should render disabled sta
   color: #b0bcc8;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #b0bcc8;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #b0bcc8;
 }
 
@@ -1928,7 +1928,7 @@ exports[`TextField with filled variant and with label should render disabled sta
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -1960,7 +1960,7 @@ exports[`TextField with filled variant and with label should render disabled sta
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -1995,7 +1995,7 @@ exports[`TextField with filled variant and with label should render disabled sta
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -2099,13 +2099,13 @@ exports[`TextField with filled variant and with label should render focus state 
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -2146,17 +2146,17 @@ exports[`TextField with filled variant and with label should render focus state 
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -2237,7 +2237,7 @@ exports[`TextField with filled variant and with label should render focus state 
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -2269,7 +2269,7 @@ exports[`TextField with filled variant and with label should render focus state 
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -2304,7 +2304,7 @@ exports[`TextField with filled variant and with label should render focus state 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -2406,13 +2406,13 @@ exports[`TextField with filled variant and without label should render default s
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -2453,17 +2453,17 @@ exports[`TextField with filled variant and without label should render default s
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -2540,7 +2540,7 @@ exports[`TextField with filled variant and without label should render default s
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -2572,7 +2572,7 @@ exports[`TextField with filled variant and without label should render default s
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -2607,7 +2607,7 @@ exports[`TextField with filled variant and without label should render default s
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -2709,13 +2709,13 @@ exports[`TextField with filled variant and without label should render disabled 
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -2750,13 +2750,13 @@ exports[`TextField with filled variant and without label should render disabled 
   color: #b0bcc8;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #b0bcc8;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #b0bcc8;
 }
 
@@ -2821,7 +2821,7 @@ exports[`TextField with filled variant and without label should render disabled 
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -2853,7 +2853,7 @@ exports[`TextField with filled variant and without label should render disabled 
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -2888,7 +2888,7 @@ exports[`TextField with filled variant and without label should render disabled 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -2990,13 +2990,13 @@ exports[`TextField with filled variant and without label should render focus sta
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -3037,17 +3037,17 @@ exports[`TextField with filled variant and without label should render focus sta
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -3124,7 +3124,7 @@ exports[`TextField with filled variant and without label should render focus sta
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -3156,7 +3156,7 @@ exports[`TextField with filled variant and without label should render focus sta
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -3191,7 +3191,7 @@ exports[`TextField with filled variant and without label should render focus sta
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -3302,13 +3302,13 @@ exports[`TextField with filled variant should render error state properly  1`] =
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -3355,25 +3355,25 @@ exports[`TextField with filled variant should render error state properly  1`] =
   color: #cc0000;
 }
 
+.c1 .sc-AxhCb,
+.c1:hover .sc-AxhCb,
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1 .sc-AxhUy,
 .c1:hover .sc-AxhUy,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1 .sc-AxgMl,
-.c1:hover .sc-AxgMl,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #cc0000;
 }
 
+.c1 .sc-AxhCb *,
+.c1:hover .sc-AxhCb *,
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1 .sc-AxhUy *,
 .c1:hover .sc-AxhUy *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1 .sc-AxgMl *,
-.c1:hover .sc-AxgMl *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #cc0000;
 }
 
@@ -3476,7 +3476,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -3508,7 +3508,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -3543,7 +3543,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -3661,13 +3661,13 @@ exports[`TextField with filled variant should render error state properly with a
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -3714,25 +3714,25 @@ exports[`TextField with filled variant should render error state properly with a
   color: #cc0000;
 }
 
+.c1 .sc-AxhCb,
+.c1:hover .sc-AxhCb,
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1 .sc-AxhUy,
 .c1:hover .sc-AxhUy,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1 .sc-AxgMl,
-.c1:hover .sc-AxgMl,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #cc0000;
 }
 
+.c1 .sc-AxhCb *,
+.c1:hover .sc-AxhCb *,
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1 .sc-AxhUy *,
 .c1:hover .sc-AxhUy *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1 .sc-AxgMl *,
-.c1:hover .sc-AxgMl *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #cc0000;
 }
 
@@ -3835,7 +3835,7 @@ exports[`TextField with filled variant should render error state properly with a
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -3867,7 +3867,7 @@ exports[`TextField with filled variant should render error state properly with a
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -3902,7 +3902,7 @@ exports[`TextField with filled variant should render error state properly with a
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -4064,13 +4064,13 @@ exports[`TextField with filled variant should render properly with multiline 1`]
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -4111,17 +4111,17 @@ exports[`TextField with filled variant should render properly with multiline 1`]
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -4199,7 +4199,7 @@ exports[`TextField with filled variant should render properly with multiline 1`]
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -4231,7 +4231,7 @@ exports[`TextField with filled variant should render properly with multiline 1`]
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -4266,7 +4266,7 @@ exports[`TextField with filled variant should render properly with multiline 1`]
   transform: translateY(-50%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -4388,12 +4388,12 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 }
 
 .c1 .c3,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
 .c1 .c3 *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -4436,15 +4436,15 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 
 .c1:focus-within .c3,
 .c1:focus-within:hover .c3,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within .sc-AxhUy,
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
 .c1:focus-within .c3 *,
 .c1:focus-within:hover .c3 *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within .sc-AxhUy *,
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -4525,7 +4525,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 }
 
 .c6,
-.c6 ~ .sc-AxmLO {
+.c6 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -4557,7 +4557,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 }
 
 .c6:disabled ~ .c7,
-.c6:disabled ~ .sc-AxmLO {
+.c6:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -4592,7 +4592,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c6:not(:placeholder-shown) ~ .sc-AxmLO {
+.c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -4727,12 +4727,12 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
+.c1 .sc-AxhCb,
 .c1 .c7 {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
+.c1 .sc-AxhCb *,
 .c1 .c7 * {
   fill: #546A7F;
 }
@@ -4774,15 +4774,15 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   color: #126AFA;
 }
 
-.c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
   color: #126AFA;
 }
 
-.c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .c7 *,
 .c1:focus-within:hover .c7 * {
   fill: #126AFA;
@@ -4865,7 +4865,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -4897,7 +4897,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -4932,7 +4932,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -5051,13 +5051,13 @@ exports[`TextField with fusion variant and with label should render default stat
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -5104,17 +5104,17 @@ exports[`TextField with fusion variant and with label should render default stat
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -5195,7 +5195,7 @@ exports[`TextField with fusion variant and with label should render default stat
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -5227,7 +5227,7 @@ exports[`TextField with fusion variant and with label should render default stat
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -5265,7 +5265,7 @@ exports[`TextField with fusion variant and with label should render default stat
   z-index: 1;
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -5373,13 +5373,13 @@ exports[`TextField with fusion variant and with label should render disabled sta
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -5419,13 +5419,13 @@ exports[`TextField with fusion variant and with label should render disabled sta
   color: #b0bcc8;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #b0bcc8;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #b0bcc8;
 }
 
@@ -5494,7 +5494,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -5526,7 +5526,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -5564,7 +5564,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
   z-index: 1;
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -5672,13 +5672,13 @@ exports[`TextField with fusion variant and with label should render focus state 
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -5725,17 +5725,17 @@ exports[`TextField with fusion variant and with label should render focus state 
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -5816,7 +5816,7 @@ exports[`TextField with fusion variant and with label should render focus state 
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -5848,7 +5848,7 @@ exports[`TextField with fusion variant and with label should render focus state 
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -5886,7 +5886,7 @@ exports[`TextField with fusion variant and with label should render focus state 
   z-index: 1;
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -5992,13 +5992,13 @@ exports[`TextField with fusion variant and without label should render default s
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -6045,17 +6045,17 @@ exports[`TextField with fusion variant and without label should render default s
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -6132,7 +6132,7 @@ exports[`TextField with fusion variant and without label should render default s
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -6164,7 +6164,7 @@ exports[`TextField with fusion variant and without label should render default s
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -6202,7 +6202,7 @@ exports[`TextField with fusion variant and without label should render default s
   z-index: 1;
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -6308,13 +6308,13 @@ exports[`TextField with fusion variant and without label should render disabled 
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -6354,13 +6354,13 @@ exports[`TextField with fusion variant and without label should render disabled 
   color: #b0bcc8;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #b0bcc8;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #b0bcc8;
 }
 
@@ -6425,7 +6425,7 @@ exports[`TextField with fusion variant and without label should render disabled 
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -6457,7 +6457,7 @@ exports[`TextField with fusion variant and without label should render disabled 
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -6495,7 +6495,7 @@ exports[`TextField with fusion variant and without label should render disabled 
   z-index: 1;
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -6601,13 +6601,13 @@ exports[`TextField with fusion variant and without label should render focus sta
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -6654,17 +6654,17 @@ exports[`TextField with fusion variant and without label should render focus sta
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -6741,7 +6741,7 @@ exports[`TextField with fusion variant and without label should render focus sta
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -6773,7 +6773,7 @@ exports[`TextField with fusion variant and without label should render focus sta
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -6811,7 +6811,7 @@ exports[`TextField with fusion variant and without label should render focus sta
   z-index: 1;
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -6926,13 +6926,13 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -6975,17 +6975,17 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   color: #cc0000;
 }
 
+.c1 .sc-AxhCb,
+.c1:hover .sc-AxhCb,
 .c1 .sc-AxhUy,
-.c1:hover .sc-AxhUy,
-.c1 .sc-AxgMl,
-.c1:hover .sc-AxgMl {
+.c1:hover .sc-AxhUy {
   color: #cc0000;
 }
 
+.c1 .sc-AxhCb *,
+.c1:hover .sc-AxhCb *,
 .c1 .sc-AxhUy *,
-.c1:hover .sc-AxhUy *,
-.c1 .sc-AxgMl *,
-.c1:hover .sc-AxgMl * {
+.c1:hover .sc-AxhUy * {
   fill: #cc0000;
 }
 
@@ -7090,7 +7090,7 @@ exports[`TextField with fusion variant should render error state properly  1`] =
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -7122,7 +7122,7 @@ exports[`TextField with fusion variant should render error state properly  1`] =
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -7160,7 +7160,7 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   z-index: 1;
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -7282,13 +7282,13 @@ exports[`TextField with fusion variant should render error state properly with a
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -7331,17 +7331,17 @@ exports[`TextField with fusion variant should render error state properly with a
   color: #cc0000;
 }
 
+.c1 .sc-AxhCb,
+.c1:hover .sc-AxhCb,
 .c1 .sc-AxhUy,
-.c1:hover .sc-AxhUy,
-.c1 .sc-AxgMl,
-.c1:hover .sc-AxgMl {
+.c1:hover .sc-AxhUy {
   color: #cc0000;
 }
 
+.c1 .sc-AxhCb *,
+.c1:hover .sc-AxhCb *,
 .c1 .sc-AxhUy *,
-.c1:hover .sc-AxhUy *,
-.c1 .sc-AxgMl *,
-.c1:hover .sc-AxgMl * {
+.c1:hover .sc-AxhUy * {
   fill: #cc0000;
 }
 
@@ -7451,7 +7451,7 @@ exports[`TextField with fusion variant should render error state properly with a
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -7483,7 +7483,7 @@ exports[`TextField with fusion variant should render error state properly with a
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -7521,7 +7521,7 @@ exports[`TextField with fusion variant should render error state properly with a
   z-index: 1;
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -7685,13 +7685,13 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -7738,17 +7738,17 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -7826,7 +7826,7 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -7858,7 +7858,7 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -7896,7 +7896,7 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   z-index: 1;
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -8022,12 +8022,12 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 }
 
 .c1 .c3,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
 .c1 .c3 *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -8076,15 +8076,15 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 
 .c1:focus-within .c3,
 .c1:focus-within:hover .c3,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within .sc-AxhUy,
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
 .c1:focus-within .c3 *,
 .c1:focus-within:hover .c3 *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within .sc-AxhUy *,
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -8165,7 +8165,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 }
 
 .c6,
-.c6 ~ .sc-AxmLO {
+.c6 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -8197,7 +8197,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 }
 
 .c6:disabled ~ .c7,
-.c6:disabled ~ .sc-AxmLO {
+.c6:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -8235,7 +8235,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   z-index: 1;
 }
 
-.c6:not(:placeholder-shown) ~ .sc-AxmLO {
+.c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -8374,12 +8374,12 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
+.c1 .sc-AxhCb,
 .c1 .c7 {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
+.c1 .sc-AxhCb *,
 .c1 .c7 * {
   fill: #546A7F;
 }
@@ -8427,15 +8427,15 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   color: #126AFA;
 }
 
-.c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
   color: #126AFA;
 }
 
-.c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .c7 *,
 .c1:focus-within:hover .c7 * {
   fill: #126AFA;
@@ -8518,7 +8518,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -8550,7 +8550,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -8588,7 +8588,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   z-index: 1;
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -8703,13 +8703,13 @@ exports[`TextField with outlined variant and with label should render default st
   color: #607890;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #607890;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #607890;
 }
 
@@ -8764,17 +8764,17 @@ exports[`TextField with outlined variant and with label should render default st
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -8855,7 +8855,7 @@ exports[`TextField with outlined variant and with label should render default st
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -8887,7 +8887,7 @@ exports[`TextField with outlined variant and with label should render default st
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -8922,7 +8922,7 @@ exports[`TextField with outlined variant and with label should render default st
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -9026,13 +9026,13 @@ exports[`TextField with outlined variant and with label should render disabled s
   color: #607890;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #607890;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #607890;
 }
 
@@ -9072,13 +9072,13 @@ exports[`TextField with outlined variant and with label should render disabled s
   color: #b0bcc8;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #b0bcc8;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #b0bcc8;
 }
 
@@ -9147,7 +9147,7 @@ exports[`TextField with outlined variant and with label should render disabled s
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -9179,7 +9179,7 @@ exports[`TextField with outlined variant and with label should render disabled s
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -9214,7 +9214,7 @@ exports[`TextField with outlined variant and with label should render disabled s
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -9318,13 +9318,13 @@ exports[`TextField with outlined variant and with label should render focus stat
   color: #607890;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #607890;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #607890;
 }
 
@@ -9379,17 +9379,17 @@ exports[`TextField with outlined variant and with label should render focus stat
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -9470,7 +9470,7 @@ exports[`TextField with outlined variant and with label should render focus stat
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -9502,7 +9502,7 @@ exports[`TextField with outlined variant and with label should render focus stat
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -9537,7 +9537,7 @@ exports[`TextField with outlined variant and with label should render focus stat
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -9639,13 +9639,13 @@ exports[`TextField with outlined variant and without label should render default
   color: #607890;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #607890;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #607890;
 }
 
@@ -9700,17 +9700,17 @@ exports[`TextField with outlined variant and without label should render default
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -9787,7 +9787,7 @@ exports[`TextField with outlined variant and without label should render default
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -9819,7 +9819,7 @@ exports[`TextField with outlined variant and without label should render default
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -9854,7 +9854,7 @@ exports[`TextField with outlined variant and without label should render default
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -9956,13 +9956,13 @@ exports[`TextField with outlined variant and without label should render disable
   color: #607890;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #607890;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #607890;
 }
 
@@ -10002,13 +10002,13 @@ exports[`TextField with outlined variant and without label should render disable
   color: #b0bcc8;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #b0bcc8;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #b0bcc8;
 }
 
@@ -10073,7 +10073,7 @@ exports[`TextField with outlined variant and without label should render disable
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -10105,7 +10105,7 @@ exports[`TextField with outlined variant and without label should render disable
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -10140,7 +10140,7 @@ exports[`TextField with outlined variant and without label should render disable
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -10242,13 +10242,13 @@ exports[`TextField with outlined variant and without label should render focus s
   color: #607890;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #607890;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #607890;
 }
 
@@ -10303,17 +10303,17 @@ exports[`TextField with outlined variant and without label should render focus s
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -10390,7 +10390,7 @@ exports[`TextField with outlined variant and without label should render focus s
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -10422,7 +10422,7 @@ exports[`TextField with outlined variant and without label should render focus s
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -10457,7 +10457,7 @@ exports[`TextField with outlined variant and without label should render focus s
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -10568,13 +10568,13 @@ exports[`TextField with outlined variant should render error state properly  1`]
   color: #607890;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #607890;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #607890;
 }
 
@@ -10635,25 +10635,25 @@ exports[`TextField with outlined variant should render error state properly  1`]
   color: #cc0000;
 }
 
+.c1 .sc-AxhCb,
+.c1:hover .sc-AxhCb,
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1 .sc-AxhUy,
 .c1:hover .sc-AxhUy,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1 .sc-AxgMl,
-.c1:hover .sc-AxgMl,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #cc0000;
 }
 
+.c1 .sc-AxhCb *,
+.c1:hover .sc-AxhCb *,
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1 .sc-AxhUy *,
 .c1:hover .sc-AxhUy *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1 .sc-AxgMl *,
-.c1:hover .sc-AxgMl *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #cc0000;
 }
 
@@ -10756,7 +10756,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -10788,7 +10788,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -10823,7 +10823,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -10941,13 +10941,13 @@ exports[`TextField with outlined variant should render error state properly with
   color: #607890;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #607890;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #607890;
 }
 
@@ -11008,25 +11008,25 @@ exports[`TextField with outlined variant should render error state properly with
   color: #cc0000;
 }
 
+.c1 .sc-AxhCb,
+.c1:hover .sc-AxhCb,
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1 .sc-AxhUy,
 .c1:hover .sc-AxhUy,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1 .sc-AxgMl,
-.c1:hover .sc-AxgMl,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #cc0000;
 }
 
+.c1 .sc-AxhCb *,
+.c1:hover .sc-AxhCb *,
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1 .sc-AxhUy *,
 .c1:hover .sc-AxhUy *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1 .sc-AxgMl *,
-.c1:hover .sc-AxgMl *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #cc0000;
 }
 
@@ -11129,7 +11129,7 @@ exports[`TextField with outlined variant should render error state properly with
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -11161,7 +11161,7 @@ exports[`TextField with outlined variant should render error state properly with
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -11196,7 +11196,7 @@ exports[`TextField with outlined variant should render error state properly with
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -11358,13 +11358,13 @@ exports[`TextField with outlined variant should render properly with multiline 1
   color: #607890;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #607890;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #607890;
 }
 
@@ -11419,17 +11419,17 @@ exports[`TextField with outlined variant should render properly with multiline 1
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -11507,7 +11507,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -11539,7 +11539,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -11574,7 +11574,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
   transform: translateY(-50%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -11696,12 +11696,12 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 }
 
 .c1 .c3,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhUy {
   color: #607890;
 }
 
 .c1 .c3 *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhUy * {
   fill: #607890;
 }
 
@@ -11758,15 +11758,15 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 
 .c1:focus-within .c3,
 .c1:focus-within:hover .c3,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within .sc-AxhUy,
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
 .c1:focus-within .c3 *,
 .c1:focus-within:hover .c3 *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within .sc-AxhUy *,
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -11847,7 +11847,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 }
 
 .c6,
-.c6 ~ .sc-AxmLO {
+.c6 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -11879,7 +11879,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 }
 
 .c6:disabled ~ .c7,
-.c6:disabled ~ .sc-AxmLO {
+.c6:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -11914,7 +11914,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c6:not(:placeholder-shown) ~ .sc-AxmLO {
+.c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -12049,12 +12049,12 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   color: #607890;
 }
 
-.c1 .sc-AxhUy,
+.c1 .sc-AxhCb,
 .c1 .c7 {
   color: #607890;
 }
 
-.c1 .sc-AxhUy *,
+.c1 .sc-AxhCb *,
 .c1 .c7 * {
   fill: #607890;
 }
@@ -12110,15 +12110,15 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   color: #126AFA;
 }
 
-.c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .c7,
 .c1:focus-within:hover .c7 {
   color: #126AFA;
 }
 
-.c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .c7 *,
 .c1:focus-within:hover .c7 * {
   fill: #126AFA;
@@ -12201,7 +12201,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -12233,7 +12233,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -12268,7 +12268,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -12383,13 +12383,13 @@ exports[`TextField without label should render default state properly 1`] = `
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -12430,17 +12430,17 @@ exports[`TextField without label should render default state properly 1`] = `
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -12517,7 +12517,7 @@ exports[`TextField without label should render default state properly 1`] = `
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -12549,7 +12549,7 @@ exports[`TextField without label should render default state properly 1`] = `
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -12584,7 +12584,7 @@ exports[`TextField without label should render default state properly 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -12684,13 +12684,13 @@ exports[`TextField without label should render focus state properly  1`] = `
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy,
-.c1 .sc-AxgMl {
+.c1 .sc-AxhCb,
+.c1 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c1 .sc-AxhUy *,
-.c1 .sc-AxgMl * {
+.c1 .sc-AxhCb *,
+.c1 .sc-AxhUy * {
   fill: #546A7F;
 }
 
@@ -12731,17 +12731,17 @@ exports[`TextField without label should render focus state properly  1`] = `
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb,
+.c1:focus-within:hover .sc-AxhCb,
 .c1:focus-within .sc-AxhUy,
-.c1:focus-within:hover .sc-AxhUy,
-.c1:focus-within .sc-AxgMl,
-.c1:focus-within:hover .sc-AxgMl {
+.c1:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
+.c1:focus-within .sc-AxhCb *,
+.c1:focus-within:hover .sc-AxhCb *,
 .c1:focus-within .sc-AxhUy *,
-.c1:focus-within:hover .sc-AxhUy *,
-.c1:focus-within .sc-AxgMl *,
-.c1:focus-within:hover .sc-AxgMl * {
+.c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -12822,7 +12822,7 @@ exports[`TextField without label should render focus state properly  1`] = `
 }
 
 .c3,
-.c3 ~ .sc-AxmLO {
+.c3 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -12854,7 +12854,7 @@ exports[`TextField without label should render focus state properly  1`] = `
 }
 
 .c3:disabled ~ .c4,
-.c3:disabled ~ .sc-AxmLO {
+.c3:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -12889,7 +12889,7 @@ exports[`TextField without label should render focus state properly  1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .sc-AxmLO {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
