@@ -215,7 +215,7 @@ describe('SingleSelect component', () => {
         fireEvent.click(inputEl);
         fireEvent.blur(inputEl);
         expect(mockOnBlur).toHaveBeenCalled();
-        await waitFor(() => expect(screen.queryByRole('list')).toBeNull(), { timeout: 200 });
+        await waitFor(() => expect(screen.queryByRole('list')).toBeNull(), { timeout: 251 });
     });
 
     it('should handle builtin form validation', () => {
