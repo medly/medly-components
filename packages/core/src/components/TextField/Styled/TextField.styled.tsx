@@ -31,7 +31,7 @@ const transformLabel = ({ variant, multiline }: StyledProps) => {
 const styleWithLabel = ({ variant }: StyledProps) => {
     return css`
         align-self: flex-end;
-        padding-bottom: ${variant === 'filled' ? '0.7rem' : variant === 'fusion' ? '1.5rem' : '0.6rem'};
+        padding-bottom: ${variant === 'filled' ? '0.7rem' : variant === 'fusion' ? '1.3rem' : '0.6rem'};
     `;
 };
 
