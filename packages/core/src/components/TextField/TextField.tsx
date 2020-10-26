@@ -74,8 +74,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
         }, [value, mask]);
 
         useEffect(() => {
-            const inputWidth = inputRef.current.offsetWidth;
-            setInputWidth(inputWidth);
+            setInputWidth(inputRef.current.offsetWidth);
         }, []);
 
         return (
@@ -157,5 +156,6 @@ TextField.defaultProps = {
     required: false,
     label: '',
     helperText: '',
-    errorText: ''
+    errorText: '',
+    minRows: 1
 };

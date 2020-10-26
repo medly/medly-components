@@ -44,13 +44,3 @@ export const Label = styled('label')<{
 
     ${({ required, variant }) => getStyle(required, variant)}
 `;
-
-export const HiddenLabelContainer = styled('span')<{ size: 'S' | 'M' }>`
-    width: auto;
-    display: inline-block;
-    position: absolute;
-    visibility: hidden;
-    pointer-events: none;
-    z-index: -1;
-    ${({ theme, size }) => getFontStyle({ theme, fontVariant: theme.textField.textVariant[size] })}
-`;

@@ -101,13 +101,11 @@ const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperPro
     const smallPadding = 1.1 * 2;
     const medPadding = 1.6 * 2;
 
-    const rows = minRows || 1;
-
     if (multiline) {
         if (size === 'S' || variant === 'fusion') {
-            return lineHeightNumber * rows + smallPadding;
+            return lineHeightNumber * minRows + smallPadding;
         } else {
-            return lineHeightNumber * rows + medPadding;
+            return lineHeightNumber * minRows + medPadding;
         }
     }
     return baseHeightNumber;
