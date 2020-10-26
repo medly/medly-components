@@ -1,4 +1,4 @@
-import { ScrollState } from '../Types';
+import { ScrollState } from '../types';
 
 export interface StyledProps {
     scrollState: ScrollState;
