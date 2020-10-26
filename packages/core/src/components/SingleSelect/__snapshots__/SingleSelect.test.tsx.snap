@@ -201,8 +201,8 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 .c5 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -211,10 +211,6 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -579,8 +575,8 @@ exports[`SingleSelect component should render properly when isSearchable is true
 .c5 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -589,10 +585,6 @@ exports[`SingleSelect component should render properly when isSearchable is true
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -1135,8 +1127,8 @@ exports[`SingleSelect component should take passed max width 1`] = `
 .c5 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -1145,10 +1137,6 @@ exports[`SingleSelect component should take passed max width 1`] = `
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -1679,8 +1667,8 @@ exports[`SingleSelect component with filled variant should render disabled state
 .c5 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -1689,10 +1677,6 @@ exports[`SingleSelect component with filled variant should render disabled state
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -2214,8 +2198,8 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 .c5 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -2224,10 +2208,6 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -2601,8 +2581,8 @@ exports[`SingleSelect component with filled variant should render with label pro
 .c5 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -2611,10 +2591,6 @@ exports[`SingleSelect component with filled variant should render with label pro
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -3875,8 +3851,8 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 .c5 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -3885,10 +3861,6 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -4424,8 +4396,8 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 .c5 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -4434,10 +4406,6 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -4825,8 +4793,8 @@ exports[`SingleSelect component with outlined variant should render with label p
 .c5 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -4835,10 +4803,6 @@ exports[`SingleSelect component with outlined variant should render with label p
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
