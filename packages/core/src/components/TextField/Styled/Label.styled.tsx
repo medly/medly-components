@@ -10,7 +10,7 @@ const getStyle = (required: boolean, variant: 'outlined' | 'filled' | 'fusion') 
     } else if (!required && variant === 'fusion') {
         return css`
             ::after {
-                content: ' (Optional)';
+                content: ' (optional)';
             }
         `;
     }

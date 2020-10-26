@@ -7,7 +7,9 @@ const transformLabel = ({ variant, multiline }: StyledProps) => {
     const fusionLabelStyle = `            
         background-color: white;
         padding: 0 0.4rem;
-        z-index: 1;`;
+        z-index: 1;
+        font-weight: 500`;
+
     if (multiline && variant === 'fusion') {
         return css`
             transform: translateY(-120%) scale(0.67);
@@ -19,7 +21,7 @@ const transformLabel = ({ variant, multiline }: StyledProps) => {
     }
     if (variant === 'fusion') {
         return css`
-            transform: translateY(-140%) scale(0.67);
+            transform: translateY(-135%) scale(0.67);
             ${fusionLabelStyle};
         `;
     }
@@ -29,16 +31,16 @@ const transformLabel = ({ variant, multiline }: StyledProps) => {
 const styleWithLabel = ({ variant }: StyledProps) => {
     return css`
         align-self: flex-end;
-        padding-bottom: ${variant === 'filled' ? '0.7rem' : variant === 'fusion' ? '1.4rem' : '0.6rem'};
+        padding-bottom: ${variant === 'filled' ? '0.7rem' : variant === 'fusion' ? '1.5rem' : '0.6rem'};
     `;
 };
 
 export const Input = styled('input')<StyledProps>`
     color: ${({ variant, theme }) => theme.textField[variant].default.textColor};
     width: 100%;
-    height: ${({ multiline }) => multiline && '100%'};
-    margin: 0;
-    padding: ${({ multiline, variant, size }) => (multiline && variant !== 'fusion' && size === 'M' ? '1.6rem 0 0 0' : 0)};
+    height: ${({ multiline, variant }) =>
+        multiline && variant !== 'fusion' ? '100%' : multiline && variant === 'fusion' ? '95%' : 'auto'};
+    margin: ${({ multiline, variant, size }) => (multiline && variant !== 'fusion' && size === 'M' ? '1.6rem 0 0 0' : 0)};
     box-sizing: border-box;
     transition: all 100ms ease-out;
     background: transparent;
@@ -46,7 +48,6 @@ export const Input = styled('input')<StyledProps>`
     text-overflow: ellipsis;
     resize: none;
     z-index: 1;
-    scroll-padding-top: 10px;
 
     ${({ isLabelPresent, size, multiline }) => isLabelPresent && size !== 'S' && !multiline && styleWithLabel};
     &,
