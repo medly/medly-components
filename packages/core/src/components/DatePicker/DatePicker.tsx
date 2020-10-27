@@ -24,6 +24,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 popoverPlacement,
                 minSelectableDate,
                 maxSelectableDate,
+                mobile,
                 ...restProps
             } = props,
             id = props.id || props.label.toLowerCase().replace(/\s/g, '') || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
@@ -31,7 +32,14 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 () => (value instanceof Date ? value : typeof value === 'string' ? parseToDate(value, displayFormat) : null),
                 [value, displayFormat]
             );
+        const convertDate = (d: string) => {
+            const [year, month, day] = d.split('-');
+            return month + '/' + day + '/' + year;
+        };
 
+        const handleOnChangeNative = (event: React.FormEvent<HTMLInputElement>) => {
+            return parseToDate(convertDate(event.currentTarget.value), displayFormat);
+        };
         const wrapperRef = useRef<HTMLDivElement>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
             [textValue, setTextValue] = useState(''),
@@ -46,7 +54,8 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
 
         const onTextChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
-                    const inputValue = event.target.value,
+                    const date = mobile ? convertDate(event.currentTarget.value) : event.currentTarget.value;
+                    const inputValue = date,
                         parsedDate = parseToDate(inputValue, displayFormat);
                     setTextValue(inputValue);
                     if (parsedDate.toString() !== 'Invalid Date') {
@@ -75,10 +84,11 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
             ),
             validate = useCallback(
                 (event: React.FocusEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
-                    event.target.value &&
-                        parseToDate(event.target.value, displayFormat).toString() === 'Invalid Date' &&
+                    const date = mobile ? convertDate(event.currentTarget.value) : event.currentTarget.value;
+                    date &&
+                        parseToDate(date, displayFormat).toString() === 'Invalid Date' &&
                         setTimeout(() => setErrorMessage('Enter valid date'), 0);
-                    props.required && !event.target.value && setTimeout(() => setErrorMessage('Please fill in this field'), 0);
+                    props.required && !date && setTimeout(() => setErrorMessage('Please fill in this field'), 0);
                     eventFunc && eventFunc(event);
                 },
                 [props.required, displayFormat]
@@ -115,46 +125,69 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
 
         const suffixEl = () => (
             <DateIcon variant={restProps.variant} isErrorPresent={isErrorPresent} isActive={active} disabled={disabled} size={size}>
-                <DateRangeIcon id={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
+                <DateRangeIcon onClick={onIconClick} size={size} />
             </DateIcon>
         );
-
-        return (
-            <Wrapper
-                id={`${id}-datepicker-wrapper`}
-                ref={wrapperRef}
-                fullWidth={fullWidth}
-                minWidth={minWidth}
-                size={size}
-                className={className}
-                placement={popoverPlacement}
-            >
-                <TextField
-                    errorText={errorText || builtInErrorMessage}
-                    id={id}
-                    ref={inputRef}
-                    required={required}
-                    suffix={suffixEl}
-                    fullWidth
-                    mask={displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()}
+        if (!mobile) {
+            return (
+                <Wrapper
+                    id={`${id}-datepicker-wrapper`}
+                    ref={wrapperRef}
+                    fullWidth={fullWidth}
+                    minWidth={minWidth}
                     size={size}
-                    disabled={disabled}
-                    value={textValue}
-                    onChange={onTextChange}
-                    {...{ ...restProps, onBlur, onFocus, onInvalid }}
-                />
-                {showCalendar && (
-                    <Calendar
-                        id={`${id}-calendar`}
-                        date={date}
-                        isErrorPresent={isErrorPresent}
-                        onChange={onDateChange}
-                        minSelectableDate={minSelectableDate}
-                        maxSelectableDate={maxSelectableDate}
+                    className={className}
+                    placement={popoverPlacement}
+                >
+                    <TextField
+                        errorText={errorText || builtInErrorMessage}
+                        id={id}
+                        ref={inputRef}
+                        required={required}
+                        suffix={suffixEl}
+                        fullWidth
+                        mask={displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()}
+                        size={size}
+                        disabled={disabled}
+                        value={textValue}
+                        onChange={onTextChange}
+                        {...{ ...restProps, onBlur, onFocus, onInvalid }}
                     />
-                )}
-            </Wrapper>
-        );
+                    {showCalendar && (
+                        <Calendar
+                            id={`${id}-calendar`}
+                            date={date}
+                            isErrorPresent={isErrorPresent}
+                            onChange={onDateChange}
+                            minSelectableDate={minSelectableDate}
+                            maxSelectableDate={maxSelectableDate}
+                        />
+                    )}
+                </Wrapper>
+            );
+        } else {
+            return (
+                <Wrapper
+                    id={`${id}-datepicker-wrapper`}
+                    ref={wrapperRef}
+                    fullWidth={fullWidth}
+                    minWidth={minWidth}
+                    size={size}
+                    className={className}
+                    placement={popoverPlacement}
+                >
+                    <TextField
+                        onChange={handleOnChangeNative}
+                        type="date"
+                        placeholder="mm-dd-yyyy"
+                        suffix={suffixEl}
+                        errorText={errorText || builtInErrorMessage}
+                        fullWidth
+                        {...{ ...restProps, onBlur, onInvalid }}
+                    />
+                </Wrapper>
+            );
+        }
     })
 );
 DatePicker.defaultProps = {
@@ -165,6 +198,7 @@ DatePicker.defaultProps = {
     disabled: false,
     required: false,
     fullWidth: false,
+    mobile: false,
     minSelectableDate: new Date(1901, 0, 1),
     maxSelectableDate: new Date(2100, 11, 1),
     popoverPlacement: 'bottom-start'
