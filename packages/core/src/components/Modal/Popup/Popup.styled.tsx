@@ -4,7 +4,6 @@ import { Props } from './types';
 export const Popup = styled('div')<Props>`
     background: ${({ theme }) => theme.modal.backgroundColor};
     overflow: hidden;
-    overflow-y: none;
     display: flex;
     flex-direction: column;
     height: calc(100% - 2.4rem);
@@ -16,7 +15,7 @@ export const Popup = styled('div')<Props>`
     border-top-left-radius: 1.6rem;
     border-top-right-radius: 1.6rem;
     animation: ${({ open, isSmallScreen }) =>
-        isSmallScreen && `${open && isSmallScreen ? 'slideIn' : 'slideOut'} 0.5s cubic-bezier(0, 0, 0.33, 1) `};
+        isSmallScreen && `${open && isSmallScreen ? 'slideIn' : 'slideOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) `};
     @keyframes slideIn {
         0% {
             transform: translateY(100%);

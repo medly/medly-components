@@ -21,8 +21,8 @@ exports[`Modal component background at small screen size should render properly 
   height: 100%;
   background: rgba(67,84,101,0.65);
   z-index: 1000;
-  -webkit-animation: fadeOut 0.5s cubic-bezier(0,0,0.33,1);
-  animation: fadeOut 0.5s cubic-bezier(0,0,0.33,1);
+  -webkit-animation: fadeOut 0.4s cubic-bezier(0,0,0.33,1);
+  animation: fadeOut 0.4s cubic-bezier(0,0,0.33,1);
 }
 
 @media (min-width:768px) {
@@ -62,8 +62,8 @@ exports[`Modal component background at small screen size should render properly 
   height: 100%;
   background: rgba(67,84,101,0.65);
   z-index: 1000;
-  -webkit-animation: fadeIn 0.5s cubic-bezier(0,0,0.33,1);
-  animation: fadeIn 0.5s cubic-bezier(0,0,0.33,1);
+  -webkit-animation: fadeIn 0.4s cubic-bezier(0,0,0.33,1);
+  animation: fadeIn 0.4s cubic-bezier(0,0,0.33,1);
 }
 
 @media (min-width:768px) {
@@ -120,6 +120,9 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 .c3 {
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
   height: 4rem;
   width: 4rem;
   padding: 1rem;
@@ -235,7 +238,6 @@ exports[`Modal component should render properly when it is open 1`] = `
 .c1 {
   background: #ffffff;
   overflow: hidden;
-  overflow-y: none;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
