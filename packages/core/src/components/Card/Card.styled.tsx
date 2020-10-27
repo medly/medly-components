@@ -65,10 +65,8 @@ export const Card = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<
     min-height: ${({ minHeight }) => minHeight};
     transition: all 100ms ease-out;
 
-    & {
-        * {
+    &, & * {
             cursor:  ${props => props.onClick && 'pointer'};     
-        }
     }
 
     ${props => (props.variant === 'solid' ? solid : flat)};

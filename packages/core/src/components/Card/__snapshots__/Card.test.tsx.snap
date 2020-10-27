@@ -533,6 +533,7 @@ exports[`Card component should render properly when it is clickable  1`] = `
   align-items: center;
 }
 
+.c0,
 .c0 * {
   cursor: pointer;
 }
