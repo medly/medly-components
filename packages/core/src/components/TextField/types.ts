@@ -44,6 +44,7 @@ export interface StyledProps extends Props, TextFieldTheme {
     isLabelPresent: boolean;
     multiline?: boolean;
     variant: 'filled' | 'outlined' | 'fusion';
+    inputWidth: number;
 }
 
 export interface InnerWrapperProps extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'height'>, TextFieldTheme, WithThemeProp {

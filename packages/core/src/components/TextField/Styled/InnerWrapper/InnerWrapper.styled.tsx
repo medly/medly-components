@@ -112,7 +112,14 @@ const getHeight = ({ size, theme, minRows, multiline, variant }: InnerWrapperPro
 };
 
 const getPadding = ({ size, multiline }: InnerWrapperProps) => {
-    return multiline ? `1.1rem 1.2rem` : size === 'S' ? `0 1.2rem` : `0 1.6rem`;
+    switch (size) {
+        case 'S':
+            return multiline ? '1.1rem 1.2rem' : '0 1.2rem';
+        case 'M':
+            return multiline ? '1.1rem 1.6rem' : '0 1.6rem';
+        default:
+            return '0 1.6rem';
+    }
 };
 
 export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({ ...textField, textField, height: undefined }))<
@@ -127,7 +134,7 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
     padding: ${getPadding};
     transition: all 100ms ease-out;
     cursor: text;
-
+    
     ${Label} {
         color: ${({ variant, textField }) => textField[variant].default.labelColor};
     }

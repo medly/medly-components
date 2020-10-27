@@ -36,7 +36,8 @@ export const TextField: FC<Props> & WithStyle = React.memo(
             isSuffixPresent = useMemo(() => !!Suffix, [Suffix]),
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]),
             [isTextPresent, setIsTextPresent] = useState(!!value || !!restProps.defaultValue),
-            [maskLabel, setMaskLabel] = useState(mask);
+            [maskLabel, setMaskLabel] = useState(mask),
+            [inputWidth, setInputWidth] = useState(0);
 
         const validate = useCallback(
             (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
@@ -71,6 +72,10 @@ export const TextField: FC<Props> & WithStyle = React.memo(
         useEffect(() => {
             mask && value && value.toString().length === mask.length && setMaskLabel(value.toString());
         }, [value, mask]);
+
+        useEffect(() => {
+            setInputWidth(inputRef.current.offsetWidth);
+        }, []);
 
         return (
             <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth} maxWidth={maxWidth} id={`${inputId}-input-wrapper`}>
@@ -114,6 +119,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                             </Styled.MaskPlaceholder>
                         )}
                         <Styled.Label
+                            inputWidth={inputWidth}
                             htmlFor={`${inputId}-input`}
                             size={size}
                             required={required}
@@ -130,7 +136,7 @@ export const TextField: FC<Props> & WithStyle = React.memo(
                     )}
                 </Styled.InnerWrapper>
                 {(isErrorPresent || helperText) && (
-                    <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation} size={size}>
+                    <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation} size={size} variant={props.variant}>
                         {(errorText || builtInErrorMessage || helperText).trim()}
                     </Styled.HelperText>
                 )}
@@ -150,5 +156,6 @@ TextField.defaultProps = {
     required: false,
     label: '',
     helperText: '',
-    errorText: ''
+    errorText: '',
+    minRows: 1
 };
