@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useMemo, useRef } from 'react';
 import Text from '../../../Text';
 import { Cell as StyledCell, CustomComponentWrapper, LoadingDiv } from './Styled';
 import { TableCellProps } from './types';
@@ -7,7 +7,8 @@ import { TableCellProps } from './types';
 const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
     const childRef = useRef(null),
         { addColumnMaxSize, config, data, rowId, rowData, isRowClickDisabled, dottedFieldName, tableSize, isLoading, ...restProps } = props,
-        { align, hidden, frozen, formatter, component: CustomComponent } = config;
+        { align, hidden, frozen, formatter, component: CustomComponent } = config,
+        formattedData = useMemo(() => (formatter ? formatter(data) : data), [formatter, data]);
 
     useEffect(() => {
         childRef.current &&
@@ -25,8 +26,8 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
                     <CustomComponent {...{ data, rowId, disabled: isRowClickDisabled, rowData }} />
                 </CustomComponentWrapper>
             ) : (
-                <Text ref={childRef} textVariant="body2" title={data}>
-                    {formatter ? formatter(data) : data}
+                <Text ref={childRef} textVariant="body2" title={formattedData}>
+                    {formattedData}
                 </Text>
             )}
         </StyledCell>
