@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.31.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.31.0...@medly-components/core@1.31.1) (2020-10-27)
+
+
+### Bug Fixes
+
+* **core:** fix multiselect options overlay z-index issue ([33bb316](https://github.com/medly/medly-components/commit/33bb316d8de5a13d7d47125b57ccd67c532b5421))
+
+
+
+
+
 # [1.31.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.30.1...@medly-components/core@1.31.0) (2020-10-27)
 
 
