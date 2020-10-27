@@ -35,11 +35,20 @@ const styleWithLabel = ({ variant }: StyledProps) => {
     `;
 };
 
+const getInputHeight = ({ size, multiline, variant }: StyledProps) => {
+    if (size === 'S' || (size === 'M' && variant === 'fusion')) {
+        return '100%';
+    } else if (size === 'M' && variant !== 'fusion' && multiline) {
+        return '90%';
+    } else {
+        return 'auto';
+    }
+};
+
 export const Input = styled('input')<StyledProps>`
     color: ${({ variant, theme }) => theme.textField[variant].default.textColor};
     width: 100%;
-    height: ${({ multiline, variant }) =>
-        multiline && variant !== 'fusion' ? '100%' : multiline && variant === 'fusion' ? '95%' : 'auto'};
+    height: ${getInputHeight};
     margin: ${({ multiline, variant, size }) => (multiline && variant !== 'fusion' && size === 'M' ? '1.6rem 0 0 0' : 0)};
     box-sizing: border-box;
     transition: all 100ms ease-out;
@@ -48,6 +57,7 @@ export const Input = styled('input')<StyledProps>`
     text-overflow: ellipsis;
     resize: none;
     z-index: 1;
+    padding: 0;
 
     ${({ isLabelPresent, size, multiline }) => isLabelPresent && size !== 'S' && !multiline && styleWithLabel};
     &,
@@ -77,9 +87,9 @@ export const Input = styled('input')<StyledProps>`
     &:not(:placeholder-shown) ~ ${Label}, &:focus ~ ${Label} {
         opacity: ${({ size }) => size === 'S' && '0'};
         ${({ size }) => size === 'M' && transformLabel};
-    }
 
-    &:not(:placeholder-shown) ~ ${MaskPlaceholder} {
-        opacity: 1;
+        &:not(:placeholder-shown) ~ ${MaskPlaceholder} {
+            opacity: 1;
+        }
     }
 `;
