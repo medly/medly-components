@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.31.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.31.1...@medly-components/core@1.31.2) (2020-10-27)
+
+
+### Bug Fixes
+
+* pointer cursor issue in card component ([8506037](https://github.com/medly/medly-components/commit/85060372ef9ca8c50d8cfe7b54d97b81b51a4115))
+
+
+
+
+
 ## [1.31.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.31.0...@medly-components/core@1.31.1) (2020-10-27)
 
 
