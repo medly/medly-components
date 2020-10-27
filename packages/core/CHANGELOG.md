@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.31.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.30.1...@medly-components/core@1.31.0) (2020-10-27)
+
+
+### Bug Fixes
+
+* title issue of the table cell component ([f91d6ae](https://github.com/medly/medly-components/commit/f91d6ae18c2c2dfcbe867e49a1e768fc92922630))
+* **core:** fix single select option selection issue ([79c4d6a](https://github.com/medly/medly-components/commit/79c4d6a621a865135c92492d1d9b77e3c1f1eec9))
+* **core:** updated text field label to handle longer label text and remove whitespace from shorter l ([666b4de](https://github.com/medly/medly-components/commit/666b4de606c84f20332987cc9e4b389e68ce453c))
+
+
+### Features
+
+* **core:** handle long labels w elipses and remove white space for short labels - snapshots updated ([42c8bdd](https://github.com/medly/medly-components/commit/42c8bddd8406333a49e815d664d0df51eb4c9047))
+* **core:** update snapshots ([649c362](https://github.com/medly/medly-components/commit/649c362c81ff74c19a815d9350612562850e6f30))
+
+
+
+
+
 ## [1.30.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.30.0...@medly-components/core@1.30.1) (2020-10-20)
 
 
