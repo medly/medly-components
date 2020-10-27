@@ -28,7 +28,7 @@ export const OptionsWrapper = styled.div<WithThemeProp & { size: 'S' | 'M' }>`
     box-sizing: border-box;
     border-radius: 0.4rem;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
 `;
 
 export const Options = styled.ul<WithThemeProp & { size: 'S' | 'M' }>`
