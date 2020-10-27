@@ -885,6 +885,7 @@ exports[`Form should render properly with initial state 1`] = `
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
+  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -959,7 +960,8 @@ exports[`Form should render properly with initial state 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c7:not(:placeholder-shown) ~ .c43 {
+.c7:not(:placeholder-shown) ~ .c8:not(:placeholder-shown) ~ .c43,
+.c7:focus ~ .c8:not(:placeholder-shown) ~ .c43 {
   opacity: 1;
 }
 
@@ -3218,6 +3220,7 @@ exports[`Form should render properly without initial state 1`] = `
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
+  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -3292,7 +3295,8 @@ exports[`Form should render properly without initial state 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c10:not(:placeholder-shown) ~ .c43 {
+.c10:not(:placeholder-shown) ~ .c11:not(:placeholder-shown) ~ .c43,
+.c10:focus ~ .c11:not(:placeholder-shown) ~ .c43 {
   opacity: 1;
 }
 

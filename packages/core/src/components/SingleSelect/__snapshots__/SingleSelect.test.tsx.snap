@@ -211,6 +211,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
+  padding: 0;
 }
 
 .c5,
@@ -281,7 +282,8 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
+.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -585,6 +587,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
+  padding: 0;
 }
 
 .c5,
@@ -655,7 +658,8 @@ exports[`SingleSelect component should render properly when isSearchable is true
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
+.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -1137,6 +1141,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
+  padding: 0;
 }
 
 .c5,
@@ -1207,7 +1212,8 @@ exports[`SingleSelect component should take passed max width 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
+.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -1677,6 +1683,7 @@ exports[`SingleSelect component with filled variant should render disabled state
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
+  padding: 0;
 }
 
 .c5,
@@ -1747,7 +1754,8 @@ exports[`SingleSelect component with filled variant should render disabled state
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
+.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -2208,6 +2216,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
+  padding: 0;
 }
 
 .c5,
@@ -2278,7 +2287,8 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
+.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -2591,6 +2601,7 @@ exports[`SingleSelect component with filled variant should render with label pro
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
+  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -2665,7 +2676,8 @@ exports[`SingleSelect component with filled variant should render with label pro
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
+.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -3861,6 +3873,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
+  padding: 0;
 }
 
 .c5,
@@ -3931,7 +3944,8 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
+.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -4406,6 +4420,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
+  padding: 0;
 }
 
 .c5,
@@ -4476,7 +4491,8 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
+.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -4803,6 +4819,7 @@ exports[`SingleSelect component with outlined variant should render with label p
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
+  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -4877,7 +4894,8 @@ exports[`SingleSelect component with outlined variant should render with label p
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
+.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 

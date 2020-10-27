@@ -171,6 +171,7 @@ exports[`MultiSelect component should render correctly with all the props given 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
+  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -245,7 +246,8 @@ exports[`MultiSelect component should render correctly with all the props given 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-AxheI {
+.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-AxheI,
+.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-AxheI {
   opacity: 1;
 }
 
@@ -681,6 +683,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
+  padding: 0;
 }
 
 .c5,
@@ -751,7 +754,8 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-AxheI {
+.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-AxheI,
+.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-AxheI {
   opacity: 1;
 }
 
