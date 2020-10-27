@@ -1,5 +1,5 @@
 import { styled } from '@medly-components/utils';
-import { ContentHeaderProps, ModalBackgroundProps } from './types';
+import { InnerContainerProps, ModalBackgroundProps } from './types';
 
 export const ModalBackgroundStyled = styled.div<ModalBackgroundProps>`
     display: flex;
@@ -36,7 +36,7 @@ export const ModalBackgroundStyled = styled.div<ModalBackgroundProps>`
     }
 `;
 
-export const ContentHeaderStyled = styled.div<ContentHeaderProps>`
+export const InnerContainerStyled = styled.div<InnerContainerProps>`
     display: flex;
     flex-direction: column;
     overflow-y: auto;

@@ -9,9 +9,7 @@ export const Header: React.FC & WithStyle = React.memo(({ children }) => {
     const headerRef = useRef<HTMLDivElement>();
 
     useEffect(() => {
-        if (headerRef.current) {
-            setHeaderHeight(headerRef.current.offsetHeight);
-        }
+        headerRef.current && setHeaderHeight(headerRef.current.offsetHeight);
     }, [headerRef.current, isSmallScreen]);
 
     return (

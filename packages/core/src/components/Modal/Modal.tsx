@@ -5,7 +5,7 @@ import CloseIcon from './CloseIcon';
 import Content from './Content';
 import Header from './Header';
 import { ModalContext } from './Modal.context';
-import { ContentHeaderStyled, ModalBackgroundStyled } from './Modal.styled';
+import { InnerContainerStyled, ModalBackgroundStyled } from './Modal.styled';
 import Popup from './Popup';
 import { reducer } from './scrollStateReducer/scrollStateReducer';
 import { ModalStaticProps, Props } from './types';
@@ -17,13 +17,13 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
             id = restProps.id || 'medly-modal',
             isEscPressed = useKeyPress('Escape'),
             modalRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
-            contentHeaderRef = useRef(),
+            innerContainerRef = useRef(),
             [headerHeight, setHeaderHeight] = useState(0),
             [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 }),
             [shouldRender, setShouldRender] = useState(open),
             { width: windowWidth } = useWindowSize(),
             isSmallScreen = windowWidth < 768,
-            handleScroll = useScrollState({ ref: contentHeaderRef, scrollState, dispatch });
+            handleScroll = useScrollState({ ref: innerContainerRef, scrollState, dispatch });
 
         const handleBackgroundClick = useCallback(() => {
             shouldCloseOnOutsideClick && onCloseModal();
@@ -34,9 +34,9 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
             if (!isSmallScreen && !open) setShouldRender(false);
         }, [open]);
 
-        const handleAnimationEnd = () => {
+        const handleAnimationEnd = useCallback(() => {
             if (!open) setShouldRender(false);
-        };
+        }, [open]);
 
         useEffect(() => {
             open && isEscPressed && onCloseModal();
@@ -52,16 +52,16 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
                         {...{ minWidth, minHeight, isSmallScreen, open }}
                     >
                         <CloseIcon id={`${id}-close-button`} onClick={onCloseModal} />
-                        <ContentHeaderStyled
+                        <InnerContainerStyled
                             id={`${id}-content-header`}
-                            ref={contentHeaderRef}
+                            ref={innerContainerRef}
                             onScroll={handleScroll}
                             headerHeight={headerHeight}
                         >
                             <ModalContext.Provider value={{ headerHeight, setHeaderHeight, scrollState, dispatch, id, isSmallScreen }}>
                                 {children}
                             </ModalContext.Provider>
-                        </ContentHeaderStyled>
+                        </InnerContainerStyled>
                     </Popup>
                 </ModalBackgroundStyled>
             )

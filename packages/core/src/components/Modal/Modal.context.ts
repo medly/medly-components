@@ -2,7 +2,7 @@ import { createContext } from 'react';
 import { ModalContextType } from './types';
 
 // default values are for testing purposes
-const defaultValues = {
+export const defaultValues: ModalContextType = {
     headerHeight: 120,
     setHeaderHeight: (): void => null,
     scrollState: {

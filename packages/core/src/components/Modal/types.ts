@@ -28,7 +28,7 @@ export interface ModalStaticProps {
     Actions?: React.FC<ModalActionUserProps> & WithStyle;
 }
 
-export interface ContentHeaderProps {
+export interface InnerContainerProps {
     /** height of the header component */
     headerHeight: number;
 }
