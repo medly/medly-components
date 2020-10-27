@@ -12444,7 +12444,10 @@ exports[`DatePicker component should render properly when value is of date type 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -12585,8 +12588,8 @@ exports[`DatePicker component should render properly when value is of date type 
 .c6 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -12595,10 +12598,6 @@ exports[`DatePicker component should render properly when value is of date type 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -12829,7 +12828,10 @@ exports[`DatePicker component should render properly when value is of string typ
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -12973,8 +12975,8 @@ exports[`DatePicker component should render properly when value is of string typ
 .c6 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -12983,10 +12985,6 @@ exports[`DatePicker component should render properly when value is of string typ
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c6,

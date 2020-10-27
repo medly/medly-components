@@ -30,7 +30,10 @@ exports[`MultiSelect component should render correctly with all the props given 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -158,8 +161,8 @@ exports[`MultiSelect component should render correctly with all the props given 
 .c5 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -168,10 +171,6 @@ exports[`MultiSelect component should render correctly with all the props given 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -521,7 +520,10 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -669,8 +671,8 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 .c5 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -679,10 +681,6 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c5,
