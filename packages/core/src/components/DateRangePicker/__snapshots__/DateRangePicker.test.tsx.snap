@@ -181,6 +181,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c12 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -192,6 +194,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 
 .c12::after,
 .c12::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -234,6 +238,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c15 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -245,6 +251,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 
 .c15::after,
 .c15::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -274,6 +282,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c16 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -283,6 +293,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 
 .c16::after,
 .c16::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -312,6 +324,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c17 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -321,6 +335,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 
 .c17::after,
 .c17::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -364,6 +380,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c18 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -373,6 +391,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 
 .c18::after,
 .c18::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -415,6 +435,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c19 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -424,6 +446,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 
 .c19::after,
 .c19::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -454,6 +478,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c20 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -463,6 +489,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 
 .c20::after,
 .c20::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -501,6 +529,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c21 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -510,6 +540,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 
 .c21::after,
 .c21::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -548,6 +580,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c22 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -559,6 +593,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 
 .c22::after,
 .c22::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -602,6 +638,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 .c13 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
@@ -1132,7 +1170,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
         </button>
       </div>
       <div
-        class="c19"
+        class="c16"
       >
         <button
           class="c13"
@@ -1192,7 +1230,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
         </button>
       </div>
       <div
-        class="c16"
+        class="c19"
       >
         <button
           class="c13"
@@ -2025,6 +2063,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c12 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -2036,6 +2076,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 
 .c12::after,
 .c12::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -2078,6 +2120,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c15 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -2089,6 +2133,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 
 .c15::after,
 .c15::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -2118,6 +2164,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c16 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -2127,6 +2175,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 
 .c16::after,
 .c16::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -2156,6 +2206,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c17 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -2165,6 +2217,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 
 .c17::after,
 .c17::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -2208,6 +2262,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c18 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -2217,6 +2273,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 
 .c18::after,
 .c18::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -2259,6 +2317,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c19 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -2268,6 +2328,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 
 .c19::after,
 .c19::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -2298,6 +2360,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c20 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -2307,6 +2371,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 
 .c20::after,
 .c20::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -2345,6 +2411,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c21 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -2354,6 +2422,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 
 .c21::after,
 .c21::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -2392,6 +2462,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c22 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -2403,6 +2475,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 
 .c22::after,
 .c22::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -2446,6 +2520,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 .c13 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
@@ -2976,7 +3052,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
         </button>
       </div>
       <div
-        class="c19"
+        class="c16"
       >
         <button
           class="c13"
@@ -3036,7 +3112,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
         </button>
       </div>
       <div
-        class="c16"
+        class="c19"
       >
         <button
           class="c13"
@@ -3869,6 +3945,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c12 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -3880,6 +3958,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 
 .c12::after,
 .c12::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -3922,6 +4002,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c15 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -3933,6 +4015,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 
 .c15::after,
 .c15::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -3962,6 +4046,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c16 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -3971,6 +4057,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 
 .c16::after,
 .c16::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -4000,6 +4088,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c17 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -4009,6 +4099,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 
 .c17::after,
 .c17::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -4052,6 +4144,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c18 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -4061,6 +4155,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 
 .c18::after,
 .c18::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -4103,6 +4199,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c19 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -4112,6 +4210,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 
 .c19::after,
 .c19::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -4142,6 +4242,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c20 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -4151,6 +4253,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 
 .c20::after,
 .c20::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -4189,6 +4293,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c21 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -4198,6 +4304,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 
 .c21::after,
 .c21::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -4236,6 +4344,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c22 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -4247,6 +4357,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 
 .c22::after,
 .c22::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -4290,6 +4402,8 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 .c13 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
@@ -4820,7 +4934,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
         </button>
       </div>
       <div
-        class="c19"
+        class="c16"
       >
         <button
           class="c13"
@@ -4880,7 +4994,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
         </button>
       </div>
       <div
-        class="c16"
+        class="c19"
       >
         <button
           class="c13"
@@ -5715,6 +5829,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c12 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -5726,6 +5842,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 
 .c12::after,
 .c12::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -5768,6 +5886,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c15 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -5779,6 +5899,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 
 .c15::after,
 .c15::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -5808,6 +5930,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c16 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -5817,6 +5941,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 
 .c16::after,
 .c16::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -5846,6 +5972,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c17 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -5855,6 +5983,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 
 .c17::after,
 .c17::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -5898,6 +6028,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c18 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -5907,6 +6039,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 
 .c18::after,
 .c18::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -5949,6 +6083,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c19 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -5958,6 +6094,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 
 .c19::after,
 .c19::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -5988,6 +6126,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c20 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -5997,6 +6137,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 
 .c20::after,
 .c20::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -6035,6 +6177,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c21 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -6044,6 +6188,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 
 .c21::after,
 .c21::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -6082,6 +6228,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c22 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -6093,6 +6241,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 
 .c22::after,
 .c22::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -6136,6 +6286,8 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 .c13 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
@@ -6666,7 +6818,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
         </button>
       </div>
       <div
-        class="c19"
+        class="c16"
       >
         <button
           class="c13"
@@ -6726,7 +6878,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
         </button>
       </div>
       <div
-        class="c16"
+        class="c19"
       >
         <button
           class="c13"
@@ -7558,6 +7710,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c12 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -7569,6 +7723,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 
 .c12::after,
 .c12::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -7611,6 +7767,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c15 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -7622,6 +7780,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 
 .c15::after,
 .c15::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -7651,6 +7811,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c16 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -7660,6 +7822,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 
 .c16::after,
 .c16::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -7689,6 +7853,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c17 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -7698,6 +7864,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 
 .c17::after,
 .c17::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -7741,6 +7909,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c18 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -7750,6 +7920,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 
 .c18::after,
 .c18::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -7792,6 +7964,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c19 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -7801,6 +7975,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 
 .c19::after,
 .c19::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -7831,6 +8007,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c20 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -7840,6 +8018,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 
 .c20::after,
 .c20::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -7878,6 +8058,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c21 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -7887,6 +8069,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 
 .c21::after,
 .c21::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -7925,6 +8109,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c22 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -7936,6 +8122,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 
 .c22::after,
 .c22::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -7979,6 +8167,8 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 .c13 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
@@ -8509,7 +8699,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
         </button>
       </div>
       <div
-        class="c19"
+        class="c16"
       >
         <button
           class="c13"
@@ -8569,7 +8759,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
         </button>
       </div>
       <div
-        class="c16"
+        class="c19"
       >
         <button
           class="c13"
@@ -9401,6 +9591,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c12 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -9412,6 +9604,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 
 .c12::after,
 .c12::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -9454,6 +9648,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c15 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -9465,6 +9661,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 
 .c15::after,
 .c15::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -9494,6 +9692,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c16 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -9503,6 +9703,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 
 .c16::after,
 .c16::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -9532,6 +9734,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c17 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -9541,6 +9745,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 
 .c17::after,
 .c17::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -9584,6 +9790,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c18 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -9593,6 +9801,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 
 .c18::after,
 .c18::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -9635,6 +9845,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c19 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -9644,6 +9856,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 
 .c19::after,
 .c19::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -9674,6 +9888,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c20 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -9683,6 +9899,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 
 .c20::after,
 .c20::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -9721,6 +9939,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c21 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -9730,6 +9950,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 
 .c21::after,
 .c21::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -9768,6 +9990,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c22 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -9779,6 +10003,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 
 .c22::after,
 .c22::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -9822,6 +10048,8 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 .c13 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
@@ -10352,7 +10580,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
         </button>
       </div>
       <div
-        class="c19"
+        class="c16"
       >
         <button
           class="c13"
@@ -10412,7 +10640,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
         </button>
       </div>
       <div
-        class="c16"
+        class="c19"
       >
         <button
           class="c13"
@@ -11247,6 +11475,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c12 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -11258,6 +11488,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 
 .c12::after,
 .c12::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -11300,6 +11532,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c15 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -11311,6 +11545,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 
 .c15::after,
 .c15::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -11340,6 +11576,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c16 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -11349,6 +11587,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 
 .c16::after,
 .c16::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -11378,6 +11618,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c17 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -11387,6 +11629,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 
 .c17::after,
 .c17::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -11430,6 +11674,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c18 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -11439,6 +11685,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 
 .c18::after,
 .c18::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -11481,6 +11729,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c19 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -11490,6 +11740,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 
 .c19::after,
 .c19::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -11520,6 +11772,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c20 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -11529,6 +11783,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 
 .c20::after,
 .c20::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -11567,6 +11823,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c21 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -11576,6 +11834,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 
 .c21::after,
 .c21::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -11614,6 +11874,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c22 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -11625,6 +11887,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 
 .c22::after,
 .c22::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -11668,6 +11932,8 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 .c13 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
@@ -12198,7 +12464,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
         </button>
       </div>
       <div
-        class="c19"
+        class="c16"
       >
         <button
           class="c13"
@@ -12258,7 +12524,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
         </button>
       </div>
       <div
-        class="c16"
+        class="c19"
       >
         <button
           class="c13"
@@ -13090,6 +13356,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c12 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -13101,6 +13369,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 
 .c12::after,
 .c12::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -13143,6 +13413,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c15 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -13154,6 +13426,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 
 .c15::after,
 .c15::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -13183,6 +13457,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c16 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -13192,6 +13468,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 
 .c16::after,
 .c16::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -13221,6 +13499,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c17 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -13230,6 +13510,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 
 .c17::after,
 .c17::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -13273,6 +13555,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c18 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -13282,6 +13566,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 
 .c18::after,
 .c18::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -13324,6 +13610,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c19 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -13333,6 +13621,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 
 .c19::after,
 .c19::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -13363,6 +13653,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c20 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -13372,6 +13664,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 
 .c20::after,
 .c20::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -13410,6 +13704,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c21 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -13419,6 +13715,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 
 .c21::after,
 .c21::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -13457,6 +13755,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c22 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -13468,6 +13768,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 
 .c22::after,
 .c22::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -13511,6 +13813,8 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 .c13 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
@@ -14041,7 +14345,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
         </button>
       </div>
       <div
-        class="c19"
+        class="c16"
       >
         <button
           class="c13"
@@ -14101,7 +14405,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
         </button>
       </div>
       <div
-        class="c16"
+        class="c19"
       >
         <button
           class="c13"
@@ -14933,6 +15237,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c12 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -14944,6 +15250,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 
 .c12::after,
 .c12::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -14986,6 +15294,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c15 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -14997,6 +15307,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 
 .c15::after,
 .c15::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -15026,6 +15338,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c16 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -15035,6 +15349,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 
 .c16::after,
 .c16::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -15064,6 +15380,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c17 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -15073,6 +15391,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 
 .c17::after,
 .c17::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -15116,6 +15436,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c18 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -15125,6 +15447,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 
 .c18::after,
 .c18::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -15167,6 +15491,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c19 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -15176,6 +15502,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 
 .c19::after,
 .c19::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -15206,6 +15534,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c20 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -15215,6 +15545,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 
 .c20::after,
 .c20::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -15253,6 +15585,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c21 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -15262,6 +15596,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 
 .c21::after,
 .c21::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -15300,6 +15636,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c22 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -15311,6 +15649,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 
 .c22::after,
 .c22::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -15354,6 +15694,8 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 .c13 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
@@ -15884,7 +16226,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
         </button>
       </div>
       <div
-        class="c19"
+        class="c16"
       >
         <button
           class="c13"
@@ -15944,7 +16286,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
         </button>
       </div>
       <div
-        class="c16"
+        class="c19"
       >
         <button
           class="c13"
@@ -16779,6 +17121,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c12 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -16790,6 +17134,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 
 .c12::after,
 .c12::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -16832,6 +17178,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c15 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -16843,6 +17191,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 
 .c15::after,
 .c15::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -16872,6 +17222,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c16 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -16881,6 +17233,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 
 .c16::after,
 .c16::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -16910,6 +17264,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c17 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -16919,6 +17275,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 
 .c17::after,
 .c17::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -16962,6 +17320,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c18 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -16971,6 +17331,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 
 .c18::after,
 .c18::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -17013,6 +17375,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c19 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -17022,6 +17386,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 
 .c19::after,
 .c19::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -17052,6 +17418,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c20 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -17061,6 +17429,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 
 .c20::after,
 .c20::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -17099,6 +17469,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c21 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -17108,6 +17480,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 
 .c21::after,
 .c21::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -17146,6 +17520,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c22 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -17157,6 +17533,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 
 .c22::after,
 .c22::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -17200,6 +17578,8 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 .c13 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
@@ -17730,7 +18110,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
         </button>
       </div>
       <div
-        class="c19"
+        class="c16"
       >
         <button
           class="c13"
@@ -17790,7 +18170,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
         </button>
       </div>
       <div
-        class="c16"
+        class="c19"
       >
         <button
           class="c13"
@@ -18622,6 +19002,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c12 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -18633,6 +19015,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 
 .c12::after,
 .c12::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -18675,6 +19059,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c15 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -18686,6 +19072,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 
 .c15::after,
 .c15::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -18715,6 +19103,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c16 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -18724,6 +19114,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 
 .c16::after,
 .c16::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -18753,6 +19145,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c17 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -18762,6 +19156,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 
 .c17::after,
 .c17::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -18805,6 +19201,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c18 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -18814,6 +19212,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 
 .c18::after,
 .c18::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -18856,6 +19256,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c19 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -18865,6 +19267,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 
 .c19::after,
 .c19::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -18895,6 +19299,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c20 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -18904,6 +19310,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 
 .c20::after,
 .c20::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -18942,6 +19350,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c21 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -18951,6 +19361,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 
 .c21::after,
 .c21::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -18989,6 +19401,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c22 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -19000,6 +19414,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 
 .c22::after,
 .c22::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -19043,6 +19459,8 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 .c13 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
@@ -19573,7 +19991,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
         </button>
       </div>
       <div
-        class="c19"
+        class="c16"
       >
         <button
           class="c13"
@@ -19633,7 +20051,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
         </button>
       </div>
       <div
-        class="c16"
+        class="c19"
       >
         <button
           class="c13"
@@ -20465,6 +20883,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c12 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -20476,6 +20896,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 
 .c12::after,
 .c12::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -20518,6 +20940,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c15 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -20529,6 +20953,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 
 .c15::after,
 .c15::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -20558,6 +20984,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c16 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -20567,6 +20995,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 
 .c16::after,
 .c16::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -20596,6 +21026,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c17 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -20605,6 +21037,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 
 .c17::after,
 .c17::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -20648,6 +21082,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c18 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -20657,6 +21093,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 
 .c18::after,
 .c18::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -20699,6 +21137,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c19 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -20708,6 +21148,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 
 .c19::after,
 .c19::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -20738,6 +21180,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c20 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -20747,6 +21191,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 
 .c20::after,
 .c20::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -20785,6 +21231,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c21 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -20794,6 +21242,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 
 .c21::after,
 .c21::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -20832,6 +21282,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c22 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   text-align: center;
   margin-bottom: 0.4rem;
   padding: 0.4rem;
@@ -20843,6 +21295,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 
 .c22::after,
 .c22::before {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   position: absolute;
   content: '';
   z-index: -1;
@@ -20886,6 +21340,8 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 .c13 {
+  -webkit-transition: background-color border-color 0.1s ease;
+  transition: background-color border-color 0.1s ease;
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
@@ -21416,7 +21872,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
         </button>
       </div>
       <div
-        class="c19"
+        class="c16"
       >
         <button
           class="c13"
@@ -21476,7 +21932,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
         </button>
       </div>
       <div
-        class="c16"
+        class="c19"
       >
         <button
           class="c13"

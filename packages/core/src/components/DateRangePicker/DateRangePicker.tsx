@@ -43,7 +43,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
             startDateRef.current.focus();
         } else if (focusedElement === 'END_DATE') {
             endDateRef.current.focus();
-        } else startDateRef.current.focus();
+        }
     }, [focusedElement]);
 
     return (

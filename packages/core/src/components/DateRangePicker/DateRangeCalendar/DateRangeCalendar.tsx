@@ -8,16 +8,16 @@ import { Props } from './types';
 
 export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props => {
     const {
-            id,
-            size,
-            placement,
-            selectedDates,
-            focusedElement,
-            setFocusedElement,
-            onDateSelection,
-            minSelectableDate,
-            maxSelectableDate
-        } = props,
+        id,
+        size,
+        placement,
+        selectedDates,
+        focusedElement,
+        setFocusedElement,
+        onDateSelection,
+        minSelectableDate,
+        maxSelectableDate
+    } = props,
         { startDate, endDate } = selectedDates;
 
     const [hoveredDate, setHoveredDate] = useState<Date | null>(null),
@@ -28,12 +28,15 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
         handleDateSelection = useCallback(
             (date: Date) => {
                 if (focusedElement === `START_DATE`) {
-                    if ('endDate' in selectedDates && date >= selectedDates.endDate) {
+                    if (date >= selectedDates.endDate) {
                         delete selectedDates.endDate;
                     }
                     onDateSelection({ ...selectedDates, startDate: date });
                     setFocusedElement('END_DATE');
                 } else {
+                    if (date <= selectedDates.startDate) {
+                        delete selectedDates.startDate;
+                    }
                     onDateSelection({ ...selectedDates, endDate: date });
                     setFocusedElement('START_DATE');
                 }

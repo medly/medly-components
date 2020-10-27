@@ -54,6 +54,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
         onFocus = React.useCallback((event: React.FocusEvent<HTMLInputElement>) => {
             setActive(true);
             setFocusedElement(event.target.name as `START_DATE` | `END_DATE`);
+            toggleCalendar(true);
             event.target.setSelectionRange(event.target.value.length, event.target.value.length);
         }, []),
         onBlur = React.useCallback(
@@ -93,15 +94,15 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
     }, [selectedDates, displayFormat]);
 
     const textProps = {
-            variant,
-            size,
-            onBlur,
-            onFocus,
-            disabled,
-            placeholder: mask,
-            onChange: handleTextChange,
-            errorText: errorText || builtInErrorMessage
-        },
+        variant,
+        size,
+        onBlur,
+        onFocus,
+        disabled,
+        placeholder: mask,
+        onChange: handleTextChange,
+        errorText: errorText || builtInErrorMessage
+    },
         iconProps = {
             variant,
             isErrorPresent,

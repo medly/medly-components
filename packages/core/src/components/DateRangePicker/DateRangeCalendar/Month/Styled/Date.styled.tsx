@@ -31,11 +31,12 @@ const monthStartAndEndDateAfterStyle = css<ExtendedDateProps>`
         ${monthStartAndEndDateAfterStyle};
         &::before {
             width: ${({ isMonthFirstDate, isMonthLastDate }) => !isMonthFirstDate && !isMonthLastDate && '3.4rem'};
-            right: ${({ isMonthFirstDate, isMonthLastDate, isWeekLastDate }) => !isMonthFirstDate && !isMonthLastDate &&  isWeekLastDate && '2.2rem'};
+            right: ${({ isMonthFirstDate, isMonthLastDate, isWeekLastDate }) => !isMonthFirstDate && !isMonthLastDate && isWeekLastDate && '2.2rem'};
         }
     `;
 
 export const DateContainer = styled.div<ExtendedDateProps>`
+    transition: background-color border-color 0.1s ease;
     text-align: center;
     margin-bottom: 0.4rem;
     padding: 0.4rem;
@@ -46,6 +47,7 @@ export const DateContainer = styled.div<ExtendedDateProps>`
 
     &::after,
         &::before {
+            transition: background-color border-color 0.1s ease;
             position: absolute;
             content: '';
             z-index: -1;
@@ -54,7 +56,7 @@ export const DateContainer = styled.div<ExtendedDateProps>`
             height: 3.2rem;
             width: 4.8rem;
             background-color: ${({ theme, isInDateRange, isInDateRangeHover }) =>
-                (isInDateRangeHover && theme.colors.grey[100]) || (isInDateRange && theme.colors.blue[100])};
+        (isInDateRangeHover && theme.colors.grey[100]) || (isInDateRange && theme.colors.blue[100])};
         }
         &::before {
             right: -1.8rem;
@@ -65,7 +67,7 @@ export const DateContainer = styled.div<ExtendedDateProps>`
     ${({ isMonthFirstDate, isMonthLastDate, isInDateRange, isInDateRangeHover }) =>
         (isMonthFirstDate || isMonthLastDate) && (isInDateRange || isInDateRangeHover) && monthStartAndEndDateBeforeStyle};
     
-    ${({ isWeekFirstDate, isWeekLastDate }) =>  (isWeekFirstDate || isWeekLastDate) && weekStartAndEndDateStyle};
+    ${({ isWeekFirstDate, isWeekLastDate }) => (isWeekFirstDate || isWeekLastDate) && weekStartAndEndDateStyle};
     
 
     > button {
@@ -81,13 +83,14 @@ export const DateContainer = styled.div<ExtendedDateProps>`
     &:hover {
         > button {
             border-color: ${({ theme, disabled, isInRangeAfterDateSelection }) =>
-                !disabled && !isInRangeAfterDateSelection && theme.datePicker.selectedDateBgColor};
+        !disabled && !isInRangeAfterDateSelection && theme.datePicker.selectedDateBgColor};
             background-color: ${({ isInRangeAfterDateSelection, theme }) => isInRangeAfterDateSelection && theme.colors.grey[200]};
         }
     }
 `;
 
-export const Date = styled('button').attrs({ type: 'button' })<ExtendedDateProps>`
+export const Date = styled('button').attrs({ type: 'button' }) <ExtendedDateProps>`
+    transition: background-color border-color 0.1s ease;
     border: 0.2rem solid transparent;
     height: 3.2rem;
     width: 3.2rem;
