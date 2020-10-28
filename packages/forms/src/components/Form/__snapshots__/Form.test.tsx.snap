@@ -880,7 +880,7 @@ exports[`Form should render properly with initial state 1`] = `
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background-color: transparent;
+  background: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -961,12 +961,6 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c7:not(:placeholder-shown) ~ .c43 {
   opacity: 1;
-}
-
-.c7:-webkit-autofill,
-.c7:-webkit-autofill:focus,
-.c7:-webkit-autofill:hover {
-  background-color: transparent;
 }
 
 .c13 {
@@ -3219,7 +3213,7 @@ exports[`Form should render properly without initial state 1`] = `
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background-color: transparent;
+  background: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -3300,12 +3294,6 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c10:not(:placeholder-shown) ~ .c43 {
   opacity: 1;
-}
-
-.c10:-webkit-autofill,
-.c10:-webkit-autofill:focus,
-.c10:-webkit-autofill:hover {
-  background-color: transparent;
 }
 
 .c16 {
