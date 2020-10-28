@@ -1,26 +1,37 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
-import React from 'react';
+import React, { useState } from 'react';
 import { SingleSelect } from './SingleSelect';
 import { SelectProps } from './types';
 
+const options = [
+    { value: 'all', label: 'All' },
+    { value: 'Dummy1', label: 'Dummy1' },
+    {
+        value: [
+            { value: 'Some 1', label: 'Some 1' },
+            { value: 'Some 2', label: 'Some 2' }
+        ],
+        label: 'Dummy2'
+    },
+    {
+        value: 'Dummy3',
+        label: 'Dummy3'
+    }
+];
+
+const DummyComponent = (props: Omit<SelectProps, 'options'>) => {
+    const [opts, setOptions] = useState(options),
+        updateOpts = () => setOptions([{ value: 'all', label: 'All' }]);
+    return (
+        <>
+            <SingleSelect options={opts} {...props} />
+            <button onClick={updateOpts}>Update Options</button>
+        </>
+    );
+};
+
 describe('SingleSelect component', () => {
     afterEach(cleanup);
-
-    const options = [
-        { value: 'all', label: 'All' },
-        { value: 'Dummy1', label: 'Dummy1' },
-        {
-            value: [
-                { value: 'Some 1', label: 'Some 1' },
-                { value: 'Some 2', label: 'Some 2' }
-            ],
-            label: 'Dummy2'
-        },
-        {
-            value: 'Dummy3',
-            label: 'Dummy3'
-        }
-    ];
 
     describe.each(['outlined', 'filled', 'flat'])('with %s variant', (variant: SelectProps['variant']) => {
         it('should render properly', () => {
@@ -73,6 +84,13 @@ describe('SingleSelect component', () => {
             top: ${size === 'S' ? '4rem' : '5.6rem'}
         `);
         expect(screen.getAllByRole('listitem')[0]).toMatchSnapshot();
+    });
+
+    it('should update value on updating options', async () => {
+        const mockOnChange = jest.fn();
+        render(<DummyComponent value="Dummy1" onChange={mockOnChange} />);
+        fireEvent.click(screen.getByRole('button'));
+        expect(mockOnChange).toBeCalled();
     });
 
     it('should not change input on pressing any key if isSearchable key is falsy', async () => {
