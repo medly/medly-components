@@ -44,6 +44,10 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
             date && setTextValue(format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), ' $& '));
         }, [date, displayFormat]);
         const convertDate = (d: string) => {
+            console.log(d);
+            if (d === '') {
+                return undefined;
+            }
             const [year, month, day] = d.split('-');
             return month + '/' + day + '/' + year;
         };
@@ -112,10 +116,13 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 },
                 [onChange]
             );
-        const handleOnChangeNative = (event: React.FormEvent<HTMLInputElement>) => {
-            setErrorMessage('');
-            return parseToDate(convertDate(event.currentTarget.value), displayFormat);
-        };
+        const handleOnChangeNative = useCallback(
+            (event: FormEvent<HTMLInputElement>) => {
+                setErrorMessage('');
+                parseToDate(convertDate(event.currentTarget.value), displayFormat);
+            },
+            [setErrorMessage, parseToDate]
+        );
         useOuterClickNotifier(() => {
             setActive(false);
             toggleCalendar(false);
@@ -127,11 +134,12 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
             </DateIcon>
         );
         let datepickerTextField;
-        if (!mobile) {
+        if (mobile) {
             datepickerTextField = (
                 <TextField
                     id={id}
                     ref={inputRef}
+                    size={size}
                     onChange={handleOnChangeNative}
                     type="date"
                     disabled={disabled}
