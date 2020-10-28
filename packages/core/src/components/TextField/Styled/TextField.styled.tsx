@@ -43,7 +43,7 @@ export const Input = styled('input')<StyledProps>`
     margin: ${({ multiline, variant, size }) => (multiline && variant !== 'fusion' && size === 'M' ? '1.6rem 0 0 0' : 0)};
     box-sizing: border-box;
     transition: all 100ms ease-out;
-    background: transparent;
+    background-color: transparent;
     border: none;
     text-overflow: ellipsis;
     resize: none;
@@ -81,5 +81,11 @@ export const Input = styled('input')<StyledProps>`
 
     &:not(:placeholder-shown) ~ ${MaskPlaceholder} {
         opacity: 1;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:hover {
+        background-color: transparent;
     }
 `;

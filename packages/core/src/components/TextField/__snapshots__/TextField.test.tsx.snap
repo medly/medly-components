@@ -192,7 +192,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -273,6 +273,12 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -608,7 +614,7 @@ exports[`TextField should render properly with M size 1`] = `
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -689,6 +695,12 @@ exports[`TextField should render properly with M size 1`] = `
 
 .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c6:-webkit-autofill,
+.c6:-webkit-autofill:focus,
+.c6:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -978,7 +990,7 @@ exports[`TextField should render properly with S size 1`] = `
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -1053,6 +1065,12 @@ exports[`TextField should render properly with S size 1`] = `
 
 .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c6:-webkit-autofill,
+.c6:-webkit-autofill:focus,
+.c6:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -1306,7 +1324,7 @@ exports[`TextField should render properly with default props 1`] = `
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -1387,6 +1405,12 @@ exports[`TextField should render properly with default props 1`] = `
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -1609,7 +1633,7 @@ exports[`TextField with filled variant and with label should render default stat
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -1690,6 +1714,12 @@ exports[`TextField with filled variant and with label should render default stat
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -1892,7 +1922,7 @@ exports[`TextField with filled variant and with label should render disabled sta
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -1973,6 +2003,12 @@ exports[`TextField with filled variant and with label should render disabled sta
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -2197,7 +2233,7 @@ exports[`TextField with filled variant and with label should render focus state 
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -2278,6 +2314,12 @@ exports[`TextField with filled variant and with label should render focus state 
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -2500,7 +2542,7 @@ exports[`TextField with filled variant and without label should render default s
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -2577,6 +2619,12 @@ exports[`TextField with filled variant and without label should render default s
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -2777,7 +2825,7 @@ exports[`TextField with filled variant and without label should render disabled 
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -2854,6 +2902,12 @@ exports[`TextField with filled variant and without label should render disabled 
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -3076,7 +3130,7 @@ exports[`TextField with filled variant and without label should render focus sta
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -3153,6 +3207,12 @@ exports[`TextField with filled variant and without label should render focus sta
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -3420,7 +3480,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -3501,6 +3561,12 @@ exports[`TextField with filled variant should render error state properly  1`] =
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -3775,7 +3841,7 @@ exports[`TextField with filled variant should render error state properly with a
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -3856,6 +3922,12 @@ exports[`TextField with filled variant should render error state properly with a
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -4138,7 +4210,7 @@ exports[`TextField with filled variant should render properly with multiline 1`]
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -4215,6 +4287,12 @@ exports[`TextField with filled variant should render properly with multiline 1`]
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -4456,7 +4534,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -4537,6 +4615,12 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 
 .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c6:-webkit-autofill,
+.c6:-webkit-autofill:focus,
+.c6:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -4792,7 +4876,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -4873,6 +4957,12 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -5118,7 +5208,7 @@ exports[`TextField with fusion variant and with label should render default stat
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -5203,6 +5293,12 @@ exports[`TextField with fusion variant and with label should render default stat
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -5414,7 +5510,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -5499,6 +5595,12 @@ exports[`TextField with fusion variant and with label should render disabled sta
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -5733,7 +5835,7 @@ exports[`TextField with fusion variant and with label should render focus state 
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -5818,6 +5920,12 @@ exports[`TextField with fusion variant and with label should render focus state 
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -6050,7 +6158,7 @@ exports[`TextField with fusion variant and without label should render default s
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -6131,6 +6239,12 @@ exports[`TextField with fusion variant and without label should render default s
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -6340,7 +6454,7 @@ exports[`TextField with fusion variant and without label should render disabled 
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -6421,6 +6535,12 @@ exports[`TextField with fusion variant and without label should render disabled 
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -6653,7 +6773,7 @@ exports[`TextField with fusion variant and without label should render focus sta
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -6734,6 +6854,12 @@ exports[`TextField with fusion variant and without label should render focus sta
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -6995,7 +7121,7 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -7080,6 +7206,12 @@ exports[`TextField with fusion variant should render error state properly  1`] =
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -7353,7 +7485,7 @@ exports[`TextField with fusion variant should render error state properly with a
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -7438,6 +7570,12 @@ exports[`TextField with fusion variant should render error state properly with a
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -7728,7 +7866,7 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -7809,6 +7947,12 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -8060,7 +8204,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -8145,6 +8289,12 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 
 .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c6:-webkit-autofill,
+.c6:-webkit-autofill:focus,
+.c6:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -8410,7 +8560,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -8495,6 +8645,12 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -8744,7 +8900,7 @@ exports[`TextField with outlined variant and with label should render default st
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -8825,6 +8981,12 @@ exports[`TextField with outlined variant and with label should render default st
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -9032,7 +9194,7 @@ exports[`TextField with outlined variant and with label should render disabled s
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -9113,6 +9275,12 @@ exports[`TextField with outlined variant and with label should render disabled s
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -9351,7 +9519,7 @@ exports[`TextField with outlined variant and with label should render focus stat
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -9432,6 +9600,12 @@ exports[`TextField with outlined variant and with label should render focus stat
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -9668,7 +9842,7 @@ exports[`TextField with outlined variant and without label should render default
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -9745,6 +9919,12 @@ exports[`TextField with outlined variant and without label should render default
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -9950,7 +10130,7 @@ exports[`TextField with outlined variant and without label should render disable
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -10027,6 +10207,12 @@ exports[`TextField with outlined variant and without label should render disable
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -10263,7 +10449,7 @@ exports[`TextField with outlined variant and without label should render focus s
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -10340,6 +10526,12 @@ exports[`TextField with outlined variant and without label should render focus s
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -10621,7 +10813,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -10702,6 +10894,12 @@ exports[`TextField with outlined variant should render error state properly  1`]
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -10990,7 +11188,7 @@ exports[`TextField with outlined variant should render error state properly with
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -11071,6 +11269,12 @@ exports[`TextField with outlined variant should render error state properly with
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -11367,7 +11571,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -11444,6 +11648,12 @@ exports[`TextField with outlined variant should render properly with multiline 1
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -11699,7 +11909,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -11780,6 +11990,12 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 
 .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c6:-webkit-autofill,
+.c6:-webkit-autofill:focus,
+.c6:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -12049,7 +12265,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -12130,6 +12346,12 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -12365,7 +12587,7 @@ exports[`TextField without label should render default state properly 1`] = `
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -12442,6 +12664,12 @@ exports[`TextField without label should render default state properly 1`] = `
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
@@ -12662,7 +12890,7 @@ exports[`TextField without label should render focus state properly  1`] = `
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -12743,6 +12971,12 @@ exports[`TextField without label should render focus state properly  1`] = `
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c3:-webkit-autofill,
+.c3:-webkit-autofill:focus,
+.c3:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 <div>
