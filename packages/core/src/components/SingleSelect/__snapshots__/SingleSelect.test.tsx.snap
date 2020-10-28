@@ -206,7 +206,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -285,6 +285,12 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 .c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
 .c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c5:-webkit-autofill,
+.c5:-webkit-autofill:focus,
+.c5:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 .c0 {
@@ -582,7 +588,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -661,6 +667,12 @@ exports[`SingleSelect component should render properly when isSearchable is true
 .c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
 .c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c5:-webkit-autofill,
+.c5:-webkit-autofill:focus,
+.c5:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 .c0 {
@@ -1136,7 +1148,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -1215,6 +1227,12 @@ exports[`SingleSelect component should take passed max width 1`] = `
 .c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
 .c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c5:-webkit-autofill,
+.c5:-webkit-autofill:focus,
+.c5:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 .c15 {
@@ -1678,7 +1696,7 @@ exports[`SingleSelect component with filled variant should render disabled state
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -1757,6 +1775,12 @@ exports[`SingleSelect component with filled variant should render disabled state
 .c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
 .c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c5:-webkit-autofill,
+.c5:-webkit-autofill:focus,
+.c5:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 .c0 {
@@ -2211,7 +2235,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -2290,6 +2314,12 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 .c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
 .c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c5:-webkit-autofill,
+.c5:-webkit-autofill:focus,
+.c5:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 .c0 {
@@ -2596,7 +2626,7 @@ exports[`SingleSelect component with filled variant should render with label pro
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -2679,6 +2709,12 @@ exports[`SingleSelect component with filled variant should render with label pro
 .c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
 .c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c5:-webkit-autofill,
+.c5:-webkit-autofill:focus,
+.c5:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 .c0 {
@@ -3868,7 +3904,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -3947,6 +3983,12 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 .c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
 .c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c5:-webkit-autofill,
+.c5:-webkit-autofill:focus,
+.c5:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 .c0 {
@@ -4415,7 +4457,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -4494,6 +4536,12 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 .c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
 .c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c5:-webkit-autofill,
+.c5:-webkit-autofill:focus,
+.c5:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 .c0 {
@@ -4814,7 +4862,7 @@ exports[`SingleSelect component with outlined variant should render with label p
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -4897,6 +4945,12 @@ exports[`SingleSelect component with outlined variant should render with label p
 .c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
 .c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
+}
+
+.c5:-webkit-autofill,
+.c5:-webkit-autofill:focus,
+.c5:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 .c0 {

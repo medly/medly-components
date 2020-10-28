@@ -1,5 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
-import React, { Ref, FC, useCallback } from 'react';
+import React, { FC, Ref, useCallback } from 'react';
 import * as Styled from './Popup.styled';
 import { Props } from './types';
 

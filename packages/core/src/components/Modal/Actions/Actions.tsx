@@ -1,8 +1,13 @@
 import { WithStyle } from '@medly-components/utils';
-import React from 'react';
+import React, { useContext } from 'react';
+import { ModalContext } from '../Modal.context';
 import * as Styled from './Actions.styled';
-import { Props } from './types';
+import { ModalActionUserProps } from './types';
 
-export const Actions: React.FC<Props> & WithStyle = React.memo(props => <Styled.Actions {...{ ...props, id: `${props.id}-actions` }} />);
+export const Actions: React.FC<ModalActionUserProps> & WithStyle = React.memo(({ children, alignItems }) => {
+    const { id, scrollState, isSmallScreen } = useContext(ModalContext);
+
+    return <Styled.Actions {...{ scrollState, isSmallScreen, alignItems, id: `${id}-actions` }}>{children}</Styled.Actions>;
+});
 Actions.displayName = 'Actions';
 Actions.Style = Styled.Actions;

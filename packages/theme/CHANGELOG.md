@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.24.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.23.1...@medly-components/theme@1.24.0) (2020-10-28)
+
+
+### Features
+
+* add close icon border to theme, update scrolling behavior/containers, extract scroll state log ([9d96d62](https://github.com/medly/medly-components/commit/9d96d6228e1a00659bfab4b06195fc04dd40caea))
+* add useWindowSize hook, add debounce util, update padding, update header title variant based o ([6143ecd](https://github.com/medly/medly-components/commit/6143ecd5e585ac5ca770f60164bc5b60df40485b))
+
+
+
+
+
 ## [1.23.1](https://github.com/medly/medly-components/compare/@medly-components/theme@1.23.0...@medly-components/theme@1.23.1) (2020-10-20)
 
 

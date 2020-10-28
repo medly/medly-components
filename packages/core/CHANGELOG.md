@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.32.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.31.2...@medly-components/core@1.32.0) (2020-10-28)
+
+
+### Bug Fixes
+
+* add autofill css for textfield component ([48975d0](https://github.com/medly/medly-components/commit/48975d04963a4c86ff1380a2797daf13b57e7af2))
+* search issue in multiselect component ([6e5324a](https://github.com/medly/medly-components/commit/6e5324a42730199ba18c978eb27284a025107152))
+
+
+### Features
+
+* add close icon border to theme, update scrolling behavior/containers, extract scroll state log ([9d96d62](https://github.com/medly/medly-components/commit/9d96d6228e1a00659bfab4b06195fc04dd40caea))
+* add modal context ([f514ee5](https://github.com/medly/medly-components/commit/f514ee5fedb129d56b03d2bf4d048c23bd4a7e80))
+* add todo ([07bb63a](https://github.com/medly/medly-components/commit/07bb63af47bdc478b1b72d5a3b5138acddaf468d))
+* add useWindowSize hook, add debounce util, update padding, update header title variant based o ([6143ecd](https://github.com/medly/medly-components/commit/6143ecd5e585ac5ca770f60164bc5b60df40485b))
+* address PR comments, begin updating tests ([1675d5c](https://github.com/medly/medly-components/commit/1675d5cf6330c8f678b6a1f958ae093eb7c319bc))
+* begin adding mobile modal styles ([2c5f715](https://github.com/medly/medly-components/commit/2c5f7157e41ea650abaa9273d45c2812aee87385))
+* cleanup modal children usage, begin removing footer shadow on mobile ([032ddee](https://github.com/medly/medly-components/commit/032ddee6f67d5a61886453cd9db9809f0680c672))
+* cleanup types ([e2db9fb](https://github.com/medly/medly-components/commit/e2db9fb6cbb4aabfe9046fd14ebd1bd07beb2b16))
+* fix clear button bug, update animation ([8297280](https://github.com/medly/medly-components/commit/829728020a6f3a952ff612b92828dbf5f55e3c75))
+* fix import ([49beca9](https://github.com/medly/medly-components/commit/49beca9aed251af8300e802b3e1d6d9710c1f6c2))
+* fix useWindowSize bug, add modal mounting animations, fix icon size ([2005634](https://github.com/medly/medly-components/commit/2005634c92fde46eb3fc3eabaf5121bd92176bbd))
+* update content padding and header shadow based on scroll position ([f8308cb](https://github.com/medly/medly-components/commit/f8308cbdbdd0fb70d5b83179fc08a07fd66461ae))
+* update tests/snapshots, fix small issues ([b0fc1de](https://github.com/medly/medly-components/commit/b0fc1de8a5a05d3624e12c9140f80f36b59d952b))
+
+
+
+
+
 ## [1.31.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.31.1...@medly-components/core@1.31.2) (2020-10-27)
 
 

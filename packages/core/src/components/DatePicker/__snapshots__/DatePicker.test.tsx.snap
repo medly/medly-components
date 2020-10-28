@@ -12593,7 +12593,7 @@ exports[`DatePicker component should render properly when value is of date type 
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -12676,6 +12676,12 @@ exports[`DatePicker component should render properly when value is of date type 
 .c6:not(:placeholder-shown) ~ .c9:not(:placeholder-shown) ~ .c7,
 .c6:focus ~ .c9:not(:placeholder-shown) ~ .c7 {
   opacity: 1;
+}
+
+.c6:-webkit-autofill,
+.c6:-webkit-autofill:focus,
+.c6:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 .c12 {
@@ -12982,7 +12988,7 @@ exports[`DatePicker component should render properly when value is of string typ
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
@@ -13061,6 +13067,12 @@ exports[`DatePicker component should render properly when value is of string typ
 .c6:not(:placeholder-shown) ~ .c9:not(:placeholder-shown) ~ .c7,
 .c6:focus ~ .c9:not(:placeholder-shown) ~ .c7 {
   opacity: 1;
+}
+
+.c6:-webkit-autofill,
+.c6:-webkit-autofill:focus,
+.c6:-webkit-autofill:hover {
+  background-color: transparent;
 }
 
 .c12 {

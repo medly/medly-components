@@ -1,7 +1,90 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Modal component background at small screen size should render properly when it is closed 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(67,84,101,0.65);
+  z-index: 1000;
+  -webkit-animation: fadeOut 0.4s cubic-bezier(0,0,0.33,1);
+  animation: fadeOut 0.4s cubic-bezier(0,0,0.33,1);
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;
+
+exports[`Modal component background at small screen size should render properly when it is open 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(67,84,101,0.65);
+  z-index: 1000;
+  -webkit-animation: fadeIn 0.4s cubic-bezier(0,0,0.33,1);
+  animation: fadeIn 0.4s cubic-bezier(0,0,0.33,1);
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+    open=""
+  />
+</div>
+`;
+
 exports[`Modal component should render properly when it is open 1`] = `
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17,7 +100,7 @@ exports[`Modal component should render properly when it is open 1`] = `
   justify-content: flex-end;
 }
 
-.c6 > * + * {
+.c7 > * + * {
   margin-left: 1.6rem;
 }
 
@@ -37,11 +120,19 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 .c3 {
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+  top: 1.6rem;
+  right: 1.6rem;
+  z-index: 20;
   position: absolute;
-  top: 1.2rem;
-  right: 1.2rem;
   border-radius: 50%;
-  padding: 4px;
+  box-sizing: border-box;
+  border: 1px solid #eff2f4;
   background-color: #eff2f4;
 }
 
@@ -56,6 +147,7 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 .c3:hover {
+  border: 1px solid #0F5AD5;
   background-color: #0F5AD5;
   box-shadow: 0 2px 8px rgba(15,90,213,0.5);
 }
@@ -65,6 +157,7 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 .c3:active {
+  border: 1px solid #0D4AAF;
   background-color: #0D4AAF;
   box-shadow: none;
 }
@@ -73,34 +166,40 @@ exports[`Modal component should render properly when it is open 1`] = `
   fill: #ffffff;
 }
 
-.c5 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  overflow: scroll;
+  box-sizing: border-box;
   padding: 0 1.6rem;
+  padding-top: 0;
 }
 
-.c5::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-.c5::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-.c5::-webkit-scrollbar-thumb {
-  border-radius: 1rem;
-  background-color: #b0bcc8;
-}
-
-.c4 {
+.c5 {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 100%;
+  border-top-left-radius: 1.6rem;
+  border-top-right-radius: 1.6rem;
   z-index: 10;
   color: #13181D;
-  padding: 0 1.6rem 1.6rem;
+  position: relative;
+  padding: 6.6rem 1.6rem 1.9rem 1.6rem;
 }
 
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -108,26 +207,9 @@ exports[`Modal component should render properly when it is open 1`] = `
   height: 100%;
   background: rgba(67,84,101,0.65);
   z-index: 1000;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
-.c1 {
-  background: #ffffff;
-  padding: 4.8rem 3.2rem;
-  border-radius: 2.4rem;
-  overflow: hidden;
-  overflow-y: none;
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -135,23 +217,122 @@ exports[`Modal component should render properly when it is open 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  max-height: 80%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.c4::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.c4::-webkit-scrollbar-track {
+  background-color: transparent;
+  margin-top: 0rem;
+}
+
+.c4::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #b0bcc8;
+}
+
+.c1 {
+  background: #ffffff;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: calc(100% - 2.4rem);
+  width: 100%;
   position: relative;
   min-height: 200px;
   box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
+  box-sizing: border-box;
+  border-top-left-radius: 1.6rem;
+  border-top-right-radius: 1.6rem;
+}
+
+@media (min-width:768px) {
+  .c3 {
+    top: 1.2rem;
+    right: 1.2rem;
+    height: 3.2rem;
+    width: 3.2rem;
+    padding: 0.4rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    padding-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    overflow: auto;
+  }
+
+  .c6::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  .c6::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .c6::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #b0bcc8;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    position: relative;
+    padding: 0 1.6rem 1.6rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    overflow: hidden;
+  }
+
+  .c4::-webkit-scrollbar-track {
+    margin-top: 0;
+  }
 }
 
 @media (min-width:768px) and (max-width:1439px) {
   .c1 {
+    padding: 4.8rem 3.2rem;
+    border-radius: 2.4rem;
     max-width: 72%;
     min-width: 200px;
+    max-height: 80%;
   }
 }
 
 @media (min-width:1440px) {
   .c1 {
+    padding: 4.8rem 3.2rem;
+    border-radius: 2.4rem;
     min-width: 200px;
     max-width: 103.6rem;
+    max-height: 80%;
   }
 }
 
@@ -159,10 +340,12 @@ exports[`Modal component should render properly when it is open 1`] = `
   <div
     class="c0"
     id="medly-modal"
+    open=""
   >
     <div
       class="c1"
       id="medly-modal-popup"
+      open=""
     >
       <svg
         class="c2 c3"
@@ -181,23 +364,28 @@ exports[`Modal component should render properly when it is open 1`] = `
       </svg>
       <div
         class="c4"
-        id="medly-modal-header"
+        id="medly-modal-content-header"
       >
-        <p>
-          Demo Header
-        </p>
-      </div>
-      <div
-        class="c5"
-        id="medly-modal-content"
-      >
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-      </div>
-      <div
-        class="c6"
-        id="medly-modal-actions"
-      >
-        Demo Actions
+        <div
+          class="c5"
+          id="medly-modal-header"
+        >
+          <p>
+            Demo Header
+          </p>
+        </div>
+        <div
+          class="c6"
+          id="medly-modal-content"
+        >
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        </div>
+        <div
+          class="c7"
+          id="medly-modal-actions"
+        >
+          Demo Actions
+        </div>
       </div>
     </div>
   </div>
