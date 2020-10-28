@@ -12673,8 +12673,7 @@ exports[`DatePicker component should render properly when value is of date type 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c6:not(:placeholder-shown) ~ .c9:not(:placeholder-shown) ~ .c7,
-.c6:focus ~ .c9:not(:placeholder-shown) ~ .c7 {
+.c6:not(:placeholder-shown) ~ .c7 {
   opacity: 1;
 }
 
@@ -13064,8 +13063,7 @@ exports[`DatePicker component should render properly when value is of string typ
   transform: translateY(-87%) scale(0.75);
 }
 
-.c6:not(:placeholder-shown) ~ .c9:not(:placeholder-shown) ~ .c7,
-.c6:focus ~ .c9:not(:placeholder-shown) ~ .c7 {
+.c6:not(:placeholder-shown) ~ .c7 {
   opacity: 1;
 }
 

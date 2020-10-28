@@ -282,8 +282,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
-.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -664,8 +663,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
-.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -1224,8 +1222,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
-.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -1772,8 +1769,7 @@ exports[`SingleSelect component with filled variant should render disabled state
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
-.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -2311,8 +2307,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
-.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -2706,8 +2701,7 @@ exports[`SingleSelect component with filled variant should render with label pro
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
-.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -3980,8 +3974,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
-.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -4533,8 +4526,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
-.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -4942,8 +4934,7 @@ exports[`SingleSelect component with outlined variant should render with label p
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr,
-.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 

@@ -246,8 +246,7 @@ exports[`MultiSelect component should render correctly with all the props given 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-AxheI,
-.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-AxheI {
+.c5:not(:placeholder-shown) ~ .sc-AxheI {
   opacity: 1;
 }
 
@@ -760,8 +759,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .c6:not(:placeholder-shown) ~ .sc-AxheI,
-.c5:focus ~ .c6:not(:placeholder-shown) ~ .sc-AxheI {
+.c5:not(:placeholder-shown) ~ .sc-AxheI {
   opacity: 1;
 }
 

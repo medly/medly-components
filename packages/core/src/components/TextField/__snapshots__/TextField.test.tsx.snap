@@ -272,8 +272,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -381,11 +380,6 @@ exports[`TextField should render asterisk if we pass required prop as true 1`] =
   -webkit-transform: translateY(-87%) scale(0.75);
   -ms-transform: translateY(-87%) scale(0.75);
   transform: translateY(-87%) scale(0.75);
-}
-
-.c3:not(:placeholder-shown) ~ .c0:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c0:not(:placeholder-shown) ~ .sc-Axmtr {
-  opacity: 1;
 }
 
 <label
@@ -701,8 +695,7 @@ exports[`TextField should render properly with M size 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c6:not(:placeholder-shown) ~ .c7:not(:placeholder-shown) ~ .sc-Axmtr,
-.c6:focus ~ .c7:not(:placeholder-shown) ~ .sc-Axmtr {
+.c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -1073,8 +1066,7 @@ exports[`TextField should render properly with S size 1`] = `
   opacity: 0;
 }
 
-.c6:not(:placeholder-shown) ~ .c7:not(:placeholder-shown) ~ .sc-Axmtr,
-.c6:focus ~ .c7:not(:placeholder-shown) ~ .sc-Axmtr {
+.c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -1415,8 +1407,7 @@ exports[`TextField should render properly with default props 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -1726,8 +1717,7 @@ exports[`TextField with filled variant and with label should render default stat
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -2017,8 +2007,7 @@ exports[`TextField with filled variant and with label should render disabled sta
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -2330,8 +2319,7 @@ exports[`TextField with filled variant and with label should render focus state 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -2637,8 +2625,7 @@ exports[`TextField with filled variant and without label should render default s
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -2922,8 +2909,7 @@ exports[`TextField with filled variant and without label should render disabled 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -3229,8 +3215,7 @@ exports[`TextField with filled variant and without label should render focus sta
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -3585,8 +3570,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -3948,8 +3932,7 @@ exports[`TextField with filled variant should render error state properly with a
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -4315,8 +4298,7 @@ exports[`TextField with filled variant should render properly with multiline 1`]
   transform: translateY(-50%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -4645,8 +4627,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c6:not(:placeholder-shown) ~ .c7:not(:placeholder-shown) ~ .sc-Axmtr,
-.c6:focus ~ .c7:not(:placeholder-shown) ~ .sc-Axmtr {
+.c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -4989,8 +4970,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -5327,8 +5307,7 @@ exports[`TextField with fusion variant and with label should render default stat
   font-weight: 500;
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -5631,8 +5610,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
   font-weight: 500;
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -5958,8 +5936,7 @@ exports[`TextField with fusion variant and with label should render focus state 
   font-weight: 500;
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -6279,8 +6256,7 @@ exports[`TextField with fusion variant and without label should render default s
   font-weight: 500;
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -6577,8 +6553,7 @@ exports[`TextField with fusion variant and without label should render disabled 
   font-weight: 500;
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -6898,8 +6873,7 @@ exports[`TextField with fusion variant and without label should render focus sta
   font-weight: 500;
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -7252,8 +7226,7 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   font-weight: 500;
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -7618,8 +7591,7 @@ exports[`TextField with fusion variant should render error state properly with a
   font-weight: 500;
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -7997,8 +7969,7 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   font-weight: 500;
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -8341,8 +8312,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   font-weight: 500;
 }
 
-.c6:not(:placeholder-shown) ~ .c7:not(:placeholder-shown) ~ .sc-Axmtr,
-.c6:focus ~ .c7:not(:placeholder-shown) ~ .sc-Axmtr {
+.c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -8699,8 +8669,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   font-weight: 500;
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -9037,8 +9006,7 @@ exports[`TextField with outlined variant and with label should render default st
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -9333,8 +9301,7 @@ exports[`TextField with outlined variant and with label should render disabled s
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -9660,8 +9627,7 @@ exports[`TextField with outlined variant and with label should render focus stat
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -9981,8 +9947,7 @@ exports[`TextField with outlined variant and without label should render default
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -10271,8 +10236,7 @@ exports[`TextField with outlined variant and without label should render disable
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -10592,8 +10556,7 @@ exports[`TextField with outlined variant and without label should render focus s
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -10962,8 +10925,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -11339,8 +11301,7 @@ exports[`TextField with outlined variant should render error state properly with
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -11720,8 +11681,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
   transform: translateY(-50%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -12064,8 +12024,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c6:not(:placeholder-shown) ~ .c7:not(:placeholder-shown) ~ .sc-Axmtr,
-.c6:focus ~ .c7:not(:placeholder-shown) ~ .sc-Axmtr {
+.c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -12422,8 +12381,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -12742,8 +12700,7 @@ exports[`TextField without label should render default state properly 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -13051,8 +13008,7 @@ exports[`TextField without label should render focus state properly  1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c3:not(:placeholder-shown) ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr,
-.c3:focus ~ .c4:not(:placeholder-shown) ~ .sc-Axmtr {
+.c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
