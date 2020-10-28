@@ -36,13 +36,12 @@ To open the calendar click on the icon inside the datepicker component and to cl
             return (
                 <DatePicker
                     id="dob"
-                    value={date}
+                    value={"01/20/2020"}
                     onChange={setDate}
                     fullWidth={boolean('Full Width', false)}
                     size={select('Size', sizes, 'M')}
                     displayFormat={select('Display Format', displayFormats, 'MM/dd/yyyy')}
                     popoverPlacement={select('Popover placement', placements, 'bottom-start')}
-                    mobile={boolean('Mobile', true)}
                     disabled={boolean('Disabled', false)}
                     label={text('Label', 'Date of Birth')}
                     variant={select('variant', variants, 'outlined')}

@@ -44,7 +44,6 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
             date && setTextValue(format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), ' $& '));
         }, [date, displayFormat]);
         const convertDate = (d: string) => {
-            console.log(d);
             if (d === '') {
                 return undefined;
             }
@@ -118,6 +117,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
             );
         const handleOnChangeNative = useCallback(
             (event: FormEvent<HTMLInputElement>) => {
+                setTextValue(convertDate(event.currentTarget.value));
                 setErrorMessage('');
                 parseToDate(convertDate(event.currentTarget.value), displayFormat);
             },
@@ -133,23 +133,17 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 <DateRangeIcon id={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
             </DateIcon>
         );
+        function mobileValue() {
+            console.log('this is testing', textValue);
+            if (textValue) {
+                const test = parseToDate(textValue, displayFormat);
+                return format(test, 'yyyy-MM-dd');
+            } else {
+                return null;
+            }
+        }
         let datepickerTextField;
-        if (mobile) {
-            datepickerTextField = (
-                <TextField
-                    id={id}
-                    ref={inputRef}
-                    size={size}
-                    onChange={handleOnChangeNative}
-                    type="date"
-                    disabled={disabled}
-                    suffix={suffixEl}
-                    errorText={errorText || builtInErrorMessage}
-                    fullWidth
-                    {...{ ...restProps, onBlur, onInvalid }}
-                />
-            );
-        } else {
+        if (!mobile) {
             datepickerTextField = (
                 <TextField
                     errorText={errorText || builtInErrorMessage}
@@ -164,6 +158,22 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                     value={textValue}
                     onChange={onTextChange}
                     {...{ ...restProps, onBlur, onFocus, onInvalid }}
+                />
+            );
+        } else {
+            datepickerTextField = (
+                <TextField
+                    id={id}
+                    ref={inputRef}
+                    size={size}
+                    onChange={handleOnChangeNative}
+                    type="date"
+                    disabled={disabled}
+                    required={required}
+                    value={mobileValue()}
+                    errorText={errorText || builtInErrorMessage}
+                    fullWidth
+                    {...{ ...restProps, onBlur, onInvalid }}
                 />
             );
         }
@@ -200,7 +210,7 @@ DatePicker.defaultProps = {
     disabled: false,
     required: false,
     fullWidth: false,
-    mobile: false,
+    mobile: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
     minSelectableDate: new Date(1901, 0, 1),
     maxSelectableDate: new Date(2100, 11, 1),
     popoverPlacement: 'bottom-start'
