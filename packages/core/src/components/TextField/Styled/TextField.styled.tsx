@@ -87,9 +87,9 @@ export const Input = styled('input')<StyledProps>`
     &:not(:placeholder-shown) ~ ${Label}, &:focus ~ ${Label} {
         opacity: ${({ size }) => size === 'S' && '0'};
         ${({ size }) => size === 'M' && transformLabel};
+    }
 
-        &:not(:placeholder-shown) ~ ${MaskPlaceholder} {
-            opacity: 1;
-        }
+    &:not(:placeholder-shown) ~ ${MaskPlaceholder} {
+        opacity: 1;
     }
 `;
