@@ -1,11 +1,6 @@
-export interface Props {
-    id: string;
-    scrollState: {
-        scrolledToTop: boolean;
-        scrolledToBottom: boolean;
-    };
-    dispatch: React.Dispatch<{
-        type: 'scrolledToTop' | 'scrolledToBottom';
-        value: boolean;
-    }>;
+import { ScrollState } from '../types';
+
+export interface StyledProps {
+    scrollState: ScrollState;
+    headerHeight: number;
 }
