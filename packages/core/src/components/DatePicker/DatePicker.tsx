@@ -117,9 +117,10 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
             );
         const handleOnChangeNative = useCallback(
             (event: FormEvent<HTMLInputElement>) => {
-                setTextValue(convertDate(event.currentTarget.value));
+                const convertedDate = convertDate(event.currentTarget.value);
+                setTextValue(convertedDate);
                 setErrorMessage('');
-                parseToDate(convertDate(event.currentTarget.value), displayFormat);
+                parseToDate(convertedDate, displayFormat);
             },
             [setErrorMessage, parseToDate]
         );
