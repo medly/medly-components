@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.9](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.8...@medly-components/forms@1.12.9) (2020-10-28)
+
+
+### Bug Fixes
+
+* add autofill css for textfield component ([48975d0](https://github.com/medly/medly-components/commit/48975d04963a4c86ff1380a2797daf13b57e7af2))
+
+
+
+
+
 ## [1.12.8](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.7...@medly-components/forms@1.12.8) (2020-10-27)
 
 **Note:** Version bump only for package @medly-components/forms
