@@ -250,8 +250,11 @@ exports[`MultiSelect component should render correctly with all the props given 
 }
 
 .c5:-webkit-autofill,
+.c5:-moz-autofill,
 .c5:-webkit-autofill:focus,
-.c5:-webkit-autofill:hover {
+.c5:-moz-autofill:focus,
+.c5:-webkit-autofill:hover,
+.c5:-moz-autofill:hover {
   background-color: transparent;
 }
 
@@ -762,8 +765,11 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 }
 
 .c5:-webkit-autofill,
+.c5:-moz-autofill,
 .c5:-webkit-autofill:focus,
-.c5:-webkit-autofill:hover {
+.c5:-moz-autofill:focus,
+.c5:-webkit-autofill:hover,
+.c5:-moz-autofill:hover {
   background-color: transparent;
 }
 

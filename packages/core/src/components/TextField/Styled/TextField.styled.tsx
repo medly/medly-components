@@ -84,8 +84,11 @@ export const Input = styled('input')<StyledProps>`
     }
 
     &:-webkit-autofill,
+    &:-moz-autofill,
     &:-webkit-autofill:focus,
-    &:-webkit-autofill:hover {
+    &:-moz-autofill:focus,
+    &:-webkit-autofill:hover,
+    &:-moz-autofill:hover {
         background-color: transparent;
     }
 `;
