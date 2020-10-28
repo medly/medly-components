@@ -1,5 +1,5 @@
 import { DateRangeIcon } from '@medly-components/icons';
-import { parseToDate, useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
+import { isMobile, parseToDate, useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import { format } from 'date-fns';
 import React, { FormEvent, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Calendar from '../Calendar';
@@ -134,50 +134,32 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 <DateRangeIcon id={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
             </DateIcon>
         );
+        const mobileValueFormat = 'yyyy-MM-dd';
         function mobileValue() {
-            console.log('this is testing', textValue);
             if (textValue) {
-                const test = parseToDate(textValue, displayFormat);
-                return format(test, 'yyyy-MM-dd');
+                const textValueAsDate = parseToDate(textValue, displayFormat);
+                return format(textValueAsDate, mobileValueFormat);
             } else {
                 return null;
             }
         }
-        let datepickerTextField;
-        if (!mobile) {
-            datepickerTextField = (
-                <TextField
-                    errorText={errorText || builtInErrorMessage}
-                    id={id}
-                    ref={inputRef}
-                    required={required}
-                    suffix={suffixEl}
-                    fullWidth
-                    mask={displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()}
-                    size={size}
-                    disabled={disabled}
-                    value={textValue}
-                    onChange={onTextChange}
-                    {...{ ...restProps, onBlur, onFocus, onInvalid }}
-                />
-            );
-        } else {
-            datepickerTextField = (
-                <TextField
-                    id={id}
-                    ref={inputRef}
-                    size={size}
-                    onChange={handleOnChangeNative}
-                    type="date"
-                    disabled={disabled}
-                    required={required}
-                    value={mobileValue()}
-                    errorText={errorText || builtInErrorMessage}
-                    fullWidth
-                    {...{ ...restProps, onBlur, onInvalid }}
-                />
-            );
-        }
+        const sharedProps = {
+            errorText: errorText || builtInErrorMessage,
+            id: id,
+            ref: inputRef,
+            required: required,
+            fullWidth,
+            size: size,
+            disabled: disabled,
+            onChange: onTextChange,
+            ...{ ...restProps, onBlur, onFocus, onInvalid }
+        };
+        const mobileProps = { value: mobileValue() };
+        const desktopProps = {
+            suffix: suffixEl,
+            value: textValue,
+            mask: displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()
+        };
         return (
             <Wrapper
                 id={`${id}-datepicker-wrapper`}
@@ -188,7 +170,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 className={className}
                 placement={popoverPlacement}
             >
-                {datepickerTextField}
+                <TextField {...(mobile ? { ...mobileProps } : { ...desktopProps })} {...sharedProps} />
                 {showCalendar && (
                     <Calendar
                         id={`${id}-calendar`}
@@ -211,7 +193,7 @@ DatePicker.defaultProps = {
     disabled: false,
     required: false,
     fullWidth: false,
-    mobile: /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
+    mobile: isMobile,
     minSelectableDate: new Date(1901, 0, 1),
     maxSelectableDate: new Date(2100, 11, 1),
     popoverPlacement: 'bottom-start'
