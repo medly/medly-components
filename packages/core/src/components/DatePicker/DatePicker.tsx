@@ -32,14 +32,6 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 () => (value instanceof Date ? value : typeof value === 'string' ? parseToDate(value, displayFormat) : null),
                 [value, displayFormat]
             );
-        const convertDate = (d: string) => {
-            const [year, month, day] = d.split('-');
-            return month + '/' + day + '/' + year;
-        };
-
-        const handleOnChangeNative = (event: React.FormEvent<HTMLInputElement>) => {
-            return parseToDate(convertDate(event.currentTarget.value), displayFormat);
-        };
         const wrapperRef = useRef<HTMLDivElement>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
             [textValue, setTextValue] = useState(''),
@@ -51,7 +43,10 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
         useEffect(() => {
             date && setTextValue(format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), ' $& '));
         }, [date, displayFormat]);
-
+        const convertDate = (d: string) => {
+            const [year, month, day] = d.split('-');
+            return month + '/' + day + '/' + year;
+        };
         const onTextChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
                     const date = mobile ? convertDate(event.currentTarget.value) : event.currentTarget.value;
@@ -117,7 +112,10 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 },
                 [onChange]
             );
-
+        const handleOnChangeNative = (event: React.FormEvent<HTMLInputElement>) => {
+            setErrorMessage('');
+            return parseToDate(convertDate(event.currentTarget.value), displayFormat);
+        };
         useOuterClickNotifier(() => {
             setActive(false);
             toggleCalendar(false);
@@ -125,69 +123,65 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
 
         const suffixEl = () => (
             <DateIcon variant={restProps.variant} isErrorPresent={isErrorPresent} isActive={active} disabled={disabled} size={size}>
-                <DateRangeIcon onClick={onIconClick} size={size} />
+                <DateRangeIcon id={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
             </DateIcon>
         );
+        let datepickerTextField;
         if (!mobile) {
-            return (
-                <Wrapper
-                    id={`${id}-datepicker-wrapper`}
-                    ref={wrapperRef}
-                    fullWidth={fullWidth}
-                    minWidth={minWidth}
-                    size={size}
-                    className={className}
-                    placement={popoverPlacement}
-                >
-                    <TextField
-                        errorText={errorText || builtInErrorMessage}
-                        id={id}
-                        ref={inputRef}
-                        required={required}
-                        suffix={suffixEl}
-                        fullWidth
-                        mask={displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()}
-                        size={size}
-                        disabled={disabled}
-                        value={textValue}
-                        onChange={onTextChange}
-                        {...{ ...restProps, onBlur, onFocus, onInvalid }}
-                    />
-                    {showCalendar && (
-                        <Calendar
-                            id={`${id}-calendar`}
-                            date={date}
-                            isErrorPresent={isErrorPresent}
-                            onChange={onDateChange}
-                            minSelectableDate={minSelectableDate}
-                            maxSelectableDate={maxSelectableDate}
-                        />
-                    )}
-                </Wrapper>
+            datepickerTextField = (
+                <TextField
+                    id={id}
+                    ref={inputRef}
+                    onChange={handleOnChangeNative}
+                    type="date"
+                    disabled={disabled}
+                    suffix={suffixEl}
+                    errorText={errorText || builtInErrorMessage}
+                    fullWidth
+                    {...{ ...restProps, onBlur, onInvalid }}
+                />
             );
         } else {
-            return (
-                <Wrapper
-                    id={`${id}-datepicker-wrapper`}
-                    ref={wrapperRef}
-                    fullWidth={fullWidth}
-                    minWidth={minWidth}
+            datepickerTextField = (
+                <TextField
+                    errorText={errorText || builtInErrorMessage}
+                    id={id}
+                    ref={inputRef}
+                    required={required}
+                    suffix={suffixEl}
+                    fullWidth
+                    mask={displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()}
                     size={size}
-                    className={className}
-                    placement={popoverPlacement}
-                >
-                    <TextField
-                        onChange={handleOnChangeNative}
-                        type="date"
-                        placeholder="mm-dd-yyyy"
-                        suffix={suffixEl}
-                        errorText={errorText || builtInErrorMessage}
-                        fullWidth
-                        {...{ ...restProps, onBlur, onInvalid }}
-                    />
-                </Wrapper>
+                    disabled={disabled}
+                    value={textValue}
+                    onChange={onTextChange}
+                    {...{ ...restProps, onBlur, onFocus, onInvalid }}
+                />
             );
         }
+        return (
+            <Wrapper
+                id={`${id}-datepicker-wrapper`}
+                ref={wrapperRef}
+                fullWidth={fullWidth}
+                minWidth={minWidth}
+                size={size}
+                className={className}
+                placement={popoverPlacement}
+            >
+                {datepickerTextField}
+                {showCalendar && (
+                    <Calendar
+                        id={`${id}-calendar`}
+                        date={date}
+                        isErrorPresent={isErrorPresent}
+                        onChange={onDateChange}
+                        minSelectableDate={minSelectableDate}
+                        maxSelectableDate={maxSelectableDate}
+                    />
+                )}
+            </Wrapper>
+        );
     })
 );
 DatePicker.defaultProps = {
