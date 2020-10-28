@@ -85,7 +85,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
 
         useEffect(() => {
             setSelectedOptions(getDefaultSelectedOptions(defaultOptions, values));
-            setOptions(defaultOptions);
+            setOptions(inputRef.current.value ? filterOptions(defaultOptions, inputRef.current.value) : defaultOptions);
         }, [defaultOptions, values]);
 
         useEffect(() => {
