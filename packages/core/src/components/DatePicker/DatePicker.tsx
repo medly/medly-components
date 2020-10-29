@@ -41,11 +41,14 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
         useEffect(() => {
-            date && setTextValue(format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), '$&'));
+            date &&
+                (mobile
+                    ? setTextValue(format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), '$&'))
+                    : setTextValue(format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), ' $& ')));
         }, [date, displayFormat]);
         const onTextChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
-                    const date = event.currentTarget.value;
+                    const date = event.target.value;
                     const inputValue = date,
                         parsedDate = parseToDate(inputValue, displayFormat);
                     setTextValue(inputValue);
@@ -75,7 +78,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
             ),
             validate = useCallback(
                 (event: React.FocusEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
-                    const date = event.currentTarget.value;
+                    const date = event.target.value;
                     date &&
                         parseToDate(date, displayFormat).toString() === 'Invalid Date' &&
                         setTimeout(() => setErrorMessage('Enter valid date'), 0);
