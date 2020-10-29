@@ -12576,13 +12576,15 @@ exports[`DatePicker component should render properly when value is of date type 
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   min-width: 20rem;
-  margin: 0.8rem 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
 .c6 {
@@ -12963,13 +12965,15 @@ exports[`DatePicker component should render properly when value is of string typ
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   min-width: 20rem;
-  margin: 0.8rem 0;
+  margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
 .c6 {
