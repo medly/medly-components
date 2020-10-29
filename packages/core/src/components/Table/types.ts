@@ -84,7 +84,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Component to show when row is expanded */
     expandedRowComponent?: React.FC<{ rowData?: any; rowId?: any; disabled?: boolean }>;
     /** Name of the key in data on which grouping is applied */
-    groupBy?: 'string';
+    groupBy?: string;
     /** Name of the key in data on which grouping is applied */
     getGroupedData?: (title: string) => Promise<object[]>;
     /** Actions bar items */
