@@ -286,8 +286,11 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 }
 
 .c5:-webkit-autofill,
+.c5:-moz-autofill,
 .c5:-webkit-autofill:focus,
-.c5:-webkit-autofill:hover {
+.c5:-moz-autofill:focus,
+.c5:-webkit-autofill:hover,
+.c5:-moz-autofill:hover {
   background-color: transparent;
 }
 
@@ -666,8 +669,11 @@ exports[`SingleSelect component should render properly when isSearchable is true
 }
 
 .c5:-webkit-autofill,
+.c5:-moz-autofill,
 .c5:-webkit-autofill:focus,
-.c5:-webkit-autofill:hover {
+.c5:-moz-autofill:focus,
+.c5:-webkit-autofill:hover,
+.c5:-moz-autofill:hover {
   background-color: transparent;
 }
 
@@ -1224,8 +1230,11 @@ exports[`SingleSelect component should take passed max width 1`] = `
 }
 
 .c5:-webkit-autofill,
+.c5:-moz-autofill,
 .c5:-webkit-autofill:focus,
-.c5:-webkit-autofill:hover {
+.c5:-moz-autofill:focus,
+.c5:-webkit-autofill:hover,
+.c5:-moz-autofill:hover {
   background-color: transparent;
 }
 
@@ -1770,8 +1779,11 @@ exports[`SingleSelect component with filled variant should render disabled state
 }
 
 .c5:-webkit-autofill,
+.c5:-moz-autofill,
 .c5:-webkit-autofill:focus,
-.c5:-webkit-autofill:hover {
+.c5:-moz-autofill:focus,
+.c5:-webkit-autofill:hover,
+.c5:-moz-autofill:hover {
   background-color: transparent;
 }
 
@@ -2307,8 +2319,11 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 }
 
 .c5:-webkit-autofill,
+.c5:-moz-autofill,
 .c5:-webkit-autofill:focus,
-.c5:-webkit-autofill:hover {
+.c5:-moz-autofill:focus,
+.c5:-webkit-autofill:hover,
+.c5:-moz-autofill:hover {
   background-color: transparent;
 }
 
@@ -2700,8 +2715,11 @@ exports[`SingleSelect component with filled variant should render with label pro
 }
 
 .c5:-webkit-autofill,
+.c5:-moz-autofill,
 .c5:-webkit-autofill:focus,
-.c5:-webkit-autofill:hover {
+.c5:-moz-autofill:focus,
+.c5:-webkit-autofill:hover,
+.c5:-moz-autofill:hover {
   background-color: transparent;
 }
 
@@ -3972,8 +3990,11 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 }
 
 .c5:-webkit-autofill,
+.c5:-moz-autofill,
 .c5:-webkit-autofill:focus,
-.c5:-webkit-autofill:hover {
+.c5:-moz-autofill:focus,
+.c5:-webkit-autofill:hover,
+.c5:-moz-autofill:hover {
   background-color: transparent;
 }
 
@@ -4523,8 +4544,11 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 }
 
 .c5:-webkit-autofill,
+.c5:-moz-autofill,
 .c5:-webkit-autofill:focus,
-.c5:-webkit-autofill:hover {
+.c5:-moz-autofill:focus,
+.c5:-webkit-autofill:hover,
+.c5:-moz-autofill:hover {
   background-color: transparent;
 }
 
@@ -4930,8 +4954,11 @@ exports[`SingleSelect component with outlined variant should render with label p
 }
 
 .c5:-webkit-autofill,
+.c5:-moz-autofill,
 .c5:-webkit-autofill:focus,
-.c5:-webkit-autofill:hover {
+.c5:-moz-autofill:focus,
+.c5:-webkit-autofill:hover,
+.c5:-moz-autofill:hover {
   background-color: transparent;
 }
 

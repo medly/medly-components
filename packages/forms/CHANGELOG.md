@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.12](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.11...@medly-components/forms@1.12.12) (2020-10-29)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.12.11](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.10...@medly-components/forms@1.12.11) (2020-10-29)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.12.10](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.9...@medly-components/forms@1.12.10) (2020-10-28)
+
+
+### Bug Fixes
+
+* add autofill css for mozilla ([9300b1f](https://github.com/medly/medly-components/commit/9300b1fff4eae432be3c11fb58b11783c45c28ce))
+
+
+
+
+
 ## [1.12.9](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.8...@medly-components/forms@1.12.9) (2020-10-28)
 
 

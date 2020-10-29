@@ -60,7 +60,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                         onChange(null);
                     }
                 },
-                [displayFormat]
+                [displayFormat, onChange]
             ),
             onIconClick = useCallback(
                 event => {

@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.32.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.32.2...@medly-components/core@1.32.3) (2020-10-29)
+
+
+### Bug Fixes
+
+* width and height issue in Modal component ([465d4b6](https://github.com/medly/medly-components/commit/465d4b6104a1e879bf739046d0d64b423ed7e99a))
+
+
+
+
+
+## [1.32.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.32.1...@medly-components/core@1.32.2) (2020-10-29)
+
+
+### Bug Fixes
+
+* prop type for groupBy in Table component ([85c9bae](https://github.com/medly/medly-components/commit/85c9bae7e41b09a5fbba887710c9bbc12444a475))
+
+
+
+
+
+## [1.32.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.32.0...@medly-components/core@1.32.1) (2020-10-28)
+
+
+### Bug Fixes
+
+* add autofill css for mozilla ([9300b1f](https://github.com/medly/medly-components/commit/9300b1fff4eae432be3c11fb58b11783c45c28ce))
+* update value on change of the options ([56f1db0](https://github.com/medly/medly-components/commit/56f1db0817ad3cd259ddc59b67a8e724f46ac808))
+
+
+
+
+
 # [1.32.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.31.2...@medly-components/core@1.32.0) (2020-10-28)
 
 

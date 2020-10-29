@@ -11,8 +11,6 @@ exports[`Modal Popup component at small screen size should render properly when 
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: calc(100% - 2.4rem);
-  width: 100%;
   position: relative;
   min-height: 200px;
   box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
@@ -21,6 +19,13 @@ exports[`Modal Popup component at small screen size should render properly when 
   border-top-right-radius: 1.6rem;
   -webkit-animation: slideOut 0.4s cubic-bezier(0,0,0.33,1);
   animation: slideOut 0.4s cubic-bezier(0,0,0.33,1);
+}
+
+@media (max-width:767px) {
+  .c0 {
+    width: 100%;
+    height: calc(100% - 2.4rem);
+  }
 }
 
 @media (min-width:768px) and (max-width:1439px) {
@@ -61,8 +66,6 @@ exports[`Modal Popup component at small screen size should render properly when 
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: calc(100% - 2.4rem);
-  width: 100%;
   position: relative;
   min-height: 200px;
   box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
@@ -71,6 +74,13 @@ exports[`Modal Popup component at small screen size should render properly when 
   border-top-right-radius: 1.6rem;
   -webkit-animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
   animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
+}
+
+@media (max-width:767px) {
+  .c0 {
+    width: 100%;
+    height: calc(100% - 2.4rem);
+  }
 }
 
 @media (min-width:768px) and (max-width:1439px) {
