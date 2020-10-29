@@ -1,13 +1,15 @@
-import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useEffect, useReducer } from 'react';
+import { useCombinedRefs, useKeyPress, useWindowSize, WithStyle } from '@medly-components/utils';
+import React, { FC, useCallback, useEffect, useReducer, useRef, useState } from 'react';
 import Actions from './Actions';
 import CloseIcon from './CloseIcon';
 import Content from './Content';
 import Header from './Header';
-import { ModalBackgroundStyled } from './Modal.styled';
+import { ModalContext } from './Modal.context';
+import { InnerContainerStyled, ModalBackgroundStyled } from './Modal.styled';
 import Popup from './Popup';
-import { reducer } from './scrollStateReducer';
+import { reducer } from './scrollStateReducer/scrollStateReducer';
 import { ModalStaticProps, Props } from './types';
+import { useScrollState } from './useScrollState';
 
 export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
     React.forwardRef((props, ref) => {
@@ -15,28 +17,51 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
             id = restProps.id || 'medly-modal',
             isEscPressed = useKeyPress('Escape'),
             modalRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
-            [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false });
+            innerContainerRef = useRef(),
+            [headerHeight, setHeaderHeight] = useState(0),
+            [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 }),
+            [shouldRender, setShouldRender] = useState(open),
+            { width: windowWidth } = useWindowSize(),
+            isSmallScreen = windowWidth < 768,
+            handleScroll = useScrollState({ ref: innerContainerRef, scrollState, dispatch });
 
         const handleBackgroundClick = useCallback(() => {
             shouldCloseOnOutsideClick && onCloseModal();
         }, [shouldCloseOnOutsideClick, onCloseModal]);
 
         useEffect(() => {
+            if (open) setShouldRender(true);
+            if (!isSmallScreen && !open) setShouldRender(false);
+        }, [open]);
+
+        const handleAnimationEnd = useCallback(() => {
+            if (!open) setShouldRender(false);
+        }, [open]);
+
+        useEffect(() => {
             open && isEscPressed && onCloseModal();
         }, [open, isEscPressed]);
 
         return (
-            open && (
-                <ModalBackgroundStyled {...{ ...restProps, id }} onClick={handleBackgroundClick}>
-                    <Popup ref={modalRef} id={`${id}-popup`} {...{ minWidth, minHeight }}>
+            shouldRender && (
+                <ModalBackgroundStyled {...{ ...restProps, id, open, isSmallScreen }} onClick={handleBackgroundClick}>
+                    <Popup
+                        ref={modalRef}
+                        id={`${id}-popup`}
+                        onAnimationEnd={handleAnimationEnd}
+                        {...{ minWidth, minHeight, isSmallScreen, open }}
+                    >
                         <CloseIcon id={`${id}-close-button`} onClick={onCloseModal} />
-                        {React.Children.map(children, (child: any) =>
-                            React.cloneElement(child as any, {
-                                scrollState,
-                                dispatch,
-                                id
-                            })
-                        )}
+                        <InnerContainerStyled
+                            id={`${id}-content-header`}
+                            ref={innerContainerRef}
+                            onScroll={handleScroll}
+                            headerHeight={headerHeight}
+                        >
+                            <ModalContext.Provider value={{ headerHeight, setHeaderHeight, scrollState, dispatch, id, isSmallScreen }}>
+                                {children}
+                            </ModalContext.Provider>
+                        </InnerContainerStyled>
                     </Popup>
                 </ModalBackgroundStyled>
             )

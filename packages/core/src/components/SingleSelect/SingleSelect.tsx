@@ -117,6 +117,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             setInputValue(selected.label);
             setSelectedOption(selected);
             setOptions(getUpdatedOptions(defaultOptions, selected));
+            value !== selected.value && onChange && onChange(selected.value || undefined);
         }, [defaultOptions, value]);
 
         useKeyboardNavigation({

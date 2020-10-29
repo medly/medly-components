@@ -1,4 +1,5 @@
 export * from './isMobile';
+export * from './debounce';
 export * from './parseToDate';
 export * from './positionalSpacing';
 export * from './ReactHelper';
