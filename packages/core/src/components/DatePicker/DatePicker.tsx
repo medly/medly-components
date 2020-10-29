@@ -26,7 +26,6 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 ...restProps
             } = props,
             id = props.id || props.label.toLowerCase().replace(/\s/g, '') || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
-            mobile = isMobile,
             displayFormat = isMobile ? 'yyyy-MM-dd' : props.displayFormat,
             date: Date | null = useMemo(
                 () => (value instanceof Date ? value : typeof value === 'string' ? parseToDate(value, displayFormat) : null),
@@ -41,15 +40,11 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
         useEffect(() => {
-            date &&
-                (mobile
-                    ? setTextValue(format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), '$&'))
-                    : setTextValue(format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), ' $& ')));
+            date && setTextValue(format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), isMobile ? '$&' : ' $& '));
         }, [date, displayFormat]);
         const onTextChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
-                    const date = event.target.value;
-                    const inputValue = date,
+                    const inputValue = event.target.value,
                         parsedDate = parseToDate(inputValue, displayFormat);
                     setTextValue(inputValue);
                     if (parsedDate.toString() !== 'Invalid Date') {
@@ -78,11 +73,11 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
             ),
             validate = useCallback(
                 (event: React.FocusEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
-                    const date = event.target.value;
-                    date &&
-                        parseToDate(date, displayFormat).toString() === 'Invalid Date' &&
+                    const inputValue = event.target.value;
+                    inputValue &&
+                        parseToDate(inputValue, displayFormat).toString() === 'Invalid Date' &&
                         setTimeout(() => setErrorMessage('Enter valid date'), 0);
-                    props.required && !date && setTimeout(() => setErrorMessage('Please fill in this field'), 0);
+                    props.required && !inputValue && setTimeout(() => setErrorMessage('Please fill in this field'), 0);
                     eventFunc && eventFunc(event);
                 },
                 [props.required, displayFormat]
@@ -123,22 +118,24 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
         );
 
         const sharedProps = {
-            errorText: errorText || builtInErrorMessage,
-            id: id,
-            ref: inputRef,
-            required: required,
-            fullWidth,
-            size: size,
-            disabled: disabled,
-            value: textValue,
-            onChange: onTextChange,
-            ...{ ...restProps, onBlur, onFocus, onInvalid }
-        };
-        const mobileProps = { type: 'date' };
-        const desktopProps = {
-            suffix: suffixEl,
-            mask: displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()
-        };
+                errorText: errorText || builtInErrorMessage,
+                id: id,
+                ref: inputRef,
+                required: required,
+                fullWidth,
+                size: size,
+                disabled: disabled,
+                value: textValue,
+                onChange: onTextChange,
+                ...{ ...restProps, onBlur, onFocus, onInvalid }
+            },
+            mobileProps = { ...sharedProps, type: 'date' },
+            desktopProps = {
+                ...sharedProps,
+                suffix: suffixEl,
+                mask: displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()
+            };
+
         return (
             <Wrapper
                 id={`${id}-datepicker-wrapper`}
@@ -149,7 +146,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 className={className}
                 placement={popoverPlacement}
             >
-                <TextField {...(mobile ? { ...mobileProps } : { ...desktopProps })} {...sharedProps} />
+                <TextField {...(isMobile ? mobileProps : desktopProps)} />
                 {showCalendar && (
                     <Calendar
                         id={`${id}-calendar`}
