@@ -14,7 +14,6 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 value,
                 onChange,
                 size,
-                displayFormat,
                 fullWidth,
                 minWidth,
                 required,
@@ -24,10 +23,11 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 popoverPlacement,
                 minSelectableDate,
                 maxSelectableDate,
-                mobile,
                 ...restProps
             } = props,
             id = props.id || props.label.toLowerCase().replace(/\s/g, '') || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
+            mobile = isMobile,
+            displayFormat = isMobile ? 'yyyy-MM-dd' : props.displayFormat,
             date: Date | null = useMemo(
                 () => (value instanceof Date ? value : typeof value === 'string' ? parseToDate(value, displayFormat) : null),
                 [value, displayFormat]
@@ -41,18 +41,11 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
         useEffect(() => {
-            date && setTextValue(format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), ' $& '));
+            date && setTextValue(format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), '$&'));
         }, [date, displayFormat]);
-        const convertDate = (d: string) => {
-            if (d === '') {
-                return undefined;
-            }
-            const [year, month, day] = d.split('-');
-            return month + '/' + day + '/' + year;
-        };
         const onTextChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
-                    const date = mobile ? convertDate(event.currentTarget.value) : event.currentTarget.value;
+                    const date = event.currentTarget.value;
                     const inputValue = date,
                         parsedDate = parseToDate(inputValue, displayFormat);
                     setTextValue(inputValue);
@@ -82,7 +75,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
             ),
             validate = useCallback(
                 (event: React.FocusEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
-                    const date = mobile ? convertDate(event.currentTarget.value) : event.currentTarget.value;
+                    const date = event.currentTarget.value;
                     date &&
                         parseToDate(date, displayFormat).toString() === 'Invalid Date' &&
                         setTimeout(() => setErrorMessage('Enter valid date'), 0);
@@ -115,15 +108,6 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 },
                 [onChange]
             );
-        const handleOnChangeNative = useCallback(
-            (event: FormEvent<HTMLInputElement>) => {
-                const convertedDate = convertDate(event.currentTarget.value);
-                setTextValue(convertedDate);
-                setErrorMessage('');
-                parseToDate(convertedDate, displayFormat);
-            },
-            [setErrorMessage, parseToDate]
-        );
         useOuterClickNotifier(() => {
             setActive(false);
             toggleCalendar(false);
@@ -134,15 +118,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 <DateRangeIcon id={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
             </DateIcon>
         );
-        const mobileValueFormat = 'yyyy-MM-dd';
-        function mobileValue() {
-            if (textValue) {
-                const textValueAsDate = parseToDate(textValue, displayFormat);
-                return format(textValueAsDate, mobileValueFormat);
-            } else {
-                return null;
-            }
-        }
+
         const sharedProps = {
             errorText: errorText || builtInErrorMessage,
             id: id,
@@ -151,13 +127,13 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
             fullWidth,
             size: size,
             disabled: disabled,
-            onChange: onTextChange,
             ...{ ...restProps, onBlur, onFocus, onInvalid }
         };
-        const mobileProps = { value: mobileValue() };
+        const mobileProps = { type: 'date', value: textValue, onChange: onTextChange };
         const desktopProps = {
             suffix: suffixEl,
             value: textValue,
+            onChange: onTextChange,
             mask: displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()
         };
         return (
@@ -193,7 +169,6 @@ DatePicker.defaultProps = {
     disabled: false,
     required: false,
     fullWidth: false,
-    mobile: isMobile,
     minSelectableDate: new Date(1901, 0, 1),
     maxSelectableDate: new Date(2100, 11, 1),
     popoverPlacement: 'bottom-start'

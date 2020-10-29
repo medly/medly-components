@@ -46,8 +46,6 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     errorText?: string;
     /** Popover placement */
     popoverPlacement?: Placement;
-    /** Mobile or Desktop */
-    mobile?: boolean;
 }
 
 export interface StyleProps extends Pick<Props, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size'> {
