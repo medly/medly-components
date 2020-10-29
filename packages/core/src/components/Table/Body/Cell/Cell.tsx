@@ -23,7 +23,7 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
                 <LoadingDiv ref={childRef} />
             ) : CustomComponent ? (
                 <CustomComponentWrapper ref={childRef}>
-                    <CustomComponent {...{ data, rowId, disabled: isRowClickDisabled, rowData }} />
+                    <CustomComponent {...{ data: formattedData, rowId, disabled: isRowClickDisabled, rowData }} />
                 </CustomComponentWrapper>
             ) : (
                 <Text ref={childRef} textVariant="body2" title={formattedData}>
