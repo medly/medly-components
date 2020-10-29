@@ -875,7 +875,6 @@ exports[`Form should render properly with initial state 1`] = `
 .c7 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -3215,7 +3214,6 @@ exports[`Form should render properly without initial state 1`] = `
 .c10 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;

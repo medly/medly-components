@@ -187,7 +187,6 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -610,7 +609,6 @@ exports[`TextField should render properly with M size 1`] = `
 .c6 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -1322,7 +1320,6 @@ exports[`TextField should render properly with default props 1`] = `
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -1632,7 +1629,6 @@ exports[`TextField with filled variant and with label should render default stat
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -1922,7 +1918,6 @@ exports[`TextField with filled variant and with label should render disabled sta
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -2234,7 +2229,6 @@ exports[`TextField with filled variant and with label should render focus state 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -2544,7 +2538,6 @@ exports[`TextField with filled variant and without label should render default s
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -2828,7 +2821,6 @@ exports[`TextField with filled variant and without label should render disabled 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -3134,7 +3126,6 @@ exports[`TextField with filled variant and without label should render focus sta
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -3485,7 +3476,6 @@ exports[`TextField with filled variant should render error state properly  1`] =
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -3847,7 +3837,6 @@ exports[`TextField with filled variant should render error state properly with a
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -4542,7 +4531,6 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 .c6 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -4885,7 +4873,6 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -5218,7 +5205,7 @@ exports[`TextField with fusion variant and with label should render default stat
 .c3 {
   color: #13181D;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -5298,9 +5285,9 @@ exports[`TextField with fusion variant and with label should render default stat
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
+  -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
@@ -5521,7 +5508,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
 .c3 {
   color: #13181D;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -5601,9 +5588,9 @@ exports[`TextField with fusion variant and with label should render disabled sta
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
+  -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
@@ -5847,7 +5834,7 @@ exports[`TextField with fusion variant and with label should render focus state 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -5927,9 +5914,9 @@ exports[`TextField with fusion variant and with label should render focus state 
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
+  -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
@@ -6171,7 +6158,7 @@ exports[`TextField with fusion variant and without label should render default s
 .c3 {
   color: #13181D;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -6247,9 +6234,9 @@ exports[`TextField with fusion variant and without label should render default s
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
+  -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
@@ -6468,7 +6455,7 @@ exports[`TextField with fusion variant and without label should render disabled 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -6544,9 +6531,9 @@ exports[`TextField with fusion variant and without label should render disabled 
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
+  -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
@@ -6788,7 +6775,7 @@ exports[`TextField with fusion variant and without label should render focus sta
 .c3 {
   color: #13181D;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -6864,9 +6851,9 @@ exports[`TextField with fusion variant and without label should render focus sta
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
+  -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
@@ -7137,7 +7124,7 @@ exports[`TextField with fusion variant should render error state properly  1`] =
 .c3 {
   color: #13181D;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -7217,9 +7204,9 @@ exports[`TextField with fusion variant should render error state properly  1`] =
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
+  -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
@@ -7502,7 +7489,7 @@ exports[`TextField with fusion variant should render error state properly with a
 .c3 {
   color: #13181D;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -7582,9 +7569,9 @@ exports[`TextField with fusion variant should render error state properly with a
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
+  -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
@@ -7960,9 +7947,9 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-120%) scale(0.67);
-  -ms-transform: translateY(-120%) scale(0.67);
-  transform: translateY(-120%) scale(0.67);
+  -webkit-transform: translateX(-0.2rem) translateY(-120%) scale(0.67);
+  -ms-transform: translateX(-0.2rem) translateY(-120%) scale(0.67);
+  transform: translateX(-0.2rem) translateY(-120%) scale(0.67);
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
@@ -8223,7 +8210,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 .c6 {
   color: #13181D;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -8303,9 +8290,9 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 
 .c6:not(:placeholder-shown) ~ .c7,
 .c6:focus ~ .c7 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
+  -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
@@ -8580,7 +8567,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -8660,9 +8647,9 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
+  -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
@@ -8921,7 +8908,6 @@ exports[`TextField with outlined variant and with label should render default st
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -9216,7 +9202,6 @@ exports[`TextField with outlined variant and with label should render disabled s
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -9542,7 +9527,6 @@ exports[`TextField with outlined variant and with label should render focus stat
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -9866,7 +9850,6 @@ exports[`TextField with outlined variant and without label should render default
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -10155,7 +10138,6 @@ exports[`TextField with outlined variant and without label should render disable
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -10475,7 +10457,6 @@ exports[`TextField with outlined variant and without label should render focus s
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -10840,7 +10821,6 @@ exports[`TextField with outlined variant should render error state properly  1`]
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -11216,7 +11196,6 @@ exports[`TextField with outlined variant should render error state properly with
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -11939,7 +11918,6 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 .c6 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -12296,7 +12274,6 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -12619,7 +12596,6 @@ exports[`TextField without label should render default state properly 1`] = `
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -12923,7 +12899,6 @@ exports[`TextField without label should render focus state properly  1`] = `
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
