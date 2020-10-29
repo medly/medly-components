@@ -12,7 +12,7 @@ const transformLabel = ({ variant, multiline }: StyledProps) => {
 
     if (multiline && variant === 'fusion') {
         return css`
-            transform: translateY(-120%) scale(0.67);
+            transform: translateX(-0.2rem) translateY(-120%) scale(0.67);
             ${fusionLabelStyle};
         `;
     }
@@ -21,7 +21,7 @@ const transformLabel = ({ variant, multiline }: StyledProps) => {
     }
     if (variant === 'fusion') {
         return css`
-            transform: translateY(-135%) scale(0.67);
+            transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
             ${fusionLabelStyle};
         `;
     }
@@ -36,11 +36,11 @@ const styleWithLabel = ({ variant }: StyledProps) => {
 };
 
 const getInputHeight = ({ size, multiline, variant }: StyledProps) => {
-    if (size === 'S' || (size === 'M' && variant === 'fusion')) {
+    if (size === 'S' || (size === 'M' && variant === 'fusion' && multiline)) {
         return '100%';
     } else if (size === 'M' && variant !== 'fusion' && multiline) {
         return '90%';
-    } else {
+    } else if (size === 'M' && variant === 'fusion' && !multiline) {
         return 'auto';
     }
 };
