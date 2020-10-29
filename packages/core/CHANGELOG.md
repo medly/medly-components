@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.32.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.32.2...@medly-components/core@1.32.3) (2020-10-29)
+
+
+### Bug Fixes
+
+* width and height issue in Modal component ([465d4b6](https://github.com/medly/medly-components/commit/465d4b6104a1e879bf739046d0d64b423ed7e99a))
+
+
+
+
+
 ## [1.32.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.32.1...@medly-components/core@1.32.2) (2020-10-29)
 
 
