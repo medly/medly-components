@@ -127,13 +127,13 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
             fullWidth,
             size: size,
             disabled: disabled,
-            ...{ ...restProps, onBlur, onFocus, onInvalid }
-        };
-        const mobileProps = { type: 'date', value: textValue, onChange: onTextChange };
-        const desktopProps = {
-            suffix: suffixEl,
             value: textValue,
             onChange: onTextChange,
+            ...{ ...restProps, onBlur, onFocus, onInvalid }
+        };
+        const mobileProps = { type: 'date' };
+        const desktopProps = {
+            suffix: suffixEl,
             mask: displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()
         };
         return (
