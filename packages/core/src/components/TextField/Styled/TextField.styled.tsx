@@ -4,28 +4,19 @@ import { Label } from './Label.styled';
 import { MaskPlaceholder } from './MaskPlaceholder.styled';
 
 const transformLabel = ({ variant, multiline }: StyledProps) => {
-    const fusionLabelStyle = `            
-        background-color: white;
-        padding: 0 0.4rem;
-        z-index: 1;
-        font-weight: 500`;
-
-    if (multiline && variant === 'fusion') {
-        return css`
-            transform: translateY(-120%) scale(0.67);
-            ${fusionLabelStyle};
-        `;
-    }
-    if (multiline && variant !== 'fusion') {
-        return 'transform: translateY(-50%) scale(0.75)';
-    }
     if (variant === 'fusion') {
         return css`
-            transform: translateY(-135%) scale(0.67);
-            ${fusionLabelStyle};
+            background-color: white;
+            padding: 0 0.4rem;
+            z-index: 1;
+            font-weight: 500;
+            transform: translateY(${multiline ? '-120%' : '-135%'}) scale(0.67);
+        `;
+    } else {
+        return css`
+            transform: translateY(${multiline ? '-50%' : '-87%'}) scale(0.75);
         `;
     }
-    return 'transform: translateY(-87%) scale(0.75)';
 };
 
 const styleWithLabel = ({ variant }: StyledProps) => {
@@ -41,6 +32,7 @@ export const Input = styled('input')<StyledProps>`
     height: ${({ multiline, variant }) =>
         multiline && variant !== 'fusion' ? '100%' : multiline && variant === 'fusion' ? '95%' : 'auto'};
     margin: ${({ multiline, variant, size }) => (multiline && variant !== 'fusion' && size === 'M' ? '1.6rem 0 0 0' : 0)};
+    padding: 0;
     box-sizing: border-box;
     transition: all 100ms ease-out;
     background-color: transparent;
@@ -75,7 +67,7 @@ export const Input = styled('input')<StyledProps>`
     }
 
     &:not(:placeholder-shown) ~ ${Label}, &:focus ~ ${Label} {
-        opacity: ${({ size }) => size === 'S' && '0'};
+        opacity: ${({ size }) => size === 'S' && 0};
         ${({ size }) => size === 'M' && transformLabel};
     }
 

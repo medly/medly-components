@@ -877,6 +877,7 @@ exports[`Form should render properly with initial state 1`] = `
   width: 100%;
   height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -3219,6 +3220,7 @@ exports[`Form should render properly without initial state 1`] = `
   width: 100%;
   height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
