@@ -123,6 +123,12 @@ exports[`Modal component should render properly when it is open 1`] = `
   -webkit-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   height: 4rem;
   width: 4rem;
   padding: 1rem;
