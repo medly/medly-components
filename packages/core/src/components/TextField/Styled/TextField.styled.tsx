@@ -10,7 +10,7 @@ const transformLabel = ({ variant, multiline }: StyledProps) => {
             padding: 0 0.4rem;
             z-index: 1;
             font-weight: 500;
-            transform: translateY(${multiline ? '-120%' : '-135%'}) scale(0.67);
+            transform: translateX(-0.2rem) translateY(${multiline ? '-120%' : '-135%'}) scale(0.67);
         `;
     } else {
         return css`
@@ -18,6 +18,9 @@ const transformLabel = ({ variant, multiline }: StyledProps) => {
         `;
     }
 };
+
+const getInputHeight = ({ size, multiline, variant }: StyledProps) =>
+    multiline ? (size === 'M' ? (variant === 'fusion' ? '100%' : '90%') : '100%') : undefined;
 
 const styleWithLabel = ({ variant }: StyledProps) => {
     return css`
@@ -29,10 +32,9 @@ const styleWithLabel = ({ variant }: StyledProps) => {
 export const Input = styled('input')<StyledProps>`
     color: ${({ variant, theme }) => theme.textField[variant].default.textColor};
     width: 100%;
-    height: ${({ multiline, variant }) =>
-        multiline && variant !== 'fusion' ? '100%' : multiline && variant === 'fusion' ? '95%' : 'auto'};
     margin: ${({ multiline, variant, size }) => (multiline && variant !== 'fusion' && size === 'M' ? '1.6rem 0 0 0' : 0)};
     padding: 0;
+    height: ${getInputHeight};
     box-sizing: border-box;
     transition: all 100ms ease-out;
     background-color: transparent;

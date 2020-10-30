@@ -201,7 +201,6 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 .c5 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -585,7 +584,6 @@ exports[`SingleSelect component should render properly when isSearchable is true
 .c5 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -1147,7 +1145,6 @@ exports[`SingleSelect component should take passed max width 1`] = `
 .c5 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -1697,7 +1694,6 @@ exports[`SingleSelect component with filled variant should render disabled state
 .c5 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -2238,7 +2234,6 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 .c5 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -2631,7 +2626,6 @@ exports[`SingleSelect component with filled variant should render with label pro
 .c5 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -3911,7 +3905,6 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 .c5 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -4466,7 +4459,6 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 .c5 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -4873,7 +4865,6 @@ exports[`SingleSelect component with outlined variant should render with label p
 .c5 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

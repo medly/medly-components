@@ -161,7 +161,6 @@ exports[`MultiSelect component should render correctly with all the props given 
 .c5 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -681,7 +680,6 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 .c5 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
