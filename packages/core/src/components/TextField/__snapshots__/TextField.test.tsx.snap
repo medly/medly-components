@@ -187,6 +187,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -609,6 +610,7 @@ exports[`TextField should render properly with M size 1`] = `
 .c6 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -1320,6 +1322,7 @@ exports[`TextField should render properly with default props 1`] = `
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -1629,6 +1632,7 @@ exports[`TextField with filled variant and with label should render default stat
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -1918,6 +1922,7 @@ exports[`TextField with filled variant and with label should render disabled sta
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -2229,6 +2234,7 @@ exports[`TextField with filled variant and with label should render focus state 
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -2538,6 +2544,7 @@ exports[`TextField with filled variant and without label should render default s
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -2821,6 +2828,7 @@ exports[`TextField with filled variant and without label should render disabled 
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -3126,6 +3134,7 @@ exports[`TextField with filled variant and without label should render focus sta
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -3476,6 +3485,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -3837,6 +3847,7 @@ exports[`TextField with filled variant should render error state properly with a
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -4531,6 +4542,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 .c6 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -4873,6 +4885,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -8908,6 +8921,7 @@ exports[`TextField with outlined variant and with label should render default st
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -9202,6 +9216,7 @@ exports[`TextField with outlined variant and with label should render disabled s
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -9527,6 +9542,7 @@ exports[`TextField with outlined variant and with label should render focus stat
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -9850,6 +9866,7 @@ exports[`TextField with outlined variant and without label should render default
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -10138,6 +10155,7 @@ exports[`TextField with outlined variant and without label should render disable
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -10457,6 +10475,7 @@ exports[`TextField with outlined variant and without label should render focus s
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -10821,6 +10840,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -11196,6 +11216,7 @@ exports[`TextField with outlined variant should render error state properly with
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -11918,6 +11939,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 .c6 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -12274,6 +12296,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -12596,6 +12619,7 @@ exports[`TextField without label should render default state properly 1`] = `
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -12899,6 +12923,7 @@ exports[`TextField without label should render focus state properly  1`] = `
 .c3 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;

@@ -12588,6 +12588,7 @@ exports[`DatePicker component should render properly when value is of date type 
 .c6 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
@@ -12981,6 +12982,7 @@ exports[`DatePicker component should render properly when value is of string typ
 .c6 {
   color: #13181D;
   width: 100%;
+  height: auto;
   margin: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
