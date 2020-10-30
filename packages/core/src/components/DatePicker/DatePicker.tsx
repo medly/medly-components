@@ -122,7 +122,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 id: id,
                 ref: inputRef,
                 required: required,
-                fullWidth,
+                fullWidth: true,
                 size: size,
                 disabled: disabled,
                 value: textValue,
