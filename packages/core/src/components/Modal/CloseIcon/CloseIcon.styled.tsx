@@ -11,8 +11,10 @@ const getStyle = ({ styleType }: { styleType: 'default' | 'hovered' | 'pressed' 
 `;
 
 export const CloseIcon = styled(ClearIcon)`
-    /* translate 3d fixes a bug where the close icon does not appear during the popup animation */
+    /* the translate 3d, perspective, and backface-visibility properties fix a bug where the close icon does not appear during the popup animation */
     transform: translate3d(0, 0, 0);
+    perspective: 1000;
+    backface-visibility: hidden;
     height: 4rem;
     width: 4rem;
     padding: 1rem;
