@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.14](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.13...@medly-components/forms@1.12.14) (2020-10-30)
+
+
+### Bug Fixes
+
+* height issue in textfield component ([34e4fdb](https://github.com/medly/medly-components/commit/34e4fdbaa6f91a3aa3057d988f1ada2fad5bf7ec))
+
+
+
+
+
 ## [1.12.13](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.12...@medly-components/forms@1.12.13) (2020-10-30)
 
 

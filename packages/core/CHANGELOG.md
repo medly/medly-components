@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.0...@medly-components/core@1.33.1) (2020-10-30)
+
+
+### Bug Fixes
+
+* count issue in Tab component ([4fcf351](https://github.com/medly/medly-components/commit/4fcf351247e54d46e95daf05b366b1b0b3ce2531))
+* height issue in textfield component ([34e4fdb](https://github.com/medly/medly-components/commit/34e4fdbaa6f91a3aa3057d988f1ada2fad5bf7ec))
+
+
+
+
+
 # [1.33.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.32.3...@medly-components/core@1.33.0) (2020-10-30)
 
 
