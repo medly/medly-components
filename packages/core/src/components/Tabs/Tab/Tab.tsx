@@ -22,7 +22,7 @@ export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
                     <Styled.Label id={`${id}-label`} textWeight="Medium" textVariant={tabSize === 'S' ? 'body2' : 'body1'}>
                         {label}
                     </Styled.Label>
-                    {count && (
+                    {count !== undefined && (
                         <Styled.Count id={`${id}-label`} tabSize={tabSize}>
                             {count}
                         </Styled.Count>

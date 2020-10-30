@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/icons",
-    "version": "1.4.7",
+    "version": "1.4.8",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
@@ -22,6 +22,6 @@
     },
     "dependencies": {
         "@medly-components/theme": "1.24.0",
-        "@medly-components/utils": "1.6.0"
+        "@medly-components/utils": "1.6.1"
     }
 }

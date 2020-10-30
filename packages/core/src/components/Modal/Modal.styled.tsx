@@ -57,6 +57,7 @@ export const InnerContainerStyled = styled.div<InnerContainerProps>`
 
     @media (min-width: 768px) {
         overflow: hidden;
+        flex: 1;
 
         &::-webkit-scrollbar-track {
             margin-top: 0;

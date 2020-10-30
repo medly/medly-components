@@ -6,8 +6,6 @@ export const Popup = styled('div')<Props>`
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: calc(100% - 2.4rem);
-    width: 100%;
     position: relative;
     min-height: ${({ minHeight }) => minHeight || '25.6rem'};
     box-shadow: 0 0.4rem 3.2 ${({ theme }) => theme.modal.shadowColor};
@@ -32,6 +30,11 @@ export const Popup = styled('div')<Props>`
         100% {
             transform: translateY(100%);
         }
+    }
+
+    @media (max-width: 767px) {
+        width: 100%;
+        height: calc(100% - 2.4rem);
     }
 
     @media (min-width: 768px) and (max-width: 1439px) {

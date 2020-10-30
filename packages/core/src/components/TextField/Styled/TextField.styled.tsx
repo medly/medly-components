@@ -54,6 +54,7 @@ export const Input = styled('input')<StyledProps>`
     width: 100%;
     height: ${getInputHeight};
     margin: ${({ multiline, variant, size }) => (multiline && variant !== 'fusion' && size === 'M' ? '1.6rem 0 0 0' : 0)};
+    padding: 0;
     box-sizing: border-box;
     transition: all 100ms ease-out;
     background-color: transparent;
@@ -61,7 +62,6 @@ export const Input = styled('input')<StyledProps>`
     text-overflow: ellipsis;
     resize: none;
     z-index: 1;
-    padding: 0;
 
     ${({ isLabelPresent, size, multiline }) => isLabelPresent && size !== 'S' && !multiline && styleWithLabel};
     &,
@@ -89,7 +89,7 @@ export const Input = styled('input')<StyledProps>`
     }
 
     &:not(:placeholder-shown) ~ ${Label}, &:focus ~ ${Label} {
-        opacity: ${({ size }) => size === 'S' && '0'};
+        opacity: ${({ size }) => size === 'S' && 0};
         ${({ size }) => size === 'M' && transformLabel};
     }
 
@@ -98,8 +98,11 @@ export const Input = styled('input')<StyledProps>`
     }
 
     &:-webkit-autofill,
+    &:-moz-autofill,
     &:-webkit-autofill:focus,
-    &:-webkit-autofill:hover {
+    &:-moz-autofill:focus,
+    &:-webkit-autofill:hover,
+    &:-moz-autofill:hover {
         background-color: transparent;
     }
 `;
