@@ -172,7 +172,6 @@ exports[`MultiSelect component should render correctly with all the props given 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -693,7 +692,6 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c5,

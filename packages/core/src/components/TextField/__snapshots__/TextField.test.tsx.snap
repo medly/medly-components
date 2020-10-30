@@ -198,7 +198,6 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -625,7 +624,6 @@ exports[`TextField should render properly with M size 1`] = `
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -1006,7 +1004,6 @@ exports[`TextField should render properly with S size 1`] = `
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c6,
@@ -1345,7 +1342,6 @@ exports[`TextField should render properly with default props 1`] = `
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -1659,7 +1655,6 @@ exports[`TextField with filled variant and with label should render default stat
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -1953,7 +1948,6 @@ exports[`TextField with filled variant and with label should render disabled sta
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -2269,7 +2263,6 @@ exports[`TextField with filled variant and with label should render focus state 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -2583,7 +2576,6 @@ exports[`TextField with filled variant and without label should render default s
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c3,
@@ -2871,7 +2863,6 @@ exports[`TextField with filled variant and without label should render disabled 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c3,
@@ -3181,7 +3172,6 @@ exports[`TextField with filled variant and without label should render focus sta
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c3,
@@ -3536,7 +3526,6 @@ exports[`TextField with filled variant should render error state properly  1`] =
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -3902,7 +3891,6 @@ exports[`TextField with filled variant should render error state properly with a
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -4276,7 +4264,6 @@ exports[`TextField with filled variant should render properly with multiline 1`]
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c3,
@@ -4605,7 +4592,6 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -4952,7 +4938,6 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -5289,7 +5274,6 @@ exports[`TextField with fusion variant and with label should render default stat
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -5359,19 +5343,13 @@ exports[`TextField with fusion variant and with label should render default stat
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-<<<<<<< HEAD
   -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
-=======
->>>>>>> master
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
   font-weight: 500;
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -5602,7 +5580,6 @@ exports[`TextField with fusion variant and with label should render disabled sta
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -5672,19 +5649,13 @@ exports[`TextField with fusion variant and with label should render disabled sta
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-<<<<<<< HEAD
   -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
-=======
->>>>>>> master
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
   font-weight: 500;
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -5938,7 +5909,6 @@ exports[`TextField with fusion variant and with label should render focus state 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -6008,19 +5978,13 @@ exports[`TextField with fusion variant and with label should render focus state 
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-<<<<<<< HEAD
   -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
-=======
->>>>>>> master
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
   font-weight: 500;
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -6272,7 +6236,6 @@ exports[`TextField with fusion variant and without label should render default s
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c3,
@@ -6338,19 +6301,13 @@ exports[`TextField with fusion variant and without label should render default s
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-<<<<<<< HEAD
   -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
-=======
->>>>>>> master
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
   font-weight: 500;
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -6579,7 +6536,6 @@ exports[`TextField with fusion variant and without label should render disabled 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c3,
@@ -6645,19 +6601,13 @@ exports[`TextField with fusion variant and without label should render disabled 
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-<<<<<<< HEAD
   -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
-=======
->>>>>>> master
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
   font-weight: 500;
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -6909,7 +6859,6 @@ exports[`TextField with fusion variant and without label should render focus sta
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c3,
@@ -6975,19 +6924,13 @@ exports[`TextField with fusion variant and without label should render focus sta
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-<<<<<<< HEAD
   -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
-=======
->>>>>>> master
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
   font-weight: 500;
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -7268,7 +7211,6 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -7338,19 +7280,13 @@ exports[`TextField with fusion variant should render error state properly  1`] =
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-<<<<<<< HEAD
   -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
-=======
->>>>>>> master
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
   font-weight: 500;
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -7643,7 +7579,6 @@ exports[`TextField with fusion variant should render error state properly with a
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -7713,19 +7648,13 @@ exports[`TextField with fusion variant should render error state properly with a
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-<<<<<<< HEAD
   -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
-=======
->>>>>>> master
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
   font-weight: 500;
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -8035,7 +7964,6 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c3,
@@ -8101,19 +8029,13 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-<<<<<<< HEAD
   -webkit-transform: translateX(-0.2rem) translateY(-120%) scale(0.67);
   -ms-transform: translateX(-0.2rem) translateY(-120%) scale(0.67);
   transform: translateX(-0.2rem) translateY(-120%) scale(0.67);
-=======
->>>>>>> master
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
   font-weight: 500;
-  -webkit-transform: translateY(-120%) scale(0.67);
-  -ms-transform: translateY(-120%) scale(0.67);
-  transform: translateY(-120%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -8384,7 +8306,6 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -8454,19 +8375,13 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 
 .c6:not(:placeholder-shown) ~ .c7,
 .c6:focus ~ .c7 {
-<<<<<<< HEAD
   -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
-=======
->>>>>>> master
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
   font-weight: 500;
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
 }
 
 .c6:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -8751,7 +8666,6 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -8821,19 +8735,13 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-<<<<<<< HEAD
   -webkit-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.2rem) translateY(-135%) scale(0.67);
-=======
->>>>>>> master
   background-color: white;
   padding: 0 0.4rem;
   z-index: 1;
   font-weight: 500;
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -9102,7 +9010,6 @@ exports[`TextField with outlined variant and with label should render default st
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -9401,7 +9308,6 @@ exports[`TextField with outlined variant and with label should render disabled s
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -9731,7 +9637,6 @@ exports[`TextField with outlined variant and with label should render focus stat
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -10059,7 +9964,6 @@ exports[`TextField with outlined variant and without label should render default
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c3,
@@ -10352,7 +10256,6 @@ exports[`TextField with outlined variant and without label should render disable
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c3,
@@ -10676,7 +10579,6 @@ exports[`TextField with outlined variant and without label should render focus s
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c3,
@@ -11045,7 +10947,6 @@ exports[`TextField with outlined variant should render error state properly  1`]
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -11425,7 +11326,6 @@ exports[`TextField with outlined variant should render error state properly with
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -11813,7 +11713,6 @@ exports[`TextField with outlined variant should render properly with multiline 1
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c3,
@@ -12156,7 +12055,6 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -12517,7 +12415,6 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -12844,7 +12741,6 @@ exports[`TextField without label should render default state properly 1`] = `
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c3,
@@ -13152,7 +13048,6 @@ exports[`TextField without label should render focus state properly  1`] = `
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;

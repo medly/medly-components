@@ -12599,7 +12599,6 @@ exports[`DatePicker component should render properly when value is of date type 
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -12997,7 +12996,6 @@ exports[`DatePicker component should render properly when value is of string typ
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  padding: 0;
 }
 
 .c6,
