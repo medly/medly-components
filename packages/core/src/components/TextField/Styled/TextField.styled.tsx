@@ -36,13 +36,17 @@ const styleWithLabel = ({ variant }: StyledProps) => {
 };
 
 const getInputHeight = ({ size, multiline, variant }: StyledProps) => {
-    if (size === 'S' || (size === 'M' && variant === 'fusion' && multiline)) {
-        return '100%';
-    } else if (size === 'M' && variant !== 'fusion' && multiline) {
-        return '90%';
-    } else if (size === 'M' && variant === 'fusion' && !multiline) {
-        return 'auto';
-    }
+    if (size === 'M') {
+        if (multiline) {
+            if (variant !== 'fusion') {
+                return '90%'
+            } else if (variant === 'fusion') {
+                return '100%'
+            } 
+        } else {
+            return 'auto'
+        }
+    } else { return '100%'}
 };
 
 export const Input = styled('input')<StyledProps>`
