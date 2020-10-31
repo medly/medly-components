@@ -10,7 +10,7 @@ const transformLabel = ({ variant, multiline }: StyledProps) => {
             padding: 0 0.4rem;
             z-index: 1;
             font-weight: 500;
-            transform: translateX(-0.2rem) translateY(${multiline ? '-120%' : '-135%'}) scale(0.67);
+            transform: translateX(-0.4rem) translateY(${multiline ? '-120%' : '-135%'}) scale(0.67);
         `;
     } else {
         return css`
