@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.1...@medly-components/core@1.33.2) (2020-11-03)
+
+
+### Bug Fixes
+
+* **core:** small update to transform label function for fusion variant ([52b135c](https://github.com/medly/medly-components/commit/52b135c8599806d24cf5e76d453734626a2323a9))
+
+
+
+
+
 ## [1.33.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.0...@medly-components/core@1.33.1) (2020-10-30)
 
 
