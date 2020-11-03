@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/forms",
-    "version": "1.12.14",
+    "version": "1.12.15",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",

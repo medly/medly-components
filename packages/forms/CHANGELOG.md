@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.15](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.14...@medly-components/forms@1.12.15) (2020-11-03)
+
+
+### Bug Fixes
+
+* initialState issue in form component ([6af3f6f](https://github.com/medly/medly-components/commit/6af3f6fbdbe39b98e338940ba6e289e94373a26c))
+
+
+
+
+
 ## [1.12.14](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.13...@medly-components/forms@1.12.14) (2020-10-30)
 
 
