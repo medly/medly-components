@@ -3,8 +3,7 @@ export const createDottedKeyObject = (obj: { [key: string]: any }, parentKey = '
 
     Object.keys(obj).forEach(key => {
         const keyName = parentKey ? `${parentKey}.${key}` : key;
-
-        if (typeof obj[key] === 'object' && !(obj[key] instanceof Array) && !(obj[key] instanceof Date)) {
+        if (obj[key] && obj[key] !== null && typeof obj[key] === 'object' && !(obj[key] instanceof Array) && !(obj[key] instanceof Date)) {
             newObj = { ...newObj, ...createDottedKeyObject(obj[key], keyName) };
         } else {
             newObj[keyName] = obj[key];
