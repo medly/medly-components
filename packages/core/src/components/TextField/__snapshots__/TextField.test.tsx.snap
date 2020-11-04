@@ -5329,7 +5329,7 @@ exports[`TextField with fusion variant and with label should render default stat
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
@@ -5634,7 +5634,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
@@ -5962,7 +5962,7 @@ exports[`TextField with fusion variant and with label should render focus state 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
@@ -6284,7 +6284,7 @@ exports[`TextField with fusion variant and without label should render default s
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
@@ -6583,7 +6583,7 @@ exports[`TextField with fusion variant and without label should render disabled 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
@@ -6905,7 +6905,7 @@ exports[`TextField with fusion variant and without label should render focus sta
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
@@ -7260,7 +7260,7 @@ exports[`TextField with fusion variant should render error state properly  1`] =
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
@@ -7627,7 +7627,7 @@ exports[`TextField with fusion variant should render error state properly with a
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
@@ -8008,7 +8008,7 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
   -webkit-transform: translateX(-0.4rem) translateY(-120%) scale(0.67);
@@ -8353,7 +8353,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 .c6:not(:placeholder-shown) ~ .c7,
 .c6:focus ~ .c7 {
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
@@ -8712,7 +8712,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
