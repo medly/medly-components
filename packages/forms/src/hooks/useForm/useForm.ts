@@ -11,7 +11,9 @@ export const useForm = (initialState: object): UseFormResult => {
     const [formKey, setFormKey] = useState(0);
 
     useUpdateEffect(() => {
-        setValues(createDottedKeyObject(initialState));
+        if (false) {
+            setValues(createDottedKeyObject(initialState));
+        }
     }, [initialState]);
 
     const addErrorMessage = useCallback((key: string, message: string) => {
