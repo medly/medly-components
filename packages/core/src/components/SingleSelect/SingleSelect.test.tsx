@@ -177,6 +177,24 @@ describe('SingleSelect component', () => {
         expect(mockOnChange).toHaveBeenCalledWith('Dummy1');
     });
 
+    it('should call onChange with input value if input value matches any option label', () => {
+        const mockOnChange = jest.fn();
+        render(<SingleSelect options={options} onChange={mockOnChange} />);
+
+        fireEvent.change(screen.getByRole('textbox'), { target: { value: 'Dummy1' } });
+        expect(mockOnChange).toHaveBeenCalledWith('Dummy1');
+    });
+
+    it('should not call onChange with input value when options are visible even if input value matches any option label ', async () => {
+        const mockOnChange = jest.fn();
+        render(<SingleSelect options={options} onChange={mockOnChange} />);
+
+        fireEvent.click(screen.getByRole('textbox'));
+        await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        fireEvent.change(screen.getByRole('textbox'), { target: { value: 'Dummy1' } });
+        expect(mockOnChange).not.toHaveBeenCalledWith('Dummy1');
+    });
+
     it('should show the nested options on click on the option with nested option', () => {
         const mockOnChange = jest.fn(),
             { container } = render(<SingleSelect options={options} onChange={mockOnChange} includesNestedOptions />);
