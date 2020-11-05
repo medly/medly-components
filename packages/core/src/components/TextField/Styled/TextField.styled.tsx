@@ -7,7 +7,7 @@ const transformLabel = ({ variant, multiline }: StyledProps) => {
     if (variant === 'fusion') {
         return css`
             background-color: white;
-            padding: 0 0.4rem;
+            padding: 0 0.5rem;
             z-index: 1;
             font-weight: 500;
             transform: translateX(-0.4rem) translateY(${multiline ? '-120%' : '-135%'}) scale(0.67);
