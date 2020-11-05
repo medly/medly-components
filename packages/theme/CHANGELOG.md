@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.24.1](https://github.com/medly/medly-components/compare/@medly-components/theme@1.24.0...@medly-components/theme@1.24.1) (2020-11-05)
+
+
+### Bug Fixes
+
+* autofill color issue in textField component ([e89d56b](https://github.com/medly/medly-components/commit/e89d56bae8892ac25a734744809f59a20ab9126e))
+
+
+
+
+
 # [1.24.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.23.1...@medly-components/theme@1.24.0) (2020-10-28)
 
 

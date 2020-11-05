@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.2...@medly-components/core@1.33.3) (2020-11-05)
+
+
+### Bug Fixes
+
+* autofill color issue in textField component ([e89d56b](https://github.com/medly/medly-components/commit/e89d56bae8892ac25a734744809f59a20ab9126e))
+* autofill option issue in singleSelect component ([f9d637b](https://github.com/medly/medly-components/commit/f9d637bc52fff3774c3fdfb4505375e32ed4009b))
+
+
+
+
+
 ## [1.33.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.1...@medly-components/core@1.33.2) (2020-11-03)
 
 

@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/core",
-    "version": "1.33.2",
+    "version": "1.33.3",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
@@ -19,9 +19,9 @@
     },
     "dependencies": {
         "@datepicker-react/styled": "^2.3.0",
-        "@medly-components/icons": "1.4.8",
-        "@medly-components/theme": "1.24.0",
-        "@medly-components/utils": "1.6.1",
+        "@medly-components/icons": "1.4.9",
+        "@medly-components/theme": "1.24.1",
+        "@medly-components/utils": "1.6.2",
         "effector": "^20.16.1",
         "effector-react": "^20.7.4",
         "polished": "^3.6.2",
