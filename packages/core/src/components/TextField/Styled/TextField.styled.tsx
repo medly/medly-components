@@ -25,7 +25,7 @@ const getInputHeight = ({ size, multiline, variant }: StyledProps) =>
 const styleWithLabel = ({ variant }: StyledProps) => {
     return css`
         align-self: flex-end;
-        padding-bottom: ${variant === 'filled' ? '0.7rem' : variant === 'fusion' ? '1.3rem' : '0.6rem'};
+        margin-bottom: ${variant === 'filled' ? '0.7rem' : variant === 'fusion' ? '1.3rem' : '0.6rem'};
     `;
 };
 
@@ -75,14 +75,5 @@ export const Input = styled('input')<StyledProps>`
 
     &:not(:placeholder-shown) ~ ${MaskPlaceholder} {
         opacity: 1;
-    }
-
-    &:-webkit-autofill,
-    &:-moz-autofill,
-    &:-webkit-autofill:focus,
-    &:-moz-autofill:focus,
-    &:-webkit-autofill:hover,
-    &:-moz-autofill:hover {
-        background-color: transparent;
     }
 `;

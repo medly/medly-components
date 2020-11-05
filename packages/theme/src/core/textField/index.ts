@@ -12,7 +12,7 @@ const textField: TextFieldTheme = {
     },
     outlined: {
         default: {
-            bgColor: 'transparent',
+            bgColor: colors.white,
             borderColor: colors.grey[500],
             iconColor: colors.grey[600],
             textColor: colors.black,
@@ -23,14 +23,16 @@ const textField: TextFieldTheme = {
             borderColor: colors.grey[600],
             shadowColor: colors.grey[600]
         },
-        disabled: { labelColor: colors.grey[400], textColor: colors.grey[800], borderColor: colors.grey[300] },
+        disabled: { labelColor: colors.grey[400], textColor: colors.grey[800], borderColor: colors.grey[300], bgColor: colors.white },
         active: {
+            bgColor: colors.white,
             placeholderColor: colors.grey[300],
             borderColor: colors.blue[500],
             labelColor: colors.blue[500],
             shadowColor: colors.blue[500]
         },
         error: {
+            bgColor: colors.white,
             caretColor: colors.red[500],
             placeholderColor: colors.grey[300],
             cursorColor: colors.red[500],

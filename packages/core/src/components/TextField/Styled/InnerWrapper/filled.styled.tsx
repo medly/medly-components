@@ -20,5 +20,8 @@ export const filledStyle = ({ theme, filled, disabled }: InnerWrapperProps) => {
         &:focus-within::after {
             border-width: ${!disabled && `0.2rem`};
         }
+        input {
+            box-shadow: 0 0 0 100000px ${filled.default.bgColor} inset;
+        }
     `;
 };

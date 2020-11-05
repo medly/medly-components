@@ -95,6 +95,10 @@ exports[`MultiSelect component should render correctly with all the props given 
   transition: all 100ms ease-out;
 }
 
+.c3 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c3::after,
 .c3:hover::after {
   border-width: 0.1rem;
@@ -102,7 +106,7 @@ exports[`MultiSelect component should render correctly with all the props given 
 }
 
 .c3 input {
-  color: #435465;
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
 .c3 .c6 {
@@ -174,7 +178,7 @@ exports[`MultiSelect component should render correctly with all the props given 
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c5,
@@ -247,15 +251,6 @@ exports[`MultiSelect component should render correctly with all the props given 
 
 .c5:not(:placeholder-shown) ~ .sc-AxheI {
   opacity: 1;
-}
-
-.c5:-webkit-autofill,
-.c5:-moz-autofill,
-.c5:-webkit-autofill:focus,
-.c5:-moz-autofill:focus,
-.c5:-webkit-autofill:hover,
-.c5:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 .c13 {
@@ -597,6 +592,10 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   border-width: 0.2rem;
 }
 
+.c3 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c3:focus-within,
 .c3:focus-within:hover {
   background-color: #E7F0FF;
@@ -624,6 +623,11 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 .c3:focus-within .sc-AxhCb *,
 .c3:focus-within:hover .sc-AxhCb * {
   fill: #126AFA;
+}
+
+.c3:focus-within input,
+.c3:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -762,15 +766,6 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 
 .c5:not(:placeholder-shown) ~ .sc-AxheI {
   opacity: 1;
-}
-
-.c5:-webkit-autofill,
-.c5:-moz-autofill,
-.c5:-webkit-autofill:focus,
-.c5:-moz-autofill:focus,
-.c5:-webkit-autofill:hover,
-.c5:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 .c11 {

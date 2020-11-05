@@ -10,14 +10,14 @@ import { outlinedStyle } from './outlined.styled';
 
 const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
     cursor: not-allowed;
-    background-color: ${variant === 'filled' ? textField.filled.disabled.bgColor : 'transparent'};
+    background-color: ${textField[variant].disabled.bgColor};
     &::after,
     &:hover::after {
         border-width: 0.1rem;
         border-color: ${textField[variant].disabled.borderColor};
     }
     input {
-        color: ${textField[variant].disabled.textColor};
+        box-shadow: 0 0 0 100000px ${textField[variant].disabled.bgColor} inset;
     }
     ${Label} {
         color: ${textField[variant].disabled.labelColor};
@@ -39,10 +39,11 @@ const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => 
 const activeStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
     &:focus-within,
     &:focus-within:hover {
-        background-color: ${variant === 'filled' ? textField.filled.active.bgColor : 'transparent'};
+        background-color: ${textField[variant].active.bgColor};
         &::after {
             border-color: ${textField[variant].active.borderColor};
         }
+
         ${Label} {
             color: ${textField[variant].active.labelColor};
         }
@@ -52,8 +53,11 @@ const activeStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => cs
                 fill: ${textField[variant].active.labelColor};
             }
         }
-        input::placeholder {
-            color: ${textField[variant].active.placeholderColor};
+        input {
+            box-shadow: 0 0 0 100000px ${textField[variant].active.bgColor} inset;
+            &::placeholder {
+                color: ${textField[variant].active.placeholderColor};
+            }
         }
     }
 `;
@@ -66,7 +70,7 @@ const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) =>
               &:hover,
               &:focus-within,
               &:focus-within:hover {
-                  background-color: ${variant === 'filled' ? textField.filled.error.bgColor : 'transparent'};
+                  background-color: ${textField[variant].error.bgColor};
                   &::after {
                       border-color: ${textField[variant].error.borderColor};
                   }
@@ -83,6 +87,7 @@ const errorStyle = ({ theme: { textField }, variant }: InnerWrapperProps) =>
                       color: ${textField[variant].error.helperTextColor};
                   }
                   input {
+                      box-shadow: 0 0 0 100000px ${textField[variant].error.bgColor} inset;
                       caret-color: ${textField[variant].error.caretColor};
                       &::placeholder {
                           color: ${textField[variant].error.placeholderColor};

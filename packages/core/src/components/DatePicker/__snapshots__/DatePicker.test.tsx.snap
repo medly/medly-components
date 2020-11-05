@@ -12509,6 +12509,10 @@ exports[`DatePicker component should render properly when value is of date type 
   transition: all 100ms ease-out;
 }
 
+.c4 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c4::after,
 .c4:hover::after {
   border-width: 0.1rem;
@@ -12516,7 +12520,7 @@ exports[`DatePicker component should render properly when value is of date type 
 }
 
 .c4 input {
-  color: #435465;
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
 .c4 .c9 {
@@ -12601,7 +12605,7 @@ exports[`DatePicker component should render properly when value is of date type 
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c6,
@@ -12674,15 +12678,6 @@ exports[`DatePicker component should render properly when value is of date type 
 
 .c6:not(:placeholder-shown) ~ .c7 {
   opacity: 1;
-}
-
-.c6:-webkit-autofill,
-.c6:-moz-autofill,
-.c6:-webkit-autofill:focus,
-.c6:-moz-autofill:focus,
-.c6:-webkit-autofill:hover,
-.c6:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 .c12 {
@@ -12902,6 +12897,10 @@ exports[`DatePicker component should render properly when value is of string typ
   transition: all 100ms ease-out;
 }
 
+.c4 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c4::after,
 .c4:hover::after {
   border-width: 0.1rem;
@@ -12909,7 +12908,7 @@ exports[`DatePicker component should render properly when value is of string typ
 }
 
 .c4 input {
-  color: #435465;
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
 .c4 .c9 {
@@ -13066,15 +13065,6 @@ exports[`DatePicker component should render properly when value is of string typ
 
 .c6:not(:placeholder-shown) ~ .c7 {
   opacity: 1;
-}
-
-.c6:-webkit-autofill,
-.c6:-moz-autofill,
-.c6:-webkit-autofill:focus,
-.c6:-moz-autofill:focus,
-.c6:-webkit-autofill:hover,
-.c6:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 .c12 {

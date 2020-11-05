@@ -747,6 +747,10 @@ exports[`Form should render properly with initial state 1`] = `
   border-width: 0.2rem;
 }
 
+.c5 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c5:focus-within,
 .c5:focus-within:hover {
   background-color: #E7F0FF;
@@ -774,6 +778,11 @@ exports[`Form should render properly with initial state 1`] = `
 .c5:focus-within .c61 *,
 .c5:focus-within:hover .c61 * {
   fill: #126AFA;
+}
+
+.c5:focus-within input,
+.c5:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c5:focus-within input::-webkit-input-placeholder,
@@ -888,7 +897,7 @@ exports[`Form should render properly with initial state 1`] = `
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c7,
@@ -961,15 +970,6 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c7:not(:placeholder-shown) ~ .c43 {
   opacity: 1;
-}
-
-.c7:-webkit-autofill,
-.c7:-moz-autofill,
-.c7:-webkit-autofill:focus,
-.c7:-moz-autofill:focus,
-.c7:-webkit-autofill:hover,
-.c7:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 .c13 {
@@ -3089,6 +3089,10 @@ exports[`Form should render properly without initial state 1`] = `
   border-width: 0.2rem;
 }
 
+.c8 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c8:focus-within,
 .c8:focus-within:hover {
   background-color: #E7F0FF;
@@ -3116,6 +3120,11 @@ exports[`Form should render properly without initial state 1`] = `
 .c8:focus-within .c61 *,
 .c8:focus-within:hover .c61 * {
   fill: #126AFA;
+}
+
+.c8:focus-within input,
+.c8:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c8:focus-within input::-webkit-input-placeholder,
@@ -3230,7 +3239,7 @@ exports[`Form should render properly without initial state 1`] = `
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c10,
@@ -3303,15 +3312,6 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c10:not(:placeholder-shown) ~ .c43 {
   opacity: 1;
-}
-
-.c10:-webkit-autofill,
-.c10:-moz-autofill,
-.c10:-webkit-autofill:focus,
-.c10:-moz-autofill:focus,
-.c10:-webkit-autofill:hover,
-.c10:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 .c16 {

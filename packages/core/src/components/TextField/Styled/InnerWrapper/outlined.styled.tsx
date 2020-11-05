@@ -6,6 +6,9 @@ export const outlinedStyle = ({ theme, outlined, disabled, isErrorPresent }: Inn
     return css`
         border-radius: ${theme.spacing.S1};
         background-color: ${outlined.default.bgColor};
+        input {
+            box-shadow: 0 0 0 100000px ${outlined.default.bgColor} inset;
+        }
         &::after {
             content: '';
             box-sizing: border-box;
