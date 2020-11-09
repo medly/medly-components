@@ -17,12 +17,6 @@ export const ExtendedRowCell: React.FC<ExtendedRowCellProps> & WithStyle = React
         expandedRowComponent: ExpandedRowComponent
     } = props;
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
-    const VisibleExpandedRow: React.SFC = props => {
-        if (!isRowExpanded) {
-            return null;
-        }
-        return <Wrapper tableSize={tableSize}>{props.children}</Wrapper>;
-    };
 
     return (
         <>
@@ -34,9 +28,11 @@ export const ExtendedRowCell: React.FC<ExtendedRowCellProps> & WithStyle = React
             />
 
             <ExtendedRowCellStyled onClick={stopPropagation} tableSize={tableSize} isRowExpanded={isRowExpanded}>
-                <VisibleExpandedRow>
-                    <ExpandedRowComponent rowId={rowId} rowData={rowData} disabled={isRowClickDisabled} />
-                </VisibleExpandedRow>
+                {isRowExpanded ? (
+                    <Wrapper tableSize={tableSize}>
+                        <ExpandedRowComponent rowId={rowId} rowData={rowData} disabled={isRowClickDisabled} />
+                    </Wrapper>
+                ) : null}
             </ExtendedRowCellStyled>
         </>
     );
