@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.34.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.34.0...@medly-components/core@1.34.1) (2020-11-10)
+
+
+### Bug Fixes
+
+* type issue in the Cell component ([6f361b9](https://github.com/medly/medly-components/commit/6f361b97968fd3b861ac629a7c0f7c364577a501))
+
+
+
+
+
 # [1.34.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.4...@medly-components/core@1.34.0) (2020-11-10)
 
 
