@@ -12,8 +12,7 @@ export const Popup = styled('div')<Props>`
     box-sizing: border-box;
     border-top-left-radius: 1.6rem;
     border-top-right-radius: 1.6rem;
-    animation: ${({ open, isSmallScreen }) =>
-        isSmallScreen && `${open && isSmallScreen ? 'slideIn' : 'slideOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) `};
+        
     @keyframes slideIn {
         0% {
             transform: translateY(100%);
@@ -35,6 +34,7 @@ export const Popup = styled('div')<Props>`
     @media (max-width: 767px) {
         width: 100%;
         height: calc(100% - 2.4rem);
+        animation: ${({ open }) => `${open ? 'slideIn' : 'slideOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) `};
     }
 
     @media (min-width: 768px) and (max-width: 1439px) {
