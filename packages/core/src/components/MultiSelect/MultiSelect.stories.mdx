@@ -2,21 +2,48 @@ import { MultiSelect } from './MultiSelect';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { boolean, select, text } from '@storybook/addon-knobs';
 import { useState } from 'react';
-import { variants, sizes, options, ThemeInterface } from './MultiSelect.stories';
+import { variants, sizes, options, disabledOptions, ThemeInterface } from './MultiSelect.stories';
 
-<Meta title="Core" component={MultiSelect} />
+<Meta title="Core/MultiSelect" component={MultiSelect} />
 
 # MultiSelect
 
-Basic MultiSelect component
+#### 1. Basic MultiSelect component
 
 <Preview withToolbar>
-    <Story name="MultiSelect">
+    <Story name="Default">
         {() => {
-            const [values, setValues] = useState(['medly pharmacy', 'a pharmacy']);
+            const [values, setValues] = useState(['lorem pharmacy', 'a pharmacy']);
             return (
                 <MultiSelect
                     options={options}
+                    values={values}
+                    onChange={setValues}
+                    size={select('Size', sizes, 'M')}
+                    disabled={boolean('Disabled', false)}
+                    fullWidth={boolean('Full Width', false)}
+                    required={boolean('Required', false)}
+                    label={text('Label', 'Pharmacy')}
+                    placeholder="Search Pharmacy"
+                    isSearchable={boolean('Is Searchable', true)}
+                    helperText={text('Helper Text', 'We will show reports based on Pharmacy')}
+                    errorText={text('Error Text', '')}
+                    variant={select('Variant', variants, 'filled')}
+                />
+            );
+        }}
+    </Story>
+</Preview>
+
+#### 2. MultiSelect component with few disabled option
+
+<Preview withToolbar>
+    <Story name="WithDisabledOptions">
+        {() => {
+            const [values, setValues] = useState(['disabled pharmacy', 'a pharmacy']);
+            return (
+                <MultiSelect
+                    options={disabledOptions}
                     values={values}
                     onChange={setValues}
                     size={select('Size', sizes, 'M')}

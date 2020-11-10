@@ -24,6 +24,12 @@ interface MultiSelectVariant {
     } & { borderRadius: string };
 }
 
+type OptionsChipStyle = {
+    default: string;
+    hovered: string;
+    disabled: string;
+};
+
 export interface MultiSelectTheme {
     filled: MultiSelectVariant;
     fusion: MultiSelectVariant;
@@ -32,6 +38,16 @@ export interface MultiSelectTheme {
         textVariant: {
             S: FontVariants;
             M: FontVariants;
+        };
+        chip: {
+            borderRadius: string;
+            color: OptionsChipStyle;
+            bgColor: OptionsChipStyle;
+            borderColor: OptionsChipStyle;
+            icon: {
+                color: OptionsChipStyle;
+                bgColor: OptionsChipStyle;
+            };
         };
     };
 }

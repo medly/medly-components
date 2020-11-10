@@ -215,21 +215,6 @@ exports[`Form should render properly with initial state 1`] = `
   fill: #607890;
 }
 
-.c67 {
-  overflow: visible;
-  font-size: 2rem;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  cursor: pointer;
-}
-
-.c67 * {
-  fill-opacity: 1;
-  -webkit-transition: all 100ms linear;
-  transition: all 100ms linear;
-  fill: #607890;
-}
-
 .c18 {
   margin: 0;
   color: inherit;
@@ -256,7 +241,7 @@ exports[`Form should render properly with initial state 1`] = `
   text-align: initial;
 }
 
-.c68 {
+.c67 {
   margin: 0;
   color: inherit;
   font-size: 1.8rem;
@@ -269,7 +254,7 @@ exports[`Form should render properly with initial state 1`] = `
   text-align: initial;
 }
 
-.c76 {
+.c75 {
   border: none;
   position: relative;
   -webkit-user-select: none;
@@ -297,65 +282,65 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: center;
 }
 
-.c76 * {
+.c75 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c76:hover {
+.c75:hover {
   cursor: pointer;
 }
 
-.c76:focus {
+.c75:focus {
   outline: none;
 }
 
-.c76:disabled {
+.c75:disabled {
   cursor: not-allowed;
 }
 
-.c76:disabled {
+.c75:disabled {
   color: #98A7B7;
   background: #dfe4e9;
 }
 
-.c76:disabled .c30 * {
+.c75:disabled .c30 * {
   fill: #98A7B7;
 }
 
-.c76:not(:disabled):not(:hover) {
+.c75:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #126AFA;
 }
 
-.c76:not(:disabled):not(:hover) .c30 * {
+.c75:not(:disabled):not(:hover) .c30 * {
   fill: #ffffff;
 }
 
-.c76:not(:disabled):active {
+.c75:not(:disabled):active {
   color: #ffffff;
   background: #0D4AAF;
 }
 
-.c76:not(:disabled):active .c30 * {
+.c75:not(:disabled):active .c30 * {
   fill: #ffffff;
 }
 
-.c76:not(:disabled):not(:active):hover {
+.c75:not(:disabled):not(:active):hover {
   color: #ffffff;
   background: #0F5AD5;
   box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
-.c76:not(:disabled):not(:active):hover .c30 * {
+.c75:not(:disabled):not(:active):hover .c30 * {
   fill: #ffffff;
 }
 
-.c76 .c30 + .c17 {
+.c75 .c30 + .c17 {
   margin-left: 0.8rem;
 }
 
-.c76 .c17 + .c30 {
+.c75 .c17 + .c30 {
   margin-left: 0.8rem;
 }
 
@@ -568,7 +553,7 @@ exports[`Form should render properly with initial state 1`] = `
   border-color: #126AFA;
 }
 
-.c74 {
+.c73 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -588,11 +573,11 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: row;
 }
 
-.c74 * {
+.c73 * {
   cursor: pointer;
 }
 
-.c74:hover .c28 {
+.c73:hover .c28 {
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
   border-color: #0F5AD5;
   background-color: #0F5AD5;
@@ -1342,16 +1327,17 @@ exports[`Form should render properly with initial state 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 1px solid;
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
   cursor: default;
+  border: 1px solid;
   border-radius: 2rem;
-  padding: 0.2rem 0.5rem 0.2rem 0.9rem;
+  margin-right: 0.8rem;
   color: #303C48;
   border-color: #607890;
   background-color: #dfe4e9;
+  padding: 0.2rem 0.5rem 0.2rem 0.9rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1370,15 +1356,20 @@ exports[`Form should render properly with initial state 1`] = `
   outline: none;
 }
 
+.c66:disabled,
+.c66:disabled > .c30 {
+  cursor: not-allowed;
+}
+
 .c66 .c30 {
   font-size: 1.2rem;
   border-radius: 50%;
   cursor: pointer;
+  padding: 0.4rem;
   margin-left: 0.6rem;
 }
 
 .c66 .c30 {
-  padding: 0.4rem;
   background-color: #b0bcc8;
 }
 
@@ -1407,10 +1398,6 @@ exports[`Form should render properly with initial state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c65 button {
-  margin-right: 0.8rem;
 }
 
 .c63 {
@@ -1581,7 +1568,7 @@ exports[`Form should render properly with initial state 1`] = `
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
 }
 
-.c75 {
+.c74 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1597,7 +1584,7 @@ exports[`Form should render properly with initial state 1`] = `
   justify-content: flex-end;
 }
 
-.c75 > * + * {
+.c74 > * + * {
   margin-left: 1.6rem;
 }
 
@@ -1631,8 +1618,18 @@ exports[`Form should render properly with initial state 1`] = `
   min-width: auto;
 }
 
-.c71 {
+.c70 {
   grid-column: 1/5;
+}
+
+.c70 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c71 {
+  grid-column: 5/9;
 }
 
 .c71 > * {
@@ -1642,7 +1639,7 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c72 {
-  grid-column: 5/9;
+  grid-column: 9/-1;
 }
 
 .c72 > * {
@@ -1651,22 +1648,12 @@ exports[`Form should render properly with initial state 1`] = `
   min-width: auto;
 }
 
-.c73 {
-  grid-column: 9/-1;
-}
-
-.c73 > * {
-  width: 100%;
-  margin: 0;
-  min-width: auto;
-}
-
-.c69 {
+.c68 {
   grid-column: 1/-1;
   margin-top: 2.6rem;
 }
 
-.c70 {
+.c69 {
   margin-bottom: 1rem;
 }
 
@@ -2322,7 +2309,7 @@ exports[`Form should render properly with initial state 1`] = `
             >
               <button
                 class="c66"
-                id="medly-options-chip"
+                id="graduation-count-chip"
               >
                 <span
                   class="c17 c21"
@@ -2330,10 +2317,10 @@ exports[`Form should render properly with initial state 1`] = `
                   1
                 </span>
                 <svg
-                  class="c30 c67"
+                  class="c30 c46"
                   fill="none"
                   height="1em"
-                  id="medly-options-chip-clear"
+                  id="graduation-count-chip-clear"
                   viewBox="0 0 24 24"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
@@ -2365,17 +2352,17 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <h4
-      class="c17 c68 c69"
+      class="c17 c67 c68"
     >
       Marks
     </h4>
     <span
-      class="c17 c18 c70"
+      class="c17 c18 c69"
     >
       Marks Information
     </span>
     <div
-      class="c71"
+      class="c70"
     >
       <div
         class="c2 c3"
@@ -2410,7 +2397,7 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <div
-      class="c72"
+      class="c71"
     >
       <div
         class="c2 c3"
@@ -2445,7 +2432,7 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <div
-      class="c73"
+      class="c72"
     >
       <div
         class="c2 c3"
@@ -2484,7 +2471,7 @@ exports[`Form should render properly with initial state 1`] = `
     >
       
       <label
-        class="c74"
+        class="c73"
         for="agree"
         id="agree-wrapper"
         sizes="[object Object]"
@@ -2528,10 +2515,10 @@ exports[`Form should render properly with initial state 1`] = `
       </label>
     </div>
     <div
-      class="c75"
+      class="c74"
     >
       <button
-        class="c76"
+        class="c75"
         form="medly-dynamic-form"
         type="submit"
       >
@@ -3688,10 +3675,6 @@ exports[`Form should render properly without initial state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.c65 button {
-  margin-right: 0.8rem;
 }
 
 .c63 {
