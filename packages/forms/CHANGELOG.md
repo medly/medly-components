@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.13.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.18...@medly-components/forms@1.13.0) (2020-11-10)
+
+
+### Features
+
+* add disabled option feature in multiselect component ([3bf43e0](https://github.com/medly/medly-components/commit/3bf43e06032422a494c422563af625cd794d9777))
+
+
+
+
+
 ## [1.12.18](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.17...@medly-components/forms@1.12.18) (2020-11-10)
 
 **Note:** Version bump only for package @medly-components/forms
