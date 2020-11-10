@@ -40,7 +40,7 @@ export const Row: React.FC<Props> = React.memo(props => {
                         ? handleExpansionIconClick
                         : undefined
                     : undefined,
-            [isLoading, onRowClick, isRowClickDisabled, isRowExpandable, handleExpansionIconClick]
+            [isLoading, data, onRowClick, isRowClickDisabled, isRowExpandable, handleExpansionIconClick]
         );
 
     const getCells = useCallback(
