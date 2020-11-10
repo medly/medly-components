@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.1](https://github.com/medly/medly-components/compare/@medly-components/layout@1.14.0...@medly-components/layout@1.14.1) (2020-11-10)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+# [1.14.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.13.8...@medly-components/layout@1.14.0) (2020-11-10)
+
+
+### Features
+
+* add disabled option feature in multiselect component ([3bf43e0](https://github.com/medly/medly-components/commit/3bf43e06032422a494c422563af625cd794d9777))
+
+
+
+
+
+## [1.13.8](https://github.com/medly/medly-components/compare/@medly-components/layout@1.13.7...@medly-components/layout@1.13.8) (2020-11-10)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.13.7](https://github.com/medly/medly-components/compare/@medly-components/layout@1.13.6...@medly-components/layout@1.13.7) (2020-11-05)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.13.6](https://github.com/medly/medly-components/compare/@medly-components/layout@1.13.5...@medly-components/layout@1.13.6) (2020-11-03)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.13.5](https://github.com/medly/medly-components/compare/@medly-components/layout@1.13.4...@medly-components/layout@1.13.5) (2020-10-30)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.13.4](https://github.com/medly/medly-components/compare/@medly-components/layout@1.13.3...@medly-components/layout@1.13.4) (2020-10-30)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 ## [1.13.3](https://github.com/medly/medly-components/compare/@medly-components/layout@1.13.2...@medly-components/layout@1.13.3) (2020-10-29)
 
 **Note:** Version bump only for package @medly-components/layout

@@ -6,9 +6,10 @@ import { Prefix } from '../Prefix.styled';
 import { Suffix } from '../Suffix.styled';
 
 export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperProps) => {
+    const bgColor = fusion[isTextPresent ? 'active' : 'default'].bgColor;
     return css`
         border-radius: 1rem;
-        background-color: ${isTextPresent ? 'transparent' : fusion.default.bgColor};
+        background-color: ${bgColor};
         &::after {
             content: '';
             box-sizing: border-box;
@@ -30,6 +31,9 @@ export const fusionStyle = ({ fusion, disabled, isTextPresent }: InnerWrapperPro
         &:focus-within::after {
             border-width: ${!disabled && `0.15rem`};
             border-color: ${!disabled && fusion.hover.borderColor};
+        }
+        input {
+            box-shadow: 0 0 0 100000px ${bgColor} inset;
         }
     `;
 };
@@ -53,6 +57,7 @@ export const fusionErrorStyle = ({ theme: { textField }, isTextPresent }: InnerW
         }
         input {
             caret-color: ${textField.fusion.error.caretColor};
+            box-shadow: 0 0 0 100000px ${textField.fusion[isTextPresent ? 'active' : 'error'].bgColor} inset;
             &::placeholder {
                 color: ${textField.fusion.error.placeholderColor};
             }
@@ -65,14 +70,17 @@ export const fusionErrorStyle = ({ theme: { textField }, isTextPresent }: InnerW
 
     &:focus-within,
     &:focus-within:hover {
-        background-color: transparent;
+        background-color: ${textField.fusion.active.bgColor};
         color: ${textField.fusion.error.activeTextColor};
+        input {
+            box-shadow: 0 0 0 100000px ${textField.fusion.active.bgColor} inset;
+        }
     }
 
     ${isTextPresent &&
     css`
         && {
-            background-color: transparent;
+            background-color: ${textField.fusion.active.bgColor};
             color: ${textField.fusion.error.activeTextColor};
         }
     `}

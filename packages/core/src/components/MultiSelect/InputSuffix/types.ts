@@ -9,4 +9,5 @@ export type InputSuffixProps = {
     hasError: boolean;
     onClear: () => void;
     optionsCount: number;
+    hideClearIcon: boolean;
 };

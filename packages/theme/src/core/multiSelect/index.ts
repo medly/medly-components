@@ -102,6 +102,16 @@ const multiSelectTheme: MultiSelectTheme = {
         textVariant: {
             S: 'body2',
             M: 'body1'
+        },
+        chip: {
+            borderRadius: '1.2rem',
+            color: { default: colors.grey[900], hovered: colors.grey[900], disabled: colors.grey[700] },
+            bgColor: { default: colors.grey[100], hovered: colors.grey[100], disabled: colors.grey[100] },
+            borderColor: { default: colors.grey[300], hovered: colors.grey[400], disabled: colors.grey[100] },
+            icon: {
+                color: { default: colors.grey[800], hovered: colors.black, disabled: colors.grey[300] },
+                bgColor: { default: 'transparent', hovered: colors.grey[400], disabled: 'transparent' }
+            }
         }
     }
 };

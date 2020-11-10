@@ -1,3 +1,4 @@
+export * from './isMobile';
 export * from './debounce';
 export * from './parseToDate';
 export * from './positionalSpacing';

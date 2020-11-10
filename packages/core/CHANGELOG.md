@@ -3,6 +3,99 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.34.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.34.0...@medly-components/core@1.34.1) (2020-11-10)
+
+
+### Bug Fixes
+
+* type issue in the Cell component ([6f361b9](https://github.com/medly/medly-components/commit/6f361b97968fd3b861ac629a7c0f7c364577a501))
+
+
+
+
+
+# [1.34.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.4...@medly-components/core@1.34.0) (2020-11-10)
+
+
+### Features
+
+* add disabled option feature in multiselect component ([3bf43e0](https://github.com/medly/medly-components/commit/3bf43e06032422a494c422563af625cd794d9777))
+
+
+
+
+
+## [1.33.4](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.3...@medly-components/core@1.33.4) (2020-11-10)
+
+
+### Bug Fixes
+
+* **core:** cR fix ([d1fd81d](https://github.com/medly/medly-components/commit/d1fd81d6e3a506855640117ce1d15a5cb60e98a3))
+* **core:** expanded Row ([226f918](https://github.com/medly/medly-components/commit/226f918514686facde983ab98ef6a4b2e1b3fe2f))
+
+
+
+
+
+## [1.33.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.2...@medly-components/core@1.33.3) (2020-11-05)
+
+
+### Bug Fixes
+
+* autofill color issue in textField component ([e89d56b](https://github.com/medly/medly-components/commit/e89d56bae8892ac25a734744809f59a20ab9126e))
+* autofill option issue in singleSelect component ([f9d637b](https://github.com/medly/medly-components/commit/f9d637bc52fff3774c3fdfb4505375e32ed4009b))
+
+
+
+
+
+## [1.33.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.1...@medly-components/core@1.33.2) (2020-11-03)
+
+
+### Bug Fixes
+
+* **core:** small update to transform label function for fusion variant ([52b135c](https://github.com/medly/medly-components/commit/52b135c8599806d24cf5e76d453734626a2323a9))
+
+
+
+
+
+## [1.33.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.0...@medly-components/core@1.33.1) (2020-10-30)
+
+
+### Bug Fixes
+
+* count issue in Tab component ([4fcf351](https://github.com/medly/medly-components/commit/4fcf351247e54d46e95daf05b366b1b0b3ce2531))
+* height issue in textfield component ([34e4fdb](https://github.com/medly/medly-components/commit/34e4fdbaa6f91a3aa3057d988f1ada2fad5bf7ec))
+
+
+
+
+
+# [1.33.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.32.3...@medly-components/core@1.33.0) (2020-10-30)
+
+
+### Bug Fixes
+
+* add fullwidth to Textfield component in Datepicker ([5ee41df](https://github.com/medly/medly-components/commit/5ee41df34ff243e6698b22f119e4c483001baf4d))
+* padding issue in Textfield component ([43b7e25](https://github.com/medly/medly-components/commit/43b7e255bfb58cbf6002821db40a02b6f4841614))
+* **core:** add missing dependency in datepicker text change callback definition ([b1fcee3](https://github.com/medly/medly-components/commit/b1fcee37777fae37c941fc31c365fb31036c783a))
+* improve test coverage, attempt mobile bugfix ([7aa927b](https://github.com/medly/medly-components/commit/7aa927bb4554a9dd41d0e89be80c9aabaa445a57))
+* update snapshots ([21b7060](https://github.com/medly/medly-components/commit/21b7060ef1709cbc473cc6ffb372149f4ae7049a))
+
+
+### Features
+
+* added formatter support for custom component in table row ([660720f](https://github.com/medly/medly-components/commit/660720f3b7646bab6e33196563e32952a2a719f1))
+* adding fixes for existing issues, and addressing pr comments ([b5ce890](https://github.com/medly/medly-components/commit/b5ce89048edb4be4e304190ee07ccdc707847bc2))
+* adding mobile functionality for the datepicker component ([338bf77](https://github.com/medly/medly-components/commit/338bf77f82c74becdd5b9fd4420ad051c0f309c7))
+* adding more requested PR changes ([42042fa](https://github.com/medly/medly-components/commit/42042fa56f33c374c281b5d1b6c37c157197f2aa))
+* adding value functionality ([70358fa](https://github.com/medly/medly-components/commit/70358fa7bce8397bc0a18010be0657c1c95f9a8b))
+
+
+
+
+
 ## [1.32.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.32.2...@medly-components/core@1.32.3) (2020-10-29)
 
 

@@ -1,20 +1,10 @@
-import { SvgIcon } from '@medly-components/icons';
 import { getFontStyle, styled, WithThemeProp } from '@medly-components/utils';
 import Checkbox from '../../Checkbox';
 import { SelectorGroup } from '../../Selectors';
-import { Chip } from '../Chip/Chip';
 
 export const ChipArea = styled.div<WithThemeProp>`
     border-bottom: 1px solid ${({ theme }) => theme.colors.grey[200]};
     padding: 0.5rem 1.3rem;
-    ${Chip.Style} {
-        padding: 0 0.3rem 0 0.9rem;
-        margin: 0.2rem;
-        ${SvgIcon} {
-            background-color: transparent;
-            padding: 0.2rem;
-        }
-    }
     > p {
         margin: 0.3rem;
     }

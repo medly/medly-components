@@ -102,6 +102,10 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   border-width: 0.2rem;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #E7F0FF;
@@ -129,6 +133,11 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -187,8 +196,8 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -200,7 +209,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c3,
@@ -273,15 +282,6 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -527,6 +527,10 @@ exports[`TextField should render properly with M size 1`] = `
   border-width: 0.2rem;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #E7F0FF;
@@ -554,6 +558,11 @@ exports[`TextField should render properly with M size 1`] = `
 .c1:focus-within .c9 *,
 .c1:focus-within:hover .c9 * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -612,8 +621,8 @@ exports[`TextField should render properly with M size 1`] = `
 .c6 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -625,7 +634,7 @@ exports[`TextField should render properly with M size 1`] = `
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c6,
@@ -698,15 +707,6 @@ exports[`TextField should render properly with M size 1`] = `
 
 .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c6:-webkit-autofill,
-.c6:-moz-autofill,
-.c6:-webkit-autofill:focus,
-.c6:-moz-autofill:focus,
-.c6:-webkit-autofill:hover,
-.c6:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -906,6 +906,10 @@ exports[`TextField should render properly with S size 1`] = `
   border-width: 0.2rem;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #E7F0FF;
@@ -933,6 +937,11 @@ exports[`TextField should render properly with S size 1`] = `
 .c1:focus-within .c9 *,
 .c1:focus-within:hover .c9 * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -991,8 +1000,8 @@ exports[`TextField should render properly with S size 1`] = `
 .c6 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -1071,15 +1080,6 @@ exports[`TextField should render properly with S size 1`] = `
 
 .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c6:-webkit-autofill,
-.c6:-moz-autofill,
-.c6:-webkit-autofill:focus,
-.c6:-moz-autofill:focus,
-.c6:-webkit-autofill:hover,
-.c6:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -1243,6 +1243,10 @@ exports[`TextField should render properly with default props 1`] = `
   border-width: 0.2rem;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #E7F0FF;
@@ -1270,6 +1274,11 @@ exports[`TextField should render properly with default props 1`] = `
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -1328,8 +1337,8 @@ exports[`TextField should render properly with default props 1`] = `
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -1341,7 +1350,7 @@ exports[`TextField should render properly with default props 1`] = `
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c3,
@@ -1414,15 +1423,6 @@ exports[`TextField should render properly with default props 1`] = `
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -1555,6 +1555,10 @@ exports[`TextField with filled variant and with label should render default stat
   border-width: 0.2rem;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #E7F0FF;
@@ -1582,6 +1586,11 @@ exports[`TextField with filled variant and with label should render default stat
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -1640,8 +1649,8 @@ exports[`TextField with filled variant and with label should render default stat
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -1653,7 +1662,7 @@ exports[`TextField with filled variant and with label should render default stat
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c3,
@@ -1726,15 +1735,6 @@ exports[`TextField with filled variant and with label should render default stat
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -1864,6 +1864,10 @@ exports[`TextField with filled variant and with label should render disabled sta
   transition: all 100ms ease-out;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1::after,
 .c1:hover::after {
   border-width: 0.1rem;
@@ -1871,7 +1875,7 @@ exports[`TextField with filled variant and with label should render disabled sta
 }
 
 .c1 input {
-  color: #435465;
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
 .c1 .c4 {
@@ -1932,8 +1936,8 @@ exports[`TextField with filled variant and with label should render disabled sta
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -1945,7 +1949,7 @@ exports[`TextField with filled variant and with label should render disabled sta
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c3,
@@ -2018,15 +2022,6 @@ exports[`TextField with filled variant and with label should render disabled sta
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -2161,6 +2156,10 @@ exports[`TextField with filled variant and with label should render focus state 
   border-width: 0.2rem;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #E7F0FF;
@@ -2188,6 +2187,11 @@ exports[`TextField with filled variant and with label should render focus state 
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -2246,8 +2250,8 @@ exports[`TextField with filled variant and with label should render focus state 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -2259,7 +2263,7 @@ exports[`TextField with filled variant and with label should render focus state 
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c3,
@@ -2332,15 +2336,6 @@ exports[`TextField with filled variant and with label should render focus state 
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -2473,6 +2468,10 @@ exports[`TextField with filled variant and without label should render default s
   border-width: 0.2rem;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #E7F0FF;
@@ -2500,6 +2499,11 @@ exports[`TextField with filled variant and without label should render default s
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -2558,8 +2562,8 @@ exports[`TextField with filled variant and without label should render default s
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -2640,15 +2644,6 @@ exports[`TextField with filled variant and without label should render default s
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -2776,6 +2771,10 @@ exports[`TextField with filled variant and without label should render disabled 
   transition: all 100ms ease-out;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1::after,
 .c1:hover::after {
   border-width: 0.1rem;
@@ -2783,7 +2782,7 @@ exports[`TextField with filled variant and without label should render disabled 
 }
 
 .c1 input {
-  color: #435465;
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
 .c1 .c4 {
@@ -2844,8 +2843,8 @@ exports[`TextField with filled variant and without label should render disabled 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -2926,15 +2925,6 @@ exports[`TextField with filled variant and without label should render disabled 
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -3067,6 +3057,10 @@ exports[`TextField with filled variant and without label should render focus sta
   border-width: 0.2rem;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #E7F0FF;
@@ -3094,6 +3088,11 @@ exports[`TextField with filled variant and without label should render focus sta
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -3152,8 +3151,8 @@ exports[`TextField with filled variant and without label should render focus sta
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -3234,15 +3233,6 @@ exports[`TextField with filled variant and without label should render focus sta
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -3384,6 +3374,10 @@ exports[`TextField with filled variant should render error state properly  1`] =
   border-width: 0.2rem;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1,
 .c1:hover,
 .c1:focus-within,
@@ -3438,6 +3432,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
 .c1:hover input,
 .c1:focus-within input,
 .c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #FAE6E6 inset;
   caret-color: #cc0000;
 }
 
@@ -3505,8 +3500,8 @@ exports[`TextField with filled variant should render error state properly  1`] =
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -3518,7 +3513,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c3,
@@ -3591,15 +3586,6 @@ exports[`TextField with filled variant should render error state properly  1`] =
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -3748,6 +3734,10 @@ exports[`TextField with filled variant should render error state properly with a
   border-width: 0.2rem;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1,
 .c1:hover,
 .c1:focus-within,
@@ -3802,6 +3792,7 @@ exports[`TextField with filled variant should render error state properly with a
 .c1:hover input,
 .c1:focus-within input,
 .c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #FAE6E6 inset;
   caret-color: #cc0000;
 }
 
@@ -3869,8 +3860,8 @@ exports[`TextField with filled variant should render error state properly with a
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -3882,7 +3873,7 @@ exports[`TextField with filled variant should render error state properly with a
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c3,
@@ -3955,15 +3946,6 @@ exports[`TextField with filled variant should render error state properly with a
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -4156,6 +4138,10 @@ exports[`TextField with filled variant should render properly with multiline 1`]
   border-width: 0.2rem;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #E7F0FF;
@@ -4183,6 +4169,11 @@ exports[`TextField with filled variant should render properly with multiline 1`]
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -4241,8 +4232,9 @@ exports[`TextField with filled variant should render properly with multiline 1`]
 .c3 {
   color: #13181D;
   width: 100%;
-  height: 100%;
   margin: 1.6rem 0 0 0;
+  padding: 0;
+  height: 90%;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -4323,15 +4315,6 @@ exports[`TextField with filled variant should render properly with multiline 1`]
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -4483,6 +4466,10 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   border-width: 0.2rem;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #E7F0FF;
@@ -4510,6 +4497,11 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -4568,8 +4560,8 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 .c6 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -4581,7 +4573,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c6,
@@ -4654,15 +4646,6 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
 
 .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c6:-webkit-autofill,
-.c6:-moz-autofill,
-.c6:-webkit-autofill:focus,
-.c6:-moz-autofill:focus,
-.c6:-webkit-autofill:hover,
-.c6:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -4828,6 +4811,10 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   border-width: 0.2rem;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #E7F0FF;
@@ -4855,6 +4842,11 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 .c1:focus-within .c7 *,
 .c1:focus-within:hover .c7 * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -4913,8 +4905,8 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -4926,7 +4918,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c3,
@@ -4999,15 +4991,6 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -5163,9 +5146,13 @@ exports[`TextField with fusion variant and with label should render default stat
   border-color: #607890;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1:focus-within::after,
@@ -5190,6 +5177,11 @@ exports[`TextField with fusion variant and with label should render default stat
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -5248,8 +5240,8 @@ exports[`TextField with fusion variant and with label should render default stat
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -5261,7 +5253,7 @@ exports[`TextField with fusion variant and with label should render default stat
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 1.3rem;
+  margin-bottom: 1.3rem;
 }
 
 .c3,
@@ -5327,26 +5319,17 @@ exports[`TextField with fusion variant and with label should render default stat
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
+  -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -5446,7 +5429,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
   border-radius: 1rem;
   background-color: #F7F8F9;
   cursor: not-allowed;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1 .c4 {
@@ -5485,6 +5468,10 @@ exports[`TextField with fusion variant and with label should render disabled sta
   border: 0.1rem solid #b0bcc8;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
+}
+
 .c1::after,
 .c1:hover::after {
   border-width: 0.1rem;
@@ -5492,7 +5479,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
 }
 
 .c1 input {
-  color: #546A7F;
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1 .c4 {
@@ -5553,8 +5540,8 @@ exports[`TextField with fusion variant and with label should render disabled sta
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -5566,7 +5553,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 1.3rem;
+  margin-bottom: 1.3rem;
 }
 
 .c3,
@@ -5632,26 +5619,17 @@ exports[`TextField with fusion variant and with label should render disabled sta
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
+  -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -5796,9 +5774,13 @@ exports[`TextField with fusion variant and with label should render focus state 
   border-color: #607890;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1:focus-within::after,
@@ -5823,6 +5805,11 @@ exports[`TextField with fusion variant and with label should render focus state 
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -5881,8 +5868,8 @@ exports[`TextField with fusion variant and with label should render focus state 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -5894,7 +5881,7 @@ exports[`TextField with fusion variant and with label should render focus state 
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 1.3rem;
+  margin-bottom: 1.3rem;
 }
 
 .c3,
@@ -5960,26 +5947,17 @@ exports[`TextField with fusion variant and with label should render focus state 
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
+  -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -6122,9 +6100,13 @@ exports[`TextField with fusion variant and without label should render default s
   border-color: #607890;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1:focus-within::after,
@@ -6149,6 +6131,11 @@ exports[`TextField with fusion variant and without label should render default s
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -6207,8 +6194,8 @@ exports[`TextField with fusion variant and without label should render default s
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -6282,26 +6269,17 @@ exports[`TextField with fusion variant and without label should render default s
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
+  -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -6399,7 +6377,7 @@ exports[`TextField with fusion variant and without label should render disabled 
   border-radius: 1rem;
   background-color: #F7F8F9;
   cursor: not-allowed;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1 .c4 {
@@ -6438,6 +6416,10 @@ exports[`TextField with fusion variant and without label should render disabled 
   border: 0.1rem solid #b0bcc8;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
+}
+
 .c1::after,
 .c1:hover::after {
   border-width: 0.1rem;
@@ -6445,7 +6427,7 @@ exports[`TextField with fusion variant and without label should render disabled 
 }
 
 .c1 input {
-  color: #546A7F;
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1 .c4 {
@@ -6506,8 +6488,8 @@ exports[`TextField with fusion variant and without label should render disabled 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -6581,26 +6563,17 @@ exports[`TextField with fusion variant and without label should render disabled 
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
+  -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -6743,9 +6716,13 @@ exports[`TextField with fusion variant and without label should render focus sta
   border-color: #607890;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1:focus-within::after,
@@ -6770,6 +6747,11 @@ exports[`TextField with fusion variant and without label should render focus sta
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -6828,8 +6810,8 @@ exports[`TextField with fusion variant and without label should render focus sta
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -6903,26 +6885,17 @@ exports[`TextField with fusion variant and without label should render focus sta
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
+  -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -7074,6 +7047,10 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   border-color: #607890;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
+}
+
 .c1,
 .c1:hover {
   color: #cc0000;
@@ -7107,6 +7084,7 @@ exports[`TextField with fusion variant should render error state properly  1`] =
 .c1 input,
 .c1:hover input {
   caret-color: #13181D;
+  box-shadow: 0 0 0 100000px #FCF2F2 inset;
 }
 
 .c1 input::-webkit-input-placeholder,
@@ -7135,8 +7113,13 @@ exports[`TextField with fusion variant should render error state properly  1`] =
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
   color: #13181D;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1.c1::after {
@@ -7179,8 +7162,8 @@ exports[`TextField with fusion variant should render error state properly  1`] =
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -7192,7 +7175,7 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 1.3rem;
+  margin-bottom: 1.3rem;
 }
 
 .c3,
@@ -7258,26 +7241,17 @@ exports[`TextField with fusion variant should render error state properly  1`] =
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
+  -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -7391,7 +7365,7 @@ exports[`TextField with fusion variant should render error state properly with a
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 1rem;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1 .c4 {
@@ -7436,6 +7410,10 @@ exports[`TextField with fusion variant should render error state properly with a
   border-color: #607890;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
 .c1,
 .c1:hover {
   color: #cc0000;
@@ -7469,6 +7447,7 @@ exports[`TextField with fusion variant should render error state properly with a
 .c1 input,
 .c1:hover input {
   caret-color: #13181D;
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1 input::-webkit-input-placeholder,
@@ -7497,12 +7476,17 @@ exports[`TextField with fusion variant should render error state properly with a
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
   color: #13181D;
 }
 
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
 .c1.c1 {
-  background-color: transparent;
+  background-color: #ffffff;
   color: #13181D;
 }
 
@@ -7546,8 +7530,8 @@ exports[`TextField with fusion variant should render error state properly with a
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -7559,7 +7543,7 @@ exports[`TextField with fusion variant should render error state properly with a
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 1.3rem;
+  margin-bottom: 1.3rem;
 }
 
 .c3,
@@ -7625,26 +7609,17 @@ exports[`TextField with fusion variant should render error state properly with a
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
+  -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -7845,9 +7820,13 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   border-color: #607890;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1:focus-within::after,
@@ -7872,6 +7851,11 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -7930,8 +7914,9 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 .c3 {
   color: #13181D;
   width: 100%;
-  height: 95%;
   margin: 0;
+  padding: 0;
+  height: 100%;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -8005,26 +7990,17 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-120%) scale(0.67);
-  -ms-transform: translateY(-120%) scale(0.67);
-  transform: translateY(-120%) scale(0.67);
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
+  -webkit-transform: translateX(-0.4rem) translateY(-120%) scale(0.67);
+  -ms-transform: translateX(-0.4rem) translateY(-120%) scale(0.67);
+  transform: translateX(-0.4rem) translateY(-120%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -8186,9 +8162,13 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   border-color: #607890;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1:focus-within::after,
@@ -8213,6 +8193,11 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -8271,8 +8256,8 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 .c6 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -8284,7 +8269,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 1.3rem;
+  margin-bottom: 1.3rem;
 }
 
 .c6,
@@ -8350,26 +8335,17 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 
 .c6:not(:placeholder-shown) ~ .c7,
 .c6:focus ~ .c7 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
+  -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
 }
 
 .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c6:-webkit-autofill,
-.c6:-moz-autofill,
-.c6:-webkit-autofill:focus,
-.c6:-moz-autofill:focus,
-.c6:-webkit-autofill:hover,
-.c6:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -8545,9 +8521,13 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   border-color: #607890;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1:focus-within::after,
@@ -8572,6 +8552,11 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 .c1:focus-within .c7 *,
 .c1:focus-within:hover .c7 * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -8630,8 +8615,8 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -8643,7 +8628,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 1.3rem;
+  margin-bottom: 1.3rem;
 }
 
 .c3,
@@ -8709,26 +8694,17 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 
 .c3:not(:placeholder-shown) ~ .c4,
 .c3:focus ~ .c4 {
-  -webkit-transform: translateY(-135%) scale(0.67);
-  -ms-transform: translateY(-135%) scale(0.67);
-  transform: translateY(-135%) scale(0.67);
   background-color: white;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   z-index: 1;
   font-weight: 500;
+  -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+  transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -8835,7 +8811,7 @@ exports[`TextField with outlined variant and with label should render default st
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1 .c4 {
@@ -8854,6 +8830,10 @@ exports[`TextField with outlined variant and with label should render default st
 
 .c1 ~ .sc-AxirZ {
   color: #546A7F;
+}
+
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -8890,7 +8870,7 @@ exports[`TextField with outlined variant and with label should render default st
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1:focus-within::after,
@@ -8915,6 +8895,11 @@ exports[`TextField with outlined variant and with label should render default st
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -8973,8 +8958,8 @@ exports[`TextField with outlined variant and with label should render default st
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -8986,7 +8971,7 @@ exports[`TextField with outlined variant and with label should render default st
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .c3,
@@ -9059,15 +9044,6 @@ exports[`TextField with outlined variant and with label should render default st
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -9161,9 +9137,9 @@ exports[`TextField with outlined variant and with label should render disabled s
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
-  background-color: transparent;
+  background-color: #ffffff;
   cursor: not-allowed;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1 .c4 {
@@ -9182,6 +9158,10 @@ exports[`TextField with outlined variant and with label should render disabled s
 
 .c1 ~ .sc-AxirZ {
   color: #546A7F;
+}
+
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -9209,7 +9189,7 @@ exports[`TextField with outlined variant and with label should render disabled s
 }
 
 .c1 input {
-  color: #435465;
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1 .c4 {
@@ -9270,8 +9250,8 @@ exports[`TextField with outlined variant and with label should render disabled s
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -9283,7 +9263,7 @@ exports[`TextField with outlined variant and with label should render disabled s
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .c3,
@@ -9356,15 +9336,6 @@ exports[`TextField with outlined variant and with label should render disabled s
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -9460,7 +9431,7 @@ exports[`TextField with outlined variant and with label should render focus stat
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1 .c4 {
@@ -9479,6 +9450,10 @@ exports[`TextField with outlined variant and with label should render focus stat
 
 .c1 ~ .sc-AxirZ {
   color: #546A7F;
+}
+
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -9515,7 +9490,7 @@ exports[`TextField with outlined variant and with label should render focus stat
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1:focus-within::after,
@@ -9540,6 +9515,11 @@ exports[`TextField with outlined variant and with label should render focus stat
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -9598,8 +9578,8 @@ exports[`TextField with outlined variant and with label should render focus stat
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -9611,7 +9591,7 @@ exports[`TextField with outlined variant and with label should render focus stat
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .c3,
@@ -9684,15 +9664,6 @@ exports[`TextField with outlined variant and with label should render focus stat
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -9786,7 +9757,7 @@ exports[`TextField with outlined variant and without label should render default
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1 .c4 {
@@ -9805,6 +9776,10 @@ exports[`TextField with outlined variant and without label should render default
 
 .c1 ~ .sc-AxirZ {
   color: #546A7F;
+}
+
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -9841,7 +9816,7 @@ exports[`TextField with outlined variant and without label should render default
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1:focus-within::after,
@@ -9866,6 +9841,11 @@ exports[`TextField with outlined variant and without label should render default
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -9924,8 +9904,8 @@ exports[`TextField with outlined variant and without label should render default
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -10006,15 +9986,6 @@ exports[`TextField with outlined variant and without label should render default
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -10106,9 +10077,9 @@ exports[`TextField with outlined variant and without label should render disable
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
-  background-color: transparent;
+  background-color: #ffffff;
   cursor: not-allowed;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1 .c4 {
@@ -10127,6 +10098,10 @@ exports[`TextField with outlined variant and without label should render disable
 
 .c1 ~ .sc-AxirZ {
   color: #546A7F;
+}
+
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -10154,7 +10129,7 @@ exports[`TextField with outlined variant and without label should render disable
 }
 
 .c1 input {
-  color: #435465;
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1 .c4 {
@@ -10215,8 +10190,8 @@ exports[`TextField with outlined variant and without label should render disable
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -10297,15 +10272,6 @@ exports[`TextField with outlined variant and without label should render disable
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -10399,7 +10365,7 @@ exports[`TextField with outlined variant and without label should render focus s
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1 .c4 {
@@ -10418,6 +10384,10 @@ exports[`TextField with outlined variant and without label should render focus s
 
 .c1 ~ .sc-AxirZ {
   color: #546A7F;
+}
+
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -10454,7 +10424,7 @@ exports[`TextField with outlined variant and without label should render focus s
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1:focus-within::after,
@@ -10479,6 +10449,11 @@ exports[`TextField with outlined variant and without label should render focus s
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -10537,8 +10512,8 @@ exports[`TextField with outlined variant and without label should render focus s
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -10619,15 +10594,6 @@ exports[`TextField with outlined variant and without label should render focus s
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -10730,7 +10696,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1 .c4 {
@@ -10749,6 +10715,10 @@ exports[`TextField with outlined variant should render error state properly  1`]
 
 .c1 ~ .c6 {
   color: #546A7F;
+}
+
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -10787,7 +10757,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
 .c1:hover,
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1::after,
@@ -10837,6 +10807,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
 .c1:hover input,
 .c1:focus-within input,
 .c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
   caret-color: #cc0000;
 }
 
@@ -10904,8 +10875,8 @@ exports[`TextField with outlined variant should render error state properly  1`]
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -10917,7 +10888,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .c3,
@@ -10990,15 +10961,6 @@ exports[`TextField with outlined variant should render error state properly  1`]
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -11108,7 +11070,7 @@ exports[`TextField with outlined variant should render error state properly with
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1 .c4 {
@@ -11127,6 +11089,10 @@ exports[`TextField with outlined variant should render error state properly with
 
 .c1 ~ .c6 {
   color: #546A7F;
+}
+
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -11165,7 +11131,7 @@ exports[`TextField with outlined variant should render error state properly with
 .c1:hover,
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1::after,
@@ -11215,6 +11181,7 @@ exports[`TextField with outlined variant should render error state properly with
 .c1:hover input,
 .c1:focus-within input,
 .c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
   caret-color: #cc0000;
 }
 
@@ -11282,8 +11249,8 @@ exports[`TextField with outlined variant should render error state properly with
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -11295,7 +11262,7 @@ exports[`TextField with outlined variant should render error state properly with
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .c3,
@@ -11368,15 +11335,6 @@ exports[`TextField with outlined variant should render error state properly with
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -11530,7 +11488,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1 .c4 {
@@ -11549,6 +11507,10 @@ exports[`TextField with outlined variant should render properly with multiline 1
 
 .c1 ~ .sc-AxirZ {
   color: #546A7F;
+}
+
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -11585,7 +11547,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1:focus-within::after,
@@ -11610,6 +11572,11 @@ exports[`TextField with outlined variant should render properly with multiline 1
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -11668,8 +11635,9 @@ exports[`TextField with outlined variant should render properly with multiline 1
 .c3 {
   color: #13181D;
   width: 100%;
-  height: 100%;
   margin: 1.6rem 0 0 0;
+  padding: 0;
+  height: 90%;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -11750,15 +11718,6 @@ exports[`TextField with outlined variant should render properly with multiline 1
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -11871,7 +11830,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1 .c7 {
@@ -11890,6 +11849,10 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 
 .c1 ~ .sc-AxirZ {
   color: #546A7F;
+}
+
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -11926,7 +11889,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1:focus-within::after,
@@ -11951,6 +11914,11 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -12009,8 +11977,8 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 .c6 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -12022,7 +11990,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .c6,
@@ -12095,15 +12063,6 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
 
 .c6:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c6:-webkit-autofill,
-.c6:-moz-autofill,
-.c6:-webkit-autofill:focus,
-.c6:-moz-autofill:focus,
-.c6:-webkit-autofill:hover,
-.c6:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -12230,7 +12189,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1 .c4 {
@@ -12249,6 +12208,10 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 
 .c1 ~ .sc-AxirZ {
   color: #546A7F;
+}
+
+.c1 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1::after {
@@ -12285,7 +12248,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 
 .c1:focus-within,
 .c1:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c1:focus-within::after,
@@ -12310,6 +12273,11 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 .c1:focus-within .c7 *,
 .c1:focus-within:hover .c7 * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -12368,8 +12336,8 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -12381,7 +12349,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .c3,
@@ -12454,15 +12422,6 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -12608,6 +12567,10 @@ exports[`TextField without label should render default state properly 1`] = `
   border-width: 0.2rem;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #E7F0FF;
@@ -12635,6 +12598,11 @@ exports[`TextField without label should render default state properly 1`] = `
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -12693,8 +12661,8 @@ exports[`TextField without label should render default state properly 1`] = `
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -12775,15 +12743,6 @@ exports[`TextField without label should render default state properly 1`] = `
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>
@@ -12914,6 +12873,10 @@ exports[`TextField without label should render focus state properly  1`] = `
   border-width: 0.2rem;
 }
 
+.c1 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c1:focus-within,
 .c1:focus-within:hover {
   background-color: #E7F0FF;
@@ -12941,6 +12904,11 @@ exports[`TextField without label should render focus state properly  1`] = `
 .c1:focus-within .sc-AxhUy *,
 .c1:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
+}
+
+.c1:focus-within input,
+.c1:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c1:focus-within input::-webkit-input-placeholder,
@@ -12999,8 +12967,8 @@ exports[`TextField without label should render focus state properly  1`] = `
 .c3 {
   color: #13181D;
   width: 100%;
-  height: auto;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -13012,7 +12980,7 @@ exports[`TextField without label should render focus state properly  1`] = `
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c3,
@@ -13085,15 +13053,6 @@ exports[`TextField without label should render focus state properly  1`] = `
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
-}
-
-.c3:-webkit-autofill,
-.c3:-moz-autofill,
-.c3:-webkit-autofill:focus,
-.c3:-moz-autofill:focus,
-.c3:-webkit-autofill:hover,
-.c3:-moz-autofill:hover {
-  background-color: transparent;
 }
 
 <div>

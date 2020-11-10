@@ -3,6 +3,85 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.13.0...@medly-components/forms@1.13.1) (2020-11-10)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.13.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.18...@medly-components/forms@1.13.0) (2020-11-10)
+
+
+### Features
+
+* add disabled option feature in multiselect component ([3bf43e0](https://github.com/medly/medly-components/commit/3bf43e06032422a494c422563af625cd794d9777))
+
+
+
+
+
+## [1.12.18](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.17...@medly-components/forms@1.12.18) (2020-11-10)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.12.17](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.16...@medly-components/forms@1.12.17) (2020-11-05)
+
+
+### Bug Fixes
+
+* autofill color issue in textField component ([e89d56b](https://github.com/medly/medly-components/commit/e89d56bae8892ac25a734744809f59a20ab9126e))
+
+
+
+
+
+## [1.12.16](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.15...@medly-components/forms@1.12.16) (2020-11-03)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.12.15](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.14...@medly-components/forms@1.12.15) (2020-11-03)
+
+
+### Bug Fixes
+
+* initialState issue in form component ([6af3f6f](https://github.com/medly/medly-components/commit/6af3f6fbdbe39b98e338940ba6e289e94373a26c))
+
+
+
+
+
+## [1.12.14](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.13...@medly-components/forms@1.12.14) (2020-10-30)
+
+
+### Bug Fixes
+
+* height issue in textfield component ([34e4fdb](https://github.com/medly/medly-components/commit/34e4fdbaa6f91a3aa3057d988f1ada2fad5bf7ec))
+
+
+
+
+
+## [1.12.13](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.12...@medly-components/forms@1.12.13) (2020-10-30)
+
+
+### Bug Fixes
+
+* padding issue in Textfield component ([43b7e25](https://github.com/medly/medly-components/commit/43b7e255bfb58cbf6002821db40a02b6f4841614))
+
+
+
+
+
 ## [1.12.12](https://github.com/medly/medly-components/compare/@medly-components/forms@1.12.11...@medly-components/forms@1.12.12) (2020-10-29)
 
 **Note:** Version bump only for package @medly-components/forms

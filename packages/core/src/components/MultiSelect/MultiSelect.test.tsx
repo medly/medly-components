@@ -18,7 +18,7 @@ describe('MultiSelect component', () => {
 
     it('should render correctly with default props', () => {
         const mockOnChange = jest.fn(),
-            { container } = render(<MultiSelect options={options} onChange={mockOnChange} />);
+            { container } = render(<MultiSelect value={['Dummy1', 'Dummy2']} options={options} onChange={mockOnChange} />);
         expect(container).toMatchSnapshot();
     });
 
@@ -40,10 +40,18 @@ describe('MultiSelect component', () => {
     });
 
     test.each(['S', 'M'])('should render properly with %s size', (size: 'S' | 'M') => {
-        const { container } = render(<MultiSelect options={options} variant="filled" size={size} label="Pharmacy" />);
+        const { container } = render(
+            <MultiSelect
+                values={['disabled']}
+                options={[...options, { value: 'disabled', label: 'Disabled', disabled: true }]}
+                variant="filled"
+                size={size}
+                label="Pharmacy"
+            />
+        );
         fireEvent.click(screen.getByRole('textbox'));
         waitFor(() => expect(screen.getByRole('list')).toBeVisible());
-        expect(container.querySelector('#pharmacy-options-wrapper')).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     });
 
     it('should show options on click on input', async () => {
@@ -147,7 +155,7 @@ describe('MultiSelect component', () => {
 
     it('should clear options on click onClear function', () => {
         const { container } = render(<MultiSelect values={['Dummy1', 'Dummy2']} options={options} onChange={jest.fn()} />);
-        fireEvent.click(container.querySelector('#medly-options-chip-clear'));
+        fireEvent.click(container.querySelector('#medly-multiSelect-count-chip-clear'));
         expect(screen.queryByRole('list')).toBeNull();
     });
 
