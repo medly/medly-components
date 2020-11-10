@@ -9,7 +9,7 @@ const transformLabel = ({ variant, multiline }: StyledProps) => {
             background-color: white;
             padding: 0 0.5rem;
             z-index: 1;
-            font-weight: 500;
+            font-weight: 400;
             transform: translateX(-0.4rem) translateY(${multiline ? '-120%' : '-135%'}) scale(0.67);
         `;
     } else {
@@ -71,6 +71,10 @@ export const Input = styled('input')<StyledProps>`
     &:not(:placeholder-shown) ~ ${Label}, &:focus ~ ${Label} {
         opacity: ${({ size }) => size === 'S' && 0};
         ${({ size }) => size === 'M' && transformLabel};
+    }
+
+    &:focus ~ ${Label} {
+        ${({ variant }) => variant === 'fusion' && `font-weight: 500;`};
     }
 
     &:not(:placeholder-shown) ~ ${MaskPlaceholder} {
