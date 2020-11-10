@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.4](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.3...@medly-components/core@1.33.4) (2020-11-10)
+
+
+### Bug Fixes
+
+* **core:** cR fix ([d1fd81d](https://github.com/medly/medly-components/commit/d1fd81d6e3a506855640117ce1d15a5cb60e98a3))
+* **core:** expanded Row ([226f918](https://github.com/medly/medly-components/commit/226f918514686facde983ab98ef6a4b2e1b3fe2f))
+
+
+
+
+
 ## [1.33.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.2...@medly-components/core@1.33.3) (2020-11-05)
 
 
