@@ -5322,10 +5322,14 @@ exports[`TextField with fusion variant and with label should render default stat
   background-color: white;
   padding: 0 0.5rem;
   z-index: 1;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+}
+
+.c3:focus ~ .c4 {
+  font-weight: 500;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -5622,10 +5626,14 @@ exports[`TextField with fusion variant and with label should render disabled sta
   background-color: white;
   padding: 0 0.5rem;
   z-index: 1;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+}
+
+.c3:focus ~ .c4 {
+  font-weight: 500;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -5950,10 +5958,14 @@ exports[`TextField with fusion variant and with label should render focus state 
   background-color: white;
   padding: 0 0.5rem;
   z-index: 1;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+}
+
+.c3:focus ~ .c4 {
+  font-weight: 500;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -6272,10 +6284,14 @@ exports[`TextField with fusion variant and without label should render default s
   background-color: white;
   padding: 0 0.5rem;
   z-index: 1;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+}
+
+.c3:focus ~ .c4 {
+  font-weight: 500;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -6566,10 +6582,14 @@ exports[`TextField with fusion variant and without label should render disabled 
   background-color: white;
   padding: 0 0.5rem;
   z-index: 1;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+}
+
+.c3:focus ~ .c4 {
+  font-weight: 500;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -6888,10 +6908,14 @@ exports[`TextField with fusion variant and without label should render focus sta
   background-color: white;
   padding: 0 0.5rem;
   z-index: 1;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+}
+
+.c3:focus ~ .c4 {
+  font-weight: 500;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -7244,10 +7268,14 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   background-color: white;
   padding: 0 0.5rem;
   z-index: 1;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+}
+
+.c3:focus ~ .c4 {
+  font-weight: 500;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -7612,10 +7640,14 @@ exports[`TextField with fusion variant should render error state properly with a
   background-color: white;
   padding: 0 0.5rem;
   z-index: 1;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+}
+
+.c3:focus ~ .c4 {
+  font-weight: 500;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -7993,10 +8025,14 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   background-color: white;
   padding: 0 0.5rem;
   z-index: 1;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-transform: translateX(-0.4rem) translateY(-120%) scale(0.67);
   -ms-transform: translateX(-0.4rem) translateY(-120%) scale(0.67);
   transform: translateX(-0.4rem) translateY(-120%) scale(0.67);
+}
+
+.c3:focus ~ .c4 {
+  font-weight: 500;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -8338,10 +8374,14 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   background-color: white;
   padding: 0 0.5rem;
   z-index: 1;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+}
+
+.c6:focus ~ .c7 {
+  font-weight: 500;
 }
 
 .c6:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -8697,10 +8737,14 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   background-color: white;
   padding: 0 0.5rem;
   z-index: 1;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   -ms-transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
   transform: translateX(-0.4rem) translateY(-135%) scale(0.67);
+}
+
+.c3:focus ~ .c4 {
+  font-weight: 500;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
