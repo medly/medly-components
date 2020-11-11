@@ -3,13 +3,11 @@ import { StyledProps } from '../types';
 import { Label } from './Label.styled';
 import { MaskPlaceholder } from './MaskPlaceholder.styled';
 
-const transformLabel = ({ variant, multiline }: StyledProps) => {
+const transformLabel = ({ variant, multiline, theme }: StyledProps) => {
     if (variant === 'fusion') {
         return css`
             background-color: white;
             padding: 0 0.5rem;
-            z-index: 1;
-            font-weight: 400;
             transform: translateX(-0.4rem) translateY(${multiline ? '-120%' : '-135%'}) scale(0.67);
         `;
     } else {
@@ -74,7 +72,7 @@ export const Input = styled('input')<StyledProps>`
     }
 
     &:focus ~ ${Label} {
-        ${({ variant }) => variant === 'fusion' && `font-weight: 500;`};
+        font-weight: ${({ variant, theme }) => variant === 'fusion' && theme.font.weights.Medium};
     }
 
     &:not(:placeholder-shown) ~ ${MaskPlaceholder} {

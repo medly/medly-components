@@ -5329,7 +5329,7 @@ exports[`TextField with fusion variant and with label should render default stat
 }
 
 .c3:focus ~ .c4 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -5633,7 +5633,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
 }
 
 .c3:focus ~ .c4 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -5965,7 +5965,7 @@ exports[`TextField with fusion variant and with label should render focus state 
 }
 
 .c3:focus ~ .c4 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -6291,7 +6291,7 @@ exports[`TextField with fusion variant and without label should render default s
 }
 
 .c3:focus ~ .c4 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -6589,7 +6589,7 @@ exports[`TextField with fusion variant and without label should render disabled 
 }
 
 .c3:focus ~ .c4 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -6915,7 +6915,7 @@ exports[`TextField with fusion variant and without label should render focus sta
 }
 
 .c3:focus ~ .c4 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -7275,7 +7275,7 @@ exports[`TextField with fusion variant should render error state properly  1`] =
 }
 
 .c3:focus ~ .c4 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -7647,7 +7647,7 @@ exports[`TextField with fusion variant should render error state properly with a
 }
 
 .c3:focus ~ .c4 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -8032,7 +8032,7 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
 }
 
 .c3:focus ~ .c4 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -8381,7 +8381,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
 }
 
 .c6:focus ~ .c7 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .c6:not(:placeholder-shown) ~ .sc-Axmtr {
@@ -8744,7 +8744,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
 }
 
 .c3:focus ~ .c4 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .c3:not(:placeholder-shown) ~ .sc-Axmtr {
