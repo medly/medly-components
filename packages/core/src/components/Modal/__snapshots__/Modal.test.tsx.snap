@@ -383,7 +383,7 @@ exports[`Modal component should render properly when it is open 1`] = `
       </svg>
       <div
         class="c4"
-        id="medly-modal-content-header"
+        id="medly-modal-inner-container"
       >
         <div
           class="c5"

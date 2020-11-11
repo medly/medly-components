@@ -53,7 +53,7 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
                     >
                         <CloseIcon id={`${id}-close-button`} onClick={onCloseModal} />
                         <InnerContainerStyled
-                            id={`${id}-content-header`}
+                            id={`${id}-inner-container`}
                             ref={innerContainerRef}
                             onScroll={handleScroll}
                             headerHeight={headerHeight}
