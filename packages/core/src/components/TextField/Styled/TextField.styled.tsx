@@ -3,7 +3,7 @@ import { StyledProps } from '../types';
 import { Label } from './Label.styled';
 import { MaskPlaceholder } from './MaskPlaceholder.styled';
 
-const transformLabel = ({ variant, multiline, theme }: StyledProps) => {
+const transformLabel = ({ variant, multiline }: StyledProps) => {
     if (variant === 'fusion') {
         return css`
             background-color: white;
