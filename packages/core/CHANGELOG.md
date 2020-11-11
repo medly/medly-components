@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.34.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.34.1...@medly-components/core@1.34.2) (2020-11-11)
+
+
+### Bug Fixes
+
+* lint issues ([0d3c7ba](https://github.com/medly/medly-components/commit/0d3c7ba595c1b1bf21632fbbc133acaebd6062e1))
+* **core:** update font weight to use theme ([42cb5dd](https://github.com/medly/medly-components/commit/42cb5dd7f7bf1c55414ede29f75d3ab824549cef))
+
+
+
+
+
 ## [1.34.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.34.0...@medly-components/core@1.34.1) (2020-11-10)
 
 
