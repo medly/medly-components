@@ -10,6 +10,11 @@ const getPosition = ({ scrollState }: Props) => {
     return css`
         position: ${6.6 - scrollPositionRem > 2.1 ? 'relative' : 'fixed'};
         padding: ${6.6 - scrollPositionRem > 2.1 ? '6.6rem' : '2.1rem'} 1.6rem 1.9rem 1.6rem;
+
+        @media (min-width: 768px) {
+            position: relative;
+            padding: ${({ theme }) => `0 ${theme.spacing.S4} ${theme.spacing.S4}`};
+        }
     `;
 };
 
@@ -19,6 +24,11 @@ const getBoxShadow = ({ scrollState, theme }: Props) => {
 
     return css`
         box-shadow: ${6.6 - scrollPositionRem < 2.1 && `0 1.8rem 1.6rem -1.6rem ${rgba(theme.colors.grey[400], 0.6)}`};
+
+        @media (min-width: 768px) {
+            box-shadow: ${({ theme }) =>
+            !scrollState.scrolledToTop && `0 1.8rem 1.6rem -1.6rem ${rgba(theme.colors.grey[400], 0.6)}`};
+        }
     `;
 };
 
@@ -32,11 +42,4 @@ export const Header = styled('div')<Props>`
     color: ${({ theme }) => theme.modal.headerColor};
     ${getPosition}
     ${getBoxShadow}
-
-    @media (min-width: 768px) {
-        position: relative;
-        padding: ${({ theme }) => `0 ${theme.spacing.S4} ${theme.spacing.S4}`};
-        box-shadow: ${({ theme, scrollState }) =>
-            !scrollState.scrolledToTop && `0 1.8rem 1.6rem -1.6rem ${rgba(theme.colors.grey[400], 0.6)}`};
-    }
 `;

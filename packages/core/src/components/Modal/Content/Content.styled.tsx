@@ -13,10 +13,9 @@ const getPadding = ({ scrollState, headerHeight }: StyledProps) => {
     // component positioned correctly, we add top padding to the content component equal to height of the (now fixed) header.
     return css`
         padding: ${({ theme }) => `0 ${theme.spacing.S4}`};
-        padding-top: ${6.6 - scrollPositionRem > 2.1 ? '0' : `${headerHeightRem}rem `};
 
-        @media (min-width: 768px) {
-            padding-top: 0;
+        @media (max-width: 768px) {
+            padding-top: ${6.6 - scrollPositionRem > 2.1 ? '0' : `${headerHeightRem}rem `};
         }
     `;
 };

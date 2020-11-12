@@ -178,7 +178,6 @@ exports[`Modal component should render properly when it is open 1`] = `
   flex: 1;
   box-sizing: border-box;
   padding: 0 1.6rem;
-  padding-top: 0;
 }
 
 .c5 {
@@ -269,7 +268,7 @@ exports[`Modal component should render properly when it is open 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
   .c6 {
     padding-top: 0;
   }
@@ -302,6 +301,10 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 @media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
   .c0 {
     -webkit-align-items: center;
     -webkit-box-align: center;
@@ -327,6 +330,8 @@ exports[`Modal component should render properly when it is open 1`] = `
   .c1 {
     width: 100%;
     height: calc(100% - 2.4rem);
+    -webkit-animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
+    animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
   }
 }
 
@@ -378,7 +383,7 @@ exports[`Modal component should render properly when it is open 1`] = `
       </svg>
       <div
         class="c4"
-        id="medly-modal-content-header"
+        id="medly-modal-inner-container"
       >
         <div
           class="c5"

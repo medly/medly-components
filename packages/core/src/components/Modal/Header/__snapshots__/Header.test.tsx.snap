@@ -34,6 +34,10 @@ exports[`Modal component header should render properly at small screen size 1`] 
   }
 }
 
+@media (min-width:768px) {
+
+}
+
 <div>
   <div
     class="c0"

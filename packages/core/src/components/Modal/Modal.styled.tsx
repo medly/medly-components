@@ -14,6 +14,7 @@ export const ModalBackgroundStyled = styled.div<ModalBackgroundProps>`
     background: ${({ theme }) => theme.modal.overlayColor};
     z-index: 1000;
     animation: ${({ open, isSmallScreen }) => isSmallScreen && `${open ? 'fadeIn' : 'fadeOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) `};
+
     @keyframes fadeIn {
         0% {
             background: ${({ theme }) => rgba(theme.modal.overlayColor, 0)};
