@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.34.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.34.2...@medly-components/core@1.34.3) (2020-11-12)
+
+
+### Bug Fixes
+
+* cleanup styles ([84be352](https://github.com/medly/medly-components/commit/84be352f95b9af926118bcbafe142b3771c4d680))
+* update tests ([32c412a](https://github.com/medly/medly-components/commit/32c412a2204ad1ef6a6338bb7d19c532582da937))
+* update tests ([5d24f79](https://github.com/medly/medly-components/commit/5d24f799c0bac0eae1c76eb288b4d5588d559228))
+
+
+
+
+
 ## [1.34.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.34.1...@medly-components/core@1.34.2) (2020-11-11)
 
 
