@@ -12,8 +12,8 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         minWidth,
         fullWidth,
         displayFormat,
-        fromLabel,
-        toLabel,
+        startDateLabel,
+        endDateLabel,
         errorText,
         helperText,
         variant,
@@ -30,13 +30,9 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         endDateRef = useRef<HTMLInputElement>(null),
         wrapperRef = useRef<HTMLDivElement>(null),
         [isActive, setActive] = useState(false),
-        [showCalendar, toggleCalendar] = useState(false),
         [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE');
 
-    useOuterClickNotifier(() => {
-        setActive(false);
-        toggleCalendar(false);
-    }, wrapperRef);
+    useOuterClickNotifier(() => setActive(false), wrapperRef);
 
     useUpdateEffect(() => {
         if (focusedElement === 'START_DATE') {
@@ -56,18 +52,17 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                 helperText={helperText}
                 disabled={disabled}
                 isActive={isActive}
-                fromLabel={fromLabel}
-                toLabel={toLabel}
+                startDateLabel={startDateLabel}
+                endDateLabel={endDateLabel}
                 selectedDates={value}
                 onDateChange={onChange}
                 displayFormat={displayFormat}
-                toggleCalendar={toggleCalendar}
                 setActive={setActive}
                 setFocusedElement={setFocusedElement}
                 startDateRef={startDateRef}
                 endDateRef={endDateRef}
             />
-            {showCalendar && (
+            {isActive && (
                 <DateRangeCalendar
                     id={`${pickerId}-calendar`}
                     size={size}
@@ -88,8 +83,8 @@ DateRangePicker.displayName = 'DateRangePicker';
 DateRangePicker.defaultProps = {
     variant: 'filled',
     minWidth: '33.8rem',
-    fromLabel: 'From',
-    toLabel: 'To',
+    startDateLabel: 'From',
+    endDateLabel: 'To',
     displayFormat: 'MM-dd-yyyy',
     minSelectableDate: new Date(1901, 0, 1),
     maxSelectableDate: new Date(2100, 11, 1)

@@ -18,7 +18,6 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
         disabled,
         displayFormat,
         isActive,
-        toggleCalendar,
         setActive,
         startDateRef,
         endDateRef,
@@ -26,8 +25,8 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
         helperText,
         selectedDates,
         onDateChange,
-        fromLabel,
-        toLabel,
+        startDateLabel,
+        endDateLabel,
         setFocusedElement
     } = props;
 
@@ -44,7 +43,6 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
             event => {
                 event.stopPropagation();
                 if (!disabled) {
-                    toggleCalendar(val => !val);
                     setActive(true);
                     startDateRef.current.focus();
                 }
@@ -54,7 +52,6 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
         onFocus = React.useCallback((event: React.FocusEvent<HTMLInputElement>) => {
             setActive(true);
             setFocusedElement(event.target.name as `START_DATE` | `END_DATE`);
-            toggleCalendar(true);
             event.target.setSelectionRange(event.target.value.length, event.target.value.length);
         }, []),
         onBlur = React.useCallback(
@@ -137,7 +134,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                     name="START_DATE"
                     isPrefixPresent
                     dateMaskLabel={startDateMaskLabel}
-                    label={fromLabel}
+                    label={startDateLabel}
                     {...textProps}
                 />
                 <InputSeparator {...iconProps} />
@@ -147,7 +144,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                     value={endDateText}
                     name="END_DATE"
                     dateMaskLabel={endDateMaskLabel}
-                    label={toLabel}
+                    label={endDateLabel}
                     {...textProps}
                 />
             </Wrapper>

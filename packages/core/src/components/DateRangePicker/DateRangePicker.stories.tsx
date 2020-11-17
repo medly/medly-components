@@ -42,8 +42,8 @@ export const Basic = () => {
             id="contract"
             displayFormat={select('Display Format', displayFormats, 'MM/dd/yyyy')}
             required={boolean('Required', false)}
-            fromLabel="From"
-            toLabel="To"
+            startDateLabel="From"
+            endDateLabel="To"
             value={dates}
             onChange={setDates}
             size={select('Size', ['S', 'M'], 'M')}

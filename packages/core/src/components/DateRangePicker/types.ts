@@ -7,10 +7,6 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     value: { startDate: Date | null; endDate: Date | null };
     /** Function to be called on change of the dates */
     onChange: (value: { startDate: Date | null; endDate: Date | null }) => void;
-    /** From Label */
-    fromLabel?: string;
-    /** To Label */
-    toLabel?: string;
     /** Variants */
     variant?: 'outlined' | 'filled';
     /** Helper Text */
@@ -33,4 +29,8 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     maxSelectableDate?: Date;
     /** Date display format */
     displayFormat?: DisplayFormat;
+    /** From Label */
+    startDateLabel?: string;
+    /** To Label */
+    endDateLabel?: string;
 };
