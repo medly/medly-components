@@ -94,15 +94,15 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
     }, [selectedDates, displayFormat]);
 
     const textProps = {
-        variant,
-        size,
-        onBlur,
-        onFocus,
-        disabled,
-        placeholder: mask,
-        onChange: handleTextChange,
-        errorText: errorText || builtInErrorMessage
-    },
+            variant,
+            size,
+            onBlur,
+            onFocus,
+            disabled,
+            placeholder: mask,
+            onChange: handleTextChange,
+            errorText: errorText || builtInErrorMessage
+        },
         iconProps = {
             variant,
             isErrorPresent,
@@ -151,7 +151,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                     {...textProps}
                 />
             </Wrapper>
-            <TextFieldStyled.HelperText id={`${id}-helper-text`} onClick={stopPropagation} size={size}>
+            <TextFieldStyled.HelperText id={`${id}-helper-text`} variant={variant} onClick={stopPropagation} size={size}>
                 {errorText || builtInErrorMessage || helperText}
             </TextFieldStyled.HelperText>
         </>

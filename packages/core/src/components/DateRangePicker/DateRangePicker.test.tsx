@@ -4,15 +4,14 @@ import { placements } from '../Popover/Popover.stories';
 import { DateRangePicker } from './DateRangePicker';
 import { DateRangeProps } from './types';
 
-
 const renderComponent = (props?: any) => {
     const defaultProps: DateRangeProps = {
         value: { startDate: null, endDate: null },
         displayFormat: 'MM/dd/yyyy',
-        id: "contract",
+        id: 'contract',
         required: false,
-        fromLabel: "From",
-        toLabel: "To",
+        fromLabel: 'From',
+        toLabel: 'To',
         size: 'M',
         popoverPlacement: 'bottom-start',
         variant: 'filled',
@@ -23,9 +22,7 @@ const renderComponent = (props?: any) => {
         onChange: jest.fn()
     };
 
-    return render(
-        <DateRangePicker
-            id="contract" {...defaultProps} {...props} />);
+    return render(<DateRangePicker id="contract" {...defaultProps} {...props} />);
 };
 
 describe('DateRangePicker', () => {
@@ -64,7 +61,8 @@ describe('DateRangePicker', () => {
                         id="contract"
                         value={{ startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) }}
                         displayFormat="MM/dd/yyyy"
-                        onChange={jest.fn()} />
+                        onChange={jest.fn()}
+                    />
                 </>
             );
             fireEvent.click(container.querySelector('svg'));
@@ -76,7 +74,7 @@ describe('DateRangePicker', () => {
     describe('on text change', () => {
         it('should change call onChange of from date with expected date', () => {
             const mockOnChange = jest.fn(),
-                dateToSelect = { "endDate": new Date("2020-02-01T18:30:00.000Z"), "startDate": new Date("2020-03-01T18:30:00.000Z") },
+                dateToSelect = { endDate: new Date('2020-02-01T18:30:00.000Z'), startDate: new Date('2020-03-01T18:30:00.000Z') },
                 { container } = renderComponent({
                     value: { startDate: new Date('01, 02, 2020'), endDate: new Date('02, 02, 2020') },
                     onChange: mockOnChange
@@ -86,7 +84,7 @@ describe('DateRangePicker', () => {
         });
         it('should change call onChange of to date with expected date', () => {
             const mockOnChange = jest.fn(),
-                dateToSelect = { "endDate": new Date("2020-03-01T18:30:00.000Z"), "startDate": new Date("2020-01-01T18:30:00.000Z") },
+                dateToSelect = { endDate: new Date('2020-03-01T18:30:00.000Z'), startDate: new Date('2020-01-01T18:30:00.000Z') },
                 { container } = renderComponent({
                     value: { startDate: new Date('01, 02, 2020'), endDate: new Date('02, 02, 2020') },
                     onChange: mockOnChange
@@ -110,11 +108,9 @@ describe('DateRangePicker', () => {
         });
     });
     describe('error messages', () => {
-
-
         it('should return error message if FROM date entered is incomplete', async () => {
             const { container, getByText } = renderComponent({ required: true });
-            const inputEl = container.querySelector('#contract-from-input')
+            const inputEl = container.querySelector('#contract-from-input');
             fireEvent.change(inputEl, { target: { value: '04/31' } });
             fireEvent.blur(inputEl);
             await waitFor(() => expect(getByText('Enter valid date')).toBeInTheDocument());
@@ -122,7 +118,7 @@ describe('DateRangePicker', () => {
 
         it('should return error message if TO date entered is incomplete', async () => {
             const { container, getByText } = renderComponent({ required: true });
-            const inputEl = container.querySelector('#contract-to-input')
+            const inputEl = container.querySelector('#contract-to-input');
             fireEvent.change(inputEl, { target: { value: '04/31' } });
             fireEvent.blur(inputEl);
             await waitFor(() => expect(getByText('Enter valid date')).toBeInTheDocument());
@@ -134,36 +130,41 @@ describe('DateRangePicker', () => {
                 currentYear = new Date().getFullYear(),
                 currentMonth = new Date().getMonth(),
                 currentDay = new Date().getDay(),
-                dateToSelect = { startDate: new Date(currentYear, currentMonth, currentDay), endDate: new Date(currentYear, currentMonth + 1, currentDay) },
-                { container, getByTitle } = renderComponent({
+                dateToSelect = {
+                    startDate: new Date(currentYear, currentMonth, currentDay),
+                    endDate: new Date(currentYear, currentMonth + 1, currentDay)
+                },
+                { container, getByTitle, getAllByTitle } = renderComponent({
                     onChange: mockOnChange
                 });
             fireEvent.click(container.querySelector('svg'));
             fireEvent.click(getByTitle(dateToSelect.startDate.toDateString()));
-            fireEvent.click(getByTitle(dateToSelect.endDate.toDateString()));
+            fireEvent.click(getAllByTitle(dateToSelect.endDate.toDateString())[1]);
             expect(mockOnChange).toHaveBeenCalledTimes(2);
         });
 
         it('should match value on selecting date', async () => {
             const selectedDates: any = { startDate: null, endDate: null };
             const mockOnChange = (dates: any) => {
-                if ('startDate' in dates && dates.startDate) {
-                    selectedDates.startDate = dates.startDate;
-                } else if ('endDate' in dates && dates.endDate) {
-                    selectedDates.endDate = dates.endDate;
-                }
-
-            },
+                    if ('startDate' in dates && dates.startDate) {
+                        selectedDates.startDate = dates.startDate;
+                    } else if ('endDate' in dates && dates.endDate) {
+                        selectedDates.endDate = dates.endDate;
+                    }
+                },
                 currentYear = new Date().getFullYear(),
                 currentMonth = new Date().getMonth(),
                 currentDay = new Date().getDay(),
-                dateToSelect = { startDate: new Date(currentYear, currentMonth, currentDay), endDate: new Date(currentYear, currentMonth + 1, currentDay) },
-                { container, getByTitle } = renderComponent({
+                dateToSelect = {
+                    startDate: new Date(currentYear, currentMonth, currentDay),
+                    endDate: new Date(currentYear, currentMonth + 1, currentDay)
+                },
+                { container, getByTitle, getAllByTitle } = renderComponent({
                     onChange: mockOnChange
                 });
             fireEvent.click(container.querySelector('svg'));
             fireEvent.click(getByTitle(dateToSelect.startDate.toDateString()));
-            fireEvent.click(getByTitle(dateToSelect.endDate.toDateString()));
+            fireEvent.click(getAllByTitle(dateToSelect.endDate.toDateString())[1]);
             expect(selectedDates).toMatchObject(dateToSelect);
         });
 
@@ -223,7 +224,6 @@ describe('DateRangePicker', () => {
             expect(mockOnChange).toHaveBeenCalled();
             fireEvent.focus(inputElFrom);
             expect(mockOnFocus).toHaveBeenCalled();
-
         });
 
         it('should call invalid handler if passed', () => {
