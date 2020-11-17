@@ -30,5 +30,5 @@ export type ExtendedDateProps = {
     isSelectedStartDate?: boolean;
     isSelectedEndDate?: boolean;
     isHoverBetweenDates?: boolean;
-    isInRangeAfterDateSelection?: boolean;
+    isHoverDateAfterDateSelection?: boolean;
 };

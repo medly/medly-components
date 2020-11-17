@@ -1,5 +1,4 @@
 import { centerAligned, css, styled } from '@medly-components/utils';
-import Text from '../Text';
 import TextField from '../TextField';
 import { DateProps } from './types';
 
@@ -65,13 +64,6 @@ export const CalendarGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(7, 4rem);
     grid-auto-rows: auto;
-
-    & > ${Text.Style} {
-        user-select: none;
-        text-align: center;
-        padding: 0.8rem 1rem;
-        margin-bottom: 0.8rem;
-    }
 `;
 
 const activeDate = () => css`

@@ -134,12 +134,12 @@ describe('DateRangePicker', () => {
                     startDate: new Date(currentYear, currentMonth, currentDay),
                     endDate: new Date(currentYear, currentMonth + 1, currentDay)
                 },
-                { container, getByTitle, getAllByTitle } = renderComponent({
+                { container, getByTitle } = renderComponent({
                     onChange: mockOnChange
                 });
             fireEvent.click(container.querySelector('svg'));
             fireEvent.click(getByTitle(dateToSelect.startDate.toDateString()));
-            fireEvent.click(getAllByTitle(dateToSelect.endDate.toDateString())[1]);
+            fireEvent.click(getByTitle(dateToSelect.endDate.toDateString()));
             expect(mockOnChange).toHaveBeenCalledTimes(2);
         });
 
@@ -159,12 +159,12 @@ describe('DateRangePicker', () => {
                     startDate: new Date(currentYear, currentMonth, currentDay),
                     endDate: new Date(currentYear, currentMonth + 1, currentDay)
                 },
-                { container, getByTitle, getAllByTitle } = renderComponent({
+                { container, getByTitle } = renderComponent({
                     onChange: mockOnChange
                 });
             fireEvent.click(container.querySelector('svg'));
             fireEvent.click(getByTitle(dateToSelect.startDate.toDateString()));
-            fireEvent.click(getAllByTitle(dateToSelect.endDate.toDateString())[1]);
+            fireEvent.click(getByTitle(dateToSelect.endDate.toDateString()));
             expect(selectedDates).toMatchObject(dateToSelect);
         });
 

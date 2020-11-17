@@ -95,7 +95,6 @@ export const Calendar: React.FC<CalendarProps> & WithStyle = React.memo(
                     </Styled.MonthAndYearSelection>
                     <Styled.MonthNavigation
                         className="calendar-month-navigation-go-back"
-                        type="button"
                         disabled={isPrevBtnDisabled}
                         onClick={handlePreviousBtnClick}
                     >
@@ -103,7 +102,6 @@ export const Calendar: React.FC<CalendarProps> & WithStyle = React.memo(
                     </Styled.MonthNavigation>
                     <Styled.MonthNavigation
                         className="calendar-month-navigation-go-forward"
-                        type="button"
                         disabled={isNextBtnDisabled}
                         onClick={handleNextBtnClick}
                     >
@@ -121,7 +119,6 @@ export const Calendar: React.FC<CalendarProps> & WithStyle = React.memo(
                         return (
                             <Styled.Date
                                 key={index}
-                                type="button"
                                 title={_date.toDateString()}
                                 isInActiveMonth={isInActiveMonth}
                                 isSelected={isSelected}

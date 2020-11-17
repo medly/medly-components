@@ -1,13 +1,13 @@
 import React from 'react';
-import Text from '../../Text';
 import { WEEK_DAYS } from '../constants';
+import { WeekDay } from './WeekDays.styled';
 
 export const WeekDays = React.memo(() => (
     <>
         {WEEK_DAYS.map((label, index) => (
-            <Text textAlign="center" textWeight="Strong" key={`${label}_${index}`}>
+            <WeekDay textWeight="Strong" key={`${label}_${index}`}>
                 {label}
-            </Text>
+            </WeekDay>
         ))}
     </>
 ));

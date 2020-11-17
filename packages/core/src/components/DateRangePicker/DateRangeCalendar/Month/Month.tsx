@@ -48,7 +48,7 @@ export const Month: React.FC<Props> = React.memo(
                             isMonthLastDate = new Date(year, month + 1, 0).getDate() === _date.getDate(),
                             isWeekFirstDate = isSameDay(_date, startOfWeek(_date)),
                             isWeekLastDate = isSameDay(_date, endOfWeek(_date)),
-                            isInRangeAfterDateSelection =
+                            isHoverDateAfterDateSelection =
                                 (startDate && !endDate && startDate < _date) || (!startDate && endDate && endDate > _date),
                             disabled = _date > maxSelectableDate || _date < minSelectableDate;
 
@@ -65,7 +65,7 @@ export const Month: React.FC<Props> = React.memo(
                                 isInDateRange={isInDateRange}
                                 isSelectedStartDate={isSelectedStartDate}
                                 isSelectedEndDate={isSelectedEndDate}
-                                isInRangeAfterDateSelection={isInRangeAfterDateSelection}
+                                isHoverDateAfterDateSelection={isHoverDateAfterDateSelection}
                                 isMonthFirstDate={isMonthFirstDate}
                                 isMonthLastDate={isMonthLastDate}
                                 isWeekFirstDate={isWeekFirstDate}
@@ -74,12 +74,11 @@ export const Month: React.FC<Props> = React.memo(
                                 onMouseOver={!disabled && handleMouseOver(_date)}
                                 onMouseOut={handleMouseOver(null)}
                             >
-                                <Styled.Date
-                                    key={index}
-                                    title={_date.toDateString()}
-                                    disabled={disabled}>
-                                    <Text>{_date.getDate()}</Text>
-                                </Styled.Date>
+                                {isInActiveMonth && (
+                                    <Styled.Date key={index} title={_date.toDateString()} disabled={disabled}>
+                                        <Text>{_date.getDate()}</Text>
+                                    </Styled.Date>
+                                )}
                             </Styled.DateContainer>
                         );
                     })}

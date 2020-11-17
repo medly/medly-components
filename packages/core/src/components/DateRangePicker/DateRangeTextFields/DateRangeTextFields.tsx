@@ -33,7 +33,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
     const [builtInErrorMessage, setErrorMessage] = useState(''),
         [startDateText, setStartDateText] = useState(''),
         [endDateText, setEndDateText] = useState(''),
-        mask = displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase(),
+        mask = useMemo(() => displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase(), [displayFormat]),
         [startDateMaskLabel, setStartDateMaskLabel] = useState(mask),
         [endDateMaskLabel, setEndDateMaskLabel] = useState(mask),
         isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
