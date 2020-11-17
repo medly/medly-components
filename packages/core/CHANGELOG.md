@@ -3,6 +3,259 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.34.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.34.2...@medly-components/core@1.34.3) (2020-11-12)
+
+
+### Bug Fixes
+
+* cleanup styles ([84be352](https://github.com/medly/medly-components/commit/84be352f95b9af926118bcbafe142b3771c4d680))
+* update tests ([32c412a](https://github.com/medly/medly-components/commit/32c412a2204ad1ef6a6338bb7d19c532582da937))
+* update tests ([5d24f79](https://github.com/medly/medly-components/commit/5d24f799c0bac0eae1c76eb288b4d5588d559228))
+
+
+
+
+
+## [1.34.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.34.1...@medly-components/core@1.34.2) (2020-11-11)
+
+
+### Bug Fixes
+
+* lint issues ([0d3c7ba](https://github.com/medly/medly-components/commit/0d3c7ba595c1b1bf21632fbbc133acaebd6062e1))
+* **core:** update font weight to use theme ([42cb5dd](https://github.com/medly/medly-components/commit/42cb5dd7f7bf1c55414ede29f75d3ab824549cef))
+
+
+
+
+
+## [1.34.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.34.0...@medly-components/core@1.34.1) (2020-11-10)
+
+
+### Bug Fixes
+
+* type issue in the Cell component ([6f361b9](https://github.com/medly/medly-components/commit/6f361b97968fd3b861ac629a7c0f7c364577a501))
+
+
+
+
+
+# [1.34.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.4...@medly-components/core@1.34.0) (2020-11-10)
+
+
+### Features
+
+* add disabled option feature in multiselect component ([3bf43e0](https://github.com/medly/medly-components/commit/3bf43e06032422a494c422563af625cd794d9777))
+
+
+
+
+
+## [1.33.4](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.3...@medly-components/core@1.33.4) (2020-11-10)
+
+
+### Bug Fixes
+
+* **core:** cR fix ([d1fd81d](https://github.com/medly/medly-components/commit/d1fd81d6e3a506855640117ce1d15a5cb60e98a3))
+* **core:** expanded Row ([226f918](https://github.com/medly/medly-components/commit/226f918514686facde983ab98ef6a4b2e1b3fe2f))
+
+
+
+
+
+## [1.33.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.2...@medly-components/core@1.33.3) (2020-11-05)
+
+
+### Bug Fixes
+
+* autofill color issue in textField component ([e89d56b](https://github.com/medly/medly-components/commit/e89d56bae8892ac25a734744809f59a20ab9126e))
+* autofill option issue in singleSelect component ([f9d637b](https://github.com/medly/medly-components/commit/f9d637bc52fff3774c3fdfb4505375e32ed4009b))
+
+
+
+
+
+## [1.33.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.1...@medly-components/core@1.33.2) (2020-11-03)
+
+
+### Bug Fixes
+
+* **core:** small update to transform label function for fusion variant ([52b135c](https://github.com/medly/medly-components/commit/52b135c8599806d24cf5e76d453734626a2323a9))
+
+
+
+
+
+## [1.33.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.33.0...@medly-components/core@1.33.1) (2020-10-30)
+
+
+### Bug Fixes
+
+* count issue in Tab component ([4fcf351](https://github.com/medly/medly-components/commit/4fcf351247e54d46e95daf05b366b1b0b3ce2531))
+* height issue in textfield component ([34e4fdb](https://github.com/medly/medly-components/commit/34e4fdbaa6f91a3aa3057d988f1ada2fad5bf7ec))
+
+
+
+
+
+# [1.33.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.32.3...@medly-components/core@1.33.0) (2020-10-30)
+
+
+### Bug Fixes
+
+* add fullwidth to Textfield component in Datepicker ([5ee41df](https://github.com/medly/medly-components/commit/5ee41df34ff243e6698b22f119e4c483001baf4d))
+* padding issue in Textfield component ([43b7e25](https://github.com/medly/medly-components/commit/43b7e255bfb58cbf6002821db40a02b6f4841614))
+* **core:** add missing dependency in datepicker text change callback definition ([b1fcee3](https://github.com/medly/medly-components/commit/b1fcee37777fae37c941fc31c365fb31036c783a))
+* improve test coverage, attempt mobile bugfix ([7aa927b](https://github.com/medly/medly-components/commit/7aa927bb4554a9dd41d0e89be80c9aabaa445a57))
+* update snapshots ([21b7060](https://github.com/medly/medly-components/commit/21b7060ef1709cbc473cc6ffb372149f4ae7049a))
+
+
+### Features
+
+* added formatter support for custom component in table row ([660720f](https://github.com/medly/medly-components/commit/660720f3b7646bab6e33196563e32952a2a719f1))
+* adding fixes for existing issues, and addressing pr comments ([b5ce890](https://github.com/medly/medly-components/commit/b5ce89048edb4be4e304190ee07ccdc707847bc2))
+* adding mobile functionality for the datepicker component ([338bf77](https://github.com/medly/medly-components/commit/338bf77f82c74becdd5b9fd4420ad051c0f309c7))
+* adding more requested PR changes ([42042fa](https://github.com/medly/medly-components/commit/42042fa56f33c374c281b5d1b6c37c157197f2aa))
+* adding value functionality ([70358fa](https://github.com/medly/medly-components/commit/70358fa7bce8397bc0a18010be0657c1c95f9a8b))
+
+
+
+
+
+## [1.32.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.32.2...@medly-components/core@1.32.3) (2020-10-29)
+
+
+### Bug Fixes
+
+* width and height issue in Modal component ([465d4b6](https://github.com/medly/medly-components/commit/465d4b6104a1e879bf739046d0d64b423ed7e99a))
+
+
+
+
+
+## [1.32.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.32.1...@medly-components/core@1.32.2) (2020-10-29)
+
+
+### Bug Fixes
+
+* prop type for groupBy in Table component ([85c9bae](https://github.com/medly/medly-components/commit/85c9bae7e41b09a5fbba887710c9bbc12444a475))
+
+
+
+
+
+## [1.32.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.32.0...@medly-components/core@1.32.1) (2020-10-28)
+
+
+### Bug Fixes
+
+* add autofill css for mozilla ([9300b1f](https://github.com/medly/medly-components/commit/9300b1fff4eae432be3c11fb58b11783c45c28ce))
+* update value on change of the options ([56f1db0](https://github.com/medly/medly-components/commit/56f1db0817ad3cd259ddc59b67a8e724f46ac808))
+
+
+
+
+
+# [1.32.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.31.2...@medly-components/core@1.32.0) (2020-10-28)
+
+
+### Bug Fixes
+
+* add autofill css for textfield component ([48975d0](https://github.com/medly/medly-components/commit/48975d04963a4c86ff1380a2797daf13b57e7af2))
+* search issue in multiselect component ([6e5324a](https://github.com/medly/medly-components/commit/6e5324a42730199ba18c978eb27284a025107152))
+
+
+### Features
+
+* add close icon border to theme, update scrolling behavior/containers, extract scroll state log ([9d96d62](https://github.com/medly/medly-components/commit/9d96d6228e1a00659bfab4b06195fc04dd40caea))
+* add modal context ([f514ee5](https://github.com/medly/medly-components/commit/f514ee5fedb129d56b03d2bf4d048c23bd4a7e80))
+* add todo ([07bb63a](https://github.com/medly/medly-components/commit/07bb63af47bdc478b1b72d5a3b5138acddaf468d))
+* add useWindowSize hook, add debounce util, update padding, update header title variant based o ([6143ecd](https://github.com/medly/medly-components/commit/6143ecd5e585ac5ca770f60164bc5b60df40485b))
+* address PR comments, begin updating tests ([1675d5c](https://github.com/medly/medly-components/commit/1675d5cf6330c8f678b6a1f958ae093eb7c319bc))
+* begin adding mobile modal styles ([2c5f715](https://github.com/medly/medly-components/commit/2c5f7157e41ea650abaa9273d45c2812aee87385))
+* cleanup modal children usage, begin removing footer shadow on mobile ([032ddee](https://github.com/medly/medly-components/commit/032ddee6f67d5a61886453cd9db9809f0680c672))
+* cleanup types ([e2db9fb](https://github.com/medly/medly-components/commit/e2db9fb6cbb4aabfe9046fd14ebd1bd07beb2b16))
+* fix clear button bug, update animation ([8297280](https://github.com/medly/medly-components/commit/829728020a6f3a952ff612b92828dbf5f55e3c75))
+* fix import ([49beca9](https://github.com/medly/medly-components/commit/49beca9aed251af8300e802b3e1d6d9710c1f6c2))
+* fix useWindowSize bug, add modal mounting animations, fix icon size ([2005634](https://github.com/medly/medly-components/commit/2005634c92fde46eb3fc3eabaf5121bd92176bbd))
+* update content padding and header shadow based on scroll position ([f8308cb](https://github.com/medly/medly-components/commit/f8308cbdbdd0fb70d5b83179fc08a07fd66461ae))
+* update tests/snapshots, fix small issues ([b0fc1de](https://github.com/medly/medly-components/commit/b0fc1de8a5a05d3624e12c9140f80f36b59d952b))
+
+
+
+
+
+## [1.31.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.31.1...@medly-components/core@1.31.2) (2020-10-27)
+
+
+### Bug Fixes
+
+* pointer cursor issue in card component ([8506037](https://github.com/medly/medly-components/commit/85060372ef9ca8c50d8cfe7b54d97b81b51a4115))
+
+
+
+
+
+## [1.31.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.31.0...@medly-components/core@1.31.1) (2020-10-27)
+
+
+### Bug Fixes
+
+* **core:** fix multiselect options overlay z-index issue ([33bb316](https://github.com/medly/medly-components/commit/33bb316d8de5a13d7d47125b57ccd67c532b5421))
+
+
+
+
+
+# [1.31.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.30.1...@medly-components/core@1.31.0) (2020-10-27)
+
+
+### Bug Fixes
+
+* title issue of the table cell component ([f91d6ae](https://github.com/medly/medly-components/commit/f91d6ae18c2c2dfcbe867e49a1e768fc92922630))
+* **core:** fix single select option selection issue ([79c4d6a](https://github.com/medly/medly-components/commit/79c4d6a621a865135c92492d1d9b77e3c1f1eec9))
+* **core:** updated text field label to handle longer label text and remove whitespace from shorter l ([666b4de](https://github.com/medly/medly-components/commit/666b4de606c84f20332987cc9e4b389e68ce453c))
+
+
+### Features
+
+* **core:** handle long labels w elipses and remove white space for short labels - snapshots updated ([42c8bdd](https://github.com/medly/medly-components/commit/42c8bddd8406333a49e815d664d0df51eb4c9047))
+* **core:** update snapshots ([649c362](https://github.com/medly/medly-components/commit/649c362c81ff74c19a815d9350612562850e6f30))
+
+
+
+
+
+## [1.30.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.30.0...@medly-components/core@1.30.1) (2020-10-20)
+
+
+### Bug Fixes
+
+* increase max screen size of XL breakpoint ([55b4640](https://github.com/medly/medly-components/commit/55b4640f180f9859135d6f4233932498bc2f9d40))
+
+
+
+
+
+# [1.30.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.29.0...@medly-components/core@1.30.0) (2020-10-20)
+
+
+### Bug Fixes
+
+* add required tests for text field updates ([2fb86f7](https://github.com/medly/medly-components/commit/2fb86f78e4ecc6c07fd1e4bd35a440201b5d929b))
+* hover shadow in card component ([af56034](https://github.com/medly/medly-components/commit/af560343a80e298e64fc4d3201cf90a65d7b7645))
+* lint issues in the actionbar component ([d2e5de6](https://github.com/medly/medly-components/commit/d2e5de605cfbc7a48a44234f0a7e55f63795a6be))
+* **core:** add props and WithStyle type to Modal Header and Content ([7954cd7](https://github.com/medly/medly-components/commit/7954cd76c214cefdaf58ee29fd8e09480e643581))
+* **core:** remove props from header and content type definitions ([b997968](https://github.com/medly/medly-components/commit/b99796806c3e29b2d507752534e8d2ed4dedf6a5))
+
+
+### Features
+
+* **core:** add action bar component ([6ab733a](https://github.com/medly/medly-components/commit/6ab733a6606147af26ad21cc309e2d27c47f325c))
+
+
+
+
+
 # [1.29.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.28.2...@medly-components/core@1.29.0) (2020-10-15)
 
 

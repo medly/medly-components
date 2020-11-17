@@ -3,6 +3,59 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.3](https://github.com/medly/medly-components/compare/@medly-components/utils@1.6.2...@medly-components/utils@1.6.3) (2020-11-10)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.6.2](https://github.com/medly/medly-components/compare/@medly-components/utils@1.6.1...@medly-components/utils@1.6.2) (2020-11-05)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.6.1](https://github.com/medly/medly-components/compare/@medly-components/utils@1.6.0...@medly-components/utils@1.6.1) (2020-10-30)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+# [1.6.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.5.5...@medly-components/utils@1.6.0) (2020-10-28)
+
+
+### Features
+
+* add useWindowSize hook, add debounce util, update padding, update header title variant based o ([6143ecd](https://github.com/medly/medly-components/commit/6143ecd5e585ac5ca770f60164bc5b60df40485b))
+* fix useWindowSize bug, add modal mounting animations, fix icon size ([2005634](https://github.com/medly/medly-components/commit/2005634c92fde46eb3fc3eabaf5121bd92176bbd))
+* update tests/snapshots, fix small issues ([b0fc1de](https://github.com/medly/medly-components/commit/b0fc1de8a5a05d3624e12c9140f80f36b59d952b))
+
+
+
+
+
+## [1.5.5](https://github.com/medly/medly-components/compare/@medly-components/utils@1.5.4...@medly-components/utils@1.5.5) (2020-10-20)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.5.4](https://github.com/medly/medly-components/compare/@medly-components/utils@1.5.3...@medly-components/utils@1.5.4) (2020-10-20)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
 ## [1.5.3](https://github.com/medly/medly-components/compare/@medly-components/utils@1.5.2...@medly-components/utils@1.5.3) (2020-10-15)
 
 **Note:** Version bump only for package @medly-components/utils

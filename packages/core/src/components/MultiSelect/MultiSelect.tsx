@@ -1,4 +1,4 @@
-import { useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
+import { useCombinedRefs, useOuterClickNotifier, useUpdateEffect, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import TextField from '../TextField';
 import { filterOptions, getDefaultSelectedOptions } from './helpers';
@@ -65,7 +65,6 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
             ),
             handleOptionClick = useCallback(
                 (latestValues: any[]) => {
-                    setSelectedOptions(getDefaultSelectedOptions(options, latestValues));
                     setErrorMessage((validator && validator(latestValues)) || '');
                     onChange && onChange(latestValues);
                 },
@@ -76,28 +75,11 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                 hideOptions();
             }, [areOptionsVisible]),
             onClearHandler = useCallback(() => {
-                setSelectedOptions([]);
-                onChange && onChange([]);
-                setInputValue('');
-            }, []),
+                const filteredOptions = selectedOptions.filter(({ disabled }) => disabled).map(({ value }) => value);
+                onChange && onChange(filteredOptions);
+            }, [selectedOptions]),
             handleInputOnBlur = useCallback(() => areOptionsVisible && inputRef.current.focus(), [areOptionsVisible]),
             inputValidator = useCallback(() => undefined, []);
-
-        useEffect(() => {
-            setSelectedOptions(getDefaultSelectedOptions(defaultOptions, values));
-            setOptions(defaultOptions);
-        }, [defaultOptions, values]);
-
-        useEffect(() => {
-            if (areOptionsVisible) {
-                inputRef.current && inputRef.current.focus();
-                setPlaceholder(selectedOptions.length > 0 ? `${selectedOptions.length} options selected` : props.placeholder);
-            } else {
-                setInputValue(selectedOptions.map(obj => obj.value).toString());
-                setOptions(defaultOptions);
-                setTimeout(() => hideOptions(), 0);
-            }
-        }, [selectedOptions, areOptionsVisible]);
 
         const validate = useCallback(() => {
                 const message =
@@ -114,6 +96,26 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                 [validate]
             );
 
+        useEffect(() => {
+            setSelectedOptions(getDefaultSelectedOptions(defaultOptions, values));
+            setOptions(inputRef.current.value ? filterOptions(defaultOptions, inputRef.current.value) : defaultOptions);
+        }, [defaultOptions, values]);
+
+        useEffect(() => {
+            if (areOptionsVisible) {
+                inputRef.current && inputRef.current.focus();
+                setPlaceholder(selectedOptions.length > 0 ? `${selectedOptions.length} options selected` : props.placeholder);
+            } else {
+                setInputValue(selectedOptions.map(obj => obj.value).join(', '));
+                setOptions(defaultOptions);
+                setTimeout(() => hideOptions(), 0);
+            }
+        }, [selectedOptions, areOptionsVisible]);
+
+        useUpdateEffect(() => {
+            selectedOptions.length > 0 && validate();
+        }, [selectedOptions]);
+
         useOuterClickNotifier(() => {
             handleOuterClick();
         }, wrapperRef);
@@ -128,6 +130,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                 onClear={onClearHandler}
                 isActive={areOptionsVisible}
                 optionsCount={selectedOptions.length}
+                hideClearIcon={selectedOptions.every(({ disabled }) => disabled)}
             />
         );
 

@@ -60,11 +60,15 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             ]),
             handleInputChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
-                    const target = event.target as HTMLInputElement,
-                        newOptions = filterOptions(getUpdatedOptions(defaultOptions, selectedOption), target.value);
-                    setInputValue(target.value);
-                    newOptions.length && target.value ? setOptions(newOptions) : updateToDefaultOptions();
-                    !areOptionsVisible && setOptionsVisibilityState(true);
+                    const { value: inputValue } = event.target as HTMLInputElement,
+                        newOptions = filterOptions(getUpdatedOptions(defaultOptions, selectedOption), inputValue);
+                    setInputValue(inputValue);
+                    newOptions.length && inputValue ? setOptions(newOptions) : updateToDefaultOptions();
+                    if (newOptions.length === 1 && newOptions[0].label === inputValue) {
+                        !areOptionsVisible && onChange && onChange(newOptions[0].value);
+                    } else if (!areOptionsVisible) {
+                        setOptionsVisibilityState(true);
+                    }
                 },
                 [areOptionsVisible, defaultOptions, selectedOption, updateToDefaultOptions]
             ),
@@ -106,7 +110,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 (event: React.FocusEvent<HTMLInputElement>) => {
                     isFocused.current = false;
                     onBlur && onBlur(event);
-                    setTimeout(() => !isFocused.current && hideOptions(), 150);
+                    setTimeout(() => !isFocused.current && hideOptions(), 250);
                 },
                 [onBlur]
             ),
@@ -117,6 +121,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             setInputValue(selected.label);
             setSelectedOption(selected);
             setOptions(getUpdatedOptions(defaultOptions, selected));
+            value !== selected.value && onChange && onChange(selected.value || undefined);
         }, [defaultOptions, value]);
 
         useKeyboardNavigation({

@@ -45,7 +45,10 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -115,6 +118,10 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   border-width: 0.2rem;
 }
 
+.c3 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c3:focus-within,
 .c3:focus-within:hover {
   background-color: #E7F0FF;
@@ -142,6 +149,11 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #126AFA;
+}
+
+.c3:focus-within input,
+.c3:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -203,15 +215,11 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -420,7 +428,10 @@ exports[`SingleSelect component should render properly when isSearchable is true
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -490,6 +501,10 @@ exports[`SingleSelect component should render properly when isSearchable is true
   border-width: 0.2rem;
 }
 
+.c3 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c3:focus-within,
 .c3:focus-within:hover {
   background-color: #E7F0FF;
@@ -517,6 +532,11 @@ exports[`SingleSelect component should render properly when isSearchable is true
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #126AFA;
+}
+
+.c3:focus-within input,
+.c3:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -578,15 +598,11 @@ exports[`SingleSelect component should render properly when isSearchable is true
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -972,7 +988,10 @@ exports[`SingleSelect component should take passed max width 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1042,6 +1061,10 @@ exports[`SingleSelect component should take passed max width 1`] = `
   border-width: 0.2rem;
 }
 
+.c3 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c3:focus-within,
 .c3:focus-within:hover {
   background-color: #E7F0FF;
@@ -1069,6 +1092,11 @@ exports[`SingleSelect component should take passed max width 1`] = `
 .c3:focus-within .c10 *,
 .c3:focus-within:hover .c10 * {
   fill: #126AFA;
+}
+
+.c3:focus-within input,
+.c3:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -1131,15 +1159,11 @@ exports[`SingleSelect component should take passed max width 1`] = `
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -1534,7 +1558,10 @@ exports[`SingleSelect component with filled variant should render disabled state
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1601,6 +1628,10 @@ exports[`SingleSelect component with filled variant should render disabled state
   transition: all 100ms ease-out;
 }
 
+.c3 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c3::after,
 .c3:hover::after {
   border-width: 0.1rem;
@@ -1608,7 +1639,7 @@ exports[`SingleSelect component with filled variant should render disabled state
 }
 
 .c3 input {
-  color: #435465;
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
 .c3 .c6 {
@@ -1672,15 +1703,11 @@ exports[`SingleSelect component with filled variant should render disabled state
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -2046,7 +2073,10 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2116,6 +2146,10 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   border-width: 0.2rem;
 }
 
+.c3 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c3:focus-within,
 .c3:focus-within:hover {
   background-color: #E7F0FF;
@@ -2143,6 +2177,11 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #126AFA;
+}
+
+.c3:focus-within input,
+.c3:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -2204,15 +2243,11 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -2430,7 +2465,10 @@ exports[`SingleSelect component with filled variant should render with label pro
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2500,6 +2538,10 @@ exports[`SingleSelect component with filled variant should render with label pro
   border-width: 0.2rem;
 }
 
+.c3 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c3:focus-within,
 .c3:focus-within:hover {
   background-color: #E7F0FF;
@@ -2527,6 +2569,11 @@ exports[`SingleSelect component with filled variant should render with label pro
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #126AFA;
+}
+
+.c3:focus-within input,
+.c3:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -2588,19 +2635,15 @@ exports[`SingleSelect component with filled variant should render with label pro
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c5,
@@ -3716,7 +3759,10 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -3747,9 +3793,9 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
-  background-color: transparent;
+  background-color: #ffffff;
   cursor: not-allowed;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c3 .c6 {
@@ -3768,6 +3814,10 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 
 .c3 ~ .c11 {
   color: #546A7F;
+}
+
+.c3 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c3::after {
@@ -3795,7 +3845,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 }
 
 .c3 input {
-  color: #435465;
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c3 .c6 {
@@ -3859,15 +3909,11 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -4233,7 +4279,10 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4264,7 +4313,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c3 .c6 {
@@ -4283,6 +4332,10 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 
 .c3 ~ .sc-AxirZ {
   color: #546A7F;
+}
+
+.c3 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c3::after {
@@ -4319,7 +4372,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c3:focus-within::after,
@@ -4344,6 +4397,11 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #126AFA;
+}
+
+.c3:focus-within input,
+.c3:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -4405,15 +4463,11 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c5,
@@ -4631,7 +4685,10 @@ exports[`SingleSelect component with outlined variant should render with label p
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4662,7 +4719,7 @@ exports[`SingleSelect component with outlined variant should render with label p
   transition: all 100ms ease-out;
   cursor: text;
   border-radius: 0.4rem;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c3 .c6 {
@@ -4681,6 +4738,10 @@ exports[`SingleSelect component with outlined variant should render with label p
 
 .c3 ~ .c11 {
   color: #546A7F;
+}
+
+.c3 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c3::after {
@@ -4717,7 +4778,7 @@ exports[`SingleSelect component with outlined variant should render with label p
 
 .c3:focus-within,
 .c3:focus-within:hover {
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
 .c3:focus-within::after,
@@ -4742,6 +4803,11 @@ exports[`SingleSelect component with outlined variant should render with label p
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #126AFA;
+}
+
+.c3:focus-within input,
+.c3:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
 }
 
 .c3:focus-within input::-webkit-input-placeholder,
@@ -4803,19 +4869,15 @@ exports[`SingleSelect component with outlined variant should render with label p
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .c5,

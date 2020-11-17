@@ -352,7 +352,7 @@ exports[`SideNav should render properly with shadow 1`] = `
 
 <div>
   <aside
-    class="sc-pQSRh c0"
+    class="sc-oUoif c0"
     id="medly-sidenav"
   >
     <nav
@@ -856,7 +856,7 @@ exports[`SideNav should render properly without shadow 1`] = `
 
 <div>
   <aside
-    class="sc-pQSRh c0"
+    class="sc-oUoif c0"
     id="medly-sidenav"
   >
     <nav

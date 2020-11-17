@@ -28,9 +28,11 @@ export const ExtendedRowCell: React.FC<ExtendedRowCellProps> & WithStyle = React
             />
 
             <ExtendedRowCellStyled onClick={stopPropagation} tableSize={tableSize} isRowExpanded={isRowExpanded}>
-                <Wrapper tableSize={tableSize}>
-                    <ExpandedRowComponent rowId={rowId} rowData={rowData} disabled={isRowClickDisabled} />
-                </Wrapper>
+                {isRowExpanded ? (
+                    <Wrapper tableSize={tableSize}>
+                        <ExpandedRowComponent rowId={rowId} rowData={rowData} disabled={isRowClickDisabled} />
+                    </Wrapper>
+                ) : null}
             </ExtendedRowCellStyled>
         </>
     );

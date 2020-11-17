@@ -12444,7 +12444,10 @@ exports[`DatePicker component should render properly when value is of date type 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -12506,6 +12509,10 @@ exports[`DatePicker component should render properly when value is of date type 
   transition: all 100ms ease-out;
 }
 
+.c4 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c4::after,
 .c4:hover::after {
   border-width: 0.1rem;
@@ -12513,7 +12520,7 @@ exports[`DatePicker component should render properly when value is of date type 
 }
 
 .c4 input {
-  color: #435465;
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
 .c4 .c9 {
@@ -12591,19 +12598,15 @@ exports[`DatePicker component should render properly when value is of date type 
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .c6,
@@ -12830,7 +12833,10 @@ exports[`DatePicker component should render properly when value is of string typ
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: 100%;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -12892,6 +12898,10 @@ exports[`DatePicker component should render properly when value is of string typ
   transition: all 100ms ease-out;
 }
 
+.c4 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
 .c4::after,
 .c4:hover::after {
   border-width: 0.1rem;
@@ -12899,7 +12909,7 @@ exports[`DatePicker component should render properly when value is of string typ
 }
 
 .c4 input {
-  color: #435465;
+  box-shadow: 0 0 0 100000px #F7F8F9 inset;
 }
 
 .c4 .c9 {
@@ -12980,15 +12990,11 @@ exports[`DatePicker component should render properly when value is of string typ
   box-sizing: border-box;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  background: transparent;
+  background-color: transparent;
   border: none;
   text-overflow: ellipsis;
   resize: none;
   z-index: 1;
-  -webkit-scroll-padding-top: 10px;
-  -moz-scroll-padding-top: 10px;
-  -ms-scroll-padding-top: 10px;
-  scroll-padding-top: 10px;
 }
 
 .c6,

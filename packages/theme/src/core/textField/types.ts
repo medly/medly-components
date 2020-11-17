@@ -25,17 +25,20 @@ export interface TextFieldTheme {
             shadowColor: string;
         };
         disabled: {
+            bgColor: string;
             labelColor: string;
             textColor: string;
             borderColor: string;
         };
         active: {
+            bgColor: string;
             placeholderColor: string;
             borderColor: string;
             labelColor: string;
             shadowColor: string;
         };
         error: {
+            bgColor: string;
             caretColor: string;
             placeholderColor: string;
             cursorColor: string;

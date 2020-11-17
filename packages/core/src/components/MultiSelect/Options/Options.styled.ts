@@ -1,20 +1,10 @@
-import { SvgIcon } from '@medly-components/icons';
 import { getFontStyle, styled, WithThemeProp } from '@medly-components/utils';
 import Checkbox from '../../Checkbox';
 import { SelectorGroup } from '../../Selectors';
-import { Chip } from '../Chip/Chip';
 
 export const ChipArea = styled.div<WithThemeProp>`
     border-bottom: 1px solid ${({ theme }) => theme.colors.grey[200]};
     padding: 0.5rem 1.3rem;
-    ${Chip.Style} {
-        padding: 0 0.3rem 0 0.9rem;
-        margin: 0.2rem;
-        ${SvgIcon} {
-            background-color: transparent;
-            padding: 0.2rem;
-        }
-    }
     > p {
         margin: 0.3rem;
     }
@@ -28,7 +18,7 @@ export const OptionsWrapper = styled.div<WithThemeProp & { size: 'S' | 'M' }>`
     box-sizing: border-box;
     border-radius: 0.4rem;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
 `;
 
 export const Options = styled.ul<WithThemeProp & { size: 'S' | 'M' }>`

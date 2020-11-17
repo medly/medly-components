@@ -3,10 +3,10 @@ import { Dispatch, SetStateAction } from 'react';
 import ColumnConfiguration from './ColumnConfiguration';
 
 export type SortOrder = 'asc' | 'desc';
-
-export type Data = {
+export type ObjectType = {
     [key: string]: any;
-}[];
+};
+export type Data = ObjectType[];
 
 export interface TableColumnConfig {
     /** Title of the column */
@@ -32,7 +32,7 @@ export interface TableColumnConfig {
     /** Pass any function to format the column data */
     formatter?: (data: any) => any;
     /** Custom component */
-    component?: React.FC<{ data?: any; rowId?: any; disabled?: boolean; rowData?: Data }>;
+    component?: React.FC<{ data?: any; rowId?: any; disabled?: boolean; rowData?: ObjectType }>;
     /** This will be handled internally */
     size?: string;
 }
@@ -74,7 +74,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Function to be called on row selection */
     onRowSelection?: Dispatch<SetStateAction<(string | number)[]>>;
     /** Function to be called on row click */
-    onRowClick?: (rowData: object) => void;
+    onRowClick?: (rowData: ObjectType) => void;
     /** Default Sort Field*/
     defaultSortField?: string;
     /** Default Sort Order*/
@@ -82,9 +82,9 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Function to be called on click of sort icon */
     onSort?: (field: string, order: SortOrder) => void;
     /** Component to show when row is expanded */
-    expandedRowComponent?: React.FC<{ rowData?: any; rowId?: any; disabled?: boolean }>;
+    expandedRowComponent?: React.FC<{ rowData?: ObjectType; rowId?: any; disabled?: boolean }>;
     /** Name of the key in data on which grouping is applied */
-    groupBy?: 'string';
+    groupBy?: string;
     /** Name of the key in data on which grouping is applied */
     getGroupedData?: (title: string) => Promise<object[]>;
     /** Actions bar items */

@@ -10,7 +10,7 @@ const getStyle = (required: boolean, variant: 'outlined' | 'filled' | 'fusion') 
     } else if (!required && variant === 'fusion') {
         return css`
             ::after {
-                content: ' (Optional)';
+                content: ' (optional)';
             }
         `;
     }
@@ -21,6 +21,7 @@ export const Label = styled('label')<{
     variant: 'outlined' | 'filled' | 'fusion';
     size: 'S' | 'M';
     multiline?: boolean;
+    inputWidth: number;
 }>`
     top: ${({ multiline }) => (multiline ? '1.1rem' : '50%')};
     left: 0;
@@ -35,7 +36,8 @@ export const Label = styled('label')<{
     transform: translateY(-50%);
     opacity: 1;
     z-index: 1;
-    width: 100%;
+    width: ${({ inputWidth }) => `calc(${inputWidth}px - 2rem) `};
+    max-width: min-content;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

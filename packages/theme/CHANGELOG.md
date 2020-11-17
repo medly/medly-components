@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.25.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.24.1...@medly-components/theme@1.25.0) (2020-11-10)
+
+
+### Features
+
+* add disabled option feature in multiselect component ([3bf43e0](https://github.com/medly/medly-components/commit/3bf43e06032422a494c422563af625cd794d9777))
+
+
+
+
+
+## [1.24.1](https://github.com/medly/medly-components/compare/@medly-components/theme@1.24.0...@medly-components/theme@1.24.1) (2020-11-05)
+
+
+### Bug Fixes
+
+* autofill color issue in textField component ([e89d56b](https://github.com/medly/medly-components/commit/e89d56bae8892ac25a734744809f59a20ab9126e))
+
+
+
+
+
+# [1.24.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.23.1...@medly-components/theme@1.24.0) (2020-10-28)
+
+
+### Features
+
+* add close icon border to theme, update scrolling behavior/containers, extract scroll state log ([9d96d62](https://github.com/medly/medly-components/commit/9d96d6228e1a00659bfab4b06195fc04dd40caea))
+* add useWindowSize hook, add debounce util, update padding, update header title variant based o ([6143ecd](https://github.com/medly/medly-components/commit/6143ecd5e585ac5ca770f60164bc5b60df40485b))
+
+
+
+
+
+## [1.23.1](https://github.com/medly/medly-components/compare/@medly-components/theme@1.23.0...@medly-components/theme@1.23.1) (2020-10-20)
+
+
+### Bug Fixes
+
+* increase max screen size of XL breakpoint ([55b4640](https://github.com/medly/medly-components/commit/55b4640f180f9859135d6f4233932498bc2f9d40))
+
+
+
+
+
+# [1.23.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.22.0...@medly-components/theme@1.23.0) (2020-10-20)
+
+
+### Features
+
+* **core:** add action bar component ([6ab733a](https://github.com/medly/medly-components/commit/6ab733a6606147af26ad21cc309e2d27c47f325c))
+
+
+
+
+
 # [1.22.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.21.0...@medly-components/theme@1.22.0) (2020-10-15)
 
 

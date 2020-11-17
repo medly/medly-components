@@ -2,8 +2,8 @@ import { WithStyle } from '@medly-components/utils';
 import React, { useCallback, useMemo } from 'react';
 import Checkbox from '../../Checkbox';
 import CheckboxGroup from '../../CheckboxGroup';
-import Chip from '../Chip';
 import { Option } from '../types';
+import Chip from './Chip';
 import * as Styled from './Options.styled';
 import { OptionsProps } from './types';
 
@@ -35,20 +35,13 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
         );
 
     return (
-        <Styled.OptionsWrapper size={size} id={`${id}-options-wrapper`}>
+        <Styled.OptionsWrapper size={size} id={`${id}-options-wrapper`} onClick={stopPropagation}>
             <Styled.ChipArea id={`${id}-selected-chips`}>
-                {selectedValues.length === 0 ? (
+                {values.length === 0 ? (
                     <p>-</p>
                 ) : (
-                    selectedValues.map(value => (
-                        <Chip
-                            id={`${id}-${value}-chip`}
-                            variant="outlined"
-                            size="S"
-                            key={value}
-                            label={value}
-                            onClear={handleClearHandler}
-                        />
+                    values.map(({ value, disabled }) => (
+                        <Chip id={`${id}-${value}-chip`} key={value} label={value} disabled={disabled} onClear={handleClearHandler} />
                     ))
                 )}
             </Styled.ChipArea>

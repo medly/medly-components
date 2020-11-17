@@ -4,54 +4,48 @@ import { Label } from './Label.styled';
 import { MaskPlaceholder } from './MaskPlaceholder.styled';
 
 const transformLabel = ({ variant, multiline }: StyledProps) => {
-    const fusionLabelStyle = `            
-        background-color: white;
-        padding: 0 0.4rem;
-        z-index: 1;`;
-    if (multiline && variant === 'fusion') {
-        return css`
-            transform: translateY(-120%) scale(0.67);
-            ${fusionLabelStyle};
-        `;
-    }
-    if (multiline && variant !== 'fusion') {
-        return 'transform: translateY(-50%) scale(0.75)';
-    }
     if (variant === 'fusion') {
         return css`
-            transform: translateY(-140%) scale(0.67);
-            ${fusionLabelStyle};
+            background-color: white;
+            padding: 0 0.5rem;
+            transform: translateX(-0.4rem) translateY(${multiline ? '-120%' : '-135%'}) scale(0.67);
+        `;
+    } else {
+        return css`
+            transform: translateY(${multiline ? '-50%' : '-87%'}) scale(0.75);
         `;
     }
-    return 'transform: translateY(-87%) scale(0.75)';
 };
+
+const getInputHeight = ({ size, multiline, variant }: StyledProps) =>
+    multiline ? (size === 'M' ? (variant === 'fusion' ? '100%' : '90%') : '100%') : undefined;
 
 const styleWithLabel = ({ variant }: StyledProps) => {
     return css`
         align-self: flex-end;
-        padding-bottom: ${variant === 'filled' ? '0.7rem' : variant === 'fusion' ? '1.4rem' : '0.6rem'};
+        margin-bottom: ${variant === 'filled' ? '0.7rem' : variant === 'fusion' ? '1.3rem' : '0.6rem'};
     `;
 };
 
 export const Input = styled('input')<StyledProps>`
     color: ${({ variant, theme }) => theme.textField[variant].default.textColor};
     width: 100%;
-    height: ${({ multiline }) => multiline && '100%'};
-    margin: 0;
-    padding: ${({ multiline, variant, size }) => (multiline && variant !== 'fusion' && size === 'M' ? '1.6rem 0 0 0' : 0)};
+    margin: ${({ multiline, variant, size }) => (multiline && variant !== 'fusion' && size === 'M' ? '1.6rem 0 0 0' : 0)};
+    padding: 0;
+    height: ${getInputHeight};
     box-sizing: border-box;
     transition: all 100ms ease-out;
-    background: transparent;
+    background-color: transparent;
     border: none;
     text-overflow: ellipsis;
     resize: none;
     z-index: 1;
-    scroll-padding-top: 10px;
 
-    ${({ isLabelPresent, size }) => isLabelPresent && size !== 'S' && styleWithLabel};
+    ${({ isLabelPresent, size, multiline }) => isLabelPresent && size !== 'S' && !multiline && styleWithLabel};
     &,
     & ~ ${MaskPlaceholder} {
-        ${({ theme, size, multiline }) => getFontStyle({ theme, fontVariant: multiline ? 'body2' : theme.textField.textVariant[size] })}
+        ${({ theme, size, multiline }) =>
+            getFontStyle({ theme, fontVariant: multiline && size === 'S' ? 'body2' : theme.textField.textVariant[size] })}
     }
 
     &:focus {
@@ -73,8 +67,12 @@ export const Input = styled('input')<StyledProps>`
     }
 
     &:not(:placeholder-shown) ~ ${Label}, &:focus ~ ${Label} {
-        opacity: ${({ size }) => size === 'S' && '0'};
+        opacity: ${({ size }) => size === 'S' && 0};
         ${({ size }) => size === 'M' && transformLabel};
+    }
+
+    &:focus ~ ${Label} {
+        font-weight: ${({ variant, theme }) => variant === 'fusion' && theme.font.weights.Medium};
     }
 
     &:not(:placeholder-shown) ~ ${MaskPlaceholder} {

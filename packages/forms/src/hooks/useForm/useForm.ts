@@ -1,4 +1,4 @@
-import { parseToDate } from '@medly-components/utils';
+import { parseToDate, useUpdateEffect } from '@medly-components/utils';
 import { format } from 'date-fns';
 import memoize from 'fast-memoize';
 import { useCallback, useState } from 'react';
@@ -9,6 +9,10 @@ export const useForm = (initialState: object): UseFormResult => {
     const [values, setValues] = useState(createDottedKeyObject(initialState));
     const [errorMessages, setErrorMessages] = useState({});
     const [formKey, setFormKey] = useState(0);
+
+    useUpdateEffect(() => {
+        setValues(createDottedKeyObject(initialState));
+    }, [initialState]);
 
     const addErrorMessage = useCallback((key: string, message: string) => {
         setErrorMessages(error => ({ ...error, [key]: message }));
