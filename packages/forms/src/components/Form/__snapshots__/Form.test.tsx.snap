@@ -539,15 +539,6 @@ exports[`Form should handle dates with initial dates as null 1`] = `
   border-bottom-left-radius: 0;
 }
 
-.c28 > button {
-  background-color: transparent;
-}
-
-.c28 > button > .c21 {
-  padding: 0;
-  margin: 0;
-}
-
 .c28:hover > button:not(:disabled) {
   border-color: #126AFA;
 }
@@ -578,15 +569,6 @@ exports[`Form should handle dates with initial dates as null 1`] = `
 .c31::before {
   right: -1.8rem;
   width: 7.2rem;
-}
-
-.c31 > button {
-  background-color: transparent;
-}
-
-.c31 > button > .c21 {
-  padding: 0;
-  margin: 0;
 }
 
 .c31:hover > button:not(:disabled) {
@@ -635,15 +617,6 @@ exports[`Form should handle dates with initial dates as null 1`] = `
   right: 2.2rem;
 }
 
-.c32 > button {
-  background-color: transparent;
-}
-
-.c32 > button > .c21 {
-  padding: 0;
-  margin: 0;
-}
-
 .c32:hover > button:not(:disabled) {
   border-color: #126AFA;
 }
@@ -689,15 +662,6 @@ exports[`Form should handle dates with initial dates as null 1`] = `
   width: 3.4rem;
 }
 
-.c33 > button {
-  background-color: transparent;
-}
-
-.c33 > button > .c21 {
-  padding: 0;
-  margin: 0;
-}
-
 .c33:hover > button:not(:disabled) {
   border-color: #126AFA;
 }
@@ -731,13 +695,7 @@ exports[`Form should handle dates with initial dates as null 1`] = `
 }
 
 .c34 > button {
-  background-color: transparent;
   border-color: #C7D0D8;
-}
-
-.c34 > button > .c21 {
-  padding: 0;
-  margin: 0;
 }
 
 .c34:hover > button:not(:disabled) {
@@ -772,15 +730,6 @@ exports[`Form should handle dates with initial dates as null 1`] = `
 .c35::before {
   right: -1.8rem;
   width: 7.2rem;
-}
-
-.c35 > button {
-  background-color: transparent;
-}
-
-.c35 > button > .c21 {
-  padding: 0;
-  margin: 0;
 }
 
 .c35:hover > button:not(:disabled) {
@@ -831,15 +780,6 @@ exports[`Form should handle dates with initial dates as null 1`] = `
   right: 2.2rem;
 }
 
-.c36 > button {
-  background-color: transparent;
-}
-
-.c36 > button > .c21 {
-  padding: 0;
-  margin: 0;
-}
-
 .c36:hover > button:not(:disabled) {
   border-color: #126AFA;
 }
@@ -887,15 +827,6 @@ exports[`Form should handle dates with initial dates as null 1`] = `
   width: 3.4rem;
 }
 
-.c37 > button {
-  background-color: transparent;
-}
-
-.c37 > button > .c21 {
-  padding: 0;
-  margin: 0;
-}
-
 .c37:hover > button:not(:disabled) {
   border-color: #126AFA;
 }
@@ -906,6 +837,7 @@ exports[`Form should handle dates with initial dates as null 1`] = `
   border: 0.2rem solid transparent;
   height: 3.2rem;
   width: 3.2rem;
+  background-color: transparent;
   border-radius: 50%;
   cursor: pointer;
   text-align: center;
@@ -921,6 +853,8 @@ exports[`Form should handle dates with initial dates as null 1`] = `
 .c29:disabled {
   cursor: not-allowed;
   color: #b0bcc8;
+  background-color: #ffffff;
+  border-color: transparent;
 }
 
 .c20 {
@@ -1547,7 +1481,7 @@ exports[`Form should handle dates with initial dates as null 1`] = `
                 </button>
               </div>
               <div
-                class="c34"
+                class="c31"
               >
                 <button
                   class="c29"
@@ -1562,7 +1496,7 @@ exports[`Form should handle dates with initial dates as null 1`] = `
                 </button>
               </div>
               <div
-                class="c31"
+                class="c34"
               >
                 <button
                   class="c29"

@@ -1,19 +1,26 @@
+import { DateRangePickerTheme } from '@medly-components/theme';
 import { css, styled } from '@medly-components/utils';
 import Text from '../../../../Text';
 import { ExtendedDateProps } from '../types';
 
-const monthStartAndEndDateAfterStyle = css<ExtendedDateProps>`
+type Props = ExtendedDateProps & { dateTheme: DateRangePickerTheme['date'] };
+
+const monthStartAndEndDateAfterStyle = css<Props>`
         &::after {
             left: 0.4rem;
             width: ${({ isWeekFirstDate, isWeekLastDate, isMonthFirstDate, isMonthLastDate }) =>
                 isWeekFirstDate && !isWeekLastDate && isMonthFirstDate && !isMonthLastDate ? '5.2rem' : '3.2rem'};
-            border-top-right-radius: ${({ isWeekLastDate, isMonthLastDate }) => (!isMonthLastDate && isWeekLastDate ? '50%' : 0)};
-            border-bottom-right-radius: ${({ isWeekLastDate, isMonthLastDate }) => (!isMonthLastDate && isWeekLastDate ? '50%' : 0)};
-            border-top-left-radius: ${({ isWeekFirstDate, isMonthFirstDate }) => (!isMonthFirstDate && isWeekFirstDate ? '50%' : 0)};
-            border-bottom-left-radius: ${({ isWeekFirstDate, isMonthFirstDate }) => (!isMonthFirstDate && isWeekFirstDate ? '50%' : 0)};
+            border-top-right-radius: ${({ isWeekLastDate, isMonthLastDate, dateTheme }) =>
+                !isMonthLastDate && isWeekLastDate ? dateTheme.borderRadius : 0};
+            border-bottom-right-radius: ${({ isWeekLastDate, isMonthLastDate, dateTheme }) =>
+                !isMonthLastDate && isWeekLastDate ? dateTheme.borderRadius : 0};
+            border-top-left-radius: ${({ isWeekFirstDate, isMonthFirstDate, dateTheme }) =>
+                !isMonthFirstDate && isWeekFirstDate ? dateTheme.borderRadius : 0};
+            border-bottom-left-radius: ${({ isWeekFirstDate, isMonthFirstDate, dateTheme }) =>
+                !isMonthFirstDate && isWeekFirstDate ? dateTheme.borderRadius : 0};
         }
     `,
-    monthStartAndEndDateStyle = css<ExtendedDateProps>`
+    monthStartAndEndDateStyle = css<Props>`
         ${monthStartAndEndDateAfterStyle}
         &::before {
             opacity: 1;
@@ -23,12 +30,12 @@ const monthStartAndEndDateAfterStyle = css<ExtendedDateProps>`
             background: linear-gradient(
                 90deg,
                 rgba(255, 255, 255, 0) 0%,
-                ${({ theme, isInDateRange }) => (isInDateRange ? theme.colors.blue[100] : theme.colors.grey[100])} 100%
+                ${({ dateTheme, isInDateRange }) => (isInDateRange ? dateTheme.fillColor.selected : dateTheme.fillColor.hovered)} 100%
             );
             transform: ${({ isMonthLastDate }) => isMonthLastDate && 'rotate(-180deg)'};
         }
     `,
-    weekStartAndEndDateStyle = css<ExtendedDateProps>`
+    weekStartAndEndDateStyle = css<Props>`
         ${monthStartAndEndDateAfterStyle};
         &::before {
             width: ${({ isMonthFirstDate, isMonthLastDate }) => !isMonthFirstDate && !isMonthLastDate && '3.4rem'};
@@ -37,7 +44,7 @@ const monthStartAndEndDateAfterStyle = css<ExtendedDateProps>`
         }
     `;
 
-export const DateContainer = styled.div<ExtendedDateProps>`
+export const DateContainer = styled.div.attrs(({ theme }) => ({ dateTheme: theme.dateRangePicker.date }))<Props>`
     transition: all 100ms ease-out;
     text-align: center;
     padding: 0.4rem;
@@ -53,8 +60,8 @@ export const DateContainer = styled.div<ExtendedDateProps>`
         z-index: -1;
         top: 0.4rem;
         height: 3.2rem;
-        background-color: ${({ theme, isInDateRange, isInDateRangeHover }) =>
-            (isInDateRangeHover && theme.colors.grey[100]) || (isInDateRange && theme.colors.blue[100])};
+        background-color: ${({ dateTheme, isInDateRange, isInDateRangeHover }) =>
+            (isInDateRangeHover && dateTheme.fillColor.hovered) || (isInDateRange && dateTheme.fillColor.selected)};
     }
     &::after {
         width: 4.8rem;
@@ -71,31 +78,26 @@ export const DateContainer = styled.div<ExtendedDateProps>`
     ${({ isWeekFirstDate, isWeekLastDate }) => (isWeekFirstDate || isWeekLastDate) && weekStartAndEndDateStyle};
 
     > button {
-        background-color: ${({ theme, isSelected }) => (isSelected ? theme.datePicker.selectedDateBgColor : 'transparent')};
-        border-color: ${({ theme, isCurrentDate, isSelected, isInDateRange, isInDateRangeHover }) =>
-            !isSelected && !(isInDateRange || isInDateRangeHover) && isCurrentDate && theme.datePicker.currentDateBorderColor};
-        > ${Text.Style} {
-            padding: 0;
-            margin: 0;
-            font-weight: ${({ isSelected }) => isSelected && 'bold'};
-            color: ${({ theme, isSelected }) => isSelected && theme.datePicker.selectedDateColor};
-        }
+        border-color: ${({ dateTheme, isCurrentDate, isSelected, isInDateRange, isInDateRangeHover }) =>
+            !isSelected && !(isInDateRange || isInDateRangeHover) && isCurrentDate && dateTheme.borderColor.currentDate};
     }
     &:hover {
         > button:not(:disabled) {
-            border-color: ${({ theme, isHoverDateAfterDateSelection }) =>
-                !isHoverDateAfterDateSelection && theme.datePicker.selectedDateBgColor};
-            background-color: ${({ isHoverDateAfterDateSelection, theme }) => isHoverDateAfterDateSelection && theme.colors.grey[200]};
+            border-color: ${({ dateTheme, isHoverDateAfterDateSelection }) =>
+                !isHoverDateAfterDateSelection && dateTheme.borderColor.hovered};
+            background-color: ${({ isHoverDateAfterDateSelection, dateTheme }) =>
+                isHoverDateAfterDateSelection && dateTheme.bgColor.hovered};
         }
     }
 `;
 
-export const Date = styled('button').attrs({ type: 'button' })<ExtendedDateProps>`
+export const Date = styled('button').attrs(({ theme }) => ({ type: 'button', dateTheme: theme.dateRangePicker.date }))<Props>`
     transition: all 100ms ease-out;
-    border: 0.2rem solid transparent;
+    border: 0.2rem solid ${({ dateTheme }) => dateTheme.borderColor.default};
     height: 3.2rem;
     width: 3.2rem;
-    border-radius: 50%;
+    background-color: ${({ isSelected, dateTheme }) => dateTheme.bgColor[isSelected ? 'selected' : 'default']};
+    border-radius: ${({ dateTheme }) => dateTheme.borderRadius};
     cursor: pointer;
     text-align: center;
     box-sizing: border-box;
@@ -106,6 +108,11 @@ export const Date = styled('button').attrs({ type: 'button' })<ExtendedDateProps
     }
     &:disabled {
         cursor: not-allowed;
-        color: ${({ theme }) => theme.datePicker.nonActiveMonthDateColor};
+        color: ${({ dateTheme }) => dateTheme.color.disabled};
+        background-color: ${({ dateTheme }) => dateTheme.bgColor.disabled};
+        border-color: ${({ dateTheme }) => dateTheme.borderColor.disabled};
+    }
+    > ${Text.Style} {
+        color: ${({ isSelected, dateTheme }) => isSelected && dateTheme.color.selected};
     }
 `;

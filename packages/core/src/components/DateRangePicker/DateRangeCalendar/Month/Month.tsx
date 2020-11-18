@@ -75,8 +75,8 @@ export const Month: React.FC<Props> = React.memo(
                                 onMouseOut={handleMouseOver(null)}
                             >
                                 {isInActiveMonth && (
-                                    <Styled.Date key={index} title={_date.toDateString()} disabled={disabled}>
-                                        <Text>{_date.getDate()}</Text>
+                                    <Styled.Date key={index} title={_date.toDateString()} disabled={disabled} isSelected={isSelected}>
+                                        <Text textWeight={isSelected ? 'Strong' : 'Regular'}>{_date.getDate()}</Text>
                                     </Styled.Date>
                                 )}
                             </Styled.DateContainer>
