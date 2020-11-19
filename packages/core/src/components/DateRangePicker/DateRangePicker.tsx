@@ -1,5 +1,5 @@
 import { useOuterClickNotifier, useUpdateEffect } from '@medly-components/utils';
-import React, { FC, useRef, useState } from 'react';
+import React, { FC, useCallback, useRef, useState } from 'react';
 import * as TextFieldStyled from '../TextField/Styled';
 import DateRangeCalendar from './DateRangeCalendar';
 import DateRangeTextFields from './DateRangeTextFields';
@@ -30,17 +30,17 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         endDateRef = useRef<HTMLInputElement>(null),
         wrapperRef = useRef<HTMLDivElement>(null),
         [isActive, setActive] = useState(false),
-        [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE');
+        [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE'),
+        focusElement = useCallback(element => {
+            if (element === 'START_DATE') {
+                startDateRef.current.focus();
+            } else if (element === 'END_DATE') {
+                endDateRef.current.focus();
+            }
+        }, []);
 
     useOuterClickNotifier(() => setActive(false), wrapperRef);
-
-    useUpdateEffect(() => {
-        if (focusedElement === 'START_DATE') {
-            startDateRef.current.focus();
-        } else if (focusedElement === 'END_DATE') {
-            endDateRef.current.focus();
-        }
-    }, [focusedElement]);
+    useUpdateEffect(() => focusElement(focusedElement), [focusedElement]);
 
     return (
         <TextFieldStyled.OuterWrapper id={`${pickerId}-wrapper`} ref={wrapperRef} fullWidth={fullWidth} minWidth={minWidth} {...restProps}>
@@ -68,6 +68,8 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                     size={size}
                     placement={popoverPlacement}
                     selectedDates={value}
+                    setActive={setActive}
+                    focusElement={focusElement}
                     onDateSelection={onChange}
                     focusedElement={focusedElement}
                     setFocusedElement={setFocusedElement}

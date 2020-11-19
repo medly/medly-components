@@ -1,6 +1,7 @@
 import { DateRangeIcon } from '@medly-components/icons';
 import { parseToDate } from '@medly-components/utils';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import { isValidDate } from '../../Calendar/helper';
 import { DateIconWrapper } from '../../DatePicker/DatePicker.styled';
 import getMaskedValue from '../../TextField/getMaskedValue';
 import * as TextFieldStyled from '../../TextField/Styled';
@@ -56,17 +57,19 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
         }, []),
         onBlur = React.useCallback(
             (event: React.FocusEvent<HTMLInputElement>) => {
-                event.target.value &&
-                    parseToDate(event.target.value, displayFormat).toString() === 'Invalid Date' &&
+                if (event.target.value && parseToDate(event.target.value, displayFormat).toString() === 'Invalid Date') {
                     setErrorMessage('Enter valid date');
+                    onDateChange({ ...selectedDates, ...(event.target.name === 'START_DATE' ? { startDate: null } : { endDate: null }) });
+                }
             },
-            [displayFormat]
+            [selectedDates, onDateChange, displayFormat]
         ),
         handleTextChange = React.useCallback(
             (e: React.ChangeEvent<HTMLInputElement>) => {
                 const maskedValue = getMaskedValue(e, mask),
                     parsedDate = parseToDate(e.target.value, displayFormat),
                     maskedLabel = `${maskedValue}${mask.substr(maskedValue.length)}`;
+
                 if (e.target.name === 'START_DATE') {
                     setStartDateText(maskedValue);
                     setStartDateMaskLabel(maskedLabel);
@@ -83,12 +86,12 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
     useEffect(() => {
         const formattedStartDate = selectedDates.startDate ? getFormattedDate(selectedDates.startDate, displayFormat) : '',
             formattedEndDate = selectedDates.endDate ? getFormattedDate(selectedDates.endDate, displayFormat) : '';
-
         setStartDateText(formattedStartDate);
         setEndDateText(formattedEndDate);
         setStartDateMaskLabel(formattedStartDate || mask);
         setEndDateMaskLabel(formattedEndDate || mask);
-    }, [selectedDates, displayFormat]);
+        isValidDate(selectedDates.startDate) && isValidDate(selectedDates.endDate) && setErrorMessage('');
+    }, [isActive, selectedDates, displayFormat]);
 
     const textProps = {
             variant,
@@ -123,6 +126,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                 disabled={disabled}
                 isErrorPresent={isErrorPresent}
                 isLabelPresent
+                isActive={isActive}
             >
                 <TextFieldStyled.Prefix size={size}>
                     <Prefix />

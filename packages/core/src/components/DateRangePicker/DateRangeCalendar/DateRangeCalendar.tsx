@@ -4,45 +4,65 @@ import React, { useCallback, useMemo, useState } from 'react';
 import { getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear } from '../../Calendar/helper';
 import * as Styled from './DateRangeCalendar.styled';
 import Month from './Month';
-import { Props } from './types';
+import { CalendarAnimationTypes, Props } from './types';
 
 export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props => {
     const {
-        id,
-        size,
-        placement,
-        selectedDates,
-        focusedElement,
-        setFocusedElement,
-        onDateSelection,
-        minSelectableDate,
-        maxSelectableDate
-    } = props,
+            id,
+            size,
+            setActive,
+            placement,
+            selectedDates,
+            focusedElement,
+            focusElement,
+            setFocusedElement,
+            onDateSelection,
+            minSelectableDate,
+            maxSelectableDate
+        } = props,
         { startDate, endDate } = selectedDates;
 
     const [hoveredDate, setHoveredDate] = useState<Date | null>(null),
+        [slideDirection, setSlideDirection] = useState<CalendarAnimationTypes>(),
         [{ month, year }, setMonthAndYear] = useState(getMonthAndYearFromDate(startDate || new Date())),
         { month: nextMonth, year: nextYear } = useMemo(() => getNextMonthAndYear(month, year), [month, year]),
-        handleNextIconClick = useCallback(() => setMonthAndYear(val => getNextMonthAndYear(val.month, val.year)), []),
-        handlePrevIconClick = useCallback(() => setMonthAndYear(val => getPreviousMonthAndYear(val.month, val.year)), []),
+        handleNextIconClick = useCallback(() => setSlideDirection('move-out-left'), []),
+        handlePrevIconClick = useCallback(() => setSlideDirection('move-out-right'), []),
         handleDateSelection = useCallback(
             (date: Date) => {
                 if (focusedElement === `START_DATE`) {
-                    if (date >= selectedDates.endDate) {
-                        delete selectedDates.endDate;
+                    if (selectedDates.endDate && date >= selectedDates.endDate) {
+                        onDateSelection({ startDate: selectedDates.endDate, endDate: date });
+                    } else {
+                        onDateSelection({ ...selectedDates, startDate: date });
                     }
-                    onDateSelection({ ...selectedDates, startDate: date });
                     setFocusedElement('END_DATE');
                 } else {
-                    if (date <= selectedDates.startDate) {
-                        delete selectedDates.startDate;
+                    if (selectedDates.startDate && date <= selectedDates.startDate) {
+                        onDateSelection({ startDate: date, endDate: selectedDates.startDate });
+                    } else {
+                        onDateSelection({ ...selectedDates, endDate: date });
                     }
-                    onDateSelection({ ...selectedDates, endDate: date });
                     setFocusedElement('START_DATE');
                 }
             },
             [selectedDates, focusedElement]
-        );
+        ),
+        handleCalendarClick = useCallback(() => {
+            focusElement(focusedElement);
+            setActive(true);
+        }, [focusedElement]),
+        handleAnimationEnd = useCallback(() => {
+            if (slideDirection === 'move-out-left' || slideDirection === 'move-out-right') {
+                if (slideDirection === 'move-out-left') {
+                    setMonthAndYear(val => getNextMonthAndYear(val.month, val.year));
+                    setSlideDirection('move-in-left');
+                } else {
+                    setMonthAndYear(val => getPreviousMonthAndYear(val.month, val.year));
+                    setSlideDirection('move-in-right');
+                }
+            }
+        }, [slideDirection]);
 
     useUpdateEffect(() => {
         startDate && setMonthAndYear(getMonthAndYearFromDate(startDate));
@@ -59,15 +79,17 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
     };
 
     return (
-        <Styled.DateRangeCalendar id={id} size={size} placement={placement}>
+        <Styled.DateRangeCalendar id={id} size={size} placement={placement} onClick={handleCalendarClick}>
             <Styled.NavigatorIcon id={`${id}-navigation-backward`} align="left" onClick={handlePrevIconClick}>
                 <KeyboardArrowLeftIcon />
             </Styled.NavigatorIcon>
             <Styled.NavigatorIcon id={`${id}-navigation-forward`} align="right" onClick={handleNextIconClick}>
                 <KeyboardArrowRightIcon />
             </Styled.NavigatorIcon>
-            <Month id={`${id}-${month}-month`} month={month} year={year} {...commonProps} />
-            <Month id={`${id}-${nextMonth}-month`} month={nextMonth} year={nextYear} {...commonProps} />
+            <Styled.MonthsWrapper key={month} slideDirection={slideDirection} onAnimationEnd={handleAnimationEnd}>
+                <Month id={`${id}-${month}-month`} month={month} year={year} {...commonProps} />
+                <Month id={`${id}-${nextMonth}-month`} month={nextMonth} year={nextYear} {...commonProps} />
+            </Styled.MonthsWrapper>
         </Styled.DateRangeCalendar>
     );
 });

@@ -23,7 +23,13 @@ export const Month: React.FC<Props> = React.memo(
         ...restProps
     }) => {
         const today = new Date(),
-            handleDateChange = useCallback((dt: Date) => () => onChange(dt), [onChange]),
+            handleDateChange = useCallback(
+                (dt: Date) => (event: React.MouseEvent) => {
+                    event.stopPropagation();
+                    onChange(dt);
+                },
+                [onChange]
+            ),
             handleMouseOver = useCallback((dt: Date | null) => () => setHoveredDate(dt), []);
 
         return (
@@ -40,16 +46,19 @@ export const Month: React.FC<Props> = React.memo(
                             isSelectedEndDate = isSameDay(_date, endDate),
                             isInDateRange = startDate && endDate && _date < endDate && _date > startDate,
                             isInDateRangeHover =
-                                (startDate && !endDate && _date > startDate && _date < hoveredDate) ||
-                                (!startDate && endDate && _date < endDate && _date > hoveredDate),
+                                (startDate &&
+                                    !endDate &&
+                                    ((_date > startDate && _date < hoveredDate) || (_date > hoveredDate && _date < startDate))) ||
+                                (!startDate &&
+                                    endDate &&
+                                    ((_date < endDate && _date > hoveredDate) || (_date > endDate && _date < hoveredDate))),
                             isInActiveMonth = isSameMonth(_date, new Date(year, month, 1)),
                             isCurrentDate = isSameDay(_date, today),
                             isMonthFirstDate = new Date(year, month, 1).getDate() === _date.getDate(),
                             isMonthLastDate = new Date(year, month + 1, 0).getDate() === _date.getDate(),
                             isWeekFirstDate = isSameDay(_date, startOfWeek(_date)),
                             isWeekLastDate = isSameDay(_date, endOfWeek(_date)),
-                            isHoverDateAfterDateSelection =
-                                (startDate && !endDate && startDate < _date) || (!startDate && endDate && endDate > _date),
+                            isHoverDateAfterDateSelection = !!(startDate && !endDate) || !!(!startDate && endDate),
                             disabled = _date > maxSelectableDate || _date < minSelectableDate;
 
                         return (

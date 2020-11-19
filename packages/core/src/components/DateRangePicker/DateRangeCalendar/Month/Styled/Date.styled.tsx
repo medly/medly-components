@@ -85,8 +85,8 @@ export const DateContainer = styled.div.attrs(({ theme }) => ({ dateTheme: theme
         > button:not(:disabled) {
             border-color: ${({ dateTheme, isHoverDateAfterDateSelection }) =>
                 !isHoverDateAfterDateSelection && dateTheme.borderColor.hovered};
-            background-color: ${({ isHoverDateAfterDateSelection, dateTheme }) =>
-                isHoverDateAfterDateSelection && dateTheme.bgColor.hovered};
+            background-color: ${({ isSelected, isHoverDateAfterDateSelection, dateTheme }) =>
+                !isSelected && isHoverDateAfterDateSelection && dateTheme.bgColor.hovered};
         }
     }
 `;

@@ -8,12 +8,10 @@ export const Wrapper = styled.div`
     ${CalendarStyled.CalendarGrid} {
         padding: 1.6rem 3.2rem 3.2rem;
     }
-    &:last-child {
-        border-left: 1px solid #dfe4e9;
-    }
 `;
 
 export const MonthText = styled(Text)`
+    user-select: none;
     display: block;
     width: 100%;
 `;

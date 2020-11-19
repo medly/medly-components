@@ -10,4 +10,5 @@ export const InputSeparator = styled.i<InputSeparatorProps>`
     height: ${({ size }) => (size === 'S' ? '2rem' : '3.2rem')};
     margin-right: ${({ size }) => (size === 'S' ? '1.2rem' : '1.6rem')};
     border-radius: 0.1rem;
+    transition: border-color 100ms ease-out;
 `;

@@ -56,4 +56,5 @@ export interface InnerWrapperProps extends Omit<HTMLProps<HTMLDivElement>, 'size
     multiline?: boolean;
     minRows?: number;
     isTextPresent?: boolean;
+    isActive?: boolean;
 }
