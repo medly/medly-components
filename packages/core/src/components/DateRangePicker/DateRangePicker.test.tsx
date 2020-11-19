@@ -1,4 +1,4 @@
-import { fireEvent, render, waitFor } from '@test-utils';
+import { cleanup, fireEvent, render, waitFor } from '@test-utils';
 import React from 'react';
 import { placements } from '../Popover/Popover.stories';
 import { DateRangePicker } from './DateRangePicker';
@@ -29,14 +29,20 @@ const renderComponent = (props?: any) => {
 };
 
 describe('DateRangePicker', () => {
+    afterEach(cleanup);
+
     it('should render properly', () => {
         const { container } = renderComponent();
         expect(container).toMatchSnapshot();
     });
 
     describe('popover placement', () => {
+        afterEach(cleanup);
         test.each(placements)('should render properly with %p position', (popoverPlacement: DateRangeProps['popoverPlacement']) => {
-            const { container } = renderComponent({ popoverPlacement });
+            const { container } = renderComponent({
+                popoverPlacement,
+                value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) }
+            });
             fireEvent.click(container.querySelector('svg'));
             expect(container.querySelector('#contract-calendar')).toBeVisible();
             expect(container.querySelector('#contract-calendar')).toMatchSnapshot();

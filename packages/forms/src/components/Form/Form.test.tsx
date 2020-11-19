@@ -313,7 +313,6 @@ describe('Form', () => {
                     />
                 );
             fireEvent.click(container.querySelector('#experience-calendar-icon'));
-            expect(container).toMatchSnapshot();
             fireEvent.click(getAllByText('2')[0]);
 
             fireEvent.submit(container.querySelector('form'));
