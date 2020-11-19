@@ -1,5 +1,5 @@
 import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
-import { useUpdateEffect, WithStyle } from '@medly-components/utils';
+import { WithStyle } from '@medly-components/utils';
 import React, { useCallback, useMemo, useState } from 'react';
 import { getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear } from '../../Calendar/helper';
 import * as Styled from './DateRangeCalendar.styled';
@@ -64,10 +64,6 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
             }
         }, [slideDirection]);
 
-    useUpdateEffect(() => {
-        startDate && setMonthAndYear(getMonthAndYearFromDate(startDate));
-    }, [startDate]);
-
     const commonProps = {
         startDate,
         endDate,
@@ -86,7 +82,12 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
             <Styled.NavigatorIcon id={`${id}-navigation-forward`} align="right" onClick={handleNextIconClick}>
                 <KeyboardArrowRightIcon />
             </Styled.NavigatorIcon>
-            <Styled.MonthsWrapper key={month} slideDirection={slideDirection} onAnimationEnd={handleAnimationEnd}>
+            <Styled.MonthsWrapper
+                key={month}
+                id={`${id}-months-wrapper`}
+                slideDirection={slideDirection}
+                onAnimationEnd={handleAnimationEnd}
+            >
                 <Month id={`${id}-${month}-month`} month={month} year={year} {...commonProps} />
                 <Month id={`${id}-${nextMonth}-month`} month={nextMonth} year={nextYear} {...commonProps} />
             </Styled.MonthsWrapper>

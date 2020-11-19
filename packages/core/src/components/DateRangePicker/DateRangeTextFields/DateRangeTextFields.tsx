@@ -74,7 +74,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                     setStartDateText(maskedValue);
                     setStartDateMaskLabel(maskedLabel);
                     parsedDate.toString() !== 'Invalid Date' && onDateChange({ ...selectedDates, startDate: parsedDate });
-                } else if (e.target.name === 'END_DATE') {
+                } else {
                     setEndDateText(maskedValue);
                     setEndDateMaskLabel(maskedLabel);
                     parsedDate.toString() !== 'Invalid Date' && onDateChange({ ...selectedDates, endDate: parsedDate });

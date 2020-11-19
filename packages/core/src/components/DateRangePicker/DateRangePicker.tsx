@@ -25,27 +25,20 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         onChange,
         ...restProps
     } = props;
-    const pickerId = id || 'medly-date-range-picker',
-        startDateRef = useRef<HTMLInputElement>(null),
+    const startDateRef = useRef<HTMLInputElement>(null),
         endDateRef = useRef<HTMLInputElement>(null),
         wrapperRef = useRef<HTMLDivElement>(null),
         [isActive, setActive] = useState(false),
         [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE'),
-        focusElement = useCallback(element => {
-            if (element === 'START_DATE') {
-                startDateRef.current.focus();
-            } else if (element === 'END_DATE') {
-                endDateRef.current.focus();
-            }
-        }, []);
+        focusElement = useCallback(element => (element === 'START_DATE' ? startDateRef : endDateRef).current.focus(), []);
 
     useOuterClickNotifier(() => setActive(false), wrapperRef);
     useUpdateEffect(() => focusElement(focusedElement), [focusedElement]);
 
     return (
-        <TextFieldStyled.OuterWrapper id={`${pickerId}-wrapper`} ref={wrapperRef} fullWidth={fullWidth} minWidth={minWidth} {...restProps}>
+        <TextFieldStyled.OuterWrapper id={`${id}-wrapper`} ref={wrapperRef} fullWidth={fullWidth} minWidth={minWidth} {...restProps}>
             <DateRangeTextFields
-                id={pickerId}
+                id={id}
                 size={size}
                 variant={variant}
                 errorText={errorText}
@@ -64,7 +57,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
             />
             {isActive && (
                 <DateRangeCalendar
-                    id={`${pickerId}-calendar`}
+                    id={`${id}-calendar`}
                     size={size}
                     placement={popoverPlacement}
                     selectedDates={value}
@@ -83,6 +76,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
 
 DateRangePicker.displayName = 'DateRangePicker';
 DateRangePicker.defaultProps = {
+    id: 'medly-date-range-picker',
     variant: 'filled',
     minWidth: '33.8rem',
     startDateLabel: 'From',

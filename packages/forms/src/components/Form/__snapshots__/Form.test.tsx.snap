@@ -1131,11 +1131,11 @@ exports[`Form should handle dates with initial dates as null 1`] = `
           </svg>
           <div
             class="c7"
-            id="experience-from-input-wrapper"
+            id="experience-startDate-input-wrapper"
           >
             <input
               class="c8"
-              id="experience-from-input"
+              id="experience-startDate-input"
               name="START_DATE"
               placeholder="DD / MM / YYYY"
               value=""
@@ -1147,7 +1147,7 @@ exports[`Form should handle dates with initial dates as null 1`] = `
             </span>
             <label
               class="c11 c12"
-              for="experience-from-input"
+              for="experience-startDate-input"
             >
               From
             </label>
@@ -1157,11 +1157,11 @@ exports[`Form should handle dates with initial dates as null 1`] = `
           />
           <div
             class="c7"
-            id="experience-to-input-wrapper"
+            id="experience-endDate-input-wrapper"
           >
             <input
               class="c8"
-              id="experience-to-input"
+              id="experience-endDate-input"
               name="END_DATE"
               placeholder="DD / MM / YYYY"
               value=""
@@ -1173,7 +1173,7 @@ exports[`Form should handle dates with initial dates as null 1`] = `
             </span>
             <label
               class="c11 c12"
-              for="experience-to-input"
+              for="experience-endDate-input"
             >
               To
             </label>
@@ -1229,6 +1229,7 @@ exports[`Form should handle dates with initial dates as null 1`] = `
           </button>
           <div
             class="c21"
+            id="experience-calendar-months-wrapper"
           >
             <div
               class="c22"
@@ -1550,7 +1551,7 @@ exports[`Form should handle dates with initial dates as null 1`] = `
                   </button>
                 </div>
                 <div
-                  class="c36"
+                  class="c33"
                 >
                   <button
                     class="c31"
@@ -1565,7 +1566,7 @@ exports[`Form should handle dates with initial dates as null 1`] = `
                   </button>
                 </div>
                 <div
-                  class="c33"
+                  class="c36"
                 >
                   <button
                     class="c31"
@@ -4524,11 +4525,11 @@ exports[`Form should render properly with initial state 1`] = `
           </svg>
           <div
             class="c6"
-            id="experience-from-input-wrapper"
+            id="experience-startDate-input-wrapper"
           >
             <input
               class="c50"
-              id="experience-from-input"
+              id="experience-startDate-input"
               name="START_DATE"
               placeholder="DD / MM / YYYY"
               value="01 / 01 / 2019"
@@ -4540,7 +4541,7 @@ exports[`Form should render properly with initial state 1`] = `
             </span>
             <label
               class="c8 c51"
-              for="experience-from-input"
+              for="experience-startDate-input"
             >
               From
             </label>
@@ -4550,11 +4551,11 @@ exports[`Form should render properly with initial state 1`] = `
           />
           <div
             class="c6"
-            id="experience-to-input-wrapper"
+            id="experience-endDate-input-wrapper"
           >
             <input
               class="c50"
-              id="experience-to-input"
+              id="experience-endDate-input"
               name="END_DATE"
               placeholder="DD / MM / YYYY"
               value="01 / 02 / 2019"
@@ -4566,7 +4567,7 @@ exports[`Form should render properly with initial state 1`] = `
             </span>
             <label
               class="c8 c51"
-              for="experience-to-input"
+              for="experience-endDate-input"
             >
               To
             </label>
@@ -6854,11 +6855,11 @@ exports[`Form should render properly without initial state 1`] = `
           </svg>
           <div
             class="c9"
-            id="experience-from-input-wrapper"
+            id="experience-startDate-input-wrapper"
           >
             <input
               class="c50"
-              id="experience-from-input"
+              id="experience-startDate-input"
               name="START_DATE"
               placeholder="DD / MM / YYYY"
               value=""
@@ -6870,7 +6871,7 @@ exports[`Form should render properly without initial state 1`] = `
             </span>
             <label
               class="c11 c51"
-              for="experience-from-input"
+              for="experience-startDate-input"
             >
               From
             </label>
@@ -6880,11 +6881,11 @@ exports[`Form should render properly without initial state 1`] = `
           />
           <div
             class="c9"
-            id="experience-to-input-wrapper"
+            id="experience-endDate-input-wrapper"
           >
             <input
               class="c50"
-              id="experience-to-input"
+              id="experience-endDate-input"
               name="END_DATE"
               placeholder="DD / MM / YYYY"
               value=""
@@ -6896,7 +6897,7 @@ exports[`Form should render properly without initial state 1`] = `
             </span>
             <label
               class="c11 c51"
-              for="experience-to-input"
+              for="experience-endDate-input"
             >
               To
             </label>

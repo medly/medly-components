@@ -620,6 +620,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
   </button>
   <div
     class="c5"
+    id="contract-calendar-months-wrapper"
   >
     <div
       class="c6"
@@ -941,7 +942,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
           </button>
         </div>
         <div
-          class="c19"
+          class="c16"
         >
           <button
             class="c14"
@@ -956,7 +957,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
           </button>
         </div>
         <div
-          class="c16"
+          class="c19"
         >
           <button
             class="c14"
@@ -2286,6 +2287,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
   </button>
   <div
     class="c5"
+    id="contract-calendar-months-wrapper"
   >
     <div
       class="c6"
@@ -2607,7 +2609,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
           </button>
         </div>
         <div
-          class="c19"
+          class="c16"
         >
           <button
             class="c14"
@@ -2622,7 +2624,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
           </button>
         </div>
         <div
-          class="c16"
+          class="c19"
         >
           <button
             class="c14"
@@ -3952,6 +3954,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
   </button>
   <div
     class="c5"
+    id="contract-calendar-months-wrapper"
   >
     <div
       class="c6"
@@ -4273,7 +4276,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
           </button>
         </div>
         <div
-          class="c19"
+          class="c16"
         >
           <button
             class="c14"
@@ -4288,7 +4291,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
           </button>
         </div>
         <div
-          class="c16"
+          class="c19"
         >
           <button
             class="c14"
@@ -5620,6 +5623,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
   </button>
   <div
     class="c5"
+    id="contract-calendar-months-wrapper"
   >
     <div
       class="c6"
@@ -5941,7 +5945,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
           </button>
         </div>
         <div
-          class="c19"
+          class="c16"
         >
           <button
             class="c14"
@@ -5956,7 +5960,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
           </button>
         </div>
         <div
-          class="c16"
+          class="c19"
         >
           <button
             class="c14"
@@ -7285,6 +7289,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
   </button>
   <div
     class="c5"
+    id="contract-calendar-months-wrapper"
   >
     <div
       class="c6"
@@ -7606,7 +7611,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
           </button>
         </div>
         <div
-          class="c19"
+          class="c16"
         >
           <button
             class="c14"
@@ -7621,7 +7626,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
           </button>
         </div>
         <div
-          class="c16"
+          class="c19"
         >
           <button
             class="c14"
@@ -8950,6 +8955,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
   </button>
   <div
     class="c5"
+    id="contract-calendar-months-wrapper"
   >
     <div
       class="c6"
@@ -9271,7 +9277,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
           </button>
         </div>
         <div
-          class="c19"
+          class="c16"
         >
           <button
             class="c14"
@@ -9286,7 +9292,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
           </button>
         </div>
         <div
-          class="c16"
+          class="c19"
         >
           <button
             class="c14"
@@ -10618,6 +10624,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
   </button>
   <div
     class="c5"
+    id="contract-calendar-months-wrapper"
   >
     <div
       class="c6"
@@ -10939,7 +10946,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
           </button>
         </div>
         <div
-          class="c19"
+          class="c16"
         >
           <button
             class="c14"
@@ -10954,7 +10961,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
           </button>
         </div>
         <div
-          class="c16"
+          class="c19"
         >
           <button
             class="c14"
@@ -12283,6 +12290,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
   </button>
   <div
     class="c5"
+    id="contract-calendar-months-wrapper"
   >
     <div
       class="c6"
@@ -12604,7 +12612,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
           </button>
         </div>
         <div
-          class="c19"
+          class="c16"
         >
           <button
             class="c14"
@@ -12619,7 +12627,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
           </button>
         </div>
         <div
-          class="c16"
+          class="c19"
         >
           <button
             class="c14"
@@ -13948,6 +13956,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
   </button>
   <div
     class="c5"
+    id="contract-calendar-months-wrapper"
   >
     <div
       class="c6"
@@ -14269,7 +14278,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
           </button>
         </div>
         <div
-          class="c19"
+          class="c16"
         >
           <button
             class="c14"
@@ -14284,7 +14293,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
           </button>
         </div>
         <div
-          class="c16"
+          class="c19"
         >
           <button
             class="c14"
@@ -15616,6 +15625,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
   </button>
   <div
     class="c5"
+    id="contract-calendar-months-wrapper"
   >
     <div
       class="c6"
@@ -15937,7 +15947,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
           </button>
         </div>
         <div
-          class="c19"
+          class="c16"
         >
           <button
             class="c14"
@@ -15952,7 +15962,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
           </button>
         </div>
         <div
-          class="c16"
+          class="c19"
         >
           <button
             class="c14"
@@ -17281,6 +17291,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
   </button>
   <div
     class="c5"
+    id="contract-calendar-months-wrapper"
   >
     <div
       class="c6"
@@ -17602,7 +17613,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
           </button>
         </div>
         <div
-          class="c19"
+          class="c16"
         >
           <button
             class="c14"
@@ -17617,7 +17628,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
           </button>
         </div>
         <div
-          class="c16"
+          class="c19"
         >
           <button
             class="c14"
@@ -18946,6 +18957,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
   </button>
   <div
     class="c5"
+    id="contract-calendar-months-wrapper"
   >
     <div
       class="c6"
@@ -19267,7 +19279,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
           </button>
         </div>
         <div
-          class="c19"
+          class="c16"
         >
           <button
             class="c14"
@@ -19282,7 +19294,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
           </button>
         </div>
         <div
-          class="c16"
+          class="c19"
         >
           <button
             class="c14"

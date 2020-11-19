@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, waitFor } from '@test-utils';
+import { fireEvent, render, waitFor } from '@test-utils';
 import React from 'react';
 import { placements } from '../Popover/Popover.stories';
 import { DateRangePicker } from './DateRangePicker';
@@ -29,7 +29,6 @@ const renderComponent = (props?: any) => {
 };
 
 describe('DateRangePicker', () => {
-    afterEach(cleanup);
     it('should render properly', () => {
         const { container } = renderComponent();
         expect(container).toMatchSnapshot();
@@ -41,6 +40,18 @@ describe('DateRangePicker', () => {
             fireEvent.click(container.querySelector('svg'));
             expect(container.querySelector('#contract-calendar')).toBeVisible();
             expect(container.querySelector('#contract-calendar')).toMatchSnapshot();
+        });
+
+        test.each([
+            ['S', '4rem'],
+            ['M', '5.6rem']
+        ])('should render calendar at the right position with %s size', async (size, position) => {
+            const { container } = renderComponent({
+                size,
+                onChange: jest.fn()
+            });
+            fireEvent.click(container.querySelector('svg'));
+            await waitFor(() => expect(container.querySelector('#contract-calendar')).toHaveStyle(`top: ${position}`));
         });
     });
 
@@ -74,28 +85,64 @@ describe('DateRangePicker', () => {
             fireEvent.click(getByText('Click Here'));
             expect(container.querySelector('#contract-calendar')).toBeNull();
         });
+
+        it('should focus the same input element on click on the calendar', () => {
+            const { container, startDateInput } = renderComponent();
+            fireEvent.click(container.querySelector('svg'));
+            expect(container.querySelector('#contract-calendar')).toBeVisible();
+            fireEvent.click(container.querySelector('#contract-calendar'));
+            expect(startDateInput).toHaveFocus();
+        });
+
+        describe('navigation', () => {
+            test.each([
+                ['forward', 'April'],
+                ['backward', 'January'],
+                ['', 'February']
+            ])('should render expected months on click on %s arrow', async (icon, month) => {
+                const { container, findByText } = renderComponent({
+                    value: { startDate: new Date(2021, 1, 1), endDate: new Date(2021, 2, 2) }
+                });
+                fireEvent.click(container.querySelector('svg'));
+                expect(container.querySelector('#contract-calendar')).toBeVisible();
+                icon && fireEvent.click(container.querySelector(`#contract-calendar-navigation-${icon}`));
+                fireEvent.animationEnd(container.querySelector('#contract-calendar-months-wrapper'));
+                const expectedMonth = await findByText(`${month} 2021`);
+                expect(expectedMonth).toBeInTheDocument();
+            });
+        });
     });
+
     describe('on text change', () => {
         it('should call onChange with expected start date', () => {
             const mockOnChange = jest.fn(),
-                dateToSelect = { endDate: new Date(2020, 2, 5), startDate: new Date(2020, 2, 2) },
-                { startDateInput } = renderComponent({
+                dateToSelect: any = { endDate: new Date(2020, 2, 5), startDate: new Date(2020, 1, 3) },
+                { container, startDateInput, getByTitle } = renderComponent({
                     value: { startDate: new Date(2020, 1, 2), endDate: new Date(2020, 2, 5) },
                     onChange: mockOnChange
                 });
-            fireEvent.change(startDateInput, { target: { value: '03 / 02 / 2020' } });
+            fireEvent.click(container.querySelector('svg'));
+            fireEvent.focus(startDateInput);
+            fireEvent.mouseOver(getByTitle(dateToSelect.startDate.toDateString()));
+            fireEvent.change(startDateInput, { target: { value: '02 / 03 / 2020' } });
             expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
         });
+
         it('should call onChange with expected end date', () => {
             const mockOnChange = jest.fn(),
-                dateToSelect = { endDate: new Date(2020, 2, 2), startDate: new Date(2020, 1, 2) },
-                { endDateInput } = renderComponent({
-                    value: { startDate: new Date(2020, 1, 2), endDate: new Date(2020, 2, 5) },
+                startDate = new Date(2020, 1, 3),
+                dateToSelect: any = { startDate: new Date(2020, 1, 3), endDate: new Date(2020, 1, 5) },
+                { container, getByTitle, endDateInput } = renderComponent({
+                    value: { startDate: startDate, endDate: null },
                     onChange: mockOnChange
                 });
-            fireEvent.change(endDateInput, { target: { value: '03 / 02 / 2020' } });
+            fireEvent.click(container.querySelector('svg'));
+            fireEvent.focus(endDateInput);
+            fireEvent.mouseOver(getByTitle(dateToSelect.endDate.toDateString()));
+            fireEvent.change(endDateInput, { target: { value: '02 / 05 / 2020' } });
             expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
         });
+
         it('should call onChange with null if typed start date is invalid', async () => {
             const mockOnChange = jest.fn(),
                 { startDateInput } = renderComponent({
@@ -177,6 +224,39 @@ describe('DateRangePicker', () => {
             expect(mockOnInvalid).toHaveBeenCalled();
         });
     });
+
+    describe('date selection', () => {
+        it('should swap the date if start date is greater than end date', () => {
+            const mockOnChange = jest.fn(),
+                dateToSelect = new Date(2020, 1, 5),
+                { container, getByTitle, startDateInput } = renderComponent({
+                    value: { startDate: new Date(2020, 0, 1), endDate: new Date(2020, 1, 1) },
+                    onChange: mockOnChange,
+                    fullWidth: true
+                });
+            fireEvent.click(container.querySelector('svg'));
+            fireEvent.focus(startDateInput);
+            fireEvent.mouseOver(getByTitle(dateToSelect.toDateString()));
+            fireEvent.click(getByTitle(dateToSelect.toDateString()));
+            expect(mockOnChange).toHaveBeenCalledWith({ endDate: dateToSelect, startDate: new Date(2020, 1, 1) });
+        });
+
+        it('should swap the date if end date is less than start date', () => {
+            const mockOnChange = jest.fn(),
+                dateToSelect = new Date(2020, 1, 1),
+                { container, getByTitle, endDateInput } = renderComponent({
+                    value: { startDate: new Date(2020, 1, 5), endDate: null },
+                    onChange: mockOnChange,
+                    fullWidth: true
+                });
+            fireEvent.click(container.querySelector('svg'));
+            fireEvent.focus(endDateInput);
+            fireEvent.mouseOver(getByTitle(dateToSelect.toDateString()));
+            fireEvent.click(getByTitle(dateToSelect.toDateString()));
+            expect(mockOnChange).toHaveBeenCalledWith({ endDate: new Date(2020, 1, 5), startDate: dateToSelect });
+        });
+    });
+
     describe('Styles', () => {
         it('should change the margin and width if full-width is passed as prop', () => {
             const { container } = renderComponent({
@@ -185,18 +265,6 @@ describe('DateRangePicker', () => {
                 fullWidth: true
             });
             expect(container.querySelector('#contract-wrapper')).toHaveStyle(`width: 100%`);
-        });
-
-        test.each([
-            ['S', '4rem'],
-            ['M', '5.6rem']
-        ])('should render calendar at the right position with %s size', async (size, position) => {
-            const { container } = renderComponent({
-                size,
-                onChange: jest.fn()
-            });
-            fireEvent.click(container.querySelector('svg'));
-            await waitFor(() => expect(container.querySelector('#contract-calendar')).toHaveStyle(`top: ${position}`));
         });
     });
 });
