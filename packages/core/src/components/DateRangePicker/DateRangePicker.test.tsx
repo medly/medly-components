@@ -21,13 +21,16 @@ const renderComponent = (props?: any) => {
         maxSelectableDate: new Date(2022, 2, 15),
         onChange: jest.fn()
     };
+    const renderUtils = render(<DateRangePicker {...defaultProps} {...props} />),
+        startDateInput = renderUtils.container.querySelector('#contract-startDate-input') as HTMLInputElement,
+        endDateInput = renderUtils.container.querySelector('#contract-endDate-input') as HTMLInputElement;
 
-    return render(<DateRangePicker id="contract" {...defaultProps} {...props} />);
+    return { ...renderUtils, startDateInput, endDateInput };
 };
 
 describe('DateRangePicker', () => {
     afterEach(cleanup);
-    it('should render properly when value is of date type', () => {
+    it('should render properly', () => {
         const { container } = renderComponent();
         expect(container).toMatchSnapshot();
     });
@@ -47,7 +50,8 @@ describe('DateRangePicker', () => {
             fireEvent.click(container.querySelector('svg'));
             expect(container.querySelector('#contract-calendar')).toBeVisible();
         });
-        it('should not show calendar on click on icon if is disabled prop is passes', () => {
+
+        it('should not show calendar on click on icon if disabled prop is passed', () => {
             const { container } = renderComponent({ disabled: true });
             fireEvent.click(container.querySelector('svg'));
             expect(container.querySelector('#contract-calendar')).toBeNull();
@@ -72,55 +76,53 @@ describe('DateRangePicker', () => {
         });
     });
     describe('on text change', () => {
-        it('should change call onChange of from date with expected date', () => {
+        it('should call onChange with expected start date', () => {
             const mockOnChange = jest.fn(),
-                dateToSelect = { endDate: new Date('2020-02-01T18:30:00.000Z'), startDate: new Date('2020-03-01T18:30:00.000Z') },
-                { container } = renderComponent({
-                    value: { startDate: new Date('01, 02, 2020'), endDate: new Date('02, 02, 2020') },
+                dateToSelect = { endDate: new Date(2020, 2, 5), startDate: new Date(2020, 2, 2) },
+                { startDateInput } = renderComponent({
+                    value: { startDate: new Date(2020, 1, 2), endDate: new Date(2020, 2, 5) },
                     onChange: mockOnChange
                 });
-            fireEvent.change(container.querySelector('#contract-from-input'), { target: { value: '03 / 02 / 2020' } });
+            fireEvent.change(startDateInput, { target: { value: '03 / 02 / 2020' } });
             expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
         });
-        it('should change call onChange of to date with expected date', () => {
+        it('should call onChange with expected end date', () => {
             const mockOnChange = jest.fn(),
-                dateToSelect = { endDate: new Date('2020-03-01T18:30:00.000Z'), startDate: new Date('2020-01-01T18:30:00.000Z') },
-                { container } = renderComponent({
-                    value: { startDate: new Date('01, 02, 2020'), endDate: new Date('02, 02, 2020') },
+                dateToSelect = { endDate: new Date(2020, 2, 2), startDate: new Date(2020, 1, 2) },
+                { endDateInput } = renderComponent({
+                    value: { startDate: new Date(2020, 1, 2), endDate: new Date(2020, 2, 5) },
                     onChange: mockOnChange
                 });
-            fireEvent.change(container.querySelector('#contract-to-input'), { target: { value: '03 / 02 / 2020' } });
+            fireEvent.change(endDateInput, { target: { value: '03 / 02 / 2020' } });
             expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
         });
-        it('should call onChange with null if typed from date is invalid', async () => {
+        it('should call onChange with null if typed start date is invalid', async () => {
             const mockOnChange = jest.fn(),
-                { container } = renderComponent({
+                { startDateInput } = renderComponent({
                     onChange: mockOnChange
                 });
-            fireEvent.change(container.querySelector('#contract-from-input'), { target: { value: '01 / 02' } });
+            fireEvent.change(startDateInput, { target: { value: '01 / 02' } });
             expect(mockOnChange).toHaveBeenCalledTimes(0);
         });
-        it('should call onChange with null if typed to date is invalid', async () => {
+        it('should call onChange with null if typed end date is invalid', async () => {
             const mockOnChange = jest.fn(),
-                { container } = renderComponent({ onChange: mockOnChange });
-            fireEvent.change(container.querySelector('#contract-to-input'), { target: { value: '01 / 02' } });
+                { endDateInput } = renderComponent({ onChange: mockOnChange });
+            fireEvent.change(endDateInput, { target: { value: '01 / 02' } });
             expect(mockOnChange).toHaveBeenCalledTimes(0);
         });
     });
     describe('error messages', () => {
         it('should return error message if FROM date entered is incomplete', async () => {
-            const { container, getByText } = renderComponent({ required: true });
-            const inputEl = container.querySelector('#contract-from-input');
-            fireEvent.change(inputEl, { target: { value: '04/31' } });
-            fireEvent.blur(inputEl);
+            const { startDateInput, getByText } = renderComponent({ required: true });
+            fireEvent.change(startDateInput, { target: { value: '04/31' } });
+            fireEvent.blur(startDateInput);
             await waitFor(() => expect(getByText('Enter valid date')).toBeInTheDocument());
         });
 
         it('should return error message if TO date entered is incomplete', async () => {
-            const { container, getByText } = renderComponent({ required: true });
-            const inputEl = container.querySelector('#contract-to-input');
-            fireEvent.change(inputEl, { target: { value: '04/31' } });
-            fireEvent.blur(inputEl);
+            const { endDateInput, getByText } = renderComponent({ required: true });
+            fireEvent.change(endDateInput, { target: { value: '04/31' } });
+            fireEvent.blur(endDateInput);
             await waitFor(() => expect(getByText('Enter valid date')).toBeInTheDocument());
         });
     });
@@ -134,109 +136,44 @@ describe('DateRangePicker', () => {
                     startDate: new Date(currentYear, currentMonth, currentDay),
                     endDate: new Date(currentYear, currentMonth + 1, currentDay)
                 },
-                { container, getByTitle } = renderComponent({
+                { container, getByTitle, startDateInput, endDateInput } = renderComponent({
                     onChange: mockOnChange
                 });
             fireEvent.click(container.querySelector('svg'));
             fireEvent.click(getByTitle(dateToSelect.startDate.toDateString()));
+            expect(mockOnChange).toHaveBeenCalledWith({ endDate: null, startDate: dateToSelect.startDate });
+            await waitFor(() => expect(endDateInput).toHaveFocus());
             fireEvent.click(getByTitle(dateToSelect.endDate.toDateString()));
-            expect(mockOnChange).toHaveBeenCalledTimes(2);
-        });
-
-        it('should match value on selecting date', async () => {
-            const selectedDates: any = { startDate: null, endDate: null };
-            const mockOnChange = (dates: any) => {
-                    if ('startDate' in dates && dates.startDate) {
-                        selectedDates.startDate = dates.startDate;
-                    } else if ('endDate' in dates && dates.endDate) {
-                        selectedDates.endDate = dates.endDate;
-                    }
-                },
-                currentYear = new Date().getFullYear(),
-                currentMonth = new Date().getMonth(),
-                currentDay = new Date().getDay(),
-                dateToSelect = {
-                    startDate: new Date(currentYear, currentMonth, currentDay),
-                    endDate: new Date(currentYear, currentMonth + 1, currentDay)
-                },
-                { container, getByTitle } = renderComponent({
-                    onChange: mockOnChange
-                });
-            fireEvent.click(container.querySelector('svg'));
-            fireEvent.click(getByTitle(dateToSelect.startDate.toDateString()));
-            fireEvent.click(getByTitle(dateToSelect.endDate.toDateString()));
-            expect(selectedDates).toMatchObject(dateToSelect);
+            expect(mockOnChange).toHaveBeenLastCalledWith({ startDate: null, endDate: dateToSelect.endDate });
+            await waitFor(() => expect(startDateInput).toHaveFocus());
         });
 
         it('should call focus and blur handlers if passed', () => {
             const mockOnFocus = jest.fn(),
                 mockOnChange = jest.fn(),
                 mockOnBlur = jest.fn(),
-                { container } = renderComponent({
+                { container, startDateInput } = renderComponent({
                     value: { startDate: new Date(2020, 0, 1), endDate: new Date(2020, 0, 1) },
                     onChange: mockOnChange,
                     onFocus: mockOnFocus,
                     onBlur: mockOnBlur
-                }),
-                inputElFrom = container.querySelector('#contract-from-input') as HTMLInputElement,
-                inputElTo = container.querySelector('#contract-to-input') as HTMLInputElement;
+                });
             fireEvent.click(container.querySelector('svg'));
             expect(mockOnFocus).toHaveBeenCalled();
-            fireEvent.blur(inputElFrom);
+            fireEvent.blur(startDateInput);
             expect(mockOnBlur).toHaveBeenCalled();
-            fireEvent.change(inputElFrom, { target: { value: '10 / 14 / 2020' } });
-            fireEvent.change(inputElFrom, { target: { value: '10 / 18 / 2020' } });
-            expect(mockOnChange).toHaveBeenCalled();
-            fireEvent.focus(inputElFrom);
-            expect(mockOnFocus).toHaveBeenCalled();
-            fireEvent.focus(inputElTo);
-            expect(mockOnFocus).toHaveBeenCalled();
-            fireEvent.blur(inputElTo);
-            expect(mockOnBlur).toHaveBeenCalled();
-            fireEvent.change(inputElTo, { target: { value: '10 / 18 / 2020' } });
-            fireEvent.change(inputElTo, { target: { value: '10 / 28 / 2020' } });
-            expect(mockOnChange).toHaveBeenCalled();
-        });
-
-        it('focused element should change', () => {
-            const mockOnFocus = jest.fn(),
-                mockOnChange = jest.fn(),
-                mockOnBlur = jest.fn(),
-                { container } = renderComponent({
-                    onChange: mockOnChange,
-                    onFocus: mockOnFocus,
-                    onBlur: mockOnBlur
-                }),
-                inputElFrom = container.querySelector('#contract-from-input') as HTMLInputElement,
-                inputElTo = container.querySelector('#contract-to-input') as HTMLInputElement;
-
-            fireEvent.focus(inputElTo);
-            expect(mockOnFocus).toHaveBeenCalled();
-            fireEvent.blur(inputElTo);
-            expect(mockOnBlur).toHaveBeenCalled();
-            fireEvent.change(inputElTo, { target: { value: '10 / 18 / 2020' } });
-            expect(mockOnChange).toHaveBeenCalled();
-
-            expect(mockOnFocus).toHaveBeenCalled();
-            fireEvent.blur(inputElFrom);
-            expect(mockOnBlur).toHaveBeenCalled();
-            fireEvent.change(inputElFrom, { target: { value: '10 / 14 / 2020' } });
-            expect(mockOnChange).toHaveBeenCalled();
-            fireEvent.focus(inputElFrom);
-            expect(mockOnFocus).toHaveBeenCalled();
         });
 
         it('should call invalid handler if passed', () => {
             const mockOnInvalid = jest.fn(),
                 mockOnChange = jest.fn(),
-                { container } = renderComponent({
+                { container, startDateInput } = renderComponent({
                     value: { startDate: new Date(2020, 0, 1), endDate: new Date(2020, 0, 1) },
                     onChange: mockOnChange,
                     onInvalid: mockOnInvalid
-                }),
-                inputEl = container.querySelector('#contract-from-input') as HTMLInputElement;
+                });
             fireEvent.click(container.querySelector('svg'));
-            fireEvent.invalid(inputEl);
+            fireEvent.invalid(startDateInput);
             expect(mockOnInvalid).toHaveBeenCalled();
         });
     });
@@ -250,14 +187,16 @@ describe('DateRangePicker', () => {
             expect(container.querySelector('#contract-wrapper')).toHaveStyle(`width: 100%`);
         });
 
-        it('should change the size of DateRangePicker based on size prop', async () => {
+        test.each([
+            ['S', '4rem'],
+            ['M', '5.6rem']
+        ])('should render calendar at the right position with %s size', async (size, position) => {
             const { container } = renderComponent({
-                size: 'S',
+                size,
                 onChange: jest.fn()
             });
             fireEvent.click(container.querySelector('svg'));
-            await waitFor(() => expect(container.querySelector('#contract-calendar')).toHaveStyle(`top: 4rem`));
-            // expect(container.querySelector('#contract-calendar')).toMatchSnapshot();
+            await waitFor(() => expect(container.querySelector('#contract-calendar')).toHaveStyle(`top: ${position}`));
         });
     });
 });

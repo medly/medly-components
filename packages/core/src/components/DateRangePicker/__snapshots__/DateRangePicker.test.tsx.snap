@@ -19995,7 +19995,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 </div>
 `;
 
-exports[`DateRangePicker should render properly when value is of date type 1`] = `
+exports[`DateRangePicker should render properly 1`] = `
 .c14 {
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -20379,11 +20379,11 @@ exports[`DateRangePicker should render properly when value is of date type 1`] =
       </svg>
       <div
         class="c5"
-        id="contract-from-input-wrapper"
+        id="contract-startDate-input-wrapper"
       >
         <input
           class="c6"
-          id="contract-from-input"
+          id="contract-startDate-input"
           name="START_DATE"
           placeholder="MM / DD / YYYY"
           value=""
@@ -20395,7 +20395,7 @@ exports[`DateRangePicker should render properly when value is of date type 1`] =
         </span>
         <label
           class="c9 c10"
-          for="contract-from-input"
+          for="contract-startDate-input"
         >
           From
         </label>
@@ -20405,11 +20405,11 @@ exports[`DateRangePicker should render properly when value is of date type 1`] =
       />
       <div
         class="c5"
-        id="contract-to-input-wrapper"
+        id="contract-endDate-input-wrapper"
       >
         <input
           class="c6"
-          id="contract-to-input"
+          id="contract-endDate-input"
           name="END_DATE"
           placeholder="MM / DD / YYYY"
           value=""
@@ -20421,7 +20421,7 @@ exports[`DateRangePicker should render properly when value is of date type 1`] =
         </span>
         <label
           class="c9 c10"
-          for="contract-to-input"
+          for="contract-endDate-input"
         >
           To
         </label>

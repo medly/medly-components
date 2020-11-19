@@ -29,8 +29,8 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     maxSelectableDate?: Date;
     /** Date display format */
     displayFormat?: DisplayFormat;
-    /** From Label */
+    /** Start Date Label */
     startDateLabel?: string;
-    /** To Label */
+    /** End date Label */
     endDateLabel?: string;
 };

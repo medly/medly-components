@@ -133,7 +133,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                 </TextFieldStyled.Prefix>
                 <DateRangeTextField
                     ref={startDateRef}
-                    id={`${id}-from-input`}
+                    id={`${id}-startDate-input`}
                     value={startDateText}
                     name="START_DATE"
                     isPrefixPresent
@@ -144,7 +144,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                 <InputSeparator {...iconProps} />
                 <DateRangeTextField
                     ref={endDateRef}
-                    id={`${id}-to-input`}
+                    id={`${id}-endDate-input`}
                     value={endDateText}
                     name="END_DATE"
                     dateMaskLabel={endDateMaskLabel}
