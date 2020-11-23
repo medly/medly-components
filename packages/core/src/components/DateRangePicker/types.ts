@@ -2,13 +2,17 @@ import { HTMLProps, Omit } from '@medly-components/utils';
 import { DisplayFormat } from '../DatePicker/types';
 import { Placement } from '../Popover/types';
 
+export type DateRangeType = { startDate: Date | null; endDate: Date | null };
+
 export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height' | 'value' | 'onChange'> & {
     /** Selected date range */
-    value: { startDate: Date | null; endDate: Date | null };
+    value: DateRangeType;
     /** Function to be called on change of the dates */
-    onChange: (value: { startDate: Date | null; endDate: Date | null }) => void;
+    onChange: (value: DateRangeType) => void;
     /** Variants */
     variant?: 'outlined' | 'filled';
+    /** Function will called with the input value on blur and invalid event */
+    validator?: (val: DateRangeType, eventType?: string) => string;
     /** Helper Text */
     helperText?: string;
     /** error text */

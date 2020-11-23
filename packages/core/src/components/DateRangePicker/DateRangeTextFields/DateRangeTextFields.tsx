@@ -1,104 +1,52 @@
 import { DateRangeIcon } from '@medly-components/icons';
-import { parseToDate } from '@medly-components/utils';
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { isValidDate } from '../../Calendar/helper';
+import React from 'react';
 import { DateIconWrapper } from '../../DatePicker/DatePicker.styled';
-import getMaskedValue from '../../TextField/getMaskedValue';
 import * as TextFieldStyled from '../../TextField/Styled';
-import { getFormattedDate } from '../helpers';
 import DateRangeTextField from './DateRangeTextField';
 import { Wrapper } from './DateRangeTextFields.styled';
 import InputSeparator from './InputSeparator';
 import { Props } from './types';
+import { useDateRangeTextFieldsHandlers } from './useDateRangeTextFieldsHandlers';
 
 export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
     const {
-        id,
-        size,
-        variant,
-        disabled,
-        displayFormat,
-        isActive,
-        setActive,
-        startDateRef,
-        endDateRef,
-        errorText,
-        helperText,
-        selectedDates,
-        onDateChange,
-        startDateLabel,
-        endDateLabel,
-        setFocusedElement
-    } = props;
-
-    const [builtInErrorMessage, setErrorMessage] = useState(''),
-        [startDateText, setStartDateText] = useState(''),
-        [endDateText, setEndDateText] = useState(''),
-        mask = useMemo(() => displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase(), [displayFormat]),
-        [startDateMaskLabel, setStartDateMaskLabel] = useState(mask),
-        [endDateMaskLabel, setEndDateMaskLabel] = useState(mask),
-        isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
-
-    const stopPropagation = useCallback((event: React.MouseEvent) => event.stopPropagation(), []),
-        onIconClick = React.useCallback(
-            event => {
-                event.stopPropagation();
-                if (!disabled) {
-                    setActive(true);
-                    startDateRef.current.focus();
-                }
-            },
-            [disabled]
-        ),
-        onFocus = React.useCallback((event: React.FocusEvent<HTMLInputElement>) => {
-            setActive(true);
-            setFocusedElement(event.target.name as `START_DATE` | `END_DATE`);
-            event.target.setSelectionRange(event.target.value.length, event.target.value.length);
-        }, []),
-        onBlur = React.useCallback(
-            (event: React.FocusEvent<HTMLInputElement>) => {
-                if (event.target.value && parseToDate(event.target.value, displayFormat).toString() === 'Invalid Date') {
-                    setErrorMessage('Enter valid date');
-                    onDateChange({ ...selectedDates, ...(event.target.name === 'START_DATE' ? { startDate: null } : { endDate: null }) });
-                }
-            },
-            [selectedDates, onDateChange, displayFormat]
-        ),
-        handleTextChange = React.useCallback(
-            (e: React.ChangeEvent<HTMLInputElement>) => {
-                const maskedValue = getMaskedValue(e, mask),
-                    parsedDate = parseToDate(e.target.value, displayFormat),
-                    maskedLabel = `${maskedValue}${mask.substr(maskedValue.length)}`;
-
-                if (e.target.name === 'START_DATE') {
-                    setStartDateText(maskedValue);
-                    setStartDateMaskLabel(maskedLabel);
-                    parsedDate.toString() !== 'Invalid Date' && onDateChange({ ...selectedDates, startDate: parsedDate });
-                } else {
-                    setEndDateText(maskedValue);
-                    setEndDateMaskLabel(maskedLabel);
-                    parsedDate.toString() !== 'Invalid Date' && onDateChange({ ...selectedDates, endDate: parsedDate });
-                }
-            },
-            [selectedDates, onDateChange]
-        );
-
-    useEffect(() => {
-        const formattedStartDate = selectedDates.startDate ? getFormattedDate(selectedDates.startDate, displayFormat) : '',
-            formattedEndDate = selectedDates.endDate ? getFormattedDate(selectedDates.endDate, displayFormat) : '';
-        setStartDateText(formattedStartDate);
-        setEndDateText(formattedEndDate);
-        setStartDateMaskLabel(formattedStartDate || mask);
-        setEndDateMaskLabel(formattedEndDate || mask);
-        isValidDate(selectedDates.startDate) && isValidDate(selectedDates.endDate) && setErrorMessage('');
-    }, [isActive, selectedDates, displayFormat]);
-
-    const textProps = {
+            id,
+            size,
+            variant,
+            disabled,
+            isActive,
+            startDateRef,
+            endDateRef,
+            errorText,
+            required,
+            helperText,
+            startDateLabel,
+            endDateLabel
+        } = props,
+        {
+            mask,
+            startDateText,
+            endDateText,
+            startDateMaskLabel,
+            endDateMaskLabel,
+            isErrorPresent,
+            builtInErrorMessage,
+            stopPropagation,
+            onIconClick,
+            onTextFieldFocus,
+            handleTextChange,
+            validateOnTextFieldBlur,
+            validateOnTextFieldInvalid,
+            validateOnWrapperBlur
+        } = useDateRangeTextFieldsHandlers(props),
+        commonTextProps = {
             variant,
             size,
-            onBlur,
-            onFocus,
             disabled,
+            required,
+            onFocus: onTextFieldFocus,
+            onBlur: validateOnTextFieldBlur,
+            onInvalid: validateOnTextFieldInvalid,
             placeholder: mask,
             onChange: handleTextChange,
             errorText: errorText || builtInErrorMessage
@@ -127,6 +75,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                 isErrorPresent={isErrorPresent}
                 isLabelPresent
                 isActive={isActive}
+                onBlur={validateOnWrapperBlur}
             >
                 <TextFieldStyled.Prefix size={size}>
                     <Prefix />
@@ -139,7 +88,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                     isPrefixPresent
                     dateMaskLabel={startDateMaskLabel}
                     label={startDateLabel}
-                    {...textProps}
+                    {...commonTextProps}
                 />
                 <InputSeparator {...iconProps} />
                 <DateRangeTextField
@@ -149,7 +98,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                     name="END_DATE"
                     dateMaskLabel={endDateMaskLabel}
                     label={endDateLabel}
-                    {...textProps}
+                    {...commonTextProps}
                 />
             </Wrapper>
             <TextFieldStyled.HelperText id={`${id}-helper-text`} variant={variant} onClick={stopPropagation} size={size}>

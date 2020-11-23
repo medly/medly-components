@@ -1,24 +1,104 @@
 import { DateRangePicker } from './DateRangePicker';
 import { defaultTheme } from '@medly-components/theme';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import * as stories from './DateRangePicker.stories';
+import { boolean, select, text } from '@storybook/addon-knobs';
+import {
+    placement,
+    displayFormats,
+    ThemeInterface,
+    FormWithDateRangePicker,
+    DateRangePickerWithStateForDoc
+} from './DateRangePicker.stories';
+import { useState } from 'react';
+import { DateRangeType } from './types';
 
-<Meta title="In-Review" component={DateRangePicker} />
+<Meta
+    title="Core"
+    component={DateRangePicker}
+    parameters={{
+        jest: ['DateRangePicker.test.tsx'],
+        design: {
+            type: 'figma',
+            url: 'https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=10346%3A1269'
+        }
+    }}
+/>
 
 # DateRangePicker
 
-We are using `@datepicker-react/styled` underneath with some modification.
+It's a controlled component. So we have to handle the state.
 
-<Story name="DateRangePicker">{stories.Basic()}</Story>
+```tsx
+const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: null });
+return <DatePicker value={dates} onChange={setDates} />;
+```
+
+<Story name="DateRangePicker">
+    {() => {
+        const [dates, setDates] = useState({ startDate: null, endDate: null });
+        return (
+            <DateRangePicker
+                id="contract"
+                displayFormat={select('Display Format', displayFormats, 'MM/dd/yyyy')}
+                required={boolean('Required', false)}
+                startDateLabel="From"
+                endDateLabel="To"
+                value={dates}
+                onChange={setDates}
+                size={select('Size', ['S', 'M'], 'M')}
+                popoverPlacement={select('Placement', placement, 'bottom-start')}
+                variant={select('Variant', ['filled', 'outlined'], 'filled')}
+                fullWidth={boolean('Full Width', false)}
+                disabled={boolean('Disabled', false)}
+                errorText={text('Error Text', '')}
+                helperText={text('Helper Text', '')}
+                minSelectableDate={new Date(2020, 1, 1)}
+                maxSelectableDate={new Date(2022, 2, 15)}
+            />
+        );
+    }}
+</Story>
+
+### Validations
+
+1. Validations would happen on invalid, and blur event.
+
+```tsx
+const FormWithDateRangePicker: React.FC = () => {
+    const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: null }),
+        handleSubmit = (e: React.FormEvent) => e.preventDefault();
+    return (
+        <form onSubmit={handleSubmit}>
+            <div>
+                <DateRangePicker value={dates} onChange={setDates} required />
+            </div>
+            <Button type="submit">Submit</Button>
+        </form>
+    );
+};
+```
+
+<Preview withToolbar>
+    <FormWithDateRangePicker />
+</Preview>
+
+2. Validations would also happen on blur event if you focus out of the component without selecting the date and required prop is passed.
+
+```tsx
+const FormWithDatePicker: React.FC = () => {
+    const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: null });
+    return <DateRangePicker value={dates} onChange={setDates} required />;
+};
+```
+
+<Preview withToolbar>
+    <DateRangePickerWithStateForDoc />
+</Preview>
 
 ### DateRangePicker Props
 
 <Props of={DateRangePicker} />
 
-### ReactDatepicker theme
+### DateRangePicker theme
 
-You can check the all posible values [here](https://github.com/tresko/react-datepicker#theming)
-
-### ReactDatepicker defaults
-
-<code>{JSON.stringify(defaultTheme.reactDatepicker, null, 2)}</code>
+<Props of={ThemeInterface} />

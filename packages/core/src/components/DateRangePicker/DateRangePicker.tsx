@@ -19,10 +19,13 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         variant,
         disabled,
         size,
+        onBlur,
         minSelectableDate,
         maxSelectableDate,
         popoverPlacement,
         onChange,
+        required,
+        validator,
         ...restProps
     } = props;
     const startDateRef = useRef<HTMLInputElement>(null),
@@ -40,11 +43,13 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
             <DateRangeTextFields
                 id={id}
                 size={size}
+                required={required}
                 variant={variant}
                 errorText={errorText}
                 helperText={helperText}
                 disabled={disabled}
                 isActive={isActive}
+                validator={validator}
                 startDateLabel={startDateLabel}
                 endDateLabel={endDateLabel}
                 selectedDates={value}
@@ -54,6 +59,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                 setFocusedElement={setFocusedElement}
                 startDateRef={startDateRef}
                 endDateRef={endDateRef}
+                onBlur={onBlur}
             />
             {isActive && (
                 <DateRangeCalendar
@@ -77,11 +83,13 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
 DateRangePicker.displayName = 'DateRangePicker';
 DateRangePicker.defaultProps = {
     id: 'medly-date-range-picker',
+    size: 'M',
     variant: 'filled',
     minWidth: '33.8rem',
     startDateLabel: 'From',
     endDateLabel: 'To',
     displayFormat: 'MM-dd-yyyy',
+    popoverPlacement: 'bottom-start',
     minSelectableDate: new Date(1901, 0, 1),
     maxSelectableDate: new Date(2100, 11, 1)
 };

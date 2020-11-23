@@ -1,4 +1,4 @@
-import { DateRangeProps } from '../types';
+import { DateRangeProps, DateRangeType } from '../types';
 
 export type Props = {
     id: string;
@@ -8,6 +8,7 @@ export type Props = {
     helperText: string;
     disabled: boolean;
     isActive: boolean;
+    required: boolean;
     startDateLabel: string;
     endDateLabel: string;
     selectedDates: DateRangeProps['value'];
@@ -17,4 +18,6 @@ export type Props = {
     setFocusedElement: React.Dispatch<React.SetStateAction<'START_DATE' | 'END_DATE'>>;
     startDateRef: React.MutableRefObject<HTMLInputElement>;
     endDateRef: React.MutableRefObject<HTMLInputElement>;
+    validator?: (val: DateRangeType, eventType?: string) => string;
+    onBlur: (event: React.FocusEvent<HTMLInputElement>) => void;
 };
