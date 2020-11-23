@@ -1,0 +1,397 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DialogBox component background at small screen size should render properly when it is closed 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(67,84,101,0.65);
+  z-index: 1000;
+  -webkit-animation: fadeOut 0.4s cubic-bezier(0,0,0.33,1);
+  animation: fadeOut 0.4s cubic-bezier(0,0,0.33,1);
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;
+
+exports[`DialogBox component background at small screen size should render properly when it is open 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(67,84,101,0.65);
+  z-index: 1000;
+  -webkit-animation: fadeIn 0.4s cubic-bezier(0,0,0.33,1);
+  animation: fadeIn 0.4s cubic-bezier(0,0,0.33,1);
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+    open=""
+  />
+</div>
+`;
+
+exports[`DialogBox component should render properly when it is open 1`] = `
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  padding: 2.4rem 1.6rem 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c7 > * + * {
+  margin-left: 1.6rem;
+}
+
+.c2 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: pointer;
+}
+
+.c2 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c3 {
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+  top: 1.6rem;
+  right: 1.6rem;
+  z-index: 20;
+  position: absolute;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid #eff2f4;
+  background-color: #eff2f4;
+}
+
+.c3,
+.c3 > * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3 * {
+  fill: #13181D;
+}
+
+.c3:hover {
+  border: 1px solid #0F5AD5;
+  background-color: #0F5AD5;
+  box-shadow: 0 2px 8px rgba(15,90,213,0.5);
+}
+
+.c3:hover * {
+  fill: #ffffff;
+}
+
+.c3:active {
+  border: 1px solid #0D4AAF;
+  background-color: #0D4AAF;
+  box-shadow: none;
+}
+
+.c3:active * {
+  fill: #ffffff;
+}
+
+.c6 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  box-sizing: border-box;
+  padding: 0 1.6rem;
+}
+
+.c5 {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 100%;
+  border-top-left-radius: 1.6rem;
+  border-top-right-radius: 1.6rem;
+  z-index: 10;
+  color: #13181D;
+  position: relative;
+  padding: 6.6rem 1.6rem 1.9rem 1.6rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(67,84,101,0.65);
+  z-index: 1000;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.c4::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.c4::-webkit-scrollbar-track {
+  background-color: transparent;
+  margin-top: 0rem;
+}
+
+.c4::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #b0bcc8;
+}
+
+.c1 {
+  background: #ffffff;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  min-height: 200px;
+  box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
+  box-sizing: border-box;
+  border-top-left-radius: 1.6rem;
+  border-top-right-radius: 1.6rem;
+}
+
+@media (min-width:768px) {
+  .c3 {
+    top: 1.2rem;
+    right: 1.2rem;
+    height: 3.2rem;
+    width: 3.2rem;
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c6 {
+    padding-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    overflow: auto;
+  }
+
+  .c6::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  .c6::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .c6::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #b0bcc8;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    position: relative;
+    padding: 0 1.6rem 1.6rem;
+  }
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    overflow: hidden;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .c4::-webkit-scrollbar-track {
+    margin-top: 0;
+  }
+}
+
+@media (max-width:767px) {
+  .c1 {
+    width: 100%;
+    height: calc(100% - 2.4rem);
+    -webkit-animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
+    animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
+  }
+}
+
+@media (min-width:768px) and (max-width:1439px) {
+  .c1 {
+    padding: 4.8rem 3.2rem;
+    border-radius: 2.4rem;
+    max-width: 72%;
+    min-width: 200px;
+    max-height: 80%;
+  }
+}
+
+@media (min-width:1440px) {
+  .c1 {
+    padding: 4.8rem 3.2rem;
+    border-radius: 2.4rem;
+    min-width: 200px;
+    max-width: 103.6rem;
+    max-height: 80%;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+    id="medly-dialog-box"
+    open=""
+  >
+    <div
+      class="c1"
+      id="medly-dialog-box-popup"
+      open=""
+    >
+      <div
+        class="c4"
+        id="medly-dialog-box-inner-container"
+      >
+        <div
+          class="c5"
+          id="medly-dialog-box-header"
+        >
+          <p>
+            Demo Header
+          </p>
+        </div>
+        <div
+          class="c6"
+          id="medly-dialog-box-content"
+        >
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        </div>
+        <div
+          class="c7"
+          id="medly-dialog-box-actions"
+        >
+          Demo Actions
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

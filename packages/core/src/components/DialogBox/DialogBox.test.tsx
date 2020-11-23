@@ -1,0 +1,133 @@
+import { cleanup, fireEvent, render } from '@test-utils';
+import React from 'react';
+import { DialogBox } from './DialogBox';
+import { DialogBoxBackgroundStyled } from './DialogBox.styled';
+import { DialogBoxBackgroundProps, Props } from './types';
+
+const dialogBoxRenderer = ({ open = false, onCloseModal = jest.fn(), minWidth, minHeight, shouldCloseOnOutsideClick = false }: Props) =>
+    render(
+        <DialogBox {...{ open, onCloseModal, minHeight, minWidth, shouldCloseOnOutsideClick }}>
+            <DialogBox.Header>
+                <p>Demo Header</p>
+            </DialogBox.Header>
+            <DialogBox.Content>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy
+                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum
+            </DialogBox.Content>
+            <DialogBox.Actions>Demo Actions</DialogBox.Actions>
+        </DialogBox>
+    );
+describe('DialogBox component', () => {
+    const originalScrollHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollHeight');
+    const originalClientHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'clientHeight');
+    const originalScrollTop = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollTop');
+
+    beforeAll(() => {
+        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 500 });
+        Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
+        Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 0 });
+    });
+
+    afterAll(() => {
+        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', originalScrollHeight);
+        Object.defineProperty(HTMLElement.prototype, 'clientHeight', originalClientHeight);
+        Object.defineProperty(HTMLElement.prototype, 'scrollTop', originalScrollTop);
+    });
+    afterEach(cleanup);
+
+    it('should render properly when it is open', () => {
+        const { container } = dialogBoxRenderer({ open: true, minWidth: '200px', minHeight: '200px' });
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should not render when open prop is falsy', () => {
+        const { container } = dialogBoxRenderer({});
+        expect(container).toBeEmptyDOMElement();
+    });
+
+    it('should call onCloseModal on click on close icon', () => {
+        const mockOnCloseModal = jest.fn();
+        const { container } = dialogBoxRenderer({ open: true, onCloseModal: mockOnCloseModal });
+        fireEvent.click(container.querySelector('#medly-modal-close-button'));
+        expect(mockOnCloseModal).toBeCalled();
+    });
+
+    it('should call onCloseModal on pressing escape key', () => {
+        const mockOnCloseModal = jest.fn();
+        const { container } = dialogBoxRenderer({ open: true, onCloseModal: mockOnCloseModal });
+        fireEvent.keyDown(container, { key: 'Escape', code: 27 });
+        expect(mockOnCloseModal).toBeCalled();
+    });
+
+    it('should call onCloseModal on click on overlay background', () => {
+        const mockOnCloseModal = jest.fn();
+        const { container } = dialogBoxRenderer({ open: true, onCloseModal: mockOnCloseModal, shouldCloseOnOutsideClick: true });
+        fireEvent.click(container.querySelector('#medly-modal'));
+        expect(mockOnCloseModal).toBeCalled();
+    });
+
+    it('should be able to render any JSX element in header', () => {
+        const mockOnCloseModal = jest.fn();
+        const { container } = render(
+            <DialogBox open onCloseModal={mockOnCloseModal}>
+                <DialogBox.Header>Demo Header</DialogBox.Header>
+                <DialogBox.Content>Demo Content</DialogBox.Content>
+                <DialogBox.Actions>
+                    <p>Demo Header</p>
+                </DialogBox.Actions>
+            </DialogBox>
+        );
+        expect(container.querySelector('p')).toBeInTheDocument();
+    });
+
+    it('should hide shadow of header on scroll to top', () => {
+        const { container } = dialogBoxRenderer({ open: true });
+        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
+        Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
+        Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 0 });
+        fireEvent.scroll(container.querySelector('#medly-modal-content'), { target: { scrollY: 0 } });
+        expect(container.querySelector('#medly-modal-header')).not.toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
+        expect(container.querySelector('#medly-modal-actions')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
+    });
+    it('should hide shadow of actions on scroll to bottom', () => {
+        const { container } = dialogBoxRenderer({ open: true });
+        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
+        Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
+        Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 300 });
+        fireEvent.scroll(container.querySelector('#medly-modal-content'), { target: { scrollY: 300 } });
+        expect(container.querySelector('#medly-modal-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
+        expect(container.querySelector('#medly-modal-actions')).not.toHaveStyle(
+            `box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`
+        );
+    });
+
+    it('should show shadow of header and actions on scroll', () => {
+        const { container } = dialogBoxRenderer({ open: true });
+        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
+        Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
+        Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 100 });
+        fireEvent.scroll(container.querySelector('#medly-modal-content'), { target: { scrollY: 100 } });
+        expect(container.querySelector('#medly-modal-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
+        expect(container.querySelector('#medly-modal-actions')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
+    });
+});
+
+const DialogBoxBackgroundRenderer = ({ open = true, isSmallScreen = true }: DialogBoxBackgroundProps) => {
+    const mockOnClick = jest.fn();
+    return render(<DialogBoxBackgroundStyled onClick={mockOnClick} {...{ open, isSmallScreen }} />);
+};
+
+describe('DialogBox component background at small screen size', () => {
+    it('should render properly when it is open', () => {
+        const { container } = DialogBoxBackgroundRenderer({ open: true, isSmallScreen: true });
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly when it is closed', () => {
+        const { container } = DialogBoxBackgroundRenderer({ open: false, isSmallScreen: true });
+        expect(container).toMatchSnapshot();
+    });
+});
