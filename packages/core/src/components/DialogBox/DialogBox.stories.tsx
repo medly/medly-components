@@ -36,9 +36,10 @@ export const Basic = () => {
         <>
             <Button onClick={changeModalState}>Click to Open</Button>
             <DialogBox open={modalState} onCloseModal={changeModalState} shouldCloseOnOutsideClick={true}>
-                <DialogBox.Header>Add User</DialogBox.Header>
+                <DialogBox.Header>Are you sure?</DialogBox.Header>
                 <DialogBox.Content>
-                    We’re sorry, we don’t currently deliver to this address. Please give us a call so we can help fix this issue. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </DialogBox.Content>
                 <DialogBox.Actions>
                     <Button variant="outlined">Delete</Button>

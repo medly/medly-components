@@ -7,7 +7,7 @@ export const Popup = styled('div')<Props>`
     display: flex;
     flex-direction: column;
     position: relative;
-    min-height: ${({ minHeight }) => minHeight || '25.6rem'};
+    min-height: ${({ minHeight }) => minHeight || 'auto'};
     box-shadow: 0 0.4rem 3.2 ${({ theme }) => theme.modal.shadowColor};
     box-sizing: border-box;
     border-radius: 1.6rem;

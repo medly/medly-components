@@ -9,7 +9,7 @@ const getPosition = ({ scrollState }: Props) => {
 
     return css`
         position: ${6.6 - scrollPositionRem > 2.1 ? 'relative' : 'fixed'};
-        padding: ${6.6 - scrollPositionRem > 2.1 ? '6.6rem' : '2.1rem'} 1.6rem 1.9rem 1.6rem;
+        padding: 2.1rem 1.6rem 1.9rem 1.6rem;
 
         @media (min-width: 768px) {
             position: relative;
