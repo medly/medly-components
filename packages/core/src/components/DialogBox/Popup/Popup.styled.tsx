@@ -13,17 +13,12 @@ export const Popup = styled('div')<Props>`
     border-radius: 1.6rem;
     overflow-y: scroll;
     max-height: 80%;
-
-    @media (max-width: 767px) {
-        width: 100%;
-
-        /* height: calc(100% - 2.4rem); */
-    } 
+    width: calc(100% - 2.4rem);
 
     @media (min-width: 768px) and (max-width: 1439px) {
-        padding: ${({ theme }) => `${theme.spacing.L1} ${theme.spacing.M2}`};
         max-width: 72%;
         min-width: ${({ minWidth }) => minWidth || '42%'};
+        padding: ${({ theme }) => `${theme.spacing.L1} ${theme.spacing.M2}`};
     }
 
     @media (min-width: 1440px) {
