@@ -9,6 +9,7 @@ import checkbox from './checkbox';
 import chip from './chip';
 import colors from './colors';
 import datePicker from './datePicker';
+import dateRangePicker from './dateRangePicker';
 import font from './font';
 import input from './input';
 import label from './label';
@@ -40,6 +41,7 @@ export const coreDefaultTheme = {
     chip,
     colors,
     datePicker,
+    dateRangePicker,
     font,
     input,
     label,

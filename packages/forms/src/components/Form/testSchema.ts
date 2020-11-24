@@ -53,6 +53,7 @@ export const testSchema: FormFieldSchema = {
     },
     experience: {
         type: 'date-range',
+        required: true,
         displayFormat: 'dd/MM/yyyy',
         label: 'Experience'
     },

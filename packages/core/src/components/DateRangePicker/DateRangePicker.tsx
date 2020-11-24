@@ -1,84 +1,95 @@
-import { DateRangeInput, FocusedInput, OnDatesChangeProps } from '@datepicker-react/styled';
-import { DateRangeIcon } from '@medly-components/icons';
-import { format } from 'date-fns';
-import React, { FC, useCallback, useMemo, useState } from 'react';
-import * as Styled from '../TextField/Styled';
-import { DateRangePickerStyled, Wrapper } from './DateRangePicker.styled';
-import { Props } from './types';
+import { useOuterClickNotifier, useUpdateEffect } from '@medly-components/utils';
+import React, { FC, useCallback, useRef, useState } from 'react';
+import * as TextFieldStyled from '../TextField/Styled';
+import DateRangeCalendar from './DateRangeCalendar';
+import DateRangeTextFields from './DateRangeTextFields';
+import { DateRangeProps } from './types';
 
-export const DateRangePicker: FC<Props> = React.memo(props => {
+export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
     const {
-        size,
-        variant,
-        fullWidth,
+        id,
         value,
-        onChange,
+        minWidth,
+        fullWidth,
+        displayFormat,
+        startDateLabel,
+        endDateLabel,
+        errorText,
+        helperText,
+        variant,
         disabled,
-        placement,
+        size,
+        onBlur,
         minSelectableDate,
         maxSelectableDate,
-        displayFormat,
+        popoverPlacement,
+        onChange,
+        required,
+        validator,
         ...restProps
     } = props;
-    const minWidth = props.minWidth || size === 'S' ? '25rem' : '29rem';
+    const startDateRef = useRef<HTMLInputElement>(null),
+        endDateRef = useRef<HTMLInputElement>(null),
+        wrapperRef = useRef<HTMLDivElement>(null),
+        [isActive, setActive] = useState(false),
+        [focusedElement, setFocusedElement] = useState<'START_DATE' | `END_DATE`>('START_DATE'),
+        focusElement = useCallback(element => (element === 'START_DATE' ? startDateRef : endDateRef).current.focus(), []);
 
-    const [showDatepicker, setShowDatepicker] = useState<FocusedInput>(null),
-        dates = useMemo(() => ({ startDate: value.startDate || null, endDate: value.endDate || null }), [value.startDate, value.endDate]);
-
-    const handleClick = useCallback((event: React.MouseEvent) => {
-            event.preventDefault();
-            event.stopPropagation();
-        }, []),
-        handleDateChange = useCallback(
-            ({ startDate, endDate, focusedInput }: OnDatesChangeProps) => {
-                setShowDatepicker(focusedInput);
-                onChange && onChange({ startDate, endDate });
-            },
-            [onChange]
-        ),
-        toggleCalendar = useCallback(() => setShowDatepicker(val => (val ? null : 'startDate')), []),
-        formatFn = useCallback((date: Date) => format(date, displayFormat), [displayFormat]);
+    useOuterClickNotifier(() => setActive(false), wrapperRef);
+    useUpdateEffect(() => focusElement(focusedElement), [focusedElement]);
 
     return (
-        <Wrapper>
-            <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth}>
-                <Styled.InnerWrapper size={size} disabled={disabled} variant={variant} onClick={toggleCalendar}>
-                    <Styled.Prefix size={size}>
-                        <DateRangeIcon size={size} />
-                    </Styled.Prefix>
-                    <DateRangePickerStyled
-                        size={size}
-                        placement={placement}
-                        data-testid="react-datepicker"
-                        disabled={disabled}
-                        onClick={handleClick}
-                    >
-                        <DateRangeInput
-                            {...dates}
-                            {...restProps}
-                            displayFormat={formatFn}
-                            onDatesChange={handleDateChange}
-                            showClose={false}
-                            onFocusChange={setShowDatepicker}
-                            focusedInput={showDatepicker}
-                            showStartDateCalendarIcon={false}
-                            showEndDateCalendarIcon={false}
-                            minBookingDate={minSelectableDate}
-                            maxBookingDate={maxSelectableDate}
-                        />
-                    </DateRangePickerStyled>
-                </Styled.InnerWrapper>
-            </Styled.OuterWrapper>
-        </Wrapper>
+        <TextFieldStyled.OuterWrapper id={`${id}-wrapper`} ref={wrapperRef} fullWidth={fullWidth} minWidth={minWidth} {...restProps}>
+            <DateRangeTextFields
+                id={id}
+                size={size}
+                required={required}
+                variant={variant}
+                errorText={errorText}
+                helperText={helperText}
+                disabled={disabled}
+                isActive={isActive}
+                validator={validator}
+                startDateLabel={startDateLabel}
+                endDateLabel={endDateLabel}
+                selectedDates={value}
+                onDateChange={onChange}
+                displayFormat={displayFormat}
+                setActive={setActive}
+                setFocusedElement={setFocusedElement}
+                startDateRef={startDateRef}
+                endDateRef={endDateRef}
+                onBlur={onBlur}
+            />
+            {isActive && (
+                <DateRangeCalendar
+                    id={`${id}-calendar`}
+                    size={size}
+                    placement={popoverPlacement}
+                    selectedDates={value}
+                    setActive={setActive}
+                    focusElement={focusElement}
+                    onDateSelection={onChange}
+                    focusedElement={focusedElement}
+                    setFocusedElement={setFocusedElement}
+                    minSelectableDate={minSelectableDate}
+                    maxSelectableDate={maxSelectableDate}
+                />
+            )}
+        </TextFieldStyled.OuterWrapper>
     );
 });
 
 DateRangePicker.displayName = 'DateRangePicker';
 DateRangePicker.defaultProps = {
-    displayFormat: 'MM/dd/yyyy',
-    placement: 'bottom-start',
-    fullWidth: false,
-    disabled: false,
+    id: 'medly-date-range-picker',
     size: 'M',
-    variant: 'filled'
+    variant: 'filled',
+    minWidth: '33.8rem',
+    startDateLabel: 'From',
+    endDateLabel: 'To',
+    displayFormat: 'MM-dd-yyyy',
+    popoverPlacement: 'bottom-start',
+    minSelectableDate: new Date(1901, 0, 1),
+    maxSelectableDate: new Date(2100, 11, 1)
 };

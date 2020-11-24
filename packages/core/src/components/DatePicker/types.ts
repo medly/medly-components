@@ -15,7 +15,7 @@ export type DisplayFormat =
     | 'yyyy-dd-MM'
     | 'yyyy-MM-dd';
 
-export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onChange' | 'size' | 'prefix'> {
+export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onChange' | 'size' | 'prefix'> {
     /** Current Date */
     value: Date | string | null;
     /** Function to be called on changing the date */
@@ -48,7 +48,7 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onCh
     popoverPlacement?: Placement;
 }
 
-export interface StyleProps extends Pick<Props, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size'> {
+export interface StyleProps extends Pick<DatePickerProps, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size'> {
     isErrorPresent?: boolean;
     isActive?: boolean;
     placement: Placement;

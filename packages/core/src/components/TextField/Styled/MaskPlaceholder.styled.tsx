@@ -1,5 +1,5 @@
 import { css, styled } from '@medly-components/utils';
-import { Props } from '../types';
+import { TextFieldProps as Props } from '../types';
 
 const center = css`
         top: 50%;
@@ -19,6 +19,7 @@ export const MaskPlaceholder = styled('span')<{
     opacity: 0;
     cursor: text;
     user-select: none;
+    pointer-events: none;
     color: ${({ theme }) => theme.textField.filled.active.placeholderColor};
     ${({ isLabelPresent, size }) => (isLabelPresent && size !== 'S' ? bottom : center)}
 `;

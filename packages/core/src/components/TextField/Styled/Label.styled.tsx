@@ -20,7 +20,7 @@ export const Label = styled('label')<{
     required: boolean;
     variant: 'outlined' | 'filled' | 'fusion';
     size: 'S' | 'M';
-    multiline: boolean;
+    multiline?: boolean;
     inputWidth: number;
 }>`
     top: ${({ multiline }) => (multiline ? '1.1rem' : '50%')};

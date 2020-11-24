@@ -15,6 +15,7 @@ export interface CoreTheme {
     chip?: CoreThemes.ChipTheme;
     colors?: CoreThemes.ColorPallet;
     datePicker?: CoreThemes.DatePickerTheme;
+    dateRangePicker?: CoreThemes.DateRangePickerTheme;
     font?: CoreThemes.FontTheme;
     input?: CoreThemes.InputTheme;
     label?: CoreThemes.LabelTheme;

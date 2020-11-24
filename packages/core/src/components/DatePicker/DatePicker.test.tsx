@@ -2,7 +2,7 @@ import { cleanup, fireEvent, render, waitFor } from '@test-utils';
 import React from 'react';
 import { placements } from '../Popover/Popover.stories';
 import { DatePicker } from './DatePicker';
-import { Props } from './types';
+import { DatePickerProps } from './types';
 
 describe('DatePicker component', () => {
     afterEach(cleanup);
@@ -41,7 +41,7 @@ describe('DatePicker component', () => {
     });
 
     describe('popover placement', () => {
-        test.each(placements)('should render properly with %p position', (popoverPlacement: Props['popoverPlacement']) => {
+        test.each(placements)('should render properly with %p position', (popoverPlacement: DatePickerProps['popoverPlacement']) => {
             const { container } = render(
                 <DatePicker
                     id="dob"
@@ -122,7 +122,7 @@ describe('DatePicker component', () => {
     });
 
     describe('error messages', () => {
-        const props: Props = {
+        const props: DatePickerProps = {
             value: null,
             displayFormat: 'MM/dd/yyyy',
             onChange: jest.fn()

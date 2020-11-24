@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Calendar Component should render given date 1`] = `
-.c8 {
+.c7 {
   overflow: visible;
   font-size: 2rem;
   -webkit-transition: all 100ms linear;
@@ -9,14 +9,14 @@ exports[`Calendar Component should render given date 1`] = `
   cursor: inherit;
 }
 
-.c8 * {
+.c7 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c11 {
+.c10 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -24,14 +24,14 @@ exports[`Calendar Component should render given date 1`] = `
   cursor: inherit;
 }
 
-.c11 * {
+.c10 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c7 {
+.c6 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -44,7 +44,7 @@ exports[`Calendar Component should render given date 1`] = `
   text-align: initial;
 }
 
-.c13 {
+.c12 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -54,7 +54,7 @@ exports[`Calendar Component should render given date 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  text-align: center;
+  text-align: initial;
 }
 
 .c15 {
@@ -82,7 +82,7 @@ exports[`Calendar Component should render given date 1`] = `
   width: 100%;
 }
 
-.c9 {
+.c8 {
   pointer-events: none;
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -242,7 +242,7 @@ exports[`Calendar Component should render given date 1`] = `
   height: max-content;
 }
 
-.c10 {
+.c9 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -266,15 +266,15 @@ exports[`Calendar Component should render given date 1`] = `
   align-items: center;
 }
 
-.c10 svg {
+.c9 svg {
   fill: #435465;
 }
 
-.c10:not(:disabled):hover {
+.c9:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c10:not(:disabled):active {
+.c9:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -325,20 +325,10 @@ exports[`Calendar Component should render given date 1`] = `
   padding: 0 0 0 1rem;
 }
 
-.c12 {
+.c11 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
-}
-
-.c12 > .c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.8rem;
 }
 
 .c14 {
@@ -478,6 +468,16 @@ exports[`Calendar Component should render given date 1`] = `
   background-color: #eff2f4;
 }
 
+.c13 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+}
+
 <div>
   <div
     class="c0"
@@ -504,12 +504,12 @@ exports[`Calendar Component should render given date 1`] = `
             >
               
               <span
-                class="c6 c7"
+                class="c6"
               >
                 Jan
               </span>
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 fill="none"
                 height="1em"
                 viewBox="0 0 24 24"
@@ -539,12 +539,12 @@ exports[`Calendar Component should render given date 1`] = `
             >
               
               <span
-                class="c6 c7"
+                class="c6"
               >
                 2020
               </span>
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 fill="none"
                 height="1em"
                 viewBox="0 0 24 24"
@@ -561,11 +561,11 @@ exports[`Calendar Component should render given date 1`] = `
         </div>
       </div>
       <button
-        class="c10 calendar-month-navigation-go-back"
+        class="c9 calendar-month-navigation-go-back"
         type="button"
       >
         <svg
-          class="c11"
+          class="c10"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -580,11 +580,11 @@ exports[`Calendar Component should render given date 1`] = `
         </svg>
       </button>
       <button
-        class="c10 calendar-month-navigation-go-forward"
+        class="c9 calendar-month-navigation-go-forward"
         type="button"
       >
         <svg
-          class="c11"
+          class="c10"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -600,40 +600,40 @@ exports[`Calendar Component should render given date 1`] = `
       </button>
     </div>
     <div
-      class="c12"
+      class="c11"
     >
       <strong
-        class="c6 c13"
+        class="c12 c13"
       >
         S
       </strong>
       <strong
-        class="c6 c13"
+        class="c12 c13"
       >
         M
       </strong>
       <strong
-        class="c6 c13"
+        class="c12 c13"
       >
         T
       </strong>
       <strong
-        class="c6 c13"
+        class="c12 c13"
       >
         W
       </strong>
       <strong
-        class="c6 c13"
+        class="c12 c13"
       >
         T
       </strong>
       <strong
-        class="c6 c13"
+        class="c12 c13"
       >
         F
       </strong>
       <strong
-        class="c6 c13"
+        class="c12 c13"
       >
         S
       </strong>
@@ -643,7 +643,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           29
         </span>
@@ -654,7 +654,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           30
         </span>
@@ -665,7 +665,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           31
         </span>
@@ -676,7 +676,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           1
         </span>
@@ -687,7 +687,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           2
         </span>
@@ -698,7 +698,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           3
         </span>
@@ -709,7 +709,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           4
         </span>
@@ -720,7 +720,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           5
         </span>
@@ -731,7 +731,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           6
         </span>
@@ -742,7 +742,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           7
         </span>
@@ -753,7 +753,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           8
         </span>
@@ -764,7 +764,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           9
         </span>
@@ -775,7 +775,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           10
         </span>
@@ -786,7 +786,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           11
         </span>
@@ -797,7 +797,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           12
         </span>
@@ -808,7 +808,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           13
         </span>
@@ -819,7 +819,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           14
         </span>
@@ -830,7 +830,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           15
         </span>
@@ -841,7 +841,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           16
         </span>
@@ -852,7 +852,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           17
         </span>
@@ -863,7 +863,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           18
         </span>
@@ -874,7 +874,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           19
         </span>
@@ -885,7 +885,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           20
         </span>
@@ -896,7 +896,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           21
         </span>
@@ -907,7 +907,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           22
         </span>
@@ -918,7 +918,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           23
         </span>
@@ -929,7 +929,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           24
         </span>
@@ -940,7 +940,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           25
         </span>
@@ -951,7 +951,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           26
         </span>
@@ -962,7 +962,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           27
         </span>
@@ -973,7 +973,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           28
         </span>
@@ -984,7 +984,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           29
         </span>
@@ -995,7 +995,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           30
         </span>
@@ -1006,7 +1006,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           31
         </span>
@@ -1017,7 +1017,7 @@ exports[`Calendar Component should render given date 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           1
         </span>
@@ -1028,7 +1028,7 @@ exports[`Calendar Component should render given date 1`] = `
 `;
 
 exports[`Calendar Component should render properly with with error state 1`] = `
-.c8 {
+.c7 {
   overflow: visible;
   font-size: 2rem;
   -webkit-transition: all 100ms linear;
@@ -1036,14 +1036,14 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   cursor: inherit;
 }
 
-.c8 * {
+.c7 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c11 {
+.c10 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -1051,14 +1051,14 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   cursor: inherit;
 }
 
-.c11 * {
+.c10 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c7 {
+.c6 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -1071,7 +1071,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   text-align: initial;
 }
 
-.c13 {
+.c12 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -1081,7 +1081,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  text-align: center;
+  text-align: initial;
 }
 
 .c15 {
@@ -1109,7 +1109,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   width: 100%;
 }
 
-.c9 {
+.c8 {
   pointer-events: none;
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -1269,7 +1269,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   height: max-content;
 }
 
-.c10 {
+.c9 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -1293,15 +1293,15 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   align-items: center;
 }
 
-.c10 svg {
+.c9 svg {
   fill: #435465;
 }
 
-.c10:not(:disabled):hover {
+.c9:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c10:not(:disabled):active {
+.c9:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -1352,20 +1352,10 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   padding: 0 0 0 1rem;
 }
 
-.c12 {
+.c11 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
-}
-
-.c12 > .c6 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.8rem;
 }
 
 .c14 {
@@ -1505,6 +1495,16 @@ exports[`Calendar Component should render properly with with error state 1`] = `
   background-color: #eff2f4;
 }
 
+.c13 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+}
+
 <div>
   <div
     class="c0"
@@ -1531,12 +1531,12 @@ exports[`Calendar Component should render properly with with error state 1`] = `
             >
               
               <span
-                class="c6 c7"
+                class="c6"
               >
                 Jan
               </span>
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 fill="none"
                 height="1em"
                 viewBox="0 0 24 24"
@@ -1567,12 +1567,12 @@ exports[`Calendar Component should render properly with with error state 1`] = `
             >
               
               <span
-                class="c6 c7"
+                class="c6"
               >
                 2020
               </span>
               <svg
-                class="c8 c9"
+                class="c7 c8"
                 fill="none"
                 height="1em"
                 viewBox="0 0 24 24"
@@ -1590,11 +1590,11 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         </div>
       </div>
       <button
-        class="c10 calendar-month-navigation-go-back"
+        class="c9 calendar-month-navigation-go-back"
         type="button"
       >
         <svg
-          class="c11"
+          class="c10"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -1609,11 +1609,11 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         </svg>
       </button>
       <button
-        class="c10 calendar-month-navigation-go-forward"
+        class="c9 calendar-month-navigation-go-forward"
         type="button"
       >
         <svg
-          class="c11"
+          class="c10"
           fill="none"
           height="1em"
           viewBox="0 0 24 24"
@@ -1629,40 +1629,40 @@ exports[`Calendar Component should render properly with with error state 1`] = `
       </button>
     </div>
     <div
-      class="c12"
+      class="c11"
     >
       <strong
-        class="c6 c13"
+        class="c12 c13"
       >
         S
       </strong>
       <strong
-        class="c6 c13"
+        class="c12 c13"
       >
         M
       </strong>
       <strong
-        class="c6 c13"
+        class="c12 c13"
       >
         T
       </strong>
       <strong
-        class="c6 c13"
+        class="c12 c13"
       >
         W
       </strong>
       <strong
-        class="c6 c13"
+        class="c12 c13"
       >
         T
       </strong>
       <strong
-        class="c6 c13"
+        class="c12 c13"
       >
         F
       </strong>
       <strong
-        class="c6 c13"
+        class="c12 c13"
       >
         S
       </strong>
@@ -1672,7 +1672,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           29
         </span>
@@ -1683,7 +1683,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           30
         </span>
@@ -1694,7 +1694,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           31
         </span>
@@ -1705,7 +1705,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           1
         </span>
@@ -1716,7 +1716,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           2
         </span>
@@ -1727,7 +1727,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           3
         </span>
@@ -1738,7 +1738,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           4
         </span>
@@ -1749,7 +1749,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           5
         </span>
@@ -1760,7 +1760,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           6
         </span>
@@ -1771,7 +1771,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           7
         </span>
@@ -1782,7 +1782,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           8
         </span>
@@ -1793,7 +1793,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           9
         </span>
@@ -1804,7 +1804,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           10
         </span>
@@ -1815,7 +1815,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           11
         </span>
@@ -1826,7 +1826,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           12
         </span>
@@ -1837,7 +1837,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           13
         </span>
@@ -1848,7 +1848,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           14
         </span>
@@ -1859,7 +1859,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           15
         </span>
@@ -1870,7 +1870,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           16
         </span>
@@ -1881,7 +1881,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           17
         </span>
@@ -1892,7 +1892,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           18
         </span>
@@ -1903,7 +1903,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           19
         </span>
@@ -1914,7 +1914,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           20
         </span>
@@ -1925,7 +1925,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           21
         </span>
@@ -1936,7 +1936,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           22
         </span>
@@ -1947,7 +1947,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           23
         </span>
@@ -1958,7 +1958,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           24
         </span>
@@ -1969,7 +1969,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           25
         </span>
@@ -1980,7 +1980,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           26
         </span>
@@ -1991,7 +1991,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           27
         </span>
@@ -2002,7 +2002,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           28
         </span>
@@ -2013,7 +2013,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           29
         </span>
@@ -2024,7 +2024,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           30
         </span>
@@ -2035,7 +2035,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           31
         </span>
@@ -2046,7 +2046,7 @@ exports[`Calendar Component should render properly with with error state 1`] = `
         type="button"
       >
         <span
-          class="c6 c15"
+          class="c15"
         >
           1
         </span>

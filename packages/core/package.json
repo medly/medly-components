@@ -18,7 +18,6 @@
         "styled-components": "^5.1.0"
     },
     "dependencies": {
-        "@datepicker-react/styled": "^2.3.0",
         "@medly-components/icons": "1.4.10",
         "@medly-components/theme": "1.25.0",
         "@medly-components/utils": "1.6.3",

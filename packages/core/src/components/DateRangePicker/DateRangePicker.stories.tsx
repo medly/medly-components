@@ -1,9 +1,11 @@
-import { boolean, select } from '@storybook/addon-knobs';
+import { DateRangePickerTheme, defaultTheme } from '@medly-components/theme';
 import React, { useState } from 'react';
+import Button from '../Button';
 import { Placement } from '../Popover/types';
 import { DateRangePicker } from './DateRangePicker';
+import { DateRangeProps, DateRangeType } from './types';
 
-const placement: Placement[] = [
+export const placement: Placement[] = [
     'top-start',
     'top',
     'top-end',
@@ -18,20 +20,40 @@ const placement: Placement[] = [
     'left-start'
 ];
 
-export const Basic = () => {
-    const [dates, setDates] = useState({ startDate: null, endDate: null });
+export const displayFormats: DateRangeProps['displayFormat'][] = [
+    'dd/MM/yyyy',
+    'MM/dd/yyyy',
+    'dd/yyyy/MM',
+    'MM/yyyy/dd',
+    'yyyy/dd/MM',
+    'yyyy/MM/dd',
+    'dd-MM-yyyy',
+    'dd-yyyy-MM',
+    'MM-dd-yyyy',
+    'MM-yyyy-dd',
+    'yyyy-dd-MM',
+    'yyyy-MM-dd'
+];
 
+export const ThemeInterface: React.FC<DateRangePickerTheme> = () => null;
+ThemeInterface.defaultProps = {
+    ...defaultTheme.dateRangePicker
+};
+
+export const FormWithDateRangePicker: React.FC = () => {
+    const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: null }),
+        handleSubmit = (e: React.FormEvent) => e.preventDefault();
     return (
-        <DateRangePicker
-            value={dates}
-            onChange={setDates}
-            size={select('Size', ['S', 'M'], 'S')}
-            placement={select('Placement', placement, 'bottom-start')}
-            variant={select('Variant', ['filled', 'outlined'], 'filled')}
-            fullWidth={boolean('Full Width', false)}
-            disabled={boolean('Disabled', false)}
-            minSelectableDate={new Date(2020, 1, 1)}
-            maxSelectableDate={new Date(2022, 2, 15)}
-        />
+        <form onSubmit={handleSubmit}>
+            <div>
+                <DateRangePicker value={dates} onChange={setDates} required />
+            </div>
+            <Button type="submit">Submit</Button>
+        </form>
     );
+};
+
+export const DateRangePickerWithStateForDoc: React.FC = () => {
+    const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: null });
+    return <DateRangePicker value={dates} onChange={setDates} required />;
 };
