@@ -1,4 +1,4 @@
-import { endOfWeek, startOfWeek } from 'date-fns';
+import { endOfDay, endOfWeek, startOfWeek } from 'date-fns';
 import React, { useCallback } from 'react';
 import * as CalendarStyled from '../../../Calendar/Calendar.styled';
 import { LONG_CALENDAR_MONTHS } from '../../../Calendar/constants';
@@ -59,7 +59,7 @@ export const Month: React.FC<Props> = React.memo(
                             isWeekFirstDate = isSameDay(_date, startOfWeek(_date)),
                             isWeekLastDate = isSameDay(_date, endOfWeek(_date)),
                             isHoverDateAfterDateSelection = !!(startDate && !endDate) || !!(!startDate && endDate),
-                            disabled = _date > maxSelectableDate || _date < minSelectableDate;
+                            disabled = endOfDay(_date) > endOfDay(maxSelectableDate) || endOfDay(_date) < endOfDay(minSelectableDate);
 
                         return (
                             <Styled.DateContainer

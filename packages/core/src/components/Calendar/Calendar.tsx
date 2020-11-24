@@ -1,5 +1,6 @@
 import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
 import { useUpdateEffect, WithStyle } from '@medly-components/utils';
+import { endOfDay } from 'date-fns';
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { PopoverContext } from '../Popover/Popover.context';
 import SingleSelect from '../SingleSelect';
@@ -123,7 +124,7 @@ export const Calendar: React.FC<CalendarProps> & WithStyle = React.memo(
                                 isInActiveMonth={isInActiveMonth}
                                 isSelected={isSelected}
                                 isCurrentDate={isCurrentDate}
-                                disabled={_date > maxSelectableDate || _date < minSelectableDate}
+                                disabled={endOfDay(_date) > endOfDay(maxSelectableDate) || endOfDay(_date) < endOfDay(minSelectableDate)}
                                 onClick={handleDateChange(_date)}
                             >
                                 <Text>{_date.getDate()}</Text>
