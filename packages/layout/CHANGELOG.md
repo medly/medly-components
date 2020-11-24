@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.15.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.14.3...@medly-components/layout@1.15.0) (2020-11-24)
+
+
+### Features
+
+* add animation and fix minor issue in DateRangePicker component ([a08c6fb](https://github.com/medly/medly-components/commit/a08c6fb5fff6062bbe1c8d39297ba372bcaaac2a))
+
+
+
+
+
 ## [1.14.3](https://github.com/medly/medly-components/compare/@medly-components/layout@1.14.2...@medly-components/layout@1.14.3) (2020-11-12)
 
 **Note:** Version bump only for package @medly-components/layout
