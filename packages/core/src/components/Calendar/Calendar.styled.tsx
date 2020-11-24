@@ -109,7 +109,7 @@ export const Date = styled('button').attrs({ type: 'button' })<DateProps>`
     }
 
     ${({ isSelected }) => isSelected && activeDate()};
-    ${({ isCurrentDate }) => isCurrentDate && currentDate()};
+    ${({ isCurrentDate, isSelected }) => isCurrentDate && !isSelected && currentDate()};
     ${({ isInActiveMonth }) => !isInActiveMonth && nonActiveMonthDate()};
 
     ${centerAligned()}
