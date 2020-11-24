@@ -1,7 +1,7 @@
 import { TableColumnConfig } from '../types';
 
 const columns: TableColumnConfig[] = [
-    { title: 'Name', field: 'name', fraction: 2, sortable: true, fitContent: true },
+    { title: 'Name', field: 'name', fraction: 2, sortable: true, fitContent: false },
     {
         title: 'Marks',
         field: 'marks',

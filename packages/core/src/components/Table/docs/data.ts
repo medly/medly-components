@@ -1,7 +1,7 @@
 const data = [
     {
         id: 1,
-        name: 'Oli Bob',
+        name: 'Oli Bob asfdakhf alsfkjh asdfalskj  asdasdkj  fasdkj  asldfkj ljlaskdfj',
         age: '12',
         color: 'red,green',
         rating: 5,

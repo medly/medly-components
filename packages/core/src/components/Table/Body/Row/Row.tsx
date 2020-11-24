@@ -16,6 +16,7 @@ export const Row: React.FC<Props> = React.memo(props => {
             columns,
             isLoading,
             onRowClick,
+            hiddenDivRef,
             rowClickDisableKey,
             rowSelectionDisableKey,
             isRowSelectable,
@@ -74,11 +75,12 @@ export const Row: React.FC<Props> = React.memo(props => {
                                   isRowClickDisabled={isRowClickDisabled}
                                   dottedFieldName={fieldName}
                                   tableSize={tableSize}
+                                  hiddenDivRef={hiddenDivRef}
                               />
                           )
                       ];
             }, []),
-        [id, data, isLoading, columns, addColumnMaxSize, isRowClickDisabled, tableSize]
+        [id, data, isLoading, columns, addColumnMaxSize, isRowClickDisabled, hiddenDivRef, tableSize]
     );
 
     return (

@@ -5,28 +5,46 @@ import { Cell as StyledCell, CustomComponentWrapper, LoadingDiv } from './Styled
 import { TableCellProps } from './types';
 
 const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
-    const childRef = useRef(null),
-        { addColumnMaxSize, config, data, rowId, rowData, isRowClickDisabled, dottedFieldName, tableSize, isLoading, ...restProps } = props,
+    const customComponentWrapperRef = useRef(null),
+        {
+            addColumnMaxSize,
+            config,
+            data,
+            rowId,
+            rowData,
+            isRowClickDisabled,
+            dottedFieldName,
+            tableSize,
+            isLoading,
+            hiddenDivRef,
+            ...restProps
+        } = props,
         { align, hidden, frozen, formatter, component: CustomComponent } = config,
-        formattedData = useMemo(() => (formatter ? formatter(data) : data), [formatter, data]);
+        formattedData = useMemo(() => (formatter ? formatter(data, rowData) : data), [formatter, data]);
 
     useEffect(() => {
-        childRef.current &&
-            !isLoading &&
-            addColumnMaxSize &&
-            addColumnMaxSize(dottedFieldName, childRef.current.clientWidth + (tableSize === 'L' ? 48 : 32));
-    }, [childRef, tableSize]);
+        if (!isLoading && addColumnMaxSize) {
+            let currentSize = 0;
+            if (CustomComponent && customComponentWrapperRef.current) {
+                currentSize = customComponentWrapperRef.current.clientWidth;
+            } else if (hiddenDivRef.current) {
+                hiddenDivRef.current.innerHTML = data;
+                currentSize = hiddenDivRef.current.clientWidth;
+            }
+            currentSize > 0 && addColumnMaxSize(dottedFieldName, currentSize + (tableSize === 'L' ? 48 : 32));
+        }
+    }, [data, isLoading, addColumnMaxSize, tableSize]);
 
     return (
         <StyledCell hidden={hidden} frozen={frozen} tableSize={tableSize} align={align} {...restProps}>
             {isLoading ? (
-                <LoadingDiv ref={childRef} />
+                <LoadingDiv />
             ) : CustomComponent ? (
-                <CustomComponentWrapper ref={childRef}>
+                <CustomComponentWrapper ref={customComponentWrapperRef}>
                     <CustomComponent {...{ data: formattedData, rowId, disabled: isRowClickDisabled, rowData }} />
                 </CustomComponentWrapper>
             ) : (
-                <Text ref={childRef} textVariant="body2" title={formattedData}>
+                <Text textVariant="body2" title={formattedData}>
                     {formattedData}
                 </Text>
             )}
