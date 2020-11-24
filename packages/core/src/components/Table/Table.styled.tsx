@@ -1,5 +1,11 @@
-import { css, styled } from '@medly-components/utils';
+import { css, getFontStyle, styled } from '@medly-components/utils';
 import { TableStyledProps } from './types';
+
+export const HiddenDiv = styled('div')`
+    position: absolute;
+    left: -1000px;
+    ${({ theme }) => getFontStyle({ theme, fontVariant: 'body2' })}
+`;
 
 export const getBorder = (align: 'left' | 'right' | 'top' | 'bottom') => css`
     content: '';

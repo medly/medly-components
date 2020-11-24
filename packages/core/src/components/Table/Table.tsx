@@ -1,5 +1,5 @@
 import { useCombinedRefs, useUpdateEffect, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useEffect, useMemo, useReducer, useState } from 'react';
+import React, { FC, useCallback, useEffect, useMemo, useReducer, useRef, useState } from 'react';
 import ActionBar from './ActionBar';
 import Body from './Body';
 import ColumnConfiguration from './ColumnConfiguration';
@@ -7,7 +7,7 @@ import { loadingBodyData } from './constants';
 import Head from './Head';
 import { getUpdatedColumns } from './helpers';
 import { maxColumnSizeReducer } from './maxColumnSizeReducer';
-import { TableStyled } from './Table.styled';
+import { HiddenDiv, TableStyled } from './Table.styled';
 import { TablePropsContext } from './TableProps.context';
 import { StaticProps, TableProps } from './types';
 import useGroupedRowSelector from './useGroupedRowSelector';
@@ -35,7 +35,8 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
             isGroupedTable = !!restProps.groupBy,
             size = showRowWithCardStyle ? 'L' : restProps.size;
 
-        const [scrollState, handleScroll] = useScrollState(),
+        const hiddenDivRef = useRef(null),
+            [scrollState, handleScroll] = useScrollState(),
             [selectedGroupIds, setSelectedGroupIds] = useState([]),
             [isSelectAllDisable, setSelectAllDisableState] = useState(true),
             tableRef = useCombinedRefs<HTMLTableElement>(ref, React.useRef(null)),
@@ -72,8 +73,9 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
 
         return (
             <TablePropsContext.Provider
-                value={{ ...props, columns, size, data: isLoading ? loadingBodyData : data, isGroupedTable, tableRef }}
+                value={{ ...props, columns, size, data: isLoading ? loadingBodyData : data, isGroupedTable, tableRef, hiddenDivRef }}
             >
+                <HiddenDiv ref={hiddenDivRef} />
                 {enableActionBar && selectedRowIds.length > 0 && <ActionBar />}
                 <TableStyled
                     ref={tableRef}

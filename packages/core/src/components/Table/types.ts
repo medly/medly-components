@@ -30,7 +30,7 @@ export interface TableColumnConfig {
     /** Set it true to wrap column text */
     wrapText?: boolean;
     /** Pass any function to format the column data */
-    formatter?: (data: any) => any;
+    formatter?: (data: any, rowData?: ObjectType) => any;
     /** Custom component */
     component?: React.FC<{ data?: any; rowId?: any; disabled?: boolean; rowData?: ObjectType }>;
     /** This will be handled internally */
