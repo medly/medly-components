@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Modal component header should render properly at small screen size 1`] = `
+exports[`DialogBox component header should render properly at small screen size 1`] = `
 .c1 {
   margin: 0;
   color: inherit;

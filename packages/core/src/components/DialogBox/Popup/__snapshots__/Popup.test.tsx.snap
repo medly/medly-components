@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Modal Popup component at small screen size should render properly when it is closed 1`] = `
+exports[`DialogBox Popup component at small screen size should render properly when it is closed 1`] = `
 .c0 {
   background: #ffffff;
   overflow: hidden;
@@ -15,33 +15,23 @@ exports[`Modal Popup component at small screen size should render properly when 
   min-height: 200px;
   box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
   box-sizing: border-box;
-  border-top-left-radius: 1.6rem;
-  border-top-right-radius: 1.6rem;
-}
-
-@media (max-width:767px) {
-  .c0 {
-    width: 100%;
-    height: calc(100% - 2.4rem);
-    -webkit-animation: slideOut 0.4s cubic-bezier(0,0,0.33,1);
-    animation: slideOut 0.4s cubic-bezier(0,0,0.33,1);
-  }
+  border-radius: 1.6rem;
+  overflow-y: scroll;
+  max-height: 80%;
+  width: calc(100% - 2.4rem);
 }
 
 @media (min-width:768px) and (max-width:1439px) {
   .c0 {
-    padding: 4.8rem 3.2rem;
-    border-radius: 2.4rem;
     max-width: 72%;
     min-width: 200px;
-    max-height: 80%;
+    padding: 4.8rem 3.2rem;
   }
 }
 
 @media (min-width:1440px) {
   .c0 {
     padding: 4.8rem 3.2rem;
-    border-radius: 2.4rem;
     min-width: 200px;
     max-width: 103.6rem;
     max-height: 80%;
@@ -55,7 +45,7 @@ exports[`Modal Popup component at small screen size should render properly when 
 </div>
 `;
 
-exports[`Modal Popup component at small screen size should render properly when it is open 1`] = `
+exports[`DialogBox Popup component at small screen size should render properly when it is open 1`] = `
 .c0 {
   background: #ffffff;
   overflow: hidden;
@@ -70,33 +60,23 @@ exports[`Modal Popup component at small screen size should render properly when 
   min-height: 200px;
   box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
   box-sizing: border-box;
-  border-top-left-radius: 1.6rem;
-  border-top-right-radius: 1.6rem;
-}
-
-@media (max-width:767px) {
-  .c0 {
-    width: 100%;
-    height: calc(100% - 2.4rem);
-    -webkit-animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
-    animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
-  }
+  border-radius: 1.6rem;
+  overflow-y: scroll;
+  max-height: 80%;
+  width: calc(100% - 2.4rem);
 }
 
 @media (min-width:768px) and (max-width:1439px) {
   .c0 {
-    padding: 4.8rem 3.2rem;
-    border-radius: 2.4rem;
     max-width: 72%;
     min-width: 200px;
-    max-height: 80%;
+    padding: 4.8rem 3.2rem;
   }
 }
 
 @media (min-width:1440px) {
   .c0 {
     padding: 4.8rem 3.2rem;
-    border-radius: 2.4rem;
     min-width: 200px;
     max-width: 103.6rem;
     max-height: 80%;

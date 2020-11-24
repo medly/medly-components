@@ -48,12 +48,6 @@ describe('DialogBox component', () => {
         expect(container).toBeEmptyDOMElement();
     });
 
-    it('should call onCloseModal on click on close icon', () => {
-        const mockOnCloseModal = jest.fn();
-        const { container } = dialogBoxRenderer({ open: true, onCloseModal: mockOnCloseModal });
-        fireEvent.click(container.querySelector('#medly-modal-close-button'));
-        expect(mockOnCloseModal).toBeCalled();
-    });
 
     it('should call onCloseModal on pressing escape key', () => {
         const mockOnCloseModal = jest.fn();
@@ -65,7 +59,7 @@ describe('DialogBox component', () => {
     it('should call onCloseModal on click on overlay background', () => {
         const mockOnCloseModal = jest.fn();
         const { container } = dialogBoxRenderer({ open: true, onCloseModal: mockOnCloseModal, shouldCloseOnOutsideClick: true });
-        fireEvent.click(container.querySelector('#medly-modal'));
+        fireEvent.click(container.querySelector('#medly-dialog-box'));
         expect(mockOnCloseModal).toBeCalled();
     });
 
@@ -88,18 +82,18 @@ describe('DialogBox component', () => {
         Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
         Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
         Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 0 });
-        fireEvent.scroll(container.querySelector('#medly-modal-content'), { target: { scrollY: 0 } });
-        expect(container.querySelector('#medly-modal-header')).not.toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
-        expect(container.querySelector('#medly-modal-actions')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
+        fireEvent.scroll(container.querySelector('#medly-dialog-box-content'), { target: { scrollY: 0 } });
+        expect(container.querySelector('#medly-dialog-box-header')).not.toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
+        expect(container.querySelector('#medly-dialog-box-actions')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
     });
     it('should hide shadow of actions on scroll to bottom', () => {
         const { container } = dialogBoxRenderer({ open: true });
         Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
         Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
         Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 300 });
-        fireEvent.scroll(container.querySelector('#medly-modal-content'), { target: { scrollY: 300 } });
-        expect(container.querySelector('#medly-modal-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
-        expect(container.querySelector('#medly-modal-actions')).not.toHaveStyle(
+        fireEvent.scroll(container.querySelector('#medly-dialog-box-content'), { target: { scrollY: 300 } });
+        expect(container.querySelector('#medly-dialog-box-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
+        expect(container.querySelector('#medly-dialog-box-actions')).not.toHaveStyle(
             `box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`
         );
     });
@@ -109,9 +103,9 @@ describe('DialogBox component', () => {
         Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
         Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
         Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 100 });
-        fireEvent.scroll(container.querySelector('#medly-modal-content'), { target: { scrollY: 100 } });
-        expect(container.querySelector('#medly-modal-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
-        expect(container.querySelector('#medly-modal-actions')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
+        fireEvent.scroll(container.querySelector('#medly-dialog-box-content'), { target: { scrollY: 100 } });
+        expect(container.querySelector('#medly-dialog-box-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
+        expect(container.querySelector('#medly-dialog-box-actions')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
     });
 });
 
