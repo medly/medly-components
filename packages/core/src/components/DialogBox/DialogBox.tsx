@@ -29,8 +29,7 @@ export const DialogBox: FC<Props> & WithStyle & DialogBoxStaticProps = React.mem
         }, [shouldCloseOnOutsideClick, onCloseModal]);
 
         useEffect(() => {
-            if (open) setShouldRender(true);
-            if (!isSmallScreen && !open) setShouldRender(false);
+            open ? setShouldRender(true) : setShouldRender(false);
         }, [open]);
 
         const handleAnimationEnd = useCallback(() => {
