@@ -39,7 +39,7 @@ describe('HiddenJs', () => {
             `@media (min-width: ${defaultTheme.breakPoints.S.min}px) and (max-width: ${defaultTheme.breakPoints.S.max}px)`
         ],
         [
-            'at the specified',
+            'at the specified list of',
             { multiple: ['M', 'XL'] },
             `@media (min-width: ${defaultTheme.breakPoints.M.min}px) and (max-width: ${defaultTheme.breakPoints.M.max}px),(min-width: ${defaultTheme.breakPoints.XL.min}px) and (max-width: ${defaultTheme.breakPoints.XL.max}px)`
         ]

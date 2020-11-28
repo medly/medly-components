@@ -8,7 +8,7 @@ describe('HiddenJs', () => {
         ['at or down', { down: 'S' }],
         ['between start and end of', { between: { start: 'S', end: 'L' } }],
         ['at specific', { only: 'S' }],
-        ['at the specified', { multiple: ['M', 'XL'] }]
+        ['at the specified list of', { multiple: ['M', 'XL'] }]
     ])('should hide the children %s breakpoint', (propKey: any, props: any) => {
         const { container } = render(
             <HiddenCss {...props}>

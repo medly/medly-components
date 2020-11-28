@@ -1,0 +1,87 @@
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import Button from '../Button';
+import { array, select } from '@storybook/addon-knobs';
+import { defaultTheme } from '@medly-components/theme';
+import { Hidden } from './Hidden';
+import Text from '../Text';
+
+<Meta title="Core/Hidden" component={Hidden} parameters={{ jest: ['Hidden.test.tsx'] }} />
+
+# Hidden
+
+Hidden is used to responsively show and hide the children component based on either `js` or `css` implementation.
+
+```tsx
+<Hidden down="S" implementation="js">
+    <Button variant="solid" fullWidth>
+        Will hide the children at and down of the breakpoint.
+    </Button>
+</Hidden>
+```
+
+### down
+
+<Preview withToolbar>
+    <Story name="down">
+        <Hidden down={select('down', ['S', 'M', 'L', 'XL'], 'M')} implementation={select('implementation', ['js', 'css'], 'js')}>
+            <Button variant="solid" fullWidth>
+                Will hide the children at and down of the breakpoint.
+            </Button>
+        </Hidden>
+    </Story>
+</Preview>
+
+### up
+
+<Preview withToolbar>
+    <Story name="up">
+        <Hidden up={select('up', ['S', 'M', 'L', 'XL'], 'XL')} implementation={select('implementation', ['js', 'css'], 'js')}>
+            <Button variant="solid" fullWidth>
+                Will hide the children at and above of the breakpoint.
+            </Button>
+        </Hidden>
+    </Story>
+</Preview>
+
+### between
+
+<Preview withToolbar>
+    <Story name="between">
+        <Hidden
+            between={{ start: select('start', ['S', 'M', 'L', 'XL'], 'S'), end: select('end', ['S', 'M', 'L', 'XL'], 'M') }}
+            implementation={select('implementation', ['js', 'css'], 'js')}
+        >
+            <Button variant="solid" fullWidth>
+                Will hide the children between start and end of the breakpoint.
+            </Button>
+        </Hidden>
+    </Story>
+</Preview>
+
+### only
+
+<Preview withToolbar>
+    <Story name="only">
+        <Hidden down={select('only', ['S', 'M', 'L', 'XL'], 'S')} implementation={select('implementation', ['js', 'css'], 'js')}>
+            <Button variant="solid" fullWidth>
+                Will hide the children only in the specified breakpoint.
+            </Button>
+        </Hidden>
+    </Story>
+</Preview>
+
+### multiple
+
+<Preview withToolbar>
+    <Story name="multiple">
+        <Hidden multiple={array('array', ['S', 'M'], ',')} implementation={select('implementation', ['js', 'css'], 'js')}>
+            <Button variant="solid" fullWidth>
+                Will hide the children in the specified list of breakpoints.
+            </Button>
+        </Hidden>
+    </Story>
+</Preview>
+
+## Props
+
+<Props of={Hidden} />
