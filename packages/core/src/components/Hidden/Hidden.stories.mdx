@@ -4,6 +4,7 @@ import { array, select } from '@storybook/addon-knobs';
 import { defaultTheme } from '@medly-components/theme';
 import { Hidden } from './Hidden';
 import Text from '../Text';
+import { BreakPointsThemeInterface } from './Hidden.stories';
 
 <Meta title="Core/Hidden" component={Hidden} parameters={{ jest: ['Hidden.test.tsx'] }} />
 
@@ -85,3 +86,7 @@ Hidden is used to responsively show and hide the children component based on eit
 ## Props
 
 <Props of={Hidden} />
+
+## Breakpoint
+
+<Props of={BreakPointsThemeInterface} />

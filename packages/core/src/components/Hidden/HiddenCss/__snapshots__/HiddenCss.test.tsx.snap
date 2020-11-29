@@ -48,7 +48,7 @@ exports[`HiddenJs should hide the children at specific breakpoint 1`] = `
 </div>
 `;
 
-exports[`HiddenJs should hide the children at the specified breakpoint 1`] = `
+exports[`HiddenJs should hide the children at the specified list of breakpoint 1`] = `
 @media (min-width:768px) and (max-width:1023px),(min-width:1280px) and (max-width:2400px) {
   .c0 {
     display: none;
