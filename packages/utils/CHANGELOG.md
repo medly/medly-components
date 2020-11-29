@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.6.4...@medly-components/utils@1.7.0) (2020-11-29)
+
+
+### Features
+
+* add Hidden component ([065a7b6](https://github.com/medly/medly-components/commit/065a7b6740eb48f5a3e1ae1b193054c4a3cf8868))
+
+
+
+
+
 ## [1.6.4](https://github.com/medly/medly-components/compare/@medly-components/utils@1.6.3...@medly-components/utils@1.6.4) (2020-11-24)
 
 **Note:** Version bump only for package @medly-components/utils

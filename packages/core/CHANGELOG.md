@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.36.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.35.0...@medly-components/core@1.36.0) (2020-11-29)
+
+
+### Bug Fixes
+
+* fit content issue in Table component ([bc9f331](https://github.com/medly/medly-components/commit/bc9f33118e70a5ab5208f551578ae728eb8abbb0))
+* minSelectable date issue in datepicker component ([c4c153d](https://github.com/medly/medly-components/commit/c4c153d444182e1dbe6f0c9146fc52e0617c1333))
+
+
+### Features
+
+* add Hidden component ([065a7b6](https://github.com/medly/medly-components/commit/065a7b6740eb48f5a3e1ae1b193054c4a3cf8868))
+
+
+
+
+
 # [1.35.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.34.3...@medly-components/core@1.35.0) (2020-11-24)
 
 
