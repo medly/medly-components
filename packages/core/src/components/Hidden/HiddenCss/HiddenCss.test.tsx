@@ -2,7 +2,7 @@ import { render } from '@test-utils';
 import React from 'react';
 import { HiddenCss } from './HiddenCss.styled';
 
-describe('HiddenJs', () => {
+describe('HiddenCss', () => {
     test.each([
         ['at or above', { up: 'S' }],
         ['at or down', { down: 'S' }],
