@@ -1,4 +1,4 @@
-import { BreakpointsTheme } from '../breakpoints1/types';
+import { BreakpointsTheme } from '../breakpoints/types';
 
 export interface CardTheme {
     backgroundColor: string;
