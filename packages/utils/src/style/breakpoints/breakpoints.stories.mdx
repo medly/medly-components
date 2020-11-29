@@ -1,0 +1,37 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Utils/Style/breakpoints" />
+
+# breakpoints
+
+This function is very usefull to create media queries based on breakpoints(`S` | `M` | `L` | `XL`). You need to pass theme's breakpoints object to it and then it will return object with below functions.
+
+| name     | param                              | return                                                                                                             |
+| -------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| up       | key: Breakpoint                    | `@media (min-width: ${bp[key].min}px)`                                                                             |
+| down     | key: Breakpoint                    | `@media (max-width: ${bp[key].max}px)`                                                                             |
+| between  | start: Breakpoint, end: Breakpoint | `@media (min-width: ${bp[start].min}px) and (max-width: ${bp[end].max}px)`                                         |
+| only     | key: Breakpoint                    | between(key, key)                                                                                                  |
+| multiple | sizes: Breakpoint[]                | `@media ${sizesAsArray.map(size =>`(min-width: ${bp[size].min}px) and (max-width: ${bp[size].max}px)`).join(',')}` |
+
+#### Example
+
+`breakpoints(theme.breakpoints).up('M');` this will return `@media (min-width: 768px)`
+
+Mostly you should use it with `media` function provided by `@medly-components/utils` like below
+
+```tsx
+${
+media(breakpoints(theme.breakpoints).up('M'))`
+            display: none;
+        `;
+}
+```
+
+the above snippet you can use it in any styled-component. Basically it return below css:
+
+```css
+@media (min-width: 768px) {
+    display: none;
+}
+```
