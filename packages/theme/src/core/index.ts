@@ -1,6 +1,6 @@
 import avatar from './avatar';
 import breadCrumbs from './breadCrumbs';
-import breakpoints from './breakpoints';
+import breakpoints from './breakpoints1';
 import button from './button';
 import calendar from './calendar';
 import card from './card';

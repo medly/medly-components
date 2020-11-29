@@ -1,4 +1,4 @@
-export * from './breakpoints';
+export * from './breakpoints1';
 export * from './debounce';
 export * from './isMobile';
 export * from './parseToDate';
