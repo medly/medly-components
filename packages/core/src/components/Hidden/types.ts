@@ -1,6 +1,6 @@
-import { BreakPointsTheme } from '@medly-components/theme';
+import { BreakpointsTheme } from '@medly-components/theme';
 
-type Breakpoint = keyof BreakPointsTheme;
+type Breakpoint = keyof BreakpointsTheme;
 
 export interface Props {
     /** Will hide the children at and above of the breakpoint */

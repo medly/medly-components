@@ -1,4 +1,4 @@
-import { breakPoints, css, InjectClassName, media, styled } from '@medly-components/utils';
+import { breakpoints, css, InjectClassName, media, styled } from '@medly-components/utils';
 import { Props } from '../types';
 
 const hide = css`
@@ -8,27 +8,27 @@ const hide = css`
 export const HiddenCss = styled(InjectClassName)<Props>`
     ${({ theme, up }) =>
         up &&
-        media(breakPoints(theme.breakPoints).up(up))`
+        media(breakpoints(theme.breakpoints).up(up))`
             display: none;
         `}
     ${({ theme, down }) =>
         down &&
-        media(breakPoints(theme.breakPoints).down(down))`
+        media(breakpoints(theme.breakpoints).down(down))`
             display: none;
         `}
     ${({ theme, between }) =>
         between &&
-        media(breakPoints(theme.breakPoints).between(between.start, between.end))`
+        media(breakpoints(theme.breakpoints).between(between.start, between.end))`
             display: none;
         `}
     ${({ theme, only }) =>
         only &&
-        media(breakPoints(theme.breakPoints).only(only))`
+        media(breakpoints(theme.breakpoints).only(only))`
             display: none;
         `}
     ${({ theme, multiple }) =>
         multiple &&
-        media(breakPoints(theme.breakPoints).multiple(multiple))`
+        media(breakpoints(theme.breakpoints).multiple(multiple))`
             display: none;
         `}
     

@@ -1,6 +1,6 @@
 export * from './avatar/types';
 export * from './breadCrumbs/types';
-export * from './breakPoints/types';
+export * from './breakpoints/types';
 export * from './button/types';
 export * from './calendar/types';
 export * from './card/types';

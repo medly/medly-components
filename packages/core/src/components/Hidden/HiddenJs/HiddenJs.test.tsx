@@ -26,22 +26,22 @@ describe('HiddenJs', () => {
     afterEach(() => jest.clearAllMocks());
 
     test.each([
-        ['at or above', { up: 'S' }, `@media (min-width: ${defaultTheme.breakPoints.S.min}px)`],
-        ['at or down', { down: 'S' }, `@media (max-width: ${defaultTheme.breakPoints.S.max}px)`],
+        ['at or above', { up: 'S' }, `@media (min-width: ${defaultTheme.breakpoints.S.min}px)`],
+        ['at or down', { down: 'S' }, `@media (max-width: ${defaultTheme.breakpoints.S.max}px)`],
         [
             'between start and end of',
             { between: { start: 'S', end: 'L' } },
-            `@media (min-width: ${defaultTheme.breakPoints.S.min}px) and (max-width: ${defaultTheme.breakPoints.L.max}px)`
+            `@media (min-width: ${defaultTheme.breakpoints.S.min}px) and (max-width: ${defaultTheme.breakpoints.L.max}px)`
         ],
         [
             'at specific',
             { only: 'S' },
-            `@media (min-width: ${defaultTheme.breakPoints.S.min}px) and (max-width: ${defaultTheme.breakPoints.S.max}px)`
+            `@media (min-width: ${defaultTheme.breakpoints.S.min}px) and (max-width: ${defaultTheme.breakpoints.S.max}px)`
         ],
         [
             'at the specified list of',
             { multiple: ['M', 'XL'] },
-            `@media (min-width: ${defaultTheme.breakPoints.M.min}px) and (max-width: ${defaultTheme.breakPoints.M.max}px),(min-width: ${defaultTheme.breakPoints.XL.min}px) and (max-width: ${defaultTheme.breakPoints.XL.max}px)`
+            `@media (min-width: ${defaultTheme.breakpoints.M.min}px) and (max-width: ${defaultTheme.breakpoints.M.max}px),(min-width: ${defaultTheme.breakpoints.XL.min}px) and (max-width: ${defaultTheme.breakpoints.XL.max}px)`
         ]
     ])('should hide the children %s breakpoint', (propKey: any, props: any, query: string) => {
         useMediaQueryMock.mockReturnValue(true);
@@ -53,7 +53,7 @@ describe('HiddenJs', () => {
     it('should show the children if media query does not match', () => {
         useMediaQueryMock.mockReturnValue(false);
         const { queryByText } = renderComponent({ up: 'S' });
-        expect(useMediaQueryMock).toHaveBeenCalledWith(`@media (min-width: ${defaultTheme.breakPoints.S.min}px)`);
+        expect(useMediaQueryMock).toHaveBeenCalledWith(`@media (min-width: ${defaultTheme.breakpoints.S.min}px)`);
         expect(queryByText('Strong text')).toBeInTheDocument();
     });
 

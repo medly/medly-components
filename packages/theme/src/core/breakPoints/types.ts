@@ -3,7 +3,7 @@ interface Range {
     max: number;
 }
 
-export interface BreakPointsTheme {
+export interface BreakpointsTheme {
     S: Range;
     M: Range;
     L: Range;

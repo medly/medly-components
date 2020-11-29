@@ -1,8 +1,8 @@
-import { BreakPointsTheme } from '@medly-components/theme';
+import { BreakpointsTheme } from '@medly-components/theme';
 
-type Breakpoint = keyof BreakPointsTheme;
+type Breakpoint = keyof BreakpointsTheme;
 
-export const breakPoints = (bp: BreakPointsTheme) => {
+export const breakpoints = (bp: BreakpointsTheme) => {
     const up = (key: Breakpoint) => `@media (min-width: ${bp[key].min}px)`,
         down = (key: Breakpoint) => `@media (max-width: ${bp[key].max}px)`,
         between = (start: Breakpoint, end: Breakpoint) => `@media (min-width: ${bp[start].min}px) and (max-width: ${bp[end].max}px)`,

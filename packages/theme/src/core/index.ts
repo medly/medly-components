@@ -1,6 +1,6 @@
 import avatar from './avatar';
 import breadCrumbs from './breadCrumbs';
-import breakPoints from './breakPoints';
+import breakpoints from './breakpoints';
 import button from './button';
 import calendar from './calendar';
 import card from './card';
@@ -32,7 +32,7 @@ import toggle from './toggle';
 export const coreDefaultTheme = {
     avatar,
     breadCrumbs,
-    breakPoints,
+    breakpoints,
     button,
     card,
     calendar,

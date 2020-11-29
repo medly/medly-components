@@ -1,4 +1,4 @@
-import { BreakPointsTheme, CardTheme } from '@medly-components/theme';
+import { BreakpointsTheme, CardTheme } from '@medly-components/theme';
 import { css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import { Props } from './types';
@@ -42,8 +42,8 @@ const solid = ({ backgroundColor, shadowColor, onClick }: Partial<CardTheme> & P
         background-color: transparent;
     `;
 
-const media = ({ theme, breakpoint }: Props & { breakpoint: keyof BreakPointsTheme }) => css`
-        @media (min-width: ${theme.breakPoints[breakpoint].min}px) and (max-width: ${theme.breakPoints[breakpoint].max}px) {
+const media = ({ theme, breakpoint }: Props & { breakpoint: keyof BreakpointsTheme }) => css`
+        @media (min-width: ${theme.breakpoints[breakpoint].min}px) and (max-width: ${theme.breakpoints[breakpoint].max}px) {
             padding: ${theme.card.padding[breakpoint]};
         }
     `,
