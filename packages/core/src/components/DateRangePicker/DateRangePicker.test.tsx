@@ -227,22 +227,18 @@ describe('DateRangePicker', () => {
     describe('Handlers', () => {
         it('should call onChange on selecting date', async () => {
             const mockOnChange = jest.fn(),
-                currentYear = new Date().getFullYear(),
-                currentMonth = new Date().getMonth(),
-                currentDay = new Date().getDay(),
-                dateToSelect = {
-                    startDate: new Date(currentYear, currentMonth, currentDay),
-                    endDate: new Date(currentYear, currentMonth + 1, currentDay)
-                },
-                { calendarIcon, getByTitle, startDateInput, endDateInput } = renderComponent({
+                initialDates = { startDate: new Date(2020, 1, 2), endDate: new Date(2020, 2, 5) },
+                datesToSelect: any = { endDate: new Date(2020, 2, 5), startDate: new Date(2020, 1, 3) },
+                { endDateInput, calendarIcon, startDateInput, getByTitle } = renderComponent({
+                    value: initialDates,
                     onChange: mockOnChange
                 });
             fireEvent.click(calendarIcon);
-            fireEvent.click(getByTitle(dateToSelect.startDate.toDateString()));
-            expect(mockOnChange).toHaveBeenCalledWith({ endDate: null, startDate: dateToSelect.startDate });
+            fireEvent.click(getByTitle(datesToSelect.startDate.toDateString()));
+            expect(mockOnChange).toHaveBeenCalledWith({ endDate: initialDates.endDate, startDate: datesToSelect.startDate });
             await waitFor(() => expect(endDateInput).toHaveFocus());
-            fireEvent.click(getByTitle(dateToSelect.endDate.toDateString()));
-            expect(mockOnChange).toHaveBeenLastCalledWith({ startDate: null, endDate: dateToSelect.endDate });
+            fireEvent.click(getByTitle(datesToSelect.endDate.toDateString()));
+            expect(mockOnChange).toHaveBeenLastCalledWith({ startDate: initialDates.startDate, endDate: datesToSelect.endDate });
             await waitFor(() => expect(startDateInput).toHaveFocus());
         });
 

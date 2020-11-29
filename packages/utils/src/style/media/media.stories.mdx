@@ -1,0 +1,25 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Utils/Style/media" />
+
+# media
+
+This function is very usefull to create media query block in any styled component.
+
+#### Example
+
+```tsx
+${
+media(breakpoints(theme.breakpoints).up('M'))`
+            display: none;
+        `;
+}
+```
+
+the above snippet will return below css:
+
+```css
+@media (min-width: 768px) {
+    display: none;
+}
+```

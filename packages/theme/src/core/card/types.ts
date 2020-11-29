@@ -1,4 +1,4 @@
-import { BreakPointsTheme } from '../breakPoints/types';
+import { BreakpointsTheme } from '../breakpoints/types';
 
 export interface CardTheme {
     backgroundColor: string;
@@ -6,6 +6,6 @@ export interface CardTheme {
     shadowColor: string;
     borderRadius: string;
     padding: {
-        [k in keyof BreakPointsTheme]: string;
+        [k in keyof BreakpointsTheme]: string;
     };
 }
