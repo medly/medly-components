@@ -4,7 +4,7 @@ import Link from '../Link';
 import List from '../List';
 import { StyledProps } from './types';
 
-export const BreadCrumbsStyled = styled('div').attrs(({ theme: { breadCrumbs } }) => ({ ...breadCrumbs }))<StyledProps>`
+export const BreadcrumbStyled = styled('div').attrs(({ theme: { breadcrumb } }) => ({ ...breadcrumb }))<StyledProps>`
     height: 40px;
     background-color: ${({ bgColor }) => bgColor};
     display: flex;
@@ -23,6 +23,6 @@ export const BreadCrumbsStyled = styled('div').attrs(({ theme: { breadCrumbs } }
     }
 `;
 
-BreadCrumbsStyled.defaultProps = {
+BreadcrumbStyled.defaultProps = {
     theme: defaultTheme
 };

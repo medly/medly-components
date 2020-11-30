@@ -1,15 +1,15 @@
 import { render } from '@test-utils';
 import React from 'react';
 import Link from '../Link';
-import { BreadCrumbs } from './BreadCrumbs';
+import { Breadcrumb } from './Breadcrumb';
 
-describe('BreadCrumbs component', () => {
+describe('Breadcrumb component', () => {
     it('should render correctly', () => {
         const { container } = render(
-            <BreadCrumbs>
+            <Breadcrumb>
                 <Link href="#">Covered Entities</Link>
                 <Link href="#">Add New Entities</Link>
-            </BreadCrumbs>
+            </Breadcrumb>
         );
         expect(container).toMatchSnapshot();
     });

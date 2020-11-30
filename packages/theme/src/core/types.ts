@@ -1,5 +1,5 @@
 export * from './avatar/types';
-export * from './breadCrumbs/types';
+export * from './breadcrumb/types';
 export * from './breakpoints/types';
 export * from './button/types';
 export * from './calendar/types';

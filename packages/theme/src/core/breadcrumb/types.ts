@@ -1,4 +1,4 @@
-export interface BreadCrumbsTheme {
+export interface BreadcrumbTheme {
     bgColor: string;
     textColor: string;
 }

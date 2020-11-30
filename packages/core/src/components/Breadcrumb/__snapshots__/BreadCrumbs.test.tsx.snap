@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BreadCrumbs component should render correctly 1`] = `
+exports[`Breadcrumb component should render correctly 1`] = `
 .c5 {
   margin: 0;
   color: inherit;

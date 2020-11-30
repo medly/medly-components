@@ -1,0 +1,17 @@
+import { Breadcrumb } from './Breadcrumb.tsx';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Breadcrumb.stories';
+
+<Meta title="Core" component={Breadcrumb} />
+
+# Breadcrumb
+
+### Breadcrumbs allow users to make selections from a range of values.
+
+<Preview withToolbar>
+    <Story name="Breadcrumb">{stories.Basic()}</Story>
+</Preview>
+
+### BreadcrumbTheme
+
+<Props of={stories.ThemeInterface} />
