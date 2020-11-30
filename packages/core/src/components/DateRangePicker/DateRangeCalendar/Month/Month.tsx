@@ -59,7 +59,7 @@ export const Month: React.FC<Props> = React.memo(
                             isWeekFirstDate = isSameDay(_date, startOfWeek(_date)),
                             isWeekLastDate = isSameDay(_date, endOfWeek(_date)),
                             isHoverDateAfterDateSelection = !!(startDate && !endDate) || !!(!startDate && endDate),
-                            disabled = endOfDay(_date) > endOfDay(maxSelectableDate) || endOfDay(_date) < endOfDay(minSelectableDate);
+                            disabled = _date > maxSelectableDate || endOfDay(_date) < minSelectableDate;
 
                         return (
                             <Styled.DateContainer

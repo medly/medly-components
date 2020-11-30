@@ -21,13 +21,9 @@
         "@medly-components/icons": "1.4.12",
         "@medly-components/theme": "1.25.2",
         "@medly-components/utils": "1.7.0",
+        "date-fns": "^2.16.1",
         "effector": "^20.16.1",
         "effector-react": "^20.7.4",
-        "polished": "^3.6.2",
-        "react-input-mask": "^3.0.0-alpha.2"
-    },
-    "devDependencies": {
-        "@types/react-datepicker": "^2.8.1",
-        "@types/react-input-mask": "^2.0.5"
+        "polished": "^3.6.2"
     }
 }

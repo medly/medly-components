@@ -124,7 +124,7 @@ export const Calendar: React.FC<CalendarProps> & WithStyle = React.memo(
                                 isInActiveMonth={isInActiveMonth}
                                 isSelected={isSelected}
                                 isCurrentDate={isCurrentDate}
-                                disabled={endOfDay(_date) > endOfDay(maxSelectableDate) || endOfDay(_date) < endOfDay(minSelectableDate)}
+                                disabled={_date > maxSelectableDate || endOfDay(_date) < minSelectableDate}
                                 onClick={handleDateChange(_date)}
                             >
                                 <Text>{_date.getDate()}</Text>
