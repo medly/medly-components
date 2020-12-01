@@ -1,16 +1,29 @@
 import { Breadcrumb } from './Breadcrumb.tsx';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Breadcrumb.stories';
+import Text from '../Text';
 
 <Meta title="Core" component={Breadcrumb} />
 
 # Breadcrumb
 
-### Breadcrumbs allow users to make selections from a range of values.
+Breadcrumbs indicate current page's location to user.
 
 <Preview withToolbar>
-    <Story name="Breadcrumb">{stories.Basic()}</Story>
+    <Story name="Breadcrumb">
+        <Breadcrumb>
+            <Breadcrumb.Item>Add New Entities</Breadcrumb.Item>
+            <Breadcrumb.Item>Add New Entities</Breadcrumb.Item>
+            <Breadcrumb.Item>Add New Entities</Breadcrumb.Item>
+        </Breadcrumb>
+    </Story>
 </Preview>
+
+You can also use back button by calling `<Breadcrumb.Back />`
+
+### Props
+
+<Props of={Breadcrumb} />
 
 ### BreadcrumbTheme
 

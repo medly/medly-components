@@ -1,4 +1,6 @@
 export interface BreadcrumbTheme {
-    bgColor: string;
-    textColor: string;
+    textColor: {
+        default: string;
+        hovered: string;
+    };
 }

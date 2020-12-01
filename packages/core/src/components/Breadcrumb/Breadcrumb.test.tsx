@@ -1,16 +1,24 @@
+import { ChevronRightIcon } from '@medly-components/icons';
 import { render } from '@test-utils';
 import React from 'react';
-import Link from '../Link';
+import Text from '../Text';
 import { Breadcrumb } from './Breadcrumb';
+import { BreadcrumbProps } from './types';
 
 describe('Breadcrumb component', () => {
-    it('should render correctly', () => {
-        const { container } = render(
-            <Breadcrumb>
-                <Link href="#">Covered Entities</Link>
-                <Link href="#">Add New Entities</Link>
-            </Breadcrumb>
-        );
-        expect(container).toMatchSnapshot();
-    });
+    test.each(['/', <ChevronRightIcon size="S" key="dummy" />])(
+        'should render properly with %p separator',
+        (separator: BreadcrumbProps['separator']) => {
+            const { container } = render(
+                <Breadcrumb separator={separator}>
+                    <Breadcrumb.Back />
+                    <Breadcrumb.Item>
+                        <Text>Covered Entities</Text>
+                    </Breadcrumb.Item>
+                    <Breadcrumb.Item onClick={jest.fn()}>Add New Entities</Breadcrumb.Item>
+                </Breadcrumb>
+            );
+            expect(container).toMatchSnapshot();
+        }
+    );
 });

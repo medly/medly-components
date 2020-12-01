@@ -1,28 +1,22 @@
-import { defaultTheme } from '@medly-components/theme';
+import { SvgIcon } from '@medly-components/icons';
 import { styled } from '@medly-components/utils';
-import Link from '../Link';
-import List from '../List';
-import { StyledProps } from './types';
 
-export const BreadcrumbStyled = styled('div').attrs(({ theme: { breadcrumb } }) => ({ ...breadcrumb }))<StyledProps>`
-    height: 40px;
-    background-color: ${({ bgColor }) => bgColor};
+export const BreadcrumbStyled = styled('ol')`
+    height: 2.4rem;
     display: flex;
     align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-direction: row;
 
-    ${Link.Style} {
-        color: ${({ textColor }) => textColor};
+    & > *:nth-child(even) {
+        margin: 0 0.4rem;
     }
 
-    ${List.Style} {
-        li + li::before {
-            margin-right: ${({ theme }) => theme.spacing.S2};
-            content: '/';
-            color: ${({ textColor }) => textColor};
+    & > ${SvgIcon} {
+        * {
+            fill: ${({ theme }) => theme.breadcrumb.textColor.default};
         }
     }
 `;
-
-BreadcrumbStyled.defaultProps = {
-    theme: defaultTheme
-};
