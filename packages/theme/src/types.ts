@@ -6,7 +6,7 @@ import { LoaderTheme } from './loader/types';
 export interface CoreTheme {
     avatar?: CoreThemes.AvatarTheme;
     breakpoints?: CoreThemes.BreakpointsTheme;
-    breadCrumbs?: CoreThemes.BreadCrumbsTheme;
+    breadcrumb?: CoreThemes.BreadcrumbTheme;
     button?: CoreThemes.ButtonTheme;
     card?: CoreThemes.CardTheme;
     calendar?: CoreThemes.CalendarTheme;
