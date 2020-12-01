@@ -15,16 +15,12 @@ Basic single select component.
 <Preview withToolbar>
     <Story name="SingleSelect">
         {() => {
-            const [value, setValue] = useState(null);
-            const handleChange = val => {
-                console.log('----------->', val);
-                setValue(val);
-            };
+            const [value, setValue] = useState('Some 1');
             return (
                 <SingleSelect
                     options={options}
                     value={value}
-                    onChange={handleChange}
+                    onChange={setValue}
                     size={select('Size', sizes, 'M')}
                     isSearchable={boolean('Is Searchable', false)}
                     variant={select('Variant', variants, 'filled')}
