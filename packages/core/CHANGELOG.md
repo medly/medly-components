@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.36.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.36.1...@medly-components/core@1.36.2) (2020-12-01)
+
+
+### Bug Fixes
+
+* build issue ([d77e54e](https://github.com/medly/medly-components/commit/d77e54e5aa21664f2928a1683a86fc36384630f2))
+* lint issue in breadcrumb component doc ([bd0dedf](https://github.com/medly/medly-components/commit/bd0dedfe2354fb7b0467a085f5de44f08cddb5dd))
+* singleSelect change event fires on initial render ([b1dc5e6](https://github.com/medly/medly-components/commit/b1dc5e6c1d71a4b85cda76237810abf768c5bb4b))
+
+
+
+
+
 ## [1.36.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.36.0...@medly-components/core@1.36.1) (2020-11-30)
 
 **Note:** Version bump only for package @medly-components/core
