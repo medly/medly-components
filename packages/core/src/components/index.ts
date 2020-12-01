@@ -1,6 +1,6 @@
 export { default as Accordion } from './Accordion';
 export { default as Avatar } from './Avatar';
-export { default as BreadCrumbs } from './BreadCrumbs';
+export { default as Breadcrumb } from './Breadcrumb';
 export { default as Button } from './Button';
 export { default as Card } from './Card';
 export { default as CardTable } from './CardTable';

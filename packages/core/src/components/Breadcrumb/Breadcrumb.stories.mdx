@@ -1,0 +1,37 @@
+import { Breadcrumb } from './Breadcrumb.tsx';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Breadcrumb.stories';
+import { action } from '@storybook/addon-actions';
+import Text from '../Text';
+
+<Meta title="Core" component={Breadcrumb} />
+
+# Breadcrumb
+
+Breadcrumbs indicate current page's location to user.
+
+<Preview withToolbar>
+    <Story name="Breadcrumb">
+        <Breadcrumb>
+            <Breadcrumb.Item onClick={action('Home')}>Home</Breadcrumb.Item>
+            <Breadcrumb.Item onClick={action('Article')}>Article</Breadcrumb.Item>
+            <Breadcrumb.Item onClick={action('Section')}>Section</Breadcrumb.Item>
+        </Breadcrumb>
+    </Story>
+</Preview>
+
+You have to pass `onClick` props to perform any action on click on any item.
+
+Also you can use back button by calling `<Breadcrumb.Back />`
+
+<Preview withToolbar>
+    <Breadcrumb.Back onClick={action('Back')} />
+</Preview>
+
+### Props
+
+<Props of={Breadcrumb} />
+
+### BreadcrumbTheme
+
+<Props of={stories.ThemeInterface} />

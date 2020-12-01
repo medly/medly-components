@@ -1,5 +1,5 @@
 import avatar from './avatar';
-import breadCrumbs from './breadCrumbs';
+import breadcrumb from './breadcrumb';
 import breakpoints from './breakpoints';
 import button from './button';
 import calendar from './calendar';
@@ -31,7 +31,7 @@ import toggle from './toggle';
 
 export const coreDefaultTheme = {
     avatar,
-    breadCrumbs,
+    breadcrumb,
     breakpoints,
     button,
     card,
