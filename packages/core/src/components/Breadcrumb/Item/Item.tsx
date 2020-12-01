@@ -1,4 +1,4 @@
-import { HTMLProps, isValidStringOrNumber, WithStyle } from '@medly-components/utils/src';
+import { HTMLProps, isValidStringOrNumber, WithStyle } from '@medly-components/utils';
 import React, { FC } from 'react';
 import Text from '../../Text';
 import { BreadcrumbItemStyled } from './Item.styled';
