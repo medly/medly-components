@@ -20,7 +20,13 @@ Breadcrumbs indicate current page's location to user.
     </Story>
 </Preview>
 
-You have to pass `onClick` props to perform any action on click on any item. Also you can use back button by calling `<Breadcrumb.Back />`
+You have to pass `onClick` props to perform any action on click on any item.
+
+Also you can use back button by calling `<Breadcrumb.Back />`
+
+<Preview withToolbar>
+    <Breadcrumb.Back onClick={action('Back')/>
+</Preview>
 
 ### Props
 
