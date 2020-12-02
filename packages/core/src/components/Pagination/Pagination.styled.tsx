@@ -25,16 +25,6 @@ const getPageNavButtonStyleByState = (state: 'default' | 'pressed' | 'hovered' |
     }
 `;
 
-const pageNavButtonState = css`
-    &:hover {
-        ${getPageNavButtonStyleByState('hovered')}
-    }
-
-    &:active {
-        ${getPageNavButtonStyleByState('pressed')}
-    }
-`;
-
 export const BaseButton = styled.button.attrs({ type: 'button' })`
     margin: 0.4rem;
     height: 3.2rem;
@@ -79,5 +69,16 @@ export const PageNavButton = styled(BaseButton)<{ disabled: boolean }>`
 
     ${getPageNavButtonStyleByState('default')}
 
-    ${props => (props.disabled ? getPageNavButtonStyleByState('disabled') : pageNavButtonState)};
+    &:disabled {
+        ${getPageNavButtonStyleByState('disabled')}
+    }
+
+    &:not(:disabled) {
+        :hover {
+            ${getPageNavButtonStyleByState('hovered')}
+        }
+        &:active {
+            ${getPageNavButtonStyleByState('pressed')}
+        }
+    }
 `;
