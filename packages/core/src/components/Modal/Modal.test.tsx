@@ -41,11 +41,13 @@ describe('Modal component', () => {
     it('should render properly when it is open', () => {
         const { container } = modalRenderer({ open: true, minWidth: '200px', minHeight: '200px' });
         expect(container).toMatchSnapshot();
+        expect(document.body.style.overflow).toEqual('hidden');
     });
 
     it('should not render when open prop is falsy', () => {
         const { container } = modalRenderer({});
         expect(container).toBeEmptyDOMElement();
+        expect(document.body.style.overflow).toEqual('unset');
     });
 
     it('should call onCloseModal on click on close icon', () => {
