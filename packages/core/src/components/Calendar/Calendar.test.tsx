@@ -1,7 +1,7 @@
 import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { Calendar } from './Calendar';
-import { CALENDAR_MONTHS } from './constants';
+import { SHORT_CALENDAR_MONTHS } from './constants';
 import { getMonthAndYearFromDate } from './helper';
 
 const getDateValues = (container: HTMLElement) => {
@@ -34,7 +34,7 @@ describe('Calendar Component', () => {
         const { container } = render(<Calendar id="test-calendar" date={null} onChange={jest.fn()} />),
             { month, year } = getMonthAndYearFromDate(new Date());
         const { month: monthInDOM, year: yearInDOM } = getDateValues(container);
-        expect(monthInDOM).toEqual(`${CALENDAR_MONTHS[month]}`);
+        expect(monthInDOM).toEqual(`${SHORT_CALENDAR_MONTHS[month]}`);
         expect(yearInDOM).toEqual(year.toString());
     });
 
@@ -50,7 +50,7 @@ describe('Calendar Component', () => {
             ),
             { month, year } = getMonthAndYearFromDate(new Date(1901, 0, 1));
         const { month: monthInDOM, year: yearInDOM } = getDateValues(container);
-        expect(monthInDOM).toEqual(`${CALENDAR_MONTHS[month]}`);
+        expect(monthInDOM).toEqual(`${SHORT_CALENDAR_MONTHS[month]}`);
         expect(yearInDOM).toEqual(year.toString());
     });
 

@@ -137,7 +137,7 @@ describe('Form', () => {
                     birthDate: '02/01/2020',
                     experience: {
                         startDate: '02/01/2019',
-                        endDate: '02/02/2019'
+                        endDate: '03/02/2019'
                     },
                     country: 'india',
                     graduation: ['b-tech'],
@@ -176,11 +176,9 @@ describe('Form', () => {
             fireEvent.click(container.querySelector('#birthDate-input-wrapper').querySelector('svg'));
             fireEvent.click(getByTitle(new Date(2020, 0, 2).toDateString()));
 
-            fireEvent.focus(container.querySelector('#startDate'));
-            fireEvent.click(getByLabelText(`Day-${new Date(2019, 0, 2).toDateString()}`));
-
-            fireEvent.focus(container.querySelector('#endDate'));
-            fireEvent.click(getByLabelText(`Day-${new Date(2019, 1, 2).toDateString()}`));
+            fireEvent.click(container.querySelector('#experience-calendar-icon'));
+            fireEvent.click(getByTitle(new Date(2019, 0, 2).toDateString()));
+            fireEvent.click(getByTitle(new Date(2019, 1, 3).toDateString()));
 
             fireEvent.click(container.querySelector('#graduation-input'));
             const graduation = await findByText('BTech');
@@ -230,10 +228,10 @@ describe('Form', () => {
                     birthDate: '02/01/2020',
                     experience: {
                         startDate: '02/01/2020',
-                        endDate: '02/02/2020'
+                        endDate: '03/02/2020'
                     }
                 },
-                { container, getByTitle, getByLabelText } = render(
+                { container, getByTitle } = render(
                     <Form
                         fieldSchema={{
                             birthDate: {
@@ -255,11 +253,9 @@ describe('Form', () => {
             fireEvent.click(container.querySelector('#birthDate-input-wrapper').querySelector('svg'));
             fireEvent.click(getByTitle(new Date(2020, 0, 2).toDateString()));
 
-            fireEvent.focus(container.querySelector('#startDate'));
-            fireEvent.click(getByLabelText(`Day-${new Date(2020, 0, 2).toDateString()}`));
-
-            fireEvent.focus(container.querySelector('#endDate'));
-            fireEvent.click(getByLabelText(`Day-${new Date(2020, 1, 2).toDateString()}`));
+            fireEvent.click(container.querySelector('#experience-calendar-icon'));
+            fireEvent.click(getByTitle(new Date(2020, 0, 2).toDateString()));
+            fireEvent.click(getByTitle(new Date(2020, 1, 3).toDateString()));
 
             fireEvent.submit(container.querySelector('form'));
             expect(mockOnSubmit).toHaveBeenCalledWith(formData);
@@ -271,10 +267,10 @@ describe('Form', () => {
                     birthDate: '01/02/2020',
                     experience: {
                         startDate: '01/02/2020',
-                        endDate: '02/02/2020'
+                        endDate: '02/03/2020'
                     }
                 },
-                { container, getByTitle, getByLabelText } = render(
+                { container, getByTitle } = render(
                     <Form
                         fieldSchema={{
                             birthDate: {
@@ -294,11 +290,9 @@ describe('Form', () => {
             fireEvent.click(container.querySelector('#birthDate-input-wrapper').querySelector('svg'));
             fireEvent.click(getByTitle(new Date(2020, 0, 2).toDateString()));
 
-            fireEvent.focus(container.querySelector('#startDate'));
-            fireEvent.click(getByLabelText(`Day-${new Date(2020, 0, 2).toDateString()}`));
-
-            fireEvent.focus(container.querySelector('#endDate'));
-            fireEvent.click(getByLabelText(`Day-${new Date(2020, 1, 2).toDateString()}`));
+            fireEvent.click(container.querySelector('#experience-calendar-icon'));
+            fireEvent.click(getByTitle(new Date(2020, 0, 2).toDateString()));
+            fireEvent.click(getByTitle(new Date(2020, 1, 3).toDateString()));
 
             fireEvent.submit(container.querySelector('form'));
             expect(mockOnSubmit).toHaveBeenCalledWith(formData);
@@ -318,8 +312,8 @@ describe('Form', () => {
                         onSubmit={mockOnSubmit}
                     />
                 );
-            fireEvent.focus(container.querySelector('#startDate'));
-            fireEvent.click(getAllByText('02')[0]);
+            fireEvent.click(container.querySelector('#experience-calendar-icon'));
+            fireEvent.click(getAllByText('2')[0]);
 
             fireEvent.submit(container.querySelector('form'));
             expect(mockOnSubmit).toHaveBeenCalledWith({

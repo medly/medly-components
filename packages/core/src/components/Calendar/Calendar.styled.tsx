@@ -1,5 +1,4 @@
 import { centerAligned, css, styled } from '@medly-components/utils';
-import Text from '../Text';
 import TextField from '../TextField';
 import { DateProps } from './types';
 
@@ -11,7 +10,7 @@ export const Calendar = styled('div')`
     width: max-content;
     height: max-content;
 `;
-export const MonthNavigation = styled.button.attrs({ type: 'button' })<{ disabled: boolean }>`
+export const MonthNavigation = styled.button.attrs({ type: 'button' })<{ disabled?: boolean }>`
     border: none;
     background-color: transparent;
     border-radius: 50%;
@@ -65,13 +64,6 @@ export const CalendarGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(7, 4rem);
     grid-auto-rows: auto;
-
-    & > ${Text.Style} {
-        user-select: none;
-        text-align: center;
-        padding: 0.8rem 1rem;
-        margin-bottom: 0.8rem;
-    }
 `;
 
 const activeDate = () => css`
@@ -117,7 +109,7 @@ export const Date = styled('button').attrs({ type: 'button' })<DateProps>`
     }
 
     ${({ isSelected }) => isSelected && activeDate()};
-    ${({ isCurrentDate }) => isCurrentDate && currentDate()};
+    ${({ isCurrentDate, isSelected }) => isCurrentDate && !isSelected && currentDate()};
     ${({ isInActiveMonth }) => !isInActiveMonth && nonActiveMonthDate()};
 
     ${centerAligned()}

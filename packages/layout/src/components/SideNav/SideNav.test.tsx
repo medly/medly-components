@@ -38,6 +38,22 @@ describe('SideNav', () => {
         expect(container).toMatchSnapshot();
     });
 
+    it('should open by default on 1025+ screen sizes', () => {
+        Object.defineProperty(window, 'innerWidth', { writable: true, configurable: true, value: 1240 });
+        const { container } = renderer('/home');
+        expect(container.querySelector('aside')).toHaveStyle(`
+            width: 25.6rem;
+        `);
+    });
+
+    it('should be closed by default on 0 to 1024 screen sizes', () => {
+        Object.defineProperty(window, 'innerWidth', { writable: true, configurable: true, value: 720 });
+        const { container } = renderer('/home');
+        expect(container.querySelector('aside')).toHaveStyle(`
+            width: 7.2rem;
+        `);
+    });
+
     it('should render properly without shadow', () => {
         const { container } = renderer('/home', jest.fn(), true);
         expect(container).toMatchSnapshot();

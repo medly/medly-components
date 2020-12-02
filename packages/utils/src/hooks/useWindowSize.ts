@@ -3,8 +3,8 @@ import { debounce } from '../helpers';
 
 export const useWindowSize = () => {
     const [windowSize, setWindowSize] = useState({
-        width: undefined,
-        height: undefined
+        width: window.innerWidth,
+        height: window.innerHeight
     });
 
     useEffect(() => {
@@ -18,9 +18,7 @@ export const useWindowSize = () => {
         );
 
         window.addEventListener('resize', handleResize);
-
         handleResize();
-
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 

@@ -18,6 +18,7 @@ export type TableCellProps = TableCellStyledProps &
         dottedFieldName?: string;
         isLoading?: boolean;
         isRowClickDisabled?: boolean;
+        hiddenDivRef?: React.MutableRefObject<any>;
         tableSize?: TableProps['size'];
         addColumnMaxSize?: (field: string, value: number) => void;
         as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;

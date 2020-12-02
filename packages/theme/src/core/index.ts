@@ -1,6 +1,6 @@
 import avatar from './avatar';
-import breadCrumbs from './breadCrumbs';
-import breakPoints from './breakPoints';
+import breadcrumb from './breadcrumb';
+import breakpoints from './breakpoints';
 import button from './button';
 import calendar from './calendar';
 import card from './card';
@@ -10,6 +10,7 @@ import chip from './chip';
 import colors from './colors';
 import datePicker from './datePicker';
 import dialogBox from './dialog-box';
+import dateRangePicker from './dateRangePicker';
 import font from './font';
 import input from './input';
 import label from './label';
@@ -31,8 +32,8 @@ import toggle from './toggle';
 
 export const coreDefaultTheme = {
     avatar,
-    breadCrumbs,
-    breakPoints,
+    breadcrumb,
+    breakpoints,
     button,
     card,
     calendar,
@@ -41,6 +42,7 @@ export const coreDefaultTheme = {
     chip,
     colors,
     datePicker,
+    dateRangePicker,
     font,
     input,
     label,

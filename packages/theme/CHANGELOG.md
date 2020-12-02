@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.25.3](https://github.com/medly/medly-components/compare/@medly-components/theme@1.25.2...@medly-components/theme@1.25.3) (2020-12-01)
+
+**Note:** Version bump only for package @medly-components/theme
+
+
+
+
+
+## [1.25.2](https://github.com/medly/medly-components/compare/@medly-components/theme@1.25.1...@medly-components/theme@1.25.2) (2020-11-29)
+
+**Note:** Version bump only for package @medly-components/theme
+
+
+
+
+
+## [1.25.1](https://github.com/medly/medly-components/compare/@medly-components/theme@1.25.0...@medly-components/theme@1.25.1) (2020-11-24)
+
+
+### Bug Fixes
+
+* style of input field in dateRange component ([2c43328](https://github.com/medly/medly-components/commit/2c43328a82ad90cd67aa5d53b68d601cbcc8b0f2))
+
+
+
+
+
 # [1.25.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.24.1...@medly-components/theme@1.25.0) (2020-11-10)
 
 

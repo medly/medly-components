@@ -1,7 +1,7 @@
 import { TextFieldTheme } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 
-export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height'>, WithThemeProp {
+export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height'>, WithThemeProp {
     /** Input Variants */
     variant?: 'outlined' | 'filled' | 'fusion';
     /** Input Size */
@@ -38,7 +38,7 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'siz
     minRows?: number;
 }
 
-export interface StyledProps extends Props, TextFieldTheme {
+export interface StyledProps extends TextFieldProps, TextFieldTheme {
     isPrefixPresent: boolean;
     isSuffixPresent: boolean;
     isLabelPresent: boolean;
@@ -56,4 +56,5 @@ export interface InnerWrapperProps extends Omit<HTMLProps<HTMLDivElement>, 'size
     multiline?: boolean;
     minRows?: number;
     isTextPresent?: boolean;
+    isActive?: boolean;
 }

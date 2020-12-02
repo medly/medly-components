@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.14.2...@medly-components/forms@1.14.3) (2020-12-01)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.14.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.14.1...@medly-components/forms@1.14.2) (2020-11-30)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.14.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.14.0...@medly-components/forms@1.14.1) (2020-11-29)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.14.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.13.3...@medly-components/forms@1.14.0) (2020-11-24)
+
+
+### Features
+
+* add animation and fix minor issue in DateRangePicker component ([a08c6fb](https://github.com/medly/medly-components/commit/a08c6fb5fff6062bbe1c8d39297ba372bcaaac2a))
+* add error validation in the DateRangePicker component ([ea65502](https://github.com/medly/medly-components/commit/ea655021ec5bc3b7cef6629e87178664f85f0c9b))
+
+
+
+
+
 ## [1.13.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.13.2...@medly-components/forms@1.13.3) (2020-11-12)
 
 **Note:** Version bump only for package @medly-components/forms

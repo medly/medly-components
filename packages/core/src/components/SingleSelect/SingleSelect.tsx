@@ -1,6 +1,6 @@
 import { ChevronDownIcon } from '@medly-components/icons';
-import { useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCombinedRefs, useOuterClickNotifier, useUpdateEffect, WithStyle } from '@medly-components/utils';
+import React, { FC, useCallback, useMemo, useRef, useState } from 'react';
 import TextField from '../TextField';
 import FlatVariant from './FlatVariant';
 import { filterOptions, getDefaultSelectedOption, getUpdatedOptions } from './helpers';
@@ -116,12 +116,12 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             ),
             handleKeyPress = useCallback((event: React.KeyboardEvent) => !isSearchable && event.preventDefault(), [isSearchable]);
 
-        useEffect(() => {
+        useUpdateEffect(() => {
             const selected = getDefaultSelectedOption(defaultOptions, value);
             setInputValue(selected.label);
             setSelectedOption(selected);
             setOptions(getUpdatedOptions(defaultOptions, selected));
-            value !== selected.value && onChange && onChange(selected.value || undefined);
+            value && value !== selected.value && onChange && onChange(selected.value);
         }, [defaultOptions, value]);
 
         useKeyboardNavigation({

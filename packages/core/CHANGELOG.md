@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.36.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.36.1...@medly-components/core@1.36.2) (2020-12-01)
+
+
+### Bug Fixes
+
+* build issue ([d77e54e](https://github.com/medly/medly-components/commit/d77e54e5aa21664f2928a1683a86fc36384630f2))
+* lint issue in breadcrumb component doc ([bd0dedf](https://github.com/medly/medly-components/commit/bd0dedfe2354fb7b0467a085f5de44f08cddb5dd))
+* singleSelect change event fires on initial render ([b1dc5e6](https://github.com/medly/medly-components/commit/b1dc5e6c1d71a4b85cda76237810abf768c5bb4b))
+
+
+
+
+
+## [1.36.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.36.0...@medly-components/core@1.36.1) (2020-11-30)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+# [1.36.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.35.0...@medly-components/core@1.36.0) (2020-11-29)
+
+
+### Bug Fixes
+
+* fit content issue in Table component ([bc9f331](https://github.com/medly/medly-components/commit/bc9f33118e70a5ab5208f551578ae728eb8abbb0))
+* minSelectable date issue in datepicker component ([c4c153d](https://github.com/medly/medly-components/commit/c4c153d444182e1dbe6f0c9146fc52e0617c1333))
+
+
+### Features
+
+* add Hidden component ([065a7b6](https://github.com/medly/medly-components/commit/065a7b6740eb48f5a3e1ae1b193054c4a3cf8868))
+
+
+
+
+
+# [1.35.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.34.3...@medly-components/core@1.35.0) (2020-11-24)
+
+
+### Bug Fixes
+
+* style of date range calendar popup ([46c8d32](https://github.com/medly/medly-components/commit/46c8d3244fd8d2aa84ed6cd651abc788d0c061e7))
+* style of input field in dateRange component ([2c43328](https://github.com/medly/medly-components/commit/2c43328a82ad90cd67aa5d53b68d601cbcc8b0f2))
+* type issue after master merge ([e2bd7eb](https://github.com/medly/medly-components/commit/e2bd7eba13550676be906173af8af85682903e67))
+* type issues in Month component ([ca85d7e](https://github.com/medly/medly-components/commit/ca85d7e4ff171dc0f634e2cf65a6f86fdc193381))
+
+
+### Features
+
+* add animation and fix minor issue in DateRangePicker component ([a08c6fb](https://github.com/medly/medly-components/commit/a08c6fb5fff6062bbe1c8d39297ba372bcaaac2a))
+* add calendar component and styles to date range picker ([869bb35](https://github.com/medly/medly-components/commit/869bb35380874059c047e6b44364af0de51669a0))
+* add calendar initial component ([cc4e16f](https://github.com/medly/medly-components/commit/cc4e16f995206b80905a0b24ec0e49fd3c964c99))
+* add date range picker input field ([dd88b97](https://github.com/medly/medly-components/commit/dd88b979684349c4af36f3b565b8a631d38d3783))
+* add disable header feature in calendar component ([6085d94](https://github.com/medly/medly-components/commit/6085d9425919fab329f380a92e8cb0fa3c80d3ad))
+* add error validation in the DateRangePicker component ([ea65502](https://github.com/medly/medly-components/commit/ea655021ec5bc3b7cef6629e87178664f85f0c9b))
+* add month navigation in date range picker component ([ca806c3](https://github.com/medly/medly-components/commit/ca806c302a452e09d99f60d240f348954e008343))
+* add story fix to display the date range picker input field ([b4b6d02](https://github.com/medly/medly-components/commit/b4b6d0252795c39cce469f8714c90811bb7d3626))
+* add styles to support the date range picker input field ([826df02](https://github.com/medly/medly-components/commit/826df02535d2cb18c3b70a4eb9f85e9a3a985039))
+* add supported types in date range picker ([e7286cb](https://github.com/medly/medly-components/commit/e7286cb1b99f88f37c5738d417dbd41eaa3b5f56))
+* add types to support disable header component ([625fbc6](https://github.com/medly/medly-components/commit/625fbc66a62e80d1166fa794949e87a83483095a))
+
+
+
+
+
 ## [1.34.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.34.2...@medly-components/core@1.34.3) (2020-11-12)
 
 

@@ -14,7 +14,7 @@ export const SideNav: FC<SideNavProps> & WithStyle & SideNavStaticProps = props 
 
     const ref = useRef(null),
         [isHovered, setHoveredState] = useState(false),
-        [isExpanded, setExpandedState] = useState(defaultOpen),
+        [isExpanded, setExpandedState] = useState(defaultOpen ?? window.innerWidth > 1024),
         [activeItem, setActiveItem] = useState(defaultActive || '');
 
     const openSidenav = useCallback(() => !isExpanded && setHoveredState(true), [isExpanded]),
@@ -57,6 +57,5 @@ SideNav.Context = SideNavContext;
 SideNav.displayName = 'SideNav';
 SideNav.Style = Styled.Aside;
 SideNav.defaultProps = {
-    hideShadow: false,
-    defaultOpen: false
+    hideShadow: false
 };

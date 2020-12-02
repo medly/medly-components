@@ -1,6 +1,6 @@
 export * from './avatar/types';
-export * from './breadCrumbs/types';
-export * from './breakPoints/types';
+export * from './breadcrumb/types';
+export * from './breakpoints/types';
 export * from './button/types';
 export * from './calendar/types';
 export * from './card/types';
@@ -10,6 +10,7 @@ export * from './chip/types';
 export * from './colors/types';
 export * from './datePicker/types';
 export * from './dialog-box/types';
+export * from './dateRangePicker/types';
 export * from './font/types';
 export * from './input/types';
 export * from './label/types';

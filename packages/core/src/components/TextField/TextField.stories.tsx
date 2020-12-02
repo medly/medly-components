@@ -3,7 +3,7 @@ import { styled } from '@medly-components/utils';
 import React, { useCallback, useState } from 'react';
 import Button from '../Button';
 import { TextField } from './TextField';
-import { Props } from './types';
+import { TextFieldProps as Props } from './types';
 
 export const variants: Props['variant'][] = ['filled', 'outlined', 'fusion'];
 export const sizes: Props['size'][] = ['S', 'M'];

@@ -5,10 +5,10 @@ import React, { FormEvent, useCallback, useEffect, useMemo, useRef, useState } f
 import Calendar from '../Calendar';
 import Popover from '../Popover';
 import TextField from '../TextField';
-import { DateIcon, Wrapper } from './DatePicker.styled';
-import { Props } from './types';
+import { DateIconWrapper, Wrapper } from './DatePicker.styled';
+import { DatePickerProps } from './types';
 
-export const DatePicker: React.FC<Props> & WithStyle = React.memo(
+export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 value,
@@ -112,9 +112,9 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
         }, wrapperRef);
 
         const suffixEl = () => (
-            <DateIcon variant={restProps.variant} isErrorPresent={isErrorPresent} isActive={active} disabled={disabled} size={size}>
+            <DateIconWrapper variant={restProps.variant} isErrorPresent={isErrorPresent} isActive={active} disabled={disabled} size={size}>
                 <DateRangeIcon id={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
-            </DateIcon>
+            </DateIconWrapper>
         );
 
         const sharedProps = {
@@ -146,7 +146,7 @@ export const DatePicker: React.FC<Props> & WithStyle = React.memo(
                 className={className}
                 placement={popoverPlacement}
             >
-                <TextField {...(isMobile ? mobileProps : desktopProps)} />
+                <TextField key={`${value}`} {...(isMobile ? mobileProps : desktopProps)} />
                 {showCalendar && (
                     <Calendar
                         id={`${id}-calendar`}

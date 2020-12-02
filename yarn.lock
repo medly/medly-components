@@ -1235,21 +1235,6 @@
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-9.1.1.tgz#d97ebc35d20eed6d8458361cbca5c7cb85d45184"
   integrity sha512-SXY8bCQ1qacJ8AUTUxjabY8G6OjSmMPLN9MBCzGaKOjpPNX6z8zbXTbk9oU3GHZLtcxweWLCi2n49IRS4iQlwg==
 
-"@datepicker-react/hooks@^2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@datepicker-react/hooks/-/hooks-2.7.0.tgz#2f5b00dfc6b5439fdb8c902d39893669a2f04009"
-  integrity sha512-LdtrwTcwB7xzRwb++C66b9VOexeP0xa4K4WMvuSplD0hW4Uah5fOLZW+IJJaZEH1jDX++PFzEPQ6QxWNiFPrZA==
-  dependencies:
-    date-fns "^2.14.0"
-
-"@datepicker-react/styled@^2.3.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@datepicker-react/styled/-/styled-2.7.0.tgz#cc6221ba5b2a7303fa0a273c46773607d49bb752"
-  integrity sha512-xaGBavipIrWpreA5KUCAvdgPtZ2HhYoCeQHq9E+azvsIK8wAjY7qZ30sJ963nRgHSVZss66Anilug6es+2zlMg==
-  dependencies:
-    "@datepicker-react/hooks" "^2.7.0"
-    styled-system "^5.1.5"
-
 "@egoist/vue-to-react@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@egoist/vue-to-react/-/vue-to-react-1.1.0.tgz#83c884b8608e8ee62e76c03e91ce9c26063a91ad"
@@ -3454,96 +3439,6 @@
     telejson "^3.2.0"
     util-deprecate "^1.0.2"
 
-"@styled-system/background@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@styled-system/background/-/background-5.1.2.tgz#75c63d06b497ab372b70186c0bf608d62847a2ba"
-  integrity sha512-jtwH2C/U6ssuGSvwTN3ri/IyjdHb8W9X/g8Y0JLcrH02G+BW3OS8kZdHphF1/YyRklnrKrBT2ngwGUK6aqqV3A==
-  dependencies:
-    "@styled-system/core" "^5.1.2"
-
-"@styled-system/border@^5.1.5":
-  version "5.1.5"
-  resolved "https://registry.yarnpkg.com/@styled-system/border/-/border-5.1.5.tgz#0493d4332d2b59b74bb0d57d08c73eb555761ba6"
-  integrity sha512-JvddhNrnhGigtzWRCVuAHepniyVi6hBlimxWDVAdcTuk7aRn9BYJUwfHslURtwYFsF5FoEs8Zmr1oZq2M1AP0A==
-  dependencies:
-    "@styled-system/core" "^5.1.2"
-
-"@styled-system/color@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@styled-system/color/-/color-5.1.2.tgz#b8d6b4af481faabe4abca1a60f8daa4ccc2d9f43"
-  integrity sha512-1kCkeKDZkt4GYkuFNKc7vJQMcOmTl3bJY3YBUs7fCNM6mMYJeT1pViQ2LwBSBJytj3AB0o4IdLBoepgSgGl5MA==
-  dependencies:
-    "@styled-system/core" "^5.1.2"
-
-"@styled-system/core@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@styled-system/core/-/core-5.1.2.tgz#b8b7b86455d5a0514f071c4fa8e434b987f6a772"
-  integrity sha512-XclBDdNIy7OPOsN4HBsawG2eiWfCcuFt6gxKn1x4QfMIgeO6TOlA2pZZ5GWZtIhCUqEPTgIBta6JXsGyCkLBYw==
-  dependencies:
-    object-assign "^4.1.1"
-
-"@styled-system/css@^5.1.5":
-  version "5.1.5"
-  resolved "https://registry.yarnpkg.com/@styled-system/css/-/css-5.1.5.tgz#0460d5f3ff962fa649ea128ef58d9584f403bbbc"
-  integrity sha512-XkORZdS5kypzcBotAMPBoeckDs9aSZVkvrAlq5K3xP8IMAUek+x2O4NtwoSgkYkWWzVBu6DGdFZLR790QWGG+A==
-
-"@styled-system/flexbox@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@styled-system/flexbox/-/flexbox-5.1.2.tgz#077090f43f61c3852df63da24e4108087a8beecf"
-  integrity sha512-6hHV52+eUk654Y1J2v77B8iLeBNtc+SA3R4necsu2VVinSD7+XY5PCCEzBFaWs42dtOEDIa2lMrgL0YBC01mDQ==
-  dependencies:
-    "@styled-system/core" "^5.1.2"
-
-"@styled-system/grid@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@styled-system/grid/-/grid-5.1.2.tgz#7165049877732900b99cd00759679fbe45c6c573"
-  integrity sha512-K3YiV1KyHHzgdNuNlaw8oW2ktMuGga99o1e/NAfTEi5Zsa7JXxzwEnVSDSBdJC+z6R8WYTCYRQC6bkVFcvdTeg==
-  dependencies:
-    "@styled-system/core" "^5.1.2"
-
-"@styled-system/layout@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@styled-system/layout/-/layout-5.1.2.tgz#12d73e79887e10062f4dbbbc2067462eace42339"
-  integrity sha512-wUhkMBqSeacPFhoE9S6UF3fsMEKFv91gF4AdDWp0Aym1yeMPpqz9l9qS/6vjSsDPF7zOb5cOKC3tcKKOMuDCPw==
-  dependencies:
-    "@styled-system/core" "^5.1.2"
-
-"@styled-system/position@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@styled-system/position/-/position-5.1.2.tgz#56961266566836f57a24d8e8e33ce0c1adb59dd3"
-  integrity sha512-60IZfMXEOOZe3l1mCu6sj/2NAyUmES2kR9Kzp7s2D3P4qKsZWxD1Se1+wJvevb+1TP+ZMkGPEYYXRyU8M1aF5A==
-  dependencies:
-    "@styled-system/core" "^5.1.2"
-
-"@styled-system/shadow@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@styled-system/shadow/-/shadow-5.1.2.tgz#beddab28d7de03cd0177a87ac4ed3b3b6d9831fd"
-  integrity sha512-wqniqYb7XuZM7K7C0d1Euxc4eGtqEe/lvM0WjuAFsQVImiq6KGT7s7is+0bNI8O4Dwg27jyu4Lfqo/oIQXNzAg==
-  dependencies:
-    "@styled-system/core" "^5.1.2"
-
-"@styled-system/space@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@styled-system/space/-/space-5.1.2.tgz#38925d2fa29a41c0eb20e65b7c3efb6e8efce953"
-  integrity sha512-+zzYpR8uvfhcAbaPXhH8QgDAV//flxqxSjHiS9cDFQQUSznXMQmxJegbhcdEF7/eNnJgHeIXv1jmny78kipgBA==
-  dependencies:
-    "@styled-system/core" "^5.1.2"
-
-"@styled-system/typography@^5.1.2":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@styled-system/typography/-/typography-5.1.2.tgz#65fb791c67d50cd2900d234583eaacdca8c134f7"
-  integrity sha512-BxbVUnN8N7hJ4aaPOd7wEsudeT7CxarR+2hns8XCX1zp0DFfbWw4xYa/olA0oQaqx7F1hzDg+eRaGzAJbF+jOg==
-  dependencies:
-    "@styled-system/core" "^5.1.2"
-
-"@styled-system/variant@^5.1.5":
-  version "5.1.5"
-  resolved "https://registry.yarnpkg.com/@styled-system/variant/-/variant-5.1.5.tgz#8446d8aad06af3a4c723d717841df2dbe4ddeafd"
-  integrity sha512-Yn8hXAFoWIro8+Q5J8YJd/mP85Teiut3fsGVR9CAxwgNfIAiqlYxsk5iHU7VHJks/0KjL4ATSjmbtCDC/4l1qw==
-  dependencies:
-    "@styled-system/core" "^5.1.2"
-    "@styled-system/css" "^5.1.5"
-
 "@stylelint/postcss-css-in-js@^0.37.1":
   version "0.37.2"
   resolved "https://registry.yarnpkg.com/@stylelint/postcss-css-in-js/-/postcss-css-in-js-0.37.2.tgz#7e5a84ad181f4234a2480803422a47b8749af3d2"
@@ -4048,26 +3943,10 @@
     "@types/react" "*"
     "@types/reactcss" "*"
 
-"@types/react-datepicker@^2.8.1":
-  version "2.11.1"
-  resolved "https://registry.yarnpkg.com/@types/react-datepicker/-/react-datepicker-2.11.1.tgz#f7ad70cf935c75ced3d769347cc2212c6234fcd9"
-  integrity sha512-MVz1vcv3ButoDfKPUA40lSxPBGsT1f05zqvUsP4t5997TX9C4btlYyREJ+h9sRw9R10EpokkS08GFK4XI+Q0Qg==
-  dependencies:
-    "@types/react" "*"
-    date-fns "^2.0.1"
-    popper.js "^1.14.1"
-
 "@types/react-dom@^16.9.5":
   version "16.9.8"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.8.tgz#fe4c1e11dfc67155733dfa6aa65108b4971cb423"
   integrity sha512-ykkPQ+5nFknnlU6lDd947WbQ6TE3NNzbQAkInC2EKY1qeYdTKp7onFusmYZb+ityzx2YviqT6BXSu+LyWWJwcA==
-  dependencies:
-    "@types/react" "*"
-
-"@types/react-input-mask@^2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@types/react-input-mask/-/react-input-mask-2.0.5.tgz#1ea1bb81641fd5bfd13b2dec269bda94b6adc870"
-  integrity sha512-4wPehO42dCk2sMrAGGT/xIfUG5GVdmzyGalweW5EvJARNXgtoxQ9HnkgSkXlVKR3oLVIHlT/vXk/DUXV+WSPyw==
   dependencies:
     "@types/react" "*"
 
@@ -6865,10 +6744,10 @@ data-urls@^1.1.0:
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
 
-date-fns@^2.0.1, date-fns@^2.14.0:
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.15.0.tgz#424de6b3778e4e69d3ff27046ec136af58ae5d5f"
-  integrity sha512-ZCPzAMJZn3rNUvvQIMlXhDr4A+Ar07eLeGsGREoWU19a3Pqf5oYa+ccd+B3F6XVtQY6HANMFdOQ8A+ipFnvJdQ==
+date-fns@^2.16.1:
+  version "2.16.1"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.16.1.tgz#05775792c3f3331da812af253e1a935851d3834b"
+  integrity sha512-sAJVKx/FqrLYHAQeN7VpJrPhagZc9R4ImZIWYRFZaaohR3KzmuK88touwsSwSVT8Qcbd4zoDsnGfX4GFB4imyQ==
 
 dateformat@^3.0.0:
   version "3.0.3"
@@ -12706,7 +12585,7 @@ polished@^3.3.1, polished@^3.6.2:
   dependencies:
     "@babel/runtime" "^7.9.2"
 
-popper.js@^1.14.1, popper.js@^1.14.4, popper.js@^1.14.7:
+popper.js@^1.14.4, popper.js@^1.14.7:
   version "1.16.1"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
   integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
@@ -13454,15 +13333,6 @@ react-input-autosize@^2.2.2:
   integrity sha512-jQJgYCA3S0j+cuOwzuCd1OjmBmnZLdqQdiLKRYrsMMzbjUrVDS5RvJUDwJqA7sKuksDuzFtm6hZGKFu7Mjk5aw==
   dependencies:
     prop-types "^15.5.8"
-
-react-input-mask@^3.0.0-alpha.2:
-  version "3.0.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/react-input-mask/-/react-input-mask-3.0.0-alpha.2.tgz#113102942a557edc7a192e66020b8ce1ba699a5c"
-  integrity sha512-9U7qL+mvDMOJcbOFPdt6Vj+zzmCMNnBjhhjGDrL8BGQmymgvMVKhu/oOVfAkl+5VWOsLr+G3EhZOmae5fBcAkA==
-  dependencies:
-    invariant "^2.2.4"
-    prop-types "^15.7.2"
-    warning "^4.0.3"
 
 react-inspector@^4.0.0:
   version "4.0.1"
@@ -15232,25 +15102,6 @@ styled-components@^5.1.0:
     hoist-non-react-statics "^3.0.0"
     shallowequal "^1.1.0"
     supports-color "^5.5.0"
-
-styled-system@^5.1.5:
-  version "5.1.5"
-  resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-5.1.5.tgz#e362d73e1dbb5641a2fd749a6eba1263dc85075e"
-  integrity sha512-7VoD0o2R3RKzOzPK0jYrVnS8iJdfkKsQJNiLRDjikOpQVqQHns/DXWaPZOH4tIKkhAT7I6wIsy9FWTWh2X3q+A==
-  dependencies:
-    "@styled-system/background" "^5.1.2"
-    "@styled-system/border" "^5.1.5"
-    "@styled-system/color" "^5.1.2"
-    "@styled-system/core" "^5.1.2"
-    "@styled-system/flexbox" "^5.1.2"
-    "@styled-system/grid" "^5.1.2"
-    "@styled-system/layout" "^5.1.2"
-    "@styled-system/position" "^5.1.2"
-    "@styled-system/shadow" "^5.1.2"
-    "@styled-system/space" "^5.1.2"
-    "@styled-system/typography" "^5.1.2"
-    "@styled-system/variant" "^5.1.5"
-    object-assign "^4.1.1"
 
 stylelint-config-prettier@^8.0.1:
   version "8.0.2"

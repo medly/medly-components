@@ -5,8 +5,8 @@ import { LoaderTheme } from './loader/types';
 
 export interface CoreTheme {
     avatar?: CoreThemes.AvatarTheme;
-    breakPoints?: CoreThemes.BreakPointsTheme;
-    breadCrumbs?: CoreThemes.BreadCrumbsTheme;
+    breakpoints?: CoreThemes.BreakpointsTheme;
+    breadcrumb?: CoreThemes.BreadcrumbTheme;
     button?: CoreThemes.ButtonTheme;
     card?: CoreThemes.CardTheme;
     calendar?: CoreThemes.CalendarTheme;
@@ -15,6 +15,7 @@ export interface CoreTheme {
     chip?: CoreThemes.ChipTheme;
     colors?: CoreThemes.ColorPallet;
     datePicker?: CoreThemes.DatePickerTheme;
+    dateRangePicker?: CoreThemes.DateRangePickerTheme;
     font?: CoreThemes.FontTheme;
     input?: CoreThemes.InputTheme;
     label?: CoreThemes.LabelTheme;

@@ -241,7 +241,7 @@ exports[`Form should render properly with initial state 1`] = `
   text-align: initial;
 }
 
-.c67 {
+.c61 {
   margin: 0;
   color: inherit;
   font-size: 1.8rem;
@@ -254,7 +254,7 @@ exports[`Form should render properly with initial state 1`] = `
   text-align: initial;
 }
 
-.c75 {
+.c69 {
   border: none;
   position: relative;
   -webkit-user-select: none;
@@ -282,65 +282,65 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: center;
 }
 
-.c75 * {
+.c69 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c75:hover {
+.c69:hover {
   cursor: pointer;
 }
 
-.c75:focus {
+.c69:focus {
   outline: none;
 }
 
-.c75:disabled {
+.c69:disabled {
   cursor: not-allowed;
 }
 
-.c75:disabled {
+.c69:disabled {
   color: #98A7B7;
   background: #dfe4e9;
 }
 
-.c75:disabled .c30 * {
+.c69:disabled .c30 * {
   fill: #98A7B7;
 }
 
-.c75:not(:disabled):not(:hover) {
+.c69:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #126AFA;
 }
 
-.c75:not(:disabled):not(:hover) .c30 * {
+.c69:not(:disabled):not(:hover) .c30 * {
   fill: #ffffff;
 }
 
-.c75:not(:disabled):active {
+.c69:not(:disabled):active {
   color: #ffffff;
   background: #0D4AAF;
 }
 
-.c75:not(:disabled):active .c30 * {
+.c69:not(:disabled):active .c30 * {
   fill: #ffffff;
 }
 
-.c75:not(:disabled):not(:active):hover {
+.c69:not(:disabled):not(:active):hover {
   color: #ffffff;
   background: #0F5AD5;
   box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
-.c75:not(:disabled):not(:active):hover .c30 * {
+.c69:not(:disabled):not(:active):hover .c30 * {
   fill: #ffffff;
 }
 
-.c75 .c30 + .c17 {
+.c69 .c30 + .c17 {
   margin-left: 0.8rem;
 }
 
-.c75 .c17 + .c30 {
+.c69 .c17 + .c30 {
   margin-left: 0.8rem;
 }
 
@@ -553,7 +553,7 @@ exports[`Form should render properly with initial state 1`] = `
   border-color: #126AFA;
 }
 
-.c73 {
+.c67 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -573,14 +573,25 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: row;
 }
 
-.c73 * {
+.c67 * {
   cursor: pointer;
 }
 
-.c73:hover .c28 {
+.c67:hover .c28 {
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
   border-color: #0F5AD5;
   background-color: #0F5AD5;
+}
+
+.c53 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c9 {
@@ -663,12 +674,7 @@ exports[`Form should render properly with initial state 1`] = `
   text-overflow: ellipsis;
 }
 
-.c51 {
-  pointer-events: none;
-  margin-right: 1.6rem;
-}
-
-.c62 {
+.c56 {
   pointer-events: none;
   margin-left: 1.6rem;
 }
@@ -700,17 +706,17 @@ exports[`Form should render properly with initial state 1`] = `
   color: #546A7F;
 }
 
-.c5 .c50,
-.c5 .c61 {
+.c5 .c70,
+.c5 .c55 {
   color: #546A7F;
 }
 
-.c5 .c50 *,
-.c5 .c61 * {
+.c5 .c70 *,
+.c5 .c55 * {
   fill: #546A7F;
 }
 
-.c5 ~ .sc-fzqNqU {
+.c5 ~ .c52 {
   color: #546A7F;
 }
 
@@ -751,17 +757,17 @@ exports[`Form should render properly with initial state 1`] = `
   color: #126AFA;
 }
 
-.c5:focus-within .c50,
-.c5:focus-within:hover .c50,
-.c5:focus-within .c61,
-.c5:focus-within:hover .c61 {
+.c5:focus-within .c70,
+.c5:focus-within:hover .c70,
+.c5:focus-within .c55,
+.c5:focus-within:hover .c55 {
   color: #126AFA;
 }
 
-.c5:focus-within .c50 *,
-.c5:focus-within:hover .c50 *,
-.c5:focus-within .c61 *,
-.c5:focus-within:hover .c61 * {
+.c5:focus-within .c70 *,
+.c5:focus-within:hover .c70 *,
+.c5:focus-within .c55 *,
+.c5:focus-within:hover .c55 * {
   fill: #126AFA;
 }
 
@@ -816,6 +822,7 @@ exports[`Form should render properly with initial state 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  pointer-events: none;
   color: rgba(0,90,238,.2);
   bottom: 0.7rem;
 }
@@ -862,7 +869,7 @@ exports[`Form should render properly with initial state 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: 29rem;
+  min-width: 33.8rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -975,7 +982,7 @@ exports[`Form should render properly with initial state 1`] = `
   content: ' *';
 }
 
-.c60 {
+.c54 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -987,22 +994,22 @@ exports[`Form should render properly with initial state 1`] = `
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c60 .c2 {
+.c54 .c2 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c60 .c2 label {
+.c54 .c2 label {
   pointer-events: none;
 }
 
-.c60 .c2 div,
-.c60 .c2 input,
-.c60 .c2 label {
+.c54 .c2 div,
+.c54 .c2 input,
+.c54 .c2 label {
   cursor: pointer;
 }
 
-.c60 .c2 .c61 {
+.c54 .c2 .c55 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -1011,7 +1018,7 @@ exports[`Form should render properly with initial state 1`] = `
   transform: rotate(0deg);
 }
 
-.c60 .c2:not(:focus-within):hover .c61 * {
+.c54 .c2:not(:focus-within):hover .c55 * {
   fill: #13181D;
 }
 
@@ -1065,7 +1072,17 @@ exports[`Form should render properly with initial state 1`] = `
   top: 5.6rem;
 }
 
-.c57 {
+.c51 {
+  border-right: 0.1rem solid rgba(84,106,127,0.2);
+  height: 3.2rem;
+  margin-right: 1.6rem;
+  border-radius: 0.1rem;
+  -webkit-transition: border-color 100ms ease-out;
+  transition: border-color 100ms ease-out;
+}
+
+.c49 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1074,173 +1091,120 @@ exports[`Form should render properly with initial state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c59 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   box-sizing: border-box;
-  position: absolute;
-  bottom: unset;
-  left: 0;
-  top: unset;
-  right: unset;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
+  padding-left: 0.8rem;
 }
 
-.c55 {
-  display: block;
-  position: relative;
-  border: 1px solid #BCBEC0;
-  background: #ffffff;
-  border-radius: 2px;
-  margin: 0;
+.c49 .c8 {
+  color: #546A7F;
 }
 
-.c56 {
-  border: 0;
-  padding: 0 44px;
-  width: 100%;
-  min-height: 46px;
-  background: #ffffff;
-  font-family: Montserrat,sans-serif;
-  color: #001217;
-  font-size: 14px;
-  font-weight: 600;
-  box-shadow: none;
-  cursor: pointer;
-  box-sizing: border-box;
-  outline: 0;
+.c49 .c70,
+.c49 .c55 {
+  color: #546A7F;
 }
 
-.c56::-webkit-input-placeholder {
-  font-weight: 500;
-  color: #929598;
+.c49 .c70 *,
+.c49 .c55 * {
+  fill: #546A7F;
 }
 
-.c56::-moz-placeholder {
-  font-weight: 500;
-  color: #929598;
+.c49 ~ .c52 {
+  color: #546A7F;
 }
 
-.c56:-moz-placeholder {
-  font-weight: 500;
-  color: #929598;
-}
-
-.c53 {
-  box-sizing: border-box;
-  position: relative;
-}
-
-.c58 {
-  color: #BCBEC0;
-  opacity: 1;
-}
-
-.c54 {
-  display: grid;
-  grid-template-columns: 194px 39px 194px;
-  grid-template-rows: unset;
-  background: transparent;
-  border: 0;
-  border-radius: 0;
-}
-
-.c49,
-.c49 * {
-  cursor: pointer;
-}
-
-.c52 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c52 > div {
-  display: inline-block;
-  position: unset;
-}
-
-.c52 > div div {
-  z-index: 5;
-}
-
-.c52 > div > div:last-child {
-  top: unset;
-  bottom: unset;
-  left: unset;
-  right: unset;
-  top: calc(100% + 0px);
-  left: 0%;
-}
-
-.c52 > div > div:first-child {
-  width: 100%;
-  display: inline-grid;
-  grid-template-columns: auto 30px auto;
-  padding: 0.8rem;
-  box-sizing: border-box;
-  text-align: center;
-  cursor: pointer;
-}
-
-.c52 > div > div:first-child div::before {
+.c49::after {
   content: '';
-  width: 1px;
-  height: 100%;
-  background-color: #C7D0D8;
-}
-
-.c52 > div > div:first-child div svg {
-  display: none;
-}
-
-.c52 > div > div:first-child label {
-  text-align: center;
-  border: 0;
-  background: transparent;
-}
-
-.c52 > div > div:first-child label input {
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  max-width: 90px;
-  min-height: unset;
-  padding: 0;
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   box-sizing: border-box;
-  box-shadow: none;
-  background: transparent;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-clip: padding-box;
+  border-top: 0.1rem solid #546A7F;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
 }
 
-.c52 > div > div:first-child label input:disabled {
-  cursor: not-allowed;
+.c49:hover::after,
+.c49:focus-within::after {
+  border-width: 0.2rem;
 }
 
-.c52 > div > div:first-child label input:focus {
-  outline: 0;
+.c49 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c52 > div > div:first-child label input::-webkit-file-upload-button {
-  visibility: hidden;
+.c49:focus-within,
+.c49:focus-within:hover {
+  background-color: #E7F0FF;
+}
+
+.c49:focus-within::after,
+.c49:focus-within:hover::after {
+  border-color: #126AFA;
+}
+
+.c49:focus-within .c8,
+.c49:focus-within:hover .c8 {
+  color: #126AFA;
+}
+
+.c49:focus-within .c70,
+.c49:focus-within:hover .c70,
+.c49:focus-within .c55,
+.c49:focus-within:hover .c55 {
+  color: #126AFA;
+}
+
+.c49:focus-within .c70 *,
+.c49:focus-within:hover .c70 *,
+.c49:focus-within .c55 *,
+.c49:focus-within:hover .c55 * {
+  fill: #126AFA;
+}
+
+.c49:focus-within input,
+.c49:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
+}
+
+.c49:focus-within input::-webkit-input-placeholder,
+.c49:focus-within:hover input::-webkit-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c49:focus-within input::-moz-placeholder,
+.c49:focus-within:hover input::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c49:focus-within input:-ms-input-placeholder,
+.c49:focus-within:hover input:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c49:focus-within input::placeholder,
+.c49:focus-within:hover input::placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c49 .c30 {
+  margin-right: 0.8rem;
+}
+
+.c49:hover .c50 {
+  border-color: #546A7F;
 }
 
 .c14 {
@@ -1271,7 +1235,7 @@ exports[`Form should render properly with initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c12 .sc-fzpdbB {
+.c12 .sc-fznXWL {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1322,7 +1286,7 @@ exports[`Form should render properly with initial state 1`] = `
   outline: 0;
 }
 
-.c66 {
+.c60 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1352,16 +1316,16 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: center;
 }
 
-.c66:focus {
+.c60:focus {
   outline: none;
 }
 
-.c66:disabled,
-.c66:disabled > .c30 {
+.c60:disabled,
+.c60:disabled > .c30 {
   cursor: not-allowed;
 }
 
-.c66 .c30 {
+.c60 .c30 {
   font-size: 1.2rem;
   border-radius: 50%;
   cursor: pointer;
@@ -1369,27 +1333,27 @@ exports[`Form should render properly with initial state 1`] = `
   margin-left: 0.6rem;
 }
 
-.c66 .c30 {
+.c60 .c30 {
   background-color: #b0bcc8;
 }
 
-.c66 .c30 * {
+.c60 .c30 * {
   fill: #303C48;
 }
 
-.c66 .c30:hover {
+.c60 .c30:hover {
   background-color: #98A7B7;
 }
 
-.c66 .c30:hover * {
+.c60 .c30:hover * {
   fill: #13181D;
 }
 
-.c66:hover {
+.c60:hover {
   border-color: #435465;
 }
 
-.c65 {
+.c59 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1400,7 +1364,7 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: center;
 }
 
-.c63 {
+.c57 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -1413,35 +1377,35 @@ exports[`Form should render properly with initial state 1`] = `
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c63 .c2 {
+.c57 .c2 {
   margin: 0;
 }
 
-.c63 .c2 label {
+.c57 .c2 label {
   pointer-events: none;
 }
 
-.c63 .c2 div,
-.c63 .c2 input,
-.c63 .c2 label {
+.c57 .c2 div,
+.c57 .c2 input,
+.c57 .c2 label {
   cursor: pointer;
 }
 
-.c63 .c2:focus-within input {
+.c57 .c2:focus-within input {
   cursor: text;
 }
 
-.c63 .c2 input {
+.c57 .c2 input {
   padding-right: 1.6rem;
 }
 
-.c63 .c64 > .c30 {
+.c57 .c58 > .c30 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c63 .c64 > .c30 * {
+.c57 .c58 > .c30 * {
   fill: #13181D;
 }
 
@@ -1568,7 +1532,7 @@ exports[`Form should render properly with initial state 1`] = `
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
 }
 
-.c74 {
+.c68 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1584,7 +1548,7 @@ exports[`Form should render properly with initial state 1`] = `
   justify-content: flex-end;
 }
 
-.c74 > * + * {
+.c68 > * + * {
   margin-left: 1.6rem;
 }
 
@@ -1618,42 +1582,42 @@ exports[`Form should render properly with initial state 1`] = `
   min-width: auto;
 }
 
-.c70 {
+.c64 {
   grid-column: 1/5;
 }
 
-.c70 > * {
+.c64 > * {
   width: 100%;
   margin: 0;
   min-width: auto;
 }
 
-.c71 {
+.c65 {
   grid-column: 5/9;
 }
 
-.c71 > * {
+.c65 > * {
   width: 100%;
   margin: 0;
   min-width: auto;
 }
 
-.c72 {
+.c66 {
   grid-column: 9/-1;
 }
 
-.c72 > * {
+.c66 > * {
   width: 100%;
   margin: 0;
   min-width: auto;
 }
 
-.c68 {
+.c62 {
   grid-column: 1/-1;
   margin-top: 2.6rem;
 }
 
-.c69 {
+.c63 {
   margin-bottom: 1rem;
 }
 
@@ -2112,15 +2076,21 @@ exports[`Form should render properly with initial state 1`] = `
       class="c11"
     >
       <div
-        class="c2 c48 c49"
+        class="c2 c48"
+        id="experience-wrapper"
+        label="Experience"
+        name="experience"
+        type="date-range"
       >
         <div
-          class="c4 c5"
+          class="c4 c49"
+          id="experience-textFields"
         >
           <svg
-            class="c30 c31 c50 c51"
+            class="c30 c46 c47"
             fill="none"
             height="1em"
+            id="experience-calendar-icon"
             viewBox="0 0 24 24"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
@@ -2134,89 +2104,70 @@ exports[`Form should render properly with initial state 1`] = `
             />
           </svg>
           <div
-            class="c52"
-            data-testid="react-datepicker"
+            class="c6"
+            id="experience-startDate-input-wrapper"
           >
-            <div
-              class="c53"
+            <input
+              class="c7"
+              id="experience-startDate-input"
+              name="START_DATE"
+              placeholder="DD / MM / YYYY"
+              required=""
+              value="01 / 01 / 2019"
+            />
+            <span
+              class="c43 c44"
             >
-              <div
-                class="sc-fzoaKM c54"
-                data-testid="DateRangeInputGrid"
-              >
-                <label
-                  class="c55"
-                  display="block"
-                  for="startDate"
-                >
-                  <input
-                    aria-label="Start date"
-                    autocomplete="off"
-                    class="c56"
-                    color="#001217"
-                    data-testid="DatepickerInput"
-                    font-family="Montserrat, sans-serif"
-                    font-size="14px"
-                    font-weight="600"
-                    id="startDate"
-                    placeholder="Start date"
-                    tabindex="0"
-                    value="01/01/2019"
-                    width="100%"
-                  />
-                </label>
-                <div
-                  class="c57"
-                >
-                  <svg
-                    class="c58"
-                    height="12px"
-                    transform="rotate(90 0 0)"
-                    viewBox="0 0 9 12"
-                    width="15px"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.46.001a.538.538 0 0 0-.358.174L.156 4.48a.538.538 0 1 0 .796.724l3.01-3.285v13.689a.563.563 0 0 0 .538.55.563.563 0 0 0 .538-.55V1.918l3.01 3.286a.538.538 0 1 0 .796-.724L4.898.175a.538.538 0 0 0-.437-.174z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </div>
-                <label
-                  class="c55"
-                  display="block"
-                  for="endDate"
-                >
-                  <input
-                    aria-label="End date"
-                    autocomplete="off"
-                    class="c56"
-                    color="#001217"
-                    data-testid="DatepickerInput"
-                    font-family="Montserrat, sans-serif"
-                    font-size="14px"
-                    font-weight="600"
-                    id="endDate"
-                    placeholder="End date"
-                    tabindex="0"
-                    value="01/02/2019"
-                    width="100%"
-                  />
-                </label>
-              </div>
-              <div
-                class="c59"
-              />
-            </div>
+              01 / 01 / 2019
+            </span>
+            <label
+              class="c8 c9"
+              for="experience-startDate-input"
+              required=""
+            >
+              From
+            </label>
+          </div>
+          <i
+            class="c50 c51"
+          />
+          <div
+            class="c6"
+            id="experience-endDate-input-wrapper"
+          >
+            <input
+              class="c7"
+              id="experience-endDate-input"
+              name="END_DATE"
+              placeholder="DD / MM / YYYY"
+              required=""
+              value="01 / 02 / 2019"
+            />
+            <span
+              class="c43 c44"
+            >
+              01 / 02 / 2019
+            </span>
+            <label
+              class="c8 c9"
+              for="experience-endDate-input"
+              required=""
+            >
+              To
+            </label>
           </div>
         </div>
+        <span
+          class="c52 c53"
+          id="experience-helper-text"
+        />
       </div>
     </div>
     <div
       class="c11"
     >
       <div
-        class="c60"
+        class="c54"
         id="country-wrapper"
       >
         <div
@@ -2249,7 +2200,7 @@ exports[`Form should render properly with initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c30 c31 c61 c62"
+              class="c30 c31 c55 c56"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -2270,7 +2221,7 @@ exports[`Form should render properly with initial state 1`] = `
       class="c11"
     >
       <div
-        class="c63"
+        class="c57"
         id="graduation-wrapper"
         name="graduation"
         placeholder="Please Select . . ."
@@ -2304,11 +2255,11 @@ exports[`Form should render properly with initial state 1`] = `
               </label>
             </div>
             <div
-              class="c64 c65"
+              class="c58 c59"
               id="graduation-count"
             >
               <button
-                class="c66"
+                class="c60"
                 id="graduation-count-chip"
               >
                 <span
@@ -2352,17 +2303,17 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <h4
-      class="c17 c67 c68"
+      class="c17 c61 c62"
     >
       Marks
     </h4>
     <span
-      class="c17 c18 c69"
+      class="c17 c18 c63"
     >
       Marks Information
     </span>
     <div
-      class="c70"
+      class="c64"
     >
       <div
         class="c2 c3"
@@ -2397,7 +2348,7 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <div
-      class="c71"
+      class="c65"
     >
       <div
         class="c2 c3"
@@ -2432,7 +2383,7 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <div
-      class="c72"
+      class="c66"
     >
       <div
         class="c2 c3"
@@ -2471,7 +2422,7 @@ exports[`Form should render properly with initial state 1`] = `
     >
       
       <label
-        class="c73"
+        class="c67"
         for="agree"
         id="agree-wrapper"
         sizes="[object Object]"
@@ -2515,10 +2466,10 @@ exports[`Form should render properly with initial state 1`] = `
       </label>
     </div>
     <div
-      class="c74"
+      class="c68"
     >
       <button
-        class="c75"
+        class="c69"
         form="medly-dynamic-form"
         type="submit"
       >
@@ -2616,7 +2567,7 @@ exports[`Form should render properly without initial state 1`] = `
   text-align: initial;
 }
 
-.c66 {
+.c60 {
   margin: 0;
   color: inherit;
   font-size: 1.8rem;
@@ -2629,7 +2580,7 @@ exports[`Form should render properly without initial state 1`] = `
   text-align: initial;
 }
 
-.c74 {
+.c68 {
   border: none;
   position: relative;
   -webkit-user-select: none;
@@ -2657,65 +2608,65 @@ exports[`Form should render properly without initial state 1`] = `
   align-items: center;
 }
 
-.c74 * {
+.c68 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c74:hover {
+.c68:hover {
   cursor: pointer;
 }
 
-.c74:focus {
+.c68:focus {
   outline: none;
 }
 
-.c74:disabled {
+.c68:disabled {
   cursor: not-allowed;
 }
 
-.c74:disabled {
+.c68:disabled {
   color: #98A7B7;
   background: #dfe4e9;
 }
 
-.c74:disabled .c32 * {
+.c68:disabled .c32 * {
   fill: #98A7B7;
 }
 
-.c74:not(:disabled):not(:hover) {
+.c68:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #126AFA;
 }
 
-.c74:not(:disabled):not(:hover) .c32 * {
+.c68:not(:disabled):not(:hover) .c32 * {
   fill: #ffffff;
 }
 
-.c74:not(:disabled):active {
+.c68:not(:disabled):active {
   color: #ffffff;
   background: #0D4AAF;
 }
 
-.c74:not(:disabled):active .c32 * {
+.c68:not(:disabled):active .c32 * {
   fill: #ffffff;
 }
 
-.c74:not(:disabled):not(:active):hover {
+.c68:not(:disabled):not(:active):hover {
   color: #ffffff;
   background: #0F5AD5;
   box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
-.c74:not(:disabled):not(:active):hover .c32 * {
+.c68:not(:disabled):not(:active):hover .c32 * {
   fill: #ffffff;
 }
 
-.c74 .c32 + .c1 {
+.c68 .c32 + .c1 {
   margin-left: 0.8rem;
 }
 
-.c74 .c1 + .c32 {
+.c68 .c1 + .c32 {
   margin-left: 0.8rem;
 }
 
@@ -2898,7 +2849,7 @@ exports[`Form should render properly without initial state 1`] = `
   border-color: #126AFA;
 }
 
-.c72 {
+.c66 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2918,13 +2869,24 @@ exports[`Form should render properly without initial state 1`] = `
   flex-direction: row;
 }
 
-.c72 * {
+.c66 * {
   cursor: pointer;
 }
 
-.c72:hover .c30 {
+.c66:hover .c30 {
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
   border-color: #126AFA;
+}
+
+.c53 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .c12 {
@@ -3007,12 +2969,7 @@ exports[`Form should render properly without initial state 1`] = `
   text-overflow: ellipsis;
 }
 
-.c51 {
-  pointer-events: none;
-  margin-right: 1.6rem;
-}
-
-.c62 {
+.c56 {
   pointer-events: none;
   margin-left: 1.6rem;
 }
@@ -3044,17 +3001,17 @@ exports[`Form should render properly without initial state 1`] = `
   color: #546A7F;
 }
 
-.c8 .c50,
-.c8 .c61 {
+.c8 .c69,
+.c8 .c55 {
   color: #546A7F;
 }
 
-.c8 .c50 *,
-.c8 .c61 * {
+.c8 .c69 *,
+.c8 .c55 * {
   fill: #546A7F;
 }
 
-.c8 ~ .sc-fzqNqU {
+.c8 ~ .c52 {
   color: #546A7F;
 }
 
@@ -3095,17 +3052,17 @@ exports[`Form should render properly without initial state 1`] = `
   color: #126AFA;
 }
 
-.c8:focus-within .c50,
-.c8:focus-within:hover .c50,
-.c8:focus-within .c61,
-.c8:focus-within:hover .c61 {
+.c8:focus-within .c69,
+.c8:focus-within:hover .c69,
+.c8:focus-within .c55,
+.c8:focus-within:hover .c55 {
   color: #126AFA;
 }
 
-.c8:focus-within .c50 *,
-.c8:focus-within:hover .c50 *,
-.c8:focus-within .c61 *,
-.c8:focus-within:hover .c61 * {
+.c8:focus-within .c69 *,
+.c8:focus-within:hover .c69 *,
+.c8:focus-within .c55 *,
+.c8:focus-within:hover .c55 * {
   fill: #126AFA;
 }
 
@@ -3160,6 +3117,7 @@ exports[`Form should render properly without initial state 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  pointer-events: none;
   color: rgba(0,90,238,.2);
   bottom: 0.7rem;
 }
@@ -3206,7 +3164,7 @@ exports[`Form should render properly without initial state 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: 29rem;
+  min-width: 33.8rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -3319,7 +3277,7 @@ exports[`Form should render properly without initial state 1`] = `
   content: ' *';
 }
 
-.c60 {
+.c54 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3331,22 +3289,22 @@ exports[`Form should render properly without initial state 1`] = `
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c60 .c5 {
+.c54 .c5 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c60 .c5 label {
+.c54 .c5 label {
   pointer-events: none;
 }
 
-.c60 .c5 div,
-.c60 .c5 input,
-.c60 .c5 label {
+.c54 .c5 div,
+.c54 .c5 input,
+.c54 .c5 label {
   cursor: pointer;
 }
 
-.c60 .c5 .c61 {
+.c54 .c5 .c55 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -3355,7 +3313,7 @@ exports[`Form should render properly without initial state 1`] = `
   transform: rotate(0deg);
 }
 
-.c60 .c5:not(:focus-within):hover .c61 * {
+.c54 .c5:not(:focus-within):hover .c55 * {
   fill: #13181D;
 }
 
@@ -3409,7 +3367,17 @@ exports[`Form should render properly without initial state 1`] = `
   top: 5.6rem;
 }
 
-.c57 {
+.c51 {
+  border-right: 0.1rem solid rgba(84,106,127,0.2);
+  height: 3.2rem;
+  margin-right: 1.6rem;
+  border-radius: 0.1rem;
+  -webkit-transition: border-color 100ms ease-out;
+  transition: border-color 100ms ease-out;
+}
+
+.c49 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3418,173 +3386,120 @@ exports[`Form should render properly without initial state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c59 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   box-sizing: border-box;
-  position: absolute;
-  bottom: unset;
-  left: 0;
-  top: unset;
-  right: unset;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
+  padding-left: 0.8rem;
 }
 
-.c55 {
-  display: block;
-  position: relative;
-  border: 1px solid #BCBEC0;
-  background: #ffffff;
-  border-radius: 2px;
-  margin: 0;
+.c49 .c11 {
+  color: #546A7F;
 }
 
-.c56 {
-  border: 0;
-  padding: 0 44px;
-  width: 100%;
-  min-height: 46px;
-  background: #ffffff;
-  font-family: Montserrat,sans-serif;
-  color: #001217;
-  font-size: 14px;
-  font-weight: 600;
-  box-shadow: none;
-  cursor: pointer;
-  box-sizing: border-box;
-  outline: 0;
+.c49 .c69,
+.c49 .c55 {
+  color: #546A7F;
 }
 
-.c56::-webkit-input-placeholder {
-  font-weight: 500;
-  color: #929598;
+.c49 .c69 *,
+.c49 .c55 * {
+  fill: #546A7F;
 }
 
-.c56::-moz-placeholder {
-  font-weight: 500;
-  color: #929598;
+.c49 ~ .c52 {
+  color: #546A7F;
 }
 
-.c56:-moz-placeholder {
-  font-weight: 500;
-  color: #929598;
-}
-
-.c53 {
-  box-sizing: border-box;
-  position: relative;
-}
-
-.c58 {
-  color: #BCBEC0;
-  opacity: 1;
-}
-
-.c54 {
-  display: grid;
-  grid-template-columns: 194px 39px 194px;
-  grid-template-rows: unset;
-  background: transparent;
-  border: 0;
-  border-radius: 0;
-}
-
-.c49,
-.c49 * {
-  cursor: pointer;
-}
-
-.c52 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c52 > div {
-  display: inline-block;
-  position: unset;
-}
-
-.c52 > div div {
-  z-index: 5;
-}
-
-.c52 > div > div:last-child {
-  top: unset;
-  bottom: unset;
-  left: unset;
-  right: unset;
-  top: calc(100% + 0px);
-  left: 0%;
-}
-
-.c52 > div > div:first-child {
-  width: 100%;
-  display: inline-grid;
-  grid-template-columns: auto 30px auto;
-  padding: 0.8rem;
-  box-sizing: border-box;
-  text-align: center;
-  cursor: pointer;
-}
-
-.c52 > div > div:first-child div::before {
+.c49::after {
   content: '';
-  width: 1px;
-  height: 100%;
-  background-color: #C7D0D8;
-}
-
-.c52 > div > div:first-child div svg {
-  display: none;
-}
-
-.c52 > div > div:first-child label {
-  text-align: center;
-  border: 0;
-  background: transparent;
-}
-
-.c52 > div > div:first-child label input {
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
-  max-width: 90px;
-  min-height: unset;
-  padding: 0;
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   box-sizing: border-box;
-  box-shadow: none;
-  background: transparent;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-clip: padding-box;
+  border-top: 0.1rem solid #546A7F;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
 }
 
-.c52 > div > div:first-child label input:disabled {
-  cursor: not-allowed;
+.c49:hover::after,
+.c49:focus-within::after {
+  border-width: 0.2rem;
 }
 
-.c52 > div > div:first-child label input:focus {
-  outline: 0;
+.c49 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c52 > div > div:first-child label input::-webkit-file-upload-button {
-  visibility: hidden;
+.c49:focus-within,
+.c49:focus-within:hover {
+  background-color: #E7F0FF;
+}
+
+.c49:focus-within::after,
+.c49:focus-within:hover::after {
+  border-color: #126AFA;
+}
+
+.c49:focus-within .c11,
+.c49:focus-within:hover .c11 {
+  color: #126AFA;
+}
+
+.c49:focus-within .c69,
+.c49:focus-within:hover .c69,
+.c49:focus-within .c55,
+.c49:focus-within:hover .c55 {
+  color: #126AFA;
+}
+
+.c49:focus-within .c69 *,
+.c49:focus-within:hover .c69 *,
+.c49:focus-within .c55 *,
+.c49:focus-within:hover .c55 * {
+  fill: #126AFA;
+}
+
+.c49:focus-within input,
+.c49:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
+}
+
+.c49:focus-within input::-webkit-input-placeholder,
+.c49:focus-within:hover input::-webkit-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c49:focus-within input::-moz-placeholder,
+.c49:focus-within:hover input::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c49:focus-within input:-ms-input-placeholder,
+.c49:focus-within:hover input:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c49:focus-within input::placeholder,
+.c49:focus-within:hover input::placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c49 .c32 {
+  margin-right: 0.8rem;
+}
+
+.c49:hover .c50 {
+  border-color: #546A7F;
 }
 
 .c17 {
@@ -3615,7 +3530,7 @@ exports[`Form should render properly without initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c15 .sc-fzpdbB {
+.c15 .sc-fznXWL {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3666,7 +3581,7 @@ exports[`Form should render properly without initial state 1`] = `
   outline: 0;
 }
 
-.c65 {
+.c59 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3677,7 +3592,7 @@ exports[`Form should render properly without initial state 1`] = `
   align-items: center;
 }
 
-.c63 {
+.c57 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -3690,35 +3605,35 @@ exports[`Form should render properly without initial state 1`] = `
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c63 .c5 {
+.c57 .c5 {
   margin: 0;
 }
 
-.c63 .c5 label {
+.c57 .c5 label {
   pointer-events: none;
 }
 
-.c63 .c5 div,
-.c63 .c5 input,
-.c63 .c5 label {
+.c57 .c5 div,
+.c57 .c5 input,
+.c57 .c5 label {
   cursor: pointer;
 }
 
-.c63 .c5:focus-within input {
+.c57 .c5:focus-within input {
   cursor: text;
 }
 
-.c63 .c5 input {
+.c57 .c5 input {
   padding-right: 1.6rem;
 }
 
-.c63 .c64 > .c32 {
+.c57 .c58 > .c32 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c63 .c64 > .c32 * {
+.c57 .c58 > .c32 * {
   fill: #13181D;
 }
 
@@ -3825,7 +3740,7 @@ exports[`Form should render properly without initial state 1`] = `
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
 }
 
-.c73 {
+.c67 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3841,7 +3756,7 @@ exports[`Form should render properly without initial state 1`] = `
   justify-content: flex-end;
 }
 
-.c73 > * + * {
+.c67 > * + * {
   margin-left: 1.6rem;
 }
 
@@ -3875,42 +3790,42 @@ exports[`Form should render properly without initial state 1`] = `
   min-width: auto;
 }
 
-.c69 {
+.c63 {
   grid-column: 1/5;
 }
 
-.c69 > * {
+.c63 > * {
   width: 100%;
   margin: 0;
   min-width: auto;
 }
 
-.c70 {
+.c64 {
   grid-column: 5/9;
 }
 
-.c70 > * {
+.c64 > * {
   width: 100%;
   margin: 0;
   min-width: auto;
 }
 
-.c71 {
+.c65 {
   grid-column: 9/-1;
 }
 
-.c71 > * {
+.c65 > * {
   width: 100%;
   margin: 0;
   min-width: auto;
 }
 
-.c67 {
+.c61 {
   grid-column: 1/-1;
   margin-top: 2.6rem;
 }
 
-.c68 {
+.c62 {
   margin-bottom: 1rem;
 }
 
@@ -4373,15 +4288,21 @@ exports[`Form should render properly without initial state 1`] = `
       class="c14"
     >
       <div
-        class="c5 c48 c49"
+        class="c5 c48"
+        id="experience-wrapper"
+        label="Experience"
+        name="experience"
+        type="date-range"
       >
         <div
-          class="c7 c8"
+          class="c7 c49"
+          id="experience-textFields"
         >
           <svg
-            class="c32 c33 c50 c51"
+            class="c32 c46 c47"
             fill="none"
             height="1em"
+            id="experience-calendar-icon"
             viewBox="0 0 24 24"
             width="1em"
             xmlns="http://www.w3.org/2000/svg"
@@ -4395,89 +4316,70 @@ exports[`Form should render properly without initial state 1`] = `
             />
           </svg>
           <div
-            class="c52"
-            data-testid="react-datepicker"
+            class="c9"
+            id="experience-startDate-input-wrapper"
           >
-            <div
-              class="c53"
+            <input
+              class="c10"
+              id="experience-startDate-input"
+              name="START_DATE"
+              placeholder="DD / MM / YYYY"
+              required=""
+              value=""
+            />
+            <span
+              class="c43 c44"
             >
-              <div
-                class="sc-fzoaKM c54"
-                data-testid="DateRangeInputGrid"
-              >
-                <label
-                  class="c55"
-                  display="block"
-                  for="startDate"
-                >
-                  <input
-                    aria-label="Start date"
-                    autocomplete="off"
-                    class="c56"
-                    color="#001217"
-                    data-testid="DatepickerInput"
-                    font-family="Montserrat, sans-serif"
-                    font-size="14px"
-                    font-weight="600"
-                    id="startDate"
-                    placeholder="Start date"
-                    tabindex="0"
-                    value=""
-                    width="100%"
-                  />
-                </label>
-                <div
-                  class="c57"
-                >
-                  <svg
-                    class="c58"
-                    height="12px"
-                    transform="rotate(90 0 0)"
-                    viewBox="0 0 9 12"
-                    width="15px"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.46.001a.538.538 0 0 0-.358.174L.156 4.48a.538.538 0 1 0 .796.724l3.01-3.285v13.689a.563.563 0 0 0 .538.55.563.563 0 0 0 .538-.55V1.918l3.01 3.286a.538.538 0 1 0 .796-.724L4.898.175a.538.538 0 0 0-.437-.174z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </div>
-                <label
-                  class="c55"
-                  display="block"
-                  for="endDate"
-                >
-                  <input
-                    aria-label="End date"
-                    autocomplete="off"
-                    class="c56"
-                    color="#001217"
-                    data-testid="DatepickerInput"
-                    font-family="Montserrat, sans-serif"
-                    font-size="14px"
-                    font-weight="600"
-                    id="endDate"
-                    placeholder="End date"
-                    tabindex="0"
-                    value=""
-                    width="100%"
-                  />
-                </label>
-              </div>
-              <div
-                class="c59"
-              />
-            </div>
+              DD / MM / YYYY
+            </span>
+            <label
+              class="c11 c12"
+              for="experience-startDate-input"
+              required=""
+            >
+              From
+            </label>
+          </div>
+          <i
+            class="c50 c51"
+          />
+          <div
+            class="c9"
+            id="experience-endDate-input-wrapper"
+          >
+            <input
+              class="c10"
+              id="experience-endDate-input"
+              name="END_DATE"
+              placeholder="DD / MM / YYYY"
+              required=""
+              value=""
+            />
+            <span
+              class="c43 c44"
+            >
+              DD / MM / YYYY
+            </span>
+            <label
+              class="c11 c12"
+              for="experience-endDate-input"
+              required=""
+            >
+              To
+            </label>
           </div>
         </div>
+        <span
+          class="c52 c53"
+          id="experience-helper-text"
+        />
       </div>
     </div>
     <div
       class="c14"
     >
       <div
-        class="c60"
+        class="c54"
         id="country-wrapper"
       >
         <div
@@ -4510,7 +4412,7 @@ exports[`Form should render properly without initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c32 c33 c61 c62"
+              class="c32 c33 c55 c56"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -4531,7 +4433,7 @@ exports[`Form should render properly without initial state 1`] = `
       class="c14"
     >
       <div
-        class="c63"
+        class="c57"
         id="graduation-wrapper"
         name="graduation"
         placeholder="Please Select . . ."
@@ -4565,7 +4467,7 @@ exports[`Form should render properly without initial state 1`] = `
               </label>
             </div>
             <div
-              class="c64 c65"
+              class="c58 c59"
               id="graduation-count"
             >
               <svg
@@ -4588,17 +4490,17 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <h4
-      class="c1 c66 c67"
+      class="c1 c60 c61"
     >
       Marks
     </h4>
     <span
-      class="c1 c20 c68"
+      class="c1 c20 c62"
     >
       Marks Information
     </span>
     <div
-      class="c69"
+      class="c63"
     >
       <div
         class="c5 c6"
@@ -4633,7 +4535,7 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <div
-      class="c70"
+      class="c64"
     >
       <div
         class="c5 c6"
@@ -4668,7 +4570,7 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <div
-      class="c71"
+      class="c65"
     >
       <div
         class="c5 c6"
@@ -4707,7 +4609,7 @@ exports[`Form should render properly without initial state 1`] = `
     >
       
       <label
-        class="c72"
+        class="c66"
         for="agree"
         id="agree-wrapper"
         sizes="[object Object]"
@@ -4750,10 +4652,10 @@ exports[`Form should render properly without initial state 1`] = `
       </label>
     </div>
     <div
-      class="c73"
+      class="c67"
     >
       <button
-        class="c74"
+        class="c68"
         form="medly-dynamic-form"
         type="submit"
       >

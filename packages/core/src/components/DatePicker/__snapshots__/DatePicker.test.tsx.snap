@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DatePicker component popover placement should render properly with "bottom" position 1`] = `
-.c9 {
+.c8 {
   overflow: visible;
   font-size: 2rem;
   -webkit-transition: all 100ms linear;
@@ -9,14 +9,14 @@ exports[`DatePicker component popover placement should render properly with "bot
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c11 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -24,14 +24,14 @@ exports[`DatePicker component popover placement should render properly with "bot
   cursor: inherit;
 }
 
-.c12 * {
+.c11 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -44,7 +44,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   text-align: initial;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -54,7 +54,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  text-align: center;
+  text-align: initial;
 }
 
 .c16 {
@@ -82,7 +82,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   width: 100%;
 }
 
-.c10 {
+.c9 {
   pointer-events: none;
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -242,7 +242,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   height: max-content;
 }
 
-.c11 {
+.c10 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -266,15 +266,15 @@ exports[`DatePicker component popover placement should render properly with "bot
   align-items: center;
 }
 
-.c11 svg {
+.c10 svg {
   fill: #435465;
 }
 
-.c11:not(:disabled):hover {
+.c10:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c11:not(:disabled):active {
+.c10:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -325,20 +325,10 @@ exports[`DatePicker component popover placement should render properly with "bot
   padding: 0 0 0 1rem;
 }
 
-.c13 {
+.c12 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
-}
-
-.c13 > .c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.8rem;
 }
 
 .c15 {
@@ -476,6 +466,16 @@ exports[`DatePicker component popover placement should render properly with "bot
 
 .c18:hover {
   background-color: #eff2f4;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .c19 .c0 {
@@ -514,12 +514,12 @@ exports[`DatePicker component popover placement should render properly with "bot
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               Jan
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -549,12 +549,12 @@ exports[`DatePicker component popover placement should render properly with "bot
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               2020
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -571,11 +571,11 @@ exports[`DatePicker component popover placement should render properly with "bot
       </div>
     </div>
     <button
-      class="c11 calendar-month-navigation-go-back"
+      class="c10 calendar-month-navigation-go-back"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -590,11 +590,11 @@ exports[`DatePicker component popover placement should render properly with "bot
       </svg>
     </button>
     <button
-      class="c11 calendar-month-navigation-go-forward"
+      class="c10 calendar-month-navigation-go-forward"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -610,40 +610,40 @@ exports[`DatePicker component popover placement should render properly with "bot
     </button>
   </div>
   <div
-    class="c13"
+    class="c12"
   >
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
@@ -653,7 +653,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -664,7 +664,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -675,7 +675,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -686,7 +686,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -697,7 +697,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         2
       </span>
@@ -708,7 +708,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         3
       </span>
@@ -719,7 +719,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         4
       </span>
@@ -730,7 +730,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         5
       </span>
@@ -741,7 +741,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         6
       </span>
@@ -752,7 +752,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         7
       </span>
@@ -763,7 +763,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         8
       </span>
@@ -774,7 +774,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         9
       </span>
@@ -785,7 +785,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         10
       </span>
@@ -796,7 +796,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         11
       </span>
@@ -807,7 +807,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         12
       </span>
@@ -818,7 +818,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         13
       </span>
@@ -829,7 +829,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         14
       </span>
@@ -840,7 +840,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         15
       </span>
@@ -851,7 +851,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         16
       </span>
@@ -862,7 +862,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         17
       </span>
@@ -873,7 +873,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         18
       </span>
@@ -884,7 +884,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         19
       </span>
@@ -895,7 +895,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         20
       </span>
@@ -906,7 +906,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         21
       </span>
@@ -917,7 +917,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         22
       </span>
@@ -928,7 +928,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         23
       </span>
@@ -939,7 +939,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         24
       </span>
@@ -950,7 +950,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         25
       </span>
@@ -961,7 +961,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         26
       </span>
@@ -972,7 +972,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         27
       </span>
@@ -983,7 +983,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         28
       </span>
@@ -994,7 +994,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -1005,7 +1005,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -1016,7 +1016,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -1027,7 +1027,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -1037,7 +1037,7 @@ exports[`DatePicker component popover placement should render properly with "bot
 `;
 
 exports[`DatePicker component popover placement should render properly with "bottom-end" position 1`] = `
-.c9 {
+.c8 {
   overflow: visible;
   font-size: 2rem;
   -webkit-transition: all 100ms linear;
@@ -1045,14 +1045,14 @@ exports[`DatePicker component popover placement should render properly with "bot
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c11 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -1060,14 +1060,14 @@ exports[`DatePicker component popover placement should render properly with "bot
   cursor: inherit;
 }
 
-.c12 * {
+.c11 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -1080,7 +1080,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   text-align: initial;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -1090,7 +1090,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  text-align: center;
+  text-align: initial;
 }
 
 .c16 {
@@ -1118,7 +1118,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   width: 100%;
 }
 
-.c10 {
+.c9 {
   pointer-events: none;
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -1278,7 +1278,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   height: max-content;
 }
 
-.c11 {
+.c10 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -1302,15 +1302,15 @@ exports[`DatePicker component popover placement should render properly with "bot
   align-items: center;
 }
 
-.c11 svg {
+.c10 svg {
   fill: #435465;
 }
 
-.c11:not(:disabled):hover {
+.c10:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c11:not(:disabled):active {
+.c10:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -1361,20 +1361,10 @@ exports[`DatePicker component popover placement should render properly with "bot
   padding: 0 0 0 1rem;
 }
 
-.c13 {
+.c12 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
-}
-
-.c13 > .c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.8rem;
 }
 
 .c15 {
@@ -1512,6 +1502,16 @@ exports[`DatePicker component popover placement should render properly with "bot
 
 .c18:hover {
   background-color: #eff2f4;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .c19 .c0 {
@@ -1547,12 +1547,12 @@ exports[`DatePicker component popover placement should render properly with "bot
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               Jan
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -1582,12 +1582,12 @@ exports[`DatePicker component popover placement should render properly with "bot
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               2020
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -1604,11 +1604,11 @@ exports[`DatePicker component popover placement should render properly with "bot
       </div>
     </div>
     <button
-      class="c11 calendar-month-navigation-go-back"
+      class="c10 calendar-month-navigation-go-back"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -1623,11 +1623,11 @@ exports[`DatePicker component popover placement should render properly with "bot
       </svg>
     </button>
     <button
-      class="c11 calendar-month-navigation-go-forward"
+      class="c10 calendar-month-navigation-go-forward"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -1643,40 +1643,40 @@ exports[`DatePicker component popover placement should render properly with "bot
     </button>
   </div>
   <div
-    class="c13"
+    class="c12"
   >
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
@@ -1686,7 +1686,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -1697,7 +1697,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -1708,7 +1708,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -1719,7 +1719,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -1730,7 +1730,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         2
       </span>
@@ -1741,7 +1741,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         3
       </span>
@@ -1752,7 +1752,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         4
       </span>
@@ -1763,7 +1763,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         5
       </span>
@@ -1774,7 +1774,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         6
       </span>
@@ -1785,7 +1785,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         7
       </span>
@@ -1796,7 +1796,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         8
       </span>
@@ -1807,7 +1807,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         9
       </span>
@@ -1818,7 +1818,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         10
       </span>
@@ -1829,7 +1829,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         11
       </span>
@@ -1840,7 +1840,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         12
       </span>
@@ -1851,7 +1851,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         13
       </span>
@@ -1862,7 +1862,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         14
       </span>
@@ -1873,7 +1873,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         15
       </span>
@@ -1884,7 +1884,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         16
       </span>
@@ -1895,7 +1895,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         17
       </span>
@@ -1906,7 +1906,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         18
       </span>
@@ -1917,7 +1917,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         19
       </span>
@@ -1928,7 +1928,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         20
       </span>
@@ -1939,7 +1939,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         21
       </span>
@@ -1950,7 +1950,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         22
       </span>
@@ -1961,7 +1961,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         23
       </span>
@@ -1972,7 +1972,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         24
       </span>
@@ -1983,7 +1983,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         25
       </span>
@@ -1994,7 +1994,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         26
       </span>
@@ -2005,7 +2005,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         27
       </span>
@@ -2016,7 +2016,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         28
       </span>
@@ -2027,7 +2027,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -2038,7 +2038,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -2049,7 +2049,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -2060,7 +2060,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -2070,7 +2070,7 @@ exports[`DatePicker component popover placement should render properly with "bot
 `;
 
 exports[`DatePicker component popover placement should render properly with "bottom-start" position 1`] = `
-.c9 {
+.c8 {
   overflow: visible;
   font-size: 2rem;
   -webkit-transition: all 100ms linear;
@@ -2078,14 +2078,14 @@ exports[`DatePicker component popover placement should render properly with "bot
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c11 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -2093,14 +2093,14 @@ exports[`DatePicker component popover placement should render properly with "bot
   cursor: inherit;
 }
 
-.c12 * {
+.c11 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -2113,7 +2113,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   text-align: initial;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -2123,7 +2123,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  text-align: center;
+  text-align: initial;
 }
 
 .c16 {
@@ -2151,7 +2151,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   width: 100%;
 }
 
-.c10 {
+.c9 {
   pointer-events: none;
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -2311,7 +2311,7 @@ exports[`DatePicker component popover placement should render properly with "bot
   height: max-content;
 }
 
-.c11 {
+.c10 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -2335,15 +2335,15 @@ exports[`DatePicker component popover placement should render properly with "bot
   align-items: center;
 }
 
-.c11 svg {
+.c10 svg {
   fill: #435465;
 }
 
-.c11:not(:disabled):hover {
+.c10:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c11:not(:disabled):active {
+.c10:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -2394,20 +2394,10 @@ exports[`DatePicker component popover placement should render properly with "bot
   padding: 0 0 0 1rem;
 }
 
-.c13 {
+.c12 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
-}
-
-.c13 > .c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.8rem;
 }
 
 .c15 {
@@ -2545,6 +2535,16 @@ exports[`DatePicker component popover placement should render properly with "bot
 
 .c18:hover {
   background-color: #eff2f4;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .c19 .c0 {
@@ -2580,12 +2580,12 @@ exports[`DatePicker component popover placement should render properly with "bot
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               Jan
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -2615,12 +2615,12 @@ exports[`DatePicker component popover placement should render properly with "bot
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               2020
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -2637,11 +2637,11 @@ exports[`DatePicker component popover placement should render properly with "bot
       </div>
     </div>
     <button
-      class="c11 calendar-month-navigation-go-back"
+      class="c10 calendar-month-navigation-go-back"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -2656,11 +2656,11 @@ exports[`DatePicker component popover placement should render properly with "bot
       </svg>
     </button>
     <button
-      class="c11 calendar-month-navigation-go-forward"
+      class="c10 calendar-month-navigation-go-forward"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -2676,40 +2676,40 @@ exports[`DatePicker component popover placement should render properly with "bot
     </button>
   </div>
   <div
-    class="c13"
+    class="c12"
   >
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
@@ -2719,7 +2719,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -2730,7 +2730,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -2741,7 +2741,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -2752,7 +2752,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -2763,7 +2763,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         2
       </span>
@@ -2774,7 +2774,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         3
       </span>
@@ -2785,7 +2785,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         4
       </span>
@@ -2796,7 +2796,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         5
       </span>
@@ -2807,7 +2807,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         6
       </span>
@@ -2818,7 +2818,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         7
       </span>
@@ -2829,7 +2829,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         8
       </span>
@@ -2840,7 +2840,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         9
       </span>
@@ -2851,7 +2851,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         10
       </span>
@@ -2862,7 +2862,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         11
       </span>
@@ -2873,7 +2873,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         12
       </span>
@@ -2884,7 +2884,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         13
       </span>
@@ -2895,7 +2895,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         14
       </span>
@@ -2906,7 +2906,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         15
       </span>
@@ -2917,7 +2917,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         16
       </span>
@@ -2928,7 +2928,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         17
       </span>
@@ -2939,7 +2939,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         18
       </span>
@@ -2950,7 +2950,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         19
       </span>
@@ -2961,7 +2961,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         20
       </span>
@@ -2972,7 +2972,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         21
       </span>
@@ -2983,7 +2983,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         22
       </span>
@@ -2994,7 +2994,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         23
       </span>
@@ -3005,7 +3005,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         24
       </span>
@@ -3016,7 +3016,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         25
       </span>
@@ -3027,7 +3027,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         26
       </span>
@@ -3038,7 +3038,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         27
       </span>
@@ -3049,7 +3049,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         28
       </span>
@@ -3060,7 +3060,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -3071,7 +3071,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -3082,7 +3082,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -3093,7 +3093,7 @@ exports[`DatePicker component popover placement should render properly with "bot
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -3103,7 +3103,7 @@ exports[`DatePicker component popover placement should render properly with "bot
 `;
 
 exports[`DatePicker component popover placement should render properly with "left" position 1`] = `
-.c9 {
+.c8 {
   overflow: visible;
   font-size: 2rem;
   -webkit-transition: all 100ms linear;
@@ -3111,14 +3111,14 @@ exports[`DatePicker component popover placement should render properly with "lef
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c11 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -3126,14 +3126,14 @@ exports[`DatePicker component popover placement should render properly with "lef
   cursor: inherit;
 }
 
-.c12 * {
+.c11 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -3146,7 +3146,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   text-align: initial;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -3156,7 +3156,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  text-align: center;
+  text-align: initial;
 }
 
 .c16 {
@@ -3184,7 +3184,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   width: 100%;
 }
 
-.c10 {
+.c9 {
   pointer-events: none;
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -3344,7 +3344,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   height: max-content;
 }
 
-.c11 {
+.c10 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -3368,15 +3368,15 @@ exports[`DatePicker component popover placement should render properly with "lef
   align-items: center;
 }
 
-.c11 svg {
+.c10 svg {
   fill: #435465;
 }
 
-.c11:not(:disabled):hover {
+.c10:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c11:not(:disabled):active {
+.c10:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -3427,20 +3427,10 @@ exports[`DatePicker component popover placement should render properly with "lef
   padding: 0 0 0 1rem;
 }
 
-.c13 {
+.c12 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
-}
-
-.c13 > .c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.8rem;
 }
 
 .c15 {
@@ -3578,6 +3568,16 @@ exports[`DatePicker component popover placement should render properly with "lef
 
 .c18:hover {
   background-color: #eff2f4;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .c19 .c0 {
@@ -3615,12 +3615,12 @@ exports[`DatePicker component popover placement should render properly with "lef
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               Jan
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -3650,12 +3650,12 @@ exports[`DatePicker component popover placement should render properly with "lef
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               2020
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -3672,11 +3672,11 @@ exports[`DatePicker component popover placement should render properly with "lef
       </div>
     </div>
     <button
-      class="c11 calendar-month-navigation-go-back"
+      class="c10 calendar-month-navigation-go-back"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -3691,11 +3691,11 @@ exports[`DatePicker component popover placement should render properly with "lef
       </svg>
     </button>
     <button
-      class="c11 calendar-month-navigation-go-forward"
+      class="c10 calendar-month-navigation-go-forward"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -3711,40 +3711,40 @@ exports[`DatePicker component popover placement should render properly with "lef
     </button>
   </div>
   <div
-    class="c13"
+    class="c12"
   >
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
@@ -3754,7 +3754,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -3765,7 +3765,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -3776,7 +3776,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -3787,7 +3787,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -3798,7 +3798,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         2
       </span>
@@ -3809,7 +3809,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         3
       </span>
@@ -3820,7 +3820,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         4
       </span>
@@ -3831,7 +3831,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         5
       </span>
@@ -3842,7 +3842,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         6
       </span>
@@ -3853,7 +3853,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         7
       </span>
@@ -3864,7 +3864,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         8
       </span>
@@ -3875,7 +3875,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         9
       </span>
@@ -3886,7 +3886,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         10
       </span>
@@ -3897,7 +3897,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         11
       </span>
@@ -3908,7 +3908,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         12
       </span>
@@ -3919,7 +3919,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         13
       </span>
@@ -3930,7 +3930,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         14
       </span>
@@ -3941,7 +3941,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         15
       </span>
@@ -3952,7 +3952,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         16
       </span>
@@ -3963,7 +3963,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         17
       </span>
@@ -3974,7 +3974,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         18
       </span>
@@ -3985,7 +3985,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         19
       </span>
@@ -3996,7 +3996,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         20
       </span>
@@ -4007,7 +4007,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         21
       </span>
@@ -4018,7 +4018,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         22
       </span>
@@ -4029,7 +4029,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         23
       </span>
@@ -4040,7 +4040,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         24
       </span>
@@ -4051,7 +4051,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         25
       </span>
@@ -4062,7 +4062,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         26
       </span>
@@ -4073,7 +4073,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         27
       </span>
@@ -4084,7 +4084,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         28
       </span>
@@ -4095,7 +4095,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -4106,7 +4106,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -4117,7 +4117,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -4128,7 +4128,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -4138,7 +4138,7 @@ exports[`DatePicker component popover placement should render properly with "lef
 `;
 
 exports[`DatePicker component popover placement should render properly with "left-end" position 1`] = `
-.c9 {
+.c8 {
   overflow: visible;
   font-size: 2rem;
   -webkit-transition: all 100ms linear;
@@ -4146,14 +4146,14 @@ exports[`DatePicker component popover placement should render properly with "lef
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c11 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -4161,14 +4161,14 @@ exports[`DatePicker component popover placement should render properly with "lef
   cursor: inherit;
 }
 
-.c12 * {
+.c11 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -4181,7 +4181,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   text-align: initial;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -4191,7 +4191,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  text-align: center;
+  text-align: initial;
 }
 
 .c16 {
@@ -4219,7 +4219,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   width: 100%;
 }
 
-.c10 {
+.c9 {
   pointer-events: none;
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -4379,7 +4379,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   height: max-content;
 }
 
-.c11 {
+.c10 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -4403,15 +4403,15 @@ exports[`DatePicker component popover placement should render properly with "lef
   align-items: center;
 }
 
-.c11 svg {
+.c10 svg {
   fill: #435465;
 }
 
-.c11:not(:disabled):hover {
+.c10:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c11:not(:disabled):active {
+.c10:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -4462,20 +4462,10 @@ exports[`DatePicker component popover placement should render properly with "lef
   padding: 0 0 0 1rem;
 }
 
-.c13 {
+.c12 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
-}
-
-.c13 > .c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.8rem;
 }
 
 .c15 {
@@ -4613,6 +4603,16 @@ exports[`DatePicker component popover placement should render properly with "lef
 
 .c18:hover {
   background-color: #eff2f4;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .c19 .c0 {
@@ -4647,12 +4647,12 @@ exports[`DatePicker component popover placement should render properly with "lef
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               Jan
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -4682,12 +4682,12 @@ exports[`DatePicker component popover placement should render properly with "lef
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               2020
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -4704,11 +4704,11 @@ exports[`DatePicker component popover placement should render properly with "lef
       </div>
     </div>
     <button
-      class="c11 calendar-month-navigation-go-back"
+      class="c10 calendar-month-navigation-go-back"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -4723,11 +4723,11 @@ exports[`DatePicker component popover placement should render properly with "lef
       </svg>
     </button>
     <button
-      class="c11 calendar-month-navigation-go-forward"
+      class="c10 calendar-month-navigation-go-forward"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -4743,40 +4743,40 @@ exports[`DatePicker component popover placement should render properly with "lef
     </button>
   </div>
   <div
-    class="c13"
+    class="c12"
   >
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
@@ -4786,7 +4786,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -4797,7 +4797,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -4808,7 +4808,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -4819,7 +4819,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -4830,7 +4830,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         2
       </span>
@@ -4841,7 +4841,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         3
       </span>
@@ -4852,7 +4852,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         4
       </span>
@@ -4863,7 +4863,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         5
       </span>
@@ -4874,7 +4874,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         6
       </span>
@@ -4885,7 +4885,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         7
       </span>
@@ -4896,7 +4896,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         8
       </span>
@@ -4907,7 +4907,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         9
       </span>
@@ -4918,7 +4918,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         10
       </span>
@@ -4929,7 +4929,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         11
       </span>
@@ -4940,7 +4940,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         12
       </span>
@@ -4951,7 +4951,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         13
       </span>
@@ -4962,7 +4962,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         14
       </span>
@@ -4973,7 +4973,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         15
       </span>
@@ -4984,7 +4984,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         16
       </span>
@@ -4995,7 +4995,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         17
       </span>
@@ -5006,7 +5006,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         18
       </span>
@@ -5017,7 +5017,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         19
       </span>
@@ -5028,7 +5028,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         20
       </span>
@@ -5039,7 +5039,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         21
       </span>
@@ -5050,7 +5050,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         22
       </span>
@@ -5061,7 +5061,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         23
       </span>
@@ -5072,7 +5072,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         24
       </span>
@@ -5083,7 +5083,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         25
       </span>
@@ -5094,7 +5094,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         26
       </span>
@@ -5105,7 +5105,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         27
       </span>
@@ -5116,7 +5116,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         28
       </span>
@@ -5127,7 +5127,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -5138,7 +5138,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -5149,7 +5149,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -5160,7 +5160,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -5170,7 +5170,7 @@ exports[`DatePicker component popover placement should render properly with "lef
 `;
 
 exports[`DatePicker component popover placement should render properly with "left-start" position 1`] = `
-.c9 {
+.c8 {
   overflow: visible;
   font-size: 2rem;
   -webkit-transition: all 100ms linear;
@@ -5178,14 +5178,14 @@ exports[`DatePicker component popover placement should render properly with "lef
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c11 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -5193,14 +5193,14 @@ exports[`DatePicker component popover placement should render properly with "lef
   cursor: inherit;
 }
 
-.c12 * {
+.c11 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -5213,7 +5213,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   text-align: initial;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -5223,7 +5223,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  text-align: center;
+  text-align: initial;
 }
 
 .c16 {
@@ -5251,7 +5251,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   width: 100%;
 }
 
-.c10 {
+.c9 {
   pointer-events: none;
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -5411,7 +5411,7 @@ exports[`DatePicker component popover placement should render properly with "lef
   height: max-content;
 }
 
-.c11 {
+.c10 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -5435,15 +5435,15 @@ exports[`DatePicker component popover placement should render properly with "lef
   align-items: center;
 }
 
-.c11 svg {
+.c10 svg {
   fill: #435465;
 }
 
-.c11:not(:disabled):hover {
+.c10:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c11:not(:disabled):active {
+.c10:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -5494,20 +5494,10 @@ exports[`DatePicker component popover placement should render properly with "lef
   padding: 0 0 0 1rem;
 }
 
-.c13 {
+.c12 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
-}
-
-.c13 > .c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.8rem;
 }
 
 .c15 {
@@ -5645,6 +5635,16 @@ exports[`DatePicker component popover placement should render properly with "lef
 
 .c18:hover {
   background-color: #eff2f4;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .c19 .c0 {
@@ -5679,12 +5679,12 @@ exports[`DatePicker component popover placement should render properly with "lef
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               Jan
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -5714,12 +5714,12 @@ exports[`DatePicker component popover placement should render properly with "lef
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               2020
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -5736,11 +5736,11 @@ exports[`DatePicker component popover placement should render properly with "lef
       </div>
     </div>
     <button
-      class="c11 calendar-month-navigation-go-back"
+      class="c10 calendar-month-navigation-go-back"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -5755,11 +5755,11 @@ exports[`DatePicker component popover placement should render properly with "lef
       </svg>
     </button>
     <button
-      class="c11 calendar-month-navigation-go-forward"
+      class="c10 calendar-month-navigation-go-forward"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -5775,40 +5775,40 @@ exports[`DatePicker component popover placement should render properly with "lef
     </button>
   </div>
   <div
-    class="c13"
+    class="c12"
   >
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
@@ -5818,7 +5818,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -5829,7 +5829,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -5840,7 +5840,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -5851,7 +5851,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -5862,7 +5862,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         2
       </span>
@@ -5873,7 +5873,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         3
       </span>
@@ -5884,7 +5884,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         4
       </span>
@@ -5895,7 +5895,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         5
       </span>
@@ -5906,7 +5906,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         6
       </span>
@@ -5917,7 +5917,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         7
       </span>
@@ -5928,7 +5928,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         8
       </span>
@@ -5939,7 +5939,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         9
       </span>
@@ -5950,7 +5950,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         10
       </span>
@@ -5961,7 +5961,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         11
       </span>
@@ -5972,7 +5972,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         12
       </span>
@@ -5983,7 +5983,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         13
       </span>
@@ -5994,7 +5994,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         14
       </span>
@@ -6005,7 +6005,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         15
       </span>
@@ -6016,7 +6016,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         16
       </span>
@@ -6027,7 +6027,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         17
       </span>
@@ -6038,7 +6038,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         18
       </span>
@@ -6049,7 +6049,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         19
       </span>
@@ -6060,7 +6060,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         20
       </span>
@@ -6071,7 +6071,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         21
       </span>
@@ -6082,7 +6082,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         22
       </span>
@@ -6093,7 +6093,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         23
       </span>
@@ -6104,7 +6104,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         24
       </span>
@@ -6115,7 +6115,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         25
       </span>
@@ -6126,7 +6126,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         26
       </span>
@@ -6137,7 +6137,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         27
       </span>
@@ -6148,7 +6148,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         28
       </span>
@@ -6159,7 +6159,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -6170,7 +6170,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -6181,7 +6181,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -6192,7 +6192,7 @@ exports[`DatePicker component popover placement should render properly with "lef
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -6202,7 +6202,7 @@ exports[`DatePicker component popover placement should render properly with "lef
 `;
 
 exports[`DatePicker component popover placement should render properly with "right" position 1`] = `
-.c9 {
+.c8 {
   overflow: visible;
   font-size: 2rem;
   -webkit-transition: all 100ms linear;
@@ -6210,14 +6210,14 @@ exports[`DatePicker component popover placement should render properly with "rig
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c11 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -6225,14 +6225,14 @@ exports[`DatePicker component popover placement should render properly with "rig
   cursor: inherit;
 }
 
-.c12 * {
+.c11 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -6245,7 +6245,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   text-align: initial;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -6255,7 +6255,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  text-align: center;
+  text-align: initial;
 }
 
 .c16 {
@@ -6283,7 +6283,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   width: 100%;
 }
 
-.c10 {
+.c9 {
   pointer-events: none;
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -6443,7 +6443,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   height: max-content;
 }
 
-.c11 {
+.c10 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -6467,15 +6467,15 @@ exports[`DatePicker component popover placement should render properly with "rig
   align-items: center;
 }
 
-.c11 svg {
+.c10 svg {
   fill: #435465;
 }
 
-.c11:not(:disabled):hover {
+.c10:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c11:not(:disabled):active {
+.c10:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -6526,20 +6526,10 @@ exports[`DatePicker component popover placement should render properly with "rig
   padding: 0 0 0 1rem;
 }
 
-.c13 {
+.c12 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
-}
-
-.c13 > .c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.8rem;
 }
 
 .c15 {
@@ -6677,6 +6667,16 @@ exports[`DatePicker component popover placement should render properly with "rig
 
 .c18:hover {
   background-color: #eff2f4;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .c19 .c0 {
@@ -6714,12 +6714,12 @@ exports[`DatePicker component popover placement should render properly with "rig
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               Jan
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -6749,12 +6749,12 @@ exports[`DatePicker component popover placement should render properly with "rig
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               2020
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -6771,11 +6771,11 @@ exports[`DatePicker component popover placement should render properly with "rig
       </div>
     </div>
     <button
-      class="c11 calendar-month-navigation-go-back"
+      class="c10 calendar-month-navigation-go-back"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -6790,11 +6790,11 @@ exports[`DatePicker component popover placement should render properly with "rig
       </svg>
     </button>
     <button
-      class="c11 calendar-month-navigation-go-forward"
+      class="c10 calendar-month-navigation-go-forward"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -6810,40 +6810,40 @@ exports[`DatePicker component popover placement should render properly with "rig
     </button>
   </div>
   <div
-    class="c13"
+    class="c12"
   >
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
@@ -6853,7 +6853,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -6864,7 +6864,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -6875,7 +6875,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -6886,7 +6886,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -6897,7 +6897,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         2
       </span>
@@ -6908,7 +6908,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         3
       </span>
@@ -6919,7 +6919,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         4
       </span>
@@ -6930,7 +6930,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         5
       </span>
@@ -6941,7 +6941,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         6
       </span>
@@ -6952,7 +6952,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         7
       </span>
@@ -6963,7 +6963,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         8
       </span>
@@ -6974,7 +6974,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         9
       </span>
@@ -6985,7 +6985,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         10
       </span>
@@ -6996,7 +6996,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         11
       </span>
@@ -7007,7 +7007,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         12
       </span>
@@ -7018,7 +7018,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         13
       </span>
@@ -7029,7 +7029,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         14
       </span>
@@ -7040,7 +7040,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         15
       </span>
@@ -7051,7 +7051,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         16
       </span>
@@ -7062,7 +7062,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         17
       </span>
@@ -7073,7 +7073,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         18
       </span>
@@ -7084,7 +7084,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         19
       </span>
@@ -7095,7 +7095,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         20
       </span>
@@ -7106,7 +7106,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         21
       </span>
@@ -7117,7 +7117,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         22
       </span>
@@ -7128,7 +7128,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         23
       </span>
@@ -7139,7 +7139,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         24
       </span>
@@ -7150,7 +7150,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         25
       </span>
@@ -7161,7 +7161,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         26
       </span>
@@ -7172,7 +7172,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         27
       </span>
@@ -7183,7 +7183,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         28
       </span>
@@ -7194,7 +7194,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -7205,7 +7205,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -7216,7 +7216,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -7227,7 +7227,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -7237,7 +7237,7 @@ exports[`DatePicker component popover placement should render properly with "rig
 `;
 
 exports[`DatePicker component popover placement should render properly with "right-end" position 1`] = `
-.c9 {
+.c8 {
   overflow: visible;
   font-size: 2rem;
   -webkit-transition: all 100ms linear;
@@ -7245,14 +7245,14 @@ exports[`DatePicker component popover placement should render properly with "rig
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c11 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -7260,14 +7260,14 @@ exports[`DatePicker component popover placement should render properly with "rig
   cursor: inherit;
 }
 
-.c12 * {
+.c11 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -7280,7 +7280,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   text-align: initial;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -7290,7 +7290,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  text-align: center;
+  text-align: initial;
 }
 
 .c16 {
@@ -7318,7 +7318,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   width: 100%;
 }
 
-.c10 {
+.c9 {
   pointer-events: none;
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -7478,7 +7478,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   height: max-content;
 }
 
-.c11 {
+.c10 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -7502,15 +7502,15 @@ exports[`DatePicker component popover placement should render properly with "rig
   align-items: center;
 }
 
-.c11 svg {
+.c10 svg {
   fill: #435465;
 }
 
-.c11:not(:disabled):hover {
+.c10:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c11:not(:disabled):active {
+.c10:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -7561,20 +7561,10 @@ exports[`DatePicker component popover placement should render properly with "rig
   padding: 0 0 0 1rem;
 }
 
-.c13 {
+.c12 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
-}
-
-.c13 > .c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.8rem;
 }
 
 .c15 {
@@ -7712,6 +7702,16 @@ exports[`DatePicker component popover placement should render properly with "rig
 
 .c18:hover {
   background-color: #eff2f4;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .c19 .c0 {
@@ -7746,12 +7746,12 @@ exports[`DatePicker component popover placement should render properly with "rig
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               Jan
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -7781,12 +7781,12 @@ exports[`DatePicker component popover placement should render properly with "rig
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               2020
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -7803,11 +7803,11 @@ exports[`DatePicker component popover placement should render properly with "rig
       </div>
     </div>
     <button
-      class="c11 calendar-month-navigation-go-back"
+      class="c10 calendar-month-navigation-go-back"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -7822,11 +7822,11 @@ exports[`DatePicker component popover placement should render properly with "rig
       </svg>
     </button>
     <button
-      class="c11 calendar-month-navigation-go-forward"
+      class="c10 calendar-month-navigation-go-forward"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -7842,40 +7842,40 @@ exports[`DatePicker component popover placement should render properly with "rig
     </button>
   </div>
   <div
-    class="c13"
+    class="c12"
   >
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
@@ -7885,7 +7885,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -7896,7 +7896,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -7907,7 +7907,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -7918,7 +7918,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -7929,7 +7929,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         2
       </span>
@@ -7940,7 +7940,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         3
       </span>
@@ -7951,7 +7951,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         4
       </span>
@@ -7962,7 +7962,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         5
       </span>
@@ -7973,7 +7973,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         6
       </span>
@@ -7984,7 +7984,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         7
       </span>
@@ -7995,7 +7995,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         8
       </span>
@@ -8006,7 +8006,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         9
       </span>
@@ -8017,7 +8017,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         10
       </span>
@@ -8028,7 +8028,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         11
       </span>
@@ -8039,7 +8039,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         12
       </span>
@@ -8050,7 +8050,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         13
       </span>
@@ -8061,7 +8061,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         14
       </span>
@@ -8072,7 +8072,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         15
       </span>
@@ -8083,7 +8083,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         16
       </span>
@@ -8094,7 +8094,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         17
       </span>
@@ -8105,7 +8105,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         18
       </span>
@@ -8116,7 +8116,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         19
       </span>
@@ -8127,7 +8127,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         20
       </span>
@@ -8138,7 +8138,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         21
       </span>
@@ -8149,7 +8149,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         22
       </span>
@@ -8160,7 +8160,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         23
       </span>
@@ -8171,7 +8171,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         24
       </span>
@@ -8182,7 +8182,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         25
       </span>
@@ -8193,7 +8193,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         26
       </span>
@@ -8204,7 +8204,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         27
       </span>
@@ -8215,7 +8215,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         28
       </span>
@@ -8226,7 +8226,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -8237,7 +8237,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -8248,7 +8248,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -8259,7 +8259,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -8269,7 +8269,7 @@ exports[`DatePicker component popover placement should render properly with "rig
 `;
 
 exports[`DatePicker component popover placement should render properly with "right-start" position 1`] = `
-.c9 {
+.c8 {
   overflow: visible;
   font-size: 2rem;
   -webkit-transition: all 100ms linear;
@@ -8277,14 +8277,14 @@ exports[`DatePicker component popover placement should render properly with "rig
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c11 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -8292,14 +8292,14 @@ exports[`DatePicker component popover placement should render properly with "rig
   cursor: inherit;
 }
 
-.c12 * {
+.c11 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -8312,7 +8312,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   text-align: initial;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -8322,7 +8322,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  text-align: center;
+  text-align: initial;
 }
 
 .c16 {
@@ -8350,7 +8350,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   width: 100%;
 }
 
-.c10 {
+.c9 {
   pointer-events: none;
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -8510,7 +8510,7 @@ exports[`DatePicker component popover placement should render properly with "rig
   height: max-content;
 }
 
-.c11 {
+.c10 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -8534,15 +8534,15 @@ exports[`DatePicker component popover placement should render properly with "rig
   align-items: center;
 }
 
-.c11 svg {
+.c10 svg {
   fill: #435465;
 }
 
-.c11:not(:disabled):hover {
+.c10:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c11:not(:disabled):active {
+.c10:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -8593,20 +8593,10 @@ exports[`DatePicker component popover placement should render properly with "rig
   padding: 0 0 0 1rem;
 }
 
-.c13 {
+.c12 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
-}
-
-.c13 > .c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.8rem;
 }
 
 .c15 {
@@ -8744,6 +8734,16 @@ exports[`DatePicker component popover placement should render properly with "rig
 
 .c18:hover {
   background-color: #eff2f4;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .c19 .c0 {
@@ -8778,12 +8778,12 @@ exports[`DatePicker component popover placement should render properly with "rig
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               Jan
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -8813,12 +8813,12 @@ exports[`DatePicker component popover placement should render properly with "rig
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               2020
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -8835,11 +8835,11 @@ exports[`DatePicker component popover placement should render properly with "rig
       </div>
     </div>
     <button
-      class="c11 calendar-month-navigation-go-back"
+      class="c10 calendar-month-navigation-go-back"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -8854,11 +8854,11 @@ exports[`DatePicker component popover placement should render properly with "rig
       </svg>
     </button>
     <button
-      class="c11 calendar-month-navigation-go-forward"
+      class="c10 calendar-month-navigation-go-forward"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -8874,40 +8874,40 @@ exports[`DatePicker component popover placement should render properly with "rig
     </button>
   </div>
   <div
-    class="c13"
+    class="c12"
   >
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
@@ -8917,7 +8917,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -8928,7 +8928,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -8939,7 +8939,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -8950,7 +8950,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -8961,7 +8961,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         2
       </span>
@@ -8972,7 +8972,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         3
       </span>
@@ -8983,7 +8983,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         4
       </span>
@@ -8994,7 +8994,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         5
       </span>
@@ -9005,7 +9005,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         6
       </span>
@@ -9016,7 +9016,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         7
       </span>
@@ -9027,7 +9027,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         8
       </span>
@@ -9038,7 +9038,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         9
       </span>
@@ -9049,7 +9049,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         10
       </span>
@@ -9060,7 +9060,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         11
       </span>
@@ -9071,7 +9071,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         12
       </span>
@@ -9082,7 +9082,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         13
       </span>
@@ -9093,7 +9093,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         14
       </span>
@@ -9104,7 +9104,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         15
       </span>
@@ -9115,7 +9115,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         16
       </span>
@@ -9126,7 +9126,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         17
       </span>
@@ -9137,7 +9137,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         18
       </span>
@@ -9148,7 +9148,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         19
       </span>
@@ -9159,7 +9159,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         20
       </span>
@@ -9170,7 +9170,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         21
       </span>
@@ -9181,7 +9181,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         22
       </span>
@@ -9192,7 +9192,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         23
       </span>
@@ -9203,7 +9203,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         24
       </span>
@@ -9214,7 +9214,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         25
       </span>
@@ -9225,7 +9225,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         26
       </span>
@@ -9236,7 +9236,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         27
       </span>
@@ -9247,7 +9247,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         28
       </span>
@@ -9258,7 +9258,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -9269,7 +9269,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -9280,7 +9280,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -9291,7 +9291,7 @@ exports[`DatePicker component popover placement should render properly with "rig
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -9301,7 +9301,7 @@ exports[`DatePicker component popover placement should render properly with "rig
 `;
 
 exports[`DatePicker component popover placement should render properly with "top" position 1`] = `
-.c9 {
+.c8 {
   overflow: visible;
   font-size: 2rem;
   -webkit-transition: all 100ms linear;
@@ -9309,14 +9309,14 @@ exports[`DatePicker component popover placement should render properly with "top
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c11 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -9324,14 +9324,14 @@ exports[`DatePicker component popover placement should render properly with "top
   cursor: inherit;
 }
 
-.c12 * {
+.c11 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -9344,7 +9344,7 @@ exports[`DatePicker component popover placement should render properly with "top
   text-align: initial;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -9354,7 +9354,7 @@ exports[`DatePicker component popover placement should render properly with "top
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  text-align: center;
+  text-align: initial;
 }
 
 .c16 {
@@ -9382,7 +9382,7 @@ exports[`DatePicker component popover placement should render properly with "top
   width: 100%;
 }
 
-.c10 {
+.c9 {
   pointer-events: none;
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -9542,7 +9542,7 @@ exports[`DatePicker component popover placement should render properly with "top
   height: max-content;
 }
 
-.c11 {
+.c10 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -9566,15 +9566,15 @@ exports[`DatePicker component popover placement should render properly with "top
   align-items: center;
 }
 
-.c11 svg {
+.c10 svg {
   fill: #435465;
 }
 
-.c11:not(:disabled):hover {
+.c10:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c11:not(:disabled):active {
+.c10:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -9625,20 +9625,10 @@ exports[`DatePicker component popover placement should render properly with "top
   padding: 0 0 0 1rem;
 }
 
-.c13 {
+.c12 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
-}
-
-.c13 > .c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.8rem;
 }
 
 .c15 {
@@ -9776,6 +9766,16 @@ exports[`DatePicker component popover placement should render properly with "top
 
 .c18:hover {
   background-color: #eff2f4;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .c19 .c0 {
@@ -9813,12 +9813,12 @@ exports[`DatePicker component popover placement should render properly with "top
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               Jan
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -9848,12 +9848,12 @@ exports[`DatePicker component popover placement should render properly with "top
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               2020
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -9870,11 +9870,11 @@ exports[`DatePicker component popover placement should render properly with "top
       </div>
     </div>
     <button
-      class="c11 calendar-month-navigation-go-back"
+      class="c10 calendar-month-navigation-go-back"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -9889,11 +9889,11 @@ exports[`DatePicker component popover placement should render properly with "top
       </svg>
     </button>
     <button
-      class="c11 calendar-month-navigation-go-forward"
+      class="c10 calendar-month-navigation-go-forward"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -9909,40 +9909,40 @@ exports[`DatePicker component popover placement should render properly with "top
     </button>
   </div>
   <div
-    class="c13"
+    class="c12"
   >
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
@@ -9952,7 +9952,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -9963,7 +9963,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -9974,7 +9974,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -9985,7 +9985,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -9996,7 +9996,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         2
       </span>
@@ -10007,7 +10007,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         3
       </span>
@@ -10018,7 +10018,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         4
       </span>
@@ -10029,7 +10029,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         5
       </span>
@@ -10040,7 +10040,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         6
       </span>
@@ -10051,7 +10051,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         7
       </span>
@@ -10062,7 +10062,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         8
       </span>
@@ -10073,7 +10073,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         9
       </span>
@@ -10084,7 +10084,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         10
       </span>
@@ -10095,7 +10095,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         11
       </span>
@@ -10106,7 +10106,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         12
       </span>
@@ -10117,7 +10117,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         13
       </span>
@@ -10128,7 +10128,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         14
       </span>
@@ -10139,7 +10139,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         15
       </span>
@@ -10150,7 +10150,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         16
       </span>
@@ -10161,7 +10161,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         17
       </span>
@@ -10172,7 +10172,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         18
       </span>
@@ -10183,7 +10183,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         19
       </span>
@@ -10194,7 +10194,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         20
       </span>
@@ -10205,7 +10205,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         21
       </span>
@@ -10216,7 +10216,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         22
       </span>
@@ -10227,7 +10227,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         23
       </span>
@@ -10238,7 +10238,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         24
       </span>
@@ -10249,7 +10249,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         25
       </span>
@@ -10260,7 +10260,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         26
       </span>
@@ -10271,7 +10271,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         27
       </span>
@@ -10282,7 +10282,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         28
       </span>
@@ -10293,7 +10293,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -10304,7 +10304,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -10315,7 +10315,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -10326,7 +10326,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -10336,7 +10336,7 @@ exports[`DatePicker component popover placement should render properly with "top
 `;
 
 exports[`DatePicker component popover placement should render properly with "top-end" position 1`] = `
-.c9 {
+.c8 {
   overflow: visible;
   font-size: 2rem;
   -webkit-transition: all 100ms linear;
@@ -10344,14 +10344,14 @@ exports[`DatePicker component popover placement should render properly with "top
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c11 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -10359,14 +10359,14 @@ exports[`DatePicker component popover placement should render properly with "top
   cursor: inherit;
 }
 
-.c12 * {
+.c11 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -10379,7 +10379,7 @@ exports[`DatePicker component popover placement should render properly with "top
   text-align: initial;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -10389,7 +10389,7 @@ exports[`DatePicker component popover placement should render properly with "top
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  text-align: center;
+  text-align: initial;
 }
 
 .c16 {
@@ -10417,7 +10417,7 @@ exports[`DatePicker component popover placement should render properly with "top
   width: 100%;
 }
 
-.c10 {
+.c9 {
   pointer-events: none;
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -10577,7 +10577,7 @@ exports[`DatePicker component popover placement should render properly with "top
   height: max-content;
 }
 
-.c11 {
+.c10 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -10601,15 +10601,15 @@ exports[`DatePicker component popover placement should render properly with "top
   align-items: center;
 }
 
-.c11 svg {
+.c10 svg {
   fill: #435465;
 }
 
-.c11:not(:disabled):hover {
+.c10:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c11:not(:disabled):active {
+.c10:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -10660,20 +10660,10 @@ exports[`DatePicker component popover placement should render properly with "top
   padding: 0 0 0 1rem;
 }
 
-.c13 {
+.c12 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
-}
-
-.c13 > .c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.8rem;
 }
 
 .c15 {
@@ -10811,6 +10801,16 @@ exports[`DatePicker component popover placement should render properly with "top
 
 .c18:hover {
   background-color: #eff2f4;
+}
+
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .c19 .c0 {
@@ -10845,12 +10845,12 @@ exports[`DatePicker component popover placement should render properly with "top
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               Jan
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -10880,12 +10880,12 @@ exports[`DatePicker component popover placement should render properly with "top
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               2020
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -10902,11 +10902,11 @@ exports[`DatePicker component popover placement should render properly with "top
       </div>
     </div>
     <button
-      class="c11 calendar-month-navigation-go-back"
+      class="c10 calendar-month-navigation-go-back"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -10921,11 +10921,11 @@ exports[`DatePicker component popover placement should render properly with "top
       </svg>
     </button>
     <button
-      class="c11 calendar-month-navigation-go-forward"
+      class="c10 calendar-month-navigation-go-forward"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -10941,40 +10941,40 @@ exports[`DatePicker component popover placement should render properly with "top
     </button>
   </div>
   <div
-    class="c13"
+    class="c12"
   >
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
@@ -10984,7 +10984,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -10995,7 +10995,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -11006,7 +11006,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -11017,7 +11017,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -11028,7 +11028,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         2
       </span>
@@ -11039,7 +11039,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         3
       </span>
@@ -11050,7 +11050,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         4
       </span>
@@ -11061,7 +11061,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         5
       </span>
@@ -11072,7 +11072,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         6
       </span>
@@ -11083,7 +11083,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         7
       </span>
@@ -11094,7 +11094,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         8
       </span>
@@ -11105,7 +11105,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         9
       </span>
@@ -11116,7 +11116,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         10
       </span>
@@ -11127,7 +11127,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         11
       </span>
@@ -11138,7 +11138,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         12
       </span>
@@ -11149,7 +11149,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         13
       </span>
@@ -11160,7 +11160,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         14
       </span>
@@ -11171,7 +11171,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         15
       </span>
@@ -11182,7 +11182,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         16
       </span>
@@ -11193,7 +11193,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         17
       </span>
@@ -11204,7 +11204,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         18
       </span>
@@ -11215,7 +11215,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         19
       </span>
@@ -11226,7 +11226,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         20
       </span>
@@ -11237,7 +11237,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         21
       </span>
@@ -11248,7 +11248,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         22
       </span>
@@ -11259,7 +11259,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         23
       </span>
@@ -11270,7 +11270,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         24
       </span>
@@ -11281,7 +11281,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         25
       </span>
@@ -11292,7 +11292,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         26
       </span>
@@ -11303,7 +11303,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         27
       </span>
@@ -11314,7 +11314,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         28
       </span>
@@ -11325,7 +11325,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -11336,7 +11336,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -11347,7 +11347,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -11358,7 +11358,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -11368,7 +11368,7 @@ exports[`DatePicker component popover placement should render properly with "top
 `;
 
 exports[`DatePicker component popover placement should render properly with "top-start" position 1`] = `
-.c9 {
+.c8 {
   overflow: visible;
   font-size: 2rem;
   -webkit-transition: all 100ms linear;
@@ -11376,14 +11376,14 @@ exports[`DatePicker component popover placement should render properly with "top
   cursor: inherit;
 }
 
-.c9 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c12 {
+.c11 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -11391,14 +11391,14 @@ exports[`DatePicker component popover placement should render properly with "top
   cursor: inherit;
 }
 
-.c12 * {
+.c11 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -11411,7 +11411,7 @@ exports[`DatePicker component popover placement should render properly with "top
   text-align: initial;
 }
 
-.c14 {
+.c13 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -11421,7 +11421,7 @@ exports[`DatePicker component popover placement should render properly with "top
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
   line-height: 2.2rem;
-  text-align: center;
+  text-align: initial;
 }
 
 .c16 {
@@ -11449,7 +11449,7 @@ exports[`DatePicker component popover placement should render properly with "top
   width: 100%;
 }
 
-.c10 {
+.c9 {
   pointer-events: none;
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
@@ -11609,7 +11609,7 @@ exports[`DatePicker component popover placement should render properly with "top
   height: max-content;
 }
 
-.c11 {
+.c10 {
   border: none;
   background-color: transparent;
   border-radius: 50%;
@@ -11633,15 +11633,15 @@ exports[`DatePicker component popover placement should render properly with "top
   align-items: center;
 }
 
-.c11 svg {
+.c10 svg {
   fill: #435465;
 }
 
-.c11:not(:disabled):hover {
+.c10:not(:disabled):hover {
   background-color: #F7F8F9;
 }
 
-.c11:not(:disabled):active {
+.c10:not(:disabled):active {
   background-color: #eff2f4;
 }
 
@@ -11692,20 +11692,10 @@ exports[`DatePicker component popover placement should render properly with "top
   padding: 0 0 0 1rem;
 }
 
-.c13 {
+.c12 {
   display: grid;
   grid-template-columns: repeat(7,4rem);
   grid-auto-rows: auto;
-}
-
-.c13 > .c7 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.8rem;
 }
 
 .c15 {
@@ -11845,6 +11835,16 @@ exports[`DatePicker component popover placement should render properly with "top
   background-color: #eff2f4;
 }
 
+.c14 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.8rem;
+}
+
 .c19 .c0 {
   z-index: 1000;
   position: absolute;
@@ -11877,12 +11877,12 @@ exports[`DatePicker component popover placement should render properly with "top
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               Jan
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -11912,12 +11912,12 @@ exports[`DatePicker component popover placement should render properly with "top
           >
             
             <span
-              class="c7 c8"
+              class="c7"
             >
               2020
             </span>
             <svg
-              class="c9 c10"
+              class="c8 c9"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -11934,11 +11934,11 @@ exports[`DatePicker component popover placement should render properly with "top
       </div>
     </div>
     <button
-      class="c11 calendar-month-navigation-go-back"
+      class="c10 calendar-month-navigation-go-back"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -11953,11 +11953,11 @@ exports[`DatePicker component popover placement should render properly with "top
       </svg>
     </button>
     <button
-      class="c11 calendar-month-navigation-go-forward"
+      class="c10 calendar-month-navigation-go-forward"
       type="button"
     >
       <svg
-        class="c12"
+        class="c11"
         fill="none"
         height="1em"
         viewBox="0 0 24 24"
@@ -11973,40 +11973,40 @@ exports[`DatePicker component popover placement should render properly with "top
     </button>
   </div>
   <div
-    class="c13"
+    class="c12"
   >
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       M
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       W
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       T
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       F
     </strong>
     <strong
-      class="c7 c14"
+      class="c13 c14"
     >
       S
     </strong>
@@ -12016,7 +12016,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -12027,7 +12027,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -12038,7 +12038,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -12049,7 +12049,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -12060,7 +12060,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         2
       </span>
@@ -12071,7 +12071,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         3
       </span>
@@ -12082,7 +12082,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         4
       </span>
@@ -12093,7 +12093,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         5
       </span>
@@ -12104,7 +12104,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         6
       </span>
@@ -12115,7 +12115,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         7
       </span>
@@ -12126,7 +12126,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         8
       </span>
@@ -12137,7 +12137,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         9
       </span>
@@ -12148,7 +12148,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         10
       </span>
@@ -12159,7 +12159,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         11
       </span>
@@ -12170,7 +12170,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         12
       </span>
@@ -12181,7 +12181,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         13
       </span>
@@ -12192,7 +12192,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         14
       </span>
@@ -12203,7 +12203,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         15
       </span>
@@ -12214,7 +12214,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         16
       </span>
@@ -12225,7 +12225,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         17
       </span>
@@ -12236,7 +12236,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         18
       </span>
@@ -12247,7 +12247,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         19
       </span>
@@ -12258,7 +12258,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         20
       </span>
@@ -12269,7 +12269,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         21
       </span>
@@ -12280,7 +12280,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         22
       </span>
@@ -12291,7 +12291,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         23
       </span>
@@ -12302,7 +12302,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         24
       </span>
@@ -12313,7 +12313,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         25
       </span>
@@ -12324,7 +12324,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         26
       </span>
@@ -12335,7 +12335,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         27
       </span>
@@ -12346,7 +12346,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         28
       </span>
@@ -12357,7 +12357,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         29
       </span>
@@ -12368,7 +12368,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         30
       </span>
@@ -12379,7 +12379,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         31
       </span>
@@ -12390,7 +12390,7 @@ exports[`DatePicker component popover placement should render properly with "top
       type="button"
     >
       <span
-        class="c7 c16"
+        class="c16"
       >
         1
       </span>
@@ -12571,6 +12571,7 @@ exports[`DatePicker component should render properly when value is of date type 
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  pointer-events: none;
   color: rgba(0,90,238,.2);
   bottom: 0.7rem;
 }
@@ -12959,6 +12960,7 @@ exports[`DatePicker component should render properly when value is of string typ
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  pointer-events: none;
   color: rgba(0,90,238,.2);
   top: 50%;
   -webkit-transform: translateY(-50%);
