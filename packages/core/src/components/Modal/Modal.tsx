@@ -26,31 +26,26 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
             handleScroll = useScrollState({ ref: innerContainerRef, scrollState, dispatch });
 
         const handleBackgroundClick = useCallback(() => {
-            shouldCloseOnOutsideClick && onCloseModal();
-        }, [shouldCloseOnOutsideClick, onCloseModal]);
+                shouldCloseOnOutsideClick && onCloseModal();
+            }, [shouldCloseOnOutsideClick, onCloseModal]),
+            handleAnimationEnd = useCallback(() => !open && setShouldRender(false), [open]);
 
         useEffect(() => {
-            if (open) setShouldRender(true);
-            if (!isSmallScreen && !open) setShouldRender(false);
-        }, [open]);
-
-        const handleAnimationEnd = useCallback(() => {
-            if (!open) setShouldRender(false);
+            open ? setShouldRender(true) : !isSmallScreen && setShouldRender(false);
         }, [open]);
 
         useEffect(() => {
             open && isEscPressed && onCloseModal();
         }, [open, isEscPressed]);
 
+        useEffect(() => {
+            document.body.style.overflow = shouldRender ? 'hidden' : 'unset';
+        }, [shouldRender]);
+
         return (
             shouldRender && (
                 <ModalBackgroundStyled {...{ ...restProps, id, open, isSmallScreen }} onClick={handleBackgroundClick}>
-                    <Popup
-                        ref={modalRef}
-                        id={`${id}-popup`}
-                        onAnimationEnd={handleAnimationEnd}
-                        {...{ minWidth, minHeight, open }}
-                    >
+                    <Popup ref={modalRef} id={`${id}-popup`} onAnimationEnd={handleAnimationEnd} {...{ minWidth, minHeight, open }}>
                         <CloseIcon id={`${id}-close-button`} onClick={onCloseModal} />
                         <InnerContainerStyled
                             id={`${id}-inner-container`}
