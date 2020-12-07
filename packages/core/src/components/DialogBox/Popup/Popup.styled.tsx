@@ -14,15 +14,14 @@ export const Popup = styled('div')<Props>`
     max-height: 80%;
     width: calc(100% - 2.4rem);
     padding: 2.4rem;
+    max-width: 34.3rem;
 
     @media (min-width: 768px) {
-        min-width: ${({ minWidth }) => minWidth || '42%'};
-        max-width: 24.5rem;
+        max-width: 56rem;
         padding: 3.2rem;
 
         &::-webkit-scrollbar {
             width: 0.5rem;
-            
         }
         &::-webkit-scrollbar-track {
             background-color: transparent;

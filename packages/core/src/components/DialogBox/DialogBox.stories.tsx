@@ -1,5 +1,4 @@
 import { defaultTheme, DialogBoxTheme } from '@medly-components/theme';
-import { styled } from '@medly-components/utils';
 import React, { useCallback, useState } from 'react';
 import Button from '../Button';
 import { DialogBoxActionUserProps } from './Actions/types';
@@ -15,12 +14,6 @@ DialogBoxActionProps.defaultProps = {
     alignItems: 'right'
 };
 
-const Form = styled('form')`
-    & > * {
-        margin-bottom: 1.6rem;
-    }
-`;
-
 export const Basic = () => {
     const [modalState, setModalState] = useState(false);
 
@@ -35,8 +28,8 @@ export const Basic = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </DialogBox.Content>
                 <DialogBox.Actions>
-                    <Button variant="outlined">Delete</Button>
-                    <Button variant="outlined" onClick={changeModalState}>Cancel</Button>
+                    <Button edges="rounded">Delete</Button>
+                    <Button variant="outlined" edges="rounded" onClick={changeModalState}>Cancel</Button>
                 </DialogBox.Actions>
             </DialogBox>
         </>

@@ -5,16 +5,18 @@ export const Actions = styled('div')<StyledProps>`
     display: flex;
     z-index: 10;
     margin-top: 3rem;
-
-    /* padding: ${({ theme }) => `${theme.spacing.M1} ${theme.spacing.S4}`}; */
     justify-content: ${({ alignItems }) => (alignItems === 'left' ? 'flex-start' : alignItems === 'center' ? 'center' : 'flex-end')};
     flex-direction: column;
+
+    & > * {
+        flex-grow: 1;
+    }
 
     & > * + * {
         margin: 1.6rem 0 0;
     }
     
-    @media (min-width: 768px) {
+    @media (min-width: 600px) {
         flex-direction: row;
         
         & > * + * {
