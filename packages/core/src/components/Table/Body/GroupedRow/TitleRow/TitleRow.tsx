@@ -1,8 +1,8 @@
 import { ExpandMoreIcon } from '@medly-components/icons';
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import Text from '../../../../Text';
+import { TablePropsContext } from '../../../context';
 import { getGridTemplateColumns } from '../../../helpers';
-import { TablePropsContext } from '../../../TableProps.context';
 import RowActionsCell from '../../Cell/RowActionsCell';
 import { LoadingDiv } from '../../Cell/Styled';
 import { CountChip, ExpansionCell, Row, SecondaryContent, TitleCell } from './TitleRow.styled';

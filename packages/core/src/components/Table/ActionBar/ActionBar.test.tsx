@@ -2,7 +2,7 @@ import { RemoveCircleIcon } from '@medly-components/icons';
 import { cleanup, render } from '@test-utils';
 import React from 'react';
 import { Button } from '../..';
-import { TablePropsContext } from '../TableProps.context';
+import { TablePropsContext } from '../context/TableProps.context';
 import { ActionBar } from './ActionBar';
 
 describe('ActionBar component', () => {
