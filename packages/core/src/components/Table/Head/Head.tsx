@@ -1,8 +1,8 @@
-import React, { useCallback, useContext, useMemo, useState } from 'react';
+import React, { useCallback, useContext, useMemo } from 'react';
 import Checkbox from '../../Checkbox';
+import { TablePropsContext, TableStateContext } from '../context';
 import { GroupCell, GroupCellTitle } from '../GroupCell';
 import { changeSize, getGridTemplateColumns } from '../helpers';
-import { TablePropsContext } from '../TableProps.context';
 import { SortOrder, TableColumnConfig } from '../types';
 import { THead } from './Head.styled';
 import HeadCell from './HeadCell';
@@ -17,7 +17,6 @@ const Head: React.FC<Props> = React.memo(props => {
             isRowSelectable,
             onSort,
             defaultSortOrder,
-            defaultSortField,
             size: tableSize,
             isGroupedTable,
             showRowWithCardStyle
@@ -33,15 +32,18 @@ const Head: React.FC<Props> = React.memo(props => {
             showShadowAfterFrozenElement
         } = props;
 
-    const [sortField, setSortField] = useState(defaultSortField);
+    const [{ sortField }, setTableState] = useContext(TableStateContext);
 
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []),
         handleSelectAllClick = useCallback(() => onSelectAllClick(-1), [onSelectAllClick]),
         handleWidthChange = useCallback((width: number, field: string) => setColumns(cl => changeSize(width, field, cl)), []),
         handleSortChange = useCallback(
             (field: string, order: SortOrder) => {
-                setSortField(field);
-                onSort(field, order);
+                setTableState(val => {
+                    const newState = { ...val, sortField: field, sortOrder: order };
+                    onSort(newState);
+                    return newState;
+                });
             },
             [onSort]
         );

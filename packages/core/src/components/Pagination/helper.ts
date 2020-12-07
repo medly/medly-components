@@ -4,8 +4,9 @@ export const addPageItems = (from: number, to: number, result: (number | '...')[
 };
 
 export const paginator = (totalItems: number, activePage = 1, itemsPerPage = 20) => {
-    const totalPages = Math.ceil(totalItems / itemsPerPage);
-    const currentPage = activePage < 1 ? 1 : activePage > totalPages ? totalPages : activePage;
+    const totalPages = Math.ceil(totalItems / itemsPerPage),
+        currentPage = activePage < 1 ? 1 : activePage > totalPages ? totalPages : activePage;
+
     let result: (number | '...')[] = [];
 
     /* If totalPages is less than 8 then add all the page numbers*/

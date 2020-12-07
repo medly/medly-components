@@ -1,7 +1,7 @@
 import { useUpdateEffect } from '@medly-components/utils';
 import React, { useCallback, useContext, useMemo, useState } from 'react';
 import { loadingBodyData } from '../../constants';
-import { TablePropsContext } from '../../TableProps.context';
+import { TablePropsContext } from '../../context';
 import { Data } from '../../types';
 import useRowSelector from '../../useRowSelector';
 import ContentRow from './ContentRow';
