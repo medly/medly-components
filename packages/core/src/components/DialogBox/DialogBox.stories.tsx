@@ -5,12 +5,6 @@ import Button from '../Button';
 import { DialogBoxActionUserProps } from './Actions/types';
 import { DialogBox } from './DialogBox';
 
-const options = [
-    { value: '0', label: 'Admin' },
-    { value: '1', label: 'Pharmacist' },
-    { value: '2', label: 'Covered Entity' }
-];
-
 export const ThemeInterface: React.FC<DialogBoxTheme> = () => null;
 ThemeInterface.defaultProps = {
     ...defaultTheme.modal
@@ -38,8 +32,7 @@ export const Basic = () => {
             <DialogBox open={modalState} onCloseModal={changeModalState} shouldCloseOnOutsideClick={true}>
                 <DialogBox.Header>Are you sure?</DialogBox.Header>
                 <DialogBox.Content>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </DialogBox.Content>
                 <DialogBox.Actions>
                     <Button variant="outlined">Delete</Button>

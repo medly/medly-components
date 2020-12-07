@@ -3,7 +3,6 @@ import { Props } from './types';
 
 export const Popup = styled('div')<Props>`
     background: ${({ theme }) => theme.modal.backgroundColor};
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -16,14 +15,21 @@ export const Popup = styled('div')<Props>`
     width: calc(100% - 2.4rem);
     padding: 2.4rem;
 
-    @media (min-width: 768px) and (max-width: 1439px) {
-        max-width: 24.5rem;
+    @media (min-width: 768px) {
         min-width: ${({ minWidth }) => minWidth || '42%'};
+        max-width: 24.5rem;
         padding: 3.2rem;
-    }
 
-    @media (min-width: 1440px) {
-        min-width: ${({ minWidth }) => minWidth || `60.5rem`};
-        max-height: 80%;
+        &::-webkit-scrollbar {
+            width: 0.5rem;
+            
+        }
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 1rem;
+            background-color: ${({ theme }) => theme.modal.scrollbarThumbColor};
+        }
     }
 `;

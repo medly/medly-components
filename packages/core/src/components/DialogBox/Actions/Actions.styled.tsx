@@ -4,7 +4,9 @@ import { StyledProps } from './types';
 export const Actions = styled('div')<StyledProps>`
     display: flex;
     z-index: 10;
-    padding: ${({ theme }) => `${theme.spacing.M1} ${theme.spacing.S4}`};
+    margin-top: 3rem;
+
+    /* padding: ${({ theme }) => `${theme.spacing.M1} ${theme.spacing.S4}`}; */
     justify-content: ${({ alignItems }) => (alignItems === 'left' ? 'flex-start' : alignItems === 'center' ? 'center' : 'flex-end')};
     flex-direction: column;
 
@@ -14,7 +16,6 @@ export const Actions = styled('div')<StyledProps>`
     
     @media (min-width: 768px) {
         flex-direction: row;
-        padding: ${({ theme }) => `${theme.spacing.M1} ${theme.spacing.S4} 0`};
         
         & > * + * {
             margin: 0 0 0 1.6rem;

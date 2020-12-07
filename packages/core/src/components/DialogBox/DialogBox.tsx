@@ -1,9 +1,9 @@
 import { useCombinedRefs, useKeyPress, useWindowSize, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
+import React, { FC, useCallback, useEffect, useState } from 'react';
 import Actions from './Actions';
 import Content from './Content';
 import { DialogBoxContext } from './DialogBox.context';
-import { DialogBoxBackgroundStyled, InnerContainerStyled } from './DialogBox.styled';
+import { DialogBoxBackgroundStyled } from './DialogBox.styled';
 import Header from './Header';
 import Popup from './Popup';
 import { DialogBoxStaticProps, Props } from './types';
@@ -14,7 +14,6 @@ export const DialogBox: FC<Props> & WithStyle & DialogBoxStaticProps = React.mem
             id = restProps.id || 'medly-dialog-box',
             isEscPressed = useKeyPress('Escape'),
             dialogBoxRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
-            innerContainerRef = useRef(),
             [headerHeight, setHeaderHeight] = useState(0),
             [shouldRender, setShouldRender] = useState(open),
             { width: windowWidth } = useWindowSize(),
@@ -45,15 +44,9 @@ export const DialogBox: FC<Props> & WithStyle & DialogBoxStaticProps = React.mem
                         onAnimationEnd={handleAnimationEnd}
                         {...{ minWidth, minHeight, open }}
                     >
-                        <InnerContainerStyled
-                            id={`${id}-inner-container`}
-                            ref={innerContainerRef}
-                            headerHeight={headerHeight}
-                        >
-                            <DialogBoxContext.Provider value={{ headerHeight, setHeaderHeight, id, isSmallScreen }}>
-                                {children}
-                            </DialogBoxContext.Provider>
-                        </InnerContainerStyled>
+                        <DialogBoxContext.Provider value={{ headerHeight, setHeaderHeight, id, isSmallScreen }}>
+                            {children}
+                        </DialogBoxContext.Provider>
                     </Popup>
                 </DialogBoxBackgroundStyled>
             )
