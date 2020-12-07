@@ -92,9 +92,9 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Actions bar items */
     actions?: Array<JSX.Element>;
     /** Enable action bar */
-    enableActionBar?: boolean;
+    withActionBar?: boolean;
     /** Enable Pagination */
-    enablePagination?: boolean;
+    withPagination?: boolean;
     /** Total items to be paginated */
     totalItems?: number;
     /** Function to be called on page click */

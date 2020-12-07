@@ -17,7 +17,7 @@ describe('Table component', () => {
         it('should call onPageChange prop on click on any page', () => {
             const mockOnPageChange = jest.fn();
             const { container } = renderTable({
-                enablePagination: true,
+                withPagination: true,
                 totalItems: 300,
                 itemsPerPage: 10,
                 defaultActivePage: 2,

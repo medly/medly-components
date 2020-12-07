@@ -30,8 +30,8 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                 isLoading,
                 selectedRowIds,
                 showRowWithCardStyle,
-                enableActionBar,
-                enablePagination,
+                withActionBar,
+                withPagination,
                 ...restProps
             } = props,
             isGroupedTable = !!restProps.groupBy,
@@ -84,7 +84,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                     value={{ ...props, columns, size, data: isLoading ? loadingBodyData : data, isGroupedTable, tableRef, hiddenDivRef }}
                 >
                     <HiddenDiv ref={hiddenDivRef} />
-                    {enableActionBar && selectedRowIds.length > 0 && <ActionBar />}
+                    {withActionBar && selectedRowIds.length > 0 && <ActionBar />}
                     <TableStyled
                         {...restProps}
                         ref={tableRef}
@@ -116,7 +116,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                                 showShadowAfterFrozenElement: !scrollState.isScrolledToLeft
                             }}
                         />
-                        {enablePagination && <Foot />}
+                        {withPagination && <Foot />}
                     </TableStyled>
                 </TablePropsContext.Provider>
             </TableStateContext.Provider>
@@ -132,8 +132,8 @@ Table.defaultProps = {
     defaultActivePage: 1,
     rowClickDisableKey: '',
     rowSelectionDisableKey: '',
-    enableActionBar: false,
-    enablePagination: false,
+    withActionBar: false,
+    withPagination: false,
     totalItems: 0,
     itemsPerPage: 20
 };
