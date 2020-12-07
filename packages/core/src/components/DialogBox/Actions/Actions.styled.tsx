@@ -18,7 +18,11 @@ export const Actions = styled('div')<StyledProps>`
     
     @media (min-width: 600px) {
         flex-direction: row;
-        
+
+        & > * {
+            max-width: 50%
+        }
+            
         & > * + * {
             margin: 0 0 0 1.6rem;
         }
