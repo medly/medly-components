@@ -1,5 +1,4 @@
 import { HTMLProps, WithStyle, WithThemeProp } from '@medly-components/utils';
-import { MutableRefObject } from 'react';
 import { DialogBoxActionUserProps } from './Actions/types';
 import { Props as DialogBoxPopupProps } from './Popup/types';
 
@@ -33,29 +32,9 @@ export interface InnerContainerProps {
     headerHeight: number;
 }
 
-export interface UseScrollStateProps {
-    scrollState: ScrollState;
-    ref: MutableRefObject<HTMLDivElement>;
-    dispatch: React.Dispatch<{
-        type: 'scrolledToTop' | 'scrolledToBottom' | 'scrollPosition';
-        value: boolean | number;
-    }>;
-}
-
 export interface DialogBoxContextType {
     headerHeight?: number;
     setHeaderHeight?: (height: number) => void;
-    scrollState?: ScrollState;
-    dispatch?: React.Dispatch<{
-        type: 'scrolledToTop' | 'scrolledToBottom' | 'scrollPosition';
-        value: boolean | number;
-    }>;
     id?: string;
     isSmallScreen?: boolean;
-}
-
-export interface ScrollState {
-    scrolledToTop: boolean;
-    scrolledToBottom: boolean;
-    scrollPosition: number;
 }

@@ -1,4 +1,3 @@
-import { ScrollState } from '../types';
 
 export type DialogBoxActionUserProps = {
     /** Use this to align actions horizontally */
@@ -7,5 +6,4 @@ export type DialogBoxActionUserProps = {
 
 export interface StyledProps extends DialogBoxActionUserProps {
     isSmallScreen: boolean;
-    scrollState: ScrollState;
 }

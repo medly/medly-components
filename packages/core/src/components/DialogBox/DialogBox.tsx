@@ -1,14 +1,12 @@
 import { useCombinedRefs, useKeyPress, useWindowSize, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useEffect, useReducer, useRef, useState } from 'react';
+import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
 import Actions from './Actions';
 import Content from './Content';
 import { DialogBoxContext } from './DialogBox.context';
 import { DialogBoxBackgroundStyled, InnerContainerStyled } from './DialogBox.styled';
 import Header from './Header';
 import Popup from './Popup';
-import { reducer } from './scrollStateReducer/scrollStateReducer';
 import { DialogBoxStaticProps, Props } from './types';
-import { useScrollState } from './useScrollState';
 
 export const DialogBox: FC<Props> & WithStyle & DialogBoxStaticProps = React.memo(
     React.forwardRef((props, ref) => {
@@ -18,11 +16,9 @@ export const DialogBox: FC<Props> & WithStyle & DialogBoxStaticProps = React.mem
             dialogBoxRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
             innerContainerRef = useRef(),
             [headerHeight, setHeaderHeight] = useState(0),
-            [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 }),
             [shouldRender, setShouldRender] = useState(open),
             { width: windowWidth } = useWindowSize(),
-            isSmallScreen = windowWidth < 768,
-            handleScroll = useScrollState({ ref: innerContainerRef, scrollState, dispatch });
+            isSmallScreen = windowWidth < 768;
 
         const handleBackgroundClick = useCallback(() => {
             shouldCloseOnOutsideClick && onCloseModal();
@@ -52,10 +48,9 @@ export const DialogBox: FC<Props> & WithStyle & DialogBoxStaticProps = React.mem
                         <InnerContainerStyled
                             id={`${id}-inner-container`}
                             ref={innerContainerRef}
-                            onScroll={handleScroll}
                             headerHeight={headerHeight}
                         >
-                            <DialogBoxContext.Provider value={{ headerHeight, setHeaderHeight, scrollState, dispatch, id, isSmallScreen }}>
+                            <DialogBoxContext.Provider value={{ headerHeight, setHeaderHeight, id, isSmallScreen }}>
                                 {children}
                             </DialogBoxContext.Provider>
                         </InnerContainerStyled>
