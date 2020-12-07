@@ -3,7 +3,6 @@
 exports[`DialogBox Popup component at small screen size should render properly when it is closed 1`] = `
 .c0 {
   background: #ffffff;
-  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19,22 +18,27 @@ exports[`DialogBox Popup component at small screen size should render properly w
   overflow-y: scroll;
   max-height: 80%;
   width: calc(100% - 2.4rem);
+  padding: 2.4rem;
+  max-width: 34.3rem;
 }
 
-@media (min-width:768px) and (max-width:1439px) {
+@media (min-width:768px) {
   .c0 {
-    max-width: 72%;
-    min-width: 200px;
-    padding: 4.8rem 3.2rem;
+    max-width: 56rem;
+    padding: 3.2rem;
   }
-}
 
-@media (min-width:1440px) {
-  .c0 {
-    padding: 4.8rem 3.2rem;
-    min-width: 200px;
-    max-width: 103.6rem;
-    max-height: 80%;
+  .c0::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  .c0::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .c0::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #b0bcc8;
   }
 }
 
@@ -48,7 +52,6 @@ exports[`DialogBox Popup component at small screen size should render properly w
 exports[`DialogBox Popup component at small screen size should render properly when it is open 1`] = `
 .c0 {
   background: #ffffff;
-  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -64,22 +67,27 @@ exports[`DialogBox Popup component at small screen size should render properly w
   overflow-y: scroll;
   max-height: 80%;
   width: calc(100% - 2.4rem);
+  padding: 2.4rem;
+  max-width: 34.3rem;
 }
 
-@media (min-width:768px) and (max-width:1439px) {
+@media (min-width:768px) {
   .c0 {
-    max-width: 72%;
-    min-width: 200px;
-    padding: 4.8rem 3.2rem;
+    max-width: 56rem;
+    padding: 3.2rem;
   }
-}
 
-@media (min-width:1440px) {
-  .c0 {
-    padding: 4.8rem 3.2rem;
-    min-width: 200px;
-    max-width: 103.6rem;
-    max-height: 80%;
+  .c0::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  .c0::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .c0::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #b0bcc8;
   }
 }
 

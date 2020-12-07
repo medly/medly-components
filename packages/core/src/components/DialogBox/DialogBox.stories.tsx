@@ -29,7 +29,7 @@ export const Basic = () => {
                 </DialogBox.Content>
                 <DialogBox.Actions>
                     <Button edges="rounded">Delete</Button>
-                    <Button variant="outlined" edges="rounded" onClick={changeModalState}>Cancel</Button>
+                    <Button variant="outlined" edges="rounded" onClick={()=>changeModalState()}>Cancel</Button>
                 </DialogBox.Actions>
             </DialogBox>
         </>

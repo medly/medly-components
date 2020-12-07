@@ -6,7 +6,8 @@ export const Popup = styled('div')<Props>`
     display: flex;
     flex-direction: column;
     position: relative;
-    min-height: ${({ minHeight }) => minHeight || 'auto'};
+
+    /* min-height: ${({ minHeight }) => minHeight || 'auto'}; */
     box-shadow: 0 0.4rem 3.2 ${({ theme }) => theme.modal.shadowColor};
     box-sizing: border-box;
     border-radius: 1.6rem;
@@ -15,6 +16,32 @@ export const Popup = styled('div')<Props>`
     width: calc(100% - 2.4rem);
     padding: 2.4rem;
     max-width: 34.3rem;
+
+    @keyframes slideIn {
+        0% {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideOut {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+    }
+
+    @media (max-width: 767px) {
+        animation: ${({ open }) => `${open ? 'slideIn' : 'slideOut'} 0.3s cubic-bezier(0, 0, 0.33, 1) `};
+    }
 
     @media (min-width: 768px) {
         max-width: 56rem;

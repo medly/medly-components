@@ -26,12 +26,6 @@ export interface DialogBoxStaticProps {
     Content?: React.FC & WithStyle;
     Actions?: React.FC<DialogBoxActionUserProps> & WithStyle;
 }
-
-export interface InnerContainerProps {
-    /** height of the header component */
-    headerHeight: number;
-}
-
 export interface DialogBoxContextType {
     headerHeight?: number;
     setHeaderHeight?: (height: number) => void;

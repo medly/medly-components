@@ -28,7 +28,8 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
         const handleBackgroundClick = useCallback(() => {
                 shouldCloseOnOutsideClick && onCloseModal();
             }, [shouldCloseOnOutsideClick, onCloseModal]),
-            handleAnimationEnd = useCallback(() => !open && setShouldRender(false), [open]);
+        
+        handleAnimationEnd = useCallback(() => !open && setShouldRender(false), [open]);
 
         useEffect(() => {
             open ? setShouldRender(true) : !isSmallScreen && setShouldRender(false);

@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render } from '@test-utils';
+import { fireEvent, render } from '@test-utils';
 import React from 'react';
 import { DialogBox } from './DialogBox';
 import { DialogBoxBackgroundStyled } from './DialogBox.styled';
@@ -21,23 +21,6 @@ const dialogBoxRenderer = ({ open = false, onCloseModal = jest.fn(), minWidth, m
         </DialogBox>
     );
 describe('DialogBox component', () => {
-    const originalScrollHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollHeight');
-    const originalClientHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'clientHeight');
-    const originalScrollTop = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollTop');
-
-    beforeAll(() => {
-        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 500 });
-        Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
-        Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 0 });
-    });
-
-    afterAll(() => {
-        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', originalScrollHeight);
-        Object.defineProperty(HTMLElement.prototype, 'clientHeight', originalClientHeight);
-        Object.defineProperty(HTMLElement.prototype, 'scrollTop', originalScrollTop);
-    });
-    afterEach(cleanup);
-
     it('should render properly when it is open', () => {
         const { container } = dialogBoxRenderer({ open: true, minWidth: '200px', minHeight: '200px' });
         expect(container).toMatchSnapshot();
@@ -75,37 +58,6 @@ describe('DialogBox component', () => {
             </DialogBox>
         );
         expect(container.querySelector('p')).toBeInTheDocument();
-    });
-
-    it('should hide shadow of header on scroll to top', () => {
-        const { container } = dialogBoxRenderer({ open: true });
-        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
-        Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
-        Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 0 });
-        fireEvent.scroll(container.querySelector('#medly-dialog-box-content'), { target: { scrollY: 0 } });
-        expect(container.querySelector('#medly-dialog-box-header')).not.toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
-        expect(container.querySelector('#medly-dialog-box-actions')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
-    });
-    it('should hide shadow of actions on scroll to bottom', () => {
-        const { container } = dialogBoxRenderer({ open: true });
-        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
-        Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
-        Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 300 });
-        fireEvent.scroll(container.querySelector('#medly-dialog-box-content'), { target: { scrollY: 300 } });
-        expect(container.querySelector('#medly-dialog-box-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
-        expect(container.querySelector('#medly-dialog-box-actions')).not.toHaveStyle(
-            `box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`
-        );
-    });
-
-    it('should show shadow of header and actions on scroll', () => {
-        const { container } = dialogBoxRenderer({ open: true });
-        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 800 });
-        Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
-        Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 100 });
-        fireEvent.scroll(container.querySelector('#medly-dialog-box-content'), { target: { scrollY: 100 } });
-        expect(container.querySelector('#medly-dialog-box-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
-        expect(container.querySelector('#medly-dialog-box-actions')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
     });
 });
 
