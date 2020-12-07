@@ -63,7 +63,6 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   color: #435465;
   background: #ffffff;
   background: #ffffff;
-  background: #ffffff;
 }
 
 .c2:hover {
@@ -87,8 +86,28 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   fill: #435465;
 }
 
-.c2 .c3 * {
+.c2:disabled {
+  background: #ffffff;
+}
+
+.c2:disabled .c3 * {
   fill: #C7D0D8;
+}
+
+.c2:not(:disabled):hover {
+  background: #F7F8F9;
+}
+
+.c2:not(:disabled):hover .c3 * {
+  fill: #303C48;
+}
+
+.c2:not(:disabled):active {
+  background: #eff2f4;
+}
+
+.c2:not(:disabled):active .c3 * {
+  fill: #13181D;
 }
 
 <div>
@@ -323,7 +342,6 @@ exports[`Pagination component should render correctly with all the default props
   color: #435465;
   background: #ffffff;
   background: #ffffff;
-  background: #ffffff;
 }
 
 .c2:hover {
@@ -347,64 +365,27 @@ exports[`Pagination component should render correctly with all the default props
   fill: #435465;
 }
 
-.c2 .c3 * {
+.c2:disabled {
+  background: #ffffff;
+}
+
+.c2:disabled .c3 * {
   fill: #C7D0D8;
 }
 
-.c10 {
-  margin: 0.4rem;
-  height: 3.2rem;
-  width: 3.2rem;
-  display: block;
-  border-radius: 50%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  border: none;
-  padding: 0;
-  text-align: center;
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  color: #435465;
-  background: #ffffff;
-  background: #ffffff;
-}
-
-.c10:hover {
-  cursor: pointer;
-}
-
-.c10:focus {
-  outline: none;
-}
-
-.c10:disabled {
-  cursor: not-allowed;
-}
-
-.c10 > .c3,
-.c10 .c3 {
-  padding: 0.4rem;
-}
-
-.c10 .c3 * {
-  fill: #435465;
-}
-
-.c10:hover {
+.c2:not(:disabled):hover {
   background: #F7F8F9;
 }
 
-.c10:hover .c3 * {
+.c2:not(:disabled):hover .c3 * {
   fill: #303C48;
 }
 
-.c10:active {
+.c2:not(:disabled):active {
   background: #eff2f4;
 }
 
-.c10:active .c3 * {
+.c2:not(:disabled):active .c3 * {
   fill: #13181D;
 }
 
@@ -501,7 +482,7 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="sc-AxheI c10"
+        class="sc-AxheI c2"
         type="button"
       >
         <svg

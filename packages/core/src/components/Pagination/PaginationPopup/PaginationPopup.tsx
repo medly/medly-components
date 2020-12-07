@@ -22,15 +22,13 @@ export const PaginationPopup: FC<Props> = React.memo(({ prevPageNumber, nextPage
             {isPopoverVisible && <PaginationBackgroundStyled />}
             <Popover.Popup placement="top">
                 <PageEllipsisOverlay>
-                    {addPageItems(prevPageNumber + 1, nextPageNumber - 1, []).map(item => {
-                        return (
-                            <PageNumberButton key={item} onClick={onClickHandlerWrapper(item)}>
-                                <Text textVariant="h5" textAlign="center" textWeight="Medium">
-                                    {item}
-                                </Text>
-                            </PageNumberButton>
-                        );
-                    })}
+                    {addPageItems(prevPageNumber + 1, nextPageNumber - 1, []).map(item => (
+                        <PageNumberButton key={item} onClick={onClickHandlerWrapper(item)}>
+                            <Text textVariant="h5" textAlign="center" textWeight="Medium">
+                                {item}
+                            </Text>
+                        </PageNumberButton>
+                    ))}
                 </PageEllipsisOverlay>
             </Popover.Popup>
         </>

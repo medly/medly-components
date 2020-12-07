@@ -1,5 +1,5 @@
 import React, { useCallback, useContext } from 'react';
-import { TablePropsContext } from '../../../TableProps.context';
+import { TablePropsContext } from '../../../context';
 import Row from '../../Row';
 import { BlankCell, ContentRowStyled, DataCell } from './ContentRow.styled';
 import { Props } from './types';

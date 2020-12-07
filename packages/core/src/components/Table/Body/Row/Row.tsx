@@ -1,7 +1,7 @@
 import React, { useCallback, useContext, useMemo, useState } from 'react';
+import { TablePropsContext } from '../../context';
 import { GroupCell } from '../../GroupCell';
 import { getGridTemplateColumns } from '../../helpers';
-import { TablePropsContext } from '../../TableProps.context';
 import { TableColumnConfig } from '../../types';
 import Cell from '../Cell';
 import ExtendedRowCell from '../Cell/ExtendedRowCell';

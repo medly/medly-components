@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Text from '../../Text';
-import { TablePropsContext } from '../TableProps.context';
+import { TablePropsContext } from '../context';
 import { ButtonSection, PopoverWrapper, PopupWrapper } from './ActionBar.styled';
 
 export const ActionBar: React.FC = React.memo(() => {
