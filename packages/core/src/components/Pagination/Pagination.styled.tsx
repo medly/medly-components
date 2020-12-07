@@ -74,7 +74,7 @@ export const PageNavButton = styled(BaseButton)<{ disabled: boolean }>`
     }
 
     &:not(:disabled) {
-        :hover {
+        &:hover {
             ${getPageNavButtonStyleByState('hovered')}
         }
         &:active {
