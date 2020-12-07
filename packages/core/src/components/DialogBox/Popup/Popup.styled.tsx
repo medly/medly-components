@@ -14,17 +14,16 @@ export const Popup = styled('div')<Props>`
     overflow-y: scroll;
     max-height: 80%;
     width: calc(100% - 2.4rem);
+    padding: 2.4rem;
 
     @media (min-width: 768px) and (max-width: 1439px) {
-        max-width: 72%;
+        max-width: 24.5rem;
         min-width: ${({ minWidth }) => minWidth || '42%'};
-        padding: ${({ theme }) => `${theme.spacing.L1} ${theme.spacing.M2}`};
+        padding: 3.2rem;
     }
 
     @media (min-width: 1440px) {
-        padding: ${({ theme }) => `${theme.spacing.L1} ${theme.spacing.M2}`};
         min-width: ${({ minWidth }) => minWidth || `60.5rem`};
-        max-width: 103.6rem;
         max-height: 80%;
     }
 `;

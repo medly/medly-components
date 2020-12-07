@@ -1,5 +1,5 @@
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
-import { Props as DialogBoxProps, ScrollState } from '../types';
+import { Props as DialogBoxProps } from '../types';
 
 export interface Props extends DialogBoxProps {
     setHeaderHeight?: (height: number) => void;
@@ -7,5 +7,4 @@ export interface Props extends DialogBoxProps {
 }
 export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
     id: string;
-    scrollState: ScrollState;
 }
