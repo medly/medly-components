@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/medly/medly-components/compare/@medly-components/icons@1.4.13...@medly-components/icons@1.5.0) (2020-12-07)
+
+
+### Features
+
+* add custom icons ([f9a8036](https://github.com/medly/medly-components/commit/f9a80365dff9c5aa0175abe28950ab74dc480adb))
+
+
+
+
+
 ## [1.4.13](https://github.com/medly/medly-components/compare/@medly-components/icons@1.4.12...@medly-components/icons@1.4.13) (2020-12-01)
 
 **Note:** Version bump only for package @medly-components/icons

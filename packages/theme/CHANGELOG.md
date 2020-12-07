@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.26.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.25.3...@medly-components/theme@1.26.0) (2020-12-07)
+
+
+### Features
+
+* add pagination in table component ([a58a085](https://github.com/medly/medly-components/commit/a58a085aebc591c4a8a51fed6f1428fc4b9be7e2))
+
+
+
+
+
 ## [1.25.3](https://github.com/medly/medly-components/compare/@medly-components/theme@1.25.2...@medly-components/theme@1.25.3) (2020-12-01)
 
 **Note:** Version bump only for package @medly-components/theme

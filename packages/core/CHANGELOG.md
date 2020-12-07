@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.37.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.36.2...@medly-components/core@1.37.0) (2020-12-07)
+
+
+### Bug Fixes
+
+* **core:** set width to 100% for Custom components in table cells to show ellipsis correctly ([cd954bd](https://github.com/medly/medly-components/commit/cd954bd6ac83a19ba860bccb4808e079142d9b41))
+* modal background scroll issue ([ad99cef](https://github.com/medly/medly-components/commit/ad99cef8ceb08d58e6c06014f5ffb14021eea70f))
+
+
+### Features
+
+* add pagination in table component ([a58a085](https://github.com/medly/medly-components/commit/a58a085aebc591c4a8a51fed6f1428fc4b9be7e2))
+
+
+
+
+
 ## [1.36.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.36.1...@medly-components/core@1.36.2) (2020-12-01)
 
 
