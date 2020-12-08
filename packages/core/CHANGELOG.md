@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.38.0...@medly-components/core@1.38.1) (2020-12-08)
+
+
+### Bug Fixes
+
+* alignment issue of custom cell component in table component ([f9de0b6](https://github.com/medly/medly-components/commit/f9de0b6d80f9d79d6b42e19dbacb4089a68d62b2))
+
+
+
+
+
 # [1.38.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.37.1...@medly-components/core@1.38.0) (2020-12-08)
 
 
