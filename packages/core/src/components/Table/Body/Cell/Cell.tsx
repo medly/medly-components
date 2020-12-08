@@ -40,7 +40,7 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
             {isLoading ? (
                 <LoadingDiv />
             ) : CustomComponent ? (
-                <CustomComponentWrapper ref={customComponentWrapperRef}>
+                <CustomComponentWrapper ref={customComponentWrapperRef} align={config.align}>
                     <CustomComponent {...{ data: formattedData, rowId, disabled: isRowClickDisabled, rowData }} />
                 </CustomComponentWrapper>
             ) : (
