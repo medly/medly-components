@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.17.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.16.1...@medly-components/layout@1.17.0) (2020-12-08)
+
+
+### Features
+
+* add loading state in button component ([a679cc5](https://github.com/medly/medly-components/commit/a679cc5240082597c0eb6ed24744c8e5cbb3ee14))
+
+
+
+
+
 ## [1.16.1](https://github.com/medly/medly-components/compare/@medly-components/layout@1.16.0...@medly-components/layout@1.16.1) (2020-12-07)
 
 **Note:** Version bump only for package @medly-components/layout

@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.38.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.37.1...@medly-components/core@1.38.0) (2020-12-08)
+
+
+### Features
+
+* add centeralignedloader component ([58ef185](https://github.com/medly/medly-components/commit/58ef1855b83b6535d8117636f2eafd84b3982d1b))
+* add loading state in button component ([a679cc5](https://github.com/medly/medly-components/commit/a679cc5240082597c0eb6ed24744c8e5cbb3ee14))
+* add position prop in centerAlignedLoader component ([29dfc31](https://github.com/medly/medly-components/commit/29dfc31348a1f57449593004206db5a4820783ea))
+
+
+
+
+
 ## [1.37.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.37.0...@medly-components/core@1.37.1) (2020-12-07)
 
 **Note:** Version bump only for package @medly-components/core

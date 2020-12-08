@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.27.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.26.0...@medly-components/theme@1.27.0) (2020-12-08)
+
+
+### Features
+
+* add centeralignedloader component ([58ef185](https://github.com/medly/medly-components/commit/58ef1855b83b6535d8117636f2eafd84b3982d1b))
+
+
+
+
+
 # [1.26.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.25.3...@medly-components/theme@1.26.0) (2020-12-07)
 
 
