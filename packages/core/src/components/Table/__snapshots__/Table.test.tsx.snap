@@ -556,7 +556,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   transform: translateY(-50%);
 }
 
-.c5 .sc-fzoXzr {
+.c5 .sc-fzpjYC {
   padding: 0;
 }
 
@@ -1431,7 +1431,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           >
             <li>
               <button
-                class="sc-fzqPZZ c25"
+                class="sc-fzoxKX c25"
                 type="button"
               >
                 <svg
@@ -1452,7 +1452,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-fzqPZZ c27"
+                class="sc-fzoxKX c27"
                 type="button"
               >
                 <h5
@@ -1464,7 +1464,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-fzqPZZ c29"
+                class="sc-fzoxKX c29"
                 type="button"
               >
                 <h5
@@ -1476,7 +1476,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-fzqPZZ c27"
+                class="sc-fzoxKX c27"
                 type="button"
               >
                 <h5
@@ -1492,7 +1492,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
                 id="medly-popover-wrapper"
               >
                 <button
-                  class="sc-fzqPZZ c27"
+                  class="sc-fzoxKX c27"
                   type="button"
                 >
                   <h5
@@ -1505,7 +1505,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-fzqPZZ c27"
+                class="sc-fzoxKX c27"
                 type="button"
               >
                 <h5
@@ -1517,7 +1517,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-fzqPZZ c25"
+                class="sc-fzoxKX c25"
                 type="button"
               >
                 <svg
@@ -1846,7 +1846,7 @@ exports[`Table component should render properly 1`] = `
   transform: translateY(-50%);
 }
 
-.c5 .sc-fzoXzr {
+.c5 .sc-fzpjYC {
   padding: 0;
 }
 

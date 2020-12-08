@@ -23,14 +23,18 @@ export const ButtonStyled = styled('button')<Props>`
     padding: ${getPaddings};
     width: ${({ fullWidth }) => fullWidth && '100%'};
     border-radius: ${({ edges, theme }) => theme.button.borderRadius[edges]};
+    pointer-events: ${({ isLoading }) => isLoading && 'none'};
 
-    * {
-        transition: all 100ms ease-out;
+    &, ${Text.Style}, ${SvgIcon}, ${SvgIcon} * {
+        transition: ${({ isLoading }) => (isLoading ? 'all 200ms ease-out' : 'all 100ms ease-out')};
     }
-    
+
+    &>*:not(:last-child){
+        opacity: ${({ isLoading }) => isLoading && 0};
+    }
 
     &:hover {
-        cursor: pointer;
+        cursor: ${({ isLoading }) => !isLoading && 'pointer'};
     }
 
     &:focus {

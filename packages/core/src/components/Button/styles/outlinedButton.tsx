@@ -17,7 +17,7 @@ const getStyle = (textColor: string, bgColor = 'transparent', borderColor: strin
     }
 `;
 
-export const outlinedButton = ({ theme, edges }: Props) => {
+export const outlinedButton = ({ theme, isLoading, edges }: Props) => {
     const { textColor, bgColor, borderColor } = theme.button.outlined;
 
     return css`
@@ -42,7 +42,7 @@ export const outlinedButton = ({ theme, edges }: Props) => {
         }
         &:not(:disabled) {
             &:not(:hover) {
-                ${getStyle(textColor.default, bgColor?.default, borderColor?.default)}
+                ${getStyle(textColor.default, bgColor?.default, isLoading ? borderColor?.hovered : borderColor?.default)}
             }
             &:active {
                 ${getStyle(textColor.pressed, bgColor?.pressed, borderColor?.pressed, '0.2rem')}

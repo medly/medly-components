@@ -18,4 +18,6 @@ export interface Props extends Omit<HTMLProps<HTMLButtonElement>, 'size'>, WithT
     disabled?: boolean;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
+    /** Set it true to show loading state */
+    isLoading?: boolean;
 }

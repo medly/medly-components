@@ -23,7 +23,16 @@ describe('Button component', () => {
             expect(container).toMatchSnapshot();
         });
 
-        test.each(['S', 'M'])('should render properly with %p size', (size: Props['size']) => {
+        test('should render properly when it is loading', () => {
+            const { container } = render(
+                <Button isLoading variant={variant}>
+                    Button
+                </Button>
+            );
+            expect(container).toMatchSnapshot();
+        });
+
+        test.each(['S', 'M', 'L'])('should render properly with %p size', (size: Props['size']) => {
             const { container } = render(
                 <Button size={size} variant={variant}>
                     Button
@@ -31,6 +40,15 @@ describe('Button component', () => {
             );
             expect(container).toMatchSnapshot();
         });
+    });
+
+    test.each(['S', 'L'])('should render properly with %s size and loading state', (size: Props['size']) => {
+        const { container } = render(
+            <Button size={size} isLoading>
+                Button
+            </Button>
+        );
+        expect(container).toMatchSnapshot();
     });
 
     test.each(['square', 'rounded', 'circle'])('should render properly with %p edges', (edges: Props['edges']) => {

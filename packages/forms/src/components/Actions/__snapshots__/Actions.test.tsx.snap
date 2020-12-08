@@ -42,7 +42,10 @@ exports[`Form Actions should render center aligned actions defined in action sch
   align-items: center;
 }
 
-.c1 * {
+.c1,
+.c1 .c2,
+.c1 .sc-AxiKw,
+.c1 .sc-AxiKw * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -186,7 +189,10 @@ exports[`Form Actions should render default action button 1`] = `
   align-items: center;
 }
 
-.c1 * {
+.c1,
+.c1 .c2,
+.c1 .sc-AxiKw,
+.c1 .sc-AxiKw * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -330,7 +336,10 @@ exports[`Form Actions should render left aligned actions defined in action schem
   align-items: center;
 }
 
-.c1 * {
+.c1,
+.c1 .c2,
+.c1 .sc-AxiKw,
+.c1 .sc-AxiKw * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
