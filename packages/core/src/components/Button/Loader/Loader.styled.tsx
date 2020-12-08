@@ -17,7 +17,7 @@ export const BtnLoaderStyled = styled(InjectClassName)<BtnLoaderProps>`
     left: 50%;
     opacity: 0;
     transform: translate(-50%, -50%);
-    font-size: ${({ size }) => (size === 'L' ? '2.4rem' : '2rem')};
+    font-size: ${({ size }) => (size === 'L' ? '2.6rem' : '2.2rem')};
     stop:first-child {
         stop-color: ${({ theme, variant }) => rgba(theme.button[variant].textColor.hovered, 0.2)};
     }

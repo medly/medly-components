@@ -479,7 +479,7 @@ exports[`Button component should render properly with L size and loading state 1
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   -webkit-animation: iQQUbp 300ms linear;
   animation: iQQUbp 300ms linear;
   -webkit-animation-delay: 200ms;
@@ -666,7 +666,7 @@ exports[`Button component should render properly with S size and loading state 1
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  font-size: 2rem;
+  font-size: 2.2rem;
   -webkit-animation: iQQUbp 300ms linear;
   animation: iQQUbp 300ms linear;
   -webkit-animation-delay: 200ms;
@@ -1790,7 +1790,7 @@ exports[`Button component with "flat" variant should render properly when it is 
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  font-size: 2rem;
+  font-size: 2.2rem;
   -webkit-animation: iQQUbp 300ms linear;
   animation: iQQUbp 300ms linear;
   -webkit-animation-delay: 200ms;
@@ -2805,7 +2805,7 @@ exports[`Button component with "outlined" variant should render properly when it
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  font-size: 2rem;
+  font-size: 2.2rem;
   -webkit-animation: iQQUbp 300ms linear;
   animation: iQQUbp 300ms linear;
   -webkit-animation-delay: 200ms;
@@ -3712,7 +3712,7 @@ exports[`Button component with "solid" variant should render properly when it is
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  font-size: 2rem;
+  font-size: 2.2rem;
   -webkit-animation: iQQUbp 300ms linear;
   animation: iQQUbp 300ms linear;
   -webkit-animation-delay: 200ms;
