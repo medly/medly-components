@@ -37,6 +37,8 @@ exports[`Center Aligned Loader should render properly with all props given 1`] =
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  z-index: 100;
+  position: absolute;
   background-color: rgba(255,255,255,0.75);
 }
 
@@ -67,7 +69,6 @@ exports[`Center Aligned Loader should render properly with all props given 1`] =
   flex-direction: column;
   box-shadow: 0 0.4rem 1.6rem rgba(96,120,144,0.2);
   border-radius: 1rem;
-  padding-top: 0.6rem;
 }
 
 .c1 .c3 {
@@ -155,6 +156,8 @@ exports[`Center Aligned Loader should render properly with default props 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  z-index: 100;
+  position: relative;
 }
 
 .c0 > * {
@@ -169,15 +172,15 @@ exports[`Center Aligned Loader should render properly with default props 1`] = `
     <svg
       class="sc-qPLKk NhgoW"
       fill="none"
-      height="51"
-      viewBox="0 0 51 51"
-      width="51"
+      height="48"
+      viewBox="0 0 48 48"
+      width="48"
       xmlns="http://www.w3.org/2000/svg"
     >
       <circle
-        cx="25.5"
-        cy="25.5"
-        r="24"
+        cx="24"
+        cy="24"
+        r="22.5"
         stroke="url(#a)"
         stroke-width="3"
       >
@@ -185,9 +188,9 @@ exports[`Center Aligned Loader should render properly with default props 1`] = `
           attributeName="transform"
           attributeType="XML"
           dur="900ms"
-          from="0 25.5 25.5"
+          from="0 24 24"
           repeatCount="indefinite"
-          to="360 25.5 25.5"
+          to="360 24 24"
           type="rotate"
         />
       </circle>

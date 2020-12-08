@@ -1,6 +1,7 @@
 import { keyframes, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Text from '../Text';
+import { CenterAlignedProps } from './types';
 
 const fadesIn = keyframes`
   from {
@@ -14,12 +15,14 @@ const fadesIn = keyframes`
   }
 `;
 
-export const CenterAligned = styled('div')<{ withOverlay: boolean; withLoadingBox: boolean }>`
+export const CenterAligned = styled('div')<CenterAlignedProps>`
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
+    position: ${({ position }) => position};
     background-color: ${({ withOverlay, theme }) => withOverlay && rgba(theme.colors.white, 0.75)};
     & > * {
         animation: ${fadesIn} 300ms ${({ withLoadingBox }) => (withLoadingBox ? 'ease-in-out' : 'ease-in')};
@@ -37,7 +40,6 @@ export const LoadingBox = styled('div')`
     flex-direction: column;
     box-shadow: 0 0.4rem 1.6rem ${({ theme }) => rgba(theme.colors.grey[600], 0.2)};
     border-radius: 1rem;
-    padding-top: 0.6rem;
     ${Text.Style} {
         margin-top: 1.4rem;
         color: ${({ theme }) => theme.colors.grey[700]};

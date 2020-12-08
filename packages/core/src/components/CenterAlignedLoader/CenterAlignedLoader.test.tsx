@@ -10,7 +10,9 @@ describe('Center Aligned Loader', () => {
     });
 
     it('should render properly with all props given', () => {
-        const { container } = render(<CenterAlignedLoader withLoadingBox withOverlay loader={<ConcentricCircleLoader size="XS" />} />);
+        const { container } = render(
+            <CenterAlignedLoader withLoadingBox withOverlay position="absolute" loader={<ConcentricCircleLoader size="XS" />} />
+        );
         expect(container).toMatchSnapshot();
     });
 });
