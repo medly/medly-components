@@ -2,7 +2,7 @@ import { WithStyle } from '@medly-components/utils/src';
 import React, { useMemo } from 'react';
 import Text from '../Text';
 import { CenterAligned, LoadingBox } from './CenterAlignedLoader.styled';
-import Loader from './Loader.svg';
+import Loader from './CircleLoader.svg';
 import { CenterAlignedLoaderProps } from './types';
 
 export const CenterAlignedLoader: React.FC<CenterAlignedLoaderProps> & WithStyle = React.memo(
