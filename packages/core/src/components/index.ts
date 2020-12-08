@@ -4,6 +4,7 @@ export { default as Breadcrumb } from './Breadcrumb';
 export { default as Button } from './Button';
 export { default as Card } from './Card';
 export { default as CardTable } from './CardTable';
+export { default as CenterAlignedLoader } from './CenterAlignedLoader';
 export { default as Checkbox } from './Checkbox';
 export { default as CheckboxGroup } from './CheckboxGroup';
 export { default as Chip } from './Chip';

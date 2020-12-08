@@ -2,6 +2,7 @@ import { isValidStringOrNumber, ThemeContext, WithStyle } from '@medly-component
 import React, { FC, useContext } from 'react';
 import Text from '../Text';
 import { ButtonStyled } from './Button.styled';
+import BtnLoader from './Loader';
 import { Props } from './types';
 
 export const Button: FC<Props> & WithStyle = React.memo(
@@ -12,6 +13,7 @@ export const Button: FC<Props> & WithStyle = React.memo(
                 {React.Children.map(props.children, c => {
                     return isValidStringOrNumber(c) ? <Text textVariant={theme.button.textVariant[props.size]}>{c}</Text> : c;
                 })}
+                {props.isLoading && <BtnLoader variant={props.variant} size={props.size} />}
             </ButtonStyled>
         );
     })
