@@ -1,0 +1,29 @@
+import { CenterAlignedLoader } from './CenterAlignedLoader.tsx';
+import { Text } from '@medly-components/core';
+import { ConcentricCircleLoader } from '@medly-components/loaders';
+import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, color, boolean, select } from '@storybook/addon-knobs';
+
+<Meta title="Core" component={CenterAlignedLoader} parameters={{ jest: ['CenterAlignedLoader.test.tsx'] }} />
+
+# CenterAlignedLoader
+
+This component takes the parent's full width and height and then render the loader in the center. Although it can take any react component as loader, but you can cehckout all the loaders in [Medly Components](https://medly.github.io/medly-components/?path=/story/loaders--loaders)
+
+<Preview withToolbar>
+    <Story name="CenterAlignedLoader" decorators={[withKnobs]}>
+        <CenterAlignedLoader withLoadingBox={boolean('With loading box', true)} withOverlay={boolean('With overlay', true)} />
+    </Story>
+</Preview>
+
+#### Example with different loader
+
+You can pass any React component as loader like this `<CenterAlignedLoader withLoadingBox loader={<ConcentricCircleLoader size="XS" />} />`
+
+<Preview withToolbar>
+    <CenterAlignedLoader withLoadingBox loader={<ConcentricCircleLoader size="XS" />} />
+</Preview>
+
+### Props
+
+<Props of={CenterAlignedLoader} />
