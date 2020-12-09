@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.27.1](https://github.com/medly/medly-components/compare/@medly-components/theme@1.27.0...@medly-components/theme@1.27.1) (2020-12-09)
+
+
+### Bug Fixes
+
+* revert theme interface changes ([cfd6844](https://github.com/medly/medly-components/commit/cfd6844a9ff9ea8004d63ad60d3950de7ff8ccd8))
+
+
+
+
+
 # [1.27.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.26.0...@medly-components/theme@1.27.0) (2020-12-08)
 
 
