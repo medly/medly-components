@@ -11,16 +11,15 @@ export const Popup = styled('div')<Props>`
     border-radius: 1.6rem;
     overflow-y: scroll;
     max-height: 80%;
-    width: calc(100% - 2.4rem);
+    width: calc(100% - 4.8rem);
     padding: 2.4rem;
-    max-width: 34.3rem;
 
     @keyframes slideIn {
         0% {
             transform: translateY(4rem);
             opacity: 0;
         }
-        40% {
+        25% {
             transform: translateY(4rem);
             opacity: 0;
         }
@@ -35,7 +34,7 @@ export const Popup = styled('div')<Props>`
             transform: translateY(0);
             opacity: 1;
         }
-        40% {
+        25% {
             transform: translateY(0);
             opacity: 1;
         }
@@ -46,10 +45,10 @@ export const Popup = styled('div')<Props>`
     }
 
     @media (max-width: 767px) {
-        animation: ${({ open }) => `${open ? 'slideIn' : 'slideOut'} 0.5s cubic-bezier(0, 0, 0.33, 1) `};
+        animation: ${({ open }) => `${open ? 'slideIn' : 'slideOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) `};
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 592px) {
         max-width: 56rem;
         padding: 3.2rem;
 

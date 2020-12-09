@@ -21,8 +21,8 @@ exports[`DialogBox component background at small screen size should render prope
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-animation: bgFadeOut 0.5s cubic-bezier(0,0,0.33,1);
-  animation: bgFadeOut 0.5s cubic-bezier(0,0,0.33,1);
+  -webkit-animation: bgFadeOut 0.4s cubic-bezier(0,0,0.33,1);
+  animation: bgFadeOut 0.4s cubic-bezier(0,0,0.33,1);
 }
 
 <div>
@@ -53,8 +53,8 @@ exports[`DialogBox component background at small screen size should render prope
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-animation: bgFadeIn 0.5s cubic-bezier(0,0,0.33,1);
-  animation: bgFadeIn 0.5s cubic-bezier(0,0,0.33,1);
+  -webkit-animation: bgFadeIn 0.4s cubic-bezier(0,0,0.33,1);
+  animation: bgFadeIn 0.4s cubic-bezier(0,0,0.33,1);
 }
 
 <div>
@@ -144,9 +144,8 @@ exports[`DialogBox component should render properly when it is open 1`] = `
   border-radius: 1.6rem;
   overflow-y: scroll;
   max-height: 80%;
-  width: calc(100% - 2.4rem);
+  width: calc(100% - 3.2rem);
   padding: 2.4rem;
-  max-width: 34.3rem;
 }
 
 @media (min-width:600px) {
@@ -167,12 +166,12 @@ exports[`DialogBox component should render properly when it is open 1`] = `
 
 @media (max-width:767px) {
   .c1 {
-    -webkit-animation: slideIn 0.5s cubic-bezier(0,0,0.33,1);
-    animation: slideIn 0.5s cubic-bezier(0,0,0.33,1);
+    -webkit-animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
+    animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:592px) {
   .c1 {
     max-width: 56rem;
     padding: 3.2rem;

@@ -13,7 +13,7 @@ export const DialogBoxBackgroundStyled = styled.div<DialogBoxBackgroundProps>`
     background: ${({ theme }) => theme.modal.overlayColor};
     z-index: 1000;
     align-items: center;
-    animation: ${({ open, isSmallScreen }) => isSmallScreen && `${open ? 'bgFadeIn' : 'bgFadeOut'} 0.5s cubic-bezier(0, 0, 0.33, 1) `};
+    animation: ${({ open, isSmallScreen }) => isSmallScreen && `${open ? 'bgFadeIn' : 'bgFadeOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) `};
 
     @keyframes bgFadeIn {
         0% {
