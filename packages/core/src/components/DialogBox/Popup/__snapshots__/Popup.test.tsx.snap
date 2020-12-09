@@ -16,7 +16,7 @@ exports[`DialogBox Popup component at small screen size should render properly w
   border-radius: 1.6rem;
   overflow-y: scroll;
   max-height: 80%;
-  width: calc(100% - 3.2rem);
+  width: calc(100% - 4.8rem);
   padding: 2.4rem;
 }
 
@@ -70,7 +70,7 @@ exports[`DialogBox Popup component at small screen size should render properly w
   border-radius: 1.6rem;
   overflow-y: scroll;
   max-height: 80%;
-  width: calc(100% - 3.2rem);
+  width: calc(100% - 4.8rem);
   padding: 2.4rem;
 }
 
