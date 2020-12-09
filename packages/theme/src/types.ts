@@ -1,6 +1,49 @@
-import { defaultTheme } from '.';
+import * as CoreThemes from './core/types';
+import { IconTheme } from './icon/types';
+import * as LayoutThemes from './layout/types';
+import { LoaderTheme } from './loader/types';
 
-export type Theme = typeof defaultTheme;
+export interface CoreTheme {
+    avatar?: CoreThemes.AvatarTheme;
+    breakpoints?: CoreThemes.BreakpointsTheme;
+    breadcrumb?: CoreThemes.BreadcrumbTheme;
+    button?: CoreThemes.ButtonTheme;
+    card?: CoreThemes.CardTheme;
+    calendar?: CoreThemes.CalendarTheme;
+    cardTable?: CoreThemes.CardTableTheme;
+    checkbox?: CoreThemes.CheckboxTheme;
+    chip?: CoreThemes.ChipTheme;
+    colors?: CoreThemes.ColorPallet;
+    datePicker?: CoreThemes.DatePickerTheme;
+    dateRangePicker?: CoreThemes.DateRangePickerTheme;
+    font?: CoreThemes.FontTheme;
+    input?: CoreThemes.InputTheme;
+    label?: CoreThemes.LabelTheme;
+    link?: CoreThemes.LinkTheme;
+    modal?: CoreThemes.ModalTheme;
+    multiSelect?: CoreThemes.MultiSelectTheme;
+    radio?: CoreThemes.RadioTheme;
+    singleSelect?: CoreThemes.SingleSelectTheme;
+    searchBox?: CoreThemes.SearchBoxTheme;
+    spacing?: CoreThemes.SpacingTheme;
+    stepper?: CoreThemes.StepperTheme;
+    table?: CoreThemes.TableTheme;
+    toggle?: CoreThemes.ToggleTheme;
+    tabs?: CoreThemes.TabsTheme;
+    textField?: CoreThemes.TextFieldTheme;
+    toast?: CoreThemes.ToastTheme;
+    pagination?: CoreThemes.PaginationTheme;
+}
+
+export interface LayoutTheme {
+    sideNav?: LayoutThemes.SideNavTheme;
+    sidePanel?: LayoutThemes.SidePanelTheme;
+}
+
+export interface Theme extends CoreTheme, LayoutTheme {
+    loader?: LoaderTheme;
+    icon?: IconTheme;
+}
 
 export * from './core/types';
 export * from './icon/types';
