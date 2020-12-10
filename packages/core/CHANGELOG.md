@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.38.2...@medly-components/core@1.38.3) (2020-12-10)
+
+
+### Bug Fixes
+
+* scroll issue on modal close ([315f6e5](https://github.com/medly/medly-components/commit/315f6e5b5112df48f275f22d91e9c3b45ce4c3af))
+
+
+
+
+
 ## [1.38.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.38.1...@medly-components/core@1.38.2) (2020-12-09)
 
 **Note:** Version bump only for package @medly-components/core
