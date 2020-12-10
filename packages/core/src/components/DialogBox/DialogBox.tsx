@@ -14,7 +14,6 @@ export const DialogBox: FC<Props> & WithStyle & DialogBoxStaticProps = React.mem
             id = restProps.id || 'medly-dialog-box',
             isEscPressed = useKeyPress('Escape'),
             dialogBoxRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
-            [headerHeight, setHeaderHeight] = useState(0),
             [shouldRender, setShouldRender] = useState(open),
             { width: windowWidth } = useWindowSize(),
             isSmallScreen = windowWidth < 768;
@@ -44,7 +43,7 @@ export const DialogBox: FC<Props> & WithStyle & DialogBoxStaticProps = React.mem
                         onAnimationEnd={handleAnimationEnd}
                         {...{ minWidth, minHeight, open }}
                     >
-                        <DialogBoxContext.Provider value={{ headerHeight, setHeaderHeight, id, isSmallScreen }}>
+                        <DialogBoxContext.Provider value={{ id, isSmallScreen }}>
                             {children}
                         </DialogBoxContext.Provider>
                     </Popup>

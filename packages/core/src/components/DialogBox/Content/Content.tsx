@@ -4,10 +4,10 @@ import { DialogBoxContext } from '../DialogBox.context';
 import * as Styled from './Content.styled';
 
 export const Content: React.FC & WithStyle = React.memo(({ children }) => {
-    const { id, headerHeight } = useContext(DialogBoxContext);
+    const { id } = useContext(DialogBoxContext);
 
     return (
-        <Styled.Content  {...{ headerHeight, id: `${id}-content` }}>
+        <Styled.Content  {...{ id: `${id}-content` }}>
             {children}
         </Styled.Content>
     );

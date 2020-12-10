@@ -1,7 +1,7 @@
 import { styled } from '@medly-components/utils';
-import { StyledProps } from './types';
+import { DialogBoxActionUserProps } from './types';
 
-export const Actions = styled('div')<StyledProps>`
+export const Actions = styled('div')<DialogBoxActionUserProps>`
     display: flex;
     z-index: 10;
     margin-top: 3rem;

@@ -27,8 +27,6 @@ export interface DialogBoxStaticProps {
     Actions?: React.FC<DialogBoxActionUserProps> & WithStyle;
 }
 export interface DialogBoxContextType {
-    headerHeight?: number;
-    setHeaderHeight?: (height: number) => void;
     id?: string;
     isSmallScreen?: boolean;
 }

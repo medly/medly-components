@@ -27,7 +27,7 @@ exports[`DialogBox Popup component at small screen size should render properly w
   }
 }
 
-@media (min-width:592px) {
+@media (min-width:608px) {
   .c0 {
     max-width: 56rem;
     padding: 3.2rem;
@@ -81,7 +81,7 @@ exports[`DialogBox Popup component at small screen size should render properly w
   }
 }
 
-@media (min-width:592px) {
+@media (min-width:608px) {
   .c0 {
     max-width: 56rem;
     padding: 3.2rem;

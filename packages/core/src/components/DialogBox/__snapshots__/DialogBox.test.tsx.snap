@@ -171,7 +171,7 @@ exports[`DialogBox component should render properly when it is open 1`] = `
   }
 }
 
-@media (min-width:592px) {
+@media (min-width:608px) {
   .c1 {
     max-width: 56rem;
     padding: 3.2rem;
