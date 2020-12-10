@@ -14,7 +14,8 @@ export const DialogBoxBackgroundStyled = styled.div<DialogBoxBackgroundProps>`
     z-index: 1000;
     align-items: center;
     animation: ${({ open }) => `${open ? 'bgFadeIn' : 'bgFadeOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) `};
-
+    overflow: hidden;
+    
     @keyframes bgFadeIn {
         0% {
             background: ${({ theme }) => rgba(theme.modal.overlayColor, 0)};

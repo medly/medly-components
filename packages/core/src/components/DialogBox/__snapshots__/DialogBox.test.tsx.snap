@@ -1,70 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DialogBox component background at small screen size should render properly when it is closed 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(67,84,101,0.65);
-  z-index: 1000;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-animation: bgFadeOut 0.4s cubic-bezier(0,0,0.33,1);
-  animation: bgFadeOut 0.4s cubic-bezier(0,0,0.33,1);
-}
-
-<div>
-  <div
-    class="c0"
-  />
-</div>
-`;
-
-exports[`DialogBox component background at small screen size should render properly when it is open 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(67,84,101,0.65);
-  z-index: 1000;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-animation: bgFadeIn 0.4s cubic-bezier(0,0,0.33,1);
-  animation: bgFadeIn 0.4s cubic-bezier(0,0,0.33,1);
-}
-
-<div>
-  <div
-    class="c0"
-    open=""
-  />
-</div>
-`;
-
 exports[`DialogBox component should render properly when it is open 1`] = `
 .c4 {
   display: -webkit-box;
@@ -122,6 +57,7 @@ exports[`DialogBox component should render properly when it is open 1`] = `
   align-items: center;
   -webkit-animation: bgFadeIn 0.4s cubic-bezier(0,0,0.33,1);
   animation: bgFadeIn 0.4s cubic-bezier(0,0,0.33,1);
+  overflow: hidden;
 }
 
 .c2 {

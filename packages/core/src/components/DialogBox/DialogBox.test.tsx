@@ -1,8 +1,7 @@
 import { fireEvent, render } from '@test-utils';
 import React from 'react';
 import { DialogBox } from './DialogBox';
-import { DialogBoxBackgroundStyled } from './DialogBox.styled';
-import { DialogBoxBackgroundProps, Props } from './types';
+import { Props } from './types';
 
 const dialogBoxRenderer = ({ open = false, onCloseModal = jest.fn(), minWidth, minHeight, shouldCloseOnOutsideClick = false }: Props) =>
     render(
@@ -58,22 +57,5 @@ describe('DialogBox component', () => {
             </DialogBox>
         );
         expect(container.querySelector('p')).toBeInTheDocument();
-    });
-});
-
-const DialogBoxBackgroundRenderer = ({ open = true }: DialogBoxBackgroundProps) => {
-    const mockOnClick = jest.fn();
-    return render(<DialogBoxBackgroundStyled onClick={mockOnClick} {...{ open }} />);
-};
-
-describe('DialogBox component background at small screen size', () => {
-    it('should render properly when it is open', () => {
-        const { container } = DialogBoxBackgroundRenderer({ open: true });
-        expect(container).toMatchSnapshot();
-    });
-
-    it('should render properly when it is closed', () => {
-        const { container } = DialogBoxBackgroundRenderer({ open: false  });
-        expect(container).toMatchSnapshot();
     });
 });
