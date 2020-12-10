@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.4](https://github.com/medly/medly-components/compare/@medly-components/core@1.38.3...@medly-components/core@1.38.4) (2020-12-10)
+
+
+### Bug Fixes
+
+* unset overflow on modal close ([a4f0e23](https://github.com/medly/medly-components/commit/a4f0e239b006da07ad0d4b23959ce2d9420bb2fd))
+
+
+
+
+
 ## [1.38.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.38.2...@medly-components/core@1.38.3) (2020-12-10)
 
 
