@@ -3,9 +3,9 @@ import React from 'react';
 import { defaultValues, DialogBoxContext } from '../DialogBox.context';
 import { Header } from './Header';
 
-const DialogBoxHeaderRenderer = ({ isSmallScreen = true }: { isSmallScreen: boolean }) => {
+const DialogBoxHeaderRenderer = () => {
     return render(
-        <DialogBoxContext.Provider value={{ ...defaultValues, isSmallScreen }}>
+        <DialogBoxContext.Provider value={{ ...defaultValues }}>
             <Header>test</Header>
         </DialogBoxContext.Provider>
     );
@@ -13,7 +13,7 @@ const DialogBoxHeaderRenderer = ({ isSmallScreen = true }: { isSmallScreen: bool
 
 describe('DialogBox component header', () => {
     it('should render properly at small screen size', () => {
-        const { container } = DialogBoxHeaderRenderer({ isSmallScreen: true });
+        const { container } = DialogBoxHeaderRenderer();
         expect(container).toMatchSnapshot();
     });
 });

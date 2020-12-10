@@ -61,19 +61,19 @@ describe('DialogBox component', () => {
     });
 });
 
-const DialogBoxBackgroundRenderer = ({ open = true, isSmallScreen = true }: DialogBoxBackgroundProps) => {
+const DialogBoxBackgroundRenderer = ({ open = true }: DialogBoxBackgroundProps) => {
     const mockOnClick = jest.fn();
-    return render(<DialogBoxBackgroundStyled onClick={mockOnClick} {...{ open, isSmallScreen }} />);
+    return render(<DialogBoxBackgroundStyled onClick={mockOnClick} {...{ open }} />);
 };
 
 describe('DialogBox component background at small screen size', () => {
     it('should render properly when it is open', () => {
-        const { container } = DialogBoxBackgroundRenderer({ open: true, isSmallScreen: true });
+        const { container } = DialogBoxBackgroundRenderer({ open: true });
         expect(container).toMatchSnapshot();
     });
 
     it('should render properly when it is closed', () => {
-        const { container } = DialogBoxBackgroundRenderer({ open: false, isSmallScreen: true });
+        const { container } = DialogBoxBackgroundRenderer({ open: false  });
         expect(container).toMatchSnapshot();
     });
 });

@@ -14,17 +14,12 @@ exports[`DialogBox Popup component at small screen size should render properly w
   box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
   box-sizing: border-box;
   border-radius: 1.6rem;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 80%;
   width: calc(100% - 4.8rem);
   padding: 2.4rem;
-}
-
-@media (max-width:767px) {
-  .c0 {
-    -webkit-animation: slideOut 0.4s cubic-bezier(0,0,0.33,1);
-    animation: slideOut 0.4s cubic-bezier(0,0,0.33,1);
-  }
+  -webkit-animation: slideOut 0.4s cubic-bezier(0,0,0.33,1);
+  animation: slideOut 0.4s cubic-bezier(0,0,0.33,1);
 }
 
 @media (min-width:608px) {
@@ -68,17 +63,12 @@ exports[`DialogBox Popup component at small screen size should render properly w
   box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
   box-sizing: border-box;
   border-radius: 1.6rem;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 80%;
   width: calc(100% - 4.8rem);
   padding: 2.4rem;
-}
-
-@media (max-width:767px) {
-  .c0 {
-    -webkit-animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
-    animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
-  }
+  -webkit-animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
+  animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
 }
 
 @media (min-width:608px) {

@@ -9,7 +9,7 @@ export const Popup = styled('div')<Props>`
     box-shadow: 0 0.4rem 3.2 ${({ theme }) => theme.modal.shadowColor};
     box-sizing: border-box;
     border-radius: 1.6rem;
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 80%;
     width: calc(100% - 4.8rem);
     padding: 2.4rem;
@@ -42,11 +42,8 @@ export const Popup = styled('div')<Props>`
             transform: translateY(4rem);
             opacity: 0;
         }
-    }
-
-    @media (max-width: 767px) {
-        animation: ${({ open }) => `${open ? 'slideIn' : 'slideOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) `};
-    }
+    }    
+    animation: ${({ open }) => `${open ? 'slideIn' : 'slideOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) `};
 
     @media (min-width: 608px) { /* 506px break point + (2 * 2.4rem margin) */
         max-width: 56rem;

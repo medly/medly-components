@@ -17,7 +17,6 @@ export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
 
 export interface DialogBoxBackgroundProps {
     open?: boolean;
-    isSmallScreen: boolean;
 }
 
 export interface DialogBoxStaticProps {
@@ -28,5 +27,4 @@ export interface DialogBoxStaticProps {
 }
 export interface DialogBoxContextType {
     id?: string;
-    isSmallScreen?: boolean;
 }

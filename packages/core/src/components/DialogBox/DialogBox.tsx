@@ -1,4 +1,4 @@
-import { useCombinedRefs, useKeyPress, useWindowSize, WithStyle } from '@medly-components/utils';
+import { useCombinedRefs, useKeyPress, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useState } from 'react';
 import Actions from './Actions';
 import Content from './Content';
@@ -14,16 +14,14 @@ export const DialogBox: FC<Props> & WithStyle & DialogBoxStaticProps = React.mem
             id = restProps.id || 'medly-dialog-box',
             isEscPressed = useKeyPress('Escape'),
             dialogBoxRef = useCombinedRefs<HTMLDivElement>(ref, React.useRef(null)),
-            [shouldRender, setShouldRender] = useState(open),
-            { width: windowWidth } = useWindowSize(),
-            isSmallScreen = windowWidth < 768;
+            [shouldRender, setShouldRender] = useState(open);
 
         const handleBackgroundClick = useCallback(() => {
             shouldCloseOnOutsideClick && onCloseModal();
         }, [shouldCloseOnOutsideClick, onCloseModal]);
 
         useEffect(() => {
-            open ? setShouldRender(true) : !isSmallScreen && setShouldRender(false);
+            if (open) setShouldRender(true);
         }, [open]);
 
         const handleAnimationEnd = useCallback(() => {
@@ -36,14 +34,14 @@ export const DialogBox: FC<Props> & WithStyle & DialogBoxStaticProps = React.mem
 
         return (
             shouldRender && (
-                <DialogBoxBackgroundStyled {...{ ...restProps, id, open, isSmallScreen }} onClick={handleBackgroundClick}>
+                <DialogBoxBackgroundStyled {...{ ...restProps, id, open }} onClick={handleBackgroundClick}>
                     <Popup
                         ref={dialogBoxRef}
                         id={`${id}-popup`}
                         onAnimationEnd={handleAnimationEnd}
                         {...{ minWidth, minHeight, open }}
                     >
-                        <DialogBoxContext.Provider value={{ id, isSmallScreen }}>
+                        <DialogBoxContext.Provider value={{ id }}>
                             {children}
                         </DialogBoxContext.Provider>
                     </Popup>
