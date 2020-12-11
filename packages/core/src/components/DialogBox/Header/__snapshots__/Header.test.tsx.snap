@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DialogBox component header should render properly at small screen size 1`] = `
+.c1 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.8rem;
+  font-weight: 700;
+  -webkit-letter-spacing: -0.02rem;
+  -moz-letter-spacing: -0.02rem;
+  -ms-letter-spacing: -0.02rem;
+  letter-spacing: -0.02rem;
+  line-height: 2.4rem;
+  text-align: initial;
+}
+
+.c0 {
+  background-color: #ffffff;
+  color: #13181D;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+<div>
+  <div
+    class="c0"
+    id="default-id-header"
+  >
+    <h4
+      class="c1"
+    >
+      test
+    </h4>
+  </div>
+</div>
+`;

@@ -1,0 +1,46 @@
+import { DialogBox } from './DialogBox';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './DialogBox.stories';
+
+<Meta title="Core" component={DialogBox} parameters={{ jest: ['DialogBox.test.tsx'] }} />
+
+# DialogBox
+
+Basic DialogBox component. You can play with the component in the canvas tab.
+
+DialogBox consists of three sections Header, Content and Actions. All of these you can directly use from DialogBox component only like bellow . . .
+
+```typescript
+<DialogBox open={openState} onCloseDialogBox={changeDialogBoxState(false)}>
+    <DialogBox.Header>Add User</DialogBox.Header>
+    <DialogBox.Content>
+        <Input id="name-input" type="text" fullWidth label="Name" placeholder="Enter your Name" />
+    </DialogBox.Content>
+    <DialogBox.Actions>
+        <Button variant="outlined">Cancel</Button>
+    </DialogBox.Actions>
+</DialogBox>
+```
+
+Shadow will appear on the Header & Actions section if you scroll the content.
+To close the dialog-box you can perform below actions:
+
+1. Click on the cross icon
+2. Press `Esc` key
+3. If you have provided `shouldCloseOnOutsideClick` this prop then dialog-box will close on clicking outside of dialog-box
+
+<Preview withToolbar>
+    <Story name="DialogBox">{stories.Basic()}</Story>
+</Preview>
+
+### Props
+
+<Props of={DialogBox} />
+
+### DialogBox Action Props
+
+<Props of={stories.DialogBoxActionProps} />
+
+### DialogBoxTheme
+
+<Props of={stories.ThemeInterface} />

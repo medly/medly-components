@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DialogBox Popup component at small screen size should render properly when it is closed 1`] = `
+.c0 {
+  background: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
+  box-sizing: border-box;
+  border-radius: 1.6rem;
+  overflow-y: auto;
+  max-height: 80%;
+  width: calc(100% - 4.8rem);
+  padding: 2.4rem;
+  -webkit-animation: slideOut 0.4s cubic-bezier(0,0,0.33,1);
+  animation: slideOut 0.4s cubic-bezier(0,0,0.33,1);
+}
+
+@media (min-width:608px) {
+  .c0 {
+    max-width: 56rem;
+    padding: 3.2rem;
+  }
+
+  .c0::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  .c0::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .c0::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #b0bcc8;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;
+
+exports[`DialogBox Popup component at small screen size should render properly when it is open 1`] = `
+.c0 {
+  background: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 0.4rem 3.2 rgba(67,84,101,0.5);
+  box-sizing: border-box;
+  border-radius: 1.6rem;
+  overflow-y: auto;
+  max-height: 80%;
+  width: calc(100% - 4.8rem);
+  padding: 2.4rem;
+  -webkit-animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
+  animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
+}
+
+@media (min-width:608px) {
+  .c0 {
+    max-width: 56rem;
+    padding: 3.2rem;
+  }
+
+  .c0::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+
+  .c0::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .c0::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: #b0bcc8;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+    open=""
+  />
+</div>
+`;
