@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.5](https://github.com/medly/medly-components/compare/@medly-components/core@1.38.4...@medly-components/core@1.38.5) (2020-12-11)
+
+
+### Bug Fixes
+
+* export Hidden component from core package ([b7cc9e9](https://github.com/medly/medly-components/commit/b7cc9e9702940b885aa6c27d6b2a20eb5cc5a4cc))
+
+
+
+
+
 ## [1.38.4](https://github.com/medly/medly-components/compare/@medly-components/core@1.38.3...@medly-components/core@1.38.4) (2020-12-10)
 
 
