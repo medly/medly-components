@@ -1880,7 +1880,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
           <span
             class="c17"
           >
-            disabled
+            Disabled
           </span>
           <svg
             class="c12 c18"
@@ -3177,7 +3177,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
           <span
             class="c11"
           >
-            disabled
+            Disabled
           </span>
           <svg
             class="c12 c17"
