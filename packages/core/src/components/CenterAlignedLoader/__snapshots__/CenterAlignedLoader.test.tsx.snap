@@ -2,7 +2,7 @@
 
 exports[`Center Aligned Loader should render properly with all props given 1`] = `
 .c2 {
-  font-size: 44px;
+  font-size: 48px;
 }
 
 .c2 * {
