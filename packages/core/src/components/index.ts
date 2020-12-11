@@ -11,6 +11,7 @@ export { default as Chip } from './Chip';
 export { default as CssBaseline } from './CssBaseline';
 export { default as DatePicker } from './DatePicker';
 export { default as DateRangePicker } from './DateRangePicker';
+export { default as DialogBox } from './DialogBox';
 export { default as FieldWithLabel } from './FieldWithLabel';
 export { default as FileInput } from './FileInput';
 export { default as Hidden } from './Hidden';
@@ -35,3 +36,4 @@ export { default as Toast } from './Toast';
 export { default as ToastContainer } from './ToastContainer';
 export { addToast } from './ToastContainer/ToastStore';
 export { default as Toggle } from './Toggle';
+
