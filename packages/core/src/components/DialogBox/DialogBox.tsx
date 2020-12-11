@@ -32,6 +32,13 @@ export const DialogBox: FC<Props> & WithStyle & DialogBoxStaticProps = React.mem
             open && isEscPressed && onCloseModal();
         }, [open, isEscPressed]);
 
+        useEffect(() => {
+            document.body.style.overflow = shouldRender ? 'hidden' : 'unset';
+            return () => {
+                document.body.style.overflow = 'unset';
+            };
+        }, [shouldRender]);
+
         return (
             shouldRender && (
                 <DialogBoxBackgroundStyled {...{ ...restProps, id, open }} onClick={handleBackgroundClick}>

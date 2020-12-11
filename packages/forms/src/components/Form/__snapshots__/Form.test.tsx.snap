@@ -42,10 +42,7 @@ exports[`Form should not render any field if component type is not matched 1`] =
   align-items: center;
 }
 
-.c3,
-.c3 .c4,
-.c3 .sc-AxiKw,
-.c3 .sc-AxiKw * {
+.c3 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -285,10 +282,7 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: center;
 }
 
-.c69,
-.c69 .c17,
-.c69 .c30,
-.c69 .c30 * {
+.c69 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -1070,7 +1064,7 @@ exports[`Form should render properly with initial state 1`] = `
   padding-right: 0.8rem;
 }
 
-.c41 .sc-fzoJMP {
+.c41 .sc-fzqAbL {
   z-index: 1000;
   position: absolute;
   top: calc(100% + 0px);
@@ -1241,7 +1235,7 @@ exports[`Form should render properly with initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c12 .sc-fzqLLg {
+.c12 .sc-fznXWL {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2614,10 +2608,7 @@ exports[`Form should render properly without initial state 1`] = `
   align-items: center;
 }
 
-.c68,
-.c68 .c1,
-.c68 .c32,
-.c68 .c32 * {
+.c68 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -3368,7 +3359,7 @@ exports[`Form should render properly without initial state 1`] = `
   padding-right: 0.8rem;
 }
 
-.c41 .sc-fzoJMP {
+.c41 .sc-fzqAbL {
   z-index: 1000;
   position: absolute;
   top: calc(100% + 0px);
@@ -3539,7 +3530,7 @@ exports[`Form should render properly without initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c15 .sc-fzqLLg {
+.c15 .sc-fznXWL {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
