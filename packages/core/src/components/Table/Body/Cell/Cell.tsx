@@ -36,11 +36,11 @@ const Cell: React.FC<TableCellProps> & WithStyle = React.memo(props => {
     }, [data, isLoading, addColumnMaxSize, tableSize]);
 
     return (
-        <StyledCell hidden={hidden} frozen={frozen} tableSize={tableSize} align={align} {...restProps}>
+        <StyledCell hidden={hidden} frozen={frozen} tableSize={tableSize} align={align} {...restProps} wrapText={config.wrapText}>
             {isLoading ? (
                 <LoadingDiv />
             ) : CustomComponent ? (
-                <CustomComponentWrapper ref={customComponentWrapperRef}>
+                <CustomComponentWrapper ref={customComponentWrapperRef} align={config.align}>
                     <CustomComponent {...{ data: formattedData, rowId, disabled: isRowClickDisabled, rowData }} />
                 </CustomComponentWrapper>
             ) : (

@@ -1,0 +1,45 @@
+import { CenterAlignedLoader } from './CenterAlignedLoader.tsx';
+import { Text } from '@medly-components/core';
+import { ConcentricCircleLoader } from '@medly-components/loaders';
+import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, color, boolean, select } from '@storybook/addon-knobs';
+import { RelativeDiv } from './CenterAlignedLoader.stories.tsx';
+
+<Meta title="Core" component={CenterAlignedLoader} parameters={{ jest: ['CenterAlignedLoader.test.tsx'] }} />
+
+# CenterAlignedLoader
+
+This component takes the parent's full width and height and then render the loader in the center. Although it can take any react component as loader, but you can cehckout all the loaders in [Medly Components](https://medly.github.io/medly-components/?path=/story/loaders--loaders)
+
+<Preview withToolbar>
+    <Story name="CenterAlignedLoader" decorators={[withKnobs]}>
+        <CenterAlignedLoader withLoadingBox={boolean('With loading box', true)} withOverlay={boolean('With overlay', true)} />
+    </Story>
+</Preview>
+
+#### Example with different loader
+
+You can pass any React component as loader like this `<CenterAlignedLoader withLoadingBox loader={<ConcentricCircleLoader size="XS" />} />`
+
+<Preview withToolbar>
+    <CenterAlignedLoader withLoadingBox loader={<ConcentricCircleLoader size="XS" />} />
+</Preview>
+
+#### Example with absolute position
+
+To show loader on top of another component you can set loader's position to `absolute` and its parent position to `relative`
+
+<Preview withToolbar>
+    <RelativeDiv>
+        <CenterAlignedLoader withOverlay position="absolute" />
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Ithas survived not only
+        five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It waspopularised in the 1960s with the
+        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktoppublishing software like Aldus PageMaker including
+        versions of Lorem Ipsum
+    </RelativeDiv>
+</Preview>
+
+### Props
+
+<Props of={CenterAlignedLoader} />

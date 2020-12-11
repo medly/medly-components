@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.27.1](https://github.com/medly/medly-components/compare/@medly-components/theme@1.27.0...@medly-components/theme@1.27.1) (2020-12-09)
+
+
+### Bug Fixes
+
+* revert theme interface changes ([cfd6844](https://github.com/medly/medly-components/commit/cfd6844a9ff9ea8004d63ad60d3950de7ff8ccd8))
+
+
+
+
+
+# [1.27.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.26.0...@medly-components/theme@1.27.0) (2020-12-08)
+
+
+### Features
+
+* add centeralignedloader component ([58ef185](https://github.com/medly/medly-components/commit/58ef1855b83b6535d8117636f2eafd84b3982d1b))
+
+
+
+
+
+# [1.26.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.25.3...@medly-components/theme@1.26.0) (2020-12-07)
+
+
+### Features
+
+* add pagination in table component ([a58a085](https://github.com/medly/medly-components/commit/a58a085aebc591c4a8a51fed6f1428fc4b9be7e2))
+
+
+
+
+
 ## [1.25.3](https://github.com/medly/medly-components/compare/@medly-components/theme@1.25.2...@medly-components/theme@1.25.3) (2020-12-01)
 
 **Note:** Version bump only for package @medly-components/theme

@@ -29,7 +29,7 @@ Simple `Table` component to show set of data.
         {() => {
             const [selectedRowIds, setSelectedRowIds] = useState([2, 3]),
                 [tableData, setTableData] = useState(data),
-                handleFilterData = useCallback((dottedField, order) => setTableData(filterData(dottedField, order, tableData)), [
+                handleFilterData = useCallback(({ sortField, sortOrder }) => setTableData(filterData(sortField, sortOrder, tableData)), [
                     tableData
                 ]);
             return (
@@ -50,8 +50,12 @@ Simple `Table` component to show set of data.
                         size={select('Size', ['S', 'M', 'L'], 'M')}
                         showRowWithCardStyle={boolean('Show Row With Card Style', false)}
                         expandedRowComponent={ExpandedRowComponent}
-                        enableActionBar={boolean('Enable action bar', true)}
+                        withActionBar={boolean('Enable action bar', true)}
                         actions={Actions}
+                        withPagination={boolean('Enable pagination', true)}
+                        totalItems={10}
+                        itemsPerPage={10}
+                        onPageChange={action('Page Changed')}
                     />
                 </DummyWrapper>
             );
@@ -129,7 +133,7 @@ Just pass the `onRowSelection` callback function as prop and table component wil
 
 ## Actions
 
-To show action bar you have to pass `enableActionBar` as `true` and pass `actions` in below format
+To show action bar you have to pass `withActionBar` as `true` and pass `actions` in below format
 
 ```tsx
 export const Actions = [
@@ -144,7 +148,9 @@ export const Actions = [
 ];
 ```
 
-> Note: For now this feature is not available for group table
+### Pagination
+
+To show pagination you have to pass `withPagination` as `true` and pass `totalItems`, `itemsPerPage` & `onPageChange` props. `onPageChange` callback function will recieve object with these values `{ activePage?: number; sortField?: string; sortOrder?: SortOrder }`
 
 ### Props
 

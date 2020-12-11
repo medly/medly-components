@@ -3,6 +3,76 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.17.5](https://github.com/medly/medly-components/compare/@medly-components/layout@1.17.4...@medly-components/layout@1.17.5) (2020-12-11)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.17.4](https://github.com/medly/medly-components/compare/@medly-components/layout@1.17.3...@medly-components/layout@1.17.4) (2020-12-10)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.17.3](https://github.com/medly/medly-components/compare/@medly-components/layout@1.17.2...@medly-components/layout@1.17.3) (2020-12-10)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.17.2](https://github.com/medly/medly-components/compare/@medly-components/layout@1.17.1...@medly-components/layout@1.17.2) (2020-12-09)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.17.1](https://github.com/medly/medly-components/compare/@medly-components/layout@1.17.0...@medly-components/layout@1.17.1) (2020-12-08)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+# [1.17.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.16.1...@medly-components/layout@1.17.0) (2020-12-08)
+
+
+### Features
+
+* add loading state in button component ([a679cc5](https://github.com/medly/medly-components/commit/a679cc5240082597c0eb6ed24744c8e5cbb3ee14))
+
+
+
+
+
+## [1.16.1](https://github.com/medly/medly-components/compare/@medly-components/layout@1.16.0...@medly-components/layout@1.16.1) (2020-12-07)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+# [1.16.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.15.3...@medly-components/layout@1.16.0) (2020-12-07)
+
+
+### Features
+
+* update Sidebar component to be open by default at 1025+ pixel viewport ([30e162f](https://github.com/medly/medly-components/commit/30e162f832d857a636db7115ced0bf134a6b59f4))
+
+
+
+
+
 ## [1.15.3](https://github.com/medly/medly-components/compare/@medly-components/layout@1.15.2...@medly-components/layout@1.15.3) (2020-12-01)
 
 **Note:** Version bump only for package @medly-components/layout

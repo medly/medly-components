@@ -8,6 +8,8 @@ export type ObjectType = {
 };
 export type Data = ObjectType[];
 
+export type TableState = { activePage?: number; sortField?: string; sortOrder?: SortOrder };
+
 export interface TableColumnConfig {
     /** Title of the column */
     title: string;
@@ -80,7 +82,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Default Sort Order*/
     defaultSortOrder?: SortOrder;
     /** Function to be called on click of sort icon */
-    onSort?: (field: string, order: SortOrder) => void;
+    onSort?: ({ activePage, sortField, sortOrder }: TableState) => void;
     /** Component to show when row is expanded */
     expandedRowComponent?: React.FC<{ rowData?: ObjectType; rowId?: any; disabled?: boolean }>;
     /** Name of the key in data on which grouping is applied */
@@ -90,7 +92,17 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Actions bar items */
     actions?: Array<JSX.Element>;
     /** Enable action bar */
-    enableActionBar?: boolean;
+    withActionBar?: boolean;
+    /** Enable Pagination */
+    withPagination?: boolean;
+    /** Total items to be paginated */
+    totalItems?: number;
+    /** Function to be called on page click */
+    onPageChange?: ({ activePage, sortField, sortOrder }: TableState) => void;
+    /** Items count per page */
+    itemsPerPage?: number;
+    /** Default active page */
+    defaultActivePage?: number;
 }
 
 export interface StaticProps {

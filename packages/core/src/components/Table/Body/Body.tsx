@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import { TablePropsContext } from '../TableProps.context';
+import { TablePropsContext } from '../context';
 import { TBody } from './Body.styled';
 import GroupedRow from './GroupedRow';
 import Row from './Row';
-import { NoResultRow, NoResultCell } from './Row/Row.styled';
+import { NoResultCell, NoResultRow } from './Row/Row.styled';
 import { Props } from './types';
 
 const Body: React.FC<Props> = React.memo(props => {

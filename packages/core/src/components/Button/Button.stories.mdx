@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import { withKnobs, color, select, boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { sizes, edges, variants, colors, ThemeInterface } from './Button.stories';
+import { action } from '@storybook/addon-actions';
 
 <Meta title="Core" component={Button} parameters={{ jest: ['Button.test.tsx'] }} />
 
@@ -23,6 +24,8 @@ You can play with the props in canvas tab.
             edges={select('Edges', edges, 'square')}
             variant={select('Variant', variants, 'solid')}
             disabled={boolean('Disabled', false)}
+            isLoading={boolean('Is Loading', false)}
+            onClick={action('Clicked')}
         >
             Button Text
         </Button>

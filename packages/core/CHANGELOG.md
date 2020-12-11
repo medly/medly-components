@@ -3,6 +3,96 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.5](https://github.com/medly/medly-components/compare/@medly-components/core@1.38.4...@medly-components/core@1.38.5) (2020-12-11)
+
+
+### Bug Fixes
+
+* export Hidden component from core package ([b7cc9e9](https://github.com/medly/medly-components/commit/b7cc9e9702940b885aa6c27d6b2a20eb5cc5a4cc))
+
+
+
+
+
+## [1.38.4](https://github.com/medly/medly-components/compare/@medly-components/core@1.38.3...@medly-components/core@1.38.4) (2020-12-10)
+
+
+### Bug Fixes
+
+* unset overflow on modal close ([a4f0e23](https://github.com/medly/medly-components/commit/a4f0e239b006da07ad0d4b23959ce2d9420bb2fd))
+
+
+
+
+
+## [1.38.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.38.2...@medly-components/core@1.38.3) (2020-12-10)
+
+
+### Bug Fixes
+
+* scroll issue on modal close ([315f6e5](https://github.com/medly/medly-components/commit/315f6e5b5112df48f275f22d91e9c3b45ce4c3af))
+
+
+
+
+
+## [1.38.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.38.1...@medly-components/core@1.38.2) (2020-12-09)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [1.38.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.38.0...@medly-components/core@1.38.1) (2020-12-08)
+
+
+### Bug Fixes
+
+* alignment issue of custom cell component in table component ([f9de0b6](https://github.com/medly/medly-components/commit/f9de0b6d80f9d79d6b42e19dbacb4089a68d62b2))
+
+
+
+
+
+# [1.38.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.37.1...@medly-components/core@1.38.0) (2020-12-08)
+
+
+### Features
+
+* add centeralignedloader component ([58ef185](https://github.com/medly/medly-components/commit/58ef1855b83b6535d8117636f2eafd84b3982d1b))
+* add loading state in button component ([a679cc5](https://github.com/medly/medly-components/commit/a679cc5240082597c0eb6ed24744c8e5cbb3ee14))
+* add position prop in centerAlignedLoader component ([29dfc31](https://github.com/medly/medly-components/commit/29dfc31348a1f57449593004206db5a4820783ea))
+
+
+
+
+
+## [1.37.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.37.0...@medly-components/core@1.37.1) (2020-12-07)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+# [1.37.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.36.2...@medly-components/core@1.37.0) (2020-12-07)
+
+
+### Bug Fixes
+
+* **core:** set width to 100% for Custom components in table cells to show ellipsis correctly ([cd954bd](https://github.com/medly/medly-components/commit/cd954bd6ac83a19ba860bccb4808e079142d9b41))
+* modal background scroll issue ([ad99cef](https://github.com/medly/medly-components/commit/ad99cef8ceb08d58e6c06014f5ffb14021eea70f))
+
+
+### Features
+
+* add pagination in table component ([a58a085](https://github.com/medly/medly-components/commit/a58a085aebc591c4a8a51fed6f1428fc4b9be7e2))
+
+
+
+
+
 ## [1.36.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.36.1...@medly-components/core@1.36.2) (2020-12-01)
 
 

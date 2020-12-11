@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.15.5](https://github.com/medly/medly-components/compare/@medly-components/forms@1.15.4...@medly-components/forms@1.15.5) (2020-12-11)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.15.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.15.3...@medly-components/forms@1.15.4) (2020-12-10)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.15.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.15.2...@medly-components/forms@1.15.3) (2020-12-10)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.15.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.15.1...@medly-components/forms@1.15.2) (2020-12-09)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.15.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.15.0...@medly-components/forms@1.15.1) (2020-12-08)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.15.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.14.5...@medly-components/forms@1.15.0) (2020-12-08)
+
+
+### Features
+
+* add loading state in button component ([a679cc5](https://github.com/medly/medly-components/commit/a679cc5240082597c0eb6ed24744c8e5cbb3ee14))
+
+
+
+
+
+## [1.14.5](https://github.com/medly/medly-components/compare/@medly-components/forms@1.14.4...@medly-components/forms@1.14.5) (2020-12-07)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.14.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.14.3...@medly-components/forms@1.14.4) (2020-12-07)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 ## [1.14.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.14.2...@medly-components/forms@1.14.3) (2020-12-01)
 
 **Note:** Version bump only for package @medly-components/forms

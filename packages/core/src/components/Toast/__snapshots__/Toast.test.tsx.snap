@@ -76,7 +76,10 @@ exports[`Toast should render action button 1`] = `
   align-items: center;
 }
 
-.c7 * {
+.c7,
+.c7 .c8,
+.c7 .c2,
+.c7 .c2 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }

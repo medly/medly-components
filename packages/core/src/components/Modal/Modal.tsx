@@ -41,6 +41,9 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
 
         useEffect(() => {
             document.body.style.overflow = shouldRender ? 'hidden' : 'unset';
+            return () => {
+                document.body.style.overflow = 'unset';
+            };
         }, [shouldRender]);
 
         return (

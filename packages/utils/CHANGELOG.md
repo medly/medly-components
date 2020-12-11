@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.2](https://github.com/medly/medly-components/compare/@medly-components/utils@1.8.1...@medly-components/utils@1.8.2) (2020-12-09)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.8.1](https://github.com/medly/medly-components/compare/@medly-components/utils@1.8.0...@medly-components/utils@1.8.1) (2020-12-08)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+# [1.8.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.7.1...@medly-components/utils@1.8.0) (2020-12-07)
+
+
+### Features
+
+* update Sidebar component to be open by default at 1025+ pixel viewport ([30e162f](https://github.com/medly/medly-components/commit/30e162f832d857a636db7115ced0bf134a6b59f4))
+
+
+
+
+
 ## [1.7.1](https://github.com/medly/medly-components/compare/@medly-components/utils@1.7.0...@medly-components/utils@1.7.1) (2020-12-01)
 
 **Note:** Version bump only for package @medly-components/utils

@@ -4,7 +4,7 @@ import { LoaderTheme } from './types';
 const loader: LoaderTheme = {
     sizes: {
         XXS: '32px',
-        XS: '44px',
+        XS: '48px',
         S: '56px',
         M: '68px',
         L: '80px',

@@ -13,7 +13,7 @@ const getStyle = (textColor: string, bgColor: string) => css`
     }
 `;
 
-export const solidButton = ({ theme }: Props) => {
+export const solidButton = ({ theme, isLoading }: Props) => {
     const { textColor, bgColor } = theme.button.solid;
     return css`
         &:disabled {
@@ -22,7 +22,7 @@ export const solidButton = ({ theme }: Props) => {
 
         &:not(:disabled) {
             &:not(:hover) {
-                ${getStyle(textColor.default, bgColor.default)}
+                ${getStyle(textColor.default, isLoading ? bgColor.hovered : bgColor.default)}
             }
             &:active {
                 ${getStyle(textColor.pressed, bgColor.pressed)}
