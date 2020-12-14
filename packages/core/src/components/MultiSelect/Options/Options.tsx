@@ -40,8 +40,15 @@ const Options: React.FC<OptionsProps> & WithStyle = React.memo(props => {
                 {values.length === 0 ? (
                     <p>-</p>
                 ) : (
-                    values.map(({ value, disabled }) => (
-                        <Chip id={`${id}-${value}-chip`} key={value} label={value} disabled={disabled} onClear={handleClearHandler} />
+                    values.map(({ value, label, disabled }) => (
+                        <Chip
+                            id={`${id}-${value}-chip`}
+                            key={value}
+                            value={value}
+                            label={label}
+                            disabled={disabled}
+                            onClear={handleClearHandler}
+                        />
                     ))
                 )}
             </Styled.ChipArea>
