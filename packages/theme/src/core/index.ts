@@ -9,6 +9,7 @@ import checkbox from './checkbox';
 import chip from './chip';
 import colors from './colors';
 import datePicker from './datePicker';
+import dialogBox from './dialog-box';
 import dateRangePicker from './dateRangePicker';
 import font from './font';
 import input from './input';
@@ -59,5 +60,6 @@ export const coreDefaultTheme = {
     textField,
     toast,
     toggle,
-    pagination
+    pagination,
+    dialogBox
 };

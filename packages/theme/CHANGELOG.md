@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.28.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.27.1...@medly-components/theme@1.28.0) (2020-12-11)
+
+
+### Features
+
+* **core:** core/dialog-box ([07b6e12](https://github.com/medly/medly-components/commit/07b6e12bdc187ad425c2526aa3e4e8f3d962a821))
+
+
+
+
+
 ## [1.27.1](https://github.com/medly/medly-components/compare/@medly-components/theme@1.27.0...@medly-components/theme@1.27.1) (2020-12-09)
 
 
