@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.40.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.39.0...@medly-components/core@1.40.0) (2020-12-14)
+
+
+### Bug Fixes
+
+* **core:** using label instead of value to display chip in multiselect filter ([8b2c658](https://github.com/medly/medly-components/commit/8b2c6584f90bd394ef8894a1673313a229032f93))
+
+
+### Features
+
+* **core:** expose dialogbox ([0e31864](https://github.com/medly/medly-components/commit/0e3186418e95127ea7f1d70eaea111592d949bf9))
+* **core:** update test ([f31887c](https://github.com/medly/medly-components/commit/f31887cff0f052e5e78d11a9d2bdc23c8d287786))
+
+
+
+
+
 # [1.39.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.38.5...@medly-components/core@1.39.0) (2020-12-11)
 
 
