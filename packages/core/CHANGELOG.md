@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.39.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.38.5...@medly-components/core@1.39.0) (2020-12-11)
+
+
+### Features
+
+* **core:** add disablescroll on background ([1f97169](https://github.com/medly/medly-components/commit/1f97169229b270ab785643a5353c641900e564b5))
+* **core:** added animation on dialogbox ([9f06f02](https://github.com/medly/medly-components/commit/9f06f020be6ce04a7d23ece0dd1aaaba0ea4c412))
+* **core:** added overflow y hidden on fade and update unused test ([f1053f4](https://github.com/medly/medly-components/commit/f1053f4203bcb466a66999059e15d6561d546fbb))
+* **core:** adjust action buttons ([4634f9a](https://github.com/medly/medly-components/commit/4634f9a3ddf42e312c93bf2ef3097cc5c11a0e3d))
+* **core:** adjust flex-direction for actions ([cf9b94d](https://github.com/medly/medly-components/commit/cf9b94dd52a99c8d93d9f343628583bf8f5a6c0f))
+* **core:** adjust overflow, remove issmallscreen ([0fe36e0](https://github.com/medly/medly-components/commit/0fe36e0f1db82c350bcc5bf71731d9a910e6d59d))
+* **core:** adjust padding and confirm scroll fn on dialogbox ([35ce483](https://github.com/medly/medly-components/commit/35ce483b40218ad4be9ed0081222f7c574810149))
+* **core:** adjust padding on dialog box ([c58baef](https://github.com/medly/medly-components/commit/c58baef6883da066733cd62ffc07661b36c28d60))
+* **core:** adjust the animation on close and open mobile dialogbox ([22c2bbf](https://github.com/medly/medly-components/commit/22c2bbffd64fcdbc3c88af1cf2f265afccb8d65d))
+* **core:** core/dialog-box ([07b6e12](https://github.com/medly/medly-components/commit/07b6e12bdc187ad425c2526aa3e4e8f3d962a821))
+* **core:** make sure tests are passing ([a67ade0](https://github.com/medly/medly-components/commit/a67ade005e96eda8270c077ecdc876c30a3ab2d8))
+* **core:** place maxwidth on buttons (single cta doesnt fill box) ([6a3cb66](https://github.com/medly/medly-components/commit/6a3cb661f1a680b16e6caaf6888952fe5d7ec965))
+* **core:** remove console.log ([596c9d9](https://github.com/medly/medly-components/commit/596c9d991c17974a2e8cdb08ec7e908f977116b7))
+* **core:** remove disabling closeonoutsideclick on mobile ([0d4c404](https://github.com/medly/medly-components/commit/0d4c4048ce9badf74f0051ade58af935ca476dca))
+* **core:** remove headerheight, adjust overflow y, and align margin with break point ([530b266](https://github.com/medly/medly-components/commit/530b266081830ef1fbcd4768667f9adf8a4850ad))
+* **core:** remove unnecessary inner container ([40dd86c](https://github.com/medly/medly-components/commit/40dd86cb39ce145f32b977ca615603f8a3e0146d))
+* **core:** removed unused scrollposition ([b0943ce](https://github.com/medly/medly-components/commit/b0943ce604b127a28a7f425805c5934c146b0939))
+* **core:** revert padding on action items ([cfad96f](https://github.com/medly/medly-components/commit/cfad96f528af4e751604693db827b5de01ff9d63))
+* **core:** update test ([5ceccbd](https://github.com/medly/medly-components/commit/5ceccbd6bb8ed03e4eba68a1705f6c86777f6b1b))
+* **core:** update test ([9f2e6da](https://github.com/medly/medly-components/commit/9f2e6da0a81e36747bd52febf30ed63be67234ae))
+* **core:** update test ([c04be5f](https://github.com/medly/medly-components/commit/c04be5f1579ed29ba4bf01e329ca5417460ab23f))
+* **core:** updated margin on mobile ([578861a](https://github.com/medly/medly-components/commit/578861a9bf46e05f1c581608fca9f072e4fe1a82))
+
+
+
+
+
 ## [1.38.5](https://github.com/medly/medly-components/compare/@medly-components/core@1.38.4...@medly-components/core@1.38.5) (2020-12-11)
 
 
