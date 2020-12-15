@@ -46,12 +46,13 @@ export const Month: React.FC<Props> = React.memo(
                             isSelectedEndDate = isSameDay(_date, endDate),
                             isInDateRange = startDate && endDate && _date < endDate && _date > startDate,
                             isInDateRangeHover =
-                                (startDate &&
+                                hoveredDate &&
+                                ((startDate &&
                                     !endDate &&
                                     ((_date > startDate && _date < hoveredDate) || (_date > hoveredDate && _date < startDate))) ||
-                                (!startDate &&
-                                    endDate &&
-                                    ((_date < endDate && _date > hoveredDate) || (_date > endDate && _date < hoveredDate))),
+                                    (!startDate &&
+                                        endDate &&
+                                        ((_date < endDate && _date > hoveredDate) || (_date > endDate && _date < hoveredDate)))),
                             isInActiveMonth = isSameMonth(_date, new Date(year, month, 1)),
                             isCurrentDate = isSameDay(_date, today),
                             isMonthFirstDate = new Date(year, month, 1).getDate() === _date.getDate(),

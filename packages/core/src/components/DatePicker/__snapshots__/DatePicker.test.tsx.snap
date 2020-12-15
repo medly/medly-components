@@ -12719,6 +12719,10 @@ exports[`DatePicker component should render properly when value is of date type 
   padding-right: 0.8rem;
 }
 
+.c1.c1.c1 .c0 input:focus {
+  box-shadow: unset;
+}
+
 .c1 .sc-fzpjYC {
   z-index: 1000;
   position: absolute;
@@ -13105,6 +13109,10 @@ exports[`DatePicker component should render properly when value is of string typ
 
 .c1 > .c0 > .c3 {
   padding-right: 0.8rem;
+}
+
+.c1.c1.c1 .c0 input:focus {
+  box-shadow: unset;
 }
 
 .c1 .sc-fzpjYC {

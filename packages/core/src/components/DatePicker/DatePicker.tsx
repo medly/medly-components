@@ -146,7 +146,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                 className={className}
                 placement={popoverPlacement}
             >
-                <TextField key={`${value}`} {...(isMobile ? mobileProps : desktopProps)} />
+                <TextField {...(isMobile ? mobileProps : desktopProps)} />
                 {showCalendar && (
                     <Calendar
                         id={`${id}-calendar`}

@@ -1,11 +1,16 @@
 import { cleanup, fireEvent, render, waitFor } from '@test-utils';
-import React from 'react';
+import React, { useState } from 'react';
 import { placements } from '../Popover/Popover.stories';
 import { DateRangePicker } from './DateRangePicker';
 import { DateRangeProps, DateRangeType } from './types';
 
+const DummyComponent = ({ value, ...restProps }: Omit<DateRangeProps, 'onChange'>) => {
+    const [dates, setDates] = useState<DateRangeType>(value);
+    return <DateRangePicker value={dates} onChange={setDates} {...restProps} />;
+};
+
 const renderComponent = (props?: any) => {
-    const defaultProps: DateRangeProps = {
+    const defaultProps: Omit<DateRangeProps, 'onChange'> = {
         value: { startDate: null, endDate: null },
         displayFormat: 'MM/dd/yyyy',
         id: 'contract',
@@ -18,10 +23,9 @@ const renderComponent = (props?: any) => {
         fullWidth: false,
         disabled: false,
         minSelectableDate: new Date(2020, 1, 1),
-        maxSelectableDate: new Date(2022, 2, 15),
-        onChange: jest.fn()
+        maxSelectableDate: new Date(2022, 2, 15)
     };
-    const renderUtils = render(<DateRangePicker {...defaultProps} {...props} />),
+    const renderUtils = render(<DummyComponent {...defaultProps} {...props} />),
         calendarIcon = renderUtils.container.querySelector('svg'),
         startDateInput = renderUtils.container.querySelector('#contract-startDate-input') as HTMLInputElement,
         endDateInput = renderUtils.container.querySelector('#contract-endDate-input') as HTMLInputElement;
@@ -148,6 +152,26 @@ describe('DateRangePicker', () => {
             fireEvent.mouseOver(getByTitle(dateToSelect.endDate.toDateString()));
             fireEvent.change(endDateInput, { target: { value: '02 / 05 / 2020' } });
             expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
+        });
+
+        it('should change display month on selecting startDate out of displayed months', async () => {
+            const { calendarIcon, startDateInput, findByText } = renderComponent({
+                value: { startDate: new Date(2020, 5, 2), endDate: null }
+            });
+            fireEvent.click(calendarIcon);
+            fireEvent.change(startDateInput, { target: { value: '01 / 03 / 2020' } });
+            const month = await findByText('January 2020');
+            expect(month).toBeInTheDocument();
+        });
+
+        it('should change display month on selecting endDate out of displayed months', async () => {
+            const { calendarIcon, endDateInput, findByText } = renderComponent({
+                value: { startDate: null, endDate: new Date(2020, 1, 5) }
+            });
+            fireEvent.click(calendarIcon);
+            fireEvent.change(endDateInput, { target: { value: '06 / 05 / 2020' } });
+            const month = await findByText('June 2020');
+            expect(month).toBeInTheDocument();
         });
 
         it('should call onChange with null if typed start date is invalid', async () => {

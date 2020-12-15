@@ -89,7 +89,7 @@ export const useForm = (initialState: object): UseFormResult => {
 
     const handleDateChange: Handlers['handleDateChange'] = useCallback(
         memoize((name, displayFormat) => value => {
-            setValues(val => ({ ...val, [name]: format(value, displayFormat || 'MM/dd/yyyy') }));
+            setValues(val => ({ ...val, [name]: value ? format(value, displayFormat || 'MM/dd/yyyy') : '' }));
         }),
         []
     );
@@ -98,7 +98,7 @@ export const useForm = (initialState: object): UseFormResult => {
         memoize((name, displayFormat) => value => {
             setValues(val => ({
                 ...val,
-                [`${name}.startDate`]: format(value.startDate, displayFormat || 'MM/dd/yyyy'),
+                [`${name}.startDate`]: value.startDate ? format(value.startDate, displayFormat || 'MM/dd/yyyy') : '',
                 [`${name}.endDate`]: value.endDate ? format(value.endDate, displayFormat || 'MM/dd/yyyy') : ''
             }));
         }),

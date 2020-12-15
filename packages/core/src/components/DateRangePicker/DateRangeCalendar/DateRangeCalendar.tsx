@@ -1,6 +1,6 @@
 import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear } from '../../Calendar/helper';
 import * as Styled from './DateRangeCalendar.styled';
 import Month from './Month';
@@ -73,6 +73,19 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
         setHoveredDate,
         onChange: handleDateSelection
     };
+
+    useEffect(() => {
+        selectedDates.startDate &&
+            !selectedDates.endDate &&
+            selectedDates.startDate.getMonth() !== month &&
+            selectedDates.startDate.getMonth() !== nextMonth &&
+            setMonthAndYear(getMonthAndYearFromDate(startDate));
+        selectedDates.endDate &&
+            !selectedDates.startDate &&
+            selectedDates.endDate.getMonth() !== month &&
+            selectedDates.endDate.getMonth() !== nextMonth &&
+            setMonthAndYear(getPreviousMonthAndYear(endDate.getMonth(), endDate.getFullYear()));
+    }, [selectedDates.startDate, selectedDates.endDate]);
 
     return (
         <Styled.DateRangeCalendar id={id} size={size} placement={placement} onClick={handleCalendarClick}>

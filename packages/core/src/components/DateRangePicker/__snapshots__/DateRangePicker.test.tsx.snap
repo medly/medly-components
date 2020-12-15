@@ -21883,6 +21883,10 @@ exports[`DateRangePicker should render properly 1`] = `
   margin-right: 0.8rem;
 }
 
+.c1.c1.c1 input:focus {
+  box-shadow: unset;
+}
+
 .c1:hover .c11 {
   border-color: #546A7F;
 }
