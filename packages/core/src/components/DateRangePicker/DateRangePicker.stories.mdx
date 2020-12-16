@@ -30,7 +30,7 @@ It's a controlled component. So we have to handle the state.
 
 ```tsx
 const [dates, setDates] = useState<DateRangeType>({ startDate: null, endDate: null });
-return <DatePicker value={dates} onChange={setDates} />;
+return <DateRangePicker value={dates} onChange={setDates} />;
 ```
 
 <Story name="DateRangePicker">
@@ -50,10 +50,11 @@ return <DatePicker value={dates} onChange={setDates} />;
                 variant={select('Variant', ['filled', 'outlined'], 'filled')}
                 fullWidth={boolean('Full Width', false)}
                 disabled={boolean('Disabled', false)}
+                withSingleMonth={boolean('With Single Month', false)}
                 errorText={text('Error Text', '')}
                 helperText={text('Helper Text', '')}
-                minSelectableDate={new Date(2020, 1, 1)}
-                maxSelectableDate={new Date(2022, 2, 15)}
+                minSelectableDate={new Date(1901, 0, 1)}
+                maxSelectableDate={new Date(2100, 11, 1)}
             />
         );
     }}

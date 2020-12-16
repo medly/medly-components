@@ -20,6 +20,7 @@ export const Month: React.FC<Props> = React.memo(
         maxSelectableDate,
         hoveredDate,
         setHoveredDate,
+        hideMonthText,
         ...restProps
     }) => {
         const today = new Date(),
@@ -34,9 +35,11 @@ export const Month: React.FC<Props> = React.memo(
 
         return (
             <Styled.Wrapper id={id} {...restProps}>
-                <Styled.MonthText id={`${id}-text`} textVariant="button1" textAlign="center">
-                    {`${LONG_CALENDAR_MONTHS[month]} ${year}`}
-                </Styled.MonthText>
+                {!hideMonthText && (
+                    <Styled.MonthText id={`${id}-text`} textVariant="button1" textAlign="center">
+                        {`${LONG_CALENDAR_MONTHS[month]} ${year}`}
+                    </Styled.MonthText>
+                )}
                 <CalendarStyled.CalendarGrid id={`${id}-grid`}>
                     <WeekDays />
                     {getCalendarDates(month, year).map((dateArray, index) => {
@@ -46,12 +49,13 @@ export const Month: React.FC<Props> = React.memo(
                             isSelectedEndDate = isSameDay(_date, endDate),
                             isInDateRange = startDate && endDate && _date < endDate && _date > startDate,
                             isInDateRangeHover =
-                                (startDate &&
+                                hoveredDate &&
+                                ((startDate &&
                                     !endDate &&
                                     ((_date > startDate && _date < hoveredDate) || (_date > hoveredDate && _date < startDate))) ||
-                                (!startDate &&
-                                    endDate &&
-                                    ((_date < endDate && _date > hoveredDate) || (_date > endDate && _date < hoveredDate))),
+                                    (!startDate &&
+                                        endDate &&
+                                        ((_date < endDate && _date > hoveredDate) || (_date > endDate && _date < hoveredDate)))),
                             isInActiveMonth = isSameMonth(_date, new Date(year, month, 1)),
                             isCurrentDate = isSameDay(_date, today),
                             isMonthFirstDate = new Date(year, month, 1).getDate() === _date.getDate(),

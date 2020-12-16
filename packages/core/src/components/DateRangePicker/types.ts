@@ -37,4 +37,6 @@ export type DateRangeProps = Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size'
     startDateLabel?: string;
     /** End date Label */
     endDateLabel?: string;
+    /** Set it true to show single month in calendar popup */
+    withSingleMonth?: boolean;
 };

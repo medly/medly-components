@@ -1,18 +1,34 @@
-import { styled } from '@medly-components/utils';
+import { css, styled } from '@medly-components/utils';
 import * as DatePickerStyled from '../../Calendar/Calendar.styled';
 import { getPosition } from '../../Popover/Popup/styled/Popup.styled';
 import { Placement } from '../../Popover/types';
 import { CalendarAnimationTypes } from './types';
 
-export const NavigatorIcon = styled(DatePickerStyled.MonthNavigation)<{ align: 'left' | 'right' }>`
-    z-index: 1;
-    top: 2.5rem;
-    position: absolute;
-    left: ${({ align }) => align === 'left' && `3.2rem`};
-    right: ${({ align }) => align === 'right' && `3.2rem`};
-`;
+export const navigators = css`
+        ${DatePickerStyled.MonthNavigation} {
+            z-index: 1;
+            top: 2rem;
+            position: absolute;
+            &:first-child {
+                left: 2rem;
+            }
+            &:last-child {
+                right: 2rem;
+            }
+        }
+    `,
+    monthSeparator = css`
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            border-left: 1px solid ${({ theme }) => theme.dateRangePicker.inputSeparatorColor.filled.default};
+        }
+    `;
 
-export const DateRangeCalendar = styled(DatePickerStyled.Calendar)<{ size: 'S' | 'M'; placement: Placement }>`
+export const DateRangeCalendar = styled(DatePickerStyled.Calendar)<{ size: 'S' | 'M'; placement: Placement; withSingleMonth?: boolean }>`
     z-index: 10;
     position: absolute;
     overflow: hidden;
@@ -21,14 +37,18 @@ export const DateRangeCalendar = styled(DatePickerStyled.Calendar)<{ size: 'S' |
     top: ${({ size, placement }) =>
         (placement === 'bottom' || placement === 'bottom-start' || placement === 'bottom-end') && (size === 'S' ? '4rem' : '5.6rem')};
 
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        height: 100%;
-        border-left: 1px solid ${({ theme }) => theme.dateRangePicker.inputSeparatorColor.filled.default};
-    }
+    ${({ withSingleMonth }) =>
+        !withSingleMonth &&
+        css`
+            ${navigators}
+            ${monthSeparator}
+        `}
+`;
+export const Header = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 `;
 
 export const MonthsWrapper = styled.div<{ slideDirection: CalendarAnimationTypes }>`

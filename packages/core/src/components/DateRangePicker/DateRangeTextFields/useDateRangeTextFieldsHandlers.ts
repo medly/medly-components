@@ -55,11 +55,17 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
                 if (e.target.name === 'START_DATE') {
                     setStartDateText(maskedValue);
                     setStartDateMaskLabel(maskedLabel);
-                    parsedDate.toString() !== 'Invalid Date' && onDateChange({ ...selectedDates, startDate: parsedDate });
+                    if (parsedDate.toString() !== 'Invalid Date') {
+                        setFocusedElement('END_DATE');
+                        onDateChange({ ...selectedDates, startDate: parsedDate });
+                    }
                 } else {
                     setEndDateText(maskedValue);
                     setEndDateMaskLabel(maskedLabel);
-                    parsedDate.toString() !== 'Invalid Date' && onDateChange({ ...selectedDates, endDate: parsedDate });
+                    if (parsedDate.toString() !== 'Invalid Date') {
+                        setFocusedElement('START_DATE');
+                        onDateChange({ ...selectedDates, endDate: parsedDate });
+                    }
                 }
             },
             [selectedDates, onDateChange]
