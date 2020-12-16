@@ -26,4 +26,6 @@ export type HeadCellProps = HeadCellStyledProps & {
     onWidthChange?: (width: number, key: string) => void;
     onSortChange?: (field: string, order: SortOrder) => void;
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
+    hiddenDivRef?: React.MutableRefObject<any>;
+    addColumnMaxSize?: (field: string, value: number) => void;
 };

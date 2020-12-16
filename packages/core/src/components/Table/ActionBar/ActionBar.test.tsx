@@ -2,7 +2,7 @@ import { RemoveCircleIcon } from '@medly-components/icons';
 import { cleanup, render } from '@test-utils';
 import React from 'react';
 import { Button } from '../..';
-import { TablePropsContext } from '../context/TableProps.context';
+import { TableComponentsCommonPropsContext } from '../context/TableComponentsCommonProps.context';
 import { ActionBar } from './ActionBar';
 
 describe('ActionBar component', () => {
@@ -14,9 +14,9 @@ describe('ActionBar component', () => {
     );
     const renderer = (props: any = { selectedRowIds: [1], actions: [getButtonElement('Lorem')] }) => {
         return render(
-            <TablePropsContext.Provider value={{ ...props }}>
+            <TableComponentsCommonPropsContext.Provider value={{ ...props }}>
                 <ActionBar />
-            </TablePropsContext.Provider>
+            </TableComponentsCommonPropsContext.Provider>
         );
     };
 

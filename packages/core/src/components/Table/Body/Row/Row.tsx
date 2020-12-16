@@ -1,5 +1,5 @@
 import React, { useCallback, useContext, useMemo, useState } from 'react';
-import { TablePropsContext } from '../../context';
+import { TableComponentsCommonPropsContext } from '../../context';
 import { GroupCell } from '../../GroupCell';
 import { getGridTemplateColumns } from '../../helpers';
 import { TableColumnConfig } from '../../types';
@@ -11,12 +11,13 @@ import { Props } from './types';
 
 export const Row: React.FC<Props> = React.memo(props => {
     const [isExpanded, setExpansionState] = useState(false),
-        { id, data, showShadowAfterFrozenElement, selectedRowIds, onRowSelection, addColumnMaxSize, ...restProps } = props,
+        { id, data, showShadowAfterFrozenElement, selectedRowIds, onRowSelection, ...restProps } = props,
         {
             columns,
             isLoading,
             onRowClick,
             hiddenDivRef,
+            addColumnMaxSize,
             rowClickDisableKey,
             rowSelectionDisableKey,
             isRowSelectable,
@@ -25,7 +26,7 @@ export const Row: React.FC<Props> = React.memo(props => {
             showRowWithCardStyle,
             size: tableSize,
             expandedRowComponent
-        } = useContext(TablePropsContext);
+        } = useContext(TableComponentsCommonPropsContext);
 
     const isRowSelected = useMemo(() => !isLoading && selectedRowIds.includes(id), [id, isLoading, selectedRowIds]),
         isRowClickDisabled = useMemo(() => data[rowClickDisableKey], [data, rowClickDisableKey]),

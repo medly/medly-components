@@ -1,7 +1,7 @@
 import { useUpdateEffect } from '@medly-components/utils';
 import React, { useCallback, useContext, useMemo, useState } from 'react';
 import { loadingBodyData } from '../../constants';
-import { TablePropsContext } from '../../context';
+import { TableComponentsCommonPropsContext } from '../../context';
 import { Data } from '../../types';
 import useRowSelector from '../../useRowSelector';
 import ContentRow from './ContentRow';
@@ -9,13 +9,20 @@ import TitleRow from './TitleRow';
 import { Props } from './types';
 
 export const GroupedRow: React.FC<Props> = React.memo(props => {
-    const tableProps = useContext(TablePropsContext),
-        { columns, groupBy, rowIdentifier, getGroupedData, rowSelectionDisableKey, isLoading: isTableLoading } = tableProps,
+    const tableProps = useContext(TableComponentsCommonPropsContext),
+        {
+            columns,
+            groupBy,
+            rowIdentifier,
+            getGroupedData,
+            rowSelectionDisableKey,
+            addColumnMaxSize,
+            isLoading: isTableLoading
+        } = tableProps,
         {
             id,
             setUniqueIds,
             titleRowData,
-            addColumnMaxSize,
             selectedTitleRowIds,
             onTitleRowSelection,
             showShadowAfterFrozenElement,
@@ -94,7 +101,7 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
                 isRowSelectionDisabled={isLoading || isTitleRowSelectionDisable}
                 showShadowAfterFrozenElement={showShadowAfterFrozenElement}
             />
-            <TablePropsContext.Provider value={{ ...tableProps, columns: columns.slice(1), isLoading }}>
+            <TableComponentsCommonPropsContext.Provider value={{ ...tableProps, columns: columns.slice(1), isLoading }}>
                 <ContentRow
                     {...{
                         addColumnMaxSize,
@@ -106,7 +113,7 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
                         isRowExpanded: !isTableLoading && isRowExpanded
                     }}
                 />
-            </TablePropsContext.Provider>
+            </TableComponentsCommonPropsContext.Provider>
         </>
     );
 });

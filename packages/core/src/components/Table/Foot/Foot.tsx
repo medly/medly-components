@@ -1,16 +1,19 @@
 import React, { useCallback, useContext, useMemo } from 'react';
 import Pagination from '../../Pagination';
 import Text from '../../Text';
-import { TablePropsContext, TableStateContext } from '../context';
+import { TableComponentsCommonPropsContext, TableStateContext } from '../context';
 import { FootRow, TFoot } from './Foot.styled';
 
 export const Foot: React.FC = React.memo(() => {
     const [{ activePage }, setTableState] = useContext(TableStateContext),
-        { onPageChange, totalItems, itemsPerPage, showRowWithCardStyle } = useContext(TablePropsContext),
-        dataRange = useMemo(() => `${itemsPerPage * (activePage - 1) + 1} - ${itemsPerPage * (activePage - 1) + (totalItems < itemsPerPage ? totalItems : itemsPerPage)}`, [
-            itemsPerPage,
-            activePage
-        ]);
+        { onPageChange, totalItems, itemsPerPage, showRowWithCardStyle } = useContext(TableComponentsCommonPropsContext),
+        dataRange = useMemo(
+            () =>
+                `${itemsPerPage * (activePage - 1) + 1} - ${
+                    itemsPerPage * (activePage - 1) + (totalItems < itemsPerPage ? totalItems : itemsPerPage)
+                }`,
+            [itemsPerPage, activePage]
+        );
 
     const handlePageClick = useCallback(
         (page: number) => {

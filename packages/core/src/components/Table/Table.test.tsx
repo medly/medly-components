@@ -14,17 +14,17 @@ describe('Table component', () => {
     });
 
     describe('pagination', () => {
-        const mockOnPageChange = jest.fn();
-        const props = {
-            withPagination: true,
-            totalItems: 300,
-            itemsPerPage: 10,
-            defaultActivePage: 1,
-            onPageChange: mockOnPageChange
-        }
+        const mockOnPageChange = jest.fn(),
+            commonProps = {
+                withPagination: true,
+                totalItems: 300,
+                itemsPerPage: 10,
+                defaultActivePage: 1,
+                onPageChange: mockOnPageChange
+            };
 
         it('should call onPageChange prop on click on any page', () => {
-            const { container } = renderTable({ ...props, defaultActivePage: 2 });
+            const { container } = renderTable({ ...commonProps, defaultActivePage: 2 });
             expect(container).toMatchSnapshot();
             // @ts-ignore
             fireEvent.click(screen.getByRole('heading', { level: 5, name: '3' }));
@@ -35,15 +35,15 @@ describe('Table component', () => {
         });
 
         it('should display 1 to 5 in results text if total entries is less than items per page', () => {
-            const { queryByText } = renderTable({ ...props, totalItems: 5 });
+            const { queryByText } = renderTable({ ...commonProps, totalItems: 5 });
             expect(queryByText('1 - 5')).toBeInTheDocument();
         });
 
         it('should display 1 to 10 in results text if total entries is greater than items per page', () => {
             const { queryByText } = renderTable({
-                ...props,
+                ...commonProps,
                 totalItems: 50,
-                itemsPerPage: 10,
+                itemsPerPage: 10
             });
             expect(queryByText('1 - 10')).toBeInTheDocument();
             expect(queryByText('50')).toBeInTheDocument();

@@ -21,6 +21,8 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
         onWidthChange,
         columnMaxSize,
         tableSize,
+        hiddenDivRef,
+        addColumnMaxSize,
         ...restProps
     } = props;
 
@@ -34,6 +36,14 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
     useEffect(() => {
         cellEl && props.fitContent && onWidthChange(columnMaxSize, field);
     }, [columnMaxSize]);
+
+    useEffect(() => {
+        if (!isLoading && addColumnMaxSize && hiddenDivRef.current) {
+            hiddenDivRef.current.innerHTML = children;
+            const currentSize = hiddenDivRef.current.clientWidth;
+            currentSize > 0 && addColumnMaxSize(field, currentSize + (tableSize === 'L' ? 72 : 56));
+        }
+    }, [children, isLoading, addColumnMaxSize, tableSize]);
 
     const onMouseMove = (e: MouseEvent) => {
         requestAnimationFrame(() => {
