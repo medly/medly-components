@@ -1,5 +1,4 @@
 import { centerAligned, css, styled } from '@medly-components/utils';
-import TextField from '../TextField';
 import { DateProps } from './types';
 
 export const Calendar = styled('div')`
@@ -37,27 +36,6 @@ export const Header = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-`;
-
-export const MonthAndYearSelection = styled.div`
-    display: flex;
-    margin: 0.5rem 0;
-    align-items: center;
-    justify-content: space-around;
-
-    ul {
-        max-height: 20rem;
-        overflow: auto;
-    }
-
-    ${TextField.Style} {
-        min-width: unset;
-        max-width: 9.5rem;
-        & > div {
-            height: 3.5rem;
-            padding: 0 0 0 1rem;
-        }
-    }
 `;
 
 export const CalendarGrid = styled.div`

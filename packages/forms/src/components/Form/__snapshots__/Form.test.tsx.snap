@@ -1070,6 +1070,10 @@ exports[`Form should render properly with initial state 1`] = `
   padding-right: 0.8rem;
 }
 
+.c41.c41.c41 .c2 input:focus {
+  box-shadow: unset;
+}
+
 .c41 .sc-fzoJMP {
   z-index: 1000;
   position: absolute;
@@ -1207,6 +1211,10 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c49 .c30 {
   margin-right: 0.8rem;
+}
+
+.c49.c49.c49 input:focus {
+  box-shadow: unset;
 }
 
 .c49:hover .c50 {
@@ -3368,6 +3376,10 @@ exports[`Form should render properly without initial state 1`] = `
   padding-right: 0.8rem;
 }
 
+.c41.c41.c41 .c5 input:focus {
+  box-shadow: unset;
+}
+
 .c41 .sc-fzoJMP {
   z-index: 1000;
   position: absolute;
@@ -3505,6 +3517,10 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c49 .c32 {
   margin-right: 0.8rem;
+}
+
+.c49.c49.c49 input:focus {
+  box-shadow: unset;
 }
 
 .c49:hover .c50 {

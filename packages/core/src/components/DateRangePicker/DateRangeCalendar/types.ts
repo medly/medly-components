@@ -10,6 +10,7 @@ export type Props = {
     selectedDates: DateRangeProps['value'];
     minSelectableDate: Date;
     maxSelectableDate: Date;
+    withSingleMonth: boolean;
     focusedElement: 'START_DATE' | 'END_DATE';
     onDateSelection: DateRangeProps['onChange'];
     setFocusedElement: React.Dispatch<React.SetStateAction<'START_DATE' | 'END_DATE'>>;
