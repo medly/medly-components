@@ -1,7 +1,7 @@
 import { ExpandMoreIcon } from '@medly-components/icons';
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import Text from '../../../../Text';
-import { TablePropsContext } from '../../../context';
+import { TableComponentsCommonPropsContext } from '../../../context';
 import { getGridTemplateColumns } from '../../../helpers';
 import RowActionsCell from '../../Cell/RowActionsCell';
 import { LoadingDiv } from '../../Cell/Styled';
@@ -21,7 +21,7 @@ export const TitleRow: React.FC<Props> = React.memo(props => {
             isRowExpandable,
             showRowWithCardStyle,
             size: tableSize
-        } = useContext(TablePropsContext);
+        } = useContext(TableComponentsCommonPropsContext);
 
     // @ts-ignore
     const observer = useRef(new ResizeObserver(entries => setTableWidth(entries[0].contentRect.width)));

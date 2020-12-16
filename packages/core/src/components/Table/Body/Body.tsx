@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { TablePropsContext } from '../context';
+import { TableComponentsCommonPropsContext } from '../context';
 import { TBody } from './Body.styled';
 import GroupedRow from './GroupedRow';
 import Row from './Row';
@@ -7,7 +7,7 @@ import { NoResultCell, NoResultRow } from './Row/Row.styled';
 import { Props } from './types';
 
 const Body: React.FC<Props> = React.memo(props => {
-    const { data, groupBy, rowIdentifier, showRowWithCardStyle } = useContext(TablePropsContext),
+    const { data, groupBy, rowIdentifier, showRowWithCardStyle } = useContext(TableComponentsCommonPropsContext),
         { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, ...restProps } = props;
 
     return (

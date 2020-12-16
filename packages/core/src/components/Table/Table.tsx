@@ -4,7 +4,7 @@ import ActionBar from './ActionBar';
 import Body from './Body';
 import ColumnConfiguration from './ColumnConfiguration';
 import { loadingBodyData } from './constants';
-import { TablePropsContext, TableStateContext } from './context';
+import { TableComponentsCommonPropsContext, TableStateContext } from './context';
 import Foot from './Foot';
 import Head from './Head';
 import { getUpdatedColumns } from './helpers';
@@ -80,8 +80,17 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
 
         return (
             <TableStateContext.Provider value={tableState}>
-                <TablePropsContext.Provider
-                    value={{ ...props, columns, size, data: isLoading ? loadingBodyData : data, isGroupedTable, tableRef, hiddenDivRef }}
+                <TableComponentsCommonPropsContext.Provider
+                    value={{
+                        ...props,
+                        columns,
+                        size,
+                        data: isLoading ? loadingBodyData : data,
+                        isGroupedTable,
+                        tableRef,
+                        hiddenDivRef,
+                        addColumnMaxSize
+                    }}
                 >
                     <HiddenDiv ref={hiddenDivRef} />
                     {withActionBar && selectedRowIds.length > 0 && <ActionBar />}
@@ -107,7 +116,6 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                         />
                         <Body
                             {...{
-                                addColumnMaxSize,
                                 setUniqueIds,
                                 setSelectAllDisableState,
                                 selectedRowIds: isGroupedTable ? selectedGroupIds : selectedRowIds,
@@ -118,7 +126,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                         />
                         {withPagination && <Foot />}
                     </TableStyled>
-                </TablePropsContext.Provider>
+                </TableComponentsCommonPropsContext.Provider>
             </TableStateContext.Provider>
         );
     })

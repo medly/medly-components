@@ -1,12 +1,12 @@
 import React, { useCallback, useContext } from 'react';
-import { TablePropsContext } from '../../../context';
+import { TableComponentsCommonPropsContext } from '../../../context';
 import Row from '../../Row';
 import { BlankCell, ContentRowStyled, DataCell } from './ContentRow.styled';
 import { Props } from './types';
 
 export const ContentRow: React.FC<Props> = React.memo(props => {
     const { data, ...restProps } = props,
-        { rowIdentifier, size } = useContext(TablePropsContext);
+        { rowIdentifier, size } = useContext(TableComponentsCommonPropsContext);
 
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
 

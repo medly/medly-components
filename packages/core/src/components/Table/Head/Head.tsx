@@ -1,6 +1,6 @@
 import React, { useCallback, useContext, useMemo } from 'react';
 import Checkbox from '../../Checkbox';
-import { TablePropsContext, TableStateContext } from '../context';
+import { TableComponentsCommonPropsContext, TableStateContext } from '../context';
 import { GroupCell, GroupCellTitle } from '../GroupCell';
 import { changeSize, getGridTemplateColumns } from '../helpers';
 import { SortOrder, TableColumnConfig } from '../types';
@@ -19,8 +19,10 @@ const Head: React.FC<Props> = React.memo(props => {
             defaultSortOrder,
             size: tableSize,
             isGroupedTable,
+            hiddenDivRef,
+            addColumnMaxSize,
             showRowWithCardStyle
-        } = useContext(TablePropsContext),
+        } = useContext(TableComponentsCommonPropsContext),
         {
             setColumns,
             isAnyRowSelected,
@@ -96,6 +98,8 @@ const Head: React.FC<Props> = React.memo(props => {
                             isRowExpandable={isRowExpandable}
                             tableSize={tableSize}
                             isGroupedTable={isGroupedTable}
+                            hiddenDivRef={hiddenDivRef}
+                            addColumnMaxSize={addColumnMaxSize}
                             isRowActionCell={config.field === 'row-actions'}
                             showShadowAtRight={config.field === 'row-actions' && showShadowAfterFrozenElement}
                         >
@@ -103,7 +107,16 @@ const Head: React.FC<Props> = React.memo(props => {
                         </HeadCell>
                     );
                 }),
-            [tableSize, isRowExpandable, isRowSelectable, sortField, maxColumnSizes, selectAllCheckBox, showShadowAfterFrozenElement]
+            [
+                tableSize,
+                isRowExpandable,
+                isRowSelectable,
+                sortField,
+                addColumnMaxSize,
+                maxColumnSizes,
+                selectAllCheckBox,
+                showShadowAfterFrozenElement
+            ]
         );
 
     return (
