@@ -50,6 +50,7 @@ return <DateRangePicker value={dates} onChange={setDates} />;
                 variant={select('Variant', ['filled', 'outlined'], 'filled')}
                 fullWidth={boolean('Full Width', false)}
                 disabled={boolean('Disabled', false)}
+                withSingleMonth={boolean('With Single Month', false)}
                 errorText={text('Error Text', '')}
                 helperText={text('Helper Text', '')}
                 minSelectableDate={new Date(1901, 0, 1)}

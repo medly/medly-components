@@ -26,6 +26,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         onChange,
         required,
         validator,
+        withSingleMonth,
         ...restProps
     } = props;
     const startDateRef = useRef<HTMLInputElement>(null),
@@ -68,6 +69,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                     placement={popoverPlacement}
                     selectedDates={value}
                     setActive={setActive}
+                    withSingleMonth={withSingleMonth}
                     focusElement={focusElement}
                     onDateSelection={onChange}
                     focusedElement={focusedElement}
@@ -90,6 +92,7 @@ DateRangePicker.defaultProps = {
     endDateLabel: 'To',
     displayFormat: 'MM-dd-yyyy',
     popoverPlacement: 'bottom-start',
+    withSingleMonth: false,
     minSelectableDate: new Date(1901, 0, 1),
     maxSelectableDate: new Date(2100, 11, 1)
 };

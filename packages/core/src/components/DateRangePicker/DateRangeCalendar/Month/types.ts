@@ -10,6 +10,7 @@ export type Props = Omit<CalendarProps, 'size' | 'date'> & {
     minSelectableDate?: Date;
     maxSelectableDate?: Date;
     hoveredDate?: Date;
+    hideMonthText?: boolean;
     onChange: (date: Date) => void;
     setHoveredDate?: (date: Date | null) => void;
 };

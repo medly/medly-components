@@ -1,7 +1,9 @@
 import { KeyboardArrowLeftIcon, KeyboardArrowRightIcon } from '@medly-components/icons';
 import { WithStyle } from '@medly-components/utils';
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import * as DatePickerStyled from '../../Calendar/Calendar.styled';
 import { getMonthAndYearFromDate, getNextMonthAndYear, getPreviousMonthAndYear } from '../../Calendar/helper';
+import MonthAndYearSelection from '../../Calendar/MonthAndYearSelection';
 import * as Styled from './DateRangeCalendar.styled';
 import Month from './Month';
 import { CalendarAnimationTypes, Props } from './types';
@@ -18,7 +20,8 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
             setFocusedElement,
             onDateSelection,
             minSelectableDate,
-            maxSelectableDate
+            maxSelectableDate,
+            withSingleMonth
         } = props,
         { startDate, endDate } = selectedDates;
 
@@ -52,6 +55,10 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
             focusElement(focusedElement);
             setActive(true);
         }, [focusedElement]),
+        handleMonthAndYearChange = useCallback((val: { month: number; year: number }) => {
+            handleCalendarClick();
+            setMonthAndYear(val);
+        }, []),
         handleAnimationEnd = useCallback(() => {
             if (slideDirection === 'move-out-left' || slideDirection === 'move-out-right') {
                 if (slideDirection === 'move-out-left') {
@@ -88,21 +95,33 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
     }, [selectedDates.startDate, selectedDates.endDate]);
 
     return (
-        <Styled.DateRangeCalendar id={id} size={size} placement={placement} onClick={handleCalendarClick}>
-            <Styled.NavigatorIcon id={`${id}-navigation-backward`} align="left" onClick={handlePrevIconClick}>
-                <KeyboardArrowLeftIcon />
-            </Styled.NavigatorIcon>
-            <Styled.NavigatorIcon id={`${id}-navigation-forward`} align="right" onClick={handleNextIconClick}>
-                <KeyboardArrowRightIcon />
-            </Styled.NavigatorIcon>
+        <Styled.DateRangeCalendar id={id} size={size} placement={placement} onClick={handleCalendarClick} withSingleMonth={withSingleMonth}>
+            <Styled.Header>
+                {withSingleMonth && (
+                    <MonthAndYearSelection
+                        id={id}
+                        month={month}
+                        year={year}
+                        onChange={handleMonthAndYearChange}
+                        minSelectableDate={minSelectableDate}
+                        maxSelectableDate={maxSelectableDate}
+                    />
+                )}
+                <DatePickerStyled.MonthNavigation id={`${id}-navigation-backward`} onClick={handlePrevIconClick}>
+                    <KeyboardArrowLeftIcon />
+                </DatePickerStyled.MonthNavigation>
+                <DatePickerStyled.MonthNavigation id={`${id}-navigation-forward`} onClick={handleNextIconClick}>
+                    <KeyboardArrowRightIcon />
+                </DatePickerStyled.MonthNavigation>
+            </Styled.Header>
             <Styled.MonthsWrapper
                 key={month}
                 id={`${id}-months-wrapper`}
                 slideDirection={slideDirection}
                 onAnimationEnd={handleAnimationEnd}
             >
-                <Month id={`${id}-${month}-month`} month={month} year={year} {...commonProps} />
-                <Month id={`${id}-${nextMonth}-month`} month={nextMonth} year={nextYear} {...commonProps} />
+                <Month id={`${id}-${month}-month`} month={month} year={year} {...commonProps} hideMonthText={withSingleMonth} />
+                {!withSingleMonth && <Month id={`${id}-${nextMonth}-month`} month={nextMonth} year={nextYear} {...commonProps} />}
             </Styled.MonthsWrapper>
         </Styled.DateRangeCalendar>
     );

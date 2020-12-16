@@ -37,7 +37,16 @@ describe('DateRangePicker', () => {
     afterEach(cleanup);
 
     it('should render properly', () => {
-        const { container } = renderComponent();
+        const { container, calendarIcon } = renderComponent();
+        fireEvent.click(calendarIcon);
+        expect(container.querySelector('#contract-calendar')).toBeVisible();
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should render properly with single month', () => {
+        const { container, calendarIcon } = renderComponent({ withSingleMonth: true });
+        fireEvent.click(calendarIcon);
+        expect(container.querySelector('#contract-calendar')).toBeVisible();
         expect(container).toMatchSnapshot();
     });
 
@@ -120,6 +129,18 @@ describe('DateRangePicker', () => {
                 fireEvent.animationEnd(container.querySelector('#contract-calendar-months-wrapper'));
                 const expectedMonth = await findByText(`${month} 2021`);
                 expect(expectedMonth).toBeInTheDocument();
+            });
+
+            it('should change month on selecting month and year from dropdown in single month calendar', () => {
+                const dateToSelect = new Date(2021, 1, 1),
+                    { container, calendarIcon, getByText, getByTitle } = renderComponent({ withSingleMonth: true });
+                fireEvent.click(calendarIcon);
+                expect(container.querySelector('#contract-calendar')).toBeVisible();
+                fireEvent.click(container.querySelector('#contract-calendar-month-selector-button'));
+                fireEvent.click(getByText('Feb'));
+                fireEvent.click(container.querySelector('#contract-calendar-year-selector-button'));
+                fireEvent.click(getByText('2021'));
+                expect(getByTitle(dateToSelect.toDateString())).toBeInTheDocument();
             });
         });
     });

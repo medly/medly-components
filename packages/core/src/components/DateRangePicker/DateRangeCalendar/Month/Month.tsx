@@ -20,6 +20,7 @@ export const Month: React.FC<Props> = React.memo(
         maxSelectableDate,
         hoveredDate,
         setHoveredDate,
+        hideMonthText,
         ...restProps
     }) => {
         const today = new Date(),
@@ -34,9 +35,11 @@ export const Month: React.FC<Props> = React.memo(
 
         return (
             <Styled.Wrapper id={id} {...restProps}>
-                <Styled.MonthText id={`${id}-text`} textVariant="button1" textAlign="center">
-                    {`${LONG_CALENDAR_MONTHS[month]} ${year}`}
-                </Styled.MonthText>
+                {!hideMonthText && (
+                    <Styled.MonthText id={`${id}-text`} textVariant="button1" textAlign="center">
+                        {`${LONG_CALENDAR_MONTHS[month]} ${year}`}
+                    </Styled.MonthText>
+                )}
                 <CalendarStyled.CalendarGrid id={`${id}-grid`}>
                     <WeekDays />
                     {getCalendarDates(month, year).map((dateArray, index) => {
