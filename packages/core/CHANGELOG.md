@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.41.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.40.0...@medly-components/core@1.41.0) (2020-12-16)
+
+
+### Bug Fixes
+
+* **core:** display correct total items if they are less than items per page ([1eb2714](https://github.com/medly/medly-components/commit/1eb2714a9d960197913e55fadabb8b8f63582ad2))
+* mask issue in date inputs ([3a46d0a](https://github.com/medly/medly-components/commit/3a46d0aeff6b96f7b703fa5e6c5a9d6450481074))
+
+
+### Features
+
+* add single month option in date range picker component ([c302b78](https://github.com/medly/medly-components/commit/c302b78ef21ea43b9e590206f335c5262df62d3b))
+* consider headers width also in fitContent functionality ([3c33a8b](https://github.com/medly/medly-components/commit/3c33a8b87e9a275acfc277ec800fa7eb143f3775))
+
+
+
+
+
 # [1.40.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.39.0...@medly-components/core@1.40.0) (2020-12-14)
 
 

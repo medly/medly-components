@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.16.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.16.0...@medly-components/forms@1.16.1) (2020-12-16)
+
+
+### Bug Fixes
+
+* mask issue in date inputs ([3a46d0a](https://github.com/medly/medly-components/commit/3a46d0aeff6b96f7b703fa5e6c5a9d6450481074))
+
+
+
+
+
 # [1.16.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.15.6...@medly-components/forms@1.16.0) (2020-12-14)
 
 
