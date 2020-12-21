@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.41.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.41.0...@medly-components/core@1.41.1) (2020-12-21)
+
+
+### Bug Fixes
+
+* event type null issue in DateRangePicker validator function ([9c92560](https://github.com/medly/medly-components/commit/9c9256084e3f9fa95a3c3146067807dad46f555c))
+
+
+
+
+
 # [1.41.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.40.0...@medly-components/core@1.41.0) (2020-12-16)
 
 
