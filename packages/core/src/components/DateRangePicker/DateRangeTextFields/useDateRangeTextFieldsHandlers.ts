@@ -90,7 +90,7 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
             (event: FormEvent<HTMLInputElement>) => {
                 event.preventDefault();
                 const element = event.target as HTMLInputElement,
-                    validatorMessage = (validator && validator(selectedDates, event.type)) || '',
+                    validatorMessage = (validator && validator(selectedDates, 'invalid')) || '',
                     isInvalidDate = element.value && parseToDate(element.value, displayFormat).toString() === 'Invalid Date',
                     message = validator ? validatorMessage : element.validationMessage || (isInvalidDate && 'Enter valid date');
                 setErrorMessage(message);
@@ -104,7 +104,7 @@ export const useDateRangeTextFieldsHandlers = (props: Props) => {
                 const currentTarget = event.currentTarget;
                 setTimeout(() => {
                     if (!currentTarget.contains(document.activeElement)) {
-                        const validatorMessage = (validator && validator(selectedDates, event.type)) || '',
+                        const validatorMessage = (validator && validator(selectedDates, 'blur')) || '',
                             customMessage = required && !selectedDates.startDate && !selectedDates.endDate && 'Please fill in this field.',
                             message = validator ? validatorMessage : customMessage;
                         setErrorMessage(message);
