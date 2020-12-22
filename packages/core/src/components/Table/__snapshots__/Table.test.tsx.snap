@@ -115,6 +115,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
 .c0 {
   position: absolute;
   left: -1000px;
+  opacity: 0;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -1624,6 +1625,7 @@ exports[`Table component should render properly 1`] = `
 .c0 {
   position: absolute;
   left: -1000px;
+  opacity: 0;
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
