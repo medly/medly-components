@@ -4,6 +4,7 @@ import { TableStyledProps } from './types';
 export const HiddenDiv = styled('div')`
     position: absolute;
     left: -1000px;
+    opacity: 0;
     ${({ theme }) => getFontStyle({ theme, fontVariant: 'body2' })}
 `;
 
