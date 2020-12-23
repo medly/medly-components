@@ -910,23 +910,24 @@ exports[`Form should render properly with initial state 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c7:focus {
+.c7.c7.c7:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c7:focus::-webkit-input-placeholder {
+.c7.c7.c7:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c7:focus::-moz-placeholder {
+.c7.c7.c7:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c7:focus:-ms-input-placeholder {
+.c7.c7.c7:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c7:focus::placeholder {
+.c7.c7.c7:focus::placeholder {
   opacity: 1;
 }
 
@@ -1070,10 +1071,6 @@ exports[`Form should render properly with initial state 1`] = `
   padding-right: 0.8rem;
 }
 
-.c41.c41.c41 .c2 input:focus {
-  box-shadow: unset;
-}
-
 .c41 .sc-fzoJMP {
   z-index: 1000;
   position: absolute;
@@ -1211,10 +1208,6 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c49 .c30 {
   margin-right: 0.8rem;
-}
-
-.c49.c49.c49 input:focus {
-  box-shadow: unset;
 }
 
 .c49:hover .c50 {
@@ -3216,23 +3209,24 @@ exports[`Form should render properly without initial state 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c10:focus {
+.c10.c10.c10:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c10:focus::-webkit-input-placeholder {
+.c10.c10.c10:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c10:focus::-moz-placeholder {
+.c10.c10.c10:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c10:focus:-ms-input-placeholder {
+.c10.c10.c10:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c10:focus::placeholder {
+.c10.c10.c10:focus::placeholder {
   opacity: 1;
 }
 
@@ -3376,10 +3370,6 @@ exports[`Form should render properly without initial state 1`] = `
   padding-right: 0.8rem;
 }
 
-.c41.c41.c41 .c5 input:focus {
-  box-shadow: unset;
-}
-
 .c41 .sc-fzoJMP {
   z-index: 1000;
   position: absolute;
@@ -3517,10 +3507,6 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c49 .c32 {
   margin-right: 0.8rem;
-}
-
-.c49.c49.c49 input:focus {
-  box-shadow: unset;
 }
 
 .c49:hover .c50 {

@@ -9,10 +9,6 @@ export const Wrapper = styled(TextFieldStyled.InnerWrapper)`
         margin-right: 0.8rem;
     }
 
-    &&& input:focus {
-        box-shadow: unset;
-    }
-
     &:hover {
         ${InputSeparator} {
             border-color: ${({ theme, variant, isActive, disabled, isErrorPresent }) =>

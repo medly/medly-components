@@ -224,23 +224,24 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -649,23 +650,24 @@ exports[`TextField should render properly with M size 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c6:focus {
+.c6.c6.c6:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c6:focus::-webkit-input-placeholder {
+.c6.c6.c6:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::-moz-placeholder {
+.c6.c6.c6:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c6:focus:-ms-input-placeholder {
+.c6.c6.c6:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::placeholder {
+.c6.c6.c6:focus::placeholder {
   opacity: 1;
 }
 
@@ -1024,23 +1026,24 @@ exports[`TextField should render properly with S size 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c6:focus {
+.c6.c6.c6:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c6:focus::-webkit-input-placeholder {
+.c6.c6.c6:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::-moz-placeholder {
+.c6.c6.c6:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c6:focus:-ms-input-placeholder {
+.c6.c6.c6:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::placeholder {
+.c6.c6.c6:focus::placeholder {
   opacity: 1;
 }
 
@@ -1365,23 +1368,24 @@ exports[`TextField should render properly with default props 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -1677,23 +1681,24 @@ exports[`TextField with filled variant and with label should render default stat
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -1964,23 +1969,24 @@ exports[`TextField with filled variant and with label should render disabled sta
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -2278,23 +2284,24 @@ exports[`TextField with filled variant and with label should render focus state 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -2586,23 +2593,24 @@ exports[`TextField with filled variant and without label should render default s
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -2867,23 +2875,24 @@ exports[`TextField with filled variant and without label should render disabled 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -3175,23 +3184,24 @@ exports[`TextField with filled variant and without label should render focus sta
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -3528,23 +3538,24 @@ exports[`TextField with filled variant should render error state properly  1`] =
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -3888,23 +3899,24 @@ exports[`TextField with filled variant should render error state properly with a
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -4257,23 +4269,24 @@ exports[`TextField with filled variant should render properly with multiline 1`]
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -4588,23 +4601,24 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c6:focus {
+.c6.c6.c6:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c6:focus::-webkit-input-placeholder {
+.c6.c6.c6:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::-moz-placeholder {
+.c6.c6.c6:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c6:focus:-ms-input-placeholder {
+.c6.c6.c6:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::placeholder {
+.c6.c6.c6:focus::placeholder {
   opacity: 1;
 }
 
@@ -4933,23 +4947,24 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -5268,23 +5283,24 @@ exports[`TextField with fusion variant and with label should render default stat
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -5570,23 +5586,24 @@ exports[`TextField with fusion variant and with label should render disabled sta
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -5900,23 +5917,24 @@ exports[`TextField with fusion variant and with label should render focus state 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -6224,23 +6242,24 @@ exports[`TextField with fusion variant and without label should render default s
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -6520,23 +6539,24 @@ exports[`TextField with fusion variant and without label should render disabled 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -6844,23 +6864,24 @@ exports[`TextField with fusion variant and without label should render focus sta
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -7202,23 +7223,24 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -7572,23 +7594,24 @@ exports[`TextField with fusion variant should render error state properly with a
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -7955,23 +7978,24 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -8302,23 +8326,24 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c6:focus {
+.c6.c6.c6:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c6:focus::-webkit-input-placeholder {
+.c6.c6.c6:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::-moz-placeholder {
+.c6.c6.c6:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c6:focus:-ms-input-placeholder {
+.c6.c6.c6:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::placeholder {
+.c6.c6.c6:focus::placeholder {
   opacity: 1;
 }
 
@@ -8663,23 +8688,24 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -9008,23 +9034,24 @@ exports[`TextField with outlined variant and with label should render default st
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -9300,23 +9327,24 @@ exports[`TextField with outlined variant and with label should render disabled s
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -9628,23 +9656,24 @@ exports[`TextField with outlined variant and with label should render focus stat
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -9950,23 +9979,24 @@ exports[`TextField with outlined variant and without label should render default
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -10236,23 +10266,24 @@ exports[`TextField with outlined variant and without label should render disable
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -10558,23 +10589,24 @@ exports[`TextField with outlined variant and without label should render focus s
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -10925,23 +10957,24 @@ exports[`TextField with outlined variant should render error state properly  1`]
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -11299,23 +11332,24 @@ exports[`TextField with outlined variant should render error state properly with
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -11682,23 +11716,24 @@ exports[`TextField with outlined variant should render properly with multiline 1
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -12027,23 +12062,24 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c6:focus {
+.c6.c6.c6:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c6:focus::-webkit-input-placeholder {
+.c6.c6.c6:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::-moz-placeholder {
+.c6.c6.c6:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c6:focus:-ms-input-placeholder {
+.c6.c6.c6:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::placeholder {
+.c6.c6.c6:focus::placeholder {
   opacity: 1;
 }
 
@@ -12386,23 +12422,24 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -12707,23 +12744,24 @@ exports[`TextField without label should render default state properly 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 
@@ -13017,23 +13055,24 @@ exports[`TextField without label should render focus state properly  1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c3:focus {
+.c3.c3.c3:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c3:focus::-webkit-input-placeholder {
+.c3.c3.c3:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::-moz-placeholder {
+.c3.c3.c3:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c3:focus:-ms-input-placeholder {
+.c3.c3.c3:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c3:focus::placeholder {
+.c3.c3.c3:focus::placeholder {
   opacity: 1;
 }
 

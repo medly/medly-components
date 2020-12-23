@@ -193,23 +193,24 @@ exports[`MultiSelect component should render correctly with all the props given 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c5:focus {
+.c5.c5.c5:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c5:focus::-webkit-input-placeholder {
+.c5.c5.c5:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::-moz-placeholder {
+.c5.c5.c5:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c5:focus:-ms-input-placeholder {
+.c5.c5.c5:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::placeholder {
+.c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
 
@@ -710,23 +711,24 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c5:focus {
+.c5.c5.c5:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c5:focus::-webkit-input-placeholder {
+.c5.c5.c5:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::-moz-placeholder {
+.c5.c5.c5:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c5:focus:-ms-input-placeholder {
+.c5.c5.c5:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::placeholder {
+.c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
 
@@ -1115,23 +1117,24 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c5:focus {
+.c5.c5.c5:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c5:focus::-webkit-input-placeholder {
+.c5.c5.c5:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::-moz-placeholder {
+.c5.c5.c5:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c5:focus:-ms-input-placeholder {
+.c5.c5.c5:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::placeholder {
+.c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
 
@@ -2399,23 +2402,24 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c5:focus {
+.c5.c5.c5:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c5:focus::-webkit-input-placeholder {
+.c5.c5.c5:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::-moz-placeholder {
+.c5.c5.c5:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c5:focus:-ms-input-placeholder {
+.c5.c5.c5:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::placeholder {
+.c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
 

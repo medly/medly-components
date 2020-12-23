@@ -2,7 +2,6 @@
 import { css, InjectClassName, Omit, styled, WithThemeProp } from '@medly-components/utils';
 import Calendar from '../Calendar';
 import { getPosition } from '../Popover/Popup/styled/Popup.styled';
-import TextField from '../TextField';
 import { InnerWrapper, OuterWrapper } from '../TextField/Styled';
 import { StyleProps } from './types';
 
@@ -41,12 +40,6 @@ export const Wrapper = styled(OuterWrapper)<StyleProps>`
         margin: 0;
         & > ${InnerWrapper} {
             padding-right: 0.8rem;
-        }
-    }
-
-    &&& ${TextField.Style} {
-        input:focus {
-            box-shadow: unset;
         }
     }
 

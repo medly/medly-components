@@ -12633,23 +12633,24 @@ exports[`DatePicker component should render properly when value is of date type 
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c6:focus {
+.c6.c6.c6:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c6:focus::-webkit-input-placeholder {
+.c6.c6.c6:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::-moz-placeholder {
+.c6.c6.c6:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c6:focus:-ms-input-placeholder {
+.c6.c6.c6:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::placeholder {
+.c6.c6.c6:focus::placeholder {
   opacity: 1;
 }
 
@@ -12729,10 +12730,6 @@ exports[`DatePicker component should render properly when value is of date type 
 
 .c1 > .c0 > .c3 {
   padding-right: 0.8rem;
-}
-
-.c1.c1.c1 .c0 input:focus {
-  box-shadow: unset;
 }
 
 .c1 .sc-AxgMl {
@@ -13025,23 +13022,24 @@ exports[`DatePicker component should render properly when value is of string typ
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c6:focus {
+.c6.c6.c6:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c6:focus::-webkit-input-placeholder {
+.c6.c6.c6:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::-moz-placeholder {
+.c6.c6.c6:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c6:focus:-ms-input-placeholder {
+.c6.c6.c6:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::placeholder {
+.c6.c6.c6:focus::placeholder {
   opacity: 1;
 }
 
@@ -13121,10 +13119,6 @@ exports[`DatePicker component should render properly when value is of string typ
 
 .c1 > .c0 > .c3 {
   padding-right: 0.8rem;
-}
-
-.c1.c1.c1 .c0 input:focus {
-  box-shadow: unset;
 }
 
 .c1 .sc-AxgMl {

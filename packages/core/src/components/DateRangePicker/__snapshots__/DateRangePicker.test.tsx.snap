@@ -21539,23 +21539,24 @@ exports[`DateRangePicker should render properly 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c6:focus {
+.c6.c6.c6:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c6:focus::-webkit-input-placeholder {
+.c6.c6.c6:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::-moz-placeholder {
+.c6.c6.c6:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c6:focus:-ms-input-placeholder {
+.c6.c6.c6:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c6:focus::placeholder {
+.c6.c6.c6:focus::placeholder {
   opacity: 1;
 }
 
@@ -22344,10 +22345,6 @@ exports[`DateRangePicker should render properly 1`] = `
   margin-right: 0.8rem;
 }
 
-.c1.c1.c1 input:focus {
-  box-shadow: unset;
-}
-
 <div>
   <div
     class="c0"
@@ -22851,7 +22848,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c30"
             >
               <button
                 class="c31"
@@ -22866,7 +22863,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c30"
+              class="c35"
             >
               <button
                 class="c31"
@@ -23691,23 +23688,24 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c7:focus {
+.c7.c7.c7:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c7:focus::-webkit-input-placeholder {
+.c7.c7.c7:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c7:focus::-moz-placeholder {
+.c7.c7.c7:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c7:focus:-ms-input-placeholder {
+.c7.c7.c7:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c7:focus::placeholder {
+.c7.c7.c7:focus::placeholder {
   opacity: 1;
 }
 
@@ -24628,10 +24626,6 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   margin-right: 0.8rem;
 }
 
-.c2.c2.c2 input:focus {
-  box-shadow: unset;
-}
-
 <div>
   <div
     class="c0 c1"
@@ -25203,7 +25197,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c40"
+              class="c35"
             >
               <button
                 class="c36"
@@ -25218,7 +25212,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c40"
             >
               <button
                 class="c36"

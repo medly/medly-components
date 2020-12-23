@@ -48,8 +48,9 @@ export const Input = styled('input')<StyledProps>`
             getFontStyle({ theme, fontVariant: multiline && size === 'S' ? 'body2' : theme.textField.textVariant[size] })}
     }
 
-    &:focus {
+    &&&:focus {
         outline: none;
+        box-shadow: unset;
         &::placeholder {
             opacity: 1;
         }

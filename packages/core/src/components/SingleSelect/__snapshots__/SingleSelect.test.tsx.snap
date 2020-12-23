@@ -234,23 +234,24 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c5:focus {
+.c5.c5.c5:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c5:focus::-webkit-input-placeholder {
+.c5.c5.c5:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::-moz-placeholder {
+.c5.c5.c5:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c5:focus:-ms-input-placeholder {
+.c5.c5.c5:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::placeholder {
+.c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
 
@@ -617,23 +618,24 @@ exports[`SingleSelect component should render properly when isSearchable is true
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c5:focus {
+.c5.c5.c5:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c5:focus::-webkit-input-placeholder {
+.c5.c5.c5:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::-moz-placeholder {
+.c5.c5.c5:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c5:focus:-ms-input-placeholder {
+.c5.c5.c5:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::placeholder {
+.c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
 
@@ -1178,23 +1180,24 @@ exports[`SingleSelect component should take passed max width 1`] = `
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c5:focus {
+.c5.c5.c5:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c5:focus::-webkit-input-placeholder {
+.c5.c5.c5:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::-moz-placeholder {
+.c5.c5.c5:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c5:focus:-ms-input-placeholder {
+.c5.c5.c5:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::placeholder {
+.c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
 
@@ -1722,23 +1725,24 @@ exports[`SingleSelect component with filled variant should render disabled state
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c5:focus {
+.c5.c5.c5:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c5:focus::-webkit-input-placeholder {
+.c5.c5.c5:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::-moz-placeholder {
+.c5.c5.c5:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c5:focus:-ms-input-placeholder {
+.c5.c5.c5:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::placeholder {
+.c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
 
@@ -2262,23 +2266,24 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c5:focus {
+.c5.c5.c5:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c5:focus::-webkit-input-placeholder {
+.c5.c5.c5:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::-moz-placeholder {
+.c5.c5.c5:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c5:focus:-ms-input-placeholder {
+.c5.c5.c5:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::placeholder {
+.c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
 
@@ -2658,23 +2663,24 @@ exports[`SingleSelect component with filled variant should render with label pro
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c5:focus {
+.c5.c5.c5:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c5:focus::-webkit-input-placeholder {
+.c5.c5.c5:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::-moz-placeholder {
+.c5.c5.c5:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c5:focus:-ms-input-placeholder {
+.c5.c5.c5:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::placeholder {
+.c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
 
@@ -3928,23 +3934,24 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c5:focus {
+.c5.c5.c5:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c5:focus::-webkit-input-placeholder {
+.c5.c5.c5:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::-moz-placeholder {
+.c5.c5.c5:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c5:focus:-ms-input-placeholder {
+.c5.c5.c5:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::placeholder {
+.c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
 
@@ -4482,23 +4489,24 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c5:focus {
+.c5.c5.c5:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c5:focus::-webkit-input-placeholder {
+.c5.c5.c5:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::-moz-placeholder {
+.c5.c5.c5:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c5:focus:-ms-input-placeholder {
+.c5.c5.c5:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::placeholder {
+.c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
 
@@ -4892,23 +4900,24 @@ exports[`SingleSelect component with outlined variant should render with label p
   font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.c5:focus {
+.c5.c5.c5:focus {
   outline: none;
+  box-shadow: unset;
 }
 
-.c5:focus::-webkit-input-placeholder {
+.c5.c5.c5:focus::-webkit-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::-moz-placeholder {
+.c5.c5.c5:focus::-moz-placeholder {
   opacity: 1;
 }
 
-.c5:focus:-ms-input-placeholder {
+.c5.c5.c5:focus:-ms-input-placeholder {
   opacity: 1;
 }
 
-.c5:focus::placeholder {
+.c5.c5.c5:focus::placeholder {
   opacity: 1;
 }
 
