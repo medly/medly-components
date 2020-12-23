@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.41.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.41.1...@medly-components/core@1.41.2) (2020-12-23)
+
+
+### Bug Fixes
+
+* shadow issue on mask span in TextField component ([02a9de4](https://github.com/medly/medly-components/commit/02a9de4cd8b43d2bc757c311bd72c59f5c40357d))
+
+
+
+
+
 ## [1.41.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.41.0...@medly-components/core@1.41.1) (2020-12-21)
 
 
