@@ -453,6 +453,7 @@ exports[`MultiSelect component should render correctly with all the props given 
         >
           <button
             class="c10"
+            disabled=""
             id="pharmacy-count-chip"
           >
             <span

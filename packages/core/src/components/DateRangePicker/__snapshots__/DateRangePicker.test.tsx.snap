@@ -22084,7 +22084,9 @@ exports[`DateRangePicker should render properly 1`] = `
   text-align: center;
   padding: 0.4rem;
   position: relative;
-  cursor: pointer;
+  cursor: default;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .c37::after,
@@ -22106,7 +22108,43 @@ exports[`DateRangePicker should render properly 1`] = `
   width: 7.2rem;
 }
 
-.c37::after {
+.c37 > button {
+  border-color: #C7D0D8;
+}
+
+.c37:hover > button:not(:disabled) {
+  border-color: #126AFA;
+}
+
+.c38 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  text-align: center;
+  padding: 0.4rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.c38::after,
+.c38::before {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  top: 0.4rem;
+  height: 3.2rem;
+}
+
+.c38::after {
+  width: 4.8rem;
+  left: -0.4rem;
+}
+
+.c38::before {
+  right: -1.8rem;
+  width: 7.2rem;
+}
+
+.c38::after {
   left: 0.4rem;
   width: 3.2rem;
   border-top-right-radius: 0;
@@ -22115,7 +22153,7 @@ exports[`DateRangePicker should render properly 1`] = `
   border-bottom-left-radius: 50%;
 }
 
-.c37:hover > button:not(:disabled) {
+.c38:hover > button:not(:disabled) {
   border-color: #126AFA;
 }
 
@@ -22202,24 +22240,24 @@ exports[`DateRangePicker should render properly 1`] = `
   transition: border-color 100ms ease-out;
 }
 
-.c38 .c9 {
+.c39 .c9 {
   color: #546A7F;
 }
 
-.c38 ~ .c13 {
+.c39 ~ .c13 {
   color: #546A7F;
 }
 
-.c38:focus-within .c9,
-.c38:focus-within:hover .c9 {
+.c39:focus-within .c9,
+.c39:focus-within:hover .c9 {
   color: #126AFA;
 }
 
-.c38 .c2 {
+.c39 .c2 {
   margin-right: 0.8rem;
 }
 
-.c38:hover .c11 {
+.c39:hover .c11 {
   border-color: #546A7F;
 }
 
@@ -22251,12 +22289,12 @@ exports[`DateRangePicker should render properly 1`] = `
   color: #546A7F;
 }
 
-.c1 .c39,
+.c1 .c40,
 .c1 .sc-AxheI {
   color: #546A7F;
 }
 
-.c1 .c39 *,
+.c1 .c40 *,
 .c1 .sc-AxheI * {
   fill: #546A7F;
 }
@@ -22302,15 +22340,15 @@ exports[`DateRangePicker should render properly 1`] = `
   color: #126AFA;
 }
 
-.c1:focus-within .c39,
-.c1:focus-within:hover .c39,
+.c1:focus-within .c40,
+.c1:focus-within:hover .c40,
 .c1:focus-within .sc-AxheI,
 .c1:focus-within:hover .sc-AxheI {
   color: #126AFA;
 }
 
-.c1:focus-within .c39 *,
-.c1:focus-within:hover .c39 *,
+.c1:focus-within .c40 *,
+.c1:focus-within:hover .c40 *,
 .c1:focus-within .sc-AxheI *,
 .c1:focus-within:hover .sc-AxheI * {
   fill: #126AFA;
@@ -22863,7 +22901,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c30"
             >
               <button
                 class="c31"
@@ -22983,7 +23021,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c30"
+              class="c35"
             >
               <button
                 class="c31"
@@ -23067,7 +23105,7 @@ exports[`DateRangePicker should render properly 1`] = `
               class="c29"
             />
             <div
-              class="c29"
+              class="c37"
             />
             <div
               class="c30"
@@ -23520,7 +23558,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c37"
+              class="c38"
             >
               <button
                 class="c31"
@@ -25212,7 +25250,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c40"
+              class="c35"
             >
               <button
                 class="c36"
@@ -25332,7 +25370,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c40"
             >
               <button
                 class="c36"
