@@ -10,7 +10,9 @@ export const InputSuffix: FC<InputSuffixProps> = React.memo(props => {
 
     return (
         <InputSuffixStyled id={id} size={size}>
-            {optionsCount > 0 && <Chip id={`${id}-chip`} label={optionsCount} state={state} size={size} {...restProps} />}
+            {optionsCount > 0 && (
+                <Chip id={`${id}-chip`} label={optionsCount} state={state} size={size} disabled={disabled} {...restProps} />
+            )}
             <ChevronDownIcon size={size} />
         </InputSuffixStyled>
     );
