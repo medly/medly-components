@@ -22,6 +22,8 @@ export interface Props extends HTMLProps<HTMLDivElement> {
     tabStyle?: TabStyle;
     /** Background color of the Tabs wrapper */
     tabBackground?: TabBackground;
+    /** Force tabs to always stay mounted */
+    forceRender?: boolean;
 }
 
 export interface StaticProps {
