@@ -60,7 +60,7 @@ describe('Calendar Component', () => {
             { container, getByText, getByTitle } = render(
                 <Calendar
                     id="test-calendar"
-                    date={null}
+                    date={new Date(2020, 11, 25)}
                     onChange={mockOnChange}
                     minSelectableDate={new Date(2020, 0, 1)}
                     maxSelectableDate={new Date(2022, 2, 1)}

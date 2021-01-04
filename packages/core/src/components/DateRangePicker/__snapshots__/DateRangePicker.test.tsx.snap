@@ -22036,9 +22036,7 @@ exports[`DateRangePicker should render properly 1`] = `
   text-align: center;
   padding: 0.4rem;
   position: relative;
-  cursor: default;
-  opacity: 0;
-  pointer-events: none;
+  cursor: pointer;
 }
 
 .c36::after,
@@ -22063,15 +22061,10 @@ exports[`DateRangePicker should render properly 1`] = `
 .c36::after {
   left: 0.4rem;
   width: 3.2rem;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.c36::before {
-  width: 3.4rem;
-  right: 2.2rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
 
 .c36:hover > button:not(:disabled) {
@@ -22108,52 +22101,21 @@ exports[`DateRangePicker should render properly 1`] = `
   width: 7.2rem;
 }
 
-.c37 > button {
-  border-color: #C7D0D8;
+.c37::after {
+  left: 0.4rem;
+  width: 3.2rem;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c37::before {
+  width: 3.4rem;
+  right: 2.2rem;
 }
 
 .c37:hover > button:not(:disabled) {
-  border-color: #126AFA;
-}
-
-.c38 {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-  text-align: center;
-  padding: 0.4rem;
-  position: relative;
-  cursor: pointer;
-}
-
-.c38::after,
-.c38::before {
-  position: absolute;
-  content: '';
-  z-index: -1;
-  top: 0.4rem;
-  height: 3.2rem;
-}
-
-.c38::after {
-  width: 4.8rem;
-  left: -0.4rem;
-}
-
-.c38::before {
-  right: -1.8rem;
-  width: 7.2rem;
-}
-
-.c38::after {
-  left: 0.4rem;
-  width: 3.2rem;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-
-.c38:hover > button:not(:disabled) {
   border-color: #126AFA;
 }
 
@@ -22240,24 +22202,24 @@ exports[`DateRangePicker should render properly 1`] = `
   transition: border-color 100ms ease-out;
 }
 
-.c39 .c9 {
+.c38 .c9 {
   color: #546A7F;
 }
 
-.c39 ~ .c13 {
+.c38 ~ .c13 {
   color: #546A7F;
 }
 
-.c39:focus-within .c9,
-.c39:focus-within:hover .c9 {
+.c38:focus-within .c9,
+.c38:focus-within:hover .c9 {
   color: #126AFA;
 }
 
-.c39 .c2 {
+.c38 .c2 {
   margin-right: 0.8rem;
 }
 
-.c39:hover .c11 {
+.c38:hover .c11 {
   border-color: #546A7F;
 }
 
@@ -22289,12 +22251,12 @@ exports[`DateRangePicker should render properly 1`] = `
   color: #546A7F;
 }
 
-.c1 .c40,
+.c1 .c39,
 .c1 .sc-AxheI {
   color: #546A7F;
 }
 
-.c1 .c40 *,
+.c1 .c39 *,
 .c1 .sc-AxheI * {
   fill: #546A7F;
 }
@@ -22340,15 +22302,15 @@ exports[`DateRangePicker should render properly 1`] = `
   color: #126AFA;
 }
 
-.c1:focus-within .c40,
-.c1:focus-within:hover .c40,
+.c1:focus-within .c39,
+.c1:focus-within:hover .c39,
 .c1:focus-within .sc-AxheI,
 .c1:focus-within:hover .sc-AxheI {
   color: #126AFA;
 }
 
-.c1:focus-within .c40 *,
-.c1:focus-within:hover .c40 *,
+.c1:focus-within .c39 *,
+.c1:focus-within:hover .c39 *,
 .c1:focus-within .sc-AxheI *,
 .c1:focus-within:hover .sc-AxheI * {
   fill: #126AFA;
@@ -22517,534 +22479,6 @@ exports[`DateRangePicker should render properly 1`] = `
       >
         <div
           class="c21"
-          id="contract-calendar-11-month"
-        >
-          <span
-            class="c22 c23"
-            id="contract-calendar-11-month-text"
-          >
-            December 2020
-          </span>
-          <div
-            class="c24 c25"
-            id="contract-calendar-11-month-grid"
-          >
-            <strong
-              class="c26 c27"
-            >
-              S
-            </strong>
-            <strong
-              class="c26 c27"
-            >
-              M
-            </strong>
-            <strong
-              class="c26 c27"
-            >
-              T
-            </strong>
-            <strong
-              class="c26 c27"
-            >
-              W
-            </strong>
-            <strong
-              class="c26 c27"
-            >
-              T
-            </strong>
-            <strong
-              class="c26 c27"
-            >
-              F
-            </strong>
-            <strong
-              class="c26 c27"
-            >
-              S
-            </strong>
-            <div
-              class="c28"
-            />
-            <div
-              class="c29"
-            />
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Tue Dec 01 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  1
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Wed Dec 02 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  2
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Thu Dec 03 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  3
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Fri Dec 04 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  4
-                </span>
-              </button>
-            </div>
-            <div
-              class="c33"
-            >
-              <button
-                class="c31"
-                title="Sat Dec 05 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  5
-                </span>
-              </button>
-            </div>
-            <div
-              class="c34"
-            >
-              <button
-                class="c31"
-                title="Sun Dec 06 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  6
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Mon Dec 07 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  7
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Tue Dec 08 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  8
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Wed Dec 09 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  9
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Thu Dec 10 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  10
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Fri Dec 11 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  11
-                </span>
-              </button>
-            </div>
-            <div
-              class="c33"
-            >
-              <button
-                class="c31"
-                title="Sat Dec 12 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  12
-                </span>
-              </button>
-            </div>
-            <div
-              class="c34"
-            >
-              <button
-                class="c31"
-                title="Sun Dec 13 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  13
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Mon Dec 14 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  14
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Tue Dec 15 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  15
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Wed Dec 16 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  16
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Thu Dec 17 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  17
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Fri Dec 18 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  18
-                </span>
-              </button>
-            </div>
-            <div
-              class="c33"
-            >
-              <button
-                class="c31"
-                title="Sat Dec 19 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  19
-                </span>
-              </button>
-            </div>
-            <div
-              class="c34"
-            >
-              <button
-                class="c31"
-                title="Sun Dec 20 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  20
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Mon Dec 21 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  21
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Tue Dec 22 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  22
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Wed Dec 23 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  23
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Thu Dec 24 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  24
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Fri Dec 25 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  25
-                </span>
-              </button>
-            </div>
-            <div
-              class="c33"
-            >
-              <button
-                class="c31"
-                title="Sat Dec 26 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  26
-                </span>
-              </button>
-            </div>
-            <div
-              class="c34"
-            >
-              <button
-                class="c31"
-                title="Sun Dec 27 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  27
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Mon Dec 28 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  28
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Tue Dec 29 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  29
-                </span>
-              </button>
-            </div>
-            <div
-              class="c30"
-            >
-              <button
-                class="c31"
-                title="Wed Dec 30 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  30
-                </span>
-              </button>
-            </div>
-            <div
-              class="c35"
-            >
-              <button
-                class="c31"
-                title="Thu Dec 31 2020"
-                type="button"
-              >
-                <span
-                  class="c32"
-                >
-                  31
-                </span>
-              </button>
-            </div>
-            <div
-              class="c29"
-            />
-            <div
-              class="c36"
-            />
-          </div>
-        </div>
-        <div
-          class="c21"
           id="contract-calendar-0-month"
         >
           <span
@@ -23105,7 +22539,7 @@ exports[`DateRangePicker should render properly 1`] = `
               class="c29"
             />
             <div
-              class="c37"
+              class="c29"
             />
             <div
               class="c30"
@@ -23153,7 +22587,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c30"
+              class="c35"
             >
               <button
                 class="c31"
@@ -23558,7 +22992,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c38"
+              class="c36"
             >
               <button
                 class="c31"
@@ -23588,7 +23022,499 @@ exports[`DateRangePicker should render properly 1`] = `
               class="c29"
             />
             <div
+              class="c37"
+            />
+          </div>
+        </div>
+        <div
+          class="c21"
+          id="contract-calendar-1-month"
+        >
+          <span
+            class="c22 c23"
+            id="contract-calendar-1-month-text"
+          >
+            February 2021
+          </span>
+          <div
+            class="c24 c25"
+            id="contract-calendar-1-month-grid"
+          >
+            <strong
+              class="c26 c27"
+            >
+              S
+            </strong>
+            <strong
+              class="c26 c27"
+            >
+              M
+            </strong>
+            <strong
+              class="c26 c27"
+            >
+              T
+            </strong>
+            <strong
+              class="c26 c27"
+            >
+              W
+            </strong>
+            <strong
+              class="c26 c27"
+            >
+              T
+            </strong>
+            <strong
+              class="c26 c27"
+            >
+              F
+            </strong>
+            <strong
+              class="c26 c27"
+            >
+              S
+            </strong>
+            <div
+              class="c28"
+            />
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Mon Feb 01 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  1
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Tue Feb 02 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  2
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Wed Feb 03 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  3
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Thu Feb 04 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  4
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Fri Feb 05 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  5
+                </span>
+              </button>
+            </div>
+            <div
+              class="c33"
+            >
+              <button
+                class="c31"
+                title="Sat Feb 06 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  6
+                </span>
+              </button>
+            </div>
+            <div
+              class="c34"
+            >
+              <button
+                class="c31"
+                title="Sun Feb 07 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  7
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Mon Feb 08 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  8
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Tue Feb 09 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  9
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Wed Feb 10 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  10
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Thu Feb 11 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  11
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Fri Feb 12 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  12
+                </span>
+              </button>
+            </div>
+            <div
+              class="c33"
+            >
+              <button
+                class="c31"
+                title="Sat Feb 13 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  13
+                </span>
+              </button>
+            </div>
+            <div
+              class="c34"
+            >
+              <button
+                class="c31"
+                title="Sun Feb 14 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  14
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Mon Feb 15 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  15
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Tue Feb 16 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  16
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Wed Feb 17 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  17
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Thu Feb 18 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  18
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Fri Feb 19 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  19
+                </span>
+              </button>
+            </div>
+            <div
+              class="c33"
+            >
+              <button
+                class="c31"
+                title="Sat Feb 20 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  20
+                </span>
+              </button>
+            </div>
+            <div
+              class="c34"
+            >
+              <button
+                class="c31"
+                title="Sun Feb 21 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  21
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Mon Feb 22 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  22
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Tue Feb 23 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  23
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Wed Feb 24 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  24
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Thu Feb 25 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  25
+                </span>
+              </button>
+            </div>
+            <div
+              class="c30"
+            >
+              <button
+                class="c31"
+                title="Fri Feb 26 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  26
+                </span>
+              </button>
+            </div>
+            <div
+              class="c33"
+            >
+              <button
+                class="c31"
+                title="Sat Feb 27 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  27
+                </span>
+              </button>
+            </div>
+            <div
               class="c36"
+            >
+              <button
+                class="c31"
+                title="Sun Feb 28 2021"
+                type="button"
+              >
+                <span
+                  class="c32"
+                >
+                  28
+                </span>
+              </button>
+            </div>
+            <div
+              class="c29"
+            />
+            <div
+              class="c29"
+            />
+            <div
+              class="c29"
+            />
+            <div
+              class="c29"
+            />
+            <div
+              class="c29"
+            />
+            <div
+              class="c37"
             />
           </div>
         </div>
@@ -24406,9 +24332,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   text-align: center;
   padding: 0.4rem;
   position: relative;
-  cursor: default;
-  opacity: 0;
-  pointer-events: none;
+  cursor: pointer;
 }
 
 .c41::after,
@@ -24433,18 +24357,61 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 .c41::after {
   left: 0.4rem;
   width: 3.2rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.c41:hover > button:not(:disabled) {
+  border-color: #126AFA;
+}
+
+.c42 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  text-align: center;
+  padding: 0.4rem;
+  position: relative;
+  cursor: default;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.c42::after,
+.c42::before {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  top: 0.4rem;
+  height: 3.2rem;
+}
+
+.c42::after {
+  width: 4.8rem;
+  left: -0.4rem;
+}
+
+.c42::before {
+  right: -1.8rem;
+  width: 7.2rem;
+}
+
+.c42::after {
+  left: 0.4rem;
+  width: 3.2rem;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.c41::before {
+.c42::before {
   width: 3.4rem;
   right: 2.2rem;
 }
 
-.c41:hover > button:not(:disabled) {
+.c42:hover > button:not(:disabled) {
   border-color: #126AFA;
 }
 
@@ -24521,24 +24488,24 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   transition: border-color 100ms ease-out;
 }
 
-.c42 .c10 {
+.c43 .c10 {
   color: #546A7F;
 }
 
-.c42 ~ .c14 {
+.c43 ~ .c14 {
   color: #546A7F;
 }
 
-.c42:focus-within .c10,
-.c42:focus-within:hover .c10 {
+.c43:focus-within .c10,
+.c43:focus-within:hover .c10 {
   color: #126AFA;
 }
 
-.c42 .c3 {
+.c43 .c3 {
   margin-right: 0.8rem;
 }
 
-.c42:hover .c12 {
+.c43:hover .c12 {
   border-color: #546A7F;
 }
 
@@ -24570,12 +24537,12 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   color: #546A7F;
 }
 
-.c2 .c43,
+.c2 .c44,
 .c2 .sc-AxheI {
   color: #546A7F;
 }
 
-.c2 .c43 *,
+.c2 .c44 *,
 .c2 .sc-AxheI * {
   fill: #546A7F;
 }
@@ -24621,15 +24588,15 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   color: #126AFA;
 }
 
-.c2:focus-within .c43,
-.c2:focus-within:hover .c43,
+.c2:focus-within .c44,
+.c2:focus-within:hover .c44,
 .c2:focus-within .sc-AxheI,
 .c2:focus-within:hover .sc-AxheI {
   color: #126AFA;
 }
 
-.c2:focus-within .c43 *,
-.c2:focus-within:hover .c43 *,
+.c2:focus-within .c44 *,
+.c2:focus-within:hover .c44 *,
 .c2:focus-within .sc-AxheI *,
 .c2:focus-within:hover .sc-AxheI * {
   fill: #126AFA;
@@ -24771,7 +24738,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
                 <span
                   class="c22"
                 >
-                  Dec
+                  Jan
                 </span>
                 <svg
                   class="c3 c23 c24"
@@ -24806,7 +24773,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
                 <span
                   class="c22"
                 >
-                  2020
+                  2021
                 </span>
                 <svg
                   class="c3 c23 c24"
@@ -24872,11 +24839,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
       >
         <div
           class="c28"
-          id="contract-calendar-11-month"
+          id="contract-calendar-0-month"
         >
           <div
             class="c29 c30"
-            id="contract-calendar-11-month-grid"
+            id="contract-calendar-0-month-grid"
           >
             <strong
               class="c31 c32"
@@ -24920,11 +24887,20 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               class="c34"
             />
             <div
+              class="c34"
+            />
+            <div
+              class="c34"
+            />
+            <div
+              class="c34"
+            />
+            <div
               class="c35"
             >
               <button
                 class="c36"
-                title="Tue Dec 01 2020"
+                title="Fri Jan 01 2021"
                 type="button"
               >
                 <span
@@ -24935,11 +24911,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c38"
             >
               <button
                 class="c36"
-                title="Wed Dec 02 2020"
+                title="Sat Jan 02 2021"
                 type="button"
               >
                 <span
@@ -24950,11 +24926,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c39"
             >
               <button
                 class="c36"
-                title="Thu Dec 03 2020"
+                title="Sun Jan 03 2021"
                 type="button"
               >
                 <span
@@ -24965,11 +24941,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c40"
             >
               <button
                 class="c36"
-                title="Fri Dec 04 2020"
+                title="Mon Jan 04 2021"
                 type="button"
               >
                 <span
@@ -24980,11 +24956,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c38"
+              class="c35"
             >
               <button
                 class="c36"
-                title="Sat Dec 05 2020"
+                title="Tue Jan 05 2021"
                 type="button"
               >
                 <span
@@ -24995,11 +24971,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c39"
+              class="c35"
             >
               <button
                 class="c36"
-                title="Sun Dec 06 2020"
+                title="Wed Jan 06 2021"
                 type="button"
               >
                 <span
@@ -25014,7 +24990,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
             >
               <button
                 class="c36"
-                title="Mon Dec 07 2020"
+                title="Thu Jan 07 2021"
                 type="button"
               >
                 <span
@@ -25029,7 +25005,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
             >
               <button
                 class="c36"
-                title="Tue Dec 08 2020"
+                title="Fri Jan 08 2021"
                 type="button"
               >
                 <span
@@ -25040,11 +25016,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c38"
             >
               <button
                 class="c36"
-                title="Wed Dec 09 2020"
+                title="Sat Jan 09 2021"
                 type="button"
               >
                 <span
@@ -25055,11 +25031,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c39"
             >
               <button
                 class="c36"
-                title="Thu Dec 10 2020"
+                title="Sun Jan 10 2021"
                 type="button"
               >
                 <span
@@ -25074,7 +25050,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
             >
               <button
                 class="c36"
-                title="Fri Dec 11 2020"
+                title="Mon Jan 11 2021"
                 type="button"
               >
                 <span
@@ -25085,11 +25061,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c38"
+              class="c35"
             >
               <button
                 class="c36"
-                title="Sat Dec 12 2020"
+                title="Tue Jan 12 2021"
                 type="button"
               >
                 <span
@@ -25100,11 +25076,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c39"
+              class="c35"
             >
               <button
                 class="c36"
-                title="Sun Dec 13 2020"
+                title="Wed Jan 13 2021"
                 type="button"
               >
                 <span
@@ -25119,7 +25095,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
             >
               <button
                 class="c36"
-                title="Mon Dec 14 2020"
+                title="Thu Jan 14 2021"
                 type="button"
               >
                 <span
@@ -25134,7 +25110,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
             >
               <button
                 class="c36"
-                title="Tue Dec 15 2020"
+                title="Fri Jan 15 2021"
                 type="button"
               >
                 <span
@@ -25145,11 +25121,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c38"
             >
               <button
                 class="c36"
-                title="Wed Dec 16 2020"
+                title="Sat Jan 16 2021"
                 type="button"
               >
                 <span
@@ -25160,11 +25136,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c39"
             >
               <button
                 class="c36"
-                title="Thu Dec 17 2020"
+                title="Sun Jan 17 2021"
                 type="button"
               >
                 <span
@@ -25179,7 +25155,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
             >
               <button
                 class="c36"
-                title="Fri Dec 18 2020"
+                title="Mon Jan 18 2021"
                 type="button"
               >
                 <span
@@ -25190,11 +25166,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c38"
+              class="c35"
             >
               <button
                 class="c36"
-                title="Sat Dec 19 2020"
+                title="Tue Jan 19 2021"
                 type="button"
               >
                 <span
@@ -25205,11 +25181,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c39"
+              class="c35"
             >
               <button
                 class="c36"
-                title="Sun Dec 20 2020"
+                title="Wed Jan 20 2021"
                 type="button"
               >
                 <span
@@ -25224,7 +25200,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
             >
               <button
                 class="c36"
-                title="Mon Dec 21 2020"
+                title="Thu Jan 21 2021"
                 type="button"
               >
                 <span
@@ -25239,7 +25215,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
             >
               <button
                 class="c36"
-                title="Tue Dec 22 2020"
+                title="Fri Jan 22 2021"
                 type="button"
               >
                 <span
@@ -25250,11 +25226,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c38"
             >
               <button
                 class="c36"
-                title="Wed Dec 23 2020"
+                title="Sat Jan 23 2021"
                 type="button"
               >
                 <span
@@ -25265,11 +25241,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c39"
             >
               <button
                 class="c36"
-                title="Thu Dec 24 2020"
+                title="Sun Jan 24 2021"
                 type="button"
               >
                 <span
@@ -25284,7 +25260,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
             >
               <button
                 class="c36"
-                title="Fri Dec 25 2020"
+                title="Mon Jan 25 2021"
                 type="button"
               >
                 <span
@@ -25295,11 +25271,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c38"
+              class="c35"
             >
               <button
                 class="c36"
-                title="Sat Dec 26 2020"
+                title="Tue Jan 26 2021"
                 type="button"
               >
                 <span
@@ -25310,11 +25286,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c39"
+              class="c35"
             >
               <button
                 class="c36"
-                title="Sun Dec 27 2020"
+                title="Wed Jan 27 2021"
                 type="button"
               >
                 <span
@@ -25329,7 +25305,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
             >
               <button
                 class="c36"
-                title="Mon Dec 28 2020"
+                title="Thu Jan 28 2021"
                 type="button"
               >
                 <span
@@ -25344,7 +25320,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
             >
               <button
                 class="c36"
-                title="Tue Dec 29 2020"
+                title="Fri Jan 29 2021"
                 type="button"
               >
                 <span
@@ -25355,11 +25331,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c38"
             >
               <button
                 class="c36"
-                title="Wed Dec 30 2020"
+                title="Sat Jan 30 2021"
                 type="button"
               >
                 <span
@@ -25370,11 +25346,11 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c40"
+              class="c41"
             >
               <button
                 class="c36"
-                title="Thu Dec 31 2020"
+                title="Sun Jan 31 2021"
                 type="button"
               >
                 <span
@@ -25388,7 +25364,19 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               class="c34"
             />
             <div
-              class="c41"
+              class="c34"
+            />
+            <div
+              class="c34"
+            />
+            <div
+              class="c34"
+            />
+            <div
+              class="c34"
+            />
+            <div
+              class="c42"
             />
           </div>
         </div>
