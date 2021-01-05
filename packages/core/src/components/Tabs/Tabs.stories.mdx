@@ -1,7 +1,7 @@
 import { HTMLProps } from '@medly-components/utils';
 import { Tabs } from './Tabs.tsx';
 import Tab from './Tab';
-import { select } from '@storybook/addon-knobs';
+import { select, boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { sizes, tabBg, tabStyle, ThemeInterface, DarkBackground } from './Tabs.stories';
 import { DashboardIcon, DeleteIcon, EditIcon } from '@medly-components/icons';
@@ -50,6 +50,7 @@ Use `Tabs.Tab` to add tab in `Tabs` component.
                 tabSize={select('Tab Size', sizes, 'S')}
                 tabBackground={select('Tab Background', tabBg, 'WHITE')}
                 tabStyle={select('Tab Style', tabStyle, 'OPEN')}
+                forceRender={boolean('Force Render', false)}
             >
                 <Tabs.Tab id="tab1" label="Add" helperText="Details" count={0}>
                     Content for the add panel
@@ -79,6 +80,7 @@ We can also provide `icon` prop.
                 tabSize={select('Tab Size', sizes, 'S')}
                 tabBackground={select('Tab Background', tabBg, 'WHITE')}
                 tabStyle={select('Tab Style', tabStyle, 'OPEN')}
+                forceRender={boolean('Force Render', false)}
             >
                 <Tabs.Tab id="tab1" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
                     Content for the add panel
