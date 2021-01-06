@@ -13,6 +13,18 @@ describe('Table component', () => {
         expect(container).toMatchSnapshot();
     });
 
+    it('should render no result row', () => {
+        const { queryByText } = renderTable({
+            data: [],
+            noResultRow: (
+                <tr>
+                    <div>NO RESULT CUSTOM COMPONENT</div>
+                </tr>
+            )
+        });
+        expect(queryByText('NO RESULT CUSTOM COMPONENT')).toBeInTheDocument();
+    });
+
     describe('pagination', () => {
         const mockOnPageChange = jest.fn(),
             commonProps = {

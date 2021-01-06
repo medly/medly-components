@@ -9,10 +9,10 @@ export const Foot: React.FC = React.memo(() => {
         { onPageChange, totalItems, itemsPerPage, showRowWithCardStyle } = useContext(TableComponentsCommonPropsContext),
         dataRange = useMemo(
             () =>
-                `${itemsPerPage * (activePage - 1) + 1} - ${
+                `${totalItems ? itemsPerPage * (activePage - 1) + 1 : totalItems} - ${
                     itemsPerPage * (activePage - 1) + (totalItems < itemsPerPage ? totalItems : itemsPerPage)
                 }`,
-            [itemsPerPage, activePage]
+            [totalItems, itemsPerPage, activePage]
         );
 
     const handlePageClick = useCallback(
