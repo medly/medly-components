@@ -7,16 +7,19 @@ import { NoResultCell, NoResultRow } from './Row/Row.styled';
 import { Props } from './types';
 
 const Body: React.FC<Props> = React.memo(props => {
-    const { data, groupBy, rowIdentifier, showRowWithCardStyle } = useContext(TableComponentsCommonPropsContext),
+    const { data, groupBy, rowIdentifier, showRowWithCardStyle, noResultRow } = useContext(TableComponentsCommonPropsContext),
         { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, ...restProps } = props;
 
     return (
         <TBody>
-            {data.length === 0 && (
-                <NoResultRow showRowWithCardStyle={showRowWithCardStyle}>
-                    <NoResultCell>No result</NoResultCell>
-                </NoResultRow>
-            )}
+            {data.length === 0 &&
+                (noResultRow ? (
+                    noResultRow
+                ) : (
+                    <NoResultRow showRowWithCardStyle={showRowWithCardStyle}>
+                        <NoResultCell>No result</NoResultCell>
+                    </NoResultRow>
+                ))}
             {data.map((row, index) => {
                 const identifier = (groupBy ? row[groupBy] : row[rowIdentifier]) || index;
                 return groupBy ? (

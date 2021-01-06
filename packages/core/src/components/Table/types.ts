@@ -103,6 +103,8 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     itemsPerPage?: number;
     /** Default active page */
     defaultActivePage?: number;
+    /** No Result Row*/
+    noResultRow?: React.ReactElement<any>;
 }
 
 export interface StaticProps {
