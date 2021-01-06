@@ -152,33 +152,6 @@ export const Actions = [
 
 To show pagination you have to pass `withPagination` as `true` and pass `totalItems`, `itemsPerPage` & `onPageChange` props. `onPageChange` callback function will recieve object with these values `{ activePage?: number; sortField?: string; sortOrder?: SortOrder }`
 
-### Paginati
-
-## Row Selection
-
-Just pass the `onRowSelection` callback function as prop and table component will call this function with updted row id. For the unique ids you have to provide `rowIdentifier` prop.
-
-## Actions
-
-To show action bar you have to pass `withActionBar` as `true` and pass `actions` in below format
-
-```tsx
-export const Actions = [
-    <Button size="S" variant="solid">
-        <RemoveCircleIcon size="S" />
-        Lorem
-    </Button>,
-    <Button size="S" variant="solid">
-        <RemoveCircleIcon size="S" />
-        Lorem ipsum
-    </Button>
-];
-```
-
-### Pagination
-
-To show pagination you have to pass `withPagination` as `true` and pass `totalItems`, `itemsPerPage` & `onPageChange` props. `onPageChange` callback function will recieve object with these values `{ activePage?: number; sortField?: string; sortOrder?: SortOrder }`
-
 ### No Result Row
 
 You can replace `No Result` Row with your Custom Component. You need to pass the Mounted Component Prop to Table component, and it will render that component on UI.
@@ -193,14 +166,6 @@ To show Custom Component, you need pass props in below format.
 ```
 
 **Note:** It is advisable to wrap your component in `<tr>` tag to avoid warnings.
-
-### Props
-
-There are only two required props `data` & `columns`. It would be really great if you provide `rowIdentifier`. `rowIdentifier` is used as key name in data to be used as unique id for rows.
-
-on
-
-To show pagination you have to pass `withPagination` as `true` and pass `totalItems`, `itemsPerPage` & `onPageChange` props. `onPageChange` callback function will recieve object with these values `{ activePage?: number; sortField?: string; sortOrder?: SortOrder }`
 
 ### Props
 
