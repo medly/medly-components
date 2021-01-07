@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.42.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.41.2...@medly-components/core@1.42.0) (2021-01-07)
+
+
+### Bug Fixes
+
+* fix failing calendar tests ([09fc978](https://github.com/medly/medly-components/commit/09fc978784625fb6e3aa6ff6a9e90b470f2ad14e))
+* update multiselect chip to disable clear button when multiselect is disabled ([ba5364e](https://github.com/medly/medly-components/commit/ba5364e316c1c5d91c730d8598848c94e0283893)), closes [#223](https://github.com/medly/medly-components/issues/223)
+* update tests ([388ac24](https://github.com/medly/medly-components/commit/388ac2415fbf75d6da26614674c3ec26353043a8))
+
+
+### Features
+
+* added no-result-row component and fixed range display in table footer ([4f28024](https://github.com/medly/medly-components/commit/4f28024ac295fa95cb2ab20b77af5a3d625cfe4d))
+
+
+
+
+
 ## [1.41.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.41.1...@medly-components/core@1.41.2) (2020-12-23)
 
 
