@@ -6,6 +6,7 @@ import Calendar from '../Calendar';
 import Popover from '../Popover';
 import TextField from '../TextField';
 import { DateIconWrapper, Wrapper } from './DatePicker.styled';
+import datePickerPattern from './datePickerPattern';
 import { DatePickerProps } from './types';
 
 export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
@@ -133,6 +134,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
             desktopProps = {
                 ...sharedProps,
                 suffix: suffixEl,
+                pattern: datePickerPattern[displayFormat],
                 mask: displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()
             };
 

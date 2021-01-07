@@ -1,6 +1,7 @@
 import { DateRangeIcon } from '@medly-components/icons';
 import React from 'react';
 import { DateIconWrapper } from '../../DatePicker/DatePicker.styled';
+import datePickerPattern from '../../DatePicker/datePickerPattern';
 import * as TextFieldStyled from '../../TextField/Styled';
 import DateRangeTextField from './DateRangeTextField';
 import { Wrapper } from './DateRangeTextFields.styled';
@@ -20,6 +21,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
             errorText,
             required,
             helperText,
+            displayFormat,
             startDateLabel,
             endDateLabel
         } = props,
@@ -49,7 +51,8 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
             onInvalid: validateOnTextFieldInvalid,
             placeholder: mask,
             onChange: handleTextChange,
-            errorText: errorText || builtInErrorMessage
+            errorText: errorText || builtInErrorMessage,
+            pattern: datePickerPattern[displayFormat]
         },
         iconProps = {
             variant,
