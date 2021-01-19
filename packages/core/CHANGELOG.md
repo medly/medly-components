@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.43.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.43.0...@medly-components/core@1.43.1) (2021-01-19)
+
+
+### Bug Fixes
+
+* datepicker errorText issue ([bdba9ba](https://github.com/medly/medly-components/commit/bdba9bafd5bc84e7b72ea4ad912d92fb1d58717c))
+
+
+
+
+
 # [1.43.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.42.0...@medly-components/core@1.43.0) (2021-01-19)
 
 
