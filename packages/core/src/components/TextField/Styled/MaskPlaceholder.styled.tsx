@@ -6,7 +6,7 @@ const center = css`
         transform: translateY(-50%);
     `,
     bottom = css<{ variant?: Props['variant'] }>`
-        bottom: ${({ variant }) => (variant === 'filled' ? '0.7rem' : variant === 'fusion' ? '1.4rem' : '0.6rem')};
+        bottom: ${({ variant }) => (variant === 'filled' ? '0.7rem' : variant === 'fusion' ? '1.3rem' : '0.6rem')};
     `;
 
 export const MaskPlaceholder = styled('span')<{
