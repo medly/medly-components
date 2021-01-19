@@ -249,6 +249,16 @@ describe('DateRangePicker', () => {
             expect(message).toBeInTheDocument();
         });
 
+        it('should show error message on invalid event if input value is invalid date', async () => {
+            const { startDateInput, findByText } = renderComponent({
+                value: { value: { startDate: new Date(2020, 0, 1), endDate: new Date(2020, 0, 1) } }
+            });
+            fireEvent.change(startDateInput, { target: { value: '02 / 03 / 202' } });
+            fireEvent.invalid(startDateInput);
+            const message = await findByText('Constraints not satisfied');
+            expect(message).toBeInTheDocument();
+        });
+
         it('should show validator message on invalid', async () => {
             const { startDateInput, endDateInput, findByText } = renderComponent({
                 value: { startDate: null, endDate: null },
