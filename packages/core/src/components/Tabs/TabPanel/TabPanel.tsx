@@ -4,16 +4,21 @@ import * as Styled from './TabPanel.styled';
 import { Props } from './types';
 
 export const TabPanel: React.FC<Props> & WithStyle = React.memo(props => {
-    const { active, children } = props;
+    const { active, children, forceRender } = props;
 
     return (
         <>
             {React.Children.map(children, (child: any) => {
                 const { id } = child.props;
-                return id !== active ? undefined : (
-                    <Styled.TabPanel id={`${props.id}-${id}`} role="tabpanel" tabIndex={0} aria-labelledby={id}>
-                        {child.props.children}
-                    </Styled.TabPanel>
+                const isActive = id === active;
+                const renderTabPanel = forceRender || isActive;
+
+                return (
+                    renderTabPanel && (
+                        <Styled.TabPanel isActive={isActive} id={`${props.id}-${id}`} role="tabpanel" tabIndex={0} aria-labelledby={id}>
+                            {child.props.children}
+                        </Styled.TabPanel>
+                    )
                 );
             })}
         </>

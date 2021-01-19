@@ -133,13 +133,16 @@ describe('DateRangePicker', () => {
 
             it('should change month on selecting month and year from dropdown in single month calendar', () => {
                 const dateToSelect = new Date(2021, 1, 1),
-                    { container, calendarIcon, getByText, getByTitle, getAllByText } = renderComponent({ withSingleMonth: true });
+                    { container, calendarIcon, getByText, getByTitle } = renderComponent({
+                        withSingleMonth: true,
+                        value: { startDate: new Date(2020, 11, 25), endDate: null }
+                    });
                 fireEvent.click(calendarIcon);
                 expect(container.querySelector('#contract-calendar')).toBeVisible();
                 fireEvent.click(container.querySelector('#contract-calendar-month-selector-button'));
                 fireEvent.click(getByText('Feb'));
                 fireEvent.click(container.querySelector('#contract-calendar-year-selector-button'));
-                fireEvent.click(getAllByText('2021')[0]);
+                fireEvent.click(getByText('2021'));
                 expect(getByTitle(dateToSelect.toDateString())).toBeInTheDocument();
             });
         });

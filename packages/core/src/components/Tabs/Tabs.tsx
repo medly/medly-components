@@ -9,7 +9,7 @@ import { Props, StaticProps } from './types';
 
 export const Tabs: React.FC<Props> & StaticProps & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { defaultActive, active, onChange, children, tabSize, tabStyle, tabBackground, ...restProps } = props,
+        const { defaultActive, active, onChange, children, tabSize, tabStyle, tabBackground, forceRender, ...restProps } = props,
             tabsId = props.id || 'medly-tabs',
             tabIds = useMemo(
                 () =>
@@ -40,7 +40,7 @@ export const Tabs: React.FC<Props> & StaticProps & WithStyle = React.memo(
                     <TabList id={`${tabsId}-list`} active={activeTab} onChange={handleTabChange}>
                         {children}
                     </TabList>
-                    <TabPanel id={`${tabsId}-panel`} active={activeTab}>
+                    <TabPanel id={`${tabsId}-panel`} active={activeTab} forceRender={forceRender}>
                         {children}
                     </TabPanel>
                 </TabsContext.Provider>
@@ -56,5 +56,6 @@ Tabs.TabPanel = TabPanel;
 Tabs.defaultProps = {
     tabSize: 'S',
     tabStyle: 'OPEN',
-    tabBackground: 'WHITE'
+    tabBackground: 'WHITE',
+    forceRender: false
 };

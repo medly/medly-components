@@ -5,6 +5,7 @@ exports[`TabPanel should render only active tab content 1`] = `
   padding: 10px;
   height: 100%;
   width: 100%;
+  display: block;
 }
 
 .c0:focus {

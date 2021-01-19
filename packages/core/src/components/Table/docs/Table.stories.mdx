@@ -152,6 +152,21 @@ export const Actions = [
 
 To show pagination you have to pass `withPagination` as `true` and pass `totalItems`, `itemsPerPage` & `onPageChange` props. `onPageChange` callback function will recieve object with these values `{ activePage?: number; sortField?: string; sortOrder?: SortOrder }`
 
+### No Result Row
+
+You can replace `No Result` Row with your Custom Component. You need to pass the Mounted Component Prop to Table component, and it will render that component on UI.
+To show Custom Component, you need pass props in below format.
+
+```tsx
+    <Table
+        data="Data Object"
+        columns="Columns Object"
+        noResultRow={<tr><div>NO RESULT CUSTOM COMPONENT</div></tr>}
+    />
+```
+
+**Note:** It is advisable to wrap your component in `<tr>` tag to avoid warnings.
+
 ### Props
 
 There are only two required props `data` & `columns`. It would be really great if you provide `rowIdentifier`. `rowIdentifier` is used as key name in data to be used as unique id for rows.
