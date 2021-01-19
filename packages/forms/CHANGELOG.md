@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.17.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.16.4...@medly-components/forms@1.17.0) (2021-01-19)
+
+
+### Features
+
+* add validator finctionality in Datepicker component ([2bb4802](https://github.com/medly/medly-components/commit/2bb480237f7355607498d7f48d0ff20ee211b4af))
+
+
+
+
+
 ## [1.16.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.16.3...@medly-components/forms@1.16.4) (2021-01-07)
 
 **Note:** Version bump only for package @medly-components/forms

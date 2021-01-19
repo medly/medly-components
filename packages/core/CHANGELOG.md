@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.43.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.42.0...@medly-components/core@1.43.0) (2021-01-19)
+
+
+### Bug Fixes
+
+* add null type check in datepicker components prop ([bf80fdc](https://github.com/medly/medly-components/commit/bf80fdc5ac4ae4719835aac502cf6335b4376b39))
+* form submission on invalid date ([c9a7f25](https://github.com/medly/medly-components/commit/c9a7f2558827894f77d502ce79505dd725aed1ca))
+* height issue of mask span in fusion textfield component ([3343b79](https://github.com/medly/medly-components/commit/3343b79681f14bc6b6b43ea5c14a9c25161c9d2b))
+* types of datepicker component ([b2dfc2d](https://github.com/medly/medly-components/commit/b2dfc2d286838dd84c84fbb41cce9b0a665a9235))
+* update calendar tests to fix failing tests ([9abf871](https://github.com/medly/medly-components/commit/9abf8715b6194f9a15eda6162a23e78920e75efb))
+
+
+### Features
+
+* add forceRender prop and functionality, add tests ([960660f](https://github.com/medly/medly-components/commit/960660f788b970f08200bde6754a7a5461fe0900))
+* add validator finctionality in Datepicker component ([2bb4802](https://github.com/medly/medly-components/commit/2bb480237f7355607498d7f48d0ff20ee211b4af))
+
+
+
+
+
 # [1.42.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.41.2...@medly-components/core@1.42.0) (2021-01-07)
 
 
