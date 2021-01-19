@@ -57,7 +57,7 @@ describe('Calendar Component', () => {
     it('should call onChange with expected date', () => {
         const mockOnChange = jest.fn(),
             dateToSelect = new Date(2021, 1, 1),
-            { container, getByText, getByTitle } = render(
+            { container, getByText, getAllByText, getByTitle } = render(
                 <Calendar
                     id="test-calendar"
                     date={null}
@@ -70,7 +70,7 @@ describe('Calendar Component', () => {
         fireEvent.click(container.querySelector('#test-calendar-month-selector-button'));
         fireEvent.click(getByText('Feb'));
         fireEvent.click(container.querySelector('#test-calendar-year-selector-button'));
-        fireEvent.click(getByText('2021'));
+        fireEvent.click(getAllByText('2021')[1]);
         fireEvent.click(getByTitle(dateToSelect.toDateString()));
         expect(mockOnChange).toHaveBeenCalledWith(dateToSelect);
     });

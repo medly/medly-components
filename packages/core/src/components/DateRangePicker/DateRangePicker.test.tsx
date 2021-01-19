@@ -133,13 +133,13 @@ describe('DateRangePicker', () => {
 
             it('should change month on selecting month and year from dropdown in single month calendar', () => {
                 const dateToSelect = new Date(2021, 1, 1),
-                    { container, calendarIcon, getByText, getByTitle } = renderComponent({ withSingleMonth: true });
+                    { container, calendarIcon, getByText, getByTitle, getAllByText } = renderComponent({ withSingleMonth: true });
                 fireEvent.click(calendarIcon);
                 expect(container.querySelector('#contract-calendar')).toBeVisible();
                 fireEvent.click(container.querySelector('#contract-calendar-month-selector-button'));
                 fireEvent.click(getByText('Feb'));
                 fireEvent.click(container.querySelector('#contract-calendar-year-selector-button'));
-                fireEvent.click(getByText('2021'));
+                fireEvent.click(getAllByText('2021')[0]);
                 expect(getByTitle(dateToSelect.toDateString())).toBeInTheDocument();
             });
         });
@@ -243,16 +243,6 @@ describe('DateRangePicker', () => {
             });
             fireEvent.blur(startDateInput);
             const message = await findByText('Please fill start and end dates');
-            expect(message).toBeInTheDocument();
-        });
-
-        it('should show error message on invalid event if input value is invalid date', async () => {
-            const { startDateInput, findByText } = renderComponent({
-                value: { value: { startDate: new Date(2020, 0, 1), endDate: new Date(2020, 0, 1) } }
-            });
-            fireEvent.change(startDateInput, { target: { value: '02 / 03 / 202' } });
-            fireEvent.invalid(startDateInput);
-            const message = await findByText('Enter valid date');
             expect(message).toBeInTheDocument();
         });
 

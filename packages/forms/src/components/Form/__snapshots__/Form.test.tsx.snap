@@ -1071,7 +1071,7 @@ exports[`Form should render properly with initial state 1`] = `
   padding-right: 0.8rem;
 }
 
-.c41 .sc-fzoJMP {
+.c41 .sc-fzqMAW {
   z-index: 1000;
   position: absolute;
   top: calc(100% + 0px);
@@ -1242,7 +1242,7 @@ exports[`Form should render properly with initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c12 .sc-fznzqM {
+.c12 .sc-fzplgP {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2041,6 +2041,7 @@ exports[`Form should render properly with initial state 1`] = `
                 class="c7"
                 id="birthDate-input"
                 name="birthDate"
+                pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
                 placeholder="DD / MM / YYYY"
                 type="text"
                 value="01 / 01 / 2019"
@@ -2118,6 +2119,7 @@ exports[`Form should render properly with initial state 1`] = `
               class="c7"
               id="experience-startDate-input"
               name="START_DATE"
+              pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
               placeholder="DD / MM / YYYY"
               required=""
               value="01 / 01 / 2019"
@@ -2146,6 +2148,7 @@ exports[`Form should render properly with initial state 1`] = `
               class="c7"
               id="experience-endDate-input"
               name="END_DATE"
+              pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
               placeholder="DD / MM / YYYY"
               required=""
               value="01 / 02 / 2019"
@@ -3370,7 +3373,7 @@ exports[`Form should render properly without initial state 1`] = `
   padding-right: 0.8rem;
 }
 
-.c41 .sc-fzoJMP {
+.c41 .sc-fzqMAW {
   z-index: 1000;
   position: absolute;
   top: calc(100% + 0px);
@@ -3541,7 +3544,7 @@ exports[`Form should render properly without initial state 1`] = `
   grid-template-areas: 'label field' 'random description';
 }
 
-.c15 .sc-fznzqM {
+.c15 .sc-fzplgP {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4257,6 +4260,7 @@ exports[`Form should render properly without initial state 1`] = `
                 class="c10"
                 id="birthDate-input"
                 name="birthDate"
+                pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
                 placeholder="DD / MM / YYYY"
                 type="text"
                 value=""
@@ -4334,6 +4338,7 @@ exports[`Form should render properly without initial state 1`] = `
               class="c10"
               id="experience-startDate-input"
               name="START_DATE"
+              pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
               placeholder="DD / MM / YYYY"
               required=""
               value=""
@@ -4362,6 +4367,7 @@ exports[`Form should render properly without initial state 1`] = `
               class="c10"
               id="experience-endDate-input"
               name="END_DATE"
+              pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
               placeholder="DD / MM / YYYY"
               required=""
               value=""

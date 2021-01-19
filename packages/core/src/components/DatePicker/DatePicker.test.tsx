@@ -127,8 +127,8 @@ describe('DatePicker component', () => {
             displayFormat: 'MM/dd/yyyy',
             onChange: jest.fn()
         };
-        const renderComponent = (required = false) => {
-            const { container, getByText } = render(<DatePicker id="dob" {...props} required={required} />);
+        const renderComponent = (required = false, validator?: (val: Date | null) => string) => {
+            const { container, getByText } = render(<DatePicker id="dob" {...props} required={required} validator={validator} />);
             const inputEl = container.querySelector('input');
             return {
                 inputEl,
@@ -146,7 +146,14 @@ describe('DatePicker component', () => {
             const { inputEl, getByText } = renderComponent();
             fireEvent.change(inputEl, { target: { value: '04/31' } });
             fireEvent.blur(inputEl);
-            await waitFor(() => expect(getByText('Enter valid date')).toBeInTheDocument());
+            await waitFor(() => expect(getByText('Please enter valid date')).toBeInTheDocument());
+        });
+
+        it('should return validator error message if given', async () => {
+            const validator = (val: Date | null) => !val && 'Please enter dob';
+            const { inputEl, getByText } = renderComponent(true, validator);
+            fireEvent.invalid(inputEl);
+            await waitFor(() => expect(getByText('Please enter dob')).toBeInTheDocument());
         });
     });
 
