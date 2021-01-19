@@ -127,7 +127,7 @@ describe('DatePicker component', () => {
             displayFormat: 'MM/dd/yyyy',
             onChange: jest.fn()
         };
-        const renderComponent = (required = false, validator?: (val: Date | null) => string) => {
+        const renderComponent = (required = false, validator?: (val: Date) => string) => {
             const { container, getByText } = render(<DatePicker id="dob" {...props} required={required} validator={validator} />);
             const inputEl = container.querySelector('input');
             return {
