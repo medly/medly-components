@@ -48,16 +48,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                     const inputValue = event.target.value,
                         parsedDate = parseToDate(inputValue, displayFormat);
                     setTextValue(inputValue);
-                    if (parsedDate.toString() !== 'Invalid Date') {
-                        if (parsedDate < minSelectableDate || parsedDate > maxSelectableDate) {
-                            setErrorMessage('Please select date from allowed range');
-                        } else {
-                            onChange(parsedDate);
-                            setErrorMessage('');
-                        }
-                    } else {
-                        onChange(null);
-                    }
+                    onChange(parsedDate.toString() !== 'Invalid Date' ? parsedDate : null);
                 },
                 [displayFormat, onChange]
             ),
@@ -78,13 +69,16 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                         parsedDate = inputValue && parseToDate(inputValue, displayFormat),
                         isValidDate = inputValue && parsedDate.toString() !== 'Invalid Date',
                         emptyDateMessage = props.required && !inputValue && 'Please fill in this field',
-                        invalidDateMessage = !isValidDate && 'Please enter valid date',
-                        validatorMessage = validator && validator(null, event.type),
-                        message = validatorMessage || emptyDateMessage || invalidDateMessage || '';
-                    message && setTimeout(() => setErrorMessage(message), 0);
+                        invalidDateRangeMessage =
+                            (parsedDate < minSelectableDate || parsedDate > maxSelectableDate) && 'Please select date from allowed range',
+                        invalidDateMessage = inputValue && !isValidDate && 'Please enter valid date',
+                        validatorMessage = validator && validator(parsedDate || null, event.type),
+                        message = validatorMessage || emptyDateMessage || invalidDateRangeMessage || invalidDateMessage || '';
+
+                    setTimeout(() => setErrorMessage(message), 0);
                     eventFunc && eventFunc(event);
                 },
-                [props.required, displayFormat, validator]
+                [props.required, displayFormat, validator, minSelectableDate, maxSelectableDate]
             ),
             onBlur = useCallback((event: React.FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [
                 props.onBlur,

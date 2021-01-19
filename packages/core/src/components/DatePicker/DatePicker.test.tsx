@@ -108,7 +108,9 @@ describe('DatePicker component', () => {
                         minSelectableDate={new Date(2021, 0, 2)}
                     />
                 );
+            const inputEl = container.querySelector('input');
             fireEvent.change(container.querySelector('input'), { target: { value: '01 / 02 / 2020' } });
+            fireEvent.blur(inputEl);
             const message = await findByText('Please select date from allowed range');
             expect(message).toBeInTheDocument();
         });
