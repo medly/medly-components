@@ -17,13 +17,13 @@ export type DisplayFormat =
 
 export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'value' | 'onChange' | 'size' | 'prefix'> {
     /** Current Date */
-    value: Date | string;
+    value: Date | string | null;
     /** Function to be called on changing the date */
-    onChange: (date: Date) => void;
+    onChange: (date: Date | null) => void;
     /** Input variants for DatePicker */
     variant?: 'outlined' | 'filled' | 'fusion';
-    /** Function will called with the date on blur and invalid event */
-    validator?: (val: Date, eventType?: string) => string;
+    /** Function will called with the date or null on blur and invalid event */
+    validator?: (val: Date | null, eventType?: string) => string;
     /** Input Size */
     size?: 'S' | 'M';
     /** Date display format */

@@ -79,7 +79,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                         isValidDate = inputValue && parsedDate.toString() !== 'Invalid Date',
                         emptyDateMessage = props.required && !inputValue && 'Please fill in this field',
                         invalidDateMessage = !isValidDate && 'Please enter valid date',
-                        validatorMessage = validator && validator(parsedDate || null, event.type),
+                        validatorMessage = validator && validator(null, event.type),
                         message = validatorMessage || emptyDateMessage || invalidDateMessage || '';
                     message && setTimeout(() => setErrorMessage(message), 0);
                     eventFunc && eventFunc(event);
