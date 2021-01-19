@@ -3,9 +3,9 @@ import { isMobile, parseToDate, useCombinedRefs, useOuterClickNotifier, WithStyl
 import { format } from 'date-fns';
 import React, { FormEvent, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Calendar from '../Calendar';
-import Popover from '../Popover';
 import TextField from '../TextField';
 import { DateIconWrapper, Wrapper } from './DatePicker.styled';
+import datePickerPattern from './datePickerPattern';
 import { DatePickerProps } from './types';
 
 export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
@@ -20,6 +20,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                 disabled,
                 errorText,
                 className,
+                validator,
                 popoverPlacement,
                 minSelectableDate,
                 maxSelectableDate,
@@ -73,14 +74,17 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
             ),
             validate = useCallback(
                 (event: React.FocusEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
-                    const inputValue = event.target.value;
-                    inputValue &&
-                        parseToDate(inputValue, displayFormat).toString() === 'Invalid Date' &&
-                        setTimeout(() => setErrorMessage('Enter valid date'), 0);
-                    props.required && !inputValue && setTimeout(() => setErrorMessage('Please fill in this field'), 0);
+                    const inputValue = event.target.value,
+                        parsedDate = inputValue && parseToDate(inputValue, displayFormat),
+                        isValidDate = inputValue && parsedDate.toString() !== 'Invalid Date',
+                        emptyDateMessage = props.required && !inputValue && 'Please fill in this field',
+                        invalidDateMessage = !isValidDate && 'Please enter valid date',
+                        validatorMessage = validator && validator(null, event.type),
+                        message = validatorMessage || emptyDateMessage || invalidDateMessage || '';
+                    message && setTimeout(() => setErrorMessage(message), 0);
                     eventFunc && eventFunc(event);
                 },
-                [props.required, displayFormat]
+                [props.required, displayFormat, validator]
             ),
             onBlur = useCallback((event: React.FocusEvent<HTMLInputElement>) => validate(event, props.onBlur), [
                 props.onBlur,
@@ -133,6 +137,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
             desktopProps = {
                 ...sharedProps,
                 suffix: suffixEl,
+                pattern: datePickerPattern[displayFormat],
                 mask: displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()
             };
 
@@ -174,4 +179,4 @@ DatePicker.defaultProps = {
     popoverPlacement: 'bottom-start'
 };
 DatePicker.displayName = 'DatePicker';
-DatePicker.Style = Popover.Style;
+DatePicker.Style = Wrapper;

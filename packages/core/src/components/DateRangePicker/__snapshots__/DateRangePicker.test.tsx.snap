@@ -22379,6 +22379,7 @@ exports[`DateRangePicker should render properly 1`] = `
           class="c6"
           id="contract-startDate-input"
           name="START_DATE"
+          pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
           placeholder="MM / DD / YYYY"
           value=""
         />
@@ -22405,6 +22406,7 @@ exports[`DateRangePicker should render properly 1`] = `
           class="c6"
           id="contract-endDate-input"
           name="END_DATE"
+          pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
           placeholder="MM / DD / YYYY"
           value=""
         />
@@ -22647,7 +22649,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c30"
             >
               <button
                 class="c31"
@@ -22812,7 +22814,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c30"
+              class="c35"
             >
               <button
                 class="c31"
@@ -24665,6 +24667,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
           class="c7"
           id="contract-startDate-input"
           name="START_DATE"
+          pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
           placeholder="MM / DD / YYYY"
           value=""
         />
@@ -24691,6 +24694,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
           class="c7"
           id="contract-endDate-input"
           name="END_DATE"
+          pattern="\\\\d{2} \\\\/ \\\\d{2} \\\\/ \\\\d{4}"
           placeholder="MM / DD / YYYY"
           value=""
         />
@@ -25001,7 +25005,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c40"
+              class="c35"
             >
               <button
                 class="c36"
@@ -25166,7 +25170,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c35"
+              class="c40"
             >
               <button
                 class="c36"

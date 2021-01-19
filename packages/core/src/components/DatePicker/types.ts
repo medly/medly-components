@@ -22,6 +22,8 @@ export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'valu
     onChange: (date: Date | null) => void;
     /** Input variants for DatePicker */
     variant?: 'outlined' | 'filled' | 'fusion';
+    /** Function will called with the date or null on blur and invalid event */
+    validator?: (val: Date | null, eventType?: string) => string;
     /** Input Size */
     size?: 'S' | 'M';
     /** Date display format */

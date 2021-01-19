@@ -255,7 +255,7 @@ describe('DateRangePicker', () => {
             });
             fireEvent.change(startDateInput, { target: { value: '02 / 03 / 202' } });
             fireEvent.invalid(startDateInput);
-            const message = await findByText('Enter valid date');
+            const message = await findByText('Constraints not satisfied');
             expect(message).toBeInTheDocument();
         });
 
