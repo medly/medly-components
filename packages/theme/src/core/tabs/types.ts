@@ -18,5 +18,5 @@ export interface TabsTheme {
     iconBgColor: Colors;
     countBgColor: Colors;
     bgColor: Colors;
-    tabCountBorderRadius: string;
+    countBorderRadius: string;
 }

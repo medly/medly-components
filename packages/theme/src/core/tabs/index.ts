@@ -33,7 +33,7 @@ const tabs: TabsTheme = {
         disabled: colors.grey[50]
     },
     countColor: colors.white,
-    tabCountBorderRadius: '2.5rem',
+    countBorderRadius: '2.5rem',
     countBgColor: {
         active: colors.blue[500],
         default: colors.grey[600],
