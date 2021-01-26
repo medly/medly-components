@@ -4,7 +4,7 @@ import * as Styled from './TabPanel.styled';
 import { Props } from './types';
 
 export const TabPanel: React.FC<Props> & WithStyle = React.memo(props => {
-    const { active, children, forceRender } = props;
+    const { active, children, forceRender, className } = props;
 
     return (
         <>
@@ -15,7 +15,14 @@ export const TabPanel: React.FC<Props> & WithStyle = React.memo(props => {
 
                 return (
                     renderTabPanel && (
-                        <Styled.TabPanel isActive={isActive} id={`${props.id}-${id}`} role="tabpanel" tabIndex={0} aria-labelledby={id}>
+                        <Styled.TabPanel
+                            isActive={isActive}
+                            id={`${props.id}-${id}`}
+                            role="tabpanel"
+                            tabIndex={0}
+                            aria-labelledby={id}
+                            className={className}
+                        >
                             {child.props.children}
                         </Styled.TabPanel>
                     )
