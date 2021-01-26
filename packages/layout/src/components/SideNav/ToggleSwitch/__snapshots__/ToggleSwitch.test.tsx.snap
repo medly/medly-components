@@ -1,19 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`NavItem should call onClick when we click on it 1`] = `
-.c5 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: initial;
-}
-
 .c3 {
   overflow: visible;
   font-size: 2.4rem;
@@ -27,6 +14,19 @@ exports[`NavItem should call onClick when we click on it 1`] = `
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
+}
+
+.c5 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c1 {
@@ -163,7 +163,7 @@ exports[`NavItem should call onClick when we click on it 1`] = `
 
 <div>
   <ul
-    class="sc-qXHHN c0"
+    class="sc-qPLKk c0"
   >
     <li
       class="c1"
@@ -193,19 +193,6 @@ exports[`NavItem should call onClick when we click on it 1`] = `
 `;
 
 exports[`NavItem should render properly when it is showing hide option 1`] = `
-.c5 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: initial;
-}
-
 .c3 {
   overflow: visible;
   font-size: 2.4rem;
@@ -219,6 +206,19 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
+}
+
+.c5 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c1 {
@@ -355,7 +355,7 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
 
 <div>
   <ul
-    class="sc-qXHHN c0"
+    class="sc-qPLKk c0"
   >
     <li
       class="c1"
@@ -385,19 +385,6 @@ exports[`NavItem should render properly when it is showing hide option 1`] = `
 `;
 
 exports[`NavItem should render properly when it is showing open option 1`] = `
-.c5 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: initial;
-}
-
 .c3 {
   overflow: visible;
   font-size: 2.4rem;
@@ -411,6 +398,19 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
+}
+
+.c5 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
 }
 
 .c1 {
@@ -547,7 +547,7 @@ exports[`NavItem should render properly when it is showing open option 1`] = `
 
 <div>
   <ul
-    class="sc-qXHHN c0"
+    class="sc-qPLKk c0"
   >
     <li
       class="c1"
