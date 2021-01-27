@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.43.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.43.1...@medly-components/core@1.43.2) (2021-01-27)
+
+
+### Bug Fixes
+
+* **core:** fix table custom cell allignment issue ([4da0379](https://github.com/medly/medly-components/commit/4da0379d2936e5f342e2fa096f67a13eaf3352f1))
+* **core:** update test case snapshots ([2a57c65](https://github.com/medly/medly-components/commit/2a57c6559c3419beb37174a7cd3209c8798170a3))
+
+
+
+
+
 ## [1.43.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.43.0...@medly-components/core@1.43.1) (2021-01-19)
 
 
