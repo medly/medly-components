@@ -1,33 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SideNav should render properly with shadow 1`] = `
-.c8 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: initial;
-}
-
-.c12 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.2rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
-  text-align: initial;
-  text-transform: uppercase;
-}
-
 .c6 {
   overflow: visible;
   font-size: 2.4rem;
@@ -56,6 +29,33 @@ exports[`SideNav should render properly with shadow 1`] = `
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
+}
+
+.c8 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c12 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  text-align: initial;
+  text-transform: uppercase;
 }
 
 .c3 {
@@ -352,7 +352,7 @@ exports[`SideNav should render properly with shadow 1`] = `
 
 <div>
   <aside
-    class="sc-pITNg c0"
+    class="sc-pAyMl c0"
     id="medly-sidenav"
   >
     <nav
@@ -506,33 +506,6 @@ exports[`SideNav should render properly with shadow 1`] = `
 `;
 
 exports[`SideNav should render properly without shadow 1`] = `
-.c8 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.4rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.2rem;
-  text-align: initial;
-}
-
-.c12 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.2rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
-  text-align: initial;
-  text-transform: uppercase;
-}
-
 .c6 {
   overflow: visible;
   font-size: 2.4rem;
@@ -561,6 +534,33 @@ exports[`SideNav should render properly without shadow 1`] = `
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
+}
+
+.c8 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c12 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  text-align: initial;
+  text-transform: uppercase;
 }
 
 .c3 {
@@ -856,7 +856,7 @@ exports[`SideNav should render properly without shadow 1`] = `
 
 <div>
   <aside
-    class="sc-pITNg c0"
+    class="sc-pAyMl c0"
     id="medly-sidenav"
   >
     <nav
