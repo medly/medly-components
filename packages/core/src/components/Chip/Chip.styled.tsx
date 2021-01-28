@@ -37,6 +37,7 @@ const flat = () => css`
 
 export const Chip = styled('button')<StyledProps>`
     background-color: transparent;
+    font-family: inherit;
     border: none;
     border-radius: 20px;
     padding: 3px 10px;
