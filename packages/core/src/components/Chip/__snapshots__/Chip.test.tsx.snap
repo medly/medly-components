@@ -16,6 +16,7 @@ exports[`Chip component should render properly when it is disabled 1`] = `
 
 .c0 {
   background-color: transparent;
+  font-family: inherit;
   border: none;
   border-radius: 20px;
   padding: 3px 10px;
@@ -90,6 +91,7 @@ exports[`Chip component should render properly with flat variant 1`] = `
 
 .c0 {
   background-color: transparent;
+  font-family: inherit;
   border: none;
   border-radius: 20px;
   padding: 3px 10px;
@@ -162,6 +164,7 @@ exports[`Chip component should render properly with outlined variant 1`] = `
 
 .c0 {
   background-color: transparent;
+  font-family: inherit;
   border: none;
   border-radius: 20px;
   padding: 3px 10px;
@@ -235,6 +238,7 @@ exports[`Chip component should render properly with solid variant 1`] = `
 
 .c0 {
   background-color: transparent;
+  font-family: inherit;
   border: none;
   border-radius: 20px;
   padding: 3px 10px;
