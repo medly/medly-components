@@ -6,7 +6,7 @@ import { StyledProps } from './types';
 
 export const Count = styled.span<{ tabSize: TabSize }>`
     color: ${({ theme }) => theme.tabs.countColor};
-    border-radius: 2.5rem;
+    border-radius: ${({ theme }) => theme.tabs.countBorderRadius};
     margin-left: 0.8rem;
     line-height: 1.2rem;
     padding: ${({ tabSize }) => (tabSize === 'S' ? '0.2rem 0.5rem' : '0.4rem 0.8rem')};
