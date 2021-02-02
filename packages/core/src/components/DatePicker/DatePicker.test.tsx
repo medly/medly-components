@@ -88,6 +88,28 @@ describe('DatePicker component', () => {
         });
     });
 
+    describe('calendar icon', () => {
+        it('should show calendar icon when showCalendarIcon prop is true', () => {
+            const { container } = render(
+                <DatePicker showCalendarIcon id="dob" value={new Date(2020, 0, 1)} displayFormat="MM/dd/yyyy" onChange={jest.fn()} />
+            );
+            expect(container.querySelector('#dob-calendar-icon')).toBeVisible();
+        });
+
+        it('should not show calendar icon when showCalendarIcon prop is true', () => {
+            const { container } = render(
+                <DatePicker
+                    showCalendarIcon={false}
+                    id="dob"
+                    value={new Date(2020, 0, 1)}
+                    displayFormat="MM/dd/yyyy"
+                    onChange={jest.fn()}
+                />
+            );
+            expect(container.querySelector('#dob-calendar-icon')).toBeNull();
+        });
+    });
+
     describe('on text change', () => {
         it('should change call onChange with expected date', () => {
             const mockOnChange = jest.fn(),

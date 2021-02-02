@@ -48,6 +48,8 @@ export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'valu
     errorText?: string;
     /** Popover placement */
     popoverPlacement?: Placement;
+    /** Show the calendar icon */
+    showCalendarIcon?: boolean;
 }
 
 export interface StyleProps extends Pick<DatePickerProps, 'variant' | 'fullWidth' | 'disabled' | 'minWidth' | 'size'> {
