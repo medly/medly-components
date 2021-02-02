@@ -105,6 +105,8 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     defaultActivePage?: number;
     /** No Result Row*/
     noResultRow?: React.ReactElement<any>;
+    /** Value of the default expanded Row's identifier */
+    defaultExpandedRowIdentifier?: unknown;
 }
 
 export interface StaticProps {
