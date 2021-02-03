@@ -90,6 +90,8 @@ For Example if your data is `[{name: "A", role: "doctor"}, {name: "B", role: "en
 
 And once the user expands any row `getGroupedData` function will be called with the group title. For example in above scenario if users expands row with `doctor` title then `getGroupedData("doctor")` will be called and you have to return a promise with grouped data according to column config.
 
+-   To expand any row by default you can pass `defaultExpandedRowIdentifier` and `rowIdentifier` prop values.
+
 <Preview withToolbar>
     <Story name="Table with Grouping">
         {() => {
@@ -120,6 +122,8 @@ And once the user expands any row `getGroupedData` function will be called with 
                         groupBy={select('Group By', ['name', 'marks.maths', 'marks.science', 'age', 'isPassed', 'rating'], 'name')}
                         showRowWithCardStyle={boolean('Show Row With Card Style', false)}
                         expandedRowComponent={ExpandedRowComponent}
+                        rowIdentifier="name"
+                        defaultExpandedRowIdentifier="Christine Lobowski"
                     />
                 </>
             );
@@ -158,11 +162,15 @@ You can replace `No Result` Row with your Custom Component. You need to pass the
 To show Custom Component, you need pass props in below format.
 
 ```tsx
-    <Table
-        data="Data Object"
-        columns="Columns Object"
-        noResultRow={<tr><div>NO RESULT CUSTOM COMPONENT</div></tr>}
-    />
+<Table
+    data="Data Object"
+    columns="Columns Object"
+    noResultRow={
+        <tr>
+            <div>NO RESULT CUSTOM COMPONENT</div>
+        </tr>
+    }
+/>
 ```
 
 **Note:** It is advisable to wrap your component in `<tr>` tag to avoid warnings.

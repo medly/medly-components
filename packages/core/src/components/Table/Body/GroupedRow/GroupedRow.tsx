@@ -1,5 +1,5 @@
 import { useUpdateEffect } from '@medly-components/utils';
-import React, { useCallback, useContext, useMemo, useState } from 'react';
+import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { loadingBodyData } from '../../constants';
 import { TableComponentsCommonPropsContext } from '../../context';
 import { Data } from '../../types';
@@ -17,6 +17,7 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
             getGroupedData,
             rowSelectionDisableKey,
             addColumnMaxSize,
+            defaultExpandedRowIdentifier,
             isLoading: isTableLoading
         } = tableProps,
         {
@@ -30,7 +31,7 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
             setSelectAllDisableState
         } = props;
 
-    const [isRowExpanded, setExpansionState] = useState(false),
+    const [isRowExpanded, setExpansionState] = useState(titleRowData[rowIdentifier] === defaultExpandedRowIdentifier),
         [isLoading, setLoadingState] = useState(true),
         [selectedIds, setSelectedIds] = useState([]),
         [groupedRows, setGroupedRows] = useState<Data>(loadingBodyData);
@@ -60,14 +61,15 @@ export const GroupedRow: React.FC<Props> = React.memo(props => {
             toggleId(rowId);
         };
 
-    useUpdateEffect(async () => {
-        if (isRowExpanded && groupedRows === loadingBodyData) {
+    useEffect(() => {
+        const fetchData = async () => {
             setLoadingState(true);
             const dt = await getGroupedData(titleRowData[groupBy]);
             setLoadingState(false);
             setGroupedRows(dt);
             setUniqueIds(array => Array.from(new Set(array.concat(titleRowData[groupBy]))));
-        }
+        };
+        isRowExpanded && groupedRows === loadingBodyData && fetchData();
     }, [isRowExpanded]);
 
     useUpdateEffect(() => {
