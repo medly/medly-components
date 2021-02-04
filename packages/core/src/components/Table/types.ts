@@ -107,6 +107,10 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     noResultRow?: React.ReactElement<any>;
     /** Value of the default expanded Row's identifier */
     defaultExpandedRowIdentifier?: unknown;
+    /** Row hover action items */
+    rowHoverActions?: Array<JSX.Element>;
+    /** Enable row hover action items */
+    withRowHoverActions?: boolean;
 }
 
 export interface StaticProps {
