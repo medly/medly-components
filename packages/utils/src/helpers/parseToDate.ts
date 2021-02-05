@@ -1,3 +1,5 @@
+import { isValid, parse } from 'date-fns';
+
 type DisplayFormat =
     | 'dd/MM/yyyy'
     | 'dd/yyyy/MM'
@@ -15,13 +17,14 @@ type DisplayFormat =
 const getIndex = (arr: string[], str: string) => arr.findIndex(curr => curr === str);
 
 export const parseToDate = (initialState: string, displayFormat: DisplayFormat) => {
-    const dateStrings = displayFormat.replace(/\s/g, '').split(/[-/]/),
-        dateValues = initialState.replace(/\s/g, '').split(/[-/]/),
-        yyyy = dateValues[getIndex(dateStrings, 'yyyy')],
-        MM = dateValues[getIndex(dateStrings, 'MM')],
-        dd = dateValues[getIndex(dateStrings, 'dd')];
+    const truncatedDate = initialState.replace(/\s/g, ''),
+        truncatedDisplayFormat = displayFormat.replace(/\s/g, ''),
+        tokens = truncatedDisplayFormat.split(/[-/]/),
+        dateValues = truncatedDate.split(/[-/]/),
+        yyyy = dateValues[getIndex(tokens, 'yyyy')],
+        MM = dateValues[getIndex(tokens, 'MM')],
+        dd = dateValues[getIndex(tokens, 'dd')],
+        parsedDate = parse(truncatedDate, truncatedDisplayFormat, new Date());
 
-    return yyyy?.length === 4 && MM?.length === 2 && dd?.length === 2
-        ? new Date(Number(yyyy), Number(MM) - 1, Number(dd))
-        : new Date('Invalid Date');
+    return yyyy?.length === 4 && MM?.length === 2 && dd?.length === 2 && isValid(parsedDate) ? parsedDate : new Date('Invalid Date');
 };

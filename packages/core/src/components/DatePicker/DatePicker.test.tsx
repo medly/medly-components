@@ -170,7 +170,7 @@ describe('DatePicker component', () => {
             const { inputEl, getByText } = renderComponent();
             fireEvent.change(inputEl, { target: { value: '04/31' } });
             fireEvent.blur(inputEl);
-            await waitFor(() => expect(getByText('Please enter valid date')).toBeInTheDocument());
+            await waitFor(() => expect(getByText('Please enter a valid date')).toBeInTheDocument());
         });
 
         it('should return validator error message if given', async () => {

@@ -21,7 +21,6 @@
         "@medly-components/icons": "1.5.4",
         "@medly-components/theme": "1.29.0",
         "@medly-components/utils": "1.8.4",
-        "date-fns": "^2.16.1",
         "effector": "^20.16.1",
         "effector-react": "^20.7.4",
         "polished": "^3.6.2"
