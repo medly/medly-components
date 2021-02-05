@@ -162,6 +162,30 @@ export const Actions = [
 ];
 ```
 
+## Row Hover Actions
+
+To show row hover actions you have to pass `withRowHoverActions` as `true` and pass `rowHoverActions` in below format. This component will render when the row is hovered and it will be passed the `rowId` and `rowData` of the row currently being hovered.
+
+```tsx
+export const RowHoverActions: RowHoverActionsType = props => {
+    const { rowId, rowData } = props;
+
+    if (rowData.disabled) return;
+    return (
+        <RowHoverActionsContainer>
+            <StyledButton size="S" variant="solid" key="key1">
+                <RemoveCircleIcon size="S" />
+                {`Row ID: ${rowId}`}
+            </StyledButton>
+            <StyledButton size="S" variant="solid" key="key2">
+                <RemoveCircleIcon size="S" />
+                {rowData.name}
+            </StyledButton>
+        </RowHoverActionsContainer>
+    );
+};
+```
+
 ### Pagination
 
 To show pagination you have to pass `withPagination` as `true` and pass `totalItems`, `itemsPerPage` & `onPageChange` props. `onPageChange` callback function will recieve object with these values `{ activePage?: number; sortField?: string; sortOrder?: SortOrder }`

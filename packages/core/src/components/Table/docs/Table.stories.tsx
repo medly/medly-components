@@ -50,8 +50,9 @@ export const Actions = [
 ];
 
 export const RowHoverActions: RowHoverActionsType = props => {
-    const { rowId } = props;
+    const { rowId, rowData } = props;
 
+    if (rowData.disabled) return;
     return (
         <RowHoverActionsContainer>
             <StyledButton size="S" variant="solid" key="key1">
@@ -60,7 +61,7 @@ export const RowHoverActions: RowHoverActionsType = props => {
             </StyledButton>
             <StyledButton size="S" variant="solid" key="key2">
                 <RemoveCircleIcon size="S" />
-                Lorem ipsum
+                {rowData.name}
             </StyledButton>
         </RowHoverActionsContainer>
     );
