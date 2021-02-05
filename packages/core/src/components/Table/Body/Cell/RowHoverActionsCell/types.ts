@@ -1,8 +1,14 @@
+export type ObjectType = {
+    [key: string]: any;
+};
+
 export type RowHoverActionsCellProps =  {
-    rowHoverActions: Array<JSX.Element>;
+    rowHoverActions?: React.FC<{ rowData?: ObjectType; rowId?: any; }>;
     isRowHovered: boolean;
+    data?: ObjectType;
+    id?: any;
 }
 
-export type RowHoverActionsCellStyledProps = {
+export type RowHoverActionsWrapperProps = {
     isRowHovered: boolean;
 }

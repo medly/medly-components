@@ -1,24 +1,23 @@
 import styled from 'styled-components';
-import Button from '../../../../Button';
-import { RowHoverActionsCellStyledProps } from './types';
+import { RowHoverActionsWrapperProps } from './types';
 
-export const RowHoverActionsCellContainer = styled.div<RowHoverActionsCellStyledProps>`
+export const RowHoverActionsWrapper = styled.div<RowHoverActionsWrapperProps>`
     position: absolute;
     right: 0;
     display: none;
-    box-shadow: 0 0.4rem 1.6rem rgba(15, 90, 213, 0.2);
 
     ${({ isRowHovered }) => isRowHovered && 'display: block'}
 `;
 
-export const ButtonSection = styled.div`
-    display: flex;
-    flex-flow: row wrap;
-    & > ${Button.Style} {
-        margin: 0.8rem 1.6rem;
-        height: 3.2rem;
-    }
-    & > :not(:first-child) {
-        margin-left: 0;
+export const RowHoverActions = styled.div`
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -1.2rem;
+        height: 100%;
+        width: 1.2rem;
+        background: linear-gradient(to left, rgba(96, 120, 144, 0.15), rgba(96, 120, 144, 0));
     }
 `;

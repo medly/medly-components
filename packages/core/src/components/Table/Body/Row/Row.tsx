@@ -133,7 +133,9 @@ export const Row: React.FC<Props> = React.memo(props => {
                         showShadowAtRight={showShadowAfterFrozenElement}
                     />
                 )}
-                {withRowHoverActions && <RowHoverActionsCell isRowHovered={isRowHovered} rowHoverActions={rowHoverActions} />}
+                {withRowHoverActions && (
+                    <RowHoverActionsCell data={data} id={id} isRowHovered={isRowHovered} rowHoverActions={rowHoverActions} />
+                )}
             </Styled.Row>
         </>
     );

@@ -5,7 +5,7 @@ import React, { FC } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import Button from '../../Button';
 import Text from '../../Text';
-import { TableColumnConfig, TableProps } from '../types';
+import { RowHoverActionsType, TableColumnConfig, TableProps } from '../types';
 
 export const ThemeInterface: FC<TableTheme> = () => null;
 ThemeInterface.defaultProps = {
@@ -19,6 +19,18 @@ export const ColumnConfigInterface: FC<TableColumnConfig> = () => null;
 export const DarkBackground = createGlobalStyle<{ showRowWithCardStyle?: boolean }>`
 #root, #story--core-tabs--basic, #story--tabs--with-grey-background {
     background: ${({ showRowWithCardStyle }) => showRowWithCardStyle && 'rgba(229, 229, 229, 0.3)'} }
+`;
+
+const RowHoverActionsContainer = styled.div`
+    display: flex;
+    flex-flow: row wrap;
+    & > ${Button.Style} {
+        margin: 0.8rem 0.8rem;
+        height: 3.2rem;
+    }
+    & > :not(:first-child) {
+        margin-left: 0;
+    }
 `;
 
 const StyledButton = styled(Button)`
@@ -36,6 +48,23 @@ export const Actions = [
         Lorem ipsum
     </StyledButton>
 ];
+
+export const RowHoverActions: RowHoverActionsType = props => {
+    const { rowId } = props;
+
+    return (
+        <RowHoverActionsContainer>
+            <StyledButton size="S" variant="solid" key="key1">
+                <RemoveCircleIcon size="S" />
+                {`Row ID: ${rowId}`}
+            </StyledButton>
+            <StyledButton size="S" variant="solid" key="key2">
+                <RemoveCircleIcon size="S" />
+                Lorem ipsum
+            </StyledButton>
+        </RowHoverActionsContainer>
+    );
+};
 
 export const DummyWrapper = styled('div')`
     padding-top: 3.2rem;
