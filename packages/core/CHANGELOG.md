@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.44.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.44.0...@medly-components/core@1.44.1) (2021-02-05)
+
+
+### Bug Fixes
+
+* invalid date if month is greater then 12 ([56783ed](https://github.com/medly/medly-components/commit/56783ed151d2955631f26c0f693ad60cb2f46137))
+
+
+
+
+
 # [1.44.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.43.2...@medly-components/core@1.44.0) (2021-02-03)
 
 
