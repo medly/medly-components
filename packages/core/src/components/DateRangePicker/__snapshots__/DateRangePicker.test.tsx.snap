@@ -22592,7 +22592,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c32"
+              class="c29"
             >
               <button
                 class="c30"
@@ -24927,7 +24927,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c37"
+              class="c34"
             >
               <button
                 class="c35"
