@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.29.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.28.0...@medly-components/theme@1.29.0) (2021-02-03)
+
+
+### Features
+
+* custom border radius for tab count added ([7997398](https://github.com/medly/medly-components/commit/79973983a8f2543e395d8ad2de4303b84830b52d))
+
+
+
+
+
 # [1.28.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.27.1...@medly-components/theme@1.28.0) (2020-12-11)
 
 

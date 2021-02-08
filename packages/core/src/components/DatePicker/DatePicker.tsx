@@ -24,6 +24,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                 popoverPlacement,
                 minSelectableDate,
                 maxSelectableDate,
+                showCalendarIcon,
                 ...restProps
             } = props,
             id = props.id || props.label.toLowerCase().replace(/\s/g, '') || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
@@ -71,7 +72,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                         emptyDateMessage = props.required && !inputValue && 'Please fill in this field',
                         invalidDateRangeMessage =
                             (parsedDate < minSelectableDate || parsedDate > maxSelectableDate) && 'Please select date from allowed range',
-                        invalidDateMessage = inputValue && !isValidDate && 'Please enter valid date',
+                        invalidDateMessage = inputValue && !isValidDate && 'Please enter a valid date',
                         validatorMessage = validator && validator(parsedDate || null, event.type),
                         message = validatorMessage || emptyDateMessage || invalidDateRangeMessage || invalidDateMessage || '';
 
@@ -130,7 +131,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
             mobileProps = { ...sharedProps, type: 'date' },
             desktopProps = {
                 ...sharedProps,
-                suffix: suffixEl,
+                ...(showCalendarIcon && { suffix: suffixEl }),
                 pattern: datePickerPattern[displayFormat],
                 mask: displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()
             };
@@ -170,7 +171,8 @@ DatePicker.defaultProps = {
     fullWidth: false,
     minSelectableDate: new Date(1901, 0, 1),
     maxSelectableDate: new Date(2100, 11, 1),
-    popoverPlacement: 'bottom-start'
+    popoverPlacement: 'bottom-start',
+    showCalendarIcon: true
 };
 DatePicker.displayName = 'DatePicker';
 DatePicker.Style = Wrapper;

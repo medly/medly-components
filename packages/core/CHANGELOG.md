@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.44.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.44.0...@medly-components/core@1.44.1) (2021-02-05)
+
+
+### Bug Fixes
+
+* invalid date if month is greater then 12 ([56783ed](https://github.com/medly/medly-components/commit/56783ed151d2955631f26c0f693ad60cb2f46137))
+
+
+
+
+
+# [1.44.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.43.2...@medly-components/core@1.44.0) (2021-02-03)
+
+
+### Bug Fixes
+
+* added font-family inheritance in chips component ([87e6e1e](https://github.com/medly/medly-components/commit/87e6e1e1ab22f4fd1ad5b52d6bc48577d5993252))
+* pass className to TabPanel ([335eb9b](https://github.com/medly/medly-components/commit/335eb9b464bac734355e5f73b6e378cc897a2260))
+
+
+### Features
+
+* add showCalendarIcon prop and tests to datepicker ([7b63a9f](https://github.com/medly/medly-components/commit/7b63a9f035f43732765283bbc2ef7aab6aaba2a7))
+* custom border radius for tab count added ([7997398](https://github.com/medly/medly-components/commit/79973983a8f2543e395d8ad2de4303b84830b52d))
+* default row expansion in grouped table ([ac05807](https://github.com/medly/medly-components/commit/ac05807d8be6555f4cf6463f74ffd4a50a0c4868))
+* update snapshots ([9a40771](https://github.com/medly/medly-components/commit/9a40771e22116a7d76815907f0d9934ca3fd5eab))
+
+
+
+
+
 ## [1.43.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.43.1...@medly-components/core@1.43.2) (2021-01-27)
 
 
