@@ -65,7 +65,6 @@ Simple `Table` component to show set of data.
                         itemsPerPage={10}
                         onPageChange={action('Page Changed')}
                         rowHoverActions={RowHoverActions}
-                        withRowHoverActions
                     />
                 </DummyWrapper>
             );
@@ -164,23 +163,18 @@ export const Actions = [
 
 ## Row Hover Actions
 
-To show row hover actions you have to pass `withRowHoverActions` as `true` and pass `rowHoverActions` in below format. This component will render when the row is hovered and it will be passed the `rowId` and `rowData` of the row currently being hovered.
+To show row hover actions you have to pass `rowHoverActions` in below format. This component will render when the row is hovered and it will be passed the `rowId` and `rowData` of the row currently being hovered.
 
 ```tsx
-export const RowHoverActions: RowHoverActionsType = props => {
-    const { rowId, rowData } = props;
+import { RowHoverActionsType } from '@medly-components/core'
+import React, { useContext } from 'react';
 
-    if (rowData.disabled) return;
+export const RowHoverActions: RowHoverActionsType = ({ rowId, rowData }) => {
+    const {onRowDeleteIconClick} = useContext(<CONTEXT_WITH_ACTION_HANDLERS>);
+
     return (
         <RowHoverActionsContainer>
-            <StyledButton size="S" variant="solid" key="key1">
-                <RemoveCircleIcon size="S" />
-                {`Row ID: ${rowId}`}
-            </StyledButton>
-            <StyledButton size="S" variant="solid" key="key2">
-                <RemoveCircleIcon size="S" />
-                {rowData.name}
-            </StyledButton>
+            <DeleteIcon onClick={() => onRowDeleteIconClick(rowId)}/>
         </RowHoverActionsContainer>
     );
 };

@@ -28,8 +28,7 @@ export const Row: React.FC<Props> = React.memo(props => {
             showRowWithCardStyle,
             size: tableSize,
             expandedRowComponent,
-            rowHoverActions,
-            withRowHoverActions
+            rowHoverActions: RowHoverActions
         } = useContext(TableComponentsCommonPropsContext);
 
     const isRowSelected = useMemo(() => !isLoading && selectedRowIds.includes(id), [id, isLoading, selectedRowIds]),
@@ -133,8 +132,10 @@ export const Row: React.FC<Props> = React.memo(props => {
                         showShadowAtRight={showShadowAfterFrozenElement}
                     />
                 )}
-                {withRowHoverActions && (
-                    <RowHoverActionsCell data={data} id={id} isRowHovered={isRowHovered} rowHoverActions={rowHoverActions} />
+                {RowHoverActions !== undefined && !isRowClickDisabled && (
+                    <RowHoverActionsCell show={isRowHovered}>
+                        <RowHoverActions rowData={data} rowId={id} />
+                    </RowHoverActionsCell>
                 )}
             </Styled.Row>
         </>

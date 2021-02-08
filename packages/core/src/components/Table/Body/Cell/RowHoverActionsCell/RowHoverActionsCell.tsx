@@ -4,12 +4,11 @@ import { RowHoverActions, RowHoverActionsWrapper } from './RowHoverActionsCell.s
 import { RowHoverActionsCellProps } from './types';
 
 export const RowHoverActionsCell: React.FC<RowHoverActionsCellProps> & WithStyle = React.memo(props => {
-    const { rowHoverActions, isRowHovered, data, id } = props;
     const stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
 
     return (
-        <RowHoverActionsWrapper isRowHovered={isRowHovered} onClick={stopPropagation}>
-            <RowHoverActions>{rowHoverActions({ rowData: data, rowId: id })}</RowHoverActions>
+        <RowHoverActionsWrapper show={props.show} onClick={stopPropagation}>
+            <RowHoverActions>{props.children}</RowHoverActions>
         </RowHoverActionsWrapper>
     );
 });

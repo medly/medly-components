@@ -7,7 +7,7 @@ export type ObjectType = {
     [key: string]: any;
 };
 export type Data = ObjectType[];
-export type RowHoverActionsType = React.FC<{ rowData?: ObjectType; rowId?: any; }>
+export type RowHoverActionsType = React.FC<{ rowData?: ObjectType; rowId?: any }>;
 
 export type TableState = { activePage?: number; sortField?: string; sortOrder?: SortOrder };
 
@@ -109,9 +109,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Value of the default expanded Row's identifier */
     defaultExpandedRowIdentifier?: unknown;
     /** Row hover actions component */
-    rowHoverActions?: RowHoverActionsType;
-    /** Enable row hover actions */
-    withRowHoverActions?: boolean;
+    rowHoverActions?: React.FC<{ rowData?: ObjectType; rowId?: any }>;
 }
 
 export interface StaticProps {

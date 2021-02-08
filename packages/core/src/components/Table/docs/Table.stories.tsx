@@ -1,4 +1,4 @@
-import { RemoveCircleIcon } from '@medly-components/icons';
+import { DeleteIcon, RemoveCircleIcon } from '@medly-components/icons';
 import { defaultTheme, TableTheme } from '@medly-components/theme';
 import { styled } from '@medly-components/utils';
 import React, { FC } from 'react';
@@ -23,14 +23,9 @@ export const DarkBackground = createGlobalStyle<{ showRowWithCardStyle?: boolean
 
 const RowHoverActionsContainer = styled.div`
     display: flex;
-    flex-flow: row wrap;
-    & > ${Button.Style} {
-        margin: 0.8rem 0.8rem;
-        height: 3.2rem;
-    }
-    & > :not(:first-child) {
-        margin-left: 0;
-    }
+    height: 100%;
+    align-items: center;
+    padding: 0 1.2rem;
 `;
 
 const StyledButton = styled(Button)`
@@ -49,23 +44,11 @@ export const Actions = [
     </StyledButton>
 ];
 
-export const RowHoverActions: RowHoverActionsType = props => {
-    const { rowId, rowData } = props;
-
-    if (rowData.disabled) return;
-    return (
-        <RowHoverActionsContainer>
-            <StyledButton size="S" variant="solid" key="key1">
-                <RemoveCircleIcon size="S" />
-                {`Row ID: ${rowId}`}
-            </StyledButton>
-            <StyledButton size="S" variant="solid" key="key2">
-                <RemoveCircleIcon size="S" />
-                {rowData.name}
-            </StyledButton>
-        </RowHoverActionsContainer>
-    );
-};
+export const RowHoverActions: RowHoverActionsType = () => (
+    <RowHoverActionsContainer>
+        <DeleteIcon />
+    </RowHoverActionsContainer>
+);
 
 export const DummyWrapper = styled('div')`
     padding-top: 3.2rem;

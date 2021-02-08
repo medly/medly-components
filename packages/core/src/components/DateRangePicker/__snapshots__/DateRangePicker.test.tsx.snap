@@ -21897,8 +21897,18 @@ exports[`DateRangePicker should render properly 1`] = `
   width: 7.2rem;
 }
 
-.c32 > button {
-  border-color: #C7D0D8;
+.c32::after {
+  left: 0.4rem;
+  width: 3.2rem;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c32::before {
+  width: 3.4rem;
+  right: 2.2rem;
 }
 
 .c32:hover > button:not(:disabled) {
@@ -21936,15 +21946,14 @@ exports[`DateRangePicker should render properly 1`] = `
 .c33::after {
   left: 0.4rem;
   width: 3.2rem;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
 
 .c33::before {
   width: 3.4rem;
-  right: 2.2rem;
 }
 
 .c33:hover > button:not(:disabled) {
@@ -21979,17 +21988,8 @@ exports[`DateRangePicker should render properly 1`] = `
   width: 7.2rem;
 }
 
-.c34::after {
-  left: 0.4rem;
-  width: 3.2rem;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-
-.c34::before {
-  width: 3.4rem;
+.c34 > button {
+  border-color: #C7D0D8;
 }
 
 .c34:hover > button:not(:disabled) {
@@ -22592,7 +22592,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c32"
+              class="c29"
             >
               <button
                 class="c30"
@@ -22607,7 +22607,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c33"
+              class="c32"
             >
               <button
                 class="c30"
@@ -22622,7 +22622,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c34"
+              class="c33"
             >
               <button
                 class="c30"
@@ -22637,7 +22637,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c29"
+              class="c34"
             >
               <button
                 class="c30"
@@ -22712,7 +22712,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c33"
+              class="c32"
             >
               <button
                 class="c30"
@@ -22727,7 +22727,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c34"
+              class="c33"
             >
               <button
                 class="c30"
@@ -22817,7 +22817,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c33"
+              class="c32"
             >
               <button
                 class="c30"
@@ -22832,7 +22832,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c34"
+              class="c33"
             >
               <button
                 class="c30"
@@ -22922,7 +22922,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c33"
+              class="c32"
             >
               <button
                 class="c30"
@@ -23099,7 +23099,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c33"
+              class="c32"
             >
               <button
                 class="c30"
@@ -23114,7 +23114,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c34"
+              class="c33"
             >
               <button
                 class="c30"
@@ -23204,7 +23204,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c33"
+              class="c32"
             >
               <button
                 class="c30"
@@ -23219,7 +23219,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c34"
+              class="c33"
             >
               <button
                 class="c30"
@@ -23309,7 +23309,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c33"
+              class="c32"
             >
               <button
                 class="c30"
@@ -23324,7 +23324,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c34"
+              class="c33"
             >
               <button
                 class="c30"
@@ -23414,7 +23414,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c33"
+              class="c32"
             >
               <button
                 class="c30"
@@ -23429,7 +23429,7 @@ exports[`DateRangePicker should render properly 1`] = `
               </button>
             </div>
             <div
-              class="c34"
+              class="c33"
             >
               <button
                 class="c30"
@@ -24174,8 +24174,18 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   width: 7.2rem;
 }
 
-.c37 > button {
-  border-color: #C7D0D8;
+.c37::after {
+  left: 0.4rem;
+  width: 3.2rem;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.c37::before {
+  width: 3.4rem;
+  right: 2.2rem;
 }
 
 .c37:hover > button:not(:disabled) {
@@ -24213,15 +24223,14 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 .c38::after {
   left: 0.4rem;
   width: 3.2rem;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
 
 .c38::before {
   width: 3.4rem;
-  right: 2.2rem;
 }
 
 .c38:hover > button:not(:disabled) {
@@ -24256,17 +24265,8 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   width: 7.2rem;
 }
 
-.c39::after {
-  left: 0.4rem;
-  width: 3.2rem;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-
-.c39::before {
-  width: 3.4rem;
+.c39 > button {
+  border-color: #C7D0D8;
 }
 
 .c39:hover > button:not(:disabled) {
@@ -24927,7 +24927,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c37"
+              class="c34"
             >
               <button
                 class="c35"
@@ -24942,7 +24942,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c38"
+              class="c37"
             >
               <button
                 class="c35"
@@ -24957,7 +24957,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c39"
+              class="c38"
             >
               <button
                 class="c35"
@@ -24972,7 +24972,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c34"
+              class="c39"
             >
               <button
                 class="c35"
@@ -25047,7 +25047,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c38"
+              class="c37"
             >
               <button
                 class="c35"
@@ -25062,7 +25062,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c39"
+              class="c38"
             >
               <button
                 class="c35"
@@ -25152,7 +25152,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c38"
+              class="c37"
             >
               <button
                 class="c35"
@@ -25167,7 +25167,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c39"
+              class="c38"
             >
               <button
                 class="c35"
@@ -25257,7 +25257,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
               </button>
             </div>
             <div
-              class="c38"
+              class="c37"
             >
               <button
                 class="c35"
