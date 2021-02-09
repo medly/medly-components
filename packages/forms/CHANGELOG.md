@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.17.5](https://github.com/medly/medly-components/compare/@medly-components/forms@1.17.4...@medly-components/forms@1.17.5) (2021-02-09)
+
+
+### Bug Fixes
+
+* lint issue ([492c69b](https://github.com/medly/medly-components/commit/492c69bd5ee2cd039ae80ae9c7ee6fbeceaf7440))
+
+
+
+
+
 ## [1.17.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.17.3...@medly-components/forms@1.17.4) (2021-02-05)
 
 **Note:** Version bump only for package @medly-components/forms

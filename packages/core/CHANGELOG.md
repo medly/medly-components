@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.45.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.44.1...@medly-components/core@1.45.0) (2021-02-09)
+
+
+### Bug Fixes
+
+* dateRangePicker component failing snapshots ([6642c04](https://github.com/medly/medly-components/commit/6642c045ddc13182919edd24a82fe34d06203adf))
+
+
+### Features
+
+* begin adding rowHoverActions feature ([2e1a372](https://github.com/medly/medly-components/commit/2e1a3727b99b71fb49d9c47e1a79432d1bfcfeca))
+* finish updating docs ([380b034](https://github.com/medly/medly-components/commit/380b03435d53c652633c7450d5b74be0dc3db876))
+* update row hover actions interface to take component instead of array of components, update sh ([f173164](https://github.com/medly/medly-components/commit/f1731649ca794418788b6d1b4a29d5dbaa0d6e37))
+* update snapshots ([70fe14a](https://github.com/medly/medly-components/commit/70fe14aae84d716adbb612b86d6a733de84f1212))
+
+
+
+
+
 ## [1.44.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.44.0...@medly-components/core@1.44.1) (2021-02-05)
 
 
