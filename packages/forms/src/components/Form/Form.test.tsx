@@ -152,7 +152,7 @@ describe('Form', () => {
                 renderComp = (state: object = dateStringInitialState) => (
                     <Form fieldSchema={testSchema} onSubmit={mockOnSubmit} initialState={state} onChange={mockOnChange} />
                 ),
-                { container, getByText, findByText, getByPlaceholderText, getByTitle, getByLabelText } = render(renderComp());
+                { container, getByText, findByText, getByPlaceholderText, getByTitle } = render(renderComp());
             const fileInput = container.querySelector('#resume');
             Object.defineProperty(fileInput, 'files', {
                 value: [fooFile]
