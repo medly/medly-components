@@ -6,11 +6,13 @@ import { TableColumnConfig } from '../../types';
 import Cell from '../Cell';
 import ExtendedRowCell from '../Cell/ExtendedRowCell';
 import RowActionsCell from '../Cell/RowActionsCell';
+import RowHoverActionsCell from '../Cell/RowHoverActionsCell';
 import * as Styled from './Row.styled';
 import { Props } from './types';
 
 export const Row: React.FC<Props> = React.memo(props => {
     const [isExpanded, setExpansionState] = useState(false),
+        [isRowHovered, setIsRowHovered] = useState(false),
         { id, data, showShadowAfterFrozenElement, selectedRowIds, onRowSelection, ...restProps } = props,
         {
             columns,
@@ -25,7 +27,8 @@ export const Row: React.FC<Props> = React.memo(props => {
             isGroupedTable,
             showRowWithCardStyle,
             size: tableSize,
-            expandedRowComponent
+            expandedRowComponent,
+            rowHoverActions: RowHoverActions
         } = useContext(TableComponentsCommonPropsContext);
 
     const isRowSelected = useMemo(() => !isLoading && selectedRowIds.includes(id), [id, isLoading, selectedRowIds]),
@@ -43,7 +46,9 @@ export const Row: React.FC<Props> = React.memo(props => {
                         : undefined
                     : undefined,
             [isLoading, data, onRowClick, isRowClickDisabled, isRowExpandable, handleExpansionIconClick]
-        );
+        ),
+        handleMouseEnter = useCallback(() => setIsRowHovered(true), []),
+        handleMouseLeave = useCallback(() => setIsRowHovered(false), []);
 
     const getCells = useCallback(
         (rowData: any = {}, configs: TableColumnConfig[] = columns, field = '') =>
@@ -95,6 +100,8 @@ export const Row: React.FC<Props> = React.memo(props => {
                 isExpandable={isRowExpandable}
                 showRowWithCardStyle={showRowWithCardStyle}
                 gridTemplateColumns={getGridTemplateColumns(columns)}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
             >
                 {(isRowSelectable || isRowExpandable) && (
                     <RowActionsCell
@@ -124,6 +131,11 @@ export const Row: React.FC<Props> = React.memo(props => {
                         isRowClickDisabled={isRowClickDisabled}
                         showShadowAtRight={showShadowAfterFrozenElement}
                     />
+                )}
+                {RowHoverActions !== undefined && !isRowClickDisabled && (
+                    <RowHoverActionsCell show={isRowHovered}>
+                        <RowHoverActions rowData={data} rowId={id} />
+                    </RowHoverActionsCell>
                 )}
             </Styled.Row>
         </>

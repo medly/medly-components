@@ -37,14 +37,19 @@ describe('DateRangePicker', () => {
     afterEach(cleanup);
 
     it('should render properly', () => {
-        const { container, calendarIcon } = renderComponent();
+        const { container, calendarIcon } = renderComponent({
+            value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) }
+        });
         fireEvent.click(calendarIcon);
         expect(container.querySelector('#contract-calendar')).toBeVisible();
         expect(container).toMatchSnapshot();
     });
 
     it('should render properly with single month', () => {
-        const { container, calendarIcon } = renderComponent({ withSingleMonth: true });
+        const { container, calendarIcon } = renderComponent({
+            withSingleMonth: true,
+            value: { startDate: new Date(2010, 0, 1), endDate: new Date(2010, 0, 2) }
+        });
         fireEvent.click(calendarIcon);
         expect(container.querySelector('#contract-calendar')).toBeVisible();
         expect(container).toMatchSnapshot();

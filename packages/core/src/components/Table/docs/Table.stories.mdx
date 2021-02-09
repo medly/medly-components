@@ -3,7 +3,15 @@ import { useState, useCallback } from 'react';
 import { action } from '@storybook/addon-actions';
 import { boolean, select } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import { ThemeInterface, ColumnConfigInterface, ExpandedRowComponent, DarkBackground, Actions, DummyWrapper } from './Table.stories';
+import {
+    ThemeInterface,
+    ColumnConfigInterface,
+    ExpandedRowComponent,
+    DarkBackground,
+    Actions,
+    DummyWrapper,
+    RowHoverActions
+} from './Table.stories';
 import { filterData } from './filterData';
 import columns from './columns';
 import data from './data';
@@ -151,6 +159,65 @@ export const Actions = [
     </Button>
 ];
 ```
+
+## Row Hover Actions
+
+To show row hover actions you have to pass `rowHoverActions` in below format. This component will render when the row is hovered and it will be passed the `rowId` and `rowData` of the row currently being hovered.
+
+```tsx
+import { RowHoverActionsType } from '@medly-components/core'
+import React, { useContext } from 'react';
+
+export const RowHoverActions: RowHoverActionsType = ({ rowId, rowData }) => {
+    const {onRowDeleteIconClick} = useContext(<CONTEXT_WITH_ACTION_HANDLERS>);
+
+    return (
+        <RowHoverActionsContainer>
+            <DeleteIcon onClick={() => onRowDeleteIconClick(rowId)}/>
+        </RowHoverActionsContainer>
+    );
+};
+```
+
+<Preview withToolbar>
+    <Story name="Table with Row Actions">
+        {() => {
+            const [selectedRowIds, setSelectedRowIds] = useState([2, 3]),
+                [tableData, setTableData] = useState(data),
+                handleFilterData = useCallback(({ sortField, sortOrder }) => setTableData(filterData(sortField, sortOrder, tableData)), [
+                    tableData
+                ]);
+            return (
+                <DummyWrapper>
+                    <DarkBackground showRowWithCardStyle={boolean('Show Row With Card Style', false)} />
+                    <Table
+                        data={tableData}
+                        columns={columns}
+                        onSort={handleFilterData}
+                        selectedRowIds={selectedRowIds}
+                        onRowSelection={setSelectedRowIds}
+                        onRowClick={action('Row Clicked')}
+                        isLoading={boolean('Loading', false)}
+                        isRowSelectable={boolean('Is row selectable', true)}
+                        isRowExpandable={boolean('Is row expandable', true)}
+                        rowSelectionDisableKey="disabled"
+                        rowClickDisableKey="disabled"
+                        size={select('Size', ['S', 'M', 'L'], 'M')}
+                        showRowWithCardStyle={boolean('Show Row With Card Style', false)}
+                        expandedRowComponent={ExpandedRowComponent}
+                        withActionBar={boolean('Enable action bar', true)}
+                        actions={Actions}
+                        withPagination={boolean('Enable pagination', true)}
+                        totalItems={10}
+                        itemsPerPage={10}
+                        onPageChange={action('Page Changed')}
+                        rowHoverActions={RowHoverActions}
+                    />
+                </DummyWrapper>
+            );
+        }}
+    </Story>
+</Preview>
 
 ### Pagination
 
