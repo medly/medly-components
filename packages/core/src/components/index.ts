@@ -12,6 +12,7 @@ export { default as CssBaseline } from './CssBaseline';
 export { default as DatePicker } from './DatePicker';
 export { default as DateRangePicker } from './DateRangePicker';
 export { default as DialogBox } from './DialogBox';
+export { default as Drawer } from './Drawer';
 export { default as FieldWithLabel } from './FieldWithLabel';
 export { default as FileInput } from './FileInput';
 export { default as Hidden } from './Hidden';
