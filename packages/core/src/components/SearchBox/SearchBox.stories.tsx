@@ -1,4 +1,6 @@
 import { defaultTheme, SearchBoxTheme } from '@medly-components/theme';
+import React from 'react';
+import Text from '../Text';
 import { Props } from './types';
 
 export const optionsArray = [
@@ -8,7 +10,8 @@ export const optionsArray = [
     { value: 'Dummy4 option', label: 'Dummy4 option' },
     { value: 'Dummy5 option', label: 'Dummy5 option' },
     { value: 'Dummy6 option', label: 'Dummy6 option' },
-    { value: 'Dummy7 option', label: 'Dummy7 option' }
+    { value: 'Dummy7 option', label: 'Dummy7 option' },
+    { value: <Text>Custom component</Text>, label: 'Custom component' }
 ];
 
 export const size: Props['size'][] = ['S', 'M'];

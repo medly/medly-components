@@ -3,7 +3,7 @@ import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
 export type Option = {
     label: string;
-    value: string | number;
+    value: string | number | JSX.Element;
     selected?: boolean;
 };
 

@@ -53,3 +53,9 @@ export const OptionStyled = styled('li').attrs(({ theme: { singleSelect } }) => 
 
     ${({ maxWidth }) => (maxWidth ? maxWidthStyle : minWidthStyle)}
 `;
+
+export const CustomComponentWrapper = styled('div')`
+    width: 100%;
+    display: flex;
+    justify-content: start;
+`;
