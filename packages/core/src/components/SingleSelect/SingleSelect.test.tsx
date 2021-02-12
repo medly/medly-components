@@ -1,5 +1,6 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@test-utils';
 import React, { useState } from 'react';
+import Text from '../Text';
 import { SingleSelect } from './SingleSelect';
 import { SelectProps } from './types';
 
@@ -45,6 +46,20 @@ describe('SingleSelect component', () => {
             );
             expect(container).toMatchSnapshot();
         });
+
+        it('should render properly when option is custom component', () => {
+            const { container, queryByText } = render(
+                <SingleSelect
+                    label="Label"
+                    helperText="Helper Text"
+                    options={[...options, { value: <Text>Component</Text>, label: 'Custom component' }]}
+                    variant={variant}
+                    value="Dummy1"
+                />
+            );
+            expect(container).toMatchSnapshot();
+            expect(queryByText("Component")).toBeInTheDocument;
+        })
 
         it('should render disabled state properly ', () => {
             const { container } = render(
