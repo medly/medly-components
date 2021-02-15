@@ -23,6 +23,7 @@ const DummyComponent: React.FC<{ open?: boolean; position?: 'left' | 'right'; al
 
 describe('Drawer component', () => {
     test.each(['left', 'right'])('should render properly with %s positioned', async (position: 'left' | 'right') => {
+        Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 0 });
         const { container } = render(<DummyComponent position={position} open />);
         expect(container).toMatchSnapshot();
     });
