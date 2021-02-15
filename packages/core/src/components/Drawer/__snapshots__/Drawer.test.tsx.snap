@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Drawer component should render with left positioned by default 1`] = `
+exports[`Drawer component should render properly with left positioned 1`] = `
 .c5 {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -123,15 +123,18 @@ exports[`Drawer component should render with left positioned by default 1`] = `
 <div>
   <div
     class="c0"
+    id="medly-drawer-overlay"
     open=""
   >
     <aside
       class="c1"
+      id="medly-drawer"
       open=""
       width="40rem"
     >
       <div
         class="c2"
+        id="medly-drawer-header"
       >
         <p>
           Test Header
@@ -140,6 +143,7 @@ exports[`Drawer component should render with left positioned by default 1`] = `
           class="c3 c4"
           fill="none"
           height="1em"
+          id="medly-drawer-close-icon"
           variant="solid"
           viewBox="0 0 24 24"
           width="1em"
@@ -154,11 +158,13 @@ exports[`Drawer component should render with left positioned by default 1`] = `
       </div>
       <div
         class="c5"
+        id="medly-drawer-content"
       >
         CONTENT
       </div>
       <div
         class="c6"
+        id="medly-drawer-footer"
       >
         Test Footer
       </div>
@@ -167,7 +173,7 @@ exports[`Drawer component should render with left positioned by default 1`] = `
 </div>
 `;
 
-exports[`Drawer component should render with right positioned by default 1`] = `
+exports[`Drawer component should render properly with right positioned 1`] = `
 .c5 {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -290,15 +296,18 @@ exports[`Drawer component should render with right positioned by default 1`] = `
 <div>
   <div
     class="c0"
+    id="medly-drawer-overlay"
     open=""
   >
     <aside
       class="c1"
+      id="medly-drawer"
       open=""
       width="40rem"
     >
       <div
         class="c2"
+        id="medly-drawer-header"
       >
         <p>
           Test Header
@@ -307,6 +316,7 @@ exports[`Drawer component should render with right positioned by default 1`] = `
           class="c3 c4"
           fill="none"
           height="1em"
+          id="medly-drawer-close-icon"
           variant="solid"
           viewBox="0 0 24 24"
           width="1em"
@@ -321,11 +331,13 @@ exports[`Drawer component should render with right positioned by default 1`] = `
       </div>
       <div
         class="c5"
+        id="medly-drawer-content"
       >
         CONTENT
       </div>
       <div
         class="c6"
+        id="medly-drawer-footer"
       >
         Test Footer
       </div>

@@ -63,6 +63,7 @@ exports[`Drawer Header Test should render component if its passed 1`] = `
 <div>
   <div
     class="c0"
+    id="medly-drawer-header"
   >
     <div>
       Render DIV
@@ -71,6 +72,7 @@ exports[`Drawer Header Test should render component if its passed 1`] = `
       class="c1 c2"
       fill="none"
       height="1em"
+      id="medly-drawer-close-icon"
       variant="solid"
       viewBox="0 0 24 24"
       width="1em"
@@ -162,6 +164,7 @@ exports[`Drawer Header Test should render text if string is passed 1`] = `
 <div>
   <div
     class="c0"
+    id="medly-drawer-header"
   >
     <h3
       class="c1"
@@ -172,6 +175,7 @@ exports[`Drawer Header Test should render text if string is passed 1`] = `
       class="c2 c3"
       fill="none"
       height="1em"
+      id="medly-drawer-close-icon"
       variant="solid"
       viewBox="0 0 24 24"
       width="1em"

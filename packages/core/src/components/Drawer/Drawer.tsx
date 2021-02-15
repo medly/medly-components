@@ -9,7 +9,7 @@ import Header from './Header';
 import { DrawerStaticProps, Props } from './types';
 
 export const Drawer: React.FC<Props> & WithStyle & DrawerStaticProps = React.memo(
-    React.forwardRef<HTMLDivElement, Props>(({ onClose, open, width, children, position, ...props }, ref) => {
+    React.forwardRef(({ id = 'medly-drawer', onClose, open, width, children, position, ...props }, ref) => {
         const isEscPressed = useKeyPress('Escape'),
             [shouldRender, setRenderState] = useState(open),
             [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 });
@@ -27,15 +27,16 @@ export const Drawer: React.FC<Props> & WithStyle & DrawerStaticProps = React.mem
 
         return (
             shouldRender && (
-                <DrawerBackground onClick={onClose} ref={ref} open={open} {...props}>
+                <DrawerBackground onClick={onClose} ref={ref} open={open} {...props} id={`${id}-overlay`}>
                     <DrawerStyled
+                        id={id}
                         position={position}
                         onClick={stopPropagation}
                         width={width}
                         open={open}
                         onAnimationEnd={handleAnimationEnd}
                     >
-                        <DrawerContext.Provider value={{ scrollState, dispatch, onClose }}>{children}</DrawerContext.Provider>
+                        <DrawerContext.Provider value={{ id, scrollState, dispatch, onClose }}>{children}</DrawerContext.Provider>
                     </DrawerStyled>
                 </DrawerBackground>
             )

@@ -6,10 +6,10 @@ import { ContentStyled } from './Content.styled';
 
 export const Content: React.FC & WithStyle = React.memo(props => {
     const contentRef = useRef(),
-        { dispatch, scrollState } = useContext(DrawerContext),
+        { id, dispatch, scrollState } = useContext(DrawerContext),
         handleScroll = useScrollState({ ref: contentRef, scrollState, dispatch });
 
-    return <ContentStyled ref={contentRef} onScroll={handleScroll} {...props} />;
+    return <ContentStyled ref={contentRef} onScroll={handleScroll} {...props} id={`${id}-content`} />;
 });
 
 Content.displayName = 'DrawerContent';

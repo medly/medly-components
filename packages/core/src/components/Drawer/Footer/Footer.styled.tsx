@@ -1,6 +1,6 @@
 import { styled } from '@medly-components/utils';
 import { rgba } from 'polished';
-import { Props } from './type';
+import { Props } from './types';
 
 export const FooterStyled = styled('div')<{ showShadow: boolean } & Props>`
     padding: 0 2.4rem;

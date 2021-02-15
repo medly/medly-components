@@ -1,7 +1,7 @@
-import { WithStyle } from '@medly-components/utils';
-import { Props as FooterProps } from './Footer/type';
+import { HTMLProps, WithStyle } from '@medly-components/utils';
+import { Props as FooterProps } from './Footer/types';
 
-export interface Props {
+export interface Props extends HTMLProps<HTMLDivElement> {
     open?: boolean;
     position?: 'left' | 'right';
     onClose: () => void;
@@ -21,6 +21,7 @@ interface ScrollState {
 }
 
 export interface DrawerContextType {
+    id: string;
     scrollState?: ScrollState;
     dispatch?: React.Dispatch<{
         type: 'scrolledToTop' | 'scrolledToBottom' | 'scrollPosition';
