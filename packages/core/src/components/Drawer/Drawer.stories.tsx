@@ -1,6 +1,6 @@
 import { defaultTheme } from '@medly-components/theme/src';
 import { styled } from '@medly-components/utils';
-import { select, text } from '@storybook/addon-knobs';
+import { boolean, select, text } from '@storybook/addon-knobs';
 import React, { useCallback, useState } from 'react';
 import Button from '../Button';
 import CheckboxGroup from '../CheckboxGroup';
@@ -68,6 +68,7 @@ export const Basic = () => {
                 onClose={hideDrawer}
                 width={text('Width', '40rem')}
                 position={select('Position', ['left', 'right'], 'right')}
+                withOverlay={boolean('With Overlay', true)}
             >
                 <Drawer.Header>Add Filters</Drawer.Header>
                 <Drawer.Content>

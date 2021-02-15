@@ -1,15 +1,15 @@
 import { styled } from '@medly-components/utils';
 import { DrawerStyledProps } from './types';
 
-export const DrawerBackground = styled('div')<{ open: boolean }>`
+export const DrawerBackground = styled('div')<{ open: boolean; withOverlay: boolean }>`
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 1000;
     position: fixed;
-    background-color: ${({ theme }) => theme.drawer.overlayColor};
-    animation: ${({ open }) => `${open ? 'drawerFadeIn' : 'drawerFadeOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) forwards`};
+    animation: ${({ withOverlay, open }) =>
+        withOverlay ? `${open ? 'drawerFadeIn' : 'drawerFadeOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) forwards` : 'none'};
 
     @keyframes drawerFadeIn {
         0% {

@@ -1,17 +1,18 @@
-import { fireEvent, render, waitFor } from '@test-utils';
+import { cleanup, fireEvent, render, waitFor } from '@test-utils';
 import React, { useCallback, useState } from 'react';
 import Drawer from './';
 
-const DummyComponent: React.FC<{ open?: boolean; position?: 'left' | 'right'; alignFooterItems?: 'left' | 'center' | 'right' }> = ({
-    open = false,
-    position = 'right',
-    alignFooterItems = 'right'
-}) => {
+const DummyComponent: React.FC<{
+    open?: boolean;
+    position?: 'left' | 'right';
+    alignFooterItems?: 'left' | 'center' | 'right';
+    withOverlay?: boolean;
+}> = ({ open = false, position = 'right', alignFooterItems = 'right', withOverlay = true }) => {
     const [drawerState, setDrawerState] = useState(open),
         hideDrawer = useCallback(() => setDrawerState(false), []);
 
     return (
-        <Drawer open={drawerState} onClose={hideDrawer} position={position}>
+        <Drawer open={drawerState} onClose={hideDrawer} position={position} withOverlay={withOverlay}>
             <Drawer.Header>
                 <p>Test Header</p>
             </Drawer.Header>
@@ -22,10 +23,34 @@ const DummyComponent: React.FC<{ open?: boolean; position?: 'left' | 'right'; al
 };
 
 describe('Drawer component', () => {
-    test.each(['left', 'right'])('should render properly with %s positioned', async (position: 'left' | 'right') => {
+    const originalScrollHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollHeight');
+    const originalClientHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'clientHeight');
+    const originalScrollTop = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollTop');
+
+    beforeAll(() => {
+        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 500 });
+        Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
         Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 0 });
+    });
+
+    afterAll(() => {
+        Object.defineProperty(HTMLElement.prototype, 'scrollHeight', originalScrollHeight);
+        Object.defineProperty(HTMLElement.prototype, 'clientHeight', originalClientHeight);
+        Object.defineProperty(HTMLElement.prototype, 'scrollTop', originalScrollTop);
+    });
+    afterEach(cleanup);
+
+    test.each(['left', 'right'])('should render properly with %s positioned', async (position: 'left' | 'right') => {
         const { container } = render(<DummyComponent position={position} open />);
         expect(container).toMatchSnapshot();
+    });
+
+    it('should not show overlay background color if withOverlay passed as false', async () => {
+        Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: 0 });
+        const { container } = render(<DummyComponent open withOverlay={false} />);
+        expect(container.querySelector('#medly-drawer-overlay')).toHaveStyle(`
+            animation: none
+        `);
     });
 
     it('should close drawer component on click on close icon', async () => {

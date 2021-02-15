@@ -9,7 +9,7 @@ import Header from './Header';
 import { DrawerStaticProps, Props } from './types';
 
 export const Drawer: React.FC<Props> & WithStyle & DrawerStaticProps = React.memo(
-    React.forwardRef(({ id = 'medly-drawer', onClose, open, width, children, position, ...props }, ref) => {
+    React.forwardRef(({ id = 'medly-drawer', onClose, open, width, children, withOverlay, position, ...props }, ref) => {
         const isEscPressed = useKeyPress('Escape'),
             [shouldRender, setRenderState] = useState(open),
             [scrollState, dispatch] = useReducer(reducer, { scrolledToTop: true, scrolledToBottom: false, scrollPosition: 0 });
@@ -27,7 +27,7 @@ export const Drawer: React.FC<Props> & WithStyle & DrawerStaticProps = React.mem
 
         return (
             shouldRender && (
-                <DrawerBackground onClick={onClose} ref={ref} open={open} {...props} id={`${id}-overlay`}>
+                <DrawerBackground onClick={onClose} ref={ref} open={open} {...props} id={`${id}-overlay`} withOverlay={withOverlay}>
                     <DrawerStyled
                         id={id}
                         position={position}
@@ -48,7 +48,8 @@ Drawer.displayName = 'Drawer';
 Drawer.defaultProps = {
     open: false,
     position: 'right',
-    width: '40rem'
+    width: '40rem',
+    withOverlay: true
 };
 Drawer.Style = DrawerBackground;
 Drawer.Content = Content;

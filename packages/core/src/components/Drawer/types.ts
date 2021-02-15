@@ -6,6 +6,7 @@ export interface Props extends HTMLProps<HTMLDivElement> {
     position?: 'left' | 'right';
     onClose: () => void;
     width?: string;
+    withOverlay?: boolean;
 }
 
 export interface DrawerStaticProps {
