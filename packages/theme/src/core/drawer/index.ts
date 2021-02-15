@@ -6,14 +6,14 @@ const modal: DrawerTheme = {
     closeIcon: {
         borderRadius: '50%',
         color: {
-            default: colors.black,
-            hovered: colors.black,
-            pressed: colors.black
+            default: colors.grey[600],
+            hovered: colors.grey[600],
+            pressed: colors.grey[800]
         },
         bgColor: {
             default: colors.white,
             hovered: colors.grey[100],
-            pressed: colors.grey[100]
+            pressed: colors.grey[200]
         }
     }
 };

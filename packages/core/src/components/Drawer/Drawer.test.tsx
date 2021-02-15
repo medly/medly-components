@@ -86,17 +86,17 @@ describe('Drawer component', () => {
         scrollTo(800, 500, 0);
         fireEvent.scroll(container.querySelector('#medly-drawer-content'), { target: { scrollY: 0 } });
         expect(container.querySelector('#medly-drawer-header')).not.toHaveStyle(
-            `box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.2)`
+            `box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`
         );
-        expect(container.querySelector('#medly-drawer-footer')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.2)`);
+        expect(container.querySelector('#medly-drawer-footer')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
     });
     it('should hide shadow of footer on scroll to bottom', () => {
         const { container } = render(<DummyComponent open />);
         scrollTo(800, 500, 300);
         fireEvent.scroll(container.querySelector('#medly-drawer-content'), { target: { scrollY: 300 } });
-        expect(container.querySelector('#medly-drawer-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.2)`);
+        expect(container.querySelector('#medly-drawer-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
         expect(container.querySelector('#medly-drawer-footer')).not.toHaveStyle(
-            `box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.2)`
+            `box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`
         );
     });
 
@@ -104,7 +104,7 @@ describe('Drawer component', () => {
         const { container } = render(<DummyComponent open />);
         scrollTo(800, 500, 100);
         fireEvent.scroll(container.querySelector('#medly-drawer-content'), { target: { scrollY: 100 } });
-        expect(container.querySelector('#medly-drawer-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.2)`);
-        expect(container.querySelector('#medly-drawer-footer')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.2)`);
+        expect(container.querySelector('#medly-drawer-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
+        expect(container.querySelector('#medly-drawer-footer')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.6)`);
     });
 });

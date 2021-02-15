@@ -62,7 +62,7 @@ exports[`Drawer component should render properly with left positioned 1`] = `
 
 .c3 {
   overflow: visible;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
@@ -85,8 +85,8 @@ exports[`Drawer component should render properly with left positioned 1`] = `
 
 .c4 {
   position: absolute;
-  right: 1.6rem;
-  top: 1.6rem;
+  right: 1.4rem;
+  top: 1.5rem;
   border-radius: 50%;
   background-color: #ffffff;
 }
@@ -98,7 +98,7 @@ exports[`Drawer component should render properly with left positioned 1`] = `
 }
 
 .c4 * {
-  fill: #13181D;
+  fill: #607890;
 }
 
 .c4:hover {
@@ -107,16 +107,16 @@ exports[`Drawer component should render properly with left positioned 1`] = `
 }
 
 .c4:hover * {
-  fill: #13181D;
+  fill: #607890;
 }
 
 .c4:active {
-  background-color: #eff2f4;
+  background-color: #dfe4e9;
   box-shadow: none;
 }
 
 .c4:active * {
-  fill: #13181D;
+  fill: #435465;
 }
 
 <div>
@@ -234,7 +234,7 @@ exports[`Drawer component should render properly with right positioned 1`] = `
 
 .c3 {
   overflow: visible;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   cursor: pointer;
@@ -257,8 +257,8 @@ exports[`Drawer component should render properly with right positioned 1`] = `
 
 .c4 {
   position: absolute;
-  right: 1.6rem;
-  top: 1.6rem;
+  right: 1.4rem;
+  top: 1.5rem;
   border-radius: 50%;
   background-color: #ffffff;
 }
@@ -270,7 +270,7 @@ exports[`Drawer component should render properly with right positioned 1`] = `
 }
 
 .c4 * {
-  fill: #13181D;
+  fill: #607890;
 }
 
 .c4:hover {
@@ -279,16 +279,16 @@ exports[`Drawer component should render properly with right positioned 1`] = `
 }
 
 .c4:hover * {
-  fill: #13181D;
+  fill: #607890;
 }
 
 .c4:active {
-  background-color: #eff2f4;
+  background-color: #dfe4e9;
   box-shadow: none;
 }
 
 .c4:active * {
-  fill: #13181D;
+  fill: #435465;
 }
 
 <div>

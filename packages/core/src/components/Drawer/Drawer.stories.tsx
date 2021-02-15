@@ -20,16 +20,18 @@ const FilterHeaderStyled = styled('div')`
     }
 `;
 
-const FilterHeader: React.FC<{ label: string; onClear: () => void }> = React.memo(({ label, onClear }) => (
+const FilterHeader: React.FC<{ label: string; onClear: () => void; showClear: boolean }> = React.memo(({ label, onClear, showClear }) => (
     <FilterHeaderStyled>
         <Text textVariant="h5" textColor={defaultTheme.colors.grey[600]}>
             {label}
         </Text>
-        <Button variant="flat" onClick={onClear}>
-            <Text textVariant="button2" textColor={defaultTheme.colors.blue[500]}>
-                Clear
-            </Text>
-        </Button>
+        {showClear && (
+            <Button variant="flat" onClick={onClear}>
+                <Text textVariant="button2" textColor={defaultTheme.colors.blue[500]}>
+                    Clear
+                </Text>
+            </Button>
+        )}
     </FilterHeaderStyled>
 ));
 FilterHeader.displayName = 'FilterHeader';
@@ -37,16 +39,34 @@ FilterHeader.displayName = 'FilterHeader';
 export const Basic = () => {
     const [drawerState, setDrawerState] = useState(false),
         [contract, setContract] = useState({ startDate: null, endDate: null }),
-        [values, setLocation] = useState(['Delhi']),
-        [brand, setBrands] = useState(['Honda']),
+        [locations, setLocation] = useState(['Delhi']),
+        [brands, setBrands] = useState(['Jaguar']),
         locationOptions = [
             { value: 'Delhi', label: 'Delhi' },
             { value: 'Pune', label: 'Pune' }
         ],
         brandOptions = [
+            { value: 'Jaguar', label: 'Jaguar' },
+            { value: 'Audi', label: 'Audi' },
+            { value: 'Ferrari', label: 'Ferrari' },
+            { value: 'GMC', label: 'GMC' },
+            { value: 'Ford', label: 'Ford' },
+            { value: 'Kia', label: 'Kia' },
+            { value: 'Jeep', label: 'Jeep' },
+            { value: 'Citroen', label: 'Citroen' },
+            { value: 'BMW', label: 'BMW' },
+            { value: 'Land Rover', label: 'Land Rover' },
+            { value: 'Maserati', label: 'Maserati' },
+            { value: 'Pagani', label: 'Pagani' },
+            { value: 'Tesla', label: 'Tesla' },
+            { value: 'Porsche', label: 'Porsche' },
+            { value: 'Lamborghini', label: 'Lamborghini' },
+            { value: 'Chevrolet', label: 'Chevrolet' },
+            { value: 'Bentley', label: 'Bentley' },
+            { value: 'McLaren', label: 'McLaren' },
             { value: 'Honda', label: 'Honda' },
             { value: 'Hyundai', label: 'Hyundai' },
-            { value: 'Jaguar', label: 'Jaguar' }
+            { value: 'Fiat', label: 'Fiat' }
         ];
 
     const clearDates = useCallback(() => setContract({ startDate: null, endDate: null }), []),
@@ -72,12 +92,12 @@ export const Basic = () => {
             >
                 <Drawer.Header>Add Filters</Drawer.Header>
                 <Drawer.Content>
-                    <FilterHeader label="CONTRACT" onClear={clearDates} />
+                    <FilterHeader label="CONTRACT" onClear={clearDates} showClear={contract.startDate || contract.endDate} />
                     <DateRangePicker value={contract} onChange={setContract} fullWidth withSingleMonth />
-                    <FilterHeader label="LOCATION" onClear={clearLocation} />
-                    <MultiSelect options={locationOptions} values={values} onChange={setLocation} fullWidth />
-                    <FilterHeader label="BRAND" onClear={clearBrands} />
-                    <CheckboxGroup fullWidth options={brandOptions} values={brand} onChange={setBrands} />
+                    <FilterHeader label="LOCATION" onClear={clearLocation} showClear={locations.length > 0} />
+                    <MultiSelect options={locationOptions} values={locations} onChange={setLocation} fullWidth />
+                    <FilterHeader label="BRAND" onClear={clearBrands} showClear={brands.length > 0} />
+                    <CheckboxGroup fullWidth options={brandOptions} values={brands} onChange={setBrands} />
                 </Drawer.Content>
                 <Drawer.Footer alignItems="center">
                     <Button variant="flat" onClick={clearAll}>

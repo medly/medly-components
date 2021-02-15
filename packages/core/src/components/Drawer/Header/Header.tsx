@@ -11,7 +11,7 @@ export const Header: React.FC & WithStyle = React.memo(({ children, ...restProps
             {React.Children.map(children, c => {
                 return isValidStringOrNumber(c) ? <Text textVariant="h3">{c}</Text> : c;
             })}
-            <CloseIconStyled onClick={onClose} size="XS" variant="solid" id={`${id}-close-icon`} />
+            <CloseIconStyled onClick={onClose} size="M" variant="solid" id={`${id}-close-icon`} />
         </HeaderStyled>
     );
 });
