@@ -1,0 +1,39 @@
+import { Drawer } from './Drawer';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import * as stories from './Drawer.stories';
+
+<Meta title="Core" component={Drawer} parameters={{ jest: ['Drawer.test.tsx'] }} />
+
+# Drawer
+
+Drawer consists of three sections Header, Content and Footer. All of these you can directly use from Drawer component only like below ...
+
+```typescript
+<Drawer open={drawerState} onClose={changeDrawerState}>
+    <Drawer.Header>Add Filters</Drawer.Header>
+    <Drawer.Content>CONTENT</Drawer.Content>
+    <Drawer.Footer>
+        <Button variant="flat" onClick={onClearAll}>
+            Clear All
+        </Button>
+    </Drawer.Footer>
+</Drawer>
+```
+
+Shadow will appear on the Header & Actions section if you scroll the content.
+
+### Examples
+
+<Preview withToolbar>
+    <Story name="Drawer">{stories.Basic()}</Story>
+</Preview>
+
+> Note: Check the detailed code at this [link](https://github.com/medly/medly-components/blob/master/packages/core/src/components/Drawer/Drawer.stories.tsx)
+
+### Props
+
+<Props of={Drawer} />
+
+### Drawer Footer Props
+
+<Props of={Drawer.Footer} />

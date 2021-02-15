@@ -1432,7 +1432,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           >
             <li>
               <button
-                class="sc-fzoYkl c25"
+                class="sc-fzoKki c25"
                 type="button"
               >
                 <svg
@@ -1453,7 +1453,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-fzoYkl c27"
+                class="sc-fzoKki c27"
                 type="button"
               >
                 <h5
@@ -1465,7 +1465,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-fzoYkl c29"
+                class="sc-fzoKki c29"
                 type="button"
               >
                 <h5
@@ -1477,7 +1477,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-fzoYkl c27"
+                class="sc-fzoKki c27"
                 type="button"
               >
                 <h5
@@ -1493,7 +1493,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
                 id="medly-popover-wrapper"
               >
                 <button
-                  class="sc-fzoYkl c27"
+                  class="sc-fzoKki c27"
                   type="button"
                 >
                   <h5
@@ -1506,7 +1506,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-fzoYkl c27"
+                class="sc-fzoKki c27"
                 type="button"
               >
                 <h5
@@ -1518,7 +1518,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-fzoYkl c25"
+                class="sc-fzoKki c25"
                 type="button"
               >
                 <svg

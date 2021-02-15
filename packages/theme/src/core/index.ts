@@ -9,8 +9,9 @@ import checkbox from './checkbox';
 import chip from './chip';
 import colors from './colors';
 import datePicker from './datePicker';
-import dialogBox from './dialog-box';
 import dateRangePicker from './dateRangePicker';
+import dialogBox from './dialog-box';
+import drawer from './drawer';
 import font from './font';
 import input from './input';
 import label from './label';
@@ -41,6 +42,7 @@ export const coreDefaultTheme = {
     checkbox,
     chip,
     colors,
+    drawer,
     datePicker,
     dateRangePicker,
     font,

@@ -14,6 +14,7 @@ export interface CoreTheme {
     checkbox?: CoreThemes.CheckboxTheme;
     chip?: CoreThemes.ChipTheme;
     colors?: CoreThemes.ColorPallet;
+    drawer?: CoreThemes.DrawerTheme;
     datePicker?: CoreThemes.DatePickerTheme;
     dateRangePicker?: CoreThemes.DateRangePickerTheme;
     font?: CoreThemes.FontTheme;

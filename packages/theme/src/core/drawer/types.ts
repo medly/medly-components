@@ -1,10 +1,5 @@
-export interface ModalTheme {
+export interface DrawerTheme {
     overlayColor: string;
-    shadowColor: string;
-    headerColor: string;
-    backgroundColor: string;
-    borderRadius: string;
-    scrollbarThumbColor: string;
     closeIcon: {
         borderRadius: string;
         color: {

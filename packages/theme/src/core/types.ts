@@ -9,8 +9,9 @@ export * from './checkbox/types';
 export * from './chip/types';
 export * from './colors/types';
 export * from './datePicker/types';
-export * from './dialog-box/types';
 export * from './dateRangePicker/types';
+export * from './dialog-box/types';
+export * from './drawer/types';
 export * from './font/types';
 export * from './input/types';
 export * from './label/types';
@@ -28,4 +29,3 @@ export * from './tabs/types';
 export * from './textField/types';
 export * from './toast/types';
 export * from './toggle/types';
-
