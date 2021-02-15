@@ -6,6 +6,7 @@ export const RowHoverActionsWrapper = styled.td<RowHoverActionsCellProps>`
     right: 0;
     display: ${({ show }) => (show ? 'block' : 'none')};
     height: 100%;
+    padding: 0;
 `;
 
 export const RowHoverActions = styled.div`
