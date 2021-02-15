@@ -4,10 +4,10 @@ import Text from '../../Text';
 import { DrawerContext } from '../Drawer.context';
 import { CloseIconStyled, HeaderStyled } from './Header.styled';
 
-export const Header: React.FC & WithStyle = React.memo(({ children }) => {
+export const Header: React.FC & WithStyle = React.memo(({ children, ...restProps }) => {
     const { scrollState, onClose } = useContext(DrawerContext);
     return (
-        <HeaderStyled showShadow={!scrollState.scrolledToTop}>
+        <HeaderStyled showShadow={!scrollState.scrolledToTop} {...restProps}>
             {React.Children.map(children, c => {
                 return isValidStringOrNumber(c) ? <Text textVariant="h3">{c}</Text> : c;
             })}

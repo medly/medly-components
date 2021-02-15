@@ -1,4 +1,5 @@
 import { WithStyle } from '@medly-components/utils';
+import { Props as FooterProps } from './Footer/type';
 
 export interface Props {
     open?: boolean;
@@ -9,7 +10,7 @@ export interface Props {
 
 export interface DrawerStaticProps {
     Content?: React.FC & WithStyle;
-    Footer?: React.FC & WithStyle;
+    Footer?: React.FC<FooterProps> & WithStyle;
     Header?: React.FC & WithStyle;
 }
 
