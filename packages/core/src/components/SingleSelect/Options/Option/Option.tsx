@@ -3,7 +3,7 @@ import { useKeyPress, useOuterClickNotifier, WithStyle, withTheme } from '@medly
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import Text from '../../../Text';
 import Options from '../Options';
-import { OptionStyled } from './Option.styled';
+import { CustomComponentWrapper, OptionStyled } from './Option.styled';
 import { OptionProps } from './types';
 
 const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
@@ -57,12 +57,19 @@ const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
             onMouseEnter={showNestedOptions}
             onMouseLeave={hideNestedOptions}
         >
-            <Text
-                textWeight={selected ? 'Medium' : 'Regular'}
-                textVariant={variant === 'flat' ? 'body3' : theme.singleSelect.option.textVariant[size]}
-            >
-                {label}
-            </Text>
+            {
+                (typeof value === "object") && !isNested ?
+                    <CustomComponentWrapper>
+                        {value}
+                    </CustomComponentWrapper>
+                    :
+                    <Text
+                        textWeight={selected ? 'Medium' : 'Regular'}
+                        textVariant={variant === 'flat' ? 'body3' : theme.singleSelect.option.textVariant[size]}
+                    >
+                        {label}
+                    </Text>
+            }
             {isNested ? <ArrowRightIcon size={variant === 'flat' ? 'S' : 'M'} /> : selected && variant !== 'flat' && <CheckIcon />}
             {areOptionsVisible && isNested && (
                 <Options
