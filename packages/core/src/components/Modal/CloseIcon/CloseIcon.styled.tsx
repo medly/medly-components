@@ -3,7 +3,6 @@ import { css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 
 const getStyle = ({ styleType }: { styleType: 'default' | 'hovered' | 'pressed' }) => css`
-    border: 1px solid ${({ theme }) => theme.modal.closeIcon.borderColor[styleType]};
     background-color: ${({ theme }) => theme.modal.closeIcon.bgColor[styleType]};
     * {
         fill: ${({ theme }) => theme.modal.closeIcon.color[styleType]};
@@ -15,11 +14,8 @@ export const CloseIcon = styled(ClearIcon)`
     transform: translate3d(0, 0, 0);
     perspective: 1000;
     backface-visibility: hidden;
-    height: 4rem;
-    width: 4rem;
-    padding: 1rem;
-    top: 1.6rem;
-    right: 1.6rem;
+    top: 1.4rem;
+    right: 1.4rem;
     z-index: 20;
     position: absolute;
     border-radius: ${({ theme }) => theme.modal.closeIcon.borderRadius};

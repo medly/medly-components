@@ -10,20 +10,15 @@ const modal: ModalTheme = {
     borderRadius: '2.4rem',
     closeIcon: {
         borderRadius: '50%',
-        borderColor: {
-            default: colors.grey[100],
-            hovered: colors.blue[600],
-            pressed: colors.blue[700]
-        },
         color: {
-            default: colors.black,
-            hovered: colors.white,
-            pressed: colors.white
+            default: colors.grey[600],
+            hovered: colors.grey[600],
+            pressed: colors.grey[800]
         },
         bgColor: {
-            default: colors.grey[100],
-            hovered: colors.blue[600],
-            pressed: colors.blue[700]
+            default: colors.white,
+            hovered: colors.grey[100],
+            pressed: colors.grey[200]
         }
     }
 };

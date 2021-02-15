@@ -49,7 +49,7 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
             shouldRender && (
                 <ModalBackgroundStyled {...{ ...restProps, id, open, isSmallScreen }} onClick={handleBackgroundClick}>
                     <Popup ref={modalRef} id={`${id}-popup`} onAnimationEnd={handleAnimationEnd} {...{ minWidth, minHeight, open }}>
-                        <CloseIcon id={`${id}-close-button`} onClick={onCloseModal} />
+                        <CloseIcon id={`${id}-close-button`} onClick={onCloseModal} size="M" />
                         <InnerContainerStyled
                             id={`${id}-inner-container`}
                             ref={innerContainerRef}

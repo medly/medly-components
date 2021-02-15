@@ -129,17 +129,13 @@ exports[`Modal component should render properly when it is open 1`] = `
   perspective: 1000;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  height: 4rem;
-  width: 4rem;
-  padding: 1rem;
-  top: 1.6rem;
-  right: 1.6rem;
+  top: 1.4rem;
+  right: 1.4rem;
   z-index: 20;
   position: absolute;
   border-radius: 50%;
   box-sizing: border-box;
-  border: 1px solid #eff2f4;
-  background-color: #eff2f4;
+  background-color: #ffffff;
 }
 
 .c3,
@@ -149,27 +145,25 @@ exports[`Modal component should render properly when it is open 1`] = `
 }
 
 .c3 * {
-  fill: #13181D;
+  fill: #607890;
 }
 
 .c3:hover {
-  border: 1px solid #0F5AD5;
-  background-color: #0F5AD5;
-  box-shadow: 0 2px 8px rgba(15,90,213,0.5);
+  background-color: #eff2f4;
+  box-shadow: 0 2px 8px rgba(239,242,244,0.5);
 }
 
 .c3:hover * {
-  fill: #ffffff;
+  fill: #607890;
 }
 
 .c3:active {
-  border: 1px solid #0D4AAF;
-  background-color: #0D4AAF;
+  background-color: #dfe4e9;
   box-shadow: none;
 }
 
 .c3:active * {
-  fill: #ffffff;
+  fill: #435465;
 }
 
 .c6 {
