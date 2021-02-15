@@ -19,11 +19,6 @@ export const CloseIcon = styled(ClearIcon)`
     z-index: 20;
     position: absolute;
     border-radius: ${({ theme }) => theme.modal.closeIcon.borderRadius};
-    &,
-    & > * {
-        transition: all 100ms ease-out;
-    }
-    box-sizing: border-box;
 
     ${props => getStyle({ ...props, styleType: 'default' })}
 
@@ -35,13 +30,5 @@ export const CloseIcon = styled(ClearIcon)`
     &:active {
         ${props => getStyle({ ...props, styleType: 'pressed' })}
         box-shadow: none;
-    }
-
-    @media (min-width: 768px) {
-        top: 1.2rem;
-        right: 1.2rem;
-        height: 3.2rem;
-        width: 3.2rem;
-        padding: 0.4rem;
     }
 `;

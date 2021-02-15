@@ -20,10 +20,6 @@ export const CloseIconStyled = styled(ClearIcon)`
     right: 1.4rem;
     top: 1.5rem;
     border-radius: ${({ theme }) => theme.drawer.closeIcon.borderRadius};
-    &,
-    & > * {
-        transition: all 100ms ease-out;
-    }
 
     ${props => getStyle({ ...props, styleType: 'default' })}
 

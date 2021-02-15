@@ -32,12 +32,6 @@ exports[`Drawer Header Test should render component if its passed 1`] = `
   background-color: #ffffff;
 }
 
-.c2,
-.c2 > * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
 .c2 * {
   fill: #607890;
 }
@@ -131,12 +125,6 @@ exports[`Drawer Header Test should render text if string is passed 1`] = `
   top: 1.5rem;
   border-radius: 50%;
   background-color: #ffffff;
-}
-
-.c3,
-.c3 > * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c3 * {

@@ -91,12 +91,6 @@ exports[`Drawer component should render properly with left positioned 1`] = `
   background-color: #ffffff;
 }
 
-.c4,
-.c4 > * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
-}
-
 .c4 * {
   fill: #607890;
 }
@@ -261,12 +255,6 @@ exports[`Drawer component should render properly with right positioned 1`] = `
   top: 1.5rem;
   border-radius: 50%;
   background-color: #ffffff;
-}
-
-.c4,
-.c4 > * {
-  -webkit-transition: all 100ms ease-out;
-  transition: all 100ms ease-out;
 }
 
 .c4 * {
