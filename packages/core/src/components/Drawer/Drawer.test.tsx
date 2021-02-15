@@ -22,10 +22,10 @@ const DummyComponent: React.FC<{
     );
 };
 
-const scrollTo = (value: number) => {
-    Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: 500 });
-    Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: 500 });
-    Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: value });
+const scrollTo = (scrollHeight: number, clientHeight: number, scrollTop: number) => {
+    Object.defineProperty(HTMLElement.prototype, 'scrollHeight', { configurable: true, value: scrollHeight });
+    Object.defineProperty(HTMLElement.prototype, 'clientHeight', { configurable: true, value: clientHeight });
+    Object.defineProperty(HTMLElement.prototype, 'scrollTop', { configurable: true, value: scrollTop });
 };
 
 describe('Drawer component', () => {
@@ -33,13 +33,14 @@ describe('Drawer component', () => {
         originalClientHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'clientHeight'),
         originalScrollTop = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollTop');
 
-    beforeAll(() => scrollTo(0));
+    beforeAll(() => scrollTo(500, 500, 0));
 
     afterAll(() => {
         Object.defineProperty(HTMLElement.prototype, 'scrollHeight', originalScrollHeight);
         Object.defineProperty(HTMLElement.prototype, 'clientHeight', originalClientHeight);
         Object.defineProperty(HTMLElement.prototype, 'scrollTop', originalScrollTop);
     });
+
     afterEach(cleanup);
 
     test.each(['left', 'right'])('should render properly with %s positioned', async (position: 'left' | 'right') => {
@@ -82,7 +83,7 @@ describe('Drawer component', () => {
 
     it('should hide shadow of header on scroll to top', () => {
         const { container } = render(<DummyComponent open />);
-        scrollTo(0);
+        scrollTo(800, 500, 0);
         fireEvent.scroll(container.querySelector('#medly-drawer-content'), { target: { scrollY: 0 } });
         expect(container.querySelector('#medly-drawer-header')).not.toHaveStyle(
             `box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.2)`
@@ -91,7 +92,7 @@ describe('Drawer component', () => {
     });
     it('should hide shadow of footer on scroll to bottom', () => {
         const { container } = render(<DummyComponent open />);
-        scrollTo(300);
+        scrollTo(800, 500, 300);
         fireEvent.scroll(container.querySelector('#medly-drawer-content'), { target: { scrollY: 300 } });
         expect(container.querySelector('#medly-drawer-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.2)`);
         expect(container.querySelector('#medly-drawer-footer')).not.toHaveStyle(
@@ -101,7 +102,7 @@ describe('Drawer component', () => {
 
     it('should show shadow of header and footer on scroll', () => {
         const { container } = render(<DummyComponent open />);
-        scrollTo(100);
+        scrollTo(800, 500, 100);
         fireEvent.scroll(container.querySelector('#medly-drawer-content'), { target: { scrollY: 100 } });
         expect(container.querySelector('#medly-drawer-header')).toHaveStyle(`box-shadow: 0 1.8rem 1.6rem -1.6rem rgba(176,188,200,0.2)`);
         expect(container.querySelector('#medly-drawer-footer')).toHaveStyle(`box-shadow: 0 -1.8rem 1.6rem -1.6rem rgba(176,188,200,0.2)`);
