@@ -86,17 +86,17 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb,
+.c3 .sc-AxhUy,
 .c3 .c9 {
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy *,
 .c3 .c9 * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-AxirZ {
+.c3 ~ .sc-AxiKw {
   color: #546A7F;
 }
 
@@ -137,15 +137,15 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxhCb,
-.c3:focus-within:hover .sc-AxhCb,
+.c3:focus-within .sc-AxhUy,
+.c3:focus-within:hover .sc-AxhUy,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxhCb *,
-.c3:focus-within:hover .sc-AxhCb *,
+.c3:focus-within .sc-AxhUy *,
+.c3:focus-within:hover .sc-AxhUy *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #126AFA;
@@ -223,7 +223,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 }
 
 .c5,
-.c5 ~ .sc-Axmtr {
+.c5 ~ .sc-AxmLO {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -256,7 +256,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-Axmtr {
+.c5:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
 
@@ -291,7 +291,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-AxmLO {
   opacity: 1;
 }
 
@@ -470,17 +470,17 @@ exports[`SingleSelect component should render properly when isSearchable is true
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb,
+.c3 .sc-AxhUy,
 .c3 .c9 {
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy *,
 .c3 .c9 * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-AxirZ {
+.c3 ~ .sc-AxiKw {
   color: #546A7F;
 }
 
@@ -521,15 +521,15 @@ exports[`SingleSelect component should render properly when isSearchable is true
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxhCb,
-.c3:focus-within:hover .sc-AxhCb,
+.c3:focus-within .sc-AxhUy,
+.c3:focus-within:hover .sc-AxhUy,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxhCb *,
-.c3:focus-within:hover .sc-AxhCb *,
+.c3:focus-within .sc-AxhUy *,
+.c3:focus-within:hover .sc-AxhUy *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #126AFA;
@@ -607,7 +607,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
 }
 
 .c5,
-.c5 ~ .sc-Axmtr {
+.c5 ~ .sc-AxmLO {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -640,7 +640,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-Axmtr {
+.c5:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
 
@@ -675,7 +675,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-AxmLO {
   opacity: 1;
 }
 
@@ -946,6 +946,19 @@ exports[`SingleSelect component should render properly with S size 1`] = `
 `;
 
 exports[`SingleSelect component should take passed max width 1`] = `
+.c15 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  text-align: initial;
+}
+
 .c9 {
   overflow: visible;
   font-size: 2.4rem;
@@ -1031,17 +1044,17 @@ exports[`SingleSelect component should take passed max width 1`] = `
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb,
+.c3 .sc-AxhUy,
 .c3 .c10 {
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy *,
 .c3 .c10 * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-AxirZ {
+.c3 ~ .sc-AxiKw {
   color: #546A7F;
 }
 
@@ -1082,15 +1095,15 @@ exports[`SingleSelect component should take passed max width 1`] = `
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxhCb,
-.c3:focus-within:hover .sc-AxhCb,
+.c3:focus-within .sc-AxhUy,
+.c3:focus-within:hover .sc-AxhUy,
 .c3:focus-within .c10,
 .c3:focus-within:hover .c10 {
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxhCb *,
-.c3:focus-within:hover .sc-AxhCb *,
+.c3:focus-within .sc-AxhUy *,
+.c3:focus-within:hover .sc-AxhUy *,
 .c3:focus-within .c10 *,
 .c3:focus-within:hover .c10 * {
   fill: #126AFA;
@@ -1169,7 +1182,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
 }
 
 .c5,
-.c5 ~ .sc-Axmtr {
+.c5 ~ .sc-AxmLO {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -1202,7 +1215,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-Axmtr {
+.c5:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
 
@@ -1237,21 +1250,8 @@ exports[`SingleSelect component should take passed max width 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-AxmLO {
   opacity: 1;
-}
-
-.c15 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  text-align: initial;
 }
 
 .c13 {
@@ -1604,12 +1604,12 @@ exports[`SingleSelect component with filled variant should render disabled state
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb,
+.c3 .sc-AxhUy,
 .c3 .c9 {
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy *,
 .c3 .c9 * {
   fill: #546A7F;
 }
@@ -1649,12 +1649,12 @@ exports[`SingleSelect component with filled variant should render disabled state
   color: #b0bcc8;
 }
 
-.c3 .sc-AxhCb,
+.c3 .sc-AxhUy,
 .c3 .c9 {
   color: #b0bcc8;
 }
 
-.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy *,
 .c3 .c9 * {
   fill: #b0bcc8;
 }
@@ -1714,7 +1714,7 @@ exports[`SingleSelect component with filled variant should render disabled state
 }
 
 .c5,
-.c5 ~ .sc-Axmtr {
+.c5 ~ .sc-AxmLO {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -1747,7 +1747,7 @@ exports[`SingleSelect component with filled variant should render disabled state
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-Axmtr {
+.c5:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
 
@@ -1782,7 +1782,7 @@ exports[`SingleSelect component with filled variant should render disabled state
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-AxmLO {
   opacity: 1;
 }
 
@@ -1874,6 +1874,19 @@ exports[`SingleSelect component with filled variant should render disabled state
 `;
 
 exports[`SingleSelect component with filled variant should render options correctly on click on the input 1`] = `
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  text-align: initial;
+}
+
 .c5 {
   overflow: visible;
   font-size: 2.4rem;
@@ -1887,19 +1900,6 @@ exports[`SingleSelect component with filled variant should render options correc
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
-}
-
-.c3 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  text-align: initial;
 }
 
 .c1 {
@@ -2118,17 +2118,17 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb,
+.c3 .sc-AxhUy,
 .c3 .c9 {
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy *,
 .c3 .c9 * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-AxirZ {
+.c3 ~ .sc-AxiKw {
   color: #546A7F;
 }
 
@@ -2169,15 +2169,15 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxhCb,
-.c3:focus-within:hover .sc-AxhCb,
+.c3:focus-within .sc-AxhUy,
+.c3:focus-within:hover .sc-AxhUy,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxhCb *,
-.c3:focus-within:hover .sc-AxhCb *,
+.c3:focus-within .sc-AxhUy *,
+.c3:focus-within:hover .sc-AxhUy *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #126AFA;
@@ -2255,7 +2255,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 }
 
 .c5,
-.c5 ~ .sc-Axmtr {
+.c5 ~ .sc-AxmLO {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -2288,7 +2288,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-Axmtr {
+.c5:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
 
@@ -2323,7 +2323,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-AxmLO {
   opacity: 1;
 }
 
@@ -2409,6 +2409,412 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
         </svg>
       </div>
       
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SingleSelect component with filled variant should render properly when option is custom component 1`] = `
+.c8 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c8 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c12 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c7 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c10 {
+  pointer-events: none;
+  margin-left: 1.6rem;
+}
+
+.c3 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  border-radius: 0.4rem 0.4rem 0 0;
+  background-color: #eff2f4;
+}
+
+.c3 .c6 {
+  color: #546A7F;
+}
+
+.c3 .sc-AxhUy,
+.c3 .c9 {
+  color: #546A7F;
+}
+
+.c3 .sc-AxhUy *,
+.c3 .c9 * {
+  fill: #546A7F;
+}
+
+.c3 ~ .c11 {
+  color: #546A7F;
+}
+
+.c3::after {
+  content: '';
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  border-top: 0.1rem solid #546A7F;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3:hover::after,
+.c3:focus-within::after {
+  border-width: 0.2rem;
+}
+
+.c3 input {
+  box-shadow: 0 0 0 100000px #eff2f4 inset;
+}
+
+.c3:focus-within,
+.c3:focus-within:hover {
+  background-color: #E7F0FF;
+}
+
+.c3:focus-within::after,
+.c3:focus-within:hover::after {
+  border-color: #126AFA;
+}
+
+.c3:focus-within .c6,
+.c3:focus-within:hover .c6 {
+  color: #126AFA;
+}
+
+.c3:focus-within .sc-AxhUy,
+.c3:focus-within:hover .sc-AxhUy,
+.c3:focus-within .c9,
+.c3:focus-within:hover .c9 {
+  color: #126AFA;
+}
+
+.c3:focus-within .sc-AxhUy *,
+.c3:focus-within:hover .sc-AxhUy *,
+.c3:focus-within .c9 *,
+.c3:focus-within:hover .c9 * {
+  fill: #126AFA;
+}
+
+.c3:focus-within input,
+.c3:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #E7F0FF inset;
+}
+
+.c3:focus-within input::-webkit-input-placeholder,
+.c3:focus-within:hover input::-webkit-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c3:focus-within input::-moz-placeholder,
+.c3:focus-within:hover input::-moz-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c3:focus-within input:-ms-input-placeholder,
+.c3:focus-within:hover input:-ms-input-placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c3:focus-within input::placeholder,
+.c3:focus-within:hover input::placeholder {
+  color: rgba(0,90,238,.2);
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c2 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: 20rem;
+  margin: 0.8rem 0;
+}
+
+.c5 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 0.7rem;
+}
+
+.c5,
+.c5 ~ .sc-AxmLO {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c5.c5.c5:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c5.c5.c5:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus::placeholder {
+  opacity: 1;
+}
+
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-AxmLO {
+  cursor: not-allowed;
+}
+
+.c5::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:not(:placeholder-shown) ~ .c6,
+.c5:focus ~ .c6 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c5:not(:placeholder-shown) ~ .sc-AxmLO {
+  opacity: 1;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c0 .c1 {
+  margin: 0;
+  caret-color: transparent;
+}
+
+.c0 .c1 label {
+  pointer-events: none;
+}
+
+.c0 .c1 div,
+.c0 .c1 input,
+.c0 .c1 label {
+  cursor: pointer;
+}
+
+.c0 .c1 .c9 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c0 .c1:not(:focus-within):hover .c9 * {
+  fill: #13181D;
+}
+
+<div>
+  <div
+    class="c0"
+    id="label-wrapper"
+  >
+    <div
+      class="c1 c2"
+      id="label-input-wrapper"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <input
+            aria-describedby="label-helper-text"
+            autocomplete="off"
+            class="c5"
+            id="label-input"
+            placeholder="Please Select . . ."
+            type="text"
+            value="Dummy1"
+          />
+          <label
+            class="c6 c7"
+            for="label-input"
+          >
+            Label
+          </label>
+        </div>
+        <svg
+          class="c8 c9 c10"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+      </div>
+      <span
+        class="c11 c12"
+        id="label-helper-text"
+      >
+        Helper Text
+      </span>
     </div>
   </div>
 </div>
@@ -2511,12 +2917,12 @@ exports[`SingleSelect component with filled variant should render with label pro
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb,
+.c3 .sc-AxhUy,
 .c3 .c9 {
   color: #546A7F;
 }
 
-.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy *,
 .c3 .c9 * {
   fill: #546A7F;
 }
@@ -2562,15 +2968,15 @@ exports[`SingleSelect component with filled variant should render with label pro
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxhCb,
-.c3:focus-within:hover .sc-AxhCb,
+.c3:focus-within .sc-AxhUy,
+.c3:focus-within:hover .sc-AxhUy,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxhCb *,
-.c3:focus-within:hover .sc-AxhCb *,
+.c3:focus-within .sc-AxhUy *,
+.c3:focus-within:hover .sc-AxhUy *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #126AFA;
@@ -2652,7 +3058,7 @@ exports[`SingleSelect component with filled variant should render with label pro
 }
 
 .c5,
-.c5 ~ .sc-Axmtr {
+.c5 ~ .sc-AxmLO {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -2685,7 +3091,7 @@ exports[`SingleSelect component with filled variant should render with label pro
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-Axmtr {
+.c5:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
 
@@ -2720,7 +3126,7 @@ exports[`SingleSelect component with filled variant should render with label pro
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-AxmLO {
   opacity: 1;
 }
 
@@ -2821,6 +3227,19 @@ exports[`SingleSelect component with filled variant should render with label pro
 `;
 
 exports[`SingleSelect component with flat variant should render disabled state properly  1`] = `
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 1.6rem;
+  text-align: initial;
+}
+
 .c4 {
   overflow: visible;
   font-size: 2rem;
@@ -2834,19 +3253,6 @@ exports[`SingleSelect component with flat variant should render disabled state p
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
-}
-
-.c3 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.2rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 1.6rem;
-  text-align: initial;
 }
 
 .c1 {
@@ -2917,7 +3323,7 @@ exports[`SingleSelect component with flat variant should render disabled state p
 }
 
 .c2,
-.c2 .sc-fzoLsD {
+.c2 .sc-fzpans {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -2940,7 +3346,7 @@ exports[`SingleSelect component with flat variant should render disabled state p
   fill: #b0bcc8;
 }
 
-.c2:disabled .sc-fzoLsD {
+.c2:disabled .sc-fzpans {
   color: #b0bcc8;
 }
 
@@ -2953,7 +3359,7 @@ exports[`SingleSelect component with flat variant should render disabled state p
   fill: #126AFA;
 }
 
-.c2:not(:disabled):not(:hover) .sc-fzoLsD {
+.c2:not(:disabled):not(:hover) .sc-fzpans {
   color: #303C48;
 }
 
@@ -2966,7 +3372,7 @@ exports[`SingleSelect component with flat variant should render disabled state p
   fill: #0D4AAF;
 }
 
-.c2:not(:disabled):active .sc-fzoLsD {
+.c2:not(:disabled):active .sc-fzpans {
   color: #13181D;
 }
 
@@ -2980,7 +3386,7 @@ exports[`SingleSelect component with flat variant should render disabled state p
   fill: #0F5AD5;
 }
 
-.c2:not(:disabled):not(:active):hover .sc-fzoLsD {
+.c2:not(:disabled):not(:active):hover .sc-fzpans {
   color: #303C48;
 }
 
@@ -2996,16 +3402,16 @@ exports[`SingleSelect component with flat variant should render disabled state p
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c0 .sc-AxmLO {
+.c0 .sc-fzozJi {
   margin: 0;
   caret-color: transparent;
 }
 
-.c0 .sc-AxmLO label {
+.c0 .sc-fzozJi label {
   pointer-events: none;
 }
 
-.c0 .sc-AxmLO .sc-AxhUy {
+.c0 .sc-fzozJi .sc-AxgMl {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -3063,6 +3469,19 @@ exports[`SingleSelect component with flat variant should render disabled state p
 `;
 
 exports[`SingleSelect component with flat variant should render options correctly on click on the input 1`] = `
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 1.6rem;
+  text-align: initial;
+}
+
 .c5 {
   overflow: visible;
   font-size: 2rem;
@@ -3076,19 +3495,6 @@ exports[`SingleSelect component with flat variant should render options correctl
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
-}
-
-.c3 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.2rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 1.6rem;
-  text-align: initial;
 }
 
 .c1 {
@@ -3222,6 +3628,19 @@ exports[`SingleSelect component with flat variant should render options correctl
 `;
 
 exports[`SingleSelect component with flat variant should render properly 1`] = `
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 1.6rem;
+  text-align: initial;
+}
+
 .c4 {
   overflow: visible;
   font-size: 2rem;
@@ -3235,19 +3654,6 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
-}
-
-.c3 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.2rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 1.6rem;
-  text-align: initial;
 }
 
 .c1 {
@@ -3306,7 +3712,7 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
 }
 
 .c2,
-.c2 .sc-fzoLsD {
+.c2 .sc-fzpans {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -3329,7 +3735,7 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   fill: #b0bcc8;
 }
 
-.c2:disabled .sc-fzoLsD {
+.c2:disabled .sc-fzpans {
   color: #b0bcc8;
 }
 
@@ -3342,7 +3748,7 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   fill: #126AFA;
 }
 
-.c2:not(:disabled):not(:hover) .sc-fzoLsD {
+.c2:not(:disabled):not(:hover) .sc-fzpans {
   color: #303C48;
 }
 
@@ -3355,7 +3761,7 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   fill: #0D4AAF;
 }
 
-.c2:not(:disabled):active .sc-fzoLsD {
+.c2:not(:disabled):active .sc-fzpans {
   color: #13181D;
 }
 
@@ -3369,7 +3775,7 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   fill: #0F5AD5;
 }
 
-.c2:not(:disabled):not(:active):hover .sc-fzoLsD {
+.c2:not(:disabled):not(:active):hover .sc-fzpans {
   color: #303C48;
 }
 
@@ -3383,22 +3789,22 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   margin: 0.8rem 0;
 }
 
-.c0 .sc-AxmLO {
+.c0 .sc-fzozJi {
   margin: 0;
   caret-color: transparent;
 }
 
-.c0 .sc-AxmLO label {
+.c0 .sc-fzozJi label {
   pointer-events: none;
 }
 
-.c0 .sc-AxmLO div,
-.c0 .sc-AxmLO input,
-.c0 .sc-AxmLO label {
+.c0 .sc-fzozJi div,
+.c0 .sc-fzozJi input,
+.c0 .sc-fzozJi label {
   cursor: pointer;
 }
 
-.c0 .sc-AxmLO .sc-AxhUy {
+.c0 .sc-fzozJi .sc-AxgMl {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -3446,7 +3852,20 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
 </div>
 `;
 
-exports[`SingleSelect component with flat variant should render with label properly 1`] = `
+exports[`SingleSelect component with flat variant should render properly when option is custom component 1`] = `
+.c5 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 1.6rem;
+  text-align: initial;
+}
+
 .c6 {
   overflow: visible;
   font-size: 2rem;
@@ -3473,19 +3892,6 @@ exports[`SingleSelect component with flat variant should render with label prope
   line-height: 1.6rem;
   margin: 0px 0.8rem 0px 0px;
   cursor: default;
-}
-
-.c5 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.2rem;
-  font-weight: 600;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 1.6rem;
-  text-align: initial;
 }
 
 .c1 {
@@ -3635,22 +4041,285 @@ exports[`SingleSelect component with flat variant should render with label prope
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c0 .sc-AxmLO {
+.c0 .sc-fzozJi {
   margin: 0;
   caret-color: transparent;
 }
 
-.c0 .sc-AxmLO label {
+.c0 .sc-fzozJi label {
   pointer-events: none;
 }
 
-.c0 .sc-AxmLO div,
-.c0 .sc-AxmLO input,
-.c0 .sc-AxmLO label {
+.c0 .sc-fzozJi div,
+.c0 .sc-fzozJi input,
+.c0 .sc-fzozJi label {
   cursor: pointer;
 }
 
-.c0 .sc-AxmLO .sc-AxhUy {
+.c0 .sc-fzozJi .sc-AxgMl {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+<div>
+  <div
+    class="c0"
+    id="label-wrapper"
+  >
+    <div
+      class="c1"
+      id="label-button-wrapper"
+    >
+      <button
+        class="c2"
+        id="label-button"
+        type="button"
+      >
+        <label
+          class="c3 c4"
+        >
+          Label
+          :
+        </label>
+        <span
+          class="c5"
+        >
+          Dummy1
+        </span>
+        <svg
+          class="c6 c7"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+      </button>
+      <span
+        class="c8"
+        id="label-helper-text"
+      >
+        Helper Text
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SingleSelect component with flat variant should render with label properly 1`] = `
+.c5 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 1.6rem;
+  text-align: initial;
+}
+
+.c6 {
+  overflow: visible;
+  font-size: 2rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c6 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c4 {
+  color: #13181D;
+  font-size: 1.2rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 1.6rem;
+  margin: 0px 0.8rem 0px 0px;
+  cursor: default;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c8 {
+  color: #303C48;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 0.8rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c7 {
+  pointer-events: none;
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c2 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  height: 3.2rem;
+  padding: 0.7rem 0.4rem 0.9rem 0.8rem;
+  width: '100%';
+  border-radius: 0.8rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.c2,
+.c2 * {
+  cursor: pointer;
+}
+
+.c2,
+.c2 .c3 {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c2:focus {
+  outline: none;
+}
+
+.c2:disabled,
+.c2:disabled * {
+  cursor: not-allowed;
+}
+
+.c2:disabled {
+  color: #b0bcc8;
+  background: #ffffff;
+}
+
+.c2:disabled * {
+  fill: #b0bcc8;
+}
+
+.c2:disabled .c3 {
+  color: #b0bcc8;
+}
+
+.c2:not(:disabled):not(:hover) {
+  color: #126AFA;
+  background: #ffffff;
+}
+
+.c2:not(:disabled):not(:hover) * {
+  fill: #126AFA;
+}
+
+.c2:not(:disabled):not(:hover) .c3 {
+  color: #303C48;
+}
+
+.c2:not(:disabled):active {
+  color: #0D4AAF;
+  background: #eff2f4;
+}
+
+.c2:not(:disabled):active * {
+  fill: #0D4AAF;
+}
+
+.c2:not(:disabled):active .c3 {
+  color: #13181D;
+}
+
+.c2:not(:disabled):not(:active):hover {
+  color: #0F5AD5;
+  background: #F7F8F9;
+  box-shadow: 0 0.2rem 0.8rem rgba(247,248,249,0.35);
+}
+
+.c2:not(:disabled):not(:active):hover * {
+  fill: #0F5AD5;
+}
+
+.c2:not(:disabled):not(:active):hover .c3 {
+  color: #303C48;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c0 .sc-fzozJi {
+  margin: 0;
+  caret-color: transparent;
+}
+
+.c0 .sc-fzozJi label {
+  pointer-events: none;
+}
+
+.c0 .sc-fzozJi div,
+.c0 .sc-fzozJi input,
+.c0 .sc-fzozJi label {
+  cursor: pointer;
+}
+
+.c0 .sc-fzozJi .sc-AxgMl {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -3808,12 +4477,12 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   color: #607890;
 }
 
-.c3 .sc-AxhCb,
+.c3 .sc-AxhUy,
 .c3 .c9 {
   color: #607890;
 }
 
-.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy *,
 .c3 .c9 * {
   fill: #607890;
 }
@@ -3858,12 +4527,12 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   color: #b0bcc8;
 }
 
-.c3 .sc-AxhCb,
+.c3 .sc-AxhUy,
 .c3 .c9 {
   color: #b0bcc8;
 }
 
-.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy *,
 .c3 .c9 * {
   fill: #b0bcc8;
 }
@@ -3923,7 +4592,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 }
 
 .c5,
-.c5 ~ .sc-Axmtr {
+.c5 ~ .sc-AxmLO {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -3956,7 +4625,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-Axmtr {
+.c5:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
 
@@ -3991,7 +4660,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-AxmLO {
   opacity: 1;
 }
 
@@ -4083,6 +4752,19 @@ exports[`SingleSelect component with outlined variant should render disabled sta
 `;
 
 exports[`SingleSelect component with outlined variant should render options correctly on click on the input 1`] = `
+.c3 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  text-align: initial;
+}
+
 .c5 {
   overflow: visible;
   font-size: 2.4rem;
@@ -4096,19 +4778,6 @@ exports[`SingleSelect component with outlined variant should render options corr
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
-}
-
-.c3 {
-  margin: 0;
-  color: inherit;
-  font-size: 1.6rem;
-  font-weight: 400;
-  -webkit-letter-spacing: 0rem;
-  -moz-letter-spacing: 0rem;
-  -ms-letter-spacing: 0rem;
-  letter-spacing: 0rem;
-  line-height: 2.6rem;
-  text-align: initial;
 }
 
 .c1 {
@@ -4327,17 +4996,17 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   color: #607890;
 }
 
-.c3 .sc-AxhCb,
+.c3 .sc-AxhUy,
 .c3 .c9 {
   color: #607890;
 }
 
-.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy *,
 .c3 .c9 * {
   fill: #607890;
 }
 
-.c3 ~ .sc-AxirZ {
+.c3 ~ .sc-AxiKw {
   color: #546A7F;
 }
 
@@ -4392,15 +5061,15 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxhCb,
-.c3:focus-within:hover .sc-AxhCb,
+.c3:focus-within .sc-AxhUy,
+.c3:focus-within:hover .sc-AxhUy,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxhCb *,
-.c3:focus-within:hover .sc-AxhCb *,
+.c3:focus-within .sc-AxhUy *,
+.c3:focus-within:hover .sc-AxhUy *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #126AFA;
@@ -4478,7 +5147,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 }
 
 .c5,
-.c5 ~ .sc-Axmtr {
+.c5 ~ .sc-AxmLO {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -4511,7 +5180,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-Axmtr {
+.c5:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
 
@@ -4546,7 +5215,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-AxmLO {
   opacity: 1;
 }
 
@@ -4632,6 +5301,426 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
         </svg>
       </div>
       
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SingleSelect component with outlined variant should render properly when option is custom component 1`] = `
+.c8 {
+  overflow: visible;
+  font-size: 2.4rem;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  cursor: inherit;
+}
+
+.c8 * {
+  fill-opacity: 1;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear;
+  fill: #607890;
+}
+
+.c12 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin: 0.5rem 1.6rem 0;
+  white-space: initial;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c7 {
+  top: 50%;
+  left: 0;
+  cursor: text;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute;
+  pointer-events: none;
+  -webkit-transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  transition: all 150ms cubic-bezier(0.4,0,0.2,1);
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  touch-action: manipulation;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  z-index: 1;
+  width: calc(0px - 2rem);
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c10 {
+  pointer-events: none;
+  margin-left: 1.6rem;
+}
+
+.c3 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 5.6rem;
+  padding: 0 1.6rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  cursor: text;
+  border-radius: 0.4rem;
+  background-color: #ffffff;
+}
+
+.c3 .c6 {
+  color: #607890;
+}
+
+.c3 .sc-AxhUy,
+.c3 .c9 {
+  color: #607890;
+}
+
+.c3 .sc-AxhUy *,
+.c3 .c9 * {
+  fill: #607890;
+}
+
+.c3 ~ .c11 {
+  color: #546A7F;
+}
+
+.c3 input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c3::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #98A7B7;
+}
+
+.c3:hover {
+  box-shadow: 0px 0.2rem 0.8rem rgba(96,120,144,0.2);
+}
+
+.c3:focus-within {
+  box-shadow: 0px 0.2rem 0.8rem rgba(18,106,250,0.2);
+}
+
+.c3:hover::after,
+.c3:focus-within::after {
+  border-width: 0.15rem;
+  border-color: #607890;
+}
+
+.c3:focus-within,
+.c3:focus-within:hover {
+  background-color: #ffffff;
+}
+
+.c3:focus-within::after,
+.c3:focus-within:hover::after {
+  border-color: #126AFA;
+}
+
+.c3:focus-within .c6,
+.c3:focus-within:hover .c6 {
+  color: #126AFA;
+}
+
+.c3:focus-within .sc-AxhUy,
+.c3:focus-within:hover .sc-AxhUy,
+.c3:focus-within .c9,
+.c3:focus-within:hover .c9 {
+  color: #126AFA;
+}
+
+.c3:focus-within .sc-AxhUy *,
+.c3:focus-within:hover .sc-AxhUy *,
+.c3:focus-within .c9 *,
+.c3:focus-within:hover .c9 * {
+  fill: #126AFA;
+}
+
+.c3:focus-within input,
+.c3:focus-within:hover input {
+  box-shadow: 0 0 0 100000px #ffffff inset;
+}
+
+.c3:focus-within input::-webkit-input-placeholder,
+.c3:focus-within:hover input::-webkit-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c3:focus-within input::-moz-placeholder,
+.c3:focus-within:hover input::-moz-placeholder {
+  color: #C7D0D8;
+}
+
+.c3:focus-within input:-ms-input-placeholder,
+.c3:focus-within:hover input:-ms-input-placeholder {
+  color: #C7D0D8;
+}
+
+.c3:focus-within input::placeholder,
+.c3:focus-within:hover input::placeholder {
+  color: #C7D0D8;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  height: 100%;
+}
+
+.c2 {
+  position: relative;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-width: 20rem;
+  margin: 0.8rem 0;
+}
+
+.c5 {
+  color: #13181D;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  background-color: transparent;
+  border: none;
+  text-overflow: ellipsis;
+  resize: none;
+  z-index: 1;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin-bottom: 0.6rem;
+}
+
+.c5,
+.c5 ~ .sc-AxmLO {
+  font-size: 1.6rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.6rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.c5.c5.c5:focus {
+  outline: none;
+  box-shadow: unset;
+}
+
+.c5.c5.c5:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.c5.c5.c5:focus::placeholder {
+  opacity: 1;
+}
+
+.c5:disabled ~ .c6,
+.c5:disabled ~ .sc-AxmLO {
+  cursor: not-allowed;
+}
+
+.c5::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5::placeholder {
+  opacity: 0;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c5:not(:placeholder-shown) ~ .c6,
+.c5:focus ~ .c6 {
+  -webkit-transform: translateY(-87%) scale(0.75);
+  -ms-transform: translateY(-87%) scale(0.75);
+  transform: translateY(-87%) scale(0.75);
+}
+
+.c5:not(:placeholder-shown) ~ .sc-AxmLO {
+  opacity: 1;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0.8rem 0.8rem 0.8rem 0;
+}
+
+.c0 .c1 {
+  margin: 0;
+  caret-color: transparent;
+}
+
+.c0 .c1 label {
+  pointer-events: none;
+}
+
+.c0 .c1 div,
+.c0 .c1 input,
+.c0 .c1 label {
+  cursor: pointer;
+}
+
+.c0 .c1 .c9 {
+  -webkit-transition: -webkit-transform 200ms ease-out;
+  -webkit-transition: transform 200ms ease-out;
+  transition: transform 200ms ease-out;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.c0 .c1:not(:focus-within):hover .c9 * {
+  fill: #13181D;
+}
+
+<div>
+  <div
+    class="c0"
+    id="label-wrapper"
+  >
+    <div
+      class="c1 c2"
+      id="label-input-wrapper"
+    >
+      <div
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <input
+            aria-describedby="label-helper-text"
+            autocomplete="off"
+            class="c5"
+            id="label-input"
+            placeholder="Please Select . . ."
+            type="text"
+            value="Dummy1"
+          />
+          <label
+            class="c6 c7"
+            for="label-input"
+          >
+            Label
+          </label>
+        </div>
+        <svg
+          class="c8 c9 c10"
+          fill="none"
+          height="1em"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.792 14.97a1 1 0 0 1-1.584 0l-3.165-4.11a1 1 0 0 1 .793-1.61h6.328a1 1 0 0 1 .793 1.61l-3.165 4.11z"
+            fill="#000"
+          />
+        </svg>
+      </div>
+      <span
+        class="c11 c12"
+        id="label-helper-text"
+      >
+        Helper Text
+      </span>
     </div>
   </div>
 </div>
@@ -4734,12 +5823,12 @@ exports[`SingleSelect component with outlined variant should render with label p
   color: #607890;
 }
 
-.c3 .sc-AxhCb,
+.c3 .sc-AxhUy,
 .c3 .c9 {
   color: #607890;
 }
 
-.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy *,
 .c3 .c9 * {
   fill: #607890;
 }
@@ -4799,15 +5888,15 @@ exports[`SingleSelect component with outlined variant should render with label p
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxhCb,
-.c3:focus-within:hover .sc-AxhCb,
+.c3:focus-within .sc-AxhUy,
+.c3:focus-within:hover .sc-AxhUy,
 .c3:focus-within .c9,
 .c3:focus-within:hover .c9 {
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxhCb *,
-.c3:focus-within:hover .sc-AxhCb *,
+.c3:focus-within .sc-AxhUy *,
+.c3:focus-within:hover .sc-AxhUy *,
 .c3:focus-within .c9 *,
 .c3:focus-within:hover .c9 * {
   fill: #126AFA;
@@ -4889,7 +5978,7 @@ exports[`SingleSelect component with outlined variant should render with label p
 }
 
 .c5,
-.c5 ~ .sc-Axmtr {
+.c5 ~ .sc-AxmLO {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -4922,7 +6011,7 @@ exports[`SingleSelect component with outlined variant should render with label p
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-Axmtr {
+.c5:disabled ~ .sc-AxmLO {
   cursor: not-allowed;
 }
 
@@ -4957,7 +6046,7 @@ exports[`SingleSelect component with outlined variant should render with label p
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-Axmtr {
+.c5:not(:placeholder-shown) ~ .sc-AxmLO {
   opacity: 1;
 }
 

@@ -246,7 +246,7 @@ exports[`ActionBar component should not render Action bar with passed parameters
     class="sc-pjSSY c0"
   >
     <div
-      class="sc-fzoaKM c1"
+      class="sc-fzomuh c1"
     >
       <div
         class="c2"
@@ -560,7 +560,7 @@ exports[`ActionBar component should render correctly with all the default props 
     class="sc-pjSSY c0"
   >
     <div
-      class="sc-fzoaKM c1"
+      class="sc-fzomuh c1"
     >
       <div
         class="c2"
