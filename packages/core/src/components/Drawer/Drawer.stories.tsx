@@ -1,5 +1,5 @@
-import React, { useCallback, useState } from 'react';
 import { select, text } from '@storybook/addon-knobs';
+import React, { useCallback, useState } from 'react';
 import Button from '../Button';
 import CheckboxGroup from '../CheckboxGroup';
 import DateRangePicker from '../DateRangePicker';
@@ -7,28 +7,30 @@ import MultiSelect from '../MultiSelect';
 import { Drawer } from './Drawer';
 
 export const Basic = () => {
-    const [drawerState, setDrawerState] = useState(false);
-    const changeDrawerState = useCallback(() => setDrawerState(val => !val), []);
-    const [dates, setDates] = useState({ startDate: null, endDate: null });
-    const [values, setValues] = useState(['Lorem pharmacy']);
-    const [cars, setCars] = useState(['Honda']);
-    const options = [
-        { value: 'Lorem Pharmacy', label: 'Lorem Pharmacy' },
-        { value: 'Ipsum Pharmacy', label: 'Ipsum Pharmacy' }
-    ];
+    const [drawerState, setDrawerState] = useState(true),
+        [dates, setDates] = useState({ startDate: null, endDate: null }),
+        [values, setValues] = useState(['Lorem pharmacy']),
+        [cars, setCars] = useState(['Honda']),
+        options = [
+            { value: 'Lorem Pharmacy', label: 'Lorem Pharmacy' },
+            { value: 'Ipsum Pharmacy', label: 'Ipsum Pharmacy' }
+        ];
+
     const onClearAll = useCallback(() => {
-        setValues([]);
-        setDates({ startDate: null, endDate: null });
-        setCars([]);
-    }, [setValues, setDates, setCars]);
+            setValues([]);
+            setDates({ startDate: null, endDate: null });
+            setCars([]);
+        }, [setValues, setDates, setCars]),
+        showDrawer = useCallback(() => setDrawerState(true), []),
+        hideDrawer = useCallback(() => setDrawerState(false), []);
 
     return (
         <>
-            <Button onClick={changeDrawerState}>Click to Open</Button>
+            <Button onClick={showDrawer}>Click to Open</Button>
             <Drawer
                 open={drawerState}
-                onClose={changeDrawerState}
-                width={text('Width', '32rem')}
+                onClose={hideDrawer}
+                width={text('Width', '40rem')}
                 position={select('Position', ['left', 'right'], 'right')}
             >
                 <Drawer.Header>Add Filters</Drawer.Header>
@@ -48,7 +50,7 @@ export const Basic = () => {
                     />
                 </Drawer.Content>
                 <Drawer.Footer>
-                    <Button variant="flat" onClick={onClearAll}>
+                    <Button variant="flat" onClick={onClearAll} fullWidth>
                         Clear All
                     </Button>
                 </Drawer.Footer>

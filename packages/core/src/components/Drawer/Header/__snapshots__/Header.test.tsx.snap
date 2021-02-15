@@ -9,34 +9,55 @@ exports[`Drawer Header Test should render component if its passed 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #E7F0FF;
 }
 
 .c1 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  fill: #13181D;
+  fill: #607890;
 }
 
 .c0 {
-  padding: 1.6rem 2.4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 1.9rem 2.4rem 2.2rem;
+  position: relative;
 }
 
 .c2 {
-  border: 1px solid #C7D0D8;
+  position: absolute;
+  right: 1.6rem;
+  top: 1.6rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.c2,
+.c2 > * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c2 * {
+  fill: #13181D;
+}
+
+.c2:hover {
+  background-color: #eff2f4;
+  box-shadow: 0 2px 8px rgba(239,242,244,0.5);
+}
+
+.c2:hover * {
+  fill: #13181D;
+}
+
+.c2:active {
+  background-color: #eff2f4;
+  box-shadow: none;
+}
+
+.c2:active * {
+  fill: #13181D;
 }
 
 <div>
@@ -47,11 +68,9 @@ exports[`Drawer Header Test should render component if its passed 1`] = `
       Render DIV
     </div>
     <svg
-      bgColor="#ffffff"
       class="c1 c2"
       fill="none"
       height="1em"
-      iconColor="#13181D"
       variant="solid"
       viewBox="0 0 24 24"
       width="1em"
@@ -89,34 +108,55 @@ exports[`Drawer Header Test should render text if string is passed 1`] = `
   cursor: pointer;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #E7F0FF;
 }
 
 .c2 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
-  fill: #13181D;
+  fill: #607890;
 }
 
 .c0 {
-  padding: 1.6rem 2.4rem;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 1.9rem 2.4rem 2.2rem;
+  position: relative;
 }
 
 .c3 {
-  border: 1px solid #C7D0D8;
+  position: absolute;
+  right: 1.6rem;
+  top: 1.6rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.c3,
+.c3 > * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c3 * {
+  fill: #13181D;
+}
+
+.c3:hover {
+  background-color: #eff2f4;
+  box-shadow: 0 2px 8px rgba(239,242,244,0.5);
+}
+
+.c3:hover * {
+  fill: #13181D;
+}
+
+.c3:active {
+  background-color: #eff2f4;
+  box-shadow: none;
+}
+
+.c3:active * {
+  fill: #13181D;
 }
 
 <div>
@@ -129,11 +169,9 @@ exports[`Drawer Header Test should render text if string is passed 1`] = `
       Demo Header
     </h3>
     <svg
-      bgColor="#ffffff"
       class="c2 c3"
       fill="none"
       height="1em"
-      iconColor="#13181D"
       variant="solid"
       viewBox="0 0 24 24"
       width="1em"

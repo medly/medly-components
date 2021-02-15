@@ -27,3 +27,5 @@ export interface DrawerContextType {
     }>;
     onClose: () => void;
 }
+
+export type DrawerStyledProps = { position: string; width: string; open: boolean };
