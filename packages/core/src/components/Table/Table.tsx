@@ -18,22 +18,23 @@ import { useScrollState } from './useScrollState';
 export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const {
-                data,
-                // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                onSort,
-                onRowClick,
-                rowIdentifier,
-                rowSelectionDisableKey,
-                isRowSelectable,
-                isRowExpandable,
-                onRowSelection,
-                isLoading,
-                selectedRowIds,
-                showRowWithCardStyle,
-                withActionBar,
-                withPagination,
-                ...restProps
-            } = props,
+            data,
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            onSort,
+            onRowClick,
+            rowIdentifier,
+            rowSelectionDisableKey,
+            isRowSelectable,
+            isRowExpandable,
+            onRowSelection,
+            isLoading,
+            selectedRowIds,
+            showRowWithCardStyle,
+            withActionBar,
+            withPagination,
+            onScrolledToBottom,
+            ...restProps
+        } = props,
             isGroupedTable = !!restProps.groupBy,
             size = showRowWithCardStyle ? 'L' : restProps.size;
 
@@ -77,6 +78,12 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
         useUpdateEffect(() => {
             isGroupedTable && onRowSelection && onRowSelection(groupedRowSelector.selectedIds);
         }, [groupedRowSelector.selectedIds]);
+
+        useEffect(() => {
+            if (scrollState.isScrolledToBottom) {
+                onScrolledToBottom && onScrolledToBottom();
+            }
+        }, [scrollState]);
 
         return (
             <TableStateContext.Provider value={tableState}>

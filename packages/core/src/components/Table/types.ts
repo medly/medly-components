@@ -110,6 +110,8 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     defaultExpandedRowIdentifier?: unknown;
     /** Row hover actions component */
     rowHoverActions?: React.FC<{ rowData?: ObjectType; rowId?: any }>;
+    /** Function to be called when table is scrolled all the way to the bottom */
+    onScrolledToBottom?: () => any;
 }
 
 export interface StaticProps {
