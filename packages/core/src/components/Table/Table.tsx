@@ -83,7 +83,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
             if (scrollState.isScrolledToBottom) {
                 onScrolledToBottom && onScrolledToBottom();
             }
-        }, [scrollState]);
+        }, [scrollState.isScrolledToBottom]);
 
         return (
             <TableStateContext.Provider value={tableState}>
