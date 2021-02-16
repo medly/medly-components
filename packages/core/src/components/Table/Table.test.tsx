@@ -51,6 +51,11 @@ describe('Table component', () => {
             expect(queryByText('1 - 5')).toBeInTheDocument();
         });
 
+        it('should display 1 to 18 in results text if total entries is less than items per page * no of page', () => {
+            const { queryByText } = renderTable({ ...commonProps, totalItems: 18, defaultActivePage: 2 });
+            expect(queryByText('11 - 18')).toBeInTheDocument();
+        });
+
         it('should display 1 to 10 in results text if total entries is greater than items per page', () => {
             const { queryByText } = renderTable({
                 ...commonProps,
