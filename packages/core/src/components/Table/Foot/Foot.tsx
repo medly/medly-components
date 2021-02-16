@@ -7,13 +7,17 @@ import { FootRow, TFoot } from './Foot.styled';
 export const Foot: React.FC = React.memo(() => {
     const [{ activePage }, setTableState] = useContext(TableStateContext),
         { onPageChange, totalItems, itemsPerPage, showRowWithCardStyle } = useContext(TableComponentsCommonPropsContext),
-        dataRange = useMemo(
-            () =>
-                `${totalItems ? itemsPerPage * (activePage - 1) + 1 : totalItems} - ${
-                    itemsPerPage * (activePage - 1) + (totalItems < itemsPerPage ? totalItems : itemsPerPage)
-                }`,
-            [totalItems, itemsPerPage, activePage]
-        );
+        dataRange = useMemo(() => {
+            const countTillPreviousPage = itemsPerPage * (activePage - 1);
+            return `${totalItems ? countTillPreviousPage + 1 : totalItems} - ${
+                countTillPreviousPage +
+                (totalItems < itemsPerPage
+                    ? totalItems
+                    : totalItems < activePage * itemsPerPage
+                    ? totalItems - countTillPreviousPage
+                    : itemsPerPage)
+            }`;
+        }, [totalItems, itemsPerPage, activePage]);
 
     const handlePageClick = useCallback(
         (page: number) => {
