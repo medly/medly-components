@@ -82,6 +82,27 @@ const table: TableTheme = {
         separatorColor: colors.grey[200],
         color: colors.white,
         button: { borderColor: colors.white }
+    },
+    minimap: {
+        bgColor: colors.white,
+        borderRadius: '.4rem',
+        opacity: {
+            default: '.4',
+            hovered: '1'
+        },
+        sliderController: {
+            color: {
+                default: colors.blue[500],
+                hovered: colors.blue[500],
+                pressed: colors.blue[500]
+            }
+        },
+        sliderContent: {
+            bgColor: colors.grey[200],
+            color: {
+                default: colors.grey[200]
+            }
+        }
     }
 };
 

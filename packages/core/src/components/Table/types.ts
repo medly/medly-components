@@ -112,6 +112,8 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     rowHoverActions?: React.FC<{ rowData?: ObjectType; rowId?: any }>;
     /** Function to be called when table is scrolled all the way to the bottom */
     onScrolledToBottom?: () => any;
+    /** Enables a mini map to scroll horizontally across the table*/
+    withMinimap?: boolean;
 }
 
 export interface StaticProps {
