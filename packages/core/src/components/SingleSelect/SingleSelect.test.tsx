@@ -47,7 +47,7 @@ describe('SingleSelect component', () => {
             expect(container).toMatchSnapshot();
         });
 
-        it('should render properly when option is custom component', () => {
+        it('should render properly when option is custom component', async () => {
             const { container, queryByText } = render(
                 <SingleSelect
                     label="Label"
@@ -57,9 +57,11 @@ describe('SingleSelect component', () => {
                     value="Dummy1"
                 />
             );
+            fireEvent.click(container.querySelector('svg'));
+            await waitFor(() => expect(screen.getByRole('list')).toBeVisible());
             expect(container).toMatchSnapshot();
-            expect(queryByText("Component")).toBeInTheDocument;
-        })
+            expect(queryByText('Component')).toBeInTheDocument();
+        });
 
         it('should render disabled state properly ', () => {
             const { container } = render(
