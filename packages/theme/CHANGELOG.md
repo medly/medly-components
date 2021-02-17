@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.30.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.29.0...@medly-components/theme@1.30.0) (2021-02-17)
+
+
+### Bug Fixes
+
+* update close icon design to match the latest design in modal component ([74067fe](https://github.com/medly/medly-components/commit/74067fe6007eed1bc23fdef6c5563b87684fbe22))
+* update close icon size and shadow color in drawer component ([1481863](https://github.com/medly/medly-components/commit/14818631b81164dd33bc30afb9d259569c8d1823))
+
+
+### Features
+
+* add animation in drawer component ([1d85874](https://github.com/medly/medly-components/commit/1d85874dcb01bda64d1e198b94f14ad1891fa59b))
+
+
+
+
+
 # [1.29.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.28.0...@medly-components/theme@1.29.0) (2021-02-03)
 
 

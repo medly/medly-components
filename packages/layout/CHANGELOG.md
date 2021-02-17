@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.20.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.19.0...@medly-components/layout@1.20.0) (2021-02-17)
+
+
+### Bug Fixes
+
+* failing snapshots after merging master ([2a1cfe5](https://github.com/medly/medly-components/commit/2a1cfe5f069c1a701f065b0bd939e9b141bf8eda))
+* update close icon design to match the latest design in modal component ([74067fe](https://github.com/medly/medly-components/commit/74067fe6007eed1bc23fdef6c5563b87684fbe22))
+
+
+### Features
+
+* **core:** add tests and update snapshots ([c69b684](https://github.com/medly/medly-components/commit/c69b684f0ae8aa6feaa70b6a57d96c1a3e35b788))
+
+
+
+
+
 # [1.19.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.18.9...@medly-components/layout@1.19.0) (2021-02-09)
 
 

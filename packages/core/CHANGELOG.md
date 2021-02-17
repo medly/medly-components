@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.46.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.45.0...@medly-components/core@1.46.0) (2021-02-17)
+
+
+### Bug Fixes
+
+* drawer component tests ([fac28d2](https://github.com/medly/medly-components/commit/fac28d2faa3f335e93ed96175d04784e6ca16395))
+* failing snapshots after merging master ([2a1cfe5](https://github.com/medly/medly-components/commit/2a1cfe5f069c1a701f065b0bd939e9b141bf8eda))
+* last page of pagination shows incorrect range ([a0347a5](https://github.com/medly/medly-components/commit/a0347a5d714843f6a435776fc4ed15a026ef9b42))
+* padding issue in card component ([93a5026](https://github.com/medly/medly-components/commit/93a5026a39cfdda62d847208c68a106516d4a1fe))
+* padding issue in row hover actions cell component ([18f0104](https://github.com/medly/medly-components/commit/18f0104eaa3474d1df7d39059d4bbdec6a6439c7))
+* tests of singleselect component with custom component ([59bf2c4](https://github.com/medly/medly-components/commit/59bf2c458dce4f52c7ce76331959af76a07c7193))
+* update close icon design to match the latest design in modal component ([74067fe](https://github.com/medly/medly-components/commit/74067fe6007eed1bc23fdef6c5563b87684fbe22))
+* update close icon size and shadow color in drawer component ([1481863](https://github.com/medly/medly-components/commit/14818631b81164dd33bc30afb9d259569c8d1823))
+
+
+### Features
+
+* **core:** add onScrollToBottom callback function to Table component props ([98ccd90](https://github.com/medly/medly-components/commit/98ccd90e43789a4f1892c29e9be14c59c91c4b2b))
+* add animation in drawer component ([1d85874](https://github.com/medly/medly-components/commit/1d85874dcb01bda64d1e198b94f14ad1891fa59b))
+* add id prop in drawer componant and update units tests ([1b06fba](https://github.com/medly/medly-components/commit/1b06fba30a095425b41d12c64d93c9050a216cbf))
+* add withOverlay prop in drawer component ([3450f4e](https://github.com/medly/medly-components/commit/3450f4ecad67f6d82efce4b01d0e398c8e63b0e2))
+* remove shadow from table row hover action cell ([753ecf9](https://github.com/medly/medly-components/commit/753ecf9bdf5afedc68c960a0bbec7453e4f75f44))
+* **core:** add tests and update snapshots ([c69b684](https://github.com/medly/medly-components/commit/c69b684f0ae8aa6feaa70b6a57d96c1a3e35b788))
+* **core:** allow custom-component to be displayed as an option for single-select and search box ([0235c6c](https://github.com/medly/medly-components/commit/0235c6c3520f618b2121713c43259f3a547e3039))
+* added drawer component for filters ([2b5c21d](https://github.com/medly/medly-components/commit/2b5c21d8ca996d80e0e13425806ed7e8df919a83))
+
+
+
+
+
 # [1.45.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.44.1...@medly-components/core@1.45.0) (2021-02-09)
 
 
