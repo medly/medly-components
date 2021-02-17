@@ -39,25 +39,25 @@ exports[`Card component should render correctly with all the default props 1`] =
   align-items: center;
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c0 {
     padding: 2.4rem;
   }
@@ -236,121 +236,121 @@ exports[`Card component should render properly when flow direction is horizontal
   border-left: 1px solid #98A7B7;
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c1 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c1 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c1 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c1 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c3 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c3 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c3 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c3 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c4 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c4 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c4 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c4 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c5 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c5 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c5 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c5 {
     padding: 2.4rem;
   }
@@ -456,25 +456,25 @@ exports[`Card component should render properly when fullWidth and fullHeight is 
   align-items: center;
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c0 {
     padding: 2.4rem;
   }
@@ -542,25 +542,25 @@ exports[`Card component should render properly when it is clickable  1`] = `
   box-shadow: 0 0.4rem 0.8rem rgba(176,188,200,0.6);
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c0 {
     padding: 2.4rem;
   }
@@ -731,97 +731,97 @@ exports[`Card component should render properly when separator is set true flow d
   align-items: center;
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c1 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c1 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c1 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c1 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c3 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c3 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c3 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c3 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c4 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c4 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c4 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c4 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c5 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c5 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c5 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c5 {
     padding: 2.4rem;
   }
@@ -917,25 +917,25 @@ exports[`Card component should render properly with "flat" variant 1`] = `
   align-items: center;
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c0 {
     padding: 2.4rem;
   }
@@ -994,25 +994,25 @@ exports[`Card component should render properly with "solid" variant 1`] = `
   align-items: center;
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c0 {
     padding: 2.4rem;
   }
@@ -1071,25 +1071,25 @@ exports[`Card component should render properly with display "block" 1`] = `
   align-items: center;
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c0 {
     padding: 2.4rem;
   }
@@ -1151,25 +1151,25 @@ exports[`Card component should render properly with display "flex" 1`] = `
   align-items: center;
 }
 
-@media (min-width:0px) and (max-width:767px) {
+@media (min-width:0px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width:1024px) {
   .c0 {
     padding: 2.4rem;
   }
 }
 
-@media (min-width:1280px) and (max-width:2400px) {
+@media (min-width:1280px) {
   .c0 {
     padding: 2.4rem;
   }
