@@ -5,34 +5,33 @@ type Result = [
         isScrolledToTop: boolean;
         isScrolledToLeft: boolean;
         // isScrolledToRight: boolean;
-        // isScrolledToBottom: boolean;
+        isScrolledToBottom: boolean;
     },
     (e: React.UIEvent<HTMLDivElement>) => void
 ];
 export const useScrollState = (): Result => {
     const [scrollState, setScrollState] = useState({
         isScrolledToTop: true,
-        isScrolledToLeft: true
+        isScrolledToLeft: true,
         // isScrolledToRight: true,
-        // isScrolledToBottom: true
+        isScrolledToBottom: false,
     });
 
     const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
         e.stopPropagation();
         const element = e.target as HTMLElement,
-            { scrollTop, scrollLeft } = element,
+            { scrollTop, scrollLeft, clientHeight, scrollHeight } = element,
             isScrolledToTop = scrollTop === 0,
-            isScrolledToLeft = scrollLeft === 0;
-        // isScrolledToRight = Math.floor(scrollLeft + clientWidth) === scrollWidth,
-        // isScrolledToBottom = Math.floor(scrollTop + clientHeight) === scrollHeight;
-
+            isScrolledToLeft = scrollLeft === 0,
+            // isScrolledToRight = Math.floor(scrollLeft + clientWidth) === scrollWidth,
+            isScrolledToBottom = (Math.floor(scrollTop + clientHeight) === scrollHeight) || (Math.ceil(scrollTop + clientHeight) === scrollHeight);
         if (
             isScrolledToTop !== scrollState.isScrolledToTop ||
-            isScrolledToLeft !== scrollState.isScrolledToLeft
+            isScrolledToLeft !== scrollState.isScrolledToLeft ||
             // isScrolledToRight !== scrollState.isScrolledToRight ||
-            // isScrolledToBottom !== scrollState.isScrolledToBottom
+            isScrolledToBottom !== scrollState.isScrolledToBottom
         ) {
-            setScrollState({ isScrolledToTop, isScrolledToLeft });
+            setScrollState({ isScrolledToTop, isScrolledToLeft, isScrolledToBottom });
         }
     };
 
