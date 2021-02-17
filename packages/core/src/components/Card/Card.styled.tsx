@@ -43,7 +43,7 @@ const solid = ({ backgroundColor, shadowColor, onClick }: Partial<CardTheme> & P
     `;
 
 const media = ({ theme, breakpoint }: Props & { breakpoint: keyof BreakpointsTheme }) => css`
-        @media (min-width: ${theme.breakpoints[breakpoint].min}px) and (max-width: ${theme.breakpoints[breakpoint].max}px) {
+        @media (min-width: ${theme.breakpoints[breakpoint].min}px) {
             padding: ${theme.card.padding[breakpoint]};
         }
     `,
