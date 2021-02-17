@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.18.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.17.5...@medly-components/forms@1.18.0) (2021-02-17)
+
+
+### Bug Fixes
+
+* failing snapshots after merging master ([2a1cfe5](https://github.com/medly/medly-components/commit/2a1cfe5f069c1a701f065b0bd939e9b141bf8eda))
+
+
+### Features
+
+* **core:** add tests and update snapshots ([c69b684](https://github.com/medly/medly-components/commit/c69b684f0ae8aa6feaa70b6a57d96c1a3e35b788))
+
+
+
+
+
 ## [1.17.5](https://github.com/medly/medly-components/compare/@medly-components/forms@1.17.4...@medly-components/forms@1.17.5) (2021-02-09)
 
 
