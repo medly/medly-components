@@ -19,16 +19,18 @@ exports[`Minimap Slider Controller should render properly 1`] = `
 .c0 {
   width: 30px;
   left: 0;
+  top: 0;
   cursor: move;
-  height: 4.6rem;
-  padding: 1.3rem 0;
+  height: 100%;
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  top: 0;
-  z-index: 999;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c0 .c1 * {

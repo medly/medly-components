@@ -10,46 +10,34 @@ exports[`Minimap component should align slider controller with proper left offse
   bottom: 95px;
   width: 130px;
   opacity: .4;
-  -webkit-transition: opacity 400ms ease-in-out;
-  transition: opacity 400ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .c0:hover {
   opacity: 1;
-  -webkit-transition-delay: 0ms;
-  transition-delay: 0ms;
 }
 
 .c1 {
-  position: absolute;
-  display: block;
-  left: 0;
   width: 100%;
-  background: #ffffff;
   height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
-  z-index: 999;
   border-radius: .4rem;
 }
 
 .c2 {
+  cursor: move;
   position: absolute;
-  cursor: pointer;
-  left: 8px;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
   width: 114px;
-  top: 0;
-  z-index: 999;
-}
-
-.c4 {
-  width: 30px;
-  margin: 0.8rem 0.25rem;
-  height: 3rem;
-  background: #dfe4e9;
-  z-index: 999;
 }
 
 .c3 {
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -58,18 +46,19 @@ exports[`Minimap component should align slider controller with proper left offse
   -ms-flex-direction: row;
   flex-direction: row;
   width: 114px;
-  z-index: 999;
 }
 
-.c3 > div:nth-child(1) {
-  margin-left: 0;
+.c5 {
+  height: 100%;
+  width: 30px;
+  background: #dfe4e9;
 }
 
-.c3 > div:last-child {
-  margin-right: 0;
+.c5 + .c4 {
+  margin-left: 0.5rem;
 }
 
-.c7 {
+.c8 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -77,46 +66,48 @@ exports[`Minimap component should align slider controller with proper left offse
   cursor: inherit;
 }
 
-.c7 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   width: 30px;
   left: 0;
+  top: 0;
   cursor: move;
-  height: 4.6rem;
-  padding: 1.3rem 0;
+  height: 100%;
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  top: 0;
-  z-index: 999;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c5 .c6 * {
+.c6 .c7 * {
   fill: #126AFA;
 }
 
-.c5:hover .c6 * {
+.c6:hover .c7 * {
   fill: #126AFA;
 }
 
-.c5:active .c6 * {
+.c6:active .c7 * {
   fill: #126AFA;
 }
 
-.c5 .c6 {
+.c6 .c7 {
   position: absolute;
   left: -0.4rem;
 }
 
-.c5 .c6:nth-child(2) {
+.c6 .c7:nth-child(2) {
   left: 1rem;
 }
 
@@ -136,28 +127,28 @@ exports[`Minimap component should align slider controller with proper left offse
           class="c3"
         >
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
         </div>
         <div
-          class="c5"
+          class="c6"
           id="sliderController"
           style="left: 0.8316831683168316px;"
         >
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -171,7 +162,7 @@ exports[`Minimap component should align slider controller with proper left offse
             />
           </svg>
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -201,46 +192,34 @@ exports[`Minimap component should not align slider controller when user performs
   bottom: 95px;
   width: 130px;
   opacity: .4;
-  -webkit-transition: opacity 400ms ease-in-out;
-  transition: opacity 400ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .c0:hover {
   opacity: 1;
-  -webkit-transition-delay: 0ms;
-  transition-delay: 0ms;
 }
 
 .c1 {
-  position: absolute;
-  display: block;
-  left: 0;
   width: 100%;
-  background: #ffffff;
   height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
-  z-index: 999;
   border-radius: .4rem;
 }
 
 .c2 {
+  cursor: move;
   position: absolute;
-  cursor: pointer;
-  left: 8px;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
   width: 114px;
-  top: 0;
-  z-index: 999;
-}
-
-.c4 {
-  width: 30px;
-  margin: 0.8rem 0.25rem;
-  height: 3rem;
-  background: #dfe4e9;
-  z-index: 999;
 }
 
 .c3 {
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -249,18 +228,19 @@ exports[`Minimap component should not align slider controller when user performs
   -ms-flex-direction: row;
   flex-direction: row;
   width: 114px;
-  z-index: 999;
 }
 
-.c3 > div:nth-child(1) {
-  margin-left: 0;
+.c5 {
+  height: 100%;
+  width: 30px;
+  background: #dfe4e9;
 }
 
-.c3 > div:last-child {
-  margin-right: 0;
+.c5 + .c4 {
+  margin-left: 0.5rem;
 }
 
-.c7 {
+.c8 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -268,46 +248,48 @@ exports[`Minimap component should not align slider controller when user performs
   cursor: inherit;
 }
 
-.c7 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   width: 30px;
   left: 0;
+  top: 0;
   cursor: move;
-  height: 4.6rem;
-  padding: 1.3rem 0;
+  height: 100%;
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  top: 0;
-  z-index: 999;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c5 .c6 * {
+.c6 .c7 * {
   fill: #126AFA;
 }
 
-.c5:hover .c6 * {
+.c6:hover .c7 * {
   fill: #126AFA;
 }
 
-.c5:active .c6 * {
+.c6:active .c7 * {
   fill: #126AFA;
 }
 
-.c5 .c6 {
+.c6 .c7 {
   position: absolute;
   left: -0.4rem;
 }
 
-.c5 .c6:nth-child(2) {
+.c6 .c7:nth-child(2) {
   left: 1rem;
 }
 
@@ -327,28 +309,28 @@ exports[`Minimap component should not align slider controller when user performs
           class="c3"
         >
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
         </div>
         <div
-          class="c5"
+          class="c6"
           id="sliderController"
           style="left: 0px;"
         >
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -362,7 +344,7 @@ exports[`Minimap component should not align slider controller when user performs
             />
           </svg>
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -392,46 +374,34 @@ exports[`Minimap component should position minimap at the right hand side bottom
   bottom: 95px;
   width: 130px;
   opacity: .4;
-  -webkit-transition: opacity 400ms ease-in-out;
-  transition: opacity 400ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .c0:hover {
   opacity: 1;
-  -webkit-transition-delay: 0ms;
-  transition-delay: 0ms;
 }
 
 .c1 {
-  position: absolute;
-  display: block;
-  left: 0;
   width: 100%;
-  background: #ffffff;
   height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
-  z-index: 999;
   border-radius: .4rem;
 }
 
 .c2 {
+  cursor: move;
   position: absolute;
-  cursor: pointer;
-  left: 8px;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
   width: 114px;
-  top: 0;
-  z-index: 999;
-}
-
-.c4 {
-  width: 30px;
-  margin: 0.8rem 0.25rem;
-  height: 3rem;
-  background: #dfe4e9;
-  z-index: 999;
 }
 
 .c3 {
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -440,18 +410,19 @@ exports[`Minimap component should position minimap at the right hand side bottom
   -ms-flex-direction: row;
   flex-direction: row;
   width: 114px;
-  z-index: 999;
 }
 
-.c3 > div:nth-child(1) {
-  margin-left: 0;
+.c5 {
+  height: 100%;
+  width: 30px;
+  background: #dfe4e9;
 }
 
-.c3 > div:last-child {
-  margin-right: 0;
+.c5 + .c4 {
+  margin-left: 0.5rem;
 }
 
-.c7 {
+.c8 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -459,46 +430,48 @@ exports[`Minimap component should position minimap at the right hand side bottom
   cursor: inherit;
 }
 
-.c7 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   width: 30px;
   left: 0;
+  top: 0;
   cursor: move;
-  height: 4.6rem;
-  padding: 1.3rem 0;
+  height: 100%;
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  top: 0;
-  z-index: 999;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c5 .c6 * {
+.c6 .c7 * {
   fill: #126AFA;
 }
 
-.c5:hover .c6 * {
+.c6:hover .c7 * {
   fill: #126AFA;
 }
 
-.c5:active .c6 * {
+.c6:active .c7 * {
   fill: #126AFA;
 }
 
-.c5 .c6 {
+.c6 .c7 {
   position: absolute;
   left: -0.4rem;
 }
 
-.c5 .c6:nth-child(2) {
+.c6 .c7:nth-child(2) {
   left: 1rem;
 }
 
@@ -518,27 +491,27 @@ exports[`Minimap component should position minimap at the right hand side bottom
           class="c3"
         >
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
         </div>
         <div
-          class="c5"
+          class="c6"
           id="sliderController"
         >
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -552,7 +525,7 @@ exports[`Minimap component should position minimap at the right hand side bottom
             />
           </svg>
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -582,46 +555,34 @@ exports[`Minimap component should position minimap at the right hand side bottom
   bottom: 95px;
   width: 130px;
   opacity: .4;
-  -webkit-transition: opacity 400ms ease-in-out;
-  transition: opacity 400ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .c0:hover {
   opacity: 1;
-  -webkit-transition-delay: 0ms;
-  transition-delay: 0ms;
 }
 
 .c1 {
-  position: absolute;
-  display: block;
-  left: 0;
   width: 100%;
-  background: #ffffff;
   height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
-  z-index: 999;
   border-radius: .4rem;
 }
 
 .c2 {
+  cursor: move;
   position: absolute;
-  cursor: pointer;
-  left: 8px;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
   width: 114px;
-  top: 0;
-  z-index: 999;
-}
-
-.c4 {
-  width: 30px;
-  margin: 0.8rem 0.25rem;
-  height: 3rem;
-  background: #dfe4e9;
-  z-index: 999;
 }
 
 .c3 {
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -630,18 +591,19 @@ exports[`Minimap component should position minimap at the right hand side bottom
   -ms-flex-direction: row;
   flex-direction: row;
   width: 114px;
-  z-index: 999;
 }
 
-.c3 > div:nth-child(1) {
-  margin-left: 0;
+.c5 {
+  height: 100%;
+  width: 30px;
+  background: #dfe4e9;
 }
 
-.c3 > div:last-child {
-  margin-right: 0;
+.c5 + .c4 {
+  margin-left: 0.5rem;
 }
 
-.c7 {
+.c8 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -649,46 +611,48 @@ exports[`Minimap component should position minimap at the right hand side bottom
   cursor: inherit;
 }
 
-.c7 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   width: 30px;
   left: 0;
+  top: 0;
   cursor: move;
-  height: 4.6rem;
-  padding: 1.3rem 0;
+  height: 100%;
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  top: 0;
-  z-index: 999;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c5 .c6 * {
+.c6 .c7 * {
   fill: #126AFA;
 }
 
-.c5:hover .c6 * {
+.c6:hover .c7 * {
   fill: #126AFA;
 }
 
-.c5:active .c6 * {
+.c6:active .c7 * {
   fill: #126AFA;
 }
 
-.c5 .c6 {
+.c6 .c7 {
   position: absolute;
   left: -0.4rem;
 }
 
-.c5 .c6:nth-child(2) {
+.c6 .c7:nth-child(2) {
   left: 1rem;
 }
 
@@ -708,27 +672,27 @@ exports[`Minimap component should position minimap at the right hand side bottom
           class="c3"
         >
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
         </div>
         <div
-          class="c5"
+          class="c6"
           id="sliderController"
         >
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -742,7 +706,7 @@ exports[`Minimap component should position minimap at the right hand side bottom
             />
           </svg>
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -772,46 +736,34 @@ exports[`Minimap component should position slider controller at the correct posi
   bottom: 95px;
   width: 130px;
   opacity: .4;
-  -webkit-transition: opacity 400ms ease-in-out;
-  transition: opacity 400ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .c0:hover {
   opacity: 1;
-  -webkit-transition-delay: 0ms;
-  transition-delay: 0ms;
 }
 
 .c1 {
-  position: absolute;
-  display: block;
-  left: 0;
   width: 100%;
-  background: #ffffff;
   height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
-  z-index: 999;
   border-radius: .4rem;
 }
 
 .c2 {
+  cursor: move;
   position: absolute;
-  cursor: pointer;
-  left: 8px;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
   width: 114px;
-  top: 0;
-  z-index: 999;
-}
-
-.c4 {
-  width: 30px;
-  margin: 0.8rem 0.25rem;
-  height: 3rem;
-  background: #dfe4e9;
-  z-index: 999;
 }
 
 .c3 {
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -820,18 +772,19 @@ exports[`Minimap component should position slider controller at the correct posi
   -ms-flex-direction: row;
   flex-direction: row;
   width: 114px;
-  z-index: 999;
 }
 
-.c3 > div:nth-child(1) {
-  margin-left: 0;
+.c5 {
+  height: 100%;
+  width: 30px;
+  background: #dfe4e9;
 }
 
-.c3 > div:last-child {
-  margin-right: 0;
+.c5 + .c4 {
+  margin-left: 0.5rem;
 }
 
-.c7 {
+.c8 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -839,46 +792,48 @@ exports[`Minimap component should position slider controller at the correct posi
   cursor: inherit;
 }
 
-.c7 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   width: 30px;
   left: 0;
+  top: 0;
   cursor: move;
-  height: 4.6rem;
-  padding: 1.3rem 0;
+  height: 100%;
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  top: 0;
-  z-index: 999;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c5 .c6 * {
+.c6 .c7 * {
   fill: #126AFA;
 }
 
-.c5:hover .c6 * {
+.c6:hover .c7 * {
   fill: #126AFA;
 }
 
-.c5:active .c6 * {
+.c6:active .c7 * {
   fill: #126AFA;
 }
 
-.c5 .c6 {
+.c6 .c7 {
   position: absolute;
   left: -0.4rem;
 }
 
-.c5 .c6:nth-child(2) {
+.c6 .c7:nth-child(2) {
   left: 1rem;
 }
 
@@ -898,28 +853,28 @@ exports[`Minimap component should position slider controller at the correct posi
           class="c3"
         >
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
         </div>
         <div
-          class="c5"
+          class="c6"
           id="sliderController"
           style="left: 25px;"
         >
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -933,7 +888,7 @@ exports[`Minimap component should position slider controller at the correct posi
             />
           </svg>
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -963,46 +918,34 @@ exports[`Minimap component should position slider controller at the extreme end 
   bottom: 95px;
   width: 130px;
   opacity: .4;
-  -webkit-transition: opacity 400ms ease-in-out;
-  transition: opacity 400ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .c0:hover {
   opacity: 1;
-  -webkit-transition-delay: 0ms;
-  transition-delay: 0ms;
 }
 
 .c1 {
-  position: absolute;
-  display: block;
-  left: 0;
   width: 100%;
-  background: #ffffff;
   height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
-  z-index: 999;
   border-radius: .4rem;
 }
 
 .c2 {
+  cursor: move;
   position: absolute;
-  cursor: pointer;
-  left: 8px;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
   width: 114px;
-  top: 0;
-  z-index: 999;
-}
-
-.c4 {
-  width: 30px;
-  margin: 0.8rem 0.25rem;
-  height: 3rem;
-  background: #dfe4e9;
-  z-index: 999;
 }
 
 .c3 {
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1011,18 +954,19 @@ exports[`Minimap component should position slider controller at the extreme end 
   -ms-flex-direction: row;
   flex-direction: row;
   width: 114px;
-  z-index: 999;
 }
 
-.c3 > div:nth-child(1) {
-  margin-left: 0;
+.c5 {
+  height: 100%;
+  width: 30px;
+  background: #dfe4e9;
 }
 
-.c3 > div:last-child {
-  margin-right: 0;
+.c5 + .c4 {
+  margin-left: 0.5rem;
 }
 
-.c7 {
+.c8 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -1030,46 +974,48 @@ exports[`Minimap component should position slider controller at the extreme end 
   cursor: inherit;
 }
 
-.c7 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   width: 30px;
   left: 0;
+  top: 0;
   cursor: move;
-  height: 4.6rem;
-  padding: 1.3rem 0;
+  height: 100%;
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  top: 0;
-  z-index: 999;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c5 .c6 * {
+.c6 .c7 * {
   fill: #126AFA;
 }
 
-.c5:hover .c6 * {
+.c6:hover .c7 * {
   fill: #126AFA;
 }
 
-.c5:active .c6 * {
+.c6:active .c7 * {
   fill: #126AFA;
 }
 
-.c5 .c6 {
+.c6 .c7 {
   position: absolute;
   left: -0.4rem;
 }
 
-.c5 .c6:nth-child(2) {
+.c6 .c7:nth-child(2) {
   left: 1rem;
 }
 
@@ -1089,28 +1035,28 @@ exports[`Minimap component should position slider controller at the extreme end 
           class="c3"
         >
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
         </div>
         <div
-          class="c5"
+          class="c6"
           id="sliderController"
           style="left: 84px;"
         >
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -1124,7 +1070,7 @@ exports[`Minimap component should position slider controller at the extreme end 
             />
           </svg>
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -1154,46 +1100,34 @@ exports[`Minimap component should position slider controller when performed drag
   bottom: 95px;
   width: 130px;
   opacity: .4;
-  -webkit-transition: opacity 400ms ease-in-out;
-  transition: opacity 400ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .c0:hover {
   opacity: 1;
-  -webkit-transition-delay: 0ms;
-  transition-delay: 0ms;
 }
 
 .c1 {
-  position: absolute;
-  display: block;
-  left: 0;
   width: 100%;
-  background: #ffffff;
   height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
-  z-index: 999;
   border-radius: .4rem;
 }
 
 .c2 {
+  cursor: move;
   position: absolute;
-  cursor: pointer;
-  left: 8px;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
   width: 114px;
-  top: 0;
-  z-index: 999;
-}
-
-.c4 {
-  width: 30px;
-  margin: 0.8rem 0.25rem;
-  height: 3rem;
-  background: #dfe4e9;
-  z-index: 999;
 }
 
 .c3 {
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1202,18 +1136,19 @@ exports[`Minimap component should position slider controller when performed drag
   -ms-flex-direction: row;
   flex-direction: row;
   width: 114px;
-  z-index: 999;
 }
 
-.c3 > div:nth-child(1) {
-  margin-left: 0;
+.c5 {
+  height: 100%;
+  width: 30px;
+  background: #dfe4e9;
 }
 
-.c3 > div:last-child {
-  margin-right: 0;
+.c5 + .c4 {
+  margin-left: 0.5rem;
 }
 
-.c7 {
+.c8 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -1221,46 +1156,48 @@ exports[`Minimap component should position slider controller when performed drag
   cursor: inherit;
 }
 
-.c7 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   width: 30px;
   left: 0;
+  top: 0;
   cursor: move;
-  height: 4.6rem;
-  padding: 1.3rem 0;
+  height: 100%;
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  top: 0;
-  z-index: 999;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c5 .c6 * {
+.c6 .c7 * {
   fill: #126AFA;
 }
 
-.c5:hover .c6 * {
+.c6:hover .c7 * {
   fill: #126AFA;
 }
 
-.c5:active .c6 * {
+.c6:active .c7 * {
   fill: #126AFA;
 }
 
-.c5 .c6 {
+.c6 .c7 {
   position: absolute;
   left: -0.4rem;
 }
 
-.c5 .c6:nth-child(2) {
+.c6 .c7:nth-child(2) {
   left: 1rem;
 }
 
@@ -1280,28 +1217,28 @@ exports[`Minimap component should position slider controller when performed drag
           class="c3"
         >
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
         </div>
         <div
-          class="c5"
+          class="c6"
           id="sliderController"
           style="left: 0px;"
         >
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -1315,7 +1252,7 @@ exports[`Minimap component should position slider controller when performed drag
             />
           </svg>
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -1345,46 +1282,34 @@ exports[`Minimap component should render properly 1`] = `
   bottom: 95px;
   width: 130px;
   opacity: .4;
-  -webkit-transition: opacity 400ms ease-in-out;
-  transition: opacity 400ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .c0:hover {
   opacity: 1;
-  -webkit-transition-delay: 0ms;
-  transition-delay: 0ms;
 }
 
 .c1 {
-  position: absolute;
-  display: block;
-  left: 0;
   width: 100%;
-  background: #ffffff;
   height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
-  z-index: 999;
   border-radius: .4rem;
 }
 
 .c2 {
+  cursor: move;
   position: absolute;
-  cursor: pointer;
-  left: 8px;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
   width: 114px;
-  top: 0;
-  z-index: 999;
-}
-
-.c4 {
-  width: 30px;
-  margin: 0.8rem 0.25rem;
-  height: 3rem;
-  background: #dfe4e9;
-  z-index: 999;
 }
 
 .c3 {
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1393,18 +1318,19 @@ exports[`Minimap component should render properly 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   width: 114px;
-  z-index: 999;
 }
 
-.c3 > div:nth-child(1) {
-  margin-left: 0;
+.c5 {
+  height: 100%;
+  width: 30px;
+  background: #dfe4e9;
 }
 
-.c3 > div:last-child {
-  margin-right: 0;
+.c5 + .c4 {
+  margin-left: 0.5rem;
 }
 
-.c7 {
+.c8 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -1412,46 +1338,48 @@ exports[`Minimap component should render properly 1`] = `
   cursor: inherit;
 }
 
-.c7 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   width: 30px;
   left: 0;
+  top: 0;
   cursor: move;
-  height: 4.6rem;
-  padding: 1.3rem 0;
+  height: 100%;
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  top: 0;
-  z-index: 999;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c5 .c6 * {
+.c6 .c7 * {
   fill: #126AFA;
 }
 
-.c5:hover .c6 * {
+.c6:hover .c7 * {
   fill: #126AFA;
 }
 
-.c5:active .c6 * {
+.c6:active .c7 * {
   fill: #126AFA;
 }
 
-.c5 .c6 {
+.c6 .c7 {
   position: absolute;
   left: -0.4rem;
 }
 
-.c5 .c6:nth-child(2) {
+.c6 .c7:nth-child(2) {
   left: 1rem;
 }
 
@@ -1471,27 +1399,27 @@ exports[`Minimap component should render properly 1`] = `
           class="c3"
         >
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
         </div>
         <div
-          class="c5"
+          class="c6"
           id="sliderController"
         >
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -1505,7 +1433,7 @@ exports[`Minimap component should render properly 1`] = `
             />
           </svg>
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -1535,46 +1463,34 @@ exports[`Minimap component should stop slider controller positioning when we mov
   bottom: 95px;
   width: 130px;
   opacity: .4;
-  -webkit-transition: opacity 400ms ease-in-out;
-  transition: opacity 400ms ease-in-out;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .c0:hover {
   opacity: 1;
-  -webkit-transition-delay: 0ms;
-  transition-delay: 0ms;
 }
 
 .c1 {
-  position: absolute;
-  display: block;
-  left: 0;
   width: 100%;
-  background: #ffffff;
   height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
-  z-index: 999;
   border-radius: .4rem;
 }
 
 .c2 {
+  cursor: move;
   position: absolute;
-  cursor: pointer;
-  left: 8px;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
   width: 114px;
-  top: 0;
-  z-index: 999;
-}
-
-.c4 {
-  width: 30px;
-  margin: 0.8rem 0.25rem;
-  height: 3rem;
-  background: #dfe4e9;
-  z-index: 999;
 }
 
 .c3 {
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1583,18 +1499,19 @@ exports[`Minimap component should stop slider controller positioning when we mov
   -ms-flex-direction: row;
   flex-direction: row;
   width: 114px;
-  z-index: 999;
 }
 
-.c3 > div:nth-child(1) {
-  margin-left: 0;
+.c5 {
+  height: 100%;
+  width: 30px;
+  background: #dfe4e9;
 }
 
-.c3 > div:last-child {
-  margin-right: 0;
+.c5 + .c4 {
+  margin-left: 0.5rem;
 }
 
-.c7 {
+.c8 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -1602,46 +1519,48 @@ exports[`Minimap component should stop slider controller positioning when we mov
   cursor: inherit;
 }
 
-.c7 * {
+.c8 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c5 {
+.c6 {
   width: 30px;
   left: 0;
+  top: 0;
   cursor: move;
-  height: 4.6rem;
-  padding: 1.3rem 0;
+  height: 100%;
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  top: 0;
-  z-index: 999;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.c5 .c6 * {
+.c6 .c7 * {
   fill: #126AFA;
 }
 
-.c5:hover .c6 * {
+.c6:hover .c7 * {
   fill: #126AFA;
 }
 
-.c5:active .c6 * {
+.c6:active .c7 * {
   fill: #126AFA;
 }
 
-.c5 .c6 {
+.c6 .c7 {
   position: absolute;
   left: -0.4rem;
 }
 
-.c5 .c6:nth-child(2) {
+.c6 .c7:nth-child(2) {
   left: 1rem;
 }
 
@@ -1661,27 +1580,27 @@ exports[`Minimap component should stop slider controller positioning when we mov
           class="c3"
         >
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
           <div
-            class="c4"
+            class="c4 c5"
           />
         </div>
         <div
-          class="c5"
+          class="c6"
           id="sliderController"
         >
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"
@@ -1695,7 +1614,7 @@ exports[`Minimap component should stop slider controller positioning when we mov
             />
           </svg>
           <svg
-            class="c6 c7"
+            class="c7 c8"
             fill="none"
             height="1em"
             viewBox="0 0 24 24"

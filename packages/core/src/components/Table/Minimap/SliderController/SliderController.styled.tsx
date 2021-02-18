@@ -4,11 +4,7 @@ import { css, styled } from '@medly-components/utils';
 const getStyleByState = (state: 'default' | 'hovered' | 'pressed') => css`
     ${SvgIcon} {
         * {
-            fill: ${({
-                theme: {
-                    table: { minimap }
-                }
-            }) => minimap.sliderController.color[state]};
+            fill: ${({ theme }) => theme.table.minimap.sliderController.color[state]};
         }
     }
 `;
@@ -16,13 +12,12 @@ const getStyleByState = (state: 'default' | 'hovered' | 'pressed') => css`
 export const SliderController = styled('div')<{ controllerWidth: number }>`
     width: ${({ controllerWidth }) => `${controllerWidth}px`};
     left: 0;
+    top: 0;
     cursor: move;
-    height: 4.6rem;
-    padding: 1.3rem 0;
+    height: 100%;
     position: absolute;
     display: flex;
-    top: 0;
-    z-index: 999;
+    align-items: center;
 
     ${getStyleByState('default')}
 

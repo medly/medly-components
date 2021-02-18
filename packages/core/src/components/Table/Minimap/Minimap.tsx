@@ -11,52 +11,43 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
             [mouseDown, setMouseDown] = useState(false),
             [oneMinimapToTableWidth, setOneMinimapToTableWidth] = useState(0) /* Table width to slider width ratio */,
             [oneTableToMinimapWidth, setOneTableToMinimapWidth] = useState(0) /* Slider width to table width ratio  */,
-            [sliderWidth] = useState(minimapWidth - controllerWidth - sliderContentPadding * 2),
             [containerOffset, setContainerOffset] = useState({ left: 0, bottom: 0 }),
             [isHorizontalScrollPresent, setIsHorizontalScrollPresent] = useState(false),
+            sliderWidth = minimapWidth - controllerWidth - sliderContentPadding * 2,
             sliderContent = useMemo(
-                () => (
-                    <SliderContentWrapper contentWidth={minimapWidth - sliderContentPadding * 2}>
-                        {new Array(5).fill(null).map((_, index) => (
-                            <SliderContent key={index} controllerWidth={controllerWidth} />
-                        ))}
-                    </SliderContentWrapper>
-                ),
-                [controllerWidth, minimapWidth, sliderContentPadding]
+                () => new Array(5).fill(null).map((_, index) => <SliderContent key={index} controllerWidth={controllerWidth} />),
+                [controllerWidth]
             );
 
         const positionMinimap = useCallback(() => {
-                const minimapLeftOffset = 170; /* Minimum left offset for minimap left positioning */
-                const minimumBottomOffset = 95; /* Minimum bottom offset for minimap bottom positioning */
-                return { left: tableRef.current && tableRef.current.clientWidth - minimapLeftOffset, bottom: minimumBottomOffset };
-            }, [tableRef.current]),
+                const minimapLeftOffset = 170 /* Minimum left offset for minimap left positioning */,
+                    minimumBottomOffset = 95; /* Minimum bottom offset for minimap bottom positioning */
+                return {
+                    left: tableRef.current ? tableRef.current.clientWidth - minimapLeftOffset : minimapLeftOffset,
+                    bottom: minimumBottomOffset
+                };
+            }, []),
             setMinimapDimensions = useCallback(() => {
-                const tableW = (tableRef.current && tableRef.current.scrollWidth - tableRef.current.offsetWidth) + 1;
+                const tableW = tableRef.current ? tableRef.current.scrollWidth - tableRef.current.offsetWidth + 1 : 0;
                 setOneMinimapToTableWidth(tableW / sliderWidth);
                 setOneTableToMinimapWidth(sliderWidth / tableW);
                 setContainerOffset(positionMinimap());
                 setIsHorizontalScrollPresent(tableRef.current && tableRef.current.scrollWidth > tableRef.current.offsetWidth);
-            }, [sliderWidth, tableRef.current]),
+            }, [sliderWidth]),
             onTableScroll = useCallback(
                 (e: React.UIEvent<HTMLDivElement>) => {
                     e.stopPropagation();
-                    if (mouseDown) return false;
-                    sliderControllerRef.current.style.left = `${tableRef.current.scrollLeft * oneTableToMinimapWidth}px`;
+                    if (!mouseDown) {
+                        sliderControllerRef.current.style.left = `${tableRef.current.scrollLeft * oneTableToMinimapWidth}px`;
+                    }
                 },
-                [sliderControllerRef.current, tableRef.current, oneTableToMinimapWidth, mouseDown]
-            ),
-            onWindowScroll = useCallback(
-                (e: any) => {
-                    e.stopPropagation();
-                    setContainerOffset(positionMinimap());
-                },
-                [positionMinimap]
+                [oneTableToMinimapWidth, mouseDown]
             ),
             positionSliderController = useCallback(
                 (e: any) => {
                     e.stopPropagation();
                     if (sliderRangeRef.current && tableRef.current && sliderControllerRef.current) {
-                        /* Identify the slider distance from from its wrapper and subtract slider controller width in-order to position the slider controller in center */
+                        /* Identify the slider distance from its wrapper and subtract slider controller width in-order to position the slider controller in center */
                         let clickOffset = Math.round(e.clientX - sliderRangeRef.current.getBoundingClientRect().left - controllerWidth / 2);
 
                         /*  If we drag the slider out of its  parent boundaries then set clickOffset to its nearest boundary */
@@ -67,22 +58,11 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
                         }
 
                         sliderControllerRef.current.style.left = `${clickOffset}px`;
-                        tableRef.current.scroll(clickOffset * oneMinimapToTableWidth, sliderRangeRef.current.offsetTop);
+                        tableRef.current.scrollLeft = clickOffset * oneMinimapToTableWidth;
                     }
                 },
-                [
-                    tableRef.current,
-                    sliderRangeRef.current,
-                    sliderControllerRef.current,
-                    controllerWidth,
-                    oneMinimapToTableWidth,
-                    sliderWidth
-                ]
+                [controllerWidth, oneMinimapToTableWidth, sliderWidth]
             ),
-            onSliderControllerMove = useCallback((e: any) => mouseDown && positionSliderController(e), [
-                mouseDown,
-                positionSliderController
-            ]),
             onSliderControllerMouseDown = useCallback(
                 (e: React.MouseEvent<HTMLDivElement>) => {
                     e.stopPropagation();
@@ -93,8 +73,8 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
             ),
             onSliderControllerReset = useCallback(() => {
                 setMouseDown(false);
-                window.removeEventListener('mousemove', onSliderControllerMove);
-            }, [onSliderControllerMove]);
+                window.removeEventListener('mousemove', positionSliderController);
+            }, [positionSliderController]);
 
         useEffect(() => {
             setMinimapDimensions();
@@ -109,24 +89,15 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
         useEffect(() => {
             const tableInstance = tableRef.current;
             tableInstance.addEventListener('scroll', onTableScroll);
-            return () => {
-                tableInstance.removeEventListener('scroll', onTableScroll);
-            };
+            return () => tableInstance.removeEventListener('scroll', onTableScroll);
         }, [onTableScroll]);
 
         useEffect(() => {
-            window.addEventListener('scroll', onWindowScroll);
-            return () => {
-                window.removeEventListener('scroll', onWindowScroll);
-            };
-        }, [onWindowScroll]);
-
-        useEffect(() => {
-            window.addEventListener('mousemove', onSliderControllerMove);
-            return () => {
-                window.removeEventListener('mousemove', onSliderControllerMove);
-            };
-        }, [onSliderControllerMove]);
+            if (mouseDown) {
+                window.addEventListener('mousemove', positionSliderController);
+                return () => window.removeEventListener('mousemove', positionSliderController);
+            }
+        }, [mouseDown, positionSliderController]);
 
         useEffect(() => {
             window.addEventListener('mouseup', onSliderControllerReset);
@@ -145,9 +116,11 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
                             ref={sliderRangeRef}
                             onMouseDown={onSliderControllerMouseDown}
                             rangeWidth={minimapWidth - sliderContentPadding * 2}
-                            leftOffset={sliderContentPadding}
+                            padding={sliderContentPadding}
                         >
-                            {sliderContent}
+                            <SliderContentWrapper contentWidth={minimapWidth - sliderContentPadding * 2}>
+                                {sliderContent}
+                            </SliderContentWrapper>
                             <SliderController
                                 id="sliderController"
                                 onMouseDown={onSliderControllerMouseDown}
