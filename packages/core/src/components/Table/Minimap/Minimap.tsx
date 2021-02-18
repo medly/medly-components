@@ -37,7 +37,7 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
             onTableScroll = useCallback(
                 (e: React.UIEvent<HTMLDivElement>) => {
                     e.stopPropagation();
-                    if (!mouseDown) {
+                    if (!mouseDown && sliderControllerRef.current) {
                         sliderControllerRef.current.style.left = `${tableRef.current.scrollLeft * oneTableToMinimapWidth}px`;
                     }
                 },
