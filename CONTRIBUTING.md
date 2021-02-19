@@ -6,9 +6,9 @@ This repo uses yarn workspaces, so you should install `yarn` as the package mana
 
 ## Project setup
 
-1.  Fork and clone the repo
-2.  Run `yarn` to install dependencies
-3.  Create a branch for your PR with `git checkout -b pr/your-branch-name`
+1. Fork and clone the repo
+2. Run `yarn` to install dependencies
+3. Create a branch for your PR with `git checkout -b pr/your-branch-name`
 
 > **Tip:** Keep your `master` branch pointing at the original repository and make pull requests from branches on your fork. To do this, run:
 >
@@ -30,11 +30,11 @@ Before committing any thing just run `yarn init:commitizen` once, so that next t
 
 After setting the project, run yarn to fetch all the dependencies. Then, you can run several commands:
 
--   `yarn storybook` to run storybook for local development
--   `yarn lint` to run both css & ts lint
--   `yarn watch` to continuously bundle the packages. This is helpful when you have linked any package with some local project.
--   `yarn build` to build the packages
--   `yarn test` to run tests and type check
+- `yarn storybook` to run storybook for local development
+- `yarn lint` to run both css & ts lint
+- `yarn watch` to continuously bundle the packages. This is helpful when you have linked any package with some local project.
+- `yarn build` to build the packages
+- `yarn test` to run tests and type check
 
 ## Unit tests
 
@@ -42,10 +42,10 @@ We are using [`react-testing-library`](https://testing-library.com/docs/react-te
 
 There are several test commands to help you run the tests:
 
--   `yarn test` to run tests and type check
--   `yarn test:update` to update snapshots
--   `yarn test:jest` is used to run jest with all the compatible jest CLI commands like `yarn test:jest Modal --watch`
--   `yarn test:watch` to watch all the tests
+- `yarn test` to run tests and type check
+- `yarn test:update` to update snapshots
+- `yarn test:jest` is used to run jest with all the compatible jest CLI commands like `yarn test:jest Modal --watch`
+- `yarn test:watch` to watch all the tests
 
 > **Tips:**
 >

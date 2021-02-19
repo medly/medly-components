@@ -7,21 +7,26 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![GitHub](https://img.shields.io/github/license/medly/medly-components)](https://github.com/medly/medly-components/blob/master/LICENSE)
 
-Themable react components with various configuration to match your need. You can checkout the storybook of the components [here](https://medly.github.io/medly-components).
+Themable react components with various configuration to match your need.
+
+## Documentation
+
+You can checkout the storybook of the components [here](https://medly.github.io/medly-components).
 
 ## Table of Contents
 
--   🚀[Getting Started](#getting-started)
--   📦[Packages](#packages)
-    -   🧩 [Core](#core)
-    -   ℹ [Icons](#icons)
-    -   🌀 [Loaders](#loaders)
-    -   ⧉ [Layout](#layout)
-    -   📝 [Forms](#forms)
-    -   🏞 [Theme](#theme)
-    -   🛠 [Utils](#utils)
--   📜[Built With](#built-with)
--   📝[Npm Scripts](#npm-scripts)
+- 🚀 [Getting Started](#getting-started)
+- 📦 [Packages](#packages)
+  - 🧩 [Core](#core)
+  - ℹ [Icons](#icons)
+  - 🌀 [Loaders](#loaders)
+  - ⧉ [Layout](#layout)
+  - 📝 [Forms](#forms)
+  - 🏞 [Theme](#theme)
+  - 🛠 [Utils](#utils)
+- 📜 [Built With](#built-with)
+- 👨‍💻 [Contributing](#CONTRIBUTING)
+- 📝 [Npm Scripts](#npm-scripts)
 
 ## Getting Started
 
@@ -43,11 +48,11 @@ import * as ReactDOM from 'react-dom';
 import App from './App';
 
 ReactDOM.render(
-    <ThemeProvider theme={defaultTheme}>
-        <CssBaseline />
-        <App />
-    </ThemeProvider>,
-    document.getElementById('root')
+ <ThemeProvider theme={defaultTheme}>
+  <CssBaseline />
+  <App />
+ </ThemeProvider>,
+ document.getElementById('root')
 );
 ```
 
@@ -96,6 +101,10 @@ Themes lets you define how a component should be styled across website. This can
 
 Utils package consists of most commonly used functionalities or components. Eg [String Helper](https://github.com/medly/medly-components/tree/master/packages/utils/src/stringHelpers.ts) has functions to convert a string to camelCase, case insensitive string comparison etc
 
+## Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/medly/medly-components/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
 ## Built With
 
 🔥 [react](https://github.com/facebook/react)
@@ -112,15 +121,15 @@ Utils package consists of most commonly used functionalities or components. Eg [
 
 ## npm scripts
 
--   `yarn build` to build components
--   `yarn commit` to commit with conventional-commit approach
--   `yarn lint:css` to run the css lint
--   `yarn lint:ts` to run the ts lint
--   `yarn lint` to run both css & ts lint
--   `yarn test` to run tests and type check
--   `yarn test:update` to update snapshots
--   `yarn test:watch` to watch tests
--   `yarn type-check` to run tsc to check types
--   `yarn test:jest` to run test only
--   `yarn storybook` to run storybook for live reloading your components
--   `yarn release` to publish the latest version to npm
+- `yarn build` to build components
+- `yarn commit` to commit with conventional-commit approach
+- `yarn lint:css` to run the css lint
+- `yarn lint:ts` to run the ts lint
+- `yarn lint` to run both css & ts lint
+- `yarn test` to run tests and type check
+- `yarn test:update` to update snapshots
+- `yarn test:watch` to watch tests
+- `yarn type-check` to run tsc to check types
+- `yarn test:jest` to run test only
+- `yarn storybook` to run storybook for live reloading your components
+- `yarn release` to publish the latest version to npm
