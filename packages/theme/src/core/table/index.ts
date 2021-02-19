@@ -91,7 +91,7 @@ const table: TableTheme = {
             hovered: '1'
         },
         sliderController: {
-            color: {
+            borderColor: {
                 default: colors.blue[500],
                 hovered: colors.blue[500],
                 pressed: colors.blue[500]

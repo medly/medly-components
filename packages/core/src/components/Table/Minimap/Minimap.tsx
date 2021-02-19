@@ -1,7 +1,13 @@
 import { WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Minimap as StyledMinimap, MinimapContainer, SliderContent, SliderContentWrapper, SliderRange } from './Minimap.styled';
-import SliderController from './SliderController';
+import {
+    Minimap as StyledMinimap,
+    MinimapContainer,
+    SliderContent,
+    SliderContentWrapper,
+    SliderController,
+    SliderRange
+} from './Minimap.styled';
 import { Props } from './types';
 
 export const Minimap: FC<Props> & WithStyle = React.memo(
@@ -15,7 +21,7 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
             [isHorizontalScrollPresent, setIsHorizontalScrollPresent] = useState(false),
             sliderWidth = minimapWidth - controllerWidth - sliderContentPadding * 2,
             sliderContent = useMemo(
-                () => new Array(5).fill(null).map((_, index) => <SliderContent key={index} controllerWidth={controllerWidth} />),
+                () => new Array(8).fill(null).map((_, index) => <SliderContent key={index} controllerWidth={controllerWidth} />),
                 [controllerWidth]
             );
 
@@ -138,7 +144,7 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
 Minimap.Style = MinimapContainer;
 
 Minimap.defaultProps = {
-    minimapWidth: 130,
-    controllerWidth: 30,
+    minimapWidth: 126,
+    controllerWidth: 40,
     sliderContentPadding: 8
 };

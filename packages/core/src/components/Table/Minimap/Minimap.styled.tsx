@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import { css, styled } from '@medly-components/utils';
 
 export const MinimapContainer = styled('tr')<{ sliderWidth: number; offset: { left: number; bottom: number } }>`
     position: sticky;
@@ -44,6 +44,32 @@ export const SliderContent = styled('div')<{ controllerWidth: number }>`
     width: ${({ controllerWidth }) => `${controllerWidth}px`};
     background: ${({ theme }) => theme.table.minimap.sliderContent.bgColor};
     & + & {
-        margin-left: 0.5rem;
+        margin-left: 0.234rem;
+    }
+`;
+
+/* slider controller styles */
+const getBorderStyleByState = (state: 'default' | 'hovered' | 'pressed') => css`
+    border: 2px solid ${({ theme }) => theme.table.minimap.sliderController.borderColor[state]};
+`;
+
+export const SliderController = styled('div')<{ controllerWidth: number }>`
+    width: ${({ controllerWidth }) => `${controllerWidth}px`};
+    left: 0;
+    top: 0;
+    cursor: move;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    ${getBorderStyleByState('default')}
+
+    :hover {
+        ${getBorderStyleByState('hovered')}
+    }
+
+    :active {
+        ${getBorderStyleByState('pressed')}
     }
 `;

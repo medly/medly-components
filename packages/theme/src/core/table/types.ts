@@ -108,7 +108,7 @@ export interface TableTheme {
             hovered: string;
         };
         sliderController: {
-            color: {
+            borderColor: {
                 default: string;
                 hovered: string;
                 pressed: string;

@@ -41,7 +41,7 @@ describe('Minimap component', () => {
         const sliderController = container.querySelector('#sliderController');
         scrollCallback({ stopPropagation: stopPropagationMock });
         expect(stopPropagationMock).toHaveBeenCalled();
-        expect(sliderController).toHaveStyle('left: 0.8316831683168316px');
+        expect(sliderController).toHaveStyle('left: 0.693069306930693px');
         expect(container).toMatchSnapshot();
     });
 
@@ -96,7 +96,7 @@ describe('Minimap component', () => {
         const sliderController = container.querySelector('#sliderController');
         fireEvent.mouseDown(sliderController);
         fireEvent.mouseMove(sliderController, { clientX: 200 });
-        expect(sliderController).toHaveStyle('left: 84px');
+        expect(sliderController).toHaveStyle('left: 70px');
         expect(container).toMatchSnapshot();
     });
 
@@ -105,7 +105,7 @@ describe('Minimap component', () => {
         const sliderController = container.querySelector('#sliderController');
         fireEvent.mouseDown(sliderController);
         fireEvent.mouseMove(sliderController, { clientX: 40 });
-        expect(sliderController).toHaveStyle('left: 25px');
+        expect(sliderController).toHaveStyle('left: 20px');
         expect(container).toMatchSnapshot();
     });
 });
