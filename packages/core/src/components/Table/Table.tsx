@@ -150,7 +150,8 @@ Table.defaultProps = {
     withActionBar: false,
     withPagination: false,
     totalItems: 0,
-    itemsPerPage: 20
+    itemsPerPage: 20,
+    withMinimap: false
 };
 
 Table.displayName = 'Table';

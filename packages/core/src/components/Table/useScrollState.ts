@@ -18,7 +18,7 @@ export const useScrollState = (): Result => {
     });
 
     const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
-        e.stopPropagation();
+        // e.stopPropagation();
         const element = e.target as HTMLElement,
             { scrollTop, scrollLeft, clientHeight, scrollHeight } = element,
             isScrolledToTop = scrollTop === 0,

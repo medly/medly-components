@@ -100,4 +100,25 @@ export interface TableTheme {
             borderColor: string;
         };
     };
+    minimap?: {
+        bgColor: string;
+        borderRadius: string;
+        opacity: {
+            default: string;
+            hovered: string;
+        };
+        sliderController: {
+            borderColor: {
+                default: string;
+                hovered: string;
+                pressed: string;
+            };
+        };
+        sliderContent: {
+            bgColor: string;
+            color: {
+                default: string;
+            };
+        };
+    };
 }

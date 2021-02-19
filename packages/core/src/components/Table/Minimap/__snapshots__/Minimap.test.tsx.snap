@@ -1,0 +1,1140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Minimap component should align slider controller with proper left offset when user scrolls over the table 1`] = `
+.c0 {
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  z-index: 999;
+  left: NaNpx;
+  bottom: 95px;
+  width: 126px;
+  opacity: .4;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0:hover {
+  opacity: 1;
+}
+
+.c1 {
+  width: 100%;
+  height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
+  border-radius: .4rem;
+}
+
+.c2 {
+  cursor: move;
+  position: absolute;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
+  width: 110px;
+}
+
+.c3 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 110px;
+}
+
+.c5 {
+  height: 100%;
+  width: 40px;
+  background: #dfe4e9;
+}
+
+.c5 + .c4 {
+  margin-left: 0.234rem;
+}
+
+.c6 {
+  width: 40px;
+  left: 0;
+  top: 0;
+  cursor: move;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #126AFA;
+}
+
+.c6:hover {
+  border: 2px solid #126AFA;
+}
+
+.c6:active {
+  border: 2px solid #126AFA;
+}
+
+<div>
+  <tr
+    class="c0"
+    offset="[object Object]"
+  >
+    <td
+      class="c1"
+      id="minimap"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+        </div>
+        <div
+          class="c6"
+          id="sliderController"
+          style="left: 0.693069306930693px;"
+        />
+      </div>
+    </td>
+  </tr>
+</div>
+`;
+
+exports[`Minimap component should not align slider controller when user performs mousedown on slider controller and performs mousemove on window 1`] = `
+.c0 {
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  z-index: 999;
+  left: NaNpx;
+  bottom: 95px;
+  width: 126px;
+  opacity: .4;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0:hover {
+  opacity: 1;
+}
+
+.c1 {
+  width: 100%;
+  height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
+  border-radius: .4rem;
+}
+
+.c2 {
+  cursor: move;
+  position: absolute;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
+  width: 110px;
+}
+
+.c3 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 110px;
+}
+
+.c5 {
+  height: 100%;
+  width: 40px;
+  background: #dfe4e9;
+}
+
+.c5 + .c4 {
+  margin-left: 0.234rem;
+}
+
+.c6 {
+  width: 40px;
+  left: 0;
+  top: 0;
+  cursor: move;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #126AFA;
+}
+
+.c6:hover {
+  border: 2px solid #126AFA;
+}
+
+.c6:active {
+  border: 2px solid #126AFA;
+}
+
+<div>
+  <tr
+    class="c0"
+    offset="[object Object]"
+  >
+    <td
+      class="c1"
+      id="minimap"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+        </div>
+        <div
+          class="c6"
+          id="sliderController"
+          style="left: 0px;"
+        />
+      </div>
+    </td>
+  </tr>
+</div>
+`;
+
+exports[`Minimap component should position minimap at the right hand side bottom of the table on window resize 1`] = `
+.c0 {
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  z-index: 999;
+  left: NaNpx;
+  bottom: 95px;
+  width: 126px;
+  opacity: .4;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0:hover {
+  opacity: 1;
+}
+
+.c1 {
+  width: 100%;
+  height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
+  border-radius: .4rem;
+}
+
+.c2 {
+  cursor: move;
+  position: absolute;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
+  width: 110px;
+}
+
+.c3 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 110px;
+}
+
+.c5 {
+  height: 100%;
+  width: 40px;
+  background: #dfe4e9;
+}
+
+.c5 + .c4 {
+  margin-left: 0.234rem;
+}
+
+.c6 {
+  width: 40px;
+  left: 0;
+  top: 0;
+  cursor: move;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #126AFA;
+}
+
+.c6:hover {
+  border: 2px solid #126AFA;
+}
+
+.c6:active {
+  border: 2px solid #126AFA;
+}
+
+<div>
+  <tr
+    class="c0"
+    offset="[object Object]"
+  >
+    <td
+      class="c1"
+      id="minimap"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+        </div>
+        <div
+          class="c6"
+          id="sliderController"
+        />
+      </div>
+    </td>
+  </tr>
+</div>
+`;
+
+exports[`Minimap component should position minimap at the right hand side bottom of the table on window scroll 1`] = `
+.c0 {
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  z-index: 999;
+  left: NaNpx;
+  bottom: 95px;
+  width: 126px;
+  opacity: .4;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0:hover {
+  opacity: 1;
+}
+
+.c1 {
+  width: 100%;
+  height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
+  border-radius: .4rem;
+}
+
+.c2 {
+  cursor: move;
+  position: absolute;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
+  width: 110px;
+}
+
+.c3 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 110px;
+}
+
+.c5 {
+  height: 100%;
+  width: 40px;
+  background: #dfe4e9;
+}
+
+.c5 + .c4 {
+  margin-left: 0.234rem;
+}
+
+.c6 {
+  width: 40px;
+  left: 0;
+  top: 0;
+  cursor: move;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #126AFA;
+}
+
+.c6:hover {
+  border: 2px solid #126AFA;
+}
+
+.c6:active {
+  border: 2px solid #126AFA;
+}
+
+<div>
+  <tr
+    class="c0"
+    offset="[object Object]"
+  >
+    <td
+      class="c1"
+      id="minimap"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+        </div>
+        <div
+          class="c6"
+          id="sliderController"
+        />
+      </div>
+    </td>
+  </tr>
+</div>
+`;
+
+exports[`Minimap component should position slider controller at the correct position when dragged inside slider content 1`] = `
+.c0 {
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  z-index: 999;
+  left: NaNpx;
+  bottom: 95px;
+  width: 126px;
+  opacity: .4;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0:hover {
+  opacity: 1;
+}
+
+.c1 {
+  width: 100%;
+  height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
+  border-radius: .4rem;
+}
+
+.c2 {
+  cursor: move;
+  position: absolute;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
+  width: 110px;
+}
+
+.c3 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 110px;
+}
+
+.c5 {
+  height: 100%;
+  width: 40px;
+  background: #dfe4e9;
+}
+
+.c5 + .c4 {
+  margin-left: 0.234rem;
+}
+
+.c6 {
+  width: 40px;
+  left: 0;
+  top: 0;
+  cursor: move;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #126AFA;
+}
+
+.c6:hover {
+  border: 2px solid #126AFA;
+}
+
+.c6:active {
+  border: 2px solid #126AFA;
+}
+
+<div>
+  <tr
+    class="c0"
+    offset="[object Object]"
+  >
+    <td
+      class="c1"
+      id="minimap"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+        </div>
+        <div
+          class="c6"
+          id="sliderController"
+          style="left: 20px;"
+        />
+      </div>
+    </td>
+  </tr>
+</div>
+`;
+
+exports[`Minimap component should position slider controller at the extreme end of the slider content when dragged out of it 1`] = `
+.c0 {
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  z-index: 999;
+  left: NaNpx;
+  bottom: 95px;
+  width: 126px;
+  opacity: .4;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0:hover {
+  opacity: 1;
+}
+
+.c1 {
+  width: 100%;
+  height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
+  border-radius: .4rem;
+}
+
+.c2 {
+  cursor: move;
+  position: absolute;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
+  width: 110px;
+}
+
+.c3 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 110px;
+}
+
+.c5 {
+  height: 100%;
+  width: 40px;
+  background: #dfe4e9;
+}
+
+.c5 + .c4 {
+  margin-left: 0.234rem;
+}
+
+.c6 {
+  width: 40px;
+  left: 0;
+  top: 0;
+  cursor: move;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #126AFA;
+}
+
+.c6:hover {
+  border: 2px solid #126AFA;
+}
+
+.c6:active {
+  border: 2px solid #126AFA;
+}
+
+<div>
+  <tr
+    class="c0"
+    offset="[object Object]"
+  >
+    <td
+      class="c1"
+      id="minimap"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+        </div>
+        <div
+          class="c6"
+          id="sliderController"
+          style="left: 70px;"
+        />
+      </div>
+    </td>
+  </tr>
+</div>
+`;
+
+exports[`Minimap component should position slider controller when performed drag operation on it 1`] = `
+.c0 {
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  z-index: 999;
+  left: NaNpx;
+  bottom: 95px;
+  width: 126px;
+  opacity: .4;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0:hover {
+  opacity: 1;
+}
+
+.c1 {
+  width: 100%;
+  height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
+  border-radius: .4rem;
+}
+
+.c2 {
+  cursor: move;
+  position: absolute;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
+  width: 110px;
+}
+
+.c3 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 110px;
+}
+
+.c5 {
+  height: 100%;
+  width: 40px;
+  background: #dfe4e9;
+}
+
+.c5 + .c4 {
+  margin-left: 0.234rem;
+}
+
+.c6 {
+  width: 40px;
+  left: 0;
+  top: 0;
+  cursor: move;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #126AFA;
+}
+
+.c6:hover {
+  border: 2px solid #126AFA;
+}
+
+.c6:active {
+  border: 2px solid #126AFA;
+}
+
+<div>
+  <tr
+    class="c0"
+    offset="[object Object]"
+  >
+    <td
+      class="c1"
+      id="minimap"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+        </div>
+        <div
+          class="c6"
+          id="sliderController"
+          style="left: 0px;"
+        />
+      </div>
+    </td>
+  </tr>
+</div>
+`;
+
+exports[`Minimap component should render properly 1`] = `
+.c0 {
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  z-index: 999;
+  left: NaNpx;
+  bottom: 95px;
+  width: 126px;
+  opacity: .4;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0:hover {
+  opacity: 1;
+}
+
+.c1 {
+  width: 100%;
+  height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
+  border-radius: .4rem;
+}
+
+.c2 {
+  cursor: move;
+  position: absolute;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
+  width: 110px;
+}
+
+.c3 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 110px;
+}
+
+.c5 {
+  height: 100%;
+  width: 40px;
+  background: #dfe4e9;
+}
+
+.c5 + .c4 {
+  margin-left: 0.234rem;
+}
+
+.c6 {
+  width: 40px;
+  left: 0;
+  top: 0;
+  cursor: move;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #126AFA;
+}
+
+.c6:hover {
+  border: 2px solid #126AFA;
+}
+
+.c6:active {
+  border: 2px solid #126AFA;
+}
+
+<div>
+  <tr
+    class="c0"
+    offset="[object Object]"
+  >
+    <td
+      class="c1"
+      id="minimap"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+        </div>
+        <div
+          class="c6"
+          id="sliderController"
+        />
+      </div>
+    </td>
+  </tr>
+</div>
+`;
+
+exports[`Minimap component should stop slider controller positioning when we move cursor out of the window 1`] = `
+.c0 {
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  z-index: 999;
+  left: NaNpx;
+  bottom: 95px;
+  width: 126px;
+  opacity: .4;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.c0:hover {
+  opacity: 1;
+}
+
+.c1 {
+  width: 100%;
+  height: 4.6rem;
+  display: block;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
+  border-radius: .4rem;
+}
+
+.c2 {
+  cursor: move;
+  position: absolute;
+  height: calc(100% - 1.6rem);
+  margin: 0.8rem 8px;
+  width: 110px;
+}
+
+.c3 {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 110px;
+}
+
+.c5 {
+  height: 100%;
+  width: 40px;
+  background: #dfe4e9;
+}
+
+.c5 + .c4 {
+  margin-left: 0.234rem;
+}
+
+.c6 {
+  width: 40px;
+  left: 0;
+  top: 0;
+  cursor: move;
+  height: 100%;
+  position: absolute;
+  border: 2px solid #126AFA;
+}
+
+.c6:hover {
+  border: 2px solid #126AFA;
+}
+
+.c6:active {
+  border: 2px solid #126AFA;
+}
+
+<div>
+  <tr
+    class="c0"
+    offset="[object Object]"
+  >
+    <td
+      class="c1"
+      id="minimap"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+          <div
+            class="c4 c5"
+          />
+        </div>
+        <div
+          class="c6"
+          id="sliderController"
+        />
+      </div>
+    </td>
+  </tr>
+</div>
+`;
