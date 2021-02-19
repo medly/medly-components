@@ -6,8 +6,9 @@
             "exact": true
         },
         "publish": {
+            "yes": true,
             "conventionalCommits": true,
-            "yes": true
+            "message": "chore(release): publish"
         }
     },
     "npmClient": "yarn",
