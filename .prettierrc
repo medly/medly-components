@@ -5,5 +5,13 @@
     "trailingComma": "none",
     "singleQuote": true,
     "tabWidth": 4,
-    "arrowParens": "avoid"
+    "arrowParens": "avoid",
+    "overrides": [
+        {
+            "files": "*.md",
+            "options": {
+                "tabWidth": 1
+            }
+        }
+    ]
 }
