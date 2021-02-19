@@ -65,14 +65,6 @@ exports[`Minimap component should align slider controller with proper left offse
   cursor: move;
   height: 100%;
   position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   border: 2px solid #126AFA;
 }
 
@@ -200,14 +192,6 @@ exports[`Minimap component should not align slider controller when user performs
   cursor: move;
   height: 100%;
   position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   border: 2px solid #126AFA;
 }
 
@@ -335,14 +319,6 @@ exports[`Minimap component should position minimap at the right hand side bottom
   cursor: move;
   height: 100%;
   position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   border: 2px solid #126AFA;
 }
 
@@ -469,14 +445,6 @@ exports[`Minimap component should position minimap at the right hand side bottom
   cursor: move;
   height: 100%;
   position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   border: 2px solid #126AFA;
 }
 
@@ -603,14 +571,6 @@ exports[`Minimap component should position slider controller at the correct posi
   cursor: move;
   height: 100%;
   position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   border: 2px solid #126AFA;
 }
 
@@ -738,14 +698,6 @@ exports[`Minimap component should position slider controller at the extreme end 
   cursor: move;
   height: 100%;
   position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   border: 2px solid #126AFA;
 }
 
@@ -873,14 +825,6 @@ exports[`Minimap component should position slider controller when performed drag
   cursor: move;
   height: 100%;
   position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   border: 2px solid #126AFA;
 }
 
@@ -1008,14 +952,6 @@ exports[`Minimap component should render properly 1`] = `
   cursor: move;
   height: 100%;
   position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   border: 2px solid #126AFA;
 }
 
@@ -1142,14 +1078,6 @@ exports[`Minimap component should stop slider controller positioning when we mov
   cursor: move;
   height: 100%;
   position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   border: 2px solid #126AFA;
 }
 

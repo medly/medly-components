@@ -60,8 +60,6 @@ export const SliderController = styled('div')<{ controllerWidth: number }>`
     cursor: move;
     height: 100%;
     position: absolute;
-    display: flex;
-    align-items: center;
 
     ${getBorderStyleByState('default')}
 
