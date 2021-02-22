@@ -59,6 +59,11 @@
         "type": "git",
         "url": "git://github.com/medly/medly-components.git"
     },
+    "storybook-deployer": {
+        "gitUsername": "gmukul01",
+        "gitEmail": "mukulbansal01@gmail.com",
+        "commitMessage": "docs: Deploy latest documentation"
+    },
     "keywords": [],
     "author": "Mukul Bansal",
     "license": "ISC",
