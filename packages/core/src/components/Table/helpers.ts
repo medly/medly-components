@@ -1,11 +1,17 @@
 import { rowActionsColumnConfig } from './constants';
-import { TableColumnConfig, TableProps } from './types';
+import { MaxColumnSizes, TableColumnConfig, TableProps } from './types';
 
-export const addSizeToColumnConfig = (columnConfigs: TableColumnConfig[]): TableColumnConfig[] => {
+export const addSizeToColumnConfig = (
+    columnConfigs: TableColumnConfig[],
+    maxColumnSizes: MaxColumnSizes,
+    parentFieldKey = ''
+): TableColumnConfig[] => {
     return columnConfigs.map(config => {
+        const fieldKey = parentFieldKey ? `${parentFieldKey}.${config.field}` : config.field;
+        const maxSize = (config.fitContent && maxColumnSizes && maxColumnSizes[fieldKey]) || 100;
         return config.children
-            ? { ...config, children: addSizeToColumnConfig(config.children) }
-            : { ...config, size: config.hidden ? `minmax(0px, 0px)` : `minmax(100px, ${config.fraction || 1}fr)` };
+            ? { ...config, children: addSizeToColumnConfig(config.children, maxColumnSizes, fieldKey) }
+            : { ...config, size: config.hidden ? `minmax(0px, 0px)` : `minmax(${maxSize}px, ${config.fraction || 1}fr)` };
     });
 };
 
@@ -14,7 +20,8 @@ export const getUpdatedColumns = (
     isRowSelectable: boolean,
     isRowExpandable: boolean,
     size: TableProps['size'],
-    isGroupedTable: boolean
+    isGroupedTable: boolean,
+    maxColumnSizes: MaxColumnSizes
 ): TableColumnConfig[] => [
     ...(isGroupedTable
         ? [{ ...rowActionsColumnConfig, field: 'group-expansion', size: `minmax(${size === 'L' ? '5.5rem' : '4.8rem'}, 0.1fr)` }]
@@ -30,7 +37,7 @@ export const getUpdatedColumns = (
               }
           ]
         : []),
-    ...addSizeToColumnConfig(columnConfigs)
+    ...addSizeToColumnConfig(columnConfigs, maxColumnSizes)
 ];
 
 const getCumulativeTemplate = (configs: TableColumnConfig[]): string => {

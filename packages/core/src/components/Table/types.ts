@@ -8,6 +8,7 @@ export type ObjectType = {
 };
 export type Data = ObjectType[];
 export type RowHoverActionsType = React.FC<{ rowData?: ObjectType; rowId?: any }>;
+export type MaxColumnSizes = { [k: string]: number };
 
 export type TableState = { activePage?: number; sortField?: string; sortOrder?: SortOrder };
 

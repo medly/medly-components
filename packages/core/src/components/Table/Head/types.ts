@@ -1,4 +1,4 @@
-import { TableColumnConfig } from '../types';
+import { MaxColumnSizes, TableColumnConfig } from '../types';
 
 export interface Props {
     setColumns: React.Dispatch<React.SetStateAction<TableColumnConfig[]>>;
@@ -6,7 +6,7 @@ export interface Props {
     isAnyRowSelected?: boolean;
     isSelectAllDisable?: boolean;
     onSelectAllClick?: (id: number) => void;
-    maxColumnSizes: { [k: string]: number };
+    maxColumnSizes: MaxColumnSizes;
     showShadowAtBottom: boolean;
     showShadowAfterFrozenElement?: boolean;
 }
