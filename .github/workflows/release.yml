@@ -25,13 +25,12 @@ jobs:
             - run: |
                   git config --global user.name 'gmukul01'
                   git config --global user.email 'mukulbansal01@gmail.com'
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Publish packages
             - run: yarn release
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
             - name: Deploy storybook
             - run: yarn storybook:deploy
