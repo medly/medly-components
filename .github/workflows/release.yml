@@ -5,17 +5,35 @@ on:
         branches:
             - master
 jobs:
-    build:
+    release:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout repo
             - uses: actions/checkout@v2
+
+            - name: Setup Node.js
             - uses: actions/setup-node@v2
               with:
                   node-version: '14.x'
                   registry-url: 'https://registry.npmjs.org'
                   scope: '@medly-components'
-            - run: yarn
+
+            - name: Install dependencies
+              run: yarn
+
+            - name: Add github config variables
+            - run: |
+                  git config --global user.name 'gmukul01'
+                  git config --global user.email 'mukulbansal01@gmail.com'
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Publish packages
             - run: yarn release
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+            - name: Deploy storybook
+            - run: yarn storybook:deploy
+              env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
