@@ -1,18 +1,21 @@
 name: Release
 
 on:
-    push:
+    pull_request:
         branches:
             - master
+        types: [closed]
+
 jobs:
     release:
+        if: github.event.pull_request.merged == true
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repo
               uses: actions/checkout@v2
               with:
-                token: ${{ secrets.GITHUB_TOKEN }}
-                
+                  token: ${{ secrets.ADMIN_TOKEN }}
+
             - name: Configure CI Git User
               run: |
                   git config --global user.name 'gmukul01'
@@ -35,5 +38,3 @@ jobs:
 
             - name: Deploy storybook
               run: yarn storybook:deploy
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
