@@ -65,7 +65,7 @@ const Head: React.FC<Props> = React.memo(props => {
         ),
         headCell = useCallback(
             (configs: TableColumnConfig[], field = '') => {
-                let applySeparator = false; /* flag to show left separator for every every non-hidden GroupCell + GroupCell, GroupCell + HeadCell */
+                let applySeparator = false; /* flag to show left separator for every non-hidden GroupCell + GroupCell, GroupCell + HeadCell */
 
                 return configs.map(config => {
                     const fieldName = field ? `${field}.${config.field}` : config.field;
