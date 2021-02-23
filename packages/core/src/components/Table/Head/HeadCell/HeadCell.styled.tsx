@@ -49,6 +49,10 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
         }
     }
 
+    &::before {
+        ${props => props.applyLeftSeparator && getBorder('left')}
+    }
+
     ${Checkbox.Style} {
         padding: 0;
     }

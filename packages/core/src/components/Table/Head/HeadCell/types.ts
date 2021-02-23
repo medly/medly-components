@@ -11,6 +11,7 @@ export type HeadCellStyledProps = {
     isRowActionCell?: boolean;
     isRowExpandable?: boolean;
     tableSize?: TableProps['size'];
+    applyLeftSeparator?: boolean;
 };
 
 export type HeadCellProps = HeadCellStyledProps & {
@@ -28,4 +29,5 @@ export type HeadCellProps = HeadCellStyledProps & {
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
     hiddenDivRef?: React.MutableRefObject<any>;
     addColumnMaxSize?: (field: string, value: number) => void;
+    applyLeftSeparator?: boolean;
 };

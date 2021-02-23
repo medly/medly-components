@@ -64,49 +64,64 @@ const Head: React.FC<Props> = React.memo(props => {
             [isLoading, isAnyRowSelected, areAllRowsSelected, isSelectAllDisable, handleSelectAllClick]
         ),
         headCell = useCallback(
-            (configs: TableColumnConfig[], field = '') =>
-                configs.map(config => {
+            (configs: TableColumnConfig[], field = '') => {
+                let applySeparator = false; /* flag to show left separator for every every non-hidden GroupCell + GroupCell, GroupCell + HeadCell */
+
+                return configs.map(config => {
                     const fieldName = field ? `${field}.${config.field}` : config.field;
-                    return config.children ? (
-                        <GroupCell
-                            as={field ? 'div' : 'th'}
-                            key={config.field}
-                            hidden={config.hidden}
-                            gridTemplateColumns={getGridTemplateColumns(config.children)}
-                        >
-                            <GroupCellTitle textVariant="h5" textWeight="Strong" uppercase>
-                                {config.title}
-                            </GroupCellTitle>
-                            {headCell(config.children, fieldName)}
-                        </GroupCell>
-                    ) : (
-                        <HeadCell
-                            as={field ? 'div' : 'th'}
-                            key={fieldName}
-                            field={fieldName}
-                            isLoading={isLoading}
-                            fitContent={config.fitContent}
-                            columnMaxSize={maxColumnSizes[fieldName]}
-                            sortField={sortField}
-                            align={config.align}
-                            frozen={config.frozen}
-                            hidden={config.hidden}
-                            sortable={config.sortable}
-                            defaultSortOrder={defaultSortOrder}
-                            onSortChange={handleSortChange}
-                            onWidthChange={handleWidthChange}
-                            isRowExpandable={isRowExpandable}
-                            tableSize={tableSize}
-                            isGroupedTable={isGroupedTable}
-                            hiddenDivRef={hiddenDivRef}
-                            addColumnMaxSize={addColumnMaxSize}
-                            isRowActionCell={config.field === 'row-actions'}
-                            showShadowAtRight={config.field === 'row-actions' && showShadowAfterFrozenElement}
-                        >
-                            {config.field === 'row-actions' && isRowSelectable ? selectAllCheckBox : config.title}
-                        </HeadCell>
-                    );
-                }),
+                    if (config.children) {
+                        applySeparator = true;
+                        return (
+                            <GroupCell
+                                as={field ? 'div' : 'th'}
+                                key={config.field}
+                                hidden={config.hidden}
+                                applyLeftSeparator={applySeparator}
+                                gridTemplateColumns={getGridTemplateColumns(config.children)}
+                            >
+                                <GroupCellTitle textVariant="h5" textWeight="Strong" uppercase>
+                                    {config.title}
+                                </GroupCellTitle>
+                                {headCell(config.children, fieldName)}
+                            </GroupCell>
+                        );
+                    } else {
+                        let shouldApplySeparator = false;
+                        if (applySeparator && !config.hidden) {
+                            shouldApplySeparator = true;
+                            applySeparator = false;
+                        }
+                        return (
+                            <HeadCell
+                                as={field ? 'div' : 'th'}
+                                applyLeftSeparator={shouldApplySeparator}
+                                key={fieldName}
+                                field={fieldName}
+                                isLoading={isLoading}
+                                fitContent={config.fitContent}
+                                columnMaxSize={maxColumnSizes[fieldName]}
+                                sortField={sortField}
+                                align={config.align}
+                                frozen={config.frozen}
+                                hidden={config.hidden}
+                                sortable={config.sortable}
+                                defaultSortOrder={defaultSortOrder}
+                                onSortChange={handleSortChange}
+                                onWidthChange={handleWidthChange}
+                                isRowExpandable={isRowExpandable}
+                                tableSize={tableSize}
+                                isGroupedTable={isGroupedTable}
+                                hiddenDivRef={hiddenDivRef}
+                                addColumnMaxSize={addColumnMaxSize}
+                                isRowActionCell={config.field === 'row-actions'}
+                                showShadowAtRight={config.field === 'row-actions' && showShadowAfterFrozenElement}
+                            >
+                                {config.field === 'row-actions' && isRowSelectable ? selectAllCheckBox : config.title}
+                            </HeadCell>
+                        );
+                    }
+                });
+            },
             [
                 tableSize,
                 isRowExpandable,
