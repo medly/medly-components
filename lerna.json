@@ -1,6 +1,7 @@
 {
     "access": "public",
     "allowBranch": ["master", "feature/*"],
+    "ignoreChanges": ["**/*.md", "**/*.stories.*", "**/*.test.*"],
     "command": {
         "version": {
             "exact": true
