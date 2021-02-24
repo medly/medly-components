@@ -5,4 +5,5 @@ export interface Props extends Omit<HTMLProps<HTMLTableRowElement>, 'ref' | 'as'
     minimapWidth?: number /* Pixels */;
     controllerWidth?: number /* Pixels */;
     sliderContentPadding?: number /* Pixels */;
+    minimapDimensionDeps?: Array<any> /* Dependencies on which table dimension calculations relies */;
 }

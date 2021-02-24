@@ -4,11 +4,10 @@ exports[`Minimap component should align slider controller with proper left offse
 .c0 {
   position: -webkit-sticky;
   position: sticky;
-  display: block;
+  display: inline;
   z-index: 999;
-  left: NaNpx;
+  left: 30px;
   bottom: 95px;
-  width: 126px;
   opacity: .4;
   -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
@@ -19,10 +18,10 @@ exports[`Minimap component should align slider controller with proper left offse
 }
 
 .c1 {
-  width: 100%;
   height: 4.6rem;
   display: block;
   position: absolute;
+  width: 126px;
   background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
   border-radius: .4rem;
@@ -30,6 +29,8 @@ exports[`Minimap component should align slider controller with proper left offse
 
 .c2 {
   cursor: move;
+  left: 0;
+  top: 0;
   position: absolute;
   height: calc(100% - 1.6rem);
   margin: 0.8rem 8px;
@@ -119,7 +120,7 @@ exports[`Minimap component should align slider controller with proper left offse
         <div
           class="c6"
           id="sliderController"
-          style="left: 0.693069306930693px;"
+          style="left: 0.7px;"
         />
       </div>
     </td>
@@ -131,11 +132,10 @@ exports[`Minimap component should not align slider controller when user performs
 .c0 {
   position: -webkit-sticky;
   position: sticky;
-  display: block;
+  display: inline;
   z-index: 999;
-  left: NaNpx;
+  left: 30px;
   bottom: 95px;
-  width: 126px;
   opacity: .4;
   -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
@@ -146,10 +146,10 @@ exports[`Minimap component should not align slider controller when user performs
 }
 
 .c1 {
-  width: 100%;
   height: 4.6rem;
   display: block;
   position: absolute;
+  width: 126px;
   background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
   border-radius: .4rem;
@@ -157,6 +157,8 @@ exports[`Minimap component should not align slider controller when user performs
 
 .c2 {
   cursor: move;
+  left: 0;
+  top: 0;
   position: absolute;
   height: calc(100% - 1.6rem);
   margin: 0.8rem 8px;
@@ -258,11 +260,10 @@ exports[`Minimap component should position minimap at the right hand side bottom
 .c0 {
   position: -webkit-sticky;
   position: sticky;
-  display: block;
+  display: inline;
   z-index: 999;
-  left: NaNpx;
+  left: 30px;
   bottom: 95px;
-  width: 126px;
   opacity: .4;
   -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
@@ -273,10 +274,10 @@ exports[`Minimap component should position minimap at the right hand side bottom
 }
 
 .c1 {
-  width: 100%;
   height: 4.6rem;
   display: block;
   position: absolute;
+  width: 126px;
   background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
   border-radius: .4rem;
@@ -284,6 +285,8 @@ exports[`Minimap component should position minimap at the right hand side bottom
 
 .c2 {
   cursor: move;
+  left: 0;
+  top: 0;
   position: absolute;
   height: calc(100% - 1.6rem);
   margin: 0.8rem 8px;
@@ -384,11 +387,10 @@ exports[`Minimap component should position minimap at the right hand side bottom
 .c0 {
   position: -webkit-sticky;
   position: sticky;
-  display: block;
+  display: inline;
   z-index: 999;
-  left: NaNpx;
+  left: 30px;
   bottom: 95px;
-  width: 126px;
   opacity: .4;
   -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
@@ -399,10 +401,10 @@ exports[`Minimap component should position minimap at the right hand side bottom
 }
 
 .c1 {
-  width: 100%;
   height: 4.6rem;
   display: block;
   position: absolute;
+  width: 126px;
   background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
   border-radius: .4rem;
@@ -410,6 +412,8 @@ exports[`Minimap component should position minimap at the right hand side bottom
 
 .c2 {
   cursor: move;
+  left: 0;
+  top: 0;
   position: absolute;
   height: calc(100% - 1.6rem);
   margin: 0.8rem 8px;
@@ -510,11 +514,10 @@ exports[`Minimap component should position slider controller at the correct posi
 .c0 {
   position: -webkit-sticky;
   position: sticky;
-  display: block;
+  display: inline;
   z-index: 999;
-  left: NaNpx;
+  left: 30px;
   bottom: 95px;
-  width: 126px;
   opacity: .4;
   -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
@@ -525,10 +528,10 @@ exports[`Minimap component should position slider controller at the correct posi
 }
 
 .c1 {
-  width: 100%;
   height: 4.6rem;
   display: block;
   position: absolute;
+  width: 126px;
   background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
   border-radius: .4rem;
@@ -536,6 +539,8 @@ exports[`Minimap component should position slider controller at the correct posi
 
 .c2 {
   cursor: move;
+  left: 0;
+  top: 0;
   position: absolute;
   height: calc(100% - 1.6rem);
   margin: 0.8rem 8px;
@@ -637,11 +642,10 @@ exports[`Minimap component should position slider controller at the extreme end 
 .c0 {
   position: -webkit-sticky;
   position: sticky;
-  display: block;
+  display: inline;
   z-index: 999;
-  left: NaNpx;
+  left: 30px;
   bottom: 95px;
-  width: 126px;
   opacity: .4;
   -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
@@ -652,10 +656,10 @@ exports[`Minimap component should position slider controller at the extreme end 
 }
 
 .c1 {
-  width: 100%;
   height: 4.6rem;
   display: block;
   position: absolute;
+  width: 126px;
   background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
   border-radius: .4rem;
@@ -663,6 +667,8 @@ exports[`Minimap component should position slider controller at the extreme end 
 
 .c2 {
   cursor: move;
+  left: 0;
+  top: 0;
   position: absolute;
   height: calc(100% - 1.6rem);
   margin: 0.8rem 8px;
@@ -764,11 +770,10 @@ exports[`Minimap component should position slider controller when performed drag
 .c0 {
   position: -webkit-sticky;
   position: sticky;
-  display: block;
+  display: inline;
   z-index: 999;
-  left: NaNpx;
+  left: 30px;
   bottom: 95px;
-  width: 126px;
   opacity: .4;
   -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
@@ -779,10 +784,10 @@ exports[`Minimap component should position slider controller when performed drag
 }
 
 .c1 {
-  width: 100%;
   height: 4.6rem;
   display: block;
   position: absolute;
+  width: 126px;
   background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
   border-radius: .4rem;
@@ -790,6 +795,8 @@ exports[`Minimap component should position slider controller when performed drag
 
 .c2 {
   cursor: move;
+  left: 0;
+  top: 0;
   position: absolute;
   height: calc(100% - 1.6rem);
   margin: 0.8rem 8px;
@@ -891,11 +898,10 @@ exports[`Minimap component should render properly 1`] = `
 .c0 {
   position: -webkit-sticky;
   position: sticky;
-  display: block;
+  display: inline;
   z-index: 999;
-  left: NaNpx;
+  left: 30px;
   bottom: 95px;
-  width: 126px;
   opacity: .4;
   -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
@@ -906,10 +912,10 @@ exports[`Minimap component should render properly 1`] = `
 }
 
 .c1 {
-  width: 100%;
   height: 4.6rem;
   display: block;
   position: absolute;
+  width: 126px;
   background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
   border-radius: .4rem;
@@ -917,6 +923,8 @@ exports[`Minimap component should render properly 1`] = `
 
 .c2 {
   cursor: move;
+  left: 0;
+  top: 0;
   position: absolute;
   height: calc(100% - 1.6rem);
   margin: 0.8rem 8px;
@@ -1017,11 +1025,10 @@ exports[`Minimap component should stop slider controller positioning when we mov
 .c0 {
   position: -webkit-sticky;
   position: sticky;
-  display: block;
+  display: inline;
   z-index: 999;
-  left: NaNpx;
+  left: 30px;
   bottom: 95px;
-  width: 126px;
   opacity: .4;
   -webkit-transition: opacity 200ms ease-in-out;
   transition: opacity 200ms ease-in-out;
@@ -1032,10 +1039,10 @@ exports[`Minimap component should stop slider controller positioning when we mov
 }
 
 .c1 {
-  width: 100%;
   height: 4.6rem;
   display: block;
   position: absolute;
+  width: 126px;
   background: #ffffff;
   box-shadow: 0 0.4rem 0.6rem 0.3rem rgba(51,51,51,0.1);
   border-radius: .4rem;
@@ -1043,6 +1050,8 @@ exports[`Minimap component should stop slider controller positioning when we mov
 
 .c2 {
   cursor: move;
+  left: 0;
+  top: 0;
   position: absolute;
   height: calc(100% - 1.6rem);
   margin: 0.8rem 8px;

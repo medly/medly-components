@@ -11,7 +11,7 @@ import {
 import { Props } from './types';
 
 export const Minimap: FC<Props> & WithStyle = React.memo(
-    ({ minimapWidth, controllerWidth, sliderContentPadding, tableRef, ...restProps }) => {
+    ({ minimapWidth, controllerWidth, sliderContentPadding, tableRef, minimapDimensionDeps, ...restProps }) => {
         const sliderControllerRef = useRef(null),
             sliderRangeRef = useRef<HTMLDivElement>(null),
             [mouseDown, setMouseDown] = useState(false),
@@ -34,7 +34,7 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
                 };
             }, []),
             setMinimapDimensions = useCallback(() => {
-                const tableW = tableRef.current ? tableRef.current.scrollWidth - tableRef.current.offsetWidth + 1 : 0;
+                const tableW = tableRef.current ? tableRef.current.scrollWidth - tableRef.current.clientWidth : 0;
                 setOneMinimapToTableWidth(tableW / sliderWidth);
                 setOneTableToMinimapWidth(sliderWidth / tableW);
                 setContainerOffset(positionMinimap());
@@ -72,6 +72,7 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
             onSliderControllerMouseDown = useCallback(
                 (e: React.MouseEvent<HTMLDivElement>) => {
                     e.stopPropagation();
+                    e.preventDefault();
                     setMouseDown(true);
                     positionSliderController(e);
                 },
@@ -81,6 +82,8 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
                 setMouseDown(false);
                 window.removeEventListener('mousemove', positionSliderController);
             }, [positionSliderController]);
+
+        useEffect(() => setMinimapDimensions(), [...minimapDimensionDeps]);
 
         useEffect(() => {
             setMinimapDimensions();
@@ -116,8 +119,8 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
 
         return (
             isHorizontalScrollPresent && (
-                <MinimapContainer sliderWidth={minimapWidth} offset={containerOffset} {...restProps}>
-                    <StyledMinimap id="minimap">
+                <MinimapContainer offset={containerOffset} {...restProps}>
+                    <StyledMinimap id="minimap" sliderWidth={minimapWidth}>
                         <SliderRange
                             ref={sliderRangeRef}
                             onMouseDown={onSliderControllerMouseDown}
@@ -146,5 +149,6 @@ Minimap.Style = MinimapContainer;
 Minimap.defaultProps = {
     minimapWidth: 126,
     controllerWidth: 40,
-    sliderContentPadding: 8
+    sliderContentPadding: 8,
+    minimapDimensionDeps: []
 };
