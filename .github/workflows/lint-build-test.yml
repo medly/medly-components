@@ -1,9 +1,10 @@
 name: Lint, Build, Test
 
-on: 
+on:
     push:
-     branches:    
-     - '!master'
+        branches:
+            - '**'
+            - '!master'
     pull_request:
         types: [opened]
 
