@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useMemo } from 'react';
 import { TableComponentsCommonPropsContext } from '../context';
 import Minimap from '../Minimap';
 import { TBody } from './Body.styled';
@@ -8,10 +8,11 @@ import { NoResultCell, NoResultRow } from './Row/Row.styled';
 import { Props } from './types';
 
 const Body: React.FC<Props> = React.memo(props => {
-    const { data, groupBy, rowIdentifier, showRowWithCardStyle, noResultRow, tableRef, withMinimap } = useContext(
+    const { data, groupBy, rowIdentifier, showRowWithCardStyle, noResultRow, tableRef, withMinimap, columns } = useContext(
             TableComponentsCommonPropsContext
         ),
-        { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, ...restProps } = props;
+        { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, ...restProps } = props,
+        minimapDimensionDeps = useMemo(() => [columns], [columns]);
 
     return (
         <TBody>
@@ -39,7 +40,7 @@ const Body: React.FC<Props> = React.memo(props => {
                     <Row id={identifier} key={identifier} data={row} {...{ ...restProps, selectedRowIds, onRowSelection }} />
                 );
             })}
-            {withMinimap && <Minimap tableRef={tableRef} />}
+            {withMinimap && <Minimap tableRef={tableRef} minimapDimensionDeps={minimapDimensionDeps} />}
         </TBody>
     );
 });

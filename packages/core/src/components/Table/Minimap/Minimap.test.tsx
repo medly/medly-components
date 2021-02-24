@@ -6,6 +6,7 @@ const tableRef = {
     current: {
         scrollWidth: 300,
         offsetWidth: 200,
+        clientWidth: 200,
         scrollLeft: 1,
         addEventListener: jest.fn(),
         removeEventListener: jest.fn(),
@@ -41,7 +42,7 @@ describe('Minimap component', () => {
         const sliderController = container.querySelector('#sliderController');
         scrollCallback({ stopPropagation: stopPropagationMock });
         expect(stopPropagationMock).toHaveBeenCalled();
-        expect(sliderController).toHaveStyle('left: 0.693069306930693px');
+        expect(sliderController).toHaveStyle('left: 0.7px');
         expect(container).toMatchSnapshot();
     });
 
