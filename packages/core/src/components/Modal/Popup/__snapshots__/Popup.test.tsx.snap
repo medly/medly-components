@@ -23,8 +23,8 @@ exports[`Modal Popup component at small screen size should render properly when 
   .c0 {
     width: 100%;
     height: calc(100% - 2.4rem);
-    -webkit-animation: slideOut 0.4s cubic-bezier(0,0,0.33,1);
-    animation: slideOut 0.4s cubic-bezier(0,0,0.33,1);
+    -webkit-animation: hXIRCk 0.4s cubic-bezier(0,0,0.33,1);
+    animation: hXIRCk 0.4s cubic-bezier(0,0,0.33,1);
   }
 }
 
@@ -45,6 +45,13 @@ exports[`Modal Popup component at small screen size should render properly when 
     min-width: 200px;
     max-width: 103.6rem;
     max-height: 80%;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-animation: jjezRo 0.2s cubic-bezier(0,0,0.33,1);
+    animation: jjezRo 0.2s cubic-bezier(0,0,0.33,1);
   }
 }
 
@@ -78,8 +85,8 @@ exports[`Modal Popup component at small screen size should render properly when 
   .c0 {
     width: 100%;
     height: calc(100% - 2.4rem);
-    -webkit-animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
-    animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
+    -webkit-animation: chwwZo 0.4s cubic-bezier(0,0,0.33,1);
+    animation: chwwZo 0.4s cubic-bezier(0,0,0.33,1);
   }
 }
 
@@ -100,6 +107,13 @@ exports[`Modal Popup component at small screen size should render properly when 
     min-width: 200px;
     max-width: 103.6rem;
     max-height: 80%;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-animation: pAVcc 0.2s cubic-bezier(0,0,0.33,1);
+    animation: pAVcc 0.2s cubic-bezier(0,0,0.33,1);
   }
 }
 

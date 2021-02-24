@@ -1,5 +1,42 @@
-import { styled } from '@medly-components/utils';
+import { keyframes, styled } from '@medly-components/utils';
 import { Props } from './types';
+
+const mobileModalSlideIn = keyframes`
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+`,
+    mobileModalSlideOut = keyframes`
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(100%);
+        }
+`,
+    desktopModalSlideIn = keyframes`
+        0% {
+            opacity: 0;
+            transform: translateY(-2rem);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+`,
+    desktopModalSlideOut = keyframes`
+        0% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-2rem);
+        }
+`;
 
 export const Popup = styled('div')<Props>`
     background: ${({ theme }) => theme.modal.backgroundColor};
@@ -12,29 +49,11 @@ export const Popup = styled('div')<Props>`
     box-sizing: border-box;
     border-top-left-radius: 1.6rem;
     border-top-right-radius: 1.6rem;
-        
-    @keyframes slideIn {
-        0% {
-            transform: translateY(100%);
-        }
-        100% {
-            transform: translateY(0);
-        }
-    }
-
-    @keyframes slideOut {
-        0% {
-            transform: translateY(0);
-        }
-        100% {
-            transform: translateY(100%);
-        }
-    }
 
     @media (max-width: 767px) {
         width: 100%;
         height: calc(100% - 2.4rem);
-        animation: ${({ open }) => `${open ? 'slideIn' : 'slideOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) `};
+        animation: ${({ open }) => (open ? mobileModalSlideIn : mobileModalSlideOut)} 0.4s cubic-bezier(0, 0, 0.33, 1);
     }
 
     @media (min-width: 768px) and (max-width: 1439px) {
@@ -51,5 +70,9 @@ export const Popup = styled('div')<Props>`
         min-width: ${({ minWidth }) => minWidth || `60.5rem`};
         max-width: 103.6rem;
         max-height: 80%;
+    }
+
+    @media (min-width: 768px) {
+        animation: ${({ open }) => (open ? desktopModalSlideIn : desktopModalSlideOut)} 0.2s cubic-bezier(0, 0, 0.33, 1);
     }
 `;
