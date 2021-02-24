@@ -9,6 +9,7 @@
         "publish": {
             "yes": true,
             "conventionalCommits": true,
+            "createRelease": "github",
             "message": "chore(release): publish"
         }
     },
