@@ -55,7 +55,7 @@ export const Container = styled('div')<Props>`
     flex-direction: column;
     padding: 2rem;
     position: fixed;
-    z-index: 1000;
+    z-index: 1001;
     ${({ position }) => getPosition(position)}
 
     & > * + * {
