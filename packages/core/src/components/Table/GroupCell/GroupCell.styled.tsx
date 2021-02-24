@@ -13,6 +13,9 @@ export const GroupCell = styled('div').attrs(({ gridTemplateColumns }: Props) =>
     opacity: ${({ hidden }) => (hidden ? '0' : '1')};
     width: ${({ hidden }) => (hidden ? '0' : '100%')};
     height: ${({ hidden }) => (hidden ? '0' : '100%')};
+    &::after {
+        ${getBorder('right')}
+    }
 `;
 
 export const GroupCellTitle = styled(Text.Style)`
