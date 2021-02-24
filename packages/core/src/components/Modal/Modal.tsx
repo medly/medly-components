@@ -31,7 +31,7 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
             handleAnimationEnd = useCallback(() => !open && setShouldRender(false), [open]);
 
         useEffect(() => {
-            open ? setShouldRender(true) : !isSmallScreen && setShouldRender(false);
+            open && setShouldRender(true);
         }, [open]);
 
         useEffect(() => {
