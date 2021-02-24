@@ -13,9 +13,9 @@ export const ModalBackgroundStyled = styled.div<ModalBackgroundProps>`
     height: 100%;
     background: ${({ theme }) => theme.modal.overlayColor};
     z-index: 1000;
-    animation: ${({ open, isSmallScreen }) => isSmallScreen && `${open ? 'fadeIn' : 'fadeOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) `};
+    animation: ${({ open }) => `${open ? 'modalFadeIn' : 'modalFadeOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) `};
 
-    @keyframes fadeIn {
+    @keyframes modalFadeIn {
         0% {
             background: ${({ theme }) => rgba(theme.modal.overlayColor, 0)};
         }
@@ -24,7 +24,7 @@ export const ModalBackgroundStyled = styled.div<ModalBackgroundProps>`
         }
     }
 
-    @keyframes fadeOut {
+    @keyframes modalFadeOut {
         0% {
             background: ${({ theme }) => rgba(theme.modal.overlayColor, 0.65)};
         }
@@ -35,6 +35,7 @@ export const ModalBackgroundStyled = styled.div<ModalBackgroundProps>`
 
     @media (min-width: 768px) {
         align-items: center;
+        animation: ${({ open }) => `${open ? 'modalFadeIn' : 'modalFadeOut'} 0.2s cubic-bezier(0, 0, 0.33, 1) `};
     }
 `;
 
