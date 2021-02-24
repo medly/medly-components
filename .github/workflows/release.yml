@@ -37,4 +37,6 @@ jobs:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
             - name: Deploy storybook
-              run: yarn storybook:deploy
+              run: yarn storybook:deploy -- --ci
+              env:
+                  GH_TOKEN: ${{ secrets.ADMIN_TOKEN }}
