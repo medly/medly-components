@@ -107,5 +107,7 @@ export const NoResultRow = styled(Row)`
 `;
 
 export const NoResultCell = styled('td')`
-    grid-column: 1/-1;
+    text-align: center;
+    padding: 1rem 0;
+    height: 4.6rem;
 `;
