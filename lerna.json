@@ -10,7 +10,7 @@
             "yes": true,
             "conventionalCommits": true,
             "createRelease": "github",
-            "message": "chore(release): publish"
+            "message": "chore: update changelog and publish packages"
         }
     },
     "npmClient": "yarn",

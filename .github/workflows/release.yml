@@ -14,7 +14,11 @@ jobs:
             - name: Checkout repo
               uses: actions/checkout@v2
               with:
+                  fetch-depth: 0
                   token: ${{ secrets.ADMIN_TOKEN }}
+
+            - name: Pulls all tags (needed for lerna / semantic release to correctly version)
+              run: git fetch --depth=1 origin +refs/tags/*:refs/tags/*
 
             - name: Configure CI Git User
               run: |
