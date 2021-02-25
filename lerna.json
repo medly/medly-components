@@ -1,6 +1,7 @@
 {
     "access": "public",
     "allowBranch": ["master", "feature/*"],
+    "includeMergedTags": true,
     "ignoreChanges": ["**/*.md", "**/*.stories.*", "**/*.test.*"],
     "command": {
         "version": {
