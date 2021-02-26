@@ -1,5 +1,6 @@
 import React, { useCallback, useContext, useMemo } from 'react';
 import { TableComponentsCommonPropsContext } from '../context';
+import { getGridTemplateColumns } from '../helpers';
 import Minimap from '../Minimap';
 import { TBody } from './Body.styled';
 import GroupedRow from './GroupedRow';
@@ -8,20 +9,12 @@ import { NoResultCell, NoResultRow } from './Row/Row.styled';
 import { Props } from './types';
 
 const Body: React.FC<Props> = React.memo(props => {
-    const { data, groupBy, rowIdentifier, showRowWithCardStyle, noResultRow, tableRef, withMinimap, columns } = useContext(
+    const { data, groupBy, rowIdentifier, showRowWithCardStyle, noResultRow, tableRef, withMinimap, columns, size } = useContext(
             TableComponentsCommonPropsContext
         ),
         { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, ...restProps } = props,
         /* since minimap is positioned sticky with respect to the tbody, tbody should have full table width otherwise minimap positioning fails */
-        getNoResultRowColumnTemplate = useCallback(() => {
-            let scrollWidth = 0,
-                clientWidth = 0;
-            if (tableRef.current) {
-                scrollWidth = tableRef.current.scrollWidth;
-                clientWidth = tableRef.current.clientWidth;
-            }
-            return scrollWidth ? ` minmax(${clientWidth}px, 1fr) minmax(${scrollWidth - clientWidth}px, 1fr)` : '';
-        }, []),
+        getTableVisibleWidth = useCallback(() => (tableRef.current ? tableRef.current.clientWidth : 0), []),
         minimapDimensionDeps = useMemo(() => [columns], [columns]);
 
     return (
@@ -30,8 +23,14 @@ const Body: React.FC<Props> = React.memo(props => {
                 (noResultRow ? (
                     noResultRow
                 ) : (
-                    <NoResultRow showRowWithCardStyle={showRowWithCardStyle} gridTemplateColumns={getNoResultRowColumnTemplate()}>
-                        <NoResultCell>No result</NoResultCell>
+                    <NoResultRow
+                        showRowWithCardStyle={showRowWithCardStyle}
+                        gridTemplateColumns={getGridTemplateColumns(columns)}
+                        withMinimap={withMinimap}
+                    >
+                        <NoResultCell width={getTableVisibleWidth()} tableSize={size}>
+                            No result
+                        </NoResultCell>
                     </NoResultRow>
                 ))}
             {data.map((row, index) => {

@@ -1,6 +1,7 @@
 import { css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import { GridTemplateProps } from '../../types';
+import { tableCellPaddings } from '../Cell/Styled';
 import { StyledProps } from './types';
 
 const cardStyle = css<StyledProps>`
@@ -96,18 +97,14 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
     ${({ showRowWithCardStyle }) => (showRowWithCardStyle ? cardStyle : normalStyle)}
 `;
 
-const noResultCardStyle = css`
-    padding: 1.5rem 0;
+export const NoResultCell = styled('td')<{ width: number; tableSize: keyof typeof tableCellPaddings }>`
+    text-align: center;
+    padding: ${({ tableSize }) => tableCellPaddings[tableSize]};
+    width: ${({ width }) => `${width}px`};
 `;
 
-export const NoResultRow = styled(Row)`
+export const NoResultRow = styled(Row)<{ withMinimap?: boolean }>`
     justify-content: center;
     align-items: center;
-    ${({ showRowWithCardStyle }) => showRowWithCardStyle && noResultCardStyle}
-`;
-
-export const NoResultCell = styled('td')`
-    text-align: center;
-    padding: 1rem 0;
-    height: 4.6rem;
+    ${({ withMinimap }) => withMinimap && `min-height: 4.6rem;`}
 `;

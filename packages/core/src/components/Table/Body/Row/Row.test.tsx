@@ -1,6 +1,6 @@
 import { render } from '@test-utils';
 import React from 'react';
-import { NoResultRow, NoResultCell, Row } from './Row.styled';
+import { NoResultCell, NoResultRow, Row } from './Row.styled';
 
 describe('Row', () => {
     it('should render row properly', () => {
@@ -11,7 +11,9 @@ describe('Row', () => {
     it('should render NoResult properly', () => {
         const { container } = render(
             <NoResultRow>
-                <NoResultCell>Dummy</NoResultCell>
+                <NoResultCell tableSize="S" width={200}>
+                    Dummy
+                </NoResultCell>
             </NoResultRow>
         );
         expect(container).toMatchSnapshot();
@@ -20,7 +22,9 @@ describe('Row', () => {
     it('should render NoResult with Card design also', () => {
         const { container } = render(
             <NoResultRow showRowWithCardStyle>
-                <NoResultCell>Dummy</NoResultCell>
+                <NoResultCell tableSize="S" width={200}>
+                    Dummy
+                </NoResultCell>
             </NoResultRow>
         );
         expect(container).toMatchSnapshot();
