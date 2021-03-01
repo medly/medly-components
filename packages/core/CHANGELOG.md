@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.46.10](https://github.com/medly/medly-components/compare/@medly-components/core@1.46.8...@medly-components/core@1.46.10) (2021-03-01)
+
+
+### Bug Fixes
+
+* **core:** fix minimap positioning issue when no results are present in table ([aaffeff](https://github.com/medly/medly-components/commit/aaffeff153b352850603a342222587c0c5b57351))
+* **core:** fix review comments ([89cb1c8](https://github.com/medly/medly-components/commit/89cb1c8444543fbc6bcca63fc814e52a58b0c643))
+* **core:** fix review comments ([aa874c6](https://github.com/medly/medly-components/commit/aa874c65c6c14156a8125a0c59809c99b952227e))
+* **core:** update no result row style and logic to fit table width ([b6c90de](https://github.com/medly/medly-components/commit/b6c90de6aa8462bbd85b3e5c792da3a0962ce7fc))
+
+
+
+
+
 ## [1.46.9](https://github.com/medly/medly-components/compare/@medly-components/core@1.46.8...@medly-components/core@1.46.9) (2021-02-25)
 
 **Note:** Version bump only for package @medly-components/core
