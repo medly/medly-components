@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useMemo } from 'react';
+import React, { useContext, useMemo } from 'react';
 import { TableComponentsCommonPropsContext } from '../context';
 import { getGridTemplateColumns } from '../helpers';
 import Minimap from '../Minimap';
@@ -14,7 +14,7 @@ const Body: React.FC<Props> = React.memo(props => {
         ),
         { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, ...restProps } = props,
         /* since minimap is positioned sticky with respect to the tbody, tbody should have full table width otherwise minimap positioning fails */
-        getTableVisibleWidth = useCallback(() => tableRef.current?.clientWidth ?? 0, []),
+        tableVisibleWidth = tableRef.current?.clientWidth ?? 0,
         minimapDimensionDeps = useMemo(() => [columns], [columns]);
 
     return (
@@ -28,7 +28,7 @@ const Body: React.FC<Props> = React.memo(props => {
                         gridTemplateColumns={getGridTemplateColumns(columns)}
                         withMinimap={withMinimap}
                     >
-                        <NoResultCell width={getTableVisibleWidth()} tableSize={size}>
+                        <NoResultCell width={tableVisibleWidth} tableSize={size}>
                             No result
                         </NoResultCell>
                     </NoResultRow>
