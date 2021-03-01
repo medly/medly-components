@@ -1,6 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Row should render NoResult properly 1`] = `
+.c1 {
+  text-align: center;
+  padding: 0.8rem 1.6rem;
+  width: 200px;
+}
+
 .c0 {
   display: grid;
   position: relative;
@@ -42,16 +48,13 @@ exports[`Row should render NoResult properly 1`] = `
   border-bottom: 1px solid #C7D0D8;
 }
 
-.c1 {
-  grid-column: 1/-1;
-}
-
 <div>
   <tr
-    class="sc-AxjAm c0"
+    class="sc-AxhUy c0"
   >
     <td
       class="c1"
+      width="200"
     >
       Dummy
     </td>
@@ -60,6 +63,12 @@ exports[`Row should render NoResult properly 1`] = `
 `;
 
 exports[`Row should render NoResult with Card design also 1`] = `
+.c1 {
+  text-align: center;
+  padding: 0.8rem 1.6rem;
+  width: 200px;
+}
+
 .c0 {
   display: grid;
   position: relative;
@@ -84,7 +93,6 @@ exports[`Row should render NoResult with Card design also 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 1.5rem 0;
 }
 
 .c0,
@@ -121,16 +129,13 @@ exports[`Row should render NoResult with Card design also 1`] = `
   margin-bottom: 0.8rem;
 }
 
-.c1 {
-  grid-column: 1/-1;
-}
-
 <div>
   <tr
-    class="sc-AxjAm c0"
+    class="sc-AxhUy c0"
   >
     <td
       class="c1"
+      width="200"
     >
       Dummy
     </td>

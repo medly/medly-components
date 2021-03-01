@@ -1,5 +1,6 @@
 import React, { useContext, useMemo } from 'react';
 import { TableComponentsCommonPropsContext } from '../context';
+import { getGridTemplateColumns } from '../helpers';
 import Minimap from '../Minimap';
 import { TBody } from './Body.styled';
 import GroupedRow from './GroupedRow';
@@ -8,10 +9,12 @@ import { NoResultCell, NoResultRow } from './Row/Row.styled';
 import { Props } from './types';
 
 const Body: React.FC<Props> = React.memo(props => {
-    const { data, groupBy, rowIdentifier, showRowWithCardStyle, noResultRow, tableRef, withMinimap, columns } = useContext(
+    const { data, groupBy, rowIdentifier, showRowWithCardStyle, noResultRow, tableRef, withMinimap, columns, size } = useContext(
             TableComponentsCommonPropsContext
         ),
         { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, ...restProps } = props,
+        /* since minimap is positioned sticky with respect to the tbody, tbody should have full table width otherwise minimap positioning fails */
+        tableVisibleWidth = tableRef.current?.clientWidth ?? 0,
         minimapDimensionDeps = useMemo(() => [columns], [columns]);
 
     return (
@@ -20,8 +23,14 @@ const Body: React.FC<Props> = React.memo(props => {
                 (noResultRow ? (
                     noResultRow
                 ) : (
-                    <NoResultRow showRowWithCardStyle={showRowWithCardStyle}>
-                        <NoResultCell>No result</NoResultCell>
+                    <NoResultRow
+                        showRowWithCardStyle={showRowWithCardStyle}
+                        gridTemplateColumns={getGridTemplateColumns(columns)}
+                        withMinimap={withMinimap}
+                    >
+                        <NoResultCell width={tableVisibleWidth} tableSize={size}>
+                            No result
+                        </NoResultCell>
                     </NoResultRow>
                 ))}
             {data.map((row, index) => {
