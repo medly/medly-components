@@ -14,7 +14,7 @@ const Body: React.FC<Props> = React.memo(props => {
         ),
         { selectedRowIds, onRowSelection, onGroupedRowSelection, setUniqueIds, ...restProps } = props,
         /* since minimap is positioned sticky with respect to the tbody, tbody should have full table width otherwise minimap positioning fails */
-        getTableVisibleWidth = useCallback(() => (tableRef.current ? tableRef.current.clientWidth : 0), []),
+        getTableVisibleWidth = useCallback(() => tableRef.current?.clientWidth ?? 0, []),
         minimapDimensionDeps = useMemo(() => [columns], [columns]);
 
     return (
