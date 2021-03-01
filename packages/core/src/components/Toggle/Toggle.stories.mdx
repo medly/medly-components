@@ -1,8 +1,8 @@
 import { Toggle } from './Toggle';
-import { Preview, Story, Meta, Props} from '@storybook/addon-docs/blocks';
+import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import * as stories from './Toggle.stories';
 import { boolean, select } from '@storybook/addon-knobs';
-import { size, labelPosition, variants, colors, ThemeInterface } from './Toggle.stories';
+import { sizes, labelPositions, ThemeInterface } from './Toggle.stories';
 
 <Meta title="Core" component={Toggle} parameters={{ jest: ['Toggle.test.tsx'] }}/>
 
@@ -13,11 +13,11 @@ import { size, labelPosition, variants, colors, ThemeInterface } from './Toggle.
 <Preview withToolbar>
     <Story name="Toggle">
         <Toggle
-            size={select('Size', size, 'S')}
+            size={select('Size', sizes, 'S')}
             label="Switch mode"
             fullWidth={boolean('Full Width', false)}
             disabled={boolean('Disabled', false)}
-            labelPosition={select('Label Position', labelPosition, 'right')}
+            labelPosition={select('Label Position', labelPositions, 'right')}
        />
     </Story>
 </Preview>
