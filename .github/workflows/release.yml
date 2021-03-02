@@ -18,7 +18,7 @@ jobs:
                   token: ${{ secrets.ADMIN_TOKEN }}
 
             - name: Pulls all tags & commits (needed for lerna / semantic release to correctly version)
-              run: git fetch --unshallow
+              run: git fetch --depth=1000 origin +refs/tags/*:refs/tags/*
 
             - name: Configure CI Git User
               run: |
