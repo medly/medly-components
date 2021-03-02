@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.30.8 (2021-02-25)
+
+**Note:** Version bump only for package @medly-components/theme
+
+
+
+
+
+## 1.30.7 (2021-02-24)
+
+**Note:** Version bump only for package @medly-components/theme
+
+
+
+
+
+## 1.30.6 (2021-02-24)
+
+**Note:** Version bump only for package @medly-components/theme
+
+
+
+
+
+## 1.30.5 (2021-02-24)
+
+**Note:** Version bump only for package @medly-components/theme
+
+
+
+
+
+## 1.30.4 (2021-02-24)
+
+**Note:** Version bump only for package @medly-components/theme
+
+
+
+
+
+## 1.30.3 (2021-02-22)
+
+**Note:** Version bump only for package @medly-components/theme
+
+
+
+
+
+## 1.30.2 (2021-02-22)
+
+**Note:** Version bump only for package @medly-components/theme
+
+
+
+
+
+## 1.30.1 (2021-02-22)
+
+**Note:** Version bump only for package @medly-components/theme
+
+
+
+
+
 # [1.30.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.29.0...@medly-components/theme@1.30.0) (2021-02-17)
 
 

@@ -18,23 +18,23 @@ import { useScrollState } from './useScrollState';
 export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const {
-            data,
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            onSort,
-            onRowClick,
-            rowIdentifier,
-            rowSelectionDisableKey,
-            isRowSelectable,
-            isRowExpandable,
-            onRowSelection,
-            isLoading,
-            selectedRowIds,
-            showRowWithCardStyle,
-            withActionBar,
-            withPagination,
-            onScrolledToBottom,
-            ...restProps
-        } = props,
+                data,
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
+                onSort,
+                onRowClick,
+                rowIdentifier,
+                rowSelectionDisableKey,
+                isRowSelectable,
+                isRowExpandable,
+                onRowSelection,
+                isLoading,
+                selectedRowIds,
+                showRowWithCardStyle,
+                withActionBar,
+                withPagination,
+                onScrolledToBottom,
+                ...restProps
+            } = props,
             isGroupedTable = !!restProps.groupBy,
             size = showRowWithCardStyle ? 'L' : restProps.size;
 
@@ -49,7 +49,9 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
             [isSelectAllDisable, setSelectAllDisableState] = useState(true),
             tableRef = useCombinedRefs<HTMLTableElement>(ref, React.useRef(null)),
             [maxColumnSizes, dispatch] = useReducer(maxColumnSizeReducer, {}),
-            [columns, setColumns] = useState(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable)),
+            [columns, setColumns] = useState(
+                getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable, maxColumnSizes)
+            ),
             addColumnMaxSize = useCallback((field: string, value: number) => dispatch({ field, value, type: 'ADD_SIZE' }), [dispatch]);
 
         const isRowClickable = useMemo(() => (onRowClick ? true : false), [onRowClick]),
@@ -68,7 +70,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
         }, [data]);
 
         useEffect(() => {
-            setColumns(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable));
+            setColumns(getUpdatedColumns(props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable, maxColumnSizes));
         }, [props.columns, isRowSelectable, isRowExpandable, size, isGroupedTable]);
 
         useEffect(() => {
@@ -150,7 +152,10 @@ Table.defaultProps = {
     withActionBar: false,
     withPagination: false,
     totalItems: 0,
-    itemsPerPage: 20
+    itemsPerPage: 20,
+    withMinimap: false,
+    isRowSelectable: false,
+    isRowExpandable: false
 };
 
 Table.displayName = 'Table';

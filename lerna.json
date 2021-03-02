@@ -1,13 +1,17 @@
 {
     "access": "public",
     "allowBranch": ["master", "feature/*"],
+    "includeMergedTags": true,
+    "ignoreChanges": ["**/*.md", "**/*.stories.*", "**/*.test.*"],
     "command": {
         "version": {
             "exact": true
         },
         "publish": {
+            "yes": true,
             "conventionalCommits": true,
-            "yes": true
+            "createRelease": "github",
+            "message": "chore: update changelog and publish packages"
         }
     },
     "npmClient": "yarn",

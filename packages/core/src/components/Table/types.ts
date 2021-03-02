@@ -8,6 +8,7 @@ export type ObjectType = {
 };
 export type Data = ObjectType[];
 export type RowHoverActionsType = React.FC<{ rowData?: ObjectType; rowId?: any }>;
+export type MaxColumnSizes = { [k: string]: number };
 
 export type TableState = { activePage?: number; sortField?: string; sortOrder?: SortOrder };
 
@@ -112,6 +113,8 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     rowHoverActions?: React.FC<{ rowData?: ObjectType; rowId?: any }>;
     /** Function to be called when table is scrolled all the way to the bottom */
     onScrolledToBottom?: () => any;
+    /** Enables a mini map to scroll horizontally across the table*/
+    withMinimap?: boolean;
 }
 
 export interface StaticProps {

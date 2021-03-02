@@ -3,6 +3,78 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.20.9](https://github.com/medly/medly-components/compare/@medly-components/layout@1.20.8...@medly-components/layout@1.20.9) (2021-02-25)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## 1.20.8 (2021-02-25)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## 1.20.7 (2021-02-24)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## 1.20.6 (2021-02-24)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## 1.20.5 (2021-02-24)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## 1.20.4 (2021-02-24)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## 1.20.3 (2021-02-22)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## 1.20.2 (2021-02-22)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## 1.20.1 (2021-02-22)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 # [1.20.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.19.0...@medly-components/layout@1.20.0) (2021-02-17)
 
 

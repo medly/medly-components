@@ -21,8 +21,8 @@ exports[`Modal component background at small screen size should render properly 
   height: 100%;
   background: rgba(67,84,101,0.65);
   z-index: 1000;
-  -webkit-animation: fadeOut 0.4s cubic-bezier(0,0,0.33,1);
-  animation: fadeOut 0.4s cubic-bezier(0,0,0.33,1);
+  -webkit-animation: modalFadeOut 0.4s cubic-bezier(0,0,0.33,1);
+  animation: modalFadeOut 0.4s cubic-bezier(0,0,0.33,1);
 }
 
 @media (min-width:768px) {
@@ -31,6 +31,8 @@ exports[`Modal component background at small screen size should render properly 
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-animation: modalFadeOut 0.2s cubic-bezier(0,0,0.33,1);
+    animation: modalFadeOut 0.2s cubic-bezier(0,0,0.33,1);
   }
 }
 
@@ -62,8 +64,8 @@ exports[`Modal component background at small screen size should render properly 
   height: 100%;
   background: rgba(67,84,101,0.65);
   z-index: 1000;
-  -webkit-animation: fadeIn 0.4s cubic-bezier(0,0,0.33,1);
-  animation: fadeIn 0.4s cubic-bezier(0,0,0.33,1);
+  -webkit-animation: modalFadeIn 0.4s cubic-bezier(0,0,0.33,1);
+  animation: modalFadeIn 0.4s cubic-bezier(0,0,0.33,1);
 }
 
 @media (min-width:768px) {
@@ -72,6 +74,8 @@ exports[`Modal component background at small screen size should render properly 
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-animation: modalFadeIn 0.2s cubic-bezier(0,0,0.33,1);
+    animation: modalFadeIn 0.2s cubic-bezier(0,0,0.33,1);
   }
 }
 
@@ -202,6 +206,8 @@ exports[`Modal component should render properly when it is open 1`] = `
   height: 100%;
   background: rgba(67,84,101,0.65);
   z-index: 1000;
+  -webkit-animation: modalFadeIn 0.4s cubic-bezier(0,0,0.33,1);
+  animation: modalFadeIn 0.4s cubic-bezier(0,0,0.33,1);
 }
 
 .c4 {
@@ -290,6 +296,8 @@ exports[`Modal component should render properly when it is open 1`] = `
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-animation: modalFadeIn 0.2s cubic-bezier(0,0,0.33,1);
+    animation: modalFadeIn 0.2s cubic-bezier(0,0,0.33,1);
   }
 }
 
@@ -310,8 +318,8 @@ exports[`Modal component should render properly when it is open 1`] = `
   .c1 {
     width: 100%;
     height: calc(100% - 2.4rem);
-    -webkit-animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
-    animation: slideIn 0.4s cubic-bezier(0,0,0.33,1);
+    -webkit-animation: chwwZo 0.4s cubic-bezier(0,0,0.33,1);
+    animation: chwwZo 0.4s cubic-bezier(0,0,0.33,1);
   }
 }
 
@@ -332,6 +340,13 @@ exports[`Modal component should render properly when it is open 1`] = `
     min-width: 200px;
     max-width: 103.6rem;
     max-height: 80%;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    -webkit-animation: pAVcc 0.2s cubic-bezier(0,0,0.33,1);
+    animation: pAVcc 0.2s cubic-bezier(0,0,0.33,1);
   }
 }
 

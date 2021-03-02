@@ -60,6 +60,7 @@ Simple `Table` component to show set of data.
                         expandedRowComponent={ExpandedRowComponent}
                         withActionBar={boolean('Enable action bar', true)}
                         actions={Actions}
+                        withMinimap={boolean('Enable minimap', false)}
                         withPagination={boolean('Enable pagination', true)}
                         totalItems={10}
                         itemsPerPage={10}
@@ -160,6 +161,10 @@ export const Actions = [
     </Button>
 ];
 ```
+
+## Minimap
+
+To show minimap you have to pass `withMinimap` as `true` and it will be visible when there is an horizontal scroll available in the table
 
 ## Row Hover Actions
 
