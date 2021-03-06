@@ -1,4 +1,4 @@
-import { parseToDate, useUpdateEffect } from '@medly-components/utils';
+import { isMobile, parseToDate, useUpdateEffect } from '@medly-components/utils';
 import { format } from 'date-fns';
 import memoize from 'fast-memoize';
 import { useCallback, useState } from 'react';
@@ -89,7 +89,7 @@ export const useForm = (initialState: object): UseFormResult => {
 
     const handleDateChange: Handlers['handleDateChange'] = useCallback(
         memoize((name, displayFormat) => value => {
-            setValues(val => ({ ...val, [name]: value ? format(value, displayFormat || 'MM/dd/yyyy') : '' }));
+            setValues(val => ({ ...val, [name]: value ? format(value, isMobile ? 'yyyy-MM-dd' : displayFormat || 'MM/dd/yyyy') : '' }));
         }),
         []
     );
