@@ -141,29 +141,29 @@ exports[`Modal component should render properly when it is open 1`] = `
   z-index: 20;
   position: absolute;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #eff2f4;
 }
 
 .c3 * {
-  fill: #607890;
+  fill: #13181D;
 }
 
 .c3:hover {
-  background-color: #eff2f4;
-  box-shadow: 0 2px 8px rgba(239,242,244,0.5);
+  background-color: #0F5AD5;
+  box-shadow: 0 2px 8px rgba(15,90,213,0.5);
 }
 
 .c3:hover * {
-  fill: #607890;
+  fill: #ffffff;
 }
 
 .c3:active {
-  background-color: #dfe4e9;
+  background-color: #0D4AAF;
   box-shadow: none;
 }
 
 .c3:active * {
-  fill: #435465;
+  fill: #ffffff;
 }
 
 .c6 {
