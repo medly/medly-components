@@ -89,7 +89,7 @@ export const useForm = (initialState: object): UseFormResult => {
 
     const handleDateChange: Handlers['handleDateChange'] = useCallback(
         memoize((name, displayFormat) => value => {
-            const formattedDisplayFormat = format(value, isMobile ? 'yyyy-MM-dd' : displayFormat || 'MM/dd/yyyy');
+            const formattedDisplayFormat = format(value, displayFormat || isMobile ? 'yyyy-MM-dd' : 'MM/dd/yyyy');
             setValues(val => ({ ...val, [name]: value ? formattedDisplayFormat : '' }));
         }),
         []
