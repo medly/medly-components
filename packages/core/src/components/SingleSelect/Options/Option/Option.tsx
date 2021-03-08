@@ -58,7 +58,7 @@ const Option: React.FC<OptionProps> & WithStyle = React.memo(props => {
             onMouseLeave={hideNestedOptions}
         >
             {
-                (typeof value === "object") && !isNested ?
+                React.isValidElement(value) && !isNested ?
                     <CustomComponentWrapper>
                         {value}
                     </CustomComponentWrapper>
