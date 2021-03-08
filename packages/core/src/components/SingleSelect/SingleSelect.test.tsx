@@ -148,6 +148,16 @@ describe('SingleSelect component', () => {
         waitFor(() => expect(screen.getByRole('list')).toBeVisible());
     });
 
+    it('should show options on click on drop icon when options are custom components', async () => {
+        const componentAsOptions = [{ value: <>Component1</>, label: 'Component1' },
+        { value: <>Component2</>, label: 'Component2' }]
+        const { container } = render(<SingleSelect options={componentAsOptions} />);
+        fireEvent.click(container.querySelector('svg'));
+        waitFor(() => expect(screen.getByRole('list')).toBeVisible());
+        waitFor(() => expect(container).toHaveTextContent('Component1'));
+        waitFor(() => expect(container).toHaveTextContent('Component2'));
+    });
+
     it('should not show options on click on drop icon, if disabled prop is set true', () => {
         const { container } = render(<SingleSelect options={options} disabled />);
         fireEvent.click(container.querySelector('svg'));
