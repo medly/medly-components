@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.19.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.18.10...@medly-components/forms@1.19.0) (2021-03-08)
+
+
+### Bug Fixes
+
+* correct previous fix to nested ternary ([f73c67b](https://github.com/medly/medly-components/commit/f73c67b46b81126a92a4b56f49986d02ce634008))
+* fix displayFormat logic ([8638dd0](https://github.com/medly/medly-components/commit/8638dd0722d73cd6bd2ccbc6c4e226e01c71a604))
+* fix form date handler for mobile devices ([f2c167e](https://github.com/medly/medly-components/commit/f2c167e805b0c7ca28d25e61cb04007193ea79c4))
+* remove nested ternary for code smell ([f8ba2ce](https://github.com/medly/medly-components/commit/f8ba2cec75e42fc84be97fb4ff0ed38d34b3fb0a))
+* update displayFormat logic in useForm date change handler ([5ca359e](https://github.com/medly/medly-components/commit/5ca359e6c3e7c83e82fab93f4c7718b5e927b4b4))
+
+
+### Features
+
+* update snapshots ([b4f8506](https://github.com/medly/medly-components/commit/b4f8506772b73d003ee8f4bacd1b55acb39082af))
+
+
+
+
+
 ## [1.18.10](https://github.com/medly/medly-components/compare/@medly-components/forms@1.18.9...@medly-components/forms@1.18.10) (2021-03-03)
 
 **Note:** Version bump only for package @medly-components/forms
