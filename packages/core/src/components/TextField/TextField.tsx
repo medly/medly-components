@@ -28,6 +28,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                 multiline,
                 minRows,
                 validator,
+                className,
                 ...restProps
             } = props,
             inputId = useMemo(() => id || 'medly-textField', [id]),
@@ -78,7 +79,13 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
         }, []);
 
         return (
-            <Styled.OuterWrapper fullWidth={fullWidth} minWidth={minWidth} maxWidth={maxWidth} id={`${inputId}-input-wrapper`}>
+            <Styled.OuterWrapper
+                fullWidth={fullWidth}
+                minWidth={minWidth}
+                maxWidth={maxWidth}
+                className={className}
+                id={`${inputId}-input-wrapper`}
+            >
                 <Styled.InnerWrapper
                     size={size}
                     onClick={handleWrapperClick}
