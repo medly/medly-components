@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.46.11](https://github.com/medly/medly-components/compare/@medly-components/core@1.46.10...@medly-components/core@1.46.11) (2021-03-09)
+
+
+### Bug Fixes
+
+* classname issue in textfield component ([9593272](https://github.com/medly/medly-components/commit/9593272f1b11b7a08c46857443f0d44767f40248))
+* **core:** fix null being treated as custom component ([2abde68](https://github.com/medly/medly-components/commit/2abde68dd032b56759850710d09f9f8d0978c8c8))
+
+
+
+
+
 ## [1.46.10](https://github.com/medly/medly-components/compare/@medly-components/core@1.46.9...@medly-components/core@1.46.10) (2021-03-03)
 
 
