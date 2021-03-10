@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.46.12](https://github.com/medly/medly-components/compare/@medly-components/core@1.46.11...@medly-components/core@1.46.12) (2021-03-10)
+
+
+### Bug Fixes
+
+* **core:** fix minimap positioning issue on table column resize, table resize ([c8b625b](https://github.com/medly/medly-components/commit/c8b625bea59a4a22828ffab0a1b46de438f1d10e))
+
+
+
+
+
 ## [1.46.11](https://github.com/medly/medly-components/compare/@medly-components/core@1.46.10...@medly-components/core@1.46.11) (2021-03-09)
 
 
