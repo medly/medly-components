@@ -1,11 +1,11 @@
 import { css, styled } from '@medly-components/utils';
 
-export const MinimapContainer = styled('tr')<{ offset: { left: number; bottom: number } }>`
+export const MinimapContainer = styled('tr')`
     position: sticky;
     display: inline;
     z-index: 999;
-    left: ${({ offset }) => `${offset.left}px`};
-    bottom: ${({ offset }) => `${offset.bottom}px`};
+    left: calc(100% - 19rem);
+    bottom: 9.5rem;
     opacity: ${({ theme }) => theme.table.minimap.opacity.default};
     transition: opacity 200ms ease-in-out;
     &:hover {

@@ -17,32 +17,24 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
             [mouseDown, setMouseDown] = useState(false),
             [oneMinimapToTableWidth, setOneMinimapToTableWidth] = useState(0) /* Table width to slider width ratio */,
             [oneTableToMinimapWidth, setOneTableToMinimapWidth] = useState(0) /* Slider width to table width ratio  */,
-            [containerOffset, setContainerOffset] = useState({ left: 0, bottom: 0 }),
             [isHorizontalScrollPresent, setIsHorizontalScrollPresent] = useState(false),
             sliderWidth = minimapWidth - controllerWidth - sliderContentPadding * 2,
+            tableScrollWidth = tableRef.current?.scrollWidth ?? 0,
+            tableClientWidth = tableRef.current?.clientWidth ?? 0,
             sliderContent = useMemo(
                 () => new Array(8).fill(null).map((_, index) => <SliderContent key={index} controllerWidth={controllerWidth} />),
                 [controllerWidth]
             );
 
-        const positionMinimap = useCallback(() => {
-                const minimapLeftOffset = 170 /* Minimum left offset for minimap left positioning */,
-                    minimumBottomOffset = 95; /* Minimum bottom offset for minimap bottom positioning */
-                return {
-                    left: tableRef.current ? tableRef.current.clientWidth - minimapLeftOffset : minimapLeftOffset,
-                    bottom: minimumBottomOffset
-                };
-            }, []),
-            setMinimapDimensions = useCallback(() => {
-                const tableW = tableRef.current ? tableRef.current.scrollWidth - tableRef.current.clientWidth : 0;
-                setOneMinimapToTableWidth(tableW / sliderWidth);
-                setOneTableToMinimapWidth(sliderWidth / tableW);
-                setContainerOffset(positionMinimap());
+        const setMinimapDimensions = useCallback(() => {
+                const tableWidth = tableRef.current ? tableRef.current.scrollWidth - tableRef.current.clientWidth : 0;
+                setOneMinimapToTableWidth(tableWidth / sliderWidth);
+                setOneTableToMinimapWidth(sliderWidth / tableWidth);
                 setIsHorizontalScrollPresent(tableRef.current && tableRef.current.scrollWidth > tableRef.current.offsetWidth);
             }, [sliderWidth]),
             onTableScroll = useCallback(
-                (e: React.UIEvent<HTMLDivElement>) => {
-                    e.stopPropagation();
+                (e?: React.UIEvent<HTMLDivElement>) => {
+                    e && e.stopPropagation();
                     if (!mouseDown && sliderControllerRef.current) {
                         sliderControllerRef.current.style.left = `${tableRef.current.scrollLeft * oneTableToMinimapWidth}px`;
                     }
@@ -83,14 +75,20 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
                 window.removeEventListener('mousemove', positionSliderController);
             }, [positionSliderController]);
 
-        useEffect(() => setMinimapDimensions(), [...minimapDimensionDeps]);
-
+        /* 
+            re-calculate minimap dimensions and re-position slider controller on change of tableScrollWidth and tableClientWidth i.e resizing table, 
+            resizing columns, on change of external dependencies 
+        */
         useEffect(() => {
             setMinimapDimensions();
+            onTableScroll();
+        }, [tableScrollWidth, tableClientWidth, ...minimapDimensionDeps]);
+
+        useEffect(() => {
             window.addEventListener('load', setMinimapDimensions);
             window.addEventListener('resize', setMinimapDimensions);
             return () => {
-                window.addEventListener('load', setMinimapDimensions);
+                window.removeEventListener('load', setMinimapDimensions);
                 window.removeEventListener('resize', setMinimapDimensions);
             };
         }, [setMinimapDimensions]);
@@ -119,7 +117,7 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
 
         return (
             isHorizontalScrollPresent && (
-                <MinimapContainer offset={containerOffset} {...restProps}>
+                <MinimapContainer {...restProps}>
                     <StyledMinimap id="minimap" sliderWidth={minimapWidth}>
                         <SliderRange
                             ref={sliderRangeRef}
@@ -144,8 +142,8 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
     }
 );
 
+Minimap.displayName = 'Minimap';
 Minimap.Style = MinimapContainer;
-
 Minimap.defaultProps = {
     minimapWidth: 126,
     controllerWidth: 40,
