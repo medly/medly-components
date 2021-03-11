@@ -33,6 +33,32 @@ To close the modal you can perform below actions:
     <Story name="Modal">{stories.Basic()}</Story>
 </Preview>
 
+> **Note**: If you are writting unit test for modal component and want to test whether it is unmounted on closing it, then you will also have to fire animationEnd event. See the example below:
+
+```tsx
+it('should un mount the modal on click on close icon', async () => {
+    const Component = () => {
+        const [open, setOpen] = useState(true),
+            handleModalClose = () => setOpen(false);
+
+        return (
+            <Modal open={open} onCloseModal={handleModalClose}>
+                <Modal.Header>
+                    <p>Demo Header</p>
+                </Modal.Header>
+                <Modal.Content>Lorem Ipsum is simply dummy text</Modal.Content>
+                <Modal.Actions>Demo Actions</Modal.Actions>
+            </Modal>
+        );
+    };
+    const { container } = render(<Component />),
+        modal = container.querySelector('#medly-modal-popup');
+    fireEvent.click(container.querySelector('#medly-modal-close-button'));
+    fireEvent.animationEnd(modal);
+    await waitFor(() => expect(modal).not.toBeInTheDocument());
+});
+```
+
 ### Props
 
 <Props of={Modal} />

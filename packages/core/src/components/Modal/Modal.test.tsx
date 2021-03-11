@@ -1,5 +1,5 @@
-import { cleanup, fireEvent, render } from '@test-utils';
-import React from 'react';
+import { cleanup, fireEvent, render, waitFor } from '@test-utils';
+import React, { useState } from 'react';
 import { Modal } from './Modal';
 import { ModalBackgroundStyled } from './Modal.styled';
 import { ModalBackgroundProps, Props } from './types';
@@ -55,6 +55,28 @@ describe('Modal component', () => {
         const { container } = modalRenderer({ open: true, onCloseModal: mockOnCloseModal });
         fireEvent.click(container.querySelector('#medly-modal-close-button'));
         expect(mockOnCloseModal).toBeCalled();
+    });
+
+    it('should un mount the modal on click on close icon', async () => {
+        const Component = () => {
+            const [open, setOpen] = useState(true),
+                handleModalClose = () => setOpen(false);
+
+            return (
+                <Modal open={open} onCloseModal={handleModalClose}>
+                    <Modal.Header>
+                        <p>Demo Header</p>
+                    </Modal.Header>
+                    <Modal.Content>Lorem Ipsum is simply dummy text</Modal.Content>
+                    <Modal.Actions>Demo Actions</Modal.Actions>
+                </Modal>
+            );
+        };
+        const { container } = render(<Component />),
+            modal = container.querySelector('#medly-modal-popup');
+        fireEvent.click(container.querySelector('#medly-modal-close-button'));
+        fireEvent.animationEnd(modal);
+        await waitFor(() => expect(modal).not.toBeInTheDocument());
     });
 
     it('should call onCloseModal on pressing escape key', () => {
