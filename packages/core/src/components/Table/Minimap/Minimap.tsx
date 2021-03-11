@@ -1,5 +1,6 @@
-import { WithStyle } from '@medly-components/utils';
+import { debounce, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import ResizeObserver from 'resize-observer-polyfill';
 import {
     Minimap as StyledMinimap,
     MinimapContainer,
@@ -19,8 +20,6 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
             [oneTableToMinimapWidth, setOneTableToMinimapWidth] = useState(0) /* Slider width to table width ratio  */,
             [isHorizontalScrollPresent, setIsHorizontalScrollPresent] = useState(false),
             sliderWidth = minimapWidth - controllerWidth - sliderContentPadding * 2,
-            tableScrollWidth = tableRef.current?.scrollWidth ?? 0,
-            tableClientWidth = tableRef.current?.clientWidth ?? 0,
             sliderContent = useMemo(
                 () => new Array(8).fill(null).map((_, index) => <SliderContent key={index} controllerWidth={controllerWidth} />),
                 [controllerWidth]
@@ -75,14 +74,32 @@ export const Minimap: FC<Props> & WithStyle = React.memo(
                 window.removeEventListener('mousemove', positionSliderController);
             }, [positionSliderController]);
 
+        const resizeObserver = useMemo(
+            () =>
+                new ResizeObserver(
+                    debounce(() => {
+                        setMinimapDimensions();
+                        onTableScroll();
+                    }, 150)
+                ),
+            [setMinimapDimensions, onTableScroll]
+        );
+
         /* 
-            re-calculate minimap dimensions and re-position slider controller on change of tableScrollWidth and tableClientWidth i.e resizing table, 
-            resizing columns, on change of external dependencies 
+            re-calculate minimap dimensions and re-position slider controller on change of tableScrollWidth and tableClientWidth i.e resizing table, resizing columns
         */
+        useEffect(() => {
+            if (tableRef.current) {
+                resizeObserver.observe(tableRef.current);
+                return () => resizeObserver.disconnect();
+            }
+        }, [resizeObserver, tableRef.current]);
+
+        /* this block can be removed after testing with table column configuration */
         useEffect(() => {
             setMinimapDimensions();
             onTableScroll();
-        }, [tableScrollWidth, tableClientWidth, ...minimapDimensionDeps]);
+        }, [...minimapDimensionDeps]);
 
         useEffect(() => {
             window.addEventListener('load', setMinimapDimensions);

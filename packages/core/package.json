@@ -23,6 +23,7 @@
         "@medly-components/utils": "1.8.15",
         "effector": "^20.16.1",
         "effector-react": "^20.7.4",
-        "polished": "^3.6.2"
+        "polished": "^3.6.2",
+        "resize-observer-polyfill": "^1.5.1"
     }
 }
