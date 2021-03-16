@@ -108,7 +108,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                     <Styled.InputWrapper multiline={multiline} size={size} variant={props.variant}>
                         <Styled.Input
                             ref={inputRef}
-                            value={value || testValue}
+                            value={value}
                             id={`${inputId}-input`}
                             aria-describedby={`${inputId}-helper-text`}
                             required={required}
