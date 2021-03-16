@@ -40,6 +40,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
             [maskLabel, setMaskLabel] = useState(mask),
             [inputWidth, setInputWidth] = useState(0);
 
+        const [testValue, setTestValue] = useState('');
         const validate = useCallback(
             (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
                 event.preventDefault();
@@ -64,11 +65,14 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                         e.target.value = maskedValue;
                         setMaskLabel(`${maskedValue}${mask.substr(maskedValue.length)}`);
                     }
-                    setIsTextPresent(!!e.target.value);
                     props.onChange && props.onChange(e);
                 },
                 [mask, props.onChange]
             );
+
+        useEffect(() => {
+            setIsTextPresent(!!value);
+        }, [value]);
 
         useEffect(() => {
             mask && value && value.toString().length === mask.length && setMaskLabel(value.toString());
@@ -105,7 +109,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                     <Styled.InputWrapper multiline={multiline} size={size} variant={props.variant}>
                         <Styled.Input
                             ref={inputRef}
-                            value={value}
+                            value={value || testValue}
                             id={`${inputId}-input`}
                             aria-describedby={`${inputId}-helper-text`}
                             required={required}
