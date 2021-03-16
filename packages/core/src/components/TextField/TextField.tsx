@@ -40,7 +40,6 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
             [maskLabel, setMaskLabel] = useState(mask),
             [inputWidth, setInputWidth] = useState(0);
 
-        const [testValue, setTestValue] = useState('');
         const validate = useCallback(
             (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
                 event.preventDefault();
