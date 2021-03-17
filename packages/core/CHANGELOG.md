@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.47.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.46.13...@medly-components/core@1.47.0) (2021-03-17)
+
+
+### Features
+
+* **core:** textField: setIsTextPresent updates based on value not on onChange ([6e8f17b](https://github.com/medly/medly-components/commit/6e8f17bc2c9256865ad8d22788a2719782f834eb))
+
+
+
+
+
 ## [1.46.13](https://github.com/medly/medly-components/compare/@medly-components/core@1.46.12...@medly-components/core@1.46.13) (2021-03-11)
 
 
