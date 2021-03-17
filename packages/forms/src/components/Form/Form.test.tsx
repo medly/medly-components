@@ -54,6 +54,17 @@ describe('Form', () => {
         expect(container).toMatchSnapshot();
     });
 
+    it('should render fields based on fieldSchema function', () => {
+        const testSchema = (values: { [k: string]: unknown }) => ({
+            firstName: { type: 'text', label: 'First Name' },
+            lastName: { type: 'text', label: 'Last Name', disabled: !values.firstName }
+        });
+        const { getByRole } = render(<Form fieldSchema={testSchema} onSubmit={jest.fn()} initialState={{}} />);
+        expect(getByRole('textbox', { name: 'Last Name' })).toBeDisabled();
+        fireEvent.change(getByRole('textbox', { name: 'First Name' }), { target: { value: 'demo' } });
+        expect(getByRole('textbox', { name: 'Last Name' })).not.toBeDisabled();
+    });
+
     it('should render error message properly', () => {
         const { container, getByText } = render(
             <Form fieldSchema={{ firstName: { required: true, type: 'text' } }} onSubmit={jest.fn()} />

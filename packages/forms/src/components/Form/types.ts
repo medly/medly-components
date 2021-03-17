@@ -10,8 +10,7 @@ export interface FormFieldSchema {
 
 export interface Props extends FormProps {
     /** Field Schema */
-
-    fieldSchema: FormFieldSchema;
+    fieldSchema: FormFieldSchema | ((values: { [key: string]: any }) => FormFieldSchema);
     /** Action Schema */
     actionSchema?: FormActionSchema;
     /** Function to be called on submit */
