@@ -64,11 +64,14 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                         e.target.value = maskedValue;
                         setMaskLabel(`${maskedValue}${mask.substr(maskedValue.length)}`);
                     }
-                    setIsTextPresent(!!e.target.value);
                     props.onChange && props.onChange(e);
                 },
                 [mask, props.onChange]
             );
+
+        useEffect(() => {
+            setIsTextPresent(!!value);
+        }, [value]);
 
         useEffect(() => {
             mask && value && value.toString().length === mask.length && setMaskLabel(value.toString());
