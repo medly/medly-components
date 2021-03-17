@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.47.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.47.0...@medly-components/core@1.47.1) (2021-03-17)
+
+
+### Bug Fixes
+
+* **core:** fix table footer style to keep it visible on table vertical scroll ([a16e58b](https://github.com/medly/medly-components/commit/a16e58b3c518973295a55982f0ea41eb8635b334))
+
+
+
+
+
 # [1.47.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.46.13...@medly-components/core@1.47.0) (2021-03-17)
 
 
