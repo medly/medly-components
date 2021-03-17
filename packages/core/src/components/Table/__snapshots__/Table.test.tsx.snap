@@ -495,6 +495,8 @@ exports[`Table component pagination should call onPageChange prop on click on an
   position: -webkit-sticky;
   position: sticky;
   left: 0;
+  bottom: 0;
+  z-index: 3;
   background-color: #ffffff;
   min-height: 4.8rem;
   border-top: 0.1rem solid #C7D0D8;

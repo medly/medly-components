@@ -6,6 +6,8 @@ export const TFoot = styled('tfoot')<{ showWithCardStyle: boolean }>`
     align-items: center;
     position: sticky;
     left: 0;
+    bottom: 0;
+    z-index: 3;
     background-color: ${({ theme, showWithCardStyle }) => (showWithCardStyle ? 'transparent' : theme.colors.white)};
     min-height: ${({ showWithCardStyle }) => (showWithCardStyle ? '5.4rem' : '4.8rem')};
     border-top: ${({ theme, showWithCardStyle }) => !showWithCardStyle && `0.1rem solid ${theme.table.borderColor}`};
