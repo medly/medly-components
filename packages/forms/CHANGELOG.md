@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.20.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.19.5...@medly-components/forms@1.20.0) (2021-03-18)
+
+
+### Features
+
+* update the type of fieldSchema in Form component to object and function ([1a82091](https://github.com/medly/medly-components/commit/1a8209190a556f17bcdd850842f2c7d6da2c9d0b))
+
+
+
+
+
 ## [1.19.5](https://github.com/medly/medly-components/compare/@medly-components/forms@1.19.4...@medly-components/forms@1.19.5) (2021-03-17)
 
 **Note:** Version bump only for package @medly-components/forms

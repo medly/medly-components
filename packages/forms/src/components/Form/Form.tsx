@@ -30,7 +30,8 @@ export const Form: React.FC<Props> & WithStyle = React.memo(
             ref
         ) => {
             const formId = useMemo(() => id || 'medly-dynamic-form', [id]),
-                { values, formKey, handlers, errorMessages, addErrorMessage, setErrorMessages } = useForm(initialState);
+                { values, formKey, handlers, errorMessages, addErrorMessage, setErrorMessages } = useForm(initialState),
+                fields = useMemo(() => (typeof fieldSchema === 'object' ? fieldSchema : fieldSchema(values)), [values, fieldSchema]);
 
             useEffect(() => {
                 apiErrorMessages && Object.keys(apiErrorMessages).length && setErrorMessages(apiErrorMessages);
@@ -54,7 +55,7 @@ export const Form: React.FC<Props> & WithStyle = React.memo(
                     <Fields
                         errorMessages={errorMessages}
                         addErrorMessage={addErrorMessage}
-                        fields={fieldSchema}
+                        fields={fields}
                         values={values}
                         handlers={handlers}
                         disabled={disabled}

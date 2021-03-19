@@ -103,7 +103,16 @@ To change the label of the form's default action button you can use `actionLabel
 
 ### Form Field Schema
 
-Form schema basically is a simple json which includes the info of each field. There are three field props which are common across all the fields are `type` | `gridColumn` | `gridRow`. Appart from that each field type will have its own props. To see the individual field props checkout out that component's docs page.
+Form schema could be a simple json or a function(`values => object`) which includes the info of each field. There are three field props which are common across all the fields are `type` | `gridColumn` | `gridRow`. Appart from that each field type will have its own props. To see the individual field props checkout out that component's docs page.
+
+> Note: If you pass function then you will recieve the latest form field values argument, according to which you can change the schema. For Ex.
+
+```ts
+const testSchema = (values: { [k: string]: unknown }) => ({
+    firstName: { type: 'text', label: 'First Name' },
+    lastName: { type: 'text', label: 'Last Name', disabled: !values.firstName }
+});
+```
 
 ##### Common field props
 
