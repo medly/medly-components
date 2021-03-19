@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.47.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.47.1...@medly-components/core@1.47.2) (2021-03-19)
+
+
+### Bug Fixes
+
+* **core:** add showCalendarIcon back into datepicker ([4c70b68](https://github.com/medly/medly-components/commit/4c70b689caaa94b0cb06f7d8384e7d5e606501d5))
+
+
+
+
+
 ## [1.47.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.47.0...@medly-components/core@1.47.1) (2021-03-17)
 
 
