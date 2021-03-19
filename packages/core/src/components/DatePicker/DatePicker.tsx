@@ -1,5 +1,5 @@
 import { DateRangeIcon } from '@medly-components/icons';
-import { isMobile, parseToDate, useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
+import { parseToDate, useCombinedRefs, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import { format } from 'date-fns';
 import React, { FormEvent, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Calendar from '../Calendar';
@@ -14,6 +14,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                 value,
                 onChange,
                 size,
+                displayFormat,
                 fullWidth,
                 minWidth,
                 required,
@@ -28,7 +29,6 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                 ...restProps
             } = props,
             id = props.id || props.label.toLowerCase().replace(/\s/g, '') || 'medly-datepicker', // TODO:- Remove static ID concept to avoid dup ID
-            displayFormat = isMobile ? 'yyyy-MM-dd' : props.displayFormat,
             date: Date | null = useMemo(
                 () => (value instanceof Date ? value : typeof value === 'string' ? parseToDate(value, displayFormat) : null),
                 [value, displayFormat]
@@ -42,7 +42,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
         useEffect(() => {
-            date && setTextValue(format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), isMobile ? '$&' : ' $& '));
+            date && setTextValue(format(date, displayFormat).replace(new RegExp('\\/|\\-', 'g'), ' $& '));
         }, [date, displayFormat]);
         const onTextChange = useCallback(
                 (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -116,26 +116,6 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
             </DateIconWrapper>
         );
 
-        const sharedProps = {
-                errorText: errorText || builtInErrorMessage,
-                id: id,
-                ref: inputRef,
-                required: required,
-                fullWidth: true,
-                size: size,
-                disabled: disabled,
-                value: textValue,
-                onChange: onTextChange,
-                ...{ ...restProps, onBlur, onFocus, onInvalid }
-            },
-            mobileProps = { ...sharedProps, type: 'date' },
-            desktopProps = {
-                ...sharedProps,
-                ...(showCalendarIcon && { suffix: suffixEl }),
-                pattern: datePickerPattern[displayFormat],
-                mask: displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()
-            };
-
         return (
             <Wrapper
                 id={`${id}-datepicker-wrapper`}
@@ -146,7 +126,22 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                 className={className}
                 placement={popoverPlacement}
             >
-                <TextField {...(isMobile ? mobileProps : desktopProps)} />
+                <TextField
+                    errorText={errorText || builtInErrorMessage}
+                    id={id}
+                    ref={inputRef}
+                    required={required}
+                    {...(showCalendarIcon && { suffix: suffixEl })}
+                    fullWidth
+                    mask={displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()}
+                    pattern={datePickerPattern[displayFormat]}
+                    size={size}
+                    disabled={disabled}
+                    value={textValue}
+                    onChange={onTextChange}
+                    {...{ ...restProps, onBlur, onFocus, onInvalid }}
+                />
+
                 {showCalendar && (
                     <Calendar
                         id={`${id}-calendar`}
