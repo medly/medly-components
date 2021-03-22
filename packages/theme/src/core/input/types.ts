@@ -2,7 +2,7 @@ export interface InputTheme {
     color: string;
     bgColor: string;
     borderColor: string;
-    disabledBorderColor:string;
+    disabledBorderColor: string;
     descriptionColor: string;
     disabledBgcolor: string;
     focusedBorderColor: string;
