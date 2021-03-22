@@ -5,6 +5,7 @@ const input: InputTheme = {
     color: colors.grey[800],
     bgColor: colors.white,
     borderColor: colors.grey[400],
+    disabledBorderColor: colors.grey[300],
     descriptionColor: colors.professionalNavy,
     disabledBgcolor: colors.grey[300],
     focusedBorderColor: colors.professionalNavy,
