@@ -14,7 +14,7 @@ export const Label = styled('label').attrs(({ theme: { input, font } }) => ({ in
     background-clip: padding-box;
     background-color: ${({ disabled, input }) => (disabled ? input.disabledBgcolor : input.bgColor)};
     box-sizing: border-box;
-    border: 1px solid ${props => props.input.borderColor};
+    border: 1px solid ${({ disabled, input }) => disabled? input.disabledBorderColor: input.borderColor};
     border-radius: 5px;
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     text-align: center;
