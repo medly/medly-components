@@ -51,7 +51,7 @@ exports[`Medly sidenav header should render properly when it is hovered 1`] = `
     >
       <mask
         height="29"
-        id="a"
+        id="mask0"
         maskUnits="userSpaceOnUse"
         width="34"
         x="0"
@@ -63,7 +63,7 @@ exports[`Medly sidenav header should render properly when it is hovered 1`] = `
         />
       </mask>
       <g
-        mask="url(#a)"
+        mask="url(#mask0)"
       >
         <path
           d="M31.79 20.587a4.344 4.344 0 0 1-2.815 5.487c-2.3.743-4.775-.51-5.522-2.798L18.822 9.062c-.747-2.288.512-4.744 2.815-5.487 2.304-.74 4.774.512 5.524 2.802l4.629 14.21z"
@@ -71,7 +71,7 @@ exports[`Medly sidenav header should render properly when it is hovered 1`] = `
         />
         <path
           d="M0 0h11.832v23.372H0z"
-          fill="url(#b)"
+          fill="url(#pattern0)"
           transform="matrix(1.1905 0 0 -1.0119 6.694 26.65)"
         />
         <path
@@ -80,7 +80,7 @@ exports[`Medly sidenav header should render properly when it is hovered 1`] = `
         />
         <path
           d="M0 0h17.255v28.784H0z"
-          fill="url(#c)"
+          fill="url(#pattern1)"
           transform="matrix(.806 0 0 -.806 6.46 26.293)"
         />
         <path
@@ -91,30 +91,30 @@ exports[`Medly sidenav header should render properly when it is hovered 1`] = `
       <defs>
         <pattern
           height="1"
-          id="b"
+          id="pattern0"
           patternContentUnits="objectBoundingBox"
           width="1"
         >
           <use
-            xlink:href="#d"
+            xlink:href="#image0"
           />
         </pattern>
         <pattern
           height="1"
-          id="c"
+          id="pattern1"
           patternContentUnits="objectBoundingBox"
           width="1"
         >
           <use
-            xlink:href="#e"
+            xlink:href="#image1"
           />
         </pattern>
         <image
-          id="d"
+          id="image0"
           xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAPAA8AAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA"
         />
         <image
-          id="e"
+          id="image1"
           xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAWQBZAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA"
         />
       </defs>
@@ -186,7 +186,7 @@ exports[`Medly sidenav header should render properly when it is not hovered 1`] 
     >
       <mask
         height="29"
-        id="a"
+        id="mask0"
         maskUnits="userSpaceOnUse"
         width="34"
         x="0"
@@ -198,7 +198,7 @@ exports[`Medly sidenav header should render properly when it is not hovered 1`] 
         />
       </mask>
       <g
-        mask="url(#a)"
+        mask="url(#mask0)"
       >
         <path
           d="M31.79 20.587a4.344 4.344 0 0 1-2.815 5.487c-2.3.743-4.775-.51-5.522-2.798L18.822 9.062c-.747-2.288.512-4.744 2.815-5.487 2.304-.74 4.774.512 5.524 2.802l4.629 14.21z"
@@ -206,7 +206,7 @@ exports[`Medly sidenav header should render properly when it is not hovered 1`] 
         />
         <path
           d="M0 0h11.832v23.372H0z"
-          fill="url(#b)"
+          fill="url(#pattern0)"
           transform="matrix(1.1905 0 0 -1.0119 6.694 26.65)"
         />
         <path
@@ -215,7 +215,7 @@ exports[`Medly sidenav header should render properly when it is not hovered 1`] 
         />
         <path
           d="M0 0h17.255v28.784H0z"
-          fill="url(#c)"
+          fill="url(#pattern1)"
           transform="matrix(.806 0 0 -.806 6.46 26.293)"
         />
         <path
@@ -226,30 +226,30 @@ exports[`Medly sidenav header should render properly when it is not hovered 1`] 
       <defs>
         <pattern
           height="1"
-          id="b"
+          id="pattern0"
           patternContentUnits="objectBoundingBox"
           width="1"
         >
           <use
-            xlink:href="#d"
+            xlink:href="#image0"
           />
         </pattern>
         <pattern
           height="1"
-          id="c"
+          id="pattern1"
           patternContentUnits="objectBoundingBox"
           width="1"
         >
           <use
-            xlink:href="#e"
+            xlink:href="#image1"
           />
         </pattern>
         <image
-          id="d"
+          id="image0"
           xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAPAA8AAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA"
         />
         <image
-          id="e"
+          id="image1"
           xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEAWQBZAAD/7AARRHVja3kAAQAEAAAAHgAA/+4AIUFkb2JlAGTAAAAAAQMA"
         />
       </defs>

@@ -19,7 +19,20 @@ module.exports = function (api) {
                     transpileTemplateLiterals: true
                 }
             ],
-            'inline-react-svg',
+            [
+                'inline-react-svg',
+                {
+                    svgo: {
+                        plugins: [
+                            {
+                                cleanupIDs: {
+                                    minify: false
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
             'polished'
         ],
         ignore = ['node_modules'];
