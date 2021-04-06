@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.47.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.47.2...@medly-components/core@1.47.3) (2021-04-06)
+
+
+### Bug Fixes
+
+* button loader visility issue ([cc22527](https://github.com/medly/medly-components/commit/cc22527fe5b16439518ad229024daa0dad770ef6))
+
+
+
+
+
 ## [1.47.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.47.1...@medly-components/core@1.47.2) (2021-03-19)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.20.17](https://github.com/medly/medly-components/compare/@medly-components/layout@1.20.16...@medly-components/layout@1.20.17) (2021-04-06)
+
+
+### Bug Fixes
+
+* button loader visility issue ([cc22527](https://github.com/medly/medly-components/commit/cc22527fe5b16439518ad229024daa0dad770ef6))
+
+
+
+
+
 ## [1.20.16](https://github.com/medly/medly-components/compare/@medly-components/layout@1.20.15...@medly-components/layout@1.20.16) (2021-03-19)
 
 **Note:** Version bump only for package @medly-components/layout
