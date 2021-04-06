@@ -181,7 +181,7 @@ exports[`Center Aligned Loader should render properly with default props 1`] = `
         cx="25.5"
         cy="25.5"
         r="24"
-        stroke="url(#a)"
+        stroke="url(#lg)"
         stroke-width="3"
       >
         <animatetransform
@@ -196,7 +196,7 @@ exports[`Center Aligned Loader should render properly with default props 1`] = `
       </circle>
       <defs>
         <lineargradient
-          id="a"
+          id="lg"
         >
           <stop
             offset="70%"
