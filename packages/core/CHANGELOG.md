@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.48.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.47.3...@medly-components/core@1.48.0) (2021-04-16)
+
+
+### Bug Fixes
+
+* **core:** update background scroll lock on dialog box to match modal changes ([422cd97](https://github.com/medly/medly-components/commit/422cd970d6351f04a0994b6083fdbd29fce89d80))
+* **core:** update modal logic to only change body style when modal opens/closes ([8afb33b](https://github.com/medly/medly-components/commit/8afb33b2c37e581ea9b0db679de31080e8086778))
+
+
+### Features
+
+* update snapshot tests ([2ed095d](https://github.com/medly/medly-components/commit/2ed095dd5d9628a9a16f14d13567ee8215c05b98))
+
+
+
+
+
 ## [1.47.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.47.2...@medly-components/core@1.47.3) (2021-04-06)
 
 
