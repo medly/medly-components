@@ -21,36 +21,31 @@ export const DialogBox: FC<Props> & WithStyle & DialogBoxStaticProps = React.mem
         }, [shouldCloseOnOutsideClick, onCloseModal]);
 
         useEffect(() => {
-            if (open) setShouldRender(true);
+            if (open) {
+                setShouldRender(true);
+                document.body.style.overflow = 'hidden';
+            }
+            return () => {
+                document.body.style.overflow = 'unset';
+            };
         }, [open]);
 
         const handleAnimationEnd = useCallback(() => {
-            if (!open) setShouldRender(false);
+            if (!open) {
+                setShouldRender(false);
+                document.body.style.overflow = 'unset';
+            }
         }, [open]);
 
         useEffect(() => {
             open && isEscPressed && onCloseModal();
         }, [open, isEscPressed]);
 
-        useEffect(() => {
-            document.body.style.overflow = shouldRender ? 'hidden' : 'unset';
-            return () => {
-                document.body.style.overflow = 'unset';
-            };
-        }, [shouldRender]);
-
         return (
             shouldRender && (
                 <DialogBoxBackgroundStyled {...{ ...restProps, id, open }} onClick={handleBackgroundClick}>
-                    <Popup
-                        ref={dialogBoxRef}
-                        id={`${id}-popup`}
-                        onAnimationEnd={handleAnimationEnd}
-                        {...{ minWidth, minHeight, open }}
-                    >
-                        <DialogBoxContext.Provider value={{ id }}>
-                            {children}
-                        </DialogBoxContext.Provider>
+                    <Popup ref={dialogBoxRef} id={`${id}-popup`} onAnimationEnd={handleAnimationEnd} {...{ minWidth, minHeight, open }}>
+                        <DialogBoxContext.Provider value={{ id }}>{children}</DialogBoxContext.Provider>
                     </Popup>
                 </DialogBoxBackgroundStyled>
             )

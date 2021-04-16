@@ -28,22 +28,26 @@ export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
         const handleBackgroundClick = useCallback(() => {
                 shouldCloseOnOutsideClick && onCloseModal();
             }, [shouldCloseOnOutsideClick, onCloseModal]),
-            handleAnimationEnd = useCallback(() => !open && setShouldRender(false), [open]);
+            handleAnimationEnd = useCallback(() => {
+                if (!open) {
+                    setShouldRender(false);
+                    document.body.style.overflow = 'unset';
+                }
+            }, [open]);
 
         useEffect(() => {
-            open && setShouldRender(true);
+            if (open) {
+                setShouldRender(true);
+                document.body.style.overflow = 'hidden';
+            }
+            return () => {
+                document.body.style.overflow = 'unset';
+            };
         }, [open]);
 
         useEffect(() => {
             open && isEscPressed && onCloseModal();
         }, [open, isEscPressed]);
-
-        useEffect(() => {
-            document.body.style.overflow = shouldRender ? 'hidden' : 'unset';
-            return () => {
-                document.body.style.overflow = 'unset';
-            };
-        }, [shouldRender]);
 
         return (
             shouldRender && (
