@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.48.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.48.0...@medly-components/core@1.48.1) (2021-04-22)
+
+
+### Bug Fixes
+
+* button type issue in multiselect chip component ([3f1fa53](https://github.com/medly/medly-components/commit/3f1fa53e082897b4d4b09799bedffea1b503d57a))
+
+
+
+
+
 # [1.48.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.47.3...@medly-components/core@1.48.0) (2021-04-16)
 
 
