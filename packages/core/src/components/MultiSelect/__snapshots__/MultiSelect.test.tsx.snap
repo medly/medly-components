@@ -1880,6 +1880,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
           class="c16"
           disabled=""
           id="pharmacy-disabled-chip"
+          type="button"
         >
           <span
             class="c17"
@@ -3178,6 +3179,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
           class="c16"
           disabled=""
           id="pharmacy-disabled-chip"
+          type="button"
         >
           <span
             class="c11"
