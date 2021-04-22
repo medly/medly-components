@@ -13,7 +13,7 @@ const getOuterStyle = ({ theme, state }: WithThemeProp & { state: 'default' | 'h
         }
     `;
 
-export const Chip = styled('button')`
+export const Chip = styled('button').attrs({ type: 'button' })`
     user-select: none;
     border: 1px solid;
     max-width: max-content;
