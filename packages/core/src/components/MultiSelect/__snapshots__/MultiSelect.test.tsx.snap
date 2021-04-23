@@ -68,17 +68,17 @@ exports[`MultiSelect component should render correctly with all the props given 
   color: #546A7F;
 }
 
-.c3 .sc-AxiKw,
-.c3 .sc-AxhCb {
+.c3 .sc-AxhCb,
+.c3 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c3 .sc-AxiKw *,
-.c3 .sc-AxhCb * {
+.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-AxjAm {
+.c3 ~ .sc-AxirZ {
   color: #546A7F;
 }
 
@@ -113,17 +113,21 @@ exports[`MultiSelect component should render correctly with all the props given 
   color: #b0bcc8;
 }
 
-.c3 .sc-AxiKw,
-.c3 .sc-AxhCb {
+.c3 .sc-AxjAm {
   color: #b0bcc8;
 }
 
-.c3 .sc-AxiKw *,
-.c3 .sc-AxhCb * {
+.c3 .sc-AxhCb,
+.c3 .sc-AxhUy {
+  color: #b0bcc8;
+}
+
+.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy * {
   fill: #b0bcc8;
 }
 
-.c3 ~ .sc-AxjAm {
+.c3 ~ .sc-AxirZ {
   color: #b0bcc8;
 }
 
@@ -182,7 +186,7 @@ exports[`MultiSelect component should render correctly with all the props given 
 }
 
 .c5,
-.c5 ~ .sc-AxheI {
+.c5 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -215,7 +219,7 @@ exports[`MultiSelect component should render correctly with all the props given 
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-AxheI {
+.c5:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -250,7 +254,7 @@ exports[`MultiSelect component should render correctly with all the props given 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-AxheI {
+.c5:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -564,17 +568,17 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   color: #546A7F;
 }
 
-.c3 .sc-AxiKw,
-.c3 .sc-AxhCb {
+.c3 .sc-AxhCb,
+.c3 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c3 .sc-AxiKw *,
-.c3 .sc-AxhCb * {
+.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-AxjAm {
+.c3 ~ .sc-AxirZ {
   color: #546A7F;
 }
 
@@ -615,17 +619,17 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxiKw,
-.c3:focus-within:hover .sc-AxiKw,
 .c3:focus-within .sc-AxhCb,
-.c3:focus-within:hover .sc-AxhCb {
+.c3:focus-within:hover .sc-AxhCb,
+.c3:focus-within .sc-AxhUy,
+.c3:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxiKw *,
-.c3:focus-within:hover .sc-AxiKw *,
 .c3:focus-within .sc-AxhCb *,
-.c3:focus-within:hover .sc-AxhCb * {
+.c3:focus-within:hover .sc-AxhCb *,
+.c3:focus-within .sc-AxhUy *,
+.c3:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -701,7 +705,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 }
 
 .c5,
-.c5 ~ .sc-AxheI {
+.c5 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -734,7 +738,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-AxheI {
+.c5:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -769,7 +773,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-AxheI {
+.c5:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -966,17 +970,17 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   color: #546A7F;
 }
 
-.c3 .sc-AxiKw,
-.c3 .sc-AxhCb {
+.c3 .sc-AxhCb,
+.c3 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c3 .sc-AxiKw *,
-.c3 .sc-AxhCb * {
+.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-AxjAm {
+.c3 ~ .sc-AxirZ {
   color: #546A7F;
 }
 
@@ -1017,17 +1021,17 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxiKw,
-.c3:focus-within:hover .sc-AxiKw,
 .c3:focus-within .sc-AxhCb,
-.c3:focus-within:hover .sc-AxhCb {
+.c3:focus-within:hover .sc-AxhCb,
+.c3:focus-within .sc-AxhUy,
+.c3:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxiKw *,
-.c3:focus-within:hover .sc-AxiKw *,
 .c3:focus-within .sc-AxhCb *,
-.c3:focus-within:hover .sc-AxhCb * {
+.c3:focus-within:hover .sc-AxhCb *,
+.c3:focus-within .sc-AxhUy *,
+.c3:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -1107,7 +1111,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c5,
-.c5 ~ .sc-AxheI {
+.c5 ~ .sc-Axmtr {
   font-size: 1.6rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -1140,7 +1144,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-AxheI {
+.c5:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -1175,7 +1179,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   transform: translateY(-87%) scale(0.75);
 }
 
-.c5:not(:placeholder-shown) ~ .sc-AxheI {
+.c5:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 
@@ -2256,17 +2260,17 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   color: #546A7F;
 }
 
-.c3 .sc-AxiKw,
-.c3 .sc-AxhCb {
+.c3 .sc-AxhCb,
+.c3 .sc-AxhUy {
   color: #546A7F;
 }
 
-.c3 .sc-AxiKw *,
-.c3 .sc-AxhCb * {
+.c3 .sc-AxhCb *,
+.c3 .sc-AxhUy * {
   fill: #546A7F;
 }
 
-.c3 ~ .sc-AxjAm {
+.c3 ~ .sc-AxirZ {
   color: #546A7F;
 }
 
@@ -2307,17 +2311,17 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxiKw,
-.c3:focus-within:hover .sc-AxiKw,
 .c3:focus-within .sc-AxhCb,
-.c3:focus-within:hover .sc-AxhCb {
+.c3:focus-within:hover .sc-AxhCb,
+.c3:focus-within .sc-AxhUy,
+.c3:focus-within:hover .sc-AxhUy {
   color: #126AFA;
 }
 
-.c3:focus-within .sc-AxiKw *,
-.c3:focus-within:hover .sc-AxiKw *,
 .c3:focus-within .sc-AxhCb *,
-.c3:focus-within:hover .sc-AxhCb * {
+.c3:focus-within:hover .sc-AxhCb *,
+.c3:focus-within .sc-AxhUy *,
+.c3:focus-within:hover .sc-AxhUy * {
   fill: #126AFA;
 }
 
@@ -2393,7 +2397,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c5,
-.c5 ~ .sc-AxheI {
+.c5 ~ .sc-Axmtr {
   font-size: 1.4rem;
   font-weight: 400;
   -webkit-letter-spacing: 0rem;
@@ -2426,7 +2430,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 }
 
 .c5:disabled ~ .c6,
-.c5:disabled ~ .sc-AxheI {
+.c5:disabled ~ .sc-Axmtr {
   cursor: not-allowed;
 }
 
@@ -2459,7 +2463,12 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   opacity: 0;
 }
 
-.c5:not(:placeholder-shown) ~ .sc-AxheI {
+.c5:not(:placeholder-shown) ~ .sc-AxjAm,
+.c5:focus ~ .sc-AxjAm {
+  position: relative;
+}
+
+.c5:not(:placeholder-shown) ~ .sc-Axmtr {
   opacity: 1;
 }
 

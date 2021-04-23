@@ -29,6 +29,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                 minRows,
                 validator,
                 className,
+                withCharacterCount,
                 ...restProps
             } = props,
             inputId = useMemo(() => id || 'medly-textField', [id]),
@@ -38,7 +39,10 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
             isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]),
             [isTextPresent, setIsTextPresent] = useState(!!value || !!restProps.defaultValue),
             [maskLabel, setMaskLabel] = useState(mask),
-            [inputWidth, setInputWidth] = useState(0);
+            [inputWidth, setInputWidth] = useState(0),
+            [characterCountValue, setCharacterCountValue] = useState(
+                value ? value.toString().length : restProps.defaultValue ? restProps.defaultValue.toString().length : 0
+            );
 
         const validate = useCallback(
             (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
@@ -59,6 +63,9 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
             onInvalid = useCallback((event: FormEvent<HTMLInputElement>) => validate(event, props.onInvalid), [validate, props.onInvalid]),
             onChange = useCallback(
                 (e: React.ChangeEvent<HTMLInputElement>) => {
+                    const valueString = e.target.value ? e.target.value.toString() : '';
+                    setCharacterCountValue(valueString.length);
+
                     if (mask) {
                         const maskedValue = getMaskedValue(e, mask);
                         e.target.value = maskedValue;
@@ -138,6 +145,13 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                         >
                             {label}
                         </Styled.Label>
+                        {withCharacterCount && props.maxLength && (
+                            <Styled.CharacterCount
+                                variant={props.variant}
+                                size={size}
+                                multiline={multiline}
+                            >{`${characterCountValue}/${props.maxLength}`}</Styled.CharacterCount>
+                        )}
                     </Styled.InputWrapper>
                     {isSuffixPresent && (
                         <Styled.Suffix size={size}>
@@ -167,5 +181,6 @@ TextField.defaultProps = {
     label: '',
     helperText: '',
     errorText: '',
-    minRows: 1
+    minRows: 1,
+    withCharacterCount: false
 };

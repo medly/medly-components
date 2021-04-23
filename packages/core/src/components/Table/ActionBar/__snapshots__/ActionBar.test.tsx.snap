@@ -243,10 +243,10 @@ exports[`ActionBar component should not render Action bar with passed parameters
 
 <div>
   <div
-    class="sc-prOVx c0"
+    class="sc-qQmou c0"
   >
     <div
-      class="sc-fzomuh c1"
+      class="sc-fzqAui c1"
     >
       <div
         class="c2"
@@ -557,10 +557,10 @@ exports[`ActionBar component should render correctly with all the default props 
 
 <div>
   <div
-    class="sc-prOVx c0"
+    class="sc-qQmou c0"
   >
     <div
-      class="sc-fzomuh c1"
+      class="sc-fzqAui c1"
     >
       <div
         class="c2"

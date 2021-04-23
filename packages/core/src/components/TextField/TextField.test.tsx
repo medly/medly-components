@@ -73,6 +73,33 @@ describe('TextField', () => {
         expect(container.querySelector('label')).toMatchSnapshot();
     });
 
+    describe('character count', () => {
+        it('should correctly render character count if we pass withCharacterCount and maxlength', () => {
+            const { container } = render(<TextField withCharacterCount maxLength={20} />);
+            expect(container).toMatchSnapshot();
+        });
+
+        it('should correctly render character count for S size TextField if we pass withCharacterCount and maxlength', () => {
+            const { container } = render(<TextField withCharacterCount maxLength={20} size="S" />);
+            expect(container).toMatchSnapshot();
+        });
+
+        it('should correctly render character count for multiline TextField if we pass withCharacterCount and maxlength', () => {
+            const { container } = render(<TextField withCharacterCount maxLength={20} multiline />);
+            expect(container).toMatchSnapshot();
+        });
+
+        it('should correctly render character count for fusion TextField variant if we pass withCharacterCount and maxlength', () => {
+            const { container } = render(<TextField withCharacterCount maxLength={20} variant="fusion" />);
+            expect(container).toMatchSnapshot();
+        });
+
+        it('should render correct character count if we pass withCharacterCount, maxlength, and defaultValue', () => {
+            const { getByText } = render(<TextField withCharacterCount maxLength={20} defaultValue="test" />);
+            expect(getByText('4/20')).toBeInTheDocument();
+        });
+    });
+
     it('should call onChange prop on changing the value', () => {
         const mockOnChange = jest.fn(),
             { container } = render(<TextField value="11" label="Name" required onChange={mockOnChange} />);

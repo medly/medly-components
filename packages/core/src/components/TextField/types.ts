@@ -36,6 +36,8 @@ export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefi
     multiline?: boolean;
     /** Use minRows when multiline is true; minRows is the number of rows in text area */
     minRows?: number;
+    /** Set to true to display the character count of the current input value */
+    withCharacterCount?: boolean;
 }
 
 export interface StyledProps extends TextFieldProps, TextFieldTheme {
