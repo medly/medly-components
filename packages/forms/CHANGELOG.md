@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.21.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.20.4...@medly-components/forms@1.21.0) (2021-05-04)
+
+
+### Features
+
+* **core:** add withCharacterCount to TextField component ([d71e68d](https://github.com/medly/medly-components/commit/d71e68d2ccac67cc1779a99a4598914096cd9757))
+
+
+
+
+
 ## [1.20.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.20.3...@medly-components/forms@1.20.4) (2021-04-22)
 
 **Note:** Version bump only for package @medly-components/forms
