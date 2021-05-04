@@ -35,6 +35,8 @@ Basic TextField component with lot of customization
                     errorText={text('Error Text', '')}
                     multiline={boolean('Multiline', false)}
                     minRows={number('Rows', 3)}
+                    withCharacterCount={boolean('Character Count', false)}
+                    maxLength={number('Max Length', null)}
                 />
             );
         }}
@@ -72,6 +74,14 @@ To add the masking feature you need to provide `mask` prop. For now this feature
     <TextField id="outline" type="Name" variant="outlined" label="Address" defaultValue="Demo" errorText="Something wrong" />
     <TextField id="filled" type="Name" variant="filled" label="Address" defaultValue="Demo" errorText="Something wrong" />
     <TextField id="fusion" type="Name" variant="fusion" label="Address" defaultValue="Demo" errorText="Something wrong" />
+</Preview>
+
+##### Character Count
+
+To display character count, you must provide the `withCharacterCount` prop and a `maxLength` prop.
+
+<Preview withToolbar>
+    <TextField id="outline" type="Name" variant="outlined" label="Address" defaultValue="Demo" withCharacterCount maxLength={10} />
 </Preview>
 
 ##### With Prefix and suffix

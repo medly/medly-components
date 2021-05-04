@@ -1,5 +1,6 @@
 import { css, styled } from '@medly-components/utils';
 import { InnerWrapperProps } from '../../types';
+import { CharacterCount } from '../CharacterCount.styled';
 import { HelperText } from '../HelperText.styled';
 import { Label } from '../Label.styled';
 import { Prefix } from '../Prefix.styled';
@@ -20,6 +21,9 @@ const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => 
         box-shadow: 0 0 0 100000px ${textField[variant].disabled.bgColor} inset;
     }
     ${Label} {
+        color: ${textField[variant].disabled.labelColor};
+    }
+    ${CharacterCount} {
         color: ${textField[variant].disabled.labelColor};
     }
     ${Prefix}, ${Suffix} {
@@ -139,7 +143,7 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
     padding: ${getPadding};
     transition: all 100ms ease-out;
     cursor: text;
-    
+
     ${Label} {
         color: ${({ variant, textField }) => textField[variant].default.labelColor};
     }

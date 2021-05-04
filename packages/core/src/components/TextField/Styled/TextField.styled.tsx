@@ -1,5 +1,6 @@
 import { css, getFontStyle, styled } from '@medly-components/utils';
 import { StyledProps } from '../types';
+import { CharacterCount } from './CharacterCount.styled';
 import { Label } from './Label.styled';
 import { MaskPlaceholder } from './MaskPlaceholder.styled';
 
@@ -8,11 +9,21 @@ const transformLabel = ({ variant, multiline }: StyledProps) => {
         return css`
             background-color: white;
             padding: 0 0.5rem;
-            transform: translateX(-0.4rem) translateY(${multiline ? '-120%' : '-135%'}) scale(0.67);
+            transform: translateX(-0.4rem) translateY(${multiline ? '-120%' : '-140%'}) scale(0.67);
         `;
     } else {
         return css`
             transform: translateY(${multiline ? '-50%' : '-87%'}) scale(0.75);
+        `;
+    }
+};
+
+const transformCharacterCount = ({ variant }: StyledProps) => {
+    if (variant === 'fusion') {
+        return css`
+            background-color: white;
+            padding: 0 0.5rem;
+            transform: translateY(-167%);
         `;
     }
 };
@@ -70,6 +81,11 @@ export const Input = styled('input')<StyledProps>`
     &:not(:placeholder-shown) ~ ${Label}, &:focus ~ ${Label} {
         opacity: ${({ size }) => size === 'S' && 0};
         ${({ size }) => size === 'M' && transformLabel};
+    }
+
+    &:not(:placeholder-shown) ~ ${CharacterCount}, &:focus ~ ${CharacterCount} {
+        position: ${({ size }) => size === 'S' && 'relative'};
+        ${({ size }) => size === 'M' && transformCharacterCount};
     }
 
     &:focus ~ ${Label} {
