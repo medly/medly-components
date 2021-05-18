@@ -11,10 +11,11 @@ const renderer = ({
     tabSize = 'S',
     tabStyle = 'CLOSED',
     tabBackground = 'WHITE',
-    forceRender = false
+    forceRender = false,
+    hidePanel = false
 }: Props) =>
     render(
-        <Tabs {...{ defaultActive, active, onChange, tabSize, tabStyle, tabBackground, forceRender }}>
+        <Tabs {...{ defaultActive, active, onChange, tabSize, tabStyle, tabBackground, forceRender, hidePanel }}>
             <Tab id="tab1" label="Add" count={30} helperText="Details for tab1">
                 Content for the add panel
             </Tab>
@@ -51,6 +52,11 @@ describe('Tabs', () => {
     it('should not render anything if there is no children', () => {
         const { container } = render(<Tabs />);
         expect(container).toBeEmptyDOMElement();
+    });
+
+    it('should not render tabPanel if hidePanel prop is given', () => {
+        renderer({ hidePanel: true });
+        expect(screen.queryByText('Content for the add panel')).not.toBeInTheDocument();
     });
 
     it('should select expected tab on click on any tab, when active prop is not passed', async () => {
