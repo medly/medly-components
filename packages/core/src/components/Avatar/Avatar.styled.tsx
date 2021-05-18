@@ -50,6 +50,7 @@ export const AvatarStyled = styled('div').attrs(({ theme: { avatar: { defaults }
 }))<StyledProps>`
     display: inline-block;
     text-align: center;
+    min-width: max-content;
     width: ${getAvatarSize};
     height: ${getAvatarSize};
     border-radius: ${({ defaults }) => defaults.borderRadius};
