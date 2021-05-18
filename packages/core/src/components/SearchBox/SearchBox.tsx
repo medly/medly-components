@@ -11,7 +11,17 @@ import { Props } from './types';
 
 export const SearchBox: FC<Props> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { options: defaultOptions, size, placeholder, onInputChange, onOptionSelected, onClear, onSearch, ...restProps } = props;
+        const {
+            options: defaultOptions,
+            size,
+            placeholder,
+            onInputChange,
+            onOptionSelected,
+            onClear,
+            onSearch,
+            className,
+            ...restProps
+        } = props;
         const wrapperRef = useRef<any>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
             isFocused = useRef(false),
@@ -81,7 +91,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
         }, [enterPress, areOptionsVisible]);
 
         return (
-            <Styled.SearchBoxWrapper ref={wrapperRef} areOptionsVisible={areOptionsVisible} size={size}>
+            <Styled.SearchBoxWrapper ref={wrapperRef} areOptionsVisible={areOptionsVisible} size={size} className={className}>
                 <SearchInput
                     placeholder={placeholder}
                     onChange={handleChange}
