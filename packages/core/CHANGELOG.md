@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.50.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.49.0...@medly-components/core@1.50.0) (2021-05-18)
+
+
+### Features
+
+* add as and hidePanel props in Tabs component ([00faebc](https://github.com/medly/medly-components/commit/00faebc0d5ab8344cd5d313b04b33486dbfc997d))
+
+
+
+
+
 # [1.49.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.48.1...@medly-components/core@1.49.0) (2021-05-04)
 
 
