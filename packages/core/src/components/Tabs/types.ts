@@ -10,6 +10,8 @@ export type TabBackground = 'WHITE' | 'GREY';
 export type TabStyle = 'OPEN' | 'CLOSED';
 
 export interface Props extends HTMLProps<HTMLDivElement> {
+    /** To be used to render tabs as any html tag */
+    as?: any;
     /** Id of the default active tab */
     defaultActive?: any;
     /** Id of the active tab */
@@ -24,6 +26,8 @@ export interface Props extends HTMLProps<HTMLDivElement> {
     tabBackground?: TabBackground;
     /** Force tabs to always stay mounted */
     forceRender?: boolean;
+    /** Hide panel if you want to use only tabs as maybe nav link or so */
+    hidePanel?: boolean;
 }
 
 export interface StaticProps {
