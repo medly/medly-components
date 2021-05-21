@@ -98,6 +98,16 @@ describe('TextField', () => {
             const { getByText } = render(<TextField withCharacterCount maxLength={20} defaultValue="test" />);
             expect(getByText('4/20')).toBeInTheDocument();
         });
+
+        it('should correctly render character count when the count value is 80% of the maxLength', () => {
+            const { container } = render(<TextField withCharacterCount maxLength={10} defaultValue="12345678" />);
+            expect(container).toMatchSnapshot();
+        });
+
+        it('should correctly render character count when the count value is 100% of the maxLength', () => {
+            const { container } = render(<TextField withCharacterCount maxLength={10} defaultValue="1234567890" />);
+            expect(container).toMatchSnapshot();
+        });
     });
 
     it('should call onChange prop on changing the value', () => {

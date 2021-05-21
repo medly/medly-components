@@ -1,4 +1,4 @@
-import { styled } from '@medly-components/utils';
+import { styled, WithThemeProp } from '@medly-components/utils';
 
 const getMarginTop = ({ size, multiline }: { multiline?: boolean; size: 'S' | 'M' }) => {
     if (multiline) return '.1rem';
@@ -12,16 +12,64 @@ const getMarginTop = ({ size, multiline }: { multiline?: boolean; size: 'S' | 'M
     }
 };
 
-export const CharacterCount = styled.div<{ multiline?: boolean; size: 'S' | 'M'; variant: 'fusion' | 'outlined' | 'filled' }>`
+const getTextColor = ({
+    maxLength,
+    characterCount,
+    theme,
+    variant
+}: { maxLength: number; characterCount: number; variant: 'fusion' | 'outlined' | 'filled' } & WithThemeProp) => {
+    const characterCountPercentage = (characterCount / maxLength) * 100;
+
+    if (characterCountPercentage === 100) {
+        return theme.colors.red[500];
+    } else if (characterCountPercentage >= 80) {
+        return theme.colors.heartbeat[500];
+    } else if (variant === 'fusion') {
+        return theme.colors.grey[600];
+    } else {
+        return theme.colors.grey[500];
+    }
+};
+
+const getTransform = (translateXValue: string) => ({ variant }: { variant: 'fusion' | 'outlined' | 'filled' }): string => {
+    // If variant is fusion, we preserve the -167% translateY value which is applied on focus
+    return variant === 'fusion' ? `transform: translate(${translateXValue}, -167%)` : `transform: translateX(${translateXValue})`;
+};
+
+export const CharacterCount = styled.div<{
+    maxLength: number;
+    characterCount: number;
+    multiline?: boolean;
+    size: 'S' | 'M';
+    variant: 'fusion' | 'outlined' | 'filled';
+}>`
+    @keyframes wiggle {
+        0% {
+            ${getTransform('0.1rem')};
+        }
+        25% {
+            ${getTransform('-0.2rem')};
+        }
+        50% {
+            ${getTransform('0.2rem')};
+        }
+        75% {
+            ${getTransform('-0.1rem')};
+        }
+        100% {
+            ${getTransform('0')};
+        }
+    }
     font-size: 1rem;
     line-height: 1rem;
     position: absolute;
     top: 0;
     right: 0;
-    color: ${({ theme, variant }) => (variant === 'fusion' ? theme.colors.grey[600] : theme.colors.grey[500])};
+    color: ${getTextColor};
     align-self: flex-start;
     z-index: 50;
     transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-top: ${getMarginTop};
     margin-left: ${({ size }) => size === 'S' && '1.2rem'};
+    animation: ${({ characterCount, maxLength }) => characterCount === maxLength && `0.2s wiggle ease-in-out`};
 `;

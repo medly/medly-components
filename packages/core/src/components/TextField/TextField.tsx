@@ -145,11 +145,13 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                         >
                             {label}
                         </Styled.Label>
-                        {withCharacterCount && props.maxLength && (
+                        {withCharacterCount && props.maxLength >= 0 && props.maxLength !== null && (
                             <Styled.CharacterCount
                                 variant={props.variant}
                                 size={size}
                                 multiline={multiline}
+                                characterCount={characterCountValue}
+                                maxLength={props.maxLength}
                             >{`${characterCountValue}/${props.maxLength}`}</Styled.CharacterCount>
                         )}
                     </Styled.InputWrapper>
