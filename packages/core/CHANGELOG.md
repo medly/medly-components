@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.51.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.50.0...@medly-components/core@1.51.0) (2021-05-18)
+
+
+### Bug Fixes
+
+* fix width issue in avatar component ([4152f20](https://github.com/medly/medly-components/commit/4152f20ffa5c0d0f4ac6ae1bfff2b8ff01d8bc62))
+
+
+### Features
+
+* pass className prop to wrapper in Searchbox component ([d2cd1f4](https://github.com/medly/medly-components/commit/d2cd1f4be9d7a6a0143898a54a1eb201345510ec))
+
+
+
+
+
+# [1.50.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.49.0...@medly-components/core@1.50.0) (2021-05-18)
+
+
+### Features
+
+* add as and hidePanel props in Tabs component ([00faebc](https://github.com/medly/medly-components/commit/00faebc0d5ab8344cd5d313b04b33486dbfc997d))
+
+
+
+
+
 # [1.49.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.48.1...@medly-components/core@1.49.0) (2021-05-04)
 
 
