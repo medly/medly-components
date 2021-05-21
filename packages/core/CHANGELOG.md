@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.52.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.51.0...@medly-components/core@1.52.0) (2021-05-21)
+
+
+### Features
+
+* **core:** update textField characterCount to change color based on value length and add animation ([fe1baed](https://github.com/medly/medly-components/commit/fe1baeda73f5f370b69de9b2480d68c2a07c9836))
+
+
+
+
+
 # [1.51.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.50.0...@medly-components/core@1.51.0) (2021-05-18)
 
 
