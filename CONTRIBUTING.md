@@ -47,9 +47,9 @@ There are several test commands to help you run the tests:
 - `yarn test:jest` is used to run jest with all the compatible jest CLI commands like `yarn test:jest Modal --watch`
 - `yarn test:watch` to watch all the tests
 
-> **Tips:**
+> **Note:**
 >
-> If your changes are spread across multiple packages then you have to run `yarn build` before running any tests.
+> Please run `yarn build` before running unit tests. You have to run this command only once, but if your changes are spread across multiple packages then you have to run `yarn build` before running any tests.
 >
 > Some helpful blogs:
 >
