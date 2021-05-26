@@ -26,6 +26,7 @@
         "build:forms": "lerna exec --scope @medly-components/forms -- rollup -c=../../rollup.config.js",
         "build:theme": "lerna exec --scope @medly-components/theme -- rollup -c=../../rollup.config.js",
         "build": "cross-env BABEL_ENV=production lerna exec -- rollup -c=../../rollup.config.js",
+        "clean": "rimraf node_modules && lerna clean",
         "commit": "git-cz",
         "init:commitizen": "commitizen init cz-lerna-changelog --yarn --dev --exact --force",
         "link:packages": "lerna link && lerna exec -- yarn link",
