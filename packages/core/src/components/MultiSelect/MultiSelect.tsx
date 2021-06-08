@@ -1,7 +1,7 @@
 import { useCombinedRefs, useOuterClickNotifier, useUpdateEffect, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import TextField from '../TextField';
-import { filterOptions, getDefaultSelectedOptions } from './helpers';
+import { filterOptions, getDefaultSelectedOptions, getInputValue } from './helpers';
 import InputSuffix from './InputSuffix';
 import { Wrapper } from './MultiSelect.styled';
 import Options from './Options';
@@ -36,7 +36,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
             [builtInErrorMessage, setErrorMessage] = useState(''),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [selectedOptions, setSelectedOptions] = useState(getDefaultSelectedOptions(defaultOptions, values)),
-            [inputValue, setInputValue] = useState(values.toString()),
+            [inputValue, setInputValue] = useState(getInputValue(selectedOptions)),
             [placeholder, setPlaceholder] = useState(values.length > 0 ? `${values.length} options selected` : props.placeholder),
             hasError = useMemo(() => !!errorText || !!builtInErrorMessage, [builtInErrorMessage, errorText]);
 
@@ -106,7 +106,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                 inputRef.current && inputRef.current.focus();
                 setPlaceholder(selectedOptions.length > 0 ? `${selectedOptions.length} options selected` : props.placeholder);
             } else {
-                setInputValue(selectedOptions.map(obj => obj.value).join(', '));
+                setInputValue(getInputValue(selectedOptions));
                 setOptions(defaultOptions);
                 setTimeout(() => hideOptions(), 0);
             }

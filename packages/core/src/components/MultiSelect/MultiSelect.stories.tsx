@@ -11,7 +11,7 @@ export const options = [
         {
             label: 'Group',
             value: [
-                { value: 'a pharmacy', label: 'a Pharmacy with some bog label' },
+                { value: 'a pharmacy', label: 'a Pharmacy with some big label' },
                 { value: 'b pharmacy', label: 'b Pharmacy' },
                 { value: 'c pharmacy', label: 'c Pharmacy' },
                 { value: 'd pharmacy', label: 'd Pharmacy' }
