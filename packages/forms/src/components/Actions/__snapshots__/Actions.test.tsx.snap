@@ -90,8 +90,9 @@ exports[`Form Actions should render center aligned actions defined in action sch
 }
 
 .c1:not(:disabled):not(:active):hover {
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35)  color:#ffffff;
+  color: #ffffff;
   background: #0F5AD5;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
 .c1:not(:disabled):not(:active):hover .sc-AxiKw * {
@@ -236,8 +237,9 @@ exports[`Form Actions should render default action button 1`] = `
 }
 
 .c1:not(:disabled):not(:active):hover {
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35)  color:#ffffff;
+  color: #ffffff;
   background: #0F5AD5;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
 .c1:not(:disabled):not(:active):hover .sc-AxiKw * {
@@ -382,8 +384,9 @@ exports[`Form Actions should render left aligned actions defined in action schem
 }
 
 .c1:not(:disabled):not(:active):hover {
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35)  color:#ffffff;
+  color: #ffffff;
   background: #0F5AD5;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
 .c1:not(:disabled):not(:active):hover .sc-AxiKw * {
