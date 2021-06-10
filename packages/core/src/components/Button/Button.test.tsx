@@ -145,7 +145,7 @@ describe('Button component', () => {
           <ThemeProvider
               theme={updateNestedValue(defaultTheme, 'button.solid', {
                   ...defaultTheme.button.solid,
-                  hoverShadow: false,
+                  hoverShadow: false
               })}
           >
               <Button variant="solid">Solid Button</Button>
