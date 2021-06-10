@@ -1,6 +1,10 @@
 import { includesIgnoreCase } from '@medly-components/utils';
 import { Option } from './types';
 
+export const getInputValue = (selectedOptions: Option[]): string => {
+    return selectedOptions.map(obj => obj.label).join(', ');
+};
+
 export const getDefaultSelectedOptions = (options: Option[], defaultValues: any[]) => {
     let newValues: any[] = [];
     options.forEach(op => {

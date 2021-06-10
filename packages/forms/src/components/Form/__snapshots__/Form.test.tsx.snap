@@ -2254,7 +2254,7 @@ exports[`Form should render properly with initial state 1`] = `
                 placeholder="1 options selected"
                 required=""
                 type="text"
-                value="b-tech"
+                value="BTech"
               />
               <label
                 class="c8 c9"

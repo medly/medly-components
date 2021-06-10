@@ -442,7 +442,7 @@ exports[`MultiSelect component should render correctly with all the props given 
             id="pharmacy-input"
             placeholder="1 options selected"
             type="text"
-            value="all"
+            value="All"
           />
           <label
             class="c6 c7"
