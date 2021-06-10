@@ -13,8 +13,18 @@ const getStyle = (textColor: string, bgColor: string) => css`
     }
 `;
 
+const getHoverShadow = (hoverShadow: boolean, bgColor: string) => {
+  if (hoverShadow) {
+    return css`
+      box-shadow: 0 0.2rem 0.8rem ${rgba(bgColor, 0.35)};
+    `;
+  } else {
+    return css``;
+  }
+}
+
 export const solidButton = ({ theme, isLoading }: Props) => {
-    const { textColor, bgColor } = theme.button.solid;
+    const { textColor, bgColor, hoverShadow } = theme.button.solid;
     return css`
         &:disabled {
             ${getStyle(textColor.disabled, bgColor.disabled)}
@@ -29,8 +39,8 @@ export const solidButton = ({ theme, isLoading }: Props) => {
             }
             &:not(:active):hover {
                 ${getStyle(textColor.hovered, bgColor.hovered)}
-                box-shadow: 0 0.2rem 0.8rem ${rgba(bgColor.hovered, 0.35)};
+                ${getHoverShadow(hoverShadow, bgColor.hovered)}
             }
-        }
+          }
     `;
 };

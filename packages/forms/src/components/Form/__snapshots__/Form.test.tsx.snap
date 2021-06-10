@@ -90,9 +90,8 @@ exports[`Form should not render any field if component type is not matched 1`] =
 }
 
 .c3:not(:disabled):not(:active):hover {
-  color: #ffffff;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35)  color:#ffffff;
   background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
 .c3:not(:disabled):not(:active):hover .sc-AxiKw * {
@@ -333,9 +332,8 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c69:not(:disabled):not(:active):hover {
-  color: #ffffff;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35)  color:#ffffff;
   background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
 .c69:not(:disabled):not(:active):hover .c30 * {
@@ -2666,9 +2664,8 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c68:not(:disabled):not(:active):hover {
-  color: #ffffff;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35)  color:#ffffff;
   background: #0F5AD5;
-  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
 .c68:not(:disabled):not(:active):hover .c32 * {

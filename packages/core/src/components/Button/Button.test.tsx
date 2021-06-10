@@ -116,12 +116,41 @@ describe('Button component', () => {
                         hovered: defaultTheme.colors.red[600],
                         pressed: defaultTheme.colors.red[700],
                         disabled: defaultTheme.colors.grey[200]
-                    }
+                    },
+                    hoverShadow: true
                 })}
             >
                 <Button variant="outlined">Red Button</Button>
             </ThemeProvider>
         );
         expect(container).toMatchSnapshot();
+    });
+
+    it("should render properly as outlined when theme has hover set to false", () => {
+      const { container } = render(
+          <ThemeProvider
+              theme={updateNestedValue(defaultTheme, 'button.outlined', {
+                  ...defaultTheme.button.outlined,
+                  hoverShadow: false,
+              })}
+          >
+              <Button variant="outlined">Outlined Button</Button>
+          </ThemeProvider>
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it("should render properly as solid when theme has hover set to false", () => {
+      const { container } = render(
+          <ThemeProvider
+              theme={updateNestedValue(defaultTheme, 'button.solid', {
+                  ...defaultTheme.button.solid,
+                  hoverShadow: false,
+              })}
+          >
+              <Button variant="solid">Solid Button</Button>
+          </ThemeProvider>
+      );
+      expect(container).toMatchSnapshot();
     });
 });

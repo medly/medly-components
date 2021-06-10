@@ -2,7 +2,7 @@ import { FontVariants } from '../font/types';
 
 export type ButtonSizes = 'S' | 'M' | 'L';
 
-type Colors = {
+export type Colors = {
     default: string;
     hovered: string;
     pressed: string;
@@ -14,12 +14,14 @@ export interface ButtonTheme {
     solid: {
         textColor: Colors;
         bgColor: Colors;
+        hoverShadow: boolean;
     };
     /** Outlined button colors */
     outlined: {
         textColor: Colors;
         bgColor?: Colors;
         borderColor?: Colors;
+        hoverShadow: boolean;
     };
     /** Flat button colors */
     flat: {
