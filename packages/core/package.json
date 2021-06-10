@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/core",
-    "version": "1.52.0",
+    "version": "1.53.0",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
@@ -13,14 +13,14 @@
     },
     "license": "MIT",
     "peerDependencies": {
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1",
+        "react": "^16 || ^17",
+        "react-dom": "^16 || ^17",
         "styled-components": "^5.1.0"
     },
     "dependencies": {
-        "@medly-components/icons": "1.5.16",
+        "@medly-components/icons": "1.6.0",
         "@medly-components/theme": "1.30.8",
-        "@medly-components/utils": "1.8.16",
+        "@medly-components/utils": "1.9.0",
         "effector": "^20.16.1",
         "effector-react": "^20.7.4",
         "polished": "^3.6.2",

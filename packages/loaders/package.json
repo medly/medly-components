@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/loaders",
-    "version": "1.0.54",
+    "version": "1.1.0",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
@@ -13,11 +13,12 @@
     },
     "license": "MIT",
     "peerDependencies": {
-        "react": "^16.13.1",
+        "react": "^16 || ^17",
+        "react-dom": "^16 || ^17",
         "styled-components": "^5.1.0"
     },
     "dependencies": {
         "@medly-components/theme": "1.30.8",
-        "@medly-components/utils": "1.8.16"
+        "@medly-components/utils": "1.9.0"
     }
 }

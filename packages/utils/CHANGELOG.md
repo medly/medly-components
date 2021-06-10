@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.8.16...@medly-components/utils@1.9.0) (2021-06-10)
+
+
+### Features
+
+* add react 17 also as peer dependency ([4fc50d7](https://github.com/medly/medly-components/commit/4fc50d731d7d0a2ec71cc0ab9c2f714bf836ea5e))
+
+
+
+
+
 ## [1.8.16](https://github.com/medly/medly-components/compare/@medly-components/utils@1.8.15...@medly-components/utils@1.8.16) (2021-03-19)
 
 **Note:** Version bump only for package @medly-components/utils
