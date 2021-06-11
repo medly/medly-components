@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.53.1](https://github.com/medly/medly-components/compare/@medly-components/core@1.53.0...@medly-components/core@1.53.1) (2021-06-10)
+
+
+### Bug Fixes
+
+* **core:** update multiselect component to display option labels in input value instead of option value ([6e3e4ce](https://github.com/medly/medly-components/commit/6e3e4ceabee6a26aab5210495924c58d5819ed06))
+
+
+
+
+
 # [1.53.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.52.0...@medly-components/core@1.53.0) (2021-06-10)
 
 

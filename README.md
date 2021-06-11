@@ -8,7 +8,7 @@
 [![GitHub](https://img.shields.io/github/license/medly/medly-components)](https://github.com/medly/medly-components/blob/master/LICENSE)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
-![Alt text](./MedlyComponents.png 'Title')
+![Medly Components](http://medlycomponents.com/medly-components.png)
 
 Themable react components with various configuration to match your need.
 
