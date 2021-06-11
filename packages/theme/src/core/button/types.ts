@@ -2,7 +2,7 @@ import { FontVariants } from '../font/types';
 
 export type ButtonSizes = 'S' | 'M' | 'L';
 
-export type Colors = {
+type Colors = {
     default: string;
     hovered: string;
     pressed: string;
