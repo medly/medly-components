@@ -5,4 +5,4 @@ packages/**/dist
 .DS_Store
 .out/
 .idea
-jest-test-results.json
+.jest-test-results.json
