@@ -1,6 +1,6 @@
 import { FontVariants } from '../font/types';
 
-export type ButtonSizes = 'S' | 'M' | 'L';
+export type ButtonSizes = 'XS' | 'S' | 'M' | 'L';
 
 type Colors = {
     default: string;
