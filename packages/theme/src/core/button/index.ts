@@ -4,12 +4,14 @@ import { ButtonTheme } from './types';
 const button: ButtonTheme = {
     solid: {
         textColor: { default: colors.white, hovered: colors.white, pressed: colors.white, disabled: colors.grey[500] },
-        bgColor: { default: colors.blue[500], hovered: colors.blue[600], pressed: colors.blue[700], disabled: colors.grey[200] }
+        bgColor: { default: colors.blue[500], hovered: colors.blue[600], pressed: colors.blue[700], disabled: colors.grey[200] },
+        hoverShadow: true
     },
     outlined: {
         textColor: { default: colors.blue[500], hovered: colors.blue[600], pressed: colors.blue[700], disabled: colors.grey[500] },
         borderColor: { default: colors.blue[500], hovered: colors.blue[600], pressed: colors.blue[700], disabled: colors.grey[500] },
-        bgColor: { default: 'transparent', hovered: 'transparent', pressed: colors.blue[100], disabled: 'transparent' }
+        bgColor: { default: 'transparent', hovered: 'transparent', pressed: colors.blue[100], disabled: 'transparent' },
+        hoverShadow: true
     },
     flat: {
         textColor: { default: colors.blue[500], hovered: colors.blue[600], pressed: colors.blue[700], disabled: colors.grey[500] }
