@@ -17,8 +17,12 @@ const getStyle = (textColor: string, bgColor = 'transparent', borderColor: strin
     }
 `;
 
+const getHoverShadow = (shadowColor: string ) => css`
+      box-shadow: 0 0.2rem 0.8rem ${rgba(shadowColor, 0.35)};
+    `
+
 export const outlinedButton = ({ theme, isLoading, edges }: Props) => {
-    const { textColor, bgColor, borderColor } = theme.button.outlined;
+    const { textColor, bgColor, borderColor, hoverShadow } = theme.button.outlined;
 
     return css`
         background-color: transparent;
@@ -49,7 +53,7 @@ export const outlinedButton = ({ theme, isLoading, edges }: Props) => {
             }
             &:not(:active):hover {
                 ${getStyle(textColor.hovered, bgColor?.hovered, borderColor?.hovered, '0.2rem')}
-                box-shadow: 0 0.2rem 0.8rem ${rgba(borderColor?.hovered || textColor.hovered, 0.35)};
+                ${hoverShadow && getHoverShadow(borderColor?.hovered || textColor.hovered)}
             }
         }
     `;
