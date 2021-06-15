@@ -2636,7 +2636,7 @@ exports[`Button component with "flat" variant should render properly with "XS" s
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 0.7rem 1.6rem 0.9rem;
+  padding: 0.4rem 1.6rem 0.6rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -3814,7 +3814,7 @@ exports[`Button component with "outlined" variant should render properly with "X
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 0.7rem 1.6rem 0.9rem;
+  padding: 0.4rem 1.6rem 0.6rem;
   border-radius: 0.8rem;
   background-color: transparent;
   display: -webkit-inline-box;
@@ -4766,7 +4766,7 @@ exports[`Button component with "solid" variant should render properly with "XS" 
   text-decoration: none;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-  padding: 0.7rem 1.6rem 0.9rem;
+  padding: 0.4rem 1.6rem 0.6rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

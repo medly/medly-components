@@ -17,7 +17,7 @@ const button: ButtonTheme = {
         textColor: { default: colors.blue[500], hovered: colors.blue[600], pressed: colors.blue[700], disabled: colors.grey[500] }
     },
     padding: {
-        XS: '0.7rem 1.6rem 0.9rem',
+        XS: '0.4rem 1.6rem 0.6rem',
         S: '0.8rem 2.4rem 1rem',
         M: '1rem 2.4rem 1.2rem',
         L: '1.2rem 2.4rem 1.4rem'
