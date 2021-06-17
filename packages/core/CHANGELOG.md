@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.55.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.54.0...@medly-components/core@1.55.0) (2021-06-17)
+
+
+### Features
+
+* Add XS (extra-small) button size ([36a30d4](https://github.com/medly/medly-components/commit/36a30d40040d61d948ebe42f66bffa8803874224))
+
+
+
+
+
 # [1.54.0](https://github.com/medly/medly-components/compare/@medly-components/core@1.53.1...@medly-components/core@1.54.0) (2021-06-14)
 
 
