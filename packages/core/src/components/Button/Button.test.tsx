@@ -32,7 +32,7 @@ describe('Button component', () => {
             expect(container).toMatchSnapshot();
         });
 
-        test.each(['S', 'M', 'L'])('should render properly with %p size', (size: Props['size']) => {
+        test.each(['XS', 'S', 'M', 'L'])('should render properly with %p size', (size: Props['size']) => {
             const { container } = render(
                 <Button size={size} variant={variant}>
                     Button

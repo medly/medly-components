@@ -2610,6 +2610,163 @@ exports[`Button component with "flat" variant should render properly with "S" si
 </div>
 `;
 
+exports[`Button component with "flat" variant should render properly with "XS" size 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c0 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 0.4rem 1.6rem 0.6rem;
+  border-radius: 0.8rem;
+  background-color: transparent;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0,
+.c0 .c1,
+.c0 .sc-AxjAm,
+.c0 .sc-AxjAm * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  bottom: 0.85rem;
+  left: 50%;
+  height: 0.15rem;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.15rem;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+.c0:disabled {
+  color: #98A7B7;
+}
+
+.c0:disabled::after {
+  background-color: #98A7B7;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #98A7B7;
+}
+
+.c0:not(:disabled):not(:hover) {
+  color: #126AFA;
+}
+
+.c0:not(:disabled):not(:hover)::after {
+  background-color: #126AFA;
+}
+
+.c0:not(:disabled):not(:hover) .sc-AxjAm * {
+  fill: #126AFA;
+}
+
+.c0:not(:disabled):active {
+  color: #0D4AAF;
+}
+
+.c0:not(:disabled):active::after {
+  background-color: #0D4AAF;
+}
+
+.c0:not(:disabled):active .sc-AxjAm * {
+  fill: #0D4AAF;
+}
+
+.c0:not(:disabled):active::after {
+  width: calc(100% - 4.8rem);
+}
+
+.c0:not(:disabled):not(:active):hover {
+  color: #0F5AD5;
+}
+
+.c0:not(:disabled):not(:active):hover::after {
+  background-color: #0F5AD5;
+}
+
+.c0:not(:disabled):not(:active):hover .sc-AxjAm * {
+  fill: #0F5AD5;
+}
+
+.c0:not(:disabled):not(:active):hover::after {
+  width: calc(100% - 4.8rem);
+}
+
+.c0 .sc-AxjAm + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AxjAm {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Button
+    </span>
+  </button>
+</div>
+`;
+
 exports[`Button component with "outlined" variant should render properly 1`] = `
 .c2 {
   margin: 0;
@@ -3631,6 +3788,165 @@ exports[`Button component with "outlined" variant should render properly with "S
 </div>
 `;
 
+exports[`Button component with "outlined" variant should render properly with "XS" size 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c0 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 0.4rem 1.6rem 0.6rem;
+  border-radius: 0.8rem;
+  background-color: transparent;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0,
+.c0 .c1,
+.c0 .sc-AxjAm,
+.c0 .sc-AxjAm * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0::after {
+  content: '';
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  border-radius: 0.8rem;
+  border-style: solid;
+}
+
+.c0:disabled {
+  color: #98A7B7;
+  background-color: transparent;
+}
+
+.c0:disabled::after {
+  border-width: 0.1rem;
+  border-color: #98A7B7;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #98A7B7;
+}
+
+.c0:not(:disabled):not(:hover) {
+  color: #126AFA;
+  background-color: transparent;
+}
+
+.c0:not(:disabled):not(:hover)::after {
+  border-width: 0.1rem;
+  border-color: #126AFA;
+}
+
+.c0:not(:disabled):not(:hover) .sc-AxjAm * {
+  fill: #126AFA;
+}
+
+.c0:not(:disabled):active {
+  color: #0D4AAF;
+  background-color: #E7F0FF;
+}
+
+.c0:not(:disabled):active::after {
+  border-width: 0.2rem;
+  border-color: #0D4AAF;
+}
+
+.c0:not(:disabled):active .sc-AxjAm * {
+  fill: #0D4AAF;
+}
+
+.c0:not(:disabled):not(:active):hover {
+  color: #0F5AD5;
+  background-color: transparent;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+}
+
+.c0:not(:disabled):not(:active):hover::after {
+  border-width: 0.2rem;
+  border-color: #0F5AD5;
+}
+
+.c0:not(:disabled):not(:active):hover .sc-AxjAm * {
+  fill: #0F5AD5;
+}
+
+.c0 .sc-AxjAm + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AxjAm {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Button
+    </span>
+  </button>
+</div>
+`;
+
 exports[`Button component with "solid" variant should render properly 1`] = `
 .c2 {
   margin: 0;
@@ -4330,6 +4646,127 @@ exports[`Button component with "solid" variant should render properly with "S" s
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   padding: 0.8rem 2.4rem 1rem;
+  border-radius: 0.8rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0,
+.c0 .c1,
+.c0 .sc-AxjAm,
+.c0 .sc-AxjAm * {
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0:disabled {
+  color: #98A7B7;
+  background: #dfe4e9;
+}
+
+.c0:disabled .sc-AxjAm * {
+  fill: #98A7B7;
+}
+
+.c0:not(:disabled):not(:hover) {
+  color: #ffffff;
+  background: #126AFA;
+}
+
+.c0:not(:disabled):not(:hover) .sc-AxjAm * {
+  fill: #ffffff;
+}
+
+.c0:not(:disabled):active {
+  color: #ffffff;
+  background: #0D4AAF;
+}
+
+.c0:not(:disabled):active .sc-AxjAm * {
+  fill: #ffffff;
+}
+
+.c0:not(:disabled):not(:active):hover {
+  color: #ffffff;
+  background: #0F5AD5;
+  box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
+}
+
+.c0:not(:disabled):not(:active):hover .sc-AxjAm * {
+  fill: #ffffff;
+}
+
+.c0 .sc-AxjAm + .c1 {
+  margin-left: 0.8rem;
+}
+
+.c0 .c1 + .sc-AxjAm {
+  margin-left: 0.8rem;
+}
+
+<div>
+  <button
+    class="c0"
+    type="button"
+  >
+    <span
+      class="c1 c2"
+    >
+      Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Button component with "solid" variant should render properly with "XS" size 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c0 {
+  border: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 0.4rem 1.6rem 0.6rem;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
