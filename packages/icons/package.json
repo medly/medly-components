@@ -17,8 +17,8 @@
         "precreate-icons": "rimraf ./src/icons && rimraf ./src/index.ts && rimraf ./src/icons.stories.mdx"
     },
     "peerDependencies": {
-        "react": "^16 || ^17",
-        "react-dom": "^16 || ^17",
+        "react": "16.x || 17.x",
+        "react-dom": "16.x || 17.x",
         "styled-components": "^5.1.0"
     },
     "dependencies": {
