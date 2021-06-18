@@ -21,8 +21,8 @@
         "@medly-components/icons": "1.6.2",
         "@medly-components/theme": "1.30.10",
         "@medly-components/utils": "1.9.2",
-        "effector": "^20.16.1",
-        "effector-react": "^20.7.4",
+        "effector": "^21.8.12",
+        "effector-react": "^21.3.2",
         "polished": "^3.6.2",
         "resize-observer-polyfill": "^1.5.1"
     }
