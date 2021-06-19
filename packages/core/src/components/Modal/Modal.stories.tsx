@@ -29,13 +29,17 @@ const Form = styled('form')`
     }
 `;
 
+export const ModalStoryWrapper = styled('div')<{ expand: boolean }>`
+    height: ${({ expand }) => (expand ? `50rem` : `5rem;`)};
+`;
+
 export const Basic = () => {
     const [modalState, setModalState] = useState(false);
 
     const changeModalState = useCallback(() => setModalState(val => !val), []);
 
     return (
-        <>
+        <ModalStoryWrapper expand={modalState}>
             <Button onClick={changeModalState}>Click to Open</Button>
             <Modal open={modalState} onCloseModal={changeModalState}>
                 <Modal.Header>Add User</Modal.Header>
@@ -82,6 +86,6 @@ export const Basic = () => {
                     <Button variant="outlined">Add User</Button>
                 </Modal.Actions>
             </Modal>
-        </>
+        </ModalStoryWrapper>
     );
 };
