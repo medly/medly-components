@@ -30,7 +30,7 @@ const Form = styled('form')`
 `;
 
 export const ModalStoryWrapper = styled('div')<{ expand: boolean }>`
-    height: ${({ expand }) => (expand ? `50rem` : `5rem;`)};
+    height: ${({ expand }) => (expand ? '50rem' : '5rem')};
 `;
 
 export const Basic = () => {
