@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/icons",
-    "version": "1.6.2",
+    "version": "1.6.3",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
@@ -17,12 +17,12 @@
         "precreate-icons": "rimraf ./src/icons && rimraf ./src/index.ts && rimraf ./src/icons.stories.mdx"
     },
     "peerDependencies": {
-        "react": "^16 || ^17",
-        "react-dom": "^16 || ^17",
+        "react": "16.x || 17.x",
+        "react-dom": "16.x || 17.x",
         "styled-components": "^5.1.0"
     },
     "dependencies": {
         "@medly-components/theme": "1.30.10",
-        "@medly-components/utils": "1.9.2"
+        "@medly-components/utils": "1.9.3"
     }
 }

@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/forms",
-    "version": "1.22.3",
+    "version": "1.22.4",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
@@ -13,14 +13,14 @@
     },
     "license": "MIT",
     "peerDependencies": {
-        "react": "^16 || ^17",
-        "react-dom": "^16 || ^17",
+        "react": "16.x || 17.x",
+        "react-dom": "16.x || 17.x",
         "styled-components": "^5.1.0"
     },
     "dependencies": {
-        "@medly-components/core": "1.55.0",
+        "@medly-components/core": "1.55.1",
         "@medly-components/theme": "1.30.10",
-        "@medly-components/utils": "1.9.2",
+        "@medly-components/utils": "1.9.3",
         "fast-memoize": "^2.5.2"
     }
 }
