@@ -12456,7 +12456,7 @@ exports[`DatePicker component should render properly when value is of date type 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -12851,7 +12851,7 @@ exports[`DatePicker component should render properly when value is of string typ
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;

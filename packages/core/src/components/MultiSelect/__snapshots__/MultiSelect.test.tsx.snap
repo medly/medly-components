@@ -30,7 +30,7 @@ exports[`MultiSelect component should render correctly with all the props given 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -532,7 +532,7 @@ exports[`MultiSelect component should render correctly with default props 1`] = 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -934,7 +934,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -2224,7 +2224,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
