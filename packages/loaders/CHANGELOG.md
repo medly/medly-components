@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.1.2...@medly-components/loaders@1.1.3) (2021-06-21)
+
+
+### Bug Fixes
+
+* add both react 16 and 17 as peer dependency ([de2b7c5](https://github.com/medly/medly-components/commit/de2b7c5ab2fed22befee278ab5fb865ca463cb9a))
+
+
+
+
+
 ## [1.1.2](https://github.com/medly/medly-components/compare/@medly-components/loaders@1.1.1...@medly-components/loaders@1.1.2) (2021-06-17)
 
 **Note:** Version bump only for package @medly-components/loaders
