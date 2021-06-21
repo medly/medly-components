@@ -629,7 +629,7 @@ exports[`Form should render properly with initial state 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -671,7 +671,7 @@ exports[`Form should render properly with initial state 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -2931,7 +2931,7 @@ exports[`Form should render properly without initial state 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -2973,7 +2973,7 @@ exports[`Form should render properly without initial state 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;

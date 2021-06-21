@@ -45,7 +45,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -429,7 +429,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -1003,7 +1003,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -1561,7 +1561,7 @@ exports[`SingleSelect component with filled variant should render disabled state
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -2081,7 +2081,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -2513,7 +2513,7 @@ exports[`SingleSelect component with filled variant should render properly when 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -3155,7 +3155,7 @@ exports[`SingleSelect component with filled variant should render with label pro
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -4956,7 +4956,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -5481,7 +5481,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -5927,7 +5927,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -6583,7 +6583,7 @@ exports[`SingleSelect component with outlined variant should render with label p
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;

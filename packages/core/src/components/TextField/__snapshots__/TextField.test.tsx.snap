@@ -47,7 +47,7 @@ exports[`TextField character count should correctly render character count for S
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -380,7 +380,7 @@ exports[`TextField character count should correctly render character count for f
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -735,7 +735,7 @@ exports[`TextField character count should correctly render character count for m
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -1065,7 +1065,7 @@ exports[`TextField character count should correctly render character count if we
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -1395,7 +1395,7 @@ exports[`TextField character count should correctly render character count when 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -1727,7 +1727,7 @@ exports[`TextField character count should correctly render character count when 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -2041,7 +2041,7 @@ exports[`TextField should not call onClick function on click on helper text 1`] 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -2362,7 +2362,7 @@ exports[`TextField should render asterisk if we pass required prop as true 1`] =
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -2461,7 +2461,7 @@ exports[`TextField should render properly with M size 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -2841,7 +2841,7 @@ exports[`TextField should render properly with S size 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -3194,7 +3194,7 @@ exports[`TextField should render properly with default props 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -3507,7 +3507,7 @@ exports[`TextField with filled variant and with label should render default stat
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -3820,7 +3820,7 @@ exports[`TextField with filled variant and with label should render disabled sta
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -4114,7 +4114,7 @@ exports[`TextField with filled variant and with label should render focus state 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -4427,7 +4427,7 @@ exports[`TextField with filled variant and without label should render default s
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -4734,7 +4734,7 @@ exports[`TextField with filled variant and without label should render disabled 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -5022,7 +5022,7 @@ exports[`TextField with filled variant and without label should render focus sta
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -5340,7 +5340,7 @@ exports[`TextField with filled variant should render error state properly  1`] =
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -5701,7 +5701,7 @@ exports[`TextField with filled variant should render error state properly with a
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -6106,7 +6106,7 @@ exports[`TextField with filled variant should render properly with multiline 1`]
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -6430,7 +6430,7 @@ exports[`TextField with filled variant should render properly with prefix 1`] = 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -6776,7 +6776,7 @@ exports[`TextField with filled variant should render properly with suffix 1`] = 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -7107,7 +7107,7 @@ exports[`TextField with fusion variant and with label should render default stat
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -7445,7 +7445,7 @@ exports[`TextField with fusion variant and with label should render disabled sta
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -7763,7 +7763,7 @@ exports[`TextField with fusion variant and with label should render focus state 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -8101,7 +8101,7 @@ exports[`TextField with fusion variant and without label should render default s
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -8433,7 +8433,7 @@ exports[`TextField with fusion variant and without label should render disabled 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -8745,7 +8745,7 @@ exports[`TextField with fusion variant and without label should render focus sta
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -9088,7 +9088,7 @@ exports[`TextField with fusion variant should render error state properly  1`] =
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -9463,7 +9463,7 @@ exports[`TextField with fusion variant should render error state properly with a
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -9885,7 +9885,7 @@ exports[`TextField with fusion variant should render properly with multiline 1`]
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -10234,7 +10234,7 @@ exports[`TextField with fusion variant should render properly with prefix 1`] = 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -10605,7 +10605,7 @@ exports[`TextField with fusion variant should render properly with suffix 1`] = 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -10961,7 +10961,7 @@ exports[`TextField with outlined variant and with label should render default st
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -11288,7 +11288,7 @@ exports[`TextField with outlined variant and with label should render disabled s
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -11587,7 +11587,7 @@ exports[`TextField with outlined variant and with label should render focus stat
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -11914,7 +11914,7 @@ exports[`TextField with outlined variant and without label should render default
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -12235,7 +12235,7 @@ exports[`TextField with outlined variant and without label should render disable
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -12528,7 +12528,7 @@ exports[`TextField with outlined variant and without label should render focus s
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -12860,7 +12860,7 @@ exports[`TextField with outlined variant should render error state properly  1`]
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -13235,7 +13235,7 @@ exports[`TextField with outlined variant should render error state properly with
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -13654,7 +13654,7 @@ exports[`TextField with outlined variant should render properly with multiline 1
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -13992,7 +13992,7 @@ exports[`TextField with outlined variant should render properly with prefix 1`] 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -14352,7 +14352,7 @@ exports[`TextField with outlined variant should render properly with suffix 1`] 
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -14697,7 +14697,7 @@ exports[`TextField without label should render default state properly 1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
@@ -15004,7 +15004,7 @@ exports[`TextField without label should render focus state properly  1`] = `
   transform: translateY(-50%);
   opacity: 1;
   z-index: 1;
-  width: calc(0px - 2rem);
+  width: 100%;
   max-width: -webkit-min-content;
   max-width: -moz-min-content;
   max-width: min-content;
