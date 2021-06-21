@@ -36,7 +36,7 @@ export const Label = styled('label')<{
     transform: translateY(-50%);
     opacity: 1;
     z-index: 1;
-    width: ${({ inputWidth }) => `calc(${inputWidth}px - 2rem) `};
+    width: 100%;
     max-width: min-content;
     white-space: nowrap;
     overflow: hidden;
