@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.4](https://github.com/medly/medly-components/compare/@medly-components/utils@1.9.3...@medly-components/utils@1.9.4) (2021-06-22)
+
+
+### Bug Fixes
+
+* streamlined the z-indexs of a few components ([3738730](https://github.com/medly/medly-components/commit/373873070d066a7b2b19bcac2369c7095606d180))
+
+
+
+
+
 ## [1.9.3](https://github.com/medly/medly-components/compare/@medly-components/utils@1.9.2...@medly-components/utils@1.9.3) (2021-06-21)
 
 
