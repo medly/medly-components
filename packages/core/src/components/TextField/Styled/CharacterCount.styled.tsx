@@ -67,7 +67,7 @@ export const CharacterCount = styled.div<{
     right: 0;
     color: ${getTextColor};
     align-self: flex-start;
-    z-index: 50;
+    z-index: 1;
     transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-top: ${getMarginTop};
     margin-left: ${({ size }) => size === 'S' && '1.2rem'};

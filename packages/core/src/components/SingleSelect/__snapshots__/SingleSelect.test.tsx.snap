@@ -1308,7 +1308,7 @@ exports[`SingleSelect component should take passed max width 1`] = `
 }
 
 .c12 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background: #ffffff;
   top: 5.6rem;
@@ -1956,7 +1956,7 @@ exports[`SingleSelect component with filled variant should render options correc
 }
 
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background: #ffffff;
   top: 5.6rem;
@@ -2870,7 +2870,7 @@ exports[`SingleSelect component with filled variant should render properly when 
 }
 
 .c14 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background: #ffffff;
   top: 5.6rem;
@@ -3826,7 +3826,7 @@ exports[`SingleSelect component with flat variant should render options correctl
 }
 
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background: #ffffff;
   top: 3.2rem;
@@ -4459,7 +4459,7 @@ exports[`SingleSelect component with flat variant should render properly when op
 }
 
 .c11 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background: #ffffff;
   top: 3.2rem;
@@ -5356,7 +5356,7 @@ exports[`SingleSelect component with outlined variant should render options corr
 }
 
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background: #ffffff;
   top: 5.6rem;
@@ -6298,7 +6298,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
 }
 
 .c14 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background: #ffffff;
   top: 5.6rem;

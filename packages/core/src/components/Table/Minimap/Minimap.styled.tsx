@@ -3,7 +3,7 @@ import { css, styled } from '@medly-components/utils';
 export const MinimapContainer = styled('tr')`
     position: sticky;
     display: inline;
-    z-index: 999;
+    z-index: 5;
     left: calc(100% - 19rem);
     bottom: 9.5rem;
     opacity: ${({ theme }) => theme.table.minimap.opacity.default};

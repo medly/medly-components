@@ -73,7 +73,7 @@ export const getPosition = ({ placement, distance = '0px' }: { placement: Placem
 };
 
 export const PopupStyled = styled('div')<PopupProps>`
-    z-index: 1000;
+    z-index: 4;
     position: absolute;
     background-color: ${({ bgColor }) => bgColor};
 
