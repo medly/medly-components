@@ -12,8 +12,8 @@ export const MonthAndYearSelection: React.FC<MonthAndYearSelectionProps> & WithS
             { month: maxMonth, year: maxYear } = getMonthAndYearFromDate(maxSelectableDate);
 
         const stopPropagation = useCallback(e => e.stopPropagation(), []),
-            handleMonthChange = useCallback((value: number) => onChange({ year: year, month: value }), [year]),
-            handleYearChange = useCallback((value: number) => onChange({ month: month, year: value }), [month]);
+            handleMonthChange = useCallback((value: number) => onChange({ year: year, month: value }), [year, onChange]),
+            handleYearChange = useCallback((value: number) => onChange({ month: month, year: value }), [month, onChange]);
 
         const monthOptions = useMemo(
                 () =>
