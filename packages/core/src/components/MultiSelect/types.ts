@@ -32,7 +32,7 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     /** Set it true when it is required in any form */
     required?: boolean;
     /** Min width */
-    minWidth?: number;
+    minWidth?: string;
     /** Takes full width of the parent component */
     fullWidth?: boolean;
     /** Helper Text */

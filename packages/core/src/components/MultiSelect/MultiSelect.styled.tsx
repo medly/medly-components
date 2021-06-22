@@ -46,7 +46,7 @@ export const Wrapper = styled.div<SelectWrapperProps>`
     position: relative;
     display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
     min-width: ${({ minWidth }) => minWidth || 'max-content'};
-    width: ${({ fullWidth }) => (fullWidth ? '100%' : '25.6rem')};
+    width: ${({ fullWidth }) => fullWidth && '100%'};
     margin: ${({ theme, fullWidth }) =>
         fullWidth ? `${theme.spacing.S2} 0` : `${theme.spacing.S2} ${theme.spacing.S2} ${theme.spacing.S2} 0`};
 

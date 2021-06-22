@@ -40,6 +40,7 @@ To open the calendar click on the icon inside the datepicker component and to cl
                     onChange={setDate}
                     fullWidth={boolean('Full Width', false)}
                     size={select('Size', sizes, 'M')}
+                    minWidth={text('Min Width', '20rem')}
                     displayFormat={select('Display Format', displayFormats, 'MM/dd/yyyy')}
                     popoverPlacement={select('Popover placement', placements, 'bottom-start')}
                     disabled={boolean('Disabled', false)}

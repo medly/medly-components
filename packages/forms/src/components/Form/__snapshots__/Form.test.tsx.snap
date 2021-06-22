@@ -142,12 +142,6 @@ exports[`Form should not render any field if component type is not matched 1`] =
   grid-template-columns: repeat(12,1fr);
   grid-gap: 1.6rem;
   display: inline-grid;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
 }
 
 .c0 > h2 {
@@ -244,7 +238,7 @@ exports[`Form should render properly with initial state 1`] = `
   text-align: initial;
 }
 
-.c61 {
+.c60 {
   margin: 0;
   color: inherit;
   font-size: 1.8rem;
@@ -257,7 +251,7 @@ exports[`Form should render properly with initial state 1`] = `
   text-align: initial;
 }
 
-.c69 {
+.c68 {
   border: none;
   position: relative;
   -webkit-user-select: none;
@@ -285,68 +279,68 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: center;
 }
 
-.c69,
-.c69 .c17,
-.c69 .c30,
-.c69 .c30 * {
+.c68,
+.c68 .c17,
+.c68 .c30,
+.c68 .c30 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c69:hover {
+.c68:hover {
   cursor: pointer;
 }
 
-.c69:focus {
+.c68:focus {
   outline: none;
 }
 
-.c69:disabled {
+.c68:disabled {
   cursor: not-allowed;
 }
 
-.c69:disabled {
+.c68:disabled {
   color: #98A7B7;
   background: #dfe4e9;
 }
 
-.c69:disabled .c30 * {
+.c68:disabled .c30 * {
   fill: #98A7B7;
 }
 
-.c69:not(:disabled):not(:hover) {
+.c68:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #126AFA;
 }
 
-.c69:not(:disabled):not(:hover) .c30 * {
+.c68:not(:disabled):not(:hover) .c30 * {
   fill: #ffffff;
 }
 
-.c69:not(:disabled):active {
+.c68:not(:disabled):active {
   color: #ffffff;
   background: #0D4AAF;
 }
 
-.c69:not(:disabled):active .c30 * {
+.c68:not(:disabled):active .c30 * {
   fill: #ffffff;
 }
 
-.c69:not(:disabled):not(:active):hover {
+.c68:not(:disabled):not(:active):hover {
   color: #ffffff;
   background: #0F5AD5;
   box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
-.c69:not(:disabled):not(:active):hover .c30 * {
+.c68:not(:disabled):not(:active):hover .c30 * {
   fill: #ffffff;
 }
 
-.c69 .c30 + .c17 {
+.c68 .c30 + .c17 {
   margin-left: 0.8rem;
 }
 
-.c69 .c17 + .c30 {
+.c68 .c17 + .c30 {
   margin-left: 0.8rem;
 }
 
@@ -559,7 +553,7 @@ exports[`Form should render properly with initial state 1`] = `
   border-color: #126AFA;
 }
 
-.c67 {
+.c66 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -579,17 +573,17 @@ exports[`Form should render properly with initial state 1`] = `
   flex-direction: row;
 }
 
-.c67 * {
+.c66 * {
   cursor: pointer;
 }
 
-.c67:hover .c28 {
+.c66:hover .c28 {
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
   border-color: #0F5AD5;
   background-color: #0F5AD5;
 }
 
-.c53 {
+.c52 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -680,7 +674,7 @@ exports[`Form should render properly with initial state 1`] = `
   text-overflow: ellipsis;
 }
 
-.c56 {
+.c55 {
   pointer-events: none;
   margin-left: 1.6rem;
 }
@@ -712,17 +706,17 @@ exports[`Form should render properly with initial state 1`] = `
   color: #546A7F;
 }
 
-.c5 .c70,
-.c5 .c55 {
+.c5 .c69,
+.c5 .c54 {
   color: #546A7F;
 }
 
-.c5 .c70 *,
-.c5 .c55 * {
+.c5 .c69 *,
+.c5 .c54 * {
   fill: #546A7F;
 }
 
-.c5 ~ .c52 {
+.c5 ~ .c51 {
   color: #546A7F;
 }
 
@@ -763,17 +757,17 @@ exports[`Form should render properly with initial state 1`] = `
   color: #126AFA;
 }
 
-.c5:focus-within .c70,
-.c5:focus-within:hover .c70,
-.c5:focus-within .c55,
-.c5:focus-within:hover .c55 {
+.c5:focus-within .c69,
+.c5:focus-within:hover .c69,
+.c5:focus-within .c54,
+.c5:focus-within:hover .c54 {
   color: #126AFA;
 }
 
-.c5:focus-within .c70 *,
-.c5:focus-within:hover .c70 *,
-.c5:focus-within .c55 *,
-.c5:focus-within:hover .c55 * {
+.c5:focus-within .c69 *,
+.c5:focus-within:hover .c69 *,
+.c5:focus-within .c54 *,
+.c5:focus-within:hover .c54 * {
   fill: #126AFA;
 }
 
@@ -845,7 +839,7 @@ exports[`Form should render properly with initial state 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: 20rem;
+  min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -859,24 +853,8 @@ exports[`Form should render properly with initial state 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-width: 20rem;
+  min-width: auto;
   margin: 0.8rem 0;
-}
-
-.c48 {
-  position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  min-width: 33.8rem;
-  margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
 .c7 {
@@ -989,34 +967,32 @@ exports[`Form should render properly with initial state 1`] = `
   content: ' *';
 }
 
-.c54 {
+.c53 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c54 .c2 {
+.c53 .c2 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c54 .c2 label {
+.c53 .c2 label {
   pointer-events: none;
 }
 
-.c54 .c2 div,
-.c54 .c2 input,
-.c54 .c2 label {
+.c53 .c2 div,
+.c53 .c2 input,
+.c53 .c2 label {
   cursor: pointer;
 }
 
-.c54 .c2 .c55 {
+.c53 .c2 .c54 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -1025,7 +1001,7 @@ exports[`Form should render properly with initial state 1`] = `
   transform: rotate(0deg);
 }
 
-.c54 .c2:not(:focus-within):hover .c55 * {
+.c53 .c2:not(:focus-within):hover .c54 * {
   fill: #13181D;
 }
 
@@ -1059,7 +1035,7 @@ exports[`Form should render properly with initial state 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: 20rem;
+  min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -1079,7 +1055,7 @@ exports[`Form should render properly with initial state 1`] = `
   top: 5.6rem;
 }
 
-.c51 {
+.c50 {
   border-right: 0.1rem solid rgba(84,106,127,0.2);
   height: 3.2rem;
   margin-right: 1.6rem;
@@ -1088,7 +1064,7 @@ exports[`Form should render properly with initial state 1`] = `
   transition: border-color 100ms ease-out;
 }
 
-.c49 {
+.c48 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1112,25 +1088,25 @@ exports[`Form should render properly with initial state 1`] = `
   padding-left: 0.8rem;
 }
 
-.c49 .c8 {
+.c48 .c8 {
   color: #546A7F;
 }
 
-.c49 .c70,
-.c49 .c55 {
+.c48 .c69,
+.c48 .c54 {
   color: #546A7F;
 }
 
-.c49 .c70 *,
-.c49 .c55 * {
+.c48 .c69 *,
+.c48 .c54 * {
   fill: #546A7F;
 }
 
-.c49 ~ .c52 {
+.c48 ~ .c51 {
   color: #546A7F;
 }
 
-.c49::after {
+.c48::after {
   content: '';
   width: 100%;
   height: 0;
@@ -1143,74 +1119,74 @@ exports[`Form should render properly with initial state 1`] = `
   transition: all 100ms ease-out;
 }
 
-.c49:hover::after,
-.c49:focus-within::after {
+.c48:hover::after,
+.c48:focus-within::after {
   border-width: 0.2rem;
 }
 
-.c49 input {
+.c48 input {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c49:focus-within,
-.c49:focus-within:hover {
+.c48:focus-within,
+.c48:focus-within:hover {
   background-color: #E7F0FF;
 }
 
-.c49:focus-within::after,
-.c49:focus-within:hover::after {
+.c48:focus-within::after,
+.c48:focus-within:hover::after {
   border-color: #126AFA;
 }
 
-.c49:focus-within .c8,
-.c49:focus-within:hover .c8 {
+.c48:focus-within .c8,
+.c48:focus-within:hover .c8 {
   color: #126AFA;
 }
 
-.c49:focus-within .c70,
-.c49:focus-within:hover .c70,
-.c49:focus-within .c55,
-.c49:focus-within:hover .c55 {
+.c48:focus-within .c69,
+.c48:focus-within:hover .c69,
+.c48:focus-within .c54,
+.c48:focus-within:hover .c54 {
   color: #126AFA;
 }
 
-.c49:focus-within .c70 *,
-.c49:focus-within:hover .c70 *,
-.c49:focus-within .c55 *,
-.c49:focus-within:hover .c55 * {
+.c48:focus-within .c69 *,
+.c48:focus-within:hover .c69 *,
+.c48:focus-within .c54 *,
+.c48:focus-within:hover .c54 * {
   fill: #126AFA;
 }
 
-.c49:focus-within input,
-.c49:focus-within:hover input {
+.c48:focus-within input,
+.c48:focus-within:hover input {
   box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
-.c49:focus-within input::-webkit-input-placeholder,
-.c49:focus-within:hover input::-webkit-input-placeholder {
+.c48:focus-within input::-webkit-input-placeholder,
+.c48:focus-within:hover input::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c49:focus-within input::-moz-placeholder,
-.c49:focus-within:hover input::-moz-placeholder {
+.c48:focus-within input::-moz-placeholder,
+.c48:focus-within:hover input::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c49:focus-within input:-ms-input-placeholder,
-.c49:focus-within:hover input:-ms-input-placeholder {
+.c48:focus-within input:-ms-input-placeholder,
+.c48:focus-within:hover input:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c49:focus-within input::placeholder,
-.c49:focus-within:hover input::placeholder {
+.c48:focus-within input::placeholder,
+.c48:focus-within:hover input::placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c49 .c30 {
+.c48 .c30 {
   margin-right: 0.8rem;
 }
 
-.c49:hover .c50 {
+.c48:hover .c49 {
   border-color: #546A7F;
 }
 
@@ -1293,7 +1269,7 @@ exports[`Form should render properly with initial state 1`] = `
   outline: 0;
 }
 
-.c60 {
+.c59 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1323,16 +1299,16 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: center;
 }
 
-.c60:focus {
+.c59:focus {
   outline: none;
 }
 
-.c60:disabled,
-.c60:disabled > .c30 {
+.c59:disabled,
+.c59:disabled > .c30 {
   cursor: not-allowed;
 }
 
-.c60 .c30 {
+.c59 .c30 {
   font-size: 1.2rem;
   border-radius: 50%;
   cursor: pointer;
@@ -1340,27 +1316,27 @@ exports[`Form should render properly with initial state 1`] = `
   margin-left: 0.6rem;
 }
 
-.c60 .c30 {
+.c59 .c30 {
   background-color: #b0bcc8;
 }
 
-.c60 .c30 * {
+.c59 .c30 * {
   fill: #303C48;
 }
 
-.c60 .c30:hover {
+.c59 .c30:hover {
   background-color: #98A7B7;
 }
 
-.c60 .c30:hover * {
+.c59 .c30:hover * {
   fill: #13181D;
 }
 
-.c60:hover {
+.c59:hover {
   border-color: #435465;
 }
 
-.c59 {
+.c58 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1371,48 +1347,45 @@ exports[`Form should render properly with initial state 1`] = `
   align-items: center;
 }
 
-.c57 {
+.c56 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
-  width: 25.6rem;
+  min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c57 .c2 {
+.c56 .c2 {
   margin: 0;
 }
 
-.c57 .c2 label {
+.c56 .c2 label {
   pointer-events: none;
 }
 
-.c57 .c2 div,
-.c57 .c2 input,
-.c57 .c2 label {
+.c56 .c2 div,
+.c56 .c2 input,
+.c56 .c2 label {
   cursor: pointer;
 }
 
-.c57 .c2:focus-within input {
+.c56 .c2:focus-within input {
   cursor: text;
 }
 
-.c57 .c2 input {
+.c56 .c2 input {
   padding-right: 1.6rem;
 }
 
-.c57 .c58 > .c30 {
+.c56 .c57 > .c30 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c57 .c58 > .c30 * {
+.c56 .c57 > .c30 * {
   fill: #13181D;
 }
 
@@ -1539,7 +1512,7 @@ exports[`Form should render properly with initial state 1`] = `
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
 }
 
-.c68 {
+.c67 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1555,7 +1528,7 @@ exports[`Form should render properly with initial state 1`] = `
   justify-content: flex-end;
 }
 
-.c68 > * + * {
+.c67 > * + * {
   margin-left: 1.6rem;
 }
 
@@ -1589,8 +1562,18 @@ exports[`Form should render properly with initial state 1`] = `
   min-width: auto;
 }
 
-.c64 {
+.c63 {
   grid-column: 1/5;
+}
+
+.c63 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c64 {
+  grid-column: 5/9;
 }
 
 .c64 > * {
@@ -1600,7 +1583,7 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c65 {
-  grid-column: 5/9;
+  grid-column: 9/-1;
 }
 
 .c65 > * {
@@ -1609,22 +1592,12 @@ exports[`Form should render properly with initial state 1`] = `
   min-width: auto;
 }
 
-.c66 {
-  grid-column: 9/-1;
-}
-
-.c66 > * {
-  width: 100%;
-  margin: 0;
-  min-width: auto;
-}
-
-.c62 {
+.c61 {
   grid-column: 1/-1;
   margin-top: 2.6rem;
 }
 
-.c63 {
+.c62 {
   margin-bottom: 1rem;
 }
 
@@ -1633,12 +1606,6 @@ exports[`Form should render properly with initial state 1`] = `
   grid-template-columns: repeat(12,1fr);
   grid-gap: 1.6rem;
   display: inline-grid;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
 }
 
 .c0 > h2 {
@@ -2084,14 +2051,14 @@ exports[`Form should render properly with initial state 1`] = `
       class="c11"
     >
       <div
-        class="c2 c48"
+        class="c2 c3"
         id="experience-wrapper"
         label="Experience"
         name="experience"
         type="date-range"
       >
         <div
-          class="c4 c49"
+          class="c4 c48"
           id="experience-textFields"
         >
           <svg
@@ -2138,7 +2105,7 @@ exports[`Form should render properly with initial state 1`] = `
             </label>
           </div>
           <i
-            class="c50 c51"
+            class="c49 c50"
           />
           <div
             class="c6"
@@ -2168,7 +2135,7 @@ exports[`Form should render properly with initial state 1`] = `
           </div>
         </div>
         <span
-          class="c52 c53"
+          class="c51 c52"
           id="experience-helper-text"
         />
       </div>
@@ -2177,7 +2144,7 @@ exports[`Form should render properly with initial state 1`] = `
       class="c11"
     >
       <div
-        class="c54"
+        class="c53"
         id="country-wrapper"
       >
         <div
@@ -2210,7 +2177,7 @@ exports[`Form should render properly with initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c30 c31 c55 c56"
+              class="c30 c31 c54 c55"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -2231,7 +2198,7 @@ exports[`Form should render properly with initial state 1`] = `
       class="c11"
     >
       <div
-        class="c57"
+        class="c56"
         id="graduation-wrapper"
         name="graduation"
         placeholder="Please Select . . ."
@@ -2265,11 +2232,11 @@ exports[`Form should render properly with initial state 1`] = `
               </label>
             </div>
             <div
-              class="c58 c59"
+              class="c57 c58"
               id="graduation-count"
             >
               <button
-                class="c60"
+                class="c59"
                 id="graduation-count-chip"
               >
                 <span
@@ -2313,17 +2280,17 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <h4
-      class="c17 c61 c62"
+      class="c17 c60 c61"
     >
       Marks
     </h4>
     <span
-      class="c17 c18 c63"
+      class="c17 c18 c62"
     >
       Marks Information
     </span>
     <div
-      class="c64"
+      class="c63"
     >
       <div
         class="c2 c3"
@@ -2358,7 +2325,7 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <div
-      class="c65"
+      class="c64"
     >
       <div
         class="c2 c3"
@@ -2393,7 +2360,7 @@ exports[`Form should render properly with initial state 1`] = `
       </div>
     </div>
     <div
-      class="c66"
+      class="c65"
     >
       <div
         class="c2 c3"
@@ -2432,7 +2399,7 @@ exports[`Form should render properly with initial state 1`] = `
     >
       
       <label
-        class="c67"
+        class="c66"
         for="agree"
         id="agree-wrapper"
         sizes="[object Object]"
@@ -2476,10 +2443,10 @@ exports[`Form should render properly with initial state 1`] = `
       </label>
     </div>
     <div
-      class="c68"
+      class="c67"
     >
       <button
-        class="c69"
+        class="c68"
         form="medly-dynamic-form"
         type="submit"
       >
@@ -2577,7 +2544,7 @@ exports[`Form should render properly without initial state 1`] = `
   text-align: initial;
 }
 
-.c60 {
+.c59 {
   margin: 0;
   color: inherit;
   font-size: 1.8rem;
@@ -2590,7 +2557,7 @@ exports[`Form should render properly without initial state 1`] = `
   text-align: initial;
 }
 
-.c68 {
+.c67 {
   border: none;
   position: relative;
   -webkit-user-select: none;
@@ -2618,68 +2585,68 @@ exports[`Form should render properly without initial state 1`] = `
   align-items: center;
 }
 
-.c68,
-.c68 .c1,
-.c68 .c32,
-.c68 .c32 * {
+.c67,
+.c67 .c1,
+.c67 .c32,
+.c67 .c32 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c68:hover {
+.c67:hover {
   cursor: pointer;
 }
 
-.c68:focus {
+.c67:focus {
   outline: none;
 }
 
-.c68:disabled {
+.c67:disabled {
   cursor: not-allowed;
 }
 
-.c68:disabled {
+.c67:disabled {
   color: #98A7B7;
   background: #dfe4e9;
 }
 
-.c68:disabled .c32 * {
+.c67:disabled .c32 * {
   fill: #98A7B7;
 }
 
-.c68:not(:disabled):not(:hover) {
+.c67:not(:disabled):not(:hover) {
   color: #ffffff;
   background: #126AFA;
 }
 
-.c68:not(:disabled):not(:hover) .c32 * {
+.c67:not(:disabled):not(:hover) .c32 * {
   fill: #ffffff;
 }
 
-.c68:not(:disabled):active {
+.c67:not(:disabled):active {
   color: #ffffff;
   background: #0D4AAF;
 }
 
-.c68:not(:disabled):active .c32 * {
+.c67:not(:disabled):active .c32 * {
   fill: #ffffff;
 }
 
-.c68:not(:disabled):not(:active):hover {
+.c67:not(:disabled):not(:active):hover {
   color: #ffffff;
   background: #0F5AD5;
   box-shadow: 0 0.2rem 0.8rem rgba(15,90,213,0.35);
 }
 
-.c68:not(:disabled):not(:active):hover .c32 * {
+.c67:not(:disabled):not(:active):hover .c32 * {
   fill: #ffffff;
 }
 
-.c68 .c32 + .c1 {
+.c67 .c32 + .c1 {
   margin-left: 0.8rem;
 }
 
-.c68 .c1 + .c32 {
+.c67 .c1 + .c32 {
   margin-left: 0.8rem;
 }
 
@@ -2862,7 +2829,7 @@ exports[`Form should render properly without initial state 1`] = `
   border-color: #126AFA;
 }
 
-.c66 {
+.c65 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2882,16 +2849,16 @@ exports[`Form should render properly without initial state 1`] = `
   flex-direction: row;
 }
 
-.c66 * {
+.c65 * {
   cursor: pointer;
 }
 
-.c66:hover .c30 {
+.c65:hover .c30 {
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
   border-color: #126AFA;
 }
 
-.c53 {
+.c52 {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin: 0.5rem 1.6rem 0;
@@ -2982,7 +2949,7 @@ exports[`Form should render properly without initial state 1`] = `
   text-overflow: ellipsis;
 }
 
-.c56 {
+.c55 {
   pointer-events: none;
   margin-left: 1.6rem;
 }
@@ -3014,17 +2981,17 @@ exports[`Form should render properly without initial state 1`] = `
   color: #546A7F;
 }
 
-.c8 .c69,
-.c8 .c55 {
+.c8 .c68,
+.c8 .c54 {
   color: #546A7F;
 }
 
-.c8 .c69 *,
-.c8 .c55 * {
+.c8 .c68 *,
+.c8 .c54 * {
   fill: #546A7F;
 }
 
-.c8 ~ .c52 {
+.c8 ~ .c51 {
   color: #546A7F;
 }
 
@@ -3065,17 +3032,17 @@ exports[`Form should render properly without initial state 1`] = `
   color: #126AFA;
 }
 
-.c8:focus-within .c69,
-.c8:focus-within:hover .c69,
-.c8:focus-within .c55,
-.c8:focus-within:hover .c55 {
+.c8:focus-within .c68,
+.c8:focus-within:hover .c68,
+.c8:focus-within .c54,
+.c8:focus-within:hover .c54 {
   color: #126AFA;
 }
 
-.c8:focus-within .c69 *,
-.c8:focus-within:hover .c69 *,
-.c8:focus-within .c55 *,
-.c8:focus-within:hover .c55 * {
+.c8:focus-within .c68 *,
+.c8:focus-within:hover .c68 *,
+.c8:focus-within .c54 *,
+.c8:focus-within:hover .c54 * {
   fill: #126AFA;
 }
 
@@ -3147,7 +3114,7 @@ exports[`Form should render properly without initial state 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: 20rem;
+  min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -3161,24 +3128,8 @@ exports[`Form should render properly without initial state 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-width: 20rem;
+  min-width: auto;
   margin: 0.8rem 0;
-}
-
-.c48 {
-  position: relative;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  min-width: 33.8rem;
-  margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
 .c10 {
@@ -3291,34 +3242,32 @@ exports[`Form should render properly without initial state 1`] = `
   content: ' *';
 }
 
-.c54 {
+.c53 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c54 .c5 {
+.c53 .c5 {
   margin: 0;
   caret-color: transparent;
 }
 
-.c54 .c5 label {
+.c53 .c5 label {
   pointer-events: none;
 }
 
-.c54 .c5 div,
-.c54 .c5 input,
-.c54 .c5 label {
+.c53 .c5 div,
+.c53 .c5 input,
+.c53 .c5 label {
   cursor: pointer;
 }
 
-.c54 .c5 .c55 {
+.c53 .c5 .c54 {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -3327,7 +3276,7 @@ exports[`Form should render properly without initial state 1`] = `
   transform: rotate(0deg);
 }
 
-.c54 .c5:not(:focus-within):hover .c55 * {
+.c53 .c5:not(:focus-within):hover .c54 * {
   fill: #13181D;
 }
 
@@ -3361,7 +3310,7 @@ exports[`Form should render properly without initial state 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: 20rem;
+  min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -3381,7 +3330,7 @@ exports[`Form should render properly without initial state 1`] = `
   top: 5.6rem;
 }
 
-.c51 {
+.c50 {
   border-right: 0.1rem solid rgba(84,106,127,0.2);
   height: 3.2rem;
   margin-right: 1.6rem;
@@ -3390,7 +3339,7 @@ exports[`Form should render properly without initial state 1`] = `
   transition: border-color 100ms ease-out;
 }
 
-.c49 {
+.c48 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3414,25 +3363,25 @@ exports[`Form should render properly without initial state 1`] = `
   padding-left: 0.8rem;
 }
 
-.c49 .c11 {
+.c48 .c11 {
   color: #546A7F;
 }
 
-.c49 .c69,
-.c49 .c55 {
+.c48 .c68,
+.c48 .c54 {
   color: #546A7F;
 }
 
-.c49 .c69 *,
-.c49 .c55 * {
+.c48 .c68 *,
+.c48 .c54 * {
   fill: #546A7F;
 }
 
-.c49 ~ .c52 {
+.c48 ~ .c51 {
   color: #546A7F;
 }
 
-.c49::after {
+.c48::after {
   content: '';
   width: 100%;
   height: 0;
@@ -3445,74 +3394,74 @@ exports[`Form should render properly without initial state 1`] = `
   transition: all 100ms ease-out;
 }
 
-.c49:hover::after,
-.c49:focus-within::after {
+.c48:hover::after,
+.c48:focus-within::after {
   border-width: 0.2rem;
 }
 
-.c49 input {
+.c48 input {
   box-shadow: 0 0 0 100000px #eff2f4 inset;
 }
 
-.c49:focus-within,
-.c49:focus-within:hover {
+.c48:focus-within,
+.c48:focus-within:hover {
   background-color: #E7F0FF;
 }
 
-.c49:focus-within::after,
-.c49:focus-within:hover::after {
+.c48:focus-within::after,
+.c48:focus-within:hover::after {
   border-color: #126AFA;
 }
 
-.c49:focus-within .c11,
-.c49:focus-within:hover .c11 {
+.c48:focus-within .c11,
+.c48:focus-within:hover .c11 {
   color: #126AFA;
 }
 
-.c49:focus-within .c69,
-.c49:focus-within:hover .c69,
-.c49:focus-within .c55,
-.c49:focus-within:hover .c55 {
+.c48:focus-within .c68,
+.c48:focus-within:hover .c68,
+.c48:focus-within .c54,
+.c48:focus-within:hover .c54 {
   color: #126AFA;
 }
 
-.c49:focus-within .c69 *,
-.c49:focus-within:hover .c69 *,
-.c49:focus-within .c55 *,
-.c49:focus-within:hover .c55 * {
+.c48:focus-within .c68 *,
+.c48:focus-within:hover .c68 *,
+.c48:focus-within .c54 *,
+.c48:focus-within:hover .c54 * {
   fill: #126AFA;
 }
 
-.c49:focus-within input,
-.c49:focus-within:hover input {
+.c48:focus-within input,
+.c48:focus-within:hover input {
   box-shadow: 0 0 0 100000px #E7F0FF inset;
 }
 
-.c49:focus-within input::-webkit-input-placeholder,
-.c49:focus-within:hover input::-webkit-input-placeholder {
+.c48:focus-within input::-webkit-input-placeholder,
+.c48:focus-within:hover input::-webkit-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c49:focus-within input::-moz-placeholder,
-.c49:focus-within:hover input::-moz-placeholder {
+.c48:focus-within input::-moz-placeholder,
+.c48:focus-within:hover input::-moz-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c49:focus-within input:-ms-input-placeholder,
-.c49:focus-within:hover input:-ms-input-placeholder {
+.c48:focus-within input:-ms-input-placeholder,
+.c48:focus-within:hover input:-ms-input-placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c49:focus-within input::placeholder,
-.c49:focus-within:hover input::placeholder {
+.c48:focus-within input::placeholder,
+.c48:focus-within:hover input::placeholder {
   color: rgba(0,90,238,.2);
 }
 
-.c49 .c32 {
+.c48 .c32 {
   margin-right: 0.8rem;
 }
 
-.c49:hover .c50 {
+.c48:hover .c49 {
   border-color: #546A7F;
 }
 
@@ -3595,7 +3544,7 @@ exports[`Form should render properly without initial state 1`] = `
   outline: 0;
 }
 
-.c59 {
+.c58 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3606,48 +3555,45 @@ exports[`Form should render properly without initial state 1`] = `
   align-items: center;
 }
 
-.c57 {
+.c56 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
-  width: 25.6rem;
+  min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
-.c57 .c5 {
+.c56 .c5 {
   margin: 0;
 }
 
-.c57 .c5 label {
+.c56 .c5 label {
   pointer-events: none;
 }
 
-.c57 .c5 div,
-.c57 .c5 input,
-.c57 .c5 label {
+.c56 .c5 div,
+.c56 .c5 input,
+.c56 .c5 label {
   cursor: pointer;
 }
 
-.c57 .c5:focus-within input {
+.c56 .c5:focus-within input {
   cursor: text;
 }
 
-.c57 .c5 input {
+.c56 .c5 input {
   padding-right: 1.6rem;
 }
 
-.c57 .c58 > .c32 {
+.c56 .c57 > .c32 {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
 }
 
-.c57 .c58 > .c32 * {
+.c56 .c57 > .c32 * {
   fill: #13181D;
 }
 
@@ -3754,7 +3700,7 @@ exports[`Form should render properly without initial state 1`] = `
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
 }
 
-.c67 {
+.c66 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3770,7 +3716,7 @@ exports[`Form should render properly without initial state 1`] = `
   justify-content: flex-end;
 }
 
-.c67 > * + * {
+.c66 > * + * {
   margin-left: 1.6rem;
 }
 
@@ -3804,8 +3750,18 @@ exports[`Form should render properly without initial state 1`] = `
   min-width: auto;
 }
 
-.c63 {
+.c62 {
   grid-column: 1/5;
+}
+
+.c62 > * {
+  width: 100%;
+  margin: 0;
+  min-width: auto;
+}
+
+.c63 {
+  grid-column: 5/9;
 }
 
 .c63 > * {
@@ -3815,7 +3771,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c64 {
-  grid-column: 5/9;
+  grid-column: 9/-1;
 }
 
 .c64 > * {
@@ -3824,22 +3780,12 @@ exports[`Form should render properly without initial state 1`] = `
   min-width: auto;
 }
 
-.c65 {
-  grid-column: 9/-1;
-}
-
-.c65 > * {
-  width: 100%;
-  margin: 0;
-  min-width: auto;
-}
-
-.c61 {
+.c60 {
   grid-column: 1/-1;
   margin-top: 2.6rem;
 }
 
-.c62 {
+.c61 {
   margin-bottom: 1rem;
 }
 
@@ -3847,9 +3793,9 @@ exports[`Form should render properly without initial state 1`] = `
   grid-template-rows: auto;
   grid-template-columns: repeat(12,1fr);
   grid-gap: 1.6rem;
-  display: grid;
-  width: 100%;
   min-width: 300px;
+  width: 100%;
+  display: grid;
 }
 
 .c0 > h2 {
@@ -4303,14 +4249,14 @@ exports[`Form should render properly without initial state 1`] = `
       class="c14"
     >
       <div
-        class="c5 c48"
+        class="c5 c6"
         id="experience-wrapper"
         label="Experience"
         name="experience"
         type="date-range"
       >
         <div
-          class="c7 c49"
+          class="c7 c48"
           id="experience-textFields"
         >
           <svg
@@ -4357,7 +4303,7 @@ exports[`Form should render properly without initial state 1`] = `
             </label>
           </div>
           <i
-            class="c50 c51"
+            class="c49 c50"
           />
           <div
             class="c9"
@@ -4387,7 +4333,7 @@ exports[`Form should render properly without initial state 1`] = `
           </div>
         </div>
         <span
-          class="c52 c53"
+          class="c51 c52"
           id="experience-helper-text"
         />
       </div>
@@ -4396,7 +4342,7 @@ exports[`Form should render properly without initial state 1`] = `
       class="c14"
     >
       <div
-        class="c54"
+        class="c53"
         id="country-wrapper"
       >
         <div
@@ -4429,7 +4375,7 @@ exports[`Form should render properly without initial state 1`] = `
               </label>
             </div>
             <svg
-              class="c32 c33 c55 c56"
+              class="c32 c33 c54 c55"
               fill="none"
               height="1em"
               viewBox="0 0 24 24"
@@ -4450,7 +4396,7 @@ exports[`Form should render properly without initial state 1`] = `
       class="c14"
     >
       <div
-        class="c57"
+        class="c56"
         id="graduation-wrapper"
         name="graduation"
         placeholder="Please Select . . ."
@@ -4484,7 +4430,7 @@ exports[`Form should render properly without initial state 1`] = `
               </label>
             </div>
             <div
-              class="c58 c59"
+              class="c57 c58"
               id="graduation-count"
             >
               <svg
@@ -4507,17 +4453,17 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <h4
-      class="c1 c60 c61"
+      class="c1 c59 c60"
     >
       Marks
     </h4>
     <span
-      class="c1 c20 c62"
+      class="c1 c20 c61"
     >
       Marks Information
     </span>
     <div
-      class="c63"
+      class="c62"
     >
       <div
         class="c5 c6"
@@ -4552,7 +4498,7 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <div
-      class="c64"
+      class="c63"
     >
       <div
         class="c5 c6"
@@ -4587,7 +4533,7 @@ exports[`Form should render properly without initial state 1`] = `
       </div>
     </div>
     <div
-      class="c65"
+      class="c64"
     >
       <div
         class="c5 c6"
@@ -4626,7 +4572,7 @@ exports[`Form should render properly without initial state 1`] = `
     >
       
       <label
-        class="c66"
+        class="c65"
         for="agree"
         id="agree-wrapper"
         sizes="[object Object]"
@@ -4669,10 +4615,10 @@ exports[`Form should render properly without initial state 1`] = `
       </label>
     </div>
     <div
-      class="c67"
+      class="c66"
     >
       <button
-        class="c68"
+        class="c67"
         form="medly-dynamic-form"
         type="submit"
       >

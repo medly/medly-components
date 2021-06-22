@@ -408,9 +408,6 @@ exports[`DatePicker component popover placement should render properly with "bot
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 5.6rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -1445,9 +1442,6 @@ exports[`DatePicker component popover placement should render properly with "bot
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 5.6rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -2479,9 +2473,6 @@ exports[`DatePicker component popover placement should render properly with "bot
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 5.6rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -3513,9 +3504,6 @@ exports[`DatePicker component popover placement should render properly with "lef
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 5.6rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -4549,9 +4537,6 @@ exports[`DatePicker component popover placement should render properly with "lef
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 5.6rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -5582,9 +5567,6 @@ exports[`DatePicker component popover placement should render properly with "lef
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 5.6rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -6615,9 +6597,6 @@ exports[`DatePicker component popover placement should render properly with "rig
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 5.6rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -7651,9 +7630,6 @@ exports[`DatePicker component popover placement should render properly with "rig
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 5.6rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -8684,9 +8660,6 @@ exports[`DatePicker component popover placement should render properly with "rig
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 5.6rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -9717,9 +9690,6 @@ exports[`DatePicker component popover placement should render properly with "top
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 5.6rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -10753,9 +10723,6 @@ exports[`DatePicker component popover placement should render properly with "top
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 5.6rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -11786,9 +11753,6 @@ exports[`DatePicker component popover placement should render properly with "top
   display: -ms-inline-flexbox;
   display: inline-flex;
   min-width: 5.6rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 

@@ -158,6 +158,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                     placeholder={placeholder}
                     suffix={ChipEl}
                     label={label}
+                    minWidth={minWidth}
                     onInvalid={validate}
                     onChange={handleInputChange}
                     onBlur={handleInputOnBlur}
@@ -186,6 +187,7 @@ MultiSelect.Style = Wrapper;
 MultiSelect.defaultProps = {
     size: 'M',
     values: [],
+    minWidth: '20rem',
     variant: 'filled',
     isSearchable: true,
     placeholder: 'Please Select . . .'

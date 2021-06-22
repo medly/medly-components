@@ -145,7 +145,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                     disabled={disabled}
                     value={textValue}
                     onChange={onTextChange}
-                    {...{ ...restProps, onBlur, onFocus, onInvalid }}
+                    {...{ ...restProps, onBlur, onFocus, minWidth, onInvalid }}
                 />
 
                 {showCalendar && (
@@ -170,6 +170,7 @@ DatePicker.defaultProps = {
     disabled: false,
     required: false,
     fullWidth: false,
+    minWidth: '20rem',
     minSelectableDate: new Date(1901, 0, 1),
     maxSelectableDate: new Date(2100, 11, 1),
     popoverPlacement: 'bottom-start',

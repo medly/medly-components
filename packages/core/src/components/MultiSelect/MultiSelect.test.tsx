@@ -27,7 +27,7 @@ describe('MultiSelect component', () => {
             { container } = render(
                 <MultiSelect
                     disabled
-                    minWidth={300}
+                    minWidth={'30rem'}
                     options={options}
                     onChange={mockOnChange}
                     values={['all']}

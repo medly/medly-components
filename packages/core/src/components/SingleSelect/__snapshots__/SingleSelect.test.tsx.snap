@@ -301,9 +301,7 @@ exports[`SingleSelect component should handle builtin form validation 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -685,9 +683,7 @@ exports[`SingleSelect component should render properly when isSearchable is true
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -1362,10 +1358,8 @@ exports[`SingleSelect component should take passed max width 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  min-width: 20rem;
   max-width: 30rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -1796,9 +1790,7 @@ exports[`SingleSelect component with filled variant should render disabled state
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -2337,6 +2329,7 @@ exports[`SingleSelect component with filled variant should render properly 1`] =
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  min-width: 20rem;
   width: 100%;
   margin: 0.8rem 0;
 }
@@ -2923,9 +2916,7 @@ exports[`SingleSelect component with filled variant should render properly when 
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -3415,9 +3406,7 @@ exports[`SingleSelect component with filled variant should render with label pro
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -3675,9 +3664,7 @@ exports[`SingleSelect component with flat variant should render disabled state p
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -4064,6 +4051,7 @@ exports[`SingleSelect component with flat variant should render properly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  min-width: 20rem;
   width: 100%;
   margin: 0.8rem 0;
 }
@@ -4484,9 +4472,7 @@ exports[`SingleSelect component with flat variant should render properly when op
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -4820,9 +4806,7 @@ exports[`SingleSelect component with flat variant should render with label prope
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -5196,9 +5180,7 @@ exports[`SingleSelect component with outlined variant should render disabled sta
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -5751,6 +5733,7 @@ exports[`SingleSelect component with outlined variant should render properly 1`]
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  min-width: 20rem;
   width: 100%;
   margin: 0.8rem 0;
 }
@@ -6351,9 +6334,7 @@ exports[`SingleSelect component with outlined variant should render properly whe
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -6857,9 +6838,7 @@ exports[`SingleSelect component with outlined variant should render with label p
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 

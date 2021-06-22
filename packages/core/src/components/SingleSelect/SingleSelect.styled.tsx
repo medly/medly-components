@@ -8,7 +8,7 @@ export const Wrapper = styled('div')<SelectWrapperProps>`
     display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
     min-width: ${({ minWidth }) => minWidth};
     max-width: ${({ maxWidth }) => maxWidth};
-    width: ${({ fullWidth }) => (fullWidth ? '100%' : 'max-content')};
+    width: ${({ fullWidth }) => fullWidth && '100%'};
     margin: ${({ theme, fullWidth }) =>
         fullWidth ? `${theme.spacing.S2} 0` : `${theme.spacing.S2} ${theme.spacing.S2} ${theme.spacing.S2} 0`};
 
