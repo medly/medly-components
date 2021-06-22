@@ -12,7 +12,7 @@ export const ModalBackgroundStyled = styled.div<ModalBackgroundProps>`
     width: 100%;
     height: 100%;
     background: ${({ theme }) => theme.modal.overlayColor};
-    z-index: 1000;
+    z-index: 1001;
     animation: ${({ open }) => `${open ? 'modalFadeIn' : 'modalFadeOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) `};
 
     @keyframes modalFadeIn {
