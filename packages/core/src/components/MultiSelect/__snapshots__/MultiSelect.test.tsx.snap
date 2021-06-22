@@ -1760,7 +1760,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   box-sizing: border-box;
   border-radius: 0.4rem;
   width: 100%;
-  z-index: 1000;
+  z-index: 4;
 }
 
 .c19 {
@@ -3064,7 +3064,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   box-sizing: border-box;
   border-radius: 0.4rem;
   width: 100%;
-  z-index: 1000;
+  z-index: 4;
 }
 
 .c18 {

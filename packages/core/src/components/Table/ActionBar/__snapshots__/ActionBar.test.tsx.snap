@@ -145,7 +145,7 @@ exports[`ActionBar component should not render Action bar with passed parameters
 }
 
 .c1 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   bottom: calc(100% + 1.5rem);
   left: 50%;
@@ -183,7 +183,7 @@ exports[`ActionBar component should not render Action bar with passed parameters
   content: '';
   width: 0;
   height: 0;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;
@@ -459,7 +459,7 @@ exports[`ActionBar component should render correctly with all the default props 
 }
 
 .c1 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   bottom: calc(100% + 1.5rem);
   left: 50%;
@@ -497,7 +497,7 @@ exports[`ActionBar component should render correctly with all the default props 
   content: '';
   width: 0;
   height: 0;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;

@@ -1072,7 +1072,7 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c41 .sc-fzoJMP {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
   left: 0%;
@@ -3374,7 +3374,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c41 .sc-fzoJMP {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
   left: 0%;

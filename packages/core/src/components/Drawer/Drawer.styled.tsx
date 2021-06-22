@@ -6,7 +6,7 @@ export const DrawerBackground = styled('div')<{ open: boolean; withOverlay: bool
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    z-index: 10;
     position: fixed;
     animation: ${({ withOverlay, open }) =>
         withOverlay ? `${open ? 'drawerFadeIn' : 'drawerFadeOut'} 0.4s cubic-bezier(0, 0, 0.33, 1) forwards` : 'none'};

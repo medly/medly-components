@@ -108,7 +108,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  z-index: 10;
+  z-index: 4;
   position: absolute;
   overflow: hidden;
   padding: 0;
@@ -1895,7 +1895,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  z-index: 10;
+  z-index: 4;
   position: absolute;
   overflow: hidden;
   padding: 0;
@@ -3679,7 +3679,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  z-index: 10;
+  z-index: 4;
   position: absolute;
   overflow: hidden;
   padding: 0;
@@ -5463,7 +5463,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  z-index: 10;
+  z-index: 4;
   position: absolute;
   overflow: hidden;
   padding: 0;
@@ -7249,7 +7249,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  z-index: 10;
+  z-index: 4;
   position: absolute;
   overflow: hidden;
   padding: 0;
@@ -9032,7 +9032,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  z-index: 10;
+  z-index: 4;
   position: absolute;
   overflow: hidden;
   padding: 0;
@@ -10815,7 +10815,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  z-index: 10;
+  z-index: 4;
   position: absolute;
   overflow: hidden;
   padding: 0;
@@ -12601,7 +12601,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  z-index: 10;
+  z-index: 4;
   position: absolute;
   overflow: hidden;
   padding: 0;
@@ -14384,7 +14384,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  z-index: 10;
+  z-index: 4;
   position: absolute;
   overflow: hidden;
   padding: 0;
@@ -16167,7 +16167,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  z-index: 10;
+  z-index: 4;
   position: absolute;
   overflow: hidden;
   padding: 0;
@@ -17953,7 +17953,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  z-index: 10;
+  z-index: 4;
   position: absolute;
   overflow: hidden;
   padding: 0;
@@ -19736,7 +19736,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  z-index: 10;
+  z-index: 4;
   position: absolute;
   overflow: hidden;
   padding: 0;
@@ -21722,7 +21722,7 @@ exports[`DateRangePicker should render properly 1`] = `
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  z-index: 10;
+  z-index: 4;
   position: absolute;
   overflow: hidden;
   padding: 0;
@@ -24173,7 +24173,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  z-index: 10;
+  z-index: 4;
   position: absolute;
   overflow: hidden;
   padding: 0;

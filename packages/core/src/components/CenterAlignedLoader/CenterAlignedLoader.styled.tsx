@@ -21,7 +21,7 @@ export const CenterAligned = styled('div')<CenterAlignedProps>`
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
+    z-index: 1001;
     position: ${({ position }) => position};
     background-color: ${({ withOverlay, theme }) => withOverlay && rgba(theme.colors.white, 0.75)};
     & > * {
