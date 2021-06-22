@@ -204,6 +204,7 @@ SingleSelect.defaultProps = {
     value: '',
     size: 'M',
     label: '',
+    minWidth: '20rem',
     variant: 'filled',
     fullWidth: false,
     required: false,

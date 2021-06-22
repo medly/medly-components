@@ -43,6 +43,7 @@ export const Fields: React.FC<Props> = React.memo(props => {
                         ...componentProps,
                         name,
                         disabled,
+                        minWidth: 'auto',
                         onFocus: handlers.handleFocus(name, (componentProps as TextFieldProps).onFocus),
                         errorText: errorMessages[name],
                         // These two fields will be removed very soon
