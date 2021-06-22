@@ -2,7 +2,7 @@
 
 exports[`Popover component with arrow and placement bottom, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   top: calc(100% + 1.5rem);
@@ -19,7 +19,7 @@ exports[`Popover component with arrow and placement bottom, should render proper
   content: '';
   width: 0;
   height: 0;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;
@@ -46,7 +46,7 @@ exports[`Popover component with arrow and placement bottom, should render proper
 
 exports[`Popover component with arrow and placement bottom-end, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   top: calc(100% + 1.5rem);
@@ -60,7 +60,7 @@ exports[`Popover component with arrow and placement bottom-end, should render pr
   content: '';
   width: 0;
   height: 0;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;
@@ -87,7 +87,7 @@ exports[`Popover component with arrow and placement bottom-end, should render pr
 
 exports[`Popover component with arrow and placement bottom-start, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   top: calc(100% + 1.5rem);
@@ -101,7 +101,7 @@ exports[`Popover component with arrow and placement bottom-start, should render 
   content: '';
   width: 0;
   height: 0;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;
@@ -128,7 +128,7 @@ exports[`Popover component with arrow and placement bottom-start, should render 
 
 exports[`Popover component with arrow and placement left, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   right: calc(100% + 1.5rem);
@@ -145,7 +145,7 @@ exports[`Popover component with arrow and placement left, should render properly
   content: '';
   width: 0;
   height: 0;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;
@@ -172,7 +172,7 @@ exports[`Popover component with arrow and placement left, should render properly
 
 exports[`Popover component with arrow and placement left-end, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   right: calc(100% + 1.5rem);
@@ -186,7 +186,7 @@ exports[`Popover component with arrow and placement left-end, should render prop
   content: '';
   width: 0;
   height: 0;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;
@@ -213,7 +213,7 @@ exports[`Popover component with arrow and placement left-end, should render prop
 
 exports[`Popover component with arrow and placement left-start, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   right: calc(100% + 1.5rem);
@@ -227,7 +227,7 @@ exports[`Popover component with arrow and placement left-start, should render pr
   content: '';
   width: 0;
   height: 0;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;
@@ -254,7 +254,7 @@ exports[`Popover component with arrow and placement left-start, should render pr
 
 exports[`Popover component with arrow and placement right, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   left: calc(100% + 1.5rem);
@@ -271,7 +271,7 @@ exports[`Popover component with arrow and placement right, should render properl
   content: '';
   width: 0;
   height: 0;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;
@@ -298,7 +298,7 @@ exports[`Popover component with arrow and placement right, should render properl
 
 exports[`Popover component with arrow and placement right-end, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   bottom: 0;
@@ -312,7 +312,7 @@ exports[`Popover component with arrow and placement right-end, should render pro
   content: '';
   width: 0;
   height: 0;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;
@@ -339,7 +339,7 @@ exports[`Popover component with arrow and placement right-end, should render pro
 
 exports[`Popover component with arrow and placement right-start, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   top: 0%;
@@ -353,7 +353,7 @@ exports[`Popover component with arrow and placement right-start, should render p
   content: '';
   width: 0;
   height: 0;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;
@@ -380,7 +380,7 @@ exports[`Popover component with arrow and placement right-start, should render p
 
 exports[`Popover component with arrow and placement top, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   bottom: calc(100% + 1.5rem);
@@ -397,7 +397,7 @@ exports[`Popover component with arrow and placement top, should render properly 
   content: '';
   width: 0;
   height: 0;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;
@@ -424,7 +424,7 @@ exports[`Popover component with arrow and placement top, should render properly 
 
 exports[`Popover component with arrow and placement top-end, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   bottom: calc(100% + 1.5rem);
@@ -438,7 +438,7 @@ exports[`Popover component with arrow and placement top-end, should render prope
   content: '';
   width: 0;
   height: 0;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;
@@ -462,7 +462,7 @@ exports[`Popover component with arrow and placement top-end, should render prope
 
 exports[`Popover component with arrow and placement top-start, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   bottom: calc(100% + 1.5rem);
@@ -476,7 +476,7 @@ exports[`Popover component with arrow and placement top-start, should render pro
   content: '';
   width: 0;
   height: 0;
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;
@@ -500,7 +500,7 @@ exports[`Popover component with arrow and placement top-start, should render pro
 
 exports[`Popover component without arrow and placement bottom, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   top: calc(100% + 0px);
@@ -522,7 +522,7 @@ exports[`Popover component without arrow and placement bottom, should render pro
 
 exports[`Popover component without arrow and placement bottom-end, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   top: calc(100% + 0px);
@@ -541,7 +541,7 @@ exports[`Popover component without arrow and placement bottom-end, should render
 
 exports[`Popover component without arrow and placement bottom-start, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   top: calc(100% + 0px);
@@ -560,7 +560,7 @@ exports[`Popover component without arrow and placement bottom-start, should rend
 
 exports[`Popover component without arrow and placement left, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   right: calc(100% + 0px);
@@ -582,7 +582,7 @@ exports[`Popover component without arrow and placement left, should render prope
 
 exports[`Popover component without arrow and placement left-end, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   right: calc(100% + 0px);
@@ -601,7 +601,7 @@ exports[`Popover component without arrow and placement left-end, should render p
 
 exports[`Popover component without arrow and placement left-start, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   right: calc(100% + 0px);
@@ -620,7 +620,7 @@ exports[`Popover component without arrow and placement left-start, should render
 
 exports[`Popover component without arrow and placement right, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   left: calc(100% + 0px);
@@ -642,7 +642,7 @@ exports[`Popover component without arrow and placement right, should render prop
 
 exports[`Popover component without arrow and placement right-end, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   bottom: 0;
@@ -661,7 +661,7 @@ exports[`Popover component without arrow and placement right-end, should render 
 
 exports[`Popover component without arrow and placement right-start, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   top: 0%;
@@ -680,7 +680,7 @@ exports[`Popover component without arrow and placement right-start, should rende
 
 exports[`Popover component without arrow and placement top, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   bottom: calc(100% + 0px);
@@ -702,7 +702,7 @@ exports[`Popover component without arrow and placement top, should render proper
 
 exports[`Popover component without arrow and placement top-end, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   bottom: calc(100% + 0px);
@@ -721,7 +721,7 @@ exports[`Popover component without arrow and placement top-end, should render pr
 
 exports[`Popover component without arrow and placement top-start, should render properly 1`] = `
 .c0 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background-color: white;
   bottom: calc(100% + 0px);

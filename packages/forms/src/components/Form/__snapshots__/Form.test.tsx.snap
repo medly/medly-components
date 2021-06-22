@@ -845,7 +845,7 @@ exports[`Form should render properly with initial state 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: 20rem;
+  min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -859,7 +859,7 @@ exports[`Form should render properly with initial state 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-width: 20rem;
+  min-width: auto;
   margin: 0.8rem 0;
 }
 
@@ -1059,7 +1059,7 @@ exports[`Form should render properly with initial state 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: 20rem;
+  min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -1072,7 +1072,7 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c41 .sc-fzoJMP {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
   left: 0%;
@@ -3147,7 +3147,7 @@ exports[`Form should render properly without initial state 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: 20rem;
+  min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -3161,7 +3161,7 @@ exports[`Form should render properly without initial state 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-width: 20rem;
+  min-width: auto;
   margin: 0.8rem 0;
 }
 
@@ -3361,7 +3361,7 @@ exports[`Form should render properly without initial state 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: 20rem;
+  min-width: auto;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -3374,7 +3374,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c41 .sc-fzoJMP {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   top: calc(100% + 0px);
   left: 0%;

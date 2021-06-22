@@ -5,7 +5,7 @@ exports[`Minimap component should align slider controller with proper left offse
   position: -webkit-sticky;
   position: sticky;
   display: inline;
-  z-index: 999;
+  z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
@@ -132,7 +132,7 @@ exports[`Minimap component should not align slider controller when user performs
   position: -webkit-sticky;
   position: sticky;
   display: inline;
-  z-index: 999;
+  z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
@@ -259,7 +259,7 @@ exports[`Minimap component should position minimap at the right hand side bottom
   position: -webkit-sticky;
   position: sticky;
   display: inline;
-  z-index: 999;
+  z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
@@ -385,7 +385,7 @@ exports[`Minimap component should position minimap at the right hand side bottom
   position: -webkit-sticky;
   position: sticky;
   display: inline;
-  z-index: 999;
+  z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
@@ -511,7 +511,7 @@ exports[`Minimap component should position slider controller at the correct posi
   position: -webkit-sticky;
   position: sticky;
   display: inline;
-  z-index: 999;
+  z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
@@ -638,7 +638,7 @@ exports[`Minimap component should position slider controller at the extreme end 
   position: -webkit-sticky;
   position: sticky;
   display: inline;
-  z-index: 999;
+  z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
@@ -765,7 +765,7 @@ exports[`Minimap component should position slider controller when performed drag
   position: -webkit-sticky;
   position: sticky;
   display: inline;
-  z-index: 999;
+  z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
@@ -892,7 +892,7 @@ exports[`Minimap component should render properly 1`] = `
   position: -webkit-sticky;
   position: sticky;
   display: inline;
-  z-index: 999;
+  z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;
@@ -1018,7 +1018,7 @@ exports[`Minimap component should stop slider controller positioning when we mov
   position: -webkit-sticky;
   position: sticky;
   display: inline;
-  z-index: 999;
+  z-index: 5;
   left: calc(100% - 19rem);
   bottom: 9.5rem;
   opacity: .4;

@@ -79,7 +79,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c8 {
-  z-index: 1000;
+  z-index: 4;
   position: absolute;
   background: #ffffff;
   left: 0;
