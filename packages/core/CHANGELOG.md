@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.55.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.55.2...@medly-components/core@1.55.3) (2021-06-22)
+
+
+### Bug Fixes
+
+* focus issue when we select either month or year in single month calendar view ([3459050](https://github.com/medly/medly-components/commit/345905046cce1438f5534fea65f8b021725e2cc2))
+
+
+
+
+
 ## [1.55.2](https://github.com/medly/medly-components/compare/@medly-components/core@1.55.1...@medly-components/core@1.55.2) (2021-06-21)
 
 **Note:** Version bump only for package @medly-components/core
