@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.55.4](https://github.com/medly/medly-components/compare/@medly-components/core@1.55.3...@medly-components/core@1.55.4) (2021-06-22)
+
+
+### Bug Fixes
+
+* showing error even if date is filled when required prop is passed to DatePicker ([69bb0e3](https://github.com/medly/medly-components/commit/69bb0e3bdddcc4decb514db3fdcb94ad3dee599d))
+
+
+
+
+
 ## [1.55.3](https://github.com/medly/medly-components/compare/@medly-components/core@1.55.2...@medly-components/core@1.55.3) (2021-06-22)
 
 
