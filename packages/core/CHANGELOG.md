@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.55.5](https://github.com/medly/medly-components/compare/@medly-components/core@1.55.4...@medly-components/core@1.55.5) (2021-06-22)
+
+
+### Bug Fixes
+
+* streamlined the z-indexs of a few components ([3738730](https://github.com/medly/medly-components/commit/373873070d066a7b2b19bcac2369c7095606d180))
+* **core:** updates z-index of CharacterCount component to 1 ([23490c7](https://github.com/medly/medly-components/commit/23490c7fb7a7d5f260c9c704e8d11cba35441918))
+
+
+
+
+
 ## [1.55.4](https://github.com/medly/medly-components/compare/@medly-components/core@1.55.3...@medly-components/core@1.55.4) (2021-06-22)
 
 
