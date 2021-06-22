@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.55.6](https://github.com/medly/medly-components/compare/@medly-components/core@1.55.5...@medly-components/core@1.55.6) (2021-06-22)
+
+
+### Bug Fixes
+
+* min-width issue for all the form fields ([b40d8ba](https://github.com/medly/medly-components/commit/b40d8ba05105a47e904d2ab204864976046a4d21))
+
+
+
+
+
 ## [1.55.5](https://github.com/medly/medly-components/compare/@medly-components/core@1.55.4...@medly-components/core@1.55.5) (2021-06-22)
 
 

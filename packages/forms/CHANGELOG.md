@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.22.9](https://github.com/medly/medly-components/compare/@medly-components/forms@1.22.8...@medly-components/forms@1.22.9) (2021-06-22)
+
+
+### Bug Fixes
+
+* min-width issue for all the form fields ([b40d8ba](https://github.com/medly/medly-components/commit/b40d8ba05105a47e904d2ab204864976046a4d21))
+
+
+
+
+
 ## [1.22.8](https://github.com/medly/medly-components/compare/@medly-components/forms@1.22.7...@medly-components/forms@1.22.8) (2021-06-22)
 
 **Note:** Version bump only for package @medly-components/forms
