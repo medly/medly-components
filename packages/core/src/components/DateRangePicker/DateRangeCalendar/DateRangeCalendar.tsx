@@ -55,10 +55,13 @@ export const DateRangeCalendar: React.FC<Props> & WithStyle = React.memo(props =
             focusElement(focusedElement);
             setActive(true);
         }, [focusedElement]),
-        handleMonthAndYearChange = useCallback((val: { month: number; year: number }) => {
-            handleCalendarClick();
-            setMonthAndYear(val);
-        }, []),
+        handleMonthAndYearChange = useCallback(
+            (val: { month: number; year: number }) => {
+                handleCalendarClick();
+                setMonthAndYear(val);
+            },
+            [focusedElement]
+        ),
         handleAnimationEnd = useCallback(() => {
             if (slideDirection === 'move-out-left' || slideDirection === 'move-out-right') {
                 if (slideDirection === 'move-out-left') {
