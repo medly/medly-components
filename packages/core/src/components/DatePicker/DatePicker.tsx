@@ -35,6 +35,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
             );
         const wrapperRef = useRef<HTMLDivElement>(null),
             inputRef = useCombinedRefs<HTMLInputElement>(ref, React.useRef(null)),
+            [inputKey, setInputKey] = useState(0),
             [textValue, setTextValue] = useState(''),
             [builtInErrorMessage, setErrorMessage] = useState(''),
             [showCalendar, toggleCalendar] = useState(false),
@@ -110,6 +111,10 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
             toggleCalendar(false);
         }, wrapperRef);
 
+        useEffect(() => {
+            date && !showCalendar && setInputKey(key => key + 1);
+        }, [date, showCalendar]);
+
         const suffixEl = () => (
             <DateIconWrapper variant={restProps.variant} isErrorPresent={isErrorPresent} isActive={active} disabled={disabled} size={size}>
                 <DateRangeIcon id={`${id}-calendar-icon`} onClick={onIconClick} size={size} />
@@ -129,6 +134,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                 <TextField
                     errorText={errorText || builtInErrorMessage}
                     id={id}
+                    key={inputKey}
                     ref={inputRef}
                     required={required}
                     {...(showCalendarIcon && { suffix: suffixEl })}
