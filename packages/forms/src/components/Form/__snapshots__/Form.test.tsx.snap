@@ -845,7 +845,7 @@ exports[`Form should render properly with initial state 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: auto;
+  min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -859,7 +859,7 @@ exports[`Form should render properly with initial state 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-width: auto;
+  min-width: 20rem;
   margin: 0.8rem 0;
 }
 
@@ -1059,7 +1059,7 @@ exports[`Form should render properly with initial state 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: auto;
+  min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -3147,7 +3147,7 @@ exports[`Form should render properly without initial state 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: auto;
+  min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
@@ -3161,7 +3161,7 @@ exports[`Form should render properly without initial state 1`] = `
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-width: auto;
+  min-width: 20rem;
   margin: 0.8rem 0;
 }
 
@@ -3361,7 +3361,7 @@ exports[`Form should render properly without initial state 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  min-width: auto;
+  min-width: 20rem;
   margin: 0.8rem 0.8rem 0.8rem 0;
 }
 
