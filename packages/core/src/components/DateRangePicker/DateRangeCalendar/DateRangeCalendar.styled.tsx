@@ -29,7 +29,7 @@ export const navigators = css`
     `;
 
 export const DateRangeCalendar = styled(DatePickerStyled.Calendar)<{ size: 'S' | 'M'; placement: Placement; withSingleMonth?: boolean }>`
-    z-index: 10;
+    z-index: 4;
     position: absolute;
     overflow: hidden;
     padding: 0;

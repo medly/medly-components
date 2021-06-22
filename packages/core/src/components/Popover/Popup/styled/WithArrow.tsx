@@ -120,7 +120,7 @@ export const getStyleWithArrow = css<PopupProps>`
         content: '';
         width: 0;
         height: 0;
-        z-index: 1000;
+        z-index: 4;
         position: absolute;
         border-left: 0.8rem solid transparent;
         border-right: 0.8rem solid transparent;

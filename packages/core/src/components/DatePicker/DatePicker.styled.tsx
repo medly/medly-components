@@ -44,7 +44,7 @@ export const Wrapper = styled(OuterWrapper)<StyleProps>`
     }
 
     ${Calendar.Style} {
-        z-index: 1000;
+        z-index: 4;
         position: absolute;
         ${getPosition}
         top: ${({ size, placement }) =>

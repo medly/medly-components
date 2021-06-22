@@ -7,7 +7,7 @@ const withScroll = css<StyledOptionsProps & WithThemeProp>`
 `;
 
 export const Options = styled('ul')<StyledOptionsProps & WithThemeProp>`
-    z-index: 1000;
+    z-index: 4;
     position: absolute;
     background: ${({ theme }) => theme.colors.white};
     top: ${({ size, isNested, variant, theme }) =>
