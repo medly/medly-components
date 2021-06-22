@@ -1,5 +1,5 @@
 export const debounce = (func: (...args: any) => void, wait: number) => {
-    let timeout: number;
+    let timeout: null | ReturnType<typeof setTimeout> = null;
 
     return function executedFunction(...args: any[]) {
         const later = () => {
