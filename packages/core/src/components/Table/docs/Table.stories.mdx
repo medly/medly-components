@@ -248,6 +248,25 @@ To show Custom Component, you need pass props in below format.
 
 **Note:** It is advisable to wrap your component in `<tr>` tag to avoid warnings.
 
+### Custom Column Cell Component
+
+You can pass a Custom Component to the `columns` prop of the Table. This will render that Custom Component inside the table inplace of the respective column on the UI. To use your Custom Component to be rendered as a column cell, you need pass props in below format.
+
+```tsx
+import { TableColumnConfig } from '@medly-components/core';
+
+const CustomComponent: TableColumnConfig['component'] = React.memo(({ data, rowData }) => (
+        <Text>{`${data} aka ${rowData.superHeroName}`}</Text>
+    )),
+    tableData = [
+        { id: '1', realName: 'Bruce Wayne', superHeroName: 'The Batman' },
+        { id: '2', realName: 'Peter Parker', superHeroName: 'Spiderman' }
+    ],
+    columns: TableColumnConfig[] = [{ title: 'Name', field: 'realName', component: CustomComponent }];
+
+<Table data={tableData} columns={columns} />;
+```
+
 ### Props
 
 There are only two required props `data` & `columns`. It would be really great if you provide `rowIdentifier`. `rowIdentifier` is used as key name in data to be used as unique id for rows.
