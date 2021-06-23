@@ -80,8 +80,8 @@ describe('SideNav', () => {
         const { container } = renderer('/home');
         fireEvent.mouseEnter(container.querySelector('nav'));
         expect(container.querySelector('nav')).toHaveStyle(`
-                width: ${defaultTheme.sideNav.openSize};
-            `);
+            width: ${defaultTheme.sideNav.openSize};
+        `);
     });
 
     it('should collapse nav on moving cursor out of it', () => {
@@ -89,8 +89,8 @@ describe('SideNav', () => {
         fireEvent.mouseEnter(container.querySelector('nav'));
         fireEvent.mouseLeave(container.querySelector('nav'));
         expect(container.querySelector('nav')).toHaveStyle(`
-                width: ${defaultTheme.sideNav.closeSize};
-            `);
+            width: ${defaultTheme.sideNav.closeSize};
+        `);
     });
 
     it('should call onChange with expected path when it is used as controlled component', () => {
