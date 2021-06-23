@@ -38,11 +38,11 @@ describe('SideNav', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it('should be closed by default on 1025+ screen sizes', () => {
+    it('should open by default on 1025+ screen sizes', () => {
         Object.defineProperty(window, 'innerWidth', { writable: true, configurable: true, value: 1240 });
         const { container } = renderer('/home');
         expect(container.querySelector('aside')).toHaveStyle(`
-            width: 7.2rem;
+            width: 25.6rem;
         `);
     });
 

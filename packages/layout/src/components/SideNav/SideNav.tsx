@@ -57,6 +57,5 @@ SideNav.Context = SideNavContext;
 SideNav.displayName = 'SideNav';
 SideNav.Style = Styled.Aside;
 SideNav.defaultProps = {
-    hideShadow: false,
-    defaultOpen: false
+    hideShadow: false
 };
