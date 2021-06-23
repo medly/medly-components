@@ -18,7 +18,12 @@ export const StaticProps: FC<SideNavStaticProps> = () => null;
 export const SidenavContextTheme: FC<Context> = () => null;
 
 export const Basic = () => (
-    <SideNav onChange={action('NavItem clicked')} defaultActive="/" hideShadow={boolean('Hide Shadow', false)}>
+    <SideNav
+        onChange={action('NavItem clicked')}
+        defaultActive="/"
+        hideShadow={boolean('Hide Shadow', false)}
+        defaultOpen={boolean('defaultOpen', false)}
+    >
         <Header />
         <SideNav.List>
             <SideNav.Nav path="/">
