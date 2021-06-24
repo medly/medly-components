@@ -8,8 +8,6 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size'>, WithThem
     textColor?: string;
     /** Background color */
     bgColor?: string;
-    /** Set it true to show the hover effect */
-    withHoverEffect?: boolean;
     /** Hover Text color */
     hoverTextColor?: string;
     /** Hover Background color */
@@ -18,6 +16,10 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size'>, WithThem
     hoverTextShadowColor?: string;
     /** Hover image shadow color */
     hoverImgShadowColor?: string;
+    /** Pressed Background color */
+    pressedBgColor?: string,
+    /** Pressed Text color */
+    pressedTextColor?: string,
 }
 
 export interface StyledProps extends Props {

@@ -28,8 +28,12 @@ const avatar: AvatarTheme = {
             textShadowColor: 'rgba(0, 90, 238, 0.35)',
             imgShadowColor: 'rgba(96, 120, 144, 0.35)',
             textColor: colors.white,
-            bgColor: colors.blue[400]
-        }
+            bgColor: colors.blue[500],
+        },
+        pressed: {
+            bgColor: colors.blue[600],
+            textColor: colors.white,
+        },
     }
 };
 
