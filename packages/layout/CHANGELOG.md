@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.22.10](https://github.com/medly/medly-components/compare/@medly-components/layout@1.22.9...@medly-components/layout@1.22.10) (2021-06-25)
+
+
+### Bug Fixes
+
+* **layout:** removes defaultOpen from SideNav's defaultProps ([0b118d3](https://github.com/medly/medly-components/commit/0b118d3e206a57321de6e2121b78caf9b1340334))
+* **layout:** updates the defaultOpen prop's default value to false ([57103b3](https://github.com/medly/medly-components/commit/57103b3d30b2f999d01e6e9b3823be1d9e88a2c5))
+
+
+
+
+
 ## [1.22.9](https://github.com/medly/medly-components/compare/@medly-components/layout@1.22.8...@medly-components/layout@1.22.9) (2021-06-22)
 
 **Note:** Version bump only for package @medly-components/layout
