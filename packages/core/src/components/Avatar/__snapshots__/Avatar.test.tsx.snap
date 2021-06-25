@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Avatar component should render avatar without hover 1`] = `
+exports[`Avatar component should render avatar without hover and pressed states 1`] = `
 .c2 {
   margin: 0;
   color: inherit;
@@ -25,7 +25,7 @@ exports[`Avatar component should render avatar without hover 1`] = `
   height: 4rem;
   border-radius: 50%;
   overflow: hidden;
-  cursor: pointer;
+  cursor: inherit;
   color: #008000;
   background: #E6F2E6;
   -webkit-user-select: none;
@@ -74,7 +74,7 @@ exports[`Avatar component should render image avatar properly 1`] = `
   height: 4.8rem;
   border-radius: 50%;
   overflow: hidden;
-  cursor: inherit;
+  cursor: pointer;
   color: #126AFA;
   background: #E7F0FF;
   -webkit-user-select: none;
@@ -100,11 +100,19 @@ exports[`Avatar component should render image avatar properly 1`] = `
 }
 
 .c0:hover {
-  background: #70ADE9;
+  background: #126AFA;
   box-shadow: 0 0.4rem 0.8rem rgba(96,120,144,0.35);
 }
 
 .c0:hover .sc-AxjAm {
+  color: #ffffff;
+}
+
+.c0:active {
+  background: #0F5AD5;
+}
+
+.c0:active .sc-AxjAm {
   color: #ffffff;
 }
 
@@ -178,6 +186,94 @@ exports[`Avatar component should render with all the props given 1`] = `
   color: #ffffff;
 }
 
+.c0:active {
+  background: rgba(96,120,144,0.65);
+}
+
+.c0:active .c1 {
+  color: rgba(0,128,0,0.65);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <strong
+      class="c1 c2"
+    >
+      M
+    </strong>
+  </div>
+</div>
+`;
+
+exports[`Avatar component should render with default hover and pressed states 1`] = `
+.c2 {
+  margin: 0;
+  color: inherit;
+  font-size: 1.4rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+  text-transform: uppercase;
+}
+
+.c0 {
+  display: inline-block;
+  text-align: center;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  color: #008000;
+  background: #E6F2E6;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.c0 .c1 {
+  line-height: 4rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: Open Sans;
+}
+
+.c0 img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border: 0.1rem solid #dfe4e9;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.c0:hover {
+  background: #126AFA;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
+}
+
+.c0:hover .c1 {
+  color: #ffffff;
+}
+
+.c0:active {
+  background: #0F5AD5;
+}
+
+.c0:active .c1 {
+  color: #ffffff;
+}
+
 <div>
   <div
     class="c0"
@@ -239,15 +335,6 @@ exports[`Avatar component should render with default theme 1`] = `
   border: 0.1rem solid #dfe4e9;
   box-sizing: border-box;
   border-radius: 50%;
-}
-
-.c0:hover {
-  background: #70ADE9;
-  box-shadow: 0 0.4rem 0.8rem rgba(0,90,238,0.35);
-}
-
-.c0:hover .c1 {
-  color: #ffffff;
 }
 
 <div>
