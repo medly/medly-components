@@ -52,7 +52,7 @@ export const RowHoverActions: RowHoverActionsType = () => (
 
 export const DummyWrapper = styled('div')`
     padding-top: 3.2rem;
-    height: 90vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
 `;

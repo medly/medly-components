@@ -32,6 +32,23 @@ import { groupedData, getGroupedData } from './groupedData';
 
 Simple `Table` component to show set of data.
 
+## Features
+
+-   [Row Accordion](#row-accordion)
+-   [Row as Card style](#row-as-card-style)
+-   [Row Grouping](#row-grouping)
+-   [Row Selection](#row-selection)
+-   [Actions](#actions)
+-   [Minimap](#minimap)
+-   [Row Hover Actions](#row-hover-actions)
+-   [Pagination](#pagination)
+-   [No Result Row](#no-result-row)
+-   [Custom Column Cell Component](#custom-column-cell-component)
+-   [Props](#props)
+-   [Table Prop Types](#table-prop-types)
+    -   [Column config type](#column-config-type)
+    -   [TableTheme](#tabletheme)
+
 <Preview withToolbar>
     <Story name="Simple Table">
         {() => {
@@ -87,6 +104,33 @@ export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ rowDa
 ## Row as Card style
 
 Rows can be shown with card style when you set `showRowWithCardStyle` as true, and the size of the table will automatically be set as 'L'.
+
+<Preview withToolbar>
+    <Story name="Table with row as Card style">
+        {() => {
+            const [selectedRowIds, setSelectedRowIds] = useState([2, 3]),
+                [tableData, setTableData] = useState(data),
+                handleFilterData = useCallback(({ sortField, sortOrder }) => setTableData(filterData(sortField, sortOrder, tableData)), [
+                    tableData
+                ]);
+            return (
+                <DummyWrapper>
+                    <DarkBackground showRowWithCardStyle />
+                    <Table
+                        data={tableData}
+                        columns={columns}
+                        onSort={handleFilterData}
+                        isLoading={boolean('Loading', false)}
+                        rowSelectionDisableKey="disabled"
+                        rowClickDisableKey="disabled"
+                        size={select('Size', ['S', 'M', 'L'], 'L')}
+                        showRowWithCardStyle={boolean('Show Row as Card Style', true)}
+                    />
+                </DummyWrapper>
+            );
+        }}
+    </Story>
+</Preview>
 
 ## Row Grouping
 
