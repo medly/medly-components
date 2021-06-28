@@ -25,5 +25,9 @@ export interface AvatarTheme {
             textShadowColor: string;
             imgShadowColor: string;
         };
+        pressed: {
+            bgColor: string;
+            textColor: string;
+        };
     };
 }

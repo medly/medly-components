@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.30.10...@medly-components/theme@2.0.0) (2021-06-25)
+
+
+### Features
+
+* **core:** add pressed state to Avatar component and enable pressed and hover state with onClick. R ([a92aed0](https://github.com/medly/medly-components/commit/a92aed0f2a422f0cc1b8f4a56dbfeaf2a89ce92b))
+
+
+### BREAKING CHANGES
+
+* **core:** withHoverEffect prop was removed.
+
+
+
+
+
 ## [1.30.10](https://github.com/medly/medly-components/compare/@medly-components/theme@1.30.9...@medly-components/theme@1.30.10) (2021-06-17)
 
 **Note:** Version bump only for package @medly-components/theme

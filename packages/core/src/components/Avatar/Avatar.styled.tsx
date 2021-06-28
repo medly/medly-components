@@ -26,6 +26,18 @@ const hoverStyle = ({ theme, hoverBgColor, hoverTextColor }: StyledProps) => {
     `;
 };
 
+const pressedStyle = ({ theme, pressedBgColor, pressedTextColor }: StyledProps) => {
+    const { defaults } = theme.avatar;
+    return css`
+        &:active {
+            background: ${pressedBgColor || defaults.pressed.bgColor};
+            ${Text.Style} {
+                color: ${pressedTextColor || defaults.pressed.textColor};
+            }
+        }
+    `;
+};
+
 const getTextStyle = ({ theme, ...props }: StyledProps) => {
     const { size, textColor, bgColor } = props,
         { defaults, sizes } = theme.avatar,
@@ -68,5 +80,6 @@ export const AvatarStyled = styled('div').attrs(({ theme: { avatar: { defaults }
         border-radius: ${({ defaults }) => defaults.borderRadius};
     }
 
-    ${({ withHoverEffect }) => withHoverEffect && hoverStyle}
+    ${props => props.onClick && hoverStyle};
+    ${props => props.onClick && pressedStyle};
 `;
