@@ -105,6 +105,33 @@ export const ExpandedRowComponent: TableProps['expandedRowComponent'] = ({ rowDa
 
 Rows can be shown with card style when you set `showRowWithCardStyle` as true, and the size of the table will automatically be set as 'L'.
 
+<Preview withToolbar>
+    <Story name="Table with row as Card style">
+        {() => {
+            const [selectedRowIds, setSelectedRowIds] = useState([2, 3]),
+                [tableData, setTableData] = useState(data),
+                handleFilterData = useCallback(({ sortField, sortOrder }) => setTableData(filterData(sortField, sortOrder, tableData)), [
+                    tableData
+                ]);
+            return (
+                <DummyWrapper>
+                    <DarkBackground showRowWithCardStyle />
+                    <Table
+                        data={tableData}
+                        columns={columns}
+                        onSort={handleFilterData}
+                        isLoading={boolean('Loading', false)}
+                        rowSelectionDisableKey="disabled"
+                        rowClickDisableKey="disabled"
+                        size={select('Size', ['S', 'M', 'L'], 'L')}
+                        showRowWithCardStyle={boolean('Show Row as Card Style', true)}
+                    />
+                </DummyWrapper>
+            );
+        }}
+    </Story>
+</Preview>
+
 ## Row Grouping
 
 To show the row grouping you have to set `groupBy` prop with key name you want to group your data. And your `data` should be in the format
