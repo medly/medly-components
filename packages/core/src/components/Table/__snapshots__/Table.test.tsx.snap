@@ -939,9 +939,9 @@ exports[`Table component pagination should call onPageChange prop on click on an
         >
           <span
             class="c6 c17"
-            title="Oli Bob asfdakhf alsfkjh asdfalskj  asdasdkj  fasdkj  asldfkj ljlaskdfj"
+            title="Albus Percival Wulfric Brian Dumbledore"
           >
-            Oli Bob asfdakhf alsfkjh asdfalskj  asdasdkj  fasdkj  asldfkj ljlaskdfj
+            Albus Percival Wulfric Brian Dumbledore
           </span>
         </td>
         <td
@@ -2229,9 +2229,9 @@ exports[`Table component should render properly 1`] = `
         >
           <span
             class="c6 c17"
-            title="Oli Bob asfdakhf alsfkjh asdfalskj  asdasdkj  fasdkj  asldfkj ljlaskdfj"
+            title="Albus Percival Wulfric Brian Dumbledore"
           >
-            Oli Bob asfdakhf alsfkjh asdfalskj  asdasdkj  fasdkj  asldfkj ljlaskdfj
+            Albus Percival Wulfric Brian Dumbledore
           </span>
         </td>
         <td
