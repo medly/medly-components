@@ -187,7 +187,42 @@ And once the user expands any row `getGroupedData` function will be called with 
 
 ## Row Selection
 
-Just pass the `onRowSelection` callback function as prop and table component will call this function with updted row id. For the unique ids you have to provide `rowIdentifier` prop.
+For adding a row selection feature to your table you have to complete the following two steps:
+
+1. You have to add a state to your React components to save the selected rows. This will persist your selected data between renders. You have to pass this state variable to the `selectedRowIds` prop.
+
+2. You have to pass a callback function to the `onRowSelection` prop and the table component will call this function with the updated row id. For the unique ids you have to provide `rowIdentifier` prop.
+
+```tsx
+import { TableColumnConfig } from '@medly-components/core';
+
+export const TableComponent: React.FC = () => {
+    const [selectedRowIds, setSelectedRowIds] = useState<Array<number>>([2, 3]),
+        tableData = [
+            { id: 1, firstName: 'Mary', lastName: 'May', age: '19' },
+            { id: 2, firstName: 'Jacob', lastName: 'Thornton', age: '22' },
+            { id: 3, firstName: 'Chris', lastName: 'Evans', age: '44' }
+        ],
+        columns: TableColumnConfig[] = [
+            { title: 'First', field: 'firstName' },
+            { title: 'Last', field: 'lastName' }
+        ];
+
+    return (
+        <Table
+            data={tableData}
+            columns={columns}
+            selectedRowIds={selectedRowIds}
+            onRowSelection={setSelectedRowIds}
+            isLoading={false}
+            isRowSelectable={true}
+            rowSelectionDisableKey="disabled"
+            rowClickDisableKey="disabled"
+            size={'M'}
+        />
+    );
+};
+```
 
 ## Actions
 
@@ -204,6 +239,8 @@ export const Actions = [
         Lorem ipsum
     </Button>
 ];
+
+<Table data={tableData} columns={columns} withActionBar={true} actions={Actions} />
 ```
 
 ## Minimap
@@ -255,7 +292,6 @@ export const RowHoverActions: RowHoverActionsType = ({ rowId, rowData }) => {
                         size={select('Size', ['S', 'M', 'L'], 'M')}
                         showRowWithCardStyle={boolean('Show Row With Card Style', false)}
                         expandedRowComponent={ExpandedRowComponent}
-                        withActionBar={boolean('Enable action bar', true)}
                         actions={Actions}
                         withMinimap={boolean('Enable minimap', false)}
                         withPagination={boolean('Enable pagination', true)}
