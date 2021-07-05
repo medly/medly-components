@@ -27,6 +27,10 @@ export interface CheckboxTheme {
             error: string;
             active: string;
         };
+        pressed: {
+            error: string;
+            active: string;
+        };
     };
     iconColor: {
         disabled: string;

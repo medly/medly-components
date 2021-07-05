@@ -1637,6 +1637,11 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   border-color: #126AFA;
 }
 
+.c21:active .c26 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
+  border-color: #126AFA;
+}
+
 .c31 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2935,6 +2940,11 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 
 .c20:hover .c25 {
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #126AFA;
+}
+
+.c20:active .c25 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
   border-color: #126AFA;
 }
 

@@ -445,6 +445,11 @@ exports[`Radio Group should render properly 1`] = `
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
 }
 
+.c6:active.c5:active .c11 {
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
+}
+
 <div>
   <div
     aria-describedby="gender-helper-text"

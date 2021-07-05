@@ -120,4 +120,15 @@ export const CheckboxWithLabelWrapper = styled('label').attrs(({ theme }) => ({ 
                 !disabled && isActive && bgColor.hovered[hasError ? 'error' : 'active']};
         }
     }
+
+    &:active {
+        ${StyledCheckbox} {
+            box-shadow: ${({ disabled, hasError, borderColor }) =>
+                !disabled && `0 0 0.8rem ${rgba(borderColor[hasError ? 'error' : 'active'], 0.50)}`};
+            border-color: ${({ disabled, hasError, borderColor, isActive, bgColor }) =>
+                !disabled && (isActive ? bgColor.hovered[hasError ? 'error' : 'active'] : borderColor[hasError ? 'error' : 'active'])};
+            background-color: ${({ disabled, hasError, bgColor, isActive }) =>
+                !disabled && isActive && bgColor.hovered[hasError ? 'error' : 'active']};
+        }
+    }
 `;

@@ -93,4 +93,16 @@ export const RadioWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...
                 }
             `}
     }
+
+    &:active {
+        ${({ isActive, disabled, hasError, fillColor }) =>
+            !isActive &&
+            !disabled &&
+            css`
+                && ${/* sc-selector */ StyledRadio} {
+                    border-color: ${fillColor.hovered[hasError ? 'error' : 'default']};
+                    box-shadow: ${`0 0 0.8rem ${rgba(fillColor[hasError ? 'error' : 'active'], 0.5)}`};
+                }
+            `}
+    }
 `;

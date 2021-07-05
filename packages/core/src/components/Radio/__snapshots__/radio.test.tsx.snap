@@ -123,6 +123,11 @@ exports[`Radio component should render correctly with bottom labelPosition 1`] =
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
 }
 
+.c1:active.c0:active .c6 {
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
+}
+
 <div>
   <label
     class="c0 c1"
@@ -257,6 +262,11 @@ exports[`Radio component should render correctly with checked false and checked 
 .c1:hover.c0:hover .c4 {
   border-color: #126AFA;
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+}
+
+.c1:active.c0:active .c4 {
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
 }
 
 <div>
@@ -514,6 +524,11 @@ exports[`Radio component should render correctly with checked false and hasError
 .c1:hover.c0:hover .c4 {
   border-color: #AD0000;
   box-shadow: 0 0 0.8rem rgba(204,0,0,0.35);
+}
+
+.c1:active.c0:active .c4 {
+  border-color: #AD0000;
+  box-shadow: 0 0 0.8rem rgba(204,0,0,0.5);
 }
 
 <div>
@@ -1049,6 +1064,11 @@ exports[`Radio component should render correctly with left labelPosition 1`] = `
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
 }
 
+.c1:active.c0:active .c6 {
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
+}
+
 <div>
   <label
     class="c0 c1"
@@ -1208,6 +1228,11 @@ exports[`Radio component should render correctly with right labelPosition 1`] = 
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
 }
 
+.c1:active.c0:active .c6 {
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
+}
+
 <div>
   <label
     class="c0 c1"
@@ -1361,6 +1386,11 @@ exports[`Radio component should render correctly with top labelPosition 1`] = `
 .c1:hover.c0:hover .c6 {
   border-color: #126AFA;
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+}
+
+.c1:active.c0:active .c6 {
+  border-color: #126AFA;
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
 }
 
 <div>

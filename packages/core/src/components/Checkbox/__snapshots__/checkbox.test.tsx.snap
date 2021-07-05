@@ -148,6 +148,11 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
   border-color: #126AFA;
 }
 
+.c0:active .c5 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
+  border-color: #126AFA;
+}
+
 <div>
   
   <label
@@ -341,6 +346,11 @@ exports[`Checkbox component should render correctly with checked false and activ
 
 .c2:hover .c5 {
   box-shadow: 0 0 0.8rem rgba(204,0,0,0.35);
+  border-color: #cc0000;
+}
+
+.c2:active .c5 {
+  box-shadow: 0 0 0.8rem rgba(204,0,0,0.5);
   border-color: #cc0000;
 }
 
@@ -730,6 +740,11 @@ exports[`Checkbox component should render correctly with checked false and hasEr
   border-color: #cc0000;
 }
 
+.c2:active .c5 {
+  box-shadow: 0 0 0.8rem rgba(204,0,0,0.5);
+  border-color: #cc0000;
+}
+
 <div>
   <span
     class="c0 c1"
@@ -931,6 +946,12 @@ exports[`Checkbox component should render correctly with checked false and indet
   background-color: #AD0000;
 }
 
+.c2:active .c5 {
+  box-shadow: 0 0 0.8rem rgba(204,0,0,0.5);
+  border-color: #AD0000;
+  background-color: #AD0000;
+}
+
 <div>
   <span
     class="c0 c1"
@@ -1123,6 +1144,12 @@ exports[`Checkbox component should render correctly with checked true and active
 
 .c2:hover .c5 {
   box-shadow: 0 0 0.8rem rgba(204,0,0,0.35);
+  border-color: #AD0000;
+  background-color: #AD0000;
+}
+
+.c2:active .c5 {
+  box-shadow: 0 0 0.8rem rgba(204,0,0,0.5);
   border-color: #AD0000;
   background-color: #AD0000;
 }
@@ -1516,6 +1543,12 @@ exports[`Checkbox component should render correctly with checked true and hasErr
   background-color: #AD0000;
 }
 
+.c2:active .c5 {
+  box-shadow: 0 0 0.8rem rgba(204,0,0,0.5);
+  border-color: #AD0000;
+  background-color: #AD0000;
+}
+
 <div>
   <span
     class="c0 c1"
@@ -1718,6 +1751,12 @@ exports[`Checkbox component should render correctly with checked true and indete
   background-color: #AD0000;
 }
 
+.c2:active .c5 {
+  box-shadow: 0 0 0.8rem rgba(204,0,0,0.5);
+  border-color: #AD0000;
+  background-color: #AD0000;
+}
+
 <div>
   <span
     class="c0 c1"
@@ -1913,6 +1952,11 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
 
 .c0:hover .c5 {
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #126AFA;
+}
+
+.c0:active .c5 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
   border-color: #126AFA;
 }
 
@@ -2114,6 +2158,11 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
   border-color: #126AFA;
 }
 
+.c0:active .c5 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
+  border-color: #126AFA;
+}
+
 <div>
   
   <label
@@ -2305,6 +2354,11 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
 
 .c0:hover .c5 {
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #126AFA;
+}
+
+.c0:active .c5 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
   border-color: #126AFA;
 }
 

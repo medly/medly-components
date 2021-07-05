@@ -524,6 +524,12 @@ exports[`Form should render properly with initial state 1`] = `
   background-color: #0F5AD5;
 }
 
+.c24:active .c28 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
+  border-color: #0F5AD5;
+  background-color: #0F5AD5;
+}
+
 .c32 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -553,6 +559,11 @@ exports[`Form should render properly with initial state 1`] = `
   border-color: #126AFA;
 }
 
+.c32:active .c28 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
+  border-color: #126AFA;
+}
+
 .c66 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -579,6 +590,12 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c66:hover .c28 {
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #0F5AD5;
+  background-color: #0F5AD5;
+}
+
+.c66:active .c28 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
   border-color: #0F5AD5;
   background-color: #0F5AD5;
 }
@@ -2829,6 +2846,11 @@ exports[`Form should render properly without initial state 1`] = `
   border-color: #126AFA;
 }
 
+.c26:active .c30 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
+  border-color: #126AFA;
+}
+
 .c65 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -2855,6 +2877,11 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c65:hover .c30 {
   box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  border-color: #126AFA;
+}
+
+.c65:active .c30 {
+  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
   border-color: #126AFA;
 }
 

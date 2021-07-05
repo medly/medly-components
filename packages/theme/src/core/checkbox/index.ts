@@ -33,6 +33,10 @@ const checkbox: CheckboxTheme = {
         hovered: {
             active: colors.blue[600],
             error: colors.red[600]
+        },
+        pressed: {
+            active: colors.blue[700],
+            error: colors.red[700]
         }
     },
     iconColor: {
