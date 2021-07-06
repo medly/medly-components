@@ -446,7 +446,7 @@ exports[`Radio Group should render properly 1`] = `
 }
 
 .c6:active.c5:active .c11 {
-  border-color: #126AFA;
+  border-color: #8F0000;
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
 }
 

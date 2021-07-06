@@ -27,7 +27,17 @@ const radio: RadioTheme = {
             default: colors.blue[500],
             error: colors.red[600]
         },
-        disabled: colors.grey[500]
+        disabled: colors.grey[500],
+    },
+    borderColor: {
+        hovered: {
+            error: colors.red[500],
+            active: colors.blue[500]
+        },
+        pressed: {
+            error: colors.blue[600],
+            active: colors.red[700]
+        }
     },
     boxShadow: {
         spreadRadius: '0',

@@ -526,8 +526,8 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c24:active .c28 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
-  border-color: #0F5AD5;
-  background-color: #0F5AD5;
+  border-color: #0D4AAF;
+  background-color: #0D4AAF;
 }
 
 .c32 {
@@ -596,8 +596,8 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c66:active .c28 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
-  border-color: #0F5AD5;
-  background-color: #0F5AD5;
+  border-color: #0D4AAF;
+  background-color: #0D4AAF;
 }
 
 .c52 {
@@ -1530,7 +1530,7 @@ exports[`Form should render properly with initial state 1`] = `
 }
 
 .c40:active.c34:active .c38 {
-  border-color: #126AFA;
+  border-color: #8F0000;
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
 }
 
@@ -3733,7 +3733,7 @@ exports[`Form should render properly without initial state 1`] = `
 }
 
 .c36:active.c35:active .c39 {
-  border-color: #126AFA;
+  border-color: #8F0000;
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
 }
 

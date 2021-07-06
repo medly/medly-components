@@ -87,12 +87,12 @@ export const RadioWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...
     ${getSelectorLabelPositionStyle}
 
     &:hover {
-        ${({ isActive, disabled, hasError, fillColor, theme }) =>
+        ${({ isActive, disabled, hasError, fillColor, borderColor, theme }) =>
             !isActive &&
             !disabled &&
             css`
                 && ${StyledRadio} {
-                    border-color: ${fillColor.hovered[hasError ? 'error' : 'default']};
+                    border-color: ${borderColor.hovered[hasError ? 'error' : 'active']};
                     box-shadow: ${`0 0 ${theme.radio.boxShadow.blurRadius} ${theme.radio.boxShadow.spreadRadius} ${rgba(
                         fillColor[hasError ? 'error' : 'active'],
                         0.35
@@ -102,12 +102,12 @@ export const RadioWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...
     }
 
     &:active {
-        ${({ isActive, disabled, hasError, fillColor, theme }) =>
+        ${({ isActive, disabled, hasError, fillColor, borderColor, theme }) =>
             !isActive &&
             !disabled &&
             css`
                 && ${/* sc-selector */ StyledRadio} {
-                    border-color: ${fillColor.hovered[hasError ? 'error' : 'default']};
+                    border-color: ${borderColor.pressed[hasError ? 'error' : 'active']};
                     box-shadow: ${`0 0 ${theme.radio.boxShadow.blurRadius} ${theme.radio.boxShadow.spreadRadius} ${rgba(
                         fillColor[hasError ? 'error' : 'active'],
                         0.5

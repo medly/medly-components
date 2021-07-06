@@ -948,8 +948,8 @@ exports[`Checkbox component should render correctly with checked false and indet
 
 .c2:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.5);
-  border-color: #AD0000;
-  background-color: #AD0000;
+  border-color: #8F0000;
+  background-color: #8F0000;
 }
 
 <div>
@@ -1150,8 +1150,8 @@ exports[`Checkbox component should render correctly with checked true and active
 
 .c2:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.5);
-  border-color: #AD0000;
-  background-color: #AD0000;
+  border-color: #8F0000;
+  background-color: #8F0000;
 }
 
 <div>
@@ -1545,8 +1545,8 @@ exports[`Checkbox component should render correctly with checked true and hasErr
 
 .c2:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.5);
-  border-color: #AD0000;
-  background-color: #AD0000;
+  border-color: #8F0000;
+  background-color: #8F0000;
 }
 
 <div>
@@ -1753,8 +1753,8 @@ exports[`Checkbox component should render correctly with checked true and indete
 
 .c2:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.5);
-  border-color: #AD0000;
-  background-color: #AD0000;
+  border-color: #8F0000;
+  background-color: #8F0000;
 }
 
 <div>

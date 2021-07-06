@@ -138,9 +138,9 @@ export const CheckboxWithLabelWrapper = styled('label').attrs(({ theme }) => ({ 
                     0.5
                 )}`};
             border-color: ${({ disabled, hasError, borderColor, isActive, bgColor }) =>
-                !disabled && (isActive ? bgColor.hovered[hasError ? 'error' : 'active'] : borderColor[hasError ? 'error' : 'active'])};
+                !disabled && (isActive ? bgColor.pressed[hasError ? 'error' : 'active'] : borderColor[hasError ? 'error' : 'active'])};
             background-color: ${({ disabled, hasError, bgColor, isActive }) =>
-                !disabled && isActive && bgColor.hovered[hasError ? 'error' : 'active']};
+                !disabled && isActive && bgColor.pressed[hasError ? 'error' : 'active']};
         }
     }
 `;
