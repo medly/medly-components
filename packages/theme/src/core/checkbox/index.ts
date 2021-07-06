@@ -43,6 +43,10 @@ const checkbox: CheckboxTheme = {
         disabled: colors.grey[500],
         active: colors.white,
         error: colors.white
+    },
+    boxShadow: {
+        spreadRadius: '0',
+        blurRadius: '0.8rem'
     }
 };
 

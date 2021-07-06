@@ -22,4 +22,8 @@ export interface RadioTheme {
         };
         disabled: string;
     };
+    boxShadow: {
+        spreadRadius: string;
+        blurRadius: string;
+    };
 }

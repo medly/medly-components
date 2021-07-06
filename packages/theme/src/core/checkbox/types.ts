@@ -37,4 +37,8 @@ export interface CheckboxTheme {
         active: string;
         error: string;
     };
+    boxShadow: {
+        spreadRadius: string;
+        blurRadius: string;
+    };
 }

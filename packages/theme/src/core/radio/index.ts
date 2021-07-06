@@ -28,6 +28,10 @@ const radio: RadioTheme = {
             error: colors.red[600]
         },
         disabled: colors.grey[500]
+    },
+    boxShadow: {
+        spreadRadius: '0',
+        blurRadius: '0.8rem'
     }
 };
 
