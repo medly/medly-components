@@ -75,7 +75,11 @@ export const HiddenCheckbox = styled.input.attrs(({ theme }) => ({ type: 'checkb
     &:not(:disabled) {
         &:focus {
             & ~ ${StyledCheckbox} {
-                box-shadow: ${({ hasError, borderColor }) => `0 0 0.8rem ${rgba(borderColor[hasError ? 'error' : 'active'], 0.35)}`};
+                box-shadow: ${({ hasError, borderColor, theme }) =>
+                    `0 0 ${theme.checkbox.boxShadow.blurRadius} ${theme.checkbox.boxShadow.spreadRadius} ${rgba(
+                        borderColor[hasError ? 'error' : 'active'],
+                        0.35
+                    )}`};
             }
 
             &:not(:checked) ~ ${StyledCheckbox} {
@@ -112,8 +116,12 @@ export const CheckboxWithLabelWrapper = styled('label').attrs(({ theme }) => ({ 
 
     &:hover {
         ${StyledCheckbox} {
-            box-shadow: ${({ disabled, hasError, borderColor }) =>
-                !disabled && `0 0 0.8rem ${rgba(borderColor[hasError ? 'error' : 'active'], 0.35)}`};
+            box-shadow: ${({ disabled, hasError, borderColor, theme }) =>
+                !disabled &&
+                `0 0 ${theme.checkbox.boxShadow.blurRadius} ${theme.checkbox.boxShadow.spreadRadius} ${rgba(
+                    borderColor[hasError ? 'error' : 'active'],
+                    0.35
+                )}`};
             border-color: ${({ disabled, hasError, borderColor, isActive, bgColor }) =>
                 !disabled && (isActive ? bgColor.hovered[hasError ? 'error' : 'active'] : borderColor[hasError ? 'error' : 'active'])};
             background-color: ${({ disabled, hasError, bgColor, isActive }) =>
@@ -123,8 +131,12 @@ export const CheckboxWithLabelWrapper = styled('label').attrs(({ theme }) => ({ 
 
     &:active {
         ${StyledCheckbox} {
-            box-shadow: ${({ disabled, hasError, borderColor }) =>
-                !disabled && `0 0 0.8rem ${rgba(borderColor[hasError ? 'error' : 'active'], 0.50)}`};
+            box-shadow: ${({ disabled, hasError, borderColor, theme }) =>
+                !disabled &&
+                `0 0 ${theme.checkbox.boxShadow.blurRadius} ${theme.checkbox.boxShadow.spreadRadius} ${rgba(
+                    borderColor[hasError ? 'error' : 'active'],
+                    0.5
+                )}`};
             border-color: ${({ disabled, hasError, borderColor, isActive, bgColor }) =>
                 !disabled && (isActive ? bgColor.hovered[hasError ? 'error' : 'active'] : borderColor[hasError ? 'error' : 'active'])};
             background-color: ${({ disabled, hasError, bgColor, isActive }) =>

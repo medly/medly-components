@@ -3,6 +3,9 @@ import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { labelPositions, sizes, ThemeInterface, FormWithCheckbox } from './Checkbox.stories';
 import { useState } from 'react';
 import { boolean, select, text } from '@storybook/addon-knobs';
+import { updateNestedValue } from '@medly-components/utils';
+import { ThemeProvider } from 'styled-components';
+import { defaultTheme } from '@medly-components/theme';
 
 <Meta
     title="Core"
@@ -39,7 +42,7 @@ return <Checkbox label="Lorem Ipsum" checked={isChecked} onChange={onChangeHandl
                 <Checkbox
                     name="fruit"
                     size={select('Size', sizes, 'S')}
-                    label={text('Label', 'Lorem Ipsum')}
+                    label={text('Label', 'A simple checkbox with label')}
                     disabled={boolean('Disabled', false)}
                     hasError={boolean('Error', false)}
                     required={boolean('Required', false)}

@@ -63,7 +63,11 @@ export const HiddenRadio = styled('input').attrs(({ theme }) => ({ type: 'radio'
 
         &:focus ~ ${StyledRadio} {
             border-color: ${({ fillColor, hasError }) => fillColor.hovered[hasError ? 'error' : 'default']};
-            box-shadow: ${({ fillColor, hasError }) => `0 0 0.8rem ${rgba(fillColor[hasError ? 'error' : 'active'], 0.35)}`};
+            box-shadow: ${({ fillColor, hasError, theme }) =>
+                `0 0 ${theme.radio.boxShadow.blurRadius} ${theme.radio.boxShadow.spreadRadius} ${rgba(
+                    fillColor[hasError ? 'error' : 'active'],
+                    0.35
+                )}`};
         }
     }
 `;
@@ -83,25 +87,31 @@ export const RadioWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...
     ${getSelectorLabelPositionStyle}
 
     &:hover {
-        ${({ isActive, disabled, hasError, fillColor }) =>
+        ${({ isActive, disabled, hasError, fillColor, theme }) =>
             !isActive &&
             !disabled &&
             css`
                 && ${StyledRadio} {
                     border-color: ${fillColor.hovered[hasError ? 'error' : 'default']};
-                    box-shadow: ${`0 0 0.8rem ${rgba(fillColor[hasError ? 'error' : 'active'], 0.35)}`};
+                    box-shadow: ${`0 0 ${theme.radio.boxShadow.blurRadius} ${theme.radio.boxShadow.spreadRadius} ${rgba(
+                        fillColor[hasError ? 'error' : 'active'],
+                        0.35
+                    )}`};
                 }
             `}
     }
 
     &:active {
-        ${({ isActive, disabled, hasError, fillColor }) =>
+        ${({ isActive, disabled, hasError, fillColor, theme }) =>
             !isActive &&
             !disabled &&
             css`
                 && ${/* sc-selector */ StyledRadio} {
                     border-color: ${fillColor.hovered[hasError ? 'error' : 'default']};
-                    box-shadow: ${`0 0 0.8rem ${rgba(fillColor[hasError ? 'error' : 'active'], 0.5)}`};
+                    box-shadow: ${`0 0 ${theme.radio.boxShadow.blurRadius} ${theme.radio.boxShadow.spreadRadius} ${rgba(
+                        fillColor[hasError ? 'error' : 'active'],
+                        0.5
+                    )}`};
                 }
             `}
     }
