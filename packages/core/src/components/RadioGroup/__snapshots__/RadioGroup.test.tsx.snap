@@ -141,7 +141,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
 
 .c9:not(:disabled):focus ~ .c10 {
   border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
 .c8 {
@@ -409,7 +409,7 @@ exports[`Radio Group should render properly 1`] = `
 
 .c10:not(:disabled):focus ~ .c11 {
   border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
 .c9 {
@@ -442,12 +442,12 @@ exports[`Radio Group should render properly 1`] = `
 
 .c6:hover.c5:hover .c11 {
   border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
 .c6:active.c5:active .c11 {
   border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.5);
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
 }
 
 <div>
