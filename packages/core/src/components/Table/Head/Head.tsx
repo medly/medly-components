@@ -53,6 +53,7 @@ const Head: React.FC<Props> = React.memo(props => {
     const selectAllCheckBox = useMemo(
             () => (
                 <Checkbox
+                    size={tableSize === 'XS' ? tableSize : null}
                     indeterminate={isAnyRowSelected}
                     disabled={isLoading || isSelectAllDisable}
                     checked={areAllRowsSelected}
@@ -61,7 +62,7 @@ const Head: React.FC<Props> = React.memo(props => {
                     name="active"
                 />
             ),
-            [isLoading, isAnyRowSelected, areAllRowsSelected, isSelectAllDisable, handleSelectAllClick]
+            [isLoading, isAnyRowSelected, areAllRowsSelected, isSelectAllDisable, tableSize, handleSelectAllClick]
         ),
         headCell = useCallback(
             (configs: TableColumnConfig[], field = '') =>

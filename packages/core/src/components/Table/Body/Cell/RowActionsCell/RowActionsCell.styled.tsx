@@ -55,7 +55,7 @@ export const RowActionsCellStyled = styled('td')<RowActionProps>`
     }
 
     & > ${SvgIcon} {
-        padding: 0.6rem;
+        padding: ${({ tableSize }) => (tableSize === 'XS' ? '0.2rem' : '0.6rem')};
         border-radius: 50%;
         * {
             fill: ${({ theme }) => theme.colors.black};

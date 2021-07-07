@@ -6,7 +6,7 @@ import { FootRow, TFoot } from './Foot.styled';
 
 export const Foot: React.FC = React.memo(() => {
     const [{ activePage }, setTableState] = useContext(TableStateContext),
-        { onPageChange, totalItems, itemsPerPage, showRowWithCardStyle } = useContext(TableComponentsCommonPropsContext),
+        { onPageChange, totalItems, itemsPerPage, showRowWithCardStyle, size } = useContext(TableComponentsCommonPropsContext),
         dataRange = useMemo(() => {
             const countTillPreviousPage = itemsPerPage * (activePage - 1);
             return `${totalItems ? countTillPreviousPage + 1 : totalItems} - ${
@@ -31,7 +31,7 @@ export const Foot: React.FC = React.memo(() => {
     );
 
     return (
-        <TFoot showWithCardStyle={showRowWithCardStyle}>
+        <TFoot showWithCardStyle={showRowWithCardStyle} tableSize={size}>
             <FootRow>
                 <td>
                     <Pagination activePage={activePage} totalItems={totalItems} itemsPerPage={itemsPerPage} onPageClick={handlePageClick} />

@@ -30,6 +30,7 @@ export const RowActionsCell: React.FC<RowActionProps> & WithStyle = React.memo(p
                     )}
                     {props.isRowSelectable && (
                         <Checkbox
+                            size={props.tableSize === 'XS' ? props.tableSize : null}
                             indeterminate={props.isRowIndeterminate}
                             disabled={props.isRowSelectionDisabled}
                             checked={props.isRowSelected}

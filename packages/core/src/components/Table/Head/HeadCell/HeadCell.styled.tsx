@@ -4,6 +4,7 @@ import { clearMarginPadding, css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Checkbox from '../../../Checkbox';
 import Text from '../../../Text';
+import { resolveValueByTableSize } from '../../helpers';
 import { getBorder } from '../../Table.styled';
 import { TableProps } from '../../types';
 import { HeadCellStyledProps } from './types';
@@ -30,6 +31,28 @@ const frozenStyle = css<HeadCellStyledProps>`
         }
     `;
 
+const getHeadCellPadding = ({ hidden, isRowActionCell, tableSize }: HeadCellStyledProps) => {
+    const actionCellTableSizePaddingMap = {
+            L: '1.6rem 2rem',
+            XS: '0.8rem 1.2rem',
+            default: '1.6rem 1.2rem'
+        },
+        cellTableSizePaddingMap = {
+            XS: '0.4rem',
+            default: '0.8rem'
+        };
+
+    let padding = '';
+    if (hidden) {
+        padding = '0';
+    } else if (isRowActionCell) {
+        padding = resolveValueByTableSize(tableSize, actionCellTableSizePaddingMap);
+    } else {
+        padding = resolveValueByTableSize(tableSize, cellTableSizePaddingMap);
+    }
+    return padding;
+};
+
 export const HeadCellStyled = styled.th<HeadCellStyledProps>`
     width: 100%;
     height: 100%;
@@ -40,8 +63,7 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
     opacity: ${({ hidden }) => (hidden ? 0 : 1)};
     position: ${({ frozen }) => (frozen ? 'sticky' : 'relative')};
     cursor: ${({ isRowActionCell }) => isRowActionCell && 'default'};
-    padding: ${({ hidden, isRowActionCell, tableSize }) =>
-        hidden ? '0' : isRowActionCell ? `1.6rem ${tableSize === 'L' ? '2rem' : '1.2rem'} ` : '0.8rem'};
+    padding: ${getHeadCellPadding};
 
     &:not(:last-child) {
         &::after {
@@ -80,7 +102,11 @@ const getStyle = (theme: Theme, styleType: 'default' | 'hovered' | 'pressed', is
         }
     `;
 };
-
+const headCellButtonTableSizeMap = {
+    L: '0.9rem 1.6rem 1.1rem',
+    XS: '0.5rem 0.8rem 0.7rem',
+    default: '0.9rem 0.8rem 1.1rem'
+};
 export const HeadCellButton = styled.button<{
     withHoverEffect: boolean;
     isSelected: boolean;
@@ -92,7 +118,7 @@ export const HeadCellButton = styled.button<{
     width: 100%;
     align-items: center;
     justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : align === 'center' ? 'center' : 'flex-start')};
-    padding: ${({ tableSize }) => (tableSize === 'L' ? '0.9rem 1.6rem 1.1rem' : '0.9rem 0.8rem 1.1rem')};
+    padding: ${({ tableSize }) => resolveValueByTableSize(tableSize, headCellButtonTableSizeMap)};
     outline: unset;
     font-family: inherit;
     border-radius: 0.8rem;
