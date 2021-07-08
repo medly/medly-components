@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.0.1...@medly-components/core@2.1.0) (2021-07-08)
+
+
+### Features
+
+* **core:** introduce XS size in table component ([487c5ea](https://github.com/medly/medly-components/commit/487c5ea7eccf0760ba63f7264f831ed918ab89b0))
+
+
+
+
+
 ## [2.0.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.0.0...@medly-components/core@2.0.1) (2021-06-28)
 
 **Note:** Version bump only for package @medly-components/core
