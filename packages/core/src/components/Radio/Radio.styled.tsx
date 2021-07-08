@@ -6,8 +6,6 @@ import { Props, WrapperProps } from './types';
 
 const getRadioSize = ({ theme, size }: { size?: RadioSizes } & WithThemeProp) => theme.radio.sizes[size || theme.radio.defaultSize];
 
-const getSelectorState = (hasError: boolean) => (hasError ? 'error' : 'active');
-
 export const StyledRadio = styled('div')`
     position: relative;
     transition: all 100ms ease-out;
@@ -98,11 +96,15 @@ export const RadioWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...
 
     ${getSelectorLabelPositionStyle}
 
-    &&&:hover ~ ${StyledRadio} {
-        ${({ isActive, disabled }) => !isActive && !disabled && getEventStyle('hovered')}
+    &:hover {
+        ${StyledRadio} {
+            ${({ isActive, disabled }) => !isActive && !disabled && getEventStyle('hovered')}
+        }
     }
 
-    &&&:active ~ ${StyledRadio} {
-        ${({ isActive, disabled }) => !isActive && !disabled && getEventStyle('pressed')}
+    &:active {
+        ${StyledRadio} {
+            ${({ isActive, disabled }) => !isActive && !disabled && getEventStyle('pressed')}
+        }
     }
 `;
