@@ -1,10 +1,12 @@
-import { RadioSizes } from '@medly-components/theme';
+import { RadioSizes, RadioTheme } from '@medly-components/theme';
 import { css, styled, WithThemeProp } from '@medly-components/utils';
 import { rgba } from 'polished';
 import { getSelectorLabelPositionStyle } from '../Selectors';
 import { Props, WrapperProps } from './types';
 
 const getRadioSize = ({ theme, size }: { size?: RadioSizes } & WithThemeProp) => theme.radio.sizes[size || theme.radio.defaultSize];
+
+const getSelectorState = (hasError: boolean) => (hasError ? 'error' : 'active');
 
 export const StyledRadio = styled('div')`
     position: relative;
@@ -35,6 +37,21 @@ const getStyle = (color: string) => css`
     }
 `;
 
+const getEventStyle = (event: 'hovered' | 'pressed' | 'focused') => ({
+    hasError,
+    theme,
+    fillColor,
+    borderColor
+}: RadioTheme & (WrapperProps | Props)) => {
+    const state = hasError ? 'error' : 'active';
+    const { blurRadius, spreadRadius } = theme.radio.boxShadow;
+    const borderColorValue = event !== 'focused' && borderColor[event][state];
+    return css`
+        border-color: ${borderColorValue};
+        box-shadow: 0 0 ${blurRadius} ${spreadRadius} ${rgba(fillColor[state], event === 'pressed' ? 0.5 : 0.35)};
+    `;
+};
+
 export const HiddenRadio = styled('input').attrs(({ theme }) => ({ type: 'radio', ...theme.radio }))<Props>`
     position: absolute;
     opacity: 0;
@@ -62,12 +79,7 @@ export const HiddenRadio = styled('input').attrs(({ theme }) => ({ type: 'radio'
         }
 
         &:focus ~ ${StyledRadio} {
-            border-color: ${({ fillColor, hasError }) => fillColor.hovered[hasError ? 'error' : 'default']};
-            box-shadow: ${({ fillColor, hasError, theme }) =>
-                `0 0 ${theme.radio.boxShadow.blurRadius} ${theme.radio.boxShadow.spreadRadius} ${rgba(
-                    fillColor[hasError ? 'error' : 'active'],
-                    0.35
-                )}`};
+            ${getEventStyle('focused')}
         }
     }
 `;
@@ -86,33 +98,11 @@ export const RadioWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...
 
     ${getSelectorLabelPositionStyle}
 
-    &:hover {
-        ${({ isActive, disabled, hasError, fillColor, borderColor, theme }) =>
-            !isActive &&
-            !disabled &&
-            css`
-                && ${StyledRadio} {
-                    border-color: ${borderColor.hovered[hasError ? 'error' : 'active']};
-                    box-shadow: ${`0 0 ${theme.radio.boxShadow.blurRadius} ${theme.radio.boxShadow.spreadRadius} ${rgba(
-                        fillColor[hasError ? 'error' : 'active'],
-                        0.35
-                    )}`};
-                }
-            `}
+    &&&:hover ~ ${StyledRadio} {
+        ${({ isActive, disabled }) => !isActive && !disabled && getEventStyle('hovered')}
     }
 
-    &:active {
-        ${({ isActive, disabled, hasError, fillColor, borderColor, theme }) =>
-            !isActive &&
-            !disabled &&
-            css`
-                && ${/* sc-selector */ StyledRadio} {
-                    border-color: ${borderColor.pressed[hasError ? 'error' : 'active']};
-                    box-shadow: ${`0 0 ${theme.radio.boxShadow.blurRadius} ${theme.radio.boxShadow.spreadRadius} ${rgba(
-                        fillColor[hasError ? 'error' : 'active'],
-                        0.5
-                    )}`};
-                }
-            `}
+    &&&:active ~ ${StyledRadio} {
+        ${({ isActive, disabled }) => !isActive && !disabled && getEventStyle('pressed')}
     }
 `;
