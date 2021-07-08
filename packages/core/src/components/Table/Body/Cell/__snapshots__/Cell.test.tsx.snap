@@ -208,7 +208,7 @@ exports[`Cell should render checkbox properly 1`] = `
 
 .c1:active .c7 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
-  border-color: #126AFA;
+  border-color: #0F5AD5;
 }
 
 .c0 {

@@ -150,7 +150,7 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
 
 .c0:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
-  border-color: #126AFA;
+  border-color: #0F5AD5;
 }
 
 <div>
@@ -351,7 +351,7 @@ exports[`Checkbox component should render correctly with checked false and activ
 
 .c2:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.5);
-  border-color: #cc0000;
+  border-color: #0F5AD5;
 }
 
 <div>
@@ -742,7 +742,7 @@ exports[`Checkbox component should render correctly with checked false and hasEr
 
 .c2:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.5);
-  border-color: #cc0000;
+  border-color: #0F5AD5;
 }
 
 <div>
@@ -1957,7 +1957,7 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
 
 .c0:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
-  border-color: #126AFA;
+  border-color: #0F5AD5;
 }
 
 <div>
@@ -2160,7 +2160,7 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
 
 .c0:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
-  border-color: #126AFA;
+  border-color: #0F5AD5;
 }
 
 <div>
@@ -2359,7 +2359,7 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
 
 .c0:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
-  border-color: #126AFA;
+  border-color: #0F5AD5;
 }
 
 <div>
