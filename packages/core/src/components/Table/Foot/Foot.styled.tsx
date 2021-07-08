@@ -1,7 +1,8 @@
 import { styled } from '@medly-components/utils';
 import Text from '../../Text';
+import { TableProps } from '../types';
 
-export const TFoot = styled('tfoot')<{ showWithCardStyle: boolean }>`
+export const TFoot = styled('tfoot')<{ showWithCardStyle: boolean; tableSize: TableProps['size'] }>`
     display: flex;
     align-items: center;
     position: sticky;
@@ -9,7 +10,7 @@ export const TFoot = styled('tfoot')<{ showWithCardStyle: boolean }>`
     bottom: 0;
     z-index: 3;
     background-color: ${({ theme, showWithCardStyle }) => (showWithCardStyle ? 'transparent' : theme.colors.white)};
-    min-height: ${({ showWithCardStyle }) => (showWithCardStyle ? '5.4rem' : '4.8rem')};
+    min-height: ${({ showWithCardStyle, tableSize }) => (showWithCardStyle ? '5.4rem' : tableSize === 'XS' ? '4rem' : '4.8rem')};
     border-top: ${({ theme, showWithCardStyle }) => !showWithCardStyle && `0.1rem solid ${theme.table.borderColor}`};
 `;
 
@@ -20,6 +21,10 @@ export const FootRow = styled('tr')`
     justify-content: space-between;
     flex-direction: row;
     padding: 0 1.6rem 0 0.8rem;
+
+    td {
+        padding: 0;
+    }
 
     td > ${Text.Style} {
         line-height: 2rem;

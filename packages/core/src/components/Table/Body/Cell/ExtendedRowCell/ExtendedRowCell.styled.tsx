@@ -1,4 +1,5 @@
 import { styled } from '@medly-components/utils';
+import { resolveValueByTableSize } from '../../../helpers';
 import { TableProps } from '../../../types';
 
 export const ExtendedRowCellStyled = styled('td')<{ tableSize: TableProps['size']; isRowExpanded?: boolean }>`
@@ -18,7 +19,11 @@ export const ExtendedRowCellStyled = styled('td')<{ tableSize: TableProps['size'
         border-top: 1px solid ${({ theme }) => theme.table.borderColor};
     }
 `;
-
+const tableSizePaddingMap = {
+    L: '1.2rem 2.4rem',
+    XS: '0.5rem 1.6rem',
+    default: '1.2rem 1.6rem'
+};
 export const Wrapper = styled('div')<{ tableSize: TableProps['size'] }>`
-    padding: 1.2rem ${({ tableSize }) => (tableSize === 'L' ? '2.4rem' : '1.6rem')};
+    padding: ${({ tableSize }) => resolveValueByTableSize(tableSize, tableSizePaddingMap)};
 `;

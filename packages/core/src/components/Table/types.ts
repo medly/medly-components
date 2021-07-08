@@ -54,7 +54,7 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     /** Set it true to shows placeholder shimmer */
     isLoading?: boolean;
     /** Size of the table */
-    size?: 'S' | 'M' | 'L';
+    size?: 'XS' | 'S' | 'M' | 'L';
     /** Array of your table data */
     data: {
         [key: string]: any;

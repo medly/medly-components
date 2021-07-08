@@ -94,3 +94,6 @@ export const changeSize = (width: number, dottedField: string, columnConfigs: Ta
 
     return newColumnConfigs;
 };
+
+export const resolveValueByTableSize = (key: TableProps['size'], map: { [k in TableProps['size'] | 'default']?: string }) =>
+    map[key] ? map[key] : map.default;
