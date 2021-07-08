@@ -1553,6 +1553,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 
 .c25:not(:disabled):focus ~ .c26 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #126AFA;
 }
 
 .c25:not(:disabled):focus:not(:checked) ~ .c26 {
@@ -1592,6 +1593,7 @@ exports[`MultiSelect component should render properly with M size 1`] = `
 
 .c33:not(:disabled):focus ~ .c26 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #126AFA;
 }
 
 .c33:not(:disabled):focus:not(:checked) ~ .c26 {
@@ -2859,6 +2861,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 
 .c24:not(:disabled):focus ~ .c25 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #126AFA;
 }
 
 .c24:not(:disabled):focus:not(:checked) ~ .c25 {
@@ -2898,6 +2901,7 @@ exports[`MultiSelect component should render properly with S size 1`] = `
 
 .c34:not(:disabled):focus ~ .c25 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #126AFA;
 }
 
 .c34:not(:disabled):focus:not(:checked) ~ .c25 {

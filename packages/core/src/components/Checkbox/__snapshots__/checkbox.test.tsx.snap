@@ -107,6 +107,7 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
 
 .c4:not(:disabled):focus ~ .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #126AFA;
 }
 
 .c4:not(:disabled):focus:not(:checked) ~ .c5 {
@@ -296,6 +297,7 @@ exports[`Checkbox component should render correctly with checked false and activ
 
 .c4:not(:disabled):focus ~ .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
+  border-color: #cc0000;
 }
 
 .c4:not(:disabled):focus:not(:checked) ~ .c5 {
@@ -495,6 +497,7 @@ exports[`Checkbox component should render correctly with checked false and disab
 
 .c4:not(:disabled):focus ~ .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
+  border-color: #cc0000;
 }
 
 .c4:not(:disabled):focus:not(:checked) ~ .c5 {
@@ -687,6 +690,7 @@ exports[`Checkbox component should render correctly with checked false and hasEr
 
 .c4:not(:disabled):focus ~ .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
+  border-color: #cc0000;
 }
 
 .c4:not(:disabled):focus:not(:checked) ~ .c5 {
@@ -896,6 +900,7 @@ exports[`Checkbox component should render correctly with checked false and indet
 
 .c4:not(:disabled):focus ~ .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
+  border-color: #cc0000;
 }
 
 .c3 {
@@ -1094,6 +1099,7 @@ exports[`Checkbox component should render correctly with checked true and active
 
 .c4:not(:disabled):focus ~ .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
+  border-color: #cc0000;
 }
 
 .c4:not(:disabled):focus:not(:checked) ~ .c5 {
@@ -1296,6 +1302,7 @@ exports[`Checkbox component should render correctly with checked true and disabl
 
 .c4:not(:disabled):focus ~ .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
+  border-color: #cc0000;
 }
 
 .c4:not(:disabled):focus:not(:checked) ~ .c5 {
@@ -1489,6 +1496,7 @@ exports[`Checkbox component should render correctly with checked true and hasErr
 
 .c4:not(:disabled):focus ~ .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
+  border-color: #cc0000;
 }
 
 .c4:not(:disabled):focus:not(:checked) ~ .c5 {
@@ -1701,6 +1709,7 @@ exports[`Checkbox component should render correctly with checked true and indete
 
 .c4:not(:disabled):focus ~ .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
+  border-color: #cc0000;
 }
 
 .c3 {
@@ -1910,6 +1919,7 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
 
 .c4:not(:disabled):focus ~ .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #126AFA;
 }
 
 .c4:not(:disabled):focus:not(:checked) ~ .c5 {
@@ -2113,6 +2123,7 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
 
 .c4:not(:disabled):focus ~ .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #126AFA;
 }
 
 .c4:not(:disabled):focus:not(:checked) ~ .c5 {
@@ -2316,6 +2327,7 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
 
 .c4:not(:disabled):focus ~ .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #126AFA;
 }
 
 .c4:not(:disabled):focus:not(:checked) ~ .c5 {

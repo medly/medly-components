@@ -478,6 +478,7 @@ exports[`Form should render properly with initial state 1`] = `
 
 .c27:not(:disabled):focus ~ .c28 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #126AFA;
 }
 
 .c27:not(:disabled):focus:not(:checked) ~ .c28 {
@@ -2805,6 +2806,7 @@ exports[`Form should render properly without initial state 1`] = `
 
 .c29:not(:disabled):focus ~ .c30 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #126AFA;
 }
 
 .c29:not(:disabled):focus:not(:checked) ~ .c30 {

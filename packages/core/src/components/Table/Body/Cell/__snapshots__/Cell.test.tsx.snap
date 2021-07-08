@@ -161,6 +161,7 @@ exports[`Cell should render checkbox properly 1`] = `
 
 .c6:not(:disabled):focus ~ .c7 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+  border-color: #126AFA;
 }
 
 .c6:not(:disabled):focus:not(:checked) ~ .c7 {

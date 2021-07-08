@@ -33,6 +33,23 @@ const nonActiveStyle = ({ borderColor, hasError, disabled }: Props & CheckboxThe
     `;
 };
 
+const getEventStyle = (event: 'hovered' | 'pressed' | 'focused') => ({
+    isActive,
+    hasError,
+    borderColor,
+    theme,
+    bgColor
+}: CheckboxTheme & Props & { isActive?: boolean }) => {
+    const state = hasError ? 'error' : 'active';
+    const borderColorEventValue = event === 'pressed' ? 'pressed' : state;
+    const { blurRadius, spreadRadius } = theme.checkbox.boxShadow;
+    return css`
+        box-shadow: 0 0 ${blurRadius} ${spreadRadius} ${rgba(borderColor[state], event === 'pressed' ? 0.5 : 0.35)};
+        border-color: ${event !== 'focused' && isActive ? bgColor[event][state] : borderColor[borderColorEventValue]};
+        background-color: ${isActive && event !== 'focused' && bgColor[event][state]};
+    `;
+};
+
 export const StyledCheckbox = styled.div`
     border: 0.15rem solid;
     box-sizing: border-box;
@@ -75,13 +92,7 @@ export const HiddenCheckbox = styled.input.attrs(({ theme }) => ({ type: 'checkb
     &:not(:disabled) {
         &:focus {
             & ~ ${StyledCheckbox} {
-                box-shadow: ${({ hasError, borderColor, theme }) => {
-                    const className = hasError ? 'error' : 'active';
-                    return `0 0 ${theme.checkbox.boxShadow.blurRadius} ${theme.checkbox.boxShadow.spreadRadius} ${rgba(
-                        borderColor[className],
-                        0.35
-                    )}`;
-                }};
+                ${getEventStyle('focused')}
             }
 
             &:not(:checked) ~ ${StyledCheckbox} {
@@ -106,22 +117,6 @@ export const ErrorText = styled(Text)<{ disabled: boolean }>`
     color: ${({ theme, disabled }) => theme.checkbox.helperTextColor[disabled ? 'disabled' : 'error']};
     margin-bottom: 0.5rem;
 `;
-
-const getEventStyle = (event: 'hovered' | 'pressed' | 'focused') => ({
-    isActive,
-    hasError,
-    borderColor,
-    theme,
-    bgColor
-}: CheckboxTheme & Props & { isActive: boolean }) => {
-    const state = hasError ? 'error' : 'active';
-    const { blurRadius, spreadRadius } = theme.checkbox.boxShadow;
-    return css`
-        box-shadow: 0 0 ${blurRadius} ${spreadRadius} ${rgba(borderColor[state], event === 'pressed' ? 0.5 : 0.35)};
-        border-color: ${event !== 'focused' && isActive ? bgColor[event][state] : borderColor[event === 'pressed' ? 'pressed' : state]};
-        background-color: ${isActive && event !== 'focused' && bgColor[event][state]};
-    `;
-};
 
 export const CheckboxWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...theme.checkbox }))<Props & { isActive: boolean }>`
     display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
