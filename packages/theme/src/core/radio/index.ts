@@ -35,8 +35,8 @@ const radio: RadioTheme = {
             active: colors.blue[500]
         },
         pressed: {
-            error: colors.blue[600],
-            active: colors.red[700]
+            error: colors.red[600],
+            active: colors.blue[600]
         }
     },
     boxShadow: {
