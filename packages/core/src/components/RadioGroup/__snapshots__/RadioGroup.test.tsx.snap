@@ -140,8 +140,7 @@ exports[`Radio Group should render disabled state properly 1`] = `
 }
 
 .c9:not(:disabled):focus ~ .c10 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
 .c8 {
@@ -282,7 +281,7 @@ exports[`Radio Group should render properly 1`] = `
   text-align: initial;
 }
 
-.c7 {
+.c6 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -318,7 +317,7 @@ exports[`Radio Group should render properly 1`] = `
   color: inherit;
 }
 
-.c8 {
+.c7 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -342,7 +341,7 @@ exports[`Radio Group should render properly 1`] = `
   color: #13181D;
 }
 
-.c12 {
+.c11 {
   position: relative;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -353,7 +352,7 @@ exports[`Radio Group should render properly 1`] = `
   border-radius: 100%;
 }
 
-.c12::after {
+.c11::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -369,7 +368,7 @@ exports[`Radio Group should render properly 1`] = `
   transition: transform 100ms ease-out;
 }
 
-.c10 {
+.c9 {
   position: absolute;
   opacity: 0;
   width: 1%;
@@ -377,42 +376,41 @@ exports[`Radio Group should render properly 1`] = `
   margin: 0;
 }
 
-.c10 ~ .c11 {
+.c9 ~ .c10 {
   border-color: #13181D;
 }
 
-.c10 ~ .c11::after {
+.c9 ~ .c10::after {
   background-color: #13181D;
 }
 
-.c10:checked ~ .c11::after {
+.c9:checked ~ .c10::after {
   -webkit-transform: translate(-50%,-50%) scale(1);
   -ms-transform: translate(-50%,-50%) scale(1);
   transform: translate(-50%,-50%) scale(1);
 }
 
-.c10:disabled ~ .c11 {
+.c9:disabled ~ .c10 {
   border-color: #98A7B7;
 }
 
-.c10:disabled ~ .c11::after {
+.c9:disabled ~ .c10::after {
   background-color: #98A7B7;
 }
 
-.c10:not(:disabled):checked ~ .c11 {
+.c9:not(:disabled):checked ~ .c10 {
   border-color: #126AFA;
 }
 
-.c10:not(:disabled):checked ~ .c11::after {
+.c9:not(:disabled):checked ~ .c10::after {
   background-color: #126AFA;
 }
 
-.c10:not(:disabled):focus ~ .c11 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+.c9:not(:disabled):focus ~ .c10 {
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
-.c9 {
+.c8 {
   margin: 0.3rem;
   width: 1.8rem;
   height: 1.8rem;
@@ -420,7 +418,7 @@ exports[`Radio Group should render properly 1`] = `
   border-radius: 100%;
 }
 
-.c6 {
+.c5 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -440,9 +438,14 @@ exports[`Radio Group should render properly 1`] = `
   flex-direction: row-reverse;
 }
 
-.c6:hover.c5:hover .c11 {
+.c5:hover .c10 {
   border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+}
+
+.c5:active .c10 {
+  border-color: #0F5AD5;
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
 }
 
 <div>
@@ -471,23 +474,23 @@ exports[`Radio Group should render properly 1`] = `
       id="gender-options"
     >
       <label
-        class="c5 c6"
+        class="c5"
         for="Female-gender"
         id="Female-gender-wrapper"
         sizes="[object Object]"
       >
         <span
-          class="c7 c8"
+          class="c6 c7"
           id="Female-gender-label"
           type="radio"
         >
           Female
         </span>
         <div
-          class="c9"
+          class="c8"
         >
           <input
-            class="c10"
+            class="c9"
             id="Female-gender"
             name="gender"
             sizes="[object Object]"
@@ -495,28 +498,28 @@ exports[`Radio Group should render properly 1`] = `
             value="female"
           />
           <div
-            class="c11 c12"
+            class="c10 c11"
           />
         </div>
       </label>
       <label
-        class="c5 c6"
+        class="c5"
         for="Male-gender"
         id="Male-gender-wrapper"
         sizes="[object Object]"
       >
         <span
-          class="c7 c8"
+          class="c6 c7"
           id="Male-gender-label"
           type="radio"
         >
           Male
         </span>
         <div
-          class="c9"
+          class="c8"
         >
           <input
-            class="c10"
+            class="c9"
             id="Male-gender"
             name="gender"
             sizes="[object Object]"
@@ -524,7 +527,7 @@ exports[`Radio Group should render properly 1`] = `
             value="male"
           />
           <div
-            class="c11 c12"
+            class="c10 c11"
           />
         </div>
       </label>

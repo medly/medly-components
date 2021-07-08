@@ -33,6 +33,23 @@ const nonActiveStyle = ({ borderColor, hasError, disabled }: Props & CheckboxThe
     `;
 };
 
+const getEventStyle = (event: 'hovered' | 'pressed' | 'focused') => ({
+    isActive,
+    hasError,
+    borderColor,
+    theme,
+    bgColor
+}: CheckboxTheme & Props & { isActive?: boolean }) => {
+    const state = hasError ? 'error' : 'active';
+    const borderColorEventValue = event === 'pressed' ? 'pressed' : state;
+    const { blurRadius, spreadRadius } = theme.checkbox.boxShadow;
+    return css`
+        box-shadow: 0 0 ${blurRadius} ${spreadRadius} ${rgba(borderColor[state], event === 'pressed' ? 0.5 : 0.35)};
+        border-color: ${event !== 'focused' && isActive ? bgColor[event][state] : borderColor[borderColorEventValue]};
+        background-color: ${isActive && event !== 'focused' && bgColor[event][state]};
+    `;
+};
+
 export const StyledCheckbox = styled.div`
     border: 0.15rem solid;
     box-sizing: border-box;
@@ -75,7 +92,7 @@ export const HiddenCheckbox = styled.input.attrs(({ theme }) => ({ type: 'checkb
     &:not(:disabled) {
         &:focus {
             & ~ ${StyledCheckbox} {
-                box-shadow: ${({ hasError, borderColor }) => `0 0 0.8rem ${rgba(borderColor[hasError ? 'error' : 'active'], 0.35)}`};
+                ${getEventStyle('focused')}
             }
 
             &:not(:checked) ~ ${StyledCheckbox} {
@@ -112,12 +129,13 @@ export const CheckboxWithLabelWrapper = styled('label').attrs(({ theme }) => ({ 
 
     &:hover {
         ${StyledCheckbox} {
-            box-shadow: ${({ disabled, hasError, borderColor }) =>
-                !disabled && `0 0 0.8rem ${rgba(borderColor[hasError ? 'error' : 'active'], 0.35)}`};
-            border-color: ${({ disabled, hasError, borderColor, isActive, bgColor }) =>
-                !disabled && (isActive ? bgColor.hovered[hasError ? 'error' : 'active'] : borderColor[hasError ? 'error' : 'active'])};
-            background-color: ${({ disabled, hasError, bgColor, isActive }) =>
-                !disabled && isActive && bgColor.hovered[hasError ? 'error' : 'active']};
+            ${({ disabled }) => !disabled && getEventStyle('hovered')};
+        }
+    }
+
+    &:active {
+        ${StyledCheckbox} {
+            ${({ disabled }) => !disabled && getEventStyle('pressed')};
         }
     }
 `;

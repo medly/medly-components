@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Radio component should render correctly with bottom labelPosition 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -14,7 +14,7 @@ exports[`Radio component should render correctly with bottom labelPosition 1`] =
   text-align: initial;
 }
 
-.c3 {
+.c2 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -24,7 +24,7 @@ exports[`Radio component should render correctly with bottom labelPosition 1`] =
   padding: 1.6rem 0;
 }
 
-.c7 {
+.c6 {
   position: relative;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -35,7 +35,7 @@ exports[`Radio component should render correctly with bottom labelPosition 1`] =
   border-radius: 100%;
 }
 
-.c7::after {
+.c6::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -51,7 +51,7 @@ exports[`Radio component should render correctly with bottom labelPosition 1`] =
   transition: transform 100ms ease-out;
 }
 
-.c5 {
+.c4 {
   position: absolute;
   opacity: 0;
   width: 1%;
@@ -59,42 +59,41 @@ exports[`Radio component should render correctly with bottom labelPosition 1`] =
   margin: 0;
 }
 
-.c5 ~ .c6 {
+.c4 ~ .c5 {
   border-color: #13181D;
 }
 
-.c5 ~ .c6::after {
+.c4 ~ .c5::after {
   background-color: #13181D;
 }
 
-.c5:checked ~ .c6::after {
+.c4:checked ~ .c5::after {
   -webkit-transform: translate(-50%,-50%) scale(1);
   -ms-transform: translate(-50%,-50%) scale(1);
   transform: translate(-50%,-50%) scale(1);
 }
 
-.c5:disabled ~ .c6 {
+.c4:disabled ~ .c5 {
   border-color: #98A7B7;
 }
 
-.c5:disabled ~ .c6::after {
+.c4:disabled ~ .c5::after {
   background-color: #98A7B7;
 }
 
-.c5:not(:disabled):checked ~ .c6 {
+.c4:not(:disabled):checked ~ .c5 {
   border-color: #126AFA;
 }
 
-.c5:not(:disabled):checked ~ .c6::after {
+.c4:not(:disabled):checked ~ .c5::after {
   background-color: #126AFA;
 }
 
-.c5:not(:disabled):focus ~ .c6 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+.c4:not(:disabled):focus ~ .c5 {
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
-.c4 {
+.c3 {
   margin: 0.3rem;
   width: 1.8rem;
   height: 1.8rem;
@@ -102,7 +101,7 @@ exports[`Radio component should render correctly with bottom labelPosition 1`] =
   border-radius: 100%;
 }
 
-.c1 {
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -118,37 +117,42 @@ exports[`Radio component should render correctly with bottom labelPosition 1`] =
   flex-direction: column-reverse;
 }
 
-.c1:hover.c0:hover .c6 {
+.c0:hover .c5 {
   border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+}
+
+.c0:active .c5 {
+  border-color: #0F5AD5;
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
 }
 
 <div>
   <label
-    class="c0 c1"
+    class="c0"
     for="Dummy"
     id="Dummy-wrapper"
     sizes="[object Object]"
   >
     <span
-      class="c2 c3"
+      class="c1 c2"
       id="Dummy-label"
       type="radio"
     >
       Dummy
     </span>
     <div
-      class="c4"
+      class="c3"
     >
       <input
-        class="c5"
+        class="c4"
         id="Dummy"
         sizes="[object Object]"
         type="radio"
         value="female"
       />
       <div
-        class="c6 c7"
+        class="c5 c6"
       />
     </div>
   </label>
@@ -156,7 +160,7 @@ exports[`Radio component should render correctly with bottom labelPosition 1`] =
 `;
 
 exports[`Radio component should render correctly with checked false and checked state 1`] = `
-.c5 {
+.c4 {
   position: relative;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -167,7 +171,7 @@ exports[`Radio component should render correctly with checked false and checked 
   border-radius: 100%;
 }
 
-.c5::after {
+.c4::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -183,7 +187,7 @@ exports[`Radio component should render correctly with checked false and checked 
   transition: transform 100ms ease-out;
 }
 
-.c3 {
+.c2 {
   position: absolute;
   opacity: 0;
   width: 1%;
@@ -191,42 +195,41 @@ exports[`Radio component should render correctly with checked false and checked 
   margin: 0;
 }
 
-.c3 ~ .c4 {
+.c2 ~ .c3 {
   border-color: #13181D;
 }
 
-.c3 ~ .c4::after {
+.c2 ~ .c3::after {
   background-color: #13181D;
 }
 
-.c3:checked ~ .c4::after {
+.c2:checked ~ .c3::after {
   -webkit-transform: translate(-50%,-50%) scale(1);
   -ms-transform: translate(-50%,-50%) scale(1);
   transform: translate(-50%,-50%) scale(1);
 }
 
-.c3:disabled ~ .c4 {
+.c2:disabled ~ .c3 {
   border-color: #98A7B7;
 }
 
-.c3:disabled ~ .c4::after {
+.c2:disabled ~ .c3::after {
   background-color: #98A7B7;
 }
 
-.c3:not(:disabled):checked ~ .c4 {
+.c2:not(:disabled):checked ~ .c3 {
   border-color: #126AFA;
 }
 
-.c3:not(:disabled):checked ~ .c4::after {
+.c2:not(:disabled):checked ~ .c3::after {
   background-color: #126AFA;
 }
 
-.c3:not(:disabled):focus ~ .c4 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+.c2:not(:disabled):focus ~ .c3 {
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
-.c2 {
+.c1 {
   margin: 0.3rem;
   width: 1.8rem;
   height: 1.8rem;
@@ -234,7 +237,7 @@ exports[`Radio component should render correctly with checked false and checked 
   border-radius: 100%;
 }
 
-.c1 {
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -254,31 +257,36 @@ exports[`Radio component should render correctly with checked false and checked 
   flex-direction: row-reverse;
 }
 
-.c1:hover.c0:hover .c4 {
+.c0:hover .c3 {
   border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+}
+
+.c0:active .c3 {
+  border-color: #0F5AD5;
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
 }
 
 <div>
   <label
-    class="c0 c1"
+    class="c0"
     for=""
     id="-wrapper"
     sizes="[object Object]"
   >
     
     <div
-      class="c2"
+      class="c1"
     >
       <input
-        class="c3"
+        class="c2"
         id=""
         sizes="[object Object]"
         type="radio"
         value="female"
       />
       <div
-        class="c4 c5"
+        class="c3 c4"
       />
     </div>
   </label>
@@ -352,8 +360,7 @@ exports[`Radio component should render correctly with checked false and disabled
 }
 
 .c2:not(:disabled):focus ~ .c3 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
 .c1 {
@@ -413,7 +420,7 @@ exports[`Radio component should render correctly with checked false and disabled
 `;
 
 exports[`Radio component should render correctly with checked false and hasError state 1`] = `
-.c5 {
+.c4 {
   position: relative;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -424,7 +431,7 @@ exports[`Radio component should render correctly with checked false and hasError
   border-radius: 100%;
 }
 
-.c5::after {
+.c4::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -440,7 +447,7 @@ exports[`Radio component should render correctly with checked false and hasError
   transition: transform 100ms ease-out;
 }
 
-.c3 {
+.c2 {
   position: absolute;
   opacity: 0;
   width: 1%;
@@ -448,42 +455,41 @@ exports[`Radio component should render correctly with checked false and hasError
   margin: 0;
 }
 
-.c3 ~ .c4 {
+.c2 ~ .c3 {
   border-color: #cc0000;
 }
 
-.c3 ~ .c4::after {
+.c2 ~ .c3::after {
   background-color: #cc0000;
 }
 
-.c3:checked ~ .c4::after {
+.c2:checked ~ .c3::after {
   -webkit-transform: translate(-50%,-50%) scale(1);
   -ms-transform: translate(-50%,-50%) scale(1);
   transform: translate(-50%,-50%) scale(1);
 }
 
-.c3:disabled ~ .c4 {
+.c2:disabled ~ .c3 {
   border-color: #98A7B7;
 }
 
-.c3:disabled ~ .c4::after {
+.c2:disabled ~ .c3::after {
   background-color: #98A7B7;
 }
 
-.c3:not(:disabled):checked ~ .c4 {
+.c2:not(:disabled):checked ~ .c3 {
   border-color: #cc0000;
 }
 
-.c3:not(:disabled):checked ~ .c4::after {
+.c2:not(:disabled):checked ~ .c3::after {
   background-color: #cc0000;
 }
 
-.c3:not(:disabled):focus ~ .c4 {
-  border-color: #AD0000;
-  box-shadow: 0 0 0.8rem rgba(204,0,0,0.35);
+.c2:not(:disabled):focus ~ .c3 {
+  box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
 }
 
-.c2 {
+.c1 {
   margin: 0.3rem;
   width: 1.8rem;
   height: 1.8rem;
@@ -491,7 +497,7 @@ exports[`Radio component should render correctly with checked false and hasError
   border-radius: 100%;
 }
 
-.c1 {
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -511,31 +517,36 @@ exports[`Radio component should render correctly with checked false and hasError
   flex-direction: row-reverse;
 }
 
-.c1:hover.c0:hover .c4 {
+.c0:hover .c3 {
+  border-color: #cc0000;
+  box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
+}
+
+.c0:active .c3 {
   border-color: #AD0000;
-  box-shadow: 0 0 0.8rem rgba(204,0,0,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.5);
 }
 
 <div>
   <label
-    class="c0 c1"
+    class="c0"
     for=""
     id="-wrapper"
     sizes="[object Object]"
   >
     
     <div
-      class="c2"
+      class="c1"
     >
       <input
-        class="c3"
+        class="c2"
         id=""
         sizes="[object Object]"
         type="radio"
         value="female"
       />
       <div
-        class="c4 c5"
+        class="c3 c4"
       />
     </div>
   </label>
@@ -609,8 +620,7 @@ exports[`Radio component should render correctly with checked true and checked s
 }
 
 .c2:not(:disabled):focus ~ .c3 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
 .c1 {
@@ -735,8 +745,7 @@ exports[`Radio component should render correctly with checked true and disabled 
 }
 
 .c2:not(:disabled):focus ~ .c3 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
 .c1 {
@@ -863,8 +872,7 @@ exports[`Radio component should render correctly with checked true and hasError 
 }
 
 .c2:not(:disabled):focus ~ .c3 {
-  border-color: #AD0000;
-  box-shadow: 0 0 0.8rem rgba(204,0,0,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
 }
 
 .c1 {
@@ -923,7 +931,7 @@ exports[`Radio component should render correctly with checked true and hasError 
 `;
 
 exports[`Radio component should render correctly with left labelPosition 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -936,7 +944,7 @@ exports[`Radio component should render correctly with left labelPosition 1`] = `
   text-align: initial;
 }
 
-.c3 {
+.c2 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -946,7 +954,7 @@ exports[`Radio component should render correctly with left labelPosition 1`] = `
   padding: 0 1.6rem;
 }
 
-.c7 {
+.c6 {
   position: relative;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -957,7 +965,7 @@ exports[`Radio component should render correctly with left labelPosition 1`] = `
   border-radius: 100%;
 }
 
-.c7::after {
+.c6::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -973,7 +981,7 @@ exports[`Radio component should render correctly with left labelPosition 1`] = `
   transition: transform 100ms ease-out;
 }
 
-.c5 {
+.c4 {
   position: absolute;
   opacity: 0;
   width: 1%;
@@ -981,42 +989,41 @@ exports[`Radio component should render correctly with left labelPosition 1`] = `
   margin: 0;
 }
 
-.c5 ~ .c6 {
+.c4 ~ .c5 {
   border-color: #13181D;
 }
 
-.c5 ~ .c6::after {
+.c4 ~ .c5::after {
   background-color: #13181D;
 }
 
-.c5:checked ~ .c6::after {
+.c4:checked ~ .c5::after {
   -webkit-transform: translate(-50%,-50%) scale(1);
   -ms-transform: translate(-50%,-50%) scale(1);
   transform: translate(-50%,-50%) scale(1);
 }
 
-.c5:disabled ~ .c6 {
+.c4:disabled ~ .c5 {
   border-color: #98A7B7;
 }
 
-.c5:disabled ~ .c6::after {
+.c4:disabled ~ .c5::after {
   background-color: #98A7B7;
 }
 
-.c5:not(:disabled):checked ~ .c6 {
+.c4:not(:disabled):checked ~ .c5 {
   border-color: #126AFA;
 }
 
-.c5:not(:disabled):checked ~ .c6::after {
+.c4:not(:disabled):checked ~ .c5::after {
   background-color: #126AFA;
 }
 
-.c5:not(:disabled):focus ~ .c6 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+.c4:not(:disabled):focus ~ .c5 {
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
-.c4 {
+.c3 {
   margin: 0.3rem;
   width: 1.8rem;
   height: 1.8rem;
@@ -1024,7 +1031,7 @@ exports[`Radio component should render correctly with left labelPosition 1`] = `
   border-radius: 100%;
 }
 
-.c1 {
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1044,37 +1051,42 @@ exports[`Radio component should render correctly with left labelPosition 1`] = `
   flex-direction: row;
 }
 
-.c1:hover.c0:hover .c6 {
+.c0:hover .c5 {
   border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+}
+
+.c0:active .c5 {
+  border-color: #0F5AD5;
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
 }
 
 <div>
   <label
-    class="c0 c1"
+    class="c0"
     for="Dummy"
     id="Dummy-wrapper"
     sizes="[object Object]"
   >
     <span
-      class="c2 c3"
+      class="c1 c2"
       id="Dummy-label"
       type="radio"
     >
       Dummy
     </span>
     <div
-      class="c4"
+      class="c3"
     >
       <input
-        class="c5"
+        class="c4"
         id="Dummy"
         sizes="[object Object]"
         type="radio"
         value="female"
       />
       <div
-        class="c6 c7"
+        class="c5 c6"
       />
     </div>
   </label>
@@ -1082,7 +1094,7 @@ exports[`Radio component should render correctly with left labelPosition 1`] = `
 `;
 
 exports[`Radio component should render correctly with right labelPosition 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -1095,7 +1107,7 @@ exports[`Radio component should render correctly with right labelPosition 1`] = 
   text-align: initial;
 }
 
-.c3 {
+.c2 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1105,7 +1117,7 @@ exports[`Radio component should render correctly with right labelPosition 1`] = 
   padding: 0 1.6rem;
 }
 
-.c7 {
+.c6 {
   position: relative;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -1116,7 +1128,7 @@ exports[`Radio component should render correctly with right labelPosition 1`] = 
   border-radius: 100%;
 }
 
-.c7::after {
+.c6::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -1132,7 +1144,7 @@ exports[`Radio component should render correctly with right labelPosition 1`] = 
   transition: transform 100ms ease-out;
 }
 
-.c5 {
+.c4 {
   position: absolute;
   opacity: 0;
   width: 1%;
@@ -1140,42 +1152,41 @@ exports[`Radio component should render correctly with right labelPosition 1`] = 
   margin: 0;
 }
 
-.c5 ~ .c6 {
+.c4 ~ .c5 {
   border-color: #13181D;
 }
 
-.c5 ~ .c6::after {
+.c4 ~ .c5::after {
   background-color: #13181D;
 }
 
-.c5:checked ~ .c6::after {
+.c4:checked ~ .c5::after {
   -webkit-transform: translate(-50%,-50%) scale(1);
   -ms-transform: translate(-50%,-50%) scale(1);
   transform: translate(-50%,-50%) scale(1);
 }
 
-.c5:disabled ~ .c6 {
+.c4:disabled ~ .c5 {
   border-color: #98A7B7;
 }
 
-.c5:disabled ~ .c6::after {
+.c4:disabled ~ .c5::after {
   background-color: #98A7B7;
 }
 
-.c5:not(:disabled):checked ~ .c6 {
+.c4:not(:disabled):checked ~ .c5 {
   border-color: #126AFA;
 }
 
-.c5:not(:disabled):checked ~ .c6::after {
+.c4:not(:disabled):checked ~ .c5::after {
   background-color: #126AFA;
 }
 
-.c5:not(:disabled):focus ~ .c6 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+.c4:not(:disabled):focus ~ .c5 {
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
-.c4 {
+.c3 {
   margin: 0.3rem;
   width: 1.8rem;
   height: 1.8rem;
@@ -1183,7 +1194,7 @@ exports[`Radio component should render correctly with right labelPosition 1`] = 
   border-radius: 100%;
 }
 
-.c1 {
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1203,37 +1214,42 @@ exports[`Radio component should render correctly with right labelPosition 1`] = 
   flex-direction: row-reverse;
 }
 
-.c1:hover.c0:hover .c6 {
+.c0:hover .c5 {
   border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+}
+
+.c0:active .c5 {
+  border-color: #0F5AD5;
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
 }
 
 <div>
   <label
-    class="c0 c1"
+    class="c0"
     for="Dummy"
     id="Dummy-wrapper"
     sizes="[object Object]"
   >
     <span
-      class="c2 c3"
+      class="c1 c2"
       id="Dummy-label"
       type="radio"
     >
       Dummy
     </span>
     <div
-      class="c4"
+      class="c3"
     >
       <input
-        class="c5"
+        class="c4"
         id="Dummy"
         sizes="[object Object]"
         type="radio"
         value="female"
       />
       <div
-        class="c6 c7"
+        class="c5 c6"
       />
     </div>
   </label>
@@ -1241,7 +1257,7 @@ exports[`Radio component should render correctly with right labelPosition 1`] = 
 `;
 
 exports[`Radio component should render correctly with top labelPosition 1`] = `
-.c2 {
+.c1 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -1254,7 +1270,7 @@ exports[`Radio component should render correctly with top labelPosition 1`] = `
   text-align: initial;
 }
 
-.c3 {
+.c2 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1264,7 +1280,7 @@ exports[`Radio component should render correctly with top labelPosition 1`] = `
   padding: 1.6rem 0;
 }
 
-.c7 {
+.c6 {
   position: relative;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -1275,7 +1291,7 @@ exports[`Radio component should render correctly with top labelPosition 1`] = `
   border-radius: 100%;
 }
 
-.c7::after {
+.c6::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -1291,7 +1307,7 @@ exports[`Radio component should render correctly with top labelPosition 1`] = `
   transition: transform 100ms ease-out;
 }
 
-.c5 {
+.c4 {
   position: absolute;
   opacity: 0;
   width: 1%;
@@ -1299,42 +1315,41 @@ exports[`Radio component should render correctly with top labelPosition 1`] = `
   margin: 0;
 }
 
-.c5 ~ .c6 {
+.c4 ~ .c5 {
   border-color: #13181D;
 }
 
-.c5 ~ .c6::after {
+.c4 ~ .c5::after {
   background-color: #13181D;
 }
 
-.c5:checked ~ .c6::after {
+.c4:checked ~ .c5::after {
   -webkit-transform: translate(-50%,-50%) scale(1);
   -ms-transform: translate(-50%,-50%) scale(1);
   transform: translate(-50%,-50%) scale(1);
 }
 
-.c5:disabled ~ .c6 {
+.c4:disabled ~ .c5 {
   border-color: #98A7B7;
 }
 
-.c5:disabled ~ .c6::after {
+.c4:disabled ~ .c5::after {
   background-color: #98A7B7;
 }
 
-.c5:not(:disabled):checked ~ .c6 {
+.c4:not(:disabled):checked ~ .c5 {
   border-color: #126AFA;
 }
 
-.c5:not(:disabled):checked ~ .c6::after {
+.c4:not(:disabled):checked ~ .c5::after {
   background-color: #126AFA;
 }
 
-.c5:not(:disabled):focus ~ .c6 {
-  border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+.c4:not(:disabled):focus ~ .c5 {
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
 }
 
-.c4 {
+.c3 {
   margin: 0.3rem;
   width: 1.8rem;
   height: 1.8rem;
@@ -1342,7 +1357,7 @@ exports[`Radio component should render correctly with top labelPosition 1`] = `
   border-radius: 100%;
 }
 
-.c1 {
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1358,37 +1373,42 @@ exports[`Radio component should render correctly with top labelPosition 1`] = `
   justify-content: center;
 }
 
-.c1:hover.c0:hover .c6 {
+.c0:hover .c5 {
   border-color: #126AFA;
-  box-shadow: 0 0 0.8rem rgba(18,106,250,0.35);
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
+}
+
+.c0:active .c5 {
+  border-color: #0F5AD5;
+  box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
 }
 
 <div>
   <label
-    class="c0 c1"
+    class="c0"
     for="Dummy"
     id="Dummy-wrapper"
     sizes="[object Object]"
   >
     <span
-      class="c2 c3"
+      class="c1 c2"
       id="Dummy-label"
       type="radio"
     >
       Dummy
     </span>
     <div
-      class="c4"
+      class="c3"
     >
       <input
-        class="c5"
+        class="c4"
         id="Dummy"
         sizes="[object Object]"
         type="radio"
         value="female"
       />
       <div
-        class="c6 c7"
+        class="c5 c6"
       />
     </div>
   </label>

@@ -22,4 +22,18 @@ export interface RadioTheme {
         };
         disabled: string;
     };
+    borderColor: {
+        hovered: {
+            error: string;
+            active: string;
+        };
+        pressed: {
+            error: string;
+            active: string;
+        };
+    }
+    boxShadow: {
+        spreadRadius: string;
+        blurRadius: string;
+    };
 }

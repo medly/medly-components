@@ -24,6 +24,7 @@ const checkbox: CheckboxTheme = {
         default: colors.black,
         error: colors.red[500],
         active: colors.blue[500],
+        pressed: colors.blue[600],
         disabled: colors.grey[500]
     },
     bgColor: {
@@ -33,12 +34,20 @@ const checkbox: CheckboxTheme = {
         hovered: {
             active: colors.blue[600],
             error: colors.red[600]
+        },
+        pressed: {
+            active: colors.blue[700],
+            error: colors.red[700]
         }
     },
     iconColor: {
         disabled: colors.grey[500],
         active: colors.white,
         error: colors.white
+    },
+    boxShadow: {
+        spreadRadius: '0',
+        blurRadius: '0.8rem'
     }
 };
 

@@ -17,6 +17,7 @@ export interface CheckboxTheme {
         default: string;
         error: string;
         active: string;
+        pressed: string;
         disabled: string;
     };
     bgColor: {
@@ -27,10 +28,18 @@ export interface CheckboxTheme {
             error: string;
             active: string;
         };
+        pressed: {
+            error: string;
+            active: string;
+        };
     };
     iconColor: {
         disabled: string;
         active: string;
         error: string;
+    };
+    boxShadow: {
+        spreadRadius: string;
+        blurRadius: string;
     };
 }

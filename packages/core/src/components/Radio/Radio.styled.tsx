@@ -1,4 +1,4 @@
-import { RadioSizes } from '@medly-components/theme';
+import { RadioSizes, RadioTheme } from '@medly-components/theme';
 import { css, styled, WithThemeProp } from '@medly-components/utils';
 import { rgba } from 'polished';
 import { getSelectorLabelPositionStyle } from '../Selectors';
@@ -35,6 +35,21 @@ const getStyle = (color: string) => css`
     }
 `;
 
+const getEventStyle = (event: 'hovered' | 'pressed' | 'focused') => ({
+    hasError,
+    theme,
+    fillColor,
+    borderColor
+}: RadioTheme & (WrapperProps | Props)) => {
+    const state = hasError ? 'error' : 'active';
+    const { blurRadius, spreadRadius } = theme.radio.boxShadow;
+    const borderColorValue = event !== 'focused' && borderColor[event][state];
+    return css`
+        border-color: ${borderColorValue};
+        box-shadow: 0 0 ${blurRadius} ${spreadRadius} ${rgba(fillColor[state], event === 'pressed' ? 0.5 : 0.35)};
+    `;
+};
+
 export const HiddenRadio = styled('input').attrs(({ theme }) => ({ type: 'radio', ...theme.radio }))<Props>`
     position: absolute;
     opacity: 0;
@@ -62,8 +77,7 @@ export const HiddenRadio = styled('input').attrs(({ theme }) => ({ type: 'radio'
         }
 
         &:focus ~ ${StyledRadio} {
-            border-color: ${({ fillColor, hasError }) => fillColor.hovered[hasError ? 'error' : 'default']};
-            box-shadow: ${({ fillColor, hasError }) => `0 0 0.8rem ${rgba(fillColor[hasError ? 'error' : 'active'], 0.35)}`};
+            ${getEventStyle('focused')}
         }
     }
 `;
@@ -83,14 +97,14 @@ export const RadioWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...
     ${getSelectorLabelPositionStyle}
 
     &:hover {
-        ${({ isActive, disabled, hasError, fillColor }) =>
-            !isActive &&
-            !disabled &&
-            css`
-                && ${StyledRadio} {
-                    border-color: ${fillColor.hovered[hasError ? 'error' : 'default']};
-                    box-shadow: ${`0 0 0.8rem ${rgba(fillColor[hasError ? 'error' : 'active'], 0.35)}`};
-                }
-            `}
+        ${StyledRadio} {
+            ${({ isActive, disabled }) => !isActive && !disabled && getEventStyle('hovered')}
+        }
+    }
+
+    &:active {
+        ${StyledRadio} {
+            ${({ isActive, disabled }) => !isActive && !disabled && getEventStyle('pressed')}
+        }
     }
 `;
