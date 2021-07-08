@@ -24,6 +24,7 @@ const checkbox: CheckboxTheme = {
         default: colors.black,
         error: colors.red[500],
         active: colors.blue[500],
+        pressed: colors.blue[600],
         disabled: colors.grey[500]
     },
     bgColor: {
