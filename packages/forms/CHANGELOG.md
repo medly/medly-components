@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.23.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.22.12...@medly-components/forms@1.23.0) (2021-07-08)
+
+
+### Bug Fixes
+
+* code smell fixes ([0c84503](https://github.com/medly/medly-components/commit/0c845032708564cdcb6db9ad899030e1ecea83a5))
+
+
+### Features
+
+* adds pressed state and borderColor to radio ([7acf1b0](https://github.com/medly/medly-components/commit/7acf1b012be0ea8bd6f2f68f5aaab889272a7b73))
+* **core:** adds pressed state to selector components ([3e2d348](https://github.com/medly/medly-components/commit/3e2d3482fc197c49a2ae139ad01ede1b85ae8aa3))
+
+
+
+
+
 ## [1.22.12](https://github.com/medly/medly-components/compare/@medly-components/forms@1.22.11...@medly-components/forms@1.22.12) (2021-07-08)
 
 **Note:** Version bump only for package @medly-components/forms

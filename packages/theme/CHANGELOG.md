@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.0.0...@medly-components/theme@2.1.0) (2021-07-08)
+
+
+### Bug Fixes
+
+* **theme:** corrects the colors for pressed event of borderColor prop ([41ced5a](https://github.com/medly/medly-components/commit/41ced5ae51b059de1326a00707a1170d8f7b5a89))
+
+
+### Features
+
+* **theme:** added pressed state to selectors borderColor prop ([83bf482](https://github.com/medly/medly-components/commit/83bf482cc580c7e20ef70608aeb466dc88935d82))
+* adds pressed state and borderColor to radio ([7acf1b0](https://github.com/medly/medly-components/commit/7acf1b012be0ea8bd6f2f68f5aaab889272a7b73))
+* **core:** adds pressed state to selector components ([3e2d348](https://github.com/medly/medly-components/commit/3e2d3482fc197c49a2ae139ad01ede1b85ae8aa3))
+* **theme:** adds new theme props to pass box-shadow properties for checkbox and radio ([e38a67a](https://github.com/medly/medly-components/commit/e38a67ab81defd8d35607ad2714bd351bd68bd46))
+
+
+
+
+
 # [2.0.0](https://github.com/medly/medly-components/compare/@medly-components/theme@1.30.10...@medly-components/theme@2.0.0) (2021-06-25)
 
 
