@@ -522,6 +522,10 @@ exports[`Table component pagination should call onPageChange prop on click on an
   padding: 0 1.6rem 0 0.8rem;
 }
 
+.c20 td {
+  padding: 0;
+}
+
 .c20 td > .c6 {
   line-height: 2rem;
   font-size: 1.2rem;

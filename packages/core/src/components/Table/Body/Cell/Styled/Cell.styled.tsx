@@ -3,6 +3,7 @@ import Text from '../../../../Text';
 import { TableCellStyledProps } from '../types';
 
 export const tableCellPaddings = {
+    XS: '0.5rem 0.8rem',
     S: '0.8rem 1.6rem',
     M: '1.2rem 1.6rem',
     L: '1.6rem 2.4rem'
