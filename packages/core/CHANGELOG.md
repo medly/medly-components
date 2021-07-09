@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.2.0...@medly-components/core@2.2.1) (2021-07-09)
+
+
+### Bug Fixes
+
+* **core:** fix padding of HeadCell button for ‘XS’ tablesize ([112b46f](https://github.com/medly/medly-components/commit/112b46fe74d4d74816d037295d645e7dab010c07))
+
+
+
+
+
 # [2.2.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.1.0...@medly-components/core@2.2.0) (2021-07-08)
 
 
