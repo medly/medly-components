@@ -104,7 +104,7 @@ const getStyle = (theme: Theme, styleType: 'default' | 'hovered' | 'pressed', is
 };
 const headCellButtonTableSizeMap = {
     L: '0.9rem 1.6rem 1.1rem',
-    XS: '0.5rem 0.8rem 0.7rem',
+    XS: '0.5rem 0.4rem 0.7rem',
     default: '0.9rem 0.8rem 1.1rem'
 };
 export const HeadCellButton = styled.button<{
