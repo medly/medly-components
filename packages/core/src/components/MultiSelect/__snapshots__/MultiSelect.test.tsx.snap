@@ -1634,12 +1634,12 @@ exports[`MultiSelect component should render properly with M size 1`] = `
   cursor: pointer;
 }
 
-.c21:hover .c26 {
+.c21.c21.c21:hover .c26 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
   border-color: #126AFA;
 }
 
-.c21:active .c26 {
+.c21.c21.c21:active .c26 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
   border-color: #0F5AD5;
 }
@@ -2942,12 +2942,12 @@ exports[`MultiSelect component should render properly with S size 1`] = `
   cursor: pointer;
 }
 
-.c20:hover .c25 {
+.c20.c20.c20:hover .c25 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
   border-color: #126AFA;
 }
 
-.c20:active .c25 {
+.c20.c20.c20:active .c25 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
   border-color: #0F5AD5;
 }
