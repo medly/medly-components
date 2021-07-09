@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.2.1...@medly-components/core@2.2.2) (2021-07-09)
+
+
+### Bug Fixes
+
+* **core:** removes unwanted code from storybook ([0bf9cc9](https://github.com/medly/medly-components/commit/0bf9cc9bf76d2041b2e1f3bb7cd2007cbc2d513e))
+
+
+
+
+
 ## [2.2.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.2.0...@medly-components/core@2.2.1) (2021-07-09)
 
 
