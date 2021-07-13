@@ -122,8 +122,6 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
             </DateIconWrapper>
         );
 
-        console.log(readOnly);
-
         return (
             <Wrapper
                 id={`${id}-datepicker-wrapper`}
