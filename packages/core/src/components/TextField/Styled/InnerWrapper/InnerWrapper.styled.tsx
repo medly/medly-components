@@ -40,6 +40,34 @@ const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => 
     }
 `;
 
+const readOnlyStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
+    cursor: text;
+    background-color: ${textField[variant].default.bgColor};
+    &::after,
+    &:hover::after {
+        border-width: 0.1rem;
+        border-color: ${textField[variant].default.borderColor};
+    }
+    input {
+        box-shadow: 0 0 0 100000px ${textField[variant].default.bgColor} inset;
+    }
+    ${Label} {
+        color: ${textField[variant].default.labelColor};
+    }
+    ${CharacterCount} {
+        display: none;
+    }
+    ${Prefix}, ${Suffix} {
+        display: none;
+    }
+    & ~ ${HelperText} {
+        display: none;
+    }
+    * {
+        cursor: text;
+    }
+`;
+
 const activeStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
     &:focus-within,
     &:focus-within:hover {
@@ -162,7 +190,8 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
     ${({ variant }) => variant === 'filled' && filledStyle}
     ${({ variant }) => variant === 'outlined' && outlinedStyle}
     ${({ variant }) => variant === 'fusion' && fusionStyle}
-    ${({ disabled, isErrorPresent }) => (disabled ? disabledStyle : isErrorPresent ? errorStyle : activeStyle)}
+    ${({ readOnly, disabled, isErrorPresent }) =>
+        readOnly ? readOnlyStyle : disabled ? disabledStyle : isErrorPresent ? errorStyle : activeStyle}
 `;
 InnerWrapper.defaultProps = {
     size: 'M'

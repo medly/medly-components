@@ -19,6 +19,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                 minWidth,
                 required,
                 disabled,
+                readOnly,
                 errorText,
                 className,
                 validator,
@@ -121,6 +122,8 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
             </DateIconWrapper>
         );
 
+        console.log(readOnly);
+
         return (
             <Wrapper
                 id={`${id}-datepicker-wrapper`}
@@ -137,12 +140,13 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                     key={inputKey}
                     ref={inputRef}
                     required={required}
-                    {...(showCalendarIcon && { suffix: suffixEl })}
+                    {...(showCalendarIcon && !readOnly && { suffix: suffixEl })}
                     fullWidth
                     mask={displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()}
                     pattern={datePickerPattern[displayFormat]}
                     size={size}
                     disabled={disabled}
+                    readOnly={readOnly}
                     value={textValue}
                     onChange={onTextChange}
                     {...{ ...restProps, onBlur, onFocus, minWidth, onInvalid }}

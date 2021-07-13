@@ -23,6 +23,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                 suffix: Suffix,
                 required,
                 disabled,
+                readOnly,
                 mask,
                 placeholder,
                 multiline,
@@ -101,6 +102,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                     onClick={handleWrapperClick}
                     variant={props.variant}
                     disabled={disabled}
+                    readOnly={readOnly}
                     isErrorPresent={isErrorPresent}
                     isLabelPresent={isLabelPresent}
                     isTextPresent={isTextPresent}

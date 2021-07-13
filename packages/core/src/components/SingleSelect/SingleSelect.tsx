@@ -22,6 +22,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 includesNestedOptions,
                 fullWidth,
                 disabled,
+                readOnly,
                 onFocus,
                 onBlur,
                 className,
@@ -150,6 +151,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             onBlur: handleBlur,
             onKeyPress: handleKeyPress,
             disabled,
+            readOnly,
             areOptionsVisible
         };
 
