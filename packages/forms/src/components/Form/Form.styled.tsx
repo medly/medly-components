@@ -1,9 +1,9 @@
 import { styled } from '@medly-components/utils';
 
-export const Form = styled('form')<{ fullWidth?: boolean; minWidth?: string }>`
+export const Form = styled('form')<{ fullWidth?: boolean; minWidth?: string; gridGap?: string }>`
     grid-template-rows: auto;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 1.6rem;
+    grid-gap: ${({ gridGap }) => (gridGap ? gridGap : '1.6rem')};
     min-width: ${({ minWidth }) => minWidth};
     width: ${({ fullWidth }) => fullWidth && '100%'};
     display: ${({ fullWidth }) => (fullWidth ? 'grid' : 'inline-grid')};

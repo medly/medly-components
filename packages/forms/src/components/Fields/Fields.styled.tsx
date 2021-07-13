@@ -5,6 +5,10 @@ import { CommonFieldProps } from './types';
 export const FieldWrapper = styled('div')<CommonFieldProps>`
     grid-column: ${({ gridColumn }) => gridColumn};
     grid-row: ${({ gridRow }) => gridRow};
+    border-top: ${({ borderTop }) => (borderTop ? borderTop : 'unset')};
+    border-right: ${({ borderRight }) => (borderRight ? borderRight : 'unset')};
+    border-bottom: ${({ borderBottom }) => (borderBottom ? borderBottom : 'unset')};
+    border-left: ${({ borderLeft }) => (borderLeft ? borderLeft : 'unset')};
     & > * {
         width: 100%;
         margin: 0;

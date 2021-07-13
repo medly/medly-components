@@ -25,6 +25,10 @@ export const Form: React.FC<Props> & WithStyle = React.memo(
                 id,
                 onChange,
                 fieldSchema,
+                gridGap,
+                readOnly,
+                fullWidth,
+                variant,
                 ...restProps
             },
             ref
@@ -49,6 +53,8 @@ export const Form: React.FC<Props> & WithStyle = React.memo(
                     key={formKey}
                     onSubmit={handlers.handleFormSubmit(onSubmit)}
                     onReset={handlers.handleFormReset(onReset)}
+                    gridGap={gridGap}
+                    fullWidth={fullWidth}
                 >
                     {header && <Text textVariant="h2">{header}</Text>}
                     {helperText && <Text textVariant="body1">{helperText}</Text>}
@@ -59,6 +65,8 @@ export const Form: React.FC<Props> & WithStyle = React.memo(
                         values={values}
                         handlers={handlers}
                         disabled={disabled}
+                        readOnly={readOnly}
+                        variant={variant}
                     />
                     {!hideActions && <Actions actionSchema={actionSchema} formId={formId} disabled={disabled} actionLabel={actionLabel} />}
                 </Styled.Form>

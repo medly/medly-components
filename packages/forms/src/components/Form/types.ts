@@ -33,4 +33,10 @@ export interface Props extends FormProps {
     minWidth?: string;
     /** Function to be called on values updating */
     onChange?: (values: { [key: string]: any }) => void;
+    /** optional grid-gap setting */
+    gridGap?: string;
+    /** re-purpose into a content-card */
+    readOnly?: boolean;
+    /** Input Variants */
+    variant?: 'outlined' | 'filled' | 'fusion';
 }

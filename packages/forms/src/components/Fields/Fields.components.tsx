@@ -33,8 +33,10 @@ export const Fields: React.FC<Props> = React.memo(props => {
             <>
                 {Object.keys(fields).map(key => {
                     // @ts-ignore
-                    const { gridColumn, gridRow, ...componentProps } = fields[key],
+                    const { gridColumn, gridRow, borderTop, borderRight, borderBottom, borderLeft, ...componentProps } = fields[key],
                         disabled = props.disabled || componentProps.disabled,
+                        readOnly = !!props.readOnly,
+                        variant = props.variant,
                         name = parentName ? `${parentName}.${key}` : key,
                         value = values[name];
 
@@ -43,9 +45,11 @@ export const Fields: React.FC<Props> = React.memo(props => {
                         ...componentProps,
                         name,
                         disabled,
+                        readOnly,
                         minWidth: 'auto',
                         onFocus: handlers.handleFocus(name, (componentProps as TextFieldProps).onFocus),
                         errorText: errorMessages[name],
+                        variant: variant,
                         // These two fields will be removed very soon
                         description: errorMessages[name] || (componentProps as FileInputProps).description,
                         descriptionColor: errorMessages[name] && 'red'
@@ -61,6 +65,8 @@ export const Fields: React.FC<Props> = React.memo(props => {
                                 <Fields
                                     values={values}
                                     disabled={disabled}
+                                    readOnly={readOnly}
+                                    variant={variant}
                                     handlers={handlers}
                                     fields={(componentProps as NestedProps).fields}
                                     errorMessages={errorMessages}
@@ -72,7 +78,7 @@ export const Fields: React.FC<Props> = React.memo(props => {
                     }
 
                     return (
-                        <FieldWrapper {...{ gridColumn, gridRow }} key={key}>
+                        <FieldWrapper {...{ gridColumn, gridRow, borderTop, borderRight, borderBottom, borderLeft }} key={key}>
                             {(() => {
                                 switch (componentProps.type) {
                                     case 'text':

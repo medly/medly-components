@@ -19,6 +19,11 @@ export type CommonFieldProps = {
     gridColumn?: string;
     /** Grid row to render the field */
     gridRow?: string;
+    /** Cell border */
+    borderTop?: string;
+    borderRight?: string;
+    borderBottom?: string;
+    borderLeft?: string;
 };
 
 export type TextFieldProps = GetComponentProps<typeof TextField> & CommonFieldProps & { type: HTMLProps<HTMLInputElement>['type'] };
@@ -87,4 +92,8 @@ export interface Props {
     errorMessages?: { [K: string]: any };
     // add error message
     addErrorMessage: (key: string, message: string) => void;
+    /** re-purpose into a content-card field */
+    readOnly?: boolean;
+    /** Input Variants */
+    variant?: 'outlined' | 'filled' | 'fusion';
 }
