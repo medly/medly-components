@@ -4,7 +4,7 @@ import { rgba } from 'polished';
 import Checkbox from '../../../../Checkbox';
 import { RowActionProps } from './types';
 
-const getRowHoveredState = (style: 'shadow' | 'outlined') => {
+const getRowHoverStateBorderStyle = (style: 'shadow' | 'outlined') => {
     let state = css`
         left: 0;
         top: 0;
@@ -30,7 +30,7 @@ const selectedBorderStyle = css<RowActionProps>`
                 width: 0.4rem;
                 position: absolute;
                 background-color: ${({ theme }) => theme.table.row.selectedBorderColor};
-                ${({ theme }) => getRowHoveredState(theme.table.row.hoveredStyle.style)}
+                ${({ theme }) => getRowHoverStateBorderStyle(theme.table.row.hoveredStyle.style)}
             }
         }
     `,

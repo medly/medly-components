@@ -32,7 +32,7 @@ const wrapTextStyle = css`
         }
     `;
 
-const getRowHoveredStateCellPadding = (style: 'shadow' | 'outlined', tableSize: TableProps['size']): string =>
+const getRowHoverStateCellPadding = (style: 'shadow' | 'outlined', tableSize: TableProps['size']): string =>
     style === 'outlined' ? outlinedTableCellPaddings[tableSize] : defaultTableCellPaddings[tableSize];
 
 export const Cell = styled('td')<TableCellStyledProps>`
@@ -43,7 +43,7 @@ export const Cell = styled('td')<TableCellStyledProps>`
     align-items: center;
     opacity: ${({ hidden }) => (hidden ? 0 : 1)};
     padding: ${({ hidden, tableSize, theme }) =>
-        hidden ? '0' : getRowHoveredStateCellPadding(theme.table.row.hoveredStyle.style, tableSize)};
+        hidden ? '0' : getRowHoverStateCellPadding(theme.table.row.hoveredStyle.style, tableSize)};
     justify-content: ${({ align }) => (align === 'right' ? 'flex-end' : align === 'center' ? 'center' : 'flex-start')};
 
     ${props => props.frozen && frozenStyle}

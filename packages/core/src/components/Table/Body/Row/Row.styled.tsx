@@ -53,7 +53,7 @@ const cardStyle = css<StyledProps>`
     }
 `;
 
-const getHoverState = (style: 'shadow' | 'outlined') => {
+const getHoverStateStyle = (style: 'shadow' | 'outlined') => {
     let hoverState = css<StyledProps>`
         box-shadow: ${({ disabled, onClick, theme }) => !disabled && onClick && `0 0.2rem 0.4rem ${rgba(theme.table.shadowColor, 0.2)} `};
     `;
@@ -67,10 +67,32 @@ const getHoverState = (style: 'shadow' | 'outlined') => {
     return hoverState;
 };
 
+const getBorderStyle = (rowHoveredStyle: 'shadow' | 'outlined') => {
+    let style = css``;
+
+    if (rowHoveredStyle === 'outlined') {
+        style = css`
+            border: 2px solid transparent;
+        `;
+    }
+    return style;
+};
+
+const getPadding = (rowHoveredStyle: 'shadow' | 'outlined') => {
+    let style = css``;
+
+    if (rowHoveredStyle === 'outlined') {
+        style = css`
+            padding-bottom: 0.1rem;
+        `;
+    }
+    return style;
+};
+
 const normalStyle = css<StyledProps>`
     &&:hover {
         z-index: 2;
-        ${({ theme }) => getHoverState(theme.table.row.hoveredStyle.style)};
+        ${({ theme }) => getHoverStateStyle(theme.table.row.hoveredStyle.style)};
     }
 
     &:nth-child(odd) {
@@ -93,19 +115,11 @@ const normalStyle = css<StyledProps>`
         }
     }
 
-    ${({ theme }) =>
-        theme.table.row.hoveredStyle.style === 'outlined' &&
-        css`
-            border: 2px solid transparent;
-        `};
+    ${({ theme }) => getBorderStyle(theme.table.row.hoveredStyle.style)};
 
     &:not(:last-child) {
         border-bottom: 0.1rem solid ${({ theme }) => theme.table.row.separatorColor};
-        ${({ theme }) =>
-            theme.table.row.hoveredStyle.style === 'outlined' &&
-            css`
-                padding-bottom: 0.1rem;
-            `}
+        ${({ theme }) => getPadding(theme.table.row.hoveredStyle.style)}
     }
 `;
 
