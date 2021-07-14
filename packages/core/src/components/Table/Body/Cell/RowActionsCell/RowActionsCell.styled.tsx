@@ -4,17 +4,33 @@ import { rgba } from 'polished';
 import Checkbox from '../../../../Checkbox';
 import { RowActionProps } from './types';
 
+const getRowHoveredState = (style: 'shadow' | 'outlined') => {
+    let state = css`
+        left: 0;
+        top: 0;
+        height: 100%;
+    `;
+
+    if (style === 'outlined') {
+        state = css`
+            left: -0.2rem;
+            top: -0.2rem;
+            height: calc(100% + 0.4rem);
+        `;
+    }
+
+    return state;
+};
+
 const selectedBorderStyle = css<RowActionProps>`
         &&& {
             &::before {
                 content: '';
-                left: 0;
-                top: 0;
                 z-index: 2;
-                height: 100%;
                 width: 0.4rem;
                 position: absolute;
                 background-color: ${({ theme }) => theme.table.row.selectedBorderColor};
+                ${({ theme }) => getRowHoveredState(theme.table.row.hoveredStyle.style)}
             }
         }
     `,

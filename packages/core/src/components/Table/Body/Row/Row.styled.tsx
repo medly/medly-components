@@ -1,7 +1,7 @@
 import { css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import { GridTemplateProps } from '../../types';
-import { tableCellPaddings } from '../Cell/Styled';
+import { defaultTableCellPaddings } from '../Cell/Styled';
 import { StyledProps } from './types';
 
 const cardStyle = css<StyledProps>`
@@ -53,10 +53,24 @@ const cardStyle = css<StyledProps>`
     }
 `;
 
-const normalStyle = css<StyledProps>`
-    &:hover {
-        z-index: 2;
+const getHoverState = (style: 'shadow' | 'outlined') => {
+    let hoverState = css<StyledProps>`
         box-shadow: ${({ disabled, onClick, theme }) => !disabled && onClick && `0 0.2rem 0.4rem ${rgba(theme.table.shadowColor, 0.2)} `};
+    `;
+    if (style === 'outlined') {
+        hoverState = css<StyledProps>`
+            border-radius: 0.2rem;
+            border: 0.2rem solid ${({ theme }) => theme.table.row.hoveredStyle.color};
+            padding-bottom: 0;
+        `;
+    }
+    return hoverState;
+};
+
+const normalStyle = css<StyledProps>`
+    &&:hover {
+        z-index: 2;
+        ${({ theme }) => getHoverState(theme.table.row.hoveredStyle.style)};
     }
 
     &:nth-child(odd) {
@@ -79,8 +93,11 @@ const normalStyle = css<StyledProps>`
         }
     }
 
+    ${({ theme }) => theme.table.row.hoveredStyle.style === 'outlined' && `border: 2px solid transparent;`};
+
     &:not(:last-child) {
-        border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
+        border-bottom: 0.1rem solid ${({ theme }) => theme.table.row.separatorColor};
+        ${({ theme }) => theme.table.row.hoveredStyle.style === 'outlined' && `padding-bottom: 0.1rem;`}
     }
 `;
 
@@ -97,9 +114,9 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
     ${({ showRowWithCardStyle }) => (showRowWithCardStyle ? cardStyle : normalStyle)}
 `;
 
-export const NoResultCell = styled('td')<{ width: number; tableSize: keyof typeof tableCellPaddings }>`
+export const NoResultCell = styled('td')<{ width: number; tableSize: keyof typeof defaultTableCellPaddings }>`
     text-align: center;
-    padding: ${({ tableSize }) => tableCellPaddings[tableSize]};
+    padding: ${({ tableSize }) => defaultTableCellPaddings[tableSize]};
     width: ${({ width }) => `${width}px`};
 `;
 

@@ -3,13 +3,18 @@ export interface TableTheme {
     scrollBarColor: string;
     shadowColor: string;
     row: {
+        selectedBorderColor: string;
+        separatorColor: string;
         bgColor: {
             odd: string;
             even: string;
             disabled: string;
             selected: string;
         };
-        selectedBorderColor: string;
+        hoveredStyle: {
+            style: 'shadow' | 'outlined';
+            color: string;
+        };
         textColor: {
             odd: string;
             even: string;

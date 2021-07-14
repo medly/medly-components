@@ -3,7 +3,7 @@ import { centerAligned, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Text from '../../../../Text';
 import { TableProps } from '../../../types';
-import { tableCellPaddings } from '../../Cell/Styled';
+import { defaultTableCellPaddings } from '../../Cell/Styled';
 import { StyledProps } from './types';
 
 export const Row = styled('tr')<StyledProps>`
@@ -47,7 +47,7 @@ export const TitleCell = styled('td')<{ tableSize?: TableProps['size']; isRowExp
     height: 100%;
     display: flex;
     align-items: center;
-    padding: ${({ hidden, tableSize }) => (hidden ? '0' : tableCellPaddings[tableSize])};
+    padding: ${({ hidden, tableSize }) => (hidden ? '0' : defaultTableCellPaddings[tableSize])};
     grid-column: ${({ isRowExpandable, isRowSelectable }) => (isRowExpandable || isRowSelectable ? '3/-1' : '2/-1')};
 `;
 
@@ -79,7 +79,7 @@ export const ExpansionCell = styled('td')<{
     position: sticky;
     left: 0;
     padding: 0;
-    padding: ${({ showPadding, tableSize }) => showPadding && tableCellPaddings[tableSize]};
+    padding: ${({ showPadding, tableSize }) => showPadding && defaultTableCellPaddings[tableSize]};
     ${centerAligned()}
     border-right: 1px solid ${({ theme }) => theme.table.borderColor};
     & > ${SvgIcon} {

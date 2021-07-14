@@ -171,6 +171,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   opacity: 1;
   width: 100%;
   height: 100%;
+  padding: 0;
 }
 
 .c11::after {
@@ -286,7 +287,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   cursor: inherit;
 }
 
-.c15:hover {
+.c15.c15:hover {
   z-index: 2;
 }
 
@@ -303,7 +304,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
 }
 
 .c15:not(:last-child) {
-  border-bottom: 1px solid #C7D0D8;
+  border-bottom: 0.1rem solid #C7D0D8;
 }
 
 .c21 {
@@ -1686,6 +1687,7 @@ exports[`Table component should render properly 1`] = `
   opacity: 1;
   width: 100%;
   height: 100%;
+  padding: 0;
 }
 
 .c11::after {
@@ -1801,7 +1803,7 @@ exports[`Table component should render properly 1`] = `
   cursor: inherit;
 }
 
-.c15:hover {
+.c15.c15:hover {
   z-index: 2;
 }
 
@@ -1818,7 +1820,7 @@ exports[`Table component should render properly 1`] = `
 }
 
 .c15:not(:last-child) {
-  border-bottom: 1px solid #C7D0D8;
+  border-bottom: 0.1rem solid #C7D0D8;
 }
 
 .c2 {
