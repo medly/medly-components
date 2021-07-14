@@ -93,11 +93,19 @@ const normalStyle = css<StyledProps>`
         }
     }
 
-    ${({ theme }) => theme.table.row.hoveredStyle.style === 'outlined' && `border: 2px solid transparent;`};
+    ${({ theme }) =>
+        theme.table.row.hoveredStyle.style === 'outlined' &&
+        css`
+            border: 2px solid transparent;
+        `};
 
     &:not(:last-child) {
         border-bottom: 0.1rem solid ${({ theme }) => theme.table.row.separatorColor};
-        ${({ theme }) => theme.table.row.hoveredStyle.style === 'outlined' && `padding-bottom: 0.1rem;`}
+        ${({ theme }) =>
+            theme.table.row.hoveredStyle.style === 'outlined' &&
+            css`
+                padding-bottom: 0.1rem;
+            `}
     }
 `;
 
