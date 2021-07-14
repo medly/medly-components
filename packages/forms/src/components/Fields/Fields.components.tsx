@@ -35,7 +35,7 @@ export const Fields: React.FC<Props> = React.memo(props => {
                     // @ts-ignore
                     const { gridColumn, gridRow, borderTop, borderRight, borderBottom, borderLeft, ...componentProps } = fields[key],
                         disabled = props.disabled || componentProps.disabled,
-                        readOnly = !!props.readOnly,
+                        readOnly = props.readOnly,
                         variant = props.variant,
                         name = parentName ? `${parentName}.${key}` : key,
                         value = values[name];

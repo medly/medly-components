@@ -20,7 +20,7 @@ export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefi
     suffix?: React.FC<any>;
     /** Disable Input */
     disabled?: boolean;
-    /** re-purpose into a content-card field */
+    /** Hide all prefix/suffix/decorator elements leaving just a label-value pair */
     readOnly?: boolean;
     /** Set it true when it is required in any form */
     required?: boolean;

@@ -92,7 +92,7 @@ export interface Props {
     errorMessages?: { [K: string]: any };
     // add error message
     addErrorMessage: (key: string, message: string) => void;
-    /** re-purpose into a content-card field */
+    /** Hide all prefix/suffix/decorator elements leaving just a label-value pair */
     readOnly?: boolean;
     /** Input Variants */
     variant?: 'outlined' | 'filled' | 'fusion';
