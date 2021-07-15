@@ -4,23 +4,18 @@ import { rgba } from 'polished';
 import Checkbox from '../../../../Checkbox';
 import { RowActionProps } from './types';
 
-const getRowHoverStateBorderStyle = (style: 'shadow' | 'outlined') => {
-    let state = css`
-        left: 0;
-        top: 0;
-        height: 100%;
-    `;
-
-    if (style === 'outlined') {
-        state = css`
-            left: -0.2rem;
-            top: -0.2rem;
-            height: calc(100% + 0.4rem);
-        `;
-    }
-
-    return state;
-};
+const getRowHoverStateBorderStyle = (style: 'shadow' | 'outlined') =>
+    style === 'outlined'
+        ? css`
+              left: -0.2rem;
+              top: -0.2rem;
+              height: calc(100% + 0.4rem);
+          `
+        : css`
+              left: 0;
+              top: 0;
+              height: 100%;
+          `;
 
 const selectedBorderStyle = css<RowActionProps>`
         &&& {

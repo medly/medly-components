@@ -53,41 +53,31 @@ const cardStyle = css<StyledProps>`
     }
 `;
 
-const getHoverStateStyle = (style: 'shadow' | 'outlined') => {
-    let hoverState = css<StyledProps>`
-        box-shadow: ${({ disabled, onClick, theme }) => !disabled && onClick && `0 0.2rem 0.4rem ${rgba(theme.table.shadowColor, 0.2)} `};
-    `;
-    if (style === 'outlined') {
-        hoverState = css<StyledProps>`
-            border-radius: 0.2rem;
-            border: 0.2rem solid ${({ theme }) => theme.table.row.hoveredStyle.color};
-            padding-bottom: 0;
-        `;
-    }
-    return hoverState;
-};
+const getHoverStateStyle = (style: 'shadow' | 'outlined') =>
+    style === 'outlined'
+        ? css<StyledProps>`
+              border-radius: 0.2rem;
+              border: 0.2rem solid ${({ theme }) => theme.table.row.hoveredStyle.color};
+              padding-bottom: 0;
+          `
+        : css<StyledProps>`
+              box-shadow: ${({ disabled, onClick, theme }) =>
+                  !disabled && onClick && `0 0.2rem 0.4rem ${rgba(theme.table.shadowColor, 0.2)} `};
+          `;
 
-const getBorderStyle = (rowHoveredStyle: 'shadow' | 'outlined') => {
-    let style = css``;
+const getBorderStyle = (rowHoveredStyle: 'shadow' | 'outlined') =>
+    rowHoveredStyle === 'outlined'
+        ? css`
+              border: 2px solid transparent;
+          `
+        : ``;
 
-    if (rowHoveredStyle === 'outlined') {
-        style = css`
-            border: 2px solid transparent;
-        `;
-    }
-    return style;
-};
-
-const getPadding = (rowHoveredStyle: 'shadow' | 'outlined') => {
-    let style = css``;
-
-    if (rowHoveredStyle === 'outlined') {
-        style = css`
-            padding-bottom: 0.1rem;
-        `;
-    }
-    return style;
-};
+const getPadding = (rowHoveredStyle: 'shadow' | 'outlined') =>
+    rowHoveredStyle === 'outlined'
+        ? css`
+              padding-bottom: 0.1rem;
+          `
+        : '';
 
 const normalStyle = css<StyledProps>`
     &&:hover {
