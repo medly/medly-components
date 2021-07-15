@@ -27,7 +27,6 @@ export const Form: React.FC<Props> & WithStyle = React.memo(
                 fieldSchema,
                 gridGap,
                 showDecorators,
-                fullWidth,
                 variant,
                 ...restProps
             },
@@ -54,7 +53,6 @@ export const Form: React.FC<Props> & WithStyle = React.memo(
                     onSubmit={handlers.handleFormSubmit(onSubmit)}
                     onReset={handlers.handleFormReset(onReset)}
                     gridGap={gridGap}
-                    fullWidth={fullWidth}
                 >
                     {header && <Text textVariant="h2">{header}</Text>}
                     {helperText && <Text textVariant="body1">{helperText}</Text>}

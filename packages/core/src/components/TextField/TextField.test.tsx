@@ -280,7 +280,7 @@ describe('TextField', () => {
                         }
                     })}
                 >
-                    <TextField variant={variant} label="Name" suffix={CheckIcon} />
+                    <TextField variant={variant} label="Name" suffix={CheckIcon} disabled />
                 </ThemeProvider>
             );
             expect(container).toMatchSnapshot();
