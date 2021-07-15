@@ -43,6 +43,8 @@ export interface SelectProps extends InputProps, WithThemeProp {
     fullWidth?: boolean;
     /** Set it true to disable the select action */
     disabled?: boolean;
+    /** Show all prefix/suffix/decorator elements. If set to false, just a label-value pair remains */
+    showDecorators?: boolean;
     /** Set it true when it is required in any form */
     required?: boolean;
     /** Label */

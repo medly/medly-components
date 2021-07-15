@@ -19,11 +19,6 @@ export type CommonFieldProps = {
     gridColumn?: string;
     /** Grid row to render the field */
     gridRow?: string;
-    /** Cell border */
-    borderTop?: string;
-    borderRight?: string;
-    borderBottom?: string;
-    borderLeft?: string;
 };
 
 export type TextFieldProps = GetComponentProps<typeof TextField> & CommonFieldProps & { type: HTMLProps<HTMLInputElement>['type'] };
@@ -92,8 +87,8 @@ export interface Props {
     errorMessages?: { [K: string]: any };
     // add error message
     addErrorMessage: (key: string, message: string) => void;
-    /** Hide all prefix/suffix/decorator elements leaving just a label-value pair */
-    readOnly?: boolean;
+    /** Show all prefix/suffix/decorator elements. If set to false, just a label-value pair remains */
+    showDecorators?: boolean;
     /** Input Variants */
     variant?: 'outlined' | 'filled' | 'fusion';
 }

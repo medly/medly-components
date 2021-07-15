@@ -26,7 +26,7 @@ export const Form: React.FC<Props> & WithStyle = React.memo(
                 onChange,
                 fieldSchema,
                 gridGap,
-                readOnly,
+                showDecorators,
                 fullWidth,
                 variant,
                 ...restProps
@@ -65,7 +65,7 @@ export const Form: React.FC<Props> & WithStyle = React.memo(
                         values={values}
                         handlers={handlers}
                         disabled={disabled}
-                        readOnly={readOnly}
+                        showDecorators={showDecorators}
                         variant={variant}
                     />
                     {!hideActions && <Actions actionSchema={actionSchema} formId={formId} disabled={disabled} actionLabel={actionLabel} />}
@@ -80,5 +80,6 @@ Form.defaultProps = {
     initialState: {},
     hideActions: false,
     disabled: false,
-    fullWidth: false
+    fullWidth: false,
+    showDecorators: true
 };

@@ -23,7 +23,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                 suffix: Suffix,
                 required,
                 disabled,
-                readOnly,
+                showDecorators,
                 mask,
                 placeholder,
                 multiline,
@@ -102,7 +102,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                     onClick={handleWrapperClick}
                     variant={props.variant}
                     disabled={disabled}
-                    readOnly={readOnly}
+                    showDecorators={showDecorators}
                     isErrorPresent={isErrorPresent}
                     isLabelPresent={isLabelPresent}
                     isTextPresent={isTextPresent}
@@ -186,5 +186,6 @@ TextField.defaultProps = {
     helperText: '',
     errorText: '',
     minRows: 1,
-    withCharacterCount: false
+    withCharacterCount: false,
+    showDecorators: true
 };

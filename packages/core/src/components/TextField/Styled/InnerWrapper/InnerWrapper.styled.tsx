@@ -40,20 +40,9 @@ const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => 
     }
 `;
 
-const readOnlyStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
+const noDecoratorsStyle = () => css`
     cursor: text;
-    background-color: ${textField[variant].default.bgColor};
-    &::after,
-    &:hover::after {
-        border-width: 0.1rem;
-        border-color: ${textField[variant].default.borderColor};
-    }
-    input {
-        box-shadow: 0 0 0 100000px ${textField[variant].default.bgColor} inset;
-    }
-    ${Label} {
-        color: ${textField[variant].default.labelColor};
-    }
+
     ${CharacterCount} {
         display: none;
     }
@@ -190,8 +179,8 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
     ${({ variant }) => variant === 'filled' && filledStyle}
     ${({ variant }) => variant === 'outlined' && outlinedStyle}
     ${({ variant }) => variant === 'fusion' && fusionStyle}
-    ${({ readOnly, disabled, isErrorPresent }) =>
-        readOnly ? readOnlyStyle : disabled ? disabledStyle : isErrorPresent ? errorStyle : activeStyle}
+    ${({ disabled, isErrorPresent }) => (disabled ? disabledStyle : isErrorPresent ? errorStyle : activeStyle)}
+    ${({ showDecorators }) => !showDecorators && noDecoratorsStyle}
 `;
 InnerWrapper.defaultProps = {
     size: 'M'

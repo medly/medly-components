@@ -33,9 +33,9 @@ export const Fields: React.FC<Props> = React.memo(props => {
             <>
                 {Object.keys(fields).map(key => {
                     // @ts-ignore
-                    const { gridColumn, gridRow, borderTop, borderRight, borderBottom, borderLeft, ...componentProps } = fields[key],
+                    const { gridColumn, gridRow, ...componentProps } = fields[key],
                         disabled = props.disabled || componentProps.disabled,
-                        readOnly = props.readOnly,
+                        showDecorators = props.showDecorators,
                         variant = props.variant,
                         name = parentName ? `${parentName}.${key}` : key,
                         value = values[name];
@@ -45,7 +45,7 @@ export const Fields: React.FC<Props> = React.memo(props => {
                         ...componentProps,
                         name,
                         disabled,
-                        readOnly,
+                        showDecorators,
                         minWidth: 'auto',
                         onFocus: handlers.handleFocus(name, (componentProps as TextFieldProps).onFocus),
                         errorText: errorMessages[name],
@@ -65,7 +65,7 @@ export const Fields: React.FC<Props> = React.memo(props => {
                                 <Fields
                                     values={values}
                                     disabled={disabled}
-                                    readOnly={readOnly}
+                                    showDecorators={showDecorators}
                                     variant={variant}
                                     handlers={handlers}
                                     fields={(componentProps as NestedProps).fields}
@@ -78,7 +78,7 @@ export const Fields: React.FC<Props> = React.memo(props => {
                     }
 
                     return (
-                        <FieldWrapper {...{ gridColumn, gridRow, borderTop, borderRight, borderBottom, borderLeft }} key={key}>
+                        <FieldWrapper {...{ gridColumn, gridRow }} key={key}>
                             {(() => {
                                 switch (componentProps.type) {
                                     case 'text':

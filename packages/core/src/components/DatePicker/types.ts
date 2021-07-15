@@ -30,8 +30,8 @@ export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'valu
     displayFormat?: DisplayFormat;
     /** Disable date selection */
     disabled?: boolean;
-    /** Hide all prefix/suffix/decorator elements leaving just a label-value pair */
-    readOnly?: boolean;
+    /** Show all prefix/suffix/decorator elements. If set to false, just a label-value pair remains */
+    showDecorators?: boolean;
     /** To be used when it is required in any form */
     required?: boolean;
     /** Date picker label */
