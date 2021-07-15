@@ -1,6 +1,9 @@
 import { CheckIcon } from '@medly-components/icons';
+import { defaultTheme } from '@medly-components/theme';
+import { updateNestedValue } from '@medly-components/utils';
 import { fireEvent, render, waitFor } from '@test-utils';
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import { TextField } from './TextField';
 import { TextFieldProps } from './types';
 
@@ -246,6 +249,40 @@ describe('TextField', () => {
 
         it('should render properly with suffix', () => {
             const { container } = render(<TextField variant={variant} label="Name" suffix={CheckIcon} />);
+            expect(container).toMatchSnapshot();
+        });
+
+        it('should render properly with custom disabled cursor (themed)', () => {
+            const { container } = render(
+                <ThemeProvider
+                    theme={updateNestedValue(defaultTheme, 'textField', {
+                        ...defaultTheme.textField,
+                        filled: {
+                            ...defaultTheme.textField.filled,
+                            disabled: {
+                                ...defaultTheme.textField.filled.disabled,
+                                cursor: 'text'
+                            }
+                        },
+                        outlined: {
+                            ...defaultTheme.textField.outlined,
+                            disabled: {
+                                ...defaultTheme.textField.outlined.disabled,
+                                cursor: 'text'
+                            }
+                        },
+                        fusion: {
+                            ...defaultTheme.textField.fusion,
+                            disabled: {
+                                ...defaultTheme.textField.fusion.disabled,
+                                cursor: 'text'
+                            }
+                        }
+                    })}
+                >
+                    <TextField variant={variant} label="Name" suffix={CheckIcon} />
+                </ThemeProvider>
+            );
             expect(container).toMatchSnapshot();
         });
 
