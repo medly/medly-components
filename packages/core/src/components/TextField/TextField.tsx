@@ -102,14 +102,13 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                     onClick={handleWrapperClick}
                     variant={props.variant}
                     disabled={disabled}
-                    showDecorators={showDecorators}
                     isErrorPresent={isErrorPresent}
                     isLabelPresent={isLabelPresent}
                     isTextPresent={isTextPresent}
                     minRows={minRows}
                     multiline={multiline}
                 >
-                    {isPrefixPresent && (
+                    {isPrefixPresent && showDecorators && (
                         <Styled.Prefix size={size}>
                             <Prefix size={size} />
                         </Styled.Prefix>
@@ -147,7 +146,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                         >
                             {label}
                         </Styled.Label>
-                        {withCharacterCount && props.maxLength >= 0 && props.maxLength !== null && (
+                        {withCharacterCount && showDecorators && props.maxLength >= 0 && props.maxLength !== null && (
                             <Styled.CharacterCount
                                 variant={props.variant}
                                 size={size}
@@ -157,13 +156,13 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                             >{`${characterCountValue}/${props.maxLength}`}</Styled.CharacterCount>
                         )}
                     </Styled.InputWrapper>
-                    {isSuffixPresent && (
+                    {isSuffixPresent && showDecorators && (
                         <Styled.Suffix size={size}>
                             <Suffix size={size} />
                         </Styled.Suffix>
                     )}
                 </Styled.InnerWrapper>
-                {(isErrorPresent || helperText) && (
+                {(isErrorPresent || helperText) && showDecorators && (
                     <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation} size={size} variant={props.variant}>
                         {(errorText || builtInErrorMessage || helperText).trim()}
                     </Styled.HelperText>

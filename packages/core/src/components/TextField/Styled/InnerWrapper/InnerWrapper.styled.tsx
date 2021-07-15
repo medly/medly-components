@@ -40,23 +40,6 @@ const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => 
     }
 `;
 
-const noDecoratorsStyle = () => css`
-    cursor: text;
-
-    ${CharacterCount} {
-        display: none;
-    }
-    ${Prefix}, ${Suffix} {
-        display: none;
-    }
-    & ~ ${HelperText} {
-        display: none;
-    }
-    * {
-        cursor: text;
-    }
-`;
-
 const activeStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
     &:focus-within,
     &:focus-within:hover {
@@ -180,7 +163,6 @@ export const InnerWrapper = styled('div').attrs(({ theme: { textField } }) => ({
     ${({ variant }) => variant === 'outlined' && outlinedStyle}
     ${({ variant }) => variant === 'fusion' && fusionStyle}
     ${({ disabled, isErrorPresent }) => (disabled ? disabledStyle : isErrorPresent ? errorStyle : activeStyle)}
-    ${({ showDecorators }) => !showDecorators && noDecoratorsStyle}
 `;
 InnerWrapper.defaultProps = {
     size: 'M'

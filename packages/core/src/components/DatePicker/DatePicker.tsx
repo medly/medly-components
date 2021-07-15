@@ -138,7 +138,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                     key={inputKey}
                     ref={inputRef}
                     required={required}
-                    {...(showCalendarIcon && showDecorators && { suffix: suffixEl })}
+                    {...(showCalendarIcon && { suffix: suffixEl })}
                     fullWidth
                     mask={displayFormat.replace(new RegExp('\\/|\\-', 'g'), ' $& ').toUpperCase()}
                     pattern={datePickerPattern[displayFormat]}

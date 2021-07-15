@@ -35,8 +35,8 @@ export interface Props extends FormProps {
     onChange?: (values: { [key: string]: any }) => void;
     /** optional css grid gap setting */
     gridGap?: string;
-    /** Show all prefix/suffix/decorator elements. If set to false, just label-value pairs remain.
-     * This field is applicable to TextFields, SingleSelect, MultiSelect, and DatePicker
+    /** Show prefix, suffix, helper text, and character count elements. If set to false, only the input and label will be rendered.
+     * This field is applicable to TextFields, SingleSelect, and DatePicker
      */
     showDecorators?: boolean;
     /** Input Variants */
