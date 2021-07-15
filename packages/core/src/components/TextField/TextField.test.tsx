@@ -248,5 +248,26 @@ describe('TextField', () => {
             const { container } = render(<TextField variant={variant} label="Name" suffix={CheckIcon} />);
             expect(container).toMatchSnapshot();
         });
+
+        it('should render without suffix/prefix/character-count/helper-text if we pass showDecorators as false', () => {
+            const prefix = () => <span>prefix</span>;
+            const suffix = () => <span>suffix</span>;
+            const { queryByText } = render(
+                <TextField
+                    variant={variant}
+                    label="Name"
+                    value={'four'}
+                    withCharacterCount={true}
+                    helperText={'helperText'}
+                    prefix={prefix}
+                    suffix={suffix}
+                    showDecorators={false}
+                />
+            );
+            expect(queryByText('prefix')).toBeNull();
+            expect(queryByText('suffix')).toBeNull();
+            expect(queryByText('helperText')).toBeNull();
+            expect(queryByText('4')).toBeNull();
+        });
     });
 });
