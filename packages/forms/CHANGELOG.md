@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.23.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.23.2...@medly-components/forms@1.23.3) (2021-07-15)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.23.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.23.1...@medly-components/forms@1.23.2) (2021-07-09)
+
+
+### Bug Fixes
+
+* **core:** removes unwanted code from storybook ([0bf9cc9](https://github.com/medly/medly-components/commit/0bf9cc9bf76d2041b2e1f3bb7cd2007cbc2d513e))
+
+
+
+
+
+## [1.23.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.23.0...@medly-components/forms@1.23.1) (2021-07-09)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 # [1.23.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.22.12...@medly-components/forms@1.23.0) (2021-07-08)
 
 

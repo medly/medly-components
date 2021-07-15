@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.1.0...@medly-components/theme@2.2.0) (2021-07-15)
+
+
+### Features
+
+* **core:** add prop to switch between row highlighter outlined & shadow ([75c4f0a](https://github.com/medly/medly-components/commit/75c4f0a5f2d3f0c00958f5741decf99f3af22e07))
+
+
+
+
+
 # [2.1.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.0.0...@medly-components/theme@2.1.0) (2021-07-08)
 
 

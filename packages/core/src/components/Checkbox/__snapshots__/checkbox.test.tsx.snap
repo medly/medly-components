@@ -144,12 +144,12 @@ exports[`Checkbox component should render correctly with bottom labelPosition 1`
   cursor: pointer;
 }
 
-.c0:hover .c5 {
+.c0.c0.c0:hover .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
   border-color: #126AFA;
 }
 
-.c0:active .c5 {
+.c0.c0.c0:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
   border-color: #0F5AD5;
 }
@@ -346,12 +346,12 @@ exports[`Checkbox component should render correctly with checked false and activ
   cursor: pointer;
 }
 
-.c2:hover .c5 {
+.c2.c2.c2:hover .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
   border-color: #cc0000;
 }
 
-.c2:active .c5 {
+.c2.c2.c2:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.5);
   border-color: #0F5AD5;
 }
@@ -739,12 +739,12 @@ exports[`Checkbox component should render correctly with checked false and hasEr
   cursor: pointer;
 }
 
-.c2:hover .c5 {
+.c2.c2.c2:hover .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
   border-color: #cc0000;
 }
 
-.c2:active .c5 {
+.c2.c2.c2:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.5);
   border-color: #0F5AD5;
 }
@@ -945,13 +945,13 @@ exports[`Checkbox component should render correctly with checked false and indet
   cursor: pointer;
 }
 
-.c2:hover .c5 {
+.c2.c2.c2:hover .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
   border-color: #AD0000;
   background-color: #AD0000;
 }
 
-.c2:active .c5 {
+.c2.c2.c2:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.5);
   border-color: #8F0000;
   background-color: #8F0000;
@@ -1148,13 +1148,13 @@ exports[`Checkbox component should render correctly with checked true and active
   cursor: pointer;
 }
 
-.c2:hover .c5 {
+.c2.c2.c2:hover .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
   border-color: #AD0000;
   background-color: #AD0000;
 }
 
-.c2:active .c5 {
+.c2.c2.c2:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.5);
   border-color: #8F0000;
   background-color: #8F0000;
@@ -1545,13 +1545,13 @@ exports[`Checkbox component should render correctly with checked true and hasErr
   cursor: pointer;
 }
 
-.c2:hover .c5 {
+.c2.c2.c2:hover .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
   border-color: #AD0000;
   background-color: #AD0000;
 }
 
-.c2:active .c5 {
+.c2.c2.c2:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.5);
   border-color: #8F0000;
   background-color: #8F0000;
@@ -1754,13 +1754,13 @@ exports[`Checkbox component should render correctly with checked true and indete
   cursor: pointer;
 }
 
-.c2:hover .c5 {
+.c2.c2.c2:hover .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.35);
   border-color: #AD0000;
   background-color: #AD0000;
 }
 
-.c2:active .c5 {
+.c2.c2.c2:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(204,0,0,0.5);
   border-color: #8F0000;
   background-color: #8F0000;
@@ -1960,12 +1960,12 @@ exports[`Checkbox component should render correctly with left labelPosition 1`] 
   cursor: pointer;
 }
 
-.c0:hover .c5 {
+.c0.c0.c0:hover .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
   border-color: #126AFA;
 }
 
-.c0:active .c5 {
+.c0.c0.c0:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
   border-color: #0F5AD5;
 }
@@ -2164,12 +2164,12 @@ exports[`Checkbox component should render correctly with right labelPosition 1`]
   cursor: pointer;
 }
 
-.c0:hover .c5 {
+.c0.c0.c0:hover .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
   border-color: #126AFA;
 }
 
-.c0:active .c5 {
+.c0.c0.c0:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
   border-color: #0F5AD5;
 }
@@ -2364,12 +2364,12 @@ exports[`Checkbox component should render correctly with top labelPosition 1`] =
   cursor: pointer;
 }
 
-.c0:hover .c5 {
+.c0.c0.c0:hover .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.35);
   border-color: #126AFA;
 }
 
-.c0:active .c5 {
+.c0.c0.c0:active .c5 {
   box-shadow: 0 0 0.8rem 0 rgba(18,106,250,0.5);
   border-color: #0F5AD5;
 }

@@ -1,7 +1,7 @@
 import { css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import { GridTemplateProps } from '../../types';
-import { tableCellPaddings } from '../Cell/Styled';
+import { defaultTableCellPaddings } from '../Cell/Styled';
 import { StyledProps } from './types';
 
 const cardStyle = css<StyledProps>`
@@ -53,10 +53,36 @@ const cardStyle = css<StyledProps>`
     }
 `;
 
+const getHoverStateStyle = (style: 'shadow' | 'outlined') =>
+    style === 'outlined'
+        ? css<StyledProps>`
+              border-radius: 0.2rem;
+              border: 0.2rem solid ${({ theme }) => theme.table.row.hoveredStyle.color};
+              padding-bottom: 0;
+          `
+        : css<StyledProps>`
+              box-shadow: ${({ disabled, onClick, theme }) =>
+                  !disabled && onClick && `0 0.2rem 0.4rem ${rgba(theme.table.shadowColor, 0.2)} `};
+          `;
+
+const getBorderStyle = (rowHoveredStyle: 'shadow' | 'outlined') =>
+    rowHoveredStyle === 'outlined'
+        ? css`
+              border: 2px solid transparent;
+          `
+        : ``;
+
+const getPadding = (rowHoveredStyle: 'shadow' | 'outlined') =>
+    rowHoveredStyle === 'outlined'
+        ? css`
+              padding-bottom: 0.1rem;
+          `
+        : '';
+
 const normalStyle = css<StyledProps>`
-    &:hover {
+    &&:hover {
         z-index: 2;
-        box-shadow: ${({ disabled, onClick, theme }) => !disabled && onClick && `0 0.2rem 0.4rem ${rgba(theme.table.shadowColor, 0.2)} `};
+        ${({ theme }) => getHoverStateStyle(theme.table.row.hoveredStyle.style)};
     }
 
     &:nth-child(odd) {
@@ -79,8 +105,11 @@ const normalStyle = css<StyledProps>`
         }
     }
 
+    ${({ theme }) => getBorderStyle(theme.table.row.hoveredStyle.style)};
+
     &:not(:last-child) {
-        border-bottom: 1px solid ${({ theme }) => theme.table.borderColor};
+        border-bottom: 0.1rem solid ${({ theme }) => theme.table.row.separatorColor};
+        ${({ theme }) => getPadding(theme.table.row.hoveredStyle.style)}
     }
 `;
 
@@ -97,9 +126,9 @@ export const Row = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProp
     ${({ showRowWithCardStyle }) => (showRowWithCardStyle ? cardStyle : normalStyle)}
 `;
 
-export const NoResultCell = styled('td')<{ width: number; tableSize: keyof typeof tableCellPaddings }>`
+export const NoResultCell = styled('td')<{ width: number; tableSize: keyof typeof defaultTableCellPaddings }>`
     text-align: center;
-    padding: ${({ tableSize }) => tableCellPaddings[tableSize]};
+    padding: ${({ tableSize }) => defaultTableCellPaddings[tableSize]};
     width: ${({ width }) => `${width}px`};
 `;
 
