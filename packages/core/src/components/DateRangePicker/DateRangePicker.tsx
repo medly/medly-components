@@ -96,5 +96,6 @@ DateRangePicker.defaultProps = {
     popoverPlacement: 'bottom-start',
     withSingleMonth: false,
     minSelectableDate: new Date(1901, 0, 1),
-    maxSelectableDate: new Date(2100, 11, 1)
+    maxSelectableDate: new Date(2100, 11, 1),
+    showDecorators: true
 };

@@ -192,5 +192,6 @@ MultiSelect.defaultProps = {
     minWidth: '20rem',
     variant: 'filled',
     isSearchable: true,
-    placeholder: 'Please Select . . .'
+    placeholder: 'Please Select . . .',
+    showDecorators: true
 };

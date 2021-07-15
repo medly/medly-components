@@ -223,6 +223,7 @@ Fields.displayName = 'Fields';
 Fields.defaultProps = {
     parentName: '',
     disabled: false,
+    showDecorators: true,
     fields: {},
     errorMessages: {}
 };
