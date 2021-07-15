@@ -14,6 +14,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                 size,
                 label,
                 disabled,
+                showDecorators,
                 values,
                 onChange,
                 options: defaultOptions,
@@ -153,6 +154,7 @@ export const MultiSelect: FC<MultiSelectProps> & WithStyle = React.memo(
                     autoComplete="off"
                     variant={variant}
                     disabled={disabled}
+                    showDecorators={showDecorators}
                     value={inputValue}
                     ref={inputRef}
                     placeholder={placeholder}

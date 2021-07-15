@@ -18,6 +18,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
         helperText,
         variant,
         disabled,
+        showDecorators,
         size,
         onBlur,
         minSelectableDate,
@@ -49,6 +50,7 @@ export const DateRangePicker: FC<DateRangeProps> = React.memo(props => {
                 errorText={errorText}
                 helperText={helperText}
                 disabled={disabled}
+                showDecorators={showDecorators}
                 isActive={isActive}
                 validator={validator}
                 startDateLabel={startDateLabel}
