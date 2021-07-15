@@ -95,6 +95,10 @@ export interface TableTheme {
                 };
             };
         };
+        separatorColor?: string;
+        fontFamily?: string;
+        fontWeight?: string;
+        letterSpacing?: string;
     };
     actionBar?: {
         bgColor: string;
