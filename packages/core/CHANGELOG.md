@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.2.2...@medly-components/core@2.3.0) (2021-07-15)
+
+
+### Bug Fixes
+
+* **core:** fix code smell ([4f4df0c](https://github.com/medly/medly-components/commit/4f4df0c6d66ac931604da29e7681196cb253c39b))
+* **core:** fix code smell ([1d08eda](https://github.com/medly/medly-components/commit/1d08eda2a22bd9b9c603dbacbe0af51ad704ce66))
+* **core:** fix review comments ([1a2cc0a](https://github.com/medly/medly-components/commit/1a2cc0adb1eeb55528e080d0cffed1b7c1def56a))
+
+
+### Features
+
+* **core:** add prop to switch between row highlighter outlined & shadow ([75c4f0a](https://github.com/medly/medly-components/commit/75c4f0a5f2d3f0c00958f5741decf99f3af22e07))
+
+
+
+
+
 ## [2.2.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.2.1...@medly-components/core@2.2.2) (2021-07-09)
 
 
