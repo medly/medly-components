@@ -29,6 +29,7 @@ export interface TextFieldTheme {
             labelColor: string;
             textColor: string;
             borderColor: string;
+            cursor: string;
         };
         active: {
             bgColor: string;
@@ -66,6 +67,7 @@ export interface TextFieldTheme {
             labelColor: string;
             textColor: string;
             borderColor: string;
+            cursor: string;
         };
         active: {
             placeholderColor: string;
@@ -101,6 +103,7 @@ export interface TextFieldTheme {
             labelColor: string;
             textColor: string;
             borderColor: string;
+            cursor: string;
         };
         active: {
             placeholderColor: string;

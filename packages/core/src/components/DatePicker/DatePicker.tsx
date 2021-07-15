@@ -19,6 +19,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                 minWidth,
                 required,
                 disabled,
+                showDecorators,
                 errorText,
                 className,
                 validator,
@@ -143,6 +144,7 @@ export const DatePicker: React.FC<DatePickerProps> & WithStyle = React.memo(
                     pattern={datePickerPattern[displayFormat]}
                     size={size}
                     disabled={disabled}
+                    showDecorators={showDecorators}
                     value={textValue}
                     onChange={onTextChange}
                     {...{ ...restProps, onBlur, onFocus, minWidth, onInvalid }}
@@ -174,7 +176,8 @@ DatePicker.defaultProps = {
     minSelectableDate: new Date(1901, 0, 1),
     maxSelectableDate: new Date(2100, 11, 1),
     popoverPlacement: 'bottom-start',
-    showCalendarIcon: true
+    showCalendarIcon: true,
+    showDecorators: true
 };
 DatePicker.displayName = 'DatePicker';
 DatePicker.Style = Wrapper;

@@ -15,6 +15,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
             size,
             variant,
             disabled,
+            showDecorators,
             isActive,
             startDateRef,
             endDateRef,
@@ -80,9 +81,11 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                 isActive={isActive}
                 onBlur={validateOnWrapperBlur}
             >
-                <TextFieldStyled.Prefix size={size}>
-                    <Prefix />
-                </TextFieldStyled.Prefix>
+                {showDecorators && (
+                    <TextFieldStyled.Prefix size={size}>
+                        <Prefix />
+                    </TextFieldStyled.Prefix>
+                )}
                 <DateRangeTextField
                     ref={startDateRef}
                     id={`${id}-startDate-input`}
@@ -104,9 +107,11 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                     {...commonTextProps}
                 />
             </Wrapper>
-            <TextFieldStyled.HelperText id={`${id}-helper-text`} variant={variant} onClick={stopPropagation} size={size}>
-                {errorText || builtInErrorMessage || helperText}
-            </TextFieldStyled.HelperText>
+            {showDecorators && (
+                <TextFieldStyled.HelperText id={`${id}-helper-text`} variant={variant} onClick={stopPropagation} size={size}>
+                    {errorText || builtInErrorMessage || helperText}
+                </TextFieldStyled.HelperText>
+            )}
         </>
     );
 });

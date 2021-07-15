@@ -23,6 +23,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                 suffix: Suffix,
                 required,
                 disabled,
+                showDecorators,
                 mask,
                 placeholder,
                 multiline,
@@ -107,7 +108,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                     minRows={minRows}
                     multiline={multiline}
                 >
-                    {isPrefixPresent && (
+                    {isPrefixPresent && showDecorators && (
                         <Styled.Prefix size={size}>
                             <Prefix size={size} />
                         </Styled.Prefix>
@@ -145,7 +146,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                         >
                             {label}
                         </Styled.Label>
-                        {withCharacterCount && props.maxLength >= 0 && props.maxLength !== null && (
+                        {withCharacterCount && showDecorators && props.maxLength >= 0 && props.maxLength !== null && (
                             <Styled.CharacterCount
                                 variant={props.variant}
                                 size={size}
@@ -155,13 +156,13 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                             >{`${characterCountValue}/${props.maxLength}`}</Styled.CharacterCount>
                         )}
                     </Styled.InputWrapper>
-                    {isSuffixPresent && (
+                    {isSuffixPresent && showDecorators && (
                         <Styled.Suffix size={size}>
                             <Suffix size={size} />
                         </Styled.Suffix>
                     )}
                 </Styled.InnerWrapper>
-                {(isErrorPresent || helperText) && (
+                {(isErrorPresent || helperText) && showDecorators && (
                     <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation} size={size} variant={props.variant}>
                         {(errorText || builtInErrorMessage || helperText).trim()}
                     </Styled.HelperText>
@@ -184,5 +185,6 @@ TextField.defaultProps = {
     helperText: '',
     errorText: '',
     minRows: 1,
-    withCharacterCount: false
+    withCharacterCount: false,
+    showDecorators: true
 };

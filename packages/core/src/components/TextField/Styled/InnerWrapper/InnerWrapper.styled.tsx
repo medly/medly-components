@@ -10,7 +10,7 @@ import { fusionErrorStyle, fusionStyle } from './fusion.styled';
 import { outlinedStyle } from './outlined.styled';
 
 const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => css`
-    cursor: not-allowed;
+    cursor: ${textField[variant].disabled.cursor};
     background-color: ${textField[variant].disabled.bgColor};
     &::after,
     &:hover::after {
@@ -36,7 +36,7 @@ const disabledStyle = ({ theme: { textField }, variant }: InnerWrapperProps) => 
         color: ${textField[variant].disabled.labelColor};
     }
     * {
-        cursor: not-allowed;
+        cursor: ${textField[variant].disabled.cursor};
     }
 `;
 

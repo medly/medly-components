@@ -35,6 +35,8 @@ export const Fields: React.FC<Props> = React.memo(props => {
                     // @ts-ignore
                     const { gridColumn, gridRow, ...componentProps } = fields[key],
                         disabled = props.disabled || componentProps.disabled,
+                        showDecorators = props.showDecorators,
+                        variant = props.variant,
                         name = parentName ? `${parentName}.${key}` : key,
                         value = values[name];
 
@@ -43,9 +45,11 @@ export const Fields: React.FC<Props> = React.memo(props => {
                         ...componentProps,
                         name,
                         disabled,
+                        showDecorators,
                         minWidth: 'auto',
                         onFocus: handlers.handleFocus(name, (componentProps as TextFieldProps).onFocus),
                         errorText: errorMessages[name],
+                        variant: variant,
                         // These two fields will be removed very soon
                         description: errorMessages[name] || (componentProps as FileInputProps).description,
                         descriptionColor: errorMessages[name] && 'red'
@@ -61,6 +65,8 @@ export const Fields: React.FC<Props> = React.memo(props => {
                                 <Fields
                                     values={values}
                                     disabled={disabled}
+                                    showDecorators={showDecorators}
+                                    variant={variant}
                                     handlers={handlers}
                                     fields={(componentProps as NestedProps).fields}
                                     errorMessages={errorMessages}
@@ -217,6 +223,7 @@ Fields.displayName = 'Fields';
 Fields.defaultProps = {
     parentName: '',
     disabled: false,
+    showDecorators: true,
     fields: {},
     errorMessages: {}
 };

@@ -1,6 +1,9 @@
 import { CheckIcon } from '@medly-components/icons';
+import { defaultTheme } from '@medly-components/theme';
+import { updateNestedValue } from '@medly-components/utils';
 import { fireEvent, render, waitFor } from '@test-utils';
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 import { TextField } from './TextField';
 import { TextFieldProps } from './types';
 
@@ -247,6 +250,61 @@ describe('TextField', () => {
         it('should render properly with suffix', () => {
             const { container } = render(<TextField variant={variant} label="Name" suffix={CheckIcon} />);
             expect(container).toMatchSnapshot();
+        });
+
+        it('should render properly with custom disabled cursor (themed)', () => {
+            const { container } = render(
+                <ThemeProvider
+                    theme={updateNestedValue(defaultTheme, 'textField', {
+                        ...defaultTheme.textField,
+                        filled: {
+                            ...defaultTheme.textField.filled,
+                            disabled: {
+                                ...defaultTheme.textField.filled.disabled,
+                                cursor: 'text'
+                            }
+                        },
+                        outlined: {
+                            ...defaultTheme.textField.outlined,
+                            disabled: {
+                                ...defaultTheme.textField.outlined.disabled,
+                                cursor: 'text'
+                            }
+                        },
+                        fusion: {
+                            ...defaultTheme.textField.fusion,
+                            disabled: {
+                                ...defaultTheme.textField.fusion.disabled,
+                                cursor: 'text'
+                            }
+                        }
+                    })}
+                >
+                    <TextField variant={variant} label="Name" suffix={CheckIcon} disabled />
+                </ThemeProvider>
+            );
+            expect(container).toMatchSnapshot();
+        });
+
+        it('should render without suffix/prefix/character-count/helper-text if we pass showDecorators as false', () => {
+            const prefix = () => <span>prefix</span>;
+            const suffix = () => <span>suffix</span>;
+            const { queryByText } = render(
+                <TextField
+                    variant={variant}
+                    label="Name"
+                    value={'four'}
+                    withCharacterCount={true}
+                    helperText={'helperText'}
+                    prefix={prefix}
+                    suffix={suffix}
+                    showDecorators={false}
+                />
+            );
+            expect(queryByText('prefix')).toBeNull();
+            expect(queryByText('suffix')).toBeNull();
+            expect(queryByText('helperText')).toBeNull();
+            expect(queryByText('4')).toBeNull();
         });
     });
 });
