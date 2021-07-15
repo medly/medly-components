@@ -28,7 +28,7 @@ exports[`Row should render NoResult properly 1`] = `
   align-items: center;
 }
 
-.c0:hover {
+.c0.c0:hover {
   z-index: 2;
 }
 
@@ -45,7 +45,7 @@ exports[`Row should render NoResult properly 1`] = `
 }
 
 .c0:not(:last-child) {
-  border-bottom: 1px solid #C7D0D8;
+  border-bottom: 0.1rem solid #C7D0D8;
 }
 
 <div>
@@ -157,7 +157,7 @@ exports[`Row should render row properly 1`] = `
   cursor: inherit;
 }
 
-.c0:hover {
+.c0.c0:hover {
   z-index: 2;
 }
 
@@ -174,7 +174,7 @@ exports[`Row should render row properly 1`] = `
 }
 
 .c0:not(:last-child) {
-  border-bottom: 1px solid #C7D0D8;
+  border-bottom: 0.1rem solid #C7D0D8;
 }
 
 <div>

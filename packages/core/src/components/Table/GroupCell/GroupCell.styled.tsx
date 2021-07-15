@@ -16,6 +16,7 @@ export const GroupCell = styled('div').attrs(({ gridTemplateColumns }: Props) =>
     &::after {
         ${getBorder('right')}
     }
+    padding: 0;
 `;
 
 export const GroupCellTitle = styled(Text.Style)`

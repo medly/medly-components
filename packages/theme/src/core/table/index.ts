@@ -6,6 +6,7 @@ const table: TableTheme = {
     scrollBarColor: colors.grey[400],
     shadowColor: colors.grey[600],
     row: {
+        separatorColor: colors.grey[300],
         bgColor: {
             odd: colors.grey[50],
             even: colors.white,
@@ -13,6 +14,10 @@ const table: TableTheme = {
             disabled: colors.grey[100]
         },
         selectedBorderColor: colors.blue[500],
+        hoveredStyle: {
+            style: 'shadow',
+            color: colors.grey[600]
+        },
         textColor: {
             odd: colors.black,
             even: colors.black,
