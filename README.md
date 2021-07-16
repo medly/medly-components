@@ -10,7 +10,7 @@
 
 ![Medly Components](http://medlycomponents.com/medly-components.png)
 
-Themable react components with various configuration to match your need.
+Themable React components with various configurations to match your needs.
 
 ## Documentation
 
@@ -59,7 +59,7 @@ ReactDOM.render(
 );
 ```
 
-Replace content in `App.tsx` with the following:
+Replace the content in `App.tsx` with the following:
 
 ```tsx
 import React from 'react';
@@ -78,31 +78,31 @@ Library consists of five packages:
 
 ### [Core](https://github.com/medly/medly-components/tree/master/packages/core)
 
-Core package consists of components almost all basic react components like Avatar, Button, Input, List, Modal etc.
+Core package consists of components almost all basic React components like Avatar, Button, Input, List, Modal etc.
 
 ### [Icons](https://github.com/medly/medly-components/tree/master/packages/icons)
 
-Icons package consists of most commonly used svg icons exposed as react components.
+Icons package consists of the most commonly used SVG icons exposed as React components.
 
 ### [Loaders](https://github.com/medly/medly-components/tree/master/packages/loaders)
 
-Few simple svg loaders exposed as react components.
+A few simple svg loaders exposed as React components.
 
 ### [Layout](https://github.com/medly/medly-components/tree/master/packages/layout)
 
-Layout package consists of components that help in creating a page layout using side panels and nav items, which are exposed as react components.
+Layout package consists of components that help in creating a page layout using side panels and nav items, which are exposed as React components.
 
 ### [Forms](https://github.com/medly/medly-components/tree/master/packages/forms)
 
-Using this package you can create dynamic form using simple json
+Using this package you can create dynamic forms using simple json.
 
 ### [Theme](https://github.com/medly/medly-components/tree/master/packages/theme)
 
-Themes lets you define how a component should be styled across website. This can be done individually for particular type of components, eg all icons should be solid or can be done for the whole website, like color theme for all type of components across website should be orange.
+Themes let you define how a component should be styled across website. This can be done individually for particular types of components. E.g. all icons should be solid or can be done for the whole website, like color theme for all type of components across website should be orange.
 
 ### [Utils](https://github.com/medly/medly-components/tree/master/packages/utils)
 
-Utils package consists of most commonly used functionalities or components. Eg [String Helper](https://github.com/medly/medly-components/tree/master/packages/utils/src/stringHelpers.ts) has functions to convert a string to camelCase, case insensitive string comparison etc
+Utils package consists of the most commonly used functionalities and components. E.g. [String Helper](https://github.com/medly/medly-components/tree/master/packages/utils/src/stringHelpers.ts) has functions to convert a string to camelCase, case insensitive string comparison etc.
 
 ## Contributing
 
