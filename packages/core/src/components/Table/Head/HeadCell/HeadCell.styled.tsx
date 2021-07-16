@@ -1,6 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
 import { Theme } from '@medly-components/theme';
-import { clearMarginPadding, css, styled } from '@medly-components/utils';
+import { clearMarginPadding, css, getFontStyle, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Checkbox from '../../../Checkbox';
 import Text from '../../../Text';
@@ -53,10 +53,6 @@ const getHeadCellPadding = ({ hidden, isRowActionCell, tableSize }: HeadCellStyl
     return padding;
 };
 
-const getFontFamily = (family: string) => `font-family: ${family};`;
-const getFontWeight = (weight: string) => `font-weight: ${weight};`;
-const getLetterSpacing = (spacing: string) => `letter-spacing: ${spacing};`;
-
 export const HeadCellStyled = styled.th<HeadCellStyledProps>`
     width: 100%;
     height: 100%;
@@ -68,9 +64,7 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
     position: ${({ frozen }) => (frozen ? 'sticky' : 'relative')};
     cursor: ${({ isRowActionCell }) => isRowActionCell && 'default'};
     padding: ${getHeadCellPadding};
-    ${({theme}) => theme.table.header.fontFamily && getFontFamily(theme.table.header.fontFamily)}
-    ${({theme}) => theme.table.header.fontWeight && getFontWeight(theme.table.header.fontWeight)}
-    ${({theme}) => theme.table.header.letterSpacing && getLetterSpacing(theme.table.header.letterSpacing)}
+    ${({ theme }) => theme.table.header.fontVariant && getFontStyle({ theme, fontVariant: theme.table.header.fontVariant })}
 
     &:not(:last-child) {
         &::after {
