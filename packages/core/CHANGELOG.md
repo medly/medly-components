@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.3.0...@medly-components/core@2.4.0) (2021-07-16)
+
+
+### Bug Fixes
+
+* minor test update, update snapshots ([55384c1](https://github.com/medly/medly-components/commit/55384c1e9910e81c039c8fe24783f2bbac6651a8))
+* **core:** add test and default prop for date-range-picker ([5c618b2](https://github.com/medly/medly-components/commit/5c618b2abda9a13dd163c30591377d109a10b39d))
+
+
+### Features
+
+* **core:** pass showDecorators prop through dateRangePicker and Multiselect ([622c0be](https://github.com/medly/medly-components/commit/622c0be2933ab9353d7de8fb88b697f4e4c33a8a))
+* **core:** pass-down read-only state from form to core components to hide various form elements ([6e2bd3c](https://github.com/medly/medly-components/commit/6e2bd3c8ed4fe0f64161c76aef891f8130457127))
+* **theme:** add cursor to disabled theme for textFeidl ([b9265d6](https://github.com/medly/medly-components/commit/b9265d6b06d3c627440d93afcea159d5da2872e4))
+
+
+
+
+
 # [2.3.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.2.2...@medly-components/core@2.3.0) (2021-07-15)
 
 

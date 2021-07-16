@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.2.0...@medly-components/theme@2.3.0) (2021-07-16)
+
+
+### Features
+
+* **theme:** add cursor to disabled theme for textFeidl ([b9265d6](https://github.com/medly/medly-components/commit/b9265d6b06d3c627440d93afcea159d5da2872e4))
+
+
+
+
+
 # [2.2.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.1.0...@medly-components/theme@2.2.0) (2021-07-15)
 
 
