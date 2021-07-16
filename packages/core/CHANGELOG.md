@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.4.0...@medly-components/core@2.5.0) (2021-07-16)
+
+
+### Features
+
+* **core:** adding additional properties to TableTheme and PaginationTheme ([4fa5932](https://github.com/medly/medly-components/commit/4fa59322aff1e63467897eca180ab127b2c66c0d))
+* **core:** update font properties per PR feedback. ([6f54442](https://github.com/medly/medly-components/commit/6f544424e2ff0146f5da0b7e7d738a81bd8d08ba))
+
+
+
+
+
 # [2.4.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.3.0...@medly-components/core@2.4.0) (2021-07-16)
 
 
