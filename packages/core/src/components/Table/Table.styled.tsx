@@ -12,7 +12,7 @@ export const getBorder = (align: 'left' | 'right' | 'top' | 'bottom') => css`
     content: '';
     position: absolute;
     pointer-events: none;
-    background-color: ${({ theme }) => theme.table.borderColor};
+    background-color: ${({ theme }) => theme.table.header.separatorColor || theme.table.borderColor};
     height: ${align === 'left' || align === 'right' ? 'calc(100% - 3.2rem)' : `1px`};
     width: ${align === 'top' || align === 'bottom' ? 'calc(100% - 3.2rem)' : `1px`};
     left: ${align === 'top' || align === 'bottom' ? '50%' : align === 'left' && '0'};

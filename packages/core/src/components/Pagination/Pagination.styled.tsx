@@ -52,6 +52,7 @@ export const BaseButton = styled.button.attrs({ type: 'button' })`
 `;
 export const PageNumberButton = styled(BaseButton)<{ isActive?: boolean }>`
     ${props => getPageNumberButtonStyleByState('pageNumber', props.isActive ? 'active' : 'default')};
+    border-radius: ${({ theme: { pagination } }) => pagination.pageNumber.borderRadius};
 
     &:hover {
         ${props => !props.isActive && getPageNumberButtonStyleByState('pageNumber', 'hovered')};

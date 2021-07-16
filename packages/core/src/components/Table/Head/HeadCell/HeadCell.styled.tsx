@@ -1,6 +1,6 @@
 import { SvgIcon } from '@medly-components/icons';
 import { Theme } from '@medly-components/theme';
-import { clearMarginPadding, css, styled } from '@medly-components/utils';
+import { clearMarginPadding, css, getFontStyle, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
 import Checkbox from '../../../Checkbox';
 import Text from '../../../Text';
@@ -64,6 +64,7 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
     position: ${({ frozen }) => (frozen ? 'sticky' : 'relative')};
     cursor: ${({ isRowActionCell }) => isRowActionCell && 'default'};
     padding: ${getHeadCellPadding};
+    ${({ theme }) => theme.table.header.fontVariant && getFontStyle({ theme, fontVariant: theme.table.header.fontVariant })}
 
     &:not(:last-child) {
         &::after {
