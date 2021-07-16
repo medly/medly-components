@@ -13,6 +13,7 @@ export interface PaginationTheme {
             pressed: string;
             active: string;
         };
+        borderRadius: string;
     };
     /** Theme for page navigation arrows */
     pageNav: {

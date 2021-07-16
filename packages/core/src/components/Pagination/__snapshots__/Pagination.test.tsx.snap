@@ -260,6 +260,7 @@ exports[`Pagination component should render correctly with all the default props
   background: #ffffff;
   color: #126AFA;
   background: #E7F0FF;
+  border-radius: 50%;
 }
 
 .c5:hover {
@@ -299,6 +300,7 @@ exports[`Pagination component should render correctly with all the default props
   background: #ffffff;
   color: #435465;
   background: #ffffff;
+  border-radius: 50%;
 }
 
 .c7:hover {
@@ -588,6 +590,7 @@ exports[`Pagination component should render correctly with all the props given 1
   background: #ffffff;
   color: #126AFA;
   background: #E7F0FF;
+  border-radius: 50%;
 }
 
 .c2:hover {
@@ -627,6 +630,7 @@ exports[`Pagination component should render correctly with all the props given 1
   background: #ffffff;
   color: #435465;
   background: #ffffff;
+  border-radius: 50%;
 }
 
 .c4:hover {

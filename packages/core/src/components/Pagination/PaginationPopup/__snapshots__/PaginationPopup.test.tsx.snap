@@ -41,6 +41,7 @@ exports[`Pagination popup component should render correctly with all the default
   background: #ffffff;
   color: #435465;
   background: #ffffff;
+  border-radius: 50%;
 }
 
 .c1:hover {

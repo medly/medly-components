@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.24.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.23.3...@medly-components/forms@1.24.0) (2021-07-16)
+
+
+### Bug Fixes
+
+* minor test update, update snapshots ([55384c1](https://github.com/medly/medly-components/commit/55384c1e9910e81c039c8fe24783f2bbac6651a8))
+* **core:** add test and default prop for date-range-picker ([5c618b2](https://github.com/medly/medly-components/commit/5c618b2abda9a13dd163c30591377d109a10b39d))
+
+
+### Features
+
+* **forms:** add a read-only state to form component in order to support 'editable ContentCard' comp ([7e69e90](https://github.com/medly/medly-components/commit/7e69e90ac6fafd7e5641ae531c18987dfdb7c9cf))
+
+
+
+
+
 ## [1.23.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.23.2...@medly-components/forms@1.23.3) (2021-07-15)
 
 **Note:** Version bump only for package @medly-components/forms

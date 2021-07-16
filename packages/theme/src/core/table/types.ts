@@ -1,3 +1,5 @@
+import { FontVariants } from '../font/types';
+
 export interface TableTheme {
     borderColor: string;
     scrollBarColor: string;
@@ -95,6 +97,8 @@ export interface TableTheme {
                 };
             };
         };
+        separatorColor?: string;
+        fontVariant?: FontVariants;
     };
     actionBar?: {
         bgColor: string;

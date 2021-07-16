@@ -16,7 +16,8 @@ const pagination: PaginationTheme = {
             hovered: grey[50],
             pressed: grey[100],
             active: blue[100]
-        }
+        },
+        borderRadius: '50%',
     },
     pageNav: {
         color: {

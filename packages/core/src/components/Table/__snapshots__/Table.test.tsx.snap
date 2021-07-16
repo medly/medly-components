@@ -355,6 +355,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   background: #ffffff;
   color: #435465;
   background: #ffffff;
+  border-radius: 50%;
 }
 
 .c25:hover {
@@ -399,6 +400,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   background: #ffffff;
   color: #126AFA;
   background: #E7F0FF;
+  border-radius: 50%;
 }
 
 .c27:hover {
