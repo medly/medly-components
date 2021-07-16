@@ -3829,7 +3829,7 @@ exports[`Form should render properly without initial state 1`] = `
 .c0 {
   grid-template-rows: auto;
   grid-template-columns: repeat(12,1fr);
-  grid-gap: 1.6rem;
+  grid-gap: 1.2rem;
   min-width: 300px;
   width: 100%;
   display: grid;

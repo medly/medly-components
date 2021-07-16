@@ -43,6 +43,7 @@ describe('Form', () => {
                 onSubmit={jest.fn()}
                 minWidth="300px"
                 fullWidth
+                gridGap="1.2rem"
                 actionLabel="Upload"
             />
         );
