@@ -33,4 +33,12 @@ export interface Props extends FormProps {
     minWidth?: string;
     /** Function to be called on values updating */
     onChange?: (values: { [key: string]: any }) => void;
+    /** optional css grid gap setting */
+    gridGap?: string;
+    /** Show prefix, suffix, helper text, and character count elements. If set to false, only the input and label will be rendered.
+     * This field is applicable to TextFields, SingleSelect, and DatePicker
+     */
+    showDecorators?: boolean;
+    /** Input Variants */
+    variant?: 'outlined' | 'filled' | 'fusion';
 }

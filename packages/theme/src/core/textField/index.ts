@@ -23,7 +23,13 @@ const textField: TextFieldTheme = {
             borderColor: colors.grey[600],
             shadowColor: colors.grey[600]
         },
-        disabled: { labelColor: colors.grey[400], textColor: colors.grey[800], borderColor: colors.grey[300], bgColor: colors.white },
+        disabled: {
+            labelColor: colors.grey[400],
+            textColor: colors.grey[800],
+            borderColor: colors.grey[300],
+            bgColor: colors.white,
+            cursor: 'not-allowed'
+        },
         active: {
             bgColor: colors.white,
             placeholderColor: colors.grey[300],
@@ -54,7 +60,13 @@ const textField: TextFieldTheme = {
         hover: {
             borderColor: colors.grey[700]
         },
-        disabled: { bgColor: colors.grey[50], labelColor: colors.grey[400], textColor: colors.grey[800], borderColor: colors.grey[300] },
+        disabled: {
+            bgColor: colors.grey[50],
+            labelColor: colors.grey[400],
+            textColor: colors.grey[800],
+            borderColor: colors.grey[300],
+            cursor: 'not-allowed'
+        },
         active: {
             placeholderColor: 'rgba(0, 90, 238, .2)',
             bgColor: colors.blue[100],
@@ -83,7 +95,13 @@ const textField: TextFieldTheme = {
             bgColor: colors.grey[50],
             borderColor: colors.grey[600]
         },
-        disabled: { bgColor: colors.white, labelColor: colors.grey[400], textColor: colors.grey[700], borderColor: colors.grey[300] },
+        disabled: {
+            bgColor: colors.white,
+            labelColor: colors.grey[400],
+            textColor: colors.grey[700],
+            borderColor: colors.grey[300],
+            cursor: 'not-allowed'
+        },
         active: {
             placeholderColor: colors.grey[300],
             bgColor: colors.white,

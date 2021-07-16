@@ -7,6 +7,7 @@ export type Props = {
     errorText: string;
     helperText: string;
     disabled: boolean;
+    showDecorators?: boolean;
     isActive: boolean;
     required: boolean;
     startDateLabel: string;

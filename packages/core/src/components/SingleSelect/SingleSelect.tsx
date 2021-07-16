@@ -22,6 +22,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
                 includesNestedOptions,
                 fullWidth,
                 disabled,
+                showDecorators,
                 onFocus,
                 onBlur,
                 className,
@@ -150,6 +151,7 @@ export const SingleSelect: FC<SelectProps> & WithStyle = React.memo(
             onBlur: handleBlur,
             onKeyPress: handleKeyPress,
             disabled,
+            showDecorators,
             areOptionsVisible
         };
 
@@ -210,5 +212,6 @@ SingleSelect.defaultProps = {
     required: false,
     isSearchable: false,
     includesNestedOptions: false,
-    placeholder: 'Please Select . . .'
+    placeholder: 'Please Select . . .',
+    showDecorators: true
 };

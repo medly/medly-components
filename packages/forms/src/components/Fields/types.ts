@@ -87,4 +87,8 @@ export interface Props {
     errorMessages?: { [K: string]: any };
     // add error message
     addErrorMessage: (key: string, message: string) => void;
+    /** Show prefix, suffix, helper text, and character count elements. If set to false, only the input and label will be rendered. */
+    showDecorators?: boolean;
+    /** Input Variants */
+    variant?: 'outlined' | 'filled' | 'fusion';
 }

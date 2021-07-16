@@ -23,7 +23,8 @@ const renderComponent = (props?: any) => {
         fullWidth: false,
         disabled: false,
         minSelectableDate: new Date(2020, 1, 1),
-        maxSelectableDate: new Date(2022, 2, 15)
+        maxSelectableDate: new Date(2022, 2, 15),
+        showDecorators: true
     };
     const renderUtils = render(<DummyComponent {...defaultProps} {...props} />),
         calendarIcon = renderUtils.container.querySelector('svg'),
@@ -366,6 +367,16 @@ describe('DateRangePicker', () => {
                 fullWidth: true
             });
             expect(container.querySelector('#contract-wrapper')).toHaveStyle(`width: 100%`);
+        });
+
+        it('should not display the calendar Icon when showDecorators is false', () => {
+            const { calendarIcon } = renderComponent({
+                value: { startDate: null, endDate: null },
+                onChange: jest.fn(),
+                fullWidth: true,
+                showDecorators: false
+            });
+            expect(calendarIcon).toBeNull();
         });
     });
 });

@@ -20,6 +20,8 @@ export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefi
     suffix?: React.FC<any>;
     /** Disable Input */
     disabled?: boolean;
+    /** Show prefix, suffix, helper text, and character count elements. If set to false, only the input and label will be rendered. */
+    showDecorators?: boolean;
     /** Set it true when it is required in any form */
     required?: boolean;
     /** Input label */
@@ -52,6 +54,7 @@ export interface StyledProps extends TextFieldProps, TextFieldTheme {
 export interface InnerWrapperProps extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'height'>, TextFieldTheme, WithThemeProp {
     variant?: 'outlined' | 'filled' | 'fusion';
     disabled?: boolean;
+    showDecorators?: boolean;
     size?: 'S' | 'M';
     isLabelPresent?: boolean;
     isErrorPresent?: boolean;
