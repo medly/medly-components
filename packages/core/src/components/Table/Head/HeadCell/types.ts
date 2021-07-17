@@ -1,3 +1,4 @@
+import { FontVariants } from '@medly-components/theme';
 import { TableProps } from '../../types';
 
 export type SortOrder = 'asc' | 'desc';
@@ -28,4 +29,5 @@ export type HeadCellProps = HeadCellStyledProps & {
     as?: keyof JSX.IntrinsicElements | React.ComponentType<any>;
     hiddenDivRef?: React.MutableRefObject<any>;
     addColumnMaxSize?: (field: string, value: number) => void;
+    fontVariant?: FontVariants;
 };

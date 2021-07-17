@@ -31,7 +31,8 @@ const Head: React.FC<Props> = React.memo(props => {
             onSelectAllClick,
             maxColumnSizes,
             showShadowAtBottom,
-            showShadowAfterFrozenElement
+            showShadowAfterFrozenElement,
+            fontVariant
         } = props;
 
     const [{ sortField }, setTableState] = useContext(TableStateContext);
@@ -103,6 +104,7 @@ const Head: React.FC<Props> = React.memo(props => {
                             addColumnMaxSize={addColumnMaxSize}
                             isRowActionCell={config.field === 'row-actions'}
                             showShadowAtRight={config.field === 'row-actions' && showShadowAfterFrozenElement}
+                            fontVariant={fontVariant}
                         >
                             {config.field === 'row-actions' && isRowSelectable ? selectAllCheckBox : config.title}
                         </HeadCell>

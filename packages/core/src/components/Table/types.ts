@@ -1,3 +1,4 @@
+import { FontVariants } from '@medly-components/theme';
 import { HTMLProps, Omit } from '@medly-components/utils';
 import { Dispatch, SetStateAction } from 'react';
 import ColumnConfiguration from './ColumnConfiguration';
@@ -115,6 +116,8 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     onScrolledToBottom?: () => any;
     /** Enables a mini map to scroll horizontally across the table*/
     withMinimap?: boolean;
+    /** Defines the Font Variant for the Table Header */
+    headerFontVariant?: FontVariants;
 }
 
 export interface StaticProps {

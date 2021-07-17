@@ -33,6 +33,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                 withActionBar,
                 withPagination,
                 onScrolledToBottom,
+                headerFontVariant,
                 ...restProps
             } = props,
             isGroupedTable = !!restProps.groupBy,
@@ -119,6 +120,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                                 isSelectAllDisable: isSelectAllDisable,
                                 showShadowAtBottom: !scrollState.isScrolledToTop,
                                 showShadowAfterFrozenElement: !scrollState.isScrolledToLeft,
+                                fontVariant: headerFontVariant,
                                 isAnyRowSelected:
                                     !areAllRowsSelected && (isGroupedTable ? groupedRowSelector.selectedIds.length > 0 : isAnyRowSelected)
                             }}

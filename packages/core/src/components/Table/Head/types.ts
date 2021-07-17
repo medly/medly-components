@@ -1,5 +1,5 @@
+import { FontVariants } from '@medly-components/theme';
 import { MaxColumnSizes, TableColumnConfig } from '../types';
-
 export interface Props {
     setColumns: React.Dispatch<React.SetStateAction<TableColumnConfig[]>>;
     areAllRowsSelected?: boolean;
@@ -9,4 +9,5 @@ export interface Props {
     maxColumnSizes: MaxColumnSizes;
     showShadowAtBottom: boolean;
     showShadowAfterFrozenElement?: boolean;
+    fontVariant?: FontVariants;
 }
