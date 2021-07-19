@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.5.0...@medly-components/core@2.5.1) (2021-07-19)
+
+
+### Bug Fixes
+
+* fontVariant issue in table head cell component ([8e3cd5d](https://github.com/medly/medly-components/commit/8e3cd5d5922c8f3dbe7a4ef06a9467bcdb456e13))
+
+
+
+
+
 # [2.5.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.4.0...@medly-components/core@2.5.0) (2021-07-16)
 
 
