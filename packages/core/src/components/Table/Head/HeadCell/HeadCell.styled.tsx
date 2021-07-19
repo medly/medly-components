@@ -64,7 +64,10 @@ export const HeadCellStyled = styled.th<HeadCellStyledProps>`
     position: ${({ frozen }) => (frozen ? 'sticky' : 'relative')};
     cursor: ${({ isRowActionCell }) => isRowActionCell && 'default'};
     padding: ${getHeadCellPadding};
-    ${({ theme }) => theme.table.header.fontVariant && getFontStyle({ theme, fontVariant: theme.table.header.fontVariant })}
+
+    ${Text.Style} {
+        ${({ theme }) => getFontStyle({ theme, fontVariant: theme.table.header.fontVariant })}
+    }
 
     &:not(:last-child) {
         &::after {

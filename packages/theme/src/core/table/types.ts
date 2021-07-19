@@ -98,7 +98,7 @@ export interface TableTheme {
             };
         };
         separatorColor?: string;
-        fontVariant?: FontVariants;
+        fontVariant: FontVariants;
     };
     actionBar?: {
         bgColor: string;
