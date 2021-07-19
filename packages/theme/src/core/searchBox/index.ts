@@ -17,11 +17,11 @@ const SearchBox: SearchBoxTheme = {
     textColor: colors.black,
     borderRadius: {
         S: {
-            default: '4rem',
+            default: '.8rem',
             active: '2rem'
         },
         M: {
-            default: '4.8rem',
+            default: '.8rem',
             active: '2.4rem'
         }
     },

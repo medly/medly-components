@@ -8,6 +8,7 @@ import { Props } from './types';
 
 const getBorderRadius = ({ theme, areOptionsVisible, size }: Props & { areOptionsVisible?: boolean }) => {
     const border = theme.searchBox.borderRadius[size][areOptionsVisible ? 'active' : 'default'];
+    console.log({ theme, areOptionsVisible, size, border });
     return css`
         border-radius: ${areOptionsVisible ? `${border} ${border} 0 0` : border};
     `;
