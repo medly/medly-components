@@ -79,7 +79,8 @@ const table: TableTheme = {
                     pressed: colors.blue[700]
                 }
             }
-        }
+        },
+        fontVariant: 'h5'
     },
     actionBar: {
         bgColor: colors.blue[500],

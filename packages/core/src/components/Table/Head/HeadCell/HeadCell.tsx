@@ -107,9 +107,7 @@ const HeadCell: React.FC<HeadCellProps> & WithStyle = React.memo(props => {
                                 isSelected={sortField === field && !isLoading}
                                 withHoverEffect={sortable && !isLoading}
                             >
-                                <Text textVariant="h5" uppercase>
-                                    {c}
-                                </Text>
+                                <Text uppercase>{c}</Text>
                                 {sortable && sortIcon}
                             </HeadCellButton>
                         ) : (

@@ -4,13 +4,13 @@ exports[`Table component pagination should call onPageChange prop on click on an
 .c7 {
   margin: 0;
   color: inherit;
-  font-size: 1.2rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   text-align: initial;
   text-transform: uppercase;
 }
@@ -566,6 +566,17 @@ exports[`Table component pagination should call onPageChange prop on click on an
   padding: 0.8rem;
 }
 
+.c4 .c6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
 .c4:not(:last-child)::after {
   content: '';
   position: absolute;
@@ -754,11 +765,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
           <button
             class="c5"
           >
-            <h5
+            <span
               class="c6 c7"
             >
               Name
-            </h5>
+            </span>
             <svg
               class="c8 c9"
               fill="none"
@@ -792,11 +803,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
             <button
               class="c13"
             >
-              <h5
+              <span
                 class="c6 c7"
               >
                 Maths
-              </h5>
+              </span>
               <svg
                 class="c8 c9"
                 fill="none"
@@ -821,11 +832,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
             <button
               class="c13"
             >
-              <h5
+              <span
                 class="c6 c7"
               >
                 Science
-              </h5>
+              </span>
               <svg
                 class="c8 c9"
                 fill="none"
@@ -851,11 +862,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
           <button
             class="c13"
           >
-            <h5
+            <span
               class="c6 c7"
             >
               Age
-            </h5>
+            </span>
             <svg
               class="c8 c9"
               fill="none"
@@ -880,11 +891,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
           <button
             class="c5"
           >
-            <h5
+            <span
               class="c6 c7"
             >
               Passed
-            </h5>
+            </span>
             <svg
               class="c8 c9"
               fill="none"
@@ -909,11 +920,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
           <button
             class="c13"
           >
-            <h5
+            <span
               class="c6 c7"
             >
               Rating
-            </h5>
+            </span>
             <svg
               class="c8 c9"
               fill="none"
@@ -1584,13 +1595,13 @@ exports[`Table component should render properly 1`] = `
 .c7 {
   margin: 0;
   color: inherit;
-  font-size: 1.2rem;
-  font-weight: 700;
-  -webkit-letter-spacing: 0.12rem;
-  -moz-letter-spacing: 0.12rem;
-  -ms-letter-spacing: 0.12rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.0rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
   text-align: initial;
   text-transform: uppercase;
 }
@@ -1857,6 +1868,17 @@ exports[`Table component should render properly 1`] = `
   padding: 0.8rem;
 }
 
+.c4 .c6 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  -webkit-letter-spacing: 0.12rem;
+  -moz-letter-spacing: 0.12rem;
+  -ms-letter-spacing: 0.12rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.0rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
 .c4:not(:last-child)::after {
   content: '';
   position: absolute;
@@ -2045,11 +2067,11 @@ exports[`Table component should render properly 1`] = `
           <button
             class="c5"
           >
-            <h5
+            <span
               class="c6 c7"
             >
               Name
-            </h5>
+            </span>
             <svg
               class="c8 c9"
               fill="none"
@@ -2083,11 +2105,11 @@ exports[`Table component should render properly 1`] = `
             <button
               class="c13"
             >
-              <h5
+              <span
                 class="c6 c7"
               >
                 Maths
-              </h5>
+              </span>
               <svg
                 class="c8 c9"
                 fill="none"
@@ -2112,11 +2134,11 @@ exports[`Table component should render properly 1`] = `
             <button
               class="c13"
             >
-              <h5
+              <span
                 class="c6 c7"
               >
                 Science
-              </h5>
+              </span>
               <svg
                 class="c8 c9"
                 fill="none"
@@ -2142,11 +2164,11 @@ exports[`Table component should render properly 1`] = `
           <button
             class="c13"
           >
-            <h5
+            <span
               class="c6 c7"
             >
               Age
-            </h5>
+            </span>
             <svg
               class="c8 c9"
               fill="none"
@@ -2171,11 +2193,11 @@ exports[`Table component should render properly 1`] = `
           <button
             class="c5"
           >
-            <h5
+            <span
               class="c6 c7"
             >
               Passed
-            </h5>
+            </span>
             <svg
               class="c8 c9"
               fill="none"
@@ -2200,11 +2222,11 @@ exports[`Table component should render properly 1`] = `
           <button
             class="c13"
           >
-            <h5
+            <span
               class="c6 c7"
             >
               Rating
-            </h5>
+            </span>
             <svg
               class="c8 c9"
               fill="none"
