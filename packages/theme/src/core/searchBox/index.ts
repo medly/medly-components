@@ -11,8 +11,8 @@ const SearchBox: SearchBoxTheme = {
         M: 'body1'
     },
     padding: {
-        S: '0 0 0 2rem',
-        M: '0 0.3rem 0 2.4rem'
+        S: '0 0 0 1.2rem',
+        M: '0 0.3rem 0 1.6rem'
     },
     textColor: colors.black,
     borderRadius: {
