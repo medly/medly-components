@@ -41,7 +41,7 @@ const SearchBox: SearchBoxTheme = {
     },
     closeIcon: {
         padding: {
-            S: '0.2rem',
+            S: '0.4rem',
             M: '0.4rem'
         },
         borderRadius: '2.5rem',
@@ -55,7 +55,7 @@ const SearchBox: SearchBoxTheme = {
     },
     searchIcon: {
         padding: {
-            S: '0.2rem',
+            S: '0.4rem',
             M: '0.4rem'
         },
         borderRadius: '2.5rem',
