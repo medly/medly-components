@@ -4,8 +4,7 @@ import { Props } from '../types';
 
 const activeOptionStyle = ({ theme }: Props) => {
     return css`
-        border: 1.5px solid ${theme.searchBox.borderColor.active};
-        border-top: 0;
+        border-radius: 0.8rem;
         box-shadow: ${theme.searchBox.options.boxShadow};
         padding-bottom: 1.2rem;
         &::before {
@@ -29,10 +28,8 @@ const nonActiveOptionStyle = () => {
 };
 
 const getMediumOptionStyle = ({ theme }: Props) => {
-    const border = theme.searchBox.borderRadius.M.active;
     return css`
-        top: 4.4rem;
-        border-radius: 0 0 ${border} ${border};
+        top: 4.6rem;
         li {
             padding: 0 2.4rem;
             span,
@@ -45,10 +42,8 @@ const getMediumOptionStyle = ({ theme }: Props) => {
 };
 
 const getSmallOptionStyle = ({ theme }: Props) => {
-    const border = theme.searchBox.borderRadius.S.active;
     return css`
-        top: 3.6rem;
-        border-radius: 0 0 ${border} ${border};
+        top: 3.8rem;
         li {
             padding: 0 2rem;
             span,
