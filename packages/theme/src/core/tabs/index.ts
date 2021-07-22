@@ -45,6 +45,28 @@ const tabs: TabsTheme = {
         default: colors.white,
         disabled: colors.white,
         hovered: colors.grey[50]
+    },
+    slider: {
+        color: colors.white,
+        borderRadius: '.8rem'
+    },
+    tabList: {
+        color: colors.grey[100],
+        borderRadius: '1.2rem'
+    },
+    label: {
+        fontVariant: {
+            S: 'body2',
+            M: 'body1',
+            L: 'body1'
+        }
+    },
+    disabledLabel: {
+        fontVariant: {
+            S: 'body3',
+            M: 'body2',
+            L: 'body2'
+        }
     }
 };
 

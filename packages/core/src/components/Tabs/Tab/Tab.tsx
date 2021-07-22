@@ -21,7 +21,7 @@ export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
             {Icon && <Icon variant={tabSize === 'S' ? 'flat' : 'solid'} />}
             <Styled.LabelAndDetailsWrapper>
                 <Styled.LabelWrapper variant={variant}>
-                    <Styled.Label id={`${id}-label`} textWeight="Medium" textVariant={tabSize === 'S' ? 'body2' : 'body1'}>
+                    <Styled.Label tabSize={tabSize} id={`${id}-label`}>
                         {label}
                     </Styled.Label>
                     {count !== undefined && (
@@ -36,7 +36,7 @@ export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
                     </Styled.HelperText>
                 )}
                 {variant === 'solid' && disabled && (
-                    <Styled.DisabledLabel textWeight="Medium" textVariant="body2" id={`${id}-disabledLabel`}>
+                    <Styled.DisabledLabel tabSize={tabSize} id={`${id}-disabledLabel`}>
                         {disabledLabel}
                     </Styled.DisabledLabel>
                 )}

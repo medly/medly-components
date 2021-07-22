@@ -1,3 +1,5 @@
+import { FontVariants } from '../font/types';
+
 type Colors = {
     active?: string;
     default?: string;
@@ -19,4 +21,26 @@ export interface TabsTheme {
     countBgColor: Colors;
     bgColor: Colors;
     countBorderRadius: string;
+    slider: {
+        color: string;
+        borderRadius: string;
+    };
+    tabList: {
+        color: string;
+        borderRadius: string;
+    };
+    label: {
+        fontVariant: {
+            S: FontVariants;
+            M: FontVariants;
+            L: FontVariants;
+        };
+    };
+    disabledLabel: {
+        fontVariant: {
+            S: FontVariants;
+            M: FontVariants;
+            L: FontVariants;
+        };
+    };
 }

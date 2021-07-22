@@ -6,10 +6,10 @@ const solidStyle = () => css`
     align-items: stretch;
     padding: 0.4rem;
     box-sizing: border-box;
-    border-radius: 1.2rem;
+    border-radius: ${({ theme }) => theme.tabs.tabList.borderRadius};
     position: relative;
     color: red;
-    background-color: ${({ theme }) => theme.colors.grey[100]};
+    background-color: ${({ theme }) => theme.tabs.tabList.color};
 `;
 
 export const TabList = styled.div<StyledProps>`
@@ -25,16 +25,14 @@ export const TabList = styled.div<StyledProps>`
 const transformSlider = (active: number) => `transform: translateX(${`calc(${active * 100}% + ${active * 0.4}rem`}));`;
 
 export const Slider = styled.div<StyledProps>`
-    background-color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.tabs.slider.color};
     width: ${({ totalTabs }) => `calc(${100 / totalTabs}% - ${0.4 + 0.4 / totalTabs}rem ) `};
     height: calc(100% - 0.8rem);
     position: absolute;
-    border-radius: 0.8rem;
+    border-radius: ${({ theme }) => theme.tabs.slider.borderRadius};
     box-shadow: 0 0.1rem 0.4rem rgba(96, 120, 144, 0.1);
     transition: transform 0.3s ease-out;
     transform-box: content-box;
     box-sizing: border-box;
     ${({ active }) => transformSlider(active)}
 `;
-
-export const TabWrapper = styled.div``;

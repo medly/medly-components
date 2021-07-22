@@ -1,5 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
-import { centerAligned, css, styled } from '@medly-components/utils';
+import { centerAligned, css, getFontStyle, styled } from '@medly-components/utils';
 import Text from '../../Text';
 import { TabSize } from '../types';
 import { StyledProps } from './types';
@@ -13,14 +13,13 @@ export const Count = styled.span<{ tabSize: TabSize }>`
     font-size: ${({ tabSize }) => (tabSize === 'S' ? '1.1rem' : '1.2rem')};
 `;
 
-export const Label = styled(Text)``;
+export const Label = styled(Text)<{ tabSize: TabSize }>`
+    ${({ theme, tabSize }) => getFontStyle({ theme, fontVariant: theme.tabs.label.fontVariant[tabSize], fontWeight: 'Medium' })}
+`;
 
-export const DisabledLabel = styled(Text)`
-    font-size: 1rem;
-    line-height: 1.2rem;
-    letter-spacing: -0.04rem;
+export const DisabledLabel = styled(Text)<{ tabSize: TabSize }>`
+    ${({ theme, tabSize }) => getFontStyle({ theme, fontVariant: theme.tabs.disabledLabel.fontVariant[tabSize], fontWeight: 'Medium' })}
     color: ${({ theme }) => theme.tabs.labelColor.disabled};
-    font-weight: 400;
     text-align: center;
 `;
 
@@ -84,25 +83,36 @@ const disabledStyle = css<StyledProps>`
     ${props => getStyle({ ...props, styleType: 'disabled' })}
 `;
 
-const tabSelectionStyle = css<StyledProps>`
-    content: '';
-    position: absolute;
-    display: block;
-    height: 0.4rem;
-    bottom: -0.1rem;
-    left: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? '-0.1rem' : '0')};
-    width: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? 'calc(100% + 0.2rem)' : '100%')};
-    background-color: ${({ borderColor, active }) => (active ? borderColor.active : 'transparent')};
-    border-radius: ${({ tabStyle }) => tabStyle === 'OPEN' && '0.5rem 0.5rem 0 0'};
-`;
-
 const solidStyle = css<StyledProps>`
     ${centerAligned('flex')}
     width: ${({ totalTabs }) => `calc(${100 / totalTabs}% - ${((totalTabs - 1) * 0.4) / totalTabs}rem) `};
     border: none;
     background: transparent;
     padding: 0.8rem 0;
-    border-radius: .8rem;
+    border-radius: ${({ theme }) => theme.tabs.slider.borderRadius};
+`;
+
+const flatStyle = css<StyledProps>`
+    &:first-child {
+        border-left-width: ${({ tabStyle }) => tabStyle === 'CLOSED' && `0.1rem`};
+        border-top-left-radius: 0.8rem;
+    }
+
+    &:last-child {
+        border-top-right-radius: 0.8rem;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 0.4rem;
+        bottom: -0.1rem;
+        left: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? '-0.1rem' : '0')};
+        width: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? 'calc(100% + 0.2rem)' : '100%')};
+        background-color: ${({ borderColor, active }) => (active ? borderColor.active : 'transparent')};
+        border-radius: ${({ tabStyle }) => tabStyle === 'OPEN' && '0.5rem 0.5rem 0 0'};
+    }
 `;
 
 export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs }))<StyledProps>`
@@ -125,18 +135,6 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
         transition: all 100ms ease-out;
     }
 
-    &:first-child {
-        border-left-width: ${({ tabStyle }) => tabStyle === 'CLOSED' && `0.1rem`};
-        border-top-left-radius: 0.8rem;
-    }
-
-    &:last-child {
-        border-top-right-radius: 0.8rem;
-    }
-
-    &::after {
-        ${({ variant }) => variant !== 'solid' && tabSelectionStyle}
-    }
     &:focus {
         outline: none;
     }
@@ -162,6 +160,7 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
 
     ${({ active }) => (active ? activeStyle : nonActiveStyle)}
     ${({ variant }) => variant === 'solid' && solidStyle};
+    ${({ variant }) => variant === 'flat' && flatStyle};
 `;
 
 export const LabelAndDetailsWrapper = styled.div`

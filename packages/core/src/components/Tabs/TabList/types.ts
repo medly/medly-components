@@ -3,7 +3,7 @@ import { HTMLProps } from '@medly-components/utils';
 export interface Props extends HTMLProps<HTMLDivElement> {
     active: any;
     onChange: (id: any) => void;
-    variant: 'flat' | 'solid';
+    variant?: 'flat' | 'solid';
 }
 
 export type StyledProps = HTMLProps<HTMLDivElement> & {
