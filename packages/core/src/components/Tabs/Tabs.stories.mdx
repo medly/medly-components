@@ -51,6 +51,7 @@ Use `Tabs.Tab` to add tab in `Tabs` component.
                 tabBackground={select('Tab Background', tabBg, 'WHITE')}
                 tabStyle={select('Tab Style', tabStyle, 'OPEN')}
                 forceRender={boolean('Force Render', false)}
+                variant={select('Variant', ['flat', 'solid'], 'flat')}
             >
                 <Tabs.Tab id="tab1" label="Add" helperText="Details" count={0}>
                     Content for the add panel
@@ -58,7 +59,7 @@ Use `Tabs.Tab` to add tab in `Tabs` component.
                 <Tabs.Tab id="tab2" label="Edit" helperText="Details" count={10}>
                     Content for the edit panel
                 </Tabs.Tab>
-                <Tabs.Tab id="tab3" label="Delete" helperText="Details" count={30} disabled={true}>
+                <Tabs.Tab id="tab3" label="Delete" helperText="Details" count={30} disabled={true} disabledLabel="(Disabled)">
                     Content for the delete panel
                 </Tabs.Tab>
             </Tabs>

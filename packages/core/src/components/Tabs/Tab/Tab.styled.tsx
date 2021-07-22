@@ -1,5 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
-import { css, styled } from '@medly-components/utils';
+import { centerAligned, css, styled } from '@medly-components/utils';
 import Text from '../../Text';
 import { TabSize } from '../types';
 import { StyledProps } from './types';
@@ -15,6 +15,15 @@ export const Count = styled.span<{ tabSize: TabSize }>`
 
 export const Label = styled(Text)``;
 
+export const DisabledLabel = styled(Text)`
+    font-size: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: -0.04rem;
+    color: ${({ theme }) => theme.tabs.labelColor.disabled};
+    font-weight: 400;
+    text-align: center;
+`;
+
 export const HelperText = styled(Text)`
     text-align: left;
     color: ${({ theme }) => theme.colors.grey[600]};
@@ -28,14 +37,17 @@ const getStyle = ({
     bgColor,
     tabSize,
     countBgColor,
-    helperTextColor
+    helperTextColor,
+    variant
 }: StyledProps & { styleType: 'active' | 'default' | 'hovered' | 'disabled' }) => css`
     background-color: ${bgColor[styleType]};
     ${Label} {
         color: ${labelColor[styleType]};
+        line-height: ${variant === 'solid' && styleType === 'disabled' && '1.6rem'};
     }
     ${HelperText} {
         color: ${helperTextColor[styleType]};
+        text-align: ${variant === 'solid' && 'center'};
     }
     ${Count} {
         background-color: ${countBgColor[styleType]};
@@ -72,6 +84,27 @@ const disabledStyle = css<StyledProps>`
     ${props => getStyle({ ...props, styleType: 'disabled' })}
 `;
 
+const tabSelectionStyle = css<StyledProps>`
+    content: '';
+    position: absolute;
+    display: block;
+    height: 0.4rem;
+    bottom: -0.1rem;
+    left: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? '-0.1rem' : '0')};
+    width: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? 'calc(100% + 0.2rem)' : '100%')};
+    background-color: ${({ borderColor, active }) => (active ? borderColor.active : 'transparent')};
+    border-radius: ${({ tabStyle }) => tabStyle === 'OPEN' && '0.5rem 0.5rem 0 0'};
+`;
+
+const solidStyle = css<StyledProps>`
+    ${centerAligned('flex')}
+    width: ${({ totalTabs }) => `calc(${100 / totalTabs}% - ${((totalTabs - 1) * 0.4) / totalTabs}rem) `};
+    border: none;
+    background: transparent;
+    padding: 0.8rem 0;
+    border-radius: .8rem;
+`;
+
 export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs }))<StyledProps>`
     padding: 1.6rem;
     user-select: none;
@@ -102,15 +135,7 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
     }
 
     &::after {
-        content: '';
-        position: absolute;
-        display: block;
-        height: 0.4rem;
-        bottom: -0.1rem;
-        left: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? '-0.1rem' : '0')};
-        width: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? 'calc(100% + 0.2rem)' : '100%')};
-        background-color: ${({ borderColor, active }) => (active ? borderColor.active : 'transparent')};
-        border-radius: ${({ tabStyle }) => tabStyle === 'OPEN' && '0.5rem 0.5rem 0 0'};
+        ${({ variant }) => variant !== 'solid' && tabSelectionStyle}
     }
     &:focus {
         outline: none;
@@ -136,6 +161,7 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
     }
 
     ${({ active }) => (active ? activeStyle : nonActiveStyle)}
+    ${({ variant }) => variant === 'solid' && solidStyle};
 `;
 
 export const LabelAndDetailsWrapper = styled.div`
@@ -143,7 +169,7 @@ export const LabelAndDetailsWrapper = styled.div`
     flex-direction: column;
 `;
 
-export const LabelWrapper = styled.div`
+export const LabelWrapper = styled.div<{ variant: 'flat' | 'solid' }>`
     display: flex;
     flex-direction: row;
     align-items: center;

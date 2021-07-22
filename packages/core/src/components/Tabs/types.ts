@@ -28,6 +28,8 @@ export interface Props extends HTMLProps<HTMLDivElement> {
     forceRender?: boolean;
     /** Hide panel if you want to use only tabs as maybe nav link or so */
     hidePanel?: boolean;
+    /** Tabs design */
+    variant?: 'flat' | 'solid';
 }
 
 export interface StaticProps {

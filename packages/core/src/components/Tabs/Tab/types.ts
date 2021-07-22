@@ -11,6 +11,8 @@ export type StyledProps = HTMLProps<HTMLButtonElement> &
         tabStyle?: TabStyle;
         fraction?: any;
         tabBackground?: TabBackground;
+        variant?: 'flat' | 'solid';
+        totalTabs?: number;
     };
 
 export interface Props extends HTMLProps<HTMLButtonElement> {
@@ -34,4 +36,6 @@ export interface Props extends HTMLProps<HTMLButtonElement> {
     active?: boolean;
     /** Provide the fraction of the of the total width of the parent */
     fraction?: number;
+    /** Disabled label text (only visible for the `solid` Tabs variant) */
+    disabledLabel?: string;
 }
