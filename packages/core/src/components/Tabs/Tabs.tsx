@@ -49,7 +49,7 @@ export const Tabs: React.FC<Props> & StaticProps & WithStyle = React.memo(
         return (
             <Styled.Tabs id={tabsId} ref={ref} {...restProps}>
                 <TabsContext.Provider value={tabsContext}>
-                    <TabList variant={variant} id={`${tabsId}-list`} active={activeTab} onChange={handleTabChange}>
+                    <TabList id={`${tabsId}-list`} active={activeTab} onChange={handleTabChange}>
                         {children}
                     </TabList>
                     {!hidePanel && (

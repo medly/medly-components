@@ -1,13 +1,14 @@
-import { HTMLProps } from '@medly-components/utils';
-
+import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import { TabSize } from '../types';
 export interface Props extends HTMLProps<HTMLDivElement> {
     active: any;
     onChange: (id: any) => void;
-    variant?: 'flat' | 'solid';
 }
 
-export type StyledProps = HTMLProps<HTMLDivElement> & {
-    active?: number;
-    totalTabs?: number;
-    variant?: 'flat' | 'solid';
-};
+export type StyledProps = HTMLProps<HTMLDivElement> &
+    WithThemeProp & {
+        active?: number;
+        totalTabs?: number;
+        tabSize?: TabSize;
+        variant?: 'flat' | 'solid';
+    };

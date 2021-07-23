@@ -28,6 +28,11 @@ export interface TabsTheme {
     tabList: {
         color: string;
         borderRadius: string;
+        padding: {
+            S: string;
+            M: string;
+            L: string;
+        };
     };
     label: {
         fontVariant: {

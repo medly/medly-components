@@ -1,10 +1,10 @@
 import { centerAligned, css, styled } from '@medly-components/utils';
 import { StyledProps } from './types';
 
-const solidStyle = () => css`
+const solidStyle = () => css<StyledProps>`
     justify-content: space-between;
     align-items: stretch;
-    padding: 0.4rem;
+    padding: ${({ theme, tabSize }) => theme.tabs.tabList.padding[tabSize]};
     box-sizing: border-box;
     border-radius: ${({ theme }) => theme.tabs.tabList.borderRadius};
     position: relative;
@@ -22,17 +22,23 @@ export const TabList = styled.div<StyledProps>`
     ${({ variant }) => variant === 'solid' && solidStyle}
 `;
 
-const transformSlider = (active: number) => `transform: translateX(${`calc(${active * 100}% + ${active * 0.4}rem`}));`;
+const transformSlider = ({ theme, tabSize, active }: StyledProps) =>
+    `transform: translateX(${`calc(${active * 100}% + calc(${active} * ${theme.tabs.tabList.padding[tabSize]})`}));`;
+
+const getSliderWidth = ({ totalTabs, theme, tabSize }: StyledProps) => {
+    const totalHorizontalPadding = `calc(${theme.tabs.tabList.padding[tabSize]} + ${theme.tabs.tabList.padding[tabSize]} / ${totalTabs})`;
+    return `calc(${100 / totalTabs}% - ${totalHorizontalPadding})`;
+};
 
 export const Slider = styled.div<StyledProps>`
     background-color: ${({ theme }) => theme.tabs.slider.color};
-    width: ${({ totalTabs }) => `calc(${100 / totalTabs}% - ${0.4 + 0.4 / totalTabs}rem ) `};
-    height: calc(100% - 0.8rem);
+    width: ${getSliderWidth};
+    height: ${({ theme, tabSize }) => `calc(100% - calc(${theme.tabs.tabList.padding[tabSize]} * 2)) `};
     position: absolute;
     border-radius: ${({ theme }) => theme.tabs.slider.borderRadius};
     box-shadow: 0 0.1rem 0.4rem rgba(96, 120, 144, 0.1);
     transition: transform 0.3s ease-out;
     transform-box: content-box;
     box-sizing: border-box;
-    ${({ active }) => transformSlider(active)}
+    ${transformSlider}
 `;

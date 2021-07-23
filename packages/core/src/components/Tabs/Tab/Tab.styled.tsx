@@ -83,9 +83,14 @@ const disabledStyle = css<StyledProps>`
     ${props => getStyle({ ...props, styleType: 'disabled' })}
 `;
 
+const getSolidTabWidth = ({ totalTabs, theme, tabSize }: StyledProps) => {
+    const paddingBetweenTabs = `calc(${totalTabs - 1} * ${theme.tabs.tabList.padding[tabSize]} / ${totalTabs}})`;
+    return `calc(${100 / totalTabs}% - ${paddingBetweenTabs})`;
+};
+
 const solidStyle = css<StyledProps>`
     ${centerAligned('flex')}
-    width: ${({ totalTabs }) => `calc(${100 / totalTabs}% - ${((totalTabs - 1) * 0.4) / totalTabs}rem) `};
+    width: ${getSolidTabWidth};
     border: none;
     background: transparent;
     padding: 0.8rem 0;

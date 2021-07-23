@@ -52,7 +52,12 @@ const tabs: TabsTheme = {
     },
     tabList: {
         color: colors.grey[100],
-        borderRadius: '1.2rem'
+        borderRadius: '1.2rem',
+        padding: {
+            S: '.4rem',
+            M: '.6rem',
+            L: '.6rem'
+        }
     },
     label: {
         fontVariant: {
