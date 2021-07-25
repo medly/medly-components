@@ -41,7 +41,22 @@ const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: Props) => css`
     }
 `;
 
-export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean }>`
+const searchBoxWithExpandStyle = ({ theme: { searchBox } }: Props) => css`
+    width: 31.2rem;
+    padding-right: 0.8rem;
+
+    span {
+        width: unset;
+        min-width: unset;
+        margin-right: 4px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+`;
+
+export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean; showExpandIcon?: boolean }>`
     width: 25.6rem;
     display: flex;
     flex-direction: row;
@@ -64,6 +79,8 @@ export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean
     ${Options.Style} {
         ${getOptionsStyles};
     }
+
     ${getBorderRadius};
     ${({ areOptionsVisible }) => (areOptionsVisible ? activeSearchBoxStyle : nonActiveSearchBoxStyle)};
+    ${({ showExpandIcon }) => showExpandIcon && searchBoxWithExpandStyle}
 `;

@@ -31,7 +31,10 @@ const getMediumOptionStyle = ({ theme }: Props) => {
     return css`
         top: 4.6rem;
         li {
+            width: calc(100% - 1.6rem);
+            margin: 0 0.8rem;
             padding: 0 2.4rem;
+
             span,
             strong {
                 font-size: 1.6rem;
@@ -45,7 +48,10 @@ const getSmallOptionStyle = ({ theme }: Props) => {
     return css`
         top: 3.8rem;
         li {
+            width: calc(100% - 0.8rem);
+            margin: 0 0.4rem;
             padding: 0 2rem;
+
             span,
             strong {
                 font-size: 1.4rem;
@@ -66,6 +72,7 @@ export const getOptionsStyles = ({ theme, size, areOptionsVisible }: Props & { a
     background-color: ${theme.colors.white};
     ${areOptionsVisible ? activeOptionStyle : nonActiveOptionStyle};
     max-height: 21rem;
+    border-radius: 0.4rem;
 
     svg {
         display: none;

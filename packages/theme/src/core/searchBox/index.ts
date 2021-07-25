@@ -67,6 +67,20 @@ const SearchBox: SearchBoxTheme = {
             hovered: colors.blue[100]
         }
     },
+    expandIcon: {
+        padding: {
+            S: '0.4rem',
+            M: '0.4rem'
+        },
+        borderRadius: '2.5rem',
+        color: {
+            default: colors.grey[600],
+            hovered: colors.grey[900]
+        },
+        bgColor: {
+            hovered: colors.grey[100]
+        }
+    },
     boxShadow: {
         active: '0 0.2rem 0.8rem rgba(18, 106, 250, 0.2)',
         hovered: '0 0.2rem 0.8rem rgba(96, 120, 144, 0.2)'

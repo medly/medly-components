@@ -7,6 +7,7 @@ export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean }>`
     ${getIconWrapperStyle};
     border-right: ${({ theme, isTyping }) => isTyping && `0.1rem solid ${theme.colors.grey[200]}`};
     margin: 0.6rem 0;
+    padding-right: 0.4rem;
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.closeIcon.padding[size]};
         * {
@@ -32,6 +33,20 @@ export const SearchIconWrapper = styled.span<Props & { areOptionsVisible?: boole
         &:hover {
             background: ${({ theme: { searchBox }, isTyping }) => (isTyping ? searchBox.searchIcon.bgColor.hovered : 'transparent')};
             border-radius: ${({ theme }) => theme.searchBox.searchIcon.borderRadius};
+        }
+    }
+`;
+
+export const ExpandIconWrapper = styled.span<Props & { isTyping?: boolean }>`
+    ${getIconWrapperStyle}
+    ${SvgIcon} {
+        padding: ${({ theme, size }) => theme.searchBox.expandIcon.padding[size]};
+        * {
+            fill: ${({ theme }) => theme.searchBox.expandIcon.color.default};
+        }
+        &:hover {
+            background: ${({ theme: { searchBox }, isTyping }) => (isTyping ? searchBox.expandIcon.bgColor.hovered : 'transparent')};
+            border-radius: ${({ theme }) => theme.searchBox.expandIcon.borderRadius};
         }
     }
 `;
