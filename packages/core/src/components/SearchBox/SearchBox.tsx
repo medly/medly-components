@@ -109,7 +109,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                     {...restProps}
                 />
                 {isTyping && (
-                    <CloseIconWrapper isTyping={isTyping} size={size}>
+                    <CloseIconWrapper isTyping={isTyping} size={size} showExpandIcon={showExpandIcon}>
                         <CloseIcon title="close icon" onClick={clearSearchText} size={size} />
                     </CloseIconWrapper>
                 )}
@@ -132,6 +132,5 @@ SearchBox.Style = Styled.SearchBoxWrapper;
 SearchBox.defaultProps = {
     options: [],
     placeholder: 'Search',
-    size: 'S',
-    showExpandIcon: true
+    size: 'S'
 };
