@@ -1,0 +1,79 @@
+import { useAxios } from './useAxios.ts';
+import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
+
+<Meta title="Utils/Hooks/useAxios" parameters={{ jest: ['useAxios.test.tsx'] }} />
+
+# useAxios
+
+This react hook can be used to call the api in any react component.
+
+```tsx
+const { data, error, fetch, isLoading } = useAxios<DataType, ErrorType>();
+```
+
+### Result
+
+`useAxios` hooks returns below object.
+
+```tsx
+export type Result<Data = any, Error = any> = {
+    data: Data;
+    isLoading: boolean;
+    response: AxiosResponse<Data>;
+    error: AxiosResponse<Error>;
+    fetch: (
+        param: AxiosRequestConfig & {
+            onSuccess?: (response?: AxiosResponse<Data>) => void; //Function to be called whenever there is successful response
+            onError?: (error?: AxiosResponse<Error>) => void; //Function to be called whenever there is an error}
+        }
+    ) => Promise<{ response?: AxiosResponse<Data>; error?: AxiosResponse<Error> }>;
+};
+```
+
+### Global axios config
+
+You can set global config for axios like below. Read more about this over [here](https://github.com/axios/axios#global-axios-defaults)
+
+```tsx
+import axios from 'axios';
+
+axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+```
+
+### Example
+
+```tsx
+import { addToast } from '@medly-components/core';
+import { Form } from '@medly-components/forms';
+import { useAxios } from '@medly-components/utils';
+import React from 'react';
+
+const Demo: React.SFC = React.memo(() => {
+    const { request, isLoading } = useAxios();
+
+    const handleSubmit = (data: unknown) =>
+        fetch({
+            url: 'https://dummy.com/api/ba8e0a1/users',
+            data,
+            method: 'POST',
+            onError: response => addToast({ message: response.data.message, variant: 'error' }),
+            onSuccess: response => addToast({ message: `Successfully added user: ${response.data.firstName}`, variant: 'success' })
+        });
+
+    return (
+        <Form
+            disabled={isLoading}
+            fieldSchema={{
+                firstName: { type: 'text', label: 'First Name' },
+                lastName: { type: 'text', label: 'Last Name' },
+                age: { type: 'number', label: 'Age' }
+            }}
+            onSubmit={handleSubmit}
+        />
+    );
+});
+```
+
+### Unit Testing
+
+You can checkout few example of how to write unit tests around it over [here](https://github.com/medly/medly-components/blob/master/packages/utils/src/hooks/useAxios/useAxios.test.tsx).

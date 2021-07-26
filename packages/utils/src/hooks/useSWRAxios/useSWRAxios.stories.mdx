@@ -1,0 +1,84 @@
+import { useSWRAxios } from './useSWRAxios.ts';
+import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
+
+<Meta title="Utils/Hooks/useSWRAxios" parameters={{ jest: ['useSWRAxios.test.tsx'] }} />
+
+# useSWRAxios
+
+This react hook can be used to call the api using `swr` and `axios`. `swr` helps to cache the data. Chekout more about `swr` over [here](https://swr.vercel.app/)
+
+> **Note**: Use this hook to increase user experience as this basically cache the response so that if you move back and forth between pages the data will preloaded while revalidating in the background.
+
+```tsx
+const { data, isValidating, error } = useSWRAxios<DataType, ErrorType>(<AxiosRequestConfig>, <SWRCongig>);
+```
+
+### Configuration
+
+-   [Axios](https://github.com/axios/axios#request-config)
+
+-   [SWR](https://swr.vercel.app/docs/options#options)
+
+### Global configuration
+
+-   You can set global config for **axios** like below. Read more about this over [here.](https://github.com/axios/axios#global-axios-defaults)
+
+```tsx
+import axios from 'axios';
+
+axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+```
+
+-   You can set global config for **swr** like below. Read more about this over [here.](https://swr.vercel.app/docs/global-configuration)
+
+```tsx
+<SWRConfig value={options}>
+    <Component />
+</SWRConfig>
+```
+
+### Result
+
+**useAxios** returns all the fields from `SWRResponse` plus below additional fields.
+
+```tsx
+export type Return<Data = unknown, Error = unknown> = Omit<SWRResponse<AxiosResponse<Data>, AxiosError<Error>>, 'data' | 'error'> & {
+    data: Data;
+    response: AxiosResponse<Data>;
+    error: AxiosResponse<Error>;
+};
+```
+
+### Example
+
+```tsx
+import { Table } from '@medly-components/core';
+import { useSWRAxios } from '@medly-components/utils';
+import React, { useEffect } from 'react';
+
+const Demo: React.SFC = React.memo(() => {
+    const { data, isValidating, error } = useSWRAxios<{ name: string }, { message: string }>({ url: 'https://somedummyurls.com/data' });
+
+    useEffect(() => {
+        error?.data?.message && addToast({ variant: 'error', message: error.data.message });
+    }, [error]);
+
+    return (
+        <Table
+            data={data}
+            isLoading={isValidating}
+            columns={[
+                { title: 'First Name', field: 'firstName' },
+                { title: 'Last Name', field: 'lastName' },
+                { title: 'Age', field: 'age' }
+            ]}
+        />
+    );
+});
+```
+
+### Unit Testing
+
+You can checkout few example of how to write unit tests around it over [here](https://github.com/medly/medly-components/blob/master/packages/utils/src/hooks/useSWRAxios/useSWRAxios.test.tsx).
+
+> Note: Add `dedupingInterval: 0` for testing purpose. You can create a custom `render` method also like [this](https://github.com/medly/medly-components/blob/master/packages/utils/src/test-utils.tsx).
