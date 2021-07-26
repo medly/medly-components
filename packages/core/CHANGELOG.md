@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.5.1...@medly-components/core@2.5.2) (2021-07-26)
+
+
+### Bug Fixes
+
+* **core:** fix fitContent table cell width issue for custom cell component ([7542073](https://github.com/medly/medly-components/commit/75420733cc49f6b0c4bb025ee4cb3d71cc9cad9c))
+
+
+
+
+
 ## [2.5.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.5.0...@medly-components/core@2.5.1) (2021-07-19)
 
 

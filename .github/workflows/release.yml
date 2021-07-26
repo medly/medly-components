@@ -13,6 +13,8 @@ jobs:
         steps:
             - name: Checkout repo
               uses: actions/checkout@v2
+              with:
+                  token: ${{ secrets.ADMIN_TOKEN }}
 
             #needed for lerna / semantic release to correctly version
             - name: Fetch all tags
