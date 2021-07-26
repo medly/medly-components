@@ -119,7 +119,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c2 .c3 {
-  padding: 0.2rem;
+  padding: 0.4rem;
 }
 
 .c2 .c3 * {
@@ -136,7 +136,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c14 .c3 {
-  padding: 0.2rem;
+  padding: 0.4rem;
 }
 
 .c14 .c3 * {
@@ -149,7 +149,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c15 .c3 {
-  padding: 0.2rem;
+  padding: 0.4rem;
 }
 
 .c15 .c3 * {
@@ -180,7 +180,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c6 .c3 {
-  padding: 0.2rem;
+  padding: 0.4rem;
 }
 
 .c6 .c3 * {
@@ -258,9 +258,9 @@ exports[`SearchBox options should render options when user search option specifi
   height: 4rem;
   border: 1.5px solid;
   position: relative;
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 1.2rem;
   background-color: #ffffff;
-  border-radius: 2rem;
+  border-radius: .8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
   border-color: #126AFA;
   border-width: 1.5px;
@@ -514,9 +514,9 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   height: 4.8rem;
   border: 1.5px solid;
   position: relative;
-  padding: 0 0.3rem 0 2.4rem;
+  padding: 0 0.3rem 0 1.6rem;
   background-color: #ffffff;
-  border-radius: 4.8rem;
+  border-radius: .8rem;
   border-bottom: 1.5px solid;
   border-color: #98A7B7;
   -webkit-transition: border-color 100ms,box-shadow 100ms;
@@ -720,7 +720,7 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 }
 
 .c3 .c4 {
-  padding: 0.2rem;
+  padding: 0.4rem;
 }
 
 .c3 .c4 * {
@@ -746,9 +746,9 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   height: 4rem;
   border: 1.5px solid;
   position: relative;
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 1.2rem;
   background-color: #ffffff;
-  border-radius: 4rem;
+  border-radius: .8rem;
   border-bottom: 1.5px solid;
   border-color: #98A7B7;
   -webkit-transition: border-color 100ms,box-shadow 100ms;

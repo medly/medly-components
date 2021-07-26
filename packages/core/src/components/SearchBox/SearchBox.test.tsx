@@ -97,6 +97,7 @@ describe('SearchBox', () => {
 
     describe('expand icon', () => {
         const props = {
+            placeholder: 'search',
             showExpandIcon: true
         };
 
