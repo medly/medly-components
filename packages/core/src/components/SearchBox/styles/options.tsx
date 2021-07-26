@@ -29,7 +29,7 @@ const nonActiveOptionStyle = () => {
 
 const getMediumOptionStyle = ({ theme }: Props) => {
     return css`
-        top: 4.6rem;
+        top: 4.7rem;
         li {
             width: calc(100% - 1.6rem);
             margin: 0 0.8rem;
@@ -46,7 +46,7 @@ const getMediumOptionStyle = ({ theme }: Props) => {
 
 const getSmallOptionStyle = ({ theme }: Props) => {
     return css`
-        top: 3.8rem;
+        top: 3.9rem;
         li {
             width: calc(100% - 0.8rem);
             margin: 0 0.4rem;

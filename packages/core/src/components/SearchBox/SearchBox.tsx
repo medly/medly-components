@@ -1,6 +1,5 @@
-import { CloseIcon, SearchIcon } from '@medly-components/icons';
+import { CloseIcon, ExpandIcon, SearchIcon } from '@medly-components/icons';
 import { useCombinedRefs, useKeyPress, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
-import ExpandIcon from 'packages/icons/src/icons/Action/ExpandIcon';
 import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
 import Options from '../SingleSelect/Options';
 import { Option } from '../SingleSelect/types';
