@@ -14,16 +14,16 @@ export const useAxios = <Data = any, Error = { message: string; variant: 'error'
             method: 'get',
             ...config
         })
-            .then(response => {
-                setData(response.data);
-                setResponse(response);
-                onSuccess && onSuccess(response);
-                return { response };
+            .then(res => {
+                setData(res.data);
+                setResponse(res);
+                onSuccess && onSuccess(res);
+                return { response: res };
             })
-            .catch(error => {
+            .catch(err => {
                 const customizedError = {
-                    ...error.response,
-                    data: { message: 'Something went wrong', variant: 'error', ...error.response.data }
+                    ...err.response,
+                    data: { message: 'Something went wrong', variant: 'error', ...err.response.data }
                 };
                 setError(customizedError);
                 onError && onError(customizedError);
