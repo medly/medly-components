@@ -41,12 +41,15 @@ export const SearchIconWrapper = styled.span<Props & { areOptionsVisible?: boole
 export const ExpandIconWrapper = styled.span<Props & { isTyping?: boolean }>`
     ${getIconWrapperStyle}
     ${SvgIcon} {
-        padding: ${({ theme, size }) => theme.searchBox.expandIcon.padding[size]};
+        padding: ${({ theme, size }) => {
+            console.log('searchbox', theme.searchBox);
+            return theme.searchBox.expandIcon.padding[size];
+        }};
         * {
             fill: ${({ theme }) => theme.searchBox.expandIcon.color.default};
         }
         &:hover {
-            background: ${({ theme: { searchBox }, isTyping }) => (isTyping ? searchBox.expandIcon.bgColor.hovered : 'transparent')};
+            background: ${({ theme, isTyping }) => (isTyping ? theme.searchBox.expandIcon.bgColor.hovered : 'transparent')};
             border-radius: ${({ theme }) => theme.searchBox.expandIcon.borderRadius};
         }
     }
