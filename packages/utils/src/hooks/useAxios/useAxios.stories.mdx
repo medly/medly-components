@@ -5,10 +5,10 @@ import { Preview, Meta, Props } from '@storybook/addon-docs/blocks';
 
 # useAxios
 
-This react hook can be used to call the api in any react component.
+This react hook can be used to call the api in any react component which exposed `isLoading`, `data` & `error` state so that you don't have to create all of these again and again in your components.
 
 ```tsx
-const { data, error, fetch, isLoading } = useAxios<DataType, ErrorType>();
+const { data, error, request, isLoading } = useAxios<DataType, ErrorType>();
 ```
 
 ### Result
@@ -21,7 +21,7 @@ export type Result<Data = any, Error = any> = {
     isLoading: boolean;
     response: AxiosResponse<Data>;
     error: AxiosResponse<Error>;
-    fetch: (
+    request: (
         param: AxiosRequestConfig & {
             onSuccess?: (response?: AxiosResponse<Data>) => void; //Function to be called whenever there is successful response
             onError?: (error?: AxiosResponse<Error>) => void; //Function to be called whenever there is an error}
