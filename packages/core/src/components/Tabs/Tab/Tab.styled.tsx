@@ -18,7 +18,8 @@ export const Label = styled(Text)<{ tabSize: TabSize }>`
 `;
 
 export const DisabledLabel = styled(Text)<{ tabSize: TabSize }>`
-    ${({ theme, tabSize }) => getFontStyle({ theme, fontVariant: theme.tabs.disabledLabel.fontVariant[tabSize], fontWeight: 'Medium' })}
+    ${({ theme, tabSize }) =>
+        getFontStyle({ theme, fontVariant: theme.tabs.solid.disabledLabel.fontVariant[tabSize], fontWeight: 'Medium' })}
     color: ${({ theme }) => theme.tabs.labelColor.disabled};
     text-align: center;
 `;
@@ -84,7 +85,7 @@ const disabledStyle = css<StyledProps>`
 `;
 
 const getSolidTabWidth = ({ totalTabs, theme, tabSize }: StyledProps) => {
-    const paddingBetweenTabs = `calc(${totalTabs - 1} * ${theme.tabs.tabList.padding[tabSize]} / ${totalTabs}})`;
+    const paddingBetweenTabs = `calc(${totalTabs - 1} * ${theme.tabs.solid.tabList.padding[tabSize]} / ${totalTabs}})`;
     return `calc(${100 / totalTabs}% - ${paddingBetweenTabs})`;
 };
 
@@ -92,9 +93,9 @@ const solidStyle = css<StyledProps>`
     ${centerAligned('flex')}
     width: ${getSolidTabWidth};
     border: none;
-    background: transparent;
+    background-color: transparent;
     padding: 0.8rem 0;
-    border-radius: ${({ theme }) => theme.tabs.slider.borderRadius};
+    border-radius: ${({ theme }) => theme.tabs.solid.tabBorderRadius};
 `;
 
 const flatStyle = css<StyledProps>`

@@ -46,19 +46,6 @@ const tabs: TabsTheme = {
         disabled: colors.white,
         hovered: colors.grey[50]
     },
-    slider: {
-        color: colors.white,
-        borderRadius: '.8rem'
-    },
-    tabList: {
-        color: colors.grey[100],
-        borderRadius: '1.2rem',
-        padding: {
-            S: '.4rem',
-            M: '.6rem',
-            L: '.6rem'
-        }
-    },
     label: {
         fontVariant: {
             S: 'body2',
@@ -66,11 +53,23 @@ const tabs: TabsTheme = {
             L: 'body1'
         }
     },
-    disabledLabel: {
-        fontVariant: {
-            S: 'body3',
-            M: 'body2',
-            L: 'body2'
+    solid: {
+        tabBorderRadius: '.8rem',
+        tabList: {
+            color: colors.grey[200],
+            borderRadius: '1.2rem',
+            padding: {
+                S: '.4rem',
+                M: '.6rem',
+                L: '.6rem'
+            }
+        },
+        disabledLabel: {
+            fontVariant: {
+                S: 'body3',
+                M: 'body2',
+                L: 'body2'
+            }
         }
     }
 };

@@ -21,19 +21,6 @@ export interface TabsTheme {
     countBgColor: Colors;
     bgColor: Colors;
     countBorderRadius: string;
-    slider: {
-        color: string;
-        borderRadius: string;
-    };
-    tabList: {
-        color: string;
-        borderRadius: string;
-        padding: {
-            S: string;
-            M: string;
-            L: string;
-        };
-    };
     label: {
         fontVariant: {
             S: FontVariants;
@@ -41,11 +28,24 @@ export interface TabsTheme {
             L: FontVariants;
         };
     };
-    disabledLabel: {
-        fontVariant: {
-            S: FontVariants;
-            M: FontVariants;
-            L: FontVariants;
+    /** For use with the `solid` Tabs variant */
+    solid: {
+        tabBorderRadius: string;
+        tabList: {
+            color: string;
+            borderRadius: string;
+            padding: {
+                S: string;
+                M: string;
+                L: string;
+            };
+        };
+        disabledLabel: {
+            fontVariant: {
+                S: FontVariants;
+                M: FontVariants;
+                L: FontVariants;
+            };
         };
     };
 }
