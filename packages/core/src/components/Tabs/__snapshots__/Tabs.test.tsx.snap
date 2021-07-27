@@ -967,6 +967,31 @@ exports[`Tabs Variants should render the solid variant properly 1`] = `
         </div>
       </button>
       <button
+        aria-controls="panel-tab2"
+        aria-selected="false"
+        class="c10"
+        id="tab2"
+        label="[object Object]"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        <div
+          class="c3"
+        >
+          <div
+            class="c4"
+          >
+            <span
+              class="c5 c6 c7"
+              id="tab2-label"
+            >
+              Delete
+            </span>
+          </div>
+        </div>
+      </button>
+      <button
         aria-controls="panel-tab4"
         aria-selected="false"
         class="c10"
