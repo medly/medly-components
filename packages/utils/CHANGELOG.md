@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.1](https://github.com/medly/medly-components/compare/@medly-components/utils@1.11.0...@medly-components/utils@1.11.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* export useAxios and useSWRAxios from utils package ([cfd08ef](https://github.com/medly/medly-components/commit/cfd08ef16e79ff50343dd6c30b9e22e422cf4020))
+
+
+
+
+
 # [1.11.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.10.1...@medly-components/utils@1.11.0) (2021-07-27)
 
 
