@@ -31,7 +31,7 @@ addDecorator(jsxDecorator);
 addDecorator(withKnobs);
 addDecorator(story => (
     <ThemeProvider theme={defaultTheme}>
-        <div style={{ padding: '10px 0', width: '95%', height: '100%', margin: 'auto' }}>
+        <div style={{ padding: '10px 0', width: '95%', height: 'calc(100% - 20px)', margin: 'auto' }}>
             <CssBaseline />
             {story()}
         </div>
