@@ -97,6 +97,47 @@ We can also provide `icon` prop.
     </Story>
 </Preview>
 
+### Variants
+
+Use the `variant` prop to change the style of the tabs.
+
+<Preview withToolbar>
+    <Story name="FlatVariant">
+        <Tabs
+            defaultActive="tab1"
+            aria-label="FlatVariant Tabs"
+            variant='flat'
+        >
+            <Tabs.Tab id="tab1" label="Add" helperText="Details" count={0}>
+                Content for the add panel
+            </Tabs.Tab>
+            <Tabs.Tab id="tab2" label="Edit" helperText="Details" count={10}>
+                Content for the edit panel
+            </Tabs.Tab>
+            <Tabs.Tab id="tab3" label="Delete" helperText="Details" count={30}  disabled={true}>
+                Content for the delete panel
+            </Tabs.Tab>
+        </Tabs>
+    </Story>
+    <Story name="SolidVariant">
+        <Tabs
+            defaultActive="tab1"
+            aria-label="SolidVariant Tabs"
+            variant='solid'
+        >
+            <Tabs.Tab id="tab1" label="Add" helperText="Details" count={0}>
+                Content for the add panel
+            </Tabs.Tab>
+            <Tabs.Tab id="tab2" label="Edit" helperText="Details" count={10}>
+                Content for the edit panel
+            </Tabs.Tab>
+            <Tabs.Tab id="tab3" label="Delete" helperText="Details" count={30} disabled={true} disabledLabel="(Disabled)">
+                Content for the delete panel
+            </Tabs.Tab>
+        </Tabs>
+    </Story>
+</Preview>
+
 ### Count and HelperText
 
 `count` and `helperText` are optional props of `Tabs.Tab` component. See `Show code` section.

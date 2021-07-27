@@ -133,7 +133,7 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
     border-style: solid;
     box-sizing: border-box;
     font-family: inherit;
-    flex: ${({ fraction }) => fraction};
+    flex: ${({ fraction, variant }) => variant !== 'solid' && fraction};
     border-color: ${({ borderColor, tabStyle }) => borderColor[tabStyle === 'CLOSED' ? 'closed' : 'open']};
     border-width: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? `0.1rem 0.1rem 0.1rem 0` : `0 0 0.1rem 0`)};
     transition: all 100ms ease-out;

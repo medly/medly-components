@@ -26,7 +26,7 @@ export interface Props extends HTMLProps<HTMLButtonElement> {
     helperText?: string;
     /** To Display count in tab */
     count?: number;
-    /** To be used to hide the tab */
+    /** To be used to hide the tab (cannot be used with the `solid` variant) */
     hide?: boolean;
     /** Icon to be shown */
     icon?: React.FC<SvgIconProps>;
@@ -34,7 +34,7 @@ export interface Props extends HTMLProps<HTMLButtonElement> {
     disabled?: boolean;
     /** This will be handled internally */
     active?: boolean;
-    /** Provide the fraction of the of the total width of the parent */
+    /** Provide the fraction of the of the total width of the parent (cannot be used with the `solid` variant) */
     fraction?: number;
     /** Disabled label text (only visible for the `solid` Tabs variant) */
     disabledLabel?: string;

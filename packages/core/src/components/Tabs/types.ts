@@ -20,7 +20,7 @@ export interface Props extends HTMLProps<HTMLDivElement> {
     onChange?: (id: any) => void;
     /** Size for tab */
     tabSize?: TabSize;
-    /** Tab can have OPEN and CLOSED style */
+    /** Tab can have OPEN and CLOSED style (cannot be used with the `solid` variant) */
     tabStyle?: TabStyle;
     /** Background color of the Tabs wrapper */
     tabBackground?: TabBackground;

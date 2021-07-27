@@ -45,7 +45,9 @@ export const TabList: React.FC<Props> & WithStyle = React.memo(props => {
             {variant === 'solid' && <Styled.Slider tabSize={tabSize} active={activeTabIdx} totalTabs={totalTabs} />}
             {React.Children.toArray(props.children).reduce((acc: any[], child: any) => {
                 const { id, label, hide } = child.props;
-                !hide &&
+                const hideTab = hide && variant !== 'solid';
+
+                !hideTab &&
                     acc.push(
                         <Tab
                             key={id}
