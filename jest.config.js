@@ -18,12 +18,12 @@ module.exports = {
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
     testEnvironment: 'jsdom',
     rootDir: './',
-    projects: ['core', 'layout', 'forms', 'icons', 'utils'].map(package => ({
-        displayName: package,
+    projects: ['core', 'layout', 'forms', 'icons', 'utils'].map(name => ({
+        displayName: name,
         setupFilesAfterEnv: ['<rootDir>/jest.setupAfterEnv.js'],
         moduleNameMapper: {
             '^@test-utils': '<rootDir>/packages/utils/src/test-utils'
         },
-        testMatch: [`<rootDir>/packages/${package}/src/**/*.(spec|test).(ts|tsx)`]
+        testMatch: [`<rootDir>/packages/${name}/src/**/*.(spec|test).(ts|tsx)`]
     }))
 };
