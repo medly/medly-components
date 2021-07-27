@@ -12,10 +12,11 @@ const renderer = ({
     tabStyle = 'CLOSED',
     tabBackground = 'WHITE',
     forceRender = false,
-    hidePanel = false
+    hidePanel = false,
+    variant = 'flat'
 }: Props) =>
     render(
-        <Tabs {...{ defaultActive, active, onChange, tabSize, tabStyle, tabBackground, forceRender, hidePanel }}>
+        <Tabs {...{ defaultActive, active, onChange, tabSize, tabStyle, tabBackground, forceRender, hidePanel, variant }}>
             <Tab id="tab1" label="Add" count={30} helperText="Details for tab1">
                 Content for the add panel
             </Tab>
@@ -32,9 +33,16 @@ const renderer = ({
     );
 
 describe('Tabs', () => {
-    it('should render properly', () => {
-        const { container } = renderer({});
-        expect(container).toMatchSnapshot();
+    describe('Variants', () => {
+        it('should render the flat variant properly', () => {
+            const { container } = renderer({ variant: 'flat' });
+            expect(container).toMatchSnapshot();
+        });
+
+        it('should render the solid variant properly', () => {
+            const { container } = renderer({ variant: 'solid' });
+            expect(container).toMatchSnapshot();
+        });
     });
 
     it('should hide the tab if hide prop is given', () => {
