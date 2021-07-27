@@ -41,7 +41,7 @@ const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: Props) => css`
     }
 `;
 
-const searchBoxWithExpandStyle = ({ theme: { searchBox } }: Props) => css`
+const searchBoxWithExpandStyle = () => css`
     width: 31.2rem;
     padding-right: 0.8rem;
 
