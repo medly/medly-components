@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.10.1...@medly-components/utils@1.11.0) (2021-07-27)
+
+
+### Bug Fixes
+
+* sonar issues in useAxios hook ([30732a7](https://github.com/medly/medly-components/commit/30732a75aeb55678d256de3c178f37feea25fc8b))
+
+
+### Features
+
+* add custom hooks to use axios and swr ([c1051e4](https://github.com/medly/medly-components/commit/c1051e4515852f03572b6bbb0ae9651dfc541681))
+
+
+
+
+
 ## [1.10.1](https://github.com/medly/medly-components/compare/@medly-components/utils@1.10.0...@medly-components/utils@1.10.1) (2021-07-19)
 
 **Note:** Version bump only for package @medly-components/utils
