@@ -114,7 +114,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 )}
                 {showExpandIcon && (
                     <ExpandIconWrapper isTyping={isTyping} size={size}>
-                        <ExpandIcon title="expand icon" size={size} />
+                        <ExpandIcon title="expand icon" size={size} onClick={areOptionsVisible ? hideOptions : showOptions} />
                     </ExpandIconWrapper>
                 )}
                 <SearchIconWrapper areOptionsVisible={areOptionsVisible} isTyping={isTyping} size={size}>

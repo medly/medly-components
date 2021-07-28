@@ -18,14 +18,14 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'size'>, WithTh
     size?: Size;
     /** Option for search results, in form of label and value */
     options?: Option[];
-    /*** Enables the expand icon */
+    /** Enables the expand icon */
     showExpandIcon?: boolean;
     /** Function to be called on clear icon click */
     onClear?: () => void;
-    /*** Function to be called on search icon click */
+    /** Function to be called on search icon click */
     onSearch?: (value: string) => void;
-    /*** Function to be called on  selecting the option */
+    /** Function to be called on  selecting the option */
     onOptionSelected?: (value: Option) => void;
-    /*** Function to be called on input value changes */
+    /** Function to be called on input value changes */
     onInputChange?: (value: string) => void;
 }
