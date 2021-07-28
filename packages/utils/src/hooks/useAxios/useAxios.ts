@@ -34,11 +34,19 @@ export const useAxios = <Data = any, Error = { message: string; variant: 'error'
             });
     }, []);
 
+    const clear = useCallback(() => {
+        setData(undefined);
+        setResponse(undefined);
+        setError(undefined);
+        setLoadingState(false);
+    }, []);
+
     return {
         data,
         response,
         request,
         isLoading,
-        error
+        error,
+        clear
     };
 };
