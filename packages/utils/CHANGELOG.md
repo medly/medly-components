@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.11.2...@medly-components/utils@1.12.0) (2021-07-28)
+
+
+### Features
+
+* add clear state function in useAxios hook ([e8e1d30](https://github.com/medly/medly-components/commit/e8e1d3041b6a89d08bd5d3ccde0ba1c617bda2f5))
+
+
+
+
+
 ## [1.11.2](https://github.com/medly/medly-components/compare/@medly-components/utils@1.11.1...@medly-components/utils@1.11.2) (2021-07-28)
 
 **Note:** Version bump only for package @medly-components/utils
