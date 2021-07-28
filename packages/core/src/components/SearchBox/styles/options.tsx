@@ -27,7 +27,7 @@ const nonActiveOptionStyle = () => {
     `;
 };
 
-const getMediumOptionStyle = ({ theme }: Props) => {
+const getMediumOptionStyle = () => {
     return css`
         top: 4.7rem;
         li {
@@ -44,7 +44,7 @@ const getMediumOptionStyle = ({ theme }: Props) => {
     `;
 };
 
-const getSmallOptionStyle = ({ theme }: Props) => {
+const getSmallOptionStyle = () => {
     return css`
         top: 3.9rem;
         li {

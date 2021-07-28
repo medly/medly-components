@@ -48,7 +48,7 @@ const searchBoxWithExpandStyle = () => css`
     span {
         width: unset;
         min-width: unset;
-        margin-right: 4px;
+        margin-right: 0.4rem;
 
         &:last-of-type {
             margin-right: 0;
