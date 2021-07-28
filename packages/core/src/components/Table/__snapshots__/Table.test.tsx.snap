@@ -28,7 +28,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   text-align: initial;
 }
 
-.c26 {
+.c27 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -41,7 +41,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   text-align: center;
 }
 
-.c28 {
+.c29 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -54,7 +54,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   text-align: center;
 }
 
-.c30 {
+.c31 {
   margin: 0;
   color: inherit;
   font-size: 1.4rem;
@@ -82,7 +82,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   fill: #607890;
 }
 
-.c24 {
+.c25 {
   overflow: visible;
   font-size: 2.4rem;
   -webkit-transition: all 100ms linear;
@@ -90,14 +90,14 @@ exports[`Table component pagination should call onPageChange prop on click on an
   cursor: inherit;
 }
 
-.c24 * {
+.c25 * {
   fill-opacity: 1;
   -webkit-transition: all 100ms linear;
   transition: all 100ms linear;
   fill: #607890;
 }
 
-.c29 {
+.c30 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -188,6 +188,15 @@ exports[`Table component pagination should call onPageChange prop on click on an
   transform: translateY(-50%);
 }
 
+.c18 {
+  display: grid;
+  position: relative;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
 .c12 {
   margin: 0;
   font-size: 1.2rem;
@@ -248,7 +257,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   white-space: nowrap;
 }
 
-.c18 {
+.c19 {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -268,7 +277,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   justify-content: flex-end;
 }
 
-.c18 .c6 {
+.c19 .c6 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -307,7 +316,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   border-bottom: 0.1rem solid #C7D0D8;
 }
 
-.c21 {
+.c22 {
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -320,23 +329,23 @@ exports[`Table component pagination should call onPageChange prop on click on an
   flex-direction: row;
 }
 
-.c21 li {
+.c22 li {
   margin: 0 0.4rem;
 }
 
-.c21 li:last-child {
+.c22 li:last-child {
   margin-right: 0.8rem;
 }
 
-.c21 li:first-child {
+.c22 li:first-child {
   margin-left: 0.8rem;
 }
 
-.c22 > li {
+.c23 > li {
   margin: 0;
 }
 
-.c25 {
+.c26 {
   margin: 0.4rem;
   height: 3.2rem;
   width: 3.2rem;
@@ -358,30 +367,30 @@ exports[`Table component pagination should call onPageChange prop on click on an
   border-radius: 50%;
 }
 
-.c25:hover {
+.c26:hover {
   cursor: pointer;
 }
 
-.c25:focus {
+.c26:focus {
   outline: none;
 }
 
-.c25:disabled {
+.c26:disabled {
   cursor: not-allowed;
 }
 
-.c25:hover {
+.c26:hover {
   color: #303C48;
   background: #F7F8F9;
 }
 
-.c25:active {
+.c26:active {
   font-weight: 700;
   color: #13181D;
   background: #eff2f4;
 }
 
-.c27 {
+.c28 {
   margin: 0.4rem;
   height: 3.2rem;
   width: 3.2rem;
@@ -403,25 +412,25 @@ exports[`Table component pagination should call onPageChange prop on click on an
   border-radius: 50%;
 }
 
-.c27:hover {
+.c28:hover {
   cursor: pointer;
 }
 
-.c27:focus {
+.c28:focus {
   outline: none;
 }
 
-.c27:disabled {
+.c28:disabled {
   cursor: not-allowed;
 }
 
-.c27:active {
+.c28:active {
   font-weight: 700;
   color: #13181D;
   background: #eff2f4;
 }
 
-.c23 {
+.c24 {
   margin: 0.4rem;
   height: 3.2rem;
   width: 3.2rem;
@@ -441,52 +450,52 @@ exports[`Table component pagination should call onPageChange prop on click on an
   background: #ffffff;
 }
 
-.c23:hover {
+.c24:hover {
   cursor: pointer;
 }
 
-.c23:focus {
+.c24:focus {
   outline: none;
 }
 
-.c23:disabled {
+.c24:disabled {
   cursor: not-allowed;
 }
 
-.c23 > .c8,
-.c23 .c8 {
+.c24 > .c8,
+.c24 .c8 {
   padding: 0.4rem;
 }
 
-.c23 .c8 * {
+.c24 .c8 * {
   fill: #435465;
 }
 
-.c23:disabled {
+.c24:disabled {
   background: #ffffff;
 }
 
-.c23:disabled .c8 * {
+.c24:disabled .c8 * {
   fill: #C7D0D8;
 }
 
-.c23:not(:disabled):hover {
+.c24:not(:disabled):hover {
   background: #F7F8F9;
 }
 
-.c23:not(:disabled):hover .c8 * {
+.c24:not(:disabled):hover .c8 * {
   fill: #303C48;
 }
 
-.c23:not(:disabled):active {
+.c24:not(:disabled):active {
   background: #eff2f4;
 }
 
-.c23:not(:disabled):active .c8 * {
+.c24:not(:disabled):active .c8 * {
   fill: #13181D;
 }
 
-.c19 {
+.c20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -505,7 +514,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   border-top: 0.1rem solid #C7D0D8;
 }
 
-.c20 {
+.c21 {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -525,11 +534,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
   padding: 0 1.6rem 0 0.8rem;
 }
 
-.c20 td {
+.c21 td {
   padding: 0;
 }
 
-.c20 td > .c6 {
+.c21 td > .c6 {
   line-height: 2rem;
   font-size: 1.2rem;
 }
@@ -963,11 +972,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </span>
         </td>
         <td
-          class="c11"
+          class="c18"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -977,7 +986,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </span>
           </div>
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -988,7 +997,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </div>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -1008,7 +1017,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -1033,11 +1042,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </span>
         </td>
         <td
-          class="c11"
+          class="c18"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -1047,7 +1056,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </span>
           </div>
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -1058,7 +1067,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </div>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -1078,7 +1087,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -1103,11 +1112,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </span>
         </td>
         <td
-          class="c11"
+          class="c18"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -1117,7 +1126,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </span>
           </div>
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -1128,7 +1137,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </div>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -1148,7 +1157,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -1173,11 +1182,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </span>
         </td>
         <td
-          class="c11"
+          class="c18"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -1187,7 +1196,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </span>
           </div>
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -1198,7 +1207,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </div>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -1218,7 +1227,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -1243,11 +1252,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </span>
         </td>
         <td
-          class="c11"
+          class="c18"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -1257,7 +1266,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </span>
           </div>
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -1268,7 +1277,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </div>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -1288,7 +1297,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -1313,11 +1322,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </span>
         </td>
         <td
-          class="c11"
+          class="c18"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -1327,7 +1336,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </span>
           </div>
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -1338,7 +1347,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </div>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -1358,7 +1367,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -1383,11 +1392,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </span>
         </td>
         <td
-          class="c11"
+          class="c18"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -1397,7 +1406,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </span>
           </div>
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -1408,7 +1417,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </div>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -1428,7 +1437,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -1440,22 +1449,22 @@ exports[`Table component pagination should call onPageChange prop on click on an
       </tr>
     </tbody>
     <tfoot
-      class="c19"
+      class="c20"
     >
       <tr
-        class="c20"
+        class="c21"
       >
         <td>
           <ul
-            class="c21 c22"
+            class="c22 c23"
           >
             <li>
               <button
-                class="sc-fzomME c23"
+                class="sc-fzomME c24"
                 type="button"
               >
                 <svg
-                  class="c8 c24"
+                  class="c8 c25"
                   fill="none"
                   height="1em"
                   viewBox="0 0 24 24"
@@ -1472,11 +1481,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-fzomME c25"
+                class="sc-fzomME c26"
                 type="button"
               >
                 <h5
-                  class="c6 c26"
+                  class="c6 c27"
                 >
                   1
                 </h5>
@@ -1484,11 +1493,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-fzomME c27"
+                class="sc-fzomME c28"
                 type="button"
               >
                 <h5
-                  class="c6 c28"
+                  class="c6 c29"
                 >
                   2
                 </h5>
@@ -1496,11 +1505,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-fzomME c25"
+                class="sc-fzomME c26"
                 type="button"
               >
                 <h5
-                  class="c6 c26"
+                  class="c6 c27"
                 >
                   3
                 </h5>
@@ -1508,15 +1517,15 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <div
-                class="c29"
+                class="c30"
                 id="medly-popover-wrapper"
               >
                 <button
-                  class="sc-fzomME c25"
+                  class="sc-fzomME c26"
                   type="button"
                 >
                   <h5
-                    class="c6 c26"
+                    class="c6 c27"
                   >
                     ...
                   </h5>
@@ -1525,11 +1534,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-fzomME c25"
+                class="sc-fzomME c26"
                 type="button"
               >
                 <h5
-                  class="c6 c26"
+                  class="c6 c27"
                 >
                   30
                 </h5>
@@ -1537,11 +1546,11 @@ exports[`Table component pagination should call onPageChange prop on click on an
             </li>
             <li>
               <button
-                class="sc-fzomME c23"
+                class="sc-fzomME c24"
                 type="button"
               >
                 <svg
-                  class="c8 c24"
+                  class="c8 c25"
                   fill="none"
                   height="1em"
                   viewBox="0 0 24 24"
@@ -1565,7 +1574,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             Viewing
           </span>
           <strong
-            class="c6 c30"
+            class="c6 c31"
           >
              11 - 20 
           </strong>
@@ -1575,7 +1584,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
             of
           </span>
           <strong
-            class="c6 c30"
+            class="c6 c31"
           >
              300 
           </strong>
@@ -1717,6 +1726,15 @@ exports[`Table component should render properly 1`] = `
   transform: translateY(-50%);
 }
 
+.c18 {
+  display: grid;
+  position: relative;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
 .c12 {
   margin: 0;
   font-size: 1.2rem;
@@ -1777,7 +1795,7 @@ exports[`Table component should render properly 1`] = `
   white-space: nowrap;
 }
 
-.c18 {
+.c19 {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -1797,7 +1815,7 @@ exports[`Table component should render properly 1`] = `
   justify-content: flex-end;
 }
 
-.c18 .c6 {
+.c19 .c6 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -2265,11 +2283,11 @@ exports[`Table component should render properly 1`] = `
           </span>
         </td>
         <td
-          class="c11"
+          class="c18"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -2279,7 +2297,7 @@ exports[`Table component should render properly 1`] = `
             </span>
           </div>
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -2290,7 +2308,7 @@ exports[`Table component should render properly 1`] = `
           </div>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -2310,7 +2328,7 @@ exports[`Table component should render properly 1`] = `
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -2335,11 +2353,11 @@ exports[`Table component should render properly 1`] = `
           </span>
         </td>
         <td
-          class="c11"
+          class="c18"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -2349,7 +2367,7 @@ exports[`Table component should render properly 1`] = `
             </span>
           </div>
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -2360,7 +2378,7 @@ exports[`Table component should render properly 1`] = `
           </div>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -2380,7 +2398,7 @@ exports[`Table component should render properly 1`] = `
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -2405,11 +2423,11 @@ exports[`Table component should render properly 1`] = `
           </span>
         </td>
         <td
-          class="c11"
+          class="c18"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -2419,7 +2437,7 @@ exports[`Table component should render properly 1`] = `
             </span>
           </div>
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -2430,7 +2448,7 @@ exports[`Table component should render properly 1`] = `
           </div>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -2450,7 +2468,7 @@ exports[`Table component should render properly 1`] = `
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -2475,11 +2493,11 @@ exports[`Table component should render properly 1`] = `
           </span>
         </td>
         <td
-          class="c11"
+          class="c18"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -2489,7 +2507,7 @@ exports[`Table component should render properly 1`] = `
             </span>
           </div>
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -2500,7 +2518,7 @@ exports[`Table component should render properly 1`] = `
           </div>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -2520,7 +2538,7 @@ exports[`Table component should render properly 1`] = `
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -2545,11 +2563,11 @@ exports[`Table component should render properly 1`] = `
           </span>
         </td>
         <td
-          class="c11"
+          class="c18"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -2559,7 +2577,7 @@ exports[`Table component should render properly 1`] = `
             </span>
           </div>
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -2570,7 +2588,7 @@ exports[`Table component should render properly 1`] = `
           </div>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -2590,7 +2608,7 @@ exports[`Table component should render properly 1`] = `
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -2615,11 +2633,11 @@ exports[`Table component should render properly 1`] = `
           </span>
         </td>
         <td
-          class="c11"
+          class="c18"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -2629,7 +2647,7 @@ exports[`Table component should render properly 1`] = `
             </span>
           </div>
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -2640,7 +2658,7 @@ exports[`Table component should render properly 1`] = `
           </div>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -2660,7 +2678,7 @@ exports[`Table component should render properly 1`] = `
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -2685,11 +2703,11 @@ exports[`Table component should render properly 1`] = `
           </span>
         </td>
         <td
-          class="c11"
+          class="c18"
           style="grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);"
         >
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -2699,7 +2717,7 @@ exports[`Table component should render properly 1`] = `
             </span>
           </div>
           <div
-            class="c18"
+            class="c19"
           >
             <span
               class="c6 c17"
@@ -2710,7 +2728,7 @@ exports[`Table component should render properly 1`] = `
           </div>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"
@@ -2730,7 +2748,7 @@ exports[`Table component should render properly 1`] = `
           </span>
         </td>
         <td
-          class="c18"
+          class="c19"
         >
           <span
             class="c6 c17"

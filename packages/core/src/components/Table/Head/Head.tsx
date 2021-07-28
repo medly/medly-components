@@ -74,6 +74,7 @@ const Head: React.FC<Props> = React.memo(props => {
                             key={config.field}
                             hidden={config.hidden}
                             gridTemplateColumns={getGridTemplateColumns(config.children)}
+                            isTitleCell
                         >
                             <GroupCellTitle textVariant="h5" textWeight="Strong" uppercase>
                                 {config.title}
