@@ -1,11 +1,11 @@
-import { CloseIcon, SearchIcon } from '@medly-components/icons';
+import { CloseIcon, ExpandIcon, SearchIcon } from '@medly-components/icons';
 import { useCombinedRefs, useKeyPress, useOuterClickNotifier, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useEffect, useRef, useState } from 'react';
 import Options from '../SingleSelect/Options';
 import { Option } from '../SingleSelect/types';
 import { useKeyboardNavigation } from '../SingleSelect/useKeyboardNavigation';
 import * as Styled from './SearchBox.styled';
-import { CloseIconWrapper, SearchIconWrapper } from './styles/icons';
+import { CloseIconWrapper, ExpandIconWrapper, SearchIconWrapper } from './styles/icons';
 import { SearchInput } from './styles/input';
 import { Props } from './types';
 
@@ -20,6 +20,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             onClear,
             onSearch,
             className,
+            showExpandIcon,
             ...restProps
         } = props;
         const wrapperRef = useRef<any>(null),
@@ -91,7 +92,13 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
         }, [enterPress, areOptionsVisible]);
 
         return (
-            <Styled.SearchBoxWrapper ref={wrapperRef} areOptionsVisible={areOptionsVisible} size={size} className={className}>
+            <Styled.SearchBoxWrapper
+                ref={wrapperRef}
+                areOptionsVisible={areOptionsVisible}
+                size={size}
+                className={className}
+                showExpandIcon={showExpandIcon}
+            >
                 <SearchInput
                     placeholder={placeholder}
                     onChange={handleChange}
@@ -101,9 +108,14 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                     {...restProps}
                 />
                 {isTyping && (
-                    <CloseIconWrapper isTyping={isTyping} size={size}>
+                    <CloseIconWrapper isTyping={isTyping} size={size} showExpandIcon={showExpandIcon}>
                         <CloseIcon title="close icon" onClick={clearSearchText} size={size} />
                     </CloseIconWrapper>
+                )}
+                {showExpandIcon && (
+                    <ExpandIconWrapper isTyping={isTyping} size={size}>
+                        <ExpandIcon title="expand icon" size={size} onClick={areOptionsVisible ? hideOptions : showOptions} />
+                    </ExpandIconWrapper>
                 )}
                 <SearchIconWrapper areOptionsVisible={areOptionsVisible} isTyping={isTyping} size={size}>
                     <SearchIcon title="search icon" size={size} onClick={handleSearchIconClick} />

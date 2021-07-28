@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.4.1...@medly-components/theme@2.5.0) (2021-07-28)
+
+
+### Features
+
+* updated border radius ([1bda1cc](https://github.com/medly/medly-components/commit/1bda1ccf0fd25c6016e76249e566b7b68c4cd0de))
+
+
+
+
+
 ## [2.4.1](https://github.com/medly/medly-components/compare/@medly-components/theme@2.4.0...@medly-components/theme@2.4.1) (2021-07-19)
 
 

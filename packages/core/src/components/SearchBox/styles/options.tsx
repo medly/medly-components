@@ -4,8 +4,7 @@ import { Props } from '../types';
 
 const activeOptionStyle = ({ theme }: Props) => {
     return css`
-        border: 1.5px solid ${theme.searchBox.borderColor.active};
-        border-top: 0;
+        border-radius: 0.8rem;
         box-shadow: ${theme.searchBox.options.boxShadow};
         padding-bottom: 1.2rem;
         &::before {
@@ -28,13 +27,14 @@ const nonActiveOptionStyle = () => {
     `;
 };
 
-const getMediumOptionStyle = ({ theme }: Props) => {
-    const border = theme.searchBox.borderRadius.M.active;
+const getMediumOptionStyle = () => {
     return css`
-        top: 4.4rem;
-        border-radius: 0 0 ${border} ${border};
+        top: 4.7rem;
         li {
+            width: calc(100% - 1.6rem);
+            margin: 0 0.8rem;
             padding: 0 2.4rem;
+
             span,
             strong {
                 font-size: 1.6rem;
@@ -44,13 +44,14 @@ const getMediumOptionStyle = ({ theme }: Props) => {
     `;
 };
 
-const getSmallOptionStyle = ({ theme }: Props) => {
-    const border = theme.searchBox.borderRadius.S.active;
+const getSmallOptionStyle = () => {
     return css`
-        top: 3.6rem;
-        border-radius: 0 0 ${border} ${border};
+        top: 3.9rem;
         li {
+            width: calc(100% - 0.8rem);
+            margin: 0 0.4rem;
             padding: 0 2rem;
+
             span,
             strong {
                 font-size: 1.4rem;
@@ -71,6 +72,7 @@ export const getOptionsStyles = ({ theme, size, areOptionsVisible }: Props & { a
     background-color: ${theme.colors.white};
     ${areOptionsVisible ? activeOptionStyle : nonActiveOptionStyle};
     max-height: 21rem;
+    border-radius: 0.4rem;
 
     svg {
         display: none;

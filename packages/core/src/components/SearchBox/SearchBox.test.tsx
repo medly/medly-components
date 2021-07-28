@@ -95,6 +95,18 @@ describe('SearchBox', () => {
         });
     });
 
+    describe('expand icon', () => {
+        const props = {
+            placeholder: 'search',
+            showExpandIcon: true
+        };
+
+        it('should render expand icon when showExpandIcon prop is true', () => {
+            const { queryByTitle } = renderComponent(props);
+            expect(queryByTitle('expand icon')).toBeInTheDocument();
+        });
+    });
+
     describe('options', () => {
         const defaultReturnObj = { target: { value: 'Dummy' } };
         const props = {

@@ -11,18 +11,18 @@ const SearchBox: SearchBoxTheme = {
         M: 'body1'
     },
     padding: {
-        S: '0 0 0 2rem',
-        M: '0 0.3rem 0 2.4rem'
+        S: '0 0 0 1.2rem',
+        M: '0 0.3rem 0 1.6rem'
     },
     textColor: colors.black,
     borderRadius: {
         S: {
-            default: '4rem',
-            active: '2rem'
+            default: '.8rem',
+            active: '.8rem'
         },
         M: {
-            default: '4.8rem',
-            active: '2.4rem'
+            default: '.8rem',
+            active: '.8rem'
         }
     },
     bgColor: {
@@ -41,7 +41,7 @@ const SearchBox: SearchBoxTheme = {
     },
     closeIcon: {
         padding: {
-            S: '0.2rem',
+            S: '0.4rem',
             M: '0.4rem'
         },
         borderRadius: '2.5rem',
@@ -55,7 +55,7 @@ const SearchBox: SearchBoxTheme = {
     },
     searchIcon: {
         padding: {
-            S: '0.2rem',
+            S: '0.4rem',
             M: '0.4rem'
         },
         borderRadius: '2.5rem',
@@ -65,6 +65,20 @@ const SearchBox: SearchBoxTheme = {
         },
         bgColor: {
             hovered: colors.blue[100]
+        }
+    },
+    expandIcon: {
+        padding: {
+            S: '0.4rem',
+            M: '0.4rem'
+        },
+        borderRadius: '2.5rem',
+        color: {
+            default: colors.grey[600],
+            hovered: colors.grey[900]
+        },
+        bgColor: {
+            hovered: colors.grey[100]
         }
     },
     boxShadow: {

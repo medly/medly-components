@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { optionsArray, size, ThemeInterface } from './SearchBox.stories.tsx';
 import * as stories from './SearchBox.stories';
-import { select } from '@storybook/addon-knobs';
+import { select, boolean } from '@storybook/addon-knobs';
 import { SearchBox } from './SearchBox';
 import { action } from '@storybook/addon-actions';
 
@@ -24,6 +24,7 @@ import { action } from '@storybook/addon-actions';
                     onOptionSelected={action('Selected')}
                     options={options}
                     size={select('Size', size, 'M')}
+                    showExpandIcon={boolean('Show ExpandIcon', false)}
                 />
             );
         }}
