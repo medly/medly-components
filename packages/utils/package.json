@@ -1,6 +1,6 @@
 {
     "name": "@medly-components/utils",
-    "version": "1.11.1",
+    "version": "1.11.2",
     "sideEffects": false,
     "main": "dist/cjs/index.js",
     "module": "dist/es/index.js",
@@ -20,7 +20,7 @@
         "swr": "^0.5.4"
     },
     "dependencies": {
-        "@medly-components/theme": "2.4.1",
+        "@medly-components/theme": "2.5.0",
         "date-fns": "^2.16.1"
     }
 }
