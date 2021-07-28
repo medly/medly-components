@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InjectClassName component should inject className prop to all children 1`] = `
+<div>
+  <div
+    class="test-className"
+  >
+    Test div 1
+  </div>
+  <div
+    class="test-className"
+  >
+    Test div 2
+  </div>
+</div>
+`;

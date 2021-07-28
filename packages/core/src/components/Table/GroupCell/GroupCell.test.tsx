@@ -30,4 +30,13 @@ describe('GroupCell', () => {
         );
         expect(container).toMatchSnapshot();
     });
+
+    it('should render GroupCell with right border if it is a title cell', () => {
+        const { container } = render(
+            <GroupCell isTitleCell hidden={false}>
+                <Text>Dummy</Text>
+            </GroupCell>
+        );
+        expect(container).toMatchSnapshot();
+    });
 });

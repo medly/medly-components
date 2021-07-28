@@ -14,16 +14,16 @@ jobs:
             - name: Checkout repo
               uses: actions/checkout@v2
               with:
-                  fetch-depth: 0
                   token: ${{ secrets.ADMIN_TOKEN }}
 
-            - name: Pulls all tags & commits (needed for lerna / semantic release to correctly version)
-              run: git fetch --depth=1000 origin +refs/tags/*:refs/tags/*
+            #needed for lerna / semantic release to correctly version
+            - name: Fetch all tags
+              run: git fetch --prune --unshallow --tags
 
             - name: Configure CI Git User
               run: |
-                  git config --global user.name 'gmukul01'
-                  git config --global user.email 'mukulbansal01@gmail.com'
+                  git config --global user.name 'Release bot'
+                  git config --global user.email 'oss@medly.com'
 
             - name: Setup Node.js
               uses: actions/setup-node@v2
