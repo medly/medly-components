@@ -115,10 +115,11 @@ exports[`SearchBox options should render options when user search option specifi
   justify-content: center;
   border-right: 0.1rem solid #dfe4e9;
   margin: 0.6rem 0;
+  padding-right: 0;
 }
 
 .c2 .c3 {
-  padding: 0.2rem;
+  padding: 0.4rem;
 }
 
 .c2 .c3 * {
@@ -135,7 +136,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c14 .c3 {
-  padding: 0.2rem;
+  padding: 0.4rem;
 }
 
 .c14 .c3 * {
@@ -148,7 +149,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c15 .c3 {
-  padding: 0.2rem;
+  padding: 0.4rem;
 }
 
 .c15 .c3 * {
@@ -179,7 +180,7 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c6 .c3 {
-  padding: 0.2rem;
+  padding: 0.4rem;
 }
 
 .c6 .c3 * {
@@ -203,8 +204,8 @@ exports[`SearchBox options should render options when user search option specifi
   border: none;
   padding-bottom: 0;
   max-height: 21rem;
-  top: 3.6rem;
-  border-radius: 0 0 2rem 2rem;
+  border-radius: 0.4rem;
+  top: 3.9rem;
 }
 
 .c13 .c7::before {
@@ -228,6 +229,8 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c13 .c7 li {
+  width: calc(100% - 0.8rem);
+  margin: 0 0.4rem;
   padding: 0 2rem;
 }
 
@@ -255,9 +258,9 @@ exports[`SearchBox options should render options when user search option specifi
   height: 4rem;
   border: 1.5px solid;
   position: relative;
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 1.2rem;
   background-color: #ffffff;
-  border-radius: 2rem 2rem 0 0;
+  border-radius: .8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
   border-color: #126AFA;
   border-width: 1.5px;
@@ -283,13 +286,12 @@ exports[`SearchBox options should render options when user search option specifi
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #ffffff;
-  border: 1.5px solid #126AFA;
-  border-top: 0;
+  border-radius: 0.8rem;
   box-shadow: 0 0.6rem 0.8rem rgba(18,106,250,0.2);
   padding-bottom: 1.2rem;
   max-height: 21rem;
-  top: 3.6rem;
-  border-radius: 0 0 2rem 2rem;
+  border-radius: 0.4rem;
+  top: 3.9rem;
 }
 
 .c0 .c7::before {
@@ -317,6 +319,8 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c0 .c7 li {
+  width: calc(100% - 0.8rem);
+  margin: 0 0.4rem;
   padding: 0 2rem;
 }
 
@@ -510,9 +514,9 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   height: 4.8rem;
   border: 1.5px solid;
   position: relative;
-  padding: 0 0.3rem 0 2.4rem;
+  padding: 0 0.3rem 0 1.6rem;
   background-color: #ffffff;
-  border-radius: 4.8rem;
+  border-radius: .8rem;
   border-bottom: 1.5px solid;
   border-color: #98A7B7;
   -webkit-transition: border-color 100ms,box-shadow 100ms;
@@ -546,8 +550,8 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   border: none;
   padding-bottom: 0;
   max-height: 21rem;
-  top: 4.4rem;
-  border-radius: 0 0 2.4rem 2.4rem;
+  border-radius: 0.4rem;
+  top: 4.7rem;
 }
 
 .c0 .sc-AxhUy::before {
@@ -571,6 +575,8 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 }
 
 .c0 .sc-AxhUy li {
+  width: calc(100% - 1.6rem);
+  margin: 0 0.8rem;
   padding: 0 2.4rem;
 }
 
@@ -714,7 +720,7 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 }
 
 .c3 .c4 {
-  padding: 0.2rem;
+  padding: 0.4rem;
 }
 
 .c3 .c4 * {
@@ -740,9 +746,9 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   height: 4rem;
   border: 1.5px solid;
   position: relative;
-  padding: 0 0 0 2rem;
+  padding: 0 0 0 1.2rem;
   background-color: #ffffff;
-  border-radius: 4rem;
+  border-radius: .8rem;
   border-bottom: 1.5px solid;
   border-color: #98A7B7;
   -webkit-transition: border-color 100ms,box-shadow 100ms;
@@ -776,8 +782,8 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   border: none;
   padding-bottom: 0;
   max-height: 21rem;
-  top: 3.6rem;
-  border-radius: 0 0 2rem 2rem;
+  border-radius: 0.4rem;
+  top: 3.9rem;
 }
 
 .c0 .sc-AxhUy::before {
@@ -801,6 +807,8 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 }
 
 .c0 .sc-AxhUy li {
+  width: calc(100% - 0.8rem);
+  margin: 0 0.4rem;
   padding: 0 2rem;
 }
 

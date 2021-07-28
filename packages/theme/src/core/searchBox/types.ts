@@ -59,6 +59,19 @@ export type SearchBoxTheme = {
             hovered: string;
         };
     };
+    expandIcon: {
+        padding: {
+            [k in Size]: string;
+        };
+        borderRadius: string;
+        color: {
+            default: string;
+            hovered: string;
+        };
+        bgColor: {
+            hovered: string;
+        };
+    };
     boxShadow: {
         active: string;
         hovered: string;
