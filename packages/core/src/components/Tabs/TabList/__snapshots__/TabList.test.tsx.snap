@@ -52,7 +52,6 @@ exports[`TabList should render properly 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -161,7 +160,6 @@ exports[`TabList should render properly 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;

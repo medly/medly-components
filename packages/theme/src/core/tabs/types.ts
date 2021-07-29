@@ -10,8 +10,8 @@ export interface TabsTheme {
     countColor: string;
     borderColor: {
         active: string;
-        closed: string;
-        open: string;
+        outlined: string;
+        flat: string;
         hovered: string;
     };
     labelColor: Colors;

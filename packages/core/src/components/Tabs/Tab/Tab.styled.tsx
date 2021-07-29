@@ -62,9 +62,9 @@ const getStyle = ({
     }
 `;
 
-const activeStyle = ({ tabStyle, tabBackground, iconColor, theme, bgColor, tabSize }: StyledProps) => css<StyledProps>`
+const activeStyle = ({ variant, tabBackground, iconColor, theme, bgColor, tabSize }: StyledProps) => css<StyledProps>`
     ${props => getStyle({ ...props, styleType: 'active' })}
-    background-color: ${tabStyle === 'CLOSED' && tabBackground === 'WHITE' ? bgColor.active : bgColor.default};
+    background-color: ${variant === 'outlined' && tabBackground === 'WHITE' ? bgColor.active : bgColor.default};
     ${SvgIcon} {
         * {
             fill: ${tabSize === 'S' ? iconColor.active : theme.colors.white};
@@ -98,9 +98,9 @@ const solidStyle = css<StyledProps>`
     border-radius: ${({ theme }) => theme.tabs.solid.tabBorderRadius};
 `;
 
-const flatStyle = css<StyledProps>`
+const flatOutlinedStyle = css<StyledProps>`
     &:first-child {
-        border-left-width: ${({ tabStyle }) => tabStyle === 'CLOSED' && `0.1rem`};
+        border-left-width: ${({ variant }) => variant === 'outlined' && `0.1rem`};
         border-top-left-radius: 0.8rem;
     }
 
@@ -114,10 +114,10 @@ const flatStyle = css<StyledProps>`
         display: block;
         height: 0.4rem;
         bottom: -0.1rem;
-        left: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? '-0.1rem' : '0')};
-        width: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? 'calc(100% + 0.2rem)' : '100%')};
+        left: ${({ variant }) => (variant === 'outlined' ? '-0.1rem' : '0')};
+        width: ${({ variant }) => (variant === 'outlined' ? 'calc(100% + 0.2rem)' : '100%')};
         background-color: ${({ borderColor, active }) => (active ? borderColor.active : 'transparent')};
-        border-radius: ${({ tabStyle }) => tabStyle === 'OPEN' && '0.5rem 0.5rem 0 0'};
+        border-radius: ${({ variant }) => variant === 'flat' && '0.5rem 0.5rem 0 0'};
     }
 `;
 
@@ -134,8 +134,8 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
     box-sizing: border-box;
     font-family: inherit;
     flex: ${({ fraction, variant }) => variant !== 'solid' && fraction};
-    border-color: ${({ borderColor, tabStyle }) => borderColor[tabStyle === 'CLOSED' ? 'closed' : 'open']};
-    border-width: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? `0.1rem 0.1rem 0.1rem 0` : `0 0 0.1rem 0`)};
+    border-color: ${({ borderColor, variant }) => (variant === 'flat' || variant === 'outlined') && borderColor[variant]};
+    border-width: ${({ variant }) => (variant === 'outlined' ? `0.1rem 0.1rem 0.1rem 0` : `0 0 0.1rem 0`)};
     transition: all 100ms ease-out;
     * {
         transition: all 100ms ease-out;
@@ -166,7 +166,7 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
 
     ${({ active }) => (active ? activeStyle : nonActiveStyle)}
     ${({ variant }) => variant === 'solid' && solidStyle};
-    ${({ variant }) => variant === 'flat' && flatStyle};
+    ${({ variant }) => (variant === 'flat' || variant === 'outlined') && flatOutlinedStyle};
 `;
 
 export const LabelAndDetailsWrapper = styled.div`
@@ -174,7 +174,7 @@ export const LabelAndDetailsWrapper = styled.div`
     flex-direction: column;
 `;
 
-export const LabelWrapper = styled.div<{ variant: 'flat' | 'solid' }>`
+export const LabelWrapper = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;

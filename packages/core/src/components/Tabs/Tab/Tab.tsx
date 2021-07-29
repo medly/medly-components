@@ -6,12 +6,10 @@ import { Props } from './types';
 
 export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
     const { id, active, label, icon: Icon = null, helperText, count, disabled, disabledLabel, ...restProps } = props,
-        { tabSize, tabStyle, tabBackground, variant } = useContext(TabsContext);
+        { tabSize, tabBackground, variant } = useContext(TabsContext);
     return (
         <Styled.TabWrapper
-            {...{ id, active, tabSize, tabStyle, tabBackground, ...restProps }}
-            variant={variant}
-            disabled={disabled}
+            {...{ id, active, tabSize, disabled, variant, tabBackground, ...restProps }}
             type="button"
             role="tab"
             aria-selected={active ? 'true' : 'false'}
@@ -20,7 +18,7 @@ export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
         >
             {Icon && <Icon variant={tabSize === 'S' ? 'flat' : 'solid'} />}
             <Styled.LabelAndDetailsWrapper>
-                <Styled.LabelWrapper variant={variant}>
+                <Styled.LabelWrapper>
                     <Styled.Label tabSize={tabSize} id={`${id}-label`}>
                         {label}
                     </Styled.Label>

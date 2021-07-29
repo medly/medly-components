@@ -2,21 +2,20 @@ import { fireEvent, render, screen } from '@test-utils';
 import React from 'react';
 import Tab from './Tab';
 import { Tabs } from './Tabs';
-import { Props } from './types';
+import { Props, Variant } from './types';
 
 const renderer = ({
     defaultActive = 'tab1',
     active = undefined,
     onChange = jest.fn(),
     tabSize = 'S',
-    tabStyle = 'CLOSED',
     tabBackground = 'WHITE',
     forceRender = false,
     hidePanel = false,
     variant = 'flat'
 }: Props) =>
     render(
-        <Tabs {...{ defaultActive, active, onChange, tabSize, tabStyle, tabBackground, forceRender, hidePanel, variant }}>
+        <Tabs {...{ defaultActive, active, onChange, tabSize, tabBackground, forceRender, hidePanel, variant }}>
             <Tab id="tab1" label="Add" count={30} helperText="Details for tab1">
                 Content for the add panel
             </Tab>
@@ -33,16 +32,9 @@ const renderer = ({
     );
 
 describe('Tabs', () => {
-    describe('Variants', () => {
-        it('should render the flat variant properly', () => {
-            const { container } = renderer({ variant: 'flat' });
-            expect(container).toMatchSnapshot();
-        });
-
-        it('should render the solid variant properly', () => {
-            const { container } = renderer({ variant: 'solid' });
-            expect(container).toMatchSnapshot();
-        });
+    test.each(['flat', 'outlined', 'solid'])('should render properly with %s tab variant', (variant: Variant) => {
+        const { container } = renderer({ variant });
+        expect(container).toMatchSnapshot();
     });
 
     it('should hide the tab if hide prop is given', () => {

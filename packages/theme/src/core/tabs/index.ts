@@ -16,8 +16,8 @@ const tabs: TabsTheme = {
     },
     borderColor: {
         active: colors.blue[500],
-        closed: colors.grey[300],
-        open: colors.grey[400],
+        outlined: colors.grey[300],
+        flat: colors.grey[400],
         hovered: colors.grey[800]
     },
     iconColor: {
