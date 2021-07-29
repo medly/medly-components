@@ -3,10 +3,12 @@ import { styled } from '@medly-components/utils';
 import { Props } from '../types';
 import { getIconWrapperStyle } from './utils';
 
-export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean }>`
+export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean; showExpandIcon?: boolean }>`
     ${getIconWrapperStyle};
     border-right: ${({ theme, isTyping }) => isTyping && `0.1rem solid ${theme.colors.grey[200]}`};
     margin: 0.6rem 0;
+    padding-right: ${({ showExpandIcon }) => (showExpandIcon ? '.4rem' : 0)};
+
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.closeIcon.padding[size]};
         * {
@@ -32,6 +34,20 @@ export const SearchIconWrapper = styled.span<Props & { areOptionsVisible?: boole
         &:hover {
             background: ${({ theme: { searchBox }, isTyping }) => (isTyping ? searchBox.searchIcon.bgColor.hovered : 'transparent')};
             border-radius: ${({ theme }) => theme.searchBox.searchIcon.borderRadius};
+        }
+    }
+`;
+
+export const ExpandIconWrapper = styled.span<Props & { isTyping?: boolean }>`
+    ${getIconWrapperStyle}
+    ${SvgIcon} {
+        padding: ${({ theme, size }) => theme.searchBox.expandIcon.padding[size]};
+        * {
+            fill: ${({ theme }) => theme.searchBox.expandIcon.color.default};
+        }
+        &:hover {
+            background: ${({ theme, isTyping }) => (isTyping ? theme.searchBox.expandIcon.bgColor.hovered : 'transparent')};
+            border-radius: ${({ theme }) => theme.searchBox.expandIcon.borderRadius};
         }
     }
 `;

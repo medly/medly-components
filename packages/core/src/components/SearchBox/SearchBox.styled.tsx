@@ -9,7 +9,7 @@ import { Props } from './types';
 const getBorderRadius = ({ theme, areOptionsVisible, size }: Props & { areOptionsVisible?: boolean }) => {
     const border = theme.searchBox.borderRadius[size][areOptionsVisible ? 'active' : 'default'];
     return css`
-        border-radius: ${areOptionsVisible ? `${border} ${border} 0 0` : border};
+        border-radius: ${border};
     `;
 };
 
@@ -41,7 +41,22 @@ const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: Props) => css`
     }
 `;
 
-export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean }>`
+const searchBoxWithExpandStyle = () => css`
+    width: 31.2rem;
+    padding-right: 0.8rem;
+
+    span {
+        width: unset;
+        min-width: unset;
+        margin-right: 0.4rem;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+`;
+
+export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean; showExpandIcon?: boolean }>`
     width: 25.6rem;
     display: flex;
     flex-direction: row;
@@ -64,6 +79,8 @@ export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean
     ${Options.Style} {
         ${getOptionsStyles};
     }
+
     ${getBorderRadius};
     ${({ areOptionsVisible }) => (areOptionsVisible ? activeSearchBoxStyle : nonActiveSearchBoxStyle)};
+    ${({ showExpandIcon }) => showExpandIcon && searchBoxWithExpandStyle}
 `;
