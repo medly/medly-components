@@ -38,7 +38,7 @@ export const SearchIconWrapper = styled.span<Props & { areOptionsVisible?: boole
     }
 `;
 
-export const ExpandIconWrapper = styled.span<Props & { isTyping?: boolean }>`
+export const ExpandIconWrapper = styled.span<Props & { isAdvancedSearchActive?: boolean }>`
     ${getIconWrapperStyle}
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.expandIcon.padding[size]};
@@ -46,8 +46,11 @@ export const ExpandIconWrapper = styled.span<Props & { isTyping?: boolean }>`
             fill: ${({ theme }) => theme.searchBox.expandIcon.color.default};
         }
         &:hover {
-            background: ${({ theme, isTyping }) => (isTyping ? theme.searchBox.expandIcon.bgColor.hovered : 'transparent')};
+            background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.hovered};
             border-radius: ${({ theme }) => theme.searchBox.expandIcon.borderRadius};
         }
     }
+
+    transition: transform 0.2s ease-out;
+    transform: ${({ isAdvancedSearchActive }) => (isAdvancedSearchActive ? 'rotate(180deg)' : 'none')};
 `;

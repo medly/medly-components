@@ -31,7 +31,8 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             optionsRef = useRef<HTMLUListElement>(null),
             [isTyping, updateIsTyping] = useState(false),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
-            [options, setOptions] = useState(defaultOptions);
+            [options, setOptions] = useState(defaultOptions),
+            [isAdvancedSearchActive, setIsAdvancedSearchActive] = useState(false);
 
         useEffect(() => {
             setOptions(props.options);
@@ -46,6 +47,12 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 setOptionsVisibilityState(false);
                 inputRef.current.blur();
                 updateIsTyping(false);
+            }, []),
+            showAdvancedSearch = useCallback(() => {
+                setIsAdvancedSearchActive(true);
+            }, []),
+            hideAdvancedSearch = useCallback(() => {
+                setIsAdvancedSearchActive(false);
             }, []),
             clearSearchText = useCallback(() => {
                 inputRef.current.value = '';
@@ -92,6 +99,8 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             enterPress && isFocused.current && !areOptionsVisible && onSearch && onSearch(inputRef.current.value);
         }, [enterPress, areOptionsVisible]);
 
+        console.log('RENDERING WITH PROPS:', props);
+
         return (
             <Styled.SearchBoxWrapper
                 ref={wrapperRef}
@@ -115,8 +124,12 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                     </CloseIconWrapper>
                 )}
                 {showExpandIcon && (
-                    <ExpandIconWrapper isTyping={isTyping} size={size}>
-                        <ExpandIcon title="expand icon" size={size} onClick={areOptionsVisible ? hideOptions : showOptions} />
+                    <ExpandIconWrapper size={size} isAdvancedSearchActive={isAdvancedSearchActive}>
+                        <ExpandIcon
+                            title="expand icon"
+                            size={size}
+                            onClick={isAdvancedSearchActive ? hideAdvancedSearch : showAdvancedSearch}
+                        />
                     </ExpandIconWrapper>
                 )}
                 <SearchIconWrapper areOptionsVisible={areOptionsVisible} isTyping={isTyping} size={size}>
@@ -134,5 +147,6 @@ SearchBox.defaultProps = {
     options: [],
     placeholder: 'Search',
     size: 'S',
-    showSearchFieldShadow: false
+    showExpandIcon: false,
+    showSearchFieldShadow: true
 };
