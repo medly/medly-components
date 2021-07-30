@@ -8,7 +8,6 @@ export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean; showEx
     border-right: ${({ theme, isTyping }) => isTyping && `0.1rem solid ${theme.colors.grey[200]}`};
     margin: 0.6rem 0;
     padding-right: ${({ showExpandIcon }) => (showExpandIcon ? '.4rem' : 0)};
-
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.closeIcon.padding[size]};
         * {
@@ -50,7 +49,6 @@ export const ExpandIconWrapper = styled.span<Props & { isAdvancedSearchActive?: 
             border-radius: ${({ theme }) => theme.searchBox.expandIcon.borderRadius};
         }
     }
-
     transition: transform 0.2s ease-out;
     transform: ${({ isAdvancedSearchActive }) => (isAdvancedSearchActive ? 'rotate(180deg)' : 'none')};
 `;
