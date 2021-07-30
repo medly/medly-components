@@ -1,13 +1,22 @@
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { Popover } from './Popover.tsx';
 import { withKnobs, boolean, select, color } from '@storybook/addon-knobs';
-import { DummyDiv, DummyWrapper, DummyPopover, interactionTypes, placements } from './Popover.stories.tsx';
+import {
+    DummyDiv,
+    DummyWrapper,
+    DummyPopover,
+    interactionTypes,
+    PlacementContent,
+    PlacementPreviewWrapper,
+    PlacementPreviewColumn,
+    placements
+} from './Popover.stories.tsx';
 
 <Meta title="Core" component={Popover} />
 
 # Popover
 
-Simple popover component which will show popup on hovering/clicking on the content. The basic structure would be like below:
+A simple popover component which will show a popup on hovering/clicking on the content. The basic structure would be like below:
 
 ```tsx
 <Popover interactionType="hover">
@@ -24,13 +33,13 @@ Simple popover component which will show popup on hovering/clicking on the conte
             <Popover interactionType={select('Interaction Type', interactionTypes, 'hover')}>
                 <DummyDiv>Hello</DummyDiv>
                 <Popover.Popup
-                    placement={select('Placement', placements, 'bottom')}
+                    placement={select('Placement', placements, 'right')}
                     fullWidth={boolean('Full Width', false)}
                     fullHeight={boolean('Full Height', false)}
-                    withArrow={boolean('With Arrow', false)}
+                    withArrow={boolean('With Arrow', true)}
                     bgColor={color('Background color', 'white')}
                 >
-                    <DummyPopover>This is Popover</DummyPopover>
+                    <DummyPopover>This is a Popover</DummyPopover>
                 </Popover.Popup>
             </Popover>
         </DummyWrapper>
@@ -39,11 +48,45 @@ Simple popover component which will show popup on hovering/clicking on the conte
 
 ### With Arrow
 
-if you want to use your popup as tooltip, you can set `withArrow` prop as true. Also you can change the background color using `bgColor` prop.
+The popup can be used with/without an arrow using the `withArrow` prop. The arrow makes the popover appear like a tooltip and can be adjusted to various positions. You can also change the background color using `bgColor` prop.
 
-### Note
+### Without Arrow
+<Preview>
+    <DummyWrapper>
+        <Popover>
+            <DummyDiv>Hello</DummyDiv>
+            <Popover.Popup placement="right">
+                <DummyPopover>This is a Popover</DummyPopover>
+            </Popover.Popup>
+        </Popover>
+    </DummyWrapper>
+</Preview>
+
+### Placements
+
+<Preview>
+    <PlacementPreviewWrapper>
+        {placements.map(placement => (
+            <PlacementPreviewColumn>
+                <Popover>
+                    <PlacementContent>{placement}</PlacementContent>
+                    <Popover.Popup
+                        placement={placement}
+                        withArrow
+                    >
+                        <Popover>This is a Popover</Popover>
+                    </Popover.Popup>
+                </Popover>
+            </PlacementPreviewColumn>
+        ))}
+    </PlacementPreviewWrapper>
+</Preview>
+
+#### Note
 
 > You can also override the style of `Popover.Style` & `Popover.Popup.Style`
+
+### Accessing current state
 
 We have also exposed `Popover.Context`, so that you can find out the latest open state. Popover context can be used like below:
 
@@ -54,6 +97,7 @@ const [isOpen, setOpenState] = useContext(Popover.Context);
 Type of Popover Context is:
 
 ```tsx
+import * as React from 'react';
 export type PopoverContextType = [
     boolean /** Current open state */,
     React.Dispatch<React.SetStateAction<boolean>> /** Function to be called to toggle the open state */
