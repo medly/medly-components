@@ -99,8 +99,6 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             enterPress && isFocused.current && !areOptionsVisible && onSearch && onSearch(inputRef.current.value);
         }, [enterPress, areOptionsVisible]);
 
-        console.log('RENDERING WITH PROPS:', props);
-
         return (
             <Styled.SearchBoxWrapper
                 ref={wrapperRef}
