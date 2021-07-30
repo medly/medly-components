@@ -3,10 +3,10 @@ import { Props } from '../types';
 
 export const getSearchBoxSize = ({ theme, size }: Props) => theme.searchBox.height[size];
 
-export const getBorderAndBoxShadow = (color: string, boxShadow: string) => {
+export const getBorderAndBoxShadow = (color: string, boxShadow: string, showSearchFieldShadow: boolean) => {
     return css`
         border-color: ${color};
-        box-shadow: ${boxShadow};
+        box-shadow: ${showSearchFieldShadow ? boxShadow : 'none'};
     `;
 };
 

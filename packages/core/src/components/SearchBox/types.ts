@@ -20,6 +20,8 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'size'>, WithTh
     options?: Option[];
     /** Enables the expand icon */
     showExpandIcon?: boolean;
+    /** Enables box shadow around the search field */
+    showSearchFieldShadow?: boolean;
     /** Function to be called on clear icon click */
     onClear?: () => void;
     /** Function to be called on search icon click */

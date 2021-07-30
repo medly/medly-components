@@ -21,6 +21,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             onSearch,
             className,
             showExpandIcon,
+            showSearchFieldShadow,
             ...restProps
         } = props;
         const wrapperRef = useRef<any>(null),
@@ -98,6 +99,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 size={size}
                 className={className}
                 showExpandIcon={showExpandIcon}
+                showSearchFieldShadow={showSearchFieldShadow}
             >
                 <SearchInput
                     placeholder={placeholder}
@@ -131,5 +133,6 @@ SearchBox.Style = Styled.SearchBoxWrapper;
 SearchBox.defaultProps = {
     options: [],
     placeholder: 'Search',
-    size: 'S'
+    size: 'S',
+    showSearchFieldShadow: false
 };
