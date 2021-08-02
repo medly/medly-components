@@ -30,7 +30,6 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                 isLoading,
                 selectedRowIds,
                 showRowWithCardStyle,
-                withActionBar,
                 withPagination,
                 onScrolledToBottom,
                 ...restProps
@@ -102,7 +101,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                     }}
                 >
                     <HiddenDiv ref={hiddenDivRef} />
-                    {withActionBar && selectedRowIds.length > 0 && <ActionBar />}
+                    {restProps.actions.length && selectedRowIds.length > 0 && <ActionBar />}
                     <TableStyled
                         {...restProps}
                         ref={tableRef}
@@ -149,7 +148,7 @@ Table.defaultProps = {
     defaultActivePage: 1,
     rowClickDisableKey: '',
     rowSelectionDisableKey: '',
-    withActionBar: false,
+    actions: [],
     withPagination: false,
     totalItems: 0,
     itemsPerPage: 20,

@@ -758,6 +758,7 @@ exports[`Table component pagination should call onPageChange prop on click on an
   >
     4
   </div>
+  0
   <table
     class="c1"
   >
@@ -2069,6 +2070,7 @@ exports[`Table component should render properly 1`] = `
   >
     4
   </div>
+  0
   <table
     class="c1"
   >

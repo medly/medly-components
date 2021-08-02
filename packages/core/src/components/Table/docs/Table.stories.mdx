@@ -75,7 +75,6 @@ Simple `Table` component to show set of data.
                         size={select('Size', ['XS', 'S', 'M', 'L'], 'M')}
                         showRowWithCardStyle={boolean('Show Row With Card Style', false)}
                         expandedRowComponent={ExpandedRowComponent}
-                        withActionBar={boolean('Enable action bar', true)}
                         actions={Actions}
                         withMinimap={boolean('Enable minimap', false)}
                         withPagination={boolean('Enable pagination', true)}
@@ -240,7 +239,7 @@ export const Actions = [
     </Button>
 ];
 
-<Table data={tableData} columns={columns} withActionBar={true} actions={Actions} />
+<Table data={tableData} columns={columns} withActionBar={true} actions={Actions} />;
 ```
 
 ## Minimap
