@@ -101,7 +101,7 @@ export const Table: FC<TableProps> & WithStyle & StaticProps = React.memo(
                     }}
                 >
                     <HiddenDiv ref={hiddenDivRef} />
-                    {restProps.actions.length && selectedRowIds.length > 0 && <ActionBar />}
+                    {!!restProps.actions.length && selectedRowIds.length > 0 && <ActionBar />}
                     <TableStyled
                         {...restProps}
                         ref={tableRef}
