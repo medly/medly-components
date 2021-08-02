@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.7.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.6.3...@medly-components/core@2.7.0) (2021-08-02)
+
+
+### Features
+
+* add "solid" tabs variant ([#320](https://github.com/medly/medly-components/issues/320)) ([5c42856](https://github.com/medly/medly-components/commit/5c428564e6f8452f8500a413504539596aa570d2))
+
+
+
+
+
 ## [2.6.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.6.2...@medly-components/core@2.6.3) (2021-08-02)
 
 **Note:** Version bump only for package @medly-components/core

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.24.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.23.9...@medly-components/layout@1.24.0) (2021-08-02)
+
+
+### Features
+
+* add "solid" tabs variant ([#320](https://github.com/medly/medly-components/issues/320)) ([5c42856](https://github.com/medly/medly-components/commit/5c428564e6f8452f8500a413504539596aa570d2))
+
+
+
+
+
 ## [1.23.9](https://github.com/medly/medly-components/compare/@medly-components/layout@1.23.8...@medly-components/layout@1.23.9) (2021-08-02)
 
 **Note:** Version bump only for package @medly-components/layout
