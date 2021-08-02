@@ -198,7 +198,7 @@ exports[`SearchBox options should render options when user search option specifi
   padding: 0;
   box-sizing: content-box;
   left: -1.5px;
-  width: calc(100% + 3px);
+  width: calc(100% + 0.3rem);
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #ffffff;
@@ -275,7 +275,7 @@ exports[`SearchBox options should render options when user search option specifi
   padding: 0;
   box-sizing: content-box;
   left: -1.5px;
-  width: calc(100% + 3px);
+  width: calc(100% + 0.3rem);
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #ffffff;
@@ -524,7 +524,7 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   padding: 0;
   box-sizing: content-box;
   left: -1.5px;
-  width: calc(100% + 3px);
+  width: calc(100% + 0.3rem);
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #ffffff;
@@ -748,7 +748,7 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   padding: 0;
   box-sizing: content-box;
   left: -1.5px;
-  width: calc(100% + 3px);
+  width: calc(100% + 0.3rem);
   overflow-x: hidden;
   overflow-y: auto;
   background-color: #ffffff;
