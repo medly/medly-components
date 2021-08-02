@@ -1,6 +1,7 @@
 import { useKeyPress, WithStyle } from '@medly-components/utils';
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import Tab from '../Tab';
+import { TabsContext } from '../Tabs.context';
 import * as Styled from './TabList.styled';
 import { Props } from './types';
 
@@ -18,7 +19,10 @@ export const TabList: React.FC<Props> & WithStyle = React.memo(props => {
                     .map((child: any) => child.props.id),
             [children]
         ),
-        { 0: first, [tabIds.length - 1]: last } = tabIds;
+        { 0: first, [tabIds.length - 1]: last } = tabIds,
+        activeTabIdx = tabIds.indexOf(active),
+        totalTabs = React.Children.toArray(children).length,
+        { tabSize, variant } = useContext(TabsContext);
 
     useEffect(() => {
         rightPress && isFocused && (active === last ? onChange(first) : onChange(tabIds[tabIds.indexOf(active) + 1]));
@@ -37,10 +41,24 @@ export const TabList: React.FC<Props> & WithStyle = React.memo(props => {
         changeFocusState = useCallback(() => setFocusState(val => !val), []);
 
     return (
-        <Styled.TabList onFocus={changeFocusState} onBlur={changeFocusState} {...restProps}>
+        <Styled.TabList variant={variant} tabSize={tabSize} onFocus={changeFocusState} onBlur={changeFocusState} {...restProps}>
+            {variant === 'solid' && <Styled.Slider tabSize={tabSize} active={activeTabIdx} totalTabs={totalTabs} />}
             {React.Children.toArray(props.children).reduce((acc: any[], child: any) => {
                 const { id, label, hide } = child.props;
-                !hide && acc.push(<Tab key={id} active={id === active} label={label} onClick={handleChange(id)} {...child.props} />);
+                const hideTab = hide && variant !== 'solid';
+
+                !hideTab &&
+                    acc.push(
+                        <Tab
+                            key={id}
+                            active={id === active}
+                            label={label}
+                            onClick={handleChange(id)}
+                            totalTabs={totalTabs}
+                            variant={variant}
+                            {...child.props}
+                        />
+                    );
                 return acc;
             }, [])}
         </Styled.TabList>

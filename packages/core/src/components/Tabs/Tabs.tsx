@@ -9,7 +9,18 @@ import { Props, StaticProps } from './types';
 
 export const Tabs: React.FC<Props> & StaticProps & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
-        const { hidePanel, defaultActive, active, onChange, children, tabSize, tabStyle, tabBackground, forceRender, ...restProps } = props,
+        const {
+                hidePanel,
+                defaultActive,
+                active,
+                onChange,
+                children,
+                tabSize,
+                tabBackground,
+                forceRender,
+                variant,
+                ...restProps
+            } = props,
             tabsId = props.id || 'medly-tabs',
             tabIds = useMemo(
                 () =>
@@ -22,7 +33,7 @@ export const Tabs: React.FC<Props> & StaticProps & WithStyle = React.memo(
             ),
             [key, setKey] = useState(defaultActive || tabIds[0]),
             activeTab = useMemo(() => active || key, [active, key]),
-            tabsContext = useMemo(() => ({ tabSize, tabStyle, tabBackground }), [tabSize, tabStyle, tabBackground]);
+            tabsContext = useMemo(() => ({ tabSize, tabBackground, variant }), [tabSize, tabBackground, variant]);
 
         const handleTabChange = useCallback(
             (id: any) => {
@@ -57,8 +68,8 @@ Tabs.TabList = TabList;
 Tabs.TabPanel = TabPanel;
 Tabs.defaultProps = {
     tabSize: 'S',
-    tabStyle: 'OPEN',
     tabBackground: 'WHITE',
     forceRender: false,
-    hidePanel: false
+    hidePanel: false,
+    variant: 'flat'
 };

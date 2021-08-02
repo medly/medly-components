@@ -1,5 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
-import { css, styled } from '@medly-components/utils';
+import { centerAligned, css, getFontStyle, styled } from '@medly-components/utils';
 import Text from '../../Text';
 import { TabSize } from '../types';
 import { StyledProps } from './types';
@@ -13,7 +13,16 @@ export const Count = styled.span<{ tabSize: TabSize }>`
     font-size: ${({ tabSize }) => (tabSize === 'S' ? '1.1rem' : '1.2rem')};
 `;
 
-export const Label = styled(Text)``;
+export const Label = styled(Text)<{ tabSize: TabSize }>`
+    ${({ theme, tabSize }) => getFontStyle({ theme, fontVariant: theme.tabs.label.fontVariant[tabSize], fontWeight: 'Medium' })}
+`;
+
+export const DisabledLabel = styled(Text)<{ tabSize: TabSize }>`
+    ${({ theme, tabSize }) =>
+        getFontStyle({ theme, fontVariant: theme.tabs.solid.disabledLabel.fontVariant[tabSize], fontWeight: 'Medium' })}
+    color: ${({ theme }) => theme.tabs.labelColor.disabled};
+    text-align: center;
+`;
 
 export const HelperText = styled(Text)`
     text-align: left;
@@ -28,14 +37,17 @@ const getStyle = ({
     bgColor,
     tabSize,
     countBgColor,
-    helperTextColor
+    helperTextColor,
+    variant
 }: StyledProps & { styleType: 'active' | 'default' | 'hovered' | 'disabled' }) => css`
     background-color: ${bgColor[styleType]};
     ${Label} {
         color: ${labelColor[styleType]};
+        line-height: ${variant === 'solid' && styleType === 'disabled' && '1.6rem'};
     }
     ${HelperText} {
         color: ${helperTextColor[styleType]};
+        text-align: ${variant === 'solid' && 'center'};
     }
     ${Count} {
         background-color: ${countBgColor[styleType]};
@@ -50,9 +62,9 @@ const getStyle = ({
     }
 `;
 
-const activeStyle = ({ tabStyle, tabBackground, iconColor, theme, bgColor, tabSize }: StyledProps) => css<StyledProps>`
+const activeStyle = ({ variant, tabBackground, iconColor, theme, bgColor, tabSize }: StyledProps) => css<StyledProps>`
     ${props => getStyle({ ...props, styleType: 'active' })}
-    background-color: ${tabStyle === 'CLOSED' && tabBackground === 'WHITE' ? bgColor.active : bgColor.default};
+    background-color: ${variant === 'outlined' && tabBackground === 'WHITE' ? bgColor.active : bgColor.default};
     ${SvgIcon} {
         * {
             fill: ${tabSize === 'S' ? iconColor.active : theme.colors.white};
@@ -72,28 +84,23 @@ const disabledStyle = css<StyledProps>`
     ${props => getStyle({ ...props, styleType: 'disabled' })}
 `;
 
-export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs }))<StyledProps>`
-    padding: 1.6rem;
-    user-select: none;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-flow: row wrap;
-    position: relative;
-    border-style: solid;
-    box-sizing: border-box;
-    font-family: inherit;
-    flex: ${({ fraction }) => fraction};
-    border-color: ${({ borderColor, tabStyle }) => borderColor[tabStyle === 'CLOSED' ? 'closed' : 'open']};
-    border-width: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? `0.1rem 0.1rem 0.1rem 0` : `0 0 0.1rem 0`)};
-    transition: all 100ms ease-out;
-    * {
-        transition: all 100ms ease-out;
-    }
+const getSolidTabWidth = ({ totalTabs, theme, tabSize }: StyledProps) => {
+    const paddingBetweenTabs = `calc(${totalTabs - 1} * ${theme.tabs.solid.tabList.padding[tabSize]} / ${totalTabs}})`;
+    return `calc(${100 / totalTabs}% - ${paddingBetweenTabs})`;
+};
 
+const solidStyle = css<StyledProps>`
+    ${centerAligned('flex')}
+    width: ${getSolidTabWidth};
+    border: none;
+    background-color: transparent;
+    padding: 0.8rem 0;
+    border-radius: ${({ theme }) => theme.tabs.solid.tabBorderRadius};
+`;
+
+const flatOutlinedStyle = css<StyledProps>`
     &:first-child {
-        border-left-width: ${({ tabStyle }) => tabStyle === 'CLOSED' && `0.1rem`};
+        border-left-width: ${({ variant }) => variant === 'outlined' && `0.1rem`};
         border-top-left-radius: 0.8rem;
     }
 
@@ -107,11 +114,33 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
         display: block;
         height: 0.4rem;
         bottom: -0.1rem;
-        left: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? '-0.1rem' : '0')};
-        width: ${({ tabStyle }) => (tabStyle === 'CLOSED' ? 'calc(100% + 0.2rem)' : '100%')};
+        left: ${({ variant }) => (variant === 'outlined' ? '-0.1rem' : '0')};
+        width: ${({ variant }) => (variant === 'outlined' ? 'calc(100% + 0.2rem)' : '100%')};
         background-color: ${({ borderColor, active }) => (active ? borderColor.active : 'transparent')};
-        border-radius: ${({ tabStyle }) => tabStyle === 'OPEN' && '0.5rem 0.5rem 0 0'};
+        border-radius: ${({ variant }) => variant === 'flat' && '0.5rem 0.5rem 0 0'};
     }
+`;
+
+export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs }))<StyledProps>`
+    padding: 1.6rem;
+    user-select: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    position: relative;
+    border-style: solid;
+    box-sizing: border-box;
+    font-family: inherit;
+    flex: ${({ fraction, variant }) => variant !== 'solid' && fraction};
+    border-color: ${({ borderColor, variant }) => (variant === 'flat' || variant === 'outlined') && borderColor[variant]};
+    border-width: ${({ variant }) => (variant === 'outlined' ? `0.1rem 0.1rem 0.1rem 0` : `0 0 0.1rem 0`)};
+    transition: all 100ms ease-out;
+    * {
+        transition: all 100ms ease-out;
+    }
+
     &:focus {
         outline: none;
     }
@@ -136,6 +165,8 @@ export const TabWrapper = styled('button').attrs(({ theme }) => ({ ...theme.tabs
     }
 
     ${({ active }) => (active ? activeStyle : nonActiveStyle)}
+    ${({ variant }) => variant === 'solid' && solidStyle};
+    ${({ variant }) => (variant === 'flat' || variant === 'outlined') && flatOutlinedStyle};
 `;
 
 export const LabelAndDetailsWrapper = styled.div`

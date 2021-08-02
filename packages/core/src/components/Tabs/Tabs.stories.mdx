@@ -3,7 +3,7 @@ import { Tabs } from './Tabs.tsx';
 import Tab from './Tab';
 import { select, boolean } from '@storybook/addon-knobs';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import { sizes, tabBg, tabStyle, ThemeInterface, DarkBackground } from './Tabs.stories';
+import { sizes, tabBg, ThemeInterface, DarkBackground } from './Tabs.stories';
 import { DashboardIcon, DeleteIcon, EditIcon } from '@medly-components/icons';
 
 <Meta
@@ -49,8 +49,8 @@ Use `Tabs.Tab` to add tab in `Tabs` component.
                 aria-label="Basic Tabs"
                 tabSize={select('Tab Size', sizes, 'S')}
                 tabBackground={select('Tab Background', tabBg, 'WHITE')}
-                tabStyle={select('Tab Style', tabStyle, 'OPEN')}
                 forceRender={boolean('Force Render', false)}
+                variant={select('Variant', ['flat', 'outlined', 'solid'], 'flat')}
             >
                 <Tabs.Tab id="tab1" label="Add" helperText="Details" count={0}>
                     Content for the add panel
@@ -58,7 +58,7 @@ Use `Tabs.Tab` to add tab in `Tabs` component.
                 <Tabs.Tab id="tab2" label="Edit" helperText="Details" count={10}>
                     Content for the edit panel
                 </Tabs.Tab>
-                <Tabs.Tab id="tab3" label="Delete" helperText="Details" count={30} disabled={true}>
+                <Tabs.Tab id="tab3" label="Delete" helperText="Details" count={30} disabled={true} disabledLabel="(Disabled)">
                     Content for the delete panel
                 </Tabs.Tab>
             </Tabs>
@@ -79,7 +79,6 @@ We can also provide `icon` prop.
                 aria-label="WithIcon Tabs"
                 tabSize={select('Tab Size', sizes, 'S')}
                 tabBackground={select('Tab Background', tabBg, 'WHITE')}
-                tabStyle={select('Tab Style', tabStyle, 'OPEN')}
                 forceRender={boolean('Force Render', false)}
             >
                 <Tabs.Tab id="tab1" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
@@ -103,7 +102,7 @@ We can also provide `icon` prop.
 > **Note**: HelperText will only be visible in the "L" tab size.
 
 <Preview withToolbar>
-    <Tabs tabSize="L" defaultActive="tab1" aria-label="WithCountAndHelperText Tabs" tabBackground="WHITE" tabStyle="OPEN">
+    <Tabs tabSize="L" defaultActive="tab1" aria-label="WithCountAndHelperText Tabs" tabBackground="WHITE">
         <Tabs.Tab id="tab1" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
             Content for the add panel
         </Tabs.Tab>
@@ -117,7 +116,7 @@ We can also provide `icon` prop.
 </Preview>
 
 <Preview withToolbar>
-    <Tabs tabSize="S" defaultActive="tab1" aria-label="WithCountAndHelperText Tabs" tabBackground="WHITE" tabStyle="OPEN">
+    <Tabs tabSize="S" defaultActive="tab1" aria-label="WithCountAndHelperText Tabs" tabBackground="WHITE">
         <Tabs.Tab id="tab1" label="Add" icon={DashboardIcon}>
             Content for the add panel
         </Tabs.Tab>
@@ -130,12 +129,12 @@ We can also provide `icon` prop.
     </Tabs>
 </Preview>
 
-### Tab Style
+### Tabs Variants
 
-#### 1) Open
+#### 1) Flat
 
 <Preview withToolbar>
-    <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="L" tabStyle="OPEN">
+    <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="L" variant="flat">
         <Tabs.Tab id="tab11" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
             Content for the add panel
         </Tabs.Tab>
@@ -148,10 +147,26 @@ We can also provide `icon` prop.
     </Tabs>
 </Preview>
 
-#### 2) Closed
+#### 2) Outlined
 
 <Preview withToolbar>
-    <Tabs defaultActive="tab11" aria-label="Closed style tabs" tabSize="L" tabStyle="CLOSED">
+    <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="L" variant="outlined">
+        <Tabs.Tab id="tab11" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
+            Content for the add panel
+        </Tabs.Tab>
+        <Tabs.Tab id="tab12" label="Edit" helperText="Details" count={10} icon={EditIcon}>
+            Content for the edit panel
+        </Tabs.Tab>
+        <Tabs.Tab id="tab13" label="Delete" helperText="Details" count={30} icon={DeleteIcon} disabled={true}>
+            Content for the delete panel
+        </Tabs.Tab>
+    </Tabs>
+</Preview>
+
+#### 3) Solid
+
+<Preview withToolbar>
+    <Tabs defaultActive="tab11" aria-label="Closed style tabs" tabSize="L" variant="solid">
         <Tabs.Tab id="tab11" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
             Content for the add panel
         </Tabs.Tab>
@@ -171,7 +186,7 @@ There are three szes available `S` | `M` | `L`.
 #### 1) `S` size
 
 <Preview withToolbar>
-    <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="S" tabStyle="OPEN">
+    <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="S">
         <Tabs.Tab id="tab11" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
             Content for the add panel
         </Tabs.Tab>
@@ -187,7 +202,7 @@ There are three szes available `S` | `M` | `L`.
 #### 1) `M` size
 
 <Preview withToolbar>
-    <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="M" tabStyle="OPEN">
+    <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="M">
         <Tabs.Tab id="tab11" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
             Content for the add panel
         </Tabs.Tab>
@@ -203,7 +218,7 @@ There are three szes available `S` | `M` | `L`.
 #### 1) `L` size
 
 <Preview withToolbar>
-    <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="L" tabStyle="OPEN">
+    <Tabs defaultActive="tab11" aria-label="Open style tabs" tabSize="L">
         <Tabs.Tab id="tab11" label="Add" helperText="Details" count={68} icon={DashboardIcon}>
             Content for the add panel
         </Tabs.Tab>

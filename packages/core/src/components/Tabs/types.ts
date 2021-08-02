@@ -7,7 +7,7 @@ export type TabSize = 'S' | 'M' | 'L';
 
 export type TabBackground = 'WHITE' | 'GREY';
 
-export type TabStyle = 'OPEN' | 'CLOSED';
+export type Variant = 'flat' | 'outlined' | 'solid';
 
 export interface Props extends HTMLProps<HTMLDivElement> {
     /** To be used to render tabs as any html tag */
@@ -20,14 +20,14 @@ export interface Props extends HTMLProps<HTMLDivElement> {
     onChange?: (id: any) => void;
     /** Size for tab */
     tabSize?: TabSize;
-    /** Tab can have OPEN and CLOSED style */
-    tabStyle?: TabStyle;
     /** Background color of the Tabs wrapper */
     tabBackground?: TabBackground;
     /** Force tabs to always stay mounted */
     forceRender?: boolean;
     /** Hide panel if you want to use only tabs as maybe nav link or so */
     hidePanel?: boolean;
+    /** Tabs design */
+    variant?: Variant;
 }
 
 export interface StaticProps {

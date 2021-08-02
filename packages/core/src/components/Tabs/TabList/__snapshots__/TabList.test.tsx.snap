@@ -4,14 +4,25 @@ exports[`TabList should render properly 1`] = `
 .c4 {
   margin: 0;
   color: inherit;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  text-align: initial;
+}
+
+.c6 {
+  font-size: 1.4rem;
   font-weight: 600;
   -webkit-letter-spacing: 0rem;
   -moz-letter-spacing: 0rem;
   -ms-letter-spacing: 0rem;
   letter-spacing: 0rem;
-  line-height: 2.6rem;
-  text-align: initial;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c1 {
@@ -41,7 +52,6 @@ exports[`TabList should render properly 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
@@ -52,25 +62,6 @@ exports[`TabList should render properly 1`] = `
 .c1 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
-}
-
-.c1:first-child {
-  border-top-left-radius: 0.8rem;
-}
-
-.c1:last-child {
-  border-top-right-radius: 0.8rem;
-}
-
-.c1::after {
-  content: '';
-  position: absolute;
-  display: block;
-  height: 0.4rem;
-  bottom: -0.1rem;
-  left: 0;
-  width: 100%;
-  background-color: #126AFA;
 }
 
 .c1:focus {
@@ -90,7 +81,7 @@ exports[`TabList should render properly 1`] = `
   color: #b0bcc8;
 }
 
-.c1:disabled .sc-AxhUy {
+.c1:disabled .sc-AxgMl {
   color: #b0bcc8;
 }
 
@@ -120,7 +111,7 @@ exports[`TabList should render properly 1`] = `
   color: #126AFA;
 }
 
-.c1 .sc-AxhUy {
+.c1 .sc-AxgMl {
   color: #607890;
 }
 
@@ -142,7 +133,7 @@ exports[`TabList should render properly 1`] = `
   fill: #ffffff;
 }
 
-.c6 {
+.c7 {
   padding: 1.6rem;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -169,126 +160,106 @@ exports[`TabList should render properly 1`] = `
   border-style: solid;
   box-sizing: border-box;
   font-family: inherit;
-  border-color: #b0bcc8;
   border-width: 0 0 0.1rem 0;
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
   background-color: #ffffff;
 }
 
-.c6 * {
+.c7 * {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
 
-.c6:first-child {
-  border-top-left-radius: 0.8rem;
-}
-
-.c6:last-child {
-  border-top-right-radius: 0.8rem;
-}
-
-.c6::after {
-  content: '';
-  position: absolute;
-  display: block;
-  height: 0.4rem;
-  bottom: -0.1rem;
-  left: 0;
-  width: 100%;
-  background-color: transparent;
-}
-
-.c6:focus {
+.c7:focus {
   outline: none;
 }
 
-.c6:disabled {
+.c7:disabled {
   cursor: not-allowed;
   background-color: #ffffff;
 }
 
-.c6:disabled::after {
+.c7:disabled::after {
   background-color: transparent;
 }
 
-.c6:disabled .c5 {
+.c7:disabled .c5 {
   color: #b0bcc8;
 }
 
-.c6:disabled .sc-AxhUy {
+.c7:disabled .sc-AxgMl {
   color: #b0bcc8;
 }
 
-.c6:disabled .sc-AxiKw {
+.c7:disabled .sc-AxiKw {
   background-color: #b0bcc8;
 }
 
-.c6:disabled .sc-AxjAm {
+.c7:disabled .sc-AxjAm {
   font-size: 2.4rem;
   padding: 0;
   background-color: #F7F8F9;
 }
 
-.c6:disabled .sc-AxjAm * {
+.c7:disabled .sc-AxjAm * {
   fill: #b0bcc8;
 }
 
-.c6:not(:disabled):hover {
+.c7:not(:disabled):hover {
   cursor: pointer;
 }
 
-.c6 .sc-AxjAm {
+.c7 .sc-AxjAm {
   margin-right: 1.6rem;
 }
 
-.c6 .c5 {
+.c7 .c5 {
   color: #607890;
 }
 
-.c6 .sc-AxhUy {
+.c7 .sc-AxgMl {
   color: #607890;
 }
 
-.c6 .sc-AxiKw {
+.c7 .sc-AxiKw {
   background-color: #607890;
 }
 
-.c6 .sc-AxjAm {
+.c7 .sc-AxjAm {
   font-size: 2.4rem;
   padding: 0;
   background-color: #eff2f4;
 }
 
-.c6 .sc-AxjAm * {
+.c7 .sc-AxjAm * {
   fill: #607890;
 }
 
-.c6:not(:disabled):hover {
+.c7:not(:disabled):hover {
   background-color: #F7F8F9;
   background-color: #F7F8F9;
 }
 
-.c6:not(:disabled):hover .c5 {
+.c7:not(:disabled):hover .c5 {
   color: #435465;
 }
 
-.c6:not(:disabled):hover .sc-AxhUy {
+.c7:not(:disabled):hover .sc-AxgMl {
   color: #435465;
 }
 
-.c6:not(:disabled):hover .sc-AxiKw {
+.c7:not(:disabled):hover .sc-AxiKw {
   background-color: #435465;
 }
 
-.c6:not(:disabled):hover .sc-AxjAm {
+.c7:not(:disabled):hover .sc-AxjAm {
   font-size: 2.4rem;
   padding: 0;
   background-color: #dfe4e9;
 }
 
-.c6:not(:disabled):hover .sc-AxjAm * {
+.c7:not(:disabled):hover .sc-AxjAm * {
   fill: #435465;
 }
 
@@ -349,6 +320,7 @@ exports[`TabList should render properly 1`] = `
       aria-selected="true"
       class="c1"
       id="tab1"
+      label="[object Object]"
       role="tab"
       tabindex="0"
       type="button"
@@ -360,7 +332,7 @@ exports[`TabList should render properly 1`] = `
           class="c3"
         >
           <span
-            class="c4 c5 "
+            class="c4 c5 c6"
             id="tab1-label"
           >
             Add
@@ -371,8 +343,9 @@ exports[`TabList should render properly 1`] = `
     <button
       aria-controls="panel-tab2"
       aria-selected="false"
-      class="c6"
+      class="c7"
       id="tab2"
+      label="[object Object]"
       role="tab"
       tabindex="-1"
       type="button"
@@ -384,7 +357,7 @@ exports[`TabList should render properly 1`] = `
           class="c3"
         >
           <span
-            class="c4 c5 "
+            class="c4 c5 c6"
             id="tab2-label"
           >
             Edit
