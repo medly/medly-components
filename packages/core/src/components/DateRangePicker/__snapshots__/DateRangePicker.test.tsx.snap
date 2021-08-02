@@ -555,7 +555,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom" 
 }
 
 <div
-  class="sc-fznKkj c0"
+  class="sc-fzqBZW c0"
   id="contract-calendar"
 >
   <div
@@ -2339,7 +2339,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-e
 }
 
 <div
-  class="sc-fznKkj c0"
+  class="sc-fzqBZW c0"
   id="contract-calendar"
 >
   <div
@@ -4123,7 +4123,7 @@ exports[`DateRangePicker popover placement should render properly with "bottom-s
 }
 
 <div
-  class="sc-fznKkj c0"
+  class="sc-fzqBZW c0"
   id="contract-calendar"
 >
   <div
@@ -5909,7 +5909,7 @@ exports[`DateRangePicker popover placement should render properly with "left" po
 }
 
 <div
-  class="sc-fznKkj c0"
+  class="sc-fzqBZW c0"
   id="contract-calendar"
 >
   <div
@@ -7692,7 +7692,7 @@ exports[`DateRangePicker popover placement should render properly with "left-end
 }
 
 <div
-  class="sc-fznKkj c0"
+  class="sc-fzqBZW c0"
   id="contract-calendar"
 >
   <div
@@ -9475,7 +9475,7 @@ exports[`DateRangePicker popover placement should render properly with "left-sta
 }
 
 <div
-  class="sc-fznKkj c0"
+  class="sc-fzqBZW c0"
   id="contract-calendar"
 >
   <div
@@ -11261,7 +11261,7 @@ exports[`DateRangePicker popover placement should render properly with "right" p
 }
 
 <div
-  class="sc-fznKkj c0"
+  class="sc-fzqBZW c0"
   id="contract-calendar"
 >
   <div
@@ -13044,7 +13044,7 @@ exports[`DateRangePicker popover placement should render properly with "right-en
 }
 
 <div
-  class="sc-fznKkj c0"
+  class="sc-fzqBZW c0"
   id="contract-calendar"
 >
   <div
@@ -14827,7 +14827,7 @@ exports[`DateRangePicker popover placement should render properly with "right-st
 }
 
 <div
-  class="sc-fznKkj c0"
+  class="sc-fzqBZW c0"
   id="contract-calendar"
 >
   <div
@@ -16613,7 +16613,7 @@ exports[`DateRangePicker popover placement should render properly with "top" pos
 }
 
 <div
-  class="sc-fznKkj c0"
+  class="sc-fzqBZW c0"
   id="contract-calendar"
 >
   <div
@@ -18396,7 +18396,7 @@ exports[`DateRangePicker popover placement should render properly with "top-end"
 }
 
 <div
-  class="sc-fznKkj c0"
+  class="sc-fzqBZW c0"
   id="contract-calendar"
 >
   <div
@@ -20179,7 +20179,7 @@ exports[`DateRangePicker popover placement should render properly with "top-star
 }
 
 <div
-  class="sc-fznKkj c0"
+  class="sc-fzqBZW c0"
   id="contract-calendar"
 >
   <div
@@ -22246,12 +22246,12 @@ exports[`DateRangePicker should render properly 1`] = `
 }
 
 .c1 .c40,
-.c1 .sc-Axmtr {
+.c1 .sc-fzoLsD {
   color: #546A7F;
 }
 
 .c1 .c40 *,
-.c1 .sc-Axmtr * {
+.c1 .sc-fzoLsD * {
   fill: #546A7F;
 }
 
@@ -22298,15 +22298,15 @@ exports[`DateRangePicker should render properly 1`] = `
 
 .c1:focus-within .c40,
 .c1:focus-within:hover .c40,
-.c1:focus-within .sc-Axmtr,
-.c1:focus-within:hover .sc-Axmtr {
+.c1:focus-within .sc-fzoLsD,
+.c1:focus-within:hover .sc-fzoLsD {
   color: #126AFA;
 }
 
 .c1:focus-within .c40 *,
 .c1:focus-within:hover .c40 *,
-.c1:focus-within .sc-Axmtr *,
-.c1:focus-within:hover .sc-Axmtr * {
+.c1:focus-within .sc-fzoLsD *,
+.c1:focus-within:hover .sc-fzoLsD * {
   fill: #126AFA;
 }
 
@@ -22345,7 +22345,7 @@ exports[`DateRangePicker should render properly 1`] = `
     id="contract-wrapper"
   >
     <div
-      class="sc-AxmLO c1"
+      class="sc-fzpans c1"
       id="contract-textFields"
     >
       <svg
@@ -22422,7 +22422,7 @@ exports[`DateRangePicker should render properly 1`] = `
       id="contract-helper-text"
     />
     <div
-      class="sc-fznKkj c15"
+      class="sc-fzqBZW c15"
       id="contract-calendar"
     >
       <div
@@ -24027,7 +24027,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c21,
-.c21 .sc-fzoyAV {
+.c21 .sc-fzpjYC {
   -webkit-transition: all 100ms ease-out;
   transition: all 100ms ease-out;
 }
@@ -24050,7 +24050,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   fill: #b0bcc8;
 }
 
-.c21:disabled .sc-fzoyAV {
+.c21:disabled .sc-fzpjYC {
   color: #b0bcc8;
 }
 
@@ -24063,7 +24063,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   fill: #126AFA;
 }
 
-.c21:not(:disabled):not(:hover) .sc-fzoyAV {
+.c21:not(:disabled):not(:hover) .sc-fzpjYC {
   color: #303C48;
 }
 
@@ -24076,7 +24076,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   fill: #0D4AAF;
 }
 
-.c21:not(:disabled):active .sc-fzoyAV {
+.c21:not(:disabled):active .sc-fzpjYC {
   color: #13181D;
 }
 
@@ -24090,7 +24090,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   fill: #0F5AD5;
 }
 
-.c21:not(:disabled):not(:active):hover .sc-fzoyAV {
+.c21:not(:disabled):not(:active):hover .sc-fzpjYC {
   color: #303C48;
 }
 
@@ -24119,7 +24119,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
   cursor: pointer;
 }
 
-.c19 .c0 .sc-Axmtr {
+.c19 .c0 .sc-fzoLsD {
   -webkit-transition: -webkit-transform 200ms ease-out;
   -webkit-transition: transform 200ms ease-out;
   transition: transform 200ms ease-out;
@@ -24661,12 +24661,12 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 }
 
 .c2 .c45,
-.c2 .sc-Axmtr {
+.c2 .sc-fzoLsD {
   color: #546A7F;
 }
 
 .c2 .c45 *,
-.c2 .sc-Axmtr * {
+.c2 .sc-fzoLsD * {
   fill: #546A7F;
 }
 
@@ -24713,15 +24713,15 @@ exports[`DateRangePicker should render properly with single month 1`] = `
 
 .c2:focus-within .c45,
 .c2:focus-within:hover .c45,
-.c2:focus-within .sc-Axmtr,
-.c2:focus-within:hover .sc-Axmtr {
+.c2:focus-within .sc-fzoLsD,
+.c2:focus-within:hover .sc-fzoLsD {
   color: #126AFA;
 }
 
 .c2:focus-within .c45 *,
 .c2:focus-within:hover .c45 *,
-.c2:focus-within .sc-Axmtr *,
-.c2:focus-within:hover .sc-Axmtr * {
+.c2:focus-within .sc-fzoLsD *,
+.c2:focus-within:hover .sc-fzoLsD * {
   fill: #126AFA;
 }
 
@@ -24760,7 +24760,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
     id="contract-wrapper"
   >
     <div
-      class="sc-AxmLO c2"
+      class="sc-fzpans c2"
       id="contract-textFields"
     >
       <svg
@@ -24837,7 +24837,7 @@ exports[`DateRangePicker should render properly with single month 1`] = `
       id="contract-helper-text"
     />
     <div
-      class="sc-fznKkj c16"
+      class="sc-fzqBZW c16"
       id="contract-calendar"
     >
       <div

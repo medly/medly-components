@@ -1,4 +1,4 @@
-import { centerAligned, styled } from '@medly-components/utils';
+import { centerAligned, styled, css } from '@medly-components/utils';
 import { InteractionType, Placement } from './types';
 
 export const placements: Placement[] = [
@@ -18,25 +18,45 @@ export const placements: Placement[] = [
 
 export const interactionTypes: InteractionType[] = ['hover', 'click'];
 
-export const DummyDiv = styled('div')`
+const commonContentStyles = () => css`
     color: white;
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 50px;
     background-color: steelblue;
     display: inline-block;
-    font-size: 20px;
+    border-radius: 4px;
     ${centerAligned()};
 `;
 
-export const DummyWrapper = styled('div')`
+export const DummyDiv = styled('div')`
+    ${commonContentStyles()};
+    font-size: 20px;
+`;
+
+export const DummyWrapper = styled.div`
     width: 100%;
     height: 100%;
     ${centerAligned()};
 `;
 
-export const DummyPopover = styled('div')`
-    color: white;
-    padding: 1.5rem 2rem;
-    background-color: grey;
+export const DummyPopover = styled.div`
+    padding: 1rem 2rem;
+    border: 1px solid;
+    border-radius: 4px;
+`;
+
+export const PlacementPreviewWrapper = styled.div`
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+`;
+
+export const PlacementPreviewColumn = styled.div`
     ${centerAligned()};
+`;
+
+export const PlacementContent = styled.div`
+    ${commonContentStyles()};
+    font-size: 16px;
+    text-transform: capitalize;
 `;
