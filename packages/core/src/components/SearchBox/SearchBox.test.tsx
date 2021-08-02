@@ -98,7 +98,7 @@ describe('SearchBox', () => {
     describe('expand icon', () => {
         const props = {
             placeholder: 'search',
-            showExpandIcon: true
+            customSearchFilter: true
         };
 
         it('should render expand icon when showExpandIcon prop is true', () => {
