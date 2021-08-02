@@ -49,6 +49,14 @@ export type Return<Data = unknown, Error = unknown> = Omit<SWRResponse<AxiosResp
 };
 ```
 
+If you check `SWRResponse`, we will also get `mutate` function which you can utilise to fetch the data again on any event. This is called bound mutate function. And if you want to call this api from some other component, you can use mutate function from the library with url of the api and the data will be updated wherever `useSWRAxios` is used in the app with the same url.
+
+```tsx
+import { mutate } from 'swr';
+
+const Dummy = () => <button onClick={() => mutate('https://dummyurl.com')}>Click</button>;
+```
+
 ### Example
 
 ```tsx
