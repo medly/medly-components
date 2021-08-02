@@ -93,8 +93,6 @@ export interface TableProps extends Omit<HTMLProps<HTMLTableElement>, 'data' | '
     getGroupedData?: (title: string) => Promise<object[]>;
     /** Actions bar items */
     actions?: Array<JSX.Element>;
-    /** Enable action bar */
-    withActionBar?: boolean;
     /** Enable Pagination */
     withPagination?: boolean;
     /** Total items to be paginated */
