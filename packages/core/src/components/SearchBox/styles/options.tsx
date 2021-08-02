@@ -55,7 +55,7 @@ export const getOptionsStyles = ({ theme, size, areOptionsVisible }: Props & { a
     padding: 0;
     box-sizing: content-box;
     left: -1.5px;
-    width: calc(100% + 3px);
+    width: calc(100% + 0.3rem);
     overflow-x: hidden;
     overflow-y: auto;
     background-color: ${theme.colors.white};
