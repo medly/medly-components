@@ -48,6 +48,17 @@ export const ExpandIconWrapper = styled.span<Props & { isAdvancedSearchActive?: 
             background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.hovered};
             border-radius: ${({ theme }) => theme.searchBox.expandIcon.borderRadius};
         }
+
+        ${({ isAdvancedSearchActive, theme }) =>
+            isAdvancedSearchActive &&
+            `
+            background: ${theme.searchBox.expandIcon.bgColor.hovered};
+            border-radius: ${theme.searchBox.expandIcon.borderRadius};
+
+            * {
+                fill: rgba(95, 111, 213, 1);
+            }
+        `}
     }
     transition: transform 0.2s ease-out;
     transform: ${({ isAdvancedSearchActive }) => (isAdvancedSearchActive ? 'rotate(180deg)' : 'none')};
