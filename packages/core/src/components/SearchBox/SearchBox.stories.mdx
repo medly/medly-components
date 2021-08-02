@@ -24,7 +24,7 @@ import { action } from '@storybook/addon-actions';
                     onOptionSelected={action('Selected')}
                     options={options}
                     size={select('Size', size, 'M')}
-                    showExpandIcon={boolean('Show ExpandIcon', false)}
+                    customSearchFilter={boolean('Show Custom Search Filter', false)}
                     showSearchFieldShadow={boolean('Show Search Field Shadow', true)}
                 />
             );

@@ -56,7 +56,7 @@ const searchBoxWithExpandStyle = () => css`
     }
 `;
 
-export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean; showExpandIcon?: boolean }>`
+export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean; customSearchFilter?: boolean }>`
     width: 25.6rem;
     display: flex;
     flex-direction: row;
@@ -82,5 +82,5 @@ export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean
 
     ${getBorderRadius};
     ${({ areOptionsVisible }) => (areOptionsVisible ? activeSearchBoxStyle : nonActiveSearchBoxStyle)};
-    ${({ showExpandIcon }) => showExpandIcon && searchBoxWithExpandStyle}
+    ${({ customSearchFilter }) => customSearchFilter && searchBoxWithExpandStyle}
 `;

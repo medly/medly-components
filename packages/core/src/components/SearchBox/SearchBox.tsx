@@ -20,7 +20,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             onClear,
             onSearch,
             className,
-            showExpandIcon,
+            customSearchFilter,
             showSearchFieldShadow,
             ...restProps
         } = props;
@@ -105,7 +105,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 areOptionsVisible={areOptionsVisible}
                 size={size}
                 className={className}
-                showExpandIcon={showExpandIcon}
+                customSearchFilter={customSearchFilter}
                 showSearchFieldShadow={showSearchFieldShadow}
             >
                 <SearchInput
@@ -117,11 +117,11 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                     {...restProps}
                 />
                 {isTyping && (
-                    <CloseIconWrapper isTyping={isTyping} size={size} showExpandIcon={showExpandIcon}>
+                    <CloseIconWrapper isTyping={isTyping} size={size} customSearchFilter={customSearchFilter}>
                         <CloseIcon title="close icon" onClick={clearSearchText} size={size} />
                     </CloseIconWrapper>
                 )}
-                {showExpandIcon && (
+                {customSearchFilter && (
                     <ExpandIconWrapper size={size} isAdvancedSearchActive={isAdvancedSearchActive}>
                         <ExpandIcon
                             title="expand icon"
@@ -145,6 +145,6 @@ SearchBox.defaultProps = {
     options: [],
     placeholder: 'Search',
     size: 'S',
-    showExpandIcon: false,
+    customSearchFilter: false,
     showSearchFieldShadow: true
 };
