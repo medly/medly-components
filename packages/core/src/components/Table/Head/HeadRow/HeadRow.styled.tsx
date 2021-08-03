@@ -1,12 +1,12 @@
 import { styled } from '@medly-components/utils';
 import { GridTemplateProps } from '../../types';
-import { Props } from './types';
+import { HeadRowProps } from './types';
 
 export const HeadRow = styled('tr').attrs(({ gridTemplateColumns }: GridTemplateProps) => ({
     style: {
         gridTemplateColumns
     }
-}))<Props>`
+}))<HeadRowProps>`
     display: grid;
     align-items: end;
     user-select: none;

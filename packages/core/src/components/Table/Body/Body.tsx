@@ -6,9 +6,9 @@ import { TBody } from './Body.styled';
 import GroupedRow from './GroupedRow';
 import Row from './Row';
 import { NoResultCell, NoResultRow } from './Row/Row.styled';
-import { Props } from './types';
+import { BodyProps } from './types';
 
-const Body: React.FC<Props> = React.memo(props => {
+const Body: React.FC<BodyProps> = React.memo(props => {
     const { data, groupBy, rowIdentifier, showRowWithCardStyle, noResultRow, tableRef, withMinimap, columns, size } = useContext(
             TableComponentsCommonPropsContext
         ),

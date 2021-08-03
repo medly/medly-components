@@ -1,6 +1,6 @@
 import { MaxColumnSizes, TableColumnConfig } from '../types';
 
-export interface Props {
+export interface TableHeadProps {
     setColumns: React.Dispatch<React.SetStateAction<TableColumnConfig[]>>;
     areAllRowsSelected?: boolean;
     isAnyRowSelected?: boolean;
