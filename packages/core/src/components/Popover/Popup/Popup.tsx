@@ -2,9 +2,9 @@ import { WithStyle } from '@medly-components/utils';
 import React, { useCallback, useContext } from 'react';
 import { PopoverContext } from '../Popover.context';
 import { PopupStyled } from './styled/Popup.styled';
-import { PopupProps } from './types';
+import { PopoverPopupProps } from './types';
 
-export const Popup: React.FC<PopupProps> & WithStyle = React.memo(
+export const Popup: React.FC<PopoverPopupProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const [isOpen] = useContext(PopoverContext),
             stopPropagation = useCallback((e: React.MouseEvent) => e.stopPropagation(), []);
