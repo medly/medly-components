@@ -1,7 +1,7 @@
 import { FontVariants, FontWeights, RadioSizes } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 
-export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChange' | 'type' | 'ref'>, WithThemeProp {
+export interface RadioGroupProps extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChange' | 'type' | 'ref'>, WithThemeProp {
     /** Selected radio value */
     value?: string;
     /** Name to be given to all radio option as html attribute */
