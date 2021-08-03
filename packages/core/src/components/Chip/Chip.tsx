@@ -3,9 +3,9 @@ import { WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback } from 'react';
 import Text from '../Text';
 import * as Styled from './Chip.styled';
-import { Props } from './types';
+import { ChipProps } from './types';
 
-export const Chip: FC<Props> & WithStyle = React.memo(
+export const Chip: FC<ChipProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { label, onDelete, ...restProps } = props;
 

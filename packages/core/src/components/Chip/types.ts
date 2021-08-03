@@ -13,7 +13,7 @@ export interface StyledProps extends ButtonProps, WithThemeProp {
     to?: string;
 }
 
-export interface Props extends StyledProps {
+export interface ChipProps extends StyledProps {
     /** Chip label */
     label: string;
     /** On click function */
