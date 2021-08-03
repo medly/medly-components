@@ -6,9 +6,9 @@ import { DialogBoxContext } from './DialogBox.context';
 import { DialogBoxBackgroundStyled } from './DialogBox.styled';
 import Header from './Header';
 import Popup from './Popup';
-import { DialogBoxStaticProps, Props } from './types';
+import { DialogBoxStaticProps, DialogBoxProps } from './types';
 
-export const DialogBox: FC<Props> & WithStyle & DialogBoxStaticProps = React.memo(
+export const DialogBox: FC<DialogBoxProps> & WithStyle & DialogBoxStaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const { open, onCloseModal, children, minWidth, shouldCloseOnOutsideClick, minHeight, ...restProps } = props,
             id = restProps.id || 'medly-dialog-box',
