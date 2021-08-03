@@ -1,11 +1,11 @@
 import { breakpoints, css, InjectClassName, media, styled } from '@medly-components/utils';
-import { Props } from '../types';
+import { HiddenProps } from '../types';
 
 const hide = css`
     display: none;
 `;
 
-export const HiddenCss = styled(InjectClassName)<Props>`
+export const HiddenCss = styled(InjectClassName)<HiddenProps>`
     ${({ theme, up }) =>
         up &&
         media(breakpoints(theme.breakpoints).up(up))`

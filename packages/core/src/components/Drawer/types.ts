@@ -1,7 +1,7 @@
 import { HTMLProps, WithStyle } from '@medly-components/utils';
-import { Props as FooterProps } from './Footer/types';
+import { DrawerFooterProps  } from './Footer/types';
 
-export interface Props extends HTMLProps<HTMLDivElement> {
+export interface DrawerProps extends HTMLProps<HTMLDivElement> {
     open?: boolean;
     position?: 'left' | 'right';
     onClose: () => void;
@@ -11,7 +11,7 @@ export interface Props extends HTMLProps<HTMLDivElement> {
 
 export interface DrawerStaticProps {
     Content?: React.FC & WithStyle;
-    Footer?: React.FC<FooterProps> & WithStyle;
+    Footer?: React.FC<DrawerFooterProps> & WithStyle;
     Header?: React.FC & WithStyle;
 }
 

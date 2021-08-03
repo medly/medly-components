@@ -1,7 +1,7 @@
 import { css } from '@medly-components/utils';
-import { PopupProps } from '../types';
+import { PopoverPopupProps } from '../types';
 
-const getPositionWithArrow = ({ placement }: PopupProps) => {
+const getPositionWithArrow = ({ placement }: PopoverPopupProps) => {
     switch (placement) {
         case 'top':
             return css`
@@ -112,7 +112,7 @@ const getPositionWithArrow = ({ placement }: PopupProps) => {
     }
 };
 
-export const getStyleWithArrow = css<PopupProps>`
+export const getStyleWithArrow = css<PopoverPopupProps>`
     border-radius: 0.8rem;
     padding: 1.5rem 2rem;
 
