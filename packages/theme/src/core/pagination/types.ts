@@ -1,5 +1,8 @@
+import { FontVariants } from "../font/types";
+
 export interface PaginationTheme {
     /** Theme for page number button */
+    fontVariant?: FontVariants;
     pageNumber: {
         color: {
             default: string;

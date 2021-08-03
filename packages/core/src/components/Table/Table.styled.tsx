@@ -27,7 +27,7 @@ export const TableStyled = styled('table')<TableStyledProps>`
     display: block;
     border: ${({ showRowWithCardStyle, theme }) => !showRowWithCardStyle && `1px solid ${theme.table.borderColor}`};
     padding: ${({ showRowWithCardStyle }) => (showRowWithCardStyle ? '0 0 0.8rem 0' : 0)};
-    border-radius: 0.8rem;
+    border-radius: ${({theme}) => theme.table.borderRadius || '0.8rem'};
     border-collapse: separate;
     border-spacing: 0;
     margin: 0;
