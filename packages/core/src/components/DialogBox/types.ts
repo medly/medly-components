@@ -1,6 +1,6 @@
 import { HTMLProps, WithStyle, WithThemeProp } from '@medly-components/utils';
 import { DialogBoxActionUserProps } from './Actions/types';
-import { Props as DialogBoxPopupProps } from './Popup/types';
+import { DialogBoxPopupProps } from './Popup/types';
 
 export interface DialogBoxProps extends HTMLProps<HTMLDivElement>, WithThemeProp {
     /** Shows modal only when this prop is true */
