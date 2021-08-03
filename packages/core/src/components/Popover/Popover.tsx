@@ -3,9 +3,9 @@ import React, { FC, useCallback, useRef, useState } from 'react';
 import { PopoverContext } from './Popover.context';
 import { Wrapper } from './Popover.styled';
 import Popup from './Popup';
-import { Props, StaticProps } from './types';
+import { PopoverProps, StaticProps } from './types';
 
-export const Popover: FC<Props> & WithStyle & StaticProps = React.memo(({ id, interactionType, ...restProps }) => {
+export const Popover: FC<PopoverProps> & WithStyle & StaticProps = React.memo(({ id, interactionType, ...restProps }) => {
     const openState = useState(false),
         [, setOpenState] = openState,
         wrapperRef = useRef(null),
