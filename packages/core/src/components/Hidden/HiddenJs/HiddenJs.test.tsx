@@ -2,11 +2,11 @@ import { defaultTheme } from '@medly-components/theme';
 import { ThemeContext, useMediaQuery } from '@medly-components/utils';
 import { render } from '@test-utils';
 import React from 'react';
-import { Props } from '../types';
+import { HiddenProps } from '../types';
 import { HiddenJs } from './HiddenJs';
 
 const useMediaQueryMock = jest.fn(),
-    renderComponent = (props: Props) =>
+    renderComponent = (props: HiddenProps) =>
         render(
             <ThemeContext.Provider value={defaultTheme}>
                 <HiddenJs {...props}>Strong text</HiddenJs>
