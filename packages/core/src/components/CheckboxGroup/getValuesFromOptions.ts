@@ -1,6 +1,6 @@
-import { Props } from './types';
+import { CheckboxGroupProps } from './types';
 
-const getValuesFromOptions = (options: Props['options']): string[] =>
+const getValuesFromOptions = (options: CheckboxGroupProps['options']): string[] =>
     options.reduce((acc, curr) => [...acc, ...(Array.isArray(curr.value) ? getValuesFromOptions(curr.value) : [curr.value])], []);
 
 export default getValuesFromOptions;
