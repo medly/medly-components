@@ -3,8 +3,8 @@ import { useCombinedRefs, WithStyle } from '@medly-components/utils';
 import React, { FC, FocusEvent, FormEvent, useCallback, useMemo, useState } from 'react';
 import { SelectorLabel } from '../Selectors';
 import * as Styled from './Checkbox.styled';
-import { Props } from './types';
-export const Checkbox: FC<Props> & WithStyle = React.memo(
+import { CheckboxProps } from './types';
+export const Checkbox: FC<CheckboxProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
             id,
