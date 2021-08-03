@@ -3,9 +3,9 @@ import React, { FC, useCallback, useMemo, useState } from 'react';
 import Checkbox from '../Checkbox';
 import { SelectorGroup } from '../Selectors';
 import getValuesFromOptions from './getValuesFromOptions';
-import { Props } from './types';
+import { CheckboxGroupProps } from './types';
 
-export const CheckboxGroup: FC<Props> & WithStyle = React.memo(
+export const CheckboxGroup: FC<CheckboxGroupProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
             id,
