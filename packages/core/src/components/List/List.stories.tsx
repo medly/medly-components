@@ -2,9 +2,9 @@ import { select } from '@storybook/addon-knobs';
 import React from 'react';
 import Text from '../Text';
 import { List } from './List';
-import { Props } from './types';
+import { ListProps } from './types';
 
-const variant: Props['variant'][] = ['horizontal', 'vertical'];
+const variant: ListProps['variant'][] = ['horizontal', 'vertical'];
 
 export const Basic = () => (
     <List variant={select('Variant', variant, 'vertical')}>
