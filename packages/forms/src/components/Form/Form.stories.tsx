@@ -23,13 +23,8 @@ export const CommonProps: React.FC<
             | 'month'
             | 'week'
             | 'range'
-            | 'reset'
             | 'color'
             | 'search'
-            | 'image'
-            | 'hidden'
-            | 'button'
-            | 'submit'
             | 'nested';
     } & CommonFieldProps
 > = () => null;
