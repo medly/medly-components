@@ -2,9 +2,9 @@ import { CheckboxTheme, defaultTheme } from '@medly-components/theme';
 import React, { useState } from 'react';
 import Button from '../Button';
 import { Checkbox } from './Checkbox';
-import { Props } from './types';
-export const labelPositions: Props['labelPosition'][] = ['left', 'right', 'top', 'bottom'];
-export const sizes: Props['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
+import { CheckboxProps } from './types';
+export const labelPositions: CheckboxProps['labelPosition'][] = ['left', 'right', 'top', 'bottom'];
+export const sizes: CheckboxProps['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
 
 export const ThemeInterface: React.FC<CheckboxTheme> = () => null;
 ThemeInterface.defaultProps = {
