@@ -280,7 +280,7 @@ exports[`SearchBox options should render options when user search option specifi
   overflow-y: auto;
   background-color: #ffffff;
   border-radius: 0.8rem;
-  box-shadow: 0 0.6rem 0.8rem rgba(18,106,250,0.2);
+  box-shadow: 0 0.2rem 0.8rem rgba(96,120,144,0.35);
   padding-bottom: 1.2rem;
   max-height: 21rem;
   border-radius: 0.8rem;
@@ -494,7 +494,7 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   height: 4.8rem;
   border: 1.5px solid;
   position: relative;
-  padding: 0 0.3rem 0 1.6rem;
+  padding: 0 0 0 1.6rem;
   background-color: #ffffff;
   border-radius: .8rem;
   border-bottom: 1.5px solid;
