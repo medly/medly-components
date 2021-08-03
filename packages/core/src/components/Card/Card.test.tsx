@@ -2,7 +2,7 @@ import { render } from '@test-utils';
 import React from 'react';
 import Text from '../Text';
 import { Card } from './Card';
-import { Props } from './types';
+import { CardProps } from './types';
 
 describe('Card component', () => {
     it('should render correctly with all the default props', () => {
@@ -14,7 +14,7 @@ describe('Card component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test.each(['solid', 'flat'])('should render properly with %p variant', (variant: Props['variant']) => {
+    test.each(['solid', 'flat'])('should render properly with %p variant', (variant: CardProps['variant']) => {
         const { container } = render(
             <Card variant={variant}>
                 <Text>Dummy Text</Text>
@@ -23,7 +23,7 @@ describe('Card component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test.each(['block', 'flex'])('should render properly with display %p', (display: Props['display']) => {
+    test.each(['block', 'flex'])('should render properly with display %p', (display: CardProps['display']) => {
         const { container } = render(
             <Card display={display}>
                 <Text>Dummy Text</Text>
