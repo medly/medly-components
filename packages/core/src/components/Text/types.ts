@@ -1,7 +1,7 @@
 import { FontVariants, FontWeights } from '@medly-components/theme';
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
-interface Common extends HTMLProps<HTMLElement>, WithThemeProp {
+interface CommonProps extends HTMLProps<HTMLElement>, WithThemeProp {
     /** Text color */
     textColor?: string;
     /** To use uppercase text */
@@ -12,7 +12,7 @@ interface Common extends HTMLProps<HTMLElement>, WithThemeProp {
     fullWidth?: boolean;
 }
 
-export interface Props extends Common {
+export interface TextProps extends CommonProps {
     /** Text Variant */
     textVariant?: FontVariants;
     /** Text weight */

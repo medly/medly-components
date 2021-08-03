@@ -1,6 +1,6 @@
 import { HTMLProps } from '@medly-components/utils';
 
-export interface Props extends HTMLProps<HTMLDivElement> {
+export interface TabPanelProps extends HTMLProps<HTMLDivElement> {
     active: any;
     forceRender?: boolean;
 }
