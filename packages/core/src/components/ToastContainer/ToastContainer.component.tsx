@@ -4,9 +4,9 @@ import React, { FC } from 'react';
 import Toast from '../Toast';
 import * as Styled from './ToastContainer.styled';
 import { toastStore } from './ToastStore';
-import { Props } from './types';
+import { ToastContainerProps } from './types';
 
-export const ToastContainer: FC<Props> & WithStyle = React.memo(
+export const ToastContainer: FC<ToastContainerProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const toasts = useStore(toastStore);
 
