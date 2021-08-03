@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.8.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.7.0...@medly-components/core@2.8.0) (2021-08-03)
+
+
+### Features
+
+* add isLading prop to form component ([#336](https://github.com/medly/medly-components/issues/336)) ([8206768](https://github.com/medly/medly-components/commit/8206768529bad8afca36fc05bb2975015ceb616b))
+
+
+
+
+
 # [2.7.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.6.3...@medly-components/core@2.7.0) (2021-08-02)
 
 
