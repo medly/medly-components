@@ -45,6 +45,17 @@ exports[`Pagination component should render correctly when total items is 0 1`] 
   margin: 0;
 }
 
+.c1 .sc-AxhCb {
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
 .c2 {
   margin: 0.4rem;
   height: 3.2rem;
@@ -178,7 +189,7 @@ exports[`Pagination component should render correctly with all the default props
   fill: #607890;
 }
 
-.c9 {
+.c10 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -186,7 +197,7 @@ exports[`Pagination component should render correctly with all the default props
   display: inline-flex;
 }
 
-.c6 {
+.c7 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -199,7 +210,7 @@ exports[`Pagination component should render correctly with all the default props
   text-align: center;
 }
 
-.c8 {
+.c9 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -239,6 +250,17 @@ exports[`Pagination component should render correctly with all the default props
 
 .c1 > li {
   margin: 0;
+}
+
+.c1 .c6 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c5 {
@@ -281,7 +303,7 @@ exports[`Pagination component should render correctly with all the default props
   background: #eff2f4;
 }
 
-.c7 {
+.c8 {
   margin: 0.4rem;
   height: 3.2rem;
   width: 3.2rem;
@@ -303,24 +325,24 @@ exports[`Pagination component should render correctly with all the default props
   border-radius: 50%;
 }
 
-.c7:hover {
+.c8:hover {
   cursor: pointer;
 }
 
-.c7:focus {
+.c8:focus {
   outline: none;
 }
 
-.c7:disabled {
+.c8:disabled {
   cursor: not-allowed;
 }
 
-.c7:hover {
+.c8:hover {
   color: #303C48;
   background: #F7F8F9;
 }
 
-.c7:active {
+.c8:active {
   font-weight: 700;
   color: #13181D;
   background: #eff2f4;
@@ -423,7 +445,7 @@ exports[`Pagination component should render correctly with all the default props
         type="button"
       >
         <h5
-          class="c6"
+          class="c6 c7"
         >
           1
         </h5>
@@ -431,11 +453,11 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="sc-AxheI c7"
+        class="sc-AxheI c8"
         type="button"
       >
         <h5
-          class="c8"
+          class="c6 c9"
         >
           2
         </h5>
@@ -443,11 +465,11 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="sc-AxheI c7"
+        class="sc-AxheI c8"
         type="button"
       >
         <h5
-          class="c8"
+          class="c6 c9"
         >
           3
         </h5>
@@ -455,15 +477,15 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <div
-        class="c9"
+        class="c10"
         id="medly-popover-wrapper"
       >
         <button
-          class="sc-AxheI c7"
+          class="sc-AxheI c8"
           type="button"
         >
           <h5
-            class="c8"
+            class="c6 c9"
           >
             ...
           </h5>
@@ -472,11 +494,11 @@ exports[`Pagination component should render correctly with all the default props
     </li>
     <li>
       <button
-        class="sc-AxheI c7"
+        class="sc-AxheI c8"
         type="button"
       >
         <h5
-          class="c8"
+          class="c6 c9"
         >
           8
         </h5>
@@ -508,7 +530,7 @@ exports[`Pagination component should render correctly with all the default props
 `;
 
 exports[`Pagination component should render correctly with all the props given 1`] = `
-.c6 {
+.c7 {
   position: relative;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -516,7 +538,7 @@ exports[`Pagination component should render correctly with all the props given 1
   display: inline-flex;
 }
 
-.c3 {
+.c4 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -529,7 +551,7 @@ exports[`Pagination component should render correctly with all the props given 1
   text-align: center;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   color: inherit;
   font-size: 1.2rem;
@@ -569,6 +591,17 @@ exports[`Pagination component should render correctly with all the props given 1
 
 .c1 > li {
   margin: 0;
+}
+
+.c1 .c3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  -webkit-letter-spacing: 0rem;
+  -moz-letter-spacing: 0rem;
+  -ms-letter-spacing: 0rem;
+  letter-spacing: 0rem;
+  line-height: 2.2rem;
+  font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .c2 {
@@ -611,7 +644,7 @@ exports[`Pagination component should render correctly with all the props given 1
   background: #eff2f4;
 }
 
-.c4 {
+.c5 {
   margin: 0.4rem;
   height: 3.2rem;
   width: 3.2rem;
@@ -633,24 +666,24 @@ exports[`Pagination component should render correctly with all the props given 1
   border-radius: 50%;
 }
 
-.c4:hover {
+.c5:hover {
   cursor: pointer;
 }
 
-.c4:focus {
+.c5:focus {
   outline: none;
 }
 
-.c4:disabled {
+.c5:disabled {
   cursor: not-allowed;
 }
 
-.c4:hover {
+.c5:hover {
   color: #303C48;
   background: #F7F8F9;
 }
 
-.c4:active {
+.c5:active {
   font-weight: 700;
   color: #13181D;
   background: #eff2f4;
@@ -666,7 +699,7 @@ exports[`Pagination component should render correctly with all the props given 1
         type="button"
       >
         <h5
-          class="c3"
+          class="c3 c4"
         >
           1
         </h5>
@@ -674,11 +707,11 @@ exports[`Pagination component should render correctly with all the props given 1
     </li>
     <li>
       <button
-        class="sc-AxheI c4"
+        class="sc-AxheI c5"
         type="button"
       >
         <h5
-          class="c5"
+          class="c3 c6"
         >
           2
         </h5>
@@ -686,11 +719,11 @@ exports[`Pagination component should render correctly with all the props given 1
     </li>
     <li>
       <button
-        class="sc-AxheI c4"
+        class="sc-AxheI c5"
         type="button"
       >
         <h5
-          class="c5"
+          class="c3 c6"
         >
           3
         </h5>
@@ -698,15 +731,15 @@ exports[`Pagination component should render correctly with all the props given 1
     </li>
     <li>
       <div
-        class="c6"
+        class="c7"
         id="medly-popover-wrapper"
       >
         <button
-          class="sc-AxheI c4"
+          class="sc-AxheI c5"
           type="button"
         >
           <h5
-            class="c5"
+            class="c3 c6"
           >
             ...
           </h5>
@@ -715,11 +748,11 @@ exports[`Pagination component should render correctly with all the props given 1
     </li>
     <li>
       <button
-        class="sc-AxheI c4"
+        class="sc-AxheI c5"
         type="button"
       >
         <h5
-          class="c5"
+          class="c3 c6"
         >
           15
         </h5>
