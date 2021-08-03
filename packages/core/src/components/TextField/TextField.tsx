@@ -1,7 +1,6 @@
+import { InfoIcon, InfoOutlineIcon } from '@medly-components/icons';
 import { defaultTheme } from '@medly-components/theme';
 import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import InfoIcon from 'packages/icons/src/icons/Action/InfoIcon';
-import InfoOutlineIcon from 'packages/icons/src/icons/Action/InfoOutlineIcon';
 import React, { FC, FocusEvent, FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import Popover from '../Popover';
 import getMaskedValue from './getMaskedValue';
@@ -93,8 +92,6 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
         useEffect(() => {
             setInputWidth(inputRef.current.offsetWidth);
         }, []);
-
-        console.dir(errorText);
 
         return (
             <Styled.OuterWrapper
