@@ -21,8 +21,6 @@ export interface SearchBoxProps extends Omit<HTMLProps<HTMLInputElement>, 'size'
     options?: Option[];
     /** React component for additional filtering */
     customSearchFilter?: React.FC;
-    /** Enables box shadow around the search field */
-    hasSearchFieldShadow?: boolean;
     /** Does the component take up all available width */
     fullWidth?: boolean;
     /** Function to be called on clear icon click */

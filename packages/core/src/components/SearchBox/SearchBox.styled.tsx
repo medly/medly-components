@@ -13,18 +13,18 @@ const getBorderRadius = ({ theme, areOptionsVisible, size }: SearchBoxProps & { 
     `;
 };
 
-const activeSearchBoxStyle = ({ hasSearchFieldShadow, theme: { searchBox } }: SearchBoxProps) => css`
-    box-shadow: ${hasSearchFieldShadow ? searchBox.boxShadow.active : 'none'};
+const activeSearchBoxStyle = ({ theme: { searchBox } }: SearchBoxProps) => css`
+    box-shadow: ${searchBox.boxShadow.active};
     border-color: ${searchBox.borderColor.active};
     border-width: 1.5px;
 `;
 
-const nonActiveSearchBoxStyle = ({ hasSearchFieldShadow, theme: { searchBox } }: SearchBoxProps) => css`
+const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: SearchBoxProps) => css`
     border-bottom: 1.5px solid;
     border-color: ${searchBox.borderColor.default};
     transition: border-color 100ms, box-shadow 100ms;
     &:focus-within {
-        ${getBorderAndBoxShadow(searchBox.borderColor.active, searchBox.boxShadow.active, hasSearchFieldShadow)};
+        ${getBorderAndBoxShadow(searchBox.borderColor.active, searchBox.boxShadow.active)};
         ${SearchIconWrapper} {
             ${SvgIcon} {
                 * {
@@ -34,10 +34,10 @@ const nonActiveSearchBoxStyle = ({ hasSearchFieldShadow, theme: { searchBox } }:
         }
     }
     &:hover {
-        ${getBorderAndBoxShadow(searchBox.borderColor.hovered, searchBox.boxShadow.hovered, hasSearchFieldShadow)};
+        ${getBorderAndBoxShadow(searchBox.borderColor.hovered, searchBox.boxShadow.hovered)};
     }
     &:focus-within:hover {
-        ${getBorderAndBoxShadow(searchBox.borderColor.active, searchBox.boxShadow.active, hasSearchFieldShadow)};
+        ${getBorderAndBoxShadow(searchBox.borderColor.active, searchBox.boxShadow.active)};
     }
 `;
 

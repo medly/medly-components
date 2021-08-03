@@ -22,7 +22,6 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
             onSearch,
             className,
             customSearchFilter,
-            hasSearchFieldShadow,
             fullWidth,
             ...restProps
         } = props;
@@ -110,7 +109,6 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
                 size={size}
                 className={className}
                 hasCustomSearchFilter={hasCustomSearchFilter}
-                hasSearchFieldShadow={hasSearchFieldShadow}
                 fullWidth={fullWidth}
             >
                 <SearchInput
@@ -147,6 +145,5 @@ SearchBox.defaultProps = {
     options: [],
     placeholder: 'Search',
     size: 'S',
-    hasSearchFieldShadow: true,
     fullWidth: false
 };
