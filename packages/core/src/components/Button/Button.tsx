@@ -3,9 +3,9 @@ import React, { FC, useContext } from 'react';
 import Text from '../Text';
 import { ButtonStyled } from './Button.styled';
 import BtnLoader from './Loader';
-import { Props } from './types';
+import { ButtonProps } from './types';
 
-export const Button: FC<Props> & WithStyle = React.memo(
+export const Button: FC<ButtonProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const theme = useContext(ThemeContext);
         return (

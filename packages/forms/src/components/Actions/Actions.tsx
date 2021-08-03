@@ -1,21 +1,21 @@
 import { Button } from '@medly-components/core';
 import React from 'react';
 import * as Styled from './Actions.styled';
-import { Props } from './types';
+import { ActionProps } from './types';
 
-export const Actions: React.FC<Props> = React.memo(({ formId, disabled, actionLabel, actionSchema }) => {
+export const Actions: React.FC<ActionProps> = React.memo(({ formId, disabled, actionLabel, actionSchema, isLoading }) => {
     return (
         <Styled.Actions alignItems={actionSchema?.alignItems} flexDirection={actionSchema?.flexDirection}>
             {actionSchema ? (
                 <>
                     {actionSchema.actions.map(({ type, label, ...restProps }) => (
-                        <Button key={label} form={formId} type={type} disabled={disabled} {...restProps}>
+                        <Button key={label} form={formId} type={type} disabled={disabled} isLoading={isLoading} {...restProps}>
                             {label}
                         </Button>
                     ))}
                 </>
             ) : (
-                <Button edges="rounded" form={formId} type="submit" disabled={disabled}>
+                <Button edges="rounded" form={formId} type="submit" isLoading={isLoading} disabled={disabled}>
                     {actionLabel}
                 </Button>
             )}
