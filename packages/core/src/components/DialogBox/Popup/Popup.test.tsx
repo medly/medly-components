@@ -1,9 +1,9 @@
 import { render } from '@test-utils';
 import React from 'react';
 import { Popup } from './Popup';
-import { Props } from './types';
+import { DialogBoxPopupProps } from './types';
 
-const DialogBoxPopupRenderer = ({ open = true, minWidth, minHeight }: Props) => {
+const DialogBoxPopupRenderer = ({ open = true, minWidth, minHeight }: DialogBoxPopupProps) => {
     return render(<Popup {...{ open, minWidth, minHeight }} />);
 };
 

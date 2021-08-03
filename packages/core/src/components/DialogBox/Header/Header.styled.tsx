@@ -1,8 +1,8 @@
 import { styled } from '@medly-components/utils';
-import { Props } from './types';
+import { DialogBoxHeaderProps } from './types';
 
 
-export const Header = styled('div')<Props>`
+export const Header = styled('div')<DialogBoxHeaderProps>`
     background-color: ${({ theme }) => theme.modal.backgroundColor};
     color: ${({ theme }) => theme.modal.headerColor};
     font-weight: 500;

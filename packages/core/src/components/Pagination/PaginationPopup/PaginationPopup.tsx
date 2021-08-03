@@ -4,9 +4,9 @@ import Text from '../../Text';
 import { addPageItems } from '../helper';
 import { PageNumberButton } from '../Pagination.styled';
 import { PageEllipsisOverlay, PaginationBackgroundStyled } from './PaginationPopup.styled';
-import { Props } from './types';
+import { PaginationPopupProps } from './types';
 
-export const PaginationPopup: FC<Props> = React.memo(({ prevPageNumber, nextPageNumber, onClickHandler }) => {
+export const PaginationPopup: FC<PaginationPopupProps> = React.memo(({ prevPageNumber, nextPageNumber, onClickHandler }) => {
     const [isPopoverVisible, setPopoverVisibility] = useContext(Popover.Context),
         onClickHandlerWrapper = (pageNumber: any) => () => {
             setPopoverVisibility(false);

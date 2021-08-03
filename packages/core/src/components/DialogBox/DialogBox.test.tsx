@@ -1,9 +1,9 @@
 import { fireEvent, render } from '@test-utils';
 import React from 'react';
 import { DialogBox } from './DialogBox';
-import { Props } from './types';
+import { DialogBoxProps } from './types';
 
-const dialogBoxRenderer = ({ open = false, onCloseModal = jest.fn(), minWidth, minHeight, shouldCloseOnOutsideClick = false }: Props) =>
+const dialogBoxRenderer = ({ open = false, onCloseModal = jest.fn(), minWidth, minHeight, shouldCloseOnOutsideClick = false }: DialogBoxProps) =>
     render(
         <DialogBox {...{ open, onCloseModal, minHeight, minWidth, shouldCloseOnOutsideClick }}>
             <DialogBox.Header>
