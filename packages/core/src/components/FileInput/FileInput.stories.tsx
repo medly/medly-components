@@ -2,9 +2,9 @@ import { defaultTheme } from '@medly-components/theme';
 import { boolean, color, select, text } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
 import { FileInput } from './FileInput';
-import { Props } from './types';
+import { FileInputProps } from './types';
 
-const labelPosition: Props['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
+const labelPosition: FileInputProps['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
 
 export const Basic = () => {
     const [files, setFiles] = useState<FileList>();

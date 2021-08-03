@@ -5,7 +5,7 @@ import Label from '../Label';
 import { LabelPositions } from '../Label/types';
 import Text from '../Text';
 
-export interface Props extends HTMLProps<HTMLDivElement>, Omit<WithThemeProp, 'as'> {
+export interface FieldWithLabelProps extends HTMLProps<HTMLDivElement>, Omit<WithThemeProp, 'as'> {
     /** Label Position */
     labelPosition?: LabelPositions;
     /** Takes full width of the parent component */
@@ -16,7 +16,7 @@ export interface Props extends HTMLProps<HTMLDivElement>, Omit<WithThemeProp, 'a
     minWidth?: number;
 }
 
-export interface FieldWithLabelStyledProps extends Props {
+export interface FieldWithLabelStyledProps extends FieldWithLabelProps {
     isLabelPresent?: boolean;
 }
 
