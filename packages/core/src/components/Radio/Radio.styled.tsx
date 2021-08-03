@@ -2,7 +2,7 @@ import { RadioSizes, RadioTheme } from '@medly-components/theme';
 import { css, styled, WithThemeProp } from '@medly-components/utils';
 import { rgba } from 'polished';
 import { getSelectorLabelPositionStyle } from '../Selectors';
-import { Props, WrapperProps } from './types';
+import { RadioProps, WrapperProps } from './types';
 
 const getRadioSize = ({ theme, size }: { size?: RadioSizes } & WithThemeProp) => theme.radio.sizes[size || theme.radio.defaultSize];
 
@@ -40,7 +40,7 @@ const getEventStyle = (event: 'hovered' | 'pressed' | 'focused') => ({
     theme,
     fillColor,
     borderColor
-}: RadioTheme & (WrapperProps | Props)) => {
+}: RadioTheme & (WrapperProps | RadioProps)) => {
     const state = hasError ? 'error' : 'active';
     const { blurRadius, spreadRadius } = theme.radio.boxShadow;
     const borderColorValue = event !== 'focused' && borderColor[event][state];
@@ -50,7 +50,7 @@ const getEventStyle = (event: 'hovered' | 'pressed' | 'focused') => ({
     `;
 };
 
-export const HiddenRadio = styled('input').attrs(({ theme }) => ({ type: 'radio', ...theme.radio }))<Props>`
+export const HiddenRadio = styled('input').attrs(({ theme }) => ({ type: 'radio', ...theme.radio }))<RadioProps>`
     position: absolute;
     opacity: 0;
     width: 1%;

@@ -10,7 +10,7 @@ export interface StepProps extends CounterProps {
     step?: number;
 }
 
-export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size'> {
+export interface StepperProps extends Omit<HTMLProps<HTMLDivElement>, 'size'> {
     /** Stepper Size */
     size?: StepperSizes;
     /** Active step */

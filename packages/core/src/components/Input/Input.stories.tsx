@@ -2,9 +2,9 @@ import { defaultTheme, InputTheme } from '@medly-components/theme';
 import { boolean, color, select, text } from '@storybook/addon-knobs';
 import React from 'react';
 import { Input } from './Input';
-import { Props } from './types';
+import { InputProps } from './types';
 
-const labelPosition: Props['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
+const labelPosition: InputProps['labelPosition'][] = ['top', 'bottom', 'left', 'right'];
 
 export const ThemeInterface: React.FC<InputTheme> = () => null;
 ThemeInterface.defaultProps = {

@@ -1,7 +1,7 @@
 /* stylelint-disable  no-descending-specificity */
 import { defaultTheme, SpacingTheme } from '@medly-components/theme';
 import { css, styled } from '@medly-components/utils';
-import { Props } from './types';
+import { ListProps } from './types';
 
 const horizontal = (spacings: SpacingTheme) => css`
     li {
@@ -27,7 +27,7 @@ const vertical = (spacings: SpacingTheme) => css`
     }
 `;
 
-export const ListStyled = styled('ul').attrs(({ theme: { spacing: spacings } }) => ({ spacings }))<Props>`
+export const ListStyled = styled('ul').attrs(({ theme: { spacing: spacings } }) => ({ spacings }))<ListProps>`
     padding: 0;
     margin: 0;
     display: flex;
