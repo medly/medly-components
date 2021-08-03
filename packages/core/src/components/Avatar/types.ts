@@ -1,7 +1,7 @@
 import { AvatarSizes } from '@medly-components/theme';
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 
-export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size'>, WithThemeProp {
+export interface AvatarProps extends Omit<HTMLProps<HTMLDivElement>, 'size'>, WithThemeProp {
     /** Size of the avatar */
     size?: AvatarSizes;
     /** Text color */
@@ -17,12 +17,12 @@ export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size'>, WithThem
     /** Hover image shadow color */
     hoverImgShadowColor?: string;
     /** Pressed Background color */
-    pressedBgColor?: string,
+    pressedBgColor?: string;
     /** Pressed Text color */
-    pressedTextColor?: string,
+    pressedTextColor?: string;
 }
 
-export interface StyledProps extends Props {
+export interface StyledProps extends AvatarProps {
     /** To check children is image */
     isImage?: boolean;
 }

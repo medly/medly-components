@@ -2,9 +2,9 @@ import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
 import React, { FC } from 'react';
 import Text from '../Text';
 import { AvatarStyled } from './Avatar.styled';
-import { Props } from './types';
+import { AvatarProps } from './types';
 
-export const Avatar: FC<Props> & WithStyle = React.memo(
+export const Avatar: FC<AvatarProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const isImage = React.Children.toArray(props.children).find(
             (child: any) => child.type === 'img' || child.props?.originalType === 'img'
