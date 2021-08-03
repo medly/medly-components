@@ -1,9 +1,9 @@
 import { WithStyle } from '@medly-components/utils';
 import React from 'react';
 import * as Styled from './TabPanel.styled';
-import { Props } from './types';
+import { TabPanelProps } from './types';
 
-export const TabPanel: React.FC<Props> & WithStyle = React.memo(props => {
+export const TabPanel: React.FC<TabPanelProps> & WithStyle = React.memo(props => {
     const { active, children, forceRender, className } = props;
 
     return (

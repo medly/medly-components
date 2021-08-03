@@ -1,7 +1,7 @@
 import { styled } from '@medly-components/utils';
-import { Props } from './types';
+import { DialogBoxPopupProps } from './types';
 
-export const Popup = styled('div')<Props>`
+export const Popup = styled('div')<DialogBoxPopupProps>`
     background: ${({ theme }) => theme.modal.backgroundColor};
     display: flex;
     flex-direction: column;

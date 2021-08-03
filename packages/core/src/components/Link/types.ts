@@ -1,6 +1,6 @@
 import { HTMLProps } from '@medly-components/utils';
 
-export interface Props extends HTMLProps<HTMLAnchorElement> {
+export interface LinkProps extends HTMLProps<HTMLAnchorElement> {
     /** Link url */
     href: string;
 }

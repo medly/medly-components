@@ -3,9 +3,9 @@ import React from 'react';
 import { PopoverContext } from '../Popover.context';
 import { Placement } from '../types';
 import { Popup } from './Popup';
-import { PopupProps } from './types';
+import { PopoverPopupProps } from './types';
 
-const renderer = (props: PopupProps) =>
+const renderer = (props: PopoverPopupProps) =>
     render(
         <PopoverContext.Provider value={[true, () => null]}>
             <Popup {...props}>Dummy popover</Popup>

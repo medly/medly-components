@@ -9,9 +9,9 @@ import {
     SliderController,
     SliderRange
 } from './Minimap.styled';
-import { Props } from './types';
+import { MinimapProps } from './types';
 
-export const Minimap: FC<Props> & WithStyle = React.memo(
+export const Minimap: FC<MinimapProps> & WithStyle = React.memo(
     ({ minimapWidth, controllerWidth, sliderContentPadding, tableRef, minimapDimensionDeps, ...restProps }) => {
         const sliderControllerRef = useRef(null),
             sliderRangeRef = useRef<HTMLDivElement>(null),

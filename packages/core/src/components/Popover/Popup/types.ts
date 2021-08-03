@@ -1,7 +1,7 @@
 import { HTMLProps } from '@medly-components/utils';
 import { Placement } from '../types';
 
-export interface PopupProps extends HTMLProps<HTMLDivElement> {
+export interface PopoverPopupProps extends HTMLProps<HTMLDivElement> {
     /** Placement of the popup */
     placement?: Placement;
     /** Distance from content */

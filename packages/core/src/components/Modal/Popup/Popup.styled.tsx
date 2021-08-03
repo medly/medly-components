@@ -1,5 +1,5 @@
 import { keyframes, styled } from '@medly-components/utils';
-import { Props } from './types';
+import { ModalPopupProps } from './types';
 
 const mobileModalSlideIn = keyframes`
     0% {
@@ -38,7 +38,7 @@ const mobileModalSlideIn = keyframes`
         }
 `;
 
-export const Popup = styled('div')<Props>`
+export const Popup = styled('div')<ModalPopupProps>`
     background: ${({ theme }) => theme.modal.backgroundColor};
     overflow: hidden;
     display: flex;

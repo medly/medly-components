@@ -2,9 +2,9 @@ import { WithStyle } from '@medly-components/utils';
 import React, { FC } from 'react';
 import FieldWithLabel from '../FieldWithLabel';
 import * as Styled from './Input.styled';
-import { Props } from './types';
+import { InputProps } from './types';
 
-export const Input: FC<Props> & WithStyle = React.memo(
+export const Input: FC<InputProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const { description, label, labelPosition, fullWidth, required, descriptionColor, prefix, suffix, ...restProps } = props,
             id = props.id || 'medly-input';

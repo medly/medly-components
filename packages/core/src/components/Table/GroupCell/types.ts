@@ -1,5 +1,5 @@
 import { GridTemplateProps } from '../types';
-export interface Props extends GridTemplateProps {
+export interface GroupCellProps extends GridTemplateProps {
     hidden: boolean;
     isTitleCell?: boolean;
 }

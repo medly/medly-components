@@ -13,7 +13,7 @@ export type StyledProps = GridTemplateProps &
         showRowWithCardStyle?: boolean;
         tableSize: TableProps['size'];
     };
-export type Props = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
+export type TitleRowProps = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
     isRowExpanded?: boolean;
     isRowSelected?: boolean;
     data: { [key: string]: any };
