@@ -1,4 +1,4 @@
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
-export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
+export interface DialogBoxHeaderProps extends HTMLProps<HTMLDivElement>, WithThemeProp {
     id: string;
 }
