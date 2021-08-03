@@ -9,7 +9,7 @@ export type CheckboxGroupWrapperProps = {
     hasHelperOrErrorText?: boolean;
 };
 
-export interface Props extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChange'>, WithThemeProp {
+export interface CheckboxGroupProps extends Omit<HTMLProps<HTMLDivElement>, 'size' | 'onChange'>, WithThemeProp {
     /** Array of selected values */
     values?: any[];
     /** This method will be called with checked values */
