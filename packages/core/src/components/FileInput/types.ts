@@ -13,7 +13,7 @@ export interface StyledLabelProps extends HTMLProps<HTMLLabelElement>, WithTheme
     fullWidth?: boolean;
 }
 
-export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'type' | 'value' | 'files' | 'onChange'> {
+export interface FileInputProps extends Omit<HTMLProps<HTMLInputElement>, 'type' | 'value' | 'files' | 'onChange'> {
     /** File List */
     files: FileList;
     /** File List */
