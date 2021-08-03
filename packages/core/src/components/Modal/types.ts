@@ -1,9 +1,9 @@
 import { HTMLProps, WithStyle, WithThemeProp } from '@medly-components/utils';
 import { MutableRefObject } from 'react';
 import { ModalActionUserProps } from './Actions/types';
-import { Props as ModalPopupProps } from './Popup/types';
+import {  ModalPopupProps } from './Popup/types';
 
-export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
+export interface ModalProps extends HTMLProps<HTMLDivElement>, WithThemeProp {
     /** Shows modal only when this prop is true */
     open?: boolean;
     /** Function to be called on closing modal */
