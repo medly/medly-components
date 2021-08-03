@@ -30,7 +30,6 @@ export const CommonProps: React.FC<
             | 'hidden'
             | 'button'
             | 'submit'
-            | 'password'
             | 'nested';
     } & CommonFieldProps
 > = () => null;
