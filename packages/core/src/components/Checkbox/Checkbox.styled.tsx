@@ -4,12 +4,12 @@ import { centerAligned, css, styled, WithThemeProp } from '@medly-components/uti
 import { rgba } from 'polished';
 import { getSelectorLabelPositionStyle } from '../Selectors';
 import Text from '../Text';
-import { Props } from './types';
+import { CheckboxProps } from './types';
 
 const getCheckboxSize = ({ theme, size }: { size?: CheckboxSizes } & WithThemeProp) =>
     theme.checkbox.sizes[size || theme.checkbox.defaultSize];
 
-const activeStyle = ({ iconColor, hasError, disabled, bgColor }: Props & CheckboxTheme) => {
+const activeStyle = ({ iconColor, hasError, disabled, bgColor }: CheckboxProps & CheckboxTheme) => {
     const checkboxState = disabled ? 'disabled' : hasError ? 'error' : 'active';
 
     return css`
@@ -24,7 +24,7 @@ const activeStyle = ({ iconColor, hasError, disabled, bgColor }: Props & Checkbo
     `;
 };
 
-const nonActiveStyle = ({ borderColor, hasError, disabled }: Props & CheckboxTheme) => {
+const nonActiveStyle = ({ borderColor, hasError, disabled }: CheckboxProps & CheckboxTheme) => {
     const checkboxState = disabled ? 'disabled' : hasError ? 'error' : 'default';
 
     return css`
@@ -39,7 +39,7 @@ const getEventStyle = (event: 'hovered' | 'pressed' | 'focused') => ({
     borderColor,
     theme,
     bgColor
-}: CheckboxTheme & Props & { isActive?: boolean }) => {
+}: CheckboxTheme & CheckboxProps & { isActive?: boolean }) => {
     const state = hasError ? 'error' : 'active';
     const borderColorEventValue = event === 'pressed' ? 'pressed' : state;
     const { blurRadius, spreadRadius } = theme.checkbox.boxShadow;
@@ -71,7 +71,7 @@ export const StyledCheckbox = styled.div`
     }
 `;
 
-export const HiddenCheckbox = styled.input.attrs(({ theme }) => ({ type: 'checkbox', ...theme.checkbox }))<Props>`
+export const HiddenCheckbox = styled.input.attrs(({ theme }) => ({ type: 'checkbox', ...theme.checkbox }))<CheckboxProps>`
     opacity: 0;
     margin: 0;
     top: 0;
@@ -118,7 +118,7 @@ export const ErrorText = styled(Text)<{ disabled: boolean }>`
     margin-bottom: 0.5rem;
 `;
 
-export const CheckboxWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...theme.checkbox }))<Props & { isActive: boolean }>`
+export const CheckboxWithLabelWrapper = styled('label').attrs(({ theme }) => ({ ...theme.checkbox }))<CheckboxProps & { isActive: boolean }>`
     display: ${({ fullWidth }) => (fullWidth ? 'flex' : 'inline-flex')};
     cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
     * {
