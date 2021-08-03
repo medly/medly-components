@@ -1,7 +1,7 @@
 import { ButtonSizes } from '@medly-components/theme';
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
-export interface Props extends Omit<HTMLProps<HTMLButtonElement>, 'size'>, WithThemeProp {
+export interface ButtonProps extends Omit<HTMLProps<HTMLButtonElement>, 'size'>, WithThemeProp {
     /** To be used to render any component as Button */
     as?: any;
     /** To be used if rendering like Link */

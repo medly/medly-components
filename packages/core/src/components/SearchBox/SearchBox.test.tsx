@@ -2,9 +2,9 @@ import { fireEvent, getByPlaceholderText, render } from '@test-utils';
 import React from 'react';
 import { SearchBox } from './SearchBox';
 import { placeholderComponent } from './SearchBox.stories';
-import { Props } from './types';
+import { SearchBoxProps } from './types';
 
-function renderComponent(props: Props) {
+function renderComponent(props: SearchBoxProps) {
     const { container, ...rest } = render(<SearchBox {...props} />);
 
     return {
@@ -15,7 +15,7 @@ function renderComponent(props: Props) {
 }
 
 describe('SearchBox', () => {
-    test.each(['S', 'M'])('should render properly with %p size', (size: Props['size']) => {
+    test.each(['S', 'M'])('should render properly with %p size', (size: SearchBoxProps['size']) => {
         const { container } = render(<SearchBox size={size} />);
         expect(container).toMatchSnapshot();
     });

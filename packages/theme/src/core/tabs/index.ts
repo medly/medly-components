@@ -16,8 +16,8 @@ const tabs: TabsTheme = {
     },
     borderColor: {
         active: colors.blue[500],
-        closed: colors.grey[300],
-        open: colors.grey[400],
+        outlined: colors.grey[300],
+        flat: colors.grey[400],
         hovered: colors.grey[800]
     },
     iconColor: {
@@ -45,6 +45,32 @@ const tabs: TabsTheme = {
         default: colors.white,
         disabled: colors.white,
         hovered: colors.grey[50]
+    },
+    label: {
+        fontVariant: {
+            S: 'body2',
+            M: 'body1',
+            L: 'body1'
+        }
+    },
+    solid: {
+        tabBorderRadius: '.8rem',
+        tabList: {
+            color: colors.grey[200],
+            borderRadius: '1.2rem',
+            padding: {
+                S: '.4rem',
+                M: '.6rem',
+                L: '.6rem'
+            }
+        },
+        disabledLabel: {
+            fontVariant: {
+                S: 'body3',
+                M: 'body2',
+                L: 'body2'
+            }
+        }
     }
 };
 

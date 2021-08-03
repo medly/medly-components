@@ -1,7 +1,7 @@
 import { css, styled } from '@medly-components/utils';
-import { Props } from './types';
+import { ToastContainerProps } from './types';
 
-const getPosition = (position: Props['position']) => {
+const getPosition = (position: ToastContainerProps['position']) => {
     switch (position) {
         case 'top-start':
             return css`
@@ -50,7 +50,7 @@ const getPosition = (position: Props['position']) => {
     }
 };
 
-export const Container = styled('div')<Props>`
+export const Container = styled('div')<ToastContainerProps>`
     display: flex;
     flex-direction: column;
     padding: 2rem;

@@ -2,14 +2,14 @@ import { WithStyle } from '@medly-components/utils';
 import React, { useContext } from 'react';
 import { TabsContext } from '../Tabs.context';
 import * as Styled from './Tab.styled';
-import { Props } from './types';
+import { TabProps } from './types';
 
-export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
-    const { id, active, label, icon: Icon = null, helperText, count, ...restProps } = props,
-        { tabSize, tabStyle, tabBackground } = useContext(TabsContext);
+export const Tab: React.FC<TabProps> & WithStyle = React.memo(props => {
+    const { id, active, label, icon: Icon = null, helperText, count, disabled, disabledLabel, ...restProps } = props,
+        { tabSize, tabBackground, variant } = useContext(TabsContext);
     return (
         <Styled.TabWrapper
-            {...{ id, active, tabSize, tabStyle, tabBackground, ...restProps }}
+            {...{ id, active, tabSize, disabled, variant, tabBackground, ...restProps }}
             type="button"
             role="tab"
             aria-selected={active ? 'true' : 'false'}
@@ -19,7 +19,7 @@ export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
             {Icon && <Icon variant={tabSize === 'S' ? 'flat' : 'solid'} />}
             <Styled.LabelAndDetailsWrapper>
                 <Styled.LabelWrapper>
-                    <Styled.Label id={`${id}-label`} textWeight="Medium" textVariant={tabSize === 'S' ? 'body2' : 'body1'}>
+                    <Styled.Label tabSize={tabSize} id={`${id}-label`}>
                         {label}
                     </Styled.Label>
                     {count !== undefined && (
@@ -32,6 +32,11 @@ export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
                     <Styled.HelperText id={`${id}-helperText`} textVariant="body2">
                         {helperText}
                     </Styled.HelperText>
+                )}
+                {variant === 'solid' && disabled && (
+                    <Styled.DisabledLabel tabSize={tabSize} id={`${id}-disabledLabel`}>
+                        {disabledLabel}
+                    </Styled.DisabledLabel>
                 )}
             </Styled.LabelAndDetailsWrapper>
         </Styled.TabWrapper>

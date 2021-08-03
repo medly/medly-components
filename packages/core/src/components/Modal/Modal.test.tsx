@@ -2,9 +2,9 @@ import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { Modal } from './Modal';
 import { ModalBackgroundStyled } from './Modal.styled';
-import { ModalBackgroundProps, Props } from './types';
+import { ModalBackgroundProps, ModalProps } from './types';
 
-const modalRenderer = ({ open = false, onCloseModal = jest.fn(), minWidth, minHeight, shouldCloseOnOutsideClick = false }: Props) =>
+const modalRenderer = ({ open = false, onCloseModal = jest.fn(), minWidth, minHeight, shouldCloseOnOutsideClick = false }: ModalProps) =>
     render(
         <Modal {...{ open, onCloseModal, minHeight, minWidth, shouldCloseOnOutsideClick }}>
             <Modal.Header>

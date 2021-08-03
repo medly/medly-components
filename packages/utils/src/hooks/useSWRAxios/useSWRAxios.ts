@@ -9,7 +9,7 @@ export const useSWRAxios = <Data = unknown, Error = unknown>(
     { initialData, ...swrConfig }: SWRConfig<Data, Error> = {}
 ): Return<Data, Error> => {
     const { data: axiosSuccessResponse, error: axiosErrorResponse, ...swrResponse } = useSWR<AxiosResponse<Data>, AxiosError<Error>>(
-        JSON.stringify(axiosConfig),
+        axiosConfig.url,
         () => axios(axiosConfig),
         {
             ...defaultSWRConfig,

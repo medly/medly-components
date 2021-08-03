@@ -2,9 +2,9 @@ import { AddIcon } from '@medly-components/icons';
 import { render } from '@test-utils';
 import React from 'react';
 import { TabsContext } from '../Tabs.context';
-import { TabBackground, TabSize, TabStyle } from '../types';
+import { TabBackground, TabSize, Variant } from '../types';
 import { Tab } from './Tab';
-import { Props } from './types';
+import { TabProps } from './types';
 
 const renderer = ({
     id = 'dummy',
@@ -16,11 +16,11 @@ const renderer = ({
     disabled = false,
     active = false,
     tabSize = 'S',
-    tabStyle = 'CLOSED',
-    tabBackground = 'WHITE'
-}: Partial<Props> & { tabSize?: TabSize; tabStyle?: TabStyle; tabBackground?: TabBackground }) =>
+    tabBackground = 'WHITE',
+    variant = 'flat'
+}: Partial<TabProps> & { tabSize?: TabSize; tabBackground?: TabBackground; variant?: Variant }) =>
     render(
-        <TabsContext.Provider value={{ tabStyle, tabSize, tabBackground }}>
+        <TabsContext.Provider value={{ variant, tabSize, tabBackground }}>
             <Tab {...{ id, label, helperText, count, hide, icon, disabled, active }}>Content for the add panel</Tab>
         </TabsContext.Provider>
     );
@@ -41,8 +41,8 @@ describe('Tab', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test.each(['OPEN', 'CLOSED'])('should render properly with %s tab style', (tabStyle: TabStyle) => {
-        const { container } = renderer({ tabStyle });
+    test.each(['flat', 'outlined', 'solid'])('should render properly with %s tab variant', (variant: Variant) => {
+        const { container } = renderer({ variant });
         expect(container).toMatchSnapshot();
     });
 

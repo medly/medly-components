@@ -11,7 +11,7 @@
             "yes": true,
             "conventionalCommits": true,
             "createRelease": "github",
-            "message": "chore: update changelog and publish packages"
+            "message": "chore: update changelog and publish packages [skip ci]"
         }
     },
     "npmClient": "yarn",

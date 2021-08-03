@@ -1,9 +1,9 @@
 import { fireEvent, render } from '@test-utils';
 import React from 'react';
 import { Stepper } from './Stepper';
-import { Props } from './types';
+import { StepperProps } from './types';
 
-const renderer = (props: Props = {}) =>
+const renderer = (props: StepperProps = {}) =>
     render(
         <Stepper {...props}>
             <Stepper.Step>Customer Information</Stepper.Step>

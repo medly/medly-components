@@ -352,7 +352,11 @@ exports[`SideNav should render properly with shadow 1`] = `
 
 <div>
   <aside
+<<<<<<< HEAD
     class="sc-ptRml c0"
+=======
+    class="sc-qOjXG c0"
+>>>>>>> master
     id="medly-sidenav"
   >
     <nav
@@ -856,7 +860,11 @@ exports[`SideNav should render properly without shadow 1`] = `
 
 <div>
   <aside
+<<<<<<< HEAD
     class="sc-ptRml c0"
+=======
+    class="sc-qOjXG c0"
+>>>>>>> master
     id="medly-sidenav"
   >
     <nav

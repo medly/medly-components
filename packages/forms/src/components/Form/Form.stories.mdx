@@ -17,13 +17,16 @@ import { Form, FormFieldSchema } from '@medly-components/forms';
 
 const schema: FormFieldSchema = { email: { type: 'email', label: 'Email' }, password: { type: 'password', label: 'Password' } };
 
-const UserInfoForm = () => <Form fieldSchema={schema} onSubmit={values => console.log('Values==>', values)} actionLabel="Login" />;
+const UserInfoForm = () => (
+    <Form fieldSchema={schema} isLoading={false} onSubmit={values => console.log('Values==>', values)} actionLabel="Login" />
+);
 ```
 
 <Preview withToolbar>
     <Form
         fieldSchema={{ email: { type: 'email', label: 'Email' }, password: { type: 'password', label: 'Password' } }}
         actionLabel="Login"
+        isLoading={false}
         onSubmit={action('Submitted')}
     />
 </Preview>
@@ -89,6 +92,7 @@ To change the label of the form's default action button you can use `actionLabel
                 }
             ]
         }}
+        isLoading={false}
         onSubmit={action('Submitted')}
     />
 </Preview>
@@ -154,6 +158,7 @@ You can play with this form in the `Canvas` tab.
             onSubmit={action('Submitted')}
             hideActions={boolean('Hide Actions', false)}
             fullWidth={boolean('Full Width', false)}
+            isLoading={boolean('Is Loading', false)}
             minWidth={text('Min Width', '50rem')}
         />
     </Story>

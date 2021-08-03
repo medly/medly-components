@@ -3,6 +3,97 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.24.8](https://github.com/medly/medly-components/compare/@medly-components/layout@1.24.7...@medly-components/layout@1.24.8) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.24.7](https://github.com/medly/medly-components/compare/@medly-components/layout@1.24.6...@medly-components/layout@1.24.7) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.24.6](https://github.com/medly/medly-components/compare/@medly-components/layout@1.24.5...@medly-components/layout@1.24.6) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.24.5](https://github.com/medly/medly-components/compare/@medly-components/layout@1.24.4...@medly-components/layout@1.24.5) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.24.4](https://github.com/medly/medly-components/compare/@medly-components/layout@1.24.3...@medly-components/layout@1.24.4) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.24.3](https://github.com/medly/medly-components/compare/@medly-components/layout@1.24.2...@medly-components/layout@1.24.3) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.24.2](https://github.com/medly/medly-components/compare/@medly-components/layout@1.24.1...@medly-components/layout@1.24.2) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.24.1](https://github.com/medly/medly-components/compare/@medly-components/layout@1.24.0...@medly-components/layout@1.24.1) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+# [1.24.0](https://github.com/medly/medly-components/compare/@medly-components/layout@1.23.9...@medly-components/layout@1.24.0) (2021-08-02)
+
+
+### Features
+
+* add "solid" tabs variant ([#320](https://github.com/medly/medly-components/issues/320)) ([5c42856](https://github.com/medly/medly-components/commit/5c428564e6f8452f8500a413504539596aa570d2))
+
+
+
+
+
+## [1.23.9](https://github.com/medly/medly-components/compare/@medly-components/layout@1.23.8...@medly-components/layout@1.23.9) (2021-08-02)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
+## [1.23.8](https://github.com/medly/medly-components/compare/@medly-components/layout@1.23.7...@medly-components/layout@1.23.8) (2021-08-02)
+
+**Note:** Version bump only for package @medly-components/layout
+
+
+
+
+
 ## [1.23.7](https://github.com/medly/medly-components/compare/@medly-components/layout@1.23.6...@medly-components/layout@1.23.7) (2021-07-28)
 
 **Note:** Version bump only for package @medly-components/layout

@@ -3,6 +3,100 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.8.7](https://github.com/medly/medly-components/compare/@medly-components/core@2.8.6...@medly-components/core@2.8.7) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.8.6](https://github.com/medly/medly-components/compare/@medly-components/core@2.8.5...@medly-components/core@2.8.6) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.8.5](https://github.com/medly/medly-components/compare/@medly-components/core@2.8.4...@medly-components/core@2.8.5) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.8.4](https://github.com/medly/medly-components/compare/@medly-components/core@2.8.3...@medly-components/core@2.8.4) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.8.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.8.2...@medly-components/core@2.8.3) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.8.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.8.1...@medly-components/core@2.8.2) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.8.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.8.0...@medly-components/core@2.8.1) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+# [2.8.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.7.0...@medly-components/core@2.8.0) (2021-08-03)
+
+
+### Features
+
+* add isLading prop to form component ([#336](https://github.com/medly/medly-components/issues/336)) ([8206768](https://github.com/medly/medly-components/commit/8206768529bad8afca36fc05bb2975015ceb616b))
+
+
+
+
+
+# [2.7.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.6.3...@medly-components/core@2.7.0) (2021-08-02)
+
+
+### Features
+
+* add "solid" tabs variant ([#320](https://github.com/medly/medly-components/issues/320)) ([5c42856](https://github.com/medly/medly-components/commit/5c428564e6f8452f8500a413504539596aa570d2))
+
+
+
+
+
+## [2.6.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.6.2...@medly-components/core@2.6.3) (2021-08-02)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.6.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.6.1...@medly-components/core@2.6.2) (2021-08-02)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
 ## [2.6.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.6.0...@medly-components/core@2.6.1) (2021-07-28)
 
 **Note:** Version bump only for package @medly-components/core

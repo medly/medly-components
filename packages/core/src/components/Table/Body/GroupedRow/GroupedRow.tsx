@@ -6,9 +6,9 @@ import { Data } from '../../types';
 import useRowSelector from '../../useRowSelector';
 import ContentRow from './ContentRow';
 import TitleRow from './TitleRow';
-import { Props } from './types';
+import { GroupedRowProps } from './types';
 
-export const GroupedRow: React.FC<Props> = React.memo(props => {
+export const GroupedRow: React.FC<GroupedRowProps> = React.memo(props => {
     const tableProps = useContext(TableComponentsCommonPropsContext),
         {
             columns,

@@ -2,9 +2,9 @@ import { isValidStringOrNumber, WithStyle } from '@medly-components/utils';
 import React, { FC } from 'react';
 import Text from '../Text';
 import { LinkStyled } from './Link.styled';
-import { Props } from './types';
+import { LinkProps } from './types';
 
-export const Link: FC<Props> & WithStyle = React.memo(
+export const Link: FC<LinkProps> & WithStyle = React.memo(
     React.forwardRef(({ href, ...props }, ref) => {
         return (
             <LinkStyled href={href} {...props} ref={ref}>

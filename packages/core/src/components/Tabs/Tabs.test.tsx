@@ -2,20 +2,20 @@ import { fireEvent, render, screen } from '@test-utils';
 import React from 'react';
 import Tab from './Tab';
 import { Tabs } from './Tabs';
-import { Props } from './types';
+import { TabsProps, Variant } from './types';
 
 const renderer = ({
     defaultActive = 'tab1',
     active = undefined,
     onChange = jest.fn(),
     tabSize = 'S',
-    tabStyle = 'CLOSED',
     tabBackground = 'WHITE',
     forceRender = false,
-    hidePanel = false
-}: Props) =>
+    hidePanel = false,
+    variant = 'flat'
+}: TabsProps) =>
     render(
-        <Tabs {...{ defaultActive, active, onChange, tabSize, tabStyle, tabBackground, forceRender, hidePanel }}>
+        <Tabs {...{ defaultActive, active, onChange, tabSize, tabBackground, forceRender, hidePanel, variant }}>
             <Tab id="tab1" label="Add" count={30} helperText="Details for tab1">
                 Content for the add panel
             </Tab>
@@ -32,8 +32,8 @@ const renderer = ({
     );
 
 describe('Tabs', () => {
-    it('should render properly', () => {
-        const { container } = renderer({});
+    test.each(['flat', 'outlined', 'solid'])('should render properly with %s tab variant', (variant: Variant) => {
+        const { container } = renderer({ variant });
         expect(container).toMatchSnapshot();
     });
 

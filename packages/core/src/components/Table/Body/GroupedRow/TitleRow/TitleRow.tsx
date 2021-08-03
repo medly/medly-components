@@ -6,9 +6,9 @@ import { getGridTemplateColumns } from '../../../helpers';
 import RowActionsCell from '../../Cell/RowActionsCell';
 import { LoadingDiv } from '../../Cell/Styled';
 import { CountChip, ExpansionCell, Row, SecondaryContent, TitleCell } from './TitleRow.styled';
-import { Props } from './types';
+import { TitleRowProps } from './types';
 
-export const TitleRow: React.FC<Props> = React.memo(props => {
+export const TitleRow: React.FC<TitleRowProps> = React.memo(props => {
     const [tableWidth, setTableWidth] = useState(),
         { data, isRowExpanded, onClick, onRowSelection, isRowIndeterminate, ...restProps } = props,
         {

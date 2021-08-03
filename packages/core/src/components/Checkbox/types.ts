@@ -4,7 +4,7 @@ import { LabelPositions } from '../Label/types';
 
 type InputProps = Omit<HTMLProps<HTMLInputElement>, 'size' | 'type'>;
 
-export interface Props extends InputProps, WithThemeProp {
+export interface CheckboxProps extends InputProps, WithThemeProp {
     /** Checkbox label */
     label?: string;
     /** Checkbox size */

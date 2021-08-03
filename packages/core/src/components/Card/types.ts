@@ -4,7 +4,7 @@ export type ItemsPosition = 'top' | 'bottom' | 'left' | 'right' | 'center';
 export type Variants = 'solid' | 'flat';
 export type FlowDirection = 'vertical' | 'horizontal';
 
-export interface Props extends HTMLProps<HTMLDivElement>, WithThemeProp {
+export interface CardProps extends HTMLProps<HTMLDivElement>, WithThemeProp {
     /** To be used if rendering like Link */
     to?: string;
     /** Card design */

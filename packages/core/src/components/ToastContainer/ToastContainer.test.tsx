@@ -2,7 +2,7 @@ import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { ToastContainer } from './ToastContainer.component';
 import { addToast } from './ToastStore';
-import { Props } from './types';
+import { ToastContainerProps } from './types';
 
 jest.useFakeTimers();
 
@@ -22,7 +22,7 @@ describe('ToastContainer', () => {
         'left-end',
         'left',
         'left-start'
-    ])('should render properly with position %s', (position: Props['position']) => {
+    ])('should render properly with position %s', (position: ToastContainerProps['position']) => {
         const { container } = render(<ToastContainer position={position}></ToastContainer>);
         expect(container).toMatchSnapshot();
     });

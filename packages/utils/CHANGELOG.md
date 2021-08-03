@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.2](https://github.com/medly/medly-components/compare/@medly-components/utils@1.12.1...@medly-components/utils@1.12.2) (2021-08-02)
+
+**Note:** Version bump only for package @medly-components/utils
+
+
+
+
+
+## [1.12.1](https://github.com/medly/medly-components/compare/@medly-components/utils@1.12.0...@medly-components/utils@1.12.1) (2021-08-02)
+
+
+### Bug Fixes
+
+* change the key of swr from request object to url ([ee34561](https://github.com/medly/medly-components/commit/ee3456113ffa3fc2b28630f29e5f8f5c1062b9ee))
+
+
+
+
+
 # [1.12.0](https://github.com/medly/medly-components/compare/@medly-components/utils@1.11.2...@medly-components/utils@1.12.0) (2021-07-28)
 
 
