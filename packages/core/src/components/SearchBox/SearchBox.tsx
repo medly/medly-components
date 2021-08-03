@@ -5,6 +5,7 @@ import Options from '../SingleSelect/Options';
 import { Option } from '../SingleSelect/types';
 import { useKeyboardNavigation } from '../SingleSelect/useKeyboardNavigation';
 import * as Styled from './SearchBox.styled';
+import CustomSearchFilterWrapper from './styles/customSearch';
 import { CloseIconWrapper, ExpandIconWrapper, SearchIconWrapper } from './styles/icons';
 import { SearchInput } from './styles/input';
 import { Props } from './types';
@@ -21,7 +22,8 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             onSearch,
             className,
             customSearchFilter,
-            showSearchFieldShadow,
+            hasSearchFieldShadow,
+            fullWidth,
             ...restProps
         } = props;
         const wrapperRef = useRef<any>(null),
@@ -32,7 +34,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             [isTyping, updateIsTyping] = useState(false),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [options, setOptions] = useState(defaultOptions),
-            [isAdvancedSearchActive, setIsAdvancedSearchActive] = useState(false);
+            [isCustomSearchActive, setisCustomSearchActive] = useState(false);
 
         useEffect(() => {
             setOptions(props.options);
@@ -48,11 +50,11 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                 inputRef.current.blur();
                 updateIsTyping(false);
             }, []),
-            showAdvancedSearch = useCallback(() => {
-                setIsAdvancedSearchActive(true);
+            showCustomSearch = useCallback(() => {
+                setisCustomSearchActive(true);
             }, []),
-            hideAdvancedSearch = useCallback(() => {
-                setIsAdvancedSearchActive(false);
+            hideCustomSearch = useCallback(() => {
+                setisCustomSearchActive(false);
             }, []),
             clearSearchText = useCallback(() => {
                 inputRef.current.value = '';
@@ -99,14 +101,17 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
             enterPress && isFocused.current && !areOptionsVisible && onSearch && onSearch(inputRef.current.value);
         }, [enterPress, areOptionsVisible]);
 
+        const hasCustomSearchFilter = !!customSearchFilter;
+
         return (
             <Styled.SearchBoxWrapper
                 ref={wrapperRef}
                 areOptionsVisible={areOptionsVisible}
                 size={size}
                 className={className}
-                customSearchFilter={customSearchFilter}
-                showSearchFieldShadow={showSearchFieldShadow}
+                hasCustomSearchFilter={hasCustomSearchFilter}
+                hasSearchFieldShadow={hasSearchFieldShadow}
+                fullWidth={fullWidth}
             >
                 <SearchInput
                     placeholder={placeholder}
@@ -117,23 +122,20 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                     {...restProps}
                 />
                 {isTyping && (
-                    <CloseIconWrapper isTyping={isTyping} size={size} customSearchFilter={customSearchFilter}>
+                    <CloseIconWrapper isTyping={isTyping} size={size} hasCustomSearchFilter={hasCustomSearchFilter}>
                         <CloseIcon title="close icon" onClick={clearSearchText} size={size} />
                     </CloseIconWrapper>
                 )}
-                {customSearchFilter && (
-                    <ExpandIconWrapper size={size} isAdvancedSearchActive={isAdvancedSearchActive}>
-                        <ExpandIcon
-                            title="expand icon"
-                            size={size}
-                            onClick={isAdvancedSearchActive ? hideAdvancedSearch : showAdvancedSearch}
-                        />
+                {hasCustomSearchFilter && (
+                    <ExpandIconWrapper size={size} isCustomSearchActive={isCustomSearchActive}>
+                        <ExpandIcon title="expand icon" size={size} onClick={isCustomSearchActive ? hideCustomSearch : showCustomSearch} />
                     </ExpandIconWrapper>
                 )}
                 <SearchIconWrapper areOptionsVisible={areOptionsVisible} isTyping={isTyping} size={size}>
                     <SearchIcon title="search icon" size={size} onClick={handleSearchIconClick} />
                 </SearchIconWrapper>
                 {areOptionsVisible && <Options ref={optionsRef} options={options} variant="filled" onOptionClick={handleOptionClick} />}
+                {isCustomSearchActive && <CustomSearchFilterWrapper>{customSearchFilter}</CustomSearchFilterWrapper>}
             </Styled.SearchBoxWrapper>
         );
     })
@@ -145,6 +147,6 @@ SearchBox.defaultProps = {
     options: [],
     placeholder: 'Search',
     size: 'S',
-    customSearchFilter: false,
-    showSearchFieldShadow: true
+    hasSearchFieldShadow: true,
+    fullWidth: false
 };

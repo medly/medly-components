@@ -3,11 +3,11 @@ import { styled } from '@medly-components/utils';
 import { Props } from '../types';
 import { getIconWrapperStyle } from './utils';
 
-export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean; customSearchFilter?: boolean }>`
+export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean; hasCustomSearchFilter?: boolean }>`
     ${getIconWrapperStyle};
     border-right: ${({ theme, isTyping }) => isTyping && `0.1rem solid ${theme.colors.grey[200]}`};
     margin: 0.6rem 0;
-    padding-right: ${({ customSearchFilter }) => (customSearchFilter ? '.4rem' : 0)};
+    padding-right: ${({ hasCustomSearchFilter }) => (hasCustomSearchFilter ? '.4rem' : 0)};
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.closeIcon.padding[size]};
         * {
@@ -37,7 +37,7 @@ export const SearchIconWrapper = styled.span<Props & { areOptionsVisible?: boole
     }
 `;
 
-export const ExpandIconWrapper = styled.span<Props & { isAdvancedSearchActive?: boolean }>`
+export const ExpandIconWrapper = styled.span<Props & { isCustomSearchActive?: boolean }>`
     ${getIconWrapperStyle}
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.expandIcon.padding[size]};
@@ -49,8 +49,8 @@ export const ExpandIconWrapper = styled.span<Props & { isAdvancedSearchActive?: 
             border-radius: ${({ theme }) => theme.searchBox.expandIcon.borderRadius};
         }
 
-        ${({ isAdvancedSearchActive, theme }) =>
-            isAdvancedSearchActive &&
+        ${({ isCustomSearchActive, theme }) =>
+            isCustomSearchActive &&
             `
             background: ${theme.searchBox.expandIcon.bgColor.hovered};
             border-radius: ${theme.searchBox.expandIcon.borderRadius};
@@ -61,5 +61,5 @@ export const ExpandIconWrapper = styled.span<Props & { isAdvancedSearchActive?: 
         `}
     }
     transition: transform 0.2s ease-out;
-    transform: ${({ isAdvancedSearchActive }) => (isAdvancedSearchActive ? 'rotate(180deg)' : 'none')};
+    transform: ${({ isCustomSearchActive }) => (isCustomSearchActive ? 'rotate(180deg)' : 'none')};
 `;

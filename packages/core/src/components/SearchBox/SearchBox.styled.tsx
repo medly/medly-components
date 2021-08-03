@@ -13,18 +13,18 @@ const getBorderRadius = ({ theme, areOptionsVisible, size }: Props & { areOption
     `;
 };
 
-const activeSearchBoxStyle = ({ showSearchFieldShadow, theme: { searchBox } }: Props) => css`
-    box-shadow: ${showSearchFieldShadow ? searchBox.boxShadow.active : 'none'};
+const activeSearchBoxStyle = ({ hasSearchFieldShadow, theme: { searchBox } }: Props) => css`
+    box-shadow: ${hasSearchFieldShadow ? searchBox.boxShadow.active : 'none'};
     border-color: ${searchBox.borderColor.active};
     border-width: 1.5px;
 `;
 
-const nonActiveSearchBoxStyle = ({ showSearchFieldShadow, theme: { searchBox } }: Props) => css`
+const nonActiveSearchBoxStyle = ({ hasSearchFieldShadow, theme: { searchBox } }: Props) => css`
     border-bottom: 1.5px solid;
     border-color: ${searchBox.borderColor.default};
     transition: border-color 100ms, box-shadow 100ms;
     &:focus-within {
-        ${getBorderAndBoxShadow(searchBox.borderColor.active, searchBox.boxShadow.active, showSearchFieldShadow)};
+        ${getBorderAndBoxShadow(searchBox.borderColor.active, searchBox.boxShadow.active, hasSearchFieldShadow)};
         ${SearchIconWrapper} {
             ${SvgIcon} {
                 * {
@@ -34,10 +34,10 @@ const nonActiveSearchBoxStyle = ({ showSearchFieldShadow, theme: { searchBox } }
         }
     }
     &:hover {
-        ${getBorderAndBoxShadow(searchBox.borderColor.hovered, searchBox.boxShadow.hovered, showSearchFieldShadow)};
+        ${getBorderAndBoxShadow(searchBox.borderColor.hovered, searchBox.boxShadow.hovered, hasSearchFieldShadow)};
     }
     &:focus-within:hover {
-        ${getBorderAndBoxShadow(searchBox.borderColor.active, searchBox.boxShadow.active, showSearchFieldShadow)};
+        ${getBorderAndBoxShadow(searchBox.borderColor.active, searchBox.boxShadow.active, hasSearchFieldShadow)};
     }
 `;
 
@@ -56,7 +56,7 @@ const searchBoxWithExpandStyle = () => css`
     }
 `;
 
-export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean; customSearchFilter?: boolean }>`
+export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean; hasCustomSearchFilter?: boolean; fullWidth?: boolean }>`
     width: 25.6rem;
     display: flex;
     flex-direction: row;
@@ -82,5 +82,7 @@ export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean
 
     ${getBorderRadius};
     ${({ areOptionsVisible }) => (areOptionsVisible ? activeSearchBoxStyle : nonActiveSearchBoxStyle)};
-    ${({ customSearchFilter }) => customSearchFilter && searchBoxWithExpandStyle}
+    ${({ hasCustomSearchFilter }) => hasCustomSearchFilter && searchBoxWithExpandStyle}
+
+    ${({ fullWidth }) => fullWidth && 'width: 100%'};
 `;

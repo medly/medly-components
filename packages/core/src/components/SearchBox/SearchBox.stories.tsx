@@ -3,6 +3,12 @@ import React from 'react';
 import Text from '../Text';
 import { Props } from './types';
 
+export const placeholderComponent: React.FC = () => (
+    <div>
+        <h1>this is a placeholder</h1>
+    </div>
+);
+
 export const optionsArray = [
     { value: 'Dummy1 option', label: 'Dummy1 option' },
     { value: 'Some 1', label: 'Dummy2 option' },

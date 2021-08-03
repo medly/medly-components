@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import { optionsArray, size, ThemeInterface } from './SearchBox.stories.tsx';
+import { optionsArray, size, ThemeInterface, placeholderComponent } from './SearchBox.stories.tsx';
 import * as stories from './SearchBox.stories';
 import { select, boolean } from '@storybook/addon-knobs';
 import { SearchBox } from './SearchBox';
@@ -24,8 +24,8 @@ import { action } from '@storybook/addon-actions';
                     onOptionSelected={action('Selected')}
                     options={options}
                     size={select('Size', size, 'M')}
-                    customSearchFilter={boolean('Show Custom Search Filter', false)}
-                    showSearchFieldShadow={boolean('Show Search Field Shadow', true)}
+                    hasSearchFieldShadow={boolean('Has Search Field Shadow', true)}
+                    fullWidth={boolean('Is Full Width', false)}
                 />
             );
         }}

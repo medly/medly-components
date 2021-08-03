@@ -1,5 +1,6 @@
 import { Size } from '@medly-components/theme';
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
+import React from 'react';
 
 export type Option = {
     label: string;
@@ -18,10 +19,12 @@ export interface Props extends Omit<HTMLProps<HTMLInputElement>, 'size'>, WithTh
     size?: Size;
     /** Option for search results, in form of label and value */
     options?: Option[];
-    /** Enables the custom search filter feature */
-    customSearchFilter?: boolean;
+    /** React component for additional filtering */
+    customSearchFilter?: React.FC;
     /** Enables box shadow around the search field */
-    showSearchFieldShadow?: boolean;
+    hasSearchFieldShadow?: boolean;
+    /** Does the component take up all available width */
+    fullWidth?: boolean;
     /** Function to be called on clear icon click */
     onClear?: () => void;
     /** Function to be called on search icon click */
