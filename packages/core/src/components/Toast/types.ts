@@ -1,5 +1,5 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
-import { Props as ButtonProps } from '../Button/types';
+import { ButtonProps } from '../Button/types';
 
 export type ToastVariants = 'success' | 'error' | 'info' | 'warning';
 

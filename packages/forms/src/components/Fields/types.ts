@@ -70,7 +70,7 @@ export type FieldProperties =
     | DateRangePickerProps
     | NestedProps;
 
-export interface Props {
+export interface FieldsProps {
     // State variable which holds all the fields values
     values: { [key: string]: any };
     // Handlers for all kind of components
