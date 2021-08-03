@@ -135,7 +135,7 @@ export const SearchBox: FC<Props> & WithStyle = React.memo(
                     <SearchIcon title="search icon" size={size} onClick={handleSearchIconClick} />
                 </SearchIconWrapper>
                 {areOptionsVisible && <Options ref={optionsRef} options={options} variant="filled" onOptionClick={handleOptionClick} />}
-                {isCustomSearchActive && <CustomSearchFilterWrapper>{customSearchFilter}</CustomSearchFilterWrapper>}
+                {isCustomSearchActive && <CustomSearchFilterWrapper size={size}>{customSearchFilter}</CustomSearchFilterWrapper>}
             </Styled.SearchBoxWrapper>
         );
     })
