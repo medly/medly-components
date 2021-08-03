@@ -14,7 +14,7 @@ export type StyledProps = HTMLProps<HTMLButtonElement> &
         totalTabs?: number;
     };
 
-export interface Props extends HTMLProps<HTMLButtonElement> {
+export interface TabProps extends HTMLProps<HTMLButtonElement> {
     /** To be used to render tab as any html tag */
     as?: any;
     /** Id of tab */
