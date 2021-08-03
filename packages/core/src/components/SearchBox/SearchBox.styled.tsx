@@ -4,22 +4,22 @@ import Options from '../SingleSelect/Options';
 import { SearchIconWrapper } from './styles/icons';
 import { getOptionsStyles } from './styles/options';
 import { getBorderAndBoxShadow, getSearchBoxSize } from './styles/utils';
-import { Props } from './types';
+import { SearchBoxProps } from './types';
 
-const getBorderRadius = ({ theme, areOptionsVisible, size }: Props & { areOptionsVisible?: boolean }) => {
+const getBorderRadius = ({ theme, areOptionsVisible, size }: SearchBoxProps & { areOptionsVisible?: boolean }) => {
     const border = theme.searchBox.borderRadius[size][areOptionsVisible ? 'active' : 'default'];
     return css`
         border-radius: ${border};
     `;
 };
 
-const activeSearchBoxStyle = ({ theme: { searchBox } }: Props) => css`
+const activeSearchBoxStyle = ({ theme: { searchBox } }: SearchBoxProps) => css`
     box-shadow: ${searchBox.boxShadow.active};
     border-color: ${searchBox.borderColor.active};
     border-width: 1.5px;
 `;
 
-const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: Props) => css`
+const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: SearchBoxProps) => css`
     border-bottom: 1.5px solid;
     border-color: ${searchBox.borderColor.default};
     transition: border-color 100ms, box-shadow 100ms;
@@ -56,7 +56,7 @@ const searchBoxWithExpandStyle = () => css`
     }
 `;
 
-export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean; showExpandIcon?: boolean }>`
+export const SearchBoxWrapper = styled.div<SearchBoxProps & { areOptionsVisible?: boolean; showExpandIcon?: boolean }>`
     width: 25.6rem;
     display: flex;
     flex-direction: row;

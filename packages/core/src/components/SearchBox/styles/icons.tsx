@@ -1,9 +1,9 @@
 import { SvgIcon } from '@medly-components/icons';
 import { styled } from '@medly-components/utils';
-import { Props } from '../types';
+import { SearchBoxProps } from '../types';
 import { getIconWrapperStyle } from './utils';
 
-export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean; showExpandIcon?: boolean }>`
+export const CloseIconWrapper = styled.span<SearchBoxProps & { isTyping?: boolean; showExpandIcon?: boolean }>`
     ${getIconWrapperStyle};
     border-right: ${({ theme, isTyping }) => isTyping && `0.1rem solid ${theme.colors.grey[200]}`};
     margin: 0.6rem 0;
@@ -24,7 +24,7 @@ export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean; showEx
     }
 `;
 
-export const SearchIconWrapper = styled.span<Props & { areOptionsVisible?: boolean; isTyping?: boolean }>`
+export const SearchIconWrapper = styled.span<SearchBoxProps & { areOptionsVisible?: boolean; isTyping?: boolean }>`
     ${getIconWrapperStyle};
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.searchIcon.padding[size]};
@@ -38,7 +38,7 @@ export const SearchIconWrapper = styled.span<Props & { areOptionsVisible?: boole
     }
 `;
 
-export const ExpandIconWrapper = styled.span<Props & { isTyping?: boolean }>`
+export const ExpandIconWrapper = styled.span<SearchBoxProps & { isTyping?: boolean }>`
     ${getIconWrapperStyle}
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.expandIcon.padding[size]};
