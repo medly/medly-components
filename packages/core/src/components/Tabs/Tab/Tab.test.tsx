@@ -4,7 +4,7 @@ import React from 'react';
 import { TabsContext } from '../Tabs.context';
 import { TabBackground, TabSize, Variant } from '../types';
 import { Tab } from './Tab';
-import { Props } from './types';
+import { TabProps } from './types';
 
 const renderer = ({
     id = 'dummy',
@@ -18,7 +18,7 @@ const renderer = ({
     tabSize = 'S',
     tabBackground = 'WHITE',
     variant = 'flat'
-}: Partial<Props> & { tabSize?: TabSize; tabBackground?: TabBackground; variant?: Variant }) =>
+}: Partial<TabProps> & { tabSize?: TabSize; tabBackground?: TabBackground; variant?: Variant }) =>
     render(
         <TabsContext.Provider value={{ variant, tabSize, tabBackground }}>
             <Tab {...{ id, label, helperText, count, hide, icon, disabled, active }}>Content for the add panel</Tab>

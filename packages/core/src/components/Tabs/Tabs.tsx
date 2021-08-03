@@ -5,9 +5,9 @@ import TabList from './TabList';
 import TabPanel from './TabPanel';
 import { TabsContext } from './Tabs.context';
 import * as Styled from './Tabs.styled';
-import { Props, StaticProps } from './types';
+import { TabsProps, StaticProps } from './types';
 
-export const Tabs: React.FC<Props> & StaticProps & WithStyle = React.memo(
+export const Tabs: React.FC<TabsProps> & StaticProps & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
                 hidePanel,

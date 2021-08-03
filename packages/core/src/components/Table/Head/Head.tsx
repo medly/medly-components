@@ -7,9 +7,9 @@ import { SortOrder, TableColumnConfig } from '../types';
 import { THead } from './Head.styled';
 import HeadCell from './HeadCell';
 import HeadRow from './HeadRow';
-import { Props } from './types';
+import { TableHeadProps } from './types';
 
-const Head: React.FC<Props> = React.memo(props => {
+const Head: React.FC<TableHeadProps> = React.memo(props => {
     const {
             columns,
             isLoading,

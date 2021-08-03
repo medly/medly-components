@@ -1,13 +1,13 @@
 import { styled } from '@medly-components/utils';
 import Text from '../../Text';
 import { getBorder } from '../Table.styled';
-import { Props } from './types';
+import { GroupCellProps } from './types';
 
-export const GroupCell = styled('div').attrs(({ gridTemplateColumns }: Props) => ({
+export const GroupCell = styled('div').attrs(({ gridTemplateColumns }: GroupCellProps) => ({
     style: {
         gridTemplateColumns
     }
-}))<Props>`
+}))<GroupCellProps>`
     display: grid;
     position: relative;
     opacity: ${({ hidden }) => (hidden ? '0' : '1')};

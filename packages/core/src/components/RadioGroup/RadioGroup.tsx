@@ -2,9 +2,9 @@ import { useCombinedRefs, WithStyle } from '@medly-components/utils';
 import React, { FC, useCallback, useMemo, useState } from 'react';
 import Radio from '../Radio';
 import { SelectorGroup } from '../Selectors';
-import { Props } from './types';
+import { RadioGroupProps } from './types';
 
-export const RadioGroup: FC<Props> & WithStyle = React.memo(
+export const RadioGroup: FC<RadioGroupProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
             id,

@@ -7,9 +7,9 @@ import { useKeyboardNavigation } from '../SingleSelect/useKeyboardNavigation';
 import * as Styled from './SearchBox.styled';
 import { CloseIconWrapper, ExpandIconWrapper, SearchIconWrapper } from './styles/icons';
 import { SearchInput } from './styles/input';
-import { Props } from './types';
+import { SearchBoxProps } from './types';
 
-export const SearchBox: FC<Props> & WithStyle = React.memo(
+export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
     React.forwardRef((props, ref) => {
         const {
             options: defaultOptions,
