@@ -22,7 +22,7 @@ export interface ColumnConfig {
     /** Custom component */
     component?: React.FC<{ data: any; rowId?: any; disabled?: boolean; rowData?: Data }>;
 }
-export interface Props extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'> {
+export interface CardTableProps extends Omit<HTMLProps<HTMLOListElement>, 'data' | 'type'> {
     /** Table data */
     data: Array<{
         [key: string]: any;
