@@ -13,7 +13,7 @@ export const HelperText = styled('span')<{
 `;
 
 export const HelperTextPopover = styled(Popover.Popup)`
-    padding: 10px;
+    padding: 0.8rem;
 `;
 
 export const PopoverIconContainer = styled('div')`
