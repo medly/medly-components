@@ -5,7 +5,6 @@ import React, { FC, FocusEvent, FormEvent, useCallback, useEffect, useMemo, useS
 import Popover from '../Popover';
 import getMaskedValue from './getMaskedValue';
 import * as Styled from './Styled';
-import { HelperTextForTooltip } from './Styled';
 import { TextFieldProps } from './types';
 
 export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
@@ -169,9 +168,9 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                         <Popover interactionType="hover">
                             {isErrorPresent ? <InfoIcon iconColor={defaultTheme.colors.red[500]} size="S" /> : <InfoOutlineIcon size="S" />}
                             <Popover.Popup placement="top" withArrow bgColor={'#211F46'} style={{ padding: '10px' }}>
-                                <HelperTextForTooltip id={`${inputId}-helper-text`} onClick={stopPropagation}>
+                                <Styled.HelperTextForTooltip id={`${inputId}-helper-text`} onClick={stopPropagation}>
                                     {(errorText || builtInErrorMessage || helperText).trim()}
-                                </HelperTextForTooltip>
+                                </Styled.HelperTextForTooltip>
                             </Popover.Popup>
                         </Popover>
                     )}
