@@ -5,7 +5,7 @@ import Options from '../SingleSelect/Options';
 import { Option } from '../SingleSelect/types';
 import { useKeyboardNavigation } from '../SingleSelect/useKeyboardNavigation';
 import * as Styled from './SearchBox.styled';
-import CustomSearchFilterWrapper from './styles/customSearch';
+import { CustomSearchFilterWrapper } from './styles/customSearch';
 import { CloseIconWrapper, ExpandIconWrapper, SearchIconWrapper } from './styles/icons';
 import { SearchInput } from './styles/input';
 import { SearchBoxProps } from './types';
