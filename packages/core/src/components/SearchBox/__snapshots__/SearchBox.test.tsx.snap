@@ -115,7 +115,6 @@ exports[`SearchBox options should render options when user search option specifi
   justify-content: center;
   border-right: 0.1rem solid #dfe4e9;
   margin: 0.6rem 0;
-  padding-right: 0;
 }
 
 .c2 .c3 {
@@ -237,7 +236,6 @@ exports[`SearchBox options should render options when user search option specifi
 }
 
 .c0 {
-  width: 25.6rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -252,6 +250,10 @@ exports[`SearchBox options should render options when user search option specifi
   position: relative;
   padding: 0 0 0 1.2rem;
   background-color: #ffffff;
+  min-width: 25.6rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   border-radius: .8rem;
   box-shadow: 0 0.2rem 0.8rem rgba(18,106,250,0.2);
   border-color: #126AFA;
@@ -481,7 +483,6 @@ exports[`SearchBox should render properly with "M" size 1`] = `
 }
 
 .c0 {
-  width: 25.6rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -496,6 +497,10 @@ exports[`SearchBox should render properly with "M" size 1`] = `
   position: relative;
   padding: 0 0 0 1.6rem;
   background-color: #ffffff;
+  min-width: 25.6rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   border-radius: .8rem;
   border-bottom: 1.5px solid;
   border-color: #98A7B7;
@@ -705,7 +710,6 @@ exports[`SearchBox should render properly with "S" size 1`] = `
 }
 
 .c0 {
-  width: 25.6rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -720,6 +724,10 @@ exports[`SearchBox should render properly with "S" size 1`] = `
   position: relative;
   padding: 0 0 0 1.2rem;
   background-color: #ffffff;
+  min-width: 25.6rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   border-radius: .8rem;
   border-bottom: 1.5px solid;
   border-color: #98A7B7;

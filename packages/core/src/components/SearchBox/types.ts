@@ -1,6 +1,6 @@
 import { Size } from '@medly-components/theme';
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
-import React from 'react';
+import { ReactElement } from 'react';
 
 export type Option = {
     label: string;
@@ -20,7 +20,7 @@ export interface SearchBoxProps extends Omit<HTMLProps<HTMLInputElement>, 'size'
     /** Option for search results, in form of label and value */
     options?: Option[];
     /** React component for additional filtering */
-    customSearchFilter?: React.FC;
+    customSearchFilter?: ReactElement<any>;
     /** Does the component take up all available width */
     fullWidth?: boolean;
     /** Min width in rem/% (1rem = 10px)*/
