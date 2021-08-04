@@ -9,6 +9,6 @@ export const CustomSearchFilterWrapper = styled.div<{ size: 'S' | 'M' }>`
     top: ${({ theme, size }) => `calc(${theme.searchBox.height[size]} - 0.1rem) `};
     width: 100%;
     box-sizing: border-box;
-    z-index: 5;
+    z-index: 50;
     background: white;
 `;
