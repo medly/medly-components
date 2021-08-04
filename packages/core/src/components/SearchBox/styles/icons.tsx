@@ -15,7 +15,7 @@ export const CloseIconWrapper = styled.span<SearchBoxProps & { isTyping?: boolea
         }
         &:hover {
             background: ${({ theme }) => theme.searchBox.closeIcon.bgColor.hovered};
-            border-radius: ${({ theme }) => theme.searchBox.searchIcon.borderRadius};
+            border-radius: ${({ theme }) => theme.searchBox.closeIcon.borderRadius};
             * {
                 fill: ${({ theme }) => theme.searchBox.closeIcon.color.hovered};
             }
