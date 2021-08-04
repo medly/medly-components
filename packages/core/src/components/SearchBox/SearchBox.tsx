@@ -23,6 +23,7 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
             className,
             customSearchFilter,
             fullWidth,
+            minWidth,
             ...restProps
         } = props;
         const wrapperRef = useRef<any>(null),
@@ -33,7 +34,7 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
             [isTyping, updateIsTyping] = useState(false),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
             [options, setOptions] = useState(defaultOptions),
-            [isCustomSearchActive, setisCustomSearchActive] = useState(false);
+            [isCustomSearchActive, setIsCustomSearchActive] = useState(false);
 
         useEffect(() => {
             setOptions(props.options);
@@ -49,12 +50,8 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
                 inputRef.current.blur();
                 updateIsTyping(false);
             }, []),
-            showCustomSearch = useCallback(() => {
-                setisCustomSearchActive(true);
-            }, []),
-            hideCustomSearch = useCallback(() => {
-                setisCustomSearchActive(false);
-            }, []),
+            showCustomSearch = useCallback(() => setIsCustomSearchActive(true), []),
+            hideCustomSearch = useCallback(() => setIsCustomSearchActive(false), []),
             clearSearchText = useCallback(() => {
                 inputRef.current.value = '';
                 inputRef.current.focus();
@@ -109,6 +106,7 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
                 size={size}
                 className={className}
                 hasCustomSearchFilter={hasCustomSearchFilter}
+                minWidth={minWidth}
                 fullWidth={fullWidth}
             >
                 <SearchInput
@@ -145,5 +143,6 @@ SearchBox.defaultProps = {
     options: [],
     placeholder: 'Search',
     size: 'S',
+    minWidth: '25.6rem',
     fullWidth: false
 };

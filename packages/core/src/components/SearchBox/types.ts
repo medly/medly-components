@@ -23,6 +23,8 @@ export interface SearchBoxProps extends Omit<HTMLProps<HTMLInputElement>, 'size'
     customSearchFilter?: React.FC;
     /** Does the component take up all available width */
     fullWidth?: boolean;
+    /** Min width in rem/% (1rem = 10px)*/
+    minWidth?: string;
     /** Function to be called on clear icon click */
     onClear?: () => void;
     /** Function to be called on search icon click */

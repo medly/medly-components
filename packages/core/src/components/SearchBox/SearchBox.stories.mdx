@@ -1,19 +1,19 @@
 import { useState, useEffect } from 'react';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
-import { optionsArray, size, ThemeInterface, placeholderComponent } from './SearchBox.stories.tsx';
+import { optionsArray, size, ThemeInterface, PlaceholderComponent } from './SearchBox.stories.tsx';
 import * as stories from './SearchBox.stories';
-import { select, boolean } from '@storybook/addon-knobs';
+import { text, select, boolean } from '@storybook/addon-knobs';
 import { SearchBox } from './SearchBox';
 import { action } from '@storybook/addon-actions';
 
-<Meta title="Core" component={SearchBox} />
+<Meta title="Core/SearchBox" component={SearchBox} />
 
 # SearchBox
 
-### Add a auto suggest text box
+Simple `Searchbox` component to show search result.
 
 <Preview withToolbar>
-    <Story name="SearchBox">
+    <Story name="default">
         {() => {
             const [options, setOptions] = useState([]),
                 onInputChangeHandler = value => value.length > 2 && setOptions([...optionsArray, { label: 'Test', value: 'Test' }]);
@@ -24,17 +24,38 @@ import { action } from '@storybook/addon-actions';
                     onOptionSelected={action('Selected')}
                     options={options}
                     size={select('Size', size, 'M')}
-                    hasSearchFieldShadow={boolean('Has Search Field Shadow', true)}
-                    fullWidth={boolean('Is Full Width', false)}
+                    minWidth={text('Min Width', '25.6rem')}
+                    fullWidth={boolean('Full Width', false)}
                 />
             );
         }}
     </Story>
 </Preview>
 
-### Props
+If you want to show some kind of form for customize search filter you can pass react component to `customSearchFilter` prop.
 
-<Props of={SearchBox} />
+<Preview withToolbar>
+    <Story name="withCustomSearchFilter">
+        {() => {
+            const [options, setOptions] = useState([]),
+                onInputChangeHandler = value => value.length > 2 && setOptions([...optionsArray, { label: 'Test', value: 'Test' }]);
+            return (
+                <SearchBox
+                    placeholder="Search"
+                    onInputChange={onInputChangeHandler}
+                    onOptionSelected={action('Selected')}
+                    options={options}
+                    size={select('Size', size, 'M')}
+                    minWidth={text('Min Width', '25.6rem')}
+                    customSearchFilter={<PlaceholderComponent />}
+                    fullWidth={boolean('Full Width', true)}
+                />
+            );
+        }}
+    </Story>
+</Preview>
+
+### Sizes
 
 ##### Small search text box
 
@@ -57,6 +78,10 @@ It also supports keyboard navigation when it is in focus
 | Down Arrow | Moves focus to the next option     |
 | Up Arrow   | Moves focus to the previous option |
 | Enter      | Select the focused option          |
+
+### Props
+
+<Props of={SearchBox} />
 
 ### SearchBoxTheme
 

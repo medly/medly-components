@@ -42,7 +42,6 @@ const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: SearchBoxProps) => cs
 `;
 
 const searchBoxWithExpandStyle = () => css`
-    width: 31.2rem;
     padding-right: 0.8rem;
 
     span {
@@ -59,7 +58,6 @@ const searchBoxWithExpandStyle = () => css`
 export const SearchBoxWrapper = styled.div<
     SearchBoxProps & { areOptionsVisible?: boolean; hasCustomSearchFilter?: boolean; fullWidth?: boolean }
 >`
-    width: 25.6rem;
     display: flex;
     flex-direction: row;
     outline: none;
@@ -69,6 +67,8 @@ export const SearchBoxWrapper = styled.div<
     position: relative;
     padding: ${({ theme, size }) => theme.searchBox.padding[size]};
     background-color: ${({ theme, areOptionsVisible }) => theme.searchBox.bgColor[areOptionsVisible ? 'active' : 'default']};
+    min-width: ${({ minWidth }) => minWidth};
+    width: ${({ fullWidth }) => (fullWidth ? '100%' : 'min-content')};
 
     input {
         ${({ theme, size }) => getFontStyle({ theme, fontVariant: theme.searchBox.textVariant[size] })}
@@ -85,6 +85,4 @@ export const SearchBoxWrapper = styled.div<
     ${getBorderRadius};
     ${({ areOptionsVisible }) => (areOptionsVisible ? activeSearchBoxStyle : nonActiveSearchBoxStyle)};
     ${({ hasCustomSearchFilter }) => hasCustomSearchFilter && searchBoxWithExpandStyle}
-
-    ${({ fullWidth }) => fullWidth && 'width: 100%'};
 `;

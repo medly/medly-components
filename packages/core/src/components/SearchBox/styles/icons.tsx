@@ -1,5 +1,5 @@
 import { SvgIcon } from '@medly-components/icons';
-import { styled } from '@medly-components/utils';
+import { css, styled } from '@medly-components/utils';
 import { SearchBoxProps } from '../types';
 import { getIconWrapperStyle } from './utils';
 
@@ -7,7 +7,7 @@ export const CloseIconWrapper = styled.span<SearchBoxProps & { isTyping?: boolea
     ${getIconWrapperStyle};
     border-right: ${({ theme, isTyping }) => isTyping && `0.1rem solid ${theme.colors.grey[200]}`};
     margin: 0.6rem 0;
-    padding-right: ${({ hasCustomSearchFilter }) => (hasCustomSearchFilter ? '.4rem' : 0)};
+    padding-right: ${({ hasCustomSearchFilter }) => hasCustomSearchFilter && '0.4rem'};
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.closeIcon.padding[size]};
         * {
@@ -37,6 +37,20 @@ export const SearchIconWrapper = styled.span<SearchBoxProps & { areOptionsVisibl
     }
 `;
 
+const expandIconHoveredStyle = css`
+        background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.hovered};
+        border-radius: ${({ theme }) => theme.searchBox.expandIcon.borderRadius};
+        * {
+            fill: ${({ theme }) => theme.searchBox.expandIcon.color.hovered};
+        }
+    `,
+    customSearchActiveStyle = css`
+        ${SvgIcon} {
+            ${expandIconHoveredStyle}
+        }
+        transform: rotate(180deg);
+    `;
+
 export const ExpandIconWrapper = styled.span<SearchBoxProps & { isCustomSearchActive?: boolean }>`
     ${getIconWrapperStyle}
     ${SvgIcon} {
@@ -45,21 +59,9 @@ export const ExpandIconWrapper = styled.span<SearchBoxProps & { isCustomSearchAc
             fill: ${({ theme }) => theme.searchBox.expandIcon.color.default};
         }
         &:hover {
-            background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.hovered};
-            border-radius: ${({ theme }) => theme.searchBox.expandIcon.borderRadius};
+            ${expandIconHoveredStyle}
         }
-
-        ${({ isCustomSearchActive, theme }) =>
-            isCustomSearchActive &&
-            `
-            background: ${theme.searchBox.expandIcon.bgColor.hovered};
-            border-radius: ${theme.searchBox.expandIcon.borderRadius};
-
-            * {
-                fill: rgba(95, 111, 213, 1);
-            }
-        `}
     }
     transition: transform 0.2s ease-out;
-    transform: ${({ isCustomSearchActive }) => (isCustomSearchActive ? 'rotate(180deg)' : 'none')};
+    ${({ isCustomSearchActive }) => isCustomSearchActive && customSearchActiveStyle}
 `;

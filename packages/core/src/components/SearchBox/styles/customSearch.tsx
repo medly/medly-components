@@ -6,7 +6,7 @@ const CustomSearchFilterWrapper = styled.div<{ size: 'S' | 'M' }>`
     border-radius: 0.8rem;
     position: absolute;
     left: 0;
-    top: ${({ size }) => (size === 'M' ? '4.7rem' : '3.9rem')};
+    top: ${({ theme, size }) => `calc(${theme.searchBox.height[size]} - 0.1rem) `};
     width: 100%;
     box-sizing: border-box;
     z-index: 5;
