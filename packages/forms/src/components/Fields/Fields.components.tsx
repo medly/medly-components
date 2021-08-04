@@ -37,7 +37,7 @@ export const Fields: React.FC<FieldsProps> = React.memo(props => {
                         disabled = props.disabled || componentProps.disabled,
                         showDecorators = props.showDecorators,
                         variant = props.variant,
-                        helperAndErrorStateVariant = props.helperAndErrorStateVariant,
+                        showTooltipForHelperAndErrorText = props.showTooltipForHelperAndErrorText,
                         name = parentName ? `${parentName}.${key}` : key,
                         value = values[name];
 
@@ -51,7 +51,7 @@ export const Fields: React.FC<FieldsProps> = React.memo(props => {
                         onFocus: handlers.handleFocus(name, (componentProps as TextFieldProps).onFocus),
                         errorText: errorMessages[name],
                         variant: variant,
-                        helperAndErrorStateVariant: helperAndErrorStateVariant,
+                        showTooltipForHelperAndErrorText: showTooltipForHelperAndErrorText,
                         // These two fields will be removed very soon
                         description: errorMessages[name] || (componentProps as FileInputProps).description,
                         descriptionColor: errorMessages[name] && 'red'
@@ -69,7 +69,7 @@ export const Fields: React.FC<FieldsProps> = React.memo(props => {
                                     disabled={disabled}
                                     showDecorators={showDecorators}
                                     variant={variant}
-                                    helperAndErrorStateVariant={helperAndErrorStateVariant}
+                                    showTooltipForHelperAndErrorText={showTooltipForHelperAndErrorText}
                                     handlers={handlers}
                                     fields={(componentProps as NestedProps).fields}
                                     errorMessages={errorMessages}

@@ -1,4 +1,5 @@
 import { styled } from '@medly-components/utils';
+import Popover from '../../Popover';
 
 export const HelperText = styled('span')<{
     size: 'S' | 'M';
@@ -11,10 +12,21 @@ export const HelperText = styled('span')<{
     user-select: none;
 `;
 
+export const HelperTextPopover = styled(Popover.Popup)`
+    padding: 10px;
+`;
+
+export const PopoverIconContainer = styled('div')`
+    display: flex;
+    :hover {
+        cursor: pointer;
+    }
+`;
+
 export const HelperTextForTooltip = styled('span')`
     width: max-content;
     display: flex;
     border-radius: 4px;
     color: white;
-    font-size: 12px;
+    font-size: 1rem;
 `;

@@ -1,7 +1,6 @@
-import { InfoIcon, InfoOutlineIcon } from '@medly-components/icons';
-import { defaultTheme } from '@medly-components/theme';
-import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { FC, FocusEvent, FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
+import { ErrorIcon, InfoOutlineIcon } from '@medly-components/icons';
+import { ThemeContext, useCombinedRefs, WithStyle } from '@medly-components/utils';
+import React, { FC, FocusEvent, FormEvent, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import Popover from '../Popover';
 import getMaskedValue from './getMaskedValue';
 import * as Styled from './Styled';
@@ -47,6 +46,8 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
             [characterCountValue, setCharacterCountValue] = useState(
                 value ? value.toString().length : restProps.defaultValue ? restProps.defaultValue.toString().length : 0
             );
+
+        const theme = useContext(ThemeContext);
 
         const validate = useCallback(
             (event: FormEvent<HTMLInputElement>, eventFunc: (e: FormEvent<HTMLInputElement>) => void) => {
@@ -159,23 +160,29 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                             >{`${characterCountValue}/${props.maxLength}`}</Styled.CharacterCount>
                         )}
                     </Styled.InputWrapper>
+                    {(isErrorPresent || helperText) && props.showTooltipForHelperAndErrorText && (
+                        <Popover interactionType="hover">
+                            <Styled.PopoverIconContainer>
+                                {isErrorPresent ? (
+                                    <ErrorIcon iconColor={theme.textField[props.variant].error.borderColor} size="S" />
+                                ) : (
+                                    <InfoOutlineIcon size="S" />
+                                )}
+                            </Styled.PopoverIconContainer>
+                            <Styled.HelperTextPopover placement="top" withArrow bgColor={'#211F46'}>
+                                <Styled.HelperTextForTooltip id={`${inputId}-helper-text`} onClick={stopPropagation}>
+                                    {(errorText || builtInErrorMessage || helperText).trim()}
+                                </Styled.HelperTextForTooltip>
+                            </Styled.HelperTextPopover>
+                        </Popover>
+                    )}
                     {isSuffixPresent && showDecorators && (
                         <Styled.Suffix size={size}>
                             <Suffix size={size} />
                         </Styled.Suffix>
                     )}
-                    {(isErrorPresent || helperText) && showDecorators && props.helperAndErrorStateVariant === 'tooltip' && (
-                        <Popover interactionType="hover">
-                            {isErrorPresent ? <InfoIcon iconColor={defaultTheme.colors.red[500]} size="S" /> : <InfoOutlineIcon size="S" />}
-                            <Popover.Popup placement="top" withArrow bgColor={'#211F46'} style={{ padding: '10px' }}>
-                                <Styled.HelperTextForTooltip id={`${inputId}-helper-text`} onClick={stopPropagation}>
-                                    {(errorText || builtInErrorMessage || helperText).trim()}
-                                </Styled.HelperTextForTooltip>
-                            </Popover.Popup>
-                        </Popover>
-                    )}
                 </Styled.InnerWrapper>
-                {(isErrorPresent || helperText) && showDecorators && props.helperAndErrorStateVariant === 'default' && (
+                {(isErrorPresent || helperText) && showDecorators && !props.showTooltipForHelperAndErrorText && (
                     <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation} size={size} variant={props.variant}>
                         {(errorText || builtInErrorMessage || helperText).trim()}
                     </Styled.HelperText>
@@ -190,7 +197,7 @@ TextField.defaultProps = {
     size: 'M',
     type: 'text',
     variant: 'filled',
-    helperAndErrorStateVariant: 'default',
+    showTooltipForHelperAndErrorText: false,
     minWidth: '20rem',
     fullWidth: false,
     disabled: false,

@@ -91,6 +91,6 @@ export interface FieldsProps {
     showDecorators?: boolean;
     /** Input Variants */
     variant?: 'outlined' | 'filled' | 'fusion';
-    /** Helper text and error text Variants */
-    helperAndErrorStateVariant?: 'default' | 'tooltip';
+    /** Show Helper text and error text in a tooltip (popover) */
+    showTooltipForHelperAndErrorText?: boolean;
 }
