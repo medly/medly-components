@@ -3,7 +3,6 @@ import { styled } from '@medly-components/utils';
 export const HelperText = styled('span')<{
     size: 'S' | 'M';
     variant: 'fusion' | 'outlined' | 'filled';
-    helperAndErrorStateVariant?: 'default' | 'tooltip';
 }>`
     font-size: 1.2rem;
     line-height: 1.6rem;
