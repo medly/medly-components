@@ -1,17 +1,15 @@
-name: Lint, Build, Test
+name: 'Chromatic'
 
-on:
-    push:
-        branches:
-            - '**'
-            - '!master'
+on: push
 
 jobs:
-    lint-build-test:
+    chromatic-deployment:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repo
               uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
 
             - name: Setup Node.js
               uses: actions/setup-node@v1
@@ -27,5 +25,10 @@ jobs:
             - name: Build packages
               run: yarn build
 
-            - name: Run tests
-              run: yarn test
+            - name: Publish to Chromatic
+              if: github.ref != 'refs/heads/master'
+              run: yarn chromatic
+
+            - name: Publish to Chromatic and auto accept changes
+              if: github.ref == 'refs/heads/master'
+              run: yarn chromatic --auto-accept-changes
