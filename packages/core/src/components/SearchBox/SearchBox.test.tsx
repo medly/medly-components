@@ -1,6 +1,7 @@
 import { fireEvent, getByPlaceholderText, render } from '@test-utils';
 import React from 'react';
 import { SearchBox } from './SearchBox';
+import { PlaceholderComponent } from './SearchBox.stories';
 import { SearchBoxProps } from './types';
 
 function renderComponent(props: SearchBoxProps) {
@@ -98,7 +99,7 @@ describe('SearchBox', () => {
     describe('expand icon', () => {
         const props = {
             placeholder: 'search',
-            showExpandIcon: true
+            customSearchFilter: <PlaceholderComponent />
         };
 
         it('should render expand icon when showExpandIcon prop is true', () => {
