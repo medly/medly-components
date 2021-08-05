@@ -711,6 +711,10 @@ exports[`Tab should render properly with GREY tab background 1`] = `
   fill: #435465;
 }
 
+.c0:not(:disabled):active {
+  background-color: #ffffff;
+}
+
 .c0:first-child {
   border-top-left-radius: 0.8rem;
 }
