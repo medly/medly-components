@@ -3,6 +3,7 @@ import React, { FC } from 'react';
 import Text from '../../Text';
 import { BreadcrumbItemStyled } from './Item.styled';
 import { BreadcrumbItemProps } from './types';
+
 export const BreadcrumbItem: FC<BreadcrumbItemProps> & WithStyle = React.memo(
     React.forwardRef(({ children, ...restProps }, ref) => {
         return (

@@ -13,6 +13,7 @@ export const BreadcrumbItemStyled = styled('li').attrs(({ theme: { breadcrumb } 
         color: ${({ theme, disabled }) => theme.breadcrumb.textColor[disabled ? 'disabled' : 'default']};
         ${({ theme }) => getFontStyle({ theme, fontVariant: 'button2' })}
     }
+
     &:hover {
         ${Text.Style} {
             color: ${({ theme, disabled }) => !disabled && theme.breadcrumb.textColor.hovered};
