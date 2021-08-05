@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.18](https://github.com/medly/medly-components/compare/@medly-components/icons@1.6.17...@medly-components/icons@1.6.18) (2021-08-05)
+
+
+### Bug Fixes
+
+* **icons:** executes create-icon command to handle new icon modifications ([#368](https://github.com/medly/medly-components/issues/368)) ([c4df9ff](https://github.com/medly/medly-components/commit/c4df9ff21b5bc24454be29ec8a504c6e75138adc))
+
+
+
+
+
+## [1.6.17](https://github.com/medly/medly-components/compare/@medly-components/icons@1.6.16...@medly-components/icons@1.6.17) (2021-08-05)
+
+**Note:** Version bump only for package @medly-components/icons
+
+
+
+
+
 ## [1.6.16](https://github.com/medly/medly-components/compare/@medly-components/icons@1.6.15...@medly-components/icons@1.6.16) (2021-08-02)
 
 **Note:** Version bump only for package @medly-components/icons
