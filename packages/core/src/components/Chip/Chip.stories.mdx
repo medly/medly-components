@@ -61,6 +61,26 @@ If you skip the `delete` prop, the chip will not feature a delete 'x' icon.
     <Chip label="Chip without delete icon" onClick={action('Clicked')} color={defaultTheme.chip.defaultColor} />
 </Preview>
 
+### Custom Colors
+
+To use custom colors for `chip` component you can provide the custom `theme` to the `chip` component. You can use the `updateNestedValue` function available in `@medly-components/utils` to update the nested values in the `defaultTheme` object. Check out the `ChipTheme` section to find out which all properties are customizable.
+
+```tsx
+import { updateNestedValue } from '@medly-components/utils';
+import { defaultTheme } from '@medly-components/theme';
+import { ThemeProvider } from 'styled-components';
+import { Chip } from './Chip.tsx';
+
+<ThemeProvider
+    theme={updateNestedValue(defaultTheme, 'chip', {
+        defaultColor: defaultTheme.colors.red[500],
+        disabledColor: defaultTheme.colors.grey[200]
+    })}
+>
+    <Chip label="Red Chip" variant="solid" />
+</ThemeProvider>;
+```
+
 ### Props
 
 <Props of={Chip} />
