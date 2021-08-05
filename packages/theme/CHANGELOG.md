@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.7.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.6.0...@medly-components/theme@2.7.0) (2021-08-05)
+
+
+### Features
+
+* style updates and added prop to show custom search filter in searchbox ([#332](https://github.com/medly/medly-components/issues/332)) ([0f5ef6a](https://github.com/medly/medly-components/commit/0f5ef6a2151ae16fccf626a8100c1079e1b91b99))
+
+
+
+
+
 # [2.6.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.5.0...@medly-components/theme@2.6.0) (2021-08-02)
 
 
