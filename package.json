@@ -26,7 +26,7 @@
         "build:forms": "lerna exec --scope @medly-components/forms -- rollup -c=../../rollup.config.js",
         "build:theme": "lerna exec --scope @medly-components/theme -- rollup -c=../../rollup.config.js",
         "build": "cross-env BABEL_ENV=production lerna exec -- rollup -c=../../rollup.config.js",
-        "chromatic": "chromatic -d out -t 9e7b69d929cd --auto-accept-changes master",
+        "chromatic": "chromatic -d .out -t 9e7b69d929cd --auto-accept-changes",
         "clean": "lerna clean && rimraf yarn.lock && rimraf node_modules",
         "commit": "git-cz",
         "init:commitizen": "commitizen init cz-lerna-changelog --yarn --dev --exact --force",
