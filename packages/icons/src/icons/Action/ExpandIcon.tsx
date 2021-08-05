@@ -1,6 +1,6 @@
 import { WithStyle } from '@medly-components/utils';
 import React, { FC } from 'react';
-import ExpandIconSvg from '../../assets/Action/caret_double_down.svg';
+import ExpandIconSvg from '../../assets/Action/expand_24px_rounded.svg';
 import SvgIcon, { SvgIconProps } from '../../SvgIcon';
 
 const ExpandIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
@@ -15,4 +15,4 @@ const ExpandIcon: FC<SvgIconProps> & WithStyle = React.memo(props => {
 ExpandIcon.Style = SvgIcon;
 ExpandIcon.displayName = 'ExpandIcon';
 
-export default ExpandIcon;
+export default ExpandIcon
