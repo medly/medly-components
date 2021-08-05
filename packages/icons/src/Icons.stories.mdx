@@ -46,6 +46,7 @@ import CameraEnhanceIcon from './icons/Action/CameraEnhanceIcon';
 import CardGiftcardIcon from './icons/Action/CardGiftcardIcon';
 import CardMembershipIcon from './icons/Action/CardMembershipIcon';
 import CardTravelIcon from './icons/Action/CardTravelIcon';
+import CaretDoubleDownIcon from './icons/Action/CaretDoubleDownIcon';
 import ChangeHistoryIcon from './icons/Action/ChangeHistoryIcon';
 import CheckCircleIcon from './icons/Action/CheckCircleIcon';
 import CheckCircleOutlineIcon from './icons/Action/CheckCircleOutlineIcon';
@@ -1927,6 +1928,16 @@ None of the props is required but still you can style all the icons according to
                     hoverBgColor={color('Hover background color', defaultTheme.icon.colors.hovered.bgColor)}
             />
             <CardTravelIcon 
+                    size={select('Size', sizes, 'M')}
+                    variant={select('Variant', variants, 'flat')}
+                    disabled={boolean('Disabled', false)}
+                    withHoverEffect={boolean('With hover efect', false)}
+                    iconColor={color('Icon Color', defaultTheme.icon.colors.default.iconColor)}
+                    bgColor={color('Background Color', defaultTheme.icon.colors.default.bgColor)}
+                    hoverIconColor={color('Hover icon color', defaultTheme.icon.colors.hovered.iconColor)}
+                    hoverBgColor={color('Hover background color', defaultTheme.icon.colors.hovered.bgColor)}
+            />
+            <CaretDoubleDownIcon 
                     size={select('Size', sizes, 'M')}
                     variant={select('Variant', variants, 'flat')}
                     disabled={boolean('Disabled', false)}
