@@ -1,15 +1,64 @@
 import { Chip } from './Chip';
+import { updateNestedValue } from '@medly-components/utils';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
+import { withKnobs, color, select, boolean, text } from '@storybook/addon-knobs';
 import * as stories from './Chip.stories';
+import { defaultTheme } from '@medly-components/theme';
+import { action } from '@storybook/addon-actions';
 
 <Meta title="Core" component={Chip} />
 
 # Chip
 
+Chips represent complex entities in small blocks, such as a contact or a location.
+
+### When To Use
+
+-   It can be used to tag by property.
+-   When categorizing selected items from a dropdown.
+-   To highlight an item's status for quick recognition.
+
 ### Basic Chip
 
 <Preview withToolbar>
-    <Story name="Chip">{stories.Basic()}</Story>
+    <Story name="Chip" decorators={[withKnobs]}>
+        <Chip
+            label={text('Label', 'Demo')}
+            variant={select('Variant', stories.variant, 'solid')}
+            onClick={action('Chip Clicked')}
+            onDelete={action('Delete Clicked')}
+            disabled={boolean('Disabled', false)}
+            color={color('Color', defaultTheme.chip.defaultColor)}
+        />
+    </Story>
+</Preview>
+
+### Variants
+
+Use variant prop to change the style of the button.
+
+<Preview>
+    <Chip label="Solid Chip" onDelete={action('Delete Clicked')} variant="solid" color={defaultTheme.chip.defaultColor} />
+    <Chip label="Outlined Chip" onDelete={action('Delete Clicked')} variant="outlined" color={defaultTheme.chip.defaultColor} />
+    <Chip label="Flat Chip" onDelete={action('Delete Clicked')} variant="flat" color={defaultTheme.chip.defaultColor} />
+</Preview>
+
+### Disabled
+
+Disable style for all the variants.
+
+<Preview>
+    <Chip disabled label="Solid Chip" variant="solid" color={defaultTheme.chip.defaultColor} />
+    <Chip disabled label="Outlined Chip" variant="outlined" color={defaultTheme.chip.defaultColor} />
+    <Chip disabled label="Flat Chip" variant="flat" color={defaultTheme.chip.defaultColor} />
+</Preview>
+
+### Delete Icon
+
+If you skip the `delete` prop, the chip will not feature a delete 'x' icon.
+
+<Preview withToolbar>
+    <Chip label="Chip without delete icon" onClick={action('Clicked')} color={defaultTheme.chip.defaultColor} />
 </Preview>
 
 ### Props
