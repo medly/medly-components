@@ -1,5 +1,5 @@
 import { Chip } from './Chip';
-import { updateNestedValue } from '@medly-components/utils';
+import { ThemeProvider, updateNestedValue } from '@medly-components/utils';
 import { Preview, Story, Meta, Props } from '@storybook/addon-docs/blocks';
 import { withKnobs, color, select, boolean, text } from '@storybook/addon-knobs';
 import * as stories from './Chip.stories';
@@ -80,6 +80,17 @@ import { Chip } from './Chip.tsx';
     <Chip label="Red Chip" variant="solid" />
 </ThemeProvider>;
 ```
+
+<Preview>
+    <ThemeProvider
+        theme={updateNestedValue(defaultTheme, 'chip', {
+            defaultColor: defaultTheme.colors.red[500],
+            disabledColor: defaultTheme.colors.grey[200]
+        })}
+    >
+        <Chip label="Red Chip" />
+    </ThemeProvider>
+</Preview>
 
 ### Props
 
