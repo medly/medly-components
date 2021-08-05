@@ -70,6 +70,7 @@ export type SearchBoxTheme = {
         };
         bgColor: {
             hovered: string;
+            active: string;
         };
     };
     boxShadow: {

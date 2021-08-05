@@ -78,7 +78,8 @@ const SearchBox: SearchBoxTheme = {
             hovered: colors.grey[900]
         },
         bgColor: {
-            hovered: colors.grey[100]
+            hovered: colors.grey[100],
+            active: colors.grey[200]
         }
     },
     boxShadow: {
