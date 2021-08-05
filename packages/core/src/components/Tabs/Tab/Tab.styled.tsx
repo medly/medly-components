@@ -78,6 +78,10 @@ const nonActiveStyle = ({ tabBackground, bgColor }: StyledProps) => css<StyledPr
         ${props => getStyle({ ...props, styleType: 'hovered' })}
         background-color: ${tabBackground === 'GREY' ? bgColor.default : bgColor.hovered};
     }
+
+    &:not(:disabled):active {
+        background-color: ${tabBackground === 'GREY' ? bgColor.default: bgColor.pressed};
+    }
 `;
 
 const disabledStyle = css<StyledProps>`

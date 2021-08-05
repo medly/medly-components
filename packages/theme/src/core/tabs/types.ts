@@ -5,6 +5,7 @@ type Colors = {
     default?: string;
     hovered?: string;
     disabled?: string;
+    pressed?: string;
 };
 export interface TabsTheme {
     countColor: string;
