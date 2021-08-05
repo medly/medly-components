@@ -20,10 +20,8 @@ jobs:
             - name: Build packages
               run: yarn build
 
-            - name: Publish to Chromatic
-              if: github.ref != 'refs/heads/master'
-              run: yarn chromatic
+            - name: Build storybook
+              run: yarn storybook:build
 
-            - name: Publish to Chromatic and auto accept changes
-              if: github.ref == 'refs/heads/master'
-              run: yarn chromatic --auto-accept-changes
+            - name: Publish to Chromatic
+              run: yarn chromatic
