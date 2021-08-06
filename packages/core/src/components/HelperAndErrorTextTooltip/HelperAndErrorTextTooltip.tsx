@@ -21,21 +21,23 @@ export const HelperAndErrorTextTooltip: FC<HelperTextTooltipProps> & WithStyle =
     const { idPrefix, errorIconColor, errorText, builtInErrorMessage, helperText } = props,
         isErrorPresent = useMemo(() => !!errorText || !!builtInErrorMessage, [errorText, builtInErrorMessage]);
 
-    return errorText || builtInErrorMessage || helperText ? (
-        <Popover interactionType="hover">
-            <Styled.PopoverIconContainer>
-                {isErrorPresent ? (
-                    <ErrorIcon iconColor={errorIconColor || defaultTheme.colors.red[500]} size="S" />
-                ) : (
-                    <InfoOutlineIcon size="S" />
-                )}
-            </Styled.PopoverIconContainer>
-            <Styled.HelperAndErrorTextPopover placement="top" withArrow bgColor={'#211F46'}>
-                <Styled.HelperAndErrorTextContainer id={`${idPrefix}-helper-text`}>
-                    {(errorText || builtInErrorMessage || helperText).trim()}
-                </Styled.HelperAndErrorTextContainer>
-            </Styled.HelperAndErrorTextPopover>
-        </Popover>
-    ) : null;
+    if (isErrorPresent || helperText) {
+        return (
+            <Popover interactionType="hover">
+                <Styled.PopoverIconContainer>
+                    {isErrorPresent ? (
+                        <ErrorIcon iconColor={errorIconColor || defaultTheme.colors.red[500]} size="S" />
+                    ) : (
+                        <InfoOutlineIcon size="S" />
+                    )}
+                </Styled.PopoverIconContainer>
+                <Styled.HelperAndErrorTextPopover placement="top" withArrow bgColor={'#211F46'}>
+                    <Styled.HelperAndErrorTextContainer id={`${idPrefix}-helper-text`}>
+                        {(errorText || builtInErrorMessage || helperText).trim()}
+                    </Styled.HelperAndErrorTextContainer>
+                </Styled.HelperAndErrorTextPopover>
+            </Popover>
+        );
+    } else return null;
 });
 HelperAndErrorTextTooltip.displayName = 'HelperAndErrorTextTooltip';
