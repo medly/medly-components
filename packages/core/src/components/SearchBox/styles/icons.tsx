@@ -1,14 +1,13 @@
 import { SvgIcon } from '@medly-components/icons';
-import { styled } from '@medly-components/utils';
-import { Props } from '../types';
+import { css, styled } from '@medly-components/utils';
+import { SearchBoxProps } from '../types';
 import { getIconWrapperStyle } from './utils';
 
-export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean; showExpandIcon?: boolean }>`
+export const CloseIconWrapper = styled.span<SearchBoxProps & { isTyping?: boolean; hasCustomSearchFilter?: boolean }>`
     ${getIconWrapperStyle};
     border-right: ${({ theme, isTyping }) => isTyping && `0.1rem solid ${theme.colors.grey[200]}`};
     margin: 0.6rem 0;
-    padding-right: ${({ showExpandIcon }) => (showExpandIcon ? '.4rem' : 0)};
-
+    padding-right: ${({ hasCustomSearchFilter }) => hasCustomSearchFilter && '0.4rem'};
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.closeIcon.padding[size]};
         * {
@@ -16,7 +15,7 @@ export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean; showEx
         }
         &:hover {
             background: ${({ theme }) => theme.searchBox.closeIcon.bgColor.hovered};
-            border-radius: ${({ theme }) => theme.searchBox.searchIcon.borderRadius};
+            border-radius: ${({ theme }) => theme.searchBox.closeIcon.borderRadius};
             * {
                 fill: ${({ theme }) => theme.searchBox.closeIcon.color.hovered};
             }
@@ -24,7 +23,7 @@ export const CloseIconWrapper = styled.span<Props & { isTyping?: boolean; showEx
     }
 `;
 
-export const SearchIconWrapper = styled.span<Props & { areOptionsVisible?: boolean; isTyping?: boolean }>`
+export const SearchIconWrapper = styled.span<SearchBoxProps & { areOptionsVisible?: boolean; isTyping?: boolean }>`
     ${getIconWrapperStyle};
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.searchIcon.padding[size]};
@@ -38,7 +37,21 @@ export const SearchIconWrapper = styled.span<Props & { areOptionsVisible?: boole
     }
 `;
 
-export const ExpandIconWrapper = styled.span<Props & { isTyping?: boolean }>`
+const expandIconHoveredStyle = css`
+        background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.hovered};
+        border-radius: ${({ theme }) => theme.searchBox.expandIcon.borderRadius};
+        * {
+            fill: ${({ theme }) => theme.searchBox.expandIcon.color.hovered};
+        }
+    `,
+    customSearchActiveStyle = css`
+        ${SvgIcon} {
+            ${expandIconHoveredStyle}
+        }
+        transform: rotate(180deg);
+    `;
+
+export const ExpandIconWrapper = styled.span<SearchBoxProps & { isCustomSearchActive?: boolean }>`
     ${getIconWrapperStyle}
     ${SvgIcon} {
         padding: ${({ theme, size }) => theme.searchBox.expandIcon.padding[size]};
@@ -46,8 +59,9 @@ export const ExpandIconWrapper = styled.span<Props & { isTyping?: boolean }>`
             fill: ${({ theme }) => theme.searchBox.expandIcon.color.default};
         }
         &:hover {
-            background: ${({ theme, isTyping }) => (isTyping ? theme.searchBox.expandIcon.bgColor.hovered : 'transparent')};
-            border-radius: ${({ theme }) => theme.searchBox.expandIcon.borderRadius};
+            ${expandIconHoveredStyle}
         }
     }
+    transition: transform 0.2s ease-out;
+    ${({ isCustomSearchActive }) => isCustomSearchActive && customSearchActiveStyle}
 `;

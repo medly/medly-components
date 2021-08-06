@@ -3,9 +3,9 @@ import { action } from '@storybook/addon-actions';
 import { boolean, color, select, text } from '@storybook/addon-knobs';
 import React from 'react';
 import { Chip } from './Chip';
-import { Props } from './types';
+import { ChipProps } from './types';
 
-const variant: Props['variant'][] = ['solid', 'flat', 'outlined'];
+export const variant: ChipProps['variant'][] = ['solid', 'flat', 'outlined'];
 
 export const ThemeInterface: React.FC<ChipTheme> = () => null;
 ThemeInterface.defaultProps = {

@@ -5,10 +5,10 @@ import { render } from '@test-utils';
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Button } from './Button';
-import { Props } from './types';
+import { ButtonProps } from './types';
 
 describe('Button component', () => {
-    describe.each(['solid', 'outlined', 'flat'])('with %p variant', (variant: Props['variant']) => {
+    describe.each(['solid', 'outlined', 'flat'])('with %p variant', (variant: ButtonProps['variant']) => {
         test('should render properly', () => {
             const { container } = render(<Button variant={variant}>Button</Button>);
             expect(container).toMatchSnapshot();
@@ -32,7 +32,7 @@ describe('Button component', () => {
             expect(container).toMatchSnapshot();
         });
 
-        test.each(['XS', 'S', 'M', 'L'])('should render properly with %p size', (size: Props['size']) => {
+        test.each(['XS', 'S', 'M', 'L'])('should render properly with %p size', (size: ButtonProps['size']) => {
             const { container } = render(
                 <Button size={size} variant={variant}>
                     Button
@@ -42,7 +42,7 @@ describe('Button component', () => {
         });
     });
 
-    test.each(['S', 'L'])('should render properly with %s size and loading state', (size: Props['size']) => {
+    test.each(['S', 'L'])('should render properly with %s size and loading state', (size: ButtonProps['size']) => {
         const { container } = render(
             <Button size={size} isLoading>
                 Button
@@ -51,7 +51,7 @@ describe('Button component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    test.each(['square', 'rounded', 'circle'])('should render properly with %p edges', (edges: Props['edges']) => {
+    test.each(['square', 'rounded', 'circle'])('should render properly with %p edges', (edges: ButtonProps['edges']) => {
         const { container } = render(<Button edges={edges}>Flat Button</Button>);
         expect(container).toMatchSnapshot();
     });
@@ -126,31 +126,31 @@ describe('Button component', () => {
         expect(container).toMatchSnapshot();
     });
 
-    it("should render properly as outlined when theme has hover set to false", () => {
-      const { container } = render(
-          <ThemeProvider
-              theme={updateNestedValue(defaultTheme, 'button.outlined', {
-                  ...defaultTheme.button.outlined,
-                  hoverShadow: false,
-              })}
-          >
-              <Button variant="outlined">Outlined Button</Button>
-          </ThemeProvider>
-      );
-      expect(container).toMatchSnapshot();
+    it('should render properly as outlined when theme has hover set to false', () => {
+        const { container } = render(
+            <ThemeProvider
+                theme={updateNestedValue(defaultTheme, 'button.outlined', {
+                    ...defaultTheme.button.outlined,
+                    hoverShadow: false
+                })}
+            >
+                <Button variant="outlined">Outlined Button</Button>
+            </ThemeProvider>
+        );
+        expect(container).toMatchSnapshot();
     });
 
-    it("should render properly as solid when theme has hover set to false", () => {
-      const { container } = render(
-          <ThemeProvider
-              theme={updateNestedValue(defaultTheme, 'button.solid', {
-                  ...defaultTheme.button.solid,
-                  hoverShadow: false
-              })}
-          >
-              <Button variant="solid">Solid Button</Button>
-          </ThemeProvider>
-      );
-      expect(container).toMatchSnapshot();
+    it('should render properly as solid when theme has hover set to false', () => {
+        const { container } = render(
+            <ThemeProvider
+                theme={updateNestedValue(defaultTheme, 'button.solid', {
+                    ...defaultTheme.button.solid,
+                    hoverShadow: false
+                })}
+            >
+                <Button variant="solid">Solid Button</Button>
+            </ThemeProvider>
+        );
+        expect(container).toMatchSnapshot();
     });
 });

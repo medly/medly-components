@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Button from '../Button';
 import { CheckboxGroup } from './CheckboxGroup';
-import { Props } from './types';
+import { CheckboxGroupProps } from './types';
 
-export const sizes: Props['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
+export const sizes: CheckboxGroupProps['size'][] = ['XS', 'S', 'M', 'L', 'XL'];
 
-export const FormWithCheckboxGroup: React.FC = (props: Props) => {
+export const FormWithCheckboxGroup: React.FC = (props: CheckboxGroupProps) => {
     const [bikes, setBikes] = useState([]),
         handleSubmit = (e: React.FormEvent) => e.preventDefault();
     return (

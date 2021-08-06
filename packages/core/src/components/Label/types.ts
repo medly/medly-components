@@ -3,7 +3,7 @@ import { HTMLProps, WithThemeProp } from '@medly-components/utils';
 
 export type LabelPositions = 'top' | 'right' | 'left' | 'bottom';
 
-export interface Common extends HTMLProps<HTMLLabelElement>, WithThemeProp {
+export interface LabelCommonProps extends HTMLProps<HTMLLabelElement>, WithThemeProp {
     /** Shows pointer while hovering on it
      * @default false
      */
@@ -20,7 +20,7 @@ export interface Common extends HTMLProps<HTMLLabelElement>, WithThemeProp {
     labelColor?: string;
 }
 
-export interface Props extends Common {
+export interface LabelProps extends LabelCommonProps {
     /** Label Variant */
     labelVariant?: FontVariants;
     /** Label Weight */

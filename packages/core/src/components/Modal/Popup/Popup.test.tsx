@@ -1,9 +1,9 @@
 import { render } from '@test-utils';
 import React from 'react';
 import { Popup } from './Popup';
-import { Props } from './types';
+import { ModalPopupProps } from './types';
 
-const ModalPopupRenderer = ({ open = true, minWidth, minHeight }: Props) => {
+const ModalPopupRenderer = ({ open = true, minWidth, minHeight }: ModalPopupProps) => {
     return render(<Popup {...{ open, minWidth, minHeight }} />);
 };
 

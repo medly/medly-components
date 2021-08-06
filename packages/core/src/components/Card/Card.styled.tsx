@@ -1,14 +1,14 @@
 import { BreakpointsTheme, CardTheme } from '@medly-components/theme';
 import { css, styled } from '@medly-components/utils';
 import { rgba } from 'polished';
-import { Props } from './types';
+import { CardProps } from './types';
 
-const verticalFlow = ({ alignItems }: Props) => css`
+const verticalFlow = ({ alignItems }: CardProps) => css`
         flex-direction: column;
         justify-content: ${alignItems === 'top' ? 'flex-start' : alignItems === 'bottom' ? 'flex-end' : 'center'};
         align-items: ${alignItems === 'left' ? 'flex-start' : alignItems === 'right' ? 'flex-end' : 'center'};
     `,
-    horizontalFlow = ({ alignItems }: Props) => css`
+    horizontalFlow = ({ alignItems }: CardProps) => css`
         flex-direction: row;
         align-items: ${alignItems === 'top' ? 'flex-start' : alignItems === 'bottom' ? 'flex-end' : 'center'};
         justify-content: ${alignItems === 'left' ? 'flex-start' : alignItems === 'right' ? 'flex-end' : 'center'};
@@ -20,13 +20,13 @@ const borderTop = (separatorColor: string) => css`
     borderLeft = (separatorColor: string) => css`
         border-left: 1px solid ${separatorColor};
     `,
-    applyBorder = ({ flowDirection, separatorColor }: Partial<Props & CardTheme>) => css`
+    applyBorder = ({ flowDirection, separatorColor }: Partial<CardProps & CardTheme>) => css`
         > div + div {
             ${flowDirection === 'vertical' ? borderTop(separatorColor) : borderLeft(separatorColor)}
         }
     `;
 
-const solid = ({ backgroundColor, shadowColor, onClick }: Partial<CardTheme> & Props) => css`
+const solid = ({ backgroundColor, shadowColor, onClick }: Partial<CardTheme> & CardProps) => css`
         background-color: ${backgroundColor};
         border-radius: ${({ theme }) => theme.card.borderRadius};
         box-shadow: 0 0.2rem 0.8rem ${rgba(shadowColor, 0.2)};
@@ -42,19 +42,19 @@ const solid = ({ backgroundColor, shadowColor, onClick }: Partial<CardTheme> & P
         background-color: transparent;
     `;
 
-const media = ({ theme, breakpoint }: Props & { breakpoint: keyof BreakpointsTheme }) => css`
+const media = ({ theme, breakpoint }: CardProps & { breakpoint: keyof BreakpointsTheme }) => css`
         @media (min-width: ${theme.breakpoints[breakpoint].min}px) {
             padding: ${theme.card.padding[breakpoint]};
         }
     `,
-    getPadding = ({ theme }: Props) => css`
+    getPadding = ({ theme }: CardProps) => css`
         ${media({ theme, breakpoint: 'S' })}
         ${media({ theme, breakpoint: 'M' })}
         ${media({ theme, breakpoint: 'L' })}
         ${media({ theme, breakpoint: 'XL' })}
     `;
 
-export const Card = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<Props>`
+export const Card = styled('div').attrs(({ theme: { card } }) => ({ ...card }))<CardProps>`
     overflow: auto;
     box-sizing: border-box;
     flex: ${({ flex }) => flex};

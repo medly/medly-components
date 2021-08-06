@@ -3,6 +3,105 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.25.11](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.10...@medly-components/forms@1.25.11) (2021-08-06)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.25.10](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.9...@medly-components/forms@1.25.10) (2021-08-05)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.25.9](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.8...@medly-components/forms@1.25.9) (2021-08-05)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.25.8](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.7...@medly-components/forms@1.25.8) (2021-08-05)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.25.7](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.6...@medly-components/forms@1.25.7) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.25.6](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.5...@medly-components/forms@1.25.6) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.25.5](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.4...@medly-components/forms@1.25.5) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.25.4](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.3...@medly-components/forms@1.25.4) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.25.3](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.2...@medly-components/forms@1.25.3) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.25.2](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.1...@medly-components/forms@1.25.2) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.25.1](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.0...@medly-components/forms@1.25.1) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+# [1.25.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.24.11...@medly-components/forms@1.25.0) (2021-08-03)
+
+
+### Features
+
+* add isLading prop to form component ([#336](https://github.com/medly/medly-components/issues/336)) ([8206768](https://github.com/medly/medly-components/commit/8206768529bad8afca36fc05bb2975015ceb616b))
+
+
+
+
+
 ## [1.24.11](https://github.com/medly/medly-components/compare/@medly-components/forms@1.24.10...@medly-components/forms@1.24.11) (2021-08-02)
 
 **Note:** Version bump only for package @medly-components/forms

@@ -7,7 +7,7 @@ export type StyledProps = GridTemplateProps &
         isRowExpanded?: boolean;
         tableSize: TableProps['size'];
     };
-export type Props = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
+export type ContentRowProps = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
     isRowExpanded: boolean;
     data: { [key: string]: any };
     selectedRowIds: Array<any>;

@@ -1,6 +1,6 @@
 import { HTMLProps, Omit } from '@medly-components/utils';
 
-export type Props = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
+export type GroupedRowProps = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
     titleRowData: { [key: string]: any };
     setUniqueIds: React.Dispatch<React.SetStateAction<any[]>>;
     selectedTitleRowIds: Array<any>;

@@ -15,12 +15,14 @@ Breadcrumbs indicate current page's location to user.
         <Breadcrumb>
             <Breadcrumb.Item onClick={action('Home')}>Home</Breadcrumb.Item>
             <Breadcrumb.Item onClick={action('Article')}>Article</Breadcrumb.Item>
-            <Breadcrumb.Item onClick={action('Section')}>Section</Breadcrumb.Item>
+            <Breadcrumb.Item disabled onClick={action('Section')}>
+                Section
+            </Breadcrumb.Item>
         </Breadcrumb>
     </Story>
 </Preview>
 
-You have to pass `onClick` props to perform any action on click on any item.
+You have to pass `onClick` props to perform any action on click on any item. And you can pass `disabled` prop to disable any item.
 
 Also you can use back button by calling `<Breadcrumb.Back />`
 

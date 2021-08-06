@@ -2,7 +2,7 @@ import { cleanup, fireEvent, render } from '@test-utils';
 import React from 'react';
 import { ToastContainer } from './ToastContainer.component';
 import { addToast } from './ToastStore';
-import { Props } from './types';
+import { ToastContainerProps } from './types';
 
 jest.useFakeTimers();
 
@@ -22,9 +22,16 @@ describe('ToastContainer', () => {
         'left-end',
         'left',
         'left-start'
-    ])('should render properly with position %s', (position: Props['position']) => {
+    ])('should render properly with position %s', (position: ToastContainerProps['position']) => {
         const { container } = render(<ToastContainer position={position}></ToastContainer>);
+        addToast({ variant: 'success', header: 'Heading 1', message: 'Info message', timer: 2000 });
         expect(container).toMatchSnapshot();
+        jest.runAllTimers();
+    });
+
+    it('should not render toast container if there are no toasts available', () => {
+        const { container } = render(<ToastContainer />);
+        expect(container.firstChild).toBeNull();
     });
 
     it('should add toast in the container and raising the addToast event', () => {

@@ -1,7 +1,7 @@
 import { styled } from '@medly-components/utils';
-import { Props } from './types';
+import { PopoverProps } from './types';
 
-export const Wrapper = styled('div')<Props>`
+export const Wrapper = styled('div')<PopoverProps>`
     position: relative;
     display: inline-flex;
 `;

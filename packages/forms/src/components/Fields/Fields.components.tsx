@@ -19,13 +19,13 @@ import {
     FileInputProps,
     MultiSelectProps,
     NestedProps,
-    Props,
+    FieldsProps,
     RadioGroupProps,
     SingleSelectProps,
     TextFieldProps
 } from './types';
 
-export const Fields: React.FC<Props> = React.memo(props => {
+export const Fields: React.FC<FieldsProps> = React.memo(props => {
     const { fields, values, handlers, parentName, errorMessages, addErrorMessage } = props;
 
     return (

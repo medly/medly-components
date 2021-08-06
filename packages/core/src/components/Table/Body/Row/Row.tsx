@@ -8,9 +8,9 @@ import ExtendedRowCell from '../Cell/ExtendedRowCell';
 import RowActionsCell from '../Cell/RowActionsCell';
 import RowHoverActionsCell from '../Cell/RowHoverActionsCell';
 import * as Styled from './Row.styled';
-import { Props } from './types';
+import { RowProps } from './types';
 
-export const Row: React.FC<Props> = React.memo(props => {
+export const Row: React.FC<RowProps> = React.memo(props => {
     const [isExpanded, setExpansionState] = useState(false),
         [isRowHovered, setIsRowHovered] = useState(false),
         { id, data, showShadowAfterFrozenElement, selectedRowIds, onRowSelection, ...restProps } = props,

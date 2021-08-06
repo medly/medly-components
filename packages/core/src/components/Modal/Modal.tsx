@@ -8,10 +8,10 @@ import { ModalContext } from './Modal.context';
 import { InnerContainerStyled, ModalBackgroundStyled } from './Modal.styled';
 import Popup from './Popup';
 import { reducer } from './scrollStateReducer/scrollStateReducer';
-import { ModalStaticProps, Props } from './types';
+import { ModalStaticProps, ModalProps } from './types';
 import { useScrollState } from './useScrollState';
 
-export const Modal: FC<Props> & WithStyle & ModalStaticProps = React.memo(
+export const Modal: FC<ModalProps> & WithStyle & ModalStaticProps = React.memo(
     React.forwardRef((props, ref) => {
         const { open, onCloseModal, children, minWidth, shouldCloseOnOutsideClick, minHeight, ...restProps } = props,
             id = restProps.id || 'medly-modal',

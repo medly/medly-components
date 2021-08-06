@@ -1,5 +1,5 @@
 import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
-import { Props as ButtonProps } from '../types';
+import { ButtonProps } from '../types';
 
 export type SVGProp = Omit<HTMLProps<HTMLOrSVGElement>, 'size'>;
 

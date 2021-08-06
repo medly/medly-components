@@ -9,7 +9,7 @@ export type StyledProps = GridTemplateProps &
         isExpandable?: boolean;
         showRowWithCardStyle?: boolean;
     };
-export type Props = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
+export type RowProps = Omit<HTMLProps<HTMLTableRowElement>, 'style' | 'data'> & {
     data: { [key: string]: any };
     selectedRowIds?: Array<any>;
     onRowSelection?: (id: any) => void;

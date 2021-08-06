@@ -6,9 +6,9 @@ import useForm from '../../hooks/useForm';
 import Actions from '../Actions';
 import Fields from '../Fields';
 import * as Styled from './Form.styled';
-import { Props } from './types';
+import { FormProps } from './types';
 
-export const Form: React.FC<Props> & WithStyle = React.memo(
+export const Form: React.FC<FormProps> & WithStyle = React.memo(
     React.forwardRef(
         (
             {
@@ -28,6 +28,7 @@ export const Form: React.FC<Props> & WithStyle = React.memo(
                 gridGap,
                 showDecorators,
                 variant,
+                isLoading,
                 ...restProps
             },
             ref
@@ -62,11 +63,19 @@ export const Form: React.FC<Props> & WithStyle = React.memo(
                         fields={fields}
                         values={values}
                         handlers={handlers}
-                        disabled={disabled}
+                        disabled={disabled || isLoading}
                         showDecorators={showDecorators}
                         variant={variant}
                     />
-                    {!hideActions && <Actions actionSchema={actionSchema} formId={formId} disabled={disabled} actionLabel={actionLabel} />}
+                    {!hideActions && (
+                        <Actions
+                            actionSchema={actionSchema}
+                            formId={formId}
+                            isLoading={isLoading}
+                            disabled={disabled}
+                            actionLabel={actionLabel}
+                        />
+                    )}
                 </Styled.Form>
             );
         }
@@ -79,5 +88,6 @@ Form.defaultProps = {
     hideActions: false,
     disabled: false,
     fullWidth: false,
-    showDecorators: true
+    showDecorators: true,
+    isLoading: false
 };
