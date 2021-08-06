@@ -1,6 +1,7 @@
 import { CheckIcon, MinimizeIcon } from '@medly-components/icons';
-import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { FC, FocusEvent, FormEvent, useCallback, useMemo, useState } from 'react';
+import { ThemeContext, useCombinedRefs, WithStyle } from '@medly-components/utils';
+import React, { FC, FocusEvent, FormEvent, useCallback, useContext, useMemo, useState } from 'react';
+import { HelperAndErrorTextTooltip } from '../HelperAndErrorTextTooltip/HelperAndErrorTextTooltip';
 import { SelectorLabel } from '../Selectors';
 import * as Styled from './Checkbox.styled';
 import { CheckboxProps } from './types';
@@ -18,8 +19,11 @@ export const Checkbox: FC<CheckboxProps> & WithStyle = React.memo(
             validator,
             hasError,
             errorText,
+            showTooltipForHelperAndErrorText,
             ...inputProps
         } = props;
+
+        const theme = useContext(ThemeContext);
 
         const [builtInErrorMessage, setErrorMessage] = useState(''),
             inputId = useMemo(() => id || label, [id, label]),
@@ -50,7 +54,7 @@ export const Checkbox: FC<CheckboxProps> & WithStyle = React.memo(
 
         return (
             <>
-                {(!!errorText || builtInErrorMessage) && (
+                {(!!errorText || builtInErrorMessage) && !showTooltipForHelperAndErrorText && (
                     <Styled.ErrorText disabled={inputProps.disabled}>{errorText || builtInErrorMessage}</Styled.ErrorText>
                 )}
                 <Styled.CheckboxWithLabelWrapper
@@ -61,6 +65,14 @@ export const Checkbox: FC<CheckboxProps> & WithStyle = React.memo(
                     disabled={inputProps.disabled}
                     {...{ fullWidth, labelPosition }}
                 >
+                    {showTooltipForHelperAndErrorText && (
+                        <HelperAndErrorTextTooltip
+                            idPrefix={inputId}
+                            errorIconColor={theme.checkbox.borderColor.error}
+                            errorText={errorText}
+                            builtInErrorMessage={builtInErrorMessage}
+                        />
+                    )}
                     {label && (
                         <SelectorLabel
                             id={`${inputId}-label`}

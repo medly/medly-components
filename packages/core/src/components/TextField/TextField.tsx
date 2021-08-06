@@ -1,7 +1,6 @@
-import { ErrorIcon, InfoOutlineIcon } from '@medly-components/icons';
 import { ThemeContext, useCombinedRefs, WithStyle } from '@medly-components/utils';
 import React, { FC, FocusEvent, FormEvent, useCallback, useContext, useEffect, useMemo, useState } from 'react';
-import Popover from '../Popover';
+import { HelperAndErrorTextTooltip } from '../HelperAndErrorTextTooltip/HelperAndErrorTextTooltip';
 import getMaskedValue from './getMaskedValue';
 import * as Styled from './Styled';
 import { TextFieldProps } from './types';
@@ -160,21 +159,14 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                             >{`${characterCountValue}/${props.maxLength}`}</Styled.CharacterCount>
                         )}
                     </Styled.InputWrapper>
-                    {(isErrorPresent || helperText) && props.showTooltipForHelperAndErrorText && (
-                        <Popover interactionType="hover">
-                            <Styled.PopoverIconContainer>
-                                {isErrorPresent ? (
-                                    <ErrorIcon iconColor={theme.textField[props.variant].error.borderColor} size="S" />
-                                ) : (
-                                    <InfoOutlineIcon size="S" />
-                                )}
-                            </Styled.PopoverIconContainer>
-                            <Styled.HelperTextPopover placement="top" withArrow bgColor={'#211F46'}>
-                                <Styled.HelperTextForTooltip id={`${inputId}-helper-text`} onClick={stopPropagation}>
-                                    {(errorText || builtInErrorMessage || helperText).trim()}
-                                </Styled.HelperTextForTooltip>
-                            </Styled.HelperTextPopover>
-                        </Popover>
+                    {props.showTooltipForHelperAndErrorText && (
+                        <HelperAndErrorTextTooltip
+                            idPrefix={inputId}
+                            errorIconColor={theme.textField[props.variant].error.borderColor}
+                            errorText={errorText}
+                            builtInErrorMessage={builtInErrorMessage}
+                            helperText={helperText}
+                        />
                     )}
                     {isSuffixPresent && showDecorators && (
                         <Styled.Suffix size={size}>

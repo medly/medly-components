@@ -1,5 +1,6 @@
-import { useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useMemo, useState } from 'react';
+import { ThemeContext, useCombinedRefs, WithStyle } from '@medly-components/utils';
+import React, { FC, useCallback, useContext, useMemo, useState } from 'react';
+import { HelperAndErrorTextTooltip } from '../HelperAndErrorTextTooltip/HelperAndErrorTextTooltip';
 import Radio from '../Radio';
 import { SelectorGroup } from '../Selectors';
 import { RadioGroupProps } from './types';
@@ -24,8 +25,11 @@ export const RadioGroup: FC<RadioGroupProps> & WithStyle = React.memo(
             onChange,
             onBlur,
             onInvalid,
+            showTooltipForHelperAndErrorText,
             ...wrapperProps
         } = props;
+
+        const theme = useContext(ThemeContext);
 
         const [builtInErrorMessage, setErrorMessage] = useState(''),
             radioGroupId = useMemo(() => id || name, [id, name]),
@@ -84,9 +88,18 @@ export const RadioGroup: FC<RadioGroupProps> & WithStyle = React.memo(
                         {...{ required, disabled }}
                     >
                         {label}
+                        {showTooltipForHelperAndErrorText && (
+                            <HelperAndErrorTextTooltip
+                                idPrefix={radioGroupId}
+                                errorIconColor={theme.radio.helperTextColor.error}
+                                errorText={errorText}
+                                builtInErrorMessage={builtInErrorMessage}
+                                helperText={helperText}
+                            />
+                        )}
                     </SelectorGroup.Label>
                 )}
-                {(hasError || helperText) && (
+                {(hasError || helperText) && !showTooltipForHelperAndErrorText && (
                     <SelectorGroup.HelperText id={`${radioGroupId}-helper-text`} type="radio" {...{ disabled, hasError }}>
                         {errorText || builtInErrorMessage || helperText}
                     </SelectorGroup.HelperText>

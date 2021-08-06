@@ -52,4 +52,6 @@ export interface CheckboxGroupProps extends Omit<HTMLProps<HTMLDivElement>, 'siz
     validator?: (values: any[]) => string;
     /** This will be handled internally */
     parentHasError?: boolean;
+    /** Show Helper text and error text in a tooltip (popover) */
+    showTooltipForHelperAndErrorText?: boolean;
 }

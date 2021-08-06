@@ -4,8 +4,6 @@ import { HTMLProps, Omit, WithThemeProp } from '@medly-components/utils';
 export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefix' | 'size' | 'height'>, WithThemeProp {
     /** Input Variants */
     variant?: 'outlined' | 'filled' | 'fusion';
-    /** Show Helper text and error text in a tooltip (popover) */
-    showTooltipForHelperAndErrorText?: boolean;
     /** Input Size */
     size?: 'S' | 'M';
     /** Function will called with the input value on blur and invalid event */
@@ -42,6 +40,8 @@ export interface TextFieldProps extends Omit<HTMLProps<HTMLInputElement>, 'prefi
     minRows?: number;
     /** Set to true to display the character count of the current input value */
     withCharacterCount?: boolean;
+    /** Show Helper text and error text in a tooltip (popover) */
+    showTooltipForHelperAndErrorText?: boolean;
 }
 
 export interface StyledProps extends TextFieldProps, TextFieldTheme {

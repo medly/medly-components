@@ -21,6 +21,8 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     options: Option[];
     /** Variants */
     variant?: 'outlined' | 'filled' | 'fusion';
+    /** Show Helper text and error text in a tooltip (popover) */
+    showTooltipForHelperAndErrorText?: boolean;
     /** Sizes */
     size?: 'S' | 'M';
     /** Label */

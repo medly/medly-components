@@ -29,6 +29,8 @@ export interface SelectProps extends InputProps, WithThemeProp {
     options: Option[];
     /** Variants */
     variant?: 'outlined' | 'filled' | 'flat' | 'fusion';
+    /** Show Helper text and error text in a tooltip (popover) */
+    showTooltipForHelperAndErrorText?: boolean;
     /** Sizes */
     size?: 'S' | 'M';
     /** Set it it true to enable search functionality */

@@ -32,4 +32,6 @@ export interface RadioGroupProps extends Omit<HTMLProps<HTMLDivElement>, 'size' 
     helperText?: string;
     /** Use this prop to render option in multiple columns */
     columns?: number;
+    /** Show Helper text and error text in a tooltip (popover) */
+    showTooltipForHelperAndErrorText?: boolean;
 }
