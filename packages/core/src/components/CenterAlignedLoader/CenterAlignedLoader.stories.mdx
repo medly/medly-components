@@ -9,7 +9,7 @@ import { RelativeDiv } from './CenterAlignedLoader.stories.tsx';
 
 # CenterAlignedLoader
 
-This component takes the parent's full width and height and then render the loader in the center. Although it can take any react component as loader, but you can cehckout all the loaders in [Medly Components](https://medly.github.io/medly-components/?path=/story/loaders--loaders)
+This component takes the full width and height of the parent and then renders the loader in the center. Although it can take any react component as a loader, you can check out all the available loaders in [Medly Components](https://medly.github.io/medly-components/?path=/story/loaders--loaders).
 
 <Preview withToolbar>
     <Story name="CenterAlignedLoader" decorators={[withKnobs]}>
@@ -19,7 +19,7 @@ This component takes the parent's full width and height and then render the load
 
 #### Example with different loader
 
-You can pass any React component as loader like this `<CenterAlignedLoader withLoadingBox loader={<ConcentricCircleLoader size="XS" />} />`
+You can pass any React component as a loader as follows: `<CenterAlignedLoader withLoadingBox loader={<ConcentricCircleLoader size="XS" />} />`
 
 <Preview withToolbar>
     <CenterAlignedLoader withLoadingBox loader={<ConcentricCircleLoader size="XS" />} />
@@ -27,7 +27,7 @@ You can pass any React component as loader like this `<CenterAlignedLoader withL
 
 #### Example with absolute position
 
-To show loader on top of another component you can set loader's position to `absolute` and its parent position to `relative`
+To display a loader on top of another component, set the loader position to `absolute` and the parent position to `relative`. 
 
 <Preview withToolbar>
     <RelativeDiv>
