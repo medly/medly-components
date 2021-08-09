@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.26.0](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.12...@medly-components/forms@1.26.0) (2021-08-09)
+
+
+### Features
+
+* **forms:** add missing HTML5 input types ([#337](https://github.com/medly/medly-components/issues/337)) ([ccacbeb](https://github.com/medly/medly-components/commit/ccacbeb5e951c1920d434a8356e759b1e84ca579))
+
+
+
+
+
+## [1.25.12](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.11...@medly-components/forms@1.25.12) (2021-08-08)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.25.11](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.10...@medly-components/forms@1.25.11) (2021-08-06)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.25.10](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.9...@medly-components/forms@1.25.10) (2021-08-05)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.25.9](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.8...@medly-components/forms@1.25.9) (2021-08-05)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
+## [1.25.8](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.7...@medly-components/forms@1.25.8) (2021-08-05)
+
+**Note:** Version bump only for package @medly-components/forms
+
+
+
+
+
 ## [1.25.7](https://github.com/medly/medly-components/compare/@medly-components/forms@1.25.6...@medly-components/forms@1.25.7) (2021-08-03)
 
 **Note:** Version bump only for package @medly-components/forms

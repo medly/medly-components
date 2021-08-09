@@ -83,6 +83,14 @@ export const Fields: React.FC<FieldsProps> = React.memo(props => {
                                 switch (componentProps.type) {
                                     case 'text':
                                     case 'email':
+                                    case 'url':
+                                    case 'tel':
+                                    case 'time':
+                                    case 'month':
+                                    case 'week':
+                                    case 'range':
+                                    case 'color':
+                                    case 'search':
                                     case 'password':
                                         return (
                                             <TextField

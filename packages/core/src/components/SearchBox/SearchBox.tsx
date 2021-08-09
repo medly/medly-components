@@ -5,6 +5,7 @@ import Options from '../SingleSelect/Options';
 import { Option } from '../SingleSelect/types';
 import { useKeyboardNavigation } from '../SingleSelect/useKeyboardNavigation';
 import * as Styled from './SearchBox.styled';
+import { CustomSearchFilterWrapper } from './styles/customSearch';
 import { CloseIconWrapper, ExpandIconWrapper, SearchIconWrapper } from './styles/icons';
 import { SearchInput } from './styles/input';
 import { SearchBoxProps } from './types';
@@ -20,7 +21,9 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
             onClear,
             onSearch,
             className,
-            showExpandIcon,
+            customSearchFilter,
+            fullWidth,
+            minWidth,
             ...restProps
         } = props;
         const wrapperRef = useRef<any>(null),
@@ -30,7 +33,8 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
             optionsRef = useRef<HTMLUListElement>(null),
             [isTyping, updateIsTyping] = useState(false),
             [areOptionsVisible, setOptionsVisibilityState] = useState(false),
-            [options, setOptions] = useState(defaultOptions);
+            [options, setOptions] = useState(defaultOptions),
+            [isCustomSearchActive, setIsCustomSearchActive] = useState(false);
 
         useEffect(() => {
             setOptions(props.options);
@@ -46,6 +50,8 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
                 inputRef.current.blur();
                 updateIsTyping(false);
             }, []),
+            showCustomSearch = useCallback(() => setIsCustomSearchActive(true), []),
+            hideCustomSearch = useCallback(() => setIsCustomSearchActive(false), []),
             clearSearchText = useCallback(() => {
                 inputRef.current.value = '';
                 inputRef.current.focus();
@@ -91,13 +97,17 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
             enterPress && isFocused.current && !areOptionsVisible && onSearch && onSearch(inputRef.current.value);
         }, [enterPress, areOptionsVisible]);
 
+        const hasCustomSearchFilter = !!customSearchFilter;
+
         return (
             <Styled.SearchBoxWrapper
                 ref={wrapperRef}
                 areOptionsVisible={areOptionsVisible}
                 size={size}
                 className={className}
-                showExpandIcon={showExpandIcon}
+                hasCustomSearchFilter={hasCustomSearchFilter}
+                minWidth={minWidth}
+                fullWidth={fullWidth}
             >
                 <SearchInput
                     placeholder={placeholder}
@@ -108,19 +118,20 @@ export const SearchBox: FC<SearchBoxProps> & WithStyle = React.memo(
                     {...restProps}
                 />
                 {isTyping && (
-                    <CloseIconWrapper isTyping={isTyping} size={size} showExpandIcon={showExpandIcon}>
+                    <CloseIconWrapper isTyping={isTyping} size={size} hasCustomSearchFilter={hasCustomSearchFilter}>
                         <CloseIcon title="close icon" onClick={clearSearchText} size={size} />
                     </CloseIconWrapper>
                 )}
-                {showExpandIcon && (
-                    <ExpandIconWrapper isTyping={isTyping} size={size}>
-                        <ExpandIcon title="expand icon" size={size} onClick={areOptionsVisible ? hideOptions : showOptions} />
+                {hasCustomSearchFilter && (
+                    <ExpandIconWrapper size={size} isCustomSearchActive={isCustomSearchActive}>
+                        <ExpandIcon title="expand icon" size={size} onClick={isCustomSearchActive ? hideCustomSearch : showCustomSearch} />
                     </ExpandIconWrapper>
                 )}
                 <SearchIconWrapper areOptionsVisible={areOptionsVisible} isTyping={isTyping} size={size}>
                     <SearchIcon title="search icon" size={size} onClick={handleSearchIconClick} />
                 </SearchIconWrapper>
                 {areOptionsVisible && <Options ref={optionsRef} options={options} variant="filled" onOptionClick={handleOptionClick} />}
+                {isCustomSearchActive && <CustomSearchFilterWrapper size={size}>{customSearchFilter}</CustomSearchFilterWrapper>}
             </Styled.SearchBoxWrapper>
         );
     })
@@ -131,5 +142,7 @@ SearchBox.Style = Styled.SearchBoxWrapper;
 SearchBox.defaultProps = {
     options: [],
     placeholder: 'Search',
-    size: 'S'
+    size: 'S',
+    minWidth: '25.6rem',
+    fullWidth: false
 };

@@ -24,7 +24,14 @@ describe('ToastContainer', () => {
         'left-start'
     ])('should render properly with position %s', (position: ToastContainerProps['position']) => {
         const { container } = render(<ToastContainer position={position}></ToastContainer>);
+        addToast({ variant: 'success', header: 'Heading 1', message: 'Info message', timer: 2000 });
         expect(container).toMatchSnapshot();
+        jest.runAllTimers();
+    });
+
+    it('should not render toast container if there are no toasts available', () => {
+        const { container } = render(<ToastContainer />);
+        expect(container.firstChild).toBeNull();
     });
 
     it('should add toast in the container and raising the addToast event', () => {
