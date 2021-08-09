@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 const navItemGap = '18px';
 
-export const NavItem = styled.button<{ isActive?: boolean }>`
+export type NavItemProps = { isActive?: boolean };
+export const NavItem = styled.button<NavItemProps>`
     color: ${({ theme }) => theme.navBar.navItem.fontColor};
     padding: 0 1.6rem;
     border-radius: 1rem;

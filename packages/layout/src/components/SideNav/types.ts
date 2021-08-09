@@ -1,6 +1,6 @@
+import React, { FC } from 'react';
 import { Theme } from '@medly-components/theme';
 import { WithStyle, WithThemeProp } from '@medly-components/utils';
-import { FC } from 'react';
 import { StyledComponent } from 'styled-components';
 import { NavGroupProps } from './NavGroup/types';
 import { NavItemProps } from './NavItem/types';
