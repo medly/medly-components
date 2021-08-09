@@ -8,6 +8,7 @@ const formatFontFace = (fontFace: FontFaceItem, fontFamily: string) => `
         src: ${fontFace.secondarySrc};
         font-weight: ${fontFace.fontWeight};
         font-style: ${fontFace.fontStyle};
+        font-display: swap;
     }`;
 
 const formatFontFamily = (fontFamilyDetails: FontFaceTheme) => {
