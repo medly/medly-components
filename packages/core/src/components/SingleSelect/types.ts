@@ -29,8 +29,6 @@ export interface SelectProps extends InputProps, WithThemeProp {
     options: Option[];
     /** Variants */
     variant?: 'outlined' | 'filled' | 'flat' | 'fusion';
-    /** Show Helper text and error text in a tooltip (popover) */
-    showTooltipForHelperAndErrorText?: boolean;
     /** Sizes */
     size?: 'S' | 'M';
     /** Set it it true to enable search functionality */
@@ -59,6 +57,8 @@ export interface SelectProps extends InputProps, WithThemeProp {
     errorText?: string;
     /** Function will called with the input value on Blur event*/
     validator?: (val: any) => string;
+    /** Show Helper text and error text in a tooltip (popover) */
+    showTooltipForHelperAndErrorText?: boolean;
 }
 
 export interface SelectWrapperProps extends Omit<SelectProps, 'ref' | 'options'> {

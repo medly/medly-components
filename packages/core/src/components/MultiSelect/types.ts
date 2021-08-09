@@ -21,8 +21,6 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     options: Option[];
     /** Variants */
     variant?: 'outlined' | 'filled' | 'fusion';
-    /** Show Helper text and error text in a tooltip (popover) */
-    showTooltipForHelperAndErrorText?: boolean;
     /** Sizes */
     size?: 'S' | 'M';
     /** Label */
@@ -45,6 +43,8 @@ export interface MultiSelectProps extends Omit<HTMLProps<HTMLInputElement>, 'onC
     errorText?: string;
     /** Function will called with the input value on Blur event */
     validator?: (val: any[]) => string;
+    /** Show Helper text and error text in a tooltip (popover) */
+    showTooltipForHelperAndErrorText?: boolean;
 }
 
 export interface SelectWrapperProps extends Omit<MultiSelectProps, 'ref' | 'options'> {

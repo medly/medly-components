@@ -189,7 +189,6 @@ TextField.defaultProps = {
     size: 'M',
     type: 'text',
     variant: 'filled',
-    showTooltipForHelperAndErrorText: false,
     minWidth: '20rem',
     fullWidth: false,
     disabled: false,

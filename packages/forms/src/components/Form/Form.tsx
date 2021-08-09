@@ -29,7 +29,6 @@ export const Form: React.FC<FormProps> & WithStyle = React.memo(
                 showDecorators,
                 variant,
                 isLoading,
-                showTooltipForHelperAndErrorText,
                 ...restProps
             },
             ref
@@ -67,7 +66,6 @@ export const Form: React.FC<FormProps> & WithStyle = React.memo(
                         disabled={disabled || isLoading}
                         showDecorators={showDecorators}
                         variant={variant}
-                        showTooltipForHelperAndErrorText={showTooltipForHelperAndErrorText}
                     />
                     {!hideActions && (
                         <Actions

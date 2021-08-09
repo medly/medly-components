@@ -41,8 +41,6 @@ export interface FormProps extends FormTypes {
     showDecorators?: boolean;
     /** Input Variants */
     variant?: 'outlined' | 'filled' | 'fusion';
-    /** Show Helper text and error text in a tooltip (popover) */
-    showTooltipForHelperAndErrorText?: boolean;
     /** Loading */
     isLoading?: boolean;
 }

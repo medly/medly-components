@@ -1,7 +1,6 @@
-import { ThemeContext, useCombinedRefs, WithStyle } from '@medly-components/utils';
-import React, { FC, useCallback, useContext, useMemo, useState } from 'react';
+import { useCombinedRefs, WithStyle } from '@medly-components/utils';
+import React, { FC, useCallback, useMemo, useState } from 'react';
 import Checkbox from '../Checkbox';
-import { HelperAndErrorTextTooltip } from '../HelperAndErrorTextTooltip/HelperAndErrorTextTooltip';
 import { SelectorGroup } from '../Selectors';
 import getValuesFromOptions from './getValuesFromOptions';
 import { CheckboxGroupProps } from './types';
@@ -26,11 +25,8 @@ export const CheckboxGroup: FC<CheckboxGroupProps> & WithStyle = React.memo(
             validator,
             parentHasError,
             fullWidthOptions,
-            showTooltipForHelperAndErrorText,
             ...wrapperProps
         } = props;
-
-        const theme = useContext(ThemeContext);
 
         const [builtInErrorMessage, setErrorMessage] = useState(''),
             checkboxGroupId = useMemo(() => id || label, [id, label]),
@@ -116,18 +112,9 @@ export const CheckboxGroup: FC<CheckboxGroupProps> & WithStyle = React.memo(
                             textWeight={labelWeight}
                         >
                             {label}
-                            {showTooltipForHelperAndErrorText && (
-                                <HelperAndErrorTextTooltip
-                                    idPrefix={checkboxGroupId}
-                                    errorIconColor={theme.checkbox.borderColor.error}
-                                    errorText={errorText}
-                                    builtInErrorMessage={builtInErrorMessage}
-                                    helperText={helperText}
-                                />
-                            )}
                         </SelectorGroup.Label>
                     ))}
-                {(errorText || builtInErrorMessage || helperText) && !showTooltipForHelperAndErrorText && (
+                {(errorText || builtInErrorMessage || helperText) && (
                     <SelectorGroup.HelperText
                         id={`${checkboxGroupId}-helper-text`}
                         type="checkbox"

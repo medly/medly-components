@@ -25,6 +25,4 @@ export interface CheckboxProps extends InputProps, WithThemeProp {
     validator?: (checked: boolean) => string;
     /** This will be used internally by Checkbox group */
     hasError?: boolean;
-    /** Show Helper text and error text in a tooltip (popover) */
-    showTooltipForHelperAndErrorText?: boolean;
 }
