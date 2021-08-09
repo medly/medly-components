@@ -252,6 +252,23 @@ describe('TextField', () => {
             expect(container).toMatchSnapshot();
         });
 
+        it('should render properly with helper-text tooltip', () => {
+            const { container } = render(
+                <TextField variant={variant} label="Name" showTooltipForHelperAndErrorText helperText="Some text" />
+            );
+            expect(container).toMatchSnapshot();
+        });
+
+        it('should render properly with error-text tooltip', () => {
+            const { container } = render(
+                <TextField variant={variant} label="Name" showTooltipForHelperAndErrorText errorText="Some text" />
+            );
+            const input = container.querySelector('input');
+            fireEvent.focusIn(input);
+            fireEvent.blur(input);
+            expect(container).toMatchSnapshot();
+        });
+
         it('should render properly with custom disabled cursor (themed)', () => {
             const { container } = render(
                 <ThemeProvider
@@ -286,7 +303,7 @@ describe('TextField', () => {
             expect(container).toMatchSnapshot();
         });
 
-        it('should render without suffix/prefix/character-count/helper-text if we pass showDecorators as false', () => {
+        it('should render without suffix/prefix/character-count if we pass showDecorators as false', () => {
             const prefix = () => <span>prefix</span>;
             const suffix = () => <span>suffix</span>;
             const { queryByText } = render(
@@ -303,7 +320,6 @@ describe('TextField', () => {
             );
             expect(queryByText('prefix')).toBeNull();
             expect(queryByText('suffix')).toBeNull();
-            expect(queryByText('helperText')).toBeNull();
             expect(queryByText('4')).toBeNull();
         });
     });

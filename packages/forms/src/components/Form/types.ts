@@ -35,7 +35,7 @@ export interface FormProps extends FormTypes {
     onChange?: (values: { [key: string]: any }) => void;
     /** optional css grid gap setting */
     gridGap?: string;
-    /** Show prefix, suffix, helper text, and character count elements. If set to false, only the input and label will be rendered.
+    /** Show prefix, suffix, and character count elements. If set to false, only the input, label, and helper-text icon will be rendered.
      * This field is applicable to TextFields, SingleSelect, and DatePicker
      */
     showDecorators?: boolean;

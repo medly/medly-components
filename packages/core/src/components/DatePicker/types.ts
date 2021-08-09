@@ -30,7 +30,7 @@ export interface DatePickerProps extends Omit<HTMLProps<HTMLInputElement>, 'valu
     displayFormat?: DisplayFormat;
     /** Disable date selection */
     disabled?: boolean;
-    /** Show prefix, suffix, helper text, and character count elements. If set to false, only the input and label will be rendered. */
+    /** Show prefix, suffix, and character count elements. If set to false, only the input, label, and helper-text icon will be rendered. */
     showDecorators?: boolean;
     /** To be used when it is required in any form */
     required?: boolean;

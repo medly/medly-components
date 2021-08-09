@@ -174,7 +174,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                         </Styled.Suffix>
                     )}
                 </Styled.InnerWrapper>
-                {(isErrorPresent || helperText) && showDecorators && !props.showTooltipForHelperAndErrorText && (
+                {(isErrorPresent || helperText) && !props.showTooltipForHelperAndErrorText && (
                     <Styled.HelperText id={`${inputId}-helper-text`} onClick={stopPropagation} size={size} variant={props.variant}>
                         {(errorText || builtInErrorMessage || helperText).trim()}
                     </Styled.HelperText>
