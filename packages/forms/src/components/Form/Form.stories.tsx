@@ -17,6 +17,14 @@ export const CommonProps: React.FC<
             | 'radio-group'
             | 'date'
             | 'date-range'
+            | 'url'
+            | 'tel'
+            | 'time'
+            | 'month'
+            | 'week'
+            | 'range'
+            | 'color'
+            | 'search'
             | 'nested';
     } & CommonFieldProps
 > = () => null;
