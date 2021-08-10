@@ -1,4 +1,4 @@
-import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
 import * as stories from './Header.stories';
 
 import Header from './Header';
@@ -89,3 +89,17 @@ import { defaultTheme } from '@medly-components/theme';
         </Header.NavItem>
     </div>
 </Preview>
+
+### Props
+
+<Props of={Header} />
+
+### Static Props
+
+You can use all of below Components like `Header.<name>`
+
+<Props of={stories.StaticProps} />
+
+### HeaderTheme
+
+<Props of={stories.Theme} />
