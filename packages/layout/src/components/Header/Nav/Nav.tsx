@@ -8,9 +8,9 @@ const Nav: React.FC<NavProps> = ({ children }) => {
     const { isOpen, onClose } = useContext(Header.Context);
     return (
         <>
-            <BGOverlay isOpen={isOpen} onClick={onClose} />
-            <Container isOpen={isOpen}>
-                <CloseIcon onClick={onClose} iconColor={layoutDefaultTheme.header.fontColor} />
+            <BGOverlay data-testid="overlay" isOpen={isOpen} onClick={onClose} />
+            <Container data-testid="container" isOpen={isOpen}>
+                <CloseIcon data-testid="closeIcon" onClick={onClose} iconColor={layoutDefaultTheme.header.fontColor} />
                 <Content>{children}</Content>
             </Container>
         </>
