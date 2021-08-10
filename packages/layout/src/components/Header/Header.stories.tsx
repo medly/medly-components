@@ -1,20 +1,30 @@
+import MedlyLogo from '@medly-components/core/src/components/MedlyLogo';
+import { HomeIcon, LockIcon, PillIcon } from '@medly-components/icons';
+import { defaultTheme } from '@medly-components/theme';
+import { useMediaQuery } from '@medly-components/utils';
 import React from 'react';
 import Header from './Header';
-import MedlyLogo from '@medly-components/core/src/components/MedlyLogo';
-import { useMediaQuery } from '@medly-components/utils';
 
-export const Basic = () => {
+export const FullSetup = () => {
+    const isDesktop = useMediaQuery(`@media (min-width: 960px)`);
     return (
-        <div style={{ position: 'fixed', width: '100%', height: '100%', left: 0, top: 0 }}>
-            <Header>
-                <MedlyLogo showName={useMediaQuery(`@media (min-width: 960px)`)} />
-                <Header.Nav>
-                    <Header.NavItem isActive>Item 1</Header.NavItem>
-                    <Header.NavItem>Item 2</Header.NavItem>
-                    <Header.NavItem>Item 3</Header.NavItem>
-                </Header.Nav>
-                <div>Logout</div>
-            </Header>
-        </div>
+        <Header>
+            <MedlyLogo showName={isDesktop} />
+            <Header.Nav>
+                <Header.NavItem isActive>
+                    <HomeIcon size="S" iconColor={defaultTheme.colors.white} />
+                    My Dashboard
+                </Header.NavItem>
+                <Header.NavItem>
+                    <PillIcon size="S" iconColor={defaultTheme.colors.white} />
+                    Prescriptions
+                </Header.NavItem>
+                <Header.NavItem>
+                    <LockIcon size="S" iconColor={defaultTheme.colors.white} />
+                    Security
+                </Header.NavItem>
+            </Header.Nav>
+            <div>Logout</div>
+        </Header>
     );
 };

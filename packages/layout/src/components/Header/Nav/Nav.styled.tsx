@@ -1,15 +1,15 @@
-import styled from 'styled-components';
 import { CloseIcon } from '@medly-components/icons';
+import styled from 'styled-components';
 
 export const BGOverlay = styled.div<{ isOpen: boolean }>`
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: ${({ theme }) => theme.colors.black};
-    opacity: ${({ isOpen }) => isOpen ? 0.5: 0};
-    z-index: ${({ isOpen }) => isOpen ? 1000: -100};
+    opacity: ${({ isOpen }) => (isOpen ? 0.5 : 0)};
+    z-index: ${({ isOpen }) => (isOpen ? 1000 : -100)};
     transition: 0.5s;
 
     @media (min-width: 960px) {
@@ -18,13 +18,13 @@ export const BGOverlay = styled.div<{ isOpen: boolean }>`
 `;
 
 export const Container = styled.div<{ isOpen: boolean }>`
-    position: fixed;
+    position: absolute;
     height: 100vh;
     width: 320px;
     top: 0;
-    left: ${props => props.isOpen ? 0 : '-320px'};
+    left: ${props => (props.isOpen ? 0 : '-320px')};
     transition: 0.5s;
-    background: ${({ theme }) => theme.navBar.backgroundColor};
+    background: ${({ theme }) => theme.header.backgroundColor};
     padding: 1rem;
     z-index: 1001;
     box-sizing: border-box;
@@ -39,10 +39,11 @@ export const Container = styled.div<{ isOpen: boolean }>`
 `;
 
 export const Content = styled.div`
-    display: grid;
-    grid-auto-flow: row;
-    grid-row-gap: 0;
+    display: flex;
+    flex-direction: column;
+
     @media (min-width: 960px) {
+        display: grid;
         grid-auto-flow: column;
         grid-column-gap: 4rem;
     }

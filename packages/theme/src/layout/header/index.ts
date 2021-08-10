@@ -1,6 +1,6 @@
 import colors from '../../core/colors';
 
-const navBar = {
+const header = {
     backgroundColor: colors.professionalNavy,
     maxContentWidth: '1240px',
     height: '72px',
@@ -8,9 +8,9 @@ const navBar = {
     navItem: {
         fontColor: colors.white,
         activeColor: colors.blue[600],
-        hoverColor: colors.blue[600],
+        hoverColor: colors.blue[700],
         activeIndicatorColor: colors.medlyGreen[500],
     }
 };
 
-export default navBar;
+export default header;

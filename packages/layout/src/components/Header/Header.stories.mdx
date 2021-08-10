@@ -1,6 +1,91 @@
-import { Meta, Story } from '@storybook/addon-docs/blocks';
-import * as stories from './Header.stories'; import Header from './Header';
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import * as stories from './Header.stories';
+
+import Header from './Header';
+import MedlyLogo from '@medly-components/core/src/components/MedlyLogo';
+import { PillIcon } from '@medly-components/icons';
+import { defaultTheme } from '@medly-components/theme';
 
 <Meta title="Layout" component={Header} parameters={{ jest: [] }} />
 
-<Story name="Header">{stories.Basic()}</Story>
+<Preview mdxSource="">
+    <Story name="Header">
+        <div style={{ overflow: 'hidden', height: '400px' }}>
+            {stories.FullSetup()}
+            <br />
+            <p>The navigation items are hidden for viewports smaller than 960px and are available in a hamburger menu.</p>
+            <p>Resize the screen to mobile resolution to see the hamburger style side nav in action.</p>
+        </div>
+    </Story>
+</Preview>
+
+Here is a basic navigation setup. The Logo/Icons shown in the illustration can be easily customized as needed.
+
+```tsx
+import Header from '@medly-components/layout/Header';
+import MedlyLogo from '@medly-components/core/MedlyLogo';
+import { HomeIcon, PillIcon, LockIcon } from '@medly-components/icons';
+import { defaultTheme } from '@medly-components/theme';
+
+<Header>
+    <MedlyLogo showName={isDesktop} />
+    <Header.Nav>
+        <Header.NavItem isActive>
+            <HomeIcon size="S" iconColor={defaultTheme.colors.white} />
+            My Dashboard
+        </Header.NavItem>
+        <Header.NavItem>
+            <PillIcon size="S" iconColor={defaultTheme.colors.white} />
+            Prescriptions
+        </Header.NavItem>
+        <Header.NavItem>
+            <LockIcon size="S" iconColor={defaultTheme.colors.white} />
+            Security
+        </Header.NavItem>
+    </Header.Nav>
+    <div>Logout</div>
+</Header>;
+```
+
+<br />
+<br />
+
+### Logo only
+
+<Preview>
+    <Header withNav={false}>
+        <MedlyLogo showName />
+    </Header>
+</Preview>
+
+### Without Nav
+
+<Preview>
+    <Header withNav={false}>
+        <MedlyLogo showName />
+        <div>Logout</div>
+    </Header>
+</Preview>
+
+### Nav Item
+
+<Preview withToolbar>
+    <div>
+        <h6>Text only</h6>
+        <Header.NavItem>Nav Item</Header.NavItem>
+    </div>
+    <div>
+        <h6>With icon</h6>
+        <Header.NavItem>
+            <PillIcon size="S" iconColor={defaultTheme.colors.white} />
+            Prescriptions
+        </Header.NavItem>
+    </div>
+    <div>
+        <h6>Active state</h6>
+        <Header.NavItem isActive>
+            <PillIcon size="S" iconColor={defaultTheme.colors.white} />
+            Prescriptions
+        </Header.NavItem>
+    </div>
+</Preview>

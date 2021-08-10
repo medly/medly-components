@@ -1,11 +1,12 @@
-import styled from 'styled-components';
 import { MenuIcon } from '@medly-components/icons';
+import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
     align-items: center;
-    background: ${({ theme }) => theme.navBar.backgroundColor};
-    height: ${({ theme }) => theme.navBar.height};
+    background: ${({ theme }) => theme.header.backgroundColor};
+    height: ${({ theme }) => theme.header.height};
+    position: relative;
 `;
 
 export const Content = styled.div`
@@ -14,8 +15,8 @@ export const Content = styled.div`
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: ${({ theme }) => theme.navBar.maxContentWidth};
-    color: ${({ theme }) => theme.navBar.fontColor};
+    max-width: ${({ theme }) => theme.header.maxContentWidth};
+    color: ${({ theme }) => theme.header.fontColor};
     padding: 0 3.5rem;
 `;
 
