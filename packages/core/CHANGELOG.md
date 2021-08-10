@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.10.1...@medly-components/core@2.11.0) (2021-08-08)
+
+
+### Features
+
+* ensure text remains visible during webfont load ([#376](https://github.com/medly/medly-components/issues/376)) ([8ade222](https://github.com/medly/medly-components/commit/8ade222fd0e6769611f5b8bfb1ec45643d0ef5ff))
+
+
+
+
+
+## [2.10.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.10.0...@medly-components/core@2.10.1) (2021-08-06)
+
+
+### Bug Fixes
+
+* remove toast container if there are no toasts available ([#375](https://github.com/medly/medly-components/issues/375)) ([d7f037b](https://github.com/medly/medly-components/commit/d7f037be23309e3c3d8ac712da6661d8b4e6ea78))
+
+
+
+
+
 # [2.10.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.9.1...@medly-components/core@2.10.0) (2021-08-05)
 
 

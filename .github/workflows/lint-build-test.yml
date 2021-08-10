@@ -1,10 +1,9 @@
 name: Lint, Build, Test
 
 on:
-    push:
+    pull_request:
         branches:
-            - '**'
-            - '!master'
+            - 'master'
 
 jobs:
     lint-build-test:
