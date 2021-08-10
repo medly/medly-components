@@ -11,7 +11,13 @@ const Header: React.FC<HeaderProps> & HeaderStaticProps = ({ children, withNav }
     return (
         <Container>
             <Content>
-                {withNav && <HamburgerIcon iconColor={layoutDefaultTheme.header.fontColor} onClick={() => toggleIsOpen(true)} />}
+                {withNav && (
+                    <HamburgerIcon
+                        data-testid="hamburger-icon"
+                        iconColor={layoutDefaultTheme.header.fontColor}
+                        onClick={() => toggleIsOpen(true)}
+                    />
+                )}
                 <HeaderContext.Provider value={{ isOpen, onClose: () => toggleIsOpen(false) }}>{children}</HeaderContext.Provider>
             </Content>
         </Container>

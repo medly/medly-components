@@ -1,11 +1,11 @@
 import { layoutDefaultTheme } from '@medly-components/theme';
 import React, { useContext } from 'react';
-import HeaderContext from '../Header.context';
+import Header from '../Header';
 import { BGOverlay, Container, Content, NavCloseIcon as CloseIcon } from './Nav.styled';
 
 export type NavProps = { children: React.ReactNode };
 const Nav: React.FC<NavProps> = ({ children }) => {
-    const { isOpen, onClose } = useContext(HeaderContext);
+    const { isOpen, onClose } = useContext(Header.Context);
     return (
         <>
             <BGOverlay isOpen={isOpen} onClick={onClose} />
