@@ -6,21 +6,10 @@ export const SidenavHeader = styled('div')<HeaderStyledProps>`
     overflow: hidden;
     position: relative;
     min-height: ${({ theme }) => theme.sideNav.closeSize};
+    padding: 0 1.9rem;
+    box-sizing: border-box;
+    display: flex;
     align-items: center;
-    justify-items: center;
-    display: grid;
-    grid-template-columns: ${({
-        theme: {
-            sideNav: { closeSize, openSize }
-        }
-    }) => `${closeSize} calc(${openSize} - ${closeSize}) `};
-
-    svg:last-child {
-        justify-self: left;
-        transform: translateX(-1rem);
-        transition: opacity 200ms;
-        opacity: ${({ isHovered, isExpanded }) => (isHovered || isExpanded ? 1 : 0)};
-    }
 
     &::after {
         content: '';
