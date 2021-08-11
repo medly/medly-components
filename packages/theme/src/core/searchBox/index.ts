@@ -75,7 +75,8 @@ const SearchBox: SearchBoxTheme = {
         borderRadius: '2.5rem',
         color: {
             default: colors.grey[600],
-            hovered: colors.grey[900]
+            hovered: colors.grey[900],
+            active: colors.grey[700]
         },
         bgColor: {
             hovered: colors.grey[100],
