@@ -3,11 +3,21 @@ export interface HeaderTheme {
     maxContentWidth: string;
     height: string;
     fontColor: string;
+    breakpoints: {
+        mobile: string;
+        desktop: string;
+    };
+    nav: {
+        gutterSpace: string;
+    };
     navItem: {
         fontColor: string;
         activeColor: string;
         hoverColor: string;
         activeIndicatorColor: string;
-        height: string;
+        height: {
+            mobile: string;
+            desktop: string;
+        };
     };
 }

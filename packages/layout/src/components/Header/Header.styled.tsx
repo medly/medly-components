@@ -17,11 +17,19 @@ export const Content = styled.div`
     margin: 0 auto;
     max-width: ${({ theme }) => theme.header.maxContentWidth};
     color: ${({ theme }) => theme.header.fontColor};
-    padding: 0 3.5rem;
+    padding: 0 1.6rem;
+
+    /* stylelint-disable */
+    @media (min-width: ${({ theme }) => theme.header.breakpoints.mobile}) {
+        /* stylelint-enable */
+        padding: 0 3.2rem;
+    }
 `;
 
 export const HamburgerIcon = styled(MenuIcon)`
-    @media (min-width: 960px) {
+    /* stylelint-disable */
+    @media (min-width: ${({ theme }) => theme.header.breakpoints.desktop}) {
+        /* stylelint-enable */
         display: none;
     }
 `;

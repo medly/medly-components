@@ -17,10 +17,10 @@ export const StaticProps: FC<HeaderStaticProps> = () => null;
 export const ContextTheme: FC<Context> = () => null;
 
 export const FullSetup = () => {
-    const isDesktop = useMediaQuery(`@media (min-width: 960px)`);
+    const isNotMobile = useMediaQuery(`@media (min-width: ${defaultTheme.header.breakpoints.mobile})`);
     return (
         <Header>
-            <Logo showName={isDesktop} />
+            <Logo showName={isNotMobile} />
             <Header.Nav>
                 <Header.NavItem isActive>
                     <HomeIcon size="S" iconColor={defaultTheme.colors.white} />

@@ -12,7 +12,9 @@ export const BGOverlay = styled.div<{ isOpen: boolean }>`
     z-index: ${({ isOpen }) => (isOpen ? 1000 : -100)};
     transition: 0.5s;
 
-    @media (min-width: 960px) {
+    /* stylelint-disable */
+    @media (min-width: ${({ theme }) => theme.header.breakpoints.desktop}) {
+        /* stylelint-enable */
         display: none;
     }
 `;
@@ -29,7 +31,9 @@ export const Container = styled.div<{ isOpen: boolean }>`
     z-index: 1001;
     box-sizing: border-box;
 
-    @media (min-width: 960px) {
+    /* stylelint-disable */
+    @media (min-width: ${({ theme }) => theme.header.breakpoints.desktop}) {
+        /* stylelint-enable */
         padding: 0;
         width: auto;
         position: static;
@@ -42,17 +46,21 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 960px) {
+    /* stylelint-disable */
+    @media (min-width: ${({ theme }) => theme.header.breakpoints.desktop}) {
+        /* stylelint-enable */
         display: grid;
         grid-auto-flow: column;
-        grid-column-gap: 4rem;
+        grid-column-gap: ${({ theme }) => theme.header.nav.gutterSpace};
     }
 `;
 
 export const NavCloseIcon = styled(CloseIcon)`
-    margin: 1.2rem 0 4.6rem 1.2rem;
+    margin: 0.6rem 0 4rem 0.6rem;
 
-    @media (min-width: 960px) {
+    /* stylelint-disable */
+    @media (min-width: ${({ theme }) => theme.header.breakpoints.desktop}) {
+        /* stylelint-enable */
         display: none;
     }
 `;

@@ -11,7 +11,7 @@ export const NavItem = styled.button<NavItemProps>`
     text-decoration: none;
     font-size: 1.4rem;
     position: relative;
-    height: ${({ theme }) => theme.header.navItem.height};
+    height: ${({ theme }) => theme.header.navItem.height.mobile};
     display: grid;
     grid-auto-flow: column;
     grid-column-gap: 1.8rem;
@@ -19,17 +19,22 @@ export const NavItem = styled.button<NavItemProps>`
     text-align: left;
     grid-auto-columns: max-content;
 
-    @media (min-width: 960px) {
+    /* stylelint-disable */
+    @media (min-width: ${({ theme }) => theme.header.breakpoints.desktop}) {
+        /* stylelint-enable */
         background: ${({ theme }) => theme.header.backgroundColor};
         grid-column-gap: 0.8rem;
+        height: ${({ theme }) => theme.header.navItem.height.desktop};
+        letter-spacing: -0.04rem;
+        font-weight: ${({ theme, isActive }) => (isActive ? theme.font.weights.Medium : theme.font.weights.Normal)};
 
         &::before {
             display: ${props => (props.isActive ? 'block' : 'none')};
             content: '';
             position: absolute;
-            width: 100%;
-            top: calc((${({ theme }) => theme.header.navItem.height} - ${({ theme }) => theme.header.height}) / 2);
-            left: 0;
+            width: calc(100% - 1.6rem * 2);
+            top: calc((${({ theme }) => theme.header.navItem.height.desktop} - ${({ theme }) => theme.header.height}) / 2);
+            left: 1.6rem;
             background: ${({ theme }) => theme.header.navItem.activeIndicatorColor};
             height: 4px;
             border-radius: 0 0 2px 2px;
