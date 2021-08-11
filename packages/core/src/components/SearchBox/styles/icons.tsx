@@ -53,7 +53,7 @@ const expandIconHoveredStyle = css`
             }
 
             * {
-                fill: ${({ theme }) => theme.searchBox.expandIcon.bgColor.active};
+                fill: ${({ theme }) => theme.searchBox.expandIcon.color.active};
             }
 
             &:hover {
