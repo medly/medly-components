@@ -18,6 +18,11 @@ export const testSchema: FormFieldSchema = {
         required: true,
         label: 'Email'
     },
+    website: {
+        type: 'url',
+        required: true,
+        label: 'Website'
+    },
     resume: {
         type: 'file',
         label: 'Resume',

@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 ### Description
-Description of the story
+Provide a description of the story.
 
 ### In Scope
 - 
@@ -20,4 +20,4 @@ Description of the story
 https://www.figma.com/file/vA4EQdxl0d0ETtYpw2uSjW/Medly-Pattern-Library-B2B-Internal?node-id=7343%3A1201
 
 ### Additional context
-Add any other context or screenshots about the feature request here.
+Provide any other context or screenshots of the feature request.

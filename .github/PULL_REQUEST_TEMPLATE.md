@@ -2,8 +2,8 @@
 
 Please check if your PR fulfills the following requirements:
 
--   [ ] Tests for the changes have been added (for bug fixes / features)
--   [ ] Docs have been added / updated (for bug fixes / features)
+-   [ ] Tests for the changes have been added (for bug fixes/features)
+-   [ ] Docs have been added/updated (for bug fixes/features)
 
 ### PR Type
 
@@ -35,8 +35,8 @@ What kind of change does this PR introduce?
 -   [ ] Yes
 -   [ ] No
 
-<!-- If this PR contains a breaking change, please describe the impact and migration path for existing applications below. -->
+<!-- If this PR contains a breaking change, please describe the impact and migration path of the existing applications below. -->
 
 ### Additional context
 
-Add any other context or screenshots about the feature pr here.
+Provide any additional context or screenshots about the feature PR.

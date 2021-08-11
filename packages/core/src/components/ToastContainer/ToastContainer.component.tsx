@@ -11,11 +11,13 @@ export const ToastContainer: FC<ToastContainerProps> & WithStyle = React.memo(
         const toasts = useStore(toastStore);
 
         return (
-            <Styled.Container ref={ref} {...props}>
-                {toasts.map(toast => (
-                    <Toast key={toast.id} {...toast} />
-                ))}
-            </Styled.Container>
+            toasts.length > 0 && (
+                <Styled.Container ref={ref} {...props}>
+                    {toasts.map(toast => (
+                        <Toast key={toast.id} {...toast} />
+                    ))}
+                </Styled.Container>
+            )
         );
     })
 );

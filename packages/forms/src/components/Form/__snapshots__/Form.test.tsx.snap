@@ -1754,6 +1754,41 @@ exports[`Form should render properly with initial state 1`] = `
       class="c11"
     >
       <div
+        class="c2 c3"
+        id="website-input-wrapper"
+      >
+        <div
+          class="c4 c5"
+        >
+          <div
+            class="c6"
+          >
+            <input
+              aria-describedby="website-helper-text"
+              class="c7"
+              id="website-input"
+              name="website"
+              placeholder=" "
+              required=""
+              type="url"
+              value=""
+            />
+            <label
+              class="c8 c9"
+              for="website-input"
+              required=""
+            >
+              Website
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c11"
+    >
+      <div
         class="c12"
         id="resume-field"
       >
@@ -3959,6 +3994,41 @@ exports[`Form should render properly without initial state 1`] = `
               required=""
             >
               Email
+            </label>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      class="c14"
+    >
+      <div
+        class="c5 c6"
+        id="website-input-wrapper"
+      >
+        <div
+          class="c7 c8"
+        >
+          <div
+            class="c9"
+          >
+            <input
+              aria-describedby="website-helper-text"
+              class="c10"
+              id="website-input"
+              name="website"
+              placeholder=" "
+              required=""
+              type="url"
+              value=""
+            />
+            <label
+              class="c11 c12"
+              for="website-input"
+              required=""
+            >
+              Website
             </label>
           </div>
         </div>

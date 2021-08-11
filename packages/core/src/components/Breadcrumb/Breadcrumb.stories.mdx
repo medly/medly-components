@@ -8,7 +8,7 @@ import Text from '../Text';
 
 # Breadcrumb
 
-Breadcrumbs indicate current page's location to user.
+Breadcrumbs indicates the user's location in the site.  
 
 <Preview withToolbar>
     <Story name="Breadcrumb">
@@ -22,9 +22,8 @@ Breadcrumbs indicate current page's location to user.
     </Story>
 </Preview>
 
-You have to pass `onClick` props to perform any action on click on any item. And you can pass `disabled` prop to disable any item.
-
-Also you can use back button by calling `<Breadcrumb.Back />`
+To perfom any action on click on any item, pass the `onClick` prop, and to disable any item, pass the `disabled` prop. 
+Additionally, to use the back button, call `<Breadcrumb.Back />`.
 
 <Preview withToolbar>
     <Breadcrumb.Back onClick={action('Back')} />
