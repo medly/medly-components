@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.13.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.12.0...@medly-components/core@2.13.0) (2021-08-11)
+
+
+### Features
+
+* updating theme to include searchBox expandIcon active state ([#379](https://github.com/medly/medly-components/issues/379)) ([f868b93](https://github.com/medly/medly-components/commit/f868b93847ef0ac92f4996897fe3638d5a0b06df))
+
+
+
+
+
 # [2.12.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.11.0...@medly-components/core@2.12.0) (2021-08-11)
 
 
