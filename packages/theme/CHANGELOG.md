@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.9.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.8.0...@medly-components/theme@2.9.0) (2021-08-11)
+
+
+### Features
+
+* search box component updates ([#371](https://github.com/medly/medly-components/issues/371)) ([f89ed95](https://github.com/medly/medly-components/commit/f89ed95f9619707aaa47410c99ee83305261473e))
+
+
+
+
+
 # [2.8.0](https://github.com/medly/medly-components/compare/@medly-components/theme@2.7.0...@medly-components/theme@2.8.0) (2021-08-05)
 
 
