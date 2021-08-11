@@ -1,5 +1,5 @@
 export type LogoProps = {
     showName?: boolean;
-    logo?: React.FC;
-    name?: React.FC;
+    logo?: React.ComponentType;
+    name?: React.ComponentType;
 };

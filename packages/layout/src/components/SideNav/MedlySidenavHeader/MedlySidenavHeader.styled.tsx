@@ -11,6 +11,11 @@ export const SidenavHeader = styled('div')<HeaderStyledProps>`
     display: flex;
     align-items: center;
 
+    svg:last-child {
+        transition: opacity 200ms;
+        opacity: ${({ isHovered, isExpanded }) => (isHovered || isExpanded ? 1 : 0)};
+    }
+
     &::after {
         content: '';
         width: calc(100% - ${({ theme }) => theme.spacing.M3});

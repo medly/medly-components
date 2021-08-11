@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-const navItemGap = '18px';
-
 export type NavItemProps = { isActive?: boolean };
 export const NavItem = styled.button<NavItemProps>`
     color: ${({ theme }) => theme.header.navItem.fontColor};
@@ -13,7 +11,7 @@ export const NavItem = styled.button<NavItemProps>`
     text-decoration: none;
     font-size: 1.4rem;
     position: relative;
-    height: calc(${({ theme }) => theme.header.height} - ${navItemGap});
+    height: ${({ theme }) => theme.header.navItem.height};
     display: grid;
     grid-auto-flow: column;
     grid-column-gap: 1.8rem;
@@ -30,7 +28,7 @@ export const NavItem = styled.button<NavItemProps>`
             content: '';
             position: absolute;
             width: 100%;
-            top: calc(-${navItemGap} / 2);
+            top: calc((${({ theme }) => theme.header.navItem.height} - ${({ theme }) => theme.header.height}) / 2);
             left: 0;
             background: ${({ theme }) => theme.header.navItem.activeIndicatorColor};
             height: 4px;

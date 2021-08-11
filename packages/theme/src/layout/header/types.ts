@@ -8,5 +8,6 @@ export interface HeaderTheme {
         activeColor: string;
         hoverColor: string;
         activeIndicatorColor: string;
+        height: string;
     };
 }

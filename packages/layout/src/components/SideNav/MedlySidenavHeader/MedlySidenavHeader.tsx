@@ -9,7 +9,7 @@ export const MedlySidenavHeader: FC<Props> & WithStyle = React.memo(({ companyLo
     const { isHovered, isExpanded } = useContext(SideNavContext);
     return (
         <Styled.SidenavHeader as="div" isHovered={isHovered} isExpanded={isExpanded}>
-            <Logo showName={isHovered} name={companyName} logo={companyLogo} />
+            <Logo name={companyName} logo={companyLogo} />
         </Styled.SidenavHeader>
     );
 });

@@ -10,7 +10,8 @@ const header: HeaderTheme = {
         fontColor: colors.white,
         activeColor: colors.blue[600],
         hoverColor: colors.blue[700],
-        activeIndicatorColor: colors.medlyGreen[500]
+        activeIndicatorColor: colors.medlyGreen[500],
+        height: '54px'
     }
 };
 

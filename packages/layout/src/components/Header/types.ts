@@ -6,7 +6,6 @@ import { NavProps } from './Nav/Nav';
 import { NavItemProps } from './NavItem/NavItem.styled';
 
 export type HeaderProps = {
-    children?: React.ReactNode;
     withNav?: boolean;
 };
 
