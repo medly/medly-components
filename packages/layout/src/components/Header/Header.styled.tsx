@@ -20,7 +20,7 @@ export const Content = styled.div`
     padding: 0 1.6rem;
 
     /* stylelint-disable */
-    @media (min-width: ${({ theme }) => theme.header.breakpoints.mobile}) {
+    @media (min-width: ${({ theme }) => theme.header.breakpoints.tablet}) {
         /* stylelint-enable */
         padding: 0 3.2rem;
     }

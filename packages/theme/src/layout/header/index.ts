@@ -8,6 +8,7 @@ const header: HeaderTheme = {
     fontColor: colors.white,
     breakpoints: {
         mobile: '375px',
+        tablet: '720px',
         desktop: '960px'
     },
     nav: {

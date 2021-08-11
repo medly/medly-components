@@ -5,6 +5,7 @@ export interface HeaderTheme {
     fontColor: string;
     breakpoints: {
         mobile: string;
+        tablet: string;
         desktop: string;
     };
     nav: {
