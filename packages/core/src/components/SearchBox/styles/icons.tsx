@@ -52,6 +52,10 @@ const expandIconHoveredStyle = css`
                 transform: rotate(180deg);
             }
 
+            * {
+                fill: ${({ theme }) => theme.searchBox.expandIcon.color.active};
+            }
+
             &:hover {
                 background: ${({ theme }) => theme.searchBox.expandIcon.bgColor.active};
             }
