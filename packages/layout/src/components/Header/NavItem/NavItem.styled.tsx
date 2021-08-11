@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export type NavItemProps = { isActive?: boolean };
 export const NavItem = styled.button<NavItemProps>`
     color: ${({ theme }) => theme.header.navItem.fontColor};
-    padding: 0 1.6rem;
+    padding: 0 1.2rem;
     border-radius: 1rem;
     background: ${({ theme, ...props }) => (props.isActive ? theme.header.navItem.activeColor : theme.header.backgroundColor)};
     border: none;
@@ -27,6 +27,7 @@ export const NavItem = styled.button<NavItemProps>`
         height: ${({ theme }) => theme.header.navItem.height.desktop};
         letter-spacing: -0.04rem;
         font-weight: ${({ theme, isActive }) => (isActive ? theme.font.weights.Medium : theme.font.weights.Normal)};
+        padding: 0 1.6rem;
 
         &::before {
             display: ${props => (props.isActive ? 'block' : 'none')};
