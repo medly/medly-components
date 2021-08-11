@@ -75,6 +75,7 @@ import EuroSymbolIcon from './icons/Action/EuroSymbolIcon';
 import EventIcon from './icons/Action/EventIcon';
 import EventSeatIcon from './icons/Action/EventSeatIcon';
 import ExitToAppIcon from './icons/Action/ExitToAppIcon';
+import ExpandIcon from './icons/Action/ExpandIcon';
 import ExploreIcon from './icons/Action/ExploreIcon';
 import ExploreOffIcon from './icons/Action/ExploreOffIcon';
 import ExtensionIcon from './icons/Action/ExtensionIcon';
@@ -2217,6 +2218,16 @@ None of the props is required but still you can style all the icons according to
                     hoverBgColor={color('Hover background color', defaultTheme.icon.colors.hovered.bgColor)}
             />
             <ExitToAppIcon 
+                    size={select('Size', sizes, 'M')}
+                    variant={select('Variant', variants, 'flat')}
+                    disabled={boolean('Disabled', false)}
+                    withHoverEffect={boolean('With hover efect', false)}
+                    iconColor={color('Icon Color', defaultTheme.icon.colors.default.iconColor)}
+                    bgColor={color('Background Color', defaultTheme.icon.colors.default.bgColor)}
+                    hoverIconColor={color('Hover icon color', defaultTheme.icon.colors.hovered.iconColor)}
+                    hoverBgColor={color('Hover background color', defaultTheme.icon.colors.hovered.bgColor)}
+            />
+            <ExpandIcon 
                     size={select('Size', sizes, 'M')}
                     variant={select('Variant', variants, 'flat')}
                     disabled={boolean('Disabled', false)}

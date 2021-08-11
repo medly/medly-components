@@ -12,7 +12,7 @@ export type FormActionSchema = {
     actions: ButtonProps[];
 };
 
-export type Props = {
+export type ActionProps = {
     /** Form id */
     formId: string;
     /** Disable the actions */
@@ -21,4 +21,6 @@ export type Props = {
     actionLabel?: string;
     /** Action Schema */
     actionSchema?: FormActionSchema;
+    /** Loading */
+    isLoading?: boolean;
 };

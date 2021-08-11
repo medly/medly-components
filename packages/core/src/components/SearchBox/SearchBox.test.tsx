@@ -1,9 +1,10 @@
 import { fireEvent, getByPlaceholderText, render } from '@test-utils';
 import React from 'react';
 import { SearchBox } from './SearchBox';
-import { Props } from './types';
+import { PlaceholderComponent } from './SearchBox.stories';
+import { SearchBoxProps } from './types';
 
-function renderComponent(props: Props) {
+function renderComponent(props: SearchBoxProps) {
     const { container, ...rest } = render(<SearchBox {...props} />);
 
     return {
@@ -14,7 +15,7 @@ function renderComponent(props: Props) {
 }
 
 describe('SearchBox', () => {
-    test.each(['S', 'M'])('should render properly with %p size', (size: Props['size']) => {
+    test.each(['S', 'M'])('should render properly with %p size', (size: SearchBoxProps['size']) => {
         const { container } = render(<SearchBox size={size} />);
         expect(container).toMatchSnapshot();
     });
@@ -98,7 +99,7 @@ describe('SearchBox', () => {
     describe('expand icon', () => {
         const props = {
             placeholder: 'search',
-            showExpandIcon: true
+            customSearchFilter: <PlaceholderComponent />
         };
 
         it('should render expand icon when showExpandIcon prop is true', () => {

@@ -1,7 +1,7 @@
 import { SvgIcon } from '@medly-components/icons';
 import { css } from '@medly-components/utils';
 import { rgba } from 'polished';
-import { Props } from '../types';
+import { ButtonProps } from '../types';
 
 const getStyle = (textColor: string, bgColor: string) => css`
     color: ${textColor};
@@ -13,11 +13,11 @@ const getStyle = (textColor: string, bgColor: string) => css`
     }
 `;
 
-const getHoverShadow = (shadowColor: string ) => css`
-      box-shadow: 0 0.2rem 0.8rem ${rgba(shadowColor, 0.35)};
-    `
+const getHoverShadow = (shadowColor: string) => css`
+    box-shadow: 0 0.2rem 0.8rem ${rgba(shadowColor, 0.35)};
+`;
 
-export const solidButton = ({ theme, isLoading }: Props) => {
+export const solidButton = ({ theme, isLoading }: ButtonProps) => {
     const { textColor, bgColor, hoverShadow } = theme.button.solid;
     return css`
         &:disabled {
@@ -35,6 +35,6 @@ export const solidButton = ({ theme, isLoading }: Props) => {
                 ${getStyle(textColor.hovered, bgColor.hovered)}
                 ${hoverShadow && getHoverShadow(bgColor.hovered)}
             }
-          }
+        }
     `;
 };

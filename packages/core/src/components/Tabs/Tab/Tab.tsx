@@ -2,9 +2,9 @@ import { WithStyle } from '@medly-components/utils';
 import React, { useContext } from 'react';
 import { TabsContext } from '../Tabs.context';
 import * as Styled from './Tab.styled';
-import { Props } from './types';
+import { TabProps } from './types';
 
-export const Tab: React.FC<Props> & WithStyle = React.memo(props => {
+export const Tab: React.FC<TabProps> & WithStyle = React.memo(props => {
     const { id, active, label, icon: Icon = null, helperText, count, disabled, disabledLabel, ...restProps } = props,
         { tabSize, tabBackground, variant } = useContext(TabsContext);
     return (

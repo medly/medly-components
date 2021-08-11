@@ -1,7 +1,16 @@
 import { defaultTheme, SearchBoxTheme } from '@medly-components/theme';
 import React from 'react';
+import Button from '../Button';
 import Text from '../Text';
-import { Props } from './types';
+import TextField from '../TextField';
+import { SearchBoxProps } from './types';
+
+export const PlaceholderComponent: React.FC = () => (
+    <div>
+        <TextField fullWidth variant="outlined" size="S" label="Organization" />
+        <Button size="S">Submit</Button>
+    </div>
+);
 
 export const optionsArray = [
     { value: 'Dummy1 option', label: 'Dummy1 option' },
@@ -14,7 +23,7 @@ export const optionsArray = [
     { value: <Text>Custom component</Text>, label: 'Custom component' }
 ];
 
-export const size: Props['size'][] = ['S', 'M'];
+export const size: SearchBoxProps['size'][] = ['S', 'M'];
 
 export const ThemeInterface: React.FC<SearchBoxTheme> = () => null;
 ThemeInterface.defaultProps = {

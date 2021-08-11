@@ -27,7 +27,7 @@ export type StaticProps = {
     Context?: React.Context<PopoverContextType>;
 };
 
-export interface Props extends HTMLProps<HTMLDivElement> {
+export interface PopoverProps extends HTMLProps<HTMLDivElement> {
     /** Interaction type */
     interactionType?: InteractionType;
 }

@@ -4,22 +4,22 @@ import Options from '../SingleSelect/Options';
 import { SearchIconWrapper } from './styles/icons';
 import { getOptionsStyles } from './styles/options';
 import { getBorderAndBoxShadow, getSearchBoxSize } from './styles/utils';
-import { Props } from './types';
+import { SearchBoxProps } from './types';
 
-const getBorderRadius = ({ theme, areOptionsVisible, size }: Props & { areOptionsVisible?: boolean }) => {
+const getBorderRadius = ({ theme, areOptionsVisible, size }: SearchBoxProps & { areOptionsVisible?: boolean }) => {
     const border = theme.searchBox.borderRadius[size][areOptionsVisible ? 'active' : 'default'];
     return css`
         border-radius: ${border};
     `;
 };
 
-const activeSearchBoxStyle = ({ theme: { searchBox } }: Props) => css`
+const activeSearchBoxStyle = ({ theme: { searchBox } }: SearchBoxProps) => css`
     box-shadow: ${searchBox.boxShadow.active};
     border-color: ${searchBox.borderColor.active};
     border-width: 1.5px;
 `;
 
-const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: Props) => css`
+const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: SearchBoxProps) => css`
     border-bottom: 1.5px solid;
     border-color: ${searchBox.borderColor.default};
     transition: border-color 100ms, box-shadow 100ms;
@@ -42,7 +42,6 @@ const nonActiveSearchBoxStyle = ({ theme: { searchBox } }: Props) => css`
 `;
 
 const searchBoxWithExpandStyle = () => css`
-    width: 31.2rem;
     padding-right: 0.8rem;
 
     span {
@@ -56,8 +55,9 @@ const searchBoxWithExpandStyle = () => css`
     }
 `;
 
-export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean; showExpandIcon?: boolean }>`
-    width: 25.6rem;
+export const SearchBoxWrapper = styled.div<
+    SearchBoxProps & { areOptionsVisible?: boolean; hasCustomSearchFilter?: boolean; fullWidth?: boolean }
+>`
     display: flex;
     flex-direction: row;
     outline: none;
@@ -67,6 +67,8 @@ export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean
     position: relative;
     padding: ${({ theme, size }) => theme.searchBox.padding[size]};
     background-color: ${({ theme, areOptionsVisible }) => theme.searchBox.bgColor[areOptionsVisible ? 'active' : 'default']};
+    min-width: ${({ minWidth }) => minWidth};
+    width: ${({ fullWidth }) => (fullWidth ? '100%' : 'min-content')};
 
     input {
         ${({ theme, size }) => getFontStyle({ theme, fontVariant: theme.searchBox.textVariant[size] })}
@@ -82,5 +84,5 @@ export const SearchBoxWrapper = styled.div<Props & { areOptionsVisible?: boolean
 
     ${getBorderRadius};
     ${({ areOptionsVisible }) => (areOptionsVisible ? activeSearchBoxStyle : nonActiveSearchBoxStyle)};
-    ${({ showExpandIcon }) => showExpandIcon && searchBoxWithExpandStyle}
+    ${({ hasCustomSearchFilter }) => hasCustomSearchFilter && searchBoxWithExpandStyle}
 `;

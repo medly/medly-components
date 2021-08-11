@@ -1,6 +1,6 @@
 import { defaultTheme } from '@medly-components/theme';
 import { css, styled } from '@medly-components/utils';
-import { Props } from './types';
+import { TextProps } from './types';
 
 const uppercase = () => css`
     text-transform: uppercase;
@@ -9,7 +9,7 @@ const uppercase = () => css`
 const lineThrough = () => css`
     text-decoration: line-through;
 `;
-const getTextStyle = ({ theme, ...props }: Props) => {
+const getTextStyle = ({ theme, ...props }: TextProps) => {
     const { textColor, textVariant, textWeight, textAlign } = props,
         { defaults, weights, variants } = theme.font,
         { fontSize, fontWeight, lineHeight, letterSpacing } = variants[textVariant || defaults.variant];
@@ -25,7 +25,7 @@ const getTextStyle = ({ theme, ...props }: Props) => {
     `;
 };
 
-export const TextStyled = styled('span')<Props>`
+export const TextStyled = styled('span')<TextProps>`
     ${getTextStyle}
 
     ${({ fullWidth, theme }) =>

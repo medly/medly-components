@@ -1,7 +1,7 @@
 import { HTMLProps, WithStyle } from '@medly-components/utils';
-import { Props as TabProps } from './Tab/types';
-import { Props as TabListProps } from './TabList/types';
-import { Props as TabPanelProps } from './TabPanel/types';
+import {  TabProps } from './Tab/types';
+import { TabListProps } from './TabList/types';
+import { TabPanelProps } from './TabPanel/types';
 
 export type TabSize = 'S' | 'M' | 'L';
 
@@ -9,7 +9,7 @@ export type TabBackground = 'WHITE' | 'GREY';
 
 export type Variant = 'flat' | 'outlined' | 'solid';
 
-export interface Props extends HTMLProps<HTMLDivElement> {
+export interface TabsProps extends HTMLProps<HTMLDivElement> {
     /** To be used to render tabs as any html tag */
     as?: any;
     /** Id of the default active tab */

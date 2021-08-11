@@ -2,13 +2,13 @@ import { HTMLProps } from '@medly-components/utils';
 import { FormActionSchema } from '../Actions/types';
 import { FieldProperties } from '../Fields/types';
 
-type FormProps = Omit<HTMLProps<HTMLFormElement>, 'onSubmit'>;
+type FormTypes = Omit<HTMLProps<HTMLFormElement>, 'onSubmit'>;
 
 export interface FormFieldSchema {
     [key: string]: FieldProperties;
 }
 
-export interface Props extends FormProps {
+export interface FormProps extends FormTypes {
     /** Field Schema */
     fieldSchema: FormFieldSchema | ((values: { [key: string]: any }) => FormFieldSchema);
     /** Action Schema */
@@ -41,4 +41,6 @@ export interface Props extends FormProps {
     showDecorators?: boolean;
     /** Input Variants */
     variant?: 'outlined' | 'filled' | 'fusion';
+    /** Loading */
+    isLoading?: boolean;
 }

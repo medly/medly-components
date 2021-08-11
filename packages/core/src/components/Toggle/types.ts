@@ -9,7 +9,7 @@ export interface ToggleWrapperProps extends DivProps, WithThemeProp {
     size?: ToggleSizes;
 }
 
-export interface Props extends InputProps, WithThemeProp {
+export interface ToggleProps extends InputProps, WithThemeProp {
     /** Toggle label */
     label?: string;
     /** Toggle size */

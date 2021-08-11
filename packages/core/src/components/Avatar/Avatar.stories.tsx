@@ -1,9 +1,9 @@
 import { AvatarTheme, defaultTheme } from '@medly-components/theme';
 import { styled } from '@medly-components/utils';
 import React from 'react';
-import { Props } from './types';
+import { AvatarProps } from './types';
 
-export const sizes: Props['size'][] = ['S', 'M', 'L'];
+export const sizes: AvatarProps['size'][] = ['S', 'M', 'L'];
 
 export const ThemeInterface: React.FC<AvatarTheme> = () => null;
 ThemeInterface.defaultProps = {

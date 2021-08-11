@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from '@test-utils';
 import React from 'react';
 import Tab from './Tab';
 import { Tabs } from './Tabs';
-import { Props, Variant } from './types';
+import { TabsProps, Variant } from './types';
 
 const renderer = ({
     defaultActive = 'tab1',
@@ -13,7 +13,7 @@ const renderer = ({
     forceRender = false,
     hidePanel = false,
     variant = 'flat'
-}: Props) =>
+}: TabsProps) =>
     render(
         <Tabs {...{ defaultActive, active, onChange, tabSize, tabBackground, forceRender, hidePanel, variant }}>
             <Tab id="tab1" label="Add" count={30} helperText="Details for tab1">

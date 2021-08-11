@@ -3,6 +3,147 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.13.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.12.0...@medly-components/core@2.13.0) (2021-08-11)
+
+
+### Features
+
+* updating theme to include searchBox expandIcon active state ([#379](https://github.com/medly/medly-components/issues/379)) ([f868b93](https://github.com/medly/medly-components/commit/f868b93847ef0ac92f4996897fe3638d5a0b06df))
+
+
+
+
+
+# [2.12.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.11.0...@medly-components/core@2.12.0) (2021-08-11)
+
+
+### Features
+
+* search box component updates ([#371](https://github.com/medly/medly-components/issues/371)) ([f89ed95](https://github.com/medly/medly-components/commit/f89ed95f9619707aaa47410c99ee83305261473e))
+
+
+
+
+
+# [2.11.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.10.1...@medly-components/core@2.11.0) (2021-08-08)
+
+
+### Features
+
+* ensure text remains visible during webfont load ([#376](https://github.com/medly/medly-components/issues/376)) ([8ade222](https://github.com/medly/medly-components/commit/8ade222fd0e6769611f5b8bfb1ec45643d0ef5ff))
+
+
+
+
+
+## [2.10.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.10.0...@medly-components/core@2.10.1) (2021-08-06)
+
+
+### Bug Fixes
+
+* remove toast container if there are no toasts available ([#375](https://github.com/medly/medly-components/issues/375)) ([d7f037b](https://github.com/medly/medly-components/commit/d7f037be23309e3c3d8ac712da6661d8b4e6ea78))
+
+
+
+
+
+# [2.10.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.9.1...@medly-components/core@2.10.0) (2021-08-05)
+
+
+### Features
+
+* add the `disabled` prop in breadcrumb item ([#367](https://github.com/medly/medly-components/issues/367)) ([2339619](https://github.com/medly/medly-components/commit/23396195c7d316c5348509ded3dab7ddcd789617))
+
+
+
+
+
+## [2.9.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.9.0...@medly-components/core@2.9.1) (2021-08-05)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+# [2.9.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.8.7...@medly-components/core@2.9.0) (2021-08-05)
+
+
+### Features
+
+* style updates and added prop to show custom search filter in searchbox ([#332](https://github.com/medly/medly-components/issues/332)) ([0f5ef6a](https://github.com/medly/medly-components/commit/0f5ef6a2151ae16fccf626a8100c1079e1b91b99))
+
+
+
+
+
+## [2.8.7](https://github.com/medly/medly-components/compare/@medly-components/core@2.8.6...@medly-components/core@2.8.7) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.8.6](https://github.com/medly/medly-components/compare/@medly-components/core@2.8.5...@medly-components/core@2.8.6) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.8.5](https://github.com/medly/medly-components/compare/@medly-components/core@2.8.4...@medly-components/core@2.8.5) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.8.4](https://github.com/medly/medly-components/compare/@medly-components/core@2.8.3...@medly-components/core@2.8.4) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.8.3](https://github.com/medly/medly-components/compare/@medly-components/core@2.8.2...@medly-components/core@2.8.3) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.8.2](https://github.com/medly/medly-components/compare/@medly-components/core@2.8.1...@medly-components/core@2.8.2) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+## [2.8.1](https://github.com/medly/medly-components/compare/@medly-components/core@2.8.0...@medly-components/core@2.8.1) (2021-08-03)
+
+**Note:** Version bump only for package @medly-components/core
+
+
+
+
+
+# [2.8.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.7.0...@medly-components/core@2.8.0) (2021-08-03)
+
+
+### Features
+
+* add isLading prop to form component ([#336](https://github.com/medly/medly-components/issues/336)) ([8206768](https://github.com/medly/medly-components/commit/8206768529bad8afca36fc05bb2975015ceb616b))
+
+
+
+
+
 # [2.7.0](https://github.com/medly/medly-components/compare/@medly-components/core@2.6.3...@medly-components/core@2.7.0) (2021-08-02)
 
 

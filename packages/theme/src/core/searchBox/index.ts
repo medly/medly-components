@@ -12,7 +12,7 @@ const SearchBox: SearchBoxTheme = {
     },
     padding: {
         S: '0 0 0 1.2rem',
-        M: '0 0.3rem 0 1.6rem'
+        M: '0 0 0 1.6rem'
     },
     textColor: colors.black,
     borderRadius: {
@@ -75,10 +75,12 @@ const SearchBox: SearchBoxTheme = {
         borderRadius: '2.5rem',
         color: {
             default: colors.grey[600],
-            hovered: colors.grey[900]
+            hovered: colors.grey[900],
+            active: colors.grey[700]
         },
         bgColor: {
-            hovered: colors.grey[100]
+            hovered: colors.grey[100],
+            active: colors.grey[200]
         }
     },
     boxShadow: {
@@ -86,7 +88,7 @@ const SearchBox: SearchBoxTheme = {
         hovered: '0 0.2rem 0.8rem rgba(96, 120, 144, 0.2)'
     },
     options: {
-        boxShadow: '0 0.6rem 0.8rem rgba(18, 106, 250, 0.2)'
+        boxShadow: '0 0.2rem 0.8rem rgba(96, 120, 144, 0.35)'
     }
 };
 

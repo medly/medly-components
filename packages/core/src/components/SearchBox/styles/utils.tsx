@@ -1,7 +1,7 @@
 import { css } from '@medly-components/utils';
-import { Props } from '../types';
+import { SearchBoxProps } from '../types';
 
-export const getSearchBoxSize = ({ theme, size }: Props) => theme.searchBox.height[size];
+export const getSearchBoxSize = ({ theme, size }: SearchBoxProps) => theme.searchBox.height[size];
 
 export const getBorderAndBoxShadow = (color: string, boxShadow: string) => {
     return css`

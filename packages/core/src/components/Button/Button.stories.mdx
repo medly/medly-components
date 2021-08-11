@@ -12,9 +12,9 @@ import { action } from '@storybook/addon-actions';
 
 # Button
 
-Simple button component with different design & colors.
+A simple button component with different designs and colors.
 
-You can play with the props in canvas tab.
+You can play with the props in the **Canvas** tab.
 
 <Preview withToolbar>
     <Story name="Button" decorators={[withKnobs]}>
@@ -86,7 +86,7 @@ There are four button sizes available: `XS` | `S` | `M` | `L`
 
 ### Variants
 
-Use variant prop to change the style of the button.
+Use the variant prop to change the button style.
 
 <Preview>
     <Button variant="solid">Solid Button</Button>
@@ -96,7 +96,7 @@ Use variant prop to change the style of the button.
 
 ### Disabled
 
-Disable style for all the variants.
+Use the Disable variant prop to disable styles of all the variants.
 
 <Preview>
     <Button disabled variant="solid">
@@ -112,7 +112,7 @@ Disable style for all the variants.
 
 ### With Icon
 
-You can also use icons as content in the button like below.
+You can also use icons as content in the button as shown below.
 
 ```tsx
 import { SendIcon } from '@medly-components/icons';
@@ -141,7 +141,7 @@ import { Button } from '@medly-components/icons';
 
 ### Custom Colors
 
-To use custom colors for button component you can provide the custom `theme` to button component. We have `updateNestedValue` function avalaible in `@medly-components/utils` to update the nested value in the object. Check out the `Theme` section to find out which all properties are mandatory in different vaiants.
+To use custom colors for the `button` component, provide the custom `theme`. You can use the `updateNestedValue` function available in `@medly-components/utils` to update the nested values in the `defaultTheme` object. Check out the `Theme` section to find out the mandatory properties in different variants.
 
 ```tsx
 import { updateNestedValue } from '@medly-components/utils';

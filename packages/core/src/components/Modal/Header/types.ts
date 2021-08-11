@@ -1,5 +1,5 @@
 import { HTMLProps, WithThemeProp } from '@medly-components/utils';
-import { Props as ModalProps, ScrollState } from '../types';
+import { ModalProps, ScrollState } from '../types';
 
 export interface Props extends ModalProps {
     setHeaderHeight?: (height: number) => void;

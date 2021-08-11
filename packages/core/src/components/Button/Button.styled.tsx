@@ -3,9 +3,9 @@ import { defaultTheme } from '@medly-components/theme';
 import { centerAligned, styled } from '@medly-components/utils';
 import Text from '../Text';
 import { flatButton, outlinedButton, solidButton } from './styles';
-import { Props } from './types';
+import { ButtonProps } from './types';
 
-const getPaddings = ({ size, edges, theme }: Props & { isHovered?: boolean }) => {
+const getPaddings = ({ size, edges, theme }: ButtonProps & { isHovered?: boolean }) => {
     if (edges === 'circle') {
         return size === 'S' ? `1.4rem` : `1.6rem`;
     } else {
@@ -13,7 +13,7 @@ const getPaddings = ({ size, edges, theme }: Props & { isHovered?: boolean }) =>
     }
 };
 
-export const ButtonStyled = styled('button')<Props>`
+export const ButtonStyled = styled('button')<ButtonProps>`
     border: none;
     position: relative;
     user-select: none;

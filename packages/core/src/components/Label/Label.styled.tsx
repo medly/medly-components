@@ -1,6 +1,6 @@
 import { defaultTheme } from '@medly-components/theme';
 import { css, oppositePositionalSpacing, styled } from '@medly-components/utils';
-import { Props } from './types';
+import { LabelProps } from './types';
 
 const asterisk = () => css`
     ::after {
@@ -9,7 +9,7 @@ const asterisk = () => css`
     }
 `;
 
-const getTextStyle = ({ theme, ...props }: Props) => {
+const getTextStyle = ({ theme, ...props }: LabelProps) => {
     const { defaults } = theme.label,
         { weights, variants } = theme.font,
         { labelVariant, labelColor, labelWeight } = props,
@@ -24,7 +24,7 @@ const getTextStyle = ({ theme, ...props }: Props) => {
     `;
 };
 
-export const LabelStyled = styled('label')<Props>`
+export const LabelStyled = styled('label')<LabelProps>`
     ${getTextStyle}
     ${({ required }) => required && asterisk()}
     margin: ${({ theme, labelPosition }) => oppositePositionalSpacing(labelPosition, theme.spacing.S2)};

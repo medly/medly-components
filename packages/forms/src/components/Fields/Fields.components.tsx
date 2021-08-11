@@ -19,13 +19,13 @@ import {
     FileInputProps,
     MultiSelectProps,
     NestedProps,
-    Props,
+    FieldsProps,
     RadioGroupProps,
     SingleSelectProps,
     TextFieldProps
 } from './types';
 
-export const Fields: React.FC<Props> = React.memo(props => {
+export const Fields: React.FC<FieldsProps> = React.memo(props => {
     const { fields, values, handlers, parentName, errorMessages, addErrorMessage } = props;
 
     return (
@@ -83,6 +83,14 @@ export const Fields: React.FC<Props> = React.memo(props => {
                                 switch (componentProps.type) {
                                     case 'text':
                                     case 'email':
+                                    case 'url':
+                                    case 'tel':
+                                    case 'time':
+                                    case 'month':
+                                    case 'week':
+                                    case 'range':
+                                    case 'color':
+                                    case 'search':
                                     case 'password':
                                         return (
                                             <TextField
