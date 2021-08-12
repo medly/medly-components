@@ -163,8 +163,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                         <HelperAndErrorTextTooltip
                             idPrefix={inputId}
                             errorIconColor={theme.textField[props.variant].error.borderColor}
-                            errorText={errorText}
-                            builtInErrorMessage={builtInErrorMessage}
+                            errorText={errorText || builtInErrorMessage}
                             helperText={helperText}
                         />
                     )}
