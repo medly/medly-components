@@ -3,15 +3,8 @@ import { ThemeContext, WithStyle } from '@medly-components/utils';
 import React, { FC, useContext } from 'react';
 import Popover from '../Popover';
 import * as Styled from './HelperAndErrorTextTooltip.styled';
+import { HelperTextTooltipProps } from './types';
 
-interface HelperTextTooltipProps {
-    /** Id prefix */
-    id: string;
-    /** Helper Text */
-    helperText?: string;
-    /** Error Text */
-    errorText?: string;
-}
 export const HelperAndErrorTextTooltip: FC<HelperTextTooltipProps> & WithStyle = React.memo((props: HelperTextTooltipProps) => {
     const { id, errorText, helperText } = props;
 
