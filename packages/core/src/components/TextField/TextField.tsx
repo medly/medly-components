@@ -160,12 +160,7 @@ export const TextField: FC<TextFieldProps> & WithStyle = React.memo(
                         )}
                     </Styled.InputWrapper>
                     {props.showTooltipForHelperAndErrorText && (
-                        <HelperAndErrorTextTooltip
-                            id={inputId}
-                            errorIconColor={theme.textField[props.variant].error.borderColor}
-                            errorText={errorText || builtInErrorMessage}
-                            helperText={helperText}
-                        />
+                        <HelperAndErrorTextTooltip id={inputId} errorText={errorText || builtInErrorMessage} helperText={helperText} />
                     )}
                     {isSuffixPresent && showDecorators && (
                         <Styled.Suffix size={size}>

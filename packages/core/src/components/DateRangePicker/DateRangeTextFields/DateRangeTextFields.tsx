@@ -112,12 +112,7 @@ export const DateRangeTextFields: React.FC<Props> = React.memo(props => {
                     {...commonTextProps}
                 />
                 {showTooltipForHelperAndErrorText && (
-                    <HelperAndErrorTextTooltip
-                        id={id}
-                        errorIconColor={theme.dateRangePicker.inputSeparatorColor[variant].error}
-                        errorText={errorText || builtInErrorMessage}
-                        helperText={helperText}
-                    />
+                    <HelperAndErrorTextTooltip id={id} errorText={errorText || builtInErrorMessage} helperText={helperText} />
                 )}
             </Wrapper>
             {showDecorators && !showTooltipForHelperAndErrorText && (

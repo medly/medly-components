@@ -1,29 +1,28 @@
 import { ErrorIcon, InfoOutlineIcon } from '@medly-components/icons';
-import { defaultTheme } from '@medly-components/theme';
-import { WithStyle } from '@medly-components/utils';
-import React, { FC } from 'react';
+import { ThemeContext, WithStyle } from '@medly-components/utils';
+import React, { FC, useContext } from 'react';
 import Popover from '../Popover';
 import * as Styled from './HelperAndErrorTextTooltip.styled';
 
 interface HelperTextTooltipProps {
     /** Id prefix */
     id: string;
-    /** Error icon color */
-    errorIconColor?: string;
     /** Helper Text */
     helperText?: string;
     /** Error Text */
     errorText?: string;
 }
 export const HelperAndErrorTextTooltip: FC<HelperTextTooltipProps> & WithStyle = React.memo((props: HelperTextTooltipProps) => {
-    const { id, errorIconColor, errorText, helperText } = props;
+    const { id, errorText, helperText } = props;
+
+    const theme = useContext(ThemeContext);
 
     if (errorText || helperText) {
         return (
             <Popover interactionType="hover">
                 <Styled.PopoverIconContainer>
                     {errorText ? (
-                        <ErrorIcon iconColor={errorIconColor || defaultTheme.colors.red[500]} size="S" />
+                        <ErrorIcon iconColor={theme.helperAndErrorTextTooltip.errorIconColor} size="S" />
                     ) : (
                         <InfoOutlineIcon size="S" />
                     )}
